@@ -11,6 +11,10 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Shadow_LifeDrain.blp"
     },
     {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
       "Id": 2037408353,
       "Value": 2
     },
@@ -39,11 +43,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Adds 50 bonus damage to the unit and causes its attacks to heal it for 80% of damage dealt. |nLasts 25 seconds."
-    },
-    {
-      "Id": 2020631137,
-      "Value": 1
+      "Value": "Adds 50 bonus damage to the unit and causes its attacks to heal it for 80% of damage dealt. |nLasts 15 seconds."
     }
   ]
 }

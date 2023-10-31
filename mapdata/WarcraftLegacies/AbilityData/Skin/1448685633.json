@@ -1,0 +1,97 @@
+{
+  "OldId": 1936479553,
+  "NewId": 1448685633,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpellicelament.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Red- Lich King)"
+    },
+    {
+      "Id": 1818649953,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\ZigguratFrostMissile\\ZigguratFrostMissile.mdl"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Soul Release"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpellicelament.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 2
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Soul Release - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Unleashes spirits stored in Frostmourne to attack nearby enemies, slowing and draining enemy health to replenish Lich King\u0027s. |n|n|cffffcc00Level 1|r - 10 spirits. |n|cffffcc00Level 2|r - 20 spirits. |n|cffffcc00Level 3|r - 30 spirits. |n|cffffcc00Level 4|r - 40 spirits. |n|nLasts \u003CA0YV,HeroDur1\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Soul Release "
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Unleashes \u003CA0YV,DataA1\u003E spirits from within Frostmourne to attack nearby enemies, slowing and draining enemy health to replenish the Lich King.|nLasts \u003CA0YV,HeroDur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Unleashes \u003CA0YV,DataA2\u003E spirits from within Frostmourne to attack nearby enemies, slowing and draining enemy health to replenish the Lich King.|nLasts \u003CA0YV,HeroDur2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Unleashes \u003CA0YV,DataA3\u003E spirits from within Frostmourne to attack nearby enemies, slowing and draining enemy health to replenish the Lich King.|nLasts \u003CA0YV,HeroDur3\u003E seconds."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Unleashes \u003CA0YV,DataA4\u003E spirits from within Frostmourne to attack nearby enemies, slowing and draining enemy health to replenish the Lich King.|nLasts \u003CA0YV,HeroDur4\u003E seconds."
+    }
+  ]
+}

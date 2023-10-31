@@ -38,17 +38,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Heavy defensive structure, effective against clusters of ground units. |n|n|cfff5962dUpgrades to:|R Improved Cannon Tower|n|n|cffffcc00Attacks land units.|r"
+      "Value": "Sturdy cannon bunker.|n|cfff5962dUpgrades into:|R Improved Cannon Bunker.|n|n|cffffcc00Attacks land units and trees.|r"
     },
     {
       "Id": 1885959285,
       "Type": 3,
       "Value": "Upgrade to Improved Cannon Bunker"
-    },
-    {
-      "Id": 1835101813,
-      "Type": 3,
-      "Value": "Cannon Bunker"
     }
   ]
 }

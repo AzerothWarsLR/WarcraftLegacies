@@ -17,7 +17,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(spellbreakers - Dark Minion)"
+      "Value": "(spellbreakers)"
     },
     {
       "Id": 1835101793,
@@ -34,7 +34,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Reduces the damage taken from Magic attacks and Spells by 75%."
+      "Value": "Reduces the damage taken from Magic attacks and Spells by 60%."
     }
   ]
 }

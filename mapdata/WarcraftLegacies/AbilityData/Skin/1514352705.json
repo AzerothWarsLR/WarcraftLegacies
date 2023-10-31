@@ -1,35 +1,52 @@
 {
-  "OldId": 1734963265,
+  "OldId": 1919239489,
   "NewId": 1514352705,
   "Unk": [
     0
   ],
   "Modifications": [
     {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFreeze.blp"
+    },
+    {
       "Id": 2020631137,
-      "Value": 3
+      "Value": 2
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Storm Cloud)"
+      "Value": "(Dalaran-Hydromancer)"
     },
     {
-      "Level": 1,
-      "Id": 828536161,
+      "Id": 1835101793,
       "Type": 3,
-      "Value": "dmages nearby enemy units for 40 points of damage per second."
+      "Value": "Frost Cell"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Static Cloud"
+      "Value": "Frost Cell"
     },
     {
-      "Id": 1835101793,
+      "Level": 2,
+      "Id": 829453409,
       "Type": 3,
-      "Value": "Static Cloud"
+      "Value": "Enhanced Frost Cell"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Traps an enemy unit in an ice prison, immobilizing and disarming the enemy unit for 10 seconds, and dealing 15 damage per second."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Traps an enemy unit in an ice prison, immobilizing and disarming the enemy unit for 15 seconds, and dealing 20 damage per second."
     }
   ]
 }

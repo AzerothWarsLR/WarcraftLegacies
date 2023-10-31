@@ -6,9 +6,17 @@
   ],
   "Modifications": [
     {
+      "Id": 1651270517,
+      "Value": 130
+    },
+    {
       "Id": 1718840949,
       "Type": 3,
       "Value": "(Legion-Archimond-Level 2)"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 180
     },
     {
       "Id": 1633907573,
@@ -18,7 +26,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Infernal"
+      "Value": "Doomfire Abyssal"
     },
     {
       "Id": 1668510581,

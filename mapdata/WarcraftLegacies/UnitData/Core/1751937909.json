@@ -20,7 +20,7 @@
     },
     {
       "Id": 1819240309,
-      "Value": 15
+      "Value": 14
     },
     {
       "Id": 1919903605,
@@ -52,16 +52,16 @@
     {
       "Id": 1936028277,
       "Type": 3,
-      "Value": "R01X,Ruex"
+      "Value": "R08T,R01X,Ruex"
     },
     {
       "Id": 1634890869,
       "Type": 3,
-      "Value": "uabo,nfgl,umtw"
+      "Value": "uabo,nfgl,umtw,n009"
     },
     {
       "Id": 1836412021,
-      "Value": 70
+      "Value": 65
     },
     {
       "Id": 1769169525,

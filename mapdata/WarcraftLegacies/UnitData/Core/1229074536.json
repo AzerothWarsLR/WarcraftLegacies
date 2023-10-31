@@ -8,7 +8,7 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "Adts"
+      "Value": ""
     },
     {
       "Id": 1684824693,
@@ -59,7 +59,7 @@
     {
       "Id": 1902473845,
       "Type": 3,
-      "Value": ""
+      "Value": "h03E"
     },
     {
       "Id": 1932616053,
@@ -68,17 +68,17 @@
     {
       "Id": 1882284405,
       "Type": 3,
-      "Value": "air,ground,nonancient,notself,structure,tree,wall"
+      "Value": "ground,nonancient,notself,structure,tree,wall"
     },
     {
       "Id": 1731289461,
       "Type": 3,
-      "Value": "air,debris,ground,item,nonancient,structure,tree,wall,ward"
+      "Value": "debris,ground,item,nonancient,structure,tree,wall,ward"
     },
     {
       "Id": 1953527157,
       "Type": 3,
-      "Value": "h0BJ"
+      "Value": "h04N"
     },
     {
       "Id": 1919381621,
@@ -100,14 +100,6 @@
     {
       "Id": 1986358389,
       "Value": 4
-    },
-    {
-      "Id": 2050056565,
-      "Value": 1400
-    },
-    {
-      "Id": 828927349,
-      "Value": 1
     }
   ]
 }

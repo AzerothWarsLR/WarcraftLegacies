@@ -15,19 +15,19 @@
       "Level": 2,
       "Id": 1701994849,
       "Type": 2,
-      "Value": 200
+      "Value": 400
     },
     {
       "Level": 3,
       "Id": 1701994849,
       "Type": 2,
-      "Value": 200
+      "Value": 400
     },
     {
       "Level": 4,
       "Id": 1701994849,
       "Type": 2,
-      "Value": 200
+      "Value": 250
     },
     {
       "Level": 1,
@@ -39,34 +39,34 @@
       "Level": 2,
       "Id": 1852072801,
       "Type": 2,
-      "Value": 25
+      "Value": 20
     },
     {
       "Level": 3,
       "Id": 1852072801,
       "Type": 2,
-      "Value": 15
+      "Value": 10
     },
     {
       "Level": 4,
       "Id": 1852072801,
       "Type": 2,
-      "Value": 5
+      "Value": 45
     },
     {
       "Level": 1,
       "Id": 1935895905,
-      "Value": 125
+      "Value": 150
     },
     {
       "Level": 2,
       "Id": 1935895905,
-      "Value": 135
+      "Value": 75
     },
     {
       "Level": 4,
       "Id": 1935895905,
-      "Value": 155
+      "Value": 195
     },
     {
       "Level": 1,
@@ -127,16 +127,22 @@
       "Value": 19
     },
     {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862741326,
+      "Value": 3
+    },
+    {
       "Level": 3,
       "Pointer": 3,
       "Id": 862741326,
-      "Value": 19
+      "Value": 3
     },
     {
       "Level": 4,
       "Pointer": 3,
       "Id": 862741326,
-      "Value": 19
+      "Value": 3
     },
     {
       "Level": 1,
@@ -167,28 +173,28 @@
       "Pointer": 6,
       "Id": 913072974,
       "Type": 3,
-      "Value": "flamestrike"
+      "Value": "deathanddecay"
     },
     {
       "Level": 2,
       "Pointer": 6,
       "Id": 913072974,
       "Type": 3,
-      "Value": "flamestrike"
+      "Value": "deathanddecay"
     },
     {
       "Level": 3,
       "Pointer": 6,
       "Id": 913072974,
       "Type": 3,
-      "Value": "flamestrike"
+      "Value": "deathanddecay"
     },
     {
       "Level": 4,
       "Pointer": 6,
       "Id": 913072974,
       "Type": 3,
-      "Value": "flamestrike"
+      "Value": "deathanddecay"
     },
     {
       "Id": 1667330657,
@@ -221,18 +227,23 @@
     },
     {
       "Id": 1986358369,
-      "Value": 4
+      "Value": 1
     },
     {
-      "Level": 3,
-      "Id": 1935895905,
-      "Value": 145
+      "Id": 1919248481,
+      "Value": 0
     },
     {
-      "Level": 2,
-      "Pointer": 3,
-      "Id": 862741326,
-      "Value": 19
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 0.001
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 0.001
     }
   ]
 }

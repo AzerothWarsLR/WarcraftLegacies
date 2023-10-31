@@ -7,9 +7,15 @@
   "Modifications": [
     {
       "Level": 1,
+      "Id": 912355406,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
       "Id": 1851880033,
       "Type": 2,
-      "Value": 99999
+      "Value": 850
     },
     {
       "Level": 1,
@@ -21,46 +27,7 @@
       "Level": 1,
       "Id": 1970106473,
       "Type": 3,
-      "Value": "nzom"
-    },
-    {
-      "Level": 1,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 0
-    },
-    {
-      "Level": 1,
-      "Id": 1920296033,
-      "Type": 2,
-      "Value": 10
-    },
-    {
-      "Id": 1886612833,
-      "Value": 10000
-    },
-    {
-      "Level": 1,
-      "Id": 1718968929,
-      "Type": 3,
-      "Value": "ZB08,ZB09"
-    },
-    {
-      "Level": 1,
-      "Id": 1935895905,
-      "Value": 0
-    },
-    {
-      "Level": 1,
-      "Pointer": 1,
-      "Id": 828993360,
-      "Type": 2,
-      "Value": 20
-    },
-    {
-      "Id": 1667330657,
-      "Type": 3,
-      "Value": "undead"
+      "Value": "nfgt"
     }
   ]
 }

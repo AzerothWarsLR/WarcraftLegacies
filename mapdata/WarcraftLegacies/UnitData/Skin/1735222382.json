@@ -16,7 +16,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Legion Siege)"
+      "Value": "(Legion)"
     },
     {
       "Id": 1953458293,
@@ -41,7 +41,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Advanced troop production building.|n|n|r|cfff5962dTrains:|R Doom Guard, Doom Lord, Nether Dragon |n|r|n|cff99b4d1Can only build 6.|r"
+      "Value": "Gateway that allows the Legion to bring its greater demons into Azeroth.|r|n|cff99b4d1Can only build 6.|r|n|cfff5962dTrains:|R Doom Guard, Doom Lord, Nether Dragon"
     },
     {
       "Id": 1818520949,

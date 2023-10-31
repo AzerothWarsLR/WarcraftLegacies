@@ -1,39 +1,68 @@
 {
-  "OldId": 1701988417,
+  "OldId": 1936933697,
   "NewId": 877801537,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 2020631137,
-      "Value": 2
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeal.blp"
     },
     {
-      "Id": 1952539489,
-      "Type": 3,
-      "Value": "Abilities\\Spells\\Items\\AIma\\AImaTarget.mdl"
+      "Id": 2020631137,
+      "Value": 1
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(scarlet cleric)"
+      "Value": "(Dark Green - Bishop)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "E"
+      "Value": "W"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Holy Fire"
     },
     {
       "Id": 1952543841,
       "Type": 3,
-      "Value": "Abilities\\Spells\\Items\\ResourceItems\\ResourceEffectTarget.mdl"
+      "Value": "Abilities\\Spells\\Orc\\EtherealForm\\SpiritWalkerChange.mdl"
+    },
+    {
+      "Id": 811693153,
+      "Type": 3,
+      "Value": "origin"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Holy Fire"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Brings back to life the corpse of 1 of your units."
+      "Value": "Consumes an enemy in holy flames, slowing them for 40% and dealing 20 initial damage, and 45 damage every 1 second for 10 seconds."
+    },
+    {
+      "Id": 2019718497,
+      "Value": 1
+    },
+    {
+      "Id": 2036495713,
+      "Value": 2
     }
   ]
 }

@@ -1,32 +1,34 @@
 {
-  "OldId": 1685550958,
+  "OldId": 1952932974,
   "NewId": 926232686,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1718840949,
+      "Id": 1818520949,
       "Type": 3,
-      "Value": "(tess)"
+      "Value": "units\\human\\WaterElemental\\WaterElemental.mdl"
     },
     {
-      "Id": 1835101813,
+      "Id": 1831952757,
       "Type": 3,
-      "Value": "White Wolf"
-    },
-    {
-      "Id": 1735156597,
-      "Value": 255
-    },
-    {
-      "Id": 1919705973,
-      "Value": 255
+      "Value": "Abilities\\Weapons\\WitchDoctorMissile\\WitchDoctorMissile.mdl"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": 2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Water Elemental Sentry"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

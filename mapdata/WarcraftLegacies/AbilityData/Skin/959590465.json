@@ -20,7 +20,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons a Water Elemental, which has \u003Ch00U,realHP\u003E hit points, deals \u003Ch00U,mindmg1\u003E - \u003Ch00U,maxdmg1\u003E damage, and can learn the Freezing Shot ability. |nLasts \u003CA029,Dur1\u003E seconds. Water Elementals are affected by the Power Infusion and Hydromancer Training researches.|n|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Summons a water elemental. Has \u003Ch00U,realHP\u003E hit points and deals \u003Ch00U,mindmg1\u003E - \u003Ch00U,maxdmg1\u003E damage. |nLasts \u003CA029,Dur1\u003E seconds. Elemental are affected by Power Infusion upgrades. |n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

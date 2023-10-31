@@ -1,5 +1,5 @@
 {
-  "OldId": 1852200257,
+  "OldId": 1651536705,
   "NewId": 1463234625,
   "Unk": [
     0
@@ -7,114 +7,26 @@
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1718968929,
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Level": 1,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 14
-    },
-    {
-      "Level": 1,
       "Pointer": 1,
-      "Id": 829318741,
-      "Type": 2,
-      "Value": 0
+      "Id": 828534899,
+      "Type": 3,
+      "Value": "ACrk,A0AJ"
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846095957,
-      "Type": 2,
-      "Value": 160
-    },
-    {
-      "Level": 1,
-      "Id": 1920296033,
-      "Type": 2,
-      "Value": 0.01
-    },
-    {
-      "Id": 1919248481,
+      "Id": 845312115,
       "Value": 0
     },
     {
       "Level": 1,
-      "Id": 1969514593,
-      "Type": 2,
-      "Value": 0.01
-    },
-    {
-      "Id": 1986358369,
-      "Value": 1
-    },
-    {
-      "Id": 1667330657,
+      "Pointer": 5,
+      "Id": 895643763,
       "Type": 3,
-      "Value": "human"
+      "Value": "sacrifice"
     },
     {
-      "Level": 1,
-      "Id": 1851880033,
-      "Type": 2,
-      "Value": 700
-    },
-    {
-      "Level": 2,
-      "Pointer": 1,
-      "Id": 829318741,
-      "Type": 2,
-      "Value": 95
-    },
-    {
-      "Level": 2,
-      "Id": 1851880033,
-      "Type": 2,
-      "Value": 700
-    },
-    {
-      "Level": 2,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 12
-    },
-    {
-      "Level": 2,
-      "Id": 1969514593,
-      "Type": 2,
-      "Value": 0.01
-    },
-    {
-      "Level": 2,
-      "Id": 1920296033,
-      "Type": 2,
-      "Value": 0.01
-    },
-    {
-      "Level": 2,
-      "Id": 1718968929,
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Level": 2,
-      "Pointer": 2,
-      "Id": 846095957,
-      "Type": 2,
-      "Value": 75
-    },
-    {
-      "Level": 2,
-      "Id": 1935895905,
-      "Value": 100
-    },
-    {
-      "Level": 1,
-      "Id": 1701994849,
-      "Type": 2,
+      "Id": 1702127969,
       "Value": 0
     }
   ]

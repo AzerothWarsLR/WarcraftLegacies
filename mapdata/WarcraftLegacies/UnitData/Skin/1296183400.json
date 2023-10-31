@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNStromgardeTownhall.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGilneasTownHall.blp"
     },
     {
       "Id": 1718840949,
@@ -43,7 +43,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Primary structure. |n|n|r|cfff5962dTrains:|R Farmer, Templar |n|cfff5962dUpgrades to:|R Keep"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peasant |n|cfff5962dUpgrades to:|R Keep"
     }
   ]
 }

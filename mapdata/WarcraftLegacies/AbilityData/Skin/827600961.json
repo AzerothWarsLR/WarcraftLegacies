@@ -1,40 +1,50 @@
 {
-  "OldId": 1936016193,
+  "OldId": 1852195649,
   "NewId": 827600961,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1718840929,
+      "Id": 1953653089,
       "Type": 3,
-      "Value": "(Bishop)"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDH_Holy_Shields.blp"
     },
     {
-      "Level": 1,
-      "Id": 828536161,
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
       "Type": 3,
-      "Value": "Causes the Scarlet Bishop to transform into an Shadow Archon upon death, allowing it to continue fighting for 30 seconds. The Shadow Archon has a powerful Chaos attack and no abilities."
+      "Value": "(Lordaeron - Scarlet Templar)"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Other\\NeutralBuildingExplosion\\NeutralBuildingExplosion.mdl,war3mapImported\\HolyStrike.mdx"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Shadow Archon"
+      "Value": "Greater Holy Fire"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Shadow Archon"
+      "Value": "Greater Holy Fire"
     },
     {
-      "Id": 1953653089,
+      "Level": 1,
+      "Id": 828536161,
       "Type": 3,
-      "Value": "ReplaceableTextures\\PassiveButtons\\PASVampire.blp"
-    },
-    {
-      "Id": 2020631137,
-      "Value": 3
+      "Value": "Blasts enemy units with a wave of holy fire that deals \u003CA0T1,DataB1\u003E damage to the target, and \u003CA0T1,DataA1\u003E nova damage."
     }
   ]
 }

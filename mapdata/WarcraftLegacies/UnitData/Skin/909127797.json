@@ -18,7 +18,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Legion Magic)"
+      "Value": "(Legion Specialist)"
     },
     {
       "Id": 1818520949,
@@ -53,7 +53,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Spellcaster production building. |n|n|cfff5962dTrains:|R Eredar Summoner, Succubus|n|cfff5962dResearches:|R Eredar Summoner Training, Succubus Training |n|r|cfff5962d|n|cff99b4d1Can only build 3. This limit can be increased by completing certain quests.|n"
+      "Value": "Summoning site for the Void demons of the Burning Legion.|r|n|cff99b4d1Can only build 2 before the Legion has been summoned. 12 post-summon.|n|cfff5962dTrains:|R Eredar Summoner, Succubus|n|cfff5962dResearches:|R Eredar Summoner Training, Succubus Training"
     }
   ]
 }

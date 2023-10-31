@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNAlteracBarracks.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGilneasBarracks.blp"
     },
     {
       "Id": 2020631157,
@@ -21,7 +21,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Crusade Barracks)"
+      "Value": "(Onslaught Barracks)"
     },
     {
       "Id": 1818520949,
@@ -41,7 +41,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Hall of Swords"
+      "Value": "City Watch"
     },
     {
       "Id": 1668510581,
@@ -51,7 +51,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Hall of Swords"
+      "Value": "Build City Watch"
     },
     {
       "Id": 1935832437,
@@ -61,7 +61,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Primary troop production building. |n|n|cfff5962dTrains:|R Crusader, Longbowman, Cavalier"
+      "Value": "Primary troop production building.|n|cfff5962dTrains:|R Protector, Shotgunner, Mangonel"
     }
   ]
 }

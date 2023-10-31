@@ -1,8 +1,17 @@
 {
-  "OldId": 1751347026,
+  "OldId": 1702062162,
   "NewId": 1278292050,
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1651271527,
+      "Value": 100
+    },
+    {
+      "Id": 1752066407,
+      "Value": 1
+    }
+  ]
 }

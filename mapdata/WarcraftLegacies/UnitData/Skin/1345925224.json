@@ -1,5 +1,5 @@
 {
-  "OldId": 1718186600,
+  "OldId": 1701145448,
   "NewId": 1345925224,
   "Unk": [
     0
@@ -8,67 +8,51 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNScarletArcher.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGilneasKeep.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(scarlet)"
+      "Value": "(Onslaught T2)"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\ScarletArcher.mdl"
+      "Value": "war3mapImported\\AlteracTownHall.mdl"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "W"
-    },
-    {
-      "Id": 2020633717,
-      "Type": 2,
-      "Value": 11
-    },
-    {
-      "Id": 2037410933,
-      "Type": 2,
-      "Value": 62
-    },
-    {
-      "Id": 2054188149,
-      "Type": 2,
-      "Value": 71
-    },
-    {
-      "Id": 828468597,
-      "Type": 2,
-      "Value": 0.15
+      "Value": "C"
     },
     {
       "Id": 1831952757,
       "Type": 3,
-      "Value": "Archer_Lordaeron_ArrowMissile.mdl"
+      "Value": "Abilities\\Weapons\\BallistaMissile\\BallistaMissile.mdl"
     },
     {
-      "Id": 1835101813,
-      "Type": 3,
-      "Value": "Longbowman"
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
     },
     {
-      "Id": 1885959285,
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 4.3
+    },
+    {
+      "Id": 1935832437,
       "Type": 3,
-      "Value": "Train Longbowman"
+      "Value": ""
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Highly skilled hunter of Tirisfal.|n|cfff5962dCan learn:|R Ensnare, United for the Cause, United for the Crusade|n|n|cffffcc00Attacks land and air units.|r"
-    },
-    {
-      "Id": 1684960117,
-      "Type": 3,
-      "Value": "Footman"
+      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peasant|n|cfff5962dUpgrades to:|R Castle"
     }
   ]
 }

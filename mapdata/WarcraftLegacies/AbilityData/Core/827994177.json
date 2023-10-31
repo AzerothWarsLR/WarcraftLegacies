@@ -1,0 +1,205 @@
+{
+  "OldId": 1919045185,
+  "NewId": 827994177,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 700
+    },
+    {
+      "Level": 4,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 750
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B07W"
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B07W"
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B07W"
+    },
+    {
+      "Level": 4,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B07W"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 35
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 75
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 95
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 105
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 115
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829579854,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829579854,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845246290,
+      "Value": 3
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845246290,
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845246290,
+      "Value": 9
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 845246290,
+      "Value": 12
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 18
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 22
+    },
+    {
+      "Level": 4,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 26
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 14
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 18
+    },
+    {
+      "Level": 3,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 22
+    },
+    {
+      "Level": 4,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 26
+    },
+    {
+      "Id": 1685221217,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829579854,
+      "Type": 2,
+      "Value": 5
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829579854,
+      "Type": 2,
+      "Value": 10
+    }
+  ]
+}

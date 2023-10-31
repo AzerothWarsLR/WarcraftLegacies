@@ -21,7 +21,7 @@
     },
     {
       "Id": 1819240309,
-      "Value": 20
+      "Value": 14
     },
     {
       "Id": 1919903605,
@@ -34,7 +34,7 @@
     {
       "Id": 1952542837,
       "Type": 3,
-      "Value": "PathTextures\\6x6SimpleSolid.tga"
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
     },
     {
       "Id": 1885433973,
@@ -48,7 +48,7 @@
     {
       "Id": 1902473845,
       "Type": 3,
-      "Value": "h0BO,h0A3"
+      "Value": "h02C,h03O"
     },
     {
       "Id": 1936028277,
@@ -58,11 +58,11 @@
     {
       "Id": 1634890869,
       "Type": 3,
-      "Value": "o06V,h09Q,e01L"
+      "Value": "n06Z,n06Q,n06L"
     },
     {
       "Id": 1836412021,
-      "Value": 100
+      "Value": 70
     },
     {
       "Id": 1769169525,

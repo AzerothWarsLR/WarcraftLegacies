@@ -13,9 +13,27 @@
     },
     {
       "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Legion - Quest)"
+    },
+    {
+      "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "Quest Completed: Fall of Silvermoon"
+      "Value": "Stolen Power"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Research Stolen Power"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Improves Dreadlords by increasing their attack damage by 20, movement speed by 20, and hit points by 200."
     }
   ]
 }

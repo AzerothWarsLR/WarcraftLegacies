@@ -26,12 +26,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "General research building.|n|n|cfff5962dAbilities:|R Spawn Corpses |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Power Infusion, Flight, Navigation, Improved Cannons, Fortified Hulls"
-    },
-    {
-      "Id": 1718840949,
-      "Type": 3,
-      "Value": " (Scourge Research)"
+      "Value": "Resource collection and infuser of combat enhancements.|n|cfff5962dAbilities:|R Spawn Corpses |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Power Infusion, Flight, Navigation, Improved Cannons, Fortified Hulls"
     }
   ]
 }

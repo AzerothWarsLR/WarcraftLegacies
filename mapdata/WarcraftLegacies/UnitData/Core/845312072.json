@@ -11,7 +11,7 @@
     {
       "Id": 1650550901,
       "Type": 3,
-      "Value": "A07N,A0KN,AHad,A0XO,Aamk"
+      "Value": "A0XO,A0KN,AHad,AHre,Aamk"
     },
     {
       "Id": 1684824693,
@@ -33,29 +33,19 @@
     },
     {
       "Id": 1633837685,
-      "Value": 5
+      "Value": 2
     },
     {
       "Id": 1768186485,
-      "Value": 5
+      "Value": 2
     },
     {
       "Id": 1769169525,
       "Value": 4
     },
     {
-      "Id": 1902473845,
-      "Type": 3,
-      "Value": "MD05"
-    },
-    {
-      "Id": 1886679925,
-      "Type": 2,
-      "Value": 3
-    },
-    {
-      "Id": 1836083317,
-      "Value": 200
+      "Id": 1986358389,
+      "Value": 1
     }
   ]
 }

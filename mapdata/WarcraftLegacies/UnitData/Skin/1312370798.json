@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNBishop.blp"
+      "Value": "war3mapImported\\BTNHolyPaladin.blp"
     },
     {
       "Id": 2020631157,
@@ -37,7 +37,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": 0.85
     },
     {
       "Id": 1835101813,
@@ -52,16 +52,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "True and strong believer in the holy Light.|n|cfff5962dAbilities:|R Healing Wave, Sanctify, Resurrection, Resistant Skin|n|cfff5962dCan learn:|R Shadow Archon|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
+      "Value": "True and strong believer in the holy Light.|n|cfff5962dAbilities:|R Healing Wave, Holy Fire, Resurrection.|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1831952757,
       "Type": 3,
       "Value": "Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl"
-    },
-    {
-      "Id": 1651270517,
-      "Value": 255
     }
   ]
 }

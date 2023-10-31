@@ -29,14 +29,14 @@
       "Value": ""
     },
     {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Revives slain Heroes and Demi-heroes."
+    },
+    {
       "Id": 1718840949,
       "Type": 3,
       "Value": " (Lordaeron Altar)"
-    },
-    {
-      "Id": 1651864693,
-      "Type": 3,
-      "Value": "Summons Heroes and Demi-heroes. |nRevives slain Heroes and Demi-heroes."
     }
   ]
 }

@@ -1,31 +1,14 @@
 {
-  "OldId": 1953646913,
+  "OldId": 1937007681,
   "NewId": 1160785985,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Id": 1918989409,
+      "Id": 1902473825,
       "Type": 3,
-      "Value": "air,ground,invulnerable,nonhero,player,vulnerable"
-    },
-    {
-      "Level": 1,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 180
-    },
-    {
-      "Id": 1702127969,
-      "Value": 0
-    },
-    {
-      "Level": 1,
-      "Id": 1701994849,
-      "Type": 2,
-      "Value": 500
+      "Value": "R01L"
     }
   ]
 }

@@ -40,12 +40,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Air production building. |n|n|r|cfff5962dTrains:|R Gryphon Rider, Stormrider|n|cfff5962dResearches:|R Storm Hammers, Gryphon Superior Breed"
+      "Value": "Fortified rookery for the gryphons of Ironforge.|n|cfff5962dTrains:|R Gryphon Rider, Stormrider|n|cfff5962dResearches:|R Storm Hammers, Gryphon Superior Breed"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": " (Ironforge Siege)"
+      "Value": " (Ironforge Specialist)"
     }
   ]
 }

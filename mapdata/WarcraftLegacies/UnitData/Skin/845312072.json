@@ -37,7 +37,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Warrior Hero, excels at augmenting nearby friendly troops.|n|cfff5962dCan learn:|R Maiming Strike, Earth\u0027s Grace, Devotion Aura, Greater Storm Bolt|n|cffffcc00Attacks land units.|R"
+      "Value": "Warrior Hero, excels at augmenting nearby friendly troops.|n|cfff5962dCan learn:|R Greater Storm Bolt, Earth\u0027s grace, Devotion Aura, Ressurection|n|n|cffffcc00Attacks land units.|R"
     },
     {
       "Id": 1885959285,
@@ -47,11 +47,11 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "E"
+      "Value": "W"
     },
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": 1
     },
     {
       "Id": 1868786037,
@@ -61,17 +61,7 @@
     {
       "Id": 1769173877,
       "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": 1919972469,
-      "Type": 3,
-      "Value": "Revive Darius Crowley"
-    },
-    {
-      "Id": 1953980789,
-      "Type": 3,
-      "Value": "Revive Darius Crowley"
+      "Value": "ReplaceableTextures/CommandButtons/BTNWorgenHunt.blp"
     }
   ]
 }

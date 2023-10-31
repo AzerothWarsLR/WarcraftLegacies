@@ -6,6 +6,11 @@
   ],
   "Modifications": [
     {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "ACds,AInv"
+    },
+    {
       "Id": 1885823349,
       "Type": 2,
       "Value": 1.1
@@ -35,7 +40,7 @@
     {
       "Id": 1650550901,
       "Type": 3,
-      "Value": "A0TC,AHfs,A0WE,Aamk,ST0X"
+      "Value": "A0IA,A0WE,A07P,Aamk,A0QI"
     },
     {
       "Id": 1836083317,
@@ -69,25 +74,29 @@
       "Value": "MetalMediumSlice"
     },
     {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "R03F"
+    },
+    {
       "Id": 1819240309,
       "Value": 100
     },
     {
       "Id": 1633837685,
-      "Value": 5
+      "Value": 10
     },
     {
       "Id": 1768186485,
-      "Value": 5
-    },
-    {
-      "Id": 1769169525,
       "Value": 4
     },
     {
-      "Id": 1768055157,
-      "Type": 3,
-      "Value": "A0UE,AInv"
+      "Id": 1769169525,
+      "Value": 2
+    },
+    {
+      "Id": 1986358389,
+      "Value": 3
     }
   ]
 }

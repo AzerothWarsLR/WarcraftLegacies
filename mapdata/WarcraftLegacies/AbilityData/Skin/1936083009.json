@@ -7,17 +7,17 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Scarlet)"
+      "Value": "(Unused)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "W"
+      "Value": "Q"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "W"
+      "Value": "Q"
     },
     {
       "Id": 1953854049,
@@ -53,14 +53,6 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Conjures a pillar of flame that burns ground units for 117 damage over 3 seconds. As the pillar of flame subsides, units within the fire continue to take 138 damage over 6 seconds."
-    },
-    {
-      "Id": 2020631137,
-      "Value": 1
-    },
-    {
-      "Id": 2020635233,
-      "Value": 1
     }
   ]
 }

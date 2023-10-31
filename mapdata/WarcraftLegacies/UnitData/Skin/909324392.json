@@ -57,7 +57,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Spellcaster production building. |n|n|r|cfff5962dTrains:|R Hydromancer, Arcanists, Geomancer|n|cfff5962dResearches:|R Hydromancer Training, Arcanist Training, Geomancer Training"
+      "Value": "|cfff5962dTrains:|R Hydromancer, Arcanists, Geomancer|n|cfff5962dResearches:|R Hydromancer Training, Arcanist Training, Geomancer Training"
     }
   ]
 }

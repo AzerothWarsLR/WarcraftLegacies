@@ -71,17 +71,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Creates a shop with purchasable items."
+      "Value": "A store for purchasing items"
     },
     {
       "Id": 1768841589,
       "Type": 3,
       "Value": "upgrade,first"
-    },
-    {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 0.55
     }
   ]
 }

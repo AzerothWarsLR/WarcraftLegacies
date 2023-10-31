@@ -47,7 +47,7 @@
     },
     {
       "Id": 1819240309,
-      "Value": 16
+      "Value": 18
     },
     {
       "Id": 1919903605,
@@ -59,7 +59,7 @@
     },
     {
       "Id": 1836412021,
-      "Value": 25
+      "Value": 75
     },
     {
       "Id": 1920298101,
@@ -68,7 +68,7 @@
     {
       "Id": 1952542837,
       "Type": 3,
-      "Value": "PathTextures\\6x6SimpleSolid.tga"
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
     },
     {
       "Id": 1885433973,
@@ -101,6 +101,11 @@
     {
       "Id": 1937141109,
       "Value": 0
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": "ebal,esen,earc"
     },
     {
       "Id": 1887007861,

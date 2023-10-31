@@ -1,5 +1,5 @@
 {
-  "OldId": 1651730497,
+  "OldId": 1969313089,
   "NewId": 859910209,
   "Unk": [
     0
@@ -8,33 +8,90 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\PASRiflemanBurningShot.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\PASFreezeField.blp"
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(lordaeron)"
+      "Value": "(Scourge - Ner\u0027zhul)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Armor Piercing Bolts"
+      "Value": "Hypothermic Aura"
     },
     {
-      "Level": 1,
-      "Id": 828536161,
+      "Id": 1918988897,
       "Type": 3,
-      "Value": "Increases damage dealt to enemy targets with Heavy armor by \u003CA0F4,DataB1,%\u003E%."
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFreezeField.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Hypothermic Aura - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Causes immense suffering to nearby enemy units, draining their life and slowing their movement speed. |n|n|cffffcc00Level 1|r - 5% movement speed reduction, -3 hit points per second.|n|cffffcc00Level 2|r - 10% movement speed reduction, -5 hit points per second.|n|cffffcc00Level 3|r - 15% movement speed reduction, -7 hit points per second.|n|cffffcc00Level 4|r - 20% movement speed reduction, -10 hit points per second."
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "war3mapImported\\MistAura.mdx"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Armor Piercing Bolts"
+      "Value": "Hypothermic Aura - [|cffffcc00Level 1|r]"
     },
     {
-      "Id": 2020631137,
-      "Value": 2
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Hypothermic Aura - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Hypothermic Aura - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Hypothermic Aura - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Lowers movement speed of enemy units in 900 AOE by 5% and decreases their HP regen by -3."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Lowers movement speed of enemy units in 900 AOE by 10% and decreases their HP regen by -5."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Lowers movement speed of enemy units in 900 AOE by 15% and decreases their HP regen by -7."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Lowers movement speed of enemy units in 900 AOE by 20% and decreases their HP regen by -10."
     }
   ]
 }

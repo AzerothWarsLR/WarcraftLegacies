@@ -27,7 +27,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "War-beast production building.|n|n|r|cfff5962dTrains:|R Direhorn, Throne of War, Storm Wyrm"
+      "Value": "Dinosaur Breeding Ground for the Zandalari.|n|cfff5962dTrains:|R Direhorn, Throne of War Storm Wyrm"
     },
     {
       "Id": 1818520949,
@@ -48,11 +48,6 @@
       "Id": 1885959285,
       "Type": 3,
       "Value": "Build Dinosaur Pen"
-    },
-    {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 0.8
     }
   ]
 }

@@ -35,17 +35,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Provides 8 food, which increases the maximum number of units that can be trained.|n|n|cfff5962dUpgrades to:|R Spirit Tower, Nerubian Tower"
+      "Value": "Provides 8 food, which increases the maximum number of units that can be trained.|n|cfff5962dUpgrades to:|R Spirit Tower, Nerubian Tower"
     },
     {
       "Id": 1651012469,
       "Type": 3,
       "Value": "ShadowTrollBurrow"
-    },
-    {
-      "Id": 1718840949,
-      "Type": 3,
-      "Value": " (Scourge Farm)"
     }
   ]
 }

@@ -22,17 +22,17 @@
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "- Smite,- Smite|n- Dispel,- Smite|n- Dispel|n- Inner Fire"
+      "Value": "- Smite,- Smite|n- Dispel,- Smite|n- Dispel|n- Holy Shackles"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(scarlet)"
+      "Value": "(Lordaeron)"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\ScarletInquisitor.mdl"
+      "Value": "units\\creeps\\BanditMage\\BanditMage.mdl"
     },
     {
       "Id": 1953458293,
@@ -52,22 +52,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Inquisitive spellcaster of the Scarlet.|n|cfff5962dAbilities:|r Smite|n|cfff5962dCan learn:|R Dispel, Inner Fire|n|n|cffffcc00Attacks land and air units.|R"
+      "Value": "Inquisitive spellcaster of the Scarlet.|n|cfff5962dAbilities:|r Smite|n|cfff5962dCan learn:|R Dispel, Holy Shackles|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1684960117,
       "Type": 3,
       "Value": "HeroArchMage"
-    },
-    {
-      "Id": 1868786037,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNScarletInquisitor.blp"
-    },
-    {
-      "Id": 1831952757,
-      "Type": 3,
-      "Value": "Abilities\\Weapons\\FaerieDragonMissile\\FaerieDragonMissile.mdl"
     }
   ]
 }

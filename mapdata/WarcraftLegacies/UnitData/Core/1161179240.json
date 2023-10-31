@@ -34,7 +34,7 @@
     {
       "Id": 1952542837,
       "Type": 3,
-      "Value": "PathTextures\\6x6SimpleSolid.tga"
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
     },
     {
       "Id": 1885433973,
@@ -62,7 +62,7 @@
     },
     {
       "Id": 1836412021,
-      "Value": 25
+      "Value": 30
     },
     {
       "Id": 1769169525,

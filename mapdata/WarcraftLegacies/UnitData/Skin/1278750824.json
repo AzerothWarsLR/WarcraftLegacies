@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNScarletKnight.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBanditLord.blp"
     },
     {
       "Id": 1718840949,
@@ -18,12 +18,17 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\ScarletKnight.mdl"
+      "Value": "units\\creeps\\BanditLord\\BanditLord.mdl"
     },
     {
       "Id": 1953458293,
       "Type": 3,
       "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
     },
     {
       "Id": 1835101813,
@@ -43,7 +48,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Crusader Knight for the Scarlet Cause.|n|cfff5962dAbilities:|R Charge, United for the Cause, United for the Crusade|n|n|cffffcc00Attacks land units.|r"
+      "Value": "Crusader Knight for the Scarlet Cause.|n|cfff5962dAbilities:|R Charge, Trample, United for the Cause|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

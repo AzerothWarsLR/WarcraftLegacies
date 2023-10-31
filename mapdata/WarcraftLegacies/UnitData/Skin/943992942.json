@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNStromgardeTradeHouse.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGilneasTradeHouse.blp"
     },
     {
       "Id": 2020631157,
@@ -51,17 +51,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Creates a shop with purchasable items."
+      "Value": "A shop of purchasable items."
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Vendor-hall"
+      "Value": "Build Trade-house"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Vendor-hall"
+      "Value": "Trade-house"
     }
   ]
 }

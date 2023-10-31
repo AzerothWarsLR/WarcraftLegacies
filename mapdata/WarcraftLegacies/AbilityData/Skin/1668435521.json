@@ -35,7 +35,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Calls down multiple Infernals from the sky.|n|n|cffffcc00Level 1|r - Calls down 4 Infernals. |n|cffffcc00Level 2|r - Calls down 5 stronger Infernals. |n|cffffcc00Level 3|r - Calls down 6 even stronger Infernals."
+      "Value": "Calls down multiple Infernals from the sky.|n|n|cffffcc00Level 1|r - Calls down 4 Abyssals . |n|cffffcc00Level 2|r - Calls down 5 Doomfire Abyssals. |n|cffffcc00Level 3|r - Calls down 6 Gargantuan Abyssals."
     },
     {
       "Level": 1,
@@ -59,19 +59,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Calls down 4 Infernals from the sky."
+      "Value": "Calls down 4 Abyssals from the sky."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Calls down 5 stronger Infernals from the sky."
+      "Value": "Calls down 5 Doomfire Abyssals  from the sky."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Calls down 6 even stronger Infernals from the sky."
+      "Value": "Calls down 6 Gargantuan Abyssals from the sky."
     }
   ]
 }

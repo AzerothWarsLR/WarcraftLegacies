@@ -22,7 +22,7 @@
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "- Purge,- Purge|n- Summon Water Elemental,- Purge|n- Summon Water Elemental|n- Storm Cloud,- Purge|n- Summon Water Elemental|n- Storm Cloudl|n- Freezing Shots"
+      "Value": "- Purge,- Purge|n- Summon Water Elemental,- Purge|n- Summon Water Elemental|n- Frost Cell,- Purge|n- Summon Water Elemental|n- Frost Celll|n- Freezing Shots"
     },
     {
       "Id": 1718840949,
@@ -42,7 +42,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Adept mage of the frost arcanum.|n|cfff5962dAbilities:|R Purge|n|cfff5962dCan Learn:|R Summon Water Elemental, Storm Cloud, Freezing Shots|n|n|cffffcc00Attacks land and air units.|R\r\n"
+      "Value": "Adept mage of the frost arcanum.|n|cfff5962dAbilities:|R Purge|n|cfff5962dCan Learn:|R Summon Water Elemental, Frost Cell, Freezing Shots|n|n|cffffcc00Attacks land and air units.|R\r\n"
     },
     {
       "Id": 1751675765,

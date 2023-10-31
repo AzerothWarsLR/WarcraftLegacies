@@ -17,7 +17,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Sentinel Shop)"
+      "Value": "(Sentinels)"
     },
     {
       "Id": 1818520949,
@@ -57,7 +57,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Creates a shop with purchasable items."
+      "Value": "Structure of the artifacts of the Kaldorei, and any purchasable items."
     }
   ]
 }

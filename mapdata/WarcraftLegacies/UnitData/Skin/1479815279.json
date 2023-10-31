@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Zandalari Siege)"
+      "Value": "(Zandalari Specialist)"
     },
     {
       "Id": 1953458293,
@@ -23,7 +23,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Advanced troop production building.|n|n|r|cfff5962dTrains:|R Warlords, Ravagers and Bear Riders"
+      "Value": "Shrine to honor the Troll Gods.|n|cfff5962dTrains:|R Warlords, Ravagers and Bear Riders"
     },
     {
       "Id": 1818520949,
@@ -44,11 +44,6 @@
       "Id": 1885959285,
       "Type": 3,
       "Value": "Build Loa Shrine"
-    },
-    {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 0.75
     }
   ]
 }

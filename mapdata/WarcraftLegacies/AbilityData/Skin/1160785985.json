@@ -1,55 +1,14 @@
 {
-  "OldId": 1953646913,
+  "OldId": 1937007681,
   "NewId": 1160785985,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Dark Summoning"
-    },
-    {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Legion)"
-    },
-    {
-      "Id": 2037082209,
-      "Type": 3,
-      "Value": "R"
-    },
-    {
-      "Id": 2020631137,
-      "Value": 3
-    },
-    {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Dark Summoning"
-    },
-    {
-      "Level": 1,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "Summons 12 friendly non-hero units from a target area to the caster."
-    },
-    {
-      "Id": 1952543585,
-      "Type": 3,
-      "Value": "Abilities\\Spells\\Undead\\Darksummoning\\DarkSummonTarget.mdl"
-    },
-    {
-      "Id": 1952543841,
-      "Type": 3,
-      "Value": "Abilities\\Spells\\Undead\\Darksummoning\\DarkSummonTarget.mdl"
-    },
-    {
-      "Id": 1952539489,
-      "Type": 3,
-      "Value": "Abilities\\Spells\\Demon\\DarkPortal\\DarkPortalTarget.mdl"
+      "Value": "(Dalaran Towers)"
     }
   ]
 }

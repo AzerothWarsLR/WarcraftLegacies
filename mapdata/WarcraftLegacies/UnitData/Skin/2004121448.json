@@ -25,14 +25,14 @@
       "Value": ""
     },
     {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Basic observation tower. Has no attack.|n|cfff5962dCan learn:|r Magic Sentry|n|cfff5962dUpgrades into:|r Guard Tower, Cannon Tower"
+    },
+    {
       "Id": 1718840949,
       "Type": 3,
       "Value": "(Lordaeron Tower)"
-    },
-    {
-      "Id": 1651864693,
-      "Type": 3,
-      "Value": "Basic observation tower. Has no attack.|n|n|cfff5962dAbilities:|r Magic Sentry|n|cfff5962dUpgrades to:|r Guard Tower, Cannon Tower"
     }
   ]
 }

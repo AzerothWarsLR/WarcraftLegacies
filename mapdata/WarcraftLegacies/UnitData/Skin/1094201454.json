@@ -31,7 +31,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Primary troop production building. |n|n|cfff5962dTrains:|R Naga Incursor, Hatchling, Gargantuan Sea Turtle"
+      "Value": "The deep fissure out of which the main soldiery of the Naga emerge.|n|r|cfff5962dTrains:|R Naga Incursor, Hatchling, Gargantuan Sea Turtle"
     },
     {
       "Id": 1651012469,
@@ -52,11 +52,6 @@
       "Id": 1868786037,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTN_Tolvir_Barracks.blp"
-    },
-    {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 0.75
     }
   ]
 }

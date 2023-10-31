@@ -28,7 +28,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "General research building. |n|n|cfff5962dResearches:|r Forged Weaponry, Armor Plating, Power Infusion, Flight, Navigation, Improved Cannons, Fortified Hulls"
+      "Value": "Resource harvesting center and producer of Draenei enhancements. |n|cfff5962dResearches:|R Forged Weaponry, Armor Plating, Power Infusion, Flight, Navigation, Improved Cannons, Fortified Hulls"
     },
     {
       "Id": 1818520949,
@@ -43,12 +43,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Lightforge"
+      "Value": "Smithery"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Lightforge"
+      "Value": "Build Smithery"
     },
     {
       "Id": 1684960117,

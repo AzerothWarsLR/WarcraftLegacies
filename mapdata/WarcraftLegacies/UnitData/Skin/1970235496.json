@@ -33,14 +33,14 @@
       "Value": ""
     },
     {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Civilian farmstead supplying food for the Kingdom.|nProvides 8 food, which increases the maximum number of units that can be trained."
+    },
+    {
       "Id": 1718840949,
       "Type": 3,
       "Value": " (Lordaeron Farm)"
-    },
-    {
-      "Id": 1651864693,
-      "Type": 3,
-      "Value": "Provides 8 food, which increases the maximum number of units that can be trained."
     }
   ]
 }

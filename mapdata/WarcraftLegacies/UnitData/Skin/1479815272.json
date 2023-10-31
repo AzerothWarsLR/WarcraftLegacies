@@ -47,7 +47,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Witch of Gilneas.|n|cfff5962dAbilities:|R Spiritual Guidance, Slow Poison |n|cfff5962dCan learn:|R Thorned Vines, Far Sight|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Witch of Gilneas.|n|cfff5962dAbilities:|R Spiritual Guidance, Slow Poison |n|cfff5962dCan learn:|R Healing Wave, Far Sight|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,
@@ -63,21 +63,6 @@
       "Id": 1831952757,
       "Type": 3,
       "Value": "Abilities\\Weapons\\MoonPriestessMissile\\MoonPriestessMissile.mdl"
-    },
-    {
-      "Id": 1635083125,
-      "Type": 3,
-      "Value": "war3mapImported\\Thorned_Vines.blp"
-    },
-    {
-      "Id": 1853186933,
-      "Type": 3,
-      "Value": "Initiate,adept,Master"
-    },
-    {
-      "Id": 1953850229,
-      "Type": 3,
-      "Value": "- Slow Poison,- Slow Poison|n- Thorned Vines,- Slow Poison|n- Thorned Vines|n- Far Sight"
     }
   ]
 }

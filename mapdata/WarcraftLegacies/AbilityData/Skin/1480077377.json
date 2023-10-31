@@ -49,7 +49,7 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Aura of Dread"
+      "Value": "Aura of Dread - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
@@ -73,7 +73,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Decreases armor of nearby enemy units in 600 AOE by 6."
+      "Value": "Decreases armor of nearby enemy units in 600 AOE by 1.5."
     },
     {
       "Level": 2,

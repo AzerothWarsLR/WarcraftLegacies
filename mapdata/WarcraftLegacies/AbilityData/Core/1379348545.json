@@ -6,22 +6,28 @@
   ],
   "Modifications": [
     {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B011,B010"
+    },
+    {
       "Level": 2,
       "Id": 1718968929,
       "Type": 3,
-      "Value": "B010,B011"
+      "Value": "B011,B010"
     },
     {
       "Level": 3,
       "Id": 1718968929,
       "Type": 3,
-      "Value": "B010,B011"
+      "Value": "B011,B010"
     },
     {
       "Level": 4,
       "Id": 1718968929,
       "Type": 3,
-      "Value": "B010,B011"
+      "Value": "B011,B010"
     },
     {
       "Level": 1,
@@ -212,12 +218,6 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,enemies,ground,organic"
-    },
-    {
-      "Level": 1,
-      "Id": 1718968929,
-      "Type": 3,
-      "Value": "B010,B011"
     }
   ]
 }

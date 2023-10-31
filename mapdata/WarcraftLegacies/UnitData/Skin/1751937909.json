@@ -31,12 +31,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Advanced troop production building.|n|n|r|cfff5962dTrains:|R Abomination, Meat Wagon, Plague Titan|n|cfff5962dResearches:|R Epidemic, Exhume Corpses, Flesh Shaping"
-    },
-    {
-      "Id": 1718840949,
-      "Type": 3,
-      "Value": " (Scourge Specialist)"
+      "Value": "Gore spattered fleshworks of the Scourge.|n|cfff5962dTrains:|R Abomination, Meat Wagon, Plague Titan|n|cfff5962dResearches:|R Revenants/Epidemic, Exhume Corpses, Flesh Shaping"
     }
   ]
 }

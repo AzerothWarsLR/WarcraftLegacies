@@ -32,7 +32,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Kel\u0027thuzad)"
+      "Value": "(Scourge)"
     },
     {
       "Id": 1952540001,
@@ -42,7 +42,7 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "W"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
@@ -56,22 +56,22 @@
     },
     {
       "Id": 2020635233,
-      "Value": 1
+      "Value": 3
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "W"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "Learn Mass Frost Armor - [|cffffcc00Level %d|r]"
+      "Value": "Learn Mass Ice Armor - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Grants Frost Armor to all friendly unit in a target area for \u003CA13S,DataA1\u003E seconds. |n|n|cffffcc00Level 1|r - Grants \u003CA13S,DataB1\u003E armor and has a \u003CA13R,Cool1\u003E second cooldown.|n|cffffcc00Level 2|r - Grants \u003CA13S,DataB2\u003E armor and has a \u003CA13R,Cool2\u003E second cooldown.|n|cffffcc00Level 3|r - Grants \u003CA13S,DataB3\u003E armor and has a \u003CA13R,Cool3\u003E second cooldown.|n|cffffcc00Level 4|r - Grants \u003CA13S,DataB4\u003E armor and has a \u003CA13R,Cool4\u003E second cooldown."
+      "Value": "Grants Frost Armor to all friendly unit in a large area of effect. |n|n|cffffcc00Level 1|r - Lasts 60 seconds and grants 8 armor.|n|cffffcc00Level 2|r - Lasts 60 seconds and grants 12 armor.|n|cffffcc00Level 3|r - Lasts 60 seconds and grants 16 armor"
     },
     {
       "Id": 1952543841,
@@ -82,53 +82,49 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Mass Frost Armor - [|cffffcc00Level 1|r]"
+      "Value": "Mass Frost Armor "
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Mass Frost Armor - [|cffffcc00Level 2|r]"
+      "Value": "Mass Ice Armor - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Mass Frost Armor - [|cffffcc00Level 3|r]"
+      "Value": "Mass Ice Armor - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Mass Frost Armor - [|cffffcc00Level 4|r]"
+      "Value": "Mass Banish - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Applies Frost Armor to all friendly unit in a target area for \u003CA13S,DataA1\u003E seconds, granting \u003CA13S,DataB1\u003E bonus armour and slowing units that attack them for 2 seconds."
+      "Value": "Grants Frost Armor to all friendly unit in an area of effect, giving units \u002B7 bonus armour and slowing units that attack them for 2 seconds. Lasts 60 seconds. |n"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Applies Frost Armor to all friendly unit in a target area for \u003CA13S,DataA2\u003E seconds, granting \u003CA13S,DataB2\u003E bonus armour and slowing units that attack them for 2 seconds."
+      "Value": "Grants Ice Armor to all friendly unit in a large area of effect.|n|cffffcc00Level 2|r - Lasts 60 seconds and grants 12 armor"
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Applies Frost Armor to all friendly unit in a target area for \u003CA13S,DataA3\u003E seconds, granting \u003CA13S,DataB3\u003E bonus armour and slowing units that attack them for 2 seconds."
+      "Value": "Grants Ice Armor to all friendly unit in a large area of effect.|n|cffffcc00Level 3|r - Lasts 60 seconds and grants 16 armor"
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Applies Frost Armor to all friendly unit in a target area for \u003CA13S,DataA4\u003E seconds, granting \u003CA13S,DataB4\u003E bonus armour and slowing units that attack them for 2 seconds."
-    },
-    {
-      "Id": 2020631137,
-      "Value": 1
+      "Value": "Turns all non-mechanical unit in the target area ethereal and slows their movement speed by \u003CA0FE,DataA4,%\u003E% for \u003CA0FE,Dur4\u003E seconds. Lasts \u003CA0FE,Dur4\u003E second on Heroes. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect."
     }
   ]
 }

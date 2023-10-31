@@ -27,7 +27,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Spellcaster production building. |n|n|r|cfff5962dTrains:|R Alchemist, Hobgoblin|n|cfff5962dResearches:|R  Alchemist Training"
+      "Value": "Place for Kaja\u0027Cola fueled experimenting.|n|cfff5962dTrains:|R Alchemist, Hobgoblin|n|cfff5962dResearches:|R  Alchemist Training"
     },
     {
       "Id": 1818520949,
@@ -48,11 +48,6 @@
       "Id": 1868786037,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNGoblinLab.blp"
-    },
-    {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 0.75
     }
   ]
 }

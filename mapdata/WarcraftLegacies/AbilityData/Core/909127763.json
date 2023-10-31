@@ -1,25 +1,25 @@
 {
-  "OldId": 845243219,
+  "OldId": 1953788499,
   "NewId": 909127763,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1667330657,
-      "Type": 3,
-      "Value": "human"
-    },
-    {
       "Id": 1902473825,
       "Type": 3,
-      "Value": "R08A"
+      "Value": ""
     },
     {
       "Level": 1,
       "Id": 828467267,
       "Type": 3,
-      "Value": "h0CQ"
+      "Value": "uabo"
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "undead"
     }
   ]
 }

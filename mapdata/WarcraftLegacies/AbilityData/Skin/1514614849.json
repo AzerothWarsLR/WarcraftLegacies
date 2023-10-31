@@ -8,7 +8,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Blue - Dreadlord ICON)"
+      "Value": "(Blue - Dreadlord)"
     },
     {
       "Id": 1835101793,
@@ -38,8 +38,8 @@
       "Value": "This unit gains 50% of damage done as health."
     },
     {
-      "Id": 2037408353,
-      "Value": 1
+      "Id": 2020631137,
+      "Value": 3
     }
   ]
 }

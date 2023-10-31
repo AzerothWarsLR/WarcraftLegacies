@@ -21,7 +21,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": " (Warsong Tower)"
+      "Value": " (Warsong T2)"
     },
     {
       "Id": 1818520949,
@@ -71,7 +71,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Primary defensive structure.|n|n|cfff5962dCan learn:|R Spiked Barricades, Reinforced Defenses |n|cfff5962dUpgrades to:|R Improved Iron Keep|n|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Defensive fortification.|n|cfff5962dUpgrades Into:|R Improved Iron Keep|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1868786037,

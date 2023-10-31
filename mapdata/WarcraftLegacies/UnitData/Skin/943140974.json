@@ -26,7 +26,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.7
+      "Value": 0.8
     },
     {
       "Id": 1885959285,
@@ -62,11 +62,6 @@
       "Id": 1868786037,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTN_TolvirAlter.blp"
-    },
-    {
-      "Id": 1651864693,
-      "Type": 3,
-      "Value": "Summons Heroes and Demi-heroes. |nRevives slain Heroes and Demi-heroes."
     }
   ]
 }

@@ -15,6 +15,11 @@
       "Value": "R"
     },
     {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Abyssal Strike"
+    },
+    {
       "Id": 1802007137,
       "Type": 3,
       "Value": "R"
@@ -22,12 +27,18 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "Learn Inferno - [|cffffcc00Level %d|r]"
+      "Value": "Learn Abyssal Strike - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Calls an Infernal down from the sky, dealing damage and stunning enemy land units in an area. The Infernal lasts 180 seconds.  |n|n|cffffcc00Level 1|r - 90 damage to units within a radius of 250. The impact stuns enemy units for 2 seconds.|n|cffffcc00Level 2|r - 180 damage to units within a radius of 300. The impact stuns enemy units for 2.5 seconds. |n|cffffcc00Level 3|r - 270 damage to units within a radius of 350. The impact stuns enemy units for 3 seconds."
+      "Value": "Calls an Infernal down from the sky, dealing damage and stunning enemy land units in an area. The Infernal lasts 180 seconds.  |n|n|cffffcc00Level 1|r - 90 damage in a 250 AoE on impact. The impact stuns enemy units for 2 seconds. Brings forth an Abyssal.|n|cffffcc00Level 2|r -  180 damage in a 300 AoE on impact. The impact stuns enemy units for 2.5 seconds. Brings forth a Doomfire Abyssal.   |n|cffffcc00Level 3|r -  270 damage in a 350 AoE on impact. The impact stuns enemy units for 3 seconds. Brings forth a Gargantuan Abyssal."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Abyssal Strike"
     },
     {
       "Level": 2,

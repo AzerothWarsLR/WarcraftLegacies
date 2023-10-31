@@ -20,6 +20,11 @@
       "Value": ""
     },
     {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Beast stables for the Horde.|n|cfff5962dTrains:|R Batrider, Packleader, Mammoth Wrangler|n|cfff5962dResearches:|R Airborn Toxins"
+    },
+    {
       "Id": 1818520949,
       "Type": 3,
       "Value": "war3mapImported\\FrostwolfBeastiary.mdl"
@@ -32,11 +37,6 @@
     {
       "Id": 2020631157,
       "Value": 2
-    },
-    {
-      "Id": 1651864693,
-      "Type": 3,
-      "Value": "War-beast production building.|n|n|r|cfff5962dTrains:|R Batrider, Packleader, Mammoth Wrangler|n|cfff5962dResearches:|R Airborn Toxins"
     }
   ]
 }

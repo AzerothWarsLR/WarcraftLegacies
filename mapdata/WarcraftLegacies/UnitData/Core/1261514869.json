@@ -66,6 +66,10 @@
       "Id": 1887007861,
       "Type": 3,
       "Value": "undead,peon,sapper"
+    },
+    {
+      "Id": 1986358389,
+      "Value": 1
     }
   ]
 }

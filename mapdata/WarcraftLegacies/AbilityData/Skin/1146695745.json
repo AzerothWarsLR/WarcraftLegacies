@@ -8,7 +8,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Dummy Caster)"
+      "Value": "(C\u0027Thun)"
     },
     {
       "Id": 2037082209,
@@ -19,50 +19,12 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": ""
+      "Value": "Afflicts a target enemy unit with a deadly parasite that deals 5 damage per second for 30 seconds. If the afflicted unit dies while under the effect of Parasite, a Tentacle will spawn from its corpse."
     },
     {
       "Id": 1802007905,
       "Type": 3,
       "Value": "Q"
-    },
-    {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Apocalypse"
-    },
-    {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Level": 1,
-      "Id": 829715809,
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Level": 1,
-      "Id": 829781345,
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": 1953653089,
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": 1918989665,
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": 1952542049,
-      "Type": 3,
-      "Value": ""
     }
   ]
 }

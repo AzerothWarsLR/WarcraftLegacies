@@ -1,64 +1,34 @@
 {
-  "OldId": 1970235496,
+  "OldId": 1735093576,
   "NewId": 1379151976,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1651012469,
+      "Id": 1868786037,
       "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": 1718840949,
-      "Type": 3,
-      "Value": "(Open)"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCentaurKhan.blp"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Gate_45_RightAlternate.mdl"
+      "Value": "units\\creeps\\CentaurKhan\\CentaurKhan.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.9
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Diagonal Wooden Gate"
+      "Value": "Ramzes the Horror"
     },
     {
-      "Id": 1885959285,
+      "Id": 1869770869,
       "Type": 3,
-      "Value": "Diagonal Wooden Gate"
-    },
-    {
-      "Id": 1935832437,
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": 1651864693,
-      "Type": 3,
-      "Value": " "
-    },
-    {
-      "Id": 1684960117,
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": 1886940533,
-      "Type": 1,
-      "Value": 0
-    },
-    {
-      "Id": 1920494965,
-      "Type": 1,
-      "Value": 0
-    },
-    {
-      "Id": 1768841589,
-      "Type": 3,
-      "Value": "alternate"
+      "Value": "Ramzes the Horror"
     }
   ]
 }

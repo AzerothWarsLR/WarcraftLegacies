@@ -20,7 +20,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.75
+      "Value": 0.85
     },
     {
       "Id": 1935832437,
@@ -30,12 +30,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Air production building.|n|n|cfff5962dTrains:|R  Frost Wyrms, Obsidian Destroyers|n|cfff5962dResearches:|R Freezing Breath, Improved Orb of Annihilation"
-    },
-    {
-      "Id": 1718840949,
-      "Type": 3,
-      "Value": " (Scourge Siege)"
+      "Value": "Where wyrms go to rest. |n|cfff5962dTrains:|R Frost Wyrms, Obsidian Destroyers|n|cfff5962dResearches:|R Freezing Breath, Improved Orb of Annihilation"
     }
   ]
 }

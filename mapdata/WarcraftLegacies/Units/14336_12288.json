@@ -10,21 +10,21 @@
     "AbilityData": [],
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "TypeId": 811754350,
+    "TypeId": 1768844136,
     "Position": {
-      "X": 14272,
-      "Y": 12352
+      "X": 14126.086,
+      "Y": 12325.27
     },
-    "Rotation": 4.71238899230957,
+    "Rotation": 6.163849830627441,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 811754350,
+    "SkinId": 1768844136,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 2678
+    "CreationNumber": 1378
   },
   {
     "Flags": 2,
@@ -39,8 +39,8 @@
     "WaygateDestinationRegionId": -1,
     "TypeId": 845969006,
     "Position": {
-      "X": 14482.006,
-      "Y": 12298.32
+      "X": 14578.733,
+      "Y": 12344.9375
     },
     "Rotation": 4.040019512176514,
     "Scale": {
@@ -64,21 +64,21 @@
     "AbilityData": [],
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "TypeId": 929194862,
+    "TypeId": 1768844136,
     "Position": {
-      "X": 14400,
-      "Y": 12480
+      "X": 14142.067,
+      "Y": 12511.5205
     },
-    "Rotation": 4.71238899230957,
+    "Rotation": 0.026524262502789497,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 929194862,
+    "SkinId": 1768844136,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 914
+    "CreationNumber": 1792
   },
   {
     "Flags": 2,
@@ -91,20 +91,20 @@
     "AbilityData": [],
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "TypeId": 2003596910,
+    "TypeId": 909127784,
     "Position": {
-      "X": 14382.519,
-      "Y": 12267.616
+      "X": 14080,
+      "Y": 12224
     },
-    "Rotation": 5.158402442932129,
+    "Rotation": 0.6586872935295105,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 2003596910,
+    "SkinId": 909127784,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 2811
+    "CreationNumber": 2912
   }
 ]

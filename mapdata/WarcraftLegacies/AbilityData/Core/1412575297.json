@@ -1,72 +1,20 @@
 {
-  "OldId": 1818447425,
+  "OldId": 1635010625,
   "NewId": 1412575297,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1986358369,
-      "Value": 1
-    },
-    {
-      "Id": 1919248481,
-      "Value": 0
-    },
-    {
       "Level": 1,
-      "Pointer": 6,
-      "Id": 913072974,
+      "Id": 1717986657,
       "Type": 3,
-      "Value": "darksummoning"
+      "Value": "X00D"
     },
     {
-      "Level": 1,
-      "Pointer": 5,
-      "Id": 896295758,
-      "Value": 0
-    },
-    {
-      "Level": 1,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 180
-    },
-    {
-      "Level": 1,
-      "Pointer": 3,
-      "Id": 862741326,
-      "Value": 19
-    },
-    {
-      "Level": 1,
-      "Pointer": 2,
-      "Id": 845964110,
-      "Value": 2
-    },
-    {
-      "Level": 1,
-      "Id": 1851880033,
-      "Type": 2,
-      "Value": 99999
-    },
-    {
-      "Level": 1,
-      "Id": 1701994849,
-      "Type": 2,
-      "Value": 500
-    },
-    {
-      "Id": 1667330657,
+      "Id": 1902473825,
       "Type": 3,
-      "Value": "undead"
-    },
-    {
-      "Level": 1,
-      "Pointer": 1,
-      "Id": 829186894,
-      "Type": 2,
-      "Value": 0.6
+      "Value": "R01L"
     }
   ]
 }

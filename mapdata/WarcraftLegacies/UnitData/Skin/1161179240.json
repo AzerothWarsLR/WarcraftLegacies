@@ -36,7 +36,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": 0.85
     },
     {
       "Id": 1668510581,
@@ -51,7 +51,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Primary troop production building. |n|n|cfff5962dTrains:|R Bladesman, Spearman, Outrider|n|cfff5962dResearches:|R Animal War Training"
+      "Value": "Housing for the defenders of Stormwind.|n|r|cfff5962dTrains:|R Bladesman, Spearman, Outrider|n|cfff5962dResearches:|R Animal War Training"
     }
   ]
 }

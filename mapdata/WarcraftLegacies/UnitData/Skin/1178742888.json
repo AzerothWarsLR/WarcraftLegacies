@@ -1,0 +1,49 @@
+{
+  "OldId": 2004121448,
+  "NewId": 1178742888,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Onslaught Tower)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\AlteracTower.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.95
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Observation tower.|n|cff6480ffLordaeron|r/|cff556b2fArathor|r/|cffffd700Khaz Modan |r|cfff5962dUpgrades Into:|R Guard Tower, Cannon Tower|N|cff556b2fArathor|r/|cff828282Dalaran|r/|cff00ffffQuel\u0027Thalas|r |cfff5962dUpgrades Into:|R Arcane Tower|N|cff828282Dalaran|R |cfff5962dUpgrades Into:|R Kirin Tor Tower|N|cff00ffffQuel\u0027Thalas|r |cfff5962dUpgrades Into:|R Sun Tower"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNGilneasTowerScout.blp"
+    }
+  ]
+}

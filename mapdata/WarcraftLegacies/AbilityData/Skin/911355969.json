@@ -1,45 +1,41 @@
 {
-  "OldId": 1718379329,
+  "OldId": 846029121,
   "NewId": 911355969,
   "Unk": [
     0
   ],
   "Modifications": [
     {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBarkskin.blp"
+    },
+    {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Scarlet Bishop)"
+      "Value": "(Dark Green - Benedictus)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "E"
+      "Value": "W"
     },
     {
-      "Level": 1,
-      "Id": 828536161,
+      "Id": 1835101793,
       "Type": 3,
-      "Value": "Prevent units from casting spells in the targeted area of effect for the duration of the channeling. |n|cffffcc00Lasts \u003CA0R6,Dur1\u003E seconds."
+      "Value": "Power Word: Shield"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Sanctify"
+      "Value": "(|cffffcc00W|r) - Power Word Shield"
     },
     {
-      "Id": 1835101793,
+      "Level": 1,
+      "Id": 828536161,
       "Type": 3,
-      "Value": "Sanctify"
-    },
-    {
-      "Id": 2020631137,
-      "Value": 2
-    },
-    {
-      "Id": 1953653089,
-      "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNConsecration.blp"
+      "Value": "Creates a barrier that absorbs up to 1100 spell damage on a unit."
     }
   ]
 }

@@ -67,13 +67,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Inquisitor\u0027s mana capacity, mana regeneration rate, hit points, damage and gives them the Dispel Magic ability."
+      "Value": "Increases Inquisitor\u0027s mana capacity, mana regeneration rate, hit points, damage and gives them the dispel ability."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Inquisitor\u0027s mana capacity, mana regeneration rate, hit points, damage and gives them the Inner Fire ability."
+      "Value": "Increases Inquisitor\u0027s mana capacity, mana regeneration rate, hit points, damage and gives them the Holy Shackles ability."
     }
   ]
 }

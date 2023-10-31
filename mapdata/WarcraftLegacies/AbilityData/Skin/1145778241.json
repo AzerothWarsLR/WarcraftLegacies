@@ -1,53 +1,119 @@
 {
-  "OldId": 1869827649,
+  "OldId": 2038064705,
   "NewId": 1145778241,
   "Unk": [
     0
   ],
   "Modifications": [
     {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTransmute.blp"
+    },
+    {
       "Id": 2020631137,
-      "Value": 2
+      "Value": 1
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(saiden dummy)"
+      "Value": "(unused)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "E"
+      "Value": "W"
     },
     {
-      "Level": 1,
-      "Id": 828536161,
+      "Id": 1835101793,
       "Type": 3,
-      "Value": "Deafen enemy units which prevent the casting of spells and reduce movement speed by 75%.|nLasts (3) seconds."
+      "Value": "Holy Power"
     },
     {
-      "Level": 2,
-      "Id": 828536161,
+      "Id": 1918988897,
       "Type": 3,
-      "Value": "Deafen enemy units which prevent the casting of spells and reduce movement speed by 75%.|nLasts (3) seconds."
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTransmute.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Holy Power - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Increases Alexandros\u0027 attack speed and movement speed. Lasts 12 seconds.  |n|cffffcc00|nLevel 1 |r - Attack speed by 40%, movement speed by 10%.|n|cffffcc00Level 2 |r - Attack speed by 70%, movement speed by 15%. |n|cffffcc00Level 3 |r - Attack speed by 100%, movement speed by 20%. |n|cffffcc00Level 4|r - Attack speed by 130%, movement speed by 25%."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Soul Burn"
+      "Value": "Holy Power - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Holy Power - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Holy Power - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Holy Power - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases Alexandros\u0027 attack speed by 40% and movement speed by 10% for 12 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases Alexandros\u0027 attack speed by 70% and movement speed by 15% for 12 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Deafen enemy units which prevent the casting of spells and reduce movement speed by 75%.|nLasts (3) seconds."
+      "Value": "Increases Alexandros\u0027 attack speed by 100% and movement speed by 20% for 12 seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Deafen enemy units which prevent the casting of spells and reduce movement speed by 75%.|nLasts (3) seconds."
+      "Value": "Increases Alexandros\u0027 attack speed by 130% and movement speed by 25% for 12 seconds."
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTransmute.blp"
+    },
+    {
+      "Id": 2019718497,
+      "Value": 1
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "W"
     }
   ]
 }

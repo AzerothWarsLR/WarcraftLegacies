@@ -1,29 +1,29 @@
 {
-  "OldId": 1802981186,
+  "OldId": 1969313090,
   "NewId": 1328623682,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1885959270,
-      "Type": 3,
-      "Value": "|cff00ff00Vanish|r"
-    },
-    {
       "Id": 1953653094,
       "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNAbility_Vanish.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFreezeField.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Hypothermic Aura"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "This unit is Vanished; it is invisible and has bonus damage. The invisibility will not break if the hero attacks or casts a spell."
+      "Value": "This unit is under the effects of Hypothermic Aura; it has reduced movement speed and is losing hit points over time."
     },
     {
-      "Id": 1835101798,
+      "Id": 1952543846,
       "Type": 3,
-      "Value": "Vanish"
+      "Value": ""
     }
   ]
 }

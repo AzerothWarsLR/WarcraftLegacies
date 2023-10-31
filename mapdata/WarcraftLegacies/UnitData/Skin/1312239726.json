@@ -42,7 +42,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Spellcaster production building. |n|n|r|cfff5962dTrains:|R  Bloodkin, Deepseer|n|cfff5962dResearches:|R Bloodkin Adept Training, Deepseer Adept Training"
+      "Value": "Primary production building for Spellcasters.|n|r|cfff5962dTrains:|R Bloodkin, Deepseer|n|cfff5962dResearches:|R Bloodkin Adept Training, Deepseer Adept Training"
     },
     {
       "Id": 1684960117,
@@ -62,7 +62,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.55
+      "Value": 0.7
     }
   ]
 }

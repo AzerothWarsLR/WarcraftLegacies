@@ -13,7 +13,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\ScarletCleric.mdl"
+      "Value": "war3mapImported\\ClericWC1.mdl"
     },
     {
       "Id": 1953458293,
@@ -38,12 +38,12 @@
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "- Heal,- Heal|n- Spiritual Guidance,- Heal|n- Spiritual Guidance|n- Resurrection"
+      "Value": "- Heal,- Heal|n- Minor Holy Light,- Heal|n- Minor Holy Light|n- Rain of Light"
     },
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNScarletCleric.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNClericWC1.blp"
     },
     {
       "Id": 1633907573,

@@ -6,9 +6,17 @@
   ],
   "Modifications": [
     {
+      "Id": 1651270517,
+      "Value": 200
+    },
+    {
       "Id": 1718840949,
       "Type": 3,
       "Value": "(Legion-Archimond-Level 1)"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 220
     },
     {
       "Id": 1953458293,
@@ -23,7 +31,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Infernal"
+      "Value": "Abyssal"
     },
     {
       "Id": 1668510581,

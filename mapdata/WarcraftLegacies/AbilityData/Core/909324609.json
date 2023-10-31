@@ -58,7 +58,7 @@
       "Level": 1,
       "Id": 1851880033,
       "Type": 2,
-      "Value": 200
+      "Value": 600
     },
     {
       "Level": 1,
@@ -75,7 +75,7 @@
       "Level": 1,
       "Id": 1918989409,
       "Type": 3,
-      "Value": "enemies,ground,nonhero,organic"
+      "Value": "ground,nonhero,organic"
     }
   ]
 }

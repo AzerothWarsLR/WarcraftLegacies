@@ -1,0 +1,15 @@
+{
+  "Left": 15008,
+  "Bottom": 6560,
+  "Right": 15552,
+  "Top": 7168,
+  "Name": "Scholomance Exterior 2",
+  "CreationNumber": 93,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

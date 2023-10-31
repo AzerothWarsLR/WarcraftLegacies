@@ -1,0 +1,79 @@
+{
+  "OldId": 1986348353,
+  "NewId": 1229729857,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Khadgar)"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Give Khadgar a chance to cast a random spell from the following list when attacking an enemy unit. Khadgar Arcane Phantoms also have this ability. |n|n|cffffcc00Level 1|r - \u003CAEev,DataA1,%\u003E% chance that an opponent misses. |n|cffffcc00Level 2|r - \u003CAEev,DataA2,%\u003E% chance that an opponent misses. |n|cffffcc00Level 3|r - \u003CAEev,DataA3,%\u003E% chance that an opponent misses. |n|cffffcc00Level 3|r - 35% chance that an opponent misses."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Spell Mastery - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CAEev,DataA4,%\u003E% chance to avoid an attack."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Spell Mastery - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Spell Mastery - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Spell Mastery - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Spell Mastery - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Spell Mastery"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASDevastation.blp"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDevastation.blp"
+    },
+    {
+      "Id": 811693153,
+      "Type": 3,
+      "Value": "hand,left"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\EtherealForm\\SpiritWalkerChange.mdl"
+    }
+  ]
+}

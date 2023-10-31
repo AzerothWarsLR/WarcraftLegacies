@@ -6,13 +6,23 @@
   ],
   "Modifications": [
     {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFrosty.blp"
+    },
+    {
       "Id": 2037408353,
       "Value": 1
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Frostmourne)"
+      "Value": "(Red - Lich King, DK Arthas)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "The Power of Frostmourne"
     },
     {
       "Id": 1918988897,
@@ -42,13 +52,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Cleaving Attack"
+      "Value": "The Power of Frostmourne"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "When this unit attacks, \u003CA04M,DataA1,%\u003E% of its damage strikes through to enemies near the primary attacked unit."
+      "Value": "Frostmourne gives Arthas the power to do 25% of his damage to enemies near the primary attacked unit."
     }
   ]
 }

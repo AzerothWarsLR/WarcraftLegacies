@@ -1,61 +1,61 @@
 {
-  "OldId": 846349121,
+  "OldId": 1718174529,
   "NewId": 1213411393,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 2020631137,
-      "Value": 1
-    },
-    {
-      "Id": 1718840929,
+      "Id": 1768841569,
       "Type": 3,
-      "Value": "(scarlet - Monk"
-    },
-    {
-      "Level": 2,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Enchanced Rejuvenation"
-    },
-    {
-      "Level": 1,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "Heals a target friendly unit for 800 mana over 40 seconds. Has a 70 seconds cooldown."
-    },
-    {
-      "Level": 2,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "Heals a target friendly unit for \u003CA09E,DataA2\u003E hit points over \u003CA09E,Dur2\u003E seconds."
-    },
-    {
-      "Id": 2019718497,
-      "Value": 1
-    },
-    {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Spiritual Guidance"
-    },
-    {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Spiritual Guidance"
+      "Value": "stand"
     },
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNBurning_Mana.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaniteRanged.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Purple) (scarlet crusade knight)"
+    },
+    {
+      "Id": 1936090465,
+      "Type": 3,
+      "Value": ""
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "W"
+      "Value": "E"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Holy Fire Blessing"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Holy Fire Blessing"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases the unit\u0027s damage by 20% for 15 seconds."
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaniteRanged.blp"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "E"
     }
   ]
 }

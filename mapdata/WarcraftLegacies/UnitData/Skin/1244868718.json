@@ -1,5 +1,5 @@
 {
-  "OldId": 1919906926,
+  "OldId": 1651468142,
   "NewId": 1244868718,
   "Unk": [
     0
@@ -8,27 +8,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Storm Cloud"
-    },
-    {
-      "Id": 1868786037,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackHole.blp"
-    },
-    {
-      "Id": 1818520949,
-      "Type": 3,
-      "Value": "Abilities\\Spells\\Undead\\UnholyFrenzy\\UnholyFrenzyTarget.mdl"
-    },
-    {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 4
-    },
-    {
-      "Id": 1831952757,
-      "Type": 3,
-      "Value": "Abilities\\Weapons\\Bolt\\BoltImpact.mdl"
+      "Value": "Black Portal Aura Control Nexus"
     }
   ]
 }

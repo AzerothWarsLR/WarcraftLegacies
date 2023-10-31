@@ -1,120 +1,69 @@
 {
-  "OldId": 846349121,
+  "OldId": 1718174529,
   "NewId": 1213411393,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Level": 2,
+      "Level": 1,
       "Id": 1718968929,
       "Type": 3,
-      "Value": "Brej"
-    },
-    {
-      "Id": 1684562785,
-      "Value": 1
-    },
-    {
-      "Level": 1,
-      "Id": 1935895905,
-      "Value": 100
-    },
-    {
-      "Level": 2,
-      "Id": 1935895905,
-      "Value": 100
-    },
-    {
-      "Level": 1,
-      "Pointer": 1,
-      "Id": 829056338,
-      "Type": 2,
-      "Value": 0
-    },
-    {
-      "Level": 2,
-      "Pointer": 1,
-      "Id": 829056338,
-      "Type": 2,
-      "Value": 600
-    },
-    {
-      "Level": 2,
-      "Pointer": 3,
-      "Id": 862610770,
-      "Value": 3
-    },
-    {
-      "Level": 1,
-      "Id": 1920296033,
-      "Type": 2,
-      "Value": 40
-    },
-    {
-      "Level": 2,
-      "Id": 1920296033,
-      "Type": 2,
-      "Value": 12
-    },
-    {
-      "Level": 1,
-      "Id": 1969514593,
-      "Type": 2,
-      "Value": 40
-    },
-    {
-      "Level": 2,
-      "Id": 1969514593,
-      "Type": 2,
-      "Value": 12
-    },
-    {
-      "Id": 1667330657,
-      "Type": 3,
-      "Value": "orc"
-    },
-    {
-      "Id": 1902473825,
-      "Type": 3,
-      "Value": "R05D"
-    },
-    {
-      "Level": 1,
-      "Id": 1851880033,
-      "Type": 2,
-      "Value": 700
-    },
-    {
-      "Level": 2,
-      "Id": 1851880033,
-      "Type": 2,
-      "Value": 700
-    },
-    {
-      "Level": 2,
-      "Id": 1918989409,
-      "Type": 3,
-      "Value": "air,ground,friend,vuln,invu,self,organic,neutral"
+      "Value": "B064"
     },
     {
       "Level": 1,
       "Id": 1852072801,
       "Type": 2,
-      "Value": 75
+      "Value": 20
     },
     {
       "Level": 1,
-      "Id": 1718968929,
-      "Type": 3,
-      "Value": "B0B7"
+      "Id": 1935895905,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828796489,
+      "Type": 2,
+      "Value": 0.2
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845833554,
+      "Id": 845573705,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862350921,
       "Type": 2,
-      "Value": 800
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,self"
     }
   ]
 }

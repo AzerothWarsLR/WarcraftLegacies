@@ -1,5 +1,5 @@
 {
-  "OldId": 1702316097,
+  "OldId": 1835619649,
   "NewId": 1112223809,
   "Unk": [
     0
@@ -8,80 +8,105 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNHolyPower.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHolyWave.blp"
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Saiden)"
+      "Value": "(Purple- Alexandros)"
+    },
+    {
+      "Id": 1936090465,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Crusader\u0027s Shout"
+      "Value": "Divine Judgment"
     },
     {
       "Id": 1918988897,
       "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNHolyPower.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHolyWave.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
     },
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "Learn Crusader\u0027s Shout - [|cffffcc00Level %d|r]."
+      "Value": "Learn Divine Judgment (|cffffcc00Q|r) - [|cffffcc00Level %d|r]."
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "The hero lets out a strong shout, silencing and slowing by 75% nearby enemy units. |n|n|cffffcc00Level 1|r - 3 seconds duration, 1.5 on heroes. |n|cffffcc00Level 2|r - 4 seconds duration, 2 on heroes. |n|cffffcc00Level 3|r - 5 seconds duration, 2.5 on heroes. |n|cffffcc00Level 4|r - 6 seconds duration, 3 on heroes."
+      "Value": "Alexandros unleashes a wave of holy light that damages and stuns everyone in a target direction. Damage and stun duration increase with level. |n|n|cffffcc00Level 1|r - \u003CA0KB:AUim,DataC1\u003E damage, 1 second stun. |n|cffffcc00Level 2|r - \u003CA0KB:AUim,DataC2\u003E damage, 1.75(1.25) second stun. |n|cffffcc00Level 3|r - \u003CA0KB:AUim,DataC3\u003E damage, 2.5(1.5) second stun. |n|cffffcc00Level 4|r - \u003CA0KB:AUim,DataC4\u003E damage, 3.25(1.75) second stun."
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\HolyBolt\\HolyBoltSpecialArt.mdl"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Thunderclap\\ThunderClapCaster.mdl"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Crusader\u0027s Shout - [|cffffcc00Level 1|r]"
+      "Value": "Divine Judgment (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Crusader\u0027s Shout - [|cffffcc00Level 2|r]"
+      "Value": "Divine Judgment (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Crusader\u0027s Shout - [|cffffcc00Level 3|r]"
+      "Value": "Divine Judgment (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Crusader\u0027s Shout - [|cffffcc00Level 4|r]"
+      "Value": "Divine Judgment (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Deafen nearby enemy units, preventing them  from casting of spells and reducing their movement speed by 75%.|nLasts 3 (1.5) seconds."
+      "Value": "Deals \u003CA0KB:AUim,DataC1\u003E damage in a line in the target direction. Stuns enemies for 1 second."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Deafen nearby enemy units, preventing them  from casting of spells and reducing their movement speed by 75%.|nLasts 4 (2) seconds."
+      "Value": "Deals \u003CA0KB:AUim,DataC2\u003E damage in a line in the target direction. Stuns enemies for 1.75(1.25) seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Deafen nearby enemy units, preventing them  from casting of spells and reducing their movement speed by 75%.|nLasts 5 (2.5) seconds."
+      "Value": "Deals \u003CA0KB:AUim,DataC3\u003E damage in a line in the target direction. Stuns enemies for 2.5(1.5) seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Deafen nearby enemy units, preventing them  from casting of spells and reducing their movement speed by 75%.|nLasts 6 (3) seconds."
+      "Value": "Deals \u003CA0KB:AUim,DataC4\u003E damage in a line in the target direction. Stuns enemies for 3.25(1.75) seconds."
     }
   ]
 }
