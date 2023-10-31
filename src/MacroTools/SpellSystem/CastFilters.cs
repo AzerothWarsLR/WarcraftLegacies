@@ -17,12 +17,11 @@ namespace MacroTools.SpellSystem
              UnitAlive(target) && BlzIsUnitInvulnerable(target) == false;
     }
     
-    public static bool IsTargetAllyAliveNonHeroUnit(unit caster, unit target)
+    public static bool IsTargetOwnAliveNonHeroUnit(unit caster, unit target)
     {
-      var casterPlayer = GetOwningPlayer(caster);
-      return IsUnitAlly(target, casterPlayer) && UnitAlive(target) && 
-             BlzIsUnitInvulnerable(target) == false && !IsUnitType(target, UNIT_TYPE_HERO) && 
-             !IsUnitType(target, UNIT_TYPE_STRUCTURE) && !IsUnitType(target, UNIT_TYPE_ANCIENT);
+      return  GetOwningPlayer(caster) == GetOwningPlayer(target) && UnitAlive(target) && 
+              BlzIsUnitInvulnerable(target) == false && !IsUnitType(target, UNIT_TYPE_HERO) && 
+              !IsUnitType(target, UNIT_TYPE_STRUCTURE) && !IsUnitType(target, UNIT_TYPE_ANCIENT);
     }
     
     public static bool IsTargetEnemyAndAlive(unit caster, unit target)
