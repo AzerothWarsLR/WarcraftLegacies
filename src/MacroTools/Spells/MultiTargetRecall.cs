@@ -16,8 +16,6 @@ namespace MacroTools.Spells
     public int AmountToTarget { get; init; }
 
     public SpellTargetType TargetType { get; init; } = SpellTargetType.None;
-
-    private Point? Center { get; set; }
     
     private DummyCasterManager.CastFilter CastFilter { get; }
     
@@ -38,7 +36,5 @@ namespace MacroTools.Spells
       foreach (var unit in targets) 
         SetUnitPosition(unit, GetUnitX(caster), GetUnitY(caster));
     }
-
-    
   }
 }
