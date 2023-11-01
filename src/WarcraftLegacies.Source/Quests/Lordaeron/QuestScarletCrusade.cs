@@ -23,6 +23,8 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     private readonly LegendaryHero _saiden;
     private readonly List<unit> _rescueUnits;
     private readonly Faction _scarletCrusade;
+    private const int StartingGold = 300;
+    private const int StartingLumber = 500;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestScarletCrusade"/> class.
@@ -38,7 +40,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       AddObjective(new ObjectiveResearch(Constants.UPGRADE_R0XZ_THE_SCARLET_CRUSADE_LORDAERON_SCARLET,
         Constants.UNIT_H030_TYR_S_HAND_CITADEL_LORDAERON_OTHER));
       AddObjective(new ObjectiveQuestComplete(fortifiedCity));
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       _tyrsHand = tyrsHand.Unit;
       _saiden = saiden;
       _scarletCrusade = scarletCrusade;
@@ -98,21 +100,21 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     private static void GrantTyrsHand(player whichPlayer)
     {
-      CreateStructureForced(whichPlayer, Constants.UNIT_H0BJ_IMPROVED_CANNON_TOWER_CRUSADE_TOWER, 19082, 8573,
+      CreateStructureForced(whichPlayer, Constants.UNIT_H0BJ_IMPROVED_BOMBARD_TOWER_CRUSADE_TOWER, 19082, 8573,
         4.712389f * MathEx.DegToRad, 256);
-      CreateStructureForced(whichPlayer, Constants.UNIT_H0BJ_IMPROVED_CANNON_TOWER_CRUSADE_TOWER, 18427, 7929,
-        4.712389f * MathEx.DegToRad, 256);
-
-      CreateStructureForced(whichPlayer, Constants.UNIT_H0BJ_IMPROVED_CANNON_TOWER_CRUSADE_TOWER, 20040, 8111,
-        4.712389f * MathEx.DegToRad, 256);
-      CreateStructureForced(whichPlayer, Constants.UNIT_H0BJ_IMPROVED_CANNON_TOWER_CRUSADE_TOWER, 20037, 7406,
+      CreateStructureForced(whichPlayer, Constants.UNIT_H0BJ_IMPROVED_BOMBARD_TOWER_CRUSADE_TOWER, 18427, 7929,
         4.712389f * MathEx.DegToRad, 256);
 
-      CreateStructureForced(whichPlayer, Constants.UNIT_H0BJ_IMPROVED_CANNON_TOWER_CRUSADE_TOWER, 21500, 7378,
+      CreateStructureForced(whichPlayer, Constants.UNIT_H0BJ_IMPROVED_BOMBARD_TOWER_CRUSADE_TOWER, 20040, 8111,
         4.712389f * MathEx.DegToRad, 256);
-      CreateStructureForced(whichPlayer, Constants.UNIT_H0BJ_IMPROVED_CANNON_TOWER_CRUSADE_TOWER, 20669, 8047,
+      CreateStructureForced(whichPlayer, Constants.UNIT_H0BJ_IMPROVED_BOMBARD_TOWER_CRUSADE_TOWER, 20037, 7406,
         4.712389f * MathEx.DegToRad, 256);
-      CreateStructureForced(whichPlayer, Constants.UNIT_H0BJ_IMPROVED_CANNON_TOWER_CRUSADE_TOWER, 19310, 7800,
+
+      CreateStructureForced(whichPlayer, Constants.UNIT_H0BJ_IMPROVED_BOMBARD_TOWER_CRUSADE_TOWER, 21500, 7378,
+        4.712389f * MathEx.DegToRad, 256);
+      CreateStructureForced(whichPlayer, Constants.UNIT_H0BJ_IMPROVED_BOMBARD_TOWER_CRUSADE_TOWER, 20669, 8047,
+        4.712389f * MathEx.DegToRad, 256);
+      CreateStructureForced(whichPlayer, Constants.UNIT_H0BJ_IMPROVED_BOMBARD_TOWER_CRUSADE_TOWER, 19310, 7800,
         4.712389f * MathEx.DegToRad, 256);
 
       CreateStructureForced(whichPlayer, Constants.UNIT_H0AG_HALL_OF_SWORDS_CRUSADE_BARRACKS, 19484, 7205,
@@ -135,7 +137,10 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
         4.712389f * MathEx.DegToRad, 256);
       CreateStructureForced(whichPlayer, Constants.UNIT_H0BP_FARMSTEAD_CRUSADE_FARM, 20917, 8193,
         4.712389f * MathEx.DegToRad, 256);
-      
+
+      whichPlayer.AddGold(StartingGold);
+      whichPlayer.AddLumber(StartingLumber);
+
       if (GetLocalPlayer() == whichPlayer)
         SetCameraPosition(20629, 10112);
     }
