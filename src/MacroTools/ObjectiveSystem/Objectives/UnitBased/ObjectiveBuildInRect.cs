@@ -13,7 +13,6 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
   public sealed class ObjectiveBuildInRect : Objective
   {
     private readonly int _objectId;
-    private readonly Rectangle _targetRect;
     private int _currentBuildCount;
     private readonly int _targetBuildCount;
     private readonly string _areaName;
@@ -39,7 +38,6 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       
       _areaName = areaName;
       _targetBuildCount = count;
-      _targetRect = targetRect;
       _objectId = objectId;
       DisplaysPosition = true;
       CurrentBuildCount = 0;
@@ -54,7 +52,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
           Progress = QuestProgress.Complete;
       }, objectId);
       
-      Position = _targetRect.Center;
+      Position = targetRect.Center;
     }
   }
 }
