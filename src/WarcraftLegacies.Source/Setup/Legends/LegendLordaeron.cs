@@ -86,7 +86,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         .AddAction(() =>
         {
           var lordaeronPlayer = LordaeronSetup.Lordaeron.Player;
-          if (GetOwningPlayer(GetTriggerUnit()) == lordaeronPlayer || lordaeronPlayer.GetTeam()?.Contains(GetOwningPlayer(GetTriggerUnit())) != false){
+          if (lordaeronPlayer.GetTeam()?.Contains(GetOwningPlayer(GetTriggerUnit())) == true){
           return;
           }
           Terenas.Unit.Kill();
