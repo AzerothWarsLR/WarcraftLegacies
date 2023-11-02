@@ -85,7 +85,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       new ScourgeInvasionDialogPresenter(
         new Choice<Rectangle>(null, "No invasion"),
         new Choice<Rectangle>(Regions.CaerDarrow, "Scholomance"),
-        new Choice<Rectangle>(Regions.StratholmeUnlock, "Stratholme"),
+        new Choice<Rectangle>(Regions.StratholmeScourgeBase, "Stratholme"),
         new Choice<Rectangle>(Regions.DeathknellUnlock, "Deathknell"))
         .Run(Player(3));
 
