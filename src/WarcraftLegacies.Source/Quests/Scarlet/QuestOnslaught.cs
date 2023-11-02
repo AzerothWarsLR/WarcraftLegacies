@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       AddObjective(new ObjectiveBuildInRect(questRect, "in Dragonblight", Constants.UNIT_H0AG_HALL_OF_SWORDS_CRUSADE_BARRACKS));
       AddObjective(new ObjectiveBuildInRect(questRect, "in Dragonblight", Constants.UNIT_H0BM_TOWN_HALL_CRUSADE_T1));
       AddObjective(new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02Q_DRAGONBLIGHT), 5));
-      ResearchId = Constants.UPGRADE_R040_QUEST_COMPLETED_NEW_HEARTHGLEN;
+      ResearchId = Constants.UPGRADE_R040_QUEST_COMPLETED_ONSLAUGHT;
     }
 
     /// <inheritdoc/>
