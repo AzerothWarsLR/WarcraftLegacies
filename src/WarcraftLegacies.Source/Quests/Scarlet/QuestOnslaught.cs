@@ -7,18 +7,14 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Scarlet
 {
-  /// <summary>
-  /// Recapture Capital and rebuild it to empower all your heroes.
-  /// </summary>
-  public sealed class QuestNewHearthglen : QuestData
+  public sealed class QuestOnslaught : QuestData
   {
-
     /// <summary>
-    /// Initializes a new instance of the <see cref="QuestNewHearthglen"/> class.
+    /// Initializes a new instance of the <see cref="QuestOnslaught"/> class.
     /// </summary>
-    public QuestNewHearthglen(Rectangle questRect) : base(
-      "New Hearthglen",
-      "TODO Flavor: The Scarlet Crusade zeal to destroy the undead has let them too far north, the dark energy of Northrend have been ocrrupting some of their most holy members.",
+    public QuestOnslaught(Rectangle questRect) : base(
+      "Onslaught",
+      "Death awaits the living at the roof of the world. It is there that the Crusade must undertaken its ultimate vengeance.",
       @"ReplaceableTextures\CommandButtons\BTNVampire.blp")
     {
       AddObjective(new ObjectiveBuildInRect(questRect, "in Dragonblight", Constants.UNIT_H0AG_HALL_OF_SWORDS_CRUSADE_BARRACKS));
@@ -27,10 +23,9 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       ResearchId = Constants.UPGRADE_R040_QUEST_COMPLETED_NEW_HEARTHGLEN;
     }
 
-
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "TODO right flavor";
+      "The Crusade finally manages to establish a foothold in Northrend. Already the land's dark influence pierces the mind of even its most stalwart Archons.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
