@@ -9,8 +9,11 @@ namespace MacroTools.ObjectiveSystem.Objectives.QuestBased
   /// </summary>
   public sealed class ObjectiveFactionQuestNotComplete : Objective
   {
+    private readonly QuestData _target;
+
     public ObjectiveFactionQuestNotComplete(QuestData target, Faction faction)
     {
+      _target = target;
       Description =  $"{target.Faction.Name} has not completed the quest {target.Title}";
       faction.QuestProgressChanged += OnQuestProgressChanged;
       Progress = QuestProgress.Complete;
@@ -18,7 +21,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.QuestBased
 
     private void OnQuestProgressChanged(object? sender, FactionQuestProgressChangedEventArgs args)
     {
-      if (args.Quest.Progress == QuestProgress.Complete) 
+      if (args.Quest == _target && args.Quest.Progress == QuestProgress.Complete) 
         Progress = QuestProgress.Failed;
     }
   }
