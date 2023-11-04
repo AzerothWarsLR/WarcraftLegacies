@@ -131,7 +131,7 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       foreach (var faction in FactionManager.GetAllFactions())
       {
         faction.AddQuest(new QuestBookOfMedivh(_allLegendSetup.Dalaran.Dalaran,
-          new NamedRectangle("Gilneas", Regions.BookRetrieval), _artifactSetup.BookOfMedivh,
+          new NamedRectangle("Gilneas", Regions.BookOfMedivhGilneas), _artifactSetup.BookOfMedivh,
           faction == LegionSetup.Legion, faction == this));
       }
     }

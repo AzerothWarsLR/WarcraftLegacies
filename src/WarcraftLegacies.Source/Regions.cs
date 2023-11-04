@@ -43,7 +43,7 @@ public static class Regions
 	public static Rectangle BlademasterUnlock { get; set; } = new Rectangle(4352f, -10496f, 5024f, -10112f);
 	public static Rectangle BlastedlandAmbient { get; set; } = new Rectangle(14912f, -22208f, 20224f, -16896f);
 	public static Rectangle BloodElfSecondChanceSpawn { get; set; } = new Rectangle(17376f, 6144f, 17760f, 6560f);
-	public static Rectangle BookRetrieval { get; set; } = new Rectangle(9312f, 4864f, 9536f, 5120f);
+	public static Rectangle BookOfMedivhDalaran { get; set; } = new Rectangle(9312f, 4864f, 9600f, 5216f);
 	public static Rectangle BootyBayQuest { get; set; } = new Rectangle(9696f, -24160f, 12032f, -22304f);
 	public static Rectangle Borean_Tundra { get; set; } = new Rectangle(-9152f, 13664f, -4768f, 19008f);
 	public static Rectangle BridgeAmbient { get; set; } = new Rectangle(15232f, -512f, 17856f, 896f);
@@ -370,5 +370,6 @@ public static class Regions
 	public static Rectangle ZulAman_trolls { get; set; } = new Rectangle(20288f, 11648f, 22848f, 17440f);
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
+	public static Rectangle BookOfMedivhGilneas { get; set; } = new Rectangle(7840f, 448f, 8032f, 640f);
 
 }
