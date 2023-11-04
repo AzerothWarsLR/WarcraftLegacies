@@ -146,7 +146,7 @@
     {
       "Id": 1882284405,
       "Type": 3,
-      "Value": "air,debris,ground,item,structure,ward"
+      "Value": "debris,ground,item,structure,ward"
     },
     {
       "Id": 1731289461,
