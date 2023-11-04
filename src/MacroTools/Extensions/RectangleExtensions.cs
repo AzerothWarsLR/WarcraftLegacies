@@ -47,8 +47,7 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>
-    /// Removes all Neutral Passive units from the area, except for Capitals and Protectors, which are instead made
-    /// hostile.
+    /// Removes all Neutral Passive units from the area, except for Capitals, which are instead made hostile.
     /// </summary>
     public static void CleanupNeutralPassiveUnits(this Rectangle area)
     {
@@ -59,14 +58,6 @@ namespace MacroTools.Extensions
       {
         var capital = CapitalManager.GetFromUnit(unit);
         if (capital != null)
-        {
-          unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-          foreach (var protector in capital.ProtectorsByUnit.Keys)
-            protector.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-
-          continue;
-        }
-        if (CapitalManager.UnitIsProtector(unit) || CapitalManager.UnitIsCapital(unit))
         {
           unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
           continue;

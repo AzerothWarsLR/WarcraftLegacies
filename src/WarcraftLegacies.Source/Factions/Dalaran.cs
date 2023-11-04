@@ -4,7 +4,6 @@ using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
-using MacroTools.LegendSystem;
 using MacroTools.Libraries;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
@@ -57,6 +56,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       RegisterQuests();
       RegisterBookOfMedivhQuest();
       RegisterDialogue();
+      RegisterProtectors();
     }
 
     /// <inheritdoc />
@@ -252,6 +252,13 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
           }
         }
       ));
+    }
+    
+    private void RegisterProtectors()
+    {
+      _allLegendSetup.Dalaran.Dalaran.AddProtector(_preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9084, 4979)));
+      _allLegendSetup.Dalaran.Dalaran.AddProtector(_preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9008, 4092)));
+      _allLegendSetup.Dalaran.Dalaran.AddProtector(_preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9864, 4086)));
     }
   }
 }
