@@ -59,8 +59,8 @@ namespace WarcraftLegacies.Source.Dialogue
           new Objective[]
           {
             new ObjectiveLegendMeetsLegend(legendSetup.Scourge.Arthas, legendSetup.Scourge.Kelthuzad),
-            new ObjectiveQuestComplete(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestKelthuzadDies))),
-            new ObjectiveQuestNotComplete(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestKelthuzadLich)))
+            new ObjectiveQuestComplete(ScourgeSetup.Scourge.GetQuestByType<QuestKelthuzadDies>()),
+            new ObjectiveQuestNotComplete(ScourgeSetup.Scourge.GetQuestByType<QuestKelthuzadLich>())
           }));
       
       TriggeredDialogueManager.Add(
@@ -91,8 +91,8 @@ namespace WarcraftLegacies.Source.Dialogue
           {
             new ObjectiveLegendInRect(legendSetup.Scourge.Arthas, Regions.QuelthalasAmbient, "Quel'thalas"),
             new ObjectiveLegendInRect(legendSetup.Scourge.Kelthuzad, Regions.QuelthalasAmbient, "Quel'thalas"),
-            new ObjectiveQuestComplete(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestKelthuzadDies))),
-            new ObjectiveQuestNotComplete(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestKelthuzadLich)))
+            new ObjectiveQuestComplete(ScourgeSetup.Scourge.GetQuestByType<QuestKelthuzadDies>()),
+            new ObjectiveQuestNotComplete(ScourgeSetup.Scourge.GetQuestByType<QuestKelthuzadLich>())
           }));
       
       TriggeredDialogueManager.Add(
@@ -159,7 +159,7 @@ namespace WarcraftLegacies.Source.Dialogue
           },
           new[]
           {
-            new ObjectiveQuestComplete(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestKelthuzadLich)))
+            new ObjectiveQuestComplete(ScourgeSetup.Scourge.GetQuestByType<QuestKelthuzadLich>())
           }));
       
       TriggeredDialogueManager.Add(new TriggeredDialogue(

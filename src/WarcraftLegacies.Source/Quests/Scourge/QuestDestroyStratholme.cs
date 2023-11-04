@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       
       _arthas = arthas;
       AddObjective(new ObjectiveCapitalDead(stratholme));
-      var lineOfSuccession = LordaeronSetup.Lordaeron.GetQuestByType(typeof(QuestKingArthas));
+      var lineOfSuccession = LordaeronSetup.Lordaeron.GetQuestByType<QuestKingArthas>();
       AddObjective(new ObjectiveFactionQuestNotComplete(lineOfSuccession, LordaeronSetup.Lordaeron));
       ResearchId = Constants.UPGRADE_R01K_QUEST_COMPLETED_THE_CULLING;
       Required = true;
