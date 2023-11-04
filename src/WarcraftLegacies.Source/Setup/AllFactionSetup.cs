@@ -10,7 +10,6 @@ namespace WarcraftLegacies.Source.Setup
       ScourgeSetup.Setup(preplacedUnitSystem, artifactSetup.HelmOfDomination);
       LegionSetup.Setup(preplacedUnitSystem);
       LordaeronSetup.Setup(preplacedUnitSystem);
-      DalaranSetup.Setup(preplacedUnitSystem);
       QuelthalasSetup.Setup(preplacedUnitSystem);
       SentinelsSetup.Setup(preplacedUnitSystem, allLegendSetup);
       DruidsSetup.Setup(preplacedUnitSystem, allLegendSetup);
@@ -25,7 +24,6 @@ namespace WarcraftLegacies.Source.Setup
       DraeneiSetup.Setup();
       ZandalarSetup.Setup(preplacedUnitSystem);
       SunfurySetup.Setup(preplacedUnitSystem);
-      GilneasSetup.Setup(preplacedUnitSystem);
       CthunSetup.Setup(preplacedUnitSystem);
       NazjatarSetup.Setup(preplacedUnitSystem);
       BlackEmpireSetup.Setup(preplacedUnitSystem);
