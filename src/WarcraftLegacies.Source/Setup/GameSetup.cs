@@ -90,7 +90,7 @@ namespace WarcraftLegacies.Source.Setup
       StartingQuestPopup.Setup(63);
       RefundZeroLimitUnits.Setup();
       HeroGlowFix.Setup();
-      CleanPersons.Setup();
+      CleanupUnoccupiedPlayerSlots.Setup();
       PlayerLeaves.Setup();
       FloatingTextSetup.Setup(60, 10);
       AmbianceSetup.Setup();
