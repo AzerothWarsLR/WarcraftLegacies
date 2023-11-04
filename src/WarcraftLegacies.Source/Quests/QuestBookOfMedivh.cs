@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Quests
     /// <param name="bypassDestructionRequirement">If true, <paramref name="protectingCapital"/> does not need to be destroyed to complete the quest.</param>
     public QuestBookOfMedivh(Capital protectingCapital, NamedRectangle bookLocation, Artifact bookOfMedivh,
       bool bypassLevelRequirement, bool bypassDestructionRequirement) : base("Book of Medivh",
-      $"The last remaining spellbook written by Medivh, the Last Guardian, is held securely within the dungeons of {bookLocation.Name}. The spells within its pages could bring us great power.",
+      $"The last remaining spellbook written by Medivh, the Last Guardian, is held securely within {bookLocation.Name}. The spells within its pages could bring us great power.",
       @"ReplaceableTextures\CommandButtons\BTNBookOfTheDead.blp")
     {
       _bypassLevelRequirement = bypassLevelRequirement;
