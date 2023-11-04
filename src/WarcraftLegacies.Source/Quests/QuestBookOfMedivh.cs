@@ -24,12 +24,12 @@ namespace WarcraftLegacies.Source.Quests
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestBookOfMedivh"/> class.
     /// </summary>
-    /// <param name="dalaran">Must be destroyed for the quest to be completed.</param>
+    /// <param name="protectingCapital">Must be destroyed for the quest to be completed.</param>
     /// <param name="bookLocation">Where to place the Book of Medivh pedestal.</param>
     /// <param name="bookOfMedivh">Reward for completing the quest.</param>
     /// <param name="bypassLevelRequirement">If set to true, any hero of any level can complete the objective.</param>
-    /// <param name="bypassDestructionRequirement">If true, Dalaran does not need to be destroyed to complete the quest.</param>
-    public QuestBookOfMedivh(Capital dalaran, NamedRectangle bookLocation, Artifact bookOfMedivh,
+    /// <param name="bypassDestructionRequirement">If true, <paramref name="protectingCapital"/> does not need to be destroyed to complete the quest.</param>
+    public QuestBookOfMedivh(Capital protectingCapital, NamedRectangle bookLocation, Artifact bookOfMedivh,
       bool bypassLevelRequirement, bool bypassDestructionRequirement) : base("Book of Medivh",
       $"The last remaining spellbook written by Medivh, the Last Guardian, is held securely within the dungeons of {bookLocation.Rectangle}. The spells within its pages could bring us great power.",
       @"ReplaceableTextures\CommandButtons\BTNBookOfTheDead.blp")
@@ -38,14 +38,14 @@ namespace WarcraftLegacies.Source.Quests
       var bookLocationFullName = $"the Book of Medivh's pedestal at {bookLocation.Rectangle}";
       _bookOfMedivh = bookOfMedivh;
        _objectiveWithCompletingUnit = bypassLevelRequirement
-         ? new ObjectiveAnyUnitInRect(Regions.BookRetrieval, bookLocationFullName, true)
-         : new ObjectiveHeroWithLevelInRect(12, Regions.BookRetrieval, bookLocationFullName);
+         ? new ObjectiveAnyUnitInRect(bookLocation.Rectangle, bookLocationFullName, true)
+         : new ObjectiveHeroWithLevelInRect(12, bookLocation.Rectangle, bookLocationFullName);
       if (_objectiveWithCompletingUnit is Objective objective) 
         AddObjective(objective);
       
       AddObjective(new ObjectiveNoOtherPlayerGetsArtifact(bookOfMedivh));
       if (!bypassDestructionRequirement)
-        AddObjective(new ObjectiveCapitalDead(dalaran));
+        AddObjective(new ObjectiveCapitalDead(protectingCapital));
       
       _bookOfMedivhPedestal = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), Constants.UNIT_NBSM_BOOK_OF_MEDIVH,
         bookLocation.Rectangle.Center.X, bookLocation.Rectangle.Center.Y, 270);
