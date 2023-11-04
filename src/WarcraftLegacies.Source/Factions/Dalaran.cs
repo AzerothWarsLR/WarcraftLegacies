@@ -4,8 +4,10 @@ using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Dalaran;
 using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -47,6 +49,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       RegisterObjectLimits();
       RegisterGoldMines();
       RegisterQuests();
+      RegisterBookOfMedivhQuest();
     }
 
     private void RegisterObjectLimits()
@@ -101,15 +104,14 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       ModObjectLimit(Constants.UNIT_HAAH_THE_FALLEN_GUARDIAN_DALARAN, 1);
       
       //Upgrades
-      ModObjectLimit(FourCC("R01I"), UNLIMITED); //Arcanist Adept Training
-      ModObjectLimit(FourCC("R01V"), UNLIMITED); //Geomancer Adept Training
-      ModObjectLimit(FourCC("R00E"), UNLIMITED); //Hydromancer Adept Training
-      ModObjectLimit(FourCC("R00D"), UNLIMITED); //Pyromancer Adept Training
-      ModObjectLimit(FourCC("Rhac"), UNLIMITED); //Improved Masonry
-      ModObjectLimit(FourCC("R06J"), UNLIMITED); //Improved Ooze
-      ModObjectLimit(FourCC("R061"), UNLIMITED); //Improved Forked Lightning
-      ModObjectLimit(FourCC("R06O"), UNLIMITED); //Improved Phase Blade
-      ModObjectLimit(FourCC("R00J"), UNLIMITED); //Combat Tomes
+      ModObjectLimit(Constants.UPGRADE_R01I_ARCANIST_GRANDMASTER_TRAINING_DALARAN, UNLIMITED);
+      ModObjectLimit(Constants.UPGRADE_R01V_GEOMANCER_GRANDMASTER_TRAINING_DALARAN, UNLIMITED);
+      ModObjectLimit(Constants.UPGRADE_R00E_HYDROMANCER_GRANDMASTER_TRAINING_DALARAN, UNLIMITED);
+      ModObjectLimit(Constants.UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, UNLIMITED);
+      ModObjectLimit(Constants.UPGRADE_R06J_IMPROVED_SLOW_DALARAN, UNLIMITED);
+      ModObjectLimit(Constants.UPGRADE_R061_IMPROVED_FORKED_LIGHTNING_DALARAN, UNLIMITED);
+      ModObjectLimit(Constants.UPGRADE_R06O_IMPROVED_PHASE_BLADE_DALARAN, UNLIMITED);
+      ModObjectLimit(Constants.UPGRADE_R00J_COMBAT_TOMES_DALARAN, UNLIMITED);
 
       ModAbilityAvailability(Constants.ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, 1);
       ModAbilityAvailability(Constants.ABILITY_A0GG_SPELL_SHIELD_SPELL_BOOK_ORANGE_KIRIN_TOR, -1); //Todo: should be global
@@ -168,6 +170,16 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       AddQuest(aegwynn);
       AddQuest(newGuardian);
       AddQuest(theNexus);
+    }
+
+    private void RegisterBookOfMedivhQuest()
+    {
+      foreach (var faction in FactionManager.GetAllFactions())
+      {
+        faction.AddQuest(new QuestBookOfMedivh(_allLegendSetup.Dalaran.Dalaran,
+          _preplacedUnitSystem.GetUnit(Constants.UNIT_NBSM_BOOK_OF_MEDIVH), _artifactSetup.BookOfMedivh,
+          faction == LegionSetup.Legion, faction == this));
+      }
     }
   }
 }
