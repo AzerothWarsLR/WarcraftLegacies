@@ -46,13 +46,19 @@ You begin in the Hillsbrad Foothills, separated from the main forces of Dalaran.
 Once your territory is secured, you will need to prepare for the Plague of Undeath and the invasion of the Burning Legion. Lordaeron will surely need your help.
 
 Your mages are the finest in Azeroth, be sure to utilize them alongside your heroes to turn the tide of battle.";
+      GoldMines = new List<unit>
+      {
+        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9204, 2471)),
+        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(7386, 6999)),
+        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(7716, 11657)),
+        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(17198, 8222)),
+      };
     }
 
     /// <inheritdoc />
     public override void OnRegister()
     {
       RegisterObjectLimits();
-      RegisterGoldMines();
       RegisterQuests();
       RegisterBookOfMedivhQuest();
       RegisterDialogue();
@@ -137,15 +143,6 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       ModAbilityAvailability(Constants.ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);
       ModAbilityAvailability(Constants.ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);
       ModAbilityAvailability(Constants.ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
-    }
-
-    private void RegisterGoldMines()
-    {
-      AddGoldMine(_preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9204, 2471)));
-
-      AddGoldMine(_preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(7386, 6999)));
-      AddGoldMine(_preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(7716, 11657)));
-      AddGoldMine(_preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(17198, 8222)));
     }
     
     private void RegisterQuests()
