@@ -65,6 +65,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
     {
       Regions.Dalaran.CleanupNeutralPassiveUnits();
       Regions.ShadowfangUnlock.CleanupNeutralPassiveUnits();
+      Regions.SouthshoreUnlock.CleanupNeutralPassiveUnits();
       base.OnNotPicked();
     }
       
