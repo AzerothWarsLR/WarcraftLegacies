@@ -1,31 +1,36 @@
 ﻿using System;
 using MacroTools;
+using MacroTools.Extensions;
 using WarcraftLegacies.Source.Dialogue;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup
 {
   public static class DialogueSetup
   {
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup legendSetup)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup legendSetup, float delay)
     {
-      try
+      CreateTimer().Start(delay, false, () =>
       {
-        ScourgeDialogueSetup.Setup(legendSetup);
-        WarsongDialogueSetup.Setup(legendSetup);
-        DruidsDialogueSetup.Setup(preplacedUnitSystem, legendSetup);
-        LordaeronDialogueSetup.Setup(preplacedUnitSystem, legendSetup);
-        IllidariDialogueSetup.Setup(legendSetup);
-        SentinelsDialogueSetup.Setup(legendSetup);
-        FrostwolfDialogueSetup.Setup(legendSetup);
-        LegionDialogueSeup.Setup(legendSetup);
-        QuelthalasDialogueSetup.Setup(legendSetup);
-        GoblinDialogueSetup.Setup(legendSetup);
-        KultirasDialogueSetup.Setup(legendSetup);
-      }
-      catch (Exception ex)
-      {
-        Console.WriteLine($"Failed to run DialogueSetup: {ex}");
-      }
+        try
+        {
+          ScourgeDialogueSetup.Setup(legendSetup);
+          WarsongDialogueSetup.Setup(legendSetup);
+          DruidsDialogueSetup.Setup(preplacedUnitSystem, legendSetup);
+          LordaeronDialogueSetup.Setup(preplacedUnitSystem, legendSetup);
+          IllidariDialogueSetup.Setup(legendSetup);
+          SentinelsDialogueSetup.Setup(legendSetup);
+          FrostwolfDialogueSetup.Setup(legendSetup);
+          LegionDialogueSeup.Setup(legendSetup);
+          QuelthalasDialogueSetup.Setup(legendSetup);
+          GoblinDialogueSetup.Setup(legendSetup);
+          KultirasDialogueSetup.Setup(legendSetup);
+        }
+        catch (Exception ex)
+        {
+          Console.WriteLine($"Failed to run DialogueSetup: {ex}");
+        }
+      });
     }
   }
 }
