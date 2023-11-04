@@ -1,8 +1,6 @@
 ﻿using System;
 using MacroTools;
-using MacroTools.Extensions;
 using WarcraftLegacies.Source.Dialogue;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup
 {
@@ -10,7 +8,7 @@ namespace WarcraftLegacies.Source.Setup
   {
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup legendSetup, float delay)
     {
-      CreateTimer().Start(delay, false, () =>
+      GameTime.GameStarted += (_, _) =>
       {
         try
         {
@@ -30,7 +28,7 @@ namespace WarcraftLegacies.Source.Setup
         {
           Console.WriteLine($"Failed to run DialogueSetup: {ex}");
         }
-      });
+      };
     }
   }
 }
