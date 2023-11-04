@@ -57,6 +57,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       RegisterBookOfMedivhQuest();
       RegisterDialogue();
       RegisterProtectors();
+      Regions.Dalaran.CleanupHostileUnits();
     }
 
     /// <inheritdoc />

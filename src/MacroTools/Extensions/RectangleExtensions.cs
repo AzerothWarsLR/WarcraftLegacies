@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -47,7 +46,7 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>
-    /// Removes all Neutral Passive units from the area, except for Capitals, which are instead made hostile.
+    /// Removes all Neutral Passive units from the area, except for unremovable units, which are instead made hostile.
     /// </summary>
     public static void CleanupNeutralPassiveUnits(this Rectangle area)
     {
@@ -56,14 +55,30 @@ namespace MacroTools.Extensions
         .EmptyToList();
       foreach (var unit in unitsInArea)
       {
-        var capital = CapitalManager.GetFromUnit(unit);
-        if (capital != null)
+        if (!unit.IsRemovable())
         {
           unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
           continue;
         }
 
         if (unit.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE) && !IsUnitType(unit, UNIT_TYPE_STRUCTURE))
+        {
+          unit.Remove();
+        }
+      }
+    }
+
+    /// <summary>
+    /// Removes all removable, hostile units in the area.
+    /// </summary>
+    public static void CleanupHostileUnits(this Rectangle area)
+    {
+      var unitsInArea = CreateGroup()
+        .EnumUnitsInRect(area)
+        .EmptyToList();
+      foreach (var unit in unitsInArea)
+      {
+        if (unit.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && unit.IsRemovable())
         {
           unit.Remove();
         }
