@@ -62,7 +62,7 @@ namespace WarcraftLegacies.Source.Setup
       QuestMenuSetup.Setup();
       GameTime.Start();
       CheatSetup.Setup(commandManager);
-      DialogueSetup.Setup(preplacedUnitSystem, allLegendSetup, 60);
+      DialogueSetup.Setup(preplacedUnitSystem, allLegendSetup);
       MapFlagSetup.Setup();
       InfoQuests.Setup();
       DestructibleSetup.Setup(preplacedUnitSystem);

@@ -6,7 +6,7 @@ namespace WarcraftLegacies.Source.Setup
 {
   public static class DialogueSetup
   {
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup legendSetup, float delay)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup legendSetup)
     {
       GameTime.GameStarted += (_, _) =>
       {
