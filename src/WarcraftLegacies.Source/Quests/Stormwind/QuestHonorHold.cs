@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Control of all units at Honor Hold and the ability to train Siege Towers";
+      $"Control of all units at Honor Hold and {GetObjectName(Constants.UNIT_O06K_SIEGE_TOWER_STORMWIND)} gain the Artillery Bombardment ability."; 
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)

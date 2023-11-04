@@ -30,7 +30,7 @@ The local Nerubians have declared war on you. Destroy their decrepit holdings an
 
 Coordinate with the Burning Legion and use the Plague of Undeath to sweep Lordaeron away.
 
-When the Plague hits Lordaeron, a great portal will be opened between Dragonblight and Scholomance."
+When the Plague hits Lordaeron, you will have a choice to where you want all your military units to be instantly transported."
       };
 
       //Buildings
