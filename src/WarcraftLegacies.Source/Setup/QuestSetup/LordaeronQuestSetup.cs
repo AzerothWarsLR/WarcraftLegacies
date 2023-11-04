@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         }));
       LordaeronSetup.Lordaeron.AddQuest(questTyrHand);
       LordaeronSetup.Lordaeron.AddQuest(new QuestMograine());
-      LordaeronSetup.Lordaeron.AddQuest(new QuestScarletCrusade(Regions.Scarlet_Spawn, allLegendSetup.Lordaeron.TyrsHand, allLegendSetup.Scarlet.Saiden, ScarletSetup.ScarletCrusade, questTyrHand));
+      LordaeronSetup.Lordaeron.AddQuest(new QuestScarletCrusade(Regions.Scarlet_Spawn, allLegendSetup.Lordaeron.TyrsHand, allLegendSetup.Scarlet.Saiden, questTyrHand, allLegendSetup));
       LordaeronSetup.Lordaeron.AddQuest(new QuestShoresOfNorthrend(allLegendSetup.Lordaeron.Arthas, allLegendSetup.Neutral.Caerdarrow));
       LordaeronSetup.Lordaeron.AddQuest(new QuestThunderEagle(allLegendSetup.Neutral.DraktharonKeep));
       LordaeronSetup.Lordaeron.AddQuest(new QuestChampionoftheLight(allLegendSetup.Lordaeron.Uther));

@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Dialogue
           FrostwolfSetup.Frostwolf
         }, new[]
         {
-          new ObjectiveQuestComplete(WarsongSetup.WarsongClan.GetQuestByType(typeof(QuestFountainOfBlood)))
+          new ObjectiveQuestComplete(WarsongSetup.WarsongClan.GetQuestByType<QuestFountainOfBlood>())
         }));
       
       TriggeredDialogueManager.Add(

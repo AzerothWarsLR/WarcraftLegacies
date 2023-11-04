@@ -18,9 +18,13 @@ namespace MacroTools
     private static timerdialog? _turnTimerDialog;
     private static int _turnCount;
     private static float _currentTime;
+    private static bool _gameStarted;
 
     /// <summary>Fired when a turn ends.</summary>
     public static event EventHandler? TurnEnded;
+
+    /// <summary>Fired when the game starts.</summary>
+    public static event EventHandler? GameStarted;
 
     /// <summary>Starts the timers that keeps trac of the game's ticks and turns.</summary>
     public static void Start()
@@ -60,6 +64,13 @@ namespace MacroTools
     private static void EndTurn()
     {
       _turnCount += 1;
+
+      if (_gameStarted == false)
+      {
+        _gameStarted = true;
+        GameStarted?.Invoke(null, EventArgs.Empty);
+      }
+      
       TimerDialogSetTitle(_turnTimerDialog, $"Turn {_turnCount}");
       if (_turnCount >= 20)
       {

@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Commands
         return;
       }
 
-      var targetFaction = FactionManager.GetFromName(content);
+      var targetFaction = FactionManager.GetFactionByName(content);
 
       if (triggerPlayer.GetFaction() == targetFaction)
       {

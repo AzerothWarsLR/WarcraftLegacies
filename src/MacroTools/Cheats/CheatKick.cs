@@ -31,7 +31,7 @@ namespace MacroTools.Cheats
     {
       try
       {
-        var faction = FactionManager.GetFromName(parameters[0]);
+        var faction = FactionManager.GetFactionByName(parameters[0]);
         if (faction == null)
           return $"There is no registered {nameof(Faction)} with the name {parameters[0]}.";
         

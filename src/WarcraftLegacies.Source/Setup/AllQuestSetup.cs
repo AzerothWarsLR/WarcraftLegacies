@@ -8,7 +8,6 @@ namespace WarcraftLegacies.Source.Setup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
       QuelthalasQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
-      DalaranQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       DruidsQuestSetup.Setup(artifactSetup, allLegendSetup);
       FelHordeQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
       FrostwolfQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
@@ -25,10 +24,7 @@ namespace WarcraftLegacies.Source.Setup
       DraeneiQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
       ZandalarQuestSetup.Setup(artifactSetup, preplacedUnitSystem, allLegendSetup);
       SunfuryQuestSetup.Setup(artifactSetup, preplacedUnitSystem, allLegendSetup);
-      GilneasQuestSetup.Setup(artifactSetup, preplacedUnitSystem, allLegendSetup);
-      ScarletQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
       SharedQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
-      
     }
   }
 }

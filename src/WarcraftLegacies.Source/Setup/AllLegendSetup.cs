@@ -90,11 +90,17 @@ namespace WarcraftLegacies.Source.Setup
     public LegendWarsong Warsong { get; }
 
     public LegendTroll Troll { get; }
+    
     public LegendCthun Cthun { get; }
+    
     public LegendNazjatar Nazjatar { get; }
+    
     public LegendBlackEmpire BlackEmpire { get; }
+    
     public LegendTwilight Twilight { get; }
+    
     public LegendGilneas Gilneas { get; }
+    
     public LegendScarlet Scarlet { get; }
 
     /// <summary>

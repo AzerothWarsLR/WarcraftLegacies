@@ -11,6 +11,8 @@ using System.Linq;
 using MacroTools.Libraries;
 using static MacroTools.Libraries.GeneralHelpers;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
+using WarcraftLegacies.Source.Factions;
+using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Quests.Lordaeron
 {
@@ -22,14 +24,15 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     private readonly unit _tyrsHand;
     private readonly LegendaryHero _saiden;
     private readonly List<unit> _rescueUnits;
-    private readonly Faction _scarletCrusade;
+    private readonly AllLegendSetup _allLegendSetup;
     private const int StartingGold = 300;
     private const int StartingLumber = 500;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestScarletCrusade"/> class.
     /// </summary>
-    public QuestScarletCrusade(Rectangle rescueRect, Capital tyrsHand, LegendaryHero saiden, Faction scarletCrusade, QuestData fortifiedCity) :
+    public QuestScarletCrusade(Rectangle rescueRect, Capital tyrsHand, LegendaryHero saiden, QuestData fortifiedCity,
+      AllLegendSetup allLegendSetup) :
       base("The Scarlet Crusade",
         "Lordaeron is destined to fall to the Scourge. Should such an event come to pass, the Silver Hand will be transformed beyond recognition, abandoning ideals of justice in favour of those of vengeance.",
         @"ReplaceableTextures\CommandButtons\BTNDivine_Reckoning_Icon.blp")
@@ -43,7 +46,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       _tyrsHand = tyrsHand.Unit;
       _saiden = saiden;
-      _scarletCrusade = scarletCrusade;
+      _allLegendSetup = allLegendSetup;
       Global = true;
     }
 
@@ -61,12 +64,15 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       var whichPlayer = completingFaction.Player;
       if (whichPlayer == null) 
         return;
+
+      var scarletCrusade = new ScarletCrusade(_allLegendSetup);
+      FactionManager.Register(scarletCrusade);
+      scarletCrusade.CopyObjectLevelsFrom(completingFaction);
       
-      _scarletCrusade.CopyObjectLevelsFrom(completingFaction);
       AbandonCurrentUnits(whichPlayer);
       PlayerDistributor.DistributePlayer(whichPlayer);
       EvacuateTyrsHand(whichPlayer);
-      whichPlayer.SetFaction(_scarletCrusade);
+      whichPlayer.SetFaction(scarletCrusade);
       GrantTyrsHand(whichPlayer);
       whichPlayer.RescueGroup(_rescueUnits);
       _tyrsHand.Rescue(whichPlayer);
