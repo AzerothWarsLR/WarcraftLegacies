@@ -131,8 +131,6 @@ namespace WarcraftLegacies.Source.Setup
       ArtifactManager.Register(ScepterOfTheQueen);
 
       BookOfMedivh = new Artifact(CreateItem(Constants.ITEM_I006_BOOK_OF_MEDIVH, DummyX, DummyY));
-      UnitAddAbility(preplacedUnitSystem.GetUnit(Constants.UNIT_NBSM_BOOK_OF_MEDIVH), Artifact.ArtifactHolderAbilId);
-      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_NBSM_BOOK_OF_MEDIVH), BookOfMedivh.Item);
       ArtifactManager.Register(BookOfMedivh);
 
       ZinRokh = new Artifact(CreateItem(FourCC("I016"), DummyX, DummyY))

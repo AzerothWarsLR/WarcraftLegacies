@@ -65,6 +65,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
     {
       Regions.Dalaran.CleanupNeutralPassiveUnits();
       Regions.ShadowfangUnlock.CleanupNeutralPassiveUnits();
+      Regions.SouthshoreUnlock.CleanupNeutralPassiveUnits();
       base.OnNotPicked();
     }
       
@@ -101,16 +102,16 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       ModObjectLimit(FourCC("n0AK"), UNLIMITED); //Sludge Flinger
       ModObjectLimit(FourCC("o02U"), 6); //Crystal Artillery
       ModObjectLimit(Constants.UNIT_N0AC_BLUE_DRAGON_DALARAN, 6);
-
+        
       //Ships
-      ModObjectLimit(FourCC("hbot"), UNLIMITED); //Alliance Transport Ship
-      ModObjectLimit(FourCC("h0AR"), UNLIMITED); //Alliance Scout
-      ModObjectLimit(FourCC("h0AX"), UNLIMITED); //Alliance Frigate
-      ModObjectLimit(FourCC("h0B3"), UNLIMITED); //Alliance Fireship
-      ModObjectLimit(FourCC("h0B0"), UNLIMITED); //Alliance Galley
-      ModObjectLimit(FourCC("h0B6"), UNLIMITED); //Alliance Boarding
-      ModObjectLimit(FourCC("h0AN"), UNLIMITED); //Alliance Juggernaut
-      ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
+      ModObjectLimit(Constants.UNIT_HBOT_TRANSPORT_SHIP_ALLIANCE, UNLIMITED);
+      ModObjectLimit(Constants.UNIT_H0AR_SCOUT_SHIP_ALLIANCE, UNLIMITED);
+      ModObjectLimit(Constants.UNIT_H0AX_FRIGATE_ALLIANCE, UNLIMITED);
+      ModObjectLimit(Constants.UNIT_H0B3_FIRESHIP_ALLIANCE, UNLIMITED);
+      ModObjectLimit(Constants.UNIT_H0B0_GALLEY_ALLIANCE, UNLIMITED);
+      ModObjectLimit(Constants.UNIT_H0B6_BOARDING_VESSEL_ALLIANCE, UNLIMITED);
+      ModObjectLimit(Constants.UNIT_H0AN_JUGGERNAUT_ALLIANCE, UNLIMITED);
+      ModObjectLimit(Constants.UNIT_H0B7_BOMBARD_ALLIANCE, 6);
       
       //Demi-heroes
       ModObjectLimit(Constants.UNIT_NJKS_JAILOR_KASSAN_DALARAN_DEMI, 1);
@@ -193,7 +194,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       foreach (var faction in FactionManager.GetAllFactions())
       {
         faction.AddQuest(new QuestBookOfMedivh(_allLegendSetup.Dalaran.Dalaran,
-          _preplacedUnitSystem.GetUnit(Constants.UNIT_NBSM_BOOK_OF_MEDIVH), _artifactSetup.BookOfMedivh,
+          new NamedRectangle("Dalaran", Regions.BookOfMedivhDalaran), _artifactSetup.BookOfMedivh,
           faction == LegionSetup.Legion, faction == this));
       }
     }
