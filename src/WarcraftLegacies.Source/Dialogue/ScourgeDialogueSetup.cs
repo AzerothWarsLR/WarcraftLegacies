@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
 using MacroTools.DialogueSystem;
+using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using WarcraftLegacies.Source.Factions;
 using WarcraftLegacies.Source.Quests.Scourge;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
@@ -14,6 +16,8 @@ namespace WarcraftLegacies.Source.Dialogue
   {
     public static void Setup(AllLegendSetup legendSetup)
     {
+      var dalaran = FactionManager.GetFactionByType<Dalaran>();
+      
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
           soundFile: @"Sound\Dialogue\HumanCampaign\Human04\H04Kelthuzad28.flac",
@@ -185,7 +189,7 @@ namespace WarcraftLegacies.Source.Dialogue
         ), new[]
         {
           ScourgeSetup.Scourge,
-          DalaranSetup.Dalaran
+          dalaran
         }, new List<Objective>
         {
           new ObjectiveLegendInRect(legendSetup.Dalaran.Antonidas, Regions.Dalaran, "Dalaran"),

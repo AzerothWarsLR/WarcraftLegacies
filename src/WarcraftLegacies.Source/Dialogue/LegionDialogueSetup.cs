@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 using MacroTools.DialogueSystem;
+using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
+using WarcraftLegacies.Source.Factions;
 using WarcraftLegacies.Source.Quests.Legion;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
@@ -13,6 +15,8 @@ namespace WarcraftLegacies.Source.Dialogue
   {
     public static void Setup(AllLegendSetup legendSetup)
     {
+      var dalaran = FactionManager.GetFactionByType<Dalaran>();
+      
       TriggeredDialogueManager.Add(new TriggeredDialogue(
         new DialogueSequence(
           new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf06\N06Tichondrius21.flac",
@@ -66,7 +70,7 @@ namespace WarcraftLegacies.Source.Dialogue
         , new[]
         {
           LegionSetup.Legion,
-          DalaranSetup.Dalaran
+          dalaran
         }, new List<Objective>
         {
           new ObjectiveLegendMeetsLegend(legendSetup.Legion.Archimonde, legendSetup.Dalaran.Jaina)

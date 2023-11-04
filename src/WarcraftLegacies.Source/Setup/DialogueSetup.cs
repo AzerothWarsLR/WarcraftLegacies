@@ -18,7 +18,6 @@ namespace WarcraftLegacies.Source.Setup
         SentinelsDialogueSetup.Setup(legendSetup);
         FrostwolfDialogueSetup.Setup(legendSetup);
         LegionDialogueSeup.Setup(legendSetup);
-        DalaranDialogueSetup.Setup(legendSetup);
         QuelthalasDialogueSetup.Setup(legendSetup);
         GoblinDialogueSetup.Setup(legendSetup);
         KultirasDialogueSetup.Setup(legendSetup);

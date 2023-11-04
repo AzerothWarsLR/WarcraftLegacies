@@ -1,7 +1,12 @@
-﻿using MacroTools;
+﻿using System.Collections.Generic;
+using MacroTools;
+using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
+using MacroTools.Libraries;
+using MacroTools.ObjectiveSystem;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests;
@@ -50,6 +55,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       RegisterGoldMines();
       RegisterQuests();
       RegisterBookOfMedivhQuest();
+      RegisterDialogue();
     }
 
     private void RegisterObjectLimits()
@@ -180,6 +186,63 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
           _preplacedUnitSystem.GetUnit(Constants.UNIT_NBSM_BOOK_OF_MEDIVH), _artifactSetup.BookOfMedivh,
           faction == LegionSetup.Legion, faction == this));
       }
+    }
+
+    private void RegisterDialogue()
+    {
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
+            @"Sound\Dialogue\NightElfCampaign\NightElf06Interlude\N06Medivh42",
+            "Now, at long last, I have returned to set things right. I... am Medivh, the Last Guardian. I tell you now, the only chance for this world is for you to unite in arms against the enemies of all who live!",
+            "Medivh"))
+          , new[]
+          {
+            this
+          }, new[]
+          {
+            new ObjectiveControlLegend(_allLegendSetup.Dalaran.Medivh, false)
+            {
+              EligibleFactions = new List<Faction>
+              {
+                this
+              }
+            }
+          }));
+      
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
+          soundFile: @"Sound\Dialogue\HumanCampaign\Human05\H05Jaina01.flac",
+          caption:
+          "Hearthglen, finally! I could use some rest!",
+          speaker: "Jaina Proudmoore"), new[]
+        {
+          this
+        }, new[]
+        {
+          new ObjectiveLegendInRect(_allLegendSetup.Dalaran.Jaina, Regions.Hearthglen, "Hearthglen")
+        }));
+      
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new DialogueSequence(
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Antonidas13.flac",
+            "It pains me to even look at you, Arthas.",
+            "Arthas Menethil"),
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Arthas14.flac",
+            "I'll be happy to end your torment, old man. I told you that your magics could not stop me.",
+            "Antonidas")
+        ), new[]
+        {
+          ScourgeSetup.Scourge,
+          this
+        }, new List<Objective>
+        {
+          new ObjectiveLegendDead(_allLegendSetup.Dalaran.Antonidas)
+          {
+            DeathFilter = dyingLegend => MathEx.GetDistanceBetweenPoints(_allLegendSetup.Scourge.Arthas.Unit.GetPosition(),
+              dyingLegend.Unit.GetPosition()) < 500
+          }
+        }
+      ));
     }
   }
 }

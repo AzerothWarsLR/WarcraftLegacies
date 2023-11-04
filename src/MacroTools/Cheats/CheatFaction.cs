@@ -32,7 +32,7 @@ namespace MacroTools.Cheats
       if (!FactionManager.FactionWithNameExists(parameters[0]))
         return $"There is no registered {nameof(Faction)} with the name {parameters[0]}.";
 
-      var f = FactionManager.GetFromName(parameters[0]);
+      var f = FactionManager.GetFactionByName(parameters[0]);
       if (f != null)
       {
         PlayerData.ByHandle(GetTriggerPlayer()).Faction = f;

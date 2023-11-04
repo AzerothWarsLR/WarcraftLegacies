@@ -75,8 +75,18 @@ namespace MacroTools.FactionSystem
     /// Returns the <see cref="Faction"/> with the specified name if one exists.
     /// Returns null otherwise.
     /// </summary>
-    public static Faction? GetFromName(string name) => 
+    public static Faction? GetFactionByName(string name) => 
       FactionsByName.TryGetValue(name.ToLower(), out var faction) ? faction : null;
+    
+    /// <summary>
+    /// Returns the <see cref="Faction"/> with the specified type if it exists.
+    /// </summary>
+    /// <exception cref="Exception">Thrown if no <see cref="Faction"/> with the specified type exists.</exception>
+    public static Faction GetFactionByType<T>() where T : Faction
+    {
+      return FactionsByName.Values.FirstOrDefault(x => x.GetType() == typeof(T)) as T ??
+             throw new Exception($"There is no registered {nameof(Faction)} of type {typeof(T)}");
+    }
 
     /// <summary>
     ///   Registers a <see cref="Faction" /> to the <see cref="FactionManager" />,

@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Commands
 
       if (FactionManager.FactionWithNameExists(content))
       {
-        var targetFaction = FactionManager.GetFromName(content);
+        var targetFaction = FactionManager.GetFactionByName(content);
         if (targetFaction.Player != null)
           triggerPlayer.GetTeam()?.Uninvite(targetFaction.Player);
         else
