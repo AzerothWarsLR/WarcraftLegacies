@@ -28,8 +28,6 @@ namespace MacroTools.FactionSystem
     private const int FoodMaximumDefault = 200;
 
     private readonly Dictionary<int, int> _abilityAvailabilities = new();
-    
-    private readonly List<unit> _goldMines = new();
 
     private readonly Dictionary<int, int> _objectLevels = new();
     private readonly Dictionary<int, int> _objectLimits = new();
@@ -53,6 +51,8 @@ namespace MacroTools.FactionSystem
     /// <summary>Invoked when one of the <see cref="Faction"/>'s <see cref="QuestData"/>s changes progress.</summary>
     public event EventHandler<FactionQuestProgressChangedEventArgs>? QuestProgressChanged;
 
+    public List<unit> GoldMines { private get; init; } = new();
+    
     static Faction()
     {
       PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
@@ -301,7 +301,7 @@ namespace MacroTools.FactionSystem
     ///   Registers a gold mine as belonging to this <see cref="Faction" />.
     ///   When the Faction leaves the game, all of their goldmines are removed.
     /// </summary>
-    public void AddGoldMine(unit whichUnit) => _goldMines.Add(whichUnit);
+    public void AddGoldMine(unit whichUnit) => GoldMines.Add(whichUnit);
 
     /// <summary>Adds a <see cref="Power" /> to this <see cref="Faction" />.</summary>
     public void AddPower(Power power)
@@ -473,10 +473,10 @@ namespace MacroTools.FactionSystem
     /// <summary>Removes all gold mines assigned to the faction</summary>
     public void RemoveGoldMines()
     {
-      foreach (var unit in _goldMines) 
+      foreach (var unit in GoldMines) 
         KillUnit(unit);
       
-      _goldMines.Clear();
+      GoldMines.Clear();
     }
     
     private void ApplyPowers()
