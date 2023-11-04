@@ -86,6 +86,7 @@ namespace MacroTools.FactionSystem
     {
       if (!FactionsByName.ContainsKey(faction.Name.ToLower()))
       {
+        faction.OnRegister();
         FactionsByName[faction.Name.ToLower()] = faction;
         FactionRegistered?.Invoke(faction, faction);
         faction.NameChanged += OnFactionNameChange;

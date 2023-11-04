@@ -19,7 +19,7 @@ namespace MacroTools.FactionSystem
   ///   Represents a faction in the Azeroth Wars universe, such as Lordaeron, Stormwind, or the Frostwolf Clan.
   ///   Governs techtrees and quests.
   /// </summary>
-  public sealed class Faction
+  public class Faction
   {
     /// <summary>Signifies unlimited unit production.</summary>
     public const int UNLIMITED = 200;
@@ -251,6 +251,14 @@ namespace MacroTools.FactionSystem
     /// <summary>Fired after the <see cref="Faction"/>'s status has changed.</summary>
     public event EventHandler<Faction>? StatusChanged;
 
+    /// <summary>
+    /// Invoked when the <see cref="Faction"/> is registered to a <see cref="FactionManager"/>.
+    /// <para>Override this for faction-specific initialization.</para>
+    /// </summary>
+    public virtual void OnRegister()
+    {
+    }
+    
     /// <summary>
     /// Defeats the player, making them an observer, and distributing their units and resources to allies if possible.
     /// </summary>
