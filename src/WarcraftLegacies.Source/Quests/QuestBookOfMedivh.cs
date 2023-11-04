@@ -31,14 +31,15 @@ namespace WarcraftLegacies.Source.Quests
     /// <param name="bypassDestructionRequirement">If true, Dalaran does not need to be destroyed to complete the quest.</param>
     public QuestBookOfMedivh(Capital dalaran, NamedRectangle bookLocation, Artifact bookOfMedivh,
       bool bypassLevelRequirement, bool bypassDestructionRequirement) : base("Book of Medivh",
-      "The last remaining spellbook written by Medivh, the Last Guardian, is held securely within the dungeons of Dalaran. The spells within its pages could bring us great power.",
+      $"The last remaining spellbook written by Medivh, the Last Guardian, is held securely within the dungeons of {bookLocation.Rectangle}. The spells within its pages could bring us great power.",
       @"ReplaceableTextures\CommandButtons\BTNBookOfTheDead.blp")
     {
       _bypassLevelRequirement = bypassLevelRequirement;
+      var bookLocationFullName = $"the Book of Medivh's pedestal at {bookLocation.Rectangle}";
       _bookOfMedivh = bookOfMedivh;
        _objectiveWithCompletingUnit = bypassLevelRequirement
-         ? new ObjectiveAnyUnitInRect(Regions.BookRetrieval, bookLocation.Name, true)
-         : new ObjectiveHeroWithLevelInRect(12, Regions.BookRetrieval, bookLocation.Name);
+         ? new ObjectiveAnyUnitInRect(Regions.BookRetrieval, bookLocationFullName, true)
+         : new ObjectiveHeroWithLevelInRect(12, Regions.BookRetrieval, bookLocationFullName);
       if (_objectiveWithCompletingUnit is Objective objective) 
         AddObjective(objective);
       

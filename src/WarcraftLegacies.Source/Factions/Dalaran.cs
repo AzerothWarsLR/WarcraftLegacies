@@ -193,7 +193,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       foreach (var faction in FactionManager.GetAllFactions())
       {
         faction.AddQuest(new QuestBookOfMedivh(_allLegendSetup.Dalaran.Dalaran,
-          new NamedRectangle("the Book of Medivh's pedestal", Regions.BookRetrieval), _artifactSetup.BookOfMedivh,
+          new NamedRectangle("Dalaran", Regions.BookRetrieval), _artifactSetup.BookOfMedivh,
           faction == LegionSetup.Legion, faction == this));
       }
     }
