@@ -4,6 +4,7 @@ using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.Libraries;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
@@ -58,6 +59,14 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       RegisterDialogue();
     }
 
+    /// <inheritdoc />
+    public override void OnNotPicked()
+    {
+      Regions.Dalaran.CleanupNeutralPassiveUnits();
+      Regions.ShadowfangUnlock.CleanupNeutralPassiveUnits();
+      base.OnNotPicked();
+    }
+      
     private void RegisterObjectLimits()
     {
       //Structures

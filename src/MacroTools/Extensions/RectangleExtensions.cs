@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -45,6 +46,39 @@ namespace MacroTools.Extensions
       };
     }
 
+    /// <summary>
+    /// Removes all Neutral Passive units from the area, except for Capitals and Protectors, which are instead made
+    /// hostile.
+    /// </summary>
+    public static void CleanupNeutralPassiveUnits(this Rectangle area)
+    {
+      var unitsInArea = CreateGroup()
+        .EnumUnitsInRect(area)
+        .EmptyToList();
+      foreach (var unit in unitsInArea)
+      {
+        var capital = CapitalManager.GetFromUnit(unit);
+        if (capital != null)
+        {
+          unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+          foreach (var protector in capital.ProtectorsByUnit.Keys)
+            protector.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+
+          continue;
+        }
+        if (CapitalManager.UnitIsProtector(unit) || CapitalManager.UnitIsCapital(unit))
+        {
+          unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+          continue;
+        }
+
+        if (unit.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE) && !IsUnitType(unit, UNIT_TYPE_STRUCTURE))
+        {
+          unit.Remove();
+        }
+      }
+    }
+    
     /// <summary>
     /// Prepares all Neutral Passive inside the specified <paramref name="rectangle"/>.
     /// </summary>
