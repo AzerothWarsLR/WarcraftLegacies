@@ -258,6 +258,16 @@ namespace MacroTools.FactionSystem
     public virtual void OnRegister()
     {
     }
+
+    /// <summary>
+    /// Invoked when the <see cref="Faction"/> has not been picked by any player by the time the game starts.
+    /// <para>Override this to cleanup anything that would have been used by the <see cref="Faction"/> if it had
+    /// been picked.</para>
+    /// </summary>
+    public virtual void OnNotPicked()
+    {
+      RemoveGoldMines();
+    }
     
     /// <summary>
     /// Defeats the player, making them an observer, and distributing their units and resources to allies if possible.

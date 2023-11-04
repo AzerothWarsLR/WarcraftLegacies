@@ -61,9 +61,8 @@ namespace MacroTools.FactionChoices
           unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
         else
           unit.Remove();
-
-      faction.RemoveGoldMines();
-      faction.Defeat();
+      
+      faction.OnNotPicked();
     }
     
     private static Choice<Faction>[] ConvertToFactionChoices(IEnumerable<Faction> factions)
