@@ -50,7 +50,7 @@ namespace MacroTools.Cheats
       }
       else
       {
-        faction = FactionManager.GetFromName(parameters[1]);
+        faction = FactionManager.GetFactionByName(parameters[1]);
         if (faction == null) 
           return $"{parameters[1]} is not a valid {nameof(Faction)}.";
       }

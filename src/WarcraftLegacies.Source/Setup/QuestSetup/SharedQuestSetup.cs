@@ -5,7 +5,6 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests;
-using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -35,8 +34,6 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
           artifactSetup.ObsidianFragment,
           artifactSetup.RubyFragment
         }));
-        faction.AddQuest(new QuestBookOfMedivh(allLegendSetup.Dalaran.Dalaran, preplacedUnitSystem.GetUnit(Constants.UNIT_NBSM_BOOK_OF_MEDIVH),
-          artifactSetup.BookOfMedivh, faction == LegionSetup.Legion, faction == DalaranSetup.Dalaran));
         faction.AddQuest(ragnarosQuest);
       }
       AddDragonsOfNightmareQuests(dragonsOfNightmareOne);

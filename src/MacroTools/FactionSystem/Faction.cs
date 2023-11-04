@@ -19,7 +19,7 @@ namespace MacroTools.FactionSystem
   ///   Represents a faction in the Azeroth Wars universe, such as Lordaeron, Stormwind, or the Frostwolf Clan.
   ///   Governs techtrees and quests.
   /// </summary>
-  public sealed class Faction
+  public class Faction
   {
     /// <summary>Signifies unlimited unit production.</summary>
     public const int UNLIMITED = 200;
@@ -252,6 +252,24 @@ namespace MacroTools.FactionSystem
     public event EventHandler<Faction>? StatusChanged;
 
     /// <summary>
+    /// Invoked when the <see cref="Faction"/> is registered to a <see cref="FactionManager"/>.
+    /// <para>Override this for faction-specific initialization.</para>
+    /// </summary>
+    public virtual void OnRegister()
+    {
+    }
+
+    /// <summary>
+    /// Invoked when the <see cref="Faction"/> has not been picked by any player by the time the game starts.
+    /// <para>Override this to cleanup anything that would have been used by the <see cref="Faction"/> if it had
+    /// been picked.</para>
+    /// </summary>
+    public virtual void OnNotPicked()
+    {
+      RemoveGoldMines();
+    }
+    
+    /// <summary>
     /// Defeats the player, making them an observer, and distributing their units and resources to allies if possible.
     /// </summary>
     public void Defeat()
@@ -443,14 +461,10 @@ namespace MacroTools.FactionSystem
     /// <summary>
     /// Returns the first <see cref="QuestData"/> the <see cref="Faction"/> has with the given <see cref="Type"/>.
     /// </summary>
-    /// <param name="type"></param>
-    /// <returns></returns>
-    public QuestData GetQuestByType(Type type)
+    public T GetQuestByType<T>() where T : QuestData
     {
-      var quest = _questsByName.Values.FirstOrDefault(x => x.GetType() == type);
-      if (quest == null)
-        throw new Exception($"{Name} does not have a {nameof(QuestData)} of type {type.Name}");
-      return quest;
+      return _questsByName.Values.FirstOrDefault(x => x.GetType() == typeof(T)) as T ??
+             throw new Exception($"{Name} does not have a {nameof(QuestData)} of type {typeof(T)}");
     }
 
     /// <summary>Returns all <see cref="QuestData"/>s the <see cref="Faction"/> can complete.</summary>

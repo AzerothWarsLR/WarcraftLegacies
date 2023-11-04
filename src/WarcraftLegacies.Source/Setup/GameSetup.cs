@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Source.Setup
       AllFactionSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       SharedFactionConfigSetup.Setup();
       PlayerSetup.Setup();
-      FactionChoiceDialogSetup.Setup();
+      FactionChoiceDialogSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       NeutralHostileSetup.Setup();
       AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       ObserverSetup.Setup(new[] { Player(21) });
@@ -90,7 +90,7 @@ namespace WarcraftLegacies.Source.Setup
       StartingQuestPopup.Setup(63);
       RefundZeroLimitUnits.Setup();
       HeroGlowFix.Setup();
-      CleanPersons.Setup();
+      CleanupUnoccupiedPlayerSlots.Setup();
       PlayerLeaves.Setup();
       FloatingTextSetup.Setup(60, 10);
       AmbianceSetup.Setup();

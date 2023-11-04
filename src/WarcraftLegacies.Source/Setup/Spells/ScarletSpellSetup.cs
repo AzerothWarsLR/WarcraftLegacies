@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         SummonUnitTypeId = Constants.UNIT_ST6W_UNHOLY_ARCHON_SCARLET_QUEST,
         SummonCount = 1,
         SpecialEffectPath = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl",
-        RequiredResearch = Constants.UPGRADE_R040_QUEST_COMPLETED_NEW_HEARTHGLEN
+        RequiredResearch = Constants.UPGRADE_R040_QUEST_COMPLETED_ONSLAUGHT
       });
 
       var recklessOnslaught = new CooldownReset(Constants.ABILITY_A0TC_RECKLESS_ONSLAUGHT_SCARLET);

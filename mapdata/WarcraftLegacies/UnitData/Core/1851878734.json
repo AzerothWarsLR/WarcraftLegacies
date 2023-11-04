@@ -75,7 +75,7 @@
     {
       "Id": 1731289461,
       "Type": 3,
-      "Value": "air,ancient,debris,ground,item,mechanical,nonancient,organic,structure,ward"
+      "Value": "ground,structure,debris,item,ward"
     },
     {
       "Id": 1918985077,

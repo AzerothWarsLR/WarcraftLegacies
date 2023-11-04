@@ -1,14 +1,9 @@
 ﻿using MacroTools;
-using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
-using WarcraftLegacies.Source.Setup.FactionSetup;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
-  /// <summary>
-  /// Responsible for setting up all <see cref="GilneasSetup.Gilneas"/> <see cref="Spell"/>s and <see cref="PassiveAbility"/>s.
-  /// </summary>
   public static class GilneasSpellSetup
   {
     /// <summary>

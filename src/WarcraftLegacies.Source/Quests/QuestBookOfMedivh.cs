@@ -16,34 +16,47 @@ namespace WarcraftLegacies.Source.Quests
   /// </summary>
   public sealed class QuestBookOfMedivh : QuestData
   {
+    private static unit? _bookOfMedivhPedestal;
+    
     private readonly IHasCompletingUnit _objectiveWithCompletingUnit;
-    private readonly unit _bookOfMedivhPedestal;
     private readonly bool _bypassLevelRequirement;
     private readonly Artifact _bookOfMedivh;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestBookOfMedivh"/> class.
     /// </summary>
-    /// <param name="dalaran">Must be destroyed for the quest to be completed.</param>
-    /// <param name="bookOfMedivhPedestal">The pedestal which has the Book on it.</param>
+    /// <param name="protectingCapital">Must be destroyed for the quest to be completed.</param>
+    /// <param name="bookLocation">Where to place the Book of Medivh pedestal.</param>
     /// <param name="bookOfMedivh">Reward for completing the quest.</param>
     /// <param name="bypassLevelRequirement">If set to true, any hero of any level can complete the objective.</param>
-    /// <param name="bypassDestructionRequirement">If true, Dalaran does not need to be destroyed to complete the quest.</param>
-    public QuestBookOfMedivh(Capital dalaran, unit bookOfMedivhPedestal, Artifact bookOfMedivh, bool bypassLevelRequirement = false, bool bypassDestructionRequirement = false) : base("Book of Medivh",
-      "The last remaining spellbook written by Medivh, the Last Guardian, is held securely within the dungeons of Dalaran. The spells within its pages could bring us great power.",
+    /// <param name="bypassDestructionRequirement">If true, <paramref name="protectingCapital"/> does not need to be destroyed to complete the quest.</param>
+    public QuestBookOfMedivh(Capital protectingCapital, NamedRectangle bookLocation, Artifact bookOfMedivh,
+      bool bypassLevelRequirement, bool bypassDestructionRequirement) : base("Book of Medivh",
+      $"The last remaining spellbook written by Medivh, the Last Guardian, is held securely within {bookLocation.Name}. The spells within its pages could bring us great power.",
       @"ReplaceableTextures\CommandButtons\BTNBookOfTheDead.blp")
     {
       _bypassLevelRequirement = bypassLevelRequirement;
+      var bookLocationFullName = $"the Book of Medivh's pedestal at {bookLocation.Name}";
       _bookOfMedivh = bookOfMedivh;
        _objectiveWithCompletingUnit = bypassLevelRequirement
-         ? new ObjectiveAnyUnitInRect(Regions.BookRetrieval, "the Book of Medivh's pedestal", true)
-         : new ObjectiveHeroWithLevelInRect(12, Regions.BookRetrieval, "the Book of Medivh's pedestal");
+         ? new ObjectiveAnyUnitInRect(bookLocation.Rectangle, bookLocationFullName, true)
+         : new ObjectiveHeroWithLevelInRect(12, bookLocation.Rectangle, bookLocationFullName);
       if (_objectiveWithCompletingUnit is Objective objective) 
         AddObjective(objective);
+      
       AddObjective(new ObjectiveNoOtherPlayerGetsArtifact(bookOfMedivh));
       if (!bypassDestructionRequirement)
-        AddObjective(new ObjectiveCapitalDead(dalaran));
-      _bookOfMedivhPedestal = bookOfMedivhPedestal;
+        AddObjective(new ObjectiveCapitalDead(protectingCapital));
+
+      if (_bookOfMedivhPedestal == null)
+      {
+        _bookOfMedivhPedestal = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), Constants.UNIT_NBSM_BOOK_OF_MEDIVH,
+          bookLocation.Rectangle.Center.X, bookLocation.Rectangle.Center.Y, 270);
+        _bookOfMedivhPedestal.SetInvulnerable(true)
+          .AddAbility(Constants.ABILITY_A01Y_INVENTORY_DUMMY_DROP_ARTIFACT)
+          .AddItemSafe(bookOfMedivh.Item);
+      }
+      
       Required = bypassLevelRequirement;
     }
 
@@ -65,7 +78,7 @@ namespace WarcraftLegacies.Source.Quests
     protected override void OnComplete(Faction completingFaction)
     {
       _objectiveWithCompletingUnit.CompletingUnit?.AddItemSafe(_bookOfMedivh.Item);
-      _bookOfMedivhPedestal.Kill();
+      _bookOfMedivhPedestal?.Kill();
     }
   }
 }

@@ -40,6 +40,11 @@ namespace MacroTools.FactionChoices
             startingCameraPosition.Y);
       }
 
+      //Todo: once all Factions are moved to the new Faction model, remove the if statement and always register
+      //Todo: the faction, as a player should never be picking an already registered faction.
+      if (FactionManager.GetFactionByName(pickedFaction.Name) == null)
+        FactionManager.Register(pickedFaction);
+      
       pickingPlayer.SetFaction(pickedFaction);
       var startingUnits = pickedFaction.StartingUnits;
       pickingPlayer.RescueGroup(startingUnits);
@@ -56,9 +61,8 @@ namespace MacroTools.FactionChoices
           unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
         else
           unit.Remove();
-
-      faction.RemoveGoldMines();
-      faction.Defeat();
+      
+      faction.OnNotPicked();
     }
     
     private static Choice<Faction>[] ConvertToFactionChoices(IEnumerable<Faction> factions)

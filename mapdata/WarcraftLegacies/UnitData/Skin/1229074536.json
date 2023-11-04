@@ -53,6 +53,16 @@
     {
       "Id": 2020631157,
       "Value": 0
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Bombard Tower"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Bombard Tower"
     }
   ]
 }

@@ -43,7 +43,8 @@ public static class Regions
 	public static Rectangle BlademasterUnlock { get; set; } = new Rectangle(4352f, -10496f, 5024f, -10112f);
 	public static Rectangle BlastedlandAmbient { get; set; } = new Rectangle(14912f, -22208f, 20224f, -16896f);
 	public static Rectangle BloodElfSecondChanceSpawn { get; set; } = new Rectangle(17376f, 6144f, 17760f, 6560f);
-	public static Rectangle BookRetrieval { get; set; } = new Rectangle(9312f, 4864f, 9536f, 5120f);
+	public static Rectangle BookOfMedivhDalaran { get; set; } = new Rectangle(9312f, 4864f, 9600f, 5216f);
+	public static Rectangle BookOfMedivhGilneas { get; set; } = new Rectangle(7840f, 448f, 8032f, 640f);
 	public static Rectangle BootyBayQuest { get; set; } = new Rectangle(9696f, -24160f, 12032f, -22304f);
 	public static Rectangle Borean_Tundra { get; set; } = new Rectangle(-9152f, 13664f, -4768f, 19008f);
 	public static Rectangle BridgeAmbient { get; set; } = new Rectangle(15232f, -512f, 17856f, 896f);
@@ -254,7 +255,7 @@ public static class Regions
 	public static Rectangle RuinOfDalaran { get; set; } = new Rectangle(9152f, 5056f, 9312f, 5248f);
 	public static Rectangle Sargeras_Entrance { get; set; } = new Rectangle(-1024f, 8096f, -448f, 8576f);
 	public static Rectangle SatyrCamp { get; set; } = new Rectangle(-14816f, 6080f, -13888f, 6912f);
-	public static Rectangle Scarlet_Spawn { get; set; } = new Rectangle(19904f, 9472f, 21280f, 10624f);
+	public static Rectangle Scarlet_Spawn { get; set; } = new Rectangle(19904f, 9472f, 21568f, 10624f);
 	public static Rectangle ScarletHarbor { get; set; } = new Rectangle(-9728f, 21984f, -7872f, 23648f);
 	public static Rectangle ScholomanceAmbient1 { get; set; } = new Rectangle(13728f, 7072f, 16096f, 8416f);
 	public static Rectangle ScholomanceAmbient2 { get; set; } = new Rectangle(12128f, 5440f, 16224f, 7072f);
