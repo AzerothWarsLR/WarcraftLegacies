@@ -8,6 +8,7 @@ using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Gilneas;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
+using WarcraftLegacies.Source.Setup.QuestSetup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -118,6 +119,8 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
     
     private void RegisterQuests()
     {
+      SharedQuestSetup.AddSharedQuests(this, _artifactSetup);
+      
       AddQuest(new QuestDuskhaven());
       AddQuest(new QuestStormglen());
       AddQuest(new QuestKeelHarbor());
