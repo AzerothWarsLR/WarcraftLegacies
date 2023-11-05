@@ -356,6 +356,10 @@ namespace MacroTools.FactionSystem
 
     public QuestData AddQuest(QuestData questData)
     {
+      var loweredQuestTitle = questData.Title.ToLower();
+      if (_questsByName.ContainsKey(loweredQuestTitle))
+        throw new InvalidOperationException($"Tried to add a quest named {loweredQuestTitle} to {Name} but they already have one with that name.");
+
       questData.Add(this);
       _questsByName.Add(questData.Title.ToLower(), questData);
       if (GetLocalPlayer() == Player)
