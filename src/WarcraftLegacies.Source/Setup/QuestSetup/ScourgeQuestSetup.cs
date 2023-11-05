@@ -54,7 +54,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       QuestLichKingArthas questLichKingArthas =
         new(preplacedUnitSystem.GetUnit(Constants.UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER), artifactSetup.HelmOfDomination,
           allLegendSetup.Scourge.Arthas, allLegendSetup.Scourge.TheFrozenThrone);
-      QuestEnemyEncroachment questEnemyEncroachment = new(ScourgeSetup.Scourge);
+      QuestEnemyEncroachment questEnemyEncroachment = new();
 
       //Setup
       if (ScourgeSetup.Scourge != null)
