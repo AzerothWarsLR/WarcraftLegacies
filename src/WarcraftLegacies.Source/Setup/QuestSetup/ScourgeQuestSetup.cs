@@ -54,6 +54,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       QuestLichKingArthas questLichKingArthas =
         new(preplacedUnitSystem.GetUnit(Constants.UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER), artifactSetup.HelmOfDomination,
           allLegendSetup.Scourge.Arthas, allLegendSetup.Scourge.TheFrozenThrone);
+      QuestEnemyEncroachment questEnemyEncroachment = new();
 
       //Setup
       if (ScourgeSetup.Scourge != null)
@@ -71,6 +72,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
         ScourgeSetup.Scourge.AddQuest(questKelthuzadDies);
         //Misc
         ScourgeSetup.Scourge.AddQuest(questLichKingArthas);
+        ScourgeSetup.Scourge.AddQuest(questEnemyEncroachment);
       }
     }
   }
