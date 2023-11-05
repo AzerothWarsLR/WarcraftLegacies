@@ -19,6 +19,7 @@ namespace MacroTools.FactionSystem
   ///   Represents a faction in the Azeroth Wars universe, such as Lordaeron, Stormwind, or the Frostwolf Clan.
   ///   Governs techtrees and quests.
   /// </summary>
+  //Todo: make this sealed once all Factions have been moved over to the new style.
   public class Faction
   {
     /// <summary>Signifies unlimited unit production.</summary>
@@ -176,27 +177,17 @@ namespace MacroTools.FactionSystem
       get => _player;
       set
       {
-        if (Player != null)
-        {
-          Player.GetTeam()?.UnallyPlayer(Player);
-          HideAllQuests();
-          UnapplyObjects();
-          UnapplyPowers();
-        }
+        if (Player != null) 
+          UnapplyFactionFromPlayer(Player);
 
         _player = value;
-        //Maintain referential integrity
-        //Todo: this seems a bit silly
-        if (value == null) return;
+        if (value == null) 
+          return;
 
         if (value.GetFaction() != this)
           value.SetFaction(this);
 
-        Player?.GetTeam()?.AllyPlayer(value);
-        ApplyObjects();
-        ApplyPowers();
-        ShowAllQuests();
-        SetPlayerState(Player, PLAYER_STATE_FOOD_CAP_CEILING, _foodMaximum);
+        ApplyFactionToPlayer(value);
       }
     }
 
@@ -477,6 +468,29 @@ namespace MacroTools.FactionSystem
         KillUnit(unit);
       
       GoldMines.Clear();
+    }
+    
+    /// <summary>
+    /// Modifies the player to have the <see cref="Faction"/>'s attributes.
+    /// </summary>
+    private void ApplyFactionToPlayer(player whichPlayer)
+    {
+      whichPlayer.GetTeam()?.AllyPlayer(whichPlayer);
+      ApplyObjects();
+      ApplyPowers();
+      ShowAllQuests();
+      SetPlayerState(Player, PLAYER_STATE_FOOD_CAP_CEILING, _foodMaximum);
+    }
+
+    /// <summary>
+    /// Modifies the player to no longer have the <see cref="Faction"/>'s attributes.
+    /// </summary>
+    private void UnapplyFactionFromPlayer(player whichPlayer)
+    {
+      whichPlayer.GetTeam()?.UnallyPlayer(whichPlayer);
+      HideAllQuests();
+      UnapplyObjects();
+      UnapplyPowers();
     }
     
     private void ApplyPowers()
