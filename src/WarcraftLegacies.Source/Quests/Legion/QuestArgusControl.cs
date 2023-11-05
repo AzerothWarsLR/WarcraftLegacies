@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
         Constants.UNIT_U00C_LEGION_BASTION_LEGION_T2));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R055_QUEST_COMPLETED_ARGUS;
-      Required = true;
+      
 
       _legionTeleporter1 =
         preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, new Point(22939, -29345));

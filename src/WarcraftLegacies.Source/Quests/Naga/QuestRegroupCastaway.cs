@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00Y_DEADWIND_PASS)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00U_SWAMP_OF_SORROWS)));
       ResearchId = Constants.UPGRADE_R093_QUEST_COMPLETED_ANCIENT_LIBRARIES;
-      Required = true;
+      
     }
 
     /// <inheritdoc/>

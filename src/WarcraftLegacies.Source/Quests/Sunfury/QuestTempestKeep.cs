@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
         "The Sunfury must learn to adapt to their new home within the inhospitable Netherstorm. There are several eco-domes dotted throughout the region, remnants of Netherstorm's prior existence as the verdant Farahlon. They would make excellent locations for growth facilities.",
         @"ReplaceableTextures\CommandButtons\BTNFeatherMoonAura.blp")
     {
-      Required = true;
+      
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_H0C5_SANCTUARY_SUNFURY_T3,
         Constants.UNIT_H02P_HOLDING_SUNFURY_T1));
       AddObjective(new ObjectiveBuildInRect(questRect1, "in one of the 3 Eco-dome in Netherstorm",

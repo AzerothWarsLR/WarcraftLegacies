@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = hearthglenArea.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      Required = true;
+      
     }
 
     /// <inheritdoc />

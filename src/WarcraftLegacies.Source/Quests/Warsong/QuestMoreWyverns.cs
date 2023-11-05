@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     {
       AddObjective(new ObjectiveCapitalDead(feathermoon));
       AddObjective(new ObjectiveCapitalDead(auberdine));
-      Required = true;
+      
     }
     
     /// <inheritdoc/>

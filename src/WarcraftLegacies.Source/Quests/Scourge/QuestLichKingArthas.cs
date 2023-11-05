@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       AddObjective(new ObjectiveResearch(Constants.UPGRADE_R07X_MAKE_ARTHAS_THE_LICH_KING_SCOURGE, FourCC("u000")));
       AddObjective(new ObjectiveLegendInRect(arthas, Regions.LichKing, "Icecrown Citadel"));
       Global = true;
-      Required = true;
+      
     }
 
     /// <inheritdoc />

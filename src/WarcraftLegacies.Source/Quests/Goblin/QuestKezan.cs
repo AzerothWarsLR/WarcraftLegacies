@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N025_UN_GORO_CRATER)));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_O03N_FORTRESS_GOBLIN_T3, Constants.UNIT_O03L_GREAT_HALL_GOBLIN_T1));
       AddObjective(new ObjectiveSelfExists());
-      Required = true;
+      
       ResearchId = Constants.UPGRADE_R09Z_QUEST_COMPLETED_OFFSHORE_INVESTMENT;
       _rescueUnits = Regions.KezanUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures,
         filterUnit => filterUnit.GetTypeId() != FourCC("ngme"));

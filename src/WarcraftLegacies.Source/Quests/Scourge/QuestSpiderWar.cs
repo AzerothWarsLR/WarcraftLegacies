@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
 
-      Required = true;
+      
     }
 
     /// <inheritdoc/>

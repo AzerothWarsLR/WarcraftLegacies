@@ -47,7 +47,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       _uther = uther;
       _capitalPalace = capitalPalace;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures, RescueUnitFilter);
-      Required = true;
+      
     }
 
     private static bool RescueUnitFilter(unit whichUnit) => GetUnitTypeId(whichUnit) != Constants.UNIT_N08F_UNDERCITY_ENTRANCE;

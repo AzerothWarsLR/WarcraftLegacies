@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      Required = true;
+      
     }
 
     /// <inheritdoc />

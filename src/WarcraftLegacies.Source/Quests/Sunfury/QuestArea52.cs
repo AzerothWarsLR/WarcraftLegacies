@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
       "The goblins of Area 52 have lived in Netherstorm long before our arrival. In other circumstances, they may have been potential allies - but desperate times call for desperate conquests.",
       @"ReplaceableTextures\CommandButtons\BTNLordaeronPalace.blp")
     {
-      Required = true;
+      
       AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.Area52Unlock }, "in Area 52"));
       AddObjective(
         new ObjectiveControlPoint(

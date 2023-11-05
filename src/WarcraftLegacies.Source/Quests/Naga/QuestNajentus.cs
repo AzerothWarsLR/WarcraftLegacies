@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
         AddObjective(new ObjectiveCapitalDead(capital));
       
       ResearchId = Constants.UPGRADE_R08W_QUEST_COMPLETED_LORD_OF_THE_DEPTHS;
-      Required = true;
+      
     }
 
     /// <inheritdoc/>

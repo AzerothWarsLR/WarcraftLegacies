@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       "Lordaeron City was once the heart of the Alliance and the center of the humanity before its fall. It must be reclaimed at all costs.",
       "ReplaceableTextures/CommandButtons/BTNStromgardeAltar.blp")
     {
-      Required = true;
+      
       AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in Capital City", 3));
       AddObjective(new ObjectiveControlCapital(capitalPalace, false));
       AddObjective(new ObjectiveControlLevel(

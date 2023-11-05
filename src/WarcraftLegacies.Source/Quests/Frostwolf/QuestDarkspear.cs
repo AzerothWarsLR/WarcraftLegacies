@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       AddObjective(new ObjectiveSelfExists());
       AddObjective(new ObjectiveExpire(480, Title));
       AddObjective(new ObjectiveAnyUnitInRect(Regions.EchoUnlock, "Echo Isles", true));
-      Required = true;
+      
       ResearchId = Constants.UPGRADE_R032_QUEST_COMPLETED_THE_DARKSPEAR_TROLLS;
     }
 

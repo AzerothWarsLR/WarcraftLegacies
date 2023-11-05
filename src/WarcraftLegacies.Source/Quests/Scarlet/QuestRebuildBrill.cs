@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       "The desolated village of Brill was once the hometown of Renault Mograine. Though insignificant in the grand scheme of things, the Crusade cares for its members.",
       @"ReplaceableTextures\CommandButtons\BTNStromgardeFarm.blp")
     {
-      Required = true;
+      
       AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in Brill", 4));
       AddObjective(new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N03H_BRILL), 2));
       _renault = renault;

@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
       _rescueUnits = Regions.GilneasUnlock5.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures, RescuableFilter);
       _rescueUnits.AddRange(Regions.GilneasUnlock6.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures, RescuableFilter));
       ResearchId = Constants.UPGRADE_R02R_QUEST_COMPLETED_LIBERATION_OF_GILNEAS;
-      Required = true;
+      
     }
 
     /// <inheritdoc/>

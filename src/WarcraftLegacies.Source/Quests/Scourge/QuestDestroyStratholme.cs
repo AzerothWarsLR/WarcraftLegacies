@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       var lineOfSuccession = LordaeronSetup.Lordaeron.GetQuestByType<QuestKingArthas>();
       AddObjective(new ObjectiveFactionQuestNotComplete(lineOfSuccession, LordaeronSetup.Lordaeron));
       ResearchId = Constants.UPGRADE_R01K_QUEST_COMPLETED_THE_CULLING;
-      Required = true;
+      
     }
 
     /// <inheritdoc />

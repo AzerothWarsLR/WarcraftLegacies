@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       AddObjective(new ObjectiveExpire(800, Title));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R05R_QUEST_COMPLETED_TO_TAME_A_LAND;
-      Required = true;
+      
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
     }
 

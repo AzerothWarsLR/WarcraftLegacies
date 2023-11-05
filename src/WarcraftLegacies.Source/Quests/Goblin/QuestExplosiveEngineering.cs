@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
     {
       AddObjective(new ObjectiveBuild(Constants.UNIT_O04R_OIL_RIG_GOBLIN_OTHER, 1));
       ResearchId = Constants.UPGRADE_R01F_QUEST_COMPLETED_EXPLOSIVE_ENGINEERING_FROSTWOLF;
-      Required = true;
+      
     }
   }
 }
