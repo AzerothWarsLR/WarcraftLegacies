@@ -54,10 +54,7 @@ Once your territory is secured, you will need to prepare for the Plague of Undea
 Your mages are the finest in Azeroth, be sure to utilize them alongside your heroes to turn the tide of battle.";
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9204, 2471)),
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(7386, 6999)),
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(7716, 11657)),
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(17198, 8222)),
+        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9204, 2471))
       };
     }
 
