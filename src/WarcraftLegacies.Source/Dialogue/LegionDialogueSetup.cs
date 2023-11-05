@@ -15,7 +15,27 @@ namespace WarcraftLegacies.Source.Dialogue
   {
     public static void Setup(AllLegendSetup legendSetup)
     {
-      var dalaran = FactionManager.GetFactionByType<Dalaran>();
+      if (FactionManager.TryGetFactionByType<Dalaran>(out var dalaran))
+      {
+        TriggeredDialogueManager.Add(new TriggeredDialogue(
+          new DialogueSequence(
+            new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Archimonde21.flac",
+              "You are very brave to stand against me, little human. If only your countrymen had been as bold, I would have had more fun scouring your wretched nations from the world!",
+              "Archimonde"),
+            new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Jaina22.flac",
+              "Is talking all you demons do?",
+              "Jaina Proudmoore")
+          )
+          , new[]
+          {
+            LegionSetup.Legion,
+            dalaran
+          }, new List<Objective>
+          {
+            new ObjectiveLegendMeetsLegend(legendSetup.Legion.Archimonde, legendSetup.Dalaran.Jaina)
+          }
+        ));
+      }
       
       TriggeredDialogueManager.Add(new TriggeredDialogue(
         new DialogueSequence(
@@ -55,25 +75,6 @@ namespace WarcraftLegacies.Source.Dialogue
         }, new List<Objective>
         {
           new ObjectiveLegendMeetsLegend(legendSetup.Legion.Archimonde, legendSetup.Frostwolf.Thrall)
-        }
-      ));
-
-      TriggeredDialogueManager.Add(new TriggeredDialogue(
-        new DialogueSequence(
-          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Archimonde21.flac",
-            "You are very brave to stand against me, little human. If only your countrymen had been as bold, I would have had more fun scouring your wretched nations from the world!",
-            "Archimonde"),
-          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Jaina22.flac",
-            "Is talking all you demons do?",
-            "Jaina Proudmoore")
-        )
-        , new[]
-        {
-          LegionSetup.Legion,
-          dalaran
-        }, new List<Objective>
-        {
-          new ObjectiveLegendMeetsLegend(legendSetup.Legion.Archimonde, legendSetup.Dalaran.Jaina)
         }
       ));
 

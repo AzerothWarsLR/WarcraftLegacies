@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.Extensions;
 using static War3Api.Common;
@@ -79,13 +80,13 @@ namespace MacroTools.FactionSystem
       FactionsByName.TryGetValue(name.ToLower(), out var faction) ? faction : null;
     
     /// <summary>
-    /// Returns the <see cref="Faction"/> with the specified type if it exists.
+    /// Returns true if a <see cref="Faction"/> with the specified type exists.
     /// </summary>
-    /// <exception cref="Exception">Thrown if no <see cref="Faction"/> with the specified type exists.</exception>
-    public static Faction GetFactionByType<T>() where T : Faction
+    /// <param name="faction">Outputs the <see cref="Faction"/> with the specified type.</param>
+    public static bool TryGetFactionByType<T>([NotNullWhen(true)] out Faction? faction) where T : Faction
     {
-      return FactionsByName.Values.FirstOrDefault(x => x.GetType() == typeof(T)) as T ??
-             throw new Exception($"There is no registered {nameof(Faction)} of type {typeof(T)}");
+      faction = FactionsByName.Values.FirstOrDefault(x => x.GetType() == typeof(T)) as T;
+      return faction != null;
     }
 
     /// <summary>
