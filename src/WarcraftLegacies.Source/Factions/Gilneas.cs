@@ -1,4 +1,5 @@
-﻿using MacroTools;
+﻿using System.Collections.Generic;
+using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
@@ -14,17 +15,17 @@ namespace WarcraftLegacies.Source.Factions
 {
   public sealed class Gilneas : Faction
   {
-    private readonly PreplacedUnitSystem _preplacedUnitSystem;
     private readonly ArtifactSetup _artifactSetup;
     private readonly AllLegendSetup _allLegendSetup;
-    
+    private readonly unit _gilneasGate;
+
     /// <inheritdoc />
     public Gilneas(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup) : base("Gilneas", PLAYER_COLOR_COAL, "|cff808080",
       @"ReplaceableTextures\CommandButtons\BTNGreymane.blp")
     {
-      _preplacedUnitSystem = preplacedUnitSystem;
       _artifactSetup = artifactSetup;
       _allLegendSetup = allLegendSetup;
+      _gilneasGate = preplacedUnitSystem.GetUnit(Constants.UNIT_H02K_GREYMANE_S_GATE_CLOSED);
       StartingGold = 200;
       StartingLumber = 700;
       ControlPointDefenderUnitTypeId = Constants.UNIT_H0AF_CONTROL_POINT_DEFENDER_GILNEAS;
@@ -38,13 +39,19 @@ You start isolated behind the Greymane Wall, the only way for an enemy to reach 
 You must raise an army and fight back against the feral wolves and worgen that have overrun  your Kingdom.
 
 Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist Lordaeron and Dalaran with the plague, if it's not too late.";
+      GoldMines = new List<unit>
+      {
+        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4236, 1321)),
+        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4477, -1449)),
+        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(7709, -2853)),
+        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9392, -921)),
+      };
     }
     
     /// <inheritdoc />
     public override void OnRegister()
     {
       RegisterObjectLimits();
-      RegisterGoldMines();
       RegisterQuests();
       RegisterBookOfMedivhQuest();
     }
@@ -99,20 +106,12 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
 
       //Upgrades
-      ModObjectLimit(FourCC("R04O"), UNLIMITED); //Cleric Training
-      ModObjectLimit(FourCC("R04P"), UNLIMITED); //Scythe Training
-      ModObjectLimit(FourCC("Rhlh"), UNLIMITED); //Improved Lumber Harvesting
-      ModObjectLimit(FourCC("Rhac"), UNLIMITED); //Improved Masonry
-      ModObjectLimit(FourCC("R09L"), UNLIMITED); //Worgen Shaman training
-      ModObjectLimit(FourCC("R09M"), UNLIMITED); //harvestWitch training
-    }
-
-    private void RegisterGoldMines()
-    {
-      AddGoldMine(_preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4236, 1321)));
-      AddGoldMine(_preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4477, -1449)));
-      AddGoldMine(_preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(7709, -2853)));
-      AddGoldMine(_preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9392, -921)));
+      ModObjectLimit(Constants.UPGRADE_R04O_CLERIC_MASTER_TRAINING_GILNEAS, UNLIMITED);
+      ModObjectLimit(Constants.UPGRADE_R04P_DRUID_OF_THE_SCYTHE_MASTER_TRAINING_GILNEAS, UNLIMITED);
+      ModObjectLimit(Constants.UPGRADE_RHLH_IMPROVED_LUMBER_HARVESTING_ADVANCED_LUMBER_HARVESTING_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, UNLIMITED);
+      ModObjectLimit(Constants.UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, UNLIMITED);
+      ModObjectLimit(Constants.UPGRADE_R09L_WORGEN_SHAMAN_MASTER_TRAINING_GILNEAS, UNLIMITED);
+      ModObjectLimit(Constants.UPGRADE_R09M_HARVEST_WITCH_MASTER_TRAINING_GILNEAS, UNLIMITED);
     }
     
     private void RegisterQuests()
@@ -121,7 +120,7 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       AddQuest(new QuestStormglen());
       AddQuest(new QuestKeelHarbor());
       AddQuest(new QuestTempestReach());
-      AddQuest(new QuestGilneasCity(_preplacedUnitSystem));
+      AddQuest(new QuestGilneasCity(_gilneasGate));
       AddQuest(new QuestCrowley());
       AddQuest(new QuestGoldrinn(_artifactSetup.ScytheOfElune, _allLegendSetup.Gilneas.Goldrinn));
     }
