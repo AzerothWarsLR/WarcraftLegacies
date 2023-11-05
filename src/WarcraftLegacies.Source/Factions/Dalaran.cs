@@ -13,6 +13,7 @@ using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Dalaran;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
+using WarcraftLegacies.Source.Setup.QuestSetup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -82,6 +83,8 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       
     private void RegisterObjectLimits()
     {
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
+      
       //Structures
       ModObjectLimit(FourCC("h065"), UNLIMITED); //Refuge
       ModObjectLimit(FourCC("h066"), UNLIMITED); //Conclave
@@ -152,6 +155,8 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
     
     private void RegisterQuests()
     {
+      SharedQuestSetup.AddSharedQuests(this, _artifactSetup);
+      
       QuestNewGuardian newGuardian = new(_artifactSetup.BookOfMedivh, _allLegendSetup.Dalaran.Jaina,
         _allLegendSetup.Dalaran.Dalaran);
       QuestAegwynn aegwynn = new(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Dalaran.Antonidas);
