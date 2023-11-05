@@ -23,12 +23,11 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     /// Initializes a new instance of the <see cref="QuestShadowfang"/> class.
     /// </summary>
     /// <param name="rescueRect">Units in this region will start invulnerable and be rescued when the quest completes.</param>
-    /// <param name="direwolfToKill">This unit must be killed to complete the quest.</param>
-    public QuestShadowfang(Rectangle rescueRect, unit direwolfToKill) : base("Shadows of Silverpine Forest",
+    public QuestShadowfang(Rectangle rescueRect) : base("Shadows of Silverpine Forest",
       "The woods of Silverspine are unsafe for travellers, they need to be investigated",
       @"ReplaceableTextures\CommandButtons\BTNworgen.blp")
     {
-      AddObjective(new ObjectiveUnitIsDead(direwolfToKill));
+      AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { rescueRect }, "near Shadowfang Keep"));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01D_SILVERPINE_FOREST)));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());

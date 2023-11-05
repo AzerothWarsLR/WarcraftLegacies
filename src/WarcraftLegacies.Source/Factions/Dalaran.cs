@@ -20,17 +20,22 @@ namespace WarcraftLegacies.Source.Factions
 {
   public sealed class Dalaran : Faction
   {
-    private readonly PreplacedUnitSystem _preplacedUnitSystem;
     private readonly ArtifactSetup _artifactSetup;
     private readonly AllLegendSetup _allLegendSetup;
-    
+    private readonly List<unit> _dalaranProtectors;
+
     /// <inheritdoc />
     public Dalaran(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
       : base("Dalaran", PLAYER_COLOR_PINK, "|c00e55bb0", @"ReplaceableTextures\CommandButtons\BTNJaina.blp")
     {
-      _preplacedUnitSystem = preplacedUnitSystem;
       _artifactSetup = artifactSetup;
       _allLegendSetup = allLegendSetup;
+      _dalaranProtectors = new List<unit>
+      {
+        preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9084, 4979)),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9008, 4092)),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9864, 4086))
+      };
       UndefeatedResearch = Constants.UPGRADE_R05N_DALARAN_EXISTS;
       StartingGold = 200;
       StartingLumber = 700;
@@ -160,11 +165,9 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
 
       theNexus.AddObjective(new ObjectiveQuestNotComplete(newGuardian));
 
-      var questSouthshore = AddQuest(new QuestSouthshore(Regions.SouthshoreUnlock,
-        _preplacedUnitSystem.GetUnit(FourCC("nmrm"), Regions.SouthshoreUnlock.Center)));
+      var questSouthshore = AddQuest(new QuestSouthshore(Regions.SouthshoreUnlock));
       StartingQuest = questSouthshore;
-      var questShadowfang = AddQuest(new QuestShadowfang(Regions.ShadowfangUnlock,
-        _preplacedUnitSystem.GetUnit(Constants.UNIT_NWLD_DIRE_WOLF_CREEP, new Point(7668.5f, 4352.2f))));
+      var questShadowfang = AddQuest(new QuestShadowfang(Regions.ShadowfangUnlock));
       AddQuest(new QuestDalaran(new[]
       {
         Regions.Dalaran
@@ -255,9 +258,8 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
     
     private void RegisterProtectors()
     {
-      _allLegendSetup.Dalaran.Dalaran.AddProtector(_preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9084, 4979)));
-      _allLegendSetup.Dalaran.Dalaran.AddProtector(_preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9008, 4092)));
-      _allLegendSetup.Dalaran.Dalaran.AddProtector(_preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9864, 4086)));
+      foreach (var unit in _dalaranProtectors) 
+        _allLegendSetup.Dalaran.Dalaran.AddProtector(unit);
     }
   }
 }
