@@ -14,7 +14,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.QuestBased
     public ObjectiveFactionQuestNotComplete(QuestData target, Faction faction)
     {
       _target = target;
-      Description =  $"{target.Faction.Name} has not completed the quest {target.Title}";
+      Description =  $"{faction.Name} has not completed the quest {target.Title}";
       faction.QuestProgressChanged += OnQuestProgressChanged;
       Progress = QuestProgress.Complete;
     }
