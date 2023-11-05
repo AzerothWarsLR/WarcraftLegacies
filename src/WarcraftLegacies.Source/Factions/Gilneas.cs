@@ -58,6 +58,8 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
 
     private void RegisterObjectLimits()
     {
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
+      
       //Structures
       ModObjectLimit(FourCC("h01R"), UNLIMITED); //Town Hall
       ModObjectLimit(FourCC("h023"), UNLIMITED); //Keep

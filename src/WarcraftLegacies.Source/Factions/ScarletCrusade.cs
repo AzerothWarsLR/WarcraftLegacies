@@ -37,6 +37,8 @@ Fortify your strongholds against the storm to come and make ready to unleash the
 
     private void RegisterObjectLimits()
     {
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
+      
       //Structures
       ModObjectLimit(Constants.UNIT_H0BM_TOWN_HALL_CRUSADE_T1, UNLIMITED);
       ModObjectLimit(Constants.UNIT_H0BN_KEEP_CRUSADE_T2, UNLIMITED);
