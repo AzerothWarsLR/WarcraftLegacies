@@ -22,9 +22,9 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestGilneasCity"/> class.
     /// </summary>
-    public QuestGilneasCity(PreplacedUnitSystem preplacedUnitSystem) : base("Liberation of Gilneas", "Gilneas has been under the curse of the Worgen. Eliminate all of them to free Gilneas of the curse.", @"ReplaceableTextures\CommandButtons\BTNGilneasCathedral.blp")
+    public QuestGilneasCity(unit gilneasDoor) : base("Liberation of Gilneas", "Gilneas has been under the curse of the Worgen. Eliminate all of them to free Gilneas of the curse.", @"ReplaceableTextures\CommandButtons\BTNGilneasCathedral.blp")
     {
-      _gilneasDoor = preplacedUnitSystem.GetUnit(Constants.UNIT_H02K_GREYMANE_S_GATE_CLOSED);
+      _gilneasDoor = gilneasDoor;
       AddObjective(new ObjectiveKillXUnit(Constants.UNIT_O02J_WORGEN_GILNEAS, 8));
       AddObjective(new ObjectiveKillXUnit(Constants.UNIT_O038_WORGEN_BLOOD_SHAMAN_WORGEN_HERO, 3));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_H02C_CASTLE_GILNEAS_T3, Constants.UNIT_H01R_TOWN_HALL_GILNEAS_T1));
@@ -64,8 +64,9 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
       if (completingFaction.Player == null)
         return;
       _gilneasDoor
-        .SetInvulnerable(false);
-      SetUnitOwner(_gilneasDoor, completingFaction.Player, true);
+        .SetInvulnerable(false)
+        .SetOwner(completingFaction.Player);
+
       RockSystem.Register(new RockGroup(Regions.GilneasUnlock5, FourCC("LTrc"), 1));
    
       var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated

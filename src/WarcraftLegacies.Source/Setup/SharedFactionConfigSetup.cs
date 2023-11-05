@@ -8,21 +8,30 @@ namespace WarcraftLegacies.Source.Setup
   public static class SharedFactionConfigSetup
   {
     /// <summary>
+    /// Adds to the <see cref="Faction"/> any globally shared object limits, like basic attack and defense researches.
+    /// </summary>
+    public static void AddSharedFactionConfig(Faction faction)
+    {
+      faction.ModObjectLimit(Constants.UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE, 8);
+      faction.ModObjectLimit(Constants.UPGRADE_RHAR_PYRITE_ARMOR_PLATING_UNIVERSAL_UPGRADE, 8);
+      faction.ModObjectLimit(Constants.UPGRADE_R00K_POWER_INFUSION_4_SHARED, Faction.UNLIMITED);
+      faction.ModObjectLimit(Constants.UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, Faction.UNLIMITED); //Actually Navigation
+      faction.ModObjectLimit(Constants.UPGRADE_R09X_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, Faction.UNLIMITED); //Actually Flight
+      faction.ModObjectLimit(Constants.UPGRADE_R00C_IMPROVED_CANNONS_ALL_TEAMS, Faction.UNLIMITED);
+      faction.ModObjectLimit(Constants.UPGRADE_R006_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, Faction.UNLIMITED);
+      faction.ModObjectLimit(Constants.UPGRADE_R07L_FORTIFIED_HULLS, Faction.UNLIMITED); //path of the old gods
+    }
+    
+    /// <summary>
     /// Sets up <see cref="SharedFactionConfigSetup"/>.
     /// </summary>
     public static void Setup()
     {
-      foreach (var faction in FactionManager.GetAllFactions())
-      {
-        faction.ModObjectLimit(Constants.UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE, 8);
-        faction.ModObjectLimit(Constants.UPGRADE_RHAR_PYRITE_ARMOR_PLATING_UNIVERSAL_UPGRADE, 8);
-        faction.ModObjectLimit(Constants.UPGRADE_R00K_POWER_INFUSION_4_SHARED, Faction.UNLIMITED);
-        faction.ModObjectLimit(Constants.UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, Faction.UNLIMITED); //Actually Navigation
-        faction.ModObjectLimit(Constants.UPGRADE_R09X_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, Faction.UNLIMITED); //Actually Flight
-        faction.ModObjectLimit(Constants.UPGRADE_R00C_IMPROVED_CANNONS_ALL_TEAMS, Faction.UNLIMITED);
-        faction.ModObjectLimit(Constants.UPGRADE_R006_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, Faction.UNLIMITED);
-        faction.ModObjectLimit(Constants.UPGRADE_R07L_FORTIFIED_HULLS, Faction.UNLIMITED); //path of the old gods
-      }
+      //Todo: this function should eventually be removed in favour of just using AddSharedFactionConfig for everyone,
+      //but that will require every Faction to be moved over to the new late-registration style currently exemplified
+      //by Dalaran and Gilneas.
+      foreach (var faction in FactionManager.GetAllFactions()) 
+        AddSharedFactionConfig(faction);
     }
   }
 }

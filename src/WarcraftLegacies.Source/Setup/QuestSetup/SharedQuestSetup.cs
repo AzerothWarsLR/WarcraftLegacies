@@ -6,7 +6,6 @@ using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
@@ -15,41 +14,43 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
   /// </summary>
   public static class SharedQuestSetup
   {
+    private static QuestData _tombOfSargerasQuest;
+    private static QuestData _ragnarosQuest;
+    private static QuestData _dragonsOfNightmareOne;
+    
+    /// <summary>
+    /// Adds to the <see cref="Faction"/> any <see cref="QuestData"/>s that should be globally available.
+    /// </summary>
+    public static void AddSharedQuests(Faction faction, ArtifactSetup artifactSetup)
+    {
+      faction.AddQuest(new QuestZinrokhAssembly(new List<Artifact>
+      {
+        artifactSetup.AzureFragment,
+        artifactSetup.BronzeFragment,
+        artifactSetup.EmeraldFragment,
+        artifactSetup.ObsidianFragment,
+        artifactSetup.RubyFragment
+      }));
+      faction.AddQuest(_tombOfSargerasQuest);
+      faction.AddQuest(_ragnarosQuest);
+      faction.AddQuest(_dragonsOfNightmareOne);
+    }
+    
     /// <summary>
     /// Sets up all shared <see cref="QuestData"/>s.
     /// </summary>
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
-      var tombOfSargerasQuest = CreateTombOfSargerasQuest(preplacedUnitSystem);
-      var ragnarosQuest = CreateRagnarosQuest(preplacedUnitSystem, allLegendSetup);
-      var dragonsOfNightmareOne = CreateDragonsOfNightmareQuestOne(preplacedUnitSystem);
-      foreach (var faction in FactionManager.GetAllFactions())
-      {
-        faction.AddQuest(tombOfSargerasQuest);
-        faction.AddQuest(new QuestZinrokhAssembly(new List<Artifact>
-        {
-          artifactSetup.AzureFragment,
-          artifactSetup.BronzeFragment,
-          artifactSetup.EmeraldFragment,
-          artifactSetup.ObsidianFragment,
-          artifactSetup.RubyFragment
-        }));
-        faction.AddQuest(ragnarosQuest);
-      }
-      AddDragonsOfNightmareQuests(dragonsOfNightmareOne);
+      //Todo: this function should eventually be removed in favour of just using AddSharedQuests for each Faction in
+      //their OnRegister methods, as exemplied by Dalaran and Gilneas currently.
+      _tombOfSargerasQuest = CreateTombOfSargerasQuest(preplacedUnitSystem);
+      _ragnarosQuest = CreateRagnarosQuest(preplacedUnitSystem, allLegendSetup);
+      _dragonsOfNightmareOne = CreateDragonsOfNightmareQuest(preplacedUnitSystem);
+      foreach (var faction in FactionManager.GetAllFactions()) 
+        AddSharedQuests(faction, artifactSetup);
     }
-    private static void AddDragonsOfNightmareQuests(QuestDragonsOfNightmare dragonsOfNightmareOne)
-    {
-      // These quests should only show up once they become relevant
-      TimerStart(CreateTimer(), 360, false, () =>
-      {
-        foreach (var faction in FactionManager.GetAllFactions())
-        {
-          faction.AddQuest(dragonsOfNightmareOne);
-        }
-      });
-    }
-    private static QuestDragonsOfNightmare CreateDragonsOfNightmareQuestOne(PreplacedUnitSystem preplacedUnitSystem)
+    
+    private static QuestDragonsOfNightmare CreateDragonsOfNightmareQuest(PreplacedUnitSystem preplacedUnitSystem)
     {
       var waygateOne = preplacedUnitSystem.GetUnit(Constants.UNIT_N07F_EMERALD_PORTAL_DRAGON_PORTALS, Regions.FeralasEmeraldPortal.Center).Show(false);
       var waygateTwo = preplacedUnitSystem.GetUnit(Constants.UNIT_N07F_EMERALD_PORTAL_DRAGON_PORTALS, Regions.AshenvaleEmeraldPortal.Center).Show(false);

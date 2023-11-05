@@ -1,4 +1,5 @@
-﻿using MacroTools.ControlPointSystem;
+﻿using System;
+using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
 
@@ -14,9 +15,18 @@ namespace MacroTools
     /// </summary>
     public static void Setup()
     {
-      NoNeutralPassiveVulnerableControlPoints();
+      GameTime.GameStarted += RunGameStartChecks;
       CheckUndefeatedResearchNames();
       CheckQuestResearchNames();
+    }
+
+    /// <summary>
+    /// Run checks that are only relevant once the game has finished initializing.
+    /// </summary>
+    private static void RunGameStartChecks(object? sender, EventArgs eventArgs)
+    {
+      NoNeutralPassiveVulnerableControlPoints();
+      GameTime.GameStarted -= RunGameStartChecks;
     }
 
     private static void NoNeutralPassiveVulnerableControlPoints()
