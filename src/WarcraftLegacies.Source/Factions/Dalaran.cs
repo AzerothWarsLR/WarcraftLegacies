@@ -152,8 +152,6 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
     
     private void RegisterQuests()
     {
-      SharedQuestSetup.AddSharedQuests(this, _artifactSetup);
-      
       QuestNewGuardian newGuardian = new(_artifactSetup.BookOfMedivh, _allLegendSetup.Dalaran.Jaina,
         _allLegendSetup.Dalaran.Dalaran);
       QuestAegwynn aegwynn = new(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Dalaran.Antonidas);

@@ -119,8 +119,6 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
     
     private void RegisterQuests()
     {
-      SharedQuestSetup.AddSharedQuests(this, _artifactSetup);
-      
       AddQuest(new QuestDuskhaven());
       AddQuest(new QuestStormglen());
       AddQuest(new QuestKeelHarbor());
