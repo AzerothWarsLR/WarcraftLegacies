@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -34,10 +35,24 @@ namespace MacroTools.Extensions
       TriggerRegisterEnterRegion(whichTrigger, region.Region, filter);
       return whichTrigger;
     }
+    
+    public static trigger RegisterEnterRegions(this trigger whichTrigger, IEnumerable<Rectangle> regions, boolexpr? filter = null)
+    {
+      foreach (var region in regions)
+        TriggerRegisterEnterRegion(whichTrigger, region.Region, filter);
+      return whichTrigger;
+    }
 
     public static trigger RegisterLeaveRegion(this trigger whichTrigger, Rectangle region, boolexpr? filter = null)
     {
       TriggerRegisterLeaveRegion(whichTrigger, region.Region, filter);
+      return whichTrigger;
+    }
+    
+    public static trigger RegisterLeaveRegions(this trigger whichTrigger, IEnumerable<Rectangle> regions, boolexpr? filter = null)
+    {
+      foreach (var region in regions)
+        TriggerRegisterLeaveRegion(whichTrigger, region.Region, filter);
       return whichTrigger;
     }
 
