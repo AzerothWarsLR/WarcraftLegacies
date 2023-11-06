@@ -9,6 +9,7 @@ using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Dalaran;
 using WarcraftLegacies.Source.Setup;
@@ -191,12 +192,9 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
 
     private void RegisterBookOfMedivhQuest()
     {
-      foreach (var faction in FactionManager.GetAllFactions())
-      {
-        faction.AddQuest(new QuestBookOfMedivh(_allLegendSetup.Dalaran.Dalaran,
-          new NamedRectangle("Dalaran", Regions.BookOfMedivhDalaran), _artifactSetup.BookOfMedivh,
-          faction == LegionSetup.Legion, faction == this));
-      }
+      SharedQuestRepository.RegisterQuestFactory(faction => new QuestBookOfMedivh(_allLegendSetup.Dalaran.Dalaran,
+        new NamedRectangle("Dalaran", Regions.BookOfMedivhDalaran), _artifactSetup.BookOfMedivh,
+        faction == LegionSetup.Legion, faction == this));
     }
 
     private void RegisterDialogue()

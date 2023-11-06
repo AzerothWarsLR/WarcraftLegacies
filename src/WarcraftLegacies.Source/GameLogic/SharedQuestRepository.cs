@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.GameLogic
   {
     private static readonly List<QuestData> SharedQuests = new();
 
-    private static readonly List<Func<QuestData>> SharedQuestFactories = new();
+    private static readonly List<Func<Faction, QuestData>> SharedQuestFactories = new();
 
     static SharedQuestRepository()
     {
@@ -34,11 +34,11 @@ namespace WarcraftLegacies.Source.GameLogic
     /// Registers a function that should create a new <see cref="QuestData"/>. All <see cref="Faction"/>s will be given
     /// a quest generated from this function.
     /// </summary>
-    public static void RegisterQuestFactory(Func<QuestData> questFactory)
+    public static void RegisterQuestFactory(Func<Faction, QuestData> questFactory)
     {
       SharedQuestFactories.Add(questFactory);
       foreach (var faction in FactionManager.GetAllFactions()) 
-        faction.AddQuest(questFactory());
+        faction.AddQuest(questFactory(faction));
     }
 
     private static void GiveFactionSharedQuests(object? sender, Faction faction)
@@ -47,7 +47,7 @@ namespace WarcraftLegacies.Source.GameLogic
         faction.AddQuest(quest);
 
       foreach (var questFactory in SharedQuestFactories) 
-        faction.AddQuest(questFactory());
+        faction.AddQuest(questFactory(faction));
     }
   }
 }
