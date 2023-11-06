@@ -70,7 +70,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "All villagers in Lordaeron are transformed into Zombies, several Zombie-spawning Plague Cauldrons spawn throughout Lordaeron, you gain control of three bases around Lordaeron, and Lordaeron's Control Points reset to level 0. You will also be given a choice to instantly move your armmy to one of three locations in Lordaeron";
+      "All villagers in Lordaeron are transformed into Zombies, several Zombie-spawning Plague Cauldrons spawn throughout Lordaeron, you gain control of three bases around Lordaeron, and Lordaeron's Control Points reset to level 0. You will also be given a choice to instantly move your military units from Northrend to one of three locations in Lordaeron";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
@@ -83,10 +83,10 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       ResetVictimControlPointLevel();
 
       new ScourgeInvasionDialogPresenter(
-        new Choice<Rectangle>(null, "No invasion"),
-        new Choice<Rectangle>(Regions.CaerDarrow, "Scholomance"),
-        new Choice<Rectangle>(Regions.StratholmeScourgeBase, "Stratholme"),
-        new Choice<Rectangle>(Regions.DeathknellUnlock, "Deathknell"))
+        new Choice<Rectangle?>(null, "No invasion"),
+        new Choice<Rectangle?>(Regions.CaerDarrow, "Scholomance"),
+        new Choice<Rectangle?>(Regions.StratholmeScourgeBase, "Stratholme"),
+        new Choice<Rectangle?>(Regions.DeathknellUnlock, "Deathknell"))
         .Run(Player(3));
 
       completingFaction.Player.RescueGroup(_deathknellUnits);
@@ -139,7 +139,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
                    position.X, position.Y, 0, parameter.SummonCount))
         {
           if (!unit.IsType(UNIT_TYPE_PEON))
-            unit.IssueOrder("attack", attackTarget);
+            unit.IssueOrder(OrderId("attack"), attackTarget);
         }
       }
     }
