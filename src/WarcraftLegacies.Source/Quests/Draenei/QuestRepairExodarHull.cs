@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       "After the disastrous voyage through the Twisting Nether, the Exodar crash-landed on Azuremyst Isle. Its hull must be repaired before its facilities can be reactivated.",
       @"ReplaceableTextures\CommandButtons\BTNDraeneiVaultOfRelics.blp")
     {
-      Required = true;
+      
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_O051_DIVINE_CITADEL_DRAENEI_T3, Constants.UNIT_O02P_CRYSTAL_HALL_DRAENEI_T1));
       AddObjective(new ObjectiveUnitReachesFullHealth(exodar.Unit));
       AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.AzuremystAmbient }, "on Azuremyst Isle"));

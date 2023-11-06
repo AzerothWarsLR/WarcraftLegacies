@@ -31,14 +31,14 @@ namespace MacroTools.QuestSystem
       QuestSetTitle(Quest, title);
       QuestSetIconPath(Quest, icon);
       QuestSetEnabled(Quest, false);
-      Required = false;
+      IsFactionQuest = true;
     }
 
     /// <summary>
     ///   If true, the quest appears on the left hand side of the F9 menu.
     ///   If false, it appears on the right hand side.
     /// </summary>
-    protected bool Required
+    protected bool IsFactionQuest
     {
       set => QuestSetRequired(Quest, value);
     }
@@ -87,11 +87,6 @@ namespace MacroTools.QuestSystem
     ///   The research given to the faction when it completes its quest.
     /// </summary>
     public int ResearchId { get; protected init; }
-    
-    /// <summary>
-    ///  The <see cref="Faction"/> that this quest belongs to.
-    /// </summary>
-    public Faction Faction { get; set; }
 
     private quest Quest { get; }
 
@@ -161,7 +156,6 @@ namespace MacroTools.QuestSystem
     {
       if (ResearchId != 0)
         faction.ModObjectLimit(ResearchId, 1);
-      Faction = faction;
       OnAdd(faction);
       foreach (var questItem in _objectives)
       {

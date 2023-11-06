@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     {
       AddObjective(new ObjectiveControlCapital(thunderBluff, false));
       ResearchId = Constants.UPGRADE_R052_QUEST_COMPLETED_DRIVE_THEM_BACK_SENTINELS;
-      Required = true;
+      
     }
     /// <inheritdoc/>
     protected override string RewardFlavour =>

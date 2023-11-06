@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      Required = true;
+      
     }
 
     /// <inheritdoc />

@@ -23,10 +23,10 @@ namespace WarcraftLegacies.Source.Quests.Druids
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0A0_ASCENDANT_S_RISE), 2));
       AddObjective(new ObjectiveExpire(480, Title));
       AddObjective(new ObjectiveSelfExists());
-      Required = true;
+      
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
 
-      Required = true;
+      
     }
 
     /// <inheritdoc />

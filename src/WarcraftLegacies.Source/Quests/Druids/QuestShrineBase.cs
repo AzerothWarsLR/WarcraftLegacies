@@ -24,10 +24,10 @@ namespace WarcraftLegacies.Source.Quests.Druids
       AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.ShrineBaseUnlock }, "in Hyjal"));
       AddObjective(new ObjectiveExpire(480, Title));
       AddObjective(new ObjectiveSelfExists());
-      Required = true;
+      
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
 
-      Required = true;
+      
     }
 
     /// <inheritdoc />

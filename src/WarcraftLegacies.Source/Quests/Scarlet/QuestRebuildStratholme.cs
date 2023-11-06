@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       "Before the Plague wiped out Stratholme, Saiden had established himself there as Lord Commander of the Silver Hand. This once-glorious city must be reclaimed.",
       @"ReplaceableTextures\CommandButtons\BTNStromgardeCastle.blp")
     {
-      Required = true;
+      
       AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in Stratholme", 5));
       AddObjective(new ObjectiveControlLevel(
         ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01M_STRATHOLME), 4));

@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R00P_QUEST_COMPLETED_THE_CITADEL;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
-      Required = true;
+      
     }
     
     /// <inheritdoc/>

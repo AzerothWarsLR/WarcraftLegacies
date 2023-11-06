@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       "The onslaught of the Scourge devastated Lordaeron beyond recognition, slaughtering its people and levelling its cities. Only the Scarlet Crusade stands strong, a faint light of hope in the darkness. If the cities and village of Lordaeron could be reclaimed and rebuilt, humanity could begin again.",
       "ReplaceableTextures/CommandButtons/BTNSalvationSpire.blp")
     {
-      Required = true;
+      
       AddObjective(new ObjectiveQuestComplete(stratholme));
       AddObjective(new ObjectiveQuestComplete(capital));
       AddObjective(new ObjectiveQuestComplete(hearthglen));

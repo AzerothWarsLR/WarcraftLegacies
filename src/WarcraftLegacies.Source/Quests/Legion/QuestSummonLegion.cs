@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       AddObjective(_objectiveCastSpell);
       ResearchId = Constants.UPGRADE_R04B_QUEST_COMPLETED_UNDER_THE_BURNING_SKY;
       Global = true;
-      Required = true;
+      
 
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))

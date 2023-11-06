@@ -99,8 +99,6 @@ Fortify your strongholds against the storm to come and make ready to unleash the
 
     private void RegisterQuests()
     {
-      SharedQuestSetup.AddSharedQuests(this, _artifactSetup);
-      
       var questStratholme = new QuestRebuildStratholme(Regions.StratholmeUnlock, _allLegendSetup.Scarlet.Saiden);
       AddQuest(questStratholme);
 

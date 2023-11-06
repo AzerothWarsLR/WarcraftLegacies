@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       AddObjective(new ObjectiveControlLegend(maiev, true));
       AddObjective(new ObjectiveControlCapital(vaultOfTheWardens, true));
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      Required = true;
+      
     }
 
     /// <inheritdoc/>

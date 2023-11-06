@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BK_LOST_CITY_OF_THE_TOL_VIR)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BD_ULDUM)));
       AddObjective(new ObjectiveSelfExists());
-      Required = true;
+      
       ResearchId = Constants.UPGRADE_VQ03_QUEST_COMPLETED_ULDUM_EXCAVATION;
       _rescueUnits = Regions.Warsong_Uldum_Unlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }

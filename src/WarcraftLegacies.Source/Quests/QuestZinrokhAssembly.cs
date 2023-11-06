@@ -24,6 +24,7 @@ namespace WarcraftLegacies.Source.Quests
       _fragments = fragments;
       foreach (var artifact in fragments) 
         AddObjective(new ObjectiveAcquireArtifact(artifact));
+      IsFactionQuest = false;
     }
 
     /// <inheritdoc/>

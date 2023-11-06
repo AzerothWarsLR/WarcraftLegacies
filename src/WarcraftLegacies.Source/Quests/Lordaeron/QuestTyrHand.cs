@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       ResearchId = Constants.UPGRADE_R023_QUEST_COMPLETED_THE_FORTIFIED_CITY;
-      Required = true;
+      
     }
 
     /// <inheritdoc />

@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       _rescueUnits1 = rescueRect1.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _rescueUnits2 = rescueRect2.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       _rescueRect = rescueRect1;
-      Required = true;
+      
     }
 
     //Todo: bad flavour

@@ -35,6 +35,7 @@ namespace WarcraftLegacies.Source.Quests
         new ObjectiveHeroWithLevelInRect(10, Regions.RagnarosSummon, "the Portal to the Firelands");
       AddObjective(_heroInRectObjective);
       PlayerUnitEvents.Register(UnitEvent.SpellEffect, OnCastSummonSpell, _ragnarosSummoningPedestal);
+      IsFactionQuest = false;
     }
 
     /// <inheritdoc/>

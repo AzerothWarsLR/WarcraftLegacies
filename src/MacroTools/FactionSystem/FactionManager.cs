@@ -99,7 +99,6 @@ namespace MacroTools.FactionSystem
       {
         FactionsByName[faction.Name.ToLower()] = faction;
         faction.OnRegister();
-        FactionRegistered?.Invoke(faction, faction);
         faction.NameChanged += OnFactionNameChange;
       }
       else

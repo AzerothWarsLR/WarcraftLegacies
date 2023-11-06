@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     {
       AddObjective(new ObjectiveTime(900));
       ResearchId = Constants.UPGRADE_MD05_QUEST_COMPLETED_THE_REBEL;
-      Required = true;
+      
     }
 
     /// <inheritdoc/>

@@ -57,7 +57,7 @@ namespace WarcraftLegacies.Source.Quests
           .AddItemSafe(bookOfMedivh.Item);
       }
       
-      Required = bypassLevelRequirement;
+      IsFactionQuest = bypassLevelRequirement;
     }
 
     /// <inheritdoc/>

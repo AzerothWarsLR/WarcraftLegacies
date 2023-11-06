@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       AddObjective(new ObjectiveFactionQuestComplete(ScourgeSetup.Scourge?.GetQuestByType<QuestPlague>(), ScourgeSetup.Scourge));
 
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      Required = true;
+      
       ResearchId = Constants.UPGRADE_R01L_QUEST_COMPLETED_A_CUNNING_PLAN;
     }
 

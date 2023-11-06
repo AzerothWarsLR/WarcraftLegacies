@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R06R_QUEST_COMPLETED_THE_SPIRITS_OF_ASHENVALE;
       _rescueUnits = ashenvaleRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      Required = true;
+      
     }
 
     /// <inheritdoc />
