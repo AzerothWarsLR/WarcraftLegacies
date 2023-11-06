@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       SharedQuestRepository.RegisterQuest(CreateTombOfSargerasQuest(preplacedUnitSystem));
       SharedQuestRepository.RegisterQuest(CreateRagnarosQuest(preplacedUnitSystem, allLegendSetup));
       SharedQuestRepository.RegisterQuest(CreateDragonsOfNightmareQuest(preplacedUnitSystem));
-      SharedQuestRepository.RegisterQuestFactory((_) => new QuestZinrokhAssembly(new List<Artifact>
+      SharedQuestRepository.RegisterQuestFactory(_ => new QuestZinrokhAssembly(new List<Artifact>
       {
         artifactSetup.AzureFragment,
         artifactSetup.BronzeFragment,
