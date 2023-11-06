@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
       "Upper Netherstorm is continously wracked by devastating magical storms. Lands such as these represent opportunity for our people, as starved for mana as they are.",
       @"ReplaceableTextures\CommandButtons\BTNArcaneCastle.blp")
     {
-      Required = true;
+      
       AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.UpperNetherstorm },
         "in upper Netherstorm"));
       AddObjective(

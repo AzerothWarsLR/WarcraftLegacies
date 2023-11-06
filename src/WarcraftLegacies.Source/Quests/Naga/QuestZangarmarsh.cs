@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R03B_QUEST_COMPLETED_THE_COILFANG_RESERVOIR;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      Required = true;
+      
     }
 
     /// <inheritdoc />

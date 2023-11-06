@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
         new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0A6_RATCHET)));
       AddObjective(_enterRatchetRegion = new ObjectiveAnyUnitInRect(Regions.Ratchet_Unlock_1, "Ratchet", true));
       AddObjective(new ObjectiveSelfExists());
-      Required = true;
+      
       ResearchId = Constants.UPGRADE_VQ01_QUEST_COMPLETED_RATCHET_PORT;
       _rescueUnits = Regions.Ratchet_Unlock_1.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures,
         filterUnit => filterUnit.GetTypeId() != FourCC("ngme"));

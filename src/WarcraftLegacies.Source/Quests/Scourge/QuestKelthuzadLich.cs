@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       AddObjective(new ObjectiveControlCapital(sunwell, false));
       AddObjective(new ObjectiveLegendInRect(kelthuzad, Regions.Sunwell, "The Sunwell"));
       ResearchId = Constants.UPGRADE_R065_QUEST_COMPLETED_INTO_THE_REALM_ETERNAL;
-      Required = true;
+      
     }
 
     /// <inheritdoc />

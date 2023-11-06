@@ -113,7 +113,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         BuffEffect = @"Abilities\Spells\Items\AIso\BIsvTarget.mdl",
       });
       
-      SpellSystem.Register(new MassDeathCoil(Constants.ABILITY_ZB06_MASS_DEATH_COIL_ARTHAS)
+      SpellSystem.Register(new MassDeathCoil(Constants.ABILITY_ZB06_MASS_DEATH_COIL_ARTHAS_TERON_GOREFIEND)
       {
         DummyAbilityId = Constants.ABILITY_ZB05_MASS_DEATH_COIL_ARTHAS_DUMMY,
         DummyAbilityOrderId = OrderId("deathcoil"),

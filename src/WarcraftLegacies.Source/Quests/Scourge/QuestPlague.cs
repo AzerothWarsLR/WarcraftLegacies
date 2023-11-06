@@ -59,7 +59,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       _scholomanceUnits = scholomance.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       _coastUnits = coast.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       Global = true;
-      Required = true;
+      
       ResearchId = Constants.UPGRADE_R009_QUEST_COMPLETED_PLAGUE_OF_UNDEATH;
 
     }

@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       _terenas = terenas;
       _crownOfLordaeron = crownOfLordaeron;
       _arthas = arthas;
-      Required = true;
+      
     }
 
     /// <inheritdoc/>

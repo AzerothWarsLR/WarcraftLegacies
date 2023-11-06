@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N014_DUN_MOROGH)));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
-      Required = true;
+      
     }
 
     /// <inheritdoc/>

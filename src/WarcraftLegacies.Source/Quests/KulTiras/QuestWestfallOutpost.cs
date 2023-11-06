@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     public QuestWestfallOutpost(Rectangle questRect) : base("Continental Outpost",
       "Stormwind faces the threat of annihilation at the hands of forces from beyond the Dark Portal, and they have called in our assistance. If we are to aid them, we must first establish a foothold on Stranglethorn's coast.", @"ReplaceableTextures\CommandButtons\BTNKultirasGryphonAviary.blp")
     {
-      Required = true;
+      
       AddObjective(new ObjectiveBuildInRect(questRect, "in Stranglethorn or Westfall", Constants.UNIT_H06R_GARRISON_KUL_TIRAS_BARRACKS, 2));
       AddObjective(new ObjectiveBuildInRect(questRect, "in Stranglethorn or Westfall", Constants.UNIT_H07Q_SCHOOL_OF_THE_TIDES_KUL_TIRAS_MAGIC));
       AddObjective(new ObjectiveBuildInRect(questRect, "in Stranglethorn or Westfall", Constants.UNIT_H062_TOWN_HALL_KUL_TIRAS_T1));

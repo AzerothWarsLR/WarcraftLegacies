@@ -32,7 +32,7 @@ namespace MacroTools.Cheats
         (current, command) => $"{current} -{command.CommandText}: {command.Description}\n");
       QuestSetDescription(newQuest, description);
       QuestSetDiscovered(newQuest, true);
-      QuestSetRequired(newQuest, true);
+      QuestSetRequired(newQuest, false);
       QuestSetIconPath(newQuest, @"ReplaceableTextures\CommandButtons\BTNStaffOfTeleportation.blp");
       QuestSetCompleted(newQuest, false);
     }

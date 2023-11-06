@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       ResearchId = Constants.UPGRADE_R02S_QUEST_COMPLETED_CLEAR_THE_OUTSKIRTS;
-      Required = true;
+      
     }
 
     //Todo: bad flavour

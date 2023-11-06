@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       @"ReplaceableTextures\CommandButtons\BTNArcaneEnergy.blp")
     {
       _dimensionalGenerator = dimensionalGenerator.Unit;
-      Required = true;
+      
       AddObjective(new ObjectiveQuestComplete(prerequisite));
       AddObjective(new ObjectiveTime(1200));
       AddObjective(new ObjectiveBuildInRect(questRect, "inside the Exodar", Constants.UNIT_O056_ARCANE_WELL_DRAENEI_FARM, 10));

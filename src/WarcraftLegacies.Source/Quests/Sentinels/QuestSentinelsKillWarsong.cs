@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     {
       AddObjective(new ObjectiveCapitalDead(orgrimmar));
       ResearchId = Constants.UPGRADE_R007_QUEST_COMPLETED_GREEN_SKINNED_BRUTES_SENTINELS;
-      Required = true;
+      
     }
 
     /// <inheritdoc/>

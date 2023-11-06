@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = Regions.GilneasUnlock2.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      Required = true;
+      
     }
 
     /// <inheritdoc/>

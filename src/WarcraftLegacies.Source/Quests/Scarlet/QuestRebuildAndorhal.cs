@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       "Once the breadbasket of Lordaeron, Andorhal is now nothing but ashes. Were it to be rebuilt, its proximity to Aerie Peak would allow the Scarlet Crusade to breed powerful Eagles and Gryphons.",
       @"ReplaceableTextures\CommandButtons\BTNAlteracGryphonAviary.blp")
     {
-      Required = true;
+      
       AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in Andorhal", 5));
       AddObjective(new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01H_ANDORHAL), 2));
       ResearchId = Constants.UPGRADE_R03P_QUEST_COMPLETED_ANDORHAL; 

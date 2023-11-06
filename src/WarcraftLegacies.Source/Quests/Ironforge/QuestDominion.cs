@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       AddObjective(new ObjectiveSelfExists());
       ResearchId = FourCC("R043");
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
-      Required = true;
+      
     }
 
     /// <inheritdoc/>

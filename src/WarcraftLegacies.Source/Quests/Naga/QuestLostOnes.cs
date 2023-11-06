@@ -41,7 +41,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R05H_QUEST_COMPLETED_THE_LOST_ONES;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
-      Required = true;
+      
     }
 
     /// <summary>

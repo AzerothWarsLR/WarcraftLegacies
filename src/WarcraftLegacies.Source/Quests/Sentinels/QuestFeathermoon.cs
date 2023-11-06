@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R06M_QUEST_COMPLETED_SHORES_OF_FEATHERMOON;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
-      Required = true;
+      
     }
 
     /// <inheritdoc />

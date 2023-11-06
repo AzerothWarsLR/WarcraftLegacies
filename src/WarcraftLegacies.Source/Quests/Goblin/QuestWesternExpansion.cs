@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       foreach (var capital in capitalTargets)
         AddObjective(new ObjectiveCapitalDead(capital));
       ResearchId = Constants.UPGRADE_R07Y_QUEST_COMPLETED_WESTERN_EXPANSION;
-      Required = true;
+      
     }
   }
 }

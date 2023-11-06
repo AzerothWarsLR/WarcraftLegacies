@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       AddObjective(new ObjectiveControlLegend(sylvanas, true));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      Required = true;
+      
     }
 
     /// <inheritdoc />

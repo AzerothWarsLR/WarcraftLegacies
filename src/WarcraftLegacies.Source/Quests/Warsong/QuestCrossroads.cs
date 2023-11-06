@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01T_NORTHERN_BARRENS)));
       AddObjective(new ObjectiveExpire(480, Title));
       AddObjective(new ObjectiveSelfExists());
-      Required = true;
+      
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 

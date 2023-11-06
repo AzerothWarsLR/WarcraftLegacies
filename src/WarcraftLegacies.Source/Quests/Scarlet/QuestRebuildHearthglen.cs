@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       "Though the town of Hearthglen fell to the Scourge just as easily as any other, the Silver Hand Monastery there makes it a key strategic objective for the Scarlet Crusade.",
       @"ReplaceableTextures\CommandButtons\BTNAlteracWizardTower.blp")
     {
-      Required = true;
+      
       AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in Hearthglen", 3));
       AddObjective(new ObjectiveControlCapital(monastery, false));
       AddObjective(new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N044_HEARTHGLEN), 2));

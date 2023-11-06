@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Gilneas;
 using WarcraftLegacies.Source.Setup;
@@ -119,8 +120,6 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
     
     private void RegisterQuests()
     {
-      SharedQuestSetup.AddSharedQuests(this, _artifactSetup);
-      
       AddQuest(new QuestDuskhaven());
       AddQuest(new QuestStormglen());
       AddQuest(new QuestKeelHarbor());
@@ -132,12 +131,9 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
     
     private void RegisterBookOfMedivhQuest()
     {
-      foreach (var faction in FactionManager.GetAllFactions())
-      {
-        faction.AddQuest(new QuestBookOfMedivh(_allLegendSetup.Gilneas.GilneasCastle,
-          new NamedRectangle("Gilneas", Regions.BookOfMedivhGilneas), _artifactSetup.BookOfMedivh,
-          faction == LegionSetup.Legion, faction == this));
-      }
+      SharedQuestRepository.RegisterQuestFactory(faction => new QuestBookOfMedivh(_allLegendSetup.Gilneas.GilneasCastle,
+        new NamedRectangle("Gilneas", Regions.BookOfMedivhGilneas), _artifactSetup.BookOfMedivh,
+        faction == LegionSetup.Legion, faction == this));
     }
   }
 }
