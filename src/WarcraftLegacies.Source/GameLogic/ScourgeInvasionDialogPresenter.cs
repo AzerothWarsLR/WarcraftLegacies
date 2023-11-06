@@ -24,7 +24,8 @@ namespace WarcraftLegacies.Source.GameLogic
                  .Where(x => x.OwningPlayer() == pickingPlayer))
       {
         if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) || IsUnitType(unit, UNIT_TYPE_ANCIENT) ||
-            IsUnitType(unit, UNIT_TYPE_PEON)) 
+            IsUnitType(unit, UNIT_TYPE_PEON) ||
+            GetResourceAmount(unit) > 0 || OrderId2String(GetUnitCurrentOrder(unit)) == "harvest") 
           continue;
         
         if (invasionLocation != null)
