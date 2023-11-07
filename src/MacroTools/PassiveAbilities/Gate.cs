@@ -1,5 +1,4 @@
-﻿using System;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
 using static War3Api.Common;
 
