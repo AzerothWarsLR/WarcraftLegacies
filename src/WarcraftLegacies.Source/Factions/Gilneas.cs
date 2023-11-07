@@ -51,7 +51,7 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
     }
     
     /// <inheritdoc />
-    public override void OnRegister()
+    public override void OnRegistered()
     {
       RegisterObjectLimits();
       RegisterQuests();

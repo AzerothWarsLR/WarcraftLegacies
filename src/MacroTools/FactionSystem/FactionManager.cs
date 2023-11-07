@@ -98,15 +98,14 @@ namespace MacroTools.FactionSystem
       if (!FactionsByName.ContainsKey(faction.Name.ToLower()))
       {
         FactionsByName[faction.Name.ToLower()] = faction;
-        faction.OnRegister();
+        FactionRegistered?.Invoke(faction, faction);
+        faction.OnRegistered();
         faction.NameChanged += OnFactionNameChange;
       }
       else
       {
         throw new Exception($"Attempted to register faction that already exists with name {faction}.");
       }
-
-      FactionRegistered?.Invoke(faction, faction);
     }
 
     /// <summary>
