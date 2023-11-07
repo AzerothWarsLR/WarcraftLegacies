@@ -9,7 +9,7 @@ namespace MacroTools.UserInterface
   /// <summary>Allows a player to choose between one of two factions at the start of the game.</summary>
   public abstract class ChoiceDialogPresenter<T>
   {
-    protected readonly dialog? PickDialog = DialogCreate();
+    private readonly dialog? _pickDialog = DialogCreate();
     protected readonly List<Choice<T>> Choices;
     protected bool HasChoiceBeenPicked = false;
     
@@ -22,7 +22,7 @@ namespace MacroTools.UserInterface
     {
       foreach (var choice in choices)
       {
-        var factionButton = DialogAddButton(PickDialog, choice.Name, 0);
+        var factionButton = DialogAddButton(_pickDialog, choice.Name, 0);
         _choicePicksByButton[factionButton] = choice;
       }
 
@@ -33,13 +33,13 @@ namespace MacroTools.UserInterface
     /// <summary>Fired when a choice has been made.</summary>
     protected abstract void OnChoicePicked(player whichPlayer, Choice<T> choice);
 
-    /// <summary>Invoked when a player fails to make a choice in time.</summary>
-    protected abstract void OnChoiceExpired(player whichPlayer, Choice<T> defaultChoice);
+    /// <summary>The default choice for this presenter, if the player picks nothing by the time it expires.</summary>
+    protected abstract Choice<T> GetDefaultChoice(player whichPlayer);
 
     /// <summary>Displays the faction choice to a player.</summary>
     public void Run(player whichPlayer)
     {
-      DialogSetMessage(PickDialog, _dialogText);
+      DialogSetMessage(_pickDialog, _dialogText);
 
       var timer = CreateTimer();
       TimerStart(timer, 4, false, () =>
@@ -51,7 +51,7 @@ namespace MacroTools.UserInterface
       var concludeTimer = CreateTimer();
       TimerStart(concludeTimer, 24, false, () =>
       {
-        OnChoiceExpired(whichPlayer, Choices.First());
+        ChoiceExpired(whichPlayer);
         DestroyTimer(GetExpiredTimer());
       });
     }
@@ -59,7 +59,7 @@ namespace MacroTools.UserInterface
     private void StartChoicePick(player whichPlayer)
     {
       if (GetLocalPlayer() == whichPlayer)
-        DialogDisplay(GetLocalPlayer(), PickDialog, true);
+        DialogDisplay(GetLocalPlayer(), _pickDialog, true);
 
       foreach (var (button, choice) in _choicePicksByButton)
       {
@@ -79,11 +79,17 @@ namespace MacroTools.UserInterface
         _triggers.Add(pickTrigger);
       }
     }
-
-    protected void Dispose()
+    
+    private void ChoiceExpired(player whichPlayer)
     {
-      DialogClear(PickDialog);
-      DialogDestroy(PickDialog);
+      if (GetLocalPlayer() == whichPlayer)
+        DialogDisplay(GetLocalPlayer(), _pickDialog, false);
+
+      if (!HasChoiceBeenPicked)
+        OnChoicePicked(whichPlayer, GetDefaultChoice(whichPlayer));
+      
+      DialogClear(_pickDialog);
+      DialogDestroy(_pickDialog);
       
       foreach (var trigger in _triggers)
         trigger.Destroy();
