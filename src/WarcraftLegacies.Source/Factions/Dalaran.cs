@@ -14,7 +14,6 @@ using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Dalaran;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
-using WarcraftLegacies.Source.Setup.QuestSetup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -60,7 +59,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
     }
 
     /// <inheritdoc />
-    public override void OnRegister()
+    public override void OnRegistered()
     {
       RegisterObjectLimits();
       RegisterQuests();
