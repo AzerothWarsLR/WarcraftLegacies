@@ -336,13 +336,13 @@ namespace MacroTools.Extensions
         $"\n|cffd45e19LEGENDARY FOE SUMMONED - {legendaryHero.Name}\n|r{message}");
       StartSound(SoundLibrary.Warning);
     }
-    
-    /// <summary>Removes player's resources and gives their units to Neutral Victim.</summary>
-    public static void RemoveResourcesAndUnits(this player whichPlayer)
+
+    /// <summary>
+    /// Safely removes all of the player's units.
+    /// <para>Units that cannot be safely removed are instead turned hostile.</para>
+    /// </summary>
+    public static player RemoveAllUnits(this player whichPlayer)
     {
-      whichPlayer.SetGold(0);
-      whichPlayer.SetLumber(0);
-      
       foreach (var unit in CreateGroup()
                  .EnumUnitsOfPlayer(whichPlayer)
                  .EmptyToList())
@@ -352,6 +352,16 @@ namespace MacroTools.Extensions
         else
           unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       }
+
+      return whichPlayer;
+    }
+    
+    /// <summary>Removes all of the player's resources.</summary>
+    public static player RemoveAllResources(this player whichPlayer)
+    {
+      whichPlayer.SetGold(0);
+      whichPlayer.SetLumber(0);
+      return whichPlayer;
     }
   }
 }

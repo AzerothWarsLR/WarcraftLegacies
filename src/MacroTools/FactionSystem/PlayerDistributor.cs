@@ -30,7 +30,10 @@ namespace MacroTools.FactionSystem
       if (eligiblePlayers.Any() && GameTime.GetGameTime() > GameTime.TurnDuration)
         DistributePlayer(player, eligiblePlayers);
       else
-        player.RemoveResourcesAndUnits();
+      {
+        player.RemoveAllResources();
+        player.RemoveAllUnits();
+      }
     }
 
     private static void DistributePlayer(player player, List<player> eligiblePlayers)
