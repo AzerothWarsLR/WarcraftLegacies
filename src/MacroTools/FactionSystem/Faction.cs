@@ -275,6 +275,7 @@ namespace MacroTools.FactionSystem
         RemovePlayer(Player, PLAYER_GAME_RESULT_DEFEAT);
         SetPlayerState(Player, PLAYER_STATE_OBSERVER, 1);
         PlayerDistributor.DistributePlayer(Player);
+        RemoveGoldMines();
       }
 
       ScoreStatus = ScoreStatus.Defeated;

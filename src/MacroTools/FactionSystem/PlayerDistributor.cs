@@ -31,8 +31,6 @@ namespace MacroTools.FactionSystem
         DistributePlayer(player, eligiblePlayers);
       else
         player.RemoveResourcesAndUnits();
-
-      player.GetFaction()?.RemoveGoldMines();
     }
 
     private static void DistributePlayer(player player, List<player> eligiblePlayers)
