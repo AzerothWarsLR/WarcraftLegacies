@@ -32,7 +32,7 @@ Fortify your strongholds against the storm to come and make ready to unleash the
     }
 
     /// <inheritdoc />
-    public override void OnRegister()
+    public override void OnRegistered()
     {
       RegisterObjectLimits();
       RegisterQuests();

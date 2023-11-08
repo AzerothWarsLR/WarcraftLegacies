@@ -27,9 +27,9 @@ namespace MacroTools.Buffs
         }
     }
 
-    public AddSpellOnCastBuff(unit caster, unit target, int bindApplicatorID, int bindBuffID) : base(caster, target)
+    public AddSpellOnCastBuff(unit caster, unit target, int bindApplicatorId, int bindBuffId) : base(caster, target)
     {
-      Bind(bindApplicatorID, bindBuffID);
+      Bind(bindApplicatorId, bindBuffId);
     }
   }
 }

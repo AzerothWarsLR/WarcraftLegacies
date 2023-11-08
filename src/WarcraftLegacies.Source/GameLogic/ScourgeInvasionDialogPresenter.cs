@@ -39,15 +39,7 @@ namespace WarcraftLegacies.Source.GameLogic
         SetCameraPosition(invasionLocation.Center.X, invasionLocation.Center.Y);
     }
 
-    protected override void OnChoiceExpired(player pickingPlayer, Choice<Rectangle?> choice)
-    {
-      if (GetLocalPlayer() == pickingPlayer)
-        DialogDisplay(GetLocalPlayer(), PickDialog, false);
-
-      if (!HasChoiceBeenPicked)
-        OnChoicePicked(pickingPlayer, choice);
-
-      Dispose();
-    }
+    /// <inheritdoc />
+    protected override Choice<Rectangle?> GetDefaultChoice(player whichPlayer) => Choices.First();
   }
 }

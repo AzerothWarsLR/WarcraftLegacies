@@ -14,8 +14,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var vanish = new AddAbilityOnCast(Constants.ABILITY_ST9J_VANISH_TESS)
       {
         Duration = new LeveledAbilityField<float> { Base = 5, PerLevel = 5 },
-        BuffApplicatorID = Constants.ABILITY_STB0_VANISH_BUFF_TESS,
-        BuffID = Constants.BUFF_B01O_VANISH,
+        BuffApplicatorId = Constants.ABILITY_STB0_VANISH_BUFF_TESS,
+        BuffId = Constants.BUFF_B01O_VANISH,
         AbilitiesToAdd = new[]
         {
           Constants.ABILITY_STJW_PERMANENT_INVISIBILITY_TESS,

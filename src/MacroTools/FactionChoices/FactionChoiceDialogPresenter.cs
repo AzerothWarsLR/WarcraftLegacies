@@ -17,17 +17,6 @@ namespace MacroTools.FactionChoices
     {
     }
 
-    protected override void OnChoiceExpired(player pickingPlayer, Choice<Faction> choice)
-    {
-      if (GetLocalPlayer() == pickingPlayer)
-        DialogDisplay(GetLocalPlayer(), PickDialog, false);
-
-      if (pickingPlayer.GetFaction() == null && !HasChoiceBeenPicked)
-        OnChoicePicked(pickingPlayer, choice);
-
-      Dispose();
-    }
-
     protected override void OnChoicePicked(player pickingPlayer, Choice<Faction> choice)
     {
       var pickedFaction = choice.Data;
@@ -52,6 +41,9 @@ namespace MacroTools.FactionChoices
       foreach (var unpickedFaction in Choices.Where(x => x.Data != choice.Data))
         RemoveFaction(unpickedFaction.Data);
     }
+
+    /// <inheritdoc />
+    protected override Choice<Faction> GetDefaultChoice(player whichPlayer) => Choices.First();
 
     private static void RemoveFaction(Faction faction)
     {

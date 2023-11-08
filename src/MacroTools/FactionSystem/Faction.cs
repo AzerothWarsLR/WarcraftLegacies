@@ -243,10 +243,10 @@ namespace MacroTools.FactionSystem
     public event EventHandler<Faction>? StatusChanged;
 
     /// <summary>
-    /// Invoked when the <see cref="Faction"/> is registered to a <see cref="FactionManager"/>.
+    /// Invoked after the <see cref="Faction"/> is registered to a <see cref="FactionManager"/>.
     /// <para>Override this for faction-specific initialization.</para>
     /// </summary>
-    public virtual void OnRegister()
+    public virtual void OnRegistered()
     {
     }
 
@@ -275,6 +275,7 @@ namespace MacroTools.FactionSystem
         RemovePlayer(Player, PLAYER_GAME_RESULT_DEFEAT);
         SetPlayerState(Player, PLAYER_STATE_OBSERVER, 1);
         PlayerDistributor.DistributePlayer(Player);
+        RemoveGoldMines();
       }
 
       ScoreStatus = ScoreStatus.Defeated;
