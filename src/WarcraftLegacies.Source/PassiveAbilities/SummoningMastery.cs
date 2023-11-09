@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
