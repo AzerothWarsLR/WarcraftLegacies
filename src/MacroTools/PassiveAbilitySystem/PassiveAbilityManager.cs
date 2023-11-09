@@ -91,6 +91,9 @@ namespace MacroTools.PassiveAbilitySystem
           case IEffectOnTakesDamage effectOnTakesDamage:
             PlayerUnitEvents.Register(UnitTypeEvent.IsDamaged, effectOnTakesDamage.OnTakesDamage, unitTypeId);
             break;
+          case IEffectOnSummonedUnit effectOnSummonedUnit:
+            PlayerUnitEvents.Register(UnitTypeEvent.Summons, effectOnSummonedUnit.OnSummonedUnit, unitTypeId);
+            break;
         }
       }
     }
