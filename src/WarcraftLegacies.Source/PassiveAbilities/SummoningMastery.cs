@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
@@ -29,7 +30,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities
       var abilityLevel = GetUnitAbilityLevel(GetTriggerUnit(), _abilityTypeId);
       GetSummonedUnit()
         .MultiplyBaseDamage(1 + AttackDamagePercentageBonus.Base + AttackDamagePercentageBonus.PerLevel * abilityLevel,0)
-        .MultiplyBaseDamage(1 + HitPointPercentageBonus.Base + HitPointPercentageBonus.PerLevel * abilityLevel, 0);
+        .MultiplyMaxHitpoints(1 + HitPointPercentageBonus.Base + HitPointPercentageBonus.PerLevel * abilityLevel);
     }
   }
 }
