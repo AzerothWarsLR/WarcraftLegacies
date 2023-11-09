@@ -5,6 +5,7 @@ using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using System.Collections.Generic;
 using WarcraftLegacies.Source.Mechanics.Scourge;
+using WarcraftLegacies.Source.PassiveAbilities;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.Reap;
 using static War3Api.Common;
@@ -164,6 +165,26 @@ namespace WarcraftLegacies.Source.Setup.Spells
           Constants.ABILITY_A10S_SUMMON_RAMSTEIN_RED_BARON_RIVENDARE,
           Constants.ABILITY_A09Y_DEATH_S_ADVANCE_SCOURGE_RIVENDARE,
           Constants.ABILITY_A07R_DARK_GRIP_TEAL_KARGATH,
+        }
+      });
+
+      var kelthuzadIds = new[]
+      {
+        Constants.UNIT_U00M_MASTER_OF_THE_CULT_OF_THE_DAMNED_SCOURGE_GHOST,
+        Constants.UNIT_U001_MASTER_OF_THE_CULT_OF_THE_DAMNED_SCOURGE_NECROMANCER,
+        Constants.UNIT_UKTL_ARCHLICH_OF_THE_SCOURGE_SCOURGE_LICH
+      };
+      PassiveAbilityManager.Register(new SummoningMastery(kelthuzadIds, Constants.ABILITY_AUAN_ANIMATE_DEAD_KEL_THUZAD)
+      {
+        HitPointPercentageBonus = new LeveledAbilityField<float>
+        {
+          Base = -0.3f,
+          PerLevel = 0.3f
+        },
+        AttackDamagePercentageBonus = new LeveledAbilityField<float>
+        {
+          Base = -0.3f,
+          PerLevel = 0.3f
         }
       });
     }

@@ -35,7 +35,9 @@ namespace WarcraftLegacies.Source.Quests.Legion
     {
       var archimondeUnit = _archimonde.Unit;
       var druidsPlayer = DruidsSetup.Druids?.Player;
-      druidsPlayer?.RemoveResourcesAndUnits();
+      druidsPlayer?
+        .RemoveAllResources()
+        .RemoveAllUnits();
 
       archimondeUnit?.SetName("Devourer of Worlds");
       AddSpecialEffectTarget(@"Abilities\Weapons\GreenDragonMissile\GreenDragonMissile.mdl", archimondeUnit,
