@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities
     /// <inheritdoc />
     public void OnSummonedUnit()
     {
-      var abilityLevel = GetUnitAbilityLevel(GetTriggerUnit(), _abilityTypeId);
+      var abilityLevel = GetUnitAbilityLevel(GetSummoningUnit(), _abilityTypeId);
       GetSummonedUnit()
         .MultiplyBaseDamage(1 + AttackDamagePercentageBonus.Base + AttackDamagePercentageBonus.PerLevel * abilityLevel,0)
         .MultiplyMaxHitpoints(1 + HitPointPercentageBonus.Base + HitPointPercentageBonus.PerLevel * abilityLevel);
