@@ -8,17 +8,17 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNIceShardPassive.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\PASFrostBite.blp"
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Red - Lich King)"
+      "Value": "(Lich King)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Frost Bite"
+      "Value": "Frostbite"
     },
     {
       "Id": 1918988897,
@@ -46,15 +46,15 @@
     },
     {
       "Level": 1,
-      "Id": 829453409,
+      "Id": 828536161,
       "Type": 3,
-      "Value": "Frost Bite"
+      "Value": "The Lich King\u0027s attacks apply Frostbite, which deals \u003CA093,DataA1\u003E damage per second, and slows the target enemy\u0027s movement by \u003CA093,DataB1,%\u003E% and attack by \u003CA093,DataC1,%\u003E% for \u003CA093,Dur1\u003E (0.3) seconds."
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": 829453409,
       "Type": 3,
-      "Value": "The Lich King\u0027s attacks stop a unit from attacking or moving for 3(0.3) seconds dealing 30 damage per second while frozen."
+      "Value": "Frostbite"
     }
   ]
 }
