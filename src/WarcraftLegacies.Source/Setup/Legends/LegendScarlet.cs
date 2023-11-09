@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Saiden = new LegendaryHero("Saiden Dethrotan")
       {
         UnitType = Constants.UNIT_H08G_GRAND_CRUSADER_SCARLET,
-        StartingXp = 4000
+        StartingXp = 5400
       };
 
       Renault = new LegendaryHero("Renault Mograine")
