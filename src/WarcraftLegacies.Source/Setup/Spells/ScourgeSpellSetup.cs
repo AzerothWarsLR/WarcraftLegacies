@@ -147,10 +147,16 @@ namespace WarcraftLegacies.Source.Setup.Spells
         UpgradeCondition = unit => GetUnitTypeId(unit) == Constants.UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE
       });
 
-      PassiveAbilityManager.Register(new NoTargetSpellOnCast(Constants.UNIT_U00A_SCOURGE_COMMANDER_SCOURGE, Constants.ABILITY_ST52_ARMY_OF_THE_DEAD_SCOURGE)
+      PassiveAbilityManager.Register(new SummonUnitOnCast(Constants.UNIT_U00A_SCOURGE_COMMANDER_SCOURGE, Constants.ABILITY_ST52_ARMY_OF_THE_DEAD_SCOURGE)
       {
-        DummyAbilityId = Constants.ABILITY_ST4H_ARMY_OF_THE_DEAD_RIVENDARE_DUMMY,
-        DummyOrderId = OrderId("waterelemental"),
+        Duration = 45,
+        SummonUnitTypeId = Constants.UNIT_NDR2_DARK_MINION_RED_DEATH_KNIGHT,
+        SummonCount = new LeveledAbilityField<int>
+        {
+          Base = 0,
+          PerLevel = 1
+        },
+        SpecialEffectPath = @"Abilities\Spells\Undead\RaiseSkeletonWarrior\RaiseSkeleton.mdl",
         ProcChance = 1.0f,
         AbilityWhitelist = new List<int>
         {
