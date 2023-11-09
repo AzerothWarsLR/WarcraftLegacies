@@ -62,14 +62,17 @@ namespace MacroTools.PassiveAbilities
       
       var casterPosition = triggerUnit.GetPosition();
       var summonCount = SummonCount.Base + SummonCount.PerLevel * abilityLevel;
-      
+
       for (var i = 0; i < summonCount; i++)
-        CreateUnit(triggerUnit.OwningPlayer(), SummonUnitTypeId, casterPosition.X, casterPosition.Y, triggerUnit.GetFacing())
+      {
+        var summonedUnit = CreateUnit(triggerUnit.OwningPlayer(), SummonUnitTypeId, casterPosition.X, casterPosition.Y, triggerUnit.GetFacing())
           .AddType(UNIT_TYPE_SUMMONED)
           .SetTimedLife(Duration);
-      
-      AddSpecialEffect(SpecialEffectPath, casterPosition.X, casterPosition.Y)
-        .SetLifespan(1);
+        var summonedUnitX = GetUnitX(summonedUnit);
+        var summonedUnitY = GetUnitY(summonedUnit);
+        AddSpecialEffect(SpecialEffectPath, summonedUnitX, summonedUnitY)
+          .SetLifespan(1);
+      }
     }
   }
 }
