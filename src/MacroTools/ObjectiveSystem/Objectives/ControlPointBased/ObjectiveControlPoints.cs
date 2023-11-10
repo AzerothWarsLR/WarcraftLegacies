@@ -74,10 +74,6 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 
     private void OnFactionTeamJoin(object? sender, PlayerChangeTeamEventArgs args)
     {
-      var faction = args.Player.GetFaction();
-      if (faction != null && !EligibleFactions.Contains(faction))
-        AddEligibleFaction(faction);
-
       foreach (var controlPoint in _controlPoints)
       {
         if (controlPoint.Unit.OwningPlayer() == args.Player)
@@ -89,13 +85,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 
     private void OnFactionTeamLeave(object? sender, PlayerChangeTeamEventArgs args)
     {
-      var faction = args.Player.GetFaction();
-      if (faction != null && EligibleFactions.Contains(faction))
-        EligibleFactions.Remove(faction);
-
-      foreach (var cp in _controlPoints)
+      foreach (var controlPoint in _controlPoints)
       {
-        if (cp.Unit.OwningPlayer() == args.Player)
+        if (controlPoint.Unit.OwningPlayer() == args.Player)
           ControlPointCount--;
       }
 
