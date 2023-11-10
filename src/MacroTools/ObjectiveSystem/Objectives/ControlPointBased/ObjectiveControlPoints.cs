@@ -12,11 +12,11 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
   /// </summary>
   public sealed class ObjectiveControlPoints : Objective
   {
-
     private readonly List<ControlPoint> _controlPoints;
     private readonly string _rectName;
 
     private int _controlPointCount;
+
     private int ControlPointCount
     {
       get => _controlPointCount;
@@ -34,16 +34,15 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
     /// <param name="rectName">The name of the rectangle shown in the description of the quest.</param>
     public ObjectiveControlPoints(List<ControlPoint> controlPoints, string rectName)
     {
-
       _controlPoints = controlPoints;
       _rectName = rectName;
       ControlPointCount = 0;
-      foreach (var cp in controlPoints)
+      foreach (var controlPoint in controlPoints)
       {
-        cp.ChangedOwner += OnTargetChangeOwner;
-        cp.Owner.GetPlayerData().PlayerJoinedTeam += OnFactionTeamJoin;
-        cp.Owner.GetPlayerData().PlayerLeftTeam += OnFactionTeamLeave;
-        if (IsPlayerOnSameTeamAsAnyEligibleFaction(cp.Unit.OwningPlayer()))
+        controlPoint.ChangedOwner += OnTargetChangeOwner;
+        controlPoint.Owner.GetPlayerData().PlayerJoinedTeam += OnFactionTeamJoin;
+        controlPoint.Owner.GetPlayerData().PlayerLeftTeam += OnFactionTeamLeave;
+        if (IsPlayerOnSameTeamAsAnyEligibleFaction(controlPoint.Unit.OwningPlayer()))
           ControlPointCount++;
       }
     }
@@ -61,12 +60,14 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 
     private void OnTargetChangeOwner(object? sender, ControlPointOwnerChangeEventArgs controlPointOwnerChangeEventArgs)
     {
-      var cp = controlPointOwnerChangeEventArgs.ControlPoint;
-      if (_controlPoints.Select(cp => cp.UnitType).Contains(cp.UnitType))
+      var controlPoint = controlPointOwnerChangeEventArgs.ControlPoint;
+      if (_controlPoints.Select(x => x.UnitType).Contains(controlPoint.UnitType))
       {
-        if (!IsPlayerOnSameTeamAsAnyEligibleFaction(controlPointOwnerChangeEventArgs.FormerOwner) && IsPlayerOnSameTeamAsAnyEligibleFaction(cp.Unit.OwningPlayer()))
+        if (!IsPlayerOnSameTeamAsAnyEligibleFaction(controlPointOwnerChangeEventArgs.FormerOwner) &&
+            IsPlayerOnSameTeamAsAnyEligibleFaction(controlPoint.Unit.OwningPlayer()))
           ControlPointCount++;
-        else if (IsPlayerOnSameTeamAsAnyEligibleFaction(controlPointOwnerChangeEventArgs.FormerOwner) && !IsPlayerOnSameTeamAsAnyEligibleFaction(cp.Unit.OwningPlayer()))
+        else if (IsPlayerOnSameTeamAsAnyEligibleFaction(controlPointOwnerChangeEventArgs.FormerOwner) &&
+                 !IsPlayerOnSameTeamAsAnyEligibleFaction(controlPoint.Unit.OwningPlayer()))
           ControlPointCount--;
       }
 
@@ -84,6 +85,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
         if (cp.Unit.OwningPlayer() == playerChangeTeamEventArgs.Player)
           ControlPointCount++;
       }
+
       CheckObjectiveProgress();
     }
 
@@ -96,17 +98,13 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       foreach (var cp in _controlPoints)
       {
         if (cp.Unit.OwningPlayer() == playerChangeTeamEventArgs.Player)
-          ControlPointCount--;         
+          ControlPointCount--;
       }
+
       CheckObjectiveProgress();
     }
 
-    private void CheckObjectiveProgress()
-    {
-      if (ControlPointCount == _controlPoints.Count)
-        Progress = QuestProgress.Complete;
-      else
-        Progress = QuestProgress.Incomplete;
-    }
+    private void CheckObjectiveProgress() => Progress =
+      ControlPointCount == _controlPoints.Count ? QuestProgress.Complete : QuestProgress.Incomplete;
   }
 }
