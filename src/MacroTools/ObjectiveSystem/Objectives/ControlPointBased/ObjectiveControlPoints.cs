@@ -38,8 +38,6 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       foreach (var controlPoint in controlPoints)
       {
         controlPoint.ChangedOwner += OnTargetChangeOwner;
-        controlPoint.Owner.GetPlayerData().PlayerJoinedTeam += OnFactionTeamJoin;
-        controlPoint.Owner.GetPlayerData().PlayerLeftTeam += OnFactionTeamLeave;
         if (IsPlayerOnSameTeamAsAnyEligibleFaction(controlPoint.Unit.OwningPlayer()))
           ControlPointCount++;
       }
@@ -59,38 +57,14 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
     private void OnTargetChangeOwner(object? sender, ControlPointOwnerChangeEventArgs args)
     {
       var controlPoint = args.ControlPoint;
-      if (_controlPoints.Contains(controlPoint))
-      {
-        if (!IsPlayerOnSameTeamAsAnyEligibleFaction(args.FormerOwner) &&
-            IsPlayerOnSameTeamAsAnyEligibleFaction(controlPoint.Owner))
-          ControlPointCount++;
-        else if (IsPlayerOnSameTeamAsAnyEligibleFaction(args.FormerOwner) &&
-                 !IsPlayerOnSameTeamAsAnyEligibleFaction(controlPoint.Owner))
-          ControlPointCount--;
-      }
 
-      CheckObjectiveProgress();
-    }
-
-    private void OnFactionTeamJoin(object? sender, PlayerChangeTeamEventArgs args)
-    {
-      foreach (var controlPoint in _controlPoints)
-      {
-        if (controlPoint.Unit.OwningPlayer() == args.Player)
-          ControlPointCount++;
-      }
-
-      CheckObjectiveProgress();
-    }
-
-    private void OnFactionTeamLeave(object? sender, PlayerChangeTeamEventArgs args)
-    {
-      foreach (var controlPoint in _controlPoints)
-      {
-        if (controlPoint.Unit.OwningPlayer() == args.Player)
-          ControlPointCount--;
-      }
-
+      if (!IsPlayerOnSameTeamAsAnyEligibleFaction(args.FormerOwner) &&
+          IsPlayerOnSameTeamAsAnyEligibleFaction(controlPoint.Owner))
+        ControlPointCount++;
+      else if (IsPlayerOnSameTeamAsAnyEligibleFaction(args.FormerOwner) &&
+               !IsPlayerOnSameTeamAsAnyEligibleFaction(controlPoint.Owner))
+        ControlPointCount--;
+      
       CheckObjectiveProgress();
     }
 
