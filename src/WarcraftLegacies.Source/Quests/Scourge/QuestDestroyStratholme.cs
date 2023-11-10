@@ -42,8 +42,8 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     protected override void OnComplete(Faction completingFaction)
     {
       var arthas = _arthas.Unit;
-
-      ReviveHero(arthas, 21946, 24234, false);
+      
+      LordaeronSetup.Lordaeron?.ModObjectLimit(Constants.UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON, -1);
 
       if (arthas == null || !UnitAlive(arthas))
         return;
