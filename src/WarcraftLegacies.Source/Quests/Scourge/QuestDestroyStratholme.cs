@@ -43,6 +43,8 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     {
       var arthas = _arthas.Unit;
 
+      ReviveHero(arthas, 21946, 24234, false);
+
       if (arthas == null || !UnitAlive(arthas))
         return;
 

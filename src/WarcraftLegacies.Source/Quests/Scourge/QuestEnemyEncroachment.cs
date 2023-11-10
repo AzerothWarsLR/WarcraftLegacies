@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         Regions.Borean_Tundra,
         Regions.IcecrownShipyard
       }, "Northrend"));
-      ResearchId = Constants.UPGRADE_R08L_DEACTIVATED;
+      ResearchId = Constants.UPGRADE_R04V_QUEST_COMPLETED_THE_SLUMBERING_KING;
     }
     
     /// <inheritdoc/>
