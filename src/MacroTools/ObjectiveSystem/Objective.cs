@@ -122,9 +122,7 @@ namespace MacroTools.ObjectiveSystem
       
       return false;
     }
-
-    internal void AddEligibleFaction(Faction faction) => EligibleFactions.Add(faction);
-
+    
     /// <summary>Fires after the <see cref="Progress"/> of this objective has changed.</summary>
     public event EventHandler<Objective>? ProgressChanged;
 
