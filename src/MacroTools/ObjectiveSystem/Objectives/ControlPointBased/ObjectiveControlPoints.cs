@@ -14,7 +14,6 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
   {
     private readonly List<ControlPoint> _controlPoints;
     private readonly string _rectName;
-
     private int _controlPointCount;
 
     private int ControlPointCount
@@ -49,9 +48,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 
     internal override void OnAdd(Faction whichFaction)
     {
-      foreach (var cp in _controlPoints)
+      foreach (var controlPoint in _controlPoints)
       {
-        if (IsPlayerOnSameTeamAsAnyEligibleFaction(cp.Unit.OwningPlayer()))
+        if (IsPlayerOnSameTeamAsAnyEligibleFaction(controlPoint.Unit.OwningPlayer()))
           ControlPointCount++;
       }
 
