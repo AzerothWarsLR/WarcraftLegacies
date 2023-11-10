@@ -159,7 +159,7 @@ namespace MacroTools.QuestSystem
       OnAdd(faction);
       foreach (var questItem in _objectives)
       {
-        questItem.AddEligibleFaction(faction);
+        questItem.EligibleFactions.Add(faction);
         questItem.OnAdd(faction);
       }
 
