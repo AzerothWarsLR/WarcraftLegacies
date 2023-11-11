@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Constants.ABILITY_A0KZ_SPELL_IMMUNITY_LEGION_SUMMON);
       SpellSystem.Register(summonBurningLegion);
       
-      var massSummonUnit = new MultiTargetRecall( Constants.ABILITY_A02T_DARK_SUMMONING_LEGION_DUMMY, CastFilters.IsTargetOwnAliveNonHeroUnit)
+      var massSummonUnit = new DelayedMultiTargetRecall( Constants.ABILITY_A02T_DARK_SUMMONING_LEGION_DUMMY, CastFilters.IsTargetOwnAliveNonHeroUnit)
       {
         Radius = 400,
         AmountToTarget = 12,
