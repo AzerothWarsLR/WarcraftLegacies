@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
+using Environment = MacroTools.Libraries.Environment;
 
 namespace MacroTools.Buffs
 {
@@ -28,6 +28,8 @@ namespace MacroTools.Buffs
     /// </summary>
     private new effect? Effect { get; set; }
 
+    private effect? _progressEffect;
+
     /// <inheritdoc />
     public DelayedRecallBuff(unit caster, unit target, List<unit> unitsToMove) : base(caster, target)
     {
@@ -43,16 +45,23 @@ namespace MacroTools.Buffs
 
       Effect = AddSpecialEffect(@"Abilities\Spells\Undead\Darksummoning\DarkSummonTarget.mdl", TargetPosition.X,
         TargetPosition.Y);
+      
+      _progressEffect = AddSpecialEffect("war3mapImported\\Progressbar10sec.mdx", TargetPosition.X, TargetPosition.Y)
+        .SetTimeScale(10 / Duration)
+        .SetColor(Caster.OwningPlayer())
+        .SetHeight(185f + Environment.GetPositionZ(TargetPosition));
     }
 
     /// <inheritdoc />
     public override void OnDispose()
     {
-      DestroyEffect(Effect);
-      if (Math.Floor(Duration) > 0)
+      Effect?.Destroy();
+      _progressEffect?.Destroy();
+      
+      if (!UnitAlive(Caster))
       {
-        var amountToMove = (int)Math.Floor(UnitsToMove.Count * DeathPenalty);
-        foreach (var unit in UnitsToMove.Take(UnitsToMove.Count - amountToMove)) 
+        var amountToKill = (int)(UnitsToMove.Count * DeathPenalty);
+        foreach (var unit in UnitsToMove.Take(amountToKill)) 
           unit.Kill();
       }
       
