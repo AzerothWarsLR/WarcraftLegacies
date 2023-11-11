@@ -28,6 +28,7 @@ namespace MacroTools.Instances
     /// <summary>
     /// Determines the virtual distance between two points which may or may not be in seperate <see cref="Instance"/>s.
     /// </summary>
+    /// <returns>The distance between two points, taking into account Instance entrances and exits. If one Instance</returns>
     public static float GetDistanceBetweenPointsEx(Point positionA, Point positionB)
     {
       float sumDistance = 0;
