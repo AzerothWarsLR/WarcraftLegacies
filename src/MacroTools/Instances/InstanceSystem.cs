@@ -42,13 +42,13 @@ namespace MacroTools.Instances
       float sumDistance = 0;
       
       //Point A is in an Instance, so add the distance to the nearest interior Gate
-      if (instanceA?.TryGetNearestGate(positionA, out var nearestGateA) == true)
+      if (instanceA != null && instanceA.TryGetNearestGate(positionA, out var nearestGateA))
         sumDistance += MathEx.GetDistanceBetweenPoints(positionA, nearestGateA.InteriorPosition);
       else
         return -1;
 
       //Point B is in an Instance, so add the distance to the nearest interior Gate
-      if (instanceB?.TryGetNearestGate(positionB, out var nearestGateB) == true)
+      if (instanceB != null && instanceB.TryGetNearestGate(positionB, out var nearestGateB))
         sumDistance += MathEx.GetDistanceBetweenPoints(positionB, nearestGateB.InteriorPosition);
       else
         return -1;
