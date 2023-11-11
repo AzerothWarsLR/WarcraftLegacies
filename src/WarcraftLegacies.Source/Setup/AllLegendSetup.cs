@@ -131,7 +131,7 @@ namespace WarcraftLegacies.Source.Setup
       Troll = new LegendTroll();
       Warsong = new LegendWarsong(preplacedUnitSystem);
       Neutral = new LegendNeutral(preplacedUnitSystem);
-      Gilneas = new LegendGilneas();
+      Gilneas = new LegendGilneas(preplacedUnitSystem);
       Cthun = new LegendCthun();
       Nazjatar = new LegendNazjatar();
       BlackEmpire = new LegendBlackEmpire(preplacedUnitSystem);

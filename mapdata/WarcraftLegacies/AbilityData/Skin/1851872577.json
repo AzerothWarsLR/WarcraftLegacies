@@ -11,7 +11,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Scourge - Kel)"
+      "Value": "(Kel\u0027thuzad)"
     },
     {
       "Id": 2037082209,
@@ -35,7 +35,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Raises dead units in an area to fight for the caster. |nLasts 60 seconds.|n|n|cffffcc00Level 1|r - 6 units.|n|cffffcc00Level 2|r - 9 units. |n|cffffcc00Level 3|r - 12 units.|n|cffffcc00Level 4|r - 15 units."
+      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster. |nLasts 60 seconds.|n|n|cffffcc00Level 1|r - No bonus.|n|cffffcc00Level 2|r - Raised units gain 30% additional hit points and attack damage. |n|cffffcc00Level 3|r - Raised units gain 60% additional hit points and attack damage.|n|cffffcc00Level 4|r - Raised units gain 90% additional hit points and attack damage."
     },
     {
       "Level": 1,
@@ -65,25 +65,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Raises \u003CAUan,DataA1\u003E units in an area to fight for the caster for 60 seconds. Animated units retain upgrades and are vulnerable."
+      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster, additionally increasing their hit points and attack damage."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Raises \u003CAUan,DataA2\u003E units in an area to fight for the caster for 60 seconds. Animated units retain upgrades and are vulnerable."
+      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster, additionally increasing their hit points and attack damage by 30%."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Raises \u003CAUan,DataA3\u003E units in an area to fight for the caster for 60 seconds. Animated units retain upgrades and are vulnerable."
+      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster, additionally increasing their hit points and attack damage by 60%."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Raises \u003CAUan,DataA4\u003E units in an area to fight for caster for 60 seconds. Animated units retain upgrades and are vulnerable."
+      "Value": "Raises \u003CAUan,DataA1\u003E nearby dead units to fight for the caster, additionally increasing their hit points and attack damage by 90%."
     }
   ]
 }

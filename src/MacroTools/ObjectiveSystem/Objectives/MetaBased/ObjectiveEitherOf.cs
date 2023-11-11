@@ -24,8 +24,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.MetaBased
       ObjectiveB.OnAdd(whichFaction);
       foreach (var eligibleFaction in EligibleFactions)
       {
-        ObjectiveA.AddEligibleFaction(eligibleFaction);
-        ObjectiveB.AddEligibleFaction(eligibleFaction);
+        ObjectiveA.EligibleFactions.Add(eligibleFaction);
+        ObjectiveB.EligibleFactions.Add(eligibleFaction);
       }
       Update();
     }

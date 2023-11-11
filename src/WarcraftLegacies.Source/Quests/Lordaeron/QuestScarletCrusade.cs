@@ -58,7 +58,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Your forces turn hostile, then you restart the game as the Scarlet Crusade in Tyr's Hand";
+      "Your existing forces are removed, then you restart the game as the Scarlet Crusade in Tyr's Hand";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
@@ -66,48 +66,43 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       var whichPlayer = completingFaction.Player;
       if (whichPlayer == null) 
         return;
+      
+      whichPlayer.RemoveAllUnits();
+      EvacuateTyrsHand(whichPlayer);
+      AssignScarletCrusadeFaction(completingFaction);
+      GrantTyrsHand(whichPlayer);
+      whichPlayer.RescueGroup(_rescueUnits);
+      _saiden.ForceCreate(whichPlayer, Regions.Scarlet_Spawn.Center, 270);
+    }
 
+    private void AssignScarletCrusadeFaction(Faction completingFaction)
+    {
       var scarletCrusade = new ScarletCrusade(_artifactSetup, _allLegendSetup);
       FactionManager.Register(scarletCrusade);
       scarletCrusade.CopyObjectLevelsFrom(completingFaction);
+      completingFaction.Player?.SetFaction(scarletCrusade);
+    }
+    
+    private static void EvacuateTyrsHand(player newOwner)
+    {
+      var neutralHostileUnitsInTyrsHand = CreateGroup()
+        .EnumUnitsInRect(Regions.TyrUnlock)
+        .EmptyToList()
+        .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE));
       
-      AbandonCurrentUnits(whichPlayer);
-      PlayerDistributor.DistributePlayer(whichPlayer);
-      EvacuateTyrsHand(whichPlayer);
-      whichPlayer.SetFaction(scarletCrusade);
-      GrantTyrsHand(whichPlayer);
-      whichPlayer.RescueGroup(_rescueUnits);
+      foreach (var unit in neutralHostileUnitsInTyrsHand)
+      {
+        if (unit.IsRemovable())
+          unit.SafelyRemove();
+        else
+          unit.Rescue(newOwner);
+      }
+    }
+
+    private void GrantTyrsHand(player whichPlayer)
+    {
       _tyrsHand.Rescue(whichPlayer);
-      _saiden.ForceCreate(whichPlayer, Regions.Scarlet_Spawn.Center, 270);
-      _saiden.Unit?.SetLevel(7, false);
-    }
-
-    private static void AbandonCurrentUnits(player whichPlayer)
-    {
-      foreach (var unit in CreateGroup()
-                 .EnumUnitsOfPlayer(whichPlayer)
-                 .EmptyToList())
-      {
-        if (!IsUnitType(unit, UNIT_TYPE_HERO))
-          unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      }
-    }
-
-    private static void EvacuateTyrsHand(player newControlPointOwner)
-    {
-      foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.TyrUnlock).EmptyToList()
-                 .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE)))
-      {
-        if (!IsUnitType(unit, UNIT_TYPE_ANCIENT))
-          unit.Kill();
-
-        if (IsUnitType(unit, UNIT_TYPE_ANCIENT))
-          unit.Rescue(newControlPointOwner);
-      }
-    }
-
-    private static void GrantTyrsHand(player whichPlayer)
-    {
+      
       CreateStructureForced(whichPlayer, Constants.UNIT_H0BJ_IMPROVED_BOMBARD_TOWER_CRUSADE_TOWER, 19082, 8573,
         4.712389f * MathEx.DegToRad, 256);
       CreateStructureForced(whichPlayer, Constants.UNIT_H0BJ_IMPROVED_BOMBARD_TOWER_CRUSADE_TOWER, 18427, 7929,
