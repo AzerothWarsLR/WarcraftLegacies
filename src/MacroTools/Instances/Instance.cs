@@ -18,9 +18,6 @@ namespace MacroTools.Instances
     /// <summary>The entire region that constitutes the physical area of the <see cref="Instance"/>.</summary>
     public region Region { get; }
 
-    /// <summary>The number of <see cref="Gate"/>s that can be used to enter or exit the <see cref="Instance"/>.</summary>
-    public int GateCount => _gates.Count;
-    
     private readonly trigger _dependencyDiesTrigger;
     private readonly List<Gate> _gates = new();
     private readonly Rectangle[] _rectangles;
