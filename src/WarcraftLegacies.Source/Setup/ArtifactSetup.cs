@@ -166,7 +166,7 @@ namespace WarcraftLegacies.Source.Setup
 
       tempArtifact = new Artifact(CreateItem(FourCC("arsh"), DummyX, DummyY)); //Shroud of Nozdormuru
       UnitAddAbility(preplacedUnitSystem.GetUnit(Constants.UNIT_O070_OCCULUS_CREEP_CAVERNS), Artifact.ArtifactHolderAbilId); //Occulus
-      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("O025")), tempArtifact.Item);
+      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_O070_OCCULUS_CREEP_CAVERNS), tempArtifact.Item);
       ArtifactManager.Register(tempArtifact);
 
       HornOfCenarius = new Artifact(CreateItem(FourCC("cnhn"), DummyX, DummyY));

@@ -35,8 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       _elvenRunestone = elvenRunestone;
       _silvermoon = silvermoon;
       _sunwell = sunwell;
-      AddObjective(new ObjectiveUnitIsDead(
-        preplacedUnitSystem.GetUnit(Constants.UNIT_O00O_CHIEFTAN_OF_THE_AMANI_TRIBE_CREEP_ZUL_AMAN)));
+      AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(Constants.UNIT_O06Z_ZUL_JIN_CREEP_ZUL_AMAN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01V_ZUL_AMAN)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01L_EVERSONG_WOODS)));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_H03T_PALACE_QUEL_THALAS_T3, Constants.UNIT_H033_STEADING_QUEL_THALAS_T1));
