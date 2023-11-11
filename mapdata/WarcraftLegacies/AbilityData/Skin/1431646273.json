@@ -21,7 +21,7 @@
     {
       "Id": 1952540001,
       "Type": 3,
-      "Value": "war3mapImported\\DetroitSmash_Effect.mdx"
+      "Value": "war3mapImported\\Judgment of Light.mdx"
     },
     {
       "Id": 1952543585,
@@ -32,7 +32,7 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Judgement"
+      "Value": "Righteous Fury"
     },
     {
       "Level": 2,
@@ -67,12 +67,12 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Judgement"
+      "Value": "Righteous Fury"
     },
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_RighteousFury.blp"
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASHolyHammerOn.blp"
     }
   ]
 }

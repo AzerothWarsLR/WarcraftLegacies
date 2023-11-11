@@ -5,7 +5,7 @@
 //  4	Ironforge
 //  5	Warsong
 //  6	Fel Horde
-//  7	Dalaran
+//  7	Dalaran/Gilneas
 //  8	Goblin
 //  9	Lordaeron
 //  10	Empty

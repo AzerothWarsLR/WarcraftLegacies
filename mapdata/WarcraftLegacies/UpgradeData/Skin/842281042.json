@@ -43,37 +43,37 @@
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "Nathrezim Adept Training"
+      "Value": "Nathrezim Infiltrator Adept Training"
     },
     {
       "Level": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "Nathrezim Master Training"
+      "Value": "Nathrezim Infiltrator Master Training"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "Research Nathrezim Adept Training"
+      "Value": "Research Nathrezim Infiltrator Adept Training"
     },
     {
       "Level": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "Research Nathrezim Master Training"
+      "Value": "Research Nathrezim Infiltrator Master Training"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Nathrezims\u0027 mana capacity, attack damage and gives them the ability to cast Sight of Sargeras."
+      "Value": "Increases Nathrezim Infiltrators\u0027 mana capacity, attack damage and gives them the ability to cast Sight of Sargeras."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Nathrezims\u0027 mana capacity, attack damage and gives them the ability to cast Charm."
+      "Value": "Increases Nathrezim Infiltrators\u0027 mana capacity, attack damage and gives them the ability to cast Charm."
     }
   ]
 }

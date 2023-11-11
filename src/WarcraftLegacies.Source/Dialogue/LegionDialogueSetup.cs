@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 using MacroTools.DialogueSystem;
+using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
+using WarcraftLegacies.Source.Factions;
 using WarcraftLegacies.Source.Quests.Legion;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
@@ -13,6 +15,28 @@ namespace WarcraftLegacies.Source.Dialogue
   {
     public static void Setup(AllLegendSetup legendSetup)
     {
+      if (FactionManager.TryGetFactionByType<Dalaran>(out var dalaran))
+      {
+        TriggeredDialogueManager.Add(new TriggeredDialogue(
+          new DialogueSequence(
+            new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Archimonde21.flac",
+              "You are very brave to stand against me, little human. If only your countrymen had been as bold, I would have had more fun scouring your wretched nations from the world!",
+              "Archimonde"),
+            new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Jaina22.flac",
+              "Is talking all you demons do?",
+              "Jaina Proudmoore")
+          )
+          , new[]
+          {
+            LegionSetup.Legion,
+            dalaran
+          }, new List<Objective>
+          {
+            new ObjectiveLegendMeetsLegend(legendSetup.Legion.Archimonde, legendSetup.Dalaran.Jaina)
+          }
+        ));
+      }
+      
       TriggeredDialogueManager.Add(new TriggeredDialogue(
         new DialogueSequence(
           new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf06\N06Tichondrius21.flac",
@@ -55,31 +79,12 @@ namespace WarcraftLegacies.Source.Dialogue
       ));
 
       TriggeredDialogueManager.Add(new TriggeredDialogue(
-        new DialogueSequence(
-          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Archimonde21.flac",
-            "You are very brave to stand against me, little human. If only your countrymen had been as bold, I would have had more fun scouring your wretched nations from the world!",
-            "Archimonde"),
-          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Jaina22.flac",
-            "Is talking all you demons do?",
-            "Jaina Proudmoore")
-        )
-        , new[]
-        {
-          LegionSetup.Legion,
-          DalaranSetup.Dalaran
-        }, new List<Objective>
-        {
-          new ObjectiveLegendMeetsLegend(legendSetup.Legion.Archimonde, legendSetup.Dalaran.Jaina)
-        }
-      ));
-
-      TriggeredDialogueManager.Add(new TriggeredDialogue(
         new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Archimonde28.flac",
           "At last, the way to the World Tree is clear! Witness the end, you mortals! The final hour has come.",
           "Archimonde")
         , null, new List<Objective>
         {
-          new ObjectiveCompleteQuest(LegionSetup.Legion.GetQuestByType(typeof(QuestConsumeTree)))
+          new ObjectiveQuestComplete(LegionSetup.Legion.GetQuestByType<QuestConsumeTree>())
         }
       ));
       

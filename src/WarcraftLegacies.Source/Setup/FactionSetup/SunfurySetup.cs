@@ -1,5 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.Extensions;
+using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -22,6 +23,7 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingCameraPosition = Regions.SunfuryStartingPosition.Center,
         StartingUnits = Regions.SunfuryStartingPosition.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable),
         ControlPointDefenderUnitTypeId = Constants.UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS,
+        LearningDifficulty = FactionLearningDifficulty.Advanced,
         IntroText = @"You are playing as the power-hungry |cffff0000Sunfury|r.
 
 You begin in Netherstorm, your first mission is to build three biodomes in the green areas protected by a bubble.
@@ -46,7 +48,7 @@ Your main goal is to summon Kil'jaeden and destroy your enemies."
       Sunfury.ModObjectLimit(FourCC("n0E0"), Faction.UNLIMITED); //Skyfury tower
       Sunfury.ModObjectLimit(FourCC("n0E1"), Faction.UNLIMITED); //improved skyfury tower
       Sunfury.ModObjectLimit(FourCC("N0DZ"), 1); //Fountain
-      Sunfury.ModObjectLimit(FourCC("h077"), Faction.UNLIMITED); //Alliance Shipyard
+      Sunfury.ModObjectLimit(FourCC("tp04"), Faction.UNLIMITED); //Alliance Shipyard
 
       //Units
       Sunfury.ModObjectLimit(FourCC("n0E2"), Faction.UNLIMITED); //worker

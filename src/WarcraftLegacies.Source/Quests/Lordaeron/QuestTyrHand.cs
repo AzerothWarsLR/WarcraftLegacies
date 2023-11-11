@@ -5,6 +5,7 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.MetaBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -21,27 +22,25 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestTyrHand"/> class.
     /// </summary>
-    /// <param name="capitalCity"></param>
     /// <param name="stratholme"></param>
     /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
-    /// <param name="lichKing"></param>
-    public QuestTyrHand(Capital capitalCity, Capital stratholme, Rectangle rescueRect, Capital lichKing) : base("The Fortified City",
-      "The city of Tyr's Hand is considered impregnable, but they will be reluctant to join the war",
+    public QuestTyrHand(Capital stratholme, Rectangle rescueRect) : base("The Fortified City",
+      "The city of Tyr's Hand is considered impregnable, but they will be reluctant to join the war.",
       @"ReplaceableTextures\CommandButtons\BTNHumanBarracks.blp")
     {
-      AddObjective(new ObjectiveEitherOf(
-        new ObjectiveEitherOf(new ObjectiveCapitalDead(capitalCity),new ObjectiveCapitalDead(stratholme)),
-        new ObjectiveCapitalDead(lichKing)));
+      AddObjective(new ObjectiveEitherOf(new ObjectiveCapitalDead(stratholme),
+        new ObjectiveTime(840)));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      Required = true;
+      ResearchId = Constants.UPGRADE_R023_QUEST_COMPLETED_THE_FORTIFIED_CITY;
+      
     }
 
     /// <inheritdoc />
-    protected override string RewardFlavour => "The city-fortress of Tyr's Hand has decided to join us!";
+    protected override string RewardFlavour => "The city-fortress of Tyr's Hand has decided to join us! Renowed for their siege engineers, we can now build siege workshops.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Control of all units in Tyr's Hand and Garithos is trainable";
+    protected override string RewardDescription => $"Gain control of all units in Tyr's Hand, learn to train Garithos from the {GetObjectName(Constants.UNIT_HALT_ALTAR_OF_KINGS_LORDAERON_ALTAR)}, and learn to build {GetObjectName(Constants.UNIT_H094_SIEGE_WORKSHOP_LORDAERON_SIEGE)}s";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)

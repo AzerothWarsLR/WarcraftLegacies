@@ -62,6 +62,11 @@
       "Id": 1651012469,
       "Type": 3,
       "Value": "ShadowCannonTower"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Improved defensive structure. |n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

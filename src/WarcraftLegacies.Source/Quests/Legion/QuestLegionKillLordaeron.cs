@@ -1,5 +1,4 @@
-using System.Collections.Generic;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
@@ -11,13 +10,13 @@ namespace WarcraftLegacies.Source.Quests.Legion
   {
     private readonly LegendaryHero _tichondrius;
 
-    public QuestLegionKillLordaeron(IEnumerable<Capital> capitalTargets, LegendaryHero tichondrius) : base("Token Resistance",
+    public QuestLegionKillLordaeron(Capital capitalPalace, Capital stratholme, LegendaryHero tichondrius) : base("Token Resistance",
       "The Kingdom of Lordaeron must be eliminated to pave the way for the Legion's arrival.",
       @"ReplaceableTextures\CommandButtons\BTNTichondrius.blp")
     {
       _tichondrius = tichondrius;
-      foreach (var capital in capitalTargets)
-        AddObjective(new ObjectiveCapitalDead(capital));
+      AddObjective(new ObjectiveControlCapital(capitalPalace, false));
+      AddObjective(new ObjectiveCapitalDead(stratholme));
     }
 
     /// <inheritdoc/>

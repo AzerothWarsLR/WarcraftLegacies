@@ -31,14 +31,14 @@ namespace MacroTools.QuestSystem
       QuestSetTitle(Quest, title);
       QuestSetIconPath(Quest, icon);
       QuestSetEnabled(Quest, false);
-      Required = false;
+      IsFactionQuest = true;
     }
 
     /// <summary>
     ///   If true, the quest appears on the left hand side of the F9 menu.
     ///   If false, it appears on the right hand side.
     /// </summary>
-    protected bool Required
+    protected bool IsFactionQuest
     {
       set => QuestSetRequired(Quest, value);
     }
@@ -159,7 +159,7 @@ namespace MacroTools.QuestSystem
       OnAdd(faction);
       foreach (var questItem in _objectives)
       {
-        questItem.AddEligibleFaction(faction);
+        questItem.EligibleFactions.Add(faction);
         questItem.OnAdd(faction);
       }
 

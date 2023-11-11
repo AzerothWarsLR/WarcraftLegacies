@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       AddObjective(new ObjectiveControlCapital(zulfarrak, false));
       AddObjective(new ObjectiveLegendReachRect(zul, rescueRect, "Zul'Farrak"));
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      Required = true;
+      
     }
 
     /// <inheritdoc/>

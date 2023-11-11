@@ -21,7 +21,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Quel\u0027thalas Magic)"
+      "Value": "(Quel\u0027thalas Siege)"
     },
     {
       "Id": 1818520949,
@@ -56,7 +56,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Gathering place for Quel\u0027thalas\u0027 most prestigious spellcasters.|n|cfff5962dTrains:|R Magus, Blood Mage, Warlock|n|cfff5962dResearches:|R Magus Training"
+      "Value": "Advanced spellcaster production building.|n|n|r|cfff5962dTrains:|R Magus, Blood Mage, Warlock|n|cfff5962dResearches:|R Magus Training"
     }
   ]
 }

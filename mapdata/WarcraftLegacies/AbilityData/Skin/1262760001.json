@@ -1,115 +1,54 @@
 {
-  "OldId": 1651723841,
+  "OldId": 1936286785,
   "NewId": 1262760001,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1953653089,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfDarkness.blp"
-    },
-    {
-      "Id": 2020631137,
-      "Value": 0
-    },
-    {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Kel\u0027thuzad Ghost)"
+      "Value": "(Sally)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "Q"
-    },
-    {
-      "Id": 1667329377,
-      "Type": 2,
-      "Value": 0.1
-    },
-    {
-      "Id": 1952542049,
-      "Type": 3,
-      "Value": "war3mapImported\\PrismBeam_Master.mdx"
+      "Value": "W"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Shadow Missile"
+      "Value": "Dispel magic"
     },
     {
-      "Id": 1918988897,
+      "Level": 1,
+      "Id": 828536161,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfDarkness.blp"
-    },
-    {
-      "Id": 2020635233,
-      "Value": 0
-    },
-    {
-      "Id": 1802007137,
-      "Type": 3,
-      "Value": "Q"
-    },
-    {
-      "Id": 1952805473,
-      "Type": 3,
-      "Value": "Learn Shadow Missile - [|cffffcc00Level %d|r]"
+      "Value": "Removes all buffs from units in a target area. |n|cffffcc00Deals \u003CA0DK,DataB1\u003E damage to summoned units.|r"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "A Shadow Missile is thrown at an enemy unit, causing damage and mini stunning the target for 0.1 second. |n|n|cffffcc00Level 1|r - \u003CANsb,DataA1\u003E damage |n|cffffcc00Level 2|r - \u003CANsb,DataA2\u003E damage |n|cffffcc00Level 3|r - \u003CANsb,DataA3\u003E damage |n|cffffcc00Level 4|r - \u003CANsb,DataA4\u003E damage"
+      "Value": "Removes all buffs from units in a target area. |n|cffffcc00Deals \u003CA0DK,DataB1\u003E damage to summoned units.|r|r |n|n|cffffcc00Level 1|r - 14 seconds cooldown.|n|cffffcc00Level 2|r - 10 seconds cooldown. |n|cffffcc00Level 3|r - 6 seconds cooldown.|n|cffffcc00Level 3|r - 2 seconds cooldown."
     },
     {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Shadow Missile  - [|cffffcc00Level 1|r]"
+      "Id": 2020635233,
+      "Value": 1
     },
     {
-      "Level": 2,
-      "Id": 829453409,
+      "Id": 1952805473,
       "Type": 3,
-      "Value": "Shadow Missile  - [|cffffcc00Level 2|r]"
+      "Value": "Learn Dispel Magic - [|cffffcc00Level %d|r]"
     },
     {
-      "Level": 3,
-      "Id": 829453409,
+      "Id": 1802007137,
       "Type": 3,
-      "Value": "Shadow Missile  - [|cffffcc00Level 3|r]"
+      "Value": "W"
     },
     {
-      "Level": 4,
-      "Id": 829453409,
+      "Id": 1918988897,
       "Type": 3,
-      "Value": "Shadow Missile  - [|cffffcc00Level 4|r]"
-    },
-    {
-      "Level": 1,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "A Shadow Ball is thrown at an enemy unit, dealing \u003CANsb,DataA1\u003E damage and stunning the target for .1 seconds"
-    },
-    {
-      "Level": 2,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "A Shadow Ball is thrown at an enemy unit, dealing \u003CANsb,DataA2\u003E damage and stunning the target for .1 seconds."
-    },
-    {
-      "Level": 3,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "A Shadow Ball is thrown at an enemy unit, dealing \u003CANsb,DataA3\u003E damage and stunning the target for .1 seconds."
-    },
-    {
-      "Level": 4,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "A Shadow Ball is thrown at an enemy unit, dealing \u003CANsb,DataA4\u003E damage and stunning the target for .1 seconds."
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDispelMagic.blp"
     }
   ]
 }

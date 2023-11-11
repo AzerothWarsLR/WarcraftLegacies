@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       _anyUnitInRect = new ObjectiveAnyUnitInRect(_highBourneArea, "the Athenaeum", false);
       AddObjective(_anyUnitInRect);
       AddObjective(new ObjectiveNoOtherPlayerGetsArtifact(scepterOfTheQueen));
-      Required = true;
+      
     }
     
     /// <inheritdoc/>

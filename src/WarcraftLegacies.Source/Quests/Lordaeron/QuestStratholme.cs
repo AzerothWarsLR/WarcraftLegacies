@@ -21,6 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
   public sealed class QuestStratholme : QuestData
   {
     private readonly LegendaryHero _arthas;
+    private readonly LegendaryHero _uther;
     private readonly Capital _stratholme;
     private readonly List<unit> _rescueUnits;
     private readonly unit _goldmine1;
@@ -30,11 +31,12 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestStratholme"/> class.
     /// </summary>
-    public QuestStratholme(Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem, LegendaryHero arthas, Capital stratholme) : base("Blackrock and Roll",
+    public QuestStratholme(Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem, LegendaryHero arthas, LegendaryHero uther, Capital stratholme) : base("Blackrock and Roll",
       "The Blackrock clan has taken over Alterac, they must be eliminated for the safety of Lordaeron",
       @"ReplaceableTextures\CommandButtons\BTNChaosBlademaster.blp")
     {
       _arthas = arthas;
+      _uther = uther;
       _stratholme = stratholme;
       AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(Constants.UNIT_O00B_JUBEI_THOS_LEGION_DEMI)));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N019_ALTERAC_MOUNTAINS)));
@@ -53,7 +55,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       ResearchId = Constants.UPGRADE_R09E_QUEST_COMPLETED_BLACKROCK_AND_ROLL;
-      Required = true;
+      
     }
 
     /// <inheritdoc/>
@@ -78,6 +80,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     {
       completingFaction.Player.RescueGroup(_rescueUnits);
       _arthas.AddUnitDependency(_stratholme.Unit);
+      _uther.AddUnitDependency(_stratholme.Unit);
       //_goldmine1.Show(true);
       //_goldmine2.Show(true);
       //_goldmine3.Show(true);

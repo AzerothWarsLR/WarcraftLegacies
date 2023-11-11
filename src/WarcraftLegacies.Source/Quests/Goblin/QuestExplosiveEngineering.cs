@@ -20,9 +20,9 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       "Chief Engineer Gazlowe out at sea, overseeing the construction of the cartel's first offshore oil rig. He will return home when the first one has been constructed.",
       @"ReplaceableTextures\CommandButtons\BTNHeroTinker.blp")
     {
-      AddObjective(new ObjectiveBuild(Constants.UNIT_O04R_OIL_RIG_GOBLIN, 1));
+      AddObjective(new ObjectiveBuild(Constants.UNIT_O04R_OIL_RIG_GOBLIN_OTHER, 1));
       ResearchId = Constants.UPGRADE_R01F_QUEST_COMPLETED_EXPLOSIVE_ENGINEERING_FROSTWOLF;
-      Required = true;
+      
     }
   }
 }

@@ -6,11 +6,6 @@
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
-      "Type": 3,
-      "Value": "A02T,A00E,Abds,Afbt,AHta,Adts"
-    },
-    {
       "Id": 1949393269,
       "Type": 3,
       "Value": "magic"
@@ -86,6 +81,11 @@
     {
       "Id": 1769169525,
       "Value": 4
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Afbt,AHta,Adts"
     }
   ]
 }

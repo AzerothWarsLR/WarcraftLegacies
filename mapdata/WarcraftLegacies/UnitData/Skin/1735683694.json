@@ -30,7 +30,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build - Tidal Watcher"
+      "Value": "Build Tidal Watcher"
     },
     {
       "Id": 1935832437,
@@ -61,6 +61,11 @@
       "Id": 1651012469,
       "Type": 3,
       "Value": "BuildingShadowSmall"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary defensive structure. |n|n|cfff5962dUpgrades to:|R Improved Tidal Watcher|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

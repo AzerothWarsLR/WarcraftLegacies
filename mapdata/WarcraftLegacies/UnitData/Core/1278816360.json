@@ -8,7 +8,7 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "A0T5,A0T3,A0T2,A0C9,Sdro,A0RB,Sch5,Slo3"
+      "Value": ""
     },
     {
       "Id": 1902338421,
@@ -109,7 +109,7 @@
     {
       "Id": 1952542837,
       "Type": 3,
-      "Value": "PathTextures\\10x10Simple.tga"
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
     },
     {
       "Id": 1885433973,
@@ -174,7 +174,7 @@
     {
       "Id": 1634890869,
       "Type": 3,
-      "Value": "n09N,h06B,hpea"
+      "Value": "n09N,h06B,h022"
     },
     {
       "Id": 1953527157,
@@ -194,6 +194,11 @@
     {
       "Id": 1769169525,
       "Value": 4
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "ancient,mechanical,townhall"
     }
   ]
 }

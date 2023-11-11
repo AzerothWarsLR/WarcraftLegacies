@@ -24,9 +24,8 @@ namespace WarcraftLegacies.Source.Quests
     private readonly unit _waygateTwo;
     private readonly Rectangle _wayGateOneDestination;
     private readonly Rectangle _wayGateTwoDestination;
-    private timer _timer;
-
-
+    private readonly timer _timer;
+    
     /// <summary>
     /// Initilaizes the quest <see cref="QuestDragonsOfNightmare"/>
     /// </summary>
@@ -57,6 +56,7 @@ namespace WarcraftLegacies.Source.Quests
       AddObjective(new ObjectiveKillUnit(nightmareDragonEk));
       AddObjective(new ObjectiveTime(360));
       _timer = CreateTimer().Start(360, false, OnTimeElapsed);
+      IsFactionQuest = false;
     }
 
     private void OnTimeElapsed()

@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using static War3Api.Common;
@@ -31,9 +30,9 @@ namespace MacroTools.FactionSystem
       if (eligiblePlayers.Any() && GameTime.GetGameTime() > GameTime.TurnDuration)
         DistributePlayer(player, eligiblePlayers);
       else
-        player.RemoveResourcesAndUnits();
-
-      player.GetFaction()?.RemoveGoldMines();
+        player
+          .RemoveAllResources()
+          .RemoveAllUnits();
     }
 
     private static void DistributePlayer(player player, List<player> eligiblePlayers)

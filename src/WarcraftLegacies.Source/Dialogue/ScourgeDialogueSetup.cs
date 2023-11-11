@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
 using MacroTools.DialogueSystem;
+using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using WarcraftLegacies.Source.Factions;
 using WarcraftLegacies.Source.Quests.Scourge;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
@@ -14,6 +16,40 @@ namespace WarcraftLegacies.Source.Dialogue
   {
     public static void Setup(AllLegendSetup legendSetup)
     {
+      if (FactionManager.TryGetFactionByType<Dalaran>(out var dalaran))
+      {
+        TriggeredDialogueManager.Add(new TriggeredDialogue(
+          new DialogueSequence(
+            new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Arthas01.flac",
+              "Wizards of the Kirin Tor! I am Arthas, first of the Lich King's death knights! I demand that you open your gates and surrender to the might of the Scourge!",
+              "Arthas Menethil"),
+            new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Antonidas02.flac",
+              "Greetings, Prince Arthas. How fares your noble father?",
+              "Antonidas"),
+            new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Arthas03.flac",
+              "Lord Antonidas. There's no need to be snide.",
+              "Arthas Menethil"),
+            new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Antonidas04.flac",
+              "We've prepared for your coming, Arthas. My brethren and I have erected auras that will destroy any undead that pass through them.",
+              "Antonidas"),
+            new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Arthas05.flac",
+              "Your petty magics will not stop me, Antonidas.",
+              "Arthas Menethil"),
+            new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Antonidas06.flac",
+              "Pull your troops back, or we will be forced to unleash our full powers against you! Make your choice, death knight.",
+              "Antonidas")
+          ), new[]
+          {
+            ScourgeSetup.Scourge,
+            dalaran
+          }, new List<Objective>
+          {
+            new ObjectiveLegendInRect(legendSetup.Dalaran.Antonidas, Regions.Dalaran, "Dalaran"),
+            new ObjectiveLegendInRect(legendSetup.Scourge.Arthas, Regions.Dalaran, "Dalaran")
+          }
+        ));
+      }
+      
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
           soundFile: @"Sound\Dialogue\HumanCampaign\Human04\H04Kelthuzad28.flac",
@@ -59,8 +95,8 @@ namespace WarcraftLegacies.Source.Dialogue
           new Objective[]
           {
             new ObjectiveLegendMeetsLegend(legendSetup.Scourge.Arthas, legendSetup.Scourge.Kelthuzad),
-            new ObjectiveCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestKelthuzadDies))),
-            new ObjectiveDontCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestKelthuzadLich)))
+            new ObjectiveQuestComplete(ScourgeSetup.Scourge.GetQuestByType<QuestKelthuzadDies>()),
+            new ObjectiveQuestNotComplete(ScourgeSetup.Scourge.GetQuestByType<QuestKelthuzadLich>())
           }));
       
       TriggeredDialogueManager.Add(
@@ -91,8 +127,8 @@ namespace WarcraftLegacies.Source.Dialogue
           {
             new ObjectiveLegendInRect(legendSetup.Scourge.Arthas, Regions.QuelthalasAmbient, "Quel'thalas"),
             new ObjectiveLegendInRect(legendSetup.Scourge.Kelthuzad, Regions.QuelthalasAmbient, "Quel'thalas"),
-            new ObjectiveCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestKelthuzadDies))),
-            new ObjectiveDontCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestKelthuzadLich)))
+            new ObjectiveQuestComplete(ScourgeSetup.Scourge.GetQuestByType<QuestKelthuzadDies>()),
+            new ObjectiveQuestNotComplete(ScourgeSetup.Scourge.GetQuestByType<QuestKelthuzadLich>())
           }));
       
       TriggeredDialogueManager.Add(
@@ -159,39 +195,8 @@ namespace WarcraftLegacies.Source.Dialogue
           },
           new[]
           {
-            new ObjectiveCompleteQuest(ScourgeSetup.Scourge.GetQuestByType(typeof(QuestKelthuzadLich)))
+            new ObjectiveQuestComplete(ScourgeSetup.Scourge.GetQuestByType<QuestKelthuzadLich>())
           }));
-      
-      TriggeredDialogueManager.Add(new TriggeredDialogue(
-        new DialogueSequence(
-          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Arthas01.flac",
-            "Wizards of the Kirin Tor! I am Arthas, first of the Lich King's death knights! I demand that you open your gates and surrender to the might of the Scourge!",
-            "Arthas Menethil"),
-          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Antonidas02.flac",
-            "Greetings, Prince Arthas. How fares your noble father?",
-            "Antonidas"),
-          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Arthas03.flac",
-            "Lord Antonidas. There's no need to be snide.",
-            "Arthas Menethil"),
-          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Antonidas04.flac",
-            "We've prepared for your coming, Arthas. My brethren and I have erected auras that will destroy any undead that pass through them.",
-            "Antonidas"),
-          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Arthas05.flac",
-            "Your petty magics will not stop me, Antonidas.",
-            "Arthas Menethil"),
-          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Antonidas06.flac",
-            "Pull your troops back, or we will be forced to unleash our full powers against you! Make your choice, death knight.",
-            "Antonidas")
-        ), new[]
-        {
-          ScourgeSetup.Scourge,
-          DalaranSetup.Dalaran
-        }, new List<Objective>
-        {
-          new ObjectiveLegendInRect(legendSetup.Dalaran.Antonidas, Regions.Dalaran, "Dalaran"),
-          new ObjectiveLegendInRect(legendSetup.Scourge.Arthas, Regions.Dalaran, "Dalaran")
-        }
-      ));
     }
   }
 }

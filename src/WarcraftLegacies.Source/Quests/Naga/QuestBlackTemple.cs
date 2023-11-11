@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R09Y_QUEST_COMPLETED_SEAT_OF_POWER;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      Required = true;
+      
     }
 
     /// <inheritdoc />

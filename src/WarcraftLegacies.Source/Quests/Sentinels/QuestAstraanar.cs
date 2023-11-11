@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       foreach (var rectangle in rescueRects)
         _rescueUnits.AddRange(rectangle.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable));
      
-      Required = true;
+      
     }
 
     /// <inheritdoc />

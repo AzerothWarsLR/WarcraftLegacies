@@ -38,6 +38,19 @@ namespace MacroTools.Extensions
       BlzSetUnitWeaponBooleanField(whichUnit, UNIT_WEAPON_BF_ATTACK_SHOW_UI, weaponSlot, show);
       return whichUnit;
     }
+    
+    /// <summary>
+    /// Removes trees in a radius around a unit
+    /// </summary>
+    public static unit RemoveDestructablesInRadius(this unit whichUnit, float radius)
+    {
+      EnumDestructablesInCircle(radius,new Point(whichUnit.GetPosition().X,whichUnit.GetPosition().Y),
+        () =>
+        {
+          RemoveDestructable(GetEnumDestructable());
+        });
+      return whichUnit;
+    }
 
     public static unit SetUnitLevel(this unit whichUnit, int level)
     {
@@ -300,6 +313,7 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Orders a unit to perform a specified order at a specified <see cref="Point"/>.
     /// </summary>
+    [Obsolete("Use the version that takes an integer order ID instead.")]
     public static unit IssueOrder(this unit unit, string order, Point target)
     {
       IssuePointOrder(unit, order, target.X, target.Y);
@@ -309,9 +323,28 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Orders a unit to perform a specified order on the specified target.
     /// </summary>
+    [Obsolete("Use the version that takes an integer order ID instead.")]
     public static unit IssueOrder(this unit unit, string order, widget target)
     {
       IssueTargetOrder(unit, order, target);
+      return unit;
+    }
+    
+    /// <summary>
+    /// Orders a unit to perform a specified order at a specified <see cref="Point"/>.
+    /// </summary>
+    public static unit IssueOrder(this unit unit, int orderId, Point target)
+    {
+      IssuePointOrderById(unit, orderId, target.X, target.Y);
+      return unit;
+    }
+
+    /// <summary>
+    /// Orders a unit to perform a specified order on the specified target.
+    /// </summary>
+    public static unit IssueOrder(this unit unit, int orderId, widget target)
+    {
+      IssueTargetOrderById(unit, orderId, target);
       return unit;
     }
 
@@ -553,8 +586,9 @@ namespace MacroTools.Extensions
         var y = unitY + HeroDropDist * Sin(angInRadians);
         angInRadians += 360 * MathEx.DegToRad / 6;
         var itemToDrop = UnitItemInSlot(whichUnit, i);
-        if (!BlzGetItemBooleanField(itemToDrop, ITEM_BF_DROPPED_WHEN_CARRIER_DIES) &&
-            !BlzGetItemBooleanField(itemToDrop, ITEM_BF_CAN_BE_DROPPED)) continue;
+        if (!itemToDrop.IsDroppable())
+          itemToDrop.SetDroppable(true);
+
         whichUnit.DropItem(itemToDrop);
         itemToDrop.SetPositionSafe(new Point(x, y));
       }

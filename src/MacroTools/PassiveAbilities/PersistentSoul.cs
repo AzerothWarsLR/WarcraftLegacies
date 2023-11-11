@@ -39,13 +39,11 @@ namespace MacroTools.PassiveAbilities
     /// How far away corpses can be to be a candidate for reanimation.
     /// </summary>
     public float Radius { get; init; }
-
+    
     /// <inheritdoc/>
     public override void OnDeath()
     {
       var caster = GetTriggerUnit();
-      if (IsUnitType(caster, UNIT_TYPE_SUMMONED))
-        return;
 
       foreach (var unit in CreateGroup().EnumUnitsInRange(caster.GetPosition(), Radius)
                  .EmptyToList()

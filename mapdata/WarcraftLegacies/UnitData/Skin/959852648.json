@@ -36,7 +36,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": 0.75
     },
     {
       "Id": 1835101813,
@@ -61,7 +61,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Section of Dalaran dedicated to military personnel.|n|cfff5962dTrains:|R Battlemage, Initiate Mage|n|cfff5962dResearches:|R Improved Phase Blade, Improved Slow"
+      "Value": "Primary troop production building. |n|n|cfff5962dTrains:|R Battlemage, Initiate Mage|n|cfff5962dResearches:|R Improved Phase Blade, Improved Slow"
     }
   ]
 }

@@ -1,0 +1,29 @@
+{
+  "OldId": 1734963310,
+  "NewId": 909132909,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Diadon2 - 8v8 season 2 champion"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\Cityscape\\Props\\City_Statue\\City_Statue.mdl"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroPaladin"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "8v8 winner"
+    }
+  ]
+}

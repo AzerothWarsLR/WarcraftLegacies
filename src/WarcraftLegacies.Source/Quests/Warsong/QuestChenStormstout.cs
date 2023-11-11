@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       AddObjective(new ObjectiveAnyUnitInRect(Regions.Chen, "Chen Stormstout", false));
       AddObjective(new ObjectiveSelfExists());
       _chen = chen;
-      Required = true;
+      
     }
 
     /// <inheritdoc/>

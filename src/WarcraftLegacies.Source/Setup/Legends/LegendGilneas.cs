@@ -1,4 +1,5 @@
-﻿using MacroTools.LegendSystem;
+﻿using MacroTools;
+using MacroTools.LegendSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
@@ -7,16 +8,20 @@ namespace WarcraftLegacies.Source.Setup.Legends
   /// </summary>
   public sealed class LegendGilneas
   {
-    public LegendaryHero Tess { get; private set; }
-    public LegendaryHero Genn { get; private set; }
-    public LegendaryHero Darius { get; private set; }
-    public LegendaryHero Goldrinn { get; private set; }
-    public Capital GilneasCastle { get; private set; }
+    public LegendaryHero Tess { get; }
+    
+    public LegendaryHero Genn { get; }
+    
+    public LegendaryHero Darius { get; }
+    
+    public LegendaryHero Goldrinn { get; }
+    
+    public Capital GilneasCastle { get; }
 
     /// <summary>
     /// Sets up <see cref="LegendGilneas"/>.
     /// </summary>
-    public LegendGilneas()
+    public LegendGilneas(PreplacedUnitSystem preplacedUnitSystem)
     {
       Tess = new LegendaryHero("Tess Greymane")
       {
@@ -38,12 +43,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Darius = new LegendaryHero("Darius Crowley")
       {
         UnitType = Constants.UNIT_HPB2_GILNEAN_LORD_GILNEAS,
+        StartingXp = 5400
       };
 
       GilneasCastle = new Capital
       {
-        UnitType = Constants.UNIT_H04I_GILNEAS_CASTLE_GILNEAS_OTHER,
-        DeathMessage = "The Gilneas castle has fallen",
+        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H04I_GILNEAS_CASTLE_GILNEAS_OTHER),
         Essential = true
       };
     }

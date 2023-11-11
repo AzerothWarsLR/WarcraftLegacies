@@ -24,19 +24,15 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n08D"))));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n00G"))));
+      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N09H_EN_KILAH)));
       AddObjective(new ObjectiveUnitIsDead(spiderQueen));
       AddObjective(new ObjectiveUpgrade(FourCC("unp2"), FourCC("unp1")));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
 
-      foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect.Rect).EmptyToList())
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          SetUnitInvulnerable(unit, true);
-          _rescueUnits.Add(unit);
-        }
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
 
-      Required = true;
+      
     }
 
     /// <inheritdoc/>
@@ -45,7 +41,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Access to the Plague Research at the Frozen Throne, Kel'thuzad and Rivendare trainable and a base in Icecrown";
+      "Gain control of a base in Icecrown";
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)

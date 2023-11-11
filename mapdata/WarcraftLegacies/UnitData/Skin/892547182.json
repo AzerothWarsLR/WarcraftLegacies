@@ -1,36 +1,47 @@
 {
-  "OldId": 1952937838,
+  "OldId": 1650813038,
   "NewId": 892547182,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1651270517,
-      "Value": 100
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNSalvationSpire.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Crusade Special)"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "buildings\\human\\HumanBarracks\\HumanBarracks.mdl"
+      "Value": "war3mapImported\\SalvationSpire.mdl"
     },
     {
-      "Id": 1735156597,
-      "Value": 100
-    },
-    {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 0.9
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "F"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Scholomance"
+      "Value": "Divine Bastion"
     },
     {
-      "Id": 1919705973,
-      "Value": 100
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build the Divine Bastion"
     },
     {
       "Id": 1935832437,
@@ -38,29 +49,14 @@
       "Value": ""
     },
     {
-      "Id": 1651012469,
+      "Id": 1651864693,
       "Type": 3,
-      "Value": "ShadowHumanBarracks"
+      "Value": "Supreme light production building. |n|n|r|cfff5962dTrains:|R Seraphim, Archangel"
     },
     {
-      "Id": 1634759541,
-      "Type": 3,
-      "Value": "Objects\\Spawnmodels\\Human\\HCancelDeath\\HCancelDeath.mdl"
-    },
-    {
-      "Id": 1885430133,
-      "Type": 3,
-      "Value": "medium"
-    },
-    {
-      "Id": 1718840949,
-      "Type": 3,
-      "Value": " (Caer Darrow Portal)"
-    },
-    {
-      "Id": 1868786037,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHumanBarracks.blp"
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 6
     }
   ]
 }

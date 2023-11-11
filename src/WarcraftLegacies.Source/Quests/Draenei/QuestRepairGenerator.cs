@@ -25,8 +25,8 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     {
       _exodarGenerator = exodarGenerator;
       _protectors = protectors;
-      Required = true;
-      AddObjective(new ObjectiveCompleteQuest(prerequisite));
+      
+      AddObjective(new ObjectiveQuestComplete(prerequisite));
       AddObjective(new ObjectiveUnitReachesFullHealth(exodarGenerator.Unit));
     }
 

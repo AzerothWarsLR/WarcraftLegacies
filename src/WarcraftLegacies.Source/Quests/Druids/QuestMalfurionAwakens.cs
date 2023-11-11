@@ -45,13 +45,13 @@ namespace WarcraftLegacies.Source.Quests.Druids
       AddObjective(new ObjectiveArtifactInRect(hornofCenarius, Regions.Moonglade,
         "The Barrow Den"));
       AddObjective(new ObjectiveExpire(480, Title));
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_ETOE_TREE_OF_ETERNITY_DRUIDS_T3, Constants.UNIT_ETOL_TREE_OF_LIFE_DRUIDS_T1));
+      AddObjective(new ObjectiveUpgrade(Constants.UNIT_ETOE_TREE_OF_ETERNITY_DRUID_T3, Constants.UNIT_ETOL_TREE_OF_LIFE_DRUID_T1));
       AddObjective(new ObjectiveSelfExists());
       _moongladeUnits = moonglade.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _darnassusUnits = darnassus.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _cenarionHoldUnits = cenarionHold.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       worldTree.SetInvulnerable(true);
-      Required = true;
+      
     }
 
     /// <inheritdoc />

@@ -1,7 +1,7 @@
 ﻿using MacroTools;
 using MacroTools.PassiveAbilitySystem;
-using MacroTools.Spells.Slipstream;
 using MacroTools.SpellSystem;
+using WarcraftLegacies.Source.Spells.Slipstream;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Setup.Spells

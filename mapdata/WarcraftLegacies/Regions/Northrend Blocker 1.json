@@ -1,0 +1,15 @@
+{
+  "Left": 5376,
+  "Bottom": 13568,
+  "Right": 6016,
+  "Top": 13952,
+  "Name": "Northrend Blocker 1",
+  "CreationNumber": 196,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

@@ -35,7 +35,7 @@
     {
       "Id": 1650550901,
       "Type": 3,
-      "Value": "A04N,A0WM,A0KU,ANin,Aamk"
+      "Value": "A04N,A0WM,A0KU,SNin,Aamk"
     },
     {
       "Id": 1836083317,
@@ -75,7 +75,7 @@
     {
       "Id": 1731289461,
       "Type": 3,
-      "Value": "air,ancient,debris,ground,item,mechanical,nonancient,organic,structure,ward"
+      "Value": "ground,structure,debris,item,ward"
     },
     {
       "Id": 1918985077,

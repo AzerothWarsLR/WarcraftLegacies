@@ -1,5 +1,5 @@
 {
-  "OldId": 1701145448,
+  "OldId": 1718186600,
   "NewId": 1345925224,
   "Unk": [
     0
@@ -8,51 +8,67 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNGilneasKeep.blp"
-    },
-    {
-      "Id": 2020631157,
-      "Value": 2
+      "Value": "ReplaceableTextures/CommandButtons/BTNScarletArcher.blp"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Onslaught T2)"
+      "Value": "(scarlet)"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\AlteracTownHall.mdl"
+      "Value": "war3mapImported\\ScarletArcher.mdl"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "C"
+      "Value": "W"
+    },
+    {
+      "Id": 2020633717,
+      "Type": 2,
+      "Value": 11
+    },
+    {
+      "Id": 2037410933,
+      "Type": 2,
+      "Value": 62
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 71
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.15
     },
     {
       "Id": 1831952757,
       "Type": 3,
-      "Value": "Abilities\\Weapons\\BallistaMissile\\BallistaMissile.mdl"
+      "Value": "Archer_Lordaeron_ArrowMissile.mdl"
     },
     {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 0.85
-    },
-    {
-      "Id": 1668510581,
-      "Type": 1,
-      "Value": 4.3
-    },
-    {
-      "Id": 1935832437,
+      "Id": 1835101813,
       "Type": 3,
-      "Value": ""
+      "Value": "Longbowman"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Longbowman"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Peasant|n|cfff5962dUpgrades to:|R Castle"
+      "Value": "Highly skilled hunter of Tirisfal.|n|cfff5962dCan learn:|R Ensnare, United for the Cause, United for the Crusade|n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Footman"
     }
   ]
 }

@@ -2,12 +2,10 @@
 using MacroTools;
 using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
-using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Quests;
-using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.QuestSetup
 {
@@ -21,38 +19,20 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
     /// </summary>
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
-      var tombOfSargerasQuest = CreateTombOfSargerasQuest(preplacedUnitSystem);
-      var ragnarosQuest = CreateRagnarosQuest(preplacedUnitSystem, allLegendSetup);
-      var dragonsOfNightmareOne = CreateDragonsOfNightmareQuestOne(preplacedUnitSystem);
-      foreach (var faction in FactionManager.GetAllFactions())
+      SharedQuestRepository.RegisterQuest(CreateTombOfSargerasQuest(preplacedUnitSystem));
+      SharedQuestRepository.RegisterQuest(CreateRagnarosQuest(preplacedUnitSystem, allLegendSetup));
+      SharedQuestRepository.RegisterQuest(CreateDragonsOfNightmareQuest(preplacedUnitSystem));
+      SharedQuestRepository.RegisterQuestFactory(_ => new QuestZinrokhAssembly(new List<Artifact>
       {
-        faction.AddQuest(tombOfSargerasQuest);
-        faction.AddQuest(new QuestZinrokhAssembly(new List<Artifact>
-        {
-          artifactSetup.AzureFragment,
-          artifactSetup.BronzeFragment,
-          artifactSetup.EmeraldFragment,
-          artifactSetup.ObsidianFragment,
-          artifactSetup.RubyFragment
-        }));
-        faction.AddQuest(new QuestBookOfMedivh(allLegendSetup.Dalaran.Dalaran, preplacedUnitSystem.GetUnit(Constants.UNIT_NBSM_BOOK_OF_MEDIVH),
-          artifactSetup.BookOfMedivh, faction == LegionSetup.Legion, faction == DalaranSetup.Dalaran));
-        faction.AddQuest(ragnarosQuest);
-      }
-      AddDragonsOfNightmareQuests(dragonsOfNightmareOne);
+        artifactSetup.AzureFragment,
+        artifactSetup.BronzeFragment,
+        artifactSetup.EmeraldFragment,
+        artifactSetup.ObsidianFragment,
+        artifactSetup.RubyFragment
+      }));
     }
-    private static void AddDragonsOfNightmareQuests(QuestDragonsOfNightmare dragonsOfNightmareOne)
-    {
-      // These quests should only show up once they become relevant
-      TimerStart(CreateTimer(), 360, false, () =>
-      {
-        foreach (var faction in FactionManager.GetAllFactions())
-        {
-          faction.AddQuest(dragonsOfNightmareOne);
-        }
-      });
-    }
-    private static QuestDragonsOfNightmare CreateDragonsOfNightmareQuestOne(PreplacedUnitSystem preplacedUnitSystem)
+    
+    private static QuestDragonsOfNightmare CreateDragonsOfNightmareQuest(PreplacedUnitSystem preplacedUnitSystem)
     {
       var waygateOne = preplacedUnitSystem.GetUnit(Constants.UNIT_N07F_EMERALD_PORTAL_DRAGON_PORTALS, Regions.FeralasEmeraldPortal.Center).Show(false);
       var waygateTwo = preplacedUnitSystem.GetUnit(Constants.UNIT_N07F_EMERALD_PORTAL_DRAGON_PORTALS, Regions.AshenvaleEmeraldPortal.Center).Show(false);

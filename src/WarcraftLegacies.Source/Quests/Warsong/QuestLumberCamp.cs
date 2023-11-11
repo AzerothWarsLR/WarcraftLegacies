@@ -25,10 +25,10 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_O02S_FORTRESS_WARSONG_T3, Constants.UNIT_O00C_GREAT_HALL_WARSONG_T1));
       AddObjective(new ObjectiveExpire(480, Title));
       AddObjective(new ObjectiveSelfExists());
-      Required = true;
+      
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
 
-      Required = true;
+      
     }
 
     /// <inheritdoc />

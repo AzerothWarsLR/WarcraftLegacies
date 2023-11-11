@@ -1,4 +1,5 @@
-﻿using MacroTools.ControlPointSystem;
+﻿using System;
+using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
 
@@ -12,14 +13,20 @@ namespace MacroTools
     /// <summary>
     /// Runs the <see cref="RuntimeIntegrityChecker"/>.
     /// </summary>
-    public static void Setup(bool isReleaseVersion)
+    public static void Setup()
     {
-      if (isReleaseVersion)
-        return;
-      
-      NoNeutralPassiveVulnerableControlPoints();
+      GameTime.GameStarted += RunGameStartChecks;
       CheckUndefeatedResearchNames();
       CheckQuestResearchNames();
+    }
+
+    /// <summary>
+    /// Run checks that are only relevant once the game has finished initializing.
+    /// </summary>
+    private static void RunGameStartChecks(object? sender, EventArgs eventArgs)
+    {
+      NoNeutralPassiveVulnerableControlPoints();
+      GameTime.GameStarted -= RunGameStartChecks;
     }
 
     private static void NoNeutralPassiveVulnerableControlPoints()

@@ -15,7 +15,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Druids)"
+      "Value": "(Druid Barracks)"
     },
     {
       "Id": 1953458293,
@@ -40,7 +40,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Ancient of the warrior Sentinels.|n|cfff5962dTrains:|R Sapling, Dryad, Siege Ancient|n|cfff5962dResearches:|R Improved Thorns, Crippling Poison, Deadly Poison|n|n|cffffcc00Attacks land units.|r"
+      "Value": "Primary troop production building. |n|n|cfff5962dTrains:|R Sapling, Dryad, Siege Ancient|n|cfff5962dResearches:|R Improved Thorns, Crippling Poison, Deadly Poison|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

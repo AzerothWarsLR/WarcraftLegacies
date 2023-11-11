@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNGilneasFarm.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStromgardeFarm.blp"
     },
     {
       "Id": 2020631157,
@@ -51,17 +51,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Civilian farmstead supplying food for the Kingdom.|nProvides 8 food, which increases the maximum number of units that can be trained."
+      "Value": "Provides 8 food, which increases the maximum number of units that can be trained."
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Household"
+      "Value": "Farmstead"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Household"
+      "Value": "Build Farmstead"
     }
   ]
 }

@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       AddObjective(new ObjectiveControlCapital(nordrassil, false));
       AddObjective(new ObjectiveLegendNotPermanentlyDead(grom));
       ResearchId = Constants.UPGRADE_R08M_QUEST_COMPLETED_TEAR_IT_DOWN;
-      Required = true;
+      
     }
 
     /// <inheritdoc/>

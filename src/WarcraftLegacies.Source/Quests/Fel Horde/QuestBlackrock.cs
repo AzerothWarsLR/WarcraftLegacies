@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       @"ReplaceableTextures\CommandButtons\BTNBlackhand.blp")
     {
       foreach (var prequisite in prequisites)
-        AddObjective(new ObjectiveCompleteQuest(prequisite));
+        AddObjective(new ObjectiveQuestComplete(prequisite));
       AddObjective(new ObjectiveResearch(Constants.UPGRADE_R090_ACTIVATE_THE_BLACKROCK_CLAN_FEL, Constants.UNIT_O008_HELLFIRE_CITADEL_FEL_HORDE));
       AddObjective(new ObjectiveTime(540));
       AddObjective(new ObjectiveExpire(660, Title));
@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       _rescueUnits1 = rescueRect1.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _rescueUnits2 = rescueRect2.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       _rescueRect = rescueRect1;
-      Required = true;
+      
     }
 
     //Todo: bad flavour

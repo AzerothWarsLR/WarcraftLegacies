@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using MacroTools.DummyCasters;
+using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using WCSharp.Effects;
 using WCSharp.Shared.Data;
@@ -42,9 +43,9 @@ namespace MacroTools.Spells
     public int StunAbilityId { get; init; }
 
     /// <summary>
-    /// The order string for <see cref="StunAbilityId"/>.
+    /// The order ID for <see cref="StunAbilityId"/>.
     /// </summary>
-    public string StunOrderString { get; init; } = "";
+    public int StunOrderId { get; init; }
 
     /// <summary>
     /// The special effect to create at the caster's position.
@@ -60,9 +61,9 @@ namespace MacroTools.Spells
     private void StunUnit(unit caster, unit target)
     {
       var duration = DurationBase + DurationLevel * GetAbilityLevel(caster);
-      if (StunAbilityId == 0 || StunOrderString == "" || duration <= 0)
+      if (StunAbilityId == 0 || duration <= 0)
         return;
-      DummyCast.DummyCastUnit(caster, StunAbilityId, StunOrderString, duration, target, DummyCastOriginType.Target);
+      DummyCasterManager.GetGlobalDummyCaster().CastUnit(caster, StunAbilityId, StunOrderId, duration, target, DummyCastOriginType.Target);
     }
 
     /// <inheritdoc />

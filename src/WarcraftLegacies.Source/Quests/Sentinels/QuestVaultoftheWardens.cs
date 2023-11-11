@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
         120, 90));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R06H_QUEST_COMPLETED_VAULT_OF_THE_WARDENS_SENTINELS_JAROD;
-      Required = true;
+      
     }
 
     /// <inheritdoc />
@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      $"4 free {GetObjectName(Constants.UNIT_H045_WARDEN_SENTINELS)}s appear at the Broken Isles, and you learn to train {GetObjectName(Constants.UNIT_H045_WARDEN_SENTINELS)}s from the {GetObjectName(Constants.UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)} and from {GetObjectName(Constants.UNIT_E00T_WATCHER_S_BASTION_SENTINEL_SPECIALIST)}s";
+      $"4 free {GetObjectName(Constants.UNIT_H045_WARDEN_SENTINELS)}s appear at the Broken Isles, and you learn to train {GetObjectName(Constants.UNIT_H045_WARDEN_SENTINELS)}s from the {GetObjectName(Constants.UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)} and from {GetObjectName(Constants.UNIT_E00T_WATCHER_S_BASTION_SENTINEL_SIEGE)}s";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       CreateUnits(completingFaction.Player, WardenId, Regions.VaultoftheWardens.Center.X,
         Regions.VaultoftheWardens.Center.Y, 270, 4);
       completingFaction.Player.DisplayUnitTypeAcquired(WardenId,
-        $"You can now train Wardens from the {GetObjectName(Constants.UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)} and from {GetObjectName(Constants.UNIT_E00T_WATCHER_S_BASTION_SENTINEL_SPECIALIST)}s.");
+        $"You can now train Wardens from the {GetObjectName(Constants.UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)} and from {GetObjectName(Constants.UNIT_E00T_WATCHER_S_BASTION_SENTINEL_SIEGE)}s.");
       _vaultOfTheWardens.Unit?.Rescue(completingFaction.Player);
     }
 

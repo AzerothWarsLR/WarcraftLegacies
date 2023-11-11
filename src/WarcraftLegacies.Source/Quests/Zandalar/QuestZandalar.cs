@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       //For some reason that one dock just does not get rescured even though it is inside the rect so we add it manually here.
       _rescueUnits.Add(preplacedUnitSystem.GetUnit(Constants.UNIT_O049_GOLDEN_DOCK_ZANDALARI_SHIPYARD, new Point(-3738, -16911)));
-      Required = true;
+      
     }
 
     /// <inheritdoc/>

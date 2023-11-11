@@ -1,0 +1,79 @@
+{
+  "OldId": 1718186600,
+  "NewId": 1363357800,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNarbalesticon.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Lordaeron)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\arbalester.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 2020633717,
+      "Type": 2,
+      "Value": 11
+    },
+    {
+      "Id": 2037410933,
+      "Type": 2,
+      "Value": 62
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 71
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.05
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\CrossboltMissile.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Royal Arbalest"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Royal Arbalest"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Trained crossbowmen of Lordaeron.|n|cfff5962dAbilities:|R Armor Piercing Bolt|n|cfff5962dCan learn:|R Ensnare, Rapid Fire|n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Footman"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    }
+  ]
+}

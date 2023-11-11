@@ -15,7 +15,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Druids)"
+      "Value": "(Druid Farm)"
     },
     {
       "Id": 1953458293,
@@ -40,7 +40,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Well of Elune\u0027s Light.|nProvides 8 food, which increases the maximum number of units that can be trained.|n|cfff5962dAbilities:|R Replenish Mana and Life"
+      "Value": "Provides 8 food, which increases the maximum number of units that can be trained.|n|n|cfff5962dAbilities:|R Replenish Mana and Life"
     }
   ]
 }

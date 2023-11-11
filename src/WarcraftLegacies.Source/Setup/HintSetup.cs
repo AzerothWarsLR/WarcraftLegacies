@@ -1,8 +1,5 @@
-using MacroTools;
 using MacroTools.HintSystem;
-using MacroTools.Instances;
 using MacroTools.LegendSystem;
-using WarcraftLegacies.Source.GameLogic.GameEnd;
 
 namespace WarcraftLegacies.Source.Setup
 {

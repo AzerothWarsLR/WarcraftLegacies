@@ -24,6 +24,7 @@ namespace WarcraftLegacies.Source.Setup
       RockSystem.Register(new RockGroup(Regions.KaliRock12, RockChunkId, 300));
       RockSystem.Register(new RockGroup(Regions.KaliRock14, RockChunkId, 480));
 
+      //Island rocks
       RockSystem.Register(new RockGroup(Regions.IslandBlocker1, IslandChunkId, 1200));
       RockSystem.Register(new RockGroup(Regions.IslandBlocker2, IslandChunkId, 1200));
       RockSystem.Register(new RockGroup(Regions.IslandBlocker3, IslandChunkId, 1200));
@@ -31,12 +32,20 @@ namespace WarcraftLegacies.Source.Setup
       RockSystem.Register(new RockGroup(Regions.IslandBlocker5, IslandChunkId, 1200));
       RockSystem.Register(new RockGroup(Regions.IslandBlocker6, IslandChunkId, 1200));
 
+      //Kali Ashenvale rocks
       RockSystem.Register(new RockGroup(Regions.KaliRock7, ForestChunkId, 480));
       RockSystem.Register(new RockGroup(Regions.KaliRock10, ForestChunkId, 480));
       RockSystem.Register(new RockGroup(Regions.KaliRock11, ForestChunkId, 480));
       RockSystem.Register(new RockGroup(Regions.KaliRock13, ForestChunkId, 480));
 
-      RockSystem.Register(new RockGroup(Regions.GilneasUnlock5, RockChunkId, 660));
+      //Northrend Rocks
+      RockSystem.Register(new RockGroup(Regions.NorthrendRock1, RockChunkId, 360));
+      RockSystem.Register(new RockGroup(Regions.NorthrendRock2, RockChunkId, 360));
+      RockSystem.Register(new RockGroup(Regions.NorthrendRock3, RockChunkId, 360));
+      RockSystem.Register(new RockGroup(Regions.NorthrendRock4, RockChunkId, 360));
+
+      //Bridge Rocks
+      RockSystem.Register(new RockGroup(Regions.BridgeAmbient, RockChunkId, 1800));
     }
   }
 }

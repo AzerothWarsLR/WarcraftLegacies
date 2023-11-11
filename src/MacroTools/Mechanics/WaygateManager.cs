@@ -34,9 +34,9 @@ namespace MacroTools.Mechanics
       else if (WaygateB == null)
       {
         WaygateB = newWaygate;
-        WaygateA.Sister = WaygateB;
-        WaygateB.Sister = WaygateA;
       }
+      WaygateA.Sister = WaygateB;
+      if (WaygateB != null) WaygateB.Sister = WaygateA;
 
       newWaygate.Died += OnWaygateDied;
 

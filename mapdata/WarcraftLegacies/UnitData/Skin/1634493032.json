@@ -29,14 +29,14 @@
       "Value": ""
     },
     {
-      "Id": 1651864693,
-      "Type": 3,
-      "Value": "Forges iron and steel for the war effort.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Flight, Navigation, Improved Cannons, Fortified Hulls, Improved Lumber Harvesting, Improved Masonry"
-    },
-    {
       "Id": 1633907573,
       "Type": 1,
       "Value": 0.85
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "General research building. |n|n|cfff5962dResearches:|r Forged Weaponry, Armor Plating, Power Infusion, Flight, Navigation, Improved Cannons, Fortified Hulls, Improved Lumber Harvesting, Improved Masonry"
     }
   ]
 }

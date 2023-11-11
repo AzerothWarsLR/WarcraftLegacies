@@ -16,8 +16,8 @@ namespace WarcraftLegacies.Source.Quests.Legion
     private readonly unit _legionTeleporter1;
     private readonly unit _legionTeleporter2;
 
-    public QuestArgusControl(PreplacedUnitSystem preplacedUnitSystem) : base("Argus Incursion",
-      "The planet of Argus is not fully under the control of the Legion. Bring it under control!",
+    public QuestArgusControl(PreplacedUnitSystem preplacedUnitSystem) : base("Argus",
+      "The planet of Argus is not yet fully under the control of the Legion.",
       @"ReplaceableTextures\CommandButtons\BTNMastersLodge.blp")
     {
       AddObjective(new ObjectiveControlPoint(
@@ -31,8 +31,8 @@ namespace WarcraftLegacies.Source.Quests.Legion
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_U00N_BURNING_CITADEL_LEGION_T3,
         Constants.UNIT_U00C_LEGION_BASTION_LEGION_T2));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = Constants.UPGRADE_R055_QUEST_COMPLETED_ARGUS_INCURSION;
-      Required = true;
+      ResearchId = Constants.UPGRADE_R055_QUEST_COMPLETED_ARGUS;
+      
 
       _legionTeleporter1 =
         preplacedUnitSystem.GetUnit(Constants.UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, new Point(22939, -29345));
@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
 
     /// <inheritdoc/>
     protected override string RewardFlavour =>
-      "With Argus finally under the Legion's control, the invasion of Azeroth can begin! ";
+      "With Argus finally under the Legion's control, the invasion of Azeroth can begin in earnest.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

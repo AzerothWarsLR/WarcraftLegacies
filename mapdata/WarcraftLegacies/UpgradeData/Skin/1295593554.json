@@ -9,13 +9,13 @@
       "Level": 1,
       "Id": 829579623,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHealingWave.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNInvadingVines.blp"
     },
     {
       "Level": 2,
       "Id": 829579623,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHealingWave.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFarSight.blp"
     },
     {
       "Id": 2020631143,
@@ -67,7 +67,7 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Harvest-Witch\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Healing Wave."
+      "Value": "Increases Harvest-Witch\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Thorned Vines."
     },
     {
       "Level": 2,

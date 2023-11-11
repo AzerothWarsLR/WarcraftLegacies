@@ -51,7 +51,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Siege troop production building.|n|cfff5962dTrains:|R Scorpion, Mangonel"
+      "Value": "Siege production building. |n|n|cfff5962dTrains:|R Scorpion, Mangonel"
     },
     {
       "Id": 1868786037,
@@ -67,6 +67,11 @@
       "Id": 1633907573,
       "Type": 1,
       "Value": 0.8
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": "ShadowArmory"
     }
   ]
 }

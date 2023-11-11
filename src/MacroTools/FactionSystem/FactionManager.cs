@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.Extensions;
 using static War3Api.Common;
@@ -75,8 +76,18 @@ namespace MacroTools.FactionSystem
     /// Returns the <see cref="Faction"/> with the specified name if one exists.
     /// Returns null otherwise.
     /// </summary>
-    public static Faction? GetFromName(string name) => 
+    public static Faction? GetFactionByName(string name) => 
       FactionsByName.TryGetValue(name.ToLower(), out var faction) ? faction : null;
+    
+    /// <summary>
+    /// Returns true if a <see cref="Faction"/> with the specified type exists.
+    /// </summary>
+    /// <param name="faction">Outputs the <see cref="Faction"/> with the specified type.</param>
+    public static bool TryGetFactionByType<T>([NotNullWhen(true)] out Faction? faction) where T : Faction
+    {
+      faction = FactionsByName.Values.FirstOrDefault(x => x.GetType() == typeof(T)) as T;
+      return faction != null;
+    }
 
     /// <summary>
     ///   Registers a <see cref="Faction" /> to the <see cref="FactionManager" />,
@@ -88,14 +99,13 @@ namespace MacroTools.FactionSystem
       {
         FactionsByName[faction.Name.ToLower()] = faction;
         FactionRegistered?.Invoke(faction, faction);
+        faction.OnRegistered();
         faction.NameChanged += OnFactionNameChange;
       }
       else
       {
         throw new Exception($"Attempted to register faction that already exists with name {faction}.");
       }
-
-      FactionRegistered?.Invoke(faction, faction);
     }
 
     /// <summary>

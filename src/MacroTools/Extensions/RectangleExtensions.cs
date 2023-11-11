@@ -46,6 +46,46 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>
+    /// Removes all Neutral Passive units from the area, except for unremovable units, which are instead made hostile.
+    /// </summary>
+    public static void CleanupNeutralPassiveUnits(this Rectangle area)
+    {
+      var unitsInArea = CreateGroup()
+        .EnumUnitsInRect(area)
+        .EmptyToList();
+      foreach (var unit in unitsInArea)
+      {
+        if (!unit.IsRemovable())
+        {
+          unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+          continue;
+        }
+
+        if (unit.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE) && !IsUnitType(unit, UNIT_TYPE_STRUCTURE))
+        {
+          unit.Remove();
+        }
+      }
+    }
+
+    /// <summary>
+    /// Removes all removable, hostile units in the area.
+    /// </summary>
+    public static void CleanupHostileUnits(this Rectangle area)
+    {
+      var unitsInArea = CreateGroup()
+        .EnumUnitsInRect(area)
+        .EmptyToList();
+      foreach (var unit in unitsInArea)
+      {
+        if (unit.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && unit.IsRemovable())
+        {
+          unit.Remove();
+        }
+      }
+    }
+    
+    /// <summary>
     /// Prepares all Neutral Passive inside the specified <paramref name="rectangle"/>.
     /// </summary>
     /// <param name="rectangle">The rectangle in which to prepare units.</param>

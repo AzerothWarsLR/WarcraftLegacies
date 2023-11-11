@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
   public sealed class QuestZulgurub : QuestData
   {
     private const int _zulgurubResearch = Constants.UPGRADE_R02M_QUEST_COMPLETED_THE_HEART_OF_HAKKAR_WARSONG;
-    private const int _trollShrineId = Constants.UNIT_O04X_LOA_SHRINE_ZANDALARI_SPECIALIST;
+    private const int _trollShrineId = Constants.UNIT_O04X_LOA_SHRINE_ZANDALARI_SIEGE;
     private const int _ravagerId = Constants.UNIT_O021_RAVAGER_ZANDALAR;
     private readonly int goldReward = 50;
 

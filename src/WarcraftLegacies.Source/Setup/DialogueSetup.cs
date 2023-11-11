@@ -8,25 +8,27 @@ namespace WarcraftLegacies.Source.Setup
   {
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup legendSetup)
     {
-      try
+      GameTime.GameStarted += (_, _) =>
       {
-        ScourgeDialogueSetup.Setup(legendSetup);
-        WarsongDialogueSetup.Setup(legendSetup);
-        DruidsDialogueSetup.Setup(preplacedUnitSystem, legendSetup);
-        LordaeronDialogueSetup.Setup(preplacedUnitSystem, legendSetup);
-        IllidariDialogueSetup.Setup(legendSetup);
-        SentinelsDialogueSetup.Setup(legendSetup);
-        FrostwolfDialogueSetup.Setup(legendSetup);
-        LegionDialogueSeup.Setup(legendSetup);
-        DalaranDialogueSetup.Setup(legendSetup);
-        QuelthalasDialogueSetup.Setup(legendSetup);
-        GoblinDialogueSetup.Setup(legendSetup);
-        KultirasDialogueSetup.Setup(legendSetup);
-      }
-      catch (Exception ex)
-      {
-        Console.WriteLine($"Failed to run DialogueSetup: {ex}");
-      }
+        try
+        {
+          ScourgeDialogueSetup.Setup(legendSetup);
+          WarsongDialogueSetup.Setup(legendSetup);
+          DruidsDialogueSetup.Setup(preplacedUnitSystem, legendSetup);
+          LordaeronDialogueSetup.Setup(preplacedUnitSystem, legendSetup);
+          IllidariDialogueSetup.Setup(legendSetup);
+          SentinelsDialogueSetup.Setup(legendSetup);
+          FrostwolfDialogueSetup.Setup(legendSetup);
+          LegionDialogueSeup.Setup(legendSetup);
+          QuelthalasDialogueSetup.Setup(legendSetup);
+          GoblinDialogueSetup.Setup(legendSetup);
+          KultirasDialogueSetup.Setup(legendSetup);
+        }
+        catch (Exception ex)
+        {
+          Console.WriteLine($"Failed to run DialogueSetup: {ex}");
+        }
+      };
     }
   }
 }

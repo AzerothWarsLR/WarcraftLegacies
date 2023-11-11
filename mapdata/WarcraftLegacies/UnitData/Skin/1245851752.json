@@ -12,7 +12,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Onslaught Tower)"
+      "Value": "(Crusade Tower)"
     },
     {
       "Id": 1818520949,
@@ -32,12 +32,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Improved Cannon Tower"
+      "Value": "Improved Bombard Tower"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Upgrade to Improved Cannon Tower"
+      "Value": "Upgrade to Improved Bombard Tower"
     },
     {
       "Id": 1935832437,
@@ -47,12 +47,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Heavy defensive structure. Particularly effective against clusters of troops.|n|n|cffffcc00Attacks land units and trees.|r"
+      "Value": "Heavy defensive structure, effective against clusters of ground units. |n|n|cfff5962dAbilities:|R Magic Sentry|r|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNGilneasTowerCannon.blp"
+      "Value": "ReplaceableTextures/CommandButtons/BTNAlteracCannonTower.blp"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\BoatMissile\\BoatMissile.mdl"
     }
   ]
 }

@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       "In the ashes of the battle of Black Temple, the Fel Horde will rebuild their bases of operation to support their new overlord",
       @"ReplaceableTextures\CommandButtons\BTNFelOrcAltarOfStorms.blp")
     {
-      Required = true;
+      
       AddObjective(new ObjectiveAnyUnitInRect(rescueRect, "Shadowmoon Valley", false));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02T_TEROKKAR_FOREST)));
       AddObjective(new ObjectiveSelfExists());

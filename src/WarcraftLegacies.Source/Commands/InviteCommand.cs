@@ -1,6 +1,5 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using WarcraftLegacies.Source.GameLogic;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Commands
@@ -27,7 +26,7 @@ namespace WarcraftLegacies.Source.Commands
         return;
       }
 
-      var targetFaction = FactionManager.GetFromName(content);
+      var targetFaction = FactionManager.GetFactionByName(content);
 
       if (triggerPlayer.GetFaction() == targetFaction)
       {

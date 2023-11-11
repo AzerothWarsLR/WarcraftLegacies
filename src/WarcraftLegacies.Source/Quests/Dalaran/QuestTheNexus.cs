@@ -58,8 +58,8 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       completingFaction.ModObjectLimit(Constants.UNIT_N0A4_BLUE_DRAGONSPAWN_NEXUS, Faction.UNLIMITED);
       completingFaction.ModObjectLimit(FourCC("u025"), 12); //Elementalist
       completingFaction.ModObjectLimit(Constants.UNIT_N09T_JUDICATOR_NEXUS, 6);
-      completingFaction.ModObjectLimit(Constants.UNIT_H09A_DRACONIC_SPIRE_DALARAN_SPECIALIST, Faction.UNLIMITED);
-      completingFaction.ModObjectLimit(Constants.UNIT_H09B_BLUE_DRAGON_ROOST_DALARAN_SPECIALIST, Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(Constants.UNIT_H09A_DRACONIC_SPIRE_DALARAN_BARRACKS_ALTERNATE, Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(Constants.UNIT_H09B_BLUE_DRAGON_ROOST_DALARAN_SIEGE, Faction.UNLIMITED);
 
       _jaina.UnitType = Constants.UNIT_H04A_LORD_OF_THE_NEXUS_NEXUS;
       

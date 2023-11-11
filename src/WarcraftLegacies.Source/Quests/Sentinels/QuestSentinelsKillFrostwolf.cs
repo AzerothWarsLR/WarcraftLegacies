@@ -21,14 +21,14 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     {
       AddObjective(new ObjectiveControlCapital(thunderBluff, false));
       ResearchId = Constants.UPGRADE_R052_QUEST_COMPLETED_DRIVE_THEM_BACK_SENTINELS;
-      Required = true;
+      
     }
     /// <inheritdoc/>
     protected override string RewardFlavour =>
       "The Frostwolves have been ousted from Kalimdor, along with their Tauren allies. They will not be missed.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => $"Learn to train {GetObjectName(Constants.UNIT_E022_MOON_RIDER_SENTINELS)}s from the {GetObjectName(Constants.UNIT_EDOS_ROOST_SENTINELS)}s and research {GetObjectName(Constants.UPGRADE_REMG_UPGRADE_MOON_GLAIVE_LIGHT_BLUE_RESEARCH)}'s second level from the {GetObjectName(Constants.UNIT_E00L_WAR_ACADEMY_SENTINEL_BARRACKS)}";
+    protected override string RewardDescription => $"Learn to train {GetObjectName(Constants.UNIT_E022_MOON_RIDER_SENTINELS)}s from the {GetObjectName(Constants.UNIT_EDOS_ROOST_SENTINEL_SPECIALIST)}s and research {GetObjectName(Constants.UPGRADE_REMG_UPGRADE_MOON_GLAIVE_LIGHT_BLUE_RESEARCH)}'s second level from the {GetObjectName(Constants.UNIT_E00L_WAR_ACADEMY_SENTINEL_BARRACKS)}";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

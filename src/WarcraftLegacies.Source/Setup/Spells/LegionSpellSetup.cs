@@ -1,7 +1,8 @@
 ﻿using MacroTools;
 using MacroTools.Spells;
-using MacroTools.Spells.Slipstream;
 using MacroTools.SpellSystem;
+using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.Spells.Slipstream;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Setup.Spells
@@ -29,6 +30,19 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var summonBurningLegion = new SummonLegionSpell(Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS,
         Constants.ABILITY_A0KZ_SPELL_IMMUNITY_LEGION_SUMMON);
       SpellSystem.Register(summonBurningLegion);
+      
+      var massSummonUnit = new DelayedMultiTargetRecall( Constants.ABILITY_A02T_DARK_SUMMONING_DREADLORD, CastFilters.IsTargetOwnAliveNonHeroUnit)
+      {
+        Radius = 400,
+        AmountToTarget = 12,
+        MinDuration = 3,
+        MaxDuration = 30,
+        CrossDimensionalDuration = 15,
+        DistanceDivider = 1000,
+        DeathPenalty = 0.5f,
+        TargetType = SpellTargetType.Point
+      };
+      SpellSystem.Register(massSummonUnit);
 
       //Northrend
       SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A0UB_OPEN_A_PORTAL_TO_NORTHREND_LEGION_NORTHREND)
@@ -48,16 +62,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
         ClosingDelay = 5,
         TargetLocation = new Point(11366, 5802),
         Color = new Color(155, 250, 50, 255)
-      });
-
-      //Argus
-      SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A10C_OPEN_A_PORTAL_TO_ARGUS_LEGION_ARGUS)
-      {
-        PortalUnitTypeId = Constants.UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
-        OpeningDelay = 20,
-        ClosingDelay = 0,
-        TargetLocation = new Point(21606, -28467),
-        Color = new Color(255, 50, 50, 255)
       });
 
       var summonFelHounds = new SummonUnits(Constants.ABILITY_A12B_HOUND_COMPANION_LEGION_FELGUARD)

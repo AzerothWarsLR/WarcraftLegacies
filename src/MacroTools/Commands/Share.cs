@@ -26,7 +26,7 @@ namespace MacroTools.Commands
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      var targetFaction = FactionManager.GetFromName(parameters[0]);
+      var targetFaction = FactionManager.GetFactionByName(parameters[0]);
       if (targetFaction == null) 
         return $"There is no faction named {parameters[0]}.";
 

@@ -4,6 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
+using MacroTools.FactionChoices;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
@@ -18,7 +19,8 @@ namespace MacroTools.FactionSystem
   ///   Represents a faction in the Azeroth Wars universe, such as Lordaeron, Stormwind, or the Frostwolf Clan.
   ///   Governs techtrees and quests.
   /// </summary>
-  public sealed class Faction
+  //Todo: make this sealed once all Factions have been moved over to the new style.
+  public class Faction
   {
     /// <summary>Signifies unlimited unit production.</summary>
     public const int UNLIMITED = 200;
@@ -27,8 +29,6 @@ namespace MacroTools.FactionSystem
     private const int FoodMaximumDefault = 200;
 
     private readonly Dictionary<int, int> _abilityAvailabilities = new();
-    
-    private readonly List<unit> _goldMines = new();
 
     private readonly Dictionary<int, int> _objectLevels = new();
     private readonly Dictionary<int, int> _objectLimits = new();
@@ -52,6 +52,8 @@ namespace MacroTools.FactionSystem
     /// <summary>Invoked when one of the <see cref="Faction"/>'s <see cref="QuestData"/>s changes progress.</summary>
     public event EventHandler<FactionQuestProgressChangedEventArgs>? QuestProgressChanged;
 
+    public List<unit> GoldMines { private get; init; } = new();
+    
     static Faction()
     {
       PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
@@ -134,6 +136,14 @@ namespace MacroTools.FactionSystem
     /// <summary>Whether or not the <see cref="Faction"/> has been defeated.</summary>
     public ScoreStatus ScoreStatus { get; private set; } = ScoreStatus.Undefeated;
 
+    /// <summary>
+    /// Indicates how difficult it is to learn the basic mechanics of this <see cref="Faction"/>.
+    /// <para>This isn't about how difficult the Faction is to play optimally, but rather how difficult it is to
+    /// play at a very basic level. For instance, a Faction with a very complex starting quest would be very hard
+    /// even if it doesn't have to perform a lot of micro in fights.</para>
+    /// </summary>
+    public FactionLearningDifficulty LearningDifficulty { get; init; }
+    
     public string ColoredName => $"{PrefixCol}{_name}|r";
 
     public string PrefixCol { get; }
@@ -167,27 +177,17 @@ namespace MacroTools.FactionSystem
       get => _player;
       set
       {
-        if (Player != null)
-        {
-          Player.GetTeam()?.UnallyPlayer(Player);
-          HideAllQuests();
-          UnapplyObjects();
-          UnapplyPowers();
-        }
+        if (Player != null) 
+          UnapplyFactionFromPlayer(Player);
 
         _player = value;
-        //Maintain referential integrity
-        //Todo: this seems a bit silly
-        if (value == null) return;
+        if (value == null) 
+          return;
 
         if (value.GetFaction() != this)
           value.SetFaction(this);
 
-        Player?.GetTeam()?.AllyPlayer(value);
-        ApplyObjects();
-        ApplyPowers();
-        ShowAllQuests();
-        SetPlayerState(Player, PLAYER_STATE_FOOD_CAP_CEILING, _foodMaximum);
+        ApplyFactionToPlayer(value);
       }
     }
 
@@ -243,6 +243,24 @@ namespace MacroTools.FactionSystem
     public event EventHandler<Faction>? StatusChanged;
 
     /// <summary>
+    /// Invoked after the <see cref="Faction"/> is registered to a <see cref="FactionManager"/>.
+    /// <para>Override this for faction-specific initialization.</para>
+    /// </summary>
+    public virtual void OnRegistered()
+    {
+    }
+
+    /// <summary>
+    /// Invoked when the <see cref="Faction"/> has not been picked by any player by the time the game starts.
+    /// <para>Override this to cleanup anything that would have been used by the <see cref="Faction"/> if it had
+    /// been picked.</para>
+    /// </summary>
+    public virtual void OnNotPicked()
+    {
+      RemoveGoldMines();
+    }
+    
+    /// <summary>
     /// Defeats the player, making them an observer, and distributing their units and resources to allies if possible.
     /// </summary>
     public void Defeat()
@@ -257,6 +275,7 @@ namespace MacroTools.FactionSystem
         RemovePlayer(Player, PLAYER_GAME_RESULT_DEFEAT);
         SetPlayerState(Player, PLAYER_STATE_OBSERVER, 1);
         PlayerDistributor.DistributePlayer(Player);
+        RemoveGoldMines();
       }
 
       ScoreStatus = ScoreStatus.Defeated;
@@ -268,13 +287,13 @@ namespace MacroTools.FactionSystem
     ///   Returns the maximum number of times the Faction can train a unit, build a building, or research a research.
     /// </summary>
     /// <param name="whichObject">The object ID of a unit, building, or research.</param>
-    public int GetObjectLimit(int whichObject) => _objectLimits[whichObject];
+    public int GetObjectLimit(int whichObject) => _objectLimits.TryGetValue(whichObject, out var limit) ? limit : 0;
 
     /// <summary>
     ///   Registers a gold mine as belonging to this <see cref="Faction" />.
     ///   When the Faction leaves the game, all of their goldmines are removed.
     /// </summary>
-    public void AddGoldMine(unit whichUnit) => _goldMines.Add(whichUnit);
+    public void AddGoldMine(unit whichUnit) => GoldMines.Add(whichUnit);
 
     /// <summary>Adds a <see cref="Power" /> to this <see cref="Faction" />.</summary>
     public void AddPower(Power power)
@@ -338,6 +357,10 @@ namespace MacroTools.FactionSystem
 
     public QuestData AddQuest(QuestData questData)
     {
+      var loweredQuestTitle = questData.Title.ToLower();
+      if (_questsByName.ContainsKey(loweredQuestTitle))
+        throw new InvalidOperationException($"Tried to add a quest named {loweredQuestTitle} to {Name} but they already have one with that name.");
+
       questData.Add(this);
       _questsByName.Add(questData.Title.ToLower(), questData);
       if (GetLocalPlayer() == Player)
@@ -403,6 +426,21 @@ namespace MacroTools.FactionSystem
         _objectLimits.Remove(objectId);
     }
 
+    /// <summary>
+    /// Copies object levels from another <see cref="Faction"/> to this one.
+    /// <para>Only copies levels that this Faction has the object limit to handle.</para>
+    /// </summary>
+    public void CopyObjectLevelsFrom(Faction otherFaction)
+    {
+      var objectLevels = otherFaction._objectLevels;
+      foreach (var (objectId, level) in objectLevels)
+      {
+        var objectLimit = GetObjectLimit(objectId);
+        if (objectLimit > 0) 
+          SetObjectLevel(objectId, Math.Min(objectLimit, level));
+      }
+    }
+    
     /// <summary>Returns all <see cref="Power" />s this <see cref="Faction" /> has.</summary>
     public IEnumerable<Power> GetAllPowers()
     {
@@ -419,14 +457,10 @@ namespace MacroTools.FactionSystem
     /// <summary>
     /// Returns the first <see cref="QuestData"/> the <see cref="Faction"/> has with the given <see cref="Type"/>.
     /// </summary>
-    /// <param name="type"></param>
-    /// <returns></returns>
-    public QuestData GetQuestByType(Type type)
+    public T GetQuestByType<T>() where T : QuestData
     {
-      var quest = _questsByName.Values.FirstOrDefault(x => x.GetType() == type);
-      if (quest == null)
-        throw new Exception($"{Name} does not have a {nameof(QuestData)} of type {type.Name}");
-      return quest;
+      return _questsByName.Values.FirstOrDefault(x => x.GetType() == typeof(T)) as T ??
+             throw new Exception($"{Name} does not have a {nameof(QuestData)} of type {typeof(T)}");
     }
 
     /// <summary>Returns all <see cref="QuestData"/>s the <see cref="Faction"/> can complete.</summary>
@@ -435,10 +469,33 @@ namespace MacroTools.FactionSystem
     /// <summary>Removes all gold mines assigned to the faction</summary>
     public void RemoveGoldMines()
     {
-      foreach (var unit in _goldMines) 
+      foreach (var unit in GoldMines) 
         KillUnit(unit);
       
-      _goldMines.Clear();
+      GoldMines.Clear();
+    }
+    
+    /// <summary>
+    /// Modifies the player to have the <see cref="Faction"/>'s attributes.
+    /// </summary>
+    private void ApplyFactionToPlayer(player whichPlayer)
+    {
+      whichPlayer.GetTeam()?.AllyPlayer(whichPlayer);
+      ApplyObjects();
+      ApplyPowers();
+      ShowAllQuests();
+      SetPlayerState(Player, PLAYER_STATE_FOOD_CAP_CEILING, _foodMaximum);
+    }
+
+    /// <summary>
+    /// Modifies the player to no longer have the <see cref="Faction"/>'s attributes.
+    /// </summary>
+    private void UnapplyFactionFromPlayer(player whichPlayer)
+    {
+      whichPlayer.GetTeam()?.UnallyPlayer(whichPlayer);
+      HideAllQuests();
+      UnapplyObjects();
+      UnapplyPowers();
     }
     
     private void ApplyPowers()
@@ -515,7 +572,7 @@ namespace MacroTools.FactionSystem
       }
       catch (Exception ex)
       {
-        Logger.LogError($"{nameof(Faction)} failed to execute {nameof(OnQuestProgressChanged)}: {ex.Message}");
+        Logger.LogError($"{Name} failed to execute {nameof(OnQuestProgressChanged)}: {ex.Message}");
       }
     }
   }

@@ -1,5 +1,5 @@
 {
-  "OldId": 1952937838,
+  "OldId": 1886348142,
   "NewId": 1211314286,
   "Unk": [
     0
@@ -8,25 +8,20 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "A01M,A023,Awrp,Avul"
+      "Value": "A0LO"
     },
     {
-      "Id": 1836083317,
-      "Value": 200000
-    },
-    {
-      "Id": 1835167349,
+      "Id": 1819239285,
+      "Type": 2,
       "Value": 0
     },
     {
-      "Id": 1952542837,
-      "Type": 3,
-      "Value": ""
+      "Id": 1936681077,
+      "Value": 1
     },
     {
-      "Id": 1919969397,
-      "Type": 2,
-      "Value": 5
+      "Id": 1836083317,
+      "Value": 5000
     },
     {
       "Id": 1953654901,
@@ -36,7 +31,47 @@
     {
       "Id": 1887007861,
       "Type": 3,
-      "Value": "mechanical,neutral,sapper,standon"
+      "Value": "ancient,sapper"
+    },
+    {
+      "Id": 1647403381,
+      "Value": -1
+    },
+    {
+      "Id": 1680957813,
+      "Value": 1
+    },
+    {
+      "Id": 1932616053,
+      "Value": 1
+    },
+    {
+      "Id": 1852137845,
+      "Value": 1
+    },
+    {
+      "Id": 1915838837,
+      "Value": 900
+    },
+    {
+      "Id": 1902338421,
+      "Type": 2,
+      "Value": 900
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "bridge"
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "creeps"
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
     },
     {
       "Id": 1769169525,

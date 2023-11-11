@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       ResearchId = Constants.UPGRADE_R074_QUEST_COMPLETED_QUEL_DANIL_LODGE;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       AddObjective(new ObjectiveControlCapital(sunwell, true));
-      Required = true;
+      
 
     }
 
@@ -62,7 +62,10 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      completingFaction.Player?.RemoveResourcesAndUnits();
+      completingFaction.Player?
+        .RemoveAllResources()
+        .RemoveAllUnits();
+      
       if (completingFaction.ScoreStatus == ScoreStatus.Defeated)
         return;
       

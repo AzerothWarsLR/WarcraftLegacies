@@ -27,7 +27,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Kaldorei hall of enhancements, where the defenders of Kalimdor grow in strength.|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Power Infusion, Flight, Navigation, Improved Cannons, Fortified Hulls"
+      "Value": "General research building. |n|n|cfff5962dResearches:|r Forged Weaponry, Armor Plating, Power Infusion, Flight, Navigation, Improved Cannons, Fortified Hulls"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Sentinel Research)"
     }
   ]
 }

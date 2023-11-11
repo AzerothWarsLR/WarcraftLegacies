@@ -6,7 +6,6 @@ using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using static War3Api.Common;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
-using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using System.Collections.Generic;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 
@@ -23,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// </summary>
     public QuestRebuildCivilisation(Rectangle rescueRect, LegendaryHero velen) : base("The Way Forward", "The Draenei will need to rebuild their civilisation in Azeroth. Desolace seems like a perfect place for the birth of the second Draenei settlement.", @"ReplaceableTextures\CommandButtons\BTNDraeneiDivineCitadel.blp")
     {
-      Required = true;
+      
       AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.DraeneiQuestKill }, "in Desolace"));
       AddObjective(new ObjectiveLegendReachRect(velen, Regions.DesolaceUnlock, "Desolace"));
       AddObjective(new ObjectiveSelfExists());

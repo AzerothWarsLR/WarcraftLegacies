@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
         "The Sunfury must learn to adapt to their new home within the inhospitable Netherstorm. There are several eco-domes dotted throughout the region, remnants of Netherstorm's prior existence as the verdant Farahlon. They would make excellent locations for growth facilities.",
         @"ReplaceableTextures\CommandButtons\BTNFeatherMoonAura.blp")
     {
-      Required = true;
+      
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_H0C5_SANCTUARY_SUNFURY_T3,
         Constants.UNIT_H02P_HOLDING_SUNFURY_T1));
       AddObjective(new ObjectiveBuildInRect(questRect1, "in one of the 3 Eco-dome in Netherstorm",
@@ -65,6 +65,6 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Gain control of Tempest Keep, and learn to build {GetObjectName(Constants.UNIT_H0CA_ANCIENT_POOL_SUNFURY_SPECIALIST)}s and {GetObjectName(Constants.UNIT_H0CI_ARTIFICER_S_COURT_SUNFURY_SPECIALIST)}s";
+      $"Gain control of Tempest Keep, and learn to build {GetObjectName(Constants.UNIT_H0CA_ANCIENT_POOL_SUNFURY_SPECIALIST)}s and {GetObjectName(Constants.UNIT_H0CI_ARTIFICER_S_COURT_SUNFURY_SIEGE)}s";
   }
 }
