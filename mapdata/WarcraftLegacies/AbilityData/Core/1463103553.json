@@ -4,16 +4,5 @@
   "Unk": [
     0
   ],
-  "Modifications": [
-    {
-      "Id": 1702127969,
-      "Value": 0
-    },
-    {
-      "Level": 1,
-      "Id": 1918989409,
-      "Type": 3,
-      "Value": "air,ground,invulnerable,nonhero,player,vulnerable"
-    }
-  ]
+  "Modifications": []
 }
