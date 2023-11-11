@@ -35,33 +35,31 @@ namespace MacroTools.Buffs
       TargetPosition =  new Point(GetUnitX(caster), GetUnitY(caster));
     }
     
+    /// <inheritdoc />
     public override void OnApply()
     {
-      foreach (var unit in UnitsToMove)
-      {
+      foreach (var unit in UnitsToMove) 
         unit.Show(false).SetInvulnerable(true);
-      }
 
       Effect = AddSpecialEffect(@"Abilities\Spells\Undead\Darksummoning\DarkSummonTarget.mdl", TargetPosition.X,
         TargetPosition.Y);
     }
 
+    /// <inheritdoc />
     public override void OnDispose()
     {
       DestroyEffect(Effect);
       if (Math.Floor(Duration) > 0)
       {
         var amountToMove = (int)Math.Floor(UnitsToMove.Count * DeathPenalty);
-        foreach (var unit in UnitsToMove.Take(UnitsToMove.Count - amountToMove))
-        {
+        foreach (var unit in UnitsToMove.Take(UnitsToMove.Count - amountToMove)) 
           unit.Kill();
-        }
       }
       
-      foreach (var unit in UnitsToMove)
-      {
-        unit.Show(true).SetPosition(TargetPosition).SetInvulnerable(false);
-      }
+      foreach (var unit in UnitsToMove) 
+        unit.Show(true)
+          .SetPosition(TargetPosition)
+          .SetInvulnerable(false);
     }
   }
 }
