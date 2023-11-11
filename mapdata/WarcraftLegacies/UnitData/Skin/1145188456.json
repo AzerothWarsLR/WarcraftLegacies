@@ -23,12 +23,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Centaur Khan"
+      "Value": "Ramzes the Horror"
     },
     {
       "Id": 1869770869,
       "Type": 3,
       "Value": "Ramzes the Horror"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep-Desolace)"
     }
   ]
 }
