@@ -37,6 +37,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         AmountToTarget = 12,
         MinDuration = 3,
         MaxDuration = 30,
+        CrossDimensionalDuration = 15,
         DistanceDivider = 1000,
         DeathPenalty = 0.5f,
         TargetType = SpellTargetType.Point

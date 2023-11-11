@@ -3,7 +3,7 @@ using System.Linq;
 using MacroTools.Buffs;
 using MacroTools.DummyCasters;
 using MacroTools.Extensions;
-using MacroTools.Libraries;
+using MacroTools.Instances;
 using MacroTools.SpellSystem;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
@@ -25,6 +25,11 @@ namespace MacroTools.Spells
     /// <summary>The maximum number of seconds the spell will take to finish.</summary>
     public int MaxDuration { get; init; }
     
+    /// <summary>
+    /// How long it takes to travel between two <see cref="Instance"/>s with no <see cref="Gate"/>s connecting them.
+    /// </summary>
+    public int CrossDimensionalDuration { get; init; }
+    
     /// <summary>The value used to divide the distance to calculate the time. smaller value means spell will take longer and larger value means spell will be quicker</summary>
     public int DistanceDivider { get; init; }
     
@@ -44,10 +49,12 @@ namespace MacroTools.Spells
     {
       var center = TargetType == SpellTargetType.None ? new Point(GetUnitX(caster), GetUnitY(caster)) : targetPoint;
       
-      var distance = MathEx.GetDistanceBetweenPoints(new Point(GetUnitX(caster), GetUnitY(caster)), center);
+      var distance = InstanceSystem.GetDistanceBetweenPointsEx(new Point(GetUnitX(caster), GetUnitY(caster)), center);
       var distanceDuration = (int)distance / DistanceDivider;
-      var clampedDuration = Math.Clamp(distanceDuration, MinDuration, MaxDuration);
-      
+      var finalDuration = distance == -1 
+        ? CrossDimensionalDuration 
+        : Math.Clamp(distanceDuration, MinDuration, MaxDuration);
+
       var targets = CreateGroup()
         .EnumUnitsInRange(center, Radius)
         .EmptyToList()
@@ -57,7 +64,7 @@ namespace MacroTools.Spells
       
       var delayedRecallBuff = new DelayedRecallBuff(caster, caster, targets)
       {
-        Duration = clampedDuration,
+        Duration = finalDuration,
         DeathPenalty = DeathPenalty
       };
       

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
@@ -17,29 +18,24 @@ namespace MacroTools.Instances
     /// <summary>The entire region that constitutes the physical area of the <see cref="Instance"/>.</summary>
     public region Region { get; }
 
-    /// <summary>The number of <see cref="Gate"/>s that can be used to enter or exit the <see cref="Instance"/>.</summary>
-    public int GateCount => _gates.Count;
-    
     private readonly trigger _dependencyDiesTrigger;
     private readonly List<Gate> _gates = new();
-    private readonly string _name;
     private readonly Rectangle[] _rectangles;
     private readonly List<unit> _dependencies = new();
     
     /// <summary>Initializes a new instance of the <see cref="Instance"/> class.</summary>
-    public Instance(string name, IEnumerable<Rectangle> areas)
+    private Instance(IEnumerable<Rectangle> areas)
     {
       Region = CreateRegion();
       _rectangles = areas.ToArray();
       foreach (var rectangle in _rectangles)
         RegionAddRect(Region, rectangle.Rect);
-      _name = name;
       _dependencyDiesTrigger = CreateTrigger()
         .AddAction(Destroy);
     }
 
     /// <summary>Initializes a new instance of the <see cref="Instance"/> class.</summary>
-    public Instance(string name, Rectangle area) : this(name, new[] {area})
+    public Instance(Rectangle area) : this(new[] {area})
     {
     }
     
@@ -51,10 +47,10 @@ namespace MacroTools.Instances
     /// <summary>
     ///   Gets the <see cref="Gate" /> nearest the given position, if any.
     /// </summary>
-    public Gate GetNearestGate(Point position)
+    public bool TryGetNearestGate(Point position, [NotNullWhen(true)] out Gate? nearestGate)
     {
       float distanceToNearestGate = 0;
-      Gate? nearestGate = null;
+      nearestGate = null;
       
       foreach (var gate in _gates)
       {
@@ -65,12 +61,8 @@ namespace MacroTools.Instances
           distanceToNearestGate = distance;
         }
       }
-
-      if (nearestGate == null)
-        throw new InvalidOperationException(
-          $"Could not find the nearest {nameof(Gate)} for {nameof(Instance)} {_name} at position {position.X}, {position.Y}.");
       
-      return nearestGate;
+      return nearestGate != null;
     }
 
     /// <summary>
