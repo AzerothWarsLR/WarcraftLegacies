@@ -28,39 +28,30 @@ namespace MacroTools.Instances
     /// <summary>
     /// Determines the virtual distance between two points which may or may not be in seperate <see cref="Instance"/>s.
     /// </summary>
-    /// <returns>The distance between two points, taking into account Instance entrances and exits. If one Instance</returns>
+    /// <returns>The distance between two points, taking into account Instance entrances and exits. If one
+    /// <see cref="Instance"/> has no <see cref="Gate"/>s, rendering it inaccessible, returns -1 instead.</returns>
     public static float GetDistanceBetweenPointsEx(Point positionA, Point positionB)
     {
-      float sumDistance = 0;
-      var instance1 = GetPointInstance(positionA);
-      var instance2 = GetPointInstance(positionB);
+      var instanceA = GetPointInstance(positionA);
+      var instanceB = GetPointInstance(positionB);
 
       //Both points are in the same Instance, so distance is geographical as normal
-      if (instance1 == instance2)
-      {
+      if (instanceA == instanceB)
         return MathEx.GetDistanceBetweenPoints(positionA, positionB);
-      }
 
-      //Point A or point B is in an Instance with no Gates, so it is infinitely far
-      if (instance1 != null || instance2 != null)
-      {
-        if (instance1.GateCount == 0 || instance2.GateCount == 0)
-        {
-          return -1;
-        }
-      }
-
+      float sumDistance = 0;
+      
       //Point A is in an Instance, so add the distance to the nearest interior Gate
-      if (instance1 != null)
-      {
-        sumDistance += MathEx.GetDistanceBetweenPoints(positionA, instance2.GetNearestGate(positionB).InteriorPosition);
-      }
+      if (instanceA?.TryGetNearestGate(positionA, out var nearestGateA) == true)
+        sumDistance += MathEx.GetDistanceBetweenPoints(positionA, nearestGateA.InteriorPosition);
+      else
+        return -1;
 
       //Point B is in an Instance, so add the distance to the nearest interior Gate
-      if (instance1 != null)
-      {
-        sumDistance += MathEx.GetDistanceBetweenPoints(positionB, instance2.GetNearestGate(positionB).InteriorPosition);
-      }
+      if (instanceB?.TryGetNearestGate(positionB, out var nearestGateB) == true)
+        sumDistance += MathEx.GetDistanceBetweenPoints(positionB, nearestGateB.InteriorPosition);
+      else
+        return -1;
 
       return sumDistance;
     }
