@@ -35,6 +35,10 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         Radius = 400,
         AmountToTarget = 12,
+        MinDuration = 3,
+        MaxDuration = 30,
+        DistanceDivider = 1000,
+        DeathPenalty = 0.5f,
         TargetType = SpellTargetType.Point
       };
       SpellSystem.Register(massSummonUnit);

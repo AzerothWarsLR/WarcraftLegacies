@@ -18,6 +18,18 @@ namespace MacroTools.Spells
     
     /// <summary>How many units get summoned by the spell.</summary>
     public int AmountToTarget { get; init; }
+    
+    /// <summary>The minimum number of seconds the spell will take to finish.</summary>
+    public int MinDuration { get; init; }
+    
+    /// <summary>The maximum number of seconds the spell will take to finish.</summary>
+    public int MaxDuration { get; init; }
+    
+    /// <summary>The value used to divide the distance to calculate the time. smaller value means spell will take longer and larger value means spell will be quicker</summary>
+    public int DistanceDivider { get; init; }
+    
+    /// <summary>The percentage of units to lose when the caster dies (rounded down)</summary>
+    public float DeathPenalty { get; init; }
 
     public SpellTargetType TargetType { get; init; } = SpellTargetType.None;
     
@@ -31,21 +43,24 @@ namespace MacroTools.Spells
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
       var center = TargetType == SpellTargetType.None ? new Point(GetUnitX(caster), GetUnitY(caster)) : targetPoint;
-      var duration =
-        Math.Clamp(
-          (int)Math.Floor(MathEx.GetDistanceBetweenPoints(new Point(GetUnitX(caster), GetUnitY(caster)), center)/1000), 3,
-          30);
+      
+      var distance = MathEx.GetDistanceBetweenPoints(new Point(GetUnitX(caster), GetUnitY(caster)), center);
+      var distanceDuration = (int)distance / DistanceDivider;
+      var clampedDuration = Math.Clamp(distanceDuration, MinDuration, MaxDuration);
+      
       var targets = CreateGroup()
         .EnumUnitsInRange(center, Radius)
         .EmptyToList()
         .Where(unit => CastFilter(caster, unit) && !unit.IsResistant() && unit != caster)
         .Take(AmountToTarget)
         .ToList();
+      
       var delayedRecallBuff = new DelayedRecallBuff(caster, caster, targets)
       {
-        InitialDuration = duration,
-        Duration = duration
+        Duration = clampedDuration,
+        DeathPenalty = DeathPenalty
       };
+      
       BuffSystem.Add(delayedRecallBuff);
     }
   }

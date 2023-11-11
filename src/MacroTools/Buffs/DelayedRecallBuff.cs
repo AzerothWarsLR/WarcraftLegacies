@@ -16,14 +16,12 @@ namespace MacroTools.Buffs
     private List<unit> UnitsToMove { get;}
     
     /// <summary>
-    /// The duration of the buff when first cast.
-    /// </summary>
-    public int InitialDuration { get; init; }
-    
-    /// <summary>
     /// The point of the casting unit when first cast.
     /// </summary>
     private Point TargetPosition { get; }
+    
+    /// <summary>The percentage of units to lose when the caster dies (rounded down)</summary>
+    public float DeathPenalty { get; init; }
     
     /// <summary>
     /// The effect that is created when the buff is applied.
@@ -43,19 +41,23 @@ namespace MacroTools.Buffs
       {
         unit.Show(false).SetInvulnerable(true);
       }
-      
-      Effect = AddSpecialEffect(@"Abilities\Spells\Undead\Darksummoning\DarkSummonTarget.mdl", TargetPosition.X, TargetPosition.Y)
-        .SetLifespan(InitialDuration);
+
+      Effect = AddSpecialEffect(@"Abilities\Spells\Undead\Darksummoning\DarkSummonTarget.mdl", TargetPosition.X,
+        TargetPosition.Y);
     }
 
     public override void OnDispose()
     {
-      var amountToMove = (int)Math.Floor(UnitsToMove.Count * ((InitialDuration - Math.Floor(Duration)) / InitialDuration));
       DestroyEffect(Effect);
-      foreach (var unit in UnitsToMove.Take(UnitsToMove.Count - amountToMove))
+      if (Math.Floor(Duration) > 0)
       {
-        unit.Kill();
+        var amountToMove = (int)Math.Floor(UnitsToMove.Count * DeathPenalty);
+        foreach (var unit in UnitsToMove.Take(UnitsToMove.Count - amountToMove))
+        {
+          unit.Kill();
+        }
       }
+      
       foreach (var unit in UnitsToMove)
       {
         unit.Show(true).SetPosition(TargetPosition).SetInvulnerable(false);
