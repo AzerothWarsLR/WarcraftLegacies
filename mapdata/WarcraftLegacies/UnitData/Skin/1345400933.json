@@ -1,5 +1,5 @@
 {
-  "OldId": 1819243621,
+  "OldId": 1852138597,
   "NewId": 1345400933,
   "Unk": [
     0
@@ -8,22 +8,17 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(illidan)"
+      "Value": "(Nightmare Shop)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "Q"
+      "Value": "C"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.7
-    },
-    {
-      "Id": 1885959285,
-      "Type": 3,
-      "Value": "Build Coral of Life"
+      "Value": 0.85
     },
     {
       "Id": 1935832437,
@@ -33,22 +28,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Slaves |n|cfff5962dUpgrades to:|R Coral of Ages"
-    },
-    {
-      "Id": 1835101813,
-      "Type": 3,
-      "Value": "Coral of Life"
-    },
-    {
-      "Id": 1868786037,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNCoralOfLife.blp"
+      "Value": "Creates a shop with purchasable items. |n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\CoralofLifeV1.00.mdl"
+      "Value": "war3mapImported\\DoyenOfWishes2.mdl"
     }
   ]
 }
