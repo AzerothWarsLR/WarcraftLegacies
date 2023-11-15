@@ -68,7 +68,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Inspires friendly units in the targetted area, increasing their attack speed by 30% and movement speed by 20%. Lasts 30 seconds. "
+      "Value": "Increases the attack speed by 30% and move speed by 20% of units inside the targetted area. |nLasts 30 seconds. "
     }
   ]
 }
