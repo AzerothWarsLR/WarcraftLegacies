@@ -13,7 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "For the Horde!"
+      "Value": "|c0000FF00For the Horde!"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcBattleStandard.blp"
     }
   ]
 }
