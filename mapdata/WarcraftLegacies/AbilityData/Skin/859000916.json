@@ -1,0 +1,88 @@
+{
+  "OldId": 1718764353,
+  "NewId": 859000916,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFelFlameStorm.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls 20 waves off Felfire down from the sky igniting and damaging all enemy units in an area, Each wave deals 100  damage; units effected by Felfire take 25 damage per second for 4 seconds."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Felfire"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Felfire - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Felfire - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Felfire - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls 20 waves off Felfire down from the sky igniting and damaging all enemy units in an area, Each wave deals 125  damage; units effected by Felfire take 30 damage per second for 4 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls 20 waves off Felfire down from the sky igniting and damaging all enemy units in an area, Each wave deals 150 damage; units effected by Felfire take 45 damage per second for 4 seconds."
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFelFlameStorm.blp"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Felfire - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Calls waves off Felfire down from the sky crushing enemy units as they strike, units hit by the blasts are then engulfed in Felfire causing damage over time."
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 2037412449,
+      "Value": 2
+    }
+  ]
+}
