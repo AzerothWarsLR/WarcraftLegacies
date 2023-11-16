@@ -24,17 +24,6 @@
       "Value": "D"
     },
     {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Self-Bloodlust"
-    },
-    {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Self-Bloodlust"
-    },
-    {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
@@ -52,6 +41,16 @@
       "Id": 1802007905,
       "Type": 3,
       "Value": "D"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCOrcFrenzy.blp"
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCOrcFrenzy.blp"
     }
   ]
 }

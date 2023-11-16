@@ -9,7 +9,7 @@
       "Level": 1,
       "Id": 829579623,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodLust.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAbility_Warrior_Rampage.blp"
     },
     {
       "Id": 2020631143,
@@ -31,19 +31,19 @@
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "Improved Self-Bloodlust"
+      "Value": "Improved Frenzy"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "Research Improved Self-Bloodlust"
+      "Value": "Research Improved Frenzy"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Improves Self-Bloodlust, causing it to increase the user\u0027s attack rate by \u003CA0EH,DataA2,%\u003E% and movement speed by \u003CA0EH,DataB2,%\u003E%."
+      "Value": "Improves Frenzy, causing it to increase the user\u0027s attack rate by \u003CA0EH,DataA2,%\u003E% and movement speed by \u003CA0EH,DataB2,%\u003E%."
     }
   ]
 }

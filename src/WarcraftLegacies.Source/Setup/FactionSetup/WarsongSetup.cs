@@ -85,7 +85,7 @@ The Night Elves are aware of your presence and are gathering a mighty host again
       WarsongClan.ModObjectLimit(FourCC("R019"), Faction.UNLIMITED); //Improved Shockwave
       WarsongClan.ModObjectLimit(Constants.UPGRADE_R01Z_BATTLE_STATIONS_ORC, Faction.UNLIMITED);
       WarsongClan.SetObjectLevel(Constants.UPGRADE_R01Z_BATTLE_STATIONS_ORC, 1);
-      WarsongClan.ModObjectLimit(Constants.UPGRADE_R00D_FOR_THE_HORDE_FROSTWOLF, Faction.UNLIMITED);
+      WarsongClan.ModObjectLimit(Constants.UPGRADE_R00D_MASS_BLOODLUST_FROSTWOLF, Faction.UNLIMITED);
       WarsongClan.ModObjectLimit(Constants.UPGRADE_ROVS_ENVENOMED_SPEARS_WARSONG, Faction.UNLIMITED);
       WarsongClan.ModObjectLimit(Constants.UPGRADE_R017_IMPROVED_IGNORE_PAIN_WARSONG, Faction.UNLIMITED);
 
