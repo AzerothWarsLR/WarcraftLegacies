@@ -9,7 +9,7 @@
   "RecommendedPlayers": "16 Players ",
   "CameraBounds": {
     "BottomLeft": {
-      "X": -24064,
+      "X": -28160,
       "Y": -32000
     },
     "TopRight": {
@@ -17,7 +17,7 @@
       "Y": 24576
     },
     "TopLeft": {
-      "X": -24064,
+      "X": -28160,
       "Y": 24576
     },
     "BottomRight": {
@@ -29,7 +29,7 @@
     "Right": 6,
     "Top": 2
   },
-  "PlayableMapAreaWidth": 378,
+  "PlayableMapAreaWidth": 410,
   "PlayableMapAreaHeight": 446,
   "MapFlags": 51194,
   "Tileset": 89,
