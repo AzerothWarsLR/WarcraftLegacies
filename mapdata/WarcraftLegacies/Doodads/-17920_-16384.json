@@ -522,5 +522,26 @@
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 11673
+  },
+  {
+    "State": 6,
+    "Life": 255,
+    "TypeId": 1936872002,
+    "Variation": 3,
+    "Position": {
+      "X": -17954.29,
+      "Y": -16735.295,
+      "Z": 234.41885
+    },
+    "Rotation": 3.716512,
+    "Scale": {
+      "X": 1.1499999,
+      "Y": 1.1499999,
+      "Z": 1.1499999
+    },
+    "SkinId": 1936872002,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 32151
   }
 ]
