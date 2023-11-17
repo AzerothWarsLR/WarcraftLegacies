@@ -443,6 +443,11 @@
       "Color": "#FFFFff"
     },
     {
+      "X": 33,
+      "Y": 151,
+      "Color": "#FFFFff"
+    },
+    {
       "X": 32,
       "Y": 199,
       "Color": "#FFFFff"
@@ -450,6 +455,11 @@
     {
       "X": 31,
       "Y": 193,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 12,
+      "Y": 154,
       "Color": "#FFFFff"
     }
   ]

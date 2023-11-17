@@ -1,0 +1,105 @@
+[
+  {
+    "State": 6,
+    "Life": 255,
+    "TypeId": 926167108,
+    "Variation": 1,
+    "Position": {
+      "X": -24649.398,
+      "Y": -7554.5225,
+      "Z": 776.72833
+    },
+    "Rotation": 4.9773,
+    "Scale": {
+      "X": 1.4414053,
+      "Y": 1.4414053,
+      "Z": 1.8914049
+    },
+    "SkinId": 926167108,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 32475
+  },
+  {
+    "State": 6,
+    "Life": 255,
+    "TypeId": 926167108,
+    "Variation": 1,
+    "Position": {
+      "X": -24630.11,
+      "Y": -7594.9224,
+      "Z": 747.529
+    },
+    "Rotation": 5.1156263,
+    "Scale": {
+      "X": 1.4414053,
+      "Y": 1.4414053,
+      "Z": 1.8914049
+    },
+    "SkinId": 926167108,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 32477
+  },
+  {
+    "State": 6,
+    "Life": 255,
+    "TypeId": 1295331396,
+    "Position": {
+      "X": -24640.111,
+      "Y": -7580.6323,
+      "Z": 693.88586
+    },
+    "Rotation": 5.033629,
+    "Scale": {
+      "X": 0.7500009,
+      "Y": 0.7500009,
+      "Z": 0.7500009
+    },
+    "SkinId": 1295331396,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 32598
+  },
+  {
+    "State": 6,
+    "Life": 255,
+    "TypeId": 1160982596,
+    "Variation": 1,
+    "Position": {
+      "X": -24955.484,
+      "Y": -7571.5586,
+      "Z": 260.85437
+    },
+    "Rotation": 5.768723,
+    "Scale": {
+      "X": 2.0084996,
+      "Y": 2.0084996,
+      "Z": 2.8584988
+    },
+    "SkinId": 1160982596,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 32609
+  },
+  {
+    "State": 6,
+    "Life": 255,
+    "TypeId": 1144336452,
+    "Position": {
+      "X": -24924.56,
+      "Y": -7620.615,
+      "Z": 333.18372
+    },
+    "Rotation": -1.0108062,
+    "Scale": {
+      "X": 3.1000004,
+      "Y": 3.1000004,
+      "Z": 4.2500005
+    },
+    "SkinId": 1144336452,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 32610
+  }
+]

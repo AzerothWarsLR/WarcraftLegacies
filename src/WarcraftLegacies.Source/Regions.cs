@@ -179,11 +179,11 @@ public static class Regions
 	public static Rectangle KaliRock12 { get; set; } = new Rectangle(-9472f, -1888f, -8256f, -1248f);
 	public static Rectangle KaliRock13 { get; set; } = new Rectangle(-12992f, 1472f, -12096f, 2496f);
 	public static Rectangle KaliRock14 { get; set; } = new Rectangle(-8608f, 6720f, -7744f, 7936f);
-	public static Rectangle KaliRock15 { get; set; } = new Rectangle(-15328f, -13120f, -14016f, -11872f);
+	public static Rectangle KaliRock15 { get; set; } = new Rectangle(-13824f, -11136f, -13184f, -10656f);
 	public static Rectangle KaliRock4 { get; set; } = new Rectangle(-10304f, -12960f, -9408f, -12384f);
 	public static Rectangle KaliRock7 { get; set; } = new Rectangle(-13056f, 352f, -12128f, 1472f);
 	public static Rectangle KaliRock8 { get; set; } = new Rectangle(-14400f, -9536f, -13632f, -8768f);
-	public static Rectangle KaliRock9 { get; set; } = new Rectangle(-14848f, -11808f, -13632f, -10432f);
+	public static Rectangle KaliRock9 { get; set; } = new Rectangle(-18272f, -9536f, -17408f, -8416f);
 	public static Rectangle KezanAmbient { get; set; } = new Rectangle(-3200f, -10368f, 736f, -5184f);
 	public static Rectangle KezanUnlock { get; set; } = new Rectangle(-2400f, -8000f, 608f, -5184f);
 	public static Rectangle KilsorrowUnlock { get; set; } = new Rectangle(-4224f, -31904f, -2752f, -30752f);

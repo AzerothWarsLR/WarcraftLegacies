@@ -2,6 +2,108 @@
   {
     "State": 2,
     "Life": 100,
+    "TypeId": 1378955330,
+    "Variation": 1,
+    "Position": {
+      "X": -16672,
+      "Y": -13920,
+      "Z": 179
+    },
+    "Rotation": 1.7627826,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 1378955330,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 32370
+  },
+  {
+    "State": 2,
+    "Life": 255,
+    "TypeId": 1936151106,
+    "Position": {
+      "X": -16532.332,
+      "Y": -13846.617,
+      "Z": 206.18478
+    },
+    "Rotation": 5.0090947,
+    "Scale": {
+      "X": 1.2,
+      "Y": 1.2,
+      "Z": 4.4999995
+    },
+    "SkinId": 1936151106,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 29047
+  },
+  {
+    "State": 2,
+    "Life": 255,
+    "TypeId": 1936151106,
+    "Position": {
+      "X": -16736.582,
+      "Y": -13932.389,
+      "Z": 160.54305
+    },
+    "Rotation": 5.0090947,
+    "Scale": {
+      "X": 1.2,
+      "Y": 1.2,
+      "Z": 4.4999995
+    },
+    "SkinId": 1936151106,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 29051
+  },
+  {
+    "State": 2,
+    "Life": 255,
+    "TypeId": 1936151106,
+    "Variation": 1,
+    "Position": {
+      "X": -16781.375,
+      "Y": -13867.96,
+      "Z": 205.61131
+    },
+    "Rotation": 0.086061075,
+    "Scale": {
+      "X": 1.4499998,
+      "Y": 1.4499998,
+      "Z": 2.899999
+    },
+    "SkinId": 1936151106,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 29052
+  },
+  {
+    "State": 6,
+    "Life": 255,
+    "TypeId": 1818644300,
+    "Position": {
+      "X": -16739.285,
+      "Y": -13893.486,
+      "Z": 344.33722
+    },
+    "Rotation": 2.3038347,
+    "Scale": {
+      "X": 1.0999999,
+      "Y": 1.0999999,
+      "Z": 1.0999999
+    },
+    "SkinId": 1818644300,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 32182
+  },
+  {
+    "State": 2,
+    "Life": 100,
     "TypeId": 2004112462,
     "Variation": 1,
     "Position": {

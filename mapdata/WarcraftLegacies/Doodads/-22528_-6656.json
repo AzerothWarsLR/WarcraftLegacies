@@ -1,0 +1,106 @@
+[
+  {
+    "State": 6,
+    "Life": 255,
+    "TypeId": 1496461380,
+    "Variation": 2,
+    "Position": {
+      "X": -22868.008,
+      "Y": -7038.662,
+      "Z": 1061.8755
+    },
+    "Rotation": 5.3407073,
+    "Scale": {
+      "X": 3.6499975,
+      "Y": 3.6499975,
+      "Z": 3.6499975
+    },
+    "SkinId": 1496461380,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 17965
+  },
+  {
+    "State": 6,
+    "Life": 255,
+    "TypeId": 1446326340,
+    "Position": {
+      "X": -22989.736,
+      "Y": -6673.3896,
+      "Z": 658.4767
+    },
+    "Rotation": 3.1547425,
+    "Scale": {
+      "X": 3.3065886,
+      "Y": 3.3065886,
+      "Z": 4.006588
+    },
+    "SkinId": 1446326340,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 32586
+  },
+  {
+    "State": 2,
+    "Life": 255,
+    "TypeId": 1328689220,
+    "Variation": 1,
+    "Position": {
+      "X": -22877.623,
+      "Y": -7163.352,
+      "Z": 711.2416
+    },
+    "Rotation": 3.4075809,
+    "Scale": {
+      "X": 1,
+      "Y": 1.55,
+      "Z": 1.35
+    },
+    "SkinId": 1328689220,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 32590
+  },
+  {
+    "State": 2,
+    "Life": 255,
+    "TypeId": 1160982596,
+    "Variation": 1,
+    "Position": {
+      "X": -22785.637,
+      "Y": -6932.729,
+      "Z": 782.18713
+    },
+    "Rotation": 3.6075888,
+    "Scale": {
+      "X": 1.3085003,
+      "Y": 1.3085003,
+      "Z": 2.4584992
+    },
+    "SkinId": 1160982596,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 32591
+  },
+  {
+    "State": 2,
+    "Life": 255,
+    "TypeId": 1177890884,
+    "Variation": 1,
+    "Position": {
+      "X": -22861.043,
+      "Y": -6957.9526,
+      "Z": 767.8231
+    },
+    "Rotation": 4.520462,
+    "Scale": {
+      "X": 2.2499995,
+      "Y": 2.2499995,
+      "Z": 2.2499995
+    },
+    "SkinId": 1177890884,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 32596
+  }
+]
