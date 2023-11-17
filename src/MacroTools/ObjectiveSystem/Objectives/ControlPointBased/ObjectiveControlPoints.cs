@@ -1,8 +1,9 @@
 ﻿using MacroTools.ControlPointSystem;
-using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using System.Collections.Generic;
+using System.Linq;
+using MacroTools.Extensions;
 
 namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 {
@@ -11,7 +12,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
   /// </summary>
   public sealed class ObjectiveControlPoints : Objective
   {
-    private readonly List<ControlPoint> _controlPoints;
+    private readonly Dictionary<ControlPoint, bool> _progressByControlPoint;
     private readonly string _rectName;
     private int _controlPointCount;
 
@@ -21,7 +22,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       set
       {
         _controlPointCount = value;
-        Description = $"Your team controls {ControlPointCount} / {_controlPoints.Count} CPs {_rectName}";
+        Description = $"Your team controls {ControlPointCount} / {_progressByControlPoint.Count} CPs {_rectName}";
+        CheckObjectiveProgress();
       }
     }
 
@@ -30,45 +32,42 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
     /// </summary>
     /// <param name="controlPoints">The control points that have to be owned by the same team.</param>
     /// <param name="rectName">The name of the rectangle shown in the description of the quest.</param>
-    public ObjectiveControlPoints(List<ControlPoint> controlPoints, string rectName)
+    public ObjectiveControlPoints(IEnumerable<ControlPoint> controlPoints, string rectName)
     {
-      _controlPoints = controlPoints;
+      _progressByControlPoint = controlPoints.ToDictionary(key => key, _ => false);
       _rectName = rectName;
-      ControlPointCount = 0;
-      foreach (var controlPoint in controlPoints)
-      {
-        controlPoint.ChangedOwner += OnTargetChangeOwner;
-        if (IsPlayerOnSameTeamAsAnyEligibleFaction(controlPoint.Unit.OwningPlayer()))
-          ControlPointCount++;
-      }
     }
 
+    /// <inheritdoc/>
     internal override void OnAdd(Faction whichFaction)
     {
-      foreach (var controlPoint in _controlPoints)
-      {
-        if (IsPlayerOnSameTeamAsAnyEligibleFaction(controlPoint.Unit.OwningPlayer()))
-          ControlPointCount++;
-      }
+      var controlPoints = _progressByControlPoint.Keys;
+      foreach (var controlPoint in _progressByControlPoint.Keys) 
+        controlPoint.ChangedOwner += OnTargetChangeOwner;
 
-      CheckObjectiveProgress();
+      ControlPointCount = controlPoints.Count(x => IsPlayerOnSameTeamAsAnyEligibleFaction(x.Unit.OwningPlayer()));
     }
 
     private void OnTargetChangeOwner(object? sender, ControlPointOwnerChangeEventArgs args)
     {
       var controlPoint = args.ControlPoint;
-
-      if (!IsPlayerOnSameTeamAsAnyEligibleFaction(args.FormerOwner) &&
-          IsPlayerOnSameTeamAsAnyEligibleFaction(controlPoint.Owner))
-        ControlPointCount++;
-      else if (IsPlayerOnSameTeamAsAnyEligibleFaction(args.FormerOwner) &&
-               !IsPlayerOnSameTeamAsAnyEligibleFaction(controlPoint.Owner))
-        ControlPointCount--;
-      
-      CheckObjectiveProgress();
+      SetControlPointProgress(args.ControlPoint, IsPlayerOnSameTeamAsAnyEligibleFaction(controlPoint.Owner));
     }
-
+    
+    private void SetControlPointProgress(ControlPoint controlPoint, bool newProgress)
+    {
+      var currentProgress = _progressByControlPoint[controlPoint];
+      if (currentProgress == newProgress)
+        return;
+      
+      _progressByControlPoint[controlPoint] = newProgress;
+      if (newProgress)
+        ControlPointCount++;
+      else
+        ControlPointCount--;
+    }
+    
     private void CheckObjectiveProgress() => Progress =
-      ControlPointCount == _controlPoints.Count ? QuestProgress.Complete : QuestProgress.Incomplete;
+      ControlPointCount == _progressByControlPoint.Count ? QuestProgress.Complete : QuestProgress.Incomplete;
   }
 }
