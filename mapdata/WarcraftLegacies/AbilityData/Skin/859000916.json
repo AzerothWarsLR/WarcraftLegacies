@@ -24,7 +24,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Calls 20 waves off Felfire down from the sky igniting and damaging all enemy units in an area, Each wave deals 100  damage; units effected by Felfire take 25 damage per second for 4 seconds."
+      "Value": "Calls 20 waves of Felfire down from the sky, damaging and igniting all enemy units in an area. Each wave deals 100 damage and causes affected units to take 25 damage per second for 4 seconds."
     },
     {
       "Id": 1835101793,
