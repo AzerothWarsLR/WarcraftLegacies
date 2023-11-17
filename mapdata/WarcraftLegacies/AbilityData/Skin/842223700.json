@@ -28,7 +28,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Calls down 15 individual firebolts from the sky igniting units, affected units take 15 damage per second for 3 seconds."
+      "Value": "Calls down 15 individual firebolts from the sky, igniting units struck. Affected units take 15 damage per second for 3 seconds."
     },
     {
       "Id": 1835101793,
