@@ -22,13 +22,13 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "Q"
+      "Value": "W"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Calls down 15 individual firebolts from the sky, igniting units struck. Affected units take 15 damage per second for 3 seconds."
+      "Value": "Calls down \u003CTP32:ACrf,DataA1\u003E individual firebolts from the sky igniting units, affected units take \u003CTP32:ACrf,DataE1\u003E damage per second for \u003CTP32:ACrf,Dur1\u003E seconds."
     },
     {
       "Id": 1835101793,

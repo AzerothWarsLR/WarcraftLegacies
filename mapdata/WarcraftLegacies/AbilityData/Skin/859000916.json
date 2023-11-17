@@ -18,13 +18,13 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "Q"
+      "Value": "R"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Calls 20 waves of Felfire down from the sky, damaging and igniting all enemy units in an area. Each wave deals 100 damage and causes affected units to take 25 damage per second for 4 seconds."
+      "Value": "Calls \u003CTP33:ACrf,DataA1\u003E waves off Felfire down from the sky igniting and damaging all enemy units in an area, Each wave deals \u003CTP33:ACrf,DataB1\u003E damage; units effected by Felfire take \u003CTP33:ACrf,DataE1\u003E damage per second for \u003CTP33:ACrf,Dur1\u003E seconds."
     },
     {
       "Id": 1835101793,
@@ -53,13 +53,13 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Calls 20 waves off Felfire down from the sky igniting and damaging all enemy units in an area, Each wave deals 125  damage; units effected by Felfire take 30 damage per second for 4 seconds."
+      "Value": "Calls \u003CTP33:ACrf,DataA2\u003E waves off Felfire down from the sky igniting and damaging all enemy units in an area, Each wave deals \u003CTP33:ACrf,DataB2\u003E damage; units effected by Felfire take \u003CTP33:ACrf,DataE2\u003E damage per second for \u003CTP33:ACrf,Dur2\u003E seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Calls 20 waves off Felfire down from the sky igniting and damaging all enemy units in an area, Each wave deals 150 damage; units effected by Felfire take 45 damage per second for 4 seconds."
+      "Value": "Calls \u003CTP33:ACrf,DataA3\u003E waves off Felfire down from the sky igniting and damaging all enemy units in an area, Each wave deals \u003CTP33:ACrf,DataB3\u003E damage; units effected by Felfire take \u003CTP33:ACrf,DataE3\u003E damage per second for \u003CTP33:ACrf,Dur3\u003E seconds."
     },
     {
       "Id": 1918988897,
@@ -74,15 +74,16 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Calls waves off Felfire down from the sky crushing enemy units as they strike, units hit by the blasts are then engulfed in Felfire causing damage over time."
+      "Value": "Calls waves off Felfire down from the sky crushing enemy units as they strike, units hit by the blasts are then engulfed in Felfire causing damage over time. |n|cffffcc00Level 1|r - Each wave deals \u003CTP33:ACrf,DataB1\u003E initial damage and \u003CTP33:ACrf,DataE1\u003E damage per second for \u003CTP33:ACrf,Dur1\u003E seconds.|n|cffffcc00Level 2|r - Each wave deals \u003CTP33:ACrf,DataB2\u003E initial damage and \u003CTP33:ACrf,DataE2\u003E damage per second for \u003CTP33:ACrf,Dur2\u003E seconds.|n|cffffcc00Level 3|r - Each wave deals \u003CTP33:ACrf,DataB3\u003E initial damage and \u003CTP33:ACrf,DataE3\u003E damage per second for \u003CTP33:ACrf,Dur3\u003E seconds."
     },
     {
       "Id": 2020635233,
       "Value": 3
     },
     {
-      "Id": 2037412449,
-      "Value": 2
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
     }
   ]
 }
