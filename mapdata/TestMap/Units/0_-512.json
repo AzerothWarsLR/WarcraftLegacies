@@ -13,7 +13,7 @@
     "TypeId": 1918984808,
     "Position": {
       "X": -64,
-      "Y": -192
+      "Y": -576
     },
     "Rotation": 4.71238899230957,
     "Scale": {
@@ -24,6 +24,6 @@
     "SkinId": 1918984808,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 15
+    "CreationNumber": 16
   }
 ]
