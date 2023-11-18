@@ -165,6 +165,8 @@
   {
     "Flags": 2,
     "OwnerId": 14,
+    "HP": -1,
+    "MP": -1,
     "InventoryData": [],
     "AbilityData": [],
     "CustomPlayerColorId": -1,

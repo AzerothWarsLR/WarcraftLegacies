@@ -20,6 +20,7 @@ public static class Regions
 	public static Rectangle AshenvaleAmbient2 { get; set; } = new Rectangle(-17760f, 9152f, -11968f, 12704f);
 	public static Rectangle AshenvaleAmbient3 { get; set; } = new Rectangle(-19424f, 512f, -17344f, 2080f);
 	public static Rectangle AshenvaleAmbient4 { get; set; } = new Rectangle(-19072f, 2080f, -17856f, 7584f);
+	public static Rectangle AshenvaleEmeraldPortal { get; set; } = new Rectangle(-8576f, 8992f, -8128f, 9280f);
 	public static Rectangle AshenvaleUnlock { get; set; } = new Rectangle(-15552f, 2464f, -13088f, 4576f);
 	public static Rectangle AstranaarUnlock { get; set; } = new Rectangle(-16832f, 1344f, -15168f, 2496f);
 	public static Rectangle AszharaAmbient1 { get; set; } = new Rectangle(-9856f, -3872f, -5920f, 3712f);
@@ -109,6 +110,7 @@ public static class Regions
 	public static Rectangle Fenris_ships { get; set; } = new Rectangle(5760f, 4960f, 13024f, 8128f);
 	public static Rectangle FeralasAmbient1 { get; set; } = new Rectangle(-17408f, -11552f, -14336f, -7904f);
 	public static Rectangle FeralasAmbient2 { get; set; } = new Rectangle(-23808f, -14464f, -17248f, -5536f);
+	public static Rectangle FeralasEmeraldPortal { get; set; } = new Rectangle(-18144f, -6464f, -17696f, -6208f);
 	public static Rectangle Fjord { get; set; } = new Rectangle(1536f, 13408f, 8192f, 20320f);
 	public static Rectangle ForsakenStartPos { get; set; } = new Rectangle(3296f, 22784f, 4480f, 23776f);
 	public static Rectangle FountainOfHealthAlterac { get; set; } = new Rectangle(10656f, 5536f, 11104f, 6016f);
@@ -232,6 +234,7 @@ public static class Regions
 	public static Rectangle RiseBaseUnlock { get; set; } = new Rectangle(-13056f, 5440f, -11072f, 7488f);
 	public static Rectangle RuinOfDalaran { get; set; } = new Rectangle(9152f, 5056f, 9312f, 5248f);
 	public static Rectangle Sargeras_Entrance { get; set; } = new Rectangle(-1024f, 8096f, -448f, 8576f);
+	public static Rectangle SatyrCamp { get; set; } = new Rectangle(-14816f, 6080f, -13888f, 6912f);
 	public static Rectangle Scarlet_Spawn { get; set; } = new Rectangle(19904f, 9472f, 21568f, 10624f);
 	public static Rectangle ScarletHarbor { get; set; } = new Rectangle(-9728f, 21984f, -7872f, 23648f);
 	public static Rectangle ScholomanceAmbient1 { get; set; } = new Rectangle(13728f, 7072f, 16096f, 8416f);
@@ -343,7 +346,5 @@ public static class Regions
 	public static Rectangle ZulAman_trolls { get; set; } = new Rectangle(20288f, 11648f, 22848f, 17440f);
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
-	public static Rectangle AshenvaleEmeraldPortal { get; set; } = new Rectangle(-8576f, 8992f, -8128f, 9280f);
-	public static Rectangle FeralasEmeraldPortal { get; set; } = new Rectangle(-18144f, -6464f, -17696f, -6208f);
 
 }
