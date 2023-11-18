@@ -15,7 +15,6 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       _target = target;
       Description = $"Your team controls {target.Name}";
       TargetWidget = target.Unit;
-      target.ChangedOwner += OnTargetChangeOwner;
       DisplaysPosition = true;
       Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
     }
@@ -25,9 +24,11 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer())
         ? QuestProgress.Complete
         : QuestProgress.Incomplete;
+      
+      _target.TeamChanged += OnTargetTeamChanged;
     }
 
-    private void OnTargetChangeOwner(object? sender, ControlPointOwnerChangeEventArgs controlPointOwnerChangeEventArgs)
+    private void OnTargetTeamChanged(object? sender, ControlPointTeamChangedEventArgs controlPointTeamChangedEventArgs)
     {
       Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer())
         ? QuestProgress.Complete

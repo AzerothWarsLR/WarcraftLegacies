@@ -22,9 +22,6 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
     {
       _target = target;
       _requiredLevel = requiredLevel;
-      target.ChangedOwner += (_, _) => Refresh();
-      target.Owner.GetPlayerData().PlayerJoinedTeam += (_, _) => Refresh();
-      _target.ControlLevelChanged += (_, _) => Refresh();
       TargetWidget = target.Unit;
       DisplaysPosition = true;
       Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
@@ -34,6 +31,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
     {
       RefreshDescription();
       RefreshProgress();
+      
+      _target.TeamChanged += (_, _) => Refresh();
+      _target.ControlLevelChanged += (_, _) => Refresh();
     }
 
     private void Refresh()

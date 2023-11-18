@@ -1,4 +1,5 @@
 using System;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
 
@@ -12,11 +13,7 @@ namespace MacroTools.ControlPointSystem
   public sealed class ControlPoint
   {
     private float _controlLevel;
-
-    /// <summary>
-    ///   Invoked when the <see cref="ControlPoint" /> changes its owner.
-    /// </summary>
-    public event EventHandler<ControlPointOwnerChangeEventArgs>? ChangedOwner;
+    private Team? _team;
 
     /// <summary>
     /// Fired when the <see cref="ControlLevel"/> of this <see cref="ControlPoint"/> changes.
@@ -26,7 +23,7 @@ namespace MacroTools.ControlPointSystem
     /// <summary>
     /// Invoked when the <see cref="ControlPoint"/> is owned by a new <see cref="Team"/>.
     /// </summary>
-    public event EventHandler<ControlPoint>? TeamChanged;
+    public event EventHandler<ControlPointTeamChangedEventArgs>? TeamChanged;
     
     /// <summary>
     /// A tower that appears on the <see cref="ControlPoint"/> when its <see cref="ControlLevel"/> exceeds 0.
@@ -71,21 +68,48 @@ namespace MacroTools.ControlPointSystem
         ControlLevelChanged?.Invoke(this, EventArgs.Empty);
       }
     }
-    
+
+    /// <summary>
+    /// The <see cref="Team"/> that owns this <see cref="ControlPoint"/>.
+    /// </summary>
+    public Team? Team
+    {
+      get => _team;
+      internal set
+      {
+        var formerTeam = Team;
+        
+        if (_team == value)
+          return;
+        
+        _team = value;
+        TeamChanged?.Invoke(this, new ControlPointTeamChangedEventArgs(this, formerTeam));
+      }
+    }
+
     /// <summary>
     /// Initializes a new instance of the <see cref="ControlPoint"/> class.
     /// </summary>
     /// <param name="representingUnit">The unit representing the <see cref="ControlPoint"/>.</param>
     /// <param name="value">The gold income granted by the <see cref="ControlPoint"/>.</param>
-    public ControlPoint(unit representingUnit, float value)
+    internal ControlPoint(unit representingUnit, float value)
     {
       Unit = representingUnit;
       Value = value;
+      Team = representingUnit.OwningPlayer().GetTeam();
     }
 
     /// <summary>
-    /// Invokes the <see cref="ChangedOwner"/> event with the provided arguments.
+    /// Fired when the <see cref="ControlPoint"/> is registered.
     /// </summary>
-    public void SignalOwnershipChange(ControlPointOwnerChangeEventArgs args) => ChangedOwner?.Invoke(this, args);
+    internal void OnRegister()
+    {
+      CreateTrigger()
+        .RegisterUnitEvent(Unit, EVENT_UNIT_CHANGE_OWNER)
+        .AddAction(() =>
+        {
+          Team = GetTriggerUnit().OwningPlayer().GetTeam();
+        });
+    }
   }
 }

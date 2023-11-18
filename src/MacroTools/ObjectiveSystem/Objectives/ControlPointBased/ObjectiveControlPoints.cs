@@ -48,9 +48,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       ControlPointCount = controlPoints.Count(x => IsPlayerOnSameTeamAsAnyEligibleFaction(x.Unit.OwningPlayer()));
     }
 
-    private void OnTargetTeamChanged(object? sender, ControlPoint controlPoint)
+    private void OnTargetTeamChanged(object? sender, ControlPointTeamChangedEventArgs args)
     {
-      SetControlPointProgress(controlPoint, IsPlayerOnSameTeamAsAnyEligibleFaction(controlPoint.Owner));
+      SetControlPointProgress(args.ControlPoint, IsPlayerOnSameTeamAsAnyEligibleFaction(args.ControlPoint.Owner));
     }
     
     private void SetControlPointProgress(ControlPoint controlPoint, bool newProgress)

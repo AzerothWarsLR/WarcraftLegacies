@@ -245,10 +245,8 @@ namespace MacroTools.Extensions
       newTeam.AddPlayer(_player);
       PlayerJoinedTeam?.Invoke(this, new PlayerChangeTeamEventArgs(_player, prevTeam));
 
-      foreach (var controlPoint in this.ControlPoints)
-      {
-        controlPoint.SetTeam(newTeam);
-      }
+      foreach (var controlPoint in ControlPoints)
+        controlPoint.Team = newTeam;
     }
     
     /// <summary>
