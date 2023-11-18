@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
     /// <param name="worldTree">Starts invulnerable and is recued when the quest is completed.</param>
     /// <param name="hornofCenarius">Required to complete the quest.</param>
     /// <param name="malfurion">Awakened when the quest is completed.</param>
-    public QuestMalfurionAwakens(Rectangle moonglade, Rectangle darnassus, Rectangle cenarionHold, unit worldTree, Artifact hornofCenarius, LegendaryHero malfurion) : base("Awakening of Stormrage",
+    public QuestMalfurionAwakens(Rectangle moonglade, Rectangle darnassus, unit worldTree, Artifact hornofCenarius, LegendaryHero malfurion) : base("Awakening of Stormrage",
       "Ever since the War of the Ancients ten thousand years ago, Malfurion Stormrage and his druids have slumbered within the Barrow Den. Now, their help is required once again.",
       @"ReplaceableTextures\CommandButtons\BTNFurion.blp")
     {
@@ -49,7 +49,6 @@ namespace WarcraftLegacies.Source.Quests.Druids
       AddObjective(new ObjectiveSelfExists());
       _moongladeUnits = moonglade.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _darnassusUnits = darnassus.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      _cenarionHoldUnits = cenarionHold.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       worldTree.SetInvulnerable(true);
       
     }

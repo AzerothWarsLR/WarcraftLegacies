@@ -10,19 +10,12 @@ namespace WarcraftLegacies.Source.Setup
   {
     private static readonly int RockChunkId = FourCC("LTrc");
     private static readonly int IslandChunkId = FourCC("B013");
-    private static readonly int ForestChunkId = FourCC("B008");
 
     public static void Setup()
     {
-      RockSystem.Register(new RockGroup(Regions.KaliRock1, RockChunkId, 480));
-      RockSystem.Register(new RockGroup(Regions.KaliRock4, RockChunkId, 300));
 
       //south rocks
-      RockSystem.Register(new RockGroup(Regions.KaliRock8, RockChunkId, 480));
-      RockSystem.Register(new RockGroup(Regions.KaliRock9, RockChunkId, 480));
-      RockSystem.Register(new RockGroup(Regions.KaliRock15, RockChunkId, 480));
       RockSystem.Register(new RockGroup(Regions.KaliRock12, RockChunkId, 300));
-      RockSystem.Register(new RockGroup(Regions.KaliRock14, RockChunkId, 480));
 
       //Island rocks
       RockSystem.Register(new RockGroup(Regions.IslandBlocker1, IslandChunkId, 1200));
@@ -31,12 +24,6 @@ namespace WarcraftLegacies.Source.Setup
       RockSystem.Register(new RockGroup(Regions.IslandBlocker4, IslandChunkId, 1200));
       RockSystem.Register(new RockGroup(Regions.IslandBlocker5, IslandChunkId, 1200));
       RockSystem.Register(new RockGroup(Regions.IslandBlocker6, IslandChunkId, 1200));
-
-      //Kali Ashenvale rocks
-      RockSystem.Register(new RockGroup(Regions.KaliRock7, ForestChunkId, 480));
-      RockSystem.Register(new RockGroup(Regions.KaliRock10, ForestChunkId, 480));
-      RockSystem.Register(new RockGroup(Regions.KaliRock11, ForestChunkId, 480));
-      RockSystem.Register(new RockGroup(Regions.KaliRock13, ForestChunkId, 480));
 
       //Northrend Rocks
       RockSystem.Register(new RockGroup(Regions.NorthrendRock1, RockChunkId, 360));

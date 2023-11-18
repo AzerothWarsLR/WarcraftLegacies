@@ -19,8 +19,8 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
         StartingGold = 200,
         StartingLumber = 700,
         ControlPointDefenderUnitTypeId = Constants.UNIT_H0C1_CONTROL_POINT_DEFENDER_ZANDALAR,
-        StartingCameraPosition = Regions.TrollStartPos.Center,
-        StartingUnits = Regions.TrollStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable),
+        //StartingCameraPosition = Regions.TrollStartPos.Center,
+        //StartingUnits = Regions.TrollStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable),
         LearningDifficulty = FactionLearningDifficulty.Basic,
         IntroText = @"You are playing as the mighty |cffe1946cZandalari Empire|r.
 

@@ -17,7 +17,6 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       var questRepairHull = new QuestRepairExodarHull(Regions.ExodarBaseUnlock, allLegendSetup.Draenei.LegendExodar);
       draenei.StartingQuest = questRepairHull;
       draenei.AddQuest(questRepairHull);
-      draenei.AddQuest(new QuestRebuildCivilisation(Regions.DesolaceUnlock, allLegendSetup.Draenei.Velen));
       draenei.AddQuest(new QuestShipArgus(
         preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.OutlandToArgus.Center),
         preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center),

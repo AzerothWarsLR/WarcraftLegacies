@@ -161,5 +161,29 @@
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 3804
+  },
+  {
+    "Flags": 2,
+    "OwnerId": 14,
+    "InventoryData": [],
+    "AbilityData": [],
+    "CustomPlayerColorId": -1,
+    "WaygateDestinationRegionId": -1,
+    "TypeId": 1668246643,
+    "Variation": 14,
+    "Position": {
+      "X": -23872,
+      "Y": -8960
+    },
+    "Rotation": 4.71238899230957,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 1668246643,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 6
   }
 ]
