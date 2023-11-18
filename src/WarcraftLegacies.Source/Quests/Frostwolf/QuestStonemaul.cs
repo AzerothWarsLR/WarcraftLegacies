@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     private readonly List<unit> _rescueUnits = new();
 
     public QuestStonemaul(PreplacedUnitSystem preplacedUnitSystem, Rectangle rescueRect) : base("The Chieftain's Challenge",
-      "Rexxar is having trouble with a beligerent Ogre Warlord, slay the Chieftain to gain the hero's allegiance and plunder the ogre's treasure.",
+      "Rexxar is having trouble with a beligerent Ogre Warlord, slay the Chieftain to gain the hero's allegiance.",
       @"ReplaceableTextures\CommandButtons\BTNOneHeadedOgre.blp")
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N022_STONEMAUL)));
