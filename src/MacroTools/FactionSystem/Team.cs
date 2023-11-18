@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using static War3Api.Common;
@@ -21,18 +20,6 @@ namespace MacroTools.FactionSystem
       Name = name;
     }
 
-    /// <summary>
-    /// Control points the team own
-    /// </summary>
-    public List<ControlPoint> ControlPoints {
-      get
-      {
-        var tempList = new List<ControlPoint>();
-        _members.ForEach(x=> tempList.AddRange(x.GetControlPoints()));
-        return tempList;
-      }
-    }
-    
     public string Name { get; }
 
     /// <summary>

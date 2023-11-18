@@ -228,6 +228,9 @@ namespace MacroTools.Extensions
     /// </summary>
     public void SetTeam(Team? newTeam)
     {
+      if (newTeam == Team)
+        return;
+      
       if (Team != null)
       {
         Team?.RemovePlayer(_player);
@@ -241,6 +244,11 @@ namespace MacroTools.Extensions
       Team = newTeam;
       newTeam.AddPlayer(_player);
       PlayerJoinedTeam?.Invoke(this, new PlayerChangeTeamEventArgs(_player, prevTeam));
+
+      foreach (var controlPoint in this.ControlPoints)
+      {
+        controlPoint.SetTeam(newTeam);
+      }
     }
     
     /// <summary>
