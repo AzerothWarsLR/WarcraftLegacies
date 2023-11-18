@@ -219,7 +219,7 @@
       "Controller": 1,
       "Race": 4,
       "Flags": 1,
-      "Name": "Elemental Lords",
+      "Name": "Skywall",
       "StartPosition": {
         "X": -13504,
         "Y": -20160
@@ -6857,10 +6857,6 @@
       "Id": 1094201454
     },
     {
-      "Players": 16777215,
-      "Id": 892350575
-    },
-    {
       "Players": 132,
       "Id": 1395929198
     },
@@ -7207,6 +7203,10 @@
     {
       "Players": 131071,
       "Id": 926232686
+    },
+    {
+      "Players": 16777215,
+      "Id": 892350575
     },
     {
       "Players": 14986751,
