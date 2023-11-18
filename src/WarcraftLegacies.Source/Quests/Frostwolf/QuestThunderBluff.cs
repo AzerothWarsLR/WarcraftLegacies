@@ -21,7 +21,6 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
   public sealed class QuestThunderBluff : QuestData
   {
     private readonly List<unit> _rescueUnits;
-    private readonly int goldReward = 175;
 
     /// <inheritdoc />
     public QuestThunderBluff(PreplacedUnitSystem preplacedUnitSystem, Rectangle rescueRect) : base("The Long March",
@@ -44,7 +43,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     protected override string RewardFlavour => "The long march of the Tauren clans has ended, and they have joined forces with the Horde.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => $"Control of Thunder Bluff, {goldReward} gold tribute and enable Cairne to be trained at the Altar of Storms";
+    protected override string RewardDescription => $"Control of Thunder Bluff and enable Cairne to be trained at the Altar of Storms";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
