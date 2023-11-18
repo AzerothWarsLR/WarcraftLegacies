@@ -43,15 +43,14 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
     {
       var controlPoints = _progressByControlPoint.Keys;
       foreach (var controlPoint in _progressByControlPoint.Keys) 
-        controlPoint.ChangedOwner += OnTargetChangeOwner;
+        controlPoint.TeamChanged += OnTargetTeamChanged;
 
       ControlPointCount = controlPoints.Count(x => IsPlayerOnSameTeamAsAnyEligibleFaction(x.Unit.OwningPlayer()));
     }
 
-    private void OnTargetChangeOwner(object? sender, ControlPointOwnerChangeEventArgs args)
+    private void OnTargetTeamChanged(object? sender, ControlPoint controlPoint)
     {
-      var controlPoint = args.ControlPoint;
-      SetControlPointProgress(args.ControlPoint, IsPlayerOnSameTeamAsAnyEligibleFaction(controlPoint.Owner));
+      SetControlPointProgress(controlPoint, IsPlayerOnSameTeamAsAnyEligibleFaction(controlPoint.Owner));
     }
     
     private void SetControlPointProgress(ControlPoint controlPoint, bool newProgress)

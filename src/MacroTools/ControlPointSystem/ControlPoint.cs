@@ -22,6 +22,11 @@ namespace MacroTools.ControlPointSystem
     /// Fired when the <see cref="ControlLevel"/> of this <see cref="ControlPoint"/> changes.
     /// </summary>
     public event EventHandler? ControlLevelChanged;
+
+    /// <summary>
+    /// Invoked when the <see cref="ControlPoint"/> is owned by a new <see cref="Team"/>.
+    /// </summary>
+    public event EventHandler<ControlPoint>? TeamChanged;
     
     /// <summary>
     /// A tower that appears on the <see cref="ControlPoint"/> when its <see cref="ControlLevel"/> exceeds 0.
