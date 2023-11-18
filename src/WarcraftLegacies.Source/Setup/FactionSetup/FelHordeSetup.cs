@@ -100,12 +100,12 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare to for
       FelHorde.ModObjectLimit(Constants.UPGRADE_R09W_IMPROVED_GREATER_CARRION_SWARM_LEGION, Faction.UNLIMITED); 
       FelHorde.SetObjectLevel(FourCC("R01Z"), 1); //Battle Stations
       
-      FelHorde.ModObjectLimit(FourCC("n05R"), 1); //Felguard
-      FelHorde.ModObjectLimit(FourCC("n06H"), 1); //Pit Fiend
-      FelHorde.ModObjectLimit(FourCC("n07B"), 1); //Queen
-      FelHorde.ModObjectLimit(FourCC("n07D"), 1); //Maiden
-      FelHorde.ModObjectLimit(FourCC("n07o"), 1); //Terror
-      FelHorde.ModObjectLimit(FourCC("n07N"), 1); //Lord
+      FelHorde.ModObjectLimit(FourCC("n05R"), Faction.UNLIMITED); //Felguard
+      FelHorde.ModObjectLimit(FourCC("n06H"), Faction.UNLIMITED); //Pit Fiend
+      FelHorde.ModObjectLimit(FourCC("n07B"), Faction.UNLIMITED); //Queen
+      FelHorde.ModObjectLimit(FourCC("n07D"), Faction.UNLIMITED); //Maiden
+      FelHorde.ModObjectLimit(FourCC("n07o"), Faction.UNLIMITED); //Terror
+      FelHorde.ModObjectLimit(FourCC("n07N"), Faction.UNLIMITED); //Lord
       
       FelHorde.ModAbilityAvailability(Constants.ABILITY_A0MZ_DEMONIC_CONSTRUCTION_TEAL_DEMOLISHERS, -1);
       FelHorde.ModAbilityAvailability(Constants.ABILITY_A0GM_FOR_THE_HORDE_PINK_GREY_MAIN_BUILDINGS, -1);

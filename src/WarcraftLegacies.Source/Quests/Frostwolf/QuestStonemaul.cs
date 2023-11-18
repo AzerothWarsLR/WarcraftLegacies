@@ -16,7 +16,6 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
   public sealed class QuestStonemaul : QuestData
   {
     private readonly List<unit> _rescueUnits = new();
-    private readonly int goldReward = 175;
 
     public QuestStonemaul(PreplacedUnitSystem preplacedUnitSystem, Rectangle rescueRect) : base("The Chieftain's Challenge",
       "Rexxar is having trouble with a beligerent Ogre Warlord, slay the Chieftain to gain the hero's allegiance and plunder the ogre's treasure.",
@@ -37,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       "Korghal has been defeated, Rexxar has joined the Frostwolf!";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => $"Control of all buildings in Stonemaul, {goldReward} gold tribute and Rexxar is now trainable at the Altar";
+    protected override string RewardDescription => $"Control of all buildings in Stonemaul and Rexxar is now trainable at the Altar";
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
