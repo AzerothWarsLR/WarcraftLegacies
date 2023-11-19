@@ -1,0 +1,44 @@
+{
+  "OldId": 1886615397,
+  "NewId": 895575155,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(tolvir)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Ancient spirit builder of the Kaldorei.|n|cfff5962dAbilities:|r Detonate, Renew, Gather|n|n|cffffcc00Attacks land units."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Shaper"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Shaper"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Unit_Shaper.mdl"
+    }
+  ]
+}

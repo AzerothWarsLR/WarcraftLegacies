@@ -1,6 +1,6 @@
 {
   "OldId": 1935830901,
-  "NewId": 1345466485,
+  "NewId": 895770995,
   "Unk": [
     0
   ],
@@ -28,7 +28,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Djinn"
+      "Value": "Efreet"
     },
     {
       "Id": 1868786037,
@@ -38,7 +38,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Genie.mdl"
+      "Value": "war3mapImported\\Efreet.mdl"
     },
     {
       "Id": 1668510581,

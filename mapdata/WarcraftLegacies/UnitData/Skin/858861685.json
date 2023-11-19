@@ -6,11 +6,6 @@
   ],
   "Modifications": [
     {
-      "Id": 1768841589,
-      "Type": 3,
-      "Value": "large"
-    },
-    {
       "Id": 1868786037,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNCarrionScarabs.blp"
@@ -19,10 +14,6 @@
       "Id": 1701601909,
       "Type": 1,
       "Value": 0.15
-    },
-    {
-      "Id": 1651270517,
-      "Value": 75
     },
     {
       "Id": 2020631157,
@@ -40,11 +31,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "units\\undead\\scarab\\scarab.mdl"
-    },
-    {
-      "Id": 1735156597,
-      "Value": 150
+      "Value": "war3mapImported\\LordKri.mdl"
     },
     {
       "Id": 1953458293,
@@ -59,12 +46,12 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 3
+      "Value": 0.7
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Giant Scarab"
+      "Value": "Silithid Colossus"
     },
     {
       "Id": 1668510581,
@@ -94,7 +81,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Train - Giant Scarab"
+      "Value": "Train - Silithid Colossus"
     },
     {
       "Id": 1651864693,
