@@ -22,7 +22,6 @@ namespace WarcraftLegacies.Source.Setup
           LegionDialogueSeup.Setup(legendSetup);
           QuelthalasDialogueSetup.Setup(legendSetup);
           GoblinDialogueSetup.Setup(legendSetup);
-          KultirasDialogueSetup.Setup(legendSetup);
         }
         catch (Exception ex)
         {

@@ -93,7 +93,7 @@ namespace MacroTools.FactionSystem
     ///   Registers a <see cref="Faction" /> to the <see cref="FactionManager" />,
     ///   allowing it to be retrieved globally and fire global events.
     /// </summary>
-    public static void Register(Faction faction)
+    public static Faction Register(Faction faction)
     {
       if (!FactionsByName.ContainsKey(faction.Name.ToLower()))
       {
@@ -101,11 +101,10 @@ namespace MacroTools.FactionSystem
         FactionRegistered?.Invoke(faction, faction);
         faction.OnRegistered();
         faction.NameChanged += OnFactionNameChange;
+        return faction;
       }
-      else
-      {
-        throw new Exception($"Attempted to register faction that already exists with name {faction}.");
-      }
+
+      throw new Exception($"Attempted to register faction that already exists with name {faction}.");
     }
 
     /// <summary>
