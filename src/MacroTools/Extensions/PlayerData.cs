@@ -14,6 +14,72 @@ namespace MacroTools.Extensions
   /// </summary>
   internal sealed class PlayerData
   {
+    private static readonly Dictionary<int, PlayerData> ById = new();
+
+    private readonly Dictionary<int, int> _objectLimits = new();
+    private float _goldPerMinute;
+    private float _bonusGoldPerMinute;
+
+    private readonly player _player;
+    private Faction? _faction;
+
+    private float _partialGold;
+    private float _partialLumber;
+    
+    private readonly Queue<IHasPlayableDialogue> _dialogueQueue = new();
+    private bool _dialoguePlaying;
+    
+    public void UpdatePlayerSetting(string setting, int value)
+    {
+      switch (setting)
+      {
+        case "CamDistance":
+          PlayerSettings.CamDistance = value;
+          _player.ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, PlayerSettings.CamDistance, 1);
+          break;
+      }
+      SaveManager.Save(PlayerSettings);
+    }
+
+    public void UpdatePlayerSetting(string setting, bool value)
+    {
+      switch (setting)
+      {
+        case "PlayDialogue":
+          PlayerSettings.PlayDialogue = value;
+          break;
+        case "ShowQuestText":
+          PlayerSettings.ShowQuestText = value;
+          break;
+        case "ShowCaptions":
+          PlayerSettings.ShowCaptions = value;
+          break;
+      }
+      SaveManager.Save(PlayerSettings);
+    }
+
+    private PlayerSettings CreateNewPlayerSettings()
+    {
+      var newPlayerSettings = new PlayerSettings();
+      newPlayerSettings.SetPlayer(_player);
+      SaveManager.SavesByPlayer[_player] = newPlayerSettings;
+      return newPlayerSettings;
+    }
+
+    /// <summary>
+    /// Control points the player owns
+    /// </summary>
+    public List<ControlPoint> ControlPoints { get; } = new();
+    
+    /// <summary>The number of extra <see cref="ControlPoint.ControlLevel"/>s the player gets each turn.</summary>
+    public float ControlLevelPerTurnBonus { get; set; }
+
+    private PlayerData(player player)
+    {
+      _player = player;
+      EliminationTurns = 0;
+    }
+    
     /// <summary>
     /// Fired when the player leaves a team.
     /// </summary>
@@ -29,22 +95,6 @@ namespace MacroTools.Extensions
     /// </summary>
     public event EventHandler<PlayerFactionChangeEventArgs>? ChangedFaction;
     
-    private static readonly Dictionary<int, PlayerData> ById = new();
-
-    private readonly Dictionary<int, int> _objectLimits = new();
-    private float _goldPerMinute;
-    private float _bonusGoldPerMinute;
-
-    private readonly player _player;
-    private Team? _team;
-    private Faction? _faction;
-
-    private float _partialGold;
-    private float _partialLumber;
-    
-    private readonly Queue<IHasPlayableDialogue> _dialogueQueue = new();
-    private bool _dialoguePlaying;
-
     /// <summary>
     /// Fired when the player's income changes.
     /// </summary>
@@ -64,24 +114,48 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Controls who the player is allied to.
     /// </summary>
-    public Team? Team
+    public Team? Team { get; private set; }
+
+    public int EliminationTurns { get; set; }
+    
+    public float LumberIncome { get; set; }
+
+    /// <summary>
+    ///   Gold per second gained from all sources.
+    /// </summary>
+    public float TotalIncome => BaseIncome + BonusIncome;
+
+    /// <summary>
+    ///   Gold per second gained from secondary sources like Forsaken's plagued buildings.
+    /// </summary>
+    public float BonusIncome
     {
-      get => _team;
+      get => _bonusGoldPerMinute;
       set
       {
-        if (_team != null)
-        {
-          _team?.RemovePlayer(_player);
-          PlayerLeftTeam?.Invoke(this, new PlayerChangeTeamEventArgs(_player, _team));
-        }
-
-        if (value == null) return;
-        var prevTeam = _team;
-        _team = value;
-        value.AddPlayer(_player);
-        PlayerJoinedTeam?.Invoke(this, new PlayerChangeTeamEventArgs(_player, prevTeam));
+        _bonusGoldPerMinute = value;
+        IncomeChanged?.Invoke(this, this);
       }
     }
+
+    /// <summary>
+    ///   Gold per second gained from primary sources like Control Points.
+    /// </summary>
+    public float BaseIncome
+    {
+      get => _goldPerMinute;
+      set
+      {
+        if (value < 0)
+          throw new ArgumentOutOfRangeException(
+            $"Tried to assign a negative {nameof(BaseIncome)} value to {GetPlayerName(_player)}.");
+
+        _goldPerMinute = value;
+        IncomeChanged?.Invoke(this, this);
+      }
+    }
+
+    public PlayerSettings PlayerSettings => SaveManager.SavesByPlayer.ContainsKey(_player)? SaveManager.SavesByPlayer[_player]: CreateNewPlayerSettings();
     
     /// <summary>
     ///   Controls name, available objects, color, and icon.
@@ -123,98 +197,6 @@ namespace MacroTools.Extensions
         ChangedFaction?.Invoke(this, new PlayerFactionChangeEventArgs(_player, prevFaction));
       }
     }
-
-    public int EliminationTurns { get; set; }
-    
-    public void UpdatePlayerSetting(string setting, int value)
-    {
-      switch (setting)
-      {
-        case "CamDistance":
-          PlayerSettings.CamDistance = value;
-          _player.ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, PlayerSettings.CamDistance, 1);
-          break;
-      }
-      SaveManager.Save(PlayerSettings);
-    }
-
-    public void UpdatePlayerSetting(string setting, bool value)
-    {
-      switch (setting)
-      {
-        case "PlayDialogue":
-          PlayerSettings.PlayDialogue = value;
-          break;
-        case "ShowQuestText":
-          PlayerSettings.ShowQuestText = value;
-          break;
-        case "ShowCaptions":
-          PlayerSettings.ShowCaptions = value;
-          break;
-      }
-      SaveManager.Save(PlayerSettings);
-    }
-    
-    public float LumberIncome { get; set; }
-
-    /// <summary>
-    ///   Gold per second gained from all sources.
-    /// </summary>
-    public float TotalIncome => BaseIncome + BonusIncome;
-
-    /// <summary>
-    ///   Gold per second gained from secondary sources like Forsaken's plagued buildings.
-    /// </summary>
-    public float BonusIncome
-    {
-      get => _bonusGoldPerMinute;
-      set
-      {
-        _bonusGoldPerMinute = value;
-        IncomeChanged?.Invoke(this, this);
-      }
-    }
-
-    /// <summary>
-    ///   Gold per second gained from primary sources like Control Points.
-    /// </summary>
-    public float BaseIncome
-    {
-      get => _goldPerMinute;
-      set
-      {
-        if (value < 0)
-          throw new ArgumentOutOfRangeException(
-            $"Tried to assign a negative {nameof(BaseIncome)} value to {GetPlayerName(_player)}.");
-
-        _goldPerMinute = value;
-        IncomeChanged?.Invoke(this, this);
-      }
-    }
-
-    public PlayerSettings PlayerSettings => SaveManager.SavesByPlayer.ContainsKey(_player)? SaveManager.SavesByPlayer[_player]: CreateNewPlayerSettings();
-
-    private PlayerSettings CreateNewPlayerSettings()
-    {
-      var newPlayerSettings = new PlayerSettings();
-      newPlayerSettings.SetPlayer(_player);
-      SaveManager.SavesByPlayer[_player] = newPlayerSettings;
-      return newPlayerSettings;
-    }
-
-    /// <summary>
-    /// Control points the player owns
-    /// </summary>
-    public List<ControlPoint> ControlPoints { get; } = new();
-    
-    /// <summary>The number of extra <see cref="ControlPoint.ControlLevel"/>s the player gets each turn.</summary>
-    public float ControlLevelPerTurnBonus { get; set; }
-
-    private PlayerData(player player)
-    {
-      _player = player;
-      EliminationTurns = 0;
-    }
     
     /// <summary>
     /// Queues the <see cref="IHasPlayableDialogue"/> for this player, playing it the next time there is nothing else playing.
@@ -239,6 +221,29 @@ namespace MacroTools.Extensions
         _dialoguePlaying = false;
         GetTriggeringTrigger().Destroy();
       }).Execute();
+    }
+    
+    /// <summary>
+    /// Changes the player's <see cref="PlayerData.Team"/> and updates their alliances to match.
+    /// </summary>
+    public void SetTeam(Team? newTeam)
+    {
+      if (newTeam == Team)
+        return;
+      
+      if (Team != null)
+      {
+        Team?.RemovePlayer(_player);
+        PlayerLeftTeam?.Invoke(this, new PlayerChangeTeamEventArgs(_player, Team));
+      }
+
+      if (newTeam == null) 
+        return;
+      
+      var prevTeam = Team;
+      Team = newTeam;
+      newTeam.AddPlayer(_player);
+      PlayerJoinedTeam?.Invoke(this, new PlayerChangeTeamEventArgs(_player, prevTeam));
     }
     
     /// <summary>
@@ -363,6 +368,15 @@ namespace MacroTools.Extensions
 
     public float GetLumber() => GetPlayerState(_player, PLAYER_STATE_RESOURCE_LUMBER) + _partialLumber;
 
+    /// <summary>
+    /// Signal that the player has had their alliances changed.
+    /// </summary>
+    internal void SignalAllianceChange()
+    {
+      foreach (var controlPoint in ControlPoints) 
+        controlPoint.SignalOwnerAllianceChange();
+    }
+    
     /// <summary>
     ///   Retrieves the <see cref="PlayerData" /> object which contains information about the given <see cref="player" />.
     /// </summary>

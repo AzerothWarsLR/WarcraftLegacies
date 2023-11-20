@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using MacroTools.DialogueSystem;
-using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
@@ -110,15 +109,14 @@ namespace MacroTools.ObjectiveSystem
     /// Returns true if the specified player is on the same team as any of the players that are eligible to contribute
     /// to this objective.
     /// </summary>
-    protected bool IsPlayerOnSameTeamAsAnyEligibleFaction(player whichPlayer)
+    protected bool IsPlayerAlliedToAnyEligibleFaction(player whichPlayer)
     {
-      var playerTeam = whichPlayer.GetTeam();
-      if (playerTeam == null)
-        return false;
-      
       foreach (var eligibleFaction in EligibleFactions)
-        if (eligibleFaction.Player != null && eligibleFaction.Player.GetTeam() == playerTeam)
+      {
+        var factionPlayer = eligibleFaction.Player;
+        if (factionPlayer != null && IsPlayerAlly(whichPlayer, factionPlayer))
           return true;
+      }
       
       return false;
     }

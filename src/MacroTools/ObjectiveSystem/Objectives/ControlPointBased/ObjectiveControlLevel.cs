@@ -1,5 +1,4 @@
 ﻿using MacroTools.ControlPointSystem;
-using MacroTools.Extensions;
 using MacroTools.QuestSystem;
 using static War3Api.Common;
 
@@ -22,9 +21,6 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
     {
       _target = target;
       _requiredLevel = requiredLevel;
-      target.ChangedOwner += (_, _) => Refresh();
-      target.Owner.GetPlayerData().PlayerJoinedTeam += (_, _) => Refresh();
-      _target.ControlLevelChanged += (_, _) => Refresh();
       TargetWidget = target.Unit;
       DisplaysPosition = true;
       Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
@@ -34,6 +30,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
     {
       RefreshDescription();
       RefreshProgress();
+      
+      _target.OwnerAllianceChanged += (_, _) => Refresh();
+      _target.ControlLevelChanged += (_, _) => Refresh();
     }
 
     private void Refresh()
@@ -44,14 +43,14 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 
     private void RefreshDescription()
     {
-      Description = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Owner)
+      Description = IsPlayerAlliedToAnyEligibleFaction(_target.Owner)
         ? $"{_target.Name} is Control Level {_requiredLevel} or higher ({(int)_target.ControlLevel}/{_requiredLevel})"
         : $"{_target.Name} is Control Level {_requiredLevel} or higher";
     }
 
     private void RefreshProgress()
     {
-      var isOnSameTeam = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Owner);
+      var isOnSameTeam = IsPlayerAlliedToAnyEligibleFaction(_target.Owner);
 
       Progress = _target.ControlLevel >= _requiredLevel && isOnSameTeam
         ? QuestProgress.Complete
