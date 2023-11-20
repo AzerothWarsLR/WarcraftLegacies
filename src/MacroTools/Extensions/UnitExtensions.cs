@@ -397,7 +397,7 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>
-    /// Returns the current owner of the specified unit/
+    /// Returns the current owner of the specified unit.
     /// </summary>
     public static player OwningPlayer(this unit unit)
     {

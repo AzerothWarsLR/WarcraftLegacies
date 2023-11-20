@@ -1,4 +1,5 @@
 using System;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
 
@@ -14,14 +15,15 @@ namespace MacroTools.ControlPointSystem
     private float _controlLevel;
 
     /// <summary>
-    ///   Invoked when the <see cref="ControlPoint" /> changes its owner.
-    /// </summary>
-    public event EventHandler<ControlPointOwnerChangeEventArgs>? ChangedOwner;
-
-    /// <summary>
     /// Fired when the <see cref="ControlLevel"/> of this <see cref="ControlPoint"/> changes.
     /// </summary>
     public event EventHandler? ControlLevelChanged;
+
+    /// <summary>
+    /// The owner of this <see cref="ControlPoint"/> changed their alliances, or the <see cref="ControlPoint"/> itself
+    /// changed ownership.
+    /// </summary>
+    public event EventHandler<ControlPoint>? OwnerAllianceChanged;
     
     /// <summary>
     /// A tower that appears on the <see cref="ControlPoint"/> when its <see cref="ControlLevel"/> exceeds 0.
@@ -66,7 +68,7 @@ namespace MacroTools.ControlPointSystem
         ControlLevelChanged?.Invoke(this, EventArgs.Empty);
       }
     }
-    
+
     /// <summary>
     /// Initializes a new instance of the <see cref="ControlPoint"/> class.
     /// </summary>
@@ -79,8 +81,21 @@ namespace MacroTools.ControlPointSystem
     }
 
     /// <summary>
-    /// Invokes the <see cref="ChangedOwner"/> event with the provided arguments.
+    /// Fired when the <see cref="ControlPoint"/> is registered.
     /// </summary>
-    public void SignalOwnershipChange(ControlPointOwnerChangeEventArgs args) => ChangedOwner?.Invoke(this, args);
+    internal void OnRegister()
+    {
+      CreateTrigger()
+        .RegisterUnitEvent(Unit, EVENT_UNIT_CHANGE_OWNER)
+        .AddAction(() =>
+        {
+          SignalOwnerAllianceChange();
+        });
+    }
+
+    /// <summary>
+    /// Signals that the <see cref="ControlPoint"/>'s <see cref="ControlPoint.Owner"/> has changed its alliances.
+    /// </summary>
+    internal void SignalOwnerAllianceChange() => OwnerAllianceChanged?.Invoke(this, this);
   }
 }
