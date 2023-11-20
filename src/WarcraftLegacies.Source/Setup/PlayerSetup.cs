@@ -1,12 +1,24 @@
-﻿using MacroTools.Extensions;
+﻿using MacroTools;
+using MacroTools.Extensions;
+using MacroTools.FactionSystem;
+using WarcraftLegacies.Source.Factions;
 using WarcraftLegacies.Source.Setup.FactionSetup;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup
 {
-  public static class PlayerSetup
+  public sealed class PlayerSetup
   {
-    public static void Setup()
+    private readonly PreplacedUnitSystem _preplacedUnitSystem;
+    private readonly AllLegendSetup _allLegendSetup;
+
+    public PlayerSetup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup)
+    {
+      _preplacedUnitSystem = preplacedUnitSystem;
+      _allLegendSetup = allLegendSetup;
+    }
+    
+    public void Setup()
     {
       Player(0).SetFaction(FrostwolfSetup.Frostwolf);
       Player(0).SetTeam(TeamSetup.Horde);
@@ -47,11 +59,17 @@ namespace WarcraftLegacies.Source.Setup
       
       Player(15).SetTeam(TeamSetup.Outland);
 
-      Player(22).SetFaction(KultirasSetup.Kultiras);
-      Player(22).SetTeam(TeamSetup.SouthAlliance);
+      SetupKultiras(Player(22));
 
       Player(23).SetFaction(LegionSetup.Legion);
       Player(23).SetTeam(TeamSetup.Legion);
+    }
+
+    private void SetupKultiras(player whichPlayer)
+    {
+      var kultiras = FactionManager.Register(new Kultiras(_preplacedUnitSystem, _allLegendSetup));
+      whichPlayer.SetFaction(kultiras);
+      whichPlayer.SetTeam(TeamSetup.SouthAlliance);
     }
   }
 }
