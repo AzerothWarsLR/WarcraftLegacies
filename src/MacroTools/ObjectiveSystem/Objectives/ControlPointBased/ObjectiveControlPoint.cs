@@ -21,16 +21,16 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 
     internal override void OnAdd(Faction whichFaction)
     {
-      Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer())
+      Progress = IsPlayerAlliedToAnyEligibleFaction(_target.Unit.OwningPlayer())
         ? QuestProgress.Complete
         : QuestProgress.Incomplete;
       
-      _target.TeamChanged += OnTargetTeamChanged;
+      _target.OwnerAllianceChanged += OnTargetTeamChanged;
     }
 
-    private void OnTargetTeamChanged(object? sender, ControlPointTeamChangedEventArgs controlPointTeamChangedEventArgs)
+    private void OnTargetTeamChanged(object? sender, ControlPoint controlPoint)
     {
-      Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer())
+      Progress = IsPlayerAlliedToAnyEligibleFaction(_target.Unit.OwningPlayer())
         ? QuestProgress.Complete
         : QuestProgress.Incomplete;
     }

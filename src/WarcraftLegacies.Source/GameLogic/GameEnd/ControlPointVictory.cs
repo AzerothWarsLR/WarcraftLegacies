@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.GameLogic.GameEnd
     public static void Setup()
     {
       foreach (var controlPoint in ControlPointManager.Instance.GetAllControlPoints())
-        controlPoint.TeamChanged += ControlPointOwnerChanges;
+        controlPoint.OwnerAllianceChanged += ControlPointOwnerChanges;
     }
     
     private static int GetTeamControlPoints(Team whichTeam) => 
@@ -42,15 +42,12 @@ namespace WarcraftLegacies.Source.GameLogic.GameEnd
       DisplayTextToPlayer(GetLocalPlayer(), 0, 0,
         $"\n{VictoryColor}TEAM VICTORY IMMINENT|r\n{whichTeam.Name} has captured {controlPoints} out of {CpsVictory} Control Points required to win the game!");
 
-    private static void ControlPointOwnerChanges(object? sender, ControlPointTeamChangedEventArgs args)
+    private static void ControlPointOwnerChanges(object? sender, ControlPoint controlPoint)
     {
       if (_gameWon) 
         return;
       
-      var newOwnerTeam = args.ControlPoint.Team;
-      var formerOwnerTeam = args.FormerOwner;
-      if (newOwnerTeam == null || newOwnerTeam == formerOwnerTeam) 
-        return;
+      var newOwnerTeam = controlPoint.Owner.GetTeam();
       
       var teamControlPoints = GetTeamControlPoints(newOwnerTeam);
       if (teamControlPoints >= CpsVictory)

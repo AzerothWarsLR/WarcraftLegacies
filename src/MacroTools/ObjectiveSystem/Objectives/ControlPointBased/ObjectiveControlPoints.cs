@@ -41,16 +41,16 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
     /// <inheritdoc/>
     internal override void OnAdd(Faction whichFaction)
     {
-      var controlPoints = _progressByControlPoint.Keys;
-      foreach (var controlPoint in _progressByControlPoint.Keys) 
-        controlPoint.TeamChanged += OnTargetTeamChanged;
-
-      ControlPointCount = controlPoints.Count(x => IsPlayerOnSameTeamAsAnyEligibleFaction(x.Unit.OwningPlayer()));
+      foreach (var controlPoint in _progressByControlPoint.Keys.ToArray())
+      {
+        controlPoint.OwnerAllianceChanged += OnTargetOwnerAllianceChanged;
+        SetControlPointProgress(controlPoint, IsPlayerAlliedToAnyEligibleFaction(controlPoint.Unit.OwningPlayer()));
+      }
     }
 
-    private void OnTargetTeamChanged(object? sender, ControlPointTeamChangedEventArgs args)
+    private void OnTargetOwnerAllianceChanged(object? sender, ControlPoint controlPoint)
     {
-      SetControlPointProgress(args.ControlPoint, IsPlayerOnSameTeamAsAnyEligibleFaction(args.ControlPoint.Owner));
+      SetControlPointProgress(controlPoint, IsPlayerAlliedToAnyEligibleFaction(controlPoint.Owner));
     }
     
     private void SetControlPointProgress(ControlPoint controlPoint, bool newProgress)

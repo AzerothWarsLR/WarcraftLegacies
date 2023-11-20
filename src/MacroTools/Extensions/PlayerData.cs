@@ -244,9 +244,6 @@ namespace MacroTools.Extensions
       Team = newTeam;
       newTeam.AddPlayer(_player);
       PlayerJoinedTeam?.Invoke(this, new PlayerChangeTeamEventArgs(_player, prevTeam));
-
-      foreach (var controlPoint in ControlPoints)
-        controlPoint.Team = newTeam;
     }
     
     /// <summary>
@@ -371,6 +368,15 @@ namespace MacroTools.Extensions
 
     public float GetLumber() => GetPlayerState(_player, PLAYER_STATE_RESOURCE_LUMBER) + _partialLumber;
 
+    /// <summary>
+    /// Signal that the player has had their alliances changed.
+    /// </summary>
+    internal void SignalAllianceChange()
+    {
+      foreach (var controlPoint in ControlPoints) 
+        controlPoint.SignalOwnerAllianceChange();
+    }
+    
     /// <summary>
     ///   Retrieves the <see cref="PlayerData" /> object which contains information about the given <see cref="player" />.
     /// </summary>

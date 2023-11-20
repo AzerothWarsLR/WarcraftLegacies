@@ -1,5 +1,4 @@
 ﻿using MacroTools.ControlPointSystem;
-using MacroTools.Extensions;
 using MacroTools.QuestSystem;
 using static War3Api.Common;
 
@@ -32,7 +31,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       RefreshDescription();
       RefreshProgress();
       
-      _target.TeamChanged += (_, _) => Refresh();
+      _target.OwnerAllianceChanged += (_, _) => Refresh();
       _target.ControlLevelChanged += (_, _) => Refresh();
     }
 
@@ -44,14 +43,14 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 
     private void RefreshDescription()
     {
-      Description = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Owner)
+      Description = IsPlayerAlliedToAnyEligibleFaction(_target.Owner)
         ? $"{_target.Name} is Control Level {_requiredLevel} or higher ({(int)_target.ControlLevel}/{_requiredLevel})"
         : $"{_target.Name} is Control Level {_requiredLevel} or higher";
     }
 
     private void RefreshProgress()
     {
-      var isOnSameTeam = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Owner);
+      var isOnSameTeam = IsPlayerAlliedToAnyEligibleFaction(_target.Owner);
 
       Progress = _target.ControlLevel >= _requiredLevel && isOnSameTeam
         ? QuestProgress.Complete

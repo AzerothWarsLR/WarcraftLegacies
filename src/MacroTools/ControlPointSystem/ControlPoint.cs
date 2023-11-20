@@ -13,7 +13,6 @@ namespace MacroTools.ControlPointSystem
   public sealed class ControlPoint
   {
     private float _controlLevel;
-    private Team? _team;
 
     /// <summary>
     /// Fired when the <see cref="ControlLevel"/> of this <see cref="ControlPoint"/> changes.
@@ -21,9 +20,10 @@ namespace MacroTools.ControlPointSystem
     public event EventHandler? ControlLevelChanged;
 
     /// <summary>
-    /// Invoked when the <see cref="ControlPoint"/> is owned by a new <see cref="Team"/>.
+    /// The owner of this <see cref="ControlPoint"/> changed their alliances, or the <see cref="ControlPoint"/> itself
+    /// changed ownership.
     /// </summary>
-    public event EventHandler<ControlPointTeamChangedEventArgs>? TeamChanged;
+    public event EventHandler<ControlPoint>? OwnerAllianceChanged;
     
     /// <summary>
     /// A tower that appears on the <see cref="ControlPoint"/> when its <see cref="ControlLevel"/> exceeds 0.
@@ -70,33 +70,14 @@ namespace MacroTools.ControlPointSystem
     }
 
     /// <summary>
-    /// The <see cref="Team"/> that owns this <see cref="ControlPoint"/>.
-    /// </summary>
-    public Team? Team
-    {
-      get => _team;
-      internal set
-      {
-        var formerTeam = Team;
-        
-        if (_team == value)
-          return;
-        
-        _team = value;
-        TeamChanged?.Invoke(this, new ControlPointTeamChangedEventArgs(this, formerTeam));
-      }
-    }
-
-    /// <summary>
     /// Initializes a new instance of the <see cref="ControlPoint"/> class.
     /// </summary>
     /// <param name="representingUnit">The unit representing the <see cref="ControlPoint"/>.</param>
     /// <param name="value">The gold income granted by the <see cref="ControlPoint"/>.</param>
-    internal ControlPoint(unit representingUnit, float value)
+    public ControlPoint(unit representingUnit, float value)
     {
       Unit = representingUnit;
       Value = value;
-      Team = representingUnit.OwningPlayer().GetTeam();
     }
 
     /// <summary>
@@ -108,8 +89,13 @@ namespace MacroTools.ControlPointSystem
         .RegisterUnitEvent(Unit, EVENT_UNIT_CHANGE_OWNER)
         .AddAction(() =>
         {
-          Team = GetTriggerUnit().OwningPlayer().GetTeam();
+          SignalOwnerAllianceChange();
         });
     }
+
+    /// <summary>
+    /// Signals that the <see cref="ControlPoint"/>'s <see cref="ControlPoint.Owner"/> has changed its alliances.
+    /// </summary>
+    internal void SignalOwnerAllianceChange() => OwnerAllianceChanged?.Invoke(this, this);
   }
 }

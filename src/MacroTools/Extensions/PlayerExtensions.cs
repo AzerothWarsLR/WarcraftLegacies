@@ -97,6 +97,8 @@ namespace MacroTools.Extensions
         default:
           throw new ArgumentOutOfRangeException(nameof(allianceState), allianceState, null);
       }
+      
+      PlayerData.ByHandle(sourcePlayer).SignalAllianceChange();
     }
 
     /// <summary>
