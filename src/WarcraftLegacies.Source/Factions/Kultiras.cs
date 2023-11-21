@@ -5,7 +5,6 @@ using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using WarcraftLegacies.Source.Quests.KulTiras;
 using WarcraftLegacies.Source.Setup;
-using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -34,6 +33,8 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       {
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4585, -13038))
       };
+      
+      RegisterFactionDependentInitializer<Dalaran>(RegisterDialogue);
     }
 
     /// <inheritdoc />
@@ -41,7 +42,6 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
     {
       RegisterObjectLimits();
       RegisterQuests();
-      RegisterDialogue();
     }
 
     private void RegisterObjectLimits()
@@ -124,7 +124,7 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
         _allLegendSetup.FelHorde.KilsorrowFortress));
     }
 
-    private void RegisterDialogue()
+    private void RegisterDialogue(Dalaran frostwolf)
     {
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
@@ -139,10 +139,10 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
               @"Sound\Dialogue\OrcExpCamp\OrcQuest20x\D20Proudmoore07",
               "Can your blood atone for genocide, orc? Your Horde killed countless innocents with its rampage across Stormwind and Lordaeron. Do you really think you can just sweep all that away and cast aside your guilt so easily? No, your kind will never change, and I will never stop fighting you.",
               "Daelin Proudmoore"))
-          , new[]
+          , new Faction[]
           {
             this,
-            FrostwolfSetup.Frostwolf
+            frostwolf
           }, new[]
           {
             new ObjectiveLegendMeetsLegend(_allLegendSetup.Kultiras.LegendAdmiral, _allLegendSetup.Frostwolf.Thrall)

@@ -29,7 +29,6 @@ namespace MacroTools.FactionSystem
     private const int FoodMaximumDefault = 200;
 
     private readonly Dictionary<int, int> _abilityAvailabilities = new();
-
     private readonly Dictionary<int, int> _objectLevels = new();
     private readonly Dictionary<int, int> _objectLimits = new();
     private readonly List<Power> _powers = new();
@@ -40,6 +39,8 @@ namespace MacroTools.FactionSystem
     private player? _player;
     private readonly int _undefeatedResearch;
 
+    internal List<FactionDependentInitializer> FactionDependentInitializers { get; } = new();
+    
     /// <summary>Fired when the <see cref="Faction" /> gains a <see cref="Power" />.</summary>
     public event EventHandler<FactionPowerEventArgs>? PowerAdded;
 
@@ -464,10 +465,27 @@ namespace MacroTools.FactionSystem
       return _questsByName.Values.FirstOrDefault(x => x.GetType() == typeof(T)) as T ??
              throw new Exception($"{Name} does not have a {nameof(QuestData)} of type {typeof(T)}");
     }
-
+    
     /// <summary>Returns all <see cref="QuestData"/>s the <see cref="Faction"/> can complete.</summary>
     public List<QuestData> GetAllQuests() => _questsByName.Values.ToList();
 
+    /// <summary>
+    /// Registers an initializer function that will only fire once a <see cref="Faction"/>s of the specified type has
+    /// been registered.
+    /// </summary>
+    /// <param name="initializer">The initializer function itself, which receives the registered instance of the
+    /// <see cref="Faction"/> type it depends on.</param>
+    /// <typeparam name="TFaction">The type of <see cref="Faction"/> to depend on.</typeparam>
+    protected void RegisterFactionDependentInitializer<TFaction>(Action<TFaction> initializer) where TFaction : Faction
+    {
+      var factionDependentInitializer = new FactionDependentInitializer(typeof(TFaction), () =>
+      {
+        if (FactionManager.TryGetFactionByType<TFaction>(out var factionDependency))
+          initializer(factionDependency);
+      });
+      FactionDependentInitializers.Add(factionDependentInitializer);
+    }
+    
     /// <summary>Removes all gold mines assigned to the faction</summary>
     private void RemoveGoldMines()
     {

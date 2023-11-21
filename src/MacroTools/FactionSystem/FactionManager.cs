@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 namespace MacroTools.FactionSystem
@@ -12,6 +13,7 @@ namespace MacroTools.FactionSystem
     private static readonly Dictionary<string, Team> TeamsByName = new();
     private static readonly List<Team> AllTeams = new();
     private static readonly Dictionary<string, Faction> FactionsByName = new();
+    private static readonly List<Faction> AllFactions = new();
 
     /// <summary>
     ///   Fired when a <see cref="Faction" /> is registered to the <see cref="FactionManager" />.
@@ -41,13 +43,13 @@ namespace MacroTools.FactionSystem
     /// Returns all registered <see cref="Faction"/>s.
     /// </summary>
     /// <returns></returns>
-    public static List<Faction> GetAllFactions() => FactionsByName.Values.ToList();
+    public static ReadOnlyCollection<Faction> GetAllFactions() => AllFactions.AsReadOnly();
 
     /// <summary>
     /// Returns all registered <see cref="Team"/>s.
     /// </summary>
     /// <returns></returns>
-    public static List<Team> GetAllTeams() => AllTeams.ToList();
+    public static ReadOnlyCollection<Team> GetAllTeams() => AllTeams.AsReadOnly();
 
     /// <summary>
     /// Gets the registered <see cref="Team"/> with the specified name.
@@ -74,7 +76,7 @@ namespace MacroTools.FactionSystem
     /// Returns true if a <see cref="Faction"/> with the specified type exists.
     /// </summary>
     /// <param name="faction">Outputs the <see cref="Faction"/> with the specified type.</param>
-    public static bool TryGetFactionByType<T>([NotNullWhen(true)] out Faction? faction) where T : Faction
+    public static bool TryGetFactionByType<T>([NotNullWhen(true)] out T? faction) where T : Faction
     {
       faction = FactionsByName.Values.FirstOrDefault(x => x.GetType() == typeof(T)) as T;
       return faction != null;
@@ -89,9 +91,12 @@ namespace MacroTools.FactionSystem
       if (!FactionsByName.ContainsKey(faction.Name.ToLower()))
       {
         FactionsByName[faction.Name.ToLower()] = faction;
+        AllFactions.Add(faction);
         FactionRegistered?.Invoke(faction, faction);
         faction.OnRegistered();
         faction.NameChanged += OnFactionNameChange;
+
+        ExecuteFactionDependentInitializers(faction);
         return faction;
       }
 
@@ -114,6 +119,26 @@ namespace MacroTools.FactionSystem
         throw new Exception(
           $"Attempted to register a {nameof(Team)} named {team.Name}, but there is already a registered {nameof(Team)} with that name.");
       }
+    }
+
+    /// <summary>
+    /// Executes all <see cref="FactionDependentInitializer"/>s related to the provided <see cref="Faction"/>, which have
+    /// satisfied their dependencies and which have not already been executed.
+    /// </summary>
+    private static void ExecuteFactionDependentInitializers(Faction faction)
+    {
+      //Try execute initializers the provided Faction depends on.
+      var factionInitializers = faction.FactionDependentInitializers
+        .Where(x => AllFactions.Any(f => f.GetType() == faction.GetType()) && !x.Executed);
+      foreach (var initializer in factionInitializers)
+        initializer.Execute();
+      
+      //Try execute initializers that depend on the provided Faction.
+      var dependentInitializers = FactionsByName.Values
+        .SelectMany(x => x.FactionDependentInitializers)
+        .Where(x => x.FactionDependency == faction.GetType() && !x.Executed);
+      foreach (var initializer in dependentInitializers)
+        initializer.Execute();
     }
   }
 }
