@@ -40,7 +40,7 @@ namespace MacroTools.FactionSystem
     public void Execute()
     {
       if (Executed)
-        return;
+        throw new Exception($"Tried to execute {nameof(FactionDependentInitializer)} with {nameof(FactionDependency)} {FactionDependency.Name} but it has already been executed.");
       
       _initializerAction();
       Executed = true;

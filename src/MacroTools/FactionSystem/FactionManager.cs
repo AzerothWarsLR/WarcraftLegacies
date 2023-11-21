@@ -83,6 +83,11 @@ namespace MacroTools.FactionSystem
     }
 
     /// <summary>
+    /// Returns true if a <see cref="Faction"/> with the specified type exists.
+    /// </summary>
+    public static bool FactionOfTypeExists(Type factionType) => AllFactions.Any(x => x.GetType() == factionType);
+
+    /// <summary>
     ///   Registers a <see cref="Faction" /> to the <see cref="FactionManager" />,
     ///   allowing it to be retrieved globally and fire global events.
     /// </summary>
@@ -127,14 +132,13 @@ namespace MacroTools.FactionSystem
     /// </summary>
     private static void ExecuteFactionDependentInitializers(Faction faction)
     {
-      //Try execute initializers the provided Faction depends on.
       var factionInitializers = faction.FactionDependentInitializers
-        .Where(x => AllFactions.Any(f => f.GetType() == faction.GetType()) && !x.Executed);
+        .Where(x => FactionOfTypeExists(x.FactionDependency) && !x.Executed);
       foreach (var initializer in factionInitializers)
         initializer.Execute();
       
       //Try execute initializers that depend on the provided Faction.
-      var dependentInitializers = FactionsByName.Values
+      var dependentInitializers = AllFactions
         .SelectMany(x => x.FactionDependentInitializers)
         .Where(x => x.FactionDependency == faction.GetType() && !x.Executed);
       foreach (var initializer in dependentInitializers)
