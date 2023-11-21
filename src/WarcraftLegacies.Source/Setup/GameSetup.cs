@@ -45,7 +45,7 @@ namespace WarcraftLegacies.Source.Setup
       TeamSetup.Setup();
       AllFactionSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       SharedFactionConfigSetup.Setup();
-      new PlayerSetup(preplacedUnitSystem, allLegendSetup).Setup();
+      new PlayerSetup(preplacedUnitSystem, allLegendSetup, artifactSetup).Setup();
       FactionChoiceDialogSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       NeutralHostileSetup.Setup();
       AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);

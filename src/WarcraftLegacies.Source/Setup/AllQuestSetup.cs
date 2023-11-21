@@ -10,7 +10,6 @@ namespace WarcraftLegacies.Source.Setup
       QuelthalasQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
       DruidsQuestSetup.Setup(artifactSetup, allLegendSetup);
       FelHordeQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
-      FrostwolfQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       IronforgeQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
       LordaeronQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       ScourgeQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
