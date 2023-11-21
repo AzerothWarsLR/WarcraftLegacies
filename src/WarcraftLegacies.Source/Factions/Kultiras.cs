@@ -34,7 +34,7 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4585, -13038))
       };
       
-      RegisterFactionDependentInitializer<Dalaran>(RegisterDialogue);
+      RegisterFactionDependentInitializer<Frostwolf>(RegisterDialogue);
     }
 
     /// <inheritdoc />
@@ -124,7 +124,7 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
         _allLegendSetup.FelHorde.KilsorrowFortress));
     }
 
-    private void RegisterDialogue(Dalaran frostwolf)
+    private void RegisterDialogue(Frostwolf frostwolf)
     {
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
