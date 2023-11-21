@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 {
   public sealed class QuestStonemaul : QuestData
   {
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
 
     public QuestStonemaul(PreplacedUnitSystem preplacedUnitSystem, Rectangle rescueRect) : base("The Chieftain's Challenge",
       "Rexxar is having trouble with a beligerent Ogre Warlord, slay the Chieftain to gain the hero's allegiance.",
