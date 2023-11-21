@@ -12,7 +12,6 @@ namespace WarcraftLegacies.Source.Setup
       {
         try
         {
-          ScourgeDialogueSetup.Setup(legendSetup);
           WarsongDialogueSetup.Setup(legendSetup);
           DruidsDialogueSetup.Setup(preplacedUnitSystem, legendSetup);
           LordaeronDialogueSetup.Setup(preplacedUnitSystem, legendSetup);

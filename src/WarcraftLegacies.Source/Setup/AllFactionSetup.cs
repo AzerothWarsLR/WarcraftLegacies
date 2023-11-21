@@ -7,7 +7,6 @@ namespace WarcraftLegacies.Source.Setup
   {
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
-      ScourgeSetup.Setup(preplacedUnitSystem, artifactSetup.HelmOfDomination);
       LegionSetup.Setup(preplacedUnitSystem);
       LordaeronSetup.Setup(preplacedUnitSystem);
       QuelthalasSetup.Setup(preplacedUnitSystem);

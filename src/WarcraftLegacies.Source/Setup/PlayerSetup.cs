@@ -30,8 +30,7 @@ namespace WarcraftLegacies.Source.Setup
       Player(2).SetFaction(QuelthalasSetup.Quelthalas);
       Player(2).SetTeam(TeamSetup.NorthAlliance);
       
-      Player(3).SetFaction(ScourgeSetup.Scourge);
-      Player(3).SetTeam(TeamSetup.Legion);
+      SetupScourge(Player(3));
 
       Player(4).SetFaction(IronforgeSetup.Ironforge);
       Player(4).SetTeam(TeamSetup.SouthAlliance);
@@ -71,6 +70,13 @@ namespace WarcraftLegacies.Source.Setup
       var frostwolf = FactionManager.Register(new Frostwolf(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
       whichPlayer.SetFaction(frostwolf);
       whichPlayer.SetTeam(TeamSetup.Horde);
+    }
+    
+    private void SetupScourge(player whichPlayer)
+    {
+      var scourge = FactionManager.Register(new Scourge(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
+      whichPlayer.SetFaction(scourge);
+      whichPlayer.SetTeam(TeamSetup.Legion);
     }
     
     private void SetupKultiras(player whichPlayer)
