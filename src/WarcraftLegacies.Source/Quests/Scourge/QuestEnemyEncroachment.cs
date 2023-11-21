@@ -1,5 +1,4 @@
-﻿using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+﻿using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.Scourge

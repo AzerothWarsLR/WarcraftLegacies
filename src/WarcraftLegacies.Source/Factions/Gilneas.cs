@@ -9,7 +9,6 @@ using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Gilneas;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.FactionSetup;
-using WarcraftLegacies.Source.Setup.QuestSetup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
