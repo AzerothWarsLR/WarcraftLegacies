@@ -56,6 +56,8 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       {
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9204, 2471))
       };
+      
+      RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
     }
 
     /// <inheritdoc />
@@ -229,7 +231,10 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
         {
           new ObjectiveLegendInRect(_allLegendSetup.Dalaran.Jaina, Regions.Hearthglen, "Hearthglen")
         }));
-      
+    }
+    
+    private void RegisterScourgeDialogue(Scourge scourge)
+    {
       TriggeredDialogueManager.Add(new TriggeredDialogue(
         new DialogueSequence(
           new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Antonidas13.flac",
@@ -238,9 +243,9 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
           new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Arthas14.flac",
             "I'll be happy to end your torment, old man. I told you that your magics could not stop me.",
             "Antonidas")
-        ), new[]
+        ), new Faction[]
         {
-          ScourgeSetup.Scourge,
+          scourge,
           this
         }, new List<Objective>
         {
