@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using MacroTools.Extensions;
-using static War3Api.Common;
-
 namespace MacroTools.FactionSystem
 {
   /// <summary>
@@ -40,32 +37,26 @@ namespace MacroTools.FactionSystem
       }
     }
 
-    public static List<Faction> GetAllFactions()
-    {
-      return FactionsByName.Values.ToList();
-    }
-    
-    public static List<Team> GetAllTeams()
-    {
-      return AllTeams.ToList();
-    }
-
-    public static bool TeamWithNameExists(string teamName)
-    {
-      return TeamsByName.ContainsKey(teamName.ToLower());
-    }
+    /// <summary>
+    /// Returns all registered <see cref="Faction"/>s.
+    /// </summary>
+    /// <returns></returns>
+    public static List<Faction> GetAllFactions() => FactionsByName.Values.ToList();
 
     /// <summary>
-    /// Returns the <see cref="Team"/> with the specified name if one exists.
-    /// Returns null otherwise.
+    /// Returns all registered <see cref="Team"/>s.
     /// </summary>
-    public static Team? GetTeamByName(string teamName) =>
-      TeamsByName.TryGetValue(teamName.ToLower(), out var team) ? team : null;
+    /// <returns></returns>
+    public static List<Team> GetAllTeams() => AllTeams.ToList();
 
-    public static Faction? GetFromPlayer(player whichPlayer)
-    {
-      return PlayerData.ByHandle(whichPlayer)?.Faction;
-    }
+    /// <summary>
+    /// Gets the registered <see cref="Team"/> with the specified name.
+    /// </summary>
+    /// <param name="teamName">The name of the team.</param>
+    /// <param name="team">The team with the specified name.</param>
+    /// <returns>Returns true if a team with the specified name exists.</returns>
+    public static bool TryGetTeamByName(string teamName, [NotNullWhen(true)] out Team? team) =>
+      TeamsByName.TryGetValue(teamName.ToLower(), out team);
 
     public static bool FactionWithNameExists(string name)
     {

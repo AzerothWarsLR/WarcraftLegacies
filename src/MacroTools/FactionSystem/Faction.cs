@@ -60,9 +60,10 @@ namespace MacroTools.FactionSystem
       {
         try
         {
-          var faction = FactionManager.GetFromPlayer(GetTriggerPlayer());
+          var faction = GetTriggerPlayer().GetFaction();;
           if (faction == null)
             return;
+          
           var researchId = GetResearched();
           var research = ResearchManager.GetFromTypeId(researchId);
           if (research == null || !research.IncompatibleWith.Any(x => faction.GetObjectLevel(x.ResearchTypeId) > 0))
@@ -343,10 +344,11 @@ namespace MacroTools.FactionSystem
     public void Unally()
     {
       if (!(Player?.GetTeam()?.Size > 1)) return;
-      var newTeamName = Name + " Pact";
-      if (FactionManager.TeamWithNameExists(newTeamName))
+      var newTeamName = $"{Name} Pact";
+
+      if (FactionManager.TryGetTeamByName(newTeamName, out var existingTeam))
       {
-        Player.SetTeam(FactionManager.GetTeamByName(newTeamName));
+        Player.SetTeam(existingTeam);
         return;
       }
 
