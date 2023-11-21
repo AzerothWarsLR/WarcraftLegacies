@@ -52,7 +52,7 @@ namespace MacroTools.FactionSystem
     /// <summary>Invoked when one of the <see cref="Faction"/>'s <see cref="QuestData"/>s changes progress.</summary>
     public event EventHandler<FactionQuestProgressChangedEventArgs>? QuestProgressChanged;
 
-    public List<unit> GoldMines { private get; init; } = new();
+    protected List<unit> GoldMines { private get; init; } = new();
     
     static Faction()
     {
@@ -60,7 +60,7 @@ namespace MacroTools.FactionSystem
       {
         try
         {
-          var faction = GetTriggerPlayer().GetFaction();;
+          var faction = GetTriggerPlayer().GetFaction();
           if (faction == null)
             return;
           
@@ -469,7 +469,7 @@ namespace MacroTools.FactionSystem
     public List<QuestData> GetAllQuests() => _questsByName.Values.ToList();
 
     /// <summary>Removes all gold mines assigned to the faction</summary>
-    public void RemoveGoldMines()
+    private void RemoveGoldMines()
     {
       foreach (var unit in GoldMines) 
         KillUnit(unit);
@@ -536,7 +536,7 @@ namespace MacroTools.FactionSystem
       foreach (var (key, _) in _objectLevels)
         Player?.SetObjectLevel(key, 0);
 
-      foreach (var (key, value) in _abilityAvailabilities)
+      foreach (var (key, _) in _abilityAvailabilities)
         Player?.SetAbilityAvailability(key, true);
     }
 
