@@ -47,7 +47,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       {
         _kelthuzad.UnitType = FourCC("U00M");
         _kelthuzad.PermaDies = false;
-        _kelthuzad.ForceCreate(ScourgeSetup.Scourge.Player, Regions.FTSummon.Center,
+        _kelthuzad.ForceCreate(whichFaction.Player, Regions.FTSummon.Center,
           270);
       }
       else
