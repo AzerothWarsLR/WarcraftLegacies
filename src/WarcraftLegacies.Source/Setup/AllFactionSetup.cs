@@ -14,7 +14,6 @@ namespace WarcraftLegacies.Source.Setup
       SentinelsSetup.Setup(preplacedUnitSystem, allLegendSetup);
       DruidsSetup.Setup(preplacedUnitSystem, allLegendSetup);
       FelHordeSetup.Setup(preplacedUnitSystem);
-      FrostwolfSetup.Setup(preplacedUnitSystem);
       WarsongSetup.Setup(preplacedUnitSystem);
       StormwindSetup.Setup();
       IronforgeSetup.Setup(preplacedUnitSystem);

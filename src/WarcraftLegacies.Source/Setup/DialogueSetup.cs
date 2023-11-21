@@ -18,7 +18,6 @@ namespace WarcraftLegacies.Source.Setup
           LordaeronDialogueSetup.Setup(preplacedUnitSystem, legendSetup);
           IllidariDialogueSetup.Setup(legendSetup);
           SentinelsDialogueSetup.Setup(legendSetup);
-          FrostwolfDialogueSetup.Setup(legendSetup);
           LegionDialogueSeup.Setup(legendSetup);
           QuelthalasDialogueSetup.Setup(legendSetup);
           GoblinDialogueSetup.Setup(legendSetup);

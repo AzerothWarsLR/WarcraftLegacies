@@ -11,17 +11,18 @@ namespace WarcraftLegacies.Source.Setup
   {
     private readonly PreplacedUnitSystem _preplacedUnitSystem;
     private readonly AllLegendSetup _allLegendSetup;
+    private readonly ArtifactSetup _artifactSetup;
 
-    public PlayerSetup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup)
+    public PlayerSetup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
     {
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
+      _artifactSetup = artifactSetup;
     }
     
     public void Setup()
     {
-      Player(0).SetFaction(FrostwolfSetup.Frostwolf);
-      Player(0).SetTeam(TeamSetup.Horde);
+      SetupFrostwolf(Player(0));
 
       Player(9).SetFaction(LordaeronSetup.Lordaeron);
       Player(9).SetTeam(TeamSetup.NorthAlliance);
@@ -65,6 +66,13 @@ namespace WarcraftLegacies.Source.Setup
       Player(23).SetTeam(TeamSetup.Legion);
     }
 
+    private void SetupFrostwolf(player whichPlayer)
+    {
+      var frostwolf = FactionManager.Register(new Frostwolf(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
+      whichPlayer.SetFaction(frostwolf);
+      whichPlayer.SetTeam(TeamSetup.Horde);
+    }
+    
     private void SetupKultiras(player whichPlayer)
     {
       var kultiras = FactionManager.Register(new Kultiras(_preplacedUnitSystem, _allLegendSetup));
