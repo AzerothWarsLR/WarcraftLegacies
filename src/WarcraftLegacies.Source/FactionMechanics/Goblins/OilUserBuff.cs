@@ -2,7 +2,7 @@
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.Mechanics.Goblins
+namespace WarcraftLegacies.Source.FactionMechanics.Goblins
 {
   /// <summary>
   /// Units with this buff use oil instead of mana.

@@ -3,7 +3,7 @@ using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.Mechanics.Goblins
+namespace WarcraftLegacies.Source.FactionMechanics.Goblins
 {
   /// <summary>
   /// Fire a giant delayed nuke, with a warning signal placed down beforehand.

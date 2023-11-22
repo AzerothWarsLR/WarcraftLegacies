@@ -4,7 +4,7 @@ using WCSharp.Buffs;
 using WCSharp.Events;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.Mechanics.Goblins
+namespace WarcraftLegacies.Source.FactionMechanics.Goblins
 {
   /// <summary>
   /// Increases the owner's oil income. The owner must have an instance of <see cref="OilPower"/>.

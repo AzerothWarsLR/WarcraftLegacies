@@ -3,7 +3,7 @@ using MacroTools.Extensions;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.Mechanics.Frostwolf
+namespace WarcraftLegacies.Source.FactionMechanics.Frostwolf
 {
   /// <summary>
   /// At the start of the game, Frostwolf has a Peon harvesting lumber from their ships to indicate that this is possible.

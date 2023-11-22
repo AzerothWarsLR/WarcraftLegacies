@@ -3,7 +3,7 @@ using MacroTools.Powers;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.Mechanics.Goblins
+namespace WarcraftLegacies.Source.FactionMechanics.Goblins
 {
   /// <summary>
   /// Oil producers generate Oil for their owner's <see cref="OilPower"/>.

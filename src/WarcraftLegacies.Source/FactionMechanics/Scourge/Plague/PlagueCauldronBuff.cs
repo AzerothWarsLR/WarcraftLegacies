@@ -4,7 +4,7 @@ using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
+namespace WarcraftLegacies.Source.FactionMechanics.Scourge.Plague
 {
   /// <summary>
   ///   Causes the buff holder to periodically spawn a Zombie unit nearby.

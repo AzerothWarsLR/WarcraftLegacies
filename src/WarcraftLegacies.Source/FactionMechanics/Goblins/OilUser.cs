@@ -5,7 +5,7 @@ using MacroTools.Powers;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.Mechanics.Goblins
+namespace WarcraftLegacies.Source.FactionMechanics.Goblins
 {
   /// <summary>
   /// Oil users use oil instead of mana. The oil is provided by the owner's <see cref="OilPower"/> if they have one.

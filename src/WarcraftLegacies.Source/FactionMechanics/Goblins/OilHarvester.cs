@@ -7,7 +7,7 @@ using MacroTools.Powers;
 using WCSharp.Buffs;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.Mechanics.Goblins
+namespace WarcraftLegacies.Source.FactionMechanics.Goblins
 {
   /// <summary>
   /// Oil harvesters consume oil from <see cref="OilPool"/>s around them.

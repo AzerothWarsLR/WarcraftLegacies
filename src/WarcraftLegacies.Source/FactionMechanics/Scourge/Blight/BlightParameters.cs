@@ -1,6 +1,6 @@
 ﻿using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Mechanics.Scourge.Blight
+namespace WarcraftLegacies.Source.FactionMechanics.Scourge.Blight
 {
   /// <summary>
   ///   Dictates how the <see cref="BlightSystem" /> places blight.

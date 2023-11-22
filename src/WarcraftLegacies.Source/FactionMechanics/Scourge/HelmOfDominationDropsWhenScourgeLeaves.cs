@@ -5,7 +5,7 @@ using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.Mechanics.Scourge
+namespace WarcraftLegacies.Source.FactionMechanics.Scourge
 {
   /// <summary>
   ///  When Scourge leaves the game, drop the Helm of Domination to an easily accessible position since the default position is hard to see.

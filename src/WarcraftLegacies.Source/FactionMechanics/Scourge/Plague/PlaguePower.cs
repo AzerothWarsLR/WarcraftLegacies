@@ -8,7 +8,7 @@ using WCSharp.Buffs;
 using WCSharp.Events;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.Mechanics.Scourge.Plague
+namespace WarcraftLegacies.Source.FactionMechanics.Scourge.Plague
 {
   /// <summary>
   ///   Grants the <see cref="Power" /> holder several Plague Cauldrons that periodically spawn undead units.

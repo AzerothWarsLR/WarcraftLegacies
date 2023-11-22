@@ -4,7 +4,7 @@ using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.Mechanics.Fel_Horde
+namespace WarcraftLegacies.Source.FactionMechanics.Fel_Horde
 {
   /// <summary>
   /// Fel Horde's Juggernaut towers start invulnerable and can be destroyed by destroying their corresponding generator.

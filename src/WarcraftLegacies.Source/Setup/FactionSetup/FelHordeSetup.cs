@@ -1,6 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
-using WarcraftLegacies.Source.Mechanics.Fel_Horde;
+using WarcraftLegacies.Source.FactionMechanics.Fel_Horde;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 

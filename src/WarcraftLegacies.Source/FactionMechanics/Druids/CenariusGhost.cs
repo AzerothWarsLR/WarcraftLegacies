@@ -3,7 +3,7 @@ using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Mechanics.Druids
+namespace WarcraftLegacies.Source.FactionMechanics.Druids
 {
   public static class CenariusGhost
   {

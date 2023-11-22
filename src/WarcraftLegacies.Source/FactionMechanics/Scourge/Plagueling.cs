@@ -1,8 +1,7 @@
 using WCSharp.Events;
-
 using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.Mechanics.Scourge
+namespace WarcraftLegacies.Source.FactionMechanics.Scourge
 {
   public static class Plagueling
   {

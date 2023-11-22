@@ -8,7 +8,7 @@ using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.Mechanics.Goblins
+namespace WarcraftLegacies.Source.FactionMechanics.Goblins
 {
   /// <summary>
   /// When trained, the <see cref="Trader"/> patrols between the originating point and a random trade destination.
