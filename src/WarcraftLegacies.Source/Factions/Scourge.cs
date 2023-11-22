@@ -347,7 +347,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
               soundFile: @"Sound\Dialogue\UndeadCampaign\Undead03A\U03AKelthuzad04.flac",
               caption: "Don't be too overconfident, death knight. The elves must not be taken lightly.",
               speaker: "Kel'thuzad")),
-          new[]
+          new Faction[]
           {
             this,
             quelthalas
@@ -372,7 +372,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
               soundFile: @"Sound\Dialogue\UndeadCampaign\Undead03A\U03AArthas13.flac",
               caption: "It is you who should turn back, Sylvanas. Death itself has come for your land.",
               speaker: "Arthas Menethil")),
-          new[]
+          new Faction[]
           {
             this,
             quelthalas
@@ -398,7 +398,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
               soundFile: @"Sound\Dialogue\UndeadCampaign\Undead05A\U05AKelThuzad31.flac",
               caption: "I am reborn, as promised! The Lich King has granted me eternal life!",
               speaker: "Kel'thuzad")),
-          new[]
+          new Faction[]
           {
             this,
             quelthalas
