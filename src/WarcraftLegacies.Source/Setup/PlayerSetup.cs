@@ -22,11 +22,10 @@ namespace WarcraftLegacies.Source.Setup
     
     public void Setup()
     {
+      Player(1).SetFaction(StormwindSetup.Stormwind);
+      Player(1).SetTeam(TeamSetup.SouthAlliance);
+      
       SetupFrostwolf(Player(0));
-
-      Player(9).SetFaction(LordaeronSetup.Lordaeron);
-      Player(9).SetTeam(TeamSetup.NorthAlliance);
-
       SetupQuelthalas(Player(2));
       SetupScourge(Player(3));
 
@@ -42,10 +41,9 @@ namespace WarcraftLegacies.Source.Setup
       Player(7).SetTeam(TeamSetup.NorthAlliance);
       
       Player(8).SetTeam(TeamSetup.Horde);
-      
-      Player(1).SetFaction(StormwindSetup.Stormwind);
-      Player(1).SetTeam(TeamSetup.SouthAlliance);
 
+      SetupLordaeron(Player(9));
+      
       Player(11).SetFaction(DruidsSetup.Druids);
       Player(11).SetTeam(TeamSetup.NightElves);
 
@@ -80,6 +78,13 @@ namespace WarcraftLegacies.Source.Setup
       var scourge = FactionManager.Register(new Scourge(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
       whichPlayer.SetFaction(scourge);
       whichPlayer.SetTeam(TeamSetup.Legion);
+    }
+    
+    private void SetupLordaeron(player whichPlayer)
+    {
+      var lordaeron = FactionManager.Register(new Lordaeron(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
+      whichPlayer.SetFaction(lordaeron);
+      whichPlayer.SetTeam(TeamSetup.NorthAlliance);
     }
     
     private void SetupKultiras(player whichPlayer)

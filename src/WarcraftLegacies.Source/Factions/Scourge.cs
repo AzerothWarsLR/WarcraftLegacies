@@ -322,7 +322,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
           soundFile: @"Sound\Dialogue\HumanCampaign\Human04\H04Kelthuzad28.flac",
           caption:
           "Naive fool. My death will make little difference in the long run. For now, the scourging of this land... begins.",
-          speaker: "Kel'thuzad"), new[]
+          speaker: "Kel'thuzad"), new Faction[]
         {
           this,
           lordaeron,
@@ -429,7 +429,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
               soundFile: @"Sound\Dialogue\UndeadCampaign\Undead05A\U05ATichondrius03.flac",
               caption: "I am here to ensure that you do your job, little human. Not do it for you.",
               speaker: "Tichondrius")),
-          new[]
+          new Faction[]
           {
             this,
             legion
