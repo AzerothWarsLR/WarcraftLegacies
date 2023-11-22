@@ -1,9 +1,7 @@
-using MacroTools;
 using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -14,6 +12,7 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge
   /// </summary>
   public static class HelmOfDominationDropsWhenScourgeLeaves
   {
+    private static Factions.Scourge? _scourge;
     private static Artifact? _helmOfDomination;
     private static trigger? _deathTrigger;
     private static Capital? _lichKing;
@@ -21,11 +20,9 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge
     /// <summary>
     /// Sets up <see cref="HelmOfDominationDropsWhenScourgeLeaves"/>.
     /// </summary>
-    public static void Setup(Artifact helmOfDomination, Capital lichKing)
+    public static void Setup(Factions.Scourge scourge, Artifact helmOfDomination, Capital lichKing)
     {
-      if (ScourgeSetup.Scourge == null)
-        throw new SystemNotInitializedException(nameof(ScourgeSetup));
-
+      _scourge = scourge;
       _lichKing = lichKing;
 
       _deathTrigger = CreateTrigger()
@@ -36,7 +33,7 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge
           UnregisterEvents();
         });
 
-      ScourgeSetup.Scourge.ScoreStatusChanged += OnScourgeScoreStatusChanged;
+      scourge.ScoreStatusChanged += OnScourgeScoreStatusChanged;
       _helmOfDomination = helmOfDomination;
     }
 
@@ -52,8 +49,7 @@ namespace WarcraftLegacies.Source.Mechanics.Scourge
     private static void UnregisterEvents()
     {
       _deathTrigger?.Destroy();
-      if (ScourgeSetup.Scourge != null)
-        ScourgeSetup.Scourge.ScoreStatusChanged -= OnScourgeScoreStatusChanged;
+      _scourge.ScoreStatusChanged -= OnScourgeScoreStatusChanged;
     }
 
     private static void MaybeDropHelmOfDomination()

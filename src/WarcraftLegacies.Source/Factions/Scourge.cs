@@ -7,6 +7,7 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.Powers;
+using WarcraftLegacies.Source.Mechanics.Scourge;
 using WarcraftLegacies.Source.Mechanics.Scourge.Plague;
 using WarcraftLegacies.Source.Quests.Scourge;
 using WarcraftLegacies.Source.Setup;
@@ -62,6 +63,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       RegisterQuests();
       RegisterPowers();
       RegisterDialogue();
+      RegisterHelmOfDominationLogic();
     }
 
     private void RegisterObjectLimits()
@@ -274,6 +276,11 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
           }));
     }
 
+    private void RegisterHelmOfDominationLogic()
+    {
+      HelmOfDominationDropsWhenScourgeLeaves.Setup(this, _artifactSetup.HelmOfDomination, _allLegendSetup.Scourge.TheFrozenThrone);
+    }
+    
     private void RegisterDalaranDialogue(Dalaran dalaran)
     {
       TriggeredDialogueManager.Add(new TriggeredDialogue(
