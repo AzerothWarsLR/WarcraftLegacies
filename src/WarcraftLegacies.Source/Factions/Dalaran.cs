@@ -5,6 +5,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using MacroTools.Libraries;
+using MacroTools.Mechanics;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
@@ -68,6 +69,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       RegisterDialogue();
       RegisterProtectors();
       Regions.Dalaran.CleanupHostileUnits();
+      WaygateManager.Setup(Constants.UNIT_N0AO_WAY_GATE_DALARAN_SIEGE);
     }
 
     /// <inheritdoc />

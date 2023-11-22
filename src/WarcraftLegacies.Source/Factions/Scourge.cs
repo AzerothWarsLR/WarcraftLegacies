@@ -8,6 +8,7 @@ using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.Powers;
 using WarcraftLegacies.Source.Mechanics.Scourge;
+using WarcraftLegacies.Source.Mechanics.Scourge.Blight;
 using WarcraftLegacies.Source.Mechanics.Scourge.Plague;
 using WarcraftLegacies.Source.Quests.Scourge;
 using WarcraftLegacies.Source.Setup;
@@ -65,6 +66,8 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       RegisterPowers();
       RegisterDialogue();
       RegisterHelmOfDominationLogic();
+      BlightSystem.Setup(this);
+      BlightSetup.Setup(_preplacedUnitSystem);
     }
 
     private void RegisterObjectLimits()

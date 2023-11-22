@@ -56,9 +56,6 @@ namespace WarcraftLegacies.Source.Setup
       FactionMultiboard.Setup();
       BookSetup.Setup();
       HintConfig.Setup();
-      WaygateManager.Setup(Constants.UNIT_N0AO_WAY_GATE_DALARAN_SIEGE);
-      BlightSystem.Setup(ScourgeSetup.Scourge);
-      BlightSetup.Setup(preplacedUnitSystem);
       QuestMenuSetup.Setup();
       GameTime.Start();
       CheatSetup.Setup(commandManager);
@@ -104,7 +101,6 @@ namespace WarcraftLegacies.Source.Setup
       EyeOfSargerasPickup.Setup();
       SacrificeAcolyte.Setup();
       RuntimeIntegrityChecker.Setup();
-      PeonsStartHarvestingShips.Setup(preplacedUnitSystem);
       DarkPortalControlNexusSetup.Setup(preplacedUnitSystem);
       CenariusGhost.Setup(allLegendSetup.Druids);
       TagSummonedUnits.Setup();
