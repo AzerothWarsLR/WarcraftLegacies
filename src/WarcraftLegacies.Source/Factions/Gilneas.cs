@@ -46,6 +46,7 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(7709, -2853)),
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9392, -921)),
       };
+      RegisterFactionDependentInitializer<Legion>(RegisterBookOfMedivhQuest);
     }
     
     /// <inheritdoc />
@@ -53,7 +54,6 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
     {
       RegisterObjectLimits();
       RegisterQuests();
-      RegisterBookOfMedivhQuest();
     }
 
     private void RegisterObjectLimits()
@@ -127,11 +127,11 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       AddQuest(new QuestGoldrinn(_artifactSetup.ScytheOfElune, _allLegendSetup.Gilneas.Goldrinn));
     }
     
-    private void RegisterBookOfMedivhQuest()
+    private void RegisterBookOfMedivhQuest(Legion legion)
     {
       SharedQuestRepository.RegisterQuestFactory(faction => new QuestBookOfMedivh(_allLegendSetup.Gilneas.GilneasCastle,
         new NamedRectangle("Gilneas", Regions.BookOfMedivhGilneas), _artifactSetup.BookOfMedivh,
-        faction == LegionSetup.Legion, faction == this));
+        faction == legion, faction == this));
     }
   }
 }

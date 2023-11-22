@@ -57,6 +57,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       };
       
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
+      RegisterFactionDependentInitializer<Legion>(RegisterBookOfMedivhQuest);
     }
 
     /// <inheritdoc />
@@ -64,7 +65,6 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
     {
       RegisterObjectLimits();
       RegisterQuests();
-      RegisterBookOfMedivhQuest();
       RegisterDialogue();
       RegisterProtectors();
       Regions.Dalaran.CleanupHostileUnits();
@@ -190,11 +190,11 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       AddQuest(theNexus);
     }
 
-    private void RegisterBookOfMedivhQuest()
+    private void RegisterBookOfMedivhQuest(Legion legion)
     {
       SharedQuestRepository.RegisterQuestFactory(faction => new QuestBookOfMedivh(_allLegendSetup.Dalaran.Dalaran,
         new NamedRectangle("Dalaran", Regions.BookOfMedivhDalaran), _artifactSetup.BookOfMedivh,
-        faction == LegionSetup.Legion, faction == this));
+        faction == legion, faction == this));
     }
 
     private void RegisterDialogue()
