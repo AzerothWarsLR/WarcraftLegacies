@@ -18,7 +18,6 @@ namespace WarcraftLegacies.Source.Setup
           IllidariDialogueSetup.Setup(legendSetup);
           SentinelsDialogueSetup.Setup(legendSetup);
           LegionDialogueSeup.Setup(legendSetup);
-          QuelthalasDialogueSetup.Setup(legendSetup);
           GoblinDialogueSetup.Setup(legendSetup);
         }
         catch (Exception ex)

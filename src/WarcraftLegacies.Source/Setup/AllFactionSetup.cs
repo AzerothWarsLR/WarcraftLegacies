@@ -7,9 +7,7 @@ namespace WarcraftLegacies.Source.Setup
   {
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
-      LegionSetup.Setup(preplacedUnitSystem);
       LordaeronSetup.Setup(preplacedUnitSystem);
-      QuelthalasSetup.Setup(preplacedUnitSystem);
       SentinelsSetup.Setup(preplacedUnitSystem, allLegendSetup);
       DruidsSetup.Setup(preplacedUnitSystem, allLegendSetup);
       FelHordeSetup.Setup(preplacedUnitSystem);

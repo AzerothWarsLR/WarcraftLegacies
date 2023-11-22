@@ -58,9 +58,7 @@ namespace WarcraftLegacies.Source.Setup
       Player(15).SetTeam(TeamSetup.Outland);
 
       SetupKultiras(Player(22));
-
-      Player(23).SetFaction(LegionSetup.Legion);
-      Player(23).SetTeam(TeamSetup.Legion);
+      SetupLegion(Player(23));
     }
 
     private void SetupFrostwolf(player whichPlayer)
@@ -89,6 +87,13 @@ namespace WarcraftLegacies.Source.Setup
       var kultiras = FactionManager.Register(new Kultiras(_preplacedUnitSystem, _allLegendSetup));
       whichPlayer.SetFaction(kultiras);
       whichPlayer.SetTeam(TeamSetup.SouthAlliance);
+    }
+    
+    private void SetupLegion(player whichPlayer)
+    {
+      var legion = FactionManager.Register(new Legion(_preplacedUnitSystem, _allLegendSetup));
+      whichPlayer.SetFaction(legion);
+      whichPlayer.SetTeam(TeamSetup.Legion);
     }
   }
 }
