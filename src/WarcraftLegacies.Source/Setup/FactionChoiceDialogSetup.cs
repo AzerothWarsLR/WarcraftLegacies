@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Setup
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
       new FactionChoiceDialogPresenter(ZandalarSetup.Zandalar, GoblinSetup.Goblin).Run(Player(8));
-      new FactionChoiceDialogPresenter(IllidariSetup.Illidari, SunfurySetup.Sunfury).Run(Player(15));
+      new FactionChoiceDialogPresenter(new Illidari(allLegendSetup, artifactSetup), SunfurySetup.Sunfury).Run(Player(15));
       new FactionChoiceDialogPresenter(new Dalaran(preplacedUnitSystem, artifactSetup, allLegendSetup),
         new Gilneas(preplacedUnitSystem, artifactSetup, allLegendSetup)).Run(Player(7));
     }

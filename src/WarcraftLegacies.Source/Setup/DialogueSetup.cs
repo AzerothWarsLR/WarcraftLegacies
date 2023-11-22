@@ -14,10 +14,7 @@ namespace WarcraftLegacies.Source.Setup
         {
           WarsongDialogueSetup.Setup(legendSetup);
           DruidsDialogueSetup.Setup(preplacedUnitSystem, legendSetup);
-          LordaeronDialogueSetup.Setup(preplacedUnitSystem, legendSetup);
-          IllidariDialogueSetup.Setup(legendSetup);
           SentinelsDialogueSetup.Setup(legendSetup);
-          LegionDialogueSeup.Setup(legendSetup);
           GoblinDialogueSetup.Setup(legendSetup);
         }
         catch (Exception ex)
