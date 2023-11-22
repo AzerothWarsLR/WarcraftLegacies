@@ -34,7 +34,7 @@ The Trolls of Zul'Aman have laid siege to the city, and are preparing attacks on
 Train soldiers to repel the attacks, then gather enough strength to besiege Zul'Aman and take the head of Zul'jin.
 
 The Plague of Undeath is coming and Lordaeron will need your help with the Scourge soon. Be ready to join them as once you have secured Silvermoon and dealt with the Amani invasion.";
-      GoldMines = new List<unit>(
+      GoldMines = new List<unit>
       {
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(17716, 13000))
       };
