@@ -96,7 +96,6 @@ namespace WarcraftLegacies.Source.Setup
       SacrificeAcolyte.Setup();
       RuntimeIntegrityChecker.Setup();
       DarkPortalControlNexusSetup.Setup(preplacedUnitSystem);
-      CenariusGhost.Setup(allLegendSetup.Druids);
       TagSummonedUnits.Setup();
     }
 
