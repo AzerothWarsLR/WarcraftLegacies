@@ -41,29 +41,29 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
 
     private void RegisterObjectLimits()
     {
-      ModObjectLimit(FourCC("o02P"), Faction.UNLIMITED); //Crystal Hall
-      ModObjectLimit(FourCC("o050"), Faction.UNLIMITED); //Metropolis
-      ModObjectLimit(FourCC("o051"), Faction.UNLIMITED); //Divine Citadel
-      ModObjectLimit(FourCC("o058"), Faction.UNLIMITED); //Altar of Light
-      ModObjectLimit(FourCC("o052"), Faction.UNLIMITED); //Ceremonial Altar
-      ModObjectLimit(FourCC("o053"), Faction.UNLIMITED); //Smithery
-      ModObjectLimit(FourCC("o054"), Faction.UNLIMITED); //Astral Sanctum
-      ModObjectLimit(FourCC("o055"), Faction.UNLIMITED); //Crystal Spire
+      ModObjectLimit(FourCC("o02P"), UNLIMITED); //Crystal Hall
+      ModObjectLimit(FourCC("o050"), UNLIMITED); //Metropolis
+      ModObjectLimit(FourCC("o051"), UNLIMITED); //Divine Citadel
+      ModObjectLimit(FourCC("o058"), UNLIMITED); //Altar of Light
+      ModObjectLimit(FourCC("o052"), UNLIMITED); //Ceremonial Altar
+      ModObjectLimit(FourCC("o053"), UNLIMITED); //Smithery
+      ModObjectLimit(FourCC("o054"), UNLIMITED); //Astral Sanctum
+      ModObjectLimit(FourCC("o055"), UNLIMITED); //Crystal Spire
       ModObjectLimit(FourCC("o056"), 48); //Arcane Well
-      ModObjectLimit(FourCC("o057"), Faction.UNLIMITED); //Vaults of Relic
-      ModObjectLimit(FourCC("u00U"), Faction.UNLIMITED); //Crystal Protector
-      ModObjectLimit(FourCC("u01Q"), Faction.UNLIMITED); //Crystal Protector improved
-      ModObjectLimit(FourCC("o059"), Faction.UNLIMITED); //Improved Ancient Protector
-      ModObjectLimit(FourCC("o05U"), Faction.UNLIMITED); //Lightforged Gateway
+      ModObjectLimit(FourCC("o057"), UNLIMITED); //Vaults of Relic
+      ModObjectLimit(FourCC("u00U"), UNLIMITED); //Crystal Protector
+      ModObjectLimit(FourCC("u01Q"), UNLIMITED); //Crystal Protector improved
+      ModObjectLimit(FourCC("o059"), UNLIMITED); //Improved Ancient Protector
+      ModObjectLimit(FourCC("o05U"), UNLIMITED); //Lightforged Gateway
 
-      ModObjectLimit(FourCC("o05A"), Faction.UNLIMITED); //Wisp
-      ModObjectLimit(FourCC("o05B"), Faction.UNLIMITED); //Defender
-      ModObjectLimit(FourCC("h09T"), Faction.UNLIMITED); //Rangari
+      ModObjectLimit(FourCC("o05A"), UNLIMITED); //Wisp
+      ModObjectLimit(FourCC("o05B"), UNLIMITED); //Defender
+      ModObjectLimit(FourCC("h09T"), UNLIMITED); //Rangari
       ModObjectLimit(FourCC("e01K"), 3); //Polybolos
-      ModObjectLimit(FourCC("o05D"), Faction.UNLIMITED); //Elementalist
-      ModObjectLimit(FourCC("o05C"), Faction.UNLIMITED); //Luminarch
+      ModObjectLimit(FourCC("o05D"), UNLIMITED); //Elementalist
+      ModObjectLimit(FourCC("o05C"), UNLIMITED); //Luminarch
       ModObjectLimit(FourCC("h09R"), 6); //Vindicator
-      ModObjectLimit(FourCC("nmdr"), Faction.UNLIMITED); //Elekk
+      ModObjectLimit(FourCC("nmdr"), UNLIMITED); //Elekk
       ModObjectLimit(FourCC("h09U"), 4); //Elekk Knight
       ModObjectLimit(FourCC("u02H"), 6); //Nether Ray
 
@@ -72,13 +72,13 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
       ModObjectLimit(FourCC("n0BM"), 8); //Nether Ray
 
       //Ships
-      ModObjectLimit(FourCC("etrs"), Faction.UNLIMITED); //Night Elf Transport Ship
-      ModObjectLimit(FourCC("h0AU"), Faction.UNLIMITED); // Scout
-      ModObjectLimit(FourCC("h0AV"), Faction.UNLIMITED); // Frigate
-      ModObjectLimit(FourCC("h0B1"), Faction.UNLIMITED); // Fireship
-      ModObjectLimit(FourCC("h057"), Faction.UNLIMITED); // Galley
-      ModObjectLimit(FourCC("h0B4"), Faction.UNLIMITED); // Boarding
-      ModObjectLimit(FourCC("h0BA"), Faction.UNLIMITED); // Juggernaut
+      ModObjectLimit(FourCC("etrs"), UNLIMITED); //Night Elf Transport Ship
+      ModObjectLimit(FourCC("h0AU"), UNLIMITED); // Scout
+      ModObjectLimit(FourCC("h0AV"), UNLIMITED); // Frigate
+      ModObjectLimit(FourCC("h0B1"), UNLIMITED); // Fireship
+      ModObjectLimit(FourCC("h057"), UNLIMITED); // Galley
+      ModObjectLimit(FourCC("h0B4"), UNLIMITED); // Boarding
+      ModObjectLimit(FourCC("h0BA"), UNLIMITED); // Juggernaut
       ModObjectLimit(FourCC("h0B8"), 6); // Bombard
 
       ModObjectLimit(FourCC("H09S"), 1); //Maraad
@@ -86,8 +86,8 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
       ModObjectLimit(FourCC("E01J"), 1); //Nobundo
       ModObjectLimit(FourCC("H09M"), 1); //Adal
 
-      ModObjectLimit(FourCC("R078"), Faction.UNLIMITED); //Elementalist training
-      ModObjectLimit(FourCC("R07C"), Faction.UNLIMITED); //Luminarch training
+      ModObjectLimit(FourCC("R078"), UNLIMITED); //Elementalist training
+      ModObjectLimit(FourCC("R07C"), UNLIMITED); //Luminarch training
     }
 
     private void RegisterQuests()

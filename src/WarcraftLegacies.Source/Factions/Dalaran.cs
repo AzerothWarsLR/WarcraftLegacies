@@ -202,7 +202,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
     private void RegisterDialogue()
     {
       TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
+        new TriggeredDialogue(new DialogueSequence(new Dialogue(
             @"Sound\Dialogue\NightElfCampaign\NightElf06Interlude\N06Medivh42",
             "Now, at long last, I have returned to set things right. I... am Medivh, the Last Guardian. I tell you now, the only chance for this world is for you to unite in arms against the enemies of all who live!",
             "Medivh"))
@@ -221,7 +221,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
           }));
       
       TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
+        new TriggeredDialogue(new Dialogue(
           soundFile: @"Sound\Dialogue\HumanCampaign\Human05\H05Jaina01.flac",
           caption:
           "Hearthglen, finally! I could use some rest!",
@@ -238,10 +238,10 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
     {
       TriggeredDialogueManager.Add(new TriggeredDialogue(
         new DialogueSequence(
-          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Antonidas13.flac",
+          new Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Antonidas13.flac",
             "It pains me to even look at you, Arthas.",
             "Arthas Menethil"),
-          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Arthas14.flac",
+          new Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead07\U07Arthas14.flac",
             "I'll be happy to end your torment, old man. I told you that your magics could not stop me.",
             "Antonidas")
         ), new Faction[]

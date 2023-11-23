@@ -58,45 +58,45 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
 
     private void RegisterObjectLimits()
     {
-      ModObjectLimit(FourCC("e00V"), Faction.UNLIMITED); //Temple of Elune
-      ModObjectLimit(FourCC("e00R"), Faction.UNLIMITED); //Altar of Watchers
-      ModObjectLimit(FourCC("e00L"), Faction.UNLIMITED); //War Academy
-      ModObjectLimit(FourCC("edob"), Faction.UNLIMITED); //Hunter)s Hall
-      ModObjectLimit(FourCC("eden"), Faction.UNLIMITED); //Ancient of Wonders
-      ModObjectLimit(FourCC("e011"), Faction.UNLIMITED); //Night Elf Shipyard
-      ModObjectLimit(FourCC("h03N"), Faction.UNLIMITED); //Enchanged Runestone
-      ModObjectLimit(FourCC("h03M"), Faction.UNLIMITED); //Runestone
-      ModObjectLimit(FourCC("n06O"), Faction.UNLIMITED); //Sentinel Embassy
-      ModObjectLimit(FourCC("n06P"), Faction.UNLIMITED); //Sentinel Enclave
-      ModObjectLimit(FourCC("n06J"), Faction.UNLIMITED); //Sentinel Outpost
-      ModObjectLimit(FourCC("n06M"), Faction.UNLIMITED); //Residence
-      ModObjectLimit(FourCC("edos"), Faction.UNLIMITED); //Roost
-      ModObjectLimit(FourCC("e00T"), Faction.UNLIMITED); //Bastion
+      ModObjectLimit(FourCC("e00V"), UNLIMITED); //Temple of Elune
+      ModObjectLimit(FourCC("e00R"), UNLIMITED); //Altar of Watchers
+      ModObjectLimit(FourCC("e00L"), UNLIMITED); //War Academy
+      ModObjectLimit(FourCC("edob"), UNLIMITED); //Hunter)s Hall
+      ModObjectLimit(FourCC("eden"), UNLIMITED); //Ancient of Wonders
+      ModObjectLimit(FourCC("e011"), UNLIMITED); //Night Elf Shipyard
+      ModObjectLimit(FourCC("h03N"), UNLIMITED); //Enchanged Runestone
+      ModObjectLimit(FourCC("h03M"), UNLIMITED); //Runestone
+      ModObjectLimit(FourCC("n06O"), UNLIMITED); //Sentinel Embassy
+      ModObjectLimit(FourCC("n06P"), UNLIMITED); //Sentinel Enclave
+      ModObjectLimit(FourCC("n06J"), UNLIMITED); //Sentinel Outpost
+      ModObjectLimit(FourCC("n06M"), UNLIMITED); //Residence
+      ModObjectLimit(FourCC("edos"), UNLIMITED); //Roost
+      ModObjectLimit(FourCC("e00T"), UNLIMITED); //Bastion
 
-      ModObjectLimit(FourCC("ewsp"), Faction.UNLIMITED); //Wisp
-      ModObjectLimit(FourCC("e006"), Faction.UNLIMITED); //Priestess
-      ModObjectLimit(FourCC("n06C"), Faction.UNLIMITED); //Trapper
+      ModObjectLimit(FourCC("ewsp"), UNLIMITED); //Wisp
+      ModObjectLimit(FourCC("e006"), UNLIMITED); //Priestess
+      ModObjectLimit(FourCC("n06C"), UNLIMITED); //Trapper
       ModObjectLimit(FourCC("h04L"), 6); //Priestess of the Moon
-      ModObjectLimit(FourCC("earc"), Faction.UNLIMITED); //Archer
-      ModObjectLimit(FourCC("esen"), Faction.UNLIMITED); //Huntress
-      ModObjectLimit(FourCC("h08V"), Faction.UNLIMITED); //Nightsaber Knight
+      ModObjectLimit(FourCC("earc"), UNLIMITED); //Archer
+      ModObjectLimit(FourCC("esen"), UNLIMITED); //Huntress
+      ModObjectLimit(FourCC("h08V"), UNLIMITED); //Nightsaber Knight
       ModObjectLimit(FourCC("ebal"), 8); //Glaive Thrower
       ModObjectLimit(FourCC("ehpr"), 6); //Hippogryph Rider
       ModObjectLimit(FourCC("n034"), 12); //Guild Ranger
-      ModObjectLimit(FourCC("nwat"), Faction.UNLIMITED); //Nightblade
+      ModObjectLimit(FourCC("nwat"), UNLIMITED); //Nightblade
       ModObjectLimit(FourCC("nnmg"), 12); //Redeemed Highborne
       ModObjectLimit(FourCC("e022"), 2); //Moon Rider
       ModObjectLimit(Constants.UNIT_ECHM_CHIMAERA_SENTINELS, 6);
       ModObjectLimit(Constants.UNIT_H045_WARDEN_SENTINELS, 8);
 
       //Ships
-      ModObjectLimit(FourCC("etrs"), Faction.UNLIMITED); //Night Elf Transport Ship
-      ModObjectLimit(FourCC("h0AU"), Faction.UNLIMITED); // Scout
-      ModObjectLimit(FourCC("h0AV"), Faction.UNLIMITED); // Frigate
-      ModObjectLimit(FourCC("h0B1"), Faction.UNLIMITED); // Fireship
-      ModObjectLimit(FourCC("h057"), Faction.UNLIMITED); // Galley
-      ModObjectLimit(FourCC("h0B4"), Faction.UNLIMITED); // Boarding
-      ModObjectLimit(FourCC("h0BA"), Faction.UNLIMITED); // Juggernaut
+      ModObjectLimit(FourCC("etrs"), UNLIMITED); //Night Elf Transport Ship
+      ModObjectLimit(FourCC("h0AU"), UNLIMITED); // Scout
+      ModObjectLimit(FourCC("h0AV"), UNLIMITED); // Frigate
+      ModObjectLimit(FourCC("h0B1"), UNLIMITED); // Fireship
+      ModObjectLimit(FourCC("h057"), UNLIMITED); // Galley
+      ModObjectLimit(FourCC("h0B4"), UNLIMITED); // Boarding
+      ModObjectLimit(FourCC("h0BA"), UNLIMITED); // Juggernaut
       ModObjectLimit(FourCC("h0B8"), 6); // Bombard
 
       ModObjectLimit(FourCC("E025"), 1); //Naisha
@@ -104,16 +104,16 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       ModObjectLimit(FourCC("E002"), 1); //Shandris
       ModObjectLimit(FourCC("Ewrd"), 1); //Maiev
 
-      ModObjectLimit(FourCC("R00S"), Faction.UNLIMITED); //Priestess Adept Training
-      ModObjectLimit(FourCC("R064"), Faction.UNLIMITED); //Sentinel Fortifications
-      ModObjectLimit(FourCC("R01W"), Faction.UNLIMITED); //Trapper Adept Training
-      ModObjectLimit(FourCC("Reib"), Faction.UNLIMITED); //Improved Bows
-      ModObjectLimit(FourCC("Reuv"), Faction.UNLIMITED); //Ultravision
-      ModObjectLimit(FourCC("Remg"), Faction.UNLIMITED); //Upgraded Moon Glaive
-      ModObjectLimit(FourCC("Roen"), Faction.UNLIMITED); //Ensnare
-      ModObjectLimit(Constants.UPGRADE_R04E_YSERA_S_GIFT_DRUIDS, Faction.UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R03J_WIND_WALK_SENTINELS, Faction.UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R018_IMPROVED_LIGHTNING_BARRAGE_SENTINELS, Faction.UNLIMITED);
+      ModObjectLimit(FourCC("R00S"), UNLIMITED); //Priestess Adept Training
+      ModObjectLimit(FourCC("R064"), UNLIMITED); //Sentinel Fortifications
+      ModObjectLimit(FourCC("R01W"), UNLIMITED); //Trapper Adept Training
+      ModObjectLimit(FourCC("Reib"), UNLIMITED); //Improved Bows
+      ModObjectLimit(FourCC("Reuv"), UNLIMITED); //Ultravision
+      ModObjectLimit(FourCC("Remg"), UNLIMITED); //Upgraded Moon Glaive
+      ModObjectLimit(FourCC("Roen"), UNLIMITED); //Ensnare
+      ModObjectLimit(Constants.UPGRADE_R04E_YSERA_S_GIFT_DRUIDS, UNLIMITED);
+      ModObjectLimit(Constants.UPGRADE_R03J_WIND_WALK_SENTINELS, UNLIMITED);
+      ModObjectLimit(Constants.UPGRADE_R018_IMPROVED_LIGHTNING_BARRAGE_SENTINELS, UNLIMITED);
     }
 
     private void RegisterQuests()
@@ -125,16 +125,16 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
     {
       TriggeredDialogueManager.Add(new TriggeredDialogue(
         new DialogueSequence(
-          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Maiev02.flac",
+          new Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Maiev02.flac",
             "I suspected as much. These islands must have been formed only recently.",
             "Maiev Shadowsong"),
-          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Naisha03.flac",
+          new Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Naisha03.flac",
             "What makes you say that?",
             "Naisha"),
-          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Maiev04.flac",
+          new Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Maiev04.flac",
             "The ruins all around us, Naisha... I recognize them.",
             "Maiev Shadowsong"),
-          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Maiev05.flac",
+          new Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Maiev05.flac",
             "This was once the great city of Suramar, built before our civilization was blasted beneath the sea ten thousand years ago.",
             "Maiev Shadowsong")
         )
@@ -148,7 +148,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       ));
       
       TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
+        new TriggeredDialogue(new Dialogue(
           @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Maiev24",
           "Priestess Tyrande. I'm surprised you came in person. Are you here to absolve your guilty conscience?",
           "Maiev Shadowsong"), new[]
@@ -184,7 +184,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
     private void RegisterDruidsDialogue(Druids druids)
     {
       TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
+        new TriggeredDialogue(new Dialogue(
           @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Maiev22",
           "Elune be praised! I knew you would come, Shan'do Stormrage.",
           "Illidan Stormrage"), new Faction[]
@@ -200,7 +200,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
     private void RegisterIlliariDialogue(Illidari illidari)
     {
       TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
+        new TriggeredDialogue(new Dialogue(
           @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Maiev37",
           "I am the hand of justice, Illidan. Long ago, I swore an oath to keep you chained, and by all the gods, I shall.",
           "Maiev Shadowsong"), new Faction[]
@@ -217,10 +217,10 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
     {
       TriggeredDialogueManager.Add(new TriggeredDialogue(
         new DialogueSequence(
-          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf02\N02Tyrande03.flac",
+          new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf02\N02Tyrande03.flac",
             "Archimonde... After ten thousand years, how is it possible?",
             "Tyrande Whisperwind"),
-          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf02\N02Archimonde04.flac",
+          new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf02\N02Archimonde04.flac",
             "The Legion has returned to consume this world, woman. And this time, your troublesome race will not stop us.",
             "Archimonde")
         )

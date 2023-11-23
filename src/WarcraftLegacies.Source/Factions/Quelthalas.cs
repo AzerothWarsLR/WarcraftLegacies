@@ -139,10 +139,10 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
     private void RegisterScourgeDialogue(Scourge scourge)
     {
       TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
+        new TriggeredDialogue(new DialogueSequence(new Dialogue(
             @"Sound\Dialogue\UndeadExpCamp\Undead08x\L08Arthas30",
             "Are you still upset that I stole Jaina from you, Kael?",
-            "Illidan Stormrage"), new MacroTools.DialogueSystem.Dialogue(
+            "Illidan Stormrage"), new Dialogue(
             @"Sound\Dialogue\UndeadExpCamp\Undead08x\L08Kael31",
             "You've taken everything I ever cared for, Arthas. Vengeance is all I have left.",
             "Kael'thas Sunstrider"))

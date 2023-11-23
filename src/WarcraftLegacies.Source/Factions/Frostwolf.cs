@@ -143,7 +143,7 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
     private void RegisterDialogue()
     {
       TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
+        new TriggeredDialogue(new Dialogue(
           @"Sound\Dialogue\OrcCampaign\Orc08\O08Thrall07",
           "Hellscream is like a brother to me, Cairne. But he and his clan have fallen under the demon's influence. If I can't save him, then my people might be damned for all time.",
           "Thrall"), new[]
@@ -155,15 +155,15 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
         }));
       
       TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
+        new TriggeredDialogue(new DialogueSequence(new Dialogue(
             @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar01",
             "I have wandered alone for many years, little Misha. Yet sometimes, even I grow weary of this endless solitude.",
             "Rexxar"), 
-            new MacroTools.DialogueSystem.Dialogue(
+            new Dialogue(
             @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar02",
             "I have watched the other races. I have seen their squabbling, their ruthlessness. Their wars do nothing but scar the land and drive the wild things to extinction.",
             "Rexxar"), 
-            new MacroTools.DialogueSystem.Dialogue(
+            new Dialogue(
             @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar03",
             "No, they cannot be trusted. Only beasts are above deceit.",
             "Rexxar"))
@@ -179,11 +179,11 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
           }));
       
       TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
+        new TriggeredDialogue(new DialogueSequence(new Dialogue(
               @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Thrall25",
               "Who are you, warrior?",
               "Thrall"), 
-            new MacroTools.DialogueSystem.Dialogue(
+            new Dialogue(
               @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar26",
               "I am Rexxar, last son of the Mok'Nathal.",
               "Rexxar"))
@@ -196,15 +196,15 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
           }));
       
       TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
+        new TriggeredDialogue(new DialogueSequence(new Dialogue(
               @"Sound\Dialogue\OrcCampaign\Orc01\O01Grunt01",
               "Warchief, our ship sustained heavy damage when we passed through the raging maelstrom. It's unsalvageable.",
               "Grunt"), 
-            new MacroTools.DialogueSystem.Dialogue(
+            new Dialogue(
               @"Sound\Dialogue\OrcCampaign\Orc01\O01Thrall02",
               "I knew it. Can we confirm our location? Is this Kalimdor?",
               "Thrall"), 
-            new MacroTools.DialogueSystem.Dialogue(
+            new Dialogue(
               @"Sound\Dialogue\OrcCampaign\Orc01\O01Grunt03",
               "We traveled due west, as you instructed. This should be it.",
               "Grunt"))
@@ -220,11 +220,11 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
           }));
       
       TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
+        new TriggeredDialogue(new DialogueSequence(new Dialogue(
               @"Sound\Dialogue\OrcCampaign\Orc01\O01Cairne23",
               "I am Cairne, chief of the Bloodhoof tauren. You greenskins fight with both savagery and valor. I am intrigued.",
               "Cairne Bloodhoof"),
-            new MacroTools.DialogueSystem.Dialogue(
+            new Dialogue(
               @"Sound\Dialogue\OrcCampaign\Orc01\O01Thrall24",
               "I am Thrall, and these are my brethren, the orcs. We've come seeking the destiny promised to us.",
               "Thrall"))

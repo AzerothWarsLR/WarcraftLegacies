@@ -54,30 +54,30 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
     private void RegisterObjectLimits()
     {
       //Structures
-      Sunfury.ModObjectLimit(FourCC("h02P"), Faction.UNLIMITED); //t1
-      Sunfury.ModObjectLimit(FourCC("h0C4"), Faction.UNLIMITED); //t2
-      Sunfury.ModObjectLimit(FourCC("h0C5"), Faction.UNLIMITED); //t3
+      Sunfury.ModObjectLimit(FourCC("h02P"), UNLIMITED); //t1
+      Sunfury.ModObjectLimit(FourCC("h0C4"), UNLIMITED); //t2
+      Sunfury.ModObjectLimit(FourCC("h0C5"), UNLIMITED); //t3
       Sunfury.ModObjectLimit(FourCC("h0C7"), 3); //house
-      Sunfury.ModObjectLimit(FourCC("h0C8"), Faction.UNLIMITED); //forge
-      Sunfury.ModObjectLimit(FourCC("h0C9"), Faction.UNLIMITED); //barrack
-      Sunfury.ModObjectLimit(FourCC("h0CB"), Faction.UNLIMITED); //magic
-      Sunfury.ModObjectLimit(FourCC("h0CA"), Faction.UNLIMITED); //VOid Well
-      Sunfury.ModObjectLimit(FourCC("h0CI"), Faction.UNLIMITED); //Tempest-Forge
-      Sunfury.ModObjectLimit(FourCC("h0C6"), Faction.UNLIMITED); //Altar
-      Sunfury.ModObjectLimit(FourCC("h0CC"), Faction.UNLIMITED); //Vault
-      Sunfury.ModObjectLimit(FourCC("h0CD"), Faction.UNLIMITED); //Scout tower
-      Sunfury.ModObjectLimit(FourCC("n0E0"), Faction.UNLIMITED); //Skyfury tower
-      Sunfury.ModObjectLimit(FourCC("n0E1"), Faction.UNLIMITED); //improved skyfury tower
+      Sunfury.ModObjectLimit(FourCC("h0C8"), UNLIMITED); //forge
+      Sunfury.ModObjectLimit(FourCC("h0C9"), UNLIMITED); //barrack
+      Sunfury.ModObjectLimit(FourCC("h0CB"), UNLIMITED); //magic
+      Sunfury.ModObjectLimit(FourCC("h0CA"), UNLIMITED); //VOid Well
+      Sunfury.ModObjectLimit(FourCC("h0CI"), UNLIMITED); //Tempest-Forge
+      Sunfury.ModObjectLimit(FourCC("h0C6"), UNLIMITED); //Altar
+      Sunfury.ModObjectLimit(FourCC("h0CC"), UNLIMITED); //Vault
+      Sunfury.ModObjectLimit(FourCC("h0CD"), UNLIMITED); //Scout tower
+      Sunfury.ModObjectLimit(FourCC("n0E0"), UNLIMITED); //Skyfury tower
+      Sunfury.ModObjectLimit(FourCC("n0E1"), UNLIMITED); //improved skyfury tower
       Sunfury.ModObjectLimit(FourCC("N0DZ"), 1); //Fountain
-      Sunfury.ModObjectLimit(FourCC("tp04"), Faction.UNLIMITED); //Alliance Shipyard
+      Sunfury.ModObjectLimit(FourCC("tp04"), UNLIMITED); //Alliance Shipyard
 
       //Units
-      Sunfury.ModObjectLimit(FourCC("n0E2"), Faction.UNLIMITED); //worker
-      Sunfury.ModObjectLimit(FourCC("n09S"), Faction.UNLIMITED); //Elven Warrior
-      Sunfury.ModObjectLimit(FourCC("h0CF"), Faction.UNLIMITED); //Elven Ranger
+      Sunfury.ModObjectLimit(FourCC("n0E2"), UNLIMITED); //worker
+      Sunfury.ModObjectLimit(FourCC("n09S"), UNLIMITED); //Elven Warrior
+      Sunfury.ModObjectLimit(FourCC("h0CF"), UNLIMITED); //Elven Ranger
       Sunfury.ModObjectLimit(FourCC("u02W"), 2); //Energy Wagon
-      Sunfury.ModObjectLimit(FourCC("h0CH"), Faction.UNLIMITED); //Astromancer
-      Sunfury.ModObjectLimit(FourCC("h0CG"), Faction.UNLIMITED); //Flamekeeper
+      Sunfury.ModObjectLimit(FourCC("h0CH"), UNLIMITED); //Astromancer
+      Sunfury.ModObjectLimit(FourCC("h0CG"), UNLIMITED); //Flamekeeper
       Sunfury.ModObjectLimit(Constants.UNIT_H0CE_BLOOD_KNIGHT_SQUIRE_SUNFURY, 12);
       Sunfury.ModObjectLimit(FourCC("n0E3"), 6); //Warlock
       Sunfury.ModObjectLimit(FourCC("n0E4"), 6); //Elven Ballista
@@ -87,13 +87,13 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
       Sunfury.ModObjectLimit(FourCC("n006"), 2); //Ancient of the Arcane
 
       //Ships
-      Sunfury.ModObjectLimit(FourCC("hbot"), Faction.UNLIMITED); //Alliance Transport Ship
-      Sunfury.ModObjectLimit(FourCC("h0AR"), Faction.UNLIMITED); //Alliance Scout
-      Sunfury.ModObjectLimit(FourCC("h0AX"), Faction.UNLIMITED); //Alliance Frigate
-      Sunfury.ModObjectLimit(FourCC("h0B3"), Faction.UNLIMITED); //Alliance Fireship
-      Sunfury.ModObjectLimit(FourCC("h0B0"), Faction.UNLIMITED); //Alliance Galley
-      Sunfury.ModObjectLimit(FourCC("h0B6"), Faction.UNLIMITED); //Alliance Boarding
-      Sunfury.ModObjectLimit(FourCC("h0AN"), Faction.UNLIMITED); //Alliance Juggernaut
+      Sunfury.ModObjectLimit(FourCC("hbot"), UNLIMITED); //Alliance Transport Ship
+      Sunfury.ModObjectLimit(FourCC("h0AR"), UNLIMITED); //Alliance Scout
+      Sunfury.ModObjectLimit(FourCC("h0AX"), UNLIMITED); //Alliance Frigate
+      Sunfury.ModObjectLimit(FourCC("h0B3"), UNLIMITED); //Alliance Fireship
+      Sunfury.ModObjectLimit(FourCC("h0B0"), UNLIMITED); //Alliance Galley
+      Sunfury.ModObjectLimit(FourCC("h0B6"), UNLIMITED); //Alliance Boarding
+      Sunfury.ModObjectLimit(FourCC("h0AN"), UNLIMITED); //Alliance Juggernaut
       Sunfury.ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
 
       //Demi-heroes
@@ -104,9 +104,9 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
       Sunfury.ModObjectLimit(Constants.UNIT_N0E5_VOID_REAVER_SUNFURY_DEMI, 1); //Void Reaver
 
       //Upgrades
-      Sunfury.ModObjectLimit(Constants.UPGRADE_R09H_ASTROMANCER_MASTER_TRAINING_SUNFURY, Faction.UNLIMITED);
-      Sunfury.ModObjectLimit(Constants.UPGRADE_R09G_FLAMEKEEPER_MASTER_TRAINING_SUNFURY, Faction.UNLIMITED);
-      Sunfury.ModObjectLimit(Constants.UPGRADE_R09U_SEAL_OF_BLOOD_SUNFURY, Faction.UNLIMITED);
+      Sunfury.ModObjectLimit(Constants.UPGRADE_R09H_ASTROMANCER_MASTER_TRAINING_SUNFURY, UNLIMITED);
+      Sunfury.ModObjectLimit(Constants.UPGRADE_R09G_FLAMEKEEPER_MASTER_TRAINING_SUNFURY, UNLIMITED);
+      Sunfury.ModObjectLimit(Constants.UPGRADE_R09U_SEAL_OF_BLOOD_SUNFURY, UNLIMITED);
     }
 
     private void RegisterQuests()

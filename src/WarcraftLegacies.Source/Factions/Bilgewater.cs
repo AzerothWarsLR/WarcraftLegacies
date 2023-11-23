@@ -55,43 +55,43 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
 
     private void RegisterObjectLimits()
     {
-      ModObjectLimit(FourCC("o03L"), Faction.UNLIMITED); //Great Hall
-      ModObjectLimit(FourCC("o03M"), Faction.UNLIMITED); //Stronghold
-      ModObjectLimit(FourCC("o03N"), Faction.UNLIMITED); //Fortress
-      ModObjectLimit(FourCC("o03O"), Faction.UNLIMITED); //Altar of Storms
-      ModObjectLimit(FourCC("o03P"), Faction.UNLIMITED); //Barracks
-      ModObjectLimit(FourCC("o05T"), Faction.UNLIMITED); //Boot Camp
-      ModObjectLimit(FourCC("o03Q"), Faction.UNLIMITED); //War Mill
-      ModObjectLimit(FourCC("o03S"), Faction.UNLIMITED); //Tauren Totem
-      ModObjectLimit(FourCC("o01M"), Faction.UNLIMITED); //Spirit Lodge
-      ModObjectLimit(FourCC("o03T"), Faction.UNLIMITED); //Orc Burrow
-      ModObjectLimit(FourCC("o03U"), Faction.UNLIMITED); //Watch Tower
-      ModObjectLimit(FourCC("o03W"), Faction.UNLIMITED); //Improved Watch Tower
-      ModObjectLimit(FourCC("o03X"), Faction.UNLIMITED); //Voodoo Lounge
-      ModObjectLimit(FourCC("o03V"), Faction.UNLIMITED); //Shipyard
+      ModObjectLimit(FourCC("o03L"), UNLIMITED); //Great Hall
+      ModObjectLimit(FourCC("o03M"), UNLIMITED); //Stronghold
+      ModObjectLimit(FourCC("o03N"), UNLIMITED); //Fortress
+      ModObjectLimit(FourCC("o03O"), UNLIMITED); //Altar of Storms
+      ModObjectLimit(FourCC("o03P"), UNLIMITED); //Barracks
+      ModObjectLimit(FourCC("o05T"), UNLIMITED); //Boot Camp
+      ModObjectLimit(FourCC("o03Q"), UNLIMITED); //War Mill
+      ModObjectLimit(FourCC("o03S"), UNLIMITED); //Tauren Totem
+      ModObjectLimit(FourCC("o01M"), UNLIMITED); //Spirit Lodge
+      ModObjectLimit(FourCC("o03T"), UNLIMITED); //Orc Burrow
+      ModObjectLimit(FourCC("o03U"), UNLIMITED); //Watch Tower
+      ModObjectLimit(FourCC("o03W"), UNLIMITED); //Improved Watch Tower
+      ModObjectLimit(FourCC("o03X"), UNLIMITED); //Voodoo Lounge
+      ModObjectLimit(FourCC("o03V"), UNLIMITED); //Shipyard
       ModObjectLimit(FourCC("h011"), 1); //Artillery
 
       //Ship
-      ModObjectLimit(Constants.UNIT_O06G_OIL_RIG_CONSTRUCTOR_GOBLIN, Faction.UNLIMITED);
-      ModObjectLimit(FourCC("h0AS"), Faction.UNLIMITED); //Scout
-      ModObjectLimit(FourCC("h0AP"), Faction.UNLIMITED); //Frigate
-      ModObjectLimit(FourCC("h0B2"), Faction.UNLIMITED); //Fireship
-      ModObjectLimit(FourCC("h0AY"), Faction.UNLIMITED); //Galley
-      ModObjectLimit(FourCC("h0B5"), Faction.UNLIMITED); //Boarding
-      ModObjectLimit(FourCC("h0BC"), Faction.UNLIMITED); //Juggernaut
+      ModObjectLimit(Constants.UNIT_O06G_OIL_RIG_CONSTRUCTOR_GOBLIN, UNLIMITED);
+      ModObjectLimit(FourCC("h0AS"), UNLIMITED); //Scout
+      ModObjectLimit(FourCC("h0AP"), UNLIMITED); //Frigate
+      ModObjectLimit(FourCC("h0B2"), UNLIMITED); //Fireship
+      ModObjectLimit(FourCC("h0AY"), UNLIMITED); //Galley
+      ModObjectLimit(FourCC("h0B5"), UNLIMITED); //Boarding
+      ModObjectLimit(FourCC("h0BC"), UNLIMITED); //Juggernaut
       ModObjectLimit(FourCC("h0AO"), 6); //Bombard
 
-      ModObjectLimit(Constants.UNIT_O02I_BUILDER_GOBLIN_WORKER, Faction.UNLIMITED);
-      ModObjectLimit(Constants.UNIT_N099_OGRE_MERCENARY_GOBLIN, Faction.UNLIMITED);
+      ModObjectLimit(Constants.UNIT_O02I_BUILDER_GOBLIN_WORKER, UNLIMITED);
+      ModObjectLimit(Constants.UNIT_N099_OGRE_MERCENARY_GOBLIN, UNLIMITED);
       ModObjectLimit(Constants.UNIT_H08X_SAPPERS_GOBLIN, 8);
-      ModObjectLimit(Constants.UNIT_H08Y_GUNNER_GOBLIN, Faction.UNLIMITED);
-      ModObjectLimit(Constants.UNIT_U02R_HOBGOBLIN_GOBLIN, Faction.UNLIMITED);
+      ModObjectLimit(Constants.UNIT_H08Y_GUNNER_GOBLIN, UNLIMITED);
+      ModObjectLimit(Constants.UNIT_U02R_HOBGOBLIN_GOBLIN, UNLIMITED);
       ModObjectLimit(Constants.UNIT_H09I_PERSONAL_TANK_GOBLIN, 12);
       ModObjectLimit(Constants.UNIT_H09J_GRENADIER_GOBLIN, 12);
-      ModObjectLimit(Constants.UNIT_ODOC_WITCH_DOCTOR_FROSTWOLF, Faction.UNLIMITED);
-      ModObjectLimit(Constants.UNIT_O04O_ALCHEMIST_GOBLIN, Faction.UNLIMITED);
+      ModObjectLimit(Constants.UNIT_ODOC_WITCH_DOCTOR_FROSTWOLF, UNLIMITED);
+      ModObjectLimit(Constants.UNIT_O04O_ALCHEMIST_GOBLIN, UNLIMITED);
       ModObjectLimit(Constants.UNIT_O04Q_TINKER_GOBLIN, 6);
-      ModObjectLimit(Constants.UNIT_ODES_FRIGATE_WARSONG_FROSTWOLF_FEL_HORDE, Faction.UNLIMITED);
+      ModObjectLimit(Constants.UNIT_ODES_FRIGATE_WARSONG_FROSTWOLF_FEL_HORDE, UNLIMITED);
       ModObjectLimit(Constants.UNIT_OJGN_JUGGERNAUT_WARSONG_FROSTWOLF_FEL_HORDE, 6);
       ModObjectLimit(Constants.UNIT_N062_SHREDDER_GOBLIN, 12);
       ModObjectLimit(Constants.UNIT_H08Z_ASSAULT_TANK_GOBLIN, 5);
@@ -104,8 +104,8 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
       ModObjectLimit(Constants.UNIT_NTIN_CHIEF_ENGINEER_GOBLIN, 1);
       ModObjectLimit(Constants.UNIT_VH01_BARON_OF_GADGETZAN_GOBLIN, 1);
 
-      ModObjectLimit(Constants.UPGRADE_R07M_ALCHEMIST_GRANDMASTER_TRAINING_GOBLIN, Faction.UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R097_FORTIFIED_HULLS_GOBLIN, Faction.UNLIMITED);
+      ModObjectLimit(Constants.UPGRADE_R07M_ALCHEMIST_GRANDMASTER_TRAINING_GOBLIN, UNLIMITED);
+      ModObjectLimit(Constants.UPGRADE_R097_FORTIFIED_HULLS_GOBLIN, UNLIMITED);
     }
 
     private void RegisterQuests()
@@ -116,7 +116,7 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
     private void RegisterDialogue()
     {
       TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
+        new TriggeredDialogue(new Dialogue(
             @"Sound\Dialogue\OrcExpCamp\OrcQuest03x\D03Gazlowe01",
             "Ah, new guy, huh? I'm Gazlowe, chief engineer around these parts. But enough about me. We got work to do, buddy!",
             "Gazlowe")

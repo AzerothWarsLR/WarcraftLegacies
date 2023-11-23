@@ -53,30 +53,30 @@ Join up with your allies and brace for a tough fight and counter-attack. ";
 
     private void RegisterObjectLimits()
     {
-      ModObjectLimit(FourCC("o03R"), Faction.UNLIMITED); //Great Hall
-      ModObjectLimit(FourCC("o03Y"), Faction.UNLIMITED); //Stronghold
-      ModObjectLimit(FourCC("o03Z"), Faction.UNLIMITED); //Fortress
-      ModObjectLimit(FourCC("o040"), Faction.UNLIMITED); //Altar of Storms
-      ModObjectLimit(FourCC("o041"), Faction.UNLIMITED); //Barracks
-      ModObjectLimit(FourCC("o042"), Faction.UNLIMITED); //War Mill
-      ModObjectLimit(FourCC("o044"), Faction.UNLIMITED); //Tauren Totem
-      ModObjectLimit(FourCC("o043"), Faction.UNLIMITED); //Spirit Lodge
-      ModObjectLimit(FourCC("o045"), Faction.UNLIMITED); //Orc Burrow
-      ModObjectLimit(FourCC("o046"), Faction.UNLIMITED); //Watch Tower
-      ModObjectLimit(FourCC("o048"), Faction.UNLIMITED); //Improved Watch Tower
-      ModObjectLimit(FourCC("o047"), Faction.UNLIMITED); //Voodoo Lounge
-      ModObjectLimit(FourCC("o049"), Faction.UNLIMITED); //Shipyard
-      ModObjectLimit(FourCC("o04X"), Faction.UNLIMITED); //Loa Shrine
+      ModObjectLimit(FourCC("o03R"), UNLIMITED); //Great Hall
+      ModObjectLimit(FourCC("o03Y"), UNLIMITED); //Stronghold
+      ModObjectLimit(FourCC("o03Z"), UNLIMITED); //Fortress
+      ModObjectLimit(FourCC("o040"), UNLIMITED); //Altar of Storms
+      ModObjectLimit(FourCC("o041"), UNLIMITED); //Barracks
+      ModObjectLimit(FourCC("o042"), UNLIMITED); //War Mill
+      ModObjectLimit(FourCC("o044"), UNLIMITED); //Tauren Totem
+      ModObjectLimit(FourCC("o043"), UNLIMITED); //Spirit Lodge
+      ModObjectLimit(FourCC("o045"), UNLIMITED); //Orc Burrow
+      ModObjectLimit(FourCC("o046"), UNLIMITED); //Watch Tower
+      ModObjectLimit(FourCC("o048"), UNLIMITED); //Improved Watch Tower
+      ModObjectLimit(FourCC("o047"), UNLIMITED); //Voodoo Lounge
+      ModObjectLimit(FourCC("o049"), UNLIMITED); //Shipyard
+      ModObjectLimit(FourCC("o04X"), UNLIMITED); //Loa Shrine
 
-      ModObjectLimit(FourCC("o04A"), Faction.UNLIMITED); //Peon
-      ModObjectLimit(FourCC("h021"), Faction.UNLIMITED); //Grunt
-      ModObjectLimit(FourCC("o04D"), Faction.UNLIMITED); //Troll Headhunter
+      ModObjectLimit(FourCC("o04A"), UNLIMITED); //Peon
+      ModObjectLimit(FourCC("h021"), UNLIMITED); //Grunt
+      ModObjectLimit(FourCC("o04D"), UNLIMITED); //Troll Headhunter
       ModObjectLimit(FourCC("n09E"), 2); //Storm Wyrm
       ModObjectLimit(FourCC("e00Z"), 8); //Direhorn
-      ModObjectLimit(FourCC("o04F"), Faction.UNLIMITED); //Troll Witch Doctor
-      ModObjectLimit(FourCC("o04G"), Faction.UNLIMITED); //Haruspex
+      ModObjectLimit(FourCC("o04F"), UNLIMITED); //Troll Witch Doctor
+      ModObjectLimit(FourCC("o04G"), UNLIMITED); //Haruspex
       ModObjectLimit(FourCC("o04E"), 6); //Boneseer
-      ModObjectLimit(FourCC("h05D"), Faction.UNLIMITED); //Raptor Rider
+      ModObjectLimit(FourCC("h05D"), UNLIMITED); //Raptor Rider
       ModObjectLimit(FourCC("o021"), 12); //Ravager
       ModObjectLimit(FourCC("nftk"), 12); //Warlord
       ModObjectLimit(FourCC("o02K"), 6); //Bear Rider
@@ -84,13 +84,13 @@ Join up with your allies and brace for a tough fight and counter-attack. ";
       ModObjectLimit(FourCC("e01Z"), 3); //Throne of War
 
       //Ship
-      ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
-      ModObjectLimit(FourCC("h0AS"), Faction.UNLIMITED); //Scout
-      ModObjectLimit(FourCC("h0AP"), Faction.UNLIMITED); //Frigate
-      ModObjectLimit(FourCC("h0B2"), Faction.UNLIMITED); //Fireship
-      ModObjectLimit(FourCC("h0AY"), Faction.UNLIMITED); //Galley
-      ModObjectLimit(FourCC("h0B5"), Faction.UNLIMITED); //Boarding
-      ModObjectLimit(FourCC("h0BC"), Faction.UNLIMITED); //Juggernaut
+      ModObjectLimit(FourCC("obot"), UNLIMITED); //Transport Ship
+      ModObjectLimit(FourCC("h0AS"), UNLIMITED); //Scout
+      ModObjectLimit(FourCC("h0AP"), UNLIMITED); //Frigate
+      ModObjectLimit(FourCC("h0B2"), UNLIMITED); //Fireship
+      ModObjectLimit(FourCC("h0AY"), UNLIMITED); //Galley
+      ModObjectLimit(FourCC("h0B5"), UNLIMITED); //Boarding
+      ModObjectLimit(FourCC("h0BC"), UNLIMITED); //Juggernaut
       ModObjectLimit(FourCC("h0AO"), 6); //Bombard
 
       ModObjectLimit(FourCC("O026"), 1); //Rasthakan
@@ -98,10 +98,10 @@ Join up with your allies and brace for a tough fight and counter-attack. ";
       ModObjectLimit(FourCC("U023"), 1); //Hakkar
       ModObjectLimit(FourCC("H06Q"), 1); //Gazrilla
 
-      ModObjectLimit(FourCC("Rers"), Faction.UNLIMITED); //Resistant Skin
-      ModObjectLimit(FourCC("R00H"), Faction.UNLIMITED); //Animal Companion
-      ModObjectLimit(FourCC("R070"), Faction.UNLIMITED); //Haruspex Training
-      ModObjectLimit(FourCC("R071"), Faction.UNLIMITED); //Hex Training
+      ModObjectLimit(FourCC("Rers"), UNLIMITED); //Resistant Skin
+      ModObjectLimit(FourCC("R00H"), UNLIMITED); //Animal Companion
+      ModObjectLimit(FourCC("R070"), UNLIMITED); //Haruspex Training
+      ModObjectLimit(FourCC("R071"), UNLIMITED); //Hex Training
     }
 
     private void RegisterQuests()

@@ -123,7 +123,7 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
     private void RegisterDialogue()
     {
       TriggeredDialogueManager.Add(new TriggeredDialogue(
-        new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\HumanExpCamp\Human07x\A07Illidan24",
+        new Dialogue(@"Sound\Dialogue\HumanExpCamp\Human07x\A07Illidan24",
           "Hear me now, you trembling mortals! I am your lord and master! Illidan reigns supreme!",
           "Illidan Stormrage")
         , new[]
@@ -131,12 +131,12 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
           this
         }, new List<Objective>
         {
-          new ObjectiveQuestComplete(this.GetQuestByType<QuestBlackTemple>())
+          new ObjectiveQuestComplete(GetQuestByType<QuestBlackTemple>())
         }
       ));
       
       TriggeredDialogueManager.Add(new TriggeredDialogue(
-        new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Illidan45.flac",
+        new Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Illidan45.flac",
           "At last! The Tomb of Sargeras is found!",
           "Illidan Stormrage")
         , new[]
@@ -153,11 +153,11 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
     private void RegisterSentinelsDialogue(Sentinels sentinels)
     {
       TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
+        new TriggeredDialogue(new DialogueSequence(new Dialogue(
               @"Sound\Dialogue\NightElfExpCamp\NightElf03x\S03LadyVashj31",
               "You've come far enough, little warden. Your vaunted night elf justice has no jurisdiction here.",
               "Lady Vashj"),
-            new MacroTools.DialogueSystem.Dialogue(
+            new Dialogue(
               @"Sound\Dialogue\NightElfExpCamp\NightElf03x\S03Maiev32",
               "What would you know of us or our justice, naga witch?",
               "Maiev Shadowsong")),
@@ -171,11 +171,11 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
           }));
       
       TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
+        new TriggeredDialogue(new DialogueSequence(new Dialogue(
               @"Sound\Dialogue\NightElfExpCamp\NightElf03x\S03Illidan45",
               "So, Warden Shadowsong, you've made it at last. I knew you would.",
               "Illidan Stormrage"),
-            new MacroTools.DialogueSystem.Dialogue(
+            new Dialogue(
               @"Sound\Dialogue\NightElfExpCamp\NightElf03x\S03Maiev46",
               "You have much to pay for, Illidan. I'm taking you back to your cell.",
               "Maiev Shadowsong")),
@@ -189,19 +189,19 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
           }));
       
       TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
+        new TriggeredDialogue(new DialogueSequence(new Dialogue(
             @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Illidan31",
             "Tyrande! What are you doing here? This battle does not concern you.",
-            "Illidan Stormrage"), new MacroTools.DialogueSystem.Dialogue(
+            "Illidan Stormrage"), new Dialogue(
             @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Tyrande32",
             "I was wrong to set you free, Illidan. I can see that now. You've become a monster.",
-            "Tyrande Whisperwind"), new MacroTools.DialogueSystem.Dialogue(
+            "Tyrande Whisperwind"), new Dialogue(
             @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Illidan33",
             "Monster? Is that what you think of me? I have always...cared about you, Tyrande. I sought only to prove my worthiness--my power!",
-            "Illidan Stormrage"), new MacroTools.DialogueSystem.Dialogue(
+            "Illidan Stormrage"), new Dialogue(
             @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Tyrande34",
             "Raw power is no substitute for true strength, Illidan. That is why I chose your brother over you.",
-            "Tyrande Whisperwind"), new MacroTools.DialogueSystem.Dialogue(
+            "Tyrande Whisperwind"), new Dialogue(
             @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Illidan35",
             "Still you refuse to see me for what I truly am. You believe me to be a villain--your enemy. But soon now, you will see our enemies are the same!",
             "Illidan Stormrage"))
@@ -220,11 +220,11 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
     {
             TriggeredDialogueManager.Add(
         new TriggeredDialogue(
-          new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
+          new DialogueSequence(new Dialogue(
               @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Illidan38",
               "Brother? What are you doing here?",
               "Illidan Stormrage"),
-            new MacroTools.DialogueSystem.Dialogue(
+            new Dialogue(
               @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Furion39",
               "I've come to stop you, Illidan. Instead of banishing you, I should have returned you to your cage when I had the chance! I was weak then--but no longer.",
               "Malfurion Stormrage")),
@@ -238,15 +238,15 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
           }));
 
       TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
+        new TriggeredDialogue(new DialogueSequence(new Dialogue(
               @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Tyrande06",
               "What are these vile serpents?",
               "Tyrande Whisperwind"),
-            new MacroTools.DialogueSystem.Dialogue(
+            new Dialogue(
               @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Furion07",
               "I don't know, but these creatures feel familiar somehow.",
               "Malfurion Stormrage"),
-            new MacroTools.DialogueSystem.Dialogue(
+            new Dialogue(
               @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Naga08",
               "Wretched Night Elves. We are the Naga! We are the future!",
               "Myrmidon")),
@@ -276,7 +276,7 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
     private void RegisterScourgeDialogue(Scourge scourge)
     {
       TriggeredDialogueManager.Add(new TriggeredDialogue(
-        new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\UndeadExpCamp\Undead08x\L08Illidan33.flac",
+        new Dialogue(@"Sound\Dialogue\UndeadExpCamp\Undead08x\L08Illidan33.flac",
           "You're out of your league, old king. You should have stayed hidden underground.",
           "Illidan Stormrage")
         , new Faction[]
@@ -290,11 +290,11 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
       ));
       
       TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
+        new TriggeredDialogue(new DialogueSequence(new Dialogue(
               @"Sound\Dialogue\UndeadExpCamp\Undead08x\L08Illidan27",
               "Hello, Arthas.",
               "Illidan Stormrage"),
-            new MacroTools.DialogueSystem.Dialogue(
+            new Dialogue(
               @"Sound\Dialogue\UndeadExpCamp\Undead08x\L08Arthas28",
               "You look different, Illidan. I guess the Skull of Gul'dan didn't agree with you.",
               "Arthas Menethil")),

@@ -51,28 +51,28 @@ The Night Elves are aware of your presence and are gathering a mighty host again
 
     private void RegisterObjectLimits()
     {
-      ModObjectLimit(FourCC("o00C"), Faction.UNLIMITED); //Great Hall
-      ModObjectLimit(FourCC("o02R"), Faction.UNLIMITED); //Stronghold
-      ModObjectLimit(FourCC("o02S"), Faction.UNLIMITED); //Fortress
-      ModObjectLimit(FourCC("o020"), Faction.UNLIMITED); //Altar of Storms
-      ModObjectLimit(FourCC("o01S"), Faction.UNLIMITED); //Barracks
-      ModObjectLimit(FourCC("o009"), Faction.UNLIMITED); //War Mill
-      ModObjectLimit(FourCC("o006"), Faction.UNLIMITED); //Ogre Barrack
-      ModObjectLimit(FourCC("o05G"), Faction.UNLIMITED); //Siege Workshop
-      ModObjectLimit(FourCC("o02Q"), Faction.UNLIMITED); //Bestiary
-      ModObjectLimit(FourCC("o028"), Faction.UNLIMITED); //Orc Burrow
-      ModObjectLimit(FourCC("n03E"), Faction.UNLIMITED); //Watch Tower
-      ModObjectLimit(FourCC("o01H"), Faction.UNLIMITED); //Troll Shrine
-      ModObjectLimit(FourCC("n0AL"), Faction.UNLIMITED); //Improved Watch Tower
-      ModObjectLimit(FourCC("o02T"), Faction.UNLIMITED); //Shipyard
-      ModObjectLimit(FourCC("o01T"), Faction.UNLIMITED); //Goblin Hardware Shop
+      ModObjectLimit(FourCC("o00C"), UNLIMITED); //Great Hall
+      ModObjectLimit(FourCC("o02R"), UNLIMITED); //Stronghold
+      ModObjectLimit(FourCC("o02S"), UNLIMITED); //Fortress
+      ModObjectLimit(FourCC("o020"), UNLIMITED); //Altar of Storms
+      ModObjectLimit(FourCC("o01S"), UNLIMITED); //Barracks
+      ModObjectLimit(FourCC("o009"), UNLIMITED); //War Mill
+      ModObjectLimit(FourCC("o006"), UNLIMITED); //Ogre Barrack
+      ModObjectLimit(FourCC("o05G"), UNLIMITED); //Siege Workshop
+      ModObjectLimit(FourCC("o02Q"), UNLIMITED); //Bestiary
+      ModObjectLimit(FourCC("o028"), UNLIMITED); //Orc Burrow
+      ModObjectLimit(FourCC("n03E"), UNLIMITED); //Watch Tower
+      ModObjectLimit(FourCC("o01H"), UNLIMITED); //Troll Shrine
+      ModObjectLimit(FourCC("n0AL"), UNLIMITED); //Improved Watch Tower
+      ModObjectLimit(FourCC("o02T"), UNLIMITED); //Shipyard
+      ModObjectLimit(FourCC("o01T"), UNLIMITED); //Goblin Hardware Shop
 
-      ModObjectLimit(FourCC("o04L"), Faction.UNLIMITED); //Peon
-      ModObjectLimit(FourCC("o02M"), Faction.UNLIMITED); //Grunt
-      ModObjectLimit(FourCC("orai"), Faction.UNLIMITED); //Raider
-      ModObjectLimit(FourCC("n08E"), Faction.UNLIMITED); //Hexbinder
-      ModObjectLimit(FourCC("otbk"), Faction.UNLIMITED); //Troll Berseker
-      ModObjectLimit(FourCC("nogn"), Faction.UNLIMITED); //Stonemaul Ogre Magi
+      ModObjectLimit(FourCC("o04L"), UNLIMITED); //Peon
+      ModObjectLimit(FourCC("o02M"), UNLIMITED); //Grunt
+      ModObjectLimit(FourCC("orai"), UNLIMITED); //Raider
+      ModObjectLimit(FourCC("n08E"), UNLIMITED); //Hexbinder
+      ModObjectLimit(FourCC("otbk"), UNLIMITED); //Troll Berseker
+      ModObjectLimit(FourCC("nogn"), UNLIMITED); //Stonemaul Ogre Magi
       ModObjectLimit(FourCC("o00I"), 6); //Horde War Machine
       ModObjectLimit(FourCC("e01M"), 4); //Azerite Siege Engine
       ModObjectLimit(FourCC("okod"), 4); //Kodo Beast
@@ -81,13 +81,13 @@ The Night Elves are aware of your presence and are gathering a mighty host again
       ModObjectLimit(FourCC("owyv"), 8); //Wind Rider
 
       //Ship
-      ModObjectLimit(FourCC("obot"), Faction.UNLIMITED); //Transport Ship
-      ModObjectLimit(FourCC("h0AS"), Faction.UNLIMITED); //Scout
-      ModObjectLimit(FourCC("h0AP"), Faction.UNLIMITED); //Frigate
-      ModObjectLimit(FourCC("h0B2"), Faction.UNLIMITED); //Fireship
-      ModObjectLimit(FourCC("h0AY"), Faction.UNLIMITED); //Galley
-      ModObjectLimit(FourCC("h0B5"), Faction.UNLIMITED); //Boarding
-      ModObjectLimit(FourCC("h0BC"), Faction.UNLIMITED); //Juggernaut
+      ModObjectLimit(FourCC("obot"), UNLIMITED); //Transport Ship
+      ModObjectLimit(FourCC("h0AS"), UNLIMITED); //Scout
+      ModObjectLimit(FourCC("h0AP"), UNLIMITED); //Frigate
+      ModObjectLimit(FourCC("h0B2"), UNLIMITED); //Fireship
+      ModObjectLimit(FourCC("h0AY"), UNLIMITED); //Galley
+      ModObjectLimit(FourCC("h0B5"), UNLIMITED); //Boarding
+      ModObjectLimit(FourCC("h0BC"), UNLIMITED); //Juggernaut
       ModObjectLimit(FourCC("h0AO"), 6); //Bombard
 
       ModObjectLimit(FourCC("Ogrh"), 1); //Grom
@@ -97,20 +97,20 @@ The Night Elves are aware of your presence and are gathering a mighty host again
       ModObjectLimit(FourCC("n0CN"), 1); //Gibbs
       ModObjectLimit(Constants.UNIT_OPGH_CORRUPTOR_OF_THE_WARSONG_CLAN_WARSONG_BLOODPACT, 1); //Blood Pact Grom   Fixes Perma Death Grom Blood Pact bug
 
-      ModObjectLimit(FourCC("Robs"), Faction.UNLIMITED); //Berserker Strength
-      ModObjectLimit(FourCC("Rotr"), Faction.UNLIMITED); //Troll Regeneration
-      ModObjectLimit(FourCC("R01J"), Faction.UNLIMITED); //Ensnare
-      ModObjectLimit(FourCC("R02I"), Faction.UNLIMITED); //Ogre Magi Adept Training
-      ModObjectLimit(FourCC("R03Q"), Faction.UNLIMITED); //Warlock Adept Training
-      ModObjectLimit(FourCC("Rorb"), Faction.UNLIMITED); //Reinforced Defenses
-      ModObjectLimit(FourCC("Rosp"), Faction.UNLIMITED); //Spiked Barricades
-      ModObjectLimit(FourCC("R016"), Faction.UNLIMITED); //Warlords
-      ModObjectLimit(FourCC("R019"), Faction.UNLIMITED); //Improved Shockwave
-      ModObjectLimit(Constants.UPGRADE_R01Z_BATTLE_STATIONS_ORC, Faction.UNLIMITED);
+      ModObjectLimit(FourCC("Robs"), UNLIMITED); //Berserker Strength
+      ModObjectLimit(FourCC("Rotr"), UNLIMITED); //Troll Regeneration
+      ModObjectLimit(FourCC("R01J"), UNLIMITED); //Ensnare
+      ModObjectLimit(FourCC("R02I"), UNLIMITED); //Ogre Magi Adept Training
+      ModObjectLimit(FourCC("R03Q"), UNLIMITED); //Warlock Adept Training
+      ModObjectLimit(FourCC("Rorb"), UNLIMITED); //Reinforced Defenses
+      ModObjectLimit(FourCC("Rosp"), UNLIMITED); //Spiked Barricades
+      ModObjectLimit(FourCC("R016"), UNLIMITED); //Warlords
+      ModObjectLimit(FourCC("R019"), UNLIMITED); //Improved Shockwave
+      ModObjectLimit(Constants.UPGRADE_R01Z_BATTLE_STATIONS_ORC, UNLIMITED);
       SetObjectLevel(Constants.UPGRADE_R01Z_BATTLE_STATIONS_ORC, 1);
-      ModObjectLimit(Constants.UPGRADE_R00D_MASS_BLOODLUST_FROSTWOLF, Faction.UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_ROVS_ENVENOMED_SPEARS_WARSONG, Faction.UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R017_IMPROVED_IGNORE_PAIN_WARSONG, Faction.UNLIMITED);
+      ModObjectLimit(Constants.UPGRADE_R00D_MASS_BLOODLUST_FROSTWOLF, UNLIMITED);
+      ModObjectLimit(Constants.UPGRADE_ROVS_ENVENOMED_SPEARS_WARSONG, UNLIMITED);
+      ModObjectLimit(Constants.UPGRADE_R017_IMPROVED_IGNORE_PAIN_WARSONG, UNLIMITED);
 
 
       ModObjectLimit(Constants.UPGRADE_R09N_FLIGHT_PATH_WARSONG, 1);
@@ -133,7 +133,7 @@ The Night Elves are aware of your presence and are gathering a mighty host again
     private void RegisterDialogue()
     {
       TriggeredDialogueManager.Add(new TriggeredDialogue(
-        new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\OrcCampaign\Orc05\O05Grom26.flac",
+        new Dialogue(@"Sound\Dialogue\OrcCampaign\Orc05\O05Grom26.flac",
           "Yes! I feel the power once again! Come, my warriors; drink from the dark waters, and you will be reborn!",
           "Grom Hellscream"), new[]
         {
@@ -158,7 +158,7 @@ The Night Elves are aware of your presence and are gathering a mighty host again
       ));
       
       TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
+        new TriggeredDialogue(new Dialogue(
             @"Sound\Dialogue\OrcExpCamp\RandomOrcQuest02x\DR02Chen01",
             "Ah, greetings, my friend. I am Chen Stormstout, humble brewmaster of Pandaria. I have traveled the wide world searching for rare, exotic ingredients to use in my special brew! After all, good ale can solve all the problems of this world, don't you agree?",
             "Chen Stormstout")
@@ -174,7 +174,7 @@ The Night Elves are aware of your presence and are gathering a mighty host again
           }));
       
       TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
+        new TriggeredDialogue(new DialogueSequence(new Dialogue(
               @"Sound\Dialogue\OrcCampaign\Orc04\O04Grom01",
               "Damn Thrall for sending us away! He chooses to use his greatest warriors for manual labor? He'll be lost without me.",
               "Grom Hellscream"))
