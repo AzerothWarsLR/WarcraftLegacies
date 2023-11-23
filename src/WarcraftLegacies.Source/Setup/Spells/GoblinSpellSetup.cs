@@ -7,14 +7,8 @@ using WarcraftLegacies.Source.Spells;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
-  /// <summary>
-  /// Responsible for setting up all <see cref="GoblinSetup.Goblin"/> related <see cref="Spell"/>s and <see cref="PassiveAbility"/>s.
-  /// </summary>
   public static class GoblinSpellSetup
   {
-    /// <summary>
-    /// Sets up all <see cref="GoblinSetup.Goblin"/> related <see cref="Spell"/>s and <see cref="PassiveAbility"/>s.
-    /// </summary>
     public static void Setup()
     {
       var zeppelinTradeTargets = new[]

@@ -10,11 +10,9 @@ namespace WarcraftLegacies.Source.Setup
       DruidsQuestSetup.Setup(artifactSetup, allLegendSetup);
       FelHordeQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
       IronforgeQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
-      LordaeronQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       SentinelsQuestSetup.Setup(artifactSetup, allLegendSetup);
       StormwindQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       WarsongQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
-      NagaQuestSetup.Setup(artifactSetup, allLegendSetup);
       GoblinQuestSetup.Setup(allLegendSetup);
       DraeneiQuestSetup.Setup(preplacedUnitSystem, allLegendSetup);
       ZandalarQuestSetup.Setup(artifactSetup, preplacedUnitSystem, allLegendSetup);

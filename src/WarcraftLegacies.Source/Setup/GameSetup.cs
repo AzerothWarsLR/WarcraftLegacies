@@ -2,7 +2,6 @@
 using MacroTools.CommandSystem;
 using MacroTools.ControlPointSystem;
 using MacroTools.GameModes;
-using MacroTools.Mechanics;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Save;
 using MacroTools.UserInterface;
@@ -12,7 +11,6 @@ using WarcraftLegacies.Source.FactionMechanics.Scourge;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.GameModes;
-using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.UnitTypes;
 using static War3Api.Common;
 
@@ -41,7 +39,6 @@ namespace WarcraftLegacies.Source.Setup
       ControlPointSetup.Setup();
       InstanceSetup.Setup(preplacedUnitSystem);
       TeamSetup.Setup();
-      AllFactionSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       SharedFactionConfigSetup.Setup();
       new PlayerSetup(preplacedUnitSystem, allLegendSetup, artifactSetup).Setup();
       FactionChoiceDialogSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
