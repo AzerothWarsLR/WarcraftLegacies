@@ -40,8 +40,8 @@ You begin in the Salt Flats, separated from your ally, the Warsong Clan in the N
 Salvage the wrecked ships, establish a base and gather your troops to move inland and assist your ally against the Night Elf threat.";
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8793, -11350)),
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-15828, -3120))
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8793, -11350)),
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-15828, -3120))
       };
     }
     

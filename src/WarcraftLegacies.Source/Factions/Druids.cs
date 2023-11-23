@@ -44,7 +44,7 @@ Once awakened, use his Force of Nature to clear a path through the trees in Ashe
 Gather your forces and strike before the Horde can organize their efforts.";
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9200, 10742))
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9200, 10742))
       };
       RegisterFactionDependentInitializer<Sentinels>(RegisterSentinelsDialogue);
     }
@@ -130,17 +130,17 @@ Gather your forces and strike before the Horde can organize their efforts.";
     private void RegisterQuests()
     {
       var newQuest = druids.AddQuest(new QuestMalfurionAwakens(Regions.MoongladeVillage, Regions.TeldrassilUnlock, Regions.CenarionHoldUnlock,
-        allLegendSetup.Druids.Nordrassil.Unit, artifactSetup.HornOfCenarius,
-        allLegendSetup.Druids.Malfurion));
+        _allLegendSetup.Druids.Nordrassil.Unit, _artifactSetup.HornOfCenarius,
+        _allLegendSetup.Druids.Malfurion));
       druids.StartingQuest = newQuest;
       druids.AddQuest(new QuestShrineBase(Regions.ShrineBaseUnlock));
       druids.AddQuest(new QuestRiseBase(Regions.RiseBaseUnlock));
       druids.AddQuest(new QuestAshenvale(Regions.AshenvaleUnlock));
-      druids.AddQuest(new QuestDruidsKillFrostwolf(allLegendSetup.Frostwolf.ThunderBluff));
+      druids.AddQuest(new QuestDruidsKillFrostwolf(_allLegendSetup.Frostwolf.ThunderBluff));
       druids.AddQuest(new QuestDruidsKillWarsong());
-      druids.AddQuest(new QuestAndrassil(allLegendSetup.Druids.Vordrassil, allLegendSetup.Druids.Ursoc));
-      druids.AddQuest(new QuestShaladrassil(allLegendSetup.Neutral.Shaladrassil));
-      druids.AddQuest(new QuestTortolla(allLegendSetup.Druids.Tortolla));
+      druids.AddQuest(new QuestAndrassil(_allLegendSetup.Druids.Vordrassil, _allLegendSetup.Druids.Ursoc));
+      druids.AddQuest(new QuestShaladrassil(_allLegendSetup.Neutral.Shaladrassil));
+      druids.AddQuest(new QuestTortolla(_allLegendSetup.Druids.Tortolla));
     }
 
     private void RegisterDialogue()
@@ -158,7 +158,7 @@ Gather your forces and strike before the Horde can organize their efforts.";
         new[] { this },
         new Objective[]
         {
-          new ObjectiveUnitAlive(preplacedUnitSystem.GetUnit(Constants.UNIT_NSTH_SATYR_HELLCALLER, Regions.SatyrCamp.Center)),
+          new ObjectiveUnitAlive(_preplacedUnitSystem.GetUnit(Constants.UNIT_NSTH_SATYR_HELLCALLER, Regions.SatyrCamp.Center)),
           new ObjectiveLegendInRect(legendSetup.Druids.Malfurion, Regions.SatyrCamp, "Satyr camp")
         }));
       

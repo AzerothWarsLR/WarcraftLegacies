@@ -98,23 +98,23 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
       var draenei = DraeneiSetup.Draenei;
       if (draenei == null) 
         return;
-      var questRepairHull = new QuestRepairExodarHull(Regions.ExodarBaseUnlock, allLegendSetup.Draenei.LegendExodar);
+      var questRepairHull = new QuestRepairExodarHull(Regions.ExodarBaseUnlock, _allLegendSetup.Draenei.LegendExodar);
       draenei.StartingQuest = questRepairHull;
       draenei.AddQuest(questRepairHull);
-      draenei.AddQuest(new QuestRebuildCivilisation(Regions.DesolaceUnlock, allLegendSetup.Draenei.Velen));
+      draenei.AddQuest(new QuestRebuildCivilisation(Regions.DesolaceUnlock, _allLegendSetup.Draenei.Velen));
       draenei.AddQuest(new QuestShipArgus(
-        preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.OutlandToArgus.Center),
-        preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center),
-        allLegendSetup.Draenei.Velen
+        _preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.OutlandToArgus.Center),
+        _preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center),
+        _allLegendSetup.Draenei.Velen
       ));
       var crystalProtectors = CreateGroup()
         .EnumUnitsInRect(Regions.ExodarBaseUnlock.Rect)
         .EmptyToList()
         .Where(x => GetUnitTypeId(x) == Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER);
-      var questRepairGenerator = new QuestRepairGenerator(allLegendSetup.Draenei.LegendExodarGenerator, questRepairHull, crystalProtectors);
+      var questRepairGenerator = new QuestRepairGenerator(_allLegendSetup.Draenei.LegendExodarGenerator, questRepairHull, crystalProtectors);
       draenei.AddQuest(questRepairGenerator);
-      draenei.AddQuest(new QuestTriumvirate(allLegendSetup.Draenei.Velen));
-      var questDimensionalShip = new QuestDimensionalShip(Regions.ExodarBaseUnlock, questRepairGenerator, allLegendSetup.Draenei.LegendExodarGenerator);
+      draenei.AddQuest(new QuestTriumvirate(_allLegendSetup.Draenei.Velen));
+      var questDimensionalShip = new QuestDimensionalShip(Regions.ExodarBaseUnlock, questRepairGenerator, _allLegendSetup.Draenei.LegendExodarGenerator);
       draenei.AddQuest(questDimensionalShip);
     }
 

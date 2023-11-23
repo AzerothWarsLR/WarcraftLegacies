@@ -39,7 +39,7 @@ On Azeroth, the Scourge will need your assistance to destroy the Kingdoms of Lor
 Your primary objective is to summon the great host of the Burning Legion. Invade the city of Dalaran, where the book of Medivh is kept, and use it to open the Demon-gate to Argus.";
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(19331f, -30663))
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(19331f, -30663))
       };
       RegisterFactionDependentInitializer<Dalaran>(RegisterDalaranDialogue);
       RegisterFactionDependentInitializer<Illidari>(RegisterIllidariDialogue);

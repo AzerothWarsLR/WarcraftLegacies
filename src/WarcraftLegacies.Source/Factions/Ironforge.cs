@@ -33,7 +33,7 @@ You begin in the Wetlands, separated from the rest of your forces. Conquer Loch 
 Stormwind is preparing for an invasion through the Dark Portal in the South. Muster the throng and help them, or you may lose your strongest ally.";
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(12079, -2768))
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(12079, -2768))
       };
     }
         
@@ -133,8 +133,8 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       ironforge.AddQuest(new QuestDunMorogh(preplacedUnitSystem));
       ironforge.AddQuest(new QuestDominion(Regions.IronforgeAmbient));
       ironforge.AddQuest(new QuestGnomeregan(Regions.Gnomergan, preplacedUnitSystem));
-      ironforge.AddQuest(new QuestDarkIron(Regions.Shadowforge_City, allLegendSetup.FelHorde.BlackTemple, allLegendSetup.Ironforge.Magni));
-      ironforge.AddQuest(new QuestWildhammer(allLegendSetup.Ironforge.Magni));
+      ironforge.AddQuest(new QuestDarkIron(Regions.Shadowforge_City, _allLegendSetup.FelHorde.BlackTemple, _allLegendSetup.Ironforge.Magni));
+      ironforge.AddQuest(new QuestWildhammer(_allLegendSetup.Ironforge.Magni));
 
       var missingArtifacts = new int[]
       {

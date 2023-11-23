@@ -39,8 +39,8 @@ Join up with your allies and brace for a tough fight and counter-attack. ";
 
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8900, -17000)), //Starting
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-3500, -15000))  //Zandalar
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8900, -17000)), //Starting
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-3500, -15000))  //Zandalar
       };
     }
         
@@ -107,14 +107,14 @@ Join up with your allies and brace for a tough fight and counter-attack. ";
 
     private void RegisterQuests()
     {
-      var questZulFarrak = new QuestZulfarrak(Regions.Zulfarrak, allLegendSetup.Neutral.Zulfarrak, allLegendSetup.Troll.Zul);
+      var questZulFarrak = new QuestZulfarrak(Regions.Zulfarrak, _allLegendSetup.Neutral.Zulfarrak, _allLegendSetup.Troll.Zul);
       zandalar.StartingQuest = questZulFarrak;
       zandalar.AddQuest(questZulFarrak);
       zandalar.AddQuest(new QuestZandalar(Regions.ZandalarUnlock, preplacedUnitSystem));
       zandalar.AddQuest(new QuestGundrak(allLegendSetup));
       zandalar.AddQuest(new QuestJinthaAlor(allLegendSetup));
       zandalar.AddQuest(new QuestZulgurub(allLegendSetup));
-      zandalar.AddQuest(new QuestHakkar(artifactSetup.ZinRokh));
+      zandalar.AddQuest(new QuestHakkar(_artifactSetup.ZinRokh));
       zandalar.AddQuest(new QuestZandalarOutpost());
     }
 

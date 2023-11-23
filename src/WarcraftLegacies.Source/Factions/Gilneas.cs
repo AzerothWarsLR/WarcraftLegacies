@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Factions
     {
       _artifactSetup = artifactSetup;
       _allLegendSetup = allLegendSetup;
-      _gilneasGate = preplacedUnitSystem.GetUnit(Constants.UNIT_H02K_GREYMANE_S_GATE_CLOSED);
+      _gilneasGate = _preplacedUnitSystem.GetUnit(Constants.UNIT_H02K_GREYMANE_S_GATE_CLOSED);
       StartingGold = 200;
       StartingLumber = 700;
       ControlPointDefenderUnitTypeId = Constants.UNIT_H0AF_CONTROL_POINT_DEFENDER_GILNEAS;
@@ -41,10 +41,10 @@ You must raise an army and fight back against the feral wolves and worgen that h
 Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist Lordaeron and Dalaran with the plague, if it's not too late.";
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4236, 1321)),
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4477, -1449)),
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(7709, -2853)),
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9392, -921)),
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4236, 1321)),
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4477, -1449)),
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(7709, -2853)),
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9392, -921)),
       };
       RegisterFactionDependentInitializer<Legion>(RegisterBookOfMedivhQuest);
     }

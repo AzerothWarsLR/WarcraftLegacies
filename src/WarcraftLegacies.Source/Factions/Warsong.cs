@@ -38,7 +38,7 @@ The Warchief expects a large amount of lumber from you. Begin by harvesting with
 The Night Elves are aware of your presence and are gathering a mighty host against you. Unlock Orgrimmar as soon as possible to defend against the Night Elf assault.";
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8455, -2777))
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8455, -2777))
       };
     }
         
@@ -130,13 +130,13 @@ The Night Elves are aware of your presence and are gathering a mighty host again
     {
       warsong.StartingQuest = warsong.AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
       warsong.AddQuest(new QuestCrossroads(Regions.Crossroads, preplacedUnitSystem));
-      warsong.AddQuest(new QuestLumberCamp(Regions.LumberCampUnlock, allLegendSetup.Warsong.GromHellscream));
-      warsong.AddQuest(new QuestChenStormstout(preplacedUnitSystem.GetUnit(FourCC("Nsjs"))));
-      warsong.AddQuest(new QuestFountainOfBlood(allLegendSetup.Neutral.FountainOfBlood, allLegendSetup.Warsong.GromHellscream));
-      warsong.AddQuest(new QuestBloodpact(allLegendSetup.Warsong.Mannoroth, allLegendSetup.Warsong.GromHellscream));
-      warsong.AddQuest(new QuestGarrosh(allLegendSetup.Druids.TempleOfTheMoon));
-      warsong.AddQuest(new QuestWarsongKillDruids(allLegendSetup.Druids.Nordrassil, allLegendSetup.Warsong.GromHellscream));
-      warsong.AddQuest(new QuestMoreWyverns(allLegendSetup.Sentinels.Feathermoon, allLegendSetup.Sentinels.Auberdine));
+      warsong.AddQuest(new QuestLumberCamp(Regions.LumberCampUnlock, _allLegendSetup.Warsong.GromHellscream));
+      warsong.AddQuest(new QuestChenStormstout(_preplacedUnitSystem.GetUnit(FourCC("Nsjs"))));
+      warsong.AddQuest(new QuestFountainOfBlood(_allLegendSetup.Neutral.FountainOfBlood, _allLegendSetup.Warsong.GromHellscream));
+      warsong.AddQuest(new QuestBloodpact(_allLegendSetup.Warsong.Mannoroth, _allLegendSetup.Warsong.GromHellscream));
+      warsong.AddQuest(new QuestGarrosh(_allLegendSetup.Druids.TempleOfTheMoon));
+      warsong.AddQuest(new QuestWarsongKillDruids(_allLegendSetup.Druids.Nordrassil, _allLegendSetup.Warsong.GromHellscream));
+      warsong.AddQuest(new QuestMoreWyverns(_allLegendSetup.Sentinels.Feathermoon, _allLegendSetup.Sentinels.Auberdine));
       warsong.AddQuest(new QuestWarsongHold());
       warsong.AddQuest(new QuestWarsongOutpost());
     }

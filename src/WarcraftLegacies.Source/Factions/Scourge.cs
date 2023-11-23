@@ -48,7 +48,7 @@ Coordinate with the Burning Legion and use the Plague of Undeath to sweep Lordae
 When the Plague hits Lordaeron, you will have a choice to where you want all your military units to be instantly transported.";
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-4939, 18803))
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-4939, 18803))
       };
       RegisterFactionDependentInitializer<Dalaran>(RegisterDalaranDialogue);
       RegisterFactionDependentInitializer<Quelthalas>(RegisterQuelthalasDialogue);

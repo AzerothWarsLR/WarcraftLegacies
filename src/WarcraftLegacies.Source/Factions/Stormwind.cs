@@ -133,25 +133,25 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
     {
       var stormwind = StormwindSetup.Stormwind;
       var newQuest =
-        stormwind.AddQuest(new QuestDarkshire(preplacedUnitSystem.GetUnit(FourCC("ngnv"), Regions.DarkshireUnlock.Center)));
+        stormwind.AddQuest(new QuestDarkshire(_preplacedUnitSystem.GetUnit(FourCC("ngnv"), Regions.DarkshireUnlock.Center)));
       stormwind.StartingQuest = newQuest;
       stormwind.AddQuest(new QuestLakeshire(Regions.LakeshireUnlock,
-        preplacedUnitSystem.GetUnit(FourCC("nogl"), new Point(14288, -14063))));
+        _preplacedUnitSystem.GetUnit(FourCC("nogl"), new Point(14288, -14063))));
       stormwind.AddQuest(new QuestGoldshire(Regions.ElwinForestAmbient,
-        preplacedUnitSystem.GetUnit(Constants.UNIT_N021_HOGGER)));
+        _preplacedUnitSystem.GetUnit(Constants.UNIT_N021_HOGGER)));
       stormwind.AddQuest(new QuestStormwindCity(Regions.StormwindUnlock));
-      stormwind.AddQuest(new QuestNethergarde(preplacedUnitSystem, allLegendSetup.Stormwind.Varian));
+      stormwind.AddQuest(new QuestNethergarde(preplacedUnitSystem, _allLegendSetup.Stormwind.Varian));
       stormwind.AddQuest(new QuestStromgarde(Regions.Stromgarde));
-      stormwind.AddQuest(new QuestHonorHold(Regions.HonorHold, allLegendSetup.FelHorde.HellfireCitadel));
-      stormwind.AddQuest(new QuestKhadgar(allLegendSetup.FelHorde.BlackTemple));
-      stormwind.AddQuest(new QuestClosePortal(preplacedUnitSystem, allLegendSetup.Stormwind.Khadgar));
+      stormwind.AddQuest(new QuestHonorHold(Regions.HonorHold, _allLegendSetup.FelHorde.HellfireCitadel));
+      stormwind.AddQuest(new QuestKhadgar(_allLegendSetup.FelHorde.BlackTemple));
+      stormwind.AddQuest(new QuestClosePortal(preplacedUnitSystem, _allLegendSetup.Stormwind.Khadgar));
       stormwind.AddQuest(new QuestConstructionSites(new[]
       {
-        preplacedUnitSystem.GetUnit(Constants.UNIT_H053_CONSTRUCTION_SITE_STORMWIND_WIZARD_S_SANCTUM),
-        preplacedUnitSystem.GetUnit(Constants.UNIT_H055_CONSTRUCTION_SITE_STORMWIND_CHAMPION_S_HALL)
+        _preplacedUnitSystem.GetUnit(Constants.UNIT_H053_CONSTRUCTION_SITE_STORMWIND_WIZARD_S_SANCTUM),
+        _preplacedUnitSystem.GetUnit(Constants.UNIT_H055_CONSTRUCTION_SITE_STORMWIND_CHAMPION_S_HALL)
       }));
-      stormwind.AddQuest(new QuestKingdomOfManStormwind(artifactSetup.CrownOfLordaeron, artifactSetup.CrownOfStormwind,
-        allLegendSetup.Stormwind.Varian));
+      stormwind.AddQuest(new QuestKingdomOfManStormwind(_artifactSetup.CrownOfLordaeron, _artifactSetup.CrownOfStormwind,
+        _allLegendSetup.Stormwind.Varian));
     }
 
     private void RegisterDialogue()

@@ -40,8 +40,8 @@ Your advanced units require Oil to function. Use oil ships to find oil deposits 
 The Trading Center in Kezan will unlock the ability to train Traders. Be sure to protect the Trading Center once you unlock it, as it will form the backbone of your Goblin Empire.";
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8615, -12869)), //Starting
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-730, -6777))    //Kezan
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8615, -12869)), //Starting
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-730, -6777))    //Kezan
       };
     }
         
@@ -114,8 +114,8 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
       goblin.StartingQuest = goblin.AddQuest(new QuestKezan());
       goblin.AddQuest(new QuestExplosiveEngineering());
       goblin.AddQuest(new QuestRatchet());
-      goblin.AddQuest(new QuestWesternExpansion(new [] { allLegendSetup.Sentinels.Auberdine, allLegendSetup.Sentinels.Feathermoon }));
-      goblin.AddQuest(new QuestLumberMarket(allLegendSetup.Druids.Nordrassil));
+      goblin.AddQuest(new QuestWesternExpansion(new [] { _allLegendSetup.Sentinels.Auberdine, _allLegendSetup.Sentinels.Feathermoon }));
+      goblin.AddQuest(new QuestLumberMarket(_allLegendSetup.Druids.Nordrassil));
       goblin.AddQuest(new QuestBusinessExpansion());
       goblin.AddQuest(new QuestGoblinEmpire());
     }

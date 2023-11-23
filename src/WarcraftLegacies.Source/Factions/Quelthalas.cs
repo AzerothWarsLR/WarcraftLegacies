@@ -36,7 +36,7 @@ Train soldiers to repel the attacks, then gather enough strength to besiege Zul'
 The Plague of Undeath is coming and Lordaeron will need your help with the Scourge soon. Be ready to join them as once you have secured Silvermoon and dealt with the Amani invasion.";
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(17716, 13000))
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(17716, 13000))
       };
       
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);

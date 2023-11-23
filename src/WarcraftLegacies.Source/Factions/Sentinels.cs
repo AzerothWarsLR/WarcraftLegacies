@@ -41,7 +41,7 @@ Your first mission is to race down the coast to Feathermoon Stronghold, a powerf
 Once you have secured your holdings, gather your army and destroy the Orcish Horde. Be careful, they will outnumber you if given time to unite the clans.";
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-22721, -13570))
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-22721, -13570))
       };
       RegisterFactionDependentInitializer<Druids>(RegisterDruidsDialogue);
       RegisterFactionDependentInitializer<Illidari>(RegisterIlliariDialogue);
@@ -121,11 +121,11 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
     {
       sentinels.StartingQuest = sentinels.AddQuest(new QuestFeathermoon(Regions.FeathermoonUnlock));
       sentinels.AddQuest(new QuestAstranaar(new List<Rectangle> { Regions.AstranaarUnlock, Regions.AuberdineUnlock }));
-      sentinels.AddQuest(new QuestSentinelsKillWarsong(allLegendSetup.Warsong.Orgrimmar));
-      sentinels.AddQuest(new QuestSentinelsKillFrostwolf(allLegendSetup.Frostwolf.ThunderBluff));
-      sentinels.AddQuest(new QuestScepterOfTheQueenSentinels(Regions.TheAthenaeum, artifactSetup.ScepterOfTheQueen, allLegendSetup.Warsong.StonemaulKeep));
-      sentinels.AddQuest(new QuestVaultoftheWardens(allLegendSetup.Sentinels.Maiev, allLegendSetup.Sentinels.VaultOfTheWardens));
-      sentinels.AddQuest(new QuestMaievOutland(Regions.MaievStartUnlock, allLegendSetup.Sentinels.Maiev, allLegendSetup.Sentinels.VaultOfTheWardens));
+      sentinels.AddQuest(new QuestSentinelsKillWarsong(_allLegendSetup.Warsong.Orgrimmar));
+      sentinels.AddQuest(new QuestSentinelsKillFrostwolf(_allLegendSetup.Frostwolf.ThunderBluff));
+      sentinels.AddQuest(new QuestScepterOfTheQueenSentinels(Regions.TheAthenaeum, _artifactSetup.ScepterOfTheQueen, _allLegendSetup.Warsong.StonemaulKeep));
+      sentinels.AddQuest(new QuestVaultoftheWardens(_allLegendSetup.Sentinels.Maiev, _allLegendSetup.Sentinels.VaultOfTheWardens));
+      sentinels.AddQuest(new QuestMaievOutland(Regions.MaievStartUnlock, _allLegendSetup.Sentinels.Maiev, _allLegendSetup.Sentinels.VaultOfTheWardens));
     }
 
     private void RegisterDialogue()
@@ -175,9 +175,9 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       
       var worldTrees = new List<Capital>
       {
-        allLegendSetup.Druids.Nordrassil,
-        allLegendSetup.Neutral.Shaladrassil,
-        allLegendSetup.Druids.Vordrassil
+        _allLegendSetup.Druids.Nordrassil,
+        _allLegendSetup.Neutral.Shaladrassil,
+        _allLegendSetup.Druids.Vordrassil
       };
       AddPower(new Immortality(25, 45, worldTrees)
       {
