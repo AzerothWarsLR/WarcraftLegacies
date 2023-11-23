@@ -5,12 +5,19 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
-  public class Goblin : Faction
+  public class Bilgewater : Faction
   {
+    private readonly PreplacedUnitSystem _preplacedUnitSystem;
+    private readonly AllLegendSetup _allLegendSetup;
+    private readonly ArtifactSetup _artifactSetup;
+
     /// <inheritdoc />
-    public Goblin(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Bilgewater", PLAYER_COLOR_LIGHT_GRAY, "|cff808080",
+    public Bilgewater(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Bilgewater", PLAYER_COLOR_LIGHT_GRAY, "|cff808080",
       @"ReplaceableTextures\CommandButtons\BTNHeroTinker.blp")
     {
+      _preplacedUnitSystem = preplacedUnitSystem;
+      _allLegendSetup = allLegendSetup;
+      _artifactSetup = artifactSetup;
     }
         
     /// <inheritdoc />

@@ -7,10 +7,17 @@ namespace WarcraftLegacies.Source.Factions
 {
   public class Druids : Faction
   {
+    private readonly PreplacedUnitSystem _preplacedUnitSystem;
+    private readonly AllLegendSetup _allLegendSetup;
+    private readonly ArtifactSetup _artifactSetup;
+
     /// <inheritdoc />
     public Druids(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Druids", PLAYER_COLOR_BROWN, "|c004e2a04",
       @"ReplaceableTextures\CommandButtons\BTNFurion.blp")
     {
+      _preplacedUnitSystem = preplacedUnitSystem;
+      _allLegendSetup = allLegendSetup;
+      _artifactSetup = artifactSetup;
     }
     
     /// <inheritdoc />

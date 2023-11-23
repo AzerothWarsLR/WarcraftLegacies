@@ -7,10 +7,17 @@ namespace WarcraftLegacies.Source.Factions
 {
   public class Stormwind : Faction
   {
+    private readonly PreplacedUnitSystem _preplacedUnitSystem;
+    private readonly AllLegendSetup _allLegendSetup;
+    private readonly ArtifactSetup _artifactSetup;
+
     /// <inheritdoc />
     public Stormwind(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Stormwind", PLAYER_COLOR_BLUE, "|c000042ff",
       @"ReplaceableTextures\CommandButtons\BTNKnight.blp")
     {
+      _preplacedUnitSystem = preplacedUnitSystem;
+      _allLegendSetup = allLegendSetup;
+      _artifactSetup = artifactSetup;
     }
         
     /// <inheritdoc />

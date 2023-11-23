@@ -7,10 +7,17 @@ namespace WarcraftLegacies.Source.Factions
 {
   public class FelHorde : Faction
   {
+    private readonly PreplacedUnitSystem _preplacedUnitSystem;
+    private readonly AllLegendSetup _allLegendSetup;
+    private readonly ArtifactSetup _artifactSetup;
+
     /// <inheritdoc />
     public FelHorde(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Fel Horde", PLAYER_COLOR_GREEN, "|c0020c000",
       @"ReplaceableTextures\CommandButtons\BTNPitLord.blp")
     {
+      _preplacedUnitSystem = preplacedUnitSystem;
+      _allLegendSetup = allLegendSetup;
+      _artifactSetup = artifactSetup;
     }
         
     /// <inheritdoc />

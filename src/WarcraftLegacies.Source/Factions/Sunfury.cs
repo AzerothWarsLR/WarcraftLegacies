@@ -7,10 +7,17 @@ namespace WarcraftLegacies.Source.Factions
 {
   public class Sunfury : Faction
   {
+    private readonly PreplacedUnitSystem _preplacedUnitSystem;
+    private readonly AllLegendSetup _allLegendSetup;
+    private readonly ArtifactSetup _artifactSetup;
+
     /// <inheritdoc />
     public Sunfury(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Sunfury", PLAYER_COLOR_MAROON, "|cffff0000",
       @"ReplaceableTextures\CommandButtons\BTNBloodMage2.blp")
     {
+      _preplacedUnitSystem = preplacedUnitSystem;
+      _allLegendSetup = allLegendSetup;
+      _artifactSetup = artifactSetup;
     }
         
     /// <inheritdoc />
