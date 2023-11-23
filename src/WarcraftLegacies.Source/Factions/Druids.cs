@@ -159,7 +159,7 @@ Gather your forces and strike before the Horde can organize their efforts.";
         new Objective[]
         {
           new ObjectiveUnitAlive(_preplacedUnitSystem.GetUnit(Constants.UNIT_NSTH_SATYR_HELLCALLER, Regions.SatyrCamp.Center)),
-          new ObjectiveLegendInRect(legendSetup.Druids.Malfurion, Regions.SatyrCamp, "Satyr camp")
+          new ObjectiveLegendInRect(_allLegendSetup.Druids.Malfurion, Regions.SatyrCamp, "Satyr camp")
         }));
       
       TriggeredDialogueManager.Add(new TriggeredDialogue(
@@ -170,7 +170,7 @@ Gather your forces and strike before the Horde can organize their efforts.";
         new[] { this },
         new Objective[]
         {
-          new ObjectiveControlLegend(legendSetup.Druids.Malfurion, false)
+          new ObjectiveControlLegend(_allLegendSetup.Druids.Malfurion, false)
           {
             EligibleFactions = new List<Faction>
             {
@@ -214,7 +214,7 @@ Gather your forces and strike before the Horde can organize their efforts.";
             "Malfurion Stormrage")
         ), 
         new Faction[] { this, sentinels },
-        new[] { new ObjectiveLegendMeetsLegend(legendSetup.Druids.Malfurion, legendSetup.Sentinels.Tyrande) }));
+        new[] { new ObjectiveLegendMeetsLegend(_allLegendSetup.Druids.Malfurion, _allLegendSetup.Sentinels.Tyrande) }));
 
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new Dialogue(
@@ -228,7 +228,7 @@ Gather your forces and strike before the Horde can organize their efforts.";
           warsong
         }, new[]
         {
-          new ObjectiveControlLegend(legendSetup.Druids.Cenarius, false)
+          new ObjectiveControlLegend(_allLegendSetup.Druids.Cenarius, false)
           {
             EligibleFactions = new List<Faction>
             {
