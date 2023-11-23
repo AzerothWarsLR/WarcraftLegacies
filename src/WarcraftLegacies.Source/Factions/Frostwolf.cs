@@ -8,7 +8,6 @@ using WarcraftLegacies.Source.FactionMechanics.Frostwolf;
 using WarcraftLegacies.Source.Quests.Frostwolf;
 using WarcraftLegacies.Source.Quests.Warsong;
 using WarcraftLegacies.Source.Setup;
-using WarcraftLegacies.Source.Setup.FactionSetup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -151,7 +150,7 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
           this
         }, new[]
         {
-          new ObjectiveQuestComplete(WarsongSetup.WarsongClan.GetQuestByType<QuestFountainOfBlood>())
+          new ObjectiveQuestComplete(GetQuestByType<QuestFountainOfBlood>())
         }));
       
       TriggeredDialogueManager.Add(

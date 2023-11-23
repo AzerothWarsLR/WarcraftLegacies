@@ -119,13 +119,13 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
 
     private void RegisterQuests()
     {
-      sentinels.StartingQuest = sentinels.AddQuest(new QuestFeathermoon(Regions.FeathermoonUnlock));
-      sentinels.AddQuest(new QuestAstranaar(new List<Rectangle> { Regions.AstranaarUnlock, Regions.AuberdineUnlock }));
-      sentinels.AddQuest(new QuestSentinelsKillWarsong(_allLegendSetup.Warsong.Orgrimmar));
-      sentinels.AddQuest(new QuestSentinelsKillFrostwolf(_allLegendSetup.Frostwolf.ThunderBluff));
-      sentinels.AddQuest(new QuestScepterOfTheQueenSentinels(Regions.TheAthenaeum, _artifactSetup.ScepterOfTheQueen, _allLegendSetup.Warsong.StonemaulKeep));
-      sentinels.AddQuest(new QuestVaultoftheWardens(_allLegendSetup.Sentinels.Maiev, _allLegendSetup.Sentinels.VaultOfTheWardens));
-      sentinels.AddQuest(new QuestMaievOutland(Regions.MaievStartUnlock, _allLegendSetup.Sentinels.Maiev, _allLegendSetup.Sentinels.VaultOfTheWardens));
+      StartingQuest = AddQuest(new QuestFeathermoon(Regions.FeathermoonUnlock));
+      AddQuest(new QuestAstranaar(new List<Rectangle> { Regions.AstranaarUnlock, Regions.AuberdineUnlock }));
+      AddQuest(new QuestSentinelsKillWarsong(_allLegendSetup.Warsong.Orgrimmar));
+      AddQuest(new QuestSentinelsKillFrostwolf(_allLegendSetup.Frostwolf.ThunderBluff));
+      AddQuest(new QuestScepterOfTheQueenSentinels(Regions.TheAthenaeum, _artifactSetup.ScepterOfTheQueen, _allLegendSetup.Warsong.StonemaulKeep));
+      AddQuest(new QuestVaultoftheWardens(_allLegendSetup.Sentinels.Maiev, _allLegendSetup.Sentinels.VaultOfTheWardens));
+      AddQuest(new QuestMaievOutland(Regions.MaievStartUnlock, _allLegendSetup.Sentinels.Maiev, _allLegendSetup.Sentinels.VaultOfTheWardens));
     }
 
     private void RegisterDialogue()
@@ -150,7 +150,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
           this
         }, new List<Objective>
         {
-          new ObjectiveLegendReachRect(legendSetup.Sentinels.Maiev, Regions.BrokenIslesA, "the Broken Isles")
+          new ObjectiveLegendReachRect(_allLegendSetup.Sentinels.Maiev, Regions.BrokenIslesA, "the Broken Isles")
         }
       ));
       
@@ -163,7 +163,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
           this
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(legendSetup.Sentinels.Maiev, legendSetup.Sentinels.Tyrande)
+          new ObjectiveLegendMeetsLegend(_allLegendSetup.Sentinels.Maiev, _allLegendSetup.Sentinels.Tyrande)
         }));
     }
     
@@ -200,7 +200,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
           druids
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(legendSetup.Sentinels.Maiev, legendSetup.Druids.Malfurion)
+          new ObjectiveLegendMeetsLegend(_allLegendSetup.Sentinels.Maiev, _allLegendSetup.Druids.Malfurion)
         }));
     }
 
@@ -216,7 +216,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
           illidari
         }, new[]
         {
-          new ObjectiveLegendMeetsLegend(legendSetup.Sentinels.Maiev, legendSetup.Naga.Illidan)
+          new ObjectiveLegendMeetsLegend(_allLegendSetup.Sentinels.Maiev, _allLegendSetup.Naga.Illidan)
         }));
     }
 
@@ -237,7 +237,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
           this
         }, new List<Objective>
         {
-          new ObjectiveLegendMeetsLegend(legendSetup.Sentinels.Tyrande, legendSetup.Legion.Archimonde)
+          new ObjectiveLegendMeetsLegend(_allLegendSetup.Sentinels.Tyrande, _allLegendSetup.Legion.Archimonde)
         }
       ));
     }

@@ -136,19 +136,19 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare to for
 
     private void RegisterQuests()
     {
-      var questHellfireCitadel = FelHorde.AddQuest(new QuestHellfireCitadel(Regions.HellfireUnlock));
-      FelHorde.AddQuest(new QuestRuinsofShadowmoon(Regions.ShadowmoonBaseUnlock));
-      FelHorde.AddQuest(new QuestDarkPortal(
+      var questHellfireCitadel = AddQuest(new QuestHellfireCitadel(Regions.HellfireUnlock));
+      AddQuest(new QuestRuinsofShadowmoon(Regions.ShadowmoonBaseUnlock));
+      AddQuest(new QuestDarkPortal(
         _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_1.Center),
         _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_2.Center),
         _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_3.Center),
         _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_1.Center),
         _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_2.Center),
         _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_3.Center)));
-      FelHorde.AddQuest(new QuestBlackrock(Regions.BlackrockUnlock, Regions.DarkPortalUnlock, new[] { questHellfireCitadel }));
-      FelHorde.AddQuest(new QuestFelHordeKillIronforge(_allLegendSetup.Ironforge.GreatForge));
-      FelHorde.AddQuest(new QuestFelHordeKillStormwind(_allLegendSetup.Stormwind.StormwindKeep));
-      FelHorde.AddQuest(new QuestGuldansLegacy());
+      AddQuest(new QuestBlackrock(Regions.BlackrockUnlock, Regions.DarkPortalUnlock, new[] { questHellfireCitadel }));
+      AddQuest(new QuestFelHordeKillIronforge(_allLegendSetup.Ironforge.GreatForge));
+      AddQuest(new QuestFelHordeKillStormwind(_allLegendSetup.Stormwind.StormwindKeep));
+      AddQuest(new QuestGuldansLegacy());
     }
   }
 }

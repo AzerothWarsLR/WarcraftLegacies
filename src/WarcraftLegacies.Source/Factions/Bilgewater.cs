@@ -111,13 +111,13 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
 
     private void RegisterQuests()
     {
-      goblin.StartingQuest = goblin.AddQuest(new QuestKezan());
-      goblin.AddQuest(new QuestExplosiveEngineering());
-      goblin.AddQuest(new QuestRatchet());
-      goblin.AddQuest(new QuestWesternExpansion(new [] { _allLegendSetup.Sentinels.Auberdine, _allLegendSetup.Sentinels.Feathermoon }));
-      goblin.AddQuest(new QuestLumberMarket(_allLegendSetup.Druids.Nordrassil));
-      goblin.AddQuest(new QuestBusinessExpansion());
-      goblin.AddQuest(new QuestGoblinEmpire());
+      StartingQuest = AddQuest(new QuestKezan());
+      AddQuest(new QuestExplosiveEngineering());
+      AddQuest(new QuestRatchet());
+      AddQuest(new QuestWesternExpansion(new [] { _allLegendSetup.Sentinels.Auberdine, _allLegendSetup.Sentinels.Feathermoon }));
+      AddQuest(new QuestLumberMarket(_allLegendSetup.Druids.Nordrassil));
+      AddQuest(new QuestBusinessExpansion());
+      AddQuest(new QuestGoblinEmpire());
     }
 
     private void RegisterDialogue()

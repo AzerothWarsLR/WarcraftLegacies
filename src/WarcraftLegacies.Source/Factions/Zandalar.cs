@@ -108,14 +108,14 @@ Join up with your allies and brace for a tough fight and counter-attack. ";
     private void RegisterQuests()
     {
       var questZulFarrak = new QuestZulfarrak(Regions.Zulfarrak, _allLegendSetup.Neutral.Zulfarrak, _allLegendSetup.Troll.Zul);
-      zandalar.StartingQuest = questZulFarrak;
-      zandalar.AddQuest(questZulFarrak);
-      zandalar.AddQuest(new QuestZandalar(Regions.ZandalarUnlock, preplacedUnitSystem));
-      zandalar.AddQuest(new QuestGundrak(allLegendSetup));
-      zandalar.AddQuest(new QuestJinthaAlor(allLegendSetup));
-      zandalar.AddQuest(new QuestZulgurub(allLegendSetup));
-      zandalar.AddQuest(new QuestHakkar(_artifactSetup.ZinRokh));
-      zandalar.AddQuest(new QuestZandalarOutpost());
+      StartingQuest = questZulFarrak;
+      AddQuest(questZulFarrak);
+      AddQuest(new QuestZandalar(Regions.ZandalarUnlock, _preplacedUnitSystem));
+      AddQuest(new QuestGundrak(_allLegendSetup));
+      AddQuest(new QuestJinthaAlor(_allLegendSetup));
+      AddQuest(new QuestZulgurub(_allLegendSetup));
+      AddQuest(new QuestHakkar(_artifactSetup.ZinRokh));
+      AddQuest(new QuestZandalarOutpost());
     }
 
     private void RegisterDialogue()

@@ -1,7 +1,6 @@
 ﻿using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.SpellSystem;
-using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Spells;
 using static War3Api.Common;
 

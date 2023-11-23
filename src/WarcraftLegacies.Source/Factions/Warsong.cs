@@ -128,17 +128,17 @@ The Night Elves are aware of your presence and are gathering a mighty host again
 
     private void RegisterQuests()
     {
-      warsong.StartingQuest = warsong.AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
-      warsong.AddQuest(new QuestCrossroads(Regions.Crossroads, preplacedUnitSystem));
-      warsong.AddQuest(new QuestLumberCamp(Regions.LumberCampUnlock, _allLegendSetup.Warsong.GromHellscream));
-      warsong.AddQuest(new QuestChenStormstout(_preplacedUnitSystem.GetUnit(FourCC("Nsjs"))));
-      warsong.AddQuest(new QuestFountainOfBlood(_allLegendSetup.Neutral.FountainOfBlood, _allLegendSetup.Warsong.GromHellscream));
-      warsong.AddQuest(new QuestBloodpact(_allLegendSetup.Warsong.Mannoroth, _allLegendSetup.Warsong.GromHellscream));
-      warsong.AddQuest(new QuestGarrosh(_allLegendSetup.Druids.TempleOfTheMoon));
-      warsong.AddQuest(new QuestWarsongKillDruids(_allLegendSetup.Druids.Nordrassil, _allLegendSetup.Warsong.GromHellscream));
-      warsong.AddQuest(new QuestMoreWyverns(_allLegendSetup.Sentinels.Feathermoon, _allLegendSetup.Sentinels.Auberdine));
-      warsong.AddQuest(new QuestWarsongHold());
-      warsong.AddQuest(new QuestWarsongOutpost());
+      StartingQuest = AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
+      AddQuest(new QuestCrossroads(Regions.Crossroads, _preplacedUnitSystem));
+      AddQuest(new QuestLumberCamp(Regions.LumberCampUnlock, _allLegendSetup.Warsong.GromHellscream));
+      AddQuest(new QuestChenStormstout(_preplacedUnitSystem.GetUnit(FourCC("Nsjs"))));
+      AddQuest(new QuestFountainOfBlood(_allLegendSetup.Neutral.FountainOfBlood, _allLegendSetup.Warsong.GromHellscream));
+      AddQuest(new QuestBloodpact(_allLegendSetup.Warsong.Mannoroth, _allLegendSetup.Warsong.GromHellscream));
+      AddQuest(new QuestGarrosh(_allLegendSetup.Druids.TempleOfTheMoon));
+      AddQuest(new QuestWarsongKillDruids(_allLegendSetup.Druids.Nordrassil, _allLegendSetup.Warsong.GromHellscream));
+      AddQuest(new QuestMoreWyverns(_allLegendSetup.Sentinels.Feathermoon, _allLegendSetup.Sentinels.Auberdine));
+      AddQuest(new QuestWarsongHold());
+      AddQuest(new QuestWarsongOutpost());
     }
 
     private void RegisterDialogue()
@@ -151,14 +151,14 @@ The Night Elves are aware of your presence and are gathering a mighty host again
           this
         }, new List<Objective>
         {
-          new ObjectiveControlLegend(legendSetup.Warsong.GromHellscream, false)
+          new ObjectiveControlLegend(_allLegendSetup.Warsong.GromHellscream, false)
           {
             EligibleFactions = new List<Faction>
             {
               this
             }
           },
-          new ObjectiveControlCapital(legendSetup.Neutral.FountainOfBlood, false)
+          new ObjectiveControlCapital(_allLegendSetup.Neutral.FountainOfBlood, false)
           {
             EligibleFactions = new List<Faction>
             {
@@ -178,7 +178,7 @@ The Night Elves are aware of your presence and are gathering a mighty host again
             this
           }, new[]
           {
-            new ObjectiveControlLegend(legendSetup.Warsong.ChenStormstout, false)
+            new ObjectiveControlLegend(_allLegendSetup.Warsong.ChenStormstout, false)
             {
               EligibleFactions = new List<Faction>{ this }
             }
@@ -194,7 +194,7 @@ The Night Elves are aware of your presence and are gathering a mighty host again
             this
           }, new[]
           {
-            new ObjectiveControlLegend(legendSetup.Warsong.GromHellscream, false)
+            new ObjectiveControlLegend(_allLegendSetup.Warsong.GromHellscream, false)
             {
               EligibleFactions = new List<Faction>{this}
             }

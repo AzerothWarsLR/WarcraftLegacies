@@ -2,6 +2,7 @@
 using MacroTools.FactionSystem;
 using WarcraftLegacies.Source.Quests.Stormwind;
 using WarcraftLegacies.Source.Setup;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
@@ -131,26 +132,25 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
 
     private void RegisterQuests()
     {
-      var stormwind = StormwindSetup.Stormwind;
       var newQuest =
-        stormwind.AddQuest(new QuestDarkshire(_preplacedUnitSystem.GetUnit(FourCC("ngnv"), Regions.DarkshireUnlock.Center)));
-      stormwind.StartingQuest = newQuest;
-      stormwind.AddQuest(new QuestLakeshire(Regions.LakeshireUnlock,
+        AddQuest(new QuestDarkshire(_preplacedUnitSystem.GetUnit(FourCC("ngnv"), Regions.DarkshireUnlock.Center)));
+      StartingQuest = newQuest;
+      AddQuest(new QuestLakeshire(Regions.LakeshireUnlock,
         _preplacedUnitSystem.GetUnit(FourCC("nogl"), new Point(14288, -14063))));
-      stormwind.AddQuest(new QuestGoldshire(Regions.ElwinForestAmbient,
+      AddQuest(new QuestGoldshire(Regions.ElwinForestAmbient,
         _preplacedUnitSystem.GetUnit(Constants.UNIT_N021_HOGGER)));
-      stormwind.AddQuest(new QuestStormwindCity(Regions.StormwindUnlock));
-      stormwind.AddQuest(new QuestNethergarde(preplacedUnitSystem, _allLegendSetup.Stormwind.Varian));
-      stormwind.AddQuest(new QuestStromgarde(Regions.Stromgarde));
-      stormwind.AddQuest(new QuestHonorHold(Regions.HonorHold, _allLegendSetup.FelHorde.HellfireCitadel));
-      stormwind.AddQuest(new QuestKhadgar(_allLegendSetup.FelHorde.BlackTemple));
-      stormwind.AddQuest(new QuestClosePortal(preplacedUnitSystem, _allLegendSetup.Stormwind.Khadgar));
-      stormwind.AddQuest(new QuestConstructionSites(new[]
+      AddQuest(new QuestStormwindCity(Regions.StormwindUnlock));
+      AddQuest(new QuestNethergarde(_preplacedUnitSystem, _allLegendSetup.Stormwind.Varian));
+      AddQuest(new QuestStromgarde(Regions.Stromgarde));
+      AddQuest(new QuestHonorHold(Regions.HonorHold, _allLegendSetup.FelHorde.HellfireCitadel));
+      AddQuest(new QuestKhadgar(_allLegendSetup.FelHorde.BlackTemple));
+      AddQuest(new QuestClosePortal(_preplacedUnitSystem, _allLegendSetup.Stormwind.Khadgar));
+      AddQuest(new QuestConstructionSites(new[]
       {
         _preplacedUnitSystem.GetUnit(Constants.UNIT_H053_CONSTRUCTION_SITE_STORMWIND_WIZARD_S_SANCTUM),
         _preplacedUnitSystem.GetUnit(Constants.UNIT_H055_CONSTRUCTION_SITE_STORMWIND_CHAMPION_S_HALL)
       }));
-      stormwind.AddQuest(new QuestKingdomOfManStormwind(_artifactSetup.CrownOfLordaeron, _artifactSetup.CrownOfStormwind,
+      AddQuest(new QuestKingdomOfManStormwind(_artifactSetup.CrownOfLordaeron, _artifactSetup.CrownOfStormwind,
         _allLegendSetup.Stormwind.Varian));
     }
 

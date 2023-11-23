@@ -113,15 +113,15 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
 
     private void RegisterQuests()
     {
-      var newQuest = sunfury.AddQuest(new QuestTempestKeep(Regions.TempestKeep, Regions.Biodome1, Regions.Biodome2, Regions.Biodome3));
-      sunfury.StartingQuest = newQuest;
+      var newQuest = AddQuest(new QuestTempestKeep(Regions.TempestKeep, Regions.Biodome1, Regions.Biodome2, Regions.Biodome3));
+      StartingQuest = newQuest;
 
-      sunfury.AddQuest(new QuestArea52(Regions.Area52Unlock));
-      sunfury.AddQuest(new QuestUpperNetherstorm(Regions.UpperNetherstorm));
-      sunfury.AddQuest(new QuestSolarian(_artifactSetup.EssenceofMurmur));
-      sunfury.AddQuest(new QuestSummonKil(_allLegendSetup.Stormwind.StormwindKeep, _allLegendSetup.Neutral.Karazhan, _allLegendSetup.Quelthalas.Kael));
-      sunfury.AddQuest(new QuestForgottenKnowledge());
-      sunfury.AddQuest(new QuestWellOfEternity(preplacedUnitSystem, _allLegendSetup.Quelthalas.Kiljaeden));
+      AddQuest(new QuestArea52(Regions.Area52Unlock));
+      AddQuest(new QuestUpperNetherstorm(Regions.UpperNetherstorm));
+      AddQuest(new QuestSolarian(_artifactSetup.EssenceofMurmur));
+      AddQuest(new QuestSummonKil(_allLegendSetup.Stormwind.StormwindKeep, _allLegendSetup.Neutral.Karazhan, _allLegendSetup.Quelthalas.Kael));
+      AddQuest(new QuestForgottenKnowledge());
+      AddQuest(new QuestWellOfEternity(_preplacedUnitSystem, _allLegendSetup.Quelthalas.Kiljaeden));
     }
 
     private void RegisterDialogue()

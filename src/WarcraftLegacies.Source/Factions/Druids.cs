@@ -129,18 +129,18 @@ Gather your forces and strike before the Horde can organize their efforts.";
 
     private void RegisterQuests()
     {
-      var newQuest = druids.AddQuest(new QuestMalfurionAwakens(Regions.MoongladeVillage, Regions.TeldrassilUnlock, Regions.CenarionHoldUnlock,
+      var newQuest = AddQuest(new QuestMalfurionAwakens(Regions.MoongladeVillage, Regions.TeldrassilUnlock, Regions.CenarionHoldUnlock,
         _allLegendSetup.Druids.Nordrassil.Unit, _artifactSetup.HornOfCenarius,
         _allLegendSetup.Druids.Malfurion));
-      druids.StartingQuest = newQuest;
-      druids.AddQuest(new QuestShrineBase(Regions.ShrineBaseUnlock));
-      druids.AddQuest(new QuestRiseBase(Regions.RiseBaseUnlock));
-      druids.AddQuest(new QuestAshenvale(Regions.AshenvaleUnlock));
-      druids.AddQuest(new QuestDruidsKillFrostwolf(_allLegendSetup.Frostwolf.ThunderBluff));
-      druids.AddQuest(new QuestDruidsKillWarsong());
-      druids.AddQuest(new QuestAndrassil(_allLegendSetup.Druids.Vordrassil, _allLegendSetup.Druids.Ursoc));
-      druids.AddQuest(new QuestShaladrassil(_allLegendSetup.Neutral.Shaladrassil));
-      druids.AddQuest(new QuestTortolla(_allLegendSetup.Druids.Tortolla));
+      StartingQuest = newQuest;
+      AddQuest(new QuestShrineBase(Regions.ShrineBaseUnlock));
+      AddQuest(new QuestRiseBase(Regions.RiseBaseUnlock));
+      AddQuest(new QuestAshenvale(Regions.AshenvaleUnlock));
+      AddQuest(new QuestDruidsKillFrostwolf(_allLegendSetup.Frostwolf.ThunderBluff));
+      AddQuest(new QuestDruidsKillWarsong());
+      AddQuest(new QuestAndrassil(_allLegendSetup.Druids.Vordrassil, _allLegendSetup.Druids.Ursoc));
+      AddQuest(new QuestShaladrassil(_allLegendSetup.Neutral.Shaladrassil));
+      AddQuest(new QuestTortolla(_allLegendSetup.Druids.Tortolla));
     }
 
     private void RegisterDialogue()

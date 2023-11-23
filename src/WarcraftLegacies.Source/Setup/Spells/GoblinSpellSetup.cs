@@ -2,7 +2,6 @@
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.FactionMechanics.Goblins;
-using WarcraftLegacies.Source.Setup.FactionSetup;
 using WarcraftLegacies.Source.Spells;
 
 namespace WarcraftLegacies.Source.Setup.Spells

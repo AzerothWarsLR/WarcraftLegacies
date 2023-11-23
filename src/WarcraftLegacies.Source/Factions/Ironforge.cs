@@ -127,14 +127,13 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
 
     private void RegisterQuests()
     {
-      var ironforge = IronforgeSetup.Ironforge;
-      var newQuest = ironforge.AddQuest(new QuestThelsamar(preplacedUnitSystem, Regions.ThelUnlock));
-      ironforge.StartingQuest = newQuest;
-      ironforge.AddQuest(new QuestDunMorogh(preplacedUnitSystem));
-      ironforge.AddQuest(new QuestDominion(Regions.IronforgeAmbient));
-      ironforge.AddQuest(new QuestGnomeregan(Regions.Gnomergan, preplacedUnitSystem));
-      ironforge.AddQuest(new QuestDarkIron(Regions.Shadowforge_City, _allLegendSetup.FelHorde.BlackTemple, _allLegendSetup.Ironforge.Magni));
-      ironforge.AddQuest(new QuestWildhammer(_allLegendSetup.Ironforge.Magni));
+      var newQuest = AddQuest(new QuestThelsamar(_preplacedUnitSystem, Regions.ThelUnlock));
+      StartingQuest = newQuest;
+      AddQuest(new QuestDunMorogh(_preplacedUnitSystem));
+      AddQuest(new QuestDominion(Regions.IronforgeAmbient));
+      AddQuest(new QuestGnomeregan(Regions.Gnomergan, _preplacedUnitSystem));
+      AddQuest(new QuestDarkIron(Regions.Shadowforge_City, _allLegendSetup.FelHorde.BlackTemple, _allLegendSetup.Ironforge.Magni));
+      AddQuest(new QuestWildhammer(_allLegendSetup.Ironforge.Magni));
 
       var missingArtifacts = new int[]
       {
@@ -144,7 +143,7 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
         Constants.ITEM_I015_XAL_ATATH_BLADE_OF_THE_BLACK_EMPIRE,
         Constants.ITEM_I01T_FANDRAL_S_FLAMESCYTHE
       };
-      ironforge.AddQuest(new QuestExpedition(missingArtifacts[GetRandomInt(0, missingArtifacts.Length - 1)]));
+      AddQuest(new QuestExpedition(missingArtifacts[GetRandomInt(0, missingArtifacts.Length - 1)]));
     }
 
     private void RegisterDialogue()

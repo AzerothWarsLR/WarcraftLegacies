@@ -11,6 +11,7 @@ using WarcraftLegacies.Source.FactionMechanics.Scourge;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.GameModes;
+using WarcraftLegacies.Source.Setup.QuestSetup;
 using WarcraftLegacies.Source.UnitTypes;
 using static War3Api.Common;
 
@@ -43,7 +44,7 @@ namespace WarcraftLegacies.Source.Setup
       new PlayerSetup(preplacedUnitSystem, allLegendSetup, artifactSetup).Setup();
       FactionChoiceDialogSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       NeutralHostileSetup.Setup();
-      AllQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
+      SharedQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       ObserverSetup.Setup(new[] { Player(21) });
       SpellsSetup.Setup();
       var commandManager = new CommandManager();
