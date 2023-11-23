@@ -11,7 +11,6 @@ using WarcraftLegacies.Source.FactionMechanics.Scourge;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.GameModes;
-using WarcraftLegacies.Source.Setup.QuestSetup;
 using WarcraftLegacies.Source.UnitTypes;
 using static War3Api.Common;
 
@@ -55,7 +54,6 @@ namespace WarcraftLegacies.Source.Setup
       QuestMenuSetup.Setup();
       GameTime.Start();
       CheatSetup.Setup(commandManager);
-      DialogueSetup.Setup(preplacedUnitSystem, allLegendSetup);
       MapFlagSetup.Setup();
       InfoQuests.Setup();
       DestructibleSetup.Setup(preplacedUnitSystem);

@@ -2,7 +2,6 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WarcraftLegacies.Source.Factions;
-using WarcraftLegacies.Source.Setup.FactionSetup;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup
@@ -22,83 +21,29 @@ namespace WarcraftLegacies.Source.Setup
     
     public void Setup()
     {
-      Player(1).SetFaction(StormwindSetup.Stormwind);
-      Player(1).SetTeam(TeamSetup.SouthAlliance);
-      
-      SetupFrostwolf(Player(0));
-      SetupQuelthalas(Player(2));
-      SetupScourge(Player(3));
-
-      Player(4).SetFaction(IronforgeSetup.Ironforge);
-      Player(4).SetTeam(TeamSetup.SouthAlliance);
-
-      Player(5).SetFaction(WarsongSetup.WarsongClan);
-      Player(5).SetTeam(TeamSetup.Horde);
-
-      Player(6).SetFaction(FelHordeSetup.FelHorde);
-      Player(6).SetTeam(TeamSetup.Outland);
-
+      SetupPlayer(Player(0), new Frostwolf(_preplacedUnitSystem, _allLegendSetup, _artifactSetup), TeamSetup.Horde);
+      SetupPlayer(Player(1), new Lordaeron(_preplacedUnitSystem, _allLegendSetup, _artifactSetup), TeamSetup.NorthAlliance);
+      SetupPlayer(Player(2), new Quelthalas(_preplacedUnitSystem, _allLegendSetup), TeamSetup.NorthAlliance);
+      SetupPlayer(Player(3), new Scourge(_preplacedUnitSystem, _allLegendSetup, _artifactSetup), TeamSetup.Legion);
+      SetupPlayer(Player(4), new Ironforge(_preplacedUnitSystem, _allLegendSetup, _artifactSetup), TeamSetup.SouthAlliance);
+      SetupPlayer(Player(5), new Warsong(_preplacedUnitSystem, _allLegendSetup, _artifactSetup), TeamSetup.Horde);
+      SetupPlayer(Player(6), new FelHorde(_preplacedUnitSystem, _allLegendSetup, _artifactSetup), TeamSetup.Outland);
       Player(7).SetTeam(TeamSetup.NorthAlliance);
-      
       Player(8).SetTeam(TeamSetup.Horde);
-
-      SetupLordaeron(Player(9));
-      
-      Player(11).SetFaction(DruidsSetup.Druids);
-      Player(11).SetTeam(TeamSetup.NightElves);
-
-      Player(13).SetFaction(DraeneiSetup.Draenei);
-      Player(13).SetTeam(TeamSetup.NightElves);
-
-      Player(18).SetFaction(SentinelsSetup.Sentinels);
-      Player(18).SetTeam(TeamSetup.NightElves);
-      
+      SetupPlayer(Player(9), new Lordaeron(_preplacedUnitSystem, _allLegendSetup, _artifactSetup), TeamSetup.NorthAlliance);
+      SetupPlayer(Player(11), new Druids(_preplacedUnitSystem, _allLegendSetup, _artifactSetup), TeamSetup.NightElves);
+      SetupPlayer(Player(13), new Draenei(_preplacedUnitSystem, _allLegendSetup, _artifactSetup), TeamSetup.NightElves);
+      SetupPlayer(Player(18), new Sentinels(_preplacedUnitSystem, _allLegendSetup, _artifactSetup), TeamSetup.NightElves);
       Player(15).SetTeam(TeamSetup.Outland);
-
-      SetupKultiras(Player(22));
-      SetupLegion(Player(23));
+      SetupPlayer(Player(22), new Kultiras(_preplacedUnitSystem, _allLegendSetup), TeamSetup.SouthAlliance);
+      SetupPlayer(Player(23), new Legion(_preplacedUnitSystem, _allLegendSetup), TeamSetup.Legion);
     }
 
-    private void SetupFrostwolf(player whichPlayer)
+    private static void SetupPlayer(player player, Faction faction, Team northAlliance)
     {
-      var frostwolf = FactionManager.Register(new Frostwolf(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
-      whichPlayer.SetFaction(frostwolf);
-      whichPlayer.SetTeam(TeamSetup.Horde);
-    }
-    
-    private void SetupQuelthalas(player whichPlayer)
-    {
-      var quelthalas = FactionManager.Register(new Quelthalas(_preplacedUnitSystem, _allLegendSetup));
-      whichPlayer.SetFaction(quelthalas);
-      whichPlayer.SetTeam(TeamSetup.NorthAlliance);
-    }
-    
-    private void SetupScourge(player whichPlayer)
-    {
-      var scourge = FactionManager.Register(new Scourge(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
-      whichPlayer.SetFaction(scourge);
-      whichPlayer.SetTeam(TeamSetup.Legion);
-    }
-    
-    private void SetupLordaeron(player whichPlayer)
-    {
-      var lordaeron = FactionManager.Register(new Lordaeron(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
-      whichPlayer.SetFaction(lordaeron);
-      whichPlayer.SetTeam(TeamSetup.NorthAlliance);
-    }
-    
-    private void SetupKultiras(player whichPlayer)
-    {
-      var kultiras = FactionManager.Register(new Kultiras(_preplacedUnitSystem, _allLegendSetup));
-      whichPlayer.SetFaction(kultiras);
-      whichPlayer.SetTeam(TeamSetup.SouthAlliance);
-    }
-    
-    private void SetupLegion(player whichPlayer)
-    {
-      var legion = FactionManager.Register(new Legion(_preplacedUnitSystem, _allLegendSetup));
-      whichPlayer.SetFaction(legion);
-      whichPlayer.SetTeam(TeamSetup.Legion);
+      FactionManager.Register(faction);
+      player.SetFaction(faction);
+      player.SetTeam(northAlliance);
     }
   }
 }

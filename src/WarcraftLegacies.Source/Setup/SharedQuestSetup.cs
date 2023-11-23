@@ -7,7 +7,7 @@ using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Quests;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Setup.QuestSetup
+namespace WarcraftLegacies.Source.Setup
 {
   /// <summary>
   /// Responsible for setting up all shared <see cref="QuestData"/>s.

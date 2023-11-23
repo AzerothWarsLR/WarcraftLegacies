@@ -87,7 +87,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         {
           var lordaeronPlayer = LordaeronSetup.Lordaeron.Player;
           if (lordaeronPlayer.GetTeam()?.Contains(GetOwningPlayer(GetTriggerUnit())) == true){
-          return;
+            return;
           }
           Terenas.Unit.Kill();
           SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,
