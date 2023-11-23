@@ -47,6 +47,7 @@ Gather your forces and strike before the Horde can organize their efforts.";
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9200, 10742))
       };
       RegisterFactionDependentInitializer<Sentinels>(RegisterSentinelsDialogue);
+      RegisterFactionDependentInitializer<Scourge>(RegisterScourgeQuests);
     }
 
     /// <inheritdoc />
@@ -138,7 +139,6 @@ Gather your forces and strike before the Horde can organize their efforts.";
       AddQuest(new QuestAshenvale(Regions.AshenvaleUnlock));
       AddQuest(new QuestDruidsKillFrostwolf(_allLegendSetup.Frostwolf.ThunderBluff));
       AddQuest(new QuestDruidsKillWarsong());
-      AddQuest(new QuestAndrassil(_allLegendSetup.Druids.Vordrassil, _allLegendSetup.Druids.Ursoc));
       AddQuest(new QuestShaladrassil(_allLegendSetup.Neutral.Shaladrassil));
       AddQuest(new QuestTortolla(_allLegendSetup.Druids.Tortolla));
     }
@@ -236,7 +236,11 @@ Gather your forces and strike before the Horde can organize their efforts.";
             }
           }
         }));
-
+    }
+    
+    private void RegisterScourgeQuests(Scourge scourge)
+    {
+      AddQuest(new QuestAndrassil(_allLegendSetup.Druids.Vordrassil, _allLegendSetup.Druids.Ursoc, scourge));
     }
   }
 }

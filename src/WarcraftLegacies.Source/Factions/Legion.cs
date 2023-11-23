@@ -46,6 +46,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       RegisterFactionDependentInitializer<Frostwolf>(RegisterFrostwolfDialogue);
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeQuests);
+      RegisterFactionDependentInitializer<Druids>(RegisterDruidsRelatedQuests);
     }
 
     /// <inheritdoc />
@@ -137,7 +138,6 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       AddQuest(new QuestLegionCaptureSunwell(_allLegendSetup.Quelthalas.Sunwell));
       AddQuest(new QuestLegionKillLordaeron(_allLegendSetup.Lordaeron.CapitalPalace, _allLegendSetup.Lordaeron.Stratholme, _allLegendSetup.Legion.Tichondrius));
       AddQuest(new QuestSummonLegion(Regions.TwistingNether,_preplacedUnitSystem.GetUnit(Constants.UNIT_N03C_DEMON_PORTAL_NETHER)));
-      AddQuest(new QuestConsumeTree(_allLegendSetup.Legion.Archimonde));
     }
 
     private void RegisterDialogue()
@@ -246,6 +246,11 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
     private void RegisterScourgeQuests(Scourge scourge)
     {
       AddQuest(new QuestCunningPlan(Regions.AlteracAmbient, scourge));
+    }
+    
+    private void RegisterDruidsRelatedQuests(Druids druids)
+    {
+      AddQuest(new QuestConsumeTree(_allLegendSetup.Legion.Archimonde, druids));
     }
   }
 }
