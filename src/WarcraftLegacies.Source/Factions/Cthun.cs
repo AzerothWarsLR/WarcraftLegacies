@@ -12,5 +12,29 @@ namespace WarcraftLegacies.Source.Factions
       @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
     {
     }
+    
+        
+    /// <inheritdoc />
+    public override void OnRegistered()
+    {
+      RegisterObjectLimits();
+      RegisterQuests();
+      RegisterDialogue();
+    }
+
+    private void RegisterObjectLimits()
+    {
+      throw new System.NotImplementedException();
+    }
+
+    private void RegisterQuests()
+    {
+      throw new System.NotImplementedException();
+    }
+
+    private void RegisterDialogue()
+    {
+      throw new System.NotImplementedException();
+    }
   }
 }
