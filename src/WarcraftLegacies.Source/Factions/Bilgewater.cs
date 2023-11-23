@@ -6,6 +6,7 @@ using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.Powers;
+using WarcraftLegacies.Source.Quests.Goblin;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -110,7 +111,13 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
 
     private void RegisterQuests()
     {
-      throw new System.NotImplementedException();
+      goblin.StartingQuest = goblin.AddQuest(new QuestKezan());
+      goblin.AddQuest(new QuestExplosiveEngineering());
+      goblin.AddQuest(new QuestRatchet());
+      goblin.AddQuest(new QuestWesternExpansion(new [] { allLegendSetup.Sentinels.Auberdine, allLegendSetup.Sentinels.Feathermoon }));
+      goblin.AddQuest(new QuestLumberMarket(allLegendSetup.Druids.Nordrassil));
+      goblin.AddQuest(new QuestBusinessExpansion());
+      goblin.AddQuest(new QuestGoblinEmpire());
     }
 
     private void RegisterDialogue()

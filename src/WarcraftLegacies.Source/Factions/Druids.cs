@@ -7,6 +7,7 @@ using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using WarcraftLegacies.Source.Powers;
+using WarcraftLegacies.Source.Quests.Druids;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -128,7 +129,18 @@ Gather your forces and strike before the Horde can organize their efforts.";
 
     private void RegisterQuests()
     {
-      throw new System.NotImplementedException();
+      var newQuest = druids.AddQuest(new QuestMalfurionAwakens(Regions.MoongladeVillage, Regions.TeldrassilUnlock, Regions.CenarionHoldUnlock,
+        allLegendSetup.Druids.Nordrassil.Unit, artifactSetup.HornOfCenarius,
+        allLegendSetup.Druids.Malfurion));
+      druids.StartingQuest = newQuest;
+      druids.AddQuest(new QuestShrineBase(Regions.ShrineBaseUnlock));
+      druids.AddQuest(new QuestRiseBase(Regions.RiseBaseUnlock));
+      druids.AddQuest(new QuestAshenvale(Regions.AshenvaleUnlock));
+      druids.AddQuest(new QuestDruidsKillFrostwolf(allLegendSetup.Frostwolf.ThunderBluff));
+      druids.AddQuest(new QuestDruidsKillWarsong());
+      druids.AddQuest(new QuestAndrassil(allLegendSetup.Druids.Vordrassil, allLegendSetup.Druids.Ursoc));
+      druids.AddQuest(new QuestShaladrassil(allLegendSetup.Neutral.Shaladrassil));
+      druids.AddQuest(new QuestTortolla(allLegendSetup.Druids.Tortolla));
     }
 
     private void RegisterDialogue()

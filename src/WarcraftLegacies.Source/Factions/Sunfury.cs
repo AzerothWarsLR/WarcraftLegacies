@@ -3,6 +3,8 @@ using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
+using WarcraftLegacies.Source.Quests.Quelthalas;
+using WarcraftLegacies.Source.Quests.Sunfury;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -111,7 +113,15 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
 
     private void RegisterQuests()
     {
-      throw new System.NotImplementedException();
+      var newQuest = sunfury.AddQuest(new QuestTempestKeep(Regions.TempestKeep, Regions.Biodome1, Regions.Biodome2, Regions.Biodome3));
+      sunfury.StartingQuest = newQuest;
+
+      sunfury.AddQuest(new QuestArea52(Regions.Area52Unlock));
+      sunfury.AddQuest(new QuestUpperNetherstorm(Regions.UpperNetherstorm));
+      sunfury.AddQuest(new QuestSolarian(artifactSetup.EssenceofMurmur));
+      sunfury.AddQuest(new QuestSummonKil(allLegendSetup.Stormwind.StormwindKeep, allLegendSetup.Neutral.Karazhan, allLegendSetup.Quelthalas.Kael));
+      sunfury.AddQuest(new QuestForgottenKnowledge());
+      sunfury.AddQuest(new QuestWellOfEternity(preplacedUnitSystem, allLegendSetup.Quelthalas.Kiljaeden));
     }
 
     private void RegisterDialogue()

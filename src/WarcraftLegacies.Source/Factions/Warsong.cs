@@ -4,6 +4,7 @@ using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using WarcraftLegacies.Source.Quests.Warsong;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -127,7 +128,17 @@ The Night Elves are aware of your presence and are gathering a mighty host again
 
     private void RegisterQuests()
     {
-      throw new System.NotImplementedException();
+      warsong.StartingQuest = warsong.AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
+      warsong.AddQuest(new QuestCrossroads(Regions.Crossroads, preplacedUnitSystem));
+      warsong.AddQuest(new QuestLumberCamp(Regions.LumberCampUnlock, allLegendSetup.Warsong.GromHellscream));
+      warsong.AddQuest(new QuestChenStormstout(preplacedUnitSystem.GetUnit(FourCC("Nsjs"))));
+      warsong.AddQuest(new QuestFountainOfBlood(allLegendSetup.Neutral.FountainOfBlood, allLegendSetup.Warsong.GromHellscream));
+      warsong.AddQuest(new QuestBloodpact(allLegendSetup.Warsong.Mannoroth, allLegendSetup.Warsong.GromHellscream));
+      warsong.AddQuest(new QuestGarrosh(allLegendSetup.Druids.TempleOfTheMoon));
+      warsong.AddQuest(new QuestWarsongKillDruids(allLegendSetup.Druids.Nordrassil, allLegendSetup.Warsong.GromHellscream));
+      warsong.AddQuest(new QuestMoreWyverns(allLegendSetup.Sentinels.Feathermoon, allLegendSetup.Sentinels.Auberdine));
+      warsong.AddQuest(new QuestWarsongHold());
+      warsong.AddQuest(new QuestWarsongOutpost());
     }
 
     private void RegisterDialogue()

@@ -1,6 +1,9 @@
-﻿using MacroTools;
+﻿using System.Linq;
+using MacroTools;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Powers;
+using WarcraftLegacies.Source.Quests.Draenei;
 using WarcraftLegacies.Source.Setup;
 using static War3Api.Common;
 
@@ -92,7 +95,27 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
 
     private void RegisterQuests()
     {
-      throw new System.NotImplementedException();
+      var draenei = DraeneiSetup.Draenei;
+      if (draenei == null) 
+        return;
+      var questRepairHull = new QuestRepairExodarHull(Regions.ExodarBaseUnlock, allLegendSetup.Draenei.LegendExodar);
+      draenei.StartingQuest = questRepairHull;
+      draenei.AddQuest(questRepairHull);
+      draenei.AddQuest(new QuestRebuildCivilisation(Regions.DesolaceUnlock, allLegendSetup.Draenei.Velen));
+      draenei.AddQuest(new QuestShipArgus(
+        preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.OutlandToArgus.Center),
+        preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center),
+        allLegendSetup.Draenei.Velen
+      ));
+      var crystalProtectors = CreateGroup()
+        .EnumUnitsInRect(Regions.ExodarBaseUnlock.Rect)
+        .EmptyToList()
+        .Where(x => GetUnitTypeId(x) == Constants.UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER);
+      var questRepairGenerator = new QuestRepairGenerator(allLegendSetup.Draenei.LegendExodarGenerator, questRepairHull, crystalProtectors);
+      draenei.AddQuest(questRepairGenerator);
+      draenei.AddQuest(new QuestTriumvirate(allLegendSetup.Draenei.Velen));
+      var questDimensionalShip = new QuestDimensionalShip(Regions.ExodarBaseUnlock, questRepairGenerator, allLegendSetup.Draenei.LegendExodarGenerator);
+      draenei.AddQuest(questDimensionalShip);
     }
 
     private void RegisterPowers()

@@ -3,6 +3,7 @@ using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
+using WarcraftLegacies.Source.Quests.Zandalar;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -106,7 +107,15 @@ Join up with your allies and brace for a tough fight and counter-attack. ";
 
     private void RegisterQuests()
     {
-      throw new System.NotImplementedException();
+      var questZulFarrak = new QuestZulfarrak(Regions.Zulfarrak, allLegendSetup.Neutral.Zulfarrak, allLegendSetup.Troll.Zul);
+      zandalar.StartingQuest = questZulFarrak;
+      zandalar.AddQuest(questZulFarrak);
+      zandalar.AddQuest(new QuestZandalar(Regions.ZandalarUnlock, preplacedUnitSystem));
+      zandalar.AddQuest(new QuestGundrak(allLegendSetup));
+      zandalar.AddQuest(new QuestJinthaAlor(allLegendSetup));
+      zandalar.AddQuest(new QuestZulgurub(allLegendSetup));
+      zandalar.AddQuest(new QuestHakkar(artifactSetup.ZinRokh));
+      zandalar.AddQuest(new QuestZandalarOutpost());
     }
 
     private void RegisterDialogue()

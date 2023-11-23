@@ -7,6 +7,7 @@ using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.Powers;
 using WarcraftLegacies.Source.Powers;
+using WarcraftLegacies.Source.Quests.Sentinels;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -118,7 +119,13 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
 
     private void RegisterQuests()
     {
-      throw new System.NotImplementedException();
+      sentinels.StartingQuest = sentinels.AddQuest(new QuestFeathermoon(Regions.FeathermoonUnlock));
+      sentinels.AddQuest(new QuestAstranaar(new List<Rectangle> { Regions.AstranaarUnlock, Regions.AuberdineUnlock }));
+      sentinels.AddQuest(new QuestSentinelsKillWarsong(allLegendSetup.Warsong.Orgrimmar));
+      sentinels.AddQuest(new QuestSentinelsKillFrostwolf(allLegendSetup.Frostwolf.ThunderBluff));
+      sentinels.AddQuest(new QuestScepterOfTheQueenSentinels(Regions.TheAthenaeum, artifactSetup.ScepterOfTheQueen, allLegendSetup.Warsong.StonemaulKeep));
+      sentinels.AddQuest(new QuestVaultoftheWardens(allLegendSetup.Sentinels.Maiev, allLegendSetup.Sentinels.VaultOfTheWardens));
+      sentinels.AddQuest(new QuestMaievOutland(Regions.MaievStartUnlock, allLegendSetup.Sentinels.Maiev, allLegendSetup.Sentinels.VaultOfTheWardens));
     }
 
     private void RegisterDialogue()
