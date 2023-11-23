@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 using MacroTools;
+using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.Powers;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
@@ -113,7 +115,21 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
 
     private void RegisterDialogue()
     {
-      throw new System.NotImplementedException();
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
+            @"Sound\Dialogue\OrcExpCamp\OrcQuest03x\D03Gazlowe01",
+            "Ah, new guy, huh? I'm Gazlowe, chief engineer around these parts. But enough about me. We got work to do, buddy!",
+            "Gazlowe")
+          , new[]
+          {
+            this
+          }, new[]
+          {
+            new ObjectiveControlLegend(_allLegendSetup.Goblin.Gazlowe, false)
+            {
+              EligibleFactions = new List<Faction>{ this }
+            }
+          }));
     }
     
     private void RegisterPowers()

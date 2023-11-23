@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
 using MacroTools;
+using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -129,7 +132,62 @@ The Night Elves are aware of your presence and are gathering a mighty host again
 
     private void RegisterDialogue()
     {
-      throw new System.NotImplementedException();
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\OrcCampaign\Orc05\O05Grom26.flac",
+          "Yes! I feel the power once again! Come, my warriors; drink from the dark waters, and you will be reborn!",
+          "Grom Hellscream"), new[]
+        {
+          this
+        }, new List<Objective>
+        {
+          new ObjectiveControlLegend(legendSetup.Warsong.GromHellscream, false)
+          {
+            EligibleFactions = new List<Faction>
+            {
+              this
+            }
+          },
+          new ObjectiveControlCapital(legendSetup.Neutral.FountainOfBlood, false)
+          {
+            EligibleFactions = new List<Faction>
+            {
+              this
+            }
+          }
+        }
+      ));
+      
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
+            @"Sound\Dialogue\OrcExpCamp\RandomOrcQuest02x\DR02Chen01",
+            "Ah, greetings, my friend. I am Chen Stormstout, humble brewmaster of Pandaria. I have traveled the wide world searching for rare, exotic ingredients to use in my special brew! After all, good ale can solve all the problems of this world, don't you agree?",
+            "Chen Stormstout")
+          , new[]
+          {
+            this
+          }, new[]
+          {
+            new ObjectiveControlLegend(legendSetup.Warsong.ChenStormstout, false)
+            {
+              EligibleFactions = new List<Faction>{ this }
+            }
+          }));
+      
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new DialogueSequence(new MacroTools.DialogueSystem.Dialogue(
+              @"Sound\Dialogue\OrcCampaign\Orc04\O04Grom01",
+              "Damn Thrall for sending us away! He chooses to use his greatest warriors for manual labor? He'll be lost without me.",
+              "Grom Hellscream"))
+          , new[]
+          {
+            this
+          }, new[]
+          {
+            new ObjectiveControlLegend(legendSetup.Warsong.GromHellscream, false)
+            {
+              EligibleFactions = new List<Faction>{this}
+            }
+          }));
     }
   }
 }

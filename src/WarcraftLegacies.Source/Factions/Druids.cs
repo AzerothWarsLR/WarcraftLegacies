@@ -1,7 +1,11 @@
 ﻿using System.Collections.Generic;
 using MacroTools;
+using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
@@ -41,8 +45,9 @@ Gather your forces and strike before the Horde can organize their efforts.";
       {
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9200, 10742))
       };
+      RegisterFactionDependentInitializer<Sentinels>(RegisterSentinelsDialogue);
     }
-    
+
     /// <inheritdoc />
     public override void OnRegistered()
     {
@@ -128,7 +133,39 @@ Gather your forces and strike before the Horde can organize their efforts.";
 
     private void RegisterDialogue()
     {
-      throw new System.NotImplementedException();
+      TriggeredDialogueManager.Add(new TriggeredDialogue(new DialogueSequence(
+          new MacroTools.DialogueSystem.Dialogue(
+            @"Sound\Dialogue\NightElfCampaign\NightElf04\N04Satyr29",
+            "Come no further, weakling!  Lord Tichondrius commanded us to kill anyone attempting to enter this place, and we shall.",
+            "Satyr"),
+          new MacroTools.DialogueSystem.Dialogue(
+            @"Sound\Dialogue\NightElfCampaign\NightElf04\N04Furion30",
+            "Patches wretches! It pains me that you once called yourselves Night Elves.",
+            "Malfurion Stormrage")
+        ), 
+        new[] { this },
+        new Objective[]
+        {
+          new ObjectiveUnitAlive(preplacedUnitSystem.GetUnit(Constants.UNIT_NSTH_SATYR_HELLCALLER, Regions.SatyrCamp.Center)),
+          new ObjectiveLegendInRect(legendSetup.Druids.Malfurion, Regions.SatyrCamp, "Satyr camp")
+        }));
+      
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new MacroTools.DialogueSystem.Dialogue(
+          @"Sound\Dialogue\NightElfCampaign\NightElf03\N03Furion22",
+          "The horn has sounded, and I have come as promised! I smell the stench of decay and corruption in our land. That angers me greatly.",
+          "Malfurion Stormrage"),
+        new[] { this },
+        new Objective[]
+        {
+          new ObjectiveControlLegend(legendSetup.Druids.Malfurion, false)
+          {
+            EligibleFactions = new List<Faction>
+            {
+              this
+            }
+          }
+        }));
     }
     
     private void RegisterPowers()
@@ -146,6 +183,48 @@ Gather your forces and strike before the Horde can organize their efforts.";
         Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
         ResearchId = Constants.UPGRADE_YB01_IMMORTALITY_POWER_IS_ACTIVE
       });
+    }
+    
+    private void RegisterSentinelsDialogue(Sentinels sentinels)
+    {
+      TriggeredDialogueManager.Add(new TriggeredDialogue(new DialogueSequence(
+          new MacroTools.DialogueSystem.Dialogue(
+            @"Sound\Dialogue\NightElfCampaign\NightElf04\N04Furion01",
+            "It has been a thousand years since I last looked up you, Tyrande. I thought of you every moment I roamed through the Emerald Dream.",
+            "Malfurion Stormrage"), 
+          new MacroTools.DialogueSystem.Dialogue(
+            @"Sound\Dialogue\NightElfCampaign\NightElf04\N04Tyrande02",
+            "My heart rejoices to see you again, Furion. But I would not have awakened you unless the need was urgent.",
+            "Tyrande Whisperwind"), 
+          new MacroTools.DialogueSystem.Dialogue(
+            @"Sound\Dialogue\NightElfCampaign\NightElf04\N04Furion03",
+            "In the Dream, I felt our land being corrupted, just as if it were my own body. You were right to awaken me.",
+            "Malfurion Stormrage")
+        ), 
+        new Faction[] { this, sentinels },
+        new[] { new ObjectiveLegendMeetsLegend(legendSetup.Druids.Malfurion, legendSetup.Sentinels.Tyrande) }));
+
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
+          @"Sound\Dialogue\OrcCampaign\Orc05\O05Cenarius01",
+          "Who dares defile this ancient land? Who dares the wrath of Cenarius and the Night Elves?",
+          "Cenarius"), new Faction[]
+        {
+          sentinels,
+          this,
+          frostwolf,
+          warsong
+        }, new[]
+        {
+          new ObjectiveControlLegend(legendSetup.Druids.Cenarius, false)
+          {
+            EligibleFactions = new List<Faction>
+            {
+              this
+            }
+          }
+        }));
+
     }
   }
 }

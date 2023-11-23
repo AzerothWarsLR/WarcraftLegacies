@@ -1,7 +1,10 @@
 ﻿using System.Collections.Generic;
 using MacroTools;
+using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.Powers;
 using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Setup;
@@ -39,8 +42,11 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       {
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-22721, -13570))
       };
+      RegisterFactionDependentInitializer<Druids>(RegisterDruidsDialogue);
+      RegisterFactionDependentInitializer<Illidari>(RegisterIlliariDialogue);
+      RegisterFactionDependentInitializer<Legion>(RegisterLegionDialogue);
     }
-        
+
     /// <inheritdoc />
     public override void OnRegistered()
     {
@@ -117,7 +123,41 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
 
     private void RegisterDialogue()
     {
-      throw new System.NotImplementedException();
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new DialogueSequence(
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Maiev02.flac",
+            "I suspected as much. These islands must have been formed only recently.",
+            "Maiev Shadowsong"),
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Naisha03.flac",
+            "What makes you say that?",
+            "Naisha"),
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Maiev04.flac",
+            "The ruins all around us, Naisha... I recognize them.",
+            "Maiev Shadowsong"),
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Maiev05.flac",
+            "This was once the great city of Suramar, built before our civilization was blasted beneath the sea ten thousand years ago.",
+            "Maiev Shadowsong")
+        )
+        , new[]
+        {
+          this
+        }, new List<Objective>
+        {
+          new ObjectiveLegendReachRect(legendSetup.Sentinels.Maiev, Regions.BrokenIslesA, "the Broken Isles")
+        }
+      ));
+      
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
+          @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Maiev24",
+          "Priestess Tyrande. I'm surprised you came in person. Are you here to absolve your guilty conscience?",
+          "Maiev Shadowsong"), new[]
+        {
+          this
+        }, new[]
+        {
+          new ObjectiveLegendMeetsLegend(legendSetup.Sentinels.Maiev, legendSetup.Sentinels.Tyrande)
+        }));
     }
     
     private void RegisterPowers()
@@ -139,6 +179,60 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
         Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
         ResearchId = Constants.UPGRADE_YB01_IMMORTALITY_POWER_IS_ACTIVE
       });
+    }
+    
+    private void RegisterDruidsDialogue(Druids druids)
+    {
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
+          @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Maiev22",
+          "Elune be praised! I knew you would come, Shan'do Stormrage.",
+          "Illidan Stormrage"), new Faction[]
+        {
+          this,
+          druids
+        }, new[]
+        {
+          new ObjectiveLegendMeetsLegend(legendSetup.Sentinels.Maiev, legendSetup.Druids.Malfurion)
+        }));
+    }
+
+    private void RegisterIlliariDialogue(Illidari illidari)
+    {
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new MacroTools.DialogueSystem.Dialogue(
+          @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Maiev37",
+          "I am the hand of justice, Illidan. Long ago, I swore an oath to keep you chained, and by all the gods, I shall.",
+          "Maiev Shadowsong"), new Faction[]
+        {
+          this,
+          illidari
+        }, new[]
+        {
+          new ObjectiveLegendMeetsLegend(legendSetup.Sentinels.Maiev, legendSetup.Naga.Illidan)
+        }));
+    }
+
+    private void RegisterLegionDialogue(Legion legion)
+    {
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new DialogueSequence(
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf02\N02Tyrande03.flac",
+            "Archimonde... After ten thousand years, how is it possible?",
+            "Tyrande Whisperwind"),
+          new MacroTools.DialogueSystem.Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf02\N02Archimonde04.flac",
+            "The Legion has returned to consume this world, woman. And this time, your troublesome race will not stop us.",
+            "Archimonde")
+        )
+        , new Faction[]
+        {
+          legion,
+          this
+        }, new List<Objective>
+        {
+          new ObjectiveLegendMeetsLegend(legendSetup.Sentinels.Tyrande, legendSetup.Legion.Archimonde)
+        }
+      ));
     }
   }
 }
