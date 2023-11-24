@@ -7,7 +7,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
-  public class Stormwind : Faction
+  public sealed class Stormwind : Faction
   {
     private readonly PreplacedUnitSystem _preplacedUnitSystem;
     private readonly AllLegendSetup _allLegendSetup;
@@ -38,7 +38,6 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
     {
       RegisterObjectLimits();
       RegisterQuests();
-      RegisterDialogue();
     }
 
     private void RegisterObjectLimits()
@@ -152,11 +151,6 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
       }));
       AddQuest(new QuestKingdomOfManStormwind(_artifactSetup.CrownOfLordaeron, _artifactSetup.CrownOfStormwind,
         _allLegendSetup.Stormwind.Varian));
-    }
-
-    private void RegisterDialogue()
-    {
-      throw new System.NotImplementedException();
     }
   }
 }

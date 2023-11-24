@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Setup
     public void Setup()
     {
       SetupPlayer(Player(0), new Frostwolf(_preplacedUnitSystem, _allLegendSetup, _artifactSetup), TeamSetup.Horde);
-      SetupPlayer(Player(1), new Lordaeron(_preplacedUnitSystem, _allLegendSetup, _artifactSetup), TeamSetup.NorthAlliance);
+      SetupPlayer(Player(1), new Stormwind(_preplacedUnitSystem, _allLegendSetup, _artifactSetup), TeamSetup.SouthAlliance);
       SetupPlayer(Player(2), new Quelthalas(_preplacedUnitSystem, _allLegendSetup), TeamSetup.NorthAlliance);
       SetupPlayer(Player(3), new Scourge(_preplacedUnitSystem, _allLegendSetup, _artifactSetup), TeamSetup.Legion);
       SetupPlayer(Player(4), new Ironforge(_preplacedUnitSystem, _allLegendSetup), TeamSetup.SouthAlliance);

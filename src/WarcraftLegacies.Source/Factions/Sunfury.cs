@@ -50,7 +50,6 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
     {
       RegisterObjectLimits();
       RegisterQuests();
-      RegisterDialogue();
     }
 
     private void RegisterObjectLimits()
@@ -103,7 +102,7 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
       ModObjectLimit(FourCC("U02V"), 1); //Solarian
       ModObjectLimit(FourCC("Hkal"), 1); //Kael
       ModObjectLimit(FourCC("U004"), 1); //Kil
-      ModObjectLimit(Constants.UNIT_N0E5_VOID_REAVER_SUNFURY_DEMI, 1); //Void Reaver
+      ModObjectLimit(Constants.UNIT_N0E5_VOID_REAVER_SUNFURY_DEMI, 1);
 
       //Upgrades
       ModObjectLimit(Constants.UPGRADE_R09H_ASTROMANCER_MASTER_TRAINING_SUNFURY, UNLIMITED);
@@ -122,11 +121,6 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
       AddQuest(new QuestSummonKil(_allLegendSetup.Stormwind.StormwindKeep, _allLegendSetup.Neutral.Karazhan, _allLegendSetup.Quelthalas.Kael));
       AddQuest(new QuestForgottenKnowledge());
       AddQuest(new QuestWellOfEternity(_preplacedUnitSystem, _allLegendSetup.Quelthalas.Kiljaeden));
-    }
-
-    private void RegisterDialogue()
-    {
-      throw new System.NotImplementedException();
     }
   }
 }

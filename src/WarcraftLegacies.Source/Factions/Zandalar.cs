@@ -17,8 +17,9 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    public Zandalar(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Zandalar", PLAYER_COLOR_PEACH, "|cffff8c6c",
-      @"ReplaceableTextures\CommandButtons\BTNHeadHunterBerserker.blp")
+    public Zandalar(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
+      : base("Zandalar", PLAYER_COLOR_PEACH, "|cffff8c6c",
+        @"ReplaceableTextures\CommandButtons\BTNHeadHunterBerserker.blp")
     {
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
@@ -49,7 +50,6 @@ Join up with your allies and brace for a tough fight and counter-attack. ";
     {
       RegisterObjectLimits();
       RegisterQuests();
-      RegisterDialogue();
     }
 
     private void RegisterObjectLimits()
@@ -116,11 +116,6 @@ Join up with your allies and brace for a tough fight and counter-attack. ";
       AddQuest(new QuestZulgurub(_allLegendSetup));
       AddQuest(new QuestHakkar(_artifactSetup.ZinRokh));
       AddQuest(new QuestZandalarOutpost());
-    }
-
-    private void RegisterDialogue()
-    {
-      throw new System.NotImplementedException();
     }
   }
 }

@@ -26,7 +26,6 @@ namespace WarcraftLegacies.Source.Factions
     public override void OnRegistered()
     {
       RegisterObjectLimits();
-      RegisterQuests();
     }
 
     private void RegisterObjectLimits()
@@ -73,11 +72,6 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(Constants.UNIT_U00Z_OBSIDIAN_DESTROYER, 1);
 
       ModObjectLimit(FourCC("R00K"), UNLIMITED); //Power Infusion
-    }
-
-    private void RegisterQuests()
-    {
-      throw new System.NotImplementedException();
     }
   }
 }

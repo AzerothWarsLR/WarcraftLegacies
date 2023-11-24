@@ -25,8 +25,6 @@ namespace WarcraftLegacies.Source.Factions
     public override void OnRegistered()
     {
       RegisterObjectLimits();
-      RegisterQuests();
-      RegisterDialogue();
     }
 
     private void RegisterObjectLimits()
@@ -83,16 +81,6 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(Constants.UNIT_E01D_N_RAQI_ARCANIST_YOGG, 1);
 
       ModObjectLimit(FourCC("R00K"), UNLIMITED); //Power Infusion
-    }
-
-    private void RegisterQuests()
-    {
-      throw new System.NotImplementedException();
-    }
-
-    private void RegisterDialogue()
-    {
-      throw new System.NotImplementedException();
     }
   }
 }
