@@ -439,7 +439,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
         new Point(13825, 12471),
         new Point(9418, 5396)
       };
-
+      
       AddQuest(new QuestPlague(plagueParameters, lordaeron, legion, Regions.DeathknellUnlock,
         Regions.StratholmeScourgeBase, Regions.CaerDarrow));
     }

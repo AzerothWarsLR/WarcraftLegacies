@@ -51,6 +51,7 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
       RegisterFactionDependentInitializer<Legion>(RegisterLegionDialogue);
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
       RegisterFactionDependentInitializer<Dalaran>(RegisterDalaranDialogue);
+      RegisterFactionDependentInitializer<Scourge, Legion>(RegisterScourgeLegionDialogue);
     }
 
     /// <inheritdoc />
@@ -365,33 +366,9 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
           new ObjectiveLegendMeetsLegend(_allLegendSetup.Lordaeron.Mograine, _allLegendSetup.Scourge.Arthas)
         }
       ));
-      
-      TriggeredDialogueManager.Add(
-        new TriggeredDialogue(
-          new DialogueSequence(
-            new Dialogue(
-              @"Sound\Dialogue\HumanCampaign\Human05\H05Arthas10",
-              "Oh no...",
-              "Arthas Menethil"),
-            new Dialogue(
-              @"Sound\Dialogue\HumanCampaign\Human05\H05Arthas11",
-              "The plague was never meant to simply kill my people. It was meant to turn them... into the undead! Defend yourselves!",
-              "Arthas Menethil")
-          ),
-          new[]
-          {
-            this
-          }, new Objective[]
-          {
-            new ObjectiveQuestComplete(scourge.GetQuestByType<QuestPlague>()),
-            new ObjectiveControlLegend(_allLegendSetup.Lordaeron.Arthas, false)
-            {
-              EligibleFactions = new List<Faction> { this }
-            }
-          }));
     }
 
-    private void RegisterDalaranDialogue(Dalaran obj)
+    private void RegisterDalaranDialogue(Dalaran dalaran)
     {
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(
@@ -415,6 +392,33 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
           }, new Objective[]
           {
             new ObjectiveLegendMeetsLegend(_allLegendSetup.Lordaeron.Arthas, _allLegendSetup.Dalaran.Jaina)
+          }));
+    }
+    
+    private void RegisterScourgeLegionDialogue(Scourge scourge, Legion legion)
+    {
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(
+          new DialogueSequence(
+            new Dialogue(
+              @"Sound\Dialogue\HumanCampaign\Human05\H05Arthas10",
+              "Oh no...",
+              "Arthas Menethil"),
+            new Dialogue(
+              @"Sound\Dialogue\HumanCampaign\Human05\H05Arthas11",
+              "The plague was never meant to simply kill my people. It was meant to turn them... into the undead! Defend yourselves!",
+              "Arthas Menethil")
+          ),
+          new[]
+          {
+            this
+          }, new Objective[]
+          {
+            new ObjectiveQuestComplete(scourge.GetQuestByType<QuestPlague>()),
+            new ObjectiveControlLegend(_allLegendSetup.Lordaeron.Arthas, false)
+            {
+              EligibleFactions = new List<Faction> { this }
+            }
           }));
     }
     
