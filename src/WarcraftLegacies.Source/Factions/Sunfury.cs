@@ -11,7 +11,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
-  public class Sunfury : Faction
+  public sealed class Sunfury : Faction
   {
     private readonly PreplacedUnitSystem _preplacedUnitSystem;
     private readonly AllLegendSetup _allLegendSetup;

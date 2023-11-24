@@ -8,7 +8,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
-  public class Ironforge : Faction
+  public sealed class Ironforge : Faction
   {
     private readonly PreplacedUnitSystem _preplacedUnitSystem;
     private readonly AllLegendSetup _allLegendSetup;

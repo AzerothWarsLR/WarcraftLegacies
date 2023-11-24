@@ -9,7 +9,7 @@ using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
-  public class Draenei : Faction
+  public sealed class Draenei : Faction
   {
     private readonly PreplacedUnitSystem _preplacedUnitSystem;
     private readonly AllLegendSetup _allLegendSetup;
