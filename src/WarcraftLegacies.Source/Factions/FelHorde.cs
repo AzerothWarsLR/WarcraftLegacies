@@ -13,15 +13,13 @@ namespace WarcraftLegacies.Source.Factions
   {
     private readonly PreplacedUnitSystem _preplacedUnitSystem;
     private readonly AllLegendSetup _allLegendSetup;
-    private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    public FelHorde(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Fel Horde", PLAYER_COLOR_GREEN, "|c0020c000",
-      @"ReplaceableTextures\CommandButtons\BTNPitLord.blp")
+    public FelHorde(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Fel Horde",
+      PLAYER_COLOR_GREEN, "|c0020c000", @"ReplaceableTextures\CommandButtons\BTNPitLord.blp")
     {
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
-      _artifactSetup = artifactSetup;
       UndefeatedResearch = FourCC("R05L");
       StartingGold = 200;
       StartingLumber = 700;
@@ -39,8 +37,9 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare to for
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-2735, -30242))
       };
+      RegisterFactionDependentInitializer<Stormwind, Illidari>(RegisterStormwindIllidariQuests);
     }
-        
+
     /// <inheritdoc />
     public override void OnRegistered()
     {
@@ -138,17 +137,21 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare to for
     {
       var questHellfireCitadel = AddQuest(new QuestHellfireCitadel(Regions.HellfireUnlock));
       AddQuest(new QuestRuinsofShadowmoon(Regions.ShadowmoonBaseUnlock));
+      AddQuest(new QuestBlackrock(Regions.BlackrockUnlock, Regions.DarkPortalUnlock, new[] { questHellfireCitadel }));
+      AddQuest(new QuestFelHordeKillIronforge(_allLegendSetup.Ironforge.GreatForge));
+      AddQuest(new QuestFelHordeKillStormwind(_allLegendSetup.Stormwind.StormwindKeep));
+      AddQuest(new QuestGuldansLegacy());
+    }
+    
+    private void RegisterStormwindIllidariQuests(Stormwind stormwind, Illidari illidari)
+    {
       AddQuest(new QuestDarkPortal(
         _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_1.Center),
         _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_2.Center),
         _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_3.Center),
         _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_1.Center),
         _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_2.Center),
-        _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_3.Center)));
-      AddQuest(new QuestBlackrock(Regions.BlackrockUnlock, Regions.DarkPortalUnlock, new[] { questHellfireCitadel }));
-      AddQuest(new QuestFelHordeKillIronforge(_allLegendSetup.Ironforge.GreatForge));
-      AddQuest(new QuestFelHordeKillStormwind(_allLegendSetup.Stormwind.StormwindKeep));
-      AddQuest(new QuestGuldansLegacy());
+        _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_3.Center), stormwind, illidari));
     }
   }
 }

@@ -15,15 +15,13 @@ namespace WarcraftLegacies.Source.Factions
   {
     private readonly PreplacedUnitSystem _preplacedUnitSystem;
     private readonly AllLegendSetup _allLegendSetup;
-    private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    public Warsong(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Warsong", PLAYER_COLOR_ORANGE, "|c00ff8000",
+    public Warsong(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Warsong", PLAYER_COLOR_ORANGE, "|c00ff8000",
       @"ReplaceableTextures\CommandButtons\BTNHellScream.blp")
     {
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
-      _artifactSetup = artifactSetup;
       UndefeatedResearch = FourCC("R05W");
       StartingGold = 200;
       StartingLumber = 700;
