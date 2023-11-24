@@ -55,6 +55,7 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
       RegisterQuests();
       RegisterDialogue();
       PeonsStartHarvestingShips.Setup(_preplacedUnitSystem);
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
     private void RegisterObjectLimits()

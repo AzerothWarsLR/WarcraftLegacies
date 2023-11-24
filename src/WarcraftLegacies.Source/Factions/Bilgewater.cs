@@ -48,6 +48,7 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
       RegisterQuests();
       RegisterDialogue();
       RegisterPowers();
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
     /// <inheritdoc />

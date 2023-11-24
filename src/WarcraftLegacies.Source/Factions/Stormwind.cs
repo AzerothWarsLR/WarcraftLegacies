@@ -40,6 +40,7 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
       RegisterObjectLimits();
       RegisterQuests();
       RegisterResearches();
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
     private void RegisterObjectLimits()

@@ -60,6 +60,7 @@ Gather your forces and strike before the Horde can organize their efforts.";
       RegisterDialogue();
       RegisterPowers();
       CenariusGhost.Setup(_allLegendSetup.Druids.Cenarius, this);
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
     private void RegisterObjectLimits()

@@ -26,6 +26,7 @@ namespace WarcraftLegacies.Source.Factions
     public override void OnRegistered()
     {
       RegisterObjectLimits();
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
     private void RegisterObjectLimits()

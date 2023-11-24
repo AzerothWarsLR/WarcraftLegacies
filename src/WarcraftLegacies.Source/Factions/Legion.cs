@@ -59,6 +59,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       RegisterObjectLimits();
       RegisterQuests();
       RegisterResearches();
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
     private void RegisterObjectLimits()

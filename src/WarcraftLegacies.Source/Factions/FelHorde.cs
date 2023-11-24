@@ -46,6 +46,7 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare to for
       RegisterObjectLimits();
       RegisterQuests();
       JuggernautDeath.Setup(_preplacedUnitSystem);
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
     private void RegisterObjectLimits()

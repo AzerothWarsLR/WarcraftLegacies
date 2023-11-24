@@ -55,6 +55,7 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
     {
       RegisterObjectLimits();
       RegisterQuests();
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
     private void RegisterObjectLimits()

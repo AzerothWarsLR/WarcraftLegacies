@@ -53,6 +53,7 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
       RegisterObjectLimits();
       RegisterQuests();
       RegisterDialogue();
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
     private void RegisterObjectLimits()

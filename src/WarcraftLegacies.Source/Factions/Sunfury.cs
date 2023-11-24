@@ -50,6 +50,7 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
     {
       RegisterObjectLimits();
       RegisterQuests();
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
     private void RegisterObjectLimits()

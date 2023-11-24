@@ -50,6 +50,7 @@ Join up with your allies and brace for a tough fight and counter-attack. ";
     {
       RegisterObjectLimits();
       RegisterQuests();
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
     
     /// <inheritdoc />

@@ -69,6 +69,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       BlightSystem.Setup(this);
       BlightSetup.Setup(_preplacedUnitSystem);
       SacrificeAcolyte.Setup();
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
     private void RegisterObjectLimits()

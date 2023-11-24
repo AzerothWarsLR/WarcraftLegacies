@@ -53,6 +53,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       RegisterQuests();
       RegisterDialogue();
       RegisterPowers();
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
     private void RegisterObjectLimits()

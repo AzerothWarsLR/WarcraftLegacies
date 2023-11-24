@@ -77,7 +77,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     private void AssignScarletCrusadeFaction(Faction completingFaction)
     {
-      var scarletCrusade = new ScarletCrusade(_artifactSetup, _allLegendSetup);
+      var scarletCrusade = new ScarletCrusade(_allLegendSetup);
       FactionManager.Register(scarletCrusade);
       scarletCrusade.CopyObjectLevelsFrom(completingFaction);
       completingFaction.Player?.SetFaction(scarletCrusade);

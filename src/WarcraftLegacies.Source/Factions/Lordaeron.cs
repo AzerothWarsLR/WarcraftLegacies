@@ -64,6 +64,7 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
       RegisterDialogue();
       RegisterCrownOfLordaeronDrop();
       RegisterResearches();
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
     
     private void RegisterObjectLimits()

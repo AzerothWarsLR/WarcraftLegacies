@@ -70,6 +70,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       RegisterProtectors();
       Regions.Dalaran.CleanupHostileUnits();
       WaygateManager.Setup(Constants.UNIT_N0AO_WAY_GATE_DALARAN_SIEGE);
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
     /// <inheritdoc />

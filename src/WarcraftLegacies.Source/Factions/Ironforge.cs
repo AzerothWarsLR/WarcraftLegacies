@@ -43,6 +43,7 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
     {
       RegisterObjectLimits();
       RegisterQuests();
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
     private void RegisterObjectLimits()

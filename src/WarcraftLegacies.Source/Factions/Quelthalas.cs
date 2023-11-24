@@ -50,6 +50,7 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       RegisterObjectLimits();
       RegisterQuests();
       RegisterResearches();
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
     private void RegisterObjectLimits()

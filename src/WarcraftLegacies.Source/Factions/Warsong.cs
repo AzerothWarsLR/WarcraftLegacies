@@ -46,6 +46,7 @@ The Night Elves are aware of your presence and are gathering a mighty host again
       RegisterObjectLimits();
       RegisterQuests();
       RegisterDialogue();
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
     private void RegisterObjectLimits()
