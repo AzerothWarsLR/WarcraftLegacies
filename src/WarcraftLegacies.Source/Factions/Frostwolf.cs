@@ -44,6 +44,7 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8793, -11350)),
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-15828, -3120))
       };
+      RegisterFactionDependentInitializer<Warsong>(RegisterWarsongDialogue);
       RegisterFactionDependentInitializer<Warsong>(RegisterWarsongRelatedResearches);
     }
 
@@ -145,18 +146,6 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
     private void RegisterDialogue()
     {
       TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new Dialogue(
-          @"Sound\Dialogue\OrcCampaign\Orc08\O08Thrall07",
-          "Hellscream is like a brother to me, Cairne. But he and his clan have fallen under the demon's influence. If I can't save him, then my people might be damned for all time.",
-          "Thrall"), new[]
-        {
-          this
-        }, new[]
-        {
-          new ObjectiveQuestComplete(GetQuestByType<QuestFountainOfBlood>())
-        }));
-      
-      TriggeredDialogueManager.Add(
         new TriggeredDialogue(new DialogueSequence(new Dialogue(
             @"Sound\Dialogue\OrcExpCamp\OrcQuest00x\D00Rexxar01",
             "I have wandered alone for many years, little Misha. Yet sometimes, even I grow weary of this endless solitude.",
@@ -237,6 +226,21 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
           {
             new ObjectiveLegendMeetsLegend(_allLegendSetup.Frostwolf.Cairne, _allLegendSetup.Frostwolf.Thrall)
           }));
+    }
+    
+    private void RegisterWarsongDialogue(Warsong warsong)
+    {
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new Dialogue(
+          @"Sound\Dialogue\OrcCampaign\Orc08\O08Thrall07",
+          "Hellscream is like a brother to me, Cairne. But he and his clan have fallen under the demon's influence. If I can't save him, then my people might be damned for all time.",
+          "Thrall"), new[]
+        {
+          this
+        }, new[]
+        {
+          new ObjectiveQuestComplete(warsong.GetQuestByType<QuestFountainOfBlood>())
+        }));
     }
     
     private void RegisterWarsongRelatedResearches(Warsong warsong)
