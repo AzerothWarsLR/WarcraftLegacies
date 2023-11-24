@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionChoices;
@@ -43,6 +44,7 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
       RegisterFactionDependentInitializer<Sentinels>(RegisterSentinelsDialogue);
       RegisterFactionDependentInitializer<Druids>(RegisterDruidsDialogue);
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
+      RegisterFactionDependentInitializer<Sentinels, Druids>(RegisterSentinelsDruidsDialogue);
     }
 
     /// <inheritdoc />
@@ -236,41 +238,6 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
           {
             new ObjectiveLegendMeetsLegend(_allLegendSetup.Naga.Illidan, _allLegendSetup.Druids.Malfurion)
           }));
-
-      TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new DialogueSequence(new Dialogue(
-              @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Tyrande06",
-              "What are these vile serpents?",
-              "Tyrande Whisperwind"),
-            new Dialogue(
-              @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Furion07",
-              "I don't know, but these creatures feel familiar somehow.",
-              "Malfurion Stormrage"),
-            new Dialogue(
-              @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Naga08",
-              "Wretched Night Elves. We are the Naga! We are the future!",
-              "Myrmidon")),
-          new Faction[]
-          {
-            this,
-            druids
-          }, new[]
-          {
-            new ObjectiveEitherOf(
-              new ObjectiveDamagePlayer(sentinels.Player)
-              {
-                EligibleFactions = new List<Faction>
-                {
-                  this
-                }
-              }, new ObjectiveDamagePlayer(druids.Player)
-              {
-                EligibleFactions = new List<Faction>
-                {
-                  this
-                }
-              })
-          }));
     }
 
     private void RegisterScourgeDialogue(Scourge scourge)
@@ -305,6 +272,44 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
           }, new[]
           {
             new ObjectiveLegendMeetsLegend(_allLegendSetup.Naga.Illidan, _allLegendSetup.Scourge.Arthas)
+          }));
+    }
+    
+    private void RegisterSentinelsDruidsDialogue(Sentinels sentinels, Druids druids)
+    {
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(new DialogueSequence(new Dialogue(
+              @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Tyrande06",
+              "What are these vile serpents?",
+              "Tyrande Whisperwind"),
+            new Dialogue(
+              @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Furion07",
+              "I don't know, but these creatures feel familiar somehow.",
+              "Malfurion Stormrage"),
+            new Dialogue(
+              @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Naga08",
+              "Wretched Night Elves. We are the Naga! We are the future!",
+              "Myrmidon")),
+          new Faction[]
+          {
+            this,
+            druids
+          }, new[]
+          {
+            new ObjectiveEitherOf(
+              new ObjectiveDamagePlayer(sentinels.Player)
+              {
+                EligibleFactions = new List<Faction>
+                {
+                  this
+                }
+              }, new ObjectiveDamagePlayer(druids.Player)
+              {
+                EligibleFactions = new List<Faction>
+                {
+                  this
+                }
+              })
           }));
     }
   }

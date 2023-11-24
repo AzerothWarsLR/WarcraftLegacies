@@ -101,7 +101,7 @@ namespace MacroTools.FactionSystem
         faction.OnRegistered();
         faction.NameChanged += OnFactionNameChange;
 
-        ExecuteFactionDependentInitializers(faction);
+        ExecuteFactionDependentInitializers();
         return faction;
       }
 
@@ -130,17 +130,12 @@ namespace MacroTools.FactionSystem
     /// Executes all <see cref="FactionDependentInitializer"/>s related to the provided <see cref="Faction"/>, which have
     /// satisfied their dependencies and which have not already been executed.
     /// </summary>
-    private static void ExecuteFactionDependentInitializers(Faction faction)
+    private static void ExecuteFactionDependentInitializers()
     {
-      var factionInitializers = faction.FactionDependentInitializers
-        .Where(x => FactionOfTypeExists(x.FactionDependency) && !x.Executed);
-      foreach (var initializer in factionInitializers)
-        initializer.Execute();
-      
       //Try execute initializers that depend on the provided Faction.
       var dependentInitializers = AllFactions
         .SelectMany(x => x.FactionDependentInitializers)
-        .Where(x => x.FactionDependency == faction.GetType() && !x.Executed);
+        .Where(x => !x.Executed && x.FactionDependencies.All(FactionOfTypeExists));
       foreach (var initializer in dependentInitializers)
         initializer.Execute();
     }

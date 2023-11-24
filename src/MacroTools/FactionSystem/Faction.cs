@@ -478,10 +478,27 @@ namespace MacroTools.FactionSystem
     /// <typeparam name="TFaction">The type of <see cref="Faction"/> to depend on.</typeparam>
     protected void RegisterFactionDependentInitializer<TFaction>(Action<TFaction> initializer) where TFaction : Faction
     {
-      var factionDependentInitializer = new FactionDependentInitializer(typeof(TFaction), () =>
+      var factionTypes = new List<Type> { typeof(TFaction) };
+      var factionDependentInitializer = new FactionDependentInitializer(factionTypes, () =>
       {
         if (FactionManager.TryGetFactionByType<TFaction>(out var factionDependency))
           initializer(factionDependency);
+      });
+      FactionDependentInitializers.Add(factionDependentInitializer);
+    }
+    
+    /// <summary>
+    /// Registers an initializer function that will only fire once all <see cref="Faction"/>s of the specified types have
+    /// been registered.
+    /// </summary>
+    protected void RegisterFactionDependentInitializer<TFactionA, TFactionB>(Action<TFactionA, TFactionB> initializer) where TFactionA : Faction where TFactionB : Faction
+    {
+      var factionTypes = new List<Type> { typeof(TFactionA), typeof(TFactionB) };
+      var factionDependentInitializer = new FactionDependentInitializer(factionTypes, () =>
+      {
+        if (FactionManager.TryGetFactionByType<TFactionA>(out var factionDependencyA) &&
+            FactionManager.TryGetFactionByType<TFactionB>(out var factionDependencyB))
+          initializer(factionDependencyA, factionDependencyB);
       });
       FactionDependentInitializers.Add(factionDependentInitializer);
     }

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace MacroTools.FactionSystem
 {
@@ -11,18 +13,18 @@ namespace MacroTools.FactionSystem
     /// <summary>
     /// Initializes a new instance of the <see cref="FactionDependentInitializer"/> class.
     /// </summary>
-    /// <param name="factionDependency">The <see cref="Type"/> of the <see cref="Faction"/> that this initializer is dependent on.</param>
+    /// <param name="factionDependencieses">The <see cref="Type"/>s of the <see cref="Faction"/> that this initializer is dependent on.</param>
     /// <param name="initializerAction">The <see cref="Action"/> to run when the depended on <see cref="Faction"/> <see cref="Type"/> exists.</param>
-    public FactionDependentInitializer(Type factionDependency, Action initializerAction)
+    public FactionDependentInitializer(List<Type> factionDependencieses, Action initializerAction)
     {
-      FactionDependency = factionDependency;
+      FactionDependencies = factionDependencieses;
       _initializerAction = initializerAction;
     }
     
     /// <summary>
     /// The <see cref="Type"/> of the <see cref="Faction"/> that this initializer is dependent on.
     /// </summary>
-    public Type FactionDependency { get; }
+    public List<Type> FactionDependencies { get; }
 
     /// <summary>
     /// The <see cref="Action"/> to run when the depended on <see cref="Faction"/> <see cref="Type"/> exists.
@@ -40,7 +42,7 @@ namespace MacroTools.FactionSystem
     public void Execute()
     {
       if (Executed)
-        throw new Exception($"Tried to execute {nameof(FactionDependentInitializer)} with {nameof(FactionDependency)} {FactionDependency.Name} but it has already been executed.");
+        throw new Exception($"Tried to execute {nameof(FactionDependentInitializer)} with {nameof(FactionDependencies)} {FactionDependencies.First().Name} but it has already been executed.");
       
       _initializerAction();
       Executed = true;
