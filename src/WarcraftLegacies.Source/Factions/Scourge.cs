@@ -56,6 +56,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       RegisterFactionDependentInitializer<Legion>(RegisterLegionDialogue);
       RegisterFactionDependentInitializer<Lordaeron>(RegisterLordaeronRelatedQuests);
       RegisterFactionDependentInitializer<Legion>(RegisterLegionRelatedQuests);
+      RegisterFactionDependentInitializer<Lordaeron, Legion>(RegisterLordaeronLegionRelatedQuests);
     }
 
     /// <inheritdoc />
@@ -139,10 +140,10 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       ModObjectLimit(FourCC("Ruwb"), UNLIMITED); //Web
       ModObjectLimit(FourCC("R00Q"), UNLIMITED); //Chilling Aura
       ModObjectLimit(Constants.UPGRADE_R01X_EPIDEMIC_SCOURGE, UNLIMITED);
-      ModObjectLimit(FourCC("R01D"), UNLIMITED); //Piercing Screech
-      ModObjectLimit(FourCC("R06N"), UNLIMITED); //Improved Orb of Annihilation
-      ModObjectLimit(FourCC("Rusl"), UNLIMITED); //Skeletal Mastery
-      ModObjectLimit(FourCC("Rusm"), UNLIMITED); //Skeletal Longevity
+      ModObjectLimit(Constants.UPGRADE_R01D_HOWL_OF_TERROR_SCOURGE, UNLIMITED);
+      ModObjectLimit(Constants.UPGRADE_R06N_IMPROVED_ORB_OF_ANNIHILATION_SCOURGE, UNLIMITED);
+      ModObjectLimit(Constants.UPGRADE_RUSL_SKELETAL_LONGEVITY, UNLIMITED);
+      ModObjectLimit(Constants.UPGRADE_RUSM_SKELETAL_MASTERY, UNLIMITED);
 
       ModObjectLimit(Constants.UPGRADE_R07X_MAKE_ARTHAS_THE_LICH_KING_SCOURGE, UNLIMITED);
 
@@ -159,38 +160,6 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       QuestEnKilahUnlock questEnKilahUnlock = new(Regions.EnKilahUnlock);
       QuestDrakUnlock questDrakUnlock = new(Regions.DrakUnlock, _allLegendSetup.Scourge.Kelthuzad);
 
-
-      var plagueParameters = new PlagueParameters();
-      plagueParameters.PlagueRects = new List<Rectangle>
-      {
-        Regions.Plague_1,
-        Regions.Plague_2,
-        Regions.Plague_3,
-        Regions.Plague_4,
-        Regions.Plague_5,
-        Regions.Plague_6,
-        Regions.Plague_7
-      };
-      plagueParameters.PlagueCauldronSummonParameters = new List<PlagueCauldronSummonParameter>
-      {
-        new(2, Constants.UNIT_UNEC_NECROMANCER_SCOURGE),
-        new(2, Constants.UNIT_UACO_ACOLYTE_SCOURGE_WORKER),
-        new(5, Constants.UNIT_UGHO_GHOUL_SCOURGE),
-        new(2, Constants.UNIT_UCRY_CRYPT_FIEND_SCOURGE),
-        new(1, Constants.UNIT_UABO_ABOMINATION_SCOURGE),
-      };
-      plagueParameters.PlagueCauldronUnitTypeId = Constants.UNIT_H02W_PLAGUE_CAULDRON_SCOURGE_OTHER;
-      plagueParameters.Duration = 360;
-      plagueParameters.AttackTargets = new List<Point>
-      {
-        new Point(9041, 8036),
-        new Point(13825, 12471),
-        new Point(9418, 5396)
-      };
-
-      QuestPlague questPlague = new(plagueParameters, LordaeronSetup.Lordaeron, LegionSetup.Legion,
-        Regions.DeathknellUnlock, Regions.StratholmeScourgeBase, Regions.CaerDarrow);
-
       QuestSapphiron questSapphiron = new(_preplacedUnitSystem.GetUnit(Constants.UNIT_UBDR_SAPPHIRON_CREEP),
         _allLegendSetup.Scourge.Kelthuzad);
 
@@ -205,8 +174,6 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       StartingQuest = questSpiderWar;
       AddQuest(questDrakUnlock);
       AddQuest(questEnKilahUnlock);
-
-      AddQuest(questPlague);
       AddQuest(questSapphiron);
       //Misc
       AddQuest(questLichKingArthas);
@@ -446,6 +413,40 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
     {
       var questKelthuzadLich = AddQuest(new QuestKelthuzadLich(legion, _allLegendSetup.Quelthalas.Sunwell, _allLegendSetup.Scourge.Kelthuzad));
       AddQuest(new QuestKelthuzadDies(questKelthuzadLich, _allLegendSetup.Scourge.Kelthuzad));
+    }
+    
+    private void RegisterLordaeronLegionRelatedQuests(Lordaeron lordaeron, Legion legion)
+    {
+      var plagueParameters = new PlagueParameters();
+      plagueParameters.PlagueRects = new List<Rectangle>
+      {
+        Regions.Plague_1,
+        Regions.Plague_2,
+        Regions.Plague_3,
+        Regions.Plague_4,
+        Regions.Plague_5,
+        Regions.Plague_6,
+        Regions.Plague_7
+      };
+      plagueParameters.PlagueCauldronSummonParameters = new List<PlagueCauldronSummonParameter>
+      {
+        new(2, Constants.UNIT_UNEC_NECROMANCER_SCOURGE),
+        new(2, Constants.UNIT_UACO_ACOLYTE_SCOURGE_WORKER),
+        new(5, Constants.UNIT_UGHO_GHOUL_SCOURGE),
+        new(2, Constants.UNIT_UCRY_CRYPT_FIEND_SCOURGE),
+        new(1, Constants.UNIT_UABO_ABOMINATION_SCOURGE),
+      };
+      plagueParameters.PlagueCauldronUnitTypeId = Constants.UNIT_H02W_PLAGUE_CAULDRON_SCOURGE_OTHER;
+      plagueParameters.Duration = 360;
+      plagueParameters.AttackTargets = new List<Point>
+      {
+        new Point(9041, 8036),
+        new Point(13825, 12471),
+        new Point(9418, 5396)
+      };
+
+      AddQuest(new QuestPlague(plagueParameters, lordaeron, legion, Regions.DeathknellUnlock,
+        Regions.StratholmeScourgeBase, Regions.CaerDarrow));
     }
   }
 }
