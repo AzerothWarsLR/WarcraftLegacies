@@ -53,12 +53,13 @@ namespace WarcraftLegacies.Source.Powers
 
     private void OnPlayerTakesDamage()
     {
+      var owner = GetTriggerUnit().OwningPlayer();
       if (!GetTriggerUnit().IsControlPoint() 
-          || _shaladrassil.OwningPlayer() != DruidsSetup.Druids?.Player 
+          || _shaladrassil.OwningPlayer() != owner
           || !(_shaladrassil.GetMana() >= _manaCost)
           || GetTriggerUnit().GetLifePercent() < 100)
         return;
-      SummonTreants(GetTriggerUnit().OwningPlayer(), GetTriggerUnit().GetPosition());
+      SummonTreants(owner, GetTriggerUnit().GetPosition());
       _shaladrassil.RestoreMana(-_manaCost);
     }
 

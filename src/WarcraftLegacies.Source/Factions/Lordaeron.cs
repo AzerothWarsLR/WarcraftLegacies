@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools;
 using MacroTools.DialogueSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
@@ -58,6 +59,7 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
       RegisterObjectLimits();
       RegisterQuests();
       RegisterDialogue();
+      RegisterCrownOfLordaeronDrop();
     }
 
     private void RegisterObjectLimits()
@@ -414,6 +416,28 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
           {
             new ObjectiveLegendMeetsLegend(_allLegendSetup.Lordaeron.Arthas, _allLegendSetup.Dalaran.Jaina)
           }));
+    }
+    
+    private void RegisterCrownOfLordaeronDrop()
+    {
+      CreateTrigger()
+        .RegisterUnitEvent(_allLegendSetup.Lordaeron.CapitalPalace.Unit, EVENT_UNIT_CHANGE_OWNER)
+        .AddAction(() =>
+        {
+          var lordaeronPlayer = Player;
+          if (lordaeronPlayer?.GetTeam()?.Contains(GetOwningPlayer(GetTriggerUnit())) == true){
+            return;
+          }
+          _allLegendSetup.Lordaeron.Terenas.Unit?.Kill();
+          SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,
+            FourCC("Ysaw"), false, "hide", false);
+          SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,
+            FourCC("D044"), false, "hide", false);
+          SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,
+            FourCC("YObb"), false, "hide", false);
+          SetDoodadAnimationRect(Regions.Terenas.Rect, FourCC("YScr"), "show", false);
+          DestroyTrigger(GetTriggeringTrigger());
+        });
     }
   }
 }
