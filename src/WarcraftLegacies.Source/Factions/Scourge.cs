@@ -51,7 +51,6 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-4939, 18803))
       };
       RegisterFactionDependentInitializer<Lordaeron>(RegisterLordaeronRelatedQuests);
-      RegisterFactionDependentInitializer<Legion>(RegisterLegionRelatedQuests);
       RegisterFactionDependentInitializer<Lordaeron, Legion>(RegisterLordaeronLegionRelatedQuests);
       RegisterFactionDependentInitializer<Dalaran>(RegisterDalaranDialogue);
       RegisterFactionDependentInitializer<Quelthalas>(RegisterQuelthalasDialogue);
@@ -168,8 +167,10 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
           _artifactSetup.HelmOfDomination,
           _allLegendSetup.Scourge.Arthas, _allLegendSetup.Scourge.TheFrozenThrone);
       QuestEnemyEncroachment questEnemyEncroachment = new();
-
-
+      
+      var questKelthuzadLich = AddQuest(new QuestKelthuzadLich(_allLegendSetup.Quelthalas.Sunwell, _allLegendSetup.Scourge.Kelthuzad));
+      AddQuest(new QuestKelthuzadDies(questKelthuzadLich, _allLegendSetup.Scourge.Kelthuzad));
+      
       AddQuest(questSpiderWar);
       StartingQuest = questSpiderWar;
       AddQuest(questDrakUnlock);
@@ -407,12 +408,6 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
     {
       AddQuest(new QuestDestroyStratholme(lordaeron, _allLegendSetup.Lordaeron.Stratholme, _allLegendSetup.Lordaeron.Arthas));
       AddQuest(new QuestCultoftheDamned(lordaeron, _allLegendSetup.Scourge.Rivendare));
-    }
-    
-    private void RegisterLegionRelatedQuests(Legion legion)
-    {
-      var questKelthuzadLich = AddQuest(new QuestKelthuzadLich(legion, _allLegendSetup.Quelthalas.Sunwell, _allLegendSetup.Scourge.Kelthuzad));
-      AddQuest(new QuestKelthuzadDies(questKelthuzadLich, _allLegendSetup.Scourge.Kelthuzad));
     }
     
     private void RegisterLordaeronLegionRelatedQuests(Lordaeron lordaeron, Legion legion)
