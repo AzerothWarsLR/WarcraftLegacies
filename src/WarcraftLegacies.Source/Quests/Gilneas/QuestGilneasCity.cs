@@ -7,7 +7,6 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using WarcraftLegacies.Source.Rocks;
-using MacroTools;
 
 namespace WarcraftLegacies.Source.Quests.Gilneas
 {
