@@ -50,13 +50,13 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-4939, 18803))
       };
+      RegisterFactionDependentInitializer<Lordaeron>(RegisterLordaeronRelatedQuests);
+      RegisterFactionDependentInitializer<Legion>(RegisterLegionRelatedQuests);
+      RegisterFactionDependentInitializer<Lordaeron, Legion>(RegisterLordaeronLegionRelatedQuests);
       RegisterFactionDependentInitializer<Dalaran>(RegisterDalaranDialogue);
       RegisterFactionDependentInitializer<Quelthalas>(RegisterQuelthalasDialogue);
       RegisterFactionDependentInitializer<Lordaeron>(RegisterLordaeronDialogue);
       RegisterFactionDependentInitializer<Legion>(RegisterLegionDialogue);
-      RegisterFactionDependentInitializer<Lordaeron>(RegisterLordaeronRelatedQuests);
-      RegisterFactionDependentInitializer<Legion>(RegisterLegionRelatedQuests);
-      RegisterFactionDependentInitializer<Lordaeron, Legion>(RegisterLordaeronLegionRelatedQuests);
     }
 
     /// <inheritdoc />
