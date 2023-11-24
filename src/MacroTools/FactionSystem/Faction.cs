@@ -491,6 +491,10 @@ namespace MacroTools.FactionSystem
     /// Registers an initializer function that will only fire once all <see cref="Faction"/>s of the specified types have
     /// been registered.
     /// </summary>
+    /// <param name="initializer">The initializer function itself, which receives the registered instance of the
+    /// <see cref="Faction"/> type it depends on.</param>
+    /// <typeparam name="TFactionA">One of the type of <see cref="Faction"/> to depend on.</typeparam>
+    /// <typeparam name="TFactionB">One of the type of <see cref="Faction"/> to depend on.</typeparam>
     protected void RegisterFactionDependentInitializer<TFactionA, TFactionB>(Action<TFactionA, TFactionB> initializer) where TFactionA : Faction where TFactionB : Faction
     {
       var factionTypes = new List<Type> { typeof(TFactionA), typeof(TFactionB) };
@@ -499,6 +503,60 @@ namespace MacroTools.FactionSystem
         if (FactionManager.TryGetFactionByType<TFactionA>(out var factionDependencyA) &&
             FactionManager.TryGetFactionByType<TFactionB>(out var factionDependencyB))
           initializer(factionDependencyA, factionDependencyB);
+      });
+      FactionDependentInitializers.Add(factionDependentInitializer);
+    }
+    
+    /// <summary>
+    /// Registers an initializer function that will only fire once all <see cref="Faction"/>s of the specified types have
+    /// been registered.
+    /// </summary>
+    /// <param name="initializer">The initializer function itself, which receives the registered instance of the
+    /// <see cref="Faction"/> type it depends on.</param>
+    /// <typeparam name="TFactionA">One of the type of <see cref="Faction"/> to depend on.</typeparam>
+    /// <typeparam name="TFactionB">One of the type of <see cref="Faction"/> to depend on.</typeparam>
+    /// <typeparam name="TFactionC">One of the type of <see cref="Faction"/> to depend on.</typeparam>
+    protected void RegisterFactionDependentInitializer<TFactionA, TFactionB, TFactionC>(Action<TFactionA, TFactionB, TFactionC> initializer) 
+      where TFactionA : Faction 
+      where TFactionB : Faction
+      where TFactionC : Faction
+    {
+      var factionTypes = new List<Type> { typeof(TFactionA), typeof(TFactionB) };
+      var factionDependentInitializer = new FactionDependentInitializer(factionTypes, () =>
+      {
+        if (FactionManager.TryGetFactionByType<TFactionA>(out var factionDependencyA) &&
+            FactionManager.TryGetFactionByType<TFactionB>(out var factionDependencyB) &&
+            FactionManager.TryGetFactionByType<TFactionC>(out var factionDependencyC))
+          initializer(factionDependencyA, factionDependencyB, factionDependencyC);
+      });
+      FactionDependentInitializers.Add(factionDependentInitializer);
+    }
+    
+    /// <summary>
+    /// Registers an initializer function that will only fire once all <see cref="Faction"/>s of the specified types have
+    /// been registered.
+    /// </summary>
+    /// <param name="initializer">The initializer function itself, which receives the registered instance of the
+    /// <see cref="Faction"/> type it depends on.</param>
+    /// <typeparam name="TFactionA">One of the type of <see cref="Faction"/> to depend on.</typeparam>
+    /// <typeparam name="TFactionB">One of the type of <see cref="Faction"/> to depend on.</typeparam>
+    /// <typeparam name="TFactionC">One of the type of <see cref="Faction"/> to depend on.</typeparam>
+    /// <typeparam name="TFactionD">One of the type of <see cref="Faction"/> to depend on.</typeparam>
+    protected void RegisterFactionDependentInitializer<TFactionA, TFactionB, TFactionC, TFactionD>(
+      Action<TFactionA, TFactionB, TFactionC, TFactionD> initializer) 
+      where TFactionA : Faction 
+      where TFactionB : Faction
+      where TFactionC : Faction
+      where TFactionD : Faction
+    {
+      var factionTypes = new List<Type> { typeof(TFactionA), typeof(TFactionB) };
+      var factionDependentInitializer = new FactionDependentInitializer(factionTypes, () =>
+      {
+        if (FactionManager.TryGetFactionByType<TFactionA>(out var factionDependencyA) &&
+            FactionManager.TryGetFactionByType<TFactionB>(out var factionDependencyB) &&
+            FactionManager.TryGetFactionByType<TFactionC>(out var factionDependencyC) &&
+            FactionManager.TryGetFactionByType<TFactionD>(out var factionDependencyD)) 
+          initializer(factionDependencyA, factionDependencyB, factionDependencyC, factionDependencyD);
       });
       FactionDependentInitializers.Add(factionDependentInitializer);
     }

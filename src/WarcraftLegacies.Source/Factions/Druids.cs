@@ -49,6 +49,7 @@ Gather your forces and strike before the Horde can organize their efforts.";
       };
       RegisterFactionDependentInitializer<Sentinels>(RegisterSentinelsDialogue);
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeQuests);
+      RegisterFactionDependentInitializer<Sentinels, Frostwolf, Warsong>(RegisterSentinelsFrostwolfWarsongDialogue);
     }
 
     /// <inheritdoc />
@@ -217,7 +218,10 @@ Gather your forces and strike before the Horde can organize their efforts.";
         ), 
         new Faction[] { this, sentinels },
         new[] { new ObjectiveLegendMeetsLegend(_allLegendSetup.Druids.Malfurion, _allLegendSetup.Sentinels.Tyrande) }));
-
+    }
+    
+    private void RegisterSentinelsFrostwolfWarsongDialogue(Sentinels sentinels, Frostwolf frostwolf, Warsong warsong)
+    {
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new Dialogue(
           @"Sound\Dialogue\OrcCampaign\Orc05\O05Cenarius01",
