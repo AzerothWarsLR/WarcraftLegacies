@@ -1,6 +1,7 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
 using WarcraftLegacies.Source.Quests.Stormwind;
+using WarcraftLegacies.Source.Researches.Stormwind;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -38,6 +39,7 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
     {
       RegisterObjectLimits();
       RegisterQuests();
+      RegisterResearches();
     }
 
     private void RegisterObjectLimits()
@@ -151,6 +153,14 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
       }));
       AddQuest(new QuestKingdomOfManStormwind(_artifactSetup.CrownOfLordaeron, _artifactSetup.CrownOfStormwind,
         _allLegendSetup.Stormwind.Varian));
+    }
+    
+    private void RegisterResearches()
+    {
+      TierCodeOfChivalry.Setup();
+      TierExpeditionSurvivors.Setup();
+      TierReflectivePlating.Setup();
+      TierVeteranGuard.Setup();
     }
   }
 }

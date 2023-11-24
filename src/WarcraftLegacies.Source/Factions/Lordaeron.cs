@@ -8,8 +8,10 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using MacroTools.ResearchSystems;
 using WarcraftLegacies.Source.Quests.Lordaeron;
 using WarcraftLegacies.Source.Quests.Scourge;
+using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -61,8 +63,9 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
       RegisterQuests();
       RegisterDialogue();
       RegisterCrownOfLordaeronDrop();
+      RegisterResearches();
     }
-
+    
     private void RegisterObjectLimits()
     {
       //Structures
@@ -168,6 +171,11 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
         _artifactSetup.CrownOfStormwind, _allLegendSetup.Lordaeron.Arthas));
     }
 
+    private void RegisterResearches()
+    {
+      ResearchManager.Register(new VeteranFootmen(Constants.UPGRADE_R00B_VETERAN_FOOTMEN_LORDAERON, 220, 120));
+    }
+    
     private void RegisterDialogue()
     {
       TriggeredDialogueManager.Add(

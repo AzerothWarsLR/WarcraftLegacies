@@ -6,8 +6,6 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.Save;
 using MacroTools.UserInterface;
 using WarcraftLegacies.Source.ArtifactBehaviour;
-using WarcraftLegacies.Source.FactionMechanics.Druids;
-using WarcraftLegacies.Source.FactionMechanics.Scourge;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.GameModes;
@@ -57,7 +55,6 @@ namespace WarcraftLegacies.Source.Setup
       MapFlagSetup.Setup();
       InfoQuests.Setup();
       DestructibleSetup.Setup(preplacedUnitSystem);
-      ResearchSetup.Setup(preplacedUnitSystem);
       PatronSystem.Setup(preplacedUnitSystem);
       var gameModeManager =new GameModeManager(new IGameMode[]
       {
@@ -93,7 +90,6 @@ namespace WarcraftLegacies.Source.Setup
       EyeOfSargerasCooldowns.Setup();
       CapturableUnitSetup.Setup(preplacedUnitSystem);
       EyeOfSargerasPickup.Setup();
-      SacrificeAcolyte.Setup();
       RuntimeIntegrityChecker.Setup();
       DarkPortalControlNexusSetup.Setup(preplacedUnitSystem);
       TagSummonedUnits.Setup();

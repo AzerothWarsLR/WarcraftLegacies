@@ -3,7 +3,9 @@ using MacroTools;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ResearchSystems;
 using WarcraftLegacies.Source.Quests.Quelthalas;
+using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -47,6 +49,7 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
     {
       RegisterObjectLimits();
       RegisterQuests();
+      RegisterResearches();
     }
 
     private void RegisterObjectLimits()
@@ -134,6 +137,11 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
         _allLegendSetup.Quelthalas.Sunwell, _allLegendSetup.Quelthalas.Rommath));
       AddQuest(new QuestQueensArchive(_allLegendSetup.Quelthalas.Rommath));
       AddQuest(new QuestForgottenKnowledge());
+    }
+    
+    private void RegisterResearches()
+    {
+      ResearchManager.Register(new SunfuryWarrior(Constants.UPGRADE_R004_SUNFURY_TRAINING_QUEL_THALAS, 300, 300));
     }
     
     private void RegisterScourgeDialogue(Scourge scourge)

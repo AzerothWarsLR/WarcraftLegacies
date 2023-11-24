@@ -68,6 +68,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       RegisterHelmOfDominationLogic();
       BlightSystem.Setup(this);
       BlightSetup.Setup(_preplacedUnitSystem);
+      SacrificeAcolyte.Setup();
     }
 
     private void RegisterObjectLimits()

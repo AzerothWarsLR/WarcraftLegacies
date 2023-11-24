@@ -1,11 +1,15 @@
 ﻿using System.Collections.Generic;
 using MacroTools;
 using MacroTools.DialogueSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
+using MacroTools.Powers;
+using MacroTools.ResearchSystems;
 using WarcraftLegacies.Source.Quests.Legion;
+using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -54,6 +58,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
     {
       RegisterObjectLimits();
       RegisterQuests();
+      RegisterResearches();
     }
 
     private void RegisterObjectLimits()
@@ -137,6 +142,17 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       AddQuest(new QuestLegionCaptureSunwell(_allLegendSetup.Quelthalas.Sunwell));
       AddQuest(new QuestLegionKillLordaeron(_allLegendSetup.Lordaeron.CapitalPalace, _allLegendSetup.Lordaeron.Stratholme, _allLegendSetup.Legion.Tichondrius));
       AddQuest(new QuestSummonLegion(Regions.TwistingNether,_preplacedUnitSystem.GetUnit(Constants.UNIT_N03C_DEMON_PORTAL_NETHER)));
+    }
+    
+    private void RegisterResearches()
+    {
+      ResearchManager.Register(new PowerResearch(Constants.UPGRADE_R096_REMATERIALIZATION_LEGION, 150, 250,
+        new Rematerialization(0.15f, new Point(20454.9f, -28873.6f), "Argus", Regions.MonolithNoBuild)
+        {
+          IconName = "achievement_raid_argusraid",
+          Name = "Rematerialization",
+          EligibilityCondition = dyingUnit => dyingUnit.OwningPlayer().GetObjectLimit(dyingUnit.GetTypeId()) != 0
+        }));
     }
     
     private void RegisterDalaranDialogue(Dalaran dalaran)
