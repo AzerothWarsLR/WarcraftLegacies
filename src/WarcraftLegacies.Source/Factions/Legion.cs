@@ -46,7 +46,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       RegisterFactionDependentInitializer<Frostwolf>(RegisterFrostwolfDialogue);
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeQuests);
-      RegisterFactionDependentInitializer<Druids>(RegisterDruidsRelatedQuests);
+      RegisterFactionDependentInitializer<Druids>(RegisterDruidsRelatedQuestsAndDialogue);
     }
 
     /// <inheritdoc />
@@ -54,7 +54,6 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
     {
       RegisterObjectLimits();
       RegisterQuests();
-      RegisterDialogue();
     }
 
     private void RegisterObjectLimits()
@@ -139,19 +138,6 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       AddQuest(new QuestLegionKillLordaeron(_allLegendSetup.Lordaeron.CapitalPalace, _allLegendSetup.Lordaeron.Stratholme, _allLegendSetup.Legion.Tichondrius));
       AddQuest(new QuestSummonLegion(Regions.TwistingNether,_preplacedUnitSystem.GetUnit(Constants.UNIT_N03C_DEMON_PORTAL_NETHER)));
     }
-
-    private void RegisterDialogue()
-    {
-      TriggeredDialogueManager.Add(new TriggeredDialogue(
-        new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Archimonde28.flac",
-          "At last, the way to the World Tree is clear! Witness the end, you mortals! The final hour has come.",
-          "Archimonde")
-        , null, new List<Objective>
-        {
-          new ObjectiveQuestComplete(GetQuestByType<QuestConsumeTree>())
-        }
-      ));
-    }
     
     private void RegisterDalaranDialogue(Dalaran dalaran)
     {
@@ -226,10 +212,10 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
     {
       TriggeredDialogueManager.Add(new TriggeredDialogue(
         new DialogueSequence(
-          new Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead06\U06KelThuzad21.flac",
+          new Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead06\U06Archimonde22.flac",
             "You called my name, puny lich, and I have come. You are Kel'Thuzad, are you not?",
             "Archimonde"),
-          new Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead06\U06Archimonde22.flac",
+          new Dialogue(@"Sound\Dialogue\UndeadCampaign\Undead06\U06Kelthuzad23.flac",
             "Yes, great one. I am the summoner.",
             "Kel'thuzad")
         ), new Faction[]
@@ -248,9 +234,19 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       AddQuest(new QuestCunningPlan(Regions.AlteracAmbient, scourge));
     }
     
-    private void RegisterDruidsRelatedQuests(Druids druids)
+    private void RegisterDruidsRelatedQuestsAndDialogue(Druids druids)
     {
-      AddQuest(new QuestConsumeTree(_allLegendSetup.Legion.Archimonde, druids));
+      var questConsumeTree = AddQuest(new QuestConsumeTree(_allLegendSetup.Legion.Archimonde, druids));
+      
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Archimonde28.flac",
+          "At last, the way to the World Tree is clear! Witness the end, you mortals! The final hour has come.",
+          "Archimonde")
+        , null, new List<Objective>
+        {
+          new ObjectiveQuestComplete(questConsumeTree)
+        }
+      ));
     }
   }
 }
