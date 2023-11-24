@@ -51,6 +51,13 @@ Join up with your allies and brace for a tough fight and counter-attack. ";
       RegisterObjectLimits();
       RegisterQuests();
     }
+    
+    /// <inheritdoc />
+    public override void OnNotPicked()
+    {
+      Regions.ZandalarUnlock.CleanupNeutralPassiveUnits();
+      base.OnNotPicked();
+    }
 
     private void RegisterObjectLimits()
     {

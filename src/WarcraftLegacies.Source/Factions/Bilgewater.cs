@@ -15,17 +15,13 @@ namespace WarcraftLegacies.Source.Factions
 {
   public sealed class Bilgewater : Faction
   {
-    private readonly PreplacedUnitSystem _preplacedUnitSystem;
     private readonly AllLegendSetup _allLegendSetup;
-    private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    public Bilgewater(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Bilgewater", PLAYER_COLOR_LIGHT_GRAY, "|cff808080",
+    public Bilgewater(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Bilgewater", PLAYER_COLOR_LIGHT_GRAY, "|cff808080",
       @"ReplaceableTextures\CommandButtons\BTNHeroTinker.blp")
     {
-      _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
-      _artifactSetup = artifactSetup;
       StartingGold = 200;
       StartingLumber = 700;
       ControlPointDefenderUnitTypeId = Constants.UNIT_O01C_CONTROL_POINT_DEFENDER_GOBLIN;
@@ -40,8 +36,8 @@ Your advanced units require Oil to function. Use oil ships to find oil deposits 
 The Trading Center in Kezan will unlock the ability to train Traders. Be sure to protect the Trading Center once you unlock it, as it will form the backbone of your Goblin Empire.";
       GoldMines = new List<unit>
       {
-        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8615, -12869)), //Starting
-        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-730, -6777))    //Kezan
+        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8615, -12869)), //Starting
+        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-730, -6777))    //Kezan
       };
     }
         
@@ -51,9 +47,16 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
       RegisterObjectLimits();
       RegisterQuests();
       RegisterDialogue();
-      RegisterPowers();;
+      RegisterPowers();
     }
 
+    /// <inheritdoc />
+    public override void OnNotPicked()
+    {
+      Regions.KezanUnlock.CleanupNeutralPassiveUnits();
+      base.OnNotPicked();
+    }
+    
     private void RegisterObjectLimits()
     {
       ModObjectLimit(FourCC("o03L"), UNLIMITED); //Great Hall
