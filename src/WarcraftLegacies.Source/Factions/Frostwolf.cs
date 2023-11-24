@@ -4,9 +4,11 @@ using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
+using MacroTools.ResearchSystems;
 using WarcraftLegacies.Source.FactionMechanics.Frostwolf;
 using WarcraftLegacies.Source.Quests.Frostwolf;
 using WarcraftLegacies.Source.Quests.Warsong;
+using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -42,8 +44,9 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8793, -11350)),
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-15828, -3120))
       };
+      RegisterFactionDependentInitializer<Warsong>(RegisterWarsongRelatedResearches);
     }
-    
+
     /// <inheritdoc />
     public override void OnRegistered()
     {
@@ -234,6 +237,12 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
           {
             new ObjectiveLegendMeetsLegend(_allLegendSetup.Frostwolf.Cairne, _allLegendSetup.Frostwolf.Thrall)
           }));
+    }
+    
+    private void RegisterWarsongRelatedResearches(Warsong warsong)
+    {
+      ResearchManager.Register(new FlightPath(warsong, this, Constants.UPGRADE_R09N_FLIGHT_PATH_WARSONG, 70, 75,
+        _preplacedUnitSystem));
     }
   }
 }

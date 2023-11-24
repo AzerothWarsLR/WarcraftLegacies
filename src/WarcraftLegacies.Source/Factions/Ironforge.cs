@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using MacroTools;
 using MacroTools.FactionSystem;
+using MacroTools.ResearchSystems;
 using WarcraftLegacies.Source.Quests.Ironforge;
+using WarcraftLegacies.Source.Researches.Ironforge;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -33,14 +35,14 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(12079, -2768))
       };
+      RegisterFactionDependentInitializer<Stormwind>(RegisterStormwindResearches);
     }
-        
+
     /// <inheritdoc />
     public override void OnRegistered()
     {
       RegisterObjectLimits();
       RegisterQuests();
-      RegisterDialogue();
     }
 
     private void RegisterObjectLimits()
@@ -143,10 +145,11 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       };
       AddQuest(new QuestExpedition(missingArtifacts[GetRandomInt(0, missingArtifacts.Length - 1)]));
     }
-
-    private void RegisterDialogue()
+    
+    private void RegisterStormwindResearches(Stormwind stormwind)
     {
-      throw new System.NotImplementedException();
+      ResearchManager.Register(new DeeprunTram(this, stormwind, Constants.UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 70, 75,
+        _preplacedUnitSystem));
     }
   }
 }

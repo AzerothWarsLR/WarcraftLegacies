@@ -25,12 +25,6 @@ namespace WarcraftLegacies.Source.Setup
       TierReflectivePlating.Setup();
       TierVeteranGuard.Setup();
 
-      ResearchManager.Register(new DeeprunTram(Constants.UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 70, 75,
-        preplacedUnitSystem));
-
-      ResearchManager.Register(new FlightPath(Constants.UPGRADE_R09N_FLIGHT_PATH_WARSONG, 70, 75,
-        preplacedUnitSystem));
-
       ResearchManager.Register(new VeteranFootmen(Constants.UPGRADE_R00B_VETERAN_FOOTMEN_LORDAERON, 220, 120));
 
       ResearchManager.Register(new SunfuryWarrior(Constants.UPGRADE_R004_SUNFURY_TRAINING_QUEL_THALAS, 300, 300));
