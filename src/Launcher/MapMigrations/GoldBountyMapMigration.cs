@@ -39,6 +39,11 @@ namespace Launcher.MapMigrations
 
         if (unit.StatsGoldBountyAwardedNumberOfDice != maxValueOnDice)
           unit.StatsGoldBountyAwardedSidesPerDie = maxValueOnDice;
+
+        if (level == 0)
+          unit.StatsGoldBountyAwardedBase = 0;
+          unit.StatsGoldBountyAwardedNumberOfDice = 0;
+          unit.StatsGoldBountyAwardedSidesPerDie = 0;
       }
 
       map.UnitObjectData = objectDatabase.GetAllData().UnitData;
