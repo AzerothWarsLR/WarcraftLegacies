@@ -5,7 +5,6 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup.FactionSetup;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Scourge
@@ -47,7 +46,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       {
         _kelthuzad.UnitType = FourCC("U00M");
         _kelthuzad.PermaDies = false;
-        _kelthuzad.ForceCreate(ScourgeSetup.Scourge.Player, Regions.FTSummon.Center,
+        _kelthuzad.ForceCreate(whichFaction.Player, Regions.FTSummon.Center,
           270);
       }
       else
