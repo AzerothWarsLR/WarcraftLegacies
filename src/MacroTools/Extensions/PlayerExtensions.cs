@@ -97,6 +97,8 @@ namespace MacroTools.Extensions
         default:
           throw new ArgumentOutOfRangeException(nameof(allianceState), allianceState, null);
       }
+      
+      PlayerData.ByHandle(sourcePlayer).SignalAllianceChange();
     }
 
     /// <summary>
@@ -142,7 +144,7 @@ namespace MacroTools.Extensions
     public static Team? GetTeam(this player player) => PlayerData.ByHandle(player).Team;
 
     /// <summary>Sets the player's <see cref="Team"/>.</summary>
-    public static void SetTeam(this player player, Team whichTeam) => PlayerData.ByHandle(player).Team = whichTeam;
+    public static void SetTeam(this player player, Team whichTeam) => PlayerData.ByHandle(player).SetTeam(whichTeam);
 
     /// <summary>Returns the player's <see cref="Faction"/>.</summary>
     public static Faction? GetFaction(this player player) => PlayerData.ByHandle(player).Faction;

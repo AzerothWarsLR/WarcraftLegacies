@@ -53,7 +53,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
         : completingFaction.Player;
 
-      GiveCrossroads(completingFaction.Player);
+     rescuer.RescueGroup(_rescueUnits); ;
     }
 
     /// <inheritdoc/>

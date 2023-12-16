@@ -8,7 +8,7 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcBattleStandard.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\btnmassbloodlust.blp"
     },
     {
       "Id": 2020631137,
@@ -32,7 +32,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "For The Horde!"
+      "Value": "Mass Bloodlust"
     },
     {
       "Id": 1918988897,
@@ -62,13 +62,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "For The Horde!"
+      "Value": "Mass Bloodlust"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Inspires friendly units in the targetted area, increasing their attack speed by 30% and movement speed by 20%. Lasts 30 seconds. "
+      "Value": "Increases the attack speed by 30% and move speed by 20% of units inside the targetted area. |nLasts 30 seconds. "
     }
   ]
 }

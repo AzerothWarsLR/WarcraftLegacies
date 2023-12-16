@@ -29,7 +29,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons 12 friendly non-hero units from a target area to the caster."
+      "Value": "Summons 12 friendly non-hero units from a target area to the caster. The units will arrive at the caster after a 3 to 30 second delay, based on their distance from the caster. If the caster dies before the units arrive, half of the units will die in transit."
     },
     {
       "Id": 1952540001,
@@ -59,7 +59,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Legion Dummy)"
+      "Value": "(Dreadlord)"
     },
     {
       "Id": 2037408353,

@@ -1,6 +1,26 @@
 [
   {
     "State": 2,
+    "Life": 100,
+    "TypeId": 2004112454,
+    "Variation": 7,
+    "Position": {
+      "X": 15168,
+      "Y": 7872,
+      "Z": 125.8125
+    },
+    "Scale": {
+      "X": 0.9000001,
+      "Y": 0.9000001,
+      "Z": 0.9000001
+    },
+    "SkinId": 2004112454,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 10631
+  },
+  {
+    "State": 2,
     "Life": 255,
     "TypeId": 1769165644,
     "Position": {

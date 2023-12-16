@@ -15,21 +15,22 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       _target = target;
       Description = $"Your team controls {target.Name}";
       TargetWidget = target.Unit;
-      target.ChangedOwner += OnTargetChangeOwner;
       DisplaysPosition = true;
       Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
     }
 
     internal override void OnAdd(Faction whichFaction)
     {
-      Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer())
+      Progress = IsPlayerAlliedToAnyEligibleFaction(_target.Unit.OwningPlayer())
         ? QuestProgress.Complete
         : QuestProgress.Incomplete;
+      
+      _target.OwnerAllianceChanged += OnTargetTeamChanged;
     }
 
-    private void OnTargetChangeOwner(object? sender, ControlPointOwnerChangeEventArgs controlPointOwnerChangeEventArgs)
+    private void OnTargetTeamChanged(object? sender, ControlPoint controlPoint)
     {
-      Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer())
+      Progress = IsPlayerAlliedToAnyEligibleFaction(_target.Unit.OwningPlayer())
         ? QuestProgress.Complete
         : QuestProgress.Incomplete;
     }
