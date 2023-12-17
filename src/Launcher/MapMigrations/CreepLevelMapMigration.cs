@@ -8,7 +8,7 @@ namespace Launcher.MapMigrations
   /// </summary>
   public sealed class CreepLevelMapMigration : IMapMigration
   {
-    private readonly int healthFactor = 200;
+    private const int HealthFactor = 200;
 
     public void Migrate(Map map, ObjectDatabase objectDatabase)
     {
@@ -18,39 +18,41 @@ namespace Launcher.MapMigrations
         {
           var level = 0;
           var unitHealth = unit.StatsHitPointsMaximumBase;
-          var remainder = unitHealth % healthFactor;
+          var remainder = unitHealth % HealthFactor;
 
           if (remainder > 0)
             unitHealth -= remainder;
 
-          var healthDividedByFactor = unitHealth / healthFactor;
+          var healthDividedByFactor = unitHealth / HealthFactor;
 
           if (healthDividedByFactor < 8)
-          {
             level += healthDividedByFactor;
-          }
           else
-          {
             level += 7;
+
+          switch (unitHealth)
+          {
+            case >= 3000:
+              level += 3;
+              break;
+            case >= 2400:
+              level += 2;
+              break;
+            case >= 1800:
+              level += 1;
+              break;
           }
 
-          if (unitHealth >= 1800)
-            level += 1;
-
-          if (unitHealth >= 2400)
-            level += 1;
-
-          if (unitHealth >= 3000)
-            level += 1;
-
-          if (unit.CombatAttack1AttackType.Equals(War3Api.Object.Enums.AttackType.Chaos) || unit.CombatAttack1AttackType.Equals(War3Api.Object.Enums.AttackType.Hero))
+          if (unit.CombatAttack1AttackType.Equals(War3Api.Object.Enums.AttackType.Chaos) ||
+              unit.CombatAttack1AttackType.Equals(War3Api.Object.Enums.AttackType.Hero))
             level += 1;
 
           // is a flying unit
           if (unit.MovementHeight > 100)
             level += 1;
 
-          unit.StatsLevel = level;
+          if (unit.StatsLevel != level)
+            unit.StatsLevel = level;
         }
       }
 
