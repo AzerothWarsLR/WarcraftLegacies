@@ -42,9 +42,14 @@ namespace Launcher.MapMigrations
 
         if (level == 0)
         {
-          unit.StatsGoldBountyAwardedBase = 0;
-          unit.StatsGoldBountyAwardedNumberOfDice = 0;
-          unit.StatsGoldBountyAwardedSidesPerDie = 0;
+          if (unit.StatsGoldBountyAwardedBase != 0)
+            unit.StatsGoldBountyAwardedBase = 0;
+          
+          if (unit.StatsGoldBountyAwardedNumberOfDice != 0)
+            unit.StatsGoldBountyAwardedNumberOfDice = 0;
+          
+          if (unit.StatsGoldBountyAwardedSidesPerDie != 0)
+            unit.StatsGoldBountyAwardedSidesPerDie = 0;
         }
       }
 
