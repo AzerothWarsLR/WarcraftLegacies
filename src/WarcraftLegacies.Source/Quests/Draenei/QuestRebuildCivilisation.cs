@@ -45,7 +45,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     protected override string RewardFlavour => "Maraad joins the Draenai and the new settlement is born";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Gain 200 Lumber, an Outpost in Desolace and Maraad is now trainable at the altar.";
-
-   }
- }
+    protected override string RewardDescription =>
+      "Gain 200 Lumber, an Outpost in Desolace and Maraad is now trainable at the altar.";
+  }
+}

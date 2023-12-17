@@ -276,10 +276,10 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
               "Fountain of Health in Alterac")
           }));
     }
-    
+
     private void RegisterLegionDialogue(Legion legion)
     {
-            TriggeredDialogueManager.Add(
+      TriggeredDialogueManager.Add(
         new TriggeredDialogue(
           new DialogueSequence(
             new Dialogue(
