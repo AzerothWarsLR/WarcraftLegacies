@@ -13,33 +13,7 @@ namespace Launcher.MapMigrations
       foreach (var unit in objectDatabase.GetUnits())
       {
         var level = unit.StatsLevel;
-        const int scalingFactor = 4;
-        const int numberOfDiceConstant = 1;
-        const int maxValueOnDice = 2;
-        const int baseConstant = -2;
-        var baseGold = level * scalingFactor + baseConstant;
-
-        if (level >= 7)
-          baseGold += 5;
-
-        if (unit.StatsHitPointsMaximumBase >= 1500)
-          baseGold += 7;
-
-        if (unit.StatsHitPointsMaximumBase >= 2000)
-          baseGold += 10;
-
-        if (unit.StatsHitPointsMaximumBase >= 2500)
-          baseGold += 15;
-
-        if (unit.StatsGoldBountyAwardedBase != baseGold)
-          unit.StatsGoldBountyAwardedBase = baseGold;
-
-        if (unit.StatsGoldBountyAwardedNumberOfDice != level + numberOfDiceConstant)
-          unit.StatsGoldBountyAwardedNumberOfDice = level + numberOfDiceConstant;
-
-        if (unit.StatsGoldBountyAwardedNumberOfDice != maxValueOnDice)
-          unit.StatsGoldBountyAwardedSidesPerDie = maxValueOnDice;
-
+        
         if (level == 0)
         {
           if (unit.StatsGoldBountyAwardedBase != 0)
@@ -50,6 +24,35 @@ namespace Launcher.MapMigrations
           
           if (unit.StatsGoldBountyAwardedSidesPerDie != 0)
             unit.StatsGoldBountyAwardedSidesPerDie = 0;
+        }
+        else
+        {
+          const int scalingFactor = 4;
+          const int numberOfDiceConstant = 1;
+          const int maxValueOnDice = 2;
+          const int baseConstant = -2;
+          var baseGold = level * scalingFactor + baseConstant;
+
+          if (level >= 7)
+            baseGold += 5;
+
+          if (unit.StatsHitPointsMaximumBase >= 1500)
+            baseGold += 7;
+
+          if (unit.StatsHitPointsMaximumBase >= 2000)
+            baseGold += 10;
+
+          if (unit.StatsHitPointsMaximumBase >= 2500)
+            baseGold += 15;
+
+          if (unit.StatsGoldBountyAwardedBase != baseGold)
+            unit.StatsGoldBountyAwardedBase = baseGold;
+
+          if (unit.StatsGoldBountyAwardedNumberOfDice != level + numberOfDiceConstant)
+            unit.StatsGoldBountyAwardedNumberOfDice = level + numberOfDiceConstant;
+
+          if (unit.StatsGoldBountyAwardedNumberOfDice != maxValueOnDice)
+            unit.StatsGoldBountyAwardedSidesPerDie = maxValueOnDice;
         }
       }
 
