@@ -13,11 +13,11 @@ namespace Launcher.MapMigrations
       foreach (var unit in objectDatabase.GetUnits())
       {
         var level = unit.StatsLevel;
-        var scalingFactor = 4;
-        var numberOfDiceConstant = 1;
-        var maxValueOnDice = 2;
-        var baseConstant = -2;
-        var baseGold = (level * scalingFactor) + baseConstant;
+        const int scalingFactor = 4;
+        const int numberOfDiceConstant = 1;
+        const int maxValueOnDice = 2;
+        const int baseConstant = -2;
+        var baseGold = level * scalingFactor + baseConstant;
 
         if (level >= 7)
           baseGold += 5;
@@ -41,9 +41,11 @@ namespace Launcher.MapMigrations
           unit.StatsGoldBountyAwardedSidesPerDie = maxValueOnDice;
 
         if (level == 0)
+        {
           unit.StatsGoldBountyAwardedBase = 0;
           unit.StatsGoldBountyAwardedNumberOfDice = 0;
           unit.StatsGoldBountyAwardedSidesPerDie = 0;
+        }
       }
 
       map.UnitObjectData = objectDatabase.GetAllData().UnitData;
