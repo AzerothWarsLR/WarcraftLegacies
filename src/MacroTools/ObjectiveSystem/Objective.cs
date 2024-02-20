@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using MacroTools.DialogueSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
@@ -112,12 +113,9 @@ namespace MacroTools.ObjectiveSystem
     protected bool IsPlayerAlliedToAnyEligibleFaction(player whichPlayer)
     {
       foreach (var eligibleFaction in EligibleFactions)
-      {
-        var factionPlayer = eligibleFaction.Player;
-        if (factionPlayer != null && IsPlayerAlly(whichPlayer, factionPlayer))
+        if (eligibleFaction.Player?.IsPlayerAlly(whichPlayer) == true)
           return true;
-      }
-      
+
       return false;
     }
     
