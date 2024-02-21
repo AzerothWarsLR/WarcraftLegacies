@@ -61,7 +61,6 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
   {
     var manaAddiction = new UnitsStealMana(0.35f)
     {
-      IconName = "ManaShield",
       Name = "Mana Addiction"
     };
     whichFaction.AddPower(manaAddiction);
