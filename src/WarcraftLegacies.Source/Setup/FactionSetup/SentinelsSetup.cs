@@ -103,7 +103,6 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       };
       Sentinels.AddPower(new Immortality(25, 45, worldTrees)
       {
-        IconName = "ArcaneRessurection",
         Name = "Immortality",
         Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
         ResearchId = Constants.UPGRADE_YB01_IMMORTALITY_POWER_IS_ACTIVE

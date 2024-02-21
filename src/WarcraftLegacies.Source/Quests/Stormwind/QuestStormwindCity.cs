@@ -74,7 +74,6 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     {
       var rewardPower = new CityOfHeroes(0.125f, 1.5f, "Units")
       {
-        IconName = "Angel",
         Name = RewardPowerName,
         HeroGlowAbilityTypeId = Constants.ABILITY_A0GK_HERO_GLOW_ORIGIN,
         Filter = unit => !unit.IsType(UNIT_TYPE_MECHANICAL) && unit.GetTypeId() != Constants.UNIT_H05F_STORMWIND_CHAMPION_STORMWIND_ELITE,

@@ -35,7 +35,6 @@ namespace WarcraftLegacies.Source.Quests.Druids
       var power = new ShaladrassilsBlessing(_shaladrassil.Unit,
         Constants.UNIT_EFON_TREANT_DRUIDS_SUMMONED, 60, 12, 50)
       {
-        IconName = "TreeOfEternity"
       };
       completingFaction.AddPower(power);
       completingFaction.Player?.DisplayPowerAcquired(power);

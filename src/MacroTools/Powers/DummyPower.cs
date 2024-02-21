@@ -9,7 +9,6 @@ namespace MacroTools.Powers
     {
       Name = name;
       Description = description;
-      IconName = iconName;
     }
 
     public override void OnAdd(Common.player whichPlayer)
