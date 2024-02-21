@@ -20,12 +20,7 @@ namespace MacroTools.ArtifactSystem
     private static readonly Dictionary<int, Artifact> ArtifactsByType = new();
     private static readonly Dictionary<string, Artifact> ArtifactsByName = new();
     private static readonly List<Artifact> AllArtifacts = new();
-
-    /// <summary>
-    /// Fired when an <see cref="Artifact"/> is newly registered to the system.
-    /// </summary>
-    public static event EventHandler<Artifact>? ArtifactRegistered;
-
+    
     /// <summary>
     /// Returns the registered <see cref="Artifact"/> that represents the item with the provided item type ID.
     /// If there isn't one, returns null.
@@ -54,7 +49,6 @@ namespace MacroTools.ArtifactSystem
         SetItemDropOnDeath(artifact.Item, false);
         ArtifactsByType[GetItemTypeId(artifact.Item)] = artifact;
         ArtifactsByName.Add(GetItemName(artifact.Item).ToLower(), artifact);
-        ArtifactRegistered?.Invoke(artifact, artifact);
         AllArtifacts.Add(artifact);
       }
       else
