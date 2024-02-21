@@ -1,4 +1,5 @@
 using MacroTools.FactionSystem;
+using MacroTools.Powers;
 using static War3Api.Common;
 
 namespace TestMap.Source.Setup.FactionSetup.FactionSetup
@@ -18,6 +19,11 @@ namespace TestMap.Source.Setup.FactionSetup.FactionSetup
       Dalaran.ModObjectLimit(FourCC("Rhan"), 1);
       Dalaran.ModObjectLimit(FourCC("Rhri"), 1);
       Dalaran.ModObjectLimit(FourCC("Rhde"), 1);
+      
+      Dalaran.AddPower(new DummyPower("Cool Dalaran Guy", "You're from space, and can use spaceships.", "Marine"));
+      Dalaran.AddPower(new DummyPower("Good Job!", "You're from space, and can use spaceships.", "Marine"));
+      Dalaran.AddPower(new DummyPower("Gamer Time!", "You're from space, and can use spaceships.", "Marine"));
+      
       FactionManager.Register(Dalaran);
     }
   }
