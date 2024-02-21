@@ -8,6 +8,7 @@ namespace TestMap.Source.Setup
     public static void Setup(CommandManager commandManager)
     {
       commandManager.Register(new ListArtifacts());
+      commandManager.Register(new Artifact());
       commandManager.CreateInfoQuest();
     }
   }

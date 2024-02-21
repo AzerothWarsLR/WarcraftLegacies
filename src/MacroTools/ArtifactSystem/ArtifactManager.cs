@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.ShoreSystem;
@@ -37,8 +38,11 @@ namespace MacroTools.ArtifactSystem
     /// <para>Case insensitive.</para>
     /// <para>Returns null if there is no match.</para>
     /// </summary>
-    public static Artifact? GetFromName(string name) =>
-      ArtifactsByName.ContainsKey(name.ToLower()) ? ArtifactsByName[name.ToLower()] : null;
+    public static bool TryGetByName(string name, [NotNullWhen(true)] out Artifact? artifact)
+    {
+      artifact = ArtifactsByName.ContainsKey(name.ToLower()) ? ArtifactsByName[name.ToLower()] : null;
+      return artifact != null;
+    }
 
     /// <summary>
     /// Registers an <see cref="Artifact"/> to the <see cref="ArtifactManager"/>.

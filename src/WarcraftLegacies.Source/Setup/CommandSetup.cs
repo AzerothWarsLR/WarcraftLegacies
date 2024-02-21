@@ -25,6 +25,7 @@ namespace WarcraftLegacies.Source.Setup
       commandManager.Register(new GiveLumber("lumber"));
       commandManager.Register(new GiveLumber("l"));
       commandManager.Register(new ListArtifacts());
+      commandManager.Register(new Artifact());
       commandManager.CreateInfoQuest();
     }
   }
