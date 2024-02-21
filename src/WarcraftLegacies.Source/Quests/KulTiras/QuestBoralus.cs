@@ -64,7 +64,6 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     {
       var rewardPower = new CityOfHeroes(0.125f, 1.5f, "Ships")
       {
-        IconName = "LordAdmiralPendant",
         Name = RewardPowerName,
         HeroGlowAbilityTypeId = Constants.ABILITY_A0GK_HERO_GLOW_ORIGIN,
         Filter = unit =>

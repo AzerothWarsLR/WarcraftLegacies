@@ -26,14 +26,14 @@ namespace MacroTools.Commands
     public override string Description => "Sets your camera zoom to the specified distance.";
 
     /// <inheritdoc />
-    public override string Execute(player commandUser, params string[] parameters)
+    public override string Execute(player cheater, params string[] parameters)
     {
       var cameraHeight = parameters[0];
       if (!int.TryParse(cameraHeight, out var cameraHeightInt))
         return "You must specify a number as the first parameter.";
       
       cameraHeightInt = Math.Clamp(cameraHeightInt, 700, 2701);
-      PlayerData.ByHandle(commandUser).UpdatePlayerSetting("CamDistance", cameraHeightInt);
+      PlayerData.ByHandle(cheater).UpdatePlayerSetting("CamDistance", cameraHeightInt);
       return $"Setting camera height to {cameraHeightInt}.";
     }
   }

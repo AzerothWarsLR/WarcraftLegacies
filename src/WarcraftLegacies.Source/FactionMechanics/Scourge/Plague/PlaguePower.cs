@@ -60,7 +60,6 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge.Plague
     /// </summary>
     public PlaguePower(Faction victim)
     {
-      IconName = "PlagueBarrel";
       Name = "Plague of Undeath";
       Description = "All villagers on the map are periodically transformed into Zombies.";
       _victim = victim;

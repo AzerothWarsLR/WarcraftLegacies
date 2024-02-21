@@ -22,9 +22,9 @@ namespace MacroTools.Commands
     public override string Description => "Shows your current settings.";
 
     /// <inheritdoc />
-    public override string Execute(player commandUser, params string[] parameters)
+    public override string Execute(player cheater, params string[] parameters)
     {
-      var playerSettings = PlayerData.ByHandle(commandUser).PlayerSettings;
+      var playerSettings = PlayerData.ByHandle(cheater).PlayerSettings;
       return @"Current settings:
 Camera distance: " + playerSettings.CamDistance + @"
 

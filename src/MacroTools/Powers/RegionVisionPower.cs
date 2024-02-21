@@ -17,7 +17,6 @@ namespace MacroTools.Powers
     {
       Name = name;
       Description = description;
-      IconName = iconName;
       _visionRects = visionRects;
     }
 
