@@ -28,7 +28,6 @@ namespace TestMap.Source.Setup
       SpellSetup.Setup();
       CheatSetup.Setup(new CommandManager());
       FactionMultiboard.Setup();
-      BookSetup.Setup();
       TestSetup.Setup();
       WaygateManager.Setup(FourCC("nwgt"));
       HintSetup.Setup();

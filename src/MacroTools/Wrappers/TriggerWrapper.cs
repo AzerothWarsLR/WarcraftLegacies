@@ -20,11 +20,6 @@ namespace MacroTools.Wrappers
       TriggerRegisterUnitEvent(Trigger, whichUnit, whichEvent);
     }
 
-    public void RegisterFrameEvent(framehandle frame, frameeventtype frameeventtype)
-    {
-      BlzTriggerRegisterFrameEvent(Trigger, frame, frameeventtype);
-    }
-
     public void AddAction(Action actionFunc)
     {
       TriggerAddAction(Trigger, actionFunc);
