@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     }
 
     /// <inheritdoc/>
-    protected override string RewardFlavour => "Every worgen has been eliminated, the curse is lifting!";
+    public override string RewardFlavour => "Every worgen has been eliminated, the curse is lifting!";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Gain control of the Greymane Wall and Gilneas City. Enable to train Genn Greymane and the Worgen units";

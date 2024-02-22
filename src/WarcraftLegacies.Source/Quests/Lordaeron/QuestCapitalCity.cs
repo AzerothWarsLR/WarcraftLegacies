@@ -53,7 +53,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     private static bool RescueUnitFilter(unit whichUnit) => GetUnitTypeId(whichUnit) != Constants.UNIT_N08F_UNDERCITY_ENTRANCE;
 
     /// <inheritdoc/>
-    protected override string RewardFlavour =>
+    public override string RewardFlavour =>
       "The Capital City of Lordaeron has joined Arthas.";
 
     /// <inheritdoc/>

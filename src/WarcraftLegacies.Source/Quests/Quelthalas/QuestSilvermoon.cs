@@ -48,7 +48,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     }
 
     /// <inheritdoc />
-    protected override string RewardFlavour =>
+    public override string RewardFlavour =>
       "The Amani trolls have been eliminated, settling a racial feud that had persisted for millenia.";
 
     /// <inheritdoc />

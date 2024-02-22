@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
     }
 
     /// <inheritdoc/>
-    protected override string RewardFlavour =>
+    public override string RewardFlavour =>
       "The Third War is over. Archimonde has successfully consumed the energies of the Well of Eternity resting beneath Nordrassil. The last line of defense against the Burning Legion has fallen, and with it dies the hopes and dreams of Azeroth.";
 
     /// <inheritdoc/>

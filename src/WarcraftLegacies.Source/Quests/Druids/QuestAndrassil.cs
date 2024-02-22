@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
     }
     
     /// <inheritdoc/>
-    protected override string RewardFlavour =>
+    public override string RewardFlavour =>
       "With Grizzly Hills now being tended by the Trees of Life, the time is ripe to regrow Andrassil in the hope that it can help reclaim this barren land.";
 
     /// <inheritdoc/>

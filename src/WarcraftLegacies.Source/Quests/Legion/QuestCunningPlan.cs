@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       $"Gain control of a small base in Alterac, learn to generate a portal to Alterac using the Argus Teleporter, and gain a {GetObjectName(Constants.UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL)} in each of the following Scourge bases: Deathknell, Stratholme Coast, and Scholomance";
 
     /// <inheritdoc/>
-    protected override string RewardFlavour =>
+    public override string RewardFlavour =>
       "With the Plague now spreading amongst Lordaeron's populace, the Dreadlords set the second half of their plan in motion: a direct demonic incursion into the Eastern Kingdoms.";
 
     /// <inheritdoc/>

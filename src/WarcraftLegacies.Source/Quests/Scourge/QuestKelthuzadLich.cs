@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     }
 
     /// <inheritdoc />
-    protected override string RewardFlavour => "Kel'thuzad has been reanimated and empowered through the unlimited magical energies of the Sunwell. He now has the ability to summon the Burning Legion.";
+    public override string RewardFlavour => "Kel'thuzad has been reanimated and empowered through the unlimited magical energies of the Sunwell. He now has the ability to summon the Burning Legion.";
 
     /// <inheritdoc />
     protected override string RewardDescription => "Kel'thuzad becomes a Lich, and his Dark Ritual ability gains an additional effect to summon a Revenant";

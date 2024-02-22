@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
     }
 
     /// <inheritdoc/>
-    protected override string RewardFlavour =>
+    public override string RewardFlavour =>
       "The Dwarven Empire is re-united again, Ironforge is ready for war again.";
 
     /// <inheritdoc/>

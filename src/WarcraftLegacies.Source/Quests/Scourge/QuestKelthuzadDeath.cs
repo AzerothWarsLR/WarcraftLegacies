@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     private readonly ObjectiveEitherOf _objectiveEitherOf;
 
     /// <inheritdoc />
-    protected override string RewardFlavour => 
+    public override string RewardFlavour => 
       _objectiveEitherOf.ObjectiveA.Progress == QuestProgress.Complete
         ? "As foretold by the Lich King, Kel'thuzad has been slain. Unseen to his assailants, his spirit is carried away by the howling winds of Northrend and reconstituted at the base of Icecrown Citadel."
         : "In a rare twist of fate, the Lich King's prophecy did not come to pass: Kel'thuzad survived long enough to reach the Sunwell under his own power.";

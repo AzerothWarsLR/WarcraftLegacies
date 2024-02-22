@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
     }
 
     /// <inheritdoc />
-    protected override string RewardFlavour => "Ashenvale has awakened!";
+    public override string RewardFlavour => "Ashenvale has awakened!";
 
     /// <inheritdoc />
     protected override string RewardDescription =>

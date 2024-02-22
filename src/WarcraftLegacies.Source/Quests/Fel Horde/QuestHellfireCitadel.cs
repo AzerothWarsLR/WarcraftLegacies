@@ -40,7 +40,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     }
     
     /// <inheritdoc/>
-    protected override string RewardFlavour =>
+    public override string RewardFlavour =>
       "Hellfire Citadel has been subjugated, and its military is now free to assist the Fel Horde.";
     
     /// <inheritdoc/>

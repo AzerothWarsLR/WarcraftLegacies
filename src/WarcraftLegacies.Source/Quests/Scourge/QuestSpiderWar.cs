@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     }
 
     /// <inheritdoc/>
-    protected override string RewardFlavour =>
+    public override string RewardFlavour =>
       "Northrend and the Icecrown Citadel is now under full control of the Lich King and the Scourge.";
 
     /// <inheritdoc/>

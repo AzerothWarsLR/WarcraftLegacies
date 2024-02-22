@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests
     protected override string RewardDescription => "Ragnaros is summoned near the Blackrock Depths, and can be slain to acquire Sulfuras";
 
     /// <inheritdoc/>
-    protected override string RewardFlavour => $"{_heroInRectObjective.CompletingUnitName} has seized control of the portal to the Firelands, and can now summon Ragnaros.";
+    public override string RewardFlavour => $"{_heroInRectObjective.CompletingUnitName} has seized control of the portal to the Firelands, and can now summon Ragnaros.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

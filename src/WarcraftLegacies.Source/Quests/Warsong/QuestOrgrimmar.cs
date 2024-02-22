@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     }
 
     /// <inheritdoc/>
-    protected override string RewardFlavour => "The city of Orgrimmar was finally constructed by the Warsong engineers, it is now a home for the new Horde and a symbol of power and innovation";
+    public override string RewardFlavour => "The city of Orgrimmar was finally constructed by the Warsong engineers, it is now a home for the new Horde and a symbol of power and innovation";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Control of all units in Orgrimmar, able to train Varok and Azerite Siege Engines";

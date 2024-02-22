@@ -52,7 +52,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     }
 
     /// <inheritdoc />
-    protected override string RewardFlavour
+    public override string RewardFlavour
     {
       get
       {

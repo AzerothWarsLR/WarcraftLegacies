@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     }
 
     /// <inheritdoc/>
-    protected override string RewardFlavour =>
+    public override string RewardFlavour =>
       "Kul'tiras has joined the war and its military is now free to assist the Alliance.";
 
     /// <inheritdoc/>

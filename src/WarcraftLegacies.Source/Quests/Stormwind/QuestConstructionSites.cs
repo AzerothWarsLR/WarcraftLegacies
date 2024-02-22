@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     }
 
     /// <inheritdoc />
-    protected override string RewardFlavour => "Stormwind's Construction Sites are now ready to be upgraded.";
+    public override string RewardFlavour => "Stormwind's Construction Sites are now ready to be upgraded.";
 
     /// <inheritdoc />
     protected override string RewardDescription => "Your Construction Sites can be upgraded";

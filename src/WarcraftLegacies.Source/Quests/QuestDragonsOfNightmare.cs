@@ -75,7 +75,7 @@ namespace WarcraftLegacies.Source.Quests
     protected override string RewardDescription => $"A portal between {_portalOneLocation} and {_portalTwoLocation} opens";
 
     /// <inheritdoc/>
-    protected override string RewardFlavour => $"The Dragons of Nightmare {_nightmareDragonKalimdor.GetProperName()} and {_nightmareDragonEk.GetProperName()} have been defeated.";
+    public override string RewardFlavour => $"The Dragons of Nightmare {_nightmareDragonKalimdor.GetProperName()} and {_nightmareDragonEk.GetProperName()} have been defeated.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

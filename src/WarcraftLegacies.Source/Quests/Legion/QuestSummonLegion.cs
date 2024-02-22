@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
     }
 
     /// <inheritdoc />
-    protected override string RewardFlavour => 
+    public override string RewardFlavour => 
       $"A great portal to the depths of the Twisting Nether has been opened by {_objectiveCastSpell.Caster?.GetProperName()}. The Burning Legion steps forth, heralding the beginning of the end.";
 
     /// <inheritdoc />

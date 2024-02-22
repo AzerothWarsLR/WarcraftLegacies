@@ -1,3 +1,4 @@
+using MacroTools.Extensions;
 using WCSharp.Events;
 using static War3Api.Common;
 
@@ -9,12 +10,9 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
     
     private static void OnSell()
     {
-      KillUnit(GetTriggerUnit());
-      BlzSetUnitFacingEx(GetSoldUnit(), GetUnitFacing(GetTriggerUnit()));
-      if (GetLocalPlayer() == GetOwningPlayer(GetSoldUnit()))
-      {
-        SelectUnit(GetSoldUnit(), true);
-      }
+      GetTriggerUnit().Kill();
+      GetSoldUnit().SetFacingEx(GetTriggerUnit().GetFacing());
+      GetSoldUnit().OwningPlayer().Select(GetSoldUnit());
     }
 
     public static void Setup()

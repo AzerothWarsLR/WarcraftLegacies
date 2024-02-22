@@ -45,7 +45,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     }
 
     /// <inheritdoc/>
-    protected override string RewardFlavour =>
+    public override string RewardFlavour =>
       "Dalaran outskirs are now secure, the mages will join Dalaran.";
 
     /// <inheritdoc/>

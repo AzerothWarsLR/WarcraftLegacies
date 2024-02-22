@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
     }
 
     /// <inheritdoc />
-    protected override string RewardFlavour => "We have succesfully expanded our trade empire!";
+    public override string RewardFlavour => "We have succesfully expanded our trade empire!";
 
     /// <inheritdoc />
     protected override string RewardDescription => "You can now train Traders and train Gallywix at the Altar of Industry";

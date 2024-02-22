@@ -47,7 +47,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// <summary>
     /// <inheritdoc/>
     /// </summary>
-    protected override string RewardFlavour =>
+    public override string RewardFlavour =>
       "The Draenai of the Ashtongue tribe have joined our cause.";
 
     /// <summary>

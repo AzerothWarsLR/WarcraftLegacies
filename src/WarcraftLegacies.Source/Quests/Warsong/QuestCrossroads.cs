@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     }
 
     /// <inheritdoc/>
-    protected override string RewardFlavour => "The Crossroads have been constructed";
+    public override string RewardFlavour => "The Crossroads have been constructed";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Control of the Crossroads";

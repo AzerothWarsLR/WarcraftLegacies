@@ -161,6 +161,17 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>
+    /// Selects the specified unit for the player.
+    /// </summary>
+    public static player Select(this player whichPlayer, unit whichUnit)
+    {
+      if (GetLocalPlayer() == whichPlayer)
+        SelectUnit(GetSoldUnit(), true);
+      
+      return whichPlayer;
+    }
+
+    /// <summary>
     /// Returns cross-game settings set by the player.
     /// </summary>
     internal static PlayerSettings GetPlayerSettings(this player whichPlayer) =>

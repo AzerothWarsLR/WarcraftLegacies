@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 
     //Todo: bad flavour
     /// <inheritdoc/>
-    protected override string RewardFlavour =>
+    public override string RewardFlavour =>
       "Korghal has been defeated, Rexxar has joined the Frostwolf!";
 
     /// <inheritdoc/>
