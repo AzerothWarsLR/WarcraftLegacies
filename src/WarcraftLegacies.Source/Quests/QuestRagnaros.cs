@@ -61,8 +61,9 @@ namespace WarcraftLegacies.Source.Quests
         .SetScale(2)
         .SetLifespan(1);
       _ragnarosSummoningPedestal.Kill();
-      GetLocalPlayer()
-        .DisplayLegendaryHeroSummoned(_ragnaros, 
+
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+        player.DisplayLegendaryHeroSummoned(_ragnaros,
           "Ragnaros, the Elemental Lord of Fire, has been forcibly called forth into Azeroth. The air smolders with his arrival, and Blackrock Mountain erupts in raging infernos that can be seen for miles.");
     }
   }

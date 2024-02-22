@@ -295,9 +295,8 @@ namespace MacroTools.QuestSystem
           };
       if (faction.Player != null && faction.Player.GetPlayerSettings().ShowQuestText)
         DisplayTextToPlayer(faction.Player, 0, 0, display);
-      var sound = SoundLibrary.Failed;
-      if (GetLocalPlayer() == faction.Player)
-        StartSound(sound);
+
+      faction.Player?.PlaySound(SoundLibrary.Failed);
     }
 
     private void DisplayCompleted(Faction faction)
@@ -308,9 +307,8 @@ namespace MacroTools.QuestSystem
           display = $"{display} - |cff808080{questItem.Description} (Completed)|r\n";
       if (faction.Player != null && faction.Player.GetPlayerSettings().ShowQuestText)
         DisplayTextToPlayer(faction.Player, 0, 0, display);
-      var sound = SoundLibrary.Completed;
-      if (GetLocalPlayer() == faction.Player) 
-        StartSound(sound);
+
+      faction.Player?.PlaySound(SoundLibrary.Completed);
     }
 
     /// <summary>
