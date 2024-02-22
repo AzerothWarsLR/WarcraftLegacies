@@ -187,8 +187,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
     {
       //Powers
       var visionPower = new RegionVisionPower("All-Seeing",
-        "Grants permanent vision over Northrend.",
-        "Charm", new[]
+        "Grants permanent vision over Northrend.", new[]
         {
           Regions.Storm_Peaks,
           Regions.Central_Northrend,
