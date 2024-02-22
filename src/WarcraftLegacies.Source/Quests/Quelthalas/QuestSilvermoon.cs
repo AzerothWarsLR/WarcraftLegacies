@@ -72,12 +72,13 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player.RescueGroup(_rescueUnits);
+      completingFaction.Player
+        .RescueGroup(_rescueUnits)
+        .PlayMusicThematic("war3mapImported\\SilvermoonTheme.mp3");
+      
       if (UnitAlive(_elvenRunestone))
         _silvermoon.Unit?.SetInvulnerable(true);
       _sunwell.Unit?.SetInvulnerable(true);
-      if (GetLocalPlayer() == completingFaction.Player)
-        PlayThematicMusic("war3mapImported\\SilvermoonTheme.mp3");
     }
   }
 }

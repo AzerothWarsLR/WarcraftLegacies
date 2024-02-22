@@ -82,12 +82,14 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Indicates to the player that they have acquired a new <see cref="Power"/>.
     /// </summary>
-    public static void DisplayPowerAcquired(this player whichPlayer, Power power)
+    public static player DisplayPowerAcquired(this player whichPlayer, Power power)
     {
       DisplayTextToPlayer(whichPlayer, 0, 0,
         $"\n|cff00ff00NEW POWER ACQUIRED - {power.Name}\n|r{power.Description}");
       if (GetLocalPlayer() == whichPlayer)
         StartSound(SoundLibrary.Hint);
+
+      return whichPlayer;
     }
 
     /// <summary>

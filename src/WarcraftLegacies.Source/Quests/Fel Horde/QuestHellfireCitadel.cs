@@ -50,11 +50,9 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      if(completingFaction.Player != null)
-      {
-        completingFaction.Player.RescueGroup(_rescueUnits);
-      }
-      if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\FelTheme.mp3");
+      completingFaction.Player?
+        .RescueGroup(_rescueUnits)
+        .PlayMusicThematic("war3mapImported\\FelTheme.mp3");
     }
 
     /// <inheritdoc/>

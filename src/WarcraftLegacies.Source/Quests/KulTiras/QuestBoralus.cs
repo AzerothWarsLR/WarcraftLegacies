@@ -79,12 +79,11 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       completingFaction.Player?.DisplayPowerAcquired(rewardPower);
       
       if (completingFaction.Player != null)
-        completingFaction.Player.RescueGroup(_rescueUnits);
+        completingFaction.Player
+          .RescueGroup(_rescueUnits)
+          .PlayMusicThematic("war3mapImported\\KultirasTheme.mp3");
       else
         Player(bj_PLAYER_NEUTRAL_VICTIM).RescueGroup(_rescueUnits);
-
-      if (GetLocalPlayer() == completingFaction.Player) 
-        PlayThematicMusic("war3mapImported\\KultirasTheme.mp3");
     }
   }
 }

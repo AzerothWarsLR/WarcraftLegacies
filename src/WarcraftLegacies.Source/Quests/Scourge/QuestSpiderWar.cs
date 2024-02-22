@@ -56,9 +56,9 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player.RescueGroup(_rescueUnits);
-      SetPlayerTechResearched(completingFaction.Player, FourCC("R03A"), 1);
-      if (GetLocalPlayer() == completingFaction.Player) PlayThematicMusic("war3mapImported\\ScourgeTheme.mp3");
+      completingFaction.Player
+        .RescueGroup(_rescueUnits)
+        .PlayMusicThematic("war3mapImported\\ScourgeTheme.mp3");
     }
 
     /// <inheritdoc/>

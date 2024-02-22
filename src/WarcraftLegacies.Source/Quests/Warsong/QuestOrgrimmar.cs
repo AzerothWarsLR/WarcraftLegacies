@@ -40,9 +40,8 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     {
       foreach (var unit in _rescueUnits) 
         unit.Rescue(completingFaction.Player);
-      
-      if (GetLocalPlayer() == completingFaction.Player) 
-        PlayThematicMusic("war3mapImported\\OrgrimmarTheme.mp3");
+
+      completingFaction.Player?.PlayMusicThematic("war3mapImported\\OrgrimmarTheme.mp3");
     }
 
     /// <inheritdoc/>

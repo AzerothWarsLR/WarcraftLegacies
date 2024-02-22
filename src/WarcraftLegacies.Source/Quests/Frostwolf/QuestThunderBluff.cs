@@ -58,12 +58,9 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      if (completingFaction.Player != null)
-      { 
-        completingFaction.Player.RescueGroup(_rescueUnits);
-        if (GetLocalPlayer() == completingFaction.Player) 
-          PlayThematicMusic("war3mapImported\\TaurenTheme.mp3");
-      }
+      completingFaction.Player?
+        .RescueGroup(_rescueUnits)
+        .PlayMusicThematic("war3mapImported\\TaurenTheme.mp3");
     }
   }
 }

@@ -55,9 +55,9 @@ namespace WarcraftLegacies.Source.Quests.Druids
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player.RescueGroup(_rescueUnits);
-      if (GetLocalPlayer() == completingFaction.Player) 
-        PlayThematicMusic("war3mapImported\\DruidTheme.mp3");
+      completingFaction.Player
+        .RescueGroup(_rescueUnits)
+        .PlayMusicThematic("war3mapImported\\DruidTheme.mp3");
     }
   }
 }

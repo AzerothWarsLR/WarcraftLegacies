@@ -45,18 +45,6 @@ namespace MacroTools.Extensions
     /// </summary>
     public static int GetFoodCapCeiling(this player whichPlayer) =>
       GetPlayerState(whichPlayer, PLAYER_STATE_FOOD_CAP_CEILING);
-
-    /// <summary>
-    /// Plays the specified sound for the player.
-    /// </summary>
-    /// <returns></returns>
-    public static player PlaySound(this player whichPlayer, sound sound)
-    {
-      if (GetLocalPlayer() == whichPlayer)
-        StartSound(sound);
-        
-      return whichPlayer;
-    }
     
     /// <summary>Removes all of the player's resources.</summary>
     public static player RemoveAllResources(this player whichPlayer)

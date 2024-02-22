@@ -51,10 +51,11 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
         .SetInvulnerable(false);
       SetUnitOwner(_gilneasDoor, whichFaction.Player, true);
 
-      whichFaction.Player.RescueGroup(_rescueUnits);
+      whichFaction.Player
+        .RescueGroup(_rescueUnits)
+        .PlayMusicThematic("war3mapImported\\GilneasTheme1.mp3");
+      
       RockSystem.Register(new RockGroup(Regions.GilneasUnlock5, FourCC("LTrc"), 1));
-      if (GetLocalPlayer() == whichFaction.Player)
-        PlayThematicMusic("war3mapImported\\GilneasTheme1.mp3");
     }
 
     /// <inheritdoc/>

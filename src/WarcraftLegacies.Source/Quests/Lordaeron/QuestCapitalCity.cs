@@ -87,10 +87,11 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
         _uther.Unit?.SetLevel(5, false);
       }
 
-      completingFaction.Player?.RescueGroup(_rescueUnits);
+      completingFaction.Player?
+        .RescueGroup(_rescueUnits)
+        .PlayMusicThematic("war3mapImported\\CapitalCity.mp3");
+      
       SetUnitInvulnerable(_terenas, true);
-      if (GetLocalPlayer() == completingFaction.Player)
-        PlayThematicMusic("war3mapImported\\CapitalCity.mp3");
       _uther.AddUnitDependency(_capitalPalace.Unit);
     }
   }
