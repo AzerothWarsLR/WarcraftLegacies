@@ -1,6 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
-using MacroTools.Wrappers;
+using MacroTools.Sound;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -38,16 +38,16 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
 
       var caster = GetTriggerUnit();
       var targetPoint = new Point(GetOrderPointX(), GetOrderPointY());
-      var sound = new SoundWrapper(_warningSoundPath);
-      sound.Play(true);
+      var sound = SoundUtils.CreateNormalSound(_warningSoundPath);
+      StartSound(sound);
       var dummyNukeWarning =
         CreateUnit(caster.OwningPlayer(), _nuclearWarningUnitTypeId, targetPoint.X, targetPoint.Y, 0);
+      
       UnitApplyTimedLife(dummyNukeWarning, 0, _castTime);
-      BLockLaunchWarningAnimation();
-
+      BlockLaunchWarningAnimation();
     }
 
-    private void BLockLaunchWarningAnimation()
+    private void BlockLaunchWarningAnimation()
     {
       _warningActive = true;
       TimerStart(CreateTimer(), _castTime, false, () =>

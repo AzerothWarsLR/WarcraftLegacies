@@ -1,5 +1,5 @@
 ﻿using MacroTools.Extensions;
-using MacroTools.Wrappers;
+using MacroTools.Sound;
 using static War3Api.Common;
 
 namespace MacroTools.DialogueSystem
@@ -12,11 +12,11 @@ namespace MacroTools.DialogueSystem
     private readonly string _caption;
     private readonly string _speaker;
     
-    /// <summary>The <see cref="SoundWrapper"/> played by this <see cref="Dialogue"/>.</summary>
-    public SoundWrapper Sound { get; }
+    /// <summary>The sound played by this <see cref="Dialogue"/>.</summary>
+    public sound Sound { get; }
 
     /// <inheritdoc />
-    public float Length => GetSoundDuration(Sound.Sound) / 1000f;
+    public float Length => GetSoundDuration(Sound) / 1000f;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="Dialogue"/> class.
@@ -28,7 +28,7 @@ namespace MacroTools.DialogueSystem
     {
       _caption = caption;
       _speaker = speaker;
-      Sound = new SoundWrapper(soundFile, soundEax: SoundEax.HeroAcks);
+      Sound = SoundUtils.CreateNormalSound(soundFile, soundEax: SoundEax.HeroAcks);
     }
 
     /// <inheritdoc />
@@ -37,7 +37,7 @@ namespace MacroTools.DialogueSystem
       if (whichPlayer != null)
       {
         if (PlayerData.ByHandle(whichPlayer).PlayerSettings.PlayDialogue)
-          Sound.Play(whichPlayer, false);
+          whichPlayer.PlaySound(Sound);
         if (PlayerData.ByHandle(whichPlayer).PlayerSettings.ShowCaptions)
           DisplayTextToPlayer(whichPlayer, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
       }
@@ -46,7 +46,7 @@ namespace MacroTools.DialogueSystem
         if (PlayerData.ByHandle(GetLocalPlayer()).PlayerSettings.ShowCaptions)
           DisplayTextToPlayer(GetLocalPlayer(), 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
         if (PlayerData.ByHandle(GetLocalPlayer()).PlayerSettings.PlayDialogue)
-          Sound.Play(false);
+          whichPlayer?.PlaySound(Sound);
       }
     }
   }

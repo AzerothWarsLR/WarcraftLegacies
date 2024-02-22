@@ -4,6 +4,7 @@ using MacroTools.ControlPointSystem;
 using MacroTools.GameModes;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Save;
+using MacroTools.Sound;
 using MacroTools.UserInterface;
 using WarcraftLegacies.Source.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic;

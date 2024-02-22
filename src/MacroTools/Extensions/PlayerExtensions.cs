@@ -4,6 +4,7 @@ using MacroTools.ControlPointSystem;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
+using MacroTools.Sound;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -369,6 +370,18 @@ namespace MacroTools.Extensions
     {
       whichPlayer.SetGold(0);
       whichPlayer.SetLumber(0);
+      return whichPlayer;
+    }
+
+    /// <summary>
+    /// Plays the specified sound for the player.
+    /// </summary>
+    /// <returns></returns>
+    public static player PlaySound(this player whichPlayer, sound sound)
+    {
+      if (GetLocalPlayer() == whichPlayer)
+        StartSound(sound);
+        
       return whichPlayer;
     }
   }

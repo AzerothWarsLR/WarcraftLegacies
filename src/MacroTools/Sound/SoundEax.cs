@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MacroTools.Wrappers
+namespace MacroTools.Sound
 {
   /// <summary>
   /// Environmental audio extensions.

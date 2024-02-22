@@ -45,6 +45,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(19331f, -30663))
       };
+      RegisterDialogue();
       RegisterFactionDependentInitializer<Dalaran>(RegisterDalaranDialogue);
       RegisterFactionDependentInitializer<Illidari>(RegisterIllidariDialogue);
       RegisterFactionDependentInitializer<Frostwolf>(RegisterFrostwolfDialogue);
@@ -150,10 +151,22 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       ResearchManager.Register(new PowerResearch(Constants.UPGRADE_R096_REMATERIALIZATION_LEGION, 150, 250,
         new Rematerialization(0.15f, new Point(20454.9f, -28873.6f), "Argus", Regions.MonolithNoBuild)
         {
-          IconName = "achievement_raid_argusraid",
           Name = "Rematerialization",
           EligibilityCondition = dyingUnit => dyingUnit.OwningPlayer().GetObjectLimit(dyingUnit.GetTypeId()) != 0
         }));
+    }
+    
+    private void RegisterDialogue()
+    {
+      TriggeredDialogueManager.Add(new TriggeredDialogue(new Dialogue(
+        @"Sound\Dialogue\UndeadCampaign\Undead08\U08Archimonde19.flac",
+        "Tremble, mortals, and despair! Doom has come to this world!", "Archimonde"), new Faction[]
+      {
+        this
+      }, new Objective[]
+      {
+        new ObjectiveQuestComplete(GetQuestByType<QuestSummonLegion>())
+      }));
     }
     
     private void RegisterDalaranDialogue(Dalaran dalaran)
