@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives;
+using MacroTools.Sound;
 using static War3Api.Common;
 
 namespace MacroTools.QuestSystem
@@ -292,7 +293,7 @@ namespace MacroTools.QuestSystem
             QuestProgress.Failed => $"{display} - |cffCD5C5C{questItem.Description} (Failed)|r\n",
             _ => $"{display} - {questItem.Description}\n"
           };
-      if (faction.Player != null && PlayerData.ByHandle(faction.Player).PlayerSettings.ShowQuestText)
+      if (faction.Player != null && faction.Player.GetPlayerSettings().ShowQuestText)
         DisplayTextToPlayer(faction.Player, 0, 0, display);
       var sound = SoundLibrary.Failed;
       if (GetLocalPlayer() == faction.Player)
@@ -305,7 +306,7 @@ namespace MacroTools.QuestSystem
       foreach (var questItem in _objectives)
         if (questItem.ShowsInQuestLog)
           display = $"{display} - |cff808080{questItem.Description} (Completed)|r\n";
-      if (faction.Player != null && PlayerData.ByHandle(faction.Player).PlayerSettings.ShowQuestText)
+      if (faction.Player != null && faction.Player.GetPlayerSettings().ShowQuestText)
         DisplayTextToPlayer(faction.Player, 0, 0, display);
       var sound = SoundLibrary.Completed;
       if (GetLocalPlayer() == faction.Player) 
@@ -326,11 +327,10 @@ namespace MacroTools.QuestSystem
             ? $"{display} - |cff808080{questItem.Description} (Completed)|r\n"
             : $"{display} - {questItem.Description}\n";
         }
-      if (faction.Player != null && PlayerData.ByHandle(faction.Player).PlayerSettings.ShowQuestText)
+      if (faction.Player != null && faction.Player.GetPlayerSettings().ShowQuestText)
         DisplayTextToPlayer(faction.Player, 0, 0, display);
       var sound = SoundLibrary.Discovered;
-      if (GetLocalPlayer() == faction.Player) 
-        StartSound(sound);
+      faction.Player?.PlaySound(sound);
     }
 
     private void OnQuestItemProgressChanged(object? sender, Objective changedObjective)
