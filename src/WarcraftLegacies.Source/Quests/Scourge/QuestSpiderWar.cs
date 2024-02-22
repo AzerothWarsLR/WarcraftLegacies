@@ -15,8 +15,8 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 {
   public sealed class QuestSpiderWar : QuestData
   {
-    private static readonly int QuestResearchId = Constants.UPGRADE_R03A_QUEST_COMPLETED_WAR_OF_THE_SPIDER;
-    private readonly List<unit> _rescueUnits = new();
+    private const int QuestResearchId = Constants.UPGRADE_R03A_QUEST_COMPLETED_WAR_OF_THE_SPIDER;
+    private readonly List<unit> _rescueUnits;
 
     public QuestSpiderWar(Rectangle rescueRect, unit spiderQueen) : base("War of the Spider",
       "The proud Nerubians have declared war on the newly formed Lich King, destroy them to secure the continent of Northrend.",
