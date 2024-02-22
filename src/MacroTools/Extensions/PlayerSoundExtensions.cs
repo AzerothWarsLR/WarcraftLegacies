@@ -21,7 +21,9 @@ namespace MacroTools.Extensions
     /// </summary>
     public static player PlayMusicThematic(this player whichPlayer, string musicPath)
     {
-      PlayThematicMusic(musicPath);
+      if (GetLocalPlayer() == whichPlayer)
+        PlayThematicMusic(musicPath);
+      
       return whichPlayer;
     }
   }

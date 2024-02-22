@@ -102,5 +102,17 @@ namespace MacroTools.Extensions
         $"\n|cffd45e19LEGENDARY FOE SUMMONED - {legendaryHero.Name}\n|r{message}");
       StartSound(SoundLibrary.Warning);
     }
+
+    /// <summary>
+    /// Pings the minimap using some sensible defaults.
+    /// </summary>
+    public static player PingMinimapSimple(this player whichPlayer, float x, float y, float duration, int red = 255,
+      int green = 255, int blue = 255, bool extraEffects = false)
+    {
+      if (GetLocalPlayer() == whichPlayer)
+        PingMinimapEx(x, y, duration, red, green, blue, extraEffects);
+
+      return whichPlayer;
+    }
   }
 }
