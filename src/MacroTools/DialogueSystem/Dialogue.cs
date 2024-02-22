@@ -36,17 +36,17 @@ namespace MacroTools.DialogueSystem
     {
       if (whichPlayer != null)
       {
-        if (PlayerData.ByHandle(whichPlayer).PlayerSettings.PlayDialogue)
+        if (whichPlayer.GetPlayerSettings().PlayDialogue)
           whichPlayer.PlaySound(Sound);
-        if (PlayerData.ByHandle(whichPlayer).PlayerSettings.ShowCaptions)
+        if (whichPlayer.GetPlayerSettings().ShowCaptions)
           DisplayTextToPlayer(whichPlayer, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
       }
       else
       {
-        if (PlayerData.ByHandle(GetLocalPlayer()).PlayerSettings.ShowCaptions)
+        if (GetLocalPlayer().GetPlayerSettings().ShowCaptions)
           DisplayTextToPlayer(GetLocalPlayer(), 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
-        if (PlayerData.ByHandle(GetLocalPlayer()).PlayerSettings.PlayDialogue)
-          whichPlayer?.PlaySound(Sound);
+        if (GetLocalPlayer().GetPlayerSettings().PlayDialogue)
+          StartSound(Sound);
       }
     }
   }
