@@ -148,7 +148,6 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
       var oilPower = new OilPower
       {
         Name = "Oil Tycoon",
-        IconName = "OilStation",
         StartingRandomOilPoolCount = 3,
         MaximumOilPoolCount = 15,
         OilPoolMinimumValue = 1500,

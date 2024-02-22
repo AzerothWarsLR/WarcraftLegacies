@@ -36,7 +36,6 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     {
       var power = new PlayerVisionPower("Cult Spies",
         "Grants vision of all of Lordaeron's units.",
-        "Acolyte",
         new[]
         {
           _lordaeron.Player

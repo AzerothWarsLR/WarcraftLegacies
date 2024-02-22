@@ -194,7 +194,6 @@ Gather your forces and strike before the Horde can organize their efforts.";
       };
       AddPower(new Immortality(25, 45, worldTrees)
       {
-        IconName = "ArcaneRessurection",
         Name = "Immortality",
         Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
         ResearchId = Constants.UPGRADE_YB01_IMMORTALITY_POWER_IS_ACTIVE

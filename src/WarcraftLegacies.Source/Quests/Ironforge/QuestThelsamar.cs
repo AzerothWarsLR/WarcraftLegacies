@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
 {
   public sealed class QuestThelsamar : QuestData
   {
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
 
     public QuestThelsamar(PreplacedUnitSystem preplacedUnitSystem, Rectangle rescueRect) : base("Murloc Menace",
       "A vile group of Murloc is terrorizing Thelsamar. Destroy them!",
