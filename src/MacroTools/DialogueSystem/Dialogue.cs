@@ -32,22 +32,12 @@ namespace MacroTools.DialogueSystem
     }
 
     /// <inheritdoc />
-    public void Play(player? whichPlayer)
+    public void Play(player whichPlayer)
     {
-      if (whichPlayer != null)
-      {
-        if (whichPlayer.GetPlayerSettings().PlayDialogue)
-          whichPlayer.PlaySound(Sound);
-        if (whichPlayer.GetPlayerSettings().ShowCaptions)
-          DisplayTextToPlayer(whichPlayer, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
-      }
-      else
-      {
-        if (GetLocalPlayer().GetPlayerSettings().ShowCaptions)
-          DisplayTextToPlayer(GetLocalPlayer(), 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
-        if (GetLocalPlayer().GetPlayerSettings().PlayDialogue)
-          StartSound(Sound);
-      }
+      if (whichPlayer.GetPlayerSettings().PlayDialogue)
+        whichPlayer.PlaySound(Sound);
+      if (whichPlayer.GetPlayerSettings().ShowCaptions)
+        DisplayTextToPlayer(whichPlayer, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
     }
   }
 }
