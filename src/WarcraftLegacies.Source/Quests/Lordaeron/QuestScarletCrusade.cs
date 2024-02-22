@@ -143,9 +143,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
       whichPlayer.AddGold(StartingGold);
       whichPlayer.AddLumber(StartingLumber);
-
-      if (GetLocalPlayer() == whichPlayer)
-        SetCameraPosition(20629, 10112);
+      whichPlayer.RepositionCamera(20629, 10112);
     }
   }
 }

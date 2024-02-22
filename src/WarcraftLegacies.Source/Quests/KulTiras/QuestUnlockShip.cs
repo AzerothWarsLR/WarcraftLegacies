@@ -75,8 +75,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
           SetUnitPosition(unit, 6864, -17176);
       }
 
-      if (GetLocalPlayer() == whichPlayer)
-        SetCameraPosition(6864, -17176);
+      whichPlayer.RepositionCamera(6864, -17176);
     }
 
     /// <inheritdoc/>

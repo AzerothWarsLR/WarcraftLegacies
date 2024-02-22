@@ -21,14 +21,9 @@ namespace MacroTools.FactionChoices
     {
       var pickedFaction = choice.Data;
       HasChoiceBeenPicked = true;
-      if (GetLocalPlayer() == pickingPlayer && pickedFaction.StartingCameraPosition != null)
-      {
-        var startingCameraPosition = pickedFaction.StartingCameraPosition;
-        if (startingCameraPosition != null)
-          SetCameraPosition(startingCameraPosition.X,
-            startingCameraPosition.Y);
-      }
-      
+      if (pickedFaction.StartingCameraPosition != null)
+        pickingPlayer.RepositionCamera(pickedFaction.StartingCameraPosition);
+
       FactionManager.Register(pickedFaction);
       pickingPlayer.SetFaction(pickedFaction);
       var startingUnits = pickedFaction.StartingUnits;

@@ -68,9 +68,8 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       
       if (completingFaction.ScoreStatus == ScoreStatus.Defeated)
         return;
-      
-      if (GetLocalPlayer() == completingFaction.Player)
-        SetCameraPosition(_rescueRect.Center.X, _rescueRect.Center.Y);
+
+      completingFaction.Player?.RepositionCamera(_rescueRect.Center.X, _rescueRect.Center.Y);
       CreateSecondChanceUnits(completingFaction);
       completingFaction.Player?.AddGold(GoldOnFail);
       completingFaction.Player?.AddLumber(LumberOnFail);

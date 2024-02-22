@@ -50,16 +50,6 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>
-    /// Applies a particular camera field to the player's view.
-    /// </summary>
-    public static void ApplyCameraField(this player whichPlayer, camerafield whichField, float value, float duration)
-    {
-      if (GetLocalPlayer() != whichPlayer)
-        return;
-      SetCameraField(whichField, value, duration);
-    }
-
-    /// <summary>
     /// Returns true if <paramref name="firstPlayer"/> is an ally of <paramref name="secondPlayer"/>.
     /// </summary>
     public static bool IsPlayerAlly(this player firstPlayer, player secondPlayer) =>
