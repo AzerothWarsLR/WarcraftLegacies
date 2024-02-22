@@ -330,8 +330,7 @@ namespace MacroTools.QuestSystem
       if (faction.Player != null && faction.Player.GetPlayerSettings().ShowQuestText)
         DisplayTextToPlayer(faction.Player, 0, 0, display);
       var sound = SoundLibrary.Discovered;
-      if (GetLocalPlayer() == faction.Player) 
-        StartSound(sound);
+      faction.Player?.PlaySound(sound);
     }
 
     private void OnQuestItemProgressChanged(object? sender, Objective changedObjective)
