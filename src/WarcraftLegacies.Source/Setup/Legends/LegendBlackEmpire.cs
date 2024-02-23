@@ -8,8 +8,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
   public sealed class LegendBlackEmpire
   {
     public LegendaryHero Nzoth { get; }
-    public LegendaryHero Vezax { get; }
-    public LegendaryHero Volazj { get; }
+    public LegendaryHero Zonozz { get; }
+    public LegendaryHero Xkorr { get; }
     public LegendaryHero Yorsahj { get; }
 
     public LegendBlackEmpire(PreplacedUnitSystem preplacedUnitSystem)
@@ -21,29 +21,29 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 10000,
       };
 
-      Vezax = new LegendaryHero("General Vezax")
+      Zonozz = new LegendaryHero("General Vezax")
       {
-        UnitType = Constants.UNIT_U02B_YOGG_SARON_CHAMPION,
+        UnitType = Constants.UNIT_U00P_LIEUTENANT_OF_N_ZOTH,
         StartingXp = 7000,
       };
 
-      Volazj = new LegendaryHero("Herald Volazj")
+      Xkorr = new LegendaryHero("X'korr the Compelling")
       {
-        UnitType = Constants.UNIT_E01D_N_RAQI_ARCANIST_YOGG,
+        UnitType = Constants.UNIT_E01D_MOUTH_OF_N_ZOTH_YOGG,
         StartingXp = 7000,
       };
 
       Yorsahj = new LegendaryHero("Yor'sahj")
       {
-        UnitType = Constants.UNIT_U02A_N_RAQI_ABERRATION_YOGG,
+        UnitType = Constants.UNIT_U02B_N_RAQI_ABERRATION,
         StartingXp = 7000,
       };
     }
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Nzoth);
-      LegendaryHeroManager.Register(Vezax);
-      LegendaryHeroManager.Register(Volazj);
+      LegendaryHeroManager.Register(Zonozz);
+      LegendaryHeroManager.Register(Xkorr);
       LegendaryHeroManager.Register(Yorsahj);
     }
   }

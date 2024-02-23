@@ -63,9 +63,9 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 
       // All Nzoth Heroes listed below - with total limits
 
-      BlackEmpire.ModObjectLimit(Constants.UNIT_U02A_N_RAQI_ABERRATION_YOGG, 1);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_U02B_YOGG_SARON_CHAMPION, 1);
-      BlackEmpire.ModObjectLimit(Constants.UNIT_E01D_N_RAQI_ARCANIST_YOGG, 1);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_U00P_LIEUTENANT_OF_N_ZOTH, 1);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_U02B_N_RAQI_ABERRATION, 1);
+      BlackEmpire.ModObjectLimit(Constants.UNIT_E01D_MOUTH_OF_N_ZOTH_YOGG, 1);
 
       BlackEmpire.ModObjectLimit(FourCC("R00K"), Faction.UNLIMITED); //Power Infusion
 

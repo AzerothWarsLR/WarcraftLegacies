@@ -29,11 +29,11 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 
 
       Cthun.ModObjectLimit(Constants.UNIT_U019_DRONE_C_THUN_WORKER, Faction.UNLIMITED);
-      Cthun.ModObjectLimit(Constants.UNIT_O000_SILITHID_COLOSSUS_C_THUN_ELITES, 6);
+      Cthun.ModObjectLimit(Constants.UNIT_O000_SILITHID_ROYALTY_C_THUN_ELITES, 6);
 
       Cthun.ModObjectLimit(Constants.UNIT_N06I_SILITHID_WARRIOR_C_THUN_SILITHID_WARRIOR, Faction.UNLIMITED);
       Cthun.ModObjectLimit(Constants.UNIT_O00L_SILITHID_REAVER_C_THUN_SILITHID_REAVER, Faction.UNLIMITED);
-      Cthun.ModObjectLimit(Constants.UNIT_U013_GIANT_SCARAB_C_THUN_GIANT_SCARAB, Faction.UNLIMITED);
+      Cthun.ModObjectLimit(Constants.UNIT_U013_SILITHID_COLOSSUS_C_THUN_GIANT_SCARAB, Faction.UNLIMITED);
 
       Cthun.ModObjectLimit(Constants.UNIT_N060_SILITHID_TUNNELER_C_THUN_SILITHID_TUNNELER, Faction.UNLIMITED);
       Cthun.ModObjectLimit(Constants.UNIT_N05V_SHADOW_WEAVER_C_THUN_FACELESS_SHADOW_WEAVER, Faction.UNLIMITED);

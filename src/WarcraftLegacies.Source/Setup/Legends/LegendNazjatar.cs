@@ -7,7 +7,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
   {
     public LegendaryHero Azshara { get; }
     public LegendaryHero Sivara { get; }
-    public LegendaryHero Zakajz { get; }
     public LegendaryHero Nazjar { get; }
 
     public LegendNazjatar()
@@ -24,12 +23,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 7000,
       };
 
-      Zakajz = new LegendaryHero("Zakajz")
-      {
-        UnitType = Constants.UNIT_U00P_C_THRAX_ABERRATION,
-        StartingXp = 7000,
-      };
-
       Nazjar = new LegendaryHero("Naz'jar")
       {
         UnitType = Constants.UNIT_H0A5_SEA_WITCH_NZOTH,
@@ -40,7 +33,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       LegendaryHeroManager.Register(Azshara);
       LegendaryHeroManager.Register(Sivara);
-      LegendaryHeroManager.Register(Zakajz);
       LegendaryHeroManager.Register(Nazjar);
     }
   }

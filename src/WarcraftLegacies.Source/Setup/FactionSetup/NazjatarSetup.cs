@@ -60,7 +60,6 @@ namespace WarcraftLegacies.Source.Setup.FactionSetup
 
       // All Nzoth Heroes listed below - with total limits
 
-      Nazjatar.ModObjectLimit(Constants.UNIT_U00P_C_THRAX_ABERRATION, 1);
       Nazjatar.ModObjectLimit(Constants.UNIT_H08U_EMPRESS_OF_NAZJATAR_NZOTH, 1);
       Nazjatar.ModObjectLimit(Constants.UNIT_H0A5_SEA_WITCH_NZOTH, 1);
       Nazjatar.ModObjectLimit(Constants.UNIT_U02U_ABYSSAL_COMMANDER_NAZJATAR, 1);
