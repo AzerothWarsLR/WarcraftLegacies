@@ -16,6 +16,7 @@ namespace WarcraftLegacies.Source.Setup
     public static Team Crisis { get; private set; }
     public static Team Draenei { get; private set; }
     public static Team Oldgods { get; private set; }
+    public static Team Kalimdor { get; private set; }
 
 
     public static void Setup( ){
@@ -96,6 +97,12 @@ namespace WarcraftLegacies.Source.Setup
         VictoryMusic = "HeroicVictory"
       };
       FactionManager.Register(Draenei);
+
+      Kalimdor = new Team("Kalimdor")
+      {
+        VictoryMusic = "HeroicVictory"
+      };
+      FactionManager.Register(Kalimdor);
     }
 
   }

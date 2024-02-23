@@ -28,6 +28,7 @@ namespace WarcraftLegacies.Source.Setup
       NazjatarSetup.Setup(preplacedUnitSystem);
       BlackEmpireSetup.Setup(preplacedUnitSystem);
       TwilightHammerSetup.Setup(preplacedUnitSystem);
+      SkywallSetup.Setup(preplacedUnitSystem);
     }
   }
 }

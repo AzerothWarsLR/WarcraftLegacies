@@ -12,6 +12,8 @@ namespace WarcraftLegacies.Source.Setup.QuestSetup
       if (frostwolf == null) 
         return;
       frostwolf.StartingQuest = frostwolf.AddQuest(new QuestThunderBluff(preplacedUnitSystem, Regions.ThunderBluff));
+      frostwolf.AddQuest(new QuestCrossroadsFrostwolf(Regions.Crossroads, preplacedUnitSystem));
+      frostwolf.AddQuest(new QuestOrgrimmarFrostwolf(Regions.Orgrimmar));
       frostwolf.AddQuest(new QuestStonemaul(preplacedUnitSystem, Regions.StonemaulKeep));
       frostwolf.AddQuest(new QuestDarkspear());
       frostwolf.AddQuest(new QuestRagetotem(allLegendSetup.Frostwolf.Cairne));
