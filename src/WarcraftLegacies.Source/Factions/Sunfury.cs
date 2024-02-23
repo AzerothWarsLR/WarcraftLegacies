@@ -18,8 +18,8 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    public Sunfury(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Sunfury", PLAYER_COLOR_MAROON, "|cffff0000",
-      @"ReplaceableTextures\CommandButtons\BTNBloodMage2.blp")
+    public Sunfury(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
+      : base("Sunfury", PLAYER_COLOR_MAROON, "|cffff0000", @"ReplaceableTextures\CommandButtons\BTNBloodMage2.blp")
     {
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
@@ -51,6 +51,17 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
       RegisterObjectLimits();
       RegisterQuests();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    }
+    
+    /// <inheritdoc />
+    public override void OnNotPicked()
+    {
+      Regions.Area52Unlock.CleanupNeutralPassiveUnits();
+      Regions.Netherstorm.CleanupNeutralPassiveUnits();
+      Regions.UpperNetherstorm.CleanupNeutralPassiveUnits();
+      Regions.TempestKeep.CleanupNeutralPassiveUnits();
+      _preplacedUnitSystem.GetUnit(Constants.UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER).Remove();
+      base.OnNotPicked();
     }
 
     private void RegisterObjectLimits()

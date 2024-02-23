@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionChoices;
@@ -21,8 +20,8 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    public Illidari(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Illidan", PLAYER_COLOR_VIOLET, "|cffff00ff",
-      @"ReplaceableTextures\CommandButtons\BTNEvilIllidan.blp")
+    public Illidari(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Illidan", PLAYER_COLOR_VIOLET,
+      "|cffff00ff", @"ReplaceableTextures\CommandButtons\BTNEvilIllidan.blp")
     {
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
@@ -54,6 +53,14 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
       RegisterQuests();
       RegisterDialogue();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    }
+
+    /// <inheritdoc />
+    public override void OnNotPicked()
+    {
+      Regions.IllidanStartingPosition.CleanupNeutralPassiveUnits();
+      Regions.IllidanBlackTempleUnlock.CleanupNeutralPassiveUnits();
+      base.OnNotPicked();
     }
 
     private void RegisterObjectLimits()
@@ -137,7 +144,7 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
           new ObjectiveQuestComplete(GetQuestByType<QuestBlackTemple>())
         }
       ));
-      
+
       TriggeredDialogueManager.Add(new TriggeredDialogue(
         new Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Illidan45.flac",
           "At last! The Tomb of Sargeras is found!",
@@ -152,7 +159,7 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
         }
       ));
     }
-    
+
     private void RegisterSentinelsDialogue(Sentinels sentinels)
     {
       TriggeredDialogueManager.Add(
@@ -172,7 +179,7 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
           {
             new ObjectiveLegendMeetsLegend(_allLegendSetup.Naga.Vashj, _allLegendSetup.Sentinels.Maiev)
           }));
-      
+
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new DialogueSequence(new Dialogue(
               @"Sound\Dialogue\NightElfExpCamp\NightElf03x\S03Illidan45",
@@ -190,7 +197,7 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
           {
             new ObjectiveLegendMeetsLegend(_allLegendSetup.Naga.Illidan, _allLegendSetup.Sentinels.Maiev)
           }));
-      
+
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new DialogueSequence(new Dialogue(
             @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Illidan31",
@@ -216,12 +223,11 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
           {
             new ObjectiveLegendMeetsLegend(_allLegendSetup.Naga.Illidan, _allLegendSetup.Sentinels.Tyrande)
           }));
-
     }
 
     private void RegisterDruidsDialogue(Druids druids)
     {
-            TriggeredDialogueManager.Add(
+      TriggeredDialogueManager.Add(
         new TriggeredDialogue(
           new DialogueSequence(new Dialogue(
               @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Illidan38",
@@ -256,7 +262,7 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
           new ObjectiveLegendMeetsLegend(_allLegendSetup.Naga.Illidan, _allLegendSetup.Scourge.Anubarak)
         }
       ));
-      
+
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new DialogueSequence(new Dialogue(
               @"Sound\Dialogue\UndeadExpCamp\Undead08x\L08Illidan27",
@@ -275,7 +281,7 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
             new ObjectiveLegendMeetsLegend(_allLegendSetup.Naga.Illidan, _allLegendSetup.Scourge.Arthas)
           }));
     }
-    
+
     private void RegisterSentinelsDruidsDialogue(Sentinels sentinels, Druids druids)
     {
       TriggeredDialogueManager.Add(
