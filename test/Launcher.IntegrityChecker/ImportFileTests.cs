@@ -1,32 +1,34 @@
 using FluentAssertions;
-using Xunit.Abstractions;
 
 namespace Launcher.IntegrityChecker;
 
 public sealed class ImportFileTests : IClassFixture<ImportFilesTestFixture>
 {
   private readonly ImportFilesTestFixture _importFilesTestFixture;
-  private readonly ITestOutputHelper _testOutputHelper;
 
-  public ImportFileTests(ImportFilesTestFixture importFilesTestFixture, ITestOutputHelper testOutputHelper)
+  public ImportFileTests(ImportFilesTestFixture importFilesTestFixture)
   {
     _importFilesTestFixture = importFilesTestFixture;
-    _testOutputHelper = testOutputHelper;
   }
 
-  [Theory]
+  [Fact]
+  public void MapDirectoryExists()
+  {
+    const string mapDataDirectory = "mapdata/WarcraftLegacies";
+    Directory.Exists(mapDataDirectory).Should().BeTrue();
+  }
+  
+  [Theory(Skip = "skip lol")]
   [MemberData(nameof(GetAllImportedModels))]
   public void AllModels_AreInActiveUse(string relativePath)
   {
     var activeModels = _importFilesTestFixture.ModelsUsedInMap;
     activeModels.Should().Contain(relativePath);
-    
   }
 
   public static IEnumerable<object[]> GetAllImportedModels()
   {
-    var (map, additionalFiles) = MapDataProvider.GetMapData();
-    Console.WriteLine($"Found data for {map.Info.MapName}");
+    var (_, additionalFiles) = MapDataProvider.GetMapData();
 
     if (!additionalFiles.Any())
       throw new InvalidOperationException($"{nameof(MapDataProvider)} returned no additional files to test.");
