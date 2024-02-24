@@ -22,11 +22,7 @@ namespace Launcher.IntegrityChecker
       var inaccessibleUnits = _mapTestFixture.ObjectDatabase.GetUnits().ToList();
 
       foreach (var preplacedUnit in preplacedUnitTypes)
-      {
-        inaccessibleUnits.Remove(preplacedUnit);
-        foreach (var preplacedUnitChild in GetChildren(preplacedUnit))
-          inaccessibleUnits.Remove(preplacedUnitChild);
-      }
+        MarkObjectAsAccessible(preplacedUnit, inaccessibleUnits);
 
       if (inaccessibleUnits.Count <= 0) 
         return;
@@ -40,23 +36,20 @@ namespace Launcher.IntegrityChecker
       throw new XunitException(exceptionMessageBuilder.ToString());
     }
  
-    private static IEnumerable<Unit> GetChildren(Unit unit)
+    private static void MarkObjectAsAccessible(Unit unit, ICollection<Unit> inaccessibleUnits)
     {
+      if (!inaccessibleUnits.Contains(unit))
+        return;
+      
+      inaccessibleUnits.Remove(unit);
+      
       if (unit.IsTechtreeUnitsTrainedModified)
         foreach (var trainedUnit in unit.TechtreeUnitsTrained)
-        {
-          yield return trainedUnit;
-          foreach (var trainedUnitChildren in GetChildren(trainedUnit))
-            yield return trainedUnitChildren;
-        }
+          MarkObjectAsAccessible(trainedUnit, inaccessibleUnits);
 
       if (unit.IsTechtreeStructuresBuiltModified)
         foreach (var builtStructure in unit.TechtreeStructuresBuilt)
-        {
-          yield return builtStructure;
-          // foreach (var builtStructureChildren in GetChildren(builtStructure))
-          //   yield return builtStructureChildren;
-        }
+          MarkObjectAsAccessible(builtStructure, inaccessibleUnits);
     }
 
     private static string GetReadableId(BaseObject baseObject) =>
