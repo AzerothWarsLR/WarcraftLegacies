@@ -1,5 +1,4 @@
 ﻿using War3Api.Object;
-using War3Api.Object.Abilities;
 
 namespace Launcher.IntegrityChecker.TestSupport
 {
@@ -10,12 +9,12 @@ namespace Launcher.IntegrityChecker.TestSupport
   {
     public List<Unit> Units { get; }
     
-    public List<Ability> Abilities { get; }
+    public List<Upgrade> Upgrades { get; }
 
-    public InaccessibleObjectCollection(List<Unit> units, List<Ability> abilities)
+    public InaccessibleObjectCollection(List<Unit> units, List<Upgrade> upgrades)
     {
       Units = units;
-      Abilities = abilities;
+      Upgrades = upgrades;
     }
 
     public void RemoveWithChildren(Unit unit)
@@ -33,29 +32,17 @@ namespace Launcher.IntegrityChecker.TestSupport
         foreach (var builtStructure in unit.TechtreeStructuresBuilt)
           RemoveWithChildren(builtStructure);
 
-      // if (unit.IsAbilitiesNormalModified)
-      //   foreach (var ability in unit.AbilitiesNormal)
-      //     RemoveWithChildren(ability);
+      if (unit.IsTechtreeResearchesAvailableModified)
+        foreach (var research in unit.TechtreeResearchesAvailable)
+          RemoveWithChildren(research);
     }
 
-    private void RemoveWithChildren(Ability ability)
+    private void RemoveWithChildren(Upgrade upgrade)
     {
-      if (!Abilities.Contains(ability))
+      if (!Upgrades.Contains(upgrade))
         return;
 
-      Abilities.Remove(ability);
-      
-      switch (ability)
-      {
-        case SummonSeaElemental summonSeaElemental:
-        {
-          for (var i = 0; i < summonSeaElemental.StatsLevels; i++)
-            if (summonSeaElemental.IsDataSummonedUnitTypeModified[i])
-              RemoveWithChildren(summonSeaElemental.DataSummonedUnitType[i]);
-
-          return;
-        }
-      }
+      Upgrades.Remove(upgrade);
     }
   }
 }
