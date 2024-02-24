@@ -39,4 +39,11 @@ jobs:
             -   name: Build
                 run: dotnet build
             -   name: Test
-                run: dotnet test --verbosity normal
+                run: dotnet test --logger "trx;LogFileName=test-results.trx"
+              - name: Test Report
+            -   uses: dorny/test-reporter@v1
+                if: success() || failure()
+                with:
+                    name: Integrity Tests
+                    path: test-results.trx
+                    reporter: dotnet-trx
