@@ -1,5 +1,7 @@
-﻿using Launcher.Services;
+﻿using Launcher.Extensions;
+using Launcher.Services;
 using Launcher.Settings;
+using War3Api.Object;
 using War3Net.Build;
 
 namespace Launcher.IntegrityChecker
@@ -10,10 +12,13 @@ namespace Launcher.IntegrityChecker
   public sealed class MapTestFixture
   {
     public Map Map { get; }
+    
+    public ObjectDatabase ObjectDatabase { get; }
 
     public MapTestFixture()
     {
       (Map, _) = MapDataProvider.GetMapData();
+      ObjectDatabase = Map.GetObjectDatabaseFromMap();
       AdvancedMapBuilder.AddCSharpCode(Map, "../../../../../src/WarcraftLegacies.Source/", new CompilerSettings());
     }
   }
