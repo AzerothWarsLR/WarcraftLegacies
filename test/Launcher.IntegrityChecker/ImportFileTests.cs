@@ -8,7 +8,7 @@ public sealed class ImportFileTests : IClassFixture<ImportFilesTestFixture>
 
   public ImportFileTests(ImportFilesTestFixture importFilesTestFixture) => _importFilesTestFixture = importFilesTestFixture;
 
-  [Theory(Skip = "Map based tests currently do not successfully compile the map when run on Github Actions.")]
+  [Theory]
   [MemberData(nameof(GetAllImportedModels))]
   public void AllModels_AreInActiveUse(string relativePath)
   {
