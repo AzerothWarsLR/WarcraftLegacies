@@ -1,23 +1,47 @@
-﻿using System.Text.RegularExpressions;
-using Launcher.Services;
-using Launcher.Settings;
+using System.Text.RegularExpressions;
+using FluentAssertions;
 using War3Net.Build;
 using War3Net.Build.Object;
 
-namespace Launcher.IntegrityChecker
+namespace Launcher.IntegrityChecker;
+
+public sealed class ImportedModelTests : IClassFixture<MapTestFixture>
 {
-  public sealed class ImportFilesTestFixture
+  private readonly MapTestFixture _mapTestFixture;
+
+  public ImportedModelTests(MapTestFixture mapTestFixture)
   {
-    public HashSet<string> ModelsUsedInMap { get; }
+    _mapTestFixture = mapTestFixture;
+  }
+  
+  [Theory]
+  [MemberData(nameof(GetAllImportedModels))]
+  public void AllModels_AreInActiveUse(string relativePath)
+  {
+    var activeModels = GetModelsUsedInMap(_mapTestFixture.Map).OrderBy(x => x).ToHashSet();
+    activeModels.Contains(relativePath).Should().BeTrue($"the model {relativePath} exists in the map so it should be used by an ability, doodad, buff, destructable, or script");
+  }
 
-    public ImportFilesTestFixture()
+  public static IEnumerable<object[]> GetAllImportedModels()
+  {
+    var (_, additionalFiles) = MapDataProvider.GetMapData();
+
+    if (!additionalFiles.Any())
+      throw new InvalidOperationException($"{nameof(MapDataProvider)} returned no additional files to test.");
+
+    foreach (var pathData in MapDataProvider.GetMapData().AdditionalFiles)
     {
-      var (map, _) = MapDataProvider.GetMapData();
-      AdvancedMapBuilder.AddCSharpCode(map, "../../../../../src/WarcraftLegacies.Source/", new CompilerSettings());
-      ModelsUsedInMap = GetModelsUsedInMap(map).OrderBy(x => x).ToHashSet();
+      if (pathData.RelativePath.IsModelPath())
+      {
+        yield return new object[]
+        {
+          pathData.RelativePath.NormalizeModelPath()
+        };
+      }
     }
-
-    private static IEnumerable<string> GetModelsUsedInMap(Map map)
+  }
+  
+      private static IEnumerable<string> GetModelsUsedInMap(Map map)
     {
       return GetModelsUsedByUnits(map.UnitSkinObjectData)
         .Concat(GetModelsUsedByAbilities(map.AbilitySkinObjectData))
@@ -91,5 +115,4 @@ namespace Launcher.IntegrityChecker
 
     private static bool IsModelField(ObjectDataModification modification) =>
       modification.Type == ObjectDataType.String && modification.ValueAsString.IsModelPath();
-  }
 }
