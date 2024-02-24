@@ -23,7 +23,7 @@ namespace Launcher.IntegrityChecker
         .Concat(GetModelsUsedByDoodads(map.DoodadObjectData))
         .Concat(GetModelsUsedByBuffs(map.BuffSkinObjectData))
         .Concat(GetModelsUsedByDestructables(map.DestructableSkinObjectData))
-        //.Concat(GetModelsUsedByScript(map.Script))
+        .Concat(GetModelsUsedByScript(map.Script))
         .Select(x => x.NormalizeModelPath());
     }
 
