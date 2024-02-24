@@ -145,10 +145,8 @@ namespace Launcher.Services
       
       // Collect required paths and compile
       var coreSystemFiles = CoreSystemProvider.GetCoreSystemFiles();
-      var blizzardJ = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
-        "Warcraft III/JassHelper/Blizzard.j");
-      var commonJ = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
-        "Warcraft III/JassHelper/common.j");
+      const string blizzardJ = "../../../../../build/blizzard.j";
+      const string commonJ = "../../../../../build/common.j";
       var mapScriptBuilder = new MapScriptBuilder();
       mapScriptBuilder.SetDefaultOptionsForCSharpLua();
       mapScriptBuilder.ForceGenerateGlobalDestructableVariable = false;
