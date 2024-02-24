@@ -1,12 +1,18 @@
 using FluentAssertions;
+using Xunit.Abstractions;
 
 namespace Launcher.IntegrityChecker;
 
 public sealed class ImportFileTests : IClassFixture<ImportFilesTestFixture>
 {
   private readonly ImportFilesTestFixture _importFilesTestFixture;
+  private readonly ITestOutputHelper _testOutputHelper;
 
-  public ImportFileTests(ImportFilesTestFixture importFilesTestFixture) => _importFilesTestFixture = importFilesTestFixture;
+  public ImportFileTests(ImportFilesTestFixture importFilesTestFixture, ITestOutputHelper testOutputHelper)
+  {
+    _importFilesTestFixture = importFilesTestFixture;
+    _testOutputHelper = testOutputHelper;
+  }
 
   [Theory]
   [MemberData(nameof(GetAllImportedModels))]
@@ -14,11 +20,14 @@ public sealed class ImportFileTests : IClassFixture<ImportFilesTestFixture>
   {
     var activeModels = _importFilesTestFixture.ModelsUsedInMap;
     activeModels.Should().Contain(relativePath);
+    
   }
 
-  public static IEnumerable<object[]> GetAllImportedModels()
+  public IEnumerable<object[]> GetAllImportedModels()
   {
-    var additionalFiles = MapDataProvider.GetMapData().AdditionalFiles;
+    var (map, additionalFiles) = MapDataProvider.GetMapData();
+    _testOutputHelper.WriteLine($"Found data for {map.Info.MapName}");
+
     if (!additionalFiles.Any())
       throw new InvalidOperationException($"{nameof(MapDataProvider)} returned no additional files to test.");
 
