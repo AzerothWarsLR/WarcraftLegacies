@@ -6,12 +6,12 @@ using Xunit.Sdk;
 
 namespace Launcher.IntegrityChecker
 {
-  public sealed class ObjectEditorAccessibilityTests : IClassFixture<MapTestFixture>
+  public sealed class ObjectDataAccessibilityTests : IClassFixture<MapTestFixture>
   {
     private readonly MapTestFixture _mapTestFixture;
     private readonly InaccessibleObjectCollection _inaccesibleObjects;
 
-    public ObjectEditorAccessibilityTests(MapTestFixture mapTestFixture)
+    public ObjectDataAccessibilityTests(MapTestFixture mapTestFixture)
     {
       _mapTestFixture = mapTestFixture;
       _inaccesibleObjects = GetInaccessibleObjects();
