@@ -18,7 +18,7 @@ public sealed class ImportFileTests : IClassFixture<ImportFilesTestFixture>
     Directory.Exists(mapDataDirectory).Should().BeTrue();
   }
   
-  [Theory(Skip = "skip lol")]
+  [Theory]
   [MemberData(nameof(GetAllImportedModels))]
   public void AllModels_AreInActiveUse(string relativePath)
   {
