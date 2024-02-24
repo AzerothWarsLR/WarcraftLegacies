@@ -6,19 +6,23 @@ public sealed class ImportFileTests : IClassFixture<ImportFilesTestFixture>
 {
   private readonly ImportFilesTestFixture _importFilesTestFixture;
 
-  public ImportFileTests(ImportFilesTestFixture importFilesTestFixture) => _importFilesTestFixture = importFilesTestFixture;
-
-  [Theory(Skip = "Map based tests currently do not successfully compile the map when run on Github Actions.")]
+  public ImportFileTests(ImportFilesTestFixture importFilesTestFixture)
+  {
+    _importFilesTestFixture = importFilesTestFixture;
+  }
+  
+  [Theory]
   [MemberData(nameof(GetAllImportedModels))]
   public void AllModels_AreInActiveUse(string relativePath)
   {
     var activeModels = _importFilesTestFixture.ModelsUsedInMap;
-    activeModels.Should().Contain(relativePath);
+    activeModels.Contains(relativePath).Should().BeTrue($"the model {relativePath} exists in the map so it should be used by an ability, doodad, buff, destructable, or script");
   }
 
   public static IEnumerable<object[]> GetAllImportedModels()
   {
-    var additionalFiles = MapDataProvider.GetMapData().AdditionalFiles;
+    var (_, additionalFiles) = MapDataProvider.GetMapData();
+
     if (!additionalFiles.Any())
       throw new InvalidOperationException($"{nameof(MapDataProvider)} returned no additional files to test.");
 
