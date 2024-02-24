@@ -23,10 +23,10 @@ public sealed class ImportFileTests : IClassFixture<ImportFilesTestFixture>
     
   }
 
-  public IEnumerable<object[]> GetAllImportedModels()
+  public static IEnumerable<object[]> GetAllImportedModels()
   {
     var (map, additionalFiles) = MapDataProvider.GetMapData();
-    _testOutputHelper.WriteLine($"Found data for {map.Info.MapName}");
+    Console.WriteLine($"Found data for {map.Info.MapName}");
 
     if (!additionalFiles.Any())
       throw new InvalidOperationException($"{nameof(MapDataProvider)} returned no additional files to test.");
