@@ -28,11 +28,6 @@ namespace Launcher.Services
     private const string War3MapLua = MapDataPaths.ScriptPath;
     
     private const string GraphicsApi = "Direct3D9";
-#if DEBUG
-    private const bool Debug = true;
-#else
-		private const bool Debug = false;
-#endif
 
     public AdvancedMapBuilder(CompilerSettings compilerSettings, MapSettings mapSettings)
     {
@@ -130,17 +125,16 @@ namespace Launcher.Services
     public static void AddCSharpCode(Map map, string projectFolderPath, CompilerSettings compilerSettings)
     {
       //Set debug options if necessary, configure compiler
-      const string csc = Debug ? "-debug -define:DEBUG" : null;
       var csproj = Directory.EnumerateFiles(projectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
       var compiler = new Compiler(csproj, compilerSettings.ArtifactsPath, string.Empty, null!,
-        "War3Api.*;WCSharp.*;MacroTools.*", "", csc, false, null,
+        "War3Api.*;WCSharp.*;MacroTools.*", "", null!, false, null,
         string.Empty)
       {
         IsExportMetadata = true,
         IsModule = false,
         IsInlineSimpleProperty = false,
         IsPreventDebugObject = true,
-        IsCommentsDisabled = !Debug
+        IsCommentsDisabled = true
       };
       
       // Collect required paths and compile
