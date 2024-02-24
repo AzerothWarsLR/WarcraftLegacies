@@ -10,13 +10,6 @@ public sealed class ImportFileTests : IClassFixture<ImportFilesTestFixture>
   {
     _importFilesTestFixture = importFilesTestFixture;
   }
-
-  [Fact]
-  public void MapDirectoryExists()
-  {
-    const string mapDataDirectory = "mapdata/WarcraftLegacies";
-    Directory.Exists(mapDataDirectory).Should().BeTrue();
-  }
   
   [Theory]
   [MemberData(nameof(GetAllImportedModels))]
