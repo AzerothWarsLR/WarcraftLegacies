@@ -2,7 +2,7 @@ name: .NET
 
 on:
     push:
-        branches: [ main, dev, YakaryBovine/getTestsRunning ]
+        branches: [ main, dev ]
     pull_request:
         branches: [ main, dev ]
 
@@ -39,12 +39,4 @@ jobs:
             -   name: Build
                 run: dotnet build
             -   name: Test
-                run: dotnet test --logger "trx;LogFileName=test-results.trx"
-            -   name: Test Report
-                uses: dorny/test-reporter@v1
-                if: always()
-                with:
-                    name: Integrity Tests
-                    path: "TestResults\test-results.trx"  
-                    reporter: dotnet-trx
-                    fail-on-error: true
+                run: dotnet test
