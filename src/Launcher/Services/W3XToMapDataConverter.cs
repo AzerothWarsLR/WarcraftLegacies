@@ -335,7 +335,7 @@ namespace Launcher.Services
       
       var id = simpleObject.NewId > 0 ? simpleObject.NewId : simpleObject.OldId;
       var asJson = JsonSerializer.Serialize(simpleObject, _jsonSerializerOptions);
-      var fullPath = Path.Combine(outputDirectoryPath, $"{id}.json");
+      var fullPath = Path.Combine(outputDirectoryPath, $"{id.IdToFourCc()}.json");
       File.WriteAllText(fullPath, asJson);
     }
     
