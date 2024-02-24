@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using Launcher.Extensions;
+using Launcher.IntegrityChecker.TestSupport;
 using War3Api.Object;
 using Xunit.Sdk;
 
@@ -17,39 +18,29 @@ namespace Launcher.IntegrityChecker
     [Fact]
     public void AllUnits_CanBeAccessed()
     {
-      var preplacedUnitIds = _mapTestFixture.Map.Units!.Units.Select(x => x.TypeId).ToHashSet();
-      var preplacedUnitTypes = _mapTestFixture.ObjectDatabase.GetUnits().Where(x => preplacedUnitIds.Contains(x.NewId));
-      var inaccessibleUnits = _mapTestFixture.ObjectDatabase.GetUnits().ToList();
+      var map = _mapTestFixture.Map;
+      var objectDatabase = _mapTestFixture.ObjectDatabase;
+      
+      var preplacedUnitIds = map.Units!.Units.Select(x => x.TypeId).ToHashSet();
+      var preplacedUnitTypes = objectDatabase.GetUnits().Where(x => preplacedUnitIds.Contains(x.NewId));
+      
+      var inaccessibleObjects = new InaccessibleObjectCollection(
+        objectDatabase.GetUnits().ToList(),
+        objectDatabase.GetAbilities().ToList());
 
       foreach (var preplacedUnit in preplacedUnitTypes)
-        MarkObjectAsAccessible(preplacedUnit, inaccessibleUnits);
+        inaccessibleObjects.RemoveWithChildren(preplacedUnit);
 
-      if (inaccessibleUnits.Count <= 0) 
+      if (inaccessibleObjects.Units.Count <= 0) 
         return;
       
       var exceptionMessageBuilder = new StringBuilder();
       exceptionMessageBuilder.AppendLine(
-        $"There is no way to train, summon, or spawn the following {inaccessibleUnits.Count} units. Remove them from the map or add a way for the player to get them.");
-      foreach (var unit in inaccessibleUnits)
+        $"There is no way to train, summon, or spawn the following {inaccessibleObjects.Units.Count} units. Remove them from the map or add a way for the player to get them.");
+      foreach (var unit in inaccessibleObjects.Units)
         exceptionMessageBuilder.AppendLine(GetReadableId(unit));
       
       throw new XunitException(exceptionMessageBuilder.ToString());
-    }
- 
-    private static void MarkObjectAsAccessible(Unit unit, ICollection<Unit> inaccessibleUnits)
-    {
-      if (!inaccessibleUnits.Contains(unit))
-        return;
-      
-      inaccessibleUnits.Remove(unit);
-      
-      if (unit.IsTechtreeUnitsTrainedModified)
-        foreach (var trainedUnit in unit.TechtreeUnitsTrained)
-          MarkObjectAsAccessible(trainedUnit, inaccessibleUnits);
-
-      if (unit.IsTechtreeStructuresBuiltModified)
-        foreach (var builtStructure in unit.TechtreeStructuresBuilt)
-          MarkObjectAsAccessible(builtStructure, inaccessibleUnits);
     }
 
     private static string GetReadableId(BaseObject baseObject) =>
