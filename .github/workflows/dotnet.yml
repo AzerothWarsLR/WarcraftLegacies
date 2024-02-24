@@ -15,10 +15,8 @@ jobs:
                 uses: actions/setup-dotnet@v1
                 with:
                     dotnet-version: 6.0.x
-            -   name: Restore dependencies
-                run: dotnet restore
             -   name: Build
-                run: dotnet build --no-restore
+                run: dotnet build
             -   name: Inspect code
                 uses: muno92/resharper_inspectcode@1.6.2
                 with:
@@ -33,5 +31,12 @@ jobs:
     Integrity-Check:
         runs-on: windows-latest
         steps:
+            -   uses: actions/checkout@v3
+            -   name: Setup .NET
+                uses: actions/setup-dotnet@v1
+                with:
+                    dotnet-version: 6.0.x
+            -   name: Build
+                run: dotnet build
             -   name: Test
                 run: dotnet test --verbosity normal
