@@ -8,7 +8,7 @@ on:
 
 jobs:
     Developer-CI:
-        runs-on: windows-latest
+        runs-on: ubuntu-latest
         steps:
             -   uses: actions/checkout@v3
             -   name: Setup .NET
@@ -19,8 +19,6 @@ jobs:
                 run: dotnet restore
             -   name: Build
                 run: dotnet build --no-restore
-            -   name: Test
-                run: dotnet test --no-build --verbosity normal
             -   name: Inspect code
                 uses: muno92/resharper_inspectcode@1.6.2
                 with:
@@ -31,3 +29,9 @@ jobs:
                         ./src/MacroTools/**
                         ./src/WarcraftLegacies.Source/**
                     solutionWideAnalysis: false
+                    
+    Integrity-Check:
+        runs-on: windows-latest
+        steps:
+            -   name: Test
+                run: dotnet test --verbosity normal
