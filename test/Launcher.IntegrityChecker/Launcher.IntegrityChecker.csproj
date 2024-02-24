@@ -26,19 +26,4 @@
       <ProjectReference Include="..\..\src\Launcher\Launcher.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-        <None Include="$(SolutionDir)mapdata\**"
-              CopyToOutputDirectory="Always"
-              LinkBase="mapdata\" />
-        <None Include="$(SolutionDir)src\WarcraftLegacies.Source\**"
-              CopyToOutputDirectory="Always"
-              LinkBase="src\WarcraftLegacies.Source\" />
-        <None Include="$(SolutionDir)src\MacroTools\**"
-              CopyToOutputDirectory="Always"
-              LinkBase="src\MacroTools\" />
-        <None Include="$(SolutionDir)src\WarcraftLegacies.Generated\**"
-              CopyToOutputDirectory="Always"
-              LinkBase="src\WarcraftLegacies.Generated\" />
-    </ItemGroup>
-
 </Project>

@@ -14,7 +14,7 @@ namespace Launcher.IntegrityChecker
         if (_mapData != null)
           return _mapData.Value;
 
-        const string mapDataDirectory = "mapdata/WarcraftLegacies";
+        const string mapDataDirectory = "../../../../../mapdata/WarcraftLegacies";
         var autoMapperConfig = new AutoMapperConfigurationProvider().GetConfiguration();
         var mapper = new Mapper(autoMapperConfig);
         var conversionService = new MapDataToMapConverter(mapper, new JsonModifierProvider());
