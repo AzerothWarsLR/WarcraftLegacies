@@ -16,7 +16,7 @@ public sealed class ImportFileTests : IClassFixture<ImportFilesTestFixture>
   public void AllModels_AreInActiveUse(string relativePath)
   {
     var activeModels = _importFilesTestFixture.ModelsUsedInMap;
-    activeModels.Contains(relativePath).Should().BeTrue($"the model {relativePath} exists in the map so it should be used by something");
+    activeModels.Contains(relativePath).Should().BeTrue($"the model {relativePath} exists in the map so it should be used by an ability, doodad, buff, destructable, or script");
   }
 
   public static IEnumerable<object[]> GetAllImportedModels()
