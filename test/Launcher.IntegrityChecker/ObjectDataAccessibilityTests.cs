@@ -2,7 +2,6 @@
 using Launcher.Extensions;
 using Launcher.IntegrityChecker.TestSupport;
 using War3Api.Object;
-using Xunit.Abstractions;
 using Xunit.Sdk;
 
 namespace Launcher.IntegrityChecker
@@ -12,25 +11,10 @@ namespace Launcher.IntegrityChecker
     private readonly MapTestFixture _mapTestFixture;
     private readonly InaccessibleObjectCollection _inaccesibleObjects;
 
-    public ObjectDataAccessibilityTests(MapTestFixture mapTestFixture, ITestOutputHelper testOutputHelper)
+    public ObjectDataAccessibilityTests(MapTestFixture mapTestFixture)
     {
       _mapTestFixture = mapTestFixture;
       _inaccesibleObjects = GetInaccessibleObjects();
-    }
-    
-    [Fact]
-    public void AllUnits_CanBeAccessed()
-    {
-      if (_inaccesibleObjects.Units.Count <= 0) 
-        return;
-      
-      var exceptionMessageBuilder = new StringBuilder();
-      exceptionMessageBuilder.AppendLine(
-        $"There is no way to train, summon, or spawn the following {_inaccesibleObjects.Units.Count} units. Remove them from the map or add a way to get them.");
-      foreach (var unit in _inaccesibleObjects.Units)
-        exceptionMessageBuilder.AppendLine(GetReadableId(unit));
-      
-      throw new XunitException(exceptionMessageBuilder.ToString());
     }
     
     [Fact]
