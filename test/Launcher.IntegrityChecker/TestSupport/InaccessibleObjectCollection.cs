@@ -17,6 +17,19 @@ namespace Launcher.IntegrityChecker.TestSupport
       Upgrades = upgrades;
     }
 
+    public void RemoveWithChildren(BaseObject baseObject)
+    {
+      switch (baseObject)
+      {
+        case Unit unit:
+          RemoveWithChildren(unit);
+          break;
+        case Upgrade upgrade:
+          RemoveWithChildren(upgrade);
+          break;
+      }
+    }
+    
     public void RemoveWithChildren(Unit unit)
     {
       if (!Units.Contains(unit))
@@ -37,6 +50,17 @@ namespace Launcher.IntegrityChecker.TestSupport
           RemoveWithChildren(research);
     }
 
+    /// <summary>
+    /// Returns all <see cref="BaseObject"/>s in the collection.
+    /// </summary>
+    public List<BaseObject> GetAllObjects()
+    {
+      var objects = new List<BaseObject>();
+      objects.AddRange(Units);
+      objects.AddRange(Upgrades);
+      return objects;
+    }
+    
     private void RemoveWithChildren(Upgrade upgrade)
     {
       if (!Upgrades.Contains(upgrade))
