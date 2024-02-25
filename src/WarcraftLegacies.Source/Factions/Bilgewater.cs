@@ -25,7 +25,6 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       StartingLumber = 700;
       ControlPointDefenderUnitTypeId = Constants.UNIT_O01C_CONTROL_POINT_DEFENDER_GOBLIN;
-      StartingUnits = Regions.GoblinStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       LearningDifficulty = FactionLearningDifficulty.Advanced;
       IntroText = @"You are playing as the industrious |cff808080Bilgewater Cartel|r.
 
