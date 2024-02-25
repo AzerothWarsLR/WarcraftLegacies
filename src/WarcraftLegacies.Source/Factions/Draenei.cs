@@ -97,7 +97,6 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
       var questRepairHull = new QuestRepairExodarHull(Regions.ExodarBaseUnlock, _allLegendSetup.Draenei.LegendExodar);
       StartingQuest = questRepairHull;
       AddQuest(questRepairHull);
-      AddQuest(new QuestRebuildCivilisation(Regions.DesolaceUnlock, _allLegendSetup.Draenei.Velen));
       AddQuest(new QuestShipArgus(
         _preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.OutlandToArgus.Center),
         _preplacedUnitSystem.GetUnit(Constants.UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center),

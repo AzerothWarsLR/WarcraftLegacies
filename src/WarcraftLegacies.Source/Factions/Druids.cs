@@ -134,7 +134,7 @@ Gather your forces and strike before the Horde can organize their efforts.";
 
     private void RegisterQuests()
     {
-      var newQuest = AddQuest(new QuestMalfurionAwakens(Regions.MoongladeVillage, Regions.TeldrassilUnlock, Regions.CenarionHoldUnlock,
+      var newQuest = AddQuest(new QuestMalfurionAwakens(Regions.MoongladeVillage, Regions.TeldrassilUnlock,
         _allLegendSetup.Druids.Nordrassil.Unit, _artifactSetup.HornOfCenarius,
         _allLegendSetup.Druids.Malfurion));
       StartingQuest = newQuest;
