@@ -129,7 +129,6 @@ The Night Elves are aware of your presence and are gathering a mighty host again
     {
       StartingQuest = AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
       AddQuest(new QuestCrossroads(Regions.Crossroads, _preplacedUnitSystem));
-      AddQuest(new QuestLumberCamp(Regions.LumberCampUnlock, _allLegendSetup.Warsong.GromHellscream));
       AddQuest(new QuestChenStormstout(_preplacedUnitSystem.GetUnit(FourCC("Nsjs"))));
       AddQuest(new QuestFountainOfBlood(_allLegendSetup.Neutral.FountainOfBlood, _allLegendSetup.Warsong.GromHellscream));
       AddQuest(new QuestBloodpact(_allLegendSetup.Warsong.Mannoroth, _allLegendSetup.Warsong.GromHellscream));
@@ -137,7 +136,6 @@ The Night Elves are aware of your presence and are gathering a mighty host again
       AddQuest(new QuestWarsongKillDruids(_allLegendSetup.Druids.Nordrassil, _allLegendSetup.Warsong.GromHellscream));
       AddQuest(new QuestMoreWyverns(_allLegendSetup.Sentinels.Feathermoon, _allLegendSetup.Sentinels.Auberdine));
       AddQuest(new QuestWarsongHold());
-      AddQuest(new QuestWarsongOutpost());
     }
 
     private void RegisterDialogue()
