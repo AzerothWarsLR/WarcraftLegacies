@@ -16,23 +16,26 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 {
   public sealed class QuestCrossroadsFrostwolf : QuestData
   {
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
 
-    public QuestCrossroadsFrostwolf(Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem) : base("The Crossroads",
+    public QuestCrossroadsFrostwolf(Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem) : base(
+      "The Crossroads",
       "The Horde still needs to establish a strong strategic foothold into Kalimdor. Expand into the Barrens and claim the Crossroads.",
       @"ReplaceableTextures\CommandButtons\BTNBarracks.blp")
     {
       AddObjective(
-        new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(FourCC("nrzm"), rescueRect.Center))); //Razorman Medicine Man
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01T_NORTHERN_BARRENS)));
+        new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(FourCC("nrzm"),
+          rescueRect.Center))); //Razorman Medicine Man
+      AddObjective(
+        new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01T_NORTHERN_BARRENS)));
       AddObjective(new ObjectiveExpire(480, Title));
       AddObjective(new ObjectiveSelfExists());
-      
+
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 
     /// <inheritdoc/>
-    protected override string RewardFlavour => "The Crossroads have been constructed";
+    public override string RewardFlavour => "The Crossroads have been constructed";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Control of the Crossroads";
