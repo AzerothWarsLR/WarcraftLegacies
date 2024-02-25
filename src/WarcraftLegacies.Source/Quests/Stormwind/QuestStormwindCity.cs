@@ -49,7 +49,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
 
     //Todo: bad flavour
     /// <inheritdoc />
-    protected override string RewardFlavour =>
+    public override string RewardFlavour =>
       "Stormwind has been liberated, and its grand army is now free to assist the Alliance.";
 
     /// <inheritdoc />
@@ -74,19 +74,17 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     {
       var rewardPower = new CityOfHeroes(0.125f, 1.5f, "Units")
       {
-        IconName = "Angel",
         Name = RewardPowerName,
         HeroGlowAbilityTypeId = Constants.ABILITY_A0GK_HERO_GLOW_ORIGIN,
         Filter = unit => !unit.IsType(UNIT_TYPE_MECHANICAL) && unit.GetTypeId() != Constants.UNIT_H05F_STORMWIND_CHAMPION_STORMWIND_ELITE,
       };
       
       completingFaction.AddPower(rewardPower);
-      completingFaction.Player?.DisplayPowerAcquired(rewardPower);
       
-      completingFaction.Player?.RescueGroup(_rescueUnits);
-
-      if (GetLocalPlayer() == completingFaction.Player)
-        PlayThematicMusic("war3mapImported\\StormwindTheme.mp3");
+      completingFaction.Player?
+        .RescueGroup(_rescueUnits)
+        .DisplayPowerAcquired(rewardPower)
+        .PlayMusicThematic("war3mapImported\\StormwindTheme.mp3");
     }
   }
 }

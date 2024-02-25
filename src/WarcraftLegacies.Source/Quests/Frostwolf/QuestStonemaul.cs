@@ -15,10 +15,10 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 {
   public sealed class QuestStonemaul : QuestData
   {
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
 
     public QuestStonemaul(PreplacedUnitSystem preplacedUnitSystem, Rectangle rescueRect) : base("The Chieftain's Challenge",
-      "Rexxar is having trouble with a beligerent Ogre Warlord, slay the Chieftain to gain the heroe's allegiance.",
+      "Rexxar is having trouble with a beligerent Ogre Warlord, slay the Chieftain to gain the hero's allegiance.",
       @"ReplaceableTextures\CommandButtons\BTNOneHeadedOgre.blp")
     {
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N022_STONEMAUL)));
@@ -32,11 +32,11 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 
     //Todo: bad flavour
     /// <inheritdoc/>
-    protected override string RewardFlavour =>
+    public override string RewardFlavour =>
       "Korghal has been defeated, Rexxar has joined the Frostwolf!";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Control of all buildings in Stonemaul and Rexxar is now trainable at the Altar";
+    protected override string RewardDescription => $"Control of all buildings in Stonemaul and Rexxar is now trainable at the Altar";
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)

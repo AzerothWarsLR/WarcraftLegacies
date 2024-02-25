@@ -110,16 +110,12 @@ namespace MacroTools.ObjectiveSystem
     /// Returns true if the specified player is on the same team as any of the players that are eligible to contribute
     /// to this objective.
     /// </summary>
-    protected bool IsPlayerOnSameTeamAsAnyEligibleFaction(player whichPlayer)
+    protected bool IsPlayerAlliedToAnyEligibleFaction(player whichPlayer)
     {
-      var playerTeam = whichPlayer.GetTeam();
-      if (playerTeam == null)
-        return false;
-      
       foreach (var eligibleFaction in EligibleFactions)
-        if (eligibleFaction.Player != null && eligibleFaction.Player.GetTeam() == playerTeam)
+        if (eligibleFaction.Player?.IsPlayerAlly(whichPlayer) == true)
           return true;
-      
+
       return false;
     }
     

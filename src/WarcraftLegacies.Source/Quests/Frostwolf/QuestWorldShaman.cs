@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     }
 
     /// <inheritdoc />
-    protected override string RewardFlavour =>
+    public override string RewardFlavour =>
       "Thrall has stabilized the power of the Maelstrom and stored it within the Doomhammer. He is no longer merely the Warchief of the Horde; he is the World-Shaman of all Azeroth.";
     
     /// <inheritdoc />
@@ -65,8 +65,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
           Constants.UNIT_H00C_DREK_THAR_FROSTWOLF_DEMI,
           Constants.UNIT_H0CN_PACKLEADER_FROSTWOLF,
           Constants.UNIT_H0CO_MAMMOTH_WRANGLER_FROSTWOLF
-        },
-        IconName = "_Lightning_Orc"
+        }
       });
     }
   }

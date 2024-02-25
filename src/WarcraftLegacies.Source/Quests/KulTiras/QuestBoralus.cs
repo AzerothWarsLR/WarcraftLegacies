@@ -5,7 +5,6 @@ using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 using static War3Api.Blizzard;
-using MacroTools;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
@@ -26,9 +25,8 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestBoralus"/> class.
     /// </summary>
-    /// <param name="preplacedUnitSystem">A system which can be used to find preplaced units.</param>
     /// <param name="rescueRect">All units in this area will be made neutral, then rescued when the quest is completed or made aggressive when the quest is failed.</param>
-    public QuestBoralus(Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem) : base("The Admiralty of Kul Tiras",
+    public QuestBoralus(Rectangle rescueRect) : base("The Admiralty of Kul Tiras",
       "Kul Tiras has degenerated severely in contemporary times. Bandits and vile monsters threaten the islands and the noble houses have split apart. We must quell these threats and reunite the kingdom's various regions under Daelin Proudmoore's command.",
       @"ReplaceableTextures\CommandButtons\BTNHumanShipyard.blp")
     {
@@ -44,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     }
 
     /// <inheritdoc/>
-    protected override string RewardFlavour =>
+    public override string RewardFlavour =>
       "Kul'tiras has joined the war and its military is now free to assist the Alliance.";
 
     /// <inheritdoc/>
@@ -66,7 +64,6 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     {
       var rewardPower = new CityOfHeroes(0.125f, 1.5f, "Ships")
       {
-        IconName = "LordAdmiralPendant",
         Name = RewardPowerName,
         HeroGlowAbilityTypeId = Constants.ABILITY_A0GK_HERO_GLOW_ORIGIN,
         Filter = unit =>
@@ -82,12 +79,11 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       completingFaction.Player?.DisplayPowerAcquired(rewardPower);
       
       if (completingFaction.Player != null)
-        completingFaction.Player.RescueGroup(_rescueUnits);
+        completingFaction.Player
+          .RescueGroup(_rescueUnits)
+          .PlayMusicThematic("war3mapImported\\KultirasTheme.mp3");
       else
         Player(bj_PLAYER_NEUTRAL_VICTIM).RescueGroup(_rescueUnits);
-
-      if (GetLocalPlayer() == completingFaction.Player) 
-        PlayThematicMusic("war3mapImported\\KultirasTheme.mp3");
     }
   }
 }

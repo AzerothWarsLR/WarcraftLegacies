@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.ShoreSystem;
@@ -19,12 +20,7 @@ namespace MacroTools.ArtifactSystem
     private static readonly Dictionary<int, Artifact> ArtifactsByType = new();
     private static readonly Dictionary<string, Artifact> ArtifactsByName = new();
     private static readonly List<Artifact> AllArtifacts = new();
-
-    /// <summary>
-    /// Fired when an <see cref="Artifact"/> is newly registered to the system.
-    /// </summary>
-    public static event EventHandler<Artifact>? ArtifactRegistered;
-
+    
     /// <summary>
     /// Returns the registered <see cref="Artifact"/> that represents the item with the provided item type ID.
     /// If there isn't one, returns null.
@@ -37,8 +33,11 @@ namespace MacroTools.ArtifactSystem
     /// <para>Case insensitive.</para>
     /// <para>Returns null if there is no match.</para>
     /// </summary>
-    public static Artifact? GetFromName(string name) =>
-      ArtifactsByName.ContainsKey(name.ToLower()) ? ArtifactsByName[name.ToLower()] : null;
+    public static bool TryGetByName(string name, [NotNullWhen(true)] out Artifact? artifact)
+    {
+      artifact = ArtifactsByName.ContainsKey(name.ToLower()) ? ArtifactsByName[name.ToLower()] : null;
+      return artifact != null;
+    }
 
     /// <summary>
     /// Registers an <see cref="Artifact"/> to the <see cref="ArtifactManager"/>.
@@ -50,7 +49,6 @@ namespace MacroTools.ArtifactSystem
         SetItemDropOnDeath(artifact.Item, false);
         ArtifactsByType[GetItemTypeId(artifact.Item)] = artifact;
         ArtifactsByName.Add(GetItemName(artifact.Item).ToLower(), artifact);
-        ArtifactRegistered?.Invoke(artifact, artifact);
         AllArtifacts.Add(artifact);
       }
       else

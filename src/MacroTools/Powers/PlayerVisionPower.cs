@@ -9,11 +9,10 @@ namespace MacroTools.Powers
   {
     private readonly IEnumerable<player?> _playersToGiveVisionOf;
 
-    public PlayerVisionPower(string name, string description, string iconName, IEnumerable<player?> playersToGiveVisionOf)
+    public PlayerVisionPower(string name, string description, IEnumerable<player?> playersToGiveVisionOf)
     {
       Name = name;
       Description = description;
-      IconName = iconName;
       _playersToGiveVisionOf = playersToGiveVisionOf;
     }
 

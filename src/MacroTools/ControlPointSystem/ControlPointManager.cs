@@ -10,7 +10,7 @@ using static War3Api.Blizzard;
 namespace MacroTools.ControlPointSystem
 {
   /// <summary>
-  /// Responsible for managing all <see cref="ControlPoint"/>s.
+  /// Manages lifetimes and storage of all <see cref="ControlPoint"/>s.
   /// </summary>
   public sealed class ControlPointManager
   {
@@ -158,6 +158,7 @@ namespace MacroTools.ControlPointSystem
       RegisterControlLevelChangeTrigger(controlPoint);
       RegisterControlLevelGrowthOverTime(controlPoint);
       ConfigureControlPointStats(controlPoint, true);
+      controlPoint.OnRegister();
       controlPoint.Unit.AddAbility(PiercingResistanceAbility);
       if (controlPoint.Unit.OwningPlayer() != Player(PLAYER_NEUTRAL_AGGRESSIVE))
         controlPoint.Unit.AddAbility(RegenerationAbility);
@@ -217,7 +218,6 @@ namespace MacroTools.ControlPointSystem
             
             controlPoint.Unit.SetLifePercent(100);
             controlPoint.ControlLevel = 0;
-            controlPoint.SignalOwnershipChange(new ControlPointOwnerChangeEventArgs(controlPoint, GetChangingUnitPrevOwner()));
           }
           catch (Exception ex)
           {

@@ -24,7 +24,7 @@ namespace MacroTools.Commands
     /// <inheritdoc />
     public override string Execute(player commandUser, params string[] parameters)
     {
-      var playerSettings = PlayerData.ByHandle(commandUser).PlayerSettings;
+      var playerSettings = commandUser.GetPlayerSettings();
       return @"Current settings:
 Camera distance: " + playerSettings.CamDistance + @"
 

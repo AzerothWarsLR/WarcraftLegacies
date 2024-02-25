@@ -64,7 +64,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Inspires the units in the targetted area, increases attack speed by 30% and movement speed by 20%. Lasts 60 seconds. "
+      "Value": "Applies Bloodlust which increases the attack speed by 30% and move speed by 20% of units inside the targetted area; has an extended cast range. |nLasts 30 seconds. "
     }
   ]
 }

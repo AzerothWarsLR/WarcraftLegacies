@@ -31,10 +31,15 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Constants.ABILITY_A0KZ_SPELL_IMMUNITY_LEGION_SUMMON);
       SpellSystem.Register(summonBurningLegion);
       
-      var massSummonUnit = new MultiTargetRecall( Constants.ABILITY_A02T_DARK_SUMMONING_LEGION_DUMMY, CastFilters.IsTargetOwnAliveNonHeroUnit)
+      var massSummonUnit = new DelayedMultiTargetRecall( Constants.ABILITY_A02T_DARK_SUMMONING_DREADLORD, CastFilters.IsTargetOwnAliveNonHeroUnit)
       {
         Radius = 400,
         AmountToTarget = 12,
+        MinDuration = 3,
+        MaxDuration = 30,
+        CrossDimensionalDuration = 15,
+        DistanceDivider = 1000,
+        DeathPenalty = 0.5f,
         TargetType = SpellTargetType.Point
       };
       SpellSystem.Register(massSummonUnit);

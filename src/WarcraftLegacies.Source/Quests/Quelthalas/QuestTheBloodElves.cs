@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
 
 
   /// <inheritdoc />
-  protected override string RewardFlavour =>
+  public override string RewardFlavour =>
     "The Legion Nexus has been obliterated. A group of ambitious mages seize the opportunity to study the demons' magic, becoming the first Blood Mages.";
 
   /// <inheritdoc />
@@ -61,7 +61,6 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
   {
     var manaAddiction = new UnitsStealMana(0.35f)
     {
-      IconName = "ManaShield",
       Name = "Mana Addiction"
     };
     whichFaction.AddPower(manaAddiction);

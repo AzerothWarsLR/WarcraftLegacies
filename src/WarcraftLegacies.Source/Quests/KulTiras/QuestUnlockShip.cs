@@ -39,11 +39,10 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       AddObjective(new ObjectiveSelfExists());
       _proudmooreCapitalShip = proudmooreCapitalShip;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      
     }
 
     /// <inheritdoc/>
-    protected override string RewardFlavour => "The capital ship will set sail with the Kul'tiran navy army to Stranglethorn Vale.";
+    public override string RewardFlavour => "The capital ship will set sail with the Kul'tiran navy army to Stranglethorn Vale.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
@@ -76,8 +75,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
           SetUnitPosition(unit, 6864, -17176);
       }
 
-      if (GetLocalPlayer() == whichPlayer)
-        SetCameraPosition(6864, -17176);
+      whichPlayer.RepositionCamera(6864, -17176);
     }
 
     /// <inheritdoc/>

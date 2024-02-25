@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     /// </summary>
     public QuestOnslaught(Rectangle questRect) : base(
       "Onslaught",
-      "Death awaits the living at the roof of the world. It is there that the Crusade must undertaken its ultimate vengeance.",
+      "Death awaits the living at the roof of the world. It is there that the Crusade must undertake its ultimate vengeance.",
       @"ReplaceableTextures\CommandButtons\BTNVampire.blp")
     {
       AddObjective(new ObjectiveBuildInRect(questRect, "in Dragonblight", Constants.UNIT_H0AG_HALL_OF_SWORDS_CRUSADE_BARRACKS));
@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     }
 
     /// <inheritdoc/>
-    protected override string RewardFlavour =>
+    public override string RewardFlavour =>
       "The Crusade finally manages to establish a foothold in Northrend. Already the land's dark influence pierces the mind of even its most stalwart Archons.";
 
     /// <inheritdoc/>

@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.GameLogic.GameEnd
     public static void Setup()
     {
       foreach (var controlPoint in ControlPointManager.Instance.GetAllControlPoints())
-        controlPoint.ChangedOwner += ControlPointOwnerChanges;
+        controlPoint.OwnerAllianceChanged += ControlPointOwnerChanges;
     }
     
     private static int GetTeamControlPoints(Team whichTeam) => 
@@ -38,18 +38,20 @@ namespace WarcraftLegacies.Source.GameLogic.GameEnd
         .Where(faction => faction.Player != null)
         .Sum(faction => faction.Player.GetControlPointCount());
 
-    private static void TeamWarning(Team whichTeam, int controlPoints) =>
-      DisplayTextToPlayer(GetLocalPlayer(), 0, 0,
-        $"\n{VictoryColor}TEAM VICTORY IMMINENT|r\n{whichTeam.Name} has captured {controlPoints} out of {CpsVictory} Control Points required to win the game!");
+    private static void TeamWarning(Team whichTeam, int controlPoints)
+    {
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+        DisplayTextToPlayer(player, 0, 0,
+          $"\n{VictoryColor}TEAM VICTORY IMMINENT|r\n{whichTeam.Name} has captured {controlPoints} out of {CpsVictory} Control Points required to win the game!");
+    }
 
-    private static void ControlPointOwnerChanges(object? sender,
-      ControlPointOwnerChangeEventArgs controlPointOwnerChangeEventArgs)
+    private static void ControlPointOwnerChanges(object? sender, ControlPoint controlPoint)
     {
       if (_gameWon) 
         return;
-      var newOwnerTeam = controlPointOwnerChangeEventArgs.ControlPoint.Owner.GetTeam();
-      var formerOwnerTeam = controlPointOwnerChangeEventArgs.FormerOwner.GetTeam();
-      if (newOwnerTeam == null || newOwnerTeam == formerOwnerTeam) return;
+      
+      var newOwnerTeam = controlPoint.Owner.GetTeam();
+      
       var teamControlPoints = GetTeamControlPoints(newOwnerTeam);
       if (teamControlPoints >= CpsVictory)
         TeamVictory(newOwnerTeam);
@@ -60,8 +62,9 @@ namespace WarcraftLegacies.Source.GameLogic.GameEnd
     private static void TeamVictory(Team whichTeam)
     {
       ClearTextMessages();
-      DisplayTextToPlayer(GetLocalPlayer(), 0, 0,
-        $"{VictoryColor}\nTEAM VICTORY!|r\nThe {whichTeam.Name} has won the game! You may choose to continue playing.");
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+        DisplayTextToPlayer(player, 0, 0,
+          $"{VictoryColor}\nTEAM VICTORY!|r\nThe {whichTeam.Name} has won the game! You may choose to continue playing.");
       PlayThematicMusic(whichTeam.VictoryMusic);
       _gameWon = true;
     }

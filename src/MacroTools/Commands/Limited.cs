@@ -30,14 +30,14 @@ namespace MacroTools.Commands
     public override string Description => "Pings all limited units you control.";
 
     /// <inheritdoc />
-    public override string Execute(player commandUser, params string[] parameters)
+    public override string Execute(player cheater, params string[] parameters)
     {
       var pingedPositions = new HashSet<Point>();
       
       var limitedUnits = CreateGroup()
-        .EnumUnitsOfPlayer(commandUser)
+        .EnumUnitsOfPlayer(cheater)
         .EmptyToList()
-        .Where(u => commandUser.GetObjectLimit(u.GetTypeId()) is > 0 and < Faction.UNLIMITED && u.IsAlive());
+        .Where(u => cheater.GetObjectLimit(u.GetTypeId()) is > 0 and < Faction.UNLIMITED && u.IsAlive());
 
       foreach (var unit in limitedUnits)
       {
@@ -48,7 +48,7 @@ namespace MacroTools.Commands
           continue;
         
         pingedPositions.Add(unitPosition);
-        commandUser.PingLocation(unitPosition, 5f);
+        cheater.PingLocation(unitPosition, 5f);
       }
       
       return "Pinging all limited units you control.";

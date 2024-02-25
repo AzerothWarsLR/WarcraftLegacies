@@ -11,7 +11,6 @@ namespace MacroTools.ArtifactSystem
   /// </summary>
   public sealed class Artifact
   {
-    private ArtifactLocationType _locationType;
     private unit? _owningUnit;
     private int _titanforgedAbility = FourCC("A0VJ");
 
@@ -22,7 +21,7 @@ namespace MacroTools.ArtifactSystem
     public Artifact(item whichItem)
     {
       Item = whichItem;
-      _locationType = ArtifactLocationType.Ground;
+      LocationType = ArtifactLocationType.Ground;
       SetOwningPlayer(null);
       PlayerUnitEvents.Register(ItemTypeEvent.IsPickedUp, OnPickedUp, GetItemTypeId(whichItem));
       PlayerUnitEvents.Register(ItemTypeEvent.IsDropped, OnDropped, GetItemTypeId(whichItem));
@@ -57,15 +56,7 @@ namespace MacroTools.ArtifactSystem
     /// <summary>
     ///   Describes the kind of location that the <see cref="Artifact" /> is in.
     /// </summary>
-    public ArtifactLocationType LocationType
-    {
-      private set
-      {
-        _locationType = value;
-        StatusChanged?.Invoke(this, this);
-      }
-      get => _locationType;
-    }
+    public ArtifactLocationType LocationType { private set; get; }
 
     /// <summary>
     ///   The <see cref="unit" /> carrying this <see cref="Artifact" />, if any.
@@ -114,11 +105,6 @@ namespace MacroTools.ArtifactSystem
     public event EventHandler<Artifact>? OwnerChanged;
 
     /// <summary>
-    ///   Any Artifact changes its <see cref="ArtifactLocationType" />.
-    /// </summary>
-    public event EventHandler<Artifact>? StatusChanged;
-
-    /// <summary>
     ///   Grant the Artifact a predefined bonus ability.
     /// </summary>
     public void Titanforge()
@@ -137,12 +123,10 @@ namespace MacroTools.ArtifactSystem
     /// </summary>
     public void Ping(player whichPlayer)
     {
-      if (GetLocalPlayer() != whichPlayer) 
-        return;
       if (_owningUnit != null)
-        PingMinimap(GetUnitX(_owningUnit), GetUnitY(_owningUnit), 3);
+        whichPlayer.PingMinimapSimple(GetUnitX(_owningUnit), GetUnitY(_owningUnit), 3);
       else
-        PingMinimap(GetItemX(Item), GetItemY(Item), 3);
+        whichPlayer.PingMinimapSimple(GetItemX(Item), GetItemY(Item), 3);
     }
 
     private void SetOwningPlayer(player? value)
