@@ -26,26 +26,18 @@ namespace WarcraftLegacies.Source.Setup
       SetupPlayer(Player(2), new Quelthalas(_preplacedUnitSystem, _allLegendSetup), TeamSetup.NorthAlliance);
       SetupPlayer(Player(3), new Scourge(_preplacedUnitSystem, _allLegendSetup, _artifactSetup), TeamSetup.Legion);
       SetupPlayer(Player(4), new Ironforge(_preplacedUnitSystem, _allLegendSetup), TeamSetup.SouthAlliance);
-      SetupPlayer(Player(5), new Warsong(_preplacedUnitSystem, _allLegendSetup), TeamSetup.Horde);
       SetupPlayer(Player(6), new FelHorde(_preplacedUnitSystem, _allLegendSetup), TeamSetup.Outland);
       Player(7).SetTeam(TeamSetup.NorthAlliance);
-      Player(8).SetTeam(TeamSetup.Horde);
       SetupPlayer(Player(9), new Lordaeron(_preplacedUnitSystem, _allLegendSetup, _artifactSetup), TeamSetup.NorthAlliance);
       SetupPlayer(Player(11), new Druids(_preplacedUnitSystem, _allLegendSetup, _artifactSetup), TeamSetup.NightElves);
       SetupPlayer(Player(13), new Draenei(_preplacedUnitSystem, _allLegendSetup), TeamSetup.NightElves);
+      SetupPlayer(Player(14), new BlackEmpire(), TeamSetup.Oldgods);
+      SetupPlayer(Player(16), new Ahnqiraj(), TeamSetup.Oldgods);
+      SetupPlayer(Player(17), new Skywall(), TeamSetup.Oldgods);
       SetupPlayer(Player(18), new Sentinels(_preplacedUnitSystem, _allLegendSetup, _artifactSetup), TeamSetup.NightElves);
       Player(15).SetTeam(TeamSetup.Outland);
       SetupPlayer(Player(22), new Kultiras(_preplacedUnitSystem, _allLegendSetup), TeamSetup.SouthAlliance);
       SetupPlayer(Player(23), new Legion(_preplacedUnitSystem, _allLegendSetup), TeamSetup.Legion);
-      
-      Player(14).SetFaction(BlackEmpireSetup.BlackEmpire);
-      Player(14).SetTeam(TeamSetup.Oldgods);
-
-      Player(16).SetFaction(CthunSetup.Cthun);
-      Player(16).SetTeam(TeamSetup.Oldgods);
-
-      Player(17).SetFaction(SkywallSetup.Skywall);
-      Player(17).SetTeam(TeamSetup.Oldgods);
     }
     
 
