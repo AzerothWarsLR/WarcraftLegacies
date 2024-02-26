@@ -166,7 +166,7 @@ namespace MacroTools.Extensions
     public static player Select(this player whichPlayer, unit whichUnit)
     {
       if (GetLocalPlayer() == whichPlayer)
-        SelectUnit(GetSoldUnit(), true);
+        SelectUnit(whichUnit, true);
       
       return whichPlayer;
     }
