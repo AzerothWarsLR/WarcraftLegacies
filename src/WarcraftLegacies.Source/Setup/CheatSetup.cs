@@ -47,6 +47,7 @@ namespace WarcraftLegacies.Source.Setup
       commandManager.Register(new CheatSkipTurns());
       commandManager.Register(new CheatPermaKill());
       commandManager.Register(new CheatGetUnitCurrentOrder());
+      commandManager.Register(new PreviewForsaken());
       TestMode.Setup(commandManager);
       CheatSkipCinematic.Init();
     }
