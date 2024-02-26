@@ -52,7 +52,7 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Returns true if <paramref name="firstPlayer"/> is an ally of <paramref name="secondPlayer"/>.
     /// </summary>
-    public static bool IsPlayerAlly(this player firstPlayer, player secondPlayer) =>
+    public static bool IsAlly(this player firstPlayer, player secondPlayer) =>
       GetPlayerAlliance(firstPlayer, secondPlayer, ALLIANCE_SHARED_XP);
 
     /// <summary>
