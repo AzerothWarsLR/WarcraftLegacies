@@ -113,7 +113,7 @@ namespace MacroTools.ObjectiveSystem
     protected bool IsPlayerAlliedToAnyEligibleFaction(player whichPlayer)
     {
       foreach (var eligibleFaction in EligibleFactions)
-        if (eligibleFaction.Player?.IsPlayerAlly(whichPlayer) == true)
+        if (eligibleFaction.Player?.IsAlly(whichPlayer) == true)
           return true;
 
       return false;
