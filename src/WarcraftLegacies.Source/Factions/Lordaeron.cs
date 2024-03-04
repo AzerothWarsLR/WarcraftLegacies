@@ -14,7 +14,7 @@ using WarcraftLegacies.Source.Quests.Scourge;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Factions
 {

@@ -4,7 +4,7 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.Powers;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Quests.Scourge
 {

@@ -2,7 +2,7 @@
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.PassiveAbilities
 {

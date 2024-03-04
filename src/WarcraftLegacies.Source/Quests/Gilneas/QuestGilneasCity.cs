@@ -1,7 +1,7 @@
 ﻿using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using System.Collections.Generic;
-using static War3Api.Common;
+
 using MacroTools.Extensions;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;

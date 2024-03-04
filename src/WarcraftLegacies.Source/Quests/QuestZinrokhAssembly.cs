@@ -5,7 +5,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Quests
 {

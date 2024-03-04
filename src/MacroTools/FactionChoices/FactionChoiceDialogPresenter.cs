@@ -4,7 +4,7 @@ using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.UserInterface;
-using static War3Api.Common;
+
 
 namespace MacroTools.FactionChoices
 {

@@ -11,7 +11,7 @@ using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests.Druids;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Factions
 {

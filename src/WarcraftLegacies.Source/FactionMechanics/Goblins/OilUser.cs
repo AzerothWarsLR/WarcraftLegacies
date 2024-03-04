@@ -3,7 +3,7 @@ using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Powers;
 using WCSharp.Buffs;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.FactionMechanics.Goblins
 {

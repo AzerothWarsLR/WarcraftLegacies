@@ -1,9 +1,7 @@
-﻿using War3Api;
-
-namespace MacroTools
+﻿namespace MacroTools
 {
   /// <summary>
-  /// Indicates which special category a <see cref="Common.unit"/> belongs to.
+  /// Indicates which special category a <see cref="unit"/> belongs to.
   /// </summary>
   public enum UnitCategory
   {

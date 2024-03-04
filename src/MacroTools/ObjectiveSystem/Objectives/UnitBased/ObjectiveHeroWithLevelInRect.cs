@@ -1,8 +1,7 @@
-﻿using System.Linq;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
 {

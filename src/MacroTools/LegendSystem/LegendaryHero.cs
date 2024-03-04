@@ -6,7 +6,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 namespace MacroTools.LegendSystem
 {

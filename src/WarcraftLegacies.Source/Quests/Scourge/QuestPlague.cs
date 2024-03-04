@@ -14,7 +14,7 @@ using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Rocks;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Quests.Scourge
 {

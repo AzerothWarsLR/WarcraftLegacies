@@ -5,7 +5,7 @@ using MacroTools.FactionSystem;
 using MacroTools.Powers;
 using WarcraftLegacies.Source.Quests.Draenei;
 using WarcraftLegacies.Source.Setup;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Factions
 {

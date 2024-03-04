@@ -5,7 +5,7 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Quests.Ironforge
 {

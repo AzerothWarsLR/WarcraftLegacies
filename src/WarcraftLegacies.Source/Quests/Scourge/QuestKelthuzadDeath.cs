@@ -5,7 +5,7 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Quests.Scourge
 {

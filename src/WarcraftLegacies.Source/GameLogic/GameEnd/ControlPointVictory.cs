@@ -2,7 +2,7 @@
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.GameLogic.GameEnd
 {

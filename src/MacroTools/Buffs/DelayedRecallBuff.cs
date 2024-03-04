@@ -3,7 +3,7 @@ using System.Linq;
 using MacroTools.Extensions;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 using Environment = MacroTools.Libraries.Environment;
 
 namespace MacroTools.Buffs
@@ -46,10 +46,11 @@ namespace MacroTools.Buffs
       Effect = AddSpecialEffect(@"Abilities\Spells\Undead\Darksummoning\DarkSummonTarget.mdl", TargetPosition.X,
         TargetPosition.Y);
       
-      _progressEffect = AddSpecialEffect("war3mapImported\\Progressbar10sec.mdx", TargetPosition.X, TargetPosition.Y)
-        .SetTimeScale(10 / Duration)
-        .SetColor(Caster.OwningPlayer())
-        .SetHeight(185f + Environment.GetPositionZ(TargetPosition));
+      _progressEffect = AddSpecialEffect("war3mapImported\\Progressbar10sec.mdx", TargetPosition.X, TargetPosition.Y);
+      _progressEffect.SetTimeScale(10 / Duration);
+      _progressEffect.SetTimeScale(10 / Duration);
+      _progressEffect.SetColor(Caster.OwningPlayer());
+      _progressEffect.SetHeight(185f + Environment.GetPositionZ(TargetPosition));
     }
 
     /// <inheritdoc />

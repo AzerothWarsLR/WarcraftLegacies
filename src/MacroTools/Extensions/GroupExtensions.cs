@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 namespace MacroTools.Extensions
 {

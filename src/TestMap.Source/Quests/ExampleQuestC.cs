@@ -5,7 +5,7 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.Powers;
 using MacroTools.QuestSystem;
 using TestMap.Source.Setup;
-using static War3Api.Common;
+
 
 namespace TestMap.Source.Quests
 {

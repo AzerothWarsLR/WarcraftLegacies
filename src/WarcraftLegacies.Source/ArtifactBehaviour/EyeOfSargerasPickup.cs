@@ -3,7 +3,7 @@ using MacroTools.Extensions;
 using MacroTools.Libraries;
 using WCSharp.Events;
 using WCSharp.Missiles;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.ArtifactBehaviour
 {

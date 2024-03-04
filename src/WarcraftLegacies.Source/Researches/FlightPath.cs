@@ -2,7 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ResearchSystems;
-using static War3Api.Common;
+
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 

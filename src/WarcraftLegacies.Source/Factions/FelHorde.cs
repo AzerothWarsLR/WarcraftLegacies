@@ -5,7 +5,7 @@ using WarcraftLegacies.Source.FactionMechanics.Fel_Horde;
 using WarcraftLegacies.Source.Quests.Fel_Horde;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Factions
 {

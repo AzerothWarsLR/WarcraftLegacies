@@ -5,7 +5,7 @@ using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Scourge;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Quests.Legion
 {

@@ -3,7 +3,7 @@ using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 using System.Collections.Generic;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ControlPointSystem;

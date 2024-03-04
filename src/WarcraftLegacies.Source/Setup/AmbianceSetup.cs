@@ -1,7 +1,6 @@
 ﻿using MacroTools.Extensions;
 using static WarcraftLegacies.Source.AmbianceLibrary;
-using static War3Api.Blizzard;
-using static War3Api.Common;
+using static WCSharp.Api.Blizzard;
 
 namespace WarcraftLegacies.Source.Setup
 {
@@ -19,8 +18,7 @@ namespace WarcraftLegacies.Source.Setup
       SetupEasternKingdoms();
       SetupKalimdor();
     }
-
-
+    
     private static void StopDefaultAmbientSounds()
     {
       StopSound(bj_dayAmbientSound, true, true);

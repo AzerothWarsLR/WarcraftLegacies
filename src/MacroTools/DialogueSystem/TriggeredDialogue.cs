@@ -5,7 +5,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
+
 
 namespace MacroTools.DialogueSystem
 {

@@ -1,5 +1,5 @@
 ﻿using MacroTools.LegendSystem;
-using static War3Api.Common;
+
 
 namespace TestMap.Source.Setup
 {

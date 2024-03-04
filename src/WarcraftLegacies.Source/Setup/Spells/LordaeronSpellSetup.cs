@@ -4,7 +4,7 @@ using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.ExactJustice;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {

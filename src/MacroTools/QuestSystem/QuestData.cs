@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives;
-using static War3Api.Common;
+
 
 namespace MacroTools.QuestSystem
 {

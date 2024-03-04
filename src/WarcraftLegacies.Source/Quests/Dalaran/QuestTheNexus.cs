@@ -3,7 +3,7 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.Legends;
-using static War3Api.Common; 
+ 
 
 namespace WarcraftLegacies.Source.Quests.Dalaran
 {

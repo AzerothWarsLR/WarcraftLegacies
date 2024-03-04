@@ -2,7 +2,7 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.LegendSystem;
-using static War3Api.Common;
+
 
 namespace MacroTools.FactionSystem
 {

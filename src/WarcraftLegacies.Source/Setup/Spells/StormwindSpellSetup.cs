@@ -4,7 +4,7 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells.Slipstream;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {

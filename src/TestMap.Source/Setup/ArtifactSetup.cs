@@ -1,5 +1,5 @@
 ﻿using MacroTools.ArtifactSystem;
-using static War3Api.Common;
+
 
 namespace TestMap.Source.Setup
 {

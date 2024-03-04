@@ -11,7 +11,7 @@ using MacroTools.QuestSystem;
 using MacroTools.ResearchSystems;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 namespace MacroTools.FactionSystem
 {

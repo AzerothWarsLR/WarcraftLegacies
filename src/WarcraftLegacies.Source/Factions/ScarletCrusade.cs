@@ -1,7 +1,7 @@
 ﻿using MacroTools.FactionSystem;
 using WarcraftLegacies.Source.Quests.Scarlet;
 using WarcraftLegacies.Source.Setup;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Factions
 {

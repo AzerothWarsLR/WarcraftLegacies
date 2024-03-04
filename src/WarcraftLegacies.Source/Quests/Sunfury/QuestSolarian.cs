@@ -1,7 +1,7 @@
 ﻿using MacroTools.ArtifactSystem;
 using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Quests.Sunfury
 {

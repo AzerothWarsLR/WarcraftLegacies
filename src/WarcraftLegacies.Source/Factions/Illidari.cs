@@ -10,7 +10,7 @@ using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using WarcraftLegacies.Source.Quests.Naga;
 using WarcraftLegacies.Source.Setup;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Factions
 {

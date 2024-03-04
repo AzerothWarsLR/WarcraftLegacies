@@ -1,11 +1,10 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using MacroTools.CommandSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Libraries;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 namespace MacroTools.Commands
 {

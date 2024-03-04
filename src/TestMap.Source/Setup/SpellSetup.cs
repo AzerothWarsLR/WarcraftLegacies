@@ -3,7 +3,7 @@ using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
-using static War3Api.Common;
+
 
 namespace TestMap.Source.Setup
 {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 namespace MacroTools.Extensions
 {

@@ -1,7 +1,7 @@
 ﻿using System;
 using MacroTools.Cheats;
 using WarcraftLegacies.Source.GameLogic;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Cheats
 {

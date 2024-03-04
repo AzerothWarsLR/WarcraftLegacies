@@ -2,7 +2,7 @@
 using MacroTools.Libraries;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.FactionMechanics.Scourge.Plague
 {

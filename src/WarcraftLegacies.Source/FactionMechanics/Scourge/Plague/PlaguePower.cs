@@ -6,7 +6,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Buffs;
 using WCSharp.Events;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.FactionMechanics.Scourge.Plague
 {

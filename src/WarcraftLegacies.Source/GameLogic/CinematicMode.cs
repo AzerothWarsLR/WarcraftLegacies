@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.GameLogic
 {

@@ -1,5 +1,5 @@
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 namespace MacroTools.Libraries
 {

@@ -9,7 +9,7 @@ using MacroTools.QuestSystem;
 using MacroTools.LegendSystem;
 using WarcraftLegacies.Source.Objectives;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 
 namespace WarcraftLegacies.Source.Quests.Draenei

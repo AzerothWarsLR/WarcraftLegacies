@@ -3,7 +3,7 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Quests.Naga
 {

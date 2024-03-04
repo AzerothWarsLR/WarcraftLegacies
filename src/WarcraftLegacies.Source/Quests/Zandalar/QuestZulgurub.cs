@@ -5,7 +5,7 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
-using static War3Api.Common; 
+ 
 
 namespace WarcraftLegacies.Source.Quests.Zandalar
 {

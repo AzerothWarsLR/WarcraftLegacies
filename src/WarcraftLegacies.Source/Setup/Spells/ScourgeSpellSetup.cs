@@ -8,7 +8,7 @@ using WarcraftLegacies.Source.FactionMechanics.Scourge;
 using WarcraftLegacies.Source.PassiveAbilities;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.Reap;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {

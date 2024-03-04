@@ -4,7 +4,7 @@ using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 
 namespace MacroTools

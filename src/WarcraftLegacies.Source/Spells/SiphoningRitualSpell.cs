@@ -4,7 +4,7 @@ using MacroTools.ChannelSystem;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Spells
 {

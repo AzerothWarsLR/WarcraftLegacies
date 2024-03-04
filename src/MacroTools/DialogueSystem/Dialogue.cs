@@ -1,6 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Sound;
-using static War3Api.Common;
+
 
 namespace MacroTools.DialogueSystem
 {

@@ -8,7 +8,7 @@ using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using WCSharp.Events;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Powers
 {

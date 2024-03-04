@@ -11,7 +11,7 @@ using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.GameModes;
 using WarcraftLegacies.Source.UnitTypes;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Setup
 {

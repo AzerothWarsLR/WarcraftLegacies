@@ -1,6 +1,6 @@
 ﻿using MacroTools.DummyCasters;
 using MacroTools.PassiveAbilitySystem;
-using static War3Api.Common;
+
 
 namespace MacroTools.PassiveAbilities
 {

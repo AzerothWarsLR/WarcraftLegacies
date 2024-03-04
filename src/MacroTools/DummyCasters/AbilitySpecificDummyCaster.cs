@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 namespace MacroTools.DummyCasters
 {

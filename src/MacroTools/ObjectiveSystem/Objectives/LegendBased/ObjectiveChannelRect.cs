@@ -2,8 +2,6 @@
 using MacroTools.QuestSystem;
 using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
-using static MacroTools.Libraries.GeneralHelpers;
 
 namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 {

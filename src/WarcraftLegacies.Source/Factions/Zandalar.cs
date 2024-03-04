@@ -6,7 +6,7 @@ using MacroTools.FactionSystem;
 using WarcraftLegacies.Source.Quests.Zandalar;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Factions
 {

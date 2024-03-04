@@ -3,7 +3,7 @@ using MacroTools.GameModes;
 using MacroTools.HintSystem;
 using WarcraftLegacies.Source.Commands;
 using WarcraftLegacies.Source.Setup;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.GameModes
 {

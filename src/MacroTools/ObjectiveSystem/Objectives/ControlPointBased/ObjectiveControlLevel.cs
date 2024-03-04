@@ -1,6 +1,6 @@
 ﻿using MacroTools.ControlPointSystem;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
+
 
 namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 {

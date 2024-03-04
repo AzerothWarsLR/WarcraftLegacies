@@ -1,4 +1,4 @@
-﻿using static War3Api.Common;
+﻿
 using WCSharp.Shared.Data;
 
 namespace MacroTools.Extensions

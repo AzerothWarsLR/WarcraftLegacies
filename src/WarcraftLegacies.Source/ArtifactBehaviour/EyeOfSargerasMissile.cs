@@ -1,6 +1,6 @@
 ﻿using MacroTools.Extensions;
 using WCSharp.Missiles;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.ArtifactBehaviour
 {

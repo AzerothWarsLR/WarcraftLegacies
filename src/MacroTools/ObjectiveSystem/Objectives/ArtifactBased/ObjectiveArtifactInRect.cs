@@ -2,7 +2,7 @@ using System;
 using MacroTools.QuestSystem;
 using MacroTools.Wrappers;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 
 namespace MacroTools.ObjectiveSystem.Objectives.ArtifactBased

@@ -1,7 +1,5 @@
 ﻿using System;
-using MacroTools.Extensions;
 using WCSharp.Events;
-using static War3Api.Common;
 
 namespace MacroTools.ChannelSystem
 {
@@ -96,8 +94,9 @@ namespace MacroTools.ChannelSystem
     /// </summary>
     internal void RegisterCancellationTrigger()
     {
-      _cancelTrigger = CreateTrigger().RegisterUnitEvent(Caster, EVENT_UNIT_SPELL_ENDCAST)
-        .AddAction(() => { Active = false; });
+      _cancelTrigger = CreateTrigger();
+      _cancelTrigger.RegisterUnitEvent(Caster, EVENT_UNIT_SPELL_ENDCAST);
+      _cancelTrigger.AddAction(() => { Active = false; });
     }
     
     /// <summary>
@@ -113,17 +112,6 @@ namespace MacroTools.ChannelSystem
     /// </summary>
     protected virtual void OnDispose()
     {
-    }
-
-    /// <summary>
-    ///   Retrieves the LocationZ at the given (X, Y) coordinates.
-    /// </summary>
-    protected static float GetZ(float x, float y)
-    {
-      var loc = Location(x, y);
-      var z = GetLocationZ(loc);
-      RemoveLocation(loc);
-      return z;
     }
 
     /// <summary>

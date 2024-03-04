@@ -1,6 +1,6 @@
 ﻿using MacroTools.SpellSystem;
 using WCSharp.Buffs;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Spells.ExactJustice
 {

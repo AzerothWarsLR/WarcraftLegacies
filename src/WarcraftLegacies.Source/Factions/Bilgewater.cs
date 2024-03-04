@@ -9,7 +9,7 @@ using MacroTools.Powers;
 using WarcraftLegacies.Source.Quests.Goblin;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Factions
 {

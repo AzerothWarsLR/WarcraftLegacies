@@ -7,7 +7,7 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using WarcraftLegacies.Source.Quests.Warsong;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Factions
 {

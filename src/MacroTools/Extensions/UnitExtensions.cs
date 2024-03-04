@@ -4,8 +4,6 @@ using MacroTools.ControlPointSystem;
 using MacroTools.LegendSystem;
 using MacroTools.Libraries;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
-using static MacroTools.Libraries.GeneralHelpers;
 
 namespace MacroTools.Extensions
 {

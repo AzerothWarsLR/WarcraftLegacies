@@ -1,7 +1,7 @@
 ﻿using MacroTools;
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {

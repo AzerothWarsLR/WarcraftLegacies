@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using static War3Api.Common;
+
 using MacroTools;
 using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;

@@ -1,7 +1,7 @@
 ﻿using MacroTools.DummyCasters;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {

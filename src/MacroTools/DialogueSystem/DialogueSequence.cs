@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
-using static War3Api.Common;
+
 
 namespace MacroTools.DialogueSystem
 {

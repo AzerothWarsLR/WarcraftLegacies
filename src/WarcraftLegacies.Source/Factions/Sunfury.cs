@@ -7,7 +7,7 @@ using WarcraftLegacies.Source.Quests.Quelthalas;
 using WarcraftLegacies.Source.Quests.Sunfury;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Factions
 {

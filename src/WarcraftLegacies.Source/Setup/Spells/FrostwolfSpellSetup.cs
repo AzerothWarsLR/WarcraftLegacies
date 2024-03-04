@@ -5,7 +5,7 @@ using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.Slipstream;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
