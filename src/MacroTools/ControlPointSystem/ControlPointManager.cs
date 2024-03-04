@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
 using WCSharp.Events;
+using static WCSharp.Api.Blizzard;
 
 namespace MacroTools.ControlPointSystem
 {
@@ -172,54 +174,55 @@ namespace MacroTools.ControlPointSystem
       var trigger = CreateTrigger();
       trigger.RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_DAMAGED);
       trigger.AddAction(() =>
+      {
+        try
         {
-          try
-          {
-            var attacker = GetEventDamageSource();
-            var hitPoints = GetUnitState(controlPoint.Unit, UNIT_STATE_LIFE) - GetEventDamage();
-            if (hitPoints > 1)
-              return;
-            BlzSetEventDamage(0);
-            SetUnitOwner(controlPoint.Unit, GetOwningPlayer(attacker), true);
-            controlPoint.Unit.SetLifePercent(100);
-          }
-          catch (Exception ex)
-          {
-            Console.WriteLine(ex);
-          }
-        });
+          var attacker = GetEventDamageSource();
+          var hitPoints = GetUnitState(controlPoint.Unit, UNIT_STATE_LIFE) - GetEventDamage();
+          if (hitPoints > 1)
+            return;
+          BlzSetEventDamage(0);
+          SetUnitOwner(controlPoint.Unit, GetOwningPlayer(attacker), true);
+          controlPoint.Unit.SetLifePercent(100);
+        }
+        catch (Exception ex)
+        {
+          Console.WriteLine(ex);
+        }
+      });
     }
 
     private void RegisterOwnershipChangeTrigger(ControlPoint controlPoint)
     {
-      CreateTrigger()
-        .RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_CHANGE_OWNER)
-        .AddAction(() =>
+      var ownershipChangeTrigger = CreateTrigger();
+
+      ownershipChangeTrigger.RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_CHANGE_OWNER);
+      ownershipChangeTrigger.AddAction(() =>
+      {
+        try
         {
-          try
-          {
-            var previousOwner = PlayerData.ByHandle(GetChangingUnitPrevOwner());
-            previousOwner.RemoveControlPoint(controlPoint);
-            previousOwner.BaseIncome -= controlPoint.Value;
+          var previousOwner = PlayerData.ByHandle(GetChangingUnitPrevOwner());
+          previousOwner.RemoveControlPoint(controlPoint);
+          previousOwner.BaseIncome -= controlPoint.Value;
 
-            var newOwner = PlayerData.ByHandle(GetTriggerUnit().Owner);
-            newOwner.AddControlPoint(controlPoint);
-            newOwner.BaseIncome += controlPoint.Value;
+          var newOwner = PlayerData.ByHandle(GetTriggerUnit().Owner);
+          newOwner.AddControlPoint(controlPoint);
+          newOwner.BaseIncome += controlPoint.Value;
 
-            if (GetUnitAbilityLevel(controlPoint.Unit, RegenerationAbility) == 0)
-              controlPoint.Unit.AddAbility(RegenerationAbility);
-            
-            if (GetUnitAbilityLevel(controlPoint.Unit, PiercingResistanceAbility) == 0)
-              controlPoint.Unit.AddAbility(PiercingResistanceAbility);
-            
-            controlPoint.Unit.SetLifePercent(100);
-            controlPoint.ControlLevel = 0;
-          }
-          catch (Exception ex)
-          {
-            Console.WriteLine(ex);
-          }
-        });
+          if (GetUnitAbilityLevel(controlPoint.Unit, RegenerationAbility) == 0)
+            controlPoint.Unit.AddAbility(RegenerationAbility);
+
+          if (GetUnitAbilityLevel(controlPoint.Unit, PiercingResistanceAbility) == 0)
+            controlPoint.Unit.AddAbility(PiercingResistanceAbility);
+
+          controlPoint.Unit.SetLifePercent(100);
+          controlPoint.ControlLevel = 0;
+        }
+        catch (Exception ex)
+        {
+          Console.WriteLine(ex);
+        }
+      });
     }
 
     private void RegisterControlLevelChangeTrigger(ControlPoint controlPoint)
@@ -288,10 +291,10 @@ namespace MacroTools.ControlPointSystem
 
       var defenderUnitTypeId = controlPoint.Owner.GetFaction()?.ControlPointDefenderUnitTypeId ??
                                ControlLevelSettings.DefaultDefenderUnitTypeId;
-      controlPoint.Defender ??= CreateUnit(controlPoint.Owner, defenderUnitTypeId, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit), 270);
-      controlPoint.Defender
-        .AddAbility(FourCC("Aloc"))
-        .SetInvulnerable(true);
+      controlPoint.Defender ??= CreateUnit(controlPoint.Owner, defenderUnitTypeId, GetUnitX(controlPoint.Unit),
+        GetUnitY(controlPoint.Unit), 270);
+      controlPoint.Defender.AddAbility(FourCC("Aloc"));
+      controlPoint.Defender.IsInvulnerable = true;
       ConfigureControlPointOrDefenderAttack(controlPoint.Defender, flooredLevel);
       ConfigureControlPointOrDefenderAttack(controlPoint.Unit, flooredLevel);
     }
@@ -300,8 +303,8 @@ namespace MacroTools.ControlPointSystem
     {
       controlPoint.Defender?.Kill();
       controlPoint.Defender = null;
-      (controlPoint.Unit.IsInvulnerable = true)
-        .AddAbility(IncreaseControlLevelAbilityTypeId);
+      controlPoint.Unit.IsInvulnerable = true;
+      controlPoint.Unit.AddAbility(IncreaseControlLevelAbilityTypeId);
     }
 
     private void ConfigureControlPointOrDefenderAttack(unit whichUnit, int controlLevel)
