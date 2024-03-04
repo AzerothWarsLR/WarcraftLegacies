@@ -30,7 +30,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
         .AddAction(() =>
         {
           Progress = QuestProgress.Complete;
-          GetTriggeringTrigger().Destroy();
+          GetTriggeringTrigger().Dispose();
         });
 
       Position = _objectiveUnit.GetPosition();

@@ -70,17 +70,32 @@ namespace MacroTools.LegendSystem
     /// <inheritdoc />
     protected override void OnChangeUnit()
     {
-      _deathTrig?.Destroy();
+      trigger tempQualifier = _deathTrig;
+      if (tempQualifier != null)
+      {
+        tempQualifier.Dispose();
+      }
+
       _deathTrig = CreateTrigger()
         .RegisterUnitEvent(Unit, EVENT_UNIT_DEATH)
         .AddAction(OnDeath);
 
-      _damageTrig?.Destroy();
+      trigger tempQualifier1 = _damageTrig;
+      if (tempQualifier1 != null)
+      {
+        tempQualifier1.Dispose();
+      }
+
       _damageTrig = CreateTrigger()
         .RegisterUnitEvent(Unit, EVENT_UNIT_DAMAGED)
         .AddAction(OnDamaged);
 
-      _ownerTrig?.Destroy();
+      trigger tempQualifier2 = _ownerTrig;
+      if (tempQualifier2 != null)
+      {
+        tempQualifier2.Dispose();
+      }
+
       _ownerTrig = CreateTrigger()
         .RegisterUnitEvent(Unit, EVENT_UNIT_CHANGE_OWNER)
         .AddAction(() =>

@@ -48,7 +48,12 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
 
     private static void UnregisterEvents()
     {
-      _deathTrigger?.Destroy();
+      trigger tempQualifier = _deathTrigger;
+      if (tempQualifier != null)
+      {
+        tempQualifier.Dispose();
+      }
+
       _scourge.ScoreStatusChanged -= OnScourgeScoreStatusChanged;
     }
 

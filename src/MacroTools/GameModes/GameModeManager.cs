@@ -71,7 +71,7 @@ namespace MacroTools.GameModes
         DialogDisplay(player, dialog, false);
       
       foreach (var trigger in buttonClickTriggers)
-        trigger.Destroy();
+        trigger.Dispose();
     }
 
     private sealed class GameModeVote

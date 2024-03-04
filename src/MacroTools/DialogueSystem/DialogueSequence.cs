@@ -30,7 +30,7 @@ namespace MacroTools.DialogueSystem
           dialogue.Play(whichPlayer);
           TriggerWaitForSound(dialogue.Sound, 0.75f);
         }
-        GetTriggeringTrigger().Destroy();
+        GetTriggeringTrigger().Dispose();
       }).Execute();
     }
   }

@@ -82,7 +82,7 @@ namespace MacroTools.Instances
     {
       try
       {
-        _dependencyDiesTrigger.Destroy();
+        _dependencyDiesTrigger.Dispose();
         foreach (var rect in _rectangles)
         {
           var unitsInRect = CreateGroup()

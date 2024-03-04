@@ -92,7 +92,7 @@ namespace MacroTools.UserInterface
       DialogDestroy(_pickDialog);
       
       foreach (var trigger in _triggers)
-        trigger.Destroy();
+        trigger.Dispose();
     }
   }
 }

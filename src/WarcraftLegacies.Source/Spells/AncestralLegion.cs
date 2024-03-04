@@ -72,8 +72,7 @@ namespace WarcraftLegacies.Source.Spells
             
             summonedTauren.Remove();
             
-            GetTriggeringTrigger()
-              .Destroy();
+            GetTriggeringTrigger().Dispose();
           });
         
         AddSpecialEffect(SummonEffect, targetPoint.X, targetPoint.Y)
