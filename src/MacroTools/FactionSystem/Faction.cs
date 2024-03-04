@@ -235,7 +235,7 @@ namespace MacroTools.FactionSystem
           bool temp = tempQualifier.Alive;
         }
 
-        if (capital.Essential && capital.OwningPlayer == Player && RETURNED_VALUE == true)
+        if (capital.Essential && capital.OwningPlayer == Player)
           essentialLegends.Add(capital);
       }
 
