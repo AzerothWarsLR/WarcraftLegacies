@@ -137,8 +137,9 @@ namespace Launcher.Services
         IsCommentsDisabled = true
       };
       
-      // Collect required paths and compile
-      var coreSystemFiles = CoreSystemProvider.GetCoreSystemFiles();
+      var coreSystemFiles = CoreSystemProvider.GetCoreSystemFiles()
+        .Where(x => !x.EndsWith("Common.lua"))
+        .Concat(new[] { "CoreSystem/WCSharp.lua" });
       const string blizzardJ = "../../../../../build/blizzard.j";
       const string commonJ = "../../../../../build/common.j";
       var mapScriptBuilder = new MapScriptBuilder();
