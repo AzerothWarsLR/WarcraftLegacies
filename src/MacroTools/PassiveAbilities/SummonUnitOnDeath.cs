@@ -48,9 +48,12 @@ namespace MacroTools.PassiveAbilities
       
       var pos = triggerUnit.GetPosition();
       for (var i = 0; i < SummonCount; i++)
-        CreateUnit(triggerUnit.Owner, SummonUnitTypeId, pos.X, pos.Y, triggerUnit.Facing)
-          .AddType(UNIT_TYPE_SUMMONED)
-          .SetTimedLife(Duration);
+      {
+        var summonedUnit = CreateUnit(triggerUnit.Owner, SummonUnitTypeId, pos.X, pos.Y, triggerUnit.Facing);
+        summonedUnit.AddType(UNIT_TYPE_SUMMONED);
+        summonedUnit.ApplyTimedLife(0, Duration);
+      }
+
       AddSpecialEffect(SpecialEffectPath, pos.X, pos.Y)
         .SetLifespan(1);
       triggerUnit.Dispose();
