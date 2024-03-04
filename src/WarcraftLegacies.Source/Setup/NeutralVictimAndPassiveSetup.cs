@@ -1,5 +1,5 @@
 ﻿
-using static War3Api.Blizzard;
+using static WCSharp.Api.Blizzard;
 using System.Collections.Generic;
 using MacroTools.Extensions;
 

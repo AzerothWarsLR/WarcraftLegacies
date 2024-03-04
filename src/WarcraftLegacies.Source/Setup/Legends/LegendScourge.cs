@@ -4,8 +4,7 @@ using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
-
-using static War3Api.Blizzard;
+using static WCSharp.Api.Blizzard;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {

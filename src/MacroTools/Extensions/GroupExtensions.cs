@@ -38,7 +38,7 @@ namespace MacroTools.Extensions
 
     /// <summary>
     /// Adds all units selected by the provided player to the group.
-    /// </summary>
+    /// </summary> 
     public static  group EnumSelectedUnits(this group whichGroup, player whichPlayer)
     {
       SyncSelections();
