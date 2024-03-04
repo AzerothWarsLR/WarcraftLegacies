@@ -100,7 +100,10 @@ namespace MacroTools.ArtifactSystem
             isPositionPathable ??= !IsTerrainPathable(GetUnitX(triggerUnit), GetUnitY(triggerUnit), PATHING_TYPE_WALKABILITY);
 
             if (isPositionPathable == true)
-              itemInSlot.SetPosition(triggerUnit.GetPosition());
+            {
+              itemInSlot.X = triggerUnit.X;
+              itemInSlot.Y = triggerUnit.Y;
+            }
             else
             {
               var shore = ShoreManager.GetNearestShore(triggerUnit.GetPosition());
@@ -110,7 +113,8 @@ namespace MacroTools.ArtifactSystem
                   $"{nameof(ArtifactManager)} could not find a {nameof(Shore)} to dump an {nameof(Artifact)}.");
               }
 
-              itemInSlot.SetPosition(shore.Position);
+              itemInSlot.X = shore.Position.X;
+              itemInSlot.Y = shore.Position.Y;
             }
           }
         }
