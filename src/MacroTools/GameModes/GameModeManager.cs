@@ -39,10 +39,11 @@ namespace MacroTools.GameModes
         foreach (var gameModeVote in _gameModeVotes)
         {
           var dialogButton = DialogAddButton(dialog, gameModeVote.GameMode.Name, 0);
-          buttonClickTriggers.Add(CreateTrigger()
-            .RegisterDialogButtonEvent(dialogButton)
-            .AddAction(() => { gameModeVote.VoteCount += 1; }
-            )
+          var trigger = CreateTrigger();
+          trigger.RegisterDialogButtonEvent(dialogButton);
+          trigger.AddAction(() => { gameModeVote.VoteCount += 1; }
+            );
+          buttonClickTriggers.Add(trigger
           );
         }
 

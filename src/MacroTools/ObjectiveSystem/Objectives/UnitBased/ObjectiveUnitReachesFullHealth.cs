@@ -25,9 +25,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
         ? $"Repair {GetUnitName(objectiveUnit)} to {hitPointRequirement} hit points"
         : $"Bring {GetUnitName(objectiveUnit)} to {hitPointRequirement} hit points";
       DisplaysPosition = IsUnitType(objectiveUnit, UNIT_TYPE_STRUCTURE);
-      CreateTrigger()
-        .RegisterLifeEvent(objectiveUnit, UNIT_STATE_LIFE, GREATER_THAN, hitPointRequirement - 1)
-        .AddAction(() =>
+      var trigger = CreateTrigger();
+      trigger.RegisterLifeEvent(objectiveUnit, UNIT_STATE_LIFE, GREATER_THAN, hitPointRequirement - 1);
+      trigger.AddAction(() =>
         {
           Progress = QuestProgress.Complete;
           GetTriggeringTrigger().Dispose();

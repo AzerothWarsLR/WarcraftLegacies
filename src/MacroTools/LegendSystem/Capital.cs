@@ -85,9 +85,10 @@ namespace MacroTools.LegendSystem
         tempQualifier.Dispose();
       }
 
-      _deathTrig = CreateTrigger()
-        .RegisterUnitEvent(Unit, EVENT_UNIT_DEATH)
-        .AddAction(OnDeath);
+      var deathTrig = CreateTrigger();
+      deathTrig.RegisterUnitEvent(Unit, EVENT_UNIT_DEATH);
+      deathTrig.AddAction(OnDeath);
+      _deathTrig = deathTrig;
 
       trigger tempQualifier1 = _damageTrig;
       if (tempQualifier1 != null)
@@ -95,9 +96,10 @@ namespace MacroTools.LegendSystem
         tempQualifier1.Dispose();
       }
 
-      _damageTrig = CreateTrigger()
-        .RegisterUnitEvent(Unit, EVENT_UNIT_DAMAGED)
-        .AddAction(OnDamaged);
+      var damageTrig = CreateTrigger();
+      damageTrig.RegisterUnitEvent(Unit, EVENT_UNIT_DAMAGED);
+      damageTrig.AddAction(OnDamaged);
+      _damageTrig = damageTrig;
 
       trigger tempQualifier2 = _ownerTrig;
       if (tempQualifier2 != null)
@@ -105,12 +107,13 @@ namespace MacroTools.LegendSystem
         tempQualifier2.Dispose();
       }
 
-      _ownerTrig = CreateTrigger()
-        .RegisterUnitEvent(Unit, EVENT_UNIT_CHANGE_OWNER)
-        .AddAction(() =>
+      var ownerTrig = CreateTrigger();
+      ownerTrig.RegisterUnitEvent(Unit, EVENT_UNIT_CHANGE_OWNER);
+      ownerTrig.AddAction(() =>
         {
           OnChangeOwner(new LegendChangeOwnerEventArgs(this, GetChangingUnitPrevOwner()));
         });
+      _ownerTrig = ownerTrig;
     }
     
     private void OnDamaged()

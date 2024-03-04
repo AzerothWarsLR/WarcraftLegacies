@@ -27,9 +27,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       Description = $"Enemy unit has entered {rectName}";
       DisplaysPosition = false;
       PingPath = "MinimapQuestTurnIn";
-      CreateTrigger()
-        .RegisterEnterRegions(_targetRects)
-        .AddAction(() =>
+      var trigger = CreateTrigger();
+      trigger.RegisterEnterRegions(_targetRects);
+      trigger.AddAction(() =>
         {
           var triggerUnit = GetTriggerUnit();
           if (!IsUnitValid(triggerUnit)) 

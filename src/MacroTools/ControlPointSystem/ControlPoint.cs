@@ -1,4 +1,5 @@
 using System;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 
 
@@ -84,9 +85,9 @@ namespace MacroTools.ControlPointSystem
     /// </summary>
     internal void OnRegister()
     {
-      CreateTrigger()
-        .RegisterUnitEvent(Unit, EVENT_UNIT_CHANGE_OWNER)
-        .AddAction(() =>
+      var trigger = CreateTrigger();
+      trigger.RegisterUnitEvent(Unit, EVENT_UNIT_CHANGE_OWNER);
+      trigger.AddAction(() =>
         {
           SignalOwnerAllianceChange();
         });

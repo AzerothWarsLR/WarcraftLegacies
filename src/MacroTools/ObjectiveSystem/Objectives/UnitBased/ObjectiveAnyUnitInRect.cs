@@ -27,9 +27,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       DisplaysPosition = true;
       PingPath = "MinimapQuestTurnIn";
 
-      CreateTrigger()
-        .RegisterEnterRegion(targetRect)
-        .AddAction(() =>
+      var trigger = CreateTrigger();
+      trigger.RegisterEnterRegion(targetRect);
+      trigger.AddAction(() =>
         {
           var triggerUnit = GetTriggerUnit();
           if (!IsUnitValid(triggerUnit)) 
@@ -37,9 +37,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
           CompletingUnit = triggerUnit;
           Progress = QuestProgress.Complete;
         });
-      CreateTrigger()
-        .RegisterLeaveRegion(targetRect)
-        .AddAction(() =>
+      var trigger1 = CreateTrigger();
+      trigger1.RegisterLeaveRegion(targetRect);
+      trigger1.AddAction(() =>
         {
           if (!IsValidUnitInRect()) 
             Progress = QuestProgress.Incomplete;

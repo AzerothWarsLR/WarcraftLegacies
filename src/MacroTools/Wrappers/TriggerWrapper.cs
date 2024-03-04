@@ -5,12 +5,7 @@ namespace MacroTools.Wrappers
 {
   public sealed class TriggerWrapper : IDisposable
   {
-    public TriggerWrapper()
-    {
-      Trigger = CreateTrigger();
-    }
-
-    public trigger Trigger { get; }
+    public trigger Trigger { get; } = CreateTrigger();
 
     /// <inheritdoc />
     public void Dispose() => DestroyTrigger(Trigger);

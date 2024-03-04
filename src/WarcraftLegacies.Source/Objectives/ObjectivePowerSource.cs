@@ -23,9 +23,9 @@ namespace WarcraftLegacies.Source.Objectives
     public ObjectivePowerSource(unit dimensionalGenerator, IEnumerable<int> validItemTypeIds)
     {
       Description = $"Place a valid power source in the {GetUnitName(dimensionalGenerator)}";
-      CreateTrigger()
-        .RegisterUnitEvent(dimensionalGenerator, EVENT_UNIT_PICKUP_ITEM)
-        .AddAction(() =>
+      var trigger = CreateTrigger();
+      trigger.RegisterUnitEvent(dimensionalGenerator, EVENT_UNIT_PICKUP_ITEM);
+      trigger.AddAction(() =>
         {
           if (validItemTypeIds.Contains(GetItemTypeId(GetManipulatedItem())))
           {

@@ -33,9 +33,9 @@ namespace MacroTools.CommandSystem
     {
       _registeredCommands.Add(command);
       command.OnRegister();
-      CreateTrigger()
-        .RegisterSharedChatEvent($"{Prefix}{command.CommandText}", command.Exact)
-        .AddAction(() =>
+      var trigger = CreateTrigger();
+      trigger.RegisterSharedChatEvent($"{Prefix}{command.CommandText}", command.Exact);
+      trigger.AddAction(() =>
         {
           try
           {

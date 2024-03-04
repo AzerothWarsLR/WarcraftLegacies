@@ -211,7 +211,8 @@ namespace MacroTools.Extensions
         return;
       
       _dialoguePlaying = true;
-      CreateTrigger().AddAction(() =>
+      var trigger = CreateTrigger();
+      trigger.AddAction(() =>
       {
         while (_dialogueQueue.Any())
         {
@@ -222,7 +223,8 @@ namespace MacroTools.Extensions
         }
         _dialoguePlaying = false;
         GetTriggeringTrigger().Dispose();
-      }).Execute();
+      });
+      trigger.Execute();
     }
     
     /// <summary>

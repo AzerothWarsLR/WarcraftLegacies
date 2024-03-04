@@ -31,9 +31,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       target.ChangedOwner += (_, _) => { RecalculateProgress(); };
       target.UnitChanged += (_, _) => { RecalculateProgress(); };
 
-      CreateTrigger()
-        .RegisterUnitEvent(target.Unit, EVENT_UNIT_DEATH)
-        .AddAction(() => { if (_canFail) { Progress = QuestProgress.Failed; } });
+      var trigger = CreateTrigger();
+      trigger.RegisterUnitEvent(target.Unit, EVENT_UNIT_DEATH);
+      trigger.AddAction(() => { if (_canFail) { Progress = QuestProgress.Failed; } });
       
       Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
     }

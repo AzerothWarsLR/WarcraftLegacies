@@ -133,9 +133,10 @@ namespace MacroTools.Mechanics.DemonGates
           Target.Facing + FacingOffset)
           .IssueOrderOld("attack", RallyPoint);
         _spawnedDemons.Add(spawnedDemon);
-        CreateTrigger()
-          .RegisterUnitEvent(spawnedDemon, EVENT_UNIT_DEATH)
-          .AddAction(() =>
+        
+        var trigger = CreateTrigger();
+        trigger.RegisterUnitEvent(spawnedDemon, EVENT_UNIT_DEATH);
+        trigger.AddAction(() =>
           {
             _spawnedDemons.Remove(spawnedDemon);
             DestroyTrigger(GetTriggeringTrigger());

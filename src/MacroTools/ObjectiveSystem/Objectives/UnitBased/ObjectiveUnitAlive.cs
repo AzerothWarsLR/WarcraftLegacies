@@ -19,9 +19,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
         ? $"{whichUnit.Name} is intact"
         : $"{whichUnit.Name} is alive";
       Progress = QuestProgress.Complete;
-      CreateTrigger()
-        .RegisterUnitEvent(whichUnit, EVENT_UNIT_DEATH)
-        .AddAction(() => { Progress = QuestProgress.Failed; });
+      var trigger = CreateTrigger();
+      trigger.RegisterUnitEvent(whichUnit, EVENT_UNIT_DEATH);
+      trigger.AddAction(() => { Progress = QuestProgress.Failed; });
     }
   }
 }

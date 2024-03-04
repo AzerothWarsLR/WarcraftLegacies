@@ -316,9 +316,9 @@ namespace MacroTools.Extensions
     /// </summary>
     public static void MakeCapturable(this unit whichUnit)
     {
-      CreateTrigger()
-        .RegisterUnitEvent(whichUnit, EVENT_UNIT_DAMAGED)
-        .AddAction(() =>
+      var trigger = CreateTrigger();
+      trigger.RegisterUnitEvent(whichUnit, EVENT_UNIT_DAMAGED);
+      trigger.AddAction(() =>
         {
           if (!(GetEventDamage() + 1 >= GetUnitState(whichUnit, UNIT_STATE_LIFE))) 
             return;

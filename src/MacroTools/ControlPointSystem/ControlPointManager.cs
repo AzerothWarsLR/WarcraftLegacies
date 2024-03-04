@@ -169,9 +169,9 @@ namespace MacroTools.ControlPointSystem
 
     private static void RegisterDamageTrigger(ControlPoint controlPoint)
     {
-      CreateTrigger()
-        .RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_DAMAGED)
-        .AddAction(() =>
+      var trigger = CreateTrigger();
+      trigger.RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_DAMAGED);
+      trigger.AddAction(() =>
         {
           try
           {
