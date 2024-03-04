@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using WCSharp.Shared.Data;
 
-
 namespace MacroTools.Extensions
 {
   /// <summary>
@@ -17,16 +16,6 @@ namespace MacroTools.Extensions
     {
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         TriggerRegisterPlayerChatEvent(whichTrigger, player, chatMessageToDetect, exactMatchOnly);
-      return whichTrigger;
-    }
-    
-    /// <summary>
-    /// Registers a key event for all players.
-    /// </summary>
-    public static trigger RegisterSharedKeyEvent(this trigger whichTrigger, oskeytype key, int metaKey, bool keyDown)
-    {
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-        BlzTriggerRegisterPlayerKeyEvent(whichTrigger, player, key, metaKey, keyDown);
       return whichTrigger;
     }
     
@@ -84,14 +73,5 @@ namespace MacroTools.Extensions
     /// Destroys the trigger.
     /// </summary>
     public static void Destroy(this trigger whichTrigger) => DestroyTrigger(whichTrigger);
-
-    /// <summary>
-    /// Immediately executes all of the trigger's actions.
-    /// </summary>
-    public static trigger Execute(this trigger whichTrigger)
-    {
-      TriggerExecute(whichTrigger);
-      return whichTrigger;
-    }
   }
 }
