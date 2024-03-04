@@ -70,10 +70,14 @@ namespace MacroTools.QuestSystem
             ? $"{display} - |cff808080{questItem.Description} (Completed)|r\n"
             : $"{display} - {questItem.Description}\n";
         }
+
       if (faction.Player != null && faction.Player.GetPlayerSettings().ShowQuestText)
         DisplayTextToPlayer(faction.Player, 0, 0, display);
+
       var sound = SoundLibrary.Discovered;
-      faction.Player?.PlaySound(sound);
+      faction.Player?
+        .PlaySound(sound)
+        .FlashQuests();
     }
   }
 }

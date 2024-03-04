@@ -172,6 +172,17 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>
+    /// Flashes the quest menu for the player.
+    /// </summary>
+    public static player FlashQuests(this player whichPlayer)
+    {
+      if (GetLocalPlayer() == whichPlayer)
+        FlashQuestDialogButton();
+
+      return whichPlayer;
+    }
+
+    /// <summary>
     /// Returns cross-game settings set by the player.
     /// </summary>
     internal static PlayerSettings GetPlayerSettings(this player whichPlayer) =>
