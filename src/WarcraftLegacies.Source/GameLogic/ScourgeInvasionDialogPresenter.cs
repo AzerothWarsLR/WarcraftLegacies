@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.UserInterface;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
 
@@ -20,7 +21,7 @@ namespace WarcraftLegacies.Source.GameLogic
         return;
       
       var invasionLocation = choice.Data;
-      foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.Northrend_Ambiance).EmptyToList()
+      foreach (var unit in GroupUtils.GetUnitsInRect(Regions.Northrend_Ambiance)
                  .Where(x => x.Owner == pickingPlayer))
       {
         if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) || IsUnitType(unit, UNIT_TYPE_ANCIENT) ||

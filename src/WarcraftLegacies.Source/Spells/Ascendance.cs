@@ -2,6 +2,7 @@
 using MacroTools.Buffs;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
+using MacroTools.Utils;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using WCSharp.Shared.Extensions;
@@ -28,9 +29,9 @@ namespace WarcraftLegacies.Source.Spells
 
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      foreach (var unit in CreateGroup()
-                 .EnumUnitsInRange(caster.GetPosition(), Radius)
-                 .EmptyToList()
+      foreach (var unit in GroupUtils
+                 .GetUnitsInRange(caster.GetPosition(), Radius)
+                 
                )
       {
         if (IsPlayerAlly(GetOwningPlayer(caster), GetOwningPlayer(unit)))

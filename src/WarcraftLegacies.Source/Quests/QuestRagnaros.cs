@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests
       _ragnarosSummoningPedestal = ragnarosSummmoningPedestal;
       _ragnarosSummoningPedestal.MakeCapturable();
       _ragnarosSummoningPedestal.SetOwner(Player(PLAYER_NEUTRAL_PASSIVE));
-      _ragnarosSummoningPedestal.SetInvulnerable(true);
+      _ragnarosSummoningPedestal.IsInvulnerable = true;
 
       _heroInRectObjective =
         new ObjectiveHeroWithLevelInRect(10, Regions.RagnarosSummon, "the Portal to the Firelands");

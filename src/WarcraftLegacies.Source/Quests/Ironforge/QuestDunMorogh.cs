@@ -7,6 +7,7 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
 
@@ -36,7 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       var tempGroup = CreateGroup();
 
       //Transfer all Neutral Passive units in DunMorogh
-      GroupEnumUnitsInRect(tempGroup, Regions.DunmoroghAmbient2.Rect, null);
+      tempGroup.EnumUnitsInRect(Regions.DunmoroghAmbient2.Rect);
       var u = FirstOfGroup(tempGroup);
       while (true)
       {

@@ -62,8 +62,8 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     {
       if (completingFaction.Player == null)
         return;
-      (_gilneasDoor.IsInvulnerable = true)
-        .SetOwner(completingFaction.Player);
+      _gilneasDoor.IsInvulnerable = true;
+      _gilneasDoor.Owner = completingFaction.Player;
 
       RockSystem.Register(new RockGroup(Regions.GilneasUnlock5, FourCC("LTrc"), 1));
    

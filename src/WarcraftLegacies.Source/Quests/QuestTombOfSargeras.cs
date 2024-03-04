@@ -5,6 +5,7 @@ using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
 
@@ -35,14 +36,16 @@ namespace WarcraftLegacies.Source.Quests
     {
       CreateRegion();
       _entrance = entrance;
-      guldanRemains.SetAnimation("death").SetInvulnerable(true);
+      guldanRemains.SetAnimation("death");
+      guldanRemains.IsInvulnerable = true;
       AddObjective(new ObjectiveTime(900));
       _enterTombOfSargerasRegion =
         new ObjectiveAnyHeroWithLevelReachRect(10, Regions.Sargeras_Entrance, "the Tomb of Sargeras' entrance");
       AddObjective(_enterTombOfSargerasRegion);
       _preventAccessTriggers = CreatePreventAccessTriggers(interiorRects);
       HideUnitsInsideTomb(interiorRects);
-      _entranceDoor = entranceDoor.IsInvulnerable = true;
+      _entranceDoor = entranceDoor;
+      _entranceDoor.IsInvulnerable = true;
       IsFactionQuest = false;
     }
 
@@ -70,7 +73,7 @@ namespace WarcraftLegacies.Source.Quests
     private void HideUnitsInsideTomb(IEnumerable<Rectangle> rectangles)
     {
       foreach (var rect in rectangles)
-      foreach (var unit in CreateGroup().EnumUnitsInRect(rect.Rect).EmptyToList().Where(x => !BlzIsUnitInvulnerable(x)))
+      foreach (var unit in GroupUtils.GetUnitsInRect(rect.Rect).Where(x => !BlzIsUnitInvulnerable(x)))
       {
         _rescueUnits.Add(unit);
         unit

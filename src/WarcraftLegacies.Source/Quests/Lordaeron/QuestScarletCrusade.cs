@@ -11,6 +11,7 @@ using System.Linq;
 using MacroTools.Libraries;
 using static MacroTools.Libraries.GeneralHelpers;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
+using MacroTools.Utils;
 using WarcraftLegacies.Source.Factions;
 using WarcraftLegacies.Source.Setup;
 
@@ -85,9 +86,9 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     
     private static void EvacuateTyrsHand(player newOwner)
     {
-      var neutralHostileUnitsInTyrsHand = CreateGroup()
-        .EnumUnitsInRect(Regions.TyrUnlock)
-        .EmptyToList()
+      var neutralHostileUnitsInTyrsHand = GroupUtils
+        .GetUnitsInRect(Regions.TyrUnlock)
+        
         .Where(x => x.Owner == Player(PLAYER_NEUTRAL_AGGRESSIVE));
       
       foreach (var unit in neutralHostileUnitsInTyrsHand)

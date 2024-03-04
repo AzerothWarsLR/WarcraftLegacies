@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
  
 
@@ -26,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       ResearchId = Constants.UPGRADE_R04B_QUEST_COMPLETED_UNDER_THE_BURNING_SKY;
       Global = true;
       
-      foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
+      foreach (var unit in GroupUtils.GetUnitsInRect(rescueRect))
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
           if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE)) ShowUnit(unit, false);

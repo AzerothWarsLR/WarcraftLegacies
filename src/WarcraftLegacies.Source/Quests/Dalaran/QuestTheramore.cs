@@ -10,6 +10,7 @@ using WCSharp.Shared.Data;
 using static WCSharp.Api.Blizzard;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.Quests.Dalaran
 {
@@ -62,11 +63,11 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       else
         Player(bj_PLAYER_NEUTRAL_VICTIM).RescueGroup(_rescueUnits);
 
-      foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.Dalaran).EmptyToList().Where(x =>
+      foreach (var unit in GroupUtils.GetUnitsInRect(Regions.Dalaran).Where(x =>
                  x.Owner == completingFaction.Player && !IsUnitType(x, UNIT_TYPE_STRUCTURE)).ToList())
         unit.SetPosition(Regions.Theramore.Center);
 
-      foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.Dalaran).EmptyToList().Where(x =>
+      foreach (var unit in GroupUtils.GetUnitsInRect(Regions.Dalaran).Where(x =>
                  x.Owner == completingFaction.Player && IsUnitType(x, UNIT_TYPE_STRUCTURE)).ToList())
         unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }

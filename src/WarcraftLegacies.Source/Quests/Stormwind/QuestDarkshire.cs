@@ -6,6 +6,7 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using MacroTools.Utils;
 
 
 namespace WarcraftLegacies.Source.Quests.Stormwind
@@ -35,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       var tempGroup = CreateGroup();
 
       //Transfer all Neutral Passive units in Darkshire
-      GroupEnumUnitsInRect(tempGroup, Regions.DarkshireUnlock.Rect, null);
+      tempGroup.EnumUnitsInRect(Regions.DarkshireUnlock.Rect);
       var u = FirstOfGroup(tempGroup);
       while (true)
       {

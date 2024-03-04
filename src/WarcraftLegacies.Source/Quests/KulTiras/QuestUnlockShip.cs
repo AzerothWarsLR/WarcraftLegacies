@@ -10,6 +10,7 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using System.Linq;
+using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
@@ -67,7 +68,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
 
     private static void MoveStranglethorn(player whichPlayer)
     {
-      foreach (var unit in CreateGroup().EnumUnitsInRect(Rectangle.WorldBounds).EmptyToList().Where(x => x.Owner == whichPlayer))
+      foreach (var unit in GroupUtils.GetUnitsInRect(Rectangle.WorldBounds).Where(x => x.Owner == whichPlayer))
       {
         if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE) && !IsUnitType(unit, UNIT_TYPE_ANCIENT) && !IsUnitType(unit, UNIT_TYPE_PEON))
           SetUnitPosition(unit, 6864, -17176);

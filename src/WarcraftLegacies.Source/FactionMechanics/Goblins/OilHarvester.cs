@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.Hazards;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Powers;
+using MacroTools.Utils;
 using WCSharp.Buffs;
 
 
@@ -48,7 +49,8 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
 
       if (oilPoolNearby == null)
       {
-        createdUnit.Kill().Remove();
+        createdUnit.Kill();
+        createdUnit.Dispose();
         return;
       }
       
@@ -63,11 +65,12 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
 
     private static bool EnsureValidPositioning(unit createdUnit)
     {
-      if (CreateGroup().EnumUnitsInRange(createdUnit.GetPosition(), 900)
-          .EmptyToList()
+      if (GroupUtils.GetUnitsInRange(createdUnit.GetPosition(), 900)
+          
           .All(x => x.UnitType != createdUnit.UnitType || x == createdUnit || !UnitAlive(x)))
         return true;
-      createdUnit.Kill().Remove();
+      createdUnit.Kill();
+      createdUnit.Dispose();
       return false;
     }
   }

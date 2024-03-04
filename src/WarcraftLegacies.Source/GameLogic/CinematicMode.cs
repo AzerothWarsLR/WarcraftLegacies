@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
+using MacroTools.Utils;
 
 
 namespace WarcraftLegacies.Source.GameLogic
@@ -30,9 +31,9 @@ namespace WarcraftLegacies.Source.GameLogic
       FogEnable(false);
       FogMaskEnable(false);
 
-      _pausedUnits = CreateGroup()
-        .EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds)
-        .EmptyToList();
+      _pausedUnits = GroupUtils
+        .GetUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds)
+        ;
       
       foreach (var unit in _pausedUnits)
         unit.SetPausedEx(true);

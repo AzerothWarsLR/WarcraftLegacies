@@ -137,7 +137,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         foreach (var unit in GeneralHelpers.CreateUnits(primaryPlaguePlayer, parameter.SummonUnitTypeId,
                    position.X, position.Y, 0, parameter.SummonCount))
         {
-          if (!unit.IsType(UNIT_TYPE_PEON))
+          if (!unit.IsUnitType(UNIT_TYPE_PEON))
             unit.IssueOrderOld(OrderId("attack"), attackTarget);
         }
       }

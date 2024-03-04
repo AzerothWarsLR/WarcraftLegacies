@@ -3,6 +3,7 @@ using MacroTools.Channels;
 using MacroTools.ChannelSystem;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
 
@@ -69,9 +70,9 @@ namespace WarcraftLegacies.Source.Spells
     /// <inheritdoc />
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      var targets = CreateGroup()
-        .EnumUnitsInRange(targetPoint, Radius)
-        .EmptyToList().Where(unit => IsValidTarget(caster, unit))
+      var targets = GroupUtils
+        .GetUnitsInRange(targetPoint, Radius)
+        .Where(unit => IsValidTarget(caster, unit))
         .Take(TargetCountBase + TargetCountLevel * GetAbilityLevel(caster));
       foreach (var unit in targets)
       {

@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Spells
     }
     
     /// <inheritdoc />
-    public override void OnStartCast(Common.unit caster, Common.unit target, Point targetPoint) => 
-      caster.SetInvulnerable(false);
+    public override void OnStartCast(unit caster, unit target, Point targetPoint) => 
+      caster.IsInvulnerable = false;
   }
 }

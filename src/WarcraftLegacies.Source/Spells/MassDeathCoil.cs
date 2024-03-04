@@ -2,6 +2,7 @@
 using MacroTools.DummyCasters;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 using WCSharp.Shared.Extensions;
 
@@ -30,8 +31,8 @@ namespace WarcraftLegacies.Source.Spells
 
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      var dummyTargets = CreateGroup()
-        .EnumUnitsInRange(targetPoint, Radius).EmptyToList()
+      var dummyTargets = GroupUtils
+        .GetUnitsInRange(targetPoint, Radius)
         .FindAll(unit => CastFilters.IsTargetOrganicAndAlive(caster, unit));
 
       if (UpgradeCondition(caster))
