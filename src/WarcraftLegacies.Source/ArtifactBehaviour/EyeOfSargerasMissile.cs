@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
       EffectScale = 1.5f;
       Arc = 0.3f;
       Speed = 700;
-      _eyeOfSargeras = eyeOfSargeras.SetPosition(20229f, 24244);
+      _eyeOfSargeras = SetItemPosition(eyeOfSargeras, 20229f, 24244);
       CollisionRadius = 100;
       Active = true;
       CasterLaunchZ = 50;
@@ -60,7 +60,7 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
       if (_impacted) 
         return;
       
-      _eyeOfSargeras.SetPosition(MissileX, MissileY);
+      SetItemPosition(_eyeOfSargeras, MissileX, MissileY);
       AddSpecialEffect(ImpactEffect, MissileX, MissileY)
         .SetScale(2)
         .SetLifespan(1);

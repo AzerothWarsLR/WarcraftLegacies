@@ -54,10 +54,26 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-      _objectivePowerSource.UsedPowerSource?.SetDroppable(false);
+      item tempQualifier = _objectivePowerSource.UsedPowerSource;
+      item ret = null;
+      if (tempQualifier != null)
+      {
+        tempQualifier.IsDroppable = false;
+        ret = tempQualifier;
+      }
+
       CreateTrigger()
         .RegisterUnitEvent(_dimensionalGenerator, EVENT_UNIT_DEATH)
-        .AddAction(() => { _objectivePowerSource.UsedPowerSource?.SetDroppable(true); });
+        .AddAction(() =>
+        {
+          item tempQualifier1 = _objectivePowerSource.UsedPowerSource;
+          item ret1 = null;
+          if (tempQualifier1 != null)
+          {
+            tempQualifier1.IsDroppable = true;
+            ret1 = tempQualifier1;
+          }
+        });
     }
 
     /// <inheritdoc/>
