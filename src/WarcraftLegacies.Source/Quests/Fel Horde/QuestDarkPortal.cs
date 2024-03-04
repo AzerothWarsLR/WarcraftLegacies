@@ -4,6 +4,7 @@ using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using WCSharp.Shared.Data;
 
 
 namespace WarcraftLegacies.Source.Quests.Fel_Horde
@@ -38,12 +39,12 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     {
       _stormwind = stormwind;
       _illidari = illidari;
-      _innerWaygate1 = innerWaygate1.Show(false);
-      _innerWaygate2 = innerWaygate2.Show(false);
-      _innerWaygate3 = innerWaygate3.Show(false);
-      _outerWaygate1 = outerWaygate1.Show(false);
-      _outerWaygate2 = outerWaygate2.Show(false);
-      _outerWaygate3 = outerWaygate3.Show(false);
+      _innerWaygate1 = innerWaygate1.IsVisible = false;
+      _innerWaygate2 = innerWaygate2.IsVisible = false;
+      _innerWaygate3 = innerWaygate3.IsVisible = false;
+      _outerWaygate1 = outerWaygate1.IsVisible = false;
+      _outerWaygate2 = outerWaygate2.IsVisible = false;
+      _outerWaygate3 = outerWaygate3.IsVisible = false;
       AddObjective(new ObjectiveEitherOf(
         new ObjectiveResearch(Constants.UPGRADE_R02C_THE_DARK_PORTAL_FEL_HORDE, Constants.UNIT_O008_HELLFIRE_CITADEL_FEL_HORDE, true),
         new ObjectiveTime(600)));
@@ -83,24 +84,30 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
 
     private void OpenPortal()
     {
-      _innerWaygate1
-        .Show(true)
-        .SetWaygateDestination(Regions.Dark_Portal_Exit_1.Center);
-      _innerWaygate2
-        .Show(true)
-        .SetWaygateDestination(Regions.Dark_Portal_Exit_2.Center);
-      _innerWaygate3
-        .Show(true)
-        .SetWaygateDestination(Regions.Dark_Portal_Exit_3.Center);
-      _outerWaygate1
-        .Show(true)
-        .SetWaygateDestination(Regions.Dark_Portal_Entrance_1.Center);
-      _outerWaygate2
-        .Show(true)
-        .SetWaygateDestination(Regions.Dark_Portal_Entrance_2.Center);
-      _outerWaygate3
-        .Show(true)
-        .SetWaygateDestination(Regions.Dark_Portal_Entrance_3.Center);
+      _innerWaygate1.IsVisible = true;
+      _innerWaygate1.WaygateActive = true;
+      _innerWaygate1.WaygateDestinationX = Regions.Dark_Portal_Exit_1.Center.X;
+      _innerWaygate1.WaygateDestinationY = Regions.Dark_Portal_Exit_1.Center.Y;
+      _innerWaygate2.IsVisible = true;
+      _innerWaygate2.WaygateActive = true;
+      _innerWaygate2.WaygateDestinationX = Regions.Dark_Portal_Exit_2.Center.X;
+      _innerWaygate2.WaygateDestinationY = Regions.Dark_Portal_Exit_2.Center.Y;
+      _innerWaygate3.IsVisible = true;
+      _innerWaygate3.WaygateActive = true;
+      _innerWaygate3.WaygateDestinationX = Regions.Dark_Portal_Exit_3.Center.X;
+      _innerWaygate3.WaygateDestinationY = Regions.Dark_Portal_Exit_3.Center.Y;
+      _outerWaygate1.IsVisible = true;
+      _outerWaygate1.WaygateActive = true;
+      _outerWaygate1.WaygateDestinationX = Regions.Dark_Portal_Entrance_1.Center.X;
+      _outerWaygate1.WaygateDestinationY = Regions.Dark_Portal_Entrance_1.Center.Y;
+      _outerWaygate2.IsVisible = true;
+      _outerWaygate2.WaygateActive = true;
+      _outerWaygate2.WaygateDestinationX = Regions.Dark_Portal_Entrance_2.Center.X;
+      _outerWaygate2.WaygateDestinationY = Regions.Dark_Portal_Entrance_2.Center.Y;
+      _outerWaygate3.IsVisible = true;
+      _outerWaygate3.WaygateActive = true;
+      _outerWaygate3.WaygateDestinationX = Regions.Dark_Portal_Entrance_3.Center.X;
+      _outerWaygate3.WaygateDestinationY = Regions.Dark_Portal_Entrance_3.Center.Y;
     }
   }
 }

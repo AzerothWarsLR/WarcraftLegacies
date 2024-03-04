@@ -119,9 +119,8 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       foreach (var plagueRect in _plagueParameters.PlagueRects)
       {
         var position = plagueRect.GetRandomPoint();
-        var plagueCauldron = CreateUnit(primaryPlaguePlayer, _plagueParameters.PlagueCauldronUnitTypeId, position.X, position.Y, 0)
-          .SetTimedLife(_plagueParameters.Duration);
-
+        var plagueCauldron = CreateUnit(primaryPlaguePlayer, _plagueParameters.PlagueCauldronUnitTypeId, position.X, position.Y, 0);
+        plagueCauldron.ApplyTimedLife(0, _plagueParameters.Duration);
         plagueCauldron.RemoveDestructablesInRadius(250f);
 
         CreateUnit(secondaryPlaguePlayer, Constants.UNIT_U00D_LEGION_HERALD_LEGION_WORKER, position.X, position.Y, 0);
@@ -139,7 +138,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
                    position.X, position.Y, 0, parameter.SummonCount))
         {
           if (!unit.IsType(UNIT_TYPE_PEON))
-            unit.IssueOrder(OrderId("attack"), attackTarget);
+            unit.IssueOrderOld(OrderId("attack"), attackTarget);
         }
       }
     }

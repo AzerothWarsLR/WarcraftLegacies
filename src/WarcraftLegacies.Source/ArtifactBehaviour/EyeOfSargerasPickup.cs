@@ -22,13 +22,13 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
 
     private static void OnEyeOfSargerasPickedUp()
     {
-      if (GetTriggerUnit().OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+      if (GetTriggerUnit().Owner == Player(PLAYER_NEUTRAL_AGGRESSIVE))
         return;
 
       var hostileNearby = CreateGroup()
         .EnumUnitsInRange(GetTriggerUnit().GetPosition(), 700).EmptyToList()
         .OrderByDescending(x => MathEx.GetDistanceBetweenPoints(x.GetPosition(), GetTriggerUnit().GetPosition()))
-        .FirstOrDefault(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && UnitAlive(x) && !x.IsType(UNIT_TYPE_ANCIENT));
+        .FirstOrDefault(x => x.Owner == Player(PLAYER_NEUTRAL_AGGRESSIVE) && UnitAlive(x) && !x.IsUnitType(UNIT_TYPE_ANCIENT));
       if (hostileNearby == null)
       {
         PlayerUnitEvents.Unregister(ItemTypeEvent.IsPickedUp, OnEyeOfSargerasPickedUp,

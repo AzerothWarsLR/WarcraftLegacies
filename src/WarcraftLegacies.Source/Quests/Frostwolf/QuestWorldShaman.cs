@@ -49,9 +49,16 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      _thrall.Unit?.SetName("World-Shaman")
-        .AddHeroAttributes(0, 10, 0)
-        .AddExperience(2000);
+      unit tempQualifier = _thrall.Unit;
+      unit ret = null;
+      if (tempQualifier != null)
+      {
+        tempQualifier.Name = "World-Shaman";
+        ret = tempQualifier;
+      }
+
+      ret
+        .AddHeroAttributes(0, 10, 0).Experience += 2000;
       completingFaction.AddPower(new MaelstromWeapon(0.12f, 100)
       {
         Effect = @"Doodads\Cinematic\Lightningbolt\Lightningbolt",

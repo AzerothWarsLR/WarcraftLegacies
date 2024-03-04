@@ -3,6 +3,7 @@ using MacroTools.DummyCasters;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
+using WCSharp.Shared.Extensions;
 
 
 namespace WarcraftLegacies.Source.Spells

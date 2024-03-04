@@ -18,12 +18,12 @@ namespace MacroTools
     public static void Register(unit whichUnit, float hitPointPercentagePerTurn)
     {
       if (UnitData.ContainsKey(whichUnit))
-        throw new InvalidOperationException($"Tried to register {whichUnit.GetName()} to {nameof(TurnBasedHitpointsManager)}, but it's already registered.");
+        throw new InvalidOperationException($"Tried to register {whichUnit.Name} to {nameof(TurnBasedHitpointsManager)}, but it's already registered.");
       
       UnitData.Add(whichUnit, new TurnBasedHitpointData
       {
         HitPointPercentagePerTurn = hitPointPercentagePerTurn,
-        BaseHitPoints = whichUnit.GetMaximumHitPoints()
+        BaseHitPoints = whichUnit.MaxLife
       });
       if (_intialized) 
         return;
@@ -45,10 +45,13 @@ namespace MacroTools
       {
         var bonusPercentage = turnBasedHitpointData.HitPointPercentagePerTurn * turn;
         var bonusHitPoints = (int)Math.Ceiling(turnBasedHitpointData.BaseHitPoints * bonusPercentage);
-        unit.SetMaximumHitpoints(turnBasedHitpointData.BaseHitPoints + bonusHitPoints);
+        int value = turnBasedHitpointData.BaseHitPoints + bonusHitPoints;
+        BlzSetUnitMaxHP(unit, value);
         
         var heal = turnBasedHitpointData.BaseHitPoints * turnBasedHitpointData.HitPointPercentagePerTurn;
-        unit.SetCurrentHitpoints((int)Math.Ceiling(unit.GetHitPoints() + heal));
+        int value1 = (int)Math.Ceiling(unit.Life + heal);
+        SetUnitState(unit, UNIT_STATE_LIFE, value1);
+        unit temp = unit;
       }
       
       if (turn >= TurnLimit) 

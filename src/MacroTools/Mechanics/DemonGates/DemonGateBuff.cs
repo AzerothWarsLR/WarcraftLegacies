@@ -30,7 +30,7 @@ namespace MacroTools.Mechanics.DemonGates
       set
       {
         _progress = value;
-        Target.SetMana((int)value);
+        Target.Mana = (int)value;
       }
     }
 
@@ -38,19 +38,19 @@ namespace MacroTools.Mechanics.DemonGates
     {
       get
       {
-        if (FocalDemonGateBuff.Instance != null && FocalDemonGateBuff.Instance.Target.IsAlive())
+        if (FocalDemonGateBuff.Instance != null && FocalDemonGateBuff.Instance.Target.Alive)
           return FocalDemonGateBuff.Instance.SpawnPoint;
 
         var targetPosition = Target.GetPosition();
         var offsetPosition =
           WCSharp.Shared.Util.PositionWithPolarOffset(targetPosition.X, targetPosition.Y, SpawnDistance,
-            Target.GetFacing() + FacingOffset);
+            Target.Facing + FacingOffset);
         return new Point(offsetPosition.x, offsetPosition.y);
       }
     }
 
     private Point RallyPoint =>
-      FocalDemonGateBuff.Instance != null && FocalDemonGateBuff.Instance.Target.IsAlive()
+      FocalDemonGateBuff.Instance != null && FocalDemonGateBuff.Instance.Target.Alive
         ? FocalDemonGateBuff.Instance.RallyPoint
         : Target.GetRallyPoint();
 
@@ -84,11 +84,10 @@ namespace MacroTools.Mechanics.DemonGates
     /// <inheritdoc />
     public override void OnApply()
     {
-      Target
-        .IssueOrder("setrally", Target.GetPosition())
-        .SetMaximumMana((int)_spawnInterval)
-        .AddAbility(_toggleAbilityTypeId)
-        .IssueOrder("immolation");
+      Target.IssueOrderOld("setrally", Target.GetPosition());
+      Target.MaxMana = (int)_spawnInterval;
+      Target.AddAbility(_toggleAbilityTypeId);
+      Target.IssueOrder("immolation");
     }
 
     /// <inheritdoc />
@@ -97,8 +96,8 @@ namespace MacroTools.Mechanics.DemonGates
       if (Progress < _spawnInterval)
         Progress += Interval;
       if (Progress >= _spawnInterval
-          && Caster.OwningPlayer().GetFoodUsed() < Caster.OwningPlayer().GetFoodCap()
-          && Caster.OwningPlayer().GetFoodUsed() < Caster.OwningPlayer().GetFoodCapCeiling()
+          && Caster.Owner.GetFoodUsed() < Caster.Owner.GetFoodCap()
+          && Caster.Owner.GetFoodUsed() < Caster.Owner.GetFoodCapCeiling()
           && GetUnitAbilityLevel(Caster, _toggleBuffTypeId) > 0
           && _spawnedDemons.Count < SpawnLimit)
       {
@@ -111,7 +110,7 @@ namespace MacroTools.Mechanics.DemonGates
     {
       if (newStack is DemonGateBuff newDemonGateBuff) 
         _demonUnitTypeId = newDemonGateBuff._demonUnitTypeId;
-      Target.SetMaximumMana((int)_spawnInterval);
+      Target.MaxMana = (int)_spawnInterval;
       return StackResult.Stack;
     }
 
@@ -130,9 +129,9 @@ namespace MacroTools.Mechanics.DemonGates
     {
       for (var i = 0; i < _spawnCount; i++)
       {
-        var spawnedDemon = CreateUnit(Target.OwningPlayer(), _demonUnitTypeId, SpawnPoint.X, SpawnPoint.Y,
-          Target.GetFacing() + FacingOffset)
-          .IssueOrder("attack", RallyPoint);
+        var spawnedDemon = CreateUnit(Target.Owner, _demonUnitTypeId, SpawnPoint.X, SpawnPoint.Y,
+          Target.Facing + FacingOffset)
+          .IssueOrderOld("attack", RallyPoint);
         _spawnedDemons.Add(spawnedDemon);
         CreateTrigger()
           .RegisterUnitEvent(spawnedDemon, EVENT_UNIT_DEATH)

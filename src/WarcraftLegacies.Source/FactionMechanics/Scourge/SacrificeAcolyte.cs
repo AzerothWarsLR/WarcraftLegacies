@@ -11,8 +11,8 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
     private static void OnSell()
     {
       GetTriggerUnit().Kill();
-      GetSoldUnit().SetFacingEx(GetTriggerUnit().GetFacing());
-      GetSoldUnit().OwningPlayer().Select(GetSoldUnit());
+      GetSoldUnit().Facing = GetTriggerUnit().Facing;
+      GetSoldUnit().Owner.Select(GetSoldUnit());
     }
 
     public static void Setup()

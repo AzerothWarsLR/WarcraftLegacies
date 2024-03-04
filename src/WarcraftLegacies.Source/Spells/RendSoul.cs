@@ -2,6 +2,7 @@
 using MacroTools.SpellSystem;
 
 using WCSharp.Shared.Data;
+using WCSharp.Shared.Extensions;
 
 namespace WarcraftLegacies.Source.Spells
 {
@@ -31,7 +32,7 @@ namespace WarcraftLegacies.Source.Spells
     /// <inheritdoc />
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      var targetMaximumHitPoints = target.GetMaximumHitPoints();
+      var targetMaximumHitPoints = target.MaxLife;
       var healthGained = targetMaximumHitPoints * HitPointsPerTargetMaximumHitPoints;
       var manaGained = targetMaximumHitPoints * ManaPointsPerTargetMaximumHitPoints;
 
@@ -42,11 +43,11 @@ namespace WarcraftLegacies.Source.Spells
       target.Kill();
       
       caster.Heal(healthGained);
-      caster.RestoreMana(manaGained);
+      caster.Mana += manaGained;
 
-      CreateUnit(caster.OwningPlayer(), UnitTypeSummoned, targetPosition.X, targetPosition.Y, caster.GetFacing())
-        .SetTimedLife(Duration)
-        .AddType(UNIT_TYPE_SUMMONED);
+      var summonedUnit = CreateUnit(caster.Owner, UnitTypeSummoned, targetPosition.X, targetPosition.Y, caster.Facing);
+      summonedUnit.ApplyTimedLife(0, Duration);
+      summonedUnit.AddType(UNIT_TYPE_SUMMONED);
     }
   }
 }

@@ -51,7 +51,7 @@ namespace MacroTools.PassiveAbilities
                  .OrderByDescending(x => x.GetLevel())
                  .Take(ReanimationCountLevel * GetUnitAbilityLevel(caster, _abilityTypeId)))
       {
-        Reanimate(caster.OwningPlayer(), unit);
+        Reanimate(caster.Owner, unit);
       }
     }
 
@@ -74,16 +74,16 @@ namespace MacroTools.PassiveAbilities
           GetUnitY(whichUnit))
         .SetLifespan();
 
-      var reanimatedUnit = CreateUnit(castingPlayer, whichUnit.GetTypeId(), whichUnitPosition.X,
-          whichUnitPosition.Y, whichUnit.GetFacing())
-        .RemoveAllAbilities(new List<int>{1096905835,1097690998,1112498531})
-        .SetTimedLife(Duration, BuffId)
-        .SetColor(200, 50, 50, 255)
-        .SetExplodeOnDeath(true)
-        .AddType(UNIT_TYPE_UNDEAD)
-        .AddType(UNIT_TYPE_SUMMONED);
+      var reanimatedUnit = CreateUnit(castingPlayer, whichUnit.UnitType, whichUnitPosition.X,
+        whichUnitPosition.Y, whichUnit.Facing);
+      reanimatedUnit.RemoveAllAbilities(new List<int>{1096905835,1097690998,1112498531});
+      reanimatedUnit.ApplyTimedLife(BuffId, Duration);
+      reanimatedUnit.SetVertexColor(200, 50, 50);
+      reanimatedUnit.SetExploded(true);
+      reanimatedUnit.AddType(UNIT_TYPE_UNDEAD);
+      reanimatedUnit.AddType(UNIT_TYPE_SUMMONED);
       
-      whichUnit.Remove();
+      whichUnit.Dispose();
       
       reanimatedUnit.SetPosition(whichUnitPosition);
     }

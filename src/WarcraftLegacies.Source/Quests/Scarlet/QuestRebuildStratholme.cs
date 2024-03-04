@@ -35,7 +35,11 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-      _saiden.Unit?.AddExperience(ExperienceReward);
+      unit tempQualifier = _saiden.Unit;
+      if (tempQualifier != null)
+      {
+        tempQualifier.Experience += ExperienceReward;
+      }
     }
 
     /// <inheritdoc/>

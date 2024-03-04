@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge.Plague
     public override void OnTick()
     {
       var unit = CreateUnit(GetOwningPlayer(Target), ZombieUnitTypeId, GetUnitX(Target), GetUnitY(Target), 0);
-      unit.IssueOrder("attack", _attackTarget);
+      unit.IssueOrderOld("attack", _attackTarget);
     }
   }
 }

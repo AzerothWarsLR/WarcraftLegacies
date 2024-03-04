@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
       AddObjective(new ObjectiveExpire(600, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
-        filterUnit => filterUnit.GetTypeId() != FourCC("ngme"));
+        filterUnit => filterUnit.UnitType != FourCC("ngme"));
     }
 
     /// <inheritdoc/>

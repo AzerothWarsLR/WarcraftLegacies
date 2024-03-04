@@ -50,14 +50,14 @@ namespace MacroTools.Powers
       if (GetRandomReal(0, 1) > _chance 
           || !EligibilityCondition(dyingUnit) 
           || _noReturnRect.Contains(dyingUnit.GetPosition())
-          || dyingUnit.IsType(UNIT_TYPE_HERO) 
-          || dyingUnit.IsType(UNIT_TYPE_MECHANICAL) 
-          || dyingUnit.IsIllusion() 
-          || dyingUnit.IsType(UNIT_TYPE_SUMMONED))
+          || dyingUnit.IsUnitType(UNIT_TYPE_HERO) 
+          || dyingUnit.IsUnitType(UNIT_TYPE_MECHANICAL) 
+          || dyingUnit.IsIllusion 
+          || dyingUnit.IsUnitType(UNIT_TYPE_SUMMONED))
         return;
       AddSpecialEffect(@"Abilities\Spells\Items\AIil\AIilTarget.mdl", _returnPoint.X, _returnPoint.Y)
         .SetLifespan();
-      CreateUnit(dyingUnit.OwningPlayer(), dyingUnit.GetTypeId(), _returnPoint.X, _returnPoint.Y, 0);
+      CreateUnit(dyingUnit.Owner, dyingUnit.UnitType, _returnPoint.X, _returnPoint.Y, 0);
     }
   }
 }

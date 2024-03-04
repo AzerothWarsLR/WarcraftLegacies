@@ -152,7 +152,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
         new Rematerialization(0.15f, new Point(20454.9f, -28873.6f), "Argus", Regions.MonolithNoBuild)
         {
           Name = "Rematerialization",
-          EligibilityCondition = dyingUnit => dyingUnit.OwningPlayer().GetObjectLimit(dyingUnit.GetTypeId()) != 0
+          EligibilityCondition = dyingUnit => dyingUnit.Owner.GetObjectLimit(dyingUnit.UnitType) != 0
         }));
     }
     

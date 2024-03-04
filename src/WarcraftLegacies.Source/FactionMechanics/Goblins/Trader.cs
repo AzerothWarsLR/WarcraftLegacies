@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
       {
         var tradingCenter = GetTriggerUnit();
         var trainedUnit = GetTrainedUnit();
-        trainedUnit.IssueOrder("patrol", _tradeTargets[GetRandomInt(0, _tradeTargets.Length - 1)]);
+        trainedUnit.IssueOrderOld("patrol", _tradeTargets[GetRandomInt(0, _tradeTargets.Length - 1)]);
         var incomeBuff =
           new TraderBuff(tradingCenter, trainedUnit, _goldIncomeBonus, _lumberIncomeBonus, tradingCenter);
         BuffSystem.Add(incomeBuff);

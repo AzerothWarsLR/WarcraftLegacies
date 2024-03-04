@@ -74,6 +74,6 @@ namespace WarcraftLegacies.Source.Spells
       !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
       !IsUnitType(target, UNIT_TYPE_ANCIENT) && 
       !IsUnitType(target, UNIT_TYPE_MECHANICAL) &&
-      !IsPlayerAlly(caster.OwningPlayer(), target.OwningPlayer());
+      !IsPlayerAlly(caster.Owner, target.Owner);
   }
 }

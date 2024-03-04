@@ -51,7 +51,11 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       }
       else
       {
-        _kelthuzad.Unit?.AddExperience(4000);
+        unit tempQualifier = _kelthuzad.Unit;
+        if (tempQualifier != null)
+        {
+          tempQualifier.Experience += 4000;
+        }
       }
     }
   }

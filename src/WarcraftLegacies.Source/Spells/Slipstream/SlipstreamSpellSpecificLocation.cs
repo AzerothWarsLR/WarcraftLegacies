@@ -75,7 +75,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
 
     private void Refund(unit whichUnit)
     {
-      whichUnit.RestoreMana(BlzGetUnitAbilityManaCost(whichUnit, Id, GetAbilityLevel(whichUnit)));
+      whichUnit.Mana += BlzGetUnitAbilityManaCost(whichUnit, Id, GetAbilityLevel(whichUnit));
       BlzEndUnitAbilityCooldown(whichUnit, Id);
     }
 

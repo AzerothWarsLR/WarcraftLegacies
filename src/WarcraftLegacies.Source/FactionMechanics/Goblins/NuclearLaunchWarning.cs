@@ -41,7 +41,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
       var sound = SoundUtils.CreateNormalSound(_warningSoundPath);
       StartSound(sound);
       var dummyNukeWarning =
-        CreateUnit(caster.OwningPlayer(), _nuclearWarningUnitTypeId, targetPoint.X, targetPoint.Y, 0);
+        CreateUnit(caster.Owner, _nuclearWarningUnitTypeId, targetPoint.X, targetPoint.Y, 0);
       
       UnitApplyTimedLife(dummyNukeWarning, 0, _castTime);
       BlockLaunchWarningAnimation();

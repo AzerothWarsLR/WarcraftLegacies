@@ -38,7 +38,7 @@ namespace MacroTools.Powers
     {
       if (!BlzGetEventIsAttack())
         return;
-      GetEventDamageSource().RestoreMana(GetEventDamage() * _manaPerDamage);
+      GetEventDamageSource().Mana += GetEventDamage() * _manaPerDamage;
     }
   }
 }

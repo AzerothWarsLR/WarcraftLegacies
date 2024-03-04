@@ -86,7 +86,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         .RegisterUnitEvent(TheFrozenThrone.Unit, EVENT_UNIT_CHANGE_OWNER)
         .AddAction(() =>
       {
-        if (TheFrozenThrone.Unit.OwningPlayer() != Player(bj_PLAYER_NEUTRAL_VICTIM))
+        if (TheFrozenThrone.Unit.Owner != Player(bj_PLAYER_NEUTRAL_VICTIM))
           TheFrozenThrone.Unit.SetOwner(Player(bj_PLAYER_NEUTRAL_VICTIM));
       });
       CapitalManager.Register(Utgarde);

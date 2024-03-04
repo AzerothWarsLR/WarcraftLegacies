@@ -85,8 +85,14 @@ namespace WarcraftLegacies.Source.Quests.Legion
       SetUnitOwner(_interiorPortal, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
       var exteriorPortal = CreateUnit(whichPlayer ?? Player(PLAYER_NEUTRAL_AGGRESSIVE),
         Constants.UNIT_N037_DEMON_PORTAL, exteriorPortalPosition.X, exteriorPortalPosition.Y, 0);
-      exteriorPortal.SetWaygateDestination(_interiorPortal.GetPosition());
-      _interiorPortal.SetWaygateDestination(exteriorPortal.GetPosition());
+      Point destination = _interiorPortal.GetPosition();
+      exteriorPortal.WaygateActive = true;
+      exteriorPortal.WaygateDestinationX = destination.X;
+      exteriorPortal.WaygateDestinationY = destination.Y;
+      Point destination1 = exteriorPortal.GetPosition();
+      _interiorPortal.WaygateActive = true;
+      _interiorPortal.WaygateDestinationX = destination1.X;
+      _interiorPortal.WaygateDestinationY = destination1.Y;
     }
   }
 }

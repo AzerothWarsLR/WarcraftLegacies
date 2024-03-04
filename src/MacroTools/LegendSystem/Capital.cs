@@ -43,7 +43,11 @@ namespace MacroTools.LegendSystem
         if (!BlzIsUnitInvulnerable(Unit))
           throw new Exception(
             $"{GetUnitName(Unit)}'s last protector died, which should make it vulnerable, but it is already vulnerable.");
-        Unit?.SetInvulnerable(false);
+        unit tempQualifier = Unit;
+        if (tempQualifier != null)
+        {
+          tempQualifier.IsInvulnerable = true;
+        }
       }
       catch (Exception ex)
       {
@@ -58,12 +62,17 @@ namespace MacroTools.LegendSystem
     public void AddProtector(unit whichUnit)
     {
       if (ProtectorsByUnit.ContainsKey(whichUnit))
-        throw new InvalidOperationException($"{whichUnit.GetName()} is already registered as a Protector for {Name}.");
+        throw new InvalidOperationException($"{whichUnit.Name} is already registered as a Protector for {Name}.");
       
       var protector = new Protector(whichUnit);
       _protectors.Add(protector);
       ProtectorsByUnit.Add(whichUnit, protector);
-      Unit?.SetInvulnerable(true);
+      unit tempQualifier = Unit;
+      if (tempQualifier != null)
+      {
+        tempQualifier.IsInvulnerable = true;
+      }
+
       protector.ProtectorDied += OnProtectorDeath;
     }
     

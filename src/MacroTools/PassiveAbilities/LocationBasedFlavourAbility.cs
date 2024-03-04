@@ -29,9 +29,8 @@ namespace MacroTools.PassiveAbilities
       var unitPosition = createdUnit.GetPosition();
       var closestSetting = LocationBasedFlavourSettings.OrderByDescending(x =>
         WCSharp.Shared.Util.DistanceBetweenPoints(x.Location.X, x.Location.Y, unitPosition.X, unitPosition.Y)).Last();
-      createdUnit
-        .SetName(closestSetting.Name)
-        .SetSkin(closestSetting.AlternateUnitTypeId);
+      createdUnit.Name = closestSetting.Name;
+      createdUnit.Skin = closestSetting.AlternateUnitTypeId;
     }
   }
 }

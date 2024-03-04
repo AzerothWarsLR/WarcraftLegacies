@@ -29,7 +29,7 @@ namespace MacroTools.Cheats
     public override string Execute(player cheater, params string[] parameters)
     {
       var firstSelectedUnit = CreateGroup().EnumSelectedUnits(cheater).EmptyToList().First();
-      return $"{firstSelectedUnit.GetName()} is at position {GetUnitX(firstSelectedUnit)}, {GetUnitY(firstSelectedUnit)}.";
+      return $"{firstSelectedUnit.Name} is at position {GetUnitX(firstSelectedUnit)}, {GetUnitY(firstSelectedUnit)}.";
     }
   }
 }

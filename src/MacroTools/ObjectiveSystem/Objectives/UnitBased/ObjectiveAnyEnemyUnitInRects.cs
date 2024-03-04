@@ -54,9 +54,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
 
     private bool IsUnitValid(unit whichUnit)
     {
-      return !IsUnitAlly(whichUnit,EligibleFactions[0].Player) && whichUnit.IsAlive() &&
-             whichUnit.OwningPlayer() != Player(PLAYER_NEUTRAL_AGGRESSIVE) &&
-             whichUnit.OwningPlayer() != Player(PLAYER_NEUTRAL_PASSIVE);
+      return !IsUnitAlly(whichUnit,EligibleFactions[0].Player) && whichUnit.Alive &&
+             whichUnit.Owner != Player(PLAYER_NEUTRAL_AGGRESSIVE) &&
+             whichUnit.Owner != Player(PLAYER_NEUTRAL_PASSIVE);
     }
       
 

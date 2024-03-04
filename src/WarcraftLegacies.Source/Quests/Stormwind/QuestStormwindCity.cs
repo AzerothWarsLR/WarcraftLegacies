@@ -76,7 +76,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       {
         Name = RewardPowerName,
         HeroGlowAbilityTypeId = Constants.ABILITY_A0GK_HERO_GLOW_ORIGIN,
-        Filter = unit => !unit.IsType(UNIT_TYPE_MECHANICAL) && unit.GetTypeId() != Constants.UNIT_H05F_STORMWIND_CHAMPION_STORMWIND_ELITE,
+        Filter = unit => !unit.IsUnitType(UNIT_TYPE_MECHANICAL) && unit.UnitType != Constants.UNIT_H05F_STORMWIND_CHAMPION_STORMWIND_ELITE,
       };
       
       completingFaction.AddPower(rewardPower);

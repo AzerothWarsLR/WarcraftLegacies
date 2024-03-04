@@ -21,31 +21,26 @@ namespace MacroTools.DummyCasters
     public void CastUnit(unit caster, int abilId, int orderId, int level, unit target, DummyCastOriginType originType)
     {
       var originPoint = originType == DummyCastOriginType.Caster ? caster.GetPosition() : target.GetPosition();
-      _unit
-        .SetOwner(caster.OwningPlayer())
-        .SetPosition(originPoint)
-        .AddAbility(abilId)
-        .SetAbilityLevel(abilId, level);
+      _unit.SetOwner(caster.Owner);
+      _unit.SetPosition(originPoint);
+      _unit.AddAbility(abilId);
+      _unit.SetAbilityLevel(abilId, level);
 
       if (originType == DummyCastOriginType.Caster)
         _unit.FacePosition(target.GetPosition());
-
-      _unit
-        .IssueOrder(orderId, target)
-        .RemoveAbility(abilId);
+      
+      _unit.IssueOrder(orderId, target);
+      _unit.RemoveAbility(abilId);
     }
 
     public void CastNoTarget(unit caster, int abilId, int orderId, int level)
     {
-      _unit
-        .SetOwner(caster.OwningPlayer())
-        .SetPosition(caster.GetPosition())
-        .AddAbility(abilId)
-        .SetAbilityLevel(abilId, level);
-
-      _unit
-        .IssueOrder(orderId)
-        .RemoveAbility(abilId);
+      _unit.SetOwner(caster.Owner);
+      _unit.SetPosition(caster.GetPosition());
+      _unit.AddAbility(abilId);
+      _unit.SetAbilityLevel(abilId, level);
+      _unit.IssueOrder(orderId);
+      _unit.RemoveAbility(abilId);
     }
 
     /// <summary>
@@ -53,15 +48,12 @@ namespace MacroTools.DummyCasters
     /// </summary>
     public void CastNoTargetOnUnit(unit caster, int abilId, int orderId, int level, unit target)
     {
-      _unit
-        .SetOwner(caster.OwningPlayer())
-        .SetPosition(target.GetPosition())
-        .AddAbility(abilId)
-        .SetAbilityLevel(abilId, level);
-
-      _unit
-        .IssueOrder(orderId)
-        .RemoveAbility(abilId);
+      _unit.SetOwner(caster.Owner);
+      _unit.SetPosition(target.GetPosition());
+      _unit.AddAbility(abilId);
+      _unit.SetAbilityLevel(abilId, level);
+      _unit.IssueOrder(orderId);
+      _unit.RemoveAbility(abilId);
     }
 
     /// <summary>
@@ -69,13 +61,12 @@ namespace MacroTools.DummyCasters
     /// </summary>
     public void CastPoint(player whichPlayer, int abilId, int orderId, int level, Point target)
     {
-      _unit
-        .SetOwner(whichPlayer)
-        .SetPosition(target)
-        .AddAbility(abilId)
-        .SetAbilityLevel(abilId, level)
-        .IssueOrder(orderId, target)
-        .RemoveAbility(abilId);
+      _unit.SetOwner(whichPlayer);
+      _unit.SetPosition(target);
+      _unit.AddAbility(abilId);
+      _unit.SetAbilityLevel(abilId, level);
+      _unit.IssueOrderOld(orderId, target);
+      _unit.RemoveAbility(abilId);
     }
 
     /// <summary>

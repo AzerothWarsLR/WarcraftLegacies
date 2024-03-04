@@ -41,7 +41,7 @@ namespace MacroTools.PassiveAbilities
     {
       var damager = GetEventDamageSource();
       var manaPerDamage = GetEventDamage() * (ManaPerDamage.Base + ManaPerDamage.PerLevel * GetUnitAbilityLevel(damager, _abilityTypeId));
-      damager.RestoreMana(manaPerDamage);
+      damager.Mana += manaPerDamage;
       AddSpecialEffectTarget(Effect, damager, "origin")
         .SetLifespan();
     }

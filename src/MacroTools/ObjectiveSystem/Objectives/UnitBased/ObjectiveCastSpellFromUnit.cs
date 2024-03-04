@@ -24,7 +24,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
         if (GetSpellAbilityId() == spellId)
           Progress = QuestProgress.Complete;
       }, caster);
-      Description = $"Cast {GetObjectName(spellId)} from {caster.GetName()}";
+      Description = $"Cast {GetObjectName(spellId)} from {caster.Name}";
       TargetWidget = caster;
       DisplaysPosition = true;
       _caster = caster;

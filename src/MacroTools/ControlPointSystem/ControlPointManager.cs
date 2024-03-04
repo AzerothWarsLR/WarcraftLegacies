@@ -143,12 +143,11 @@ namespace MacroTools.ControlPointSystem
       else
         _byUnitType.Add(controlPoint.UnitType, controlPoint);
 
-      controlPoint.Unit
-        .SetMaximumHitpoints(StartingMaxHitPoints)
-        .AddAbility(IncreaseControlLevelAbilityTypeId)
-        .SetLifePercent(100)
-        .SetArmorType(2)
-        .SetName($"{controlPoint.Unit.GetName()} ({controlPoint.Value} gold/min)");
+      BlzSetUnitMaxHP(controlPoint.Unit, StartingMaxHitPoints);
+      controlPoint.Unit.AddAbility(IncreaseControlLevelAbilityTypeId);
+      controlPoint.Unit.SetLifePercent(100);
+      controlPoint.Unit.ArmorType = 2;
+      controlPoint.Unit.Name = $"{controlPoint.Unit.Name} ({controlPoint.Value} gold/min)";
       RegisterIncome(controlPoint);
       RegisterDamageTrigger(controlPoint);
       RegisterOwnershipChangeTrigger(controlPoint);
@@ -157,7 +156,7 @@ namespace MacroTools.ControlPointSystem
       ConfigureControlPointStats(controlPoint, true);
       controlPoint.OnRegister();
       controlPoint.Unit.AddAbility(PiercingResistanceAbility);
-      if (controlPoint.Unit.OwningPlayer() != Player(PLAYER_NEUTRAL_AGGRESSIVE))
+      if (controlPoint.Unit.Owner != Player(PLAYER_NEUTRAL_AGGRESSIVE))
         controlPoint.Unit.AddAbility(RegenerationAbility);
     }
 
@@ -203,7 +202,7 @@ namespace MacroTools.ControlPointSystem
             previousOwner.RemoveControlPoint(controlPoint);
             previousOwner.BaseIncome -= controlPoint.Value;
 
-            var newOwner = PlayerData.ByHandle(GetTriggerUnit().OwningPlayer());
+            var newOwner = PlayerData.ByHandle(GetTriggerUnit().Owner);
             newOwner.AddControlPoint(controlPoint);
             newOwner.BaseIncome += controlPoint.Value;
 
@@ -231,7 +230,7 @@ namespace MacroTools.ControlPointSystem
         {
           CreateOrUpdateDefender(controlPoint);
           ConfigureControlPointStats(controlPoint, false);
-          controlPoint.Unit.SetScale(1.2f);
+          SetUnitScale(controlPoint.Unit, 1.2f, 1.2f, 1.2f);
           if ((int)controlPoint.ControlLevel == ControlLevelSettings.ControlLevelMaximum)
             controlPoint.Unit.RemoveAbility(IncreaseControlLevelAbilityTypeId);
         }
@@ -266,15 +265,17 @@ namespace MacroTools.ControlPointSystem
       var maxHitPoints = StartingMaxHitPoints + flooredLevel * ControlLevelSettings.HitPointsPerControlLevel;
       var lifePercent = Math.Max(controlPoint.Unit.GetLifePercent(), 1);
 
-      controlPoint.Unit
-        .SetMaximumHitpoints(maxHitPoints)
-        .SetArmor(ControlLevelSettings.ArmorPerControlLevel * ControlLevelSettings.ArmorPerControlLevel)
-        .SetUnitLevel(flooredLevel)
-        .SetArmor(ControlLevelSettings.ArmorPerControlLevel * flooredLevel)
-        .ShowAttackUi(false);
+      BlzSetUnitMaxHP(controlPoint.Unit, maxHitPoints);
+      controlPoint.Unit.Armor = ControlLevelSettings.ArmorPerControlLevel * ControlLevelSettings.ArmorPerControlLevel;
+      controlPoint.Unit.SetUnitLevel(flooredLevel);
+      controlPoint.Unit.Armor = ControlLevelSettings.ArmorPerControlLevel * flooredLevel;
+      controlPoint.Unit.ShowAttackUi(false);
 
-      if (initialize && controlPoint.Unit.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-        controlPoint.Unit.SetCurrentHitpoints(HostileStartingCurrentHitPoints);
+      if (initialize && controlPoint.Unit.Owner == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+      {
+        SetUnitState(controlPoint.Unit, UNIT_STATE_LIFE, HostileStartingCurrentHitPoints);
+        unit temp = controlPoint.Unit;
+      }
       else
         controlPoint.Unit.SetLifePercent(lifePercent);
 
@@ -299,20 +300,18 @@ namespace MacroTools.ControlPointSystem
     {
       controlPoint.Defender?.Kill();
       controlPoint.Defender = null;
-      controlPoint.Unit
-        .SetInvulnerable(false)
+      (controlPoint.Unit.IsInvulnerable = true)
         .AddAbility(IncreaseControlLevelAbilityTypeId);
     }
 
     private void ConfigureControlPointOrDefenderAttack(unit whichUnit, int controlLevel)
     {
-      whichUnit
-        .SetDamageBase(controlLevel == 0
-          ? -1
-          : ControlLevelSettings.DamageBase - 1 + controlLevel * ControlLevelSettings.DamagePerControlLevel)
-        .SetDamageDiceNumber(1)
-        .SetDamageDiceSides(1)
-        .SetAttackType(5);
+      whichUnit.AttackBaseDamage1 = controlLevel == 0
+        ? -1
+        : ControlLevelSettings.DamageBase - 1 + controlLevel * ControlLevelSettings.DamagePerControlLevel;
+      whichUnit.AttackDiceNumber1 = 1;
+      whichUnit.AttackDiceSides1 = 1;
+      whichUnit.AttackAttackType1 = 5;
     }
   }
 }

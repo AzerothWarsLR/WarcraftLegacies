@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       
       ResearchId = Constants.UPGRADE_VQ01_QUEST_COMPLETED_RATCHET_PORT;
       _rescueUnits = Regions.Ratchet_Unlock_1.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures,
-        filterUnit => filterUnit.GetTypeId() != FourCC("ngme"));
+        filterUnit => filterUnit.UnitType != FourCC("ngme"));
     }
 
     /// <inheritdoc />

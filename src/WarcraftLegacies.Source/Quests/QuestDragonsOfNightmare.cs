@@ -46,8 +46,8 @@ namespace WarcraftLegacies.Source.Quests
       _waygateTwo = waygateTwo;
       _wayGateOneDestination = wayGateOneDestination;
       _wayGateTwoDestination = wayGateTwoDestination;
-      _nightmareDragonKalimdor = nightmareDragonKalimdor.Show(false);
-      _nightmareDragonEk = nightmareDragonEk.Show(false);
+      _nightmareDragonKalimdor = nightmareDragonKalimdor.IsVisible = false;
+      _nightmareDragonEk = nightmareDragonEk.IsVisible = false;
       _nightmareDragonKalimdor = nightmareDragonKalimdor;
       _nightmareDragonEk = nightmareDragonEk;
       _portalOneLocation = portalOneLocation;
@@ -67,8 +67,8 @@ namespace WarcraftLegacies.Source.Quests
         DisplayTextToPlayer(player, 0, 0, $"\n|cff590ff7 NIGHTMARE DRAGONS SPAWNED \n|r {_nightmareDragonKalimdor.GetProperName()} and {_nightmareDragonEk.GetProperName()} have appeared in {_portalOneLocation} and {_portalTwoLocation}.");
         StartSound(SoundLibrary.Warning);
       }
-      _nightmareDragonEk.Show(true);
-      _nightmareDragonKalimdor.Show(true);
+      _nightmareDragonEk.IsVisible = true;
+      _nightmareDragonKalimdor.IsVisible = true;
     }
     
     /// <inheritdoc/>
@@ -80,12 +80,14 @@ namespace WarcraftLegacies.Source.Quests
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      _waygateOne
-     .Show(true)
-     .SetWaygateDestination(_wayGateOneDestination.Center);
-      _waygateTwo
-        .Show(true)
-        .SetWaygateDestination(_wayGateTwoDestination.Center);
+      _waygateOne.IsVisible = true;
+      _waygateOne.WaygateActive = true;
+      _waygateOne.WaygateDestinationX = _wayGateOneDestination.Center.X;
+      _waygateOne.WaygateDestinationY = _wayGateOneDestination.Center.Y;
+      _waygateTwo.IsVisible = true;
+      _waygateTwo.WaygateActive = true;
+      _waygateTwo.WaygateDestinationX = _wayGateTwoDestination.Center.X;
+      _waygateTwo.WaygateDestinationY = _wayGateTwoDestination.Center.Y;
     }
   }
 }

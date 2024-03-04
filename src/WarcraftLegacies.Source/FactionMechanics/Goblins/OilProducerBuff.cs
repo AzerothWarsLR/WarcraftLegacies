@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
     public OilProducerBuff(unit target, float incomePerSecond) : base(target, target)
     {
       _incomePerSecond = incomePerSecond;
-      _oilPower = target.OwningPlayer().GetFaction()?.GetPowerByType<OilPower>();
+      _oilPower = target.Owner.GetFaction()?.GetPowerByType<OilPower>();
 
       if (_oilPower != null)
         _oilPower.AmountChanged += OnOilAmountChanged;
@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
       if (_oilPower == null) 
         return;
       _oilPower.Income += _incomePerSecond;
-      Target.SetMana((int)_oilPower.Amount);
+      Target.Mana = (int)_oilPower.Amount;
     }
 
     /// <inheritdoc/>
@@ -61,7 +61,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
     {
       if (_oilPower != null) 
         _oilPower.Income -= _incomePerSecond;
-      _oilPower = Target.OwningPlayer().GetFaction()?.GetPowerByType<OilPower>();
+      _oilPower = Target.Owner.GetFaction()?.GetPowerByType<OilPower>();
       if (_oilPower != null)
         _oilPower.Income += _incomePerSecond;
     }

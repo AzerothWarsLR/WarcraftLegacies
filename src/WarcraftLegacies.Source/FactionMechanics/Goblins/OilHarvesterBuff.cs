@@ -33,9 +33,8 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
     public override void OnApply()
     {
       _oilPool.OilPower.Income += OilHarvestedPerSecond;
-      Target
-        .SetMaximumMana(_oilPool.OilAmount)
-        .SetMana(_oilPool.OilAmount);
+      Target.MaxMana = _oilPool.OilAmount;
+      Target.Mana = _oilPool.OilAmount;
     }
 
     /// <inheritdoc />
@@ -54,7 +53,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
       else
       {
         _oilPool.OilAmount -= OilHarvestedPerSecond;
-        Target.SetMana(_oilPool.OilAmount);
+        Target.Mana = _oilPool.OilAmount;
       }
     }
   }

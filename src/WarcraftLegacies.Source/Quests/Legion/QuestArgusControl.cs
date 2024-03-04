@@ -51,8 +51,12 @@ namespace WarcraftLegacies.Source.Quests.Legion
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      _legionTeleporter1.SetWaygateDestination(Regions.NorthrendLegionLanding.Center);
-      _legionTeleporter2.SetWaygateDestination(Regions.AlteracLegionLanding.Center);
+      _legionTeleporter1.WaygateActive = true;
+      _legionTeleporter1.WaygateDestinationX = Regions.NorthrendLegionLanding.Center.X;
+      _legionTeleporter1.WaygateDestinationY = Regions.NorthrendLegionLanding.Center.Y;
+      _legionTeleporter2.WaygateActive = true;
+      _legionTeleporter2.WaygateDestinationX = Regions.AlteracLegionLanding.Center.X;
+      _legionTeleporter2.WaygateDestinationY = Regions.AlteracLegionLanding.Center.Y;
     }
   }
 }

@@ -34,7 +34,11 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-      _renault.Unit?.AddExperience(ExperienceReward);
+      unit tempQualifier = _renault.Unit;
+      if (tempQualifier != null)
+      {
+        tempQualifier.Experience += ExperienceReward;
+      }
     }
 
     /// <inheritdoc/>

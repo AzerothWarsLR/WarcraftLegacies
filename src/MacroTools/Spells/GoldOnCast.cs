@@ -15,7 +15,7 @@ namespace MacroTools.Spells
 
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      caster.OwningPlayer().AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, GoldToGrant);
+      caster.Owner.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, GoldToGrant);
     }
   }
 }

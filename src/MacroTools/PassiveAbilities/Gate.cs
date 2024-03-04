@@ -33,7 +33,7 @@ namespace MacroTools.PassiveAbilities
       var dyingGate = GetTriggerUnit();
       var dyingGatePos = dyingGate.GetPosition();
       var dyingGateFacing = GetUnitFacing(dyingGate);
-      dyingGate.Remove();
+      dyingGate.Dispose();
       TurnBasedHitpointsManager.UnRegister(dyingGate);
       CreateUnit(GetOwningPlayer(GetKillingUnit()), _deadId, dyingGatePos.X, dyingGatePos.Y, dyingGateFacing)
         .SetAnimation("death");
@@ -42,14 +42,14 @@ namespace MacroTools.PassiveAbilities
     /// <inheritdoc/>
     public override void OnSpellFinish()
     {
-      if (GetTriggerUnit().GetTypeId() == _openedId) 
+      if (GetTriggerUnit().UnitType == _openedId) 
         GetTriggerUnit().SetAnimation("death alternate");
     }
     
     /// <inheritdoc/>
     public override void OnCreated(unit createdUnit)
     {
-      if (createdUnit.GetTypeId() == _openedId) 
+      if (createdUnit.UnitType == _openedId) 
         createdUnit.SetAnimation("death alternate");
       TurnBasedHitpointsManager.Register(createdUnit, HitPointPercentagePerTurn);
     }

@@ -19,7 +19,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     public NoOtherPlayerGetsCapital(Capital target)
     {
       _target = target;
-      Description = $"No other player has acquired {target.Unit.GetName()}";
+      Description = $"No other player has acquired {target.Unit.Name}";
     }
 
     /// <inheritdoc/>
@@ -30,7 +30,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
         .RegisterUnitEvent(_target.Unit, EVENT_UNIT_CHANGE_OWNER)
         .AddAction(() =>
         {
-          if (GetTriggerUnit().OwningPlayer() != faction.Player) 
+          if (GetTriggerUnit().Owner != faction.Player) 
             Progress = QuestProgress.Failed;
         });
     }

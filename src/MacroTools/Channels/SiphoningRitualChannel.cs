@@ -3,6 +3,7 @@ using MacroTools.ChannelSystem;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
 using WCSharp.Lightnings;
+using WCSharp.Shared.Extensions;
 
 
 namespace MacroTools.Channels
@@ -70,8 +71,8 @@ namespace MacroTools.Channels
       if (GetUnitState(Caster, UNIT_STATE_MANA) < GetUnitState(Caster, UNIT_STATE_MAX_MANA) ||
           !IsUnitAlly(_target, GetOwningPlayer(Caster)))
       {
-        Caster.RestoreMana(Math.Min(ManaDrainedPerSecond * Interval, _target.GetMana()));
-        _target.RestoreMana(-ManaDrainedPerSecond * Interval);
+        Caster.Mana += Math.Min(ManaDrainedPerSecond * Interval, _target.Mana);
+        _target.Mana += -ManaDrainedPerSecond * Interval;
       }
     }
 

@@ -1,4 +1,5 @@
 ﻿using MacroTools;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ResearchSystems;
 
@@ -47,16 +48,18 @@ namespace WarcraftLegacies.Source.Researches.Ironforge
         _tramToStormwind?.Kill();
         return;
       }
-      
-      _tramToIronforge?
-        .SetOwner(recipient)
-        .SetWaygateDestination(Regions.Ironforge.Center)
-        .SetInvulnerable(false);
 
-      _tramToStormwind?
-        .SetOwner(recipient)
-        .SetWaygateDestination(Regions.Stormwind.Center)
-        .SetInvulnerable(false);
+      _tramToIronforge.SetOwner(recipient);
+      _tramToIronforge.WaygateActive = true;
+      _tramToIronforge.WaygateDestinationX = Regions.Ironforge.Center.X;
+      _tramToIronforge.WaygateDestinationY = Regions.Ironforge.Center.Y;
+      _tramToIronforge.IsInvulnerable = true;
+      
+      _tramToIronforge.SetOwner(recipient);
+      _tramToIronforge.WaygateActive = true;
+      _tramToIronforge.WaygateDestinationX = Regions.Stormwind.Center.X;
+      _tramToIronforge.WaygateDestinationY = Regions.Stormwind.Center.Y;
+      _tramToIronforge.IsInvulnerable = true;
       
       _stormwind.SetObjectLevel(ResearchId, 1);
       _ironforge.SetObjectLevel(ResearchId, 1);

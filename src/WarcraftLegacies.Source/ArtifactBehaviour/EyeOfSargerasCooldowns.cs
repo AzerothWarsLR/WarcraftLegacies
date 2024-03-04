@@ -16,11 +16,11 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
 
     private static void ItemPickup()
     {
-      GetTriggerUnit()
-        .StartUnitAbilityCooldownFull(SpellA)
-        .StartUnitAbilityCooldownFull(SpellB)
-        .StartUnitAbilityCooldownFull(SpellC)
-        .StartUnitAbilityCooldownFull(SpellD);
+      var triggerUnit = GetTriggerUnit();
+      triggerUnit.StartUnitAbilityCooldownFull(SpellA);
+      triggerUnit.StartUnitAbilityCooldownFull(SpellB);
+      triggerUnit.StartUnitAbilityCooldownFull(SpellC);
+      triggerUnit.StartUnitAbilityCooldownFull(SpellD);
     }
 
     /// <summary>

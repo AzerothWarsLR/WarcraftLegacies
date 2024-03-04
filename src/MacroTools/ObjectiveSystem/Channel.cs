@@ -57,16 +57,18 @@ namespace MacroTools.ObjectiveSystem
 
       _position = position;
 
-      caster.SetPosition(_position)
-        .PauseEx(true)
-        .SetAnimation("channel")
-        .SetFacingEx(facing)
-        .SetInvulnerable(false);
-      _sfxProgress = AddSpecialEffect(ProgressEffect, GetUnitX(caster), GetUnitY(caster))
-        .SetTimeScale(10 / (float)duration)
-        .SetColor(caster.OwningPlayer())
-        .SetScale(ProgressScale)
-        .SetHeight(ProgressHeight + Environment.GetPositionZ(position));
+      caster.SetPosition(_position);
+      caster.SetPausedEx(true);
+      caster.SetAnimation("channel");
+      caster.Facing = facing;
+      caster.IsInvulnerable = false;
+
+      _sfxProgress = AddSpecialEffect(ProgressEffect, GetUnitX(caster), GetUnitY(caster));
+      _sfxProgress.SetTimeScale(10 / (float)duration);
+      _sfxProgress.SetColor(caster.Owner);
+      _sfxProgress.SetScale(ProgressScale);
+      _sfxProgress.SetHeight(ProgressHeight + Environment.GetPositionZ(position));
+      
       _sfx = AddSpecialEffect(Effect, GetUnitX(caster), GetUnitY(caster));
 
       if (timerDialogTitle != null)
@@ -95,7 +97,7 @@ namespace MacroTools.ObjectiveSystem
     
     private void End(bool finishedWithoutInterruption)
     {
-      _caster.PauseEx(false);
+      _caster.SetPausedEx(false);
       if (finishedWithoutInterruption)
         _caster.SetAnimation("spell");
 

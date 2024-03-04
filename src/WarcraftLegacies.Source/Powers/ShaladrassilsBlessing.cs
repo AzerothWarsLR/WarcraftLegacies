@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Powers
       _summonedUnitCount = summonedUnitCount;
       _manaCost = manaCost;
       Description =
-        $"When an undamaged Control Point you control takes damage and you control {shaladrassil.GetName()}, consume {_manaCost} mana from {GetUnitName(shaladrassil)} to summon {_summonedUnitCount} {GetObjectName(summonedUnitTypeId)}s to defend the Control Point for {_duration} seconds.";
+        $"When an undamaged Control Point you control takes damage and you control {shaladrassil.Name}, consume {_manaCost} mana from {GetUnitName(shaladrassil)} to summon {_summonedUnitCount} {GetObjectName(summonedUnitTypeId)}s to defend the Control Point for {_duration} seconds.";
       Name = $"{GetUnitName(shaladrassil)}'s Blessing";
     }
 
@@ -53,24 +53,24 @@ namespace WarcraftLegacies.Source.Powers
 
     private void OnPlayerTakesDamage()
     {
-      var owner = GetTriggerUnit().OwningPlayer();
+      var owner = GetTriggerUnit().Owner;
       if (!GetTriggerUnit().IsControlPoint() 
-          || _shaladrassil.OwningPlayer() != owner
-          || !(_shaladrassil.GetMana() >= _manaCost)
+          || _shaladrassil.Owner != owner
+          || !(_shaladrassil.Mana >= _manaCost)
           || GetTriggerUnit().GetLifePercent() < 100)
         return;
       SummonTreants(owner, GetTriggerUnit().GetPosition());
-      _shaladrassil.RestoreMana(-_manaCost);
+      _shaladrassil.Mana += -_manaCost;
     }
 
     private void SummonTreants(player owningPlayer, Point point)
     {
       for (var i = 0; i < _summonedUnitCount; i++)
       {
-        var treant = CreateUnit(owningPlayer, _summonedUnitTypeId, point.X, point.Y, 270)
-          .SetTimedLife(_duration)
-          .AddType(UNIT_TYPE_SUMMONED)
-          .SetExplodeOnDeath(true);
+        var treant = CreateUnit(owningPlayer, _summonedUnitTypeId, point.X, point.Y, 270);
+        treant.ApplyTimedLife(0, _duration);
+        treant.AddType(UNIT_TYPE_SUMMONED);
+        treant.SetExploded(true);
         AddSpecialEffect(@"Objects\Spawnmodels\NightElf\EntBirthTarget\EntBirthTarget.mdl", treant.GetPosition().X,
             treant.GetPosition().Y)
           .SetLifespan();

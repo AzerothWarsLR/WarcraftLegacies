@@ -36,7 +36,13 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     }
 
     /// <inheritdoc/>
-    protected override void OnComplete(Faction completingFaction) => 
-      _grom.Unit?.AddExperience(ExperienceReward);
+    protected override void OnComplete(Faction completingFaction)
+    {
+      unit tempQualifier = _grom.Unit;
+      if (tempQualifier != null)
+      {
+        tempQualifier.Experience += ExperienceReward;
+      }
+    }
   }
 }

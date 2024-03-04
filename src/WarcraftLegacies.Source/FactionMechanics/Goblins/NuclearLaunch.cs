@@ -25,9 +25,9 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
     /// <inheritdoc />
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      var dummyNukeLeftover = CreateUnit(caster.OwningPlayer(), _dummyNukeLeftOverId, targetPoint.X, targetPoint.Y, 0);
+      var dummyNukeLeftover = CreateUnit(caster.Owner, _dummyNukeLeftOverId, targetPoint.X, targetPoint.Y, 0);
       UnitApplyTimedLife(dummyNukeLeftover, 0, 3);
-      dummyNukeLeftover.IssueOrder("flamestrike", targetPoint);
+      dummyNukeLeftover.IssueOrderOld("flamestrike", targetPoint);
     }
   }
 }

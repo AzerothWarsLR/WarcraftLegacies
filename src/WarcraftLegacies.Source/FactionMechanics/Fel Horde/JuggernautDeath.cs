@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Fel_Horde
       PlayerUnitEvents.Register(UnitEvent.ChangesOwner, () =>
       {
         foreach (var juggernaut in dependentJuggernauts)
-          juggernaut.SetOwner(GetTriggerUnit().OwningPlayer());
+          juggernaut.SetOwner(GetTriggerUnit().Owner);
       }, powerGenerator);
     }
   }

@@ -21,10 +21,10 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       _target = target;
       if (target.Capturable)
         Logger.LogWarning(
-          $"{target.Unit.GetName()} should not be a target of {nameof(ObjectiveCapitalDead)} because it is capturable.");
+          $"{target.Unit.Name} should not be a target of {nameof(ObjectiveCapitalDead)} because it is capturable.");
 
       TargetWidget = target.Unit;
-      Description = $"{target.Unit.GetName()} is destroyed";
+      Description = $"{target.Unit.Name} is destroyed";
       DisplaysPosition = true;
       CreateTrigger()
         .RegisterUnitEvent(target.Unit, EVENT_UNIT_DEATH)

@@ -49,15 +49,17 @@ namespace WarcraftLegacies.Source.Researches
         return;
       }
 
-      _flightToOrgrimmar?
-        .SetOwner(recipient)
-        .SetWaygateDestination(Regions.OrgrimmarFlight.Center)
-        .SetInvulnerable(false);
+      _flightToOrgrimmar.SetOwner(recipient);
+      _flightToOrgrimmar.WaygateActive = true;
+      _flightToOrgrimmar.WaygateDestinationX = Regions.OrgrimmarFlight.Center.X;
+      _flightToOrgrimmar.WaygateDestinationY = Regions.OrgrimmarFlight.Center.Y;
+      _flightToOrgrimmar.IsInvulnerable = true;
 
-      _flightToThunderBluff?
-        .SetOwner(recipient)
-        .SetWaygateDestination(Regions.ThunderbluffFlight.Center)
-        .SetInvulnerable(false);
+      _flightToThunderBluff.SetOwner(recipient);
+      _flightToThunderBluff.WaygateActive = true;
+      _flightToThunderBluff.WaygateDestinationX = Regions.ThunderbluffFlight.Center.X;
+      _flightToThunderBluff.WaygateDestinationY = Regions.ThunderbluffFlight.Center.Y;
+      _flightToThunderBluff.IsInvulnerable = true;
 
       _frostwolf.SetObjectLevel(ResearchId, 1);
       _warsong.SetObjectLevel(ResearchId, 1);

@@ -63,7 +63,7 @@ namespace WarcraftLegacies.Source.Spells.Reap
 
         foreach (var killTarget in killTargets)
         {
-          killTarget.TakeDamage(caster, killTarget.GetHitPoints(), damageType: DAMAGE_TYPE_UNIVERSAL,
+          killTarget.TakeDamage(caster, killTarget.Life, damageType: DAMAGE_TYPE_UNIVERSAL,
             attackType: ATTACK_TYPE_CHAOS);
           AddSpecialEffect(KillEffect, GetUnitX(killTarget), GetUnitY(killTarget))
             .SetLifespan();
@@ -94,6 +94,6 @@ namespace WarcraftLegacies.Source.Spells.Reap
       !IsUnitType(target, UNIT_TYPE_ANCIENT) && 
       !IsUnitType(target, UNIT_TYPE_MECHANICAL) &&
       !IsUnitType(target, UNIT_TYPE_MAGIC_IMMUNE) && 
-      !IsPlayerAlly(caster.OwningPlayer(), target.OwningPlayer());
+      !IsPlayerAlly(caster.Owner, target.Owner);
   }
 }

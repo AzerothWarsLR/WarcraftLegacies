@@ -17,5 +17,9 @@
         <PackageReference Include="WCSharp.SaveLoad" Version="3.0.0" />
         <PackageReference Include="WCSharp.Shared" Version="3.0.0" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Mechanics\StructurePacking.cs" />
+    </ItemGroup>
     
 </Project>

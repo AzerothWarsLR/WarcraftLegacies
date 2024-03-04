@@ -49,7 +49,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
     /// <inheritdoc/>
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      var portalOrigin = WCSharp.Shared.Util.PositionWithPolarOffset(GetUnitX(caster), GetUnitY(caster), PortalOffset, caster.GetFacing());
+      var portalOrigin = WCSharp.Shared.Util.PositionWithPolarOffset(GetUnitX(caster), GetUnitY(caster), PortalOffset, caster.Facing);
       ChannelManager.Add(new SlipstreamPortalChannel(caster, Id, new Point(portalOrigin.x, portalOrigin.y), targetPoint)
       {
         Active = true,
@@ -75,7 +75,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
 
     private void Refund(unit whichUnit)
     {
-      whichUnit.RestoreMana(BlzGetUnitAbilityManaCost(whichUnit, Id, GetAbilityLevel(whichUnit)));
+      whichUnit.Mana += BlzGetUnitAbilityManaCost(whichUnit, Id, GetAbilityLevel(whichUnit));
       BlzEndUnitAbilityCooldown(whichUnit, Id);
     }
   }

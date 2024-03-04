@@ -33,13 +33,13 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 
     internal override void OnAdd(Faction whichFaction)
     {
-      if (_target.Unit != null && IsPlayerAlliedToAnyEligibleFaction(_target.Unit.OwningPlayer()))
+      if (_target.Unit != null && IsPlayerAlliedToAnyEligibleFaction(_target.Unit.Owner))
         Progress = QuestProgress.Complete;
     }
 
     private void OnTargetChangeOwner(object? sender, LegendChangeOwnerEventArgs legendChangeOwnerEventArgs)
     {
-      if (_target.Unit != null && IsPlayerAlliedToAnyEligibleFaction(_target.Unit.OwningPlayer()))
+      if (_target.Unit != null && IsPlayerAlliedToAnyEligibleFaction(_target.Unit.Owner))
         Progress = QuestProgress.Complete;
       else
         Progress = _canFail ? QuestProgress.Failed : QuestProgress.Incomplete;

@@ -92,7 +92,7 @@ namespace WarcraftLegacies.Source.Spells
 
         var projectileDestination = GetProjectileDestination(projectileOrigin, casterFacing);
         
-        var missile = new ApocalypseProjectile(caster.OwningPlayer(), projectileOrigin.X, projectileOrigin.Y,
+        var missile = new ApocalypseProjectile(caster.Owner, projectileOrigin.X, projectileOrigin.Y,
           projectileDestination.X, projectileDestination.Y)
         {
           CollisionRadius = ProjectileRadius,

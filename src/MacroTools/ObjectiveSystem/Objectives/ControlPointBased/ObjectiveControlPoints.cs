@@ -44,7 +44,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       foreach (var controlPoint in _progressByControlPoint.Keys.ToArray())
       {
         controlPoint.OwnerAllianceChanged += OnTargetOwnerAllianceChanged;
-        SetControlPointProgress(controlPoint, IsPlayerAlliedToAnyEligibleFaction(controlPoint.Unit.OwningPlayer()));
+        SetControlPointProgress(controlPoint, IsPlayerAlliedToAnyEligibleFaction(controlPoint.Unit.Owner));
       }
     }
 

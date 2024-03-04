@@ -61,16 +61,23 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
     /// <inheritdoc />
     public override void OnCreate()
     {
-      _portalOrigin = CreateUnit(Caster.OwningPlayer(), PortalUnitTypeId, _origin.X, _origin.Y, Caster.GetFacing() - 180)
-        .SetWaygateDestination(_target)
-        .SetColor(Color.Red, Color.Green, Color.Blue, Color.Alpha);
+      var portalOrigin = CreateUnit(Caster.Owner, PortalUnitTypeId, _origin.X, _origin.Y, Caster.Facing - 180);
+      portalOrigin.WaygateActive = true;
+      portalOrigin.WaygateDestinationX = _target.X;
+      portalOrigin.WaygateDestinationY = _target.Y;
+      portalOrigin.SetVertexColor(Color.Red, Color.Green, Color.Blue, Color.Alpha);
+      _portalOrigin = portalOrigin;
       _portalOriginBuff = new SlipstreamPortalBuff(Caster, _portalOrigin);
       BuffSystem.Add(_portalOriginBuff);
       _portalOriginBuff.Open(OpeningDelay);
-      
-      _portalDestination = CreateUnit(Caster.OwningPlayer(), PortalUnitTypeId, _target.X, _target.Y, Caster.GetFacing())
-        .SetWaygateDestination(new Point(_origin.X, _origin.Y))
-        .SetColor(Color.Red, Color.Green, Color.Blue, Color.Alpha);
+
+      var portalDestination = CreateUnit(Caster.Owner, PortalUnitTypeId, _target.X, _target.Y, Caster.Facing);
+      Point destination = new Point(_origin.X, _origin.Y);
+      portalDestination.WaygateActive = true;
+      portalDestination.WaygateDestinationX = destination.X;
+      portalDestination.WaygateDestinationY = destination.Y;
+      portalDestination.SetVertexColor(Color.Red, Color.Green, Color.Blue, Color.Alpha);
+      _portalDestination = portalDestination;
       _portalDestinationBuff = new SlipstreamPortalBuff(Caster, _portalDestination)
       {
         RefundFunc = RefundFunc

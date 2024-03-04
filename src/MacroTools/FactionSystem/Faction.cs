@@ -216,12 +216,28 @@ namespace MacroTools.FactionSystem
       var essentialLegends = new List<Legend>();
       
       foreach (var legend in LegendaryHeroManager.GetAll())
-        if (legend.Essential && legend.OwningPlayer == Player && legend.Unit?.IsAlive() == true)
+      {
+        unit tempQualifier = legend.Unit;
+        if (tempQualifier != null)
+        {
+          bool temp = tempQualifier.Alive;
+        }
+
+        if (legend.Essential && legend.OwningPlayer == Common.Player && RETURNED_VALUE == true)
           essentialLegends.Add(legend);
-      
+      }
+
       foreach (var capital in CapitalManager.GetAll())
-        if (capital.Essential && capital.OwningPlayer == Player && capital.Unit?.IsAlive() == true)
+      {
+        unit tempQualifier = capital.Unit;
+        if (tempQualifier != null)
+        {
+          bool temp = tempQualifier.Alive;
+        }
+
+        if (capital.Essential && capital.OwningPlayer == Player && RETURNED_VALUE == true)
           essentialLegends.Add(capital);
+      }
 
       return essentialLegends;
     }

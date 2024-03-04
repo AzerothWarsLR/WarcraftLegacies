@@ -20,7 +20,7 @@ namespace MacroTools.PassiveAbilities
     {
       var triggerUnit = GetTriggerUnit();
       var position = triggerUnit.GetPosition();
-      GetTriggerUnit().Remove();
+      GetTriggerUnit().Dispose();
       
       if (DeathEffectPath != null)
         AddSpecialEffect(DeathEffectPath, position.X, position.Y)

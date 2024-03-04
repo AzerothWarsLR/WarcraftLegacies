@@ -20,8 +20,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     {
       _objectiveUnit = objectiveUnit;
       TargetWidget = objectiveUnit;
-      var hitPointRequirement = objectiveUnit.GetMaximumHitPoints();
-      Description = objectiveUnit.IsType(UNIT_TYPE_STRUCTURE)
+      var hitPointRequirement = objectiveUnit.MaxLife;
+      Description = objectiveUnit.IsUnitType(UNIT_TYPE_STRUCTURE)
         ? $"Repair {GetUnitName(objectiveUnit)} to {hitPointRequirement} hit points"
         : $"Bring {GetUnitName(objectiveUnit)} to {hitPointRequirement} hit points";
       DisplaysPosition = IsUnitType(objectiveUnit, UNIT_TYPE_STRUCTURE);

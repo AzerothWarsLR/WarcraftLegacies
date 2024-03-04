@@ -43,7 +43,7 @@ namespace MacroTools.FactionChoices
         if (ControlPointManager.Instance.UnitIsControlPoint(unit))
           unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
         else
-          unit.Remove();
+          unit.Dispose();
       
       faction.OnNotPicked();
     }

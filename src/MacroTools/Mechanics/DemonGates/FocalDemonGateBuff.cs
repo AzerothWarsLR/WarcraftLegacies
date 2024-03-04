@@ -28,7 +28,7 @@ namespace MacroTools.Mechanics.DemonGates
         var targetPosition = Target.GetPosition();
         var offsetPosition =
           WCSharp.Shared.Util.PositionWithPolarOffset(targetPosition.X, targetPosition.Y, SpawnDistance,
-            Target.GetFacing() + FacingOffset);
+            Target.Facing + FacingOffset);
         return new Point(offsetPosition.x, offsetPosition.y);
       }
     }
@@ -50,7 +50,7 @@ namespace MacroTools.Mechanics.DemonGates
       if (Instance != null)
         KillUnit(Instance.Target);
       Instance = this;
-      Target.IssueOrder("setrally", SpawnPoint);
+      Target.IssueOrderOld("setrally", SpawnPoint);
     }
   }
 }

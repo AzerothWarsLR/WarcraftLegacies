@@ -40,8 +40,11 @@ namespace MacroTools.Buffs
     /// <inheritdoc />
     public override void OnApply()
     {
-      foreach (var unit in UnitsToMove) 
-        unit.Show(false).SetInvulnerable(true);
+      foreach (var unit in UnitsToMove)
+      {
+        unit.IsVisible = false;
+        unit.IsInvulnerable = true;
+      }
 
       Effect = AddSpecialEffect(@"Abilities\Spells\Undead\Darksummoning\DarkSummonTarget.mdl", TargetPosition.X,
         TargetPosition.Y);
@@ -49,7 +52,7 @@ namespace MacroTools.Buffs
       _progressEffect = AddSpecialEffect("war3mapImported\\Progressbar10sec.mdx", TargetPosition.X, TargetPosition.Y);
       _progressEffect.SetTimeScale(10 / Duration);
       _progressEffect.SetTimeScale(10 / Duration);
-      _progressEffect.SetColor(Caster.OwningPlayer());
+      _progressEffect.SetColor(Caster.Owner);
       _progressEffect.SetHeight(185f + Environment.GetPositionZ(TargetPosition));
     }
 
@@ -66,10 +69,12 @@ namespace MacroTools.Buffs
           unit.Kill();
       }
       
-      foreach (var unit in UnitsToMove) 
-        unit.Show(true)
-          .SetPosition(TargetPosition)
-          .SetInvulnerable(false);
+      foreach (var unit in UnitsToMove)
+      {
+        unit.IsVisible = true;
+        unit.SetPosition(TargetPosition);
+        unit.IsInvulnerable = true;
+      }
     }
   }
 }

@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.GameLogic
       
       var invasionLocation = choice.Data;
       foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.Northrend_Ambiance).EmptyToList()
-                 .Where(x => x.OwningPlayer() == pickingPlayer))
+                 .Where(x => x.Owner == pickingPlayer))
       {
         if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) || IsUnitType(unit, UNIT_TYPE_ANCIENT) ||
             IsUnitType(unit, UNIT_TYPE_PEON) ||

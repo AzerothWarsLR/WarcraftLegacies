@@ -28,7 +28,7 @@ namespace MacroTools.Cheats
         return "You must specify a valid integer as the first parameter.";
 
       foreach (var unit in CreateGroup().EnumSelectedUnits(cheater).EmptyToList()) 
-        unit.SetMana(mana);
+        unit.Mana = mana;
       return $"Setting mana of selected units to {mana}.";
     }
   }

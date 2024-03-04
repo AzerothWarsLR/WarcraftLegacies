@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests
       AddObjective(_enterTombOfSargerasRegion);
       _preventAccessTriggers = CreatePreventAccessTriggers(interiorRects);
       HideUnitsInsideTomb(interiorRects);
-      _entranceDoor = entranceDoor.SetInvulnerable(true);
+      _entranceDoor = entranceDoor.IsInvulnerable = true;
       IsFactionQuest = false;
     }
 
@@ -63,8 +63,7 @@ namespace WarcraftLegacies.Source.Quests
           preventAccessTrigger.Dispose();
 
       _preventAccessTriggers = null;
-      _entranceDoor
-        .SetInvulnerable(false)
+      (_entranceDoor.IsInvulnerable = true)
         .TakeDamage(_enterTombOfSargerasRegion.CompletingUnit, 10000);
     }
 

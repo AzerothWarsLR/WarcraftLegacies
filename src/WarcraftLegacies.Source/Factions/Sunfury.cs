@@ -60,7 +60,7 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
       Regions.Netherstorm.CleanupNeutralPassiveUnits();
       Regions.UpperNetherstorm.CleanupNeutralPassiveUnits();
       Regions.TempestKeep.CleanupNeutralPassiveUnits();
-      _preplacedUnitSystem.GetUnit(Constants.UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER).Remove();
+      _preplacedUnitSystem.GetUnit(Constants.UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER).Dispose();
       base.OnNotPicked();
     }
 

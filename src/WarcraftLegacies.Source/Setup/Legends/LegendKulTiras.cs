@@ -50,8 +50,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS)
       };
-      Flagship.Unit.SetInvulnerable(true);
-      Flagship.Unit.PauseEx(true);
+      Flagship.Unit.IsInvulnerable = true;
+      Flagship.Unit.SetPausedEx(true);
     }
     
     public void RegisterLegends()

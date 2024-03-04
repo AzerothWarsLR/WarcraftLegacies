@@ -56,8 +56,8 @@ namespace MacroTools.Buffs
 
     private void OnInflictsDamage()
     {
-      var isAttackerAlliedToVictim = GetPlayerAlliance(GetEventDamageSource().OwningPlayer(),
-        GetTriggerUnit().OwningPlayer(), ALLIANCE_PASSIVE);
+      var isAttackerAlliedToVictim = GetPlayerAlliance(GetEventDamageSource().Owner,
+        GetTriggerUnit().Owner, ALLIANCE_PASSIVE);
       if (!BlzGetEventIsAttack() || isAttackerAlliedToVictim) 
         return;
       

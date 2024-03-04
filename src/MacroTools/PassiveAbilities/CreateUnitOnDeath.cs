@@ -43,15 +43,18 @@ namespace MacroTools.PassiveAbilities
     public override void OnDeath()
     {
       var triggerUnit = GetTriggerUnit();
-      if (GetPlayerTechCount(triggerUnit.OwningPlayer(), RequiredResearch, false) == 0 || IsUnitType(triggerUnit, UNIT_TYPE_SUMMONED))
+      if (GetPlayerTechCount(triggerUnit.Owner, RequiredResearch, false) == 0 || IsUnitType(triggerUnit, UNIT_TYPE_SUMMONED))
         return;
       var pos = triggerUnit.GetPosition();
       for (var i = 0; i < CreateCount; i++)
-        CreateUnit(triggerUnit.OwningPlayer(), CreateUnitTypeId, pos.X, pos.Y, triggerUnit.GetFacing())
-          .SetTimedLife(Duration);
+      {
+        var createdUnit = CreateUnit(triggerUnit.Owner, CreateUnitTypeId, pos.X, pos.Y, triggerUnit.Facing);
+        createdUnit.ApplyTimedLife(0, Duration);
+      }
+
       AddSpecialEffect(SpecialEffectPath, pos.X, pos.Y)
         .SetLifespan(1);
-      triggerUnit.Remove();
+      triggerUnit.Dispose();
     }
   }
 }

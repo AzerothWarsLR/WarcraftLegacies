@@ -61,9 +61,9 @@ namespace MacroTools.Extensions
           continue;
         }
 
-        if (unit.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE) && !IsUnitType(unit, UNIT_TYPE_STRUCTURE))
+        if (unit.Owner == Player(PLAYER_NEUTRAL_PASSIVE) && !IsUnitType(unit, UNIT_TYPE_STRUCTURE))
         {
-          unit.Remove();
+          unit.Dispose();
         }
       }
     }
@@ -78,9 +78,9 @@ namespace MacroTools.Extensions
         .EmptyToList();
       foreach (var unit in unitsInArea)
       {
-        if (unit.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && unit.IsRemovable())
+        if (unit.Owner == Player(PLAYER_NEUTRAL_AGGRESSIVE) && unit.IsRemovable())
         {
-          unit.Remove();
+          unit.Dispose();
         }
       }
     }
@@ -98,15 +98,14 @@ namespace MacroTools.Extensions
       var group = CreateGroup()
         .EnumUnitsInRect(rectangle)
         .EmptyToList()
-        .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE) && filter.Invoke(x))
+        .Where(x => x.Owner == Player(PLAYER_NEUTRAL_PASSIVE) && filter.Invoke(x))
         .ToList();
       foreach (var unit in group)
       {
         if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) && hideStructures && !IsUnitType(unit, UNIT_TYPE_ANCIENT) ||
             !IsUnitType(unit, UNIT_TYPE_STRUCTURE) && hideUnits)
-          unit.Show(false);
-        unit
-          .SetInvulnerable(true)
+          unit.IsVisible = false;
+        (unit.IsInvulnerable = true)
           .PauseEx(true);
       }
       return group;

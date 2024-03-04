@@ -23,11 +23,11 @@ namespace MacroTools.Spells
     /// <inheritdoc/>
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      var targetTeam = target.OwningPlayer().GetTeam();
-      var casterTeam = caster.OwningPlayer().GetTeam();
+      var targetTeam = target.Owner.GetTeam();
+      var casterTeam = caster.Owner.GetTeam();
 
       if (targetTeam == casterTeam)
-        caster.SetOwner(target.OwningPlayer());
+        caster.SetOwner(target.Owner);
     }
 
   }

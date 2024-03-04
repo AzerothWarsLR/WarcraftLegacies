@@ -50,7 +50,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
       _moongladeUnits = moonglade.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _darnassusUnits = darnassus.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _cenarionHoldUnits = cenarionHold.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      worldTree.SetInvulnerable(true);
+      worldTree.IsInvulnerable = true;
       
     }
 
@@ -84,9 +84,8 @@ namespace WarcraftLegacies.Source.Quests.Druids
       {
         _malfurion.ForceCreate(completingFaction.Player, Regions.Moonglade.Center,
           270);
-        _malfurion.Unit?
-          .SetLevel(3, false)
-          .AddItemSafe(_hornofCenarius.Item);
+        _malfurion.Unit.SetLevel(3, false);
+        _malfurion.Unit.AddItemSafe(_hornofCenarius.Item);
       }
       else
       {

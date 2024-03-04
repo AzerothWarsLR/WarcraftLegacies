@@ -46,10 +46,10 @@ namespace MacroTools.Powers
 
     private void OnDamage()
     {
-      if (!BlzGetEventIsAttack() || (ValidUnitTypes != null && !ValidUnitTypes.Contains(GetEventDamageSource().GetTypeId()))) 
+      if (!BlzGetEventIsAttack() || (ValidUnitTypes != null && !ValidUnitTypes.Contains(GetEventDamageSource().UnitType))) 
         return;
 
-      if (!IsHeroUnitId(GetEventDamageSource().GetTypeId()) && !(GetRandomReal(0, 1) < _damageChance)) 
+      if (!IsHeroUnitId(GetEventDamageSource().UnitType) && !(GetRandomReal(0, 1) < _damageChance)) 
         return;
       
       GetTriggerUnit().TakeDamage(GetEventDamageSource(), _damageDealt);

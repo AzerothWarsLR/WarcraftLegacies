@@ -88,7 +88,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       var neutralHostileUnitsInTyrsHand = CreateGroup()
         .EnumUnitsInRect(Regions.TyrUnlock)
         .EmptyToList()
-        .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE));
+        .Where(x => x.Owner == Player(PLAYER_NEUTRAL_AGGRESSIVE));
       
       foreach (var unit in neutralHostileUnitsInTyrsHand)
       {

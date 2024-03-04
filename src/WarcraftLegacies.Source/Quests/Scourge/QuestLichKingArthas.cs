@@ -54,12 +54,12 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       _lichKing.DeathMessage =
         "Icecrown Citadel been razed. Unfortunately, the Lich King has already vacated his unholy throne.";
       _lichKing.Hivemind = false;
-      _lichKing.Unit?
-        .RemoveAbility(Constants.ABILITY_A0W8_RECALL_FROZEN_THRONE)
-        .RemoveAbility(Constants.ABILITY_A0L3_ANIMATE_DEAD_RED_THE_FROZEN_THRONE)
-        .RemoveAbility(Constants.ABILITY_A001_FROST_NOVA_RED_THE_FROZEN_THRONE)
-        .SetMaximumMana(0)
-        .SetName("Icecrown Citadel");
+      var lichkingUnit = _lichKing.Unit;
+      lichkingUnit.RemoveAbility(Constants.ABILITY_A0W8_RECALL_FROZEN_THRONE);
+      lichkingUnit.RemoveAbility(Constants.ABILITY_A0L3_ANIMATE_DEAD_RED_THE_FROZEN_THRONE);
+      lichkingUnit.RemoveAbility(Constants.ABILITY_A001_FROST_NOVA_RED_THE_FROZEN_THRONE);
+      lichkingUnit.MaxMana = 0;
+      lichkingUnit.Name = "Icecrown Citadel";
       
       _arthas.UnitType = Constants.UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE;
       _arthas.PermaDies = true;

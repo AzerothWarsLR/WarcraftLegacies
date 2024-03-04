@@ -89,7 +89,7 @@ namespace MacroTools.PassiveAbilities
 
         foreach (var nearbyUnit in CreateGroup().EnumUnitsInRange(target.GetPosition(), Radius).EmptyToList())
         {
-          if (IsUnitAlly(nearbyUnit, caster.OwningPlayer()) || !UnitAlive(nearbyUnit) || BlzIsUnitInvulnerable(nearbyUnit) ||
+          if (IsUnitAlly(nearbyUnit, caster.Owner) || !UnitAlive(nearbyUnit) || BlzIsUnitInvulnerable(nearbyUnit) ||
               IsUnitType(nearbyUnit, UNIT_TYPE_STRUCTURE) || IsUnitType(nearbyUnit, UNIT_TYPE_ANCIENT))
             continue;
 

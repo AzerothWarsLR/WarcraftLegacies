@@ -130,7 +130,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge.Plague
     private void SpawnPeasants()
     {
       var triggerUnit = GetTriggerUnit();
-      if (_victim.Player?.GetTeam()?.Contains(triggerUnit.OwningPlayer()) != true)
+      if (_victim.Player?.GetTeam()?.Contains(triggerUnit.Owner) != true)
         return;
       
       var x = GetUnitX(triggerUnit);

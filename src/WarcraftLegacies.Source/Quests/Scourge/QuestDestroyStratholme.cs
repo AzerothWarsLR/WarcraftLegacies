@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         return;
 
       arthas.Kill();
-      arthas.Remove();
+      arthas.Dispose();
     }
   }
 }

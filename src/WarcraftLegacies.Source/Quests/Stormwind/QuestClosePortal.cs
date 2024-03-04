@@ -58,7 +58,11 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
         RemoveUnit(unit);
       }
       _unitsToRemove.Clear();
-      _khadgar.Unit?.AddExperience(10000);
+      unit tempQualifier = _khadgar.Unit;
+      if (tempQualifier != null)
+      {
+        tempQualifier.Experience += 10000;
+      }
     }
   }
 }

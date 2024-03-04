@@ -65,7 +65,7 @@ namespace MacroTools.PassiveAbilities
 
       for (var i = 0; i < summonCount; i++)
       {
-        var summonedUnit = CreateUnit(triggerUnit.OwningPlayer(), SummonUnitTypeId, casterPosition.X, casterPosition.Y, triggerUnit.GetFacing())
+        var summonedUnit = CreateUnit(triggerUnit.Owner, SummonUnitTypeId, casterPosition.X, casterPosition.Y, triggerUnit.Facing)
           .AddType(UNIT_TYPE_SUMMONED)
           .SetTimedLife(Duration);
         var summonedUnitX = GetUnitX(summonedUnit);

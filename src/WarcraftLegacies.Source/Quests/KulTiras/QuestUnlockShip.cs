@@ -62,14 +62,12 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
         Player(bj_PLAYER_NEUTRAL_VICTIM).RescueGroup(_rescueUnits);
         _proudmooreCapitalShip.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       }
-      _proudmooreCapitalShip.PauseEx(false);
-
-
+      _proudmooreCapitalShip.SetPausedEx(false);
     }
 
     private static void MoveStranglethorn(player whichPlayer)
     {
-      foreach (var unit in CreateGroup().EnumUnitsInRect(Rectangle.WorldBounds).EmptyToList().Where(x => x.OwningPlayer() == whichPlayer))
+      foreach (var unit in CreateGroup().EnumUnitsInRect(Rectangle.WorldBounds).EmptyToList().Where(x => x.Owner == whichPlayer))
       {
         if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE) && !IsUnitType(unit, UNIT_TYPE_ANCIENT) && !IsUnitType(unit, UNIT_TYPE_PEON))
           SetUnitPosition(unit, 6864, -17176);
@@ -81,7 +79,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
-      _proudmooreCapitalShip.Remove();
+      _proudmooreCapitalShip.Dispose();
     }
   }
 }

@@ -42,7 +42,7 @@ namespace MacroTools.LegendSystem
 
         if (_unit == null) 
           return;
-        _unitType = _unit.GetTypeId();
+        _unitType = _unit.UnitType;
         OnChangeUnit();
         UnitChanged?.Invoke(this, new LegendChangeUnitEventArgs(this, previousUnit));
       }

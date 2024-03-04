@@ -37,7 +37,7 @@ namespace MacroTools.Cheats
       _executed = true;
 
       foreach (var unit in CreateGroup().EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds).EmptyToList())
-        unit.Remove();
+        unit.Dispose();
 
       var newFogModifier = CreateFogModifierRect(cheater, FOG_OF_WAR_VISIBLE,
         WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, true, true);
@@ -45,11 +45,11 @@ namespace MacroTools.Cheats
       
       foreach (var shore in ShoreManager.GetAllShores())
       {
-        CreateUnit(cheater, FourCC("npng"), shore.Position.X, shore.Position.Y, 0)
-          .SetScale(7)
-          .SetName(shore.Name)
-          .SetInvulnerable(true)
-          .RemoveAbility(FourCC("Awan"));
+        var shoreIndicator = CreateUnit(cheater, FourCC("npng"), shore.Position.X, shore.Position.Y, 0);
+        SetUnitScale(shoreIndicator, 7, 7, 7);
+        shoreIndicator.Name = shore.Name;
+        shoreIndicator.IsInvulnerable = true;
+        shoreIndicator.RemoveAbility(FourCC("Awan"));
       }
 
       return $"Created a penguin at all registered {nameof(Shore)}s.";

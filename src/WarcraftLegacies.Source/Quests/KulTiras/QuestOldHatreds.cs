@@ -31,7 +31,13 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     protected override string RewardDescription => "Daelin Proudmoore gains 4000 experience";
 
     /// <inheritdoc/>
-    protected override void OnComplete(Faction completingFaction) =>
-      _proudmoore.Unit?.AddExperience(4000);
+    protected override void OnComplete(Faction completingFaction)
+    {
+      unit tempQualifier = _proudmoore.Unit;
+      if (tempQualifier != null)
+      {
+        tempQualifier.Experience += 4000;
+      }
+    }
   }
 }

@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.GameLogic
         .EmptyToList();
       
       foreach (var unit in _pausedUnits)
-        unit.PauseEx(true);
+        unit.SetPausedEx(true);
 
       _state = CinematicState.Active;
     }
@@ -65,13 +65,13 @@ namespace WarcraftLegacies.Source.GameLogic
       DestroyTimer(_musicTimer);
       _state = CinematicState.Finished;
 
-      if (_pausedUnits != null)
-      {
-        foreach (var unit in _pausedUnits)
-          unit.PauseEx(false);
-        _pausedUnits.Clear();
-        _pausedUnits = null;
-      }
+      if (_pausedUnits == null) 
+        return;
+      
+      foreach (var unit in _pausedUnits)
+        unit.SetPausedEx(false);
+      _pausedUnits.Clear();
+      _pausedUnits = null;
     }
 
     private static void PlayFactionMusic()

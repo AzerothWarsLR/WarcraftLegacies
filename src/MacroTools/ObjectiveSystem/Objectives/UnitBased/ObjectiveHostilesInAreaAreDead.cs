@@ -43,8 +43,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       foreach (var rectangle in rectangles)
       {
         var unitsInAreas = CreateGroup().EnumUnitsInRect(rectangle).EmptyToList()
-          .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !x.IsType(UNIT_TYPE_ANCIENT) &&
-                      !x.IsType(UNIT_TYPE_SAPPER));
+          .Where(x => x.Owner == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !x.IsUnitType(UNIT_TYPE_ANCIENT) &&
+                      !x.IsUnitType(UNIT_TYPE_SAPPER));
         foreach (var unit in unitsInAreas)
         {
           _maxKillCount++;

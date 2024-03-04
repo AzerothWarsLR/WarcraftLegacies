@@ -43,10 +43,29 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-      _saiden.Unit?.AddExperience(ExperienceReward);
-      _renault.Unit?.AddExperience(ExperienceReward);
-      _sally.Unit?.AddExperience(ExperienceReward);
-      _brigitte.Unit?.AddExperience(ExperienceReward);
+      unit tempQualifier = _saiden.Unit;
+      if (tempQualifier != null)
+      {
+        tempQualifier.Experience += ExperienceReward;
+      }
+
+      unit tempQualifier1 = _renault.Unit;
+      if (tempQualifier1 != null)
+      {
+        tempQualifier1.Experience += ExperienceReward;
+      }
+
+      unit tempQualifier2 = _sally.Unit;
+      if (tempQualifier2 != null)
+      {
+        tempQualifier2.Experience += ExperienceReward;
+      }
+
+      unit tempQualifier3 = _brigitte.Unit;
+      if (tempQualifier3 != null)
+      {
+        tempQualifier3.Experience += ExperienceReward;
+      }
     }
 
     /// <inheritdoc/>
