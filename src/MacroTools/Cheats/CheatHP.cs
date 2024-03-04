@@ -1,5 +1,6 @@
 ﻿using MacroTools.CommandSystem;
 using MacroTools.Extensions;
+using MacroTools.Utils;
 
 
 namespace MacroTools.Cheats
@@ -30,7 +31,7 @@ namespace MacroTools.Cheats
     {
       if (S2I(parameters[0]) >= 0)
       {
-        foreach (var unit in CreateGroup().EnumSelectedUnits(cheater).EmptyToList())
+        foreach (var unit in GroupUtils.GetSelectedUnits(cheater))
           SetUnitState(unit, UNIT_STATE_LIFE, S2R(parameters[0]));
         return "Setting hitpoints of selected units to " + parameters[0] + ".";
       }

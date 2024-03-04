@@ -1,5 +1,6 @@
 using MacroTools.CommandSystem;
 using MacroTools.Extensions;
+using MacroTools.Utils;
 
 
 namespace MacroTools.Cheats
@@ -24,7 +25,7 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      foreach (var unit in CreateGroup().EnumSelectedUnits(cheater).EmptyToList()) 
+      foreach (var unit in GroupUtils.GetSelectedUnits(cheater)) 
         RemoveUnit(unit);
       return "Permanently removing selected units.";
     }

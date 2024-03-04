@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using MacroTools.CommandSystem;
 using MacroTools.Extensions;
+using MacroTools.Utils;
 
 
 namespace MacroTools.Cheats
@@ -28,7 +29,7 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      var firstSelectedUnit = CreateGroup().EnumSelectedUnits(cheater).EmptyToList().First();
+      var firstSelectedUnit = GroupUtils.GetSelectedUnits(cheater).First();
       return $"{firstSelectedUnit.Name} is at position {GetUnitX(firstSelectedUnit)}, {GetUnitY(firstSelectedUnit)}.";
     }
   }

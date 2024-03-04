@@ -1,6 +1,7 @@
 using System.Linq;
 using MacroTools.CommandSystem;
 using MacroTools.Extensions;
+using MacroTools.Utils;
 
 
 namespace MacroTools.Cheats
@@ -46,7 +47,7 @@ namespace MacroTools.Cheats
         if (!int.TryParse(parameters[1], out count))
           return "You must specify a valid count as the second parameter.";
 
-      var firstSelectedUnit = CreateGroup().EnumSelectedUnits(cheater).EmptyToList().First();
+      var firstSelectedUnit = GroupUtils.GetSelectedUnits(cheater).First();
       SpawnUnitsOrItems(firstSelectedUnit, objectTypeId, count);
       return $"Attempted to spawn {count} of object {GetObjectName(objectTypeId)}.";
     }

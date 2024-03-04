@@ -1,5 +1,6 @@
 ﻿using MacroTools.CommandSystem;
 using MacroTools.Extensions;
+using MacroTools.Utils;
 
 
 namespace MacroTools.Cheats
@@ -40,7 +41,7 @@ namespace MacroTools.Cheats
         return "That is not a valid object ID for this map.";
       }
       
-      foreach (var unit in CreateGroup().EnumSelectedUnits(cheater).EmptyToList())
+      foreach (var unit in GroupUtils.GetSelectedUnits(cheater))
         UnitAddAbility(unit, fourCc);
 
       return $"Adding {objectName} to selected units.";

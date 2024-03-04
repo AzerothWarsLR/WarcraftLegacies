@@ -1,5 +1,6 @@
 using MacroTools.CommandSystem;
 using MacroTools.Extensions;
+using MacroTools.Utils;
 
 
 namespace MacroTools.Cheats
@@ -27,7 +28,7 @@ namespace MacroTools.Cheats
       if (!int.TryParse(parameters[0], out var mana))
         return "You must specify a valid integer as the first parameter.";
 
-      foreach (var unit in CreateGroup().EnumSelectedUnits(cheater).EmptyToList()) 
+      foreach (var unit in GroupUtils.GetSelectedUnits(cheater)) 
         unit.Mana = mana;
       return $"Setting mana of selected units to {mana}.";
     }
