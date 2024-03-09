@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
 
@@ -75,8 +76,8 @@ namespace MacroTools.DummyCasters
     public void CastOnUnitsInCircle(unit caster, int level, Point center,
       float radius, DummyCasterManager.CastFilter castFilter, DummyCastOriginType originType)
     {
-      foreach (var target in CreateGroup()
-                 .EnumUnitsInRange(center, radius).EmptyToList()
+      foreach (var target in GroupUtils
+                 .GetUnitsInRange(center, radius)
                  .FindAll(unit => castFilter(caster, unit)))
       {
         CastUnit(caster, level, target, originType);

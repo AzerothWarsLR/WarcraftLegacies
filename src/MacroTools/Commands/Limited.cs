@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools.CommandSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Libraries;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
 
@@ -33,10 +35,9 @@ namespace MacroTools.Commands
     {
       var pingedPositions = new HashSet<Point>();
       
-      var limitedUnits = CreateGroup()
-        .EnumUnitsOfPlayer(cheater)
-        .EmptyToList()
-        .Where(u => cheater.GetObjectLimit(u.GetTypeId()) is > 0 and < Faction.UNLIMITED && u.IsAlive());
+      var limitedUnits = GroupUtils
+        .GetUnitsOfPlayer(cheater)
+        .Where(u => cheater.GetObjectLimit(u.UnitType) is > 0 and < Faction.UNLIMITED && u.Alive);
 
       foreach (var unit in limitedUnits)
       {

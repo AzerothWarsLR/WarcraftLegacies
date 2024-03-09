@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
 
@@ -10,11 +11,8 @@ namespace MacroTools.DummyCasters
   {
     private readonly unit _unit;
     
-    internal GlobalDummyCaster(unit unit)
-    {
-      _unit = unit;
-    }
-    
+    internal GlobalDummyCaster(unit unit) => _unit = unit;
+
     /// <summary>
     /// Causes the specified ability to be cast from the specified object at the specified target.
     /// </summary>
@@ -75,8 +73,8 @@ namespace MacroTools.DummyCasters
     public void CastOnUnitsInCircle(unit caster, int abilId, int orderId, int level, Point center,
       float radius, DummyCasterManager.CastFilter castFilter, DummyCastOriginType originType)
     {
-      foreach (var target in CreateGroup()
-                 .EnumUnitsInRange(center, radius).EmptyToList()
+      foreach (var target in GroupUtils
+                 .GetUnitsInRange(center, radius)
                  .FindAll(unit => castFilter(caster, unit)))
       {
         CastUnit(caster, abilId, orderId, level, target, originType);

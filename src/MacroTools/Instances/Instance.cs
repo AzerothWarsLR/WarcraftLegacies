@@ -4,6 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
 
@@ -87,9 +88,8 @@ namespace MacroTools.Instances
         _dependencyDiesTrigger.Dispose();
         foreach (var rect in _rectangles)
         {
-          var unitsInRect = CreateGroup()
-            .EnumUnitsInRect(rect)
-            .EmptyToList();
+          var unitsInRect = GroupUtils
+            .GetUnitsInRect(rect);
 
           var evacuationPosition = _gates.First().ExteriorPosition;
           
@@ -127,7 +127,8 @@ namespace MacroTools.Instances
         try
         {
           var enumItem = GetEnumItem();
-          enumItem.SetPosition(evacuationPosition);
+          enumItem.X = evacuationPosition.X;
+          enumItem.Y = evacuationPosition.Y;
         }
         catch (Exception ex)
         {

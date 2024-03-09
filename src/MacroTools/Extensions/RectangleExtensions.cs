@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
 
@@ -50,9 +51,8 @@ namespace MacroTools.Extensions
     /// </summary>
     public static void CleanupNeutralPassiveUnits(this Rectangle area)
     {
-      var unitsInArea = CreateGroup()
-        .EnumUnitsInRect(area)
-        .EmptyToList();
+      var unitsInArea = GroupUtils
+        .GetUnitsInRect(area);
       foreach (var unit in unitsInArea)
       {
         if (!unit.IsRemovable())
@@ -73,9 +73,8 @@ namespace MacroTools.Extensions
     /// </summary>
     public static void CleanupHostileUnits(this Rectangle area)
     {
-      var unitsInArea = CreateGroup()
-        .EnumUnitsInRect(area)
-        .EmptyToList();
+      var unitsInArea = GroupUtils
+        .GetUnitsInRect(area);
       foreach (var unit in unitsInArea)
       {
         if (unit.Owner == Player(PLAYER_NEUTRAL_AGGRESSIVE) && unit.IsRemovable())
@@ -95,9 +94,8 @@ namespace MacroTools.Extensions
     /// <returns>Returns all neutral passive units not matching the <paramref name="filter"/> in the specified rectangle.</returns>
     private static List<unit> PrepareUnitsForRescue(this Rectangle rectangle, bool hideUnits, bool hideStructures, Func<unit, bool> filter)
     {
-      var group = CreateGroup()
-        .EnumUnitsInRect(rectangle)
-        .EmptyToList()
+      var group = GroupUtils
+        .GetUnitsInRect(rectangle)
         .Where(x => x.Owner == Player(PLAYER_NEUTRAL_PASSIVE) && filter.Invoke(x))
         .ToList();
       foreach (var unit in group)
@@ -105,8 +103,9 @@ namespace MacroTools.Extensions
         if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) && hideStructures && !IsUnitType(unit, UNIT_TYPE_ANCIENT) ||
             !IsUnitType(unit, UNIT_TYPE_STRUCTURE) && hideUnits)
           unit.IsVisible = false;
-        (unit.IsInvulnerable = true)
-          .PauseEx(true);
+        
+        unit.IsInvulnerable = true;
+        unit.SetPausedEx(true);
       }
       return group;
     }
