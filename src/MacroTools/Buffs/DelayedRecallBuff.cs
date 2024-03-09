@@ -59,9 +59,18 @@ namespace MacroTools.Buffs
     /// <inheritdoc />
     public override void OnDispose()
     {
-      Effect?.Destroy();
-      _progressEffect?.Destroy();
-      
+      effect tempQualifier = Effect;
+      if (tempQualifier != null)
+      {
+        tempQualifier.Dispose();
+      }
+
+      effect tempQualifier1 = _progressEffect;
+      if (tempQualifier1 != null)
+      {
+        tempQualifier1.Dispose();
+      }
+
       if (!UnitAlive(Caster))
       {
         var amountToKill = (int)(UnitsToMove.Count * DeathPenalty);

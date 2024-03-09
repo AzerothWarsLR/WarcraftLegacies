@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using WCSharp.Buffs;
+using WCSharp.Effects;
 using WCSharp.Shared.Data;
 
 
@@ -143,7 +144,7 @@ namespace MacroTools.Mechanics.DemonGates
           });
       }
 
-      AddSpecialEffect(SpawnEffectPath, SpawnPoint.X, SpawnPoint.Y).SetLifespan();
+      EffectSystem.Add(AddSpecialEffect(SpawnEffectPath, SpawnPoint.X, SpawnPoint.Y), (float)0.03125);
       Progress = 0;
     }
   }

@@ -1,6 +1,7 @@
 ﻿using System;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using WCSharp.Effects;
 using WCSharp.Events;
 
 
@@ -51,8 +52,7 @@ namespace MacroTools.Powers
       if (whichUnit.IsUnitType(UNIT_TYPE_HERO) || whichUnit.IsUnitType(UNIT_TYPE_PEON) || !Filter(whichUnit))
         return;
 
-      AddSpecialEffect(@"Abilities\Spells\Other\Levelup\Levelupcaster.mdx", GetUnitX(whichUnit), GetUnitY(whichUnit))
-        .SetLifespan(1);
+      EffectSystem.Add(AddSpecialEffect(@"Abilities\Spells\Other\Levelup\Levelupcaster.mdx", GetUnitX(whichUnit), GetUnitY(whichUnit)), 1);
       
       whichUnit.MultiplyBaseDamage(_statMultiplier, 0);
       whichUnit.MultiplyBaseDamage(_statMultiplier, 1);

@@ -1,5 +1,6 @@
 ﻿using MacroTools.DummyCasters;
 using MacroTools.Extensions;
+using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Missiles;
 using WCSharp.Shared.Data;
@@ -45,10 +46,10 @@ namespace WarcraftLegacies.Source.Spells
       
       _dummyCaster.CastUnit(Caster, DummyAbilityId, DummyAbilityOrderId, DummyAbilityLevel, unit,
         DummyCastOriginType.Target);
-      
-      AddSpecialEffect(EffectOnHitModel, GetUnitX(unit), GetUnitY(unit))
-        .SetScale(EffectOnHitScale)
-        .SetLifespan();
+
+      var collisionEffect = AddSpecialEffect(EffectOnHitModel, GetUnitX(unit), GetUnitY(unit));
+      collisionEffect.SetTimeScale(EffectOnHitScale);
+      EffectSystem.Add(collisionEffect, (float)0.03125);
     }
 
     /// <inheritdoc />
@@ -63,10 +64,11 @@ namespace WarcraftLegacies.Source.Spells
     /// <inheritdoc />
     public override void OnDispose()
     {
-      Effect.SetPosition(new Point(21623f, 24212f));
-      AddSpecialEffect(EffectOnProjectileDespawnModel, MissileX, MissileY)
-        .SetScale(EffectOnProjectileDespawnScale)
-        .SetLifespan();
+      Point point = new Point(21623f, 24212f);
+      Effect.SetPosition(point.X, point.Y, 0);
+      var disposeEffect = AddSpecialEffect(EffectOnProjectileDespawnModel, MissileX, MissileY);
+      disposeEffect.SetTimeScale(EffectOnProjectileDespawnScale);
+      EffectSystem.Add(disposeEffect, (float)0.03125);
     }
 
     private static bool IsValidTarget(unit target, unit caster) =>

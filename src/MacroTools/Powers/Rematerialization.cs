@@ -1,6 +1,7 @@
 ﻿using System;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 
@@ -55,8 +56,7 @@ namespace MacroTools.Powers
           || dyingUnit.IsIllusion 
           || dyingUnit.IsUnitType(UNIT_TYPE_SUMMONED))
         return;
-      AddSpecialEffect(@"Abilities\Spells\Items\AIil\AIilTarget.mdl", _returnPoint.X, _returnPoint.Y)
-        .SetLifespan();
+      EffectSystem.Add(AddSpecialEffect(@"Abilities\Spells\Items\AIil\AIilTarget.mdl", _returnPoint.X, _returnPoint.Y), (float)0.03125);
       CreateUnit(dyingUnit.Owner, dyingUnit.UnitType, _returnPoint.X, _returnPoint.Y, 0);
     }
   }

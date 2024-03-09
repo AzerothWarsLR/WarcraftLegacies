@@ -7,6 +7,7 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
+using WCSharp.Effects;
 using WCSharp.Events;
 
 
@@ -96,8 +97,7 @@ namespace WarcraftLegacies.Source.Powers
       int value = (int)(damagedUnit.MaxLife * ((float)_healAmountPercentage / 100));
       SetUnitState(damagedUnit, UNIT_STATE_LIFE, value);
       unit temp = damagedUnit;
-      AddSpecialEffectTarget(Effect, damagedUnit, "origin")
-        .SetLifespan(1);
+      EffectSystem.Add(AddSpecialEffectTarget(Effect, damagedUnit, "origin"), 1);
     }
     
     private void AddObjective(Objective objective)

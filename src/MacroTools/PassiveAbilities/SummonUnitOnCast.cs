@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
+using WCSharp.Effects;
 
 
 namespace MacroTools.PassiveAbilities
@@ -71,8 +72,7 @@ namespace MacroTools.PassiveAbilities
         summonedUnit.ApplyTimedLife(0, Duration);
         var summonedUnitX = GetUnitX(summonedUnit);
         var summonedUnitY = GetUnitY(summonedUnit);
-        AddSpecialEffect(SpecialEffectPath, summonedUnitX, summonedUnitY)
-          .SetLifespan(1);
+        EffectSystem.Add(AddSpecialEffect(SpecialEffectPath, summonedUnitX, summonedUnitY), 1);
       }
     }
   }

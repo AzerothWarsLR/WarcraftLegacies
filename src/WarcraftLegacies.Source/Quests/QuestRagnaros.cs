@@ -3,6 +3,7 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 
@@ -62,10 +63,10 @@ namespace WarcraftLegacies.Source.Quests
     {
       var ragnarosSummonPoint = new Point(12332, -10597);
       _ragnaros.ForceCreate(Player(PLAYER_NEUTRAL_AGGRESSIVE), ragnarosSummonPoint, 320);
-      AddSpecialEffect(@"Abilities\Spells\Other\BreathOfFire\BreathOfFireMissile.mdl", ragnarosSummonPoint.X,
-          ragnarosSummonPoint.Y)
-        .SetScale(2)
-        .SetLifespan(1);
+      var ragnarosSummonEffect = AddSpecialEffect(@"Abilities\Spells\Other\BreathOfFire\BreathOfFireMissile.mdl",
+        ragnarosSummonPoint.X, ragnarosSummonPoint.Y);
+      ragnarosSummonEffect.SetTimeScale(2);
+      EffectSystem.Add(ragnarosSummonEffect, 1);
       _ragnarosSummoningPedestal.Kill();
 
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())

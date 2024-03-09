@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
+using WCSharp.Effects;
 
 
 namespace MacroTools.PassiveAbilities
@@ -54,8 +55,7 @@ namespace MacroTools.PassiveAbilities
         summonedUnit.ApplyTimedLife(0, Duration);
       }
 
-      AddSpecialEffect(SpecialEffectPath, pos.X, pos.Y)
-        .SetLifespan(1);
+      EffectSystem.Add(AddSpecialEffect(SpecialEffectPath, pos.X, pos.Y), 1);
       triggerUnit.Dispose();
     }
   }

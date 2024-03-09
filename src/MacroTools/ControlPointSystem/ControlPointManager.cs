@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
+using WCSharp.Effects;
 using WCSharp.Events;
 using static WCSharp.Api.Blizzard;
 
@@ -87,10 +88,10 @@ namespace MacroTools.ControlPointSystem
           {
             var controlPoint = _byUnit[GetTriggerUnit()];
             controlPoint.ControlLevel += 1;
-            AddSpecialEffect(@"Abilities\Spells\Items\AIlm\AIlmTarget.mdl", GetUnitX(controlPoint.Unit),
-                GetUnitY(controlPoint.Unit))
-              .SetScale(1.5f)
-              .SetLifespan();
+            var levelUpEffect = AddSpecialEffect(@"Abilities\Spells\Items\AIlm\AIlmTarget.mdl",
+              GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit));
+            levelUpEffect.SetTimeScale(1.5f);
+            EffectSystem.Add(levelUpEffect, (float)0.03125);
           }
           catch (Exception ex)
           {
@@ -255,10 +256,10 @@ namespace MacroTools.ControlPointSystem
             controlPoint.ControlLevel >= ControlLevelSettings.ControlLevelMaximum)
           return;
         controlPoint.ControlLevel += 1 + controlPoint.Owner.GetControlLevelPerTurnBonus();
-        AddSpecialEffect(@"Abilities\Spells\Items\AIlm\AIlmTarget.mdl", GetUnitX(controlPoint.Unit),
-            GetUnitY(controlPoint.Unit))
-          .SetScale(1.5f)
-          .SetLifespan();
+        var turnEndEffect = AddSpecialEffect(@"Abilities\Spells\Items\AIlm\AIlmTarget.mdl", GetUnitX(controlPoint.Unit),
+          GetUnitY(controlPoint.Unit));
+        turnEndEffect.SetTimeScale(1.5f);
+        EffectSystem.Add(turnEndEffect, (float)0.03125);
       };
     }
 

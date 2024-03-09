@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.PassiveAbilitySystem;
+using WCSharp.Effects;
 
 
 namespace MacroTools.PassiveAbilities
@@ -83,9 +84,9 @@ namespace MacroTools.PassiveAbilities
         var target = GetTriggerUnit();
         
         var effect = AddSpecialEffect(Effect, GetUnitX(target), GetUnitY(target));
-        effect.SetScale(EffectScale);
+        effect.SetTimeScale(EffectScale);
         effect.SetYaw(GetUnitFacing(caster) * MathEx.DegToRad);
-        effect.SetLifespan();
+        EffectSystem.Add(effect, (float)0.03125);
 
         foreach (var nearbyUnit in CreateGroup().EnumUnitsInRange(target.GetPosition(), Radius).EmptyToList())
         {

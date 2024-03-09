@@ -1,6 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.SpellSystem;
-
+using WCSharp.Effects;
 using WCSharp.Shared.Data;
 using WCSharp.Shared.Extensions;
 
@@ -36,8 +36,8 @@ namespace WarcraftLegacies.Source.Spells
       var healthGained = targetMaximumHitPoints * HitPointsPerTargetMaximumHitPoints;
       var manaGained = targetMaximumHitPoints * ManaPointsPerTargetMaximumHitPoints;
 
-      AddSpecialEffect(EffectCaster, GetUnitX(caster), GetUnitY(caster)).SetLifespan();
-      AddSpecialEffect(EffectTarget, GetUnitX(target), GetUnitY(target)).SetLifespan();
+      EffectSystem.Add(AddSpecialEffect(EffectCaster, GetUnitX(caster), GetUnitY(caster)), (float)0.03125);
+      EffectSystem.Add(AddSpecialEffect(EffectTarget, GetUnitX(target), GetUnitY(target)), (float)0.03125);
 
       var targetPosition = target.GetPosition();
       target.Kill();

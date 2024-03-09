@@ -2,6 +2,7 @@
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 
@@ -71,9 +72,8 @@ namespace WarcraftLegacies.Source.Powers
         treant.ApplyTimedLife(0, _duration);
         treant.AddType(UNIT_TYPE_SUMMONED);
         treant.SetExploded(true);
-        AddSpecialEffect(@"Objects\Spawnmodels\NightElf\EntBirthTarget\EntBirthTarget.mdl", treant.GetPosition().X,
-            treant.GetPosition().Y)
-          .SetLifespan();
+        EffectSystem.Add(AddSpecialEffect(@"Objects\Spawnmodels\NightElf\EntBirthTarget\EntBirthTarget.mdl", treant.GetPosition().X,
+          treant.GetPosition().Y), (float)0.03125);
       }
     }
   }

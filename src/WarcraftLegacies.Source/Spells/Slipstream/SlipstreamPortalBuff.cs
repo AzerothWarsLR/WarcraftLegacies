@@ -1,6 +1,7 @@
 ﻿using System;
 using MacroTools.Extensions;
 using WCSharp.Buffs;
+using WCSharp.Effects;
 
 
 namespace WarcraftLegacies.Source.Spells.Slipstream
@@ -50,7 +51,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
           SetUnitTimeScale(Target, 1);
           Target.SetAnimation("stand");
           Target.WaygateActive = true;
-          _progressBar.Destroy();
+          _progressBar.Dispose();
         }
 
         DestroyTimer(GetExpiredTimer());
@@ -92,7 +93,11 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
     /// <inheritdoc />
     public override void OnDispose()
     {
-      _progressBar?.Destroy();
+      effect tempQualifier = _progressBar;
+      if (tempQualifier != null)
+      {
+        tempQualifier.Dispose();
+      }
     }
 
     private void CloseInstantly()
@@ -101,9 +106,10 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
       SetUnitTimeScale(Target, 1);
       Target.Kill();
       Target.Dispose();
-      AddSpecialEffect(@"Abilities\Spells\Human\Feedback\SpellBreakerAttack.mdl", GetUnitX(Target), GetUnitY(Target))
-        .SetScale(6)
-        .SetLifespan();
+      var closeEffect = AddSpecialEffect(@"Abilities\Spells\Human\Feedback\SpellBreakerAttack.mdl", GetUnitX(Target),
+        GetUnitY(Target));
+      closeEffect.SetTimeScale(6);
+      EffectSystem.Add(closeEffect, (float)0.03125);
       Active = false;
     }
   }

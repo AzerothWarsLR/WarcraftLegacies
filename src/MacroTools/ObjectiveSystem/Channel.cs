@@ -66,7 +66,7 @@ namespace MacroTools.ObjectiveSystem
       _sfxProgress = AddSpecialEffect(ProgressEffect, GetUnitX(caster), GetUnitY(caster));
       _sfxProgress.SetTimeScale(10 / (float)duration);
       _sfxProgress.SetColor(caster.Owner);
-      _sfxProgress.SetScale(ProgressScale);
+      _sfxProgress.SetTimeScale(ProgressScale);
       _sfxProgress.SetHeight(ProgressHeight + Environment.GetPositionZ(position));
       
       _sfx = AddSpecialEffect(Effect, GetUnitX(caster), GetUnitY(caster));
@@ -86,10 +86,10 @@ namespace MacroTools.ObjectiveSystem
     /// <inheritdoc />
     public void Dispose()
     {
-      _sfxProgress
-        .SetPosition(new Point(-100000, -100000)) //Has no death animation so needs to be moved off the map
-        .Destroy();
-      _sfx.Destroy();
+      Point point = new Point(-100000, -100000);
+      _sfxProgress.SetPosition(point.X, point.Y, 0); //Has no death animation so needs to be moved off the map
+      _sfxProgress.Dispose();
+      _sfx.Dispose();
       _channelingTimer?.Destroy();
       _periodictimer.Destroy();
       DestroyTimerDialog(_channelingDialog);
