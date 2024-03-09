@@ -14,7 +14,6 @@ using War3Net.Build;
 using War3Net.Build.Extensions;
 using War3Net.Build.Info;
 using War3Net.IO.Mpq;
-using CoreSystemProvider = CSharpLua.CoreSystem.CoreSystemProvider;
 
 namespace Launcher.Services
 {
@@ -137,9 +136,10 @@ namespace Launcher.Services
         IsCommentsDisabled = true
       };
       
-      var coreSystemFiles = CoreSystemProvider.GetCoreSystemFiles()
+      var coreSystemFiles = CSharpLua.CoreSystem.CoreSystemProvider.GetCoreSystemFiles()
         .Where(x => !x.EndsWith("Common.lua"))
         .Concat(new[] { "CoreSystem/WCSharp.lua" });
+      
       const string blizzardJ = "../../../../../build/blizzard.j";
       const string commonJ = "../../../../../build/common.j";
       var mapScriptBuilder = new MapScriptBuilder();

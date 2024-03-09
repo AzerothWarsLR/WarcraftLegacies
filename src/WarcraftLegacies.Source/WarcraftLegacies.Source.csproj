@@ -11,5 +11,4 @@
         <ProjectReference Include="..\MacroTools\MacroTools.csproj" />
     </ItemGroup>
 
-
 </Project>

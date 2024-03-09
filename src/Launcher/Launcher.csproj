@@ -23,6 +23,7 @@
         <PackageReference Include="War3Net.CSharpLua" Version="2.0.0-preview.2" />
         <PackageReference Include="WCSharp.ConstantGenerator" Version="3.0.0" />
         <PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1"/>
+        <PackageReference Include="WCSharp.CSharpLua.CoreSystem" Version="3.0.0" />
     </ItemGroup>
 
     <ItemGroup>
