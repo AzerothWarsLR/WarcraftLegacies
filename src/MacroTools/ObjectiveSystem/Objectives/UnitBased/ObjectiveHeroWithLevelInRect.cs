@@ -1,5 +1,7 @@
-﻿using MacroTools.Extensions;
+﻿using System.Linq;
+using MacroTools.Extensions;
 using MacroTools.QuestSystem;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
 
@@ -59,6 +61,6 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       EligibleFactions.Contains(whichUnit.Owner) && whichUnit.Alive && IsUnitType(whichUnit, UNIT_TYPE_HERO) &&
       GetHeroLevel(whichUnit) >= _targetLevel;
 
-    private bool IsValidUnitInRect() => CreateGroup().EnumUnitsInRect(_targetRect).EmptyToList().Any(IsUnitValid);
+    private bool IsValidUnitInRect() => GroupUtils.GetUnitsInRect(_targetRect).Any(IsUnitValid);
   }
 }

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
-
+using MacroTools.Utils;
 
 
 namespace TestMap.Source.Setup
@@ -24,8 +24,7 @@ namespace TestMap.Source.Setup
 
     public static void Setup()
     {
-      var playableMapArea = WCSharp.Shared.Data.Rectangle.WorldBounds;
-      foreach (var unit in CreateGroup().EnumUnitsInRect(playableMapArea).EmptyToList())
+      foreach (var unit in GroupUtils.GetAllUnits())
         InitializeControlPoint(unit);
     }
   }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
 
@@ -119,7 +120,7 @@ namespace MacroTools
 
     private void ReadAllUnits()
     {
-      foreach (var unit in CreateGroup().EnumUnitsInRect(Rectangle.WorldBounds.Rect).EmptyToList())
+      foreach (var unit in GroupUtils.GetAllUnits())
       {
         var unitTypeId = GetUnitTypeId(unit);
         if (!_unitsByTypeId.ContainsKey(unitTypeId)) _unitsByTypeId[unitTypeId] = new List<unit>();
@@ -164,7 +165,7 @@ namespace MacroTools
       if (closestDistance > MaximumDistanceToFind)
       {
         var unit = units.FirstOrDefault();
-        Logger.LogWarning($"Could not find a {(unit != null ? unit.Name : null)}({GeneralHelpers.DebugIdInteger2IdString(unit.UnitType)}) within {MaximumDistanceToFind} of Point {location.X}, {location.Y}.");
+        Logger.LogWarning($"Could not find a {unit?.Name}({GeneralHelpers.DebugIdInteger2IdString(unit.UnitType)}) within {MaximumDistanceToFind} of Point {location.X}, {location.Y}.");
       }
         
 

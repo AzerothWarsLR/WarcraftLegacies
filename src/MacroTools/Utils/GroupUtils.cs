@@ -39,10 +39,7 @@ namespace MacroTools.Utils
     /// <summary>
     /// Adds all units positioned in the provided <see cref="Rectangle"/> to the group>.
     /// </summary>
-    public static List<unit> GetUnitsInRect(Rectangle rect)
-    {
-      return GetUnitsInRect(rect.Rect);
-    }
+    public static List<unit> GetUnitsInRect(Rectangle rect) => GetUnitsInRect(rect.Rect);
 
     /// <summary>
     /// Adds all units positioned in the provided <see cref="rect"/> to the group.
@@ -52,6 +49,11 @@ namespace MacroTools.Utils
       GroupEnumUnitsInRect(UniversalGroup, rect, null);
       return EmptyToList(UniversalGroup);
     }
+
+    /// <summary>
+    /// Returns all units on the map.
+    /// </summary>
+    public static List<unit> GetAllUnits() => GetUnitsInRect(Rectangle.WorldBounds);
 
     /// <summary>
     /// Adds all units within range of the specified <see cref="Point"/> to the group.

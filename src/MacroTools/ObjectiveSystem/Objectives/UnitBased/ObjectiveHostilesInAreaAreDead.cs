@@ -2,6 +2,7 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.QuestSystem;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
 
@@ -42,7 +43,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       _areaName = areaName;
       foreach (var rectangle in rectangles)
       {
-        var unitsInAreas = CreateGroup().EnumUnitsInRect(rectangle).EmptyToList()
+        var unitsInAreas = GroupUtils.GetUnitsInRect(rectangle)
           .Where(x => x.Owner == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !x.IsUnitType(UNIT_TYPE_ANCIENT) &&
                       !x.IsUnitType(UNIT_TYPE_SAPPER));
         foreach (var unit in unitsInAreas)

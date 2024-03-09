@@ -1,6 +1,7 @@
 ﻿using MacroTools.DummyCasters;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
+using MacroTools.Utils;
 using WCSharp.Effects;
 using WCSharp.Shared.Data;
 
@@ -71,9 +72,7 @@ namespace MacroTools.Spells
     {
       EffectSystem.Add(AddSpecialEffect(SpecialEffect, GetUnitX(caster), GetUnitY(caster)));
       
-      foreach (var enumUnit in CreateGroup()
-                 .EnumUnitsInRange(new Point(GetUnitX(caster), GetUnitY(caster)), Radius)
-                 .EmptyToList())
+      foreach (var enumUnit in GroupUtils.GetUnitsInRange(new Point(GetUnitX(caster), GetUnitY(caster)), Radius))
       {
         if (!CastFilters.IsTargetEnemyAndAlive(caster, enumUnit)) continue;
         DamageUnit(caster, enumUnit);

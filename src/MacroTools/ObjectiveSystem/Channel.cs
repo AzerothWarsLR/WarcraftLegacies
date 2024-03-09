@@ -28,7 +28,7 @@ namespace MacroTools.ObjectiveSystem
     private readonly timer? _channelingTimer;
     private readonly timerdialog? _channelingDialog;
     private readonly Point _position;
-    private readonly timer _periodictimer;
+    private readonly timer _periodicTimer;
 
     /// <summary>
     /// Fired when the <see cref="Channel"/> ends, successfully or otherwise.
@@ -80,7 +80,8 @@ namespace MacroTools.ObjectiveSystem
         TimerDialogDisplay(_channelingDialog, true);
       }
 
-      _periodictimer = CreateTimer().Start(Period, true, Periodic);
+      _periodicTimer = CreateTimer();
+      _periodicTimer.Start(Period, true, Periodic);
     }
 
     /// <inheritdoc />
@@ -91,7 +92,7 @@ namespace MacroTools.ObjectiveSystem
       _sfxProgress.Dispose();
       _sfx.Dispose();
       _channelingTimer?.Destroy();
-      _periodictimer.Destroy();
+      _periodicTimer.Destroy();
       DestroyTimerDialog(_channelingDialog);
     }
     

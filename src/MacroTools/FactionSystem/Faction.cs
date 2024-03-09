@@ -213,31 +213,13 @@ namespace MacroTools.FactionSystem
     /// <summary>Gets a list of legends that are flagged as essential and alive that the faction currently has.</summary>
     private List<Legend> GetEssentialLegends()
     {
-      var essentialLegends = new List<Legend>();
+      var essentialLegends = LegendaryHeroManager.GetAll()
+        .Where(legend => legend.Essential && legend.OwningPlayer == Player && legend.Unit?.Alive == true)
+        .Cast<Legend>()
+        .ToList();
       
-      foreach (var legend in LegendaryHeroManager.GetAll())
-      {
-        unit tempQualifier = legend.Unit;
-        if (tempQualifier != null)
-        {
-          bool temp = tempQualifier.Alive;
-        }
-
-        if (legend.Essential && legend.OwningPlayer == Common.Player && RETURNED_VALUE == true)
-          essentialLegends.Add(legend);
-      }
-
-      foreach (var capital in CapitalManager.GetAll())
-      {
-        unit tempQualifier = capital.Unit;
-        if (tempQualifier != null)
-        {
-          bool temp = tempQualifier.Alive;
-        }
-
-        if (capital.Essential && capital.OwningPlayer == Player)
-          essentialLegends.Add(capital);
-      }
+      essentialLegends.AddRange(CapitalManager.GetAll()
+        .Where(capital => capital.Essential && capital.OwningPlayer == Player && capital.Unit?.Alive == true));
 
       return essentialLegends;
     }

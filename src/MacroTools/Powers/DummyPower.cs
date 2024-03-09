@@ -1,5 +1,4 @@
 ﻿using MacroTools.FactionSystem;
-using War3Api;
 
 namespace MacroTools.Powers
 {
@@ -11,11 +10,11 @@ namespace MacroTools.Powers
       Description = description;
     }
 
-    public override void OnAdd(Common.player whichPlayer)
+    public override void OnAdd(player whichPlayer)
     {
     }
 
-    public override void OnRemove(Common.player whichPlayer)
+    public override void OnRemove(player whichPlayer)
     {
     }
   }

@@ -2,6 +2,7 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.LegendSystem;
+using MacroTools.Utils;
 
 
 namespace MacroTools.FactionSystem
@@ -66,9 +67,8 @@ namespace MacroTools.FactionSystem
     {
       foreach (var ally in playersToDistributeTo)
       {
-        var allyHeroes = CreateGroup()
-          .EnumUnitsOfPlayer(ally)
-          .EmptyToList()
+        var allyHeroes = GroupUtils
+          .GetUnitsOfPlayer(ally)
           .FindAll(unit => IsUnitType(unit, UNIT_TYPE_HERO));
 
         foreach (var hero in allyHeroes)
@@ -102,9 +102,7 @@ namespace MacroTools.FactionSystem
     /// <returns>Resources to be refunded from units that the process removes.</returns>
     private static UnitsRefund DistributeAndRefundUnits(player playerToDistribute, IReadOnlyList<player> playersToDistributeTo)
     {
-      var playerUnits = CreateGroup()
-        .EnumUnitsOfPlayer(playerToDistribute)
-        .EmptyToList();
+      var playerUnits = GroupUtils.GetUnitsOfPlayer(playerToDistribute);
 
       var refund = new UnitsRefund();
       foreach (var unit in playerUnits)
@@ -133,10 +131,9 @@ namespace MacroTools.FactionSystem
             refund.Gold += loopUnitType.GoldCost * RefundMultiplier;
             refund.Lumber += loopUnitType.LumberCost * RefundMultiplier;
           }
-          unit
-            .DropAllItems()
-            .Kill()
-            .Remove();
+
+          unit.DropAllItems();
+          unit.SafelyRemove();
           continue;
         }
 

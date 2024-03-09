@@ -2,6 +2,7 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
+using MacroTools.Utils;
 using WCSharp.Effects;
 
 
@@ -46,8 +47,7 @@ namespace MacroTools.PassiveAbilities
     {
       var caster = GetTriggerUnit();
 
-      foreach (var unit in CreateGroup().EnumUnitsInRange(caster.GetPosition(), Radius)
-                 .EmptyToList()
+      foreach (var unit in GroupUtils.GetUnitsInRange(caster.GetPosition(), Radius)
                  .Where(x => IsUnitReanimationCandidate(caster, x))
                  .OrderByDescending(x => x.GetLevel())
                  .Take(ReanimationCountLevel * GetUnitAbilityLevel(caster, _abilityTypeId)))

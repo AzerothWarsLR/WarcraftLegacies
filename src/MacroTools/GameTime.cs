@@ -32,7 +32,8 @@ namespace MacroTools
       CreateTimer().Start(0, false, () =>
       {
         CreateTimer().Start(1, true, GameTick);
-        var turnTimer = CreateTimer().Start(TurnDuration, true, EndTurn);
+        var turnTimer = CreateTimer();
+        turnTimer.Start(TurnDuration, true, EndTurn);
         _turnTimerDialog = CreateTimerDialog(turnTimer);
         GetExpiredTimer().Destroy();
       });

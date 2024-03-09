@@ -5,6 +5,7 @@ using MacroTools.DummyCasters;
 using MacroTools.Extensions;
 using MacroTools.Instances;
 using MacroTools.SpellSystem;
+using MacroTools.Utils;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 
@@ -55,9 +56,8 @@ namespace MacroTools.Spells
         ? CrossDimensionalDuration 
         : Math.Clamp(distanceDuration, MinDuration, MaxDuration);
 
-      var targets = CreateGroup()
-        .EnumUnitsInRange(center, Radius)
-        .EmptyToList()
+      var targets = GroupUtils
+        .GetUnitsInRange(center, Radius)
         .Where(unit => CastFilter(caster, unit) && !unit.IsResistant() && unit != caster)
         .Take(AmountToTarget)
         .ToList();

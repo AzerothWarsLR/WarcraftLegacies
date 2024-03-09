@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
+using MacroTools.Utils;
 using WCSharp.Events;
 
 
@@ -21,7 +22,7 @@ namespace MacroTools.PassiveAbilitySystem
     /// </summary>
     public static void InitializePreplacedUnits()
     {
-      var group = CreateGroup().EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds).EmptyToList();
+      var group = GroupUtils.GetAllUnits();
       foreach (var unit in group)
       {
         if (!PassiveAbilitiesByUnitTypeId.TryGetValue(GetUnitTypeId(unit), out var passiveAbilities)) continue;

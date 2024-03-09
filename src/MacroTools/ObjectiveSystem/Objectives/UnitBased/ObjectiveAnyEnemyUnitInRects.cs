@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
 
@@ -61,11 +63,10 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     }
       
 
-    private bool IsValidUnitInRects()
-    {
-      return _targetRects.Select(targetRect => CreateGroup().EnumUnitsInRect(targetRect).EmptyToList().Any(IsUnitValid)).Any(any => any);
-    } 
-    
+    private bool IsValidUnitInRects() => _targetRects
+      .Select(targetRect => GroupUtils.GetUnitsInRect(targetRect).Any(IsUnitValid))
+      .Any(any => any);
+
     /// <inheritdoc />
     internal override void OnAdd(Faction whichFaction)
     {
