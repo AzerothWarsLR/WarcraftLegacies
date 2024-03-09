@@ -73,7 +73,7 @@ namespace WarcraftLegacies.Source.Powers
         treant.AddType(UNIT_TYPE_SUMMONED);
         treant.SetExploded(true);
         EffectSystem.Add(AddSpecialEffect(@"Objects\Spawnmodels\NightElf\EntBirthTarget\EntBirthTarget.mdl", treant.GetPosition().X,
-          treant.GetPosition().Y), (float)0.03125);
+          treant.GetPosition().Y));
       }
     }
   }

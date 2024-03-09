@@ -36,11 +36,12 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
     {
       if (_state != SlipstreamPortalState.Unopened) return;
       _state = SlipstreamPortalState.Opening;
-      _progressBar = AddSpecialEffect(@"war3mapImported\Progressbar10sec.mdx", Target.GetPosition().X, Target.GetPosition().Y)
+      _progressBar = AddSpecialEffect(@"war3mapImported\Progressbar10sec.mdx", Target.GetPosition().X,
+        Target.GetPosition().Y);
       _progressBar.SetTimeScale(10f / delay);
       _progressBar.SetColor(Caster.Owner);
       _progressBar.SetHeight(450);
-      float speed = 9.3f * (1 / delay);
+      var speed = 9.3f * (1 / delay);
       SetUnitTimeScale(Target, speed);
       Target.SetAnimation("birth");
       CreateTimer().Start(delay, false, () =>
@@ -109,7 +110,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
       var closeEffect = AddSpecialEffect(@"Abilities\Spells\Human\Feedback\SpellBreakerAttack.mdl", GetUnitX(Target),
         GetUnitY(Target));
       closeEffect.SetTimeScale(6);
-      EffectSystem.Add(closeEffect, (float)0.03125);
+      EffectSystem.Add(closeEffect);
       Active = false;
     }
   }

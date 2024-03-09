@@ -41,15 +41,10 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      unit tempQualifier = _unitIsDeadObjective.KillingUnit;
-      if (tempQualifier != null)
-      {
-        player temp = tempQualifier.Owner;
-      }
-
-      var killingPlayer = RETURNED_VALUE;
+      var killingPlayer = _unitIsDeadObjective.KillingUnit?.Owner;
       if (killingPlayer == null)
         return;
+      
       if (completingFaction.Player?.GetTeam()?.Contains(killingPlayer) == true)
         CreateUnit(completingFaction.Player, SapphironId, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()),
           GetUnitFacing(GetTriggerUnit()));

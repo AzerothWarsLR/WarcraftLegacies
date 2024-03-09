@@ -66,8 +66,8 @@ namespace WarcraftLegacies.Source.Quests
           preventAccessTrigger.Dispose();
 
       _preventAccessTriggers = null;
-      (_entranceDoor.IsInvulnerable = true)
-        .TakeDamage(_enterTombOfSargerasRegion.CompletingUnit, 10000);
+      _entranceDoor.IsInvulnerable = true;
+      _entranceDoor.TakeDamage(_enterTombOfSargerasRegion.CompletingUnit, 10000);
     }
 
     private void HideUnitsInsideTomb(IEnumerable<Rectangle> rectangles)
@@ -76,9 +76,8 @@ namespace WarcraftLegacies.Source.Quests
       foreach (var unit in GroupUtils.GetUnitsInRect(rect.Rect).Where(x => !BlzIsUnitInvulnerable(x)))
       {
         _rescueUnits.Add(unit);
-        unit
-          .SetInvulnerable(true)
-          .Show(false);
+        unit.IsInvulnerable = true;
+        unit.IsVisible = false;
       }
     }
 

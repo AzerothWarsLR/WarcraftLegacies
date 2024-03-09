@@ -97,7 +97,7 @@ namespace WarcraftLegacies.Source.Spells.ExactJustice
     {
       var explodeEffect = AddSpecialEffect(EffectSettings.ExplodePath, GetUnitX(Caster), GetUnitY(Caster));
       explodeEffect.SetTimeScale(EffectSettings.ExplodeScale);
-      EffectSystem.Add(explodeEffect, (float)0.03125);
+      EffectSystem.Add(explodeEffect);
       
       foreach (var unit in GroupUtils.GetUnitsInRange(Caster.GetPosition(), Radius)
                  .Where(target => CastFilters.IsTargetEnemyAndAlive(Caster, target)))

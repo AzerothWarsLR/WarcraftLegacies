@@ -59,7 +59,8 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     /// <inheritdoc/>
     protected override void OnFail(Faction whichFaction)
     {
-      _scepterOfTheQueen.Item.SetPosition(_highBourneArea.Center);
+      _scepterOfTheQueen.Item.X = _highBourneArea.Center.X;
+      _scepterOfTheQueen.Item.Y = _highBourneArea.Center.Y;
       Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_highBourneAreaUnits);
     }
   }

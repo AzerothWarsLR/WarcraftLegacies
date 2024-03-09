@@ -49,7 +49,7 @@ namespace WarcraftLegacies.Source.Spells
 
       var collisionEffect = AddSpecialEffect(EffectOnHitModel, GetUnitX(unit), GetUnitY(unit));
       collisionEffect.SetTimeScale(EffectOnHitScale);
-      EffectSystem.Add(collisionEffect, (float)0.03125);
+      EffectSystem.Add(collisionEffect);
     }
 
     /// <inheritdoc />
@@ -68,7 +68,7 @@ namespace WarcraftLegacies.Source.Spells
       Effect.SetPosition(point.X, point.Y, 0);
       var disposeEffect = AddSpecialEffect(EffectOnProjectileDespawnModel, MissileX, MissileY);
       disposeEffect.SetTimeScale(EffectOnProjectileDespawnScale);
-      EffectSystem.Add(disposeEffect, (float)0.03125);
+      EffectSystem.Add(disposeEffect);
     }
 
     private static bool IsValidTarget(unit target, unit caster) =>

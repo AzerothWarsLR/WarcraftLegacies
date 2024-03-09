@@ -40,23 +40,19 @@ namespace WarcraftLegacies.Source.Quests
     }
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Ragnaros is summoned near the Blackrock Depths, and can be slain to acquire Sulfuras";
+    protected override string RewardDescription =>
+      "Ragnaros is summoned near the Blackrock Depths, and can be slain to acquire Sulfuras";
 
     /// <inheritdoc/>
-    public override string RewardFlavour => $"{_heroInRectObjective.CompletingUnitName} has seized control of the portal to the Firelands, and can now summon Ragnaros.";
+    public override string RewardFlavour =>
+      $"{_heroInRectObjective.CompletingUnitName} has seized control of the portal to the Firelands, and can now summon Ragnaros.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      unit tempQualifier = _heroInRectObjective.CompletingUnit;
-      if (tempQualifier != null)
-      {
-        player temp = tempQualifier.Owner;
-      }
-
-      _ragnarosSummoningPedestal
-        .SetOwner(RETURNED_VALUE ?? Player(PLAYER_NEUTRAL_AGGRESSIVE))
-        .SetInvulnerable(false);
+      _ragnarosSummoningPedestal.Owner =
+        _heroInRectObjective.CompletingUnit?.Owner ?? Player(PLAYER_NEUTRAL_AGGRESSIVE);
+      _ragnarosSummoningPedestal.IsInvulnerable = false;
     }
 
     private void OnCastSummonSpell()

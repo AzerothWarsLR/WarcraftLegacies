@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
 {
   public sealed class QuestShrineBase : QuestData
   {
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
 
     public QuestShrineBase(Rectangle rescueRect) : base("Hyjal's Rest",
       "Mount Hyjal has been invaded by the corruption already affecting Felwood. Clear them out to awaken the Ancients",

@@ -21,8 +21,9 @@ namespace WarcraftLegacies.Source.Quests.Druids
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R049_QUEST_COMPLETED_THE_TURTLE_DEMIGOD;
 
-      _sleepingTortolla = (CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), HeroId, -11315, 9389, 333).IsInvulnerable = true)
-        .AddExperience(tortolla.StartingXp);
+      _sleepingTortolla = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), HeroId, -11315, 9389, 333);
+      _sleepingTortolla.IsInvulnerable = true;
+      _sleepingTortolla.Experience = tortolla.StartingXp;
       AddSpecialEffectTarget(@"Abilities\Spells\Undead\Sleep\SleepTarget.mdl", _sleepingTortolla,
         "overhead");
     }

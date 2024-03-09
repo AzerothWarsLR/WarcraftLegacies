@@ -36,8 +36,8 @@ namespace WarcraftLegacies.Source.Spells
       var healthGained = targetMaximumHitPoints * HitPointsPerTargetMaximumHitPoints;
       var manaGained = targetMaximumHitPoints * ManaPointsPerTargetMaximumHitPoints;
 
-      EffectSystem.Add(AddSpecialEffect(EffectCaster, GetUnitX(caster), GetUnitY(caster)), (float)0.03125);
-      EffectSystem.Add(AddSpecialEffect(EffectTarget, GetUnitX(target), GetUnitY(target)), (float)0.03125);
+      EffectSystem.Add(AddSpecialEffect(EffectCaster, GetUnitX(caster), GetUnitY(caster)));
+      EffectSystem.Add(AddSpecialEffect(EffectTarget, GetUnitX(target), GetUnitY(target)));
 
       var targetPosition = target.GetPosition();
       target.Kill();

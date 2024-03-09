@@ -67,7 +67,7 @@ namespace WarcraftLegacies.Source.Spells.Reap
         {
           killTarget.TakeDamage(caster, killTarget.Life, damageType: DAMAGE_TYPE_UNIVERSAL,
             attackType: ATTACK_TYPE_CHAOS);
-          EffectSystem.Add(AddSpecialEffect(KillEffect, GetUnitX(killTarget), GetUnitY(killTarget)), (float)0.03125);
+          EffectSystem.Add(AddSpecialEffect(KillEffect, GetUnitX(killTarget), GetUnitY(killTarget)));
         }
 
         var strengthGainPerTarget = UpgradeCondition(caster)

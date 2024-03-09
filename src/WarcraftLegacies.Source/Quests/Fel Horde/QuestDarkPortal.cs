@@ -39,12 +39,18 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     {
       _stormwind = stormwind;
       _illidari = illidari;
-      _innerWaygate1 = innerWaygate1.IsVisible = false;
-      _innerWaygate2 = innerWaygate2.IsVisible = false;
-      _innerWaygate3 = innerWaygate3.IsVisible = false;
-      _outerWaygate1 = outerWaygate1.IsVisible = false;
-      _outerWaygate2 = outerWaygate2.IsVisible = false;
-      _outerWaygate3 = outerWaygate3.IsVisible = false;
+      _innerWaygate1 = innerWaygate1;
+      _innerWaygate1.IsVisible = false;
+      _innerWaygate2 = innerWaygate2;
+      _innerWaygate2.IsVisible = false;
+      _innerWaygate3 = innerWaygate3;
+      _innerWaygate3.IsVisible = false;
+      _outerWaygate1 = outerWaygate1;
+      _outerWaygate1.IsVisible = false;
+      _outerWaygate2 = outerWaygate2;
+      _outerWaygate2.IsVisible = false;
+      _outerWaygate3 = outerWaygate3;
+      _outerWaygate3.IsVisible = false;
       AddObjective(new ObjectiveEitherOf(
         new ObjectiveResearch(Constants.UPGRADE_R02C_THE_DARK_PORTAL_FEL_HORDE, Constants.UNIT_O008_HELLFIRE_CITADEL_FEL_HORDE, true),
         new ObjectiveTime(600)));

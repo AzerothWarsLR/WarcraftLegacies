@@ -64,18 +64,9 @@ namespace WarcraftLegacies.Source.Spells
         ancestor.Name = "Ancestor";
         ancestor.AddType(UNIT_TYPE_SUMMONED);
 
-        CreateTrigger()
-          .RegisterUnitEvent(ancestor, EVENT_UNIT_DEATH)
-          .AddAction(() =>
-          {
-            EffectSystem.Add(AddSpecialEffect(DeathEffect, GetUnitX(ancestor), GetUnitY(ancestor)), 1);
-            
-            ancestor.Dispose();
-            
-            GetTriggeringTrigger().Dispose();
-          });
-        
-        EffectSystem.Add(AddSpecialEffect(SummonEffect, targetPoint.X, targetPoint.Y), (float)0.03125);
+        RegisterAncestorDeathTrigger(ancestor);
+
+        EffectSystem.Add(AddSpecialEffect(SummonEffect, targetPoint.X, targetPoint.Y));
       }
       ancestralLegionData.RememberedUnits -= taurenToSummon;
       RegenerateTooltip(caster);
@@ -101,6 +92,18 @@ namespace WarcraftLegacies.Source.Spells
       RegisterRememberUnitsOnDeathTrigger(learner, newAncestralLegionData);
     }
 
+    private void RegisterAncestorDeathTrigger(unit ancestor)
+    {
+      var ancestorDeathTrigger = CreateTrigger();
+      ancestorDeathTrigger.RegisterUnitEvent(ancestor, EVENT_UNIT_DEATH);
+      ancestorDeathTrigger.AddAction(() =>
+      {
+        EffectSystem.Add(AddSpecialEffect(DeathEffect, GetUnitX(ancestor), GetUnitY(ancestor)), 1);
+        ancestor.Dispose();
+        GetTriggeringTrigger().Dispose();
+      });
+    }
+    
     private void RegisterRememberUnitsOnDeathTrigger(unit learner, AncestralLegionData ancestralLegionData)
     {
       PlayerUnitEvents.Register(UnitTypeEvent.Dies, () =>

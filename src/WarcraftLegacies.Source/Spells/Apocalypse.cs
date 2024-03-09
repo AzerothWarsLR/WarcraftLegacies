@@ -89,7 +89,7 @@ namespace WarcraftLegacies.Source.Spells
         var projectileOrigin = GetProjectileOrigin(i, middle, casterFacing, casterX, casterY, width, projectileCount);
         var summonEffect = AddSpecialEffect(EffectOnProjectileSpawn, projectileOrigin.X, projectileOrigin.Y);
         summonEffect.SetTimeScale(EffectOnProjectileSpawnScale);
-        EffectSystem.Add(summonEffect, (float)0.03125);
+        EffectSystem.Add(summonEffect);
 
         var projectileDestination = GetProjectileDestination(projectileOrigin, casterFacing);
         
