@@ -10,187 +10,167 @@ namespace WarcraftLegacies.Source
   /// </summary>
   public static class AmbianceLibrary
   {
-    public static sound DalaranRuinsNight { get; }=
-      CreateSound("Sound/Ambient/DalaranRuins/DalaranRuinsNight.flac", true, true, true, 1, 1, "DefaultEAXON")
-        .SetParamsFromLabel("DalaranRuinsNight")
-        .SetDuration(114759)
-        .SetChannel(10)
-        .SetVolume(15)
-        .SetDistances(0, 10000.0f)
-        .SetDistanceCutoff(100);
+    static AmbianceLibrary()
+    {
+      BlackCitadelOutlandNight = CreateAmbiance("Sound/Ambient/BlackCitadel/BlackCitadel_OutlandNight.flac");
+      BlackCitadelOutlandNight.SetParamsFromLabel("BlackCitadelNight");
+      BlackCitadelOutlandNight.SetDuration(116318);
+      BlackCitadelOutlandNight.SetVolume(18);
+      BlackCitadelOutlandNight.SetDistanceCutoff(100);
 
-    public static sound BlackCitadelOutlandNight { get; }=
-      CreateSound("Sound/Ambient/BlackCitadel/BlackCitadel_OutlandNight.flac", true, true, true, 1, 1, "DefaultEAXON")
-        .SetParamsFromLabel("BlackCitadelNight")
-        .SetDuration(116318)
-        .SetChannel(10)
-        .SetVolume(18)
-        .SetDistances(0, 10000.0f)
-        .SetDistanceCutoff(100);
+      BlackCitadelOutlandDay = CreateAmbiance("Sound/Ambient/BlackCitadel/BlackCitadel_OutlandDay.flac");
+      BlackCitadelOutlandDay.SetParamsFromLabel("BlackCitadelDay");
+      BlackCitadelOutlandDay.SetDuration(119186);
+      BlackCitadelOutlandDay.SetVolume(14);
+      BlackCitadelOutlandDay.SetDistanceCutoff(100);
 
-    public static sound BlackCitadelOutlandDay { get; }=
-      CreateSound("Sound/Ambient/BlackCitadel/BlackCitadel_OutlandDay.flac",
-        true, true, true, 1, 1, "DefaultEAXON")
-      .SetParamsFromLabel("BlackCitadelDay")
-      .SetDuration(119186)
-      .SetChannel(10)
-      .SetVolume(14)
-      .SetDistances(0, 10000f)
-      .SetDistanceCutoff(100);
+      IceCrownNight = CreateAmbiance("Sound/Ambient/IceCrown/IceCrownNight.flac");
+      IceCrownNight.SetParamsFromLabel("IceCrownNight");
+      IceCrownNight.SetDuration(123220);
+      IceCrownNight.SetVolume(14);
+      IceCrownNight.SetDistanceCutoff(100);
 
-    public static sound IceCrownNight { get; }=
-      CreateSound("Sound/Ambient/IceCrown/IceCrownNight.flac", true, true, true, 1, 1, "DefaultEAXON")
-        .SetParamsFromLabel("IceCrownNight")
-        .SetDuration(123220)
-        .SetChannel(10)
-        .SetVolume(14)
-        .SetDistances(0, 10000f)
-        .SetDistanceCutoff(100);
+      LordaeronFallDay = CreateAmbiance("Sound/Ambient/LordaeronFall/LordaeronFallDay.flac");
+      LordaeronFallDay.SetParamsFromLabel("LordaeronFallDay");
+      LordaeronFallDay.SetDuration(124766);
+      LordaeronFallDay.SetVolume(10);
+      LordaeronFallDay.SetDistanceCutoff(100);
 
-    public static sound AshenvaleNight { get; }=
-      CreateSound("Sound/Ambient/Ashenvale/AshenvaleNight.flac", true, true, true, 1, 1, "DefaultEAXON")
-        .SetParamsFromLabel("AshenvaleNight")
-        .SetDuration(119013)
-        .SetChannel(10)
-        .SetVolume(10)
-        .SetDistances(0, 10000)
-        .SetDistanceCutoff(100);
+      AshenvaleDay = CreateAmbiance("Sound/Ambient/Ashenvale/AshenvaleDay.flac");
+      AshenvaleDay.SetParamsFromLabel("AshenvaleDay");
+      AshenvaleDay.SetDuration(47700);
+      AshenvaleDay.SetVolume(10);
+      AshenvaleDay.SetDistanceCutoff(100);
 
-    public static sound LordaeronFallDay { get; }=
-      CreateSound("Sound/Ambient/LordaeronFall/LordaeronFallDay.flac", true, true, true, 1, 1, "DefaultEAXON")
-        .SetParamsFromLabel("LordaeronFallDay")
-        .SetDuration(124766)
-        .SetChannel(10)
-        .SetVolume(10)
-        .SetDistances(0, 10000)
-        .SetDistanceCutoff(100);
+      BarrensDay = CreateAmbiance("Sound/Ambient/Barrens/BarrensDay.flac");
+      BarrensDay.SetParamsFromLabel("BarrensDay");
+      BarrensDay.SetDuration(113856);
+      BarrensDay.SetVolume(20);
+      BarrensDay.SetDistanceCutoff(100);
 
-    public static sound AshenvaleDay { get; }=
-      CreateSound("Sound/Ambient/Ashenvale/AshenvaleDay.flac", true, true, true, 1, 1, "DefaultEAXON")
-        .SetParamsFromLabel("AshenvaleDay")
-        .SetDuration(47700)
-        .SetChannel(10)
-        .SetVolume(10)
-        .SetDistances(0, 10000)
-        .SetDistanceCutoff(100);
+      DalaranRuinsDay = CreateAmbiance("Sound/Ambient/DalaranRuins/DalaranRuinsDay.flac");
+      DalaranRuinsDay.SetParamsFromLabel("DalaranRuinsDay");
+      DalaranRuinsDay.SetDuration(119795);
+      DalaranRuinsDay.SetVolume(20);
+      DalaranRuinsDay.SetDistanceCutoff(100);
 
-    public static sound BarrensDay { get; }=
-      CreateSound("Sound/Ambient/Barrens/BarrensDay.flac", true, true, true, 1, 1, "DefaultEAXON")
-        .SetParamsFromLabel("BarrensDay")
-        .SetDuration(113856)
-        .SetChannel(10)
-        .SetVolume(20)
-        .SetDistances(0, 10000)
-        .SetDistanceCutoff(100);
+      WetlandsNight = CreateAmbiance("Sound/Ambient/SunkenRuins/WetlandsNight.flac");
+      WetlandsNight.SetParamsFromLabel("SunkenRuinsNight");
+      WetlandsNight.SetDuration(172730);
+      WetlandsNight.SetVolume(5);
+      WetlandsNight.SetDistanceCutoff(100);
 
-    public static sound DalaranRuinsDay { get; }=
-      CreateSound("Sound/Ambient/DalaranRuins/DalaranRuinsDay.flac", true, true, true, 1, 1, "DefaultEAXON")
-        .SetParamsFromLabel("DalaranRuinsDay")
-        .SetDuration(119795)
-        .SetChannel(10)
-        .SetVolume(20)
-        .SetDistances(0, 10000)
-        .SetDistanceCutoff(100);
+      Wetlandsday = CreateAmbiance("Sound/Ambient/SunkenRuins/Wetlandsday.flac");
+      Wetlandsday.SetParamsFromLabel("SunkenRuinsDay");
+      Wetlandsday.SetDuration(175048);
+      Wetlandsday.SetVolume(5);
+      Wetlandsday.SetDistanceCutoff(100);
 
-    public static sound WetlandsNight { get; }=
-      CreateSound("Sound/Ambient/SunkenRuins/WetlandsNight.flac", true, true, true, 1, 1, "DefaultEAXON")
-        .SetParamsFromLabel("SunkenRuinsNight")
-        .SetDuration(172730)
-        .SetChannel(10)
-        .SetVolume(5)
-        .SetDistances(0, 10000)
-        .SetDistanceCutoff(100);
+      IceCrownDay = CreateAmbiance("Sound/Ambient/IceCrown/IceCrownDay.flac");
+      IceCrownDay.SetParamsFromLabel("IceCrownDay");
+      IceCrownDay.SetDuration(120528);
+      IceCrownDay.SetVolume(14);
+      IceCrownDay.SetDistanceCutoff(100);
 
-    public static sound Wetlandsday { get; }=
-      CreateSound("Sound/Ambient/SunkenRuins/Wetlandsday.flac", true, true, true, 1, 1, "DefaultEAXON")
-        .SetParamsFromLabel("SunkenRuinsDay")
-        .SetDuration(175048)
-        .SetChannel(10)
-        .SetVolume(5)
-        .SetDistances(0, 10000)
-        .SetDistanceCutoff(100);
+      LordaeronSummerDay = CreateAmbiance("Sound/Ambient/LordaeronSummer/LordaeronSummerDay.flac");
+      LordaeronSummerDay.SetParamsFromLabel("LordaeronSummerDay");
+      LordaeronSummerDay.SetDuration(117210);
+      LordaeronSummerDay.SetVolume(10);
+      LordaeronSummerDay.SetDistanceCutoff(100);
 
-    public static sound IceCrownDay { get; }=
-      CreateSound("Sound/Ambient/IceCrown/IceCrownDay.flac", true, true, true, 1, 1, "DefaultEAXON")
-        .SetParamsFromLabel("IceCrownDay")
-        .SetDuration(120528)
-        .SetChannel(10)
-        .SetVolume(14)
-        .SetDistances(0, 10000)
-        .SetDistanceCutoff(100);
+      CityScapeDay = CreateAmbiance("Sound/Ambient/CityScape/CityScapeDay.flac");
+      CityScapeDay.SetParamsFromLabel("DalaranDay");
+      CityScapeDay.SetDuration(253775);
+      CityScapeDay.SetVolume(16);
+      CityScapeDay.SetDistanceCutoff(100);
 
-    public static sound LordaeronSummerDay { get; }=
-      CreateSound("Sound/Ambient/LordaeronSummer/LordaeronSummerDay.flac", true, true, true, 1, 1, "DefaultEAXON")
-        .SetParamsFromLabel("LordaeronSummerDay")
-        .SetDuration(117210)
-        .SetChannel(10)
-        .SetVolume(10)
-        .SetDistances(0, 10000)
-        .SetDistanceCutoff(100);
+      LordaeronSummerNight = CreateAmbiance("Sound/Ambient/LordaeronSummer/LordaeronSummerNight.flac");
+      LordaeronSummerNight.SetParamsFromLabel("LordaeronSummerNight");
+      LordaeronSummerNight.SetDuration(122859);
+      LordaeronSummerNight.SetVolume(10);
+      LordaeronSummerNight.SetDistanceCutoff(100);
 
-    public static sound CityScapeDay { get; }=
-      CreateSound("Sound/Ambient/CityScape/CityScapeDay.flac", true, true, true, 1, 1, "DefaultEAXON")
-        .SetParamsFromLabel("DalaranDay")
-        .SetDuration(253775)
-        .SetChannel(10)
-        .SetVolume(16)
-        .SetDistances(0, 10000)
-        .SetDistanceCutoff(100);
+      NorthrendDay = CreateAmbiance("Sound/Ambient/Northrend/NorthrendDay.flac");
+      NorthrendDay.SetParamsFromLabel("NorthrendDay");
+      NorthrendDay.SetDuration(114102);
+      NorthrendDay.SetVolume(15);
+      NorthrendDay.SetDistanceCutoff(100);
 
-    public static sound LordaeronSummerNight { get; }=
-      CreateSound("Sound/Ambient/LordaeronSummer/LordaeronSummerNight.flac",
-        true, true, true, 1, 1, "DefaultEAXON")
-      .SetParamsFromLabel("LordaeronSummerNight")
-      .SetDuration(122859)
-      .SetChannel(10)
-      .SetVolume(10)
-      .SetDistances(0, 10000)
-      .SetDistanceCutoff(100);
+      NorthrendNight = CreateAmbiance("Sound/Ambient/Northrend/NorthrendNight.flac");
+      NorthrendNight.SetParamsFromLabel("DungeonNight");
+      NorthrendNight.SetDuration(106607);
+      NorthrendNight.SetVolume(25);
+      NorthrendNight.SetDistanceCutoff(400);
 
-    public static sound NorthrendDay { get; }=
-      CreateSound("Sound/Ambient/Northrend/NorthrendDay.flac", true, true, true, 1, 1, "DefaultEAXON")
-        .SetParamsFromLabel("NorthrendDay")
-        .SetDuration(114102)
-        .SetChannel(10)
-        .SetVolume(15)
-        .SetDistances(0, 10000)
-        .SetDistanceCutoff(100);
+      LordaeronWinterNight = CreateAmbiance("Sound/Ambient/LordaeronWinter/LordaeronWinterNight.flac");
+      LordaeronWinterNight.SetParamsFromLabel("LordaeronWinterNight");
+      LordaeronWinterNight.SetDuration(118060);
+      LordaeronWinterNight.SetVolume(10);
+      LordaeronWinterNight.SetDistanceCutoff(100);
 
-    public static sound NorthrendNight { get; }=
-      CreateSound("Sound/Ambient/Northrend/NorthrendNight.flac", true, true, true, 1, 1, "DefaultEAXON")
-      .SetParamsFromLabel("DungeonNight")
-      .SetDuration(106607)
-      .SetChannel(10)
-      .SetVolume(25)
-      .SetDistances(0, 10000)
-      .SetDistanceCutoff(400);
+      LordaeronFallNight = CreateAmbiance("Sound/Ambient/LordaeronFall/LordaeronFallNight.flac");
+      LordaeronFallNight.SetParamsFromLabel("VillageFallNight");
+      LordaeronFallNight.SetDuration(124342);
+      LordaeronFallNight.SetVolume(10);
+      LordaeronFallNight.SetDistanceCutoff(100);
+
+      LordaeronWinterDay = CreateAmbiance("Sound/Ambient/LordaeronWinter/LordaeronWinterDay.flac");
+      LordaeronWinterDay.SetParamsFromLabel("LordaeronWinterDay");
+      LordaeronWinterDay.SetDuration(117986);
+      LordaeronWinterDay.SetVolume(10);
+      LordaeronWinterDay.SetDistanceCutoff(100);
+
+      AshenvaleNight = CreateAmbiance("Sound/Ambient/Ashenvale/AshenvaleNight.flac");
+      AshenvaleNight.SetParamsFromLabel("AshenvaleNight");
+      AshenvaleNight.SetDuration(119013);
+      AshenvaleNight.SetVolume(10);
+      AshenvaleNight.SetDistanceCutoff(100);
+    }
+
+    private static sound CreateAmbiance(string fileName)
+    {
+      var ambiance = CreateSound(fileName, true, true, true, 1, 1, "DefaultEAXON");
+      ambiance.SetDistances(0, 10000);
+      ambiance.SetChannel(10);
+      return ambiance;
+    }
+
+    public static sound BlackCitadelOutlandNight { get; }
+
+    public static sound BlackCitadelOutlandDay { get; }
+
+    public static sound IceCrownNight { get; }
+
+    public static sound AshenvaleNight { get; }
+
+    public static sound LordaeronFallDay { get; }
+
+    public static sound AshenvaleDay { get; }
+
+    public static sound BarrensDay { get; }
+
+    public static sound DalaranRuinsDay { get; }
+
+    public static sound WetlandsNight { get; }
+
+    public static sound Wetlandsday { get; }
+
+    public static sound IceCrownDay { get; }
+
+    public static sound LordaeronSummerDay { get; }
+
+    public static sound CityScapeDay { get; }
+
+    public static sound LordaeronSummerNight { get; }
+
+    public static sound NorthrendDay { get; }
+
+    public static sound NorthrendNight { get; }
     
-    public static sound LordaeronWinterNight { get; }=
-      CreateSound("Sound/Ambient/LordaeronWinter/LordaeronWinterNight.flac",
-        true, true, true, 1, 1, "DefaultEAXON")
-      .SetParamsFromLabel("LordaeronWinterNight")
-      .SetDuration(118060)
-      .SetChannel(10)
-      .SetVolume(10)
-      .SetDistances(0, 10000)
-      .SetDistanceCutoff(100);
+    public static sound LordaeronWinterNight { get; }
 
-    public static sound LordaeronFallNight { get; }=
-      CreateSound("Sound/Ambient/LordaeronFall/LordaeronFallNight.flac", true, true, true, 1, 1, "DefaultEAXON")
-        .SetParamsFromLabel("VillageFallNight")
-        .SetDuration(124342)
-        .SetChannel(10)
-        .SetVolume(10)
-        .SetDistances(0, 10000.0f)
-        .SetDistanceCutoff(100);
+    public static sound LordaeronFallNight { get; }
 
-    public static sound LordaeronWinterDay { get; }=
-      CreateSound("Sound/Ambient/LordaeronWinter/LordaeronWinterDay.flac", true, true, true, 1, 1, "DefaultEAXON")
-        .SetParamsFromLabel("LordaeronWinterDay")
-        .SetDuration(117986)
-        .SetChannel(10)
-        .SetVolume(10)
-        .SetDistances(0, 10000.0f)
-        .SetDistanceCutoff(100);
+    public static sound LordaeronWinterDay { get; }
   }
 }
