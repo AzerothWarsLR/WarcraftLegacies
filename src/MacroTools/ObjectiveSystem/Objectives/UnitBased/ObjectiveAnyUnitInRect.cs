@@ -28,7 +28,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       PingPath = "MinimapQuestTurnIn";
 
       var enterRegionTrigger = CreateTrigger();
-      enterRegionTrigger.RegisterEnterRegion(targetRect);
+      enterRegionTrigger.RegisterEnterRegion(targetRect.Region);
       enterRegionTrigger.AddAction(() =>
         {
           var triggerUnit = GetTriggerUnit();
@@ -39,7 +39,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
         });
       
       var leaveRegionTrigger = CreateTrigger();
-      leaveRegionTrigger.RegisterLeaveRegion(targetRect);
+      leaveRegionTrigger.RegisterLeaveRegion(targetRect.Region);
       leaveRegionTrigger.AddAction(() =>
         {
           if (!IsValidUnitInRect()) 

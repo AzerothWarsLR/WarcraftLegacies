@@ -27,9 +27,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       Description = $"Enemy unit has entered {rectName}";
       DisplaysPosition = false;
       PingPath = "MinimapQuestTurnIn";
-      var trigger = CreateTrigger();
-      trigger.RegisterEnterRegions(_targetRects);
-      trigger.AddAction(() =>
+      var enterRegionsTrigger = CreateTrigger();
+      enterRegionsTrigger.RegisterEnterRegions(_targetRects);
+      enterRegionsTrigger.AddAction(() =>
         {
           var triggerUnit = GetTriggerUnit();
           if (!IsUnitValid(triggerUnit)) 
@@ -37,13 +37,14 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
           CompletingUnit = triggerUnit;
           Progress = QuestProgress.Complete;
         });
-      CreateTrigger()
-        .RegisterLeaveRegions(_targetRects)
-        .AddAction(() =>
-        {
-          if (!IsValidUnitInRects()) 
-            Progress = QuestProgress.Incomplete;
-        });
+
+      var leaveRegionsTrigger = CreateTrigger();
+      leaveRegionsTrigger.RegisterLeaveRegions(_targetRects);
+      leaveRegionsTrigger.AddAction(() =>
+      {
+        if (!IsValidUnitInRects())
+          Progress = QuestProgress.Incomplete;
+      });
     }
 
     /// <inheritdoc />
