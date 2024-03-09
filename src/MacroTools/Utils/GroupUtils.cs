@@ -67,7 +67,7 @@ namespace MacroTools.Utils
     private static List<unit> EmptyToList(group whichGroup)
     {
       var list = whichGroup.ToList();
-      list.Clear();
+      whichGroup.Clear();
       return list;
     }
   }
