@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Objectives
     /// The power source that was used to complete the <see cref="Objective"/>.
     /// </summary>
     public item? UsedPowerSource { get; private set; }
-    
+
     /// <summary>
     /// Initializes a new instance of the <see cref="ObjectivePowerSource"/> class.
     /// </summary>
@@ -26,16 +26,20 @@ namespace WarcraftLegacies.Source.Objectives
       var trigger = CreateTrigger();
       trigger.RegisterUnitEvent(dimensionalGenerator, EVENT_UNIT_PICKUP_ITEM);
       trigger.AddAction(() =>
+      {
+        if (validItemTypeIds.Contains(GetItemTypeId(GetManipulatedItem())))
         {
-          if (validItemTypeIds.Contains(GetItemTypeId(GetManipulatedItem())))
-          {
-            UsedPowerSource = GetManipulatedItem();
-            Progress = QuestProgress.Complete;
-          }
-            
-          else
-            GetManipulatedItem().SetPosition(GetTriggerUnit().GetPosition());
-        });
+          UsedPowerSource = GetManipulatedItem();
+          Progress = QuestProgress.Complete;
+        }
+
+        else
+        {
+          var manipulatedItem = @event.ManipulatedItem;
+          manipulatedItem.X = @event.Unit.X;
+          manipulatedItem.Y = @event.Unit.Y;
+        }
+      });
     }
   }
 }

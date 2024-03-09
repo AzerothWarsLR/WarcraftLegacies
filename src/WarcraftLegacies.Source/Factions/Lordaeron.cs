@@ -433,9 +433,9 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
     
     private void RegisterCrownOfLordaeronDrop()
     {
-      CreateTrigger()
-        .RegisterUnitEvent(_allLegendSetup.Lordaeron.CapitalPalace.Unit, EVENT_UNIT_CHANGE_OWNER)
-        .AddAction(() =>
+      var trigger = CreateTrigger();
+      trigger.RegisterUnitEvent(_allLegendSetup.Lordaeron.CapitalPalace.Unit, EVENT_UNIT_CHANGE_OWNER);
+      trigger.AddAction(() =>
         {
           var lordaeronPlayer = Player;
           if (lordaeronPlayer?.GetTeam()?.Contains(GetOwningPlayer(GetTriggerUnit())) == true){

@@ -2,8 +2,6 @@ using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-using WCSharp.Shared.Data;
-
 
 namespace WarcraftLegacies.Source.FactionMechanics.Scourge
 {
@@ -25,9 +23,9 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
       _scourge = scourge;
       _lichKing = lichKing;
 
-      _deathTrigger = CreateTrigger()
-        .RegisterUnitEvent(lichKing.Unit, EVENT_UNIT_DEATH)
-        .AddAction(() =>
+      _deathTrigger = CreateTrigger();
+      _deathTrigger.RegisterUnitEvent(lichKing.Unit, EVENT_UNIT_DEATH);
+      _deathTrigger.AddAction(() =>
         {
           MaybeDropHelmOfDomination();
           UnregisterEvents();
@@ -48,12 +46,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
 
     private static void UnregisterEvents()
     {
-      trigger tempQualifier = _deathTrigger;
-      if (tempQualifier != null)
-      {
-        tempQualifier.Dispose();
-      }
-
+      _deathTrigger?.Dispose();
       _scourge.ScoreStatusChanged -= OnScourgeScoreStatusChanged;
     }
 
@@ -64,8 +57,8 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
 
       var lichKingPosition = _lichKing.Unit.GetPosition();
       _lichKing.Unit.DropAllItems();
-      _helmOfDomination?.Item.SetPosition(new Point(lichKingPosition.X - 55,
-        lichKingPosition.Y + 30));
+      _helmOfDomination.Item.X = lichKingPosition.X - 55;
+      _helmOfDomination.Item.Y = lichKingPosition.Y + 30;
     }
   }
 }

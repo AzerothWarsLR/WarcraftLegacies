@@ -23,7 +23,9 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
       EffectScale = 1.5f;
       Arc = 0.3f;
       Speed = 700;
-      _eyeOfSargeras = SetItemPosition(eyeOfSargeras, 20229f, 24244);
+      _eyeOfSargeras = eyeOfSargeras;
+      _eyeOfSargeras.X = 20229f;
+      _eyeOfSargeras.Y = 24244;
       CollisionRadius = 100;
       Active = true;
       CasterLaunchZ = 50;
@@ -35,24 +37,23 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
     {
       if (!UnitAlive(Target)) 
         return;
-      
-      Target
-        .AddAbility(Constants.ABILITY_A01Y_INVENTORY_DUMMY_DROP_ARTIFACT)
-        .AddItemSafe(_eyeOfSargeras);
+
+      Target.AddAbility(Constants.ABILITY_A01Y_INVENTORY_DUMMY_DROP_ARTIFACT);
+      Target.AddItemSafe(_eyeOfSargeras);
       _impacted = true;
 
       var impactEffect = AddSpecialEffect(ImpactEffectPath, GetUnitX(Target), GetUnitY(Target));
       impactEffect.SetTimeScale(2);
       EffectSystem.Add(impactEffect, 1);
-      
+
       var eyeEffect = AddSpecialEffectTarget(@"Doodads\Cinematic\EyeOfSargeras\EyeOfSargeras.mdl", Target, "overhead");
-      CreateTrigger()
-        .RegisterUnitEvent(Target, EVENT_UNIT_DEATH)
-        .AddAction(() =>
-        {
-          eyeEffect.Dispose();
-          DestroyTrigger(GetTriggeringTrigger());
-        });
+      var targetDeathTrigger = CreateTrigger();
+      targetDeathTrigger.RegisterUnitEvent(Target, EVENT_UNIT_DEATH);
+      targetDeathTrigger.AddAction(() =>
+      {
+        eyeEffect.Dispose();
+        DestroyTrigger(GetTriggeringTrigger());
+      });
     }
 
     /// <inheritdoc />
