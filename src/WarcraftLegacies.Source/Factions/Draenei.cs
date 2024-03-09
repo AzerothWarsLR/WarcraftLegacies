@@ -1,6 +1,5 @@
 ﻿using System.Linq;
 using MacroTools;
-using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Powers;
 using MacroTools.Utils;

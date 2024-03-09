@@ -1,6 +1,5 @@
 ﻿using System;
 using MacroTools;
-using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.SpellSystem;
 using WCSharp.Effects;

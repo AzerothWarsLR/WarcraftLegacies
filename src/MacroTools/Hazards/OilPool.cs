@@ -1,5 +1,4 @@
 ﻿using System;
-using MacroTools.Extensions;
 using MacroTools.Powers;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;

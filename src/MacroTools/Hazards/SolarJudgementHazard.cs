@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.Libraries;
+﻿using MacroTools.Libraries;
 using MacroTools.SpellSystem;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;

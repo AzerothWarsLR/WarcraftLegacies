@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.QuestSystem;
+﻿using MacroTools.QuestSystem;
 using WCSharp.Events;
 
 

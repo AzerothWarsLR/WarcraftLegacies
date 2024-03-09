@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools;
 using MacroTools.ArtifactSystem;
-using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
 

@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.Hazards;
+﻿using MacroTools.Hazards;
 using WCSharp.Buffs;
 
 

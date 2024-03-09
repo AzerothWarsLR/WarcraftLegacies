@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using WCSharp.Buffs;
+﻿using WCSharp.Buffs;
 
 
 namespace WarcraftLegacies.Source.Spells.ExactJustice

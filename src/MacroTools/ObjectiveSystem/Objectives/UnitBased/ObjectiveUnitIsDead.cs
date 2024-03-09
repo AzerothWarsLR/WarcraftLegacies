@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.QuestSystem;
+﻿using MacroTools.QuestSystem;
 
 
 namespace MacroTools.ObjectiveSystem.Objectives.UnitBased

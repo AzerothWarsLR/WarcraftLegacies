@@ -1,5 +1,4 @@
 using MacroTools.CommandSystem;
-using MacroTools.Extensions;
 using MacroTools.Utils;
 
 

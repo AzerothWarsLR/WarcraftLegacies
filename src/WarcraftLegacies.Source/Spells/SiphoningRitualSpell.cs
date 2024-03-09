@@ -1,7 +1,6 @@
 ﻿using System.Linq;
 using MacroTools.Channels;
 using MacroTools.ChannelSystem;
-using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;

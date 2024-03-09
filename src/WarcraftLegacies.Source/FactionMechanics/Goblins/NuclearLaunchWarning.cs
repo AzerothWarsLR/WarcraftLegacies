@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.PassiveAbilitySystem;
+﻿using MacroTools.PassiveAbilitySystem;
 using MacroTools.Sound;
 using WCSharp.Shared.Data;
 

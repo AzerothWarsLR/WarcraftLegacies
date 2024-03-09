@@ -1,6 +1,5 @@
 ﻿using MacroTools;
 using MacroTools.ControlPointSystem;
-using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;

@@ -1,7 +1,6 @@
 ﻿using System;
 using MacroTools;
 using MacroTools.ChannelSystem;
-using MacroTools.Extensions;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 

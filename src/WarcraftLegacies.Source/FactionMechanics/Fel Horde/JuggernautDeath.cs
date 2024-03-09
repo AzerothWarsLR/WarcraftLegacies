@@ -1,5 +1,4 @@
 ﻿using MacroTools;
-using MacroTools.Extensions;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 

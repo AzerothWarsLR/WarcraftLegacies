@@ -1,6 +1,5 @@
 ﻿using System.Linq;
 using MacroTools.Buffs;
-using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using MacroTools.Utils;
 using WCSharp.Buffs;

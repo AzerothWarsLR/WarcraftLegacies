@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
 using WCSharp.Effects;
 

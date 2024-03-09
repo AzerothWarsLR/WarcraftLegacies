@@ -1,4 +1,3 @@
-using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
 
