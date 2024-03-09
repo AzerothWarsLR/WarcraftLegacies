@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using MacroTools.Extensions;
 using WCSharp.Shared.Data;
+using WCSharp.Shared.Extensions;
 
 namespace MacroTools.Utils
 {
@@ -15,7 +15,7 @@ namespace MacroTools.Utils
     {
       SyncSelections();
       GroupEnumUnitsSelected(UniversalGroup, whichPlayer, null);
-      return UniversalGroup.EmptyToList();
+      return EmptyToList(UniversalGroup);
     }
 
     /// <summary>
@@ -24,7 +24,7 @@ namespace MacroTools.Utils
     public static List<unit> GetUnitsOfType(int unitType)
     {
       GroupEnumUnitsOfType(UniversalGroup, GetObjectName(unitType), null);
-      return UniversalGroup.EmptyToList();
+      return EmptyToList(UniversalGroup);
     }
 
     /// <summary>
@@ -33,7 +33,7 @@ namespace MacroTools.Utils
     public static List<unit> GetUnitsOfPlayer(player player)
     {
       GroupEnumUnitsOfPlayer(UniversalGroup, player, null);
-      return UniversalGroup.EmptyToList();
+      return EmptyToList(UniversalGroup);
     }
 
     /// <summary>
@@ -50,7 +50,7 @@ namespace MacroTools.Utils
     public static List<unit> GetUnitsInRect(rect rect)
     {
       GroupEnumUnitsInRect(UniversalGroup, rect, null);
-      return UniversalGroup.EmptyToList();
+      return EmptyToList(UniversalGroup);
     }
 
     /// <summary>
@@ -59,7 +59,14 @@ namespace MacroTools.Utils
     public static List<unit> GetUnitsInRange(Point point, float radius)
     {
       GroupEnumUnitsInRange(UniversalGroup, point.X, point.Y, radius, null);
-      return UniversalGroup.EmptyToList();
+      return EmptyToList(UniversalGroup);
+    }
+    
+    private static List<unit> EmptyToList(group whichGroup)
+    {
+      var list = whichGroup.ToList();
+      list.Clear();
+      return list;
     }
   }
 }

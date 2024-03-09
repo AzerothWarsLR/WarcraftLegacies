@@ -18,7 +18,7 @@ namespace MacroTools.LegendSystem
     private readonly playercolor? _playerColor;
     private readonly int _dummyDieswithout = FourCC("LEgn");
     private readonly int _dummyPermadies = FourCC("LEgo");
-    private group? _diesWithout;
+    private List<unit> _diesWithout = new();
     private trigger? _castTrig;
     private trigger? _becomesRevivableTrig;
     private trigger? _ownerTrig;
@@ -142,8 +142,7 @@ namespace MacroTools.LegendSystem
     /// </summary>
     public void ClearUnitDependencies()
     {
-      DestroyGroup(_diesWithout);
-      _diesWithout = null;
+      _diesWithout.Clear();
       RefreshDummy();
     }
 
@@ -154,8 +153,7 @@ namespace MacroTools.LegendSystem
     /// </summary>
     public void AddUnitDependency(unit whichUnit)
     {
-      _diesWithout ??= CreateGroup();
-      GroupAddUnit(_diesWithout, whichUnit);
+      _diesWithout.Add(whichUnit);
       RefreshDummy();
     }
     
@@ -176,11 +174,8 @@ namespace MacroTools.LegendSystem
       PermanentlyKill();
     }
 
-    private bool AllDependenciesAreMissing()
-    {
-      return _diesWithout != null && !_diesWithout.Copy().EmptyToList()
-        .Any(x => GetOwningPlayer(x) == GetOwningPlayer(Unit) && UnitAlive(x));
-    }
+    private bool AllDependenciesAreMissing() =>
+      !_diesWithout.Any(x => GetOwningPlayer(x) == GetOwningPlayer(Unit) && UnitAlive(x));
 
     /// <inheritdoc />
     protected override void OnChangeUnit()
@@ -262,49 +257,26 @@ namespace MacroTools.LegendSystem
       }
 
       UnitRemoveAbility(Unit, _dummyPermadies);
-      if (_diesWithout != null)
-      {
-        var tempGroup = CreateGroup();
-        var tooltip =
-          "When this unit dies, it will be unrevivable unless any of the following capitals are under your control:\n";
-        BlzGroupAddGroupFast(_diesWithout, tempGroup);
-        while (true)
-        {
-          var u = FirstOfGroup(tempGroup);
-          if (u == null) break;
+      var tooltip =
+        "When this unit dies, it will be unrevivable unless any of the following capitals are under your control:\n";
 
-          tooltip = tooltip + " - " + GetUnitName(u) + "|n";
-          GroupRemoveUnit(tempGroup, u);
-        }
-
-        tooltip += "\nUsing this ability pings each of these capitals on the minimap.";
-        UnitAddAbility(Unit, _dummyDieswithout);
-        BlzSetAbilityStringLevelField(BlzGetUnitAbility(Unit, _dummyDieswithout),
-          ABILITY_SLF_TOOLTIP_NORMAL_EXTENDED,
-          0, tooltip);
-        DestroyGroup(tempGroup);
-        return;
-      }
-
-      UnitRemoveAbility(Unit, _dummyDieswithout);
+      foreach (var unit in _diesWithout) 
+        tooltip = $"{tooltip} - {GetUnitName(unit)}|n";
+      
+      tooltip += "\nUsing this ability pings each of these capitals on the minimap.";
+      UnitAddAbility(Unit, _dummyDieswithout);
+      BlzSetAbilityStringLevelField(BlzGetUnitAbility(Unit, _dummyDieswithout),
+        ABILITY_SLF_TOOLTIP_NORMAL_EXTENDED,
+        0, tooltip);
     }
     
     private void OnCast()
     {
-      if (GetSpellAbilityId() != _dummyDieswithout) return;
-      var tempGroup = CreateGroup();
-      BlzGroupAddGroupFast(_diesWithout, tempGroup);
-      while (true)
-      {
-        var u = FirstOfGroup(tempGroup);
-        if (u == null) break;
-        
-        GetTriggerPlayer().PingMinimapSimple(GetUnitX(u), GetUnitY(u), 5);
+      if (GetSpellAbilityId() != _dummyDieswithout) 
+        return;
 
-        GroupRemoveUnit(tempGroup, u);
-      }
-
-      DestroyGroup(tempGroup);
+      foreach (var unit in _diesWithout) 
+        GetTriggerPlayer().PingMinimapSimple(GetUnitX(unit), GetUnitY(unit), 5);
     }
   }
 }
