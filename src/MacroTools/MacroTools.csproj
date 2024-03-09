@@ -8,7 +8,9 @@
 
     <ItemGroup>
         <PackageReference Include="War3Api.Common" Version="1.33.0" />
+        <PackageReference Include="WCSharp.Api" Version="3.0.0" />
         <PackageReference Include="WCSharp.Buffs" Version="3.0.0" />
+        <PackageReference Include="WCSharp.CSharpLua.CoreSystem" Version="3.0.0" />
         <PackageReference Include="WCSharp.Effects" Version="3.0.0" />
         <PackageReference Include="WCSharp.Events" Version="3.0.0" />
         <PackageReference Include="WCSharp.Json" Version="3.0.0" />
