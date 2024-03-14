@@ -2,6 +2,7 @@
 using System.Linq;
 using MacroTools;
 using MacroTools.Extensions;
+using MacroTools.Libraries;
 using MacroTools.SpellSystem;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
@@ -54,7 +55,8 @@ namespace WarcraftLegacies.Source.Spells.Reap
           .EnumUnitsInRange(casterPosition, radius)
           .EmptyToList()
           .Where(x => IsValidTarget(x, caster))
-          .OrderBy(x => GetUnitLevel(x))
+          .OrderBy(GetUnitLevel)
+          .ThenBy(x => MathEx.GetDistanceBetweenPoints(caster.GetPosition(), x.GetPosition()))
           .Take(unitsSlain)
           .ToList();
 
