@@ -50,12 +50,6 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>
-    /// Returns true if <paramref name="firstPlayer"/> is an ally of <paramref name="secondPlayer"/>.
-    /// </summary>
-    public static bool IsAlly(this player firstPlayer, player secondPlayer) =>
-      GetPlayerAlliance(firstPlayer, secondPlayer, ALLIANCE_SHARED_XP);
-
-    /// <summary>
     /// Returns the maximum number of units the player can build of the given type, or the maximum research level
     /// the player can achieve for the given type.
     /// </summary>

@@ -43,14 +43,14 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 
     private void RefreshDescription()
     {
-      Description = IsPlayerAlliedToAnyEligibleFaction(_target.Owner)
+      Description = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Owner)
         ? $"{_target.Name} is Control Level {_requiredLevel} or higher ({(int)_target.ControlLevel}/{_requiredLevel})"
         : $"{_target.Name} is Control Level {_requiredLevel} or higher";
     }
 
     private void RefreshProgress()
     {
-      var isOnSameTeam = IsPlayerAlliedToAnyEligibleFaction(_target.Owner);
+      var isOnSameTeam = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Owner);
 
       Progress = _target.ControlLevel >= _requiredLevel && isOnSameTeam
         ? QuestProgress.Complete

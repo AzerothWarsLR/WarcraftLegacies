@@ -21,7 +21,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 
     internal override void OnAdd(Faction whichFaction)
     {
-      Progress = IsPlayerAlliedToAnyEligibleFaction(_target.Unit.OwningPlayer())
+      Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer())
         ? QuestProgress.Complete
         : QuestProgress.Incomplete;
       
@@ -30,7 +30,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 
     private void OnTargetTeamChanged(object? sender, ControlPoint controlPoint)
     {
-      Progress = IsPlayerAlliedToAnyEligibleFaction(_target.Unit.OwningPlayer())
+      Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer())
         ? QuestProgress.Complete
         : QuestProgress.Incomplete;
     }
