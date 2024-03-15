@@ -10,11 +10,6 @@
       "Value": "A0I8,A0LQ,A0ES,A0SX,A0EH,Aion,A07J"
     },
     {
-      "Id": 1949393269,
-      "Type": 3,
-      "Value": "normal"
-    },
-    {
       "Id": 1633772661,
       "Type": 3,
       "Value": "A0EH"
@@ -111,6 +106,11 @@
     {
       "Id": 1769169525,
       "Value": 2
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "normal"
     }
   ]
 }

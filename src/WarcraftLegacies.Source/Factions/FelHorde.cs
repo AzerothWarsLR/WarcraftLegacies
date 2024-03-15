@@ -74,7 +74,7 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare to for
       ModObjectLimit(FourCC("nchg"), UNLIMITED); //Fel Orc Grunt
       ModObjectLimit(FourCC("nchr"), UNLIMITED); //Fel Orc Raider
       ModObjectLimit(FourCC("ncpn"), UNLIMITED); //Fel Orc Peon
-      ModObjectLimit(FourCC("owar"), 12); //Horde Cavarly
+      ModObjectLimit(FourCC("owar"), 12); //Horde Cavarly - Bonebreaker
       ModObjectLimit(FourCC("o01L"), 6); //Executioner
       ModObjectLimit(FourCC("o01O"), 8); //Demolisher
       ModObjectLimit(FourCC("u018"), 10); //Eye of Grillok
