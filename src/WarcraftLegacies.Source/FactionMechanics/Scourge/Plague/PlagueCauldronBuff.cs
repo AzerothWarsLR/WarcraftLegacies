@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge.Plague
     public PlagueCauldronBuff(unit caster, unit target, Point attackTarget) : base(caster, target)
     {
       Duration = 3000;
-      Interval = 30f;
+      Interval = 60f;
       _attackTarget = attackTarget;
     }
 
