@@ -47,8 +47,6 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
 
     private void RegisterObjectLimits()
     {
-      SharedFactionConfigSetup.AddSharedFactionConfig(this);
-
       ModObjectLimit(FourCC("h062"), UNLIMITED); //Town Hall
       ModObjectLimit(FourCC("h064"), UNLIMITED); //Keep
       ModObjectLimit(FourCC("h06I"), UNLIMITED); //Castle
