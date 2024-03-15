@@ -55,7 +55,7 @@ namespace WarcraftLegacies.Source.Spells.Reap
           .EnumUnitsInRange(casterPosition, radius)
           .EmptyToList()
           .Where(x => IsValidTarget(x, caster))
-          .OrderBy(GetUnitLevel)
+          .OrderBy(x => GetUnitLevel(x))
           .ThenBy(x => MathEx.GetDistanceBetweenPoints(caster.GetPosition(), x.GetPosition()))
           .Take(unitsSlain)
           .ToList();
