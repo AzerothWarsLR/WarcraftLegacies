@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -30,6 +31,14 @@ You begin on Azuremyst Island, amid the wreckage of your flight from the Burning
 Further inland your Night-elf allies will need your help against the Orcish Horde, quickly build your base and gain entry to the Exodar.
 
 The Exodar is a mighty fortress-base with the ability to move around the map, but it will take a long time to repair.";
+      Nicknames = new List<string>
+      {
+        "dranei",
+        "exo",
+        "exodar",
+        "theexodar",
+        "goats"
+      };
     }
     
     /// <inheritdoc />

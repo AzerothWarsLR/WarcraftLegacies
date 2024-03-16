@@ -39,6 +39,13 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8615, -12869)), //Starting
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-730, -6777))    //Kezan
       };
+      Nicknames = new List<string>
+      {
+        "bw",
+        "bilge",
+        "gob",
+        "goblin"
+      };
     }
         
     /// <inheritdoc />

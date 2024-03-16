@@ -46,6 +46,13 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(7709, -2853)),
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9392, -921)),
       };
+      Nicknames = new List<string>
+      {
+        "gil",
+        "giln",
+        "worgen",
+        "worg"
+      };
       RegisterFactionDependentInitializer<Legion>(RegisterBookOfMedivhQuest);
       RegisterFactionDependentInitializer<Druids>(RegisterDruidsQuests);
     }

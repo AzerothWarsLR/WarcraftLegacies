@@ -40,7 +40,13 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(17716, 13000))
       };
-      
+      Nicknames = new List<string>
+      {
+        "qt",
+        "quel",
+        "quelthalas"
+      };
+
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
     }
 

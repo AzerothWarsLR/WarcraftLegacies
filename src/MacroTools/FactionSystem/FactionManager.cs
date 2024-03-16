@@ -96,6 +96,9 @@ namespace MacroTools.FactionSystem
       if (!FactionsByName.ContainsKey(faction.Name.ToLower()))
       {
         FactionsByName[faction.Name.ToLower()] = faction;
+        foreach (var nickname in faction.Nicknames)
+          FactionsByName[nickname.ToLower()] = faction;
+
         AllFactions.Add(faction);
         FactionRegistered?.Invoke(faction, faction);
         faction.OnRegistered();

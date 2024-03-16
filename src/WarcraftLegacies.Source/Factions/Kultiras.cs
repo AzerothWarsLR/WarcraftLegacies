@@ -33,7 +33,13 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       {
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4585, -13038))
       };
-      
+      Nicknames = new List<string>
+      {
+        "kt",
+        "kul",
+        "kultiras"
+      };
+
       RegisterFactionDependentInitializer<Frostwolf>(RegisterDialogue);
     }
 
