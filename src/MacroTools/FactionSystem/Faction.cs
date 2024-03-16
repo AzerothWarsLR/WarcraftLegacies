@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.ControlPointSystem;
@@ -116,6 +117,11 @@ namespace MacroTools.FactionSystem
 
     /// <summary>Players with this faction will become this color.</summary>
     public playercolor PlayerColor { get; }
+
+    /// <summary>
+    /// A list of additional names that this Faction can be referred to by in commands.
+    /// </summary>
+    public IReadOnlyList<string> Nicknames { get; protected init; } = new List<string>();
 
     /// <summary>
     ///   The <see cref="Faction" />'s food limit.

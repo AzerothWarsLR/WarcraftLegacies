@@ -69,9 +69,11 @@ namespace MacroTools.FactionSystem
     /// Returns the <see cref="Faction"/> with the specified name if one exists.
     /// Returns null otherwise.
     /// </summary>
-    public static Faction? GetFactionByName(string name) => 
-      FactionsByName.TryGetValue(name.ToLower(), out var faction) ? faction : null;
-    
+    public static Faction? GetFactionByName(string name)
+    {
+      return FactionsByName.TryGetValue(name.ToLower(), out var faction) ? faction : null;
+    }
+
     /// <summary>
     /// Returns true if a <see cref="Faction"/> with the specified type exists.
     /// </summary>
@@ -96,6 +98,9 @@ namespace MacroTools.FactionSystem
       if (!FactionsByName.ContainsKey(faction.Name.ToLower()))
       {
         FactionsByName[faction.Name.ToLower()] = faction;
+        foreach (var nickname in faction.Nicknames)
+          FactionsByName[nickname.ToLower()] = faction;
+
         AllFactions.Add(faction);
         FactionRegistered?.Invoke(faction, faction);
         faction.OnRegistered();
