@@ -3,10 +3,10 @@ using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.Scourge
 {
-  public sealed class QuestEnemyEncroachment : QuestData
+  public sealed class QuestSlumberingKing : QuestData
   {
     /// <inheritdoc />
-    public QuestEnemyEncroachment() : base("The Slumbering King",
+    public QuestSlumberingKing() : base("The Slumbering King",
       "Ner'zhul commands the undead hordes from his throne atop Icecrown, waiting patiently for the inevitable day that interlopers will come to invade his frozen lands.",
       @"ReplaceableTextures\CommandButtons\BTNAnimateDead.blp")
     {

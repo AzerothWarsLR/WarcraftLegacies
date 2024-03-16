@@ -168,7 +168,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
         new(_preplacedUnitSystem.GetUnit(Constants.UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER),
           _artifactSetup.HelmOfDomination,
           _allLegendSetup.Scourge.Arthas, _allLegendSetup.Scourge.TheFrozenThrone);
-      QuestEnemyEncroachment questEnemyEncroachment = new();
+      QuestSlumberingKing questSlumberingKing = new();
       
       var questKelthuzadLich = AddQuest(new QuestKelthuzadLich(_allLegendSetup.Quelthalas.Sunwell, _allLegendSetup.Scourge.Kelthuzad));
       AddQuest(new QuestKelthuzadDies(questKelthuzadLich, _allLegendSetup.Scourge.Kelthuzad));
@@ -180,7 +180,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       AddQuest(questSapphiron);
       //Misc
       AddQuest(questLichKingArthas);
-      AddQuest(questEnemyEncroachment);
+      AddQuest(questSlumberingKing);
     }
 
     private void RegisterPowers()
