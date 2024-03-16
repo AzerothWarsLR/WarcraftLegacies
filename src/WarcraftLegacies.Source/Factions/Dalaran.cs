@@ -88,8 +88,6 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       
     private void RegisterObjectLimits()
     {
-      SharedFactionConfigSetup.AddSharedFactionConfig(this);
-      
       //Structures
       ModObjectLimit(FourCC("h065"), UNLIMITED); //Refuge
       ModObjectLimit(FourCC("h066"), UNLIMITED); //Conclave

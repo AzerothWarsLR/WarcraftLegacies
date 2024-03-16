@@ -73,6 +73,7 @@ namespace MacroTools.CommandSystem
       QuestSetTitle(commandQuest, "Commands");
       QuestSetIconPath(commandQuest, @"ReplaceableTextures\CommandButtons\BTNDizzy.blp");
       QuestSetEnabled(commandQuest, true);
+      QuestSetRequired(commandQuest, false);
       var description = _registeredCommands.Where(x => x.Type == CommandType.Normal).Aggregate("",
         (current, command) => $"{current} -{command.CommandText}: {command.Description}\n");
       
