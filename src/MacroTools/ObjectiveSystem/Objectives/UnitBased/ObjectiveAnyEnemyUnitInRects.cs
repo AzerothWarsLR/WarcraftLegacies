@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -27,6 +28,33 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       Description = $"Enemy unit has entered {rectName}";
       DisplaysPosition = false;
       PingPath = "MinimapQuestTurnIn";
+    }
+
+    /// <inheritdoc />
+    public unit? CompletingUnit { get; private set; }
+
+    /// <inheritdoc />
+    public string CompletingUnitName => CompletingUnit != null ? CompletingUnit.GetProperName() : "an unknown hero";
+
+    private bool IsUnitValid(unit whichUnit) =>
+      !IsPlayerOnSameTeamAsAnyEligibleFaction(whichUnit.OwningPlayer()) && whichUnit.IsAlive() &&
+      whichUnit.OwningPlayer() != Player(PLAYER_NEUTRAL_AGGRESSIVE) &&
+      whichUnit.OwningPlayer() != Player(PLAYER_NEUTRAL_PASSIVE);
+    
+    private bool IsValidUnitInRects()
+    {
+      return _targetRects.Select(targetRect => CreateGroup()
+        .EnumUnitsInRect(targetRect)
+        .EmptyToList()
+        .Any(IsUnitValid))
+        .Any(any => any);
+    } 
+    
+    /// <inheritdoc />
+    internal override void OnAdd(Faction whichFaction)
+    {
+      Progress = IsValidUnitInRects() ? QuestProgress.Complete : QuestProgress.Incomplete;
+      
       CreateTrigger()
         .RegisterEnterRegions(_targetRects)
         .AddAction(() =>
@@ -44,31 +72,6 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
           if (!IsValidUnitInRects()) 
             Progress = QuestProgress.Incomplete;
         });
-    }
-
-    /// <inheritdoc />
-    public unit? CompletingUnit { get; private set; }
-
-    /// <inheritdoc />
-    public string CompletingUnitName => CompletingUnit != null ? CompletingUnit.GetProperName() : "an unknown hero";
-
-    private bool IsUnitValid(unit whichUnit)
-    {
-      return !IsUnitAlly(whichUnit,EligibleFactions[0].Player) && whichUnit.IsAlive() &&
-             whichUnit.OwningPlayer() != Player(PLAYER_NEUTRAL_AGGRESSIVE) &&
-             whichUnit.OwningPlayer() != Player(PLAYER_NEUTRAL_PASSIVE);
-    }
-      
-
-    private bool IsValidUnitInRects()
-    {
-      return _targetRects.Select(targetRect => CreateGroup().EnumUnitsInRect(targetRect).EmptyToList().Any(IsUnitValid)).Any(any => any);
-    } 
-    
-    /// <inheritdoc />
-    internal override void OnAdd(Faction whichFaction)
-    {
-      Progress = IsValidUnitInRects() ? QuestProgress.Complete : QuestProgress.Incomplete;
     }
   }
 }
