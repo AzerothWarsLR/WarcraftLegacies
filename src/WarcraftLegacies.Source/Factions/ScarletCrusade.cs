@@ -29,6 +29,7 @@ Your soldiers are weaker when alone, but gain substantial bonuses when paired wi
 Fortify your strongholds against the storm to come and make ready to unleash the Crusade on those who would defile your lands.";
       Nicknames = new List<string>
       {
+        "sc",
         "scarlet",
         "scarletcrusade"
       };
