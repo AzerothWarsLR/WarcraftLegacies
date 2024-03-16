@@ -37,7 +37,6 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare to for
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-2735, -30242))
       };
-      RegisterFactionDependentInitializer<Stormwind, Illidari>(RegisterStormwindIllidariQuests);
     }
 
     /// <inheritdoc />
@@ -118,16 +117,16 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare to for
       ModObjectLimit(FourCC("R035"), UNLIMITED); //Improved Firebolt
       ModObjectLimit(FourCC("R01Z"), UNLIMITED); //Battle Stations
       ModObjectLimit(Constants.UPGRADE_R098_FEL_INFUSED_SKELETON_FEL_HORDE, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R09W_IMPROVED_GREATER_CARRION_SWARM_LEGION, UNLIMITED); 
+      ModObjectLimit(Constants.UPGRADE_R09W_IMPROVED_GREATER_CARRION_SWARM_LEGION, UNLIMITED);
       SetObjectLevel(FourCC("R01Z"), 1); //Battle Stations
-      
+
       ModObjectLimit(FourCC("n05R"), UNLIMITED); //Felguard
       ModObjectLimit(FourCC("n06H"), UNLIMITED); //Pit Fiend
       ModObjectLimit(FourCC("n07B"), UNLIMITED); //Queen
       ModObjectLimit(FourCC("n07D"), UNLIMITED); //Maiden
       ModObjectLimit(FourCC("n07o"), UNLIMITED); //Terror
       ModObjectLimit(FourCC("n07N"), UNLIMITED); //Lord
-      
+
       ModAbilityAvailability(Constants.ABILITY_A0MZ_DEMONIC_CONSTRUCTION_TEAL_DEMOLISHERS, -1);
       ModAbilityAvailability(Constants.ABILITY_A0GM_FOR_THE_HORDE_PINK_GREY_MAIN_BUILDINGS, -1);
 
@@ -142,17 +141,13 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare to for
       AddQuest(new QuestFelHordeKillIronforge(_allLegendSetup.Ironforge.GreatForge));
       AddQuest(new QuestFelHordeKillStormwind(_allLegendSetup.Stormwind.StormwindKeep));
       AddQuest(new QuestGuldansLegacy());
-    }
-    
-    private void RegisterStormwindIllidariQuests(Stormwind stormwind, Illidari illidari)
-    {
       AddQuest(new QuestDarkPortal(
         _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_1.Center),
         _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_2.Center),
         _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_3.Center),
         _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_1.Center),
         _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_2.Center),
-        _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_3.Center), stormwind, illidari));
+        _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_3.Center)));
     }
   }
 }
