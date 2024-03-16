@@ -37,6 +37,7 @@ namespace MacroTools.FactionSystem
     private string _name;
     private player? _player;
     private readonly int _undefeatedResearch;
+    private readonly List<unit> _goldMines = new();
 
     internal List<FactionDependentInitializer> FactionDependentInitializers { get; } = new();
     
@@ -52,8 +53,12 @@ namespace MacroTools.FactionSystem
     /// <summary>Invoked when one of the <see cref="Faction"/>'s <see cref="QuestData"/>s changes progress.</summary>
     public event EventHandler<FactionQuestProgressChangedEventArgs>? QuestProgressChanged;
 
-    protected List<unit> GoldMines { private get; init; } = new();
-    
+    protected internal IReadOnlyList<unit> GoldMines
+    {
+      get => _goldMines;
+      init => _goldMines = value as List<unit> ?? throw new InvalidOperationException();
+    }
+
     static Faction()
     {
       PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
@@ -290,12 +295,6 @@ namespace MacroTools.FactionSystem
     /// </summary>
     /// <param name="whichObject">The object ID of a unit, building, or research.</param>
     public int GetObjectLimit(int whichObject) => _objectLimits.TryGetValue(whichObject, out var limit) ? limit : 0;
-
-    /// <summary>
-    ///   Registers a gold mine as belonging to this <see cref="Faction" />.
-    ///   When the Faction leaves the game, all of their goldmines are removed.
-    /// </summary>
-    public void AddGoldMine(unit whichUnit) => GoldMines.Add(whichUnit);
 
     /// <summary>Adds a <see cref="Power" /> to this <see cref="Faction" />.</summary>
     public void AddPower(Power power)
@@ -567,7 +566,7 @@ namespace MacroTools.FactionSystem
       foreach (var unit in GoldMines) 
         KillUnit(unit);
       
-      GoldMines.Clear();
+      _goldMines.Clear();
     }
     
     /// <summary>
