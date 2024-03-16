@@ -1,5 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
+using System.Collections.Generic;
 using WarcraftLegacies.Source.Quests.Stormwind;
 using WarcraftLegacies.Source.Researches.Stormwind;
 using WarcraftLegacies.Source.Setup;
@@ -32,6 +33,11 @@ You begin in Westfall, separated from the rest of the kingdom. Reunite your land
 Once you have unified Stormwind's forces, race East to the Nethergarde Stronghold and prepare for the invasion of the Fel Horde.
 
 Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be key in helping you defeat the evil from beyond the Dark Portal.";
+      Nicknames = new List<string>
+      {
+        "sw",
+        "storm"
+      };
     }
         
     /// <inheritdoc />

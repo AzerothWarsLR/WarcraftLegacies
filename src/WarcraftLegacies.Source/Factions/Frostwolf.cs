@@ -44,6 +44,13 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8793, -11350)),
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-15828, -3120))
       };
+      Nicknames = new List<string>
+      {
+        "fw",
+        "frost",
+        "frostwolves",
+        "frostwolve"
+      };
       RegisterFactionDependentInitializer<Warsong>(RegisterWarsongDialogue);
       RegisterFactionDependentInitializer<Warsong>(RegisterWarsongRelatedResearches);
     }

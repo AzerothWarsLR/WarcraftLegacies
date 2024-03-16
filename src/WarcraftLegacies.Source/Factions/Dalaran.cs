@@ -56,7 +56,11 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       {
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9204, 2471))
       };
-      
+      Nicknames = new List<string>
+      {
+        "dala"
+      };
+
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
       RegisterFactionDependentInitializer<Legion>(RegisterBookOfMedivhQuest);
     }

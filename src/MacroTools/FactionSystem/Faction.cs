@@ -118,6 +118,11 @@ namespace MacroTools.FactionSystem
     public playercolor PlayerColor { get; }
 
     /// <summary>
+    /// A list of additional names that this Faction can be referred to by in commands.
+    /// </summary>
+    public IReadOnlyList<string> Nicknames { get; protected init; } = new List<string>();
+
+    /// <summary>
     ///   The <see cref="Faction" />'s food limit.
     ///   A <see cref="player" /> with this Faction can never exceed this amount of food.
     /// </summary>

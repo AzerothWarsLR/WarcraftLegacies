@@ -47,6 +47,10 @@ Gather your forces and strike before the Horde can organize their efforts.";
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9200, 10742))
       };
+      Nicknames = new List<string>
+      {
+        "druid"
+      };
       RegisterFactionDependentInitializer<Sentinels>(RegisterSentinelsDialogue);
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeQuests);
       RegisterFactionDependentInitializer<Sentinels, Frostwolf, Warsong>(RegisterSentinelsFrostwolfWarsongDialogue);

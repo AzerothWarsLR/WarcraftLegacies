@@ -37,6 +37,11 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare to for
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-2735, -30242))
       };
+      Nicknames = new List<string>
+      {
+        "fh",
+        "fel"
+      };
       RegisterFactionDependentInitializer<Stormwind, Illidari>(RegisterStormwindIllidariQuests);
     }
 

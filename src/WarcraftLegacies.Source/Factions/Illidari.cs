@@ -40,6 +40,14 @@ You begin on the Broken Isles, ready to plunder the tombs for artifacts to empow
 Unfortunately, you cannot progress further in the Islands. Use Illidan's mastery of portals to travel to Outland and join forces with your ally.
 
 Support your ally in Outland by unlocking bases and coordinating with his push out of the Dark Portal.";
+      Nicknames = new List<string>
+      {
+        "illi",
+        "illidan",
+        "ill",
+        "naga",
+        "nagas"
+      };
       RegisterFactionDependentInitializer<Sentinels>(RegisterSentinelsDialogue);
       RegisterFactionDependentInitializer<Druids>(RegisterDruidsDialogue);
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);

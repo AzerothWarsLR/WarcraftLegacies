@@ -50,6 +50,11 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-4939, 18803))
       };
+      Nicknames = new List<string>
+      {
+        "ud",
+        "undead"
+      };
       RegisterFactionDependentInitializer<Lordaeron>(RegisterLordaeronRelatedQuests);
       RegisterFactionDependentInitializer<Lordaeron, Legion>(RegisterLordaeronLegionRelatedQuests);
       RegisterFactionDependentInitializer<Dalaran>(RegisterDalaranDialogue);

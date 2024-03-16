@@ -1,4 +1,5 @@
 ﻿using MacroTools.FactionSystem;
+using System.Collections.Generic;
 using WarcraftLegacies.Source.Quests.Scarlet;
 using WarcraftLegacies.Source.Setup;
 using static War3Api.Common;
@@ -26,6 +27,12 @@ Build towers to detect the hidden cultists moving through the Kingdom and burn a
 Your soldiers are weaker when alone, but gain substantial bonuses when paired with a variety of unit-types. 
 
 Fortify your strongholds against the storm to come and make ready to unleash the Crusade on those who would defile your lands.";
+      Nicknames = new List<string>
+      {
+        "sc",
+        "scarlet",
+        "scarletcrusade"
+      };
     }
 
     /// <inheritdoc />

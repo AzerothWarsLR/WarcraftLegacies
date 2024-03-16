@@ -38,6 +38,11 @@ The Night Elves are aware of your presence and are gathering a mighty host again
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8455, -2777))
       };
+      Nicknames = new List<string>
+      {
+        "ws",
+        "war"
+      };
     }
         
     /// <inheritdoc />

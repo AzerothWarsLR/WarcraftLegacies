@@ -45,6 +45,13 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(19331f, -30663))
       };
+      Nicknames = new List<string>
+      {
+        "leg",
+        "demon",
+        "demons",
+        "argus"
+      };
       RegisterFactionDependentInitializer<Dalaran>(RegisterDalaranDialogue);
       RegisterFactionDependentInitializer<Illidari>(RegisterIllidariDialogue);
       RegisterFactionDependentInitializer<Frostwolf>(RegisterFrostwolfDialogue);
