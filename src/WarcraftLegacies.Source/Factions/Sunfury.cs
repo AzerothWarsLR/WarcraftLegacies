@@ -41,7 +41,8 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
       GoldMines = new List<unit>
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(3295, -22670)),
-        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(2529, -19141))
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(2529, -19141)),
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), Regions.Area52Unlock.Center)
       };
     }
         
