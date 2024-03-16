@@ -53,18 +53,20 @@ namespace MacroTools.Extensions
       var unitsInArea = CreateGroup()
         .EnumUnitsInRect(area)
         .EmptyToList();
+      
       foreach (var unit in unitsInArea)
       {
+        if (unit.OwningPlayer() != Player(PLAYER_NEUTRAL_PASSIVE))
+          continue;
+        
         if (!unit.IsRemovable())
         {
           unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
           continue;
         }
 
-        if (unit.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE) && !IsUnitType(unit, UNIT_TYPE_STRUCTURE))
-        {
+        if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE)) 
           unit.Remove();
-        }
       }
     }
 
