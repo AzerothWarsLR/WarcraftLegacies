@@ -50,6 +50,10 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(7716, 11657)),
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(17198, 8222))
       };
+      Nicknames = new List<string>
+      {
+        "lord"
+      };
       RegisterFactionDependentInitializer<Legion>(RegisterLegionDialogue);
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
       RegisterFactionDependentInitializer<Dalaran>(RegisterDalaranDialogue);

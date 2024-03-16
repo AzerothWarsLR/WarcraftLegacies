@@ -43,6 +43,11 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(3295, -22670)),
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(2529, -19141))
       };
+      Nicknames = new List<string>
+      {
+        "sf",
+        "sun"
+      };
     }
         
     /// <inheritdoc />

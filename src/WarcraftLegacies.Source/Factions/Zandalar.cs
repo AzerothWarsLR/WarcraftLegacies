@@ -43,6 +43,11 @@ Join up with your allies and brace for a tough fight and counter-attack. ";
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8900, -17000)), //Starting
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-3500, -15000))  //Zandalar
       };
+      Nicknames = new List<string>
+      {
+        "troll",
+        "trolls"
+      };
     }
         
     /// <inheritdoc />

@@ -41,6 +41,14 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       {
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-22721, -13570))
       };
+      Nicknames = new List<string>
+      {
+        "sent",
+        "sentinel",
+        "elf",
+        "elfs",
+        "elves"
+      };
       RegisterFactionDependentInitializer<Druids>(RegisterDruidsDialogue);
       RegisterFactionDependentInitializer<Illidari>(RegisterIlliariDialogue);
       RegisterFactionDependentInitializer<Legion>(RegisterLegionDialogue);
