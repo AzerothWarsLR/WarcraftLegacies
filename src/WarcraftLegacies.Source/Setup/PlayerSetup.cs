@@ -39,11 +39,11 @@ namespace WarcraftLegacies.Source.Setup
       SetupPlayer(Player(23), new Legion(_preplacedUnitSystem, _allLegendSetup), TeamSetup.Legion);
     }
 
-    private static void SetupPlayer(player player, Faction faction, Team northAlliance)
+    private static void SetupPlayer(player player, Faction faction, Team team)
     {
-      FactionManager.Register(faction);
+      player.SetTeam(team);
       player.SetFaction(faction);
-      player.SetTeam(northAlliance);
+      FactionManager.Register(faction);
     }
   }
 }
