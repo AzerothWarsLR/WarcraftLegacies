@@ -17,10 +17,12 @@ namespace Launcher.IntegrityChecker
     public ObjectDatabase ObjectDatabase { get; }
     
     public string UncompiledScript { get; }
+    
+    public IEnumerable<PathData> AdditionalFiles { get; set; }
 
     public MapTestFixture()
     {
-      (Map, _) = MapDataProvider.GetMapData();
+      (Map, AdditionalFiles) = MapDataProvider.GetMapData();
       ObjectDatabase = Map.GetObjectDatabaseFromMap();
       AdvancedMapBuilder.AddCSharpCode(Map, "../../../../../src/WarcraftLegacies.Source/", new CompilerSettings());
 
