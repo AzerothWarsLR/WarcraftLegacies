@@ -27,7 +27,7 @@ namespace Launcher.IntegrityChecker
       exceptionMessageBuilder.AppendLine(
         $"There is no way to research the following {_inaccesibleObjects.Upgrades.Count} researches. Remove them from the map or add a way to research them.");
       foreach (var upgrade in _inaccesibleObjects.Upgrades)
-        exceptionMessageBuilder.AppendLine($"{GetId(upgrade)}");
+        exceptionMessageBuilder.AppendLine($"{GetReadableId(upgrade)} - {GetId(upgrade)}");
       
       throw new XunitException(exceptionMessageBuilder.ToString());
     }
