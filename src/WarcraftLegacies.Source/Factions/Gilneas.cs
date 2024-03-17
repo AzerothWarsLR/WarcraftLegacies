@@ -41,9 +41,6 @@ You must raise an army and fight back against the feral wolves and worgen that h
 Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist Lordaeron and Dalaran with the plague, if it's not too late.";
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4236, 1321)),
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4477, -1449)),
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(7709, -2853)),
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9392, -921)),
       };
       Nicknames = new List<string>
