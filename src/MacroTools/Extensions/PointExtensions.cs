@@ -1,5 +1,6 @@
 ﻿using WCSharp.Shared.Data;
 using static War3Api.Common;
+using static MacroTools.Libraries.GeneralHelpers;
 
 namespace MacroTools.Extensions
 {
@@ -18,5 +19,17 @@ namespace MacroTools.Extensions
     /// Returns the terrain type at the <see cref="Point"/>.
     /// </summary>
     public static int TerrainType(this Point whichPoint) => GetTerrainType(whichPoint.X, whichPoint.Y);
+    
+    /// <summary>
+    /// Removes trees in a radius around a unit
+    /// </summary>
+    public static void RemoveDestructablesInRadius(this Point whichPoint, float radius)
+    {
+      EnumDestructablesInCircle(radius, whichPoint,
+        () =>
+        {
+          RemoveDestructable(GetEnumDestructable());
+        });
+    }
   }
 }

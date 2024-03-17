@@ -38,19 +38,6 @@ namespace MacroTools.Extensions
       BlzSetUnitWeaponBooleanField(whichUnit, UNIT_WEAPON_BF_ATTACK_SHOW_UI, weaponSlot, show);
       return whichUnit;
     }
-    
-    /// <summary>
-    /// Removes trees in a radius around a unit
-    /// </summary>
-    public static unit RemoveDestructablesInRadius(this unit whichUnit, float radius)
-    {
-      EnumDestructablesInCircle(radius,new Point(whichUnit.GetPosition().X,whichUnit.GetPosition().Y),
-        () =>
-        {
-          RemoveDestructable(GetEnumDestructable());
-        });
-      return whichUnit;
-    }
 
     public static unit SetUnitLevel(this unit whichUnit, int level)
     {
