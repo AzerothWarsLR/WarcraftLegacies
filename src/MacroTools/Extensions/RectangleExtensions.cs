@@ -64,9 +64,8 @@ namespace MacroTools.Extensions
           unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
           continue;
         }
-
-        if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE)) 
-          unit.Remove();
+        
+        unit.Remove();
       }
     }
 
