@@ -42,6 +42,7 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       GoldMines = new List<unit>
       {
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9392, -921)),
+        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(8784, 1993)),
       };
       Nicknames = new List<string>
       {

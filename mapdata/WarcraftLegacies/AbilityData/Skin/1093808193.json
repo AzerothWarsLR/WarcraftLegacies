@@ -73,25 +73,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero empowers nearby allies of nature increasing their armor by 5 and attack by 20% for 30 seconds."
+      "Value": "The hero empowers nearby allies of nature increasing their armor by 5 and attack by 10% for 30 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero empowers nearby allies of nature increasing their armor by 6 and attack by 40% for 30 seconds."
+      "Value": "The hero empowers nearby allies of nature increasing their armor by 6 and attack by 20% for 30 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero empowers nearby allies of nature increasing their armor by 7 and attack by 60% for 30 seconds."
+      "Value": "The hero empowers nearby allies of nature increasing their armor by 7 and attack by 30% for 30 seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero empowers nearby allies of nature increasing their armor by 7 and attack by 80% for 30 seconds."
+      "Value": "The hero empowers nearby allies of nature increasing their armor by 7 and attack by 40% for 30 seconds."
     }
   ]
 }
