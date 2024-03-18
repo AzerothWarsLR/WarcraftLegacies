@@ -66,7 +66,12 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
     /// <inheritdoc />
     public override void OnNotPicked()
     {
-      Regions.Gilneas.CleanupNeutralPassiveUnits();
+      Regions.GilneasUnlock1.CleanupNeutralPassiveUnits();
+      Regions.GilneasUnlock2.CleanupNeutralPassiveUnits();
+      Regions.GilneasUnlock3.CleanupNeutralPassiveUnits();
+      Regions.GilneasUnlock4.CleanupNeutralPassiveUnits();
+      Regions.GilneasUnlock5.CleanupNeutralPassiveUnits();
+      Regions.GilneasUnlock6.CleanupNeutralPassiveUnits();
       base.OnNotPicked();
     }
 
