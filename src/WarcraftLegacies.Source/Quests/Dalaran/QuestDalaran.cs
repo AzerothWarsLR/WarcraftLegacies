@@ -19,16 +19,18 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
   public sealed class QuestDalaran : QuestData
   {
     private readonly List<unit> _rescueUnits = new();
+    private readonly unit _gilneasDoor;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestDalaran"/> class.
     /// </summary>
     /// <param name="rescueRects">Units inside these rectangles start invulnerable and are rescued when the quest ends.</param>
     /// <param name="prerequisites">These quests must be completed before this one can be completed.</param>
-    public QuestDalaran(IEnumerable<Rectangle> rescueRects, IEnumerable<QuestData> prerequisites) : base("Outskirts",
+    public QuestDalaran(IEnumerable<Rectangle> rescueRects, IEnumerable<QuestData> prerequisites, unit gilneasDoor) : base("Outskirts",
       "The territories of Dalaran are fragmented, secure the lands and protect Dalaran citizens.",
       @"ReplaceableTextures\CommandButtons\BTNArcaneCastle.blp")
     {
+      _gilneasDoor = gilneasDoor;
       foreach (var prerequisite in prerequisites) 
         AddObjective(new ObjectiveQuestComplete(prerequisite));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N018_DURNHOLDE)));
@@ -65,6 +67,12 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
+      if (completingFaction.Player == null)
+        return;
+      _gilneasDoor
+        .SetInvulnerable(false);
+      SetUnitOwner(_gilneasDoor, completingFaction.Player, true);
+
       completingFaction.Player
         .RescueGroup(_rescueUnits)
         .PlayMusicThematic("war3mapImported\\DalaranTheme.mp3");
