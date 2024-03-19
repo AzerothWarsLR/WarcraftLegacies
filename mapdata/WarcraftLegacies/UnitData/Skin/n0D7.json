@@ -39,6 +39,11 @@
       "Id": 1818520949,
       "Type": 3,
       "Value": "war3mapImported\\DSG_MurlocWorker.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Basic worker unit. Can harvest gold and lumber, build structures, and Repair. |n|n|cffffcc00Attacks land unit."
     }
   ]
 }

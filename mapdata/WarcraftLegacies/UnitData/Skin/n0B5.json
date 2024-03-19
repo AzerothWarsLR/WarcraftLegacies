@@ -44,6 +44,11 @@
       "Id": 1684960117,
       "Type": 3,
       "Value": "Shade"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Basic worker unit. Can harvest gold and lumber, build structures, and Repair. |n|n|cffffcc00Attacks land units."
     }
   ]
 }
