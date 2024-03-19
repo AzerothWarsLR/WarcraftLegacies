@@ -163,12 +163,6 @@ public static class Regions
 	public static Rectangle InstanceOutland { get; set; } = new Rectangle(-7104f, -32256f, 6016f, -18208f);
 	public static Rectangle Ironforge { get; set; } = new Rectangle(9792f, -5728f, 10016f, -5536f);
 	public static Rectangle IronforgeAmbient { get; set; } = new Rectangle(9504f, -6656f, 11712f, -4160f);
-	public static Rectangle IslandBlocker1 { get; set; } = new Rectangle(352f, 1696f, 1536f, 2336f);
-	public static Rectangle IslandBlocker2 { get; set; } = new Rectangle(-2144f, 1792f, -1024f, 2336f);
-	public static Rectangle IslandBlocker3 { get; set; } = new Rectangle(1536f, -3456f, 2560f, -3168f);
-	public static Rectangle IslandBlocker4 { get; set; } = new Rectangle(832f, -10624f, 1824f, -10112f);
-	public static Rectangle IslandBlocker5 { get; set; } = new Rectangle(512f, -9216f, 800f, -8416f);
-	public static Rectangle IslandBlocker6 { get; set; } = new Rectangle(-2912f, -3904f, -1792f, -2816f);
 	public static Rectangle JainaChannel { get; set; } = new Rectangle(-9888f, 17632f, -9792f, 17728f);
 	public static Rectangle KaelSunwellChannel { get; set; } = new Rectangle(18496f, 21568f, 18624f, 21696f);
 	public static Rectangle Kali_Ships { get; set; } = new Rectangle(-17600f, -15296f, -10816f, 5600f);
