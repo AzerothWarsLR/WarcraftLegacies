@@ -24,6 +24,11 @@ namespace WarcraftLegacies.Source.Setup.Spells
         },
         Effect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl"
       });
+
+      var tradingPost = new ProvidesIncome(Constants.UNIT_H014_TRADING_POST_SEA, 100);
+      PassiveAbilityManager.Register(tradingPost);
+
+      PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_NBOT_GOBLIN_PRIVATEER_NEUTRAL_GOBLIN, -2));
     }
   }
 }
