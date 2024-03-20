@@ -26,6 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     /// </summary>
     /// <param name="rescueRects">Units inside these rectangles start invulnerable and are rescued when the quest ends.</param>
     /// <param name="prerequisites">These quests must be completed before this one can be completed.</param>
+    /// /// <param name="gilneasDoor">This unit will be transferred to the completeing player.</param>
     public QuestDalaran(IEnumerable<Rectangle> rescueRects, IEnumerable<QuestData> prerequisites, unit gilneasDoor) : base("Outskirts",
       "The territories of Dalaran are fragmented, secure the lands and protect Dalaran citizens.",
       @"ReplaceableTextures\CommandButtons\BTNArcaneCastle.blp")
