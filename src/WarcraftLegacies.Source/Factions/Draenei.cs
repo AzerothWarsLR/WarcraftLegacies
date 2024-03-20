@@ -33,6 +33,7 @@ Further inland your Night-elf allies will need your help against the Orcish Hord
 The Exodar is a mighty fortress-base with the ability to move around the map, but it will take a long time to repair.";
       Nicknames = new List<string>
       {
+        "draenei",
         "dranei",
         "exo",
         "exodar",
