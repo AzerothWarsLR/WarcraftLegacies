@@ -15,8 +15,8 @@ namespace WarcraftLegacies.Source.FactionMechanics.Frostwolf
     /// </summary>
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
     {
-      var shipPosA = new Point(-8757, -10599);
-      var shipPosB = new Point(-8516, -10785);
+      var shipPosA = new Point(-7973, -2754);
+      var shipPosB = new Point(-8030, -3071);
 
       preplacedUnitSystem.GetUnit(Constants.UNIT_OPEO_PEON_FROSTWOLF_WARSONG_WORKER, shipPosA)
         .IssueOrder("harvest", preplacedUnitSystem.GetDestructable(FourCC("B00E"), shipPosA));
