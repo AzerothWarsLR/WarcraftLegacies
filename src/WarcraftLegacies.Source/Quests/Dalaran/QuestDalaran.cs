@@ -27,11 +27,10 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     /// <param name="rescueRects">Units inside these rectangles start invulnerable and are rescued when the quest ends.</param>
     /// <param name="prerequisites">These quests must be completed before this one can be completed.</param>
     /// /// <param name="gilneasDoor">This unit will be transferred to the completeing player.</param>
-    public QuestDalaran(IEnumerable<Rectangle> rescueRects, IEnumerable<QuestData> prerequisites, unit gilneasDoor) : base("Outskirts",
+    public QuestDalaran(IEnumerable<Rectangle> rescueRects, IEnumerable<QuestData> prerequisites) : base("Outskirts",
       "The territories of Dalaran are fragmented, secure the lands and protect Dalaran citizens.",
       @"ReplaceableTextures\CommandButtons\BTNArcaneCastle.blp")
     {
-      _gilneasDoor = gilneasDoor;
       foreach (var prerequisite in prerequisites) 
         AddObjective(new ObjectiveQuestComplete(prerequisite));
       AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N018_DURNHOLDE)));
@@ -43,8 +42,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
 
       foreach (var rectangle in rescueRects)
         _rescueUnits.AddRange(rectangle.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures,
-          unit => unit.GetTypeId() != Constants.UNIT_N0DK_SKULL_OF_GUL_DAN_PEDESTAL && unit.GetTypeId() != Constants.UNIT_NBSM_BOOK_OF_MEDIVH));
-      
+          unit => unit.GetTypeId() != Constants.UNIT_N0DK_SKULL_OF_GUL_DAN_PEDESTAL && unit.GetTypeId() != Constants.UNIT_NBSM_BOOK_OF_MEDIVH));    
     }
 
     /// <inheritdoc/>
@@ -68,12 +66,6 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      if (completingFaction.Player == null)
-        return;
-      _gilneasDoor
-        .SetInvulnerable(false);
-      SetUnitOwner(_gilneasDoor, completingFaction.Player, true);
-
       completingFaction.Player
         .RescueGroup(_rescueUnits)
         .PlayMusicThematic("war3mapImported\\DalaranTheme.mp3");
