@@ -126,11 +126,6 @@ namespace WarcraftLegacies.Source.UnitTypes
       {
         NeverDelete = true
       });
-      
-      UnitType.Register(new UnitType(Constants.UNIT_H05W_TRADE_LUMBER_FOR_GOLD)
-      {
-        NeverDelete = true
-      });
     }
 
     private static void SubSetupGatesA()
