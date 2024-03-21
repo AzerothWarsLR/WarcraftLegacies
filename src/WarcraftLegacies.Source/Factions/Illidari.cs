@@ -68,6 +68,9 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
     {
       Regions.IllidanStartingPosition.CleanupNeutralPassiveUnits();
       Regions.IllidanBlackTempleUnlock.CleanupNeutralPassiveUnits();
+      Regions.TelredorUnlock.CleanupNeutralPassiveUnits(NeutralPassiveCleanupType.TurnUnitsHostile);
+      Regions.IllidariUnlockSA.CleanupNeutralPassiveUnits(NeutralPassiveCleanupType.TurnUnitsHostile);
+      Regions.AkamaUnlock.CleanupNeutralPassiveUnits(NeutralPassiveCleanupType.TurnUnitsHostile);
       base.OnNotPicked();
     }
 
