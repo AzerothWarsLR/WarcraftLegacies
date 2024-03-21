@@ -36,10 +36,6 @@
       "Value": 200
     },
     {
-      "Id": 1986358369,
-      "Value": 2
-    },
-    {
       "Id": 1902473825,
       "Type": 3,
       "Value": "R01I"
@@ -66,6 +62,13 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,ground,invulnerable,structure,tree,vulnerable,ward"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846029889,
+      "Type": 2,
+      "Value": 250
     }
   ]
 }

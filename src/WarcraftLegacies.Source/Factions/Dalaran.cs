@@ -24,6 +24,7 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
     private readonly AllLegendSetup _allLegendSetup;
     private readonly List<unit> _dalaranProtectors;
+    private readonly unit _gilneasGate;
 
     /// <inheritdoc />
     public Dalaran(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
@@ -31,6 +32,7 @@ namespace WarcraftLegacies.Source.Factions
     {
       _artifactSetup = artifactSetup;
       _allLegendSetup = allLegendSetup;
+      _gilneasGate = preplacedUnitSystem.GetUnit(Constants.UNIT_H02K_GREYMANE_S_GATE_CLOSED);
       _dalaranProtectors = new List<unit>
       {
         preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9084, 4979)),
@@ -174,7 +176,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       var questSouthshore = AddQuest(new QuestSouthshore(Regions.SouthshoreUnlock));
       StartingQuest = questSouthshore;
       var questShadowfang = AddQuest(new QuestShadowfang(Regions.ShadowfangUnlock));
-      AddQuest(new QuestDalaran(new[]
+      var questDalaran = AddQuest(new QuestDalaran(new[]
       {
         Regions.Dalaran
       }, new QuestData[]
@@ -185,7 +187,11 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       AddQuest(new QuestJainaSoulGem(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Neutral.Caerdarrow));
       AddQuest(new QuestBlueDragons(_allLegendSetup.Neutral.TheNexus));
       AddQuest(new QuestKarazhan(_allLegendSetup.Neutral.Karazhan));
-
+      AddQuest(new QuestGreymaneWall(new QuestData[]
+      {
+        questDalaran
+      },
+      _gilneasGate));
       AddQuest(new QuestTheramore(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Dalaran.Dalaran,  Regions.Theramore));
 
       AddQuest(crystalGolem);
