@@ -27,23 +27,23 @@ namespace Launcher.MapMigrations
         }
         else
         {
-          const int scalingFactor = 4;
+          const int scalingFactor = 3;
           const int numberOfDiceConstant = 1;
           const int maxValueOnDice = 2;
           const int baseConstant = -2;
           var baseGold = level * scalingFactor + baseConstant;
 
           if (level >= 7)
-            baseGold += 5;
+            baseGold += 3;
 
           if (unit.StatsHitPointsMaximumBase >= 1500)
-            baseGold += 7;
+            baseGold += 5;
 
           if (unit.StatsHitPointsMaximumBase >= 2000)
-            baseGold += 10;
+            baseGold += 8;
 
           if (unit.StatsHitPointsMaximumBase >= 2500)
-            baseGold += 15;
+            baseGold += 10;
 
           if (unit.StatsGoldBountyAwardedBase != baseGold)
             unit.StatsGoldBountyAwardedBase = baseGold;
