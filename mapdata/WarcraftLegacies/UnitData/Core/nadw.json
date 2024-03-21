@@ -5,14 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": 1633837685,
-      "Value": 10
-    },
-    {
-      "Id": 1769169525,
-      "Value": 2
-    },
-    {
       "Id": 1731289461,
       "Type": 3,
       "Value": "debris,ground,item,nonancient,structure,ward"
@@ -21,10 +13,6 @@
       "Id": 1919381621,
       "Type": 3,
       "Value": "Rhme,Rhar"
-    },
-    {
-      "Id": 1768186485,
-      "Value": 4
     },
     {
       "Id": 1836083317,
