@@ -24,6 +24,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
         },
         Effect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl"
       });
+
+      PassiveAbilityManager.Register(new ProvidesIncome(Constants.UNIT_NBOT_GOBLIN_PRIVATEER_NEUTRAL_GOBLIN, -2));
     }
   }
 }
