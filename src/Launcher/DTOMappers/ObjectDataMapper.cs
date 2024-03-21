@@ -128,6 +128,16 @@ namespace Launcher.DTOMappers
 
     private SimpleObjectModification MapSimpleModificationToDto(SimpleObjectModification simpleObjectModification, bool substituteTriggerStrings)
     {
+      var ignoredDataModifications = new List<int>
+      {
+        //These object data fields are not converted to MapData, usually because they are already comprehensively handled
+        //by a migration script.
+        1986358389, //StatsLevel
+        1633837685, //StatsGoldBountyAwardedBase
+        1768186485, //StatsGoldBountyAwardedNumberOfDice
+        1769169525  //StatsGoldBountyAwardedSidesPerDie
+      };
+      
       var dto = new SimpleObjectModification
       {
         OldId = simpleObjectModification.OldId,
@@ -138,6 +148,7 @@ namespace Launcher.DTOMappers
         },
         Modifications = simpleObjectModification.Modifications
           .Select(x => MapObjectDataModificationToDto(x, substituteTriggerStrings))
+          .Where(x => !ignoredDataModifications.Contains(x.Id))
           .ToList()
       };
       return dto;
