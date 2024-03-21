@@ -15,7 +15,7 @@ using static War3Api.Common;
 namespace WarcraftLegacies.Source.Quests.Dalaran
 {
   /// <summary>
-  /// Dalaran unlocks and takes control of Gilneas.
+  /// Dalaran unlocks and takes control of Gilneas Gate.
   /// </summary>
   public sealed class QuestGreymaneWall : QuestData
   {
@@ -25,18 +25,18 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestGreymaneWall"/> class.
     /// </summary>
-    /// /// <param name="gilneasDoor">This unit will be transferred to the completeing player.</param>
-    public QuestGreymaneWall(unit gilneasDoor) : base("Greymane Wall",
+    /// <param name="prerequisites">These quests must be completed before this one can be completed.</param>
+    /// <param name="gilneasDoor">This unit will be transferred to the completeing player.</param>
+    public QuestGreymaneWall(IEnumerable<QuestData> prerequisites, unit gilneasDoor) : base("The Greymane Wall",
       "The Gilneans, fearful of a potential invasion from the frozen north, sealed themselves behind the Greymane Wall. If we are to survive the coming storm, we must force our neighbour back out into the open.",
       @"ReplaceableTextures\CommandButtons\BTNGate.blp")
     {
       _gilneasDoor = gilneasDoor;
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01D_SILVERPINE_FOREST)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01B_DALARAN)));
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_H068_OBSERVATORY_DALARAN_T3, Constants.UNIT_H065_REFUGE_DALARAN_T1));
+      foreach (var prerequisite in prerequisites)
+        AddObjective(new ObjectiveQuestComplete(prerequisite));
       AddObjective(_enterGilneasGateRegion = new ObjectiveAnyUnitInRect(Regions.GilneasUnlock5, "Gilneas Gate", true));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = Constants.UPGRADE_RD03_QUEST_COMPLETED_INVESTIGATE_GILNEAS;
+      ResearchId = Constants.UPGRADE_RD03_QUEST_COMPLETED_THE_GREYMANE_WALL;
     }
 
     /// <inheritdoc/>
@@ -46,11 +46,6 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     /// <inheritdoc/>
     protected override string RewardDescription =>
       "Gain control of Gilneas gate.";
-
-    /// <inheritdoc/>
-    protected override void OnFail(Faction completingFaction)
-    {
-    }
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

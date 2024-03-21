@@ -19,14 +19,12 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
   public sealed class QuestDalaran : QuestData
   {
     private readonly List<unit> _rescueUnits = new();
-    private readonly unit _gilneasDoor;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestDalaran"/> class.
     /// </summary>
     /// <param name="rescueRects">Units inside these rectangles start invulnerable and are rescued when the quest ends.</param>
     /// <param name="prerequisites">These quests must be completed before this one can be completed.</param>
-    /// /// <param name="gilneasDoor">This unit will be transferred to the completeing player.</param>
     public QuestDalaran(IEnumerable<Rectangle> rescueRects, IEnumerable<QuestData> prerequisites) : base("Outskirts",
       "The territories of Dalaran are fragmented, secure the lands and protect Dalaran citizens.",
       @"ReplaceableTextures\CommandButtons\BTNArcaneCastle.blp")

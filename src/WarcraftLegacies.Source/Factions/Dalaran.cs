@@ -176,7 +176,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       var questSouthshore = AddQuest(new QuestSouthshore(Regions.SouthshoreUnlock));
       StartingQuest = questSouthshore;
       var questShadowfang = AddQuest(new QuestShadowfang(Regions.ShadowfangUnlock));
-      AddQuest(new QuestDalaran(new[]
+      var questDalaran = AddQuest(new QuestDalaran(new[]
       {
         Regions.Dalaran
       }, new QuestData[]
@@ -187,7 +187,11 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       AddQuest(new QuestJainaSoulGem(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Neutral.Caerdarrow));
       AddQuest(new QuestBlueDragons(_allLegendSetup.Neutral.TheNexus));
       AddQuest(new QuestKarazhan(_allLegendSetup.Neutral.Karazhan));
-      AddQuest(new QuestGreymaneWall(_gilneasGate));
+      AddQuest(new QuestGreymaneWall(new QuestData[]
+      {
+        questDalaran
+      },
+      _gilneasGate));
       AddQuest(new QuestTheramore(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Dalaran.Dalaran,  Regions.Theramore));
 
       AddQuest(crystalGolem);
