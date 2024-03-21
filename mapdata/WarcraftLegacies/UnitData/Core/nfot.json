@@ -12,6 +12,10 @@
       "Id": 1731289461,
       "Type": 3,
       "Value": "air,enemies,ground,hero,structure"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
     }
   ]
 }

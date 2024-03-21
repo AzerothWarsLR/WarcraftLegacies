@@ -44,6 +44,10 @@
       "Id": 1731289461,
       "Type": 3,
       "Value": "air,debris,ground,item,structure,ward"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
     }
   ]
 }
