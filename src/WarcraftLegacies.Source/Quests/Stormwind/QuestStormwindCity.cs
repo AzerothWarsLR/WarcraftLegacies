@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
@@ -30,14 +29,9 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       "The outskirts of Stormwind are infested by rebels and foul creatures. Defeat them to regain control of your lands.",
       @"ReplaceableTextures\CommandButtons\BTNStormwindCastle.blp")
     {
-      AddObjective(
-        new ObjectiveControlPoint(
-          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00V_DUSKWOOD)));
-      AddObjective(
-        new ObjectiveControlPoint(
-          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00Z_ELWYNN_FOREST)));
-      AddObjective(new ObjectiveControlPoint(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N011_REDRIDGE_MOUNTAINS)));
+      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N00V_DUSKWOOD));
+      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N00Z_ELWYNN_FOREST));
+      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N011_REDRIDGE_MOUNTAINS));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_H06N_CASTLE_STORMWIND_T3,
         Constants.UNIT_H06K_TOWN_HALL_STORMWIND_T1));
       AddObjective(new ObjectiveExpire(600, Title));

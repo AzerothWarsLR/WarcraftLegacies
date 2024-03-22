@@ -9,18 +9,6 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
   public sealed class ObjectiveControlPoint : Objective
   {
     private readonly ControlPoint _target;
-
-    /// <summary>
-    /// Initializes a new instance of <see cref="ObjectiveControlPoint"/> using an actual <see cref="ControlPoint"/>.
-    /// </summary>
-    public ObjectiveControlPoint(ControlPoint target)
-    {
-      _target = target;
-      Description = $"Your team controls {target.Name}";
-      TargetWidget = target.Unit;
-      DisplaysPosition = true;
-      Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
-    }
     
     /// <summary>
     /// Initializes a new instance of <see cref="ObjectiveControlPoint"/> using a unit type ID.

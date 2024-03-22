@@ -1,5 +1,4 @@
 ﻿using MacroTools;
-using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
@@ -20,14 +19,9 @@ namespace WarcraftLegacies.Source.Quests.Legion
       "The planet of Argus is not yet fully under the control of the Legion.",
       @"ReplaceableTextures\CommandButtons\BTNMastersLodge.blp")
     {
-      AddObjective(new ObjectiveControlPoint(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BF_ANTORAN_WASTES)));
-      AddObjective(
-        new ObjectiveControlPoint(
-          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BH_EREDATH)));
-      AddObjective(
-        new ObjectiveControlPoint(
-          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BG_KROKUUN)));
+      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N0BF_ANTORAN_WASTES));
+      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N0BH_EREDATH));
+      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N0BG_KROKUUN));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_U00N_BURNING_CITADEL_LEGION_T3,
         Constants.UNIT_U00C_LEGION_BASTION_LEGION_T2));
       AddObjective(new ObjectiveSelfExists());

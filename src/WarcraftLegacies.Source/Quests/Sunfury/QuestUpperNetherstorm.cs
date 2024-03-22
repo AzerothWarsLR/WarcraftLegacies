@@ -2,7 +2,6 @@
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using MacroTools.ControlPointSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using static War3Api.Common;
@@ -31,9 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
       
       AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.UpperNetherstorm },
         "in upper Netherstorm"));
-      AddObjective(
-        new ObjectiveControlPoint(
-          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0CW_FARAHLON)));
+      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N0CW_FARAHLON));
       AddObjective(new ObjectiveExpire(600, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);

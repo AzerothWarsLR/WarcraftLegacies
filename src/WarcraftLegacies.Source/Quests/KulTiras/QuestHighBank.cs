@@ -1,5 +1,4 @@
-﻿using MacroTools.ControlPointSystem;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
@@ -29,9 +28,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       _katherine = katherine;
       AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.BootyBayQuest }, "in Booty Bay"));
       AddObjective(new ObjectiveControlLegend(katherine, false));
-      AddObjective(
-        new ObjectiveControlPoint(
-          ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00L_BOOTY_BAY)));
+      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N00L_BOOTY_BAY));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }

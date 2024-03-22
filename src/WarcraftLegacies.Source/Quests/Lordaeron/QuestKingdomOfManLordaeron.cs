@@ -1,5 +1,4 @@
 ﻿using MacroTools.ArtifactSystem;
-using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
@@ -36,10 +35,8 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       AddObjective(new ObjectiveControlLegend(arthas, true));
       AddObjective(new ObjectiveAcquireArtifact(crownOfLordaeron));
       AddObjective(new ObjectiveAcquireArtifact(crownOfStormwind));
-      AddObjective(new ObjectiveControlPoint(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N010_STORMWIND_CITY)));
-      AddObjective(new ObjectiveControlPoint(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01G_LORDAERON_CITY)));
+      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N010_STORMWIND_CITY));
+      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N01G_LORDAERON_CITY));
       Global = true;
     }
 
