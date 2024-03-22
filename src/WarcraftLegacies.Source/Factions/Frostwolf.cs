@@ -139,8 +139,8 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
     
     private void RegisterQuests()
     {
-      StartingQuest = AddQuest(new QuestThunderBluff(_preplacedUnitSystem, Regions.ThunderBluff));
-      AddQuest(new QuestStonemaul(_preplacedUnitSystem, Regions.StonemaulKeep));
+      StartingQuest = AddQuest(new QuestThunderBluff(Regions.ThunderBluff));
+      AddQuest(new QuestStonemaul(Regions.StonemaulKeep));
       AddQuest(new QuestDarkspear());
       AddQuest(new QuestRagetotem(_allLegendSetup.Frostwolf.Cairne));
       AddQuest(new QuestHighmountain(_allLegendSetup.Frostwolf.Cairne, Regions.Highmountain_Unlock));
