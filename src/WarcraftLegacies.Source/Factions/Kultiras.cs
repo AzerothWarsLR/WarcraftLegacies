@@ -119,9 +119,10 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
 
     private void RegisterQuests()
     {
-      StartingQuest = AddQuest(new QuestBoralus(Regions.Kultiras));
-      AddQuest(new QuestUnlockShip(Regions.ShipAmbient, _proudmooreCapitalShip, _allLegendSetup.Kultiras.LegendBoralus,
-        _allLegendSetup.Kultiras.LegendAdmiral));
+      var questBoralus = new QuestBoralus(Regions.Kultiras);
+      StartingQuest = AddQuest(questBoralus);
+      AddQuest(new QuestUnlockShip(Regions.ShipAmbient, _proudmooreCapitalShip, _allLegendSetup.Kultiras.LegendAdmiral,
+        questBoralus));
       AddQuest(new QuestOldHatreds(_allLegendSetup.Kultiras.LegendAdmiral));
       AddQuest(new QuestWestfallOutpost(Regions.StranglethornBaseBuild));
       AddQuest(new QuestHighBank(Regions.HighbankUnlock, _allLegendSetup.Kultiras.LegendKatherine));
