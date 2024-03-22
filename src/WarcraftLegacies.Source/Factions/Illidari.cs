@@ -175,6 +175,26 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
             "the Tomb of Sargeras' entrance")
         }
       ));
+
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new DialogueSequence(
+          new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf06\N06Illidan16.flac",
+            "Yes... the power should be mine!",
+            "Illidan Stormrage"),
+          new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf06\N06Illidan17.flac",
+            "Now I am complete!",
+            "Illidan Stormrage"))
+        , new[]
+        {
+          this
+        }, new List<Objective>
+        {
+          new ObjectiveQuestComplete(GetQuestByType<QuestFlameAndSorrow>())
+          {
+            EligibleFactions = new List<Faction> { this }
+          }
+        }
+      ));
     }
 
     private void RegisterSentinelsDialogue(Sentinels sentinels)
