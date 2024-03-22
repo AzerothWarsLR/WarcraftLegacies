@@ -5,7 +5,6 @@ using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ResearchSystems;
-using WarcraftLegacies.Source.FactionMechanics.Frostwolf;
 using WarcraftLegacies.Source.Quests.Frostwolf;
 using WarcraftLegacies.Source.Quests.Warsong;
 using WarcraftLegacies.Source.Researches;
@@ -61,7 +60,6 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
       RegisterObjectLimits();
       RegisterQuests();
       RegisterDialogue();
-      PeonsStartHarvestingShips.Setup(_preplacedUnitSystem);
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 

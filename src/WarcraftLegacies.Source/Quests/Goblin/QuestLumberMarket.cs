@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       @"ReplaceableTextures\CommandButtons\BTNJunkGolem.blp")
     {
       AddObjective(new ObjectiveControlCapital(nordrassil, false));
-      ResearchId = Constants.UPGRADE_R07Z_QUEST_COMPLETED_LUMBER_MARKET_CRASH;
+      ResearchId = Constants.UPGRADE_R07Z_QUEST_COMPLETED_THE_BIGGEST_TREE;
     }
     
   }
