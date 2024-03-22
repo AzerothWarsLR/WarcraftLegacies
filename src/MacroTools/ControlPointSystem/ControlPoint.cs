@@ -48,7 +48,7 @@ namespace MacroTools.ControlPointSystem
     /// <summary>
     /// A user-friendly name for the <see cref="ControlPoint"/>.
     /// </summary>
-    public string Name => GetUnitName(Unit);
+    public string Name { get; }
 
     /// <summary>
     /// The unit representing the <see cref="ControlPoint"/>.
@@ -78,6 +78,7 @@ namespace MacroTools.ControlPointSystem
     {
       Unit = representingUnit;
       Value = value;
+      Name = representingUnit.GetName();
     }
 
     /// <summary>
