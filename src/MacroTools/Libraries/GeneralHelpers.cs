@@ -108,7 +108,6 @@ namespace MacroTools.Libraries
         if (IsUnitType(u, UNIT_TYPE_STRUCTURE))
         {
           GetOwningPlayer(u).AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, GetUnitGoldCost(GetUnitTypeId(u)));
-          GetOwningPlayer(u).AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, GetUnitWoodCost(GetUnitTypeId(u)));
           KillUnit(u);
         }
 

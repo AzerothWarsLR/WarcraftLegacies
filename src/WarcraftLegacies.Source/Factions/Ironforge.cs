@@ -23,7 +23,6 @@ namespace WarcraftLegacies.Source.Factions
       _allLegendSetup = allLegendSetup;
       UndefeatedResearch = FourCC("R05T");
       StartingGold = 200;
-      StartingLumber = 700;
       CinematicMusic = "PursuitTheme";
       ControlPointDefenderUnitTypeId = Constants.UNIT_H0AL_CONTROL_POINT_DEFENDER_IRONFORGE;
       IntroText = @"You are playing as the long-enduring |cffe4bc00Kingdom of 

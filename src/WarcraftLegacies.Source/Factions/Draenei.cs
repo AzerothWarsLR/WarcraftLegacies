@@ -22,7 +22,6 @@ namespace WarcraftLegacies.Source.Factions
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
       StartingGold = 200;
-      StartingLumber = 700;
       ControlPointDefenderUnitTypeId = Constants.UNIT_U008_CONTROL_POINT_DEFENDER_DRAENEI;
       IntroText = @"You are playing as the exiled |cff000080Draenei|r.
 

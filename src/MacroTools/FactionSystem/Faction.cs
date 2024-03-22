@@ -110,9 +110,6 @@ namespace MacroTools.FactionSystem
     /// <summary>How much gold the faction starts with.</summary>
     public int StartingGold { get; init; }
 
-    /// <summary>How much lumber the faction starts with.</summary>
-    public int StartingLumber { get; init; }
-
     /// <summary>The units this faction should start the game with.</summary>
     public List<unit> StartingUnits { get; protected init; } = new();
     

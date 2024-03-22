@@ -28,7 +28,6 @@ namespace WarcraftLegacies.Source.GameLogic
             {
               if (!banZone.Contains(GetUnitX(constructedStructure), GetUnitY(constructedStructure))) continue;
               GetOwningPlayer(constructedStructure).AddGold(unitType.GoldCost);
-              GetOwningPlayer(constructedStructure).AddLumber(unitType.LumberCost);
               KillUnit(constructedStructure);
             }
           }, unitType.Id);

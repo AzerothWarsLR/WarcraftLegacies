@@ -27,11 +27,6 @@ namespace MacroTools
     public int GoldCost => GetUnitGoldCost(Id);
 
     /// <summary>
-    /// How much lumber the UnitType costs to train or build.
-    /// </summary>
-    public int LumberCost => GetUnitWoodCost(Id);
-
-    /// <summary>
     /// If true, this unit should never be deleted.
     /// </summary>
     public bool NeverDelete { internal get; init; }

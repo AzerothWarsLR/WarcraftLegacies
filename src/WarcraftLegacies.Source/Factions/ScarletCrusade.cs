@@ -16,7 +16,6 @@ namespace WarcraftLegacies.Source.Factions
     {
       _allLegendSetup = allLegendSetup;
       StartingGold = 200;
-      StartingLumber = 500;
       ControlPointDefenderUnitTypeId = Constants.UNIT_H09O_CONTROL_POINT_DEFENDER_CRUSADE;
       IntroText = @"You are playing as the zealous |cff940000Scarlet Crusade|r.
 
