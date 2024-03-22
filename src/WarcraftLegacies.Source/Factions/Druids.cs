@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Factions
       _artifactSetup = artifactSetup;
       UndefeatedResearch = FourCC("R06E");
       StartingGold = 200;
-      StartingLumber = 700;
+      StartingLumber = 0;
       CinematicMusic = "DarkAgents";
       ControlPointDefenderUnitTypeId = Constants.UNIT_E01Y_CONTROL_POINT_DEFENDER_DRUIDS;
       IntroText = @"You are playing as the ancient Druids of the Cenarion Circle.

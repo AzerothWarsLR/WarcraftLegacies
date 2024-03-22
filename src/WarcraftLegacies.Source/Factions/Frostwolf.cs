@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Factions
       _artifactSetup = artifactSetup;
       UndefeatedResearch = Constants.UPGRADE_R05V_FROSTWOLF_EXISTS;
       StartingGold = 200;
-      StartingLumber = 700;
+      StartingLumber = 0;
       CinematicMusic = "SadMystery";
       ControlPointDefenderUnitTypeId = Constants.UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF;
       IntroText = @"You are playing as the honorable |cffff0000Frostwolf Clan|r.

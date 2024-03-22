@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Factions
       _allLegendSetup = allLegendSetup;
       _gilneasGate = preplacedUnitSystem.GetUnit(Constants.UNIT_H02K_GREYMANE_S_GATE_CLOSED);
       StartingGold = 200;
-      StartingLumber = 700;
+      StartingLumber = 0;
       ControlPointDefenderUnitTypeId = Constants.UNIT_H0AF_CONTROL_POINT_DEFENDER_GILNEAS;
       StartingCameraPosition = Regions.GilneasStartPos.Center;
       StartingUnits = Regions.GilneasStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
@@ -127,7 +127,6 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       //Upgrades
       ModObjectLimit(Constants.UPGRADE_R04O_CLERIC_MASTER_TRAINING_GILNEAS, UNLIMITED);
       ModObjectLimit(Constants.UPGRADE_R04P_DRUID_OF_THE_SCYTHE_MASTER_TRAINING_GILNEAS, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_RHLH_IMPROVED_LUMBER_HARVESTING_ADVANCED_LUMBER_HARVESTING_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, UNLIMITED);
       ModObjectLimit(Constants.UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, UNLIMITED);
       ModObjectLimit(Constants.UPGRADE_R09L_WORGEN_SHAMAN_MASTER_TRAINING_GILNEAS, UNLIMITED);
       ModObjectLimit(Constants.UPGRADE_R09M_HARVEST_WITCH_MASTER_TRAINING_GILNEAS, UNLIMITED);

@@ -41,7 +41,7 @@ namespace WarcraftLegacies.Source.Factions
       };
       UndefeatedResearch = Constants.UPGRADE_R05N_DALARAN_EXISTS;
       StartingGold = 200;
-      StartingLumber = 700;
+      StartingLumber = 0;
       CinematicMusic = "SadMystery";
       ControlPointDefenderUnitTypeId = Constants.UNIT_N00N_CONTROL_POINT_DEFENDER_DALARAN;
       StartingCameraPosition = Regions.DalaStartPos.Center;

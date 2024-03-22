@@ -16,8 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
   public sealed class QuestArea52 : QuestData
   {
     private readonly List<unit> _rescueUnits;
-    private const int GoldReward = 200;
-    private const int LumberReward = 200;
+    private const int GoldReward = 250;
     
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestArea52"/> class.
@@ -37,7 +36,6 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
     protected override void OnComplete(Faction whichFaction)
     {
       whichFaction.Player?.AddGold(GoldReward);
-      whichFaction.Player?.AddLumber(LumberReward);
       if (whichFaction.Player != null)
         whichFaction.Player.RescueGroup(_rescueUnits);
       else
@@ -50,6 +48,6 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Gain {GoldReward} gold, {LumberReward} lumber, and a base in Area 52";
+      $"Gain {GoldReward} gold, and a base in Area 52";
   }
 }

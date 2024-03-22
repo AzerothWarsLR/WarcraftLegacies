@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Factions
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
       StartingGold = 200;
-      StartingLumber = 700;
+      StartingLumber = 0;
       UndefeatedResearch = Constants.UPGRADE_R05M_LORDAERON_EXISTS;
       CinematicMusic = "Comradeship";
       ControlPointDefenderUnitTypeId = Constants.UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON;
@@ -131,7 +131,6 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
       ModObjectLimit(Constants.UPGRADE_R02E_LIGHT_S_PRAISE_MASTER_TRAINING_ARATHOR_LORDAERON, UNLIMITED);
       ModObjectLimit(Constants.UPGRADE_R00I_MAGE_MASTER_TRAINING_LORDAERON, UNLIMITED);
       ModObjectLimit(Constants.UPGRADE_RHAN_ANIMAL_WAR_TRAINING_DARK_GREEN_PURPLE_RESEARCH, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_RHLH_IMPROVED_LUMBER_HARVESTING_ADVANCED_LUMBER_HARVESTING_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, UNLIMITED);
       ModObjectLimit(Constants.UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, UNLIMITED);
       ModObjectLimit(Constants.UPGRADE_R04D_SEAL_OF_RIGHTEOUSNESS_LORDAERON, UNLIMITED);
       ModObjectLimit(Constants.UPGRADE_R01P_ENSNARE_LORDAERON, UNLIMITED);
