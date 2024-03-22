@@ -50,7 +50,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
         "elves"
       };
       RegisterFactionDependentInitializer<Druids>(RegisterDruidsDialogue);
-      RegisterFactionDependentInitializer<Illidari>(RegisterIlliariDialogue);
+      RegisterFactionDependentInitializer<Illidari>(RegisterIllidariQuestsAndDialogue);
       RegisterFactionDependentInitializer<Legion>(RegisterLegionDialogue);
     }
 
@@ -133,7 +133,6 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       AddQuest(new QuestSentinelsKillFrostwolf(_allLegendSetup.Frostwolf.ThunderBluff));
       AddQuest(new QuestScepterOfTheQueenSentinels(Regions.TheAthenaeum, _artifactSetup.ScepterOfTheQueen, _allLegendSetup.Warsong.StonemaulKeep));
       AddQuest(new QuestVaultoftheWardens(_allLegendSetup.Sentinels.Maiev, _allLegendSetup.Sentinels.VaultOfTheWardens));
-      AddQuest(new QuestMaievOutland(Regions.MaievStartUnlock, _allLegendSetup.Sentinels.Maiev, _allLegendSetup.Sentinels.VaultOfTheWardens));
     }
 
     private void RegisterDialogue()
@@ -210,8 +209,9 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
         }));
     }
 
-    private void RegisterIlliariDialogue(Illidari illidari)
+    private void RegisterIllidariQuestsAndDialogue(Illidari illidari)
     {
+      AddQuest(new QuestMaievOutland(Regions.MaievStartUnlock, _allLegendSetup.Sentinels.Maiev, _allLegendSetup.Sentinels.VaultOfTheWardens));
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new Dialogue(
           @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Maiev37",
