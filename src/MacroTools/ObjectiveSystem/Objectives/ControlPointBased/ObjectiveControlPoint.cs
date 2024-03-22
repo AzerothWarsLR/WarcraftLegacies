@@ -25,16 +25,24 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
     }
     
     /// <summary>
-    /// Initializes a new instance of <see cref="ObjectiveControlPoint"/> using a unit type ID.
+    /// Initializes a new instance of <see cref="ObjectiveControlPoint"/>.
     /// </summary>
-    public ObjectiveControlPoint(int controlPointUnitType)
+    /// <param name="controlPointUnitType">The unit type of the <see cref="ControlPoint"/> that needs to be captured.</param>
+    /// <param name="killNearbyCreeps">If true, all creeps near the point need to be killed as well.</param>
+    public ObjectiveControlPoint(int controlPointUnitType, bool killNearbyCreeps = true)
     {
       _target = ControlPointManager.Instance.GetFromUnitType(controlPointUnitType);
       TargetWidget = _target.Unit;
       DisplaysPosition = true;
       Position = _target.Unit.GetPosition();
-      RegisterKillTriggers();
-      CurrentKillCount = 0;
+
+      if (killNearbyCreeps)
+      {
+        RegisterKillTriggers();
+        CurrentKillCount = 0;
+      }
+      else
+        Description = $"You control {_target.Name}";
     }
 
     internal override void OnAdd(Faction whichFaction)

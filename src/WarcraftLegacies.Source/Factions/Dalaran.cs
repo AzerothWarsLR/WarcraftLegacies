@@ -160,6 +160,18 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
     
     private void RegisterQuests()
     {
+      var questSouthshore = AddQuest(new QuestSouthshore(Regions.SouthshoreUnlock));
+      StartingQuest = questSouthshore;
+      var questShadowfang = AddQuest(new QuestShadowfang(Regions.ShadowfangUnlock));
+      var questDalaran = AddQuest(new QuestDalaran(new[]
+      {
+        Regions.Dalaran
+      }, new QuestData[]
+      {
+        questSouthshore,
+        questShadowfang
+      }));
+      
       QuestNewGuardian newGuardian = new(_artifactSetup.BookOfMedivh, _allLegendSetup.Dalaran.Jaina,
         _allLegendSetup.Dalaran.Dalaran);
       QuestAegwynn aegwynn = new(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Dalaran.Antonidas);
@@ -172,26 +184,11 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       aegwynn.AddObjective(new ObjectiveQuestNotComplete(theNexus));
 
       theNexus.AddObjective(new ObjectiveQuestNotComplete(newGuardian));
-
-      var questSouthshore = AddQuest(new QuestSouthshore(Regions.SouthshoreUnlock));
-      StartingQuest = questSouthshore;
-      var questShadowfang = AddQuest(new QuestShadowfang(Regions.ShadowfangUnlock));
-      var questDalaran = AddQuest(new QuestDalaran(new[]
-      {
-        Regions.Dalaran
-      }, new QuestData[]
-      {
-        questSouthshore,
-        questShadowfang
-      }));
+      
       AddQuest(new QuestJainaSoulGem(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Neutral.Caerdarrow));
       AddQuest(new QuestBlueDragons(_allLegendSetup.Neutral.TheNexus));
       AddQuest(new QuestKarazhan(_allLegendSetup.Neutral.Karazhan));
-      AddQuest(new QuestGreymaneWall(new QuestData[]
-      {
-        questDalaran
-      },
-      _gilneasGate));
+      AddQuest(new QuestGreymaneWall(questDalaran, _gilneasGate));
       AddQuest(new QuestTheramore(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Dalaran.Dalaran,  Regions.Theramore));
 
       AddQuest(crystalGolem);
