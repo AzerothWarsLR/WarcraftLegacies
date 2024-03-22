@@ -132,9 +132,9 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       ModObjectLimit(FourCC("R04G"), UNLIMITED); //Improved Carrion Swarm
       ModObjectLimit(FourCC("R03Z"), UNLIMITED); //War Plating
       ModObjectLimit(Constants.UPGRADE_R096_REMATERIALIZATION_LEGION, 1);
-      ModObjectLimit(Constants.UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, 1 );
+      ModObjectLimit(Constants.UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, 1);
       ModObjectLimit(Constants.UPGRADE_R03L_IMPROVED_SHADOW_INFUSION_FEL_HORDE, 1);
-      
+
       //Heroes
       ModObjectLimit(FourCC("U00L"), 1); //Anetheron
       ModObjectLimit(Constants.UNIT_UMAL_THE_CUNNING_LEGION, 1);
@@ -149,10 +149,12 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       AddQuest(new QuestControlSpire(_allLegendSetup.Quelthalas.Spire));
       AddQuest(new QuestControlShadowfang(_allLegendSetup.Dalaran.Shadowfang));
       AddQuest(new QuestLegionCaptureSunwell(_allLegendSetup.Quelthalas.Sunwell));
-      AddQuest(new QuestLegionKillLordaeron(_allLegendSetup.Lordaeron.CapitalPalace, _allLegendSetup.Lordaeron.Stratholme, _allLegendSetup.Legion.Tichondrius));
-      AddQuest(new QuestSummonLegion(Regions.TwistingNether,_preplacedUnitSystem.GetUnit(Constants.UNIT_N03C_DEMON_PORTAL_NETHER)));
+      AddQuest(new QuestLegionKillLordaeron(_allLegendSetup.Lordaeron.CapitalPalace,
+        _allLegendSetup.Lordaeron.Stratholme, _allLegendSetup.Legion.Tichondrius));
+      AddQuest(new QuestSummonLegion(Regions.TwistingNether,
+        _preplacedUnitSystem.GetUnit(Constants.UNIT_N03C_DEMON_PORTAL_NETHER)));
     }
-    
+
     private void RegisterResearches()
     {
       ResearchManager.Register(new PowerResearch(Constants.UPGRADE_R096_REMATERIALIZATION_LEGION, 150, 250,
@@ -162,7 +164,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
           EligibilityCondition = dyingUnit => dyingUnit.OwningPlayer().GetObjectLimit(dyingUnit.GetTypeId()) != 0
         }));
     }
-    
+
     private void RegisterDialogue()
     {
       TriggeredDialogueManager.Add(new TriggeredDialogue(new Dialogue(
@@ -173,9 +175,15 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       }, new Objective[]
       {
         new ObjectiveQuestComplete(GetQuestByType<QuestSummonLegion>())
+        {
+          EligibleFactions = new List<Faction>
+          {
+            this
+          }
+        }
       }));
     }
-    
+
     private void RegisterDalaranDialogue(Dalaran dalaran)
     {
       TriggeredDialogueManager.Add(new TriggeredDialogue(
@@ -265,16 +273,16 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
         }
       ));
     }
-    
+
     private void RegisterScourgeQuests(Scourge scourge)
     {
       AddQuest(new QuestCunningPlan(Regions.AlteracAmbient, scourge));
     }
-    
+
     private void RegisterDruidsRelatedQuestsAndDialogue(Druids druids)
     {
       var questConsumeTree = AddQuest(new QuestConsumeTree(_allLegendSetup.Legion.Archimonde, druids));
-      
+
       TriggeredDialogueManager.Add(new TriggeredDialogue(
         new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf07\N07Archimonde28.flac",
           "At last, the way to the World Tree is clear! Witness the end, you mortals! The final hour has come.",
@@ -282,6 +290,12 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
         , null, new List<Objective>
         {
           new ObjectiveQuestComplete(questConsumeTree)
+          {
+            EligibleFactions = new List<Faction>
+            {
+              this
+            }
+          }
         }
       ));
     }

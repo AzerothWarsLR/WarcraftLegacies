@@ -241,8 +241,14 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
           new Objective[]
           {
             new ObjectiveLegendMeetsLegend(_allLegendSetup.Scourge.Arthas, _allLegendSetup.Scourge.Kelthuzad),
-            new ObjectiveQuestComplete(GetQuestByType<QuestKelthuzadDies>()),
+            new ObjectiveQuestComplete(GetQuestByType<QuestKelthuzadDies>())
+            {
+              EligibleFactions = new List<Faction> { this }
+            },
             new ObjectiveQuestNotComplete(GetQuestByType<QuestKelthuzadLich>())
+            {
+              EligibleFactions = new List<Faction> { this }
+            }
           }));
     }
 
@@ -333,7 +339,10 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
           {
             new ObjectiveLegendInRect(_allLegendSetup.Scourge.Arthas, Regions.QuelthalasAmbient, "Quel'thalas"),
             new ObjectiveLegendInRect(_allLegendSetup.Scourge.Kelthuzad, Regions.QuelthalasAmbient, "Quel'thalas"),
-            new ObjectiveQuestComplete(GetQuestByType<QuestKelthuzadDies>()),
+            new ObjectiveQuestComplete(GetQuestByType<QuestKelthuzadDies>())
+            {
+              EligibleFactions = new List<Faction> { this }
+            },
             new ObjectiveQuestNotComplete(GetQuestByType<QuestKelthuzadLich>())
           }));
 
@@ -383,6 +392,9 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
           new[]
           {
             new ObjectiveQuestComplete(GetQuestByType<QuestKelthuzadLich>())
+            {
+              EligibleFactions = new List<Faction> { this }
+            }
           }));
     }
 

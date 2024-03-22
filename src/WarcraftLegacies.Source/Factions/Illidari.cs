@@ -153,6 +153,12 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
         }, new List<Objective>
         {
           new ObjectiveQuestComplete(GetQuestByType<QuestBlackTemple>())
+          {
+            EligibleFactions = new List<Faction>
+            {
+              this
+            }
+          }
         }
       ));
 

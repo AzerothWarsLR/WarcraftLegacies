@@ -427,7 +427,10 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
             this
           }, new Objective[]
           {
-            new ObjectiveQuestComplete(scourge.GetQuestByType<QuestPlague>()),
+            new ObjectiveQuestComplete(scourge.GetQuestByType<QuestPlague>())
+            {
+              EligibleFactions = new List<Faction> { this }
+            },
             new ObjectiveControlLegend(_allLegendSetup.Lordaeron.Arthas, false)
             {
               EligibleFactions = new List<Faction> { this }
