@@ -13,13 +13,11 @@ namespace WarcraftLegacies.Source.Spells
   public sealed class TitanForgeArtifact : Spell
   {
     private readonly int _goldCost;
-    private readonly int _lumberCost;
 
     /// <inheritdoc />
-    public TitanForgeArtifact(int id, int goldCost, int lumberCost) : base(id)
+    public TitanForgeArtifact(int id, int goldCost) : base(id)
     {
       _goldCost = goldCost;
-      _lumberCost = lumberCost;
     }
     
     /// <inheritdoc />
@@ -49,10 +47,6 @@ namespace WarcraftLegacies.Source.Spells
       }
     }
 
-    private void Refund(player whichPlayer)
-    {
-      whichPlayer.AddGold(_goldCost);
-      whichPlayer.AddLumber(_lumberCost);
-    }
+    private void Refund(player whichPlayer) => whichPlayer.AddGold(_goldCost);
   }
 }

@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
     /// </summary>
     public static void Setup()
     {
-      SpellSystem.Register(new TitanForgeArtifact(Constants.ABILITY_A0T3_TITANFORGE_ARTIFACT_IRONFORGE, 0, 75));
+      SpellSystem.Register(new TitanForgeArtifact(Constants.ABILITY_A0T3_TITANFORGE_ARTIFACT_IRONFORGE, 0));
 
       var lightningAttack = new SpellOnAttack(Constants.UNIT_H03Z_STORMRIDER_IRONFORGE,
         Constants.ABILITY_A10J_MASTER_OF_LIGHTNING_STORMRIDERS)
