@@ -20,7 +20,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.TimeBased
     public ObjectiveExpire(int duration, string questName)
     {
       var turn = GameTime.ConvertGameTimeToTurn(duration);
-      Description = $"Complete this quest before turn {turn} has passed";
+      Description = $"Turn {turn} hasn't started";
       _expirationTimer = CreateTimer();
       _warningTimer = CreateTimer();
       TimerStart(_expirationTimer, duration, false, OnExpire);
