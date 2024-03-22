@@ -126,8 +126,9 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
 
     private void RegisterQuests()
     {
-      StartingQuest = AddQuest(new QuestFeathermoon(Regions.FeathermoonUnlock));
-      AddQuest(new QuestAstranaar(new List<Rectangle> { Regions.AstranaarUnlock, Regions.AuberdineUnlock }));
+      var questFeathermoon = AddQuest(new QuestFeathermoon(Regions.FeathermoonUnlock));
+      StartingQuest = questFeathermoon;
+      AddQuest(new QuestAstranaar(questFeathermoon, new List<Rectangle> { Regions.AstranaarUnlock, Regions.AuberdineUnlock }));
       AddQuest(new QuestSentinelsKillWarsong(_allLegendSetup.Warsong.Orgrimmar));
       AddQuest(new QuestSentinelsKillFrostwolf(_allLegendSetup.Frostwolf.ThunderBluff));
       AddQuest(new QuestScepterOfTheQueenSentinels(Regions.TheAthenaeum, _artifactSetup.ScepterOfTheQueen, _allLegendSetup.Warsong.StonemaulKeep));
