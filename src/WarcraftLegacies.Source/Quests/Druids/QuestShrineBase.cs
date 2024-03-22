@@ -13,20 +13,18 @@ namespace WarcraftLegacies.Source.Quests.Druids
 {
   public sealed class QuestShrineBase : QuestData
   {
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
 
     public QuestShrineBase(Rectangle rescueRect) : base("Hyjal's Rest",
       "Mount Hyjal has been invaded by the corruption already affecting Felwood. Clear them out to awaken the Ancients",
       @"ReplaceableTextures\CommandButtons\BTNAncientOfTheMoon.blp")
     {
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N0BI_SHRINE_TO_MALORNE));
+      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N0BI_SHRINE_TO_MALORNE, false));
       AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.ShrineBaseUnlock }, "in Hyjal"));
       AddObjective(new ObjectiveExpire(480, Title));
       AddObjective(new ObjectiveSelfExists());
       
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-
-      
     }
 
     /// <inheritdoc />

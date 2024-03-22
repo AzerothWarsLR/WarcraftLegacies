@@ -20,7 +20,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     public ObjectiveControlCapital(Capital target, bool canFail)
     {
       _target = target;
-      Description = $"Your team controls {target.Name}";
+      Description = $"You control {target.Name}";
       _canFail = canFail;
       if (target.Unit != null)
       {

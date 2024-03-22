@@ -13,7 +13,7 @@
 //  12	Empty
 //  13	Draenei
 //  14	Empty
-//  15	Illidan
+//  15	Illidari/Sunfury
 //  16	CrisisCaptain
 //  17  Empty
 //  18	Sentinels

@@ -4,7 +4,6 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
-using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using System.Collections.Generic;
 using WCSharp.Shared.Data;
@@ -26,7 +25,6 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       @"ReplaceableTextures\CommandButtons\BTNHeroTinker.blp")
     {
       _katherine = katherine;
-      AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.BootyBayQuest }, "in Booty Bay"));
       AddObjective(new ObjectiveControlLegend(katherine, false));
       AddObjective(new ObjectiveControlPoint(Constants.UNIT_N00L_BOOTY_BAY));
       AddObjective(new ObjectiveSelfExists());
