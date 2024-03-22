@@ -51,13 +51,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Eredar Summoners\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Flame Shield."
+      "Value": "Increases Eredar Summoners\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Flame Shield."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Eredar Summoners\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Summon Minion."
+      "Value": "Increases Eredar Summoners\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Summon Minion."
     }
   ]
 }

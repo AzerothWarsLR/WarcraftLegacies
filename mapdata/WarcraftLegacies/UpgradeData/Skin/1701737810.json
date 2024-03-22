@@ -38,13 +38,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Necromancers\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Unholy Frenzy."
+      "Value": "Increases Necromancers\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Unholy Frenzy."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Necromancers\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Soul Burn."
+      "Value": "Increases Necromancers\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Soul Burn."
     },
     {
       "Level": 3,

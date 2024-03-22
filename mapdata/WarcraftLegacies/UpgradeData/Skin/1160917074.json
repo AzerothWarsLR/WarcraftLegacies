@@ -39,37 +39,37 @@
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "Light\u0027s Praise Adept Training"
+      "Value": "Light\u0027s Praising Adept Training"
     },
     {
       "Level": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "Light\u0027s Praise Master Training"
+      "Value": "Light\u0027s Praising Master Training"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "Light\u0027s Praise Adept Training"
+      "Value": "Light\u0027s Praising Adept Training"
     },
     {
       "Level": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "Light\u0027s Praise Master Training"
+      "Value": "Light\u0027s Praising Master Training"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Chaplains\u0027 or Pastors\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Renewal."
+      "Value": "Increases Chaplains\u0027 or Pastors\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Renewal."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Chaplains\u0027 or Pastors\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Rain of Light."
+      "Value": "Increases Chaplains\u0027 or Pastors\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Rain of Light."
     }
   ]
 }

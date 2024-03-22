@@ -81,7 +81,6 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(Constants.UNIT_U02B_YOGG_SARON_CHAMPION, 1);
       ModObjectLimit(Constants.UNIT_E01D_N_RAQI_ARCANIST_YOGG, 1);
 
-      ModObjectLimit(FourCC("R00K"), UNLIMITED); //Power Infusion
     }
   }
 }

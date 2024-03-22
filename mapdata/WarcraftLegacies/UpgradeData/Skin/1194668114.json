@@ -27,13 +27,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases the Thornspeaker mana capacity, mana regeneration rate, attack damage and gives them the ability Dispel Magic."
+      "Value": "Increases the Thornspeaker mana capacity, mana regeneration rate, hit points and gives them the ability Dispel Magic."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases the Thornspeaker mana capacity, mana regeneration rate, attack damage and gives them the ability Natural Burial and unlocks the Whickerbeast unit."
+      "Value": "Increases the Thornspeaker mana capacity, mana regeneration rate, hit points and gives them the ability Natural Burial and unlocks the Whickerbeast unit."
     },
     {
       "Level": 1,

@@ -75,7 +75,11 @@
     {
       "Id": 1919381621,
       "Type": 3,
-      "Value": "R00P,R07V,R00K,Ruba,Rupm,Rguv"
+      "Value": "Ruba,Rupm,Rguv,Rhme,Rhar"
+    },
+    {
+      "Id": 1932616053,
+      "Value": 3
     }
   ]
 }

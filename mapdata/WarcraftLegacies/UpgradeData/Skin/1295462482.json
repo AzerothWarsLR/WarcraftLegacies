@@ -39,13 +39,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Alchemist mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Dispel Magic."
+      "Value": "Increases Alchemist mana capacity, mana regeneration rate, hit points and gives them the ability to cast Dispel Magic."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Alchemist mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Acid Bomb."
+      "Value": "Increases Alchemist mana capacity, mana regeneration rate, hit points and gives them the ability to cast Acid Bomb."
     },
     {
       "Level": 1,
@@ -93,7 +93,7 @@
       "Level": 3,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Alchemist mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Acid Bomb."
+      "Value": "Increases Alchemist mana capacity, mana regeneration rate, hit points and gives them the ability to cast Acid Bomb."
     },
     {
       "Level": 3,
