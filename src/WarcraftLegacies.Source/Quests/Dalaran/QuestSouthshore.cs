@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       @"ReplaceableTextures\CommandButtons\BTNMurloc.blp")
     {
       AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { rescueRect }, "in Southshore"));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N08M_SOUTHSHORE)));
+      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N08M_SOUTHSHORE));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

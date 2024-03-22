@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       @"ReplaceableTextures\CommandButtons\BTNWarEagle.blp")
     {
       AddObjective(new ObjectiveControlCapital(draktharonKeep, false));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02S_STORM_PEAKS)));
+      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N02S_STORM_PEAKS));
     }
 
     //Todo: bad flavour

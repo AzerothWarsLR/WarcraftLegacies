@@ -21,9 +21,9 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       "The Dwarven Dominion must be established before Ironforge can join the war.",
       @"ReplaceableTextures\CommandButtons\BTNDwarvenFortress.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n017"))));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n014"))));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n013"))));
+      AddObjective(new ObjectiveControlPoint(FourCC("n017")));
+      AddObjective(new ObjectiveControlPoint(FourCC("n014")));
+      AddObjective(new ObjectiveControlPoint(FourCC("n013")));
       AddObjective(new ObjectiveUpgrade(FourCC("h07G"), FourCC("h07E")));
       AddObjective(new ObjectiveExpire(1462, Title));
       AddObjective(new ObjectiveSelfExists());

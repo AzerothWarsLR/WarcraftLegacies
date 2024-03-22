@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       @"ReplaceableTextures\CommandButtons\BTNOgreLord.blp")
     {
       AddObjective(new ObjectiveUnitIsDead(ogreLordToKill));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n011"))));
+      AddObjective(new ObjectiveControlPoint(FourCC("n011")));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())

@@ -19,9 +19,9 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       @"ReplaceableTextures\CommandButtons\BTNNeverMeltingCrown.blp")
     {
       _velen = velen;
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n0BH"))));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n0BL"))));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n09X"))));
+      AddObjective(new ObjectiveControlPoint(FourCC("n0BH")));
+      AddObjective(new ObjectiveControlPoint(FourCC("n0BL")));
+      AddObjective(new ObjectiveControlPoint(FourCC("n09X")));
       AddObjective(new ObjectiveLegendNotPermanentlyDead(velen));
       Global = true;
     }

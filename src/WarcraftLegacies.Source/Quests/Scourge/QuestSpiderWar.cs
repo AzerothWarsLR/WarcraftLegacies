@@ -22,9 +22,9 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       "The proud Nerubians have declared war on the newly formed Lich King, destroy them to secure the continent of Northrend.",
       @"ReplaceableTextures\CommandButtons\BTNNerubianQueen.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n08D"))));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n00G"))));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N09H_EN_KILAH)));
+      AddObjective(new ObjectiveControlPoint(FourCC("n08D")));
+      AddObjective(new ObjectiveControlPoint(FourCC("n00G")));
+      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N09H_EN_KILAH));
       AddObjective(new ObjectiveUnitIsDead(spiderQueen));
       AddObjective(new ObjectiveUpgrade(FourCC("unp2"), FourCC("unp1")));
       AddObjective(new ObjectiveExpire(660, Title));

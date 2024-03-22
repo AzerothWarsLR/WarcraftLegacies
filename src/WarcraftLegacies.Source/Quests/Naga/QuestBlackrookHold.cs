@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
         Regions.BrokenIslesB
       }, "on the Broken Isles"));
       AddObjective(new NoOtherPlayerGetsCapital(blackrookHold));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N053_VAL_SHARAH)));
+      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N053_VAL_SHARAH));
     }
 
     /// <inheritdoc />

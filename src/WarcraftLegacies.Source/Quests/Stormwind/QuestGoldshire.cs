@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       @"ReplaceableTextures\CommandButtons\BTNGnoll.blp")
     {
       AddObjective(new ObjectiveUnitIsDead(hogger)); //Hogger
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n00Z"))));
+      AddObjective(new ObjectiveControlPoint(FourCC("n00Z")));
       AddObjective(new ObjectiveExpire(600, Title));
       AddObjective(new ObjectiveSelfExists());
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())

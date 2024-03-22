@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       "Drak'tharon Keep", "Drak'tharon Keep will be the perfect place for an outpost by the sea.",
       @"ReplaceableTextures\CommandButtons\BTNUndeadShipyard.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N030_DRAK_THARON_KEEP)));
+      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N030_DRAK_THARON_KEEP));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = Constants.UPGRADE_R08J_QUEST_COMPLETED_DRAK_THARON_KEEP;

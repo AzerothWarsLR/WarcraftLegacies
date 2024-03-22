@@ -10,11 +10,26 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
   {
     private readonly ControlPoint _target;
 
+    /// <summary>
+    /// Initializes a new instance of <see cref="ObjectiveControlPoint"/> using an actual <see cref="ControlPoint"/>.
+    /// </summary>
     public ObjectiveControlPoint(ControlPoint target)
     {
       _target = target;
       Description = $"Your team controls {target.Name}";
       TargetWidget = target.Unit;
+      DisplaysPosition = true;
+      Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
+    }
+    
+    /// <summary>
+    /// Initializes a new instance of <see cref="ObjectiveControlPoint"/> using a unit type ID.
+    /// </summary>
+    public ObjectiveControlPoint(int controlPointUnitType)
+    {
+      _target = ControlPointManager.Instance.GetFromUnitType(controlPointUnitType);
+      Description = $"Your team controls {_target.Name}";
+      TargetWidget = _target.Unit;
       DisplaysPosition = true;
       Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
     }
