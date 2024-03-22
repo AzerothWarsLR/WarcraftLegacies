@@ -22,7 +22,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       set
       {
         _controlPointCount = value;
-        Description = $"Your team controls {ControlPointCount} / {_progressByControlPoint.Count} CPs {_rectName}";
+        Description = $"You control {ControlPointCount} / {_progressByControlPoint.Count} CPs {_rectName}";
         CheckObjectiveProgress();
       }
     }
