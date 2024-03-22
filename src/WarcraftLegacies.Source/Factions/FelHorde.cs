@@ -31,7 +31,7 @@ You begin in Nagrand, cut off from your forces in Hellfire Citadel. You must rai
 
 Once Outland is under your control, gather your hordes and prepare to invade Azeroth through the Dark Portal.
 
-The Alliance is gathering outside the Dark Portal to stop you, so prepare to for a very hard breakout.";
+The Alliance is gathering outside the Dark Portal to stop you, so prepare for a very hard breakout.";
       FoodMaximum = 250;
       GoldMines = new List<unit>
       {
