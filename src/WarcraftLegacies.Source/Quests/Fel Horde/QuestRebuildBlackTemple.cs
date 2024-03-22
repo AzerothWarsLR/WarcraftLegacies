@@ -6,7 +6,6 @@ using WCSharp.Shared.Data;
 using static War3Api.Common;
 using System.Collections.Generic;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
-using MacroTools.ControlPointSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 
 namespace WarcraftLegacies.Source.Quests.Fel_Horde

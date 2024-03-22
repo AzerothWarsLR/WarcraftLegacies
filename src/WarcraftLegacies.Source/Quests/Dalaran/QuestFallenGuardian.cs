@@ -1,5 +1,4 @@
-﻿using MacroTools.ControlPointSystem;
-using MacroTools.LegendSystem;
+﻿using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;

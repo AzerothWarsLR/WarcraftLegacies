@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using MacroTools;
-using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;

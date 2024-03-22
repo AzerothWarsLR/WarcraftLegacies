@@ -10,7 +10,6 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.Powers;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
-using MacroTools.ControlPointSystem;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
