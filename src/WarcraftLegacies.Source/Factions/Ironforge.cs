@@ -135,7 +135,7 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
 
     private void RegisterQuests()
     {
-      var questThelsamar = AddQuest(new QuestThelsamar(_preplacedUnitSystem, Regions.ThelUnlock));
+      var questThelsamar = AddQuest(new QuestThelsamar(Regions.ThelUnlock));
       StartingQuest = questThelsamar;
       AddQuest(new QuestDunMorogh());
       AddQuest(new QuestDominion(Regions.IronforgeAmbient, questThelsamar));
