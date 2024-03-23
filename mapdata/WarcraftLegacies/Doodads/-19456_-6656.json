@@ -1,42 +1,42 @@
 [
   {
     "State": 2,
-    "Life": 100,
-    "TypeId": 1668568129,
+    "Life": 255,
+    "TypeId": 1295396932,
     "Variation": 1,
     "Position": {
       "X": -19680,
       "Y": -7008,
       "Z": 88.859375
     },
-    "Rotation": 4.7123895,
+    "Rotation": 4.712389,
     "Scale": {
       "X": 1.161156,
       "Y": 1.161156,
       "Z": 1.161156
     },
-    "SkinId": 1668568129,
+    "SkinId": 1295396932,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 9535
   },
   {
     "State": 2,
-    "Life": 100,
-    "TypeId": 1920226369,
-    "Variation": 4,
+    "Life": 255,
+    "TypeId": 892416068,
+    "Variation": 1,
     "Position": {
       "X": -19776,
       "Y": -6848,
       "Z": 86.75
     },
-    "Rotation": 4.7123895,
+    "Rotation": 4.712389,
     "Scale": {
       "X": 0.83266705,
       "Y": 0.83266705,
       "Z": 0.83266705
     },
-    "SkinId": 1920226369,
+    "SkinId": 892416068,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 18956
@@ -64,42 +64,41 @@
   },
   {
     "State": 2,
-    "Life": 100,
-    "TypeId": 1668568129,
-    "Variation": 2,
+    "Life": 255,
+    "TypeId": 1295396932,
     "Position": {
       "X": -19680,
       "Y": -6816,
       "Z": 118.671875
     },
-    "Rotation": 4.7123895,
+    "Rotation": 4.712389,
     "Scale": {
       "X": 1.0811487,
       "Y": 1.0811487,
       "Z": 1.0811487
     },
-    "SkinId": 1668568129,
+    "SkinId": 1295396932,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 718
   },
   {
     "State": 2,
-    "Life": 100,
-    "TypeId": 1668568129,
+    "Life": 255,
+    "TypeId": 1295396932,
     "Variation": 1,
     "Position": {
       "X": -19808,
       "Y": -6752,
       "Z": 103.265625
     },
-    "Rotation": 4.7123895,
+    "Rotation": 4.712389,
     "Scale": {
       "X": 0.8983795,
       "Y": 0.8983795,
       "Z": 0.8983795
     },
-    "SkinId": 1668568129,
+    "SkinId": 1295396932,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 251

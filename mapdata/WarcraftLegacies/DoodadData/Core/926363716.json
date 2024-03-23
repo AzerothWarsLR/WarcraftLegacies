@@ -1,0 +1,33 @@
+{
+  "OldId": 2004111426,
+  "NewId": 926363716,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818850404,
+      "Type": 3,
+      "Value": "*"
+    },
+    {
+      "Id": 1918989924,
+      "Value": 1
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "1 - QuelThalas Tree (Barrens)"
+    },
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "war3mapImported\\Tree_QuelBarrens1.mdl"
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 1.6
+    }
+  ]
+}

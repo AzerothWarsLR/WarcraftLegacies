@@ -2,6 +2,26 @@
   {
     "State": 2,
     "Life": 255,
+    "TypeId": 1295396932,
+    "Position": {
+      "X": -14880,
+      "Y": 4384,
+      "Z": 86.84375
+    },
+    "Rotation": 1.4407449,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 1295396932,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 3055
+  },
+  {
+    "State": 2,
+    "Life": 255,
     "TypeId": 1952665665,
     "Position": {
       "X": -15070.927,
@@ -62,50 +82,8 @@
   },
   {
     "State": 2,
-    "Life": 100,
-    "TypeId": 1920226369,
-    "Variation": 3,
-    "Position": {
-      "X": -15296,
-      "Y": 4800,
-      "Z": 47
-    },
-    "Rotation": 4.7123895,
-    "Scale": {
-      "X": 1.1281999,
-      "Y": 1.1281999,
-      "Z": 1.1281999
-    },
-    "SkinId": 1920226369,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 19937
-  },
-  {
-    "State": 2,
-    "Life": 100,
-    "TypeId": 1920226369,
-    "Variation": 1,
-    "Position": {
-      "X": -15168,
-      "Y": 4672,
-      "Z": 63.25
-    },
-    "Rotation": 4.7123895,
-    "Scale": {
-      "X": 0.9157507,
-      "Y": 0.9157507,
-      "Z": 0.9157507
-    },
-    "SkinId": 1920226369,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 19938
-  },
-  {
-    "State": 2,
-    "Life": 100,
-    "TypeId": 1668568129,
+    "Life": 255,
+    "TypeId": 1295396932,
     "Position": {
       "X": -15072,
       "Y": 4640,
@@ -117,15 +95,15 @@
       "Y": 0.85,
       "Z": 0.85
     },
-    "SkinId": 1668568129,
+    "SkinId": 1295396932,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 28786
   },
   {
     "State": 2,
-    "Life": 100,
-    "TypeId": 1668568129,
+    "Life": 255,
+    "TypeId": 1295396932,
     "Variation": 1,
     "Position": {
       "X": -15200,
@@ -138,7 +116,7 @@
       "Y": 0.85,
       "Z": 0.85
     },
-    "SkinId": 1668568129,
+    "SkinId": 1295396932,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 28794

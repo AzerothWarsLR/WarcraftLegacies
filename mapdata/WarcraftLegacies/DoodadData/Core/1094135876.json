@@ -1,0 +1,33 @@
+{
+  "OldId": 2004111426,
+  "NewId": 1094135876,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818850404,
+      "Type": 3,
+      "Value": "*"
+    },
+    {
+      "Id": 1918989924,
+      "Value": 1
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "1 - Ruins Tree"
+    },
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "war3mapImported\\Tree_RuinsTree9.mdl"
+    },
+    {
+      "Id": 1936289124,
+      "Type": 2,
+      "Value": 0.5
+    }
+  ]
+}
