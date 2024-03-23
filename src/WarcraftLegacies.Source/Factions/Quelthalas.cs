@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using MacroTools;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
@@ -17,9 +18,11 @@ namespace WarcraftLegacies.Source.Factions
     private readonly AllLegendSetup _allLegendSetup;
 
     /// <inheritdoc />
+    [SetsRequiredMembers]
     public Quelthalas(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Quel'thalas", PLAYER_COLOR_CYAN, "|C0000FFFF",
       @"ReplaceableTextures\CommandButtons\BTNSylvanusWindrunner.blp")
     {
+      TraditionalTeam = TeamSetup.NorthAlliance;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
       UndefeatedResearch = UPGRADE_R05U_QUEL_THALAS_EXISTS;

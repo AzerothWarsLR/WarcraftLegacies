@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using MacroTools;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
@@ -21,10 +22,12 @@ namespace WarcraftLegacies.Source.Factions
     private readonly PreplacedUnitSystem _preplacedUnitSystem;
 
     /// <inheritdoc />
+    [SetsRequiredMembers]
     public Frostwolf(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup,
       ArtifactSetup artifactSetup) : base("Frostwolf", PLAYER_COLOR_RED, "|c00ff0303",
       @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
     {
+      TraditionalTeam = TeamSetup.Horde;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;

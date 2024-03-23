@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using MacroTools;
 using MacroTools.FactionSystem;
 using MacroTools.ResearchSystems;
@@ -15,9 +16,11 @@ namespace WarcraftLegacies.Source.Factions
     private readonly AllLegendSetup _allLegendSetup;
 
     /// <inheritdoc />
+    [SetsRequiredMembers]
     public Ironforge(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Ironforge",
       PLAYER_COLOR_YELLOW, "|C00FFFC01", @"ReplaceableTextures\CommandButtons\BTNHeroMountainKing.blp")
     {
+      TraditionalTeam = TeamSetup.SouthAlliance;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
       UndefeatedResearch = FourCC("R05T");

@@ -126,7 +126,13 @@ namespace MacroTools.FactionSystem
     /// A list of additional names that this Faction can be referred to by in commands.
     /// </summary>
     public IReadOnlyList<string> Nicknames { get; protected init; } = new List<string>();
-
+    
+    /// <summary>
+    /// The <see cref="Team"/> that the <see cref="Faction"/> would traditionally be on.
+    /// <para>May or may not be used depending on actual game mode selections.</para>
+    /// </summary>
+    public required Team TraditionalTeam { get; init; }
+    
     /// <summary>
     ///   The <see cref="Faction" />'s food limit.
     ///   A <see cref="player" /> with this Faction can never exceed this amount of food.

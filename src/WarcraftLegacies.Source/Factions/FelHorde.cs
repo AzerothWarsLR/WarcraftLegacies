@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using MacroTools;
 using MacroTools.FactionSystem;
 using WarcraftLegacies.Source.FactionMechanics.Fel_Horde;
@@ -14,9 +15,11 @@ namespace WarcraftLegacies.Source.Factions
     private readonly AllLegendSetup _allLegendSetup;
 
     /// <inheritdoc />
+    [SetsRequiredMembers]
     public FelHorde(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Fel Horde",
       PLAYER_COLOR_GREEN, "|c0020c000", @"ReplaceableTextures\CommandButtons\BTNPitLord.blp")
     {
+      TraditionalTeam = TeamSetup.Outland;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
       UndefeatedResearch = FourCC("R05L");
