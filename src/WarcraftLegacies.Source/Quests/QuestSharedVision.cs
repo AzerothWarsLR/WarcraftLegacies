@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests
     }
     
     /// <inheritdoc/>
-    protected override string RewardDescription => "Every player in each team shares vision with their allies";
+    protected override string RewardDescription => "Every player shares vision with their extended allies";
 
     /// <inheritdoc/>
     public override string RewardFlavour =>
