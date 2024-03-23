@@ -13,6 +13,6 @@
     /// <summary>
     /// Only <see cref="Team"/> members that started on the same team as each other share vision.
     /// </summary>
-    CloseAlliesOnly
+    TraditionalAlliesOnly
   }
 }

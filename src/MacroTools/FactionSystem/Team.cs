@@ -16,10 +16,7 @@ namespace MacroTools.FactionSystem
     private readonly List<player> _invitees = new();
     private TeamSharedVisionMode _sharedVisionMode = TeamSharedVisionMode.All;
 
-    public Team(string name)
-    {
-      Name = name;
-    }
+    public Team(string name) => Name = name;
 
     public string Name { get; }
 
@@ -46,14 +43,13 @@ namespace MacroTools.FactionSystem
       get => _sharedVisionMode;
       set
       {
-        var allianceState = SharedVisionMode == TeamSharedVisionMode.All
-          ? AllianceState.AlliedVision
-          : AllianceState.Allied;
-
         foreach (var outerMember in _members)
         foreach (var innerMember in _members)
           if (outerMember != innerMember)
+          {
+            var allianceState = DetermineAllianceState(outerMember, innerMember);
             innerMember.SetAllianceState(outerMember, allianceState);
+          }
 
         _sharedVisionMode = value;
       }
@@ -95,12 +91,9 @@ namespace MacroTools.FactionSystem
     /// <param name="whichPlayer"></param>
     internal void AllyPlayer(player whichPlayer)
     {
-      var allianceState = SharedVisionMode == TeamSharedVisionMode.All
-        ? AllianceState.AlliedVision
-        : AllianceState.Allied;
-      
       foreach (var player in _members)
       {
+        var allianceState = DetermineAllianceState(whichPlayer, player);
         whichPlayer.SetAllianceState(player, allianceState);
         player.SetAllianceState(whichPlayer, allianceState);
       }
@@ -187,6 +180,28 @@ namespace MacroTools.FactionSystem
           return true;
       
       return false;
+    }
+
+    private AllianceState DetermineAllianceState(player playerA, player playerB)
+    {
+      AllianceState allianceState;
+      switch (SharedVisionMode)
+      {
+        case TeamSharedVisionMode.TraditionalAlliesOnly:
+        {
+          var joiningPlayerTradTeam = playerA.GetFaction()?.TraditionalTeam;
+          var existingPlayerTradTeam = playerB.GetFaction()?.TraditionalTeam;
+          allianceState = joiningPlayerTradTeam == existingPlayerTradTeam ? AllianceState.AlliedVision : AllianceState.Allied;
+          break;
+        }
+        case TeamSharedVisionMode.All:
+          allianceState = AllianceState.AlliedVision;
+          break;
+        default:
+          throw new ArgumentOutOfRangeException();
+      }
+
+      return allianceState;
     }
   }
 }

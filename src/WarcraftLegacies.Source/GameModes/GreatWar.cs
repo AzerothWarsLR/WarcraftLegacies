@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.GameModes
     /// <inheritdoc />
     public void OnChoose()
     {
-      FactionManager.SharedVisionMode = TeamSharedVisionMode.CloseAlliesOnly;
+      FactionManager.SharedVisionMode = TeamSharedVisionMode.TraditionalAlliesOnly;
       
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         DisplayTextToPlayer(player, 0, 0, "The Great War begins!");
