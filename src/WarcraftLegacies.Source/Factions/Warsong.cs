@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using MacroTools;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
@@ -17,7 +16,7 @@ namespace WarcraftLegacies.Source.Factions
     private readonly AllLegendSetup _allLegendSetup;
 
     /// <inheritdoc />
-    [SetsRequiredMembers]
+    
     public Warsong(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Warsong", PLAYER_COLOR_ORANGE, "|c00ff8000",
       @"ReplaceableTextures\CommandButtons\BTNHellScream.blp")
     {

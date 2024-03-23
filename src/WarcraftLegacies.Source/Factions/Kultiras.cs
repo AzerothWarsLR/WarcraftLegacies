@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using MacroTools;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
@@ -16,7 +15,7 @@ namespace WarcraftLegacies.Source.Factions
     private readonly unit _proudmooreCapitalShip;
 
     /// <inheritdoc />
-    [SetsRequiredMembers]
+    
     public Kultiras(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Kul'tiras",
       PLAYER_COLOR_EMERALD, "|cff00781e", @"ReplaceableTextures\CommandButtons\BTNProudmoore.blp")
     {

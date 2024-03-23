@@ -12,17 +12,6 @@ namespace WarcraftLegacies.Source.GameModes
 {
   public static class GameModeExtensions
   {
-    public static IGameMode SetupTraditionalTeams(this IGameMode gameMode)
-    {
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-      {
-        var faction = player.GetFaction();
-        if (faction != null)
-          player.SetTeam(faction.TraditionalTeam);
-      }
-      return gameMode;
-    }
-
     public static IGameMode SetupGreatWarTeams(this IGameMode gameMode)
     {
       FactionManager.SharedVisionMode = TeamSharedVisionMode.TraditionalAlliesOnly;

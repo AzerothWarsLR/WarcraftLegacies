@@ -1,7 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using WarcraftLegacies.Source.Quests.Stormwind;
 using WarcraftLegacies.Source.Researches.Stormwind;
 using WarcraftLegacies.Source.Setup;
@@ -15,7 +14,7 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    [SetsRequiredMembers]
+    
     public Stormwind(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Stormwind", PLAYER_COLOR_BLUE, "|c000042ff",
       @"ReplaceableTextures\CommandButtons\BTNKnight.blp")
     {

@@ -131,7 +131,7 @@ namespace MacroTools.FactionSystem
     /// The <see cref="Team"/> that the <see cref="Faction"/> would traditionally be on.
     /// <para>May or may not be used depending on actual game mode selections.</para>
     /// </summary>
-    public required Team TraditionalTeam { get; init; }
+    public Team? TraditionalTeam { get; protected init; }
     
     /// <summary>
     ///   The <see cref="Faction" />'s food limit.

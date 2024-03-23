@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using MacroTools;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
@@ -20,7 +19,7 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    [SetsRequiredMembers]
+    
     public Sentinels(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80",
       @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
     {

@@ -10,7 +10,7 @@ namespace WarcraftLegacies.Source.GameModes
     /// <inheritdoc />
     public void OnChoose()
     {
-      this.SetupTraditionalTeams()
+      this
         .SetupAllianceCommands()
         .SetupControlPointVictory();
     }

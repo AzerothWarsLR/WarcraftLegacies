@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using MacroTools;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
@@ -22,7 +21,7 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    [SetsRequiredMembers]
+    
     public Druids(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) :
       base("Druids", PLAYER_COLOR_BROWN, "|c004e2a04", @"ReplaceableTextures\CommandButtons\BTNFurion.blp")
     {

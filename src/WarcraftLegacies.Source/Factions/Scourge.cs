@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using MacroTools;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
@@ -24,7 +23,7 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    [SetsRequiredMembers]
+    
     public Scourge(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
       : base("Scourge", PLAYER_COLOR_PURPLE, "|c00540081",
         @"ReplaceableTextures\CommandButtons\BTNRevenant.blp")
