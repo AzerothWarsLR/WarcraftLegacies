@@ -14,6 +14,7 @@ namespace MacroTools.FactionSystem
   {
     private readonly List<player> _members = new();
     private readonly List<player> _invitees = new();
+    private TeamSharedVisionMode _sharedVisionMode = TeamSharedVisionMode.All;
 
     public Team(string name)
     {
@@ -37,6 +38,27 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public string? VictoryMusic { get; init; }
 
+    /// <summary>
+    /// How shared vision in this <see cref="Team"/> should behave.
+    /// </summary>
+    internal TeamSharedVisionMode SharedVisionMode
+    {
+      get => _sharedVisionMode;
+      set
+      {
+        var allianceState = SharedVisionMode == TeamSharedVisionMode.All
+          ? AllianceState.AlliedVision
+          : AllianceState.Allied;
+
+        foreach (var outerMember in _members)
+        foreach (var innerMember in _members)
+          if (outerMember != innerMember)
+            innerMember.SetAllianceState(outerMember, allianceState);
+
+        _sharedVisionMode = value;
+      }
+    }
+    
     public IEnumerable<Faction> GetAllFactions()
     {
       foreach (var member in _members)
@@ -73,10 +95,14 @@ namespace MacroTools.FactionSystem
     /// <param name="whichPlayer"></param>
     internal void AllyPlayer(player whichPlayer)
     {
+      var allianceState = SharedVisionMode == TeamSharedVisionMode.All
+        ? AllianceState.AlliedVision
+        : AllianceState.Allied;
+      
       foreach (var player in _members)
       {
-        whichPlayer.SetAllianceState(player, AllianceState.AlliedVision);
-        player.SetAllianceState(whichPlayer, AllianceState.AlliedVision);
+        whichPlayer.SetAllianceState(player, allianceState);
+        player.SetAllianceState(whichPlayer, allianceState);
       }
     }
 

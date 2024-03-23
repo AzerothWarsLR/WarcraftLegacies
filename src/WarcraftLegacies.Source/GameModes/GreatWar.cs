@@ -1,7 +1,10 @@
 ﻿using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using MacroTools.GameModes;
 using MacroTools.HintSystem;
 using WarcraftLegacies.Source.Commands;
+using WarcraftLegacies.Source.GameLogic;
+using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.GameModes
@@ -14,6 +17,8 @@ namespace WarcraftLegacies.Source.GameModes
     /// <inheritdoc />
     public void OnChoose()
     {
+      FactionManager.SharedVisionMode = TeamSharedVisionMode.CloseAlliesOnly;
+      
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         DisplayTextToPlayer(player, 0, 0, "The Great War begins!");
       
@@ -40,11 +45,13 @@ namespace WarcraftLegacies.Source.GameModes
       Player(18).SetTeam(TeamSetup.Alliance);
       
       SetupAllianceCommands();
+      SharedQuestRepository.RegisterQuest(new QuestSharedVision());
     }
 
-    private static void SetupAllianceCommands()
+    private void SetupAllianceCommands()
     {
       Hint.Register(new Hint("You can change alliances by using the commands -invite, -uninvite, -join, and -unally."));
+      Hint.Register(new Hint($"In {Name} mode, you start with shared vision with your closest allies. Later in the game, you gain shared vision with all your allies."));
       InviteCommand.Setup();
       JoinCommand.Setup();
       UnallyCommand.Setup();
