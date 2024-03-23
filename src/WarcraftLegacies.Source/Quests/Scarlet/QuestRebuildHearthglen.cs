@@ -1,5 +1,4 @@
-﻿using MacroTools.ControlPointSystem;
-using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+﻿using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using MacroTools.LegendSystem;
@@ -25,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       
       AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in Hearthglen", 3));
       AddObjective(new ObjectiveControlCapital(monastery, false));
-      AddObjective(new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N044_HEARTHGLEN), 2));
+      AddObjective(new ObjectiveControlLevel(Constants.UNIT_N044_HEARTHGLEN, 2));
       ResearchId = Constants.UPGRADE_R026_QUEST_COMPLETED_HEARTHGLEN;
     }
 

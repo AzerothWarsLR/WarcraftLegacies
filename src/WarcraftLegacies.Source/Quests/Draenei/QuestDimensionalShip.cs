@@ -1,5 +1,4 @@
-﻿using MacroTools.ControlPointSystem;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
@@ -35,8 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       AddObjective(new ObjectiveQuestComplete(prerequisite));
       AddObjective(new ObjectiveTime(1200));
       AddObjective(new ObjectiveBuildInRect(questRect, "inside the Exodar", Constants.UNIT_O056_ARCANE_WELL_DRAENEI_FARM, 10));
-      AddObjective(new ObjectiveControlLevel(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BL_EXODAR_REGALIS), 20));
+      AddObjective(new ObjectiveControlLevel(Constants.UNIT_N0BL_EXODAR_REGALIS, 20));
       _objectivePowerSource = new ObjectivePowerSource(_dimensionalGenerator, new[]
       {
         Constants.ITEM_I006_BOOK_OF_MEDIVH,

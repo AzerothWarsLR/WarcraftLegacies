@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
@@ -26,15 +25,14 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestSilvermoon"/> class.
     /// </summary>
-    public QuestSilvermoon(Rectangle rescueRect, unit elvenRunestone, PreplacedUnitSystem preplacedUnitSystem,
-      Capital silvermoon, Capital sunwell) : base("The Siege of Silvermoon",
+    public QuestSilvermoon(Rectangle rescueRect, unit elvenRunestone, Capital silvermoon, Capital sunwell) : base(
+      "The Siege of Silvermoon",
       "The Amani Trolls have been harassing Silvermoon since its founding, but their defensive position within their jungle has made the prospect of an all-out assault too costly. Today, however, the Amani begins their largest siege yet. They leave us no choice; we must scour Zul'aman if the High Elves are to prosper.",
       @"ReplaceableTextures\CommandButtons\BTNForestTrollTrapper.blp")
     {
       _elvenRunestone = elvenRunestone;
       _silvermoon = silvermoon;
       _sunwell = sunwell;
-      AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(Constants.UNIT_O06Z_ZUL_JIN_CREEP_ZUL_AMAN)));
       AddObjective(new ObjectiveControlPoint(Constants.UNIT_N01V_ZUL_AMAN));
       AddObjective(new ObjectiveControlPoint(Constants.UNIT_N01L_EVERSONG_WOODS));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_H03T_PALACE_QUEL_THALAS_T3, Constants.UNIT_H033_STEADING_QUEL_THALAS_T1));

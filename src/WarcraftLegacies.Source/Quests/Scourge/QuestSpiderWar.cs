@@ -17,21 +17,18 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     private const int QuestResearchId = Constants.UPGRADE_R03A_QUEST_COMPLETED_WAR_OF_THE_SPIDER;
     private readonly List<unit> _rescueUnits;
 
-    public QuestSpiderWar(Rectangle rescueRect, unit spiderQueen) : base("War of the Spider",
+    public QuestSpiderWar(Rectangle rescueRect) : base("War of the Spider",
       "The proud Nerubians have declared war on the newly formed Lich King, destroy them to secure the continent of Northrend.",
       @"ReplaceableTextures\CommandButtons\BTNNerubianQueen.blp")
     {
-      AddObjective(new ObjectiveControlPoint(FourCC("n08D")));
-      AddObjective(new ObjectiveControlPoint(FourCC("n00G")));
+      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N08D_ICECROWN_GLACIER));
+      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N00G_BOREAN_TUNDRA));
       AddObjective(new ObjectiveControlPoint(Constants.UNIT_N09H_EN_KILAH));
-      AddObjective(new ObjectiveUnitIsDead(spiderQueen));
-      AddObjective(new ObjectiveUpgrade(FourCC("unp2"), FourCC("unp1")));
+      AddObjective(new ObjectiveUpgrade(Constants.UNIT_UNP2_BLACK_CITADEL_SCOURGE_T3, Constants.UNIT_UNP1_HALLS_OF_THE_DEAD_SCOURGE_T2));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
 
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-
-      
     }
 
     /// <inheritdoc/>

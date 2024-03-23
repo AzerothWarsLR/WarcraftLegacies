@@ -35,8 +35,8 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       AddObjective(new ObjectiveControlLegend(arthas, true));
       AddObjective(new ObjectiveAcquireArtifact(crownOfLordaeron));
       AddObjective(new ObjectiveAcquireArtifact(crownOfStormwind));
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N010_STORMWIND_CITY));
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N01G_LORDAERON_CITY));
+      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N010_STORMWIND_CITY, false));
+      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N01G_LORDAERON_CITY, false));
       Global = true;
     }
 
