@@ -139,12 +139,11 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
 
     private void RegisterQuests()
     {
-      var newQuest =
-        AddQuest(new QuestDarkshire());
-      StartingQuest = newQuest;
-      AddQuest(new QuestLakeshire(Regions.LakeshireUnlock));
-      AddQuest(new QuestGoldshire(Regions.ElwinForestAmbient));
-      AddQuest(new QuestStormwindCity(Regions.StormwindUnlock));
+      var questDarkshire = AddQuest(new QuestDarkshire());
+      StartingQuest = questDarkshire;
+      var questLakeshire = AddQuest(new QuestLakeshire(Regions.LakeshireUnlock));
+      var questGoldshire = AddQuest(new QuestGoldshire(Regions.ElwinForestAmbient));
+      AddQuest(new QuestStormwindCity(Regions.StormwindUnlock, questDarkshire, questLakeshire, questGoldshire));
       AddQuest(new QuestNethergarde(_preplacedUnitSystem, _allLegendSetup.Stormwind.Varian));
       AddQuest(new QuestStromgarde(Regions.Stromgarde));
       AddQuest(new QuestHonorHold(Regions.HonorHold, _allLegendSetup.FelHorde.HellfireCitadel));
