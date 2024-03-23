@@ -151,7 +151,7 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
     private void RegisterQuests()
     {
       var questStrahnbrad = new QuestStrahnbrad(Regions.StrahnbradUnlock);
-      var questStratholme = new QuestStratholme(Regions.StratholmeUnlock, _preplacedUnitSystem, _allLegendSetup.Lordaeron.Arthas, _allLegendSetup.Lordaeron.Uther, _allLegendSetup.Lordaeron.Stratholme);
+      var questStratholme = new QuestStratholme(Regions.StratholmeUnlock, _allLegendSetup.Lordaeron.Arthas, _allLegendSetup.Lordaeron.Uther, _allLegendSetup.Lordaeron.Stratholme);
       var questTyrHand = new QuestTyrHand(_allLegendSetup.Lordaeron.Stratholme, Regions.TyrUnlock);
       AddQuest(new QuestHearthglen(Regions.Hearthglen));
       AddQuest(questStratholme);
