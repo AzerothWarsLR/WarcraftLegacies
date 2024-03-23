@@ -15,7 +15,6 @@ using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Dalaran;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -32,18 +31,18 @@ namespace WarcraftLegacies.Source.Factions
     {
       _artifactSetup = artifactSetup;
       _allLegendSetup = allLegendSetup;
-      _gilneasGate = preplacedUnitSystem.GetUnit(Constants.UNIT_H02K_GREYMANE_S_GATE_CLOSED);
+      _gilneasGate = preplacedUnitSystem.GetUnit(UNIT_H02K_GREYMANE_S_GATE_CLOSED);
       _dalaranProtectors = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9084, 4979)),
-        preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9008, 4092)),
-        preplacedUnitSystem.GetUnit(Constants.UNIT_N03G_VIOLET_TOWER, new Point(9864, 4086))
+        preplacedUnitSystem.GetUnit(UNIT_N03G_VIOLET_TOWER, new Point(9084, 4979)),
+        preplacedUnitSystem.GetUnit(UNIT_N03G_VIOLET_TOWER, new Point(9008, 4092)),
+        preplacedUnitSystem.GetUnit(UNIT_N03G_VIOLET_TOWER, new Point(9864, 4086))
       };
-      UndefeatedResearch = Constants.UPGRADE_R05N_DALARAN_EXISTS;
+      UndefeatedResearch = UPGRADE_R05N_DALARAN_EXISTS;
       StartingGold = 200;
       StartingLumber = 700;
       CinematicMusic = "SadMystery";
-      ControlPointDefenderUnitTypeId = Constants.UNIT_N00N_CONTROL_POINT_DEFENDER_DALARAN;
+      ControlPointDefenderUnitTypeId = UNIT_N00N_CONTROL_POINT_DEFENDER_DALARAN;
       StartingCameraPosition = Regions.DalaStartPos.Center;
       StartingUnits = Regions.DalaStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       LearningDifficulty = FactionLearningDifficulty.Basic;
@@ -75,7 +74,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       RegisterDialogue();
       RegisterProtectors();
       Regions.Dalaran.CleanupHostileUnits();
-      WaygateManager.Setup(Constants.UNIT_N0AO_WAY_GATE_DALARAN_SIEGE);
+      WaygateManager.Setup(UNIT_N0AO_WAY_GATE_DALARAN_SIEGE);
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
@@ -120,42 +119,42 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       ModObjectLimit(FourCC("n03E"), UNLIMITED); //Pyromancer
       ModObjectLimit(FourCC("n0AK"), UNLIMITED); //Sludge Flinger
       ModObjectLimit(FourCC("o02U"), 6); //Crystal Artillery
-      ModObjectLimit(Constants.UNIT_N0AC_BLUE_DRAGON_DALARAN, 6);
+      ModObjectLimit(UNIT_N0AC_BLUE_DRAGON_DALARAN, 6);
         
       //Ships
-      ModObjectLimit(Constants.UNIT_HBOT_TRANSPORT_SHIP_ALLIANCE, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_H0AR_SCOUT_SHIP_ALLIANCE, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_H0AX_FRIGATE_ALLIANCE, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_H0B3_FIRESHIP_ALLIANCE, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_H0B0_GALLEY_ALLIANCE, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_H0B6_BOARDING_VESSEL_ALLIANCE, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_H0AN_JUGGERNAUT_ALLIANCE, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_H0B7_BOMBARD_ALLIANCE, 6);
+      ModObjectLimit(UNIT_HBOT_TRANSPORT_SHIP_ALLIANCE, UNLIMITED);
+      ModObjectLimit(UNIT_H0AR_SCOUT_SHIP_ALLIANCE, UNLIMITED);
+      ModObjectLimit(UNIT_H0AX_FRIGATE_ALLIANCE, UNLIMITED);
+      ModObjectLimit(UNIT_H0B3_FIRESHIP_ALLIANCE, UNLIMITED);
+      ModObjectLimit(UNIT_H0B0_GALLEY_ALLIANCE, UNLIMITED);
+      ModObjectLimit(UNIT_H0B6_BOARDING_VESSEL_ALLIANCE, UNLIMITED);
+      ModObjectLimit(UNIT_H0AN_JUGGERNAUT_ALLIANCE, UNLIMITED);
+      ModObjectLimit(UNIT_H0B7_BOMBARD_ALLIANCE, 6);
       
       //Demi-heroes
-      ModObjectLimit(Constants.UNIT_NJKS_JAILOR_KASSAN_DALARAN_DEMI, 1);
-      ModObjectLimit(Constants.UNIT_HJAI_ARCHMAGE_OF_DALARAN_DALARAN, 1);
-      ModObjectLimit(Constants.UNIT_HANT_GRAND_MAGUS_OF_THE_KIRIN_TOR_DALARAN, 1);
-      ModObjectLimit(Constants.UNIT_H09N_MATRIARCH_OF_TIRISFAL_DALARAN, 1);
-      ModObjectLimit(Constants.UNIT_HAAH_THE_FALLEN_GUARDIAN_DALARAN, 1);
+      ModObjectLimit(UNIT_NJKS_JAILOR_KASSAN_DALARAN_DEMI, 1);
+      ModObjectLimit(UNIT_HJAI_ARCHMAGE_OF_DALARAN_DALARAN, 1);
+      ModObjectLimit(UNIT_HANT_GRAND_MAGUS_OF_THE_KIRIN_TOR_DALARAN, 1);
+      ModObjectLimit(UNIT_H09N_MATRIARCH_OF_TIRISFAL_DALARAN, 1);
+      ModObjectLimit(UNIT_HAAH_THE_FALLEN_GUARDIAN_DALARAN, 1);
       
       //Upgrades
-      ModObjectLimit(Constants.UPGRADE_R01I_ARCANIST_GRANDMASTER_TRAINING_DALARAN, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R01V_GEOMANCER_GRANDMASTER_TRAINING_DALARAN, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R00E_HYDROMANCER_GRANDMASTER_TRAINING_DALARAN, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R06J_IMPROVED_SLOW_DALARAN, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R061_IMPROVED_FORKED_LIGHTNING_DALARAN, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R06O_IMPROVED_PHASE_BLADE_DALARAN, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R00J_COMBAT_TOMES_DALARAN, UNLIMITED);
+      ModObjectLimit(UPGRADE_R01I_ARCANIST_GRANDMASTER_TRAINING_DALARAN, UNLIMITED);
+      ModObjectLimit(UPGRADE_R01V_GEOMANCER_GRANDMASTER_TRAINING_DALARAN, UNLIMITED);
+      ModObjectLimit(UPGRADE_R00E_HYDROMANCER_GRANDMASTER_TRAINING_DALARAN, UNLIMITED);
+      ModObjectLimit(UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, UNLIMITED);
+      ModObjectLimit(UPGRADE_R06J_IMPROVED_SLOW_DALARAN, UNLIMITED);
+      ModObjectLimit(UPGRADE_R061_IMPROVED_FORKED_LIGHTNING_DALARAN, UNLIMITED);
+      ModObjectLimit(UPGRADE_R06O_IMPROVED_PHASE_BLADE_DALARAN, UNLIMITED);
+      ModObjectLimit(UPGRADE_R00J_COMBAT_TOMES_DALARAN, UNLIMITED);
 
-      ModAbilityAvailability(Constants.ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, 1);
-      ModAbilityAvailability(Constants.ABILITY_A0GG_SPELL_SHIELD_SPELL_BOOK_ORANGE_KIRIN_TOR, -1); //Todo: should be global
-      ModAbilityAvailability(Constants.ABILITY_A0WG_SPELL_SHIELD_SPELL_BOOK_ORANGE_ANTONIDAS_RED_LICH_KING, -1);
-      ModAbilityAvailability(Constants.ABILITY_A0UG_PHASE_BLADE_AUTO_CAST_ORANGE_BARRACKS_OFF, -1); //Todo: should have a system for this
-      ModAbilityAvailability(Constants.ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);
-      ModAbilityAvailability(Constants.ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);
-      ModAbilityAvailability(Constants.ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
+      ModAbilityAvailability(ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, 1);
+      ModAbilityAvailability(ABILITY_A0GG_SPELL_SHIELD_SPELL_BOOK_ORANGE_KIRIN_TOR, -1); //Todo: should be global
+      ModAbilityAvailability(ABILITY_A0WG_SPELL_SHIELD_SPELL_BOOK_ORANGE_ANTONIDAS_RED_LICH_KING, -1);
+      ModAbilityAvailability(ABILITY_A0UG_PHASE_BLADE_AUTO_CAST_ORANGE_BARRACKS_OFF, -1); //Todo: should have a system for this
+      ModAbilityAvailability(ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);
+      ModAbilityAvailability(ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);
+      ModAbilityAvailability(ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
     }
     
     private void RegisterQuests()

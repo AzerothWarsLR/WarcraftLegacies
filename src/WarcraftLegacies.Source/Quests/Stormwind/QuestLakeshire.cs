@@ -6,7 +6,6 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Stormwind
 {
@@ -18,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       "The town of Lakeshire is invaded by Ogres, wipe them out!",
       @"ReplaceableTextures\CommandButtons\BTNOgreLord.blp")
     {
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N011_REDRIDGE_MOUNTAINS));
+      AddObjective(new ObjectiveControlPoint(UNIT_N011_REDRIDGE_MOUNTAINS));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())

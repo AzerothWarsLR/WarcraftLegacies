@@ -7,24 +7,23 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 
 namespace WarcraftLegacies.Source.Quests.Scourge
 {
   public sealed class QuestSpiderWar : QuestData
   {
-    private const int QuestResearchId = Constants.UPGRADE_R03A_QUEST_COMPLETED_WAR_OF_THE_SPIDER;
+    private const int QuestResearchId = UPGRADE_R03A_QUEST_COMPLETED_WAR_OF_THE_SPIDER;
     private readonly List<unit> _rescueUnits;
 
     public QuestSpiderWar(Rectangle rescueRect) : base("War of the Spider",
       "The proud Nerubians have declared war on the newly formed Lich King, destroy them to secure the continent of Northrend.",
       @"ReplaceableTextures\CommandButtons\BTNNerubianQueen.blp")
     {
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N08D_ICECROWN_GLACIER));
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N00G_BOREAN_TUNDRA));
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N09H_EN_KILAH));
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_UNP2_BLACK_CITADEL_SCOURGE_T3, Constants.UNIT_UNP1_HALLS_OF_THE_DEAD_SCOURGE_T2));
+      AddObjective(new ObjectiveControlPoint(UNIT_N08D_ICECROWN_GLACIER));
+      AddObjective(new ObjectiveControlPoint(UNIT_N00G_BOREAN_TUNDRA));
+      AddObjective(new ObjectiveControlPoint(UNIT_N09H_EN_KILAH));
+      AddObjective(new ObjectiveUpgrade(UNIT_UNP2_BLACK_CITADEL_SCOURGE_T3, UNIT_UNP1_HALLS_OF_THE_DEAD_SCOURGE_T2));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
 

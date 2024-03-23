@@ -9,7 +9,6 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Lordaeron
 {
@@ -34,14 +33,14 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       _arthas = arthas;
       _uther = uther;
       _stratholme = stratholme;
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N019_ALTERAC_MOUNTAINS));
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_HCAS_CASTLE_LORDAERON_T3, Constants.UNIT_HTOW_TOWN_HALL_LORDAERON_T1));
+      AddObjective(new ObjectiveControlPoint(UNIT_N019_ALTERAC_MOUNTAINS));
+      AddObjective(new ObjectiveUpgrade(UNIT_HCAS_CASTLE_LORDAERON_T3, UNIT_HTOW_TOWN_HALL_LORDAERON_T1));
       AddObjective(new ObjectiveControlLegend(arthas, false));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
 
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      ResearchId = Constants.UPGRADE_R09E_QUEST_COMPLETED_BLACKROCK_AND_ROLL;
+      ResearchId = UPGRADE_R09E_QUEST_COMPLETED_BLACKROCK_AND_ROLL;
     }
 
     /// <inheritdoc/>

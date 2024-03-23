@@ -2,7 +2,6 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ResearchSystems;
-using static War3Api.Common;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 
@@ -16,7 +15,7 @@ namespace WarcraftLegacies.Source.Researches
   {
     private readonly Faction _warsong;
     private readonly Faction _frostwolf;
-    private const int ResearchId = Constants.UPGRADE_R09N_FLIGHT_PATH_WARSONG;
+    private const int ResearchId = UPGRADE_R09N_FLIGHT_PATH_WARSONG;
     private static unit? _flightToOrgrimmar;
     private static unit? _flightToThunderBluff;
     private static bool _researched;
@@ -28,8 +27,8 @@ namespace WarcraftLegacies.Source.Researches
       _frostwolf = frostwolf;
       var orgrimmarLocation = new Point(-9704, -858);
       var thunderbluffLocation = new Point(-14445, -4042);
-      _flightToOrgrimmar = preplacedUnitSystem.GetUnit(Constants.UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, thunderbluffLocation);
-      _flightToThunderBluff = preplacedUnitSystem.GetUnit(Constants.UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, orgrimmarLocation);
+      _flightToOrgrimmar = preplacedUnitSystem.GetUnit(UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, thunderbluffLocation);
+      _flightToThunderBluff = preplacedUnitSystem.GetUnit(UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, orgrimmarLocation);
     }
 
     /// <inheritdoc />

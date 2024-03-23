@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       @"ReplaceableTextures\CommandButtons\BTNOrbOfCorruption.blp")
     {
       AddObjective(new ObjectiveControlCapital(sunwell, false));
-      ResearchId = Constants.UPGRADE_R054_QUEST_COMPLETED_FALL_OF_SILVERMOON;
+      ResearchId = UPGRADE_R054_QUEST_COMPLETED_FALL_OF_SILVERMOON;
     }
 
     /// <inheritdoc/>

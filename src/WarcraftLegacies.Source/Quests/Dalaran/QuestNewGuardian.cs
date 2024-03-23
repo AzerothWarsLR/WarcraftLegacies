@@ -5,7 +5,6 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 
 namespace WarcraftLegacies.Source.Quests.Dalaran
@@ -22,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       AddObjective(new ObjectiveControlCapital(dalaran, false));
       AddObjective(new ObjectiveLegendHasArtifact(jaina, bookOfMedivh));
       AddObjective(new ObjectiveTime(1500));
-      ResearchId = Constants.UPGRADE_R063_QUEST_COMPLETED_GUARDIAN_OF_TIRISFAL;
+      ResearchId = UPGRADE_R063_QUEST_COMPLETED_GUARDIAN_OF_TIRISFAL;
     }
 
     /// <inheritdoc/>
@@ -40,7 +39,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       UnitRemoveAbility(whichUnit, FourCC("A0RB"));
       AddSpecialEffectTarget("war3mapImported\\Soul Armor Cosmic.mdx", whichUnit, "chest");
       BlzSetUnitName(whichUnit, "Guardian of Tirisfal");
-      UnitAddAbility(whichUnit, Constants.ABILITY_A0BX_GUARDIAN_OF_TIRISFAL_DALARAN_GUARDIAN_OF_TIRISFAL);
+      UnitAddAbility(whichUnit, ABILITY_A0BX_GUARDIAN_OF_TIRISFAL_DALARAN_GUARDIAN_OF_TIRISFAL);
       BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0, 5); //Chaos
       whichUnit?.AddHeroAttributes(0, 0, 20);
       _jaina.ClearUnitDependencies();

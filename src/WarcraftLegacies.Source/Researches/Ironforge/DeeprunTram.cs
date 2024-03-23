@@ -2,7 +2,6 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ResearchSystems;
-using static War3Api.Common;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 
@@ -16,7 +15,7 @@ namespace WarcraftLegacies.Source.Researches.Ironforge
   {
     private readonly Faction _ironforge;
     private readonly Faction _stormwind;
-    private const int ResearchId = Constants.UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE;
+    private const int ResearchId = UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE;
     private static unit? _tramToIronforge;
     private static unit? _tramToStormwind;
     private static bool _researched;
@@ -28,8 +27,8 @@ namespace WarcraftLegacies.Source.Researches.Ironforge
       _stormwind = stormwind;
       var ironforgeLocation = new Point(9761, -5723);
       var stormwindLocation = new Point(11126, -9970);
-      _tramToIronforge = preplacedUnitSystem.GetUnit(Constants.UNIT_N03B_DEEPRUN_TRAM, stormwindLocation);
-      _tramToStormwind = preplacedUnitSystem.GetUnit(Constants.UNIT_N03B_DEEPRUN_TRAM, ironforgeLocation);
+      _tramToIronforge = preplacedUnitSystem.GetUnit(UNIT_N03B_DEEPRUN_TRAM, stormwindLocation);
+      _tramToStormwind = preplacedUnitSystem.GetUnit(UNIT_N03B_DEEPRUN_TRAM, ironforgeLocation);
     }
 
     /// <inheritdoc />

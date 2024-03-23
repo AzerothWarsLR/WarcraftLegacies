@@ -5,7 +5,6 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Lordaeron;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Scourge
 {
@@ -23,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       AddObjective(new ObjectiveCapitalDead(stratholme));
       var lineOfSuccession = lordaeron.GetQuestByType<QuestKingArthas>();
       AddObjective(new ObjectiveFactionQuestNotComplete(lineOfSuccession, lordaeron));
-      ResearchId = Constants.UPGRADE_R01K_QUEST_COMPLETED_THE_CULLING;
+      ResearchId = UPGRADE_R01K_QUEST_COMPLETED_THE_CULLING;
       
     }
 
@@ -33,14 +32,14 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      $"Arthas abandons Lordaeron to join the Scourge; learn to train {_arthas.Name} from the {GetObjectName(Constants.UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)}";
+      $"Arthas abandons Lordaeron to join the Scourge; learn to train {_arthas.Name} from the {GetObjectName(UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)}";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
       var arthas = _arthas.Unit;
       
-      _lordaeron.ModObjectLimit(Constants.UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON, -1);
+      _lordaeron.ModObjectLimit(UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON, -1);
 
       if (arthas == null || !UnitAlive(arthas))
         return;

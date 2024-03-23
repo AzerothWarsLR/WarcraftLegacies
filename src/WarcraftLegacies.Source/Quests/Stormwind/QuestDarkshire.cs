@@ -4,7 +4,6 @@ using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Stormwind
 {
@@ -14,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       "The town of Darkshire is under attack by Gnoll's, clear them out!",
       @"ReplaceableTextures\CommandButtons\BTNGnollArcher.blp")
     {
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N00V_DUSKWOOD));
+      AddObjective(new ObjectiveControlPoint(UNIT_N00V_DUSKWOOD));
       AddObjective(new ObjectiveExpire(600, Title));
       AddObjective(new ObjectiveSelfExists());
     }

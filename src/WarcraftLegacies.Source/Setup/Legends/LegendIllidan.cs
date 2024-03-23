@@ -1,5 +1,5 @@
 ﻿using MacroTools.LegendSystem;
-using static War3Api.Common;
+
 #pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       Illidan = new LegendaryHero("Illidan")
       {
-        UnitType = Constants.UNIT_EEVI_BETRAYER_ILLIDARI,
+        UnitType = UNIT_EEVI_BETRAYER_ILLIDARI,
         PlayerColor = PLAYER_COLOR_PURPLE,
       };
 

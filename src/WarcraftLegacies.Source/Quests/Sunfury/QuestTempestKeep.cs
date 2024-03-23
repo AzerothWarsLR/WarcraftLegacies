@@ -3,7 +3,6 @@ using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
-using static War3Api.Common;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using System.Collections.Generic;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
@@ -26,18 +25,18 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
         @"ReplaceableTextures\CommandButtons\BTNFeatherMoonAura.blp")
     {
       
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_H0C5_SANCTUARY_SUNFURY_T3,
-        Constants.UNIT_H02P_HOLDING_SUNFURY_T1));
+      AddObjective(new ObjectiveUpgrade(UNIT_H0C5_SANCTUARY_SUNFURY_T3,
+        UNIT_H02P_HOLDING_SUNFURY_T1));
       AddObjective(new ObjectiveBuildInRect(questRect1, "in one of the 3 Eco-dome in Netherstorm",
-        Constants.UNIT_H0C7_ARBORETUM_SUNFURY_FARM));
+        UNIT_H0C7_ARBORETUM_SUNFURY_FARM));
       AddObjective(new ObjectiveBuildInRect(questRect2, "in one of the 3 Eco-dome in Netherstorm",
-        Constants.UNIT_H0C7_ARBORETUM_SUNFURY_FARM));
+        UNIT_H0C7_ARBORETUM_SUNFURY_FARM));
       AddObjective(new ObjectiveBuildInRect(questRect3, "in one of the 3 Eco-dome in Netherstorm",
-        Constants.UNIT_H0C7_ARBORETUM_SUNFURY_FARM));
+        UNIT_H0C7_ARBORETUM_SUNFURY_FARM));
       AddObjective(new ObjectiveExpire(600, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      ResearchId = Constants.UPGRADE_R09I_QUEST_COMPLETED_ECO_DOMES;
+      ResearchId = UPGRADE_R09I_QUEST_COMPLETED_ECO_DOMES;
     }
 
     /// <inheritdoc/>
@@ -65,6 +64,6 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Gain control of Tempest Keep, and learn to build {GetObjectName(Constants.UNIT_H0CA_ANCIENT_POOL_SUNFURY_SPECIALIST)}s and {GetObjectName(Constants.UNIT_H0CI_ARTIFICER_S_COURT_SUNFURY_SIEGE)}s";
+      $"Gain control of Tempest Keep, and learn to build {GetObjectName(UNIT_H0CA_ANCIENT_POOL_SUNFURY_SPECIALIST)}s and {GetObjectName(UNIT_H0CI_ARTIFICER_S_COURT_SUNFURY_SIEGE)}s";
   }
 }

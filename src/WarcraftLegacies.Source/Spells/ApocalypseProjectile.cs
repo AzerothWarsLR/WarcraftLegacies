@@ -3,7 +3,6 @@ using MacroTools.Extensions;
 using WCSharp.Events;
 using WCSharp.Missiles;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Spells
 {

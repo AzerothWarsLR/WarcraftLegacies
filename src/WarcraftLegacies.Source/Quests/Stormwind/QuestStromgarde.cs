@@ -6,7 +6,6 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Stormwind
 {
@@ -22,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       AddObjective(objectiveAnyUnitInRect);
       AddObjective(new ObjectiveTime(900));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = Constants.UPGRADE_R01M_QUEST_COMPLETED_STROMGARDE_STORMWIND;
+      ResearchId = UPGRADE_R01M_QUEST_COMPLETED_STROMGARDE_STORMWIND;
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {

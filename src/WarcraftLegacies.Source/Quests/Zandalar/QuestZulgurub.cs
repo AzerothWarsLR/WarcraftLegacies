@@ -5,7 +5,6 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
-using static War3Api.Common; 
 
 namespace WarcraftLegacies.Source.Quests.Zandalar
 {
@@ -14,9 +13,9 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
   /// </summary>
   public sealed class QuestZulgurub : QuestData
   {
-    private const int _zulgurubResearch = Constants.UPGRADE_R02M_QUEST_COMPLETED_THE_HEART_OF_HAKKAR_WARSONG;
-    private const int _trollShrineId = Constants.UNIT_O04X_LOA_SHRINE_ZANDALARI_SIEGE;
-    private const int _ravagerId = Constants.UNIT_O021_RAVAGER_ZANDALAR;
+    private const int _zulgurubResearch = UPGRADE_R02M_QUEST_COMPLETED_THE_HEART_OF_HAKKAR_WARSONG;
+    private const int _trollShrineId = UNIT_O04X_LOA_SHRINE_ZANDALARI_SIEGE;
+    private const int _ravagerId = UNIT_O021_RAVAGER_ZANDALAR;
     private readonly int goldReward = 50;
 
     /// <summary>

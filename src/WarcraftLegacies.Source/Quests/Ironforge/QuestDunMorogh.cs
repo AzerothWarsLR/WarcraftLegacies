@@ -4,7 +4,6 @@ using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Ironforge
 {
@@ -14,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       "A small troll skirmish is attacking Dun Morogh. Push them back!",
       @"ReplaceableTextures\CommandButtons\BTNIceTrollShadowPriest.blp")
     {
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N014_DUN_MOROGH));
+      AddObjective(new ObjectiveControlPoint(UNIT_N014_DUN_MOROGH));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
     }

@@ -1,6 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.LegendSystem;
-using static War3Api.Common;
+
 #pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
@@ -20,19 +20,19 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       LegendNobundo = new LegendaryHero("Nobundo")
       {
-        UnitType = Constants.UNIT_E01J_HIGH_SHAMAN_DRUIDS,
+        UnitType = UNIT_E01J_HIGH_SHAMAN_DRUIDS,
         StartingXp = 1800
       };
 
       LegendExodar = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_E01X_EXODAR_REGALIS_DRAENEI_SPACESHIP),
+        Unit = preplacedUnitSystem.GetUnit(UNIT_E01X_EXODAR_REGALIS_DRAENEI_SPACESHIP),
         Essential = true
       };
 
       LegendExodarGenerator = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N00E_DIMENSIONAL_GENERATOR_DRAENEI)
+        Unit = preplacedUnitSystem.GetUnit(UNIT_N00E_DIMENSIONAL_GENERATOR_DRAENEI)
       };
 
       Maraad = new LegendaryHero("Maraad")
@@ -55,12 +55,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Shattrah = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AH_SHATTRAH_DRAENEI_OTHER)
+        Unit = preplacedUnitSystem.GetUnit(UNIT_H0AH_SHATTRAH_DRAENEI_OTHER)
       };
 
       Halaar = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0AE_HALAAR_DRAENEI_OTHER)
+        Unit = preplacedUnitSystem.GetUnit(UNIT_H0AE_HALAAR_DRAENEI_OTHER)
       };
     }
     

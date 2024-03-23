@@ -1,7 +1,6 @@
 ﻿using MacroTools.ArtifactSystem;
 using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Sunfury
 {
@@ -20,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
     {
       AddObjective(new ObjectiveAcquireArtifact(essence));
       
-      ResearchId = Constants.UPGRADE_R09K_QUEST_COMPLETED_THE_HIGH_ASTROMANCER;
+      ResearchId = UPGRADE_R09K_QUEST_COMPLETED_THE_HIGH_ASTROMANCER;
     }
 
     /// <inheritdoc />
@@ -29,6 +28,6 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      $"Learn to train High Astromancer Solarion from the {GetObjectName(Constants.UNIT_H0C6_ALTAR_OF_BLOOD_SUNFURY_ALTAR)}";
+      $"Learn to train High Astromancer Solarion from the {GetObjectName(UNIT_H0C6_ALTAR_OF_BLOOD_SUNFURY_ALTAR)}";
   }
 }

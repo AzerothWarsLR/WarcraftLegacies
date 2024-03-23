@@ -8,7 +8,6 @@ using WarcraftLegacies.Source.Quests.Quelthalas;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -23,11 +22,11 @@ namespace WarcraftLegacies.Source.Factions
     {
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
-      UndefeatedResearch = Constants.UPGRADE_R05U_QUEL_THALAS_EXISTS;
+      UndefeatedResearch = UPGRADE_R05U_QUEL_THALAS_EXISTS;
       StartingGold = 200;
       StartingLumber = 700;
       CinematicMusic = "BloodElfTheme";
-      ControlPointDefenderUnitTypeId = Constants.UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS;
+      ControlPointDefenderUnitTypeId = UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS;
       IntroText = @"You are playing as the proud |cff32e1e1Kingdom of Quel'thalas|r.
 
 You begin in Tranquilien, separated from Silvermoon.
@@ -94,7 +93,7 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       ModObjectLimit(FourCC("n063"), 12); //Magus
       ModObjectLimit(FourCC("hspt"), UNLIMITED); //Spell Breaker
       ModObjectLimit(FourCC("u00J"), 2); //Arcane Wagon
-      ModObjectLimit(Constants.UNIT_N048_BLOOD_MAGE_QUEL_THALAS, 6);
+      ModObjectLimit(UNIT_N048_BLOOD_MAGE_QUEL_THALAS, 6);
 
       //Ships
       ModObjectLimit(FourCC("hbot"), UNLIMITED); //Alliance Transport Ship
@@ -128,14 +127,14 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       ModObjectLimit(FourCC("R004"), UNLIMITED); //Sunfury Warrior Training
       ModObjectLimit(FourCC("R02Y"), UNLIMITED); //Improved Glaives
 
-      ModAbilityAvailability(Constants.ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
-      ModAbilityAvailability(Constants.ABILITY_A0OC_EXTRACT_VIAL_ALL, -1);
+      ModAbilityAvailability(ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
+      ModAbilityAvailability(ABILITY_A0OC_EXTRACT_VIAL_ALL, -1);
     }
 
     private void RegisterQuests()
     {
       var newQuest = AddQuest(new QuestSilvermoon(Regions.SunwellAmbient,
-        _preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS_OTHER, new Point(20477, 17447)), _allLegendSetup.Quelthalas.Silvermoon, _allLegendSetup.Quelthalas.Sunwell));
+        _preplacedUnitSystem.GetUnit(UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS_OTHER, new Point(20477, 17447)), _allLegendSetup.Quelthalas.Silvermoon, _allLegendSetup.Quelthalas.Sunwell));
       StartingQuest = newQuest;
       AddQuest(new QuestUnlockSpire(Regions.WindrunnerSpireUnlock, _allLegendSetup.Quelthalas.Sylvanas));
       AddQuest(new QuestTheBloodElves(_allLegendSetup.Neutral.DraktharonKeep));
@@ -147,7 +146,7 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
     
     private void RegisterResearches()
     {
-      ResearchManager.Register(new SunfuryWarrior(Constants.UPGRADE_R004_SUNFURY_TRAINING_QUEL_THALAS, 300, 300));
+      ResearchManager.Register(new SunfuryWarrior(UPGRADE_R004_SUNFURY_TRAINING_QUEL_THALAS, 300, 300));
     }
     
     private void RegisterScourgeDialogue(Scourge scourge)

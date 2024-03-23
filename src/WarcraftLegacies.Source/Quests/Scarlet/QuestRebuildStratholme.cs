@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     {
       
       AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in Stratholme", 5));
-      AddObjective(new ObjectiveControlLevel(Constants.UNIT_N01M_STRATHOLME, 4));
+      AddObjective(new ObjectiveControlLevel(UNIT_N01M_STRATHOLME, 4));
       _saiden = saiden;
     }
 

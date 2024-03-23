@@ -1,7 +1,6 @@
 ﻿using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using System.Collections.Generic;
-using static War3Api.Common;
 using MacroTools.Extensions;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
@@ -21,8 +20,8 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     /// </summary>
     public QuestKeelHarbor() : base("Keel Harbor", "The final village is the coastal harbor near the capital.", @"ReplaceableTextures\CommandButtons\BTNGilneasShipyard.blp")
     {
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N08X_KEEL_HARBOR));
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N031_DUSKHAVEN));
+      AddObjective(new ObjectiveControlPoint(UNIT_N08X_KEEL_HARBOR));
+      AddObjective(new ObjectiveControlPoint(UNIT_N031_DUSKHAVEN));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = Regions.GilneasUnlock3.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

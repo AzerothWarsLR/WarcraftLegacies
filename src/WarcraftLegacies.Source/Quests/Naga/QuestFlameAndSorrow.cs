@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
       _skullofGuldan = skullofGuldan;
       AddObjective(new ObjectiveLegendHasArtifact(illidan, skullofGuldan));
       AddObjective(new ObjectiveLegendLevel(illidan, 8));
-      ResearchId = Constants.UPGRADE_R095_QUEST_COMPLETED_A_DESTINY_OF_FLAME_AND_SORROW;
+      ResearchId = UPGRADE_R095_QUEST_COMPLETED_A_DESTINY_OF_FLAME_AND_SORROW;
     }
 
     /// <inheritdoc/>

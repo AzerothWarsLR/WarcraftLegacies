@@ -1,7 +1,6 @@
 ﻿using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Sunfury
 {
@@ -19,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
       AddObjective(new ObjectiveCapitalDead(stormwindKeep));
       AddObjective(new ObjectiveControlCapital(karazhan, false));
       AddObjective(new ObjectiveChannelRect(Regions.KilSummon, "Karazhan", kael, 180, 90, "Summoning Kil'jaeden"));
-      ResearchId = Constants.UPGRADE_R09J_QUEST_COMPLETED_THE_DECEIVER;
+      ResearchId = UPGRADE_R09J_QUEST_COMPLETED_THE_DECEIVER;
     }
 
     /// <inheritdoc />
@@ -28,6 +27,6 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
     
     /// <inheritdoc />
     protected override string RewardDescription =>
-      $"Learn to train Kil'jaeden from the {GetObjectName(Constants.UNIT_H0C6_ALTAR_OF_BLOOD_SUNFURY_ALTAR)}, and {GetObjectName(Constants.UNIT_N0E3_WARLOCK_SUNFURY)}s from the {GetObjectName(Constants.UNIT_H0CB_LYCEUM_ARCANUM_SUNFURY_MAGIC)}";
+      $"Learn to train Kil'jaeden from the {GetObjectName(UNIT_H0C6_ALTAR_OF_BLOOD_SUNFURY_ALTAR)}, and {GetObjectName(UNIT_N0E3_WARLOCK_SUNFURY)}s from the {GetObjectName(UNIT_H0CB_LYCEUM_ARCANUM_SUNFURY_MAGIC)}";
   }
 }

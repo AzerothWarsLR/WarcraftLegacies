@@ -1,6 +1,5 @@
 using MacroTools.Extensions;
 using WCSharp.Events;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.ArtifactBehaviour
 {
@@ -9,10 +8,10 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
   /// </summary>
   public static class EyeOfSargerasCooldowns
   {
-    private const int SpellA = Constants.ABILITY_A04G_INVISIBILITY_EYE_OF_SARGERAS_NEUTRAL_HOSTILE;
-    private const int SpellB = Constants.ABILITY_ACRG_RAIN_OF_FIRE_SPELLBOOK;
-    private const int SpellC = Constants.ABILITY_ACDE_DEVOUR_MAGIC_RAVAGER;
-    private const int SpellD = Constants.ABILITY_A04B_DEMON_CALL_EYE_OF_SARGERAS;
+    private const int SpellA = ABILITY_A04G_INVISIBILITY_EYE_OF_SARGERAS_NEUTRAL_HOSTILE;
+    private const int SpellB = ABILITY_ACRG_RAIN_OF_FIRE_SPELLBOOK;
+    private const int SpellC = ABILITY_ACDE_DEVOUR_MAGIC_RAVAGER;
+    private const int SpellD = ABILITY_A04B_DEMON_CALL_EYE_OF_SARGERAS;
 
     private static void ItemPickup()
     {
@@ -27,6 +26,6 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
     /// Sets up <see cref="EyeOfSargerasCooldowns"/>.
     /// </summary>
     public static void Setup() =>
-      PlayerUnitEvents.Register(ItemTypeEvent.IsPickedUp, ItemPickup, Constants.ITEM_I003_EYE_OF_SARGERAS);
+      PlayerUnitEvents.Register(ItemTypeEvent.IsPickedUp, ItemPickup, ITEM_I003_EYE_OF_SARGERAS);
   }
 }

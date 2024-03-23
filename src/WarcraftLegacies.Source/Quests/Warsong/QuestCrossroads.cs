@@ -6,7 +6,6 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 
 namespace WarcraftLegacies.Source.Quests.Warsong
@@ -19,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       "The Horde still needs to establish a strong strategic foothold into Kalimdor. Expand into the Barrens and claim the Crossroads.",
       @"ReplaceableTextures\CommandButtons\BTNBarracks.blp")
     {
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N01T_NORTHERN_BARRENS));
+      AddObjective(new ObjectiveControlPoint(UNIT_N01T_NORTHERN_BARRENS));
       AddObjective(new ObjectiveExpire(480, Title));
       AddObjective(new ObjectiveSelfExists());
       

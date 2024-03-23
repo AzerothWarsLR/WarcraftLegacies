@@ -1,6 +1,4 @@
-﻿using static War3Api.Common;
-
-namespace WarcraftLegacies.Source.GameLogic
+﻿namespace WarcraftLegacies.Source.GameLogic
 {
    /// <summary>
    /// Responsible for managing basic game settings.

@@ -5,7 +5,6 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Draenei
 {
@@ -34,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      var crownOfTheTriumvirate = new Artifact(CreateItem(Constants.ITEM_I011_CROWN_OF_THE_TRIUMVIRATE, 0, 0));
+      var crownOfTheTriumvirate = new Artifact(CreateItem(ITEM_I011_CROWN_OF_THE_TRIUMVIRATE, 0, 0));
       ArtifactManager.Register(crownOfTheTriumvirate);
       _velen.Unit?.AddItemSafe(crownOfTheTriumvirate.Item);
     }

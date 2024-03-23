@@ -8,7 +8,6 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Quelthalas
 {
@@ -33,15 +32,15 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       _elvenRunestone = elvenRunestone;
       _silvermoon = silvermoon;
       _sunwell = sunwell;
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N01V_ZUL_AMAN));
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N01L_EVERSONG_WOODS));
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_H03T_PALACE_QUEL_THALAS_T3, Constants.UNIT_H033_STEADING_QUEL_THALAS_T1));
+      AddObjective(new ObjectiveControlPoint(UNIT_N01V_ZUL_AMAN));
+      AddObjective(new ObjectiveControlPoint(UNIT_N01L_EVERSONG_WOODS));
+      AddObjective(new ObjectiveUpgrade(UNIT_H03T_PALACE_QUEL_THALAS_T3, UNIT_H033_STEADING_QUEL_THALAS_T1));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = Constants.UPGRADE_R02U_QUEST_COMPLETED_THE_SIEGE_OF_SILVERMOON;
+      ResearchId = UPGRADE_R02U_QUEST_COMPLETED_THE_SIEGE_OF_SILVERMOON;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       
-      ResearchId = Constants.UPGRADE_R02U_QUEST_COMPLETED_THE_SIEGE_OF_SILVERMOON;
+      ResearchId = UPGRADE_R02U_QUEST_COMPLETED_THE_SIEGE_OF_SILVERMOON;
     }
 
     /// <inheritdoc />

@@ -3,13 +3,12 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Druids
 {
   public sealed class QuestDruidsKillFrostwolf : QuestData
   {
-    private const int ElementalGuardianId = Constants.UNIT_E00X_ELEMENTAL_GUARDIAN_DRUIDS_DEMI;
+    private const int ElementalGuardianId = UNIT_E00X_ELEMENTAL_GUARDIAN_DRUIDS_DEMI;
 
     /// <inheritdoc/>
     public override string RewardFlavour =>
@@ -23,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
       @"ReplaceableTextures\CommandButtons\BTNHeroTaurenChieftain.blp")
     {
       AddObjective(new ObjectiveControlCapital(thunderBluff, false));
-      ResearchId = Constants.UPGRADE_R044_QUEST_COMPLETED_NATURAL_CONTEST_DRUIDS;
+      ResearchId = UPGRADE_R044_QUEST_COMPLETED_NATURAL_CONTEST_DRUIDS;
     }
     
     /// <inheritdoc/>

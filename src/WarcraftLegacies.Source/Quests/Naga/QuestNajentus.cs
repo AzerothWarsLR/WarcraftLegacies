@@ -3,7 +3,6 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Naga
 {
@@ -23,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
       foreach (var capital in capitalTargets) 
         AddObjective(new ObjectiveCapitalDead(capital));
       
-      ResearchId = Constants.UPGRADE_R08W_QUEST_COMPLETED_LORD_OF_THE_DEPTHS;
+      ResearchId = UPGRADE_R08W_QUEST_COMPLETED_LORD_OF_THE_DEPTHS;
       
     }
 
@@ -32,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
       "Now that the South Alliance lies in ruin, Lady Vashj's champion Lord Naj'entus has joined Illidan's forces.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => $" Naj'entus can be trained from the {GetObjectName(Constants.UNIT_NNAD_ALTAR_OF_THE_BETRAYER_ILLIDARI_ALTAR)}";
+    protected override string RewardDescription => $" Naj'entus can be trained from the {GetObjectName(UNIT_NNAD_ALTAR_OF_THE_BETRAYER_ILLIDARI_ALTAR)}";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

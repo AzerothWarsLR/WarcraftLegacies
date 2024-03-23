@@ -3,7 +3,6 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Stormwind
 {
@@ -23,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       @"ReplaceableTextures\CommandButtons\BTNGenericHumanBuilding.blp")
     {
       _constructionSites = constructionSites;
-      ResearchId = Constants.UPGRADE_R022_QUEST_COMPLETED_INEVITABLE_PROGRESS_STORMWIND;
+      ResearchId = UPGRADE_R022_QUEST_COMPLETED_INEVITABLE_PROGRESS_STORMWIND;
       AddObjective(new ObjectiveTime(360));
     }
 

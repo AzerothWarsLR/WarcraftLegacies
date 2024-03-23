@@ -6,7 +6,6 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using WarcraftLegacies.Source.Quests.KulTiras;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -20,10 +19,10 @@ namespace WarcraftLegacies.Source.Factions
       PLAYER_COLOR_EMERALD, "|cff00781e", @"ReplaceableTextures\CommandButtons\BTNProudmoore.blp")
     {
       _allLegendSetup = allLegendSetup;
-      _proudmooreCapitalShip = preplacedUnitSystem.GetUnit(Constants.UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS);
+      _proudmooreCapitalShip = preplacedUnitSystem.GetUnit(UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS);
       StartingGold = 200;
       StartingLumber = 700;
-      ControlPointDefenderUnitTypeId = Constants.UNIT_H09W_CONTROL_POINT_DEFENDER_KUL_TIRAS;
+      ControlPointDefenderUnitTypeId = UNIT_H09W_CONTROL_POINT_DEFENDER_KUL_TIRAS;
       IntroText = @"You are playing as the maritime |cff008000Kingdom of Kul'tiras|r.
 
 You begin on Balor island, separated from your main forces in Kul Tiras. Unite your forces by eliminating your enemies in Tiragarde, Drustvar and Stormsong Valley.
@@ -112,9 +111,9 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       ModObjectLimit(FourCC("R05J"), UNLIMITED); //Expedition
 
       //Heroes
-      ModObjectLimit(Constants.UNIT_HAPM_LORD_ADMIRAL_OF_KUL_TIRAS_KUL_TIRAS, 1);
-      ModObjectLimit(Constants.UNIT_H05L_LADY_OF_HOUSE_PROUDMOORE_KUL_TIRAS, 1);
-      ModObjectLimit(Constants.UNIT_U026_MATRIARCH_OF_HOUSE_WAYCREST_KULTIRAS, 1);
+      ModObjectLimit(UNIT_HAPM_LORD_ADMIRAL_OF_KUL_TIRAS_KUL_TIRAS, 1);
+      ModObjectLimit(UNIT_H05L_LADY_OF_HOUSE_PROUDMOORE_KUL_TIRAS, 1);
+      ModObjectLimit(UNIT_U026_MATRIARCH_OF_HOUSE_WAYCREST_KULTIRAS, 1);
     }
 
     private void RegisterQuests()

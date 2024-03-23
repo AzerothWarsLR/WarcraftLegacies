@@ -4,7 +4,6 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Scourge
 {
@@ -12,7 +11,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
   public sealed class QuestSapphiron : QuestData
   {
     private readonly ObjectiveUnitIsDead _unitIsDeadObjective;
-    private const int SapphironId = Constants.UNIT_UBDD_SAPPHIRON_SCOURGE_DEMI;
+    private const int SapphironId = UNIT_UBDD_SAPPHIRON_SCOURGE_DEMI;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestSapphiron"/> class.
@@ -26,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       _unitIsDeadObjective = new ObjectiveUnitIsDead(sapphiron);
       AddObjective(_unitIsDeadObjective);
       AddObjective(new ObjectiveControlLegend(kelthuzad, false));
-      ResearchId = Constants.UPGRADE_R025_QUEST_COMPLETED_SAPPHIRON_SCOURGE;
+      ResearchId = UPGRADE_R025_QUEST_COMPLETED_SAPPHIRON_SCOURGE;
     }
 
     /// <inheritdoc/>
@@ -36,7 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// <inheritdoc/>
     protected override string RewardDescription => "Unlock one of the requirements to train Frost Wyrms. " +
                                                    "If your team killed Sapphiron, gain him in an undead form; " +
-                                                   $"otherwise, learn to train him from the {GetObjectName(Constants.UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)}";
+                                                   $"otherwise, learn to train him from the {GetObjectName(UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)}";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

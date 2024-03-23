@@ -2,7 +2,6 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WarcraftLegacies.Source.Factions;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup
 {

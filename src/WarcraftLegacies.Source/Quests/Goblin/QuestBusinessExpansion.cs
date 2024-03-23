@@ -18,12 +18,12 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       "Trade Prince Gallywix will need a great amount of wealth to join the Goblin Empire; he needs to expand his business all over the world quickly.",
       @"ReplaceableTextures\CommandButtons\BTNGoblinPrince.blp")
     {
-      AddObjective(new ObjectiveControlLevel(Constants.UNIT_N05C_GADGETZAN, 4));
-      AddObjective(new ObjectiveControlLevel(Constants.UNIT_N0A6_RATCHET, 4));
-      AddObjective(new ObjectiveControlLevel(Constants.UNIT_N09D_AUBERDINE, 4));
-      AddObjective(new ObjectiveControlLevel(Constants.UNIT_N05U_FEATHERMOON_STRONGHOLD, 4));
+      AddObjective(new ObjectiveControlLevel(UNIT_N05C_GADGETZAN, 4));
+      AddObjective(new ObjectiveControlLevel(UNIT_N0A6_RATCHET, 4));
+      AddObjective(new ObjectiveControlLevel(UNIT_N09D_AUBERDINE, 4));
+      AddObjective(new ObjectiveControlLevel(UNIT_N05U_FEATHERMOON_STRONGHOLD, 4));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = Constants.UPGRADE_R07G_QUEST_COMPLETED_BUSINESS_EXPANSION;
+      ResearchId = UPGRADE_R07G_QUEST_COMPLETED_BUSINESS_EXPANSION;
     }
 
     /// <inheritdoc />

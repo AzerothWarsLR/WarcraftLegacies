@@ -6,7 +6,6 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Ironforge
 {
@@ -29,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       AddObjective(new ObjectiveExpire(480, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      ResearchId = Constants.UPGRADE_R05Q_QUEST_COMPLETED_GNOMEREGAN_IRONFORGE;
+      ResearchId = UPGRADE_R05Q_QUEST_COMPLETED_GNOMEREGAN_IRONFORGE;
     }
 
     /// <inheritdoc/>

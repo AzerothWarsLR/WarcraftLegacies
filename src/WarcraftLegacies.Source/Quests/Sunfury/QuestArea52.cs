@@ -3,7 +3,6 @@ using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
-using static War3Api.Common;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using System.Collections.Generic;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
@@ -26,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
       "The goblins of Area 52 have lived in Netherstorm long before our arrival. In other circumstances, they may have been potential allies - but desperate times call for desperate conquests.",
       @"ReplaceableTextures\CommandButtons\BTNLordaeronPalace.blp")
     {
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N07Q_AREA_52));
+      AddObjective(new ObjectiveControlPoint(UNIT_N07Q_AREA_52));
       AddObjective(new ObjectiveExpire(600, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,

@@ -5,7 +5,6 @@ using WarcraftLegacies.Source.FactionMechanics.Fel_Horde;
 using WarcraftLegacies.Source.Quests.Fel_Horde;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -24,7 +23,7 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       StartingLumber = 700;
       CinematicMusic = "Doom";
-      ControlPointDefenderUnitTypeId = Constants.UNIT_N0AA_CONTROL_POINT_DEFENDER_FEL_HORDE;
+      ControlPointDefenderUnitTypeId = UNIT_N0AA_CONTROL_POINT_DEFENDER_FEL_HORDE;
       IntroText = @"You are playing as the bloodthirsty Fel Horde.
 
 You begin in Nagrand, cut off from your forces in Hellfire Citadel. You must raise an army and quickly conquer Outland.
@@ -84,8 +83,8 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare for a 
       ModObjectLimit(FourCC("u018"), 10); //Eye of Grillok
       ModObjectLimit(FourCC("u00V"), UNLIMITED); //Necrolyte
       ModObjectLimit(FourCC("n058"), UNLIMITED); //Troll Axethrowers
-      ModObjectLimit(Constants.UNIT_NINA_INFERNAL_JUGGERNAUT_FEL_HORDE, 4);
-      ModObjectLimit(Constants.UNIT_N086_FEL_DEATH_KNIGHT_FEL_HORDE_ELITE_TIER, 6);
+      ModObjectLimit(UNIT_NINA_INFERNAL_JUGGERNAUT_FEL_HORDE, 4);
+      ModObjectLimit(UNIT_N086_FEL_DEATH_KNIGHT_FEL_HORDE_ELITE_TIER, 6);
 
       //Ship
       ModObjectLimit(FourCC("obot"), UNLIMITED); //Transport Ship
@@ -121,8 +120,8 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare for a 
       ModObjectLimit(FourCC("R034"), UNLIMITED); //Enhanced Breath
       ModObjectLimit(FourCC("R035"), UNLIMITED); //Improved Firebolt
       ModObjectLimit(FourCC("R01Z"), UNLIMITED); //Battle Stations
-      ModObjectLimit(Constants.UPGRADE_R098_FEL_INFUSED_SKELETON_FEL_HORDE, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R09W_IMPROVED_GREATER_CARRION_SWARM_LEGION, UNLIMITED);
+      ModObjectLimit(UPGRADE_R098_FEL_INFUSED_SKELETON_FEL_HORDE, UNLIMITED);
+      ModObjectLimit(UPGRADE_R09W_IMPROVED_GREATER_CARRION_SWARM_LEGION, UNLIMITED);
       SetObjectLevel(FourCC("R01Z"), 1); //Battle Stations
 
       ModObjectLimit(FourCC("n05R"), UNLIMITED); //Felguard
@@ -132,8 +131,8 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare for a 
       ModObjectLimit(FourCC("n07o"), UNLIMITED); //Terror
       ModObjectLimit(FourCC("n07N"), UNLIMITED); //Lord
 
-      ModAbilityAvailability(Constants.ABILITY_A0MZ_DEMONIC_CONSTRUCTION_TEAL_DEMOLISHERS, -1);
-      ModAbilityAvailability(Constants.ABILITY_A0GM_FOR_THE_HORDE_PINK_GREY_MAIN_BUILDINGS, -1);
+      ModAbilityAvailability(ABILITY_A0MZ_DEMONIC_CONSTRUCTION_TEAL_DEMOLISHERS, -1);
+      ModAbilityAvailability(ABILITY_A0GM_FOR_THE_HORDE_PINK_GREY_MAIN_BUILDINGS, -1);
 
       ModObjectLimit(FourCC("R090"), UNLIMITED); //Blackrock
     }
@@ -147,12 +146,12 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare for a 
       AddQuest(new QuestFelHordeKillStormwind(_allLegendSetup.Stormwind.StormwindKeep));
       AddQuest(new QuestGuldansLegacy());
       AddQuest(new QuestDarkPortal(
-        _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_1.Center),
-        _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_2.Center),
-        _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_3.Center),
-        _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_1.Center),
-        _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_2.Center),
-        _preplacedUnitSystem.GetUnit(Constants.UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_3.Center)));
+        _preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_1.Center),
+        _preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_2.Center),
+        _preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_3.Center),
+        _preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_1.Center),
+        _preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_2.Center),
+        _preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_3.Center)));
     }
   }
 }

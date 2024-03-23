@@ -18,9 +18,9 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       "Queen Azshara studied many forms of arcane knowledge, some darker than others. With access to her library and enough time, the highborn scholares could uncover her secrets",
       @"ReplaceableTextures\CommandButtons\BTNBloodElfWizard.blp")
     {
-      AddObjective(new ObjectiveControlLevel(Constants.UNIT_N04Y_NAZJATAR, 8));
+      AddObjective(new ObjectiveControlLevel(UNIT_N04Y_NAZJATAR, 8));
       AddObjective(new ObjectiveChannelRect(Regions.Nazjatar, "Nazjatar", rommath, 80, 270));
-      ResearchId = Constants.UPGRADE_R075_QUEST_COMPLETED_THE_QUEEN_S_ARCHIVE;
+      ResearchId = UPGRADE_R075_QUEST_COMPLETED_THE_QUEEN_S_ARCHIVE;
     }
 
     /// <inheritdoc />

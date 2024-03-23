@@ -1,5 +1,4 @@
 ﻿using MacroTools.LegendSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {

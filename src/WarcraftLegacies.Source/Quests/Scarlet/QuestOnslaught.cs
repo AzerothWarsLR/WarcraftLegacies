@@ -2,7 +2,6 @@
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Scarlet
 {
@@ -16,10 +15,10 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       "Death awaits the living at the roof of the world. It is there that the Crusade must undertake its ultimate vengeance.",
       @"ReplaceableTextures\CommandButtons\BTNVampire.blp")
     {
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Dragonblight", Constants.UNIT_H0AG_HALL_OF_SWORDS_CRUSADE_BARRACKS));
-      AddObjective(new ObjectiveBuildInRect(questRect, "in Dragonblight", Constants.UNIT_H0BM_TOWN_HALL_CRUSADE_T1));
-      AddObjective(new ObjectiveControlLevel(Constants.UNIT_N02Q_DRAGONBLIGHT, 5));
-      ResearchId = Constants.UPGRADE_R040_QUEST_COMPLETED_ONSLAUGHT;
+      AddObjective(new ObjectiveBuildInRect(questRect, "in Dragonblight", UNIT_H0AG_HALL_OF_SWORDS_CRUSADE_BARRACKS));
+      AddObjective(new ObjectiveBuildInRect(questRect, "in Dragonblight", UNIT_H0BM_TOWN_HALL_CRUSADE_T1));
+      AddObjective(new ObjectiveControlLevel(UNIT_N02Q_DRAGONBLIGHT, 5));
+      ResearchId = UPGRADE_R040_QUEST_COMPLETED_ONSLAUGHT;
     }
 
     /// <inheritdoc/>
@@ -28,6 +27,6 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Your {GetObjectName(Constants.UNIT_N09N_BISHOP_OF_THE_LIGHT_SCARLET)} gain the Unholy Archon ability.";
+      $"Your {GetObjectName(UNIT_N09N_BISHOP_OF_THE_LIGHT_SCARLET)} gain the Unholy Archon ability.";
   }
 }

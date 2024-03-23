@@ -4,7 +4,6 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Quelthalas
 {
@@ -13,8 +12,8 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
   /// </summary>
   public sealed class QuestTheBloodElves : QuestData
   {
-    private const int UnittypeId = Constants.UNIT_N048_BLOOD_MAGE_QUEL_THALAS;
-    private const int BuildingId = Constants.UNIT_N0A2_CONSORTIUM_QUEL_THALAS_SIEGE;
+    private const int UnittypeId = UNIT_N048_BLOOD_MAGE_QUEL_THALAS;
+    private const int BuildingId = UNIT_N0A2_CONSORTIUM_QUEL_THALAS_SIEGE;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestTheBloodElves"/> class.
@@ -24,9 +23,9 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       @"ReplaceableTextures\CommandButtons\BTNHeroBloodElfPrince.blp")
 
     {
-      ResearchId = Constants.UPGRADE_R04Q_QUEST_COMPLETED_THE_BLOOD_ELVES_QUEL_THALAS;
+      ResearchId = UPGRADE_R04Q_QUEST_COMPLETED_THE_BLOOD_ELVES_QUEL_THALAS;
       AddObjective(new ObjectiveControlCapital(draktharonKeep, false));
-      AddObjective(new ObjectiveControlLevel(Constants.UNIT_N030_DRAK_THARON_KEEP, 10));
+      AddObjective(new ObjectiveControlLevel(UNIT_N030_DRAK_THARON_KEEP, 10));
     }
 
 

@@ -11,7 +11,6 @@ using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests.Druids;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -32,7 +31,7 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       StartingLumber = 700;
       CinematicMusic = "DarkAgents";
-      ControlPointDefenderUnitTypeId = Constants.UNIT_E01Y_CONTROL_POINT_DEFENDER_DRUIDS;
+      ControlPointDefenderUnitTypeId = UNIT_E01Y_CONTROL_POINT_DEFENDER_DRUIDS;
       IntroText = @"You are playing as the ancient Druids of the Cenarion Circle.
 
 You begin isolated in the deepest parts of Mount Hyjal near the World Tree.
@@ -93,7 +92,7 @@ Gather your forces and strike before the Horde can organize their efforts.";
       ModObjectLimit(FourCC("e00N"), 6); //Keeper of the Grove
       ModObjectLimit(FourCC("n05H"), UNLIMITED); //Furbolg
       ModObjectLimit(FourCC("n065"), 6); //Green Dragon
-      ModObjectLimit(Constants.UNIT_E012_SIEGE_ANCIENT_DRUIDS_ELITE, 6);
+      ModObjectLimit(UNIT_E012_SIEGE_ANCIENT_DRUIDS_ELITE, 6);
 
       //Ships
       ModObjectLimit(FourCC("etrs"), UNLIMITED); //Night Elf Transport Ship
@@ -109,9 +108,9 @@ Gather your forces and strike before the Horde can organize their efforts.";
       ModObjectLimit(FourCC("E00H"), 1); //Cenarius
       ModObjectLimit(FourCC("E00K"), 1); //Tortolla
       ModObjectLimit(FourCC("Efur"), 1); //Furion
-      ModObjectLimit(Constants.UNIT_E00A_ANCIENT_GUARDIAN_DRUIDS, 1);
-      ModObjectLimit(Constants.UNIT_E00X_ELEMENTAL_GUARDIAN_DRUIDS_DEMI, 1);
-      ModObjectLimit(Constants.UNIT_H04U_DEMIGOD_DRUIDS, 1);
+      ModObjectLimit(UNIT_E00A_ANCIENT_GUARDIAN_DRUIDS, 1);
+      ModObjectLimit(UNIT_E00X_ELEMENTAL_GUARDIAN_DRUIDS_DEMI, 1);
+      ModObjectLimit(UNIT_H04U_DEMIGOD_DRUIDS, 1);
 
       ModObjectLimit(FourCC("Redt"), UNLIMITED); //Druid of the Talon Adept Training
       ModObjectLimit(FourCC("Renb"), UNLIMITED); //Nature)s Blessing
@@ -130,10 +129,10 @@ Gather your forces and strike before the Horde can organize their efforts.";
       ModObjectLimit(FourCC("R047"), UNLIMITED); //Crippling Poison
       ModObjectLimit(FourCC("R048"), UNLIMITED); //Deadly Poison
       ModObjectLimit(FourCC("R008"), UNLIMITED); //Improved Natures FuryR015
-      ModObjectLimit(FourCC("R015"), Constants.UPGRADE_R015_IMPROVED_MANA_FLARE_DRUIDS);
-      ModObjectLimit(Constants.UPGRADE_R09V_STORM_CROW_FORM_DRUIDS, UNLIMITED);
+      ModObjectLimit(FourCC("R015"), UPGRADE_R015_IMPROVED_MANA_FLARE_DRUIDS);
+      ModObjectLimit(UPGRADE_R09V_STORM_CROW_FORM_DRUIDS, UNLIMITED);
 
-      SetObjectLevel(Constants.UPGRADE_REWS_WELL_SPRING, 1);
+      SetObjectLevel(UPGRADE_REWS_WELL_SPRING, 1);
     }
 
     private void RegisterQuests()
@@ -166,7 +165,7 @@ Gather your forces and strike before the Horde can organize their efforts.";
         new[] { this },
         new Objective[]
         {
-          new ObjectiveUnitAlive(_preplacedUnitSystem.GetUnit(Constants.UNIT_NSTH_SATYR_HELLCALLER, Regions.SatyrCamp.Center)),
+          new ObjectiveUnitAlive(_preplacedUnitSystem.GetUnit(UNIT_NSTH_SATYR_HELLCALLER, Regions.SatyrCamp.Center)),
           new ObjectiveLegendInRect(_allLegendSetup.Druids.Malfurion, Regions.SatyrCamp, "Satyr camp")
         }));
       
@@ -200,7 +199,7 @@ Gather your forces and strike before the Horde can organize their efforts.";
       {
         Name = "Immortality",
         Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
-        ResearchId = Constants.UPGRADE_YB01_IMMORTALITY_POWER_IS_ACTIVE
+        ResearchId = UPGRADE_YB01_IMMORTALITY_POWER_IS_ACTIVE
       });
     }
     

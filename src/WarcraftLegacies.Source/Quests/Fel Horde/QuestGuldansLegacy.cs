@@ -1,6 +1,5 @@
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Fel_Horde
 {
@@ -11,7 +10,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
   {
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Learn to research {GetObjectName(Constants.UPGRADE_R03O_BLOOD_RUNES_FEL_HORDE)} from the {GetObjectName(Constants.UNIT_O031_WAR_MILL_FEL_HORDE_RESEARCH)}";
+      $"Learn to research {GetObjectName(UPGRADE_R03O_BLOOD_RUNES_FEL_HORDE)} from the {GetObjectName(UNIT_O031_WAR_MILL_FEL_HORDE_RESEARCH)}";
 
     /// <inheritdoc/>
     public override string RewardFlavour =>
@@ -25,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       @"ReplaceableTextures\CommandButtons\BTNGuldan.blp")
     {
       AddObjective(new ObjectiveAnyUnitInRect(Regions.GuldansCorpse, "Gul'dan's corpse in the Tomb of Sargeras", true));
-      ResearchId = Constants.UPGRADE_R041_QUEST_COMPLETED_GUL_DANS_LEGACY_FEL_HORDE;
+      ResearchId = UPGRADE_R041_QUEST_COMPLETED_GUL_DANS_LEGACY_FEL_HORDE;
     }
   }
 }

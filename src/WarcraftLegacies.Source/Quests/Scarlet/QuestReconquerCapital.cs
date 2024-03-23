@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       
       AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in Capital City", 3));
       AddObjective(new ObjectiveControlCapital(capitalPalace, false));
-      AddObjective(new ObjectiveControlLevel(Constants.UNIT_N01G_LORDAERON_CITY, 4));
+      AddObjective(new ObjectiveControlLevel(UNIT_N01G_LORDAERON_CITY, 4));
       _saiden = saiden;
       _renault = renault;
       _sally = sally;

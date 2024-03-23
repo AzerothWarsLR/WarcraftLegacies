@@ -6,7 +6,6 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Naga
 {
@@ -25,13 +24,13 @@ namespace WarcraftLegacies.Source.Quests.Naga
       "A tribe of Draenei known as the Ashtongue are struggling to survive in the harsh environment of Outland. If Illidan helps them, they would plead loyalty to him.",
       @"ReplaceableTextures\CommandButtons\BTNDranaiAkama.blp")
     {
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N01J_ZANGARMARSH));
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N02N_BLADE_S_EDGE_MOUNTAINS));
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N00B_NAGRAND));
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N0CW_FARAHLON));
+      AddObjective(new ObjectiveControlPoint(UNIT_N01J_ZANGARMARSH));
+      AddObjective(new ObjectiveControlPoint(UNIT_N02N_BLADE_S_EDGE_MOUNTAINS));
+      AddObjective(new ObjectiveControlPoint(UNIT_N00B_NAGRAND));
+      AddObjective(new ObjectiveControlPoint(UNIT_N0CW_FARAHLON));
       AddObjective(new ObjectiveExpire(1450, Title));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = Constants.UPGRADE_R05H_QUEST_COMPLETED_THE_LOST_ONES;
+      ResearchId = UPGRADE_R05H_QUEST_COMPLETED_THE_LOST_ONES;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       
     }
@@ -46,7 +45,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// <inheritdoc/>
     /// </summary>
     protected override string RewardDescription =>
-      $"Gain control of the Draenei camp in Outland, allows construction of the Ashtongue Lair and Akama can be trained from the {GetObjectName(Constants.UNIT_NNAD_ALTAR_OF_THE_BETRAYER_ILLIDARI_ALTAR)}";
+      $"Gain control of the Draenei camp in Outland, allows construction of the Ashtongue Lair and Akama can be trained from the {GetObjectName(UNIT_NNAD_ALTAR_OF_THE_BETRAYER_ILLIDARI_ALTAR)}";
 
 
     /// <summary>

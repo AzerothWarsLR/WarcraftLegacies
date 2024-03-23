@@ -16,26 +16,26 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       Nzoth = new LegendaryHero("N'zoth")
       {
-        UnitType = Constants.UNIT_U01Z_OLD_GOD_NZOTH,
+        UnitType = UNIT_U01Z_OLD_GOD_NZOTH,
         PermaDies = true,
         StartingXp = 10000,
       };
 
       Vezax = new LegendaryHero("General Vezax")
       {
-        UnitType = Constants.UNIT_U02B_YOGG_SARON_CHAMPION,
+        UnitType = UNIT_U02B_YOGG_SARON_CHAMPION,
         StartingXp = 7000,
       };
 
       Volazj = new LegendaryHero("Herald Volazj")
       {
-        UnitType = Constants.UNIT_E01D_N_RAQI_ARCANIST_YOGG,
+        UnitType = UNIT_E01D_N_RAQI_ARCANIST_YOGG,
         StartingXp = 7000,
       };
 
       Yorsahj = new LegendaryHero("Yor'sahj")
       {
-        UnitType = Constants.UNIT_U02A_N_RAQI_ABERRATION_YOGG,
+        UnitType = UNIT_U02A_N_RAQI_ABERRATION_YOGG,
         StartingXp = 7000,
       };
     }

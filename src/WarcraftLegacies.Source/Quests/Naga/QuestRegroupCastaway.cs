@@ -14,10 +14,10 @@ namespace WarcraftLegacies.Source.Quests.Naga
       "Illidan will need to collect more lost knowledge to be form a new generation of Naga Sea Witch",
       @"ReplaceableTextures\CommandButtons\BTNNagaSeaWitch.blp")
     {
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N00W_ZUL_GURUB));
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N00Y_DEADWIND_PASS));
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N00U_SWAMP_OF_SORROWS));
-      ResearchId = Constants.UPGRADE_R093_QUEST_COMPLETED_ANCIENT_LIBRARIES;
+      AddObjective(new ObjectiveControlPoint(UNIT_N00W_ZUL_GURUB));
+      AddObjective(new ObjectiveControlPoint(UNIT_N00Y_DEADWIND_PASS));
+      AddObjective(new ObjectiveControlPoint(UNIT_N00U_SWAMP_OF_SORROWS));
+      ResearchId = UPGRADE_R093_QUEST_COMPLETED_ANCIENT_LIBRARIES;
       
     }
 

@@ -2,7 +2,6 @@
 using MacroTools.HintSystem;
 using WarcraftLegacies.Source.Commands;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.GameModes
 {

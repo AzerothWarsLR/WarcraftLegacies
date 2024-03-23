@@ -3,7 +3,6 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 using static War3Api.Blizzard;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
@@ -36,7 +35,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     {
       AddObjective(new ObjectiveQuestComplete(prerequisite));
       AddObjective(new ObjectiveControlLegend(daelinProudmoore, false));
-      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R05J_STRANGLETHORN_EXPEDITION_KULTIRAS, Constants.UNIT_H046_BORALUS_KEEP_KUL_TIRAS));
+      AddObjective(new ObjectiveResearch(UPGRADE_R05J_STRANGLETHORN_EXPEDITION_KULTIRAS, UNIT_H046_BORALUS_KEEP_KUL_TIRAS));
       AddObjective(new ObjectiveSelfExists());
       _proudmooreCapitalShip = proudmooreCapitalShip;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     {
       
       AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in Brill", 4));
-      AddObjective(new ObjectiveControlLevel(Constants.UNIT_N03H_BRILL, 2));
+      AddObjective(new ObjectiveControlLevel(UNIT_N03H_BRILL, 2));
       _renault = renault;
     }
 

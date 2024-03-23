@@ -1,7 +1,6 @@
 ﻿using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using System.Collections.Generic;
-using static War3Api.Common;
 using MacroTools.Extensions;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
@@ -24,15 +23,15 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     public QuestGilneasCity(unit gilneasDoor) : base("Liberation of Gilneas", "Gilneas has been under the curse of the Worgen. Eliminate all of them to free Gilneas of the curse.", @"ReplaceableTextures\CommandButtons\BTNGilneasCathedral.blp")
     {
       _gilneasDoor = gilneasDoor;
-      AddObjective(new ObjectiveKillXUnit(Constants.UNIT_O02J_WORGEN_GILNEAS, 8));
-      AddObjective(new ObjectiveKillXUnit(Constants.UNIT_O038_WORGEN_BLOOD_SHAMAN_WORGEN_HERO, 3));
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_H02C_CASTLE_GILNEAS_T3, Constants.UNIT_H01R_TOWN_HALL_GILNEAS_T1));
+      AddObjective(new ObjectiveKillXUnit(UNIT_O02J_WORGEN_GILNEAS, 8));
+      AddObjective(new ObjectiveKillXUnit(UNIT_O038_WORGEN_BLOOD_SHAMAN_WORGEN_HERO, 3));
+      AddObjective(new ObjectiveUpgrade(UNIT_H02C_CASTLE_GILNEAS_T3, UNIT_H01R_TOWN_HALL_GILNEAS_T1));
       AddObjective(new ObjectiveExpire(660, "Liberation of Gilneas"));
       AddObjective(new ObjectiveSelfExists());
 
       _rescueUnits = Regions.GilneasUnlock5.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures, RescuableFilter);
       _rescueUnits.AddRange(Regions.GilneasUnlock6.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures, RescuableFilter));
-      ResearchId = Constants.UPGRADE_R02R_QUEST_COMPLETED_LIBERATION_OF_GILNEAS;
+      ResearchId = UPGRADE_R02R_QUEST_COMPLETED_LIBERATION_OF_GILNEAS;
       
     }
 
@@ -76,6 +75,6 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
       rescuer.RescueGroup(_rescueUnits);
     }
 
-    private static bool RescuableFilter(unit filterUnit) => filterUnit.GetTypeId() != Constants.UNIT_O05Q_GREYMANETOWER_GILNEAS_REAL_TOWER;
+    private static bool RescuableFilter(unit filterUnit) => filterUnit.GetTypeId() != UNIT_O05Q_GREYMANETOWER_GILNEAS_REAL_TOWER;
   }
 }

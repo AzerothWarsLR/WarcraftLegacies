@@ -6,7 +6,6 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Stormwind
 {
@@ -18,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       "Hogger and his pack have taken over Goldshire, clear them out!",
       @"ReplaceableTextures\CommandButtons\BTNGnoll.blp")
     {
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N00Z_ELWYNN_FOREST));
+      AddObjective(new ObjectiveControlPoint(UNIT_N00Z_ELWYNN_FOREST));
       AddObjective(new ObjectiveExpire(600, Title));
       AddObjective(new ObjectiveSelfExists());
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())

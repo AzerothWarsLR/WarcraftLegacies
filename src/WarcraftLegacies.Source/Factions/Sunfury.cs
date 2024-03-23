@@ -7,7 +7,6 @@ using WarcraftLegacies.Source.Quests.Quelthalas;
 using WarcraftLegacies.Source.Quests.Sunfury;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -30,7 +29,7 @@ namespace WarcraftLegacies.Source.Factions
       FoodMaximum = 250;
       StartingCameraPosition = Regions.SunfuryStartingPosition.Center;
       StartingUnits = Regions.SunfuryStartingPosition.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
-      ControlPointDefenderUnitTypeId = Constants.UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS;
+      ControlPointDefenderUnitTypeId = UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS;
       LearningDifficulty = FactionLearningDifficulty.Advanced;
       IntroText = @"You are playing as the power-hungry |cffff0000Sunfury|r.
 
@@ -66,7 +65,7 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
       Regions.Netherstorm.CleanupNeutralPassiveUnits();
       Regions.UpperNetherstorm.CleanupNeutralPassiveUnits();
       Regions.TempestKeep.CleanupNeutralPassiveUnits();
-      _preplacedUnitSystem.GetUnit(Constants.UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER).Remove();
+      _preplacedUnitSystem.GetUnit(UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER).Remove();
       base.OnNotPicked();
     }
 
@@ -97,7 +96,7 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
       ModObjectLimit(FourCC("u02W"), 2); //Energy Wagon
       ModObjectLimit(FourCC("h0CH"), UNLIMITED); //Astromancer
       ModObjectLimit(FourCC("h0CG"), UNLIMITED); //Flamekeeper
-      ModObjectLimit(Constants.UNIT_H0CE_BLOOD_KNIGHT_SQUIRE_SUNFURY, 12);
+      ModObjectLimit(UNIT_H0CE_BLOOD_KNIGHT_SQUIRE_SUNFURY, 12);
       ModObjectLimit(FourCC("n0E3"), 6); //Warlock
       ModObjectLimit(FourCC("n0E4"), 6); //Elven Ballista
       ModObjectLimit(FourCC("n0E8"), 3); //Skyship
@@ -120,12 +119,12 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
       ModObjectLimit(FourCC("U02V"), 1); //Solarian
       ModObjectLimit(FourCC("Hkal"), 1); //Kael
       ModObjectLimit(FourCC("U004"), 1); //Kil
-      ModObjectLimit(Constants.UNIT_N0E5_VOID_REAVER_SUNFURY_DEMI, 1);
+      ModObjectLimit(UNIT_N0E5_VOID_REAVER_SUNFURY_DEMI, 1);
 
       //Upgrades
-      ModObjectLimit(Constants.UPGRADE_R09H_ASTROMANCER_MASTER_TRAINING_SUNFURY, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R09G_FLAMEKEEPER_MASTER_TRAINING_SUNFURY, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R09U_SEAL_OF_BLOOD_SUNFURY, UNLIMITED);
+      ModObjectLimit(UPGRADE_R09H_ASTROMANCER_MASTER_TRAINING_SUNFURY, UNLIMITED);
+      ModObjectLimit(UPGRADE_R09G_FLAMEKEEPER_MASTER_TRAINING_SUNFURY, UNLIMITED);
+      ModObjectLimit(UPGRADE_R09U_SEAL_OF_BLOOD_SUNFURY, UNLIMITED);
     }
 
     private void RegisterQuests()

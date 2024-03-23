@@ -2,7 +2,6 @@
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Sentinels
 {
@@ -19,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       @"ReplaceableTextures\CommandButtons\BTNRaider.blp")
     {
       AddObjective(new ObjectiveCapitalDead(orgrimmar));
-      ResearchId = Constants.UPGRADE_R007_QUEST_COMPLETED_GREEN_SKINNED_BRUTES_SENTINELS;
+      ResearchId = UPGRADE_R007_QUEST_COMPLETED_GREEN_SKINNED_BRUTES_SENTINELS;
       
     }
 
@@ -28,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       "The Warsong presence on Kalimdor has been eliminated. The land has been protected from their misbegotten race.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => $"Allows {GetObjectName(Constants.UNIT_N034_GUILD_RANGER_SENTINELS)}s to be trained from {GetObjectName(Constants.UNIT_E00T_WATCHER_S_BASTION_SENTINEL_SIEGE)}s";
+    protected override string RewardDescription => $"Allows {GetObjectName(UNIT_N034_GUILD_RANGER_SENTINELS)}s to be trained from {GetObjectName(UNIT_E00T_WATCHER_S_BASTION_SENTINEL_SIEGE)}s";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

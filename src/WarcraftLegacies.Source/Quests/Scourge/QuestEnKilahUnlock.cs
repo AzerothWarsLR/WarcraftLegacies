@@ -6,7 +6,6 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Scourge
 {
@@ -24,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       "Temple City of En'kilah", "The temple city of En'kilah will be the perfect place for an outpost near the Borean Tundra.",
       @"ReplaceableTextures\CommandButtons\BTNNerubianZiggurat.blp")
     {
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N09H_EN_KILAH));
+      AddObjective(new ObjectiveControlPoint(UNIT_N09H_EN_KILAH));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

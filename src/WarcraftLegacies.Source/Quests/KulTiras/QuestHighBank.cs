@@ -7,7 +7,6 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using System.Collections.Generic;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
@@ -26,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     {
       _katherine = katherine;
       AddObjective(new ObjectiveControlLegend(katherine, false));
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N00L_BOOTY_BAY));
+      AddObjective(new ObjectiveControlPoint(UNIT_N00L_BOOTY_BAY));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }

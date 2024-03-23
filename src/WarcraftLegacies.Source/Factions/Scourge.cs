@@ -13,7 +13,6 @@ using WarcraftLegacies.Source.FactionMechanics.Scourge.Plague;
 using WarcraftLegacies.Source.Quests.Scourge;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -31,12 +30,12 @@ namespace WarcraftLegacies.Source.Factions
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
-      UndefeatedResearch = Constants.UPGRADE_R05K_SCOURGE_EXISTS;
+      UndefeatedResearch = UPGRADE_R05K_SCOURGE_EXISTS;
       StartingGold = 200;
       StartingLumber = 700;
       FoodMaximum = 250;
       CinematicMusic = "ArthasTheme";
-      ControlPointDefenderUnitTypeId = Constants.UNIT_U028_CONTROL_POINT_DEFENDER_SCOURGE;
+      ControlPointDefenderUnitTypeId = UNIT_U028_CONTROL_POINT_DEFENDER_SCOURGE;
       IntroText = @"You are playing as the the horrific Undead Scourge.
 
 You begin in Northrend, a vast and isolated land; perfect to raise an army of undying warriors to destroy the living.
@@ -134,7 +133,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       ModObjectLimit(FourCC("U00M"), 1); //Kel'thuzad (Ghost)
       ModObjectLimit(FourCC("U00A"), 1); //Rivendare
       ModObjectLimit(FourCC("Uktl"), 1); //Kel'thuzad (Lich)
-      ModObjectLimit(Constants.UNIT_UEAR_CHAMPION_OF_THE_SCOURGE_SCOURGE, 1);
+      ModObjectLimit(UNIT_UEAR_CHAMPION_OF_THE_SCOURGE_SCOURGE, 1);
 
       //Upgrades
       ModObjectLimit(FourCC("Ruba"), UNLIMITED); //Banshee Adept Training
@@ -145,18 +144,18 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       ModObjectLimit(FourCC("Rune"), UNLIMITED); //Necromancer Adept Training
       ModObjectLimit(FourCC("Ruwb"), UNLIMITED); //Web
       ModObjectLimit(FourCC("R00Q"), UNLIMITED); //Chilling Aura
-      ModObjectLimit(Constants.UPGRADE_R01X_EPIDEMIC_SCOURGE, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R01D_HOWL_OF_TERROR_SCOURGE, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R06N_IMPROVED_ORB_OF_ANNIHILATION_SCOURGE, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_RUSL_SKELETAL_LONGEVITY, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_RUSM_SKELETAL_MASTERY, UNLIMITED);
+      ModObjectLimit(UPGRADE_R01X_EPIDEMIC_SCOURGE, UNLIMITED);
+      ModObjectLimit(UPGRADE_R01D_HOWL_OF_TERROR_SCOURGE, UNLIMITED);
+      ModObjectLimit(UPGRADE_R06N_IMPROVED_ORB_OF_ANNIHILATION_SCOURGE, UNLIMITED);
+      ModObjectLimit(UPGRADE_RUSL_SKELETAL_LONGEVITY, UNLIMITED);
+      ModObjectLimit(UPGRADE_RUSM_SKELETAL_MASTERY, UNLIMITED);
 
-      ModObjectLimit(Constants.UPGRADE_R07X_MAKE_ARTHAS_THE_LICH_KING_SCOURGE, UNLIMITED);
+      ModObjectLimit(UPGRADE_R07X_MAKE_ARTHAS_THE_LICH_KING_SCOURGE, UNLIMITED);
 
       //Abilities
-      ModAbilityAvailability(Constants.ABILITY_A0WG_SPELL_SHIELD_SPELL_BOOK_ORANGE_ANTONIDAS_RED_LICH_KING, -1);
-      ModAbilityAvailability(Constants.ABILITY_A0K2_RAISE_DEAD_AUTO_CAST_RED_TEMPLE_OF_THE_DAMNED_OFF, -1);
-      ModAbilityAvailability(Constants.ABILITY_A09N_PERMANENT_IMMOLATION_SCOURGE_ICECROWN_OBELISK, -1);
+      ModAbilityAvailability(ABILITY_A0WG_SPELL_SHIELD_SPELL_BOOK_ORANGE_ANTONIDAS_RED_LICH_KING, -1);
+      ModAbilityAvailability(ABILITY_A0K2_RAISE_DEAD_AUTO_CAST_RED_TEMPLE_OF_THE_DAMNED_OFF, -1);
+      ModAbilityAvailability(ABILITY_A09N_PERMANENT_IMMOLATION_SCOURGE_ICECROWN_OBELISK, -1);
     }
 
     private void RegisterQuests()
@@ -165,11 +164,11 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       QuestEnKilahUnlock questEnKilahUnlock = new(Regions.EnKilahUnlock);
       QuestDrakUnlock questDrakUnlock = new(Regions.DrakUnlock, _allLegendSetup.Scourge.Kelthuzad);
 
-      QuestSapphiron questSapphiron = new(_preplacedUnitSystem.GetUnit(Constants.UNIT_UBDR_SAPPHIRON_CREEP),
+      QuestSapphiron questSapphiron = new(_preplacedUnitSystem.GetUnit(UNIT_UBDR_SAPPHIRON_CREEP),
         _allLegendSetup.Scourge.Kelthuzad);
 
       QuestLichKingArthas questLichKingArthas =
-        new(_preplacedUnitSystem.GetUnit(Constants.UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER),
+        new(_preplacedUnitSystem.GetUnit(UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER),
           _artifactSetup.HelmOfDomination,
           _allLegendSetup.Scourge.Arthas, _allLegendSetup.Scourge.TheFrozenThrone);
       QuestSlumberingKing questSlumberingKing = new();
@@ -217,7 +216,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
           null,
           new[]
           {
-            new ObjectiveStartSpell(Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS, false,
+            new ObjectiveStartSpell(ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS, false,
               _allLegendSetup.Scourge.Kelthuzad)
           }));
 
@@ -442,10 +441,10 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       };
       plagueParameters.PlagueArmySummonParameters = new List<PlagueArmySummonParameter>
       {
-        new(1, Constants.UNIT_UACO_ACOLYTE_SCOURGE_WORKER),
-        new(2, Constants.UNIT_UGHO_GHOUL_SCOURGE),
-        new(2, Constants.UNIT_UCRY_CRYPT_FIEND_SCOURGE),
-        new(2, Constants.UNIT_UABO_ABOMINATION_SCOURGE),
+        new(1, UNIT_UACO_ACOLYTE_SCOURGE_WORKER),
+        new(2, UNIT_UGHO_GHOUL_SCOURGE),
+        new(2, UNIT_UCRY_CRYPT_FIEND_SCOURGE),
+        new(2, UNIT_UABO_ABOMINATION_SCOURGE),
       };
       plagueParameters.AttackTargets = new List<Point>
       {

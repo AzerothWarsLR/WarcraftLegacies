@@ -7,7 +7,6 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Frostwolf
 {
@@ -23,11 +22,11 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       "The Tauren have been wandering for too long. The fertile plains of Mulgore would offer respite from this endless journey.",
       @"ReplaceableTextures\CommandButtons\BTNCentaurKhan.blp")
     {
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N026_THOUSAND_NEEDLES ));
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N09G_MULGORE));
+      AddObjective(new ObjectiveControlPoint(UNIT_N026_THOUSAND_NEEDLES ));
+      AddObjective(new ObjectiveControlPoint(UNIT_N09G_MULGORE));
       AddObjective(new ObjectiveExpire(480, Title));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = Constants.UPGRADE_R05I_QUEST_COMPLETED_THE_LONG_MARCH; 
+      ResearchId = UPGRADE_R05I_QUEST_COMPLETED_THE_LONG_MARCH; 
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 
