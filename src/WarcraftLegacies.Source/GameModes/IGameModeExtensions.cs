@@ -14,6 +14,12 @@ namespace WarcraftLegacies.Source.GameModes
   {
     public static IGameMode SetupTraditionalTeams(this IGameMode gameMode)
     {
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      {
+        var faction = player.GetFaction();
+        if (faction != null)
+          player.SetTeam(faction.TraditionalTeam);
+      }
       return gameMode;
     }
 
