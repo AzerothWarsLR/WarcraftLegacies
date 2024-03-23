@@ -66,9 +66,12 @@ namespace MacroTools.GameModes
 
       GetExpiredTimer().Destroy();
       DialogClear(dialog);
-      
+
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      {
+        DisplayTextToPlayer(player, 0, 0, $"The {highestVotedGameMode.GameMode.Name} game mode has been chosen.");
         DialogDisplay(player, dialog, false);
+      }
       
       foreach (var trigger in buttonClickTriggers)
         trigger.Destroy();
