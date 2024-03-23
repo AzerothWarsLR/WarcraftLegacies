@@ -123,6 +123,7 @@ namespace MacroTools.FactionSystem
         faction.NameChanged += OnFactionNameChange;
 
         ExecuteFactionDependentInitializers();
+        return;
       }
 
       throw new Exception($"Attempted to register faction that already exists with name {faction}.");
