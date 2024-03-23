@@ -247,6 +247,9 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
         }, new[]
         {
           new ObjectiveQuestComplete(warsong.GetQuestByType<QuestFountainOfBlood>())
+          {
+            EligibleFactions = new List<Faction> { warsong }
+          }
         }));
     }
     
