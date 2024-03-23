@@ -1,0 +1,43 @@
+{
+  "OldId": 2004111426,
+  "NewId": 1328951364,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818850404,
+      "Type": 3,
+      "Value": "*"
+    },
+    {
+      "Id": 1918989924,
+      "Value": 1
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "1 - Icecrown Citadel Canopy Tree"
+    },
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "war3mapImported\\Tree_IcecrownCanopy0.mdl"
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1936289124,
+      "Type": 2,
+      "Value": 0.6
+    }
+  ]
+}
