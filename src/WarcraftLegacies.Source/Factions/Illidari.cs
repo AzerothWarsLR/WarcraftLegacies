@@ -22,6 +22,7 @@ namespace WarcraftLegacies.Source.Factions
     public Illidari(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Illidan", PLAYER_COLOR_VIOLET,
       "|cffff00ff", @"ReplaceableTextures\CommandButtons\BTNEvilIllidan.blp")
     {
+      TraditionalTeam = TeamSetup.Outland;
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
       UndefeatedResearch = UPGRADE_R02L_ILLIDAN_EXISTS;

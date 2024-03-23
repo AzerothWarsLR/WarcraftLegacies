@@ -29,6 +29,7 @@ namespace WarcraftLegacies.Source.Factions
     public Dalaran(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
       : base("Dalaran", PLAYER_COLOR_PINK, "|c00e55bb0", @"ReplaceableTextures\CommandButtons\BTNJaina.blp")
     {
+      TraditionalTeam = TeamSetup.NorthAlliance;
       _artifactSetup = artifactSetup;
       _allLegendSetup = allLegendSetup;
       _gilneasGate = preplacedUnitSystem.GetUnit(UNIT_H02K_GREYMANE_S_GATE_CLOSED);

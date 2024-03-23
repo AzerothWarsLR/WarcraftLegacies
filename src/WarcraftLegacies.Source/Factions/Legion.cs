@@ -21,9 +21,11 @@ namespace WarcraftLegacies.Source.Factions
     private readonly AllLegendSetup _allLegendSetup;
 
     /// <inheritdoc />
+    
     public Legion(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Legion",
       PLAYER_COLOR_PEANUT, "|CFFBF8F4F", @"ReplaceableTextures\CommandButtons\BTNKiljaedin.blp")
     {
+      TraditionalTeam = TeamSetup.Legion;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
       UndefeatedResearch = UPGRADE_R04T_LEGION_EXISTS;

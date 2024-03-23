@@ -22,6 +22,12 @@ namespace MacroTools.Extensions
           sourcePlayer.SetPlayerAllianceStateControl(otherPlayer, false);
           sourcePlayer.SetPlayerAllianceStateFullControl(otherPlayer, false);
           break;
+        case AllianceState.Allied:
+          sourcePlayer.SetPlayerAllianceStateAlly(otherPlayer, true);
+          sourcePlayer.SetPlayerAllianceStateVision(otherPlayer, false);
+          sourcePlayer.SetPlayerAllianceStateControl(otherPlayer, false);
+          sourcePlayer.SetPlayerAllianceStateFullControl(otherPlayer, false);
+          break;
         case AllianceState.AlliedVision:
           sourcePlayer.SetPlayerAllianceStateAlly(otherPlayer, true);
           sourcePlayer.SetPlayerAllianceStateVision(otherPlayer, true);

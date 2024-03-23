@@ -24,9 +24,11 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
+    
     public Lordaeron(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Lordaeron",
       PLAYER_COLOR_LIGHT_BLUE, "|cff8080ff", @"ReplaceableTextures\CommandButtons\BTNArthas.blp")
     {
+      TraditionalTeam = TeamSetup.NorthAlliance;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;

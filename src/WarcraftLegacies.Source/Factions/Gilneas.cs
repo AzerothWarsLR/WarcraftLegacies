@@ -22,6 +22,7 @@ namespace WarcraftLegacies.Source.Factions
     public Gilneas(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup) : base("Gilneas", PLAYER_COLOR_COAL, "|cff808080",
       @"ReplaceableTextures\CommandButtons\BTNGreymane.blp")
     {
+      TraditionalTeam = TeamSetup.NorthAlliance;
       _artifactSetup = artifactSetup;
       _allLegendSetup = allLegendSetup;
       _gilneasGate = preplacedUnitSystem.GetUnit(UNIT_H02K_GREYMANE_S_GATE_CLOSED);
