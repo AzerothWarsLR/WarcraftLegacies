@@ -111,22 +111,19 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public static void Register(Faction faction)
     {
-      if (!FactionsByName.ContainsKey(faction.Name.ToLower()))
-      {
-        FactionsByName[faction.Name.ToLower()] = faction;
-        foreach (var nickname in faction.Nicknames)
-          FactionsByName[nickname.ToLower()] = faction;
+      if (FactionsByName.ContainsKey(faction.Name.ToLower()))
+        throw new Exception($"Attempted to register faction that already exists with name {faction}.");
 
-        AllFactions.Add(faction);
-        FactionRegistered?.Invoke(faction, faction);
-        faction.OnRegistered();
-        faction.NameChanged += OnFactionNameChange;
+      FactionsByName[faction.Name.ToLower()] = faction;
+      foreach (var nickname in faction.Nicknames)
+        FactionsByName[nickname.ToLower()] = faction;
 
-        ExecuteFactionDependentInitializers();
-        return;
-      }
+      AllFactions.Add(faction);
+      FactionRegistered?.Invoke(faction, faction);
+      faction.OnRegistered();
+      faction.NameChanged += OnFactionNameChange;
 
-      throw new Exception($"Attempted to register faction that already exists with name {faction}.");
+      ExecuteFactionDependentInitializers();
     }
 
     /// <summary>
