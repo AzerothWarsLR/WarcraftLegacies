@@ -133,7 +133,7 @@ The Night Elves are aware of your presence and are gathering a mighty host again
     private void RegisterQuests()
     {
       StartingQuest = AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
-      AddQuest(new QuestCrossroads(Regions.Crossroads, _preplacedUnitSystem));
+      AddQuest(new QuestCrossroads(Regions.Crossroads));
       AddQuest(new QuestLumberCamp(Regions.LumberCampUnlock, _allLegendSetup.Warsong.GromHellscream));
       AddQuest(new QuestChenStormstout(_preplacedUnitSystem.GetUnit(FourCC("Nsjs"))));
       AddQuest(new QuestFountainOfBlood(_allLegendSetup.Neutral.FountainOfBlood, _allLegendSetup.Warsong.GromHellscream));

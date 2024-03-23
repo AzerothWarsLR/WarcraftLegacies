@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
@@ -17,12 +16,10 @@ namespace WarcraftLegacies.Source.Quests.Warsong
   {
     private readonly List<unit> _rescueUnits;
 
-    public QuestCrossroads(Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem) : base("The Crossroads",
+    public QuestCrossroads(Rectangle rescueRect) : base("The Crossroads",
       "The Horde still needs to establish a strong strategic foothold into Kalimdor. Expand into the Barrens and claim the Crossroads.",
       @"ReplaceableTextures\CommandButtons\BTNBarracks.blp")
     {
-      AddObjective(
-        new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(FourCC("nrzm"), rescueRect.Center))); //Razorman Medicine Man
       AddObjective(new ObjectiveControlPoint(Constants.UNIT_N01T_NORTHERN_BARRENS));
       AddObjective(new ObjectiveExpire(480, Title));
       AddObjective(new ObjectiveSelfExists());
