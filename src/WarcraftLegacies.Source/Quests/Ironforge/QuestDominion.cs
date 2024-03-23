@@ -17,11 +17,13 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
   {
     private readonly List<unit> _rescueUnits;
 
-    public QuestDominion(Rectangle rescueRect, QuestData prerequisite) : base("Dwarven Dominion",
+    public QuestDominion(Rectangle rescueRect, params QuestData[] prerequisites) : base("Dwarven Dominion",
       "The Dwarven Dominion must be established before Ironforge can join the war.",
       @"ReplaceableTextures\CommandButtons\BTNDwarvenFortress.blp")
     {
-      AddObjective(new ObjectiveQuestComplete(prerequisite));
+      foreach (var prerequisite in prerequisites)
+        AddObjective(new ObjectiveQuestComplete(prerequisite));
+      
       AddObjective(new ObjectiveControlPoint(Constants.UNIT_N017_DUN_MODR));
       AddObjective(new ObjectiveControlPoint(Constants.UNIT_N014_DUN_MOROGH));
       AddObjective(new ObjectiveUpgrade(Constants.UNIT_H07G_GREAT_HOLD_IRONFORGE_T3,
