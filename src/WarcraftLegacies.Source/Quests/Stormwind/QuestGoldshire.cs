@@ -15,12 +15,11 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
   {
     private readonly List<unit> _rescueUnits = new();
 
-    public QuestGoldshire(Rectangle rescueRect, unit hogger) : base("The Scourge of Elwynn",
+    public QuestGoldshire(Rectangle rescueRect) : base("The Scourge of Elwynn",
       "Hogger and his pack have taken over Goldshire, clear them out!",
       @"ReplaceableTextures\CommandButtons\BTNGnoll.blp")
     {
-      AddObjective(new ObjectiveUnitIsDead(hogger)); //Hogger
-      AddObjective(new ObjectiveControlPoint(FourCC("n00Z")));
+      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N00Z_ELWYNN_FOREST));
       AddObjective(new ObjectiveExpire(600, Title));
       AddObjective(new ObjectiveSelfExists());
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())

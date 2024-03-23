@@ -11,15 +11,13 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
 {
   public sealed class QuestDarkshire : QuestData
   {
-    public QuestDarkshire(unit gnollToKill) : base("Gnoll Troubles",
+    public QuestDarkshire() : base("Gnoll Troubles",
       "The town of Darkshire is under attack by Gnoll's, clear them out!",
       @"ReplaceableTextures\CommandButtons\BTNGnollArcher.blp")
     {
-      AddObjective(new ObjectiveUnitIsDead(gnollToKill));
-      AddObjective(new ObjectiveControlPoint(FourCC("n00V")));
+      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N00V_DUSKWOOD));
       AddObjective(new ObjectiveExpire(600, Title));
       AddObjective(new ObjectiveSelfExists());
-      
     }
 
     /// <inheritdoc/>

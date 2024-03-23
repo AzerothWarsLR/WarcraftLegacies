@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using WarcraftLegacies.Source.Quests.Stormwind;
 using WarcraftLegacies.Source.Researches.Stormwind;
 using WarcraftLegacies.Source.Setup;
-using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
@@ -141,12 +140,10 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
     private void RegisterQuests()
     {
       var newQuest =
-        AddQuest(new QuestDarkshire(_preplacedUnitSystem.GetUnit(FourCC("ngnv"), Regions.DarkshireUnlock.Center)));
+        AddQuest(new QuestDarkshire());
       StartingQuest = newQuest;
-      AddQuest(new QuestLakeshire(Regions.LakeshireUnlock,
-        _preplacedUnitSystem.GetUnit(FourCC("nogl"), new Point(14288, -14063))));
-      AddQuest(new QuestGoldshire(Regions.ElwinForestAmbient,
-        _preplacedUnitSystem.GetUnit(Constants.UNIT_N021_HOGGER)));
+      AddQuest(new QuestLakeshire(Regions.LakeshireUnlock));
+      AddQuest(new QuestGoldshire(Regions.ElwinForestAmbient));
       AddQuest(new QuestStormwindCity(Regions.StormwindUnlock));
       AddQuest(new QuestNethergarde(_preplacedUnitSystem, _allLegendSetup.Stormwind.Varian));
       AddQuest(new QuestStromgarde(Regions.Stromgarde));

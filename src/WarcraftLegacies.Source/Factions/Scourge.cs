@@ -161,8 +161,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
 
     private void RegisterQuests()
     {
-      QuestSpiderWar questSpiderWar = new(Regions.Ice_Crown,
-        _preplacedUnitSystem.GetUnit(Constants.UNIT_N074_QUEEN_NEZAR_AZRET));
+      QuestSpiderWar questSpiderWar = new(Regions.Ice_Crown);
       QuestEnKilahUnlock questEnKilahUnlock = new(Regions.EnKilahUnlock);
       QuestDrakUnlock questDrakUnlock = new(Regions.DrakUnlock, _allLegendSetup.Scourge.Kelthuzad);
 
