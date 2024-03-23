@@ -252,7 +252,7 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
     
     private void RegisterWarsongRelatedResearches(Warsong warsong)
     {
-      ResearchManager.Register(new FlightPath(warsong, this, UPGRADE_R09N_FLIGHT_PATH_WARSONG, 70, 75,
+      ResearchManager.Register(new FlightPath(warsong, this, UPGRADE_R09N_FLIGHT_PATH_WARSONG, 70,
         _preplacedUnitSystem));
     }
   }

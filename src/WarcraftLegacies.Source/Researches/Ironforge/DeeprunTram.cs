@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Researches.Ironforge
     private static bool _researched;
 
     /// <inheritdoc />
-    public DeeprunTram(Faction ironforge, Faction stormwind, int researchTypeId, int goldCost, int lumberCost, PreplacedUnitSystem preplacedUnitSystem) : base(researchTypeId, goldCost, lumberCost)
+    public DeeprunTram(Faction ironforge, Faction stormwind, int researchTypeId, int goldCost, PreplacedUnitSystem preplacedUnitSystem) : base(researchTypeId, goldCost)
     {
       _ironforge = ironforge;
       _stormwind = stormwind;

@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Researches
     private static bool _researched;
 
     /// <inheritdoc />
-    public FlightPath(Faction warsong, Faction frostwolf, int researchTypeId, int goldCost, int lumberCost, PreplacedUnitSystem preplacedUnitSystem) : base(researchTypeId, goldCost, lumberCost)
+    public FlightPath(Faction warsong, Faction frostwolf, int researchTypeId, int goldCost, PreplacedUnitSystem preplacedUnitSystem) : base(researchTypeId, goldCost)
     {
       _warsong = warsong;
       _frostwolf = frostwolf;

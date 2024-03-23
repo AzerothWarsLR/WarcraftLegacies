@@ -146,7 +146,7 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
     
     private void RegisterResearches()
     {
-      ResearchManager.Register(new SunfuryWarrior(UPGRADE_R004_SUNFURY_TRAINING_QUEL_THALAS, 300, 300));
+      ResearchManager.Register(new SunfuryWarrior(UPGRADE_R004_SUNFURY_TRAINING_QUEL_THALAS, 300));
     }
     
     private void RegisterScourgeDialogue(Scourge scourge)

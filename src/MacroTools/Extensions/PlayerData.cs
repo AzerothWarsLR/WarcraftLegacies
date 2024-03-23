@@ -117,8 +117,6 @@ namespace MacroTools.Extensions
     public Team? Team { get; private set; }
 
     public int EliminationTurns { get; set; }
-    
-    public float LumberIncome { get; set; }
 
     /// <summary>
     ///   Gold per second gained from all sources.

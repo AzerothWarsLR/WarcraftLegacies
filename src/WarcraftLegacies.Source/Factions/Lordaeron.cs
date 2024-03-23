@@ -177,7 +177,7 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
 
     private void RegisterResearches()
     {
-      ResearchManager.Register(new VeteranFootmen(UPGRADE_R00B_VETERAN_FOOTMEN_LORDAERON, 220, 120));
+      ResearchManager.Register(new VeteranFootmen(UPGRADE_R00B_VETERAN_FOOTMEN_LORDAERON, 220));
     }
     
     private void RegisterDialogue()

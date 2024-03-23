@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Researches
   public sealed class SunfuryWarrior : Research
   {
     /// <inheritdoc />
-    public SunfuryWarrior(int researchTypeId, int goldCost, int lumberCost) : base(researchTypeId, goldCost, lumberCost)
+    public SunfuryWarrior(int researchTypeId, int goldCost) : base(researchTypeId, goldCost)
     {
     }
 

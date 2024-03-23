@@ -16,14 +16,11 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
   public sealed class Trader : PassiveAbility
   {
     private readonly int _goldIncomeBonus;
-    private readonly int _lumberIncomeBonus;
     private readonly Point[] _tradeTargets;
 
-    public Trader(int unitTypeId, int goldIncomeBonus, int lumberIncomeBonus, IEnumerable<Point> tradeTargets) :
-      base(unitTypeId)
+    public Trader(int unitTypeId, int goldIncomeBonus, IEnumerable<Point> tradeTargets) : base(unitTypeId)
     {
       _goldIncomeBonus = goldIncomeBonus;
-      _lumberIncomeBonus = lumberIncomeBonus;
       _tradeTargets = tradeTargets.ToArray();
     }
 
@@ -35,7 +32,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
         var trainedUnit = GetTrainedUnit();
         trainedUnit.IssueOrder("patrol", _tradeTargets[GetRandomInt(0, _tradeTargets.Length - 1)]);
         var incomeBuff =
-          new TraderBuff(tradingCenter, trainedUnit, _goldIncomeBonus, _lumberIncomeBonus, tradingCenter);
+          new TraderBuff(tradingCenter, trainedUnit, _goldIncomeBonus, tradingCenter);
         BuffSystem.Add(incomeBuff);
       }
       catch (Exception ex)

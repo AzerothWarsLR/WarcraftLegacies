@@ -23,8 +23,6 @@ namespace MacroTools.ControlPointSystem
           {
             var goldPerSecond = player.GetTotalIncome() * Period / 60;
             player.AddGold(goldPerSecond);
-            var lumberPerSecond = player.GetLumberIncome() * Period / 60;
-            player.AddLumber(lumberPerSecond);
           }
       });
     }

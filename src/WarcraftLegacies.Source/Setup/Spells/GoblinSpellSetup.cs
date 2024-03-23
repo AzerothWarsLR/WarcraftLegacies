@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Regions.Trade3.Center,
         Regions.Trade4.Center
       };
-      PassiveAbilityManager.Register(new Trader(UNIT_NZEP_TRADING_ZEPPELIN_WARSONG, 15, 0, zeppelinTradeTargets));
+      PassiveAbilityManager.Register(new Trader(UNIT_NZEP_TRADING_ZEPPELIN_WARSONG, 15, zeppelinTradeTargets));
 
       var traderTradeTargets = new[]
       {
@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Regions.Trader2.Center,
         Regions.Trader3.Center
       };
-      PassiveAbilityManager.Register(new Trader(UNIT_O04S_TRADER_GOBLIN, 25, 0, traderTradeTargets));
+      PassiveAbilityManager.Register(new Trader(UNIT_O04S_TRADER_GOBLIN, 25, traderTradeTargets));
 
       SpellSystem.Register(new NuclearLaunch(ABILITY_A0RH_INTERCONTINENTAL_BOMBARDMENT_GOBLIN_ARTILLERY, 25));
 

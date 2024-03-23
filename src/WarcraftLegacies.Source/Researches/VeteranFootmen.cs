@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Researches
   public sealed class VeteranFootmen : Research
   {
     /// <inheritdoc />
-    public VeteranFootmen(int researchTypeId, int goldCost, int lumberCost) : base(researchTypeId, goldCost, lumberCost)
+    public VeteranFootmen(int researchTypeId, int goldCost) : base(researchTypeId, goldCost)
     {
     }
 

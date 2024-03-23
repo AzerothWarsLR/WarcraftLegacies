@@ -12,8 +12,7 @@ namespace WarcraftLegacies.Source.Researches
     private readonly Power _power;
 
     /// <inheritdoc />
-    public PowerResearch(int researchTypeId, int goldCost, int lumberCost, Power power) : base(researchTypeId, goldCost,
-      lumberCost) => _power = power;
+    public PowerResearch(int researchTypeId, int goldCost, Power power) : base(researchTypeId, goldCost) => _power = power;
 
     /// <inheritdoc />
     public override void OnResearch(player researchingPlayer) => researchingPlayer.GetFaction()?.AddPower(_power);

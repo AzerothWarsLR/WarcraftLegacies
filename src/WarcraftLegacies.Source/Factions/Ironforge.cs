@@ -155,7 +155,7 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
     
     private void RegisterStormwindResearches(Stormwind stormwind)
     {
-      ResearchManager.Register(new DeeprunTram(this, stormwind, UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 70, 75,
+      ResearchManager.Register(new DeeprunTram(this, stormwind, UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 70,
         _preplacedUnitSystem));
     }
   }
