@@ -20,6 +20,7 @@ namespace WarcraftLegacies.Source.Factions
     public Bilgewater(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Bilgewater", PLAYER_COLOR_LIGHT_GRAY, "|cff808080",
       @"ReplaceableTextures\CommandButtons\BTNHeroTinker.blp")
     {
+      TraditionalTeam = TeamSetup.Horde;
       _allLegendSetup = allLegendSetup;
       StartingGold = 200;
       StartingLumber = 700;

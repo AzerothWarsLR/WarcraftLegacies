@@ -20,6 +20,7 @@ namespace WarcraftLegacies.Source.Factions
       : base("Zandalar", PLAYER_COLOR_PEACH, "|cffff8c6c",
         @"ReplaceableTextures\CommandButtons\BTNHeadHunterBerserker.blp")
     {
+      TraditionalTeam = TeamSetup.Horde;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
