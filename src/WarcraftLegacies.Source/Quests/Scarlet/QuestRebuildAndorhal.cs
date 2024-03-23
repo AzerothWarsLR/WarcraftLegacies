@@ -1,5 +1,4 @@
-﻿using MacroTools.ControlPointSystem;
-using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+﻿using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
@@ -22,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     {
       
       AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in Andorhal", 5));
-      AddObjective(new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01H_ANDORHAL), 2));
+      AddObjective(new ObjectiveControlLevel(Constants.UNIT_N01H_ANDORHAL, 2));
       ResearchId = Constants.UPGRADE_R03P_QUEST_COMPLETED_ANDORHAL; 
     }
 

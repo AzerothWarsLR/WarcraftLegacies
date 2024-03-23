@@ -1,5 +1,4 @@
-﻿using MacroTools.ControlPointSystem;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.QuestSystem;
@@ -15,16 +14,12 @@ namespace WarcraftLegacies.Source.Quests.Druids
       "Arriving from another planet and across the seas of Azeroth, the Orcs of the Warsong Clan have arrived to ravage the wilderness and consume its bounty. They must be stopped.",
       @"ReplaceableTextures\CommandButtons\BTNHellScream.blp")
     {
-      AddObjective(new ObjectiveControlLevel(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01Q_NORTHERN_ASHENVALE), 10));
-      AddObjective(new ObjectiveControlLevel(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N08U_SOUTHERN_ASHENVALE), 10));
-      AddObjective(new ObjectiveControlLevel(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N05K_WARSONG_LUMBER_CAMP), 10));
-      AddObjective(new ObjectiveControlLevel(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N09R_ELDARATH), 10));
+      AddObjective(new ObjectiveControlLevel(Constants.UNIT_N01Q_NORTHERN_ASHENVALE, 10));
+      AddObjective(new ObjectiveControlLevel(Constants.UNIT_N08U_SOUTHERN_ASHENVALE, 10));
+      AddObjective(new ObjectiveControlLevel(Constants.UNIT_N05K_WARSONG_LUMBER_CAMP, 10));
+      AddObjective(new ObjectiveControlLevel(Constants.UNIT_N09R_ELDARATH, 10));
       AddObjective(new ObjectiveControlPoint(Constants.UNIT_N05K_WARSONG_LUMBER_CAMP));
-      ResearchId = FourCC("R05A");
+      ResearchId = Constants.UPGRADE_R05A_QUEST_COMPLETED_ENEMIES_AT_THE_GATE;
     }
     
     /// <inheritdoc/>

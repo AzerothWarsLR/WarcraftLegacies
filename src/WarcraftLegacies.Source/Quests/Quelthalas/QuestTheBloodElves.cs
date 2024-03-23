@@ -1,5 +1,4 @@
-﻿using MacroTools.ControlPointSystem;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
@@ -27,9 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     {
       ResearchId = Constants.UPGRADE_R04Q_QUEST_COMPLETED_THE_BLOOD_ELVES_QUEL_THALAS;
       AddObjective(new ObjectiveControlCapital(draktharonKeep, false));
-      AddObjective(
-        new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N030_DRAK_THARON_KEEP),
-          10));
+      AddObjective(new ObjectiveControlLevel(Constants.UNIT_N030_DRAK_THARON_KEEP, 10));
     }
 
 
