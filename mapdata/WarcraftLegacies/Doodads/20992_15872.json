@@ -41,7 +41,7 @@
   },
   {
     "State": 2,
-    "Life": 100,
+    "Life": 255,
     "TypeId": 926363716,
     "Position": {
       "X": 20736,
@@ -61,7 +61,7 @@
   },
   {
     "State": 2,
-    "Life": 100,
+    "Life": 255,
     "TypeId": 892809284,
     "Position": {
       "X": 20928,
@@ -81,7 +81,7 @@
   },
   {
     "State": 2,
-    "Life": 100,
+    "Life": 255,
     "TypeId": 892809284,
     "Position": {
       "X": 21120,

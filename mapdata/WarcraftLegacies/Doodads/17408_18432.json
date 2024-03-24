@@ -1,7 +1,7 @@
 [
   {
     "State": 6,
-    "Life": 100,
+    "Life": 255,
     "TypeId": 926363716,
     "Position": {
       "X": 17216,
