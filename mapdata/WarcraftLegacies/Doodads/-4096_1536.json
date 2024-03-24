@@ -1,83 +1,43 @@
 [
   {
     "State": 2,
-    "Life": 100,
-    "TypeId": 892481602,
+    "Life": 255,
+    "TypeId": 909586500,
     "Position": {
-      "X": -4416,
-      "Y": 1408,
+      "X": -4420.6777,
+      "Y": 1431.5647,
       "Z": -268.5
     },
-    "Rotation": 4.9916415,
+    "Rotation": 3.106686,
     "Scale": {
-      "X": 0.86966157,
-      "Y": 0.86966157,
-      "Z": 0.86966157
+      "X": 0.9157659,
+      "Y": 0.9157659,
+      "Z": 0.9157659
     },
-    "SkinId": 892481602,
+    "SkinId": 909586500,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 17673
+    "CreationNumber": 7764
   },
   {
     "State": 2,
-    "Life": 100,
-    "TypeId": 892481602,
+    "Life": 255,
+    "TypeId": 909586500,
     "Position": {
-      "X": -4096,
-      "Y": 1344,
+      "X": -4297.791,
+      "Y": 1378.5376,
       "Z": -268.5
     },
-    "Rotation": 0.6457718,
+    "Rotation": 5.550147,
     "Scale": {
-      "X": 0.81966,
-      "Y": 0.81966,
-      "Z": 0.81966
+      "X": 0.75340736,
+      "Y": 0.75340736,
+      "Z": 0.75340736
     },
-    "SkinId": 892481602,
+    "SkinId": 909586500,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 17720
-  },
-  {
-    "State": 2,
-    "Life": 100,
-    "TypeId": 892481602,
-    "Position": {
-      "X": -4544,
-      "Y": 1408,
-      "Z": -268.5
-    },
-    "Rotation": 5.1661744,
-    "Scale": {
-      "X": 0.83171487,
-      "Y": 0.83171487,
-      "Z": 0.83171487
-    },
-    "SkinId": 892481602,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 17675
-  },
-  {
-    "State": 2,
-    "Life": 100,
-    "TypeId": 892481602,
-    "Position": {
-      "X": -4160,
-      "Y": 1664,
-      "Z": -268.5
-    },
-    "Rotation": 5.794493,
-    "Scale": {
-      "X": 0.92699975,
-      "Y": 0.92699975,
-      "Z": 0.92699975
-    },
-    "SkinId": 892481602,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 17715
+    "CreationNumber": 7759
   },
   {
     "State": 6,

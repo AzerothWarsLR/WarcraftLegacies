@@ -280,26 +280,6 @@
     "CreationNumber": 20589
   },
   {
-    "State": 2,
-    "Life": 100,
-    "TypeId": 1668568131,
-    "Position": {
-      "X": -16416,
-      "Y": -8672,
-      "Z": 154.90625
-    },
-    "Rotation": 3.4033923,
-    "Scale": {
-      "X": 0.99999994,
-      "Y": 0.99999994,
-      "Z": 0.99999994
-    },
-    "SkinId": 1668568131,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 18985
-  },
-  {
     "State": 6,
     "Life": 255,
     "TypeId": 1886146393,
