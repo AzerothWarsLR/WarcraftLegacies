@@ -25,7 +25,9 @@ namespace MacroTools.Commands
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      return string.Join(", ", ArtifactManager.GetAllArtifacts().Select(x => GetItemName(x.Item)));
+      var artifactList = string.Join(", ", ArtifactManager.GetAllArtifacts().Select(x => GetItemName(x.Item)));
+      return
+        $"{artifactList}\n\nType -artifact followed by the name of one of the artifacts for extra information about it.";
     }
   }
 }
