@@ -2,7 +2,6 @@
 using MacroTools.Powers;
 using WCSharp.Buffs;
 using WCSharp.Events;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.FactionMechanics.Goblins
 {

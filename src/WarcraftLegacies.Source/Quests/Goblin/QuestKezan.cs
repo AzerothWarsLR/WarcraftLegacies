@@ -5,7 +5,6 @@ using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 
 namespace WarcraftLegacies.Source.Quests.Goblin
@@ -24,13 +23,13 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       "The island of Kezan should be the first expansion of our trade empire.",
       @"ReplaceableTextures\CommandButtons\BTNIronHordeMerchant.blp")
     {
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N092_ZUL_FARRAK));
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N0BK_LOST_CITY_OF_THE_TOL_VIR));
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N025_UN_GORO_CRATER));
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_O03N_FORTRESS_GOBLIN_T3, Constants.UNIT_O03L_GREAT_HALL_GOBLIN_T1));
+      AddObjective(new ObjectiveControlPoint(UNIT_N092_ZUL_FARRAK));
+      AddObjective(new ObjectiveControlPoint(UNIT_N0BK_LOST_CITY_OF_THE_TOL_VIR));
+      AddObjective(new ObjectiveControlPoint(UNIT_N025_UN_GORO_CRATER));
+      AddObjective(new ObjectiveUpgrade(UNIT_O03N_FORTRESS_GOBLIN_T3, UNIT_O03L_GREAT_HALL_GOBLIN_T1));
       AddObjective(new ObjectiveSelfExists());
       
-      ResearchId = Constants.UPGRADE_R09Z_QUEST_COMPLETED_OFFSHORE_INVESTMENT;
+      ResearchId = UPGRADE_R09Z_QUEST_COMPLETED_OFFSHORE_INVESTMENT;
       _rescueUnits = Regions.KezanUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures,
         filterUnit => filterUnit.GetTypeId() != FourCC("ngme"));
     }

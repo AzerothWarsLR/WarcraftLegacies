@@ -4,7 +4,6 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Dalaran
 {
@@ -29,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       AddObjective(new ObjectiveQuestComplete(prerequisite));
       AddObjective(_enterGilneasGateRegion = new ObjectiveAnyUnitInRect(Regions.GilneasUnlock5, "Gilneas Gate", true));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = Constants.UPGRADE_RD03_QUEST_COMPLETED_THE_GREYMANE_WALL;
+      ResearchId = UPGRADE_RD03_QUEST_COMPLETED_THE_GREYMANE_WALL;
     }
 
     /// <inheritdoc/>

@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using static War3Api.Common;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Rocks

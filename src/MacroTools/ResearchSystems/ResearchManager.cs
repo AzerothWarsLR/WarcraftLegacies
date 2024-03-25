@@ -29,7 +29,7 @@ namespace MacroTools.ResearchSystems
     /// </summary>
     public static void RegisterIncompatibleSet(params int[] researchTypeIds)
     {
-      var researches = researchTypeIds.Select(x => new BasicResearch(x, 0, 0) as Research).ToArray();
+      var researches = researchTypeIds.Select(x => new BasicResearch(x, 0) as Research).ToArray();
       RegisterIncompatibleSet(researches);
     }
 

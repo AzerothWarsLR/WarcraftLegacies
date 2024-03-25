@@ -12,7 +12,6 @@ using MacroTools.Powers;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Lordaeron
 {
@@ -36,13 +35,13 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
         "The territories of Lordaeron are fragmented. Regain control of the old Alliance's hold to secure the kingdom.",
         @"ReplaceableTextures\CommandButtons\BTNCastle.blp")
     {
-      AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(Constants.UNIT_N0AG_LORD_BAROV)));
+      AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(UNIT_N0AG_LORD_BAROV)));
       foreach (var prequisite in prequisites)
         AddObjective(new ObjectiveQuestComplete(prequisite));
       AddObjective(new ObjectiveControlLegend(arthas, false));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = Constants.UPGRADE_R04Y_QUEST_COMPLETED_HEARTHLANDS;
+      ResearchId = UPGRADE_R04Y_QUEST_COMPLETED_HEARTHLANDS;
       _terenas = terenas;
       _uther = uther;
       _capitalPalace = capitalPalace;
@@ -50,7 +49,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       
     }
 
-    private static bool RescueUnitFilter(unit whichUnit) => GetUnitTypeId(whichUnit) != Constants.UNIT_N08F_UNDERCITY_ENTRANCE;
+    private static bool RescueUnitFilter(unit whichUnit) => GetUnitTypeId(whichUnit) != UNIT_N08F_UNDERCITY_ENTRANCE;
 
     /// <inheritdoc/>
     public override string RewardFlavour =>

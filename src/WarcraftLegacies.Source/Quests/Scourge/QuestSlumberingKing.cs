@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         Regions.IcecrownShipyard
       }, "Northrend");
       AddObjective(_anyEnemyUnitInRectsObjective);
-      ResearchId = Constants.UPGRADE_R04V_QUEST_COMPLETED_THE_SLUMBERING_KING;
+      ResearchId = UPGRADE_R04V_QUEST_COMPLETED_THE_SLUMBERING_KING;
     }
 
     /// <inheritdoc/>

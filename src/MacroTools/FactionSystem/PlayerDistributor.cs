@@ -11,7 +11,7 @@ namespace MacroTools.FactionSystem
   /// </summary>
   public static class PlayerDistributor
   {
-    /// <summary>How much gold and lumber is refunded from units that get refunded when a player leaves.</summary>
+    /// <summary>How much gold is refunded from units that get refunded when a player leaves.</summary>
     private const float RefundMultiplier = 1;
 
     /// <summary>How much experience is transferred from heroes that leave the game.</summary>
@@ -38,7 +38,7 @@ namespace MacroTools.FactionSystem
     private static void DistributePlayer(player player, List<player> eligiblePlayers)
     {
       var resourcesToRefund = DistributeAndRefundUnits(player, eligiblePlayers);
-      DistributeGoldAndLumber(player, eligiblePlayers, resourcesToRefund);
+      DistributeGold(player, eligiblePlayers, resourcesToRefund);
       DistributeExperience(eligiblePlayers, resourcesToRefund.Experience);
     }
 
@@ -79,19 +79,14 @@ namespace MacroTools.FactionSystem
       }
     }
 
-    private static void DistributeGoldAndLumber(player playerToDistribute, List<player> playersToDistributeTo, UnitsRefund refund)
+    private static void DistributeGold(player playerToDistribute, List<player> playersToDistributeTo, UnitsRefund refund)
     {
       var goldToDistribute = refund.Gold + playerToDistribute.GetGold();
-      var lumberToDistribute = refund.Lumber + playerToDistribute.GetLumber();
       
-      foreach (var player in playersToDistributeTo)
-      {
+      foreach (var player in playersToDistributeTo) 
         player.AddGold(goldToDistribute / playersToDistributeTo.Count);
-        player.AddLumber(lumberToDistribute / playersToDistributeTo.Count);
-      }
 
       playerToDistribute.SetGold(0);
-      playerToDistribute.SetLumber(0);
     }
 
     /// <summary>
@@ -128,11 +123,8 @@ namespace MacroTools.FactionSystem
 
         if (unit.IsRemovable())
         {
-          if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
-          {
+          if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE)) 
             refund.Gold += loopUnitType.GoldCost * RefundMultiplier;
-            refund.Lumber += loopUnitType.LumberCost * RefundMultiplier;
-          }
           unit
             .DropAllItems()
             .Kill()
@@ -154,9 +146,6 @@ namespace MacroTools.FactionSystem
     {
       /// <summary>Any gold that has been refunded.</summary>
       public float Gold { get; set; }
-      
-      /// <summary>Any lumber that has been refunded.</summary>
-      public float Lumber { get; set; }
       
       /// <summary>Any hero experience that has been refunded.</summary>
       public int Experience { get; set; }

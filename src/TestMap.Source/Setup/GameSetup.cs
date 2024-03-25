@@ -35,9 +35,9 @@ namespace TestMap.Source.Setup
       HintSetup.Setup();
       PassiveAbilityManager.InitializePreplacedUnits();
       ResearchManager.RegisterIncompatibleSet(
-        new BasicResearch(FourCC("Rhan"), 30, 30),
-        new BasicResearch(FourCC("Rhri"), 30, 30),
-        new BasicResearch(FourCC("Rhde"), 30, 30)
+        new BasicResearch(FourCC("Rhan"), 30),
+        new BasicResearch(FourCC("Rhri"), 30),
+        new BasicResearch(FourCC("Rhde"), 30)
       );
     }
   }

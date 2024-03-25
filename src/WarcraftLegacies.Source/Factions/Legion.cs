@@ -12,7 +12,6 @@ using WarcraftLegacies.Source.Quests.Legion;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -22,17 +21,19 @@ namespace WarcraftLegacies.Source.Factions
     private readonly AllLegendSetup _allLegendSetup;
 
     /// <inheritdoc />
+    
     public Legion(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Legion",
       PLAYER_COLOR_PEANUT, "|CFFBF8F4F", @"ReplaceableTextures\CommandButtons\BTNKiljaedin.blp")
     {
+      TraditionalTeam = TeamSetup.Legion;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
-      UndefeatedResearch = Constants.UPGRADE_R04T_LEGION_EXISTS;
+      UndefeatedResearch = UPGRADE_R04T_LEGION_EXISTS;
       StartingGold = 200;
       StartingLumber = 0;
       FoodMaximum = 250;
       CinematicMusic = "DarkAgents";
-      ControlPointDefenderUnitTypeId = Constants.UNIT_U01U_CONTROL_POINT_DEFENDER_LEGION;
+      ControlPointDefenderUnitTypeId = UNIT_U01U_CONTROL_POINT_DEFENDER_LEGION;
       StartingCameraPosition = Regions.LegionStartPos.Center;
       IntroText = @"You are playing as the mighty |cffa2722dBurning Legion|r.
 
@@ -82,14 +83,14 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       ModObjectLimit(FourCC("u009"), UNLIMITED); //Undead Shipyard
       ModObjectLimit(FourCC("u00E"), UNLIMITED); //Generator
       ModObjectLimit(FourCC("u01N"), UNLIMITED); //Burning Altar
-      ModObjectLimit(Constants.UNIT_U015_UNHOLY_RELIQUARY_LEGION_SHOP, UNLIMITED);
+      ModObjectLimit(UNIT_U015_UNHOLY_RELIQUARY_LEGION_SHOP, UNLIMITED);
       ModObjectLimit(FourCC("ndmg"), 6); //Demon Gate
-      ModObjectLimit(Constants.UNIT_N04N_INFERNAL_SIEGEWORKS_LEGION_SPECIALIST, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC, 3);
-      ModObjectLimit(Constants.UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS, 3);
-      ModObjectLimit(Constants.UNIT_U00F_DORMANT_SPIRE_LEGION_T1, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_U00C_LEGION_BASTION_LEGION_T2, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_U00N_BURNING_CITADEL_LEGION_T3, UNLIMITED);
+      ModObjectLimit(UNIT_N04N_INFERNAL_SIEGEWORKS_LEGION_SPECIALIST, UNLIMITED);
+      ModObjectLimit(UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC, 3);
+      ModObjectLimit(UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS, 3);
+      ModObjectLimit(UNIT_U00F_DORMANT_SPIRE_LEGION_T1, UNLIMITED);
+      ModObjectLimit(UNIT_U00C_LEGION_BASTION_LEGION_T2, UNLIMITED);
+      ModObjectLimit(UNIT_U00N_BURNING_CITADEL_LEGION_T3, UNLIMITED);
 
       //Units
       ModObjectLimit(FourCC("u00D"), UNLIMITED); //Legion Herald
@@ -102,7 +103,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       ModObjectLimit(FourCC("n04O"), 6); //Doom lord
       ModObjectLimit(FourCC("n04L"), 6); //Infernal Juggernaut
       ModObjectLimit(FourCC("o04P"), 6); //Nathrezim
-      ModObjectLimit(Constants.UNIT_NINF_INFERNAL_LEGION, 6);
+      ModObjectLimit(UNIT_NINF_INFERNAL_LEGION, 6);
       ModObjectLimit(FourCC("n04H"), UNLIMITED); //Fel Guard
       ModObjectLimit(FourCC("n04U"), 4); //Dragon
       ModObjectLimit(FourCC("n03L"), 4); //Barge
@@ -131,14 +132,14 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       ModObjectLimit(FourCC("R027"), UNLIMITED); //Warlock Adept Training
       ModObjectLimit(FourCC("R04G"), UNLIMITED); //Improved Carrion Swarm
       ModObjectLimit(FourCC("R03Z"), UNLIMITED); //War Plating
-      ModObjectLimit(Constants.UPGRADE_R096_REMATERIALIZATION_LEGION, 1);
-      ModObjectLimit(Constants.UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, 1);
-      ModObjectLimit(Constants.UPGRADE_R03L_IMPROVED_SHADOW_INFUSION_FEL_HORDE, 1);
+      ModObjectLimit(UPGRADE_R096_REMATERIALIZATION_LEGION, 1);
+      ModObjectLimit(UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, 1);
+      ModObjectLimit(UPGRADE_R03L_IMPROVED_SHADOW_INFUSION_FEL_HORDE, 1);
 
       //Heroes
       ModObjectLimit(FourCC("U00L"), 1); //Anetheron
-      ModObjectLimit(Constants.UNIT_UMAL_THE_CUNNING_LEGION, 1);
-      ModObjectLimit(Constants.UNIT_UTIC_THE_DARKENER_LEGION, 1);
+      ModObjectLimit(UNIT_UMAL_THE_CUNNING_LEGION, 1);
+      ModObjectLimit(UNIT_UTIC_THE_DARKENER_LEGION, 1);
     }
 
     private void RegisterQuests()
@@ -152,12 +153,12 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       AddQuest(new QuestLegionKillLordaeron(_allLegendSetup.Lordaeron.CapitalPalace,
         _allLegendSetup.Lordaeron.Stratholme, _allLegendSetup.Legion.Tichondrius));
       AddQuest(new QuestSummonLegion(Regions.TwistingNether,
-        _preplacedUnitSystem.GetUnit(Constants.UNIT_N03C_DEMON_PORTAL_NETHER)));
+        _preplacedUnitSystem.GetUnit(UNIT_N03C_DEMON_PORTAL_NETHER)));
     }
 
     private void RegisterResearches()
     {
-      ResearchManager.Register(new PowerResearch(Constants.UPGRADE_R096_REMATERIALIZATION_LEGION, 150, 250,
+      ResearchManager.Register(new PowerResearch(UPGRADE_R096_REMATERIALIZATION_LEGION, 150,
         new Rematerialization(0.15f, new Point(20454.9f, -28873.6f), "Argus", Regions.MonolithNoBuild)
         {
           Name = "Rematerialization",

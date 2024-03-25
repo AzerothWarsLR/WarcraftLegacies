@@ -3,7 +3,6 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Frostwolf
 {
@@ -37,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     {
       _thrall.Unit?
         .AddHeroAttributes(10, 10, 10)
-        .AddItemSafe(CreateItem(Constants.ITEM_I017_PORTAL_TO_NAGRAND, 0, 0));
+        .AddItemSafe(CreateItem(ITEM_I017_PORTAL_TO_NAGRAND, 0, 0));
     }
   }
 }

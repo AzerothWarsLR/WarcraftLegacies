@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       AddObjective(new ObjectiveLegendReachRect(grom, Regions.FountainUnlock,
         "The Fountain of Blood"));
       AddObjective(new ObjectiveControlCapital(fountainOfBlood, false));
-      ResearchId = Constants.UPGRADE_R00X_QUEST_COMPLETED_THE_BLOOD_OF_MANNOROTH_WARSONG;
+      ResearchId = UPGRADE_R00X_QUEST_COMPLETED_THE_BLOOD_OF_MANNOROTH_WARSONG;
       
     }
     

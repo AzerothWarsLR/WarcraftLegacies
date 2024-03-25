@@ -6,7 +6,6 @@ using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Stormwind
 {
@@ -18,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     private readonly Artifact _crownOfLordaeron;
     private readonly Artifact _crownOfStormwind;
     private readonly LegendaryHero _varian;
-    private const int RewardResearchId = Constants.UPGRADE_R01N_ARATHORIAN_LEGACY_LORDAERON_STORMWIND_QUEST;
+    private const int RewardResearchId = UPGRADE_R01N_ARATHORIAN_LEGACY_LORDAERON_STORMWIND_QUEST;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestKingdomOfManStormwind"/> class.
@@ -34,8 +33,8 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       AddObjective(new ObjectiveControlLegend(varian, true));
       AddObjective(new ObjectiveAcquireArtifact(crownOfLordaeron));
       AddObjective(new ObjectiveAcquireArtifact(crownOfStormwind));
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N010_STORMWIND_CITY));
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N01G_LORDAERON_CITY));
+      AddObjective(new ObjectiveControlPoint(UNIT_N010_STORMWIND_CITY));
+      AddObjective(new ObjectiveControlPoint(UNIT_N01G_LORDAERON_CITY));
       Global = true;
     }
 
@@ -62,7 +61,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       ArtifactManager.Destroy(_crownOfLordaeron);
       ArtifactManager.Destroy(_crownOfStormwind);
 
-      var crownOfTheEasternKingdoms = new Artifact(CreateItem(Constants.ITEM_I00U_CROWN_OF_THE_EASTERN_KINGDOMS, 0, 0));
+      var crownOfTheEasternKingdoms = new Artifact(CreateItem(ITEM_I00U_CROWN_OF_THE_EASTERN_KINGDOMS, 0, 0));
       ArtifactManager.Register(crownOfTheEasternKingdoms);
       crownHolder?.AddItemSafe(crownOfTheEasternKingdoms.Item);
     }

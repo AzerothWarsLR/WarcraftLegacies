@@ -25,30 +25,30 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       Tess = new LegendaryHero("Tess Greymane")
       {
-        UnitType = Constants.UNIT_EWAR_PRINCESS_OF_GILNEAS_GILNEAS,
+        UnitType = UNIT_EWAR_PRINCESS_OF_GILNEAS_GILNEAS,
       };
 
       Goldrinn = new LegendaryHero("Goldrinn")
       {
-        UnitType = Constants.UNIT_E01E_ANCIENT_GUARDIAN_GILNEAS,
+        UnitType = UNIT_E01E_ANCIENT_GUARDIAN_GILNEAS,
         StartingXp = 8800,
       };
 
       Genn = new LegendaryHero("Genn Greymane")
       {
-        UnitType = Constants.UNIT_HHKL_KING_OF_GILNEAS_GILNEAS,
+        UnitType = UNIT_HHKL_KING_OF_GILNEAS_GILNEAS,
         StartingXp = 2800
       };
 
       Darius = new LegendaryHero("Darius Crowley")
       {
-        UnitType = Constants.UNIT_HPB2_GILNEAN_LORD_GILNEAS,
+        UnitType = UNIT_HPB2_GILNEAN_LORD_GILNEAS,
         StartingXp = 5400
       };
 
       GilneasCastle = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H04I_GILNEAS_CASTLE_GILNEAS_OTHER),
+        Unit = preplacedUnitSystem.GetUnit(UNIT_H04I_GILNEAS_CASTLE_GILNEAS_OTHER),
         Essential = true
       };
     }

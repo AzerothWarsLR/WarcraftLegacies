@@ -5,13 +5,12 @@ using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common; 
 
 namespace WarcraftLegacies.Source.Quests.Legion
 {
   public sealed class QuestSummonLegion : QuestData
   {
-    private const int RitualId = Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS;
+    private const int RitualId = ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS;
     private readonly List<unit> _rescueUnits = new();
     private readonly unit _interiorPortal;
     private readonly ObjectiveCastSpell _objectiveCastSpell;
@@ -23,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       _interiorPortal = interiorPortal;
       _objectiveCastSpell = new ObjectiveCastSpell(RitualId, false);
       AddObjective(_objectiveCastSpell);
-      ResearchId = Constants.UPGRADE_R04B_QUEST_COMPLETED_UNDER_THE_BURNING_SKY;
+      ResearchId = UPGRADE_R04B_QUEST_COMPLETED_UNDER_THE_BURNING_SKY;
       Global = true;
       
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
@@ -41,16 +40,16 @@ namespace WarcraftLegacies.Source.Quests.Legion
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      $"The hero Archimonde, control of all units in the Twisting Nether, learn to train Greater Demons, and can now build 9 more {GetObjectName(Constants.UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS)} and {GetObjectName(Constants.UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC)}";
+      $"The hero Archimonde, control of all units in the Twisting Nether, learn to train Greater Demons, and can now build 9 more {GetObjectName(UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS)} and {GetObjectName(UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC)}";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction whichFaction)
     {
-      whichFaction.ModObjectLimit(Constants.UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC, 9);
-      whichFaction.ModObjectLimit(Constants.UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS, 9);
-      whichFaction.ModObjectLimit(Constants.UNIT_NINF_INFERNAL_LEGION, 6);
+      whichFaction.ModObjectLimit(UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC, 9);
+      whichFaction.ModObjectLimit(UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS, 9);
+      whichFaction.ModObjectLimit(UNIT_NINF_INFERNAL_LEGION, 6);
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-        SetPlayerAbilityAvailable(player, Constants.ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS, false);
+        SetPlayerAbilityAvailable(player, ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS, false);
       
       if (whichFaction.Player != null)
         foreach (var unit in _rescueUnits)
@@ -84,7 +83,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
         : new Point(0, 0);
       SetUnitOwner(_interiorPortal, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
       var exteriorPortal = CreateUnit(whichPlayer ?? Player(PLAYER_NEUTRAL_AGGRESSIVE),
-        Constants.UNIT_N037_DEMON_PORTAL, exteriorPortalPosition.X, exteriorPortalPosition.Y, 0);
+        UNIT_N037_DEMON_PORTAL, exteriorPortalPosition.X, exteriorPortalPosition.Y, 0);
       exteriorPortal.SetWaygateDestination(_interiorPortal.GetPosition());
       _interiorPortal.SetWaygateDestination(exteriorPortal.GetPosition());
     }

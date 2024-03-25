@@ -1,0 +1,15 @@
+{
+  "Left": 14816,
+  "Bottom": -4768,
+  "Right": 15424,
+  "Top": -4192,
+  "Name": "LochModanMurlocCreepCamp",
+  "CreationNumber": 70,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

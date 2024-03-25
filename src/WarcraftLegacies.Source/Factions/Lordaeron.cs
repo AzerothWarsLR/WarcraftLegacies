@@ -14,7 +14,6 @@ using WarcraftLegacies.Source.Quests.Scourge;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -25,17 +24,19 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
+    
     public Lordaeron(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Lordaeron",
       PLAYER_COLOR_LIGHT_BLUE, "|cff8080ff", @"ReplaceableTextures\CommandButtons\BTNArthas.blp")
     {
+      TraditionalTeam = TeamSetup.NorthAlliance;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
       StartingGold = 200;
       StartingLumber = 0;
-      UndefeatedResearch = Constants.UPGRADE_R05M_LORDAERON_EXISTS;
+      UndefeatedResearch = UPGRADE_R05M_LORDAERON_EXISTS;
       CinematicMusic = "Comradeship";
-      ControlPointDefenderUnitTypeId = Constants.UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON;
+      ControlPointDefenderUnitTypeId = UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON;
       IntroText = @"You are playing as the great |cff4242ebKingdom of Lordaeron|r.
 
 You begin in Andorhal, isolated from your forces in the rest of the Kingdom, and the Plague of Undeath is coming.
@@ -118,39 +119,40 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
       ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
 
       //Demis
-      ModObjectLimit(Constants.UNIT_H012_CAPTAIN_FALRIC_LORDAERON_DEMI, 1);
+      ModObjectLimit(UNIT_H012_CAPTAIN_FALRIC_LORDAERON_DEMI, 1);
 
       //Heroes
-      ModObjectLimit(Constants.UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON, 1);
-      ModObjectLimit(Constants.UNIT_HUTH_LEADER_OF_THE_SILVER_HAND_LORDAERON, 1);
-      ModObjectLimit(Constants.UNIT_H01J_THE_ASHBRINGER_LORDAERON, 1);
+      ModObjectLimit(UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON, 1);
+      ModObjectLimit(UNIT_HUTH_LEADER_OF_THE_SILVER_HAND_LORDAERON, 1);
+      ModObjectLimit(UNIT_H01J_THE_ASHBRINGER_LORDAERON, 1);
       ModObjectLimit(FourCC("Hlgr"), 1); //Garithos
-      ModObjectLimit(Constants.UNIT_HARF_HIGH_KING_LORDAERON_HIGH_KING, 1);
+      ModObjectLimit(UNIT_HARF_HIGH_KING_LORDAERON_HIGH_KING, 1);
 
       //Upgrades
-      ModObjectLimit(Constants.UPGRADE_R02E_LIGHT_S_PRAISING_MASTER_TRAINING_ARATHOR_LORDAERON, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R00I_MAGE_MASTER_TRAINING_LORDAERON, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_RHAN_ANIMAL_WAR_TRAINING_DARK_GREEN_PURPLE_RESEARCH, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R04D_SEAL_OF_RIGHTEOUSNESS_LORDAERON, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R01P_ENSNARE_LORDAERON, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R04A_RAPID_FIRE_LORDAERON, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R00B_VETERAN_FOOTMEN_LORDAERON, UNLIMITED);
+      ModObjectLimit(UPGRADE_R02E_LIGHT_S_PRAISE_MASTER_TRAINING_ARATHOR_LORDAERON, UNLIMITED);
+      ModObjectLimit(UPGRADE_R00I_MAGE_MASTER_TRAINING_LORDAERON, UNLIMITED);
+      ModObjectLimit(UPGRADE_RHAN_ANIMAL_WAR_TRAINING_DARK_GREEN_PURPLE_RESEARCH, UNLIMITED);
+      ModObjectLimit(UPGRADE_RHLH_IMPROVED_LUMBER_HARVESTING_ADVANCED_LUMBER_HARVESTING_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, UNLIMITED);
+      ModObjectLimit(UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, UNLIMITED);
+      ModObjectLimit(UPGRADE_R04D_SEAL_OF_RIGHTEOUSNESS_LORDAERON, UNLIMITED);
+      ModObjectLimit(UPGRADE_R01P_ENSNARE_LORDAERON, UNLIMITED);
+      ModObjectLimit(UPGRADE_R04A_RAPID_FIRE_LORDAERON, UNLIMITED);
+      ModObjectLimit(UPGRADE_R00B_VETERAN_FOOTMEN_LORDAERON, UNLIMITED);
 
       //Todo: these probably should be in some kind of ability library, not here
-      ModAbilityAvailability(Constants.ABILITY_A0N2_GRASPING_VINES_TREANTS, -1);
-      ModAbilityAvailability(Constants.ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, -1);
-      ModAbilityAvailability(Constants.ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
-      ModAbilityAvailability(Constants.ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, 1);
-      ModAbilityAvailability(Constants.ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);
+      ModAbilityAvailability(ABILITY_A0N2_GRASPING_VINES_TREANTS, -1);
+      ModAbilityAvailability(ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, -1);
+      ModAbilityAvailability(ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
+      ModAbilityAvailability(ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, 1);
+      ModAbilityAvailability(ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);
 
-      ModObjectLimit(Constants.UPGRADE_R0XZ_THE_SCARLET_CRUSADE_LORDAERON_SCARLET, UNLIMITED);
+      ModObjectLimit(UPGRADE_R0XZ_THE_SCARLET_CRUSADE_LORDAERON_SCARLET, UNLIMITED);
     }
 
     private void RegisterQuests()
     {
       var questStrahnbrad = new QuestStrahnbrad(Regions.StrahnbradUnlock);
-      var questStratholme = new QuestStratholme(Regions.StratholmeUnlock, _preplacedUnitSystem, _allLegendSetup.Lordaeron.Arthas, _allLegendSetup.Lordaeron.Uther, _allLegendSetup.Lordaeron.Stratholme);
+      var questStratholme = new QuestStratholme(Regions.StratholmeUnlock, _allLegendSetup.Lordaeron.Arthas, _allLegendSetup.Lordaeron.Uther, _allLegendSetup.Lordaeron.Stratholme);
       var questTyrHand = new QuestTyrHand(_allLegendSetup.Lordaeron.Stratholme, Regions.TyrUnlock);
       AddQuest(new QuestHearthglen(Regions.Hearthglen));
       AddQuest(questStratholme);
@@ -177,7 +179,7 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
 
     private void RegisterResearches()
     {
-      ResearchManager.Register(new VeteranFootmen(Constants.UPGRADE_R00B_VETERAN_FOOTMEN_LORDAERON, 220, 120));
+      ResearchManager.Register(new VeteranFootmen(UPGRADE_R00B_VETERAN_FOOTMEN_LORDAERON, 220));
     }
     
     private void RegisterDialogue()
@@ -232,7 +234,7 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
           }, new Objective[]
           {
             new ObjectiveLegendInRect(_allLegendSetup.Lordaeron.Uther, Regions.AlteracAmbient, "Alterac"),
-            new ObjectiveUnitAlive(_preplacedUnitSystem.GetUnit(Constants.UNIT_O00B_JUBEI_THOS_LEGION_DEMI,
+            new ObjectiveUnitAlive(_preplacedUnitSystem.GetUnit(UNIT_O00B_JUBEI_THOS_LEGION_DEMI,
               new Point(11066, 6291)))
           }));
       

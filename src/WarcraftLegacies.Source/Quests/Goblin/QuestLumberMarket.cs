@@ -3,7 +3,6 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Goblin
 {
@@ -26,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       @"ReplaceableTextures\CommandButtons\BTNJunkGolem.blp")
     {
       AddObjective(new ObjectiveControlCapital(nordrassil, false));
-      ResearchId = Constants.UPGRADE_R07Z_QUEST_COMPLETED_THE_BIGGEST_TREE;
+      ResearchId = UPGRADE_R07Z_QUEST_COMPLETED_THE_BIGGEST_TREE;
     }
     
   }

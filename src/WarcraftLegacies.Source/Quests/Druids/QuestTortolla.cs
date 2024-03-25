@@ -4,13 +4,12 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Druids
 {
   public sealed class QuestTortolla : QuestData
   {
-    private const int HeroId = Constants.UNIT_H04U_DEMIGOD_DRUIDS;
+    private const int HeroId = UNIT_H04U_DEMIGOD_DRUIDS;
     private readonly unit _sleepingTortolla;
 
     public QuestTortolla(LegendaryHero tortolla) : base("The Turtle Demigod",
@@ -19,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
     {
       AddObjective(new ObjectiveTime(840));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = Constants.UPGRADE_R049_QUEST_COMPLETED_THE_TURTLE_DEMIGOD;
+      ResearchId = UPGRADE_R049_QUEST_COMPLETED_THE_TURTLE_DEMIGOD;
 
       _sleepingTortolla = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), HeroId, -11315, 9389, 333)
         .SetInvulnerable(true)

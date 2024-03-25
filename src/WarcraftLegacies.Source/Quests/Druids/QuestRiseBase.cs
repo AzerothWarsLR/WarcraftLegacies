@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
@@ -7,7 +6,6 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Druids
 {
@@ -19,8 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
       "Theres a dormant ancient's grove at the base of Hyjal, take control of the area to nurture it back and awaken it!",
       @"ReplaceableTextures\CommandButtons\BTNTreeOfAges.blp")
     {
-      AddObjective(new ObjectiveControlLevel(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0A0_ASCENDANT_S_RISE), 2));
+      AddObjective(new ObjectiveControlLevel(UNIT_N0A0_ASCENDANT_S_RISE, 2));
       AddObjective(new ObjectiveExpire(480, Title));
       AddObjective(new ObjectiveSelfExists());
       

@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       @"ReplaceableTextures\CommandButtons\BTNMageWC2.blp")
     {
       AddObjective(new ObjectiveCapitalDead(blackTemple));
-      ResearchId = Constants.UPGRADE_R016_QUEST_COMPLETED_KEEPER_OF_THE_ETERNAL_WATCH_STORMWIND;
+      ResearchId = UPGRADE_R016_QUEST_COMPLETED_KEEPER_OF_THE_ETERNAL_WATCH_STORMWIND;
     }
     
     /// <inheritdoc/>

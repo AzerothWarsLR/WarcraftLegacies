@@ -5,7 +5,6 @@ using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Setup.Spells;
 using WarcraftLegacies.Source.Spells;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup
 {
@@ -13,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup
   {
     public static void Setup()
     {
-      var warStompImmoltar = new Stomp(Constants.ABILITY_A0LU_WAR_STOMP_IMMOLTAR)
+      var warStompImmoltar = new Stomp(ABILITY_A0LU_WAR_STOMP_IMMOLTAR)
       {
         Radius = 200,
         DamageBase = 9000,
@@ -55,9 +54,9 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(massEnrage);
 
-      var massFrostArmor = new MassAnySpell(Constants.ABILITY_A0H3_MASS_ICE_ARMOR_WARSONG_GAHZ_RILLA)
+      var massFrostArmor = new MassAnySpell(ABILITY_A0H3_MASS_ICE_ARMOR_WARSONG_GAHZ_RILLA)
       {
-        DummyAbilityId = Constants.ABILITY_A0H6_MASS_ICE_ARMOR_WARSONG_GAHZ_RILLA_DUMMY,
+        DummyAbilityId = ABILITY_A0H6_MASS_ICE_ARMOR_WARSONG_GAHZ_RILLA_DUMMY,
         DummyAbilityOrderId = OrderId("frostarmor"),
         Radius = 200,
         CastFilter = CastFilters.IsTargetAllyAndAlive,
@@ -65,9 +64,9 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(massFrostArmor);
 
-      var scattershot = new MassAnySpell(Constants.ABILITY_A0GP_SCATTERSHOT_KUL_TIRAS_LADY_ASHVANE)
+      var scattershot = new MassAnySpell(ABILITY_A0GP_SCATTERSHOT_KUL_TIRAS_LADY_ASHVANE)
       {
-        DummyAbilityId = Constants.ABILITY_A0GL_SCATTERSHOT_KUL_TIRAS_LADY_ASHVANE_DUMMY,
+        DummyAbilityId = ABILITY_A0GL_SCATTERSHOT_KUL_TIRAS_LADY_ASHVANE_DUMMY,
         DummyAbilityOrderId = OrderId("thunderbolt"),
         Radius = 250,
         CastFilter = CastFilters.IsTargetEnemyAndAlive,
@@ -76,18 +75,18 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(scattershot);
 
-      var thunderFists = new SpellOnAttack(Constants.UNIT_O01P_LEADER_OF_THE_TWILIGHT_S_HAMMER_TWILIGHT_HAMMER,
-        Constants.ABILITY_A0LN_THUNDER_FISTS_CHO_GALL)
+      var thunderFists = new SpellOnAttack(UNIT_O01P_LEADER_OF_THE_TWILIGHT_S_HAMMER_TWILIGHT_HAMMER,
+        ABILITY_A0LN_THUNDER_FISTS_CHO_GALL)
       {
-        DummyAbilityId = Constants.ABILITY_A024_THUNDER_FISTS_CHO_GALL_DUMMY_CAST,
+        DummyAbilityId = ABILITY_A024_THUNDER_FISTS_CHO_GALL_DUMMY_CAST,
         DummyOrderId = OrderId("forkedlightning"),
         ProcChance = 0.15f
       };
       PassiveAbilityManager.Register(thunderFists);
 
-      var seismicShard = new MassAnySpell(Constants.ABILITY_A0OD_SEISMIC_SHARD_AZIL)
+      var seismicShard = new MassAnySpell(ABILITY_A0OD_SEISMIC_SHARD_AZIL)
       {
-        DummyAbilityId = Constants.ABILITY_A0OE_SEISMIC_SHARD_AZIL_DUMMY,
+        DummyAbilityId = ABILITY_A0OE_SEISMIC_SHARD_AZIL_DUMMY,
         DummyAbilityOrderId = OrderId("thunderbolt"),
         Radius = 250,
         CastFilter = CastFilters.IsTargetEnemyAndAlive,
@@ -95,9 +94,9 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(seismicShard);
 
-      var elunesGaze = new MassAnySpell(Constants.ABILITY_A0VX_ELUNE_S_GAZE_SENTINELS)
+      var elunesGaze = new MassAnySpell(ABILITY_A0VX_ELUNE_S_GAZE_SENTINELS)
       {
-        DummyAbilityId = Constants.ABILITY_A0VY_INVISIBILITY_LB,
+        DummyAbilityId = ABILITY_A0VY_INVISIBILITY_LB,
         DummyAbilityOrderId = OrderId("invisibility"),
         Radius = 350,
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
@@ -105,7 +104,7 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(elunesGaze);
 
-      var massSimulacrum = new MassSimulacrum(Constants.ABILITY_A0DG_MASS_SIMULACRUM_ORANGE_ANTONIDAS)
+      var massSimulacrum = new MassSimulacrum(ABILITY_A0DG_MASS_SIMULACRUM_ORANGE_ANTONIDAS)
       {
         Radius = 150,
         CountBase = 2,
@@ -122,10 +121,10 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(massSimulacrum);
 
-      var maievVengeance = new Vengeance(Constants.UNIT_EWRD_LEADER_OF_THE_WATCHERS_SENTINELS,
-        Constants.ABILITY_A017_TAKE_VENGEANCE_SENTINELS_MAIEV)
+      var maievVengeance = new Vengeance(UNIT_EWRD_LEADER_OF_THE_WATCHERS_SENTINELS,
+        ABILITY_A017_TAKE_VENGEANCE_SENTINELS_MAIEV)
       {
-        AlternateFormId = Constants.UNIT_ESPV_AVATAR_OF_VENGEANCE_SENTINELS_MAIEV,
+        AlternateFormId = UNIT_ESPV_AVATAR_OF_VENGEANCE_SENTINELS_MAIEV,
         HitsReviveThreshold = 9,
         HealBase = 900,
         HealLevel = 300,
@@ -149,7 +148,7 @@ namespace WarcraftLegacies.Source.Setup
       };
       PassiveAbilityManager.Register(burningVengeance);
 
-      var stormEarthandFire = new StormEarthandFire(Constants.ABILITY_A0HM_STORM_EARTH_AND_FIRE_WARSONG_CHEN_SUMMON)
+      var stormEarthandFire = new StormEarthandFire(ABILITY_A0HM_STORM_EARTH_AND_FIRE_WARSONG_CHEN_SUMMON)
       {
           UnitType1 = FourCC("npn4"),
           UnitType2 = FourCC("npn5"),
@@ -164,28 +163,28 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(stormEarthandFire);
       //Todo: inappropriately named
-      var manaSyphon = new GrantMana(Constants.ABILITY_A0RG_MANA_SYPHON_STORMWIND_MAGE_TOWER)
+      var manaSyphon = new GrantMana(ABILITY_A0RG_MANA_SYPHON_STORMWIND_MAGE_TOWER)
       {
         ManaToGrant = 250
       };
       SpellSystem.Register(manaSyphon);
 
-      var demonSoulCooldown = new CooldownReset(Constants.ABILITY_A0HF_ABILITY_COOLDOWN_RESET);
+      var demonSoulCooldown = new CooldownReset(ABILITY_A0HF_ABILITY_COOLDOWN_RESET);
       SpellSystem.Register(demonSoulCooldown);
 
-      var overclock = new CooldownReset(Constants.ABILITY_A0RA_OVERCLOCK_GAZLOWEE);
+      var overclock = new CooldownReset(ABILITY_A0RA_OVERCLOCK_GAZLOWEE);
       SpellSystem.Register(overclock);
 
-      var unholyArmor = new UnholyArmor(Constants.ABILITY_A0F8_UNHOLY_ARMOR_FEL_HORDE_FEL_WARLOCK)
+      var unholyArmor = new UnholyArmor(ABILITY_A0F8_UNHOLY_ARMOR_FEL_HORDE_FEL_WARLOCK)
       {
         PercentageDamage = 0.06f
       };
       SpellSystem.Register(unholyArmor);
 
-      var electricStrike = new ElectricStrike(Constants.ABILITY_A0RC_ELECTRIC_STRIKE_DARK_GREEN_WIZARD_S_SANCTUM)
+      var electricStrike = new ElectricStrike(ABILITY_A0RC_ELECTRIC_STRIKE_DARK_GREEN_WIZARD_S_SANCTUM)
       {
-        StunId = Constants.ABILITY_A0RD_ELECTRIC_STRIKE_MINI_STUN_DARK_GREEN,
-        PurgeId = Constants.ABILITY_APRG_PURGE_ELECTRIKE_STRIKE,
+        StunId = ABILITY_A0RD_ELECTRIC_STRIKE_MINI_STUN_DARK_GREEN,
+        PurgeId = ABILITY_APRG_PURGE_ELECTRIKE_STRIKE,
         PurgeOrder = OrderId("purge"),
         StunOrder = OrderId("firebolt"),
         Radius = 500f,
@@ -193,11 +192,11 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(electricStrike);
 
-      SpellSystem.Register(new MakeCasterVulnerable(Constants.ABILITY_A00M_SCROLL_TELE));
-      SpellSystem.Register(new MakeCasterVulnerable(Constants.ABILITY_A0CS_VASSAL_SCROLL_TELE));
-      SpellSystem.Register(new MakeCasterVulnerable(Constants.ABILITY_A002_SCROLL_TELE_TOWN));
+      SpellSystem.Register(new MakeCasterVulnerable(ABILITY_A00M_SCROLL_TELE));
+      SpellSystem.Register(new MakeCasterVulnerable(ABILITY_A0CS_VASSAL_SCROLL_TELE));
+      SpellSystem.Register(new MakeCasterVulnerable(ABILITY_A002_SCROLL_TELE_TOWN));
 
-      SpellSystem.Register(new InstantKill(Constants.ABILITY_A126_SELF_DESTRUCT_SHARED)
+      SpellSystem.Register(new InstantKill(ABILITY_A126_SELF_DESTRUCT_SHARED)
       {
         Target = InstantKill.KillTarget.Self
       });

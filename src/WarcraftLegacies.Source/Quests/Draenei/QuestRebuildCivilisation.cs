@@ -3,7 +3,6 @@ using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
-using static War3Api.Common;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using System.Collections.Generic;
@@ -27,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       AddObjective(new ObjectiveLegendReachRect(velen, Regions.DesolaceUnlock, "Desolace"));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      ResearchId = Constants.UPGRADE_R082_QUEST_COMPLETED_THE_WAY_FORWARD;
+      ResearchId = UPGRADE_R082_QUEST_COMPLETED_THE_WAY_FORWARD;
     }
 
     /// <inheritdoc/>

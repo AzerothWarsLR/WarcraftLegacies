@@ -10,7 +10,6 @@ using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests.Sentinels;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -20,16 +19,18 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
+    
     public Sentinels(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80",
       @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
     {
+      TraditionalTeam = TeamSetup.NightElves;
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
       UndefeatedResearch = FourCC("R05Y");
       StartingGold = 200;
       StartingLumber = 0;
       CinematicMusic = "Comradeship";
-      ControlPointDefenderUnitTypeId = Constants.UNIT_H03F_CONTROL_POINT_DEFENDER_SENTINELS;
+      ControlPointDefenderUnitTypeId = UNIT_H03F_CONTROL_POINT_DEFENDER_SENTINELS;
       IntroText = @"You are playing as the ever-watchful 
 
 The Druids are slowly waking from their slumber, and it falls to you to drive back the Orcish invaders from Kalimdor until then.
@@ -94,8 +95,8 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       ModObjectLimit(FourCC("nwat"), UNLIMITED); //Nightblade
       ModObjectLimit(FourCC("nnmg"), 12); //Redeemed Highborne
       ModObjectLimit(FourCC("e022"), 2); //Moon Rider
-      ModObjectLimit(Constants.UNIT_ECHM_CHIMAERA_SENTINELS, 6);
-      ModObjectLimit(Constants.UNIT_H045_WARDEN_SENTINELS, 8);
+      ModObjectLimit(UNIT_ECHM_CHIMAERA_SENTINELS, 6);
+      ModObjectLimit(UNIT_H045_WARDEN_SENTINELS, 8);
 
       //Ships
       ModObjectLimit(FourCC("etrs"), UNLIMITED); //Night Elf Transport Ship
@@ -119,9 +120,9 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       ModObjectLimit(FourCC("Reuv"), UNLIMITED); //Ultravision
       ModObjectLimit(FourCC("Remg"), UNLIMITED); //Upgraded Moon Glaive
       ModObjectLimit(FourCC("Roen"), UNLIMITED); //Ensnare
-      ModObjectLimit(Constants.UPGRADE_R04E_YSERA_S_GIFT_DRUIDS, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R03J_WIND_WALK_SENTINELS, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R018_IMPROVED_LIGHTNING_BARRAGE_SENTINELS, UNLIMITED);
+      ModObjectLimit(UPGRADE_R04E_YSERA_S_GIFT_DRUIDS, UNLIMITED);
+      ModObjectLimit(UPGRADE_R03J_WIND_WALK_SENTINELS, UNLIMITED);
+      ModObjectLimit(UPGRADE_R018_IMPROVED_LIGHTNING_BARRAGE_SENTINELS, UNLIMITED);
     }
 
     private void RegisterQuests()
@@ -189,7 +190,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       {
         Name = "Immortality",
         Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
-        ResearchId = Constants.UPGRADE_YB01_IMMORTALITY_POWER_IS_ACTIVE
+        ResearchId = UPGRADE_YB01_IMMORTALITY_POWER_IS_ACTIVE
       });
     }
     

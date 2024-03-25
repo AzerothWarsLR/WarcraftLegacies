@@ -1,5 +1,4 @@
-﻿using MacroTools.ControlPointSystem;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
@@ -9,7 +8,6 @@ using MacroTools.QuestSystem;
 using MacroTools.LegendSystem;
 using WarcraftLegacies.Source.Objectives;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 
 namespace WarcraftLegacies.Source.Quests.Draenei
@@ -34,21 +32,20 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       
       AddObjective(new ObjectiveQuestComplete(prerequisite));
       AddObjective(new ObjectiveTime(1200));
-      AddObjective(new ObjectiveBuildInRect(questRect, "inside the Exodar", Constants.UNIT_O056_ARCANE_WELL_DRAENEI_FARM, 10));
-      AddObjective(new ObjectiveControlLevel(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BL_EXODAR_REGALIS), 20));
+      AddObjective(new ObjectiveBuildInRect(questRect, "inside the Exodar", UNIT_O056_ARCANE_WELL_DRAENEI_FARM, 10));
+      AddObjective(new ObjectiveControlLevel(UNIT_N0BL_EXODAR_REGALIS, 20));
       _objectivePowerSource = new ObjectivePowerSource(_dimensionalGenerator, new[]
       {
-        Constants.ITEM_I006_BOOK_OF_MEDIVH,
-        Constants.ITEM_I003_EYE_OF_SARGERAS,
-        Constants.ITEM_I011_CROWN_OF_THE_TRIUMVIRATE,
-        Constants.ITEM_I018_VIAL_OF_THE_SUNWELL,
-        Constants.ITEM_I00H_SULFURAS_HAND_OF_RAGNAROS,
-        Constants.ITEM_I01Y_HELM_OF_DOMINATION
+        ITEM_I006_BOOK_OF_MEDIVH,
+        ITEM_I003_EYE_OF_SARGERAS,
+        ITEM_I011_CROWN_OF_THE_TRIUMVIRATE,
+        ITEM_I018_VIAL_OF_THE_SUNWELL,
+        ITEM_I00H_SULFURAS_HAND_OF_RAGNAROS,
+        ITEM_I01Y_HELM_OF_DOMINATION
       });
       AddObjective(_objectivePowerSource);
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = Constants.UPGRADE_R09A_QUEST_COMPLETED_THE_DIMENSIONAL_SHIP;
+      ResearchId = UPGRADE_R09A_QUEST_COMPLETED_THE_DIMENSIONAL_SHIP;
     }
 
     /// <inheritdoc/>

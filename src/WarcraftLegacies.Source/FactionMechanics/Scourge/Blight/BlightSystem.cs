@@ -2,9 +2,7 @@
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.Libraries;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.FactionMechanics.Scourge.Blight
 {
@@ -26,11 +24,11 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge.Blight
 
       if (_blightFaction?.Player?.GetTeam() is null || _blightFaction.Player is null ||
           !_blightFaction.Player.GetTeam()?.Contains(GetOwningPlayer(GetKillingUnit())) != true) return;
-      GeneralHelpers.SetBlightRadius(_blightFaction.Player, new Point(GetUnitX(triggerUnit), GetUnitY(triggerUnit)),
+      SetBlightRadius(_blightFaction.Player, new Point(GetUnitX(triggerUnit), GetUnitY(triggerUnit)),
         parameters.PrimaryBlightRadius, true);
       if (parameters.RandomBlightRectangle is null) return;
       for (var i = 0; i < parameters.RandomBlightCount; i++)
-        GeneralHelpers.SetBlightRadius(_blightFaction.Player, parameters.RandomBlightRectangle.GetRandomPoint(),
+        SetBlightRadius(_blightFaction.Player, parameters.RandomBlightRectangle.GetRandomPoint(),
           parameters.RandomBlightRadius, true);
     }
 

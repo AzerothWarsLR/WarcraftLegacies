@@ -7,7 +7,6 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Fel_Horde
 {
@@ -29,11 +28,11 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     {
       foreach (var prequisite in prequisites)
         AddObjective(new ObjectiveQuestComplete(prequisite));
-      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R090_ACTIVATE_THE_BLACKROCK_CLAN_FEL, Constants.UNIT_O008_HELLFIRE_CITADEL_FEL_HORDE));
+      AddObjective(new ObjectiveResearch(UPGRADE_R090_ACTIVATE_THE_BLACKROCK_CLAN_FEL, UNIT_O008_HELLFIRE_CITADEL_FEL_HORDE));
       AddObjective(new ObjectiveTime(540));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = Constants.UPGRADE_R03C_QUEST_COMPLETED_BLACKROCK_UNIFICATION;
+      ResearchId = UPGRADE_R03C_QUEST_COMPLETED_BLACKROCK_UNIFICATION;
       _rescueUnits1 = rescueRect1.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _rescueUnits2 = rescueRect2.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       _rescueRect = rescueRect1;
@@ -73,6 +72,6 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
 
     /// <inheritdoc />
     protected override void OnAdd(Faction whichFaction) => 
-      whichFaction.ModObjectLimit(Constants.UPGRADE_R090_ACTIVATE_THE_BLACKROCK_CLAN_FEL, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(UPGRADE_R090_ACTIVATE_THE_BLACKROCK_CLAN_FEL, Faction.UNLIMITED);
   }
 }

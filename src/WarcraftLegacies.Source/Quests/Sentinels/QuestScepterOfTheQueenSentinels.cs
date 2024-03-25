@@ -8,7 +8,6 @@ using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Sentinels
 {
@@ -28,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Gain the Scepter of the Queen, the Athenaeum, 4 {GetObjectName(Constants.UNIT_NNMG_REDEEMED_HIGHBORNE_SENTINELS)}, and the ability to train {GetObjectName(Constants.UNIT_NNMG_REDEEMED_HIGHBORNE_SENTINELS)} from the {GetObjectName(Constants.UNIT_E00V_TEMPLE_OF_ELUNE_SENTINEL_MAGIC)}";
+      $"Gain the Scepter of the Queen, the Athenaeum, 4 {GetObjectName(UNIT_NNMG_REDEEMED_HIGHBORNE_SENTINELS)}, and the ability to train {GetObjectName(UNIT_NNMG_REDEEMED_HIGHBORNE_SENTINELS)} from the {GetObjectName(UNIT_E00V_TEMPLE_OF_ELUNE_SENTINEL_MAGIC)}";
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestScepterOfTheQueenSentinels"/> class.
@@ -40,7 +39,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       _highBourneArea = area;
       _scepterOfTheQueen = scepterOfTheQueen;
       _highBourneAreaUnits = _highBourneArea.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      ResearchId = Constants.UPGRADE_R02O_QUEST_COMPLETED_RETURN_TO_THE_FOLD_SENTINELS;
+      ResearchId = UPGRADE_R02O_QUEST_COMPLETED_RETURN_TO_THE_FOLD_SENTINELS;
       AddObjective(new ObjectiveCapitalDead(stonemaulKeep));
       AddObjective(new ObjectiveHostilesInAreaAreDead(new[]{area}, "outside the Athenaeum"));
       _anyUnitInRect = new ObjectiveAnyUnitInRect(_highBourneArea, "the Athenaeum", false);

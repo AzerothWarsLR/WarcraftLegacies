@@ -4,7 +4,6 @@ using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Warsong
 {
@@ -22,11 +21,11 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       "The deserts of Uldum are littered with ancient debris from a lost age, and it seems some of its secrets remain intact even now.  This matters little to the Warsong, however; this land is merely another target ripe for conquest.",
       @"ReplaceableTextures\CommandButtons\BTNIronHordeWatchTower.blp")
     {
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N0BK_LOST_CITY_OF_THE_TOL_VIR));
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N0BD_ULDUM));
+      AddObjective(new ObjectiveControlPoint(UNIT_N0BK_LOST_CITY_OF_THE_TOL_VIR));
+      AddObjective(new ObjectiveControlPoint(UNIT_N0BD_ULDUM));
       AddObjective(new ObjectiveSelfExists());
       
-      ResearchId = Constants.UPGRADE_VQ03_QUEST_COMPLETED_ULDUM_EXCAVATION;
+      ResearchId = UPGRADE_VQ03_QUEST_COMPLETED_ULDUM_EXCAVATION;
       _rescueUnits = Regions.Warsong_Uldum_Unlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 

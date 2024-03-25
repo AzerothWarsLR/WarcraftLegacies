@@ -1,15 +1,14 @@
 ﻿using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Fel_Horde
 {
   public sealed class QuestFelHordeKillStormwind : QuestData
   {
-    private const int UnittypeId = Constants.UNIT_N086_FEL_DEATH_KNIGHT_FEL_HORDE_ELITE_TIER;
+    private const int UnittypeId = UNIT_N086_FEL_DEATH_KNIGHT_FEL_HORDE_ELITE_TIER;
     private const int UnitLimit = 6;
-    private const int BuildingId = Constants.UNIT_O030_FORTRESS_FEL_HORDE_T3;
+    private const int BuildingId = UNIT_O030_FORTRESS_FEL_HORDE_T3;
 
     /// <inheritdoc/>
     public override string RewardFlavour =>
@@ -24,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       @"ReplaceableTextures\CommandButtons\BTNAcolyte.blp")
     {
       AddObjective(new ObjectiveCapitalDead(stormwindKeep));
-      ResearchId = Constants.UPGRADE_R05Z_QUEST_COMPLETED_THOSE_WHO_CAME_BEFORE_FEL_HORDE;
+      ResearchId = UPGRADE_R05Z_QUEST_COMPLETED_THOSE_WHO_CAME_BEFORE_FEL_HORDE;
     }
     
   }

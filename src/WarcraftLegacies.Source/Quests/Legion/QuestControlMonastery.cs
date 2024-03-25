@@ -2,7 +2,6 @@
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Legion
 {
@@ -19,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
     public override string RewardFlavour => "The Monastery has been corrupted and plundered. A secret demon gate has now been formed inside.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => $"Learn to train troops from the Monastery, and learn to build 1 more {GetObjectName(Constants.UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC)}";
+    protected override string RewardDescription => $"Learn to train troops from the Monastery, and learn to build 1 more {GetObjectName(UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC)}";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)

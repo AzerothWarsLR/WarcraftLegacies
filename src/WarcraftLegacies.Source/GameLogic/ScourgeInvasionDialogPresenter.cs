@@ -2,7 +2,6 @@
 using MacroTools.Extensions;
 using MacroTools.UserInterface;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.GameLogic
 {

@@ -4,10 +4,8 @@ using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
-using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Stormwind
 {
@@ -15,12 +13,11 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
   {
     private readonly List<unit> _rescueUnits = new();
 
-    public QuestGoldshire(Rectangle rescueRect, unit hogger) : base("The Scourge of Elwynn",
+    public QuestGoldshire(Rectangle rescueRect) : base("The Scourge of Elwynn",
       "Hogger and his pack have taken over Goldshire, clear them out!",
       @"ReplaceableTextures\CommandButtons\BTNGnoll.blp")
     {
-      AddObjective(new ObjectiveUnitIsDead(hogger)); //Hogger
-      AddObjective(new ObjectiveControlPoint(FourCC("n00Z")));
+      AddObjective(new ObjectiveControlPoint(UNIT_N00Z_ELWYNN_FOREST));
       AddObjective(new ObjectiveExpire(600, Title));
       AddObjective(new ObjectiveSelfExists());
       foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())

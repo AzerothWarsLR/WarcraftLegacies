@@ -6,7 +6,6 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Dalaran
 {
@@ -25,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       "The woods of Silverspine are unsafe for travellers, they need to be investigated",
       @"ReplaceableTextures\CommandButtons\BTNworgen.blp")
     {
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N01D_SILVERPINE_FOREST));
+      AddObjective(new ObjectiveControlPoint(UNIT_N01D_SILVERPINE_FOREST));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

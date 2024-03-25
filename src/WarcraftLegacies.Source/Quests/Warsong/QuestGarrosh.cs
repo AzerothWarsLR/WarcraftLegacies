@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       @"ReplaceableTextures\CommandButtons\BTNWC1UnholyArmorRemasteredAlt.blp")
     {
       AddObjective(new ObjectiveCapitalDead(templeOfTheMoon));
-      ResearchId = Constants.UPGRADE_R062_QUEST_COMPLETED_THIRST_FOR_CONQUEST;
+      ResearchId = UPGRADE_R062_QUEST_COMPLETED_THIRST_FOR_CONQUEST;
     }
 
   }

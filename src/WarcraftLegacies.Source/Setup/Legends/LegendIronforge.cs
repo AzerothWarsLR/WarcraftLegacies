@@ -1,7 +1,7 @@
 ﻿using MacroTools;
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 #pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
@@ -42,8 +42,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage = "The Great Forge has been extinguished.", //Todo: mediocre flavour
         Essential = true
       };
-      GreatForge.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE_TOWER, new Point(10509, -5976)));
-      GreatForge.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE_TOWER, new Point(10710, -5974)));
+      GreatForge.AddProtector(preplacedUnitSystem.GetUnit(UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE_TOWER, new Point(10509, -5976)));
+      GreatForge.AddProtector(preplacedUnitSystem.GetUnit(UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE_TOWER, new Point(10710, -5974)));
 
       Thelsamar = new Capital
       {

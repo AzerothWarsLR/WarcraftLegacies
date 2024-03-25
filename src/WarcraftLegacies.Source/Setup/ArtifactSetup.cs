@@ -1,7 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.ArtifactSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup
 {
@@ -106,7 +105,7 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n03Y")), SkullOfGuldan.Item); //Drakthul
       ArtifactManager.Register(SkullOfGuldan);
 
-      EyeOfSargeras = new Artifact(CreateItem(Constants.ITEM_I003_EYE_OF_SARGERAS, -77.9f, 10910.4f));
+      EyeOfSargeras = new Artifact(CreateItem(ITEM_I003_EYE_OF_SARGERAS, -77.9f, 10910.4f));
       ArtifactManager.Register(EyeOfSargeras);
 
       HelmOfDomination = new Artifact(CreateItem(FourCC("I01Y"), DummyX, DummyY)); //Helm of Domination
@@ -120,8 +119,8 @@ namespace WarcraftLegacies.Source.Setup
       ArtifactManager.Register(CrownOfLordaeron);
 
       var tempArtifact = new Artifact(CreateItem(FourCC("klmm"), DummyX, DummyY)); //Killmaim
-      UnitAddAbility(preplacedUnitSystem.GetUnit(Constants.UNIT_H0BD_RAMZES_THE_HORROR_CREEP_DESOLACE), Artifact.ArtifactHolderAbilId); //Ramzes the Horror
-      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_H0BD_RAMZES_THE_HORROR_CREEP_DESOLACE), tempArtifact.Item);
+      UnitAddAbility(preplacedUnitSystem.GetUnit(UNIT_H0BD_RAMZES_THE_HORROR_CREEP_DESOLACE), Artifact.ArtifactHolderAbilId); //Ramzes the Horror
+      UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_H0BD_RAMZES_THE_HORROR_CREEP_DESOLACE), tempArtifact.Item);
       ArtifactManager.Register(tempArtifact);
 
       ScepterOfTheQueen = new Artifact(CreateItem(FourCC("I00I"), DummyX, DummyY));
@@ -129,44 +128,44 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n085")), ScepterOfTheQueen.Item);
       ArtifactManager.Register(ScepterOfTheQueen);
 
-      BookOfMedivh = new Artifact(CreateItem(Constants.ITEM_I006_BOOK_OF_MEDIVH, DummyX, DummyY));
+      BookOfMedivh = new Artifact(CreateItem(ITEM_I006_BOOK_OF_MEDIVH, DummyX, DummyY));
       ArtifactManager.Register(BookOfMedivh);
 
       ZinRokh = new Artifact(CreateItem(FourCC("I016"), DummyX, DummyY))
       {
-        TitanforgedAbility = Constants.ABILITY_A0VM_TITANFORGED_9_STRENGTH
+        TitanforgedAbility = ABILITY_A0VM_TITANFORGED_9_STRENGTH
       };
 
-      BronzeFragment = new Artifact(CreateItem(Constants.ITEM_I01M_BRONZE_FRAGMENT, DummyX, DummyY));
-      UnitAddAbility(preplacedUnitSystem.GetUnit(Constants.UNIT_O06Y_UKORZ_CREEP_ZUL_FARRAK), Artifact.ArtifactHolderAbilId);
-      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_O06Y_UKORZ_CREEP_ZUL_FARRAK), BronzeFragment.Item);
+      BronzeFragment = new Artifact(CreateItem(ITEM_I01M_BRONZE_FRAGMENT, DummyX, DummyY));
+      UnitAddAbility(preplacedUnitSystem.GetUnit(UNIT_O06Y_UKORZ_CREEP_ZUL_FARRAK), Artifact.ArtifactHolderAbilId);
+      UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_O06Y_UKORZ_CREEP_ZUL_FARRAK), BronzeFragment.Item);
       ArtifactManager.Register(BronzeFragment);
 
-      ObsidianFragment = new Artifact(CreateItem(Constants.ITEM_I01L_OBSIDIAN_FRAGMENT, DummyX, DummyY));
-      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_NDTW_XU_BA), ObsidianFragment.Item);
+      ObsidianFragment = new Artifact(CreateItem(ITEM_I01L_OBSIDIAN_FRAGMENT, DummyX, DummyY));
+      UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_NDTW_XU_BA), ObsidianFragment.Item);
       ArtifactManager.Register(ObsidianFragment);
 
-      RubyFragment = new Artifact(CreateItem(Constants.ITEM_I01J_RUBY_FRAGMENT, DummyX, DummyY));
-      UnitAddAbility(preplacedUnitSystem.GetUnit(Constants.UNIT_O06X_JIN_DO_CREEP_ZUL_GURUB), Artifact.ArtifactHolderAbilId); //Jin)do
-      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_O06X_JIN_DO_CREEP_ZUL_GURUB), RubyFragment.Item);
+      RubyFragment = new Artifact(CreateItem(ITEM_I01J_RUBY_FRAGMENT, DummyX, DummyY));
+      UnitAddAbility(preplacedUnitSystem.GetUnit(UNIT_O06X_JIN_DO_CREEP_ZUL_GURUB), Artifact.ArtifactHolderAbilId); //Jin)do
+      UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_O06X_JIN_DO_CREEP_ZUL_GURUB), RubyFragment.Item);
       ArtifactManager.Register(RubyFragment);
 
-      AzureFragment = new Artifact(CreateItem(Constants.ITEM_I01I_AZURE_FRAGMENT, DummyX, DummyY));
-      UnitAddAbility(preplacedUnitSystem.GetUnit(Constants.UNIT_O06W_GAL_DARAH_CREEP_ZUL_DRAK), Artifact.ArtifactHolderAbilId);
-      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_O06W_GAL_DARAH_CREEP_ZUL_DRAK), AzureFragment.Item);
+      AzureFragment = new Artifact(CreateItem(ITEM_I01I_AZURE_FRAGMENT, DummyX, DummyY));
+      UnitAddAbility(preplacedUnitSystem.GetUnit(UNIT_O06W_GAL_DARAH_CREEP_ZUL_DRAK), Artifact.ArtifactHolderAbilId);
+      UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_O06W_GAL_DARAH_CREEP_ZUL_DRAK), AzureFragment.Item);
       ArtifactManager.Register(AzureFragment);
 
       EssenceofMurmur = new Artifact(CreateItem(FourCC("I00K"), DummyX, DummyY)); //Essence
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n03T")), EssenceofMurmur.Item); //Murmur
       ArtifactManager.Register(EssenceofMurmur);
 
-      EmeraldFragment = new Artifact(CreateItem(Constants.ITEM_I01K_EMERALD_FRAGMENT, DummyX, DummyY));
-      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_O06Z_ZUL_JIN_CREEP_ZUL_AMAN), EmeraldFragment.Item);
+      EmeraldFragment = new Artifact(CreateItem(ITEM_I01K_EMERALD_FRAGMENT, DummyX, DummyY));
+      UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_O06Z_ZUL_JIN_CREEP_ZUL_AMAN), EmeraldFragment.Item);
       ArtifactManager.Register(EmeraldFragment);
 
       tempArtifact = new Artifact(CreateItem(FourCC("arsh"), DummyX, DummyY)); //Shroud of Nozdormuru
-      UnitAddAbility(preplacedUnitSystem.GetUnit(Constants.UNIT_O070_OCCULUS_CREEP_CAVERNS), Artifact.ArtifactHolderAbilId); //Occulus
-      UnitAddItem(preplacedUnitSystem.GetUnit(Constants.UNIT_O070_OCCULUS_CREEP_CAVERNS), tempArtifact.Item);
+      UnitAddAbility(preplacedUnitSystem.GetUnit(UNIT_O070_OCCULUS_CREEP_CAVERNS), Artifact.ArtifactHolderAbilId); //Occulus
+      UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_O070_OCCULUS_CREEP_CAVERNS), tempArtifact.Item);
       ArtifactManager.Register(tempArtifact);
 
       HornOfCenarius = new Artifact(CreateItem(FourCC("cnhn"), DummyX, DummyY));
@@ -178,8 +177,8 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("hmtm"), new Point(15109, -895)), tempArtifact.Item);
       ArtifactManager.Register(tempArtifact);
 
-      ScytheOfElune = new Artifact(CreateItem(Constants.ITEM_I00R_SCYTHE_OF_ELUNE, DummyX, DummyX));
-      var worgenBloodShamanHero = preplacedUnitSystem.GetUnit(Constants.UNIT_O038_WORGEN_BLOOD_SHAMAN_WORGEN_HERO,
+      ScytheOfElune = new Artifact(CreateItem(ITEM_I00R_SCYTHE_OF_ELUNE, DummyX, DummyX));
+      var worgenBloodShamanHero = preplacedUnitSystem.GetUnit(UNIT_O038_WORGEN_BLOOD_SHAMAN_WORGEN_HERO,
         new Point(5410.7f, 2499.0f));
       UnitAddAbility(worgenBloodShamanHero, Artifact.ArtifactHolderAbilId);
       UnitAddItem(worgenBloodShamanHero, ScytheOfElune.Item);

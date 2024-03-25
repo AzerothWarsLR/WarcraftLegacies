@@ -193,6 +193,7 @@ public static class Regions
 	public static Rectangle LightningBolt3 { get; set; } = new Rectangle(-18784f, 3584f, -18752f, 3616f);
 	public static Rectangle Loch_Modan_Ships { get; set; } = new Rectangle(14432f, -7552f, 17952f, -1536f);
 	public static Rectangle LochModanAmbient { get; set; } = new Rectangle(14432f, -7552f, 17888f, -4032f);
+	public static Rectangle LochModanMurlocCreepCamp { get; set; } = new Rectangle(14816f, -4768f, 15424f, -4192f);
 	public static Rectangle LongMarchCentaur { get; set; } = new Rectangle(-13824f, -11136f, -10912f, -8384f);
 	public static Rectangle Lordaeron_East { get; set; } = new Rectangle(12896f, 7456f, 18240f, 14112f);
 	public static Rectangle LordaeronAmbient1 { get; set; } = new Rectangle(15968f, 7264f, 19008f, 11712f);

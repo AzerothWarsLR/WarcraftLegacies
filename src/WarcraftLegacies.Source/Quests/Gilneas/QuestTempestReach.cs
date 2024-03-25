@@ -1,7 +1,6 @@
 ﻿using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using System.Collections.Generic;
-using static War3Api.Common;
 using MacroTools.Extensions;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
@@ -21,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     /// </summary>
     public QuestTempestReach() : base("Tempest Reach", "The first settlement we need to capture is Tempest Reach, just south of our location.", @"ReplaceableTextures\CommandButtons\BTNGilneasFarm.blp")
     {
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N084_TEMPEST_REACH));
+      AddObjective(new ObjectiveControlPoint(UNIT_N084_TEMPEST_REACH));
       AddObjective(new ObjectiveExpire(670, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = Regions.GilneasUnlock1.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

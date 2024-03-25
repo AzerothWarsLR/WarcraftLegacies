@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net7.0</TargetFramework>
         <Nullable>enable</Nullable>
         <RootNamespace>WarcraftLegacies.Source</RootNamespace>
     </PropertyGroup>
@@ -10,6 +10,7 @@
         <ProjectReference Include="..\WarcraftLegacies.Generated\WarcraftLegacies.Generated.csproj" />
         <ProjectReference Include="..\MacroTools\MacroTools.csproj" />
     </ItemGroup>
+
 
 
 </Project>

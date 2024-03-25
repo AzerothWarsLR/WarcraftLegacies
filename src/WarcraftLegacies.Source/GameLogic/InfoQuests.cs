@@ -1,6 +1,4 @@
-﻿using static War3Api.Common;
-
-namespace WarcraftLegacies.Source.GameLogic
+﻿namespace WarcraftLegacies.Source.GameLogic
 {
    /// <summary>
    /// Provides a set of dummy quests that provide information to players.

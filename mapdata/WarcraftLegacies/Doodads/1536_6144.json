@@ -244,20 +244,20 @@
   },
   {
     "State": 2,
-    "Life": 100,
-    "TypeId": 2004112474,
+    "Life": 255,
+    "TypeId": 1094135876,
     "Position": {
       "X": 1408,
       "Y": 5888,
       "Z": 49.75
     },
-    "Rotation": 1.43117,
+    "Rotation": 4.712389,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 2004112474,
+    "SkinId": 1094135876,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 18260

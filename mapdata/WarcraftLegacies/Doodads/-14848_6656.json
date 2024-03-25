@@ -22,81 +22,81 @@
   },
   {
     "State": 2,
-    "Life": 100,
-    "TypeId": 1920226371,
-    "Variation": 4,
+    "Life": 255,
+    "TypeId": 892416068,
+    "Variation": 1,
     "Position": {
       "X": -14976,
       "Y": 6528,
       "Z": 173.75
     },
-    "Rotation": 0.017453294,
+    "Rotation": 4.712389,
     "Scale": {
       "X": 0.99999994,
       "Y": 0.99999994,
       "Z": 0.99999994
     },
-    "SkinId": 1920226371,
+    "SkinId": 892416068,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 6888
   },
   {
     "State": 2,
-    "Life": 100,
-    "TypeId": 1920226369,
+    "Life": 255,
+    "TypeId": 892416068,
     "Position": {
       "X": -14912,
       "Y": 6784,
       "Z": 268.25
     },
-    "Rotation": 4.7123895,
+    "Rotation": 4.712389,
     "Scale": {
-      "X": 1.1282206,
-      "Y": 1.1282206,
-      "Z": 1.1282206
+      "X": 1.72822,
+      "Y": 1.72822,
+      "Z": 1.72822
     },
-    "SkinId": 1920226369,
+    "SkinId": 892416068,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 19703
   },
   {
     "State": 2,
-    "Life": 100,
-    "TypeId": 1920226369,
+    "Life": 255,
+    "TypeId": 892416068,
     "Position": {
       "X": -14848,
       "Y": 6592,
       "Z": 106.375
     },
-    "Rotation": 1.832596,
+    "Rotation": 4.712389,
     "Scale": {
       "X": 1.035,
       "Y": 1.035,
       "Z": 1.035
     },
-    "SkinId": 1920226369,
+    "SkinId": 892416068,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 18133
   },
   {
     "State": 2,
-    "Life": 100,
-    "TypeId": 1668568129,
+    "Life": 255,
+    "TypeId": 1295396932,
     "Position": {
       "X": -14880,
       "Y": 6688,
       "Z": 182.875
     },
-    "Rotation": 4.7123895,
+    "Rotation": 4.712389,
     "Scale": {
       "X": 0.99999994,
       "Y": 0.99999994,
       "Z": 0.99999994
     },
-    "SkinId": 1668568129,
+    "SkinId": 1295396932,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 19704

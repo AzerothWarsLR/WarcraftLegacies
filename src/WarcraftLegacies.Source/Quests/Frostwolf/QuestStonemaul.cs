@@ -6,7 +6,6 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Frostwolf
 {
@@ -18,10 +17,10 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       "Rexxar is having trouble with a beligerent Ogre Warlord, slay the Chieftain to gain the hero's allegiance.",
       @"ReplaceableTextures\CommandButtons\BTNOneHeadedOgre.blp")
     {
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N022_STONEMAUL));
+      AddObjective(new ObjectiveControlPoint(UNIT_N022_STONEMAUL));
       AddObjective(new ObjectiveExpire(480, Title));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = Constants.UPGRADE_R03S_QUEST_COMPLETED_THE_CHIEFTAIN_S_CHALLENGE_FROSTWOLF;
+      ResearchId = UPGRADE_R03S_QUEST_COMPLETED_THE_CHIEFTAIN_S_CHALLENGE_FROSTWOLF;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
     }
 

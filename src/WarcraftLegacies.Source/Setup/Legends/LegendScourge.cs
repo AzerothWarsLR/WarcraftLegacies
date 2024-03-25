@@ -4,7 +4,6 @@ using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 using static War3Api.Blizzard;
 
 namespace WarcraftLegacies.Source.Setup.Legends
@@ -48,11 +47,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Arthas = new LegendaryHero("Arthas Menethil")
       {
-        UnitType = Constants.UNIT_UEAR_CHAMPION_OF_THE_SCOURGE_SCOURGE,
+        UnitType = UNIT_UEAR_CHAMPION_OF_THE_SCOURGE_SCOURGE,
         StartingXp = 7000,
         StartingArtifacts = new List<Artifact>
         {
-          new(CreateItem(Constants.ITEM_ZB07_FROSTMOURNE, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+          new(CreateItem(ITEM_ZB07_FROSTMOURNE, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
         }
       };
 
@@ -79,10 +78,10 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendaryHeroManager.Register(Rivendare);
       LegendaryHeroManager.Register(Arthas);
       CapitalManager.Register(TheFrozenThrone);
-      TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3655, 20220)));
-      TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3015, 20762)));
-      TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3643, 22588)));
-      TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3638, 23374)));
+      TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3655, 20220)));
+      TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3015, 20762)));
+      TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3643, 22588)));
+      TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3638, 23374)));
       CreateTrigger()
         .RegisterUnitEvent(TheFrozenThrone.Unit, EVENT_UNIT_CHANGE_OWNER)
         .AddAction(() =>

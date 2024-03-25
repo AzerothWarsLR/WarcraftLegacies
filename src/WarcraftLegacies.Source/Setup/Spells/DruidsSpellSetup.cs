@@ -9,22 +9,22 @@ namespace WarcraftLegacies.Source.Setup.Spells
   {
     public static void Setup()
     {
-      SpellSystem.Register(new RegrowTrees(Constants.ABILITY_A01A_REGROW_TREES_BROWN_NORDRASSIL)
+      SpellSystem.Register(new RegrowTrees(ABILITY_A01A_REGROW_TREES_BROWN_NORDRASSIL)
       {
         Radius = 8500
       });
       
-      SpellSystem.Register(new RegrowTrees(Constants.ABILITY_A0G8_SACRED_GROUND_BROWN_MAIN_BUILDINGS)
+      SpellSystem.Register(new RegrowTrees(ABILITY_A0G8_SACRED_GROUND_BROWN_MAIN_BUILDINGS)
       {
         Radius = 1500
       });
       
-      SpellSystem.Register(new RegrowTrees(Constants.ABILITY_A04C_SEED_GROWTH)
+      SpellSystem.Register(new RegrowTrees(ABILITY_A04C_SEED_GROWTH)
       {
         Radius = 1200
       });
 
-      SpellSystem.Register(new Devour(Constants.ABILITY_A0NP_DEVOUR_TORTOLLA)
+      SpellSystem.Register(new Devour(ABILITY_A0NP_DEVOUR_TORTOLLA)
       {
         PercentageOfMaxHealth = 0.5f,
         Damage = new LeveledAbilityField<float>
@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         }
       });
 
-      SpellSystem.Register(new Devour(Constants.ABILITY_A0S0_DEVOUR_OURO)
+      SpellSystem.Register(new Devour(ABILITY_A0S0_DEVOUR_OURO)
       {
         PercentageOfMaxHealth = 0.5f,
         Damage = new LeveledAbilityField<float>

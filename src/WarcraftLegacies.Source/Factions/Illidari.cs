@@ -10,7 +10,6 @@ using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using WarcraftLegacies.Source.Quests.Naga;
 using WarcraftLegacies.Source.Setup;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -23,15 +22,16 @@ namespace WarcraftLegacies.Source.Factions
     public Illidari(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Illidan", PLAYER_COLOR_VIOLET,
       "|cffff00ff", @"ReplaceableTextures\CommandButtons\BTNEvilIllidan.blp")
     {
+      TraditionalTeam = TeamSetup.Outland;
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
-      UndefeatedResearch = Constants.UPGRADE_R02L_ILLIDAN_EXISTS;
+      UndefeatedResearch = UPGRADE_R02L_ILLIDAN_EXISTS;
       StartingGold = 200;
       StartingLumber = 0;
       FoodMaximum = 250;
       StartingCameraPosition = Regions.IllidanStartingPosition.Center;
       StartingUnits = Regions.IllidanStartingPosition.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
-      ControlPointDefenderUnitTypeId = Constants.UNIT_N0BB_CONTROL_POINT_DEFENDER_ILLIDARI_TOWER;
+      ControlPointDefenderUnitTypeId = UNIT_N0BB_CONTROL_POINT_DEFENDER_ILLIDARI_TOWER;
       LearningDifficulty = FactionLearningDifficulty.Basic;
       IntroText = @"You are playing as the Betrayer, Illidan|r|r.
 
@@ -120,8 +120,8 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
       ModObjectLimit(FourCC("Naka"), 1); //Akama
       ModObjectLimit(FourCC("Eevi"), 1); //Illidan
 
-      ModObjectLimit(Constants.UPGRADE_RNSW_NAGA_SIREN_ADEPT_TRAINING_NAGA_SIREN_MASTER_TRAINING, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R02V_SHADOWCASTER_MASTER_TRAINING, UNLIMITED);
+      ModObjectLimit(UPGRADE_RNSW_NAGA_SIREN_ADEPT_TRAINING_NAGA_SIREN_MASTER_TRAINING, UNLIMITED);
+      ModObjectLimit(UPGRADE_R02V_SHADOWCASTER_MASTER_TRAINING, UNLIMITED);
     }
 
     private void RegisterQuests()

@@ -8,7 +8,6 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Warsong
 {
@@ -22,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     {
       AddObjective(new ObjectiveLegendReachRect(grom, Regions.LumberCampUnlock,
         "Eastern Ashenvale"));
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_O02S_FORTRESS_WARSONG_T3, Constants.UNIT_O00C_GREAT_HALL_WARSONG_T1));
+      AddObjective(new ObjectiveUpgrade(UNIT_O02S_FORTRESS_WARSONG_T3, UNIT_O00C_GREAT_HALL_WARSONG_T1));
       AddObjective(new ObjectiveExpire(480, Title));
       AddObjective(new ObjectiveSelfExists());
       

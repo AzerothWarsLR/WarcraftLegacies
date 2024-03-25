@@ -3,8 +3,6 @@ using System.Diagnostics.CodeAnalysis;
 using MacroTools;
 using WarcraftLegacies.Source.Setup;
 
-using static War3Api.Common;
-
 namespace WarcraftLegacies.Source
 {
 	public static class Program

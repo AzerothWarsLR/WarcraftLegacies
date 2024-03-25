@@ -8,7 +8,6 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Scourge
 {
@@ -27,10 +26,10 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       "Drak'tharon Keep", "Drak'tharon Keep will be the perfect place for an outpost by the sea.",
       @"ReplaceableTextures\CommandButtons\BTNUndeadShipyard.blp")
     {
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N030_DRAK_THARON_KEEP));
+      AddObjective(new ObjectiveControlPoint(UNIT_N030_DRAK_THARON_KEEP));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = Constants.UPGRADE_R08J_QUEST_COMPLETED_DRAK_THARON_KEEP;
+      ResearchId = UPGRADE_R08J_QUEST_COMPLETED_DRAK_THARON_KEEP;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _kelthuzad = kelthuzad;
     }
@@ -39,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     public override string RewardFlavour => "Drak'tharon Keep is now under the control of the Scourge and Kel'thuzad has joined the Scourge.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => $"Gain control of all buildings in Drak'tharon Keep and learn to train {_kelthuzad.Name} from the {GetObjectName(Constants.UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)}";
+    protected override string RewardDescription => $"Gain control of all buildings in Drak'tharon Keep and learn to train {_kelthuzad.Name} from the {GetObjectName(UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)}";
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)

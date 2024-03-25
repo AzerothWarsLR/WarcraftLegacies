@@ -12,7 +12,6 @@ using MacroTools.UserInterface;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Rocks;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Scourge
 {
@@ -49,14 +48,14 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       _plagueParameters = plagueParameters;
       _secondaryPlagueFaction = secondaryPlagueFaction;
       AddObjective(new ObjectiveEitherOf(
-        new ObjectiveResearch(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, FourCC("u000")),
+        new ObjectiveResearch(UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, FourCC("u000")),
         new ObjectiveTime(660)));
       AddObjective(new ObjectiveTime(540));
       _deathknellUnits = deathknell.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       _scholomanceUnits = scholomance.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       _coastUnits = coast.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       Global = true;
-      ResearchId = Constants.UPGRADE_R009_QUEST_COMPLETED_PLAGUE_OF_UNDEATH;
+      ResearchId = UPGRADE_R009_QUEST_COMPLETED_PLAGUE_OF_UNDEATH;
     }
 
     /// <inheritdoc />
@@ -70,7 +69,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.ModObjectLimit(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, -Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, -Faction.UNLIMITED);
       if (completingFaction.Player != null)
         SpawnArmies(completingFaction);
 
@@ -111,7 +110,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     /// <inheritdoc />
     protected override void OnAdd(Faction whichFaction) =>
-      whichFaction.ModObjectLimit(Constants.UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, Faction.UNLIMITED);
 
     private static void KillVillagers()
     {
@@ -148,14 +147,14 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         var position = plagueRect.GetRandomPoint();
         position.RemoveDestructablesInRadius(250f);
 
-        CreateUnit(secondaryPlaguePlayer, Constants.UNIT_U00D_LEGION_HERALD_LEGION_WORKER, position.X, position.Y, 0);
+        CreateUnit(secondaryPlaguePlayer, UNIT_U00D_LEGION_HERALD_LEGION_WORKER, position.X, position.Y, 0);
 
         var attackTarget = _plagueParameters.AttackTargets
           .OrderBy(x => MathEx.GetDistanceBetweenPoints(position, x))
           .First();
 
         foreach (var parameter in _plagueParameters.PlagueArmySummonParameters)
-        foreach (var unit in GeneralHelpers.CreateUnits(primaryPlaguePlayer, parameter.SummonUnitTypeId,
+        foreach (var unit in CreateUnits(primaryPlaguePlayer, parameter.SummonUnitTypeId,
                    position.X, position.Y, 0, parameter.SummonCount))
         {
           if (!unit.IsType(UNIT_TYPE_PEON))

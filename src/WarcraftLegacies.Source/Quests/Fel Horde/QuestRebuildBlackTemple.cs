@@ -3,7 +3,6 @@ using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 using System.Collections.Generic;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
@@ -25,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     {
       
       AddObjective(new ObjectiveAnyUnitInRect(rescueRect, "Shadowmoon Valley", false));
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N02T_TEROKKAR_FOREST));
+      AddObjective(new ObjectiveControlPoint(UNIT_N02T_TEROKKAR_FOREST));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
     }

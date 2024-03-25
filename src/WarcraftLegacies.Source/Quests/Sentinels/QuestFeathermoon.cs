@@ -6,7 +6,6 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Sentinels
 {
@@ -28,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.FeathermoonCreeps }, "around Feathermoon Stronghold"));
       AddObjective(new ObjectiveExpire(480, Title));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = Constants.UPGRADE_R06M_QUEST_COMPLETED_SHORES_OF_FEATHERMOON;
+      ResearchId = UPGRADE_R06M_QUEST_COMPLETED_SHORES_OF_FEATHERMOON;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       
     }

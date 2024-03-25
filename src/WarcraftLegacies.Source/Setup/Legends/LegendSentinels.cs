@@ -1,6 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.LegendSystem;
-using static War3Api.Common;
+
 #pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
@@ -60,12 +60,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       VaultOfTheWardens = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)
+        Unit = preplacedUnitSystem.GetUnit(UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)
       };
       
       BlackrookHold = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H03C_BLACK_ROOK_HOLD_NEUTRAL_HOSTILE)
+        Unit = preplacedUnitSystem.GetUnit(UNIT_H03C_BLACK_ROOK_HOLD_NEUTRAL_HOSTILE)
       };
     }
     

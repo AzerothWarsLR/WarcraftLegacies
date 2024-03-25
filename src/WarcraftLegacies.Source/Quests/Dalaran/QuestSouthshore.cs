@@ -6,7 +6,6 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Dalaran
 {
@@ -25,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       "A small murloc skirmish is attacking Southshore, push them back",
       @"ReplaceableTextures\CommandButtons\BTNMurloc.blp")
     {
-      AddObjective(new ObjectiveControlPoint(Constants.UNIT_N08M_SOUTHSHORE));
+      AddObjective(new ObjectiveControlPoint(UNIT_N08M_SOUTHSHORE));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

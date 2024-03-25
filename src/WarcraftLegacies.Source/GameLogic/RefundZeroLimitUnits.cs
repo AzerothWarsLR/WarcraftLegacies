@@ -1,7 +1,6 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Events;
-using static War3Api.Common;
 
 
 namespace WarcraftLegacies.Source.GameLogic
@@ -17,16 +16,9 @@ namespace WarcraftLegacies.Source.GameLogic
       if (player.GetObjectLimit(GetUnitTypeId(whichUnit)) != 0) 
         return;
 
-      if (IsUnitType(whichUnit, UNIT_TYPE_HERO))
-      {
-        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, PlayerDistributor.HeroCost);
-      }
-      else
-      {
-        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, GetUnitGoldCost(GetUnitTypeId(whichUnit)));
-        player.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, GetUnitWoodCost(GetUnitTypeId(whichUnit)));
-      }
-      
+      player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD,
+        IsUnitType(whichUnit, UNIT_TYPE_HERO) ? PlayerDistributor.HeroCost : GetUnitGoldCost(GetUnitTypeId(whichUnit)));
+
       RemoveUnit(whichUnit);
     }
 

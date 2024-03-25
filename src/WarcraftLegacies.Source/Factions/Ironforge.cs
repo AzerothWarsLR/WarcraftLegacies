@@ -6,7 +6,6 @@ using WarcraftLegacies.Source.Quests.Ironforge;
 using WarcraftLegacies.Source.Researches.Ironforge;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -16,16 +15,18 @@ namespace WarcraftLegacies.Source.Factions
     private readonly AllLegendSetup _allLegendSetup;
 
     /// <inheritdoc />
+    
     public Ironforge(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Ironforge",
       PLAYER_COLOR_YELLOW, "|C00FFFC01", @"ReplaceableTextures\CommandButtons\BTNHeroMountainKing.blp")
     {
+      TraditionalTeam = TeamSetup.SouthAlliance;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
       UndefeatedResearch = FourCC("R05T");
       StartingGold = 200;
       StartingLumber = 0;
       CinematicMusic = "PursuitTheme";
-      ControlPointDefenderUnitTypeId = Constants.UNIT_H0AL_CONTROL_POINT_DEFENDER_IRONFORGE;
+      ControlPointDefenderUnitTypeId = UNIT_H0AL_CONTROL_POINT_DEFENDER_IRONFORGE;
       IntroText = @"You are playing as the long-enduring |cffe4bc00Kingdom of 
                     |r
 You begin in the Wetlands, separated from the rest of your forces. Conquer Loch Modan and Dun Morough to gain access to 
@@ -93,8 +94,8 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       ModObjectLimit(FourCC("h01M"), 1); //Baelgun
       ModObjectLimit(FourCC("H00S"), 1); //Magni
       ModObjectLimit(FourCC("Hmbr"), 1); //Muradin
-      ModObjectLimit(Constants.UNIT_H03G_EMPEROR_OF_BLACKROCK_RAGNAROS, 1);
-      ModObjectLimit(Constants.UNIT_H028_THANE_OF_AERIE_PEAK_IRONFORGE, 1);
+      ModObjectLimit(UNIT_H03G_EMPEROR_OF_BLACKROCK_RAGNAROS, 1);
+      ModObjectLimit(UNIT_H028_THANE_OF_AERIE_PEAK_IRONFORGE, 1);
 
       //Ships
       ModObjectLimit(FourCC("hbot"), UNLIMITED); //Alliance Transport Ship
@@ -116,46 +117,46 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       ModObjectLimit(FourCC("Rhhb"), UNLIMITED); //Storm Hammers
       ModObjectLimit(FourCC("R063"), UNLIMITED); //Thunder Ale
       ModObjectLimit(FourCC("R02K"), UNLIMITED); //Gryphon Superior Breed
-      ModObjectLimit(Constants.UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE, 2);
-      ModObjectLimit(Constants.UPGRADE_RHAR_PYRITE_ARMOR_PLATING_UNIVERSAL_UPGRADE, 2);
-      ModObjectLimit(Constants.UPGRADE_R00V_RUNE_PRIEST_MASTER_TRAINING_IRONFORGE, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R00Z_ARMOR_PENETRATION_ROUNDS_IRONFORGE, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R010_IMPROVED_SPELL_RESISTANCE_IRONFORGE, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R00T_OVERCLOCK_IRONFORGE_STEAM_TANK, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R00N_IMPROVED_SWIG_IRONFORGE_TAVERN, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 1);
+      ModObjectLimit(UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE, 2);
+      ModObjectLimit(UPGRADE_RHAR_PYRITE_ARMOR_PLATING_UNIVERSAL_UPGRADE, 2);
+      ModObjectLimit(UPGRADE_R00V_RUNE_PRIEST_MASTER_TRAINING_IRONFORGE, UNLIMITED);
+      ModObjectLimit(UPGRADE_R00Z_ARMOR_PENETRATION_ROUNDS_IRONFORGE, UNLIMITED);
+      ModObjectLimit(UPGRADE_R010_IMPROVED_SPELL_RESISTANCE_IRONFORGE, UNLIMITED);
+      ModObjectLimit(UPGRADE_R00T_OVERCLOCK_IRONFORGE_STEAM_TANK, UNLIMITED);
+      ModObjectLimit(UPGRADE_R00N_IMPROVED_SWIG_IRONFORGE_TAVERN, UNLIMITED);
+      ModObjectLimit(UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 1);
 
-      ModAbilityAvailability(Constants.ABILITY_A0IH_SPIKED_BARRICADES_DWARF_KEEP, -1);
-      ModAbilityAvailability(Constants.ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);
-      ModAbilityAvailability(Constants.ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);
-      ModAbilityAvailability(Constants.ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, -1);
-      ModAbilityAvailability(Constants.ABILITY_A0IH_SPIKED_BARRICADES_DWARF_KEEP, -1);
+      ModAbilityAvailability(ABILITY_A0IH_SPIKED_BARRICADES_DWARF_KEEP, -1);
+      ModAbilityAvailability(ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);
+      ModAbilityAvailability(ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);
+      ModAbilityAvailability(ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, -1);
+      ModAbilityAvailability(ABILITY_A0IH_SPIKED_BARRICADES_DWARF_KEEP, -1);
     }
 
     private void RegisterQuests()
     {
-      var newQuest = AddQuest(new QuestThelsamar(_preplacedUnitSystem, Regions.ThelUnlock));
-      StartingQuest = newQuest;
-      AddQuest(new QuestDunMorogh(_preplacedUnitSystem));
-      AddQuest(new QuestDominion(Regions.IronforgeAmbient));
-      AddQuest(new QuestGnomeregan(Regions.Gnomergan, _preplacedUnitSystem));
+      var questThelsamar = AddQuest(new QuestThelsamar(Regions.ThelUnlock));
+      StartingQuest = questThelsamar;
+      var questDunMorogh = AddQuest(new QuestDunMorogh());
+      AddQuest(new QuestDominion(Regions.IronforgeAmbient, questThelsamar, questDunMorogh));
+      AddQuest(new QuestGnomeregan(Regions.Gnomergan));
       AddQuest(new QuestDarkIron(Regions.Shadowforge_City, _allLegendSetup.FelHorde.BlackTemple, _allLegendSetup.Ironforge.Magni));
       AddQuest(new QuestWildhammer(_allLegendSetup.Ironforge.Magni));
 
       var missingArtifacts = new int[]
       {
-        Constants.ITEM_I01A_DEMON_SOUL,
-        Constants.ITEM_I00F_GLOVES_OF_AHN_QIRAJ,
-        Constants.ITEM_I00Z_THUNDERFURY,
-        Constants.ITEM_I015_XAL_ATATH_BLADE_OF_THE_BLACK_EMPIRE,
-        Constants.ITEM_I01T_FANDRAL_S_FLAMESCYTHE
+        ITEM_I01A_DEMON_SOUL,
+        ITEM_I00F_GLOVES_OF_AHN_QIRAJ,
+        ITEM_I00Z_THUNDERFURY,
+        ITEM_I015_XAL_ATATH_BLADE_OF_THE_BLACK_EMPIRE,
+        ITEM_I01T_FANDRAL_S_FLAMESCYTHE
       };
       AddQuest(new QuestExpedition(missingArtifacts[GetRandomInt(0, missingArtifacts.Length - 1)]));
     }
     
     private void RegisterStormwindResearches(Stormwind stormwind)
     {
-      ResearchManager.Register(new DeeprunTram(this, stormwind, Constants.UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 70, 75,
+      ResearchManager.Register(new DeeprunTram(this, stormwind, UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 70,
         _preplacedUnitSystem));
     }
   }

@@ -1,6 +1,5 @@
 ﻿using MacroTools.Extensions;
 using WCSharp.Buffs;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Spells.Reap
 {
@@ -16,7 +15,7 @@ namespace WarcraftLegacies.Source.Spells.Reap
       EffectString = effectPath;
       EffectAttachmentPoint = "origin";
       EffectScale = 2;
-      Bind(Constants.ABILITY_ZB03_REAP_BUFF_APPLICATOR, Constants.BUFF_ZB04_REAP);
+      Bind(ABILITY_ZB03_REAP_BUFF_APPLICATOR, BUFF_ZB04_REAP);
     }
     
     public override void OnApply()

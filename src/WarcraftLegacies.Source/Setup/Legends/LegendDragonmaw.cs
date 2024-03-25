@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       DragonmawPort = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O06E_DRAGONMAW_PORT_DRAGONMAW),
+        Unit = preplacedUnitSystem.GetUnit(UNIT_O06E_DRAGONMAW_PORT_DRAGONMAW),
         DeathMessage =
           "The Dragonmaw Port has fallen, the Twilight Highlands are finally liberated"
       };
@@ -22,17 +22,17 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       LegendaryHeroManager.Register(Zaela = new LegendaryHero("Zaela")
       {
-        UnitType = Constants.UNIT_O05S_WARLORD_MAIDEN_DRAGONMAW
+        UnitType = UNIT_O05S_WARLORD_MAIDEN_DRAGONMAW
       });
 
       LegendaryHeroManager.Register(Nekrosh = new LegendaryHero("Nek'rosh Skullcrasher")
       {
-        UnitType = Constants.UNIT_O01Q_DRAGONMAW_CHIEFTAIN_FEL_HORDE
+        UnitType = UNIT_O01Q_DRAGONMAW_CHIEFTAIN_FEL_HORDE
       });
 
       LegendaryHeroManager.Register(Gorfax = new LegendaryHero("Gorfax")
       {
-        UnitType = Constants.UNIT_O06F_BLOOD_WARRIOR_DRAGONMAW,
+        UnitType = UNIT_O06F_BLOOD_WARRIOR_DRAGONMAW,
         StartingXp = 5400,
       });
 

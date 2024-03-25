@@ -4,7 +4,6 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Frostwolf
 {
@@ -32,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      var drektharsSpellBook = new Artifact(CreateItem(Constants.ITEM_DTSB_DREK_THAR_S_SPELLBOOK, 0, 0));
+      var drektharsSpellBook = new Artifact(CreateItem(ITEM_DTSB_DREK_THAR_S_SPELLBOOK, 0, 0));
       ArtifactManager.Register(drektharsSpellBook);
       _thrall.Unit?.AddItemSafe(drektharsSpellBook.Item);
     }

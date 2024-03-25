@@ -2,12 +2,10 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-using MacroTools.Libraries;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Quelthalas
 {
@@ -30,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       _rommath = rommath;
       _rescueRect = rescueRect;
       AddObjective(new ObjectiveTime(1200));
-      ResearchId = Constants.UPGRADE_R074_QUEST_COMPLETED_QUEL_DANIL_LODGE;
+      ResearchId = UPGRADE_R074_QUEST_COMPLETED_QUEL_DANIL_LODGE;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       AddObjective(new ObjectiveControlCapital(sunwell, true));
       
@@ -82,13 +80,13 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       if (whichPlayer == null)
         return;
       var spawn = _secondChanceRect.Center;
-      GeneralHelpers.CreateUnits(whichPlayer, Constants.UNIT_U00J_ARCANE_WAGON_QUEL_THALAS, spawn.X, spawn.Y, 270, 2);
-      GeneralHelpers.CreateUnits(whichPlayer, Constants.UNIT_HHES_SWORDSMAN_QUEL_THALAS, spawn.X, spawn.Y, 270, 12);
-      GeneralHelpers.CreateUnits(whichPlayer, Constants.UNIT_NHEA_RANGER_QUEL_THALAS, spawn.X, spawn.Y, 270, 12);
-      GeneralHelpers.CreateUnits(whichPlayer, Constants.UNIT_N063_MAGUS_QUEL_THALAS, spawn.X, spawn.Y, 270, 6); 
+      CreateUnits(whichPlayer, UNIT_U00J_ARCANE_WAGON_QUEL_THALAS, spawn.X, spawn.Y, 270, 2);
+      CreateUnits(whichPlayer, UNIT_HHES_SWORDSMAN_QUEL_THALAS, spawn.X, spawn.Y, 270, 12);
+      CreateUnits(whichPlayer, UNIT_NHEA_RANGER_QUEL_THALAS, spawn.X, spawn.Y, 270, 12);
+      CreateUnits(whichPlayer, UNIT_N063_MAGUS_QUEL_THALAS, spawn.X, spawn.Y, 270, 6); 
       _rommath.ForceCreate(whichPlayer, _secondChanceRect.Center, 270);
       UnitAddItem(_rommath.Unit,
-        CreateItem(Constants.ITEM_STWP_TOWN_PORTAL_SCROLL, GetUnitX(_rommath.Unit),
+        CreateItem(ITEM_STWP_TOWN_PORTAL_SCROLL, GetUnitX(_rommath.Unit),
           GetUnitY(_rommath.Unit)));
     }
 
