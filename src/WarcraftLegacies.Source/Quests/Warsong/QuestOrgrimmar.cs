@@ -16,6 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
   {
     private readonly List<unit> _rescueUnits;
     private const int RequiredResearchId = Constants.UPGRADE_R05O_FORTIFIED_HULLS_WARSONG;
+    private const int GoldReward = 200;
 
     public QuestOrgrimmar(Rectangle rescueRect) : base("To Tame a Land",
       "This new continent is ripe for the taking. If the Horde is to survive, a new city needs to be built.",
@@ -33,12 +34,12 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     public override string RewardFlavour => "The city of Orgrimmar was finally constructed by the Warsong engineers, it is now a home for the new Horde and a symbol of power and innovation. The Warchief has rewarded us generously for our work!";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Control of all units in Orgrimmar, 1200 gold, able to train Varok and Azerite Siege Engines";
+    protected override string RewardDescription => $"Control of all units in Orgrimmar, {GoldReward} gold, able to train Varok and Azerite Siege Engines";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player?.AddGold(1200);
+      completingFaction.Player?.AddGold(GoldReward);
       foreach (var unit in _rescueUnits) 
         unit.Rescue(completingFaction.Player);
 

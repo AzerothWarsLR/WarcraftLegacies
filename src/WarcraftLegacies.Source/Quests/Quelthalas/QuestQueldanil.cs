@@ -18,7 +18,6 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     private readonly Rectangle _rescueRect;
     private readonly List<unit> _rescueUnits;
     private const int GoldOnFail = 400;
-    private const int LumberOnFail = 750;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestQueldanil"/> class.
@@ -51,7 +50,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
 
     /// <inheritdoc />
     protected override string PenaltyDescription =>
-      $"You lose everything you control, but you gain control of Quel'Danil Lodge in the Hinterlands and you receive {GoldOnFail} gold and {LumberOnFail} lumber";
+      $"You lose everything you control, but you gain control of Quel'Danil Lodge in the Hinterlands and you receive {GoldOnFail} gold";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
@@ -72,7 +71,6 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       completingFaction.Player?.RepositionCamera(_rescueRect.Center.X, _rescueRect.Center.Y);
       CreateSecondChanceUnits(completingFaction);
       completingFaction.Player?.AddGold(GoldOnFail);
-      completingFaction.Player?.AddLumber(LumberOnFail);
       completingFaction.Player?.RescueGroup(_rescueUnits);
     }
     /// <inheritdoc />

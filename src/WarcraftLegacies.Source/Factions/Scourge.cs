@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Factions
       _artifactSetup = artifactSetup;
       UndefeatedResearch = Constants.UPGRADE_R05K_SCOURGE_EXISTS;
       StartingGold = 200;
-      StartingLumber = 700;
+      StartingLumber = 0;
       FoodMaximum = 250;
       CinematicMusic = "ArthasTheme";
       ControlPointDefenderUnitTypeId = Constants.UNIT_U028_CONTROL_POINT_DEFENDER_SCOURGE;
