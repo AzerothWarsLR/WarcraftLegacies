@@ -72,13 +72,13 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Harvest Gold from gold mines"
+      "Value": "Harvests gold from gold mines."
     },
     {
       "Level": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "Returns carried ressources."
+      "Value": "Returns carried gold."
     }
   ]
 }
