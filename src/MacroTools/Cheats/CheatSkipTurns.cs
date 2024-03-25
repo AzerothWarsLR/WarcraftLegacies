@@ -9,10 +9,7 @@ namespace MacroTools.Cheats
     public override string CommandText => "skipturns";
 
     /// <inheritdoc />
-    public override bool Exact => false;
-
-    /// <inheritdoc />
-    public override int MinimumParameterCount => 0;
+    public override ExpectedParameterCount ExpectedParameterCount => new(0);
 
     /// <inheritdoc />
     public override CommandType Type => CommandType.Cheat;

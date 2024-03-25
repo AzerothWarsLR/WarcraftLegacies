@@ -12,10 +12,7 @@ namespace MacroTools.Commands
     public override string CommandText => "share";
 
     /// <inheritdoc />
-    public override bool Exact => false;
-
-    /// <inheritdoc />
-    public override int MinimumParameterCount => 1;
+    public override ExpectedParameterCount ExpectedParameterCount => new(0,1);
 
     /// <inheritdoc />
     public override CommandType Type => CommandType.Normal;
