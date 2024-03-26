@@ -109,7 +109,6 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
       ModObjectLimit(FourCC("R005"), UNLIMITED); //Clergyman Adept Training
       ModObjectLimit(FourCC("R02B"), UNLIMITED); //Steel Plating
       ModObjectLimit(FourCC("Rhan"), UNLIMITED); //Animal War Training
-      ModObjectLimit(FourCC("Rhlh"), UNLIMITED); //Improved Lumber Harvesting
       ModObjectLimit(FourCC("Rhac"), UNLIMITED); //Improved Masonry
       ModObjectLimit(FourCC("Rhse"), UNLIMITED); //Magic Sentry
       ModObjectLimit(UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 1);
