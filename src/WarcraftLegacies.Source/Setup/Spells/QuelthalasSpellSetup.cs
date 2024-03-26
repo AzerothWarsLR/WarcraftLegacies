@@ -71,13 +71,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
         }
       });
 
-
-
-      SpellSystem.Register(new RegrowTrees(ABILITY_A12L_REGROW_TREES_DOMES)
-      {
-        Radius = 1500
-      });
-
       //Todo: create an "Extract Vial" spell for the Sunwell and assign it below
       SpellSystem.Register(new ExtractSunwellVial(ABILITY_A0OC_EXTRACT_VIAL_ALL, ITEM_I018_VIAL_OF_THE_SUNWELL));
     }

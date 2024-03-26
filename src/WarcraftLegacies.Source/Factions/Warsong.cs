@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Factions
 
 You begin in the eaves of Ashenvale, isolated from your ally, the Frostwolf Clan in the South. 
 
-The Warchief expects a large amount of lumber from you. Begin by harvesting with your Peons, and expanding into the Barrens and Durotar.
+The Warchief expects a large amount of gold from you. Begin by harvesting with your Peons, and expanding into the Barrens and Durotar.
 
 The Night Elves are aware of your presence and are gathering a mighty host against you. Unlock Orgrimmar as soon as possible to defend against the Night Elf assault.";
       GoldMines = new List<unit>

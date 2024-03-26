@@ -5,11 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": 1768055157,
-      "Type": 3,
-      "Value": "ACfr,AInv,Ault"
-    },
-    {
       "Id": 1768382837,
       "Value": 18
     },
@@ -56,6 +51,11 @@
     {
       "Id": 1819240309,
       "Value": 100
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "SLS0,AInv,Ault"
     }
   ]
 }

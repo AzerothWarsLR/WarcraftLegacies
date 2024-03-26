@@ -4,21 +4,5 @@
   "Unk": [
     0
   ],
-  "Modifications": [
-    {
-      "Id": 2020631137,
-      "Value": 2
-    },
-    {
-      "Id": 1718840929,
-      "Type": 3,
-      "Value": "(Druids-Mountain Giant)"
-    },
-    {
-      "Level": 1,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "Consume a tree to restore 500 hit points over 15 seconds."
-    }
-  ]
+  "Modifications": []
 }
