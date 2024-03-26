@@ -43,7 +43,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "The Hero empowers nearby allies with the power of the mountain, increasing their armor for 30 seconds.|n|cffffcc00Level 1|r - Increases armor by 5 and attack by 20%|n|cffffcc00Level 2|r - Increases armor by 6 and attack by 40%|n|cffffcc00Level 3|r - Increases armor by 7 and attack by 60%|n|cffffcc00Level 4|r - Increases armor by 8 and attack by 80%"
+      "Value": "The Hero empowers nearby allies with the power of the mountain, increasing their armor for 30 seconds.|n|cffffcc00Level 1|r - Increases armor by 5 and attack by 10%|n|cffffcc00Level 2|r - Increases armor by 6 and attack by 20%|n|cffffcc00Level 3|r - Increases armor by 7 and attack by 30%|n|cffffcc00Level 4|r - Increases armor by 8 and attack by 40%"
     },
     {
       "Level": 1,
