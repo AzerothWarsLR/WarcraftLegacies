@@ -24,7 +24,6 @@ namespace WarcraftLegacies.Source.Factions
       _artifactSetup = artifactSetup;
       UndefeatedResearch = UPGRADE_R060_STORMWIND_EXISTS;
       StartingGold = 200;
-      StartingLumber = 0;
       ControlPointDefenderUnitTypeId = UNIT_H05X_CONTROL_POINT_DEFENDER_STORMWIND;
       IntroText = @"You are playing as the steadfast |c000042FFKingdom of Stormwind|r.
 

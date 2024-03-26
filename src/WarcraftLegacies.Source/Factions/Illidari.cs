@@ -27,7 +27,6 @@ namespace WarcraftLegacies.Source.Factions
       _artifactSetup = artifactSetup;
       UndefeatedResearch = UPGRADE_R02L_ILLIDAN_EXISTS;
       StartingGold = 200;
-      StartingLumber = 0;
       FoodMaximum = 250;
       StartingCameraPosition = Regions.IllidanStartingPosition.Center;
       StartingUnits = Regions.IllidanStartingPosition.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);

@@ -25,7 +25,6 @@ namespace WarcraftLegacies.Source.Factions
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
       StartingGold = 200;
-      StartingLumber = 0;
       CinematicMusic = "BloodElfTheme";
       FoodMaximum = 250;
       StartingCameraPosition = Regions.SunfuryStartingPosition.Center;

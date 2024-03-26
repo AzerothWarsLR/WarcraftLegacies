@@ -25,7 +25,6 @@ namespace WarcraftLegacies.Source.Factions
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
       StartingGold = 200;
-      StartingLumber = 0;
       ControlPointDefenderUnitTypeId = UNIT_H0C1_CONTROL_POINT_DEFENDER_ZANDALAR;
       StartingCameraPosition = Regions.TrollStartPos.Center;
       StartingUnits = Regions.TrollStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);

@@ -24,7 +24,6 @@ namespace MacroTools.Extensions
     private Faction? _faction;
 
     private float _partialGold;
-    private float _partialLumber;
     
     private readonly Queue<IHasPlayableDialogue> _dialogueQueue = new();
     private bool _dialoguePlaying;
@@ -328,24 +327,6 @@ namespace MacroTools.Extensions
       }
     }
 
-    public void AddLumber(float x)
-    {
-      var fullLumber = (float) Math.Floor(x);
-      var remainderLumber = x - fullLumber;
-
-      SetPlayerState(_player, PLAYER_STATE_RESOURCE_LUMBER,
-        GetPlayerState(_player, PLAYER_STATE_RESOURCE_LUMBER) + R2I(fullLumber));
-      _partialLumber += remainderLumber;
-
-      while (true)
-      {
-        if (_partialLumber < 1) break;
-
-        _partialLumber -= 1;
-        SetPlayerState(_player, PLAYER_STATE_RESOURCE_LUMBER, GetPlayerState(_player, PLAYER_STATE_RESOURCE_LUMBER) + 1);
-      }
-    }
-
     public void SetGold(float gold)
     {
       var fullGold = (int)gold / 1;
@@ -355,18 +336,7 @@ namespace MacroTools.Extensions
       _partialGold = remainderGold;
     }
 
-    public void SetLumber(float lumber)
-    {
-      var fullLumber = (int)lumber / 1;
-      SetPlayerState(_player, PLAYER_STATE_RESOURCE_LUMBER, fullLumber);
-      
-      var remainderLumber = lumber % 1;
-      _partialLumber = remainderLumber;
-    }
-
     public float GetGold() => GetPlayerState(_player, PLAYER_STATE_RESOURCE_GOLD) + _partialGold;
-
-    public float GetLumber() => GetPlayerState(_player, PLAYER_STATE_RESOURCE_LUMBER) + _partialLumber;
 
     /// <summary>
     /// Signal that the player has had their alliances changed.

@@ -23,7 +23,6 @@ namespace WarcraftLegacies.Source.Factions
       _allLegendSetup = allLegendSetup;
       _proudmooreCapitalShip = preplacedUnitSystem.GetUnit(UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS);
       StartingGold = 200;
-      StartingLumber = 0;
       ControlPointDefenderUnitTypeId = UNIT_H09W_CONTROL_POINT_DEFENDER_KUL_TIRAS;
       IntroText = @"You are playing as the maritime |cff008000Kingdom of Kul'tiras|r.
 

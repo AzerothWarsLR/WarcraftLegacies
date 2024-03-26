@@ -25,7 +25,6 @@ namespace WarcraftLegacies.Source.Factions
       _allLegendSetup = allLegendSetup;
       UndefeatedResearch = FourCC("R05W");
       StartingGold = 200;
-      StartingLumber = 0;
       CinematicMusic = "DarkAgents";
       ControlPointDefenderUnitTypeId = UNIT_N0D6_CONTROL_POINT_DEFENDER_WARSONG;
       IntroText = @"You are playing as the brutal |cffd45e19Warsong clan|r.

@@ -47,7 +47,7 @@ namespace MacroTools.ResearchSystems
     }
 
     /// <summary>
-    /// Unresearches the research and returns all gold and lumber spent on it.
+    /// Unresearches the research and returns all gold spent on it.
     /// </summary>
     /// <param name="researchingPlayer"></param>
     /// <param name="unresearch">If true, the research will be unresearched for the player as well.</param>
