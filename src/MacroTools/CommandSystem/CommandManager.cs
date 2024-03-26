@@ -93,7 +93,7 @@ namespace MacroTools.CommandSystem
       //is a single parameter.
       if (command.ExpectedParameterCount.Maximum == 1)
       {
-        var commandLength = command.CommandText.Length + Prefix.Length;
+        var commandLength = command.CommandText.Length + Prefix.Length + 1;
         return new string[]
         {
           inputString.Substring(commandLength).Replace("\"", string.Empty)
