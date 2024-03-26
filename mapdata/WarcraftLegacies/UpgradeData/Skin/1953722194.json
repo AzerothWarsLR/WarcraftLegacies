@@ -33,18 +33,6 @@
       "Id": 829453415,
       "Type": 3,
       "Value": "Research Shaman Master Training"
-    },
-    {
-      "Level": 1,
-      "Id": 828536167,
-      "Type": 3,
-      "Value": "Increases Shaman mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Lightning Shield."
-    },
-    {
-      "Level": 2,
-      "Id": 828536167,
-      "Type": 3,
-      "Value": "Increases Shaman mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Bloodlust."
     }
   ]
 }

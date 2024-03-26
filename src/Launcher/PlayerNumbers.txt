@@ -6,7 +6,7 @@
 //  5	Warsong
 //  6	Fel Horde
 //  7	Dalaran/Gilneas
-//  8	Goblin
+//  8	Goblin/Zandalar
 //  9	Lordaeron
 //  10	Empty
 //  11	Druids
@@ -14,10 +14,10 @@
 //  13	Draenei
 //  14	Empty
 //  15	Illidari/Sunfury
-//  16	CrisisCaptain
+//  16	Empty
 //  17  Empty
 //  18	Sentinels
-//  19  CrisisFootman
+//  19  Empty
 //  20  Empty
 //  21  Observer
 //  22  Kultiras

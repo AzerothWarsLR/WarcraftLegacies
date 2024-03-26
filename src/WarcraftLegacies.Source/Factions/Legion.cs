@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Factions
       _allLegendSetup = allLegendSetup;
       UndefeatedResearch = UPGRADE_R04T_LEGION_EXISTS;
       StartingGold = 200;
-      StartingLumber = 700;
+      StartingLumber = 0;
       FoodMaximum = 250;
       CinematicMusic = "DarkAgents";
       ControlPointDefenderUnitTypeId = UNIT_U01U_CONTROL_POINT_DEFENDER_LEGION;

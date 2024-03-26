@@ -67,19 +67,19 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Geomancers\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability cast Summon Mud Golem."
+      "Value": "Increases Geomancers\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability cast Summon Mud Golem."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Geomancers\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability cast Healing Shield."
+      "Value": "Increases Geomancers\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability cast Healing Shield."
     },
     {
       "Level": 3,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Geomancers\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability cast Mage Armor."
+      "Value": "Increases Geomancers\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability cast Mage Armor."
     },
     {
       "Level": 3,

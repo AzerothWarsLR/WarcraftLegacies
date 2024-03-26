@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Factions
       _artifactSetup = artifactSetup;
       UndefeatedResearch = FourCC("R05Y");
       StartingGold = 200;
-      StartingLumber = 700;
+      StartingLumber = 0;
       CinematicMusic = "Comradeship";
       ControlPointDefenderUnitTypeId = UNIT_H03F_CONTROL_POINT_DEFENDER_SENTINELS;
       IntroText = @"You are playing as the ever-watchful 

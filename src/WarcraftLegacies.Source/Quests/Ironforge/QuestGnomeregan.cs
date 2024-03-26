@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       AddObjective(new ObjectiveExpire(480, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      ResearchId = UPGRADE_R05Q_QUEST_COMPLETED_GNOMEREGAN_IRONFORGE;
+      ResearchId = UPGRADE_R05Q_QUEST_COMPLETED_THE_CITY_OF_INVENTION_IRONFORGE;
     }
 
     /// <inheritdoc/>

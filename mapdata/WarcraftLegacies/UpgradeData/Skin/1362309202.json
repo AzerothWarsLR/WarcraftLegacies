@@ -63,13 +63,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Shadowpriests\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Devour Magic."
+      "Value": "Increases Shadowpriests\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Devour Magic."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Shadowpriests\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Spiritual Guidance."
+      "Value": "Increases Shadowpriests\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Spiritual Guidance."
     }
   ]
 }

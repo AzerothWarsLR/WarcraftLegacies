@@ -71,7 +71,6 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(UNIT_E005_THE_PROPHET, 1);
       ModObjectLimit(UNIT_U00Z_OBSIDIAN_DESTROYER, 1);
 
-      ModObjectLimit(FourCC("R00K"), UNLIMITED); //Power Infusion
     }
   }
 }

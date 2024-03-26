@@ -55,7 +55,7 @@
     },
     {
       "Id": 1932616053,
-      "Value": 5
+      "Value": 3
     },
     {
       "Id": 1937141109,
@@ -64,7 +64,7 @@
     {
       "Id": 1919381621,
       "Type": 3,
-      "Value": "R01Q,R01N,R00K,Rhpm,R02E,Rguv"
+      "Value": "R01Q,R01N,R02E,Rhme,Rhar,Rguv"
     }
   ]
 }

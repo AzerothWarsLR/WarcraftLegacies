@@ -33,8 +33,6 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     protected override void OnComplete(Faction whichFaction)
     {
       if (whichFaction.Player != null)
-        whichFaction.Player.AddLumber(200);
-      if (whichFaction.Player != null)
         whichFaction.Player.RescueGroup(_rescueUnits);
       else
         Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
@@ -45,6 +43,6 @@ namespace WarcraftLegacies.Source.Quests.Draenei
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Gain 200 Lumber, an Outpost in Desolace and Maraad is now trainable at the altar.";
+      "Gain an Outpost in Desolace and Maraad is now trainable at the altar.";
   }
 }

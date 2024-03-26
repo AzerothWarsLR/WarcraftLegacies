@@ -25,7 +25,6 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     private readonly AllLegendSetup _allLegendSetup;
     private readonly ArtifactSetup _artifactSetup;
     private const int StartingGold = 300;
-    private const int StartingLumber = 500;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestScarletCrusade"/> class.
@@ -140,7 +139,6 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
         4.712389f * MathEx.DegToRad, 256);
 
       whichPlayer.AddGold(StartingGold);
-      whichPlayer.AddLumber(StartingLumber);
       whichPlayer.RepositionCamera(20629, 10112);
     }
   }

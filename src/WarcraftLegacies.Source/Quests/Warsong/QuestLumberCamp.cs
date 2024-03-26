@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "Control of all units in the Warsong Lumber Camp and 1500 lumber";
+      "Control of all units in the Warsong Lumber Camp";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
@@ -54,7 +54,6 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       foreach (var unit in _rescueUnits) 
         unit.Rescue(completingFaction.Player);
       
-      completingFaction.Player?.AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, 1500);
     }
   }
 }

@@ -79,19 +79,19 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Engineers\u0027 mana capacity, mana regeneration rate, and attack damage and gives them the ability to cast EMP."
+      "Value": "Increases Engineers\u0027 mana capacity, mana regeneration rate, and hit points and gives them the ability to cast EMP."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Engineers\u0027 mana capacity, mana regeneration rate, and attack damage and gives them the ability to cast Portable Turret."
+      "Value": "Increases Engineers\u0027 mana capacity, mana regeneration rate, and hit points and gives them the ability to cast Portable Turret."
     },
     {
       "Level": 3,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Engineers\u0027 mana capacity, mana regeneration rate, and attack damage and gives them the ability to cast Stun Mine."
+      "Value": "Increases Engineers\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Stun Mine."
     },
     {
       "Level": 3,

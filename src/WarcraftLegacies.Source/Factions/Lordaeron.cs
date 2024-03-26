@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Factions
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
       StartingGold = 200;
-      StartingLumber = 700;
+      StartingLumber = 0;
       UndefeatedResearch = UPGRADE_R05M_LORDAERON_EXISTS;
       CinematicMusic = "Comradeship";
       ControlPointDefenderUnitTypeId = UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON;

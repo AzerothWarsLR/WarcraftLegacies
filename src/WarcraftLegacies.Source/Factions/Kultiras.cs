@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Factions
       _allLegendSetup = allLegendSetup;
       _proudmooreCapitalShip = preplacedUnitSystem.GetUnit(UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS);
       StartingGold = 200;
-      StartingLumber = 700;
+      StartingLumber = 0;
       ControlPointDefenderUnitTypeId = UNIT_H09W_CONTROL_POINT_DEFENDER_KUL_TIRAS;
       IntroText = @"You are playing as the maritime |cff008000Kingdom of Kul'tiras|r.
 
@@ -107,7 +107,6 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       ModObjectLimit(FourCC("R01T"), UNLIMITED); //Cluster Rockets
       ModObjectLimit(FourCC("R01U"), UNLIMITED); //Improved Barrage
       ModObjectLimit(FourCC("R05G"), UNLIMITED); //Thornspeaker Training
-      ModObjectLimit(FourCC("Rhlh"), UNLIMITED); //Improved Lumber Harvesting
       ModObjectLimit(FourCC("Rhac"), UNLIMITED); //Improved Masonry
       ModObjectLimit(FourCC("R08B"), UNLIMITED); //Long Rifles
       ModObjectLimit(FourCC("R05J"), UNLIMITED); //Expedition

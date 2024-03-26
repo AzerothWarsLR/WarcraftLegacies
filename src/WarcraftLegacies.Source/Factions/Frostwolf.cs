@@ -5,7 +5,6 @@ using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ResearchSystems;
-using WarcraftLegacies.Source.FactionMechanics.Frostwolf;
 using WarcraftLegacies.Source.Quests.Frostwolf;
 using WarcraftLegacies.Source.Quests.Warsong;
 using WarcraftLegacies.Source.Researches;
@@ -32,7 +31,7 @@ namespace WarcraftLegacies.Source.Factions
       _artifactSetup = artifactSetup;
       UndefeatedResearch = UPGRADE_R05V_FROSTWOLF_EXISTS;
       StartingGold = 200;
-      StartingLumber = 700;
+      StartingLumber = 0;
       CinematicMusic = "SadMystery";
       ControlPointDefenderUnitTypeId = UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF;
       IntroText = @"You are playing as the honorable |cffff0000Frostwolf Clan|r.
@@ -62,7 +61,6 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
       RegisterObjectLimits();
       RegisterQuests();
       RegisterDialogue();
-      PeonsStartHarvestingShips.Setup(_preplacedUnitSystem);
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 

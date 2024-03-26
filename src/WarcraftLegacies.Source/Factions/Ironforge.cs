@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Factions
       _allLegendSetup = allLegendSetup;
       UndefeatedResearch = FourCC("R05T");
       StartingGold = 200;
-      StartingLumber = 700;
+      StartingLumber = 0;
       CinematicMusic = "PursuitTheme";
       ControlPointDefenderUnitTypeId = UNIT_H0AL_CONTROL_POINT_DEFENDER_IRONFORGE;
       IntroText = @"You are playing as the long-enduring |cffe4bc00Kingdom of 
@@ -112,7 +112,6 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       ModObjectLimit(FourCC("R00F"), UNLIMITED); //Mithril Armor
       ModObjectLimit(FourCC("Rhfl"), UNLIMITED); //Flare
       ModObjectLimit(FourCC("Rhfs"), UNLIMITED); //Dragmentation Shards
-      ModObjectLimit(FourCC("Rhlh"), UNLIMITED); //Improved Lumber Harvesting
       ModObjectLimit(FourCC("Rhac"), UNLIMITED); //Improved Masonry
       ModObjectLimit(FourCC("Rhri"), UNLIMITED); //Long Rifles
       ModObjectLimit(FourCC("Rhhb"), UNLIMITED); //Storm Hammers
