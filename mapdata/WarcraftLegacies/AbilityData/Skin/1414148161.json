@@ -23,7 +23,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Drop the Anchor, enabling the ship to be opened|n|n|cffff0000Warning|r Has a 1 min cooldown before you can lift the Anchor again"
+      "Value": "Drop the Anchor, enabling the ship to be opened|n|n|cffff0000Warning|r Has a 10 seconds cooldown before you can lift the Anchor again"
     },
     {
       "Id": 2019718497,
@@ -38,7 +38,7 @@
       "Level": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "Lift the Anchor, enabling the ship to move again|n|n|cffff0000Warning|r Has a 1 min cooldown before you can drop the Anchor again"
+      "Value": "Lift the Anchor, enabling the ship to move again|n|n|cffff0000Warning|r Has a 10 seconds cooldown before you can drop the Anchor again"
     },
     {
       "Id": 1835101793,
