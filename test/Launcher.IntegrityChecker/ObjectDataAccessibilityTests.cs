@@ -42,7 +42,7 @@ namespace Launcher.IntegrityChecker
         objectDatabase.GetUpgrades().ToList());
       
       var preplacedUnitIds = map.Units!.Units.Select(x => x.TypeId).ToHashSet();
-      var preplacedUnitTypes = objectDatabase.GetUnits().Where(x => preplacedUnitIds.Contains(x.NewId));
+      var preplacedUnitTypes = objectDatabase.GetUnits().Where(x => preplacedUnitIds.Contains(x.NewId)).ToList();
 
       foreach (var preplacedUnit in preplacedUnitTypes)
         inaccessibleObjects.RemoveWithChildren(preplacedUnit);
