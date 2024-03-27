@@ -14,7 +14,7 @@ namespace MacroTools.Cheats
     public override string CommandText => "spawn";
 
     /// <inheritdoc />
-    public override ExpectedParameterCount ExpectedParameterCount => new(1);
+    public override ExpectedParameterCount ExpectedParameterCount => new(1, 2);
     
     /// <inheritdoc />
     public override CommandType Type => CommandType.Cheat;
