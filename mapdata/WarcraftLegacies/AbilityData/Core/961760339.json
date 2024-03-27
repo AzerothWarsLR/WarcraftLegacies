@@ -39,10 +39,6 @@
       "Value": 50
     },
     {
-      "Id": 1986358369,
-      "Value": 1
-    },
-    {
       "Id": 1667330657,
       "Type": 3,
       "Value": "human"
@@ -58,6 +54,88 @@
       "Id": 1718968929,
       "Type": 3,
       "Value": "BFig"
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845574991,
+      "Value": 6
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845574991,
+      "Value": 6
+    },
+    {
+      "Level": 2,
+      "Id": 828797775,
+      "Type": 3,
+      "Value": "efon"
+    },
+    {
+      "Level": 3,
+      "Id": 828797775,
+      "Type": 3,
+      "Value": "efon"
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 3,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 3,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 0
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 0
     }
   ]
 }
