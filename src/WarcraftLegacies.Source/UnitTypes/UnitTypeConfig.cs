@@ -207,6 +207,21 @@ namespace WarcraftLegacies.Source.UnitTypes
       {
         NeverDelete = true
       });
+      
+      UnitType.Register(new UnitType(UNIT_H04R_DIAGONAL_WOODEN_GATE_OPEN)
+      {
+        NeverDelete = true
+      });
+      
+      UnitType.Register(new UnitType(UNIT_H04T_DIAGONAL_WOODEN_GATE_DEAD)
+      {
+        NeverDelete = true
+      });
+      
+      UnitType.Register(new UnitType(UNIT_H04S_DIAGONAL_WOODEN_GATE_CLOSED)
+      {
+        NeverDelete = true
+      });
     }
   }
 }

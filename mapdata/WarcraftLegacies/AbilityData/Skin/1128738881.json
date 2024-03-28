@@ -28,14 +28,22 @@
       "Value": "Restores 20 mana to 6 nearby friendly units."
     },
     {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 2019718497,
+      "Value": 0
+    },
+    {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "X"
+      "Value": "Z"
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "X"
+      "Value": "Z"
     }
   ]
 }
