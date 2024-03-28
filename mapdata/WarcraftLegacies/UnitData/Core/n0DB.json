@@ -124,6 +124,10 @@
       "Id": 1882284405,
       "Type": 3,
       "Value": "air,debris,ground,item,nonancient,structure,ward"
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
     }
   ]
 }

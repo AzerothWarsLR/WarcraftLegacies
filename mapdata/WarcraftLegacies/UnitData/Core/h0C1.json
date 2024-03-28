@@ -87,6 +87,10 @@
       "Id": 1731289461,
       "Type": 3,
       "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
     }
   ]
 }
