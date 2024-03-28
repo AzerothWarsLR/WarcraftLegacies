@@ -73,7 +73,7 @@
     {
       "Id": 1768648053,
       "Type": 3,
-      "Value": "I00B,sreg,phea,pman,stwp,I00L,hslv,oven,evtl,pams"
+      "Value": "I00B,sreg,phea,pman,stwp,hslv,oven,evtl,pams"
     }
   ]
 }
