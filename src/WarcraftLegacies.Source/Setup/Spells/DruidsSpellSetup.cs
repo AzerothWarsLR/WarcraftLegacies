@@ -10,10 +10,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
     public static void Setup()
     {
       
-      SpellSystem.Register(new RegrowTrees(ABILITY_A04C_SEED_GROWTH)
-      {
-        Radius = 1200
-      });
 
       SpellSystem.Register(new Devour(ABILITY_A0NP_DEVOUR_TORTOLLA)
       {
