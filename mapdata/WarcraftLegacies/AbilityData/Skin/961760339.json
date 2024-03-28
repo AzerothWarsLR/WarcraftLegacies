@@ -88,6 +88,18 @@
       "Id": 1768841569,
       "Type": 3,
       "Value": "attack"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Treants - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons \u003CSLS9,DataB4\u003E Treants for \u003CSLS9,Dur4\u003E seconds."
     }
   ]
 }
