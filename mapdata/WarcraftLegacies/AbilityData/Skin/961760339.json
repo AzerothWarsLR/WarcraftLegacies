@@ -83,6 +83,11 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons \u003CSLS9,DataB3\u003E Treants for \u003CSLS9,Dur3\u003E seconds."
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "attack"
     }
   ]
 }
