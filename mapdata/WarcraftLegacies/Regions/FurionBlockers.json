@@ -1,0 +1,15 @@
+{
+  "Left": -13344,
+  "Bottom": 10048,
+  "Right": -12768,
+  "Top": 10848,
+  "Name": "FurionBlockers",
+  "CreationNumber": 101,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

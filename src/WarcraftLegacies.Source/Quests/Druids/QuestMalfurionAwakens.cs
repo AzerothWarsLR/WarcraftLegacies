@@ -8,6 +8,7 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.Rocks;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Druids
@@ -75,6 +76,8 @@ namespace WarcraftLegacies.Source.Quests.Druids
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
+      RockSystem.Register(new RockGroup(Regions.FurionBlockers, FourCC("B008"), 1));
+
       completingFaction.Player.RescueGroup(_moongladeUnits);
       completingFaction.Player.RescueGroup(_darnassusUnits);
       completingFaction.Player.RescueGroup(_cenarionHoldUnits);
