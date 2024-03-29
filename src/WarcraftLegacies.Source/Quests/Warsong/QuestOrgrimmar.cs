@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
@@ -15,11 +16,14 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     private readonly List<unit> _rescueUnits;
     private const int GoldReward = 1000;
     private const int RequiredResearchId = UPGRADE_R05O_FORTIFIED_HULLS_WARSONG;
+    private readonly LegendaryHero _grom;
+    private const int ExperienceReward = 1500;
 
-    public QuestOrgrimmar(Rectangle rescueRect) : base("To Tame a Land",
+    public QuestOrgrimmar(Rectangle rescueRect, LegendaryHero grom) : base("To Tame a Land",
       "This new continent is ripe for the taking. If the Horde is to survive, a new city needs to be built.",
       @"ReplaceableTextures\CommandButtons\BTNFortress.blp")
     {
+      _grom = grom;
       AddObjective(new ObjectiveResearch(RequiredResearchId, UNIT_O02S_FORTRESS_WARSONG_T3));
       AddObjective(new ObjectiveExpire(800, Title));
       AddObjective(new ObjectiveSelfExists());
@@ -32,12 +36,13 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     public override string RewardFlavour => "The city of Orgrimmar was finally constructed by the Warsong engineers, it is now a home for the new Horde and a symbol of power and innovation. The Warchief has rewarded us generously for our work!";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => $"Control of all units in Orgrimmar, {GoldReward} gold, able to train Varok and Azerite Siege Engines";
+    protected override string RewardDescription => $"Control of all units in Orgrimmar, {GoldReward} gold, Grom Hellscream gains {ExperienceReward} experience, able to train Varok and Azerite Siege Engines";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.Player?.AddGold(GoldReward);
+      _grom.Unit?.AddExperience(ExperienceReward);
       foreach (var unit in _rescueUnits) 
         unit.Rescue(completingFaction.Player);
 

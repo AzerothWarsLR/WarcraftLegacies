@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
   public sealed class QuestWarsongKillDruids : QuestData
   {
     private readonly LegendaryHero _grom;
-    private const int ExperienceReward = 8000;
+    private const int ExperienceReward = 7000;
 
     /// <inheritdoc/>
     public override string RewardFlavour => "Nordrassil has been captured. The Warsong is supreme!";
