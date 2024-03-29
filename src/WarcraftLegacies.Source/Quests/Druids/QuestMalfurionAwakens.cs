@@ -8,7 +8,6 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Rocks;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Druids
@@ -51,9 +50,6 @@ namespace WarcraftLegacies.Source.Quests.Druids
       _darnassusUnits = darnassus.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _cenarionHoldUnits = cenarionHold.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       worldTree.SetInvulnerable(true);
-
-      RockSystem.Register(new RockGroup(Regions.FurionBlockers, FourCC("B008"), 480));
-
     }
 
     /// <inheritdoc />
@@ -73,17 +69,18 @@ namespace WarcraftLegacies.Source.Quests.Druids
       rescuer.RescueGroup(_moongladeUnits);
       rescuer.RescueGroup(_darnassusUnits);
       rescuer.RescueGroup(_cenarionHoldUnits);
+      
+      RemoveFurionBlockers();
     }
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      RockSystem.Register(new RockGroup(Regions.FurionBlockers, FourCC("B008"), 1));
-
       completingFaction.Player.RescueGroup(_moongladeUnits);
       completingFaction.Player.RescueGroup(_darnassusUnits);
       completingFaction.Player.RescueGroup(_cenarionHoldUnits);
       _worldTree.Rescue(completingFaction.Player);
+      RemoveFurionBlockers();
       if (_malfurion.Unit == null)
       {
         _malfurion.ForceCreate(completingFaction.Player, Regions.Moonglade.Center,
@@ -97,5 +94,8 @@ namespace WarcraftLegacies.Source.Quests.Druids
         _hornofCenarius.Item.SetPositionSafe(GetTriggerUnit().GetPosition());
       }
     }
+
+    private static void RemoveFurionBlockers() => EnumDestructablesInRect(Regions.FurionBlockers.Rect, null,
+      () => KillDestructable(GetEnumDestructable()));
   }
 }
