@@ -50,7 +50,6 @@ namespace WarcraftLegacies.Source.Quests.Druids
       _darnassusUnits = darnassus.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _cenarionHoldUnits = cenarionHold.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       worldTree.SetInvulnerable(true);
-      
     }
 
     /// <inheritdoc />
@@ -70,6 +69,8 @@ namespace WarcraftLegacies.Source.Quests.Druids
       rescuer.RescueGroup(_moongladeUnits);
       rescuer.RescueGroup(_darnassusUnits);
       rescuer.RescueGroup(_cenarionHoldUnits);
+      
+      RemoveFurionBlockers();
     }
 
     /// <inheritdoc />
@@ -79,6 +80,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
       completingFaction.Player.RescueGroup(_darnassusUnits);
       completingFaction.Player.RescueGroup(_cenarionHoldUnits);
       _worldTree.Rescue(completingFaction.Player);
+      RemoveFurionBlockers();
       if (_malfurion.Unit == null)
       {
         _malfurion.ForceCreate(completingFaction.Player, Regions.Moonglade.Center,
@@ -92,5 +94,8 @@ namespace WarcraftLegacies.Source.Quests.Druids
         _hornofCenarius.Item.SetPositionSafe(GetTriggerUnit().GetPosition());
       }
     }
+
+    private static void RemoveFurionBlockers() => EnumDestructablesInRect(Regions.FurionBlockers.Rect, null,
+      () => KillDestructable(GetEnumDestructable()));
   }
 }
