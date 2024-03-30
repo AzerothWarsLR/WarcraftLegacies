@@ -40,7 +40,6 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player?.AddGold(GoldReward);
       _grom.Unit?.AddExperience(ExperienceReward);
       _grom.StartingXp = ExperienceReward;
       foreach (var unit in _rescueUnits) 
