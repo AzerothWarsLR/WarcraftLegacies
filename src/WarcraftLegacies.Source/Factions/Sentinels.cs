@@ -39,7 +39,7 @@ Your first mission is to race down the coast to Feathermoon Stronghold, a powerf
 Once you have secured your holdings, gather your army and destroy the Orcish Horde. Be careful, they will outnumber you if given time to unite the clans.";
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-22721, -13570))
+        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-21000, 8600))
       };
       Nicknames = new List<string>
       {

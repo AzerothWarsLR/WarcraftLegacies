@@ -1,0 +1,64 @@
+{
+  "OldId": 1853188207,
+  "NewId": 858813292,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroFarseer.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(emerald Nightmare)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\KeeperOfNightmares10.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Far Seer"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Far Seer"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Old and wise shaman.|n|cfff5962dAbilities:|R Healing Wave, Chain Lightning, Hex, Far Sight, Resistant Skin, Spell Resistance|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroFarseer"
+    }
+  ]
+}

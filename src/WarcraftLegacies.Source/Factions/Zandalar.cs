@@ -26,8 +26,6 @@ namespace WarcraftLegacies.Source.Factions
       _artifactSetup = artifactSetup;
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_H0C1_CONTROL_POINT_DEFENDER_ZANDALAR;
-      StartingCameraPosition = Regions.TrollStartPos.Center;
-      StartingUnits = Regions.TrollStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       LearningDifficulty = FactionLearningDifficulty.Basic;
       IntroText = @"You are playing as the mighty |cffe1946cZandalari Empire|r.
 

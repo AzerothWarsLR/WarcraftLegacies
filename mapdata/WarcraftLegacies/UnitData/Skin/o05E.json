@@ -23,12 +23,12 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNFacelessSorcerer.blp"
+      "Value": "ReplaceableTextures/CommandButtons/BTNStormElementalIcon.blp"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\LightningElemental.mdl"
+      "Value": "war3mapImported\\StormElemental.mdl"
     },
     {
       "Id": 1885959285,

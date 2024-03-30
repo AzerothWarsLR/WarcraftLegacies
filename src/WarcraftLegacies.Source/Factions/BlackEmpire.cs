@@ -1,22 +1,14 @@
-﻿using MacroTools;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Factions
 {
   public class BlackEmpire : Faction
   {
-    private readonly PreplacedUnitSystem _preplacedUnitSystem;
-    private readonly AllLegendSetup _allLegendSetup;
-    private readonly ArtifactSetup _artifactSetup;
-
     /// <inheritdoc />
-    public BlackEmpire(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("BlackEmpire", PLAYER_COLOR_TURQUOISE, "|C0000FFFF",
+    public BlackEmpire() : base("BlackEmpire", PLAYER_COLOR_TURQUOISE, "|C0000FFFF",
       @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
     {
-      _preplacedUnitSystem = preplacedUnitSystem;
-      _allLegendSetup = allLegendSetup;
-      _artifactSetup = artifactSetup;
       ControlPointDefenderUnitTypeId = UNIT_N0DV_CONTROL_POINT_DEFENDER_BLACK_EMPIRE_TOWER;
     }
     
@@ -72,13 +64,12 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(FourCC("h0AQ"), UNLIMITED); //Boarding
       ModObjectLimit(FourCC("h0BB"), UNLIMITED); //Juggernaut
       ModObjectLimit(FourCC("h0B9"), 6); //Bombard
-
-
+      
       // All Nzoth Heroes listed below - with total limits
 
-      ModObjectLimit(UNIT_U02A_N_RAQI_ABERRATION_YOGG, 1);
-      ModObjectLimit(UNIT_U02B_YOGG_SARON_CHAMPION, 1);
-      ModObjectLimit(UNIT_E01D_N_RAQI_ARCANIST_YOGG, 1);
+      ModObjectLimit(UNIT_U00P_LIEUTENANT_OF_N_ZOTH, 1);
+      ModObjectLimit(UNIT_U02B_N_RAQI_ABERRATION, 1);
+      ModObjectLimit(UNIT_E01D_MOUTH_OF_N_ZOTH_YOGG, 1);
 
     }
   }

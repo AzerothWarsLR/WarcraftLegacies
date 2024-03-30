@@ -1,26 +1,16 @@
-﻿using MacroTools;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Factions
 {
   public class Ahnqiraj : Faction
   {
-    private readonly PreplacedUnitSystem _preplacedUnitSystem;
-    private readonly AllLegendSetup _allLegendSetup;
-    private readonly ArtifactSetup _artifactSetup;
-
     /// <inheritdoc />
-    public Ahnqiraj(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cffaaa050",
-      @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
+    public Ahnqiraj() : base("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cffaaa050", @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
     {
-      _preplacedUnitSystem = preplacedUnitSystem;
-      _allLegendSetup = allLegendSetup;
-      _artifactSetup = artifactSetup;
-      ControlPointDefenderUnitTypeId = UNIT_N0DW_CONTROL_POINT_DEFENDER_CTHUN_TOWER;
+      ControlPointDefenderUnitTypeId = Constants.UNIT_N0DW_CONTROL_POINT_DEFENDER_CTHUN_TOWER;
     }
     
-        
     /// <inheritdoc />
     public override void OnRegistered()
     {
@@ -43,11 +33,11 @@ namespace WarcraftLegacies.Source.Factions
 
 
       ModObjectLimit(UNIT_U019_DRONE_C_THUN_WORKER, UNLIMITED);
-      ModObjectLimit(UNIT_O000_SILITHID_COLOSSUS_C_THUN_ELITES, 6);
+      ModObjectLimit(UNIT_O000_SILITHID_ROYALTY_C_THUN_ELITES, 6);
 
       ModObjectLimit(UNIT_N06I_SILITHID_WARRIOR_C_THUN_SILITHID_WARRIOR, UNLIMITED);
       ModObjectLimit(UNIT_O00L_SILITHID_REAVER_C_THUN_SILITHID_REAVER, UNLIMITED);
-      ModObjectLimit(UNIT_U013_GIANT_SCARAB_C_THUN_GIANT_SCARAB, UNLIMITED);
+      ModObjectLimit(UNIT_U013_SILITHID_COLOSSUS_C_THUN_GIANT_SCARAB, UNLIMITED);
 
       ModObjectLimit(UNIT_N060_SILITHID_TUNNELER_C_THUN_SILITHID_TUNNELER, UNLIMITED);
       ModObjectLimit(UNIT_N05V_SHADOW_WEAVER_C_THUN_FACELESS_SHADOW_WEAVER, UNLIMITED);

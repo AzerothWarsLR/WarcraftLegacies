@@ -1,0 +1,33 @@
+{
+  "OldId": 1836346728,
+  "NewId": 896034675,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(tolvir)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Long-range siege weaponry. Exceptional damage versus buildings, but slow and vulnerable.|n|cfff5962dAbilities:|R  Spell Resistance |n|cfff5962dCan Learn:|R Flare, Fragmentation Shards|n|n|cff99b4d1Can only train 9.|r|n|cffffcc00Attacks land units and trees. |r"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Crossbow.mdl"
+    }
+  ]
+}

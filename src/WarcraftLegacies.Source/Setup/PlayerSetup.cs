@@ -38,6 +38,7 @@ namespace WarcraftLegacies.Source.Setup
       SetupPlayer(Player(22), new Kultiras(_preplacedUnitSystem, _allLegendSetup));
       SetupPlayer(Player(23), new Legion(_preplacedUnitSystem, _allLegendSetup));
     }
+    
 
     private static void SetupPlayer(player player, Faction faction)
     {

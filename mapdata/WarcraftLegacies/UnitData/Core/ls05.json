@@ -1,0 +1,80 @@
+{
+  "OldId": 1886615397,
+  "NewId": 892367724,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1684824693,
+      "Value": 2
+    },
+    {
+      "Id": 1768186485,
+      "Value": 0
+    },
+    {
+      "Id": 1633837685,
+      "Value": 0
+    },
+    {
+      "Id": 1769169525,
+      "Value": 0
+    },
+    {
+      "Id": 1769300597,
+      "Type": 3,
+      "Value": "e011,edos,e00R,e010,e00L,e00T,eden,n06M,eaom,e00V,h03M,n06J,etol,emow,eshy,eate,eaow,eaoe,edob,etrp,e019"
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1819240309,
+      "Value": 10
+    },
+    {
+      "Id": 1919903605,
+      "Value": 6
+    },
+    {
+      "Id": 1953654901,
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 2
+    },
+    {
+      "Id": 1937141109,
+      "Value": 150
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "sapper,peon"
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rguv,Reuv"
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "A0O4,Adtn,Aren,Awha,Ault"
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": 1986358389,
+      "Value": 0
+    }
+  ]
+}
