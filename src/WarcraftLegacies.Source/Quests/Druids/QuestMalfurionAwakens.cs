@@ -22,7 +22,6 @@ namespace WarcraftLegacies.Source.Quests.Druids
     private readonly LegendaryHero _malfurion;
     private readonly List<unit> _moongladeUnits;
     private readonly List<unit> _darnassusUnits;
-    private readonly List<unit> _cenarionHoldUnits;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestMalfurionAwakens"/> class.
@@ -67,7 +66,6 @@ namespace WarcraftLegacies.Source.Quests.Druids
 
       rescuer.RescueGroup(_moongladeUnits);
       rescuer.RescueGroup(_darnassusUnits);
-      rescuer.RescueGroup(_cenarionHoldUnits);
       
       RemoveFurionBlockers();
     }
@@ -77,7 +75,6 @@ namespace WarcraftLegacies.Source.Quests.Druids
     {
       completingFaction.Player.RescueGroup(_moongladeUnits);
       completingFaction.Player.RescueGroup(_darnassusUnits);
-      completingFaction.Player.RescueGroup(_cenarionHoldUnits);
       _worldTree.Rescue(completingFaction.Player);
       RemoveFurionBlockers();
       if (_malfurion.Unit == null)
