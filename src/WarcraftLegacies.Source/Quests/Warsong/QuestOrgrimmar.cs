@@ -43,6 +43,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     {
       completingFaction.Player?.AddGold(GoldReward);
       _grom.Unit?.AddExperience(ExperienceReward);
+      _grom.StartingXp = ExperienceReward;
       foreach (var unit in _rescueUnits) 
         unit.Rescue(completingFaction.Player);
 
