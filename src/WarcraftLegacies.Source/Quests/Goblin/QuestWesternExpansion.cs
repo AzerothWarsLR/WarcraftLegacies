@@ -2,7 +2,6 @@
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Goblin
 {
@@ -15,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Learn to train {GetObjectName(Constants.UNIT_H091_WAR_ZEPPELIN_GOBLIN)}s from the {GetObjectName(Constants.UNIT_O01M_ENGINEER_S_GUILD_GOBLIN_SPECIALIST)}";
+      $"Learn to train {GetObjectName(UNIT_H091_WAR_ZEPPELIN_GOBLIN)}s from the {GetObjectName(UNIT_O01M_ENGINEER_S_GUILD_GOBLIN_SPECIALIST)}";
 
     /// <summary>
     /// Initializesa  new instance of the <see cref="QuestWesternExpansion"/> class.
@@ -26,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
     {
       foreach (var capital in capitalTargets)
         AddObjective(new ObjectiveCapitalDead(capital));
-      ResearchId = Constants.UPGRADE_R07Y_QUEST_COMPLETED_WESTERN_EXPANSION;
+      ResearchId = UPGRADE_R07Y_QUEST_COMPLETED_WESTERN_EXPANSION;
       
     }
   }

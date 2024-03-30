@@ -15,15 +15,12 @@ namespace WarcraftLegacies.Source.Setup
       commandManager.Register(new Cam());
       commandManager.Register(new Captions());
       commandManager.Register(new QuestText());
-      commandManager.Register(new MacroTools.Commands.Dialogue());
+      commandManager.Register(new Dialogue());
       commandManager.Register(new Settings());
       commandManager.Register(new Share());
       commandManager.Register(new GiveGold("givegold"));
       commandManager.Register(new GiveGold("gold"));
       commandManager.Register(new GiveGold("g"));
-      commandManager.Register(new GiveLumber("givelumber"));
-      commandManager.Register(new GiveLumber("lumber"));
-      commandManager.Register(new GiveLumber("l"));
       commandManager.Register(new ListArtifacts());
       commandManager.Register(new Artifact());
       commandManager.Register(new MacroTools.Commands.Powers());

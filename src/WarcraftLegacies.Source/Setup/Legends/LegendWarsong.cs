@@ -1,6 +1,5 @@
 ﻿using MacroTools;
 using MacroTools.LegendSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
@@ -19,28 +18,28 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       GromHellscream = new LegendaryHero("Grom Hellscream")
       {
-        UnitType = Constants.UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG,
+        UnitType = UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG,
         StartingArtifacts = new()
         {
-          new(CreateItem(Constants.ITEM_I01V_GOREHOWL, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+          new(CreateItem(ITEM_I01V_GOREHOWL, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
         }
       };
       
       ChenStormstout = new LegendaryHero("Chen Stormstout")
       {
-        UnitType = Constants.UNIT_NSJS_BREWMASTER_WARSONG,
+        UnitType = UNIT_NSJS_BREWMASTER_WARSONG,
         StartingXp = 1000
       };
 
       Saurfang = new LegendaryHero("Varok Saurfang")
       {
-        UnitType = Constants.UNIT_OBLA_HIGH_OVERLORD_OF_THE_KOR_KRON_VASSAL,
+        UnitType = UNIT_OBLA_HIGH_OVERLORD_OF_THE_KOR_KRON_VASSAL,
         StartingXp = 2800
       };
 
       Mannoroth = new LegendaryHero("Mannoroth")
       {
-        UnitType = Constants.UNIT_NMAN_THE_DESTROYER_WARSONG_BLOODPACT,
+        UnitType = UNIT_NMAN_THE_DESTROYER_WARSONG_BLOODPACT,
         PermaDies = true,
         DeathMessage =
           "Mannoroth the Corrupter has fallen.",
@@ -49,20 +48,20 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Garrosh = new LegendaryHero("Garrosh Hellscream")
       {
-        UnitType = Constants.UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG,
+        UnitType = UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG,
         StartingXp = 8800
       };
 
       StonemaulKeep = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O004_STONEMAUL_KEEP),
+        Unit = preplacedUnitSystem.GetUnit(UNIT_O004_STONEMAUL_KEEP),
         DeathMessage = "The fortress of the Stonemaul Clan has fallen.",
         Essential = true
       };
 
       Orgrimmar = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O01B_ORGRIMMAR_WARSONG),
+        Unit = preplacedUnitSystem.GetUnit(UNIT_O01B_ORGRIMMAR_WARSONG),
         DeathMessage = "Orgrimmar has been demolished and with it die the hopes and dreams of a wartorn race seeking refuge in a new world.",
         Essential = true
       };

@@ -23,12 +23,12 @@
     },
     {
       "Id": 1920298101,
-      "Value": 20
+      "Value": 0
     },
     {
       "Id": 1768648053,
       "Type": 3,
-      "Value": "I00O,sreg,phea,pman,stwp,I00L,hslv,olig,ciri,spsh"
+      "Value": "I00O,sreg,phea,pman,stwp,hslv,olig,ciri,spsh"
     },
     {
       "Id": 1952542837,
@@ -46,7 +46,7 @@
     },
     {
       "Id": 1836412021,
-      "Value": 15
+      "Value": 0
     },
     {
       "Id": 1768055157,

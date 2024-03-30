@@ -3,7 +3,6 @@ using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
-using static War3Api.Common;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using System.Collections.Generic;
@@ -26,14 +25,12 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.DraeneiQuestKill }, "in Desolace"));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      ResearchId = Constants.UPGRADE_R082_QUEST_COMPLETED_THE_WAY_FORWARD;
+      ResearchId = UPGRADE_R082_QUEST_COMPLETED_THE_WAY_FORWARD;
     }
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-      if (whichFaction.Player != null)
-        whichFaction.Player.AddLumber(200);
       if (whichFaction.Player != null)
         whichFaction.Player.RescueGroup(_rescueUnits);
       else
@@ -45,6 +42,6 @@ namespace WarcraftLegacies.Source.Quests.Draenei
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Gain 200 Lumber, an Outpost in Desolace and Maraad is now trainable at the altar.";
+      "Gain an Outpost in Desolace and Maraad is now trainable at the altar.";
   }
 }

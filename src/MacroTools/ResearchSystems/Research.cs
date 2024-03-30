@@ -21,11 +21,6 @@ namespace MacroTools.ResearchSystems
     public int GoldCost { get; }
 
     /// <summary>
-    /// The amount of lumber the research costs. Unfortunately this is hard-coded.
-    /// </summary>
-    public int LumberCost { get; }
-
-    /// <summary>
     /// The ID of the Warcraft 3 research object.
     /// </summary>
     public int ResearchTypeId { get; }
@@ -33,11 +28,10 @@ namespace MacroTools.ResearchSystems
     /// <summary>
     /// Initializes a new instance of the <see cref="Research"/> class.
     /// </summary>
-    protected Research(int researchTypeId, int goldCost, int lumberCost)
+    protected Research(int researchTypeId, int goldCost)
     {
       ResearchTypeId = researchTypeId;
       GoldCost = goldCost;
-      LumberCost = lumberCost;
     }
 
     /// <summary>
@@ -53,7 +47,7 @@ namespace MacroTools.ResearchSystems
     }
 
     /// <summary>
-    /// Unresearches the research and returns all gold and lumber spent on it.
+    /// Unresearches the research and returns all gold spent on it.
     /// </summary>
     /// <param name="researchingPlayer"></param>
     /// <param name="unresearch">If true, the research will be unresearched for the player as well.</param>
@@ -61,7 +55,6 @@ namespace MacroTools.ResearchSystems
     {
       researchingPlayer.DisplayRefundedResearch(ResearchTypeId);
       researchingPlayer.AddGold(GoldCost);
-      researchingPlayer.AddLumber(LumberCost);
       if (unresearch)
         researchingPlayer.SetObjectLevel(ResearchTypeId, Math.Min(0, researchingPlayer.GetObjectLimit(ResearchTypeId)));
     }

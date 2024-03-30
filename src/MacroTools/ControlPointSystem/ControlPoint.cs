@@ -36,6 +36,11 @@ namespace MacroTools.ControlPointSystem
     public player Owner => GetOwningPlayer(Unit);
 
     /// <summary>
+    /// Whether or not this <see cref="ControlPoint"/> can gain levels.
+    /// </summary>
+    public bool UseControlLevels { get; }
+    
+    /// <summary>
     ///   How much gold this <see cref="ControlPoint" /> grants per minute.
     /// </summary>
     public float Value { get; }
@@ -48,7 +53,7 @@ namespace MacroTools.ControlPointSystem
     /// <summary>
     /// A user-friendly name for the <see cref="ControlPoint"/>.
     /// </summary>
-    public string Name => GetUnitName(Unit);
+    public string Name { get; }
 
     /// <summary>
     /// The unit representing the <see cref="ControlPoint"/>.
@@ -74,10 +79,13 @@ namespace MacroTools.ControlPointSystem
     /// </summary>
     /// <param name="representingUnit">The unit representing the <see cref="ControlPoint"/>.</param>
     /// <param name="value">The gold income granted by the <see cref="ControlPoint"/>.</param>
-    public ControlPoint(unit representingUnit, float value)
+    /// <param name="useControlLevels">Whether or not this <see cref="ControlPoint"/> can gain levels.</param>
+    public ControlPoint(unit representingUnit, float value, bool useControlLevels)
     {
       Unit = representingUnit;
       Value = value;
+      Name = representingUnit.GetName();
+      UseControlLevels = useControlLevels;
     }
 
     /// <summary>

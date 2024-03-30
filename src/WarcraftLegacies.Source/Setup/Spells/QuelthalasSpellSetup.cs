@@ -5,7 +5,6 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -13,9 +12,9 @@ namespace WarcraftLegacies.Source.Setup.Spells
   {
     public static void Setup()
     {
-      var summonGraniteGolems = new SummonUnits(Constants.ABILITY_A0EP_SUMMON_GRANITE_GOLEMS_QUEL_THALAS_SUNWELL)
+      var summonGraniteGolems = new SummonUnits(ABILITY_A0EP_SUMMON_GRANITE_GOLEMS_QUEL_THALAS_SUNWELL)
       {
-        SummonUnitTypeId = Constants.UNIT_NGGR_GRANITE_GOLEM_QUEL_THALAS,
+        SummonUnitTypeId = UNIT_NGGR_GRANITE_GOLEM_QUEL_THALAS,
         SummonCount = 4,
         Duration = 60,
         Radius = 400,
@@ -24,17 +23,17 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       SpellSystem.Register(summonGraniteGolems);
 
-      var resurgentFlameStrike = new ResurgentSpell(Constants.ABILITY_A04H_RESURGENT_FLAME_STRIKE_QUEL_THALAS_KAEL_THAS,
-        Constants.ABILITY_A0F9_RESURGENT_FLAME_STRIKE_QUEL_THALAS_KAEL_THAS_DUMMY, OrderId("flamestrike"))
+      var resurgentFlameStrike = new ResurgentSpell(ABILITY_A04H_RESURGENT_FLAME_STRIKE_QUEL_THALAS_KAEL_THAS,
+        ABILITY_A0F9_RESURGENT_FLAME_STRIKE_QUEL_THALAS_KAEL_THAS_DUMMY, OrderId("flamestrike"))
       {
         Duration = 14,
         Interval = 7
       };
       SpellSystem.Register(resurgentFlameStrike);
       
-      var massBanish = new MassAnySpell(Constants.ABILITY_A0FD_MASS_BANISH_QUEL_THALAS_KAEL_THAS)
+      var massBanish = new MassAnySpell(ABILITY_A0FD_MASS_BANISH_QUEL_THALAS_KAEL_THAS)
       {
-        DummyAbilityId = Constants.ABILITY_A0FE_MASS_BANISH_QUEL_THALAS_KAEL_THAS_DUMMY_CASTER,
+        DummyAbilityId = ABILITY_A0FE_MASS_BANISH_QUEL_THALAS_KAEL_THAS_DUMMY_CASTER,
         DummyAbilityOrderId = OrderId("banish"),
         Radius = 250,
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
@@ -42,7 +41,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       SpellSystem.Register(massBanish);
       
-      var siphoningRitual = new SiphoningRitualSpell(Constants.ABILITY_A0FA_SIPHONING_RITUAL_QUEL_THALAS_KAEL_THAS)
+      var siphoningRitual = new SiphoningRitualSpell(ABILITY_A0FA_SIPHONING_RITUAL_QUEL_THALAS_KAEL_THAS)
       {
         TargetCountBase = 24,
         TargetCountLevel = 0,
@@ -56,7 +55,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       SpellSystem.Register(siphoningRitual);
       
-      PassiveAbilityManager.Register(new DefensiveOrbs(Constants.UNIT_H00Q_KING_OF_QUEL_THALAS_QUEL_THALAS, Constants.ABILITY_A055_DEFENSIVE_ORBS_QUEL_THALAS_ANASTERIAN)
+      PassiveAbilityManager.Register(new DefensiveOrbs(UNIT_H00Q_KING_OF_QUEL_THALAS_QUEL_THALAS, ABILITY_A055_DEFENSIVE_ORBS_QUEL_THALAS_ANASTERIAN)
       {
         OrbitRadius = 350,
         OrbitalPeriod = 4,
@@ -66,21 +65,14 @@ namespace WarcraftLegacies.Source.Setup.Spells
         OrbDuration = 30,
         AbilityWhitelist = new List<int>
         {
-          Constants.ABILITY_A04J_ARCANE_BURST_HIGH_ELVES_ANASTERIAN,
-          Constants.ABILITY_A013_DEVOUR_MAGIC_GUL_DAN,
-          Constants.ABILITY_AHPX_ASHES_OF_AL_AR_QUEL_THALAS_ANASTERIAN_KAEL_THAS
+          ABILITY_A04J_ARCANE_BURST_HIGH_ELVES_ANASTERIAN,
+          ABILITY_A013_DEVOUR_MAGIC_GUL_DAN,
+          ABILITY_AHPX_ASHES_OF_AL_AR_QUEL_THALAS_ANASTERIAN_KAEL_THAS
         }
       });
 
-
-
-      SpellSystem.Register(new RegrowTrees(Constants.ABILITY_A12L_REGROW_TREES_DOMES)
-      {
-        Radius = 1500
-      });
-
       //Todo: create an "Extract Vial" spell for the Sunwell and assign it below
-      SpellSystem.Register(new ExtractSunwellVial(Constants.ABILITY_A0OC_EXTRACT_VIAL_ALL, Constants.ITEM_I018_VIAL_OF_THE_SUNWELL));
+      SpellSystem.Register(new ExtractSunwellVial(ABILITY_A0OC_EXTRACT_VIAL_ALL, ITEM_I018_VIAL_OF_THE_SUNWELL));
     }
   }
 }

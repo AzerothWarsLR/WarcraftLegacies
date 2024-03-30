@@ -6,7 +6,6 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 using static War3Api.Blizzard;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
@@ -19,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
   public sealed class QuestTheramore : QuestData
   {
     private readonly List<unit> _rescueUnits;
-    private const int RequiredResearchId = Constants.UPGRADE_R0A7_ESCAPE_TO_THERAMORE_DALARAN;
+    private const int RequiredResearchId = UPGRADE_R0A7_ESCAPE_TO_THERAMORE_DALARAN;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestTheramore"/> class.
@@ -30,9 +29,9 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     {
       AddObjective(new ObjectiveControlLegend(jaina, false)
       {
-        ResearchId = Constants.UPGRADE_R0A8_YOUR_TEAM_CONTROLS_JAINA_PROUDMOORE
+        ResearchId = UPGRADE_R0A8_YOUR_TEAM_CONTROLS_JAINA_PROUDMOORE
       });
-      AddObjective(new ObjectiveResearch(RequiredResearchId, Constants.UNIT_H002_THE_VIOLET_CITADEL_DALARAN_OTHER));
+      AddObjective(new ObjectiveResearch(RequiredResearchId, UNIT_H002_THE_VIOLET_CITADEL_DALARAN_OTHER));
       AddObjective(new ObjectiveUnitAlive(violetCitadel.Unit));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = theramoreRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

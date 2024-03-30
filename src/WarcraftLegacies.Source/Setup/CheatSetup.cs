@@ -25,7 +25,6 @@ namespace WarcraftLegacies.Source.Setup
       commandManager.Register(new CheatHp());
       commandManager.Register(new CheatKick());
       commandManager.Register(new CheatLevel());
-      commandManager.Register(new CheatLumber());
       commandManager.Register(new CheatMana());
       commandManager.Register(new CheatMp());
       commandManager.Register(new CheatNocd());
@@ -47,6 +46,8 @@ namespace WarcraftLegacies.Source.Setup
       commandManager.Register(new CheatSkipTurns());
       commandManager.Register(new CheatPermaKill());
       commandManager.Register(new CheatGetUnitCurrentOrder());
+      commandManager.Register(new PreviewForsaken());
+      commandManager.Register(new CheatPingGoldMines());
       TestMode.Setup(commandManager);
       CheatSkipCinematic.Init();
     }

@@ -1,5 +1,4 @@
 ﻿using MacroTools.ArtifactSystem;
-using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
@@ -7,7 +6,6 @@ using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Lordaeron
 {
@@ -19,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     private readonly Artifact _crownOfLordaeron;
     private readonly Artifact _crownOfStormwind;
     private readonly LegendaryHero _arthas;
-    private const int RewardResearchId = Constants.UPGRADE_R01N_ARATHORIAN_LEGACY_LORDAERON_STORMWIND_QUEST;
+    private const int RewardResearchId = UPGRADE_R01N_ARATHORIAN_LEGACY_LORDAERON_STORMWIND_QUEST;
     private const int CompletionExperienceBonus = 10000;
 
     /// <summary>
@@ -36,10 +34,8 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       AddObjective(new ObjectiveControlLegend(arthas, true));
       AddObjective(new ObjectiveAcquireArtifact(crownOfLordaeron));
       AddObjective(new ObjectiveAcquireArtifact(crownOfStormwind));
-      AddObjective(new ObjectiveControlPoint(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N010_STORMWIND_CITY)));
-      AddObjective(new ObjectiveControlPoint(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01G_LORDAERON_CITY)));
+      AddObjective(new ObjectiveControlPoint(UNIT_N010_STORMWIND_CITY, false));
+      AddObjective(new ObjectiveControlPoint(UNIT_N01G_LORDAERON_CITY, false));
       Global = true;
     }
 
@@ -65,7 +61,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       ArtifactManager.Destroy(_crownOfLordaeron);
       ArtifactManager.Destroy(_crownOfStormwind);
 
-      var crownOfTheEasternKingdoms = new Artifact(CreateItem(Constants.ITEM_I00U_CROWN_OF_THE_EASTERN_KINGDOMS, 0, 0));
+      var crownOfTheEasternKingdoms = new Artifact(CreateItem(ITEM_I00U_CROWN_OF_THE_EASTERN_KINGDOMS, 0, 0));
       ArtifactManager.Register(crownOfTheEasternKingdoms);
       crownHolder?.AddItemSafe(crownOfTheEasternKingdoms.Item);
     }

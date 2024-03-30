@@ -1,0 +1,38 @@
+{
+  "OldId": 2004111426,
+  "NewId": 1110913092,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818850404,
+      "Type": 3,
+      "Value": "*"
+    },
+    {
+      "Id": 1918989924,
+      "Value": 1
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "1 - Snowy Tree"
+    },
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "war3mapImported\\Tree_SnowTree1.mdl"
+    },
+    {
+      "Id": 1920493156,
+      "Type": 2,
+      "Value": 270
+    },
+    {
+      "Id": 2020896868,
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    }
+  ]
+}

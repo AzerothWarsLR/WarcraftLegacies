@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     {
       AddObjective(new ObjectiveLegendLevel(antonidas, 7));
       AddObjective(new ObjectiveLegendLevel(jaina, 7));
-      ResearchId = Constants.UPGRADE_R09F_QUEST_COMPLETED_RETURN_FROM_EXILE;
+      ResearchId = UPGRADE_R09F_QUEST_COMPLETED_RETURN_FROM_EXILE;
     }
 
     /// <inheritdoc/>

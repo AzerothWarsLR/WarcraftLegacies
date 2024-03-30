@@ -7,7 +7,6 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using WarcraftLegacies.Source.Quests.Warsong;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -17,26 +16,32 @@ namespace WarcraftLegacies.Source.Factions
     private readonly AllLegendSetup _allLegendSetup;
 
     /// <inheritdoc />
+    
     public Warsong(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Warsong", PLAYER_COLOR_ORANGE, "|c00ff8000",
       @"ReplaceableTextures\CommandButtons\BTNHellScream.blp")
     {
+      TraditionalTeam = TeamSetup.Horde;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
       UndefeatedResearch = FourCC("R05W");
       StartingGold = 200;
-      StartingLumber = 700;
       CinematicMusic = "DarkAgents";
-      ControlPointDefenderUnitTypeId = Constants.UNIT_N0D6_CONTROL_POINT_DEFENDER_WARSONG;
+      ControlPointDefenderUnitTypeId = UNIT_N0D6_CONTROL_POINT_DEFENDER_WARSONG;
       IntroText = @"You are playing as the brutal |cffd45e19Warsong clan|r.
 
 You begin in the eaves of Ashenvale, isolated from your ally, the Frostwolf Clan in the South. 
 
-The Warchief expects a large amount of lumber from you. Begin by harvesting with your Peons, and expanding into the Barrens and Durotar.
+The Warchief expects a large amount of gold from you. Begin by harvesting with your Peons, and expanding into the Barrens and Durotar.
 
 The Night Elves are aware of your presence and are gathering a mighty host against you. Unlock Orgrimmar as soon as possible to defend against the Night Elf assault.";
       GoldMines = new List<unit>
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8455, -2777))
+      };
+      Nicknames = new List<string>
+      {
+        "ws",
+        "war"
       };
     }
         
@@ -93,9 +98,9 @@ The Night Elves are aware of your presence and are gathering a mighty host again
       ModObjectLimit(FourCC("Ogrh"), 1); //Grom
       ModObjectLimit(FourCC("Obla"), 1); //Varok
       ModObjectLimit(FourCC("O06L"), 1); //Garrosh
-      ModObjectLimit(Constants.UNIT_NSJS_BREWMASTER_WARSONG, 1);
+      ModObjectLimit(UNIT_NSJS_BREWMASTER_WARSONG, 1);
       ModObjectLimit(FourCC("n0CN"), 1); //Gibbs
-      ModObjectLimit(Constants.UNIT_OPGH_CORRUPTOR_OF_THE_WARSONG_CLAN_WARSONG_BLOODPACT, 1); //Blood Pact Grom   Fixes Perma Death Grom Blood Pact bug
+      ModObjectLimit(UNIT_OPGH_CORRUPTOR_OF_THE_WARSONG_CLAN_WARSONG_BLOODPACT, 1); //Blood Pact Grom   Fixes Perma Death Grom Blood Pact bug
 
       ModObjectLimit(FourCC("Robs"), UNLIMITED); //Berserker Strength
       ModObjectLimit(FourCC("Rotr"), UNLIMITED); //Troll Regeneration
@@ -106,29 +111,30 @@ The Night Elves are aware of your presence and are gathering a mighty host again
       ModObjectLimit(FourCC("Rosp"), UNLIMITED); //Spiked Barricades
       ModObjectLimit(FourCC("R016"), UNLIMITED); //Warlords
       ModObjectLimit(FourCC("R019"), UNLIMITED); //Improved Shockwave
-      ModObjectLimit(Constants.UPGRADE_R01Z_BATTLE_STATIONS_ORC, UNLIMITED);
-      SetObjectLevel(Constants.UPGRADE_R01Z_BATTLE_STATIONS_ORC, 1);
-      ModObjectLimit(Constants.UPGRADE_R00D_MASS_BLOODLUST_FROSTWOLF, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_ROVS_ENVENOMED_SPEARS_WARSONG, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R017_IMPROVED_IGNORE_PAIN_WARSONG, UNLIMITED);
+      ModObjectLimit(UPGRADE_R01Z_BATTLE_STATIONS_ORC, UNLIMITED);
+      SetObjectLevel(UPGRADE_R01Z_BATTLE_STATIONS_ORC, 1);
+      ModObjectLimit(UPGRADE_R00D_MASS_BLOODLUST_FROSTWOLF, UNLIMITED);
+      ModObjectLimit(UPGRADE_ROVS_ENVENOMED_SPEARS_WARSONG, UNLIMITED);
+      ModObjectLimit(UPGRADE_R017_IMPROVED_IGNORE_PAIN_WARSONG, UNLIMITED);
 
 
-      ModObjectLimit(Constants.UPGRADE_R09N_FLIGHT_PATH_WARSONG, 1);
+      ModObjectLimit(UPGRADE_R09N_FLIGHT_PATH_WARSONG, 1);
 
-      ModAbilityAvailability(Constants.ABILITY_A0PF_FEL_ENERGY_TEAL_FORTRESSES, -1);
-      ModAbilityAvailability(Constants.ABILITY_ANTR_TROLL_REGENERATION_PINK_WITCH_DOCTOR_TROLL_HEADHUNTER_TROLL_BATRIDER_DARKSPEAR_WARLORD_TROLL_BERSERKER_ICON, -1);
-      ModAbilityAvailability(Constants.ABILITY_ABTL_BATTLE_STATIONS_FROSTWOLF_WARSONG_BURROW, 1);
-      ModAbilityAvailability(Constants.ABILITY_A0M4_BATTLE_STATIONS_PINK_GREY_ORC_BURROW_BLOODPACT, -1);
-      ModAbilityAvailability(Constants.ABILITY_A0GM_FOR_THE_HORDE_PINK_GREY_MAIN_BUILDINGS, 1);
+      ModAbilityAvailability(ABILITY_A0PF_FEL_ENERGY_TEAL_FORTRESSES, -1);
+      ModAbilityAvailability(ABILITY_ANTR_TROLL_REGENERATION_PINK_WITCH_DOCTOR_TROLL_HEADHUNTER_TROLL_BATRIDER_DARKSPEAR_WARLORD_TROLL_BERSERKER_ICON, -1);
+      ModAbilityAvailability(ABILITY_ABTL_BATTLE_STATIONS_FROSTWOLF_WARSONG_BURROW, 1);
+      ModAbilityAvailability(ABILITY_A0M4_BATTLE_STATIONS_PINK_GREY_ORC_BURROW_BLOODPACT, -1);
+      ModAbilityAvailability(ABILITY_A0GM_FOR_THE_HORDE_PINK_GREY_MAIN_BUILDINGS, 1);
 
-      ModObjectLimit(Constants.UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, 1);
-      ModObjectLimit(Constants.UPGRADE_R09P_REVERT_BLOODPACT, 1);
+      ModObjectLimit(UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, 1);
+      ModObjectLimit(UPGRADE_R09P_REVERT_BLOODPACT, 1);
     }
 
     private void RegisterQuests()
     {
-      StartingQuest = AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
-      AddQuest(new QuestCrossroads(Regions.Crossroads, _preplacedUnitSystem));
+      StartingQuest = AddQuest(new QuestOrgrimmar(Regions.Orgrimmar, _allLegendSetup.Warsong.GromHellscream));
+      AddQuest(new QuestCrossroads(Regions.Crossroads));
+      AddQuest(new QuestLumberCamp(Regions.LumberCampUnlock, _allLegendSetup.Warsong.GromHellscream));
       AddQuest(new QuestChenStormstout(_preplacedUnitSystem.GetUnit(FourCC("Nsjs"))));
       AddQuest(new QuestFountainOfBlood(_allLegendSetup.Neutral.FountainOfBlood, _allLegendSetup.Warsong.GromHellscream));
       AddQuest(new QuestBloodpact(_allLegendSetup.Warsong.Mannoroth, _allLegendSetup.Warsong.GromHellscream));

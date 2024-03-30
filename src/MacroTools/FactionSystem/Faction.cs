@@ -37,6 +37,7 @@ namespace MacroTools.FactionSystem
     private string _name;
     private player? _player;
     private readonly int _undefeatedResearch;
+    private readonly List<unit> _goldMines = new();
 
     internal List<FactionDependentInitializer> FactionDependentInitializers { get; } = new();
     
@@ -52,8 +53,12 @@ namespace MacroTools.FactionSystem
     /// <summary>Invoked when one of the <see cref="Faction"/>'s <see cref="QuestData"/>s changes progress.</summary>
     public event EventHandler<FactionQuestProgressChangedEventArgs>? QuestProgressChanged;
 
-    protected List<unit> GoldMines { private get; init; } = new();
-    
+    protected internal IReadOnlyList<unit> GoldMines
+    {
+      get => _goldMines;
+      init => _goldMines = value as List<unit> ?? throw new InvalidOperationException();
+    }
+
     static Faction()
     {
       PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
@@ -105,9 +110,6 @@ namespace MacroTools.FactionSystem
     /// <summary>How much gold the faction starts with.</summary>
     public int StartingGold { get; init; }
 
-    /// <summary>How much lumber the faction starts with.</summary>
-    public int StartingLumber { get; init; }
-
     /// <summary>The units this faction should start the game with.</summary>
     public List<unit> StartingUnits { get; protected init; } = new();
     
@@ -117,6 +119,17 @@ namespace MacroTools.FactionSystem
     /// <summary>Players with this faction will become this color.</summary>
     public playercolor PlayerColor { get; }
 
+    /// <summary>
+    /// A list of additional names that this Faction can be referred to by in commands.
+    /// </summary>
+    public IReadOnlyList<string> Nicknames { get; protected init; } = new List<string>();
+    
+    /// <summary>
+    /// The <see cref="Team"/> that the <see cref="Faction"/> would traditionally be on.
+    /// <para>May or may not be used depending on actual game mode selections.</para>
+    /// </summary>
+    public Team? TraditionalTeam { get; protected init; }
+    
     /// <summary>
     ///   The <see cref="Faction" />'s food limit.
     ///   A <see cref="player" /> with this Faction can never exceed this amount of food.
@@ -290,12 +303,6 @@ namespace MacroTools.FactionSystem
     /// </summary>
     /// <param name="whichObject">The object ID of a unit, building, or research.</param>
     public int GetObjectLimit(int whichObject) => _objectLimits.TryGetValue(whichObject, out var limit) ? limit : 0;
-
-    /// <summary>
-    ///   Registers a gold mine as belonging to this <see cref="Faction" />.
-    ///   When the Faction leaves the game, all of their goldmines are removed.
-    /// </summary>
-    public void AddGoldMine(unit whichUnit) => GoldMines.Add(whichUnit);
 
     /// <summary>Adds a <see cref="Power" /> to this <see cref="Faction" />.</summary>
     public void AddPower(Power power)
@@ -567,7 +574,7 @@ namespace MacroTools.FactionSystem
       foreach (var unit in GoldMines) 
         KillUnit(unit);
       
-      GoldMines.Clear();
+      _goldMines.Clear();
     }
     
     /// <summary>

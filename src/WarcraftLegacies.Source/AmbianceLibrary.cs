@@ -1,5 +1,4 @@
 ﻿using MacroTools.Extensions;
-using static War3Api.Common;
 
 #pragma warning disable CS1591
 

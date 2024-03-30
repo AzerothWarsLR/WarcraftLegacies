@@ -1,6 +1,5 @@
 ﻿using MacroTools.Extensions;
 using WCSharp.Missiles;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.ArtifactBehaviour
 {
@@ -36,7 +35,7 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
         return;
       
       Target
-        .AddAbility(Constants.ABILITY_A01Y_INVENTORY_DUMMY_DROP_ARTIFACT)
+        .AddAbility(ABILITY_A01Y_INVENTORY_DUMMY_DROP_ARTIFACT)
         .AddItemSafe(_eyeOfSargeras);
       _impacted = true;
         

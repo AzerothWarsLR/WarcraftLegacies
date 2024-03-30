@@ -6,7 +6,6 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Sentinels
 {
@@ -25,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     {
       _maiev = maiev;
       _vaultOfTheWardens = vaultOfTheWardens;
-      AddObjective(new ObjectiveCastSpell(Constants.ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL, true));
+      AddObjective(new ObjectiveCastSpell(ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL, true));
       AddObjective(new ObjectiveControlLegend(maiev, true));
       AddObjective(new ObjectiveControlCapital(vaultOfTheWardens, true));
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
@@ -42,14 +41,14 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     protected override void OnComplete(Faction completingFaction)
     {
       _maiev.Unit?.SetPosition(new Point(-5252, -27597));
-      _vaultOfTheWardens.Unit?.RemoveAbility(Constants.ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL);
+      _vaultOfTheWardens.Unit?.RemoveAbility(ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL);
       completingFaction?.Player.RescueGroup(_rescueUnits);
     }
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
-      _vaultOfTheWardens.Unit?.RemoveAbility(Constants.ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL);
+      _vaultOfTheWardens.Unit?.RemoveAbility(ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL);
       Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
     }
   }

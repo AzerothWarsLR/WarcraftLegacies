@@ -9,7 +9,6 @@ using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Gilneas;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -23,12 +22,12 @@ namespace WarcraftLegacies.Source.Factions
     public Gilneas(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup) : base("Gilneas", PLAYER_COLOR_COAL, "|cff808080",
       @"ReplaceableTextures\CommandButtons\BTNGreymane.blp")
     {
+      TraditionalTeam = TeamSetup.NorthAlliance;
       _artifactSetup = artifactSetup;
       _allLegendSetup = allLegendSetup;
-      _gilneasGate = preplacedUnitSystem.GetUnit(Constants.UNIT_H02K_GREYMANE_S_GATE_CLOSED);
+      _gilneasGate = preplacedUnitSystem.GetUnit(UNIT_H02K_GREYMANE_S_GATE_CLOSED);
       StartingGold = 200;
-      StartingLumber = 700;
-      ControlPointDefenderUnitTypeId = Constants.UNIT_H0AF_CONTROL_POINT_DEFENDER_GILNEAS;
+      ControlPointDefenderUnitTypeId = UNIT_H0AF_CONTROL_POINT_DEFENDER_GILNEAS;
       StartingCameraPosition = Regions.GilneasStartPos.Center;
       StartingUnits = Regions.GilneasStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       LearningDifficulty = FactionLearningDifficulty.Advanced;
@@ -41,10 +40,15 @@ You must raise an army and fight back against the feral wolves and worgen that h
 Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist Lordaeron and Dalaran with the plague, if it's not too late.";
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4236, 1321)),
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4477, -1449)),
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(7709, -2853)),
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9392, -921)),
+        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(8784, 1993)),
+      };
+      Nicknames = new List<string>
+      {
+        "gil",
+        "giln",
+        "worgen",
+        "worg"
       };
       RegisterFactionDependentInitializer<Legion>(RegisterBookOfMedivhQuest);
       RegisterFactionDependentInitializer<Druids>(RegisterDruidsQuests);
@@ -57,11 +61,21 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       RegisterQuests();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
+    
+    /// <inheritdoc />
+    public override void OnNotPicked()
+    {
+      Regions.GilneasUnlock1.CleanupNeutralPassiveUnits();
+      Regions.GilneasUnlock2.CleanupNeutralPassiveUnits();
+      Regions.GilneasUnlock3.CleanupNeutralPassiveUnits();
+      Regions.GilneasUnlock4.CleanupNeutralPassiveUnits();
+      Regions.GilneasUnlock5.CleanupNeutralPassiveUnits();
+      Regions.GilneasUnlock6.CleanupNeutralPassiveUnits();
+      base.OnNotPicked();
+    }
 
     private void RegisterObjectLimits()
     {
-      SharedFactionConfigSetup.AddSharedFactionConfig(this);
-      
       //Structures
       ModObjectLimit(FourCC("h01R"), UNLIMITED); //Town Hall
       ModObjectLimit(FourCC("h023"), UNLIMITED); //Keep
@@ -110,12 +124,11 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
 
       //Upgrades
-      ModObjectLimit(Constants.UPGRADE_R04O_CLERIC_MASTER_TRAINING_GILNEAS, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R04P_DRUID_OF_THE_SCYTHE_MASTER_TRAINING_GILNEAS, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_RHLH_IMPROVED_LUMBER_HARVESTING_ADVANCED_LUMBER_HARVESTING_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R09L_WORGEN_SHAMAN_MASTER_TRAINING_GILNEAS, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R09M_HARVEST_WITCH_MASTER_TRAINING_GILNEAS, UNLIMITED);
+      ModObjectLimit(UPGRADE_R04O_CLERIC_MASTER_TRAINING_GILNEAS, UNLIMITED);
+      ModObjectLimit(UPGRADE_R04P_DRUID_OF_THE_SCYTHE_MASTER_TRAINING_GILNEAS, UNLIMITED);
+      ModObjectLimit(UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, UNLIMITED);
+      ModObjectLimit(UPGRADE_R09L_WORGEN_SHAMAN_MASTER_TRAINING_GILNEAS, UNLIMITED);
+      ModObjectLimit(UPGRADE_R09M_HARVEST_WITCH_MASTER_TRAINING_GILNEAS, UNLIMITED);
     }
     
     private void RegisterQuests()

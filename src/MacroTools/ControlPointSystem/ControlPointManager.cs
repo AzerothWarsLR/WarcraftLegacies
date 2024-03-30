@@ -23,8 +23,6 @@ namespace MacroTools.ControlPointSystem
           {
             var goldPerSecond = player.GetTotalIncome() * Period / 60;
             player.AddGold(goldPerSecond);
-            var lumberPerSecond = player.GetLumberIncome() * Period / 60;
-            player.AddLumber(lumberPerSecond);
           }
       });
     }
@@ -140,26 +138,29 @@ namespace MacroTools.ControlPointSystem
     public void Register(ControlPoint controlPoint)
     {
       _byUnit.Add(controlPoint.Unit, controlPoint);
-      if (_byUnitType.ContainsKey(controlPoint.UnitType))
-        Logger.LogWarning(
-          $"There are two Control Points with the same ID of {GeneralHelpers.DebugIdInteger2IdString(controlPoint.UnitType)}.");
-      else
+      if (!_byUnitType.ContainsKey(controlPoint.UnitType))
         _byUnitType.Add(controlPoint.UnitType, controlPoint);
 
       controlPoint.Unit
         .SetMaximumHitpoints(StartingMaxHitPoints)
-        .AddAbility(IncreaseControlLevelAbilityTypeId)
         .SetLifePercent(100)
         .SetArmorType(2)
-        .SetName($"{controlPoint.Unit.GetName()} ({controlPoint.Value} gold/min)");
+        .SetName($"{controlPoint.Unit.GetName()} ({controlPoint.Value} gold/min)")
+        .AddAbility(PiercingResistanceAbility);
+      
       RegisterIncome(controlPoint);
       RegisterDamageTrigger(controlPoint);
       RegisterOwnershipChangeTrigger(controlPoint);
-      RegisterControlLevelChangeTrigger(controlPoint);
-      RegisterControlLevelGrowthOverTime(controlPoint);
-      ConfigureControlPointStats(controlPoint, true);
+
+      if (controlPoint.UseControlLevels)
+      {
+        RegisterControlLevelChangeTrigger(controlPoint);
+        RegisterControlLevelGrowthOverTime(controlPoint);
+        ConfigureControlPointStats(controlPoint, true);
+        controlPoint.Unit.AddAbility(IncreaseControlLevelAbilityTypeId);
+      }
+      
       controlPoint.OnRegister();
-      controlPoint.Unit.AddAbility(PiercingResistanceAbility);
       if (controlPoint.Unit.OwningPlayer() != Player(PLAYER_NEUTRAL_AGGRESSIVE))
         controlPoint.Unit.AddAbility(RegenerationAbility);
     }

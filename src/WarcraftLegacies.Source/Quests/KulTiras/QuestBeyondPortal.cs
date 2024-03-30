@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       AddObjective(new ObjectiveCapitalDead(hellfireCitadel));
       AddObjective(new ObjectiveCapitalDead(kilsorrowFortress));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = Constants.UPGRADE_R085_QUEST_COMPLETED_BEYOND_THE_DARK_PORTAL;
+      ResearchId = UPGRADE_R085_QUEST_COMPLETED_BEYOND_THE_DARK_PORTAL;
     }
 
     /// <inheritdoc/>

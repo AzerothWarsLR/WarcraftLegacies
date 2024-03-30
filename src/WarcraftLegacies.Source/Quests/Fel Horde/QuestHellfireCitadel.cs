@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
@@ -8,7 +7,6 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Fel_Horde
 {
@@ -27,14 +25,14 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       "The clans holding Hellfire Citadel do not respect Kargath's authority yet, Magtheridon is being kept alive by Illidan, if we break him, he could serve us well.",
       @"ReplaceableTextures\CommandButtons\BTNFelOrcFortress.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01J_ZANGARMARSH)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02N_BLADE_S_EDGE_MOUNTAINS)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00B_NAGRAND)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0CV_HALAAR)));
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_O030_FORTRESS_FEL_HORDE_T3, Constants.UNIT_O02Y_GREAT_HALL_FEL_HORDE_T1));
+      AddObjective(new ObjectiveControlPoint(UNIT_N01J_ZANGARMARSH));
+      AddObjective(new ObjectiveControlPoint(UNIT_N02N_BLADE_S_EDGE_MOUNTAINS));
+      AddObjective(new ObjectiveControlPoint(UNIT_N00B_NAGRAND));
+      AddObjective(new ObjectiveControlPoint(UNIT_N0CV_HALAAR));
+      AddObjective(new ObjectiveUpgrade(UNIT_O030_FORTRESS_FEL_HORDE_T3, UNIT_O02Y_GREAT_HALL_FEL_HORDE_T1));
       AddObjective(new ObjectiveExpire(600, Title));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = Constants.UPGRADE_R00P_QUEST_COMPLETED_THE_CITADEL;
+      ResearchId = UPGRADE_R00P_QUEST_COMPLETED_THE_CITADEL;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       
     }

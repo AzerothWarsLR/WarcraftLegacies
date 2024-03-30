@@ -35,7 +35,6 @@ namespace WarcraftLegacies.Source.Setup
       ShoreManager.Register(new Shore(new Point(5727, -8037), "Boralus"));
       ShoreManager.Register(new Shore(new Point(-4949, -11987), "Vol'dun"));
       ShoreManager.Register(new Shore(new Point(1288, -6019), "Stormsong Valley"));
-      ShoreManager.Register(new Shore(new Point(1729, -15009), "Tiragarde Sound"));
 
       ShoreManager.Register(new Shore(new Point(-5307, 16156), "Borean Tundra"));
       ShoreManager.Register(new Shore(new Point(-1091, 15953), "Dragonblight"));

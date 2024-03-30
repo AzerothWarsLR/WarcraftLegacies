@@ -1,6 +1,5 @@
 ﻿using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Gilneas
 {
@@ -9,7 +8,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
   /// </summary>
   public sealed class QuestCrowley : QuestData
   {
-    private const int AltarId = Constants.UNIT_H02X_ALTAR_OF_KINGS_GILNEAS_ALTAR;
+    private const int AltarId = UNIT_H02X_ALTAR_OF_KINGS_GILNEAS_ALTAR;
 
     /// <summary>
     /// IniInitializes a new instance of the <see cref="QuestCrowley"/> class.
@@ -19,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
       @"ReplaceableTextures/CommandButtons/BTNWorgenHunt.blp")
     {
       AddObjective(new ObjectiveTime(900));
-      ResearchId = Constants.UPGRADE_MD05_QUEST_COMPLETED_THE_REBEL;
+      ResearchId = UPGRADE_MD05_QUEST_COMPLETED_THE_REBEL;
       
     }
 

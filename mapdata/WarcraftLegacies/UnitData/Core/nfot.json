@@ -5,10 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": 1633837685,
-      "Value": 22
-    },
-    {
       "Id": 1869571701,
       "Value": 0
     },
@@ -18,16 +14,12 @@
       "Value": "air,enemies,ground,hero,structure"
     },
     {
-      "Id": 1768186485,
-      "Value": 7
+      "Id": 1836412021,
+      "Value": 0
     },
     {
-      "Id": 1769169525,
-      "Value": 2
-    },
-    {
-      "Id": 1986358389,
-      "Value": 6
+      "Id": 1920298101,
+      "Value": 0
     }
   ]
 }

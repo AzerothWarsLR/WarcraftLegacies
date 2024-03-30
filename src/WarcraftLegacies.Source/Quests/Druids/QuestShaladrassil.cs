@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
     protected override void OnComplete(Faction completingFaction)
     {
       var power = new ShaladrassilsBlessing(_shaladrassil.Unit,
-        Constants.UNIT_EFON_TREANT_DRUIDS_SUMMONED, 60, 12, 50)
+        UNIT_EFON_TREANT_DRUIDS_SUMMONED, 60, 12, 50)
       {
       };
       completingFaction.AddPower(power);

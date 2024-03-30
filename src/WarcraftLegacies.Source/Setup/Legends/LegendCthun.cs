@@ -1,5 +1,5 @@
 ﻿using MacroTools.LegendSystem;
-using static War3Api.Common;
+
 #pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
@@ -15,27 +15,27 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       Cthun = new LegendaryHero("C'thun")
       {
-        UnitType = Constants.UNIT_U00R_OLD_GOD,
+        UnitType = UNIT_U00R_OLD_GOD,
         PermaDies = true,
         StartingXp = 10000,
       };
 
       Moam = new LegendaryHero("Moam")
       {
-        UnitType = Constants.UNIT_U00Z_OBSIDIAN_DESTROYER,
+        UnitType = UNIT_U00Z_OBSIDIAN_DESTROYER,
         StartingXp = 7000,
       };
 
       Skeram = new LegendaryHero("Prophet Skeram")
       {
-        UnitType = Constants.UNIT_E005_THE_PROPHET,
+        UnitType = UNIT_E005_THE_PROPHET,
         StartingXp = 7000,
         PlayerColor = PLAYER_COLOR_RED
       };
 
       Ouro = new LegendaryHero("Ouro")
       {
-        UnitType = Constants.UNIT_U02S_ANCIENT_SAND_WORM,
+        UnitType = UNIT_U02S_ANCIENT_SAND_WORM,
         StartingXp = 7000,
       };
     }

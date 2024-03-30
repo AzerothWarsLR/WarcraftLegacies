@@ -11,21 +11,21 @@ namespace WarcraftLegacies.Source.Setup.Spells
     /// </summary>
     public static void Setup()
     {
-      PassiveAbilityManager.Register(new Execute(Constants.UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG)
+      PassiveAbilityManager.Register(new Execute(UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG)
       {
         DamageMultNonResistant = 4,
         DamageMultResistant = 1.5f,
         DamageMultStructure = 1
       });
 
-      PassiveAbilityManager.Register(new Execute(Constants.UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG)
+      PassiveAbilityManager.Register(new Execute(UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG)
       {
         DamageMultNonResistant = 4,
         DamageMultResistant = 1.5f,
         DamageMultStructure = 1
       });
 
-      PassiveAbilityManager.Register(new RestoreManaFromDamage(Constants.UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG, Constants.ABILITY_A0ZG_BLOOD_ABSORPTION_GORFAX)
+      PassiveAbilityManager.Register(new RestoreManaFromDamage(UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG, ABILITY_A0ZG_BLOOD_ABSORPTION_GORFAX)
       {
         ManaPerDamage = new LeveledAbilityField<float>
         {

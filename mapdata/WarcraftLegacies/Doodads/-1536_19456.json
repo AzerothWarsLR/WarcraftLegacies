@@ -21,9 +21,8 @@
   },
   {
     "State": 2,
-    "Life": 100,
-    "TypeId": 2004112457,
-    "Variation": 6,
+    "Life": 255,
+    "TypeId": 1446391876,
     "Position": {
       "X": -1856,
       "Y": 19200,
@@ -35,7 +34,7 @@
       "Y": 1.1999998,
       "Z": 1.1999998
     },
-    "SkinId": 2004112457,
+    "SkinId": 1446391876,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 3777

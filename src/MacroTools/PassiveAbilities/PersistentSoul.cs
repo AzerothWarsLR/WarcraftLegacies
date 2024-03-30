@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
+using MacroTools.Libraries;
 using MacroTools.PassiveAbilitySystem;
 using static War3Api.Common;
 
@@ -49,6 +50,7 @@ namespace MacroTools.PassiveAbilities
                  .EmptyToList()
                  .Where(x => IsUnitReanimationCandidate(caster, x))
                  .OrderByDescending(x => x.GetLevel())
+                 .ThenBy(x => MathEx.GetDistanceBetweenPoints(caster.GetPosition(), x.GetPosition()))
                  .Take(ReanimationCountLevel * GetUnitAbilityLevel(caster, _abilityTypeId)))
       {
         Reanimate(caster.OwningPlayer(), unit);

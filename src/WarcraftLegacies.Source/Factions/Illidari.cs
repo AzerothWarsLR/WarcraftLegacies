@@ -10,7 +10,6 @@ using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using WarcraftLegacies.Source.Quests.Naga;
 using WarcraftLegacies.Source.Setup;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -23,15 +22,15 @@ namespace WarcraftLegacies.Source.Factions
     public Illidari(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Illidan", PLAYER_COLOR_VIOLET,
       "|cffff00ff", @"ReplaceableTextures\CommandButtons\BTNEvilIllidan.blp")
     {
+      TraditionalTeam = TeamSetup.Outland;
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
-      UndefeatedResearch = Constants.UPGRADE_R02L_ILLIDAN_EXISTS;
+      UndefeatedResearch = UPGRADE_R02L_ILLIDAN_EXISTS;
       StartingGold = 200;
-      StartingLumber = 700;
       FoodMaximum = 250;
       StartingCameraPosition = Regions.IllidanStartingPosition.Center;
       StartingUnits = Regions.IllidanStartingPosition.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
-      ControlPointDefenderUnitTypeId = Constants.UNIT_N0BB_CONTROL_POINT_DEFENDER_ILLIDARI_TOWER;
+      ControlPointDefenderUnitTypeId = UNIT_N0BB_CONTROL_POINT_DEFENDER_ILLIDARI_TOWER;
       LearningDifficulty = FactionLearningDifficulty.Basic;
       IntroText = @"You are playing as the Betrayer, Illidan|r|r.
 
@@ -40,6 +39,14 @@ You begin on the Broken Isles, ready to plunder the tombs for artifacts to empow
 Unfortunately, you cannot progress further in the Islands. Use Illidan's mastery of portals to travel to Outland and join forces with your ally.
 
 Support your ally in Outland by unlocking bases and coordinating with his push out of the Dark Portal.";
+      Nicknames = new List<string>
+      {
+        "illi",
+        "illidan",
+        "ill",
+        "naga",
+        "nagas"
+      };
       RegisterFactionDependentInitializer<Sentinels>(RegisterSentinelsDialogue);
       RegisterFactionDependentInitializer<Druids>(RegisterDruidsDialogue);
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
@@ -60,6 +67,9 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
     {
       Regions.IllidanStartingPosition.CleanupNeutralPassiveUnits();
       Regions.IllidanBlackTempleUnlock.CleanupNeutralPassiveUnits();
+      Regions.TelredorUnlock.CleanupNeutralPassiveUnits(NeutralPassiveCleanupType.TurnUnitsHostile);
+      Regions.IllidariUnlockSA.CleanupNeutralPassiveUnits(NeutralPassiveCleanupType.TurnUnitsHostile);
+      Regions.AkamaUnlock.CleanupNeutralPassiveUnits(NeutralPassiveCleanupType.TurnUnitsHostile);
       base.OnNotPicked();
     }
 
@@ -109,8 +119,8 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
       ModObjectLimit(FourCC("Naka"), 1); //Akama
       ModObjectLimit(FourCC("Eevi"), 1); //Illidan
 
-      ModObjectLimit(Constants.UPGRADE_RNSW_NAGA_SIREN_ADEPT_TRAINING_NAGA_SIREN_MASTER_TRAINING, UNLIMITED);
-      ModObjectLimit(Constants.UPGRADE_R02V_SHADOWCASTER_MASTER_TRAINING, UNLIMITED);
+      ModObjectLimit(UPGRADE_RNSW_NAGA_SIREN_ADEPT_TRAINING_NAGA_SIREN_MASTER_TRAINING, UNLIMITED);
+      ModObjectLimit(UPGRADE_R02V_SHADOWCASTER_MASTER_TRAINING, UNLIMITED);
     }
 
     private void RegisterQuests()
@@ -142,6 +152,12 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
         }, new List<Objective>
         {
           new ObjectiveQuestComplete(GetQuestByType<QuestBlackTemple>())
+          {
+            EligibleFactions = new List<Faction>
+            {
+              this
+            }
+          }
         }
       ));
 
@@ -156,6 +172,26 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
         {
           new ObjectiveLegendReachRect(_allLegendSetup.Naga.Illidan, Regions.Sargeras_Entrance,
             "the Tomb of Sargeras' entrance")
+        }
+      ));
+
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new DialogueSequence(
+          new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf06\N06Illidan16.flac",
+            "Yes... the power should be mine!",
+            "Illidan Stormrage"),
+          new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf06\N06Illidan17.flac",
+            "Now I am complete!",
+            "Illidan Stormrage"))
+        , new[]
+        {
+          this
+        }, new List<Objective>
+        {
+          new ObjectiveQuestComplete(GetQuestByType<QuestFlameAndSorrow>())
+          {
+            EligibleFactions = new List<Faction> { this }
+          }
         }
       ));
     }

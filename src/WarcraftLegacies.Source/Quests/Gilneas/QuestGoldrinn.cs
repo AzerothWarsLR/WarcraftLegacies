@@ -4,7 +4,6 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Gilneas
 {
@@ -22,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     {
       AddObjective(new ObjectiveAcquireArtifact(scytheOfElune));
       AddObjective(new ObjectiveArtifactInRect(scytheOfElune, Regions.MountHyjal, "Mount Hyjal"));
-      ResearchId = Constants.UPGRADE_R07U_QUEST_COMPLETED_SHRINE_OF_THE_WOLF_GOD;
+      ResearchId = UPGRADE_R07U_QUEST_COMPLETED_SHRINE_OF_THE_WOLF_GOD;
       _goldrinn = goldrinn;
       _druids = druids;
     }
@@ -33,7 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Learn to train {_goldrinn.Name} from the {GetObjectName(Constants.UNIT_H02X_ALTAR_OF_KINGS_GILNEAS_ALTAR)}, and learn to train {GetObjectName(Constants.UNIT_O06P_WORGEN_SHAMAN_GILNEAS)} from the {GetObjectName(Constants.UNIT_H03E_WORGEN_MANOR_GILNEAS_SPECIALIST)}. If you're allied to the Druids, {_goldrinn.Name}'s starting experience is halved";
+      $"Learn to train {_goldrinn.Name} from the {GetObjectName(UNIT_H02X_ALTAR_OF_KINGS_GILNEAS_ALTAR)}, and learn to train {GetObjectName(UNIT_O06P_WORGEN_SHAMAN_GILNEAS)} from the {GetObjectName(UNIT_H03E_WORGEN_MANOR_GILNEAS_SPECIALIST)}. If you're allied to the Druids, {_goldrinn.Name}'s starting experience is halved";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

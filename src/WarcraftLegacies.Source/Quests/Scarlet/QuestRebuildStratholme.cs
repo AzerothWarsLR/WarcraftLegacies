@@ -1,5 +1,4 @@
-﻿using MacroTools.ControlPointSystem;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
@@ -27,8 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     {
       
       AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in Stratholme", 5));
-      AddObjective(new ObjectiveControlLevel(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N01M_STRATHOLME), 4));
+      AddObjective(new ObjectiveControlLevel(UNIT_N01M_STRATHOLME, 4));
       _saiden = saiden;
     }
 

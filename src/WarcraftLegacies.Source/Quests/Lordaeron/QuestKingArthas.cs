@@ -1,12 +1,10 @@
 ﻿using MacroTools.ArtifactSystem;
-using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Lordaeron
 {
@@ -28,10 +26,9 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     {
       AddObjective(new ObjectiveControlCapital(capitalPalace, false));
       AddObjective(new ObjectiveControlLegend(arthas, true));
-      AddObjective(new ObjectiveControlLevel(
-        ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02J_HOWLING_FJORDS), 10));
+      AddObjective(new ObjectiveControlLevel(UNIT_N02J_HOWLING_FJORDS, 10));
       AddObjective(new ObjectiveLegendLevel(arthas, 12));
-      ResearchId = Constants.UPGRADE_R08A_QUEST_COMPLETED_LINE_OF_SUCCESSION;
+      ResearchId = UPGRADE_R08A_QUEST_COMPLETED_LINE_OF_SUCCESSION;
       _terenas = terenas;
       _crownOfLordaeron = crownOfLordaeron;
       _arthas = arthas;
@@ -44,23 +41,23 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Arthas becomes the King of Lordaeron, gains the Crown of Lordaeron, and he can no longer permanently die. Learn to build {GetObjectName(Constants.UNIT_H06C_HIGH_TOWER_LORDAERON_SPECIALIST)}s. " +
-      $"Your {GetObjectName(Constants.UNIT_HKNI_KNIGHT_LORDAERON)}s become {GetObjectName(Constants.UNIT_H0CP_GALLANT_KNIGHT_LORDAERON)}s and " +
-      $"your {GetObjectName(Constants.UNIT_H01C_HUNTSMAN_LORDAERON)}s become {GetObjectName(Constants.UNIT_H0CQ_ROYAL_ARBALEST_LORDAERON)}s";
+      $"Arthas becomes the King of Lordaeron, gains the Crown of Lordaeron, and he can no longer permanently die. Learn to build {GetObjectName(UNIT_H06C_HIGH_TOWER_LORDAERON_SPECIALIST)}s. " +
+      $"Your {GetObjectName(UNIT_HKNI_KNIGHT_LORDAERON)}s become {GetObjectName(UNIT_H0CP_GALLANT_KNIGHT_LORDAERON)}s and " +
+      $"your {GetObjectName(UNIT_H01C_HUNTSMAN_LORDAERON)}s become {GetObjectName(UNIT_H0CQ_ROYAL_ARBALEST_LORDAERON)}s";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      _arthas.UnitType = Constants.UNIT_HARF_HIGH_KING_LORDAERON_HIGH_KING;
+      _arthas.UnitType = UNIT_HARF_HIGH_KING_LORDAERON_HIGH_KING;
       _arthas.ClearUnitDependencies();
       _arthas.Unit?
         .AddItemSafe(_crownOfLordaeron.Item);
       _terenas.SetName("King Emeritus Terenas Menethil");
-      completingFaction.ModObjectLimit(Constants.UNIT_HKNI_KNIGHT_LORDAERON, -Faction.UNLIMITED);
-      completingFaction.ModObjectLimit(Constants.UNIT_H0CP_GALLANT_KNIGHT_LORDAERON, Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(UNIT_HKNI_KNIGHT_LORDAERON, -Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(UNIT_H0CP_GALLANT_KNIGHT_LORDAERON, Faction.UNLIMITED);
 
-      completingFaction.ModObjectLimit(Constants.UNIT_H01C_HUNTSMAN_LORDAERON, -Faction.UNLIMITED);
-      completingFaction.ModObjectLimit(Constants.UNIT_H0CQ_ROYAL_ARBALEST_LORDAERON, Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(UNIT_H01C_HUNTSMAN_LORDAERON, -Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(UNIT_H0CQ_ROYAL_ARBALEST_LORDAERON, Faction.UNLIMITED);
     }
   }
 }

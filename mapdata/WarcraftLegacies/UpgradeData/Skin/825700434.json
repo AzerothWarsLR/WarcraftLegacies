@@ -39,13 +39,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Hex Doctors\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Stasis Trap."
+      "Value": "Increases Hex Doctors\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Stasis Trap."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Hex Doctors\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Hex."
+      "Value": "Increases Hex Doctors\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Hex."
     },
     {
       "Level": 1,

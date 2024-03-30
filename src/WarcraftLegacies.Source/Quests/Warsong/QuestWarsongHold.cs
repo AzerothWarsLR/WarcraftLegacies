@@ -4,22 +4,20 @@ using MacroTools.FactionSystem;
 using MacroTools.Libraries;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using static MacroTools.Libraries.GeneralHelpers;
-using static War3Api.Common;
 
 
 namespace WarcraftLegacies.Source.Quests.Warsong
 {
   public sealed class QuestWarsongHold : QuestData
   {
-    private const int RequiredResearchId = Constants.UPGRADE_R06G_NORTHREND_EXPEDITION_WARSONG;
-    private const int AbilityId = Constants.ABILITY_A0DZ_WARSONG_OFFENSIVE_WARSONG;
+    private const int RequiredResearchId = UPGRADE_R06G_NORTHREND_EXPEDITION_WARSONG;
+    private const int AbilityId = ABILITY_A0DZ_WARSONG_OFFENSIVE_WARSONG;
 
     public QuestWarsongHold() : base("Warsong Hold",
       "The far-off land of Northrend is the new home of the traitor shaman Ner'zhul. The Warsong must land its forces on its shores in order to end the existential threat he now represents.",
       @"ReplaceableTextures\CommandButtons\BTNTuskaarBrown.blp")
     {
-      AddObjective(new ObjectiveResearch(RequiredResearchId, Constants.UNIT_O02T_SHIPYARD_WARSONG_SHIPYARD));
+      AddObjective(new ObjectiveResearch(RequiredResearchId, UNIT_O02T_SHIPYARD_WARSONG_SHIPYARD));
     }
 
     /// <inheritdoc/>

@@ -1,6 +1,4 @@
-﻿using static War3Api.Common;
-
-namespace WarcraftLegacies.Source.Setup
+﻿namespace WarcraftLegacies.Source.Setup
 {
   /// <summary>
   /// Responsible for setting up all floating text on the map.

@@ -67,13 +67,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Harvest-Witch\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Thorned Vines."
+      "Value": "Increases Harvest-Witch\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Thorned Vines."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Harvest-Witch\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Far Sight."
+      "Value": "Increases Harvest-Witch\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Far Sight."
     }
   ]
 }

@@ -20,7 +20,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     public ObjectiveControlCapital(Capital target, bool canFail)
     {
       _target = target;
-      Description = $"Your team controls {target.Name}";
+      Description = $"You control {target.Name}";
       _canFail = canFail;
       if (target.Unit != null)
       {
@@ -40,7 +40,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 
     internal override void OnAdd(Faction whichFaction)
     {
-      if (_target.Unit != null && IsPlayerAlliedToAnyEligibleFaction(_target.Unit.OwningPlayer()))
+      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
       {
         Progress = QuestProgress.Complete;
       }
@@ -48,7 +48,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 
     private void RecalculateProgress()
     {
-      if (_target.Unit != null && IsPlayerAlliedToAnyEligibleFaction(_target.Unit.OwningPlayer()))
+      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
         Progress = QuestProgress.Complete;
       else
         Progress = _canFail ? QuestProgress.Failed : QuestProgress.Incomplete;

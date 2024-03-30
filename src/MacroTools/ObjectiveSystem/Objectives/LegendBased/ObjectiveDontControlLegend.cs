@@ -30,7 +30,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 
     internal override void OnAdd(Faction whichFaction)
     {
-      if (_target.Unit != null && IsPlayerAlliedToAnyEligibleFaction(_target.Unit.OwningPlayer()))
+      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
         Progress = QuestProgress.Failed;
       else
         Progress = QuestProgress.Complete;
@@ -38,7 +38,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 
     private void OnTargetChangeOwner(object? sender, LegendChangeOwnerEventArgs legendChangeOwnerEventArgs)
     {
-      if (_target.Unit != null && IsPlayerAlliedToAnyEligibleFaction(_target.Unit.OwningPlayer()))
+      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
         Progress = QuestProgress.Failed;
     }
   }

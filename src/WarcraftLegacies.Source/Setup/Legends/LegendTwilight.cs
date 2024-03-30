@@ -14,25 +14,25 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       Chogall = new LegendaryHero("Cho'gal")
       {
-        UnitType = Constants.UNIT_O01P_LEADER_OF_THE_TWILIGHT_S_HAMMER_TWILIGHT_HAMMER,
+        UnitType = UNIT_O01P_LEADER_OF_THE_TWILIGHT_S_HAMMER_TWILIGHT_HAMMER,
          StartingXp = 10000,
       };
 
       Azil = new LegendaryHero("Azil")
       {
-        UnitType = Constants.UNIT_H08Q_HIGH_PRIESTESS_TWILIGHT_HAMMER,
+        UnitType = UNIT_H08Q_HIGH_PRIESTESS_TWILIGHT_HAMMER,
         StartingXp = 7000,
       };
 
       Ignacious = new LegendaryHero("Ignacious")
       {
-        UnitType = Constants.UNIT_O06M_ASCENDANT_COUNCILLOR_OF_FLAME_TWILIGHT,
+        UnitType = UNIT_O06M_ASCENDANT_COUNCILLOR_OF_FLAME_TWILIGHT,
         StartingXp = 7000,
       };
 
       Emberscar = new LegendaryHero("Emberscar")
       {
-        UnitType = Constants.UNIT_O04H_CHAMPION_OF_THE_TWILIGHT_S_HAMMER_TWILIGHT,
+        UnitType = UNIT_O04H_CHAMPION_OF_THE_TWILIGHT_S_HAMMER_TWILIGHT,
         StartingXp = 7000,
       };
     }

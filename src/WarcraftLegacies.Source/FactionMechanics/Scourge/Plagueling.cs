@@ -1,5 +1,4 @@
 using WCSharp.Events;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.FactionMechanics.Scourge
 {

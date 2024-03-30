@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+
 namespace MacroTools.FactionSystem
 {
   /// <summary>
@@ -14,6 +15,7 @@ namespace MacroTools.FactionSystem
     private static readonly List<Team> AllTeams = new();
     private static readonly Dictionary<string, Faction> FactionsByName = new();
     private static readonly List<Faction> AllFactions = new();
+    private static TeamSharedVisionMode _sharedVisionMode = TeamSharedVisionMode.All;
 
     /// <summary>
     ///   Fired when a <see cref="Faction" /> is registered to the <see cref="FactionManager" />.
@@ -24,6 +26,22 @@ namespace MacroTools.FactionSystem
     /// Fired when any <see cref="Faction"/> changes its name.
     /// </summary>
     public static event EventHandler<Faction>? AnyFactionNameChanged; //todo: remove this; shouldn't need static events of this nature
+
+    /// <summary>
+    /// How shared vision in <see cref="Team"/>s should behave.
+    /// <para>Determines the <see cref="Team.SharedVisionMode"/> mode setting of all managed <see cref="Team"/>s.</para>
+    /// </summary>
+    public static TeamSharedVisionMode SharedVisionMode
+    {
+      get => _sharedVisionMode;
+      set
+      {
+        foreach (var team in AllTeams)
+          team.SharedVisionMode = value;
+        
+        _sharedVisionMode = value;
+      }
+    }
 
     private static void OnFactionNameChange(object? sender, FactionNameChangeEventArgs args)
     {
@@ -91,21 +109,21 @@ namespace MacroTools.FactionSystem
     ///   Registers a <see cref="Faction" /> to the <see cref="FactionManager" />,
     ///   allowing it to be retrieved globally and fire global events.
     /// </summary>
-    public static Faction Register(Faction faction)
+    public static void Register(Faction faction)
     {
-      if (!FactionsByName.ContainsKey(faction.Name.ToLower()))
-      {
-        FactionsByName[faction.Name.ToLower()] = faction;
-        AllFactions.Add(faction);
-        FactionRegistered?.Invoke(faction, faction);
-        faction.OnRegistered();
-        faction.NameChanged += OnFactionNameChange;
+      if (FactionsByName.ContainsKey(faction.Name.ToLower()))
+        throw new Exception($"Attempted to register faction that already exists with name {faction}.");
 
-        ExecuteFactionDependentInitializers();
-        return faction;
-      }
+      FactionsByName[faction.Name.ToLower()] = faction;
+      foreach (var nickname in faction.Nicknames)
+        FactionsByName[nickname.ToLower()] = faction;
 
-      throw new Exception($"Attempted to register faction that already exists with name {faction}.");
+      AllFactions.Add(faction);
+      FactionRegistered?.Invoke(faction, faction);
+      faction.OnRegistered();
+      faction.NameChanged += OnFactionNameChange;
+
+      ExecuteFactionDependentInitializers();
     }
 
     /// <summary>
@@ -116,6 +134,7 @@ namespace MacroTools.FactionSystem
     {
       if (!TeamsByName.ContainsKey(team.Name.ToLower()))
       {
+        team.SharedVisionMode = SharedVisionMode;
         TeamsByName[team.Name.ToLower()] = team;
         AllTeams.Add(team);
       }

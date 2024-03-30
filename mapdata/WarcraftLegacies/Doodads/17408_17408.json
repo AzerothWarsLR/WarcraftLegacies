@@ -1,21 +1,20 @@
 [
   {
     "State": 2,
-    "Life": 100,
-    "TypeId": 875704386,
-    "Variation": 8,
+    "Life": 255,
+    "TypeId": 926363716,
     "Position": {
-      "X": 17600,
-      "Y": 17280,
+      "X": 17152,
+      "Y": 17408,
       "Z": 54.5
     },
     "Rotation": 4.712389,
     "Scale": {
-      "X": 0.99999994,
-      "Y": 0.99999994,
-      "Z": 0.99999994
+      "X": 1.6,
+      "Y": 1.6,
+      "Z": 1.6
     },
-    "SkinId": 875704386,
+    "SkinId": 926363716,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 30016
@@ -242,30 +241,8 @@
   },
   {
     "State": 2,
-    "Life": 100,
-    "TypeId": 875704386,
-    "Variation": 6,
-    "Position": {
-      "X": 17216,
-      "Y": 17344,
-      "Z": 54.5
-    },
-    "Rotation": 4.712389,
-    "Scale": {
-      "X": 0.99999994,
-      "Y": 0.99999994,
-      "Z": 0.99999994
-    },
-    "SkinId": 875704386,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 27544
-  },
-  {
-    "State": 2,
-    "Life": 100,
-    "TypeId": 875704386,
-    "Variation": 6,
+    "Life": 255,
+    "TypeId": 926363716,
     "Position": {
       "X": 17408,
       "Y": 17408,
@@ -277,7 +254,7 @@
       "Y": 0.99999994,
       "Z": 0.99999994
     },
-    "SkinId": 875704386,
+    "SkinId": 926363716,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 27545
@@ -345,22 +322,22 @@
   },
   {
     "State": 2,
-    "Life": 100,
-    "TypeId": 875573314,
+    "Life": 255,
+    "TypeId": 892809284,
     "Position": {
-      "X": 17152,
-      "Y": 17408,
+      "X": 17408,
+      "Y": 17600,
       "Z": 54.5
     },
-    "Rotation": 4.712389,
+    "Rotation": 2.75762,
     "Scale": {
-      "X": 1.1353556,
-      "Y": 1.1353556,
-      "Z": 1.1353556
+      "X": 0.78795135,
+      "Y": 0.78795135,
+      "Z": 0.78795135
     },
-    "SkinId": 875573314,
+    "SkinId": 892809284,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 15385
+    "CreationNumber": 5079
   }
 ]

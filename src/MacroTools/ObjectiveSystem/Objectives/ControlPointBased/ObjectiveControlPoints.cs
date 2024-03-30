@@ -22,7 +22,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       set
       {
         _controlPointCount = value;
-        Description = $"Your team controls {ControlPointCount} / {_progressByControlPoint.Count} CPs {_rectName}";
+        Description = $"You control {ControlPointCount} / {_progressByControlPoint.Count} CPs {_rectName}";
         CheckObjectiveProgress();
       }
     }
@@ -44,13 +44,13 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       foreach (var controlPoint in _progressByControlPoint.Keys.ToArray())
       {
         controlPoint.OwnerAllianceChanged += OnTargetOwnerAllianceChanged;
-        SetControlPointProgress(controlPoint, IsPlayerAlliedToAnyEligibleFaction(controlPoint.Unit.OwningPlayer()));
+        SetControlPointProgress(controlPoint, IsPlayerOnSameTeamAsAnyEligibleFaction(controlPoint.Unit.OwningPlayer()));
       }
     }
 
     private void OnTargetOwnerAllianceChanged(object? sender, ControlPoint controlPoint)
     {
-      SetControlPointProgress(controlPoint, IsPlayerAlliedToAnyEligibleFaction(controlPoint.Owner));
+      SetControlPointProgress(controlPoint, IsPlayerOnSameTeamAsAnyEligibleFaction(controlPoint.Owner));
     }
     
     private void SetControlPointProgress(ControlPoint controlPoint, bool newProgress)

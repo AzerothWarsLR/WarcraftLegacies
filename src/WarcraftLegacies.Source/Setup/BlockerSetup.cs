@@ -1,6 +1,4 @@
-﻿using static War3Api.Common;
-
-namespace WarcraftLegacies.Source.Setup
+﻿namespace WarcraftLegacies.Source.Setup
 {
   /// <summary>
   /// Hides all pathing blockers on the map.

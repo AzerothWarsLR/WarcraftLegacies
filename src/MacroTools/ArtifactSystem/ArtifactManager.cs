@@ -35,7 +35,7 @@ namespace MacroTools.ArtifactSystem
     /// </summary>
     public static bool TryGetByName(string name, [NotNullWhen(true)] out Artifact? artifact)
     {
-      artifact = ArtifactsByName.ContainsKey(name.ToLower()) ? ArtifactsByName[name.ToLower()] : null;
+      artifact = ArtifactsByName.TryGetValue(name.ToLower(), out var value) ? value : null;
       return artifact != null;
     }
 

@@ -67,13 +67,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Mages\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Dispel Magic."
+      "Value": "Increases Mages\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Dispel Magic."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Mages\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Ice Fall."
+      "Value": "Increases Mages\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Ice Fall."
     }
   ]
 }

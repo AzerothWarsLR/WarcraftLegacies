@@ -37,18 +37,6 @@
       "Id": 829453415,
       "Type": 3,
       "Value": "Research Spirit Walker Master Training"
-    },
-    {
-      "Level": 1,
-      "Id": 828536167,
-      "Type": 3,
-      "Value": "Increases Spirit Walkers\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Disenchant."
-    },
-    {
-      "Level": 2,
-      "Id": 828536167,
-      "Type": 3,
-      "Value": "Increases Spirit Walkers\u0027 mana capacity, mana regeneration rate, attack damage and gives them the ability to cast Ancestral Spirit."
     }
   ]
 }

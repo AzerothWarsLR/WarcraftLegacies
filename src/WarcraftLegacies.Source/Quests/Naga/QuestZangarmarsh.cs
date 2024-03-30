@@ -7,7 +7,6 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Naga
 {
@@ -27,7 +26,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
       AddObjective(new ObjectiveLegendInRect(vashj, rescueRect, "Zangarmarsh"));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = Constants.UPGRADE_R03B_QUEST_COMPLETED_THE_COILFANG_RESERVOIR;
+      ResearchId = UPGRADE_R03B_QUEST_COMPLETED_THE_COILFANG_RESERVOIR;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       
     }

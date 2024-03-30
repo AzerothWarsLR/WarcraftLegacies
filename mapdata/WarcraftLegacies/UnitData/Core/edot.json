@@ -14,18 +14,6 @@
       "Value": 4
     },
     {
-      "Id": 1768186485,
-      "Value": 2
-    },
-    {
-      "Id": 1633837685,
-      "Value": 2
-    },
-    {
-      "Id": 1769169525,
-      "Value": 2
-    },
-    {
       "Id": 1819239285,
       "Type": 2,
       "Value": 8
@@ -81,26 +69,18 @@
       "Value": 3
     },
     {
-      "Id": 1932616053,
-      "Value": 5
-    },
-    {
       "Id": 1937141109,
       "Value": 220
     },
     {
       "Id": 1919381621,
       "Type": 3,
-      "Value": "Rguv,R002,R00K,Redt,Reuv,Repm"
+      "Value": "Rguv,R002,Redt,Rhme,Rhar,Reuv,Repm"
     },
     {
       "Id": 1633772661,
       "Type": 3,
       "Value": "A0HT"
-    },
-    {
-      "Id": 1986358389,
-      "Value": 1
     }
   ]
 }

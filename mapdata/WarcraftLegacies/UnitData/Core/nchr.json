@@ -10,11 +10,6 @@
       "Value": "A0I8,A0LQ,A0ES,A0SX,A0EH,Aion,A07J"
     },
     {
-      "Id": 1949393269,
-      "Type": 3,
-      "Value": "normal"
-    },
-    {
       "Id": 1633772661,
       "Type": 3,
       "Value": "A0EH"
@@ -67,10 +62,6 @@
       "Value": 750
     },
     {
-      "Id": 1986358389,
-      "Value": 3
-    },
-    {
       "Id": 1836412021,
       "Value": 0
     },
@@ -101,16 +92,9 @@
       "Value": "R03O,Roen,R02L,R00Y,Rhar,Rhme,R00O,Rguv"
     },
     {
-      "Id": 1633837685,
-      "Value": 10
-    },
-    {
-      "Id": 1768186485,
-      "Value": 4
-    },
-    {
-      "Id": 1769169525,
-      "Value": 2
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "normal"
     }
   ]
 }

@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
@@ -9,7 +8,6 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Dalaran
 {
@@ -31,17 +29,15 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     {
       foreach (var prerequisite in prerequisites) 
         AddObjective(new ObjectiveQuestComplete(prerequisite));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N018_DURNHOLDE)));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0EB_JINTHA_ALOR)));
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_H068_OBSERVATORY_DALARAN_T3, Constants.UNIT_H065_REFUGE_DALARAN_T1));
+      AddObjective(new ObjectiveControlPoint(UNIT_N018_DURNHOLDE));
+      AddObjective(new ObjectiveUpgrade(UNIT_H068_OBSERVATORY_DALARAN_T3, UNIT_H065_REFUGE_DALARAN_T1));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = Constants.UPGRADE_R038_QUEST_COMPLETED_OUTSKIRTS;
+      ResearchId = UPGRADE_R038_QUEST_COMPLETED_OUTSKIRTS;
 
       foreach (var rectangle in rescueRects)
         _rescueUnits.AddRange(rectangle.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures,
-          unit => unit.GetTypeId() != Constants.UNIT_N0DK_SKULL_OF_GUL_DAN_PEDESTAL && unit.GetTypeId() != Constants.UNIT_NBSM_BOOK_OF_MEDIVH));
-      
+          unit => unit.GetTypeId() != UNIT_N0DK_SKULL_OF_GUL_DAN_PEDESTAL && unit.GetTypeId() != UNIT_NBSM_BOOK_OF_MEDIVH));    
     }
 
     /// <inheritdoc/>

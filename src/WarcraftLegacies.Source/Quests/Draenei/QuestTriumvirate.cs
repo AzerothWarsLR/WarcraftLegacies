@@ -1,12 +1,10 @@
 using MacroTools.ArtifactSystem;
-using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Draenei
 {
@@ -19,9 +17,9 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       @"ReplaceableTextures\CommandButtons\BTNNeverMeltingCrown.blp")
     {
       _velen = velen;
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n0BH"))));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n0BL"))));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n09X"))));
+      AddObjective(new ObjectiveControlPoint(FourCC("n0BH")));
+      AddObjective(new ObjectiveControlPoint(FourCC("n0BL")));
+      AddObjective(new ObjectiveControlPoint(FourCC("n09X")));
       AddObjective(new ObjectiveLegendNotPermanentlyDead(velen));
       Global = true;
     }
@@ -35,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      var crownOfTheTriumvirate = new Artifact(CreateItem(Constants.ITEM_I011_CROWN_OF_THE_TRIUMVIRATE, 0, 0));
+      var crownOfTheTriumvirate = new Artifact(CreateItem(ITEM_I011_CROWN_OF_THE_TRIUMVIRATE, 0, 0));
       ArtifactManager.Register(crownOfTheTriumvirate);
       _velen.Unit?.AddItemSafe(crownOfTheTriumvirate.Item);
     }

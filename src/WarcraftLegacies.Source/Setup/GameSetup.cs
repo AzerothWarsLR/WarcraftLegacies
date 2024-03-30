@@ -11,7 +11,6 @@ using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.GameModes;
 using WarcraftLegacies.Source.UnitTypes;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup
 {
@@ -37,10 +36,10 @@ namespace WarcraftLegacies.Source.Setup
       ShoreSetup.Setup();
       ControlPointSetup.Setup();
       InstanceSetup.Setup(preplacedUnitSystem);
+      NeutralHostileSetup.Setup();
       TeamSetup.Setup();
       new PlayerSetup(preplacedUnitSystem, allLegendSetup, artifactSetup).Setup();
       FactionChoiceDialogSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
-      NeutralHostileSetup.Setup();
       SharedQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       ObserverSetup.Setup(new[] { Player(21) });
       SpellsSetup.Setup();
@@ -100,12 +99,12 @@ namespace WarcraftLegacies.Source.Setup
       {
         StartingMaxHitPoints = 1900,
         HostileStartingCurrentHitPoints = 1000,
-        RegenerationAbility = Constants.ABILITY_A0UT_CP_LIFE_REGEN,
-        PiercingResistanceAbility = Constants.ABILITY_A13X_MAGIC_RESISTANCE_CONTROL_POINT_TOWER,
-        IncreaseControlLevelAbilityTypeId = Constants.ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
+        RegenerationAbility = ABILITY_A0UT_CP_LIFE_REGEN,
+        PiercingResistanceAbility = ABILITY_A13X_MAGIC_RESISTANCE_CONTROL_POINT_TOWER,
+        IncreaseControlLevelAbilityTypeId = ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
         ControlLevelSettings = new ControlLevelSettings
         {
-          DefaultDefenderUnitTypeId = Constants.UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON,
+          DefaultDefenderUnitTypeId = UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON,
           DamageBase = 8,
           DamagePerControlLevel = 1,
           ArmorPerControlLevel = 1,

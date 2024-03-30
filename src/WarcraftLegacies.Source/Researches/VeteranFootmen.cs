@@ -1,7 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ResearchSystems;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Researches
 {
@@ -12,7 +11,7 @@ namespace WarcraftLegacies.Source.Researches
   public sealed class VeteranFootmen : Research
   {
     /// <inheritdoc />
-    public VeteranFootmen(int researchTypeId, int goldCost, int lumberCost) : base(researchTypeId, goldCost, lumberCost)
+    public VeteranFootmen(int researchTypeId, int goldCost) : base(researchTypeId, goldCost)
     {
     }
 
@@ -20,8 +19,8 @@ namespace WarcraftLegacies.Source.Researches
     public override void OnResearch(player researchingPlayer)
     {
       var faction = researchingPlayer.GetFaction();
-      faction?.ModObjectLimit(Constants.UNIT_HFOO_FOOTMAN_LORDAERON, -Faction.UNLIMITED);
-      faction?.ModObjectLimit(Constants.UNIT_H029_VETERAN_FOOTMAN_LORDAERON, Faction.UNLIMITED);
+      faction?.ModObjectLimit(UNIT_HFOO_FOOTMAN_LORDAERON, -Faction.UNLIMITED);
+      faction?.ModObjectLimit(UNIT_H029_VETERAN_FOOTMAN_LORDAERON, Faction.UNLIMITED);
     }
   }
 }

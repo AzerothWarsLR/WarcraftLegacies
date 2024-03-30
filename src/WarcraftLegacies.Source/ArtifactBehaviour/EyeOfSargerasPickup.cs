@@ -3,7 +3,6 @@ using MacroTools.Extensions;
 using MacroTools.Libraries;
 using WCSharp.Events;
 using WCSharp.Missiles;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.ArtifactBehaviour
 {
@@ -17,7 +16,7 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
     /// </summary>
     public static void Setup()
     {
-      PlayerUnitEvents.Register(ItemTypeEvent.IsPickedUp, OnEyeOfSargerasPickedUp, Constants.ITEM_I003_EYE_OF_SARGERAS);
+      PlayerUnitEvents.Register(ItemTypeEvent.IsPickedUp, OnEyeOfSargerasPickedUp, ITEM_I003_EYE_OF_SARGERAS);
     }
 
     private static void OnEyeOfSargerasPickedUp()
@@ -32,7 +31,7 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
       if (hostileNearby == null)
       {
         PlayerUnitEvents.Unregister(ItemTypeEvent.IsPickedUp, OnEyeOfSargerasPickedUp,
-          Constants.ITEM_I003_EYE_OF_SARGERAS);
+          ITEM_I003_EYE_OF_SARGERAS);
         return;
       }
 

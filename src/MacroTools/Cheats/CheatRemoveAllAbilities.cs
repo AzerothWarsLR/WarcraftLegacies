@@ -13,12 +13,9 @@ namespace MacroTools.Cheats
   {
     /// <inheritdoc />
     public override string CommandText => "removeAllAbilities";
-    
-    /// <inheritdoc />
-    public override bool Exact => true;
 
     /// <inheritdoc />
-    public override int MinimumParameterCount => 0;
+    public override ExpectedParameterCount ExpectedParameterCount => new(0);
 
     /// <inheritdoc />
     public override CommandType Type => CommandType.Cheat;

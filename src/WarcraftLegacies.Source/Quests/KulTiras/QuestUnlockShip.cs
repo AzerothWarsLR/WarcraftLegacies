@@ -3,13 +3,13 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 using static War3Api.Blizzard;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using System.Linq;
+using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
@@ -26,16 +26,16 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     /// </summary>
     /// <param name="rescueRect">All units in this area will be made neutral, then rescued when the quest is completed.</param>
     /// <param name="proudmooreCapitalShip">starts invulnerable and unusable. Made usuable and vulnerable when the quest is completed.</param>
-    /// <param name="legendBoralus">Must be controlled to complete the quest.</param>
     /// <param name="daelinProudmoore">Must be controlled to complete the quest.</param>
-    public QuestUnlockShip(Rectangle rescueRect, unit proudmooreCapitalShip, Capital legendBoralus,
-      LegendaryHero daelinProudmoore) : base("Stranglethorn Expedition",
+    /// <param name="prerequisite">Needs to be completed first.</param>
+    public QuestUnlockShip(Rectangle rescueRect, unit proudmooreCapitalShip, LegendaryHero daelinProudmoore,
+      QuestData prerequisite) : base("Stranglethorn Expedition",
       "The Stranglethorn vale is still infested with trolls and pirates. If peace is to be brought back to the South Alliance, it needs to be purged",
       @"ReplaceableTextures\CommandButtons\BTNGalleonIcon.blp")
     {
-      AddObjective(new ObjectiveControlCapital(legendBoralus, false));
+      AddObjective(new ObjectiveQuestComplete(prerequisite));
       AddObjective(new ObjectiveControlLegend(daelinProudmoore, false));
-      AddObjective(new ObjectiveResearch(Constants.UPGRADE_R05J_STRANGLETHORN_EXPEDITION_KULTIRAS, Constants.UNIT_H046_BORALUS_KEEP_KUL_TIRAS));
+      AddObjective(new ObjectiveResearch(UPGRADE_R05J_STRANGLETHORN_EXPEDITION_KULTIRAS, UNIT_H046_BORALUS_KEEP_KUL_TIRAS));
       AddObjective(new ObjectiveSelfExists());
       _proudmooreCapitalShip = proudmooreCapitalShip;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

@@ -34,17 +34,13 @@
       "Value": 800
     },
     {
-      "Id": 1836412021,
-      "Value": 15
-    },
-    {
       "Id": 1920298101,
-      "Value": 20
+      "Value": 0
     },
     {
       "Id": 1768648053,
       "Type": 3,
-      "Value": "I00Q,sreg,phea,pman,stwp,I00L,hslv,I00S,tsct,spro"
+      "Value": "I00Q,sreg,phea,pman,stwp,hslv,I00S,tsct,spro"
     },
     {
       "Id": 1852404597,

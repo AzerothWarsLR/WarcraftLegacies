@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       @"ReplaceableTextures\CommandButtons\BTNHolyNova.blp")
     {
       AddObjective(new ObjectiveLegendLevel(uther, 12));
-      ResearchId = Constants.UPGRADE_R01Q_QUEST_COMPLETED_CHAMPION_OF_THE_LIGHT;
+      ResearchId = UPGRADE_R01Q_QUEST_COMPLETED_CHAMPION_OF_THE_LIGHT;
     }
 
     /// <inheritdoc />

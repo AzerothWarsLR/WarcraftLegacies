@@ -36,10 +36,6 @@
       "Value": 900
     },
     {
-      "Id": 1836412021,
-      "Value": 30
-    },
-    {
       "Id": 1952542837,
       "Type": 3,
       "Value": "PathTextures\\6x6SimpleSolid.tga"
@@ -56,7 +52,7 @@
     {
       "Id": 1936028277,
       "Type": 3,
-      "Value": "R09X,R00K,R04R,R00C,R006,Rhme,Rhar"
+      "Value": "R09X,R04R,R00C,R006,Rhme,Rhar"
     },
     {
       "Id": 1634890869,

@@ -5,7 +5,6 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests
 {
@@ -44,9 +43,9 @@ namespace WarcraftLegacies.Source.Quests
       var azureFragmentHolder = _fragments.First().OwningUnit;
       foreach (var artifact in _fragments)
         ArtifactManager.Destroy(artifact);
-      var zinrokh = new Artifact(CreateItem(Constants.ITEM_I016_ZIN_ROKH_DESTROYER_OF_WORLDS, 0, 0))
+      var zinrokh = new Artifact(CreateItem(ITEM_I016_ZIN_ROKH_DESTROYER_OF_WORLDS, 0, 0))
       {
-        TitanforgedAbility = Constants.ABILITY_A0VM_TITANFORGED_9_STRENGTH
+        TitanforgedAbility = ABILITY_A0VM_TITANFORGED_9_STRENGTH
       };
       ArtifactManager.Register(zinrokh);
       azureFragmentHolder?.AddItemSafe(zinrokh.Item);

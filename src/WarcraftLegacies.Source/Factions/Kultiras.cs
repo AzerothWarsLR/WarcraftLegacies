@@ -6,7 +6,6 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using WarcraftLegacies.Source.Quests.KulTiras;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -16,14 +15,15 @@ namespace WarcraftLegacies.Source.Factions
     private readonly unit _proudmooreCapitalShip;
 
     /// <inheritdoc />
+    
     public Kultiras(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Kul'tiras",
       PLAYER_COLOR_EMERALD, "|cff00781e", @"ReplaceableTextures\CommandButtons\BTNProudmoore.blp")
     {
+      TraditionalTeam = TeamSetup.SouthAlliance;
       _allLegendSetup = allLegendSetup;
-      _proudmooreCapitalShip = preplacedUnitSystem.GetUnit(Constants.UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS);
+      _proudmooreCapitalShip = preplacedUnitSystem.GetUnit(UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS);
       StartingGold = 200;
-      StartingLumber = 700;
-      ControlPointDefenderUnitTypeId = Constants.UNIT_H09W_CONTROL_POINT_DEFENDER_KUL_TIRAS;
+      ControlPointDefenderUnitTypeId = UNIT_H09W_CONTROL_POINT_DEFENDER_KUL_TIRAS;
       IntroText = @"You are playing as the maritime |cff008000Kingdom of Kul'tiras|r.
 
 You begin on Balor island, separated from your main forces in Kul Tiras. Unite your forces by eliminating your enemies in Tiragarde, Drustvar and Stormsong Valley.
@@ -33,7 +33,13 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       {
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4585, -13038))
       };
-      
+      Nicknames = new List<string>
+      {
+        "kt",
+        "kul",
+        "kultiras"
+      };
+
       RegisterFactionDependentInitializer<Frostwolf>(RegisterDialogue);
     }
 
@@ -47,8 +53,6 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
 
     private void RegisterObjectLimits()
     {
-      SharedFactionConfigSetup.AddSharedFactionConfig(this);
-
       ModObjectLimit(FourCC("h062"), UNLIMITED); //Town Hall
       ModObjectLimit(FourCC("h064"), UNLIMITED); //Keep
       ModObjectLimit(FourCC("h06I"), UNLIMITED); //Castle
@@ -102,22 +106,22 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       ModObjectLimit(FourCC("R01T"), UNLIMITED); //Cluster Rockets
       ModObjectLimit(FourCC("R01U"), UNLIMITED); //Improved Barrage
       ModObjectLimit(FourCC("R05G"), UNLIMITED); //Thornspeaker Training
-      ModObjectLimit(FourCC("Rhlh"), UNLIMITED); //Improved Lumber Harvesting
       ModObjectLimit(FourCC("Rhac"), UNLIMITED); //Improved Masonry
       ModObjectLimit(FourCC("R08B"), UNLIMITED); //Long Rifles
       ModObjectLimit(FourCC("R05J"), UNLIMITED); //Expedition
 
       //Heroes
-      ModObjectLimit(Constants.UNIT_HAPM_LORD_ADMIRAL_OF_KUL_TIRAS_KUL_TIRAS, 1);
-      ModObjectLimit(Constants.UNIT_H05L_LADY_OF_HOUSE_PROUDMOORE_KUL_TIRAS, 1);
-      ModObjectLimit(Constants.UNIT_U026_MATRIARCH_OF_HOUSE_WAYCREST_KULTIRAS, 1);
+      ModObjectLimit(UNIT_HAPM_LORD_ADMIRAL_OF_KUL_TIRAS_KUL_TIRAS, 1);
+      ModObjectLimit(UNIT_H05L_LADY_OF_HOUSE_PROUDMOORE_KUL_TIRAS, 1);
+      ModObjectLimit(UNIT_U026_MATRIARCH_OF_HOUSE_WAYCREST_KULTIRAS, 1);
     }
 
     private void RegisterQuests()
     {
-      StartingQuest = AddQuest(new QuestBoralus(Regions.Kultiras));
-      AddQuest(new QuestUnlockShip(Regions.ShipAmbient, _proudmooreCapitalShip, _allLegendSetup.Kultiras.LegendBoralus,
-        _allLegendSetup.Kultiras.LegendAdmiral));
+      var questBoralus = new QuestBoralus(Regions.Kultiras);
+      StartingQuest = AddQuest(questBoralus);
+      AddQuest(new QuestUnlockShip(Regions.ShipAmbient, _proudmooreCapitalShip, _allLegendSetup.Kultiras.LegendAdmiral,
+        questBoralus));
       AddQuest(new QuestOldHatreds(_allLegendSetup.Kultiras.LegendAdmiral));
       AddQuest(new QuestWestfallOutpost(Regions.StranglethornBaseBuild));
       AddQuest(new QuestHighBank(Regions.HighbankUnlock, _allLegendSetup.Kultiras.LegendKatherine));

@@ -9,7 +9,6 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Druids
 {
@@ -45,12 +44,11 @@ namespace WarcraftLegacies.Source.Quests.Druids
       AddObjective(new ObjectiveArtifactInRect(hornofCenarius, Regions.Moonglade,
         "The Barrow Den"));
       AddObjective(new ObjectiveExpire(480, Title));
-      AddObjective(new ObjectiveUpgrade(Constants.UNIT_ETOE_TREE_OF_ETERNITY_DRUID_T3, Constants.UNIT_ETOL_TREE_OF_LIFE_DRUID_T1));
+      AddObjective(new ObjectiveUpgrade(UNIT_ETOE_TREE_OF_ETERNITY_DRUID_T3, UNIT_ETOL_TREE_OF_LIFE_DRUID_T1));
       AddObjective(new ObjectiveSelfExists());
       _moongladeUnits = moonglade.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _darnassusUnits = darnassus.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       worldTree.SetInvulnerable(true);
-      
     }
 
     /// <inheritdoc />
@@ -70,6 +68,8 @@ namespace WarcraftLegacies.Source.Quests.Druids
       rescuer.RescueGroup(_moongladeUnits);
       rescuer.RescueGroup(_darnassusUnits);
       rescuer.RescueGroup(_cenarionHoldUnits);
+      
+      RemoveFurionBlockers();
     }
 
     /// <inheritdoc />
@@ -79,6 +79,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
       completingFaction.Player.RescueGroup(_darnassusUnits);
       completingFaction.Player.RescueGroup(_cenarionHoldUnits);
       _worldTree.Rescue(completingFaction.Player);
+      RemoveFurionBlockers();
       if (_malfurion.Unit == null)
       {
         _malfurion.ForceCreate(completingFaction.Player, Regions.Moonglade.Center,
@@ -92,5 +93,8 @@ namespace WarcraftLegacies.Source.Quests.Druids
         _hornofCenarius.Item.SetPositionSafe(GetTriggerUnit().GetPosition());
       }
     }
+
+    private static void RemoveFurionBlockers() => EnumDestructablesInRect(Regions.FurionBlockers.Rect, null,
+      () => KillDestructable(GetEnumDestructable()));
   }
 }

@@ -17,9 +17,9 @@ namespace WarcraftLegacies.Source.Setup.Spells
     public static void Setup()
     {
       
-      SpellSystem.Register(new SlipstreamSpellSpecificLocation(Constants.ABILITY_A07D_PORTAL_TO_BLACK_TEMPLE_ILLIDAN)
+      SpellSystem.Register(new SlipstreamSpellSpecificLocation(ABILITY_A07D_PORTAL_TO_BLACK_TEMPLE_ILLIDAN)
       {
-        PortalUnitTypeId = Constants.UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
+        PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 20,
         ClosingDelay = 15,
         TargetLocation = new Point(5030, -30000),

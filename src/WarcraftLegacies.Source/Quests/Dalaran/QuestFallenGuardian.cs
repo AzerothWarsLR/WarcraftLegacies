@@ -1,9 +1,7 @@
-﻿using MacroTools.ControlPointSystem;
-using MacroTools.LegendSystem;
+﻿using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Dalaran
 {
@@ -15,8 +13,8 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       @"ReplaceableTextures\CommandButtons\BTNMedivh.blp")
     {
       AddObjective(new ObjectiveControlCapital(karazhan, false));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(FourCC("n00J"))));
-      ResearchId = FourCC("R04K");
+      AddObjective(new ObjectiveControlPoint(UNIT_N00J_TOMB_OF_SARGERAS, false));
+      ResearchId = UPGRADE_R04K_QUEST_COMPLETED_THE_FALLEN_GUARDIAN_DALARAN;
     }
 
     /// <inheritdoc/>

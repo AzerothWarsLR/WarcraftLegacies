@@ -21,7 +21,6 @@ namespace TestMap.Source.Setup
       commandManager.Register(new CheatQuestProgress("fail", QuestProgress.Failed));
       commandManager.Register(new CheatQuestProgress("uncomplete", QuestProgress.Incomplete));
       commandManager.Register(new CheatQuestProgress("undiscover", QuestProgress.Undiscovered));
-      commandManager.Register(new CheatLumber());
       commandManager.Register(new CheatMana());
       commandManager.Register(new CheatMp());
       commandManager.Register(new CheatNocd());

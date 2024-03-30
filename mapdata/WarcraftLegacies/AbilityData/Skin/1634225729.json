@@ -23,7 +23,7 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Harvests lumber from trees."
+      "Value": "Harvest Gold from gold mines"
     },
     {
       "Level": 2,
@@ -35,7 +35,7 @@
       "Level": 2,
       "Id": 829781345,
       "Type": 3,
-      "Value": "Return the carried resources."
+      "Value": "Return the carried gold."
     },
     {
       "Level": 2,
@@ -47,13 +47,13 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Harvests lumber from trees."
+      "Value": "Harvest Gold from gold mines"
     },
     {
       "Level": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "Return the carried resources."
+      "Value": "Return the carried gold."
     }
   ]
 }

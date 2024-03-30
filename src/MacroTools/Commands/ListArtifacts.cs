@@ -11,10 +11,7 @@ namespace MacroTools.Commands
     public override string CommandText => "artifacts";
 
     /// <inheritdoc />
-    public override bool Exact => true;
-
-    /// <inheritdoc />
-    public override int MinimumParameterCount => 0;
+    public override ExpectedParameterCount ExpectedParameterCount => new(0);
 
     /// <inheritdoc />
     public override CommandType Type => CommandType.Normal;
@@ -25,7 +22,9 @@ namespace MacroTools.Commands
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      return string.Join(", ", ArtifactManager.GetAllArtifacts().Select(x => GetItemName(x.Item)));
+      var artifactList = string.Join(", ", ArtifactManager.GetAllArtifacts().Select(x => GetItemName(x.Item)));
+      return
+        $"{artifactList}\n\nType -artifact followed by the name of one of the artifacts for extra information about it.";
     }
   }
 }

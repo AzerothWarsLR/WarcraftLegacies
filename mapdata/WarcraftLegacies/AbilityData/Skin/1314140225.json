@@ -72,13 +72,13 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Harvests lumber from trees."
+      "Value": "Harvest Gold from gold mines"
     },
     {
       "Level": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "Returns carried lumber."
+      "Value": "Return the carried gold."
     }
   ]
 }

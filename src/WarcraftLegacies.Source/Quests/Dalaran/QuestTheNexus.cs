@@ -3,7 +3,6 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup.Legends;
-using static War3Api.Common; 
 
 namespace WarcraftLegacies.Source.Quests.Dalaran
 {
@@ -22,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       AddObjective(new ObjectiveCapitalDead(legendDalaran.Dalaran));
       AddObjective(new ObjectiveDontControlLegend(legendDalaran.Aegwynn));
       AddObjective(new ObjectiveControlCapital(theNexus, false));
-      ResearchId = Constants.UPGRADE_R03Y_QUEST_COMPLETED_THE_NEXUS;
+      ResearchId = UPGRADE_R03Y_QUEST_COMPLETED_THE_NEXUS;
       Global = true;
     }
 
@@ -49,19 +48,19 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       completingFaction.ModObjectLimit(FourCC("R061"), -Faction.UNLIMITED); //Forked Lightning
 
       completingFaction.ModObjectLimit(FourCC("U027"), 1); //Kalecgos
-      completingFaction.ModObjectLimit(Constants.UNIT_H04A_LORD_OF_THE_NEXUS_NEXUS, 1);
-      completingFaction.ModObjectLimit(Constants.UNIT_H09N_MATRIARCH_OF_TIRISFAL_DALARAN, -1);
+      completingFaction.ModObjectLimit(UNIT_H04A_LORD_OF_THE_NEXUS_NEXUS, 1);
+      completingFaction.ModObjectLimit(UNIT_H09N_MATRIARCH_OF_TIRISFAL_DALARAN, -1);
 
-      completingFaction.ModObjectLimit(Constants.UNIT_N0A1_CRYSTAL_LORD_NEXUS, 6);
-      completingFaction.ModObjectLimit(Constants.UNIT_H09C_WHELP_DALARAN, Faction.UNLIMITED);
-      completingFaction.ModObjectLimit(Constants.UNIT_H099_ZEALOT_NEXUS, Faction.UNLIMITED);
-      completingFaction.ModObjectLimit(Constants.UNIT_N0A4_BLUE_DRAGONSPAWN_NEXUS, Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(UNIT_N0A1_CRYSTAL_LORD_NEXUS, 6);
+      completingFaction.ModObjectLimit(UNIT_H09C_WHELP_DALARAN, Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(UNIT_H099_ZEALOT_NEXUS, Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(UNIT_N0A4_BLUE_DRAGONSPAWN_NEXUS, Faction.UNLIMITED);
       completingFaction.ModObjectLimit(FourCC("u025"), 12); //Elementalist
-      completingFaction.ModObjectLimit(Constants.UNIT_N09T_JUDICATOR_NEXUS, 6);
-      completingFaction.ModObjectLimit(Constants.UNIT_H09A_DRACONIC_SPIRE_DALARAN_BARRACKS_ALTERNATE, Faction.UNLIMITED);
-      completingFaction.ModObjectLimit(Constants.UNIT_H09B_BLUE_DRAGON_ROOST_DALARAN_SIEGE, Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(UNIT_N09T_JUDICATOR_NEXUS, 6);
+      completingFaction.ModObjectLimit(UNIT_H09A_DRACONIC_SPIRE_DALARAN_BARRACKS_ALTERNATE, Faction.UNLIMITED);
+      completingFaction.ModObjectLimit(UNIT_H09B_BLUE_DRAGON_ROOST_DALARAN_SIEGE, Faction.UNLIMITED);
 
-      _jaina.UnitType = Constants.UNIT_H04A_LORD_OF_THE_NEXUS_NEXUS;
+      _jaina.UnitType = UNIT_H04A_LORD_OF_THE_NEXUS_NEXUS;
       
       completingFaction.Name = "The Nexus";
       completingFaction.Icon = @"ReplaceableTextures\CommandButtons\BTNJaina_Archmage.blp";

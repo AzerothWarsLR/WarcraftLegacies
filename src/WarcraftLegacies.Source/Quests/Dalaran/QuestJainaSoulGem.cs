@@ -4,7 +4,6 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Dalaran
 {
@@ -31,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      var soulGem = new Artifact(CreateItem(Constants.ITEM_GSOU_SOUL_GEM, 0, 0));
+      var soulGem = new Artifact(CreateItem(ITEM_GSOU_SOUL_GEM, 0, 0));
       ArtifactManager.Register(soulGem);
       _jaina.Unit?.AddItemSafe(soulGem.Item);
     }

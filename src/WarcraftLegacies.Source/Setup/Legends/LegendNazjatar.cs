@@ -13,19 +13,19 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       Azshara = new LegendaryHero("Azshara")
       {
-        UnitType = Constants.UNIT_H08U_EMPRESS_OF_NAZJATAR_NZOTH,
+        UnitType = UNIT_H08U_EMPRESS_OF_NAZJATAR_NZOTH,
         StartingXp = 10000,
       };
 
       Sivara = new LegendaryHero("Sivara")
       {
-        UnitType = Constants.UNIT_U02U_ABYSSAL_COMMANDER_NAZJATAR,
+        UnitType = UNIT_U02U_ABYSSAL_COMMANDER_NAZJATAR,
         StartingXp = 7000,
       };
 
       Nazjar = new LegendaryHero("Naz'jar")
       {
-        UnitType = Constants.UNIT_H0A5_SEA_WITCH_NZOTH,
+        UnitType = UNIT_H0A5_SEA_WITCH_NZOTH,
         StartingXp = 7000,
       };
     }

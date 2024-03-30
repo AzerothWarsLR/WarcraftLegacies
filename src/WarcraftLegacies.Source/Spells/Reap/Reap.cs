@@ -2,10 +2,10 @@
 using System.Linq;
 using MacroTools;
 using MacroTools.Extensions;
+using MacroTools.Libraries;
 using MacroTools.SpellSystem;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Spells.Reap
 {
@@ -55,6 +55,7 @@ namespace WarcraftLegacies.Source.Spells.Reap
           .EmptyToList()
           .Where(x => IsValidTarget(x, caster))
           .OrderBy(x => GetUnitLevel(x))
+          .ThenBy(x => MathEx.GetDistanceBetweenPoints(caster.GetPosition(), x.GetPosition()))
           .Take(unitsSlain)
           .ToList();
 

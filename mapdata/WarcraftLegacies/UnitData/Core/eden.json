@@ -95,12 +95,12 @@
     },
     {
       "Id": 1920298101,
-      "Value": 20
+      "Value": 0
     },
     {
       "Id": 1768648053,
       "Type": 3,
-      "Value": "I01G,sreg,phea,pman,stwp,I00L,hslv,oven,evtl,pams"
+      "Value": "I01G,sreg,phea,pman,stwp,hslv,oven,evtl,pams"
     },
     {
       "Id": 1953918325,
@@ -214,19 +214,7 @@
     },
     {
       "Id": 1836412021,
-      "Value": 15
-    },
-    {
-      "Id": 1633837685,
-      "Value": 2
-    },
-    {
-      "Id": 1768186485,
-      "Value": 2
-    },
-    {
-      "Id": 1769169525,
-      "Value": 4
+      "Value": 0
     }
   ]
 }

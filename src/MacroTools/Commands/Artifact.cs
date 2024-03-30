@@ -11,10 +11,7 @@ namespace MacroTools.Commands
     public override string CommandText => "artifact";
 
     /// <inheritdoc />
-    public override bool Exact => false;
-
-    /// <inheritdoc />
-    public override int MinimumParameterCount => 1;
+    public override ExpectedParameterCount ExpectedParameterCount => new(1);
 
     /// <inheritdoc />
     public override CommandType Type => CommandType.Normal;

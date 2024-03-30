@@ -15,28 +15,28 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       Gallywix = new LegendaryHero("Gallywix")
       {
-        UnitType = Constants.UNIT_O04N_TRADE_PRINCE_OF_THE_BILGEWATER_CARTEL_GOBLIN,
+        UnitType = UNIT_O04N_TRADE_PRINCE_OF_THE_BILGEWATER_CARTEL_GOBLIN,
         StartingXp = 2800
       };
 
       Noggenfogger = new LegendaryHero("Noggenfogger")
       {
-        UnitType = Constants.UNIT_VH01_BARON_OF_GADGETZAN_GOBLIN,
+        UnitType = UNIT_VH01_BARON_OF_GADGETZAN_GOBLIN,
       };
 
       Gazlowe = new LegendaryHero("Gazlowe")
       {
-        UnitType = Constants.UNIT_NTIN_CHIEF_ENGINEER_GOBLIN,
+        UnitType = UNIT_NTIN_CHIEF_ENGINEER_GOBLIN,
         StartingXp = 1800
       };
 
       KezanTradingCenter = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O04M_KEZAN_TRADING_CENTER_GOBLIN_SPECIAL),
+        Unit = preplacedUnitSystem.GetUnit(UNIT_O04M_KEZAN_TRADING_CENTER_GOBLIN_SPECIAL),
         DeathMessage = "The Trade center for the Goblin Empire has fallen.",
         Essential = true
       };
-      KezanTradingCenter.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_O05I_MISSILE_BATTERY_GOBLIN_TOWER));
+      KezanTradingCenter.AddProtector(preplacedUnitSystem.GetUnit(UNIT_O05I_MISSILE_BATTERY_GOBLIN_TOWER));
     }
     
     public void RegisterLegends()

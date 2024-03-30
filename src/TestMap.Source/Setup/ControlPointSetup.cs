@@ -19,7 +19,7 @@ namespace TestMap.Source.Setup
     {
       foreach (var (unitTypeId, goldValue) in ControlPointValues)
         if (GetUnitAbilityLevel(unit, unitTypeId) > 0)
-          ControlPointManager.Instance.Register(new ControlPoint(unit, goldValue));
+          ControlPointManager.Instance.Register(new ControlPoint(unit, goldValue, true));
     }
 
     public static void Setup()

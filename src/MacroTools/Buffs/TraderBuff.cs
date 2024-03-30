@@ -11,14 +11,12 @@ namespace MacroTools.Buffs
   public sealed class TraderBuff : PassiveBuff
   {
     private readonly int _goldIncomeBonus;
-    private readonly int _lumberIncomeBonus;
     private readonly TriggerWrapper _tradeCenterDiesTrigger = new();
 
-    public TraderBuff(unit caster, unit target, int goldIncomeBonus, int lumberIncomeBonus, unit tradeCenter) : base(
+    public TraderBuff(unit caster, unit target, int goldIncomeBonus, unit tradeCenter) : base(
       caster, target)
     {
       _goldIncomeBonus = goldIncomeBonus;
-      _lumberIncomeBonus = lumberIncomeBonus;
       _tradeCenterDiesTrigger.RegisterUnitEvent(tradeCenter, EVENT_UNIT_DEATH);
       _tradeCenterDiesTrigger.AddAction(TradeCenterDies);
       Duration = float.MaxValue;
@@ -32,13 +30,11 @@ namespace MacroTools.Buffs
     public override void OnApply()
     {
       CastingPlayer.AddBonusIncome(_goldIncomeBonus);
-      CastingPlayer.AddLumberIncome(_lumberIncomeBonus);
     }
 
     public override void OnDispose()
     {
       CastingPlayer.AddBonusIncome(-_goldIncomeBonus);
-      CastingPlayer.AddLumberIncome(-_lumberIncomeBonus);
       _tradeCenterDiesTrigger.Dispose();
     }
   }

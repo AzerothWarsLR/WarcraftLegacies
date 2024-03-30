@@ -1,12 +1,10 @@
 ﻿using System.Collections.Generic;
-using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Goblin
 {
@@ -26,11 +24,11 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       @"ReplaceableTextures\CommandButtons\BTNGoblinShop2.blp")
     {
       AddObjective(
-        new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0A6_RATCHET)));
+        new ObjectiveControlPoint(UNIT_N0A6_RATCHET));
       AddObjective(_enterRatchetRegion = new ObjectiveAnyUnitInRect(Regions.Ratchet_Unlock_1, "Ratchet", true));
       AddObjective(new ObjectiveSelfExists());
       
-      ResearchId = Constants.UPGRADE_VQ01_QUEST_COMPLETED_RATCHET_PORT;
+      ResearchId = UPGRADE_VQ01_QUEST_COMPLETED_RATCHET_PORT;
       _rescueUnits = Regions.Ratchet_Unlock_1.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures,
         filterUnit => filterUnit.GetTypeId() != FourCC("ngme"));
     }

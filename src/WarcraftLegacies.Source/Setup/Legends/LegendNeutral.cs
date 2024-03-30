@@ -1,6 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.LegendSystem;
-using static War3Api.Common;
+
 #pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
@@ -32,11 +32,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       Ragnaros = new LegendaryHero("Ragnaros")
       {
-        UnitType = Constants.UNIT_N00D_PRIMARY_FIRELORD_CREEP,
+        UnitType = UNIT_N00D_PRIMARY_FIRELORD_CREEP,
         DeathMessage = "Ragnaros, the King of Fire and Lord of the Firelands, has been extinguished.",
         StartingArtifacts = new()
         {
-          new(CreateItem(Constants.ITEM_I00H_SULFURAS_HAND_OF_RAGNAROS, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+          new(CreateItem(ITEM_I00H_SULFURAS_HAND_OF_RAGNAROS, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
         },
         StartingXp = 15404
       };
@@ -62,7 +62,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Jinthaalor = new Capital
       {
         Capturable = true,
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O02G_JINTHA_ALOR)
+        Unit = preplacedUnitSystem.GetUnit(UNIT_O02G_JINTHA_ALOR)
       };
 
       ShrineOfUlatek = new Capital
@@ -151,7 +151,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Shaladrassil = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_E01W_SHALADRASSIL_DRUID_OTHER),
+        Unit = preplacedUnitSystem.GetUnit(UNIT_E01W_SHALADRASSIL_DRUID_OTHER),
         Capturable = true
       };
     }

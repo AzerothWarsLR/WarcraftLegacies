@@ -17,10 +17,7 @@ namespace MacroTools.Commands
     public override string CommandText => _commandText;
 
     /// <inheritdoc />
-    public override bool Exact => false;
-
-    /// <inheritdoc />
-    public override int MinimumParameterCount => 2;
+    public override ExpectedParameterCount ExpectedParameterCount => new(2);
 
     /// <inheritdoc />
     public override CommandType Type => CommandType.Normal;

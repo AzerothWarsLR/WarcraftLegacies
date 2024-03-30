@@ -4,7 +4,6 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Ironforge
 {
@@ -31,13 +30,13 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       @"ReplaceableTextures\CommandButtons\BTNGatherGold.blp")
     {
       _rewardArtifactItemTypeId = rewardArtifactItemTypeId;
-      AddObjective(new ObjectiveControlLevel(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BD_ULDUM), 5));
+      AddObjective(new ObjectiveControlLevel(UNIT_N0BD_ULDUM, 5));
     }
 
     /// <inheritdoc />
     protected override void OnComplete(Faction whichFaction)
     {
-      var uldumPosition = ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N0BD_ULDUM).Unit.GetPosition();
+      var uldumPosition = ControlPointManager.Instance.GetFromUnitType(UNIT_N0BD_ULDUM).Unit.GetPosition();
       var rewardArtifact = new Artifact(CreateItem(_rewardArtifactItemTypeId, uldumPosition.X, uldumPosition.Y));
       rewardArtifact.Titanforge();
       ArtifactManager.Register(rewardArtifact);

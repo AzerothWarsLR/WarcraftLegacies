@@ -27,13 +27,9 @@
       "Value": 800
     },
     {
-      "Id": 1836412021,
-      "Value": 15
-    },
-    {
       "Id": 1768648053,
       "Type": 3,
-      "Value": "I00A,sreg,phea,pman,stwp,I00L,hslv,I01P,pdiv,brac"
+      "Value": "I00A,sreg,phea,pman,stwp,hslv,I01P,pdiv,brac"
     },
     {
       "Id": 1852404597,

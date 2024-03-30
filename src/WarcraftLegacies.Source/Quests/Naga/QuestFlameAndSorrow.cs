@@ -15,13 +15,13 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// Initializes a new instance of the <see cref="QuestFlameAndSorrow"/> class.
     /// </summary>
     public QuestFlameAndSorrow(Artifact skullofGuldan, LegendaryHero illidan) : base("A Destiny of Flame and Sorrow",
-      "The Skull of Gul'dan is an artifact of immeasurable demonic power. Illidan will need a lot of power to pierce it's secrets",
+      "The Skull of Gul'dan is an artifact of immeasurable demonic power. Illidan will need to grow stronger before he can extract its energies.",
       @"ReplaceableTextures\CommandButtons\BTNMetamorphosis.blp")
     {
       _skullofGuldan = skullofGuldan;
       AddObjective(new ObjectiveLegendHasArtifact(illidan, skullofGuldan));
       AddObjective(new ObjectiveLegendLevel(illidan, 8));
-      ResearchId = Constants.UPGRADE_R095_QUEST_COMPLETED_A_DESTINY_OF_FLAME_AND_SORROW;
+      ResearchId = UPGRADE_R095_QUEST_COMPLETED_A_DESTINY_OF_FLAME_AND_SORROW;
     }
 
     /// <inheritdoc/>

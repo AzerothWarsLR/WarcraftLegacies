@@ -1,5 +1,4 @@
 ﻿using MacroTools.ArtifactSystem;
-using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
@@ -22,9 +21,9 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
       AddObjective(new ObjectiveAcquireArtifact(zinrokh));
       AddObjective(new ObjectiveArtifactInRect(zinrokh, Regions.DrownedTemple,
         "The Drowned Temple"));
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N00U_SWAMP_OF_SORROWS)));
+      AddObjective(new ObjectiveControlPoint(UNIT_N00U_SWAMP_OF_SORROWS));
       Global = true;
-      ResearchId = Constants.UPGRADE_R06W_QUEST_COMPLETED_THE_BINDING_OF_THE_SOULFLAYER;
+      ResearchId = UPGRADE_R06W_QUEST_COMPLETED_THE_BINDING_OF_THE_SOULFLAYER;
     }
 
     /// <inheritdoc/>

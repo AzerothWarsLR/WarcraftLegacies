@@ -8,12 +8,9 @@ namespace MacroTools.Commands
   {
     /// <inheritdoc />
     public override string CommandText => "settings";
-    
+
     /// <inheritdoc />
-    public override bool Exact => false;
-  
-    /// <inheritdoc />
-    public override int MinimumParameterCount => 0;
+    public override ExpectedParameterCount ExpectedParameterCount => new(0);
 
     /// <inheritdoc />
     public override CommandType Type => CommandType.Normal;

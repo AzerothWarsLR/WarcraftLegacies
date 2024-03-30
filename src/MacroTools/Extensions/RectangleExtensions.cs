@@ -48,23 +48,27 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Removes all Neutral Passive units from the area, except for unremovable units, which are instead made hostile.
     /// </summary>
-    public static void CleanupNeutralPassiveUnits(this Rectangle area)
+    public static void CleanupNeutralPassiveUnits(this Rectangle area, NeutralPassiveCleanupType cleanupType = NeutralPassiveCleanupType.RemoveUnits)
     {
       var unitsInArea = CreateGroup()
         .EnumUnitsInRect(area)
         .EmptyToList();
+      
       foreach (var unit in unitsInArea)
       {
+        if (unit.OwningPlayer() != Player(PLAYER_NEUTRAL_PASSIVE) || unit.GetTypeId() == FourCC("ngol"))
+          continue;
+        
         if (!unit.IsRemovable())
         {
           unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
           continue;
         }
 
-        if (unit.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE) && !IsUnitType(unit, UNIT_TYPE_STRUCTURE))
-        {
+        if (cleanupType == NeutralPassiveCleanupType.RemoveUnits || unit.IsType(UNIT_TYPE_STRUCTURE))
           unit.Remove();
-        }
+        else
+          unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       }
     }
 

@@ -5,13 +5,11 @@ using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ResearchSystems;
-using WarcraftLegacies.Source.FactionMechanics.Frostwolf;
 using WarcraftLegacies.Source.Quests.Frostwolf;
 using WarcraftLegacies.Source.Quests.Warsong;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -22,18 +20,19 @@ namespace WarcraftLegacies.Source.Factions
     private readonly PreplacedUnitSystem _preplacedUnitSystem;
 
     /// <inheritdoc />
+    
     public Frostwolf(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup,
       ArtifactSetup artifactSetup) : base("Frostwolf", PLAYER_COLOR_RED, "|c00ff0303",
       @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
     {
+      TraditionalTeam = TeamSetup.Horde;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
-      UndefeatedResearch = Constants.UPGRADE_R05V_FROSTWOLF_EXISTS;
+      UndefeatedResearch = UPGRADE_R05V_FROSTWOLF_EXISTS;
       StartingGold = 200;
-      StartingLumber = 700;
       CinematicMusic = "SadMystery";
-      ControlPointDefenderUnitTypeId = Constants.UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF;
+      ControlPointDefenderUnitTypeId = UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF;
       IntroText = @"You are playing as the honorable |cffff0000Frostwolf Clan|r.
 
 You begin in the Salt Flats, separated from your ally, the Warsong Clan in the North.
@@ -43,6 +42,13 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8123, -2514)),
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-15828, -3120))
+      };
+      Nicknames = new List<string>
+      {
+        "fw",
+        "frost",
+        "frostwolves",
+        "frostwolve"
       };
       RegisterFactionDependentInitializer<Warsong>(RegisterWarsongDialogue);
       RegisterFactionDependentInitializer<Warsong>(RegisterWarsongRelatedResearches);
@@ -54,43 +60,42 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
       RegisterObjectLimits();
       RegisterQuests();
       RegisterDialogue();
-      PeonsStartHarvestingShips.Setup(_preplacedUnitSystem);
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
     private void RegisterObjectLimits()
     {
-      ModObjectLimit(Constants.UNIT_OGRE_GREAT_HALL_FROSTWOLF_T1, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_OSTR_STRONGHOLD_FROSTWOLF_T2, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_OFRT_FORTRESS_FROSTWOLF_T3, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_OALT_ALTAR_OF_STORMS_FROSTWOLF_ALTAR, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_OBAR_WAR_CAMP_FROSTWOLF_BARRACKS, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_OFOR_WAR_MILL_FROSTWOLF_RESEARCH, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF_SIEGE, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_OSLD_SPIRIT_LODGE_FROSTWOLF_MAGIC, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_OTRB_BURROW_FROSTWOLF_FARM, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_OWTW_WATCH_TOWER_FROSTWOLF_TOWER, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_O002_IMPROVED_WATCH_TOWER_FROSTWOLF_TOWER_2, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_OVLN_VOODOO_LOUNGE_FROSTWOLF_SHOP, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_OSHY_HORDE_PIER_FROSTWOLF_SHIPYARD, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_OOSC_PACK_KODO_FROSTWOLF, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_OBEA_BEASTIARY_FROSTWOLF_SPECIALIST, UNLIMITED);
+      ModObjectLimit(UNIT_OGRE_GREAT_HALL_FROSTWOLF_T1, UNLIMITED);
+      ModObjectLimit(UNIT_OSTR_STRONGHOLD_FROSTWOLF_T2, UNLIMITED);
+      ModObjectLimit(UNIT_OFRT_FORTRESS_FROSTWOLF_T3, UNLIMITED);
+      ModObjectLimit(UNIT_OALT_ALTAR_OF_STORMS_FROSTWOLF_ALTAR, UNLIMITED);
+      ModObjectLimit(UNIT_OBAR_WAR_CAMP_FROSTWOLF_BARRACKS, UNLIMITED);
+      ModObjectLimit(UNIT_OFOR_WAR_MILL_FROSTWOLF_RESEARCH, UNLIMITED);
+      ModObjectLimit(UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF_SIEGE, UNLIMITED);
+      ModObjectLimit(UNIT_OSLD_SPIRIT_LODGE_FROSTWOLF_MAGIC, UNLIMITED);
+      ModObjectLimit(UNIT_OTRB_BURROW_FROSTWOLF_FARM, UNLIMITED);
+      ModObjectLimit(UNIT_OWTW_WATCH_TOWER_FROSTWOLF_TOWER, UNLIMITED);
+      ModObjectLimit(UNIT_O002_IMPROVED_WATCH_TOWER_FROSTWOLF_TOWER_2, UNLIMITED);
+      ModObjectLimit(UNIT_OVLN_VOODOO_LOUNGE_FROSTWOLF_SHOP, UNLIMITED);
+      ModObjectLimit(UNIT_OSHY_HORDE_PIER_FROSTWOLF_SHIPYARD, UNLIMITED);
+      ModObjectLimit(UNIT_OOSC_PACK_KODO_FROSTWOLF, UNLIMITED);
+      ModObjectLimit(UNIT_OBEA_BEASTIARY_FROSTWOLF_SPECIALIST, UNLIMITED);
 
-      ModObjectLimit(Constants.UNIT_OPEO_PEON_FROSTWOLF_WARSONG_WORKER, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_OGRU_GRUNT_FROSTWOLF, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_OTAU_TAUREN_FROSTWOLF, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_OHUN_HEADHUNTER_FROSTWOLF, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_OCAT_CATAPULT_FROSTWOLF, 6);
-      ModObjectLimit(Constants.UNIT_OTBR_BATRIDER_FROSTWOLF, 12);
-      ModObjectLimit(Constants.UNIT_ODOC_WITCH_DOCTOR_FROSTWOLF, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_OSHM_SHAMAN_FROSTWOLF, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_OSPW_SPIRIT_WALKER_FROSTWOLF, UNLIMITED);
-      ModObjectLimit(Constants.UNIT_O00A_FAR_SEER_FROSTWOLF_ELITE, 6);
+      ModObjectLimit(UNIT_OPEO_PEON_FROSTWOLF_WARSONG_WORKER, UNLIMITED);
+      ModObjectLimit(UNIT_OGRU_GRUNT_FROSTWOLF, UNLIMITED);
+      ModObjectLimit(UNIT_OTAU_TAUREN_FROSTWOLF, UNLIMITED);
+      ModObjectLimit(UNIT_OHUN_HEADHUNTER_FROSTWOLF, UNLIMITED);
+      ModObjectLimit(UNIT_OCAT_CATAPULT_FROSTWOLF, 6);
+      ModObjectLimit(UNIT_OTBR_BATRIDER_FROSTWOLF, 12);
+      ModObjectLimit(UNIT_ODOC_WITCH_DOCTOR_FROSTWOLF, UNLIMITED);
+      ModObjectLimit(UNIT_OSHM_SHAMAN_FROSTWOLF, UNLIMITED);
+      ModObjectLimit(UNIT_OSPW_SPIRIT_WALKER_FROSTWOLF, UNLIMITED);
+      ModObjectLimit(UNIT_O00A_FAR_SEER_FROSTWOLF_ELITE, 6);
 
-      ModObjectLimit(Constants.UNIT_O06T_TAUREN_GLADIATOR_FROSTWOLF, 6);
-      ModObjectLimit(Constants.UNIT_H0CN_PACKLEADER_FROSTWOLF, 4);
-      ModObjectLimit(Constants.UNIT_H0CO_MAMMOTH_WRANGLER_FROSTWOLF, 2);
-      ModObjectLimit(Constants.UNIT_N049_WANDERER_FROSTWOLF, 4);
+      ModObjectLimit(UNIT_O06T_TAUREN_GLADIATOR_FROSTWOLF, 6);
+      ModObjectLimit(UNIT_H0CN_PACKLEADER_FROSTWOLF, 4);
+      ModObjectLimit(UNIT_H0CO_MAMMOTH_WRANGLER_FROSTWOLF, 2);
+      ModObjectLimit(UNIT_N049_WANDERER_FROSTWOLF, 4);
 
       //Ship
       ModObjectLimit(FourCC("obot"), UNLIMITED); //Transport Ship
@@ -121,21 +126,19 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
       ModObjectLimit(FourCC("R01Z"), UNLIMITED); //Battle Stations
       SetObjectLevel(FourCC("R01Z"), 1); //Battle Stations
 
-      ModAbilityAvailability(Constants.ABILITY_A0PF_FEL_ENERGY_TEAL_FORTRESSES, -1);
-      ModAbilityAvailability(Constants.ABILITY_ANTR_TROLL_REGENERATION_PINK_WITCH_DOCTOR_TROLL_HEADHUNTER_TROLL_BATRIDER_DARKSPEAR_WARLORD_TROLL_BERSERKER_ICON, -1);
-      ModAbilityAvailability(Constants.ABILITY_A0M4_BATTLE_STATIONS_PINK_GREY_ORC_BURROW_BLOODPACT, -1);
-      ModAbilityAvailability(Constants.ABILITY_ABTL_BATTLE_STATIONS_FROSTWOLF_WARSONG_BURROW, 1);
-      ModAbilityAvailability(Constants.ABILITY_A0GM_FOR_THE_HORDE_PINK_GREY_MAIN_BUILDINGS, 1);
+      ModAbilityAvailability(ABILITY_A0PF_FEL_ENERGY_TEAL_FORTRESSES, -1);
+      ModAbilityAvailability(ABILITY_ANTR_TROLL_REGENERATION_PINK_WITCH_DOCTOR_TROLL_HEADHUNTER_TROLL_BATRIDER_DARKSPEAR_WARLORD_TROLL_BERSERKER_ICON, -1);
+      ModAbilityAvailability(ABILITY_A0M4_BATTLE_STATIONS_PINK_GREY_ORC_BURROW_BLOODPACT, -1);
+      ModAbilityAvailability(ABILITY_ABTL_BATTLE_STATIONS_FROSTWOLF_WARSONG_BURROW, 1);
+      ModAbilityAvailability(ABILITY_A0GM_FOR_THE_HORDE_PINK_GREY_MAIN_BUILDINGS, 1);
       
-      ModObjectLimit(Constants.UPGRADE_R09N_FLIGHT_PATH_WARSONG, 1);
+      ModObjectLimit(UPGRADE_R09N_FLIGHT_PATH_WARSONG, 1);
     }
     
     private void RegisterQuests()
     {
-      StartingQuest = AddQuest(new QuestThunderBluff(_preplacedUnitSystem, Regions.ThunderBluff));
-      AddQuest(new QuestCrossroadsFrostwolf(Regions.Crossroads, _preplacedUnitSystem));
-      AddQuest(new QuestOrgrimmarFrostwolf(Regions.Orgrimmar));
-      AddQuest(new QuestStonemaul(_preplacedUnitSystem, Regions.StonemaulKeep));
+      StartingQuest = AddQuest(new QuestThunderBluff(Regions.ThunderBluff));
+      AddQuest(new QuestStonemaul(Regions.StonemaulKeep));
       AddQuest(new QuestDarkspear());
       AddQuest(new QuestRagetotem(_allLegendSetup.Frostwolf.Cairne));
       AddQuest(new QuestHighmountain(_allLegendSetup.Frostwolf.Cairne, Regions.Highmountain_Unlock));
@@ -243,12 +246,15 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
         }, new[]
         {
           new ObjectiveQuestComplete(warsong.GetQuestByType<QuestFountainOfBlood>())
+          {
+            EligibleFactions = new List<Faction> { warsong }
+          }
         }));
     }
     
     private void RegisterWarsongRelatedResearches(Warsong warsong)
     {
-      ResearchManager.Register(new FlightPath(warsong, this, Constants.UPGRADE_R09N_FLIGHT_PATH_WARSONG, 70, 75,
+      ResearchManager.Register(new FlightPath(warsong, this, UPGRADE_R09N_FLIGHT_PATH_WARSONG, 70,
         _preplacedUnitSystem));
     }
   }

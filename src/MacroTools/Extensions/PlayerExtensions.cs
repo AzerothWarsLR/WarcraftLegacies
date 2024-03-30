@@ -50,12 +50,6 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>
-    /// Returns true if <paramref name="firstPlayer"/> is an ally of <paramref name="secondPlayer"/>.
-    /// </summary>
-    public static bool IsPlayerAlly(this player firstPlayer, player secondPlayer) =>
-      GetPlayerAlliance(firstPlayer, secondPlayer, ALLIANCE_SHARED_XP);
-
-    /// <summary>
     /// Returns the maximum number of units the player can build of the given type, or the maximum research level
     /// the player can achieve for the given type.
     /// </summary>
@@ -91,16 +85,9 @@ namespace MacroTools.Extensions
     /// <summary>Returns the player's gold income, without any bonuses.</summary>
     public static float GetBaseIncome(this player player) => PlayerData.ByHandle(player).BaseIncome;
 
-    /// <summary>Returns the player's lumber income.</summary>
-    public static float GetLumberIncome(this player player) => PlayerData.ByHandle(player).LumberIncome;
-
     /// <summary>Modifies the player's bonus income.</summary>
     public static void AddBonusIncome(this player player, float value) =>
       PlayerData.ByHandle(player).BonusIncome += value;
-
-    /// <summary>Modifies the player's lumber income.</summary>
-    public static void AddLumberIncome(this player player, float value) =>
-      PlayerData.ByHandle(player).LumberIncome += value;
 
     /// <summary>
     /// Rescues all <paramref name="units"/> for <paramref name="newOwningPlayer"/>.
@@ -166,8 +153,19 @@ namespace MacroTools.Extensions
     public static player Select(this player whichPlayer, unit whichUnit)
     {
       if (GetLocalPlayer() == whichPlayer)
-        SelectUnit(GetSoldUnit(), true);
+        SelectUnit(whichUnit, true);
       
+      return whichPlayer;
+    }
+
+    /// <summary>
+    /// Flashes the quest menu for the player.
+    /// </summary>
+    public static player FlashQuests(this player whichPlayer)
+    {
+      if (GetLocalPlayer() == whichPlayer)
+        FlashQuestDialogButton();
+
       return whichPlayer;
     }
 

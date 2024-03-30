@@ -34,16 +34,12 @@
     {
       "Id": 1936028277,
       "Type": 3,
-      "Value": "R04R,R00C,R006,Rosp,R00K,Rhme,Rhar"
+      "Value": "R04R,R00C,R006,Rosp,Rhme,Rhar"
     },
     {
       "Id": 1768055157,
       "Type": 3,
       "Value": "Aspi,Arlm"
-    },
-    {
-      "Id": 1836412021,
-      "Value": 30
     }
   ]
 }

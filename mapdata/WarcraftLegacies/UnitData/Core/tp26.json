@@ -106,6 +106,10 @@
       "Id": 1952542837,
       "Type": 3,
       "Value": "PathTextures\\4x4unbuildable.tga"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
     }
   ]
 }

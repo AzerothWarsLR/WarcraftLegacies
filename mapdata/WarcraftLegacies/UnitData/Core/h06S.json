@@ -49,16 +49,12 @@
     {
       "Id": 1936028277,
       "Type": 3,
-      "Value": "R04R,R00C,R006,R00K,Rhme,Rhar"
+      "Value": "R04R,R00C,R006,Rhme,Rhar"
     },
     {
       "Id": 1919381621,
       "Type": 3,
       "Value": ""
-    },
-    {
-      "Id": 1836412021,
-      "Value": 30
     }
   ]
 }

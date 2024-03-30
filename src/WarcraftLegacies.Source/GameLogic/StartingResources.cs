@@ -1,5 +1,4 @@
 ﻿using MacroTools.Extensions;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.GameLogic
 {
@@ -22,7 +21,6 @@ namespace WarcraftLegacies.Source.GameLogic
           var faction = player.GetFaction();
           if (faction == null) continue;
           SetPlayerState(player, PLAYER_STATE_RESOURCE_GOLD, faction.StartingGold);
-          SetPlayerState(player, PLAYER_STATE_RESOURCE_LUMBER, faction.StartingLumber);
           SetPlayerState(player, PLAYER_STATE_RESOURCE_HERO_TOKENS, 1);
         }
       });

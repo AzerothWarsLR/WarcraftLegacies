@@ -5,7 +5,6 @@ using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Scourge;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Legion
 {
@@ -21,12 +20,12 @@ namespace WarcraftLegacies.Source.Quests.Legion
 
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       
-      ResearchId = Constants.UPGRADE_R01L_QUEST_COMPLETED_A_CUNNING_PLAN;
+      ResearchId = UPGRADE_R01L_QUEST_COMPLETED_A_CUNNING_PLAN;
     }
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Gain control of a small base in Alterac, learn to generate a portal to Alterac using the Argus Teleporter, and gain a {GetObjectName(Constants.UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL)} in each of the following Scourge bases: Deathknell, Stratholme Coast, and Scholomance";
+      $"Gain control of a small base in Alterac, learn to generate a portal to Alterac using the Argus Teleporter, and gain a {GetObjectName(UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL)} in each of the following Scourge bases: Deathknell, Stratholme Coast, and Scholomance";
 
     /// <inheritdoc/>
     public override string RewardFlavour =>
@@ -36,9 +35,9 @@ namespace WarcraftLegacies.Source.Quests.Legion
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.Player.RescueGroup(_rescueUnits);
-      CreateUnit(completingFaction.Player, Constants.UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL, 11138, 12802, 0);
-      CreateUnit(completingFaction.Player, Constants.UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL, 4860, 9277, 0);
-      CreateUnit(completingFaction.Player, Constants.UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL, 14725, 7356, 0);
+      CreateUnit(completingFaction.Player, UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL, 11138, 12802, 0);
+      CreateUnit(completingFaction.Player, UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL, 4860, 9277, 0);
+      CreateUnit(completingFaction.Player, UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL, 14725, 7356, 0);
     }
   }
 }

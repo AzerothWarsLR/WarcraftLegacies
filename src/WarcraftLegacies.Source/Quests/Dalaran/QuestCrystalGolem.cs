@@ -1,4 +1,3 @@
-using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
@@ -10,13 +9,13 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
 {
   public sealed class QuestCrystalGolem : QuestData
   {
-    private const int RewardResearchTypeId = Constants.UPGRADE_R045_HARD_CRYSTAL_CONSTRUCTS_DALARAN_QUEST;
+    private const int RewardResearchTypeId = UPGRADE_R045_HARD_CRYSTAL_CONSTRUCTS_DALARAN_QUEST;
     
     public QuestCrystalGolem(Capital draktharonKeep) : base("Crystalsong Forest",
       "The living crystal of the Crystalsong Forest suffers from its proximity to the Legion. Freed from that corruption, it could be used to empower Dalaran's constructs."
       , @"ReplaceableTextures\CommandButtons\BTNRockGolem.blp")
     {
-      AddObjective(new ObjectiveControlPoint(ControlPointManager.Instance.GetFromUnitType(Constants.UNIT_N02R_CRYSTALSONG_FOREST)));
+      AddObjective(new ObjectiveControlPoint(UNIT_N02R_CRYSTALSONG_FOREST));
       AddObjective(new ObjectiveControlCapital(draktharonKeep, false));
     }
 
@@ -31,8 +30,8 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     {
       completingFaction.SetObjectLevel(RewardResearchTypeId, 1);
       completingFaction.Player?.DisplayResearchAcquired(RewardResearchTypeId, 1);
-      completingFaction.ModObjectLimit(Constants.UNIT_N096_EARTH_GOLEM_DALARAN, -6);
-      completingFaction.ModObjectLimit(Constants.UNIT_N0AD_CRYSTAL_GOLEM_DALARAN_HARD_CRYSTAL_CONSTRUCTS, 6);
+      completingFaction.ModObjectLimit(UNIT_N096_EARTH_GOLEM_DALARAN, -6);
+      completingFaction.ModObjectLimit(UNIT_N0AD_CRYSTAL_GOLEM_DALARAN_HARD_CRYSTAL_CONSTRUCTS, 6);
     }
     
     /// <inheritdoc/>

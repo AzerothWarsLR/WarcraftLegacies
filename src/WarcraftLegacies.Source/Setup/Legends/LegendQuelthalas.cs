@@ -1,7 +1,7 @@
 ﻿using MacroTools;
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
+
 #pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends
@@ -28,12 +28,12 @@ namespace WarcraftLegacies.Source.Setup.Legends
         DeathMessage = "The grand city of the high elves, Silvermoon, has been crushed by her enemies.",
         Essential = true
       };
-      Silvermoon.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS_OTHER, new Point(20479, 17477)));
-      Silvermoon.AddProtector(preplacedUnitSystem.GetUnit(Constants.UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS_OTHER, new Point(17415, 13196)));
+      Silvermoon.AddProtector(preplacedUnitSystem.GetUnit(UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS_OTHER, new Point(20479, 17477)));
+      Silvermoon.AddProtector(preplacedUnitSystem.GetUnit(UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS_OTHER, new Point(17415, 13196)));
 
       Sunwell = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_N001_THE_SUNWELL_QUEL_THALAS_OTHER),
+        Unit = preplacedUnitSystem.GetUnit(UNIT_N001_THE_SUNWELL_QUEL_THALAS_OTHER),
         Capturable = true,
         Essential = true
       };
@@ -41,54 +41,54 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Anasterian = new LegendaryHero("Anasterian Sunstrider")
       {
-        UnitType = Constants.UNIT_H00Q_KING_OF_QUEL_THALAS_QUEL_THALAS,
+        UnitType = UNIT_H00Q_KING_OF_QUEL_THALAS_QUEL_THALAS,
         PlayerColor = PLAYER_COLOR_MAROON,
         StartingXp = 1000,
         StartingArtifacts = new()
         {
-          new(CreateItem(Constants.ITEM_I00J_FELO_MELORN, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+          new(CreateItem(ITEM_I00J_FELO_MELORN, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
         }
       };
 
       Rommath = new LegendaryHero("Grand Magister Rommath")
       {
-        UnitType = Constants.UNIT_H04F_ARCHMAGE_GREEN,
+        UnitType = UNIT_H04F_ARCHMAGE_GREEN,
         StartingXp = 4000
       };
 
       Solarian = new LegendaryHero("Solarian")
       {
-        UnitType = Constants.UNIT_U02V_HIGH_ASTROMANCER_SUNFURY,
+        UnitType = UNIT_U02V_HIGH_ASTROMANCER_SUNFURY,
         StartingXp = 2800
       };
 
       Pathaleon = new LegendaryHero("Pathaleon")
       {
-        UnitType = Constants.UNIT_H098_SUNFURY_MASTERMIND_HIGH_ELVES,
+        UnitType = UNIT_H098_SUNFURY_MASTERMIND_HIGH_ELVES,
         StartingXp = 1800
       };
 
       Sylvanas = new LegendaryHero("Sylvanas Windrunner")
       {
-        UnitType = Constants.UNIT_HVWD_RANGER_GENERAL_OF_SILVERMOON_QUEL_THALAS,
+        UnitType = UNIT_HVWD_RANGER_GENERAL_OF_SILVERMOON_QUEL_THALAS,
         PlayerColor = PLAYER_COLOR_GREEN
       };
 
       Kael = new LegendaryHero("Kael'thas Sunstrider")
       {
         PlayerColor = PLAYER_COLOR_RED,
-        UnitType = Constants.UNIT_HKAL_PRINCE_OF_QUEL_THALAS_QUEL_THALAS
+        UnitType = UNIT_HKAL_PRINCE_OF_QUEL_THALAS_QUEL_THALAS
       };
 
       Lorthemar = new LegendaryHero("Lor'themar Theron")
       {
-        UnitType = Constants.UNIT_H02E_REGENT_OF_QUEL_THALAS_QUEL_THALAS_VASSAL,
+        UnitType = UNIT_H02E_REGENT_OF_QUEL_THALAS_QUEL_THALAS_VASSAL,
         StartingXp = 2800
       };
 
       Kiljaeden = new LegendaryHero("Kil'jaeden")
       {
-        UnitType = Constants.UNIT_U004_THE_DECEIVER_LEGION,
+        UnitType = UNIT_U004_THE_DECEIVER_LEGION,
         PermaDies = true,
         StartingXp = 10800,
         DeathMessage =
@@ -97,7 +97,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Spire = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_H0C2_WINDRUNNER_SPIRE_QUELTHALAS),
+        Unit = preplacedUnitSystem.GetUnit(UNIT_H0C2_WINDRUNNER_SPIRE_QUELTHALAS),
         Capturable = true
       };
     }
