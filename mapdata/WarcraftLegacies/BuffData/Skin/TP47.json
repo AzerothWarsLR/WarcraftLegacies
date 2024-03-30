@@ -1,0 +1,29 @@
+{
+  "OldId": 1634693698,
+  "NewId": 926175316,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBattleShout.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Battleshout"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "Varok has roared for all his enemies to hear, invoking his orcish strength; he has increased attack and defense."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Voodoo\\VoodooAuraTarget.mdl"
+    }
+  ]
+}
