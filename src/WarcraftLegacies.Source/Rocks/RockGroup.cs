@@ -33,6 +33,8 @@ namespace WarcraftLegacies.Source.Rocks
       _destructibleType = destructibleType;
       Expiry = expiry;
       EnumDestructablesInRect(area.Rect, null, AddRock);
+      
+      EnumDestructablesInRect(area.Rect, null, () => KillDestructable(GetEnumDestructable()));
     }
   }
 }
