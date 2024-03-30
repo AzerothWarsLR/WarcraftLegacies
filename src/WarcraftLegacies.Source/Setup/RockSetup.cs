@@ -16,12 +16,6 @@ namespace WarcraftLegacies.Source.Setup
       //south rocks
       RockSystem.Register(new RockGroup(Regions.KaliRock12, RockChunkId, 300));
 
-      //Kali Ashenvale rocks
-      RockSystem.Register(new RockGroup(Regions.KaliRock7, ForestChunkId, 480));
-      RockSystem.Register(new RockGroup(Regions.KaliRock10, ForestChunkId, 480));
-      RockSystem.Register(new RockGroup(Regions.KaliRock11, ForestChunkId, 480));
-      RockSystem.Register(new RockGroup(Regions.KaliRock13, ForestChunkId, 480));
-
       //Northrend Rocks
       RockSystem.Register(new RockGroup(Regions.NorthrendRock1, RockChunkId, 360));
       RockSystem.Register(new RockGroup(Regions.NorthrendRock2, RockChunkId, 360));
