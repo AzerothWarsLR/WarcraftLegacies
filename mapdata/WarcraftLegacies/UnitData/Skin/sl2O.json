@@ -1,6 +1,6 @@
 {
   "OldId": 1868718453,
-  "NewId": 1160851573,
+  "NewId": 1328704627,
   "Unk": [
     0
   ],
@@ -13,7 +13,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNCarrionScarabs.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDestroyer.blp"
     },
     {
       "Id": 1701601909,
@@ -31,12 +31,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(C\u0027thun Giant Scarab)"
+      "Value": "(cthun)"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "Doodads\\Barrens\\Rocks\\Geyser\\Geyser0.mdl"
+      "Value": "war3mapImported\\ObsidianStatue_Ground.mdl"
     },
     {
       "Id": 1953458293,
@@ -51,12 +51,17 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 3
+      "Value": 1.5
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Burrowed Giant Scarab"
+      "Value": "Enslaved Tol\u2019vir"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
     },
     {
       "Id": 1751675765,
@@ -81,17 +86,17 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Train [|cffffcc00E|r] - Giant Scarab"
+      "Value": "Train - Enslaved Tol\u2019vir"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Heavy melee Siege unit. Has Cleaving attack. |n|n|cffffcc00Attacks land units.|r"
+      "Value": "Heavy melee unit.|n|cfff5962dAbilities:|R Heavy Bash.|r|n |n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units and trees.|r"
     },
     {
       "Id": 1684960117,
       "Type": 3,
-      "Value": "Scarab"
+      "Value": "KotoBeast"
     }
   ]
 }

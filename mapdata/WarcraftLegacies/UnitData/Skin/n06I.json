@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroCryptLord.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSilithidDevourer.blp"
     },
     {
       "Id": 1667462261,
@@ -22,7 +22,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\NerubianGuard.mdl"
+      "Value": "war3mapImported\\Silithid Devourer.mdl"
     },
     {
       "Id": 1953458293,
@@ -32,7 +32,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": 0.7
     },
     {
       "Id": 1835101813,

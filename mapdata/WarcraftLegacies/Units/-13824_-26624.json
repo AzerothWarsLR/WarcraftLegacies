@@ -82,6 +82,7 @@
   },
   {
     "Flags": 2,
+    "OwnerId": 27,
     "HP": -1,
     "MP": -1,
     "TargetAcquisition": -1,

@@ -2745,35 +2745,35 @@
       "Level": 1
     },
     {
-      "Players": 589824,
+      "Players": 524288,
       "Id": 1701668946,
       "Availability": 2
     },
     {
-      "Players": 589824,
+      "Players": 524288,
       "Id": 1701668946,
       "Level": 1,
       "Availability": 2
     },
     {
-      "Players": 589824,
+      "Players": 524288,
       "Id": 1701668946,
       "Level": 2,
       "Availability": 2
     },
     {
-      "Players": 589824,
+      "Players": 524288,
       "Id": 1918986322,
       "Availability": 2
     },
     {
-      "Players": 589824,
+      "Players": 524288,
       "Id": 1918986322,
       "Level": 1,
       "Availability": 2
     },
     {
-      "Players": 589824,
+      "Players": 524288,
       "Id": 1918986322,
       "Level": 2,
       "Availability": 2
@@ -5805,10 +5805,6 @@
       "Id": 1463300206
     },
     {
-      "Players": 131071,
-      "Id": 1262039150
-    },
-    {
       "Players": 16777215,
       "Id": 1329148014
     },
@@ -6842,10 +6838,6 @@
     },
     {
       "Players": 16777215,
-      "Id": 1463103592
-    },
-    {
-      "Players": 16777215,
       "Id": 1194733672
     },
     {
@@ -7223,6 +7215,14 @@
     {
       "Players": 14986751,
       "Id": 1446064229
+    },
+    {
+      "Players": 131071,
+      "Id": 1262039150
+    },
+    {
+      "Players": 16777215,
+      "Id": 1463103592
     },
     {
       "Players": 14139391,

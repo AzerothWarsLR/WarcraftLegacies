@@ -8,7 +8,7 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "Arlm,A03A,Arst"
+      "Value": "A03A,Arst"
     },
     {
       "Id": 1633772661,
@@ -22,7 +22,7 @@
     {
       "Id": 1769300597,
       "Type": 3,
-      "Value": "u01H,u01G,u020,u01F,n073,n071,o00D,o00R,u01I"
+      "Value": "stz5,u01H,u01G,u020,u01F,n073,n071,o00D,o00R,u01I"
     },
     {
       "Id": 1819239285,

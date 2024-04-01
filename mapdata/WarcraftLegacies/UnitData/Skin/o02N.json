@@ -18,7 +18,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Aerial warriors of the Silithid.|n|cfff5962dAbilities:|R Envenomed Dart|n |n|cff99b4d1Can only train 24.|r|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Aerial warriors of the Silithid.|n|cfff5962dAbilities:|R True Sight, Envenomed Dart|n |n|cff99b4d1Can only train 24.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1835101813,
@@ -29,15 +29,6 @@
       "Id": 1885959285,
       "Type": 3,
       "Value": "Train Silithid Wasp"
-    },
-    {
-      "Id": 1953458293,
-      "Type": 3,
-      "Value": "Q"
-    },
-    {
-      "Id": 2020631157,
-      "Value": 0
     },
     {
       "Id": 1868786037,

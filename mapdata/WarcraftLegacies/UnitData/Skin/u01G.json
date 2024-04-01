@@ -16,7 +16,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(C\u0027thun Building)"
+      "Value": "(C\u0027thun Research)"
     },
     {
       "Id": 1953523061,
@@ -64,7 +64,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Provides attack, armor and infusion upgrades for Old God units."
+      "Value": "General research building. |n|n|cfff5962dResearches:|r Forged Weaponry, Armor Plating, Flight, Navigation, Improved Cannons, Fortified Hulls"
     },
     {
       "Id": 1818520949,
