@@ -27,7 +27,7 @@
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "- Shadow Storm,- Shadow Storm|n- Cyclone,- Shadow Storm|n- Cyclone|n- Inner Will"
+      "Value": "- Spirit Touch,- Spirit Touch|n- Siphon Mana,- Spirit Touch|n- Siphon Mana|n- Mana Burn"
     },
     {
       "Id": 1667462261,
@@ -61,7 +61,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.6
+      "Value": 0.75
     },
     {
       "Id": 1835101813,
@@ -85,7 +85,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Ancient Animated Statue from the time of Old.|n|cffffcc00Casts:|r Shadow storm, Cyclone |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Mana manipulating spellcaster.|n|cfff5962dAbilities:|r Spirit Touch|n|cfff5962dCan learn:|R Siphon Mana, Mana Burn|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1684960117,
