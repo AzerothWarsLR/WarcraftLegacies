@@ -35,13 +35,13 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero spawns \u003CALZ1, DataA1\u003E uncontrollable Swarm Beetle from a target corpse to attack the casters\u0027 enemies. Beetles last \u003CALZ1, Dur1\u003E."
+      "Value": "The unit spawns \u003CALZ1,DataA1\u003E uncontrollable Swarm Beetle from a target corpse to attack the casters\u0027 enemies. Beetles last \u003CALZ1,Dur1\u003E."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero spawns \u003CALZ1, DataA2\u003E uncontrollable Swarm Beetle from a target corpse to attack the casters\u0027 enemies. Beetles last \u003CALZ1, Dur2\u003E."
+      "Value": "The unit spawns \u003CALZ1,DataA2\u003E uncontrollable Swarm Beetle from a target corpse to attack the casters\u0027 enemies. Beetles last \u003CALZ1,Dur2\u003E."
     },
     {
       "Level": 3,
