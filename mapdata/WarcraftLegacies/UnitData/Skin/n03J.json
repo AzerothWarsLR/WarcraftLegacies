@@ -24,6 +24,19 @@
       "Id": 1831952757,
       "Type": 3,
       "Value": "Abilities\\Weapons\\Bolt\\BoltImpact.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 50
+    },
+    {
+      "Id": 1919705973,
+      "Value": 50
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
     }
   ]
 }

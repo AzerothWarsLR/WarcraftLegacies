@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       "Uther Lightbringer is a paragon of Light and a champion of Lordaeron. His example inspires many man to rise up.",
       @"ReplaceableTextures\CommandButtons\BTNHolyNova.blp")
     {
-      AddObjective(new ObjectiveLegendLevel(uther, 12));
+      AddObjective(new ObjectiveLegendLevel(uther, 10));
       ResearchId = UPGRADE_R01Q_QUEST_COMPLETED_CHAMPION_OF_THE_LIGHT;
     }
 
