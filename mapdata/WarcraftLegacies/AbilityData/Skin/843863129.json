@@ -1,0 +1,35 @@
+{
+  "OldId": 1851877441,
+  "NewId": 843863129,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASScarabClamp.blp"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Progeny Gland"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Progeny Gland"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The silithid spawns 3 Swarm Beetles upon death. They last for 35 seconds."
+    }
+  ]
+}
