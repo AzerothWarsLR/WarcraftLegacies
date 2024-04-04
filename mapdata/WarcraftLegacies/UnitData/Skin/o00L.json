@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNSniper2.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArchnathidDK.blp"
     },
     {
       "Id": 1667462261,
@@ -22,7 +22,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Sniper2.mdl"
+      "Value": "war3mapImported/Scorpion.mdl"
     },
     {
       "Id": 1919252085,
@@ -51,12 +51,7 @@
     {
       "Id": 1831952757,
       "Type": 3,
-      "Value": "Abilities\\Weapons\\PoisonArrow\\PoisonArrowMissile.mdl"
-    },
-    {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 0.7
+      "Value": "Abilities\\Weapons\\BristleBackMissile\\BristleBackMissile.mdl"
     },
     {
       "Id": 1835101813,
@@ -86,7 +81,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Versatile dart-thrower with Slow Poison and Web. |n|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Hunting soldier of the Qiraji.|n|cfff5962dAbilities:|R Web, Slow Poison|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,
@@ -97,6 +92,11 @@
       "Id": 2037410933,
       "Type": 2,
       "Value": 20
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
     }
   ]
 }
