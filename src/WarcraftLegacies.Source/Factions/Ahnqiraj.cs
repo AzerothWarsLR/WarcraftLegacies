@@ -46,8 +46,8 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(UNIT_O001_TOL_VIR_STATUE_C_THUN_TOL_VIR_STATUE, 6);
 
       ModObjectLimit(UNIT_O02N_SILITHID_WASP_CTHUN, 24);
-      ModObjectLimit(UNIT_H01N_VILE_CORRUPTER_C_THUN_FACELESS_CORRUPTOR, 4);
-      ModObjectLimit(UNIT_SL2O_ENSLAVED_TOL_VIR_CTHUN, 12);
+      ModObjectLimit(UNIT_H01N_VILE_CORRUPTER_C_THUN, 4);
+      ModObjectLimit(UNIT_SL2O_OBSIDIAN_ERADICATOR_CTHUN, 12);
 
       ModObjectLimit(FourCC("ushp"), UNLIMITED); //Undead Shipyard
       ModObjectLimit(FourCC("ubot"), UNLIMITED); //Undead Transport Ship
@@ -67,6 +67,7 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(UPGRADE_RZ02_SHADOW_WEAVER_MASTER_TRAINING_CTHUN, UNLIMITED);
       ModObjectLimit(UPGRADE_RL11_TOL_VIR_STATUE_MASTER_TRAINING_CTHUN, UNLIMITED);
       ModObjectLimit(UPGRADE_RYW5_IMPROVED_SWARM_BEETLE_CTHUN_WARRIOR, UNLIMITED);
+      ModObjectLimit(UPGRADE_RTL3, UNLIMITED);
 
     }
   }

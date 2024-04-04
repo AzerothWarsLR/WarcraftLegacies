@@ -1,6 +1,6 @@
 {
   "OldId": 1851877441,
-  "NewId": 843863129,
+  "NewId": 860640345,
   "Unk": [
     0
   ],
@@ -29,12 +29,12 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The silithid spawns 3 Swarm Beetles upon death. They last for 35 seconds."
+      "Value": "The silithid spawns 5 Swarm Beetles upon death. They last for 35 seconds."
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": " (Icon - 3)"
+      "Value": " (Icon - 5)"
     }
   ]
 }

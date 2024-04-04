@@ -37,13 +37,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Bloodbath |cffffcc00(E)|r"
+      "Value": "Bloodbath"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The Silithid Collosus goes into a fenzy gaining 20 bonus damage and gaining 100% of damage done as health."
+      "Value": "The Silithid Royalty goes into a fenzy gaining \u003CA0NG,DataA1\u003E bonus damage and gaining \u003CA0NG,DataB1,%\u003E% lifesteal."
     }
   ]
 }

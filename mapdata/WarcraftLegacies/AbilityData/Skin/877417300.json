@@ -1,40 +1,40 @@
 {
   "OldId": 1851877441,
-  "NewId": 843863129,
+  "NewId": 877417300,
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 2
+      "Value": 0
     },
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\PassiveButtons\\PASScarabClamp.blp"
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASCryptStalker.blp"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Progeny Gland"
+      "Value": "Advanced Metabolism"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Progeny Gland"
+      "Value": "Advanced Metabolism"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The silithid spawns 3 Swarm Beetles upon death. They last for 35 seconds."
+      "Value": "The unit regenerates 10 hitpoints per second."
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": " (Icon - 3)"
+      "Value": "(icon)"
     }
   ]
 }

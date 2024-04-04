@@ -161,7 +161,7 @@ public static class Regions
 	public static Rectangle JainaChannel { get; set; } = new Rectangle(-9888f, 17632f, -9792f, 17728f);
 	public static Rectangle KaelSunwellChannel { get; set; } = new Rectangle(18496f, 21568f, 18624f, 21696f);
 	public static Rectangle Kali_Ships { get; set; } = new Rectangle(-17600f, -15296f, -10816f, 5600f);
-	public static Rectangle Kalimdor { get; set; } = new Rectangle(-21216f, -19360f, -5600f, 11456f);
+	public static Rectangle Kalimdor { get; set; } = new Rectangle(-25056f, -20640f, -5600f, 11456f);
 	public static Rectangle KaliRock12 { get; set; } = new Rectangle(-9472f, -1888f, -8256f, -1248f);
 	public static Rectangle KezanAmbient { get; set; } = new Rectangle(-3200f, -10368f, 736f, -5184f);
 	public static Rectangle KezanUnlock { get; set; } = new Rectangle(-2400f, -8000f, 608f, -5184f);
@@ -342,5 +342,10 @@ public static class Regions
 	public static Rectangle ZulAman_trolls { get; set; } = new Rectangle(20288f, 11648f, 22848f, 17440f);
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
+	public static Rectangle QirajOutsideUnlock { get; set; } = new Rectangle(-19328f, -19072f, -15808f, -14976f);
+	public static Rectangle QirajInsideUnlock { get; set; } = new Rectangle(-24512f, -18464f, -20672f, -15520f);
+	public static Rectangle QirajOutpost1 { get; set; } = new Rectangle(-16064f, -15904f, -14720f, -14432f);
+	public static Rectangle QirajOutpost2 { get; set; } = new Rectangle(-18080f, -12512f, -16832f, -11744f);
+	public static Rectangle QirajOutpost3 { get; set; } = new Rectangle(-19744f, -14272f, -18400f, -12800f);
 
 }

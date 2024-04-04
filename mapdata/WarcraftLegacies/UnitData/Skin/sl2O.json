@@ -56,7 +56,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Enslaved Tol\u2019vir"
+      "Value": "Obsidian Eradicator"
     },
     {
       "Id": 1668510581,
@@ -86,12 +86,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Train - Enslaved Tol\u2019vir"
+      "Value": "Train - Obsidian Eradicator"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Heavy melee unit.|n|cfff5962dAbilities:|R Heavy Bash.|r|n |n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units and trees.|r"
+      "Value": "Heavy melee unit.|n|cfff5962dAbilities:|R Charge, Counterspell, Minor Spell Resistance.|r|n |n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land units and trees.|r"
     },
     {
       "Id": 1684960117,

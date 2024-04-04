@@ -1,28 +1,29 @@
 {
-  "OldId": 1937010753,
-  "NewId": 1129918529,
+  "OldId": 1886798657,
+  "NewId": 877413206,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1953653089,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNTentacle.blp"
-    },
-    {
-      "Id": 2020631137,
-      "Value": 1
-    },
-    {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(C\u0027thun Corruptor)"
+      "Value": "(Icon)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
       "Value": "Seed of Madness"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 811693153,
+      "Type": 3,
+      "Value": ""
     },
     {
       "Level": 1,
@@ -35,6 +36,19 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Drops a small tentacle with each attack. |nLasts 10 seconds."
+    },
+    {
+      "Id": 2037408353,
+      "Value": 0
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASSeedOfMonstrosity.blp"
     },
     {
       "Level": 2,
