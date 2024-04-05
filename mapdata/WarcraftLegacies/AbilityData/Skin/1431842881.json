@@ -8,17 +8,12 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNDizzy.blp"
+      "Value": "ReplaceableTextures/CommandButtons/BTNBlade_StormMoam.blp"
     },
     {
       "Id": 1718840929,
       "Type": 3,
       "Value": "(C\u0027thun)"
-    },
-    {
-      "Id": 2037082209,
-      "Type": 3,
-      "Value": "Q"
     },
     {
       "Id": 1734962273,
@@ -33,7 +28,7 @@
     {
       "Id": 1918988897,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNDizzy.blp"
+      "Value": "ReplaceableTextures/CommandButtons/BTNBlade_StormMoam.blp"
     },
     {
       "Id": 1802007137,
@@ -64,7 +59,7 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Enveloping Winds (|cffffcc00Q|r)"
+      "Value": "Enveloping Winds - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 1,
@@ -89,6 +84,29 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes 30 damage per second. |nLasts 7 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Enveloping Winds - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Enveloping Winds - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Enveloping Winds - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
     }
   ]
 }

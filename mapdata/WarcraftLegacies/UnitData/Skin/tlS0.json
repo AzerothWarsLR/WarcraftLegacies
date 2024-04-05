@@ -1,0 +1,24 @@
+{
+  "OldId": 1953461359,
+  "NewId": 810773620,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Frostwolf)"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Ice Trap"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Crystal Beartrap SD.mdl"
+    }
+  ]
+}

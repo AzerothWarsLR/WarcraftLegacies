@@ -38,7 +38,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Creates a swarm of angry locusts that bite and tear at nearby enemy units. As they chew the enemy flesh, they convert it into a substance that restores hit points to the Silithis Royalty when they return.|n|nSpawns \u003CA0Y2,DataA1\u003E locusts. \u003CA0Y2,DataE1\u003E damage return.|n|n|cffcece00|nAoE: \u003CA0Y2,Area1\u003E.|nLasts \u003CA0Y2,Dur1\u003E seconds.|n\u003CA0Y2,Cool1\u003E second cooldown.|r"
+      "Value": "Creates a swarm of angry locusts that bite and tear at nearby enemy units. As they chew the enemy flesh, they convert it into a substance that restores hit points to the Silithis Royalty when they return.|n|nSpawns \u003CA0Y2,DataA1\u003E locusts. \u003CA0Y2,DataE1\u003E damage return.|n|cffcece00|nAoE: \u003CA0Y2,Area1\u003E.|nLasts \u003CA0Y2,Dur1\u003E seconds.|n\u003CA0Y2,Cool1\u003E second cooldown.|r"
     }
   ]
 }
