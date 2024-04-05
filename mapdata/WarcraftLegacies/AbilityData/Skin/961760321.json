@@ -88,9 +88,14 @@
       "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts forever seconds. |nThe stun lasts \u003CALS9,DataD4\u003E seconds. |n\u003CALS9,DataA4\u003E second activation delay."
     },
     {
-      "Id": 1952540001,
+      "Id": 1918988897,
       "Type": 3,
-      "Value": "war3mapImported\\IceSlam.mdx"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTrap_of_Ice.blp"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTrap_of_Ice.blp"
     }
   ]
 }
