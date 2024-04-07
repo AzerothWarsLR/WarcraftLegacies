@@ -59,7 +59,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Summon - Chamber of Wonders"
+      "Value": "Summon Chamber of Wonders"
     },
     {
       "Id": 1935832437,
@@ -69,7 +69,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Creates a shop with purchasable items."
+      "Value": "Creates a shop with purchasable items.|n|cfff5962dAbilities:|R Ahn\u0027Qiraj Spirits"
     }
   ]
 }

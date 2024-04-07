@@ -1962,7 +1962,7 @@ public static class Constants
 	public const int BUFF_B007_RALLY = 1110454327;
 	public const int BUFF_B008_INFECTED_WOUNDS = 1110454328;
 	public const int BUFF_B009_BINDING_SHACKLES_JAILOR_KASSAN = 1110454329;
-	public const int BUFF_B00A_MAGE_ARMOR = 1110454337;
+	public const int BUFF_B00A_STONE_ARMOR = 1110454337;
 	public const int BUFF_B00B_REASSURING_CALM = 1110454338;
 	public const int BUFF_B00C_LIGHT_FALL = 1110454339;
 	public const int BUFF_B00D_HOLY_POWER = 1110454340;
@@ -2339,6 +2339,7 @@ public static class Constants
 	public const int BUFF_B0B7_SPIRITUAL_GUIDANCE = 1110458935;
 	public const int BUFF_B0B8_SALVATION = 1110458936;
 	public const int BUFF_B0B9_BLESSED_GROUND = 1110458937;
+	public const int BUFF_BLSN_ICE_TRAP = 1112298318;
 	public const int BUFF_S060_BURNING_ARROW = 1395668528;
 	public const int BUFF_TP01_ENERGY_GRID = 1414541361;
 	public const int BUFF_TP23_THORNED_VINES = 1414541875;
@@ -2383,7 +2384,6 @@ public static class Constants
 	public const int BUFF_ZB04_REAP = 1514287156;
 	public const int BUFF_ZB08_APOCALYPSE = 1514287160;
 	public const int BUFF_ZB09_APOCALYPSE = 1514287161;
-	public const int BUFF_BLSN_ICE_TRAP = 1112298318;
 	public const int ITEM_AMRC_AMULET_OF_RECALL = 1634562659;
 	public const int ITEM_ARSH_SHROUD_OF_NOZDORMU = 1634890600;
 	public const int ITEM_AZHR_HEART_OF_ASZUNE = 1635412082;
