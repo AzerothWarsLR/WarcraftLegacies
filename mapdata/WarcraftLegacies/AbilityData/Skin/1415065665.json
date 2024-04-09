@@ -85,19 +85,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Conjures a fierce Desert Storm that attack all units in a target area over time. |n|n|cffffcc00Level 1|r - 50 damage every 0.1 second seconds. Lasts 9 seconds."
+      "Value": "Conjures a fierce Desert Storm that attack all units in a target area over time dealing 50 damage every 0.1 second. Lasts 9 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Conjures a fierce Desert Storm that attack all units in a target area over time. |n|cffffcc00Level 2|r - 60 damage every 0.1 second. Lasts 9 seconds."
+      "Value": "Conjures a fierce Desert Storm that attack all units in a target area over time dealing 60 damage every 0.1 second. Lasts 9 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Conjures a fierce Desert Storm that attack all units in a target area over time. |n|cffffcc00Level 3|r - 70 damage every 0.1 second. Lasts 9 seconds."
+      "Value": "Conjures a fierce Desert Storm that attack all units in a target area over time dealing 70 damage every 0.1 second. Lasts 9 seconds."
     }
   ]
 }

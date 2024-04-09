@@ -18,7 +18,7 @@
     {
       "Id": 1918988897,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnvenomedSpear.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPoisonRain.blp"
     },
     {
       "Id": 2020635233,
@@ -37,7 +37,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "The hero\u0027s attacks completely poisons enemy units slowing their attack by 250% and movement speed to 150. |n|n|cffffcc00Level 1|r - Lasts 1 seconds on units, 0.4 second on heroes dealing 10 damage per second. |n|cffffcc00Level 2|r - Lasts 2 seconds on units, .8 seconds on heroes dealing 20 damage per second. |n|cffffcc00Level 3|r - Lasts 3 seconds on units, 1.2 seconds on heroes dealing 30 damage per second. |n|cffffcc00Level 4|r - lasts 4 seconds on units, 1.6 seconds on heroes dealing 40 damage per second."
+      "Value": "The hero\u0027s attacks completely poisons enemy units slowing their attack by 250% and movement speed by 10%. |n|n|cffffcc00Level 1|r - Lasts 1 seconds on units, 0.4 second on heroes dealing 10 damage per second. |n|cffffcc00Level 2|r - Lasts 2 seconds on units, .8 seconds on heroes dealing 20 damage per second. |n|cffffcc00Level 3|r - Lasts 3 seconds on units, 1.2 seconds on heroes dealing 30 damage per second. |n|cffffcc00Level 4|r - lasts 4 seconds on units, 1.6 seconds on heroes dealing 40 damage per second."
     },
     {
       "Level": 1,
@@ -73,19 +73,24 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero\u0027s attacks slows a unit attack speed by 250% and mouvement speed by 10% for 2 seconds dealing 20 damage per second. Lasts 0.4 seconds on heroes."
+      "Value": "The hero\u0027s attacks slows a unit attack speed by 250% and mouvement speed by 10% for 2 seconds dealing 20 damage per second. Lasts 0.8 seconds on heroes."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero\u0027s attacks slows a unit attack speed by 250% and mouvement speed by 10% for 3 seconds dealing 30 damage per second. Lasts 0.4 seconds on heroes."
+      "Value": "The hero\u0027s attacks slows a unit attack speed by 250% and mouvement speed by 10% for 3 seconds dealing 30 damage per second. Lasts 1.2 seconds on heroes."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero\u0027s attacks slows a unit attack speed by 250% and mouvement speed by 10% for 4 seconds dealing 40 damage per second. Lasts 0.4 seconds on heroes."
+      "Value": "The hero\u0027s attacks slows a unit attack speed by 250% and mouvement speed by 10% for 4 seconds dealing 40 damage per second. Lasts 1.6 seconds on heroes."
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASPoisonRain.blp"
     }
   ]
 }
