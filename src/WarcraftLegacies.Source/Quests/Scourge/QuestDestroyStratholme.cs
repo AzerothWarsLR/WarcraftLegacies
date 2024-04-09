@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
@@ -44,8 +43,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       if (arthas == null || !UnitAlive(arthas))
         return;
 
-      arthas.Kill();
-      arthas.Remove();
+      _arthas.PermanentlyKill();
     }
   }
 }
