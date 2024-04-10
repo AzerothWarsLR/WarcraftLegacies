@@ -70,8 +70,6 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(UPGRADE_RTL3_IMPROVED_SEED_OF_MADNESS_CTHUN_WARRIOR, UNLIMITED);
       ModObjectLimit(UPGRADE_RUWB_WEB_RED_RESEARCH, UNLIMITED);
 
-      ModAbilityAvailability(ABILITY_A0GG_SPELL_SHIELD_SPELL_BOOK_ORANGE_KIRIN_TOR, -1);
-
     }
   }
 }
