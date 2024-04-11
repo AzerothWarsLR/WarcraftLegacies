@@ -14,20 +14,29 @@ namespace MacroTools.BookSystem.Powers
   {
     private Faction? _trackedFaction;
     private readonly Dictionary<Power, PowerPage> _pagesByPower = new();
-    
+
     /// <summary>
     /// Initializes a new instance of the <see cref="PowerBook"/> class.
     /// </summary>
-    /// <param name="trackedPlayer">The player to show <see cref="Power"/>s for.</param>
-    public PowerBook(player trackedPlayer) : base(0.34f, 0.39f, 0.02f, 0.015f)
+    private PowerBook() : base(0.34f, 0.39f, 0.02f, 0.015f)
     {
-      var firstPage = AddPage();
+    }
+    
+    public static PowerBook Create(player trackedPlayer)
+    {
+      var book = new PowerBook
+      {
+        Title = "Powers",
+        LauncherParent = BlzGetFrameByName("UpperButtonBarMenuButton", 0),
+        Position = new Point(0.36f, 0.35f),
+        TrackedFaction = trackedPlayer.GetFaction()
+      };
+
+      trackedPlayer.GetPlayerData().ChangedFaction += book.OnPlayerChangedFaction;
+      var firstPage = book.AddPage();
       firstPage.Visible = true;
-      Title = "Powers";
-      LauncherParent = BlzGetFrameByName("UpperButtonBarMenuButton", 0);
-      Position = new Point(0.36f, 0.35f);
-      TrackedFaction = trackedPlayer.GetFaction();
-      trackedPlayer.GetPlayerData().ChangedFaction += OnPlayerChangedFaction;
+
+      return book;
     }
 
     /// <summary>

@@ -9,7 +9,7 @@ namespace MacroTools.BookSystem
   /// <summary>
   /// Responsible for managing all <see cref="ISpecialMenu"/>s.
   /// </summary>
-  public static class SpecialMenuManager
+  public static class BookManager
   {
     // ReSharper disable once CollectionNeverQueried.Local
     private static readonly List<ISpecialMenu> Books = new();
@@ -39,7 +39,7 @@ namespace MacroTools.BookSystem
       if (!BlzLoadTOCFile(tocFilePath)) throw new Exception($"Failed to load TOC {tocFilePath}");
     }
 
-    static SpecialMenuManager()
+    static BookManager()
     {
       LoadToc(@"ArtifactSystem.toc");
       LoadToc(@"ui\framedef\framedef.toc");
