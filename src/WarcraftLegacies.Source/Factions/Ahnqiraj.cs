@@ -1,4 +1,5 @@
 ﻿using MacroTools.FactionSystem;
+using WarcraftLegacies.Source.Quests.Cthun;
 using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Factions
@@ -17,6 +18,7 @@ namespace WarcraftLegacies.Source.Factions
     {
       RegisterObjectLimits();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
+      RegisterQuests();
     }
 
     private void RegisterObjectLimits()
@@ -71,6 +73,17 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(UPGRADE_RUWB_WEB_RED_RESEARCH, UNLIMITED);
 
       ModAbilityAvailability(ABILITY_A0GG_SPELL_SHIELD_SPELL_BOOK_ORANGE_KIRIN_TOR, -1);
+
+    }
+
+    private void RegisterQuests()
+    {
+      var newQuest = AddQuest(new QuestTitanJailors(Regions.MoongladeVillage));
+      StartingQuest = newQuest;
+      AddQuest(new QuestRebuildAhnqiraj(Regions.QirajInsideUnlock));
+      AddQuest(new QuestSlitheringForward(Regions.QirajOutpost1, Regions.QirajOutpost2, Regions.QirajOutpost3));
+      AddQuest(new QuestTanarisOutpost(Regions.QirajOutpost5));
+      AddQuest(new QuestEmperorConstruct());
 
     }
   }
