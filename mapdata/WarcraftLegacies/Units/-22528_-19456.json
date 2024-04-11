@@ -1,7 +1,7 @@
 [
   {
     "Flags": 2,
-    "OwnerId": 27,
+    "OwnerId": 16,
     "HP": -1,
     "MP": -1,
     "TargetAcquisition": -1,
@@ -12,8 +12,8 @@
     "WaygateDestinationRegionId": -1,
     "TypeId": 1395798101,
     "Position": {
-      "X": -14681.516,
-      "Y": -25364.752
+      "X": -22580.916,
+      "Y": -19805.795
     },
     "Rotation": 4.71238899230957,
     "Scale": {
@@ -24,6 +24,6 @@
     "SkinId": 1395798101,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 3608
+    "CreationNumber": 262
   }
 ]
