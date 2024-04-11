@@ -56,7 +56,7 @@
       "Level": 1,
       "Id": 1918989409,
       "Type": 3,
-      "Value": "invulnerable,organic,vulnerable"
+      "Value": "invulnerable,notself,organic,vulnerable"
     },
     {
       "Level": 1,
