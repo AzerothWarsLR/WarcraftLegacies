@@ -12,6 +12,7 @@ namespace MacroTools.Powers
       {
          _income = income;
          RefreshDescription();
+         IconName = "ChestOfGold";
          Name = "Offshore Investments";
       }
 

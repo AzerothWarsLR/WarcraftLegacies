@@ -24,9 +24,10 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      if (!ArtifactManager.TryGetByName(parameters[0], out var artifact))
+      var artifact = ArtifactManager.GetFromName(parameters[0]);
+      if (artifact == null)
         return $"You must specify the name of a registered {nameof(Artifact)} as the first parameter.";
-
+      
       var artifactName = GetItemName(artifact.Item);
       ArtifactManager.Destroy(artifact);
       return $"Destroyed {artifactName}";

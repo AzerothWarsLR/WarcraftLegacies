@@ -46,6 +46,7 @@ namespace WarcraftLegacies.Source.Setup
       var commandManager = new CommandManager();
       CommandSetup.Setup(commandManager);
       FactionMultiboard.Setup();
+      BookSetup.Setup();
       HintConfig.Setup();
       QuestMenuSetup.Setup();
       GameTime.Start();

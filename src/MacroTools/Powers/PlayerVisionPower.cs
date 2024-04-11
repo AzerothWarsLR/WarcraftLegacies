@@ -13,6 +13,7 @@ namespace MacroTools.Powers
     {
       Name = name;
       Description = description;
+      IconName = iconName;
       _playersToGiveVisionOf = playersToGiveVisionOf;
     }
 
