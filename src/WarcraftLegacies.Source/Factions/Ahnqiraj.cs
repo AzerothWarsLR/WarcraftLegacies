@@ -78,9 +78,9 @@ namespace WarcraftLegacies.Source.Factions
 
     private void RegisterQuests()
     {
-      var newQuest = AddQuest(new QuestTitanJailors(Regions.MoongladeVillage));
+      var newQuest = AddQuest(new QuestTitanJailors(Regions.QirajInsideUnlock));
       StartingQuest = newQuest;
-      AddQuest(new QuestRebuildAhnqiraj(Regions.QirajInsideUnlock));
+      AddQuest(new QuestRebuildAhnqiraj(Regions.QirajOutsideUnlock));
       AddQuest(new QuestSlitheringForward(Regions.QirajOutpost1, Regions.QirajOutpost2, Regions.QirajOutpost3));
       AddQuest(new QuestTanarisOutpost(Regions.QirajOutpost5));
       AddQuest(new QuestEmperorConstruct());
