@@ -1943,6 +1943,7 @@ public static class Constants
 	public const int ABILITY_Z3X9_HEALING_FRENZY_SALLY_DUMMY = 1513314361;
 	public const int ABILITY_A0Y9_BURROW_C_THUN_SCARAB = 1093687609;
 	public const int ABILITY_A0Z9_BILE_SHOT_MURLOC = 1093687865;
+	public const int ABILITY_APL2_WEB_REAVER = 1095781426;
 	public const int BUFF_BCBF_HYPOTHERMIC_BREATH = 1111712358;
 	public const int BUFF_BEAT_EAT_TREE = 1113940340;
 	public const int BUFF_BFZY_FRENZY_WARLOCK = 1114012281;
@@ -2339,6 +2340,8 @@ public static class Constants
 	public const int BUFF_B0B8_SALVATION = 1110458936;
 	public const int BUFF_B0B9_BLESSED_GROUND = 1110458937;
 	public const int BUFF_BLSN_ICE_TRAP = 1112298318;
+	public const int BUFF_BSLY_PLAGUE_STRIKE = 1112755289;
+	public const int BUFF_BSYL_PLAGUE_STRIKE = 1112758604;
 	public const int BUFF_S060_BURNING_ARROW = 1395668528;
 	public const int BUFF_TP01_ENERGY_GRID = 1414541361;
 	public const int BUFF_TP23_THORNED_VINES = 1414541875;
@@ -2383,8 +2386,6 @@ public static class Constants
 	public const int BUFF_ZB04_REAP = 1514287156;
 	public const int BUFF_ZB08_APOCALYPSE = 1514287160;
 	public const int BUFF_ZB09_APOCALYPSE = 1514287161;
-	public const int BUFF_BSLY_PLAGUE_STRIKE = 1112755289;
-	public const int BUFF_BSYL_PLAGUE_STRIKE = 1112758604;
 	public const int ITEM_AMRC_AMULET_OF_RECALL = 1634562659;
 	public const int ITEM_ARSH_SHROUD_OF_NOZDORMU = 1634890600;
 	public const int ITEM_AZHR_HEART_OF_ASZUNE = 1635412082;
@@ -4642,6 +4643,7 @@ public static class Constants
 	public const int UPGRADE_R049_QUEST_COMPLETED_THE_TURTLE_DEMIGOD = 1378890809;
 	public const int UPGRADE_R099_QUEST_COMPLETED_A_NEW_HOME = 1378892089;
 	public const int UPGRADE_R0A9_QUEST_COMPLETED_A_FEAST_FOR_OUR_KIN = 1378894137;
+	public const int UPGRADE_RHL9_WEB_CTHUN = 1380469817;
 	public const int ORDER_OFFSET = 851970;
 	public const int ORDER_WAND_ILLUSION = 852274;
 	public const int ORDER_ABSORB = 852529;
