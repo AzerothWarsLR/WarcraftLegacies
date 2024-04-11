@@ -12,7 +12,7 @@ namespace MacroTools.BookSystem
   /// A collection of <see cref="Page"/>s that players can flip through to read information.
   /// </summary>
   /// <typeparam name="T"></typeparam>
-  public abstract class Book<T> : Frame, IBook where T : Page, new()
+  public abstract class Book<T> : Frame, ISpecialMenu where T : Page, new()
   {
     /// <summary>
     /// All <see cref="Page"/>s contained in the Book.
@@ -88,7 +88,7 @@ namespace MacroTools.BookSystem
     }
 
     /// <summary>
-    /// <inheritdoc/>
+    /// Used to close the book.
     /// </summary>
     public Button ExitButton { get; init; }
 
@@ -98,12 +98,12 @@ namespace MacroTools.BookSystem
     public Button LauncherButton { get; set; }
 
     /// <summary>
-    /// <inheritdoc/>
+    /// Used to navigate to the next page.
     /// </summary>
     public Button MoveNextButton { get; init; }
 
     /// <summary>
-    /// <inheritdoc/>
+    /// Used to navigate to the previous page.
     /// </summary>
     public Button MovePreviousButton { get; init; }
 
@@ -142,7 +142,7 @@ namespace MacroTools.BookSystem
     }
 
     /// <summary>
-    /// <inheritdoc/>
+    /// Close the book.
     /// </summary>
     /// <param name="triggerPlayer"></param>
     public void Exit(player triggerPlayer)
@@ -154,7 +154,7 @@ namespace MacroTools.BookSystem
     }
 
     /// <summary>
-    /// <inheritdoc/>
+    /// Move to the next page.
     /// </summary>
     /// <param name="triggerPlayer"></param>
     public void MoveNext(player triggerPlayer)
@@ -171,7 +171,7 @@ namespace MacroTools.BookSystem
     }
 
     /// <summary>
-    /// <inheritdoc/>
+    /// Move to the previous page.
     /// </summary>
     /// <param name="triggerPlayer"></param>
     public void MovePrevious(player triggerPlayer)
@@ -188,7 +188,7 @@ namespace MacroTools.BookSystem
     }
 
     /// <summary>
-    /// <inheritdoc/>
+    /// Open the book.
     /// </summary>
     /// <param name="triggerPlayer"></param>
     public void Open(player triggerPlayer)
@@ -218,7 +218,7 @@ namespace MacroTools.BookSystem
     ///    Adds a new Page to the end of the Book.
     /// </summary>
     protected T AddPage()
-    {
+    { 
       var newPage = new T
       {
         Width = Width,
