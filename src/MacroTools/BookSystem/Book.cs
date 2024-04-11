@@ -88,25 +88,10 @@ namespace MacroTools.BookSystem
     }
 
     /// <summary>
-    /// Used to close the book.
-    /// </summary>
-    public Button ExitButton { get; init; }
-
-    /// <summary>
     /// <inheritdoc/>
     /// </summary>
     public Button LauncherButton { get; set; }
-
-    /// <summary>
-    /// Used to navigate to the next page.
-    /// </summary>
-    public Button MoveNextButton { get; init; }
-
-    /// <summary>
-    /// Used to navigate to the previous page.
-    /// </summary>
-    public Button MovePreviousButton { get; init; }
-
+    
     /// <summary>
     /// <inheritdoc/>
     /// </summary>
@@ -118,6 +103,21 @@ namespace MacroTools.BookSystem
 
     /// <inheritdoc />
     public framehandle LauncherParent { get; protected init; }
+    
+    /// <summary>
+    /// Used to close the book.
+    /// </summary>
+    private Button ExitButton { get; }
+
+    /// <summary>
+    /// Used to navigate to the next page.
+    /// </summary>
+    private Button MoveNextButton { get; }
+
+    /// <summary>
+    /// Used to navigate to the previous page.
+    /// </summary>
+    private Button MovePreviousButton { get; }
 
     /// <summary>
     /// Determines the book's center.
@@ -138,52 +138,6 @@ namespace MacroTools.BookSystem
         _activePageIndex = value;
         Pages[_activePageIndex].Visible = true;
         RefreshNavigationButtonVisiblity();
-      }
-    }
-
-    /// <summary>
-    /// Close the book.
-    /// </summary>
-    /// <param name="triggerPlayer"></param>
-    public void Exit(player triggerPlayer)
-    {
-      if (triggerPlayer != GetLocalPlayer() || !Visible || LauncherButton.Visible)
-        return;
-      Visible = false;
-      LauncherButton.Visible = true;
-    }
-
-    /// <summary>
-    /// Move to the next page.
-    /// </summary>
-    /// <param name="triggerPlayer"></param>
-    public void MoveNext(player triggerPlayer)
-    {
-      try
-      {
-        if (GetLocalPlayer() == triggerPlayer)
-          ActivePageIndex++;
-      }
-      catch (Exception ex)
-      {
-        Console.WriteLine(ex);
-      }
-    }
-
-    /// <summary>
-    /// Move to the previous page.
-    /// </summary>
-    /// <param name="triggerPlayer"></param>
-    public void MovePrevious(player triggerPlayer)
-    {
-      try
-      {
-        if (GetLocalPlayer() == triggerPlayer)
-          ActivePageIndex--;
-      }
-      catch (Exception ex)
-      {
-        Console.WriteLine(ex);
       }
     }
 
@@ -231,6 +185,52 @@ namespace MacroTools.BookSystem
       Pages.Add(newPage);
       RefreshNavigationButtonVisiblity();
       return newPage;
+    }
+    
+    /// <summary>
+    /// Close the book.
+    /// </summary>
+    /// <param name="triggerPlayer"></param>
+    private void Exit(player triggerPlayer)
+    {
+      if (triggerPlayer != GetLocalPlayer() || !Visible || LauncherButton.Visible)
+        return;
+      Visible = false;
+      LauncherButton.Visible = true;
+    }
+
+    /// <summary>
+    /// Move to the next page.
+    /// </summary>
+    /// <param name="triggerPlayer"></param>
+    private void MoveNext(player triggerPlayer)
+    {
+      try
+      {
+        if (GetLocalPlayer() == triggerPlayer)
+          ActivePageIndex++;
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex);
+      }
+    }
+
+    /// <summary>
+    /// Move to the previous page.
+    /// </summary>
+    /// <param name="triggerPlayer"></param>
+    private void MovePrevious(player triggerPlayer)
+    {
+      try
+      {
+        if (GetLocalPlayer() == triggerPlayer)
+          ActivePageIndex--;
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex);
+      }
     }
 
     /// <summary>
