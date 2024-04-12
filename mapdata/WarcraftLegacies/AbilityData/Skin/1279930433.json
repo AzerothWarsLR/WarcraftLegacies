@@ -48,7 +48,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "A poison attack that deals \u003CAspo,DataA1\u003E damage per second, and reduces an enemy units attack by \u003CAspo,DataC1,%\u003E% for \u003CAspo,Dur1\u003E seconds."
+      "Value": "A poison attack that deals \u003CA0JL,DataA1\u003E damage per second, and reduces an enemy units attack by \u003CA0JL,DataC1,%\u003E% for \u003CA0JL,Dur1\u003E seconds."
     }
   ]
 }

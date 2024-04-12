@@ -70,11 +70,8 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(UPGRADE_RL11_TOL_VIR_STATUE_MASTER_TRAINING_CTHUN, UNLIMITED);
       ModObjectLimit(UPGRADE_RYW5_IMPROVED_SWARM_BEETLE_CTHUN_WARRIOR, UNLIMITED);
       ModObjectLimit(UPGRADE_RTL3_IMPROVED_SEED_OF_MADNESS_CTHUN_WARRIOR, UNLIMITED);
-      ModObjectLimit(UPGRADE_RUWB_WEB_RED_RESEARCH, UNLIMITED);
-
-      ModAbilityAvailability(ABILITY_A0GG_SPELL_SHIELD_SPELL_BOOK_ORANGE_KIRIN_TOR, -1);
-
-    }
+      ModObjectLimit(UPGRADE_RHL9_WEB_CTHUN, UNLIMITED);
+      }
 
     private void RegisterQuests()
     {

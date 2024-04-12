@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       AddObjective(new ObjectiveControlCapital(capitalPalace, false));
       AddObjective(new ObjectiveControlLegend(arthas, true));
       AddObjective(new ObjectiveControlLevel(UNIT_N02J_HOWLING_FJORDS, 10));
-      AddObjective(new ObjectiveLegendLevel(arthas, 12));
+      AddObjective(new ObjectiveLegendLevel(arthas, 10));
       ResearchId = UPGRADE_R08A_QUEST_COMPLETED_LINE_OF_SUCCESSION;
       _terenas = terenas;
       _crownOfLordaeron = crownOfLordaeron;
