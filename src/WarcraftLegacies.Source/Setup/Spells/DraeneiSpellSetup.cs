@@ -3,6 +3,8 @@ using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
+using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.Spells.MassiveAttack;
 using WarcraftLegacies.Source.Spells.Slipstream;
 using WCSharp.Shared.Data;
 
@@ -48,11 +50,10 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Color = new Color(55, 50, 250, 255)
       });
 
-      var holyShockwave = new MassiveAttack(UNIT_N0CX_LIGHTFORGED_WARFRAME_DRAENEI,
-        ABILITY_A103_MASSIVE_ATTACK_DRAENEI)
+      var holyShockwave = new MassiveAttackAbility(UNIT_N0CX_LIGHTFORGED_WARFRAME_DRAENEI)
       {
-        DummyAbilityId = ABILITY_A104_SHOCKWAVE_MASSIVE_ATTACK_DUMMY,
-        DummyOrderId = OrderId("carrionswarm")
+        AttackDamagePercentage = 0.3f,
+        Distance = 700
       };
       PassiveAbilityManager.Register(holyShockwave);
 

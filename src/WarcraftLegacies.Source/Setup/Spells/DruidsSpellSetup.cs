@@ -3,6 +3,7 @@ using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.Spells.MassiveAttack;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -30,10 +31,10 @@ namespace WarcraftLegacies.Source.Setup.Spells
         }
       });
       
-      PassiveAbilityManager.Register(new MassiveAttack(UNIT_E00A_ANCIENT_GUARDIAN_DRUIDS, ABILITY_ZB15_MASSIVE_ATTACK_URSOC)
+      PassiveAbilityManager.Register(new MassiveAttackAbility(UNIT_E00A_ANCIENT_GUARDIAN_DRUIDS)
       {
-        DummyAbilityId = ABILITY_A104_SHOCKWAVE_MASSIVE_ATTACK_DUMMY,
-        DummyOrderId = OrderId("carrionswarm")
+        AttackDamagePercentage = 0.5f,
+        Distance = 700
       });
     }
   }

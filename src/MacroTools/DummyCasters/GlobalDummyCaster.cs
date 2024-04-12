@@ -19,8 +19,7 @@ namespace MacroTools.DummyCasters
     /// <summary>
     /// Causes the specified ability to be cast from the specified object at the specified target.
     /// </summary>
-    public void CastUnit(unit caster, int abilId, int orderId, int level, unit target, DummyCastOriginType originType,
-      Action<unit>? preCastFunc = null)
+    public void CastUnit(unit caster, int abilId, int orderId, int level, unit target, DummyCastOriginType originType)
     {
       var originPoint = originType == DummyCastOriginType.Caster ? caster.GetPosition() : target.GetPosition();
       _unit
@@ -31,8 +30,6 @@ namespace MacroTools.DummyCasters
 
       if (originType == DummyCastOriginType.Caster)
         _unit.FacePosition(target.GetPosition());
-
-      preCastFunc?.Invoke(_unit);
 
       _unit
         .IssueOrder(orderId, target)
