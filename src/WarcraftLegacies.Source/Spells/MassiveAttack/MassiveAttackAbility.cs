@@ -49,7 +49,7 @@ namespace WarcraftLegacies.Source.Spells.MassiveAttack
       
       var missile = new MassiveAttackProjectile(caster, targetX, targetY)
       {
-        Damage = caster.GetAverageDamage(1) * AttackDamagePercentage,
+        Damage = caster.GetAverageDamage(0) * AttackDamagePercentage,
         AttackType = ConvertAttackType(caster.GetAttackType()),
         DamageType = BlzGetEventDamageType()
       };
