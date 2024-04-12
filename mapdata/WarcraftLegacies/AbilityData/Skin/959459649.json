@@ -6,11 +6,6 @@
   ],
   "Modifications": [
     {
-      "Id": 1953653089,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNGnollCommandAura.blp"
-    },
-    {
       "Id": 1718840929,
       "Type": 3,
       "Value": "(Naisha, Ursoc)"
@@ -28,7 +23,7 @@
     {
       "Id": 1918988897,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNGnollCommandAura.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHardenedSkin.blp"
     },
     {
       "Id": 2020635233,
