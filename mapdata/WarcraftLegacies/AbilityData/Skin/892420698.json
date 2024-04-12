@@ -18,7 +18,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Causes this units attacks to emit Shockwaves which deal 50% of their attack damage to enemy ground units in a line in front of them."
+      "Value": "Causes this units attacks to emit waves which deal 30% of their attack damage to enemy ground units in a line in front of them."
     },
     {
       "Level": 1,
@@ -29,7 +29,7 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\PASability_evoker_seismicslam.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\PASHammerCrush.blp"
     },
     {
       "Id": 2020631137,
