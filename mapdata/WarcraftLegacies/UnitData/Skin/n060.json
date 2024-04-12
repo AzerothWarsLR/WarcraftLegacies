@@ -37,7 +37,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Scorpion.mdl"
+      "Value": "war3mapImported\\Scorpion1.mdl"
     },
     {
       "Id": 1953458293,
@@ -52,12 +52,12 @@
     {
       "Id": 1831952757,
       "Type": 3,
-      "Value": "Abilities\\Spells\\Undead\\Impale\\ImpaleMissTarget.mdl"
+      "Value": "Abilities\\Weapons\\CryptFiendMissile\\CryptFiendMissile.mdl"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.6
+      "Value": 0.8
     },
     {
       "Id": 1835101813,
@@ -77,12 +77,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Train - Silithid Tunneler"
+      "Value": "Train Silithid Tunneler"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Siege spellcaster. Using the power of the Earth, this caster supports their faction with underground siege attacks and Defensive magic. |n|cffffcc00Casts:|r Boulder Toss, Dispel Magic, Stone Armor. |n|n|cffd5d500Attacks land units.|r"
+      "Value": "Support spellcaster.|n|cfff5962dAbilities:|r Boulder Toss|n|cfff5962dCan learn:|R Dispel Magic, Stone Armor|n|n|cffffcc00Attacks land and air units.|R"
     },
     {
       "Id": 1684960117,

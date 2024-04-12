@@ -26,7 +26,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 0
+      "Value": 3
     },
     {
       "Id": 2037408373,
@@ -39,7 +39,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(C\u0027thun building)"
+      "Value": "(C\u0027thun Empty)"
     },
     {
       "Id": 1953523061,
@@ -72,7 +72,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Lighthouse"
+      "Value": "Summon Lighthouse"
     },
     {
       "Id": 1935832437,
@@ -82,7 +82,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Primary troop production building. |rTrains Faceless One, Silithid Reaver and Giant Scarab. Contains the researches for Web."
+      "Value": "Elite production building. |n|n|r|cfff5962dTrains:|R |n|cfff5962dAbilities:|R Ahn\u0027Qiraj Spirits"
     },
     {
       "Id": 1684960117,

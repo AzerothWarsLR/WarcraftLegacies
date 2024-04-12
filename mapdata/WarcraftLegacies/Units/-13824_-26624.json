@@ -66,8 +66,8 @@
     "WaygateDestinationRegionId": -1,
     "TypeId": 875704389,
     "Position": {
-      "X": -14225.055,
-      "Y": -26771.664
+      "X": -14120.658,
+      "Y": -26665.17
     },
     "Rotation": 4.71238899230957,
     "Scale": {
@@ -82,6 +82,7 @@
   },
   {
     "Flags": 2,
+    "OwnerId": 27,
     "HP": -1,
     "MP": -1,
     "TargetAcquisition": -1,

@@ -39,7 +39,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(C\u0027thun building)"
+      "Value": "(C\u0027thun Barrack)"
     },
     {
       "Id": 1953523061,
@@ -77,7 +77,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Hatchery"
+      "Value": "Summon Hatchery"
     },
     {
       "Id": 1935832437,
@@ -87,7 +87,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Primary troop production building. |rTrains Faceless One, Silithid Reaver and Giant Scarab. Contains the researches for Web."
+      "Value": "Primary troop production building. |n|n|cfff5962dTrains:|R Silithid Warrior, Silithid Reaver, Obsidian Eradicator|n|cfff5962dResearches:|r Improved Swarm Beetle, Web|n|cfff5962dAbilities:|R Ahn\u0027Qiraj Spirits"
     },
     {
       "Id": 1684960117,

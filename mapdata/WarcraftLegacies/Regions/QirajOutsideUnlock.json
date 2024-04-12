@@ -1,0 +1,15 @@
+{
+  "Left": -19328,
+  "Bottom": -19072,
+  "Right": -15808,
+  "Top": -14976,
+  "Name": "QirajOutsideUnlock",
+  "CreationNumber": 108,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

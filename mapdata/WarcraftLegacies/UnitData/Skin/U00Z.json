@@ -93,6 +93,11 @@
       "Id": 1885959285,
       "Type": 3,
       "Value": "Summon Moam"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Magic Hero, robust damage dealing spellcaster.|n|n|cfff5962dCan learn:|R Enveloping Wind, Stoneform, Mana Shield, Desert Storm|n|n|cffffcc00Attacks land and air units.|R"
     }
   ]
 }

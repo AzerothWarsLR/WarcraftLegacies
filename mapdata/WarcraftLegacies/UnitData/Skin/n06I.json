@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroCryptLord.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSilithidDevourer.blp"
     },
     {
       "Id": 1667462261,
@@ -22,7 +22,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\NerubianGuard.mdl"
+      "Value": "war3mapImported\\Silithid_Devourer-NoGlow.mdl"
     },
     {
       "Id": 1953458293,
@@ -32,7 +32,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": 0.7
     },
     {
       "Id": 1835101813,
@@ -47,7 +47,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Fierce Silithid warrior with poison stings. Has Poison Sting and Charge. |n|n|cffffcc00Attacks land units.|r"
+      "Value": "Frontline soldiers of the hive.|n|cfff5962dAbilities:|R Charge, Swarm Beetle, Progeny Gland|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,
@@ -55,16 +55,9 @@
       "Value": "Arachnathid"
     },
     {
-      "Id": 1919705973,
-      "Value": 222
-    },
-    {
-      "Id": 1735156597,
-      "Value": 222
-    },
-    {
-      "Id": 1651270517,
-      "Value": 222
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.5
     }
   ]
 }

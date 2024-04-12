@@ -12,24 +12,24 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Purple - Cleric)"
+      "Value": "(Shadow Weaver)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Holy Shackles"
+      "Value": "Shackles"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Holy Shackles"
+      "Value": "Shackles"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Binds the target in holy energy immoblising them and dealing 20 damage per second. |nLasts 20 seconds."
+      "Value": "Binds the target in shackles, immoblising them and dealing 20 damage per second. |nLasts 20 seconds."
     }
   ]
 }
