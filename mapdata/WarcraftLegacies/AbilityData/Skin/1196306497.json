@@ -21,7 +21,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(C\u0027thun Silithid Collosus)"
+      "Value": "(Colossus)"
     },
     {
       "Id": 2037082209,
@@ -31,19 +31,19 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Bloodbath"
+      "Value": "Carnage"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Bloodbath"
+      "Value": "Carnage"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The Silithid Royalty goes into a fenzy gaining \u003CA0NG,DataA1\u003E bonus damage and gaining \u003CA0NG,DataB1,%\u003E% lifesteal."
+      "Value": "Grants this unit \u003CA0NG,DataA1\u003E bonus damage and \u003CA0NG,DataB1,%\u003E% lifesteal for \u003CA0NG,Dur1\u003E seconds."
     }
   ]
 }

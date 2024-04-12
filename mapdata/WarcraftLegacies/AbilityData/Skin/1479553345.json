@@ -8,7 +8,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(dalaran)"
+      "Value": "(Aegwynn)"
     },
     {
       "Id": 2037082209,
@@ -89,7 +89,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Turns all friendly units invulnerable in an area around Aegwynn. |nLasts 1/2/3/4 seconds. |n|cffffcc00Level 1|r - 1 second duration. |n|cffffcc00Level 2|r - 2 seconds duration. |n|cffffcc00Level 3|r - 3 seconds duration.|n|cffffcc00Level 4|r - 4 seconds duration."
+      "Value": "Turns all friendly units invulnerable in an area around Aegwynn. |n|cffffcc00Level 1|r - 1 second duration. |n|cffffcc00Level 2|r - 2 seconds duration. |n|cffffcc00Level 3|r - 3 seconds duration.|n|cffffcc00Level 4|r - 4 seconds duration."
     },
     {
       "Id": 1952540001,

@@ -44,16 +44,6 @@
       "Value": "W"
     },
     {
-      "Id": 1952805473,
-      "Type": 3,
-      "Value": "Learn Toughness - [|cffffcc00Level %d|r]"
-    },
-    {
-      "Id": 1953854049,
-      "Type": 3,
-      "Value": "Rexxar has been toughened immensely during his time in the wild, softening the blows of all physical attacks.|n|n|cffffcc00Level 1|r - Blocks 15 damage to a minimum of 6 damage.|n|cffffcc00Level 2|r - Blocks 20 damage to a minimum of 7 damage.|n|cffffcc00Level 3|r - Blocks 25 damage to a minimum of 8 damage.|n|cffffcc00Level 4|r - Blocks 30 damage to a minimum of 9 damage."
-    },
-    {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,

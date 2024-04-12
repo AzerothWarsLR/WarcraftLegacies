@@ -8,7 +8,7 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfLightning.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnchantedChains.blp"
     },
     {
       "Id": 2020631137,
@@ -27,12 +27,12 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Thunder Grip"
+      "Value": "Universal Shackles"
     },
     {
       "Id": 1918988897,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfLightning.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnchantedChains.blp"
     },
     {
       "Id": 2020635233,
@@ -46,12 +46,12 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "Learn Thunder Grip - [|cffffcc00Level %d|r]"
+      "Value": "Learn Universal Shackles - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Thrall channels to fire lightning that wraps itself around the body of a foe, rendering it immobile and dealing damage over time. |n|n|cffffcc00Level 1|r - 75 damage a second for 6 seconds (2 for Heroes). |n|cffffcc00Level 2|r - 75 damage per second for 8 seconds (3 for Heroes). |n|cffffcc00Level 3|r - 75 damage per second for 10 seconds (4 for Heroes). |n|cffffcc00Level 4|r - 75 damage per second for 12 seconds (5 for Heroes). |n|n|cffc4c4ffChanneling.|r"
+      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes damage per second. |n|n|cffffcc00Level 1|r - 75 damage per second for 6 seconds (2 for Heroes). |n|cffffcc00Level 2|r - 75 damage per second for 8 seconds (3 for Heroes). |n|cffffcc00Level 3|r - 75 damage per second for 10 seconds (4 for Heroes). |n|cffffcc00Level 4|r - 75 damage per second for 12 seconds (5 for Heroes)."
     },
     {
       "Id": 1952543841,
@@ -71,49 +71,49 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Thunder Grip - [|cffffcc00Level 1|r]"
+      "Value": "Universal Shackles - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Thunder Grip - [|cffffcc00Level 2|r]"
+      "Value": "Universal Shackles - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Thunder Grip - [|cffffcc00Level 3|r]"
+      "Value": "Universal Shackles - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Thunder Grip - [|cffffcc00Level 4|r]"
+      "Value": "Universal Shackles - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes \u003CA0WL,DataA2\u003E damage per second. |nLasts \u003CA0WL,Dur2\u003E seconds against units and \u003CA0WL,HeroDur2\u003E against heroes."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes \u003CA0WL,DataA3\u003E damage per second. |nLasts \u003CA0WL,Dur3\u003E seconds against units and \u003CA0WL,HeroDur3\u003E against heroes."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes \u003CA0WL,DataA4\u003E damage per second. |nLasts \u003CA0WL,Dur4\u003E seconds against units and \u003CA0WL,HeroDur4\u003E against heroes."
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Lightning wraps itself around the body of a foe, rendering it immobile and dealing damage over time. Deals 75 per second for 6 seconds (2 for Heroes). |n|n|cffc4c4ffChanneling.|r"
-    },
-    {
-      "Level": 2,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "Lightning wraps itself around the body of a foe, rendering it immobile and dealing damage over time. Deals 75 per second for 8 seconds (3 for Heroes). |n|n|cffc4c4ffChanneling.|r"
-    },
-    {
-      "Level": 3,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "Lightning wraps itself around the body of a foe, rendering it immobile and dealing damage over time. Deals 75 per second for 10 seconds (4 for Heroes). |n|n|cffc4c4ffChanneling.|r"
-    },
-    {
-      "Level": 4,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "Lightning wraps itself around the body of a foe, rendering it immobile and dealing damage over time. Deals 75 per second for 12 seconds (5 for Heroes). |n|n|cffc4c4ffChanneling.|r"
+      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes \u003CA0WL,DataA1\u003E damage per second. |nLasts \u003CA0WL,Dur1\u003E seconds against units and \u003CA0WL,HeroDur1\u003E against heroes."
     }
   ]
 }

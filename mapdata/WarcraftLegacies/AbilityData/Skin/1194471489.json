@@ -8,7 +8,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(moam)"
+      "Value": "(Moam)"
     },
     {
       "Id": 2037082209,
@@ -18,7 +18,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Stoneform"
+      "Value": "Hardened"
     },
     {
       "Id": 1918988897,
@@ -37,64 +37,64 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "Learn Stoneform - [|cffffcc00Level %d|r]"
+      "Value": "Learn Hardened - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "The hero transform into stone, greatly reducing physical damage taken. |n|n|cffffcc00Level 1|r - Blocks 14 damage to a minimum of 5 damage.|n|cffffcc00Level 2|r - Blocks 20 damage to a minimum of 7 damage.|n|cffffcc00Level 3|r - Blocks 26 damage to a minimum of 9 damage.|n|cffffcc00Level 4|r - Blocks 32 damage to a minimum of 11 damage."
-    },
-    {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Stoneform - [|cffffcc00Level 1|r]"
+      "Value": "Reduces the damage of all incoming attacks. Attacks cannot be reduced below \u003CA02G,DataB1\u003E damage. |n|n|cffffcc00Level 1|r - Blocks \u003CA02G,DataC1\u003E damage.|n|cffffcc00Level 2|r - Blocks \u003CA02G,DataC2\u003E damage.|n|cffffcc00Level 3|r - Blocks \u003CA02G,DataC3\u003E damage. |n|cffffcc00Level 4|r - Blocks \u003CA02G,DataC4\u003E damage."
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Stoneform - [|cffffcc00Level 2|r]"
+      "Value": "Hardened - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Stoneform - [|cffffcc00Level 3|r]"
+      "Value": "Hardened - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Stoneform - [|cffffcc00Level 4|r]"
-    },
-    {
-      "Level": 1,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "The hero\u0027s Stoneform blocks 14 damage from all physical attacks to a minimum of 5 damage."
+      "Value": "Hardened - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero\u0027s Stoneform blocks 20 damage from all physical attacks to a minimum of 7 damage."
+      "Value": "Reduces all attacks on the unit by \u003CA02G,DataC2\u003E damage. Attacks cannot be reduced below \u003CA02G,DataB2\u003E damage."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero\u0027s Stoneform blocks 26 damage from all physical attacks to a minimum of 9 damage."
+      "Value": "Reduces all attacks on the unit by \u003CA02G,DataC3\u003E damage. Attacks cannot be reduced below \u003CA02G,DataB3\u003E damage."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero\u0027s Stoneform blocks 32 damage from all physical attacks to a minimum of 11 damage."
+      "Value": "Reduces all attacks on the unit by \u003CA02G,DataC4\u003E damage. Attacks cannot be reduced below \u003CA02G,DataB4\u003E damage."
     },
     {
       "Id": 2020631137,
       "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces all attacks on the unit by \u003CA02G,DataC1\u003E damage. Attacks cannot be reduced below \u003CA02G,DataB1\u003E damage."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Hardened - [|cffffcc00Level 1|r]"
     }
   ]
 }

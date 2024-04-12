@@ -35,7 +35,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Fires a vengeful soul every 2 second at enemies of the Old Gods. Deals 25 damage.|n|nAttack range is 800."
+      "Value": "Fires a vengeful soul every \u003CA0RU,Cool1\u003E seconds at a nearby enemy within \u003CA0RU,Area1\u003E, dealing \u003CA0RU,DataA1\u003E damage."
     },
     {
       "Id": 2020631137,

@@ -133,7 +133,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       ModObjectLimit(FourCC("R03Z"), UNLIMITED); //War Plating
       ModObjectLimit(UPGRADE_R096_REMATERIALIZATION_LEGION, 1);
       ModObjectLimit(UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, 1);
-      ModObjectLimit(UPGRADE_R03L_IMPROVED_SHADOW_INFUSION_FEL_HORDE, 1);
+      ModObjectLimit(UPGRADE_R03L_IMPROVED_HEAL_FEL_HORDE, 1);
 
       //Heroes
       ModObjectLimit(FourCC("U00L"), 1); //Anetheron

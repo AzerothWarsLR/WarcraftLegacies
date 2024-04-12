@@ -3,12 +3,12 @@ using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Factions
 {
-  public class Ahnqiraj : Faction
+  public sealed class Ahnqiraj : Faction
   {
     /// <inheritdoc />
     public Ahnqiraj() : base("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cffaaa050", @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
     {
-      ControlPointDefenderUnitTypeId = Constants.UNIT_N0DW_CONTROL_POINT_DEFENDER_CTHUN_TOWER;
+      ControlPointDefenderUnitTypeId = UNIT_N0DW_CONTROL_POINT_DEFENDER_CTHUN_TOWER;
       TraditionalTeam = TeamSetup.OldGods;
     }
     
@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.Factions
 
       ModObjectLimit(UNIT_N06I_SILITHID_WARRIOR_C_THUN_SILITHID_WARRIOR, UNLIMITED);
       ModObjectLimit(UNIT_O00L_SILITHID_REAVER_C_THUN_SILITHID_REAVER, UNLIMITED);
-      ModObjectLimit(UNIT_U013_SILITHID_COLOSSUS_C_THUN_GIANT_SCARAB, UNLIMITED);
+      ModObjectLimit(UNIT_U013_SILITHID_COLOSSUS_C_THUN, UNLIMITED);
 
       ModObjectLimit(UNIT_N060_SILITHID_TUNNELER_C_THUN_SILITHID_TUNNELER, UNLIMITED);
       ModObjectLimit(UNIT_N05V_SHADOW_WEAVER_C_THUN_FACELESS_SHADOW_WEAVER, UNLIMITED);
