@@ -1,4 +1,5 @@
-﻿using WCSharp.Missiles;
+﻿using MacroTools.Extensions;
+using WCSharp.Missiles;
 
 namespace WarcraftLegacies.Source.Spells.MassiveAttack;
 
@@ -22,8 +23,17 @@ public sealed class MassiveAttackProjectile : BasicMissile
     CollisionRadius = 100f;
   }
 
-  public override void OnImpact()
+  public override void OnCollision(unit unit)
   {
-    UnitDamageTarget(Caster, Target, Damage, true, false, AttackType, DamageType, WEAPON_TYPE_WHOKNOWS);
+    if (!IsValidTarget(Caster, unit))
+      return;
+    
+    UnitDamageTarget(Caster, unit, Damage, false, false, AttackType, DamageType, WEAPON_TYPE_WHOKNOWS);
   }
+  
+  private static bool IsValidTarget(unit target, unit caster) =>
+    UnitAlive(target) &&
+    !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
+    !IsUnitType(target, UNIT_TYPE_ANCIENT) &&
+    !IsPlayerAlly(caster.OwningPlayer(), target.OwningPlayer());
 }
