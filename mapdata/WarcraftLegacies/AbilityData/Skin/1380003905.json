@@ -6,24 +6,14 @@
   ],
   "Modifications": [
     {
-      "Id": 1953653089,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfDeathOn.blp"
-    },
-    {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Necrolyte. Shadow Priest, alchemist, Succubus)"
+      "Value": "(Necrolyte, Weaver, Succubus)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
       "Value": "Q"
-    },
-    {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Shadow Infusion"
     },
     {
       "Id": 1952543841,
@@ -34,18 +24,7 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Shadow Infusion - [|cffffcc00Level 1|r]"
-    },
-    {
-      "Level": 1,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "Infuses an ally with dark magic, healing a target friendly non-mechanical wounded unit for 20 hit points."
-    },
-    {
-      "Id": 1918989665,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfDeathOff.blp"
+      "Value": "Heal - [|cffffcc00Level 1|r]"
     },
     {
       "Id": 1802007905,
@@ -56,13 +35,13 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Infuses an ally with dark magic, healing a target friendly non-mechanical wounded unit for 35 hit points."
+      "Value": "Heals a target friendly non-mechanical wounded unit for \u003CA0AR,DataA2\u003E hit points."
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Shadow Infusion - [|cffffcc00Level 2|r]"
+      "Value": "Heal - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 2,
@@ -75,6 +54,12 @@
       "Id": 829781345,
       "Type": 3,
       "Value": "|cffc3dbffRight-click to deactivate auto-casting.|r"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Heals a target friendly non-mechanical wounded unit for \u003CA0AR,DataA1\u003E hit points."
     }
   ]
 }

@@ -12,24 +12,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(murloc"
+      "Value": "(Snarecaster)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Binding Shackles"
+      "Value": "Universal Shackles"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Binding Shackles"
+      "Value": "Universal Shackles"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnchantedChains.blp"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Binds a target unit so that it cannot move or attack and takes 50 damage per second. |nLasts .5 seconds on heroes, 15 on units."
+      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes \u003CA0Z8,DataA1\u003E damage per second. |nLasts \u003CA0Z8,Dur1\u003E seconds."
     }
   ]
 }
