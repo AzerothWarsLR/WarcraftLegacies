@@ -20,7 +20,7 @@ public sealed class MassiveAttackProjectile : BasicMissile
     TargetImpactZ = 50;
     Speed = 700;
     EffectString = @"Abilities\Spells\Orc\Shockwave\ShockwaveMissile.mdl";
-    CollisionRadius = 100f;
+    CollisionRadius = 150f;
   }
 
   public override void OnCollision(unit unit)
