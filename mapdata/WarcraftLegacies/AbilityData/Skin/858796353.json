@@ -53,7 +53,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Holy Shockwave"
+      "Value": "Massive Attack"
     },
     {
       "Id": 1952805473,
@@ -63,7 +63,7 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\PASHolyCharge.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\PASability_evoker_seismicslam.blp"
     },
     {
       "Id": 1918988897,
@@ -74,7 +74,7 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Holy Shockwave"
+      "Value": "Massive Attack"
     },
     {
       "Level": 2,

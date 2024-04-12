@@ -1,5 +1,6 @@
 ﻿using MacroTools;
-using MacroTools.Spells;
+using MacroTools.PassiveAbilities;
+using MacroTools.PassiveAbilitySystem;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
 
@@ -9,8 +10,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
   {
     public static void Setup()
     {
-      
-
       SpellSystem.Register(new Devour(ABILITY_A0NP_DEVOUR_TORTOLLA)
       {
         PercentageOfMaxHealth = 0.5f,
@@ -29,6 +28,12 @@ namespace WarcraftLegacies.Source.Setup.Spells
           Base = 100,
           PerLevel = 100
         }
+      });
+      
+      PassiveAbilityManager.Register(new MassiveAttack(UNIT_E00A_ANCIENT_GUARDIAN_DRUIDS, ABILITY_ZB15_MASSIVE_ATTACK_URSOC)
+      {
+        DummyAbilityId = ABILITY_A104_SHOCKWAVE_WARFRAME_DUMMY,
+        DummyOrderId = OrderId("carrionswarm")
       });
     }
   }

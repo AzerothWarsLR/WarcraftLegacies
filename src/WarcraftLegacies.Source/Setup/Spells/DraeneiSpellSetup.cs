@@ -48,12 +48,11 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Color = new Color(55, 50, 250, 255)
       });
 
-      var holyShockwave = new SpellOnAttack(UNIT_N0CX_LIGHTFORGED_WARFRAME_DRAENEI,
-        ABILITY_A103_HOLY_SHOCKWAVE_DRAENEI)
+      var holyShockwave = new MassiveAttack(UNIT_N0CX_LIGHTFORGED_WARFRAME_DRAENEI,
+        ABILITY_A103_MASSIVE_ATTACK_DRAENEI)
       {
         DummyAbilityId = ABILITY_A104_SHOCKWAVE_WARFRAME_DUMMY,
-        DummyOrderId = OrderId("carrionswarm"),
-        ProcChance = 1
+        DummyOrderId = OrderId("carrionswarm")
       };
       PassiveAbilityManager.Register(holyShockwave);
 

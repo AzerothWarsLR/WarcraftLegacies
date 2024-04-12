@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MacroTools.Extensions;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -18,7 +19,8 @@ namespace MacroTools.DummyCasters
     /// <summary>
     /// Causes the specified ability to be cast from the specified object at the specified target.
     /// </summary>
-    public void CastUnit(unit caster, int abilId, int orderId, int level, unit target, DummyCastOriginType originType)
+    public void CastUnit(unit caster, int abilId, int orderId, int level, unit target, DummyCastOriginType originType,
+      Action<unit>? preCastFunc = null)
     {
       var originPoint = originType == DummyCastOriginType.Caster ? caster.GetPosition() : target.GetPosition();
       _unit
@@ -29,6 +31,8 @@ namespace MacroTools.DummyCasters
 
       if (originType == DummyCastOriginType.Caster)
         _unit.FacePosition(target.GetPosition());
+
+      preCastFunc?.Invoke(_unit);
 
       _unit
         .IssueOrder(orderId, target)
