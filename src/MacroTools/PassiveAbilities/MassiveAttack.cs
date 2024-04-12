@@ -68,6 +68,8 @@ namespace MacroTools.PassiveAbilities
         var ability = BlzGetUnitAbility(dummyCaster, AbilityTypeId);
         BlzSetAbilityRealLevelField(ability, ABILITY_RLF_DAMAGE_UCS1, 0, 100000);
         BlzSetAbilityRealLevelField(ability, ABILITY_RLF_DAMAGE_UCS1, 1, 100000);
+        SetUnitAbilityLevel(dummyCaster, AbilityTypeId, 2);
+        SetUnitAbilityLevel(dummyCaster, AbilityTypeId, 1);
       }
     }
   }

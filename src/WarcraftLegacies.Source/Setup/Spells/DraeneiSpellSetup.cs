@@ -51,7 +51,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var holyShockwave = new MassiveAttack(UNIT_N0CX_LIGHTFORGED_WARFRAME_DRAENEI,
         ABILITY_A103_MASSIVE_ATTACK_DRAENEI)
       {
-        DummyAbilityId = ABILITY_A104_SHOCKWAVE_WARFRAME_DUMMY,
+        DummyAbilityId = ABILITY_A104_SHOCKWAVE_MASSIVE_ATTACK_DUMMY,
         DummyOrderId = OrderId("carrionswarm")
       };
       PassiveAbilityManager.Register(holyShockwave);

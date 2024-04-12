@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       
       PassiveAbilityManager.Register(new MassiveAttack(UNIT_E00A_ANCIENT_GUARDIAN_DRUIDS, ABILITY_ZB15_MASSIVE_ATTACK_URSOC)
       {
-        DummyAbilityId = ABILITY_A104_SHOCKWAVE_WARFRAME_DUMMY,
+        DummyAbilityId = ABILITY_A104_SHOCKWAVE_MASSIVE_ATTACK_DUMMY,
         DummyOrderId = OrderId("carrionswarm")
       });
     }
