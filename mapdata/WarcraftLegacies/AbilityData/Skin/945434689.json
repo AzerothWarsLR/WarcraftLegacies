@@ -34,7 +34,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes \u003CA0Z8,DataA1\u003E damage per second. |nLasts \u003CA0Z8,Dur1\u003E seconds."
+      "Value": "Magically binds a target enemy unit, so that it cannot move or attack and takes \u003CA0Z8,DataA1\u003E damage per second. |nLasts \u003CA0Z8,Dur1\u003E seconds against units and \u003CA0Z8,HeroDur1\u003E seconds against heroes."
     }
   ]
 }

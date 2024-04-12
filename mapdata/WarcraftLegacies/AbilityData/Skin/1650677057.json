@@ -7,7 +7,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Red - Anub\u0027Arak)"
+      "Value": "(Anub\u0027arak, Skeram)"
     },
     {
       "Id": 2037082209,
@@ -20,39 +20,75 @@
       "Value": "E"
     },
     {
-      "Id": 1953854049,
-      "Type": 3,
-      "Value": "The hero progenerates Carrion Beetle from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|n|cffffcc00Level 1|r - Spawns a level 1 Carrion Beetle. Max 6 Beetles. |n|cffffcc00Level 2|r - Spawns a level 2 Carrion Beetle. Max 6 Beetles. |n|cffffcc00Level 3|r - Spawns a level 3 Dire Carrion Beetle. Max 6 Beetles. |n|cffffcc00Level 4|r - Spawns a level 3 Dire Carrion Beetle. Max 12 Beetles."
-    },
-    {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
       "Value": "Carrion Beetles - [|cffffcc00Level 4|r]"
     },
     {
-      "Level": 1,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "The hero progenerates Carrion Beetle from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|n| Spawns a level 1 Carrion Beetle. Max 6 Beetles. |n|n| Got Spiked Carapace and Acid Attack -5"
-    },
-    {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero progenerates Carrion Beetle from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|n| Spawns a level 2 Carrion Beetle. Max 6 Beetles. |n|n| Got Spiked Carapace, Acid Attack -7 and Burrow."
+      "Value": "Progenerates \u003CAUcb,DataA2\u003E Beetles from a target corpse. Beetles have \u003Cucs2,realHP\u003E hit points, deal \u003Cucs2,mindmg2\u003E - \u003Cucs2,maxdmg2\u003E damage, and have Spiked Carapace, Acid Attack, and Burrow. Beetles are permanent until killed. |nMaximum of \u003CAUcb,DataE2\u003E Beetles."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero progenerates Carrion Beetle from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|n| Spawns a level 3 Dire Carrion Beetle. Max 6 Beetles. |n|n| Got Spiked Carapace, Acid Attack -10, Burrow and Spawn Beetles."
+      "Value": "Progenerates \u003CAUcb,DataA3\u003E Beetles from a target corpse. Beetles have \u003Cucs3,realHP\u003E hit points, deal \u003Cucs3,mindmg3\u003E - \u003Cucs3,maxdmg3\u003E damage, and have Spiked Carapace, Acid Attack, Burrow, and Spawn Beetles. Beetles are permanent until killed. |nMaximum of \u003CAUcb,DataE3\u003E Beetles."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero progenerates Carrion Beetle from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|nSpawns a level 3 Dire Carrion Beetle. Max 12 Beetles. |n|nGot Spiked Carapace, Acid Attack -10, Burrow and Spawn Beetles."
+      "Value": "Progenerates \u003CAUcb,DataA4\u003E Beetles from a target corpse. Beetles have \u003Cucs3,realHP\u003E hit points, deal \u003Cucs3,mindmg4\u003E - \u003Cucs3,maxdmg4\u003E damage, and have Spiked Carapace, Acid Attack, Burrow, and Spawn Beetles. Beetles are permanent until killed. |nMaximum of \u003CAUcb,DataE4\u003E Beetles."
+    },
+    {
+      "Level": 2,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to activate auto-casting."
+    },
+    {
+      "Level": 3,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to activate auto-casting."
+    },
+    {
+      "Level": 4,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to activate auto-casting."
+    },
+    {
+      "Level": 2,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to deactivate auto-casting."
+    },
+    {
+      "Level": 3,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to deactivate auto-casting."
+    },
+    {
+      "Level": 4,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to deactivate auto-casting."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Progenerates \u003CAUcb,DataA1\u003E Beetles from a target corpse. Beetles have \u003Cucs1,realHP\u003E hit points, deal \u003Cucs1,mindmg1\u003E - \u003Cucs1,maxdmg1\u003E damage, and have Spiked Carapace and Acid Attack. Beetles are permanent until killed. |nMaximum of \u003CAUcb,DataE1\u003E Beetles."
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The caster progenerates \u003CAUcb,DataA1\u003E Carrion Beetles from a target corpse. Beetles are permanent, but only \u003CAUcb,DataE1\u003E can be controlled at a time. |n|n|cffffcc00Level 1|r - \u003Cucs1,realHP\u003E hit points, \u003Cucs1,mindmg1\u003E - \u003Cucs1,maxdmg1\u003E damage, Spiked Carapace, and Acid Attack. |n|cffffcc00Level 2|r - \u003Cucs2,realHP\u003E hit points, \u003Cucs2,mindmg1\u003E - \u003Cucs2,maxdmg1\u003E damage, Spiked Carapace, Acid Attack, and Burrow. |n|cffffcc00Level 3|r - \u003Cucs3,realHP\u003E hit points, \u003Cucs3,mindmg1\u003E - \u003Cucs3,maxdmg1\u003E damage, Spiked Carapace, Acid Attack, Burrow, and Spawn Beetles. |n|cffffcc00Level 4|r - \u003Cucs3,realHP\u003E hit points, \u003Cucs3,mindmg1\u003E - \u003Cucs3,maxdmg1\u003E damage, Spiked Carapace, Acid Attack, Burrow, and Spawn Beetles. Number of controllable beetles increased to \u003CAUcb,DataE4\u003E."
     }
   ]
 }

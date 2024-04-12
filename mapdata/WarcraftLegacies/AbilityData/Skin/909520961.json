@@ -13,7 +13,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Grey - Rexxar)"
+      "Value": "(Rexxar)"
     },
     {
       "Id": 2037082209,
@@ -47,7 +47,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "The hero has been toughened immensely by his experience, softening the blows of all physical attacks. Attacks cannot be reduced below \u003CA066,DataB1\u003E damage. |n|n|cffffcc00Level 1|r - Blocks \u003CA066,DataC1\u003E damage.|n|cffffcc00Level 2|r - Blocks \u003CA066,DataC2\u003E damage.|n|cffffcc00Level 3|r - Blocks \u003CA066,DataC3\u003E damage. |n|cffffcc00Level 4|r - Blocks \u003CA066,DataC4\u003E damage"
+      "Value": "Reduces the damage of all incoming attacks. Attacks cannot be reduced below \u003CA066,DataB1\u003E damage. |n|n|cffffcc00Level 1|r - Blocks \u003CA066,DataC1\u003E damage.|n|cffffcc00Level 2|r - Blocks \u003CA066,DataC2\u003E damage.|n|cffffcc00Level 3|r - Blocks \u003CA066,DataC3\u003E damage. |n|cffffcc00Level 4|r - Blocks \u003CA066,DataC4\u003E damage."
     },
     {
       "Level": 1,
