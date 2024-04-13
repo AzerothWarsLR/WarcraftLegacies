@@ -32,11 +32,11 @@ namespace MacroTools.BookSystem
     protected Book(float width, float height, float bottomButtonXOffset, float bottomButtonYOffset, int maximumPageCount) : base(
       "ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0)
     {
-      _pages = CreatePages(maximumPageCount);
-
       Width = width;
       Height = height;
       Visible = false;
+      
+      _pages = CreatePages(maximumPageCount);
 
       ExitButton = new Button("ScriptDialogButton", this, 0)
       {

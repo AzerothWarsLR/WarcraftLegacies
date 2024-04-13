@@ -86,9 +86,11 @@ namespace MacroTools.BookSystem.Powers
 
     private void AddAllPowers()
     {
-      if (_trackedFaction != null)
-        foreach (var power in _trackedFaction.GetAllPowers())
-          AddPower(power);
+      if (_trackedFaction == null) 
+        return;
+      
+      foreach (var power in _trackedFaction.GetAllPowers())
+        AddPower(power);
     }
 
     private void ReRender()
@@ -101,12 +103,6 @@ namespace MacroTools.BookSystem.Powers
       // _pagesByPower.Clear();
       // Pages.Clear();
       // AddPagesAndPowers();
-    }
-
-    private void AddPagesAndPowers()
-    {
-      if (_trackedFaction != null)
-        AddAllPowers();
     }
 
     private void AddPower(Power power)
