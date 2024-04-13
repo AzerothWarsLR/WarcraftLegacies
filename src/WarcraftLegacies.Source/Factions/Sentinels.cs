@@ -177,7 +177,8 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
     private void RegisterPowers()
     {
       AddPower(new DummyPower("Unspoiled Wilderness",
-        "Your Control Points increase your units' movement speed by 24% in a large radius."));
+        "Your Control Points increase your units' movement speed by 24% in a large radius.",
+        "ANA_HealingButterfliesFixed"));
       
       var worldTrees = new List<Capital>
       {
@@ -187,6 +188,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
       };
       AddPower(new Immortality(25, 45, worldTrees)
       {
+        IconName = "ArcaneRessurection",
         Name = "Immortality",
         Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
         ResearchId = UPGRADE_YB01_IMMORTALITY_POWER_IS_ACTIVE

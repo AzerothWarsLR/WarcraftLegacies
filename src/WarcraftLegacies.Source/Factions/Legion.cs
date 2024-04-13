@@ -160,6 +160,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       ResearchManager.Register(new PowerResearch(UPGRADE_R096_REMATERIALIZATION_LEGION, 150,
         new Rematerialization(0.15f, new Point(20454.9f, -28873.6f), "Argus", Regions.MonolithNoBuild)
         {
+          IconName = "achievement_raid_argusraid",
           Name = "Rematerialization",
           EligibilityCondition = dyingUnit => dyingUnit.OwningPlayer().GetObjectLimit(dyingUnit.GetTypeId()) != 0
         }));
