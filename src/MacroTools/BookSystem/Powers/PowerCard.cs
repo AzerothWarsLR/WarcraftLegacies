@@ -1,5 +1,4 @@
-﻿using System;
-using MacroTools.BookSystem.Core;
+﻿using MacroTools.BookSystem.Core;
 using MacroTools.FactionSystem;
 using MacroTools.Frames;
 using static War3Api.Common;
@@ -34,7 +33,6 @@ namespace MacroTools.BookSystem.Powers
         if (_power == null)
           return;
         
-        Console.WriteLine($"Setting {GetHandleId(Handle)} to {Power?.Name}");
         _icon.Texture = _power.IconPath;
         _title.Text = _power.Name;
         _textFrame.Text = _power.Description;

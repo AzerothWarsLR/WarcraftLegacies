@@ -9,10 +9,8 @@ namespace MacroTools.BookSystem.Powers
   {
     private readonly Dictionary<Power, PowerCard> _cardsByPower = new();
     
-    public PowerPage(float width, float height) : base(width, height, 3, 1)
+    public PowerPage(float width, float height) : base(width, height, 3, 1, 0.025f, 0.05f)
     {
-      YOffsetTop = 0.025f;
-      YOffsetBot = 0.05f;
     }
 
     /// <summary>
