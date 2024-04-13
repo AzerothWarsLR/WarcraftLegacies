@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Frames;
@@ -15,9 +14,14 @@ namespace MacroTools.BookSystem
   public abstract class Book<T> : Frame, ISpecialMenu where T : Page, new()
   {
     /// <summary>
+    /// How many pages the Book can have.
+    /// </summary>
+    public int MaximumPageCount { get; }
+
+    /// <summary>
     /// All <see cref="Page"/>s contained in the Book.
     /// </summary>
-    protected readonly List<T> Pages = new();
+    private readonly T[] _pages;
 
     private readonly TextFrame _title;
     private int _activePageIndex;
@@ -29,9 +33,13 @@ namespace MacroTools.BookSystem
     /// <param name="height">How tall the Book should be.</param>
     /// <param name="bottomButtonXOffset">How far the Previous and Next buttons should be from the left side of the Book.</param>
     /// <param name="bottomButtonYOffset">How far the Previous and Next buttons should be from the bottom side of the Book.</param>
-    protected Book(float width, float height, float bottomButtonXOffset, float bottomButtonYOffset) : base(
+    /// <param name="maximumPageCount">How many pages the Book can have. Can't be changed once set.</param>
+    protected Book(float width, float height, float bottomButtonXOffset, float bottomButtonYOffset, int maximumPageCount) : base(
       "ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0)
     {
+      MaximumPageCount = maximumPageCount;
+      _pages = CreatePages(maximumPageCount);
+
       Width = width;
       Height = height;
       Visible = false;
@@ -97,7 +105,7 @@ namespace MacroTools.BookSystem
     /// </summary>
     public string Title
     {
-      init => _title.Text = value;
+      protected init => _title.Text = value;
       get => _title.Text;
     }
 
@@ -132,11 +140,11 @@ namespace MacroTools.BookSystem
       get => _activePageIndex;
       set
       {
-        if (value >= Pages.Count || value < 0)
+        if (value >= _pages.Length || value < 0)
           return;
-        Pages[_activePageIndex].Visible = false;
+        _pages[_activePageIndex].Visible = false;
         _activePageIndex = value;
-        Pages[_activePageIndex].Visible = true;
+        _pages[_activePageIndex].Visible = true;
         RefreshNavigationButtonVisiblity();
       }
     }
@@ -153,12 +161,12 @@ namespace MacroTools.BookSystem
           return;
         Visible = true;
         LauncherButton.Visible = false;
-        foreach (var page in Pages)
+        foreach (var page in _pages)
         {
           page.Visible = false;
         }
 
-        Pages.First().Visible = true;
+        _pages.First().Visible = true;
         _activePageIndex = 0;
         RefreshNavigationButtonVisiblity();
       }
@@ -169,20 +177,44 @@ namespace MacroTools.BookSystem
     }
 
     /// <summary>
+    /// Returns the earliest non-empty <see cref="Page"/>.
+    /// </summary>
+    /// <returns></returns>
+    protected T GetNextAvailablePage()
+    {
+      foreach (var page in _pages)
+        if (page.HasRoom())
+          return page;
+
+      throw new InvalidOperationException($"{Title} has no available pages.");
+    }
+    
+    private T[] CreatePages(int maximumPageCount)
+    {
+      var pages = new T[maximumPageCount];
+      for (var i = 0; i < maximumPageCount; i++) 
+        pages[i] = CreatePage(i + 1);
+
+      pages.First().Visible = true;
+
+      return pages;
+    }
+    
+    /// <summary>
     ///    Adds a new Page to the end of the Book.
     /// </summary>
-    protected T AddPage()
+    private T CreatePage(int pageNumber)
     { 
       var newPage = new T
       {
         Width = Width,
         Height = Height,
-        PageNumber = Pages.Count + 1,
-        Parent = this
+        PageNumber = pageNumber,
+        Parent = this,
+        Visible = false
       };
       newPage.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_CENTER, 0, 0);
-
-      Pages.Add(newPage);
+      
       RefreshNavigationButtonVisiblity();
       return newPage;
     }
@@ -239,7 +271,7 @@ namespace MacroTools.BookSystem
     /// </summary>
     private void RefreshNavigationButtonVisiblity()
     {
-      var pageCount = Pages.Count;
+      var pageCount = _pages.Length;
       MoveNextButton.Visible = pageCount > ActivePageIndex + 1;
       MovePreviousButton.Visible = ActivePageIndex > 0;
     }

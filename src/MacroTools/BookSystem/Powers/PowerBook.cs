@@ -18,7 +18,7 @@ namespace MacroTools.BookSystem.Powers
     /// <summary>
     /// Initializes a new instance of the <see cref="PowerBook"/> class.
     /// </summary>
-    private PowerBook() : base(0.34f, 0.39f, 0.02f, 0.015f)
+    private PowerBook() : base(0.34f, 0.39f, 0.02f, 0.015f, 3)
     {
     }
     
@@ -33,8 +33,6 @@ namespace MacroTools.BookSystem.Powers
       };
 
       trackedPlayer.GetPlayerData().ChangedFaction += book.OnPlayerChangedFaction;
-      var firstPage = book.AddPage();
-      firstPage.Visible = true;
 
       return book;
     }
@@ -60,7 +58,7 @@ namespace MacroTools.BookSystem.Powers
         {
           _trackedFaction.PowerAdded += OnFactionAddPower;
           _trackedFaction.PowerRemoved += OnFactionRemovePower;
-          AddAllPowers(_trackedFaction);
+          AddAllPowers();
         }
       }
     }
@@ -86,41 +84,34 @@ namespace MacroTools.BookSystem.Powers
         RemovePower(power);
     }
 
-    private void AddAllPowers(Faction faction)
+    private void AddAllPowers()
     {
-      foreach (var power in faction.GetAllPowers())
-        AddPower(power);
+      if (_trackedFaction != null)
+        foreach (var power in _trackedFaction.GetAllPowers())
+          AddPower(power);
     }
 
     private void ReRender()
     {
-      foreach (var page in Pages)
-      {
-        page.Visible = false; //This avoids a crash to desktop when rerendering a Book that a player has open.
-        page.Dispose();
-      }
-      _pagesByPower.Clear();
-      Pages.Clear();
-      AddPagesAndPowers();
+      // foreach (var page in Pages)
+      // {
+      //   page.Visible = false; //This avoids a crash to desktop when rerendering a Book that a player has open.
+      //   page.Dispose();
+      // }
+      // _pagesByPower.Clear();
+      // Pages.Clear();
+      // AddPagesAndPowers();
     }
 
     private void AddPagesAndPowers()
     {
-      var firstPage = AddPage();
-      firstPage.Visible = true;
       if (_trackedFaction != null)
-        AddAllPowers(_trackedFaction);
+        AddAllPowers();
     }
 
     private void AddPower(Power power)
     {
-      var lastPage = Pages.Last();
-      if (lastPage.CardCount >= lastPage.CardLimit)
-      {
-        AddPage();
-        lastPage = Pages.Last();
-      }
-
+      var lastPage = GetNextAvailablePage();
       lastPage.AddPower(power);
       _pagesByPower.Add(power, lastPage);
     }

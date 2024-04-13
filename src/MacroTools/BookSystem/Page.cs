@@ -14,14 +14,14 @@ namespace MacroTools.BookSystem
       set => _pageNumberFrame.Text = $"Page {value.ToString()}";
     }
 
-    protected int Rows { get; set; }
-    protected int Columns { get; set; }
+    protected int Rows { get; init; }
+    protected int Columns { get; init; }
     protected float YOffsetTop { get; init; }
     protected float YOffsetBot { get; init; }
 
     protected Page() : base("ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0)
     {
-      Texture = @"UI/Widgets/EscMenu/Human/blank-background.blp";
+      Texture = "UI/Widgets/EscMenu/Human/blank-background.blp";
       SetAbsPoint(FRAMEPOINT_CENTER, 0.4f, 0.38f);
 
       _pageNumberFrame = new TextFrame("ArtifactMenuTitle", this, 0)
@@ -43,7 +43,12 @@ namespace MacroTools.BookSystem
     ///   The number of cards this page is holding.
     /// </summary>
     public int CardCount => Cards.Count;
-    
+
+    /// <summary>
+    /// Whether or not the <see cref="Page"/> still has room to fill in new cards.
+    /// </summary>
+    public bool HasRoom() => CardCount < CardLimit;
+
     protected void PositionAllCards()
     {
       var i = 0;
