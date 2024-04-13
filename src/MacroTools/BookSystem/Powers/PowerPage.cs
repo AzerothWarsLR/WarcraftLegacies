@@ -35,8 +35,9 @@ namespace MacroTools.BookSystem.Powers
     /// </summary>
     public void AddPower(Power power)
     {
-      if (CardCount >= CardLimit)
-        throw new Exception($"PowerPage is already at the card limit of {CardLimit} cards.");
+      if (!HasRoom())
+        throw new Exception("PowerPage is already at the card limit of cards.");
+      
       var powerCard = new PowerCard(power, this);
       PositionFrameAtIndex(powerCard, Cards.Count);
       Cards.Add(powerCard);

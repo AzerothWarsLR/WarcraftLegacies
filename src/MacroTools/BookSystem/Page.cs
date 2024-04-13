@@ -37,12 +37,12 @@ namespace MacroTools.BookSystem
     /// <summary>
     ///   The number of cards this page can hold.
     /// </summary>
-    public int CardLimit => Rows * Columns;
+    private int CardLimit => Rows * Columns;
 
     /// <summary>
     ///   The number of cards this page is holding.
     /// </summary>
-    public int CardCount => Cards.Count;
+    private int CardCount => Cards.Count;
 
     /// <summary>
     /// Whether or not the <see cref="Page"/> still has room to fill in new cards.
