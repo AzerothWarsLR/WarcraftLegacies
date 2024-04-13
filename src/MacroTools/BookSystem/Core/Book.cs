@@ -169,6 +169,7 @@ namespace MacroTools.BookSystem.Core
 
         Pages.First().Visible = true;
         _activePageIndex = 0;
+        RefreshNavigationButtonVisiblity();
       }
       catch (Exception ex)
       {
