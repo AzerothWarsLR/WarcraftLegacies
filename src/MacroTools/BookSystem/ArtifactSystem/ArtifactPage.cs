@@ -24,8 +24,8 @@ namespace MacroTools.BookSystem.ArtifactSystem
     /// </summary>
     public void AddArtifact(Artifact artifact)
     {
-      if (CardCount >= CardLimit)
-        throw new Exception($"ArtifactPage is already at the card limit of {CardLimit} cards.");
+      if (HasRoom())
+        throw new Exception("ArtifactPage is already at the card limit.");
       var artifactCard = new ArtifactCard(artifact, this);
       PositionFrameAtIndex(artifactCard, Cards.Count);
       Cards.Add(artifactCard);

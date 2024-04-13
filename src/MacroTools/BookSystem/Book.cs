@@ -184,14 +184,15 @@ namespace MacroTools.BookSystem
 
       throw new InvalidOperationException($"{Title} has no available pages.");
     }
-    
+
     private T[] CreatePages(int maximumPageCount)
     {
       var pages = new T[maximumPageCount];
-      for (var i = 0; i < maximumPageCount; i++) 
+      for (var i = 0; i < maximumPageCount; i++)
+      {
         pages[i] = CreatePage(i + 1);
-
-      pages.First().Visible = true;
+        pages[i].Visible = i == 0;
+      }
 
       return pages;
     }
@@ -200,7 +201,7 @@ namespace MacroTools.BookSystem
     ///    Adds a new Page to the end of the Book.
     /// </summary>
     private T CreatePage(int pageNumber)
-    { 
+    {
       var newPage = new T
       {
         Width = Width,
@@ -266,7 +267,7 @@ namespace MacroTools.BookSystem
     /// </summary>
     private void RefreshNavigationButtonVisiblity()
     {
-      var pageCount = _pages.Length;
+      var pageCount = _pages.Count(x => x.Visible);
       MoveNextButton.Visible = pageCount > ActivePageIndex + 1;
       MovePreviousButton.Visible = ActivePageIndex > 0;
     }

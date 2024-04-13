@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Frames;
 using static War3Api.Common;
 
@@ -48,7 +49,7 @@ namespace MacroTools.BookSystem
     /// Whether or not the <see cref="Page"/> still has room to fill in new cards.
     /// </summary>
     public bool HasRoom() => CardCount < CardLimit;
-
+    
     protected void PositionAllCards()
     {
       var i = 0;
