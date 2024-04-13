@@ -10,7 +10,7 @@ namespace MacroTools.Frames
    /// </summary>
    public sealed class Button : Frame
    {
-      private TriggerWrapper _onClickTrigger;
+      private TriggerWrapper? _onClickTrigger;
 
       public Button(string name, framehandle parent, int priority) : base(name, parent,
          priority)
@@ -39,12 +39,13 @@ namespace MacroTools.Frames
       /// </summary>
       public OnClickAction OnClick
       {
-         set
-         {
-            _onClickTrigger = new TriggerWrapper();
-            _onClickTrigger.RegisterFrameEvent(Handle, FRAMEEVENT_CONTROL_CLICK);
-            _onClickTrigger.AddAction(() => value(GetTriggerPlayer()));
-         }
+        set
+        {
+          _onClickTrigger?.Dispose();
+          _onClickTrigger = new TriggerWrapper();
+          _onClickTrigger.RegisterFrameEvent(Handle, FRAMEEVENT_CONTROL_CLICK);
+          _onClickTrigger.AddAction(() => value(GetTriggerPlayer()));
+        }
       }
 
       public string Text
