@@ -12,7 +12,7 @@ namespace MacroTools.BookSystem.ArtifactSystem
   /// <summary>
   ///   Represents a single Artifact in a black rectangle.
   /// </summary>
-  public sealed class ArtifactCard : Card
+  public sealed class ArtifactCard : Card<Artifact>
   {
     private const float BoxWidth = 0.13f;
     private const float BoxHeight = 0.086f;
@@ -25,11 +25,11 @@ namespace MacroTools.BookSystem.ArtifactSystem
 
     /// <inheritdoc />
     public override bool Occupied => _artifact != null;
-    
+
     /// <summary>
-    /// The <see cref="Artifact"/> currently being represented by this <see cref="ArtifactCard"/>.
+    /// The <see cref="Item"/> currently being represented by this <see cref="ArtifactCard"/>.
     /// </summary>
-    public Artifact? Artifact
+    public override Artifact? Item
     {
       get => _artifact;
       set

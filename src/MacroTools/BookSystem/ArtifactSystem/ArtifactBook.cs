@@ -10,7 +10,7 @@ namespace MacroTools.BookSystem.ArtifactSystem
   /// <summary>
   ///   Displays all Artifacts in the game.
   /// </summary>
-  public sealed class ArtifactBook : Book<ArtifactPage, ArtifactCard, ArtifactPageFactory, ArtifactCardFactory>
+  public sealed class ArtifactBook : Book<Artifact, ArtifactPage, ArtifactCard, ArtifactPageFactory, ArtifactCardFactory>
   {
     /// <summary>
     /// Initializes a new instance of the <see cref="ArtifactBook"/> class.

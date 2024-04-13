@@ -5,8 +5,8 @@ using static War3Api.Common;
 
 namespace MacroTools.BookSystem.Core
 {
-  public abstract class Page<TCard, TCardFactory> : Frame
-    where TCard : Card
+  public abstract class Page<TItem, TCard, TCardFactory> : Frame
+    where TCard : Card<TItem>
     where TCardFactory : ICardFactory<TCard>, new()
   {
     protected IReadOnlyList<TCard> Cards { get; }
@@ -59,7 +59,11 @@ namespace MacroTools.BookSystem.Core
     /// <summary>
     /// Clears the contents of this page.
     /// </summary>
-    public abstract void Clear();
+    public void Clear()
+    {
+      foreach (var card in Cards) 
+        card.Clear();
+    }
     
     /// <summary>
     /// Returns the first unoccupied Card.

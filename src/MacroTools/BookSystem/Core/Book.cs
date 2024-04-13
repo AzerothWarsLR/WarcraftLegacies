@@ -11,10 +11,10 @@ namespace MacroTools.BookSystem.Core
   /// <summary>
   /// A collection of Pages that players can flip through to read information.
   /// </summary>
-  public abstract class Book<TPage, TCard, TPageFactory, TCardFactory> : Frame, ISpecialMenu
-    where TCard : Card
+  public abstract class Book<TItem, TPage, TCard, TPageFactory, TCardFactory> : Frame, ISpecialMenu
+    where TCard : Card<TItem>
     where TCardFactory : ICardFactory<TCard>, new()
-    where TPage : Page<TCard, TCardFactory>
+    where TPage : Page<TItem, TCard, TCardFactory>
     where TPageFactory : IPageFactory<TPage>, new()
   {
     /// <summary>
@@ -172,7 +172,7 @@ namespace MacroTools.BookSystem.Core
       }
       catch (Exception ex)
       {
-        Console.WriteLine($"Failed to open {nameof(Book<TPage, TCard, TPageFactory, TCardFactory>)}: {ex}");
+        Console.WriteLine($"Failed to open {nameof(Book<TItem, TPage, TCard, TPageFactory, TCardFactory>)}: {ex}");
       }
     }
 

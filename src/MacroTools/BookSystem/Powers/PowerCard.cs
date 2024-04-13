@@ -5,7 +5,7 @@ using static War3Api.Common;
 
 namespace MacroTools.BookSystem.Powers
 {
-  public sealed class PowerCard : Card
+  public sealed class PowerCard : Card<Power>
   {
     private const float BoxWidth = 0.32f;
     private const float BoxHeight = 0.092f;
@@ -16,12 +16,12 @@ namespace MacroTools.BookSystem.Powers
 
     
     /// <inheritdoc />
-    public override bool Occupied => Power != null;
+    public override bool Occupied => Item != null;
     
     /// <summary>
-    /// The <see cref="Power"/> currently being represented by this <see cref="PowerCard"/>.
+    /// The <see cref="Item"/> currently being represented by this <see cref="PowerCard"/>.
     /// </summary>
-    public Power? Power
+    public override Power? Item
     {
       get => _power;
       set
