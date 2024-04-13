@@ -93,7 +93,7 @@ namespace MacroTools.BookSystem.Powers
     private void AddPower(Power power)
     {
       var lastPage = GetFirstAvailablePage();
-      lastPage.AddPower(power);
+      lastPage.AddItem(power);
     }
   }
 }

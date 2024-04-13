@@ -9,8 +9,7 @@ namespace MacroTools.BookSystem.Core
     where TCard : Card<TItem>
     where TCardFactory : ICardFactory<TCard>, new()
   {
-    protected IReadOnlyList<TCard> Cards { get; }
-    
+    private readonly List<TCard> _cards;
     private readonly TextFrame _pageNumberFrame;
     private readonly int _rows;
     private readonly int _columns;
@@ -41,7 +40,7 @@ namespace MacroTools.BookSystem.Core
       _pageNumberFrame.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOPRIGHT, -0.05f, -0.025f);
       AddFrame(_pageNumberFrame);
 
-      Cards = CreateCards(rows * columns);
+      _cards = CreateCards(rows * columns);
 
       Visible = false;
     }
@@ -49,26 +48,35 @@ namespace MacroTools.BookSystem.Core
     /// <summary>
     /// Whether or not the Page still has room to fill in new cards.
     /// </summary>
-    public bool HasUnoccupiedCards() => !Cards.All(x => x.Occupied);
+    public bool HasUnoccupiedCards() => !_cards.All(x => x.Occupied);
 
     /// <summary>
     /// Whether or not the Page has any active cards.
     /// </summary>
-    public bool HasOccupiedCards() => Cards.Any(x => x.Occupied);
-
+    public bool HasOccupiedCards() => _cards.Any(x => x.Occupied);
+    
+    /// <summary>
+    /// Adds a new item to the first Page that has an unoccupied Card.
+    /// </summary>
+    public void AddItem(TItem item)
+    {
+      var card = GetFirstUnoccupiedCard();
+      card.Item = item;
+    }
+    
     /// <summary>
     /// Clears the contents of this page.
     /// </summary>
     public void Clear()
     {
-      foreach (var card in Cards) 
+      foreach (var card in _cards) 
         card.Clear();
     }
     
     /// <summary>
     /// Returns the first unoccupied Card.
     /// </summary>
-    protected TCard GetFirstUnoccupiedCard() => Cards.First(x => !x.Occupied);
+    protected TCard GetFirstUnoccupiedCard() => _cards.First(x => !x.Occupied);
 
     private void PositionFrameAtIndex(Frame card, int index)
     {

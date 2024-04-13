@@ -15,14 +15,5 @@ namespace MacroTools.BookSystem.ArtifactSystem
     internal ArtifactPage(float width, float height) : base(width, height, 3, 5, 0.025f, 0.05f)
     {
     }
-
-    /// <summary>
-    ///   Renders an Artifact on this MenuPage as an ArtifactCard.
-    /// </summary>
-    internal void AddArtifact(Artifact artifact)
-    {
-      var artifactCard = GetFirstUnoccupiedCard();
-      artifactCard.Item = artifact;
-    }
   }
 }

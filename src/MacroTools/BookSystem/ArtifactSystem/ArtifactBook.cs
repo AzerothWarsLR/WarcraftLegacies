@@ -35,7 +35,7 @@ namespace MacroTools.BookSystem.ArtifactSystem
     private void AddArtifact(Artifact artifact)
     {
       var lastPage = GetFirstAvailablePage();
-      lastPage.AddArtifact(artifact);
+      lastPage.AddItem(artifact);
       artifact.Disposed += OnArtifactDisposed;
     }
 
