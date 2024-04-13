@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.BookSystem.Core;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -92,6 +91,8 @@ namespace MacroTools.BookSystem.Powers
       
       foreach (var power in _trackedFaction.GetAllPowers())
         AddPower(power);
+      
+      RefreshNavigationButtonVisiblity();
     }
 
     private void ReRender()
@@ -101,9 +102,7 @@ namespace MacroTools.BookSystem.Powers
 
       _pagesByPower.Clear();
 
-      if (_trackedFaction != null)
-        foreach (var power in _trackedFaction.GetAllPowers())
-          AddPower(power);
+      AddAllPowers();
     }
 
     private void AddPower(Power power)

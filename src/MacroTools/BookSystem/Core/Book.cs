@@ -167,7 +167,6 @@ namespace MacroTools.BookSystem.Core
 
         _pages.First().Visible = true;
         _activePageIndex = 0;
-        RefreshNavigationButtonVisiblity();
       }
       catch (Exception ex)
       {
@@ -251,7 +250,7 @@ namespace MacroTools.BookSystem.Core
     ///    Makes the Previous button visible if there are any pages to navigate back to,
     ///    and makes the Next button visible if there are any pages to navigate forward to.
     /// </summary>
-    private void RefreshNavigationButtonVisiblity()
+    protected void RefreshNavigationButtonVisiblity()
     {
       var pageCount = _pages.Count(x => x.HasOccupiedCards());
       MoveNextButton.Visible = pageCount > ActivePageIndex + 1;
