@@ -107,7 +107,7 @@ namespace MacroTools.BookSystem.Powers
 
     private void AddPower(Power power)
     {
-      var lastPage = GetNextAvailablePage();
+      var lastPage = GetFirstAvailablePage();
       lastPage.AddPower(power);
       _pagesByPower.Add(power, lastPage);
     }

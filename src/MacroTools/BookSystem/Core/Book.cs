@@ -179,10 +179,10 @@ namespace MacroTools.BookSystem.Core
     /// Returns the earliest non-empty Page.
     /// </summary>
     /// <returns></returns>
-    protected TPage GetNextAvailablePage()
+    protected TPage GetFirstAvailablePage()
     {
       foreach (var page in _pages)
-        if (page.HasRoom())
+        if (page.HasUnoccupiedCards())
           return page;
 
       throw new InvalidOperationException($"{Title} has no available pages.");
@@ -253,7 +253,7 @@ namespace MacroTools.BookSystem.Core
     /// </summary>
     private void RefreshNavigationButtonVisiblity()
     {
-      var pageCount = _pages.Count(x => x.HasCards());
+      var pageCount = _pages.Count(x => x.HasOccupiedCards());
       MoveNextButton.Visible = pageCount > ActivePageIndex + 1;
       MovePreviousButton.Visible = ActivePageIndex > 0;
     }

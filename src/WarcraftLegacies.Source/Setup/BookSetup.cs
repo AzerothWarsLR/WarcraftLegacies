@@ -1,6 +1,4 @@
-﻿using MacroTools.BookSystem;
-using MacroTools.BookSystem.ArtifactSystem;
-using MacroTools.BookSystem.Core;
+﻿using MacroTools.BookSystem.Core;
 using MacroTools.BookSystem.Powers;
 
 namespace WarcraftLegacies.Source.Setup

@@ -9,7 +9,7 @@ namespace MacroTools.BookSystem.Powers
   {
     private readonly Dictionary<Power, PowerCard> _cardsByPower = new();
     
-    public PowerPage() : base(3, 1)
+    public PowerPage(float width, float height) : base(width, height, 3, 1)
     {
       YOffsetTop = 0.025f;
       YOffsetBot = 0.05f;
@@ -22,7 +22,7 @@ namespace MacroTools.BookSystem.Powers
     {
       if (_cardsByPower.TryGetValue(power, out var powerCard))
       {
-        Cards.Remove(powerCard);
+        //Cards.Remove(powerCard);
         _cardsByPower.Remove(power);
       }
 
@@ -34,13 +34,8 @@ namespace MacroTools.BookSystem.Powers
     /// </summary>
     public void AddPower(Power power)
     {
-      if (!HasRoom())
-        throw new Exception("PowerPage is already at the card limit of cards.");
-      
-      var powerCard = CardFactory.Create(this);
-      PositionFrameAtIndex(powerCard, Cards.Count);
-      Cards.Add(powerCard);
-      AddFrame(powerCard);
+      var powerCard = GetFirstUnoccupiedCard();
+      powerCard.Power = power;
       _cardsByPower.Add(power, powerCard);
     }
   }

@@ -9,9 +9,7 @@ namespace MacroTools.BookSystem.Core
     where TCard : Card
     where TCardFactory : ICardFactory<TCard>, new()
   {
-    protected readonly List<TCard> Cards;
-    private protected readonly TCardFactory CardFactory;
-    
+    private readonly List<TCard> _cards;
     private readonly TextFrame _pageNumberFrame;
     private readonly int _rows;
     private readonly int _columns;
@@ -25,12 +23,13 @@ namespace MacroTools.BookSystem.Core
     
     protected float YOffsetBot { get; init; }
 
-    protected Page(int rows, int columns) : base("ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0)
+    protected Page(float width, float height, int rows, int columns) : 
+      base("ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0)
     {
       _rows = rows;
       _columns = columns;
-      CardFactory = new TCardFactory();
-      Cards = CreateCards(rows * columns);
+      Width = width;
+      Height = height;
       Texture = "UI/Widgets/EscMenu/Human/blank-background.blp";
       SetAbsPoint(FRAMEPOINT_CENTER, 0.4f, 0.38f);
 
@@ -41,20 +40,27 @@ namespace MacroTools.BookSystem.Core
       _pageNumberFrame.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOPRIGHT, -0.05f, -0.025f);
       AddFrame(_pageNumberFrame);
 
+      _cards = CreateCards(rows * columns);
+      
       Visible = false;
     }
 
     /// <summary>
     /// Whether or not the Page still has room to fill in new cards.
     /// </summary>
-    public bool HasRoom() => !Cards.All(x => x.Visible);
+    public bool HasUnoccupiedCards() => !_cards.All(x => x.Occupied);
     
     /// <summary>
     /// Whether or not the Page has any active cards.
     /// </summary>
-    public bool HasCards() => Cards.Any(x => x.Visible);
+    public bool HasOccupiedCards() => _cards.Any(x => x.Occupied);
 
-    protected void PositionFrameAtIndex(Frame card, int index)
+    /// <summary>
+    /// Returns the first unoccupied Card.
+    /// </summary>
+    protected TCard GetFirstUnoccupiedCard() => _cards.First(x => !x.Occupied);
+    
+    private void PositionFrameAtIndex(Frame card, int index)
     {
       var cardGridX = index % _columns; //Horizontal index of the card
       var cardGridY = index / _columns;
@@ -69,9 +75,13 @@ namespace MacroTools.BookSystem.Core
     {
       var cards = new List<TCard>(maximumCardCount);
       var cardFactory = new TCardFactory();
-      for (var i = 0; i < maximumCardCount; i++) 
-        cards.Add(cardFactory.Create(this));
-
+      for (var i = 0; i < maximumCardCount; i++)
+      {
+        var newCard = cardFactory.Create(this);
+        cards.Add(newCard);
+        PositionFrameAtIndex(newCard, i);
+      }
+      
       return cards;
     }
   }

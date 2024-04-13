@@ -9,10 +9,8 @@ namespace MacroTools.BookSystem.Powers
     /// <inheritdoc />
     public PowerPage Create(float width, float height, int pageNumber, Frame parent)
     {
-      var newPage = new PowerPage
+      var newPage = new PowerPage(width, height)
       {
-        Width = width,
-        Height = height,
         PageNumber = pageNumber,
         Parent = parent,
         Visible = false
