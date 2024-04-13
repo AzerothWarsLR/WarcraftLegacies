@@ -40,6 +40,7 @@ namespace TestMap.Source.Setup
       commandManager.Register(new CheatGetUnitAbilities());
       commandManager.Register(new CheatRemoveAllAbilities());
       commandManager.Register(new CheatGetUnitCurrentOrder());
+      commandManager.Register(new CheatRemovePower());
       TestMode.Setup(commandManager);
     }
   }
