@@ -45,7 +45,7 @@ namespace MacroTools.BookSystem.Core
       {
         Width = 0.03f,
         Height = 0.03f,
-        Text = "x",
+        Text = "×",
         OnClick = Exit
       };
       ExitButton.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOPRIGHT, -0.015f, -0.015f);

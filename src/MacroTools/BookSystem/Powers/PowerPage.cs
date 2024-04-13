@@ -18,13 +18,11 @@ namespace MacroTools.BookSystem.Powers
     /// </summary>
     public void RemovePower(Power power)
     {
-      if (_cardsByPower.TryGetValue(power, out var powerCard))
-      {
-        //Cards.Remove(powerCard);
-        _cardsByPower.Remove(power);
-      }
+      if (!_cardsByPower.TryGetValue(power, out var powerCard))
+        throw new InvalidOperationException($"{power.Name} doesn't exist on this page.");
 
-      throw new InvalidOperationException($"{power.Name} doesn't exist on this page.");
+      powerCard.Power = null;
+      _cardsByPower.Remove(power);
     }
     
     /// <summary>

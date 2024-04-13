@@ -14,6 +14,10 @@ namespace MacroTools.BookSystem.Powers
     private readonly TextFrame _title;
     private readonly Frame _icon;
 
+    
+    /// <inheritdoc />
+    public override bool Occupied => Power != null;
+    
     /// <summary>
     /// The <see cref="Power"/> currently being represented by this <see cref="PowerCard"/>.
     /// </summary>
@@ -22,8 +26,7 @@ namespace MacroTools.BookSystem.Powers
       get => _power;
       set
       {
-        Occupied = value != null;
-        Visible = Occupied;
+        Visible = value != null;
         
         if (_power != null) 
           _power.DescriptionChanged -= OnPowerDescriptionChanged;

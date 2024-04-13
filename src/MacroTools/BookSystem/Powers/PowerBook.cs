@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MacroTools.BookSystem.Core;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -13,7 +14,7 @@ namespace MacroTools.BookSystem.Powers
   public sealed class PowerBook : Book<PowerPage, PowerCard, PowerPageFactory, PowerCardFactory>
   {
     private Faction? _trackedFaction;
-    private readonly Dictionary<Power, PowerPage> _pagesByPower = new();
+    private readonly Dictionary <Power, PowerPage> _pagesByPower = new();
 
     /// <summary>
     /// Initializes a new instance of the <see cref="PowerBook"/> class.
@@ -95,14 +96,14 @@ namespace MacroTools.BookSystem.Powers
 
     private void ReRender()
     {
-      // foreach (var page in Pages)
-      // {
-      //   page.Visible = false; //This avoids a crash to desktop when rerendering a Book that a player has open.
-      //   page.Dispose();
-      // }
-      // _pagesByPower.Clear();
-      // Pages.Clear();
-      // AddPagesAndPowers();
+      foreach (var (power, card) in _pagesByPower) 
+        card.RemovePower(power);
+
+      _pagesByPower.Clear();
+
+      if (_trackedFaction != null)
+        foreach (var power in _trackedFaction.GetAllPowers())
+          AddPower(power);
     }
 
     private void AddPower(Power power)
