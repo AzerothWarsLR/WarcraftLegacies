@@ -14,11 +14,6 @@ namespace MacroTools.BookSystem
   public abstract class Book<T> : Frame, ISpecialMenu where T : Page, new()
   {
     /// <summary>
-    /// How many pages the Book can have.
-    /// </summary>
-    public int MaximumPageCount { get; }
-
-    /// <summary>
     /// All <see cref="Page"/>s contained in the Book.
     /// </summary>
     private readonly T[] _pages;
@@ -37,7 +32,6 @@ namespace MacroTools.BookSystem
     protected Book(float width, float height, float bottomButtonXOffset, float bottomButtonYOffset, int maximumPageCount) : base(
       "ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0)
     {
-      MaximumPageCount = maximumPageCount;
       _pages = CreatePages(maximumPageCount);
 
       Width = width;
@@ -93,6 +87,8 @@ namespace MacroTools.BookSystem
           return;
         Exit(GetLocalPlayer());
       });
+      
+      RefreshNavigationButtonVisiblity();
     }
 
     /// <summary>
@@ -215,7 +211,6 @@ namespace MacroTools.BookSystem
       };
       newPage.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_CENTER, 0, 0);
       
-      RefreshNavigationButtonVisiblity();
       return newPage;
     }
     
