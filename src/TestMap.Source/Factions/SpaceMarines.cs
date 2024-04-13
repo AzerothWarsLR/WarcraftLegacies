@@ -17,6 +17,9 @@ namespace TestMap.Source.Factions
     public override void OnRegistered()
     {
       AddPower(new DummyPower("Warp Travel", "You can travel via the Warp.", "Feedback"));
+      AddPower(new DummyPower("For the Emperor", "Your dudes fight harder.", "Garithos"));
+      AddPower(new DummyPower("Holy", "Very good, very holy.", "HolyBolt"));
+      AddPower(new DummyPower("Death", "Your units die constantly.", "DeathCoil"));
       base.OnRegistered();
     }
   }
