@@ -71,6 +71,20 @@ Frame "TEXT" "ArtifactItemOwnerText" {
     FontShadowOffset 0.002 -0.002,
 }
 
+Frame "SIMPLEBUTTON" "SpectrumMenuButtonMenu" {
+    DecorateFileNames,
+    Width 0.085,
+    Height 0.022,
+    ButtonPushedTextOffset 0.001 -0.001,
+    NormalTexture "UpperMenuButtonBackground",
+    PushedTexture "UpperMenuButtonPushedBackground",
+    DisabledTexture "UpperMenuButtonDisabledBackground",
+    UseHighlight "UpperMenuButtonHighlight",
+    NormalText "UpperButtonBarButtonTextTemplate",
+    DisabledText "UpperButtonBarButtonDisabledTextTemplate",
+    HighlightText "UpperButtonBarButtonHighlightTextTemplate"
+}
+
 // -- LOCAL TEMPLATES -------------------------------------------------------
 Frame "BACKDROP" "BoxedTextBackgroundTemplate" {
 	DecorateFileNames, //Look-Up Names in some String table (for example gameinterface)

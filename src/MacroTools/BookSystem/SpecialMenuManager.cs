@@ -9,7 +9,7 @@ namespace MacroTools.BookSystem
   /// <summary>
   /// Responsible for managing all <see cref="ISpecialMenu"/>s.
   /// </summary>
-  public static class BookManager
+  public static class SpecialMenuManager
   {
     // ReSharper disable once CollectionNeverQueried.Local
     private static readonly List<ISpecialMenu> Books = new();
@@ -22,7 +22,7 @@ namespace MacroTools.BookSystem
     public static void Register(ISpecialMenu specialMenu, player? whichPlayer = null)
     {
       Books.Add(specialMenu);
-      specialMenu.LauncherButton = new Button("ScriptDialogButton", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0)
+      specialMenu.LauncherButton = new Button("SpectrumMenuButtonMenu", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0))
       {
         Width = specialMenu.LauncherParent.GetWidth(),
         Height = specialMenu.LauncherParent.GetHeight(),
@@ -39,9 +39,9 @@ namespace MacroTools.BookSystem
       if (!BlzLoadTOCFile(tocFilePath)) throw new Exception($"Failed to load TOC {tocFilePath}");
     }
 
-    static BookManager()
+    static SpecialMenuManager()
     {
-      LoadToc(@"ArtifactSystem.toc");
+      LoadToc("ArtifactSystem.toc");
       LoadToc(@"ui\framedef\framedef.toc");
     }
   }

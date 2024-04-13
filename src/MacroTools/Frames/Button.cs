@@ -30,6 +30,10 @@ namespace MacroTools.Frames
       {
       }
 
+      public Button(string name, framehandle parent) : base(name, parent)
+      {
+      }
+
       /// <summary>
       /// Determines what happens when the button is clicked.
       /// </summary>

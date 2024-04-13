@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup
     public static void Setup()
     {
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) 
-        BookManager.Register(PowerBook.Create(player), player);
+        SpecialMenuManager.Register(PowerBook.Create(player), player);
       
       //BookManager.Register(new ArtifactBook());
     }
