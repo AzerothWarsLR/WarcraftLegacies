@@ -97,8 +97,8 @@ namespace MacroTools.BookSystem.Powers
 
     private void ReRender()
     {
-      foreach (var (power, card) in _pagesByPower) 
-        card.RemovePower(power);
+      foreach (var (power, page) in _pagesByPower) 
+        page.RemovePower(power);
 
       _pagesByPower.Clear();
 

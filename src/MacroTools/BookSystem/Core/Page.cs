@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Frames;
 using static War3Api.Common;
@@ -10,7 +9,8 @@ namespace MacroTools.BookSystem.Core
     where TCard : Card
     where TCardFactory : ICardFactory<TCard>, new()
   {
-    private readonly List<TCard> _cards;
+    protected IReadOnlyList<TCard> Cards { get; }
+    
     private readonly TextFrame _pageNumberFrame;
     private readonly int _rows;
     private readonly int _columns;
@@ -41,7 +41,7 @@ namespace MacroTools.BookSystem.Core
       _pageNumberFrame.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOPRIGHT, -0.05f, -0.025f);
       AddFrame(_pageNumberFrame);
 
-      _cards = CreateCards(rows * columns);
+      Cards = CreateCards(rows * columns);
 
       Visible = false;
     }
@@ -49,17 +49,17 @@ namespace MacroTools.BookSystem.Core
     /// <summary>
     /// Whether or not the Page still has room to fill in new cards.
     /// </summary>
-    public bool HasUnoccupiedCards() => !_cards.All(x => x.Occupied);
+    public bool HasUnoccupiedCards() => !Cards.All(x => x.Occupied);
 
     /// <summary>
     /// Whether or not the Page has any active cards.
     /// </summary>
-    public bool HasOccupiedCards() => _cards.Any(x => x.Occupied);
+    public bool HasOccupiedCards() => Cards.Any(x => x.Occupied);
 
     /// <summary>
     /// Returns the first unoccupied Card.
     /// </summary>
-    protected TCard GetFirstUnoccupiedCard() => _cards.First(x => !x.Occupied);
+    protected TCard GetFirstUnoccupiedCard() => Cards.First(x => !x.Occupied);
 
     private void PositionFrameAtIndex(Frame card, int index)
     {
