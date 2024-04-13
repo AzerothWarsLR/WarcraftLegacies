@@ -5,14 +5,16 @@ using MacroTools.Frames;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
-namespace MacroTools.BookSystem
+namespace MacroTools.BookSystem.Core
 {
   /// <summary>
   /// A collection of Pages that players can flip through to read information.
   /// </summary>
-  public abstract class Book<TPage, TCard> : Frame, ISpecialMenu 
-    where TPage : Page<TCard>, new() 
-    where TCard : Card, new()
+  public abstract class Book<TPage, TCard, TPageFactory, TCardFactory> : Frame, ISpecialMenu
+    where TCard : Card
+    where TCardFactory : ICardFactory<TCard>, new()
+    where TPage : Page<TCard, TCardFactory>
+    where TPageFactory : IPageFactory<TPage>, new()
   {
     /// <summary>
     /// All Pages contained in the Book.
@@ -169,7 +171,7 @@ namespace MacroTools.BookSystem
       }
       catch (Exception ex)
       {
-        Console.WriteLine($"Failed to open {nameof(Book<TPage, TCard>)}: {ex}");
+        Console.WriteLine($"Failed to open {nameof(Book<TPage, TCard, TPageFactory, TCardFactory>)}: {ex}");
       }
     }
 
@@ -189,31 +191,14 @@ namespace MacroTools.BookSystem
     private TPage[] CreatePages(int maximumPageCount)
     {
       var pages = new TPage[maximumPageCount];
+      var pageFactory = new TPageFactory();
       for (var i = 0; i < maximumPageCount; i++)
       {
-        pages[i] = CreatePage(i + 1);
+        pages[i] = pageFactory.Create(Width, Height, i + 1, this);
         pages[i].Visible = i == 0;
       }
 
       return pages;
-    }
-    
-    /// <summary>
-    ///    Adds a new Page to the end of the Book.
-    /// </summary>
-    private TPage CreatePage(int pageNumber)
-    {
-      var newPage = new TPage
-      {
-        Width = Width,
-        Height = Height,
-        PageNumber = pageNumber,
-        Parent = this,
-        Visible = false
-      };
-      newPage.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_CENTER, 0, 0);
-      
-      return newPage;
     }
     
     /// <summary>

@@ -3,15 +3,19 @@ using System.Linq;
 using MacroTools.Frames;
 using static War3Api.Common;
 
-namespace MacroTools.BookSystem
+namespace MacroTools.BookSystem.Core
 {
-  public abstract class Page<TCard> : Frame where TCard : Card, new()
+  public abstract class Page<TCard, TCardFactory> : Frame 
+    where TCard : Card
+    where TCardFactory : ICardFactory<TCard>, new()
   {
     protected readonly List<TCard> Cards;
+    private protected readonly TCardFactory CardFactory;
+    
     private readonly TextFrame _pageNumberFrame;
     private readonly int _rows;
     private readonly int _columns;
-
+    
     public int PageNumber
     {
       set => _pageNumberFrame.Text = $"Page {value.ToString()}";
@@ -25,6 +29,7 @@ namespace MacroTools.BookSystem
     {
       _rows = rows;
       _columns = columns;
+      CardFactory = new TCardFactory();
       Cards = CreateCards(rows * columns);
       Texture = "UI/Widgets/EscMenu/Human/blank-background.blp";
       SetAbsPoint(FRAMEPOINT_CENTER, 0.4f, 0.38f);
@@ -60,11 +65,12 @@ namespace MacroTools.BookSystem
       card.SetPoint(FRAMEPOINT_TOPLEFT, this, FRAMEPOINT_TOPLEFT, cardPosX, cardPosY);
     }
 
-    private static List<TCard> CreateCards(int maximumCardCount)
+    private List<TCard> CreateCards(int maximumCardCount)
     {
       var cards = new List<TCard>(maximumCardCount);
+      var cardFactory = new TCardFactory();
       for (var i = 0; i < maximumCardCount; i++) 
-        cards.Add(new TCard());
+        cards.Add(cardFactory.Create(this));
 
       return cards;
     }

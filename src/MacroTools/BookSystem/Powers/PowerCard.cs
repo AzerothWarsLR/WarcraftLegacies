@@ -1,4 +1,5 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools.BookSystem.Core;
+using MacroTools.FactionSystem;
 using MacroTools.Frames;
 using static War3Api.Common;
 
@@ -11,7 +12,7 @@ namespace MacroTools.BookSystem.Powers
     private readonly Power _power;
     private readonly TextFrame _textFrame;
 
-    public PowerCard(Power power, Frame parent) : base(parent, BoxWidth, BoxHeight)
+    public PowerCard(Frame parent) : base(parent, BoxWidth, BoxHeight)
     {
       _power = power;
       var icon = new Frame("BACKDROP", "ArtifactIcon", this)

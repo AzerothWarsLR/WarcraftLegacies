@@ -1,6 +1,6 @@
 ﻿using MacroTools.Frames;
 
-namespace MacroTools.BookSystem
+namespace MacroTools.BookSystem.Core
 {
   public abstract class Card : Frame
   {

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using MacroTools.BookSystem.Core;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
@@ -9,7 +10,7 @@ namespace MacroTools.BookSystem.Powers
   /// <summary>
   /// Shows all the <see cref="Power"/>s a particular player has.
   /// </summary>
-  public sealed class PowerBook : Book<PowerPage, PowerCard>
+  public sealed class PowerBook : Book<PowerPage, PowerCard, PowerPageFactory, PowerCardFactory>
   {
     private Faction? _trackedFaction;
     private readonly Dictionary<Power, PowerPage> _pagesByPower = new();

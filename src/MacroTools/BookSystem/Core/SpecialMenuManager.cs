@@ -4,7 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.Frames;
 using static War3Api.Common;
 
-namespace MacroTools.BookSystem
+namespace MacroTools.BookSystem.Core
 {
   /// <summary>
   /// Responsible for managing all <see cref="ISpecialMenu"/>s.

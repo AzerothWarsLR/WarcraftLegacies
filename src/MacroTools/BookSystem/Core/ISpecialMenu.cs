@@ -1,7 +1,7 @@
 ﻿using MacroTools.Frames;
 using static War3Api.Common;
 
-namespace MacroTools.BookSystem
+namespace MacroTools.BookSystem.Core
 {
   public interface ISpecialMenu
   {

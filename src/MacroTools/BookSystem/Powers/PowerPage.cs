@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using MacroTools.BookSystem.Core;
 using MacroTools.FactionSystem;
 
 namespace MacroTools.BookSystem.Powers
 {
-  public sealed class PowerPage : Page<PowerCard>
+  public sealed class PowerPage : Page<PowerCard, PowerCardFactory>
   {
     private readonly Dictionary<Power, PowerCard> _cardsByPower = new();
     
@@ -36,7 +37,7 @@ namespace MacroTools.BookSystem.Powers
       if (!HasRoom())
         throw new Exception("PowerPage is already at the card limit of cards.");
       
-      var powerCard = new PowerCard(power, this);
+      var powerCard = CardFactory.Create(this);
       PositionFrameAtIndex(powerCard, Cards.Count);
       Cards.Add(powerCard);
       AddFrame(powerCard);
