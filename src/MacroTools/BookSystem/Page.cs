@@ -1,5 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Frames;
 using static War3Api.Common;
 
@@ -50,16 +50,11 @@ namespace MacroTools.BookSystem
     /// </summary>
     public bool HasRoom() => CardCount < CardLimit;
     
-    protected void PositionAllCards()
-    {
-      var i = 0;
-      foreach (var card in Cards)
-      {
-        PositionFrameAtIndex(card, i);
-        i++;
-      }
-    }
-    
+    /// <summary>
+    /// Whether or not the <see cref="Page"/> has any active cards.
+    /// </summary>
+    public bool HasCards() => Cards.Any();
+
     protected void PositionFrameAtIndex(Frame card, int index)
     {
       var cardGridX = index % Columns; //Horizontal index of the card

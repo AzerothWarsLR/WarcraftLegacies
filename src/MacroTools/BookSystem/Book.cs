@@ -267,7 +267,7 @@ namespace MacroTools.BookSystem
     /// </summary>
     private void RefreshNavigationButtonVisiblity()
     {
-      var pageCount = _pages.Count(x => x.Visible);
+      var pageCount = _pages.Count(x => x.HasCards());
       MoveNextButton.Visible = pageCount > ActivePageIndex + 1;
       MovePreviousButton.Visible = ActivePageIndex > 0;
     }
