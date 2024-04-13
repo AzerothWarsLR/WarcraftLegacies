@@ -4,14 +4,12 @@ using MacroTools.FactionSystem;
 
 namespace MacroTools.BookSystem.Powers
 {
-  public sealed class PowerPage : Page
+  public sealed class PowerPage : Page<PowerCard>
   {
     private readonly Dictionary<Power, PowerCard> _cardsByPower = new();
     
-    public PowerPage()
+    public PowerPage() : base(3, 1)
     {
-      Rows = 3;
-      Columns = 1;
       YOffsetTop = 0.025f;
       YOffsetBot = 0.05f;
     }
@@ -19,15 +17,15 @@ namespace MacroTools.BookSystem.Powers
     /// <summary>
     /// Unrenders a <see cref="Power"/> from this <see cref="PowerPage"/>.
     /// </summary>
-    /// <param name="power"></param>
     public void RemovePower(Power power)
     {
       if (_cardsByPower.TryGetValue(power, out var powerCard))
       {
         Cards.Remove(powerCard);
         _cardsByPower.Remove(power);
-        powerCard.Dispose();
       }
+
+      throw new InvalidOperationException($"{power.Name} doesn't exist on this page.");
     }
     
     /// <summary>

@@ -60,9 +60,9 @@ namespace MacroTools.BookSystem.Powers
       _textFrame.Text = power.Description;
     }
 
-    protected override void DisposeEvents()
-    {
-      _power.DescriptionChanged -= OnPowerDescriptionChanged;
-    }
+    // protected override void DisposeEvents()
+    // {
+    //   _power.DescriptionChanged -= OnPowerDescriptionChanged;
+    // }
   }
 }

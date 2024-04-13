@@ -9,7 +9,7 @@ namespace MacroTools.BookSystem.Powers
   /// <summary>
   /// Shows all the <see cref="Power"/>s a particular player has.
   /// </summary>
-  public sealed class PowerBook : Book<PowerPage>
+  public sealed class PowerBook : Book<PowerPage, PowerCard>
   {
     private Faction? _trackedFaction;
     private readonly Dictionary<Power, PowerPage> _pagesByPower = new();

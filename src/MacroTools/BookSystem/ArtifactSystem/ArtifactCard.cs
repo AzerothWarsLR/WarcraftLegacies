@@ -138,12 +138,12 @@ namespace MacroTools.BookSystem.ArtifactSystem
       }
     }
 
-    /// <inheritdoc />
-    protected override void DisposeEvents()
-    {
-      _artifact.OwnerChanged -= OnArtifactOwnerChanged;
-      _artifact.StatusChanged -= OnArtifactStatusChanged;
-      _artifact.FactionChanged -= OnArtifactOwnerChanged;
-    }
+    // /// <inheritdoc />
+    // protected override void DisposeEvents()
+    // {
+    //   _artifact.OwnerChanged -= OnArtifactOwnerChanged;
+    //   _artifact.StatusChanged -= OnArtifactStatusChanged;
+    //   _artifact.FactionChanged -= OnArtifactOwnerChanged;
+    // }
   }
 }

@@ -8,6 +8,7 @@ namespace MacroTools.BookSystem
     {
       Width = width;
       Height = height;
+      Visible = false;
     }
   }
 }

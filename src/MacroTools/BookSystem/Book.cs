@@ -8,15 +8,16 @@ using static War3Api.Common;
 namespace MacroTools.BookSystem
 {
   /// <summary>
-  /// A collection of <see cref="Page"/>s that players can flip through to read information.
+  /// A collection of Pages that players can flip through to read information.
   /// </summary>
-  /// <typeparam name="T"></typeparam>
-  public abstract class Book<T> : Frame, ISpecialMenu where T : Page, new()
+  public abstract class Book<TPage, TCard> : Frame, ISpecialMenu 
+    where TPage : Page<TCard>, new() 
+    where TCard : Card, new()
   {
     /// <summary>
-    /// All <see cref="Page"/>s contained in the Book.
+    /// All Pages contained in the Book.
     /// </summary>
-    private readonly T[] _pages;
+    private readonly TPage[] _pages;
 
     private readonly TextFrame _title;
     private int _activePageIndex;
@@ -168,15 +169,15 @@ namespace MacroTools.BookSystem
       }
       catch (Exception ex)
       {
-        Console.WriteLine($"Failed to open {nameof(Book<T>)}: {ex}");
+        Console.WriteLine($"Failed to open {nameof(Book<TPage, TCard>)}: {ex}");
       }
     }
 
     /// <summary>
-    /// Returns the earliest non-empty <see cref="Page"/>.
+    /// Returns the earliest non-empty Page.
     /// </summary>
     /// <returns></returns>
-    protected T GetNextAvailablePage()
+    protected TPage GetNextAvailablePage()
     {
       foreach (var page in _pages)
         if (page.HasRoom())
@@ -185,9 +186,9 @@ namespace MacroTools.BookSystem
       throw new InvalidOperationException($"{Title} has no available pages.");
     }
 
-    private T[] CreatePages(int maximumPageCount)
+    private TPage[] CreatePages(int maximumPageCount)
     {
-      var pages = new T[maximumPageCount];
+      var pages = new TPage[maximumPageCount];
       for (var i = 0; i < maximumPageCount; i++)
       {
         pages[i] = CreatePage(i + 1);
@@ -200,9 +201,9 @@ namespace MacroTools.BookSystem
     /// <summary>
     ///    Adds a new Page to the end of the Book.
     /// </summary>
-    private T CreatePage(int pageNumber)
+    private TPage CreatePage(int pageNumber)
     {
-      var newPage = new T
+      var newPage = new TPage
       {
         Width = Width,
         Height = Height,

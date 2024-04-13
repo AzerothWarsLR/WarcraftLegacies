@@ -6,15 +6,13 @@ namespace MacroTools.BookSystem.ArtifactSystem
   /// <summary>
   ///   Represents a limited number of Artifacts in a rectangular grid.
   /// </summary>
-  public sealed class ArtifactPage : Page
+  public sealed class ArtifactPage : Page<ArtifactCard>
   {
     /// <summary>
     /// Initializes a new instance of the <see cref="ArtifactPage"/> class.
     /// </summary>
-    public ArtifactPage()
+    public ArtifactPage() : base(3, 5)
     {
-      Rows = 3;
-      Columns = 5;
       YOffsetTop = 0.025f;
       YOffsetBot = 0.05f;
     }

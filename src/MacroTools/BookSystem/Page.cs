@@ -5,23 +5,27 @@ using static War3Api.Common;
 
 namespace MacroTools.BookSystem
 {
-  public abstract class Page : Frame
+  public abstract class Page<TCard> : Frame where TCard : Card, new()
   {
-    protected readonly List<Frame> Cards = new();
+    protected readonly List<TCard> Cards;
     private readonly TextFrame _pageNumberFrame;
+    private readonly int _rows;
+    private readonly int _columns;
 
     public int PageNumber
     {
       set => _pageNumberFrame.Text = $"Page {value.ToString()}";
     }
-
-    protected int Rows { get; init; }
-    protected int Columns { get; init; }
+    
     protected float YOffsetTop { get; init; }
+    
     protected float YOffsetBot { get; init; }
 
-    protected Page() : base("ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0)
+    protected Page(int rows, int columns) : base("ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0)
     {
+      _rows = rows;
+      _columns = columns;
+      Cards = CreateCards(rows * columns);
       Texture = "UI/Widgets/EscMenu/Human/blank-background.blp";
       SetAbsPoint(FRAMEPOINT_CENTER, 0.4f, 0.38f);
 
@@ -36,34 +40,33 @@ namespace MacroTools.BookSystem
     }
 
     /// <summary>
-    ///   The number of cards this page can hold.
+    /// Whether or not the Page still has room to fill in new cards.
     /// </summary>
-    private int CardLimit => Rows * Columns;
-
-    /// <summary>
-    ///   The number of cards this page is holding.
-    /// </summary>
-    private int CardCount => Cards.Count;
-
-    /// <summary>
-    /// Whether or not the <see cref="Page"/> still has room to fill in new cards.
-    /// </summary>
-    public bool HasRoom() => CardCount < CardLimit;
+    public bool HasRoom() => !Cards.All(x => x.Visible);
     
     /// <summary>
-    /// Whether or not the <see cref="Page"/> has any active cards.
+    /// Whether or not the Page has any active cards.
     /// </summary>
-    public bool HasCards() => Cards.Any();
+    public bool HasCards() => Cards.Any(x => x.Visible);
 
     protected void PositionFrameAtIndex(Frame card, int index)
     {
-      var cardGridX = index % Columns; //Horizontal index of the card
-      var cardGridY = index / Columns;
-      var boxSpacingX = (Width - card.Width * Columns) / (Columns + 1);
-      var boxSpacingY = (Height - YOffsetTop - YOffsetBot - card.Height * Rows) / (Rows + 1);
+      var cardGridX = index % _columns; //Horizontal index of the card
+      var cardGridY = index / _columns;
+      var boxSpacingX = (Width - card.Width * _columns) / (_columns + 1);
+      var boxSpacingY = (Height - YOffsetTop - YOffsetBot - card.Height * _rows) / (_rows + 1);
       var cardPosX = card.Width * cardGridX + boxSpacingX * (cardGridX + 1);
       var cardPosY = -(YOffsetTop + (card.Height * cardGridY + boxSpacingY * (cardGridY + 1)));
       card.SetPoint(FRAMEPOINT_TOPLEFT, this, FRAMEPOINT_TOPLEFT, cardPosX, cardPosY);
+    }
+
+    private static List<TCard> CreateCards(int maximumCardCount)
+    {
+      var cards = new List<TCard>(maximumCardCount);
+      for (var i = 0; i < maximumCardCount; i++) 
+        cards.Add(new TCard());
+
+      return cards;
     }
   }
 }
