@@ -17,7 +17,11 @@ namespace MacroTools.BookSystem.Core
     where TPage : Page<TItem, TCard, TCardFactory>
     where TPageFactory : IPageFactory<TPage>, new()
   {
-    private readonly List<TPage> _pages;
+    /// <summary>
+    /// All Pages contained in the Book.
+    /// </summary>
+    protected IReadOnlyList<TPage> Pages { get; }
+
     private readonly TextFrame _title;
     private int _activePageIndex;
 
@@ -36,7 +40,7 @@ namespace MacroTools.BookSystem.Core
       Height = height;
       Visible = false;
       
-      _pages = CreatePages(maximumPageCount);
+      Pages = CreatePages(maximumPageCount);
 
       ExitButton = new Button("ScriptDialogButton", this, 0)
       {
@@ -136,12 +140,12 @@ namespace MacroTools.BookSystem.Core
       get => _activePageIndex;
       set
       {
-        if (value >= _pages.Count || value < 0)
+        if (value >= Pages.Count || value < 0)
           return;
         
-        _pages[_activePageIndex].Visible = false;
+        Pages[_activePageIndex].Visible = false;
         _activePageIndex = value;
-        _pages[_activePageIndex].Visible = true;
+        Pages[_activePageIndex].Visible = true;
         RefreshNavigationButtonVisiblity();
       }
     }
@@ -158,14 +162,13 @@ namespace MacroTools.BookSystem.Core
           return;
         Visible = true;
         LauncherButton.Visible = false;
-        foreach (var page in _pages)
+        foreach (var page in Pages)
         {
           page.Visible = false;
         }
 
-        _pages.First().Visible = true;
+        Pages.First().Visible = true;
         _activePageIndex = 0;
-        RefreshNavigationButtonVisiblity();
       }
       catch (Exception ex)
       {
@@ -179,7 +182,7 @@ namespace MacroTools.BookSystem.Core
     /// <returns></returns>
     protected TPage GetFirstAvailablePage()
     {
-      foreach (var page in _pages)
+      foreach (var page in Pages)
         if (page.HasUnoccupiedCards())
           return page;
 
@@ -192,7 +195,7 @@ namespace MacroTools.BookSystem.Core
     /// </summary>
     protected void RefreshNavigationButtonVisiblity()
     {
-      var pageCount = _pages.Count(x => x.HasOccupiedCards());
+      var pageCount = Pages.Count(x => x.HasOccupiedCards());
       MoveNextButton.Visible = pageCount > ActivePageIndex + 1;
       MovePreviousButton.Visible = ActivePageIndex > 0;
     }
@@ -207,15 +210,15 @@ namespace MacroTools.BookSystem.Core
     /// </summary>
     protected void ReRender()
     {
-      foreach (var page in _pages)
+      foreach (var page in Pages)
         page.Clear();
       
       PopulatePages();
     }
     
-    private List<TPage> CreatePages(int maximumPageCount)
+    private TPage[] CreatePages(int maximumPageCount)
     {
-      var pages = new List<TPage>(maximumPageCount);
+      var pages = new TPage[maximumPageCount];
       var pageFactory = new TPageFactory();
       for (var i = 0; i < maximumPageCount; i++)
       {
