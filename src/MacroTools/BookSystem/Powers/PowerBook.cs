@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using MacroTools.BookSystem.Core;
+﻿using MacroTools.BookSystem.Core;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
@@ -13,7 +12,6 @@ namespace MacroTools.BookSystem.Powers
   public sealed class PowerBook : Book<PowerPage, PowerCard, PowerPageFactory, PowerCardFactory>
   {
     private Faction? _trackedFaction;
-    private readonly Dictionary <Power, PowerPage> _pagesByPower = new();
 
     /// <summary>
     /// Initializes a new instance of the <see cref="PowerBook"/> class.
@@ -48,18 +46,20 @@ namespace MacroTools.BookSystem.Powers
         {
           _trackedFaction.PowerAdded -= OnFactionAddPower;
           _trackedFaction.PowerRemoved -= OnFactionRemovePower;
-          RemoveAllPowers(_trackedFaction);
         }
         
         if (_trackedFaction == value) 
           return;
+        
         _trackedFaction = value;
+        
         if (_trackedFaction != null)
         {
           _trackedFaction.PowerAdded += OnFactionAddPower;
           _trackedFaction.PowerRemoved += OnFactionRemovePower;
-          AddAllPowers();
         }
+        
+        ReRender();
       }
     }
 
@@ -78,13 +78,8 @@ namespace MacroTools.BookSystem.Powers
       ReRender();
     }
 
-    private void RemoveAllPowers(Faction faction)
-    {
-      foreach (var power in faction.GetAllPowers()) 
-        RemovePower(power);
-    }
-
-    private void AddAllPowers()
+    /// <inheritdoc />
+    protected override void PopulatePages()
     {
       if (_trackedFaction == null) 
         return;
@@ -95,27 +90,10 @@ namespace MacroTools.BookSystem.Powers
       RefreshNavigationButtonVisiblity();
     }
 
-    private void ReRender()
-    {
-      foreach (var (power, page) in _pagesByPower) 
-        page.RemovePower(power);
-
-      _pagesByPower.Clear();
-
-      AddAllPowers();
-    }
-
     private void AddPower(Power power)
     {
       var lastPage = GetFirstAvailablePage();
       lastPage.AddPower(power);
-      _pagesByPower.Add(power, lastPage);
-    }
-
-    private void RemovePower(Power power)
-    {
-      _pagesByPower[power].RemovePower(power);
-      _pagesByPower.Remove(power);
     }
   }
 }

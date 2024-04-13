@@ -18,7 +18,7 @@ namespace MacroTools.BookSystem.ArtifactSystem
     public ArtifactBook() : base(0.75f, 0.37f, 0.015f, 0.02f, 4)
     {
       ArtifactManager.ArtifactRegistered += ArtifactCreated;
-      AddAllArtifacts();
+      PopulatePages();
       Title = "Artifacts (F7)";
       LauncherParent = BlzGetFrameByName("UpperButtonBarQuestsButton", 0);
       Position = new Point(0.4f, 0.35f);
@@ -40,24 +40,17 @@ namespace MacroTools.BookSystem.ArtifactSystem
     }
 
     private void OnArtifactDisposed(object? sender, Artifact artifact) => ReRender();
-
-    private void ReRender()
-    {
-      foreach (var page in Pages) 
-        page.Clear();
-      
-      AddAllArtifacts();
-    }
-
-    private void AddAllArtifacts()
-    {
-      foreach (var artifact in ArtifactManager.GetAllArtifacts())
-        AddArtifact(artifact);
-    }
     
     private void ArtifactCreated(object? sender, Artifact artifact)
     {
       AddArtifact(artifact);
+    }
+
+    /// <inheritdoc />
+    protected override void PopulatePages()
+    {
+      foreach (var artifact in ArtifactManager.GetAllArtifacts())
+        AddArtifact(artifact);
     }
   }
 }

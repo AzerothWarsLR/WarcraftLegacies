@@ -57,6 +57,11 @@ namespace MacroTools.BookSystem.Core
     public bool HasOccupiedCards() => Cards.Any(x => x.Occupied);
 
     /// <summary>
+    /// Clears the contents of this page.
+    /// </summary>
+    public abstract void Clear();
+    
+    /// <summary>
     /// Returns the first unoccupied Card.
     /// </summary>
     protected TCard GetFirstUnoccupiedCard() => Cards.First(x => !x.Occupied);

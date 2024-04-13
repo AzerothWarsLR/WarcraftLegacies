@@ -25,7 +25,7 @@ namespace MacroTools.BookSystem.ArtifactSystem
       artifactCard.Artifact = artifact;
     }
 
-    internal void Clear()
+    public override void Clear()
     {
       foreach (var card in Cards) 
         card.Artifact = null;

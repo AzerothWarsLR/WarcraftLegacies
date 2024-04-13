@@ -189,6 +189,33 @@ namespace MacroTools.BookSystem.Core
       throw new InvalidOperationException($"{Title} has no available pages.");
     }
 
+    /// <summary>
+    ///    Makes the Previous button visible if there are any pages to navigate back to,
+    ///    and makes the Next button visible if there are any pages to navigate forward to.
+    /// </summary>
+    protected void RefreshNavigationButtonVisiblity()
+    {
+      var pageCount = Pages.Count(x => x.HasOccupiedCards());
+      MoveNextButton.Visible = pageCount > ActivePageIndex + 1;
+      MovePreviousButton.Visible = ActivePageIndex > 0;
+    }
+
+    /// <summary>
+    /// Populates all Pages in this book.
+    /// </summary>
+    protected abstract void PopulatePages();
+
+    /// <summary>
+    /// Clears all pages in this book, then rerenders them.
+    /// </summary>
+    protected void ReRender()
+    {
+      foreach (var page in Pages)
+        page.Clear();
+      
+      PopulatePages();
+    }
+    
     private TPage[] CreatePages(int maximumPageCount)
     {
       var pages = new TPage[maximumPageCount];
@@ -246,17 +273,6 @@ namespace MacroTools.BookSystem.Core
       {
         Console.WriteLine(ex);
       }
-    }
-
-    /// <summary>
-    ///    Makes the Previous button visible if there are any pages to navigate back to,
-    ///    and makes the Next button visible if there are any pages to navigate forward to.
-    /// </summary>
-    protected void RefreshNavigationButtonVisiblity()
-    {
-      var pageCount = Pages.Count(x => x.HasOccupiedCards());
-      MoveNextButton.Visible = pageCount > ActivePageIndex + 1;
-      MovePreviousButton.Visible = ActivePageIndex > 0;
     }
   }
 }

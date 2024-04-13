@@ -1,28 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using MacroTools.BookSystem.Core;
+﻿using MacroTools.BookSystem.Core;
 using MacroTools.FactionSystem;
 
 namespace MacroTools.BookSystem.Powers
 {
   public sealed class PowerPage : Page<PowerCard, PowerCardFactory>
   {
-    private readonly Dictionary<Power, PowerCard> _cardsByPower = new();
-    
     public PowerPage(float width, float height) : base(width, height, 3, 1, 0.025f, 0.05f)
     {
-    }
-
-    /// <summary>
-    /// Unrenders a <see cref="Power"/> from this <see cref="PowerPage"/>.
-    /// </summary>
-    public void RemovePower(Power power)
-    {
-      if (!_cardsByPower.TryGetValue(power, out var powerCard))
-        throw new InvalidOperationException($"{power.Name} doesn't exist on this page.");
-
-      powerCard.Power = null;
-      _cardsByPower.Remove(power);
     }
     
     /// <summary>
@@ -32,7 +16,13 @@ namespace MacroTools.BookSystem.Powers
     {
       var powerCard = GetFirstUnoccupiedCard();
       powerCard.Power = power;
-      _cardsByPower.Add(power, powerCard);
+    }
+
+    /// <inheritdoc />
+    public override void Clear()
+    {
+      foreach (var card in Cards) 
+        card.Power = null;
     }
   }
 }
