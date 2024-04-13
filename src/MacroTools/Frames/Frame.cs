@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using static War3Api.Common;
 
 namespace MacroTools.Frames
 {
-  public class Frame : IDisposable
+  public class Frame
   {
     private readonly List<Frame> _children = new();
-    private bool _disposed;
     private float _height;
     private float _width;
 
@@ -113,29 +111,6 @@ namespace MacroTools.Frames
     public Frame(string typeName, string name, Frame parent, string inherits = "")
     {
       Handle = BlzCreateFrameByType(typeName, name, parent.Handle, inherits, 0);
-    }
-
-    /// <summary>
-    /// Unhooks all events from this class. Called when Dispose is called or the Frame is garbage collected.
-    /// </summary>
-    protected virtual void DisposeEvents()
-    {
-    }
-
-    /// <inheritdoc />
-    public void Dispose()
-    {
-      if (_disposed) return;
-      _disposed = true;
-
-      DisposeEvents();
-      foreach (var childFrame in _children)
-      {
-        childFrame.Dispose();
-      }
-
-      _children.Clear();
-      BlzDestroyFrame(Handle);
     }
   }
 }
