@@ -66,6 +66,7 @@ namespace MacroTools.Extensions
         }
 
         if (cleanupType == NeutralPassiveCleanupType.RemoveUnits || unit.IsType(UNIT_TYPE_STRUCTURE))
+          if (unit.GetTypeId() != FourCC("ngme"))
           unit.Remove();
         else
           unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
