@@ -43,9 +43,8 @@
   },
   {
     "State": 2,
-    "Life": 100,
-    "TypeId": 2004112463,
-    "Variation": 8,
+    "Life": 255,
+    "TypeId": 859254852,
     "Position": {
       "X": -25408,
       "Y": -6400,
@@ -57,7 +56,7 @@
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 2004112463,
+    "SkinId": 859254852,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 33918
