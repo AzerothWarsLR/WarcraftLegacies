@@ -58,17 +58,11 @@ namespace MacroTools.Extensions
       {
         if (unit.OwningPlayer() != Player(PLAYER_NEUTRAL_PASSIVE) || unit.GetTypeId() == FourCC("ngol"))
           continue;
-        
-        if (!unit.IsRemovable())
-        {
-          unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-          continue;
-        }
 
-        if (cleanupType == NeutralPassiveCleanupType.RemoveUnits || unit.IsType(UNIT_TYPE_STRUCTURE))
-          if (unit.GetTypeId() != FourCC("ngme"))
+        if (unit.IsRemovable() && !BlzIsUnitInvulnerable(unit))
+          if (cleanupType == NeutralPassiveCleanupType.RemoveUnits || unit.IsType(UNIT_TYPE_STRUCTURE))
           unit.Remove();
-        else
+        else if (!unit.IsRemovable())
           unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       }
     }
