@@ -59,10 +59,15 @@ namespace MacroTools.Extensions
         if (unit.OwningPlayer() != Player(PLAYER_NEUTRAL_PASSIVE) || unit.GetTypeId() == FourCC("ngol"))
           continue;
 
-        if (unit.IsRemovable() && !BlzIsUnitInvulnerable(unit))
-          if (cleanupType == NeutralPassiveCleanupType.RemoveUnits || unit.IsType(UNIT_TYPE_STRUCTURE))
+        if (!unit.IsRemovable())
+        {
+          unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+          continue;
+        }
+
+        if (unit.IsRemovable() && !BlzIsUnitInvulnerable(unit) && (cleanupType == NeutralPassiveCleanupType.RemoveUnits || unit.IsType(UNIT_TYPE_STRUCTURE)))
           unit.Remove();
-        else if (!unit.IsRemovable())
+        else
           unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       }
     }
