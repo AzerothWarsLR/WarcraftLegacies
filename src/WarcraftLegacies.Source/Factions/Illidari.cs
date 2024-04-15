@@ -45,7 +45,8 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
         "illidan",
         "ill",
         "naga",
-        "nagas"
+        "nagas",
+        "fish"
       };
       RegisterFactionDependentInitializer<Sentinels>(RegisterSentinelsDialogue);
       RegisterFactionDependentInitializer<Druids>(RegisterDruidsDialogue);
