@@ -78,7 +78,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Shoots a long distance arrows, dealing maximum 200 damage to enemies with successful hit. Stuns non-Hero units for 0.75 seconds. Has a range of 1200."
+      "Value": "Shoots a long distance arrows, dealing \u003CA06G,DataA1\u003E damage to enemies with successful hit, up to a maximum of \u003CA06G,DataD1\u003E. Stuns non-Hero units for 0.75 seconds. Has a range of \u003CA06G,Rng1\u003E."
     }
   ]
 }
