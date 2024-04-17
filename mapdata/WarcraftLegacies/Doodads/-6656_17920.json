@@ -2,6 +2,27 @@
   {
     "State": 2,
     "Life": 255,
+    "TypeId": 1802654274,
+    "Variation": 7,
+    "Position": {
+      "X": -6754.9775,
+      "Y": 18033.38,
+      "Z": -1.6180799
+    },
+    "Rotation": 0.6632251,
+    "Scale": {
+      "X": 1.2499999,
+      "Y": 1.2499999,
+      "Z": 1.2499999
+    },
+    "SkinId": 1802654274,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 33310
+  },
+  {
+    "State": 2,
+    "Life": 255,
     "TypeId": 1936151106,
     "Position": {
       "X": -7031.7974,
