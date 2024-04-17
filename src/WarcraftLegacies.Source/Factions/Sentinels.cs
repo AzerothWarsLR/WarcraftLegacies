@@ -177,7 +177,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
     private void RegisterPowers()
     {
       AddPower(new DummyPower("Unspoiled Wilderness",
-        "Your Control Points increase your units' movement speed by 24% in a large radius."));
+        "Your Control Points increase your units' movement speed by 15% in a large radius."));
       
       var worldTrees = new List<Capital>
       {

@@ -23,17 +23,6 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Gives \u003CA01A,DataA1,%\u003E% extra damage to the attacks of nearby friendly units."
-    },
-    {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Warchief\u0027s Command"
-    },
-    {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Warchief\u0027s Command"
     }
   ]
 }
