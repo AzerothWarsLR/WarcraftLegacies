@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using System;
+using MacroTools.Extensions;
 using MacroTools.ResearchSystems;
 
 namespace WarcraftLegacies.Source.Researches.Ahnqiraj
@@ -19,6 +20,7 @@ namespace WarcraftLegacies.Source.Researches.Ahnqiraj
       var workers = CreateGroup().EnumUnitsOfType(UNIT_U019_DRONE_C_THUN_WORKER).EmptyToList();
       foreach (var worker in workers)
       {
+        Console.WriteLine("YOSA");
         var position = worker.GetPosition();
         var facing = worker.GetFacing();
         var hitPointsPercentage = worker.GetLifePercent();
