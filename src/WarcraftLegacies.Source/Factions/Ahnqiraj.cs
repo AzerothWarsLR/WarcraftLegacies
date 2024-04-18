@@ -78,7 +78,7 @@ namespace WarcraftLegacies.Source.Factions
     
     private void RegisterResearches()
     {
-      ResearchManager.Register(new Progenesis(Constants.UPGRADE_R003_PROGENESIS_C_THUN, 20));
+      ResearchManager.Register(new Progenesis(UPGRADE_R003_PROGENESIS_C_THUN, 20));
     }
   }
 }
