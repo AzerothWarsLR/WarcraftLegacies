@@ -1,4 +1,6 @@
 ﻿using MacroTools.FactionSystem;
+using MacroTools.ResearchSystems;
+using WarcraftLegacies.Source.Researches.Ahnqiraj;
 using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Factions
@@ -16,6 +18,7 @@ namespace WarcraftLegacies.Source.Factions
     public override void OnRegistered()
     {
       RegisterObjectLimits();
+      RegisterResearches();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
@@ -32,8 +35,7 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(UNIT_U01I_CHAMBER_OF_WONDERS_C_THUN_SHOP, UNLIMITED);
       ModObjectLimit(UNIT_U01F_ALTAR_OF_THE_OLD_ONES_C_THUN_ALTAR, UNLIMITED);
       ModObjectLimit(UNIT_STZ5_LIGHTHOUSE_C_THUN_EMPTY, UNLIMITED);
-
-
+      
       ModObjectLimit(UNIT_U019_DRONE_C_THUN_WORKER, UNLIMITED);
       ModObjectLimit(UNIT_O000_SILITHID_ROYALTY_C_THUN_ELITES, 6);
 
@@ -69,7 +71,14 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(UPGRADE_RYW5_IMPROVED_SWARM_BEETLE_CTHUN_WARRIOR, UNLIMITED);
       ModObjectLimit(UPGRADE_RTL3_IMPROVED_SEED_OF_MADNESS_CTHUN_WARRIOR, UNLIMITED);
       ModObjectLimit(UPGRADE_RHL9_WEB_CTHUN, UNLIMITED);
-
+      ModObjectLimit(UPGRADE_R003_PROGENESIS_C_THUN, UNLIMITED);
+      ModObjectLimit(UPGRADE_ZB12_CLEAVING_ATTACK_C_THUN, UNLIMITED);
+      ModObjectLimit(UPGRADE_ZB14_ELONGATED_SNOUTS_C_THUN_SILITHID_WASP, UNLIMITED);
+    }
+    
+    private void RegisterResearches()
+    {
+      ResearchManager.Register(new Progenesis(UPGRADE_R003_PROGENESIS_C_THUN, 20));
     }
   }
 }
