@@ -96,7 +96,7 @@ namespace MacroTools.Extensions
     /// </summary>
     public static int GetCurrentHitPoints(this unit whichUnit)
     {
-      return BlzGetUnitMaxHP(whichUnit);
+      return (int)GetUnitState(whichUnit, UNIT_STATE_LIFE);
     }
 
     /// <summary>
