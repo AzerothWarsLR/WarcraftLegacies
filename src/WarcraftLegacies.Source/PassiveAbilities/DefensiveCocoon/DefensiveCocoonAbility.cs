@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
     /// <summary>
     /// A unit type ID with the model of the cocoon.
     /// </summary>
-    public required int AlternateFormId { private get; init; }
+    public required int EggId { private get; init; }
     
     /// <summary>
     /// The visual effect that occurs.
@@ -54,7 +54,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
       var vengeanceBuff = new DefensiveCocoonBuff(damaged, damaged)
       {
         Duration = Duration,
-        AlternateFormId = AlternateFormId,
+        EggId = EggId,
         ReviveEffect = ReviveEffect,
         MaximumHitPoints = (int)(damaged.GetMaximumHitPoints() * MaximumHealthPercentage)
       };
@@ -63,7 +63,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
 
     private bool ShouldBecomeEgg(int abilityLevel, unit target)
     {
-      return abilityLevel != 0 && BlzGetUnitSkin(target) != AlternateFormId &&
+      return abilityLevel != 0 && BlzGetUnitSkin(target) != EggId &&
              GetEventDamage() >= GetUnitState(target, UNIT_STATE_LIFE);
     }
   }

@@ -1,5 +1,4 @@
-﻿using System;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using WarcraftLegacies.Source.PassiveAbilities.Vengeance;
 using WCSharp.Buffs;
 
@@ -12,7 +11,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
   /// </summary>
   public sealed class DefensiveCocoonBuff : PassiveBuff
   {
-    private ReversionInfo? _reversionInfo;
+    private unit? _egg;
 
     /// <summary>
     /// How many maximum hit points the cocoon should have.
@@ -27,7 +26,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
     /// <summary>
     /// The unit type ID of the vengeance form.
     /// </summary>
-    public required int AlternateFormId { private get; init; }
+    public required int EggId { private get; init; }
 
     /// <summary>
     /// Initializes a new instance of the <see cref="VengeanceBuff"/> class.
@@ -39,49 +38,39 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
     /// <inheritdoc />
     public override void OnApply()
     {
-      Console.WriteLine("added");
-      BlzSetUnitSkin(Target, AlternateFormId);
-
-      _reversionInfo = new ReversionInfo
-      {
-        HitPointsRemoved = Target.GetMaximumHitPoints() - MaximumHitPoints,
-        UnitTypeId = BlzGetUnitSkin(Target)
-      };
-      
       Target
-        .SetMaximumHitpoints(MaximumHitPoints)
         .SetLifePercent(100)
-        .SetTimedLife(Duration + 1);
+        .Show(false);
+      
+      _egg = CreateUnit(Target.OwningPlayer(), EggId, GetUnitX(Target), GetUnitY(Target), 0)
+        .SetTimedLife(Duration + 1)
+        .SetMaximumHitpoints(MaximumHitPoints);
+      
+      AddSpecialEffect(ReviveEffect, GetUnitX(Target), GetUnitY(Target))
+        .SetScale(2)
+        .SetLifespan();
     }
 
     /// <inheritdoc />
     public override void OnDispose()
     {
-      Caster
-        .SetMaximumHitpoints(_reversionInfo!.HitPointsRemoved)
-        .SetSkin(_reversionInfo.UnitTypeId)
-        .SetTimedLife(0);
+      Target.Show(true);
       
-      if (UnitAlive(Target)) 
+      if (UnitAlive(_egg)) 
         Revive();
+      else
+        Target.Kill();
     }
 
     private void Revive()
     {
-      Target.SetMaximumHitpoints(Target.GetMaximumHitPoints() + _reversionInfo!.HitPointsRemoved);
+      Target.SetCurrentHitpoints(_egg!.GetCurrentHitPoints());
+      _egg!.Kill();
+      Target.SetPosition(_egg!.GetPosition());
       
       AddSpecialEffect(ReviveEffect, GetUnitX(Target), GetUnitY(Target))
+        .SetScale(2)
         .SetLifespan();
-    }
-
-    /// <summary>
-    /// Information about the unit from before it was transformed into a cocoon, so that it can be cleanly reverted.
-    /// </summary>
-    private sealed class ReversionInfo
-    {
-      public required int HitPointsRemoved { get; init; }
-      
-      public required int UnitTypeId { get; init; }
     }
   }
 }

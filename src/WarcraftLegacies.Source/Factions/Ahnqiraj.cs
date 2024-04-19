@@ -98,8 +98,8 @@ namespace WarcraftLegacies.Source.Factions
       {
         MaximumHealthPercentage = 0.5f,
         Duration = 45,
-        AlternateFormId = FourCC("hfoo"),
-        ReviveEffect = @"Objects\Spawnmodels\Undead\UndeadDissipate\UndeadDissipate.mdl"
+        EggId = FourCC("hfoo"),
+        ReviveEffect = @"Abilities\Spells\Undead\RaiseSkeletonWarrior\RaiseSkeleton.mdl"
       });
     }
   }

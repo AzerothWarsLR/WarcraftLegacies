@@ -90,6 +90,14 @@ namespace MacroTools.Extensions
       SetUnitState(whichUnit, UNIT_STATE_LIFE, value);
       return whichUnit;
     }
+    
+    /// <summary>
+    /// Sets the unit's current hit points.
+    /// </summary>
+    public static int GetCurrentHitPoints(this unit whichUnit)
+    {
+      return BlzGetUnitMaxHP(whichUnit);
+    }
 
     /// <summary>
     /// Sets the unit's base damage.
