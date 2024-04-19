@@ -192,7 +192,7 @@ namespace MacroTools.Extensions
     public static unit SetTimedLife(this unit whichUnit, float duration, int buffId = 0)
     {
       if (duration < 1)
-        throw new ArgumentException($"Cannot apply a timed life with a {nameof(duration)} less than 1.");
+        BlzUnitCancelTimedLife(whichUnit);
 
       UnitApplyTimedLife(whichUnit, buffId, duration);
       return whichUnit;

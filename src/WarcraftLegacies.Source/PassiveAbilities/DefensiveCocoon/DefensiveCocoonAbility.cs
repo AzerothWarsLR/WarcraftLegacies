@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using System.Collections.Generic;
+using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
 using WarcraftLegacies.Source.PassiveAbilities.Vengeance;
 using WCSharp.Buffs;
@@ -35,9 +36,9 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
     /// <summary>
     /// Initializes a new instance of the <see cref="VengeanceAbility"/> class.
     /// </summary>
-    /// <param name="damagedUnitTypeId">The unit type ID that can take damage to trigger this effect.</param>
+    /// <param name="damagedUnitTypeIds">The unit type IDs that can take damage to trigger this effect.</param>
     /// <param name="abilityTypeId">The ability whose level is used to determine the magnitude of the effect.</param>
-    public DefensiveCocoonAbility(int damagedUnitTypeId, int abilityTypeId) : base(damagedUnitTypeId, abilityTypeId)
+    public DefensiveCocoonAbility(IEnumerable<int> damagedUnitTypeIds, int abilityTypeId) : base(damagedUnitTypeIds, abilityTypeId)
     {
     }
     
@@ -55,7 +56,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
         Duration = Duration,
         AlternateFormId = AlternateFormId,
         ReviveEffect = ReviveEffect,
-        MaximumHitPoints = damaged.GetMaximumHitPoints()
+        MaximumHitPoints = (int)(damaged.GetMaximumHitPoints() * MaximumHealthPercentage)
       };
       BuffSystem.Add(vengeanceBuff);
     }

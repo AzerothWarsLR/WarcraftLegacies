@@ -1,4 +1,5 @@
-﻿using MacroTools.FactionSystem;
+﻿using System.Collections.Generic;
+using MacroTools.FactionSystem;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
 using WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon;
@@ -86,7 +87,14 @@ namespace WarcraftLegacies.Source.Factions
     
     private void RegisterSpells()
     {
-      PassiveAbilityManager.Register(new DefensiveCocoonAbility(UNIT_U02S_ANCIENT_SAND_WORM, FourCC("AInv"))
+      var cocoonHeroes = new int[]
+      {
+        UNIT_U02S_ANCIENT_SAND_WORM,
+        UNIT_E005_THE_PROPHET,
+        UNIT_U00Z_OBSIDIAN_DESTROYER
+      };
+      
+      PassiveAbilityManager.Register(new DefensiveCocoonAbility(cocoonHeroes, FourCC("AInv"))
       {
         MaximumHealthPercentage = 0.5f,
         Duration = 45,

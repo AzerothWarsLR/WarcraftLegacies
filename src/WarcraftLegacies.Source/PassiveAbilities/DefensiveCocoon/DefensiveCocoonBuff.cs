@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using System;
+using MacroTools.Extensions;
 using WarcraftLegacies.Source.PassiveAbilities.Vengeance;
 using WCSharp.Buffs;
 
@@ -11,7 +12,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
   /// </summary>
   public sealed class DefensiveCocoonBuff : PassiveBuff
   {
-    private FormerUnitState? _formerUnitState;
+    private ReversionInfo? _reversionInfo;
 
     /// <summary>
     /// How many maximum hit points the cocoon should have.
@@ -38,11 +39,12 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
     /// <inheritdoc />
     public override void OnApply()
     {
+      Console.WriteLine("added");
       BlzSetUnitSkin(Target, AlternateFormId);
 
-      _formerUnitState = new FormerUnitState
+      _reversionInfo = new ReversionInfo
       {
-        MaximumHitPoints = Target.GetMaximumHitPoints(),
+        HitPointsRemoved = Target.GetMaximumHitPoints() - MaximumHitPoints,
         UnitTypeId = BlzGetUnitSkin(Target)
       };
       
@@ -56,8 +58,8 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
     public override void OnDispose()
     {
       Caster
-        .SetMaximumHitpoints(_formerUnitState!.MaximumHitPoints)
-        .SetSkin(_formerUnitState.UnitTypeId)
+        .SetMaximumHitpoints(_reversionInfo!.HitPointsRemoved)
+        .SetSkin(_reversionInfo.UnitTypeId)
         .SetTimedLife(0);
       
       if (UnitAlive(Target)) 
@@ -66,7 +68,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
 
     private void Revive()
     {
-      Target.SetMaximumHitpoints(_formerUnitState!.MaximumHitPoints);
+      Target.SetMaximumHitpoints(Target.GetMaximumHitPoints() + _reversionInfo!.HitPointsRemoved);
       
       AddSpecialEffect(ReviveEffect, GetUnitX(Target), GetUnitY(Target))
         .SetLifespan();
@@ -75,9 +77,9 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
     /// <summary>
     /// Information about the unit from before it was transformed into a cocoon, so that it can be cleanly reverted.
     /// </summary>
-    private sealed class FormerUnitState
+    private sealed class ReversionInfo
     {
-      public required int MaximumHitPoints { get; init; }
+      public required int HitPointsRemoved { get; init; }
       
       public required int UnitTypeId { get; init; }
     }

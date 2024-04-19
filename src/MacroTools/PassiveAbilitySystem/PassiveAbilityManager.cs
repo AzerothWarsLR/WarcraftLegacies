@@ -36,8 +36,8 @@ namespace MacroTools.PassiveAbilitySystem
     /// </summary>
     public static void Register(TakeDamagePassiveAbility takeDamagePassiveAbility)
     {
-      PlayerUnitEvents.Register(UnitTypeEvent.IsDamaged, takeDamagePassiveAbility.OnTakesDamage,
-        takeDamagePassiveAbility.DamagedUnitTypeId);
+      foreach (var unit in takeDamagePassiveAbility.DamagedUnitTypeIds)
+        PlayerUnitEvents.Register(UnitTypeEvent.IsDamaged, takeDamagePassiveAbility.OnTakesDamage, unit);
     }
 
     /// <summary>
