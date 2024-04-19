@@ -14,6 +14,11 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
   public sealed class DefensiveCocoonAbility : TakeDamagePassiveAbility
   {
     /// <summary>
+    /// If set, this needs to be researched for the ability to work.
+    /// </summary>
+    public required int RequiredResearch { get; init; }
+    
+    /// <summary>
     /// The amount of health the cocoon has, as a percentage of the ability wielders maximum hit points.
     /// </summary>
     public required float MaximumHealthPercentage { private get; init; }
@@ -61,10 +66,10 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
       BuffSystem.Add(vengeanceBuff);
     }
 
-    private bool ShouldBecomeEgg(int abilityLevel, unit target)
-    {
-      return abilityLevel != 0 && BlzGetUnitSkin(target) != EggId &&
-             GetEventDamage() >= GetUnitState(target, UNIT_STATE_LIFE);
-    }
+    private bool ShouldBecomeEgg(int abilityLevel, unit target) =>
+      GetPlayerTechCount(target.OwningPlayer(), RequiredResearch, false) > 0 && 
+      abilityLevel != 0 &&
+      BlzGetUnitSkin(target) != EggId && 
+      GetEventDamage() >= GetUnitState(target, UNIT_STATE_LIFE);
   }
 }

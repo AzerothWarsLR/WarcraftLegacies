@@ -99,7 +99,8 @@ namespace WarcraftLegacies.Source.Factions
         MaximumHealthPercentage = 0.5f,
         Duration = 45,
         EggId = UNIT_ZBBG_COCOON_DEFENSIVE_COCOON,
-        ReviveEffect = @"Abilities\Spells\Undead\RaiseSkeletonWarrior\RaiseSkeleton.mdl"
+        ReviveEffect = @"Abilities\Spells\Undead\RaiseSkeletonWarrior\RaiseSkeleton.mdl",
+        RequiredResearch = UPGRADE_ZBEH_DEFENSIVE_COCOOON_AHN_QIRAJ
       });
     }
   }
