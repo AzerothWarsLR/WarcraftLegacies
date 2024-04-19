@@ -12,6 +12,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
   public sealed class DefensiveCocoonBuff : PassiveBuff
   {
     private unit? _egg;
+    private trigger? _deathTrigger;
 
     /// <summary>
     /// How many maximum hit points the cocoon should have.
@@ -51,11 +52,16 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
       AddSpecialEffect(ReviveEffect, GetUnitX(Target), GetUnitY(Target))
         .SetScale(2)
         .SetLifespan();
+
+      _deathTrigger = CreateTrigger()
+        .RegisterUnitEvent(_egg, EVENT_UNIT_DEATH)
+        .AddAction(() => Target.Kill());
     }
 
     /// <inheritdoc />
     public override void OnDispose()
     {
+      _deathTrigger?.Destroy();
       Target.Show(true);
       
       if (UnitAlive(_egg)) 
