@@ -44,7 +44,8 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
       
       _egg = CreateUnit(Target.OwningPlayer(), EggId, GetUnitX(Target), GetUnitY(Target), 0)
         .SetTimedLife(Duration + 1)
-        .SetMaximumHitpoints(MaximumHitPoints);
+        .SetMaximumHitpoints(MaximumHitPoints)
+        .SetArmor((int)BlzGetUnitArmor(Target));
       
       AddSpecialEffect(ReviveEffect, GetUnitX(Target), GetUnitY(Target))
         .SetScale(2)

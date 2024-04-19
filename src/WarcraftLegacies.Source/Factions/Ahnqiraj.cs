@@ -77,6 +77,7 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(UPGRADE_R003_PROGENESIS_C_THUN, UNLIMITED);
       ModObjectLimit(UPGRADE_ZB12_CLEAVING_ATTACK_C_THUN, UNLIMITED);
       ModObjectLimit(UPGRADE_ZB14_ELONGATED_SNOUTS_C_THUN_SILITHID_WASP, UNLIMITED);
+      ModObjectLimit(UPGRADE_ZBEH_DEFENSIVE_COCOOON_AHN_QIRAJ, UNLIMITED);
     }
     
     private void RegisterResearches()
