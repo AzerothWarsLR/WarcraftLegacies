@@ -50,8 +50,6 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
         .SetLifePercent(100)
         .SetArmor((int)BlzGetUnitArmor(Target))
         .SetName($"Cocoon ({Target.GetProperName()})");
-
-      Console.WriteLine();
       
       AddSpecialEffect(ReviveEffect, GetUnitX(Target), GetUnitY(Target))
         .SetScale(2)
