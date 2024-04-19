@@ -93,7 +93,7 @@ namespace WarcraftLegacies.Source.Factions
         UNIT_U00Z_OBSIDIAN_DESTROYER
       };
       
-      PassiveAbilityManager.Register(new DefensiveCocoonAbility(cocoonHeroes, FourCC("AInv"))
+      PassiveAbilityManager.Register(new DefensiveCocoonAbility(cocoonHeroes, ABILITY_ZBEG_DEFENSIVE_COCOON_AHN_QIRAJ)
       {
         MaximumHealthPercentage = 0.5f,
         Duration = 45,
