@@ -1,5 +1,7 @@
 ﻿using MacroTools.FactionSystem;
+using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
+using WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon;
 using WarcraftLegacies.Source.Researches.Ahnqiraj;
 using WarcraftLegacies.Source.Setup;
 
@@ -19,6 +21,7 @@ namespace WarcraftLegacies.Source.Factions
     {
       RegisterObjectLimits();
       RegisterResearches();
+      RegisterSpells();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
@@ -79,6 +82,17 @@ namespace WarcraftLegacies.Source.Factions
     private void RegisterResearches()
     {
       ResearchManager.Register(new Progenesis(UPGRADE_R003_PROGENESIS_C_THUN, 20));
+    }
+    
+    private void RegisterSpells()
+    {
+      PassiveAbilityManager.Register(new DefensiveCocoonAbility(UNIT_U02S_ANCIENT_SAND_WORM, FourCC("AInv"))
+      {
+        MaximumHealthPercentage = 0.5f,
+        Duration = 45,
+        AlternateFormId = FourCC("hfoo"),
+        ReviveEffect = @"Objects\Spawnmodels\Undead\UndeadDissipate\UndeadDissipate.mdl"
+      });
     }
   }
 }
