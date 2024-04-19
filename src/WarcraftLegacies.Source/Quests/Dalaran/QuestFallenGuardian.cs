@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       @"ReplaceableTextures\CommandButtons\BTNMedivh.blp")
     {
       AddObjective(new ObjectiveControlCapital(karazhan, false));
-      AddObjective(new ObjectiveControlPoint(UNIT_N00J_TOMB_OF_SARGERAS, false));
+      AddObjective(new ObjectiveControlPoint(UNIT_N00J_TOMB_OF_SARGERAS, 0));
       ResearchId = UPGRADE_R04K_QUEST_COMPLETED_THE_FALLEN_GUARDIAN_DALARAN;
     }
 

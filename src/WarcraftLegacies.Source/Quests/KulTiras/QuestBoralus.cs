@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     {
       AddObjective(new ObjectiveUpgrade(UNIT_H06I_CASTLE_KUL_TIRAS_T3, UNIT_H062_TOWN_HALL_KUL_TIRAS_T1));
       AddObjective(new ObjectiveControlPoint(UNIT_N0BX_TIRAGARDE_SOUND));
-      AddObjective(new ObjectiveControlPoint(UNIT_N0BW_STORMSONG_VALLEY));
+      AddObjective(new ObjectiveControlPoint(UNIT_N0BW_STORMSONG_VALLEY, 1000));
       AddObjective(new ObjectiveControlPoint(UNIT_N0BV_DRUSTVAR));
       AddObjective(new ObjectiveExpire(480, Title));
       AddObjective(new ObjectiveSelfExists());
