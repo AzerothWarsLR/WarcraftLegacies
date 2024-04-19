@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using System;
+using MacroTools.Extensions;
 using WarcraftLegacies.Source.PassiveAbilities.Vengeance;
 using WCSharp.Buffs;
 
@@ -47,7 +48,10 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
         .SetTimedLife(Duration + 1)
         .SetMaximumHitpoints(MaximumHitPoints)
         .SetLifePercent(100)
-        .SetArmor((int)BlzGetUnitArmor(Target));
+        .SetArmor((int)BlzGetUnitArmor(Target))
+        .SetName($"Cocoon ({Target.GetProperName()})");
+
+      Console.WriteLine();
       
       AddSpecialEffect(ReviveEffect, GetUnitX(Target), GetUnitY(Target))
         .SetScale(2)
