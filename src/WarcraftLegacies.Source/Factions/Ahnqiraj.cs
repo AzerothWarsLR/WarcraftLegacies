@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
 using WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon;
@@ -98,7 +97,7 @@ namespace WarcraftLegacies.Source.Factions
       {
         MaximumHealthPercentage = 0.5f,
         Duration = 45,
-        EggId = FourCC("hfoo"),
+        EggId = UNIT_ZBBG_COCOON_DEFENSIVE_COCOON,
         ReviveEffect = @"Abilities\Spells\Undead\RaiseSkeletonWarrior\RaiseSkeleton.mdl"
       });
     }
