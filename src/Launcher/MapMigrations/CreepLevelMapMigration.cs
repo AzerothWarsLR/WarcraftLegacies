@@ -43,8 +43,7 @@ namespace Launcher.MapMigrations
               break;
           }
 
-          if (unit.CombatAttack1AttackType.Equals(War3Api.Object.Enums.AttackType.Chaos) ||
-              unit.CombatAttack1AttackType.Equals(War3Api.Object.Enums.AttackType.Hero))
+          if (unit.CombatAttack1AttackType.Equals(War3Api.Object.Enums.AttackType.Hero))
             level += 1;
 
           // is a flying unit
