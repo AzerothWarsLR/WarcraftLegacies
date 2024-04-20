@@ -38,6 +38,11 @@
       "Id": 1832018293,
       "Type": 3,
       "Value": "Abilities\\Weapons\\DruidoftheTalonMissile\\DruidoftheTalonMissile.mdl"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\ProcMissile\\ProcMissile.mdl"
     }
   ]
 }
