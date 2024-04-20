@@ -1935,6 +1935,10 @@ public static class Constants
 	public const int ABILITY_Z3X9_HEALING_FRENZY_SALLY_DUMMY = 1513314361;
 	public const int ABILITY_A0Y9_BURROW_C_THUN_SCARAB = 1093687609;
 	public const int ABILITY_A0Z9_BILE_SHOT_MURLOC = 1093687865;
+<<<<<<< Updated upstream
+=======
+	public const int ABILITY_TP77_FORKED_LIGHTNING_KIL_JEADEN = 1953511223;
+>>>>>>> Stashed changes
 	public const int BUFF_BCBF_HYPOTHERMIC_BREATH = 1111712358;
 	public const int BUFF_BEAT_EAT_TREE = 1113940340;
 	public const int BUFF_BFZY_FRENZY_WARLOCK = 1114012281;
@@ -2037,7 +2041,7 @@ public static class Constants
 	public const int BUFF_B02N_AVATAR_OF_VENGENCE = 1110454862;
 	public const int BUFF_B02O_INITIATE_MAGE = 1110454863;
 	public const int BUFF_B02P_UNHOLY_ARMOR = 1110454864;
-	public const int BUFF_B02Q_FEAR_AURA = 1110454865;
+	public const int BUFF_B04G_SHADOW_AURA = 1110455367;
 	public const int BUFF_B02R_CHEMICAL_FRENZY = 1110454866;
 	public const int BUFF_B02S_MIND_AFFLICTION = 1110454867;
 	public const int BUFF_B02T_ARMOR_PENETRATION_ROUNDS = 1110454868;
@@ -2099,7 +2103,6 @@ public static class Constants
 	public const int BUFF_B04D_UNDYING_STRENGTH = 1110455364;
 	public const int BUFF_B04E_INVIGORATION_STORMWIND_CATHEDRAL = 1110455365;
 	public const int BUFF_B04F_BURNING_ELF = 1110455366;
-	public const int BUFF_B04G_SHADOW_AURA = 1110455367;
 	public const int BUFF_B04H_STUNNED = 1110455368;
 	public const int BUFF_B04I_FEL_BATTLEPLATE = 1110455369;
 	public const int BUFF_B04J_MOONFIRE = 1110455370;
@@ -2372,6 +2375,7 @@ public static class Constants
 	public const int BUFF_ZB08_APOCALYPSE = 1514287160;
 	public const int BUFF_ZB09_APOCALYPSE = 1514287161;
 	public const int BUFF_ZB11_GROUND_SHACKLES = 1514287409;
+	public const int BUFF_B02Q_FEAR_AURA = 1110454865;
 	public const int ITEM_AMRC_AMULET_OF_RECALL = 1634562659;
 	public const int ITEM_ARSH_SHROUD_OF_NOZDORMU = 1634890600;
 	public const int ITEM_AZHR_HEART_OF_ASZUNE = 1635412082;
