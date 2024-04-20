@@ -1,5 +1,7 @@
 ﻿using MacroTools.FactionSystem;
+using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
+using WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon;
 using WarcraftLegacies.Source.Researches.Ahnqiraj;
 using WarcraftLegacies.Source.Setup;
 
@@ -19,6 +21,7 @@ namespace WarcraftLegacies.Source.Factions
     {
       RegisterObjectLimits();
       RegisterResearches();
+      RegisterSpells();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
@@ -74,11 +77,31 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(UPGRADE_R003_PROGENESIS_C_THUN, UNLIMITED);
       ModObjectLimit(UPGRADE_ZB12_CLEAVING_ATTACK_C_THUN, UNLIMITED);
       ModObjectLimit(UPGRADE_ZB14_ELONGATED_SNOUTS_C_THUN_SILITHID_WASP, UNLIMITED);
+      ModObjectLimit(UPGRADE_ZBEH_DEFENSIVE_COCOOON_AHN_QIRAJ, UNLIMITED);
     }
     
     private void RegisterResearches()
     {
       ResearchManager.Register(new Progenesis(UPGRADE_R003_PROGENESIS_C_THUN, 20));
+    }
+    
+    private void RegisterSpells()
+    {
+      var cocoonHeroes = new int[]
+      {
+        UNIT_U02S_ANCIENT_SAND_WORM,
+        UNIT_E005_THE_PROPHET,
+        UNIT_U00Z_OBSIDIAN_DESTROYER
+      };
+      
+      PassiveAbilityManager.Register(new DefensiveCocoonAbility(cocoonHeroes, ABILITY_ZBEG_DEFENSIVE_COCOON_AHN_QIRAJ)
+      {
+        MaximumHealthPercentage = 0.5f,
+        Duration = 45,
+        EggId = UNIT_ZBBG_COCOON_DEFENSIVE_COCOON,
+        ReviveEffect = @"Abilities\Spells\Undead\RaiseSkeletonWarrior\RaiseSkeleton.mdl",
+        RequiredResearch = UPGRADE_ZBEH_DEFENSIVE_COCOOON_AHN_QIRAJ
+      });
     }
   }
 }

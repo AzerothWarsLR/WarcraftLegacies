@@ -1,15 +1,14 @@
-﻿using MacroTools.Buffs;
-using MacroTools.PassiveAbilitySystem;
+﻿using MacroTools.PassiveAbilitySystem;
 using WCSharp.Buffs;
 
-namespace WarcraftLegacies.Source.Spells
+namespace WarcraftLegacies.Source.PassiveAbilities.Vengeance
 {
   /// <summary>
   /// When the ability holder takes lethal damage, they transform into a Spirit of Vengeance.
   /// If they attack enough times while a Spirit, they revive with some health.
   /// Otherwise, they die.
   /// </summary>
-  public sealed class Vengeance : TakeDamagePassiveAbility
+  public sealed class VengeanceAbility : TakeDamagePassiveAbility
   {
     /// <summary>
     /// How much extra damage the vengenace form has.
@@ -75,11 +74,11 @@ namespace WarcraftLegacies.Source.Spells
     }
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="Vengeance"/> class.
+    /// Initializes a new instance of the <see cref="VengeanceAbility"/> class.
     /// </summary>
     /// <param name="damagedUnitTypeId">The unit type ID that can take damage to trigger this effect.</param>
     /// <param name="abilityTypeId">The ability whose level is used to determine the magnitude of the effect.</param>
-    public Vengeance(int damagedUnitTypeId, int abilityTypeId) : base(damagedUnitTypeId, abilityTypeId)
+    public VengeanceAbility(int damagedUnitTypeId, int abilityTypeId) : base(damagedUnitTypeId, abilityTypeId)
     {
     }
   }

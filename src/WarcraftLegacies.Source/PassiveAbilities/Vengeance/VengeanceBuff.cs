@@ -1,9 +1,8 @@
 ﻿using MacroTools.Extensions;
 using WCSharp.Buffs;
 using WCSharp.Events;
-using static War3Api.Common;
 
-namespace MacroTools.Buffs
+namespace WarcraftLegacies.Source.PassiveAbilities.Vengeance
 {
   /// <summary>
   /// The unit becomes a Spirit of Vengeance when this is applied, healing for an amount and gaining bonus damage.

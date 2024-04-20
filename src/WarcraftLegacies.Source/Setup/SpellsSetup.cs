@@ -3,6 +3,7 @@ using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
+using WarcraftLegacies.Source.PassiveAbilities.Vengeance;
 using WarcraftLegacies.Source.Setup.Spells;
 using WarcraftLegacies.Source.Spells;
 
@@ -121,7 +122,7 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(massSimulacrum);
 
-      var maievVengeance = new Vengeance(UNIT_EWRD_LEADER_OF_THE_WATCHERS_SENTINELS,
+      var maievVengeance = new VengeanceAbility(UNIT_EWRD_LEADER_OF_THE_WATCHERS_SENTINELS,
         ABILITY_A017_TAKE_VENGEANCE_SENTINELS_MAIEV)
       {
         AlternateFormId = UNIT_ESPV_AVATAR_OF_VENGEANCE_SENTINELS_MAIEV,
@@ -135,7 +136,7 @@ namespace WarcraftLegacies.Source.Setup
       };
       PassiveAbilityManager.Register(maievVengeance);
 
-      var burningVengeance = new Vengeance(FourCC("O04H"), FourCC("A0OO"))
+      var burningVengeance = new VengeanceAbility(FourCC("O04H"), FourCC("A0OO"))
       {
         AlternateFormId = FourCC("e01A"),
         HitsReviveThreshold = 5,
