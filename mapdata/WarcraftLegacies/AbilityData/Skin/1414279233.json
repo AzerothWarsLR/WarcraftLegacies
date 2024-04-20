@@ -43,7 +43,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons \u003CA0LT,DataB1\u003E Frost Wolf companions. Each wolf has \u003Cnwwf,realHP\u003E hit points and deals \u003Cnwwf,mindmg1\u003E - \u003Cnwwf,maxdmg1\u003E damage. |nLasts \u003CA0LT,Dur1\u003E seconds. |n|n|cffffcc00Attacks land units.|r"
+      "Value": "Summons \u003CA0LT,DataB1\u003E Frost Wolf companions. Each wolf has \u003Cnwwf,realHP\u003E hit points and deals moderate damage. |nLasts \u003CA0LT,Dur1\u003E seconds. |n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }
