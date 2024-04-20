@@ -1,6 +1,6 @@
 {
   "OldId": 1667318593,
-  "NewId": 861352001,
+  "NewId": 1093742657,
   "Unk": [
     0
   ],
@@ -16,13 +16,13 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Kargath, Garithos)"
+      "Value": "(Thrall)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives 10% extra damage to the attacks of nearby friendly units."
+      "Value": "Gives \u003CA01A,DataA1,%\u003E% extra damage to the attacks of nearby friendly units."
     }
   ]
 }

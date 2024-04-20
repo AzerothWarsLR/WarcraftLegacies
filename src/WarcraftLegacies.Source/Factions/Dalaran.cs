@@ -35,9 +35,9 @@ namespace WarcraftLegacies.Source.Factions
       _gilneasGate = preplacedUnitSystem.GetUnit(UNIT_H02K_GREYMANE_S_GATE_CLOSED);
       _dalaranProtectors = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(UNIT_N03G_VIOLET_TOWER, new Point(9084, 4979)),
-        preplacedUnitSystem.GetUnit(UNIT_N03G_VIOLET_TOWER, new Point(9008, 4092)),
-        preplacedUnitSystem.GetUnit(UNIT_N03G_VIOLET_TOWER, new Point(9864, 4086))
+        preplacedUnitSystem.GetUnit(UNIT_N03G_VIOLET_TOWER_DALARAN, new Point(9084, 4979)),
+        preplacedUnitSystem.GetUnit(UNIT_N03G_VIOLET_TOWER_DALARAN, new Point(9008, 4092)),
+        preplacedUnitSystem.GetUnit(UNIT_N03G_VIOLET_TOWER_DALARAN, new Point(9864, 4086))
       };
       UndefeatedResearch = UPGRADE_R05N_DALARAN_EXISTS;
       StartingGold = 200;
