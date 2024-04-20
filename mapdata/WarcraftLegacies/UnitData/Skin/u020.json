@@ -43,7 +43,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\NerubianStrongholdV2.mdl"
+      "Value": "war3mapImported\\CthunTownHallAll.mdl"
     },
     {
       "Id": 1735156597,
@@ -66,7 +66,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtonsBTNNerubianStronghold.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunT1.blp"
     }
   ]
 }

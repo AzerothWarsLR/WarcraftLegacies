@@ -1,0 +1,67 @@
+{
+  "OldId": 1818644033,
+  "NewId": 926380148,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Kil\u0027jeaden)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Calls forth a cone of lightning to damage enemies. |n|n|cffffcc00Level 1|r - \u003CANfl,DataA1\u003E damage per unit. |n|cffffcc00Level 2|r - \u003CANfl,DataA2\u003E damage per unit. |n|cffffcc00Level 3|r - \u003CANfl,DataA3\u003E damage per unit. |n|cffffcc00Level 4|r - \u003CANfl,DataA4\u003E damage per unit."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Forked Lightning - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to 3 enemy units for 125 damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to 4 enemy units for 200 damage."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to 5 enemy units for 275 damage."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Calls forth a cone of lightning on a target enemy unit, hitting up to 6 enemy units for 350 damage."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    }
+  ]
+}

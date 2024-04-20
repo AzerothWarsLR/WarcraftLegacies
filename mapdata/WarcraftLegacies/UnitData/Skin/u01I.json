@@ -30,7 +30,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\NerubianReliquary.mdl"
+      "Value": "CthunShop.mdl"
     },
     {
       "Id": 1735156597,
@@ -70,6 +70,11 @@
       "Id": 1651864693,
       "Type": 3,
       "Value": "Creates a shop with purchasable items.|n|cfff5962dAbilities:|R Ahn\u0027Qiraj Spirits"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunShop.blp"
     }
   ]
 }
