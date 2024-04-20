@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
     /// Initializes a new instance of the <see cref="QuestKezan"/>.
     /// </summary>
     public QuestKezan() : base("Offshore Investment",
-      "The island of Kezan should be the first expansion of our trade empire.",
+      "The island of Kezan would be an ideal seat of power for the Bilgewater trade empire, but first we must secure a foothold on Kalimdor.",
       @"ReplaceableTextures\CommandButtons\BTNIronHordeMerchant.blp")
     {
       AddObjective(new ObjectiveControlPoint(UNIT_N092_ZUL_FARRAK));
@@ -35,10 +35,10 @@ namespace WarcraftLegacies.Source.Quests.Goblin
     }
 
     /// <inheritdoc />
-    public override string RewardFlavour => "We have succesfully expanded our trade empire!";
+    public override string RewardFlavour => "With trade now able to flow into and out of Kalimdor, the goblins of Kezan are now all but forced to join the Bilgewater cartel.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "You can now train Traders and train Gallywix at the Altar of Industry";
+    protected override string RewardDescription => "Gain control of Kezan, and learn to train Gallywix at the Altar of Industry";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
