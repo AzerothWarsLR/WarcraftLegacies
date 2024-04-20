@@ -7,7 +7,7 @@
     {
       "Id": 1953653094,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNFrenzy.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWindfury.blp"
     },
     {
       "Id": 1952543846,
@@ -17,12 +17,12 @@
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "This unit has Frenzy; its attack rate is increased."
+      "Value": "This unit is under the effects of Windfury; its attack rate is increased."
     },
     {
       "Id": 1835101798,
       "Type": 3,
-      "Value": "Frenzy"
+      "Value": "Windfury"
     },
     {
       "Id": 1718840934,
@@ -42,6 +42,11 @@
     {
       "Id": 1667331174,
       "Value": 1
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "WIndfury"
     }
   ]
 }
