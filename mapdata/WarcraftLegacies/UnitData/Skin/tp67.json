@@ -1,0 +1,19 @@
+{
+  "OldId": 1702454639,
+  "NewId": 926314612,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Sentinels)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Units\\NightElf\\Owl\\Owl.mdl"
+    }
+  ]
+}
