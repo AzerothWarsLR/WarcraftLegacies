@@ -69,11 +69,16 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\NerubianArmory.mdl"
+      "Value": "war3mapImported\\CthunResearch.mdl"
     },
     {
       "Id": 2020631157,
       "Value": 2
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunResearch.blp"
     }
   ]
 }

@@ -63,7 +63,12 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\AltarofAnub.mdl"
+      "Value": "war3mapImported\\AltarOfTheSpiders.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunAltar.blp"
     }
   ]
 }
