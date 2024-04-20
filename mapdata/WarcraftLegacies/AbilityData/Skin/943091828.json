@@ -1,0 +1,35 @@
+{
+  "OldId": 1702454593,
+  "NewId": 943091828,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Sentinels, Naisha)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Sentry Ward (|cffffcc00Q|r)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons an invisible and immovable owl ward that provides vision in an area. |nCan see invisible units. |nLasts \u003CAeye,Dur1\u003E seconds."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    }
+  ]
+}
