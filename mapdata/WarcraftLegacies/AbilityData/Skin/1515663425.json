@@ -38,6 +38,12 @@
       "Id": 829453409,
       "Type": 3,
       "Value": "Incinerate"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Each attack made is enhanced with living flames that cling to the target. If a unit dies while under this effect, it is incinerated, causing up to \u003CA0WZ,DataB1\u003E damage to all nearby hostile units."
     }
   ]
 }

@@ -1,22 +1,18 @@
 {
   "OldId": 1667845697,
-  "NewId": 1129001025,
+  "NewId": 1313423962,
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 0
-    },
-    {
-      "Id": 2037408353,
-      "Value": 0
+      "Value": 1
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Alexandros)"
+      "Value": "(Obsidian Drake)"
     },
     {
       "Id": 2037082209,
@@ -44,7 +40,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Each attack made is enhanced with living flames that cling to the target. If a unit dies while under this effect, it is incinerated, causing up to \u003CA0KC,DataB1\u003E damage to all nearby hostile units."
+      "Value": "Each attack made is enhanced with living flames that cling to the target. If a unit dies while under this effect, it is incinerated, causing up to \u003CZBIN,DataB1\u003E damage to all nearby hostile units."
     },
     {
       "Level": 1,
