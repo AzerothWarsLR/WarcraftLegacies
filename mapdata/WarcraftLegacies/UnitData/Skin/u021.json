@@ -16,11 +16,6 @@
       "Value": "Z"
     },
     {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 0.65
-    },
-    {
       "Id": 1935832437,
       "Type": 3,
       "Value": ""
@@ -77,6 +72,11 @@
       "Id": 1868786037,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunT1.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
     }
   ]
 }

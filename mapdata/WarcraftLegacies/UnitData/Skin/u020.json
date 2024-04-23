@@ -59,14 +59,14 @@
       "Value": 0
     },
     {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 0.6
-    },
-    {
       "Id": 1868786037,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunT1.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
     }
   ]
 }
