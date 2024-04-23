@@ -90,7 +90,8 @@ namespace WarcraftLegacies.Source.Factions
       AddQuest(new QuestEmperorConstruct());
       AddQuest(new QuestMockeryOfLife());
       AddQuest(new QuestWarOfTheShiftingSand(_allLegendSetup.Druids.Nordrassil));
-      AddQuest(new QuestWarOfTheShiftingSand(_allLegendSetup.Warsong.Orgrimmar));
+      AddQuest(new QuestDeliciousMusculature(_allLegendSetup.Warsong.Orgrimmar));
+      AddQuest(new QuestLitheMeat());
 
       ModObjectLimit(UPGRADE_R003_PROGENESIS_C_THUN, UNLIMITED);
       ModObjectLimit(UPGRADE_ZB12_CLEAVING_ATTACK_C_THUN, UNLIMITED);
