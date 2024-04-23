@@ -38,9 +38,7 @@ namespace WarcraftLegacies.Source.Factions
 You begin isolated in the deepest parts of Mount Hyjal near the World Tree.
 
 The Horde is gathering to burn Ashenvale forest and the World Tree. Cenarius has emerged from his seclusion to stop them. 
-Use him to awaken Malfurion from his slumber as soon as possible. 
-
-Once awakened, use his Force of Nature to clear a path through the trees in Ashenvale.
+Use him to awaken Malfurion from his slumber as soon as possible.
 
 Gather your forces and strike before the Horde can organize their efforts.";
       GoldMines = new List<unit>
