@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup
       Hint.Register(new Hint("Some heroes can't be revived, and some can only be revived if you control certain capitals when they die."));
       Hint.Register(new Hint("If you have low FPS, try turning off your health bars."));
       Hint.Register(new Hint("We have a welcoming Discord community at https://discord.gg//4eGZn"));
-      Hint.Register(new Hint("When a player leaves, their units are funded, then their gold and hero experience are spread among their remaining allies."));
+      Hint.Register(new Hint("When a player leaves, their units are refunded, then their gold and hero experience are spread among their remaining allies."));
       Hint.Register(new Hint("There are water passageways at the edge of the map you can use to instantly move to the other side of the map."));
       Hint.Register(new Hint("Every faction can build an item shop that contains useful purchasable items."));
       Hint.Register(new Hint("When you unlock a hero through a Quest, you usually still need to summon that hero from an Altar."));
