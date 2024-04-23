@@ -36,13 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      var arthas = _arthas.Unit;
-      
       _lordaeron.ModObjectLimit(UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON, -1);
-
-      if (arthas == null || !UnitAlive(arthas))
-        return;
-
       _arthas.PermanentlyKill();
     }
   }
