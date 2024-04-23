@@ -7,7 +7,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Brown - Mountain Giant)"
+      "Value": "(Mountain Giant)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Hardened"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Hardened"
     }
   ]
 }

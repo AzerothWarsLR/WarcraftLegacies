@@ -22,13 +22,13 @@ namespace MacroTools.Commands
     public override string Description => "Turns quest text on or off.";
 
     /// <inheritdoc />
-    public override string Execute(player cheater, params string[] parameters)
+    public override string Execute(player commandUser, params string[] parameters)
     {
       var questText = parameters[0];
       if (!bool.TryParse(questText, out var questTextBool))
         return "You must specify either true or false as the first parameter.";
       
-      PlayerData.ByHandle(cheater).UpdatePlayerSetting("ShowQuestText", questTextBool);
+      PlayerData.ByHandle(commandUser).UpdatePlayerSetting("ShowQuestText", questTextBool);
       return $"Setting show quest text option to {questTextBool}.";
     }
   }

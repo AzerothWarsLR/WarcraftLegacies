@@ -50,7 +50,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other Ice Trap in its area of effect. |nThe trap lasts forever.|n|n|cffffcc00Level 1|r - \u003CALS9,DataD1\u003E seconds stun duration. \u003CALS9,DataA1\u003E seconds activation delay.|n|cffffcc00Level 2|r - \u003CALS9,DataD2\u003E seconds stun duration. \u003CALS9,DataA2\u003E seconds activation delay.|n|cffffcc00Level 3|r - \u003CALS9,DataD3\u003E seconds stun duration. \u003CALS9,DataA3\u003E seconds activation delay.|n|cffffcc00Level 4|r - \u003CALS9,DataD4\u003E seconds stun duration. \u003CALS9,DataA4\u003E seconds activation delay"
+      "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other Ice Traps in its area of effect. |nThe trap lasts forever.|n|n|cffffcc00Level 1|r - \u003CALS9,DataD1\u003E seconds stun duration. \u003CALS9,DataA1\u003E seconds activation delay.|n|cffffcc00Level 2|r - \u003CALS9,DataD2\u003E seconds stun duration. \u003CALS9,DataA2\u003E seconds activation delay.|n|cffffcc00Level 3|r - \u003CALS9,DataD3\u003E seconds stun duration. \u003CALS9,DataA3\u003E seconds activation delay.|n|cffffcc00Level 4|r - \u003CALS9,DataD4\u003E seconds stun duration. \u003CALS9,DataA4\u003E seconds activation delay."
     },
     {
       "Id": 1952805473,

@@ -23,7 +23,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Primary structure.|n|cfff5962dTrains:|R Drone, Silithid Royalty|n|cfff5962dUpgrades to:|R Ruined Temple|n|cfff5962dAbilities:|R Ahn\u0027Qiraj Spirits"
+      "Value": "Primary structure.|n|cfff5962dTrains:|R Drone, Silithid Royalty|n|cfff5962dResearches:|R Progenesis|n|cfff5962dUpgrades to:|R Ruined Temple|n|cfff5962dAbilities:|R Ahn\u0027Qiraj Spirits"
     },
     {
       "Id": 1835101813,
@@ -43,7 +43,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\NerubianStrongholdV2.mdl"
+      "Value": "war3mapImported\\CthunTownHallAll.mdl"
     },
     {
       "Id": 1735156597,
@@ -66,7 +66,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtonsBTNNerubianStronghold.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunT1.blp"
     }
   ]
 }

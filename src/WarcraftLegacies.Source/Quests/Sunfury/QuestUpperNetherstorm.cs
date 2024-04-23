@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
     {
       AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.UpperNetherstorm },
         "in upper Netherstorm"));
-      AddObjective(new ObjectiveControlPoint(UNIT_N0CW_FARAHLON, false));
+      AddObjective(new ObjectiveControlPoint(UNIT_N0CW_FARAHLON, 0));
       AddObjective(new ObjectiveExpire(600, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);

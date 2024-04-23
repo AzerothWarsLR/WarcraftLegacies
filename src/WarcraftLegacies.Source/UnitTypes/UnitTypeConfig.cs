@@ -1,4 +1,4 @@
-using MacroTools;
+﻿using MacroTools;
 
 namespace WarcraftLegacies.Source.UnitTypes
 {
@@ -12,6 +12,7 @@ namespace WarcraftLegacies.Source.UnitTypes
       SubSetupTrader();
       SubSetupGatesA();
       SubSetupGatesB();
+      SubSetupGoblinMerchant();
     }
 
     private static void SubSetupA()
@@ -219,6 +220,14 @@ namespace WarcraftLegacies.Source.UnitTypes
       });
       
       UnitType.Register(new UnitType(UNIT_H04S_DIAGONAL_WOODEN_GATE_CLOSED)
+      {
+        NeverDelete = true
+      });
+    }
+
+    private static void SubSetupGoblinMerchant()
+    {
+      UnitType.Register(new UnitType(FourCC("ngol"))
       {
         NeverDelete = true
       });

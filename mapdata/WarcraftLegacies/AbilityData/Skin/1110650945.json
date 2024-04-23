@@ -33,7 +33,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Decreases nearby enemy units\u0027 movement speed and attack rate.|n|n|cffffcc00Level 1|r - 6% movement speed and 5% attack speed decrease.|n|cffffcc00Level 2|r - 12% movement speed and 10% attack speed decrease.|n|cffffcc00Level 3|r - 18% movement speed and 15% attack speed decrease.|n|cffffcc00Level 4|r - 24% movement speed and 20% attack speed decrease."
+      "Value": "Decreases nearby enemy units\u0027 movement speed and attack rate.|n|n|cffffcc00Level 1|r - Decreases enemy movement speed by \u003CA03B,DataA1,%\u003E% and attack rate by \u003CA03B,DataB1,%\u003E%.|n|cffffcc00Level 2|r - Decreases enemy movement speed by \u003CA03B,DataA2,%\u003E% and attack rate by \u003CA03B,DataB2,%\u003E%.|n|cffffcc00Level 3|r - Decreases enemy movement speed by \u003CA03B,DataA3,%\u003E% and attack rate by \u003CA03B,DataB3,%\u003E%.|n|cffffcc00Level 4|r - Decreases enemy movement speed by \u003CA03B,DataA4,%\u003E% and attack rate by \u003CA03B,DataB4,%\u003E%."
     },
     {
       "Id": 1952543841,
@@ -68,25 +68,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Decreases nearby enemy units\u0027 movement speed by 6% and attack rate by 5%."
+      "Value": "Decreases nearby enemy units\u0027 movement speed by \u003CA03B,DataA1,%\u003E% and attack rate by \u003CA03B,DataB1,%\u003E%."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Decreases nearby enemy units\u0027 movement speed by 12% and attack rate by 10%."
+      "Value": "Decreases nearby enemy units\u0027 movement speed by \u003CA03B,DataA2,%\u003E% and attack rate by \u003CA03B,DataB2,%\u003E%."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Decreases nearby enemy units\u0027 movement speed by 18% and attack rate by 15%."
+      "Value": "Decreases nearby enemy units\u0027 movement speed by \u003CA03B,DataA3,%\u003E% and attack rate by \u003CA03B,DataB3,%\u003E%."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Decreases nearby enemy units\u0027 movement speed by 24% and attack rate by 20%."
+      "Value": "Decreases nearby enemy units\u0027 movement speed by \u003CA03B,DataA4,%\u003E% and attack rate by \u003CA03B,DataB4,%\u003E%."
     }
   ]
 }

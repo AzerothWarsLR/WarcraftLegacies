@@ -23,22 +23,22 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
         RefreshProgress();
       }
     }
-    
+
     /// <summary>
     /// Initializes a new instance of <see cref="ObjectiveControlPoint"/>.
     /// </summary>
     /// <param name="controlPointUnitType">The unit type of the <see cref="ControlPoint"/> that needs to be captured.</param>
-    /// <param name="killNearbyCreeps">If true, all creeps near the point need to be killed as well.</param>
-    public ObjectiveControlPoint(int controlPointUnitType, bool killNearbyCreeps = true)
+    /// <param name="range">The area in which creeps need to be killed to complete the objective.</param>
+    public ObjectiveControlPoint(int controlPointUnitType, float range = 700)
     {
       _target = ControlPointManager.Instance.GetFromUnitType(controlPointUnitType);
       TargetWidget = _target.Unit;
       DisplaysPosition = true;
       Position = _target.Unit.GetPosition();
 
-      if (killNearbyCreeps)
+      if (range > 0)
       {
-        RegisterKillTriggers();
+        RegisterKillTriggers(range);
         CurrentKillCount = 0;
       }
       else
@@ -60,10 +60,10 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
         Progress = QuestProgress.Complete;
     }
     
-    private void RegisterKillTriggers()
+    private void RegisterKillTriggers(float range)
     {
       var unitsNearby = CreateGroup()
-        .EnumUnitsInRange(_target.Unit.GetPosition(), 700)
+        .EnumUnitsInRange(_target.Unit.GetPosition(), range)
         .EmptyToList()
         .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !x.IsType(UNIT_TYPE_ANCIENT) &&
                     !x.IsType(UNIT_TYPE_SAPPER));

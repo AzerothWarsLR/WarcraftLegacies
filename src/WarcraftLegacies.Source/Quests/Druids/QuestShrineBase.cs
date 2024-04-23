@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
       "Mount Hyjal has been invaded by the corruption already affecting Felwood. Clear them out to awaken the Ancients",
       @"ReplaceableTextures\CommandButtons\BTNAncientOfTheMoon.blp")
     {
-      AddObjective(new ObjectiveControlPoint(UNIT_N0BI_SHRINE_TO_MALORNE, false));
+      AddObjective(new ObjectiveControlPoint(UNIT_N0BI_SHRINE_TO_MALORNE, 0));
       AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.ShrineBaseUnlock }, "in Hyjal"));
       AddObjective(new ObjectiveExpire(480, Title));
       AddObjective(new ObjectiveSelfExists());

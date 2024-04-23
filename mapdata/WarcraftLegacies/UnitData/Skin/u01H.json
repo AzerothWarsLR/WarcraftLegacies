@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNSacrificialPit.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunCatacombs.blp"
     },
     {
       "Id": 1651270517,
@@ -43,7 +43,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\NerubianBarracksV2.mdl"
+      "Value": "war3mapImported\\CthunSpawningPit2.mdl"
     },
     {
       "Id": 1735156597,
@@ -72,7 +72,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Creature production building.|n|n|cfff5962dTrains:|R  Silithid Colossus, Silithid Wasp, Vile Corrupter|n|cfff5962dResearches:|R Improved Seed of Madness|n|cfff5962dAbilities:|R Ahn\u0027Qiraj Spirits"
+      "Value": "Creature production building.|n|n|cfff5962dTrains:|R  Silithid Colossus, Silithid Wasp, Vile Corrupter|n|cfff5962dResearches:|R Cleaving Attack, Elongated Snouts, Improved Seed of Madness|n|cfff5962dAbilities:|R Ahn\u0027Qiraj Spirits"
     },
     {
       "Id": 1633907573,

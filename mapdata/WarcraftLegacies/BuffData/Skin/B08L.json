@@ -8,12 +8,12 @@
     {
       "Id": 1953653094,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodLust1.BLP"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCannibalize.blp"
     },
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "Rampage"
+      "Value": "Carnage"
     },
     {
       "Id": 1700951398,

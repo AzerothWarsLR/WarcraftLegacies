@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNNerubianArcaneSanctum.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunPyramid.blp"
     },
     {
       "Id": 1651270517,
@@ -49,7 +49,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\NerubianArcaneSanctum.mdl"
+      "Value": "war3mapImported\\CthunBarracks.mdl"
     },
     {
       "Id": 1735156597,

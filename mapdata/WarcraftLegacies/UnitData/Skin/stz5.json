@@ -53,7 +53,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\NerubianArcaneTower.mdl"
+      "Value": "war3mapImported\\CthunBlacksmith.mdl"
     },
     {
       "Id": 1735156597,
@@ -92,7 +92,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNNerubianHatchery.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunLighthouse.blp"
     }
   ]
 }

@@ -1,16 +1,24 @@
-﻿namespace MacroTools.PassiveAbilitySystem
+﻿using System.Collections.Generic;
+
+namespace MacroTools.PassiveAbilitySystem
 {
   public abstract class TakeDamagePassiveAbility
   {
-    public int DamagedUnitTypeId { get; }
+    public IEnumerable<int> DamagedUnitTypeIds { get; }
     
     public int AbilityTypeId { get; }
   
     public abstract void OnTakesDamage();
 
+    protected TakeDamagePassiveAbility(IEnumerable<int> damagedUnitTypeIds, int abilityTypeId)
+    {
+      DamagedUnitTypeIds = damagedUnitTypeIds;
+      AbilityTypeId = abilityTypeId;
+    }
+    
     protected TakeDamagePassiveAbility(int damagedUnitTypeId, int abilityTypeId)
     {
-      DamagedUnitTypeId = damagedUnitTypeId;
+      DamagedUnitTypeIds = new []{ damagedUnitTypeId };
       AbilityTypeId = abilityTypeId;
     }
   }

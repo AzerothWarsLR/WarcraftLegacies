@@ -8,7 +8,7 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodLust1.BLP"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCannibalize.blp"
     },
     {
       "Id": 2020631137,
@@ -21,7 +21,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Fel Horde - Executioner)"
+      "Value": "(Executioner)"
     },
     {
       "Id": 2037082209,
@@ -31,19 +31,19 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Rampage"
+      "Value": "Carnage"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Rampage"
+      "Value": "Carnage"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Adds \u003CA0GQ,DataA1\u003E bonus damage to the unit and causes its attacks to heal it for \u003CA0GQ,DataB1,%\u003E% of damage dealt. |nLasts \u003CA0GQ,Dur1\u003E seconds."
+      "Value": "Grants this unit \u003CA0GQ,DataA1\u003E bonus damage and \u003CA0GQ,DataB1,%\u003E% lifesteal for \u003CA0GQ,Dur1\u003E seconds."
     }
   ]
 }
