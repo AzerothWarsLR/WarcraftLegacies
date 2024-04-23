@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Druids
       AddObjective(new ObjectiveControlLevel(UNIT_N08U_SOUTHERN_ASHENVALE, 10));
       AddObjective(new ObjectiveControlLevel(UNIT_N05K_WARSONG_LUMBER_CAMP, 10));
       AddObjective(new ObjectiveControlLevel(UNIT_N09R_ELDARATH, 10));
-      AddObjective(new ObjectiveControlPoint(UNIT_N05K_WARSONG_LUMBER_CAMP));
+      AddObjective(new ObjectiveControlPoint(UNIT_N05K_WARSONG_LUMBER_CAMP, 0));
       ResearchId = UPGRADE_R05A_QUEST_COMPLETED_ENEMIES_AT_THE_GATE;
     }
     
