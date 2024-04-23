@@ -10,9 +10,11 @@ namespace WarcraftLegacies.Source.Factions
 {
   public sealed class Ahnqiraj : Faction
   {
+    private readonly AllLegendSetup _allLegendSetup;
     /// <inheritdoc />
-    public Ahnqiraj() : base("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cffaaa050", @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
+    public Ahnqiraj(AllLegendSetup allLegendSetup) : base("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cffaaa050", @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
     {
+      _allLegendSetup = allLegendSetup;
       ControlPointDefenderUnitTypeId = UNIT_N0DW_CONTROL_POINT_DEFENDER_CTHUN_TOWER;
       TraditionalTeam = TeamSetup.OldGods;
     }
@@ -86,6 +88,9 @@ namespace WarcraftLegacies.Source.Factions
       AddQuest(new QuestSlitheringForward(Regions.QirajOutpost1, Regions.QirajOutpost2, Regions.QirajOutpost3));
       AddQuest(new QuestTanarisOutpost(Regions.QirajOutpost5));
       AddQuest(new QuestEmperorConstruct());
+      AddQuest(new QuestMockeryOfLife());
+      AddQuest(new QuestWarOfTheShiftingSand(_allLegendSetup.Druids.Nordrassil));
+      AddQuest(new QuestWarOfTheShiftingSand(_allLegendSetup.Warsong.Orgrimmar));
 
       ModObjectLimit(UPGRADE_R003_PROGENESIS_C_THUN, UNLIMITED);
       ModObjectLimit(UPGRADE_ZB12_CLEAVING_ATTACK_C_THUN, UNLIMITED);
