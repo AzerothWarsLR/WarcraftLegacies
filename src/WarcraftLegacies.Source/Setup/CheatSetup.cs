@@ -16,7 +16,8 @@ namespace WarcraftLegacies.Source.Setup
       commandManager.Register(new CheatQuestProgress("fail", QuestProgress.Failed));
       commandManager.Register(new CheatQuestProgress("uncomplete", QuestProgress.Incomplete));
       commandManager.Register(new CheatQuestProgress("undiscover", QuestProgress.Undiscovered));
-      commandManager.Register(new CheatControl());
+      commandManager.Register(new CheatControl("control", true));
+      commandManager.Register(new CheatControl("uncontrol", false));
       commandManager.Register(new CheatDestroy());
       commandManager.Register(new CheatFaction());
       commandManager.Register(new CheatFood());
@@ -37,7 +38,6 @@ namespace WarcraftLegacies.Source.Setup
       commandManager.Register(new CheatTeam());   
       commandManager.Register(new CheatTele());
       commandManager.Register(new CheatTime());
-      commandManager.Register(new CheatUncontrol());
       commandManager.Register(new CheatVision());
       commandManager.Register(new CheatShore());
       commandManager.Register(new CheatPosition());
