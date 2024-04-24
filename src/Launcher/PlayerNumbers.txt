@@ -13,7 +13,7 @@
 //  12	Empty
 //  13	Empty
 //  14	Black Empire
-//  15	Illidan
+//  15	Illidan/Sunfury
 //  16	Cthun
 //  17  Skywall
 //  18	Sentinels
