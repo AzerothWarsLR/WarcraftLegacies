@@ -9,31 +9,26 @@ namespace MacroTools.Spells
   /// </summary>
   public sealed class InstantKill : Spell
   {
-    /// <summary>
-    /// Defines which 
-    /// </summary>
     public enum KillTarget
     {
       /// <summary>
-      /// The caster
+      /// The caster.
       /// </summary>
       Self,
       /// <summary>
-      /// The targeted unit
+      /// The targeted unit.
       /// </summary>
-      Target,
+      Target
     }
 
     /// <summary>
-    /// Defines who is affected by the spell
+    /// Defines who is affected by the spell.
     /// </summary>
-    public KillTarget Target { get; set; }
+    public required KillTarget Target { get; init; }
 
     /// <summary>
     /// Initializes a new instance of <see cref="InstantKill"/>.
     /// </summary>
-    /// <param name="id"></param>
-    /// 
     public InstantKill(int id) : base(id)
     {
 
@@ -51,7 +46,6 @@ namespace MacroTools.Spells
           KillUnit(target);
           break;
       }
-     
     }
   }
 }

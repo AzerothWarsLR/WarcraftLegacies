@@ -22,7 +22,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       set
       {
         _controlPointCount = value;
-        Description = $"You control {ControlPointCount} / {_progressByControlPoint.Count} CPs {_rectName}";
+        Description = $"You control all CPs {_rectName} ({ControlPointCount}/{_progressByControlPoint.Count})";
         CheckObjectiveProgress();
       }
     }
@@ -41,6 +41,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
     /// <inheritdoc/>
     internal override void OnAdd(Faction whichFaction)
     {
+      ControlPointCount = 0;
       foreach (var controlPoint in _progressByControlPoint.Keys.ToArray())
       {
         controlPoint.OwnerAllianceChanged += OnTargetOwnerAllianceChanged;

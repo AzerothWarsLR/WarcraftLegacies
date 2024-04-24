@@ -1,5 +1,4 @@
-﻿using System;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using WarcraftLegacies.Source.PassiveAbilities.Vengeance;
 using WCSharp.Buffs;
 
@@ -69,7 +68,10 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
       if (UnitAlive(_egg)) 
         Revive();
       else
+      {
         Target.Kill();
+        Target.SetPosition(_egg!.GetPosition());
+      }
     }
 
     private void Revive()

@@ -30,6 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
     public override string RewardFlavour => "Our trade empire has grown large enough to earn the attention of the Trade Princes of Kezan. Their investments are already flowing in and we can deploy traders all over the world.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "You can now train Traders";
+    protected override string RewardDescription =>
+      $"Learn to train {GetObjectName(UNIT_O04S_TRADER_GOBLIN)}s and {GetObjectName(UNIT_NZEP_TRADING_ZEPPELIN_WARSONG)}s from the {GetObjectName(UNIT_O04M_KEZAN_TRADING_CENTER_GOBLIN_SPECIAL)}";
   }
 }

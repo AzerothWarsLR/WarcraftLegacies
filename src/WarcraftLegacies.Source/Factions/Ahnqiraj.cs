@@ -1,8 +1,12 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools;
+using MacroTools.FactionSystem;
 using WarcraftLegacies.Source.Quests.Cthun;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
+using MacroTools.Spells;
+using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon;
+using WarcraftLegacies.Source.PassiveAbilities.Incubate;
 using WarcraftLegacies.Source.Researches.Ahnqiraj;
 using WarcraftLegacies.Source.Setup;
 
@@ -97,6 +101,7 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(UPGRADE_ZB12_CLEAVING_ATTACK_C_THUN, UNLIMITED);
       ModObjectLimit(UPGRADE_ZB14_ELONGATED_SNOUTS_C_THUN_SILITHID_WASP, UNLIMITED);
       ModObjectLimit(UPGRADE_ZBEH_DEFENSIVE_COCOOON_AHN_QIRAJ, UNLIMITED);
+      ModObjectLimit(UPGRADE_ZBRI_RAPID_INCUBATION_AHN_QIRAJ, UNLIMITED);
     }
     
     private void RegisterResearches()
@@ -120,6 +125,21 @@ namespace WarcraftLegacies.Source.Factions
         EggId = UNIT_ZBBG_COCOON_DEFENSIVE_COCOON,
         ReviveEffect = @"Abilities\Spells\Undead\RaiseSkeletonWarrior\RaiseSkeleton.mdl",
         RequiredResearch = UPGRADE_ZBEH_DEFENSIVE_COCOOON_AHN_QIRAJ
+      });
+      
+      PassiveAbilityManager.Register(new Incubate(UNIT_H01N_VILE_CORRUPTER_C_THUN, ABILITY_ZBRD_INCUBATE_VILE_CORRUPTOR)
+      {
+        HatchedUnitTypeId = UNIT_N06I_SILITHID_WARRIOR_C_THUN_SILITHID_WARRIOR,
+        MaturationDuration = new LeveledAbilityField<float>
+        {
+          Base = 540f,
+          PerLevel = -240f
+        }
+      });
+
+      SpellSystem.Register(new InstantKill(ABILITY_ZBBS_HATCH_INCUBATE)
+      {
+        Target = InstantKill.KillTarget.Self
       });
     }
   }
