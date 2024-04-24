@@ -5,9 +5,9 @@ using WCSharp.Buffs;
 namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
 {
   /// <summary>
-  /// Causes the egg to mature after some time, allowing it to hatch.
+  /// Causes summoned units mature after some time, allowing it to hatch.
   /// </summary>
-  public sealed class ImmatureEggAbility : PassiveAbility, IEffectOnSummonedUnit
+  public sealed class Incubate : PassiveAbility, IEffectOnSummonedUnit
   {
     private readonly int _abilityTypeId;
 
@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
     public required int HatchedUnitTypeId { get; init; }
     
     /// <inheritdoc />
-    public ImmatureEggAbility(int unitTypeId, int abilityTypeId) : base(unitTypeId)
+    public Incubate(int unitTypeId, int abilityTypeId) : base(unitTypeId)
     {
       _abilityTypeId = abilityTypeId;
     }
@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
       var summonedUnit = GetSummonedUnit();
       UnitRemoveType(summonedUnit, UNIT_TYPE_SUMMONED);
       var duration = MaturationDuration.Base +
-                     MaturationDuration.PerLevel * GetUnitAbilityLevel(summonedUnit, _abilityTypeId);
+                     MaturationDuration.PerLevel * GetUnitAbilityLevel(GetSummoningUnit(), _abilityTypeId);
       var immatureEggBuff = new ImmatureEggBuff(summonedUnit)
       {
         Duration = duration,

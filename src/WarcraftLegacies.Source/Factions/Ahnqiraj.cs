@@ -108,13 +108,13 @@ namespace WarcraftLegacies.Source.Factions
         RequiredResearch = UPGRADE_ZBEH_DEFENSIVE_COCOOON_AHN_QIRAJ
       });
       
-      PassiveAbilityManager.Register(new ImmatureEggAbility(UNIT_H01N_VILE_CORRUPTER_C_THUN, ABILITY_ZBRD_INCUBATE_VILE_CORRUPTOR)
+      PassiveAbilityManager.Register(new Incubate(UNIT_H01N_VILE_CORRUPTER_C_THUN, ABILITY_ZBRD_INCUBATE_VILE_CORRUPTOR)
       {
         HatchedUnitTypeId = UNIT_N06I_SILITHID_WARRIOR_C_THUN_SILITHID_WARRIOR,
         MaturationDuration = new LeveledAbilityField<float>
         {
-          Base = 10f,
-          PerLevel = 0
+          Base = 540f,
+          PerLevel = -240f
         }
       });
 

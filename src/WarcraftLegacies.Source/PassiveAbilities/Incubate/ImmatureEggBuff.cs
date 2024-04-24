@@ -22,8 +22,9 @@ namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
     /// <inheritdoc />
     public override void OnApply()
     {
-      Target.IssueOrder("setrally", Target.GetPosition());
-      Target.SetTimedLife(Duration + 1);
+      Target
+        .IssueOrder("setrally", Target.GetPosition())
+        .SetTimedLife(Duration + 1);
     }
 
     /// <inheritdoc />
