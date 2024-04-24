@@ -26,12 +26,6 @@
     },
     {
       "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Seed of Madness"
-    },
-    {
-      "Level": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "Drops a small tentacle with each attack. |nLasts 10 seconds."
@@ -47,6 +41,12 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Drops a medium tentacle with each attack. |nLasts 10 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Seed of Madness"
     }
   ]
 }
