@@ -39,7 +39,8 @@ namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
       Target
         .SetName("Mature Egg")
         .SetColor(255, 255, 255, 255)
-        .AddAbility(ABILITY_ZBBS_HATCH_INCUBATE);
+        .AddAbility(ABILITY_ZBBS_HATCH_INCUBATE)
+        .SetTimedLife(0);
 
       AddSpecialEffect(@"Abilities\Spells\Items\AIem\AIemTarget.mdl", GetUnitX(Target), GetUnitY(Target))
         .SetColor(0, 255, 0)
