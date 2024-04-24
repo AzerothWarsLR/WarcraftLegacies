@@ -1,0 +1,29 @@
+{
+  "OldId": 1767993922,
+  "NewId": 1095582298,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Maturing"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This egg is slowly maturing."
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEgg.blp"
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": "(Incubation)"
+    }
+  ]
+}
