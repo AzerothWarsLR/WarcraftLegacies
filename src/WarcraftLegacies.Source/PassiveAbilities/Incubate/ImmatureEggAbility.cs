@@ -1,4 +1,5 @@
-﻿using MacroTools.PassiveAbilitySystem;
+﻿using MacroTools;
+using MacroTools.PassiveAbilitySystem;
 using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
@@ -6,24 +7,36 @@ namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
   /// <summary>
   /// Causes the egg to mature after some time, allowing it to hatch.
   /// </summary>
-  public sealed class ImmatureEggAbility : PassiveAbility
+  public sealed class ImmatureEggAbility : PassiveAbility, IEffectOnSummonedUnit
   {
+    private readonly int _abilityTypeId;
+
+    /// <summary>
+    /// How long the egg takes to mature.
+    /// </summary>
+    public required LeveledAbilityField<float> MaturationDuration { get; init; }
+    
     /// <summary>The unit type ID of the unit that gets hatched.</summary>
     public required int HatchedUnitTypeId { get; init; }
     
     /// <inheritdoc />
-    public ImmatureEggAbility(int unitTypeId) : base(unitTypeId)
+    public ImmatureEggAbility(int unitTypeId, int abilityTypeId) : base(unitTypeId)
     {
+      _abilityTypeId = abilityTypeId;
     }
-    
+
     /// <inheritdoc />
-    public override void OnCreated(unit createdUnit)
+    public void OnSummonedUnit()
     {
-      UnitRemoveType(createdUnit, UNIT_TYPE_SUMMONED);
-      var immatureEggBuff = new ImmatureEggBuff(createdUnit)
+      var summonedUnit = GetSummonedUnit();
+      UnitRemoveType(summonedUnit, UNIT_TYPE_SUMMONED);
+      var duration = MaturationDuration.Base +
+                     MaturationDuration.PerLevel * GetUnitAbilityLevel(summonedUnit, _abilityTypeId);
+      var immatureEggBuff = new ImmatureEggBuff(summonedUnit)
       {
-        Duration = 15,
-        HatchedUnitTypeId = HatchedUnitTypeId
+        Duration = duration,
+        HatchedUnitTypeId = HatchedUnitTypeId,
+        MatureEggUnitTypeId = UNIT_ZB4E_MATURE_EGG_INCUBATE
       };
       BuffSystem.Add(immatureEggBuff);
     }

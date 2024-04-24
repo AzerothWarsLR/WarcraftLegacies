@@ -1,4 +1,5 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools;
+using MacroTools.FactionSystem;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
 using MacroTools.Spells;
@@ -107,9 +108,14 @@ namespace WarcraftLegacies.Source.Factions
         RequiredResearch = UPGRADE_ZBEH_DEFENSIVE_COCOOON_AHN_QIRAJ
       });
       
-      PassiveAbilityManager.Register(new ImmatureEggAbility(UNIT_ZBIE_IMMATURE_EGG_INCUBATE)
+      PassiveAbilityManager.Register(new ImmatureEggAbility(UNIT_ZBIE_IMMATURE_EGG_INCUBATE, ABILITY_ZBRD_INCUBATE_VILE_CORRUPTOR)
       {
-        HatchedUnitTypeId = UNIT_N06I_SILITHID_WARRIOR_C_THUN_SILITHID_WARRIOR
+        HatchedUnitTypeId = UNIT_N06I_SILITHID_WARRIOR_C_THUN_SILITHID_WARRIOR,
+        MaturationDuration = new LeveledAbilityField<float>
+        {
+          Base = 10f,
+          PerLevel = 0
+        }
       });
 
       SpellSystem.Register(new InstantKill(ABILITY_ZBBS_HATCH_INCUBATE)
