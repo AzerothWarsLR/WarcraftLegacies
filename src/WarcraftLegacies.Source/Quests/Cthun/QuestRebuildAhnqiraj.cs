@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
     public QuestRebuildAhnqiraj(Rectangle questRect) : base(
       "Rebuilding of Ahn'qira",
       "The once great kingdom of Ahn'qiraj was lost to the sands of time. The hive needs to awaken and be rebuilt.",
-      @"ReplaceableTextures\CommandButtons\BTNNerubianHatchery.blp")
+      @"ReplaceableTextures\CommandButtons\BTNCthunHatchery.blp")
     {
       
       AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in outer Ahn'Qiraj", 7));
