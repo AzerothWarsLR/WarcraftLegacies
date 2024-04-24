@@ -8,11 +8,9 @@ namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
   /// </summary>
   public sealed class MatureEggBuff : PassiveBuff
   {
-    private bool _isMature;
-
     /// <summary>The unit type ID of the unit that gets hatched.</summary>
     public required int HatchedUnitTypeId { get; init; }
-    
+
     /// <inheritdoc />
     public MatureEggBuff(unit caster) : base(caster, caster)
     {
@@ -25,25 +23,19 @@ namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
       Target
         .SetName("Mature Egg")
         .SetColor(255, 255, 255, 255)
-        .AddAbility(ABILITY_ZBBS_HATCH_INCUBATE)
-        .SetTimedLife(0);
+        .AddAbility(ABILITY_ZBBS_HATCH_INCUBATE);
 
       AddSpecialEffect(@"Abilities\Spells\Items\AIem\AIemTarget.mdl", GetUnitX(Target), GetUnitY(Target))
         .SetColor(0, 255, 0)
         .SetScale(0.5f)
         .SetLifespan();
-
-      _isMature = true;
     }
-    
+
     /// <inheritdoc />
     public override void OnDeath(bool killingBlow)
     {
-      if (_isMature)
-      {
-        CreateUnit(Target.OwningPlayer(), HatchedUnitTypeId, GetUnitX(Target), GetUnitY(Target), 270)
-          .IssueOrder("attack", Target.GetRallyPoint());
-      }
+      CreateUnit(Target.OwningPlayer(), HatchedUnitTypeId, GetUnitX(Target), GetUnitY(Target), 270)
+        .IssueOrder("attack", Target.GetRallyPoint());
     }
   }
 }
