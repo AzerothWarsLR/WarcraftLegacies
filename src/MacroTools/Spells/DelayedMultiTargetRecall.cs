@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using MacroTools.Buffs;
-using MacroTools.DummyCasters;
 using MacroTools.Extensions;
 using MacroTools.Instances;
 using MacroTools.SpellSystem;
@@ -38,11 +37,8 @@ namespace MacroTools.Spells
 
     public SpellTargetType TargetType { get; init; } = SpellTargetType.None;
     
-    private DummyCasterManager.CastFilter CastFilter { get; }
-    
-    public DelayedMultiTargetRecall(int id, DummyCasterManager.CastFilter castFilter) : base(id)
+    public DelayedMultiTargetRecall(int id) : base(id)
     {
-      CastFilter = castFilter;
     }
     
     public override void OnCast(unit caster, unit target, Point targetPoint)
@@ -58,9 +54,12 @@ namespace MacroTools.Spells
       var targets = CreateGroup()
         .EnumUnitsInRange(center, Radius)
         .EmptyToList()
-        .Where(unit => CastFilter(caster, unit) && !unit.IsResistant() && unit != caster)
+        .Where(x => IsValidTarget(caster, x))
         .Take(AmountToTarget)
         .ToList();
+
+      if (!targets.Any())
+        return;
       
       var delayedRecallBuff = new DelayedRecallBuff(caster, caster, targets)
       {
@@ -69,6 +68,24 @@ namespace MacroTools.Spells
       };
       
       BuffSystem.Add(delayedRecallBuff);
+    }
+
+    private static bool IsValidTarget(unit caster, unit target)
+    {
+      return GetOwningPlayer(caster) == GetOwningPlayer(target) &&
+             UnitAlive(target) &&
+             BlzIsUnitInvulnerable(target) == false && 
+             !target.IsResistant() &&
+             !IsUnitType(target, UNIT_TYPE_STRUCTURE) && 
+             !IsUnitType(target, UNIT_TYPE_ANCIENT) &&
+             caster != target &&
+             !IsUnitBoat(target);
+    }
+
+    private static bool IsUnitBoat(unit whichUnit)
+    {
+      var movementType = BlzGetUnitIntegerField(whichUnit, UNIT_IF_MOVE_TYPE);
+      return movementType == 16;
     }
   }
 }

@@ -11,7 +11,8 @@ namespace TestMap.Source.Setup
       commandManager.Register(new CheatLevel());
       commandManager.Register(new CheatResearchLevel());
       commandManager.Register(new CheatBuild());
-      commandManager.Register(new CheatControl());
+      commandManager.Register(new CheatControl("control", true));
+      commandManager.Register(new CheatControl("uncontrol", false));
       commandManager.Register(new CheatFaction());
       commandManager.Register(new CheatFood());
       commandManager.Register(new CheatGold());
@@ -29,7 +30,6 @@ namespace TestMap.Source.Setup
       commandManager.Register(new CheatSpawn());
       commandManager.Register(new CheatTele());
       commandManager.Register(new CheatTime());
-      commandManager.Register(new CheatUncontrol());
       commandManager.Register(new CheatVision());
       commandManager.Register(new CheatTeam());
       commandManager.Register(new CheatAddSpell());

@@ -38,10 +38,11 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
     }
 
     /// <inheritdoc/>
-    public override string RewardFlavour => "Khadgar has closed the Dark Portal definately";
+    public override string RewardFlavour =>
+      "Khadgar has sealed the Dark Portal forever, finally correcting the mistake made by his former master decades ago.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Close the Dark Portal from both sides";
+    protected override string RewardDescription => "The Dark Portal closes permanently";
 
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
