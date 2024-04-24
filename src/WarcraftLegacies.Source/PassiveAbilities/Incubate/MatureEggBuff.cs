@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using System;
+using MacroTools.Extensions;
 using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
@@ -34,8 +35,12 @@ namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
     /// <inheritdoc />
     public override void OnDeath(bool killingBlow)
     {
+      var rallyPoint = Target.GetRallyPoint();
+      if (rallyPoint.X == 0 && rallyPoint.Y == 0)
+        rallyPoint = Target.GetPosition();
+      
       CreateUnit(Target.OwningPlayer(), HatchedUnitTypeId, GetUnitX(Target), GetUnitY(Target), 270)
-        .IssueOrder("attack", Target.GetRallyPoint());
+        .IssueOrder("attack", rallyPoint);
     }
   }
 }
