@@ -22,9 +22,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
     /// <inheritdoc />
     public override void OnApply()
     {
-      Target
-        .IssueOrder("setrally", Target.GetPosition())
-        .SetTimedLife(Duration + 1);
+      Target.SetTimedLife(Duration + 1);
     }
 
     /// <inheritdoc />
@@ -32,14 +30,13 @@ namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
     {
       var formerLifePercent = Target.GetLifePercent();
       var formerPosition = Target.GetPosition();
-      var formerRallyPoint = Target.GetRallyPoint();
       var formerOwner = Target.OwningPlayer();
       
       Target.Kill().Remove();
       
       var matureEgg = CreateUnit(formerOwner, MatureEggUnitTypeId, formerPosition.X, formerPosition.Y, 270)
         .SetLifePercent(formerLifePercent)
-        .IssueOrder("setrally", formerRallyPoint);
+        .IssueOrder("setrally", formerPosition);
       
       var matureEggBuff = new MatureEggBuff(matureEgg)
       {
