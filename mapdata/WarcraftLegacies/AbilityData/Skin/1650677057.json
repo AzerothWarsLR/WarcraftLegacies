@@ -22,7 +22,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "The hero progenerates Carrion Beetle from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|n|cffffcc00Level 1|r - Spawns a level 1 Carrion Beetle. Max 6 Beetles. |n|cffffcc00Level 2|r - Spawns a level 2 Carrion Beetle. Max 6 Beetles. |n|cffffcc00Level 3|r - Spawns a level 3 Dire Carrion Beetle. Max 6 Beetles. |n|cffffcc00Level 4|r - Spawns a level 3 Dire Carrion Beetle. Max 12 Beetles."
+      "Value": "The hero progenerates Carrion Beetles from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|n|cffffcc00Level 1|r - Spawns \u003CAUcb,DataA1\u003E minor Carrion Beetles. Max 6 Beetles. |n|cffffcc00Level 2|r - Spawns \u003CAUcb,DataA2\u003E Carrion Beetles. Max 6 Beetles. |n|cffffcc00Level 3|r - Spawns \u003CAUcb,DataA3\u003E Dire Carrion Beetle. Max 6 Beetles. |n|cffffcc00Level 4|r - Spawns \u003CAUcb,DataA4\u003E Dire Carrion Beetle. Max 12 Beetles."
     },
     {
       "Level": 4,
@@ -34,25 +34,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero progenerates Carrion Beetle from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|n| Spawns a level 1 Carrion Beetle. Max 6 Beetles. |n|n| Got Spiked Carapace and Acid Attack -5"
+      "Value": "The hero progenerates Carrion Beetles from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|nSpawns \u003CAUcb,DataA1\u003E minor Carrion Beetles. Max 6 Beetles. |n|nBeetles have Spiked Carapace and Acid Attack -4."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero progenerates Carrion Beetle from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|n| Spawns a level 2 Carrion Beetle. Max 6 Beetles. |n|n| Got Spiked Carapace, Acid Attack -7 and Burrow."
+      "Value": "The hero progenerates Carrion Beetles from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|nSpawns \u003CAUcb,DataA2\u003E Carrion Beetle. Max 6 Beetles. |n|nBeetles have Spiked Carapace, Acid Attack -6 and Burrow."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero progenerates Carrion Beetle from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|n| Spawns a level 3 Dire Carrion Beetle. Max 6 Beetles. |n|n| Got Spiked Carapace, Acid Attack -10, Burrow and Spawn Beetles."
+      "Value": "The hero progenerates Carrion Beetles from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|nSpawns \u003CAUcb,DataA3\u003E Dire Carrion Beetles. Max 6 Beetles. |n|nBeetles have Spiked Carapace, Acid Attack -8, Burrow and Spawn Beetles."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero progenerates Carrion Beetle from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|nSpawns a level 3 Dire Carrion Beetle. Max 12 Beetles. |n|nGot Spiked Carapace, Acid Attack -10, Burrow and Spawn Beetles."
+      "Value": "The hero progenerates Carrion Beetles from a target corpse to attack the hero\u0027s enemies. Beetles are permanent. |n|nSpawns \u003CAUcb,DataA4\u003E Dire Carrion Beetle. Max 12 Beetles. |n|nBeetles have Spiked Carapace, Acid Attack -8, Burrow and Spawn Beetles."
     }
   ]
 }
