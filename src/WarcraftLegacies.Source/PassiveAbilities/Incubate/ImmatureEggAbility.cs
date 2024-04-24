@@ -19,6 +19,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
     /// <inheritdoc />
     public override void OnCreated(unit createdUnit)
     {
+      UnitRemoveType(createdUnit, UNIT_TYPE_SUMMONED);
       var immatureEggBuff = new ImmatureEggBuff(createdUnit)
       {
         Duration = 15,
