@@ -1,6 +1,6 @@
 {
   "OldId": 1702062162,
-  "NewId": 858796114,
+  "NewId": 1145193554,
   "Unk": [
     0
   ],
@@ -9,11 +9,11 @@
       "Level": 1,
       "Id": 829579623,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNEvolveExplode.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCryptFiendBurrow.blp"
     },
     {
       "Id": 2020631143,
-      "Value": 1
+      "Value": 0
     },
     {
       "Level": 1,
@@ -25,25 +25,25 @@
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "S"
+      "Value": "A"
     },
     {
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "Progenesis"
+      "Value": "Deep Burrow"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "Research Progenesis"
+      "Value": "Research Deep Burrow"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Transforms all Drones you currently control into Silithid Warriors."
+      "Value": "Enable your drones to cast Deep Burrow and enable you to build Tunnels"
     },
     {
       "Id": 2037408359,

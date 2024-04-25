@@ -1,6 +1,6 @@
 {
   "OldId": 1868783989,
-  "NewId": 959524981,
+  "NewId": 1145193333,
   "Unk": [
     0
   ],
@@ -17,7 +17,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\NerubianWorkerV2gold.mdl"
+      "Value": "Doodads\\Barrens\\Rocks\\Crator\\Crator1.mdl"
     },
     {
       "Id": 1735156597,
@@ -31,12 +31,12 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.5
+      "Value": 0.17
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Drone"
+      "Value": "Burrowed Drone"
     },
     {
       "Id": 1885959285,
@@ -46,7 +46,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Worshipper and structure summoner of C\u0027thun.|n|cfff5962dAbilities:|R Restore, Gather|n|cfff5962dCan Learn:|R Deep Burrow|n|n|cffffcc00Attacks land units."
+      "Value": "Worshipper and structure summoner of C\u0027thun.|n|cfff5962dAbilities:|R Restore, Gather, Deep Burrow|n|n|cffffcc00Attacks land units."
     },
     {
       "Id": 1868786037,

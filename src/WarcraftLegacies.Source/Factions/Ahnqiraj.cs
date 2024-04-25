@@ -50,6 +50,7 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(UNIT_U01I_CHAMBER_OF_WONDERS_C_THUN_SHOP, UNLIMITED);
       ModObjectLimit(UNIT_U01F_ALTAR_OF_THE_OLD_ONES_C_THUN_ALTAR, UNLIMITED);
       ModObjectLimit(UNIT_STZ5_LIGHTHOUSE_C_THUN_EMPTY, UNLIMITED);
+      ModObjectLimit(UNIT_TP73_C_THUN_TUNNEL_CTHUN, UNLIMITED);
 
       ModObjectLimit(UNIT_U019_DRONE_C_THUN_WORKER, UNLIMITED);
       ModObjectLimit(UNIT_O000_SILITHID_ROYALTY_C_THUN_ELITES, 6);
@@ -93,6 +94,7 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(UPGRADE_ZBRI_RAPID_INCUBATION_AHN_QIRAJ, UNLIMITED);
       ModObjectLimit(UPGRADE_ZBHS_SHAPED_OBSIDIAN_C_THUN, UNLIMITED);
       ModObjectLimit(UPGRADE_ZBML_SPELL_CONDUCTION_C_THUN, UNLIMITED);
+      ModObjectLimit(UPGRADE_RDBD_DEEP_BURROW_C_THUN, UNLIMITED);
     }
 
     private void RegisterQuests()

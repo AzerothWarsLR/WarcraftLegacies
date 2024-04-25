@@ -12,7 +12,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": 3
     },
     {
       "Id": 2037408373,
@@ -21,7 +21,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": " (Twilight Farm)"
+      "Value": "(cthun)"
     },
     {
       "Id": 1818520949,
@@ -31,7 +31,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "W"
+      "Value": "R"
     },
     {
       "Id": 1633907573,
@@ -41,7 +41,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Burrow"
+      "Value": "Build Tunnel"
     },
     {
       "Id": 1935832437,
@@ -51,12 +51,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Provides 10 food, which increases the maximum number of units that can be trained. |n|n|cfff5962dAbilities:|R Battle Stations|n|cfff5962dCan Learn:|R Spiked Barricades|n|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Enable some ability for cthun. |n|n|cfff5962dAbilities:|R tunnels"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "C\u0027thun Tunnel"
+      "Value": "Tunnel"
     }
   ]
 }
