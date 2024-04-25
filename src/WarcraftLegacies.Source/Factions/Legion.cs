@@ -158,7 +158,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
     private void RegisterResearches()
     {
       ResearchManager.Register(new PowerResearch(UPGRADE_R096_REMATERIALIZATION_LEGION, 150,
-        new Rematerialization(0.15f, new Point(20454.9f, -28873.6f), "Argus", Regions.MonolithNoBuild)
+        new Rematerialization(0.2f, new Point(20454.9f, -28873.6f), "Argus", Regions.MonolithNoBuild)
         {
           Name = "Rematerialization",
           EligibilityCondition = dyingUnit => dyingUnit.OwningPlayer().GetObjectLimit(dyingUnit.GetTypeId()) != 0
