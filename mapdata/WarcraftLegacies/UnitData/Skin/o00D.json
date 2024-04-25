@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunPyramid.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunShop.blp"
     },
     {
       "Id": 1651270517,
@@ -49,7 +49,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\CthunBarracks.mdl"
+      "Value": "CthunShop.mdl"
     },
     {
       "Id": 1735156597,
@@ -84,16 +84,6 @@
       "Id": 1684960117,
       "Type": 3,
       "Value": "TempleOfTheDamned"
-    },
-    {
-      "Id": 1668510581,
-      "Type": 1,
-      "Value": 4.5
-    },
-    {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 0.7
     }
   ]
 }

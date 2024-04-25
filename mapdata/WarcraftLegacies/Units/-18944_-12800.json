@@ -1,7 +1,7 @@
 [
   {
     "Flags": 2,
-    "OwnerId": 16,
+    "OwnerId": 27,
     "HP": -1,
     "MP": -1,
     "TargetAcquisition": -1,
@@ -10,10 +10,10 @@
     "AbilityData": [],
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "TypeId": 1395798101,
+    "TypeId": 825700462,
     "Position": {
-      "X": -22580.916,
-      "Y": -19805.795
+      "X": -19200,
+      "Y": -13184
     },
     "Rotation": 4.71238899230957,
     "Scale": {
@@ -21,9 +21,9 @@
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1395798101,
+    "SkinId": 825700462,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 262
+    "CreationNumber": 1498
   }
 ]

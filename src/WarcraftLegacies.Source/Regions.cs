@@ -218,9 +218,10 @@ public static class Regions
 	public static Rectangle Plague_6 { get; set; } = new Rectangle(14880f, 8864f, 17952f, 9792f);
 	public static Rectangle Plague_7 { get; set; } = new Rectangle(9984f, 10144f, 12992f, 11200f);
 	public static Rectangle QirajInsideUnlock { get; set; } = new Rectangle(-24512f, -18464f, -20672f, -15520f);
-	public static Rectangle QirajOutpost1 { get; set; } = new Rectangle(-16064f, -15904f, -14720f, -14432f);
+	public static Rectangle QirajOutpost1 { get; set; } = new Rectangle(-16896f, -15776f, -14624f, -14304f);
 	public static Rectangle QirajOutpost2 { get; set; } = new Rectangle(-18080f, -12512f, -16832f, -11744f);
-	public static Rectangle QirajOutpost3 { get; set; } = new Rectangle(-19744f, -14272f, -18400f, -12800f);
+	public static Rectangle QirajOutpost3 { get; set; } = new Rectangle(-19520f, -13984f, -18656f, -12992f);
+	public static Rectangle QirajOutpost5 { get; set; } = new Rectangle(-12128f, -15200f, -11040f, -14272f);
 	public static Rectangle QirajOutsideUnlock { get; set; } = new Rectangle(-19328f, -19072f, -15808f, -14976f);
 	public static Rectangle Quel_Ships_1 { get; set; } = new Rectangle(16384f, 16288f, 20096f, 17568f);
 	public static Rectangle Quel_Ships_2 { get; set; } = new Rectangle(17216f, 13984f, 20512f, 17568f);

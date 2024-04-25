@@ -30,7 +30,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "CthunShop.mdl"
+      "Value": "war3mapImported\\CthunSpawningPit2.mdl"
     },
     {
       "Id": 1735156597,
@@ -44,7 +44,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.6
+      "Value": 0.8
     },
     {
       "Id": 1835101813,
@@ -74,7 +74,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunShop.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunCatacombs.blp"
     }
   ]
 }

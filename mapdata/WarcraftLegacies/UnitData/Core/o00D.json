@@ -47,7 +47,7 @@
     {
       "Id": 1952542837,
       "Type": 3,
-      "Value": "PathTextures\\8x8SimpleSolid.tga"
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
     },
     {
       "Id": 1885433973,
@@ -72,10 +72,6 @@
       "Id": 1936028277,
       "Type": 3,
       "Value": "RL11,RZ02,RS01"
-    },
-    {
-      "Id": 1868788853,
-      "Value": 16
     },
     {
       "Id": 1634890869,

@@ -1,5 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
+using WarcraftLegacies.Source.Quests.Cthun;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
 using MacroTools.Spells;
@@ -13,9 +14,11 @@ namespace WarcraftLegacies.Source.Factions
 {
   public sealed class Ahnqiraj : Faction
   {
+    private readonly AllLegendSetup _allLegendSetup;
     /// <inheritdoc />
-    public Ahnqiraj() : base("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cffaaa050", @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
+    public Ahnqiraj(AllLegendSetup allLegendSetup) : base("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cffaaa050", @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
     {
+      _allLegendSetup = allLegendSetup;
       ControlPointDefenderUnitTypeId = UNIT_N0DW_CONTROL_POINT_DEFENDER_CTHUN_TOWER;
       TraditionalTeam = TeamSetup.OldGods;
     }
@@ -27,6 +30,7 @@ namespace WarcraftLegacies.Source.Factions
       RegisterResearches();
       RegisterSpells();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
+      RegisterQuests();
     }
 
     private void RegisterObjectLimits()
@@ -48,7 +52,7 @@ namespace WarcraftLegacies.Source.Factions
 
       ModObjectLimit(UNIT_N06I_SILITHID_WARRIOR_C_THUN_SILITHID_WARRIOR, UNLIMITED);
       ModObjectLimit(UNIT_O00L_SILITHID_REAVER_C_THUN_SILITHID_REAVER, UNLIMITED);
-      ModObjectLimit(UNIT_U013_SILITHID_COLOSSUS_C_THUN, UNLIMITED);
+      ModObjectLimit(UNIT_U013_SILITHID_COLOSSUS_C_THUN, 12);
 
       ModObjectLimit(UNIT_N060_SILITHID_TUNNELER_C_THUN_SILITHID_TUNNELER, UNLIMITED);
       ModObjectLimit(UNIT_N05V_SHADOW_WEAVER_C_THUN_FACELESS_SHADOW_WEAVER, UNLIMITED);
@@ -78,6 +82,21 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(UPGRADE_RYW5_IMPROVED_SWARM_BEETLE_CTHUN_WARRIOR, UNLIMITED);
       ModObjectLimit(UPGRADE_RTL3_IMPROVED_SEED_OF_MADNESS_CTHUN_WARRIOR, UNLIMITED);
       ModObjectLimit(UPGRADE_RHL9_WEB_CTHUN, UNLIMITED);
+      }
+
+    private void RegisterQuests()
+    {
+      var newQuest = AddQuest(new QuestTitanJailors(Regions.QirajInsideUnlock));
+      StartingQuest = newQuest;
+      AddQuest(new QuestRebuildAhnqiraj(Regions.QirajOutsideUnlock));
+      AddQuest(new QuestSlitheringForward(Regions.QirajOutpost1, Regions.QirajOutpost2, Regions.QirajOutpost3));
+      AddQuest(new QuestTanarisOutpost(Regions.QirajOutpost5));
+      AddQuest(new QuestEmperorConstruct());
+      AddQuest(new QuestMockeryOfLife());
+      AddQuest(new QuestWarOfTheShiftingSand(_allLegendSetup.Druids.Nordrassil));
+      AddQuest(new QuestDeliciousMusculature(_allLegendSetup.Warsong.Orgrimmar));
+      AddQuest(new QuestLitheMeat());
+
       ModObjectLimit(UPGRADE_R003_PROGENESIS_C_THUN, UNLIMITED);
       ModObjectLimit(UPGRADE_ZB12_CLEAVING_ATTACK_C_THUN, UNLIMITED);
       ModObjectLimit(UPGRADE_ZB14_ELONGATED_SNOUTS_C_THUN_SILITHID_WASP, UNLIMITED);
