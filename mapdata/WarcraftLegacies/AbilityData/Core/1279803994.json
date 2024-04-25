@@ -6,13 +6,6 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Pointer": 2,
-      "Id": 845902675,
-      "Type": 2,
-      "Value": 5
-    },
-    {
       "Id": 1902473825,
       "Type": 3,
       "Value": "ZBHS"
@@ -22,7 +15,7 @@
       "Pointer": 3,
       "Id": 862679891,
       "Type": 2,
-      "Value": 15
+      "Value": 30
     },
     {
       "Id": 1667330657,

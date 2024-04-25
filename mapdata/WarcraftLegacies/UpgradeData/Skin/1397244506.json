@@ -9,7 +9,7 @@
       "Level": 1,
       "Id": 829579623,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHardenedSkin.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStoneShield.blp"
     },
     {
       "Level": 1,
@@ -27,19 +27,19 @@
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "Hardened"
+      "Value": "Shaped Obsidian"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "Research Hardened"
+      "Value": "Research Shaped Obsidian"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Replaces Obsidian Eradicators\u0027 Spell Resistance with Hardened, which causes them to take \u003CZBHL,DataC1\u003E reduced damage from attacks.|n|n|cffc864c8Can\u0027t be researched with Spell Conduction.|r"
+      "Value": "Changes Obsidian Eradicators\u0027 armor type to Heavy and replaces their Spell Resistance with Hardened, which causes them to take \u003CZBHL,DataC1\u003E reduced damage from attacks.|n|n|cffc864c8Can\u0027t be researched with Spell Conduction.|r"
     },
     {
       "Id": 2037408359,

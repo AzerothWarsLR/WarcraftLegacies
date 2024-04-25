@@ -1,5 +1,4 @@
-﻿using System;
-using MacroTools.PassiveAbilitySystem;
+﻿using MacroTools.PassiveAbilitySystem;
 using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.PassiveAbilities.SpellConduction
@@ -34,7 +33,6 @@ namespace WarcraftLegacies.Source.PassiveAbilities.SpellConduction
     /// <inheritdoc />
     public override void OnCreated(unit createdUnit)
     {
-      Console.WriteLine("ability applied");
       var aura = new SpellConductionAura(createdUnit)
       {
         RedirectionPercentage = RedirectionPercentage,

@@ -115,7 +115,7 @@ namespace WarcraftLegacies.Source.Factions
       ResearchManager.RegisterIncompatibleSet(new BasicResearch(UPGRADE_ZBML_SPELL_CONDUCTION_C_THUN, 170),
         new RemoveAbilityResearch(UPGRADE_ZBHS_HARDENED_C_THUN, 100)
       {
-        RemovedAbility = UPGRADE_ZBHS_HARDENED_C_THUN
+        RemovedAbility = ABILITY_A13J_SPELL_RESISTANCE_RIFLEMAN_OBSIDIAN_ERADICATOR
       });
     }
 
