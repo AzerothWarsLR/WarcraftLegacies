@@ -35,8 +35,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         Radius = 400,
         AmountToTarget = 12,
-        MinDuration = 3,
-        MaxDuration = 30,
+        MinDuration = 2,
+        MaxDuration = 20,
         CrossDimensionalDuration = 15,
         DistanceDivider = 1000,
         DeathPenalty = 0.5f,
