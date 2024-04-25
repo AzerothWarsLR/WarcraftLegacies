@@ -7,6 +7,8 @@ using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon;
 using WarcraftLegacies.Source.PassiveAbilities.Incubate;
+using WarcraftLegacies.Source.PassiveAbilities.SpellConduction;
+using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Researches.Ahnqiraj;
 using WarcraftLegacies.Source.Setup;
 
@@ -84,6 +86,13 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(UPGRADE_RYW5_IMPROVED_SWARM_BEETLE_CTHUN_WARRIOR, UNLIMITED);
       ModObjectLimit(UPGRADE_RTL3_IMPROVED_SEED_OF_MADNESS_CTHUN_WARRIOR, UNLIMITED);
       ModObjectLimit(UPGRADE_RHL9_WEB_CTHUN, UNLIMITED);
+      ModObjectLimit(UPGRADE_R003_PROGENESIS_C_THUN, UNLIMITED);
+      ModObjectLimit(UPGRADE_ZB12_CLEAVING_ATTACK_C_THUN, UNLIMITED);
+      ModObjectLimit(UPGRADE_ZB14_ELONGATED_SNOUTS_C_THUN_SILITHID_WASP, UNLIMITED);
+      ModObjectLimit(UPGRADE_ZBEH_DEFENSIVE_COCOOON_AHN_QIRAJ, UNLIMITED);
+      ModObjectLimit(UPGRADE_ZBRI_RAPID_INCUBATION_AHN_QIRAJ, UNLIMITED);
+      ModObjectLimit(UPGRADE_ZBHS_SHAPED_OBSIDIAN_C_THUN, UNLIMITED);
+      ModObjectLimit(UPGRADE_ZBML_SPELL_CONDUCTION_C_THUN, UNLIMITED);
     }
 
     private void RegisterQuests()
@@ -98,17 +107,16 @@ namespace WarcraftLegacies.Source.Factions
       AddQuest(new QuestWarOfTheShiftingSand(_allLegendSetup.Druids.Nordrassil));
       AddQuest(new QuestDeliciousMusculature(_allLegendSetup.Warsong.Orgrimmar));
       AddQuest(new QuestLitheMeat());
-
-      ModObjectLimit(UPGRADE_R003_PROGENESIS_C_THUN, UNLIMITED);
-      ModObjectLimit(UPGRADE_ZB12_CLEAVING_ATTACK_C_THUN, UNLIMITED);
-      ModObjectLimit(UPGRADE_ZB14_ELONGATED_SNOUTS_C_THUN_SILITHID_WASP, UNLIMITED);
-      ModObjectLimit(UPGRADE_ZBEH_DEFENSIVE_COCOOON_AHN_QIRAJ, UNLIMITED);
-      ModObjectLimit(UPGRADE_ZBRI_RAPID_INCUBATION_AHN_QIRAJ, UNLIMITED);
     }
 
     private void RegisterResearches()
     {
       ResearchManager.Register(new Progenesis(UPGRADE_R003_PROGENESIS_C_THUN, 20));
+      ResearchManager.RegisterIncompatibleSet(new BasicResearch(UPGRADE_ZBML_SPELL_CONDUCTION_C_THUN, 170),
+        new RemoveAbilityResearch(UPGRADE_ZBHS_SHAPED_OBSIDIAN_C_THUN, 100)
+      {
+        RemovedAbility = ABILITY_A13J_SPELL_RESISTANCE_RIFLEMAN_OBSIDIAN_ERADICATOR
+      });
     }
 
     private void RegisterSpells()
@@ -142,6 +150,18 @@ namespace WarcraftLegacies.Source.Factions
       SpellSystem.Register(new InstantKill(ABILITY_ZBBS_HATCH_INCUBATE)
       {
         Target = InstantKill.KillTarget.Self
+      });
+      
+      PassiveAbilityManager.Register(new SpellConductionAbility(UNIT_SL2O_OBSIDIAN_ERADICATOR_CTHUN)
+      {
+        RedirectionPercentage = 0.35f,
+        RedirectableAttackTypes = new attacktype[]
+        {
+          ATTACK_TYPE_NORMAL,
+          ATTACK_TYPE_MAGIC
+        },
+        RequiredResearch = UPGRADE_ZBML_SPELL_CONDUCTION_C_THUN,
+        Radius = 500
       });
     }
   }
