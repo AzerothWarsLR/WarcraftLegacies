@@ -7,6 +7,8 @@ using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon;
 using WarcraftLegacies.Source.PassiveAbilities.Incubate;
+using WarcraftLegacies.Source.PassiveAbilities.SpellConduction;
+using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Researches.Ahnqiraj;
 using WarcraftLegacies.Source.Setup;
 
@@ -110,7 +112,11 @@ namespace WarcraftLegacies.Source.Factions
     private void RegisterResearches()
     {
       ResearchManager.Register(new Progenesis(UPGRADE_R003_PROGENESIS_C_THUN, 20));
-      ResearchManager.RegisterIncompatibleSet(UPGRADE_ZBML_SPELL_CONDUCTION_C_THUN, UPGRADE_ZBHS_HARDENED_C_THUN);
+      ResearchManager.RegisterIncompatibleSet(new BasicResearch(UPGRADE_ZBML_SPELL_CONDUCTION_C_THUN, 170),
+        new RemoveAbilityResearch(UPGRADE_ZBHS_HARDENED_C_THUN, 100)
+      {
+        RemovedAbility = UPGRADE_ZBHS_HARDENED_C_THUN
+      });
     }
 
     private void RegisterSpells()
@@ -144,6 +150,17 @@ namespace WarcraftLegacies.Source.Factions
       SpellSystem.Register(new InstantKill(ABILITY_ZBBS_HATCH_INCUBATE)
       {
         Target = InstantKill.KillTarget.Self
+      });
+      
+      PassiveAbilityManager.Register(new SpellConductionAbility(UNIT_SL2O_OBSIDIAN_ERADICATOR_CTHUN)
+      {
+        RedirectionPercentage = 0.35f,
+        RedirectableAttackTypes = new attacktype[]
+        {
+          ATTACK_TYPE_NORMAL,
+          ATTACK_TYPE_MAGIC
+        },
+        RequiredResearch = ABILITY_ZBMR_SPELL_CONDUCTION_OBSIDIAN_ERADICATOR
       });
     }
   }
