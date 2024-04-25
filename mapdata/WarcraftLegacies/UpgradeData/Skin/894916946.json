@@ -9,7 +9,7 @@
       "Level": 1,
       "Id": 829579623,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNCarrionScarabs.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSwarmScarab.blp"
     },
     {
       "Id": 2020631143,
@@ -43,7 +43,7 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases the number of Swarm Beetles summoned by the Swarm Beetle ability to \u003CALZ1,DataA2\u003E."
+      "Value": "Increases the number of Swarm Beetles summoned by the Summon Swarm Beetle ability to \u003CASWB,DataB2\u003E."
     }
   ]
 }
