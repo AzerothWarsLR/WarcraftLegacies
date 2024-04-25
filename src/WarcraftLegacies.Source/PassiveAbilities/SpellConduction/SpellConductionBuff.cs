@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using MacroTools.Extensions;
 using WCSharp.Buffs;
 using WCSharp.Events;
@@ -29,17 +28,20 @@ namespace WarcraftLegacies.Source.PassiveAbilities.SpellConduction
     /// <inheritdoc />
     public override void OnApply()
     {
-      PlayerUnitEvents.Register(UnitEvent.Damaging, OnDamageTaken, Target);
+      PlayerUnitEvents.Register(UnitEvent.IsDamaged, OnDamageTaken, Target);
     }
     
     /// <inheritdoc />
     public override void OnDispose()
     {
-      PlayerUnitEvents.Unregister(UnitEvent.Damaging, OnDamageTaken, Target);
+      PlayerUnitEvents.Unregister(UnitEvent.IsDamaged, OnDamageTaken, Target);
     }
 
     private void OnDamageTaken()
     {
+      if (!UnitAlive(Caster))
+        return;
+      
       var attackType = BlzGetEventAttackType();
       if (!IsRedirectableAttackType(attackType))
         return;
@@ -47,15 +49,12 @@ namespace WarcraftLegacies.Source.PassiveAbilities.SpellConduction
       var eventDamage = GetEventDamage();
       
       BlzSetEventDamage(eventDamage * (1 - RedirectionPercentage));
-      DamageCaster(GetEventDamageSource(), eventDamage, attackType);
+      DamageCaster(GetEventDamageSource(), eventDamage);
     }
 
-    private void DamageCaster(unit damager, float eventDamage, attacktype attackType)
-    {
-      Console.WriteLine(eventDamage);
-      Caster.TakeDamage(damager, eventDamage * RedirectionPercentage, false, true, attackType, BlzGetEventDamageType(),
-        BlzGetEventWeaponType());
-    }
+    private void DamageCaster(unit damager, float eventDamage) =>
+      Caster.TakeDamage(damager, eventDamage * RedirectionPercentage, false, true, ATTACK_TYPE_CHAOS,
+        DAMAGE_TYPE_UNIVERSAL, BlzGetEventWeaponType());
 
     private bool IsRedirectableAttackType(attacktype attackType) => RedirectableAttackTypes.Contains(attackType);
   }

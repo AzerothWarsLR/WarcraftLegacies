@@ -1,4 +1,5 @@
 ﻿using MacroTools.Extensions;
+using MacroTools.SpellSystem;
 using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.PassiveAbilities.SpellConduction
@@ -36,14 +37,9 @@ namespace WarcraftLegacies.Source.PassiveAbilities.SpellConduction
     }
 
     /// <inheritdoc />
-    protected override bool UnitFilter(unit unit)
-    {
-      if (GetPlayerTechCount(Caster.OwningPlayer(), RequiredResearch, false) == 0)
-        return false;
-      
-      return unit != Caster && UnitAlive(unit) && IsUnitAlly(unit, CastingPlayer) &&
-             !unit.IsType(UNIT_TYPE_STRUCTURE) && !unit.IsType(UNIT_TYPE_ANCIENT) && 
-             !typeof(SpellConductionAura).ExistsAsBuffOnUnit(unit);
-    }
+    /// <inheritdoc />
+    protected override bool UnitFilter(unit unit) =>
+      GetPlayerTechCount(Caster.OwningPlayer(), RequiredResearch, false) > 0 &&
+      CastFilters.IsTargetAllyAndAlive(Caster, unit);
   }
 }

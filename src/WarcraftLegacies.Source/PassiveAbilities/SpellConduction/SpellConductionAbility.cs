@@ -1,4 +1,5 @@
-﻿using MacroTools.PassiveAbilitySystem;
+﻿using System;
+using MacroTools.PassiveAbilitySystem;
 using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.PassiveAbilities.SpellConduction
@@ -20,6 +21,11 @@ namespace WarcraftLegacies.Source.PassiveAbilities.SpellConduction
     /// </summary>
     public required attacktype[] RedirectableAttackTypes { get; init; }
     
+    /// <summary>
+    /// Units this far away will get damage redirected from them.
+    /// </summary>
+    public required int Radius { get; init; }
+    
     /// <inheritdoc />
     public SpellConductionAbility(int unitTypeId) : base(unitTypeId)
     {
@@ -28,11 +34,13 @@ namespace WarcraftLegacies.Source.PassiveAbilities.SpellConduction
     /// <inheritdoc />
     public override void OnCreated(unit createdUnit)
     {
+      Console.WriteLine("ability applied");
       var aura = new SpellConductionAura(createdUnit)
       {
         RedirectionPercentage = RedirectionPercentage,
         RedirectableAttackTypes = RedirectableAttackTypes,
-        RequiredResearch = RequiredResearch
+        RequiredResearch = RequiredResearch,
+        Radius = Radius
       };
       AuraSystem.Add(aura);
     }

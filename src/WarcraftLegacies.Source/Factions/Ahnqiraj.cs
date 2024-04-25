@@ -160,7 +160,8 @@ namespace WarcraftLegacies.Source.Factions
           ATTACK_TYPE_NORMAL,
           ATTACK_TYPE_MAGIC
         },
-        RequiredResearch = ABILITY_ZBMR_SPELL_CONDUCTION_OBSIDIAN_ERADICATOR
+        RequiredResearch = UPGRADE_ZBML_SPELL_CONDUCTION_C_THUN,
+        Radius = 500
       });
     }
   }
