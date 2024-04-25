@@ -15,14 +15,16 @@ namespace WarcraftLegacies.Source.Factions
   public sealed class Ahnqiraj : Faction
   {
     private readonly AllLegendSetup _allLegendSetup;
+
     /// <inheritdoc />
-    public Ahnqiraj(AllLegendSetup allLegendSetup) : base("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cffaaa050", @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
+    public Ahnqiraj(AllLegendSetup allLegendSetup) : base("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cffaaa050",
+      @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
     {
       _allLegendSetup = allLegendSetup;
       ControlPointDefenderUnitTypeId = UNIT_N0DW_CONTROL_POINT_DEFENDER_CTHUN_TOWER;
       TraditionalTeam = TeamSetup.OldGods;
     }
-    
+
     /// <inheritdoc />
     public override void OnRegistered()
     {
@@ -46,7 +48,7 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(UNIT_U01I_CHAMBER_OF_WONDERS_C_THUN_SHOP, UNLIMITED);
       ModObjectLimit(UNIT_U01F_ALTAR_OF_THE_OLD_ONES_C_THUN_ALTAR, UNLIMITED);
       ModObjectLimit(UNIT_STZ5_LIGHTHOUSE_C_THUN_EMPTY, UNLIMITED);
-      
+
       ModObjectLimit(UNIT_U019_DRONE_C_THUN_WORKER, UNLIMITED);
       ModObjectLimit(UNIT_O000_SILITHID_ROYALTY_C_THUN_ELITES, 6);
 
@@ -82,7 +84,7 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(UPGRADE_RYW5_IMPROVED_SWARM_BEETLE_CTHUN_WARRIOR, UNLIMITED);
       ModObjectLimit(UPGRADE_RTL3_IMPROVED_SEED_OF_MADNESS_CTHUN_WARRIOR, UNLIMITED);
       ModObjectLimit(UPGRADE_RHL9_WEB_CTHUN, UNLIMITED);
-      }
+    }
 
     private void RegisterQuests()
     {
@@ -103,12 +105,12 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(UPGRADE_ZBEH_DEFENSIVE_COCOOON_AHN_QIRAJ, UNLIMITED);
       ModObjectLimit(UPGRADE_ZBRI_RAPID_INCUBATION_AHN_QIRAJ, UNLIMITED);
     }
-    
+
     private void RegisterResearches()
     {
       ResearchManager.Register(new Progenesis(UPGRADE_R003_PROGENESIS_C_THUN, 20));
     }
-    
+
     private void RegisterSpells()
     {
       var cocoonHeroes = new int[]
@@ -117,7 +119,7 @@ namespace WarcraftLegacies.Source.Factions
         UNIT_E005_THE_PROPHET,
         UNIT_U00Z_OBSIDIAN_DESTROYER
       };
-      
+
       PassiveAbilityManager.Register(new DefensiveCocoonAbility(cocoonHeroes, ABILITY_ZBEG_DEFENSIVE_COCOON_AHN_QIRAJ)
       {
         MaximumHealthPercentage = 0.5f,
@@ -126,7 +128,7 @@ namespace WarcraftLegacies.Source.Factions
         ReviveEffect = @"Abilities\Spells\Undead\RaiseSkeletonWarrior\RaiseSkeleton.mdl",
         RequiredResearch = UPGRADE_ZBEH_DEFENSIVE_COCOOON_AHN_QIRAJ
       });
-      
+
       PassiveAbilityManager.Register(new Incubate(UNIT_H01N_VILE_CORRUPTER_C_THUN, ABILITY_ZBRD_INCUBATE_VILE_CORRUPTOR)
       {
         HatchedUnitTypeId = UNIT_N06I_SILITHID_WARRIOR_C_THUN_SILITHID_WARRIOR,

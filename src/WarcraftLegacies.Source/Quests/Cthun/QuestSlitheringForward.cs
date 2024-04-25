@@ -21,7 +21,6 @@ namespace WarcraftLegacies.Source.Quests.Cthun
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestSlitheringForward"/> class.
     /// </summary>
-    /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
     public QuestSlitheringForward(Rectangle outpost1, Rectangle outpost2, Rectangle outpost3) : base("Slithering Forward",
       "The hive needs to grow and spread to thrive. The sands of Silithus are perfect for that purpose, but the surroundings will have to be secured first.",
       @"ReplaceableTextures/CommandButtons/BTNSilithidColossus.blp")
