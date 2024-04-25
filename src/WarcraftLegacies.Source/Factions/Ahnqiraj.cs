@@ -110,6 +110,7 @@ namespace WarcraftLegacies.Source.Factions
     private void RegisterResearches()
     {
       ResearchManager.Register(new Progenesis(UPGRADE_R003_PROGENESIS_C_THUN, 20));
+      ResearchManager.RegisterIncompatibleSet(UPGRADE_ZBML_SPELL_CONDUCTION_C_THUN, UPGRADE_ZBHS_HARDENED_C_THUN);
     }
 
     private void RegisterSpells()
