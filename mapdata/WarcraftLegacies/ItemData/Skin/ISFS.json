@@ -1,0 +1,29 @@
+{
+  "OldId": 1735289699,
+  "NewId": 1397117769,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786025,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_NerubianScepter.blp"
+    },
+    {
+      "Id": 1936024681,
+      "Type": 3,
+      "Value": "Increases all stats. Can be used to cast Invibility, Rain of Fire, Devour Magic and Demon Call."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "The Scepter of the Shifting Sands\r\n"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "|cffff8c00Artifact|r|nIncreases mana by 200, intelligence by 9 and armor by 5. Can be used to cast .|n|cffffcc00Lore|r|n|cffffdeadThe Scepter of the Shifting Sands is required to open the Gate of Ahn\u0027qiraj.|r"
+    }
+  ]
+}
