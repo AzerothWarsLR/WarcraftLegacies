@@ -112,7 +112,6 @@ public static class Regions
 	public static Rectangle FeralasAmbient2 { get; set; } = new Rectangle(-23808f, -14464f, -17248f, -5536f);
 	public static Rectangle FeralasEmeraldPortal { get; set; } = new Rectangle(-18144f, -6464f, -17696f, -6208f);
 	public static Rectangle Fjord { get; set; } = new Rectangle(1536f, 13408f, 8192f, 20320f);
-	public static Rectangle ForsakenStartPos { get; set; } = new Rectangle(3296f, 22784f, 4480f, 23776f);
 	public static Rectangle FountainOfHealthAlterac { get; set; } = new Rectangle(10656f, 5536f, 11104f, 6016f);
 	public static Rectangle FountainUnlock { get; set; } = new Rectangle(-10688f, 4384f, -10144f, 4800f);
 	public static Rectangle FTSummon { get; set; } = new Rectangle(-3392f, 20384f, -3232f, 20512f);
@@ -341,6 +340,7 @@ public static class Regions
 	public static Rectangle WinterspringAmbient2 { get; set; } = new Rectangle(-9792f, 5792f, -8416f, 9088f);
 	public static Rectangle WorldTunnelExit { get; set; } = new Rectangle(17472f, -11584f, 17792f, -11040f);
 	public static Rectangle WyrmrestTemple { get; set; } = new Rectangle(-928f, 17056f, -288f, 17824f);
+	public static Rectangle YoggSaronPrison { get; set; } = new Rectangle(3712f, 23104f, 4448f, 23712f);
 	public static Rectangle Zandalari_Echo_Unlock { get; set; } = new Rectangle(-9280f, -5440f, -8384f, -4512f);
 	public static Rectangle ZandalarUnlock { get; set; } = new Rectangle(-5440f, -17152f, -2400f, -14656f);
 	public static Rectangle ZeppelinReturn { get; set; } = new Rectangle(-960f, -5824f, -320f, -5216f);
