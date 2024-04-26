@@ -1,11 +1,14 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
+using WarcraftLegacies.Source.Quests.Cthun;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon;
 using WarcraftLegacies.Source.PassiveAbilities.Incubate;
+using WarcraftLegacies.Source.PassiveAbilities.SpellConduction;
+using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Researches.Ahnqiraj;
 using WarcraftLegacies.Source.Setup;
 
@@ -13,13 +16,17 @@ namespace WarcraftLegacies.Source.Factions
 {
   public sealed class Ahnqiraj : Faction
   {
+    private readonly AllLegendSetup _allLegendSetup;
+
     /// <inheritdoc />
-    public Ahnqiraj() : base("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cffaaa050", @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
+    public Ahnqiraj(AllLegendSetup allLegendSetup) : base("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cffaaa050",
+      @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
     {
+      _allLegendSetup = allLegendSetup;
       ControlPointDefenderUnitTypeId = UNIT_N0DW_CONTROL_POINT_DEFENDER_CTHUN_TOWER;
       TraditionalTeam = TeamSetup.OldGods;
     }
-    
+
     /// <inheritdoc />
     public override void OnRegistered()
     {
@@ -27,6 +34,7 @@ namespace WarcraftLegacies.Source.Factions
       RegisterResearches();
       RegisterSpells();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
+      RegisterQuests();
     }
 
     private void RegisterObjectLimits()
@@ -42,13 +50,13 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(UNIT_U01I_CHAMBER_OF_WONDERS_C_THUN_SHOP, UNLIMITED);
       ModObjectLimit(UNIT_U01F_ALTAR_OF_THE_OLD_ONES_C_THUN_ALTAR, UNLIMITED);
       ModObjectLimit(UNIT_STZ5_LIGHTHOUSE_C_THUN_EMPTY, UNLIMITED);
-      
+
       ModObjectLimit(UNIT_U019_DRONE_C_THUN_WORKER, UNLIMITED);
       ModObjectLimit(UNIT_O000_SILITHID_ROYALTY_C_THUN_ELITES, 6);
 
       ModObjectLimit(UNIT_N06I_SILITHID_WARRIOR_C_THUN_SILITHID_WARRIOR, UNLIMITED);
       ModObjectLimit(UNIT_O00L_SILITHID_REAVER_C_THUN_SILITHID_REAVER, UNLIMITED);
-      ModObjectLimit(UNIT_U013_SILITHID_COLOSSUS_C_THUN, UNLIMITED);
+      ModObjectLimit(UNIT_U013_SILITHID_COLOSSUS_C_THUN, 12);
 
       ModObjectLimit(UNIT_N060_SILITHID_TUNNELER_C_THUN_SILITHID_TUNNELER, UNLIMITED);
       ModObjectLimit(UNIT_N05V_SHADOW_WEAVER_C_THUN_FACELESS_SHADOW_WEAVER, UNLIMITED);
@@ -83,13 +91,34 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(UPGRADE_ZB14_ELONGATED_SNOUTS_C_THUN_SILITHID_WASP, UNLIMITED);
       ModObjectLimit(UPGRADE_ZBEH_DEFENSIVE_COCOOON_AHN_QIRAJ, UNLIMITED);
       ModObjectLimit(UPGRADE_ZBRI_RAPID_INCUBATION_AHN_QIRAJ, UNLIMITED);
+      ModObjectLimit(UPGRADE_ZBHS_SHAPED_OBSIDIAN_C_THUN, UNLIMITED);
+      ModObjectLimit(UPGRADE_ZBML_SPELL_CONDUCTION_C_THUN, UNLIMITED);
     }
-    
+
+    private void RegisterQuests()
+    {
+      var newQuest = AddQuest(new QuestTitanJailors(Regions.QirajInsideUnlock));
+      StartingQuest = newQuest;
+      AddQuest(new QuestRebuildAhnqiraj(Regions.QirajOutsideUnlock));
+      AddQuest(new QuestSlitheringForward(Regions.QirajOutpost1, Regions.QirajOutpost2, Regions.QirajOutpost3));
+      AddQuest(new QuestTanarisOutpost(Regions.QirajOutpost5));
+      AddQuest(new QuestEmperorConstruct());
+      AddQuest(new QuestMockeryOfLife());
+      AddQuest(new QuestWarOfTheShiftingSand(_allLegendSetup.Druids.Nordrassil));
+      AddQuest(new QuestDeliciousMusculature(_allLegendSetup.Warsong.Orgrimmar));
+      AddQuest(new QuestLitheMeat());
+    }
+
     private void RegisterResearches()
     {
       ResearchManager.Register(new Progenesis(UPGRADE_R003_PROGENESIS_C_THUN, 20));
+      ResearchManager.RegisterIncompatibleSet(new BasicResearch(UPGRADE_ZBML_SPELL_CONDUCTION_C_THUN, 170),
+        new RemoveAbilityResearch(UPGRADE_ZBHS_SHAPED_OBSIDIAN_C_THUN, 100)
+      {
+        RemovedAbility = ABILITY_A13J_SPELL_RESISTANCE_RIFLEMAN_OBSIDIAN_ERADICATOR
+      });
     }
-    
+
     private void RegisterSpells()
     {
       var cocoonHeroes = new int[]
@@ -98,7 +127,7 @@ namespace WarcraftLegacies.Source.Factions
         UNIT_E005_THE_PROPHET,
         UNIT_U00Z_OBSIDIAN_DESTROYER
       };
-      
+
       PassiveAbilityManager.Register(new DefensiveCocoonAbility(cocoonHeroes, ABILITY_ZBEG_DEFENSIVE_COCOON_AHN_QIRAJ)
       {
         MaximumHealthPercentage = 0.5f,
@@ -107,7 +136,7 @@ namespace WarcraftLegacies.Source.Factions
         ReviveEffect = @"Abilities\Spells\Undead\RaiseSkeletonWarrior\RaiseSkeleton.mdl",
         RequiredResearch = UPGRADE_ZBEH_DEFENSIVE_COCOOON_AHN_QIRAJ
       });
-      
+
       PassiveAbilityManager.Register(new Incubate(UNIT_H01N_VILE_CORRUPTER_C_THUN, ABILITY_ZBRD_INCUBATE_VILE_CORRUPTOR)
       {
         HatchedUnitTypeId = UNIT_N06I_SILITHID_WARRIOR_C_THUN_SILITHID_WARRIOR,
@@ -121,6 +150,18 @@ namespace WarcraftLegacies.Source.Factions
       SpellSystem.Register(new InstantKill(ABILITY_ZBBS_HATCH_INCUBATE)
       {
         Target = InstantKill.KillTarget.Self
+      });
+      
+      PassiveAbilityManager.Register(new SpellConductionAbility(UNIT_SL2O_OBSIDIAN_ERADICATOR_CTHUN)
+      {
+        RedirectionPercentage = 0.35f,
+        RedirectableAttackTypes = new attacktype[]
+        {
+          ATTACK_TYPE_NORMAL,
+          ATTACK_TYPE_MAGIC
+        },
+        RequiredResearch = UPGRADE_ZBML_SPELL_CONDUCTION_C_THUN,
+        Radius = 500
       });
     }
   }

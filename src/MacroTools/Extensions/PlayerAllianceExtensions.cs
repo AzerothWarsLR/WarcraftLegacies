@@ -19,32 +19,19 @@ namespace MacroTools.Extensions
         case AllianceState.Unallied:
           sourcePlayer.SetPlayerAllianceStateAlly(otherPlayer, false);
           sourcePlayer.SetPlayerAllianceStateVision(otherPlayer, false);
-          sourcePlayer.SetPlayerAllianceStateControl(otherPlayer, false);
           sourcePlayer.SetPlayerAllianceStateFullControl(otherPlayer, false);
           break;
         case AllianceState.Allied:
           sourcePlayer.SetPlayerAllianceStateAlly(otherPlayer, true);
           sourcePlayer.SetPlayerAllianceStateVision(otherPlayer, false);
-          sourcePlayer.SetPlayerAllianceStateControl(otherPlayer, false);
-          sourcePlayer.SetPlayerAllianceStateFullControl(otherPlayer, false);
           break;
         case AllianceState.AlliedVision:
           sourcePlayer.SetPlayerAllianceStateAlly(otherPlayer, true);
           sourcePlayer.SetPlayerAllianceStateVision(otherPlayer, true);
-          sourcePlayer.SetPlayerAllianceStateControl(otherPlayer, false);
-          sourcePlayer.SetPlayerAllianceStateFullControl(otherPlayer, false);
-          break;
-        case AllianceState.AlliedAdvUnits:
-          sourcePlayer.SetPlayerAllianceStateAlly(otherPlayer, true);
-          sourcePlayer.SetPlayerAllianceStateVision(otherPlayer, true);
-          sourcePlayer.SetPlayerAllianceStateControl(otherPlayer, true);
-          sourcePlayer.SetPlayerAllianceStateFullControl(otherPlayer, true);
           break;
         case AllianceState.UnalliedVision:
           sourcePlayer.SetPlayerAllianceStateAlly(otherPlayer, false);
           sourcePlayer.SetPlayerAllianceStateVision(otherPlayer, true);
-          sourcePlayer.SetPlayerAllianceStateControl(otherPlayer, false);
-          sourcePlayer.SetPlayerAllianceStateFullControl(otherPlayer, false);
           break;
         default:
           throw new ArgumentOutOfRangeException(nameof(allianceState), allianceState, null);
@@ -53,6 +40,15 @@ namespace MacroTools.Extensions
       PlayerData.ByHandle(sourcePlayer).SignalAllianceChange();
     }
     
+    /// <summary>
+    /// Sets whether or not one player controls another player.
+    /// </summary>
+    public static void SetPlayerAllianceStateFullControl(this player sourcePlayer, player otherPlayer, bool flag)
+    {
+      SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_SHARED_CONTROL, flag);
+      SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_SHARED_ADVANCED_CONTROL, flag);
+    }
+
     private static void SetPlayerAllianceStateAlly(this player sourcePlayer, player otherPlayer, bool flag)
     {
       SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_PASSIVE, flag);
@@ -64,11 +60,5 @@ namespace MacroTools.Extensions
 
     private static void SetPlayerAllianceStateVision(this player sourcePlayer, player otherPlayer, bool flag) =>
       SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_SHARED_VISION, flag);
-
-    private static void SetPlayerAllianceStateControl(this player sourcePlayer, player otherPlayer, bool flag) =>
-      SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_SHARED_CONTROL, flag);
-
-    private static void SetPlayerAllianceStateFullControl(this player sourcePlayer, player otherPlayer, bool flag) =>
-      SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_SHARED_ADVANCED_CONTROL, flag);
   }
 }

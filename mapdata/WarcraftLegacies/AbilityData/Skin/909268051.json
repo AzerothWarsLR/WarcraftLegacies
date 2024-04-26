@@ -41,7 +41,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "This hero\u0027s attacks fire multiple projectiles at different enemies. |n|n|cffffcc00Level 1|r - Attacks fire \u003CST26,DataC1\u003E additional projectile.|n|cffffcc00Level 2|r - Attacks fire \u003CST26,DataC2\u003E additional projectiles.|n|cffffcc00Level 3|r - Attacks fire \u003CST26,DataC3\u003E additional projectiles.|n|cffffcc00Level 4|r - Attacks fire \u003CST26,DataC4\u003E additional projectiles."
+      "Value": "This hero\u0027s attacks fire multiple projectiles at different enemies. |n|n|cffffcc00Level 1|r - Attacks fire 3 projectiles.|n|cffffcc00Level 2|r - Attacks fire 4 projectiles.|n|cffffcc00Level 3|r - Attacks fire 5 projectiles.|n|cffffcc00Level 4|r - Attacks fire 6 projectiles."
     },
     {
       "Level": 1,
@@ -71,25 +71,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero fires multiple attacks at targets. \u003CST26,DataC1\u003E extra attacks are made."
+      "Value": "The hero fires attacks at \u003CST26,DataC1\u003E targets."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero fires multiple attacks at targets. \u003CST26,DataC2\u003E extra attacks are made."
+      "Value": "The hero fires attacks at \u003CST26,DataC2\u003E targets."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero fires multiple attacks at targets. \u003CST26,DataC3\u003E extra attacks are made."
+      "Value": "The hero fires attacks at \u003CST26,DataC3\u003E targets."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero fires multiple attacks at targets. \u003CST26,DataC4\u003E extra attacks are made."
+      "Value": "The hero fires attacks at \u003CST26,DataC4\u003E targets. "
     },
     {
       "Id": 1835101793,
