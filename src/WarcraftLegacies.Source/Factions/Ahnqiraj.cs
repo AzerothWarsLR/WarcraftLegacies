@@ -113,7 +113,15 @@ namespace WarcraftLegacies.Source.Factions
 
     private void RegisterResearches()
     {
-      ResearchManager.Register(new Progenesis(UPGRADE_R003_PROGENESIS_C_THUN, 20));
+      ResearchManager.Register(new Progenesis(UPGRADE_R003_PROGENESIS_C_THUN, 20)
+      {
+        TransformableUnitTypeIds = new int[]
+        {
+          UNIT_U019_DRONE_C_THUN_WORKER,
+          UNIT_UCBD_BURROWED_DRONE_C_THUN_WORKER
+        },
+        TransformedUnitTypeId = UNIT_N06I_SILITHID_WARRIOR_C_THUN_SILITHID_WARRIOR
+      });
       ResearchManager.RegisterIncompatibleSet(new BasicResearch(UPGRADE_ZBML_SPELL_CONDUCTION_C_THUN, 170),
         new RemoveAbilityResearch(UPGRADE_ZBHS_SHAPED_OBSIDIAN_C_THUN, 100)
       {
