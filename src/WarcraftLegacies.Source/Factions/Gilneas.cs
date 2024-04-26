@@ -48,7 +48,9 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
         "gil",
         "giln",
         "worgen",
-        "worg"
+        "worg",
+        "dog",
+        "dogs"
       };
       RegisterFactionDependentInitializer<Legion>(RegisterBookOfMedivhQuest);
       RegisterFactionDependentInitializer<Druids>(RegisterDruidsQuests);
