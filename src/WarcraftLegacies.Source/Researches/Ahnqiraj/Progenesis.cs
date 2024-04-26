@@ -9,6 +9,16 @@ namespace WarcraftLegacies.Source.Researches.Ahnqiraj
   /// </summary>
   public sealed class Progenesis : Research
   {
+    /// <summary>
+    /// All unit types that get transformed by the <see cref="Progenesis"/>.
+    /// </summary>
+    public required int[] TransformableUnitTypeIds { get; init; }
+    
+    /// <summary>
+    /// The unit type ID to transform into.
+    /// </summary>
+    public required int TransformedUnitTypeId { get; init; }
+    
     /// <inheritdoc />
     public Progenesis(int researchTypeId, int goldCost) : base(researchTypeId, goldCost)
     {
@@ -33,12 +43,12 @@ namespace WarcraftLegacies.Source.Researches.Ahnqiraj
           .SetLifespan();
         
         worker.SafelyRemove();
-        var soldier = CreateUnit(owner, UNIT_N06I_SILITHID_WARRIOR_C_THUN_SILITHID_WARRIOR, position.X, position.Y, facing);
+        var soldier = CreateUnit(owner, TransformedUnitTypeId, position.X, position.Y, facing);
         soldier.SetLifePercent(hitPointsPercentage);
       }
     }
 
-    private static bool IsValidTarget(unit target) => GetUnitTypeId(target) == UNIT_U019_DRONE_C_THUN_WORKER &&
+    private bool IsValidTarget(unit target) => TransformableUnitTypeIds.Contains(GetUnitTypeId(target)) &&
                                                       !IsUnitType(target, UNIT_TYPE_DEAD) &&
                                                       !IsUnitType(target, UNIT_TYPE_SUMMONED);
   }
