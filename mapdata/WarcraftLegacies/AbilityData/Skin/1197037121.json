@@ -61,7 +61,7 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Rally"
+      "Value": "Mass Haste"
     },
     {
       "Level": 2,
@@ -85,7 +85,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The Hero rallies his men increasing their movespeed by 60% for 10 seconds."
+      "Value": "The Hero empowers nearby friendly units, increasing their movespeed by 60% for 10 seconds."
     },
     {
       "Level": 2,
