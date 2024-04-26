@@ -51,7 +51,7 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The unit spawns \u003CASWB,DataB2\u003E uncontrollable Swarm Beetle to attack the casters\u0027 enemies. Beetles last \u003CASWB,Dur2\u003E."
+      "Value": "The unit spawns \u003CASWB,DataB2\u003E uncontrollable Swarm Beetle to attack the casters\u0027 enemies. The Beetles last \u003CASWB,Dur2\u003E seconds."
     }
   ]
 }
