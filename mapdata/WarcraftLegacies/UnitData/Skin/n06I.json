@@ -37,17 +37,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Silithid Warrior"
+      "Value": "Soldier"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Train Silithid Warrior"
+      "Value": "Train Soldier"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Frontline soldiers of the hive.|n|cfff5962dAbilities:|R Charge, Summon Swarm Beetle, Progeny Gland|n|n|cffffcc00Attacks land units.|r"
+      "Value": "Frontline soldiers of the hive.|n|cfff5962dAbilities:|R Charge, Summon Swarm Beetle, Progeny Gland|n|cfff5962dCan learn:|R Vampiric Attack.|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

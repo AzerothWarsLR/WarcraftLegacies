@@ -109,6 +109,7 @@ namespace WarcraftLegacies.Source.Factions
       AddQuest(new QuestWarOfTheShiftingSand(_allLegendSetup.Druids.Nordrassil));
       AddQuest(new QuestDeliciousMusculature(_allLegendSetup.Warsong.Orgrimmar));
       AddQuest(new QuestLitheMeat());
+      AddQuest(new QuestFiendThousandFaces(_allLegendSetup.Neutral.YoggSaron));
     }
 
     private void RegisterResearches()
