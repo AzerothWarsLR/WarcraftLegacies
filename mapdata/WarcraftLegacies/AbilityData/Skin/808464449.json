@@ -106,7 +106,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "After a 2 second delay, teleports the player\u0027s nearby units, including the caster, to any friendly building or unit in range. |n|cffffcc00Level 1|r - Teleports 60 units, 1000 range, 30 second cooldown.|n|cffffcc00Level 2|r - Teleports 72 units, 1500 range, 25 second cooldown.|n|cffffcc00Level 3|r - Teleports 84 units, 2000 range, 20 second cooldown."
+      "Value": "After a 2 second delay, teleports the player\u0027s nearby units, including the caster, to any friendly building or unit in range. |n|cffffcc00Level 1|r - Teleports \u003CA000,DataA1\u003E units, \u003CA000,Rng1\u003E range, \u003CA000,Cool1\u003E second cooldown.|n|cffffcc00Level 2|r - Teleports \u003CA000,DataA2\u003E units, \u003CA000,Rng2\u003E range, \u003CA000,Cool2\u003E second cooldown.|n|cffffcc00Level 3|r - Teleports \u003CA000,DataA3\u003E units, \u003CA000,Rng3\u003E range, \u003CA000,Cool3\u003E second cooldown."
     }
   ]
 }
