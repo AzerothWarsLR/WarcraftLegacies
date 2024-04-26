@@ -56,6 +56,11 @@
       "Id": 1835101793,
       "Type": 3,
       "Value": "Deep Burrow"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWormBurrow.blp"
     }
   ]
 }
