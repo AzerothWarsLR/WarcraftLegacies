@@ -21,6 +21,7 @@ namespace WarcraftLegacies.Source.Setup
     {
       SharedQuestRepository.RegisterQuest(CreateTombOfSargerasQuest(preplacedUnitSystem));
       SharedQuestRepository.RegisterQuest(CreateRagnarosQuest(preplacedUnitSystem, allLegendSetup));
+      SharedQuestRepository.RegisterQuest(CreateYoggSaronQuest(preplacedUnitSystem, allLegendSetup));
       SharedQuestRepository.RegisterQuest(CreateDragonsOfNightmareQuest(preplacedUnitSystem));
       SharedQuestRepository.RegisterQuestFactory(_ => new QuestZinrokhAssembly(new List<Artifact>
       {
@@ -45,6 +46,12 @@ namespace WarcraftLegacies.Source.Setup
     {
       return new QuestRagnaros(allLegendSetup.Neutral.Ragnaros,
         preplacedUnitSystem.GetUnit(UNIT_N02B_RAGNAROS_SUMMONING_PEDESTAL_PEDESTAL));
+    }
+
+    private static QuestYoggSaron CreateYoggSaronQuest(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup)
+    {
+      return new QuestYoggSaron(allLegendSetup.Neutral.YoggSaron,
+        preplacedUnitSystem.GetUnit(UNIT_YLL4_YOGG_SARON_S_PRISON_PEDESTAL));
     }
 
     private static QuestTombOfSargeras CreateTombOfSargerasQuest(PreplacedUnitSystem preplacedUnitSystem)

@@ -1,0 +1,68 @@
+{
+  "OldId": 1903445313,
+  "NewId": 1314473793,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(val\u0027anyr)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Tranquility - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Causes rains of healing energy to pour down in a large area, healing friendly allied units.|nLasts \u003CAEtq,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - Heals \u003CAEtq,DataA1\u003E hit points per second. 180 seconds cooldown. |n|cffffcc00Level 2|r - Heals \u003CAEtq,DataA2\u003E hit points per second. 165 seconds cooldown. |n|cffffcc00Level 3|r - Heals \u003CAEtq,DataA3\u003E hit points per second. 150 seconds cooldown. "
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Tranquility - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Tranquility - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes rains of healing energy to pour down in a large area, healing friendly allied units for 30 hit points per second. |nLasts 20 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes rains of healing energy to pour down in a large area, healing friendly allied units for 40 hit points per second. |nLasts 20 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes rains of healing energy to pour down in a large area, healing friendly allied units for 50 hit points per second. |nLasts 20 seconds."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    }
+  ]
+}

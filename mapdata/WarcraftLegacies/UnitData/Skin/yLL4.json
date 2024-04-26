@@ -1,0 +1,33 @@
+{
+  "OldId": 1836278382,
+  "NewId": 877415545,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2037408373,
+      "Value": 2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Yogg-Saron\u0027s Prison"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\BlackEmpireSiphoningCrystal.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackEmpireSiphoningCrystal.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(pedestal)"
+    }
+  ]
+}
