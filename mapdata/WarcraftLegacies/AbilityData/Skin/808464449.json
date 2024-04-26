@@ -53,13 +53,13 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "After 1.5 seconds, teleports 72 of the player\u0027s nearby units, including the caster, to a ground unit or structure in 1250 range."
+      "Value": "After 1.5 seconds, teleports \u003CA000,DataA2\u003E of the player\u0027s nearby units, including the caster, to a friendly ground unit or structure in  \u003CA000,Rng2\u003E range."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "After 1 seconds, teleports 84 of the player\u0027s nearby units, including the caster, to a ground unit or structure in 1500 range."
+      "Value": "After 1 seconds, teleports \u003CA000,DataA3\u003E of the player\u0027s nearby units, including the caster, to a friendly ground unit or structure in  \u003CA000,Rng3\u003E range."
     },
     {
       "Level": 4,
@@ -101,12 +101,12 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "After 2 seconds, teleports 60 of the player\u0027s nearby units, including the caster, to a ground unit or structure in 1000 range."
+      "Value": "After 2 seconds, teleports \u003CA000,DataA1\u003E of the player\u0027s nearby units, including the caster, to a friendly ground unit or structure in  \u003CA000,Rng1\u003E range."
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "After a 2 second delay, teleports the player\u0027s nearby units, including the caster, to any building or unit in range. |n|cffffcc00Level 1|r - Teleports 60 units, 1000 range, 30 second cooldown.|n|cffffcc00Level 2|r - Teleports 72 units, 1500 range, 25 second cooldown.|n|cffffcc00Level 3|r - Teleports 84 units, 2000 range, 20 second cooldown."
+      "Value": "After a 2 second delay, teleports the player\u0027s nearby units, including the caster, to any friendly building or unit in range. |n|cffffcc00Level 1|r - Teleports 60 units, 1000 range, 30 second cooldown.|n|cffffcc00Level 2|r - Teleports 72 units, 1500 range, 25 second cooldown.|n|cffffcc00Level 3|r - Teleports 84 units, 2000 range, 20 second cooldown."
     }
   ]
 }
