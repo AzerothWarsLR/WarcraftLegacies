@@ -171,6 +171,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Ragnaros);
+      LegendaryHeroManager.Register(YoggSaron);
       LegendaryHeroManager.Register(Vaelastrasz);
       CapitalManager.Register(Auchindoun);
       CapitalManager.Register(DraktharonKeep);

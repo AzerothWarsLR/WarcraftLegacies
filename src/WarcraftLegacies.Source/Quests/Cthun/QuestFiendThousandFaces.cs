@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
     {
       AddObjective(new ObjectiveControlLevel(UNIT_N02S_STORM_PEAKS, 20));
       AddObjective(new ObjectiveLegendDead(yoggsaron));
-      ResearchId = UPGRADE_RFTF_QUEST_COMPLETED_FIEND_WITH_A_THOUSAND_FACES;
+      ResearchId = UPGRADE_RFTF_QUEST_COMPLETED_FIEND_OF_A_THOUSAND_FACES;
     }
 
     /// <inheritdoc/>
