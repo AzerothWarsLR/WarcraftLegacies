@@ -52,18 +52,18 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(UNIT_STZ5_LIGHTHOUSE_C_THUN_EMPTY, UNLIMITED);
       ModObjectLimit(UNIT_TP73_TUNNEL_CTHUN, UNLIMITED);
 
-      ModObjectLimit(UNIT_U019_DRONE_C_THUN_WORKER, UNLIMITED);
-      ModObjectLimit(UNIT_O000_SILITHID_ROYALTY_C_THUN_ELITES, 6);
+      ModObjectLimit(UNIT_U019_WORKER_C_THUN_WORKER, UNLIMITED);
+      ModObjectLimit(UNIT_O000_ROYALTY_C_THUN_ELITES, 6);
 
-      ModObjectLimit(UNIT_N06I_SILITHID_WARRIOR_C_THUN_SILITHID_WARRIOR, UNLIMITED);
-      ModObjectLimit(UNIT_O00L_SILITHID_REAVER_C_THUN_SILITHID_REAVER, UNLIMITED);
-      ModObjectLimit(UNIT_U013_SILITHID_COLOSSUS_C_THUN, 12);
+      ModObjectLimit(UNIT_N06I_SOLDIER_C_THUN_SILITHID_WARRIOR, UNLIMITED);
+      ModObjectLimit(UNIT_O00L_CREMATOGASTER_C_THUN_SILITHID_REAVER, UNLIMITED);
+      ModObjectLimit(UNIT_U013_SUPER_MAJOR_C_THUN, 12);
 
-      ModObjectLimit(UNIT_N060_SILITHID_TUNNELER_C_THUN_SILITHID_TUNNELER, UNLIMITED);
+      ModObjectLimit(UNIT_N060_TUNNELER_C_THUN_SILITHID_TUNNELER, UNLIMITED);
       ModObjectLimit(UNIT_N05V_SHADOW_WEAVER_C_THUN_FACELESS_SHADOW_WEAVER, UNLIMITED);
       ModObjectLimit(UNIT_O001_TOL_VIR_STATUE_C_THUN_TOL_VIR_STATUE, 6);
 
-      ModObjectLimit(UNIT_O02N_SILITHID_WASP_CTHUN, 24);
+      ModObjectLimit(UNIT_O02N_ELATE_CTHUN, 24);
       ModObjectLimit(UNIT_H01N_VILE_CORRUPTER_C_THUN, 4);
       ModObjectLimit(UNIT_SL2O_OBSIDIAN_ERADICATOR_CTHUN, 12);
 
@@ -109,6 +109,7 @@ namespace WarcraftLegacies.Source.Factions
       AddQuest(new QuestWarOfTheShiftingSand(_allLegendSetup.Druids.Nordrassil));
       AddQuest(new QuestDeliciousMusculature(_allLegendSetup.Warsong.Orgrimmar));
       AddQuest(new QuestLitheMeat());
+      AddQuest(new QuestFiendThousandFaces(_allLegendSetup.Neutral.YoggSaron));
     }
 
     private void RegisterResearches()
@@ -117,10 +118,10 @@ namespace WarcraftLegacies.Source.Factions
       {
         TransformableUnitTypeIds = new int[]
         {
-          UNIT_U019_DRONE_C_THUN_WORKER,
-          UNIT_UCBD_BURROWED_DRONE_C_THUN_WORKER
+          UNIT_U019_WORKER_C_THUN_WORKER,
+          UNIT_UCBD_BURROWED_WORKER_C_THUN_WORKER
         },
-        TransformedUnitTypeId = UNIT_N06I_SILITHID_WARRIOR_C_THUN_SILITHID_WARRIOR
+        TransformedUnitTypeId = UNIT_N06I_SOLDIER_C_THUN_SILITHID_WARRIOR
       });
       ResearchManager.RegisterIncompatibleSet(new BasicResearch(UPGRADE_ZBML_SPELL_CONDUCTION_C_THUN, 170),
         new RemoveAbilityResearch(UPGRADE_ZBHS_SHAPED_OBSIDIAN_C_THUN, 100)
@@ -149,7 +150,7 @@ namespace WarcraftLegacies.Source.Factions
 
       PassiveAbilityManager.Register(new Incubate(UNIT_H01N_VILE_CORRUPTER_C_THUN, ABILITY_ZBRD_INCUBATE_VILE_CORRUPTOR)
       {
-        HatchedUnitTypeId = UNIT_N06I_SILITHID_WARRIOR_C_THUN_SILITHID_WARRIOR,
+        HatchedUnitTypeId = UNIT_N06I_SOLDIER_C_THUN_SILITHID_WARRIOR,
         MaturationDuration = new LeveledAbilityField<float>
         {
           Base = 540f,

@@ -51,7 +51,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Silithid Colossus"
+      "Value": "Super Major"
     },
     {
       "Id": 1668510581,
@@ -81,12 +81,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Train Silithid Colossus"
+      "Value": "Train Super Major"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Lumbering behemoths of the hive.|n|cfff5962dAbilities:|R Progeny Gland, Advanced Metabolism|n|cfff5962dCan learn:|R Cleaving Attack.|n|cff99b4d1Can only train 12.|r|n|n|cffffcc00Attacks land units.|r"
+      "Value": "Lumbering behemoths of the hive.|n|cfff5962dAbilities:|R Progeny Gland, Advanced Metabolism|n|cfff5962dCan learn:|R Cleaving Attack, Vampiric Attack.|n|cff99b4d1Can only train 12.|r|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

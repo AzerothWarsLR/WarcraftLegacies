@@ -45,6 +45,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         YoggSaron = new LegendaryHero("Yogg-Saron")
         {
           UnitType = UNIT_U02C_OLD_GOD,
+          PermaDies = true,
           DeathMessage = "Yogg-Saron, the beast with a thousand maws has been destroyed.",
           StartingArtifacts = new()
         {
@@ -171,6 +172,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Ragnaros);
+      LegendaryHeroManager.Register(YoggSaron);
       LegendaryHeroManager.Register(Vaelastrasz);
       CapitalManager.Register(Auchindoun);
       CapitalManager.Register(DraktharonKeep);

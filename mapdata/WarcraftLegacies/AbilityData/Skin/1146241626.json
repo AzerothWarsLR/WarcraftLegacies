@@ -19,7 +19,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Raises an Immature Egg from a nearby corpse. After 5 minutes, the egg matures. Mature eggs can be hatched into permanent Silithid Soldiers, and will automatically hatch if they are destroyed."
+      "Value": "Raises an Immature Egg from a nearby corpse. After 5 minutes, the egg matures. Mature eggs can be hatched into permanent Soldiers, and will automatically hatch if they are destroyed."
     },
     {
       "Id": 1802007905,
@@ -57,7 +57,7 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Raises an Immature Egg from a nearby corpse. After 1 minutes the egg matures. Mature eggs can be hatched into permanent Silithid Soldiers, and will automatically hatch if they are destroyed."
+      "Value": "Raises an Immature Egg from a nearby corpse. After 1 minutes the egg matures. Mature eggs can be hatched into permanent Soldiers, and will automatically hatch if they are destroyed."
     },
     {
       "Level": 2,
