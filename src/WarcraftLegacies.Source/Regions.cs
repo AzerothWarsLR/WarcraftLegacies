@@ -138,7 +138,7 @@ public static class Regions
 	public static Rectangle Havenshire { get; set; } = new Rectangle(20128f, 7040f, 22112f, 9472f);
 	public static Rectangle Hearthglen { get; set; } = new Rectangle(10304f, 10176f, 12992f, 11744f);
 	public static Rectangle HellfireUnlock { get; set; } = new Rectangle(-128f, -27488f, 2368f, -24736f);
-	public static Rectangle HideUnitBottomLeft { get; set; } = new Rectangle(-24128f, -30848f, -9024f, -22688f);
+	public static Rectangle HideUnitBottomLeft { get; set; } = new Rectangle(-24128f, -30848f, -9024f, -22816f);
 	public static Rectangle HighbankUnlock { get; set; } = new Rectangle(21664f, -8128f, 23200f, -6848f);
 	public static Rectangle Highmountain_Unlock { get; set; } = new Rectangle(1280f, 10048f, 2944f, 11968f);
 	public static Rectangle HinterlandAmbient1 { get; set; } = new Rectangle(13600f, 3040f, 19968f, 5376f);
@@ -160,7 +160,7 @@ public static class Regions
 	public static Rectangle JainaChannel { get; set; } = new Rectangle(-9888f, 17632f, -9792f, 17728f);
 	public static Rectangle KaelSunwellChannel { get; set; } = new Rectangle(18496f, 21568f, 18624f, 21696f);
 	public static Rectangle Kali_Ships { get; set; } = new Rectangle(-17600f, -15296f, -10816f, 5600f);
-	public static Rectangle Kalimdor { get; set; } = new Rectangle(-25056f, -20640f, -5600f, 11456f);
+	public static Rectangle Kalimdor { get; set; } = new Rectangle(-24992f, -20800f, -5536f, 11296f);
 	public static Rectangle KaliRock12 { get; set; } = new Rectangle(-9472f, -1888f, -8256f, -1248f);
 	public static Rectangle KezanAmbient { get; set; } = new Rectangle(-3200f, -10368f, 736f, -5184f);
 	public static Rectangle KezanUnlock { get; set; } = new Rectangle(-2400f, -8000f, 608f, -5184f);
@@ -348,5 +348,6 @@ public static class Regions
 	public static Rectangle ZulAman_trolls { get; set; } = new Rectangle(20288f, 11648f, 22848f, 17440f);
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
+	public static Rectangle Tempest_Rain { get; set; } = new Rectangle(-11744f, -22624f, -9440f, -20608f);
 
 }
