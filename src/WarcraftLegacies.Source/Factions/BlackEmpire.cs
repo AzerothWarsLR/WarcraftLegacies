@@ -10,6 +10,7 @@ namespace WarcraftLegacies.Source.Factions
       @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
     {
       ControlPointDefenderUnitTypeId = UNIT_N0DV_CONTROL_POINT_DEFENDER_BLACK_EMPIRE_TOWER;
+      TraditionalTeam = TeamSetup.OldGods;
     }
     
     /// <inheritdoc />
