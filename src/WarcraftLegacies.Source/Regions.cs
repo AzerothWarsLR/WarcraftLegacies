@@ -288,6 +288,7 @@ public static class Regions
 	public static Rectangle TeldrassilAmbient { get; set; } = new Rectangle(-20576f, 12160f, -16000f, 16544f);
 	public static Rectangle TeldrassilUnlock { get; set; } = new Rectangle(-20512f, 12256f, -16352f, 16512f);
 	public static Rectangle TelredorUnlock { get; set; } = new Rectangle(-3296f, -26464f, -1728f, -25376f);
+	public static Rectangle Tempest_Rain { get; set; } = new Rectangle(-11744f, -22624f, -9440f, -20608f);
 	public static Rectangle TempestKeep { get; set; } = new Rectangle(3584f, -22304f, 4768f, -21184f);
 	public static Rectangle TempestKeepSpawn { get; set; } = new Rectangle(3808f, -21856f, 4224f, -21504f);
 	public static Rectangle Terenas { get; set; } = new Rectangle(8096f, 7648f, 9984f, 9568f);
@@ -348,6 +349,5 @@ public static class Regions
 	public static Rectangle ZulAman_trolls { get; set; } = new Rectangle(20288f, 11648f, 22848f, 17440f);
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
-	public static Rectangle Tempest_Rain { get; set; } = new Rectangle(-11744f, -22624f, -9440f, -20608f);
 
 }
