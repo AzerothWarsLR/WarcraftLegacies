@@ -35,7 +35,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Forms a shield of flames around a target unit, dealing 15 damage per second to units around it. |nLasts 20 seconds. Lasts 10 seconds on heroes."
+      "Value": "Forms a shield of flames around a target unit, dealing \u003CA0AS,DataA1\u003E damage per second to units around it. |nLasts \u003CA0AS,Dur1\u003E seconds. Lasts \u003CA0AS,HeroDur1\u003E seconds on heroes."
     }
   ]
 }
