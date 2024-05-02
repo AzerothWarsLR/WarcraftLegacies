@@ -47,12 +47,12 @@ namespace Launcher.Services
     {
       var map = Map.Open(baseMapPath);
       var triggerStrings = map.TriggerStrings.ToDictionary();
+      ApplyMigrations(map);
       SerializeAndWriteMapData(map, triggerStrings, outputFolderPath);
       
       CopyImportedFiles(baseMapPath, outputFolderPath);
       CopyUnserializableFiles(baseMapPath, outputFolderPath);
       CopyGameInterface(baseMapPath, triggerStrings, outputFolderPath);
-      ApplyMigrations(map);
     }
 
     private void SerializeAndWriteMapData(Map map, TriggerStringDictionary triggerStrings, string outputFolderPath)
