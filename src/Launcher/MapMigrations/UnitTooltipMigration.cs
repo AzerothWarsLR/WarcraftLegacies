@@ -20,6 +20,8 @@ namespace Launcher.MapMigrations
       {
         DetermineTooltip(unit);
       }
+
+      map.UnitObjectData = objectDatabase.GetAllData().UnitData;
     }
 
     private static void DetermineTooltip(Unit unit)
