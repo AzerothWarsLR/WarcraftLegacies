@@ -64,9 +64,8 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
     {
       completingFaction.Player.RescueGroup(_rescueUnits1);
       completingFaction.Player.RescueGroup(_rescueUnits2);
-      foreach (var unit in _rescueUnits1)
-        if (!unit.IsType(UNIT_TYPE_PEON))
-          unit.IssueOrder("attack", new Point(14131.0f, -13207.0f));
+
+      completingFaction.Player.PingMinimapSimple(12400.0f, -11800.0f, 3.0f);
     }
     
 
