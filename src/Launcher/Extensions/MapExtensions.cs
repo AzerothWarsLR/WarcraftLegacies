@@ -27,14 +27,12 @@ namespace Launcher.Extensions
     {
       var objectDatabase = new ObjectDatabase();
       if (map.AbilityObjectData != null) objectDatabase.AddObjects(map.AbilityObjectData, map.AbilitySkinObjectData);
-      // if (map.BuffObjectData != null) objectDatabase.AddObjects(map.BuffObjectData, map.BuffSkinObjectData);
+      if (map.BuffObjectData != null) objectDatabase.AddObjects(map.BuffObjectData, map.BuffSkinObjectData);
       //if (map.DestructableObjectData != null) objectDatabase.AddObjects(map.DestructableObjectData);
-      //if (map.DoodadObjectData != null) objectDatabase.AddObjects(map.DoodadObjectData, map.DoodadSkinObjectData);
-      //if (map.ItemObjectData != null) objectDatabase.AddObjects(map.ItemObjectData, map.ItemSkinObjectData);
+      if (map.DoodadObjectData != null) objectDatabase.AddObjects(map.DoodadObjectData, map.DoodadSkinObjectData);
+      if (map.ItemObjectData != null) objectDatabase.AddObjects(map.ItemObjectData, map.ItemSkinObjectData);
       if (map.UnitObjectData != null) objectDatabase.AddObjects(map.UnitObjectData, map.UnitSkinObjectData);
-      //if (map.UpgradeObjectData != null) objectDatabase.AddObjects(map.UpgradeObjectData, map.UpgradeSkinObjectData);
-
-      var test = objectDatabase.GetUnits();
+      if (map.UpgradeObjectData != null) objectDatabase.AddObjects(map.UpgradeObjectData, map.UpgradeSkinObjectData);
       return objectDatabase;
     }
 

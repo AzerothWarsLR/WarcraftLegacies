@@ -138,14 +138,14 @@ namespace War3Api.Object
 
         public void AddObjects(ItemObjectData itemObjectData, ItemObjectData itemSkinObjectData)
         {
-          foreach (var oldItem in itemObjectData.BaseItems) 
-            AddOrModifyBaseItem(oldItem);
+          foreach (var baseItem in itemObjectData.BaseItems) 
+            AddOrModifyBaseItem(baseItem);
             
-          foreach (var oldItem in itemObjectData.NewItems) 
-            AddOrModifyBaseItem(oldItem);
-
-          foreach (var newItem in itemSkinObjectData.BaseItems) 
+          foreach (var newItem in itemObjectData.NewItems) 
             AddOrModifyNewItem(newItem);
+
+          foreach (var baseItem in itemSkinObjectData.BaseItems) 
+            AddOrModifyBaseItem(baseItem);
 
           foreach (var newItem in itemSkinObjectData.NewItems)
             AddOrModifyNewItem(newItem);
@@ -216,14 +216,14 @@ namespace War3Api.Object
 
         public void AddObjects(DoodadObjectData doodadObjectData, DoodadObjectData doodadSkinObjectData)
         {
-          foreach (var oldDoodad in doodadObjectData.BaseDoodads) 
-            AddOrModifyBaseDoodad(oldDoodad);
+          foreach (var baseDoodad in doodadObjectData.BaseDoodads) 
+            AddOrModifyBaseDoodad(baseDoodad);
             
-          foreach (var oldDoodad in doodadObjectData.NewDoodads) 
-            AddOrModifyBaseDoodad(oldDoodad);
-
-          foreach (var newDoodad in doodadSkinObjectData.BaseDoodads) 
+          foreach (var newDoodad in doodadObjectData.NewDoodads) 
             AddOrModifyNewDoodad(newDoodad);
+
+          foreach (var baseDoodad in doodadSkinObjectData.BaseDoodads) 
+            AddOrModifyBaseDoodad(baseDoodad);
 
           foreach (var newDoodad in doodadSkinObjectData.NewDoodads)
             AddOrModifyNewDoodad(newDoodad);
@@ -295,10 +295,10 @@ namespace War3Api.Object
             AddOrModifyBaseBuff(oldBuff);
             
           foreach (var oldBuff in buffObjectData.NewBuffs) 
-            AddOrModifyBaseBuff(oldBuff);
+            AddOrModifyNewBuff(oldBuff);
 
           foreach (var newBuff in buffSkinObjectData.BaseBuffs) 
-            AddOrModifyNewBuff(newBuff);
+            AddOrModifyBaseBuff(newBuff);
 
           foreach (var newBuff in buffSkinObjectData.NewBuffs)
             AddOrModifyNewBuff(newBuff);
@@ -330,14 +330,14 @@ namespace War3Api.Object
 
         public void AddObjects(UpgradeObjectData upgradeObjectData, UpgradeObjectData upgradeSkinObjectData)
         {
-          foreach (var oldUpgrade in upgradeObjectData.BaseUpgrades) 
-            AddOrModifyBaseUpgrade(oldUpgrade);
+          foreach (var baseUpgrade in upgradeObjectData.BaseUpgrades) 
+            AddOrModifyBaseUpgrade(baseUpgrade);
             
-          foreach (var oldUpgrade in upgradeObjectData.NewUpgrades) 
-            AddOrModifyBaseUpgrade(oldUpgrade);
-
-          foreach (var newUpgrade in upgradeSkinObjectData.BaseUpgrades) 
+          foreach (var newUpgrade in upgradeObjectData.NewUpgrades) 
             AddOrModifyNewUpgrade(newUpgrade);
+
+          foreach (var baseUpgrade in upgradeSkinObjectData.BaseUpgrades) 
+            AddOrModifyBaseUpgrade(baseUpgrade);
 
           foreach (var newUpgrade in upgradeSkinObjectData.NewUpgrades)
             AddOrModifyNewUpgrade(newUpgrade);
