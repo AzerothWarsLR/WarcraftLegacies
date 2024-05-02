@@ -269,16 +269,19 @@ namespace War3Api.Object
 
             void AddOrModifyBaseAbility(LevelObjectModification levelObjectModification)
             {
-              Ability ability;
-              this.TryGetAbility(levelObjectModification.OldId, out ability);
-              ability = ability ?? AbilityFactory.Create((AbilityType)levelObjectModification.OldId, this);
-              ability.AddModifications(levelObjectModification.Modifications);
+              if (this.TryGetAbility(levelObjectModification.OldId, out var existingAbility))
+              {
+                existingAbility.AddModifications(levelObjectModification.Modifications);
+                return;
+              }
+              var newAbility = AbilityFactory.Create((AbilityType)levelObjectModification.OldId, this);
+              newAbility.AddModifications(levelObjectModification.Modifications);
               return;
             }
 
             void AddOrModifyNewAbility(LevelObjectModification levelObjectModification)
             {
-              if (this.TryGetAbility(levelObjectModification.OldId, out var existingAbility))
+              if (this.TryGetAbility(levelObjectModification.NewId, out var existingAbility))
               {
                 existingAbility.AddModifications(levelObjectModification.Modifications);
                 return;

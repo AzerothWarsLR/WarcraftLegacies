@@ -21,35 +21,41 @@ namespace Launcher.MapMigrations
         DetermineTooltip(unit);
       }
 
-      map.UnitObjectData = objectDatabase.GetAllData().UnitData;
+      var unitData = objectDatabase.GetAllData().UnitData;
+      map.UnitObjectData = unitData;
+      map.UnitSkinObjectData = unitData;
     }
 
     private static void DetermineTooltip(Unit unit)
     {
       var tooltipBuilder = new StringBuilder();
-      AppendFlavour(tooltipBuilder, unit);
-      try
+      if (unit.IsTextNameModified)
       {
-        foreach (var ability in unit.AbilitiesNormal)
+        Console.WriteLine($"Modifying {unit.TextName}...");
+      }
+      else
+      {
+        return;
+      }
+
+      AppendFlavour(tooltipBuilder, unit);
+
+      foreach (var ability in unit.AbilitiesNormal)
+      {
+        try
         {
-          try
-          {
-            tooltipBuilder.AppendLine(ability.TextName);
-            Console.WriteLine("nice!");
-          }
-          catch
-          {
-            Console.WriteLine("oh wow");
-          }
+          tooltipBuilder.AppendLine(ability.TextName);
+          Console.WriteLine($"Successfully got name {ability.TextName}");
+        }
+        catch
+        {
+          Console.WriteLine($"Failed to get {ability} TextName");
         }
       }
-      catch
-      {
-        Console.WriteLine("not good");
-      }
 
-
-      unit.TextTooltipExtended = tooltipBuilder.ToString();
+      var extendedTooltip = tooltipBuilder.ToString();
+      Console.WriteLine(extendedTooltip);
+      unit.TextTooltipExtended = extendedTooltip;
     }
 
     private static void AppendFlavour(StringBuilder stringBuilder, Unit unit)
@@ -61,7 +67,7 @@ namespace Launcher.MapMigrations
       }
       catch
       {
-        Console.WriteLine("bugger");
+        Console.WriteLine($"Failed to get {unit} extended tooltip");
       }
     }
   }
