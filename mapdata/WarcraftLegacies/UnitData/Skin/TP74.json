@@ -1,0 +1,19 @@
+{
+  "OldId": 1918985807,
+  "NewId": 876040276,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Twin Emperor"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\TwinEmperorCustomAnimtation.mdl"
+    }
+  ]
+}

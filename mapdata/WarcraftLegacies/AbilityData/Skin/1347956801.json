@@ -8,7 +8,7 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodLust1.BLP"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCannibalize.blp"
     },
     {
       "Id": 2020631137,
@@ -21,7 +21,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Warsong-Nazgrel-Kor\u0027Kron)"
+      "Value": "(Nazgrel, Kor\u0027kon)"
     },
     {
       "Id": 2037082209,
@@ -31,19 +31,19 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Bloodcraze"
+      "Value": "Carnage"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Bloodcraze"
+      "Value": "Carnage"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Become enraged, causing attacks to steal 60% life and increasing damage by 10.|nLasts 30 seconds."
+      "Value": "Grants this unit \u003CA0XP,DataA1\u003E bonus damage and \u003CA0XP,DataB1,%\u003E% lifesteal for \u003CA0XP,Dur1\u003E seconds."
     }
   ]
 }

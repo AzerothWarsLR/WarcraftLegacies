@@ -107,7 +107,6 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
       var questRepairHull = new QuestRepairExodarHull(Regions.ExodarBaseUnlock, _allLegendSetup.Draenei.LegendExodar);
       StartingQuest = questRepairHull;
       AddQuest(questRepairHull);
-      AddQuest(new QuestRebuildCivilisation(Regions.DesolaceUnlock, _allLegendSetup.Draenei.Velen));
       AddQuest(new QuestShipArgus(
         _preplacedUnitSystem.GetUnit(UNIT_H03V_ENTRANCE_PORTAL, Regions.OutlandToArgus.Center),
         _preplacedUnitSystem.GetUnit(UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center),
@@ -127,7 +126,8 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
     private void RegisterPowers()
     {
       var dummyPower = new DummyPower("Crystallization",
-        "Arcane Wells placed directly near Divine Citadels will generate mana for them over time. You can then convert that mana into units. The maximum number of Arcane Well around a Divine Citadel is 12 if placed optimally");
+        "Arcane Wells placed directly near Divine Citadels will generate mana for them over time. You can then convert that mana into units. The maximum number of Arcane Well around a Divine Citadel is 12 if placed optimally",
+        "ManaGem.blp");
       AddPower(dummyPower);
     }
   }

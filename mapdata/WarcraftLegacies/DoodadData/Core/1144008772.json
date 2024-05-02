@@ -71,7 +71,7 @@
     {
       "Variation": 2,
       "Id": 829584996,
-      "Value": 25
+      "Value": 15
     },
     {
       "Variation": 2,
@@ -81,7 +81,7 @@
     {
       "Variation": 2,
       "Id": 828536420,
-      "Value": 40
+      "Value": 20
     },
     {
       "Variation": 3,
@@ -115,7 +115,7 @@
     },
     {
       "Id": 1918989924,
-      "Value": 5
+      "Value": 6
     },
     {
       "Variation": 5,
@@ -131,6 +131,21 @@
       "Variation": 5,
       "Id": 829584996,
       "Value": 35
+    },
+    {
+      "Variation": 6,
+      "Id": 828536420,
+      "Value": 50
+    },
+    {
+      "Variation": 6,
+      "Id": 828864100,
+      "Value": 50
+    },
+    {
+      "Variation": 6,
+      "Id": 829584996,
+      "Value": 50
     }
   ]
 }

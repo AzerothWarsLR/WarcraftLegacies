@@ -24,7 +24,6 @@ namespace WarcraftLegacies.Source.Factions
       _allLegendSetup = allLegendSetup;
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_O01C_CONTROL_POINT_DEFENDER_GOBLIN;
-      StartingUnits = Regions.GoblinStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       LearningDifficulty = FactionLearningDifficulty.Advanced;
       IntroText = @"You are playing as the industrious |cff808080Bilgewater Cartel|r.
 
@@ -155,6 +154,7 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
       var oilPower = new OilPower
       {
         Name = "Oil Tycoon",
+        IconName = "OilStation",
         StartingRandomOilPoolCount = 3,
         MaximumOilPoolCount = 15,
         OilPoolMinimumValue = 1500,

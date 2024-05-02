@@ -37,17 +37,23 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Frenzy"
+      "Value": "Windfury"
     },
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNFrenzy.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCWindfury.blp"
     },
     {
       "Id": 1918989665,
       "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNFrenzy.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCWindfury.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Windfury"
     }
   ]
 }

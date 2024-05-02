@@ -1,0 +1,28 @@
+{
+  "OldId": 1836278382,
+  "NewId": 877415545,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "LLLN"
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1000
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": "mechanical,neutral,sapper"
+    }
+  ]
+}

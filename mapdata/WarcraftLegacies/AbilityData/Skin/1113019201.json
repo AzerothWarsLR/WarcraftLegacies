@@ -1,0 +1,57 @@
+{
+  "OldId": 1718829889,
+  "NewId": 1113019201,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSwarmScarab.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(cthun)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Summon Swarm Beetle"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Swarm Beetles - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The unit spawns \u003CASWB,DataB1\u003E uncontrollable Swarm Beetle to attack the casters\u0027 enemies. Beetles last \u003CASWB,Dur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Swarm Beetles - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The unit spawns \u003CASWB,DataB2\u003E uncontrollable Swarm Beetle to attack the casters\u0027 enemies. The Beetles last \u003CASWB,Dur2\u003E seconds."
+    }
+  ]
+}

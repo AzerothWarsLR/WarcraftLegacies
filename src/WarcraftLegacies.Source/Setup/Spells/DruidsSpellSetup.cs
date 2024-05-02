@@ -1,7 +1,9 @@
 ﻿using MacroTools;
-using MacroTools.Spells;
+using MacroTools.PassiveAbilities;
+using MacroTools.PassiveAbilitySystem;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.Spells.MassiveAttack;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -9,8 +11,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
   {
     public static void Setup()
     {
-      
-
       SpellSystem.Register(new Devour(ABILITY_A0NP_DEVOUR_TORTOLLA)
       {
         PercentageOfMaxHealth = 0.5f,
@@ -29,6 +29,12 @@ namespace WarcraftLegacies.Source.Setup.Spells
           Base = 100,
           PerLevel = 100
         }
+      });
+      
+      PassiveAbilityManager.Register(new MassiveAttackAbility(UNIT_E00A_ANCIENT_GUARDIAN_DRUIDS)
+      {
+        AttackDamagePercentage = 0.5f,
+        Distance = 700
       });
     }
   }

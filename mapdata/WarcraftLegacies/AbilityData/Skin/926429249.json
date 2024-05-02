@@ -6,11 +6,6 @@
   ],
   "Modifications": [
     {
-      "Id": 1953653089,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\PASShieldHumanLionMark.BLP"
-    },
-    {
       "Id": 2020631137,
       "Value": 1
     },
@@ -21,7 +16,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Dark Green - Galen)"
+      "Value": "(Galen Trollbane)"
     },
     {
       "Id": 2037082209,
@@ -31,7 +26,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Warplate"
+      "Value": "Hardened"
     },
     {
       "Id": 1918988897,
@@ -57,7 +52,7 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Warplate"
+      "Value": "Hardened"
     },
     {
       "Level": 1,

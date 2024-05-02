@@ -1,0 +1,24 @@
+{
+  "OldId": 1869640514,
+  "NewId": 1498174274,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Plague Strike"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit was hit by Plague Strike; its movement speed and attack rate have been reduced, and it will take damage over time."
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPoisonRain.blp"
+    }
+  ]
+}

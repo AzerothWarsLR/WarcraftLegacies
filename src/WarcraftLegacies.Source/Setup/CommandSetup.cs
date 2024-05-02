@@ -21,9 +21,6 @@ namespace WarcraftLegacies.Source.Setup
       commandManager.Register(new GiveGold("givegold"));
       commandManager.Register(new GiveGold("gold"));
       commandManager.Register(new GiveGold("g"));
-      commandManager.Register(new ListArtifacts());
-      commandManager.Register(new Artifact());
-      commandManager.Register(new MacroTools.Commands.Powers());
       commandManager.CreateInfoQuest();
     }
   }

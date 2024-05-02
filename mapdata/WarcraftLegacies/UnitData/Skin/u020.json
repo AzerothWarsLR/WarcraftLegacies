@@ -23,7 +23,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Primary structure.|n|cfff5962dTrains:|R Drone|n|cfff5962dUpgrades to:|R Ruined Temple"
+      "Value": "Primary structure.|n|cfff5962dTrains:|R Worker, Royalty|n|cfff5962dResearches:|R Progenesis, Deep Burrow|n|cfff5962dUpgrades to:|R Ruined Temple|n|cfff5962dAbilities:|R Ahn\u0027Qiraj Spirits"
     },
     {
       "Id": 1835101813,
@@ -38,12 +38,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(C\u0027thun building)"
+      "Value": "(C\u0027thun T1)"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\NerubianStrongholdV2.mdl"
+      "Value": "war3mapImported\\CthunTownHallAll.mdl"
     },
     {
       "Id": 1735156597,
@@ -59,14 +59,19 @@
       "Value": 0
     },
     {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 0.6
-    },
-    {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtonsBTNNerubianStronghold.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunT1.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 3.5
     }
   ]
 }

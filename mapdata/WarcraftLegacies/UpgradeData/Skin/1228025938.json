@@ -9,7 +9,7 @@
       "Level": 1,
       "Id": 829579623,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNfuryoftheair.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWindfury.blp"
     },
     {
       "Level": 2,
@@ -67,7 +67,7 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Warlock\u0027s mana capacity, mana regeneration rate, hit points and gives them the ability to cast Frenzy."
+      "Value": "Increases Warlock\u0027s mana capacity, mana regeneration rate, hit points and gives them the ability to cast Windfury."
     },
     {
       "Level": 2,

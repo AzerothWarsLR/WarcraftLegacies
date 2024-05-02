@@ -136,7 +136,7 @@ Gather your forces and strike before the Horde can organize their efforts.";
 
     private void RegisterQuests()
     {
-      var newQuest = AddQuest(new QuestMalfurionAwakens(Regions.MoongladeVillage, Regions.TeldrassilUnlock, Regions.CenarionHoldUnlock,
+      var newQuest = AddQuest(new QuestMalfurionAwakens(Regions.MoongladeVillage, Regions.TeldrassilUnlock,
         _allLegendSetup.Druids.Nordrassil.Unit, _artifactSetup.HornOfCenarius,
         _allLegendSetup.Druids.Malfurion));
       StartingQuest = newQuest;
@@ -196,6 +196,7 @@ Gather your forces and strike before the Horde can organize their efforts.";
       };
       AddPower(new Immortality(20, 40, worldTrees)
       {
+        IconName = "ArcaneRessurection",
         Name = "Immortality",
         Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
         ResearchId = UPGRADE_YB01_IMMORTALITY_POWER_IS_ACTIVE

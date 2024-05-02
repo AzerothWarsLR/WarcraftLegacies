@@ -1,5 +1,5 @@
 {
-  "OldId": 1819243621,
+  "OldId": 1852138597,
   "NewId": 1345400933,
   "Unk": [
     0
@@ -48,7 +48,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\CoralofLifeV1.00.mdl"
+      "Value": "war3mapImported/DoyenOfWishes2.mdl"
     }
   ]
 }

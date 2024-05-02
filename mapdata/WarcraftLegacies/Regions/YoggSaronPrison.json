@@ -1,0 +1,15 @@
+{
+  "Left": 3712,
+  "Bottom": 23104,
+  "Right": 4448,
+  "Top": 23712,
+  "Name": "YoggSaronPrison",
+  "CreationNumber": 161,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

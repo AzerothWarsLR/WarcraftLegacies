@@ -4,12 +4,12 @@
   "EditorVersion": 6115,
   "GameVersion": "1.36.1.21015",
   "MapName": "Warcraft Legacies",
-  "MapAuthor": "Lordsebas, HerrDave,YakaryBovine",
+  "MapAuthor": "Lordsebas, HerrDave, YakaryBovine",
   "MapDescription": "Support the team! https://www.patreon.com/lordsebas\r\n\r\nCheck out the Azeroth Wars Discord server to download the map and chat about the game. https://discord.gg/pnWZs69",
   "RecommendedPlayers": "16 Players ",
   "CameraBounds": {
     "BottomLeft": {
-      "X": -24064,
+      "X": -28160,
       "Y": -32000
     },
     "TopRight": {
@@ -17,7 +17,7 @@
       "Y": 24576
     },
     "TopLeft": {
-      "X": -24064,
+      "X": -28160,
       "Y": 24576
     },
     "BottomRight": {
@@ -29,14 +29,14 @@
     "Right": 6,
     "Top": 2
   },
-  "PlayableMapAreaWidth": 378,
+  "PlayableMapAreaWidth": 410,
   "PlayableMapAreaHeight": 446,
   "MapFlags": 51194,
   "Tileset": 89,
   "LoadingScreenBackgroundNumber": 99,
   "LoadingScreenPath": "",
-  "LoadingScreenText": "Support the team! https://www.patreon.com/lordsebas\r\nThank you so much to all our patrons for supporting us!\r\n\r\nFight over the control of Azeroth as one of over 16 factions from the Warcraft III campaign and more!\r\n\r\nLeads: Lord Sebas, YakaryBovine\r\n\r\nArtists: HerrDave\r\nProgrammers: Tracy, Savantic\r\nDevelopers: Technopig, Madsen, Vampirika\r\nDiscord link: https://discord.gg/4eGZnR5",
-  "LoadingScreenTitle": "Warcraft Legacies 3.6.0",
+  "LoadingScreenText": "Support the team! https://www.patreon.com/lordsebas\r\nThank you so much to all our patrons for supporting us!\r\n\r\nFight over the control of Azeroth as one of over 16 factions from the Warcraft III campaign and more!\r\n\r\nLeads: Lord Sebas, YakaryBovine\r\nArtists: HerrDave\r\nDevelopers: Technopig, Madsen, Vampirika\r\nDiscord link: https://discord.gg/4eGZnR5",
+  "LoadingScreenTitle": "Warcraft Legacies",
   "LoadingScreenSubtitle": "",
   "GameDataSet": 2,
   "PrologueScreenPath": "",
@@ -59,12 +59,12 @@
       "Flags": 1,
       "Name": "Frostwolf Clan",
       "StartPosition": {
-        "X": -9344,
-        "Y": -11456
+        "X": -8512,
+        "Y": -2880
       },
       "AllyLowPriorityFlags": 4456450,
-      "AllyHighPriorityFlags": 262432,
-      "EnemyLowPriorityFlags": 262176,
+      "AllyHighPriorityFlags": 475136,
+      "EnemyLowPriorityFlags": 262144,
       "EnemyHighPriorityFlags": 262144
     },
     {
@@ -77,13 +77,12 @@
         "X": 7104,
         "Y": -15616
       },
-      "AllyLowPriorityFlags": 8650784,
-      "EnemyLowPriorityFlags": 32
+      "AllyLowPriorityFlags": 8650752
     },
     {
       "Id": 2,
       "Controller": 1,
-      "Race": 4,
+      "Race": 1,
       "Flags": 1,
       "Name": "Quel\u0027thalas",
       "StartPosition": {
@@ -92,8 +91,7 @@
       },
       "AllyLowPriorityFlags": 8388693,
       "AllyHighPriorityFlags": 262669,
-      "EnemyLowPriorityFlags": 8388608,
-      "EnemyHighPriorityFlags": 32
+      "EnemyLowPriorityFlags": 8388608
     },
     {
       "Id": 3,
@@ -105,10 +103,10 @@
         "X": -1728,
         "Y": 22080
       },
-      "AllyLowPriorityFlags": 36,
-      "AllyHighPriorityFlags": 100,
-      "EnemyLowPriorityFlags": 270368,
-      "EnemyHighPriorityFlags": 8658944
+      "AllyLowPriorityFlags": 4,
+      "AllyHighPriorityFlags": 68,
+      "EnemyLowPriorityFlags": 262144,
+      "EnemyHighPriorityFlags": 8650752
     },
     {
       "Id": 4,
@@ -123,21 +121,6 @@
       "AllyLowPriorityFlags": 4456456,
       "AllyHighPriorityFlags": 8650752,
       "EnemyLowPriorityFlags": 262144
-    },
-    {
-      "Id": 5,
-      "Controller": 1,
-      "Race": 2,
-      "Flags": 1,
-      "Name": "Warsong",
-      "StartPosition": {
-        "X": -8448,
-        "Y": -2752
-      },
-      "AllyLowPriorityFlags": -1035730944,
-      "AllyHighPriorityFlags": 1174667264,
-      "EnemyLowPriorityFlags": -994050048,
-      "EnemyHighPriorityFlags": -1031798784
     },
     {
       "Id": 6,
@@ -168,18 +151,6 @@
       "AllyHighPriorityFlags": 262664
     },
     {
-      "Id": 8,
-      "Controller": 1,
-      "Race": 2,
-      "Flags": 1,
-      "Name": "Goblin",
-      "StartPosition": {
-        "X": -8896,
-        "Y": -13504
-      },
-      "AllyHighPriorityFlags": 1
-    },
-    {
       "Id": 9,
       "Controller": 1,
       "Race": 1,
@@ -201,23 +172,22 @@
         "X": -9344,
         "Y": 10560
       },
-      "AllyLowPriorityFlags": 262152,
+      "AllyLowPriorityFlags": 475144,
       "AllyHighPriorityFlags": 76,
       "EnemyLowPriorityFlags": 262144,
       "EnemyHighPriorityFlags": 262144
     },
     {
-      "Id": 13,
+      "Id": 14,
       "Controller": 1,
-      "Race": 4,
+      "Race": 3,
       "Flags": 1,
-      "Name": "Draenei",
+      "Name": "Black Empire",
       "StartPosition": {
-        "X": -20608,
-        "Y": 8512
+        "X": -23872,
+        "Y": -8960
       },
-      "AllyHighPriorityFlags": 32,
-      "EnemyLowPriorityFlags": 176
+      "AllyHighPriorityFlags": 196608
     },
     {
       "Id": 15,
@@ -229,8 +199,32 @@
         "X": 384,
         "Y": 5952
       },
-      "AllyLowPriorityFlags": 4203008,
-      "AllyHighPriorityFlags": 264481
+      "AllyLowPriorityFlags": 4194816,
+      "AllyHighPriorityFlags": 477185
+    },
+    {
+      "Id": 16,
+      "Controller": 1,
+      "Race": 3,
+      "Flags": 1,
+      "Name": "Ahn\u0027Qiraj",
+      "StartPosition": {
+        "X": -23232,
+        "Y": -19584
+      },
+      "AllyHighPriorityFlags": 147456
+    },
+    {
+      "Id": 17,
+      "Controller": 1,
+      "Race": 4,
+      "Flags": 1,
+      "Name": "Skywall",
+      "StartPosition": {
+        "X": -13504,
+        "Y": -20160
+      },
+      "AllyHighPriorityFlags": 81920
     },
     {
       "Id": 18,
@@ -239,13 +233,13 @@
       "Flags": 1,
       "Name": "Sentinels",
       "StartPosition": {
-        "X": -22592,
-        "Y": -13696
+        "X": -20672,
+        "Y": 8448
       },
       "AllyLowPriorityFlags": 4194321,
-      "AllyHighPriorityFlags": 262196,
-      "EnemyLowPriorityFlags": 4194480,
-      "EnemyHighPriorityFlags": 12582944
+      "AllyHighPriorityFlags": 262164,
+      "EnemyLowPriorityFlags": 4194448,
+      "EnemyHighPriorityFlags": 12582912
     },
     {
       "Id": 22,
@@ -257,8 +251,7 @@
         "X": 3904,
         "Y": -13440
       },
-      "AllyHighPriorityFlags": 16,
-      "EnemyLowPriorityFlags": 32
+      "AllyHighPriorityFlags": 16
     },
     {
       "Id": 23,
@@ -275,7 +268,7 @@
   "Forces": [
     {
       "Flags": 11,
-      "Players": -4500472,
+      "Players": -4491992,
       "Name": "Scourge, Legion"
     },
     {
@@ -285,7 +278,7 @@
     },
     {
       "Flags": 11,
-      "Players": 289,
+      "Players": 1,
       "Name": "Frostwolf, Warsong, Goblin"
     },
     {
@@ -295,7 +288,7 @@
     },
     {
       "Flags": 11,
-      "Players": 272384,
+      "Players": 264192,
       "Name": "Druids, Draenei, Sentinels"
     },
     {
@@ -2752,35 +2745,35 @@
       "Level": 1
     },
     {
-      "Players": 589824,
+      "Players": 524288,
       "Id": 1701668946,
       "Availability": 2
     },
     {
-      "Players": 589824,
+      "Players": 524288,
       "Id": 1701668946,
       "Level": 1,
       "Availability": 2
     },
     {
-      "Players": 589824,
+      "Players": 524288,
       "Id": 1701668946,
       "Level": 2,
       "Availability": 2
     },
     {
-      "Players": 589824,
+      "Players": 524288,
       "Id": 1918986322,
       "Availability": 2
     },
     {
-      "Players": 589824,
+      "Players": 524288,
       "Id": 1918986322,
       "Level": 1,
       "Availability": 2
     },
     {
-      "Players": 589824,
+      "Players": 524288,
       "Id": 1918986322,
       "Level": 2,
       "Availability": 2
@@ -5812,10 +5805,6 @@
       "Id": 1463300206
     },
     {
-      "Players": 131071,
-      "Id": 1262039150
-    },
-    {
       "Players": 16777215,
       "Id": 1329148014
     },
@@ -6741,27 +6730,11 @@
     },
     {
       "Players": 14986751,
-      "Id": 1362178149
-    },
-    {
-      "Players": 14986751,
-      "Id": 1378955365
-    },
-    {
-      "Players": 14986751,
       "Id": 1395732581
     },
     {
       "Players": 14986751,
       "Id": 1412509797
-    },
-    {
-      "Players": 14986751,
-      "Id": 1429287013
-    },
-    {
-      "Players": 14986751,
-      "Id": 1446064229
     },
     {
       "Players": 14986751,
@@ -6865,10 +6838,6 @@
     },
     {
       "Players": 16777215,
-      "Id": 1463103592
-    },
-    {
-      "Players": 16777215,
       "Id": 1194733672
     },
     {
@@ -6878,10 +6847,6 @@
     {
       "Players": 16777215,
       "Id": 1094201454
-    },
-    {
-      "Players": 16777215,
-      "Id": 892350575
     },
     {
       "Players": 132,
@@ -7230,6 +7195,34 @@
     {
       "Players": 131071,
       "Id": 926232686
+    },
+    {
+      "Players": 16777215,
+      "Id": 892350575
+    },
+    {
+      "Players": 14986751,
+      "Id": 1362178149
+    },
+    {
+      "Players": 14986751,
+      "Id": 1378955365
+    },
+    {
+      "Players": 14986751,
+      "Id": 1429287013
+    },
+    {
+      "Players": 14986751,
+      "Id": 1446064229
+    },
+    {
+      "Players": 131071,
+      "Id": 1262039150
+    },
+    {
+      "Players": 16777215,
+      "Id": 1463103592
     },
     {
       "Players": 14139391,

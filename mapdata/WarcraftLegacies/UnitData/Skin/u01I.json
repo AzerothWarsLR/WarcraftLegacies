@@ -16,7 +16,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(C\u0027thun Building Item)"
+      "Value": "(C\u0027thun Shop)"
     },
     {
       "Id": 1953523061,
@@ -30,7 +30,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\NerubianReliquary.mdl"
+      "Value": "war3mapImported\\CthunSpawningPit2.mdl"
     },
     {
       "Id": 1735156597,
@@ -44,7 +44,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.6
+      "Value": 0.8
     },
     {
       "Id": 1835101813,
@@ -59,7 +59,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Summon - Chamber of Wonders"
+      "Value": "Summon Chamber of Wonders"
     },
     {
       "Id": 1935832437,
@@ -69,7 +69,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Creates a shop with purchasable items."
+      "Value": "Creates a shop with purchasable items.|n|cfff5962dAbilities:|R Ahn\u0027Qiraj Spirits"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunCatacombs.blp"
     }
   ]
 }

@@ -74,6 +74,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     {
       var rewardPower = new ControlLevelPerTurnBonus(0.5f)
       {
+        IconName = "ShieldOfUnification",
         Name = RewardPowerName
       };
       

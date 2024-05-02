@@ -16,11 +16,6 @@
       "Value": "Z"
     },
     {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 0.65
-    },
-    {
       "Id": 1935832437,
       "Type": 3,
       "Value": ""
@@ -28,7 +23,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Ancient Temple of the Qiraji.|n|cfff5962dTrains:|R Drone|n|cfff5962dUpgrades to:|R Nexus"
+      "Value": "Ancient Temple of the Qiraji.|n|cfff5962dTrains:|R Worker, Royalty|n|cfff5962dResearches:|R Progenesis, Deep Burrow|n|cfff5962dUpgrades to:|R Nexus|n|cfff5962dAbilities:|R Ahn\u0027Qiraj Spirits"
     },
     {
       "Id": 1835101813,
@@ -43,12 +38,12 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(C\u0027thun building)"
+      "Value": "(C\u0027thun T2)"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\NerubianStrongholdV2.mdl"
+      "Value": "war3mapImported\\CthunTownHallAll.mdl"
     },
     {
       "Id": 1651270517,
@@ -72,6 +67,21 @@
       "Id": 828468597,
       "Type": 2,
       "Value": 0.5
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunT1.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 4
     }
   ]
 }

@@ -49,7 +49,7 @@
       "Pointer": 2,
       "Id": 846490952,
       "Type": 2,
-      "Value": 0
+      "Value": 2
     },
     {
       "Id": 1986358369,
@@ -88,14 +88,14 @@
       "Pointer": 2,
       "Id": 846490952,
       "Type": 2,
-      "Value": 0
+      "Value": 1.5
     },
     {
       "Level": 3,
       "Pointer": 2,
       "Id": 846490952,
       "Type": 2,
-      "Value": 0
+      "Value": 1
     },
     {
       "Level": 4,

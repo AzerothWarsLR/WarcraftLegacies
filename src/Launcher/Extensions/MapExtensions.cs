@@ -81,6 +81,9 @@ namespace Launcher.Extensions
 
       foreach (var file in additionalFiles)
       {
+        if (!File.Exists(file.AbsolutePath)) 
+          continue;
+        
         var destinationPath = Path.Combine(destinationRootDirectory, file.RelativePath);
         Directory.CreateDirectory(Path.GetDirectoryName(destinationPath));
         File.Copy(file.AbsolutePath, Path.Combine(destinationRootDirectory, file.RelativePath), true);

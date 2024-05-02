@@ -22,7 +22,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1
+      "Value": 0.5
     },
     {
       "Id": 1885959285,
@@ -42,7 +42,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\BlackEmpirePrisonOfUnspeakableHorrors.mdl"
+      "Value": "war3mapImported\\GreatRift.mdl"
     },
     {
       "Id": 1868786037,

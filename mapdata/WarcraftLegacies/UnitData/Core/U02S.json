@@ -8,7 +8,7 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "A0GK,AInv"
+      "Value": "ZBEG,A0GK,AInv"
     },
     {
       "Id": 1768382837,
@@ -43,7 +43,7 @@
     {
       "Id": 1650550901,
       "Type": 3,
-      "Value": "AUim,A015,A0S0,A066,Aamk"
+      "Value": "A000,AUim,A0S0,A066,Aamk"
     },
     {
       "Id": 1836083317,
@@ -155,6 +155,11 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "RLLL"
     }
   ]
 }

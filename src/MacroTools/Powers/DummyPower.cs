@@ -5,10 +5,11 @@ namespace MacroTools.Powers
 {
   public sealed class DummyPower : Power
   {
-    public DummyPower(string name, string description)
+    public DummyPower(string name, string description, string iconName)
     {
       Name = name;
       Description = description;
+      IconName = iconName;
     }
 
     public override void OnAdd(Common.player whichPlayer)

@@ -42,7 +42,7 @@
     {
       "Id": 1952542837,
       "Type": 3,
-      "Value": "PathTextures\\10x10SimpleSolid.tga"
+      "Value": "PathTextures\\8x8SimpleSolid.tga"
     },
     {
       "Id": 1885433973,
@@ -56,7 +56,7 @@
     {
       "Id": 1936028277,
       "Type": 3,
-      "Value": ""
+      "Value": "RDBD,R003"
     },
     {
       "Id": 1932616053,
@@ -70,7 +70,7 @@
     {
       "Id": 1919381621,
       "Type": 3,
-      "Value": "Rusm,Rhme,Rgfo"
+      "Value": "Rgfo,Rhme"
     },
     {
       "Id": 1836412021,
@@ -89,6 +89,14 @@
       "Id": 1953527157,
       "Type": 3,
       "Value": "u022"
+    },
+    {
+      "Id": 1852137845,
+      "Value": 0
+    },
+    {
+      "Id": 1769107573,
+      "Value": 19
     }
   ]
 }

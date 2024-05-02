@@ -8,7 +8,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(antonidas)"
+      "Value": "(ouro)"
     },
     {
       "Id": 2037082209,
@@ -23,30 +23,25 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "Learn Glimpse - [|cffffcc00Level %d|r]"
-    },
-    {
-      "Id": 1953854049,
-      "Type": 3,
-      "Value": "Instantly teleport units, including the caster, to any building or unit in range. |n|cffffcc00Level 1|r - Teleports 60 units, 1000 range, 30 second cooldown.|n|cffffcc00Level 2|r - Teleports 72 units, 1500 range, 25 second cooldown.|n|cffffcc00Level 3|r - Teleports 84 units, 2000 range, 20 second cooldown."
+      "Value": "Learn Shifting Sands - [|cffffcc00Level %d|r]"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Glimpse - [|cffffcc00Level 1|r]"
+      "Value": "Shifting Sands - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Glimpse - [|cffffcc00Level 2|r]"
+      "Value": "Shifting Sands - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Glimpse - [|cffffcc00Level 3|r]"
+      "Value": "Shifting Sands - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
@@ -58,13 +53,13 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Teleports 72 of the player\u0027s nearby units, including the caster, to a ground unit or structure in 1250 range."
+      "Value": "After 1.5 seconds, teleports \u003CA000,DataA2\u003E of the player\u0027s nearby units, including the caster, to a friendly ground unit or structure in \u003CA000,Rng2\u003E range."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Teleports 84 of the player\u0027s nearby units, including the caster, to a ground unit or structure in 1500 range."
+      "Value": "After 1 seconds, teleports \u003CA000,DataA3\u003E of the player\u0027s nearby units, including the caster, to a friendly ground unit or structure in \u003CA000,Rng3\u003E range."
     },
     {
       "Level": 4,
@@ -75,38 +70,43 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlink.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_SandAvenger.blp"
     },
     {
       "Id": 1918988897,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlink.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_SandAvenger.blp"
     },
     {
       "Id": 1952539489,
       "Type": 3,
-      "Value": "Abilities\\Spells\\Human\\MassTeleport\\MassTeleportCaster.mdl"
+      "Value": "Objects\\Spawnmodels\\Undead\\ImpaleTargetDust\\ImpaleTargetDust.mdl"
     },
     {
       "Id": 1952543585,
       "Type": 3,
-      "Value": "Abilities\\Spells\\NightElf\\Blink\\BlinkCaster.mdl"
+      "Value": "Objects\\Spawnmodels\\Undead\\ImpaleTargetDust\\ImpaleTargetDust.mdl"
     },
     {
       "Id": 1634034017,
       "Type": 3,
-      "Value": "Abilities\\Spells\\NightElf\\Blink\\BlinkTarget.mdl"
+      "Value": "Objects\\Spawnmodels\\Undead\\ImpaleTargetDust\\ImpaleTargetDust.mdl"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Glimpse"
+      "Value": "Shifting Sands"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Teleports 60 of the player\u0027s nearby units, including the caster, to a ground unit or structure in 1000 range."
+      "Value": "After 2 seconds, teleports \u003CA000,DataA1\u003E of the player\u0027s nearby units, including the caster, to a friendly ground unit or structure in \u003CA000,Rng1\u003E range."
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "After a 2 second delay, teleports the player\u0027s nearby units, including the caster, to any friendly building or unit in range. |n|cffffcc00Level 1|r - Teleports \u003CA000,DataA1\u003E units, \u003CA000,Rng1\u003E range, \u003CA000,Cool1\u003E second cooldown.|n|cffffcc00Level 2|r - Teleports \u003CA000,DataA2\u003E units, \u003CA000,Rng2\u003E range, \u003CA000,Cool2\u003E second cooldown.|n|cffffcc00Level 3|r - Teleports \u003CA000,DataA3\u003E units, \u003CA000,Rng3\u003E range, \u003CA000,Cool3\u003E second cooldown."
     }
   ]
 }

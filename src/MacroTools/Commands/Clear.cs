@@ -31,9 +31,9 @@ namespace MacroTools.Commands
     public override string Description => "Clears all text from your screen.";
 
     /// <inheritdoc />
-    public override string Execute(player cheater, params string[] parameters)
+    public override string Execute(player commandUser, params string[] parameters)
     {
-      if (GetLocalPlayer() == cheater)
+      if (GetLocalPlayer() == commandUser)
         ClearTextMessages();
       return "Clearing messages.";
     }

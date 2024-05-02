@@ -8,7 +8,7 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNTentacle.blp"
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASSeedOfMonstrosity.blp"
     },
     {
       "Id": 2020631137,
@@ -26,15 +26,27 @@
     },
     {
       "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Drops a small tentacle with each attack. |nLasts 10 seconds."
+    },
+    {
+      "Level": 2,
       "Id": 829453409,
       "Type": 3,
       "Value": "Seed of Madness"
     },
     {
-      "Level": 1,
+      "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Drops a small Tentacle with each attack. |nLasts 10 seconds."
+      "Value": "Drops a medium tentacle with each attack. |nLasts 10 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Seed of Madness"
     }
   ]
 }

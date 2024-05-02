@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "Fear Aura"
+      "Value": "|c00FF0000Fear Aura|r"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "This unit is under the fear aura, it has reduced damage."
+      "Value": "This unit is under the effects of Fear Aura; it has reduced attack damage."
     },
     {
       "Id": 1952543846,

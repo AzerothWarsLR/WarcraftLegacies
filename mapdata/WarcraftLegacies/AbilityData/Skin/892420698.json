@@ -1,0 +1,44 @@
+{
+  "OldId": 1936016193,
+  "NewId": 892420698,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Ursoc)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes this units attacks to emit waves which deal 50% of their attack damage to enemy ground units in a line in front of them."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Massive Attack"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASHammerCrush.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Massive Attack"
+    }
+  ]
+}

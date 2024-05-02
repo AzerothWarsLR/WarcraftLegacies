@@ -13,18 +13,13 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Hardened Scales"
+      "Value": "Hardened"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Hardened Scales"
-    },
-    {
-      "Id": 1953653089,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\PASReptilesHand.blp"
+      "Value": "Hardened"
     },
     {
       "Id": 2020631137,

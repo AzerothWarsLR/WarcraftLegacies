@@ -1,0 +1,103 @@
+{
+  "OldId": 1918984815,
+  "NewId": 897217651,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "upgrade,first"
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651270517,
+      "Value": 150
+    },
+    {
+      "Id": 1819501173,
+      "Type": 3,
+      "Value": "UndeadBuildingConstructionLoop"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 3
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1667462261,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(C\u0027thun Empty)"
+    },
+    {
+      "Id": 1953523061,
+      "Value": 0
+    },
+    {
+      "Id": 1685218677,
+      "Type": 1,
+      "Value": 0
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\CthunBlacksmith.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 221
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Lighthouse"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Lighthouse"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Elite production building. |n|n|r|cfff5962dTrains:|R |n|cfff5962dAbilities:|R Ahn\u0027Qiraj Spirits"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Crypt"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunLighthouse.blp"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 4
+    }
+  ]
+}

@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNSacrificialPit.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunPyramid.blp"
     },
     {
       "Id": 1651270517,
@@ -29,7 +29,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(C\u0027thun Building)"
+      "Value": "(C\u0027thun Specialist)"
     },
     {
       "Id": 1953523061,
@@ -43,7 +43,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\NerubianBarracksV2.mdl"
+      "Value": "war3mapImported\\CthunBarracks.mdl"
     },
     {
       "Id": 1735156597,
@@ -72,12 +72,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Advanced unit building. Produces Faceless Corruptors, Silithid Overlords and Immortal Guardian."
+      "Value": "Creature production building.|n|n|cfff5962dTrains:|R  Super Major, Elate, Vile Corrupter|n|cfff5962dResearches:|R Cleaving Attack, Elongated Snouts, Rapid Incubation, Improved Seed of Madness|n|cfff5962dAbilities:|R Ahn\u0027Qiraj Spirits"
     },
     {
       "Id": 1633907573,
       "Type": 1,
       "Value": 0.8
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 4
     }
   ]
 }

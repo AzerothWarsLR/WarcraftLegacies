@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero Mannoroth { get; }
     public Capital StonemaulKeep { get; }
     public Capital Orgrimmar { get; }
-    public Capital LumberCamp { get; }
+    //public Capital LumberCamp { get; }
     
     public LegendWarsong(PreplacedUnitSystem preplacedUnitSystem)
     {
@@ -66,11 +66,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Essential = true
       };
       
-      LumberCamp = new Capital
-      {
-        Unit = preplacedUnitSystem.GetUnit(UNIT_O05R_WARSONG_LUMBER_CAMP_WARSONG),
-        Essential = true
-      };
+      //LumberCamp = new Capital
+     //{
+       // Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O05R_WARSONG_LUMBER_CAMP_WARSONG),
+       // Essential = true
+      //};
     }
     
     public void RegisterLegends()
@@ -81,7 +81,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendaryHeroManager.Register(Garrosh);
       CapitalManager.Register(StonemaulKeep);
       CapitalManager.Register(Orgrimmar);
-      CapitalManager.Register(LumberCamp);
+      //CapitalManager.Register(LumberCamp);
     }
   }
 }

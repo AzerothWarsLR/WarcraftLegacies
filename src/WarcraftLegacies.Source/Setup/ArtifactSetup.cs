@@ -21,7 +21,12 @@ namespace WarcraftLegacies.Source.Setup
     /// The Skull of Guldan.
     /// </summary>
     public Artifact SkullOfGuldan { get; }
-    
+
+    /// <summary>
+    /// The Scarab Gong.
+    /// </summary>
+    public Artifact ScarabGong { get; }
+
     /// <summary>
     /// The Crown of Lordaeron.
     /// </summary>
@@ -104,6 +109,10 @@ namespace WarcraftLegacies.Source.Setup
       SkullOfGuldan = new Artifact(CreateItem(FourCC("I007"), DummyX, DummyY)); //Skull of Guldan
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n03Y")), SkullOfGuldan.Item); //Drakthul
       ArtifactManager.Register(SkullOfGuldan);
+
+      ScarabGong = new Artifact(CreateItem(FourCC("ISGC"), DummyX, DummyY)); //Scarab Gong
+      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("nJTR")), ScarabGong.Item); //Scarab Gong
+      ArtifactManager.Register(ScarabGong);
 
       EyeOfSargeras = new Artifact(CreateItem(ITEM_I003_EYE_OF_SARGERAS, -77.9f, 10910.4f));
       ArtifactManager.Register(EyeOfSargeras);
