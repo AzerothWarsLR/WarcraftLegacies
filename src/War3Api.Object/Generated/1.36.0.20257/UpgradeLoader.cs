@@ -14,11 +14,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadHumanMeleeAttack(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.HumanMeleeAttack, db);
-            upgrade.TextName[1] = "Iron Forged Swords,Steel Forged Swords,Mithril Forged Swords";
+            upgrade.TextName[1] = "Iron Forged Swords";
             upgrade.StatsRaceRaw = "human";
-            upgrade.TextTooltip[1] = "Upgrade to Iron Forged Swords,Upgrade to Steel Forged Swords,Upgrade to Mithril Forged Swords";
-            upgrade.TextTooltipExtended[1] = "Increases the attack damage of Militia, Footmen, Spellbreakers, Dragonhawk Riders, Gryphon Riders and Knights." ,  "Further increases the attack damage of Militia, Footmen, Spellbreakers, Dragonhawk Riders, Gryphon Riders and Knights." ,  "Further increases the attack damage of Militia, Footmen, Spellbreakers, Dragonhawk Riders, Gryphon Riders and Knights.";
-            upgrade.TextHotkeyRaw[1] = "S,S,S";
+            upgrade.TextTooltip[1] = "Upgrade to Iron Forged Swords";
+            upgrade.TextTooltipExtended[1] = "Increases the attack damage of Militia";
+            upgrade.TextHotkeyRaw[1] = "S";
             upgrade.StatsClassRaw = "melee";
             upgrade.StatsLevels = 3;
             upgrade.StatsGoldBase = 100;
@@ -51,11 +51,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadHumanRangedAttack(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.HumanRangedAttack, db);
-            upgrade.TextName[1] = "Black Gunpowder,Refined Gunpowder,Imbued Gunpowder";
+            upgrade.TextName[1] = "Black Gunpowder";
             upgrade.StatsRaceRaw = "human";
-            upgrade.TextTooltip[1] = "Upgrade to Black Gunpowder,Upgrade to Refined Gunpowder,Upgrade to Imbued Gunpowder";
-            upgrade.TextTooltipExtended[1] = "Increases the ranged attack damage of Riflemen, Mortar Teams, Siege Engines and Flying Machines." ,  "Further increases the ranged attack damage of Riflemen, Mortar Teams, Siege Engines and Flying Machines." ,  "Further increases the ranged attack damage of Riflemen, Mortar Teams, Siege Engines and Flying Machines.";
-            upgrade.TextHotkeyRaw[1] = "G,G,G";
+            upgrade.TextTooltip[1] = "Upgrade to Black Gunpowder";
+            upgrade.TextTooltipExtended[1] = "Increases the ranged attack damage of Riflemen";
+            upgrade.TextHotkeyRaw[1] = "G";
             upgrade.StatsClassRaw = "ranged";
             upgrade.StatsLevels = 3;
             upgrade.StatsGoldBase = 100;
@@ -125,11 +125,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadHumanArmor(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.HumanArmor, db);
-            upgrade.TextName[1] = "Iron Plating,Steel Plating,Mithril Plating";
+            upgrade.TextName[1] = "Iron Plating";
             upgrade.StatsRaceRaw = "human";
-            upgrade.TextTooltip[1] = "Upgrade to Iron Plating,Upgrade to Steel Plating,Upgrade to Mithril Plating";
-            upgrade.TextTooltipExtended[1] = "Increases the armor of Militia, Footmen, Spellbreakers, Knights, Flying Machines and Siege Engines." ,  "Further increases the armor of Militia, Footmen, Spellbreakers, Knights, Flying Machines and Siege Engines." ,  "Further increases the armor of Militia, Footmen, Spellbreakers, Knights, Flying Machines and Siege Engines.";
-            upgrade.TextHotkeyRaw[1] = "P,P,P";
+            upgrade.TextTooltip[1] = "Upgrade to Iron Plating";
+            upgrade.TextTooltipExtended[1] = "Increases the armor of Militia";
+            upgrade.TextHotkeyRaw[1] = "P";
             upgrade.StatsClassRaw = "armor";
             upgrade.StatsLevels = 3;
             upgrade.StatsGoldBase = 125;
@@ -199,11 +199,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadHumanArchitecture(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.HumanArchitecture, db);
-            upgrade.TextName[1] = "Improved Masonry,Advanced Masonry,Imbued Masonry";
+            upgrade.TextName[1] = "Improved Masonry";
             upgrade.StatsRaceRaw = "human";
-            upgrade.TextTooltip[1] = "Upgrade to Improved Masonry,Upgrade to Advanced Masonry,Upgrade to Imbued Masonry";
-            upgrade.TextTooltipExtended[1] = "Increases the armor and hit points of Human buildings." ,  "Further increases the armor and hit points of Human buildings." ,  "Further increases the armor and hit points of Human buildings.";
-            upgrade.TextHotkeyRaw[1] = "M,M,M";
+            upgrade.TextTooltip[1] = "Upgrade to Improved Masonry";
+            upgrade.TextTooltipExtended[1] = "Increases the armor and hit points of Human buildings.";
+            upgrade.TextHotkeyRaw[1] = "M";
             upgrade.StatsClassRaw = "armor";
             upgrade.StatsLevels = 3;
             upgrade.StatsGoldBase = 125;
@@ -275,7 +275,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Animal War Training";
             upgrade.StatsRaceRaw = "human";
             upgrade.TextTooltip[1] = "Research Animal War Training";
-            upgrade.TextTooltipExtended[1] = "Increases the maximum hit points of Knights, Dragonhawk Riders, and Gryphon Riders by <Rhan,base1>.";
+            upgrade.TextTooltipExtended[1] = "Increases the maximum hit points of Knights";
             upgrade.TextHotkeyRaw[1] = "A";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -309,11 +309,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadHumanPriestTraining(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.HumanPriestTraining, db);
-            upgrade.TextName[1] = "Priest Adept Training,Priest Master Training";
+            upgrade.TextName[1] = "Priest Adept Training";
             upgrade.StatsRaceRaw = "human";
-            upgrade.TextTooltip[1] = "Priest Adept Training,Priest Master Training";
-            upgrade.TextTooltipExtended[1] = "Increases Priests' mana capacity, mana regeneration rate, hit points, and gives them the ability to cast Dispel Magic." ,  "Increases Priests' mana capacity, mana regeneration rate, hit points, and gives them the ability to cast Inner Fire.";
-            upgrade.TextHotkeyRaw[1] = "T,T";
+            upgrade.TextTooltip[1] = "Priest Adept Training";
+            upgrade.TextTooltipExtended[1] = "Increases Priests' mana capacity";
+            upgrade.TextHotkeyRaw[1] = "T";
             upgrade.StatsClassRaw = "caster";
             upgrade.StatsLevels = 2;
             upgrade.StatsGoldBase = 100;
@@ -346,11 +346,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadHumanSorceressTraining(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.HumanSorceressTraining, db);
-            upgrade.TextName[1] = "Sorceress Adept Training,Sorceress Master Training";
+            upgrade.TextName[1] = "Sorceress Adept Training";
             upgrade.StatsRaceRaw = "human";
-            upgrade.TextTooltip[1] = "Sorceress Adept Training,Sorceress Master Training";
-            upgrade.TextTooltipExtended[1] = "Increases Sorceresses' mana capacity, mana regeneration rate, hit points, and gives them the ability to cast Invisibility." ,  "Increases Sorceresses' mana capacity, mana regeneration rate, hit points, and gives them the ability to cast Polymorph.";
-            upgrade.TextHotkeyRaw[1] = "O,O";
+            upgrade.TextTooltip[1] = "Sorceress Adept Training";
+            upgrade.TextTooltipExtended[1] = "Increases Sorceresses' mana capacity";
+            upgrade.TextHotkeyRaw[1] = "O";
             upgrade.StatsClassRaw = "caster";
             upgrade.StatsLevels = 2;
             upgrade.StatsGoldBase = 100;
@@ -383,11 +383,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadHumanLeatherArmor(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.HumanLeatherArmor, db);
-            upgrade.TextName[1] = "Studded Leather Armor,Reinforced Leather Armor,Dragonhide Armor";
+            upgrade.TextName[1] = "Studded Leather Armor";
             upgrade.StatsRaceRaw = "human";
-            upgrade.TextTooltip[1] = "Upgrade to Studded Leather Armor,Upgrade to Reinforced Leather Armor,Upgrade to Dragonhide Armor";
-            upgrade.TextTooltipExtended[1] = "Increases the armor of Riflemen, Mortar Teams, Dragonhawk Riders and Gryphon Riders." ,  "Further increases the armor of Riflemen, Mortar Teams, Dragonhawk Riders and Gryphon Riders." ,  "Further increases the armor of Riflemen, Mortar Teams, Dragonhawk Riders and Gryphon Riders.";
-            upgrade.TextHotkeyRaw[1] = "A,A,A";
+            upgrade.TextTooltip[1] = "Upgrade to Studded Leather Armor";
+            upgrade.TextTooltipExtended[1] = "Increases the armor of Riflemen";
+            upgrade.TextHotkeyRaw[1] = "A";
             upgrade.StatsClassRaw = "armor";
             upgrade.StatsLevels = 3;
             upgrade.StatsGoldBase = 100;
@@ -457,11 +457,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadHumanLumberHarvesting(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.HumanLumberHarvesting, db);
-            upgrade.TextName[1] = "Improved Lumber Harvesting,Advanced Lumber Harvesting";
+            upgrade.TextName[1] = "Improved Lumber Harvesting";
             upgrade.StatsRaceRaw = "human";
-            upgrade.TextTooltip[1] = "Improved Lumber Harvesting,Advanced Lumber Harvesting";
-            upgrade.TextTooltipExtended[1] = "Increases the amount of lumber that Peasants can carry by <Rhlh,mod1>." ,  "Further increases the amount of lumber that Peasants can carry by <Rhlh,mod1>.";
-            upgrade.TextHotkeyRaw[1] = "L,L";
+            upgrade.TextTooltip[1] = "Improved Lumber Harvesting";
+            upgrade.TextTooltipExtended[1] = "Increases the amount of lumber that Peasants can carry by <Rhlh";
+            upgrade.TextHotkeyRaw[1] = "L";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 2;
             upgrade.StatsGoldBase = 100;
@@ -608,7 +608,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Barrage";
             upgrade.StatsRaceRaw = "human";
             upgrade.TextTooltip[1] = "Research Barrage";
-            upgrade.TextTooltipExtended[1] = "Upgrades Siege Engines, giving them the Barrage ability, which allows them to damage nearby enemy air units.";
+            upgrade.TextTooltipExtended[1] = "Upgrades Siege Engines";
             upgrade.TextHotkeyRaw[1] = "G";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -757,7 +757,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Cloud";
             upgrade.StatsRaceRaw = "human";
             upgrade.TextTooltip[1] = "Research Cloud";
-            upgrade.TextTooltipExtended[1] = "Provides Dragonhawk Riders with the Cloud ability, which stops ranged buildings from attacking.";
+            upgrade.TextTooltipExtended[1] = "Provides Dragonhawk Riders with the Cloud ability";
             upgrade.TextHotkeyRaw[1] = "C";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -828,11 +828,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadOrcMeleeAttack(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.OrcMeleeAttack, db);
-            upgrade.TextName[1] = "Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons";
+            upgrade.TextName[1] = "Steel Melee Weapons";
             upgrade.StatsRaceRaw = "orc";
-            upgrade.TextTooltip[1] = "Upgrade to Steel Melee Weapons,Upgrade to Thorium Melee Weapons,Upgrade to Arcanite Melee Weapons";
-            upgrade.TextTooltipExtended[1] = "Increases the melee attack damage of Grunts, Raiders and Tauren." ,  "Further increases the melee attack damage of Grunts, Raiders and Tauren." ,  "Further increases the melee attack damage of Grunts, Raiders and Tauren.";
-            upgrade.TextHotkeyRaw[1] = "M,M,M";
+            upgrade.TextTooltip[1] = "Upgrade to Steel Melee Weapons";
+            upgrade.TextTooltipExtended[1] = "Increases the melee attack damage of Grunts";
+            upgrade.TextHotkeyRaw[1] = "M";
             upgrade.StatsClassRaw = "melee";
             upgrade.StatsLevels = 3;
             upgrade.StatsGoldBase = 100;
@@ -865,11 +865,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadOrcRangedAttack(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.OrcRangedAttack, db);
-            upgrade.TextName[1] = "Steel Ranged Weapons,Thorium Ranged Weapons,Arcanite Ranged Weapons";
+            upgrade.TextName[1] = "Steel Ranged Weapons";
             upgrade.StatsRaceRaw = "orc";
-            upgrade.TextTooltip[1] = "Upgrade to Steel Ranged Weapons,Upgrade to Thorium Ranged Weapons,Upgrade to Arcanite Ranged Weapons";
-            upgrade.TextTooltipExtended[1] = "Increases the ranged attack damage of Headhunters, Wind Riders, Batriders and Demolishers." ,  "Further increases the ranged attack damage of Headhunters, Wind Riders, Batriders and Demolishers." ,  "Further increases the ranged attack damage of Headhunters, Wind Riders, Batriders and Demolishers.";
-            upgrade.TextHotkeyRaw[1] = "R,R,R";
+            upgrade.TextTooltip[1] = "Upgrade to Steel Ranged Weapons";
+            upgrade.TextTooltipExtended[1] = "Increases the ranged attack damage of Headhunters";
+            upgrade.TextHotkeyRaw[1] = "R";
             upgrade.StatsClassRaw = "ranged";
             upgrade.StatsLevels = 3;
             upgrade.StatsGoldBase = 100;
@@ -902,11 +902,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadOrcArmor(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.OrcArmor, db);
-            upgrade.TextName[1] = "Steel Armor,Thorium Armor,Arcanite Armor";
+            upgrade.TextName[1] = "Steel Armor";
             upgrade.StatsRaceRaw = "orc";
-            upgrade.TextTooltip[1] = "Upgrade to Steel Unit Armor,Upgrade to Thorium Unit Armor,Upgrade to Arcanite Unit Armor";
-            upgrade.TextTooltipExtended[1] = "Increases the armor of Grunts, Raiders, Batriders, Tauren, Headhunters, Wind Riders and Demolishers." ,  "Further increases the armor of Grunts, Raiders, Batriders, Tauren, Headhunters, Wind Riders and Demolishers." ,  "Further increases the armor of Grunts, Raiders, Batriders, Tauren, Headhunters, Wind Riders and Demolishers.";
-            upgrade.TextHotkeyRaw[1] = "A,A,A";
+            upgrade.TextTooltip[1] = "Upgrade to Steel Unit Armor";
+            upgrade.TextTooltipExtended[1] = "Increases the armor of Grunts";
+            upgrade.TextHotkeyRaw[1] = "A";
             upgrade.StatsClassRaw = "armor";
             upgrade.StatsLevels = 3;
             upgrade.StatsGoldBase = 150;
@@ -979,7 +979,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Pillage";
             upgrade.StatsRaceRaw = "orc";
             upgrade.TextTooltip[1] = "Pillage";
-            upgrade.TextTooltipExtended[1] = "Causes Peons', Grunts', and Raiders' attacks to gain resources when hitting enemy buildings.";
+            upgrade.TextTooltipExtended[1] = "Causes Peons'";
             upgrade.TextHotkeyRaw[1] = "G";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -1016,7 +1016,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Brute Strength";
             upgrade.StatsRaceRaw = "orc";
             upgrade.TextTooltip[1] = "Research Brute Strength";
-            upgrade.TextTooltipExtended[1] = "Improves the fighting capabilities of Grunts with a <Robs,base1> hit point increase, and <Robs,base2> bonus attack damage.";
+            upgrade.TextTooltipExtended[1] = "Improves the fighting capabilities of Grunts with a <Robs";
             upgrade.TextHotkeyRaw[1] = "B";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -1053,7 +1053,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Pulverize Damage Increase";
             upgrade.StatsRaceRaw = "orc";
             upgrade.TextTooltip[1] = "Upgrade Pulverize";
-            upgrade.TextTooltipExtended[1] = "Upgrades the totem carried by Tauren, increasing the damage of their Pulverize ability.";
+            upgrade.TextTooltipExtended[1] = "Upgrades the totem carried by Tauren";
             upgrade.TextHotkeyRaw[1] = "P";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -1161,11 +1161,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadOrcWitchDoctorTraining(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.OrcWitchDoctorTraining, db);
-            upgrade.TextName[1] = "Witch Doctor Adept Training,Witch Doctor Master Training";
+            upgrade.TextName[1] = "Witch Doctor Adept Training";
             upgrade.StatsRaceRaw = "orc";
-            upgrade.TextTooltip[1] = "Witch Doctor Adept Training,Witch Doctor Master Training";
-            upgrade.TextTooltipExtended[1] = "Increases Witch Doctors' mana capacity, mana regeneration rate, hit points, and gives them the ability to cast Stasis Trap." ,  "Increases Witch Doctors' mana capacity, mana regeneration rate, hit points, and gives them the ability to cast Healing Ward.";
-            upgrade.TextHotkeyRaw[1] = "D,D";
+            upgrade.TextTooltip[1] = "Witch Doctor Adept Training";
+            upgrade.TextTooltipExtended[1] = "Increases Witch Doctors' mana capacity";
+            upgrade.TextHotkeyRaw[1] = "D";
             upgrade.StatsClassRaw = "caster";
             upgrade.StatsLevels = 2;
             upgrade.StatsGoldBase = 100;
@@ -1198,11 +1198,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadOrcShamanTraining(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.OrcShamanTraining, db);
-            upgrade.TextName[1] = "Shaman Adept Training,Shaman Master Training";
+            upgrade.TextName[1] = "Shaman Adept Training";
             upgrade.StatsRaceRaw = "orc";
-            upgrade.TextTooltip[1] = "Shaman Adept Training,Shaman Master Training";
-            upgrade.TextTooltipExtended[1] = "Increases Shaman mana capacity, mana regeneration rate, hit points, and gives them the ability to cast Lightning Shield." ,  "Increases Shaman mana capacity, mana regeneration rate, hit points, and gives them the ability to cast Bloodlust.";
-            upgrade.TextHotkeyRaw[1] = "M,M";
+            upgrade.TextTooltip[1] = "Shaman Adept Training";
+            upgrade.TextTooltipExtended[1] = "Increases Shaman mana capacity";
+            upgrade.TextHotkeyRaw[1] = "M";
             upgrade.StatsClassRaw = "caster";
             upgrade.StatsLevels = 2;
             upgrade.StatsGoldBase = 100;
@@ -1235,11 +1235,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadOrcSpikedBarricade(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.OrcSpikedBarricade, db);
-            upgrade.TextName[1] = "Spiked Barricades,Improved Spiked Barricades,Advanced Spiked Barricades";
+            upgrade.TextName[1] = "Spiked Barricades";
             upgrade.StatsRaceRaw = "orc";
-            upgrade.TextTooltip[1] = "Upgrade to Spiked Barricades,Upgrade to Improved Spiked Barricades,Upgrade to Advanced Spiked Barricades";
-            upgrade.TextTooltipExtended[1] = "Surrounds Orc buildings with spikes that damage enemy melee attackers. Deals <Rosp,base1> damage per attack plus an additional <Rosp,base2,%>% of the attacker's damage." ,  "Increases the additional damage by <Rosp,mod2,%>% of the attacker's damage." ,  "Further increases the amount of damage inflicted on melee attackers by <Rosp,mod1>.";
-            upgrade.TextHotkeyRaw[1] = "S,S,S";
+            upgrade.TextTooltip[1] = "Upgrade to Spiked Barricades";
+            upgrade.TextTooltipExtended[1] = "Surrounds Orc buildings with spikes that damage enemy melee attackers. Deals <Rosp";
+            upgrade.TextHotkeyRaw[1] = "S";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 2;
             upgrade.StatsGoldBase = 25;
@@ -1272,10 +1272,10 @@ namespace War3Api.Object
         protected virtual Upgrade LoadOrcTrollRegeneration(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.OrcTrollRegeneration, db);
-            upgrade.TextName[1] = "Troll Regeneration,Improved Troll Regeneration,Advanced Troll Regeneration";
+            upgrade.TextName[1] = "Troll Regeneration";
             upgrade.StatsRaceRaw = "orc";
-            upgrade.TextTooltip[1] = "Research Troll Regeneration, Research Improved Troll Regeneration, Research Advanced Troll Regeneration";
-            upgrade.TextTooltipExtended[1] = "Increases the hit point regeneration rate of Headhunters, Witch Doctors and Batriders." ,  "Further increases the hit point regeneration rate of Headhunters, Witch Doctors and Batriders." ,  "Further increases the hit point regeneration rate of Headhunters, Witch Doctors and Batriders.";
+            upgrade.TextTooltip[1] = "Research Troll Regeneration";
+            upgrade.TextTooltipExtended[1] = "Increases the hit point regeneration rate of Headhunters";
             upgrade.TextHotkeyRaw[1] = "R";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -1312,7 +1312,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Liquid Fire";
             upgrade.StatsRaceRaw = "orc";
             upgrade.TextTooltip[1] = "Research Liquid Fire";
-            upgrade.TextTooltipExtended[1] = "Gives Batriders the Liquid Fire attack, which deals damage over time to enemy buildings, reduces the repaired rate and the attack rate of enemy buildings.";
+            upgrade.TextTooltipExtended[1] = "Gives Batriders the Liquid Fire attack";
             upgrade.TextHotkeyRaw[1] = "L";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -1380,11 +1380,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadOrcSpiritwalkerTraining(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.OrcSpiritwalkerTraining, db);
-            upgrade.TextName[1] = "Spirit Walker Adept Training,Spirit Walker Master Training";
+            upgrade.TextName[1] = "Spirit Walker Adept Training";
             upgrade.StatsRaceRaw = "orc";
-            upgrade.TextTooltip[1] = "Spirit Walker Adept Training,Spirit Walker Master Training";
-            upgrade.TextTooltipExtended[1] = "Increases Spirit Walkers' mana capacity, mana regeneration rate, hit points, and gives them the ability to cast Disenchant." ,  "Increases Spirit Walkers' mana capacity, mana regeneration rate, hit points, and gives them the ability to cast Ancestral Spirit.";
-            upgrade.TextHotkeyRaw[1] = "R,R";
+            upgrade.TextTooltip[1] = "Spirit Walker Adept Training";
+            upgrade.TextTooltipExtended[1] = "Increases Spirit Walkers' mana capacity";
+            upgrade.TextHotkeyRaw[1] = "R";
             upgrade.StatsClassRaw = "caster";
             upgrade.StatsLevels = 2;
             upgrade.StatsGoldBase = 100;
@@ -1457,7 +1457,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Berserker Upgrade";
             upgrade.StatsRaceRaw = "orc";
             upgrade.TextTooltip[1] = "Berserker Upgrade";
-            upgrade.TextTooltipExtended[1] = "Transforms Headhunters into Berserkers, giving them increased hit points and the Berserk ability.";
+            upgrade.TextTooltipExtended[1] = "Transforms Headhunters into Berserkers";
             upgrade.TextHotkeyRaw[1] = "E";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -1532,7 +1532,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Burning Oil";
             upgrade.StatsRaceRaw = "orc";
             upgrade.TextTooltip[1] = "Burning Oil";
-            upgrade.TextTooltipExtended[1] = "Upgrades Demolishers to fire rocks smothered in burning oil, which causes the ground to burn.";
+            upgrade.TextTooltipExtended[1] = "Upgrades Demolishers to fire rocks smothered in burning oil";
             upgrade.TextHotkeyRaw[1] = "N";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -1566,11 +1566,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadUndeadUnholyStrength(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.UndeadUnholyStrength, db);
-            upgrade.TextName[1] = "Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength";
+            upgrade.TextName[1] = "Unholy Strength";
             upgrade.StatsRaceRaw = "undead";
-            upgrade.TextTooltip[1] = "Upgrade to Unholy Strength,Upgrade to Improved Unholy Strength,Upgrade to Advanced Unholy Strength";
-            upgrade.TextTooltipExtended[1] = "Increases the attack damage of Ghouls, Meat Wagons, Abominations, Skeleton Warriors, and Skeletal Mages." ,  "Further increases the attack damage of Ghouls, Meat Wagons, Abominations, Skeleton Warriors, and Skeletal Mages." ,  "Further increases the attack damage of Ghouls, Meat Wagons, Abominations, Skeleton Warriors, and Skeletal Mages.";
-            upgrade.TextHotkeyRaw[1] = "S,S,S";
+            upgrade.TextTooltip[1] = "Upgrade to Unholy Strength";
+            upgrade.TextTooltipExtended[1] = "Increases the attack damage of Ghouls";
+            upgrade.TextHotkeyRaw[1] = "S";
             upgrade.StatsClassRaw = "melee";
             upgrade.StatsLevels = 3;
             upgrade.StatsGoldBase = 125;
@@ -1603,11 +1603,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadUndeadCreatureAttack(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.UndeadCreatureAttack, db);
-            upgrade.TextName[1] = "Creature Attack,Improved Creature Attack,Advanced Creature Attack";
+            upgrade.TextName[1] = "Creature Attack";
             upgrade.StatsRaceRaw = "undead";
-            upgrade.TextTooltip[1] = "Upgrade to Creature Attack,Upgrade to Improved Creature Attack,Upgrade to Advanced Creature Attack";
-            upgrade.TextTooltipExtended[1] = "Increases the attack damage of Crypt Fiends, Gargoyles, Destroyers, and Frost Wyrms." ,  "Further increases the attack damage of Crypt Fiends, Gargoyles, Destroyers, and Frost Wyrms." ,  "Further increases the attack damage of Crypt Fiends, Gargoyles, Destroyers, and Frost Wyrms.";
-            upgrade.TextHotkeyRaw[1] = "A,A,A";
+            upgrade.TextTooltip[1] = "Upgrade to Creature Attack";
+            upgrade.TextTooltipExtended[1] = "Increases the attack damage of Crypt Fiends";
+            upgrade.TextHotkeyRaw[1] = "A";
             upgrade.StatsClassRaw = "ranged";
             upgrade.StatsLevels = 3;
             upgrade.StatsGoldBase = 150;
@@ -1640,11 +1640,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadUndeadUnholyArmor(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.UndeadUnholyArmor, db);
-            upgrade.TextName[1] = "Unholy Armor,Improved Unholy Armor,Advanced Unholy Armor";
+            upgrade.TextName[1] = "Unholy Armor";
             upgrade.StatsRaceRaw = "undead";
-            upgrade.TextTooltip[1] = "Upgrade to Unholy Armor,Upgrade to Improved Unholy Armor,Upgrade to Advanced Unholy Armor";
-            upgrade.TextTooltipExtended[1] = "Increases the armor of Ghouls, Abominations, Skeleton Warriors, and Skeletal Mages." ,  "Further increases the armor of Ghouls, Abominations, Skeleton Warriors, and Skeletal Mages." ,  "Further increases the armor of Ghouls, Abominations, Skeleton Warriors, and Skeletal Mages.";
-            upgrade.TextHotkeyRaw[1] = "U,U,U";
+            upgrade.TextTooltip[1] = "Upgrade to Unholy Armor";
+            upgrade.TextTooltipExtended[1] = "Increases the armor of Ghouls";
+            upgrade.TextHotkeyRaw[1] = "U";
             upgrade.StatsClassRaw = "armor";
             upgrade.StatsLevels = 3;
             upgrade.StatsGoldBase = 125;
@@ -1717,7 +1717,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Ghoul Frenzy";
             upgrade.StatsRaceRaw = "undead";
             upgrade.TextTooltip[1] = "Research Ghoul Frenzy";
-            upgrade.TextTooltipExtended[1] = "Increases the attack rate of Ghouls by <Rugf,base1,%>%, and increases their movement speed.";
+            upgrade.TextTooltipExtended[1] = "Increases the attack rate of Ghouls by <Rugf";
             upgrade.TextHotkeyRaw[1] = "Z";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -1754,7 +1754,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Web";
             upgrade.StatsRaceRaw = "undead";
             upgrade.TextTooltip[1] = "Research Web";
-            upgrade.TextTooltipExtended[1] = "Enables Crypt Fiends to use the Web ability. Web binds a target enemy air unit in webbing, forcing it to the ground. Webbed units can be hit as though they were land units.";
+            upgrade.TextTooltipExtended[1] = "Enables Crypt Fiends to use the Web ability. Web binds a target enemy air unit in webbing";
             upgrade.TextHotkeyRaw[1] = "W";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -1791,7 +1791,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Stone Form";
             upgrade.StatsRaceRaw = "undead";
             upgrade.TextTooltip[1] = "Research Stone Form";
-            upgrade.TextTooltipExtended[1] = "Enables the ability for Gargoyles to assume Stone Form. Stone Form transforms the Gargoyle into a statue with high armor, spell immunity, and regeneration. The Gargoyle cannot attack in this form.";
+            upgrade.TextTooltipExtended[1] = "Enables the ability for Gargoyles to assume Stone Form. Stone Form transforms the Gargoyle into a statue with high armor";
             upgrade.TextHotkeyRaw[1] = "S";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -1825,11 +1825,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadUndeadNecromancerTraining(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.UndeadNecromancerTraining, db);
-            upgrade.TextName[1] = "Necromancer Adept Training,Necromancer Master Training";
+            upgrade.TextName[1] = "Necromancer Adept Training";
             upgrade.StatsRaceRaw = "undead";
-            upgrade.TextTooltip[1] = "Necromancer Adept Training,Necromancer Master Training";
-            upgrade.TextTooltipExtended[1] = "Increases Necromancers' mana capacity, mana regeneration rate, hit points, and gives them the ability to cast Unholy Frenzy." ,  "Increases Necromancers' mana capacity, mana regeneration rate, hit points, and gives them the ability to cast Cripple.";
-            upgrade.TextHotkeyRaw[1] = "E,E";
+            upgrade.TextTooltip[1] = "Necromancer Adept Training";
+            upgrade.TextTooltipExtended[1] = "Increases Necromancers' mana capacity";
+            upgrade.TextHotkeyRaw[1] = "E";
             upgrade.StatsClassRaw = "caster";
             upgrade.StatsLevels = 2;
             upgrade.StatsGoldBase = 100;
@@ -1862,11 +1862,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadUndeadBansheeTraining(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.UndeadBansheeTraining, db);
-            upgrade.TextName[1] = "Banshee Adept Training,Banshee Master Training";
+            upgrade.TextName[1] = "Banshee Adept Training";
             upgrade.StatsRaceRaw = "undead";
-            upgrade.TextTooltip[1] = "Banshee Adept Training,Banshee Master Training";
-            upgrade.TextTooltipExtended[1] = "Increases Banshees' mana capacity, mana regeneration rate, hit points, and gives them the ability to cast Anti-magic Shell." ,  "Increases Banshees' mana capacity, mana regeneration rate, hit points, and gives them the ability to cast Possession.";
-            upgrade.TextHotkeyRaw[1] = "A,A";
+            upgrade.TextTooltip[1] = "Banshee Adept Training";
+            upgrade.TextTooltipExtended[1] = "Increases Banshees' mana capacity";
+            upgrade.TextHotkeyRaw[1] = "A";
             upgrade.StatsClassRaw = "caster";
             upgrade.StatsLevels = 2;
             upgrade.StatsGoldBase = 100;
@@ -1902,7 +1902,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Freezing Breath";
             upgrade.StatsRaceRaw = "undead";
             upgrade.TextTooltip[1] = "Research Freezing Breath";
-            upgrade.TextTooltipExtended[1] = "Enables Frost Wyrms to use the Freezing Breath ability. When cast on a building, temporarily stops production.";
+            upgrade.TextTooltipExtended[1] = "Enables Frost Wyrms to use the Freezing Breath ability. When cast on a building";
             upgrade.TextHotkeyRaw[1] = "B";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -1939,7 +1939,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Skeletal Longevity";
             upgrade.StatsRaceRaw = "undead";
             upgrade.TextTooltip[1] = "Research Skeletal Longevity";
-            upgrade.TextTooltipExtended[1] = "Increases the duration of raised Skeleton Warriors and Skeletal Mages by <Rusl,base1> seconds.";
+            upgrade.TextTooltipExtended[1] = "Increases the duration of raised Skeleton Warriors and Skeletal Mages by <Rusl";
             upgrade.TextHotkeyRaw[1] = "S";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -1973,11 +1973,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadUndeadCreatureArmor(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.UndeadCreatureArmor, db);
-            upgrade.TextName[1] = "Creature Carapace,Improved Creature Carapace,Advanced Creature Carapace";
+            upgrade.TextName[1] = "Creature Carapace";
             upgrade.StatsRaceRaw = "undead";
-            upgrade.TextTooltip[1] = "Upgrade to Creature Carapace,Upgrade to Improved Creature Carapace,Upgrade to Advanced Creature Carapace";
-            upgrade.TextTooltipExtended[1] = "Increases the armor of Crypt Fiends, Gargoyles, Destroyers, and Frost Wyrms." ,  "Further increases the armor of Crypt Fiends, Gargoyles, Destroyers, and Frost Wyrms." ,  "Further increases the armor of the Crypt Fiends, Gargoyles, Destroyers, and Frost Wyrms.";
-            upgrade.TextHotkeyRaw[1] = "C,C,C";
+            upgrade.TextTooltip[1] = "Upgrade to Creature Carapace";
+            upgrade.TextTooltipExtended[1] = "Increases the armor of Crypt Fiends";
+            upgrade.TextHotkeyRaw[1] = "C";
             upgrade.StatsClassRaw = "armor";
             upgrade.StatsLevels = 3;
             upgrade.StatsGoldBase = 150;
@@ -2013,7 +2013,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Disease Cloud";
             upgrade.StatsRaceRaw = "undead";
             upgrade.TextTooltip[1] = "Research Disease Cloud";
-            upgrade.TextTooltipExtended[1] = "Gives Abominations a Disease Cloud aura that deals <Aap1,DataB1> damage per second for <Aap1,DataA1> seconds to nearby enemy units. Meat Wagons will cause Disease Clouds wherever they attack that deal <Aap2,DataB1> damage per second for <Aap2,DataA1> seconds to nearby enemy units. |nUndead are immune to Disease Cloud.";
+            upgrade.TextTooltipExtended[1] = "Gives Abominations a Disease Cloud aura that deals <Aap1";
             upgrade.TextHotkeyRaw[1] = "D";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -2050,7 +2050,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Skeletal Mastery";
             upgrade.StatsRaceRaw = "undead";
             upgrade.TextTooltip[1] = "Research Skeletal Mastery";
-            upgrade.TextTooltipExtended[1] = "Causes one of the two skeletons created by Raise Dead to be a Skeletal Mage and increases the duration of raised Skeleton Warriors and Skeletal Mages by <Rusl,base1> seconds.";
+            upgrade.TextTooltipExtended[1] = "Causes one of the two skeletons created by Raise Dead to be a Skeletal Mage and increases the duration of raised Skeleton Warriors and Skeletal Mages by <Rusl";
             upgrade.TextHotkeyRaw[1] = "M";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -2087,7 +2087,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Burrow";
             upgrade.StatsRaceRaw = "undead";
             upgrade.TextTooltip[1] = "Research Burrow";
-            upgrade.TextTooltipExtended[1] = "Crypt Fiends gain the ability to burrow. Burrowed Crypt Fiends are invisible and gain increased hit point regeneration, but cannot attack.";
+            upgrade.TextTooltipExtended[1] = "Crypt Fiends gain the ability to burrow. Burrowed Crypt Fiends are invisible and gain increased hit point regeneration";
             upgrade.TextHotkeyRaw[1] = "B";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -2124,7 +2124,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Destroyer Form";
             upgrade.StatsRaceRaw = "undead";
             upgrade.TextTooltip[1] = "Research Destroyer Form";
-            upgrade.TextTooltipExtended[1] = "Allows the Obsidian Statue to transform into a Destroyer, a large flying unit that must devour magic to sustain its mana. The Destroyer has Spell Immunity, Devour Magic, Absorb Mana, and Orb of Annihilation. |n|n|cffffcc00Attacks land and air units.|r";
+            upgrade.TextTooltipExtended[1] = "Allows the Obsidian Statue to transform into a Destroyer";
             upgrade.TextHotkeyRaw[1] = "T";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -2233,11 +2233,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadNightelfStrengthOfMoon(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.NightelfStrengthOfMoon, db);
-            upgrade.TextName[1] = "Strength of the Moon,Improved Strength of the Moon,Advanced Strength of the Moon";
+            upgrade.TextName[1] = "Strength of the Moon";
             upgrade.StatsRaceRaw = "nightelf";
-            upgrade.TextTooltip[1] = "Upgrade to Strength of the Moon,Upgrade to Improved Strength of the Moon,Upgrade to Advanced Strength of the Moon";
-            upgrade.TextTooltipExtended[1] = "Increases the damage of Archers, Huntresses, Glaive Throwers, and Hippogryph Riders." ,  "Further increases the damage of Archers, Huntresses, Glaive Throwers, and Hippogryph Riders." ,  "Further increases the damage of Archers, Huntresses, Glaive Throwers, and Hippogryph Riders.";
-            upgrade.TextHotkeyRaw[1] = "M,M,M";
+            upgrade.TextTooltip[1] = "Upgrade to Strength of the Moon";
+            upgrade.TextTooltipExtended[1] = "Increases the damage of Archers";
+            upgrade.TextHotkeyRaw[1] = "M";
             upgrade.StatsClassRaw = "melee";
             upgrade.StatsLevels = 3;
             upgrade.StatsGoldBase = 125;
@@ -2270,11 +2270,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadNightelfStrengthOfWild(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.NightelfStrengthOfWild, db);
-            upgrade.TextName[1] = "Strength of the Wild,Improved Strength of the Wild,Advanced Strength of the Wild";
+            upgrade.TextName[1] = "Strength of the Wild";
             upgrade.StatsRaceRaw = "nightelf";
-            upgrade.TextTooltip[1] = "Upgrade to Strength of the Wild,Upgrade to Improved Strength of the Wild,Upgrade to Advanced Strength of the Wild";
-            upgrade.TextTooltipExtended[1] = "Increases the damage of Druids of the Claw in Bear Form, Druids of the Talon in Storm Crow Form, Dryads, Mountain Giants, Faerie Dragons, Hippogryphs, and Chimaeras." ,  "Further increases the damage of Druids of the Claw in Bear Form, Druids of the Talon in Storm Crow Form, Dryads, Mountain Giants, Faerie Dragons, Hippogryphs, and Chimaeras." ,  "Further increases the damage of Druids of the Claw in Bear Form, Druids of the Talon in Storm Crow Form, Dryads, Mountain Giants, Faerie Dragons, Hippogryphs, and Chimaeras.";
-            upgrade.TextHotkeyRaw[1] = "W,W,W";
+            upgrade.TextTooltip[1] = "Upgrade to Strength of the Wild";
+            upgrade.TextTooltipExtended[1] = "Increases the damage of Druids of the Claw in Bear Form";
+            upgrade.TextHotkeyRaw[1] = "W";
             upgrade.StatsClassRaw = "ranged";
             upgrade.StatsLevels = 3;
             upgrade.StatsGoldBase = 100;
@@ -2307,11 +2307,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadNightelfMoonArmor(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.NightelfMoonArmor, db);
-            upgrade.TextName[1] = "Moon Armor,Improved Moon Armor,Advanced Moon Armor";
+            upgrade.TextName[1] = "Moon Armor";
             upgrade.StatsRaceRaw = "nightelf";
-            upgrade.TextTooltip[1] = "Upgrade to Moon Armor,Upgrade to Improved Moon Armor,Upgrade to Advanced Moon Armor";
-            upgrade.TextTooltipExtended[1] = "Increases the armor of Archers, Huntresses, and Hippogryph Riders." ,  "Further increases the armor of Archers, Huntresses, and Hippogryph Riders." ,  "Further increases the armor of Archers, Huntresses, and Hippogryph Riders.";
-            upgrade.TextHotkeyRaw[1] = "A,A,A";
+            upgrade.TextTooltip[1] = "Upgrade to Moon Armor";
+            upgrade.TextTooltipExtended[1] = "Increases the armor of Archers";
+            upgrade.TextHotkeyRaw[1] = "A";
             upgrade.StatsClassRaw = "armor";
             upgrade.StatsLevels = 3;
             upgrade.StatsGoldBase = 150;
@@ -2344,11 +2344,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadNightelfReinforcedHides(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.NightelfReinforcedHides, db);
-            upgrade.TextName[1] = "Reinforced Hides,Improved Reinforced Hides,Advanced Reinforced Hides";
+            upgrade.TextName[1] = "Reinforced Hides";
             upgrade.StatsRaceRaw = "nightelf";
-            upgrade.TextTooltip[1] = "Upgrade to Reinforced Hides,Upgrade to Improved Reinforced Hides,Upgrade to Advanced Reinforced Hides";
-            upgrade.TextTooltipExtended[1] = "Increases the armor of Druids of the Claw in Bear Form, Druids of the Talon in Storm Crow Form, Dryads, Mountain Giants, Faerie Dragons, Hippogryphs, and Chimaeras." ,  "Further increases the armor of Druids of the Claw in Bear Form, Druids of the Talon in Storm Crow Form, Dryads, Mountain Giants, Faerie Dragons, Hippogryphs, and Chimaeras." ,  "Further increases the armor of Druids of the Claw in Bear Form, Druids of the Talon in Storm Crow Form, Dryads, Mountain Giants, Faerie Dragons, Hippogryphs, and Chimaeras.";
-            upgrade.TextHotkeyRaw[1] = "R,R,R";
+            upgrade.TextTooltip[1] = "Upgrade to Reinforced Hides";
+            upgrade.TextTooltipExtended[1] = "Increases the armor of Druids of the Claw in Bear Form";
+            upgrade.TextHotkeyRaw[1] = "R";
             upgrade.StatsClassRaw = "armor";
             upgrade.StatsLevels = 3;
             upgrade.StatsGoldBase = 150;
@@ -2569,7 +2569,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Marksmanship";
             upgrade.StatsRaceRaw = "nightelf";
             upgrade.TextTooltip[1] = "Research Marksmanship";
-            upgrade.TextTooltipExtended[1] = "Increases damage of Archers and Hippogryph Riders by <Remk,base1>.";
+            upgrade.TextTooltipExtended[1] = "Increases damage of Archers and Hippogryph Riders by <Remk";
             upgrade.TextHotkeyRaw[1] = "M";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -2603,11 +2603,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadNightelfDoTTraining(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.NightelfDoTTraining, db);
-            upgrade.TextName[1] = "Druid of the Talon Adept Training,Druid of the Talon Master Training";
+            upgrade.TextName[1] = "Druid of the Talon Adept Training";
             upgrade.StatsRaceRaw = "nightelf";
-            upgrade.TextTooltip[1] = "Druid of the Talon Adept Training,Druid of the Talon Master Training";
-            upgrade.TextTooltipExtended[1] = "Increases their Night Elf Form's mana capacity, mana regeneration rate, hit points, and gives them the ability Storm Crow Form." ,  "Increases their Night Elf Form's mana capacity, mana regeneration rate, hit points, and gives them the ability to cast Cyclone.";
-            upgrade.TextHotkeyRaw[1] = "A,A";
+            upgrade.TextTooltip[1] = "Druid of the Talon Adept Training";
+            upgrade.TextTooltipExtended[1] = "Increases their Night Elf Form's mana capacity";
+            upgrade.TextHotkeyRaw[1] = "A";
             upgrade.StatsClassRaw = "caster";
             upgrade.StatsLevels = 2;
             upgrade.StatsGoldBase = 100;
@@ -2640,11 +2640,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadNightelfDoCTraining(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.NightelfDoCTraining, db);
-            upgrade.TextName[1] = "Druid of the Claw Adept Training,Druid of the Claw Master Training";
+            upgrade.TextName[1] = "Druid of the Claw Adept Training";
             upgrade.StatsRaceRaw = "nightelf";
-            upgrade.TextTooltip[1] = "Druid of the Claw Adept Training,Druid of the Claw Master Training";
-            upgrade.TextTooltipExtended[1] = "Increases their Night Elf Form's mana capacity, mana regeneration rate, hit points, attack damage and gives them the ability Rejuvenation." ,  "Increases their Night Elf Form's mana capacity, mana regeneration rate, hit points, attack damage and gives them the ability Bear Form.";
-            upgrade.TextHotkeyRaw[1] = "L,L";
+            upgrade.TextTooltip[1] = "Druid of the Claw Adept Training";
+            upgrade.TextTooltipExtended[1] = "Increases their Night Elf Form's mana capacity";
+            upgrade.TextHotkeyRaw[1] = "L";
             upgrade.StatsClassRaw = "caster";
             upgrade.StatsLevels = 2;
             upgrade.StatsGoldBase = 100;
@@ -2680,7 +2680,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Abolish Magic";
             upgrade.StatsRaceRaw = "nightelf";
             upgrade.TextTooltip[1] = "Research Abolish Magic";
-            upgrade.TextTooltipExtended[1] = "Gives the Dryad the ability to dispel positive buffs from enemy units, and negative buffs from friendly units. |nDamages summoned units.";
+            upgrade.TextTooltipExtended[1] = "Gives the Dryad the ability to dispel positive buffs from enemy units";
             upgrade.TextHotkeyRaw[1] = "S";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -2976,7 +2976,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Well Spring";
             upgrade.StatsRaceRaw = "nightelf";
             upgrade.TextTooltip[1] = "Research Well Spring";
-            upgrade.TextTooltipExtended[1] = "Increases the amount of mana that can be stored in Moon Wells by <Rews,base1>, and their rate of mana regeneration by <Rews,base2,%>%.";
+            upgrade.TextTooltipExtended[1] = "Increases the amount of mana that can be stored in Moon Wells by <Rews";
             upgrade.TextHotkeyRaw[1] = "E";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -3048,8 +3048,8 @@ namespace War3Api.Object
         protected virtual Upgrade LoadGlyphOfFortification(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.GlyphOfFortification, db);
-            upgrade.TextName[1] = "Glyph of Fortification,Glyph of Fortification,Glyph of Fortification";
-            upgrade.TextEditorSuffix[1] = " (Upgrade 1), (Upgrade 2), (Upgrade 3)";
+            upgrade.TextName[1] = "Glyph of Fortification";
+            upgrade.TextEditorSuffix[1] = " (Upgrade 1)";
             upgrade.StatsRaceRaw = "unknown";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 3;
@@ -3155,11 +3155,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadNagaSeaWitchTraining(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.NagaSeaWitchTraining, db);
-            upgrade.TextName[1] = "Naga Siren Adept Training,Naga Siren Master Training";
+            upgrade.TextName[1] = "Naga Siren Adept Training";
             upgrade.StatsRaceRaw = "naga";
-            upgrade.TextTooltip[1] = "Research Naga Siren Adept Training,Research Naga Siren Master Training";
-            upgrade.TextTooltipExtended[1] = "Increases Naga Sirens' mana capacity, mana regeneration rate, hit points, and gives them the ability to cast Frost Armor." ,  "Increases Naga Sirens' mana capacity, mana regeneration rate, hit points, and gives them the ability to cast Cyclone.";
-            upgrade.TextHotkeyRaw[1] = "N,N";
+            upgrade.TextTooltip[1] = "Research Naga Siren Adept Training";
+            upgrade.TextTooltipExtended[1] = "Increases Naga Sirens' mana capacity";
+            upgrade.TextHotkeyRaw[1] = "N";
             upgrade.StatsClassRaw = "caster";
             upgrade.StatsLevels = 2;
             upgrade.StatsGoldBase = 100;
@@ -3195,7 +3195,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Abolish Magic";
             upgrade.StatsRaceRaw = "naga";
             upgrade.TextTooltip[1] = "Research Abolish Magic";
-            upgrade.TextTooltipExtended[1] = "Gives the Couatl the ability to dispel positive buffs from enemy units, and negative buffs from friendly units. |nDamages summoned units.";
+            upgrade.TextTooltipExtended[1] = "Gives the Couatl the ability to dispel positive buffs from enemy units";
             upgrade.TextHotkeyRaw[1] = "B";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -3229,11 +3229,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadNagaAttack(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.NagaAttack, db);
-            upgrade.TextName[1] = "Coral Blades,Chitinous Blades,Razorspine Blades";
+            upgrade.TextName[1] = "Coral Blades";
             upgrade.StatsRaceRaw = "naga";
-            upgrade.TextTooltip[1] = "Upgrade to Coral Blades,Upgrade to Chitinous Blades,Upgrade to Razorspine Blades";
-            upgrade.TextTooltipExtended[1] = "Increases the attack damage of Naga attack units." ,  "Further increases the attack damage of Naga attack units." ,  "Further increases the attack damage of Naga attack units.";
-            upgrade.TextHotkeyRaw[1] = "B,B,B";
+            upgrade.TextTooltip[1] = "Upgrade to Coral Blades";
+            upgrade.TextTooltipExtended[1] = "Increases the attack damage of Naga attack units.";
+            upgrade.TextHotkeyRaw[1] = "B";
             upgrade.StatsClassRaw = "melee";
             upgrade.StatsLevels = 3;
             upgrade.StatsGoldBase = 150;
@@ -3266,11 +3266,11 @@ namespace War3Api.Object
         protected virtual Upgrade LoadNagaArmor(ObjectDatabaseBase db)
         {
             var upgrade = new Upgrade(UpgradeType.NagaArmor, db);
-            upgrade.TextName[1] = "Coral Scales,Chitinous Scales,Razorspine Scales";
+            upgrade.TextName[1] = "Coral Scales";
             upgrade.StatsRaceRaw = "naga";
-            upgrade.TextTooltip[1] = "Upgrade to Coral Scales,Upgrade to Chitinous Scales,Upgrade to Razorspine Scales";
-            upgrade.TextTooltipExtended[1] = "Increases the armor of Naga attack units." ,  "Further increases the armor of Naga attack units." ,  "Further increases the the armor of Naga attack units.";
-            upgrade.TextHotkeyRaw[1] = "C,C,C";
+            upgrade.TextTooltip[1] = "Upgrade to Coral Scales";
+            upgrade.TextTooltipExtended[1] = "Increases the armor of Naga attack units.";
+            upgrade.TextHotkeyRaw[1] = "C";
             upgrade.StatsClassRaw = "armor";
             upgrade.StatsLevels = 3;
             upgrade.StatsGoldBase = 125;
@@ -3306,7 +3306,7 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Submerge";
             upgrade.StatsRaceRaw = "naga";
             upgrade.TextTooltip[1] = "Research Submerge";
-            upgrade.TextTooltipExtended[1] = "Gives Naga Myrmidons and Snap Dragons the ability to submerge under water, hiding them from view.";
+            upgrade.TextTooltipExtended[1] = "Gives Naga Myrmidons and Snap Dragons the ability to submerge under water";
             upgrade.TextHotkeyRaw[1] = "U";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
