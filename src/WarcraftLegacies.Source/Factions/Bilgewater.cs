@@ -42,7 +42,8 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
         "bw",
         "bilge",
         "gob",
-        "goblin"
+        "goblin",
+        "goblins"
       };
     }
         
