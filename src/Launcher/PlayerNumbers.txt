@@ -10,9 +10,9 @@
 //  9	Lordaeron
 //  10	Empty
 //  11	Druids
-//  12	Empty
+//  12	Black Empire
 //  13	Empty
-//  14	Black Empire
+//  14	Empty
 //  15	Illidan/Sunfury
 //  16	Cthun
 //  17  Skywall

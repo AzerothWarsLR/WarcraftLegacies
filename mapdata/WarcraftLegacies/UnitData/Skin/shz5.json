@@ -7,7 +7,7 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 2
+      "Value": 0
     },
     {
       "Id": 1718840949,
@@ -17,12 +17,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "E"
+      "Value": "Q"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Long-range siege weaponry. Exceptional damage versus buildings, but slow and vulnerable.|n|cfff5962dAbilities:|R  Spell Resistance |n|cfff5962dCan Learn:|R Flare, Fragmentation Shards|n|n|cff99b4d1Can only train 9.|r|n|cffffcc00Attacks land units and trees. |r"
+      "Value": "Long-range siege weaponry. Exceptional damage versus buildings, but slow and vulnerable.|n|cfff5962dAbilities:|R  Spell Resistance |n|cfff5962dCan Learn:|R Flare, Fragmentation Shards|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units. |r"
     },
     {
       "Id": 1835101813,
@@ -48,6 +48,16 @@
       "Id": 828468597,
       "Type": 2,
       "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAqir.blp"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
     }
   ]
 }
