@@ -21,7 +21,7 @@ namespace Launcher.Extensions
           //do nothing
         }
       }
-      if (unit.CombatAttacksEnabledRaw is 1 or 2)
+      if (unit.CombatAttacksEnabledRaw is 2 or 3)
       {
         try
         {
@@ -34,6 +34,30 @@ namespace Launcher.Extensions
       }
 
       return targetsAllowed;
+    }
+    
+    public static IEnumerable<Item> GetSoldItemsSafe(this Unit unit)
+    {
+      var itemsSold = new List<Item>();
+      try
+      {
+        itemsSold.AddRange(unit.TechtreeItemsSold);
+      }
+      catch
+      {
+        //do nothing
+      }
+      
+      try
+      {
+        itemsSold.AddRange(unit.TechtreeItemsMade);
+      }
+      catch
+      {
+        //do nothing
+      }
+
+      return itemsSold;
     }
     
     public static IEnumerable<Upgrade> GetResearchesAvailableSafe(this Unit unit)

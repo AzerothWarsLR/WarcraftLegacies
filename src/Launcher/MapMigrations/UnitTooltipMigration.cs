@@ -17,6 +17,7 @@ namespace Launcher.MapMigrations
     private const string HeroAbilitiesKnown = "|cfff5962dAbilities (hero):|r ";
     private const string UnitsTrained = "|cfff5962dTrains:|r ";
     private const string ResearchesAvailable = "|cfff5962dResearches:|r ";
+    private const string ItemsSold = "|cfff5962dSells:|r ";
 
     /// <inheritdoc />
     public void Migrate(Map map, ObjectDatabase objectDatabase)
@@ -44,6 +45,7 @@ namespace Launcher.MapMigrations
       AppendLearnedAbilities(tooltipBuilder, unit);
       AppendHeroAbilities(tooltipBuilder, unit);
       AppendTargetsAllowed(tooltipBuilder, unit);
+      AppendSoldItems(tooltipBuilder, unit);
       
       var extendedTooltip = tooltipBuilder.ToString();
       unit.TextTooltipExtended = extendedTooltip;
@@ -109,6 +111,19 @@ namespace Launcher.MapMigrations
       if (researchesAvailable.Any())
       {
         tooltipBuilder.Append($"{LineSeperator}{ResearchesAvailable}{string.Join(", ", researchesAvailable)}");
+      }
+    }
+    
+    private static void AppendSoldItems(StringBuilder tooltipBuilder, Unit unit)
+    {
+      var soldItems = unit.GetSoldItemsSafe()
+        .OrderBy(x => x.GetPrioritySafe())
+        .Select(x => x.GetTextNameSafe())
+        .ToArray();
+      
+      if (soldItems.Any())
+      {
+        tooltipBuilder.Append($"{LineSeperator}{ItemsSold}{string.Join(", ", soldItems)}");
       }
     }
     
