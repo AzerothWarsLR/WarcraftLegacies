@@ -14,8 +14,10 @@ namespace Launcher.MapMigrations
   {
     private const string LineSeperator = "|n";
     private const string AbilitiesKnown = "|cfff5962dAbilities:|r ";
-    private const string AbilitiesLearnable = "|cfff5962dResearchable abilities:|r ";
-    private const string HeroAbilitiesKnown = "|cfff5962dHero abilities:|r ";
+    private const string AbilitiesLearnable = "|cfff5962dAbilities (unlockable):|r ";
+    private const string HeroAbilitiesKnown = "|cfff5962dAbilities (hero):|r ";
+    private const string UnitsTrained = "|cfff5962dTrains:|r ";
+    private const string ResearchesAvailable = "|cfff5962dResearches:|r ";
 
     /// <inheritdoc />
     public void Migrate(Map map, ObjectDatabase objectDatabase)
@@ -45,9 +47,12 @@ namespace Launcher.MapMigrations
       }
 
       AppendFlavour(tooltipBuilder, unit);
+      AppendUnitsTrained(tooltipBuilder, unit);
+      AppendResearchesAvailable(tooltipBuilder, unit);
       AppendInnateAbilities(tooltipBuilder, unit);
       AppendLearnedAbilities(tooltipBuilder, unit);
       AppendHeroAbilities(tooltipBuilder, unit);
+      
 
       var extendedTooltip = tooltipBuilder.ToString();
       Console.WriteLine(extendedTooltip);
@@ -89,6 +94,30 @@ namespace Launcher.MapMigrations
       if (heroAbilities.Any())
       {
         tooltipBuilder.Append($"{LineSeperator}{HeroAbilitiesKnown}{string.Join(", ", heroAbilities)}");
+      }
+    }
+    
+    private static void AppendUnitsTrained(StringBuilder tooltipBuilder, Unit unit)
+    {
+      if (!unit.IsTechtreeUnitsTrainedModified) return;
+      var unitsTrained = unit.TechtreeUnitsTrained.OrderBy(x => x.GetPrioritySafe()).Select(x => x.GetTextNameSafe()).ToArray();
+      if (unitsTrained.Any())
+      {
+        tooltipBuilder.Append($"{LineSeperator}{UnitsTrained}{string.Join(", ", unitsTrained)}");
+      }
+    }
+    
+    private static void AppendResearchesAvailable(StringBuilder tooltipBuilder, Unit unit)
+    {
+      if (!unit.IsTechtreeUnitsTrainedModified) return;
+      var researchesAvailable = unit.GetResearchesAvailableSafe()
+        .OrderBy(x => x.GetPrioritySafe())
+        .Select(x => x.GetTextNameSafe())
+        .ToArray();
+      
+      if (researchesAvailable.Any())
+      {
+        tooltipBuilder.Append($"{LineSeperator}{ResearchesAvailable}{string.Join(", ", researchesAvailable)}");
       }
     }
 
