@@ -1,11 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using War3Api.Object;
+using War3Api.Object.Abilities;
 
 namespace Launcher.Extensions
 {
   public static class AbilityExtensions
   {
+    public static bool HasVisibleIcon(this Ability ability)
+    {
+      if (ability is InventoryPackMule or Inventory2SlotUnitHuman or Inventory2SlotUnitOrc or Inventory2SlotUnitUndead
+          or Inventory2SlotUnitNightElf)
+        return false;
+
+      if (ability is Invulnerable)
+        return false;
+
+      if (ability is DefenseBonus1)
+        return false;
+      
+      return true;
+    }
+    
     public static IEnumerable<Tech> GetTechtreeRequirementsSafe(this Ability unit)
     {
       try

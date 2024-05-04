@@ -53,6 +53,7 @@ namespace Launcher.MapMigrations
     {
       if (!unit.IsAbilitiesNormalModified) return;
       var innateAbilities = unit.AbilitiesNormal
+        .Where(x => x.HasVisibleIcon())
         .Where(x => !x.GetTechtreeRequirementsSafe().Any())
         .OrderBy(AbilityExtensions.GetPrioritySafe)
         .Select(AbilityExtensions.GetNameSafe)
