@@ -21,13 +21,19 @@ namespace Launcher.IntegrityChecker
       var issues = new List<string>();
       var objectDatabase = _mapTestFixture.ObjectDatabase;
       
-      foreach (var unit in objectDatabase.GetUnits())
+      foreach (var unit in objectDatabase.GetUnits().ToArray())
       {
         if (VerifyResearchesAvailable(unit, out var researchesAvailableIssue)) 
           issues.Add(researchesAvailableIssue);
         
-        if (VerifyResearchesRequired(unit, objectDatabase, out var researchesRequiredIssue)) 
+        if (VerifyResearchesRequired(unit, out var researchesRequiredIssue)) 
           issues.Add(researchesRequiredIssue);
+        
+        if (VerifyNormalAbilities(unit, out var normalAbilitiesIssue)) 
+          issues.Add(normalAbilitiesIssue);
+        
+        if (VerifyHeroAbilities(unit, out var heroAbilitiesIssue)) 
+          issues.Add(heroAbilitiesIssue);
       }
       if (issues.Count == 0)
         return;
@@ -59,34 +65,64 @@ namespace Launcher.IntegrityChecker
       return false;
     }
     
-    private static bool VerifyResearchesRequired(Unit unit, ObjectDatabase objectDatabase,
-      [NotNullWhen(true)] out string? issue)
+    private static bool VerifyResearchesRequired(Unit unit,[NotNullWhen(true)] out string? issue)
     {
       issue = null;
       
       if (!unit.IsTechtreeRequirementsModified)
         return false;
-      
-      var requirements = unit.TechtreeRequirements;
-      if (requirements.All(requirement => IsTechValid(requirement, objectDatabase))) 
-        return false;
-      
-      issue = $"{GetReadableId(unit)} has an invalid Requirements field.";
-      return true;
-    }
 
-    private static bool IsTechValid(Tech tech, ObjectDatabaseBase objectDatabase)
-    {
       try
       {
-        _ = objectDatabase.GetObject(tech.Key);
+        _ = unit.TechtreeRequirements;
       }
-      catch
+      catch (KeyNotFoundException)
       {
-        return false;
+        issue = $"{GetReadableId(unit)} has an invalid Researches Required field.";
+        return true;
       }
+      
+      return false;
+    }
+    
+    private static bool VerifyNormalAbilities(Unit unit, [NotNullWhen(true)] out string? issue)
+    {
+      issue = null;
+      
+      if (!unit.IsAbilitiesNormalModified)
+        return false;
 
-      return true;
+      try
+      {
+        _ = unit.AbilitiesNormal;
+      }
+      catch (KeyNotFoundException)
+      {
+        issue = $"{GetReadableId(unit)} has at least one invalid normal Ability.";
+        return true;
+      }
+      
+      return false;
+    }
+    
+    private static bool VerifyHeroAbilities(Unit unit, [NotNullWhen(true)] out string? issue)
+    {
+      issue = null;
+      
+      if (!unit.IsAbilitiesHeroModified)
+        return false;
+
+      try
+      {
+        _ = unit.AbilitiesHero;
+      }
+      catch (KeyNotFoundException)
+      {
+        issue = $"{GetReadableId(unit)} has at least one invalid hero Ability.";
+        return true;
+      }
+      
+      return false;
     }
     
     private static string GetReadableId(BaseObject baseObject) =>
