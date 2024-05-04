@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Text;
 using Launcher.Extensions;
 using War3Api.Object;
@@ -37,14 +36,6 @@ namespace Launcher.MapMigrations
     private static void DetermineTooltip(Unit unit)
     {
       var tooltipBuilder = new StringBuilder();
-      if (unit.IsTextNameModified)
-      {
-        Console.WriteLine($"Modifying {unit.TextName}...");
-      }
-      else
-      {
-        return;
-      }
 
       AppendFlavour(tooltipBuilder, unit);
       AppendUnitsTrained(tooltipBuilder, unit);
@@ -55,7 +46,6 @@ namespace Launcher.MapMigrations
       
 
       var extendedTooltip = tooltipBuilder.ToString();
-      Console.WriteLine(extendedTooltip);
       unit.TextTooltipExtended = extendedTooltip;
     }
 
