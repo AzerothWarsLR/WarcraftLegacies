@@ -14,7 +14,7 @@ namespace Launcher.MapMigrations
     private const string LineSeperator = "|n";
     private const string AbilitiesKnown = "|cfff5962dAbilities:|r ";
     private const string HeroAbilitiesKnown = "|cfff5962dHero Abilities:|r ";
-    
+
     /// <inheritdoc />
     public void Migrate(Map map, ObjectDatabase objectDatabase)
     {
@@ -57,7 +57,7 @@ namespace Launcher.MapMigrations
       {
         tooltipBuilder.Append($"{LineSeperator}{AbilitiesKnown}{string.Join(", ", innateAbilities)}");
       }
-       
+
       if (unit.IsAbilitiesHeroModified)
       {
         var heroAbilities = unit.AbilitiesHero.OrderBy(GetAbilityPriority).Select(GetAbilityName).ToArray();
@@ -70,14 +70,19 @@ namespace Launcher.MapMigrations
 
     private static void AppendFlavour(StringBuilder stringBuilder, Unit unit)
     {
+      var split = GetExtendedTooltip(unit).Split("|n");
+      stringBuilder.Append(split[0]);
+    }
+
+    private static string GetExtendedTooltip(Unit unit)
+    {
       try
       {
-        var split = unit.TextTooltipExtended.Split("|n");
-        stringBuilder.Append(split[0]);
+        return unit.TextTooltipExtended;
       }
       catch
       {
-        Console.WriteLine($"Failed to get {unit} extended tooltip");
+        return "";
       }
     }
 
@@ -95,7 +100,7 @@ namespace Launcher.MapMigrations
         return "Not found";
       }
     }
-    
+
     /// <summary>
     /// Determines the order that abilities appear in tooltips.
     /// </summary>
