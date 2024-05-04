@@ -87,8 +87,15 @@ namespace Launcher.MapMigrations
     /// </summary>
     private static int GetAbilityPriority(Ability ability)
     {
-      var (x, y) = (ability.ArtButtonPositionNormalX, ability.ArtButtonPositionNormalY);
-      return x - y * 10;
+      try
+      {
+        var (x, y) = (ability.ArtButtonPositionNormalX, ability.ArtButtonPositionNormalY);
+        return x - y * 10;
+      }
+      catch
+      {
+        return 0;
+      }
     }
   }
 }
