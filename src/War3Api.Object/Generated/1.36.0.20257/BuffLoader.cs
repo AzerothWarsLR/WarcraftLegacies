@@ -19,6 +19,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit will not move.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNStun.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
             return buff;
         }
 
@@ -29,6 +31,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is stunned; it cannot move, attack or cast spells.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNStun.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
             return buff;
         }
 
@@ -39,6 +43,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is dizzy; its attack rate and movement speed are reduced.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNDizzy.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
             return buff;
         }
 
@@ -49,6 +55,9 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is affected by a Scroll of Protection; its armor is temporarily increased.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNScroll.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
+            buff.ArtRequiredSpellDetailRaw = 1;
             return buff;
         }
 
@@ -59,6 +68,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is detected; an enemy player can see it.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNDustOfAppearance.blp";
             return buff;
         }
 
@@ -78,6 +88,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is slowed; it moves more slowly than it normally does.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNFrost.blp";
             return buff;
         }
 
@@ -88,6 +99,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is invulnerable; it will not take damage from attacks and cannot be targeted by spells.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNInvulnerable.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
             return buff;
         }
 
@@ -99,6 +112,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is poisoned, and will take damage over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNEnvenomedSpear.blp";
+            buff.ArtRequiredSpellDetailRaw = 2;
             return buff;
         }
 
@@ -110,6 +125,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is poisoned; it will take damage over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNEnvenomedSpear.blp";
+            buff.ArtRequiredSpellDetailRaw = 2;
             return buff;
         }
 
@@ -138,6 +155,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has a speed bonus; it moves more quickly than it normally does.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNBoots.blp";
             return buff;
         }
 
@@ -157,6 +175,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This building has a Cloud on it, and cannot use its ranged attack.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNCloudOfFog.blp";
             return buff;
         }
 
@@ -167,6 +186,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has been controlled; it obeys a new master now.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNControlMagic.blp";
             return buff;
         }
 
@@ -177,6 +197,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is being healed; lost hit points are being restored.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNHeal.blp";
+            buff.ArtRequiredSpellDetailRaw = 1;
             return buff;
         }
 
@@ -187,6 +209,10 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has Inner Fire; its armor and attack damage are increased.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNInnerFire.blp";
+            buff.ArtTargetAttachments = 1;
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
+            buff.ArtRequiredSpellDetailRaw = 1;
             return buff;
         }
 
@@ -197,6 +223,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is invisible; enemy units cannot see it. If it attacks or casts a spell, it will become visible.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNInvisibility.blp";
             return buff;
         }
 
@@ -206,6 +233,7 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Aerial Shackles (Caster)";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.SoundEffectSoundLoopingRaw = "AerialShacklesLoop";
             return buff;
         }
 
@@ -216,6 +244,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is bound in Aerial Shackles; it cannot move or attack and will take damage over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNMagicLariet.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "chest,mount";
             return buff;
         }
 
@@ -226,6 +256,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has become Militia; its movement speed, attack rate, attack damage, and armor have been increased.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNCallToArms.blp";
             return buff;
         }
 
@@ -236,6 +267,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is being burned by Phoenix Fire; it will take damage over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNMarkOfFire.blp";
             return buff;
         }
 
@@ -256,6 +288,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is Polymorphed; it is transformed into a sheep.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNPolymorph.blp";
             return buff;
         }
 
@@ -266,6 +299,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is slowed; its movement speed and attack rate are reduced.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNSlow.blp";
+            buff.ArtRequiredSpellDetailRaw = 1;
             return buff;
         }
 
@@ -276,6 +311,9 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is under the effects of Brilliance Aura; it has an increased mana regeneration.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNBrilliance.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
+            buff.ArtRequiredSpellDetailRaw = 2;
             return buff;
         }
 
@@ -286,6 +324,9 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is under the effects of Devotion Aura; it has increased armor.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNDevotion.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
+            buff.ArtRequiredSpellDetailRaw = 2;
             return buff;
         }
 
@@ -296,6 +337,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is in Avatar form; it has increased hit points, attack damage, armor, and is immune to spells.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNAvatar.blp";
             return buff;
         }
 
@@ -306,6 +348,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is Banished; Banished creatures cannot attack, but they can cast spells and will take extra damage from Magic attacks and spells.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNBanish.blp";
+            buff.SoundEffectSoundLoopingRaw = "BanishLoop";
             return buff;
         }
 
@@ -316,6 +360,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is being damaged by Blizzard.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNBlizzard.blp";
             return buff;
         }
 
@@ -335,6 +380,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is under a Divine Shield; it is invulnerable.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNDivineIntervention.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
             return buff;
         }
 
@@ -344,6 +391,7 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Drain Life & Mana (Caster)";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtTargetAttachmentPoint1Raw = "chest";
             return buff;
         }
 
@@ -353,6 +401,7 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Drain Life (Caster)";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtTargetAttachmentPoint1Raw = "chest";
             return buff;
         }
 
@@ -362,6 +411,7 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Drain Mana (Caster)";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtTargetAttachmentPoint1Raw = "chest";
             return buff;
         }
 
@@ -371,6 +421,7 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Drain Life & Mana (Target)";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtTargetAttachmentPoint1Raw = "chest";
             return buff;
         }
 
@@ -380,6 +431,7 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Drain Life (Target)";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtTargetAttachmentPoint1Raw = "chest";
             return buff;
         }
 
@@ -389,6 +441,7 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Drain Mana (Target)";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtTargetAttachmentPoint1Raw = "chest";
             return buff;
         }
 
@@ -399,6 +452,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is in a Flame Strike, and is taking damage over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNWallOfFire.blp";
             return buff;
         }
 
@@ -409,6 +463,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has been hit by Thunder Clap; its movement speed and attack rate are reduced.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNThunderclap.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
             return buff;
         }
 
@@ -419,6 +475,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "Summoned units are vulnerable to dispels.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "human";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNSummonWaterElemental.blp";
             return buff;
         }
 
@@ -429,6 +486,9 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit hears War Drums; it has increased attack damage.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNDrum.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
+            buff.ArtRequiredSpellDetailRaw = 2;
             return buff;
         }
 
@@ -439,6 +499,9 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "Increases life regeneration.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNHealingWard.blp";
+            buff.SoundEffectSoundLoopingRaw = "FountainOfLifeLoop";
+            buff.ArtRequiredSpellDetailRaw = 2;
             return buff;
         }
 
@@ -449,6 +512,9 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is under the effects of Mana Regeneration Aura; it has an increased mana regeneration rate.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "";
+            buff.SoundEffectSoundLoopingRaw = "FountainOfLifeLoop";
+            buff.ArtRequiredSpellDetailRaw = 1;
             return buff;
         }
 
@@ -459,6 +525,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is caught in a burning oil fire; it will take damage over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNWallOfFire.blp";
             return buff;
         }
 
@@ -469,6 +536,10 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is Berserk; it will deal more damage, but also take more damage from attacks.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNBerserkForTrolls.blp";
+            buff.ArtTargetAttachments = 2;
+            buff.ArtTargetAttachmentPoint1Raw = "weapon,left";
+            buff.ArtTargetAttachmentPoint2Raw = "weapon,right";
             return buff;
         }
 
@@ -479,6 +550,11 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has Bloodlust; its attack rate and movement speed are increased.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNBloodLust.blp";
+            buff.ArtTargetAttachments = 2;
+            buff.ArtTargetAttachmentPoint1Raw = "hand,left";
+            buff.ArtTargetAttachmentPoint2Raw = "hand,right";
+            buff.ArtRequiredSpellDetailRaw = 1;
             return buff;
         }
 
@@ -489,6 +565,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "A unit is being devoured; it will take damage while providing vision to the owner.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNDevour.blp";
             return buff;
         }
 
@@ -507,6 +584,8 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Ensnare (General)";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNEnsnare.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
             return buff;
         }
 
@@ -518,6 +597,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is ensnared; it cannot move or fly.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNEnsnare.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "chest,mount";
             return buff;
         }
 
@@ -529,6 +610,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is ensnared; it cannot move or fly.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNEnsnare.blp";
             return buff;
         }
 
@@ -539,6 +621,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "Summoned units take damage from dispels.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNSentryWard.blp";
             return buff;
         }
 
@@ -549,6 +632,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This ward provides life regeneration for nearby friendly units.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNHealingWard.blp";
             return buff;
         }
 
@@ -559,6 +643,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has a Lightning Shield; nearby friendly and enemy units will take damage if they are next to this unit.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNLightningShield.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
             return buff;
         }
 
@@ -577,6 +663,8 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Liquid Fire";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\PassiveButtons\\PASBTNLiquidFire.blp";
+            buff.SoundEffectSoundLoopingRaw = "LiquidFireLoop";
             return buff;
         }
 
@@ -587,6 +675,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is Purged; it has had all buffs removed, and has its movement speed slowed for a short duration.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNPurge.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
             return buff;
         }
 
@@ -597,6 +687,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is Spirit Linked; it will distribute some of the damage it takes across other Spirit Linked units.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNSpiritLink.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "chest";
             return buff;
         }
 
@@ -607,6 +699,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This ward will stun enemy land units when triggered.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNStasisTrap.blp";
             return buff;
         }
 
@@ -615,6 +708,8 @@ namespace War3Api.Object
             var buff = new Buff(BuffType.AuraCommand, db);
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNGnollCommandAura.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
             return buff;
         }
 
@@ -625,6 +720,9 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is under the effects of Endurance Aura; it has an increased movement speed and attack rate.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNCommand.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
+            buff.ArtRequiredSpellDetailRaw = 2;
             return buff;
         }
 
@@ -635,6 +733,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is in an Earthquake; its movement speed is greatly reduced.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNEarthquake.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
             return buff;
         }
 
@@ -654,6 +754,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is Hexed; it has been transformed into a critter.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNHex.blp";
             return buff;
         }
 
@@ -664,6 +765,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "A duplicate illusion of the original Blademaster.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNMirrorImage.blp";
             return buff;
         }
 
@@ -683,6 +785,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "Summoned units take damage from dispels.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNSpiritWolf.blp";
             return buff;
         }
 
@@ -693,6 +796,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is under the effects of Big Bad Voodoo, and is invulnerable.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNBigBadVoodooSpell.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
             return buff;
         }
 
@@ -731,6 +836,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is Wind Walking; it is invisible, moves faster, and the first attack it makes while invisible will deal bonus damage.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "orc";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNWindWalkOn.blp";
             return buff;
         }
 
@@ -741,6 +847,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has Barkskin; it has increased armor.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNBarkskin.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "chest";
             return buff;
         }
 
@@ -751,6 +859,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This building was hit by Corrosive Breath; it will take damage over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNCorrosiveBreath.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "";
             return buff;
         }
 
@@ -761,6 +871,9 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is in a Cyclone; it cannot move, attack or cast spells.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNCyclone.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "sprite,first";
+            buff.SoundEffectSoundLoopingRaw = "CycloneLoop";
             return buff;
         }
 
@@ -772,6 +885,9 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is in a Cyclone; it cannot move, attack or cast spells.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNCyclone.blp";
+            buff.ArtEffectAttachmentPointRaw = "sprite,first";
+            buff.SoundEffectSoundLoopingRaw = "CycloneLoop";
             return buff;
         }
 
@@ -791,6 +907,9 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has Faerie Fire; it has reduced armor and can be seen by the enemy.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNFaerieFire.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "head";
+            buff.ArtRequiredSpellDetailRaw = 1;
             return buff;
         }
 
@@ -810,6 +929,10 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has Mana Flare on it; nearby enemy units that cast spells will take damage.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNManaFlare.blp";
+            buff.ArtLightningRaw = "MFPB";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
+            buff.SoundEffectSoundLoopingRaw = "ManaFlareLoop";
             return buff;
         }
 
@@ -821,6 +944,11 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has Mana Flare on it; nearby enemy units that cast spells will take damage.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNManaFlare.blp";
+            buff.ArtMissileArtRaw = "Abilities\\Spells\\Human\\ManaFlare\\ManaFlareMissile.mdl";
+            buff.ArtMissileSpeed = 1000;
+            buff.ArtMissileHomingEnabledRaw = 1;
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
             return buff;
         }
 
@@ -831,6 +959,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has shifted out of existence and cannot be harmed temporarily.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNPhaseShift.blp";
             return buff;
         }
 
@@ -849,6 +978,9 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has Rejuvenation; it is healing hit points over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNRejuvenation.blp";
+            buff.ArtTargetRaw = "Abilities\\Spells\\NightElf\\Rejuvenation\\RejuvenationTarget.mdl";
+            buff.ArtTargetAttachmentPoint1Raw = "chest";
             return buff;
         }
 
@@ -859,6 +991,9 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has Roar; its attack damage has been increased.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNBattleRoar.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
+            buff.ArtRequiredSpellDetailRaw = 1;
             return buff;
         }
 
@@ -870,6 +1005,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit was hit by Slow Poison; its movement speed and attack rate have been reduced, and it will take damage over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNSlowPoison.blp";
+            buff.ArtRequiredSpellDetailRaw = 2;
             return buff;
         }
 
@@ -881,6 +1018,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit was hit by Slow Poison; its movement speed and attack rate have been reduced, and it will take damage over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtIconRaw = "ReplaceableTextures\\PassiveButtons\\PASBTNSlowPoison.blp";
+            buff.ArtRequiredSpellDetailRaw = 2;
             return buff;
         }
 
@@ -900,6 +1039,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "Vengeance was here.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNAvengingWatcher.blp";
             return buff;
         }
 
@@ -910,6 +1050,10 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is under the effects of Thorns Aura; melee units that attack it will take damage.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNThorns.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
+            buff.ArtSpecialAttachmentPointRaw = "head";
+            buff.ArtRequiredSpellDetailRaw = 2;
             return buff;
         }
 
@@ -920,6 +1064,9 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is under the effects of Trueshot Aura; its ranged attacks will deal more damage.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNTrueShot.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
+            buff.ArtRequiredSpellDetailRaw = 2;
             return buff;
         }
 
@@ -930,6 +1077,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has been hit by Entangling Roots; it cannot move and takes damage over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNEntanglingRoots.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
             return buff;
         }
 
@@ -940,6 +1089,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "Summoned units take damage from dispels.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNEnt.blp";
             return buff;
         }
 
@@ -950,6 +1100,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has Immolation; nearby enemy ground units will take damage over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNImmolationOn.blp";
+            buff.ArtSpecialAttachmentPointRaw = "head";
             return buff;
         }
 
@@ -969,6 +1121,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "Transforms the Demon Hunter into a powerful Demon with a ranged attack.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNMetamorphosis.blp";
             return buff;
         }
 
@@ -989,6 +1142,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit was hit by Shadow Strike; it will take damage over time and move more slowly.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNShadowStrike.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
             return buff;
         }
 
@@ -999,6 +1154,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "Vengeance is angry.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNSpiritOfVengeance.blp";
             return buff;
         }
 
@@ -1009,6 +1165,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has Anti-magic Shell; it cannot be targeted by spells. It can be dispelled.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNAntiMagicShell.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
             return buff;
         }
 
@@ -1020,6 +1178,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has Anti-magic Shell; damage spells must destroy the shell to affect the unit.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNAntiMagicShell.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
             return buff;
         }
 
@@ -1030,6 +1190,9 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is under the effects of Aura of Blight; it has a bonus to hit point regeneration.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNRegenerationAura.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
+            buff.ArtRequiredSpellDetailRaw = 2;
             return buff;
         }
 
@@ -1040,6 +1203,9 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is diseased; it will take damage over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNPlagueCloud.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "head";
+            buff.ArtRequiredSpellDetailRaw = 2;
             return buff;
         }
 
@@ -1050,6 +1216,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is Crippled; its movement speed, attack rate and damage have been reduced.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNCripple.blp";
             return buff;
         }
 
@@ -1060,6 +1227,9 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is Cursed; it can miss when it attacks.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNCurse.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
+            buff.ArtRequiredSpellDetailRaw = 1;
             return buff;
         }
 
@@ -1070,6 +1240,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This building is frozen; its abilities cannot be used and it cannot be repaired.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNFreezingBreath.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
             return buff;
         }
 
@@ -1088,6 +1260,7 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Possession (Caster)";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
             return buff;
         }
 
@@ -1098,6 +1271,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is being possessed.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNPossession.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
             return buff;
         }
 
@@ -1108,6 +1283,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "Summoned units take damage from dispels.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNSkeletonWarrior.blp";
             return buff;
         }
 
@@ -1118,6 +1294,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has been hit by Replenish; some of its hit points and mana have been restored.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNReplenishMana.blp";
             return buff;
         }
 
@@ -1128,6 +1305,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has been hit by Essence of Blight; some of its hit points have been restored.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNReplenishHealth.blp";
             return buff;
         }
 
@@ -1138,6 +1316,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has been hit by Spirit Touch; some of its mana has been restored.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNReplenishMana.blp";
             return buff;
         }
 
@@ -1147,6 +1326,8 @@ namespace War3Api.Object
             buff.TextTooltip = "Spiderling";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNSpider.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
             return buff;
         }
 
@@ -1157,6 +1338,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has Unholy Frenzy; its attack rate is increased, but it takes damage over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNUnholyFrenzy.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
             return buff;
         }
 
@@ -1166,6 +1349,8 @@ namespace War3Api.Object
             buff.TextTooltip = "Unsummon";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNUnsummonBuilding.blp";
+            buff.SoundEffectSoundLoopingRaw = "AcolyteUnsummonLoop";
             return buff;
         }
 
@@ -1177,6 +1362,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is webbed; it is stuck to the ground and cannot move.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNWeb.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
             return buff;
         }
 
@@ -1188,6 +1375,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is webbed; it is stuck to the ground and cannot move.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNWeb.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "chest,mount";
             return buff;
         }
 
@@ -1198,6 +1387,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "Summoned units take damage from dispels.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNAnimateDead.blp";
             return buff;
         }
 
@@ -1208,6 +1398,9 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is under the effects of Unholy Aura; it has an increased movement speed and hit point regeneration.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNUnholyAura.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
+            buff.ArtRequiredSpellDetailRaw = 2;
             return buff;
         }
 
@@ -1218,6 +1411,10 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is under the effects of Vampiric Aura; damage it deals to enemy units will restore hit points.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNVampiricAura.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
+            buff.ArtSpecialAttachmentPointRaw = "origin";
+            buff.ArtRequiredSpellDetailRaw = 2;
             return buff;
         }
 
@@ -1228,6 +1425,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "Summoned units take damage from dispels.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNCarrionScarabs.blp";
             return buff;
         }
 
@@ -1247,6 +1445,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is under Death and Decay; it will take damage over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNDeathAndDecay.blp";
             return buff;
         }
 
@@ -1257,6 +1456,10 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has Frost Armor; it has increased armor, and melee units that attack it will have their movement speed and attack rate reduced for a short duration.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNFrostArmor.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "chest";
+            buff.ArtSpecialAttachmentPointRaw = "chest";
+            buff.ArtRequiredSpellDetailRaw = 1;
             return buff;
         }
 
@@ -1267,6 +1470,9 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has been impaled; it is in the air for a short duration.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNImpale.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
+            buff.ArtEffectAttachmentPointRaw = "sprite,first";
             return buff;
         }
 
@@ -1277,6 +1483,9 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is sleeping; it cannot move, attack, or cast spells. Attacking it will wake it up.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNSleep.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
+            buff.SoundEffectSoundLoopingRaw = "CreepSleepSnoreLoop";
             return buff;
         }
 
@@ -1286,6 +1495,7 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Sleep (Pause)";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNSleep.blp";
             return buff;
         }
 
@@ -1295,6 +1505,7 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Sleep (Stun)";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNSleep.blp";
             return buff;
         }
 
@@ -1304,6 +1515,12 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Spiked Carapace";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNThornShield.blp";
+            buff.ArtTargetAttachments = 4;
+            buff.ArtTargetAttachmentPoint1Raw = "chest,left";
+            buff.ArtTargetAttachmentPoint2Raw = "chest,right";
+            buff.ArtTargetAttachmentPoint3Raw = "chest,mount,left";
+            buff.ArtTargetAttachmentPoint4Raw = "chest,mount,right";
             return buff;
         }
 
@@ -1312,6 +1529,10 @@ namespace War3Api.Object
             var buff = new Buff(BuffType.ThornyShield_BUtt, db);
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "undead";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNThornShield.blp";
+            buff.ArtTargetAttachments = 2;
+            buff.ArtTargetAttachmentPoint1Raw = "chest,mount,left";
+            buff.ArtTargetAttachmentPoint2Raw = "chest,mount,right";
             return buff;
         }
 
@@ -1323,6 +1544,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is caught within a Tornado; its movement speed has been reduced temporarily.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNTornado.blp";
             return buff;
         }
 
@@ -1333,6 +1555,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit was hit by Breath of Frost; it will take damage over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNBreathOfFrost.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "";
             return buff;
         }
 
@@ -1343,6 +1567,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has been hit by Slam; its movement speed and attack rate are reduced.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNGolemThunderclap.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
             return buff;
         }
 
@@ -1353,6 +1579,11 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has Frenzy; its attack rate and movement speed are increased.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNBloodLust.blp";
+            buff.ArtTargetAttachments = 2;
+            buff.ArtTargetAttachmentPoint1Raw = "hand,left";
+            buff.ArtTargetAttachmentPoint2Raw = "hand,right";
+            buff.ArtRequiredSpellDetailRaw = 1;
             return buff;
         }
 
@@ -1373,6 +1604,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has been hit by Mind Rot; it is losing mana over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNTemp.blp";
             return buff;
         }
 
@@ -1383,6 +1615,8 @@ namespace War3Api.Object
             buff.TextEditorSuffix = " (Neutral Hostile 2)";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtTargetAttachmentPoint1Raw = "chest";
+            buff.ArtSpecialAttachmentPointRaw = "chest";
             return buff;
         }
 
@@ -1393,6 +1627,7 @@ namespace War3Api.Object
             buff.TextEditorSuffix = " (Neutral Hostile 1)";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtSpecialAttachmentPointRaw = "head";
             return buff;
         }
 
@@ -1403,6 +1638,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is under the effects of a Staff of Sanctuary; its hit points will regenerate over time, but it cannot move, attack or cast spells.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNStaffOfSanctuary.blp";
             return buff;
         }
 
@@ -1413,6 +1649,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit was hit by a Wand of Shadowsight; it is revealed to an enemy player.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNWandOfShadowSight.blp";
             return buff;
         }
 
@@ -1442,6 +1679,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is caught within a Tornado; it has been tossed into the air.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNTornado.blp";
+            buff.ArtEffectAttachmentPointRaw = "sprite,first";
             return buff;
         }
 
@@ -1461,6 +1700,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit was hit by a Black Arrow; if it dies, it will turn into a skeleton for the enemy.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNTheBlackArrow.blp";
             return buff;
         }
 
@@ -1471,6 +1711,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has been hit by Breath of Fire; it will take damage over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNBreathOfFire.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "";
             return buff;
         }
 
@@ -1482,6 +1724,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit was hit by a Cold Arrow; its attack rate and movement speed have been reduced.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNColdArrows.blp";
             return buff;
         }
 
@@ -1493,6 +1736,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit was hit by a Cold Arrow; its attack rate and movement speed have been reduced.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNColdArrows.blp";
             return buff;
         }
 
@@ -1513,6 +1757,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "Summoned units take damage from dispels.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNTheBlackArrow.blp";
             return buff;
         }
 
@@ -1523,6 +1768,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has been stricken with Doom; it cannot cast spells and will take damage until it dies, and a Demon will spawn from its corpse. Doom cannot be dispelled or cancelled.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNDoom.blp";
             return buff;
         }
 
@@ -1544,6 +1790,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit was hit by a Drunken Haze; it has reduced movement speed and a chance to miss on attacks.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNStrongDrink.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
             return buff;
         }
 
@@ -1554,6 +1802,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "I am a Pandaren Elemental; worship me.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNStormEarth&Fire.blp";
             return buff;
         }
 
@@ -1564,6 +1813,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has heard the Howl of Terror; it deals less damage for a duration.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNHowlOfTerror.blp";
             return buff;
         }
 
@@ -1574,6 +1824,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has a Mana Shield; it is temporarily protected from physical damage and negative spells.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNNeutralManaShield.blp";
             return buff;
         }
 
@@ -1584,6 +1835,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is Silenced; it cannot cast spells.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNSilence.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
             return buff;
         }
 
@@ -1603,6 +1856,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "A ferocious bear.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNGrizzlyBear.blp";
             return buff;
         }
 
@@ -1613,6 +1867,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "An angry quilbeast.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNQuillBeast.blp";
             return buff;
         }
 
@@ -1623,6 +1878,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "A proud hawk.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNWarEagle.blp";
             return buff;
         }
 
@@ -1633,6 +1889,7 @@ namespace War3Api.Object
             buff.TextTooltip = "Tornado";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.SoundEffectSoundLoopingRaw = "TornadoLoop";
             return buff;
         }
 
@@ -1643,6 +1900,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "Summoned units take damage from dispels.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNMurgulTideWarrior.blp";
             return buff;
         }
 
@@ -1653,6 +1911,9 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has Battle Roar; its attack damage has been increased.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNBattleRoar.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
+            buff.ArtRequiredSpellDetailRaw = 1;
             return buff;
         }
 
@@ -1663,6 +1924,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This villager was hit by Dark Conversion; it will fall asleep and then turn into a zombie.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNSleep.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
             return buff;
         }
 
@@ -1683,6 +1946,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has been inflicted with a parasite; it will take damage over time, and if it dies while still afflicted, a minion will spawn from its corpse.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNParasite.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
             return buff;
         }
 
@@ -1694,6 +1959,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has been inflicted with a parasite; it will take damage over time, and if it dies while still afflicted, a minion will spawn from its corpse.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNParasite.blp";
             return buff;
         }
 
@@ -1704,6 +1970,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit was hit by Rain of Fire; it will take damage over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNFire.blp";
             return buff;
         }
 
@@ -1724,6 +1991,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is being preserved for later use.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNSleep.blp";
+            buff.SoundEffectSoundRaw = "SoulPreservation";
             return buff;
         }
 
@@ -1734,6 +2003,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit was hit by an Orb of Corruption; its armor is temporarily reduced.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNOrbOfCorruption.blp";
             return buff;
         }
 
@@ -1754,6 +2024,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has a Cloak of Flames; nearby enemy ground units will take damage over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNCloakOfFlames.blp";
+            buff.ArtSpecialAttachmentPointRaw = "head";
             return buff;
         }
 
@@ -1764,6 +2036,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is an illusion; it takes extra damage from enemies.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNWand.blp";
             return buff;
         }
 
@@ -1774,6 +2047,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has been reborn.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNRune.blp";
             return buff;
         }
 
@@ -1785,6 +2059,10 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit will regenerate health and mana over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNGreaterRejuvScroll.blp";
+            buff.ArtTargetAttachments = 2;
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
+            buff.ArtTargetAttachmentPoint2Raw = "origin";
             return buff;
         }
 
@@ -1795,6 +2073,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has Regeneration on it; its hit points will regenerate over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNHealingSalve.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
             return buff;
         }
 
@@ -1805,6 +2085,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit drank a Clarity Potion; its mana will regenerate over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNPotionOfClarity.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
             return buff;
         }
 
@@ -1815,6 +2097,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This is the soul of a Hero.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNUsedSoulGem.blp";
             return buff;
         }
 
@@ -1853,6 +2136,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This Hero used a Vampiric Potion; the Hero has increased damage and a life-draining attack.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNPotionOfVampirism.blp";
             return buff;
         }
 
@@ -1862,6 +2146,7 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Cloud (Effect)";
             buff.StatsIsAnEffectRaw = 1;
             buff.StatsRaceRaw = "human";
+            buff.SoundEffectSoundLoopingRaw = "CloudOfFogLoop";
             return buff;
         }
 
@@ -1880,6 +2165,8 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Blizzard (Effect)";
             buff.StatsIsAnEffectRaw = 1;
             buff.StatsRaceRaw = "human";
+            buff.SoundEffectSoundRaw = "BlizzardWave";
+            buff.SoundEffectSoundLoopingRaw = "BlizzardLoop";
             return buff;
         }
 
@@ -1889,6 +2176,7 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Flame Strike (Effect)";
             buff.StatsIsAnEffectRaw = 1;
             buff.StatsRaceRaw = "human";
+            buff.SoundEffectSoundLoopingRaw = "HumanFireLarge";
             return buff;
         }
 
@@ -1898,6 +2186,7 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Burning Oil (Effect)";
             buff.StatsIsAnEffectRaw = 1;
             buff.StatsRaceRaw = "orc";
+            buff.SoundEffectSoundLoopingRaw = "HumanFireLarge";
             return buff;
         }
 
@@ -1907,6 +2196,7 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Earthquake (Effect)";
             buff.StatsIsAnEffectRaw = 1;
             buff.StatsRaceRaw = "orc";
+            buff.SoundEffectSoundLoopingRaw = "EarthquakeLoop";
             return buff;
         }
 
@@ -1942,6 +2232,7 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Tranquility (Effect)";
             buff.StatsIsAnEffectRaw = 1;
             buff.StatsRaceRaw = "nightelf";
+            buff.SoundEffectSoundLoopingRaw = "TranquilityLoop";
             return buff;
         }
 
@@ -1951,6 +2242,7 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Death And Decay (Effect)";
             buff.StatsIsAnEffectRaw = 1;
             buff.StatsRaceRaw = "undead";
+            buff.SoundEffectSoundLoopingRaw = "DeathAndDecayLoop";
             return buff;
         }
 
@@ -1960,6 +2252,7 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Monsoon (Effect)";
             buff.StatsIsAnEffectRaw = 1;
             buff.StatsRaceRaw = "other";
+            buff.SoundEffectSoundLoopingRaw = "MonsoonLoop";
             return buff;
         }
 
@@ -1978,6 +2271,8 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Rain of Fire (Effect)";
             buff.StatsIsAnEffectRaw = 1;
             buff.StatsRaceRaw = "other";
+            buff.SoundEffectSoundRaw = "RainOfFireWave";
+            buff.SoundEffectSoundLoopingRaw = "RainOfFireLoop";
             return buff;
         }
 
@@ -1996,6 +2291,7 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Starfall (Target)";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
             return buff;
         }
 
@@ -2014,6 +2310,7 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Monsoon";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtTargetAttachmentPoint1Raw = "origin";
             return buff;
         }
 
@@ -2051,6 +2348,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit has been Acid Bombed.  It has reduced armor, and is being damaged over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNAcidBomb.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "chest";
             return buff;
         }
 
@@ -2061,6 +2360,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is benefiting from Chemical Rage.  It is moving and attacking more quickly.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNChemicalRage.blp";
             return buff;
         }
 
@@ -2071,6 +2371,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is being healed by Healing Spray.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNHealingSpray.blp";
             return buff;
         }
 
@@ -2090,6 +2391,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is being transmuted and will die very soon. It will be converted into gold which will be given to the player who cast Transmute.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNTransmute.blp";
             return buff;
         }
 
@@ -2099,6 +2401,12 @@ namespace War3Api.Object
             buff.TextTooltip = "Engineering Upgrade";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNEngineeringUpgrade.blp";
+            buff.ArtTargetAttachments = 4;
+            buff.ArtTargetAttachmentPoint1Raw = "chest,left";
+            buff.ArtTargetAttachmentPoint2Raw = "chest,right";
+            buff.ArtTargetAttachmentPoint3Raw = "chest,mount,left";
+            buff.ArtTargetAttachmentPoint4Raw = "chest,mount,right";
             return buff;
         }
 
@@ -2109,6 +2417,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "Cluster Rockets.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNClusterRockets.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
             return buff;
         }
 
@@ -2148,6 +2458,9 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This target is partially aflame, and will incinerate if it dies, causing damage to nearby units.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNIncinerate.blp";
+            buff.ArtMissileHomingEnabledRaw = 1;
+            buff.ArtTargetAttachmentPoint1Raw = "chest";
             return buff;
         }
 
@@ -2158,6 +2471,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit is afflicted by Soul Burn. It cannot cast spells, attacks for less damage, and will take damage over time.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNSoulBurn.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
             return buff;
         }
 
@@ -2168,6 +2483,10 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "Lava Spawn.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtMissileArtRaw = "Abilities\\Weapons\\LavaSpawnMissile\\LavaSpawnBirthMissile.mdl";
+            buff.ArtMissileSpeed = 200;
+            buff.ArtMissileArc = 0.99f;
+            buff.ArtMissileHomingEnabledRaw = 1;
             return buff;
         }
 
@@ -2178,6 +2497,8 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "Volcano.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNVolcano.blp";
+            buff.ArtTargetAttachmentPoint1Raw = "overhead";
             return buff;
         }
 
@@ -2196,6 +2517,11 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Volcano (Effect)";
             buff.StatsIsAnEffectRaw = 1;
             buff.StatsRaceRaw = "other";
+            buff.ArtMissileArtRaw = "Abilities\\Spells\\Other\\Volcano\\VolcanoMissile.mdl";
+            buff.ArtMissileSpeed = 400;
+            buff.ArtMissileArc = 0.8f;
+            buff.ArtMissileHomingEnabledRaw = 1;
+            buff.SoundEffectSoundLoopingRaw = "VolcanoLoop";
             return buff;
         }
 
@@ -2232,6 +2558,11 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Building Damage - Human Small";
             buff.StatsIsAnEffectRaw = 1;
             buff.StatsRaceRaw = "human";
+            buff.ArtTargetRaw = "Environment\\SmallBuildingFire\\SmallBuildingFire2.mdl,Environment\\SmallBuildingFire\\SmallBuildingFire1.mdl";
+            buff.ArtTargetAttachments = 2;
+            buff.ArtTargetAttachmentPoint1Raw = "sprite,first";
+            buff.ArtTargetAttachmentPoint2Raw = "sprite,fourth";
+            buff.SoundEffectSoundLoopingRaw = "HumanFireSmall";
             return buff;
         }
 
@@ -2241,6 +2572,13 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Building Damage - Human Medium";
             buff.StatsIsAnEffectRaw = 1;
             buff.StatsRaceRaw = "human";
+            buff.ArtTargetRaw = "Environment\\LargeBuildingFire\\LargeBuildingFire2.mdl,Environment\\SmallBuildingFire\\SmallBuildingFire1.mdl,Environment\\LargeBuildingFire\\LargeBuildingFire0.mdl,Environment\\SmallBuildingFire\\SmallBuildingFire2.mdl";
+            buff.ArtTargetAttachments = 4;
+            buff.ArtTargetAttachmentPoint1Raw = "sprite,first";
+            buff.ArtTargetAttachmentPoint2Raw = "sprite,second";
+            buff.ArtTargetAttachmentPoint3Raw = "sprite,fourth";
+            buff.ArtTargetAttachmentPoint4Raw = "sprite,fifth";
+            buff.SoundEffectSoundLoopingRaw = "HumanFireMedium";
             return buff;
         }
 
@@ -2250,6 +2588,15 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Building Damage - Human Large";
             buff.StatsIsAnEffectRaw = 1;
             buff.StatsRaceRaw = "human";
+            buff.ArtTargetRaw = "Environment\\LargeBuildingFire\\LargeBuildingFire1.mdl,Environment\\LargeBuildingFire\\LargeBuildingFire0.mdl,Environment\\LargeBuildingFire\\LargeBuildingFire0.mdl,Environment\\SmallBuildingFire\\SmallBuildingFire1.mdl,Environment\\LargeBuildingFire\\LargeBuildingFire1.mdl,Environment\\SmallBuildingFire\\SmallBuildingFire0.mdl";
+            buff.ArtTargetAttachments = 6;
+            buff.ArtTargetAttachmentPoint1Raw = "sprite,first";
+            buff.ArtTargetAttachmentPoint2Raw = "sprite,second";
+            buff.ArtTargetAttachmentPoint3Raw = "sprite,fifth";
+            buff.ArtTargetAttachmentPoint4Raw = "sprite,third";
+            buff.ArtTargetAttachmentPoint5Raw = "sprite,fourth";
+            buff.ArtTargetAttachmentPoint6Raw = "sprite,sixth";
+            buff.SoundEffectSoundLoopingRaw = "HumanFireLarge";
             return buff;
         }
 
@@ -2259,6 +2606,11 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Building Damage - Orc Small";
             buff.StatsIsAnEffectRaw = 1;
             buff.StatsRaceRaw = "orc";
+            buff.ArtTargetRaw = "Environment\\SmallBuildingFire\\SmallBuildingFire2.mdl,Environment\\SmallBuildingFire\\SmallBuildingFire1.mdl";
+            buff.ArtTargetAttachments = 2;
+            buff.ArtTargetAttachmentPoint1Raw = "sprite,first";
+            buff.ArtTargetAttachmentPoint2Raw = "sprite,fourth";
+            buff.SoundEffectSoundLoopingRaw = "HumanFireSmall";
             return buff;
         }
 
@@ -2268,6 +2620,13 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Building Damage - Orc Medium";
             buff.StatsIsAnEffectRaw = 1;
             buff.StatsRaceRaw = "orc";
+            buff.ArtTargetRaw = "Environment\\LargeBuildingFire\\LargeBuildingFire2.mdl,Environment\\SmallBuildingFire\\SmallBuildingFire1.mdl,Environment\\LargeBuildingFire\\LargeBuildingFire0.mdl,Environment\\SmallBuildingFire\\SmallBuildingFire2.mdl";
+            buff.ArtTargetAttachments = 4;
+            buff.ArtTargetAttachmentPoint1Raw = "sprite,first";
+            buff.ArtTargetAttachmentPoint2Raw = "sprite,second";
+            buff.ArtTargetAttachmentPoint3Raw = "sprite,fourth";
+            buff.ArtTargetAttachmentPoint4Raw = "sprite,fifth";
+            buff.SoundEffectSoundLoopingRaw = "HumanFireMedium";
             return buff;
         }
 
@@ -2277,6 +2636,15 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Building Damage - Orc Large";
             buff.StatsIsAnEffectRaw = 1;
             buff.StatsRaceRaw = "orc";
+            buff.ArtTargetRaw = "Environment\\LargeBuildingFire\\LargeBuildingFire1.mdl,Environment\\LargeBuildingFire\\LargeBuildingFire0.mdl,Environment\\LargeBuildingFire\\LargeBuildingFire0.mdl,Environment\\SmallBuildingFire\\SmallBuildingFire1.mdl,Environment\\LargeBuildingFire\\LargeBuildingFire1.mdl,Environment\\SmallBuildingFire\\SmallBuildingFire0.mdl";
+            buff.ArtTargetAttachments = 6;
+            buff.ArtTargetAttachmentPoint1Raw = "sprite,first";
+            buff.ArtTargetAttachmentPoint2Raw = "sprite,second";
+            buff.ArtTargetAttachmentPoint3Raw = "sprite,fifth";
+            buff.ArtTargetAttachmentPoint4Raw = "sprite,third";
+            buff.ArtTargetAttachmentPoint5Raw = "sprite,fourth";
+            buff.ArtTargetAttachmentPoint6Raw = "sprite,sixth";
+            buff.SoundEffectSoundLoopingRaw = "HumanFireLarge";
             return buff;
         }
 
@@ -2286,6 +2654,11 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Building Damage - Night Elf Small";
             buff.StatsIsAnEffectRaw = 1;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtTargetRaw = "Environment\\NightElfBuildingFire\\ElfSmallBuildingFire2.mdl,Environment\\NightElfBuildingFire\\ElfSmallBuildingFire1.mdl";
+            buff.ArtTargetAttachments = 2;
+            buff.ArtTargetAttachmentPoint1Raw = "sprite,first";
+            buff.ArtTargetAttachmentPoint2Raw = "sprite,fourth";
+            buff.SoundEffectSoundLoopingRaw = "NightElfFireSmall";
             return buff;
         }
 
@@ -2295,6 +2668,13 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Building Damage - Night Elf Medium";
             buff.StatsIsAnEffectRaw = 1;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtTargetRaw = "Environment\\NightElfBuildingFire\\ElfLargeBuildingFire2.mdl,Environment\\NightElfBuildingFire\\ElfSmallBuildingFire1.mdl,Environment\\NightElfBuildingFire\\ElfLargeBuildingFire0.mdl,Environment\\NightElfBuildingFire\\ElfSmallBuildingFire2.mdl";
+            buff.ArtTargetAttachments = 4;
+            buff.ArtTargetAttachmentPoint1Raw = "sprite,first";
+            buff.ArtTargetAttachmentPoint2Raw = "sprite,second";
+            buff.ArtTargetAttachmentPoint3Raw = "sprite,fourth";
+            buff.ArtTargetAttachmentPoint4Raw = "sprite,fifth";
+            buff.SoundEffectSoundLoopingRaw = "NightElfFireMedium";
             return buff;
         }
 
@@ -2304,6 +2684,15 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Building Damage - Night Elf Large";
             buff.StatsIsAnEffectRaw = 1;
             buff.StatsRaceRaw = "nightelf";
+            buff.ArtTargetRaw = "Environment\\NightElfBuildingFire\\ElfLargeBuildingFire1.mdl,Environment\\NightElfBuildingFire\\ElfLargeBuildingFire0.mdl,Environment\\NightElfBuildingFire\\ElfLargeBuildingFire0.mdl,Environment\\NightElfBuildingFire\\ElfSmallBuildingFire1.mdl,Environment\\NightElfBuildingFire\\ElfLargeBuildingFire2.mdl,Environment\\NightElfBuildingFire\\ElfSmallBuildingFire0.mdl";
+            buff.ArtTargetAttachments = 6;
+            buff.ArtTargetAttachmentPoint1Raw = "sprite,first";
+            buff.ArtTargetAttachmentPoint2Raw = "sprite,second";
+            buff.ArtTargetAttachmentPoint3Raw = "sprite,fifth";
+            buff.ArtTargetAttachmentPoint4Raw = "sprite,third";
+            buff.ArtTargetAttachmentPoint5Raw = "sprite,fourth";
+            buff.ArtTargetAttachmentPoint6Raw = "sprite,sixth";
+            buff.SoundEffectSoundLoopingRaw = "NightElfFireLarge";
             return buff;
         }
 
@@ -2313,6 +2702,11 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Building Damage - Undead Small";
             buff.StatsIsAnEffectRaw = 1;
             buff.StatsRaceRaw = "undead";
+            buff.ArtTargetRaw = "Environment\\UndeadBuildingFire\\UndeadSmallBuildingFire2.mdl,Environment\\UndeadBuildingFire\\UndeadSmallBuildingFire1.mdl";
+            buff.ArtTargetAttachments = 2;
+            buff.ArtTargetAttachmentPoint1Raw = "sprite,first";
+            buff.ArtTargetAttachmentPoint2Raw = "sprite,fourth";
+            buff.SoundEffectSoundLoopingRaw = "UndeadFireSmall";
             return buff;
         }
 
@@ -2322,6 +2716,13 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Building Damage - Undead Medium";
             buff.StatsIsAnEffectRaw = 1;
             buff.StatsRaceRaw = "undead";
+            buff.ArtTargetRaw = "Environment\\UndeadBuildingFire\\UndeadLargeBuildingFire2.mdl,Environment\\UndeadBuildingFire\\UndeadSmallBuildingFire1.mdl,Environment\\UndeadBuildingFire\\UndeadLargeBuildingFire0.mdl,Environment\\UndeadBuildingFire\\UndeadSmallBuildingFire2.mdl";
+            buff.ArtTargetAttachments = 4;
+            buff.ArtTargetAttachmentPoint1Raw = "sprite,first";
+            buff.ArtTargetAttachmentPoint2Raw = "sprite,second";
+            buff.ArtTargetAttachmentPoint3Raw = "sprite,fourth";
+            buff.ArtTargetAttachmentPoint4Raw = "sprite,fifth";
+            buff.SoundEffectSoundLoopingRaw = "UndeadFireMedium";
             return buff;
         }
 
@@ -2331,6 +2732,15 @@ namespace War3Api.Object
             buff.TextNameEditorOnly = "Building Damage - Undead Large";
             buff.StatsIsAnEffectRaw = 1;
             buff.StatsRaceRaw = "undead";
+            buff.ArtTargetRaw = "Environment\\UndeadBuildingFire\\UndeadLargeBuildingFire1.mdl,Environment\\UndeadBuildingFire\\UndeadLargeBuildingFire0.mdl,Environment\\UndeadBuildingFire\\UndeadLargeBuildingFire0.mdl,Environment\\UndeadBuildingFire\\UndeadSmallBuildingFire1.mdl,Environment\\UndeadBuildingFire\\UndeadLargeBuildingFire2.mdl,Environment\\UndeadBuildingFire\\UndeadSmallBuildingFire0.mdl";
+            buff.ArtTargetAttachments = 6;
+            buff.ArtTargetAttachmentPoint1Raw = "sprite,first";
+            buff.ArtTargetAttachmentPoint2Raw = "sprite,second";
+            buff.ArtTargetAttachmentPoint3Raw = "sprite,fifth";
+            buff.ArtTargetAttachmentPoint4Raw = "sprite,third";
+            buff.ArtTargetAttachmentPoint5Raw = "sprite,fourth";
+            buff.ArtTargetAttachmentPoint6Raw = "sprite,sixth";
+            buff.SoundEffectSoundLoopingRaw = "UndeadFireLarge";
             return buff;
         }
 
@@ -2341,6 +2751,7 @@ namespace War3Api.Object
             buff.TextTooltipExtended = "This unit restores health at a reduced rate.";
             buff.StatsIsAnEffectRaw = 0;
             buff.StatsRaceRaw = "other";
+            buff.ArtIconRaw = "ReplaceableTextures\\CommandButtons\\BTNOrbOfFire.blp";
             return buff;
         }
 
