@@ -1,7 +1,7 @@
 [
   {
     "Flags": 2,
-    "OwnerId": 24,
+    "OwnerId": 27,
     "HP": -1,
     "MP": -1,
     "TargetAcquisition": -1,
@@ -10,7 +10,7 @@
     "AbilityData": [],
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "TypeId": 1295003752,
+    "TypeId": 1278226536,
     "Position": {
       "X": 18048,
       "Y": -2176
@@ -21,7 +21,7 @@
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1295003752,
+    "SkinId": 1278226536,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 612

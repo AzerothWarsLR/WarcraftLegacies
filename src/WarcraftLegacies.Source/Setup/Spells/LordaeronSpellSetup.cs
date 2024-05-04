@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       
       var solarJudgement = new SolarJudgementSpell(ABILITY_A01F_SOLAR_JUDGEMENT_LORDAERON_ARTHAS)
       {
-        DamageBase = 20,
+        DamageBase = 10,
         DamageLevel = 20,
         Duration = 14,
         Period = 0.25f,

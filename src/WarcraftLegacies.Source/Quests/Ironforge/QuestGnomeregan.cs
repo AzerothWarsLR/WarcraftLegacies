@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
 
     /// <inheritdoc/>
     public override string RewardFlavour =>
-      "Gnomeregan has been literated, and its military is now free to assist Ironforge.";
+      "Gnomeregan has been liberated, and its military is now free to assist Ironforge.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Control of all units in Gnomeregan";
