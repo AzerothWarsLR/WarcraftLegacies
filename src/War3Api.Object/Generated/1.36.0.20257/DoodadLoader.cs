@@ -33782,7 +33782,7 @@ namespace War3Api.Object
         protected virtual Doodad LoadSilvermoonWallStraight(ObjectDatabaseBase db)
         {
             var doodad = new Doodad(DoodadType.SilvermoonWallStraight, db);
-            doodad.TextName = "Silvermoon Wall ";
+            doodad.TextName = "Silvermoon Wall";
             doodad.EditorCategoryRaw = "S";
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
