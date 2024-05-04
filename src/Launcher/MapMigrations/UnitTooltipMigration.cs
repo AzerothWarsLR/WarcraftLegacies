@@ -2,7 +2,6 @@
 using System.Text;
 using Launcher.Extensions;
 using War3Api.Object;
-using War3Api.Object.Enums;
 using War3Net.Build;
 
 namespace Launcher.MapMigrations
@@ -122,9 +121,9 @@ namespace Launcher.MapMigrations
 
       tooltipBuilder.Append(LineSeperator + LineSeperator);
       
-      if (targetsAllowed.Contains(Target.Ground))
+      if (targetsAllowed.CanTargetGround())
       {
-        tooltipBuilder.Append(targetsAllowed.Contains(Target.Air)
+        tooltipBuilder.Append(targetsAllowed.CanTargetAir()
           ? "|cffffcc00Attacks land and air units.|r"
           : "|cffffcc00Attacks land units.|r");
       }
