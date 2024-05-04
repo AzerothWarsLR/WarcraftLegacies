@@ -14,8 +14,8 @@ namespace Launcher.MapMigrations
   {
     private const string LineSeperator = "|n";
     private const string AbilitiesKnown = "|cfff5962dAbilities:|r ";
-    private const string AbilitiesLearnable = "|cfff5962dLearnable abilities:|r ";
-    private const string HeroAbilitiesKnown = "|cfff5962dHero Abilities:|r ";
+    private const string AbilitiesLearnable = "|cfff5962dResearchable abilities:|r ";
+    private const string HeroAbilitiesKnown = "|cfff5962dHero abilities:|r ";
 
     /// <inheritdoc />
     public void Migrate(Map map, ObjectDatabase objectDatabase)
