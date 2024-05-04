@@ -2,6 +2,7 @@
 using System.Text;
 using Launcher.Extensions;
 using War3Api.Object;
+using War3Api.Object.Enums;
 using War3Net.Build;
 
 namespace Launcher.MapMigrations
@@ -43,8 +44,8 @@ namespace Launcher.MapMigrations
       AppendInnateAbilities(tooltipBuilder, unit);
       AppendLearnedAbilities(tooltipBuilder, unit);
       AppendHeroAbilities(tooltipBuilder, unit);
+      AppendTargetsAllowed(tooltipBuilder, unit);
       
-
       var extendedTooltip = tooltipBuilder.ToString();
       unit.TextTooltipExtended = extendedTooltip;
     }
@@ -109,6 +110,23 @@ namespace Launcher.MapMigrations
       if (researchesAvailable.Any())
       {
         tooltipBuilder.Append($"{LineSeperator}{ResearchesAvailable}{string.Join(", ", researchesAvailable)}");
+      }
+    }
+    
+    private static void AppendTargetsAllowed(StringBuilder tooltipBuilder, Unit unit)
+    {
+      var targetsAllowed = unit.GetAllTargetsAllowedSafe();
+
+      if (!targetsAllowed.Any())
+        return;
+
+      tooltipBuilder.Append(LineSeperator + LineSeperator);
+      
+      if (targetsAllowed.Contains(Target.Ground))
+      {
+        tooltipBuilder.Append(targetsAllowed.Contains(Target.Air)
+          ? "|cffffcc00Attacks land and air units.|r"
+          : "|cffffcc00Attacks land units.|r");
       }
     }
 
