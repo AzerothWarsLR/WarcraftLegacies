@@ -39,6 +39,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Provides a +5 bonus to Agility, Strength, and Intelligence.";
+            item.TextHotkeyRaw = "K";
+            item.TextName = "Crown of Kings +5";
+            item.TextTooltipBasic = "Purchase Crown of Kings";
+            item.TextTooltipExtended = "Increases the Strength, Intelligence, and Agility of the Hero by 5 when worn.";
             return item;
         }
 
@@ -70,6 +75,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "This mask causes the Hero's attacks to drain life.";
+            item.TextName = "Mask of Death";
+            item.TextTooltipBasic = "Purchase Mask of Death";
+            item.TextTooltipExtended = "While wearing this mask, a Hero will recover hit points equal to <AIva,DataA1,%>% of the attack damage dealt to an enemy unit.";
             return item;
         }
 
@@ -101,6 +110,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Gives the Hero an experience level.";
+            item.TextHotkeyRaw = "P";
+            item.TextName = "Tome of Power";
+            item.TextTooltipBasic = "Purchase Tome of Power";
+            item.TextTooltipExtended = "Increases the level of the Hero by <AIlm,DataA1> when used.";
             return item;
         }
 
@@ -132,6 +146,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts attack damage by 15.";
+            item.TextName = "Claws of Attack +15";
+            item.TextTooltipBasic = "Purchase Claws of Attack +15";
+            item.TextTooltipExtended = "Increases the attack damage of the Hero by 15 when worn.";
             return item;
         }
 
@@ -163,6 +181,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Attacks cause Frost Shock.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Orb of Frost";
+            item.TextTooltipBasic = "Purchase Orb of Frost";
+            item.TextTooltipExtended = "Adds <AIob,DataA1> bonus cold damage to the attack of a Hero when carried. The Hero's attacks also become ranged when attacking air and slow the movement speed and attack rate of the enemy for <AIob,Dur1> seconds.";
             return item;
         }
 
@@ -194,6 +217,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Brings down an Infernal Demon.";
+            item.TextName = "Inferno Stone";
+            item.TextTooltipBasic = "Purchase Inferno Stone";
+            item.TextTooltipExtended = "Calls an Infernal down from the sky, dealing <AIin,DataA1> damage and stunning enemy land units for <AIin,Dur1> seconds in an area. The Infernal lasts <AIin,DataB1> seconds.";
             return item;
         }
 
@@ -225,6 +252,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Teleports the Hero a short distance.";
+            item.TextHotkeyRaw = "E";
+            item.TextName = "Kelen's Dagger of Escape";
+            item.TextTooltipBasic = "Purchase Dagger of Escape";
+            item.TextTooltipExtended = "Allows the Hero to teleport a short distance.";
             return item;
         }
 
@@ -256,6 +288,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Summons a Doom Guard.";
+            item.TextName = "Demonic Figurine";
+            item.TextTooltipBasic = "Purchase Demonic Figurine";
+            item.TextTooltipExtended = "Summons a Doom Guard to fight for you. |nLasts <AIfu,Dur1> seconds.";
             return item;
         }
 
@@ -287,6 +323,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Summons a Blue Dragonspawn Overseer.";
+            item.TextName = "Engraved Scale";
+            item.TextTooltipBasic = "Purchase Engraved Scale";
+            item.TextTooltipExtended = "Summons a Blue Dragonspawn Overseer to fight for you.|nLasts <AIes,Dur1> seconds.";
             return item;
         }
 
@@ -318,6 +358,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Summons an Ice Revenant.";
+            item.TextName = "Ice Shard";
+            item.TextTooltipBasic = "Purchase Ice Shard";
+            item.TextTooltipExtended = "Summons an Ice Revenant. The Ice Revenant lasts <AIir,Dur1> seconds.";
             return item;
         }
 
@@ -349,6 +393,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Allows mind control of non-Hero units.";
+            item.TextHotkeyRaw = "C";
+            item.TextName = "Scepter of Mastery";
+            item.TextTooltipBasic = "Purchase Scepter of Mastery";
+            item.TextTooltipExtended = "Transfers control of the targeted non-Hero unit to the player who uses the Scepter. The transfer of control is permanent. |nCannot be used on Heroes or on creeps higher than level  <AIco,DataA1>. |nContains <ccmd,uses> charges.";
             return item;
         }
 
@@ -380,6 +429,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Summons a Furbolg.";
+            item.TextName = "Amulet of the Wild";
+            item.TextTooltipBasic = "Purchase Amulet of the Wild";
+            item.TextTooltipExtended = "Summons a Furbolg Warrior. The Furbolg lasts <AIuw,Dur1> seconds.";
             return item;
         }
 
@@ -411,6 +464,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Turns non-Hero units into gold.";
+            item.TextName = "Scepter of Avarice";
+            item.TextTooltipBasic = "Purchase Scepter of Avarice";
+            item.TextTooltipExtended = "Kills a target unit instantly, transforming it into gold. <AIts,DataA1,%>% of the unit's cost is added to your available gold.|nCannot be used on Heroes, or creeps above level <AIts,DataC1>.";
             return item;
         }
 
@@ -442,6 +499,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Attacks can create Dark Minions.";
+            item.TextHotkeyRaw = "B";
+            item.TextName = "Orb of Darkness";
+            item.TextTooltipBasic = "Purchase Orb of Darkness";
+            item.TextTooltipExtended = "Adds <AIdf,DataA1> bonus damage to the attack of a Hero when carried. The Hero's attack also becomes ranged when attacking air and will create a Dark Minion when it is the killing blow on an enemy unit. The Dark Minion lasts <ANbs,DataC1> seconds.";
             return item;
         }
 
@@ -473,6 +535,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts armor by 5.";
+            item.TextHotkeyRaw = "5";
+            item.TextName = "Ring of Protection +5";
+            item.TextTooltipBasic = "Purchase Ring of Protection +5";
+            item.TextTooltipExtended = "Increases the armor of the Hero by 5 when worn.";
             return item;
         }
 
@@ -504,6 +571,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Provides additional mana.";
+            item.TextName = "Pendant of Mana";
+            item.TextTooltipBasic = "Purchase Pendant of Mana";
+            item.TextTooltipExtended = "Increases the mana capacity of the Hero by <AIbm,DataA1> when worn.";
             return item;
         }
 
@@ -535,6 +606,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Increases the hit points of the Hero.";
+            item.TextHotkeyRaw = "H";
+            item.TextName = "Khadgar's Gem of Health";
+            item.TextTooltipBasic = "Purchase Khadgar's Gem of Health";
+            item.TextTooltipExtended = "Increases the hit points of the Hero by <AIl2,DataA1> when worn.";
             return item;
         }
 
@@ -566,6 +642,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Stops enemy spellcasting.";
+            item.TextHotkeyRaw = "E";
+            item.TextName = "Staff of Silence";
+            item.TextTooltipBasic = "Purchase Staff of Silence";
+            item.TextTooltipExtended = "Stops all enemies in a target area from casting spells for <AIse,Dur1> seconds.";
             return item;
         }
 
@@ -597,6 +678,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Blocks enemy spells.";
+            item.TextHotkeyRaw = "A";
+            item.TextName = "Amulet of Spell Shield";
+            item.TextTooltipBasic = "Purchase Amulet of Spell Shield";
+            item.TextTooltipExtended = "Blocks a negative spell that an enemy casts on the Hero once every <ANss,Cool1> seconds.";
             return item;
         }
 
@@ -628,6 +714,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Restores hit points and mana to nearby units.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Scroll of Restoration";
+            item.TextTooltipBasic = "Purchase Scroll of Restoration";
+            item.TextTooltipExtended = "Restores <AIra,DataA1> hit points and <AIra,DataB1> mana of friendly non-mechanical units in an area around your Hero.";
             return item;
         }
 
@@ -659,6 +750,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Turns Hero invulnerable.";
+            item.TextHotkeyRaw = "D";
+            item.TextName = "Potion of Divinity";
+            item.TextTooltipBasic = "Purchase Potion of Divinity";
+            item.TextTooltipExtended = "Makes the Hero invulnerable to damage for <AIvg,Dur1> seconds when used. An invulnerable Hero may not be the target of spells or effects.";
             return item;
         }
 
@@ -690,6 +786,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Restores lost hit points and mana.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Potion of Restoration";
+            item.TextTooltipBasic = "Purchase Potion of Restoration";
+            item.TextTooltipExtended = "Restores <AIre,DataA1> hit points and <AIre,DataB1> mana of the Hero when used.";
             return item;
         }
 
@@ -721,6 +822,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Summons a Furbolg Tracker.";
+            item.TextName = "Idol of the Wild";
+            item.TextTooltipBasic = "Purchase Idol of the Wild";
+            item.TextTooltipExtended = "Summons a Furbolg Tracker to fight for you. |nLasts <AIut,Dur1> seconds.";
             return item;
         }
 
@@ -752,6 +857,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Summons a Fel Stalker.";
+            item.TextName = "Spiked Collar";
+            item.TextTooltipBasic = "Purchase Spiked Collar";
+            item.TextTooltipExtended = "Summons a Fel Stalker to fight for you. |nLasts <AIfh,Dur1> seconds.";
             return item;
         }
 
@@ -783,6 +892,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Summons a Blue Drake.";
+            item.TextName = "Blue Drake Egg";
+            item.TextTooltipBasic = "Purchase Drake Egg";
+            item.TextTooltipExtended = "Summons a Blue Drake to fight for you. |nLasts <AIbd,Dur1> seconds.";
             return item;
         }
 
@@ -814,6 +927,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Summons a Rock Golem.";
+            item.TextName = "Stone Token";
+            item.TextTooltipBasic = "Purchase Stone Token";
+            item.TextTooltipExtended = "Summons a Rock Golem to fight for you. |nLasts <AIfr,Dur1> seconds.";
             return item;
         }
 
@@ -845,6 +962,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Provides bonuses to Agility and Intelligence.";
+            item.TextName = "Hood of Cunning";
+            item.TextTooltipBasic = "Purchase Hood of Cunning";
+            item.TextTooltipExtended = "Increases the Agility and Intelligence of the Hero by 5 when worn.";
             return item;
         }
 
@@ -876,6 +997,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Provides bonuses to Strength and Agility.";
+            item.TextName = "Helm of Valor";
+            item.TextTooltipBasic = "Purchase Helm of Valor";
+            item.TextTooltipExtended = "Increases the Strength and Agility of the Hero by 5 when worn.";
             return item;
         }
 
@@ -907,6 +1032,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Provides bonuses to Strength and Intelligence.";
+            item.TextName = "Medallion of Courage";
+            item.TextTooltipBasic = "Purchase Medallion of Courage";
+            item.TextTooltipExtended = "Increases the Strength and Intelligence of the Hero by 5 when worn.";
             return item;
         }
 
@@ -938,6 +1067,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Nearby units move and attack more swiftly.";
+            item.TextName = "Ancient Janggo of Endurance";
+            item.TextTooltipBasic = "Purchase Ancient Janggo of Endurance";
+            item.TextTooltipExtended = "Grants the Hero and friendly nearby units <AIae,DataB1,%>% increased attack speed and <AIae,DataA1,%>% movement speed. |nDoes not stack with Endurance Aura.";
             return item;
         }
 
@@ -969,6 +1102,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Surrounds the Hero with damaging flames.";
+            item.TextName = "Cloak of Flames";
+            item.TextTooltipBasic = "Purchase Cloak of Flames";
+            item.TextTooltipExtended = "Engulfs the Hero in fire which deals <AIcf,DataA1> damage per second to nearby enemy land units. |nDoes not stack with Immolation.";
             return item;
         }
 
@@ -1000,6 +1137,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts attack damage by 12.";
+            item.TextName = "Claws of Attack +12";
+            item.TextTooltipBasic = "Purchase Claws of Attack +12";
+            item.TextTooltipExtended = "Increases the attack damage of the Hero by 12 when worn.";
             return item;
         }
 
@@ -1031,6 +1172,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Increases combat effectiveness of nearby units.";
+            item.TextHotkeyRaw = "W";
+            item.TextName = "Warsong Battle Drums";
+            item.TextTooltipBasic = "Purchase Warsong Battle Drums";
+            item.TextTooltipExtended = "Increases the attack damage of nearby friendly units by <AIwd,DataA1,%>% when worn. |nDoes not stack with War Drums.";
             return item;
         }
 
@@ -1062,6 +1208,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Nearby units regain mana more swiftly.";
+            item.TextName = "Khadgar's Pipe of Insight";
+            item.TextTooltipBasic = "Purchase Khadgar's Pipe of Insight";
+            item.TextTooltipExtended = "Grants the Hero and friendly nearby units <AIba,DataA1,.> bonus mana regeneration. |nDoes not stack with Brilliance Aura.";
             return item;
         }
 
@@ -1093,6 +1243,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Nearby units heal and move more swiftly.";
+            item.TextName = "Legion Doom-Horn";
+            item.TextTooltipBasic = "Purchase Legion Doom-Horn";
+            item.TextTooltipExtended = "Grants the Hero and friendly nearby units <AIau,DataB1,.> life regeneration and <AIau,DataA1,%>% increased movement speed. |nDoes not stack with Unholy Aura.";
             return item;
         }
 
@@ -1124,6 +1278,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Allows reincarnation upon death.";
+            item.TextHotkeyRaw = "A";
+            item.TextName = "Ankh of Reincarnation";
+            item.TextTooltipBasic = "Purchase Ankh of Reincarnation";
+            item.TextTooltipExtended = "Automatically brings the Hero back to life with <AIrc,DataB1> hit points when the Hero wearing the Ankh dies.";
             return item;
         }
 
@@ -1155,6 +1314,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 3;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Conjures a Healing Ward.";
+            item.TextName = "Healing Wards";
+            item.TextTooltipBasic = "Purchase Healing Wards";
+            item.TextTooltipExtended = "Summons an immovable ward that heals <Aoar,DataA1,%>% of nearby friendly non-mechanical unit's hit points per second. |nContains <whwd,uses> charges. |nLasts <Ahwd,Dur1> seconds. ";
             return item;
         }
 
@@ -1186,6 +1349,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Summons skeletons.";
+            item.TextName = "Book of the Dead";
+            item.TextTooltipBasic = "Purchase Book of the Dead";
+            item.TextTooltipExtended = "Summons <AIfs,DataA1> Skeleton Warriors and <AIfs,DataB1> Skeleton Archers to fight for you. |nLasts <AIfs,Dur1> seconds.";
             return item;
         }
 
@@ -1217,6 +1384,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 2;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Casts Cyclone.";
+            item.TextName = "Wand of the Wind";
+            item.TextTooltipBasic = "Purchase Wand of the Wind";
+            item.TextTooltipExtended = "Allows the Hero to cast Cyclone. Cyclone tosses a target enemy unit into the air, rendering it unable to attack, move or cast spells. |nContains <wcyc,uses> charges. |nLasts <AIcy,Dur1> seconds.";
             return item;
         }
 
@@ -1248,6 +1419,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Provides faster regeneration, and can be consumed for hit points.";
+            item.TextName = "Health Stone";
+            item.TextTooltipBasic = "Purchase Health Stone";
+            item.TextTooltipExtended = "Increases the life regeneration rate of the Hero by <Arll,DataA1> hit points per second when worn. Can be consumed for <AIh2,DataA1> health.";
             return item;
         }
 
@@ -1279,6 +1454,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Provides faster mana regeneration, and can be consumed for mana.";
+            item.TextName = "Mana Stone";
+            item.TextTooltipBasic = "Purchase Mana Stone";
+            item.TextTooltipExtended = "Increases the mana regeneration rate of the Hero by <AIrn,DataA1,%>% when worn. Can be consumed for <AIm2,DataA1> mana.";
             return item;
         }
 
@@ -1310,6 +1489,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Provides a bonus to Agility.";
+            item.TextHotkeyRaw = "E";
+            item.TextName = "Boots of Quel'Thalas +6";
+            item.TextTooltipBasic = "Purchase Boots of Quel'Thalas";
+            item.TextTooltipExtended = "Increases the Agility of the Hero by 6 when worn.";
             return item;
         }
 
@@ -1341,6 +1525,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Provides a bonus to Strength.";
+            item.TextHotkeyRaw = "B";
+            item.TextName = "Belt of Giant Strength +6";
+            item.TextTooltipBasic = "Purchase Belt of Giant Strength";
+            item.TextTooltipExtended = "Increases the Strength of the Hero by 6 when worn.";
             return item;
         }
 
@@ -1372,6 +1561,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Provides a bonus to Intelligence.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Robe of the Magi +6";
+            item.TextTooltipBasic = "Purchase Robe of the Magi";
+            item.TextTooltipExtended = "Increases the Intelligence of the Hero by 6 when worn.";
             return item;
         }
 
@@ -1403,6 +1597,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Generates a protective aura around the Hero.";
+            item.TextName = "The Lion Horn of Stormwind";
+            item.TextTooltipBasic = "Purchase the Lion Horn of Stormwind";
+            item.TextTooltipExtended = "Grants the Hero and friendly nearby units <AIad,DataA1> bonus armor. |nDoes not stack with Devotion Aura.";
             return item;
         }
 
@@ -1434,6 +1632,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Nearby units' missile attacks do more damage.";
+            item.TextName = "Alleria's Flute of Accuracy";
+            item.TextTooltipBasic = "Purchase Alleria's Flute of Accuracy";
+            item.TextTooltipExtended = "Increases nearby ranged units' damage by <AIar,DataA1,%>%. |nDoes not stack with Trueshot Aura.";
             return item;
         }
 
@@ -1465,6 +1667,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Nearby units gain some life from damage they deal to enemy units.";
+            item.TextName = "Scourge Bone Chimes";
+            item.TextTooltipBasic = "Purchase Scourge Bone Chimes";
+            item.TextTooltipExtended = "Grants a melee Hero and friendly nearby melee units life stealing attacks which take <AIav,DataA1,%>% of the damage they deal and convert it into life. |nDoes not stack with Vampiric Aura.";
             return item;
         }
 
@@ -1496,6 +1702,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Reduces Spell damage to Hero.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Runed Bracers";
+            item.TextTooltipBasic = "Purchase Runed Bracers";
+            item.TextTooltipExtended = "Reduces Spell damage dealt to the Hero by <AIsr,DataB1,%>%.";
             return item;
         }
 
@@ -1527,6 +1738,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Increases mana regeneration rate.";
+            item.TextHotkeyRaw = "B";
+            item.TextName = "Sobi Mask";
+            item.TextTooltipBasic = "Purchase Sobi Mask";
+            item.TextTooltipExtended = "Increases the Hero's rate of mana regeneration by <AIrm,DataA1,%>% when worn.";
             return item;
         }
 
@@ -1558,6 +1774,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Restores lost hit points.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Potion of Greater Healing";
+            item.TextTooltipBasic = "Purchase Potion of Greater Healing";
+            item.TextTooltipExtended = "Heals <AIh2,DataA1> hit points when used.";
             return item;
         }
 
@@ -1589,6 +1810,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Restores lost mana.";
+            item.TextHotkeyRaw = "M";
+            item.TextName = "Potion of Greater Mana";
+            item.TextTooltipBasic = "Purchase Potion of Greater Mana";
+            item.TextTooltipExtended = "Restores <AIm2,DataA1> mana when used.";
             return item;
         }
 
@@ -1620,6 +1846,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Renders Hero temporarily invulnerable.";
+            item.TextHotkeyRaw = "I";
+            item.TextName = "Potion of Invulnerability";
+            item.TextTooltipBasic = "Purchase Potion of Invulnerability";
+            item.TextTooltipExtended = "Makes the Hero invulnerable to damage for <AIvu,Dur1> seconds when used. An invulnerable Hero may not be the target of spells or effects.";
             return item;
         }
 
@@ -1651,6 +1882,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts friendly unit combat damage.";
+            item.TextName = "Scroll of the Beast";
+            item.TextTooltipBasic = "Purchase Scroll of the Beast";
+            item.TextTooltipExtended = "Gives friendly nearby units a <AIrr,DataA1,%>% bonus to damage for <AIrr,Dur1> seconds.";
             return item;
         }
 
@@ -1682,6 +1917,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 2;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Steals mana.";
+            item.TextHotkeyRaw = "W";
+            item.TextName = "Wand of Mana Stealing";
+            item.TextTooltipBasic = "Purchase Wand of Mana Stealing";
+            item.TextTooltipExtended = "Steals <Aste,DataA1> mana instantly from a target unit and gives it to the Hero. |nContains <woms,uses> charges.";
             return item;
         }
 
@@ -1689,14 +1929,14 @@ namespace War3Api.Object
         {
             var item = new Item(ItemType.CrystalBall, db);
             item.AbilitiesAbilitiesRaw = "AIta";
-            item.StatsClassificationRaw = "Permanent";
+            item.StatsClassificationRaw = "Charged";
             item.StatsCooldownGroupRaw = "AIta";
             item.StatsDroppedWhenCarrierDiesRaw = 0;
             item.StatsCanBeDroppedRaw = 1;
-            item.StatsGoldCost = 300;
+            item.StatsGoldCost = 150;
             item.StatsHitPoints = 75;
             item.StatsIgnoreCooldownRaw = 0;
-            item.StatsLevel = 3;
+            item.StatsLevel = 2;
             item.StatsLumberCost = 0;
             item.StatsValidTargetForTransformationRaw = 0;
             item.StatsLevelUnclassified = 3;
@@ -1711,8 +1951,13 @@ namespace War3Api.Object
             item.StatsStockStartDelay = 0;
             item.StatsStockInitialAfterStartDelay = 1;
             item.StatsActivelyUsedRaw = 1;
-            item.StatsNumberOfCharges = 0;
+            item.StatsNumberOfCharges = 3;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Permits the viewing of distant areas.";
+            item.TextHotkeyRaw = "C";
+            item.TextName = "Crystal Ball";
+            item.TextTooltipBasic = "Purchase Crystal Ball";
+            item.TextTooltipExtended = "Reveals a targeted area. Invisible units are also revealed by the Crystal Ball's effect. |nLasts <AIta,Dur1> seconds.";
             return item;
         }
 
@@ -1744,6 +1989,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Makes the Hero harder to hit.";
+            item.TextName = "Talisman of Evasion";
+            item.TextTooltipBasic = "Purchase Talisman of Evasion";
+            item.TextTooltipExtended = "Causes attacks against the wearer to miss <AIev,DataA1,%>% of the time. |nDoes not stack with Evasion or Drunken Brawler.";
             return item;
         }
 
@@ -1775,6 +2024,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Provides additional mana.";
+            item.TextName = "Pendant of Energy";
+            item.TextTooltipBasic = "Purchase Pendant of Energy";
+            item.TextTooltipExtended = "Increases the mana capacity of the Hero by <AImb,DataA1> when worn.";
             return item;
         }
 
@@ -1786,7 +2039,7 @@ namespace War3Api.Object
             item.StatsCooldownGroupRaw = "AIml";
             item.StatsDroppedWhenCarrierDiesRaw = 0;
             item.StatsCanBeDroppedRaw = 1;
-            item.StatsGoldCost = 325;
+            item.StatsGoldCost = 300;
             item.StatsHitPoints = 75;
             item.StatsIgnoreCooldownRaw = 0;
             item.StatsLevel = 3;
@@ -1806,6 +2059,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Increases the hit points of the Hero.";
+            item.TextHotkeyRaw = "V";
+            item.TextName = "Periapt of Vitality";
+            item.TextTooltipBasic = "Purchase Periapt of Vitality";
+            item.TextTooltipExtended = "Increases the hit points of the Hero by <AIlf,DataA1> when worn.";
             return item;
         }
 
@@ -1837,6 +2095,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts attack damage by 8.";
+            item.TextHotkeyRaw = "C";
+            item.TextName = "Claws of Attack +8";
+            item.TextTooltipBasic = "Purchase Claws of Attack +8";
+            item.TextTooltipExtended = "Increases the attack damage of the Hero by 8 when worn.";
             return item;
         }
 
@@ -1868,6 +2131,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts armor by 4.";
+            item.TextHotkeyRaw = "4";
+            item.TextName = "Ring of Protection +4";
+            item.TextTooltipBasic = "Purchase Ring of Protection +4";
+            item.TextTooltipExtended = "Increases the armor of the Hero by 4 when worn.";
             return item;
         }
 
@@ -1899,6 +2167,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Provides regeneration.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Ring of Regeneration";
+            item.TextTooltipBasic = "Purchase Ring of Regeneration";
+            item.TextTooltipExtended = "Increases the Hero's hit point regeneration by <Arel,DataA1> hit points per second.";
             return item;
         }
 
@@ -1930,6 +2203,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Increases movement rate.";
+            item.TextHotkeyRaw = "S";
+            item.TextName = "Boots of Speed";
+            item.TextTooltipBasic = "Purchase Boots of Speed";
+            item.TextTooltipExtended = "Increases the movement speed of the Hero when worn.";
             return item;
         }
 
@@ -1961,6 +2239,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Regenerates health and mana.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Replenishment Potion";
+            item.TextTooltipBasic = "Purchase Replenishment Potion";
+            item.TextTooltipExtended = "|cff87ceebNon-Combat Consumable|r|nRegenerates <AIp3,DataA1> hit points and <AIp3,DataB1> mana of the Hero over <AIp3,Dur1> seconds.";
             return item;
         }
 
@@ -1992,6 +2275,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 2;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Creates a phantom double.";
+            item.TextHotkeyRaw = "I";
+            item.TextName = "Wand of Illusion";
+            item.TextTooltipBasic = "Purchase Wand of Illusion";
+            item.TextTooltipExtended = "Create an illusory double of the targeted unit when used. The illusory double deals no damage to enemy units, takes <AIil,DataB1> times the damage from enemy attacks, and will disappear after <AIil,Dur1> seconds or when its hit points reach zero. |nContains <will,uses> charges.";
             return item;
         }
 
@@ -2023,6 +2311,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 2;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Casts Lightning Shield.";
+            item.TextName = "Wand of Lightning Shield";
+            item.TextTooltipBasic = "Purchase Wand of Lightning Shield";
+            item.TextTooltipExtended = "Allows the Hero to cast Lightning Shield on a target unit. Lightning Shield surrounds a unit with electricity, dealing <AIls,DataA1> damage per second to nearby units. |nContains <wlsd,uses> charges. |nLasts <AIls,Dur1> seconds.";
             return item;
         }
 
@@ -2054,6 +2346,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 2;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Conjures a Sentry Ward.";
+            item.TextName = "Sentry Wards";
+            item.TextTooltipBasic = "Purchase Sentry Wards";
+            item.TextTooltipExtended = "Drops a Sentry Ward to spy upon an area for <AIsw,Dur1> seconds. |nContains <wswd,uses> charges.";
             return item;
         }
 
@@ -2085,6 +2381,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Provides a +2 bonus to Strength, Agility and Intelligence.";
+            item.TextHotkeyRaw = "C";
+            item.TextName = "Circlet of Nobility";
+            item.TextTooltipBasic = "Purchase Circlet of Nobility";
+            item.TextTooltipExtended = "Increases the Strength, Agility and Intelligence of the Hero by 2 when worn.";
             return item;
         }
 
@@ -2116,6 +2417,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Increases attack speed.";
+            item.TextName = "Gloves of Haste";
+            item.TextTooltipBasic = "Purchase Gloves of Haste";
+            item.TextTooltipExtended = "Increases the attack speed of the Hero by <AIsx,DataA1,%>% when worn.";
             return item;
         }
 
@@ -2147,6 +2452,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts attack damage by 5.";
+            item.TextName = "Claws of Attack +5";
+            item.TextTooltipBasic = "Purchase Claws of Attack +5";
+            item.TextTooltipExtended = "Increases the attack damage of the Hero by 5 when worn.";
             return item;
         }
 
@@ -2166,7 +2475,7 @@ namespace War3Api.Object
             item.StatsValidTargetForTransformationRaw = 0;
             item.StatsLevelUnclassified = 0;
             item.StatsPerishableRaw = 0;
-            item.StatsIncludeAsRandomChoiceRaw = 1;
+            item.StatsIncludeAsRandomChoiceRaw = 0;
             item.StatsUseAutomaticallyWhenAcquiredRaw = 0;
             item.StatsPriority = 105;
             item.StatsCanBeSoldByMerchantsRaw = 1;
@@ -2178,6 +2487,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts armor by 3.";
+            item.TextHotkeyRaw = "3";
+            item.TextName = "Ring of Protection +3";
+            item.TextTooltipBasic = "Purchase Ring of Protection +3";
+            item.TextTooltipExtended = "Increases the armor of the Hero by 3 when worn.";
             return item;
         }
 
@@ -2209,6 +2523,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Permanently increases Agility.";
+            item.TextName = "Tome of Agility +2";
+            item.TextTooltipBasic = "Purchase Tome of Agility +2";
+            item.TextTooltipExtended = "Permanently increases the Agility of the Hero by 2 when used.";
             return item;
         }
 
@@ -2240,6 +2558,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Permanently increases Intelligence.";
+            item.TextName = "Tome of Intelligence +2";
+            item.TextTooltipBasic = "Purchase Tome of Intelligence +2";
+            item.TextTooltipExtended = "Permanently increases the Intelligence of the Hero by 2 when used.";
             return item;
         }
 
@@ -2271,6 +2593,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Permanently increases Strength, Agility and Intelligence.";
+            item.TextName = "Tome of Knowledge";
+            item.TextTooltipBasic = "Purchase Tome of Knowledge";
+            item.TextTooltipExtended = "Permanently increases the Strength, Agility and Intelligence of the Hero by 1 when used.";
             return item;
         }
 
@@ -2302,6 +2628,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Permanently increases Strength.";
+            item.TextName = "Tome of Strength +2";
+            item.TextTooltipBasic = "Purchase Tome of Strength +2";
+            item.TextTooltipExtended = "Permanently increases the Strength of the Hero by 2 when used.";
             return item;
         }
 
@@ -2333,6 +2663,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Renders Hero temporarily invulnerable.";
+            item.TextHotkeyRaw = "N";
+            item.TextName = "Potion of Lesser Invulnerability";
+            item.TextTooltipBasic = "Purchase Potion of Lesser Invulnerability";
+            item.TextTooltipExtended = "Makes the Hero invulnerable to damage for <AIvl,Dur1> seconds when used. An invulnerable Hero may not be the target of spells or effects.";
             return item;
         }
 
@@ -2364,6 +2699,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Allows the hero to turn invisible.";
+            item.TextHotkeyRaw = "C";
+            item.TextName = "Cloak of Shadows";
+            item.TextTooltipBasic = "Purchase Cloak of Shadows";
+            item.TextTooltipExtended = "Provides the Hero with invisibility when worn. An invisible Hero is untargetable by the enemy unless detected. If the Hero moves, attacks, uses an ability, or casts a spell, the invisibility effect is lost.";
             return item;
         }
 
@@ -2395,6 +2735,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts Agility by 3.";
+            item.TextHotkeyRaw = "A";
+            item.TextName = "Slippers of Agility +3";
+            item.TextTooltipBasic = "Purchase Slippers of Agility +3";
+            item.TextTooltipExtended = "Increases the Agility of the Hero by 3 when worn.";
             return item;
         }
 
@@ -2426,6 +2771,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts Intelligence by 3.";
+            item.TextHotkeyRaw = "I";
+            item.TextName = "Mantle of Intelligence +3";
+            item.TextTooltipBasic = "Purchase Mantle of Intelligence +3";
+            item.TextTooltipExtended = "Increases the Intelligence of the Hero by 3 when worn.";
             return item;
         }
 
@@ -2457,6 +2807,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts Strength by 3.";
+            item.TextHotkeyRaw = "S";
+            item.TextName = "Gauntlets of Ogre Strength +3";
+            item.TextTooltipBasic = "Purchase Gauntlets of Ogre Strength +3";
+            item.TextTooltipExtended = "Increases the Strength of the Hero by 3 when worn.";
             return item;
         }
 
@@ -2488,6 +2843,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Permanent +50 hit points.";
+            item.TextName = "Manual of Health";
+            item.TextTooltipBasic = "Purchase Manual of Health";
+            item.TextTooltipExtended = "Permanently increases the hit points of the Hero by <AImh,DataA1> when used.";
             return item;
         }
 
@@ -2519,6 +2878,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Permanently increases Agility.";
+            item.TextHotkeyRaw = "A";
+            item.TextName = "Tome of Agility";
+            item.TextTooltipBasic = "Purchase Tome of Agility";
+            item.TextTooltipExtended = "Permanently increases the Agility of the Hero by <AIam,DataA1> when used.";
             return item;
         }
 
@@ -2550,6 +2914,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Permanently increases Intelligence.";
+            item.TextHotkeyRaw = "T";
+            item.TextName = "Tome of Intelligence";
+            item.TextTooltipBasic = "Purchase Tome of Intelligence";
+            item.TextTooltipExtended = "Permanently increases the Intelligence of the Hero by <AIim,DataB1> when used.";
             return item;
         }
 
@@ -2581,6 +2950,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Permanently increases Strength.";
+            item.TextHotkeyRaw = "S";
+            item.TextName = "Tome of Strength";
+            item.TextTooltipBasic = "Purchase Tome of Strength";
+            item.TextTooltipExtended = "Permanently increases the Strength of the Hero by <AIsm,DataC1> when used.";
             return item;
         }
 
@@ -2612,6 +2986,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Reveals the entire map.";
+            item.TextHotkeyRaw = "O";
+            item.TextName = "Potion of Omniscience";
+            item.TextTooltipBasic = "Purchase Potion of Omniscience";
+            item.TextTooltipExtended = "Reveals the entire map for <AIrv,Dur1> seconds when used.";
             return item;
         }
 
@@ -2643,6 +3022,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 2;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Grants vision of a target unit.";
+            item.TextHotkeyRaw = "W";
+            item.TextName = "Wand of Shadowsight";
+            item.TextTooltipBasic = "Purchase Wand of Shadowsight";
+            item.TextTooltipExtended = "Gives the player vision of a target unit until that unit is dispelled. |nContains <wshs,uses> charges.";
             return item;
         }
 
@@ -2674,6 +3058,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Regenerates the health and mana of nearby units.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Greater Scroll of Replenishment";
+            item.TextTooltipBasic = "Purchase Greater Scroll of Replenishment";
+            item.TextTooltipExtended = "|cff87ceebNon-Combat Consumable|r|nRegenerates <AIp6,DataA1> hit points and <AIp6,DataB1> mana of the Hero and nearby friendly units over <AIp6,Dur1> seconds.";
             return item;
         }
 
@@ -2705,6 +3094,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Regenerates the health and mana of nearby units.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Lesser Scroll of Replenishment";
+            item.TextTooltipBasic = "Purchase Lesser Scroll of Replenishment";
+            item.TextTooltipExtended = "|cff87ceebNon-Combat Consumable|r|nRegenerates <AIp5,DataA1> hit points and <AIp5,DataB1> mana of the Hero and nearby friendly units over <AIp5,Dur1> seconds.";
             return item;
         }
 
@@ -2736,6 +3130,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Regenerates health and mana.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Greater Replenishment Potion";
+            item.TextTooltipBasic = "Purchase Greater Replenishment Potion";
+            item.TextTooltipExtended = "|cff87ceebNon-Combat Consumable|r|nRegenerates <AIp4,DataA1> hit points and <AIp4,DataB1> mana of the Hero over <AIp4,Dur1> seconds.";
             return item;
         }
 
@@ -2767,6 +3166,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A powerful artifact with a wondrous gem.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Ring of the Archmagi";
+            item.TextTooltipBasic = "Purchase Ring of the Archmagi";
+            item.TextTooltipExtended = "A powerful artifact with a wondrous gem inset. Increases the Strength, Agility and Intelligence of the Hero by 3 and gives nearby friendly units a bonus to mana regeneration.";
             return item;
         }
 
@@ -2798,6 +3202,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Summons your units to your Hero.";
+            item.TextHotkeyRaw = "D";
+            item.TextName = "Diamond of Summoning";
+            item.TextTooltipBasic = "Purchase Diamond of Summoning";
+            item.TextTooltipExtended = "Teleports <AUds,DataA1> of the player's units within the targeted area to the location of the Hero when used.";
             return item;
         }
 
@@ -2829,6 +3238,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Attacks also do fire damage.";
+            item.TextHotkeyRaw = "F";
+            item.TextName = "Orb of Fire";
+            item.TextTooltipBasic = "Purchase Orb of Fire";
+            item.TextTooltipExtended = "Adds <AIfb,DataA1> bonus fire damage to the attack of a Hero when carried. The Hero's attacks also become ranged when attacking air and do splash damage to nearby enemy units.";
             return item;
         }
 
@@ -2860,6 +3274,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Attacks reduce armor.";
+            item.TextHotkeyRaw = "B";
+            item.TextName = "Orb of Corruption";
+            item.TextTooltipBasic = "Purchase Orb of Corruption";
+            item.TextTooltipExtended = "Adds <AIcb,DataA1> bonus damage to the attack of a Hero when carried. The Hero's attacks also become ranged when attacking air and reduce the armor of enemy units for <AIcb,Dur1> seconds.";
             return item;
         }
 
@@ -2891,6 +3310,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Attacks cause lightning damage.";
+            item.TextHotkeyRaw = "L";
+            item.TextName = "Orb of Lightning";
+            item.TextTooltipBasic = "Purchase Orb of Lightning";
+            item.TextTooltipExtended = "Adds <AIll,DataA1> bonus damage to the attack of a Hero when carried. The Hero's attacks also become ranged when attacking air, and have a chance to dispel magic and immobilize the enemy for <AIpg,DataD1> seconds; they will slowly regain their movement speed over <AIpg,Dur1> seconds. |n|cffffcc00Deals <AIpg,DataC1> bonus damage to summoned units.";
             return item;
         }
 
@@ -2922,6 +3346,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Attacks cause poison damage.";
+            item.TextHotkeyRaw = "V";
+            item.TextName = "Orb of Venom";
+            item.TextTooltipBasic = "Purchase Orb of Venom";
+            item.TextTooltipExtended = "Adds <AIpb,DataA1> bonus damage to the attack of a Hero when carried. The Hero's attacks also become ranged when attacking air and poison enemy units for <Apo2,Dur1> seconds.";
             return item;
         }
 
@@ -2953,6 +3382,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A powerful artifact with a nearly intact gem.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Ring of the Archmagi";
+            item.TextTooltipBasic = "Purchase Ring of the Archmagi";
+            item.TextTooltipExtended = "A powerful artifact with most of a fragmented gem inset. Increases the Strength, Agility and Intelligence of the Hero by 3.";
             return item;
         }
 
@@ -2977,13 +3411,18 @@ namespace War3Api.Object
             item.StatsPriority = 0;
             item.StatsCanBeSoldByMerchantsRaw = 1;
             item.StatsCanBeSoldToMerchantsRaw = 1;
-            item.StatsStockMaximum = 1;
+            item.StatsStockMaximum = 2;
             item.StatsStockReplenishInterval = 120;
             item.StatsStockStartDelay = 440;
-            item.StatsStockInitialAfterStartDelay = 1;
+            item.StatsStockInitialAfterStartDelay = 2;
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Unlearns a Hero's skills.";
+            item.TextHotkeyRaw = "O";
+            item.TextName = "Tome of Retraining";
+            item.TextTooltipBasic = "Purchase Tome of Retraining";
+            item.TextTooltipExtended = "Unlearns all of the Hero's spells, allowing the Hero to learn different skills.";
             return item;
         }
 
@@ -3015,6 +3454,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Creates a Great Hall.";
+            item.TextHotkeyRaw = "G";
+            item.TextName = "Tiny Great Hall";
+            item.TextTooltipBasic = "Purchase Tiny Great Hall";
+            item.TextTooltipExtended = "Creates a Great Hall at a target location. Human, Night Elf, and Undead players will get their racial equivalent town hall.";
             return item;
         }
 
@@ -3046,6 +3490,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Regenerates health and mana.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Lesser Replenishment Potion";
+            item.TextTooltipBasic = "Purchase Lesser Replenishment Potion";
+            item.TextTooltipExtended = "|cff87ceebNon-Combat Consumable|r|nRegenerates <AIp2,DataA1> hit points and <AIp2,DataB1> mana of the Hero over <AIp2,Dur1> seconds.";
             return item;
         }
 
@@ -3077,6 +3526,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Permits invisible units to be seen.";
+            item.TextHotkeyRaw = "G";
+            item.TextName = "Gem of True Seeing";
+            item.TextTooltipBasic = "Purchase Gem of True Seeing";
+            item.TextTooltipExtended = "Allows the Hero to detect hidden or invisible units in the Hero's line of sight when carried.";
             return item;
         }
 
@@ -3108,6 +3562,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A powerful artifact with a fragmented gem.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Ring of the Archmagi";
+            item.TextTooltipBasic = "Purchase Ring of the Archmagi";
+            item.TextTooltipExtended = "A powerful artifact with a part of a fragmented gem inset. Increases the Strength, Agility and Intelligence of the Hero by 2.";
             return item;
         }
 
@@ -3132,13 +3591,18 @@ namespace War3Api.Object
             item.StatsPriority = 0;
             item.StatsCanBeSoldByMerchantsRaw = 1;
             item.StatsCanBeSoldToMerchantsRaw = 1;
-            item.StatsStockMaximum = 1;
+            item.StatsStockMaximum = 2;
             item.StatsStockReplenishInterval = 120;
             item.StatsStockStartDelay = 220;
-            item.StatsStockInitialAfterStartDelay = 1;
+            item.StatsStockInitialAfterStartDelay = 2;
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Teleports the Hero.";
+            item.TextHotkeyRaw = "E";
+            item.TextName = "Staff of Teleportation";
+            item.TextTooltipBasic = "Purchase Staff of Teleportation";
+            item.TextTooltipExtended = "Teleports the Hero to the targeted allied land unit or structure.";
             return item;
         }
 
@@ -3170,6 +3634,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Transports troops to friendly town hall.";
+            item.TextHotkeyRaw = "T";
+            item.TextName = "Scroll of Town Portal";
+            item.TextTooltipBasic = "Purchase Scroll of Town Portal";
+            item.TextTooltipExtended = "Teleports the Hero and any of its nearby troops to a target friendly town hall.";
             return item;
         }
 
@@ -3201,6 +3670,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 3;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Dispels magic in an area.";
+            item.TextHotkeyRaw = "N";
+            item.TextName = "Wand of Negation";
+            item.TextTooltipBasic = "Purchase Wand of Negation";
+            item.TextTooltipExtended = "Dispels all magical effects in a target area. |nContains <wneg,uses> charges. |n|cffffcc00Deals <AIdi,DataB1> damage to summoned units.|r";
             return item;
         }
 
@@ -3232,6 +3706,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Dispels magic in an area.";
+            item.TextHotkeyRaw = "N";
+            item.TextName = "Staff of Negation";
+            item.TextTooltipBasic = "Purchase Staff of Negation";
+            item.TextTooltipExtended = "Dispels all magical effects in a target area. |n|cffffcc00Deals <AIdi,DataB1> damage to summoned units.|r";
             return item;
         }
 
@@ -3263,6 +3742,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 4;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Dispels magical effects in a chain.";
+            item.TextHotkeyRaw = "N";
+            item.TextName = "Wand of Neutralization";
+            item.TextTooltipBasic = "Purchase Wand of Neutralization";
+            item.TextTooltipExtended = "Hurls forth a stream of neutralizing magic that bounces up to <AIdc,DataC1> times, dispelling units in its wake. |nContains <wneu,uses> charges.";
             return item;
         }
 
@@ -3294,6 +3778,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Restores hit points to nearby units.";
+            item.TextHotkeyRaw = "H";
+            item.TextName = "Scroll of Healing";
+            item.TextTooltipBasic = "Purchase Scroll of Healing";
+            item.TextTooltipExtended = "Heals <AIha,DataA1> hit points to all friendly non-mechanical units around the Hero when used.";
             return item;
         }
 
@@ -3325,6 +3814,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Restores mana to nearby units.";
+            item.TextHotkeyRaw = "M";
+            item.TextName = "Scroll of Mana";
+            item.TextTooltipBasic = "Purchase Scroll of Mana";
+            item.TextTooltipExtended = "Restores <AImr,DataA1> mana to all friendly units in an area around your Hero.";
             return item;
         }
 
@@ -3356,6 +3850,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Regenerates health and mana.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Minor Replenishment Potion";
+            item.TextTooltipBasic = "Purchase Minor Replenishment Potion";
+            item.TextTooltipExtended = "|cff87ceebNon-Combat Consumable|r|nRegenerates <AIp1,DataA1> hit points and <AIp1,DataB1> mana of the Hero over <AIp1,Dur1> seconds.";
             return item;
         }
 
@@ -3387,6 +3886,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Provides Hero with a temporary speed increase.";
+            item.TextHotkeyRaw = "S";
+            item.TextName = "Potion of Speed";
+            item.TextTooltipBasic = "Purchase Potion of Speed";
+            item.TextTooltipExtended = "Increases the movement speed of the Hero by <AIsp,DataA1,%>% for <AIsp,Dur1> seconds.";
             return item;
         }
 
@@ -3418,6 +3922,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 2;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Reveals invisible units.";
+            item.TextHotkeyRaw = "D";
+            item.TextName = "Dust of Appearance";
+            item.TextTooltipBasic = "Purchase Dust of Appearance";
+            item.TextTooltipExtended = "Reveals enemy invisible units in an area around the Hero. |nContains <dust,uses> charges. |nLasts <AItb,Dur1> seconds.";
             return item;
         }
 
@@ -3449,6 +3958,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A powerful artifact with a shattered gem.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Ring of the Archmagi";
+            item.TextTooltipBasic = "Purchase Ring of the Archmagi";
+            item.TextTooltipExtended = "A powerful artifact with a sliver of a fragmented gem inset. Increases the Strength, Agility and Intelligence of the Hero by 1.";
             return item;
         }
 
@@ -3480,6 +3994,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Renders Hero temporarily invisible.";
+            item.TextHotkeyRaw = "I";
+            item.TextName = "Potion of Invisibility";
+            item.TextTooltipBasic = "Purchase Potion of Invisibility";
+            item.TextTooltipExtended = "|cff87ceebNon-Combat Consumable|r|nRenders the Hero invisible for <AIv1,Dur1> seconds when used. An invisible Hero is untargetable by the enemy unless detected. If the Hero attacks, uses an ability, or casts a spell, the invisibility effect is lost.";
             return item;
         }
 
@@ -3511,6 +4030,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Restores lost hit points.";
+            item.TextHotkeyRaw = "P";
+            item.TextName = "Potion of Healing";
+            item.TextTooltipBasic = "Purchase Potion of Healing";
+            item.TextTooltipExtended = "Heals <AIh1,DataA1> hit points when used.";
             return item;
         }
 
@@ -3542,6 +4066,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Restores lost mana.";
+            item.TextHotkeyRaw = "M";
+            item.TextName = "Potion of Mana";
+            item.TextTooltipBasic = "Purchase Potion of Mana";
+            item.TextTooltipExtended = "Restores <AIm1,DataA1> mana when used.";
             return item;
         }
 
@@ -3573,6 +4102,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Temporarily increases the armor of nearby units.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Scroll of Protection";
+            item.TextTooltipBasic = "Purchase Scroll of Protection";
+            item.TextTooltipExtended = "Increases the armor of all friendly units in an area around your Hero by <AIda,DataA1> for <AIda,Dur1> seconds.";
             return item;
         }
 
@@ -3604,6 +4138,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 3;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Regenerates lost hit points over time.";
+            item.TextHotkeyRaw = "H";
+            item.TextName = "Healing Salve";
+            item.TextTooltipBasic = "Purchase Healing Salve";
+            item.TextTooltipExtended = "|cff87ceebNon-Combat Consumable|r|nRegenerates a target unit's hit points by <AIrl,DataA1> over <AIrl,Dur1> seconds when used. |nContains <hslv,uses> charges.";
             return item;
         }
 
@@ -3635,6 +4174,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Makes it night time.";
+            item.TextHotkeyRaw = "N";
+            item.TextName = "Moonstone";
+            item.TextTooltipBasic = "Purchase Moonstone";
+            item.TextTooltipExtended = "Causes an eclipse that blocks out the sun and creates an artificial night. |nLasts <AIct,Dur1> seconds.";
             return item;
         }
 
@@ -3666,6 +4210,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Increases movement speed of units.";
+            item.TextHotkeyRaw = "S";
+            item.TextName = "Scroll of Speed";
+            item.TextTooltipBasic = "Purchase Scroll of Speed";
+            item.TextTooltipExtended = "Increases the movement speed of the Hero and nearby allied units to the maximum movement speed. |nLasts <AIsa,Dur1> seconds.";
             return item;
         }
 
@@ -3697,6 +4246,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Creates Blight at a target location.";
+            item.TextHotkeyRaw = "K";
+            item.TextName = "Sacrificial Skull";
+            item.TextTooltipBasic = "Purchase Sacrificial Skull";
+            item.TextTooltipExtended = "Creates an area of Blight at a target location.";
             return item;
         }
 
@@ -3728,6 +4282,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Creates a mechanical critter.";
+            item.TextHotkeyRaw = "E";
+            item.TextName = "Mechanical Critter";
+            item.TextTooltipBasic = "Purchase Mechanical Critter";
+            item.TextTooltipExtended = "Creates a player-controlled critter that can be used to scout enemies.";
             return item;
         }
 
@@ -3759,6 +4318,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 4;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Creates two Skeleton Warriors from a corpse.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Rod of Necromancy";
+            item.TextTooltipBasic = "Purchase Rod of Necromancy";
+            item.TextTooltipExtended = "Creates two Skeleton Warriors from a corpse. |nContains <rnec,uses> charges.";
             return item;
         }
 
@@ -3790,6 +4354,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 2;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Sacrifices a unit to regenerate the health of nearby units.";
+            item.TextHotkeyRaw = "A";
+            item.TextName = "Ritual Dagger";
+            item.TextTooltipBasic = "Purchase Ritual Dagger";
+            item.TextTooltipExtended = "|cff87ceebNon-Combat Consumable|r|nSacrifices a friendly Undead unit to regenerate <AIg2,DataA1> hit points to all friendly non-mechanical units around it over <AIg2,Dur1> seconds. |nContains <ritd,uses> charges.";
             return item;
         }
 
@@ -3821,6 +4390,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Creates a Scout Tower.";
+            item.TextHotkeyRaw = "V";
+            item.TextName = "Ivory Tower";
+            item.TextTooltipBasic = "Purchase Ivory Tower";
+            item.TextTooltipExtended = "Creates a Scout Tower at a target location.";
             return item;
         }
 
@@ -3852,6 +4426,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "The magical amulet Heart of Aszune.";
+            item.TextName = "Heart of Aszune";
+            item.TextTooltipBasic = "Purchase Heart of Aszune";
+            item.TextTooltipExtended = "Legends say that the imprisoned spirit of Aszune seeks out her heart to this very day.";
             return item;
         }
 
@@ -3883,6 +4461,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "This is an empty vial.";
+            item.TextName = "Empty Vial";
+            item.TextTooltipBasic = "Purchase Empty Vial";
+            item.TextTooltipExtended = "A special vial adept at containing the magical healing waters of a Fountain of Life.";
             return item;
         }
 
@@ -3914,6 +4496,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "This vial is full of healing waters.";
+            item.TextName = "Full Vial";
+            item.TextTooltipBasic = "Purchase Full Vial";
+            item.TextTooltipExtended = "A special vial adept at containing the magical healing waters of a Fountain of Life.";
             return item;
         }
 
@@ -3945,6 +4531,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "It's the Cheese!";
+            item.TextName = "Cheese";
+            item.TextTooltipBasic = "Purchase the Cheese";
+            item.TextTooltipExtended = "Cheese cheese cheese cheese!";
             return item;
         }
 
@@ -3976,6 +4566,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "This is the Horn of Cenarius.";
+            item.TextName = "Horn of Cenarius";
+            item.TextTooltipBasic = "Purchase Horn of Cenarius";
+            item.TextTooltipExtended = "This ancient relic of the Night Elves is said to hold the power to call the spirits of all Night Elves. It imbues its owner with <AIl1,DataA1> hit points, and a <Arel,DataA1> hit point per second regeneration bonus.";
             return item;
         }
 
@@ -4007,6 +4601,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "This is the Skull of Gul'dan.";
+            item.TextName = "Skull of Gul'dan";
+            item.TextTooltipBasic = "Purchase Skull of Gul'dan";
+            item.TextTooltipExtended = "Once a powerful user of Demonic magics, the Demons answered his calls, and found a greater use for his head.";
             return item;
         }
 
@@ -4038,6 +4636,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A glyph.";
+            item.TextName = "Glyph of Purification";
+            item.TextTooltipBasic = "Purchase Glyph of Purification";
+            item.TextTooltipExtended = "Created by ancient druids, this glyph has the power to heal the land.";
             return item;
         }
 
@@ -4069,6 +4671,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "This is one part of the Key of Three Moons.";
+            item.TextName = "Mooncrystal";
+            item.TextTooltipBasic = "Purchase Mooncrystal";
+            item.TextTooltipExtended = "Cut from the emerald Eye of Jennala, it opens the mind of the Gate Keeper.";
             return item;
         }
 
@@ -4100,6 +4706,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "This is two parts of the Key of Three Moons.";
+            item.TextName = "Partial Key of the Three Moons";
+            item.TextTooltipBasic = "Purchase Partial Key of Three Moons";
+            item.TextTooltipExtended = "Cut from the amethyst Stone of Hannalee, it opens the heart of the Gate Keeper.";
             return item;
         }
 
@@ -4131,6 +4741,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "This is the complete Key of Three Moons.";
+            item.TextName = "Key of Three Moons";
+            item.TextTooltipBasic = "Purchase Key of Three Moons";
+            item.TextTooltipExtended = "Cut from the sapphire Body of Enulaia, it opens the soul of the Gate Keeper.";
             return item;
         }
 
@@ -4162,6 +4776,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "This urn contains the remains of King Terenas.";
+            item.TextName = "Urn of King Terenas";
+            item.TextTooltipBasic = "Purchase Urn of King Terenas";
+            item.TextTooltipExtended = "Formerly the container of King Terenas' ashes, this magically enchanted Urn was chosen by Tichondrius to preserve Kel'Thuzad's remains.";
             return item;
         }
 
@@ -4193,6 +4811,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A bloody key.";
+            item.TextName = "Blood Key";
+            item.TextTooltipBasic = "Purchase Blood Key";
+            item.TextTooltipExtended = "This key is covered in blood.";
             return item;
         }
 
@@ -4224,6 +4846,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A ghostly key.";
+            item.TextName = "Ghost Key";
+            item.TextTooltipBasic = "Purchase Ghost Key";
+            item.TextTooltipExtended = "This key is rather insubstantial.";
             return item;
         }
 
@@ -4255,6 +4881,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A faintly glowing key.";
+            item.TextName = "Moon Key";
+            item.TextTooltipBasic = "Purchase Moon Key";
+            item.TextTooltipExtended = "This key glows faintly.";
             return item;
         }
 
@@ -4286,6 +4916,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A glowing key.";
+            item.TextName = "Sun Key";
+            item.TextTooltipBasic = "Purchase Sun Key";
+            item.TextTooltipExtended = "This key glows brightly.";
             return item;
         }
 
@@ -4317,6 +4951,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A ledger.";
+            item.TextName = "Gerard's Lost Ledger";
+            item.TextTooltipBasic = "Purchase Gerard's Lost Ledger";
+            item.TextTooltipExtended = "This Ledger looks to be full of boring facts and figures.";
             return item;
         }
 
@@ -4348,6 +4986,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "The phattest lewt, definitely.";
+            item.TextName = "Phat Lewt";
+            item.TextTooltipBasic = "Purchase Phat Lewt";
+            item.TextTooltipExtended = "There is no phatter lewt than this.";
             return item;
         }
 
@@ -4379,6 +5021,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "The heart of the Dragon Searinox.";
+            item.TextName = "The Heart of Searinox";
+            item.TextTooltipBasic = "Purchase the Heart of Searinox";
+            item.TextTooltipExtended = "The still beating heart of Searinox can be used to imbue an Orb with the fiery powers of a Dragon.";
             return item;
         }
 
@@ -4410,6 +5056,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "This is an enchanted gemstone.";
+            item.TextName = "Enchanted Gemstone";
+            item.TextTooltipBasic = "Purchase Enchanted Gemstone";
+            item.TextTooltipExtended = "This artifact of the Kelani Magi is said to hold the power to make constructs out of pure energy. When the Kelani fell to ruin, the Razormane Quillboars were quick to scavenge and covet these beautiful and powerful objects.";
             return item;
         }
 
@@ -4441,6 +5091,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A fragment of the Shadow Orb.";
+            item.TextHotkeyRaw = "O";
+            item.TextName = "Shadow Orb Fragment";
+            item.TextTooltipBasic = "Purchase Shadow Orb Fragment";
+            item.TextTooltipExtended = "A fragment of a powerful artifact.";
             return item;
         }
 
@@ -4472,6 +5127,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A Gem Fragment from a powerful ring.";
+            item.TextHotkeyRaw = "G";
+            item.TextName = "Gem Fragment";
+            item.TextTooltipBasic = "Purchase Gem Fragment";
+            item.TextTooltipExtended = "A fragment of a gem from a powerful ring.";
             return item;
         }
 
@@ -4503,6 +5163,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A note to Jaina Proudmoore.";
+            item.TextHotkeyRaw = "J";
+            item.TextName = "Note to Jaina Proudmoore";
+            item.TextTooltipBasic = "Purchase Note to Jaina Proudmoore";
+            item.TextTooltipExtended = "A note from Thrall, for Jaina Proudmoore.";
             return item;
         }
 
@@ -4534,6 +5199,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A shimmering plant.";
+            item.TextHotkeyRaw = "S";
+            item.TextName = "Shimmerweed";
+            item.TextTooltipBasic = "Purchase Shimmerweed";
+            item.TextTooltipExtended = "Wondrous plant said to have miraculous mind-expanding properties.";
             return item;
         }
 
@@ -4565,6 +5235,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Soulfeast the Devourer.";
+            item.TextName = "Skeletal Artifact";
+            item.TextTooltipBasic = "Purchase Skeletal Artifact";
+            item.TextTooltipExtended = "This ancient artifact entraps the souls of those who die violently, forcing them to relive the last moments of their lives for eternity.";
             return item;
         }
 
@@ -4596,6 +5270,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Massive Lizard Egg.";
+            item.TextName = "Thunder Lizard Egg";
+            item.TextTooltipBasic = "Purchase Thunder Lizard Egg";
+            item.TextTooltipExtended = "This massive egg will not hatch without a parent to warm it.";
             return item;
         }
 
@@ -4627,6 +5305,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Unlocks a secret level!";
+            item.TextName = "Secret Level Powerup";
+            item.TextTooltipBasic = "Purchase Secret Level Powerup";
+            item.TextTooltipExtended = "Unlocks a secret level!";
             return item;
         }
 
@@ -4658,6 +5340,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "The One Leg.";
+            item.TextHotkeyRaw = "L";
+            item.TextName = "Wirt's Leg";
+            item.TextTooltipBasic = "Purchase Wirt's Leg";
+            item.TextTooltipExtended = "Could it be that a portal opened up and expelled the remains of our dearest pal from the world of Diablo to here? If so, was it a player, or a Demon? Just how many worlds have the Burning Legion conquered? Could the Demons of the Burning Legion and those of Sanctuary be one and the same? The mind wobbles.";
             return item;
         }
 
@@ -4689,6 +5376,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "The One Other Leg.";
+            item.TextHotkeyRaw = "O";
+            item.TextName = "Wirt's Other Leg";
+            item.TextTooltipBasic = "Purchase Wirt's Other Leg";
+            item.TextTooltipExtended = "Perhaps the overzealous adventurer pried this off before his journey here thinking it might give him one last opportunity at bovine slaughter. Little did he know where it would lead him.";
             return item;
         }
 
@@ -4720,6 +5412,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A key chain.";
+            item.TextHotkeyRaw = "K";
+            item.TextName = "Magic Key Chain";
+            item.TextTooltipBasic = "Purchase Magic Key Chain";
+            item.TextTooltipExtended = "This magical chain of keys can open many doors.";
             return item;
         }
 
@@ -4751,6 +5448,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A letter for Thrall.";
+            item.TextHotkeyRaw = "M";
+            item.TextName = "Mogrin's Report";
+            item.TextTooltipBasic = "Purchase Mogrin's Report";
+            item.TextTooltipExtended = "The letter is magically sealed. On the front, written in large scrawling letters is the word Thrall.";
             return item;
         }
 
@@ -4782,6 +5484,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A rare egg of a Thunder Phoenix.";
+            item.TextHotkeyRaw = "H";
+            item.TextName = "Thunder Phoenix Egg";
+            item.TextTooltipBasic = "Purchase Thunder Phoenix Egg";
+            item.TextTooltipExtended = "A rare egg of a Thunder Phoenix.";
             return item;
         }
 
@@ -4813,6 +5520,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A keg filled to the brim with the strongest drink available this side of Khaz Modan!";
+            item.TextHotkeyRaw = "K";
+            item.TextName = "Keg of Thunderwater";
+            item.TextTooltipBasic = "Purchase Keg of Thunderwater";
+            item.TextTooltipExtended = "A keg filled to the brim with the strongest drink available this side of Khaz Modan!";
             return item;
         }
 
@@ -4844,6 +5556,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "An exotic plant well known for its unstable and dangerous properties.";
+            item.TextHotkeyRaw = "T";
+            item.TextName = "Thunderbloom Bulb";
+            item.TextTooltipBasic = "Purchase Thunderbloom Bulb";
+            item.TextTooltipExtended = "An exotic plant well known for its unstable and dangerous properties.";
             return item;
         }
 
@@ -4875,6 +5592,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 3;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Reveals an area on the map.";
+            item.TextHotkeyRaw = "F";
+            item.TextName = "Flare Gun";
+            item.TextTooltipBasic = "Purchase Flare Gun";
+            item.TextTooltipExtended = "Reveals a target area on the map. |nContains <fgun,uses> charges.";
             return item;
         }
 
@@ -4906,6 +5628,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Draws nearby creeps to ward.";
+            item.TextHotkeyRaw = "L";
+            item.TextName = "Monster Lure";
+            item.TextTooltipBasic = "Purchase Monster Lure";
+            item.TextTooltipExtended = "Creates a ward that draws nearby creeps to it.";
             return item;
         }
 
@@ -4937,6 +5664,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Attacks cause lightning damage.";
+            item.TextHotkeyRaw = "L";
+            item.TextName = "Orb of Lightning";
+            item.TextTooltipBasic = "Purchase Orb of Lightning";
+            item.TextTooltipExtended = "Adds <AIlb,DataA1> bonus damage to the attack of a Hero when carried. The Hero's attacks also become ranged when attacking air, and have a chance to dispel magic and slows its movement speed by a factor of <AIlp,DataA1>; they will slowly regain their movement speed over <AIlp,Dur1> seconds. |n|cffffcc00Deals <AIlp,DataC1> bonus damage to summoned units.";
             return item;
         }
 
@@ -4968,6 +5700,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Can be used to teleport units to the user.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Amulet of Recall";
+            item.TextTooltipBasic = "Purchase Amulet of Recall";
+            item.TextTooltipExtended = "Teleports <AIrt,DataA1> of the player's units within the targeted area to the location of the Hero when used.";
             return item;
         }
 
@@ -4999,6 +5736,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Can be captured in special scenarios.";
+            item.TextName = "Human Flag";
+            item.TextTooltipBasic = "Purchase Human Flag";
+            item.TextTooltipExtended = "An object that is often captured in special scenarios as a win condition.";
             return item;
         }
 
@@ -5030,6 +5771,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 3;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Explosive mines.";
+            item.TextHotkeyRaw = "L";
+            item.TextName = "Goblin Land Mines";
+            item.TextTooltipBasic = "Purchase Goblin Land Mines";
+            item.TextTooltipExtended = "Places a hidden land mine at a target point. Enemy units that move near the land mine will activate the mine, destroying the mine and causing area of effect damage to nearby units. |nContains <gobm,uses> charges.";
             return item;
         }
 
@@ -5061,6 +5807,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Allows the theft of a Hero's soul.";
+            item.TextHotkeyRaw = "G";
+            item.TextName = "Soul Gem";
+            item.TextTooltipBasic = "Purchase Soul Gem";
+            item.TextTooltipExtended = "Traps the targeted enemy Hero inside the Soul Gem when used. The enemy Hero is returned to play when the bearer of the Soul Gem is killed. While an enemy Hero is trapped, the bearer of the Soul Gem is revealed to the enemy through the Fog of War.";
             return item;
         }
 
@@ -5092,6 +5843,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Can be captured in special scenarios.";
+            item.TextName = "Night Elf Flag";
+            item.TextTooltipBasic = "Purchase Night Elf Flag";
+            item.TextTooltipExtended = "An object that is often captured in special scenarios as a win condition.";
             return item;
         }
 
@@ -5123,6 +5878,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Grants immunity to magic.";
+            item.TextName = "Necklace of Spell Immunity";
+            item.TextTooltipBasic = "Purchase Necklace of Spell Immunity";
+            item.TextTooltipExtended = "Renders the Hero invulnerable to magic.";
             return item;
         }
 
@@ -5154,6 +5913,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Can be captured in special scenarios.";
+            item.TextName = "Orc Flag";
+            item.TextTooltipBasic = "Purchase Orc Flag";
+            item.TextTooltipExtended = "An object that is often captured in special scenarios as a win condition.";
             return item;
         }
 
@@ -5185,6 +5948,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Renders Hero immune to magic.";
+            item.TextHotkeyRaw = "A";
+            item.TextName = "Anti-magic Potion";
+            item.TextTooltipBasic = "Purchase Anti-magic Potion";
+            item.TextTooltipExtended = "Gives the Hero immunity to magical spells for <AIxs,Dur1> seconds.";
             return item;
         }
 
@@ -5216,6 +5984,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Renders Hero temporarily invisible.";
+            item.TextHotkeyRaw = "I";
+            item.TextName = "Potion of Greater Invisibility";
+            item.TextTooltipBasic = "Purchase Potion of Greater Invisibility";
+            item.TextTooltipExtended = "|cff87ceebNon-Combat Consumable|r|nRenders the Hero invisible for <AIv2,Dur1> seconds when used. An invisible Hero is untargetable by the enemy unless detected. If the Hero attacks, uses an ability, or casts a spell, the invisibility effect is lost.";
             return item;
         }
 
@@ -5247,6 +6020,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts attack damage by 3.";
+            item.TextHotkeyRaw = "K";
+            item.TextName = "Claws of Attack +3";
+            item.TextTooltipBasic = "Purchase Claws of Attack +3";
+            item.TextTooltipExtended = "Increases the attack damage of the Hero by 3 when worn.";
             return item;
         }
 
@@ -5278,6 +6056,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts armor by 1.";
+            item.TextHotkeyRaw = "1";
+            item.TextName = "Ring of Protection +1";
+            item.TextTooltipBasic = "Purchase Ring of Protection +1";
+            item.TextTooltipExtended = "Increases the armor of the Hero by 1 when worn.";
             return item;
         }
 
@@ -5309,6 +6092,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts armor by 2.";
+            item.TextHotkeyRaw = "2";
+            item.TextName = "Ring of Protection +2";
+            item.TextTooltipBasic = "Purchase Ring of Protection +2";
+            item.TextTooltipExtended = "Increases the armor of the Hero by 2 when worn.";
             return item;
         }
 
@@ -5340,6 +6128,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Provides a +1 bonus to Strength, Agility and Intelligence.";
+            item.TextName = "Ring of Superiority";
+            item.TextTooltipBasic = "Purchase Ring of Superiority";
+            item.TextTooltipExtended = "Increases the Strength, Agility and Intelligence of the Hero by 1 when worn.";
             return item;
         }
 
@@ -5371,6 +6163,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "This is a trapped soul.";
+            item.TextName = "Soul";
+            item.TextTooltipBasic = "Purchase Soul";
+            item.TextTooltipExtended = "A soul, trapped by the enchantments of a Soul Gem.";
             return item;
         }
 
@@ -5402,6 +6198,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Increases sight range at night.";
+            item.TextHotkeyRaw = "T";
+            item.TextName = "Goblin Night Scope";
+            item.TextTooltipBasic = "Purchase Goblin Night Scope";
+            item.TextTooltipExtended = "Provides an increase to the Hero's line of sight radius at night when carried.";
             return item;
         }
 
@@ -5433,6 +6234,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Gives bonus experience points.";
+            item.TextName = "Tome of Greater Experience";
+            item.TextTooltipBasic = "Purchase Tome of Greater Experience";
+            item.TextTooltipExtended = "Gives the Hero <AIe2,DataA1> bonus experience points when used.";
             return item;
         }
 
@@ -5464,6 +6269,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Can be captured in special scenarios.";
+            item.TextName = "Undead Flag";
+            item.TextTooltipBasic = "Purchase Undead Flag";
+            item.TextTooltipExtended = "An object that is often captured in special scenarios as a win condition.";
             return item;
         }
 
@@ -5495,6 +6304,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts Intelligence by 1.";
+            item.TextName = "Ancient Figurine";
+            item.TextTooltipBasic = "Purchase Ancient Figurine";
+            item.TextTooltipExtended = "Increases the Intelligence of the Hero by 1 when carried.";
             return item;
         }
 
@@ -5526,6 +6339,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts Agility by 1.";
+            item.TextName = "Bracer of Agility";
+            item.TextTooltipBasic = "Purchase Bracer of Agility";
+            item.TextTooltipExtended = "Increases the Agility of the Hero by 1 when worn.";
             return item;
         }
 
@@ -5557,6 +6374,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts Intelligence by 1.";
+            item.TextName = "Druid Pouch";
+            item.TextTooltipBasic = "Purchase Druid Pouch";
+            item.TextTooltipExtended = "Increases the Intelligence of the Hero by 1 when carried.";
             return item;
         }
 
@@ -5588,6 +6409,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts Strength by 1.";
+            item.TextName = "Ironwood Branch";
+            item.TextTooltipBasic = "Purchase Ironwood Branch";
+            item.TextTooltipExtended = "Increases the Strength of the Hero by 1 when carried.";
             return item;
         }
 
@@ -5619,6 +6444,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts Agility by 1.";
+            item.TextName = "Jade Ring";
+            item.TextTooltipBasic = "Purchase Jade Ring";
+            item.TextTooltipExtended = "Increases the Agility of the Hero by 1 when worn.";
             return item;
         }
 
@@ -5650,6 +6479,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts Agility by 1.";
+            item.TextName = "Lion's Ring";
+            item.TextTooltipBasic = "Purchase Lion's Ring";
+            item.TextTooltipExtended = "Increases the Agility of the Hero by 1 when worn.";
             return item;
         }
 
@@ -5681,6 +6514,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts Strength by 1.";
+            item.TextName = "Maul of Strength";
+            item.TextTooltipBasic = "Purchase Maul of Strength";
+            item.TextTooltipExtended = "Increases the Strength of the Hero by 1 when carried.";
             return item;
         }
 
@@ -5712,6 +6549,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Attacks can slow enemies.";
+            item.TextHotkeyRaw = "S";
+            item.TextName = "Orb of Slow";
+            item.TextTooltipBasic = "Purchase Orb of Slow";
+            item.TextTooltipExtended = "Adds <AIsb,DataA1> bonus damage to the attack of a Hero when carried. The Hero's attacks also become ranged when attacking air, and have a chance to slow a target enemy unit's movement speed by <AIos,DataA1,%>% and attack rate by <AIos,DataB1,%>% for <AIos,Dur1> seconds.";
             return item;
         }
 
@@ -5743,6 +6585,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A book full of random spells.";
+            item.TextHotkeyRaw = "B";
+            item.TextName = "Spell Book";
+            item.TextTooltipBasic = "Purchase Spell Book";
+            item.TextTooltipExtended = "A book full of random spells.";
             return item;
         }
 
@@ -5774,6 +6621,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts Strength by 1.";
+            item.TextName = "Skull Shield";
+            item.TextTooltipBasic = "Purchase Skull Shield";
+            item.TextTooltipExtended = "Increases the Strength of the Hero by 1 when carried.";
             return item;
         }
 
@@ -5805,6 +6656,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts Agility by 1.";
+            item.TextName = "Spider Ring";
+            item.TextTooltipBasic = "Purchase Spider Ring";
+            item.TextTooltipExtended = "Increases the Agility of the Hero by 1 when worn.";
             return item;
         }
 
@@ -5836,6 +6691,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts Strength by 1.";
+            item.TextName = "Totem of Might";
+            item.TextTooltipBasic = "Purchase Totem of Might";
+            item.TextTooltipExtended = "Increases the Strength of the Hero by 1 when carried.";
             return item;
         }
 
@@ -5867,6 +6726,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Boosts Intelligence by 1.";
+            item.TextName = "Voodoo Doll";
+            item.TextTooltipBasic = "Purchase Voodoo Doll";
+            item.TextTooltipExtended = "Increases the Intelligence of the Hero by 1 when carried.";
             return item;
         }
 
@@ -5898,6 +6761,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Teleports a target unit home.";
+            item.TextHotkeyRaw = "E";
+            item.TextName = "Staff of Preservation";
+            item.TextTooltipBasic = "Purchase Staff of Preservation";
+            item.TextTooltipExtended = "Teleports a target friendly unit to its highest level town hall.";
             return item;
         }
 
@@ -5929,6 +6797,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Stops enemy towers from attacking.";
+            item.TextHotkeyRaw = "C";
+            item.TextName = "Horn of the Clouds";
+            item.TextTooltipBasic = "Purchase Horn of the Clouds";
+            item.TextTooltipExtended = "Allows the Hero to channel the Cloud ability, which stops an area of enemy towers from attacking for <AIfg,Dur1> seconds.";
             return item;
         }
 
@@ -5960,6 +6833,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Gul'dan's Shadow Orb.";
+            item.TextHotkeyRaw = "O";
+            item.TextName = "Shadow Orb +1";
+            item.TextTooltipBasic = "Purchase Shadow Orb";
+            item.TextTooltipExtended = "This artifact was imbued with special powers by the Orc Shadow Council. It increases your attack damage by 1.";
             return item;
         }
 
@@ -5991,6 +6869,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Gul'dan's Shadow Orb.";
+            item.TextHotkeyRaw = "O";
+            item.TextName = "Shadow Orb +2";
+            item.TextTooltipBasic = "Purchase Shadow Orb";
+            item.TextTooltipExtended = "This artifact was imbued with special powers by the Orc Shadow Council. It increases your attack damage by 2.";
             return item;
         }
 
@@ -6022,6 +6905,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Gul'dan's Shadow Orb.";
+            item.TextHotkeyRaw = "O";
+            item.TextName = "Shadow Orb +3";
+            item.TextTooltipBasic = "Purchase Shadow Orb";
+            item.TextTooltipExtended = "This artifact was imbued with special powers by the Orc Shadow Council. It increases your attack damage by 3.";
             return item;
         }
 
@@ -6053,6 +6941,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Gul'dan's Shadow Orb.";
+            item.TextHotkeyRaw = "O";
+            item.TextName = "Shadow Orb +4";
+            item.TextTooltipBasic = "Purchase Shadow Orb";
+            item.TextTooltipExtended = "This artifact was imbued with special powers by the Orc Shadow Council. It increases your attack damage by 4 and armor by 1.";
             return item;
         }
 
@@ -6084,6 +6977,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Gul'dan's Shadow Orb.";
+            item.TextHotkeyRaw = "O";
+            item.TextName = "Shadow Orb +5";
+            item.TextTooltipBasic = "Purchase Shadow Orb";
+            item.TextTooltipExtended = "This artifact was imbued with special powers by the Orc Shadow Council. It increases your attack damage by 5 and armor by 1.";
             return item;
         }
 
@@ -6115,6 +7013,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Gul'dan's Shadow Orb.";
+            item.TextHotkeyRaw = "O";
+            item.TextName = "Shadow Orb +6";
+            item.TextTooltipBasic = "Purchase Shadow Orb";
+            item.TextTooltipExtended = "This artifact was imbued with special powers by the Orc Shadow Council. It increases your attack damage by 6 and armor by 1.";
             return item;
         }
 
@@ -6146,6 +7049,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Gul'dan's Shadow Orb.";
+            item.TextHotkeyRaw = "O";
+            item.TextName = "Shadow Orb +7";
+            item.TextTooltipBasic = "Purchase Shadow Orb";
+            item.TextTooltipExtended = "This artifact was imbued with special powers by the Orc Shadow Council. It increases your attack damage by 7 and armor by 2.";
             return item;
         }
 
@@ -6177,6 +7085,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Gul'dan's Shadow Orb.";
+            item.TextHotkeyRaw = "O";
+            item.TextName = "Shadow Orb +8";
+            item.TextTooltipBasic = "Purchase Shadow Orb";
+            item.TextTooltipExtended = "This artifact was imbued with special powers by the Orc Shadow Council. It increases your attack damage by 8 and armor by 2.";
             return item;
         }
 
@@ -6208,6 +7121,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Gul'dan's Shadow Orb.";
+            item.TextHotkeyRaw = "O";
+            item.TextName = "Shadow Orb +9";
+            item.TextTooltipBasic = "Purchase Shadow Orb";
+            item.TextTooltipExtended = "This artifact was imbued with special powers by the Orc Shadow Council. It increases your attack damage by 9, armor by 2 and grants enhanced hit point regeneration.";
             return item;
         }
 
@@ -6239,6 +7157,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Gul'dan's Shadow Orb.";
+            item.TextHotkeyRaw = "O";
+            item.TextName = "Shadow Orb +10";
+            item.TextTooltipBasic = "Purchase Shadow Orb";
+            item.TextTooltipExtended = "This artifact was imbued with special powers by the Orc Shadow Council. It increases your attack damage by 10, armor by 3 and grants enhanced hit point regeneration.";
             return item;
         }
 
@@ -6270,6 +7193,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A powerful Undead artifact.";
+            item.TextHotkeyRaw = "F";
+            item.TextName = "Frost Wyrm Skull Shield";
+            item.TextTooltipBasic = "Purchase Frost Wyrm Skull Shield";
+            item.TextTooltipExtended = "This ancient Frost Wyrm skull has been equipped with handles, turning it into a powerful shield. Increases armor by 2 when worn and reduces Magic damage dealt to the Hero by <AIsr,DataB1,%>%.";
             return item;
         }
 
@@ -6301,6 +7229,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A powerful Orcish artifact.";
+            item.TextHotkeyRaw = "H";
+            item.TextName = "Shamanic Totem";
+            item.TextTooltipBasic = "Purchase Shamanic Totem";
+            item.TextTooltipExtended = "This powerful Orc artifact channels Shamanic powers through its user, allowing them to cast Purge.";
             return item;
         }
 
@@ -6332,6 +7265,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A powerful Night Elf artifact.";
+            item.TextHotkeyRaw = "E";
+            item.TextName = "Essence of Aszune";
+            item.TextTooltipBasic = "Purchase Essence of Aszune";
+            item.TextTooltipExtended = "Legends speak of an intelligent Orc who found the Heart of Aszune. This is the essence of her heart, precious to the Night Elves. It has the power to heal the Hero that wields it. This item is permanent.";
             return item;
         }
 
@@ -6363,6 +7301,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Thrall's Battle Standard.";
+            item.TextName = "Battle Standard";
+            item.TextTooltipBasic = "Purchase Battle Standard";
+            item.TextTooltipExtended = "The Battle Standard of Thrall's Orcs, carry it with pride.";
             return item;
         }
 
@@ -6394,6 +7336,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Creates a Blacksmith.";
+            item.TextHotkeyRaw = "B";
+            item.TextName = "Tiny Blacksmith";
+            item.TextTooltipBasic = "Purchase Tiny Blacksmith";
+            item.TextTooltipExtended = "Creates a Blacksmith at a target location.";
             return item;
         }
 
@@ -6425,6 +7372,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Creates a Farm.";
+            item.TextHotkeyRaw = "F";
+            item.TextName = "Tiny Farm";
+            item.TextTooltipBasic = "Purchase Tiny Farm";
+            item.TextTooltipExtended = "Creates a Farm at a target location.";
             return item;
         }
 
@@ -6456,6 +7408,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Creates a Lumber Mill.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Tiny Lumber Mill";
+            item.TextTooltipBasic = "Purchase Tiny Lumber Mill";
+            item.TextTooltipExtended = "Creates a Lumber Mill at a target location.";
             return item;
         }
 
@@ -6487,6 +7444,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Creates a Barracks.";
+            item.TextHotkeyRaw = "B";
+            item.TextName = "Tiny Barracks";
+            item.TextTooltipBasic = "Purchase Tiny Barracks";
+            item.TextTooltipExtended = "Creates a Barracks at a target location.";
             return item;
         }
 
@@ -6518,6 +7480,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Creates a Altar of Kings.";
+            item.TextHotkeyRaw = "K";
+            item.TextName = "Tiny Altar of Kings";
+            item.TextTooltipBasic = "Purchase Tiny Altar of Kings";
+            item.TextTooltipExtended = "Creates a Altar of Kings at a target location.";
             return item;
         }
 
@@ -6549,6 +7516,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Attacks also do fire damage.";
+            item.TextHotkeyRaw = "K";
+            item.TextName = "Orb of Kil'jaeden";
+            item.TextTooltipBasic = "Purchase Orb of Kil'jaeden";
+            item.TextTooltipExtended = "Adds <AIgd,DataA1> bonus fire damage to the attack of a Hero when carried. The Hero's attacks also become ranged when attacking air and do splash damage to nearby enemy units.";
             return item;
         }
 
@@ -6580,6 +7552,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Animates a corpse.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Staff of Reanimation";
+            item.TextTooltipBasic = "Purchase Staff of Reanimation";
+            item.TextTooltipExtended = "Animates a nearby corpse to fight your enemies. Lasts <AInd,Dur1> seconds.";
             return item;
         }
 
@@ -6611,6 +7588,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A sacred shaman artifact.";
+            item.TextHotkeyRaw = "S";
+            item.TextName = "Sacred Relic";
+            item.TextTooltipBasic = "Purchase Sacred Relic";
+            item.TextTooltipExtended = "A powerful artifact, sacred to the orc shaman. |nGrants the Hero and friendly nearby units increased attack rate and movement speed. |nDoes not stack with Endurance Aura.";
             return item;
         }
 
@@ -6642,6 +7624,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "|cff8b00ffUnique|r|nThis helm makes you crave combat.";
+            item.TextHotkeyRaw = "B";
+            item.TextName = "Helm of Battlethirst";
+            item.TextTooltipBasic = "Purchase Helm of Battlethirst";
+            item.TextTooltipExtended = "|cff8b00ffUnique|r|nGrants the ability to go Berserk, causing the Hero to attack <AIxk,DataB1,%>% faster but take <AIxk,DataC1,%>% more damage. Also increases strength and agility by 4 when worn.";
             return item;
         }
 
@@ -6673,6 +7660,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Increases armor.";
+            item.TextHotkeyRaw = "A";
+            item.TextName = "Bladebane Armor";
+            item.TextTooltipBasic = "Purchase Bladebane Armor";
+            item.TextTooltipExtended = "Grants nearby units <AIad,DataA1> bonus defense. Enhances the Hero's armor by <AId7,DataA1>.";
             return item;
         }
 
@@ -6704,6 +7696,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Increases strength and armor.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Runed Gauntlets";
+            item.TextTooltipBasic = "Purchase Runed Gauntlets";
+            item.TextTooltipExtended = "Increases the strength and armor of the Hero by 3 when worn.";
             return item;
         }
 
@@ -6735,6 +7732,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Fiery gauntlets that increase armor and attack rate.";
+            item.TextHotkeyRaw = "F";
+            item.TextName = "Firehand Gauntlets";
+            item.TextTooltipBasic = "Purchase Firehand Gauntlets";
+            item.TextTooltipExtended = "Increases armor by <AId5,DataA1> and attack rate by <AIs2,DataA1,%>% when worn.";
             return item;
         }
 
@@ -6766,6 +7768,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "|cff8b00ffUnique|r|nThese gloves have a highly magical nature.";
+            item.TextHotkeyRaw = "S";
+            item.TextName = "Gloves of Spell Mastery";
+            item.TextTooltipBasic = "Purchase Gloves of Spell Mastery";
+            item.TextTooltipExtended = "|cff8b00ffUnique|r|nGrants the ability to control summoned units. Also increases the intelligence of the Hero by <AIa6,DataA1> when worn.";
             return item;
         }
 
@@ -6797,6 +7804,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "|cffff8c00Artifact|r|nA simple crown with the emblem of an unfamiliar Paladin order on it.";
+            item.TextHotkeyRaw = "D";
+            item.TextName = "Crown of the Deathlord";
+            item.TextTooltipBasic = "Purchase Crown of the Deathlord";
+            item.TextTooltipExtended = "|cffff8c00Artifact|r|nGrants the ability to fire bolts of pain that deal <AIfz,DataC1> damage. Also increases the Hero's hit points by <AIlf,DataA1> and mana by <AImz,DataA1> when worn.|n|cffffcc00History|r|n|cffffdeadThe Deathlords are rumored to have been mighty Paladins once. One of their order turned from the light when he slaughtered his own family, believing they were impure.|r";
             return item;
         }
 
@@ -6828,6 +7840,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Restores hit points, mana and increases armor to nearby units.";
+            item.TextHotkeyRaw = "A";
+            item.TextName = "Arcane Scroll";
+            item.TextTooltipBasic = "Purchase Arcane Scroll";
+            item.TextTooltipExtended = "A powerful scroll that restores <AIha,DataA1> hit points, <AImr,DataA1> mana, and grants <AIda,DataA1> bonus armor to nearby friendly units.";
             return item;
         }
 
@@ -6859,6 +7876,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Animates nearby corpses.";
+            item.TextHotkeyRaw = "I";
+            item.TextName = "Scroll of the Unholy Legion";
+            item.TextTooltipBasic = "Purchase Scroll of the Unholy Legion";
+            item.TextTooltipExtended = "Animates <AIan,DataA1> nearby corpses to fight for you. Lasts <AIan,Dur1> seconds.";
             return item;
         }
 
@@ -6890,6 +7912,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "|cff8b00ffUnique|r|nAn evil looking tome with runes of necromancy etched into the binding.";
+            item.TextHotkeyRaw = "T";
+            item.TextName = "Tome of Sacrifices";
+            item.TextTooltipBasic = "Purchase Tome of Sacrifices";
+            item.TextTooltipExtended = "|cff8b00ffUnique|r|nGrants the ability to sacrifice a friendly non-Hero unit to restore hit points. Also increases the Hero's mana by <AImz,DataA1> while equipped.";
             return item;
         }
 
@@ -6921,6 +7948,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "|cffff8c00Artifact|r|nA seemingly simple spellbook, handed down from a master Farseer, Drek'thar.";
+            item.TextHotkeyRaw = "D";
+            item.TextName = "Drek'thar's Spellbook";
+            item.TextTooltipBasic = "Purchase Drek'thar's Spellbook";
+            item.TextTooltipExtended = "|cffff8c00Artifact|r|nGrants the ability to portal to your home town. Also reduces spell damage by <AIsr,DataB1,%>% and increases the Hero's mana by <AImv,DataA1> while equipped.|n|cffffcc00History|r|n|cffffdeadDrek'Thar's old spellbook is filled with pages stolen from Kirin Tor mages that were slain in battle.|r";
             return item;
         }
 
@@ -6952,6 +7984,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 10;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "|cff87ceebUnique Consumable|r|nPermanently increases hit points.";
+            item.TextHotkeyRaw = "G";
+            item.TextName = "Grimoire of Souls";
+            item.TextTooltipBasic = "Purchase Grimoire of Souls";
+            item.TextTooltipExtended = "|cff87ceebUnique Consumable|r|nThis powerful book permanently increases the hit points of the Hero by <AIpx,DataA1> each time it is used. |nContains <grsl,uses> charges.";
             return item;
         }
 
@@ -6983,6 +8020,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Increases armor and reduces damage from ranged attacks.";
+            item.TextHotkeyRaw = "A";
+            item.TextName = "Arcanite Shield";
+            item.TextTooltipBasic = "Purchase Arcanite Shield";
+            item.TextTooltipExtended = "Reduces damage from ranged attacks to <AIdd,DataA1,%>%. Also increases the Hero's armor by <AId5,DataA1> when worn.";
             return item;
         }
 
@@ -7014,6 +8056,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "|cffff8c00Artifact|r|nA magical shield with the emblem of an unfamiliar Paladin order on it.";
+            item.TextHotkeyRaw = "D";
+            item.TextName = "Shield of the Deathlord";
+            item.TextTooltipBasic = "Purchase Shield of the Deathlord";
+            item.TextTooltipExtended = "|cffff8c00Artifact|r|nEngulfs the Hero in fire which deals <AIcf,DataA1> damage per second to nearby enemy land units. Also increases the Hero's armor by <AId0,DataA1>, hit points by <AIlf,DataA1>, and mana by <AImz,DataA1> when worn. |n|cffffcc00History|r|n|cffffdeadWhen Arthas took up the sword against his own people in Stratholme, the Deathlords committed the same heinous act in many other cities across Lordaeron.|r";
             return item;
         }
 
@@ -7045,6 +8092,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "|cff8b00ffUnique|r|nA Kul Tiras navy commander's shield.";
+            item.TextHotkeyRaw = "H";
+            item.TextName = "Shield of Honor";
+            item.TextTooltipBasic = "Purchase Shield of Honor";
+            item.TextTooltipExtended = "|cff8b00ffUnique|r|nGrants nearby friendly units a <AIcd,DataA1,%>% bonus to attack damage. Also increases the armor of the Hero by <AId8,DataA1> when worn.";
             return item;
         }
 
@@ -7076,6 +8128,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Increases armor and hit points.";
+            item.TextHotkeyRaw = "E";
+            item.TextName = "Enchanted Shield";
+            item.TextTooltipBasic = "Purchase Enchanted Shield";
+            item.TextTooltipExtended = "Increases the Hero's armor by <AId2,DataA1> and hit points by <AIlz,DataA1> when worn.";
             return item;
         }
 
@@ -7107,6 +8164,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "|cff8b00ffUnique|r|nA massive diamond that crackles with electricity.";
+            item.TextHotkeyRaw = "T";
+            item.TextName = "Thunderlizard Diamond";
+            item.TextTooltipBasic = "Purchase Thunderlizard Diamond";
+            item.TextTooltipExtended = "|cff8b00ffUnique|r|nCasts bolts of lightning that deal damage to multiple targets.";
             return item;
         }
 
@@ -7138,6 +8200,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A small clockwork penguin that squeaks.";
+            item.TextHotkeyRaw = "P";
+            item.TextName = "Clockwork Penguin";
+            item.TextTooltipBasic = "Purchase Clockwork Penguin";
+            item.TextTooltipExtended = "This penguin squeak-toy was first created by the goblin tinkerer Salzhigh for the centaur. Regarding it with some awe (having never seen a penguin before) the centaur purchased them as idols and worshipped them at altars.";
             return item;
         }
 
@@ -7169,6 +8236,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 6;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Restores lost hit points.";
+            item.TextHotkeyRaw = "S";
+            item.TextName = "Shimmerglaze Roast";
+            item.TextTooltipBasic = "Purchase Shimmerglaze Roast";
+            item.TextTooltipExtended = "A tasty roast with a shimmerweed base. Heals <AIhx,DataA1> hit points when eaten. |nContains <shrs,uses> charges.";
             return item;
         }
 
@@ -7200,6 +8272,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "|cff8b00ffUnique|r|nThe heart of Bloodfeather.";
+            item.TextHotkeyRaw = "B";
+            item.TextName = "Bloodfeather's Heart";
+            item.TextTooltipBasic = "Purchase Bloodfeather's Heart";
+            item.TextTooltipExtended = "|cff8b00ffUnique|r|nIncreases the Hero's agility by <AIaz,DataA1> when worn.";
             return item;
         }
 
@@ -7231,6 +8308,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "|cffff8c00Artifact|r|nA bright glowing orb that instills peace.";
+            item.TextHotkeyRaw = "C";
+            item.TextName = "Celestial Orb of Souls";
+            item.TextTooltipBasic = "Purchase Celestial Orb of Souls";
+            item.TextTooltipExtended = "|cffff8c00Artifact|r|nBrings <AIrx,DataA1> of your nearby dead units back to life. |n|cffffcc00History|r|n|cffffdeadCrafted by the Titans as gifts to their favored creations, the Celestial Orb of Souls channels the powers of the light to bring back to life those who have recently fallen.|r";
             return item;
         }
 
@@ -7262,6 +8344,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "|cff8b00ffUnique|r|nIncreases attack damage and dispels magic.";
+            item.TextHotkeyRaw = "S";
+            item.TextName = "Shaman Claws";
+            item.TextTooltipBasic = "Purchase Shaman Claws";
+            item.TextTooltipExtended = "|cff8b00ffUnique|r|nThese are given to shaman upon the completion of their training. Increases attack damage by <AIlx,DataA1>. The Hero's attacks also have a chance to dispel magic and slow the movement speed of the enemy for <AIpg,Dur1> seconds.";
             return item;
         }
 
@@ -7293,6 +8380,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Increases attack damage.";
+            item.TextHotkeyRaw = "B";
+            item.TextName = "Searing Blade";
+            item.TextTooltipBasic = "Purchase Searing Blade";
+            item.TextTooltipExtended = "Adds <AIfw,DataA1> bonus fire damage to the attack of a Hero when carried. The Hero's attacks also do splash damage to nearby enemy units, and have a <AIcs,DataA1>% chance to deal <AIcs,DataB1> times their total damage.";
             return item;
         }
 
@@ -7324,6 +8416,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Increases attack damage.";
+            item.TextHotkeyRaw = "F";
+            item.TextName = "Frostguard";
+            item.TextTooltipBasic = "Purchase Frostguard";
+            item.TextTooltipExtended = "Adds <AIft,DataA1> bonus cold damage to the attack of a Hero and <AId5,DataA1> bonus armor when carried. The Hero's attacks also slow the movement speed and attack rate of the enemy.";
             return item;
         }
 
@@ -7355,6 +8452,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 5;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Regenerates health and mana.";
+            item.TextHotkeyRaw = "E";
+            item.TextName = "Enchanted Vial";
+            item.TextTooltipBasic = "Purchase Enchanted Vial";
+            item.TextTooltipExtended = "Regenerates <AIp3,DataA1> hit points and <AIp3,DataB1> mana of the Hero over <AIp3,Dur1> seconds. |nContains <envl,uses> charges.";
             return item;
         }
 
@@ -7366,17 +8468,17 @@ namespace War3Api.Object
             item.StatsCooldownGroupRaw = "AHbh";
             item.StatsDroppedWhenCarrierDiesRaw = 0;
             item.StatsCanBeDroppedRaw = 1;
-            item.StatsGoldCost = 100;
+            item.StatsGoldCost = 300;
             item.StatsHitPoints = 75;
             item.StatsIgnoreCooldownRaw = 0;
-            item.StatsLevel = 0;
+            item.StatsLevel = 3;
             item.StatsLumberCost = 0;
             item.StatsValidTargetForTransformationRaw = 0;
             item.StatsLevelUnclassified = 0;
             item.StatsPerishableRaw = 0;
             item.StatsIncludeAsRandomChoiceRaw = 0;
             item.StatsUseAutomaticallyWhenAcquiredRaw = 0;
-            item.StatsPriority = 0;
+            item.StatsPriority = 100;
             item.StatsCanBeSoldByMerchantsRaw = 1;
             item.StatsCanBeSoldToMerchantsRaw = 1;
             item.StatsStockMaximum = 1;
@@ -7386,6 +8488,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Increases attack damage and gives a chance to stun.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Rusty Mining Pick";
+            item.TextTooltipBasic = "Purchase Rusty Mining Pick";
+            item.TextTooltipExtended = "This heavy pick can be swung with force. Increases the Hero's attack damage by <AItg,DataA1> and gives a <AIbx,DataA1>% chance to stun the enemy.";
             return item;
         }
 
@@ -7417,6 +8524,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "|cffff8c00Artifact|r|nThis massive axe is covered with notches and orcish runes.";
+            item.TextHotkeyRaw = "S";
+            item.TextName = "Serathil";
+            item.TextTooltipBasic = "Purchase Serathil";
+            item.TextTooltipExtended = "|cffff8c00Artifact|r|nIncreases the attack rate of the Hero by <AIsx,DataA1,%>% and attack damage by <AItf,DataA1>.|n|cffffcc00History|r|n|cffffdeadThis weapon was crafted on Draenor for Kash'drakor and used in the Blood River war that ended with the annihilation of the Dark Scar clan. Nazgrel is the last living relative of Kash'drakor.|r";
             return item;
         }
 
@@ -7448,6 +8560,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Increases attack damage.";
+            item.TextHotkeyRaw = "W";
+            item.TextName = "Sturdy War Axe";
+            item.TextTooltipBasic = "Purchase Sturdy War Axe";
+            item.TextTooltipExtended = "Increases the attack damage of the Hero by <AItj,DataA1> when carried.";
             return item;
         }
 
@@ -7479,6 +8596,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "|cffff8c00Artifact|r|nA slender crescent axe that smells of blood and salt.";
+            item.TextHotkeyRaw = "K";
+            item.TextName = "Killmaim";
+            item.TextTooltipBasic = "Purchase Killmaim";
+            item.TextTooltipExtended = "|cffff8c00Artifact|r|nIncreases the attack damage of the Hero by <AItx,DataA1> when carried. Also causes the Hero's attacks to steal life.|n|cffffcc00History|r|n|cffffdeadWhen Dethorin found his lady, Allurana, in the arms of another, he went to the Barrens and cried out. An axe burst forth from the sands as if in answer. Dethorin slew Allurana and her lover, then hurled the axe with all his might into the deep dark sea.|r";
             return item;
         }
 
@@ -7510,6 +8632,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 5;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "|cff87ceebUnique Consumable|r|nSummons murlocs.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Scepter of the Sea";
+            item.TextTooltipBasic = "Purchase Scepter of the Sea";
+            item.TextTooltipExtended = "|cff87ceebUnique Consumable|r|nSummons <AIwm,DataA1> Murlocs to fight for you. Also increases the Hero's strength, agility, and intelligence by 2. |nContains <rots,uses> charges.";
             return item;
         }
 
@@ -7541,6 +8668,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "|cffff8c00Artifact|r|nThis intricate staff has many names carved into it.";
+            item.TextHotkeyRaw = "A";
+            item.TextName = "Ancestral Staff";
+            item.TextTooltipBasic = "Purchase Ancestral Staff";
+            item.TextTooltipExtended = "|cffff8c00Artifact|r|nSummons <AIsh,DataB1> Berserkers to fight for you. Also grants the Hero and friendly nearby units increased attack rate and movement speed. |nDoes not stack with Endurance Aura.|n|cffffcc00History|r|n|cffffdeadNames of generations of Witch Doctors are carved into this staff. The wielder can call upon them for wisdom and guidance in times of peril.|r";
             return item;
         }
 
@@ -7572,6 +8704,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Increases mana.";
+            item.TextHotkeyRaw = "M";
+            item.TextName = "Mindstaff";
+            item.TextTooltipBasic = "Purchase Mindstaff";
+            item.TextTooltipExtended = "Increases the mana of the Hero by <AI2m,DataA1>. Also grants the Hero and friendly nearby units a bonus to mana regeneration.";
             return item;
         }
 
@@ -7603,6 +8740,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A staff that heals others.";
+            item.TextHotkeyRaw = "H";
+            item.TextName = "Scepter of Healing";
+            item.TextTooltipBasic = "Purchase Scepter of Healing";
+            item.TextTooltipExtended = "Grants the ability to heal a friendly unit. Also grants the Hero and friendly nearby units <AIgx,DataA1,%>% increased hit point regeneration.";
             return item;
         }
 
@@ -7634,6 +8776,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Increases attack damage.";
+            item.TextHotkeyRaw = "A";
+            item.TextName = "Assassin's Blade";
+            item.TextTooltipBasic = "Purchase Assassin's Blade";
+            item.TextTooltipExtended = "Adds <AItj,DataA1> bonus damage to the attack of the Hero when carried. The Hero's attacks also deal <AIsz,DataA1> damage per second, and slow the movement speed and attack rate of the enemy.";
             return item;
         }
 
@@ -7665,6 +8812,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Increases hit point and mana regeneration.";
+            item.TextHotkeyRaw = "K";
+            item.TextName = "Keg of Ale";
+            item.TextTooltipBasic = "Purchase Keg of Ale";
+            item.TextTooltipExtended = "Increases hit point and mana regeneration.";
             return item;
         }
 
@@ -7696,6 +8848,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Increases combat effectiveness of nearby units.";
+            item.TextHotkeyRaw = "W";
+            item.TextName = "Warsong Battle Drums";
+            item.TextTooltipBasic = "Purchase Warsong Battle Drums";
+            item.TextTooltipExtended = "Increases the attack damage of nearby friendly units by <AIcd,DataA1,%>% when worn. |nDoes not stack with Command Aura.";
             return item;
         }
 
@@ -7727,6 +8884,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Gives gold to player.";
+            item.TextName = "Gold Coins";
+            item.TextTooltipBasic = "Purchase Gold Coins";
+            item.TextTooltipExtended = "Gives <AIgo,DataA1> gold to the player when used.";
             return item;
         }
 
@@ -7758,6 +8919,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Gives lumber to player.";
+            item.TextName = "Bundle of Lumber";
+            item.TextTooltipBasic = "Purchase Bundle of Lumber";
+            item.TextTooltipExtended = "Gives <AIlu,DataA1> lumber to the player when used.";
             return item;
         }
 
@@ -7789,6 +8954,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Improves building armor and hit points.";
+            item.TextHotkeyRaw = "F";
+            item.TextName = "Glyph of Fortification";
+            item.TextTooltipBasic = "Purchase Glyph of Fortification";
+            item.TextTooltipExtended = "Increases the armor and hit points of your buildings.";
             return item;
         }
 
@@ -7820,6 +8990,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Improves night vision.";
+            item.TextHotkeyRaw = "U";
+            item.TextName = "Glyph of Ultravision";
+            item.TextTooltipBasic = "Purchase Glyph of Ultravision";
+            item.TextTooltipExtended = "Gives all of your units the ability to see as far at night as they do during the day.";
             return item;
         }
 
@@ -7851,6 +9026,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Links units together to distribute damage.";
+            item.TextName = "Rune of Spirit Link";
+            item.TextTooltipBasic = "Purchase Rune of Spirit Link";
+            item.TextTooltipExtended = "Links nearby units' spirits together, causing <Aspp,DataA1,%>% of the damage taken by one to be distributed across all spirit linked units.";
             return item;
         }
 
@@ -7882,6 +9061,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Resurrects your dead to fight again.";
+            item.TextName = "Rune of Lesser Resurrection";
+            item.TextTooltipBasic = "Purchase Rune of Lesser Resurrection";
+            item.TextTooltipExtended = "Brings <APrl,DataA1> of your nearby dead units back to life.";
             return item;
         }
 
@@ -7913,6 +9096,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Resurrects your dead to fight again.";
+            item.TextName = "Rune of Greater Resurrection";
+            item.TextTooltipBasic = "Purchase Rune of Greater Resurrection";
+            item.TextTooltipExtended = "Brings <APrr,DataA1> of your nearby dead units back to life.";
             return item;
         }
 
@@ -7944,6 +9131,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Reveals the entire map.";
+            item.TextHotkeyRaw = "O";
+            item.TextName = "Glyph of Omniscience";
+            item.TextTooltipBasic = "Purchase Glyph of Omniscience";
+            item.TextTooltipExtended = "Reveals the entire map for <AIrv,Dur1> seconds when used.";
             return item;
         }
 
@@ -7975,6 +9167,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Gives nearby units a shield that blocks an enemy spell.";
+            item.TextHotkeyRaw = "S";
+            item.TextName = "Rune of Shielding";
+            item.TextTooltipBasic = "Purchase Rune of Shielding";
+            item.TextTooltipExtended = "Creates a shield on nearby friendly units that blocks the next negative spell that an enemy casts upon them.";
             return item;
         }
 
@@ -8006,6 +9203,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Increases movement speed of units.";
+            item.TextHotkeyRaw = "D";
+            item.TextName = "Rune of Speed";
+            item.TextTooltipBasic = "Purchase Rune of Speed";
+            item.TextTooltipExtended = "Increases the movement speed of all nearby allied units to the maximum movement speed. |nLasts <APsa,Dur1> seconds.";
             return item;
         }
 
@@ -8037,6 +9239,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Restores mana to nearby units.";
+            item.TextHotkeyRaw = "M";
+            item.TextName = "Rune of Mana";
+            item.TextTooltipBasic = "Purchase Rune of Mana";
+            item.TextTooltipExtended = "Restores <APmr,DataA1> mana to all nearby friendly units.";
             return item;
         }
 
@@ -8068,6 +9275,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Restores mana to nearby units.";
+            item.TextHotkeyRaw = "M";
+            item.TextName = "Rune of Greater Mana";
+            item.TextTooltipBasic = "Purchase Rune of Greater Mana";
+            item.TextTooltipExtended = "Restores <APmg,DataA1> mana to all nearby friendly units.";
             return item;
         }
 
@@ -8099,6 +9311,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Restores hit points and mana to nearby units.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Rune of Restoration";
+            item.TextTooltipBasic = "Purchase Rune of Restoration";
+            item.TextTooltipExtended = "Restores <APra,DataA1> hit points and <APra,DataB1> mana of friendly non-mechanical units in an area around your Hero.";
             return item;
         }
 
@@ -8130,6 +9347,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Makes a monster yours.";
+            item.TextHotkeyRaw = "B";
+            item.TextName = "Rune of Rebirth";
+            item.TextTooltipBasic = "Purchase Rune of Rebirth";
+            item.TextTooltipExtended = "Places the monster that held this rune under your control.";
             return item;
         }
 
@@ -8161,6 +9383,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Restores hit points to nearby units.";
+            item.TextHotkeyRaw = "H";
+            item.TextName = "Rune of Lesser Healing";
+            item.TextTooltipBasic = "Purchase Rune of Lesser Healing";
+            item.TextTooltipExtended = "Heals <APh1,DataA1> hit points to all nearby friendly non-mechanical units.";
             return item;
         }
 
@@ -8192,6 +9419,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Restores hit points to nearby units.";
+            item.TextHotkeyRaw = "H";
+            item.TextName = "Rune of Healing";
+            item.TextTooltipBasic = "Purchase Rune of Healing";
+            item.TextTooltipExtended = "Heals <APh2,DataA1> hit points to all nearby friendly non-mechanical units.";
             return item;
         }
 
@@ -8223,6 +9455,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Restores hit points to nearby units.";
+            item.TextHotkeyRaw = "H";
+            item.TextName = "Rune of Greater Healing";
+            item.TextTooltipBasic = "Purchase Rune of Greater Healing";
+            item.TextTooltipExtended = "Heals <APh3,DataA1> hit points to all nearby friendly non-mechanical units.";
             return item;
         }
 
@@ -8254,6 +9491,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Dispels magic in the surrounding area.";
+            item.TextHotkeyRaw = "D";
+            item.TextName = "Rune of Dispel Magic";
+            item.TextTooltipBasic = "Purchase Rune of Dispel Magic";
+            item.TextTooltipExtended = "Dispels all nearby magic effects. |n|cffffcc00Deals <APdi,DataB1> damage to summoned units.|r";
             return item;
         }
 
@@ -8285,6 +9527,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Gives bonus experience points.";
+            item.TextHotkeyRaw = "E";
+            item.TextName = "Tome of Experience";
+            item.TextTooltipBasic = "Purchase Tome of Experience";
+            item.TextTooltipExtended = "Gives <AIem,DataA1> experience to the Hero when used.";
             return item;
         }
 
@@ -8316,6 +9563,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Creates an invulnerable Sentry Ward here.";
+            item.TextHotkeyRaw = "W";
+            item.TextName = "Rune of the Watcher";
+            item.TextTooltipBasic = "Purchase Rune of the Watcher";
+            item.TextTooltipExtended = "Creates an invulnerable Sentry Ward when activated.";
             return item;
         }
 
@@ -8347,6 +9599,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Regenerates mana over time.";
+            item.TextHotkeyRaw = "Y";
+            item.TextName = "Clarity Potion";
+            item.TextTooltipBasic = "Purchase Clarity Potion";
+            item.TextTooltipExtended = "|cff87ceebNon-Combat Consumable|r|nRegenerates the Hero's mana by <AIpr,DataB1> over <AIpr,Dur1> seconds when used.";
             return item;
         }
 
@@ -8378,6 +9635,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Regenerates mana over time.";
+            item.TextHotkeyRaw = "C";
+            item.TextName = "Lesser Clarity Potion";
+            item.TextTooltipBasic = "Purchase Lesser Clarity Potion";
+            item.TextTooltipExtended = "|cff87ceebNon-Combat Consumable|r|nRegenerates the Hero's mana by <AIpl,DataB1> over <AIpl,Dur1> seconds when used.";
             return item;
         }
 
@@ -8409,6 +9671,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 4;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Webs a target air unit.";
+            item.TextHotkeyRaw = "S";
+            item.TextName = "Spider Silk Broach";
+            item.TextTooltipBasic = "Purchase Spider Silk Broach";
+            item.TextTooltipExtended = "Binds a target enemy air unit in webbing, forcing the target to the ground. Webbed units can be hit as though they were land units. |nContains <silk,uses> charges.";
             return item;
         }
 
@@ -8440,6 +9707,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Damage bonus and life-stealing attack.";
+            item.TextHotkeyRaw = "V";
+            item.TextName = "Vampiric Potion";
+            item.TextTooltipBasic = "Purchase Vampiric Potion";
+            item.TextTooltipExtended = "Adds <AIpv,DataA1> bonus damage and a life-stealing attack to the Hero. |nLasts <AIpv,Dur1> seconds.";
             return item;
         }
 
@@ -8471,6 +9743,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Regenerates the health of nearby units.";
+            item.TextHotkeyRaw = "R";
+            item.TextName = "Scroll of Regeneration";
+            item.TextTooltipBasic = "Purchase Scroll of Regeneration";
+            item.TextTooltipExtended = "|cff87ceebNon-Combat Consumable|r|nRegenerates the hit points of all friendly non-mechanical units in an area around your Hero by <AIsl,DataA1> over <AIsl,Dur1> seconds when used.";
             return item;
         }
 
@@ -8502,6 +9779,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Creates a Castle.";
+            item.TextHotkeyRaw = "A";
+            item.TextName = "Tiny Castle";
+            item.TextTooltipBasic = "Purchase Tiny Castle";
+            item.TextTooltipExtended = "Creates a Castle at a target location.";
             return item;
         }
 
@@ -8533,6 +9815,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Heals and teleports a unit.";
+            item.TextHotkeyRaw = "N";
+            item.TextName = "Staff of Sanctuary";
+            item.TextTooltipBasic = "Purchase Staff of Sanctuary";
+            item.TextTooltipExtended = "Teleports a target unit to your highest level town hall, stunning the unit and regenerating <ANsa,DataE1> hit points per second. Lasts until the unit is fully healed.";
             return item;
         }
 
@@ -8564,6 +9851,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Attacks reduce healing.";
+            item.TextHotkeyRaw = "F";
+            item.TextName = "Orb of Fire";
+            item.TextTooltipBasic = "Purchase Orb of Fire";
+            item.TextTooltipExtended = "Adds <AIf2,DataA1> bonus damage to the attack of a Hero when carried. The Hero's attacks also become ranged when attacking air, and reduce the effectiveness of healing and regeneration on enemy units by 35% for <AIf2,Dur1> seconds.";
             return item;
         }
 
@@ -8595,6 +9887,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A magical seed.";
+            item.TextName = "Seed of Expulsion";
+            item.TextTooltipBasic = "Purchase Seed of Expulsion";
+            item.TextTooltipExtended = "This seed hums with energy.";
             return item;
         }
 
@@ -8626,6 +9922,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 0;
             item.StatsNumberOfCharges = 0;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "A magical vine.";
+            item.TextName = "Vine of Purification";
+            item.TextTooltipBasic = "Purchase Vine of Purification";
+            item.TextTooltipExtended = "This vine hums with energy.";
             return item;
         }
 
@@ -8657,6 +9957,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Turns Hero invulnerable.";
+            item.TextHotkeyRaw = "D";
+            item.TextName = "Potion of Divinity";
+            item.TextTooltipBasic = "Purchase Potion of Divinity";
+            item.TextTooltipExtended = "Grants the hero a Divine Shield, protecting it from all damage and spells for for <AIdv,Dur1> seconds.";
             return item;
         }
 
@@ -8688,6 +9993,11 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Summons a Red Drake.";
+            item.TextHotkeyRaw = "E";
+            item.TextName = "Red Drake Egg";
+            item.TextTooltipBasic = "Purchase Drake Egg";
+            item.TextTooltipExtended = "Summons a Red Drake to fight for you. |nLasts <AIfd,Dur1> seconds.";
             return item;
         }
 
@@ -8719,6 +10029,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 3;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Summons Furbolgs.";
+            item.TextName = "Talisman of the Wild";
+            item.TextTooltipBasic = "Purchase Talisman of the Wild";
+            item.TextTooltipExtended = "This mystic stone summons a Furbolg to fight for you. |nContains <totw,uses> charges. |nLasts <AIff,Dur1> seconds.";
             return item;
         }
 
@@ -8750,6 +10064,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Animates the dead to fight for you.";
+            item.TextName = "Scroll of Animate Dead";
+            item.TextTooltipBasic = "Purchase Scroll of Animate Dead";
+            item.TextTooltipExtended = "Raises <AIan,DataA1> nearby dead units to fight for <AIan,Dur1> seconds.";
             return item;
         }
 
@@ -8781,6 +10099,10 @@ namespace War3Api.Object
             item.StatsActivelyUsedRaw = 1;
             item.StatsNumberOfCharges = 1;
             item.StatsMaxStacks = 0;
+            item.TextDescription = "Resurrects your dead to fight again.";
+            item.TextName = "Scroll of Resurrection";
+            item.TextTooltipBasic = "Purchase Scroll of Resurrection";
+            item.TextTooltipExtended = "Brings <AIrs,DataA1> of your nearby dead units back to life.";
             return item;
         }
 

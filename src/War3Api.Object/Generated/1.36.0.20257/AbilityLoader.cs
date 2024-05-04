@@ -14,9 +14,20 @@ namespace War3Api.Object
         protected virtual ArchMageBlizzard LoadArchMageBlizzard(ObjectDatabaseBase db)
         {
             var ability = new ArchMageBlizzard(db);
+            ability.TextName = "Blizzard";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Blizzard - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Blizzard - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Blizzard - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Calls down <AHbz,DataA1> freezing ice shard waves; each wave deals <AHbz,DataB1> damage to units in an area.";
+            ability.TextTooltipNormalExtended[2] = "Calls down <AHbz,DataA2> freezing ice shard waves; each wave deals <AHbz,DataB2> damage to units in an area.";
+            ability.TextTooltipNormalExtended[3] = "Calls down <AHbz,DataA3> freezing ice shard waves; each wave deals <AHbz,DataB3> damage to units in an area.";
+            ability.TextTooltipLearn = "Learn Blizzard - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "B";
+            ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -92,9 +103,19 @@ namespace War3Api.Object
         protected virtual ArchMageBrillianceAura LoadArchMageBrillianceAura(ObjectDatabaseBase db)
         {
             var ability = new ArchMageBrillianceAura(db);
+            ability.TextName = "Brilliance Aura";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Brilliance Aura - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Brilliance Aura - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Brilliance Aura - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Gives additional mana regeneration to nearby friendly units.";
+            ability.TextTooltipNormalExtended[2] = "Gives additional mana regeneration to nearby friendly units.";
+            ability.TextTooltipNormalExtended[3] = "Gives additional mana regeneration to nearby friendly units.";
+            ability.TextTooltipLearn = "Learn Brilliance Aura - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -154,9 +175,16 @@ namespace War3Api.Object
         protected virtual ArchMageMassTeleport LoadArchMageMassTeleport(ObjectDatabaseBase db)
         {
             var ability = new ArchMageMassTeleport(db);
+            ability.TextName = "Mass Teleport";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Mass Teleport";
+            ability.TextTooltipNormalExtended[1] = "Teleports <AHmt,DataA1> of the player's nearby units, including the Archmage, to a friendly ground unit or structure.";
+            ability.TextTooltipLearn = "Learn Mass Teleport";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "T";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -220,9 +248,19 @@ namespace War3Api.Object
         protected virtual ArchMageWaterElemental LoadArchMageWaterElemental(ObjectDatabaseBase db)
         {
             var ability = new ArchMageWaterElemental(db);
+            ability.TextName = "Summon Water Elemental";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Summon Water Elemental - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Summon Water Elemental - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Summon Water Elemental - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Summons a water elemental to attack the Archmage's enemies. Has <hwat,realHP> hit points and deals <hwat,mindmg1> - <hwat,maxdmg1> damage. |nLasts <AHwe,Dur1> seconds. |n|n|cffffcc00Attacks land and air units.|r";
+            ability.TextTooltipNormalExtended[2] = "Summons a water elemental to attack the Archmage's enemies. Has <hwt2,realHP> hit points and deals <hwt2,mindmg1> - <hwt2,maxdmg1> damage. |nLasts <AHwe,Dur1> seconds. |n|n|cffffcc00Attacks land and air units.|r";
+            ability.TextTooltipNormalExtended[3] = "Summons a water elemental to attack the Archmage's enemies. Has <hwt3,realHP> hit points and deals <hwt3,mindmg1> - <hwt3,maxdmg1> damage. |nLasts <AHwe,Dur1> seconds. |n|n|cffffcc00Attacks land and air units.|r";
+            ability.TextTooltipLearn = "Learn Summon Water Elemental - [|cffffcc00Level %d|r]";
+            ability.TextHotkeyLearnRaw = "W";
+            ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -282,9 +320,16 @@ namespace War3Api.Object
         protected virtual BeastMasterStampede LoadBeastMasterStampede(ObjectDatabaseBase db)
         {
             var ability = new BeastMasterStampede(db);
+            ability.TextName = "Stampede";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Stampede";
+            ability.TextTooltipNormalExtended[1] = "Calls down hordes of rampaging thunder lizards to explode upon the Beastmaster's enemies. Each exploding lizard deals <ANst,DataC1> damage. |nLasts <ANst,Dur1> seconds.";
+            ability.TextTooltipLearn = "Learn Stampede";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "T";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -356,9 +401,20 @@ namespace War3Api.Object
         protected virtual BeastMasterSummonBear LoadBeastMasterSummonBear(ObjectDatabaseBase db)
         {
             var ability = new BeastMasterSummonBear(db);
+            ability.TextName = "Summon Bear";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Summon Bear - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Summon Bear - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Summon Bear - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Summons a powerful <ngz1,realHP> hit point bear to attack your enemies. |nLasts <ANsg,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Summons a powerful <ngz2,realHP> hit point bear to attack your enemies. Has the Bash ability. |nLasts <ANsg,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Summons a powerful <ngz3,realHP> hit point bear to attack your enemies. Has the Bash and Blink abilities. |nLasts <ANsg,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Summon Bear - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "B";
+            ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -418,9 +474,20 @@ namespace War3Api.Object
         protected virtual BeastMasterSummonQuilbeast LoadBeastMasterSummonQuilbeast(ObjectDatabaseBase db)
         {
             var ability = new BeastMasterSummonQuilbeast(db);
+            ability.TextName = "Summon Quilbeast";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Summon Quilbeast - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Summon Quilbeast - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Summon Quilbeast - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Summons an angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Summons an angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <ANsq,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Summons an angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <ANsq,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Summon Quilbeast - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "Q";
+            ability.TextHotkeyNormalRaw = "Q";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -480,9 +547,20 @@ namespace War3Api.Object
         protected virtual BeastMasterSummonHawk LoadBeastMasterSummonHawk(ObjectDatabaseBase db)
         {
             var ability = new BeastMasterSummonHawk(db);
+            ability.TextName = "Summon Hawk";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Summon Hawk - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Summon Hawk - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Summon Hawk - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Summons a proud <nwe1,realHP> hit point hawk to spy on your enemies. Has the True Sight ability. |nLasts <ANsw,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Summons a proud <nwe2,realHP> hit point hawk to attack and spy on your enemies. Has the True Sight ability. |nLasts <ANsw,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Summons a proud <nwe3,realHP> hit point hawk to attack and spy on your enemies. Has the True Sight and Invisibility abilities. |nLasts <ANsw,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Summon Hawk - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "W";
+            ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -542,9 +620,16 @@ namespace War3Api.Object
         protected virtual BladeMasterBladestorm LoadBladeMasterBladestorm(ObjectDatabaseBase db)
         {
             var ability = new BladeMasterBladestorm(db);
+            ability.TextName = "Bladestorm";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Bladestorm";
+            ability.TextTooltipNormalExtended[1] = "Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing <AOww,DataA1> damage per second to nearby enemy land units. |nLasts <AOww,Dur1> seconds.";
+            ability.TextTooltipLearn = "Learn Bladestorm";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "B";
+            ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -590,7 +675,7 @@ namespace War3Api.Object
             ability.StatsEffectsRaw[2] = null;
             ability.StatsEffectsRaw[3] = null;
             ability.StatsEffectsRaw[4] = null;
-            ability.DataDamagePerSecond[1] = 110f;
+            ability.DataDamagePerSecond[1] = 140f;
             ability.DataDamagePerSecond[2] = 150f;
             ability.DataDamagePerSecond[3] = 150f;
             ability.DataDamagePerSecond[4] = 150f;
@@ -604,9 +689,19 @@ namespace War3Api.Object
         protected virtual BladeMasterCriticalStrike LoadBladeMasterCriticalStrike(ObjectDatabaseBase db)
         {
             var ability = new BladeMasterCriticalStrike(db);
+            ability.TextName = "Critical Strike";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Critical Strike - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Critical Strike - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Critical Strike - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Gives a <AOcr,DataA1>% chance to do <AOcr,DataB1> times damage on an attack.";
+            ability.TextTooltipNormalExtended[2] = "Gives a <AOcr,DataA2>% chance to do <AOcr,DataB2> times damage on an attack.";
+            ability.TextTooltipNormalExtended[3] = "Gives a <AOcr,DataA3>% chance to do <AOcr,DataB3> times damage on an attack.";
+            ability.TextTooltipLearn = "Learn Critical Strike - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -682,9 +777,20 @@ namespace War3Api.Object
         protected virtual BladeMasterMirrorImage LoadBladeMasterMirrorImage(ObjectDatabaseBase db)
         {
             var ability = new BladeMasterMirrorImage(db);
+            ability.TextName = "Mirror Image";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Mirror Image - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Mirror Image - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Mirror Image - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Confuses the enemy by creating <AOmi,DataA1> illusion of the Blademaster. Dispels all magic from the Blademaster. |nLasts <AOmi,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Confuses the enemy by creating <AOmi,DataA2> illusions of the Blademaster. Dispels all magic from the Blademaster. |nLasts <AOmi,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Confuses the enemy by creating <AOmi,DataA3> illusions of the Blademaster. Dispels all magic from the Blademaster. |nLasts <AOmi,Dur1> seconds.";
+            ability.TextTooltipLearn = "Learn Mirror Image - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "R";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -752,9 +858,20 @@ namespace War3Api.Object
         protected virtual BladeMasterWindWalk LoadBladeMasterWindWalk(ObjectDatabaseBase db)
         {
             var ability = new BladeMasterWindWalk(db);
+            ability.TextName = "Wind Walk";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Wind Walk - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Wind Walk - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Wind Walk - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Allows the Blademaster to become invisible, and move <AOwk,DataB1,%>% faster for <AOwk,Dur1> seconds. If the Blademaster attacks a unit to break invisibility, the attack will do <AOwk,DataC1> bonus damage.";
+            ability.TextTooltipNormalExtended[2] = "Allows the Blademaster to become invisible, and move <AOwk,DataB2,%>% faster for <AOwk,Dur2> seconds. If the Blademaster attacks a unit to break invisibility, the attack will do <AOwk,DataC2> bonus damage.";
+            ability.TextTooltipNormalExtended[3] = "Allows the Blademaster to become invisible, and move <AOwk,DataB3,%>% faster for <AOwk,Dur3> seconds. If the Blademaster attacks a unit to break invisibility, the attack will do <AOwk,DataC3> bonus damage.";
+            ability.TextTooltipLearn = "Learn Wind Walk - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "W";
+            ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -826,9 +943,20 @@ namespace War3Api.Object
         protected virtual BloodMageBanish LoadBloodMageBanish(ObjectDatabaseBase db)
         {
             var ability = new BloodMageBanish(db);
+            ability.TextName = "Banish";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Banish - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Banish - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Banish - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Turns a non-mechanical unit ethereal and slows its movement speed by <AHbn,DataA1,%>% for <AHbn,Dur1> seconds. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect.";
+            ability.TextTooltipNormalExtended[2] = "Turns a unit ethereal and slows its movement speed by <AHbn,DataA2,%>% for <AHbn,Dur2> seconds. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect.";
+            ability.TextTooltipNormalExtended[3] = "Turns a unit ethereal and slows its movement speed by <AHbn,DataA3,%>% for <AHbn,Dur3> seconds. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect.";
+            ability.TextTooltipLearn = "Learn Banish - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "B";
+            ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -888,9 +1016,20 @@ namespace War3Api.Object
         protected virtual BloodMageFlameStrike LoadBloodMageFlameStrike(ObjectDatabaseBase db)
         {
             var ability = new BloodMageFlameStrike(db);
+            ability.TextName = "Flame Strike";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Flame Strike - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Flame Strike - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Flame Strike - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Conjures a pillar of flame that burns ground units for 45 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take minor damage.";
+            ability.TextTooltipNormalExtended[2] = "Conjures a pillar of flame that burns ground units for 80 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take light damage.";
+            ability.TextTooltipNormalExtended[3] = "Conjures a pillar of flame that burns ground units for 110 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.";
+            ability.TextTooltipLearn = "Learn Flame Strike - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "F";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -966,9 +1105,20 @@ namespace War3Api.Object
         protected virtual BloodMageSiphonMana LoadBloodMageSiphonMana(ObjectDatabaseBase db)
         {
             var ability = new BloodMageSiphonMana(db);
+            ability.TextName = "Siphon Mana";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Siphon Mana - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Siphon Mana - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Siphon Mana - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Transfers mana between the Blood Mage and a target. Drains <AHdr,DataB1> mana per second from an enemy, or transfers <AHdr,DataE1> mana per second to an ally.|n|nSiphon Mana can push the Blood Mage's mana over its maximum value, though excess mana drains off rapidly if not used.|nLasts <AHdr,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Transfers mana between the Blood Mage and a target. Drains <AHdr,DataB2> mana per second from an enemy, or transfers <AHdr,DataE2> mana per second to an ally.|n|nSiphon Mana can push the Blood Mage's mana over its maximum value, though excess mana drains off rapidly if not used.|nLasts <AHdr,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Transfers mana between the Blood Mage and a target. Drains <AHdr,DataB3> mana per second from an enemy, or transfers <AHdr,DataE3> mana per second to an ally.|n|nSiphon Mana can push the Blood Mage's mana over its maximum value, though excess mana drains off rapidly if not used.|nLasts <AHdr,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Siphon Mana - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "N";
+            ability.TextHotkeyNormalRaw = "N";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -1056,9 +1206,16 @@ namespace War3Api.Object
         protected virtual BloodMagePhoenix LoadBloodMagePhoenix(ObjectDatabaseBase db)
         {
             var ability = new BloodMagePhoenix(db);
+            ability.TextName = "Phoenix";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Phoenix";
+            ability.TextTooltipNormalExtended[1] = "Summons a powerful Phoenix. The Phoenix burns with such intensity that it damages itself and nearby enemy units. Has Spell Immunity, and Resistant Skin. When a Phoenix dies, it creates an egg that will hatch into a Phoenix. |n|n|cffffcc00Attacks land and air units.|r";
+            ability.TextTooltipLearn = "Learn Phoenix";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "X";
+            ability.TextHotkeyNormalRaw = "X";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -1118,9 +1275,22 @@ namespace War3Api.Object
         protected virtual CryptLordCarrionScarabs LoadCryptLordCarrionScarabs(ObjectDatabaseBase db)
         {
             var ability = new CryptLordCarrionScarabs(db);
+            ability.TextName = "Carrion Beetles";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Carrion Beetles - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Carrion Beetles - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Carrion Beetles - [|cffffcc00Level 3|r]";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.";
+            ability.TextTooltipNormalExtended[1] = "Progenerates <AUcb,DataA1> Beetle from a target corpse. Beetles have <ucs1,realHP> hit points, and deal <ucs1,mindmg1> - <ucs1,maxdmg1> damage. Beetles are permanent until killed. |nMaximum of <AUcb,DataE1> Beetles.";
+            ability.TextTooltipNormalExtended[2] = "Progenerates <AUcb,DataA2> Beetle from a target corpse. Beetles have <ucs2,realHP> hit points, and deal <ucs2,mindmg1> - <ucs2,maxdmg1> damage. Can learn Burrow. Beetles are permanent until killed. |nMaximum of <AUcb,DataE2> Beetles.";
+            ability.TextTooltipNormalExtended[3] = "Progenerates <AUcb,DataA3> Beetle from a target corpse. Beetles have <ucs3,realHP> hit points, and deal <ucs3,mindmg1> - <ucs3,maxdmg1> damage. Can learn Burrow. Beetles are permanent until killed. |nMaximum of <AUcb,DataE3> Beetles.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.";
+            ability.TextTooltipLearn = "Learn Carrion Beetles - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "C";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -1196,9 +1366,20 @@ namespace War3Api.Object
         protected virtual CryptLordImpale LoadCryptLordImpale(ObjectDatabaseBase db)
         {
             var ability = new CryptLordImpale(db);
+            ability.TextName = "Impale";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Impale - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Impale - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Impale - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Slams the ground with the Crypt Lord's massive claws, shooting spiked tendrils out in a straight line, dealing <AUim,DataC1> damage and hurling enemy ground units into the air in their wake, stunning them for <AUim,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Slams the ground with the Crypt Lord's massive claws, shooting spiked tendrils out in a straight line dealing <AUim,DataC2> damage and hurling enemy ground units into the air in their wake, stunning them for <AUim,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Slams the ground with the Crypt Lord's massive claws, shooting spiked tendrils out in a straight line dealing <AUim,DataC3> damage and hurling enemy ground units into the air in their wake, stunning them for <AUim,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Impale - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "E";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -1274,9 +1455,16 @@ namespace War3Api.Object
         protected virtual CryptLordLocustSwarm LoadCryptLordLocustSwarm(ObjectDatabaseBase db)
         {
             var ability = new CryptLordLocustSwarm(db);
+            ability.TextName = "Locust Swarm";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Locust Swarm";
+            ability.TextTooltipNormalExtended[1] = "Creates a swarm of angry locusts that bite and tear at nearby enemy units. As they chew the enemy flesh, they convert it into a substance that restores hit points to the Crypt Lord when they return. |nLasts <AUls,HeroDur1> seconds.";
+            ability.TextTooltipLearn = "Learn Locust Swarm";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "L";
+            ability.TextHotkeyNormalRaw = "L";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -1352,9 +1540,19 @@ namespace War3Api.Object
         protected virtual CryptLordSpikedCarapace LoadCryptLordSpikedCarapace(ObjectDatabaseBase db)
         {
             var ability = new CryptLordSpikedCarapace(db);
+            ability.TextName = "Spiked Carapace";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Spiked Carapace - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Spiked Carapace - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Spiked Carapace - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Enhances the Crypt Lord's chitinous armor with organic barbs, giving the Crypt Lord <AUts,DataC1> bonus armor and returning <AUts,DataA1,%>% of melee attack damage to enemies.";
+            ability.TextTooltipNormalExtended[2] = "Enhances the Crypt Lord's chitinous armor with organic barbs, giving him <AUts,DataC2> bonus armor and returning <AUts,DataA2,%>% of melee attack damage to enemies.";
+            ability.TextTooltipNormalExtended[3] = "Enhances the Crypt Lord's chitinous armor with organic barbs, giving him <AUts,DataC3> bonus armor and returning <AUts,DataA3,%>% of melee attack damage to enemies.";
+            ability.TextTooltipLearn = "Learn Spiked Carapace - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "S";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -1401,16 +1599,16 @@ namespace War3Api.Object
             ability.StatsEffectsRaw[3] = null;
             ability.StatsEffectsRaw[4] = null;
             ability.DataReturnedDamageFactor[1] = 0.15f;
-            ability.DataReturnedDamageFactor[2] = 0.25f;
-            ability.DataReturnedDamageFactor[3] = 0.35f;
+            ability.DataReturnedDamageFactor[2] = 0.3f;
+            ability.DataReturnedDamageFactor[3] = 0.45f;
             ability.DataReturnedDamageFactor[4] = 0.35f;
             ability.DataReceivedDamageFactor[1] = 1f;
             ability.DataReceivedDamageFactor[2] = 1f;
             ability.DataReceivedDamageFactor[3] = 1f;
             ability.DataReceivedDamageFactor[4] = 1f;
-            ability.DataDefenseBonus[1] = 3f;
-            ability.DataDefenseBonus[2] = 5f;
-            ability.DataDefenseBonus[3] = 7f;
+            ability.DataDefenseBonus[1] = 4f;
+            ability.DataDefenseBonus[2] = 8f;
+            ability.DataDefenseBonus[3] = 12f;
             ability.DataDefenseBonus[4] = 7f;
             return ability;
         }
@@ -1418,9 +1616,22 @@ namespace War3Api.Object
         protected virtual DarkRangerBlackArrow LoadDarkRangerBlackArrow(ObjectDatabaseBase db)
         {
             var ability = new DarkRangerBlackArrow(db);
+            ability.TextName = "Black Arrow";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Black Arrow - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Black Arrow - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Black Arrow - [|cffffcc00Level 3|r]";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Adds <ANba,DataA1> bonus damage to attacks. Units killed while under the effect of Black Arrow will turn into <ndr1,RealHP> hit point skeletons.";
+            ability.TextTooltipNormalExtended[2] = "Adds <ANba,DataA2> bonus damage to attacks. Units killed while under the effect of Black Arrow will turn into <ndr2,RealHP> hit point skeletons.";
+            ability.TextTooltipNormalExtended[3] = "Adds <ANba,DataA3> bonus damage to attacks. Units killed while under the effect of Black Arrow will turn into <ndr3,RealHP> hit point skeletons.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextTooltipLearn = "Learn Black Arrow - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "B";
+            ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -1488,9 +1699,16 @@ namespace War3Api.Object
         protected virtual DarkRangerCharm LoadDarkRangerCharm(ObjectDatabaseBase db)
         {
             var ability = new DarkRangerCharm(db);
+            ability.TextName = "Charm";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Charm";
+            ability.TextTooltipNormalExtended[1] = "Takes control of a target enemy unit. |nCharm cannot be used on Heroes, or creeps above level <ANch,DataA1>.";
+            ability.TextTooltipLearn = "Learn Charm";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "C";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -1546,9 +1764,20 @@ namespace War3Api.Object
         protected virtual DarkRangerDrain LoadDarkRangerDrain(ObjectDatabaseBase db)
         {
             var ability = new DarkRangerDrain(db);
+            ability.TextName = "Life Drain";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Life Drain - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Life Drain - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Life Drain - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Absorbs the life essence of a target enemy unit by taking <ANdr,DataA1> hit points per second from it and giving them to the Dark Ranger. |n|nAlso applies the current rank of the Black Arrow debuff to the target. |nLasts <ANdr,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Absorbs the life essence of a target enemy unit by taking <ANdr,DataA2> hit points per second from it and giving them to the Dark Ranger. |n|nAlso applies the current rank of the Black Arrow debuff to the target. |nLasts <ANdr,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Absorbs the life essence of a target enemy unit by taking <ANdr,DataA3> hit points per second from it and giving them to the Dark Ranger. |n|nAlso applies the current rank of the Black Arrow debuff to the target. |nLasts <ANdr,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Life Drain - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "D";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -1640,9 +1869,20 @@ namespace War3Api.Object
         protected virtual DarkRangerSilence LoadDarkRangerSilence(ObjectDatabaseBase db)
         {
             var ability = new DarkRangerSilence(db);
+            ability.TextName = "Silence";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Silence - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Silence - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Silence - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Stops all enemies in a small target area from casting spells for <ANsi,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Stops all enemies in a medium target area from casting spells for <ANsi,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Stops all enemies in a large target area from casting spells for <ANsi,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Silence - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "E";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -1710,9 +1950,16 @@ namespace War3Api.Object
         protected virtual DeathKnightAnimateDead LoadDeathKnightAnimateDead(ObjectDatabaseBase db)
         {
             var ability = new DeathKnightAnimateDead(db);
+            ability.TextName = "Animate Dead";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Animate Dead";
+            ability.TextTooltipNormalExtended[1] = "Raises <AUan,DataA1> dead units in an area to fight for the Death Knight for <AUan,Dur1> seconds.";
+            ability.TextTooltipLearn = "Learn Animate Dead";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "D";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -1776,9 +2023,20 @@ namespace War3Api.Object
         protected virtual DeathKnightDeathCoil LoadDeathKnightDeathCoil(ObjectDatabaseBase db)
         {
             var ability = new DeathKnightDeathCoil(db);
+            ability.TextName = "Death Coil";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Death Coil - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Death Coil - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Death Coil - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "A coil of death that can heal a friendly Undead or Demon unit for <AUdc,DataA1> hit points, or deal half damage to an enemy living unit.";
+            ability.TextTooltipNormalExtended[2] = "A coil of death that can heal a friendly Undead or Demon unit for <AUdc,DataA2> hit points, or deal half damage to an enemy living unit.";
+            ability.TextTooltipNormalExtended[3] = "A coil of death that can heal a friendly Undead or Demon unit for <AUdc,DataA3> hit points, or deal half damage to an enemy living unit.";
+            ability.TextTooltipLearn = "Learn Death Coil - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "C";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -1834,9 +2092,20 @@ namespace War3Api.Object
         protected virtual DeathKnightDeathPact LoadDeathKnightDeathPact(ObjectDatabaseBase db)
         {
             var ability = new DeathKnightDeathPact(db);
+            ability.TextName = "Death Pact";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Death Pact - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Death Pact - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Death Pact - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Kills a target friendly Undead unit, giving <AUdp,DataB1,%>% of its hit points to the Death Knight.";
+            ability.TextTooltipNormalExtended[2] = "Kills a target friendly Undead unit, giving <AUdp,DataB2,%>% of its hit points to the Death Knight.";
+            ability.TextTooltipNormalExtended[3] = "Kills a target friendly Undead unit, giving <AUdp,DataB3,%>% of its hit points to the Death Knight.";
+            ability.TextTooltipLearn = "Learn Death Pact - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "E";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -1908,9 +2177,19 @@ namespace War3Api.Object
         protected virtual DeathKnightUnholyAura LoadDeathKnightUnholyAura(ObjectDatabaseBase db)
         {
             var ability = new DeathKnightUnholyAura(db);
+            ability.TextName = "Unholy Aura";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Unholy Aura - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Unholy Aura - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Unholy Aura - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Increases nearby friendly units' movement speed by <AUau,DataA1,%>% and life regeneration rate.";
+            ability.TextTooltipNormalExtended[2] = "Increases nearby friendly units' movement speed by <AUau,DataA2,%>% and life regeneration rate.";
+            ability.TextTooltipNormalExtended[3] = "Increases nearby friendly units' movement speed by <AUau,DataA3,%>% and life regeneration rate.";
+            ability.TextTooltipLearn = "Learn Unholy Aura - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "U";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -1974,9 +2253,19 @@ namespace War3Api.Object
         protected virtual DemonHunterEvasion LoadDemonHunterEvasion(ObjectDatabaseBase db)
         {
             var ability = new DemonHunterEvasion(db);
+            ability.TextName = "Evasion";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Evasion - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Evasion - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Evasion - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Gives a <AEev,DataA1,%>% chance to avoid an attack.";
+            ability.TextTooltipNormalExtended[2] = "Gives a <AEev,DataA2,%>% chance to avoid an attack.";
+            ability.TextTooltipNormalExtended[3] = "Gives a <AEev,DataA3,%>% chance to avoid an attack.";
+            ability.TextTooltipLearn = "Learn Evasion - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -2032,9 +2321,23 @@ namespace War3Api.Object
         protected virtual DemonHunterImmolation LoadDemonHunterImmolation(ObjectDatabaseBase db)
         {
             var ability = new DemonHunterImmolation(db);
+            ability.TextName = "Immolation";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Activate Immolation - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Activate Immolation - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Activate Immolation - [|cffffcc00Level 3|r]";
+            ability.TextTooltipTurnOff[1] = "Deactivate Immolation";
+            ability.TextTooltipNormalExtended[1] = "Activate Immolation to engulf this unit in flames, causing <AEim,DataA1> damage per 0.5 second to nearby enemy land units. |nDrains mana until deactivated.";
+            ability.TextTooltipNormalExtended[2] = "Activate Immolation to engulf this unit in flames, causing <AEim,DataA2> damage per 0.5 second to nearby enemy land units. |nDrains mana until deactivated.";
+            ability.TextTooltipNormalExtended[3] = "Activate Immolation to engulf this unit in flames, causing <AEim,DataA3> damage per 0.5 second to nearby enemy land units. |nDrains mana until deactivated.";
+            ability.TextTooltipTurnOffExtended[1] = "Deactivate Immolation to stop draining mana.";
+            ability.TextTooltipLearn = "Learn Immolation - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "L";
+            ability.TextHotkeyNormalRaw = "L";
+            ability.TextHotkeyTurnOffRaw = "L";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -2060,9 +2363,9 @@ namespace War3Api.Object
             ability.StatsCooldown[2] = 0f;
             ability.StatsCooldown[3] = 0f;
             ability.StatsCooldown[4] = 0f;
-            ability.StatsManaCost[1] = 1;
-            ability.StatsManaCost[2] = 1;
-            ability.StatsManaCost[3] = 1;
+            ability.StatsManaCost[1] = 10;
+            ability.StatsManaCost[2] = 10;
+            ability.StatsManaCost[3] = 10;
             ability.StatsManaCost[4] = 20;
             ability.StatsAreaOfEffect[1] = 160f;
             ability.StatsAreaOfEffect[2] = 160f;
@@ -2088,9 +2391,9 @@ namespace War3Api.Object
             ability.DataManaDrainedPerSecond[2] = 7f;
             ability.DataManaDrainedPerSecond[3] = 7f;
             ability.DataManaDrainedPerSecond[4] = 6f;
-            ability.DataBufferManaRequired[1] = 9f;
-            ability.DataBufferManaRequired[2] = 9f;
-            ability.DataBufferManaRequired[3] = 9f;
+            ability.DataBufferManaRequired[1] = 10f;
+            ability.DataBufferManaRequired[2] = 10f;
+            ability.DataBufferManaRequired[3] = 10f;
             ability.DataBufferManaRequired[4] = 10f;
             return ability;
         }
@@ -2098,9 +2401,20 @@ namespace War3Api.Object
         protected virtual DemonHunterManaBurn LoadDemonHunterManaBurn(ObjectDatabaseBase db)
         {
             var ability = new DemonHunterManaBurn(db);
+            ability.TextName = "Mana Burn";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Mana Burn - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Mana Burn - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Mana Burn - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Sends a bolt of negative energy that burns up to <AEmb,DataA1> points of a target enemy unit's mana. The mana combusts, dealing damage equal to the amount of mana burned.";
+            ability.TextTooltipNormalExtended[2] = "Sends a bolt of negative energy that burns up to <AEmb,DataA2> points of a target enemy unit's mana. The mana combusts, dealing damage equal to the amount of mana burned.";
+            ability.TextTooltipNormalExtended[3] = "Sends a bolt of negative energy that burns up to <AEmb,DataA3> points of a target enemy unit's mana. The mana combusts, dealing damage equal to the amount of mana burned.";
+            ability.TextTooltipLearn = "Learn Mana Burn - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "B";
+            ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -2164,9 +2478,16 @@ namespace War3Api.Object
         protected virtual DemonHunterMetamorphosis LoadDemonHunterMetamorphosis(ObjectDatabaseBase db)
         {
             var ability = new DemonHunterMetamorphosis(db);
+            ability.TextName = "Metamorphosis";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Metamorphosis";
+            ability.TextTooltipNormalExtended[1] = "Transforms the Demon Hunter into a powerful Demon with a ranged attack and <AEme,DataE1> bonus hit points. |nLasts <AEme,HeroDur1> seconds.";
+            ability.TextTooltipLearn = "Learn Metamorphosis";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "T";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -2242,9 +2563,20 @@ namespace War3Api.Object
         protected virtual DreadlordSleep LoadDreadlordSleep(ObjectDatabaseBase db)
         {
             var ability = new DreadlordSleep(db);
+            ability.TextName = "Sleep";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Sleep - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Sleep - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Sleep - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Puts a target enemy unit to sleep for <AUsl,Dur1> seconds. A sleeping unit can be awoken by attacking it.";
+            ability.TextTooltipNormalExtended[2] = "Puts a target enemy unit to sleep for <AUsl,Dur2> seconds. A sleeping unit can be awoken by attacking it.";
+            ability.TextTooltipNormalExtended[3] = "Puts a target enemy unit to sleep for <AUsl,Dur3> seconds. A sleeping unit can be awoken by attacking it.";
+            ability.TextTooltipLearn = "Learn Sleep - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "E";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -2300,9 +2632,19 @@ namespace War3Api.Object
         protected virtual DreadlordVampiricAura LoadDreadlordVampiricAura(ObjectDatabaseBase db)
         {
             var ability = new DreadlordVampiricAura(db);
+            ability.TextName = "Vampiric Aura";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Vampiric Aura - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Vampiric Aura - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Vampiric Aura - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Nearby friendly melee units gain <AUav,DataA1,%>% of their attack damage when they hit enemy units.";
+            ability.TextTooltipNormalExtended[2] = "Nearby friendly melee units gain <AUav,DataA2,%>% of their attack damage when they hit enemy units.";
+            ability.TextTooltipNormalExtended[3] = "Nearby friendly melee units gain <AUav,DataA3,%>% of their attack damage when they hit enemy units.";
+            ability.TextTooltipLearn = "Learn Vampiric Aura - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "V";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -2358,9 +2700,20 @@ namespace War3Api.Object
         protected virtual DreadlordCarrionSwarm LoadDreadlordCarrionSwarm(ObjectDatabaseBase db)
         {
             var ability = new DreadlordCarrionSwarm(db);
+            ability.TextName = "Carrion Swarm";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Carrion Swarm - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Carrion Swarm - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Carrion Swarm - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Sends a horde of bats to deal <AUcs,DataA1> damage to each enemy unit in a cone.";
+            ability.TextTooltipNormalExtended[2] = "Sends a horde of bats to deal <AUcs,DataA2> damage to each enemy unit in a cone.";
+            ability.TextTooltipNormalExtended[3] = "Sends a horde of bats to deal <AUcs,DataA3> damage to each enemy unit in a cone.";
+            ability.TextTooltipLearn = "Learn Carrion Swarm - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "C";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -2428,9 +2781,16 @@ namespace War3Api.Object
         protected virtual DreadlordInferno LoadDreadlordInferno(ObjectDatabaseBase db)
         {
             var ability = new DreadlordInferno(db);
+            ability.TextName = "Inferno";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Inferno";
+            ability.TextTooltipNormalExtended[1] = "Calls an Infernal down from the sky, dealing <AUin,DataA1> damage and stunning enemy land units for <AUin,Dur1> seconds in an area. The Infernal lasts <AUin,DataB1> seconds.";
+            ability.TextTooltipLearn = "Learn Inferno";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "N";
+            ability.TextHotkeyNormalRaw = "N";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -2498,9 +2858,20 @@ namespace War3Api.Object
         protected virtual FarseerChainLightning LoadFarseerChainLightning(ObjectDatabaseBase db)
         {
             var ability = new FarseerChainLightning(db);
+            ability.TextName = "Chain Lightning";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Chain Lightning - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Chain Lightning - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Chain Lightning - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Calls forth a bolt of lightning that bounces up to <AOcl,DataB1> times, dealing <AOcl,DataA1> damage on the primary target. Each jump deals less damage.";
+            ability.TextTooltipNormalExtended[2] = "Calls forth a bolt of lightning that bounces up to <AOcl,DataB2> times, dealing <AOcl,DataA2> damage on the primary target. Each jump deals less damage.";
+            ability.TextTooltipNormalExtended[3] = "Calls forth a bolt of lightning that bounces up to <AOcl,DataB3> times, dealing <AOcl,DataA3> damage on the primary target. Each jump deals less damage.";
+            ability.TextTooltipLearn = "Learn Chain Lightning - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "C";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -2564,9 +2935,16 @@ namespace War3Api.Object
         protected virtual FarseerEarthquake LoadFarseerEarthquake(ObjectDatabaseBase db)
         {
             var ability = new FarseerEarthquake(db);
+            ability.TextName = "Earthquake";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Earthquake";
+            ability.TextTooltipNormalExtended[1] = "Makes the ground tremble and break, causing <AOeq,DataB1> damage per second to buildings and slowing units by <AOeq,DataC1,%>% within the area of effect. |nLasts <AOeq,Dur1> seconds.";
+            ability.TextTooltipLearn = "Learn Earthquake";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "E";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -2634,9 +3012,18 @@ namespace War3Api.Object
         protected virtual FarseerFarSight LoadFarseerFarSight(ObjectDatabaseBase db)
         {
             var ability = new FarseerFarSight(db);
+            ability.TextName = "Far Sight";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Far Sight - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Far Sight - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Far Sight - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Reveals the area of the map that it is cast upon for <AOfs,Dur1> seconds. Also reveals invisible units.";
+            ability.TextTooltipLearn = "Learn Far Sight - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "F";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -2692,9 +3079,20 @@ namespace War3Api.Object
         protected virtual FarseerSpiritWolf LoadFarseerSpiritWolf(ObjectDatabaseBase db)
         {
             var ability = new FarseerSpiritWolf(db);
+            ability.TextName = "Feral Spirit";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Feral Spirit - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Feral Spirit - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Feral Spirit - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Summons <AOsf,DataB1> Spirit Wolf companions. Each wolf has <osw1,realHP> hit points and deals <osw1,mindmg1> - <osw1,maxdmg1> damage. |nLasts <AOsf,Dur1> seconds. |n|n|cffffcc00Attacks land units.|r";
+            ability.TextTooltipNormalExtended[2] = "Summons <AOsf,DataB2> Spirit Wolf companions that have Critical Strike. Each wolf has <osw2,realHP> hit points and deals <osw2,mindmg1> - <osw2,maxdmg1> damage. |nLasts <AOsf,Dur2> seconds. |n|n|cffffcc00Attacks land units.|r";
+            ability.TextTooltipNormalExtended[3] = "Summons <AOsf,DataB3> Spirit Wolf companions that have Critical Strike and are invisible unless they are attacking. Each wolf has <osw3,realHP> hit points and deals <osw3,mindmg1> - <osw3,maxdmg1> damage. |nLasts <AOsf,Dur3> seconds. |n|n|cffffcc00Attacks land units.|r";
+            ability.TextTooltipLearn = "Learn Feral Spirit - [|cffffcc00Level %d|r].";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "T";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -2754,9 +3152,20 @@ namespace War3Api.Object
         protected virtual KeeperEntanglingRoots LoadKeeperEntanglingRoots(ObjectDatabaseBase db)
         {
             var ability = new KeeperEntanglingRoots(db);
+            ability.TextName = "Entangling Roots";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Entangling Roots - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Entangling Roots - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Entangling Roots - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Causes roots to burst from the ground, immobilizing and disarming a target enemy unit for <AEer,Dur1> seconds, and dealing <AEer,DataA1> damage per second.";
+            ability.TextTooltipNormalExtended[2] = "Causes roots to burst from the ground, immobilizing and disarming a target enemy unit for <AEer,Dur2> seconds, and dealing <AEer,DataA2> damage per second.";
+            ability.TextTooltipNormalExtended[3] = "Causes roots to burst from the ground, immobilizing and disarming a target enemy unit for <AEer,Dur3> seconds, and dealing <AEer,DataA3> damage per second.";
+            ability.TextTooltipLearn = "Learn Entangling Roots - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "E";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -2812,9 +3221,20 @@ namespace War3Api.Object
         protected virtual KeeperForceOfNature LoadKeeperForceOfNature(ObjectDatabaseBase db)
         {
             var ability = new KeeperForceOfNature(db);
+            ability.TextName = "Force of Nature";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Force of Nature - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Force of Nature - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Force of Nature - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Converts a small area of trees into <AEfn,DataA1> Treants. Treants have <efon,realHP> hit points and deal <efon,mindmg1> - <efon,maxdmg1> damage. Can learn Nature's Blessing. |nLasts <AEfn,Dur1> seconds. |n|n|cffffcc00Attacks land units.|r";
+            ability.TextTooltipNormalExtended[2] = "Converts a large area of trees into <AEfn,DataA2> Treants. Treants have <efon,realHP> hit points and deal <efon,mindmg1> - <efon,maxdmg1> damage. Can learn Nature's Blessing. |nLasts <AEfn,Dur2> seconds. |n|n|cffffcc00Attacks land units.|r";
+            ability.TextTooltipNormalExtended[3] = "Converts a very large area of trees into <AEfn,DataA3> Treants. Treants have <efon,realHP> hit points and deal <efon,mindmg1> - <efon,maxdmg1> damage. Can learn Nature's Blessing. |nLasts <AEfn,Dur3> seconds. |n|n|cffffcc00Attacks land units.|r";
+            ability.TextTooltipLearn = "Learn Force of Nature - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "F";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -2874,9 +3294,19 @@ namespace War3Api.Object
         protected virtual KeeperThornsAura LoadKeeperThornsAura(ObjectDatabaseBase db)
         {
             var ability = new KeeperThornsAura(db);
+            ability.TextName = "Thorns Aura";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Thorns Aura - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Thorns Aura - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Thorns Aura - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "An aura that gives friendly nearby units a damage shield, which deals <AEah,DataA1,%>% of an enemy unit's melee attack damage back to it.";
+            ability.TextTooltipNormalExtended[2] = "An aura that gives friendly nearby units a damage shield, which deals <AEah,DataA2,%>% of an enemy unit's melee attack damage back to it.";
+            ability.TextTooltipNormalExtended[3] = "An aura that gives friendly nearby units a damage shield, which deals <AEah,DataA3,%>% of an enemy unit's melee attack damage back to it.";
+            ability.TextTooltipLearn = "Learn Thorns Aura - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -2936,9 +3366,16 @@ namespace War3Api.Object
         protected virtual KeeperTranquility LoadKeeperTranquility(ObjectDatabaseBase db)
         {
             var ability = new KeeperTranquility(db);
+            ability.TextName = "Tranquility";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Tranquility";
+            ability.TextTooltipNormalExtended[1] = "Causes rains of healing energy to pour down in a large area, healing friendly allied units for <AEtq,DataA1> hit points per second. |nLasts <AEtq,Dur1> seconds.";
+            ability.TextTooltipLearn = "Learn Tranquility";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "T";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -3006,9 +3443,20 @@ namespace War3Api.Object
         protected virtual LichDarkRitual LoadLichDarkRitual(ObjectDatabaseBase db)
         {
             var ability = new LichDarkRitual(db);
+            ability.TextName = "Dark Ritual";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Dark Ritual - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Dark Ritual - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Dark Ritual - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Sacrifices a target friendly Undead unit to convert <AUdr,DataA1,%>% of its hit points into mana for the Lich.";
+            ability.TextTooltipNormalExtended[2] = "Sacrifices a target friendly Undead unit to convert <AUdr,DataA2,%>% of its hit points into mana for the Lich.";
+            ability.TextTooltipNormalExtended[3] = "Sacrifices a target friendly Undead unit to convert <AUdr,DataA3,%>% of its hit points into mana for the Lich.";
+            ability.TextTooltipLearn = "Learn Dark Ritual - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "R";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -3080,9 +3528,16 @@ namespace War3Api.Object
         protected virtual LichDeathAndDecay LoadLichDeathAndDecay(ObjectDatabaseBase db)
         {
             var ability = new LichDeathAndDecay(db);
+            ability.TextName = "Death And Decay";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Death And Decay";
+            ability.TextTooltipNormalExtended[1] = "Damages everything in its area of effect by <AUdd,DataA1,%>% of its base hit points per second. Also destroys trees. |nLasts <AUdd,Dur1> seconds.";
+            ability.TextTooltipLearn = "Learn Death And Decay";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "D";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -3142,9 +3597,20 @@ namespace War3Api.Object
         protected virtual LichFrostArmor LoadLichFrostArmor(ObjectDatabaseBase db)
         {
             var ability = new LichFrostArmor(db);
+            ability.TextName = "Frost Armor";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Frost Armor - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Frost Armor - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Frost Armor - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Creates a shield of frost around a target friendly unit. The shield adds <AUfa,DataB1> armor and slows melee units that attack it for <AUfa,Dur1> seconds. |nLasts <AUfa,DataA1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Creates a shield of frost around a target friendly unit. The shield adds <AUfa,DataB2> armor and slows melee units that attack it for <AUfa,Dur1> seconds. |nLasts <AUfa,DataA2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Creates a shield of frost around a target friendly unit. The shield adds <AUfa,DataB3> armor and slows melee units that attack it for <AUfa,Dur1> seconds. |nLasts <AUfa,DataA3> seconds.";
+            ability.TextTooltipLearn = "Learn Frost Armor - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "F";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -3204,9 +3670,23 @@ namespace War3Api.Object
         protected virtual LichFrostArmorAutocast LoadLichFrostArmorAutocast(ObjectDatabaseBase db)
         {
             var ability = new LichFrostArmorAutocast(db);
+            ability.TextName = "Frost Armor";
+            ability.TextEditorSuffix = " (Autocast)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Frost Armor - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Frost Armor - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Frost Armor - [|cffffcc00Level 3|r]";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.";
+            ability.TextTooltipNormalExtended[1] = "Creates a shield of frost around a target friendly unit. The shield adds <AUfu,DataB1> armor and slows melee units that attack it for <AUfu,Dur1> seconds. |nLasts <AUfu,DataA1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Creates a shield of frost around a target friendly unit. The shield adds <AUfa,DataB2> armor and slows melee units that attack it for <AUfu,Dur2> seconds. |nLasts <AUfa,DataA2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Creates a shield of frost around a target friendly unit. The shield adds <AUfa,DataB3> armor and slows melee units that attack it for <AUfu,Dur3> seconds. |nLasts <AUfa,DataA3> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.";
+            ability.TextTooltipLearn = "Learn Frost Armor - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "F";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -3266,9 +3746,20 @@ namespace War3Api.Object
         protected virtual LichFrostNova LoadLichFrostNova(ObjectDatabaseBase db)
         {
             var ability = new LichFrostNova(db);
+            ability.TextName = "Frost Nova";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Frost Nova - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Frost Nova - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Frost Nova - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Blasts enemy units with a wave of frost that deals <AUfn,DataB1> damage to the target, and <AUfn,DataA1> nova damage. Cold damage slows units' movement and attack rate for <AUfn,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Blasts enemy units with a wave of frost that deals <AUfn,DataB2> damage to the target, and <AUfn,DataA2> nova damage. Cold damage slows units' movement and attack rate for <AUfn,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Blasts enemy units with a wave of frost that deals <AUfn,DataB3> damage to the target, and <AUfn,DataA3> nova damage. Cold damage slows units' movement and attack rate for <AUfn,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Frost Nova - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "N";
+            ability.TextHotkeyNormalRaw = "N";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -3332,9 +3823,16 @@ namespace War3Api.Object
         protected virtual MountainKingAvatar LoadMountainKingAvatar(ObjectDatabaseBase db)
         {
             var ability = new MountainKingAvatar(db);
+            ability.TextName = "Avatar";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Activate Avatar";
+            ability.TextTooltipTurnOff[1] = "Deactivate Avatar";
+            ability.TextTooltipLearn = "Learn Avatar";
+            ability.TextHotkeyLearnRaw = "V";
+            ability.TextHotkeyNormalRaw = "V";
+            ability.TextHotkeyTurnOffRaw = "V";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -3402,9 +3900,19 @@ namespace War3Api.Object
         protected virtual MountainKingBash LoadMountainKingBash(ObjectDatabaseBase db)
         {
             var ability = new MountainKingBash(db);
+            ability.TextName = "Bash";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Bash - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Bash - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Bash - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Gives a <AHbh,DataA1>% chance that an attack will do <AHbh,DataC1> bonus damage and stun the target for <AHbh,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Gives a <AHbh,DataA2>% chance that an attack will do <AHbh,DataC2> bonus damage and stun the target for <AHbh,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Gives a <AHbh,DataA3>% chance that an attack will do <AHbh,DataC3> bonus damage and stun the target for <AHbh,Dur1> seconds.";
+            ability.TextTooltipLearn = "Learn Bash - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -3459,8 +3967,8 @@ namespace War3Api.Object
             ability.DataDamageMultiplier[3] = 0f;
             ability.DataDamageMultiplier[4] = 0f;
             ability.DataDamageBonus[1] = 25f;
-            ability.DataDamageBonus[2] = 25f;
-            ability.DataDamageBonus[3] = 25f;
+            ability.DataDamageBonus[2] = 40f;
+            ability.DataDamageBonus[3] = 55f;
             ability.DataDamageBonus[4] = 25f;
             ability.DataChanceToMiss[1] = 0f;
             ability.DataChanceToMiss[2] = 0f;
@@ -3476,9 +3984,20 @@ namespace War3Api.Object
         protected virtual MountainKingThunderBolt LoadMountainKingThunderBolt(ObjectDatabaseBase db)
         {
             var ability = new MountainKingThunderBolt(db);
+            ability.TextName = "Storm Bolt";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Storm Bolt - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Storm Bolt - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Storm Bolt - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Throws a magical hammer at a target enemy unit, dealing <AHtb,DataA1> damage and stunning the target for <AHtb,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Throws a magical hammer at a target enemy unit, dealing <AHtb,DataA2> damage and stunning the target for <AHtb,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Throws a magical hammer at a target enemy unit, dealing <AHtb,DataA3> damage and stunning the target for <AHtb,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Storm Bolt - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "T";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -3534,9 +4053,20 @@ namespace War3Api.Object
         protected virtual MountainKingThunderClap LoadMountainKingThunderClap(ObjectDatabaseBase db)
         {
             var ability = new MountainKingThunderClap(db);
+            ability.TextName = "Thunder Clap";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Thunder Clap - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Thunder Clap - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Thunder Clap - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Slams the ground, dealing <AHtc,DataA1> damage to nearby enemy land units and slowing their movement by <AHtc,DataC1,%>% and attack rate by <AHtc,DataD1,%>%.";
+            ability.TextTooltipNormalExtended[2] = "Slams the ground, dealing <AHtc,DataA2> damage to nearby enemy land units and slowing their movement by <AHtc,DataC2,%>% and attack rate by <AHtc,DataD2,%>%.";
+            ability.TextTooltipNormalExtended[3] = "Slams the ground, dealing <AHtc,DataA3> damage to nearby enemy land units and slowing their movement by <AHtc,DataC3,%>% and attack rate by <AHtc,DataD3,%>%.";
+            ability.TextTooltipLearn = "Learn Thunder Clap - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "C";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -3608,9 +4138,20 @@ namespace War3Api.Object
         protected virtual SeaWitchForkedLightning LoadSeaWitchForkedLightning(ObjectDatabaseBase db)
         {
             var ability = new SeaWitchForkedLightning(db);
+            ability.TextName = "Forked Lightning";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Forked Lightning - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Forked Lightning - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Forked Lightning - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Calls forth a cone of lightning on a target enemy unit, hitting up to <ANfl,DataB1> enemy units for <ANfl,DataA1> damage.";
+            ability.TextTooltipNormalExtended[2] = "Calls forth a cone of lightning from the Sea Witch, hitting up to <ANfl,DataB2> enemy units for <ANfl,DataA2> damage.";
+            ability.TextTooltipNormalExtended[3] = "Calls forth a cone of lightning from the Sea Witch, hitting up to <ANfl,DataB3> enemy units for <ANfl,DataA3> damage.";
+            ability.TextTooltipLearn = "Learn Forked Lightning - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "F";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -3678,9 +4219,23 @@ namespace War3Api.Object
         protected virtual SeaWitchFrostArrows LoadSeaWitchFrostArrows(ObjectDatabaseBase db)
         {
             var ability = new SeaWitchFrostArrows(db);
+            ability.TextName = "Frost Arrows";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Frost Arrows - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Frost Arrows - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Frost Arrows - [|cffffcc00Level 3|r]";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Adds a cold effect to each attack, dealing <ANfa,DataA1> bonus damage, slowing a target enemy unit's attacks by <ANfa,DataB1,%>% and movement by <ANfa,DataC1,%>% for <ANfa,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Adds a cold effect to each attack, dealing <ANfa,DataA2> bonus damage, slowing a target enemy unit's attacks by <ANfa,DataB2,%>% and movement by <ANfa,DataC2,%>% for <ANfa,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Adds a cold effect to each attack, dealing <ANfa,DataA3> bonus damage, slowing a target enemy unit's attacks by <ANfa,DataB3,%>% and movement by <ANfa,DataC3,%>% for <ANfa,Dur3> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextTooltipLearn = "Learn Frost Arrows - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "R";
+            ability.TextHotkeyNormalRaw = "R";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -3748,9 +4303,16 @@ namespace War3Api.Object
         protected virtual SeaWitchTornado LoadSeaWitchTornado(ObjectDatabaseBase db)
         {
             var ability = new SeaWitchTornado(db);
+            ability.TextName = "Tornado";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Tornado";
+            ability.TextTooltipNormalExtended[1] = "Summons a fierce controllable Tornado that slows enemy units' movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts <ANto,Dur1> seconds.";
+            ability.TextTooltipLearn = "Learn Tornado";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "T";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -3806,9 +4368,22 @@ namespace War3Api.Object
         protected virtual SeaWitchManaShield LoadSeaWitchManaShield(ObjectDatabaseBase db)
         {
             var ability = new SeaWitchManaShield(db);
+            ability.TextName = "Mana Shield";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Activate Mana Shield - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Activate Mana Shield - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Activate Mana Shield - [|cffffcc00Level 3|r]";
+            ability.TextTooltipTurnOff[1] = "Deactivate Mana Shield";
+            ability.TextTooltipNormalExtended[1] = "Activates a shield that absorbs <ANms,DataA1> damage per point of mana.";
+            ability.TextTooltipNormalExtended[2] = "Activates a shield that absorbs <ANms,DataA2> damage per point of mana.";
+            ability.TextTooltipNormalExtended[3] = "Activates a shield that absorbs <ANms,DataA3> damage per point of mana.";
+            ability.TextTooltipLearn = "Learn Mana Shield - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "N";
+            ability.TextHotkeyNormalRaw = "N";
+            ability.TextHotkeyTurnOffRaw = "N";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -3868,9 +4443,19 @@ namespace War3Api.Object
         protected virtual PaladinDevotionAura LoadPaladinDevotionAura(ObjectDatabaseBase db)
         {
             var ability = new PaladinDevotionAura(db);
+            ability.TextName = "Devotion Aura";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Devotion Aura - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Devotion Aura - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Devotion Aura - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Gives <AHad,DataA1,.> additional armor to nearby friendly units.";
+            ability.TextTooltipNormalExtended[2] = "Gives <AHad,DataA2,.> additional armor to nearby friendly units.";
+            ability.TextTooltipNormalExtended[3] = "Gives <AHad,DataA3,.> additional armor to nearby friendly units.";
+            ability.TextTooltipLearn = "Learn Devotion Aura - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "V";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -3917,8 +4502,8 @@ namespace War3Api.Object
             ability.StatsEffectsRaw[3] = null;
             ability.StatsEffectsRaw[4] = null;
             ability.DataArmorBonus[1] = 2f;
-            ability.DataArmorBonus[2] = 3.5f;
-            ability.DataArmorBonus[3] = 5f;
+            ability.DataArmorBonus[2] = 4f;
+            ability.DataArmorBonus[3] = 6f;
             ability.DataArmorBonus[4] = 4.5f;
             ability.DataPercentBonusRaw[1] = 0;
             ability.DataPercentBonusRaw[2] = 0;
@@ -3930,9 +4515,22 @@ namespace War3Api.Object
         protected virtual PaladinDivineShield LoadPaladinDivineShield(ObjectDatabaseBase db)
         {
             var ability = new PaladinDivineShield(db);
+            ability.TextName = "Divine Shield";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Divine Shield - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Divine Shield - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Divine Shield - [|cffffcc00Level 3|r]";
+            ability.TextTooltipTurnOff[1] = "Deactivate Divine Shield";
+            ability.TextTooltipNormalExtended[1] = "An impenetrable shield surrounds this unit, protecting it from all damage and spells for <AHds,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "An impenetrable shield surrounds this unit, protecting it from all damage and spells for <AHds,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "An impenetrable shield surrounds this unit, protecting it from all damage and spells for <AHds,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Divine Shield - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "D";
+            ability.TextHotkeyNormalRaw = "D";
+            ability.TextHotkeyTurnOffRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -3988,9 +4586,17 @@ namespace War3Api.Object
         protected virtual PaladinHolyLight LoadPaladinHolyLight(ObjectDatabaseBase db)
         {
             var ability = new PaladinHolyLight(db);
+            ability.TextName = "Holy Light";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Holy Light - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Holy Light - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Holy Light - [|cffffcc00Level 3|r]";
+            ability.TextTooltipLearn = "Learn Holy Light - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "T";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -4046,9 +4652,16 @@ namespace War3Api.Object
         protected virtual PaladinResurrection LoadPaladinResurrection(ObjectDatabaseBase db)
         {
             var ability = new PaladinResurrection(db);
+            ability.TextName = "Resurrection";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Resurrection";
+            ability.TextTooltipNormalExtended[1] = "Brings back to life the corpses of <AHre,DataA1> friendly nearby units.";
+            ability.TextTooltipLearn = "Learn Resurrection";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "R";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -4108,9 +4721,20 @@ namespace War3Api.Object
         protected virtual BrewmasterBreathOfFire LoadBrewmasterBreathOfFire(ObjectDatabaseBase db)
         {
             var ability = new BrewmasterBreathOfFire(db);
+            ability.TextName = "Breath of Fire";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Breath of Fire - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = " Breath of Fire - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = " Breath of Fire - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Breathes a cone of fire at enemy units, dealing <ANbf,DataA1> initial damage. Units that have Drunken Haze on them will ignite and burn for <ANbf,DataE1> damage per second over <ANbf,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Breathes a cone of fire at enemy units, dealing <ANbf,DataA2> initial damage. Units that have Drunken Haze on them will ignite and burn for <ANbf,DataE2> damage per second over <ANbf,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Breathes a cone of fire at enemy units, dealing <ANbf,DataA3> initial damage. Units that have Drunken Haze on them will ignite and burn for <ANbf,DataE3> damage per second over <ANbf,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Breath of Fire - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "F";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -4182,9 +4806,19 @@ namespace War3Api.Object
         protected virtual BrewmasterDrunkenBrawler LoadBrewmasterDrunkenBrawler(ObjectDatabaseBase db)
         {
             var ability = new BrewmasterDrunkenBrawler(db);
+            ability.TextName = "Drunken Brawler";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Drunken Brawler - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Drunken Brawler - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Drunken Brawler - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Gives a <ANdb,DataD1,%>% chance to dodge an attack and a <ANdb,DataA1>% chance to deal <ANdb,DataB1> times total damage.";
+            ability.TextTooltipNormalExtended[2] = "Gives a <ANdb,DataD2,%>% chance to dodge an attack and a <ANdb,DataA2>% chance to deal <ANdb,DataB2> times total damage.";
+            ability.TextTooltipNormalExtended[3] = "Gives a <ANdb,DataD3,%>% chance to dodge an attack and a <ANdb,DataA3>% chance to deal <ANdb,DataB3> times total damage.";
+            ability.TextTooltipLearn = "Learn Drunken Brawler - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -4260,9 +4894,20 @@ namespace War3Api.Object
         protected virtual BrewmasterDrunkenHaze LoadBrewmasterDrunkenHaze(ObjectDatabaseBase db)
         {
             var ability = new BrewmasterDrunkenHaze(db);
+            ability.TextName = "Drunken Haze";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Drunken Haze - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Drunken Haze - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Drunken Haze - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Drenches enemy units in alcohol, causing their movement speed to be reduced by <ANdh,DataC1,%>%, and have a <ANdh,DataB1,%>% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |nLasts <ANdh,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Drenches enemy units in alcohol, causing their movement speed to be reduced by <ANdh,DataC2,%>%, and have a <ANdh,DataB2,%>% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |nLasts <ANdh,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Drenches enemy units in alcohol, causing their movement speed to be reduced by <ANdh,DataC3,%>%, and have a <ANdh,DataB3,%>% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |nLasts <ANdh,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Drunken Haze - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "D";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -4330,9 +4975,16 @@ namespace War3Api.Object
         protected virtual BrewmasterStormEarthAndFire LoadBrewmasterStormEarthAndFire(ObjectDatabaseBase db)
         {
             var ability = new BrewmasterStormEarthAndFire(db);
+            ability.TextName = "Storm, Earth, And Fire";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Storm, Earth, And Fire";
+            ability.TextTooltipNormalExtended[1] = "Splits the Brewmaster into elements, forming 3 specialized warriors. If any of them survive until the end of their summoned timer, the Brewmaster is reborn. |nLasts <ANef,HeroDur1> seconds.";
+            ability.TextTooltipLearn = "Learn Storm";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "E";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -4388,9 +5040,16 @@ namespace War3Api.Object
         protected virtual PitLordDoom LoadPitLordDoom(ObjectDatabaseBase db)
         {
             var ability = new PitLordDoom(db);
+            ability.TextName = "Doom";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Doom";
+            ability.TextTooltipNormalExtended[1] = "Marks a target unit for the manifestation of a Demon. The afflicted unit cannot cast spells and will take <ANdo,DataA1> damage per second until it dies. Upon its death, a great Demon will spawn from its corpse. Doom cannot be dispelled or cancelled.";
+            ability.TextTooltipLearn = "Learn Doom";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "D";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -4466,9 +5125,20 @@ namespace War3Api.Object
         protected virtual PitLordHowlOfTerror LoadPitLordHowlOfTerror(ObjectDatabaseBase db)
         {
             var ability = new PitLordHowlOfTerror(db);
+            ability.TextName = "Howl of Terror";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Howl of Terror - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Howl of Terror - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Howl of Terror - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "The Pit Lord lets loose a terrifying howl that reduces nearby enemy units' attack damage by <ANht,DataA1,%>% for <ANht,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "The Pit Lord lets loose a terrifying howl that reduces nearby enemy units' attack damage by <ANht,DataA2,%>% for <ANht,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "The Pit Lord lets loose a terrifying howl that reduces nearby enemy units' attack damage by <ANht,DataA3,%>% for <ANht,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Howl of Terror - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "T";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -4548,9 +5218,19 @@ namespace War3Api.Object
         protected virtual PitLordCleavingAttack LoadPitLordCleavingAttack(ObjectDatabaseBase db)
         {
             var ability = new PitLordCleavingAttack(db);
+            ability.TextName = "Cleaving Attack";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Cleaving Attack - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Cleaving Attack - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Cleaving Attack - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "The Pit Lord strikes with such force that <ANca,DataA1,%>% of his damage strikes through to enemies near the primary attacked unit.";
+            ability.TextTooltipNormalExtended[2] = "The Pit Lord strikes with such force that <ANca,DataA2,%>% of his damage strikes through to enemies near the primary attacked unit.";
+            ability.TextTooltipNormalExtended[3] = "The Pit Lord strikes with such force that <ANca,DataA3,%>% of his damage strikes through to enemies near the primary attacked unit.";
+            ability.TextTooltipLearn = "Learn Cleaving Attack - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -4606,9 +5286,20 @@ namespace War3Api.Object
         protected virtual PitLordRainOfFire LoadPitLordRainOfFire(ObjectDatabaseBase db)
         {
             var ability = new PitLordRainOfFire(db);
+            ability.TextName = "Rain of Fire";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Rain of Fire - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Rain of Fire - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Rain of Fire - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Calls down waves of fire that damage units in an area. Each wave deals <ANrf,DataB1> initial damage and <ANrf,DataE1> damage per second for <ANrf,Dur1> seconds. |nLasts for <ANrf,DataA1> waves.";
+            ability.TextTooltipNormalExtended[2] = "Calls down waves of fire that damage units in an area. Each wave deals <ANrf,DataB2> initial damage and <ANrf,DataE2> damage per second for <ANrf,Dur2> seconds. |nLasts for <ANrf,DataA2> waves.";
+            ability.TextTooltipNormalExtended[3] = "Calls down waves of fire that damage units in an area. Each wave deals <ANrf,DataB3> initial damage and <ANrf,DataE3> damage per second for <ANrf,Dur3> seconds. |nLasts for <ANrf,DataA3> waves.";
+            ability.TextTooltipLearn = "Learn Rain of Fire - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "F";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -4684,9 +5375,23 @@ namespace War3Api.Object
         protected virtual PriestessSearingArrows LoadPriestessSearingArrows(ObjectDatabaseBase db)
         {
             var ability = new PriestessSearingArrows(db);
+            ability.TextName = "Searing Arrows";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Searing Arrows - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Searing Arrows - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Searing Arrows - [|cffffcc00Level 3|r]";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Adds <AHfa,DataA1> bonus fire damage to an attack against enemies, but drains mana with each shot fired.";
+            ability.TextTooltipNormalExtended[2] = "Adds <AHfa,DataA2> bonus fire damage to an attack, but drains mana with each shot fired.";
+            ability.TextTooltipNormalExtended[3] = "Adds <AHfa,DataA3> bonus fire damage to an attack, but drains mana with each shot fired.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextTooltipLearn = "Learn Searing Arrows - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "R";
+            ability.TextHotkeyNormalRaw = "R";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -4742,9 +5447,20 @@ namespace War3Api.Object
         protected virtual PriestessScout LoadPriestessScout(ObjectDatabaseBase db)
         {
             var ability = new PriestessScout(db);
+            ability.TextName = "Scout";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Scout - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Scout - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Scout - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Summons an Owl Scout, which can be used to scout.|nCan see invisible units. |nLasts <AEst,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Summons a fast Owl Scout, which can be used to scout.|nCan see invisible units. |nLasts <AEst,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Summons a very fast Owl Scout, which can be used to scout.|nCan see invisible units. |nLasts <AEst,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Scout - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "C";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -4804,9 +5520,16 @@ namespace War3Api.Object
         protected virtual PriestessStarfall LoadPriestessStarfall(ObjectDatabaseBase db)
         {
             var ability = new PriestessStarfall(db);
+            ability.TextName = "Starfall";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Starfall";
+            ability.TextTooltipNormalExtended[1] = "Calls down waves of falling stars that damage nearby enemy units. Each wave deals <AEsf,DataA1> damage. |nLasts for <AEsf,Dur1> seconds.";
+            ability.TextTooltipLearn = "Learn Starfall";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "F";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -4870,9 +5593,19 @@ namespace War3Api.Object
         protected virtual PriestessTrueshotAura LoadPriestessTrueshotAura(ObjectDatabaseBase db)
         {
             var ability = new PriestessTrueshotAura(db);
+            ability.TextName = "Trueshot Aura";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Trueshot Aura - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Trueshot Aura - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Trueshot Aura - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "An aura that gives friendly nearby units a <AEar,DataA1,%>% bonus damage to their ranged attacks.";
+            ability.TextTooltipNormalExtended[2] = "An aura that gives friendly nearby units a <AEar,DataA2,%>% bonus damage to their ranged attacks.";
+            ability.TextTooltipNormalExtended[3] = "An aura that gives friendly nearby units a <AEar,DataA3,%>% bonus damage to their ranged attacks.";
+            ability.TextTooltipLearn = "Learn Trueshot Aura - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -4940,9 +5673,19 @@ namespace War3Api.Object
         protected virtual ChieftainEnduranceAura LoadChieftainEnduranceAura(ObjectDatabaseBase db)
         {
             var ability = new ChieftainEnduranceAura(db);
+            ability.TextName = "Endurance Aura";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Endurance Aura - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Endurance Aura - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Endurance Aura - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Increases nearby friendly units' movement speed by <AOae,DataA1,%>% and attack rate by <AOae,DataB1,%>%.";
+            ability.TextTooltipNormalExtended[2] = "Increases nearby friendly units' movement speed by <AOae,DataA2,%>% and attack rate by <AOae,DataB2,%>%.";
+            ability.TextTooltipNormalExtended[3] = "Increases nearby friendly units' movement speed by <AOae,DataA3,%>% and attack rate by <AOae,DataB3,%>%.";
+            ability.TextTooltipLearn = "Learn Endurance Aura - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -5002,9 +5745,15 @@ namespace War3Api.Object
         protected virtual ChieftainReincarnation LoadChieftainReincarnation(ObjectDatabaseBase db)
         {
             var ability = new ChieftainReincarnation(db);
+            ability.TextName = "Reincarnation";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Reincarnation";
+            ability.TextTooltipNormalExtended[1] = "When killed, the Tauren Chieftain will come back to life. Reincarnation has a <AOre,Cool1> second cooldown.";
+            ability.TextTooltipLearn = "Learn Reincarnation";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -5060,9 +5809,20 @@ namespace War3Api.Object
         protected virtual ChieftainShockWave LoadChieftainShockWave(ObjectDatabaseBase db)
         {
             var ability = new ChieftainShockWave(db);
+            ability.TextName = "Shockwave";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Shockwave - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Shockwave - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Shockwave - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "A wave of force that ripples outward, causing <AOsh,DataA1> damage to land units in a line.";
+            ability.TextTooltipNormalExtended[2] = "A wave of force that ripples outward, causing <AOsh,DataA2> damage to land units in a line.";
+            ability.TextTooltipNormalExtended[3] = "A wave of force that ripples outward, causing <AOsh,DataA3> damage to land units in a line.";
+            ability.TextTooltipLearn = "Learn Shockwave - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "W";
+            ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -5130,9 +5890,20 @@ namespace War3Api.Object
         protected virtual ChieftainWarStomp LoadChieftainWarStomp(ObjectDatabaseBase db)
         {
             var ability = new ChieftainWarStomp(db);
+            ability.TextName = "War Stomp";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "War Stomp - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "War Stomp - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "War Stomp - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Slams the ground, dealing <AOws,DataA1> damage to nearby enemy land units and stunning them for <AOws,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Slams the ground, dealing <AOws,DataA2> damage to nearby enemy land units and stunning them for <AOws,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Slams the ground, dealing <AOws,DataA3> damage to nearby enemy land units and stunning them for <AOws,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn War Stomp - [|cffffcc00Level %d|r].";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "T";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -5188,9 +5959,20 @@ namespace War3Api.Object
         protected virtual ShadowHunterHealingWave LoadShadowHunterHealingWave(ObjectDatabaseBase db)
         {
             var ability = new ShadowHunterHealingWave(db);
+            ability.TextName = "Healing Wave";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Healing Wave - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Healing Wave - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Healing Wave - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Calls forth a wave of healing energy that bounces up to <AOhw,DataB1> times, healing <AOhw,DataA1> damage on the primary target. Each jump heals less damage.";
+            ability.TextTooltipNormalExtended[2] = "Calls forth a wave of healing energy that bounces up to <AOhw,DataB2> times, healing <AOhw,DataA2> damage on the primary target. Each jump heals less damage.";
+            ability.TextTooltipNormalExtended[3] = "Calls forth a wave of healing energy that bounces up to <AOhw,DataB3> times, healing <AOhw,DataA3> damage on the primary target. Each jump heals less damage.";
+            ability.TextTooltipLearn = "Learn Healing Wave - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "E";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -5254,9 +6036,20 @@ namespace War3Api.Object
         protected virtual ShadowHunterHex LoadShadowHunterHex(ObjectDatabaseBase db)
         {
             var ability = new ShadowHunterHex(db);
+            ability.TextName = "Hex";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Hex - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Hex - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Hex - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Transforms an enemy unit into a random critter for <AOhx,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Transforms an enemy unit into a random critter for <AOhx,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Transforms an enemy unit into a random critter for <AOhx,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Hex - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "X";
+            ability.TextHotkeyNormalRaw = "X";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -5328,9 +6121,20 @@ namespace War3Api.Object
         protected virtual ShadowHunterSerpentWard LoadShadowHunterSerpentWard(ObjectDatabaseBase db)
         {
             var ability = new ShadowHunterSerpentWard(db);
+            ability.TextName = "Serpent Ward";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Serpent Ward - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Serpent Ward - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Serpent Ward - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Summons an immobile serpentine ward to attack the Shadow Hunter's enemies. The ward has <osp1,realHP> hit points, is magic immune, and deals <osp1,mindmg1> - <osp1,maxdmg1> damage. |nLasts <AOsw,Dur1> seconds. |n|n|cffffcc00Attacks land and air units.|r";
+            ability.TextTooltipNormalExtended[2] = "Summons an immobile serpentine ward to attack the Shadow Hunter's enemies. The ward has <osp2,realHP> hit points, is magic immune, and deals <osp2,mindmg1> - <osp2,maxdmg1> damage. |nLasts <AOsw,Dur1> seconds. |n|n|cffffcc00Attacks land and air units.|r";
+            ability.TextTooltipNormalExtended[3] = "Summons an immobile serpentine ward to attack the Shadow Hunter's enemies. The ward has <osp3,realHP> hit points, is magic immune, and deals <osp3,mindmg1> - <osp3,maxdmg1> damage. |nLasts <AOsw,Dur1> seconds. |n|n|cffffcc00Attacks land and air units.|r";
+            ability.TextTooltipLearn = "Learn Serpent Ward - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "W";
+            ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -5390,9 +6194,16 @@ namespace War3Api.Object
         protected virtual ShadowHunterVoodooo LoadShadowHunterVoodooo(ObjectDatabaseBase db)
         {
             var ability = new ShadowHunterVoodooo(db);
+            ability.TextName = "Big Bad Voodoo";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Big Bad Voodoo";
+            ability.TextTooltipNormalExtended[1] = "Turns all friendly units invulnerable in an area around the Shadow Hunter. |nThe Shadow Hunter does not turn invulnerable. |nLasts <AOvd,Dur1> seconds.";
+            ability.TextTooltipLearn = "Learn Big Bad Voodoo";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "V";
+            ability.TextHotkeyNormalRaw = "V";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -5444,9 +6255,20 @@ namespace War3Api.Object
         protected virtual WardenBlink LoadWardenBlink(ObjectDatabaseBase db)
         {
             var ability = new WardenBlink(db);
+            ability.TextName = "Blink";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Blink - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Blink - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Blink - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Teleports the Warden a short distance, allowing her to move in and out of combat.";
+            ability.TextTooltipNormalExtended[2] = "Teleports the Warden a short distance, allowing her to move in and out of combat.";
+            ability.TextTooltipNormalExtended[3] = "Teleports the Warden a short distance, allowing her to move in and out of combat.";
+            ability.TextTooltipLearn = "Learn Blink - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "B";
+            ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -5469,8 +6291,8 @@ namespace War3Api.Object
             ability.StatsDurationHero[3] = 0f;
             ability.StatsDurationHero[4] = 0f;
             ability.StatsCooldown[1] = 10f;
-            ability.StatsCooldown[2] = 7f;
-            ability.StatsCooldown[3] = 4f;
+            ability.StatsCooldown[2] = 5f;
+            ability.StatsCooldown[3] = 2.5f;
             ability.StatsCooldown[4] = 4f;
             ability.StatsManaCost[1] = 50;
             ability.StatsManaCost[2] = 10;
@@ -5506,9 +6328,20 @@ namespace War3Api.Object
         protected virtual WardenFanOfKnives LoadWardenFanOfKnives(ObjectDatabaseBase db)
         {
             var ability = new WardenFanOfKnives(db);
+            ability.TextName = "Fan of Knives";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Fan of Knives - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Fan of Knives - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Fan of Knives - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "The Warden hurls a flurry of knives, damaging nearby enemies. Each knife does <AEfk,DataA1> damage.";
+            ability.TextTooltipNormalExtended[2] = "The Warden hurls a flurry of knives, damaging nearby enemies. Each knife does <AEfk,DataA2> damage.";
+            ability.TextTooltipNormalExtended[3] = "The Warden hurls a flurry of knives damaging, nearby enemies. Each knife does <AEfk,DataA3> damage.";
+            ability.TextTooltipLearn = "Learn Fan of Knives - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "F";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -5558,9 +6391,9 @@ namespace War3Api.Object
             ability.DataDamagePerTarget[2] = 125f;
             ability.DataDamagePerTarget[3] = 190f;
             ability.DataDamagePerTarget[4] = 180f;
-            ability.DataMaximumTotalDamage[1] = 300f;
-            ability.DataMaximumTotalDamage[2] = 625f;
-            ability.DataMaximumTotalDamage[3] = 950f;
+            ability.DataMaximumTotalDamage[1] = 375f;
+            ability.DataMaximumTotalDamage[2] = 750f;
+            ability.DataMaximumTotalDamage[3] = 1330f;
             ability.DataMaximumTotalDamage[4] = 950f;
             ability.DataMaximumNumberOfTargets[1] = 0;
             ability.DataMaximumNumberOfTargets[2] = 0;
@@ -5576,9 +6409,20 @@ namespace War3Api.Object
         protected virtual WardenShadowStrike LoadWardenShadowStrike(ObjectDatabaseBase db)
         {
             var ability = new WardenShadowStrike(db);
+            ability.TextName = "Shadow Strike";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Shadow Strike - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Shadow Strike - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Shadow Strike - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Hurls a poisoned dagger at a target enemy unit, dealing <AEsh,DataE1> initial damage, and <AEsh,DataA1> damage every <AEsh,Cast1> seconds for <AEsh,Dur1> seconds. The poison slows the movement speed of the targeted unit for a short duration.";
+            ability.TextTooltipNormalExtended[2] = "Hurls a poisoned dagger at a target enemy unit, dealing <AEsh,DataE2> initial damage, and <AEsh,DataA2> damage every <AEsh,Cast2> seconds for <AEsh,Dur2> seconds. The poison slows the movement speed of the targeted unit for a short duration.";
+            ability.TextTooltipNormalExtended[3] = "Hurls a poisoned dagger at a target enemy unit, dealing <AEsh,DataE3> initial damage, and <AEsh,DataA3> damage every <AEsh,Cast3> seconds for <AEsh,Dur3> seconds. The poison slows the movement speed of the targeted unit for a short duration.";
+            ability.TextTooltipLearn = "Learn Shadow Strike - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "D";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -5650,9 +6494,16 @@ namespace War3Api.Object
         protected virtual WardenSpiritOfVengeance LoadWardenSpiritOfVengeance(ObjectDatabaseBase db)
         {
             var ability = new WardenSpiritOfVengeance(db);
+            ability.TextName = "Vengeance";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Vengeance";
+            ability.TextTooltipNormalExtended[1] = "Creates a powerful avatar that summons invulnerable spirits from nearby corpses to attack your enemies. When the Avatar of Vengeance dies, the spirits vanish. |nLasts <AEsv,Dur1> seconds.";
+            ability.TextTooltipLearn = "Learn Vengeance";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "V";
+            ability.TextHotkeyNormalRaw = "V";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -5712,9 +6563,20 @@ namespace War3Api.Object
         protected virtual AlchemistAcidBomb LoadAlchemistAcidBomb(ObjectDatabaseBase db)
         {
             var ability = new AlchemistAcidBomb(db);
+            ability.TextName = "Acid Bomb";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Acid Bomb - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Acid Bomb - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Acid Bomb - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor by <ANab,DataC1>; deals <ANab,DataD1> damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts <ANab,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor by <ANab,DataC2>; deals <ANab,DataD2> damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts <ANab,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor by <ANab,DataC3>; deals <ANab,DataD3> damage per second to the primary target; deals slightly less damage to nearby targets.|nLasts <ANab,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Acid Bomb - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "B";
+            ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -5790,9 +6652,20 @@ namespace War3Api.Object
         protected virtual AlchemistChemicalRage LoadAlchemistChemicalRage(ObjectDatabaseBase db)
         {
             var ability = new AlchemistChemicalRage(db);
+            ability.TextName = "Chemical Rage";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Chemical Rage - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Chemical Rage - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Chemical Rage - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "The Alchemist causes his Ogre to enter a chemically induced rage, increasing movement rate by <ANcr,DataE1,%>% and increasing attack rate by <ANcr,DataF1,%>% for <ANcr,HeroDur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "The Alchemist causes his Ogre to enter a chemically induced rage, increasing movement rate by <ANcr,DataE2,%>% and increasing attack rate by <ANcr,DataF2,%>% for <ANcr,HeroDur1> seconds.";
+            ability.TextTooltipNormalExtended[3] = "The Alchemist causes his Ogre to enter a chemically induced rage, increasing movement rate by <ANcr,DataE3,%>% and increasing attack rate by <ANcr,DataF3,%>% for <ANcr,HeroDur1> seconds.";
+            ability.TextTooltipLearn = "Learn Chemical Rage - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "R";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -5872,9 +6745,20 @@ namespace War3Api.Object
         protected virtual AlchemistHealingSpray LoadAlchemistHealingSpray(ObjectDatabaseBase db)
         {
             var ability = new AlchemistHealingSpray(db);
+            ability.TextName = "Healing Spray";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Healing Spray - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Healing Spray - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Healing Spray - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Sprays <ANhs,DataF1> waves of healing mist; each wave heals <ANhs,DataA1> damage to all friendly units in an area.";
+            ability.TextTooltipNormalExtended[2] = "Sprays <ANhs,DataF2> waves of healing mist; each wave heals <ANhs,DataA2> damage to all friendly units in an area.";
+            ability.TextTooltipNormalExtended[3] = "Sprays <ANhs,DataF3> waves of healing mist; each wave heals <ANhs,DataA3> damage to all friendly units in an area.";
+            ability.TextTooltipLearn = "Learn Healing Spray - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "E";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -5950,9 +6834,16 @@ namespace War3Api.Object
         protected virtual AlchemistTransmute LoadAlchemistTransmute(ObjectDatabaseBase db)
         {
             var ability = new AlchemistTransmute(db);
+            ability.TextName = "Transmute";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Transmute";
+            ability.TextTooltipNormalExtended[1] = "Kills a target unit instantly, transforming it into gold which is added to your available gold!|nTransmute cannot be used on Heroes, or creeps above level <ANtm,DataC1>.";
+            ability.TextTooltipLearn = "Learn Transmute";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "T";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -6020,9 +6911,20 @@ namespace War3Api.Object
         protected virtual TinkererEngineeringUpgrade LoadTinkererEngineeringUpgrade(ObjectDatabaseBase db)
         {
             var ability = new TinkererEngineeringUpgrade(db);
+            ability.TextName = "Engineering Upgrade";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Engineering Upgrade - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Engineering Upgrade - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Engineering Upgrade - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Improves other Tinker abilities, gives <ANeg,DataB1> attack damage and increases Tinker movement speed by <ANeg,DataA1,%>%.";
+            ability.TextTooltipNormalExtended[2] = "Improves other Tinker abilities, gives <ANeg,DataB2> attack damage and increases Tinker movement speed by <ANeg,DataA2,%>%.";
+            ability.TextTooltipNormalExtended[3] = "Improves other Tinker abilities, gives <ANeg,DataB3> attack damage and increases Tinker movement speed by <ANeg,DataA3,%>%.";
+            ability.TextTooltipLearn = "Learn Engineering Upgrade - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "E";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -6098,9 +7000,20 @@ namespace War3Api.Object
         protected virtual TinkererClusterRocketsLevel0 LoadTinkererClusterRocketsLevel0(ObjectDatabaseBase db)
         {
             var ability = new TinkererClusterRocketsLevel0(db);
+            ability.TextName = "Cluster Rockets";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Cluster Rockets - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Cluster Rockets - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Cluster Rockets - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Bombards an area with rockets, dealing up to 45 damage to nearby enemy units and stunning them for <ANcs,Dur1> second.";
+            ability.TextTooltipNormalExtended[2] = "Bombards an area with rockets, dealing up to 75 damage to nearby enemy units and stunning them for <ANcs,Dur2> second.";
+            ability.TextTooltipNormalExtended[3] = "Bombards an area with rockets, dealing up to 110 damage to nearby enemy units and stunning them for <ANcs,Dur3> second.";
+            ability.TextTooltipLearn = "Learn Cluster Rockets - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "R";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -6176,9 +7089,21 @@ namespace War3Api.Object
         protected virtual TinkererClusterRocketsLevel1 LoadTinkererClusterRocketsLevel1(ObjectDatabaseBase db)
         {
             var ability = new TinkererClusterRocketsLevel1(db);
+            ability.TextName = "Cluster Rockets";
+            ability.TextEditorSuffix = " (Upgrade Level 1)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Cluster Rockets - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Cluster Rockets - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Cluster Rockets - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Bombards an area with rockets, dealing up to 45 damage to nearby enemy units and stunning them for <ANc1,Dur1> second.";
+            ability.TextTooltipNormalExtended[2] = "Bombards an area with rockets, dealing up to 75 damage to nearby enemy units and stunning them for <ANc1,Dur2> second.";
+            ability.TextTooltipNormalExtended[3] = "Bombards an area with rockets, dealing up to 110 damage to nearby enemy units and stunning them for <ANc1,Dur3> second.";
+            ability.TextTooltipLearn = "Learn Cluster Rockets - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "R";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -6254,9 +7179,21 @@ namespace War3Api.Object
         protected virtual TinkererClusterRocketsLevel2 LoadTinkererClusterRocketsLevel2(ObjectDatabaseBase db)
         {
             var ability = new TinkererClusterRocketsLevel2(db);
+            ability.TextName = "Cluster Rockets";
+            ability.TextEditorSuffix = " (Upgrade Level 2)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Cluster Rockets - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Cluster Rockets - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Cluster Rockets - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Bombards an area with rockets, dealing up to 45 damage to nearby enemy units and stunning them for <ANc2,Dur1> second.";
+            ability.TextTooltipNormalExtended[2] = "Bombards an area with rockets, dealing up to 75 damage to nearby enemy units and stunning them for <ANc2,Dur2> second.";
+            ability.TextTooltipNormalExtended[3] = "Bombards an area with rockets, dealing up to 110 damage to nearby enemy units and stunning them for <ANc2,Dur3> second.";
+            ability.TextTooltipLearn = "Learn Cluster Rockets - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "R";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -6332,9 +7269,21 @@ namespace War3Api.Object
         protected virtual TinkererClusterRocketsLevel3 LoadTinkererClusterRocketsLevel3(ObjectDatabaseBase db)
         {
             var ability = new TinkererClusterRocketsLevel3(db);
+            ability.TextName = "Cluster Rockets";
+            ability.TextEditorSuffix = " (Upgrade Level 3)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Cluster Rockets - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Cluster Rockets - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Cluster Rockets - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Bombards an area with rockets, dealing up to 45 damage to nearby enemy units and stunning them for <ANc3,Dur1> second.";
+            ability.TextTooltipNormalExtended[2] = "Bombards an area with rockets, dealing up to 75 damage to nearby enemy units and stunning them for <ANc3,Dur2> second.";
+            ability.TextTooltipNormalExtended[3] = "Bombards an area with rockets, dealing up to 110 damage to nearby enemy units and stunning them for <ANc3,Dur3> second.";
+            ability.TextTooltipLearn = "Learn Cluster Rockets - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "R";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -6410,9 +7359,19 @@ namespace War3Api.Object
         protected virtual TinkererRoboGoblinLevel0 LoadTinkererRoboGoblinLevel0(ObjectDatabaseBase db)
         {
             var ability = new TinkererRoboGoblinLevel0(db);
+            ability.TextName = "Robo-Goblin";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Robo-Goblin";
+            ability.TextTooltipTurnOff[1] = "Revert to Tinker Form";
+            ability.TextTooltipNormalExtended[1] = "Transforms the Tinker into a Robo-Goblin, a powerful armored form that has the following traits:|n|n- <ANrg,DataE1> bonus Strength and <ANrg,DataF1> bonus armor.|n- Use of the Demolish ability, which grants bonus damage against buildings.|n- The Tinker becomes mechanical, rendering him immune to most forms of stun, most offensive spells, and several beneficial spells.";
+            ability.TextTooltipTurnOffExtended[1] = "Returns to normal Tinker form, losing the benefits of Robo-Goblin but once again becoming organic.";
+            ability.TextTooltipLearn = "Learn Robo-Goblin";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "B";
+            ability.TextHotkeyNormalRaw = "B";
+            ability.TextHotkeyTurnOffRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -6492,9 +7451,20 @@ namespace War3Api.Object
         protected virtual TinkererRoboGoblinLevel1 LoadTinkererRoboGoblinLevel1(ObjectDatabaseBase db)
         {
             var ability = new TinkererRoboGoblinLevel1(db);
+            ability.TextName = "Robo-Goblin";
+            ability.TextEditorSuffix = " (Upgrade Level 1)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Robo-Goblin";
+            ability.TextTooltipTurnOff[1] = "Revert to Tinker Form";
+            ability.TextTooltipNormalExtended[1] = "Transforms the Tinker into a Robo-Goblin, a powerful armored form that has the following traits:|n|n- <ANg1,DataE1> bonus Strength and <ANg1,DataF1> bonus armor.|n- Use of the Demolish ability, which grants bonus damage against buildings.|n- The Tinker becomes mechanical, rendering him immune to most forms of stun, most offensive spells, and several beneficial spells.";
+            ability.TextTooltipTurnOffExtended[1] = "Returns to normal Tinker form, losing the benefits of Robo-Goblin but once again becoming organic.";
+            ability.TextTooltipLearn = "Learn Robo-Goblin";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "B";
+            ability.TextHotkeyNormalRaw = "B";
+            ability.TextHotkeyTurnOffRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -6574,9 +7544,20 @@ namespace War3Api.Object
         protected virtual TinkererRoboGoblinLevel2 LoadTinkererRoboGoblinLevel2(ObjectDatabaseBase db)
         {
             var ability = new TinkererRoboGoblinLevel2(db);
+            ability.TextName = "Robo-Goblin";
+            ability.TextEditorSuffix = " (Upgrade Level 2)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Robo-Goblin";
+            ability.TextTooltipTurnOff[1] = "Revert to Tinker Form";
+            ability.TextTooltipNormalExtended[1] = "Transforms the Tinker into a Robo-Goblin, a powerful armored form that has the following traits:|n|n- <ANg2,DataE1> bonus Strength and <ANg2,DataF1> bonus armor.|n- Use of the Demolish ability, which grants bonus damage against buildings.|n- The Tinker becomes mechanical, rendering him immune to most forms of stun, most offensive spells, and several beneficial spells.";
+            ability.TextTooltipTurnOffExtended[1] = "Returns to normal Tinker form, losing the benefits of Robo-Goblin but once again becoming organic.";
+            ability.TextTooltipLearn = "Learn Robo-Goblin";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "B";
+            ability.TextHotkeyNormalRaw = "B";
+            ability.TextHotkeyTurnOffRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -6656,9 +7637,20 @@ namespace War3Api.Object
         protected virtual TinkererRoboGoblinLevel3 LoadTinkererRoboGoblinLevel3(ObjectDatabaseBase db)
         {
             var ability = new TinkererRoboGoblinLevel3(db);
+            ability.TextName = "Robo-Goblin";
+            ability.TextEditorSuffix = " (Upgrade Level 3)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Robo-Goblin";
+            ability.TextTooltipTurnOff[1] = "Revert to Tinker Form";
+            ability.TextTooltipNormalExtended[1] = "Transforms the Tinker into a Robo-Goblin, a powerful armored form that has the following traits:|n|n- <ANg3,DataE1> bonus Strength and <ANg3,DataF1> bonus armor.|n- Use of the Demolish ability, which grants bonus damage against buildings.|n- The Tinker becomes mechanical, rendering him immune to most forms of stun, most offensive spells, and several beneficial spells.";
+            ability.TextTooltipTurnOffExtended[1] = "Returns to normal Tinker form, losing the benefits of Robo-Goblin but once again becoming organic.";
+            ability.TextTooltipLearn = "Learn Robo-Goblin";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "B";
+            ability.TextHotkeyNormalRaw = "B";
+            ability.TextHotkeyTurnOffRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -6738,9 +7730,20 @@ namespace War3Api.Object
         protected virtual TinkererSummonFactoryLevel0 LoadTinkererSummonFactoryLevel0(ObjectDatabaseBase db)
         {
             var ability = new TinkererSummonFactoryLevel0(db);
+            ability.TextName = "Pocket Factory";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Pocket Factory - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Pocket Factory - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Pocket Factory - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have <ncgb,realHP> hit points, deal <ncgb,mindmg1> - <ncgb,maxdmg1> damage, and explode upon death, causing up to <Asdg,DataB1> damage to nearby enemy units.|nFactory lasts <ANsy,Dur1> seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r";
+            ability.TextTooltipNormalExtended[2] = "Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have <ncg2,realHP> hit points, deal <ncg2,mindmg1> - <ncg2,maxdmg1> damage, and explode upon death, causing up to <Asd2,DataB1> damage to nearby enemy units.|nFactory lasts <ANsy,Dur2> seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r";
+            ability.TextTooltipNormalExtended[3] = "Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have <ncg3,realHP> hit points, deal <ncg3,mindmg1> - <ncg3,maxdmg1> damage, and explode upon death, causing up to <Asd3,DataB1> damage to nearby enemy units.|nFactory lasts <ANsy,Dur3> seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r";
+            ability.TextTooltipLearn = "Learn Pocket Factory - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "F";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -6816,9 +7819,21 @@ namespace War3Api.Object
         protected virtual TinkererSummonFactoryLevel1 LoadTinkererSummonFactoryLevel1(ObjectDatabaseBase db)
         {
             var ability = new TinkererSummonFactoryLevel1(db);
+            ability.TextName = "Pocket Factory";
+            ability.TextEditorSuffix = " (Upgrade 1)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Pocket Factory - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Pocket Factory - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Pocket Factory - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have <ncgb,realHP> hit points, deal <ncgb,mindmg1> - <ncgb,maxdmg1> damage, and explode upon death, causing up to <Asdg,DataB1> damage to nearby enemy units.|nFactory lasts <ANs1,Dur1> seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r";
+            ability.TextTooltipNormalExtended[2] = "Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have <ncg2,realHP> hit points, deal <ncg2,mindmg1> - <ncg2,maxdmg1> damage, and explode upon death, causing up to <Asd2,DataB1> damage to nearby enemy units.|nFactory lasts <ANs1,Dur2> seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r";
+            ability.TextTooltipNormalExtended[3] = "Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have <ncg3,realHP> hit points, deal <ncg3,mindmg1> - <ncg3,maxdmg1> damage, and explode upon death, causing up to <Asd3,DataB1> damage to nearby enemy units.|nFactory lasts <ANs1,Dur3> seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r";
+            ability.TextTooltipLearn = "Learn Pocket Factory - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "F// Pocket Factory";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -6894,9 +7909,21 @@ namespace War3Api.Object
         protected virtual TinkererSummonFactoryLevel2 LoadTinkererSummonFactoryLevel2(ObjectDatabaseBase db)
         {
             var ability = new TinkererSummonFactoryLevel2(db);
+            ability.TextName = "Pocket Factory";
+            ability.TextEditorSuffix = " (Upgrade 2)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Pocket Factory - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Pocket Factory - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Pocket Factory - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have <ncgb,realHP> hit points, deal <ncgb,mindmg1> - <ncgb,maxdmg1> damage, and explode upon death, causing up to <Asdg,DataB1> damage to nearby enemy units.|nFactory lasts <ANs2,Dur1> seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r";
+            ability.TextTooltipNormalExtended[2] = "Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have <ncg2,realHP> hit points, deal <ncg2,mindmg1> - <ncg2,maxdmg1> damage, and explode upon death, causing up to <Asd2,DataB1> damage to nearby enemy units.|nFactory lasts <ANs2,Dur2> seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r";
+            ability.TextTooltipNormalExtended[3] = "Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have <ncg3,realHP> hit points, deal <ncg3,mindmg1> - <ncg3,maxdmg1> damage, and explode upon death, causing up to <Asd3,DataB1> damage to nearby enemy units.|nFactory lasts <ANs2,Dur3> seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r";
+            ability.TextTooltipLearn = "Learn Pocket Factory - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "F";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -6972,9 +7999,21 @@ namespace War3Api.Object
         protected virtual TinkererSummonFactoryLevel3 LoadTinkererSummonFactoryLevel3(ObjectDatabaseBase db)
         {
             var ability = new TinkererSummonFactoryLevel3(db);
+            ability.TextName = "Pocket Factory";
+            ability.TextEditorSuffix = " (Upgrade 3)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Pocket Factory - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Pocket Factory - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Pocket Factory - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have <ncgb,realHP> hit points, deal <ncgb,mindmg1> - <ncgb,maxdmg1> damage, and explode upon death, causing up to <Asdg,DataB1> damage to nearby enemy units.|nFactory lasts <ANs3,Dur1> seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r";
+            ability.TextTooltipNormalExtended[2] = "Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have <ncg2,realHP> hit points, deal <ncg2,mindmg1> - <ncg2,maxdmg1> damage, and explode upon death, causing up to <Asd2,DataB1> damage to nearby enemy units.|nFactory lasts <ANs3,Dur2> seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r";
+            ability.TextTooltipNormalExtended[3] = "Creates a factory which automatically constructs Clockwerk Goblins.|n|nClockwerk Goblins have <ncg3,realHP> hit points, deal <ncg3,mindmg1> - <ncg3,maxdmg1> damage, and explode upon death, causing up to <Asd3,DataB1> damage to nearby enemy units.|nFactory lasts <ANs3,Dur3> seconds. |n|n|cffffcc00Clockwerk Goblins attack land units only.|r";
+            ability.TextTooltipLearn = "Learn Pocket Factory - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "F";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -7050,9 +8089,13 @@ namespace War3Api.Object
         protected virtual TinkererDemolishLevel0 LoadTinkererDemolishLevel0(ObjectDatabaseBase db)
         {
             var ability = new TinkererDemolishLevel0(db);
+            ability.TextName = "Demolish";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Demolish";
+            ability.TextTooltipNormalExtended[1] = "Causes attacks to do <ANde,DataB1> times normal damage to buildings.";
+            ability.TextHotkeyNormalRaw = "";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -7120,9 +8163,14 @@ namespace War3Api.Object
         protected virtual TinkererDemolishLevel1 LoadTinkererDemolishLevel1(ObjectDatabaseBase db)
         {
             var ability = new TinkererDemolishLevel1(db);
+            ability.TextName = "Demolish";
+            ability.TextEditorSuffix = " (Upgrade Level 1)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Demolish - Upgrade Level 1";
+            ability.TextTooltipNormalExtended[1] = "Causes attacks to do <ANd1,DataB1> times normal damage to buildings.";
+            ability.TextHotkeyNormalRaw = "";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -7190,9 +8238,14 @@ namespace War3Api.Object
         protected virtual TinkererDemolishLevel2 LoadTinkererDemolishLevel2(ObjectDatabaseBase db)
         {
             var ability = new TinkererDemolishLevel2(db);
+            ability.TextName = "Demolish";
+            ability.TextEditorSuffix = " (Upgrade Level 2)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Demolish - Upgrade Level 2";
+            ability.TextTooltipNormalExtended[1] = "Causes attacks to do <ANd2,DataB1> times normal damage to buildings.";
+            ability.TextHotkeyNormalRaw = "";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -7260,9 +8313,14 @@ namespace War3Api.Object
         protected virtual TinkererDemolishLevel3 LoadTinkererDemolishLevel3(ObjectDatabaseBase db)
         {
             var ability = new TinkererDemolishLevel3(db);
+            ability.TextName = "Demolish";
+            ability.TextEditorSuffix = " (Upgrade Level 3)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Demolish - Upgrade Level 3";
+            ability.TextTooltipNormalExtended[1] = "Causes attacks to do <ANd3,DataB1> times normal damage to buildings.";
+            ability.TextHotkeyNormalRaw = "";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -7330,9 +8388,20 @@ namespace War3Api.Object
         protected virtual FirelordIncinerate_ANic LoadFirelordIncinerate_ANic(ObjectDatabaseBase db)
         {
             var ability = new FirelordIncinerate_ANic(db);
+            ability.TextName = "Incinerate";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Incinerate - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Incinerate - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Incinerate - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Each attack made is enhanced with living flames that cling to the target. These flames add <ANic,DataA1> damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to <ANic,DataB1> damage to all nearby hostile units.";
+            ability.TextTooltipNormalExtended[2] = "Each attack made is enhanced with living flames that cling to the target. These flames add <ANic,DataA2> damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to <ANic,DataB2> damage to all nearby hostile units.";
+            ability.TextTooltipNormalExtended[3] = "Each attack made is enhanced with living flames that cling to the target. These flames add <ANic,DataA3> damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to <ANic,DataB3> damage to all nearby hostile units.";
+            ability.TextTooltipLearn = "Learn Incinerate - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "C";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -7408,9 +8477,23 @@ namespace War3Api.Object
         protected virtual FirelordIncinerate_ANia LoadFirelordIncinerate_ANia(ObjectDatabaseBase db)
         {
             var ability = new FirelordIncinerate_ANia(db);
+            ability.TextName = "Incinerate";
+            ability.TextEditorSuffix = " (Arrow)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Incinerate - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Incinerate - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Incinerate - [|cffffcc00Level 3|r]";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Each attack made is enhanced with living flames that cling to the target. These flames add <ANia,DataA1> damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to <ANia,DataB1> damage to all nearby hostile units.";
+            ability.TextTooltipNormalExtended[2] = "Each attack made is enhanced with living flames that cling to the target. These flames add <ANia,DataA2> damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to <ANia,DataB2> damage to all nearby hostile units.";
+            ability.TextTooltipNormalExtended[3] = "Each attack made is enhanced with living flames that cling to the target. These flames add <ANia,DataA3> damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing up to <ANia,DataB3> damage to all nearby hostile units.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextTooltipLearn = "Learn Incinerate - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "C";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -7436,10 +8519,10 @@ namespace War3Api.Object
             ability.StatsCooldown[2] = 0f;
             ability.StatsCooldown[3] = 0f;
             ability.StatsCooldown[4] = 0f;
-            ability.StatsManaCost[1] = 6;
-            ability.StatsManaCost[2] = 6;
-            ability.StatsManaCost[3] = 6;
-            ability.StatsManaCost[4] = 6;
+            ability.StatsManaCost[1] = 3;
+            ability.StatsManaCost[2] = 3;
+            ability.StatsManaCost[3] = 3;
+            ability.StatsManaCost[4] = 2;
             ability.StatsAreaOfEffect[1] = 0f;
             ability.StatsAreaOfEffect[2] = 0f;
             ability.StatsAreaOfEffect[3] = 0f;
@@ -7462,9 +8545,20 @@ namespace War3Api.Object
         protected virtual FirelordSoulBurn LoadFirelordSoulBurn(ObjectDatabaseBase db)
         {
             var ability = new FirelordSoulBurn(db);
+            ability.TextName = "Soul Burn";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Soul Burn - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Soul Burn - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Soul Burn - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Wreaths an enemy unit in magical flames which cause <ANso,DataA1> damage per second, prevent the casting of spells, and reduce attack damage by <ANso,DataC1,%>%.|nLasts <ANso,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Wreaths an enemy unit in magical flames which cause <ANso,DataA2> damage per second, prevent the casting of spells, and reduce attack damage by <ANso,DataC2,%>%.|nLasts <ANso,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Wreaths an enemy unit in magical flames which cause <ANso,DataA3> damage per second, prevent the casting of spells, and reduce attack damage by <ANso,DataC3,%>%.|nLasts <ANso,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Soul Burn - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "B";
+            ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -7536,9 +8630,20 @@ namespace War3Api.Object
         protected virtual FirelordSummonLavaSpawn LoadFirelordSummonLavaSpawn(ObjectDatabaseBase db)
         {
             var ability = new FirelordSummonLavaSpawn(db);
+            ability.TextName = "Summon Lava Spawn";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Summon Lava Spawn - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Summon Lava Spawn - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Summon Lava Spawn - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Summons a Lava Spawn, a resilient and deadly fire creature. As a Lava Spawn deals damage, it consumes the flesh of its target, thereby fueling its fires and eventually splitting into two healthy Lava Spawns.|n|nHas <nlv1,realHP> hit points and deals <nlv1,mindmg1> - <nlv1,maxdmg1> damage.|nLasts <ANlm,Dur1> seconds.|n|n|cffffcc00Attacks ground and air units.|r";
+            ability.TextTooltipNormalExtended[2] = "Summons a Lava Spawn, a resilient and deadly fire creature. As a Lava Spawn deals damage, it consumes the flesh of its target, thereby fueling its fires and eventually splitting into two healthy Lava Spawns.|n|nHas <nlv2,realHP> hit points and deals <nlv2,mindmg1> - <nlv2,maxdmg1> damage.|nLasts <ANlm,Dur2> seconds.|n|n|cffffcc00Attacks ground and air units.|r";
+            ability.TextTooltipNormalExtended[3] = "Summons a Lava Spawn, a resilient and deadly fire creature. As a Lava Spawn deals damage, it consumes the flesh of its target, thereby fueling its fires and eventually splitting into two healthy Lava Spawns.|n|nHas <nlv3,realHP> hit points and deals <nlv3,mindmg1> - <nlv3,maxdmg1> damage.|nLasts <ANlm,Dur3> seconds.|n|n|cffffcc00Attacks ground and air units.|r";
+            ability.TextTooltipLearn = "Learn Summon Lava Spawn - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "W";
+            ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -7596,10 +8701,10 @@ namespace War3Api.Object
             ability.DataSplitDelay[2] = 5f;
             ability.DataSplitDelay[3] = 5f;
             ability.DataSplitDelay[4] = 5f;
-            ability.DataSplitAttackCount[1] = 15;
-            ability.DataSplitAttackCount[2] = 15;
-            ability.DataSplitAttackCount[3] = 15;
-            ability.DataSplitAttackCount[4] = 15;
+            ability.DataSplitAttackCount[1] = 13;
+            ability.DataSplitAttackCount[2] = 13;
+            ability.DataSplitAttackCount[3] = 13;
+            ability.DataSplitAttackCount[4] = 9;
             ability.DataMaxHitpointFactor[1] = 0.5f;
             ability.DataMaxHitpointFactor[2] = 0.5f;
             ability.DataMaxHitpointFactor[3] = 0.5f;
@@ -7618,9 +8723,16 @@ namespace War3Api.Object
         protected virtual FirelordVolcano LoadFirelordVolcano(ObjectDatabaseBase db)
         {
             var ability = new FirelordVolcano(db);
+            ability.TextName = "Volcano";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Volcano";
+            ability.TextTooltipNormalExtended[1] = "Causes the ground to erupt into a massive Volcano. Every <ANvc,DataC1> seconds, a wave of molten rocks is hurled from the Volcano at nearby ground units and buildings, causing <ANvc,DataE1> damage to each target and stunning it for <ANvc,Dur1> seconds. Buildings take <ANvc,DataD1> times more damage from molten rocks than units do.|nLasts 35 seconds.";
+            ability.TextTooltipLearn = "Learn Volcano";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "V";
+            ability.TextHotkeyNormalRaw = "V";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -7682,7 +8794,7 @@ namespace War3Api.Object
             ability.DataBuildingDamageFactor[2] = 3f;
             ability.DataBuildingDamageFactor[3] = 3f;
             ability.DataBuildingDamageFactor[4] = 3f;
-            ability.DataFullDamageAmount[1] = 100f;
+            ability.DataFullDamageAmount[1] = 125f;
             ability.DataFullDamageAmount[2] = 100f;
             ability.DataFullDamageAmount[3] = 100f;
             ability.DataFullDamageAmount[4] = 100f;
@@ -7700,9 +8812,16 @@ namespace War3Api.Object
         protected virtual Inferno LoadInferno(ObjectDatabaseBase db)
         {
             var ability = new Inferno(db);
+            ability.TextName = "Inferno";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Inferno";
+            ability.TextTooltipNormalExtended[1] = "Summons an Infernal from the sky, causing area effect damage where it lands.";
+            ability.TextTooltipLearn = "Learn Inferno";
+            ability.TextHotkeyLearnRaw = "I";
+            ability.TextHotkeyNormalRaw = "I";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -7770,9 +8889,17 @@ namespace War3Api.Object
         protected virtual TichondriusInferno LoadTichondriusInferno(ObjectDatabaseBase db)
         {
             var ability = new TichondriusInferno(db);
+            ability.TextName = "Inferno";
+            ability.TextEditorSuffix = " (Tichondrius)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Inferno";
+            ability.TextTooltipNormalExtended[1] = "Calls an Infernal down from the sky, dealing <SNin,DataA1> damage and stunning enemy land units for <SNin,Dur1> seconds in an area. The Infernal lasts <SNin,DataB1> seconds.";
+            ability.TextTooltipLearn = "Learn Inferno";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "N";
+            ability.TextHotkeyNormalRaw = "N";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -7840,9 +8967,16 @@ namespace War3Api.Object
         protected virtual FireBolt LoadFireBolt(ObjectDatabaseBase db)
         {
             var ability = new FireBolt(db);
+            ability.TextName = "Firebolt";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Firebolt";
+            ability.TextTooltipNormalExtended[1] = "Hurls a fiery bolt that stuns a target enemy unit.";
+            ability.TextTooltipLearn = "Learn Firebolt";
+            ability.TextHotkeyLearnRaw = "B";
+            ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -7898,9 +9032,17 @@ namespace War3Api.Object
         protected virtual FingerOfDeath_ANfd LoadFingerOfDeath_ANfd(ObjectDatabaseBase db)
         {
             var ability = new FingerOfDeath_ANfd(db);
+            ability.TextName = "Finger of Death";
+            ability.TextEditorSuffix = " (Archimonde)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Finger of Death";
+            ability.TextTooltipNormalExtended[1] = "Instantly turns a creature or building inside-out, destroying it utterly.";
+            ability.TextTooltipLearn = "Learn Finger of Death";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "F";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -7964,9 +9106,17 @@ namespace War3Api.Object
         protected virtual FingerOfPain LoadFingerOfPain(ObjectDatabaseBase db)
         {
             var ability = new FingerOfPain(db);
+            ability.TextName = "Finger of Pain";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Finger of Pain";
+            ability.TextTooltipNormalExtended[1] = "Horribly cripples the innards of a creature or building.";
+            ability.TextTooltipLearn = "Learn Finger of Pain";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "F";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -8018,9 +9168,17 @@ namespace War3Api.Object
         protected virtual FingerOfPain21Button LoadFingerOfPain21Button(ObjectDatabaseBase db)
         {
             var ability = new FingerOfPain21Button(db);
+            ability.TextName = "Finger of Pain";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Finger of Pain";
+            ability.TextTooltipNormalExtended[1] = "Horribly cripples the innards of a creature or building.";
+            ability.TextTooltipLearn = "Learn Finger of Pain";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "F";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -8072,9 +9230,17 @@ namespace War3Api.Object
         protected virtual DarkPortal LoadDarkPortal(ObjectDatabaseBase db)
         {
             var ability = new DarkPortal(db);
+            ability.TextName = "Dark Portal";
+            ability.TextEditorSuffix = " (Archimonde)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Dark Portal";
+            ability.TextTooltipNormalExtended[1] = "Opens a portal, allowing demons to step through and do Archimonde's bidding.";
+            ability.TextTooltipLearn = "Learn Dark Portal";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "D";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -8138,9 +9304,17 @@ namespace War3Api.Object
         protected virtual RainOfChaos LoadRainOfChaos(ObjectDatabaseBase db)
         {
             var ability = new RainOfChaos(db);
+            ability.TextName = "Rain of Chaos";
+            ability.TextEditorSuffix = " (Archimonde)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Rain of Chaos";
+            ability.TextTooltipNormalExtended[1] = "Calls down multiple Infernals from the sky.";
+            ability.TextTooltipLearn = "Learn Rain of Chaos";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "R";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -8200,9 +9374,17 @@ namespace War3Api.Object
         protected virtual RainOfChaosButton02 LoadRainOfChaosButton02(ObjectDatabaseBase db)
         {
             var ability = new RainOfChaosButton02(db);
+            ability.TextName = "Rain of Chaos";
+            ability.TextEditorSuffix = " (Balnazzar)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Rain of Chaos";
+            ability.TextTooltipNormalExtended[1] = "Calls down multiple Infernals from the sky.";
+            ability.TextTooltipLearn = "Learn Rain of Chaos";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "R";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -8254,9 +9436,17 @@ namespace War3Api.Object
         protected virtual CenariusBeefyStarfall LoadCenariusBeefyStarfall(ObjectDatabaseBase db)
         {
             var ability = new CenariusBeefyStarfall(db);
+            ability.TextName = "Starfall";
+            ability.TextEditorSuffix = " (more powerful)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Starfall";
+            ability.TextTooltipNormalExtended[1] = "Calls down a wave of falling stars every <AEsb,DataB1> seconds that damages nearby enemy units. Each wave deals <AEsb,DataA1> damage. |nLasts for <AEsb,Dur1> seconds.";
+            ability.TextTooltipLearn = "Learn Starfall";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "F";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -8320,9 +9510,18 @@ namespace War3Api.Object
         protected virtual MannorothReincarnation LoadMannorothReincarnation(ObjectDatabaseBase db)
         {
             var ability = new MannorothReincarnation(db);
+            ability.TextName = "Reincarnation";
+            ability.TextEditorSuffix = " (Mannoroth)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Reincarnation";
+            ability.TextTooltipNormalExtended[1] = "When killed, the demon will come back to life. Reincarnation has a <ANrn,Cool1> second cooldown.";
+            ability.TextTooltipLearn = "Learn Reincarnation";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "R";
+            ability.TextHotkeyNormalRaw = "R";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -8378,9 +9577,17 @@ namespace War3Api.Object
         protected virtual MalganisDarkConversion LoadMalganisDarkConversion(ObjectDatabaseBase db)
         {
             var ability = new MalganisDarkConversion(db);
+            ability.TextName = "Dark Conversion";
+            ability.TextEditorSuffix = " (Malganis)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Dark Conversion";
+            ability.TextTooltipNormalExtended[1] = "Puts a target villager to sleep and converts it into a zombie.";
+            ability.TextTooltipLearn = "Learn Dark Conversion";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "K";
+            ability.TextHotkeyNormalRaw = "K";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -8440,9 +9647,17 @@ namespace War3Api.Object
         protected virtual DarkConversionFast LoadDarkConversionFast(ObjectDatabaseBase db)
         {
             var ability = new DarkConversionFast(db);
+            ability.TextName = "Dark Conversion";
+            ability.TextEditorSuffix = " (Malganis, Fast)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Dark Conversion";
+            ability.TextTooltipNormalExtended[1] = "Puts a target villager to sleep and converts it into a zombie.";
+            ability.TextTooltipLearn = "Learn Dark Conversion";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "K";
+            ability.TextHotkeyNormalRaw = "K";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -8502,9 +9717,17 @@ namespace War3Api.Object
         protected virtual MalganisSoulPreservation LoadMalganisSoulPreservation(ObjectDatabaseBase db)
         {
             var ability = new MalganisSoulPreservation(db);
+            ability.TextName = "Soul Preservation";
+            ability.TextEditorSuffix = " (Malganis)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Soul Preservation";
+            ability.TextTooltipNormalExtended[1] = "Puts a converted zombie into the nether-realm for later use.";
+            ability.TextTooltipLearn = "Learn Soul Preservation";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "L";
+            ability.TextHotkeyNormalRaw = "L";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -8560,9 +9783,17 @@ namespace War3Api.Object
         protected virtual IllidanMetamorphosis LoadIllidanMetamorphosis(ObjectDatabaseBase db)
         {
             var ability = new IllidanMetamorphosis(db);
+            ability.TextName = "Metamorphosis";
+            ability.TextEditorSuffix = " (Illidan)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Metamorphosis";
+            ability.TextTooltipNormalExtended[1] = "Transforms the Demon Hunter into a powerful Demon with a ranged attack.";
+            ability.TextTooltipLearn = "Learn Metamorphosis";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "T";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -8638,9 +9869,17 @@ namespace War3Api.Object
         protected virtual EvilIllidanMetamorphosis LoadEvilIllidanMetamorphosis(ObjectDatabaseBase db)
         {
             var ability = new EvilIllidanMetamorphosis(db);
+            ability.TextName = "Metamorphosis";
+            ability.TextEditorSuffix = " (Evil Illidan)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Metamorphosis";
+            ability.TextTooltipNormalExtended[1] = "Transforms the Demon Hunter into a powerful Demon with a ranged attack.";
+            ability.TextTooltipLearn = "Learn Metamorphosis";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "T";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -8716,9 +9955,17 @@ namespace War3Api.Object
         protected virtual SuperEarthquake LoadSuperEarthquake(ObjectDatabaseBase db)
         {
             var ability = new SuperEarthquake(db);
+            ability.TextName = "Earthquake";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Earthquake";
+            ability.TextTooltipNormalExtended[1] = "Makes the ground tremble and break, causing <SNeq,DataB1> damage per second to buildings and slowing units by <SNeq,DataC1,%>% within the area of effect. |nLasts <SNeq,Dur1> seconds.";
+            ability.TextTooltipLearn = "Learn Earthquake";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "E";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -8786,9 +10033,17 @@ namespace War3Api.Object
         protected virtual SuperDeathAndDecay LoadSuperDeathAndDecay(ObjectDatabaseBase db)
         {
             var ability = new SuperDeathAndDecay(db);
+            ability.TextName = "Death And Decay";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Death And Decay";
+            ability.TextTooltipNormalExtended[1] = "Damages everything in its area of effect by <SNdd,DataA1,%>% of its base hit points per second. Also destroys trees. |nLasts <SNdd,Dur1> seconds.";
+            ability.TextTooltipLearn = "Learn Death And Decay";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "D";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -8848,9 +10103,20 @@ namespace War3Api.Object
         protected virtual Monsoon LoadMonsoon(ObjectDatabaseBase db)
         {
             var ability = new Monsoon(db);
+            ability.TextName = "Monsoon";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Monsoon - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Monsoon - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Monsoon - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Calls down a storm of lightning to strike enemy units for <ANmo,DataA1> damage in a small target area. |nLasts <ANmo,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Calls down a storm of lightning to strike enemy units for <ANmo,DataA2> damage in a medium target area. |nLasts <ANmo,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Calls down a storm of lightning to strike enemy units for <ANmo,DataA3> damage in a large target area. |nLasts <ANmo,Dur1> seconds.";
+            ability.TextTooltipLearn = "Learn Monsoon - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "N";
+            ability.TextHotkeyNormalRaw = "N";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -8914,9 +10180,23 @@ namespace War3Api.Object
         protected virtual PoisonArrows LoadPoisonArrows(ObjectDatabaseBase db)
         {
             var ability = new PoisonArrows(db);
+            ability.TextName = "Poison Arrows";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Poison Arrows - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Poison Arrows  - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Poison Arrows  - [|cffffcc00Level 3|r]";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Adds <AHfa,DataA1> bonus fire damage to an attack against enemies, but drains mana with each shot fired.";
+            ability.TextTooltipNormalExtended[2] = "Adds <AHfa,DataA2> bonus fire damage to an attack, but drains mana with each shot fired.";
+            ability.TextTooltipNormalExtended[3] = "Adds <AHfa,DataA3> bonus fire damage to an attack, but drains mana with each shot fired.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextTooltipLearn = "Learn Poison Arrows - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "R";
+            ability.TextHotkeyNormalRaw = "R";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -8988,9 +10268,13 @@ namespace War3Api.Object
         protected virtual WateryMinion LoadWateryMinion(ObjectDatabaseBase db)
         {
             var ability = new WateryMinion(db);
+            ability.TextName = "Watery Minion";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Watery Minion";
+            ability.TextTooltipNormalExtended[1] = "Summons <ANwm,DataA1> minions to do their master's bidding. |nLasts <ANwm,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -9050,9 +10334,23 @@ namespace War3Api.Object
         protected virtual ColdArrows LoadColdArrows(ObjectDatabaseBase db)
         {
             var ability = new ColdArrows(db);
+            ability.TextName = "Cold Arrows";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Cold Arrows - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Cold Arrows - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Cold Arrows - [|cffffcc00Level 3|r]";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Adds a cold effect to each attack, slowing a target enemy unit's attacks by <AHca,DataB1,%>% and movement by <AHca,DataC1,%>% for <AHca,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Adds a cold effect to each attack, slowing a target enemy unit's attacks by <AHca,DataB2,%>% and movement by <AHca,DataC2,%>% for <AHca,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Adds a cold effect to each attack, slowing a target enemy unit's attacks by <AHca,DataB3,%>% and movement by <AHca,DataC3,%>% for <AHca,Dur3> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextTooltipLearn = "Learn Cold Arrows - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "C";
+            ability.TextHotkeyNormalRaw = "C";
+            ability.TextHotkeyTurnOffRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -9120,9 +10418,20 @@ namespace War3Api.Object
         protected virtual BattleRoar LoadBattleRoar(ObjectDatabaseBase db)
         {
             var ability = new BattleRoar(db);
+            ability.TextName = "Battle Roar";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Battle Roar - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Battle Roar - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Battle Roar - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Gives nearby friendly units <ANbr,DataA1> bonus attack damage. |nLasts <ANbr,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Gives nearby friendly units <ANbr,DataA2> bonus attack damage. |nLasts <ANbr,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Gives nearby friendly units <ANbr,DataA3> bonus attack damage. |nLasts <ANbr,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Battle Roar - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "R";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 4;
@@ -9202,9 +10511,21 @@ namespace War3Api.Object
         protected virtual RexxarSummonBear LoadRexxarSummonBear(ObjectDatabaseBase db)
         {
             var ability = new RexxarSummonBear(db);
+            ability.TextName = "Summon Misha";
+            ability.TextEditorSuffix = "(Rexxar)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Summon Misha - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Summon Misha - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Summon Misha - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Summons Misha, a powerful <ngzc,realHP> hit point bear, to attack your enemies.";
+            ability.TextTooltipNormalExtended[2] = "Summons Misha, a powerful <ngzd,realHP> hit point bear, to attack your enemies. Has the Bash ability.";
+            ability.TextTooltipNormalExtended[3] = "Summons Misha, a powerful <ngza,realHP> hit point bear, to attack your enemies. Has the Maul ability.";
+            ability.TextTooltipLearn = "Learn Summon Misha - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "I";
+            ability.TextHotkeyNormalRaw = "I";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 4;
@@ -9256,9 +10577,19 @@ namespace War3Api.Object
         protected virtual AttributeModifierSkill LoadAttributeModifierSkill(ObjectDatabaseBase db)
         {
             var ability = new AttributeModifierSkill(db);
+            ability.TextName = "Attribute Bonus";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Attribute Bonus - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Attribute Bonus - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Attribute Bonus - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Gives a total of <Aamk,DataA1> points to Agility, Intelligence, and Strength";
+            ability.TextTooltipNormalExtended[2] = "Gives a total of <Aamk,DataA2> points to Agility, Intelligence, and Strength";
+            ability.TextTooltipNormalExtended[3] = "Gives a total of <Aamk,DataA3> points to Agility, Intelligence, and Strength";
+            ability.TextTooltipLearn = "Learn Attribute Bonus - [|cffffcc00Level %d|r].";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 4;
@@ -9326,9 +10657,21 @@ namespace War3Api.Object
         protected virtual RexxarSummonQuilbeast LoadRexxarSummonQuilbeast(ObjectDatabaseBase db)
         {
             var ability = new RexxarSummonQuilbeast(db);
+            ability.TextName = "Summon Quilbeast";
+            ability.TextEditorSuffix = "(Rexxar)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Summon Quilbeast - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Summon Quilbeast - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Summon Quilbeast - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Summons an angry <nqb1,realHP> hit point quilbeast to fling spines at your enemies. |nLasts <Arsq,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Summons an angry <nqb2,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability. |nLasts <Arsq,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Summons an angry <nqb3,realHP> hit point quilbeast to fling spines at your enemies. Has the Frenzy ability and does area effect damage. |nLasts <Arsq,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Summon Quilbeast - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "Q";
+            ability.TextHotkeyNormalRaw = "Q";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 4;
@@ -9380,9 +10723,19 @@ namespace War3Api.Object
         protected virtual RexxarStampede LoadRexxarStampede(ObjectDatabaseBase db)
         {
             var ability = new RexxarStampede(db);
+            ability.TextName = "Stampede";
+            ability.TextEditorSuffix = "(Rexxar)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Stampede - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Stampede - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormalExtended[1] = "Calls down hordes of rampaging thunder lizards to explode upon the Beastmaster's enemies. Each exploding lizard deals <Arsp,DataC1> damage. |nLasts <Arsp,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Calls down hordes of rampaging thunder lizards to explode upon the Beastmaster's enemies. Each exploding lizard deals <Arsp,DataC2> damage. |nLasts <Arsp,Dur2> seconds.";
+            ability.TextTooltipLearn = "Learn Stampede - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "E";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 2;
@@ -9434,9 +10787,20 @@ namespace War3Api.Object
         protected virtual RexxarStormBolt LoadRexxarStormBolt(ObjectDatabaseBase db)
         {
             var ability = new RexxarStormBolt(db);
+            ability.TextName = "Storm Bolt";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Storm Bolt - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Storm Bolt - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Storm Bolt - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Throws a magical hammer at a target enemy unit, dealing <ANsb,DataA1> damage and stunning the target for <ANsb,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Throws a magical hammer at a target enemy unit, dealing <ANsb,DataA2> damage and stunning the target for <ANsb,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Throws a magical hammer at a target enemy unit, dealing <ANsb,DataA3> damage and stunning the target for <ANsb,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Storm Bolt - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "T";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 4;
@@ -9488,9 +10852,21 @@ namespace War3Api.Object
         protected virtual RokhanHealingWave LoadRokhanHealingWave(ObjectDatabaseBase db)
         {
             var ability = new RokhanHealingWave(db);
+            ability.TextName = "Healing Wave";
+            ability.TextEditorSuffix = "(Rokhan)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Healing Wave - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Healing Wave - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Healing Wave - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Calls forth a wave of healing energy that bounces up to <ANhw,DataB1> times, healing <ANhw,DataA1> damage on the primary target. Each jump heals less damage.";
+            ability.TextTooltipNormalExtended[2] = "Calls forth a wave of healing energy that bounces up to <ANhw,DataB2> times, healing <ANhw,DataA2> damage on the primary target. Each jump heals less damage.";
+            ability.TextTooltipNormalExtended[3] = "Calls forth a wave of healing energy that bounces up to <ANhw,DataB3> times, healing <ANhw,DataA3> damage on the primary target. Each jump heals less damage.";
+            ability.TextTooltipLearn = "Learn Healing Wave - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "E";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 4;
@@ -9542,9 +10918,21 @@ namespace War3Api.Object
         protected virtual RokhanSerpentWard LoadRokhanSerpentWard(ObjectDatabaseBase db)
         {
             var ability = new RokhanSerpentWard(db);
+            ability.TextName = "Serpent Ward";
+            ability.TextEditorSuffix = "(Rokhan)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Serpent Ward - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Serpent Ward - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Serpent Ward - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Summons an immobile serpentine ward to attack the Shadow Hunter's enemies. The ward has <osp1,realHP> hit points, is magic immune, and deals <osp1,mindmg1> - <osp1,maxdmg1> damage. |nLasts <Arsw,Dur1> seconds. |n|n|cffffcc00Attacks land and air units.|r";
+            ability.TextTooltipNormalExtended[2] = "Summons an immobile serpentine ward to attack the Shadow Hunter's enemies. The ward has <osp2,realHP> hit points, is magic immune, and deals <osp2,mindmg1> - <osp2,maxdmg1> damage. |nLasts <Arsw,Dur1> seconds. |n|n|cffffcc00Attacks land and air units.|r";
+            ability.TextTooltipNormalExtended[3] = "Summons an immobile serpentine ward to attack the Shadow Hunter's enemies. The ward has <osp3,realHP> hit points, is magic immune, and deals <osp3,mindmg1> - <osp3,maxdmg1> damage. |nLasts <Arsw,Dur1> seconds. |n|n|cffffcc00Attacks land and air units.|r";
+            ability.TextTooltipLearn = "Learn Serpent Ward - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "W";
+            ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 4;
@@ -9596,9 +10984,21 @@ namespace War3Api.Object
         protected virtual RokhanHex LoadRokhanHex(ObjectDatabaseBase db)
         {
             var ability = new RokhanHex(db);
+            ability.TextName = "Hex";
+            ability.TextEditorSuffix = "(Rokhan)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Hex - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Hex - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Hex - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Transforms an enemy unit into a random critter for <ANhx,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Transforms an enemy unit into a random critter for <ANhx,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Transforms an enemy unit into a random critter for <ANhx,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Hex - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "X";
+            ability.TextHotkeyNormalRaw = "X";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 4;
@@ -9650,9 +11050,18 @@ namespace War3Api.Object
         protected virtual RokhanVoodooSpirits LoadRokhanVoodooSpirits(ObjectDatabaseBase db)
         {
             var ability = new RokhanVoodooSpirits(db);
+            ability.TextName = "Voodoo Spirits";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Voodoo Spirits - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Voodoo Spirits - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormalExtended[1] = "Creates a swarm of angry spirits that drain the life energies of nearby enemy units. They store the life energy they drain from their victims and use it to replenish Rokhan's hit points when they return.|nLasts <AOls,HeroDur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Creates a swarm of angry spirits that drain the life energies of nearby enemy units. They store the life energy they drain from their victims and use it to replenish Rokhan's hit points when they return.|nLasts <AOls,HeroDur1> seconds.";
+            ability.TextTooltipLearn = "Learn Voodoo Spirits - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "V";
+            ability.TextHotkeyNormalRaw = "V";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 2;
@@ -9704,9 +11113,21 @@ namespace War3Api.Object
         protected virtual ChenBreathOfFire LoadChenBreathOfFire(ObjectDatabaseBase db)
         {
             var ability = new ChenBreathOfFire(db);
+            ability.TextName = "Breath of Fire";
+            ability.TextEditorSuffix = "(Chen)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Breath of Fire - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Breath of Fire - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Breath of Fire - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Breathes a cone of fire at enemy units, dealing <ANcf,DataA1> initial damage. Units that have Drunken Haze on them will ignite and burn for <ANcf,DataE1> damage per second over <ANcf,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Breathes a cone of fire at enemy units, dealing <ANcf,DataA2> initial damage. Units that have Drunken Haze on them will ignite and burn for <ANcf,DataE2> damage per second over <ANcf,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Breathes a cone of fire at enemy units, dealing <ANcf,DataA3> initial damage. Units that have Drunken Haze on them will ignite and burn for <ANcf,DataE3> damage per second over <ANcf,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Breath of Fire - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "F";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 4;
@@ -9758,9 +11179,20 @@ namespace War3Api.Object
         protected virtual ChenDrunkenBrawler LoadChenDrunkenBrawler(ObjectDatabaseBase db)
         {
             var ability = new ChenDrunkenBrawler(db);
+            ability.TextName = "Drunken Brawler";
+            ability.TextEditorSuffix = "(Chen)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Drunken Brawler - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Drunken Brawler - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Drunken Brawler - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Gives a <Acdb,DataD1,%>% chance to dodge an attack and a <Acdb,DataA1>% chance to deal <Acdb,DataB1> times normal damage.";
+            ability.TextTooltipNormalExtended[2] = "Gives a <Acdb,DataD2,%>% chance to dodge an attack and a <Acdb,DataA2>% chance to deal <Acdb,DataB2> times normal damage.";
+            ability.TextTooltipNormalExtended[3] = "Gives a <Acdb,DataD3,%>% chance to dodge an attack and a <Acdb,DataA3>% chance to deal <Acdb,DataB3> times normal damage.";
+            ability.TextTooltipLearn = "Learn Drunken Brawler - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 4;
@@ -9812,9 +11244,21 @@ namespace War3Api.Object
         protected virtual ChenDrunkenHaze LoadChenDrunkenHaze(ObjectDatabaseBase db)
         {
             var ability = new ChenDrunkenHaze(db);
+            ability.TextName = "Drunken Haze";
+            ability.TextEditorSuffix = "(Chen)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Drunken Haze - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Drunken Haze - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Drunken Haze - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Drenches enemy units in alcohol, causing their movement speed to be reduced by <Acdh,DataC1,%>%, and have a <Acdh,DataB1,%>% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |nLasts <Acdh,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Drenches enemy units in alcohol, causing their movement speed to be reduced by <Acdh,DataC2,%>%, and have a <Acdh,DataB2,%>% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |nLasts <Acdh,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Drenches enemy units in alcohol, causing their movement speed to be reduced by <Acdh,DataC3,%>%, and have a <Acdh,DataB3,%>% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage. |nLasts <Acdh,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn Drunken Haze - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "D";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 4;
@@ -9866,9 +11310,19 @@ namespace War3Api.Object
         protected virtual ChenStormEarthAndFire LoadChenStormEarthAndFire(ObjectDatabaseBase db)
         {
             var ability = new ChenStormEarthAndFire(db);
+            ability.TextName = "Storm, Earth, And Fire";
+            ability.TextEditorSuffix = "(Chen)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Storm, Earth, And Fire - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Storm, Earth, And Fire - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormalExtended[1] = "Splits the Brewmaster into elements, forming 3 specialized warriors. If any of them survive until the end of their summoned timer, the Brewmaster is reborn.";
+            ability.TextTooltipNormalExtended[2] = "Splits the Brewmaster into elements, forming 3 specialized warriors. If any of them survive until the end of their summoned timer, the Brewmaster is reborn.";
+            ability.TextTooltipLearn = "Learn Storm";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "E";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 2;
@@ -9920,9 +11374,20 @@ namespace War3Api.Object
         protected virtual CairneEnduranceAura LoadCairneEnduranceAura(ObjectDatabaseBase db)
         {
             var ability = new CairneEnduranceAura(db);
+            ability.TextName = "Endurance Aura";
+            ability.TextEditorSuffix = "(Cairne)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Endurance Aura - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Endurance Aura - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Endurance Aura - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Increases nearby friendly units' movement speed by <AOr2,DataA1,%>% and attack rate by <AOr2,DataB1,%>%.";
+            ability.TextTooltipNormalExtended[2] = "Increases nearby friendly units' movement speed by <AOr2,DataA2,%>% and attack rate by <AOr2,DataB2,%>%.";
+            ability.TextTooltipNormalExtended[3] = "Increases nearby friendly units' movement speed by <AOr2,DataA3,%>% and attack rate by <AOr2,DataB3,%>%.";
+            ability.TextTooltipLearn = "Learn Endurance Aura - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 4;
@@ -9974,9 +11439,18 @@ namespace War3Api.Object
         protected virtual CairneReincarnation LoadCairneReincarnation(ObjectDatabaseBase db)
         {
             var ability = new CairneReincarnation(db);
+            ability.TextName = "Reincarnation";
+            ability.TextEditorSuffix = "(Cairne)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Reincarnation - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Reincarnation - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormalExtended[1] = "When killed, Cairne will come back to life. Reincarnation has a <AOr3,Cool1> second cooldown.";
+            ability.TextTooltipNormalExtended[2] = "When killed, Cairne will come back to life. Reincarnation has a <AOr3,Cool2> second cooldown.";
+            ability.TextTooltipLearn = "Learn Reincarnation";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 2;
@@ -10028,9 +11502,21 @@ namespace War3Api.Object
         protected virtual CairneShockWave LoadCairneShockWave(ObjectDatabaseBase db)
         {
             var ability = new CairneShockWave(db);
+            ability.TextName = "Shockwave";
+            ability.TextEditorSuffix = "(Cairne)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Shockwave - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Shockwave - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Shockwave - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "A wave of force that ripples outward, causing <AOs2,DataA1> damage to land units in a line.";
+            ability.TextTooltipNormalExtended[2] = "A wave of force that ripples outward, causing <AOs2,DataA2> damage to land units in a line.";
+            ability.TextTooltipNormalExtended[3] = "A wave of force that ripples outward, causing <AOs2,DataA3> damage to land units in a line.";
+            ability.TextTooltipLearn = "Learn Shockwave - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "W";
+            ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 4;
@@ -10082,9 +11568,20 @@ namespace War3Api.Object
         protected virtual CairneWarStomp LoadCairneWarStomp(ObjectDatabaseBase db)
         {
             var ability = new CairneWarStomp(db);
+            ability.TextName = "War Stomp";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "War Stomp - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "War Stomp - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "War Stomp - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Slams the ground, dealing <AOw2,DataA1> damage to nearby enemy land units and stunning them for <AOw2,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Slams the ground, dealing <AOw2,DataA2> damage to nearby enemy land units and stunning them for <AOw2,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Slams the ground, dealing <AOw2,DataA3> damage to nearby enemy land units and stunning them for <AOw2,Dur3> seconds.";
+            ability.TextTooltipLearn = "Learn War Stomp - [|cffffcc00Level %d|r].";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "T";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 4;
@@ -10136,9 +11633,13 @@ namespace War3Api.Object
         protected virtual IllidanChannel LoadIllidanChannel(ObjectDatabaseBase db)
         {
             var ability = new IllidanChannel(db);
+            ability.TextName = "Channel";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Channel";
+            ability.TextTooltipNormalExtended[1] = "Channels powerful warding magic.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -10214,9 +11715,16 @@ namespace War3Api.Object
         protected virtual AbolishMagic LoadAbolishMagic(ObjectDatabaseBase db)
         {
             var ability = new AbolishMagic(db);
+            ability.TextName = "Abolish Magic";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Abolish Magic";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Dispels positive buffs from enemy units, and negative buffs from friendly units. |n|cffffcc00Deals <Aadm,DataB1> damage to summoned units.|r";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "B";
+            ability.TextHotkeyTurnOffRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -10276,9 +11784,16 @@ namespace War3Api.Object
         protected virtual AbolishMagicNaga LoadAbolishMagicNaga(ObjectDatabaseBase db)
         {
             var ability = new AbolishMagicNaga(db);
+            ability.TextName = "Abolish Magic";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "naga";
+            ability.TextTooltipNormal[1] = "Abolish Magic";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Dispels positive buffs from enemy units, and negative buffs from friendly units. |n|cffffcc00Deals <Aadm,DataB1> damage to summoned units.|r";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "B";
+            ability.TextHotkeyTurnOffRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -10330,9 +11845,17 @@ namespace War3Api.Object
         protected virtual AbolishMagicCreep LoadAbolishMagicCreep(ObjectDatabaseBase db)
         {
             var ability = new AbolishMagicCreep(db);
+            ability.TextName = "Abolish Magic";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Abolish Magic";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Dispels positive buffs from enemy units, and negative buffs from friendly units. |n|cffffcc00Deals <ACdm,DataB1> damage to summoned units.|r";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "B";
+            ability.TextHotkeyTurnOffRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -10392,9 +11915,17 @@ namespace War3Api.Object
         protected virtual AbolishMagicCreep12Pos LoadAbolishMagicCreep12Pos(ObjectDatabaseBase db)
         {
             var ability = new AbolishMagicCreep12Pos(db);
+            ability.TextName = "Abolish Magic";
+            ability.TextEditorSuffix = "(Neutral Hostile, second position)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Abolish Magic";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Dispels positive buffs from enemy units, and negative buffs from friendly units. |n|cffffcc00Deals <ACdm,DataB1> damage to summoned units.|r";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "B";
+            ability.TextHotkeyTurnOffRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -10446,9 +11977,13 @@ namespace War3Api.Object
         protected virtual AbsorbMana LoadAbsorbMana(ObjectDatabaseBase db)
         {
             var ability = new AbsorbMana(db);
+            ability.TextName = "Absorb Mana";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Absorb Mana";
+            ability.TextTooltipNormalExtended[1] = "Takes all mana from one of your units and gives it to the Destroyer.";
+            ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -10508,9 +12043,17 @@ namespace War3Api.Object
         protected virtual AcolyteHarvest LoadAcolyteHarvest(ObjectDatabaseBase db)
         {
             var ability = new AcolyteHarvest(db);
+            ability.TextName = "Gather";
+            ability.TextEditorSuffix = " (Acolyte Gold)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Gather";
+            ability.TextTooltipTurnOff[1] = "Return Resources";
+            ability.TextTooltipNormalExtended[1] = "Mines gold from Haunted Gold Mines.";
+            ability.TextTooltipTurnOffExtended[1] = "Return the carried resources to the nearest town hall.";
+            ability.TextHotkeyNormalRaw = "G";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -10562,9 +12105,17 @@ namespace War3Api.Object
         protected virtual AvatarGarithos LoadAvatarGarithos(ObjectDatabaseBase db)
         {
             var ability = new AvatarGarithos(db);
+            ability.TextName = "Avatar";
+            ability.TextEditorSuffix = "(Neutral)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Activate Avatar";
+            ability.TextTooltipTurnOff[1] = "Deactivate Avatar";
+            ability.TextTooltipLearn = "Learn Avatar";
+            ability.TextHotkeyLearnRaw = "V";
+            ability.TextHotkeyNormalRaw = "V";
+            ability.TextHotkeyTurnOffRaw = "V";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -10616,6 +12167,7 @@ namespace War3Api.Object
         protected virtual Alarm LoadAlarm(ObjectDatabaseBase db)
         {
             var ability = new Alarm(db);
+            ability.TextName = "Alarm";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -10670,6 +12222,7 @@ namespace War3Api.Object
         protected virtual AlliedBuilding LoadAlliedBuilding(ObjectDatabaseBase db)
         {
             var ability = new AlliedBuilding(db);
+            ability.TextName = "Shop Sharing, Allied Bldg.";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -10740,9 +12293,13 @@ namespace War3Api.Object
         protected virtual AncestralSpirit LoadAncestralSpirit(ObjectDatabaseBase db)
         {
             var ability = new AncestralSpirit(db);
+            ability.TextName = "Ancestral Spirit";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Ancestral Spirit";
+            ability.TextTooltipNormalExtended[1] = "Raises a fallen non-Hero Tauren from the dead. The Tauren is revived with <Aast,DataA1,%>% of its hit points restored.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -10802,9 +12359,14 @@ namespace War3Api.Object
         protected virtual AnimateDeadCreep LoadAnimateDeadCreep(ObjectDatabaseBase db)
         {
             var ability = new AnimateDeadCreep(db);
+            ability.TextName = "Animate Dead";
+            ability.TextEditorSuffix = "(Neutral Hostile), (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Animate Dead";
+            ability.TextTooltipNormalExtended[1] = "Raises <ACad,DataA1> dead units in an area for <ACad,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -10868,9 +12430,13 @@ namespace War3Api.Object
         protected virtual AntiMagicShield_Aams LoadAntiMagicShield_Aams(ObjectDatabaseBase db)
         {
             var ability = new AntiMagicShield_Aams(db);
+            ability.TextName = "Anti-magic Shell";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Anti-magic Shell";
+            ability.TextTooltipNormalExtended[1] = "Creates a barrier that stops spells from affecting a target unit. |nLasts <Aams,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "N";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -10938,9 +12504,14 @@ namespace War3Api.Object
         protected virtual AntiMagicShieldMatrix LoadAntiMagicShieldMatrix(ObjectDatabaseBase db)
         {
             var ability = new AntiMagicShieldMatrix(db);
+            ability.TextName = "Anti-magic Shell";
+            ability.TextEditorSuffix = " (Magic Resistance)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Anti-magic Shell";
+            ability.TextTooltipNormalExtended[1] = "Creates a barrier that stops <Aam2,DataC1> points of spell, summon, or magic damage from affecting a target unit. |nLasts <Aam2,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "N";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -10996,9 +12567,14 @@ namespace War3Api.Object
         protected virtual AntiMagicShieldCreep LoadAntiMagicShieldCreep(ObjectDatabaseBase db)
         {
             var ability = new AntiMagicShieldCreep(db);
+            ability.TextName = "Anti-magic Shell";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Anti-magic Shell";
+            ability.TextTooltipNormalExtended[1] = "Creates a barrier that stops spells from affecting a target unit. |nLasts <ACam,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "N";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -11066,6 +12642,7 @@ namespace War3Api.Object
         protected virtual Attack LoadAttack(ObjectDatabaseBase db)
         {
             var ability = new Attack(db);
+            ability.TextName = "Attack";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -11120,9 +12697,13 @@ namespace War3Api.Object
         protected virtual AuraBrillianceCreep LoadAuraBrillianceCreep(ObjectDatabaseBase db)
         {
             var ability = new AuraBrillianceCreep(db);
+            ability.TextName = "Brilliance Aura";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Brilliance Aura";
+            ability.TextTooltipNormalExtended[1] = "Gives additional mana regeneration to nearby friendly units of <ACba,DataA1> mana per second.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -11182,9 +12763,12 @@ namespace War3Api.Object
         protected virtual AuraCommandCreep LoadAuraCommandCreep(ObjectDatabaseBase db)
         {
             var ability = new AuraCommandCreep(db);
+            ability.TextName = "Command Aura";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Command Aura";
+            ability.TextTooltipNormalExtended[1] = "Gives extra damage to the attacks of nearby friendly units.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -11252,9 +12836,13 @@ namespace War3Api.Object
         protected virtual AuraDevotionCreep LoadAuraDevotionCreep(ObjectDatabaseBase db)
         {
             var ability = new AuraDevotionCreep(db);
+            ability.TextName = "Devotion Aura";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Devotion Aura";
+            ability.TextTooltipNormalExtended[1] = "Gives <ACav,DataA1> additional armor to nearby friendly units.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -11314,9 +12902,15 @@ namespace War3Api.Object
         protected virtual AuraEnduranceCreep LoadAuraEnduranceCreep(ObjectDatabaseBase db)
         {
             var ability = new AuraEnduranceCreep(db);
+            ability.TextName = "Endurance Aura";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Endurance Aura";
+            ability.TextTooltipNormalExtended[1] = "Increases nearby friendly units' movement speed by <SCae,DataA1,%>% and attack rate by <SCae,DataB1,%>%.";
+            ability.TextTooltipNormalExtended[2] = "Increases nearby friendly units' movement speed by <SCae,DataA2,%>% and attack rate by <SCae,DataB2,%>%.";
+            ability.TextTooltipNormalExtended[3] = "Increases nearby friendly units' movement speed by <SCae,DataA3,%>% and attack rate by <SCae,DataB3,%>%.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -11376,9 +12970,13 @@ namespace War3Api.Object
         protected virtual AuraPlagueAbomination LoadAuraPlagueAbomination(ObjectDatabaseBase db)
         {
             var ability = new AuraPlagueAbomination(db);
+            ability.TextName = "Disease Cloud";
+            ability.TextEditorSuffix = "(Abomination)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Disease Cloud";
+            ability.TextTooltipNormalExtended[1] = "Infects nearby enemy living units with Disease Cloud. Disease Cloud deals <Aap1,DataB1> damage per second. |nLasts <Aap1,DataA1> seconds.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -11446,9 +13044,13 @@ namespace War3Api.Object
         protected virtual AuraPlaguePlagueWard LoadAuraPlaguePlagueWard(ObjectDatabaseBase db)
         {
             var ability = new AuraPlaguePlagueWard(db);
+            ability.TextName = "Disease Cloud";
+            ability.TextEditorSuffix = "(Plague Ward)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Disease Cloud";
+            ability.TextTooltipNormalExtended[1] = "Infects nearby enemy living units with Disease Cloud. Disease Cloud deals <Aap2,DataB1> damage per second. |nLasts <Aap2,DataA1> seconds.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -11516,9 +13118,13 @@ namespace War3Api.Object
         protected virtual AuraPlagueCreep LoadAuraPlagueCreep(ObjectDatabaseBase db)
         {
             var ability = new AuraPlagueCreep(db);
+            ability.TextName = "Disease Cloud";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Disease Cloud";
+            ability.TextTooltipNormalExtended[1] = "Infects nearby enemy living units with Disease Cloud. Disease Cloud deals <Aap3,DataB1> damage per second. |nLasts <Aap3,DataA1> seconds.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -11586,9 +13192,13 @@ namespace War3Api.Object
         protected virtual AuraPlagueCreepGfx LoadAuraPlagueCreepGfx(ObjectDatabaseBase db)
         {
             var ability = new AuraPlagueCreepGfx(db);
+            ability.TextName = "Disease Cloud";
+            ability.TextEditorSuffix = "(Neutral Hostile no damage)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Disease Cloud";
+            ability.TextTooltipNormalExtended[1] = "Infects nearby enemy living units with Disease Cloud. Disease Cloud deals <Aap4,DataB1> damage per second. |nLasts <Aap4,DataA1> seconds.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -11656,9 +13266,13 @@ namespace War3Api.Object
         protected virtual AuraPlagueAnimatedDead LoadAuraPlagueAnimatedDead(ObjectDatabaseBase db)
         {
             var ability = new AuraPlagueAnimatedDead(db);
+            ability.TextName = "Disease Cloud";
+            ability.TextEditorSuffix = " (Animate Dead)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Disease Cloud";
+            ability.TextTooltipNormalExtended[1] = "Infects nearby enemy living units with Disease Cloud. Disease Cloud deals <Aap5,DataB1> damage per second. |nLasts <Aap5,DataA1> seconds.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -11726,6 +13340,8 @@ namespace War3Api.Object
         protected virtual AuraRegenerationWard LoadAuraRegenerationWard(ObjectDatabaseBase db)
         {
             var ability = new AuraRegenerationWard(db);
+            ability.TextName = "Healing Ward Aura";
+            ability.TextEditorSuffix = " (Healing Ward)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
@@ -11788,9 +13404,12 @@ namespace War3Api.Object
         protected virtual AuraRegenerationStatue LoadAuraRegenerationStatue(ObjectDatabaseBase db)
         {
             var ability = new AuraRegenerationStatue(db);
+            ability.TextName = "Aura of Blight";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Aura of Blight";
+            ability.TextTooltipNormalExtended[1] = "Gives all friendly Undead nearby units a bonus to hit point regeneration. The aura does not stack with the regenerative effects of Blight.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -11850,6 +13469,8 @@ namespace War3Api.Object
         protected virtual AuraSlow LoadAuraSlow(ObjectDatabaseBase db)
         {
             var ability = new AuraSlow(db);
+            ability.TextName = "Slow Aura";
+            ability.TextEditorSuffix = " (Tornado)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "naga";
@@ -11916,9 +13537,13 @@ namespace War3Api.Object
         protected virtual AuraTrueshotCreep LoadAuraTrueshotCreep(ObjectDatabaseBase db)
         {
             var ability = new AuraTrueshotCreep(db);
+            ability.TextName = "Trueshot Aura";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Trueshot Aura";
+            ability.TextTooltipNormalExtended[1] = "An aura that gives nearby friendly units a <ACat,DataA1,%>% bonus damage to their ranged attacks.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -11986,9 +13611,12 @@ namespace War3Api.Object
         protected virtual AuraWarDrums LoadAuraWarDrums(ObjectDatabaseBase db)
         {
             var ability = new AuraWarDrums(db);
+            ability.TextName = "War Drums";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "War Drums";
+            ability.TextTooltipNormalExtended[1] = "Adds a damage increase to the attacks of nearby friendly units.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -12138,6 +13766,7 @@ namespace War3Api.Object
         protected virtual Awaken LoadAwaken(ObjectDatabaseBase db)
         {
             var ability = new Awaken(db);
+            ability.TextName = "Revive Hero Instantly";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -12192,9 +13821,12 @@ namespace War3Api.Object
         protected virtual BallsOfFire LoadBallsOfFire(ObjectDatabaseBase db)
         {
             var ability = new BallsOfFire(db);
+            ability.TextName = "Burning Oil";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Burning Oil";
+            ability.TextTooltipNormalExtended[1] = "Drenches the Demolisher ammo in burning oil, causing them to light the ground on fire and burn enemy units.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -12270,9 +13902,14 @@ namespace War3Api.Object
         protected virtual BanishCreep LoadBanishCreep(ObjectDatabaseBase db)
         {
             var ability = new BanishCreep(db);
+            ability.TextName = "Banish";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Banish";
+            ability.TextTooltipNormalExtended[1] = "Turns a non-mechanical unit ethereal and slows its movement speed by <ACbn,DataA1,%>% for <ACbn,Dur1> seconds. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect.";
+            ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -12324,9 +13961,13 @@ namespace War3Api.Object
         protected virtual BashCreep LoadBashCreep(ObjectDatabaseBase db)
         {
             var ability = new BashCreep(db);
+            ability.TextName = "Bash";
+            ability.TextEditorSuffix = " (Neutral Hostile 1)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Bash";
+            ability.TextTooltipNormalExtended[1] = "Gives a <ACbh,DataA1>% chance that an attack will do <ACbh,DataC1> bonus damage and stun the target for <ACbh,Dur1> seconds.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -12398,9 +14039,13 @@ namespace War3Api.Object
         protected virtual BashBeastmasterBear LoadBashBeastmasterBear(ObjectDatabaseBase db)
         {
             var ability = new BashBeastmasterBear(db);
+            ability.TextName = "Bash";
+            ability.TextEditorSuffix = " (Neutral Hostile 2)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Bash";
+            ability.TextTooltipNormalExtended[1] = "Gives a <ANbh,DataA1>% chance that an attack will do <ANbh,DataC1> bonus damage and stun the target for <ANbh,Dur1> seconds.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -12456,9 +14101,13 @@ namespace War3Api.Object
         protected virtual BashMaulSPBearLevel3 LoadBashMaulSPBearLevel3(ObjectDatabaseBase db)
         {
             var ability = new BashMaulSPBearLevel3(db);
+            ability.TextName = "Maul";
+            ability.TextEditorSuffix = " (Neutral Hostile 3/Maul)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Maul";
+            ability.TextTooltipNormalExtended[1] = "Gives a <ANb2,DataA1>% chance that an attack will do <ANb2,DataC1> bonus damage and stun the target for <ANb2,Dur1> seconds.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -12514,9 +14163,13 @@ namespace War3Api.Object
         protected virtual Battlestations LoadBattlestations(ObjectDatabaseBase db)
         {
             var ability = new Battlestations(db);
+            ability.TextName = "Battle Stations";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Battle Stations";
+            ability.TextTooltipNormalExtended[1] = "Causes nearby Peons to run into the Burrow so that they can defend their base.";
+            ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -12576,9 +14229,14 @@ namespace War3Api.Object
         protected virtual BattlestationsChaos LoadBattlestationsChaos(ObjectDatabaseBase db)
         {
             var ability = new BattlestationsChaos(db);
+            ability.TextName = "Battle Stations";
+            ability.TextEditorSuffix = " (Fel Orc Burrow)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Battle Stations";
+            ability.TextTooltipNormalExtended[1] = "Causes nearby Peons to run into the Burrow so that they can defend their base.";
+            ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -12638,9 +14296,16 @@ namespace War3Api.Object
         protected virtual Bearform LoadBearform(ObjectDatabaseBase db)
         {
             var ability = new Bearform(db);
+            ability.TextName = "Bear Form";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Bear Form";
+            ability.TextTooltipTurnOff[1] = "Night Elf Form";
+            ability.TextTooltipNormalExtended[1] = "Transforms the Druid into a bear, slowing mana regeneration, but making him an excellent warrior.";
+            ability.TextTooltipTurnOffExtended[1] = "Transforms the Druid into a Night Elf.";
+            ability.TextHotkeyNormalRaw = "F";
+            ability.TextHotkeyTurnOffRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -12687,9 +14352,9 @@ namespace War3Api.Object
             ability.StatsEffectsRaw[3] = null;
             ability.StatsEffectsRaw[4] = null;
             ability.DataNormalFormUnitRaw[1] = "edoc";
-            ability.DataNormalFormUnitRaw[2] = " - ";
-            ability.DataNormalFormUnitRaw[3] = " - ";
-            ability.DataNormalFormUnitRaw[4] = " - ";
+            ability.DataNormalFormUnitRaw[2] = " -";
+            ability.DataNormalFormUnitRaw[3] = " -";
+            ability.DataNormalFormUnitRaw[4] = " -";
             ability.DataMorphingFlagsRaw[1] = 1;
             ability.DataMorphingFlagsRaw[2] = 0;
             ability.DataMorphingFlagsRaw[3] = 0;
@@ -12712,9 +14377,13 @@ namespace War3Api.Object
         protected virtual Beserk LoadBeserk(ObjectDatabaseBase db)
         {
             var ability = new Beserk(db);
+            ability.TextName = "Berserk";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Berserk";
+            ability.TextTooltipNormalExtended[1] = "Causes this unit to attack <Absk,DataB1,%>% faster, but take <Absk,DataC1,%>% more damage.";
+            ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -12778,6 +14447,7 @@ namespace War3Api.Object
         protected virtual BerserkerUpgrade LoadBerserkerUpgrade(ObjectDatabaseBase db)
         {
             var ability = new BerserkerUpgrade(db);
+            ability.TextName = "Berserker Upgrade";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
@@ -12836,9 +14506,16 @@ namespace War3Api.Object
         protected virtual BlackArrowMeleeCreep LoadBlackArrowMeleeCreep(ObjectDatabaseBase db)
         {
             var ability = new BlackArrowMeleeCreep(db);
+            ability.TextName = "Black Arrow";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Black Arrow";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Adds <ACbk,DataA1> bonus damage to attacks. Units killed while under the effect of Black Arrow will turn into skeletons.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -12890,6 +14567,7 @@ namespace War3Api.Object
         protected virtual BlightDispelSmall LoadBlightDispelSmall(ObjectDatabaseBase db)
         {
             var ability = new BlightDispelSmall(db);
+            ability.TextName = "Blight Dispel Small";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -12952,6 +14630,7 @@ namespace War3Api.Object
         protected virtual BlightDispelLarge LoadBlightDispelLarge(ObjectDatabaseBase db)
         {
             var ability = new BlightDispelLarge(db);
+            ability.TextName = "Blight Dispel Large";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -13014,6 +14693,7 @@ namespace War3Api.Object
         protected virtual BlightGrowthSmall LoadBlightGrowthSmall(ObjectDatabaseBase db)
         {
             var ability = new BlightGrowthSmall(db);
+            ability.TextName = "Blight Growth Small";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
@@ -13076,6 +14756,7 @@ namespace War3Api.Object
         protected virtual BlightGrowthLarge LoadBlightGrowthLarge(ObjectDatabaseBase db)
         {
             var ability = new BlightGrowthLarge(db);
+            ability.TextName = "Blight Growth Large";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
@@ -13138,6 +14819,7 @@ namespace War3Api.Object
         protected virtual BlightedGoldMine LoadBlightedGoldMine(ObjectDatabaseBase db)
         {
             var ability = new BlightedGoldMine(db);
+            ability.TextName = "Blighted Gold Mine Ability";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
@@ -13208,9 +14890,14 @@ namespace War3Api.Object
         protected virtual BlinkBeastmasterBear LoadBlinkBeastmasterBear(ObjectDatabaseBase db)
         {
             var ability = new BlinkBeastmasterBear(db);
+            ability.TextName = "Blink";
+            ability.TextEditorSuffix = "(Neutral)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Blink";
+            ability.TextTooltipNormalExtended[1] = "Teleports the bear a short distance, allowing it to move in and out of combat.";
+            ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -13262,9 +14949,14 @@ namespace War3Api.Object
         protected virtual BlizzardCreep LoadBlizzardCreep(ObjectDatabaseBase db)
         {
             var ability = new BlizzardCreep(db);
+            ability.TextName = "Blizzard";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Blizzard";
+            ability.TextTooltipNormalExtended[1] = "Calls down <ACbz,DataA1> freezing ice shard waves; each wave deals <ACbz,DataB1> damage to units in a small area.";
+            ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -13340,9 +15032,16 @@ namespace War3Api.Object
         protected virtual Bloodlust LoadBloodlust(ObjectDatabaseBase db)
         {
             var ability = new Bloodlust(db);
+            ability.TextName = "Bloodlust";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Bloodlust";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Increases a friendly unit's attack rate by <Ablo,DataA1,%>% and movement speed by <Ablo,DataB1,%>%. |nLasts <Ablo,Dur1> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "B";
+            ability.TextHotkeyTurnOffRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 11;
             ability.StatsLevels = 1;
@@ -13406,9 +15105,17 @@ namespace War3Api.Object
         protected virtual BloodlustCreep LoadBloodlustCreep(ObjectDatabaseBase db)
         {
             var ability = new BloodlustCreep(db);
+            ability.TextName = "Bloodlust";
+            ability.TextEditorSuffix = " (Neutral Hostile 1)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Bloodlust";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Increases a target friendly unit's attack rate by <ACbl,DataA1,%>% and movement speed by <ACbl,DataB1,%>% for <ACbl,Dur1> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "L";
+            ability.TextHotkeyTurnOffRaw = "L";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 11;
             ability.StatsLevels = 1;
@@ -13468,9 +15175,17 @@ namespace War3Api.Object
         protected virtual BloodlustCreepHotkeyB LoadBloodlustCreepHotkeyB(ObjectDatabaseBase db)
         {
             var ability = new BloodlustCreepHotkeyB(db);
+            ability.TextName = "Bloodlust";
+            ability.TextEditorSuffix = " (Neutral Hostile 2)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Bloodlust";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Increases a target friendly unit's attack rate by <ACbb,DataA1,%>% and movement speed by <ACbb,DataB1,%>% for <ACbb,Dur1> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "B";
+            ability.TextHotkeyTurnOffRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 11;
             ability.StatsLevels = 1;
@@ -13522,9 +15237,14 @@ namespace War3Api.Object
         protected virtual BreathOfFireCreep LoadBreathOfFireCreep(ObjectDatabaseBase db)
         {
             var ability = new BreathOfFireCreep(db);
+            ability.TextName = "Breath of Fire";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Breath of Fire";
+            ability.TextTooltipNormalExtended[1] = "Breathes a cone of fire at enemy units, dealing <ACbc,DataA1> damage.";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -13596,9 +15316,13 @@ namespace War3Api.Object
         protected virtual BreathOfFrostCreep LoadBreathOfFrostCreep(ObjectDatabaseBase db)
         {
             var ability = new BreathOfFrostCreep(db);
+            ability.TextName = "Breath of Frost";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Breath of Frost";
+            ability.TextTooltipNormalExtended[1] = "Breathes a cone of frost at enemy units that deals <ACbf,DataA1> initial damage, and <ACbf,DataE1> damage per second over <ACbf,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -13670,6 +15394,7 @@ namespace War3Api.Object
         protected virtual BuildNeutral LoadBuildNeutral(ObjectDatabaseBase db)
         {
             var ability = new BuildNeutral(db);
+            ability.TextName = "Build (Neutral)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -13724,6 +15449,7 @@ namespace War3Api.Object
         protected virtual BuildHuman LoadBuildHuman(ObjectDatabaseBase db)
         {
             var ability = new BuildHuman(db);
+            ability.TextName = "Build (Human)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
@@ -13778,6 +15504,7 @@ namespace War3Api.Object
         protected virtual BuildOrc LoadBuildOrc(ObjectDatabaseBase db)
         {
             var ability = new BuildOrc(db);
+            ability.TextName = "Build (Orc)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
@@ -13832,6 +15559,7 @@ namespace War3Api.Object
         protected virtual BuildNightElf LoadBuildNightElf(ObjectDatabaseBase db)
         {
             var ability = new BuildNightElf(db);
+            ability.TextName = "Build (Night Elf)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
@@ -13886,6 +15614,7 @@ namespace War3Api.Object
         protected virtual BuildUndead LoadBuildUndead(ObjectDatabaseBase db)
         {
             var ability = new BuildUndead(db);
+            ability.TextName = "Build (Undead)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
@@ -13940,6 +15669,7 @@ namespace War3Api.Object
         protected virtual BuildNaga LoadBuildNaga(ObjectDatabaseBase db)
         {
             var ability = new BuildNaga(db);
+            ability.TextName = "Build (Naga)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -13994,9 +15724,17 @@ namespace War3Api.Object
         protected virtual Burrow LoadBurrow(ObjectDatabaseBase db)
         {
             var ability = new Burrow(db);
+            ability.TextName = "Burrow";
+            ability.TextEditorSuffix = " (Crypt Fiend)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Burrow";
+            ability.TextTooltipTurnOff[1] = "Unburrow";
+            ability.TextTooltipNormalExtended[1] = "The Crypt Fiend digs into the ground, becomes invisible, and gains a regeneration rate of <ucrm,regenHP> hit points per second. |nThe Crypt Fiend cannot attack while burrowed.";
+            ability.TextTooltipTurnOffExtended[1] = "The Crypt Fiend pops out of the ground and becomes visible again.";
+            ability.TextHotkeyNormalRaw = "B";
+            ability.TextHotkeyTurnOffRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -14068,9 +15806,17 @@ namespace War3Api.Object
         protected virtual BurrowScarabLvl2 LoadBurrowScarabLvl2(ObjectDatabaseBase db)
         {
             var ability = new BurrowScarabLvl2(db);
+            ability.TextName = "Burrow";
+            ability.TextEditorSuffix = " (Scarab lvl 2)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Burrow";
+            ability.TextTooltipTurnOff[1] = "Unburrow";
+            ability.TextTooltipNormalExtended[1] = "The Carrion Beetle digs into the ground and becomes invisible.";
+            ability.TextTooltipTurnOffExtended[1] = "The Carrion Beetle pops out of the ground and becomes visible again.";
+            ability.TextHotkeyNormalRaw = "B";
+            ability.TextHotkeyTurnOffRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -14142,9 +15888,17 @@ namespace War3Api.Object
         protected virtual BurrowScarabLvl3 LoadBurrowScarabLvl3(ObjectDatabaseBase db)
         {
             var ability = new BurrowScarabLvl3(db);
+            ability.TextName = "Burrow";
+            ability.TextEditorSuffix = " (Scarab lvl 3)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Burrow";
+            ability.TextTooltipTurnOff[1] = "Unburrow";
+            ability.TextTooltipNormalExtended[1] = "The Carrion Beetle digs into the ground and becomes invisible.";
+            ability.TextTooltipTurnOffExtended[1] = "The Carrion Beetle pops out of the ground and becomes visible again.";
+            ability.TextHotkeyNormalRaw = "B";
+            ability.TextHotkeyTurnOffRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -14216,9 +15970,17 @@ namespace War3Api.Object
         protected virtual BurrowBarbedArachnathid LoadBurrowBarbedArachnathid(ObjectDatabaseBase db)
         {
             var ability = new BurrowBarbedArachnathid(db);
+            ability.TextName = "Burrow";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Burrow";
+            ability.TextTooltipTurnOff[1] = "Unburrow";
+            ability.TextTooltipNormalExtended[1] = "The Arachnathid digs into the ground and becomes invisible.";
+            ability.TextTooltipTurnOffExtended[1] = "The Arachnathid pops out of the ground and becomes visible again.";
+            ability.TextHotkeyNormalRaw = "B";
+            ability.TextHotkeyTurnOffRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -14270,6 +16032,8 @@ namespace War3Api.Object
         protected virtual BurrowDetectionFlyers LoadBurrowDetectionFlyers(ObjectDatabaseBase db)
         {
             var ability = new BurrowDetectionFlyers(db);
+            ability.TextName = "Burrow Detection";
+            ability.TextEditorSuffix = " (Fliers, Obsolete)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -14328,9 +16092,13 @@ namespace War3Api.Object
         protected virtual Cannibalize LoadCannibalize(ObjectDatabaseBase db)
         {
             var ability = new Cannibalize(db);
+            ability.TextName = "Cannibalize";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Cannibalize";
+            ability.TextTooltipNormalExtended[1] = "Consumes a nearby corpse to heal <Acan,DataA1> hit points per second.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -14390,9 +16158,13 @@ namespace War3Api.Object
         protected virtual CannibalizeAbomination LoadCannibalizeAbomination(ObjectDatabaseBase db)
         {
             var ability = new CannibalizeAbomination(db);
+            ability.TextName = "Cannibalize";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Cannibalize";
+            ability.TextTooltipNormalExtended[1] = "Consumes a nearby corpse to heal <Acn2,DataA1> hit points per second.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -14444,9 +16216,14 @@ namespace War3Api.Object
         protected virtual CannibalizeCreep LoadCannibalizeCreep(ObjectDatabaseBase db)
         {
             var ability = new CannibalizeCreep(db);
+            ability.TextName = "Cannibalize";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Cannibalize";
+            ability.TextTooltipNormalExtended[1] = "Consumes a nearby corpse to heal <ACcn,DataA1> hit points per second.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -14506,6 +16283,7 @@ namespace War3Api.Object
         protected virtual CargoHoldBurrow LoadCargoHoldBurrow(ObjectDatabaseBase db)
         {
             var ability = new CargoHoldBurrow(db);
+            ability.TextName = "Cargo Hold (Orc Burrow)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
@@ -14564,6 +16342,7 @@ namespace War3Api.Object
         protected virtual CargoHoldDevour LoadCargoHoldDevour(ObjectDatabaseBase db)
         {
             var ability = new CargoHoldDevour(db);
+            ability.TextName = "Devour Cargo";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
@@ -14630,6 +16409,8 @@ namespace War3Api.Object
         protected virtual CargoHoldMeatWagon LoadCargoHoldMeatWagon(ObjectDatabaseBase db)
         {
             var ability = new CargoHoldMeatWagon(db);
+            ability.TextName = "Cargo Hold";
+            ability.TextEditorSuffix = "(Meat Wagon)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
@@ -14688,6 +16469,8 @@ namespace War3Api.Object
         protected virtual CargoHoldShip LoadCargoHoldShip(ObjectDatabaseBase db)
         {
             var ability = new CargoHoldShip(db);
+            ability.TextName = "Cargo Hold";
+            ability.TextEditorSuffix = " (Ship)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -14746,6 +16529,8 @@ namespace War3Api.Object
         protected virtual CargoHoldTank LoadCargoHoldTank(ObjectDatabaseBase db)
         {
             var ability = new CargoHoldTank(db);
+            ability.TextName = "Cargo Hold";
+            ability.TextEditorSuffix = " (Tank)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
@@ -14804,6 +16589,8 @@ namespace War3Api.Object
         protected virtual CargoHoldTransport LoadCargoHoldTransport(ObjectDatabaseBase db)
         {
             var ability = new CargoHoldTransport(db);
+            ability.TextName = "Cargo Hold";
+            ability.TextEditorSuffix = " (Goblin Zeppelin)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -14862,9 +16649,17 @@ namespace War3Api.Object
         protected virtual CargoHoldGoldMine LoadCargoHoldGoldMine(ObjectDatabaseBase db)
         {
             var ability = new CargoHoldGoldMine(db);
+            ability.TextName = "Load";
+            ability.TextEditorSuffix = " (Entangled Gold Mine)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Load";
+            ability.TextTooltipTurnOff[1] = "Unload All";
+            ability.TextTooltipNormalExtended[1] = "Orders a Wisp to enter the gold mine.";
+            ability.TextTooltipTurnOffExtended[1] = "Removes all Wisps from the gold mine.";
+            ability.TextHotkeyNormalRaw = "L";
+            ability.TextHotkeyTurnOffRaw = "U";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -14920,6 +16715,7 @@ namespace War3Api.Object
         protected virtual CargoHoldDeath LoadCargoHoldDeath(ObjectDatabaseBase db)
         {
             var ability = new CargoHoldDeath(db);
+            ability.TextName = "Cargo Hold Death";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -14986,9 +16782,14 @@ namespace War3Api.Object
         protected virtual CarrionSwarmCreep LoadCarrionSwarmCreep(ObjectDatabaseBase db)
         {
             var ability = new CarrionSwarmCreep(db);
+            ability.TextName = "Carrion Swarm";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Carrion Swarm";
+            ability.TextTooltipNormalExtended[1] = "Sends a horde of bats to deal <ACca,DataA1> damage to each enemy land unit in a line, up to <ACca,DataB1> max damage.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -15056,9 +16857,13 @@ namespace War3Api.Object
         protected virtual CrushingWave LoadCrushingWave(ObjectDatabaseBase db)
         {
             var ability = new CrushingWave(db);
+            ability.TextName = "Crushing Wave";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Crushing Wave";
+            ability.TextTooltipNormalExtended[1] = "Sends a gigantic wave which deals <ACcv,DataA1> damage to each enemy land unit in a line, up to <ACcv,DataB1> max damage.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -15126,9 +16931,14 @@ namespace War3Api.Object
         protected virtual CrushingWaveDragonTurtle LoadCrushingWaveDragonTurtle(ObjectDatabaseBase db)
         {
             var ability = new CrushingWaveDragonTurtle(db);
+            ability.TextName = "Crushing Wave";
+            ability.TextEditorSuffix = "(Lesser)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Crushing Wave";
+            ability.TextTooltipNormalExtended[1] = "Sends a gigantic wave which deals <ACc2,DataA1> damage to each enemy land unit in a line, up to <ACc2,DataB1> max damage.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -15180,9 +16990,14 @@ namespace War3Api.Object
         protected virtual CrushingWaveLesser LoadCrushingWaveLesser(ObjectDatabaseBase db)
         {
             var ability = new CrushingWaveLesser(db);
+            ability.TextName = "Crushing Wave";
+            ability.TextEditorSuffix = "(Lesser)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Crushing Wave";
+            ability.TextTooltipNormalExtended[1] = "Sends a gigantic wave which deals <ACc3,DataA1> damage to each enemy land unit in a line, up to <ACc3,DataB1> max damage.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -15234,9 +17049,14 @@ namespace War3Api.Object
         protected virtual ChainLightningCreep LoadChainLightningCreep(ObjectDatabaseBase db)
         {
             var ability = new ChainLightningCreep(db);
+            ability.TextName = "Chain Lightning";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Chain Lightning";
+            ability.TextTooltipNormalExtended[1] = "Hurls a bolt of lightning that bounces up to <ACcl,DataB1> times, dealing <ACcl,DataA1> damage to the primary target. Each jump deals less damage.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -15300,9 +17120,13 @@ namespace War3Api.Object
         protected virtual ChainDispel LoadChainDispel(ObjectDatabaseBase db)
         {
             var ability = new ChainDispel(db);
+            ability.TextName = "Ray of Disruption";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Cast Ray of Disruption";
+            ability.TextTooltipNormalExtended[1] = "Conjures a stream of neutralizing magic that bounces up to <Ache,DataC1> times, dispelling units in its wake.";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -15354,6 +17178,7 @@ namespace War3Api.Object
         protected virtual ChaosGrunt LoadChaosGrunt(ObjectDatabaseBase db)
         {
             var ability = new ChaosGrunt(db);
+            ability.TextEditorSuffix = " (Grunt)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
@@ -15412,6 +17237,7 @@ namespace War3Api.Object
         protected virtual ChaosRaider LoadChaosRaider(ObjectDatabaseBase db)
         {
             var ability = new ChaosRaider(db);
+            ability.TextEditorSuffix = " (Raider)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
@@ -15470,6 +17296,7 @@ namespace War3Api.Object
         protected virtual ChaosShaman LoadChaosShaman(ObjectDatabaseBase db)
         {
             var ability = new ChaosShaman(db);
+            ability.TextEditorSuffix = " (Shaman)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
@@ -15528,6 +17355,7 @@ namespace War3Api.Object
         protected virtual ChaosKodo LoadChaosKodo(ObjectDatabaseBase db)
         {
             var ability = new ChaosKodo(db);
+            ability.TextEditorSuffix = " (Kodo Beast)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
@@ -15586,6 +17414,7 @@ namespace War3Api.Object
         protected virtual ChaosPeon LoadChaosPeon(ObjectDatabaseBase db)
         {
             var ability = new ChaosPeon(db);
+            ability.TextEditorSuffix = " (Peon)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
@@ -15644,6 +17473,7 @@ namespace War3Api.Object
         protected virtual ChaosGrom LoadChaosGrom(ObjectDatabaseBase db)
         {
             var ability = new ChaosGrom(db);
+            ability.TextEditorSuffix = " (Grommash)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
@@ -15702,6 +17532,7 @@ namespace War3Api.Object
         protected virtual ChaosCargoLoad LoadChaosCargoLoad(ObjectDatabaseBase db)
         {
             var ability = new ChaosCargoLoad(db);
+            ability.TextName = "Chaos Cargo Load";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
@@ -15760,9 +17591,14 @@ namespace War3Api.Object
         protected virtual Charm LoadCharm(ObjectDatabaseBase db)
         {
             var ability = new Charm(db);
+            ability.TextName = "Charm";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Charm";
+            ability.TextTooltipNormalExtended[1] = "Takes control of a target enemy unit. |nCharm cannot be used on Heroes, or creeps above level <ACch,DataA1>.";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -15818,9 +17654,13 @@ namespace War3Api.Object
         protected virtual CleavingAttackCreep LoadCleavingAttackCreep(ObjectDatabaseBase db)
         {
             var ability = new CleavingAttackCreep(db);
+            ability.TextName = "Cleaving Attack";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Cleaving Attack";
+            ability.TextTooltipNormalExtended[1] = "The creature strikes with such force that <ACce,DataA1,%>% of their damage strikes through to enemies near the primary attacked unit.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -15872,9 +17712,13 @@ namespace War3Api.Object
         protected virtual CloudOfFog LoadCloudOfFog(ObjectDatabaseBase db)
         {
             var ability = new CloudOfFog(db);
+            ability.TextName = "Cloud";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Cloud";
+            ability.TextTooltipNormalExtended[1] = "Cast on enemy buildings with ranged attacks to stop the buildings from attacking. |nLasts <Aclf,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -15942,9 +17786,17 @@ namespace War3Api.Object
         protected virtual ColdArrowsCreep LoadColdArrowsCreep(ObjectDatabaseBase db)
         {
             var ability = new ColdArrowsCreep(db);
+            ability.TextName = "Cold Arrows";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Cold Arrows";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Adds bonus cold damage to an attack and slows target, but drains mana with each shot fired.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "C";
+            ability.TextHotkeyTurnOffRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -16012,9 +17864,13 @@ namespace War3Api.Object
         protected virtual ControlMagic LoadControlMagic(ObjectDatabaseBase db)
         {
             var ability = new ControlMagic(db);
+            ability.TextName = "Control Magic";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Control Magic";
+            ability.TextTooltipNormalExtended[1] = "Takes control of an enemy summoned unit. The mana cost is <Acmg,DataB1,%>% of the summoned unit's current hit points.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -16078,9 +17934,16 @@ namespace War3Api.Object
         protected virtual CorporealForm LoadCorporealForm(ObjectDatabaseBase db)
         {
             var ability = new CorporealForm(db);
+            ability.TextName = "Corporeal Form";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Corporeal Form";
+            ability.TextTooltipTurnOff[1] = "Ethereal Form";
+            ability.TextTooltipNormalExtended[1] = "Turns the Spirit Walker corporeal, allowing him to attack and take physical damage.";
+            ability.TextTooltipTurnOffExtended[1] = "Turns the Spirit Walker ethereal, making him immune to physical damage but unable to attack. He can cast spells and will take extra damage from Magic attacks and spells.";
+            ability.TextHotkeyNormalRaw = "F";
+            ability.TextHotkeyTurnOffRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -16152,9 +18015,12 @@ namespace War3Api.Object
         protected virtual CorrosiveBreath LoadCorrosiveBreath(ObjectDatabaseBase db)
         {
             var ability = new CorrosiveBreath(db);
+            ability.TextName = "Corrosive Breath";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Corrosive Breath";
+            ability.TextTooltipNormalExtended[1] = "Hurls a ball of corrosive bile that is effective against buildings.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -16210,11 +18076,17 @@ namespace War3Api.Object
         protected virtual CoupleArcher LoadCoupleArcher(ObjectDatabaseBase db)
         {
             var ability = new CoupleArcher(db);
+            ability.TextName = "Mount Hippogryph";
+            ability.TextEditorSuffix = "(Old)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Mount Hippogryph";
+            ability.TextTooltipNormalExtended[1] = "Mounts a Hippogryph so that the Archer can attack from the air. The mounted unit cannot dismount. |n|n|cffffcc00Attacks land and air units.|r";
+            ability.TextHotkeyNormalRaw = "U";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
+            ability.TextOrderStringUseTurnOnRaw = "mounthippogryph";
             ability.StatsLevels = 1;
             ability.StatsRequiredLevel = 0;
             ability.StatsLevelSkipRequirement = 0;
@@ -16272,11 +18144,17 @@ namespace War3Api.Object
         protected virtual CoupleHippogryph LoadCoupleHippogryph(ObjectDatabaseBase db)
         {
             var ability = new CoupleHippogryph(db);
+            ability.TextName = "Pick up Archer";
+            ability.TextEditorSuffix = "(Old)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Pick up Archer";
+            ability.TextTooltipNormalExtended[1] = "Picks up an Archer so that the Archer can attack from the air. The mounted unit cannot dismount. |n|n|cffffcc00Attacks land and air units.|r";
+            ability.TextHotkeyNormalRaw = "U";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
+            ability.TextOrderStringUseTurnOnRaw = "loadarcher";
             ability.StatsLevels = 1;
             ability.StatsRequiredLevel = 0;
             ability.StatsLevelSkipRequirement = 0;
@@ -16334,11 +18212,16 @@ namespace War3Api.Object
         protected virtual CoupleInstantArcher LoadCoupleInstantArcher(ObjectDatabaseBase db)
         {
             var ability = new CoupleInstantArcher(db);
+            ability.TextName = "Mount Hippogryph";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Mount Hippogryph";
+            ability.TextTooltipNormalExtended[1] = "Mounts a Hippogryph so that the Archer can attack from the air. |n|n|cffffcc00Attacks land and air units.|r";
+            ability.TextHotkeyNormalRaw = "U";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
+            ability.TextOrderStringUseTurnOnRaw = "coupletarget";
             ability.StatsLevels = 1;
             ability.StatsRequiredLevel = 0;
             ability.StatsLevelSkipRequirement = 0;
@@ -16400,11 +18283,16 @@ namespace War3Api.Object
         protected virtual CoupleInstantHippogryph LoadCoupleInstantHippogryph(ObjectDatabaseBase db)
         {
             var ability = new CoupleInstantHippogryph(db);
+            ability.TextName = "Pick up Archer";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Pick up Archer";
+            ability.TextTooltipNormalExtended[1] = "Picks up an Archer so that the Archer can attack from the air. |n|n|cffffcc00Attacks land and air units.|r";
+            ability.TextHotkeyNormalRaw = "U";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
+            ability.TextOrderStringUseTurnOnRaw = "coupletarget";
             ability.StatsLevels = 1;
             ability.StatsRequiredLevel = 0;
             ability.StatsLevelSkipRequirement = 0;
@@ -16466,6 +18354,7 @@ namespace War3Api.Object
         protected virtual CreepSleep LoadCreepSleep(ObjectDatabaseBase db)
         {
             var ability = new CreepSleep(db);
+            ability.TextName = "Sleep";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
@@ -16520,9 +18409,13 @@ namespace War3Api.Object
         protected virtual Cripple LoadCripple(ObjectDatabaseBase db)
         {
             var ability = new Cripple(db);
+            ability.TextName = "Cripple";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Cripple";
+            ability.TextTooltipNormalExtended[1] = "Reduces movement speed by <Acri,DataA1,%>%, attack rate by <Acri,DataB1,%>%, and damage by <Acri,DataC1,%>% of a target enemy unit. |nLasts <Acri,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -16548,7 +18441,7 @@ namespace War3Api.Object
             ability.StatsCooldown[2] = 0f;
             ability.StatsCooldown[3] = 0f;
             ability.StatsCooldown[4] = 0f;
-            ability.StatsManaCost[1] = 125;
+            ability.StatsManaCost[1] = 100;
             ability.StatsManaCost[2] = 0;
             ability.StatsManaCost[3] = 0;
             ability.StatsManaCost[4] = 0;
@@ -16586,9 +18479,14 @@ namespace War3Api.Object
         protected virtual CrippleWarlock LoadCrippleWarlock(ObjectDatabaseBase db)
         {
             var ability = new CrippleWarlock(db);
+            ability.TextName = "Cripple";
+            ability.TextEditorSuffix = " (Warlock)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Cripple";
+            ability.TextTooltipNormalExtended[1] = "Reduces movement speed by <Acri,DataA1,%>%, attack rate by <Acri,DataB1,%>%, and damage by <Acri,DataC1,%>% of a target enemy unit. |nLasts <Acri,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -16652,9 +18550,14 @@ namespace War3Api.Object
         protected virtual CrippleCreep LoadCrippleCreep(ObjectDatabaseBase db)
         {
             var ability = new CrippleCreep(db);
+            ability.TextName = "Cripple";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Cripple";
+            ability.TextTooltipNormalExtended[1] = "Reduces movement speed by <ACcr,DataA1,%>%, attack rate by <ACcr,DataB1,%>%, and damage by <ACcr,DataC1,%>% of a target enemy unit. |nLasts <ACcr,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -16718,9 +18621,13 @@ namespace War3Api.Object
         protected virtual CriticalStrikeCreep LoadCriticalStrikeCreep(ObjectDatabaseBase db)
         {
             var ability = new CriticalStrikeCreep(db);
+            ability.TextName = "Critical Strike";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Critical Strike";
+            ability.TextTooltipNormalExtended[1] = "Gives a <ACct,DataA1>% chance to do <ACct,DataB1> times total damage on an attack.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -16796,9 +18703,16 @@ namespace War3Api.Object
         protected virtual Curse LoadCurse(ObjectDatabaseBase db)
         {
             var ability = new Curse(db);
+            ability.TextName = "Curse";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Curse";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.";
+            ability.TextTooltipNormalExtended[1] = "Curses a target enemy unit, causing it to have a <Acrs,DataA1,%>% chance to miss on an attack. |nLasts <Acrs,Dur1> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.";
+            ability.TextHotkeyNormalRaw = "C";
+            ability.TextHotkeyTurnOffRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 1;
             ability.StatsLevels = 1;
@@ -16854,9 +18768,17 @@ namespace War3Api.Object
         protected virtual CurseCreep LoadCurseCreep(ObjectDatabaseBase db)
         {
             var ability = new CurseCreep(db);
+            ability.TextName = "Curse";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Curse";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.";
+            ability.TextTooltipNormalExtended[1] = "Curses a target enemy unit, causing it to have a <ACcs,DataA1,%>% chance to miss on an attack. |nLasts <ACcs,Dur1> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.";
+            ability.TextHotkeyNormalRaw = "C";
+            ability.TextHotkeyTurnOffRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 1;
             ability.StatsLevels = 1;
@@ -16912,9 +18834,13 @@ namespace War3Api.Object
         protected virtual Cyclone_Acyc LoadCyclone_Acyc(ObjectDatabaseBase db)
         {
             var ability = new Cyclone_Acyc(db);
+            ability.TextName = "Cyclone";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Cyclone";
+            ability.TextTooltipNormalExtended[1] = "Tosses a target non-mechanical enemy unit into the air, rendering it unable to move, attack or cast spells, and stopping others from attacking or casting on it. |nLasts <Acyc,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -16970,9 +18896,13 @@ namespace War3Api.Object
         protected virtual CycloneNaga LoadCycloneNaga(ObjectDatabaseBase db)
         {
             var ability = new CycloneNaga(db);
+            ability.TextName = "Cyclone";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "naga";
+            ability.TextTooltipNormal[1] = "Cyclone";
+            ability.TextTooltipNormalExtended[1] = "Tosses a target non-mechanical enemy unit into the air, rendering it unable to move, attack or cast spells, and stopping others from attacking or casting on it. |nLasts <Acny,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -17024,9 +18954,14 @@ namespace War3Api.Object
         protected virtual CycloneCreep LoadCycloneCreep(ObjectDatabaseBase db)
         {
             var ability = new CycloneCreep(db);
+            ability.TextName = "Cyclone";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Cyclone";
+            ability.TextTooltipNormalExtended[1] = "Tosses a target non-mechanical enemy unit into the air, rendering it unable to move, attack or cast spells, and stopping others from attacking or casting on it. |nLasts <ACcy,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -17082,9 +19017,14 @@ namespace War3Api.Object
         protected virtual CycloneCenarius LoadCycloneCenarius(ObjectDatabaseBase db)
         {
             var ability = new CycloneCenarius(db);
+            ability.TextName = "Cyclone";
+            ability.TextEditorSuffix = "(Cenarius)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Cyclone";
+            ability.TextTooltipNormalExtended[1] = "Tosses a target enemy unit into the air, rendering it unable to move, attack or cast spells, and stopping others from attacking or casting on it. |nLasts <SCc1,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -17140,9 +19080,14 @@ namespace War3Api.Object
         protected virtual DeathCoilCreep LoadDeathCoilCreep(ObjectDatabaseBase db)
         {
             var ability = new DeathCoilCreep(db);
+            ability.TextName = "Death Coil";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Death Coil";
+            ability.TextTooltipNormalExtended[1] = "A coil of death that can heal a friendly Undead unit for <ACdc,DataA1> hit points, or deal half damage to an enemy living unit.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -17198,6 +19143,8 @@ namespace War3Api.Object
         protected virtual DeathDamageSapper LoadDeathDamageSapper(ObjectDatabaseBase db)
         {
             var ability = new DeathDamageSapper(db);
+            ability.TextName = "AOE damage upon death";
+            ability.TextEditorSuffix = " (Sapper)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -17268,6 +19215,8 @@ namespace War3Api.Object
         protected virtual DeathDamageMine LoadDeathDamageMine(ObjectDatabaseBase db)
         {
             var ability = new DeathDamageMine(db);
+            ability.TextName = "AOE damage upon death";
+            ability.TextEditorSuffix = "(Goblin Mine)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -17338,6 +19287,8 @@ namespace War3Api.Object
         protected virtual DeathDamageMineBIG LoadDeathDamageMineBIG(ObjectDatabaseBase db)
         {
             var ability = new DeathDamageMineBIG(db);
+            ability.TextName = "AOE damage upon death";
+            ability.TextEditorSuffix = "(Big Mine)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -17408,9 +19359,13 @@ namespace War3Api.Object
         protected virtual Decouple LoadDecouple(ObjectDatabaseBase db)
         {
             var ability = new Decouple(db);
+            ability.TextName = "Dismount";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Dismount Archer & Hippogryph";
+            ability.TextTooltipNormalExtended[1] = "Dismounts the Archer from the Hippogryph.";
+            ability.TextHotkeyNormalRaw = "U";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -17470,9 +19425,16 @@ namespace War3Api.Object
         protected virtual Defend LoadDefend(ObjectDatabaseBase db)
         {
             var ability = new Defend(db);
+            ability.TextName = "Defend";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Defend";
+            ability.TextTooltipTurnOff[1] = "Stop Defend";
+            ability.TextTooltipNormalExtended[1] = "Activate to have a <Adef,DataF1>% chance to reflect Piercing attacks upon the source, and to take only <Adef,DataA1,%>% of the damage from attacks that are not reflected. While Defend is active, move speed is reduced by <Adef,DataC1,%>%.";
+            ability.TextTooltipTurnOffExtended[1] = "Deactivate to move at normal speed, but take regular damage from Piercing attacks.";
+            ability.TextHotkeyNormalRaw = "D";
+            ability.TextHotkeyTurnOffRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -17556,6 +19518,8 @@ namespace War3Api.Object
         protected virtual DetectSentryWard LoadDetectSentryWard(ObjectDatabaseBase db)
         {
             var ability = new DetectSentryWard(db);
+            ability.TextName = "Detector";
+            ability.TextEditorSuffix = "(Sentry Ward)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
@@ -17614,9 +19578,13 @@ namespace War3Api.Object
         protected virtual DetectShade LoadDetectShade(ObjectDatabaseBase db)
         {
             var ability = new DetectShade(db);
+            ability.TextName = "True Sight";
+            ability.TextEditorSuffix = " (Shade)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "True Sight";
+            ability.TextTooltipNormalExtended[1] = "Reveals nearby invisible units.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -17672,9 +19640,13 @@ namespace War3Api.Object
         protected virtual DetectGeneral LoadDetectGeneral(ObjectDatabaseBase db)
         {
             var ability = new DetectGeneral(db);
+            ability.TextName = "True Sight";
+            ability.TextEditorSuffix = " (Neutral 1)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "True Sight";
+            ability.TextTooltipNormalExtended[1] = "Reveals nearby invisible units.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -17730,9 +19702,13 @@ namespace War3Api.Object
         protected virtual DetectWarEagle LoadDetectWarEagle(ObjectDatabaseBase db)
         {
             var ability = new DetectWarEagle(db);
+            ability.TextName = "True Sight";
+            ability.TextEditorSuffix = " (Neutral 2)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "True Sight";
+            ability.TextTooltipNormalExtended[1] = "Reveals nearby invisible units.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -17784,9 +19760,13 @@ namespace War3Api.Object
         protected virtual DetectGyrocopter LoadDetectGyrocopter(ObjectDatabaseBase db)
         {
             var ability = new DetectGyrocopter(db);
+            ability.TextName = "True Sight";
+            ability.TextEditorSuffix = " (Flying Machine)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "True Sight";
+            ability.TextTooltipNormalExtended[1] = "Reveals nearby invisible units.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -17842,9 +19822,13 @@ namespace War3Api.Object
         protected virtual DetectMagicSentinel LoadDetectMagicSentinel(ObjectDatabaseBase db)
         {
             var ability = new DetectMagicSentinel(db);
+            ability.TextName = "Magic Sentry";
+            ability.TextEditorSuffix = " (Human Towers)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Magic Sentry";
+            ability.TextTooltipNormalExtended[1] = "Reveals nearby invisible units.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -17900,9 +19884,13 @@ namespace War3Api.Object
         protected virtual Detonate LoadDetonate(ObjectDatabaseBase db)
         {
             var ability = new Detonate(db);
+            ability.TextName = "Detonate";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Detonate";
+            ability.TextTooltipNormalExtended[1] = "Destroys the Wisp, dispelling all magical buffs and draining <Adtn,DataA1> mana from each unit in an area around the Wisp. |n|cffffcc00Deals <Adtn,DataB1> damage to summoned units.|r";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -17962,9 +19950,13 @@ namespace War3Api.Object
         protected virtual Devour LoadDevour(ObjectDatabaseBase db)
         {
             var ability = new Devour(db);
+            ability.TextName = "Devour";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Devour";
+            ability.TextTooltipNormalExtended[1] = "Consumes an enemy land unit, slowly digesting it and dealing <Advc,DataC1> damage per second to it. If the Kodo Beast is killed while the consumed unit is still digesting, the unit that was devoured will be released.";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -18020,9 +20012,14 @@ namespace War3Api.Object
         protected virtual DevourDragonCreep LoadDevourDragonCreep(ObjectDatabaseBase db)
         {
             var ability = new DevourDragonCreep(db);
+            ability.TextName = "Devour";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Devour";
+            ability.TextTooltipNormalExtended[1] = "Consumes an enemy unit, slowly digesting it and dealing <Advc,DataB1> damage per second to it. If the creep is killed while the consumed unit is still digesting, the unit that was devoured will be released.";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -18078,9 +20075,13 @@ namespace War3Api.Object
         protected virtual DevourMagic LoadDevourMagic(ObjectDatabaseBase db)
         {
             var ability = new DevourMagic(db);
+            ability.TextName = "Devour Magic";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Devour Magic";
+            ability.TextTooltipNormalExtended[1] = "Consumes all magical buffs from units in an area. Each unit that is devoured of magic gives the Destroyer <Advm,DataA1> hit points and <Advm,DataB1> mana. |n|cffffcc00Deals <Advm,DataE1> damage to summoned units.|r";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -18156,9 +20157,14 @@ namespace War3Api.Object
         protected virtual DevourMagicCreep LoadDevourMagicCreep(ObjectDatabaseBase db)
         {
             var ability = new DevourMagicCreep(db);
+            ability.TextName = "Devour Magic";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Devour Magic";
+            ability.TextTooltipNormalExtended[1] = "Consumes all magical buffs from units in an area. Each unit that is devoured of magic gives the caster <Advm,DataA1> hit points and <Advm,DataB1> mana. |n|cffffcc00Deals <Advm,DataE1> damage to summoned units.|r";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -18214,9 +20220,14 @@ namespace War3Api.Object
         protected virtual DisenchantOld LoadDisenchantOld(ObjectDatabaseBase db)
         {
             var ability = new DisenchantOld(db);
+            ability.TextName = "Disenchant";
+            ability.TextEditorSuffix = "(Old)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Disenchant";
+            ability.TextTooltipNormalExtended[1] = "Removes all buffs from units in a target area. |n|cffffcc00Deals <Adch,DataB1> damage to summoned units.|r";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -18276,9 +20287,13 @@ namespace War3Api.Object
         protected virtual DisenchantNew LoadDisenchantNew(ObjectDatabaseBase db)
         {
             var ability = new DisenchantNew(db);
+            ability.TextName = "Disenchant";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Disenchant";
+            ability.TextTooltipNormalExtended[1] = "Removes all buffs from units in a target area. |n|cffffcc00Deals <Adcn,DataB1> damage to hostile summoned units.|r";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -18330,9 +20345,12 @@ namespace War3Api.Object
         protected virtual DispelMagic LoadDispelMagic(ObjectDatabaseBase db)
         {
             var ability = new DispelMagic(db);
+            ability.TextName = "Dispel Magic";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Dispel Magic";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -18392,9 +20410,13 @@ namespace War3Api.Object
         protected virtual DispelMagicCreep LoadDispelMagicCreep(ObjectDatabaseBase db)
         {
             var ability = new DispelMagicCreep(db);
+            ability.TextName = "Dispel Magic";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Dispel Magic";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -18454,9 +20476,16 @@ namespace War3Api.Object
         protected virtual DivineShieldCreep LoadDivineShieldCreep(ObjectDatabaseBase db)
         {
             var ability = new DivineShieldCreep(db);
+            ability.TextName = "Divine Shield";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Activate Divine Shield";
+            ability.TextTooltipTurnOff[1] = "Deactivate Divine Shield";
+            ability.TextTooltipNormalExtended[1] = "An impenetrable shield surrounds this unit, protecting it from all damage and spells for <ACds,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "D";
+            ability.TextHotkeyTurnOffRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -18508,9 +20537,14 @@ namespace War3Api.Object
         protected virtual DrainLifeCreep LoadDrainLifeCreep(ObjectDatabaseBase db)
         {
             var ability = new DrainLifeCreep(db);
+            ability.TextName = "Life Drain";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Life Drain";
+            ability.TextTooltipNormalExtended[1] = "Absorbs the life essence of a target enemy unit by taking <ACdr,DataA1> hit points per second from it and giving them to the caster. |nLasts <ACdr,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -18586,9 +20620,14 @@ namespace War3Api.Object
         protected virtual DropInstant LoadDropInstant(ObjectDatabaseBase db)
         {
             var ability = new DropInstant(db);
+            ability.TextName = "Unload Instant";
+            ability.TextEditorSuffix = " (Entangled Mine)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Unload All";
+            ability.TextTooltipNormalExtended[1] = "Unloads all units.";
+            ability.TextHotkeyNormalRaw = "U";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -18640,9 +20679,14 @@ namespace War3Api.Object
         protected virtual Drop_Adro LoadDrop_Adro(ObjectDatabaseBase db)
         {
             var ability = new Drop_Adro(db);
+            ability.TextName = "Unload";
+            ability.TextEditorSuffix = " (Air Transports),  (Goblin Zeppelin)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Unload All";
+            ability.TextTooltipNormalExtended[1] = "Unloads all carried units at a target location.";
+            ability.TextHotkeyNormalRaw = "U";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -18694,9 +20738,14 @@ namespace War3Api.Object
         protected virtual Drop_Sdro LoadDrop_Sdro(ObjectDatabaseBase db)
         {
             var ability = new Drop_Sdro(db);
+            ability.TextName = "Unload";
+            ability.TextEditorSuffix = " (Sea Transports)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Unload All";
+            ability.TextTooltipNormalExtended[1] = "Unloads all carried units at a target location.";
+            ability.TextHotkeyNormalRaw = "U";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -18748,6 +20797,7 @@ namespace War3Api.Object
         protected virtual DropPilot LoadDropPilot(ObjectDatabaseBase db)
         {
             var ability = new DropPilot(db);
+            ability.TextName = "Drop Pilot";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
@@ -18802,9 +20852,13 @@ namespace War3Api.Object
         protected virtual EatTree LoadEatTree(ObjectDatabaseBase db)
         {
             var ability = new EatTree(db);
+            ability.TextName = "Eat Tree";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Eat Tree";
+            ability.TextTooltipNormalExtended[1] = "Consume a tree to restore <Aeat,DataC1> hit points over <Aeat,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -18868,9 +20922,12 @@ namespace War3Api.Object
         protected virtual EluneSGrace LoadEluneSGrace(ObjectDatabaseBase db)
         {
             var ability = new EluneSGrace(db);
+            ability.TextName = "Elune's Grace";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Elune's Grace";
+            ability.TextTooltipNormalExtended[1] = "Reduces the damage taken from Piercing attacks to <Aegr,DataA1,%>%, and spells and Magic attacks to <Aegr,DataE1,%>%.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -18934,9 +20991,13 @@ namespace War3Api.Object
         protected virtual EnsnareNaga LoadEnsnareNaga(ObjectDatabaseBase db)
         {
             var ability = new EnsnareNaga(db);
+            ability.TextName = "Ensnare";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "naga";
+            ability.TextTooltipNormal[1] = "Ensnare";
+            ability.TextTooltipNormalExtended[1] = "Causes a target enemy unit to be bound to the ground so that it cannot move for <Aens,Dur1> seconds. Air units that are ensnared can be attacked as though they were land units.";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -18988,9 +21049,13 @@ namespace War3Api.Object
         protected virtual Ensnare LoadEnsnare(ObjectDatabaseBase db)
         {
             var ability = new Ensnare(db);
+            ability.TextName = "Ensnare";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Ensnare";
+            ability.TextTooltipNormalExtended[1] = "Causes a target enemy unit to be bound to the ground so that it cannot move for <Aens,Dur1> seconds. Air units that are ensnared can be attacked as though they were land units.";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -19054,9 +21119,14 @@ namespace War3Api.Object
         protected virtual EnsnareCreep LoadEnsnareCreep(ObjectDatabaseBase db)
         {
             var ability = new EnsnareCreep(db);
+            ability.TextName = "Ensnare";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Ensnare";
+            ability.TextTooltipNormalExtended[1] = "Causes a target enemy unit to be bound to the ground so that it cannot move for <ACen,Dur1> seconds. Air units that are ensnared can be attacked as though they were land units.";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -19120,9 +21190,13 @@ namespace War3Api.Object
         protected virtual Entangle LoadEntangle(ObjectDatabaseBase db)
         {
             var ability = new Entangle(db);
+            ability.TextName = "Entangle Gold Mine";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Entangle Gold Mine";
+            ability.TextTooltipNormalExtended[1] = "Entangles the gold mine, allowing Wisps to enter and mine the gold.";
+            ability.TextHotkeyNormalRaw = "G";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -19178,6 +21252,7 @@ namespace War3Api.Object
         protected virtual EntangledGoldMine LoadEntangledGoldMine(ObjectDatabaseBase db)
         {
             var ability = new EntangledGoldMine(db);
+            ability.TextName = "Entangled Gold Mine Ability";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
@@ -19240,9 +21315,14 @@ namespace War3Api.Object
         protected virtual EntanglingRootsCreep LoadEntanglingRootsCreep(ObjectDatabaseBase db)
         {
             var ability = new EntanglingRootsCreep(db);
+            ability.TextName = "Entangling Roots";
+            ability.TextEditorSuffix = " (Neutral Hostile 1)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Entangling Roots";
+            ability.TextTooltipNormalExtended[1] = "Causes roots to burst from the ground, immobilizing a target enemy unit for <Aenr,Dur1> seconds, and dealing <Aenr,DataA1> damage per second.";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -19298,9 +21378,14 @@ namespace War3Api.Object
         protected virtual EntanglingSeaweed LoadEntanglingSeaweed(ObjectDatabaseBase db)
         {
             var ability = new EntanglingSeaweed(db);
+            ability.TextName = "Entangling Roots";
+            ability.TextEditorSuffix = " (Neutral Hostile 2)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Entangling Roots";
+            ability.TextTooltipNormalExtended[1] = "Causes roots to burst from the ground, immobilizing a target enemy unit for <Aenw,Dur1> seconds, and dealing <Aenw,DataA1> damage per second.";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -19356,9 +21441,13 @@ namespace War3Api.Object
         protected virtual Ethereal LoadEthereal(ObjectDatabaseBase db)
         {
             var ability = new Ethereal(db);
+            ability.TextName = "Ethereal";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Ethereal";
+            ability.TextTooltipNormalExtended[1] = "Ethereal creatures cannot attack, but can cast spells and will take extra damage from Magic attacks and spells.";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 0;
@@ -19410,9 +21499,16 @@ namespace War3Api.Object
         protected virtual EtherealForm LoadEtherealForm(ObjectDatabaseBase db)
         {
             var ability = new EtherealForm(db);
+            ability.TextName = "Ethereal Form";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Ethereal Form";
+            ability.TextTooltipTurnOff[1] = "Corporeal Form";
+            ability.TextTooltipNormalExtended[1] = "Turns the Spirit Walker ethereal, making him immune to physical damage but unable to attack. He can cast spells and will take extra damage from Magic attacks and spells.";
+            ability.TextTooltipTurnOffExtended[1] = "Turns the Spirit Walker corporeal, allowing him to attack and take physical damage.";
+            ability.TextHotkeyNormalRaw = "F";
+            ability.TextHotkeyTurnOffRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -19484,9 +21580,13 @@ namespace War3Api.Object
         protected virtual EvasionCreep LoadEvasionCreep(ObjectDatabaseBase db)
         {
             var ability = new EvasionCreep(db);
+            ability.TextName = "Evasion";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Evasion";
+            ability.TextTooltipNormalExtended[1] = "Gives a <ACev,DataA1,%>% percent chance to avoid an attack.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -19542,9 +21642,13 @@ namespace War3Api.Object
         protected virtual EvasionCreep100 LoadEvasionCreep100(ObjectDatabaseBase db)
         {
             var ability = new EvasionCreep100(db);
+            ability.TextName = "Evasion";
+            ability.TextEditorSuffix = "(Neutral Hostile 100%)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Evasion";
+            ability.TextTooltipNormalExtended[1] = "Gives a <ACes,DataA1,%>% percent chance to avoid an attack.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -19600,9 +21704,12 @@ namespace War3Api.Object
         protected virtual Exhume LoadExhume(ObjectDatabaseBase db)
         {
             var ability = new Exhume(db);
+            ability.TextName = "Exhume Corpses";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Exhume Corpses";
+            ability.TextTooltipNormalExtended[1] = "Generates a corpse within the Meat Wagon every <Aexh,Dur1> seconds.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -19662,9 +21769,13 @@ namespace War3Api.Object
         protected virtual Factory LoadFactory(ObjectDatabaseBase db)
         {
             var ability = new Factory(db);
+            ability.TextName = "Factory";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Factory";
+            ability.TextTooltipNormalExtended[1] = "Factory.";
+            ability.TextHotkeyNormalRaw = "";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -19728,9 +21839,16 @@ namespace War3Api.Object
         protected virtual FaerieFire_Afae LoadFaerieFire_Afae(ObjectDatabaseBase db)
         {
             var ability = new FaerieFire_Afae(db);
+            ability.TextName = "Faerie Fire";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Faerie Fire";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Reduces a target enemy unit's armor by <Afae,DataA1> and gives vision of that unit. |nLasts <Afae,Dur1> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "R";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 2;
             ability.StatsLevels = 1;
@@ -19790,9 +21908,17 @@ namespace War3Api.Object
         protected virtual FaerieFire_Afa2 LoadFaerieFire_Afa2(ObjectDatabaseBase db)
         {
             var ability = new FaerieFire_Afa2(db);
+            ability.TextName = "Faerie Fire";
+            ability.TextEditorSuffix = "(Morph)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Faerie Fire";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Reduces a target enemy unit's armor by <Afae,DataA1> and gives vision of that unit. |nLasts <Afae,Dur1> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "R";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 2;
             ability.StatsLevels = 1;
@@ -19852,9 +21978,17 @@ namespace War3Api.Object
         protected virtual FaerieFireCreep LoadFaerieFireCreep(ObjectDatabaseBase db)
         {
             var ability = new FaerieFireCreep(db);
+            ability.TextName = "Faerie Fire";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Faerie Fire";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Reduces a target enemy unit's armor by <ACff,DataA1> and gives vision of that unit. |nLasts <ACff,Dur1> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "R";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 2;
             ability.StatsLevels = 1;
@@ -19914,9 +22048,13 @@ namespace War3Api.Object
         protected virtual Feedback LoadFeedback(ObjectDatabaseBase db)
         {
             var ability = new Feedback(db);
+            ability.TextName = "Feedback";
+            ability.TextEditorSuffix = " (Spellbreaker)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Feedback";
+            ability.TextTooltipNormalExtended[1] = "Spellbreaker attacks destroy <Afbk,DataA1> mana per hit. The mana combusts, dealing damage to the attacked unit.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -19988,9 +22126,13 @@ namespace War3Api.Object
         protected virtual FeedbackArcaneTower LoadFeedbackArcaneTower(ObjectDatabaseBase db)
         {
             var ability = new FeedbackArcaneTower(db);
+            ability.TextName = "Feedback";
+            ability.TextEditorSuffix = " (Arcane Tower)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Feedback";
+            ability.TextTooltipNormalExtended[1] = "This tower's attacks destroy <Afbt,DataA1> mana per hit against any unit, causing bonus damage equal to the mana destroyed.|n|nAdditionally, attacks made by this tower cause <Afbt,DataE1> bonus damage against summoned units.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -20046,9 +22188,12 @@ namespace War3Api.Object
         protected virtual FeedbackSpiritBeast LoadFeedbackSpiritBeast(ObjectDatabaseBase db)
         {
             var ability = new FeedbackSpiritBeast(db);
+            ability.TextName = "Feedback";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Feedback";
+            ability.TextTooltipNormalExtended[1] = "Spirit Beast attacks destroy <Afbb,DataA1> mana per hit. The mana combusts, dealing damage to the attacked unit.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -20104,9 +22249,14 @@ namespace War3Api.Object
         protected virtual FeralSpiritCreep LoadFeralSpiritCreep(ObjectDatabaseBase db)
         {
             var ability = new FeralSpiritCreep(db);
+            ability.TextName = "Feral Spirit";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Feral Spirit";
+            ability.TextTooltipNormalExtended[1] = "Summons <ACsf,DataB1> Spirit Wolf companions. |nLasts <ACsf,Dur1> seconds. |n|n|cffffcc00Attacks land units.|r";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -20166,9 +22316,14 @@ namespace War3Api.Object
         protected virtual FeralSpiritCreepPig LoadFeralSpiritCreepPig(ObjectDatabaseBase db)
         {
             var ability = new FeralSpiritCreepPig(db);
+            ability.TextName = "Feral Spirit";
+            ability.TextEditorSuffix = "(Neutral Hostile, Pig)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Feral Spirit";
+            ability.TextTooltipNormalExtended[1] = "Summons <ACs9,DataB1> Spirit Pig companions. |nLasts <ACs9,Dur1> seconds. |n|n|cffffcc00Attacks land units.|r";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -20228,9 +22383,20 @@ namespace War3Api.Object
         protected virtual FeralSpiritSpiritBeast LoadFeralSpiritSpiritBeast(ObjectDatabaseBase db)
         {
             var ability = new FeralSpiritSpiritBeast(db);
+            ability.TextName = "Spirit Beast";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Spirit Beast - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Spirit Beast - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Spirit Beast - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Summons <ACs8,DataB1> Spirit Beast companions. Each beast has <nsw1,realHP> hit points and deals <nsw1,mindmg1> - <nsw1,maxdmg1> damage. |nLasts <ACs8,Dur1> seconds. |n|n|cffffcc00Attacks land units.|r";
+            ability.TextTooltipNormalExtended[2] = "Summons <ACs8,DataB2> Spirit Beast companions that have Feedback. Each beast has <nsw2,realHP> hit points and deals <nsw2,mindmg1> - <nsw2,maxdmg1> damage. |nLasts <ACs8,Dur2> seconds. |n|n|cffffcc00Attacks land units.|r";
+            ability.TextTooltipNormalExtended[3] = "Summons <ACs8,DataB3> Spirit Beast companions that have Feedback and Mana Burn. Each beast has <nsw3,realHP> hit points and deals <nsw3,mindmg1> - <nsw3,maxdmg1> damage. |nLasts <ACs8,Dur3> seconds. |n|n|cffffcc00Attacks land units.|r";
+            ability.TextTooltipLearn = "Learn Spirit Beast - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "B";
+            ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -20282,9 +22448,20 @@ namespace War3Api.Object
         protected virtual FeralSpiritAkama LoadFeralSpiritAkama(ObjectDatabaseBase db)
         {
             var ability = new FeralSpiritAkama(db);
+            ability.TextName = "Feral Spirit";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Feral Spirit - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Feral Spirit - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Feral Spirit - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Summons <ACs7,DataB1> Spirit Wolf companions. Each wolf has <osw1,realHP> hit points and deals <osw1,mindmg1> - <osw1,maxdmg1> damage. |nLasts <ACs7,Dur1> seconds. |n|n|cffffcc00Attacks land units.|r";
+            ability.TextTooltipNormalExtended[2] = "Summons <ACs7,DataB2> Spirit Wolf companions that have Critical Strike. Each wolf has <osw2,realHP> hit points and deals <osw2,mindmg1> - <osw2,maxdmg1> damage. |nLasts <ACs7,Dur2> seconds. |n|n|cffffcc00Attacks land units.|r";
+            ability.TextTooltipNormalExtended[3] = "Summons <ACs7,DataB3> Spirit Wolf companions that have Critical Strike and are invisible unless they are attacking. Each wolf has <osw3,realHP> hit points and deals <osw3,mindmg1> - <osw3,maxdmg1> damage. |nLasts <ACs7,Dur3> seconds. |n|n|cffffcc00Attacks land units.|r";
+            ability.TextTooltipLearn = "Learn Feral Spirit - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "T";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -20336,9 +22513,17 @@ namespace War3Api.Object
         protected virtual FingerOfDeath_Afod LoadFingerOfDeath_Afod(ObjectDatabaseBase db)
         {
             var ability = new FingerOfDeath_Afod(db);
+            ability.TextName = "Finger of Death";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Finger of Death";
+            ability.TextTooltipNormalExtended[1] = "Instantly turns a creature or building inside-out.";
+            ability.TextTooltipLearn = "Learn Finger of Death";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "F";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -20390,9 +22575,14 @@ namespace War3Api.Object
         protected virtual FireBoltWarlock LoadFireBoltWarlock(ObjectDatabaseBase db)
         {
             var ability = new FireBoltWarlock(db);
+            ability.TextName = "Firebolt";
+            ability.TextEditorSuffix = "(Warlock)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Firebolt";
+            ability.TextTooltipNormalExtended[1] = "Hurls a fiery bolt that stuns a target enemy unit.";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -20448,9 +22638,14 @@ namespace War3Api.Object
         protected virtual FireBoltCreep LoadFireBoltCreep(ObjectDatabaseBase db)
         {
             var ability = new FireBoltCreep(db);
+            ability.TextName = "Firebolt";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Firebolt";
+            ability.TextTooltipNormalExtended[1] = "Hurls a fiery bolt that stuns a target enemy unit.";
+            ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -20506,9 +22701,12 @@ namespace War3Api.Object
         protected virtual FlakCannon LoadFlakCannon(ObjectDatabaseBase db)
         {
             var ability = new FlakCannon(db);
+            ability.TextName = "Flak Cannons";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Flak Cannons";
+            ability.TextTooltipNormalExtended[1] = "Uses powerful cannons to deal area effect damage against air units.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -20580,9 +22778,13 @@ namespace War3Api.Object
         protected virtual Flare LoadFlare(ObjectDatabaseBase db)
         {
             var ability = new Flare(db);
+            ability.TextName = "Flare";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Flare";
+            ability.TextTooltipNormalExtended[1] = "Launches a Dwarven flare above a target point, which reveals that area for <Afla,Dur1> seconds. |nReveals invisible units.";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -20646,9 +22848,14 @@ namespace War3Api.Object
         protected virtual FlameStrikeCreep LoadFlameStrikeCreep(ObjectDatabaseBase db)
         {
             var ability = new FlameStrikeCreep(db);
+            ability.TextName = "Flame Strike";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Flame Strike";
+            ability.TextTooltipNormalExtended[1] = "Conjures a pillar of flame that burns ground units for 45 damage a second for 2 seconds. As the pillar of flame subsides, units within the fire continue to take minor damage.";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -20724,9 +22931,14 @@ namespace War3Api.Object
         protected virtual FlameStrikeImprovedCreep LoadFlameStrikeImprovedCreep(ObjectDatabaseBase db)
         {
             var ability = new FlameStrikeImprovedCreep(db);
+            ability.TextName = "Flame Strike";
+            ability.TextEditorSuffix = " (Neutral Hostile 2)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Flame Strike";
+            ability.TextTooltipNormalExtended[1] = "Conjures a pillar of flame that burns ground units for 75 damage a second for 3 seconds. As the pillar of flame subsides, units within the fire continue to take moderate damage.";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -20778,9 +22990,14 @@ namespace War3Api.Object
         protected virtual ForceOfNatureCreep LoadForceOfNatureCreep(ObjectDatabaseBase db)
         {
             var ability = new ForceOfNatureCreep(db);
+            ability.TextName = "Force of Nature";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Force of Nature";
+            ability.TextTooltipNormalExtended[1] = "Converts a small area of trees into <ACfr,DataA1> Treants. |nLasts <ACfr,Dur1> seconds. |n|n|cffffcc00Attacks land units.|r";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -20840,9 +23057,14 @@ namespace War3Api.Object
         protected virtual ForkedLightningCreep LoadForkedLightningCreep(ObjectDatabaseBase db)
         {
             var ability = new ForkedLightningCreep(db);
+            ability.TextName = "Forked Lightning";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Forked Lightning";
+            ability.TextTooltipNormalExtended[1] = "Calls forth a cone of lightning on a target enemy unit, hitting up to <ACfl,DataB1> enemy units for <ACfl,DataA1> damage.";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -20894,9 +23116,12 @@ namespace War3Api.Object
         protected virtual FragShards LoadFragShards(ObjectDatabaseBase db)
         {
             var ability = new FragShards(db);
+            ability.TextName = "Fragmentation Shards";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Fragmentation Shards";
+            ability.TextTooltipNormalExtended[1] = "Uses fragmentation mortars to increase damage dealt to Unarmored and Medium armor units.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -20968,9 +23193,12 @@ namespace War3Api.Object
         protected virtual FreezingBreath LoadFreezingBreath(ObjectDatabaseBase db)
         {
             var ability = new FreezingBreath(db);
+            ability.TextName = "Freezing Breath";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Freezing Breath";
+            ability.TextTooltipNormalExtended[1] = "When used on a building, temporarily stops all building activities. |nLasts <Afrz,Dur1> seconds.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -21022,9 +23250,16 @@ namespace War3Api.Object
         protected virtual Frenzy LoadFrenzy(ObjectDatabaseBase db)
         {
             var ability = new Frenzy(db);
+            ability.TextName = "Frenzy";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Frenzy";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Increases the unit's attack rate by <Afzy,DataA1,%>% and movement speed by <Afzy,DataB1,%>% for <Afzy,Dur1> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "F";
+            ability.TextHotkeyTurnOffRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 11;
             ability.StatsLevels = 1;
@@ -21084,9 +23319,14 @@ namespace War3Api.Object
         protected virtual FrostArmorCreepOld LoadFrostArmorCreepOld(ObjectDatabaseBase db)
         {
             var ability = new FrostArmorCreepOld(db);
+            ability.TextName = "Frost Armor";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Frost Armor";
+            ability.TextTooltipNormalExtended[1] = "Creates a shield of frost around a target friendly unit. The shield adds <ACfa,DataB1> armor and slows melee units that attack it for <ACfa,Dur1> seconds. |nLasts <ACfa,DataA1> seconds.";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -21100,11 +23340,11 @@ namespace War3Api.Object
             ability.StatsCastingTime[2] = 0f;
             ability.StatsCastingTime[3] = 0f;
             ability.StatsCastingTime[4] = 0f;
-            ability.StatsDurationNormal[1] = 5f;
+            ability.StatsDurationNormal[1] = 3f;
             ability.StatsDurationNormal[2] = 0f;
             ability.StatsDurationNormal[3] = 0f;
             ability.StatsDurationNormal[4] = 0f;
-            ability.StatsDurationHero[1] = 5f;
+            ability.StatsDurationHero[1] = 3f;
             ability.StatsDurationHero[2] = 0f;
             ability.StatsDurationHero[3] = 0f;
             ability.StatsDurationHero[4] = 0f;
@@ -21146,9 +23386,16 @@ namespace War3Api.Object
         protected virtual FrostArmorCreepAutocast LoadFrostArmorCreepAutocast(ObjectDatabaseBase db)
         {
             var ability = new FrostArmorCreepAutocast(db);
+            ability.TextName = "Frost Armor";
+            ability.TextEditorSuffix = " (Autocast) (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Frost Armor";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Creates a shield of frost around a target friendly unit. The shield adds <ACfa,DataB1> armor and slows melee units that attack it for <ACfa,Dur1> seconds. |nLasts <ACfa,DataA1> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -21162,11 +23409,11 @@ namespace War3Api.Object
             ability.StatsCastingTime[2] = 0f;
             ability.StatsCastingTime[3] = 0f;
             ability.StatsCastingTime[4] = 0f;
-            ability.StatsDurationNormal[1] = 5f;
+            ability.StatsDurationNormal[1] = 3f;
             ability.StatsDurationNormal[2] = 0f;
             ability.StatsDurationNormal[3] = 0f;
             ability.StatsDurationNormal[4] = 0f;
-            ability.StatsDurationHero[1] = 5f;
+            ability.StatsDurationHero[1] = 3f;
             ability.StatsDurationHero[2] = 0f;
             ability.StatsDurationHero[3] = 0f;
             ability.StatsDurationHero[4] = 0f;
@@ -21200,9 +23447,16 @@ namespace War3Api.Object
         protected virtual FrostArmorAutocastNaga LoadFrostArmorAutocastNaga(ObjectDatabaseBase db)
         {
             var ability = new FrostArmorAutocastNaga(db);
+            ability.TextName = "Frost Armor";
+            ability.TextEditorSuffix = " (Autocast)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "naga";
+            ability.TextTooltipNormal[1] = "Frost Armor";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.";
+            ability.TextTooltipNormalExtended[1] = "Creates a shield of frost around a target friendly unit. The shield adds <ACfu,DataB1> armor and slows melee units that attack it for <ACfu,Dur1> seconds. |nLasts <ACfu,DataA1> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -21254,9 +23508,12 @@ namespace War3Api.Object
         protected virtual FrostAttack LoadFrostAttack(ObjectDatabaseBase db)
         {
             var ability = new FrostAttack(db);
+            ability.TextName = "Frost Attack";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Frost Attack";
+            ability.TextTooltipNormalExtended[1] = "Adds a cold effect to this unit's attacks that slows enemy units' movement speed.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -21274,7 +23531,7 @@ namespace War3Api.Object
             ability.StatsDurationNormal[2] = 0f;
             ability.StatsDurationNormal[3] = 0f;
             ability.StatsDurationNormal[4] = 0f;
-            ability.StatsDurationHero[1] = 5f;
+            ability.StatsDurationHero[1] = 3f;
             ability.StatsDurationHero[2] = 0f;
             ability.StatsDurationHero[3] = 0f;
             ability.StatsDurationHero[4] = 0f;
@@ -21308,9 +23565,12 @@ namespace War3Api.Object
         protected virtual FrostAttack12 LoadFrostAttack12(ObjectDatabaseBase db)
         {
             var ability = new FrostAttack12(db);
+            ability.TextName = "Frost Attack";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Frost Attack";
+            ability.TextTooltipNormalExtended[1] = "Adds a cold effect to this unit's attacks that slows enemy units' movement speed.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -21362,6 +23622,7 @@ namespace War3Api.Object
         protected virtual FrostBreath LoadFrostBreath(ObjectDatabaseBase db)
         {
             var ability = new FrostBreath(db);
+            ability.TextName = "Frost Breath";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
@@ -21416,9 +23677,13 @@ namespace War3Api.Object
         protected virtual FrostBreathNewHasIcon LoadFrostBreathNewHasIcon(ObjectDatabaseBase db)
         {
             var ability = new FrostBreathNewHasIcon(db);
+            ability.TextName = "Frost Attack";
+            ability.TextEditorSuffix = " (New, Has Icon)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Frost Attack";
+            ability.TextTooltipNormalExtended[1] = "Adds a cold effect to this unit's attacks that slows enemy units' movement speed.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -21470,9 +23735,14 @@ namespace War3Api.Object
         protected virtual FrostNovaCreep LoadFrostNovaCreep(ObjectDatabaseBase db)
         {
             var ability = new FrostNovaCreep(db);
+            ability.TextName = "Frost Nova";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Frost Nova";
+            ability.TextTooltipNormalExtended[1] = "Blasts enemy units with a wave of frost that deals <ACfn,DataB1> damage to the target, and <ACfn,DataA1> nova damage. Cold damage slows units' movement and attack rate for <ACfn,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "N";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -21536,9 +23806,13 @@ namespace War3Api.Object
         protected virtual FrostBolt LoadFrostBolt(ObjectDatabaseBase db)
         {
             var ability = new FrostBolt(db);
+            ability.TextName = "Frost Bolt";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Frost Bolt";
+            ability.TextTooltipNormalExtended[1] = "Throws a magical shard of ice at a target enemy unit, dealing <ACcb,DataA1> damage and stunning the target for <ACcb,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -21594,6 +23868,7 @@ namespace War3Api.Object
         protected virtual Ghost LoadGhost(ObjectDatabaseBase db)
         {
             var ability = new Ghost(db);
+            ability.TextName = "Ghost";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
@@ -21660,6 +23935,8 @@ namespace War3Api.Object
         protected virtual GhostVisible LoadGhostVisible(ObjectDatabaseBase db)
         {
             var ability = new GhostVisible(db);
+            ability.TextName = "Ghost";
+            ability.TextEditorSuffix = " (Visible)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
@@ -21722,6 +23999,7 @@ namespace War3Api.Object
         protected virtual GoldMine LoadGoldMine(ObjectDatabaseBase db)
         {
             var ability = new GoldMine(db);
+            ability.TextName = "Gold Mine ability";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -21788,9 +24066,13 @@ namespace War3Api.Object
         protected virtual GrabTree LoadGrabTree(ObjectDatabaseBase db)
         {
             var ability = new GrabTree(db);
+            ability.TextName = "War Club";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "War Club";
+            ability.TextTooltipNormalExtended[1] = "Picks up a tree to give the Mountain Giant Siege damage, and increased attack range. |nLasts for <Agra,DataE1> strikes.";
+            ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -21862,6 +24144,7 @@ namespace War3Api.Object
         protected virtual Graveyard LoadGraveyard(ObjectDatabaseBase db)
         {
             var ability = new Graveyard(db);
+            ability.TextName = "Create Corpse";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
@@ -21932,9 +24215,12 @@ namespace War3Api.Object
         protected virtual GyrocopterBombs LoadGyrocopterBombs(ObjectDatabaseBase db)
         {
             var ability = new GyrocopterBombs(db);
+            ability.TextName = "Flying Machine Bombs";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Flying Machine Bombs";
+            ability.TextTooltipNormalExtended[1] = "Allows Flying Machines to attack land units.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -21986,9 +24272,13 @@ namespace War3Api.Object
         protected virtual HardenedSkin LoadHardenedSkin(ObjectDatabaseBase db)
         {
             var ability = new HardenedSkin(db);
+            ability.TextName = "Hardened Skin";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Hardened Skin";
+            ability.TextTooltipNormalExtended[1] = "Reduces all attacks on the Mountain Giant by <Assk,DataC1> damage. Attacks cannot be reduced below <Assk,DataB1> damage.";
+            ability.TextHotkeyNormalRaw = "K";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -22060,9 +24350,13 @@ namespace War3Api.Object
         protected virtual HardenedSkinNagaTurtle LoadHardenedSkinNagaTurtle(ObjectDatabaseBase db)
         {
             var ability = new HardenedSkinNagaTurtle(db);
+            ability.TextName = "Hardened Skin";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "naga";
+            ability.TextTooltipNormal[1] = "Hardened Skin";
+            ability.TextTooltipNormalExtended[1] = "Reduces all attacks on the unit by <Ansk,DataC1> damage. Attacks cannot be reduced below <Ansk,DataB1> damage.";
+            ability.TextHotkeyNormalRaw = "K";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -22114,9 +24408,17 @@ namespace War3Api.Object
         protected virtual Harvest LoadHarvest(ObjectDatabaseBase db)
         {
             var ability = new Harvest(db);
+            ability.TextName = "Harvest";
+            ability.TextEditorSuffix = " (Gold and Lumber)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Gather";
+            ability.TextTooltipTurnOff[1] = "Return Resources";
+            ability.TextTooltipNormalExtended[1] = "Mines gold from gold mines and harvests lumber from trees.";
+            ability.TextTooltipTurnOffExtended[1] = "Return the carried resources to the nearest town hall.";
+            ability.TextHotkeyNormalRaw = "G";
+            ability.TextHotkeyTurnOffRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -22180,9 +24482,17 @@ namespace War3Api.Object
         protected virtual HarvestNaga LoadHarvestNaga(ObjectDatabaseBase db)
         {
             var ability = new HarvestNaga(db);
+            ability.TextName = "Harvest";
+            ability.TextEditorSuffix = " (Neutral),  (Gold and Lumber)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Gather";
+            ability.TextTooltipTurnOff[1] = "Return Resources";
+            ability.TextTooltipNormalExtended[1] = "Mines gold from gold mines and harvests lumber from trees.";
+            ability.TextTooltipTurnOffExtended[1] = "Return the carried resources to the nearest Temple of the Tides.";
+            ability.TextHotkeyNormalRaw = "G";
+            ability.TextHotkeyTurnOffRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -22234,9 +24544,17 @@ namespace War3Api.Object
         protected virtual HarvestLumber LoadHarvestLumber(ObjectDatabaseBase db)
         {
             var ability = new HarvestLumber(db);
+            ability.TextName = "Harvest";
+            ability.TextEditorSuffix = " (Ghouls Lumber)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Gather";
+            ability.TextTooltipTurnOff[1] = "Return Resources";
+            ability.TextTooltipNormalExtended[1] = "Harvests lumber from trees.";
+            ability.TextTooltipTurnOffExtended[1] = "Return the carried resources to the nearest Necropolis or Graveyard.";
+            ability.TextHotkeyNormalRaw = "G";
+            ability.TextHotkeyTurnOffRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -22296,9 +24614,17 @@ namespace War3Api.Object
         protected virtual HarvestLumberShredder LoadHarvestLumberShredder(ObjectDatabaseBase db)
         {
             var ability = new HarvestLumberShredder(db);
+            ability.TextName = "Harvest";
+            ability.TextEditorSuffix = "(Goblin Shredders lumber)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Gather";
+            ability.TextTooltipTurnOff[1] = "Return Resources";
+            ability.TextTooltipNormalExtended[1] = "Harvests lumber from trees.";
+            ability.TextTooltipTurnOffExtended[1] = "Return the carried lumber to the nearest building capable of receiving it.";
+            ability.TextHotkeyNormalRaw = "G";
+            ability.TextHotkeyTurnOffRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -22358,9 +24684,17 @@ namespace War3Api.Object
         protected virtual HarvestLumberArchGhouls LoadHarvestLumberArchGhouls(ObjectDatabaseBase db)
         {
             var ability = new HarvestLumberArchGhouls(db);
+            ability.TextName = "Harvest";
+            ability.TextEditorSuffix = "(Archimonde's Ghouls lumber)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Gather";
+            ability.TextTooltipTurnOff[1] = "Return Resources";
+            ability.TextTooltipNormalExtended[1] = "Harvests lumber from trees.";
+            ability.TextTooltipTurnOffExtended[1] = "Return the carried lumber to the nearest building capable of receiving it.";
+            ability.TextHotkeyNormalRaw = "G";
+            ability.TextHotkeyTurnOffRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -22420,9 +24754,16 @@ namespace War3Api.Object
         protected virtual Heal LoadHeal(ObjectDatabaseBase db)
         {
             var ability = new Heal(db);
+            ability.TextName = "Heal";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Heal";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Heals a target friendly non-mechanical wounded unit for <Ahea,DataA1> hit points.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "E";
+            ability.TextHotkeyTurnOffRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -22444,7 +24785,7 @@ namespace War3Api.Object
             ability.StatsDurationHero[2] = 0f;
             ability.StatsDurationHero[3] = 0f;
             ability.StatsDurationHero[4] = 0f;
-            ability.StatsCooldown[1] = 1f;
+            ability.StatsCooldown[1] = 1.1f;
             ability.StatsCooldown[2] = 0f;
             ability.StatsCooldown[3] = 0f;
             ability.StatsCooldown[4] = 0f;
@@ -22478,9 +24819,17 @@ namespace War3Api.Object
         protected virtual HealCreepNormal_Anhe LoadHealCreepNormal_Anhe(ObjectDatabaseBase db)
         {
             var ability = new HealCreepNormal_Anhe(db);
+            ability.TextName = "Heal";
+            ability.TextEditorSuffix = " (Neutral Hostile 1)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Heal";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Heals a target friendly non-mechanical wounded unit.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "E";
+            ability.TextHotkeyTurnOffRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -22536,9 +24885,17 @@ namespace War3Api.Object
         protected virtual HealCreepNormal_Anh1 LoadHealCreepNormal_Anh1(ObjectDatabaseBase db)
         {
             var ability = new HealCreepNormal_Anh1(db);
+            ability.TextName = "Heal";
+            ability.TextEditorSuffix = "(Neutral Hostile 2)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Heal";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Heals a target friendly non-mechanical wounded unit.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "E";
+            ability.TextHotkeyTurnOffRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -22594,9 +24951,17 @@ namespace War3Api.Object
         protected virtual HealCreepHigh LoadHealCreepHigh(ObjectDatabaseBase db)
         {
             var ability = new HealCreepHigh(db);
+            ability.TextName = "Heal";
+            ability.TextEditorSuffix = "(Neutral Hostile 3)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Heal";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Heals a target friendly non-mechanical wounded unit.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "E";
+            ability.TextHotkeyTurnOffRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -22652,9 +25017,14 @@ namespace War3Api.Object
         protected virtual HealingWard_Ahwd LoadHealingWard_Ahwd(ObjectDatabaseBase db)
         {
             var ability = new HealingWard_Ahwd(db);
+            ability.TextName = "Healing Ward";
+            ability.TextEditorSuffix = " (Witch Doctor)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Healing Ward";
+            ability.TextTooltipNormalExtended[1] = "Summons an immovable ward that heals <Aoar,DataA1,%>% of a nearby friendly non-mechanical unit's hit points per second. |nLasts <Ahwd,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -22710,9 +25080,14 @@ namespace War3Api.Object
         protected virtual HealingWardCreep LoadHealingWardCreep(ObjectDatabaseBase db)
         {
             var ability = new HealingWardCreep(db);
+            ability.TextName = "Healing Ward";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Healing Ward";
+            ability.TextTooltipNormalExtended[1] = "Summons an immovable ward that heals <Aoar,DataA1,%>% of a nearby friendly non-mechanical unit's hit points per second. |nLasts <AChw,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -22768,9 +25143,14 @@ namespace War3Api.Object
         protected virtual HealingWaveCreep LoadHealingWaveCreep(ObjectDatabaseBase db)
         {
             var ability = new HealingWaveCreep(db);
+            ability.TextName = "Healing Wave";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Healing Wave";
+            ability.TextTooltipNormalExtended[1] = "Calls forth a wave of healing energy that bounces up to <AChv,DataB1> times, healing <AChv,DataA1> damage on the primary target. Each jump heals less damage.";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -22834,9 +25214,13 @@ namespace War3Api.Object
         protected virtual NullRoarSummoner LoadNullRoarSummoner(ObjectDatabaseBase db)
         {
             var ability = new NullRoarSummoner(db);
+            ability.TextName = "Summoning Ritual";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "naga";
+            ability.TextTooltipNormal[1] = "Summoning Ritual";
+            ability.TextTooltipNormalExtended[1] = "Summons energies from the twisting nether.";
+            ability.TextHotkeyNormalRaw = "U";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -22904,6 +25288,7 @@ namespace War3Api.Object
         protected virtual Hero LoadHero(ObjectDatabaseBase db)
         {
             var ability = new Hero(db);
+            ability.TextName = "Hero";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -22958,9 +25343,14 @@ namespace War3Api.Object
         protected virtual HexCreep LoadHexCreep(ObjectDatabaseBase db)
         {
             var ability = new HexCreep(db);
+            ability.TextName = "Hex";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Hex";
+            ability.TextTooltipNormalExtended[1] = "Transforms an enemy unit into a random critter for <AChx,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "X";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -23032,9 +25422,14 @@ namespace War3Api.Object
         protected virtual HowlOfTerror LoadHowlOfTerror(ObjectDatabaseBase db)
         {
             var ability = new HowlOfTerror(db);
+            ability.TextName = "Howl of Terror";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Howl of Terror";
+            ability.TextTooltipNormalExtended[1] = "Emits a terrifying howl that reduces nearby enemy units' attack damage by <Acht,DataA1,%>% for <Acht,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -23086,9 +25481,17 @@ namespace War3Api.Object
         protected virtual ImmolationCreep LoadImmolationCreep(ObjectDatabaseBase db)
         {
             var ability = new ImmolationCreep(db);
+            ability.TextName = "Immolation";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Activate Immolation";
+            ability.TextTooltipTurnOff[1] = "Deactivate Immolation";
+            ability.TextTooltipNormalExtended[1] = "Activate Immolation to engulf this unit in flames, causing <ACim,DataA1> damage per second to nearby enemy land units. |nDrains mana until deactivated.";
+            ability.TextTooltipTurnOffExtended[1] = "Deactivate Immolation to stop draining mana.";
+            ability.TextHotkeyNormalRaw = "L";
+            ability.TextHotkeyTurnOffRaw = "L";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -23152,9 +25555,14 @@ namespace War3Api.Object
         protected virtual ImpaleCreep LoadImpaleCreep(ObjectDatabaseBase db)
         {
             var ability = new ImpaleCreep(db);
+            ability.TextName = "Impale";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Impale";
+            ability.TextTooltipNormalExtended[1] = "Slams the ground, sending a wave of force out in a straight line, dealing <ACmp,DataA1> damage and hurling enemy ground units into the air in their wake, stunning them for <ACmp,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -23230,9 +25638,12 @@ namespace War3Api.Object
         protected virtual ImpalingBolt LoadImpalingBolt(ObjectDatabaseBase db)
         {
             var ability = new ImpalingBolt(db);
+            ability.TextName = "Vorpal Blades";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Vorpal Blades";
+            ability.TextTooltipNormalExtended[1] = "Increases the speed of glaives lauched by the Glaive Thrower. Also allows the Glaive Thrower to attack trees.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -23284,9 +25695,16 @@ namespace War3Api.Object
         protected virtual InnerFire LoadInnerFire(ObjectDatabaseBase db)
         {
             var ability = new InnerFire(db);
+            ability.TextName = "Inner Fire";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Inner Fire";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Increases a target friendly unit's damage by <Ainf,DataA1,%>% and armor by <Ainf,DataB1>. |nLasts <Ainf,Dur1> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "F";
+            ability.TextHotkeyTurnOffRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 10;
             ability.StatsLevels = 1;
@@ -23354,9 +25772,17 @@ namespace War3Api.Object
         protected virtual InnerFireCreep LoadInnerFireCreep(ObjectDatabaseBase db)
         {
             var ability = new InnerFireCreep(db);
+            ability.TextName = "Inner Fire";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Inner Fire";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Increases a target friendly unit's damage by <ACif,DataA1,%>% and armor by <ACif,DataB1>. |nLasts <ACif,Dur1> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "F";
+            ability.TextHotkeyTurnOffRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 10;
             ability.StatsLevels = 1;
@@ -23424,9 +25850,13 @@ namespace War3Api.Object
         protected virtual Invisibility LoadInvisibility(ObjectDatabaseBase db)
         {
             var ability = new Invisibility(db);
+            ability.TextName = "Invisibility";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Invisibility";
+            ability.TextTooltipNormalExtended[1] = "Makes a unit invisible. If the unit attacks, uses an ability or casts a spell, it will become visible. |nLasts <Aivs,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "I";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -23482,6 +25912,8 @@ namespace War3Api.Object
         protected virtual Inventory LoadInventory(ObjectDatabaseBase db)
         {
             var ability = new Inventory(db);
+            ability.TextName = "Inventory";
+            ability.TextEditorSuffix = " (Hero)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -23556,9 +25988,12 @@ namespace War3Api.Object
         protected virtual InventoryPackMule LoadInventoryPackMule(ObjectDatabaseBase db)
         {
             var ability = new InventoryPackMule(db);
+            ability.TextName = "Pack Mule";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Pack Mule";
+            ability.TextTooltipNormalExtended[1] = "Allows this unit to carry items for Heroes. Items cannot be used from this unit's inventory.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -23630,9 +26065,13 @@ namespace War3Api.Object
         protected virtual Inventory2SlotUnitOrc LoadInventory2SlotUnitOrc(ObjectDatabaseBase db)
         {
             var ability = new Inventory2SlotUnitOrc(db);
+            ability.TextName = "Unit Inventory";
+            ability.TextEditorSuffix = " (Orc)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Unit Inventory";
+            ability.TextTooltipNormalExtended[1] = "Allows this unit to carry items for Heroes. Items cannot be used from this unit's inventory.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -23684,9 +26123,13 @@ namespace War3Api.Object
         protected virtual Inventory2SlotUnitHuman LoadInventory2SlotUnitHuman(ObjectDatabaseBase db)
         {
             var ability = new Inventory2SlotUnitHuman(db);
+            ability.TextName = "Unit Inventory";
+            ability.TextEditorSuffix = " (Human)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Unit Inventory";
+            ability.TextTooltipNormalExtended[1] = "Allows this unit to carry items for Heroes. Items cannot be used from this unit's inventory.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -23738,9 +26181,13 @@ namespace War3Api.Object
         protected virtual Inventory2SlotUnitNightElf LoadInventory2SlotUnitNightElf(ObjectDatabaseBase db)
         {
             var ability = new Inventory2SlotUnitNightElf(db);
+            ability.TextName = "Unit Inventory";
+            ability.TextEditorSuffix = " (Night Elf)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Unit Inventory";
+            ability.TextTooltipNormalExtended[1] = "Allows this unit to carry items for Heroes. Items cannot be used from this unit's inventory.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -23792,9 +26239,13 @@ namespace War3Api.Object
         protected virtual Inventory2SlotUnitUndead LoadInventory2SlotUnitUndead(ObjectDatabaseBase db)
         {
             var ability = new Inventory2SlotUnitUndead(db);
+            ability.TextName = "Unit Inventory";
+            ability.TextEditorSuffix = " (Undead)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Unit Inventory";
+            ability.TextTooltipNormalExtended[1] = "Allows this unit to carry items for Heroes. Items cannot be used from this unit's inventory.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -23866,6 +26317,8 @@ namespace War3Api.Object
         protected virtual Invulnerable LoadInvulnerable(ObjectDatabaseBase db)
         {
             var ability = new Invulnerable(db);
+            ability.TextName = "Invulnerable";
+            ability.TextEditorSuffix = " (Neutral)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -23920,6 +26373,7 @@ namespace War3Api.Object
         protected virtual LightningAttack LoadLightningAttack(ObjectDatabaseBase db)
         {
             var ability = new LightningAttack(db);
+            ability.TextName = "Lightning Attack";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
@@ -23982,9 +26436,13 @@ namespace War3Api.Object
         protected virtual LightningShield LoadLightningShield(ObjectDatabaseBase db)
         {
             var ability = new LightningShield(db);
+            ability.TextName = "Lightning Shield";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Lightning Shield";
+            ability.TextTooltipNormalExtended[1] = "Forms a shield of electricity around a target unit, dealing <Alsh,DataA1> damage per second to units around it. |nLasts <Alsh,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "L";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -24040,9 +26498,14 @@ namespace War3Api.Object
         protected virtual LightningShieldCreep LoadLightningShieldCreep(ObjectDatabaseBase db)
         {
             var ability = new LightningShieldCreep(db);
+            ability.TextName = "Lightning Shield";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Lightning Shield";
+            ability.TextTooltipNormalExtended[1] = "Forms a shield of electricity around a target unit, dealing <ACls,DataA1> damage per second to units around it. |nLasts <ACls,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "L";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -24098,9 +26561,12 @@ namespace War3Api.Object
         protected virtual LiquidFire LoadLiquidFire(ObjectDatabaseBase db)
         {
             var ability = new LiquidFire(db);
+            ability.TextName = "Liquid Fire";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Liquid Fire";
+            ability.TextTooltipNormalExtended[1] = "Flings a volatile liquid that causes buildings to take damage over time. Buildings that are currently taking damage from Liquid Fire have their repair time increased by <Aliq,DataE1,%>%, and have their attack rate reduced by <Aliq,DataC1,%>%.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -24168,9 +26634,14 @@ namespace War3Api.Object
         protected virtual Load LoadLoad(ObjectDatabaseBase db)
         {
             var ability = new Load(db);
+            ability.TextName = "Load";
+            ability.TextEditorSuffix = " (Goblin Zeppelin)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Load";
+            ability.TextTooltipNormalExtended[1] = "Loads a targeted friendly land unit.";
+            ability.TextHotkeyNormalRaw = "L";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -24226,9 +26697,14 @@ namespace War3Api.Object
         protected virtual LoadBurrow LoadLoadBurrow(ObjectDatabaseBase db)
         {
             var ability = new LoadBurrow(db);
+            ability.TextName = "Load";
+            ability.TextEditorSuffix = "(Orc Burrow)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Load";
+            ability.TextTooltipNormalExtended[1] = "Loads a targeted friendly land unit.";
+            ability.TextHotkeyNormalRaw = "L";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -24284,9 +26760,13 @@ namespace War3Api.Object
         protected virtual LoadEntangledGoldMine LoadLoadEntangledGoldMine(ObjectDatabaseBase db)
         {
             var ability = new LoadEntangledGoldMine(db);
+            ability.TextName = "Load Wisp";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Load Wisp";
+            ability.TextTooltipNormalExtended[1] = "Loads a targeted friendly Wisp.";
+            ability.TextHotkeyNormalRaw = "L";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -24342,9 +26822,14 @@ namespace War3Api.Object
         protected virtual LoadNavies LoadLoadNavies(ObjectDatabaseBase db)
         {
             var ability = new LoadNavies(db);
+            ability.TextName = "Load";
+            ability.TextEditorSuffix = " (Ships)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Load";
+            ability.TextTooltipNormalExtended[1] = "Loads a targeted friendly land unit.";
+            ability.TextHotkeyNormalRaw = "L";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -24400,6 +26885,7 @@ namespace War3Api.Object
         protected virtual LoadPilot LoadLoadPilot(ObjectDatabaseBase db)
         {
             var ability = new LoadPilot(db);
+            ability.TextName = "Load Pilot";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
@@ -24454,6 +26940,7 @@ namespace War3Api.Object
         protected virtual Locust LoadLocust(ObjectDatabaseBase db)
         {
             var ability = new Locust(db);
+            ability.TextName = "Locust";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
@@ -24508,9 +26995,16 @@ namespace War3Api.Object
         protected virtual MagicDefense LoadMagicDefense(ObjectDatabaseBase db)
         {
             var ability = new MagicDefense(db);
+            ability.TextName = "Magic Defense";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Magic Defense";
+            ability.TextTooltipTurnOff[1] = "Stop Magic Defense";
+            ability.TextTooltipNormalExtended[1] = "Activate to gain magic immunity, but have <Adef,DataC1,%>% reduced movement speed.";
+            ability.TextTooltipTurnOffExtended[1] = "Deactivate to move at normal speed, but take damage from spells.";
+            ability.TextHotkeyNormalRaw = "D";
+            ability.TextHotkeyTurnOffRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -24594,9 +27088,12 @@ namespace War3Api.Object
         protected virtual MagicImmunity_Amim LoadMagicImmunity_Amim(ObjectDatabaseBase db)
         {
             var ability = new MagicImmunity_Amim(db);
+            ability.TextName = "Spell Immunity";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Spell Immunity";
+            ability.TextTooltipNormalExtended[1] = "Renders this unit immune to all spells.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -24652,9 +27149,13 @@ namespace War3Api.Object
         protected virtual MagicImmunityCreep LoadMagicImmunityCreep(ObjectDatabaseBase db)
         {
             var ability = new MagicImmunityCreep(db);
+            ability.TextName = "Spell Immunity";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Spell Immunity";
+            ability.TextTooltipNormalExtended[1] = "Renders this unit immune to all spells.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -24710,9 +27211,15 @@ namespace War3Api.Object
         protected virtual MagicImmunityArchimonde LoadMagicImmunityArchimonde(ObjectDatabaseBase db)
         {
             var ability = new MagicImmunityArchimonde(db);
+            ability.TextName = "Spell Immunity, Spell Immunity";
+            ability.TextEditorSuffix = "(Archimonde)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Spell Immunity";
+            ability.TextTooltipNormal[2] = " Spell Immunity";
+            ability.TextTooltipNormalExtended[1] = "Renders this unit immune to all spells.";
+            ability.TextTooltipNormalExtended[2] = "Renders this unit immune to all spells.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -24768,9 +27275,15 @@ namespace War3Api.Object
         protected virtual MagicImmunityDragons LoadMagicImmunityDragons(ObjectDatabaseBase db)
         {
             var ability = new MagicImmunityDragons(db);
+            ability.TextName = "Spell Immunity, Spell Immunity";
+            ability.TextEditorSuffix = "(Dragon)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Spell Immunity";
+            ability.TextTooltipNormal[2] = " Spell Immunity";
+            ability.TextTooltipNormalExtended[1] = "Renders this unit immune to all spells.";
+            ability.TextTooltipNormalExtended[2] = "Renders this unit immune to all spells.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -24826,9 +27339,13 @@ namespace War3Api.Object
         protected virtual AerialShackles LoadAerialShackles(ObjectDatabaseBase db)
         {
             var ability = new AerialShackles(db);
+            ability.TextName = "Aerial Shackles";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Aerial Shackles";
+            ability.TextTooltipNormalExtended[1] = "Magically binds a target enemy air unit, so that it cannot move or attack and takes <Amls,DataA1> damage per second. |nLasts <Amls,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -24884,11 +27401,19 @@ namespace War3Api.Object
         protected virtual ManaBattery LoadManaBattery(ObjectDatabaseBase db)
         {
             var ability = new ManaBattery(db);
+            ability.TextName = "Replenish Mana and Life";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Replenish Mana and Life";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r";
+            ability.TextTooltipNormalExtended[1] = "Replenish the life and mana of a target friendly unit.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "R";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
+            ability.TextOrderStringUseTurnOnRaw = "replenish";
             ability.StatsLevels = 1;
             ability.StatsRequiredLevel = 0;
             ability.StatsLevelSkipRequirement = 0;
@@ -24958,11 +27483,19 @@ namespace War3Api.Object
         protected virtual ManaBatteryObsidianStatue LoadManaBatteryObsidianStatue(ObjectDatabaseBase db)
         {
             var ability = new ManaBatteryObsidianStatue(db);
+            ability.TextName = "Replenish Mana";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Replenish Mana";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r";
+            ability.TextTooltipNormalExtended[1] = "Replenish the mana of a target friendly unit.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "R";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
+            ability.TextOrderStringUseTurnOnRaw = "replenish";
             ability.StatsLevels = 1;
             ability.StatsRequiredLevel = 0;
             ability.StatsLevelSkipRequirement = 0;
@@ -25032,9 +27565,14 @@ namespace War3Api.Object
         protected virtual ManaBurnDemon_Amnb LoadManaBurnDemon_Amnb(ObjectDatabaseBase db)
         {
             var ability = new ManaBurnDemon_Amnb(db);
+            ability.TextName = "Mana Burn";
+            ability.TextEditorSuffix = " (Neutral Hostile 2)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Mana Burn";
+            ability.TextTooltipNormalExtended[1] = "Sends a bolt of negative energy that burns <Amnb,DataA1> points of a target enemy unit's mana. The mana combusts, dealing damage equal to the amount of mana burned.";
+            ability.TextHotkeyNormalRaw = "N";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -25098,9 +27636,14 @@ namespace War3Api.Object
         protected virtual ManaBurnDemon_Ambd LoadManaBurnDemon_Ambd(ObjectDatabaseBase db)
         {
             var ability = new ManaBurnDemon_Ambd(db);
+            ability.TextName = "Mana Burn";
+            ability.TextEditorSuffix = " (Neutral Hostile 1)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Mana Burn";
+            ability.TextTooltipNormalExtended[1] = "Sends a bolt of negative energy that burns <Ambd,DataA1> points of a target enemy unit's mana. The mana combusts, dealing damage equal to the amount of mana burned.";
+            ability.TextHotkeyNormalRaw = "N";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -25164,9 +27707,14 @@ namespace War3Api.Object
         protected virtual ManaBurnHotkeyB LoadManaBurnHotkeyB(ObjectDatabaseBase db)
         {
             var ability = new ManaBurnHotkeyB(db);
+            ability.TextName = "Mana Burn";
+            ability.TextEditorSuffix = " (Neutral Hostile 3)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Mana Burn";
+            ability.TextTooltipNormalExtended[1] = "Sends a bolt of negative energy that burns <Ambb,DataA1> points of a target enemy unit's mana. The mana combusts, dealing damage equal to the amount of mana burned.";
+            ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -25218,9 +27766,16 @@ namespace War3Api.Object
         protected virtual ManaFlare LoadManaFlare(ObjectDatabaseBase db)
         {
             var ability = new ManaFlare(db);
+            ability.TextName = "Mana Flare";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Mana Flare";
+            ability.TextTooltipTurnOff[1] = "Stop Mana Flare";
+            ability.TextTooltipNormalExtended[1] = "Causes the Faerie Dragon to channel negative magical energies that damage nearby enemies when they cast spells. Also increases the Faerie Dragon's armor by <Amfl,DataE1>. |nLasts <Amfl,Dur1> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "Stops channeling Mana Flare.";
+            ability.TextHotkeyNormalRaw = "F";
+            ability.TextHotkeyTurnOffRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -25274,7 +27829,7 @@ namespace War3Api.Object
             ability.DataHeroDamagePerManaPoint[2] = 0f;
             ability.DataHeroDamagePerManaPoint[3] = 0f;
             ability.DataHeroDamagePerManaPoint[4] = 0f;
-            ability.DataUnitMaximumDamage[1] = 100f;
+            ability.DataUnitMaximumDamage[1] = 80f;
             ability.DataUnitMaximumDamage[2] = 0f;
             ability.DataUnitMaximumDamage[3] = 0f;
             ability.DataUnitMaximumDamage[4] = 0f;
@@ -25296,9 +27851,16 @@ namespace War3Api.Object
         protected virtual ManaShieldCreep LoadManaShieldCreep(ObjectDatabaseBase db)
         {
             var ability = new ManaShieldCreep(db);
+            ability.TextName = "Mana Shield";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Mana Shield";
+            ability.TextTooltipTurnOff[1] = "Deactivate Mana Shield";
+            ability.TextTooltipNormalExtended[1] = "Activates a shield that absorbs <ACmf,DataA1> damage per point of mana.";
+            ability.TextHotkeyNormalRaw = "N";
+            ability.TextHotkeyTurnOffRaw = "N";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -25358,9 +27920,13 @@ namespace War3Api.Object
         protected virtual MeatDrop LoadMeatDrop(ObjectDatabaseBase db)
         {
             var ability = new MeatDrop(db);
+            ability.TextName = "Drop Corpse";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Drop All Corpses";
+            ability.TextTooltipNormalExtended[1] = "Drops all corpses for immediate use.";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -25412,9 +27978,16 @@ namespace War3Api.Object
         protected virtual MeatLoad LoadMeatLoad(ObjectDatabaseBase db)
         {
             var ability = new MeatLoad(db);
+            ability.TextName = "Get Corpse";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Get Corpse";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.";
+            ability.TextTooltipNormalExtended[1] = "Picks up a nearby corpse for later use.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.";
+            ability.TextHotkeyNormalRaw = "C";
+            ability.TextHotkeyTurnOffRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -25466,9 +28039,17 @@ namespace War3Api.Object
         protected virtual Militia LoadMilitia(ObjectDatabaseBase db)
         {
             var ability = new Militia(db);
+            ability.TextName = "Call to Arms";
+            ability.TextEditorSuffix = " (Peasant)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Call to Arms";
+            ability.TextTooltipTurnOff[1] = "Back to Work";
+            ability.TextTooltipNormalExtended[1] = "Run to the nearest Keep, Castle or starting Town Hall to arm the Peasant, converting him into Militia. |nLasts <Amil,Dur1> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "Run to the nearest Keep, Castle or starting Town Hall to disarm the Militia, converting it into a Peasant.";
+            ability.TextHotkeyNormalRaw = "C";
+            ability.TextHotkeyTurnOffRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -25482,11 +28063,11 @@ namespace War3Api.Object
             ability.StatsCastingTime[2] = 0f;
             ability.StatsCastingTime[3] = 0f;
             ability.StatsCastingTime[4] = 0f;
-            ability.StatsDurationNormal[1] = 40f;
+            ability.StatsDurationNormal[1] = 42.5f;
             ability.StatsDurationNormal[2] = 0f;
             ability.StatsDurationNormal[3] = 0f;
             ability.StatsDurationNormal[4] = 0f;
-            ability.StatsDurationHero[1] = 40f;
+            ability.StatsDurationHero[1] = 42.5f;
             ability.StatsDurationHero[2] = 0f;
             ability.StatsDurationHero[3] = 0f;
             ability.StatsDurationHero[4] = 0f;
@@ -25528,9 +28109,17 @@ namespace War3Api.Object
         protected virtual MilitiaConversion LoadMilitiaConversion(ObjectDatabaseBase db)
         {
             var ability = new MilitiaConversion(db);
+            ability.TextName = "Call To Arms";
+            ability.TextEditorSuffix = " (Town Hall)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Call to Arms";
+            ability.TextTooltipTurnOff[1] = "Back to Work";
+            ability.TextTooltipNormalExtended[1] = "Call all nearby Peasants to the Town Hall to be converted to Militia. |nLasts <Amil,Dur1> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "Call all nearby Militia to the Town Hall to be converted to Peasants.";
+            ability.TextHotkeyNormalRaw = "C";
+            ability.TextHotkeyTurnOffRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -25582,9 +28171,13 @@ namespace War3Api.Object
         protected virtual MindRot LoadMindRot(ObjectDatabaseBase db)
         {
             var ability = new MindRot(db);
+            ability.TextName = "Mind Rot";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Mind Rot";
+            ability.TextTooltipNormalExtended[1] = "Drains <ANmr,DataA1> mana from a target enemy unit over <ANmr,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -25640,6 +28233,8 @@ namespace War3Api.Object
         protected virtual Mine LoadMine(ObjectDatabaseBase db)
         {
             var ability = new Mine(db);
+            ability.TextName = "Mine - exploding";
+            ability.TextEditorSuffix = " (Goblin Land Mine)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -25702,9 +28297,20 @@ namespace War3Api.Object
         protected virtual MonsoonCreep LoadMonsoonCreep(ObjectDatabaseBase db)
         {
             var ability = new MonsoonCreep(db);
+            ability.TextName = "Monsoon";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Monsoon - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Monsoon - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Monsoon - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "Calls down a storm of lightning to strike enemy units for <ACmo,DataA1> damage in a small target area. |nLasts <ACmo,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[2] = "Calls down a storm of lightning to strike enemy units for <ACmo,DataA2> damage in a medium target area. |nLasts <ACmo,Dur1> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Calls down a storm of lightning to strike enemy units for <ACmo,DataA3> damage in a large target area. |nLasts <ACmo,Dur1> seconds.";
+            ability.TextTooltipLearn = "Learn Monsoon - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "N";
+            ability.TextHotkeyNormalRaw = "N";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -25768,9 +28374,12 @@ namespace War3Api.Object
         protected virtual MoonGlaive LoadMoonGlaive(ObjectDatabaseBase db)
         {
             var ability = new MoonGlaive(db);
+            ability.TextName = "Moon Glaive";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Moon Glaive";
+            ability.TextTooltipNormalExtended[1] = "Gives the Huntress the ability to strike additional units with her bouncing glaive attacks.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -25822,9 +28431,13 @@ namespace War3Api.Object
         protected virtual MoonGlaiveNoResearch LoadMoonGlaiveNoResearch(ObjectDatabaseBase db)
         {
             var ability = new MoonGlaiveNoResearch(db);
+            ability.TextName = "Moon Glaive";
+            ability.TextEditorSuffix = " (Naisha)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Moon Glaive";
+            ability.TextTooltipNormalExtended[1] = "Gives the Huntress the ability to strike additional units with her bouncing glaive attacks.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -25876,6 +28489,7 @@ namespace War3Api.Object
         protected virtual Move LoadMove(ObjectDatabaseBase db)
         {
             var ability = new Move(db);
+            ability.TextName = "Move";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -25930,9 +28544,14 @@ namespace War3Api.Object
         protected virtual NeutralBuilding LoadNeutralBuilding(ObjectDatabaseBase db)
         {
             var ability = new NeutralBuilding(db);
+            ability.TextName = "Select Hero";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Select Hero";
+            ability.TextTooltipTurnOff[1] = "Deselect Hero";
+            ability.TextHotkeyNormalRaw = "H";
+            ability.TextHotkeyTurnOffRaw = "H";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -26000,9 +28619,14 @@ namespace War3Api.Object
         protected virtual NeutralBuildingAnyUnit LoadNeutralBuildingAnyUnit(ObjectDatabaseBase db)
         {
             var ability = new NeutralBuildingAnyUnit(db);
+            ability.TextName = "Select Unit";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Select Unit";
+            ability.TextTooltipTurnOff[1] = "Deselect Unit";
+            ability.TextHotkeyNormalRaw = "U";
+            ability.TextHotkeyTurnOffRaw = "U";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -26070,9 +28694,13 @@ namespace War3Api.Object
         protected virtual NeutralDetectionRevealAbility LoadNeutralDetectionRevealAbility(ObjectDatabaseBase db)
         {
             var ability = new NeutralDetectionRevealAbility(db);
+            ability.TextName = "Reveal";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Reveal";
+            ability.TextTooltipNormalExtended[1] = "Reveals an area of the map. |nDetects invisible units. |nLasts <Andt,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -26136,6 +28764,8 @@ namespace War3Api.Object
         protected virtual NeutralRegenManaOnly LoadNeutralRegenManaOnly(ObjectDatabaseBase db)
         {
             var ability = new NeutralRegenManaOnly(db);
+            ability.TextName = "Mana Regeneration, Life Regeneration Aura";
+            ability.TextEditorSuffix = " (Neutral)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
@@ -26198,6 +28828,8 @@ namespace War3Api.Object
         protected virtual NeutralRegenHealthOnly LoadNeutralRegenHealthOnly(ObjectDatabaseBase db)
         {
             var ability = new NeutralRegenHealthOnly(db);
+            ability.TextName = "Life Regeneration Aura";
+            ability.TextEditorSuffix = " (Neutral)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
@@ -26260,9 +28892,13 @@ namespace War3Api.Object
         protected virtual NeutralSpell LoadNeutralSpell(ObjectDatabaseBase db)
         {
             var ability = new NeutralSpell(db);
+            ability.TextName = "Charge Gold and Lumber";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Charge Gold and Lumber";
+            ability.TextTooltipNormalExtended[1] = "Charges the player a fixed amount of gold and lumber.";
+            ability.TextHotkeyNormalRaw = "G";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -26396,9 +29032,16 @@ namespace War3Api.Object
         protected virtual OrbOfAnnihilation LoadOrbOfAnnihilation(ObjectDatabaseBase db)
         {
             var ability = new OrbOfAnnihilation(db);
+            ability.TextName = "Orb of Annihilation";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Orb of Annihilation";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r";
+            ability.TextTooltipNormalExtended[1] = "Adds <Afak,DataA1> bonus damage to the Destroyer's attack and causes his attacks to do area of effect damage.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "O";
+            ability.TextHotkeyTurnOffRaw = "O";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -26470,9 +29113,16 @@ namespace War3Api.Object
         protected virtual OrbOfAnnihilationQuillSpray LoadOrbOfAnnihilationQuillSpray(ObjectDatabaseBase db)
         {
             var ability = new OrbOfAnnihilationQuillSpray(db);
+            ability.TextName = "Quill Spray";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Quill Spray";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r";
+            ability.TextTooltipNormalExtended[1] = "Adds <ANak,DataA1> bonus damage to the Quill Beast's attack and causes its attacks to do area of effect damage.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "Q";
+            ability.TextHotkeyTurnOffRaw = "Q";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -26524,6 +29174,7 @@ namespace War3Api.Object
         protected virtual OnFire LoadOnFire(ObjectDatabaseBase db)
         {
             var ability = new OnFire(db);
+            ability.TextName = "On Fire";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -26578,6 +29229,7 @@ namespace War3Api.Object
         protected virtual OnFireHuman LoadOnFireHuman(ObjectDatabaseBase db)
         {
             var ability = new OnFireHuman(db);
+            ability.TextName = "On Fire (Human)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
@@ -26632,6 +29284,7 @@ namespace War3Api.Object
         protected virtual OnFireOrc LoadOnFireOrc(ObjectDatabaseBase db)
         {
             var ability = new OnFireOrc(db);
+            ability.TextName = "On Fire (Orc)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
@@ -26686,6 +29339,7 @@ namespace War3Api.Object
         protected virtual OnFireNightElf LoadOnFireNightElf(ObjectDatabaseBase db)
         {
             var ability = new OnFireNightElf(db);
+            ability.TextName = "On Fire (Night Elf)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
@@ -26740,6 +29394,7 @@ namespace War3Api.Object
         protected virtual OnFireUndead LoadOnFireUndead(ObjectDatabaseBase db)
         {
             var ability = new OnFireUndead(db);
+            ability.TextName = "On Fire (Undead)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
@@ -26794,9 +29449,16 @@ namespace War3Api.Object
         protected virtual Parasite LoadParasite(ObjectDatabaseBase db)
         {
             var ability = new Parasite(db);
+            ability.TextName = "Parasite";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "naga";
+            ability.TextTooltipNormal[1] = "Parasite";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "R";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -26876,9 +29538,16 @@ namespace War3Api.Object
         protected virtual ParasiteEredar LoadParasiteEredar(ObjectDatabaseBase db)
         {
             var ability = new ParasiteEredar(db);
+            ability.TextName = "Parasite";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Parasite";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Afflicts a target enemy unit with a deadly parasite that deals <ANpa,DataA1> damage per second for <ANpa,Dur1> seconds. If the afflicted unit dies while under the effect of Parasite, a minor minion will spawn from its corpse.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "R";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -26930,9 +29599,13 @@ namespace War3Api.Object
         protected virtual PermanentImmolation LoadPermanentImmolation(ObjectDatabaseBase db)
         {
             var ability = new PermanentImmolation(db);
+            ability.TextName = "Permanent Immolation";
+            ability.TextEditorSuffix = " (Neutral Hostile 1)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Permanent Immolation";
+            ability.TextTooltipNormalExtended[1] = "Burns nearby enemy units for <ANpi,DataA1> points of damage per second.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -26996,9 +29669,13 @@ namespace War3Api.Object
         protected virtual PermanentImmolationFlying LoadPermanentImmolationFlying(ObjectDatabaseBase db)
         {
             var ability = new PermanentImmolationFlying(db);
+            ability.TextName = "Phoenix Fire";
+            ability.TextEditorSuffix = "(flyer)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Phoenix Fire";
+            ability.TextTooltipNormalExtended[1] = "Burns nearby enemy flying units for <Apmf,DataA1> points of damage per second.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -27062,9 +29739,13 @@ namespace War3Api.Object
         protected virtual PermanentImmolationGraphic LoadPermanentImmolationGraphic(ObjectDatabaseBase db)
         {
             var ability = new PermanentImmolationGraphic(db);
+            ability.TextName = "Permanent Immolation";
+            ability.TextEditorSuffix = " (Neutral Hostile 2)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Permanent Immolation";
+            ability.TextTooltipNormalExtended[1] = "Burns nearby enemy units for <Apig,DataA1> points of damage per second.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -27128,6 +29809,7 @@ namespace War3Api.Object
         protected virtual PermanentInvisibility LoadPermanentInvisibility(ObjectDatabaseBase db)
         {
             var ability = new PermanentInvisibility(db);
+            ability.TextName = "Permanent Invisibility";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -27186,9 +29868,16 @@ namespace War3Api.Object
         protected virtual PhaseShift LoadPhaseShift(ObjectDatabaseBase db)
         {
             var ability = new PhaseShift(db);
+            ability.TextName = "Phase Shift";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Phase Shift";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r";
+            ability.TextTooltipNormalExtended[1] = "Causes this unit to shift out of existence whenever it takes damage, temporarily avoiding any further damage. |nLasts <Apsh,Dur1> second.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "E";
+            ability.TextHotkeyTurnOffRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -27248,6 +29937,7 @@ namespace War3Api.Object
         protected virtual Phoenix LoadPhoenix(ObjectDatabaseBase db)
         {
             var ability = new Phoenix(db);
+            ability.TextName = "Phoenix Morphing (Egg Related)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
@@ -27322,9 +30012,12 @@ namespace War3Api.Object
         protected virtual PhoenixFire LoadPhoenixFire(ObjectDatabaseBase db)
         {
             var ability = new PhoenixFire(db);
+            ability.TextName = "Phoenix Fire";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Phoenix Fire";
+            ability.TextTooltipNormalExtended[1] = "Fires down streams of flame, lighting nearby enemies on fire.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -27384,9 +30077,13 @@ namespace War3Api.Object
         protected virtual PlagueToss LoadPlagueToss(ObjectDatabaseBase db)
         {
             var ability = new PlagueToss(db);
+            ability.TextName = "Disease Cloud";
+            ability.TextEditorSuffix = " (Meat Wagon)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Disease Cloud";
+            ability.TextTooltipNormalExtended[1] = "Drops a Disease Cloud with each attack. Disease Cloud deals <Aap1,DataB1> damage per second. |nLasts <Aap1,DataA1> seconds.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -27442,9 +30139,12 @@ namespace War3Api.Object
         protected virtual PoisonAttack LoadPoisonAttack(ObjectDatabaseBase db)
         {
             var ability = new PoisonAttack(db);
+            ability.TextName = "Poison Sting";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Poison Sting";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -27512,9 +30212,13 @@ namespace War3Api.Object
         protected virtual Polymorph LoadPolymorph(ObjectDatabaseBase db)
         {
             var ability = new Polymorph(db);
+            ability.TextName = "Polymorph";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Polymorph";
+            ability.TextTooltipNormalExtended[1] = "Turns a target enemy unit into a sheep. The targeted unit retains its hit points and armor, but cannot attack. |nCannot be cast on Heroes. |nLasts <Aply,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "O";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -27586,9 +30290,14 @@ namespace War3Api.Object
         protected virtual PolymorphCreep LoadPolymorphCreep(ObjectDatabaseBase db)
         {
             var ability = new PolymorphCreep(db);
+            ability.TextName = "Polymorph";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Polymorph";
+            ability.TextTooltipNormalExtended[1] = "Turns a target enemy unit into a sheep. The targeted unit retains its hit points and armor, but cannot attack. |nCannot be cast on Heroes or summoned units.|nLasts <ACpy,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "O";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -27660,9 +30369,13 @@ namespace War3Api.Object
         protected virtual Possession LoadPossession(ObjectDatabaseBase db)
         {
             var ability = new Possession(db);
+            ability.TextName = "Possession";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Possession";
+            ability.TextTooltipNormalExtended[1] = "Displaces the soul of an enemy, giving you permanent control of it, but destroying the caster's body. |nPossession cannot be used on flying units, Heroes, or creeps above level <Apos,DataA1>.";
+            ability.TextHotkeyNormalRaw = "O";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -27718,9 +30431,14 @@ namespace War3Api.Object
         protected virtual PossessionCreep LoadPossessionCreep(ObjectDatabaseBase db)
         {
             var ability = new PossessionCreep(db);
+            ability.TextName = "Possession";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Possession";
+            ability.TextTooltipNormalExtended[1] = "Displaces the soul of a target unit, giving you control of it, but destroying the caster's body. |nPossession cannot be used on flying units, Heroes, or creeps above level <ACps,DataA1>.";
+            ability.TextHotkeyNormalRaw = "O";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -27776,9 +30494,14 @@ namespace War3Api.Object
         protected virtual PossessionChanneling LoadPossessionChanneling(ObjectDatabaseBase db)
         {
             var ability = new PossessionChanneling(db);
+            ability.TextName = "Possession";
+            ability.TextEditorSuffix = " (Channeling)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Possession";
+            ability.TextTooltipNormalExtended[1] = "Stuns a target unit and the Banshee for <Aps2,Dur1> seconds, during which the Banshee takes extra damage from attacks. She then displaces the soul of the enemy, giving you permanent control of it, but destroying the caster's body. |nPossession cannot be used on flying units, Heroes, or creeps above level <Aps2,DataA1>.";
+            ability.TextHotkeyNormalRaw = "O";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -27846,9 +30569,14 @@ namespace War3Api.Object
         protected virtual Pulverize LoadPulverize(ObjectDatabaseBase db)
         {
             var ability = new Pulverize(db);
+            ability.TextName = "Pulverize,Pulverize";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Pulverize";
+            ability.TextTooltipNormal[2] = "Enhanced Pulverize";
+            ability.TextTooltipNormalExtended[1] = "Gives a <Awar,DataA1>% chance that an attack will deal <Awar,DataB1> damage to nearby units.";
+            ability.TextTooltipNormalExtended[2] = "Gives a <Awar,DataA2>% chance that an attack will deal <Awar,DataB2> damage to nearby units.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 2;
@@ -27916,9 +30644,13 @@ namespace War3Api.Object
         protected virtual PulverizeSeaGiant LoadPulverizeSeaGiant(ObjectDatabaseBase db)
         {
             var ability = new PulverizeSeaGiant(db);
+            ability.TextName = "Pulverize";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Pulverize";
+            ability.TextTooltipNormalExtended[1] = "Gives a <ACpv,DataA1>% chance that an attack will deal <ACpv,DataB1> damage to nearby units.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -27986,6 +30718,7 @@ namespace War3Api.Object
         protected virtual PurchaseItem LoadPurchaseItem(ObjectDatabaseBase db)
         {
             var ability = new PurchaseItem(db);
+            ability.TextName = "Shop Purchase Item";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -28040,9 +30773,13 @@ namespace War3Api.Object
         protected virtual Purge_Aprg LoadPurge_Aprg(ObjectDatabaseBase db)
         {
             var ability = new Purge_Aprg(db);
+            ability.TextName = "Purge";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Purge";
+            ability.TextTooltipNormalExtended[1] = "Removes all buffs from a target unit, and slows its movement speed by a factor of <Aprg,DataA1>. Purged units will slowly regain their movement speed over <Aprg,Dur1> seconds. |n|cffffcc00Deals <Aprg,DataC1> damage to summoned units.|r";
+            ability.TextHotkeyNormalRaw = "G";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -28118,9 +30855,13 @@ namespace War3Api.Object
         protected virtual Purge_Apg2 LoadPurge_Apg2(ObjectDatabaseBase db)
         {
             var ability = new Purge_Apg2(db);
+            ability.TextName = "Purge";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Purge";
+            ability.TextTooltipNormalExtended[1] = "Removes all buffs from a target unit. Enemy units are also immobilized for <Apg2,DataD1> seconds and their movement speed is reduced by a factor of <Apg2,DataA1>; they will slowly regain their movement speed over <Apg2,Dur1> seconds. |n|cffffcc00Deals <Apg2,DataC1> damage to summoned units.|r";
+            ability.TextHotkeyNormalRaw = "G";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -28176,9 +30917,14 @@ namespace War3Api.Object
         protected virtual PurgeCreep LoadPurgeCreep(ObjectDatabaseBase db)
         {
             var ability = new PurgeCreep(db);
+            ability.TextName = "Purge";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Purge";
+            ability.TextTooltipNormalExtended[1] = "Removes all buffs from a target unit, and slows its movement speed by a factor of <ACpu,DataA1>. Purged units will slowly regain their movement speed over <ACpu,Dur1> seconds. |n|cffffcc00Deals <ACpu,DataC1> damage to summoned units.|r";
+            ability.TextHotkeyNormalRaw = "G";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -28254,9 +31000,14 @@ namespace War3Api.Object
         protected virtual RainOfFireCreep LoadRainOfFireCreep(ObjectDatabaseBase db)
         {
             var ability = new RainOfFireCreep(db);
+            ability.TextName = "Rain of Fire";
+            ability.TextEditorSuffix = " (Neutral Hostile 2)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Rain of Fire";
+            ability.TextTooltipNormalExtended[1] = "Calls down waves of fire that damage units in an area. Each wave deals <ACrf,DataB1> damage. |nLasts for <ACrf,DataA1> waves.";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -28332,9 +31083,14 @@ namespace War3Api.Object
         protected virtual RainOfFireCreepGreater LoadRainOfFireCreepGreater(ObjectDatabaseBase db)
         {
             var ability = new RainOfFireCreepGreater(db);
+            ability.TextName = "Rain of Fire";
+            ability.TextEditorSuffix = " (Neutral Hostile 1)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Rain of Fire";
+            ability.TextTooltipNormalExtended[1] = "Calls down waves of fire that damage units in an area. Each wave deals <ACrg,DataB1> initial damage and <ACrg,DataE1> damage per second for <ACrg,Dur1> seconds. |nLasts for <ACrg,DataA1> waves.";
+            ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -28386,9 +31142,16 @@ namespace War3Api.Object
         protected virtual RaiseDead LoadRaiseDead(ObjectDatabaseBase db)
         {
             var ability = new RaiseDead(db);
+            ability.TextName = "Raise Dead";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Raise Dead";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.";
+            ability.TextTooltipNormalExtended[1] = "Raises <Arai,DataA1> skeletons from a corpse.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.";
+            ability.TextHotkeyNormalRaw = "R";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 2;
@@ -28460,9 +31223,17 @@ namespace War3Api.Object
         protected virtual RaiseDeadCreep LoadRaiseDeadCreep(ObjectDatabaseBase db)
         {
             var ability = new RaiseDeadCreep(db);
+            ability.TextName = "Raise Dead";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Raise Dead";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.";
+            ability.TextTooltipNormalExtended[1] = "Raises <ACrd,DataA1> skeletons from a corpse.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.";
+            ability.TextHotkeyNormalRaw = "R";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -28534,6 +31305,7 @@ namespace War3Api.Object
         protected virtual Rally LoadRally(ObjectDatabaseBase db)
         {
             var ability = new Rally(db);
+            ability.TextName = "Rally";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -28588,9 +31360,16 @@ namespace War3Api.Object
         protected virtual RavenFormDruid LoadRavenFormDruid(ObjectDatabaseBase db)
         {
             var ability = new RavenFormDruid(db);
+            ability.TextName = "Storm Crow Form";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Storm Crow Form";
+            ability.TextTooltipTurnOff[1] = "Night Elf Form";
+            ability.TextTooltipNormalExtended[1] = "Transforms the Druid into a storm crow, giving him the ability to fly.";
+            ability.TextTooltipTurnOffExtended[1] = "Transforms the Druid into a Night Elf.";
+            ability.TextHotkeyNormalRaw = "F";
+            ability.TextHotkeyTurnOffRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -28662,9 +31441,16 @@ namespace War3Api.Object
         protected virtual RavenFormMedivh LoadRavenFormMedivh(ObjectDatabaseBase db)
         {
             var ability = new RavenFormMedivh(db);
+            ability.TextName = "Crow Form";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Crow Form";
+            ability.TextTooltipTurnOff[1] = "Human Form";
+            ability.TextTooltipNormalExtended[1] = "Turn into a Crow.";
+            ability.TextTooltipTurnOffExtended[1] = "Turn into a Human.";
+            ability.TextHotkeyNormalRaw = "F";
+            ability.TextHotkeyTurnOffRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -28736,9 +31522,13 @@ namespace War3Api.Object
         protected virtual ReincarnationCreep LoadReincarnationCreep(ObjectDatabaseBase db)
         {
             var ability = new ReincarnationCreep(db);
+            ability.TextName = "Reincarnation";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Reincarnation";
+            ability.TextTooltipNormal[2] = "";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -28794,9 +31584,15 @@ namespace War3Api.Object
         protected virtual ReincarnationGeneric LoadReincarnationGeneric(ObjectDatabaseBase db)
         {
             var ability = new ReincarnationGeneric(db);
+            ability.TextName = "Reincarnation";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Reincarnation";
+            ability.TextTooltipNormalExtended[1] = "When killed, this Hero will come back to life. Reincarnation has a <ANr2,Cool1> second cooldown.";
+            ability.TextTooltipLearn = "Learn Reincarnation";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -28848,9 +31644,12 @@ namespace War3Api.Object
         protected virtual ReinforcedBurrows LoadReinforcedBurrows(ObjectDatabaseBase db)
         {
             var ability = new ReinforcedBurrows(db);
+            ability.TextName = "Reinforced Burrows Upgrade";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Reinforced Burrows";
+            ability.TextTooltipNormalExtended[1] = "Gives Burrows Fortified armor.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -28902,9 +31701,13 @@ namespace War3Api.Object
         protected virtual Rejuvination LoadRejuvination(ObjectDatabaseBase db)
         {
             var ability = new Rejuvination(db);
+            ability.TextName = "Rejuvenation";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Rejuvenation";
+            ability.TextTooltipNormalExtended[1] = "Heals a target friendly unit for <Arej,DataA1> hit points over <Arej,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -28972,9 +31775,14 @@ namespace War3Api.Object
         protected virtual RejuvinationCreep LoadRejuvinationCreep(ObjectDatabaseBase db)
         {
             var ability = new RejuvinationCreep(db);
+            ability.TextName = "Rejuvenation";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Rejuvenation";
+            ability.TextTooltipNormalExtended[1] = "Heals a target friendly unit for <ACrj,DataA1> hit points over <ACrj,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -29042,9 +31850,14 @@ namespace War3Api.Object
         protected virtual RejuvinationFurbolg LoadRejuvinationFurbolg(ObjectDatabaseBase db)
         {
             var ability = new RejuvinationFurbolg(db);
+            ability.TextName = "Rejuvenation";
+            ability.TextEditorSuffix = "(Furbolg)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Rejuvenation";
+            ability.TextTooltipNormalExtended[1] = "Heals a target friendly unit for <ACr2,DataA1> hit points over <ACr2,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -29112,9 +31925,16 @@ namespace War3Api.Object
         protected virtual Renew LoadRenew(ObjectDatabaseBase db)
         {
             var ability = new Renew(db);
+            ability.TextName = "Renew";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Renew";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Renews friendly Night Elf buildings, allied buildings, and friendly mechanical units.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "R";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -29186,9 +32006,17 @@ namespace War3Api.Object
         protected virtual RepairHuman LoadRepairHuman(ObjectDatabaseBase db)
         {
             var ability = new RepairHuman(db);
+            ability.TextName = "Repair";
+            ability.TextEditorSuffix = "(Human)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Repair";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Repairs mechanical units and structures at the cost of resources.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "R";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -29260,9 +32088,16 @@ namespace War3Api.Object
         protected virtual RepairOrc LoadRepairOrc(ObjectDatabaseBase db)
         {
             var ability = new RepairOrc(db);
+            ability.TextName = "Repair";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Repair";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Repairs mechanical units and structures at the cost of resources.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "R";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -29334,9 +32169,16 @@ namespace War3Api.Object
         protected virtual ReplenishLifeMana LoadReplenishLifeMana(ObjectDatabaseBase db)
         {
             var ability = new ReplenishLifeMana(db);
+            ability.TextName = "Replenish";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Replenish";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r";
+            ability.TextTooltipNormalExtended[1] = "Replenish the life and mana of a target friendly unit.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "R";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -29412,9 +32254,16 @@ namespace War3Api.Object
         protected virtual ReplenishLife LoadReplenishLife(ObjectDatabaseBase db)
         {
             var ability = new ReplenishLife(db);
+            ability.TextName = "Essence of Blight";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Essence of Blight";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r";
+            ability.TextTooltipNormalExtended[1] = "Restores <Arpl,DataA1> hit points to nearby friendly units.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "B";
+            ability.TextHotkeyTurnOffRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -29482,11 +32331,21 @@ namespace War3Api.Object
         protected virtual ReplenishMana LoadReplenishMana(ObjectDatabaseBase db)
         {
             var ability = new ReplenishMana(db);
+            ability.TextName = "Spirit Touch";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Spirit Touch";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r";
+            ability.TextTooltipNormalExtended[1] = "Restores <Arpm,DataB1> mana to nearby friendly units.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "C";
+            ability.TextHotkeyTurnOffRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
+            ability.TextOrderStringUseTurnOnRaw = "replenishmana";
+            ability.TextOrderStringActivateRaw = "replenishmanaon";
+            ability.TextOrderStringDeactivateRaw = "replenishmanaoff";
             ability.StatsLevels = 1;
             ability.StatsRequiredLevel = 0;
             ability.StatsLevelSkipRequirement = 0;
@@ -29552,9 +32411,13 @@ namespace War3Api.Object
         protected virtual ResistantSkin LoadResistantSkin(ObjectDatabaseBase db)
         {
             var ability = new ResistantSkin(db);
+            ability.TextName = "Resistant Skin";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Resistant Skin";
+            ability.TextTooltipNormalExtended[1] = "Reduces the duration of negative spells and renders the Mountain Giant immune to certain spells.";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -29606,9 +32469,13 @@ namespace War3Api.Object
         protected virtual ResistantSkinCreep LoadResistantSkinCreep(ObjectDatabaseBase db)
         {
             var ability = new ResistantSkinCreep(db);
+            ability.TextName = "Resistant Skin";
+            ability.TextEditorSuffix = " (Neutral Hostile 1)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Resistant Skin";
+            ability.TextTooltipNormalExtended[1] = "Reduces the duration of negative spells and renders the unit immune to certain spells.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -29660,9 +32527,13 @@ namespace War3Api.Object
         protected virtual ResistantSkin31PosCreep LoadResistantSkin31PosCreep(ObjectDatabaseBase db)
         {
             var ability = new ResistantSkin31PosCreep(db);
+            ability.TextName = "Resistant Skin";
+            ability.TextEditorSuffix = " (Neutral Hostile 2)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Resistant Skin";
+            ability.TextTooltipNormalExtended[1] = "Reduces the duration of negative spells and renders the unit immune to certain spells.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -29714,9 +32585,16 @@ namespace War3Api.Object
         protected virtual Restoration LoadRestoration(ObjectDatabaseBase db)
         {
             var ability = new Restoration(db);
+            ability.TextName = "Restore";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Restore";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.";
+            ability.TextTooltipNormalExtended[1] = "Repairs mechanical units and structures at the cost of resources.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.";
+            ability.TextHotkeyNormalRaw = "R";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -29788,6 +32666,7 @@ namespace War3Api.Object
         protected virtual ReturnGold LoadReturnGold(ObjectDatabaseBase db)
         {
             var ability = new ReturnGold(db);
+            ability.TextName = "Return Gold";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -29850,6 +32729,7 @@ namespace War3Api.Object
         protected virtual ReturnGoldLumber LoadReturnGoldLumber(ObjectDatabaseBase db)
         {
             var ability = new ReturnGoldLumber(db);
+            ability.TextName = "Return Gold and Lumber";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -29912,6 +32792,7 @@ namespace War3Api.Object
         protected virtual ReturnLumber LoadReturnLumber(ObjectDatabaseBase db)
         {
             var ability = new ReturnLumber(db);
+            ability.TextName = "Return Lumber";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -29974,9 +32855,13 @@ namespace War3Api.Object
         protected virtual RevealArcaneTower LoadRevealArcaneTower(ObjectDatabaseBase db)
         {
             var ability = new RevealArcaneTower(db);
+            ability.TextName = "Reveal";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Reveal";
+            ability.TextTooltipNormalExtended[1] = "Reveals an area of the map. |nDetects invisible units. |nLasts <AHta,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -30028,6 +32913,7 @@ namespace War3Api.Object
         protected virtual Revenge LoadRevenge(ObjectDatabaseBase db)
         {
             var ability = new Revenge(db);
+            ability.TextName = "Revenge";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -30082,6 +32968,7 @@ namespace War3Api.Object
         protected virtual Revive LoadRevive(ObjectDatabaseBase db)
         {
             var ability = new Revive(db);
+            ability.TextName = "Revive Hero";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -30136,9 +33023,13 @@ namespace War3Api.Object
         protected virtual Roar_Aroa LoadRoar_Aroa(ObjectDatabaseBase db)
         {
             var ability = new Roar_Aroa(db);
+            ability.TextName = "Roar";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Roar";
+            ability.TextTooltipNormalExtended[1] = "Gives friendly nearby units a <Aroa,DataA1,%>% bonus to damage. |nLasts <Aroa,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -30218,9 +33109,14 @@ namespace War3Api.Object
         protected virtual Roar_Ara2 LoadRoar_Ara2(ObjectDatabaseBase db)
         {
             var ability = new Roar_Ara2(db);
+            ability.TextName = "Roar";
+            ability.TextEditorSuffix = "(Morph)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Roar";
+            ability.TextTooltipNormalExtended[1] = "Gives friendly nearby units a <Ara2,DataA1,%>% bonus to damage. |nLasts <Ara2,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -30300,9 +33196,14 @@ namespace War3Api.Object
         protected virtual RoarCreepSkeletalOrc LoadRoarCreepSkeletalOrc(ObjectDatabaseBase db)
         {
             var ability = new RoarCreepSkeletalOrc(db);
+            ability.TextName = "Roar";
+            ability.TextEditorSuffix = " (Skeletal Orc Champion)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Roar";
+            ability.TextTooltipNormalExtended[1] = "Gives nearby friendly units a <ACr1,DataA1,%>% bonus to damage. |nLasts <ACr1,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -30382,9 +33283,14 @@ namespace War3Api.Object
         protected virtual RoarCreep LoadRoarCreep(ObjectDatabaseBase db)
         {
             var ability = new RoarCreep(db);
+            ability.TextName = "Roar";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Roar";
+            ability.TextTooltipNormalExtended[1] = "Gives nearby friendly units a <ACro,DataA1,%>% bonus to damage. |nLasts <ACro,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -30464,9 +33370,12 @@ namespace War3Api.Object
         protected virtual RocketAttack LoadRocketAttack(ObjectDatabaseBase db)
         {
             var ability = new RocketAttack(db);
+            ability.TextName = "Barrage";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Barrage";
+            ability.TextTooltipNormalExtended[1] = "Allows Siege Engines to fire powerful rockets at nearby enemy air units.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -30530,9 +33439,17 @@ namespace War3Api.Object
         protected virtual RootAncients LoadRootAncients(ObjectDatabaseBase db)
         {
             var ability = new RootAncients(db);
+            ability.TextName = "Root";
+            ability.TextEditorSuffix = "(Ancients)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Root";
+            ability.TextTooltipTurnOff[1] = "Uproot";
+            ability.TextTooltipNormalExtended[1] = "Burrows the Ancient's roots into the ground, rendering it immobile, but allowing it to build units. For the Ancient Protector, this allows it to hurl enormous rocks through the air to damage enemy units. Also gives the Ancient Fortified armor.";
+            ability.TextTooltipTurnOffExtended[1] = "Allows the Ancient to pull itself up out of the ground so that it can move and engage units in melee combat. Also gives the Ancient Heavy armor.";
+            ability.TextHotkeyNormalRaw = "R";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -30600,9 +33517,17 @@ namespace War3Api.Object
         protected virtual RootAncientProtector LoadRootAncientProtector(ObjectDatabaseBase db)
         {
             var ability = new RootAncientProtector(db);
+            ability.TextName = "Root";
+            ability.TextEditorSuffix = "(Ancient Protector)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Root";
+            ability.TextTooltipTurnOff[1] = "Uproot";
+            ability.TextTooltipNormalExtended[1] = "Burrows the Ancient's roots into the ground, rendering it immobile, but allowing it to build units. For the Ancient Protector, this allows it to hurl enormous rocks through the air to damage enemy units. Also gives the Ancient Fortified armor.";
+            ability.TextTooltipTurnOffExtended[1] = "Allows the Ancient to pull itself up out of the ground so that it can move and engage units in melee combat. Also gives the Ancient Heavy armor.";
+            ability.TextHotkeyNormalRaw = "R";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -30670,9 +33595,14 @@ namespace War3Api.Object
         protected virtual SacrificeSacrificialPit LoadSacrificeSacrificialPit(ObjectDatabaseBase db)
         {
             var ability = new SacrificeSacrificialPit(db);
+            ability.TextName = "Sacrifice";
+            ability.TextEditorSuffix = " (Sacrificial Pit)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Sacrifice";
+            ability.TextTooltipNormalExtended[1] = "Target an Acolyte to sacrifice it and turn it into a Shade. Shades are invisible spirits that can see invisible units. |nShades cannot attack.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -30724,9 +33654,12 @@ namespace War3Api.Object
         protected virtual Pillage LoadPillage(ObjectDatabaseBase db)
         {
             var ability = new Pillage(db);
+            ability.TextName = "Pillage";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Pillage";
+            ability.TextTooltipNormalExtended[1] = "Each attack that does damage to an enemy building also gains resources.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -30786,9 +33719,14 @@ namespace War3Api.Object
         protected virtual SacrificeAcolyte LoadSacrificeAcolyte(ObjectDatabaseBase db)
         {
             var ability = new SacrificeAcolyte(db);
+            ability.TextName = "Sacrifice";
+            ability.TextEditorSuffix = " (Acolyte)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Sacrifice";
+            ability.TextTooltipNormalExtended[1] = "Target a Sacrificial Pit to sacrifice the Acolyte and turn it into a Shade. Shades are invisible spirits that can see invisible units. |nShades cannot attack.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -30840,9 +33778,17 @@ namespace War3Api.Object
         protected virtual SearingArrowsCreep LoadSearingArrowsCreep(ObjectDatabaseBase db)
         {
             var ability = new SearingArrowsCreep(db);
+            ability.TextName = "Searing Arrows";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Searing Arrows";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Adds <ACsa,DataA1> bonus fire damage to an attack against enemies, but drains mana with each shot fired.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "R";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -30898,9 +33844,17 @@ namespace War3Api.Object
         protected virtual SelfDestruct LoadSelfDestruct(ObjectDatabaseBase db)
         {
             var ability = new SelfDestruct(db);
+            ability.TextName = "Kaboom!";
+            ability.TextEditorSuffix = " (Goblin Sapper)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Kaboom!";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r";
+            ability.TextTooltipNormalExtended[1] = "Deals <Asds,DataB1> damage in a small area. Effective against buildings and trees.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbff|cffc3dbffRight-click to deactivate auto-casting.|r|r";
+            ability.TextHotkeyNormalRaw = "B";
+            ability.TextHotkeyTurnOffRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -30976,9 +33930,17 @@ namespace War3Api.Object
         protected virtual SelfDestructClockwerkGoblins LoadSelfDestructClockwerkGoblins(ObjectDatabaseBase db)
         {
             var ability = new SelfDestructClockwerkGoblins(db);
+            ability.TextName = "Kaboom!";
+            ability.TextEditorSuffix = "(Clockwerk Goblin-Level 1)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Kaboom!";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r";
+            ability.TextTooltipNormalExtended[1] = "Deals <Asdg,DataB1> damage in a small area.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbff|cffc3dbffRight-click to deactivate auto-casting.|r|r";
+            ability.TextHotkeyNormalRaw = "B";
+            ability.TextHotkeyTurnOffRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -31034,9 +33996,17 @@ namespace War3Api.Object
         protected virtual SelfDestruct2ClockwerkGoblins LoadSelfDestruct2ClockwerkGoblins(ObjectDatabaseBase db)
         {
             var ability = new SelfDestruct2ClockwerkGoblins(db);
+            ability.TextName = "Kaboom!";
+            ability.TextEditorSuffix = " (Clockwerk Goblin-Level 2)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Kaboom!";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r";
+            ability.TextTooltipNormalExtended[1] = "Deals <Asd2,DataB1> damage in a small area.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbff|cffc3dbffRight-click to deactivate auto-casting.|r|r";
+            ability.TextHotkeyNormalRaw = "B";
+            ability.TextHotkeyTurnOffRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -31092,9 +34062,17 @@ namespace War3Api.Object
         protected virtual SelfDestruct3ClockwerkGoblins LoadSelfDestruct3ClockwerkGoblins(ObjectDatabaseBase db)
         {
             var ability = new SelfDestruct3ClockwerkGoblins(db);
+            ability.TextName = "Kaboom!";
+            ability.TextEditorSuffix = " (Clockwerk Goblin-Level 3)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Kaboom!";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbff|cffc3dbffRight-click to activate auto-casting.|r|r";
+            ability.TextTooltipNormalExtended[1] = "Deals <Asd3,DataB1> damage in a small area.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbff|cffc3dbffRight-click to deactivate auto-casting.|r|r";
+            ability.TextHotkeyNormalRaw = "B";
+            ability.TextHotkeyTurnOffRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -31150,9 +34128,12 @@ namespace War3Api.Object
         protected virtual SellItem LoadSellItem(ObjectDatabaseBase db)
         {
             var ability = new SellItem(db);
+            ability.TextName = "Sell Items";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Sell Items";
+            ability.TextTooltipNormalExtended[1] = "Permits the sale of items.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -31204,9 +34185,12 @@ namespace War3Api.Object
         protected virtual SellUnit LoadSellUnit(ObjectDatabaseBase db)
         {
             var ability = new SellUnit(db);
+            ability.TextName = "Sell Units";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Sell Units";
+            ability.TextTooltipNormalExtended[1] = "Permits the sale of units.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -31258,9 +34242,13 @@ namespace War3Api.Object
         protected virtual Sentinel LoadSentinel(ObjectDatabaseBase db)
         {
             var ability = new Sentinel(db);
+            ability.TextName = "Sentinel";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Sentinel";
+            ability.TextTooltipNormalExtended[1] = "Send an owl to a nearby tree to reveal the area around it. |nCan see invisible units. |nLasts <Aesn,DataE1> seconds.";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -31332,9 +34320,14 @@ namespace War3Api.Object
         protected virtual SentinelNoResearch LoadSentinelNoResearch(ObjectDatabaseBase db)
         {
             var ability = new SentinelNoResearch(db);
+            ability.TextName = "Sentinel";
+            ability.TextEditorSuffix = " (Naisha)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Sentinel";
+            ability.TextTooltipNormalExtended[1] = "Send an owl to a nearby tree to reveal the area around it. |nCan see invisible units.";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -31386,9 +34379,13 @@ namespace War3Api.Object
         protected virtual SentryWard LoadSentryWard(ObjectDatabaseBase db)
         {
             var ability = new SentryWard(db);
+            ability.TextName = "Sentry Ward";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Sentry Ward";
+            ability.TextTooltipNormalExtended[1] = "Summons an invisible and immovable ward that provides vision in an area. |nCan see invisible units. |nLasts <Aeye,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -31444,9 +34441,13 @@ namespace War3Api.Object
         protected virtual SerpentWardTentacleForgottenOne LoadSerpentWardTentacleForgottenOne(ObjectDatabaseBase db)
         {
             var ability = new SerpentWardTentacleForgottenOne(db);
+            ability.TextName = "Spawn Tentacle";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Spawn Tentacle";
+            ability.TextTooltipNormalExtended[1] = "Unleashes a mighty tentacle upon the enemy.";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -31506,9 +34507,13 @@ namespace War3Api.Object
         protected virtual ShadowMeld LoadShadowMeld(ObjectDatabaseBase db)
         {
             var ability = new ShadowMeld(db);
+            ability.TextName = "Shadow Meld";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Hide";
+            ability.TextTooltipNormalExtended[1] = "Stops the unit from auto-acquiring enemies, allowing it to Shadowmeld and remain unseen at night.";
+            ability.TextHotkeyNormalRaw = "I";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -31576,9 +34581,13 @@ namespace War3Api.Object
         protected virtual ShadowMeldItem LoadShadowMeldItem(ObjectDatabaseBase db)
         {
             var ability = new ShadowMeldItem(db);
+            ability.TextName = "Shadow Meld (Item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Hide";
+            ability.TextTooltipNormalExtended[1] = "Stops the hero with Cloak of Shadows from auto-acquiring enemies, allowing it to remain unseen. |n|nDuring nighttime units with Shadowmeld will also stop auto-acquiring enemies.";
+            ability.TextHotkeyNormalRaw = "I";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -31646,9 +34655,14 @@ namespace War3Api.Object
         protected virtual ShadowMeldInstant LoadShadowMeldInstant(ObjectDatabaseBase db)
         {
             var ability = new ShadowMeldInstant(db);
+            ability.TextName = "Shadow Meld";
+            ability.TextEditorSuffix = " (Instant)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Hide";
+            ability.TextTooltipNormalExtended[1] = "Stops the unit from auto-acquiring enemies, allowing it to Shadowmeld and remain unseen at night.";
+            ability.TextHotkeyNormalRaw = "I";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -31716,9 +34730,14 @@ namespace War3Api.Object
         protected virtual ShadowMeldAkama LoadShadowMeldAkama(ObjectDatabaseBase db)
         {
             var ability = new ShadowMeldAkama(db);
+            ability.TextName = "Shadow Meld";
+            ability.TextEditorSuffix = " (Akama)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Hide";
+            ability.TextTooltipNormalExtended[1] = "Stops the unit from auto-acquiring enemies, allowing it to Shadowmeld and remain unseen at night.";
+            ability.TextHotkeyNormalRaw = "I";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -31782,9 +34801,13 @@ namespace War3Api.Object
         protected virtual ShadowStrikeCreep LoadShadowStrikeCreep(ObjectDatabaseBase db)
         {
             var ability = new ShadowStrikeCreep(db);
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Shadow Strike";
+            ability.TextTooltipNormalExtended[1] = "Hurls a poisoned dagger with incredible force at an enemy, dealing <ACss,DataE1> initial damage, and <ACss,DataA1> damage every <ACss,Cast1> seconds for <ACss,Dur1> seconds. The poison slows the attack rate and movement speed of the enemy for a short duration.";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -31856,9 +34879,14 @@ namespace War3Api.Object
         protected virtual ShockwaveCreep LoadShockwaveCreep(ObjectDatabaseBase db)
         {
             var ability = new ShockwaveCreep(db);
+            ability.TextName = "Shockwave";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Shockwave";
+            ability.TextTooltipNormalExtended[1] = "A wave of force that ripples outward, causing <ACsh,DataA1> damage to land units in a line.";
+            ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -31926,9 +34954,14 @@ namespace War3Api.Object
         protected virtual ShockwaveTrap LoadShockwaveTrap(ObjectDatabaseBase db)
         {
             var ability = new ShockwaveTrap(db);
+            ability.TextName = "Shockwave";
+            ability.TextEditorSuffix = "(Trap)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Shockwave";
+            ability.TextTooltipNormalExtended[1] = "A wave of force that ripples outward, causing <ACst,DataA1> damage to land units in a line.";
+            ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -31996,9 +35029,20 @@ namespace War3Api.Object
         protected virtual GarithosShockWave LoadGarithosShockWave(ObjectDatabaseBase db)
         {
             var ability = new GarithosShockWave(db);
+            ability.TextName = "Shockwave";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Shockwave - [|cffffcc00Level 1|r]";
+            ability.TextTooltipNormal[2] = "Shockwave - [|cffffcc00Level 2|r]";
+            ability.TextTooltipNormal[3] = "Shockwave - [|cffffcc00Level 3|r]";
+            ability.TextTooltipNormalExtended[1] = "A wave of force that ripples outward, causing <AOsh,DataA1> damage to land units in a line.";
+            ability.TextTooltipNormalExtended[2] = "A wave of force that ripples outward, causing <AOsh,DataA2> damage to land units in a line.";
+            ability.TextTooltipNormalExtended[3] = "A wave of force that ripples outward, causing <AOsh,DataA3> damage to land units in a line.";
+            ability.TextTooltipLearn = "Learn Shockwave - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "W";
+            ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 3;
@@ -32050,9 +35094,14 @@ namespace War3Api.Object
         protected virtual SilenceCreep LoadSilenceCreep(ObjectDatabaseBase db)
         {
             var ability = new SilenceCreep(db);
+            ability.TextName = "Silence";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Silence";
+            ability.TextTooltipNormalExtended[1] = "Stops all enemies in a target area from casting spells for <ACsi,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -32120,9 +35169,14 @@ namespace War3Api.Object
         protected virtual SiphonManaCreep LoadSiphonManaCreep(ObjectDatabaseBase db)
         {
             var ability = new SiphonManaCreep(db);
+            ability.TextName = "Siphon Mana";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Siphon Mana";
+            ability.TextTooltipNormalExtended[1] = "Absorbs the magical energies of a target enemy unit by taking <ACsm,DataB1> mana per second from it and giving it to this unit. |nLasts <ACsm,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "N";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -32198,9 +35252,14 @@ namespace War3Api.Object
         protected virtual SleepCreep LoadSleepCreep(ObjectDatabaseBase db)
         {
             var ability = new SleepCreep(db);
+            ability.TextName = "Sleep";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Sleep";
+            ability.TextTooltipNormalExtended[1] = "Puts a target enemy unit to sleep for <ACsl,Dur1> seconds. A sleeping unit can be awoken by attacking it.";
+            ability.TextHotkeyNormalRaw = "L";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -32256,9 +35315,12 @@ namespace War3Api.Object
         protected virtual SleepAlways LoadSleepAlways(ObjectDatabaseBase db)
         {
             var ability = new SleepAlways(db);
+            ability.TextName = "Sleep Always";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Sleep";
+            ability.TextTooltipNormalExtended[1] = "Unit sleeps until awoken.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -32318,9 +35380,16 @@ namespace War3Api.Object
         protected virtual Slow_Aslo LoadSlow_Aslo(ObjectDatabaseBase db)
         {
             var ability = new Slow_Aslo(db);
+            ability.TextName = "Slow";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Slow";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Slows a target enemy unit's attack rate by <Aslo,DataB1,%>% and movement speed by <Aslo,DataA1,%>%. |nLasts <Aslo,Dur1> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "W";
+            ability.TextHotkeyTurnOffRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 3;
             ability.StatsLevels = 1;
@@ -32384,9 +35453,17 @@ namespace War3Api.Object
         protected virtual SlowCreep LoadSlowCreep(ObjectDatabaseBase db)
         {
             var ability = new SlowCreep(db);
+            ability.TextName = "Slow";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Slow";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Slows enemy unit's attack rate by <ACsw,DataB1,%>% and movement speed by <ACsw,DataA1,%>%. Lasts <ACsw,Dur1> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "W";
+            ability.TextHotkeyTurnOffRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 3;
             ability.StatsLevels = 1;
@@ -32450,9 +35527,12 @@ namespace War3Api.Object
         protected virtual SlowPoison LoadSlowPoison(ObjectDatabaseBase db)
         {
             var ability = new SlowPoison(db);
+            ability.TextName = "Slow Poison";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Slow Poison";
+            ability.TextTooltipNormalExtended[1] = "A poison attack that deals <Aspo,DataA1> damage per second, and slows the target enemy's movement by <Aspo,DataB1,%>% and attack by <Aspo,DataC1,%>% for <Aspo,Dur1> seconds.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -32520,6 +35600,8 @@ namespace War3Api.Object
         protected virtual SpawnSkeleton LoadSpawnSkeleton(ObjectDatabaseBase db)
         {
             var ability = new SpawnSkeleton(db);
+            ability.TextName = "Spawn Skeleton";
+            ability.TextEditorSuffix = " (Probably Black Arrow)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
@@ -32582,6 +35664,8 @@ namespace War3Api.Object
         protected virtual SpawnSpiderling LoadSpawnSpiderling(ObjectDatabaseBase db)
         {
             var ability = new SpawnSpiderling(db);
+            ability.TextName = "Spawn Spiderlings";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
@@ -32644,6 +35728,8 @@ namespace War3Api.Object
         protected virtual SpawnSpider LoadSpawnSpider(ObjectDatabaseBase db)
         {
             var ability = new SpawnSpider(db);
+            ability.TextName = "Spawn Spiders";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
@@ -32706,6 +35792,7 @@ namespace War3Api.Object
         protected virtual SpawnHydra LoadSpawnHydra(ObjectDatabaseBase db)
         {
             var ability = new SpawnHydra(db);
+            ability.TextName = "Spawn Hydra";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
@@ -32768,6 +35855,7 @@ namespace War3Api.Object
         protected virtual SpawnHydraHatchling LoadSpawnHydraHatchling(ObjectDatabaseBase db)
         {
             var ability = new SpawnHydraHatchling(db);
+            ability.TextName = "Spawn Hydra Hatchling";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
@@ -32830,9 +35918,16 @@ namespace War3Api.Object
         protected virtual SpellSteal LoadSpellSteal(ObjectDatabaseBase db)
         {
             var ability = new SpellSteal(db);
+            ability.TextName = "Spell Steal";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Spell Steal";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Steals a positive buff from an enemy unit and applies it to a nearby friendly unit, or takes a negative buff from a friendly unit and applies it to a nearby enemy unit.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "T";
+            ability.TextHotkeyTurnOffRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -32884,6 +35979,7 @@ namespace War3Api.Object
         protected virtual Sphere LoadSphere(ObjectDatabaseBase db)
         {
             var ability = new Sphere(db);
+            ability.TextName = "Sphere";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
@@ -32938,6 +36034,8 @@ namespace War3Api.Object
         protected virtual SphereSoVLevel1 LoadSphereSoVLevel1(ObjectDatabaseBase db)
         {
             var ability = new SphereSoVLevel1(db);
+            ability.TextName = "Sphere";
+            ability.TextEditorSuffix = " (Vengeance - Level 1)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
@@ -32992,6 +36090,8 @@ namespace War3Api.Object
         protected virtual SphereSoVLevel2 LoadSphereSoVLevel2(ObjectDatabaseBase db)
         {
             var ability = new SphereSoVLevel2(db);
+            ability.TextName = "Sphere";
+            ability.TextEditorSuffix = " (Vengeance - Level 2)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
@@ -33046,6 +36146,8 @@ namespace War3Api.Object
         protected virtual SphereSoVLevel3 LoadSphereSoVLevel3(ObjectDatabaseBase db)
         {
             var ability = new SphereSoVLevel3(db);
+            ability.TextName = "Sphere";
+            ability.TextEditorSuffix = " (Vengeance - Level 3)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
@@ -33100,6 +36202,8 @@ namespace War3Api.Object
         protected virtual SphereSoVLevel4 LoadSphereSoVLevel4(ObjectDatabaseBase db)
         {
             var ability = new SphereSoVLevel4(db);
+            ability.TextName = "Sphere";
+            ability.TextEditorSuffix = " (Vengeance - Level 4)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
@@ -33154,6 +36258,8 @@ namespace War3Api.Object
         protected virtual SphereSoVLevel5 LoadSphereSoVLevel5(ObjectDatabaseBase db)
         {
             var ability = new SphereSoVLevel5(db);
+            ability.TextName = "Sphere";
+            ability.TextEditorSuffix = " (Vengeance - Level 5)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
@@ -33208,6 +36314,8 @@ namespace War3Api.Object
         protected virtual SphereSoVLevel6 LoadSphereSoVLevel6(ObjectDatabaseBase db)
         {
             var ability = new SphereSoVLevel6(db);
+            ability.TextName = "Sphere";
+            ability.TextEditorSuffix = " (Vengeance - Level 6)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
@@ -33262,6 +36370,7 @@ namespace War3Api.Object
         protected virtual SpiderAttack LoadSpiderAttack(ObjectDatabaseBase db)
         {
             var ability = new SpiderAttack(db);
+            ability.TextName = "Spider Attack";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
@@ -33320,6 +36429,7 @@ namespace War3Api.Object
         protected virtual SpikedBarricades LoadSpikedBarricades(ObjectDatabaseBase db)
         {
             var ability = new SpikedBarricades(db);
+            ability.TextName = "Spiked Barricades";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
@@ -33374,9 +36484,13 @@ namespace War3Api.Object
         protected virtual SpiritLink LoadSpiritLink(ObjectDatabaseBase db)
         {
             var ability = new SpiritLink(db);
+            ability.TextName = "Spirit Link";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Spirit Link";
+            ability.TextTooltipNormalExtended[1] = "Links <Aspl,DataB1> units together in a chain. All units with Spirit Link on them will live longer, by distributing <Aspl,DataA1,%>% of the damage they take across other Spirit Linked units. |nLasts <Aspl,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -33436,9 +36550,13 @@ namespace War3Api.Object
         protected virtual StandDown LoadStandDown(ObjectDatabaseBase db)
         {
             var ability = new StandDown(db);
+            ability.TextName = "Stand Down";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Stand Down";
+            ability.TextTooltipNormalExtended[1] = "Causes Peons within the Burrow to return to work.";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -33490,9 +36608,13 @@ namespace War3Api.Object
         protected virtual StasisTrap LoadStasisTrap(ObjectDatabaseBase db)
         {
             var ability = new StasisTrap(db);
+            ability.TextName = "Stasis Trap";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Stasis Trap";
+            ability.TextTooltipNormalExtended[1] = "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts <Asta,Dur1> seconds. |nThe stun lasts <Asta,DataD1> seconds.";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -33568,9 +36690,16 @@ namespace War3Api.Object
         protected virtual StoneForm LoadStoneForm(ObjectDatabaseBase db)
         {
             var ability = new StoneForm(db);
+            ability.TextName = "Stone Form";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Stone Form";
+            ability.TextTooltipTurnOff[1] = "Gargoyle Form";
+            ability.TextTooltipNormalExtended[1] = "Transforms the Gargoyle into a statue that is immune to spells, gains additional armor and has a regeneration rate of <Astn,DataE1> hit points per second. |nThe Gargoyle cannot attack in this form.";
+            ability.TextTooltipTurnOffExtended[1] = "Returns the Gargoyle to the air.";
+            ability.TextHotkeyNormalRaw = "F";
+            ability.TextHotkeyTurnOffRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -33646,9 +36775,12 @@ namespace War3Api.Object
         protected virtual StormHammers LoadStormHammers(ObjectDatabaseBase db)
         {
             var ability = new StormHammers(db);
+            ability.TextName = "Storm Hammers";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Storm Hammers";
+            ability.TextTooltipNormalExtended[1] = "Causes a Gryphon Rider's attacks to damage multiple units.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -33700,9 +36832,17 @@ namespace War3Api.Object
         protected virtual SubmergeMyrmidon LoadSubmergeMyrmidon(ObjectDatabaseBase db)
         {
             var ability = new SubmergeMyrmidon(db);
+            ability.TextName = "Submerge";
+            ability.TextEditorSuffix = " (Myrmidon)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Submerge";
+            ability.TextTooltipTurnOff[1] = "Surface";
+            ability.TextTooltipNormalExtended[1] = "Allows this unit to dive beneath water, hiding it from view.";
+            ability.TextTooltipTurnOffExtended[1] = "Allows this unit to emerge from the water.";
+            ability.TextHotkeyNormalRaw = "U";
+            ability.TextHotkeyTurnOffRaw = "U";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -33770,9 +36910,17 @@ namespace War3Api.Object
         protected virtual SubmergeRoyalGuard LoadSubmergeRoyalGuard(ObjectDatabaseBase db)
         {
             var ability = new SubmergeRoyalGuard(db);
+            ability.TextName = "Submerge";
+            ability.TextEditorSuffix = " (Royal Guard)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Submerge";
+            ability.TextTooltipTurnOff[1] = "Surface";
+            ability.TextTooltipNormalExtended[1] = "Allows this unit to dive beneath water, hiding it from view.";
+            ability.TextTooltipTurnOffExtended[1] = "Allows this unit to emerge from the water.";
+            ability.TextHotkeyNormalRaw = "U";
+            ability.TextHotkeyTurnOffRaw = "U";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -33840,9 +36988,17 @@ namespace War3Api.Object
         protected virtual SubmergeSnapDragon LoadSubmergeSnapDragon(ObjectDatabaseBase db)
         {
             var ability = new SubmergeSnapDragon(db);
+            ability.TextName = "Submerge";
+            ability.TextEditorSuffix = " (Snap Dragon)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Submerge";
+            ability.TextTooltipTurnOff[1] = "Surface";
+            ability.TextTooltipNormalExtended[1] = "Allows this unit to dive beneath water, hiding it from view.";
+            ability.TextTooltipTurnOffExtended[1] = "Allows this unit to emerge from the water.";
+            ability.TextHotkeyNormalRaw = "U";
+            ability.TextHotkeyTurnOffRaw = "U";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -33910,9 +37066,13 @@ namespace War3Api.Object
         protected virtual SummonLobstrokPrawns LoadSummonLobstrokPrawns(ObjectDatabaseBase db)
         {
             var ability = new SummonLobstrokPrawns(db);
+            ability.TextName = "Summon Prawns";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Summon Prawns";
+            ability.TextTooltipNormalExtended[1] = "Summons <Aslp,DataA1> Makrura Prawns to do their master's bidding. |nLasts <Aslp,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -33964,9 +37124,13 @@ namespace War3Api.Object
         protected virtual SummonSeaElemental LoadSummonSeaElemental(ObjectDatabaseBase db)
         {
             var ability = new SummonSeaElemental(db);
+            ability.TextName = "Summon Sea Elemental";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Summon Sea Elemental";
+            ability.TextTooltipNormalExtended[1] = "Summons a powerful Sea Elemental with <nsel,realHP> hit points that does <nsel,mindmg1> - <nsel,maxdmg1> damage. |nLasts <ACwe,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -34026,6 +37190,7 @@ namespace War3Api.Object
         protected virtual TankTurret LoadTankTurret(ObjectDatabaseBase db)
         {
             var ability = new TankTurret(db);
+            ability.TextName = "Turret";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
@@ -34083,6 +37248,7 @@ namespace War3Api.Object
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TechtreeRequirementsRaw = "Rhrt";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -34138,9 +37304,13 @@ namespace War3Api.Object
         protected virtual Taunt LoadTaunt(ObjectDatabaseBase db)
         {
             var ability = new Taunt(db);
+            ability.TextName = "Taunt";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Taunt";
+            ability.TextTooltipNormalExtended[1] = "The closest <Atau,DataA1> enemies are forced to attack this unit. After <Atau,DataE1> seconds Taunt will activate again.";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -34212,9 +37382,14 @@ namespace War3Api.Object
         protected virtual TauntCreep LoadTauntCreep(ObjectDatabaseBase db)
         {
             var ability = new TauntCreep(db);
+            ability.TextName = "Taunt";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Taunt";
+            ability.TextTooltipNormalExtended[1] = "The closest <ANta,DataA1> enemies are forced to attack this unit.";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -34286,9 +37461,12 @@ namespace War3Api.Object
         protected virtual ThornyShieldCreep LoadThornyShieldCreep(ObjectDatabaseBase db)
         {
             var ability = new ThornyShieldCreep(db);
+            ability.TextName = "Spiked Shell";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Spiked Shell";
+            ability.TextTooltipNormalExtended[1] = "Razor-sharp spikes on the Turtle's shell deal <ANth,DataA1,%>% of an enemy unit's melee attack damage back to it.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -34352,9 +37530,13 @@ namespace War3Api.Object
         protected virtual ThornyShieldDragonTurtle LoadThornyShieldDragonTurtle(ObjectDatabaseBase db)
         {
             var ability = new ThornyShieldDragonTurtle(db);
+            ability.TextName = "Spiked Shell";
+            ability.TextEditorSuffix = "(2,2 Button Pos)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Spiked Shell";
+            ability.TextTooltipNormalExtended[1] = "Razor-sharp spikes on the Turtle's shell deal <ANth,DataA1,%>% of an enemy unit's melee attack damage back to it.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -34406,9 +37588,13 @@ namespace War3Api.Object
         protected virtual ThornsAuraCreep LoadThornsAuraCreep(ObjectDatabaseBase db)
         {
             var ability = new ThornsAuraCreep(db);
+            ability.TextName = "Thorns Aura";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Thorns Aura";
+            ability.TextTooltipNormalExtended[1] = "An aura that gives nearby friendly units a damage shield, which deals <ACah,DataA1,%>% of an enemy unit's attack damage back to it.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -34460,9 +37646,13 @@ namespace War3Api.Object
         protected virtual ThunderBoltCreep LoadThunderBoltCreep(ObjectDatabaseBase db)
         {
             var ability = new ThunderBoltCreep(db);
+            ability.TextName = "Hurl Boulder";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Hurl Boulder";
+            ability.TextTooltipNormalExtended[1] = "A magical boulder that is thrown at an enemy unit, causing <ACtb,DataA1> points of damage and stunning the target for <ACtb,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -34518,9 +37708,14 @@ namespace War3Api.Object
         protected virtual ThunderClapCreep LoadThunderClapCreep(ObjectDatabaseBase db)
         {
             var ability = new ThunderClapCreep(db);
+            ability.TextName = "Slam";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Slam";
+            ability.TextTooltipNormalExtended[1] = "Slams the ground, dealing <ACtc,DataA1> points of damage and slowing the movement and attack rate of nearby enemy units.";
+            ability.TextHotkeyNormalRaw = "L";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -34588,9 +37783,14 @@ namespace War3Api.Object
         protected virtual ThunderClapThunderLizard LoadThunderClapThunderLizard(ObjectDatabaseBase db)
         {
             var ability = new ThunderClapThunderLizard(db);
+            ability.TextName = "Slam";
+            ability.TextEditorSuffix = " (Thunder Lizard)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Slam";
+            ability.TextTooltipNormalExtended[1] = "Slams the ground, dealing <ACt2,DataA1> points of damage and slowing the movement and attack rate of nearby enemy units.";
+            ability.TextHotkeyNormalRaw = "L";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -34658,6 +37858,8 @@ namespace War3Api.Object
         protected virtual TornadoDamage LoadTornadoDamage(ObjectDatabaseBase db)
         {
             var ability = new TornadoDamage(db);
+            ability.TextName = "Building Damage Aura";
+            ability.TextEditorSuffix = " (Tornado)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "naga";
@@ -34732,6 +37934,8 @@ namespace War3Api.Object
         protected virtual TornadoSpin LoadTornadoSpin(ObjectDatabaseBase db)
         {
             var ability = new TornadoSpin(db);
+            ability.TextName = "Tornado Spin";
+            ability.TextEditorSuffix = " (Tornado)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "naga";
@@ -34794,6 +37998,8 @@ namespace War3Api.Object
         protected virtual TornadoWander LoadTornadoWander(ObjectDatabaseBase db)
         {
             var ability = new TornadoWander(db);
+            ability.TextName = "Tornado Wander";
+            ability.TextEditorSuffix = " (Tornado)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "naga";
@@ -34848,6 +38054,7 @@ namespace War3Api.Object
         protected virtual TreeOfLifeForAttachingArt LoadTreeOfLifeForAttachingArt(ObjectDatabaseBase db)
         {
             var ability = new TreeOfLifeForAttachingArt(db);
+            ability.TextName = "Tree of Life upgrade ability";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
@@ -34902,6 +38109,7 @@ namespace War3Api.Object
         protected virtual Ultravision LoadUltravision(ObjectDatabaseBase db)
         {
             var ability = new Ultravision(db);
+            ability.TextName = "Ultravision";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
@@ -34956,9 +38164,13 @@ namespace War3Api.Object
         protected virtual UnholyAuraCreep LoadUnholyAuraCreep(ObjectDatabaseBase db)
         {
             var ability = new UnholyAuraCreep(db);
+            ability.TextName = "Unholy Aura";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Unholy Aura";
+            ability.TextTooltipNormalExtended[1] = "Increases nearby friendly units' movement speed by <ACua,DataA1,%>% and life regeneration rate by <ACua,DataB1,%>%.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -35022,9 +38234,13 @@ namespace War3Api.Object
         protected virtual UnholyFrenzy LoadUnholyFrenzy(ObjectDatabaseBase db)
         {
             var ability = new UnholyFrenzy(db);
+            ability.TextName = "Unholy Frenzy";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Unholy Frenzy";
+            ability.TextTooltipNormalExtended[1] = "Increases the attack rate of a target unit by <Auhf,DataA1,%>%, but drains <Auhf,DataB1> hit points per second. |nLasts <Auhf,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "U";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -35084,9 +38300,14 @@ namespace War3Api.Object
         protected virtual UnholyFrenzyWarlock LoadUnholyFrenzyWarlock(ObjectDatabaseBase db)
         {
             var ability = new UnholyFrenzyWarlock(db);
+            ability.TextName = "Unholy Frenzy";
+            ability.TextEditorSuffix = " (Warlock)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Unholy Frenzy";
+            ability.TextTooltipNormalExtended[1] = "Increases the attack rate of a target unit by <Suhf,DataA1,%>%, but drains <Suhf,DataB1> hit points per second. |nLasts <Suhf,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "U";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -35146,9 +38367,14 @@ namespace War3Api.Object
         protected virtual UnholyFrenzyCreep LoadUnholyFrenzyCreep(ObjectDatabaseBase db)
         {
             var ability = new UnholyFrenzyCreep(db);
+            ability.TextName = "Unholy Frenzy";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Unholy Frenzy";
+            ability.TextTooltipNormalExtended[1] = "Increases the attack rate of a target unit by <ACuf,DataA1,%>%, but drains <ACuf,DataB1> hit points per second. |nLasts <ACuf,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "U";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -35208,9 +38434,13 @@ namespace War3Api.Object
         protected virtual InciteUnholyFrenzy LoadInciteUnholyFrenzy(ObjectDatabaseBase db)
         {
             var ability = new InciteUnholyFrenzy(db);
+            ability.TextName = "Incite Unholy Frenzy";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Incite Unholy Frenzy";
+            ability.TextTooltipNormalExtended[1] = "Sacrifices a target friendly Undead unit. All nearby non-mechanical units gain Unholy Frenzy, increasing attack rate by <Auuf,DataA1,%>% but draining them of <Auuf,DataB1> hit points per second. |nLasts <Auuf,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "U";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -35274,9 +38504,16 @@ namespace War3Api.Object
         protected virtual UnstableConcoction LoadUnstableConcoction(ObjectDatabaseBase db)
         {
             var ability = new UnstableConcoction(db);
+            ability.TextName = "Unstable Concoction";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Unstable Concoction";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
+            ability.TextTooltipNormalExtended[1] = "Causes a powerful explosion that deals <Auco,DataB1> damage to a target air unit, and <Auco,DataD1> damage to nearby enemy air units.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
+            ability.TextHotkeyNormalRaw = "C";
+            ability.TextHotkeyTurnOffRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -35352,9 +38589,13 @@ namespace War3Api.Object
         protected virtual Unsummon LoadUnsummon(ObjectDatabaseBase db)
         {
             var ability = new Unsummon(db);
+            ability.TextName = "Unsummon Building";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Unsummon Building";
+            ability.TextTooltipNormalExtended[1] = "Unsummons your building to regain <Auns,DataA1,%>% of the spent resources.";
+            ability.TextHotkeyNormalRaw = "U";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -35414,6 +38655,8 @@ namespace War3Api.Object
         protected virtual VampiricAttack_SCva LoadVampiricAttack_SCva(ObjectDatabaseBase db)
         {
             var ability = new VampiricAttack_SCva(db);
+            ability.TextName = "Life Steal";
+            ability.TextEditorSuffix = " (Frostmourne)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
@@ -35472,9 +38715,13 @@ namespace War3Api.Object
         protected virtual VampiricAuraCreep LoadVampiricAuraCreep(ObjectDatabaseBase db)
         {
             var ability = new VampiricAuraCreep(db);
+            ability.TextName = "Vampiric Aura";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Vampiric Aura";
+            ability.TextTooltipNormalExtended[1] = "Nearby friendly melee units gain <ACvp,DataA1,%>% of their attack damage when they hit enemy units.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -35530,9 +38777,15 @@ namespace War3Api.Object
         protected virtual Vengeance LoadVengeance(ObjectDatabaseBase db)
         {
             var ability = new Vengeance(db);
+            ability.TextName = "Spirit of Vengeance";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Spirit of Vengeance";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.";
+            ability.TextTooltipNormalExtended[1] = "Raises an invulnerable feral spirit from a corpse. Lasts <Avng,Dur1> seconds or until the avatar dies.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.";
+            ability.TextHotkeyNormalRaw = "V";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -35612,6 +38865,8 @@ namespace War3Api.Object
         protected virtual Wander LoadWander(ObjectDatabaseBase db)
         {
             var ability = new Wander(db);
+            ability.TextName = "Wander";
+            ability.TextEditorSuffix = " (Neutral)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -35666,9 +38921,14 @@ namespace War3Api.Object
         protected virtual WarStompCreep LoadWarStompCreep(ObjectDatabaseBase db)
         {
             var ability = new WarStompCreep(db);
+            ability.TextName = "War Stomp";
+            ability.TextEditorSuffix = " (Neutral Hostile 1), (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "War Stomp";
+            ability.TextTooltipNormalExtended[1] = "Slams the ground, dealing <Awrs,DataA1> damage to nearby enemy land units and stunning them for <Awrs,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -35732,9 +38992,14 @@ namespace War3Api.Object
         protected virtual WarStompSeaGiant LoadWarStompSeaGiant(ObjectDatabaseBase db)
         {
             var ability = new WarStompSeaGiant(db);
+            ability.TextName = "War Stomp";
+            ability.TextEditorSuffix = " (Neutral Hostile 3), (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "War Stomp";
+            ability.TextTooltipNormalExtended[1] = "Slams the ground, dealing <Awrg,DataA1> damage to nearby enemy land units and stunning them for <Awrg,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -35798,9 +39063,14 @@ namespace War3Api.Object
         protected virtual WarStompHydra LoadWarStompHydra(ObjectDatabaseBase db)
         {
             var ability = new WarStompHydra(db);
+            ability.TextName = "War Stomp";
+            ability.TextEditorSuffix = " (Neutral Hostile 2), (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "War Stomp";
+            ability.TextTooltipNormalExtended[1] = "Slams the ground, dealing <Awrh,DataA1> damage to nearby enemy land units and stunning them for <Awrh,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -35864,9 +39134,14 @@ namespace War3Api.Object
         protected virtual WindWalk LoadWindWalk(ObjectDatabaseBase db)
         {
             var ability = new WindWalk(db);
+            ability.TextName = "Wind Walk";
+            ability.TextEditorSuffix = " (Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 1;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Wind Walk";
+            ability.TextTooltipNormalExtended[1] = "Allows the Pandaren to become invisible, and move <ANwk,DataB1,%>% faster. If the Pandaren attacks a unit to break invisibility, the attack will do <ANwk,DataC1> bonus damage.";
+            ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -35926,9 +39201,14 @@ namespace War3Api.Object
         protected virtual WispHarvest LoadWispHarvest(ObjectDatabaseBase db)
         {
             var ability = new WispHarvest(db);
+            ability.TextName = "Gather";
+            ability.TextEditorSuffix = " (Wisp Gold and Lumber)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Gather";
+            ability.TextTooltipNormalExtended[1] = "Mines gold from Entangled Gold Mines and harvests lumber from trees.";
+            ability.TextHotkeyNormalRaw = "G";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -35992,9 +39272,14 @@ namespace War3Api.Object
         protected virtual WispHarvestInvulnerable LoadWispHarvestInvulnerable(ObjectDatabaseBase db)
         {
             var ability = new WispHarvestInvulnerable(db);
+            ability.TextName = "Gather";
+            ability.TextEditorSuffix = " (Wisp Gold and Lumber - Ancient Spirits)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Gather";
+            ability.TextTooltipNormalExtended[1] = "Mines gold from Entangled Gold Mines and harvests lumber from trees.";
+            ability.TextHotkeyNormalRaw = "G";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -36058,9 +39343,12 @@ namespace War3Api.Object
         protected virtual VenomSpears LoadVenomSpears(ObjectDatabaseBase db)
         {
             var ability = new VenomSpears(db);
+            ability.TextName = "Envenomed Spears";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Envenomed Spears";
+            ability.TextTooltipNormalExtended[1] = "Deals <Aven,DataA1> poison damage per second. |nLasts <Aven,Dur1> seconds.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -36128,9 +39416,13 @@ namespace War3Api.Object
         protected virtual VenomSpearsCreep LoadVenomSpearsCreep(ObjectDatabaseBase db)
         {
             var ability = new VenomSpearsCreep(db);
+            ability.TextName = "Envenomed Weapons";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Envenomed Weapons";
+            ability.TextTooltipNormalExtended[1] = "Deals <ACvs,DataA1> poison damage per second. |nLasts <ACvs,Dur1> seconds.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -36198,6 +39490,7 @@ namespace War3Api.Object
         protected virtual Warp LoadWarp(ObjectDatabaseBase db)
         {
             var ability = new Warp(db);
+            ability.TextName = "Waygate ability";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "other";
@@ -36260,9 +39553,16 @@ namespace War3Api.Object
         protected virtual Web LoadWeb(ObjectDatabaseBase db)
         {
             var ability = new Web(db);
+            ability.TextName = "Web";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Web";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbff|cffc3dbffRight-click to activate auto-casting.";
+            ability.TextTooltipNormalExtended[1] = "Binds a target enemy air unit in webbing, forcing it to the ground. Webbed units can be hit as though they were land units. |nLasts <Aweb,Dur1> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.";
+            ability.TextHotkeyNormalRaw = "W";
+            ability.TextHotkeyTurnOffRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -36326,9 +39626,17 @@ namespace War3Api.Object
         protected virtual WebCreep LoadWebCreep(ObjectDatabaseBase db)
         {
             var ability = new WebCreep(db);
+            ability.TextName = "Web";
+            ability.TextEditorSuffix = "(Neutral Hostile)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
+            ability.TextTooltipNormal[1] = "Web";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbff|cffc3dbffRight-click to activate auto-casting.";
+            ability.TextTooltipNormalExtended[1] = "Binds a target enemy air unit in webbing, forcing it to the ground. Webbed units can be hit as though they were land units. |nLasts <ACwb,Dur1> seconds.";
+            ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.";
+            ability.TextHotkeyNormalRaw = "W";
+            ability.TextHotkeyTurnOffRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -36392,6 +39700,8 @@ namespace War3Api.Object
         protected virtual AgilityBonus1 LoadAgilityBonus1(ObjectDatabaseBase db)
         {
             var ability = new AgilityBonus1(db);
+            ability.TextName = "Item Hero Stat Bonus";
+            ability.TextEditorSuffix = "(+1 Agility)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -36516,6 +39826,8 @@ namespace War3Api.Object
         protected virtual AgilityBonus3 LoadAgilityBonus3(ObjectDatabaseBase db)
         {
             var ability = new AgilityBonus3(db);
+            ability.TextName = "Item Hero Stat Bonus";
+            ability.TextEditorSuffix = "(+3 Agility)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -36586,6 +39898,8 @@ namespace War3Api.Object
         protected virtual AgilityBonus4 LoadAgilityBonus4(ObjectDatabaseBase db)
         {
             var ability = new AgilityBonus4(db);
+            ability.TextName = "Item Hero Stat Bonus";
+            ability.TextEditorSuffix = "(+4 Agility)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -36656,6 +39970,8 @@ namespace War3Api.Object
         protected virtual AgilityBonus5 LoadAgilityBonus5(ObjectDatabaseBase db)
         {
             var ability = new AgilityBonus5(db);
+            ability.TextName = "Item Hero Stat Bonus";
+            ability.TextEditorSuffix = "(+5 Agility)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -36726,6 +40042,8 @@ namespace War3Api.Object
         protected virtual AgilityBonus6 LoadAgilityBonus6(ObjectDatabaseBase db)
         {
             var ability = new AgilityBonus6(db);
+            ability.TextName = "Item Hero Stat Bonus";
+            ability.TextEditorSuffix = "(+6 Agility)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -36796,6 +40114,8 @@ namespace War3Api.Object
         protected virtual CrownOfKingsAll5 LoadCrownOfKingsAll5(ObjectDatabaseBase db)
         {
             var ability = new CrownOfKingsAll5(db);
+            ability.TextName = "Item Hero Stat Bonus";
+            ability.TextEditorSuffix = "(+5 All Stats)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -36866,6 +40186,8 @@ namespace War3Api.Object
         protected virtual All1 LoadAll1(ObjectDatabaseBase db)
         {
             var ability = new All1(db);
+            ability.TextName = "Item Hero Stat Bonus";
+            ability.TextEditorSuffix = "(+1 All Stats)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -36936,6 +40258,8 @@ namespace War3Api.Object
         protected virtual All2 LoadAll2(ObjectDatabaseBase db)
         {
             var ability = new All2(db);
+            ability.TextName = "Item Hero Stat Bonus";
+            ability.TextEditorSuffix = "(+2 All Stats)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -37006,6 +40330,8 @@ namespace War3Api.Object
         protected virtual StrengthBonus1 LoadStrengthBonus1(ObjectDatabaseBase db)
         {
             var ability = new StrengthBonus1(db);
+            ability.TextName = "Item Hero Stat Bonus";
+            ability.TextEditorSuffix = "(+1 Strength)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -37076,6 +40402,8 @@ namespace War3Api.Object
         protected virtual StrengthBonus2 LoadStrengthBonus2(ObjectDatabaseBase db)
         {
             var ability = new StrengthBonus2(db);
+            ability.TextName = "Item Attack Speed Bonus";
+            ability.TextEditorSuffix = " (Greater)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -37124,7 +40452,7 @@ namespace War3Api.Object
             ability.StatsEffectsRaw[2] = null;
             ability.StatsEffectsRaw[3] = null;
             ability.StatsEffectsRaw[4] = null;
-            ability.DataAttackSpeedIncrease[1] = 0f;
+            ability.DataAttackSpeedIncrease[1] = 0.2f;
             ability.DataAttackSpeedIncrease[2] = 0f;
             ability.DataAttackSpeedIncrease[3] = 0f;
             ability.DataAttackSpeedIncrease[4] = 0f;
@@ -37134,6 +40462,8 @@ namespace War3Api.Object
         protected virtual StrengthBonus3 LoadStrengthBonus3(ObjectDatabaseBase db)
         {
             var ability = new StrengthBonus3(db);
+            ability.TextName = "Item Hero Stat Bonus";
+            ability.TextEditorSuffix = "(+3 Strength)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -37204,6 +40534,8 @@ namespace War3Api.Object
         protected virtual StrengthBonus4 LoadStrengthBonus4(ObjectDatabaseBase db)
         {
             var ability = new StrengthBonus4(db);
+            ability.TextName = "Item Hero Stat Bonus";
+            ability.TextEditorSuffix = "(+4 Strength)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -37274,6 +40606,8 @@ namespace War3Api.Object
         protected virtual StrengthBonus5 LoadStrengthBonus5(ObjectDatabaseBase db)
         {
             var ability = new StrengthBonus5(db);
+            ability.TextName = "Item Hero Stat Bonus";
+            ability.TextEditorSuffix = "(+5 Strength)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -37344,6 +40678,8 @@ namespace War3Api.Object
         protected virtual StrengthBonus6 LoadStrengthBonus6(ObjectDatabaseBase db)
         {
             var ability = new StrengthBonus6(db);
+            ability.TextName = "Item Hero Stat Bonus";
+            ability.TextEditorSuffix = "(+6 Strength)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -37414,6 +40750,8 @@ namespace War3Api.Object
         protected virtual IntelligenceBonus1 LoadIntelligenceBonus1(ObjectDatabaseBase db)
         {
             var ability = new IntelligenceBonus1(db);
+            ability.TextName = "Item Hero Stat Bonus";
+            ability.TextEditorSuffix = "(+1 Intelligence)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -37538,6 +40876,8 @@ namespace War3Api.Object
         protected virtual IntelligenceBonus3 LoadIntelligenceBonus3(ObjectDatabaseBase db)
         {
             var ability = new IntelligenceBonus3(db);
+            ability.TextName = "Item Hero Stat Bonus";
+            ability.TextEditorSuffix = "(+3 Intelligence)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -37608,6 +40948,8 @@ namespace War3Api.Object
         protected virtual IntelligenceBonus4 LoadIntelligenceBonus4(ObjectDatabaseBase db)
         {
             var ability = new IntelligenceBonus4(db);
+            ability.TextName = "Item Hero Stat Bonus";
+            ability.TextEditorSuffix = "(+4 Intelligence)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -37678,6 +41020,8 @@ namespace War3Api.Object
         protected virtual IntelligenceBonus5 LoadIntelligenceBonus5(ObjectDatabaseBase db)
         {
             var ability = new IntelligenceBonus5(db);
+            ability.TextName = "Item Hero Stat Bonus";
+            ability.TextEditorSuffix = "(+5 Intelligence)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -37748,6 +41092,8 @@ namespace War3Api.Object
         protected virtual IntelligenceBonus6 LoadIntelligenceBonus6(ObjectDatabaseBase db)
         {
             var ability = new IntelligenceBonus6(db);
+            ability.TextName = "Item Hero Stat Bonus";
+            ability.TextEditorSuffix = "(+6 Intelligence)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -37872,6 +41218,7 @@ namespace War3Api.Object
         protected virtual PermanentAll1 LoadPermanentAll1(ObjectDatabaseBase db)
         {
             var ability = new PermanentAll1(db);
+            ability.TextName = "Item Int/Agi/Str gain";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -37942,6 +41289,7 @@ namespace War3Api.Object
         protected virtual AgilityMod LoadAgilityMod(ObjectDatabaseBase db)
         {
             var ability = new AgilityMod(db);
+            ability.TextName = "Item Agility Gain";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -38012,6 +41360,7 @@ namespace War3Api.Object
         protected virtual IntelligenceMod LoadIntelligenceMod(ObjectDatabaseBase db)
         {
             var ability = new IntelligenceMod(db);
+            ability.TextName = "Item Intelligence Gain";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -38082,6 +41431,7 @@ namespace War3Api.Object
         protected virtual StrengthMod LoadStrengthMod(ObjectDatabaseBase db)
         {
             var ability = new StrengthMod(db);
+            ability.TextName = "Item Strength Gain";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -38152,6 +41502,8 @@ namespace War3Api.Object
         protected virtual AgilityMod2 LoadAgilityMod2(ObjectDatabaseBase db)
         {
             var ability = new AgilityMod2(db);
+            ability.TextName = "Item Agility Gain";
+            ability.TextEditorSuffix = "(+2)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -38222,6 +41574,8 @@ namespace War3Api.Object
         protected virtual IntelligenceMod2 LoadIntelligenceMod2(ObjectDatabaseBase db)
         {
             var ability = new IntelligenceMod2(db);
+            ability.TextName = "Item Intelligence Gain";
+            ability.TextEditorSuffix = "(+2)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -38292,6 +41646,8 @@ namespace War3Api.Object
         protected virtual StrengthMod2 LoadStrengthMod2(ObjectDatabaseBase db)
         {
             var ability = new StrengthMod2(db);
+            ability.TextName = "Item Strength Gain";
+            ability.TextEditorSuffix = "(+2)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -38362,6 +41718,7 @@ namespace War3Api.Object
         protected virtual AttackMod LoadAttackMod(ObjectDatabaseBase db)
         {
             var ability = new AttackMod(db);
+            ability.TextName = "Item Permanent Damage Gain, Item Attack Damage Gain";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -38420,6 +41777,8 @@ namespace War3Api.Object
         protected virtual AttackBonus_AIat LoadAttackBonus_AIat(ObjectDatabaseBase db)
         {
             var ability = new AttackBonus_AIat(db);
+            ability.TextName = "Item Damage Bonus";
+            ability.TextEditorSuffix = "(+3)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -38478,6 +41837,8 @@ namespace War3Api.Object
         protected virtual AttackBonus_AIt6 LoadAttackBonus_AIt6(ObjectDatabaseBase db)
         {
             var ability = new AttackBonus_AIt6(db);
+            ability.TextName = "Item Damage Bonus";
+            ability.TextEditorSuffix = "(+6)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -38536,6 +41897,8 @@ namespace War3Api.Object
         protected virtual AttackBonus_AIt9 LoadAttackBonus_AIt9(ObjectDatabaseBase db)
         {
             var ability = new AttackBonus_AIt9(db);
+            ability.TextName = "Item Damage Bonus";
+            ability.TextEditorSuffix = "(+9)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -38594,6 +41957,8 @@ namespace War3Api.Object
         protected virtual AttackBonus_AItc LoadAttackBonus_AItc(ObjectDatabaseBase db)
         {
             var ability = new AttackBonus_AItc(db);
+            ability.TextName = "Item Damage Bonus";
+            ability.TextEditorSuffix = "(+12)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -38652,6 +42017,8 @@ namespace War3Api.Object
         protected virtual AttackBonus_AItf LoadAttackBonus_AItf(ObjectDatabaseBase db)
         {
             var ability = new AttackBonus_AItf(db);
+            ability.TextName = "Item Damage Bonus";
+            ability.TextEditorSuffix = "(+15)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -38710,6 +42077,8 @@ namespace War3Api.Object
         protected virtual AttackBonus1 LoadAttackBonus1(ObjectDatabaseBase db)
         {
             var ability = new AttackBonus1(db);
+            ability.TextName = "Item Damage Bonus";
+            ability.TextEditorSuffix = "(+1)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -38768,6 +42137,8 @@ namespace War3Api.Object
         protected virtual AttackBonus2 LoadAttackBonus2(ObjectDatabaseBase db)
         {
             var ability = new AttackBonus2(db);
+            ability.TextName = "Item Damage Bonus";
+            ability.TextEditorSuffix = "(+2)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -38826,6 +42197,8 @@ namespace War3Api.Object
         protected virtual AttackBonus4 LoadAttackBonus4(ObjectDatabaseBase db)
         {
             var ability = new AttackBonus4(db);
+            ability.TextName = "Item Damage Bonus";
+            ability.TextEditorSuffix = "(+4)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -38884,6 +42257,8 @@ namespace War3Api.Object
         protected virtual AttackBonus5 LoadAttackBonus5(ObjectDatabaseBase db)
         {
             var ability = new AttackBonus5(db);
+            ability.TextName = "Item Damage Bonus";
+            ability.TextEditorSuffix = "(+5)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -38932,7 +42307,7 @@ namespace War3Api.Object
             ability.StatsEffectsRaw[2] = null;
             ability.StatsEffectsRaw[3] = null;
             ability.StatsEffectsRaw[4] = null;
-            ability.DataAttackBonus[1] = 4;
+            ability.DataAttackBonus[1] = 5;
             ability.DataAttackBonus[2] = 0;
             ability.DataAttackBonus[3] = 0;
             ability.DataAttackBonus[4] = 0;
@@ -38942,6 +42317,8 @@ namespace War3Api.Object
         protected virtual AttackBonus7 LoadAttackBonus7(ObjectDatabaseBase db)
         {
             var ability = new AttackBonus7(db);
+            ability.TextName = "Item Damage Bonus";
+            ability.TextEditorSuffix = "(+7)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -39000,6 +42377,8 @@ namespace War3Api.Object
         protected virtual AttackBonus8 LoadAttackBonus8(ObjectDatabaseBase db)
         {
             var ability = new AttackBonus8(db);
+            ability.TextName = "Item Damage Bonus";
+            ability.TextEditorSuffix = "(+8)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -39058,6 +42437,8 @@ namespace War3Api.Object
         protected virtual AttackBonus10 LoadAttackBonus10(ObjectDatabaseBase db)
         {
             var ability = new AttackBonus10(db);
+            ability.TextName = "Item Damage Bonus";
+            ability.TextEditorSuffix = "(+10)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -39116,6 +42497,7 @@ namespace War3Api.Object
         protected virtual VampiricAttack_AIva LoadVampiricAttack_AIva(ObjectDatabaseBase db)
         {
             var ability = new VampiricAttack_AIva(db);
+            ability.TextName = "Item Life Steal";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -39174,6 +42556,7 @@ namespace War3Api.Object
         protected virtual BlinkItem LoadBlinkItem(ObjectDatabaseBase db)
         {
             var ability = new BlinkItem(db);
+            ability.TextName = "Blink (Item Version)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -39228,6 +42611,7 @@ namespace War3Api.Object
         protected virtual BuildTinyCastle LoadBuildTinyCastle(ObjectDatabaseBase db)
         {
             var ability = new BuildTinyCastle(db);
+            ability.TextName = "Build Tiny Castle";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -39286,6 +42670,7 @@ namespace War3Api.Object
         protected virtual BuildTinyGreatHall LoadBuildTinyGreatHall(ObjectDatabaseBase db)
         {
             var ability = new BuildTinyGreatHall(db);
+            ability.TextName = "Build Tiny Great Hall";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -39344,6 +42729,7 @@ namespace War3Api.Object
         protected virtual BuildTinyScoutTower LoadBuildTinyScoutTower(ObjectDatabaseBase db)
         {
             var ability = new BuildTinyScoutTower(db);
+            ability.TextName = "Build Tiny Scout Tower";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -39402,6 +42788,7 @@ namespace War3Api.Object
         protected virtual BuildTinyBlacksmith LoadBuildTinyBlacksmith(ObjectDatabaseBase db)
         {
             var ability = new BuildTinyBlacksmith(db);
+            ability.TextName = "Build Tiny Blacksmith";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -39456,6 +42843,7 @@ namespace War3Api.Object
         protected virtual BuildTinyFarm LoadBuildTinyFarm(ObjectDatabaseBase db)
         {
             var ability = new BuildTinyFarm(db);
+            ability.TextName = "Build Tiny Farm";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -39510,6 +42898,7 @@ namespace War3Api.Object
         protected virtual BuildTinyLumberMill LoadBuildTinyLumberMill(ObjectDatabaseBase db)
         {
             var ability = new BuildTinyLumberMill(db);
+            ability.TextName = "Build Tiny Lumber Mill";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -39564,6 +42953,7 @@ namespace War3Api.Object
         protected virtual BuildTinyBarracks LoadBuildTinyBarracks(ObjectDatabaseBase db)
         {
             var ability = new BuildTinyBarracks(db);
+            ability.TextName = "Build Tiny Barracks";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -39618,6 +43008,7 @@ namespace War3Api.Object
         protected virtual BuildTinyAltar LoadBuildTinyAltar(ObjectDatabaseBase db)
         {
             var ability = new BuildTinyAltar(db);
+            ability.TextName = "Build Tiny Altar of Kings";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -39672,9 +43063,14 @@ namespace War3Api.Object
         protected virtual Cyclone_AIcy LoadCyclone_AIcy(ObjectDatabaseBase db)
         {
             var ability = new Cyclone_AIcy(db);
+            ability.TextName = "Cyclone";
+            ability.TextEditorSuffix = "(Item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Cyclone";
+            ability.TextTooltipNormalExtended[1] = "Tosses a target non-mechanical enemy unit into the air, rendering it unable to move, attack or cast spells, and stopping others from attacking or casting on it. |nLasts <AIcy,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -39730,6 +43126,8 @@ namespace War3Api.Object
         protected virtual DefenseBonus1 LoadDefenseBonus1(ObjectDatabaseBase db)
         {
             var ability = new DefenseBonus1(db);
+            ability.TextName = "Item Armor Bonus";
+            ability.TextEditorSuffix = "(+1)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -39788,6 +43186,8 @@ namespace War3Api.Object
         protected virtual DefenseBonus2 LoadDefenseBonus2(ObjectDatabaseBase db)
         {
             var ability = new DefenseBonus2(db);
+            ability.TextName = "Item Armor Bonus";
+            ability.TextEditorSuffix = "(+2)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -39846,6 +43246,8 @@ namespace War3Api.Object
         protected virtual DefenseBonus3 LoadDefenseBonus3(ObjectDatabaseBase db)
         {
             var ability = new DefenseBonus3(db);
+            ability.TextName = "Item Armor Bonus";
+            ability.TextEditorSuffix = "(+3)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -39904,6 +43306,8 @@ namespace War3Api.Object
         protected virtual DefenseBonus4 LoadDefenseBonus4(ObjectDatabaseBase db)
         {
             var ability = new DefenseBonus4(db);
+            ability.TextName = "Item Armor Bonus";
+            ability.TextEditorSuffix = "(+4)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -39962,6 +43366,8 @@ namespace War3Api.Object
         protected virtual DefenseBonus5 LoadDefenseBonus5(ObjectDatabaseBase db)
         {
             var ability = new DefenseBonus5(db);
+            ability.TextName = "Item Armor Bonus";
+            ability.TextEditorSuffix = "(+5)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -40020,6 +43426,7 @@ namespace War3Api.Object
         protected virtual FortificationGlyph LoadFortificationGlyph(ObjectDatabaseBase db)
         {
             var ability = new FortificationGlyph(db);
+            ability.TextName = "Glyph of Fortification";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -40082,6 +43489,7 @@ namespace War3Api.Object
         protected virtual UltraVisionGlyph LoadUltraVisionGlyph(ObjectDatabaseBase db)
         {
             var ability = new UltraVisionGlyph(db);
+            ability.TextName = "Glyph of Fortification";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -40144,6 +43552,7 @@ namespace War3Api.Object
         protected virtual ExperienceMod LoadExperienceMod(ObjectDatabaseBase db)
         {
             var ability = new ExperienceMod(db);
+            ability.TextName = "Item Experience Gain";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -40202,6 +43611,8 @@ namespace War3Api.Object
         protected virtual ExperienceModGreater LoadExperienceModGreater(ObjectDatabaseBase db)
         {
             var ability = new ExperienceModGreater(db);
+            ability.TextName = "Item Experience Gain";
+            ability.TextEditorSuffix = " (Greater)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -40260,6 +43671,7 @@ namespace War3Api.Object
         protected virtual FigurineRedDrake LoadFigurineRedDrake(ObjectDatabaseBase db)
         {
             var ability = new FigurineRedDrake(db);
+            ability.TextName = "Item Red Drake Summon";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -40330,6 +43742,7 @@ namespace War3Api.Object
         protected virtual FigurineFurbolg LoadFigurineFurbolg(ObjectDatabaseBase db)
         {
             var ability = new FigurineFurbolg(db);
+            ability.TextName = "Item Furbolg Summon";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -40400,6 +43813,7 @@ namespace War3Api.Object
         protected virtual FigurineRockGolem LoadFigurineRockGolem(ObjectDatabaseBase db)
         {
             var ability = new FigurineRockGolem(db);
+            ability.TextName = "Item Rock Golem Summon";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -40470,6 +43884,7 @@ namespace War3Api.Object
         protected virtual FigurineDoomGuard LoadFigurineDoomGuard(ObjectDatabaseBase db)
         {
             var ability = new FigurineDoomGuard(db);
+            ability.TextName = "Item Doom Guard Summon";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -40540,6 +43955,7 @@ namespace War3Api.Object
         protected virtual FigurineFelHound LoadFigurineFelHound(ObjectDatabaseBase db)
         {
             var ability = new FigurineFelHound(db);
+            ability.TextName = "Item Fel Stalker Summon";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -40610,6 +44026,7 @@ namespace War3Api.Object
         protected virtual FigurineSkeleton LoadFigurineSkeleton(ObjectDatabaseBase db)
         {
             var ability = new FigurineSkeleton(db);
+            ability.TextName = "Item Skeleton Summon";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -40680,6 +44097,7 @@ namespace War3Api.Object
         protected virtual FigurineIceRevenant LoadFigurineIceRevenant(ObjectDatabaseBase db)
         {
             var ability = new FigurineIceRevenant(db);
+            ability.TextName = "Item Ice Revenant Summon";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -40750,6 +44168,7 @@ namespace War3Api.Object
         protected virtual FigurineUrsaWarrior LoadFigurineUrsaWarrior(ObjectDatabaseBase db)
         {
             var ability = new FigurineUrsaWarrior(db);
+            ability.TextName = "Item Ursa Warrior Summon";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -40820,6 +44239,7 @@ namespace War3Api.Object
         protected virtual Flag LoadFlag(ObjectDatabaseBase db)
         {
             var ability = new Flag(db);
+            ability.TextName = "Item Capture The Flag";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -40874,6 +44294,8 @@ namespace War3Api.Object
         protected virtual FlagHuman LoadFlagHuman(ObjectDatabaseBase db)
         {
             var ability = new FlagHuman(db);
+            ability.TextName = "Item Capture The Flag";
+            ability.TextEditorSuffix = "(Human)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -40928,6 +44350,8 @@ namespace War3Api.Object
         protected virtual FlagOrc LoadFlagOrc(ObjectDatabaseBase db)
         {
             var ability = new FlagOrc(db);
+            ability.TextName = "Item Capture The Flag";
+            ability.TextEditorSuffix = "(Orc)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -40982,6 +44406,8 @@ namespace War3Api.Object
         protected virtual FlagNightElf LoadFlagNightElf(ObjectDatabaseBase db)
         {
             var ability = new FlagNightElf(db);
+            ability.TextName = "Item Capture The Flag";
+            ability.TextEditorSuffix = "(Night Elf)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -41036,6 +44462,8 @@ namespace War3Api.Object
         protected virtual FlagUndead LoadFlagUndead(ObjectDatabaseBase db)
         {
             var ability = new FlagUndead(db);
+            ability.TextName = "Item Capture The Flag";
+            ability.TextEditorSuffix = "(Undead)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -41090,6 +44518,7 @@ namespace War3Api.Object
         protected virtual FlagOrcBattleStandard LoadFlagOrcBattleStandard(ObjectDatabaseBase db)
         {
             var ability = new FlagOrcBattleStandard(db);
+            ability.TextName = "Item Orcish Battle Standard";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -41144,6 +44573,7 @@ namespace War3Api.Object
         protected virtual FlareGun LoadFlareGun(ObjectDatabaseBase db)
         {
             var ability = new FlareGun(db);
+            ability.TextName = "Flare Gun";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -41206,6 +44636,7 @@ namespace War3Api.Object
         protected virtual ItemInferno LoadItemInferno(ObjectDatabaseBase db)
         {
             var ability = new ItemInferno(db);
+            ability.TextEditorSuffix = "(Item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -41276,6 +44707,7 @@ namespace War3Api.Object
         protected virtual LevelMod LoadLevelMod(ObjectDatabaseBase db)
         {
             var ability = new LevelMod(db);
+            ability.TextName = "Item Level Gain";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -41334,6 +44766,8 @@ namespace War3Api.Object
         protected virtual LightningPurge LoadLightningPurge(ObjectDatabaseBase db)
         {
             var ability = new LightningPurge(db);
+            ability.TextName = "Item Purge";
+            ability.TextEditorSuffix = " (1)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -41412,6 +44846,8 @@ namespace War3Api.Object
         protected virtual MaxLifeBonusLeast LoadMaxLifeBonusLeast(ObjectDatabaseBase db)
         {
             var ability = new MaxLifeBonusLeast(db);
+            ability.TextName = "Item Life Bonus";
+            ability.TextEditorSuffix = "(Least)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -41470,6 +44906,8 @@ namespace War3Api.Object
         protected virtual MaxLifeBonusLesser LoadMaxLifeBonusLesser(ObjectDatabaseBase db)
         {
             var ability = new MaxLifeBonusLesser(db);
+            ability.TextName = "Item Life Bonus";
+            ability.TextEditorSuffix = "(Lesser)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -41528,6 +44966,8 @@ namespace War3Api.Object
         protected virtual MaxLifeBonusGreater LoadMaxLifeBonusGreater(ObjectDatabaseBase db)
         {
             var ability = new MaxLifeBonusGreater(db);
+            ability.TextName = "Item Life Bonus";
+            ability.TextEditorSuffix = "(Greater)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -41586,6 +45026,7 @@ namespace War3Api.Object
         protected virtual MoveSpeedBonus LoadMoveSpeedBonus(ObjectDatabaseBase db)
         {
             var ability = new MoveSpeedBonus(db);
+            ability.TextName = "Item Move Speed Bonus";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -41644,6 +45085,7 @@ namespace War3Api.Object
         protected virtual OrbOfDarknessBlackArrow LoadOrbOfDarknessBlackArrow(ObjectDatabaseBase db)
         {
             var ability = new OrbOfDarknessBlackArrow(db);
+            ability.TextName = "Item Black Arrow";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -41714,6 +45156,7 @@ namespace War3Api.Object
         protected virtual OrbOfDarkness LoadOrbOfDarkness(ObjectDatabaseBase db)
         {
             var ability = new OrbOfDarkness(db);
+            ability.TextName = "Item Attack Black Arrow Bonus";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -41792,6 +45235,7 @@ namespace War3Api.Object
         protected virtual OrbOfCorruption LoadOrbOfCorruption(ObjectDatabaseBase db)
         {
             var ability = new OrbOfCorruption(db);
+            ability.TextName = "Item Attack Corruption Bonus";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -41858,6 +45302,7 @@ namespace War3Api.Object
         protected virtual ShadowOrbAbility LoadShadowOrbAbility(ObjectDatabaseBase db)
         {
             var ability = new ShadowOrbAbility(db);
+            ability.TextName = "Shadow Orb Ability";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -41912,6 +45357,7 @@ namespace War3Api.Object
         protected virtual OrbOfFire LoadOrbOfFire(ObjectDatabaseBase db)
         {
             var ability = new OrbOfFire(db);
+            ability.TextName = "Item Attack Fire Bonus";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -41974,6 +45420,8 @@ namespace War3Api.Object
         protected virtual OrbOfGuldan LoadOrbOfGuldan(ObjectDatabaseBase db)
         {
             var ability = new OrbOfGuldan(db);
+            ability.TextName = "Item Attack Fire Bonus";
+            ability.TextEditorSuffix = " (Gul'dan)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -42028,6 +45476,7 @@ namespace War3Api.Object
         protected virtual OrbOfFreezing LoadOrbOfFreezing(ObjectDatabaseBase db)
         {
             var ability = new OrbOfFreezing(db);
+            ability.TextName = "Item Freeze Damage Bonus";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -42090,6 +45539,7 @@ namespace War3Api.Object
         protected virtual OrbOfFrost LoadOrbOfFrost(ObjectDatabaseBase db)
         {
             var ability = new OrbOfFrost(db);
+            ability.TextName = "Item Attack Frost Bonus";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -42152,6 +45602,7 @@ namespace War3Api.Object
         protected virtual OrbOfLightning LoadOrbOfLightning(ObjectDatabaseBase db)
         {
             var ability = new OrbOfLightning(db);
+            ability.TextName = "Item Attack Lightning Bonus (new)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -42230,6 +45681,7 @@ namespace War3Api.Object
         protected virtual OrbOfLightningOld LoadOrbOfLightningOld(ObjectDatabaseBase db)
         {
             var ability = new OrbOfLightningOld(db);
+            ability.TextName = "Item Attack Lightning Bonus";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -42296,6 +45748,7 @@ namespace War3Api.Object
         protected virtual OrbOfSpells LoadOrbOfSpells(ObjectDatabaseBase db)
         {
             var ability = new OrbOfSpells(db);
+            ability.TextName = "Item Attack Slow Bonus";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -42374,6 +45827,7 @@ namespace War3Api.Object
         protected virtual OrbOfVenom LoadOrbOfVenom(ObjectDatabaseBase db)
         {
             var ability = new OrbOfVenom(db);
+            ability.TextName = "Item Attack Poison Bonus";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -42440,9 +45894,13 @@ namespace War3Api.Object
         protected virtual OrbOfVenomPoisonAttack LoadOrbOfVenomPoisonAttack(ObjectDatabaseBase db)
         {
             var ability = new OrbOfVenomPoisonAttack(db);
+            ability.TextName = "Poison Sting";
+            ability.TextEditorSuffix = " (Orb of Venom)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Poison Sting";
+            ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -42510,6 +45968,8 @@ namespace War3Api.Object
         protected virtual AnimateDeadItemSpecial LoadAnimateDeadItemSpecial(ObjectDatabaseBase db)
         {
             var ability = new AnimateDeadItemSpecial(db);
+            ability.TextName = "Reanimation";
+            ability.TextEditorSuffix = " (special campaign item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -42568,6 +46028,7 @@ namespace War3Api.Object
         protected virtual RegenLife_Arel LoadRegenLife_Arel(ObjectDatabaseBase db)
         {
             var ability = new RegenLife_Arel(db);
+            ability.TextName = "Item Life Regeneration";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -42626,6 +46087,8 @@ namespace War3Api.Object
         protected virtual RegenLife_Arll LoadRegenLife_Arll(ObjectDatabaseBase db)
         {
             var ability = new RegenLife_Arll(db);
+            ability.TextName = "Item Life Regeneration";
+            ability.TextEditorSuffix = "(Lesser)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -42684,6 +46147,7 @@ namespace War3Api.Object
         protected virtual SightBonus LoadSightBonus(ObjectDatabaseBase db)
         {
             var ability = new SightBonus(db);
+            ability.TextName = "Item Sight Range Bonus";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -42742,9 +46206,13 @@ namespace War3Api.Object
         protected virtual Slow_AIos LoadSlow_AIos(ObjectDatabaseBase db)
         {
             var ability = new Slow_AIos(db);
+            ability.TextName = "Item Slow";
+            ability.TextEditorSuffix = " (Orb Version)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Slow";
+            ability.TextTooltipNormalExtended[1] = "Slows a target enemy unit's attack rate by <AIos,DataB1,%>% and movement speed by <AIos,DataA1,%>%. |nLasts <AIos,Dur1> seconds.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -42808,6 +46276,7 @@ namespace War3Api.Object
         protected virtual SoulTrap LoadSoulTrap(ObjectDatabaseBase db)
         {
             var ability = new SoulTrap(db);
+            ability.TextName = "Item Soul Theft";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -42862,6 +46331,7 @@ namespace War3Api.Object
         protected virtual SoulPossession LoadSoulPossession(ObjectDatabaseBase db)
         {
             var ability = new SoulPossession(db);
+            ability.TextName = "Item Soul Possession";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -42916,6 +46386,7 @@ namespace War3Api.Object
         protected virtual ItemCloakOfFlames LoadItemCloakOfFlames(ObjectDatabaseBase db)
         {
             var ability = new ItemCloakOfFlames(db);
+            ability.TextName = "Item Immolation";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -42982,6 +46453,7 @@ namespace War3Api.Object
         protected virtual ItemCommand LoadItemCommand(ObjectDatabaseBase db)
         {
             var ability = new ItemCommand(db);
+            ability.TextName = "Item Command";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -43040,6 +46512,7 @@ namespace War3Api.Object
         protected virtual ItemDamageAoe LoadItemDamageAoe(ObjectDatabaseBase db)
         {
             var ability = new ItemDamageAoe(db);
+            ability.TextName = "Item Area tree/wall damage";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -43094,6 +46567,7 @@ namespace War3Api.Object
         protected virtual ItemDefenseAoe LoadItemDefenseAoe(ObjectDatabaseBase db)
         {
             var ability = new ItemDefenseAoe(db);
+            ability.TextName = "Item Temporary Area Armor Bonus";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -43160,6 +46634,8 @@ namespace War3Api.Object
         protected virtual ItemDefenseAoeHealing LoadItemDefenseAoeHealing(ObjectDatabaseBase db)
         {
             var ability = new ItemDefenseAoeHealing(db);
+            ability.TextName = "Item Temporary Area Armor Bonus";
+            ability.TextEditorSuffix = " (with Life & Mana Healing)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -43226,6 +46702,7 @@ namespace War3Api.Object
         protected virtual ItemDetectAoe LoadItemDetectAoe(ObjectDatabaseBase db)
         {
             var ability = new ItemDetectAoe(db);
+            ability.TextName = "Item Area Detection";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -43250,7 +46727,7 @@ namespace War3Api.Object
             ability.StatsDurationHero[2] = 0f;
             ability.StatsDurationHero[3] = 0f;
             ability.StatsDurationHero[4] = 0f;
-            ability.StatsCooldown[1] = 60f;
+            ability.StatsCooldown[1] = 0f;
             ability.StatsCooldown[2] = 0f;
             ability.StatsCooldown[3] = 0f;
             ability.StatsCooldown[4] = 0f;
@@ -43284,6 +46761,7 @@ namespace War3Api.Object
         protected virtual ItemDispelAoe LoadItemDispelAoe(ObjectDatabaseBase db)
         {
             var ability = new ItemDispelAoe(db);
+            ability.TextName = "Item Dispel";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -43346,6 +46824,8 @@ namespace War3Api.Object
         protected virtual ItemDispelAoeWithCooldown LoadItemDispelAoeWithCooldown(ObjectDatabaseBase db)
         {
             var ability = new ItemDispelAoeWithCooldown(db);
+            ability.TextName = "Item Dispel";
+            ability.TextEditorSuffix = " (with cooldown)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -43408,6 +46888,7 @@ namespace War3Api.Object
         protected virtual PowerupDispelAoe LoadPowerupDispelAoe(ObjectDatabaseBase db)
         {
             var ability = new PowerupDispelAoe(db);
+            ability.TextName = "Powerup Dispel";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -43462,6 +46943,8 @@ namespace War3Api.Object
         protected virtual ItemHealLesser LoadItemHealLesser(ObjectDatabaseBase db)
         {
             var ability = new ItemHealLesser(db);
+            ability.TextName = "Item Healing";
+            ability.TextEditorSuffix = "(Lesser)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -43520,6 +47003,8 @@ namespace War3Api.Object
         protected virtual ItemHealGreater LoadItemHealGreater(ObjectDatabaseBase db)
         {
             var ability = new ItemHealGreater(db);
+            ability.TextName = "Item Healing";
+            ability.TextEditorSuffix = "(Greater)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -43578,6 +47063,8 @@ namespace War3Api.Object
         protected virtual ItemHealLeast LoadItemHealLeast(ObjectDatabaseBase db)
         {
             var ability = new ItemHealLeast(db);
+            ability.TextName = "Least Healing";
+            ability.TextEditorSuffix = "(slow cooldown)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -43636,6 +47123,7 @@ namespace War3Api.Object
         protected virtual ItemHealAoe LoadItemHealAoe(ObjectDatabaseBase db)
         {
             var ability = new ItemHealAoe(db);
+            ability.TextName = "Item Area Healing";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -43694,6 +47182,8 @@ namespace War3Api.Object
         protected virtual ItemHealAoeGreater LoadItemHealAoeGreater(ObjectDatabaseBase db)
         {
             var ability = new ItemHealAoeGreater(db);
+            ability.TextName = "Item Area Healing";
+            ability.TextEditorSuffix = " (Greater)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -43752,6 +47242,7 @@ namespace War3Api.Object
         protected virtual PowerupHealAoeLesser LoadPowerupHealAoeLesser(ObjectDatabaseBase db)
         {
             var ability = new PowerupHealAoeLesser(db);
+            ability.TextName = "Powerup Area Healing Lesser";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -43806,6 +47297,7 @@ namespace War3Api.Object
         protected virtual PowerupHealAoe LoadPowerupHealAoe(ObjectDatabaseBase db)
         {
             var ability = new PowerupHealAoe(db);
+            ability.TextName = "Powerup Area Healing";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -43860,6 +47352,7 @@ namespace War3Api.Object
         protected virtual PowerupHealAoeGreater LoadPowerupHealAoeGreater(ObjectDatabaseBase db)
         {
             var ability = new PowerupHealAoeGreater(db);
+            ability.TextName = "Powerup Area Healing Greater";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -43914,9 +47407,12 @@ namespace War3Api.Object
         protected virtual HealingWard_AIhw LoadHealingWard_AIhw(ObjectDatabaseBase db)
         {
             var ability = new HealingWard_AIhw(db);
+            ability.TextName = "Healing Ward";
+            ability.TextEditorSuffix = "(Item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormalExtended[1] = "Summons an immovable ward that heals <Aoar,DataA1,%>% of a nearby friendly non-mechanical unit's hit points per second. |nLasts <AIhw,Dur1> seconds.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -43972,9 +47468,12 @@ namespace War3Api.Object
         protected virtual SentryWardItem LoadSentryWardItem(ObjectDatabaseBase db)
         {
             var ability = new SentryWardItem(db);
+            ability.TextName = "Sentry Ward";
+            ability.TextEditorSuffix = "(Item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormalExtended[1] = "Summons an invisible and immovable ward that provides vision in an area. |nCan see invisible units. |nLasts <AIsw,Dur1> seconds.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -44030,6 +47529,7 @@ namespace War3Api.Object
         protected virtual ItemIllusion LoadItemIllusion(ObjectDatabaseBase db)
         {
             var ability = new ItemIllusion(db);
+            ability.TextName = "Item Illusions";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -44092,6 +47592,8 @@ namespace War3Api.Object
         protected virtual ItemInvisLesser LoadItemInvisLesser(ObjectDatabaseBase db)
         {
             var ability = new ItemInvisLesser(db);
+            ability.TextName = "Item Temporary Invisibility";
+            ability.TextEditorSuffix = "(Lesser)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -44146,6 +47648,8 @@ namespace War3Api.Object
         protected virtual ItemInvisGreater LoadItemInvisGreater(ObjectDatabaseBase db)
         {
             var ability = new ItemInvisGreater(db);
+            ability.TextName = "Item Temporary Invisibility";
+            ability.TextEditorSuffix = "(Greater)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -44200,6 +47704,7 @@ namespace War3Api.Object
         protected virtual ItemInvulNormal LoadItemInvulNormal(ObjectDatabaseBase db)
         {
             var ability = new ItemInvulNormal(db);
+            ability.TextName = "Item Temporary Invulnerability";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -44258,6 +47763,8 @@ namespace War3Api.Object
         protected virtual ItemInvulLesser LoadItemInvulLesser(ObjectDatabaseBase db)
         {
             var ability = new ItemInvulLesser(db);
+            ability.TextName = "Item Temporary Invulnerability";
+            ability.TextEditorSuffix = " (Lesser)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -44312,6 +47819,8 @@ namespace War3Api.Object
         protected virtual ItemInvulDivinity LoadItemInvulDivinity(ObjectDatabaseBase db)
         {
             var ability = new ItemInvulDivinity(db);
+            ability.TextName = "Item Temporary Invulnerability";
+            ability.TextEditorSuffix = " (Divinity)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -44366,6 +47875,8 @@ namespace War3Api.Object
         protected virtual ItemManaRestoreLesser LoadItemManaRestoreLesser(ObjectDatabaseBase db)
         {
             var ability = new ItemManaRestoreLesser(db);
+            ability.TextName = "Item Mana Regain";
+            ability.TextEditorSuffix = "(Lesser)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -44424,6 +47935,8 @@ namespace War3Api.Object
         protected virtual ItemManaRestoreGreater LoadItemManaRestoreGreater(ObjectDatabaseBase db)
         {
             var ability = new ItemManaRestoreGreater(db);
+            ability.TextName = "Item Mana Regain";
+            ability.TextEditorSuffix = "(Greater)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -44482,6 +47995,7 @@ namespace War3Api.Object
         protected virtual ItemManaRestoreAoe LoadItemManaRestoreAoe(ObjectDatabaseBase db)
         {
             var ability = new ItemManaRestoreAoe(db);
+            ability.TextName = "Item Area Mana Regain";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -44540,6 +48054,7 @@ namespace War3Api.Object
         protected virtual RuneManaRestoreAoe LoadRuneManaRestoreAoe(ObjectDatabaseBase db)
         {
             var ability = new RuneManaRestoreAoe(db);
+            ability.TextName = "Rune Area Mana Regain";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -44594,6 +48109,7 @@ namespace War3Api.Object
         protected virtual RuneManaRestoreGreaterAoe LoadRuneManaRestoreGreaterAoe(ObjectDatabaseBase db)
         {
             var ability = new RuneManaRestoreGreaterAoe(db);
+            ability.TextName = "Rune Area Mana Regain Greater";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -44648,6 +48164,7 @@ namespace War3Api.Object
         protected virtual ItemPlaceMine LoadItemPlaceMine(ObjectDatabaseBase db)
         {
             var ability = new ItemPlaceMine(db);
+            ability.TextName = "Item Place Goblin Land Mine";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -44706,6 +48223,7 @@ namespace War3Api.Object
         protected virtual ItemRecall LoadItemRecall(ObjectDatabaseBase db)
         {
             var ability = new ItemRecall(db);
+            ability.TextName = "Item Recall";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -44768,6 +48286,7 @@ namespace War3Api.Object
         protected virtual ItemRegenMana LoadItemRegenMana(ObjectDatabaseBase db)
         {
             var ability = new ItemRegenMana(db);
+            ability.TextName = "Item Mana Regeneration";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -44826,6 +48345,7 @@ namespace War3Api.Object
         protected virtual ItemRegenManaLesser LoadItemRegenManaLesser(ObjectDatabaseBase db)
         {
             var ability = new ItemRegenManaLesser(db);
+            ability.TextEditorSuffix = "(Lesser)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -44884,6 +48404,7 @@ namespace War3Api.Object
         protected virtual ItemReincarnation LoadItemReincarnation(ObjectDatabaseBase db)
         {
             var ability = new ItemReincarnation(db);
+            ability.TextName = "Item Reincarnation";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -44950,6 +48471,7 @@ namespace War3Api.Object
         protected virtual ItemRestore LoadItemRestore(ObjectDatabaseBase db)
         {
             var ability = new ItemRestore(db);
+            ability.TextName = "Item Heal/Mana Regain";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -45012,6 +48534,7 @@ namespace War3Api.Object
         protected virtual ItemRestoreAoe LoadItemRestoreAoe(ObjectDatabaseBase db)
         {
             var ability = new ItemRestoreAoe(db);
+            ability.TextName = "Item Area Heal/Mana Regain";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -45074,6 +48597,7 @@ namespace War3Api.Object
         protected virtual RuneRestoreAoe LoadRuneRestoreAoe(ObjectDatabaseBase db)
         {
             var ability = new RuneRestoreAoe(db);
+            ability.TextName = "Rune Area Heal/Mana Regain";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -45128,6 +48652,7 @@ namespace War3Api.Object
         protected virtual ItemSpeed LoadItemSpeed(ObjectDatabaseBase db)
         {
             var ability = new ItemSpeed(db);
+            ability.TextName = "Item Temporary Speed Bonus";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -45186,6 +48711,7 @@ namespace War3Api.Object
         protected virtual ItemSpeedAoe LoadItemSpeedAoe(ObjectDatabaseBase db)
         {
             var ability = new ItemSpeedAoe(db);
+            ability.TextName = "Scroll of Haste";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -45244,6 +48770,7 @@ namespace War3Api.Object
         protected virtual RuneSpeedAoe LoadRuneSpeedAoe(ObjectDatabaseBase db)
         {
             var ability = new RuneSpeedAoe(db);
+            ability.TextName = "Rune of Speed";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -45298,6 +48825,7 @@ namespace War3Api.Object
         protected virtual ItemTownPortal LoadItemTownPortal(ObjectDatabaseBase db)
         {
             var ability = new ItemTownPortal(db);
+            ability.TextName = "Item Town Portal";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -45360,6 +48888,7 @@ namespace War3Api.Object
         protected virtual ItemAuraDevotion LoadItemAuraDevotion(ObjectDatabaseBase db)
         {
             var ability = new ItemAuraDevotion(db);
+            ability.TextEditorSuffix = "(Item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -45422,6 +48951,7 @@ namespace War3Api.Object
         protected virtual ItemAuraCommand LoadItemAuraCommand(ObjectDatabaseBase db)
         {
             var ability = new ItemAuraCommand(db);
+            ability.TextEditorSuffix = "(Item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -45492,6 +49022,7 @@ namespace War3Api.Object
         protected virtual ItemAuraWarDrums LoadItemAuraWarDrums(ObjectDatabaseBase db)
         {
             var ability = new ItemAuraWarDrums(db);
+            ability.TextEditorSuffix = "(Item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -45546,6 +49077,7 @@ namespace War3Api.Object
         protected virtual ItemAuraBrilliance LoadItemAuraBrilliance(ObjectDatabaseBase db)
         {
             var ability = new ItemAuraBrilliance(db);
+            ability.TextEditorSuffix = "(Item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -45608,6 +49140,7 @@ namespace War3Api.Object
         protected virtual ItemAuraVampiric LoadItemAuraVampiric(ObjectDatabaseBase db)
         {
             var ability = new ItemAuraVampiric(db);
+            ability.TextEditorSuffix = "(Item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -45666,6 +49199,7 @@ namespace War3Api.Object
         protected virtual ItemAuraTrueshot LoadItemAuraTrueshot(ObjectDatabaseBase db)
         {
             var ability = new ItemAuraTrueshot(db);
+            ability.TextEditorSuffix = "(Item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -45736,6 +49270,7 @@ namespace War3Api.Object
         protected virtual ItemAuraEndurance LoadItemAuraEndurance(ObjectDatabaseBase db)
         {
             var ability = new ItemAuraEndurance(db);
+            ability.TextEditorSuffix = "(Item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -45798,6 +49333,7 @@ namespace War3Api.Object
         protected virtual ItemAuraUnholy LoadItemAuraUnholy(ObjectDatabaseBase db)
         {
             var ability = new ItemAuraUnholy(db);
+            ability.TextEditorSuffix = "(Item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -45864,6 +49400,8 @@ namespace War3Api.Object
         protected virtual ItemUltravision LoadItemUltravision(ObjectDatabaseBase db)
         {
             var ability = new ItemUltravision(db);
+            ability.TextName = "Ultravision";
+            ability.TextEditorSuffix = "(Item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -45918,9 +49456,12 @@ namespace War3Api.Object
         protected virtual LightningShieldItem LoadLightningShieldItem(ObjectDatabaseBase db)
         {
             var ability = new LightningShieldItem(db);
+            ability.TextName = "Lightning Shield";
+            ability.TextEditorSuffix = "(Item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormalExtended[1] = "Forms a shield of electricity around a target unit, dealing <AIls,DataA1> damage per second to units around it. |nLasts <AIls,Dur1> seconds.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -45976,6 +49517,7 @@ namespace War3Api.Object
         protected virtual AntiMagicShield_AIxs LoadAntiMagicShield_AIxs(ObjectDatabaseBase db)
         {
             var ability = new AntiMagicShield_AIxs(db);
+            ability.TextName = "Item Anti-Magic Shell";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -46046,6 +49588,7 @@ namespace War3Api.Object
         protected virtual AnimateDead LoadAnimateDead(ObjectDatabaseBase db)
         {
             var ability = new AnimateDead(db);
+            ability.TextName = "Item Animate Dead";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -46112,6 +49655,7 @@ namespace War3Api.Object
         protected virtual Resurrection LoadResurrection(ObjectDatabaseBase db)
         {
             var ability = new Resurrection(db);
+            ability.TextName = "Item Resurrection";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -46174,9 +49718,12 @@ namespace War3Api.Object
         protected virtual Roar_AIrr LoadRoar_AIrr(ObjectDatabaseBase db)
         {
             var ability = new Roar_AIrr(db);
+            ability.TextName = "Roar";
+            ability.TextEditorSuffix = "(Item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormalExtended[1] = "Gives friendly nearby units a <AIrr,DataA1,%>% bonus to damage. |nLasts <AIrr,Dur1> seconds.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -46256,9 +49803,12 @@ namespace War3Api.Object
         protected virtual Evasion LoadEvasion(ObjectDatabaseBase db)
         {
             var ability = new Evasion(db);
+            ability.TextName = "Evasion";
+            ability.TextEditorSuffix = "(Item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormalExtended[1] = "Gives a <AIev,DataA1,%>% chance to avoid an attack.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -46314,9 +49864,12 @@ namespace War3Api.Object
         protected virtual MagicImmunity_AImx LoadMagicImmunity_AImx(ObjectDatabaseBase db)
         {
             var ability = new MagicImmunity_AImx(db);
+            ability.TextName = "Spell Immunity";
+            ability.TextEditorSuffix = "(Item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormalExtended[1] = "Renders this unit immune to all spells.";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -46372,6 +49925,8 @@ namespace War3Api.Object
         protected virtual PermanentHitPointBonus LoadPermanentHitPointBonus(ObjectDatabaseBase db)
         {
             var ability = new PermanentHitPointBonus(db);
+            ability.TextName = "Item Permanent Life Gain";
+            ability.TextEditorSuffix = "(+50)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -46430,6 +49985,8 @@ namespace War3Api.Object
         protected virtual MaxManaBonusLeast LoadMaxManaBonusLeast(ObjectDatabaseBase db)
         {
             var ability = new MaxManaBonusLeast(db);
+            ability.TextName = "Item Mana Bonus";
+            ability.TextEditorSuffix = "(Least)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -46488,6 +50045,8 @@ namespace War3Api.Object
         protected virtual MaxManaBonusMost LoadMaxManaBonusMost(ObjectDatabaseBase db)
         {
             var ability = new MaxManaBonusMost(db);
+            ability.TextName = "Item Mana Bonus";
+            ability.TextEditorSuffix = "(Greater)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -46546,6 +50105,8 @@ namespace War3Api.Object
         protected virtual AttackSpeedIncrease LoadAttackSpeedIncrease(ObjectDatabaseBase db)
         {
             var ability = new AttackSpeedIncrease(db);
+            ability.TextName = "Item Attack Speed Bonus";
+            ability.TextEditorSuffix = " (Gloves of Haste)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -46604,6 +50165,7 @@ namespace War3Api.Object
         protected virtual PotionOfLifeRegen LoadPotionOfLifeRegen(ObjectDatabaseBase db)
         {
             var ability = new PotionOfLifeRegen(db);
+            ability.TextName = "Healing Salve";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -46678,6 +50240,7 @@ namespace War3Api.Object
         protected virtual PotionOfManaRegenGreater LoadPotionOfManaRegenGreater(ObjectDatabaseBase db)
         {
             var ability = new PotionOfManaRegenGreater(db);
+            ability.TextName = "Clarity Potion";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -46752,6 +50315,7 @@ namespace War3Api.Object
         protected virtual ScrollOfLifeRegen LoadScrollOfLifeRegen(ObjectDatabaseBase db)
         {
             var ability = new ScrollOfLifeRegen(db);
+            ability.TextName = "Scroll of Regeneration";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -46826,6 +50390,7 @@ namespace War3Api.Object
         protected virtual PotionOfManaRegenLesser LoadPotionOfManaRegenLesser(ObjectDatabaseBase db)
         {
             var ability = new PotionOfManaRegenLesser(db);
+            ability.TextName = "Lesser Clarity Potion";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -46900,6 +50465,7 @@ namespace War3Api.Object
         protected virtual PotionOfRejuvI LoadPotionOfRejuvI(ObjectDatabaseBase db)
         {
             var ability = new PotionOfRejuvI(db);
+            ability.TextName = "Generic Item-Rejuv Effect";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -46974,6 +50540,8 @@ namespace War3Api.Object
         protected virtual PotionOfRejuvII LoadPotionOfRejuvII(ObjectDatabaseBase db)
         {
             var ability = new PotionOfRejuvII(db);
+            ability.TextName = "Generic Item-Rejuv Effect";
+            ability.TextEditorSuffix = " (II)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -47048,6 +50616,8 @@ namespace War3Api.Object
         protected virtual PotionOfRejuvIII LoadPotionOfRejuvIII(ObjectDatabaseBase db)
         {
             var ability = new PotionOfRejuvIII(db);
+            ability.TextName = "Generic Item-Rejuv Effect";
+            ability.TextEditorSuffix = " (III)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -47122,6 +50692,8 @@ namespace War3Api.Object
         protected virtual PotionOfRejuvIV LoadPotionOfRejuvIV(ObjectDatabaseBase db)
         {
             var ability = new PotionOfRejuvIV(db);
+            ability.TextName = "Generic Item-Rejuv Effect";
+            ability.TextEditorSuffix = " (IV)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -47196,6 +50768,8 @@ namespace War3Api.Object
         protected virtual ScrollOfRejuvI LoadScrollOfRejuvI(ObjectDatabaseBase db)
         {
             var ability = new ScrollOfRejuvI(db);
+            ability.TextName = "Generic Item-Rejuv Effect";
+            ability.TextEditorSuffix = " (V)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -47270,6 +50844,8 @@ namespace War3Api.Object
         protected virtual ScrollOfRejuvII LoadScrollOfRejuvII(ObjectDatabaseBase db)
         {
             var ability = new ScrollOfRejuvII(db);
+            ability.TextName = "Generic Item-Rejuv Effect";
+            ability.TextEditorSuffix = " (VI)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -47344,6 +50920,7 @@ namespace War3Api.Object
         protected virtual GiveGold LoadGiveGold(ObjectDatabaseBase db)
         {
             var ability = new GiveGold(db);
+            ability.TextName = "Chest of Gold";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -47402,6 +50979,7 @@ namespace War3Api.Object
         protected virtual GiveLumber LoadGiveLumber(ObjectDatabaseBase db)
         {
             var ability = new GiveLumber(db);
+            ability.TextName = "Bundle of Lumber";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -47460,6 +51038,7 @@ namespace War3Api.Object
         protected virtual ItemRevealMap LoadItemRevealMap(ObjectDatabaseBase db)
         {
             var ability = new ItemRevealMap(db);
+            ability.TextName = "Item Reveal Entire Map";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -47518,6 +51097,7 @@ namespace War3Api.Object
         protected virtual ItemDispelChain LoadItemDispelChain(ObjectDatabaseBase db)
         {
             var ability = new ItemDispelChain(db);
+            ability.TextName = "Item Chain Dispel";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -47584,6 +51164,7 @@ namespace War3Api.Object
         protected virtual ItemWeb LoadItemWeb(ObjectDatabaseBase db)
         {
             var ability = new ItemWeb(db);
+            ability.TextName = "Item Web";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -47650,6 +51231,7 @@ namespace War3Api.Object
         protected virtual ItemMonsterLure LoadItemMonsterLure(ObjectDatabaseBase db)
         {
             var ability = new ItemMonsterLure(db);
+            ability.TextName = "Monster Lure";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -47720,6 +51302,7 @@ namespace War3Api.Object
         protected virtual ItemChangeTOD LoadItemChangeTOD(ObjectDatabaseBase db)
         {
             var ability = new ItemChangeTOD(db);
+            ability.TextName = "Change Time of Day";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -47782,6 +51365,7 @@ namespace War3Api.Object
         protected virtual ItemRandomItem LoadItemRandomItem(ObjectDatabaseBase db)
         {
             var ability = new ItemRandomItem(db);
+            ability.TextName = "Random Item";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -47836,6 +51420,7 @@ namespace War3Api.Object
         protected virtual RunedBracers LoadRunedBracers(ObjectDatabaseBase db)
         {
             var ability = new RunedBracers(db);
+            ability.TextName = "Spell Damage Reduction";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -47898,6 +51483,7 @@ namespace War3Api.Object
         protected virtual BlightPlacement LoadBlightPlacement(ObjectDatabaseBase db)
         {
             var ability = new BlightPlacement(db);
+            ability.TextName = "Blight Placement";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -47960,6 +51546,7 @@ namespace War3Api.Object
         protected virtual ItemPotionVampirism LoadItemPotionVampirism(ObjectDatabaseBase db)
         {
             var ability = new ItemPotionVampirism(db);
+            ability.TextName = "Vampiric Potion";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -48026,6 +51613,7 @@ namespace War3Api.Object
         protected virtual ManaSteal LoadManaSteal(ObjectDatabaseBase db)
         {
             var ability = new ManaSteal(db);
+            ability.TextName = "Steal";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -48100,6 +51688,7 @@ namespace War3Api.Object
         protected virtual MechanicalCritter LoadMechanicalCritter(ObjectDatabaseBase db)
         {
             var ability = new MechanicalCritter(db);
+            ability.TextName = "Mechanical Critter";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -48158,6 +51747,7 @@ namespace War3Api.Object
         protected virtual ShadowSight LoadShadowSight(ObjectDatabaseBase db)
         {
             var ability = new ShadowSight(db);
+            ability.TextName = "Wand of Shadowsight";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -48212,6 +51802,7 @@ namespace War3Api.Object
         protected virtual Preservation LoadPreservation(ObjectDatabaseBase db)
         {
             var ability = new Preservation(db);
+            ability.TextName = "Staff of Preservation";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -48270,6 +51861,7 @@ namespace War3Api.Object
         protected virtual Sanctuary LoadSanctuary(ObjectDatabaseBase db)
         {
             var ability = new Sanctuary(db);
+            ability.TextName = "Staff of Sanctuary";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -48344,6 +51936,8 @@ namespace War3Api.Object
         protected virtual SpellShield LoadSpellShield(ObjectDatabaseBase db)
         {
             var ability = new SpellShield(db);
+            ability.TextName = "Spell Shield";
+            ability.TextEditorSuffix = " (Amulet)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -48398,6 +51992,8 @@ namespace War3Api.Object
         protected virtual SpellShieldAOE LoadSpellShieldAOE(ObjectDatabaseBase db)
         {
             var ability = new SpellShieldAOE(db);
+            ability.TextName = "Spell Shield";
+            ability.TextEditorSuffix = " (Rune)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -48456,6 +52052,7 @@ namespace War3Api.Object
         protected virtual Retrain LoadRetrain(ObjectDatabaseBase db)
         {
             var ability = new Retrain(db);
+            ability.TextName = "Tome of Retraining";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -48510,6 +52107,7 @@ namespace War3Api.Object
         protected virtual StaffOTeleportation LoadStaffOTeleportation(ObjectDatabaseBase db)
         {
             var ability = new StaffOTeleportation(db);
+            ability.TextName = "Staff of Teleportation";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -48576,6 +52174,7 @@ namespace War3Api.Object
         protected virtual SpellBook LoadSpellBook(ObjectDatabaseBase db)
         {
             var ability = new SpellBook(db);
+            ability.TextName = "Spell Book";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -48650,6 +52249,7 @@ namespace War3Api.Object
         protected virtual RaiseDeadItem LoadRaiseDeadItem(ObjectDatabaseBase db)
         {
             var ability = new RaiseDeadItem(db);
+            ability.TextName = "Raise Dead (Item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -48724,6 +52324,7 @@ namespace War3Api.Object
         protected virtual DustOfAppearance LoadDustOfAppearance(ObjectDatabaseBase db)
         {
             var ability = new DustOfAppearance(db);
+            ability.TextName = "Dust of Appearance";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -48782,6 +52383,7 @@ namespace War3Api.Object
         protected virtual DivineShieldItem LoadDivineShieldItem(ObjectDatabaseBase db)
         {
             var ability = new DivineShieldItem(db);
+            ability.TextName = "Item Divine Shield";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -48836,6 +52438,7 @@ namespace War3Api.Object
         protected virtual SilenceItem LoadSilenceItem(ObjectDatabaseBase db)
         {
             var ability = new SilenceItem(db);
+            ability.TextName = "Item Silence";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -48906,6 +52509,8 @@ namespace War3Api.Object
         protected virtual PurgeOrb LoadPurgeOrb(ObjectDatabaseBase db)
         {
             var ability = new PurgeOrb(db);
+            ability.TextName = "Item Purge";
+            ability.TextEditorSuffix = " (2)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -48984,6 +52589,8 @@ namespace War3Api.Object
         protected virtual PurgeTotemSP LoadPurgeTotemSP(ObjectDatabaseBase db)
         {
             var ability = new PurgeTotemSP(db);
+            ability.TextName = "Item Purge";
+            ability.TextEditorSuffix = " (3)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -49038,9 +52645,13 @@ namespace War3Api.Object
         protected virtual CloudOfFogItem LoadCloudOfFogItem(ObjectDatabaseBase db)
         {
             var ability = new CloudOfFogItem(db);
+            ability.TextName = "Cloud of Fog";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Cloud of Fog";
+            ability.TextTooltipNormalExtended[1] = "Creates a small cloud that stops buildings with ranged attacks that are within it from attacking. |nLasts <Aclf,Dur1> seconds.";
+            ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -49108,6 +52719,7 @@ namespace War3Api.Object
         protected virtual RuneOfLesserResurrection LoadRuneOfLesserResurrection(ObjectDatabaseBase db)
         {
             var ability = new RuneOfLesserResurrection(db);
+            ability.TextName = "Lesser Rune Resurrection";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -49166,6 +52778,7 @@ namespace War3Api.Object
         protected virtual RuneOfGreaterResurrection LoadRuneOfGreaterResurrection(ObjectDatabaseBase db)
         {
             var ability = new RuneOfGreaterResurrection(db);
+            ability.TextName = "Greater Rune Resurrection";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -49224,6 +52837,7 @@ namespace War3Api.Object
         protected virtual RuneOfRebirth LoadRuneOfRebirth(ObjectDatabaseBase db)
         {
             var ability = new RuneOfRebirth(db);
+            ability.TextName = "Rebirth";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -49278,6 +52892,8 @@ namespace War3Api.Object
         protected virtual RuneOfSpiritLink LoadRuneOfSpiritLink(ObjectDatabaseBase db)
         {
             var ability = new RuneOfSpiritLink(db);
+            ability.TextName = "Spirit Link";
+            ability.TextEditorSuffix = " (Area)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -49336,9 +52952,16 @@ namespace War3Api.Object
         protected virtual DarkSummoning LoadDarkSummoning(ObjectDatabaseBase db)
         {
             var ability = new DarkSummoning(db);
+            ability.TextName = "Dark Summoning";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
+            ability.TextTooltipNormal[1] = "Dark Summoning";
+            ability.TextTooltipNormalExtended[1] = "Summons <AUds,DataA1> friendly units from a target area to the caster.";
+            ability.TextTooltipLearn = "Learn Dark Summoning";
+            ability.TextTooltipLearnExtended = "";
+            ability.TextHotkeyLearnRaw = "D";
+            ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 0;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -49402,6 +53025,7 @@ namespace War3Api.Object
         protected virtual RuneOfTheWatcher LoadRuneOfTheWatcher(ObjectDatabaseBase db)
         {
             var ability = new RuneOfTheWatcher(db);
+            ability.TextName = "Rune of the Watcher";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -49456,6 +53080,8 @@ namespace War3Api.Object
         protected virtual UnholyFrenzyItem LoadUnholyFrenzyItem(ObjectDatabaseBase db)
         {
             var ability = new UnholyFrenzyItem(db);
+            ability.TextName = "Unholy Frenzy";
+            ability.TextEditorSuffix = " (item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -49510,6 +53136,8 @@ namespace War3Api.Object
         protected virtual DefenseBonus10 LoadDefenseBonus10(ObjectDatabaseBase db)
         {
             var ability = new DefenseBonus10(db);
+            ability.TextName = "Item Armor Bonus";
+            ability.TextEditorSuffix = "(+10)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -49564,6 +53192,8 @@ namespace War3Api.Object
         protected virtual ControlMagicItem LoadControlMagicItem(ObjectDatabaseBase db)
         {
             var ability = new ControlMagicItem(db);
+            ability.TextName = "Control Magic";
+            ability.TextEditorSuffix = " (item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -49618,6 +53248,7 @@ namespace War3Api.Object
         protected virtual MaxManaBonusLeastest LoadMaxManaBonusLeastest(ObjectDatabaseBase db)
         {
             var ability = new MaxManaBonusLeastest(db);
+            ability.TextName = "Item Mana Bonus (100)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -49672,6 +53303,8 @@ namespace War3Api.Object
         protected virtual FingerOfDeathItem LoadFingerOfDeathItem(ObjectDatabaseBase db)
         {
             var ability = new FingerOfDeathItem(db);
+            ability.TextName = "Finger of Death";
+            ability.TextEditorSuffix = " (item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -49726,6 +53359,8 @@ namespace War3Api.Object
         protected virtual DeathPactItem LoadDeathPactItem(ObjectDatabaseBase db)
         {
             var ability = new DeathPactItem(db);
+            ability.TextName = "Death Pact";
+            ability.TextEditorSuffix = " (item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -49780,6 +53415,7 @@ namespace War3Api.Object
         protected virtual MaxManaBonusLeastestReally LoadMaxManaBonusLeastestReally(ObjectDatabaseBase db)
         {
             var ability = new MaxManaBonusLeastestReally(db);
+            ability.TextName = "Item Mana Bonus (75)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -49834,6 +53470,8 @@ namespace War3Api.Object
         protected virtual PermanentHitPointBonusSmall LoadPermanentHitPointBonusSmall(ObjectDatabaseBase db)
         {
             var ability = new PermanentHitPointBonusSmall(db);
+            ability.TextName = "Item Permanent Life Gain";
+            ability.TextEditorSuffix = "(lesser)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -49888,6 +53526,8 @@ namespace War3Api.Object
         protected virtual DefendItem LoadDefendItem(ObjectDatabaseBase db)
         {
             var ability = new DefendItem(db);
+            ability.TextName = "Defend, Passive Defense";
+            ability.TextEditorSuffix = " (item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -49974,6 +53614,8 @@ namespace War3Api.Object
         protected virtual DefenseBonus8 LoadDefenseBonus8(ObjectDatabaseBase db)
         {
             var ability = new DefenseBonus8(db);
+            ability.TextName = "Item Armor Bonus";
+            ability.TextEditorSuffix = "(+8)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -50028,6 +53670,8 @@ namespace War3Api.Object
         protected virtual DefenseBonus7 LoadDefenseBonus7(ObjectDatabaseBase db)
         {
             var ability = new DefenseBonus7(db);
+            ability.TextName = "Item Armor Bonus";
+            ability.TextEditorSuffix = "(+7)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -50082,6 +53726,8 @@ namespace War3Api.Object
         protected virtual MaxLifeBonusLeastest LoadMaxLifeBonusLeastest(ObjectDatabaseBase db)
         {
             var ability = new MaxLifeBonusLeastest(db);
+            ability.TextName = "Item Life Bonus";
+            ability.TextEditorSuffix = "(least)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -50136,6 +53782,8 @@ namespace War3Api.Object
         protected virtual ItemHealLeastest LoadItemHealLeastest(ObjectDatabaseBase db)
         {
             var ability = new ItemHealLeastest(db);
+            ability.TextName = "Item Healing";
+            ability.TextEditorSuffix = "(least)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -50190,6 +53838,8 @@ namespace War3Api.Object
         protected virtual AgilityBonus10 LoadAgilityBonus10(ObjectDatabaseBase db)
         {
             var ability = new AgilityBonus10(db);
+            ability.TextName = "Item Hero Stat Bonus";
+            ability.TextEditorSuffix = "(+10 Agility)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -50244,6 +53894,8 @@ namespace War3Api.Object
         protected virtual ResurrectionItem LoadResurrectionItem(ObjectDatabaseBase db)
         {
             var ability = new ResurrectionItem(db);
+            ability.TextName = "Item Resurrection";
+            ability.TextEditorSuffix = "(cooldown)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -50298,6 +53950,8 @@ namespace War3Api.Object
         protected virtual BashItem LoadBashItem(ObjectDatabaseBase db)
         {
             var ability = new BashItem(db);
+            ability.TextName = "Bash";
+            ability.TextEditorSuffix = " (item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -50356,6 +54010,8 @@ namespace War3Api.Object
         protected virtual AttackBonus20 LoadAttackBonus20(ObjectDatabaseBase db)
         {
             var ability = new AttackBonus20(db);
+            ability.TextName = "Item Damage Bonus";
+            ability.TextEditorSuffix = "(+20)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -50410,6 +54066,8 @@ namespace War3Api.Object
         protected virtual WateryMinionItem LoadWateryMinionItem(ObjectDatabaseBase db)
         {
             var ability = new WateryMinionItem(db);
+            ability.TextName = "Watery Minion";
+            ability.TextEditorSuffix = " (item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -50464,6 +54122,8 @@ namespace War3Api.Object
         protected virtual SummonHeadhunterItem LoadSummonHeadhunterItem(ObjectDatabaseBase db)
         {
             var ability = new SummonHeadhunterItem(db);
+            ability.TextName = "Summon Headhunter";
+            ability.TextEditorSuffix = " (item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -50526,6 +54186,7 @@ namespace War3Api.Object
         protected virtual _200ManaBonus Load_200ManaBonus(ObjectDatabaseBase db)
         {
             var ability = new _200ManaBonus(db);
+            ability.TextName = "Item Mana Bonus (200)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -50580,6 +54241,8 @@ namespace War3Api.Object
         protected virtual AuraRegenerationItem LoadAuraRegenerationItem(ObjectDatabaseBase db)
         {
             var ability = new AuraRegenerationItem(db);
+            ability.TextName = "Regeneration Aura";
+            ability.TextEditorSuffix = " (item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -50634,6 +54297,8 @@ namespace War3Api.Object
         protected virtual HolyLightItem LoadHolyLightItem(ObjectDatabaseBase db)
         {
             var ability = new HolyLightItem(db);
+            ability.TextName = "Holy Light";
+            ability.TextEditorSuffix = " (item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -50688,6 +54353,8 @@ namespace War3Api.Object
         protected virtual SlowPoisonItem LoadSlowPoisonItem(ObjectDatabaseBase db)
         {
             var ability = new SlowPoisonItem(db);
+            ability.TextName = "Slow Poison";
+            ability.TextEditorSuffix = " (item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -50742,6 +54409,7 @@ namespace War3Api.Object
         protected virtual PenguinSqueek LoadPenguinSqueek(ObjectDatabaseBase db)
         {
             var ability = new PenguinSqueek(db);
+            ability.TextName = "Penguin Squeek";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -50796,6 +54464,7 @@ namespace War3Api.Object
         protected virtual SearingBladeFireMelee LoadSearingBladeFireMelee(ObjectDatabaseBase db)
         {
             var ability = new SearingBladeFireMelee(db);
+            ability.TextName = "Melee Fire Damage Bonus";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -50850,6 +54519,7 @@ namespace War3Api.Object
         protected virtual FrostguardFrostMelee LoadFrostguardFrostMelee(ObjectDatabaseBase db)
         {
             var ability = new FrostguardFrostMelee(db);
+            ability.TextName = "Melee Cold Damage Bonus";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -50904,6 +54574,7 @@ namespace War3Api.Object
         protected virtual ShamanClawsLightningMelee LoadShamanClawsLightningMelee(ObjectDatabaseBase db)
         {
             var ability = new ShamanClawsLightningMelee(db);
+            ability.TextName = "Melee Lightning Damage Bonus";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -50958,6 +54629,8 @@ namespace War3Api.Object
         protected virtual CriticalStrikeItem LoadCriticalStrikeItem(ObjectDatabaseBase db)
         {
             var ability = new CriticalStrikeItem(db);
+            ability.TextName = "Critical Strike";
+            ability.TextEditorSuffix = " (item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -51012,6 +54685,8 @@ namespace War3Api.Object
         protected virtual ChainLightningItem LoadChainLightningItem(ObjectDatabaseBase db)
         {
             var ability = new ChainLightningItem(db);
+            ability.TextName = "Chain Lightning";
+            ability.TextEditorSuffix = " (item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -51066,6 +54741,8 @@ namespace War3Api.Object
         protected virtual All3 LoadAll3(ObjectDatabaseBase db)
         {
             var ability = new All3(db);
+            ability.TextName = "Item Hero Stat Bonus";
+            ability.TextEditorSuffix = "(+3 All Stats)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -51136,6 +54813,8 @@ namespace War3Api.Object
         protected virtual All4 LoadAll4(ObjectDatabaseBase db)
         {
             var ability = new All4(db);
+            ability.TextName = "Item Hero Stat Bonus";
+            ability.TextEditorSuffix = "(+4 All Stats)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -51206,6 +54885,8 @@ namespace War3Api.Object
         protected virtual BeserkItem LoadBeserkItem(ObjectDatabaseBase db)
         {
             var ability = new BeserkItem(db);
+            ability.TextName = "Berserk";
+            ability.TextEditorSuffix = " (item)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -51260,6 +54941,8 @@ namespace War3Api.Object
         protected virtual ItemRitualDaggerInstant LoadItemRitualDaggerInstant(ObjectDatabaseBase db)
         {
             var ability = new ItemRitualDaggerInstant(db);
+            ability.TextName = "Ritual Dagger";
+            ability.TextEditorSuffix = " (Instant Heal)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -51334,6 +55017,8 @@ namespace War3Api.Object
         protected virtual ItemRitualDaggerRegen LoadItemRitualDaggerRegen(ObjectDatabaseBase db)
         {
             var ability = new ItemRitualDaggerRegen(db);
+            ability.TextName = "Ritual Dagger";
+            ability.TextEditorSuffix = " (Regenerate)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -51408,6 +55093,7 @@ namespace War3Api.Object
         protected virtual OrbOfFireV2 LoadOrbOfFireV2(ObjectDatabaseBase db)
         {
             var ability = new OrbOfFireV2(db);
+            ability.TextName = "Item Attack Heal Reduction Bonus";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -51466,9 +55152,12 @@ namespace War3Api.Object
         protected virtual SunderingBlades LoadSunderingBlades(ObjectDatabaseBase db)
         {
             var ability = new SunderingBlades(db);
+            ability.TextName = "Sundering Blades";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Sundering Blades";
+            ability.TextTooltipNormalExtended[1] = "Increases damage dealt to enemy targets with Medium armor by <Ahsb,DataB1,%>%.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -51586,9 +55275,13 @@ namespace War3Api.Object
         protected virtual PassiveHumanRiflemanPlusRangeRhri LoadPassiveHumanRiflemanPlusRangeRhri(ObjectDatabaseBase db)
         {
             var ability = new PassiveHumanRiflemanPlusRangeRhri(db);
+            ability.TextName = "Long Rifles";
+            ability.TextEditorSuffix = " (Icon)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Long Rifles";
+            ability.TextTooltipNormalExtended[1] = "Increases attack range.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -51640,9 +55333,13 @@ namespace War3Api.Object
         protected virtual PassiveHumanAnimalBreedingRhan LoadPassiveHumanAnimalBreedingRhan(ObjectDatabaseBase db)
         {
             var ability = new PassiveHumanAnimalBreedingRhan(db);
+            ability.TextName = "Animal War Training";
+            ability.TextEditorSuffix = " (Icon)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Animal War Training";
+            ability.TextTooltipNormalExtended[1] = "Increases the maximum hit points of this unit by <Rhan,base1>.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -51694,9 +55391,13 @@ namespace War3Api.Object
         protected virtual PassivePhoenixFireAndEgg LoadPassivePhoenixFireAndEgg(ObjectDatabaseBase db)
         {
             var ability = new PassivePhoenixFireAndEgg(db);
+            ability.TextName = "Phoenix";
+            ability.TextEditorSuffix = " (Icon)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Phoenix";
+            ability.TextTooltipNormalExtended[1] = "The Phoenix spreads enchanted flames to nearby enemies, dealing <Apxf,DataA1> damage on impact and burning them for <Apxf,DataB1> per second over <Apxf,Dur1> seconds. Its flames burn with such intensity that the Phoenix damages itself as well. When it dies, it creates an egg that will hatch into a Phoenix.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -51748,9 +55449,17 @@ namespace War3Api.Object
         protected virtual PassiveHumanLumberHarvestingRhlh LoadPassiveHumanLumberHarvestingRhlh(ObjectDatabaseBase db)
         {
             var ability = new PassiveHumanLumberHarvestingRhlh(db);
+            ability.TextName = "Improved Lumber Harvesting,Improved Lumber Harvesting,Advanced Lumber Harvesting";
+            ability.TextEditorSuffix = " (Icon)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "human";
+            ability.TextTooltipNormal[1] = "Improved Lumber Harvesting";
+            ability.TextTooltipNormal[2] = "Improved Lumber Harvesting";
+            ability.TextTooltipNormal[3] = "Advanced Lumber Harvesting";
+            ability.TextTooltipNormalExtended[1] = "Increases the amount of lumber that Peasants can carry by <Rhlh,mod1>.";
+            ability.TextTooltipNormalExtended[2] = "Increases the amount of lumber that Peasants can carry by <Rhlh,mod1>.";
+            ability.TextTooltipNormalExtended[3] = "Further increases the amount of lumber that Peasants can carry by <Rhlh,mod1>.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 2;
@@ -51802,9 +55511,13 @@ namespace War3Api.Object
         protected virtual PassiveOrcGruntBerserkRobs LoadPassiveOrcGruntBerserkRobs(ObjectDatabaseBase db)
         {
             var ability = new PassiveOrcGruntBerserkRobs(db);
+            ability.TextName = "Brute Strength";
+            ability.TextEditorSuffix = " (Icon)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Brute Strength";
+            ability.TextTooltipNormalExtended[1] = "Improves the fighting capabilities of Grunts with a <Robs,base1> hit point increase, and <Robs,base2> bonus attack damage.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -51856,9 +55569,13 @@ namespace War3Api.Object
         protected virtual PassiveOrcBerserkersRobk LoadPassiveOrcBerserkersRobk(ObjectDatabaseBase db)
         {
             var ability = new PassiveOrcBerserkersRobk(db);
+            ability.TextName = "Berserker Upgrade";
+            ability.TextEditorSuffix = " (Icon)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Berserker Upgrade";
+            ability.TextTooltipNormalExtended[1] = "Transforms Headhunters into Berserkers, giving them increased hit points and the Berserk ability.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -51910,9 +55627,13 @@ namespace War3Api.Object
         protected virtual PassiveOrcReinforcedDefenseRorb LoadPassiveOrcReinforcedDefenseRorb(ObjectDatabaseBase db)
         {
             var ability = new PassiveOrcReinforcedDefenseRorb(db);
+            ability.TextName = "Reinforced Defenses";
+            ability.TextEditorSuffix = " (Icon)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Reinforced Defenses";
+            ability.TextTooltipNormalExtended[1] = "Upgrades Burrows and Watch Towers so that they have Fortified armor.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -51964,9 +55685,17 @@ namespace War3Api.Object
         protected virtual PassiveOrcSpikedBarricadeRosp LoadPassiveOrcSpikedBarricadeRosp(ObjectDatabaseBase db)
         {
             var ability = new PassiveOrcSpikedBarricadeRosp(db);
+            ability.TextName = "Spiked Barricades,Spiked Barricades,Improved Spiked Barricades";
+            ability.TextEditorSuffix = " (Icon)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Spiked Barricades";
+            ability.TextTooltipNormal[2] = "Spiked Barricades";
+            ability.TextTooltipNormal[3] = "Improved Spiked Barricades";
+            ability.TextTooltipNormalExtended[1] = "Surrounds Orc buildings with spikes that damage enemy melee attackers. Deals <Rosp,base1> damage per attack plus an additional <Rosp,base2,%>% of the attacker's damage.";
+            ability.TextTooltipNormalExtended[2] = "Surrounds Orc buildings with spikes that damage enemy melee attackers. Deals <Rosp,base1> damage per attack plus an additional <Rosp,base2,%>% of the attacker's damage.";
+            ability.TextTooltipNormalExtended[3] = "Surrounds Orc buildings with spikes that damage enemy melee attackers. Deals <Rosp,base1> damage per attack plus an additional <Rosp,base2,%>% of the attacker's damage.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 2;
@@ -52072,9 +55801,13 @@ namespace War3Api.Object
         protected virtual PassiveOrcTrollRegenerationRotr LoadPassiveOrcTrollRegenerationRotr(ObjectDatabaseBase db)
         {
             var ability = new PassiveOrcTrollRegenerationRotr(db);
+            ability.TextName = "Troll Regeneration";
+            ability.TextEditorSuffix = " (Icon)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "orc";
+            ability.TextTooltipNormal[1] = "Troll Regeneration";
+            ability.TextTooltipNormalExtended[1] = "Increases the hit point regeneration rate of Headhunters, Witch Doctors and Batriders.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -52126,9 +55859,13 @@ namespace War3Api.Object
         protected virtual PassiveUndeadGhoulFrenzyRugf LoadPassiveUndeadGhoulFrenzyRugf(ObjectDatabaseBase db)
         {
             var ability = new PassiveUndeadGhoulFrenzyRugf(db);
+            ability.TextName = "Ghoul Frenzy";
+            ability.TextEditorSuffix = " (Icon)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Ghoul Frenzy";
+            ability.TextTooltipNormalExtended[1] = "Increases Ghoul movement speed, and attack rate by <Rugf,base1,%>%.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -52180,9 +55917,13 @@ namespace War3Api.Object
         protected virtual PassiveGhostIconOnlyUndeadAgho LoadPassiveGhostIconOnlyUndeadAgho(ObjectDatabaseBase db)
         {
             var ability = new PassiveGhostIconOnlyUndeadAgho(db);
+            ability.TextName = "Shade";
+            ability.TextEditorSuffix = " (Icon)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Shade";
+            ability.TextTooltipNormalExtended[1] = "This unit is permanently invisible.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -52234,9 +55975,13 @@ namespace War3Api.Object
         protected virtual PassiveUndeadSkeletalMasteryRusm LoadPassiveUndeadSkeletalMasteryRusm(ObjectDatabaseBase db)
         {
             var ability = new PassiveUndeadSkeletalMasteryRusm(db);
+            ability.TextName = "Skeletal Mastery";
+            ability.TextEditorSuffix = " (Icon)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Skeletal Mastery";
+            ability.TextTooltipNormalExtended[1] = "Causes one of the two skeletons created by Raise Dead to be a Skeletal Mage and increases the duration of raised Skeleton Warriors and Skeletal Mages by <Rusl,base1> seconds.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -52288,9 +56033,13 @@ namespace War3Api.Object
         protected virtual PassiveNightelfImprovedBowsReib LoadPassiveNightelfImprovedBowsReib(ObjectDatabaseBase db)
         {
             var ability = new PassiveNightelfImprovedBowsReib(db);
+            ability.TextName = "Improved Bows";
+            ability.TextEditorSuffix = " (Icon)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Improved Bows";
+            ability.TextTooltipNormalExtended[1] = "Increases attack range.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -52342,9 +56091,13 @@ namespace War3Api.Object
         protected virtual PassiveNightelfMarksmanshipRemk LoadPassiveNightelfMarksmanshipRemk(ObjectDatabaseBase db)
         {
             var ability = new PassiveNightelfMarksmanshipRemk(db);
+            ability.TextName = "Marksmanship";
+            ability.TextEditorSuffix = " (Icon)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Marksmanship";
+            ability.TextTooltipNormalExtended[1] = "Increases damage of Archers and Hippogryph Riders by <Remk,base1>.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -52396,9 +56149,13 @@ namespace War3Api.Object
         protected virtual PassiveNightelfWellSpringRews LoadPassiveNightelfWellSpringRews(ObjectDatabaseBase db)
         {
             var ability = new PassiveNightelfWellSpringRews(db);
+            ability.TextName = "Well Spring";
+            ability.TextEditorSuffix = " (Icon)";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "nightelf";
+            ability.TextTooltipNormal[1] = "Well Spring";
+            ability.TextTooltipNormalExtended[1] = "Increases the amount of mana that can be stored in Moon Wells by <Rews,base1>, and their rate of mana regeneration by <Rews,base2,%>%.";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
@@ -52520,6 +56277,7 @@ namespace War3Api.Object
         protected virtual FigurineFurbolgTracker LoadFigurineFurbolgTracker(ObjectDatabaseBase db)
         {
             var ability = new FigurineFurbolgTracker(db);
+            ability.TextName = "Item Furbolg Tracker Summon";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -52660,6 +56418,7 @@ namespace War3Api.Object
         protected virtual ItemTransmute LoadItemTransmute(ObjectDatabaseBase db)
         {
             var ability = new ItemTransmute(db);
+            ability.TextName = "Item Transmute";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -52730,9 +56489,16 @@ namespace War3Api.Object
         protected virtual AttackTargetPriority LoadAttackTargetPriority(ObjectDatabaseBase db)
         {
             var ability = new AttackTargetPriority(db);
+            ability.TextName = "Prioritize";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "undead";
+            ability.TextTooltipNormal[1] = "Prioritize";
+            ability.TextTooltipTurnOff[1] = "|cffc3dbff|cffc3dbffClick to Deactivate Prioritize.|r|r";
+            ability.TextTooltipNormalExtended[1] = "Engages enemy flying units first unless ordered otherwise.";
+            ability.TextTooltipTurnOffExtended[1] = "Returns to default attack behavior.";
+            ability.TextHotkeyNormalRaw = "R";
+            ability.TextHotkeyTurnOffRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
             ability.StatsLevels = 1;
