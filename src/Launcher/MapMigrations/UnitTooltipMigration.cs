@@ -12,8 +12,8 @@ namespace Launcher.MapMigrations
   public sealed class UnitTooltipMigration : IMapMigration
   {
     private const string LineSeperator = "|n";
-    private const string AbilitiesKnown = "|cfff5962dAbilities:|r";
-    private const string HeroAbilitiesKnown = "|cfff5962dHero Abilities:|r";
+    private const string AbilitiesKnown = "|cfff5962dAbilities:|r ";
+    private const string HeroAbilitiesKnown = "|cfff5962dHero Abilities:|r ";
     
     /// <inheritdoc />
     public void Migrate(Map map, ObjectDatabase objectDatabase)
@@ -52,15 +52,15 @@ namespace Launcher.MapMigrations
 
     private static void AppendAbilities(StringBuilder tooltipBuilder, Unit unit)
     {
-      var innateAbilities = unit.AbilitiesNormal.OrderBy(GetAbilityPriority).Select(x => x.TextName).ToArray();
+      var innateAbilities = unit.AbilitiesNormal.OrderBy(GetAbilityPriority).Select(GetAbilityName).ToArray();
       if (innateAbilities.Any())
       {
         tooltipBuilder.Append($"{LineSeperator}{AbilitiesKnown}{string.Join(", ", innateAbilities)}");
       }
-      
+       
       if (unit.IsAbilitiesHeroModified)
       {
-        var heroAbilities = unit.AbilitiesHero.OrderBy(GetAbilityPriority).Select(x => x.TextName).ToArray();
+        var heroAbilities = unit.AbilitiesHero.OrderBy(GetAbilityPriority).Select(GetAbilityName).ToArray();
         if (heroAbilities.Any())
         {
           tooltipBuilder.Append($"{LineSeperator}{HeroAbilitiesKnown}{string.Join(", ", heroAbilities)}");
@@ -82,8 +82,22 @@ namespace Launcher.MapMigrations
     }
 
     /// <summary>
+    /// Gets a name that can be used to describe an ability. Usually just the name field.
+    /// </summary>
+    private static string GetAbilityName(Ability ability)
+    {
+      try
+      {
+        return ability.TextName;
+      }
+      catch
+      {
+        return "Not found";
+      }
+    }
+    
+    /// <summary>
     /// Determines the order that abilities appear in tooltips.
-    /// todo: doesn't work at the moment because AbilityLoader doesn't provide button position values.
     /// </summary>
     private static int GetAbilityPriority(Ability ability)
     {
