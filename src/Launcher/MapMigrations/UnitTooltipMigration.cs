@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using War3Api.Object;
@@ -13,6 +14,7 @@ namespace Launcher.MapMigrations
   {
     private const string LineSeperator = "|n";
     private const string AbilitiesKnown = "|cfff5962dAbilities:|r ";
+    private const string AbilitiesLearnable = "|cfff5962dLearnable abilities:|r ";
     private const string HeroAbilitiesKnown = "|cfff5962dHero Abilities:|r ";
 
     /// <inheritdoc />
@@ -43,28 +45,42 @@ namespace Launcher.MapMigrations
       }
 
       AppendFlavour(tooltipBuilder, unit);
-      AppendAbilities(tooltipBuilder, unit);
+      AppendInnateAbilities(tooltipBuilder, unit);
+      AppendLearnedAbilities(tooltipBuilder, unit);
+      AppendHeroAbilities(tooltipBuilder, unit);
 
       var extendedTooltip = tooltipBuilder.ToString();
       Console.WriteLine(extendedTooltip);
       unit.TextTooltipExtended = extendedTooltip;
     }
 
-    private static void AppendAbilities(StringBuilder tooltipBuilder, Unit unit)
+    private static void AppendInnateAbilities(StringBuilder tooltipBuilder, Unit unit)
     {
-      var innateAbilities = unit.AbilitiesNormal.OrderBy(GetAbilityPriority).Select(GetAbilityName).ToArray();
+      if (!unit.IsAbilitiesNormalModified) return;
+      var innateAbilities = unit.AbilitiesNormal.Where(x => !GetTechtreeRequirements(x).Any()).OrderBy(GetAbilityPriority).Select(GetAbilityName).ToArray();
       if (innateAbilities.Any())
       {
         tooltipBuilder.Append($"{LineSeperator}{AbilitiesKnown}{string.Join(", ", innateAbilities)}");
       }
-
-      if (unit.IsAbilitiesHeroModified)
+    }
+    
+    private static void AppendLearnedAbilities(StringBuilder tooltipBuilder, Unit unit)
+    {
+      if (!unit.IsAbilitiesNormalModified) return;
+      var learnableAbilities = unit.AbilitiesNormal.Where(x => GetTechtreeRequirements(x).Any()).OrderBy(GetAbilityPriority).Select(GetAbilityName).ToArray();
+      if (learnableAbilities.Any())
       {
-        var heroAbilities = unit.AbilitiesHero.OrderBy(GetAbilityPriority).Select(GetAbilityName).ToArray();
-        if (heroAbilities.Any())
-        {
-          tooltipBuilder.Append($"{LineSeperator}{HeroAbilitiesKnown}{string.Join(", ", heroAbilities)}");
-        }
+        tooltipBuilder.Append($"{LineSeperator}{AbilitiesLearnable}{string.Join(", ", learnableAbilities)}");
+      }
+    }
+
+    private static void AppendHeroAbilities(StringBuilder tooltipBuilder, Unit unit)
+    {
+      if (!unit.IsAbilitiesHeroModified) return;
+      var heroAbilities = unit.AbilitiesHero.OrderBy(GetAbilityPriority).Select(GetAbilityName).ToArray();
+      if (heroAbilities.Any())
+      {
+        tooltipBuilder.Append($"{LineSeperator}{HeroAbilitiesKnown}{string.Join(", ", heroAbilities)}");
       }
     }
 
@@ -74,6 +90,18 @@ namespace Launcher.MapMigrations
       stringBuilder.Append(split[0]);
     }
 
+    private static IEnumerable<Tech> GetTechtreeRequirements(Ability unit)
+    {
+      try
+      {
+        return unit.TechtreeRequirements;
+      }
+      catch
+      {
+        return Array.Empty<Tech>();
+      }
+    }
+    
     private static string GetExtendedTooltip(Unit unit)
     {
       try
