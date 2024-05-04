@@ -10343,7 +10343,8 @@ namespace War3Api.Object
             ability.TextTooltipNormal[3] = "Cold Arrows - [|cffffcc00Level 3|r]";
             ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
             ability.TextTooltipNormalExtended[1] = "Adds a cold effect to each attack, slowing a target enemy unit's attacks by <AHca,DataB1,%>% and movement by <AHca,DataC1,%>% for <AHca,Dur1> seconds.";
-            ability.TextTooltipNormalExtended[2] = "Adds a cold effect to each attack, slowing a target enemy unit's attacks by <AHca,DataB2,%>% and movement by <AHca,DataC2,%>% for <AHca,Dur2> seconds." "Adds a cold effect to each attack, slowing a target enemy unit's attacks by <AHca,DataB3,%>% and movement by <AHca,DataC3,%>% for <AHca,Dur3> seconds." ;
+            ability.TextTooltipNormalExtended[2] = "Adds a cold effect to each attack, slowing a target enemy unit's attacks by <AHca,DataB2,%>% and movement by <AHca,DataC2,%>% for <AHca,Dur2> seconds.";
+            ability.TextTooltipNormalExtended[3] = "Adds a cold effect to each attack, slowing a target enemy unit's attacks by <AHca,DataB3,%>% and movement by <AHca,DataC3,%>% for <AHca,Dur3> seconds.";
             ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
             ability.TextTooltipLearn = "Learn Cold Arrows - [|cffffcc00Level %d|r]";
             ability.TextTooltipLearnExtended = "";
