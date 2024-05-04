@@ -9,17 +9,8 @@ namespace Launcher.Extensions
   {
     public static bool HasVisibleIcon(this Ability ability)
     {
-      if (ability is InventoryPackMule or Inventory2SlotUnitHuman or Inventory2SlotUnitOrc or Inventory2SlotUnitUndead
-          or Inventory2SlotUnitNightElf)
-        return false;
-
-      if (ability is Invulnerable)
-        return false;
-
-      if (ability is DefenseBonus1)
-        return false;
-      
-      return true;
+      return ability is not (InventoryPackMule or Inventory2SlotUnitHuman or Inventory2SlotUnitOrc or Inventory2SlotUnitUndead
+        or Inventory2SlotUnitNightElf or Invulnerable or DefenseBonus1 or Ultravision or SellItem or AlliedBuilding or PurchaseItem);
     }
     
     public static IEnumerable<Tech> GetTechtreeRequirementsSafe(this Ability unit)
