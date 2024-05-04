@@ -52,7 +52,7 @@ namespace Launcher.MapMigrations
 
     private static void AppendAbilities(StringBuilder tooltipBuilder, Unit unit)
     {
-      var innateAbilities = unit.AbilitiesNormal.Select(x => x.TextName).ToArray();
+      var innateAbilities = unit.AbilitiesNormal.OrderBy(GetAbilityPriority).Select(x => x.TextName).ToArray();
       if (innateAbilities.Any())
       {
         tooltipBuilder.Append($"{LineSeperator}{AbilitiesKnown}{string.Join(", ", innateAbilities)}");
@@ -60,7 +60,7 @@ namespace Launcher.MapMigrations
       
       if (unit.IsAbilitiesHeroModified)
       {
-        var heroAbilities = unit.AbilitiesHero.Select(x => x.TextName).ToArray();
+        var heroAbilities = unit.AbilitiesHero.OrderBy(GetAbilityPriority).Select(x => x.TextName).ToArray();
         if (heroAbilities.Any())
         {
           tooltipBuilder.Append($"{LineSeperator}{HeroAbilitiesKnown}{string.Join(", ", heroAbilities)}");
@@ -79,6 +79,16 @@ namespace Launcher.MapMigrations
       {
         Console.WriteLine($"Failed to get {unit} extended tooltip");
       }
+    }
+
+    /// <summary>
+    /// Determines the order that abilities appear in tooltips.
+    /// todo: doesn't work at the moment because AbilityLoader doesn't provide button position values.
+    /// </summary>
+    private static int GetAbilityPriority(Ability ability)
+    {
+      var (x, y) = (ability.ArtButtonPositionNormalX, ability.ArtButtonPositionNormalY);
+      return x - y * 10;
     }
   }
 }
