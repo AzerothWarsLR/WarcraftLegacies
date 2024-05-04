@@ -25,7 +25,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1> freezing ice shard waves; each wave deals <AHbz";
             ability.TextTooltipNormalExtended[3] = "DataB1> damage to units in an area.";
             ability.TextTooltipLearn = "Learn Blizzard - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Calls down waves of freezing ice shards that damage units in a target area. |n|n|cffffcc00Level 1|r - <AHbz,DataA1> waves at <AHbz,DataB1> damage each. |n|cffffcc00Level 2|r - <AHbz,DataA2> waves at <AHbz,DataB2> damage each. |n|cffffcc00Level 3|r - <AHbz,DataA3> waves at <AHbz,DataB3> damage each.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "B";
             ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -114,7 +114,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "Gives additional mana regeneration to nearby friendly units.";
             ability.TextTooltipNormalExtended[3] = "Gives additional mana regeneration to nearby friendly units.";
             ability.TextTooltipLearn = "Learn Brilliance Aura - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Gives additional mana regeneration to nearby friendly units. |n|n|cffffcc00Level 1|r - Grants minor mana regeneration. |n|cffffcc00Level 2|r - Grants moderate mana regeneration. |n|cffffcc00Level 3|r - Grants heavy mana regeneration.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
@@ -184,7 +184,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1> of the player's nearby units";
             ability.TextTooltipNormalExtended[3] = " including the Archmage";
             ability.TextTooltipLearn = "Learn Mass Teleport";
-            ability.TextTooltipLearnExtended = "Teleports <AHmt,DataA1> of the player's nearby units, including the Archmage, to a friendly ground unit or structure.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "T";
             ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -256,7 +256,7 @@ namespace War3Api.Object
             ability.StatsRaceRaw = "human";
             ability.TextTooltipNormal[1] = "Summon Water Elemental - [|cffffcc00Level 1|r]";
             ability.TextTooltipNormal[2] = "Summon Water Elemental - [|cffffcc00Level 2|r]";
-            ability.TextTooltipNormal[3] = "Summon Water Elemental - [|cffffcc00Level 3|r] ";
+            ability.TextTooltipNormal[3] = "Summon Water Elemental - [|cffffcc00Level 3|r]";
             ability.TextTooltipNormalExtended[1] = "Summons a water elemental to attack the Archmage's enemies. Has <hwat";
             ability.TextTooltipNormalExtended[2] = "realHP> hit points and deals <hwat";
             ability.TextTooltipNormalExtended[3] = "mindmg1> - <hwat";
@@ -331,7 +331,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataC1> damage. |nLasts <ANst";
             ability.TextTooltipNormalExtended[3] = "Dur1> seconds.";
             ability.TextTooltipLearn = "Learn Stampede";
-            ability.TextTooltipLearnExtended = "Calls down hordes of rampaging thunder lizards to explode upon the Beastmaster's enemies. Each exploding lizard deals <ANst,DataC1> damage. |nLasts <ANst,Dur1> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "T";
             ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -416,7 +416,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "realHP> hit point bear to attack your enemies. |nLasts <ANsg";
             ability.TextTooltipNormalExtended[3] = "Dur1> seconds.";
             ability.TextTooltipLearn = "Learn Summon Bear - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Summons a powerful bear to attack your enemies. |nLasts <ANsg,Dur1> seconds. |n|n|cffffcc00Level 1|r - <ngz1,realHP> hit points, <ngz1,mindmg1> to <ngz1,maxdmg1> damage. |n|cffffcc00Level 2|r - <ngz2,realHP> hit points, <ngz2,mindmg1> to <ngz2,maxdmg1> damage, has Bash. |n|cffffcc00Level 3|r - <ngz3,realHP> hit points, <ngz3,mindmg1> to <ngz3,maxdmg1> damage, has Bash and Blink.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "B";
             ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -489,7 +489,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "realHP> hit point quilbeast to fling spines at your enemies. |nLasts <ANsq";
             ability.TextTooltipNormalExtended[3] = "Dur1> seconds.";
             ability.TextTooltipLearn = "Learn Summon Quilbeast - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Summons an angry quilbeast to attack your enemies. |nLasts <ANsq,Dur1> seconds. |n|n|cffffcc00Level 1|r - <nqb1,realHP> hit points, <nqb1,mindmg1> to <nqb1,maxdmg1> damage. |n|cffffcc00Level 2|r - <nqb2,realHP> hit points, <nqb2,mindmg1> to <nqb2,maxdmg1> damage, has Frenzy. |n|cffffcc00Level 3|r - <nqb3,realHP> hit points, <nqb3,mindmg1> to <nqb3,maxdmg1> area effect damage, has Frenzy.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "Q";
             ability.TextHotkeyNormalRaw = "Q";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -562,7 +562,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "realHP> hit point hawk to spy on your enemies. Has the True Sight ability. |nLasts <ANsw";
             ability.TextTooltipNormalExtended[3] = "Dur1> seconds.";
             ability.TextTooltipLearn = "Learn Summon Hawk - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Summons a proud hawk to spy on your enemies. |nLasts <ANsw,Dur1> seconds. |n|n|cffffcc00Level 1|r - <nwe1,realHP> hit points, has True Sight. |n|cffffcc00Level 2|r - <nwe2,realHP> hit points, <nwe2,mindmg1> to <nwe2,maxdmg1> damage, has True Sight. |n|cffffcc00Level 3|r - <nwe3,realHP> hit points, <nwe3,mindmg1> to <nwe3,maxdmg1> damage, has True Sight and Invisibility.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "W";
             ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -633,7 +633,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " rendering him immune to magic and dealing <AOww";
             ability.TextTooltipNormalExtended[3] = "DataA1> damage per second to nearby enemy land units. |nLasts <AOww";
             ability.TextTooltipLearn = "Learn Bladestorm";
-            ability.TextTooltipLearnExtended = "Causes a bladestorm of destructive force around the Blademaster, rendering him immune to magic and dealing <AOww,DataA1> damage per second to nearby enemy land units.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "B";
             ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -706,7 +706,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1>% chance to do <AOcr";
             ability.TextTooltipNormalExtended[3] = "DataB1> times damage on an attack.";
             ability.TextTooltipLearn = "Learn Critical Strike - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Gives a chance to do more damage on an attack. |n|n|cffffcc00Level 1|r - <AOcr,DataA1>% chance, <AOcr,DataB1> times damage. |n|cffffcc00Level 2|r - <AOcr,DataA2>% chance, <AOcr,DataB2> times damage. |n|cffffcc00Level 3|r - <AOcr,DataA3>% chance, <AOcr,DataB3> times damage.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
@@ -794,7 +794,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1> illusion of the Blademaster. Dispels all magic from the Blademaster. |nLasts <AOmi";
             ability.TextTooltipNormalExtended[3] = "Dur1> seconds.";
             ability.TextTooltipLearn = "Learn Mirror Image - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Confuses the enemy by creating illusions of the Blademaster and dispelling all magic from the Blademaster. |n|n|cffffcc00Level 1|r - Creates <AOmi,DataA1> illusion. |n|cffffcc00Level 2|r - Creates <AOmi,DataA2> illusions. |n|cffffcc00Level 3|r - Creates <AOmi,DataA3> illusions.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "R";
             ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -875,7 +875,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " and move <AOwk";
             ability.TextTooltipNormalExtended[3] = "DataB1";
             ability.TextTooltipLearn = "Learn Wind Walk - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Allows the Blademaster to become invisible, and move faster for a set amount of time. When the Blademaster attacks a unit to break invisibility, he will deal bonus damage. |n|n|cffffcc00Level 1|r - <AOwk,DataB1,%>% move, <AOwk,DataC1> bonus damage, <AOwk,Dur1> seconds. |n|cffffcc00Level 2|r - <AOwk,DataB2,%>% move, <AOwk,DataC2> bonus damage, <AOwk,Dur2> seconds. |n|cffffcc00Level 3|r - <AOwk,DataB3,%>% move, <AOwk,DataC3> bonus damage, <AOwk,Dur3> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "W";
             ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -960,7 +960,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1";
             ability.TextTooltipNormalExtended[3] = "%>% for <AHbn";
             ability.TextTooltipLearn = "Learn Banish - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Turns a non-mechanical unit ethereal and slows its movement speed by <AHbn,DataA1,%>% for a short duration. Ethereal creatures cannot attack, but they can cast spells and certain spells cast upon them will have a greater effect. |n|n|cffffcc00Level 1|r - <AHbn,Cost1> mana, lasts <AHbn,Dur1> seconds. |n|cffffcc00Level 2|r - <AHbn,Cost2> mana, lasts <AHbn,Dur2> seconds. |n|cffffcc00Level 3|r - <AHbn,Cost3> mana, lasts <AHbn,Dur3> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "B";
             ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -1033,7 +1033,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " units within the fire continue to take minor damage.";
             ability.TextTooltipNormalExtended[3] = "Conjures a pillar of flame that burns ground units for 80 damage a second for 3 seconds. As the pillar of flame subsides";
             ability.TextTooltipLearn = "Learn Flame Strike - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Conjures a pillar of fire which damages ground units in a target area over time. |n|n|cffffcc00Level 1|r - 45 damage a second for 3 seconds, followed by minor damage for 6 seconds. |n|cffffcc00Level 2|r - 80 damage a second for 3 seconds, followed by light damage for 6 seconds. |n|cffffcc00Level 3|r - 110 damage a second for 3 seconds, followed by moderate damage for 6 seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "F";
             ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -1122,7 +1122,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataB1> mana per second from an enemy";
             ability.TextTooltipNormalExtended[3] = " or transfers <AHdr";
             ability.TextTooltipLearn = "Learn Siphon Mana - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Transfers mana between the Blood Mage and a target. Drains mana from an enemy, or transfers mana to an ally.|n|nSiphon Mana can push the Blood Mage's mana over its maximum value, though excess mana drains off rapidly if not used.|nLasts <AHdr,Dur1> seconds.|n|n|cffffcc00Level 1|r - <AHdr,DataB1> mana drained per second. |n|cffffcc00Level 2|r - <AHdr,DataB2> mana drained per second. |n|cffffcc00Level 3|r - <AHdr,DataB3> mana drained per second." " ;
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "N";
             ability.TextHotkeyNormalRaw = "N";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -1221,7 +1221,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " and Resistant Skin. When a Phoenix dies";
             ability.TextTooltipNormalExtended[3] = " it creates an egg that will hatch into a Phoenix. |n|n|cffffcc00Attacks land and air units.|r";
             ability.TextTooltipLearn = "Learn Phoenix";
-            ability.TextTooltipLearnExtended = "Summons a powerful Phoenix. The Phoenix burns with such intensity that it damages itself and nearby enemy units. Has Spell Immunity, and Resistant Skin. When a Phoenix dies, it creates an egg that will hatch into a Phoenix. |n|n|cffffcc00Attacks land and air units.|r";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "X";
             ability.TextHotkeyNormalRaw = "X";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -1296,7 +1296,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[3] = "realHP> hit points";
             ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.";
             ability.TextTooltipLearn = "Learn Carrion Beetles - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "The Crypt Lord progenerates <AUcb,DataA1> Carrion Beetle from a target corpse to attack the Crypt Lord's enemies. Beetles are permanent, but only <AUcb,DataE1> can be controlled at a time. |n|n|cffffcc00Level 1|r - <ucs1,realHP> hit points, <ucs1,mindmg1> - <ucs1,maxdmg1> damage. |n|cffffcc00Level 2|r - <ucs2,realHP> hit points, <ucs2,mindmg1> - <ucs2,maxdmg1> damage, Beetles can learn Burrow. |n|cffffcc00Level 3|r - <ucs3,realHP> hit points, <ucs3,mindmg1> - <ucs3,maxdmg1> damage, Beetles can learn Burrow.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "C";
             ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -1385,7 +1385,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " shooting spiked tendrils out in a straight line";
             ability.TextTooltipNormalExtended[3] = " dealing <AUim";
             ability.TextTooltipLearn = "Learn Impale - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Slams the ground with the Crypt Lord's massive claws, shooting spiked tendrils out in a straight line, dealing damage and hurling enemy ground units into the air in their wake. |n|n|cffffcc00Level 1|r - <AUim,DataC1> damage, <AUim,Dur1> second stun. |n|cffffcc00Level 2|r - <AUim,DataC2> damage, <AUim,Dur2> second stun. |n|cffffcc00Level 3|r - <AUim,DataC3> damage, <AUim,Dur3> second stun.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "E";
             ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -1472,7 +1472,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " they convert it into a substance that restores hit points to the Crypt Lord when they return. |nLasts <AUls";
             ability.TextTooltipNormalExtended[3] = "HeroDur1> seconds.";
             ability.TextTooltipLearn = "Learn Locust Swarm";
-            ability.TextTooltipLearnExtended = "Creates a swarm of angry locusts that bite and tear at nearby enemy units. As they chew the enemy flesh, they convert it into a substance that restores hit points to the Crypt Lord when they return. |nLasts <AUls,HeroDur1> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "L";
             ability.TextHotkeyNormalRaw = "L";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -1561,7 +1561,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " giving the Crypt Lord <AUts";
             ability.TextTooltipNormalExtended[3] = "DataC1> bonus armor and returning <AUts";
             ability.TextTooltipLearn = "Learn Spiked Carapace - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "The Crypt Lord forms barbed layers of chitinous armor that increases its defense and returns damage to enemy melee attackers.  |n|n|cffffcc00Level 1|r - <AUts,DataA1,%>% damage returned, <AUts,DataC1> bonus armor. |n|cffffcc00Level 2|r -  <AUts,DataA2,%>% damage returned, <AUts,DataC2> bonus armor. |n|cffffcc00Level 3|r -  <AUts,DataA3,%>% damage returned, <AUts,DataC3> bonus armor.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "S";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
@@ -1639,7 +1639,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[3] = "RealHP> hit point skeletons.";
             ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
             ability.TextTooltipLearn = "Learn Black Arrow - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Adds extra damage to attacks. Units killed while under the effect of Black Arrow will turn into skeletons. |n|n|cffffcc00Level 1|r - <ANba,DataA1> bonus damage, <ndr1,RealHP> hit point skeleton. |n|cffffcc00Level 2|r - <ANba,DataA2> bonus damage, <ndr2,RealHP> hit point skeleton. |n|cffffcc00Level 3|r - <ANba,DataA3> bonus damage, <ndr3,RealHP> hit point skeleton.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "B";
             ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -1718,7 +1718,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " or creeps above level <ANch";
             ability.TextTooltipNormalExtended[3] = "DataA1>.";
             ability.TextTooltipLearn = "Learn Charm";
-            ability.TextTooltipLearnExtended = "Takes control of a target enemy unit. |nCharm cannot be used on Heroes, or creeps above level <ANch,DataA1>.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "C";
             ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -1787,7 +1787,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1> hit points per second from it and giving them to the Dark Ranger. |n|nAlso applies the current rank of the Black Arrow debuff to the target. |nLasts <ANdr";
             ability.TextTooltipNormalExtended[3] = "Dur1> seconds.";
             ability.TextTooltipLearn = "Learn Life Drain - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Absorbs the life essence of a target enemy unit by taking hit points from it every second and giving them to the Dark Ranger. |n|nLife Drain also applies the current rank of the Black Arrow debuff to the target. |nLasts <ANdr,Dur1> seconds. |n|n|cffffcc00Level 1|r - <ANdr,DataA1> hit point drain per second. |n|cffffcc00Level 2|r - <ANdr,DataA2> hit point drain per second. |n|cffffcc00Level 3|r - <ANdr,DataA3> hit point drain per second." " ;
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "D";
             ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -1892,7 +1892,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "Dur1> seconds.";
             ability.TextTooltipNormalExtended[3] = "Stops all enemies in a medium target area from casting spells for <ANsi";
             ability.TextTooltipLearn = "Learn Silence - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Stops all enemies in a target area from casting spells. The area of effect and duration increase with level. |n|n|cffffcc00Level 1|r - Small area, lasts <ANsi,Dur1> seconds. |n|cffffcc00Level 2|r - Medium area, lasts <ANsi,Dur2> seconds. |n|cffffcc00Level 3|r - Large area, lasts <ANsi,Dur3> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "E";
             ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -1971,7 +1971,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1> dead units in an area to fight for the Death Knight for <AUan";
             ability.TextTooltipNormalExtended[3] = "Dur1> seconds.";
             ability.TextTooltipLearn = "Learn Animate Dead";
-            ability.TextTooltipLearnExtended = "Raises <AUan,DataA1> dead units in an area to fight for the Death Knight for <AUan,Dur1> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "D";
             ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -2048,7 +2048,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1> hit points";
             ability.TextTooltipNormalExtended[3] = " or deal half damage to an enemy living unit.";
             ability.TextTooltipLearn = "Learn Death Coil - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "A coil of death that can damage an enemy living unit, or heal a friendly Undead or Demon unit. |n|n|cffffcc00Level 1|r - Heals for <AUdc,DataA1> hit points. |n|cffffcc00Level 2|r - Heals for <AUdc,DataA2> hit points. |n|cffffcc00Level 3|r - Heals for <AUdc,DataA3> hit points.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "C";
             ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -2117,7 +2117,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " giving <AUdp";
             ability.TextTooltipNormalExtended[3] = "DataB1";
             ability.TextTooltipLearn = "Learn Death Pact - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Kills a target friendly Undead unit, giving a percentage of its hit points to the Death Knight. |n|n|cffffcc00Level 1|r - <AUdp,DataB1,%>% conversion. |n|cffffcc00Level 2|r - <AUdp,DataB2,%>% conversion. |n|cffffcc00Level 3|r - <AUdp,DataB3,%>% conversion.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "E";
             ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -2202,7 +2202,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1";
             ability.TextTooltipNormalExtended[3] = "%>% and life regeneration rate.";
             ability.TextTooltipLearn = "Learn Unholy Aura - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Increases the movement speed and life regeneration rate of nearby friendly units. |n|n|cffffcc00Level 1|r - <AUau,DataA1,%>% movement, minor regeneration bonus. |n|cffffcc00Level 2|r - <AUau,DataA2,%>% movement, moderate regeneration bonus. |n|cffffcc00Level 3|r - <AUau,DataA3,%>% movement, greater regeneration bonus.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "U";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
@@ -2278,7 +2278,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1";
             ability.TextTooltipNormalExtended[3] = "%>% chance to avoid an attack.";
             ability.TextTooltipLearn = "Learn Evasion - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Gives a percent chance to avoid attacks. |n|n|cffffcc00Level 1|r - <AEev,DataA1,%>% chance that an opponent misses. |n|cffffcc00Level 2|r - <AEev,DataA2,%>% chance that an opponent misses. |n|cffffcc00Level 3|r - <AEev,DataA3,%>% chance that an opponent misses.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
@@ -2348,7 +2348,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[3] = "DataA1> damage per 0.5 second to nearby enemy land units. |nDrains mana until deactivated.";
             ability.TextTooltipTurnOffExtended[1] = "Deactivate Immolation to stop draining mana.";
             ability.TextTooltipLearn = "Learn Immolation - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Engulfs the Demon Hunter in flames, causing damage to nearby enemy land units. |nDrains mana until deactivated. |n|n|cffffcc00Level 1|r - <AEim,DataA1> damage per 0.5 second. |n|cffffcc00Level 2|r - <AEim,DataA2> damage per 0.5 second. |n|cffffcc00Level 3|r - <AEim,DataA3> damage per 0.5 second.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "L";
             ability.TextHotkeyNormalRaw = "L";
             ability.TextHotkeyTurnOffRaw = "L";
@@ -2426,7 +2426,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1> points of a target enemy unit's mana. The mana combusts";
             ability.TextTooltipNormalExtended[3] = " dealing damage equal to the amount of mana burned.";
             ability.TextTooltipLearn = "Learn Mana Burn - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Sends a bolt of negative energy that burns a target enemy unit's mana. Burned mana combusts, dealing damage to the target equal to the amount of mana burned. |n|n|cffffcc00Level 1|r - Burns up to <AEmb,DataA1> mana. |n|cffffcc00Level 2|r - Burns up to <AEmb,DataA2> mana. |n|cffffcc00Level 3|r - Burns up to <AEmb,DataA3> mana.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "B";
             ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -2501,7 +2501,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataE1> bonus hit points. |nLasts <AEme";
             ability.TextTooltipNormalExtended[3] = "HeroDur1> seconds.";
             ability.TextTooltipLearn = "Learn Metamorphosis";
-            ability.TextTooltipLearnExtended = "Transforms the Demon Hunter into a powerful Demon with a ranged attack and <AEme,DataE1> bonus hit points. |nLasts <AEme,HeroDur1> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "T";
             ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -2590,7 +2590,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "Dur1> seconds. A sleeping unit can be awoken by attacking it.";
             ability.TextTooltipNormalExtended[3] = "Puts a target enemy unit to sleep for <AUsl";
             ability.TextTooltipLearn = "Learn Sleep - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Puts a target enemy unit to sleep. A sleeping unit can be awoken by attacking it. |n|n|cffffcc00Level 1|r - <AUsl,Dur1> second sleep for <AUsl,Cost1> mana. |n|cffffcc00Level 2|r - <AUsl,Dur2> second sleep for <AUsl,Cost2> mana. |n|cffffcc00Level 3|r - <AUsl,Dur3> second sleep for <AUsl,Cost3> mana.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "E";
             ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -2659,7 +2659,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1";
             ability.TextTooltipNormalExtended[3] = "%>% of their attack damage when they hit enemy units.";
             ability.TextTooltipLearn = "Learn Vampiric Aura - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Nearby friendly melee units gain hit points when they hit enemy units. |n|n|cffffcc00Level 1|r - Gains <AUav,DataA1,%>% of attack damage. |n|cffffcc00Level 2|r - Gains <AUav,DataA2,%>% of attack damage. |n|cffffcc00Level 3|r - Gains <AUav,DataA3,%>% of attack damage.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "V";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
@@ -2727,7 +2727,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1> damage to each enemy unit in a cone.";
             ability.TextTooltipNormalExtended[3] = "Sends a horde of bats to deal <AUcs";
             ability.TextTooltipLearn = "Learn Carrion Swarm - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Sends a horde of bats to damage enemies. |n|n|cffffcc00Level 1|r - <AUcs,DataA1> damage per unit. |n|cffffcc00Level 2|r - <AUcs,DataA2> damage per unit. |n|cffffcc00Level 3|r - <AUcs,DataA3> damage per unit.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "C";
             ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -2806,7 +2806,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " dealing <AUin";
             ability.TextTooltipNormalExtended[3] = "DataA1> damage and stunning enemy land units for <AUin";
             ability.TextTooltipLearn = "Learn Inferno";
-            ability.TextTooltipLearnExtended = "Calls an Infernal down from the sky, dealing <AUin,DataA1> damage and stunning enemy land units for <AUin,Dur1> seconds in an area. The Infernal lasts <AUin,DataB1> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "N";
             ability.TextHotkeyNormalRaw = "N";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -2887,7 +2887,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataB1> times";
             ability.TextTooltipNormalExtended[3] = " dealing <AOcl";
             ability.TextTooltipLearn = "Learn Chain Lightning - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Hurls a bolt of damaging lightning at a target enemy that jumps to nearby enemies. Each jump deals less damage. |n|n|cffffcc00Level 1|r - <AOcl,DataA1> damage, jumps <AOcl,DataB1> times. |n|cffffcc00Level 2|r - <AOcl,DataA2> damage, jumps <AOcl,DataB2> times. |n|cffffcc00Level 3|r - <AOcl,DataA3> damage, jumps <AOcl,DataB3> times.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "C";
             ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -2962,7 +2962,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " causing <AOeq";
             ability.TextTooltipNormalExtended[3] = "DataB1> damage per second to buildings and slowing units by <AOeq";
             ability.TextTooltipLearn = "Learn Earthquake";
-            ability.TextTooltipLearnExtended = "Makes the ground tremble and break, causing <AOeq,DataB1> damage per second to buildings and slowing units by <AOeq,DataC1,%>% within the area of effect. Lasts <AOeq,Dur1> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "E";
             ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -3042,7 +3042,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[1] = "Reveals the area of the map that it is cast upon for <AOfs";
             ability.TextTooltipNormalExtended[2] = "Dur1> seconds. Also reveals invisible units.";
             ability.TextTooltipLearn = "Learn Far Sight - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Reveals the area of the map that it is cast upon. Also reveals invisible units. |n|n|cffffcc00Level 1|r - Reveals a small area. |n|cffffcc00Level 2|r - Reveals a large area. |n|cffffcc00Level 3|r - Reveals a huge area.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "F";
             ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -3111,7 +3111,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataB1> Spirit Wolf companions. Each wolf has <osw1";
             ability.TextTooltipNormalExtended[3] = "realHP> hit points and deals <osw1";
             ability.TextTooltipLearn = "Learn Feral Spirit - [|cffffcc00Level %d|r].";
-            ability.TextTooltipLearnExtended = "Summons <AOsf,DataB1> Spirit Wolves to fight the Far Seer's enemies. |nLasts <AOsf,Dur1> seconds. |n|n|cffffcc00Level 1|r - <osw1,realHP> hit points, <osw1,mindmg1> - <osw1,maxdmg1> damage. |n|cffffcc00Level 2|r - <osw2,realHP> hit points, <osw2,mindmg1> - <osw2,maxdmg1> damage and Critical Strike. |n|cffffcc00Level 3|r - <osw3,realHP> hit points, <osw3,mindmg1> - <osw3,maxdmg1> damage, Critical Strike and Invisibility.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "T";
             ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -3184,7 +3184,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " immobilizing and disarming a target enemy unit for <AEer";
             ability.TextTooltipNormalExtended[3] = "Dur1> seconds";
             ability.TextTooltipLearn = "Learn Entangling Roots - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Causes roots to burst from the ground, immobilizing, disarming and damaging a target enemy temporarily. |n|n|cffffcc00Level 1|r - <AEer,DataA1> damage per second for <AEer,Dur1> seconds. |n|cffffcc00Level 2|r - <AEer,DataA2> damage per second for <AEer,Dur2> seconds. |n|cffffcc00Level 3|r - <AEer,DataA3> damage per second for <AEer,Dur3> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "E";
             ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -3253,7 +3253,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1> Treants. Treants have <efon";
             ability.TextTooltipNormalExtended[3] = "realHP> hit points and deal <efon";
             ability.TextTooltipLearn = "Learn Force of Nature - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Converts an area of trees into Treants. Treants have <efon,realHP> hit points and deal <efon,mindmg1> - <efon,maxdmg1> damage. Can learn Nature's Blessing. |n|n|cffffcc00Attacks land units.|r |n|n|cffffcc00Level 1|r - Raises <AEfn,DataA1> Treants for <AEfn,Dur1> seconds. |n|cffffcc00Level 2|r - Raises <AEfn,DataA2> Treants for <AEfn,Dur2> seconds. |n|cffffcc00Level 3|r - Raises <AEfn,DataA3> Treants for <AEfn,Dur3> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "F";
             ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -3326,7 +3326,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " which deals <AEah";
             ability.TextTooltipNormalExtended[3] = "DataA1";
             ability.TextTooltipLearn = "Learn Thorns Aura - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "An aura that gives friendly nearby units a damage shield, which returns a percentage of a melee attacker's damage back to it. |n|n|cffffcc00Level 1|r - Returns <AEah,DataA1,%>% damage. |n|cffffcc00Level 2|r - Returns <AEah,DataA2,%>% damage. |n|cffffcc00Level 3|r - Returns <AEah,DataA3,%>% damage.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
@@ -3396,7 +3396,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " healing friendly allied units for <AEtq";
             ability.TextTooltipNormalExtended[3] = "DataA1> hit points per second. |nLasts <AEtq";
             ability.TextTooltipLearn = "Learn Tranquility";
-            ability.TextTooltipLearnExtended = "Causes rains of healing energy to pour down in a large area, healing friendly allied units for <AEtq,DataA1> hit points per second. |nLasts <AEtq,Dur1> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "T";
             ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -3477,7 +3477,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1";
             ability.TextTooltipNormalExtended[3] = "%>% of its hit points into mana for the Lich.";
             ability.TextTooltipLearn = "Learn Dark Ritual - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Sacrifices a target friendly Undead unit to convert its hit points into mana for the Lich. |n|n|cffffcc00Level 1|r - <AUdr,DataA1,%>% of hit points to mana. |n|cffffcc00Level 2|r - <AUdr,DataA2,%>% of hit points to mana. |n|cffffcc00Level 3|r - <AUdr,DataA3,%>% of hit points to mana.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "R";
             ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -3560,7 +3560,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1";
             ability.TextTooltipNormalExtended[3] = "%>% of its base hit points per second. Also destroys trees. |nLasts <AUdd";
             ability.TextTooltipLearn = "Learn Death And Decay";
-            ability.TextTooltipLearnExtended = "Damages everything in its area of effect by <AUdd,DataA1,%>% of its base hit points per second. Also destroys trees.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "D";
             ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -3633,7 +3633,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataB1> armor and slows melee units that attack it for <AUfa";
             ability.TextTooltipNormalExtended[3] = "Dur1> seconds. |nLasts <AUfa";
             ability.TextTooltipLearn = "Learn Frost Armor - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Creates a shield of frost around a target friendly unit. The shield adds armor and slows melee units that attack it. |n|n|cffffcc00Level 1|r - Adds <AUfa,DataB1> armor. |n|cffffcc00Level 2|r - Adds <AUfa,DataB2> armor. |n|cffffcc00Level 3|r - Adds <AUfa,DataB3> armor.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "F";
             ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -3709,7 +3709,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[3] = "Dur1> seconds. |nLasts <AUfu";
             ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.";
             ability.TextTooltipLearn = "Learn Frost Armor - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Creates a shield of frost around a target friendly unit. The shield adds armor and slows melee units that attack it. |n|n|cffffcc00Level 1|r - Adds <AUfu,DataB1> armor. |n|cffffcc00Level 2|r - Adds <AUfu,DataB2> armor. |n|cffffcc00Level 3|r - Adds <AUfu,DataB3> armor.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "F";
             ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -3782,7 +3782,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataB1> damage to the target";
             ability.TextTooltipNormalExtended[3] = " and <AUfn";
             ability.TextTooltipLearn = "Learn Frost Nova - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Blasts enemy units around a target enemy unit with a wave of damaging frost that slows movement and attack rate. |n|n|cffffcc00Level 1|r - <AUfn,DataB1> target damage, <AUfn,DataA1> nova damage. |n|cffffcc00Level 2|r - <AUfn,DataB2> target damage, <AUfn,DataA2> nova damage. |n|cffffcc00Level 3|r - <AUfn,DataB3> target damage, <AUfn,DataA3> nova damage.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "N";
             ability.TextHotkeyNormalRaw = "N";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -3936,7 +3936,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1>% chance that an attack will do <AHbh";
             ability.TextTooltipNormalExtended[3] = "DataC1> bonus damage and stun the target for <AHbh";
             ability.TextTooltipLearn = "Learn Bash - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Gives a chance that an attack will do <AHbh,DataC1> bonus damage and stun the target for <AHbh,Dur1> seconds. |n|n|cffffcc00Level 1|r - <AHbh,DataA1>% chance per attack. <AHbh,DataC1> bonus damage. |n|cffffcc00Level 2|r - <AHbh,DataA2>% chance per attack. <AHbh,DataC2> bonus damage. |n|cffffcc00Level 3|r - <AHbh,DataA3>% chance per attack. <AHbh,DataC3> bonus damage.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
@@ -4020,7 +4020,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " dealing <AHtb";
             ability.TextTooltipNormalExtended[3] = "DataA1> damage and stunning the target for <AHtb";
             ability.TextTooltipLearn = "Learn Storm Bolt - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "A magical hammer that is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - <AHtb,DataA1> damage, <AHtb,Dur1> second stun. |n|cffffcc00Level 2|r - <AHtb,DataA2> damage, <AHtb,Dur2> second stun. |n|cffffcc00Level 3|r - <AHtb,DataA3> damage, <AHtb,Dur3> second stun.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "T";
             ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -4089,7 +4089,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " dealing <AHtc";
             ability.TextTooltipNormalExtended[3] = "DataA1> damage to nearby enemy land units and slowing their movement by <AHtc";
             ability.TextTooltipLearn = "Learn Thunder Clap - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Slams the ground, dealing damage to and slowing the movement speed and attack rate of nearby enemy land units. |n|n|cffffcc00Level 1|r - <AHtc,DataA1> damage, <AHtc,DataC1,%>% move, <AHtc,DataD1,%>% attack. |n|cffffcc00Level 2|r - <AHtc,DataA2> damage, <AHtc,DataC2,%>% move, <AHtc,DataD2,%>% attack. |n|cffffcc00Level 3|r - <AHtc,DataA3> damage, <AHtc,DataC3,%>% move, <AHtc,DataD3,%>% attack.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "C";
             ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -4174,7 +4174,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " hitting up to <ANfl";
             ability.TextTooltipNormalExtended[3] = "DataB1> enemy units for <ANfl";
             ability.TextTooltipLearn = "Learn Forked Lightning - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Calls forth a cone of lightning to damage enemies. |n|n|cffffcc00Level 1|r - <ANfl,DataA1> damage per unit. |n|cffffcc00Level 2|r - <ANfl,DataA2> damage per unit. |n|cffffcc00Level 3|r - <ANfl,DataA3> damage per unit.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "F";
             ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -4257,7 +4257,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[3] = "DataA1> bonus damage";
             ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
             ability.TextTooltipLearn = "Learn Frost Arrows - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Adds a cold effect to each attack, causing bonus damage and slowing a target enemy unit's attacks and movement. |n|n|cffffcc00Level 1|r - <ANfa,DataB1,%>% attack rate, <ANfa,DataC1,%>% movement speed, <ANfa,DataA1> bonus damage.|n|cffffcc00Level 2|r - <ANfa,DataB2,%>% attack rate, <ANfa,DataC2,%>% movement speed, <ANfa,DataA2> bonus damage.|n|cffffcc00Level 3|r - <ANfa,DataB3,%>% attack rate, <ANfa,DataC3,%>% movement speed, <ANfa,DataA3> bonus damage.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "R";
             ability.TextHotkeyNormalRaw = "R";
             ability.TextHotkeyTurnOffRaw = "R";
@@ -4337,7 +4337,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts <ANto";
             ability.TextTooltipNormalExtended[3] = "Dur1> seconds.";
             ability.TextTooltipLearn = "Learn Tornado";
-            ability.TextTooltipLearnExtended = "Summons a fierce controllable Tornado that slows enemy units' movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts <ANto,Dur1> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "T";
             ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -4407,7 +4407,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1> damage per point of mana.";
             ability.TextTooltipNormalExtended[3] = "Activates a shield that absorbs <ANms";
             ability.TextTooltipLearn = "Learn Mana Shield - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Creates a shield that absorbs damage by using the Sea Witch's mana. |n|n|cffffcc00Level 1|r - <ANms,DataA1> damage per point of mana. |n|cffffcc00Level 2|r - <ANms,DataA2> damage per point of mana. |n|cffffcc00Level 3|r - <ANms,DataA3> damage per point of mana.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "N";
             ability.TextHotkeyNormalRaw = "N";
             ability.TextHotkeyTurnOffRaw = "N";
@@ -4481,7 +4481,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1";
             ability.TextTooltipNormalExtended[3] = ".> additional armor to nearby friendly units.";
             ability.TextTooltipLearn = "Learn Devotion Aura - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Gives additional armor to nearby friendly units. |n|n|cffffcc00Level 1|r - Increases base armor by <AHad,DataA1,.>. |n|cffffcc00Level 2|r - Increases base armor by <AHad,DataA2,.>. |n|cffffcc00Level 3|r - Increases base armor by <AHad,DataA3,.>.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "V";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
@@ -4554,7 +4554,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " protecting it from all damage and spells for <AHds";
             ability.TextTooltipNormalExtended[3] = "Dur1> seconds.";
             ability.TextTooltipLearn = "Learn Divine Shield - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "An impenetrable shield surrounds the Paladin, protecting him from all damage and spells for a set amount of time. |n|n|cffffcc00Level 1|r - Lasts <AHds,Dur1> seconds. |n|cffffcc00Level 2|r - Lasts <AHds,Dur2> seconds. |n|cffffcc00Level 3|r - Lasts <AHds,Dur3> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "D";
             ability.TextHotkeyNormalRaw = "D";
             ability.TextHotkeyTurnOffRaw = "D";
@@ -4621,7 +4621,7 @@ namespace War3Api.Object
             ability.TextTooltipNormal[2] = "Holy Light - [|cffffcc00Level 2|r]";
             ability.TextTooltipNormal[3] = "Holy Light - [|cffffcc00Level 3|r]";
             ability.TextTooltipLearn = "Learn Holy Light - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "A holy light that can heal a friendly living unit or damage an enemy Undead unit. |n|n|cffffcc00Level 1|r - Heals for <AHhb,DataA1> hit points. |n|cffffcc00Level 2|r - Heals for <AHhb,DataA2> hit points. |n|cffffcc00Level 3|r - Heals for <AHhb,DataA3> hit points. ";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "T";
             ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -4687,7 +4687,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[1] = "Brings back to life the corpses of <AHre";
             ability.TextTooltipNormalExtended[2] = "DataA1> friendly nearby units.";
             ability.TextTooltipLearn = "Learn Resurrection";
-            ability.TextTooltipLearnExtended = "Brings back to life the corpses of <AHre,DataA1> friendly nearby units.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "R";
             ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -4759,8 +4759,8 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[1] = "Breathes a cone of fire at enemy units";
             ability.TextTooltipNormalExtended[2] = " dealing <ANbf";
             ability.TextTooltipNormalExtended[3] = "DataA1> initial damage. Units that have Drunken Haze on them will ignite and burn for <ANbf";
-            ability.TextTooltipLearn = "Learn Breath of Fire - [|cffffcc00Level %d|r]," Learn  Breath  of  Fire - [ | cffffcc00Level % d | r ] " ;
-            ability.TextTooltipLearnExtended = "Breathes a cone of fire at enemy units which deals damage. Units that have Drunken Haze on them will ignite and take burn damage over time. |nLasts <ANbf,Dur1> seconds. |n|n|cffffcc00Level 1|r - <ANbf,DataA1> initial damage, <ANbf,DataE1> damage per second. |n|cffffcc00Level 2|r - <ANbf,DataA2> initial damage, <ANbf,DataE2> damage per second. |n|cffffcc00Level 3|r - <ANbf,DataA3> initial damage, <ANbf,DataE3> damage per second." ,  "Breathes a cone of fire at enemy units, dealing initial damage, and then damage over time. |nLasts <ANbf,Dur1> seconds. |n|n|cffffcc00Level 1|r - <ANbf,DataA1> initial damage, <ANbf,DataE1> damage per second. |n|cffffcc00Level 2|r - <ANbf,DataA2> initial damage, <ANbf,DataE2> damage per second. |n|cffffcc00Level 3|r - <ANbf,DataA3> initial damage, <ANbf,DataE3> damage per second.";
+            ability.TextTooltipLearn = "Learn Breath of Fire - [|cffffcc00Level %d|r]";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "F";
             ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -4845,7 +4845,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataD1";
             ability.TextTooltipNormalExtended[3] = "%>% chance to dodge an attack and a <ANdb";
             ability.TextTooltipLearn = "Learn Drunken Brawler - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Gives a percent chance to avoid attacks and a <ANdb,DataA1>% chance to deal additional damage. |n|n|cffffcc00Level 1|r - <ANdb,DataD1,%>% dodge, <ANdb,DataB1> times total damage. |n|cffffcc00Level 2|r - <ANdb,DataD2,%>% dodge, <ANdb,DataB2> times total damage. |n|cffffcc00Level 3|r - <ANdb,DataD3,%>% dodge, <ANdb,DataB3> times total damage.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
@@ -4933,7 +4933,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " causing their movement speed to be reduced by <ANdh";
             ability.TextTooltipNormalExtended[3] = "DataC1";
             ability.TextTooltipLearn = "Learn Drunken Haze - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Drenches enemy units in alcohol, causing their movement speed to be reduced, and have a chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage over time. |nLasts <ANdh,Dur1> seconds |n|n|cffffcc00Level 1|r - <ANdh,DataC1,%>% movement speed reduction, <ANdh,DataB1,%>% miss chance. |n|cffffcc00Level 2|r - <ANdh,DataC2,%>% movement speed reduction, <ANdh,DataB2,%>% miss chance. |n|cffffcc00Level 3|r - <ANdh,DataC3,%>% movement speed reduction, <ANdh,DataB3,%>% miss chance.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "D";
             ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -5013,8 +5013,8 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[1] = "Splits the Brewmaster into elements";
             ability.TextTooltipNormalExtended[2] = " forming 3 specialized warriors. If any of them survive until the end of their summoned timer";
             ability.TextTooltipNormalExtended[3] = " the Brewmaster is reborn. |nLasts <ANef";
-            ability.TextTooltipLearn = "Learn Storm, Earth, And Fire";
-            ability.TextTooltipLearnExtended = "Splits the Brewmaster into elements, forming 3 specialized warriors. If any of them survive until the end of their summoned timer, the Brewmaster is reborn. |nLasts <ANef,HeroDur1> seconds.";
+            ability.TextTooltipLearn = "Learn Storm";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "E";
             ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -5081,7 +5081,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1> damage per second until it dies. Upon its death";
             ability.TextTooltipNormalExtended[3] = " a great Demon will spawn from its corpse. Doom cannot be dispelled or cancelled.";
             ability.TextTooltipLearn = "Learn Doom";
-            ability.TextTooltipLearnExtended = "Marks a target unit for the manifestation of a Demon. The afflicted unit cannot cast spells and will take <ANdo,DataA1> damage per second until it dies. Upon its death, a great Demon will spawn from its corpse. Doom cannot be dispelled or cancelled.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "D";
             ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -5170,7 +5170,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1";
             ability.TextTooltipNormalExtended[3] = "%>% for <ANht";
             ability.TextTooltipLearn = "Learn Howl of Terror - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "The Pit Lord lets loose a terrifying howl that causes nearby enemy units to shiver in fear, reducing their attack damage. |nLasts <ANht,Dur1> seconds. |n|n|cffffcc00Level 1|r - <ANht,DataA1,%>% attack damage reduction. |n|cffffcc00Level 2|r - <ANht,DataA2,%>% attack damage reduction. |n|cffffcc00Level 3|r - <ANht,DataA3,%>% attack damage reduction.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "T";
             ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -5263,7 +5263,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1";
             ability.TextTooltipNormalExtended[3] = "%>% of his damage strikes through to enemies near the primary attacked unit.";
             ability.TextTooltipLearn = "Learn Cleaving Attack - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "The Pit Lord strikes with such force that he damages multiple enemies with his attack. |n|n|cffffcc00Level 1|r - <ANca,DataA1,%>% damage is splash. |n|cffffcc00Level 2|r - <ANca,DataA2,%>% damage is splash. |n|cffffcc00Level 3|r - <ANca,DataA3,%>% damage is splash.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
@@ -5331,7 +5331,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataB1> initial damage and <ANrf";
             ability.TextTooltipNormalExtended[3] = "DataE1> damage per second for <ANrf";
             ability.TextTooltipLearn = "Learn Rain of Fire - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Calls down waves of fire that damage units in an area. Each wave deals initial damage and then burns enemies for <ANrf,Dur1> seconds. |n|n|cffffcc00Level 1|r - <ANrf,DataB1> wave damage, <ANrf,DataA1> waves, <ANrf,DataE1> damage per second. |n|cffffcc00Level 2|r - <ANrf,DataB2> wave damage, <ANrf,DataA2> waves, <ANrf,DataE2> damage per second. |n|cffffcc00Level 3|r - <ANrf,DataB3> wave damage, <ANrf,DataA3> waves, <ANrf,DataE3> damage per second.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "F";
             ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -5422,7 +5422,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[3] = " but drains mana with each shot fired.";
             ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
             ability.TextTooltipLearn = "Learn Searing Arrows - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Increases the damage of the Priestess' attack by adding fire. |n|n|cffffcc00Level 1|r - <AHfa,DataA1> bonus damage. |n|cffffcc00Level 2|r - <AHfa,DataA2> bonus damage. |n|cffffcc00Level 3|r - <AHfa,DataA3> bonus damage.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "R";
             ability.TextHotkeyNormalRaw = "R";
             ability.TextHotkeyTurnOffRaw = "R";
@@ -5492,7 +5492,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " which can be used to scout.|nCan see invisible units. |nLasts <AEst";
             ability.TextTooltipNormalExtended[3] = "Dur1> seconds.";
             ability.TextTooltipLearn = "Learn Scout - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Temporarily summons an Owl Scout, which can be used to scout the map. |nCan see invisible units. |n|n|cffffcc00Level 1|r - Summons an Owl Scout for <AEst,Cost1> mana. |n|cffffcc00Level 2|r - Summons a better Owl Scout for <AEst,Cost2> mana. |n|cffffcc00Level 3|r - Summons the best Owl Scout for <AEst,Cost3> mana.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "C";
             ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -5563,7 +5563,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1> damage. |nLasts for <AEsf";
             ability.TextTooltipNormalExtended[3] = "Dur1> seconds.";
             ability.TextTooltipLearn = "Learn Starfall";
-            ability.TextTooltipLearnExtended = "Calls down waves of falling stars that damage nearby enemy units. Each wave deals <AEsf,DataA1> damage. |nLasts for <AEsf,Dur1> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "F";
             ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -5640,7 +5640,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1";
             ability.TextTooltipNormalExtended[3] = "%>% bonus damage to their ranged attacks.";
             ability.TextTooltipLearn = "Learn Trueshot Aura - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "An aura that gives friendly nearby units bonus damage to their ranged attacks. |n|n|cffffcc00Level 1|r - Increases base ranged damage by <AEar,DataA1,%>%. |n|cffffcc00Level 2|r - Increases base ranged damage by <AEar,DataA2,%>%. |n|cffffcc00Level 3|r - Increases base ranged damage by <AEar,DataA3,%>%.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
@@ -5720,7 +5720,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1";
             ability.TextTooltipNormalExtended[3] = "%>% and attack rate by <AOae";
             ability.TextTooltipLearn = "Learn Endurance Aura - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Increases the movement speed and attack rate of nearby friendly units. |n|n|cffffcc00Level 1|r - <AOae,DataA1,%>% movement, <AOae,DataB1,%>% attack. |n|cffffcc00Level 2|r - <AOae,DataA2,%>% movement, <AOae,DataB2,%>% attack. |n|cffffcc00Level 3|r - <AOae,DataA3,%>% movement, <AOae,DataB3,%>% attack.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
@@ -5790,7 +5790,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " the Tauren Chieftain will come back to life. Reincarnation has a <AOre";
             ability.TextTooltipNormalExtended[3] = "Cool1> second cooldown.";
             ability.TextTooltipLearn = "Learn Reincarnation";
-            ability.TextTooltipLearnExtended = "When killed, the Tauren Chieftain will come back to life. Reincarnation has a <AOre,Cool1> second cooldown.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
@@ -5858,7 +5858,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " causing <AOsh";
             ability.TextTooltipNormalExtended[3] = "DataA1> damage to land units in a line.";
             ability.TextTooltipLearn = "Learn Shockwave - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "A wave of force that ripples out from the Hero, causing damage to land units in a line. |n|n|cffffcc00Level 1|r - <AOsh,DataA1> damage. |n|cffffcc00Level 2|r - <AOsh,DataA2> damage. |n|cffffcc00Level 3|r - <AOsh,DataA3> damage.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "W";
             ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -5939,7 +5939,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " dealing <AOws";
             ability.TextTooltipNormalExtended[3] = "DataA1> damage to nearby enemy land units and stunning them for <AOws";
             ability.TextTooltipLearn = "Learn War Stomp - [|cffffcc00Level %d|r].";
-            ability.TextTooltipLearnExtended = "Slams the ground, stunning and damaging nearby enemy land units. |n|n|cffffcc00Level 1|r - <AOws,DataA1> damage, <AOws,Dur1> second stun. |n|cffffcc00Level 2|r - <AOws,DataA2> damage, <AOws,Dur2> second stun. |n|cffffcc00Level 3|r - <AOws,DataA3> damage, <AOws,Dur3> second stun.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "T";
             ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -6008,7 +6008,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataB1> times";
             ability.TextTooltipNormalExtended[3] = " healing <AOhw";
             ability.TextTooltipLearn = "Learn Healing Wave - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Calls forth a wave of energy that heals a target and bounces to nearby friendlies. Each bounce heals less damage. |n|n|cffffcc00Level 1|r - Heals <AOhw,DataA1> damage, jumps <AOhw,DataB1> times. |n|cffffcc00Level 2|r - Heals <AOhw,DataA2> damage, jumps <AOhw,DataB2> times. |n|cffffcc00Level 3|r - Heals <AOhw,DataA3> damage, jumps <AOhw,DataB3> times.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "E";
             ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -6085,7 +6085,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "Dur1> seconds.";
             ability.TextTooltipNormalExtended[3] = "Transforms an enemy unit into a random critter for <AOhx";
             ability.TextTooltipLearn = "Learn Hex - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Transforms an enemy unit into a random critter, disabling special abilities. |n|n|cffffcc00Level 1|r - Lasts <AOhx,Dur1> seconds. |n|cffffcc00Level 2|r - Lasts <AOhx,Dur2> seconds. |n|cffffcc00Level 3|r - Lasts <AOhx,Dur3> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "X";
             ability.TextHotkeyNormalRaw = "X";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -6170,7 +6170,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "realHP> hit points";
             ability.TextTooltipNormalExtended[3] = " is magic immune";
             ability.TextTooltipLearn = "Learn Serpent Ward - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Summons an immobile serpentine ward to attack the Shadow Hunter's enemies. The ward is immune to magic. |nLasts <AOsw,Dur1> seconds. |n|n|cffffcc00Attacks land and air units.|r |n|n|cffffcc00Level 1|r - <osp1,realHP> hit points, <osp1,mindmg1> - <osp1,maxdmg1> damage. |n|cffffcc00Level 2|r - <osp2,realHP> hit points, <osp2,mindmg1> - <osp2,maxdmg1> damage. |n|cffffcc00Level 3|r - <osp3,realHP> hit points, <osp3,mindmg1> - <osp3,maxdmg1> damage.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "W";
             ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -6240,7 +6240,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[1] = "Turns all friendly units invulnerable in an area around the Shadow Hunter. |nThe Shadow Hunter does not turn invulnerable. |nLasts <AOvd";
             ability.TextTooltipNormalExtended[2] = "Dur1> seconds.";
             ability.TextTooltipLearn = "Learn Big Bad Voodoo";
-            ability.TextTooltipLearnExtended = "Turns all friendly units invulnerable in an area around the Shadow Hunter. |nThe Shadow Hunter does not turn invulnerable. |nLasts <AOvd,Dur1> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "V";
             ability.TextHotkeyNormalRaw = "V";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -6305,7 +6305,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " allowing her to move in and out of combat.";
             ability.TextTooltipNormalExtended[3] = "Teleports the Warden a short distance";
             ability.TextTooltipLearn = "Learn Blink - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Short distance teleportation that allows the Warden to move in and out of combat. |n|n|cffffcc00Level 1|r - <AEbl,Cool1> second cooldown, <AEbl,Cost1> mana. |n|cffffcc00Level 2|r - <AEbl,Cool2> second cooldown, <AEbl,Cost2> mana. |n|cffffcc00Level 3|r - <AEbl,Cool3> second cooldown, <AEbl,Cost3> mana.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "B";
             ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -6378,7 +6378,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " damaging nearby enemies. Each knife does <AEfk";
             ability.TextTooltipNormalExtended[3] = "DataA1> damage.";
             ability.TextTooltipLearn = "Learn Fan of Knives - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "The Warden hurls a flurry of knives, damaging nearby enemies. |n|n|cffffcc00Level 1|r - <AEfk,DataA1> damage per target. |n|cffffcc00Level 2|r - <AEfk,DataA2> damage per target. |n|cffffcc00Level 3|r - <AEfk,DataA3> damage per target.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "F";
             ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -6459,7 +6459,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " dealing <AEsh";
             ability.TextTooltipNormalExtended[3] = "DataE1> initial damage";
             ability.TextTooltipLearn = "Learn Shadow Strike - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Hurls a poisoned dagger which deals large initial damage, and then deals damage over time. The poisoned unit has its movement speed slowed for a short duration. |n|n|cffffcc00Level 1|r - <AEsh,DataE1> strike damage, <AEsh,DataA1> duration damage. |n|cffffcc00Level 2|r - <AEsh,DataE2> strike damage, <AEsh,DataA2> duration damage. |n|cffffcc00Level 3|r - <AEsh,DataE3> strike damage, <AEsh,DataA3> duration damage.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "D";
             ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -6542,7 +6542,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " the spirits vanish. |nLasts <AEsv";
             ability.TextTooltipNormalExtended[3] = "Dur1> seconds.";
             ability.TextTooltipLearn = "Learn Vengeance";
-            ability.TextTooltipLearnExtended = "Creates a powerful avatar that summons invulnerable spirits from nearby corpses to attack your enemies. When the Avatar of Vengeance dies, the spirits vanish. |nLasts <AEsv,Dur1> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "V";
             ability.TextHotkeyNormalRaw = "V";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -6615,7 +6615,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " splashing a powerful acid on nearby hostile units.|n|nDecreases armor by <ANab";
             ability.TextTooltipNormalExtended[3] = "DataC1>; deals <ANab";
             ability.TextTooltipLearn = "Learn Acid Bomb - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Hurls a flask of acid at a target.  The flask breaks upon impact, splashing a powerful acid on nearby hostile units.|n|nDecreases armor; deals high damage over time to the primary target; deals slightly less damage over time to nearby targets.|nLasts <ANab,Dur1> seconds.|n|n|cffffcc00Level 1|r - <ANab,DataD1> max damage per second, reduces armor by <ANab,DataC1>.|n|cffffcc00Level 2|r - <ANab,DataD2> max damage per second, reduces armor by <ANab,DataC2>.|n|cffffcc00Level 3|r - <ANab,DataD3> max damage per second, reduces armor by <ANab,DataC3>.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "B";
             ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -6704,7 +6704,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " increasing movement rate by <ANcr";
             ability.TextTooltipNormalExtended[3] = "DataE1";
             ability.TextTooltipLearn = "Learn Chemical Rage - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "The Alchemist causes his Ogre to enter a chemically induced rage, increasing movement rate by <ANcr,DataE1,%>% and increasing attack rate.|nLasts <ANcr,HeroDur1> seconds.|n|n|cffffcc00Level 1|r - <ANcr,DataF1,%>% attack rate increase.|n|cffffcc00Level 2|r - <ANcr,DataF2,%>% attack rate increase.|n|cffffcc00Level 3|r - <ANcr,DataF3,%>% attack rate increase.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "R";
             ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -6797,7 +6797,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataF1> waves of healing mist; each wave heals <ANhs";
             ability.TextTooltipNormalExtended[3] = "DataA1> damage to all friendly units in an area.";
             ability.TextTooltipLearn = "Learn Healing Spray - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Sprays waves of healing mist that heal friendly units in a target area. |n|n|cffffcc00Level 1|r - <ANhs,DataF1> waves at <ANhs,DataA1> hit points healed each. |n|cffffcc00Level 2|r - <ANhs,DataF2> waves at <ANhs,DataA2> hit points healed each. |n|cffffcc00Level 3|r - <ANhs,DataF3> waves at <ANhs,DataA3> hit points healed each.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "E";
             ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -6884,7 +6884,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " transforming it into gold which is added to your available gold!|nTransmute cannot be used on Heroes";
             ability.TextTooltipNormalExtended[3] = " or creeps above level <ANtm";
             ability.TextTooltipLearn = "Learn Transmute";
-            ability.TextTooltipLearnExtended = "Kills a target unit instantly, transforming it into gold which is added to your available gold!|nTransmute cannot be used on Heroes, or creeps above level <ANtm,DataC1>.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "T";
             ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -6965,7 +6965,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " gives <ANeg";
             ability.TextTooltipNormalExtended[3] = "DataB1> attack damage and increases Tinker movement speed by <ANeg";
             ability.TextTooltipLearn = "Learn Engineering Upgrade - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Enhances other Tinker abilities with each level learned:|n|n|cffffcc00Cluster Rockets|r - Larger Area.|n|cffffcc00Pocket Factory|r - Builds Clockwerk Goblins more quickly.|n|cffffcc00Robo-Goblin|r - Increases armor and Strength; enhances Demolish.|n|nAlso gives bonus damage and increases the Tinker's movement speed.|n|n|cffffcc00Level 1|r - +<ANeg,DataB1> damage, +<ANeg,DataA1,%>% movement.|n|cffffcc00Level 2|r - +<ANeg,DataB2> damage, +<ANeg,DataA2,%>% movement.|n|cffffcc00Level 3|r - +<ANeg,DataB3> damage, +<ANeg,DataA3,%>% movement.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "E";
             ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -7054,7 +7054,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " dealing up to 45 damage to nearby enemy units and stunning them for <ANcs";
             ability.TextTooltipNormalExtended[3] = "Dur1> second.";
             ability.TextTooltipLearn = "Learn Cluster Rockets - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Bombards an area with rockets, stunning enemy units for <ANcs,Dur1> second and damaging nearby enemy units.|n|n|cffffcc00Level 1|r - 45 damage.|n|cffffcc00Level 2|r - 75 damage.|n|cffffcc00Level 3|r - 110 damage.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "R";
             ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -7144,7 +7144,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " dealing up to 45 damage to nearby enemy units and stunning them for <ANc1";
             ability.TextTooltipNormalExtended[3] = "Dur1> second.";
             ability.TextTooltipLearn = "Learn Cluster Rockets - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Bombards an area with rockets, stunning enemy units for <ANc1,Dur1> second and damaging nearby enemy units.|n|n|cffffcc00Level 1|r - 45 damage.|n|cffffcc00Level 2|r - 75 damage.|n|cffffcc00Level 3|r - 110 damage";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "R";
             ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -7234,7 +7234,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " dealing up to 45 damage to nearby enemy units and stunning them for <ANc2";
             ability.TextTooltipNormalExtended[3] = "Dur1> second.";
             ability.TextTooltipLearn = "Learn Cluster Rockets - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Bombards an area with rockets, stunning enemy units for <ANc2,Dur1> second and damaging nearby enemy units.|n|n|cffffcc00Level 1|r - 45 damage.|n|cffffcc00Level 2|r - 75 damage.|n|cffffcc00Level 3|r - 110 damage";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "R";
             ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -7324,7 +7324,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " dealing up to 45 damage to nearby enemy units and stunning them for <ANc3";
             ability.TextTooltipNormalExtended[3] = "Dur1> second.";
             ability.TextTooltipLearn = "Learn Cluster Rockets - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Bombards an area with rockets, stunning enemy units for <ANc3,Dur1> second and damaging nearby enemy units.|n|n|cffffcc00Level 1|r - 45 damage.|n|cffffcc00Level 2|r - 75 damage.|n|cffffcc00Level 3|r - 110 damage";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "R";
             ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -7414,7 +7414,7 @@ namespace War3Api.Object
             ability.TextTooltipTurnOffExtended[1] = "Returns to normal Tinker form";
             ability.TextTooltipTurnOffExtended[2] = " losing the benefits of Robo-Goblin but once again becoming organic.";
             ability.TextTooltipLearn = "Learn Robo-Goblin";
-            ability.TextTooltipLearnExtended = "Transforms the Tinker into a Robo-Goblin, a powerful armored form that has the following traits:|n|n- Bonus Strength and armor.|n- Use of the Demolish ability, which grants bonus damage against buildings.|n- The Tinker becomes mechanical, rendering him immune to most forms of stun, most offensive spells, and several beneficial spells.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "B";
             ability.TextHotkeyNormalRaw = "B";
             ability.TextHotkeyTurnOffRaw = "T";
@@ -7510,7 +7510,7 @@ namespace War3Api.Object
             ability.TextTooltipTurnOffExtended[1] = "Returns to normal Tinker form";
             ability.TextTooltipTurnOffExtended[2] = " losing the benefits of Robo-Goblin but once again becoming organic.";
             ability.TextTooltipLearn = "Learn Robo-Goblin";
-            ability.TextTooltipLearnExtended = "Transforms the Tinker into a Robo-Goblin, a powerful armored form that has the following traits:|n|n- Bonus Strength and armor.|n- Use of the Demolish ability, which grants bonus damage against buildings.|n- The Tinker becomes mechanical, rendering him immune to most forms of stun, most offensive spells, and several beneficial spells.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "B";
             ability.TextHotkeyNormalRaw = "B";
             ability.TextHotkeyTurnOffRaw = "T";
@@ -7606,7 +7606,7 @@ namespace War3Api.Object
             ability.TextTooltipTurnOffExtended[1] = "Returns to normal Tinker form";
             ability.TextTooltipTurnOffExtended[2] = " losing the benefits of Robo-Goblin but once again becoming organic.";
             ability.TextTooltipLearn = "Learn Robo-Goblin";
-            ability.TextTooltipLearnExtended = "Transforms the Tinker into a Robo-Goblin, a powerful armored form that has the following traits:|n|n- Bonus Strength and armor.|n- Use of the Demolish ability, which grants bonus damage against buildings.|n- The Tinker becomes mechanical, rendering him immune to most forms of stun, most offensive spells, and several beneficial spells.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "B";
             ability.TextHotkeyNormalRaw = "B";
             ability.TextHotkeyTurnOffRaw = "T";
@@ -7702,7 +7702,7 @@ namespace War3Api.Object
             ability.TextTooltipTurnOffExtended[1] = "Returns to normal Tinker form";
             ability.TextTooltipTurnOffExtended[2] = " losing the benefits of Robo-Goblin but once again becoming organic.";
             ability.TextTooltipLearn = "Learn Robo-Goblin";
-            ability.TextTooltipLearnExtended = "Transforms the Tinker into a Robo-Goblin, a powerful armored form that has the following traits:|n|n- Bonus Strength and armor.|n- Use of the Demolish ability, which grants bonus damage against buildings.|n- The Tinker becomes mechanical, rendering him immune to most forms of stun, most offensive spells, and several beneficial spells.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "B";
             ability.TextHotkeyNormalRaw = "B";
             ability.TextHotkeyTurnOffRaw = "T";
@@ -7796,7 +7796,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "realHP> hit points";
             ability.TextTooltipNormalExtended[3] = " deal <ncgb";
             ability.TextTooltipLearn = "Learn Pocket Factory - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Creates a factory which automatically constructs Clockwerk Goblins. These artificial Goblins, in addition to being potent attackers, explode upon death, causing damage to nearby enemy units. |n|n|cffffcc00Level 1|r - Explosion does <Asdg,DataB1> damage.|n|cffffcc00Level 2|r - Explosion does <Asd2,DataB1> damage.|n|cffffcc00Level 3|r - Explosion does <Asd3,DataB1> damage.|nFactory lasts <ANsy,Dur3> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "F";
             ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -7886,7 +7886,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "realHP> hit points";
             ability.TextTooltipNormalExtended[3] = " deal <ncgb";
             ability.TextTooltipLearn = "Learn Pocket Factory - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Creates a factory which automatically constructs Clockwerk Goblins. These artificial Goblins, in addition to being potent attackers, explode upon death, causing damage to nearby enemy units. |n|n|cffffcc00Level 1|r - Explosion does <Asdg,DataB1> damage.|n|cffffcc00Level 2|r - Explosion does <Asd2,DataB1> damage.|n|cffffcc00Level 3|r - Explosion does <Asd3,DataB1> damage.|nFactory lasts <ANs1,Dur3> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "F// Pocket Factory";
             ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -7976,7 +7976,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "realHP> hit points";
             ability.TextTooltipNormalExtended[3] = " deal <ncgb";
             ability.TextTooltipLearn = "Learn Pocket Factory - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Creates a factory which automatically constructs Clockwerk Goblins. These artificial Goblins, in addition to being potent attackers, explode upon death, causing damage to nearby enemy units. |n|n|cffffcc00Level 1|r - Explosion does <Asdg,DataB1> damage.|n|cffffcc00Level 2|r - Explosion does <Asd2,DataB1> damage.|n|cffffcc00Level 3|r - Explosion does <Asd3,DataB1> damage.|nFactory lasts <ANs2,Dur3> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "F";
             ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -8066,7 +8066,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "realHP> hit points";
             ability.TextTooltipNormalExtended[3] = " deal <ncgb";
             ability.TextTooltipLearn = "Learn Pocket Factory - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Creates a factory which automatically constructs Clockwerk Goblins. These artificial Goblins, in addition to being potent attackers, explode upon death, causing damage to nearby enemy units. |n|n|cffffcc00Level 1|r - Explosion does <Asdg,DataB1> damage.|n|cffffcc00Level 2|r - Explosion does <Asd2,DataB1> damage.|n|cffffcc00Level 3|r - Explosion does <Asd3,DataB1> damage.|nFactory lasts <ANs3,Dur3> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "F";
             ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -8458,7 +8458,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1> damage on the first attack";
             ability.TextTooltipNormalExtended[3] = " twice as much on the second attack";
             ability.TextTooltipLearn = "Learn Incinerate - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Each attack made is enhanced with living flames that cling to the target. These flames add a small amount of damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing significant damage to all nearby hostile units.|n|n|cffffcc00Level 1|r - <ANic,DataA1> bonus damage, <ANic,DataB1> incineration damage.|n|cffffcc00Level 2|r - <ANic,DataA2> bonus damage, <ANic,DataB2> incineration damage.|n|cffffcc00Level 3|r - <ANic,DataA3> bonus damage, <ANic,DataB3> incineration damage.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "C";
             ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -8550,7 +8550,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[3] = " twice as much on the second attack";
             ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
             ability.TextTooltipLearn = "Learn Incinerate - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Each attack made is enhanced with living flames that cling to the target. These flames add a small amount of damage on the first attack, twice as much on the second attack, three times as much on the third attack, etc.|n|nIf a unit dies while under this effect, it is incinerated, causing significant damage to all nearby hostile units.|n|n|cffffcc00Level 1|r - <ANia,DataA1> bonus damage, <ANia,DataB1> incineration damage.|n|cffffcc00Level 2|r - <ANia,DataA2> bonus damage, <ANia,DataB2> incineration damage.|n|cffffcc00Level 3|r - <ANia,DataA3> bonus damage, <ANia,DataB3> incineration damage.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "C";
             ability.TextHotkeyNormalRaw = "C";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -8615,7 +8615,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1> damage per second";
             ability.TextTooltipNormalExtended[3] = " prevent the casting of spells";
             ability.TextTooltipLearn = "Learn Soul Burn - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Wreaths an enemy unit in magical flames which cause damage over time, prevent the casting of spells, and reduce attack damage by <ANso,DataC1,%>%.|n|n|cffffcc00Level 1|r - 80 damage over <ANso,Dur1> seconds.|n|cffffcc00Level 2|r - 200 damage over <ANso,Dur2> seconds.|n|cffffcc00Level 3|r - 340 damage over <ANso,Dur3> seconds.|n|nSoul Burn lasts roughly half as long on Heroes.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "B";
             ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -8700,7 +8700,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " a resilient and deadly fire creature. As a Lava Spawn deals damage";
             ability.TextTooltipNormalExtended[3] = " it consumes the flesh of its target";
             ability.TextTooltipLearn = "Learn Summon Lava Spawn - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Summons a Lava Spawn, a resilient and deadly fire creature. As a Lava Spawn deals damage, it consumes the flesh of its target, eventually splitting into two healthy Lava Spawns.|nLasts <ANlm,Dur1> seconds.|n|n|cffffcc00Level 1|r - <nlv1,realHP> hit points, <nlv1,mindmg1> - <nlv1,maxdmg1> damage.|n|cffffcc00Level 2|r - <nlv2,realHP> hit points, <nlv2,mindmg1> - <nlv2,maxdmg1> damage.|n|cffffcc00Level 3|r - <nlv3,realHP> hit points, <nlv3,mindmg1> - <nlv3,maxdmg1> damage.|n|n|cffffcc00Attacks ground and air units.|r";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "W";
             ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -8791,7 +8791,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataC1> seconds";
             ability.TextTooltipNormalExtended[3] = " a wave of molten rocks is hurled from the Volcano at nearby ground units and buildings";
             ability.TextTooltipLearn = "Learn Volcano";
-            ability.TextTooltipLearnExtended = "Causes the ground to erupt into a massive Volcano. Every <ANvc,DataC1> seconds, a wave of molten rocks is hurled from the Volcano at nearby ground units and buildings, causing <ANvc,DataE1> damage to each target and stunning it for <ANvc,Dur1> seconds. Buildings take <ANvc,DataD1> times more damage from molten rocks than units do.|nLasts 35 seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "V";
             ability.TextHotkeyNormalRaw = "V";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -8961,7 +8961,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " dealing <SNin";
             ability.TextTooltipNormalExtended[3] = "DataA1> damage and stunning enemy land units for <SNin";
             ability.TextTooltipLearn = "Learn Inferno";
-            ability.TextTooltipLearnExtended = "Calls an Infernal down from the sky, dealing <SNin,DataA1> damage and stunning enemy land units for <SNin,Dur1> seconds in an area. The Infernal lasts <SNin,DataB1> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "N";
             ability.TextHotkeyNormalRaw = "N";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -9038,7 +9038,7 @@ namespace War3Api.Object
             ability.StatsRaceRaw = "creeps";
             ability.TextTooltipNormal[1] = "Firebolt";
             ability.TextTooltipNormalExtended[1] = "Hurls a fiery bolt that stuns a target enemy unit.";
-            ability.TextTooltipLearn = "Learn Firebolt, Level %d";
+            ability.TextTooltipLearn = "Learn Firebolt";
             ability.TextHotkeyLearnRaw = "B";
             ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -9105,7 +9105,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[1] = "Instantly turns a creature or building inside-out";
             ability.TextTooltipNormalExtended[2] = " destroying it utterly.";
             ability.TextTooltipLearn = "Learn Finger of Death";
-            ability.TextTooltipLearnExtended = "Instantly turns a creature or building inside-out, destroying it utterly.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "F";
             ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -9179,7 +9179,7 @@ namespace War3Api.Object
             ability.TextTooltipNormal[1] = "Finger of Pain";
             ability.TextTooltipNormalExtended[1] = "Horribly cripples the innards of a creature or building.";
             ability.TextTooltipLearn = "Learn Finger of Pain";
-            ability.TextTooltipLearnExtended = "Horribly cripples the innards of a creature or building.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "F";
             ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -9241,7 +9241,7 @@ namespace War3Api.Object
             ability.TextTooltipNormal[1] = "Finger of Pain";
             ability.TextTooltipNormalExtended[1] = "Horribly cripples the innards of a creature or building.";
             ability.TextTooltipLearn = "Learn Finger of Pain";
-            ability.TextTooltipLearnExtended = "Horribly cripples the innards of a creature or building.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "F";
             ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -9304,7 +9304,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[1] = "Opens a portal";
             ability.TextTooltipNormalExtended[2] = " allowing demons to step through and do Archimonde's bidding.";
             ability.TextTooltipLearn = "Learn Dark Portal";
-            ability.TextTooltipLearnExtended = "Opens a portal, allowing demons to step through and do Archimonde's bidding.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "D";
             ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -9378,7 +9378,7 @@ namespace War3Api.Object
             ability.TextTooltipNormal[1] = "Rain of Chaos";
             ability.TextTooltipNormalExtended[1] = "Calls down multiple Infernals from the sky.";
             ability.TextTooltipLearn = "Learn Rain of Chaos";
-            ability.TextTooltipLearnExtended = "Calls down multiple Infernals from the sky.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "R";
             ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -9448,7 +9448,7 @@ namespace War3Api.Object
             ability.TextTooltipNormal[1] = "Rain of Chaos";
             ability.TextTooltipNormalExtended[1] = "Calls down multiple Infernals from the sky.";
             ability.TextTooltipLearn = "Learn Rain of Chaos";
-            ability.TextTooltipLearnExtended = "Calls down multiple Infernals from the sky.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "R";
             ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -9512,7 +9512,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataB1> seconds that damages nearby enemy units. Each wave deals <AEsb";
             ability.TextTooltipNormalExtended[3] = "DataA1> damage. |nLasts for <AEsb";
             ability.TextTooltipLearn = "Learn Starfall";
-            ability.TextTooltipLearnExtended = "Calls down waves of falling stars that damage nearby enemy units. Each wave deals <AEsb,DataA1> damage. |nLasts for <AEsb,Dur1> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "F";
             ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -9588,7 +9588,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " the demon will come back to life. Reincarnation has a <ANrn";
             ability.TextTooltipNormalExtended[3] = "Cool1> second cooldown.";
             ability.TextTooltipLearn = "Learn Reincarnation";
-            ability.TextTooltipLearnExtended = "When killed, the demon will come back to life. Reincarnation has a <ANrn,Cool1> second cooldown.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "R";
             ability.TextHotkeyNormalRaw = "R";
             ability.TextHotkeyTurnOffRaw = "R";
@@ -9655,7 +9655,7 @@ namespace War3Api.Object
             ability.TextTooltipNormal[1] = "Dark Conversion";
             ability.TextTooltipNormalExtended[1] = "Puts a target villager to sleep and converts it into a zombie.";
             ability.TextTooltipLearn = "Learn Dark Conversion";
-            ability.TextTooltipLearnExtended = "Puts a target villager to sleep and converts it into a zombie.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "K";
             ability.TextHotkeyNormalRaw = "K";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -9725,7 +9725,7 @@ namespace War3Api.Object
             ability.TextTooltipNormal[1] = "Dark Conversion";
             ability.TextTooltipNormalExtended[1] = "Puts a target villager to sleep and converts it into a zombie.";
             ability.TextTooltipLearn = "Learn Dark Conversion";
-            ability.TextTooltipLearnExtended = "Puts a target villager to sleep and converts it into a zombie.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "K";
             ability.TextHotkeyNormalRaw = "K";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -9795,7 +9795,7 @@ namespace War3Api.Object
             ability.TextTooltipNormal[1] = "Soul Preservation";
             ability.TextTooltipNormalExtended[1] = "Puts a converted zombie into the nether-realm for later use.";
             ability.TextTooltipLearn = "Learn Soul Preservation";
-            ability.TextTooltipLearnExtended = "Puts a converted zombie into the nether-realm for later use.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "L";
             ability.TextHotkeyNormalRaw = "L";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -9861,7 +9861,7 @@ namespace War3Api.Object
             ability.TextTooltipNormal[1] = "Metamorphosis";
             ability.TextTooltipNormalExtended[1] = "Transforms the Demon Hunter into a powerful Demon with a ranged attack.";
             ability.TextTooltipLearn = "Learn Metamorphosis";
-            ability.TextTooltipLearnExtended = "Transforms the Demon Hunter into a powerful Demon with a ranged attack.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "T";
             ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -9947,7 +9947,7 @@ namespace War3Api.Object
             ability.TextTooltipNormal[1] = "Metamorphosis";
             ability.TextTooltipNormalExtended[1] = "Transforms the Demon Hunter into a powerful Demon with a ranged attack.";
             ability.TextTooltipLearn = "Learn Metamorphosis";
-            ability.TextTooltipLearnExtended = "Transforms the Demon Hunter into a powerful Demon with a ranged attack.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "T";
             ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -10035,7 +10035,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " causing <SNeq";
             ability.TextTooltipNormalExtended[3] = "DataB1> damage per second to buildings and slowing units by <SNeq";
             ability.TextTooltipLearn = "Learn Earthquake";
-            ability.TextTooltipLearnExtended = "Makes the ground tremble and break, causing <SNeq,DataB1> damage per second to buildings and slowing units by <SNeq,DataC1,%>% within the area of effect. Lasts <SNeq,Dur1> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "E";
             ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -10115,7 +10115,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1";
             ability.TextTooltipNormalExtended[3] = "%>% of its base hit points per second. Also destroys trees. |nLasts <SNdd";
             ability.TextTooltipLearn = "Learn Death And Decay";
-            ability.TextTooltipLearnExtended = "Damages everything in its area of effect by <SNdd,DataA1,%>% of its base hit points per second. Also destroys trees.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "D";
             ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -10188,7 +10188,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1> damage in a small target area. |nLasts <ANmo";
             ability.TextTooltipNormalExtended[3] = "Dur1> seconds.";
             ability.TextTooltipLearn = "Learn Monsoon - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Calls a storm of lightning bolts to strike enemy units for <ANmo,DataA1> damage. |nLasts <ANmo,Dur1> seconds. |n|n|cffffcc00Level 1|r - Small area. |n|cffffcc00Level 2|r - Medium area. |n|cffffcc00Level 3|r - Large area.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "N";
             ability.TextHotkeyNormalRaw = "N";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -10267,7 +10267,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[3] = " but drains mana with each shot fired.";
             ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
             ability.TextTooltipLearn = "Learn Poison Arrows - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Increases the damage of the Priestess' attack by adding fire. |n|n|cffffcc00Level 1|r - <AHfa,DataA1> bonus damage. |n|cffffcc00Level 2|r - <AHfa,DataA2> bonus damage. |n|cffffcc00Level 3|r - <AHfa,DataA3> bonus damage.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "R";
             ability.TextHotkeyNormalRaw = "R";
             ability.TextHotkeyTurnOffRaw = "R";
@@ -10423,7 +10423,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[3] = "DataB1";
             ability.TextTooltipTurnOffExtended[1] = "|cffc3dbffRight-click to deactivate auto-casting.|r";
             ability.TextTooltipLearn = "Learn Cold Arrows - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Adds a cold effect to each attack, slowing a target enemy unit's attacks and movement. |n|n|cffffcc00Level 1|r - <AHca,DataB1,%>% attack rate, <AHca,DataC1,%>% movement speed, lasts <AHca,Dur1> seconds. |n|cffffcc00Level 2|r - <AHca,DataB2,%>% attack rate, <AHca,DataC2,%>% movement speed, lasts <AHca,Dur2> seconds. |n|cffffcc00Level 3|r - <AHca,DataB3,%>% attack rate, <AHca,DataC3,%>% movement speed, lasts <AHca,Dur3> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "C";
             ability.TextHotkeyNormalRaw = "C";
             ability.TextHotkeyTurnOffRaw = "C";
@@ -10505,7 +10505,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1> bonus attack damage. |nLasts <ANbr";
             ability.TextTooltipNormalExtended[3] = "Dur1> seconds.";
             ability.TextTooltipLearn = "Learn Battle Roar - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Gives nearby friendly units a bonus to attack damage. |nLasts <ANbr,Dur1> seconds. |n|n|cffffcc00Level 1|r - <ANbr,DataA1> damage. |n|cffffcc00Level 2|r - <ANbr,DataA2> damage. |n|cffffcc00Level 3|r - <ANbr,DataA3> damage. |n|cffffcc00Level 4|r - <ANbr,DataA4> damage.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "R";
             ability.TextHotkeyNormalRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -10599,7 +10599,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " a powerful <ngzc";
             ability.TextTooltipNormalExtended[3] = "realHP> hit point bear";
             ability.TextTooltipLearn = "Learn Summon Misha - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Summons Misha, a powerful bear, to attack your enemies. |n|n|cffffcc00Level 1|r - <ngzc,realHP> hit points, <ngzc,mindmg1> to <ngzc,maxdmg1> damage. |n|cffffcc00Level 2|r - <ngzd,realHP> hit points, <ngzd,mindmg1> to <ngzd,maxdmg1> damage, has Bash. |n|cffffcc00Level 3|r - <ngza,realHP> hit points, <ngza,mindmg1> to <ngza,maxdmg1> damage, has Maul. |n|cffffcc00Level 4|r - <ngz4,realHP> hit points, <ngz4,mindmg1> to <ngz4,maxdmg1> damage, has Maul.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "I";
             ability.TextHotkeyNormalRaw = "I";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -10664,7 +10664,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1> points to Agility";
             ability.TextTooltipNormalExtended[3] = " Intelligence";
             ability.TextTooltipLearn = "Learn Attribute Bonus - [|cffffcc00Level %d|r].";
-            ability.TextTooltipLearnExtended = "Gives a permanent bonus to Agility, Intelligence, and Strength. |n|n|cffffcc00Level 1|r - Adds three points to all stats.|n|cffffcc00Level 2|r - Adds three additional points.|n|cffffcc00Level 3|r - Adds three additional points.|n|cffffcc00Level 4|r - Adds three additional points.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
@@ -10745,7 +10745,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "realHP> hit point quilbeast to fling spines at your enemies. |nLasts <Arsq";
             ability.TextTooltipNormalExtended[3] = "Dur1> seconds.";
             ability.TextTooltipLearn = "Learn Summon Quilbeast - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Summons an angry quilbeast to attack your enemies. |nLasts <Arsq,Dur1> seconds. |n|n|cffffcc00Level 1|r - <nqb1,realHP> hit points, <nqb1,mindmg1> to <nqb1,maxdmg1> damage. |n|cffffcc00Level 2|r - <nqb2,realHP> hit points, <nqb2,mindmg1> to <nqb2,maxdmg1> damage, has Frenzy. |n|cffffcc00Level 3|r - <nqb3,realHP> hit points, <nqb3,mindmg1> to <nqb3,maxdmg1> area effect damage, has Frenzy. |n|cffffcc00Level 4|r - <nqb4,realHP> hit points, <nqb4,mindmg1> to <nqb4,maxdmg1> area effect damage, has Frenzy.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "Q";
             ability.TextHotkeyNormalRaw = "Q";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -10810,7 +10810,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataC1> damage. |nLasts <Arsp";
             ability.TextTooltipNormalExtended[3] = "Dur1> seconds.";
             ability.TextTooltipLearn = "Learn Stampede - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Calls down hordes of rampaging thunder lizards to explode upon the Beastmaster's enemies. |n|n|cffffcc00Level 1|r -  Each exploding lizard deals <Arsp,DataC1> damage. |n|cffffcc00Level 2|r -  Each exploding lizard deals <Arsp,DataC2> damage. |n|nLasts <Arsp,Dur2> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "E";
             ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -10875,7 +10875,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " dealing <ANsb";
             ability.TextTooltipNormalExtended[3] = "DataA1> damage and stunning the target for <ANsb";
             ability.TextTooltipLearn = "Learn Storm Bolt - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "A magical hammer that is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - <ANsb,DataA1> damage, <ANsb,Dur1> second stun. |n|cffffcc00Level 2|r - <ANsb,DataA2> damage, <ANsb,Dur2> second stun. |n|cffffcc00Level 3|r - <ANsb,DataA3> damage, <ANsb,Dur3> second stun. |n|cffffcc00Level 4|r - <ANsb,DataA4> damage, <ANsb,Dur4> second stun.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "T";
             ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -10941,7 +10941,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataB1> times";
             ability.TextTooltipNormalExtended[3] = " healing <ANhw";
             ability.TextTooltipLearn = "Learn Healing Wave - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Calls forth a wave of energy that heals a target and bounces to nearby friendlies. Each bounce heals less damage. |n|n|cffffcc00Level 1|r - Heals <ANhw,DataA1> damage, jumps <ANhw,DataB1> times. |n|cffffcc00Level 2|r - Heals <ANhw,DataA2> damage, jumps <ANhw,DataB2> times. |n|cffffcc00Level 3|r - Heals <ANhw,DataA3> damage, jumps <ANhw,DataB3> times. |n|cffffcc00Level 4|r - Heals <ANhw,DataA4> damage, jumps <ANhw,DataB4> times.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "E";
             ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -11007,7 +11007,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "realHP> hit points";
             ability.TextTooltipNormalExtended[3] = " is magic immune";
             ability.TextTooltipLearn = "Learn Serpent Ward - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Summons an immobile serpentine ward to attack the Shadow Hunter's enemies. The ward is immune to magic. |nLasts <Arsw,Dur1> seconds. |n|n|cffffcc00Attacks land and air units.|r |n|n|cffffcc00Level 1|r - <osp1,realHP> hit points, <osp1,mindmg1> - <osp1,maxdmg1> damage. |n|cffffcc00Level 2|r - <osp2,realHP> hit points, <osp2,mindmg1> - <osp2,maxdmg1> damage. |n|cffffcc00Level 3|r - <osp3,realHP> hit points, <osp3,mindmg1> - <osp3,maxdmg1> damage. |n|cffffcc00Level 4|r - <osp4,realHP> hit points, <osp4,mindmg1> - <osp4,maxdmg1> splash damage.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "W";
             ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -11073,7 +11073,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "Dur1> seconds.";
             ability.TextTooltipNormalExtended[3] = "Transforms an enemy unit into a random critter for <ANhx";
             ability.TextTooltipLearn = "Learn Hex - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Transforms an enemy unit into a random critter, disabling special abilities. |n|n|cffffcc00Level 1|r - <ANhx,Cost1> mana, lasts <ANhx,Dur1> seconds. |n|cffffcc00Level 2|r - <ANhx,Cost2> mana, lasts <ANhx,Dur2> seconds. |n|cffffcc00Level 3|r - <ANhx,Cost3> mana, lasts <ANhx,Dur3> seconds. |n|cffffcc00Level 4|r - <ANhx,Cost4> mana, lasts <ANhx,Dur4> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "X";
             ability.TextHotkeyNormalRaw = "X";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -11137,7 +11137,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "HeroDur1> seconds.";
             ability.TextTooltipNormalExtended[3] = "Creates a swarm of angry spirits that drain the life energies of nearby enemy units. They store the life energy they drain from their victims and use it to replenish Rokhan's hit points when they return.|nLasts <AOls";
             ability.TextTooltipLearn = "Learn Voodoo Spirits - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Creates a swarm of angry spirits that drain the life energies of nearby enemy units. They store the life energy they drain from their victims and use it to replenish Rokhan's hit points when they return.|n|n|cffffcc00Level 1|r - <AOls,DataA1> spirits. |n|cffffcc00Level 2|r - <AOls,DataA2> spirits.|n|nLasts <AOls,HeroDur1> seconds.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "V";
             ability.TextHotkeyNormalRaw = "V";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -11203,7 +11203,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " dealing <ANcf";
             ability.TextTooltipNormalExtended[3] = "DataA1> initial damage. Units that have Drunken Haze on them will ignite and burn for <ANcf";
             ability.TextTooltipLearn = "Learn Breath of Fire - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Breathes a cone of fire at enemy units which deals damage. Units that have Drunken Haze on them will ignite and take burn damage over time. |nLasts <ANcf,Dur1> seconds. |n|n|cffffcc00Level 1|r - <ANcf,DataA1> initial damage, <ANcf,DataE1> damage per second. |n|cffffcc00Level 2|r - <ANcf,DataA2> initial damage, <ANcf,DataE2> damage per second. |n|cffffcc00Level 3|r - <ANcf,DataA3> initial damage, <ANcf,DataE3> damage per second. |n|cffffcc00Level 4|r - <ANcf,DataA4> initial damage, <ANcf,DataE4> damage per second.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "F";
             ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -11269,7 +11269,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataD1";
             ability.TextTooltipNormalExtended[3] = "%>% chance to dodge an attack and a <Acdb";
             ability.TextTooltipLearn = "Learn Drunken Brawler - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Gives a percent chance to avoid attacks and a <Acdb,DataA1>% chance to deal additional damage. |n|n|cffffcc00Level 1|r - <Acdb,DataD1,%>% dodge, <Acdb,DataB1> times normal damage. |n|cffffcc00Level 2|r - <Acdb,DataD2,%>% dodge, <Acdb,DataB2> times normal damage. |n|cffffcc00Level 3|r - <Acdb,DataD3,%>% dodge, <Acdb,DataB3> times normal damage. |n|cffffcc00Level 4|r - <Acdb,DataD4,%>% dodge, <Acdb,DataB4> times normal damage.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
@@ -11334,7 +11334,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " causing their movement speed to be reduced by <Acdh";
             ability.TextTooltipNormalExtended[3] = "DataC1";
             ability.TextTooltipLearn = "Learn Drunken Haze - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Drenches enemy units in alcohol, causing their movement speed to be reduced, and have a chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage over time. |nLasts <Acdh,Dur1> seconds |n|n|cffffcc00Level 1|r - <Acdh,DataC1,%>% movement speed, <Acdh,DataB1,%>% miss chance. |n|cffffcc00Level 2|r - <Acdh,DataC2,%>% movement speed, <Acdh,DataB2,%>% miss chance. |n|cffffcc00Level 3|r - <Acdh,DataC3,%>% movement speed, <Acdh,DataB3,%>% miss chance.|n|cffffcc00Level 4|r - <Acdh,DataC4,%>% movement speed, <Acdh,DataB4,%>% miss chance.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "D";
             ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -11399,8 +11399,8 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[1] = "Splits the Brewmaster into elements";
             ability.TextTooltipNormalExtended[2] = " forming 3 specialized warriors. If any of them survive until the end of their summoned timer";
             ability.TextTooltipNormalExtended[3] = " the Brewmaster is reborn.";
-            ability.TextTooltipLearn = "Learn Storm, Earth, And Fire - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Splits the Brewmaster into elements, forming 3 specialized warriors. If any of them survive until the end of their summoned timer, the Brewmaster is reborn.|n|n|cffffcc00Level 1|r - Summons three mighty Pandas. |n|cffffcc00Level 2|r - Summons three even mightier Pandas.";
+            ability.TextTooltipLearn = "Learn Storm";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "E";
             ability.TextHotkeyNormalRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -11466,7 +11466,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1";
             ability.TextTooltipNormalExtended[3] = "%>% and attack rate by <AOr2";
             ability.TextTooltipLearn = "Learn Endurance Aura - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Increases the movement speed and attack rate of nearby friendly units. |n|n|cffffcc00Level 1|r - <AOr2,DataA1,%>% movement, <AOr2,DataB1,%>% attack. |n|cffffcc00Level 2|r - <AOr2,DataA2,%>% movement, <AOr2,DataB2,%>% attack. |n|cffffcc00Level 3|r - <AOr2,DataA3,%>% movement, <AOr2,DataB3,%>% attack. |n|cffffcc00Level 4|r - <AOr2,DataA4,%>% movement, <AOr2,DataB4,%>% attack.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "E";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
@@ -11530,7 +11530,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " Cairne will come back to life. Reincarnation has a <AOr3";
             ability.TextTooltipNormalExtended[3] = "Cool1> second cooldown.";
             ability.TextTooltipLearn = "Learn Reincarnation";
-            ability.TextTooltipLearnExtended = "When killed, the Tauren Chieftain will come back to life. |n|n|cffffcc00Level 1|r - <AOr3,Cool1> second cooldown. |n|cffffcc00Level 2|r - <AOr3,Cool2> second cooldown.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
@@ -11595,7 +11595,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " causing <AOs2";
             ability.TextTooltipNormalExtended[3] = "DataA1> damage to land units in a line.";
             ability.TextTooltipLearn = "Learn Shockwave - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "A wave of force that ripples out from the Hero, causing damage to land units in a line. |n|n|cffffcc00Level 1|r - <AOs2,DataA1> damage. |n|cffffcc00Level 2|r - <AOs2,DataA2> damage. |n|cffffcc00Level 3|r - <AOs2,DataA3> damage. |n|cffffcc00Level 4|r - <AOs2,DataA4> damage.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "W";
             ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -11660,7 +11660,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " dealing <AOw2";
             ability.TextTooltipNormalExtended[3] = "DataA1> damage to nearby enemy land units and stunning them for <AOw2";
             ability.TextTooltipLearn = "Learn War Stomp - [|cffffcc00Level %d|r].";
-            ability.TextTooltipLearnExtended = "Slams the ground, stunning and damaging nearby enemy land units. |n|n|cffffcc00Level 1|r - <AOw2,DataA1> damage, <AOw2,Dur1> second stun. |n|cffffcc00Level 2|r - <AOw2,DataA2> damage, <AOw2,Dur2> second stun. |n|cffffcc00Level 3|r - <AOw2,DataA3> damage, <AOw2,Dur3> second stun. |n|cffffcc00Level 4|r - <AOw2,DataA4> damage, <AOw2,Dur4> second stun.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "T";
             ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -14474,9 +14474,9 @@ namespace War3Api.Object
             ability.StatsEffectsRaw[3] = null;
             ability.StatsEffectsRaw[4] = null;
             ability.DataNormalFormUnitRaw[1] = "edoc";
-            ability.DataNormalFormUnitRaw[2] = " - ";
-            ability.DataNormalFormUnitRaw[3] = " - ";
-            ability.DataNormalFormUnitRaw[4] = " - ";
+            ability.DataNormalFormUnitRaw[2] = " -";
+            ability.DataNormalFormUnitRaw[3] = " -";
+            ability.DataNormalFormUnitRaw[4] = " -";
             ability.DataMorphingFlagsRaw[1] = 1;
             ability.DataMorphingFlagsRaw[2] = 0;
             ability.DataMorphingFlagsRaw[3] = 0;
@@ -14635,7 +14635,7 @@ namespace War3Api.Object
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
-            ability.TextTooltipNormal[1] = "Black Arrow ";
+            ability.TextTooltipNormal[1] = "Black Arrow";
             ability.TextTooltipTurnOff[1] = "|cffc3dbffRight-click to activate auto-casting.|r";
             ability.TextTooltipNormalExtended[1] = "Adds <ACbk";
             ability.TextTooltipNormalExtended[2] = "DataA1> bonus damage to attacks. Units killed while under the effect of Black Arrow will turn into skeletons.";
@@ -15376,7 +15376,7 @@ namespace War3Api.Object
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
-            ability.TextTooltipNormal[1] = "Breath of Fire ";
+            ability.TextTooltipNormal[1] = "Breath of Fire";
             ability.TextTooltipNormalExtended[1] = "Breathes a cone of fire at enemy units";
             ability.TextTooltipNormalExtended[2] = " dealing <ACbc";
             ability.TextTooltipNormalExtended[3] = "DataA1> damage.";
@@ -17006,7 +17006,7 @@ namespace War3Api.Object
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
-            ability.TextTooltipNormal[1] = "Crushing Wave ";
+            ability.TextTooltipNormal[1] = "Crushing Wave";
             ability.TextTooltipNormalExtended[1] = "Sends a gigantic wave which deals <ACcv";
             ability.TextTooltipNormalExtended[2] = "DataA1> damage to each enemy land unit in a line";
             ability.TextTooltipNormalExtended[3] = " up to <ACcv";
@@ -20746,7 +20746,7 @@ namespace War3Api.Object
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
-            ability.TextTooltipNormal[1] = "Life Drain ";
+            ability.TextTooltipNormal[1] = "Life Drain";
             ability.TextTooltipNormalExtended[1] = "Absorbs the life essence of a target enemy unit by taking <ACdr";
             ability.TextTooltipNormalExtended[2] = "DataA1> hit points per second from it and giving them to the caster. |nLasts <ACdr";
             ability.TextTooltipNormalExtended[3] = "Dur1> seconds.";
@@ -22636,7 +22636,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataB1> Spirit Beast companions. Each beast has <nsw1";
             ability.TextTooltipNormalExtended[3] = "realHP> hit points and deals <nsw1";
             ability.TextTooltipLearn = "Learn Spirit Beast - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Summons <ACs8,DataB1> Spirit Beasts to fight Akama's enemies. |nLasts <ACs8,Dur1> seconds. |n|n|cffffcc00Level 1|r - <nsw1,realHP> hit points, <nsw1,mindmg1> - <nsw1,maxdmg1> damage. |n|cffffcc00Level 2|r - <nsw2,realHP> hit points, <nsw2,mindmg1> - <nsw2,maxdmg1> damage and Feedback. |n|cffffcc00Level 3|r - <nsw3,realHP> hit points, <nsw3,mindmg1> - <nsw3,maxdmg1> damage, Feedback and Mana Burn.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "B";
             ability.TextHotkeyNormalRaw = "B";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -22701,7 +22701,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataB1> Spirit Wolf companions. Each wolf has <osw1";
             ability.TextTooltipNormalExtended[3] = "realHP> hit points and deals <osw1";
             ability.TextTooltipLearn = "Learn Feral Spirit - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Summons <ACs7,DataB1> Spirit Wolves to fight the Far Seer's enemies. |nLasts <ACs7,Dur1> seconds. |n|n|cffffcc00Level 1|r - <osw1,realHP> hit points, <osw1,mindmg1> - <osw1,maxdmg1> damage. |n|cffffcc00Level 2|r - <osw2,realHP> hit points, <osw2,mindmg1> - <osw2,maxdmg1> damage and Critical Strike. |n|cffffcc00Level 3|r - <osw3,realHP> hit points, <osw3,mindmg1> - <osw3,maxdmg1> damage, Critical Strike and Invisibility.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "T";
             ability.TextHotkeyNormalRaw = "T";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -22763,7 +22763,7 @@ namespace War3Api.Object
             ability.TextTooltipNormal[1] = "Finger of Death";
             ability.TextTooltipNormalExtended[1] = "Instantly turns a creature or building inside-out.";
             ability.TextTooltipLearn = "Learn Finger of Death";
-            ability.TextTooltipLearnExtended = "Instantly turns a creature or building inside-out.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "F";
             ability.TextHotkeyNormalRaw = "F";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -25705,7 +25705,7 @@ namespace War3Api.Object
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
-            ability.TextTooltipNormal[1] = "Howl of Terror ";
+            ability.TextTooltipNormal[1] = "Howl of Terror";
             ability.TextTooltipNormalExtended[1] = "Emits a terrifying howl that reduces nearby enemy units' attack damage by <Acht";
             ability.TextTooltipNormalExtended[2] = "DataA1";
             ability.TextTooltipNormalExtended[3] = "%>% for <Acht";
@@ -28625,7 +28625,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = "DataA1> damage in a small target area. |nLasts <ACmo";
             ability.TextTooltipNormalExtended[3] = "Dur1> seconds.";
             ability.TextTooltipLearn = "Learn Monsoon - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "Calls a storm of lightning bolts to strike enemy units for <ANmo,DataA1> damage. |nLasts <ANmo,Dur1> seconds. |n|n|cffffcc00Level 1|r - Small area. |n|cffffcc00Level 2|r - Medium area. |n|cffffcc00Level 3|r - Large area.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "N";
             ability.TextHotkeyNormalRaw = "N";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -31951,7 +31951,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " this Hero will come back to life. Reincarnation has a <ANr2";
             ability.TextTooltipNormalExtended[3] = "Cool1> second cooldown.";
             ability.TextTooltipLearn = "Learn Reincarnation";
-            ability.TextTooltipLearnExtended = "When killed, this Hero will come back to life. Reincarnation has a <ANr2,Cool1> second cooldown.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "R";
             ability.TechtreeCheckDependenciesRaw = 1;
             ability.StatsPriorityForSpellSteal = 0;
@@ -35441,7 +35441,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[2] = " causing <AOsh";
             ability.TextTooltipNormalExtended[3] = "DataA1> damage to land units in a line.";
             ability.TextTooltipLearn = "Learn Shockwave - [|cffffcc00Level %d|r]";
-            ability.TextTooltipLearnExtended = "A wave of force that ripples out from the Hero, causing damage to land units in a line. |n|n|cffffcc00Level 1|r - <AOsh,DataA1> damage. |n|cffffcc00Level 2|r - <AOsh,DataA2> damage. |n|cffffcc00Level 3|r - <AOsh,DataA3> damage.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "W";
             ability.TextHotkeyNormalRaw = "W";
             ability.TechtreeCheckDependenciesRaw = 1;
@@ -35576,7 +35576,7 @@ namespace War3Api.Object
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 0;
             ability.StatsRaceRaw = "creeps";
-            ability.TextTooltipNormal[1] = "Siphon Mana ";
+            ability.TextTooltipNormal[1] = "Siphon Mana";
             ability.TextTooltipNormalExtended[1] = "Absorbs the magical energies of a target enemy unit by taking <ACsm";
             ability.TextTooltipNormalExtended[2] = "DataB1> mana per second from it and giving it to this unit. |nLasts <ACsm";
             ability.TextTooltipNormalExtended[3] = "Dur1> seconds.";
@@ -43202,7 +43202,7 @@ namespace War3Api.Object
         protected virtual BuildTinyScoutTower LoadBuildTinyScoutTower(ObjectDatabaseBase db)
         {
             var ability = new BuildTinyScoutTower(db);
-            ability.TextName = "Build Tiny Scout Tower ";
+            ability.TextName = "Build Tiny Scout Tower";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -47774,7 +47774,7 @@ namespace War3Api.Object
         protected virtual PowerupHealAoe LoadPowerupHealAoe(ObjectDatabaseBase db)
         {
             var ability = new PowerupHealAoe(db);
-            ability.TextName = "Powerup Area Healing ";
+            ability.TextName = "Powerup Area Healing";
             ability.StatsHeroAbilityRaw = 0;
             ability.StatsItemAbilityRaw = 1;
             ability.StatsRaceRaw = "other";
@@ -53447,7 +53447,7 @@ namespace War3Api.Object
             ability.TextTooltipNormalExtended[1] = "Summons <AUds";
             ability.TextTooltipNormalExtended[2] = "DataA1> friendly units from a target area to the caster.";
             ability.TextTooltipLearn = "Learn Dark Summoning";
-            ability.TextTooltipLearnExtended = "Summons <AUds,DataA1> friendly units from a target area to the caster.";
+            ability.TextTooltipLearnExtended = "";
             ability.TextHotkeyLearnRaw = "D";
             ability.TextHotkeyNormalRaw = "D";
             ability.TechtreeCheckDependenciesRaw = 0;

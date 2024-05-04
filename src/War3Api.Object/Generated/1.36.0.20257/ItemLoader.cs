@@ -2349,7 +2349,7 @@ namespace War3Api.Object
             item.TextDescription = "Conjures a Sentry Ward.";
             item.TextName = "Sentry Wards";
             item.TextTooltipBasic = "Purchase Sentry Wards";
-            item.TextTooltipExtended = "Drops a Sentry Ward to spy upon an area for <AIsw,Dur1> seconds. |nContains <wswd,uses> charges." " ;
+            item.TextTooltipExtended = "Drops a Sentry Ward to spy upon an area for <AIsw,Dur1> seconds. |nContains <wswd,uses> charges.";
             return item;
         }
 
@@ -3060,7 +3060,7 @@ namespace War3Api.Object
             item.StatsMaxStacks = 0;
             item.TextDescription = "Regenerates the health and mana of nearby units.";
             item.TextHotkeyRaw = "R";
-            item.TextName = "Greater Scroll of Replenishment ";
+            item.TextName = "Greater Scroll of Replenishment";
             item.TextTooltipBasic = "Purchase Greater Scroll of Replenishment";
             item.TextTooltipExtended = "|cff87ceebNon-Combat Consumable|r|nRegenerates <AIp6,DataA1> hit points and <AIp6,DataB1> mana of the Hero and nearby friendly units over <AIp6,Dur1> seconds.";
             return item;
@@ -3096,7 +3096,7 @@ namespace War3Api.Object
             item.StatsMaxStacks = 0;
             item.TextDescription = "Regenerates the health and mana of nearby units.";
             item.TextHotkeyRaw = "R";
-            item.TextName = "Lesser Scroll of Replenishment ";
+            item.TextName = "Lesser Scroll of Replenishment";
             item.TextTooltipBasic = "Purchase Lesser Scroll of Replenishment";
             item.TextTooltipExtended = "|cff87ceebNon-Combat Consumable|r|nRegenerates <AIp5,DataA1> hit points and <AIp5,DataB1> mana of the Hero and nearby friendly units over <AIp5,Dur1> seconds.";
             return item;
