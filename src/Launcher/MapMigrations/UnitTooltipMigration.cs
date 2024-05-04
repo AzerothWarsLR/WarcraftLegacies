@@ -11,6 +11,10 @@ namespace Launcher.MapMigrations
   /// </summary>
   public sealed class UnitTooltipMigration : IMapMigration
   {
+    private const string LineSeperator = "|n";
+    private const string AbilitiesKnown = "|cfff5962dAbilities:|r";
+    private const string HeroAbilitiesKnown = "|cfff5962dHero Abilities:|r";
+    
     /// <inheritdoc />
     public void Migrate(Map map, ObjectDatabase objectDatabase)
     {
@@ -39,23 +43,29 @@ namespace Launcher.MapMigrations
       }
 
       AppendFlavour(tooltipBuilder, unit);
-
-      foreach (var ability in unit.AbilitiesNormal)
-      {
-        try
-        {
-          tooltipBuilder.AppendLine(ability.TextName);
-          Console.WriteLine($"Successfully got name {ability.TextName}");
-        }
-        catch
-        {
-          Console.WriteLine($"Failed to get {ability} TextName");
-        }
-      }
+      AppendAbilities(tooltipBuilder, unit);
 
       var extendedTooltip = tooltipBuilder.ToString();
       Console.WriteLine(extendedTooltip);
       unit.TextTooltipExtended = extendedTooltip;
+    }
+
+    private static void AppendAbilities(StringBuilder tooltipBuilder, Unit unit)
+    {
+      var innateAbilities = unit.AbilitiesNormal.Select(x => x.TextName).ToArray();
+      if (innateAbilities.Any())
+      {
+        tooltipBuilder.Append($"{LineSeperator}{AbilitiesKnown}{string.Join(", ", innateAbilities)}");
+      }
+      
+      if (unit.IsAbilitiesHeroModified)
+      {
+        var heroAbilities = unit.AbilitiesHero.Select(x => x.TextName).ToArray();
+        if (heroAbilities.Any())
+        {
+          tooltipBuilder.Append($"{LineSeperator}{HeroAbilitiesKnown}{string.Join(", ", heroAbilities)}");
+        }
+      }
     }
 
     private static void AppendFlavour(StringBuilder stringBuilder, Unit unit)
