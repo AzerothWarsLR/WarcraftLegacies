@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Launcher.Extensions;
 using War3Api.Object;
 using War3Net.Build;
 
@@ -57,7 +57,11 @@ namespace Launcher.MapMigrations
     private static void AppendInnateAbilities(StringBuilder tooltipBuilder, Unit unit)
     {
       if (!unit.IsAbilitiesNormalModified) return;
-      var innateAbilities = unit.AbilitiesNormal.Where(x => !GetTechtreeRequirements(x).Any()).OrderBy(GetAbilityPriority).Select(GetAbilityName).ToArray();
+      var innateAbilities = unit.AbilitiesNormal
+        .Where(x => !x.GetTechtreeRequirementsSafe().Any())
+        .OrderBy(AbilityExtensions.GetPrioritySafe)
+        .Select(AbilityExtensions.GetNameSafe)
+        .ToArray();
       if (innateAbilities.Any())
       {
         tooltipBuilder.Append($"{LineSeperator}{AbilitiesKnown}{string.Join(", ", innateAbilities)}");
@@ -67,7 +71,11 @@ namespace Launcher.MapMigrations
     private static void AppendLearnedAbilities(StringBuilder tooltipBuilder, Unit unit)
     {
       if (!unit.IsAbilitiesNormalModified) return;
-      var learnableAbilities = unit.AbilitiesNormal.Where(x => GetTechtreeRequirements(x).Any()).OrderBy(GetAbilityPriority).Select(GetAbilityName).ToArray();
+      var learnableAbilities = unit.AbilitiesNormal
+        .Where(x => x.GetTechtreeRequirementsSafe().Any())
+        .OrderBy(AbilityExtensions.GetPrioritySafe)
+        .Select(AbilityExtensions.GetNameSafe)
+        .ToArray();
       if (learnableAbilities.Any())
       {
         tooltipBuilder.Append($"{LineSeperator}{AbilitiesLearnable}{string.Join(", ", learnableAbilities)}");
@@ -77,7 +85,7 @@ namespace Launcher.MapMigrations
     private static void AppendHeroAbilities(StringBuilder tooltipBuilder, Unit unit)
     {
       if (!unit.IsAbilitiesHeroModified) return;
-      var heroAbilities = unit.AbilitiesHero.OrderBy(GetAbilityPriority).Select(GetAbilityName).ToArray();
+      var heroAbilities = unit.AbilitiesHero.OrderBy(AbilityExtensions.GetPrioritySafe).Select(AbilityExtensions.GetNameSafe).ToArray();
       if (heroAbilities.Any())
       {
         tooltipBuilder.Append($"{LineSeperator}{HeroAbilitiesKnown}{string.Join(", ", heroAbilities)}");
@@ -86,63 +94,8 @@ namespace Launcher.MapMigrations
 
     private static void AppendFlavour(StringBuilder stringBuilder, Unit unit)
     {
-      var split = GetExtendedTooltip(unit).Split("|n");
-      stringBuilder.Append(split[0]);
-    }
-
-    private static IEnumerable<Tech> GetTechtreeRequirements(Ability unit)
-    {
-      try
-      {
-        return unit.TechtreeRequirements;
-      }
-      catch
-      {
-        return Array.Empty<Tech>();
-      }
-    }
-    
-    private static string GetExtendedTooltip(Unit unit)
-    {
-      try
-      {
-        return unit.TextTooltipExtended;
-      }
-      catch
-      {
-        return "";
-      }
-    }
-
-    /// <summary>
-    /// Gets a name that can be used to describe an ability. Usually just the name field.
-    /// </summary>
-    private static string GetAbilityName(Ability ability)
-    {
-      try
-      {
-        return ability.TextName;
-      }
-      catch
-      {
-        return "Not found";
-      }
-    }
-
-    /// <summary>
-    /// Determines the order that abilities appear in tooltips.
-    /// </summary>
-    private static int GetAbilityPriority(Ability ability)
-    {
-      try
-      {
-        var (x, y) = (ability.ArtButtonPositionNormalX, ability.ArtButtonPositionNormalY);
-        return x - y * 10;
-      }
-      catch
-      {
-        return 0;
-      }
+      var split = unit.GetExtendedTooltipSafe().Split("|n");
+      stringBuilder.Append(split[0]); 
     }
   }
 }
