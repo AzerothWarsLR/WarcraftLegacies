@@ -10,6 +10,7 @@ using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Dalaran;
@@ -89,64 +90,8 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       
     private void RegisterObjectLimits()
     {
-      //Structures
-      ModObjectLimit(FourCC("h065"), UNLIMITED); //Refuge
-      ModObjectLimit(FourCC("h066"), UNLIMITED); //Conclave
-      ModObjectLimit(FourCC("h068"), UNLIMITED); //Observatory
-      ModObjectLimit(FourCC("h063"), UNLIMITED); //Granary
-      ModObjectLimit(FourCC("h044"), UNLIMITED); //Altar of Knowledge
-      ModObjectLimit(FourCC("h069"), UNLIMITED); //Barracks
-      ModObjectLimit(FourCC("h02N"), UNLIMITED); //Trade Quarters
-      ModObjectLimit(FourCC("h036"), UNLIMITED); //Arcane Sanctuary
-      ModObjectLimit(FourCC("h078"), UNLIMITED); //Scout Tower
-      ModObjectLimit(FourCC("h079"), UNLIMITED); //Arcane Tower
-      ModObjectLimit(FourCC("h07A"), UNLIMITED); //Arcane Tower (Improved)
-      ModObjectLimit(FourCC("hvlt"), UNLIMITED); //Arcane Vault
-      ModObjectLimit(FourCC("h076"), UNLIMITED); //Alliance Shipyard
-      ModObjectLimit(FourCC("ndgt"), UNLIMITED); //Dalaran Tower
-      ModObjectLimit(FourCC("n004"), UNLIMITED); //Dalaran Tower (Improved)
-      ModObjectLimit(FourCC("h067"), UNLIMITED); //Laboratory
-      ModObjectLimit(FourCC("n0AO"), 2); //Way Gate
-
-      //Units
-      ModObjectLimit(FourCC("h022"), UNLIMITED); //Shaper
-      ModObjectLimit(FourCC("nhym"), UNLIMITED); //Hydromancer
-      ModObjectLimit(FourCC("h032"), UNLIMITED); //Battlemage
-      ModObjectLimit(FourCC("h02D"), UNLIMITED); //Geomancer
-      ModObjectLimit(FourCC("h01I"), UNLIMITED); //Arcanist
-      ModObjectLimit(FourCC("n007"), 6); //Kirin Tor
-      ModObjectLimit(FourCC("n096"), 6); //Earth Golem
-      ModObjectLimit(FourCC("n03E"), UNLIMITED); //Pyromancer
-      ModObjectLimit(FourCC("n0AK"), UNLIMITED); //Sludge Flinger
-      ModObjectLimit(FourCC("o02U"), 6); //Crystal Artillery
-      ModObjectLimit(UNIT_N0AC_BLUE_DRAGON_DALARAN, 6);
-        
-      //Ships
-      ModObjectLimit(UNIT_HBOT_TRANSPORT_SHIP_ALLIANCE, UNLIMITED);
-      ModObjectLimit(UNIT_H0AR_SCOUT_SHIP_ALLIANCE, UNLIMITED);
-      ModObjectLimit(UNIT_H0AX_FRIGATE_ALLIANCE, UNLIMITED);
-      ModObjectLimit(UNIT_H0B3_FIRESHIP_ALLIANCE, UNLIMITED);
-      ModObjectLimit(UNIT_H0B0_GALLEY_ALLIANCE, UNLIMITED);
-      ModObjectLimit(UNIT_H0B6_BOARDING_VESSEL_ALLIANCE, UNLIMITED);
-      ModObjectLimit(UNIT_H0AN_JUGGERNAUT_ALLIANCE, UNLIMITED);
-      ModObjectLimit(UNIT_H0B7_BOMBARD_ALLIANCE, 6);
-      
-      //Demi-heroes
-      ModObjectLimit(UNIT_NJKS_JAILOR_KASSAN_DALARAN_DEMI, 1);
-      ModObjectLimit(UNIT_HJAI_ARCHMAGE_OF_DALARAN_DALARAN, 1);
-      ModObjectLimit(UNIT_HANT_GRAND_MAGUS_OF_THE_KIRIN_TOR_DALARAN, 1);
-      ModObjectLimit(UNIT_H09N_MATRIARCH_OF_TIRISFAL_DALARAN, 1);
-      ModObjectLimit(UNIT_HAAH_THE_FALLEN_GUARDIAN_DALARAN, 1);
-      
-      //Upgrades
-      ModObjectLimit(UPGRADE_R01I_ARCANIST_GRANDMASTER_TRAINING_DALARAN, UNLIMITED);
-      ModObjectLimit(UPGRADE_R01V_GEOMANCER_GRANDMASTER_TRAINING_DALARAN, UNLIMITED);
-      ModObjectLimit(UPGRADE_R00E_HYDROMANCER_GRANDMASTER_TRAINING_DALARAN, UNLIMITED);
-      ModObjectLimit(UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, UNLIMITED);
-      ModObjectLimit(UPGRADE_R06J_IMPROVED_SLOW_DALARAN, UNLIMITED);
-      ModObjectLimit(UPGRADE_R061_IMPROVED_FORKED_LIGHTNING_DALARAN, UNLIMITED);
-      ModObjectLimit(UPGRADE_R06O_IMPROVED_PHASE_BLADE_DALARAN, UNLIMITED);
-      ModObjectLimit(UPGRADE_R00J_COMBAT_TOMES_DALARAN, UNLIMITED);
+      foreach (var (objectTypeId, objectLimit) in DalaranObjectLimitData.GetAllObjectLimits())
+        ModObjectLimit(FourCC(objectTypeId), objectLimit);
 
       ModAbilityAvailability(ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, 1);
       ModAbilityAvailability(ABILITY_A0GG_SPELL_SHIELD_SPELL_BOOK_ORANGE_KIRIN_TOR, -1); //Todo: should be global

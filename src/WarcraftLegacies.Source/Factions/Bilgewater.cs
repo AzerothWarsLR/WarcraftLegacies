@@ -6,6 +6,7 @@ using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.Powers;
+using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.Goblin;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
@@ -66,57 +67,8 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
     
     private void RegisterObjectLimits()
     {
-      ModObjectLimit(FourCC("o03L"), UNLIMITED); //Great Hall
-      ModObjectLimit(FourCC("o03M"), UNLIMITED); //Stronghold
-      ModObjectLimit(FourCC("o03N"), UNLIMITED); //Fortress
-      ModObjectLimit(FourCC("o03O"), UNLIMITED); //Altar of Storms
-      ModObjectLimit(FourCC("o03P"), UNLIMITED); //Barracks
-      ModObjectLimit(FourCC("o05T"), UNLIMITED); //Boot Camp
-      ModObjectLimit(FourCC("o03Q"), UNLIMITED); //War Mill
-      ModObjectLimit(FourCC("o03S"), UNLIMITED); //Tauren Totem
-      ModObjectLimit(FourCC("o01M"), UNLIMITED); //Spirit Lodge
-      ModObjectLimit(FourCC("o03T"), UNLIMITED); //Orc Burrow
-      ModObjectLimit(FourCC("o03U"), UNLIMITED); //Watch Tower
-      ModObjectLimit(FourCC("o03W"), UNLIMITED); //Improved Watch Tower
-      ModObjectLimit(FourCC("o03X"), UNLIMITED); //Voodoo Lounge
-      ModObjectLimit(FourCC("o03V"), UNLIMITED); //Shipyard
-      ModObjectLimit(FourCC("h011"), 1); //Artillery
-
-      //Ship
-      ModObjectLimit(UNIT_O06G_OIL_RIG_CONSTRUCTOR_GOBLIN, UNLIMITED);
-      ModObjectLimit(FourCC("h0AS"), UNLIMITED); //Scout
-      ModObjectLimit(FourCC("h0AP"), UNLIMITED); //Frigate
-      ModObjectLimit(FourCC("h0B2"), UNLIMITED); //Fireship
-      ModObjectLimit(FourCC("h0AY"), UNLIMITED); //Galley
-      ModObjectLimit(FourCC("h0B5"), UNLIMITED); //Boarding
-      ModObjectLimit(FourCC("h0BC"), UNLIMITED); //Juggernaut
-      ModObjectLimit(FourCC("h0AO"), 6); //Bombard
-
-      ModObjectLimit(UNIT_O02I_BUILDER_GOBLIN_WORKER, UNLIMITED);
-      ModObjectLimit(UNIT_N099_OGRE_MERCENARY_GOBLIN, UNLIMITED);
-      ModObjectLimit(UNIT_H08X_SAPPERS_GOBLIN, 8);
-      ModObjectLimit(UNIT_H08Y_GUNNER_GOBLIN, UNLIMITED);
-      ModObjectLimit(UNIT_U02R_HOBGOBLIN_GOBLIN, UNLIMITED);
-      ModObjectLimit(UNIT_H09I_PERSONAL_TANK_GOBLIN, 12);
-      ModObjectLimit(UNIT_H09J_GRENADIER_GOBLIN, 12);
-      ModObjectLimit(UNIT_ODOC_WITCH_DOCTOR_FROSTWOLF, UNLIMITED);
-      ModObjectLimit(UNIT_O04O_ALCHEMIST_GOBLIN, UNLIMITED);
-      ModObjectLimit(UNIT_O04Q_TINKER_GOBLIN, 6);
-      ModObjectLimit(UNIT_ODES_FRIGATE_WARSONG_FROSTWOLF_FEL_HORDE, UNLIMITED);
-      ModObjectLimit(UNIT_OJGN_JUGGERNAUT_WARSONG_FROSTWOLF_FEL_HORDE, 6);
-      ModObjectLimit(UNIT_N062_SHREDDER_GOBLIN, 12);
-      ModObjectLimit(UNIT_H08Z_ASSAULT_TANK_GOBLIN, 5);
-      ModObjectLimit(UNIT_H091_WAR_ZEPPELIN_GOBLIN, 6);
-      ModObjectLimit(UNIT_H09H_SIEGE_WALKER_GOBLIN, 5);
-      ModObjectLimit(UNIT_NZEP_TRADING_ZEPPELIN_WARSONG, 16);
-      ModObjectLimit(UNIT_O04S_TRADER_GOBLIN, 10);
-
-      ModObjectLimit(UNIT_O04N_TRADE_PRINCE_OF_THE_BILGEWATER_CARTEL_GOBLIN, 1);
-      ModObjectLimit(UNIT_NTIN_CHIEF_ENGINEER_GOBLIN, 1);
-      ModObjectLimit(UNIT_VH01_BARON_OF_GADGETZAN_GOBLIN, 1);
-
-      ModObjectLimit(UPGRADE_R07M_ALCHEMIST_GRANDMASTER_TRAINING_GOBLIN, UNLIMITED);
-      ModObjectLimit(UPGRADE_R097_FORTIFIED_HULLS_GOBLIN, UNLIMITED);
+      foreach (var (objectTypeId, objectLimit) in BilgewaterObjectLimitData.GetAllObjectLimits())
+        ModObjectLimit(FourCC(objectTypeId), objectLimit);
     }
 
     private void RegisterQuests()

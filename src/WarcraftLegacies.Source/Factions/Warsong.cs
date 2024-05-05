@@ -4,6 +4,7 @@ using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.Warsong;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
@@ -56,78 +57,8 @@ The Night Elves are aware of your presence and are gathering a mighty host again
 
     private void RegisterObjectLimits()
     {
-      ModObjectLimit(FourCC("o00C"), UNLIMITED); //Great Hall
-      ModObjectLimit(FourCC("o02R"), UNLIMITED); //Stronghold
-      ModObjectLimit(FourCC("o02S"), UNLIMITED); //Fortress
-      ModObjectLimit(FourCC("o020"), UNLIMITED); //Altar of Storms
-      ModObjectLimit(FourCC("o01S"), UNLIMITED); //Barracks
-      ModObjectLimit(FourCC("o009"), UNLIMITED); //War Mill
-      ModObjectLimit(FourCC("o006"), UNLIMITED); //Ogre Barrack
-      ModObjectLimit(FourCC("o05G"), UNLIMITED); //Siege Workshop
-      ModObjectLimit(FourCC("o02Q"), UNLIMITED); //Bestiary
-      ModObjectLimit(FourCC("o028"), UNLIMITED); //Orc Burrow
-      ModObjectLimit(FourCC("n03E"), UNLIMITED); //Watch Tower
-      ModObjectLimit(FourCC("o01H"), UNLIMITED); //Troll Shrine
-      ModObjectLimit(FourCC("n0AL"), UNLIMITED); //Improved Watch Tower
-      ModObjectLimit(FourCC("o02T"), UNLIMITED); //Shipyard
-      ModObjectLimit(FourCC("o01T"), UNLIMITED); //Goblin Hardware Shop
-
-      ModObjectLimit(FourCC("o04L"), UNLIMITED); //Peon
-      ModObjectLimit(FourCC("o02M"), UNLIMITED); //Grunt
-      ModObjectLimit(FourCC("orai"), UNLIMITED); //Raider
-      ModObjectLimit(FourCC("n08E"), UNLIMITED); //Hexbinder
-      ModObjectLimit(FourCC("otbk"), UNLIMITED); //Troll Berseker
-      ModObjectLimit(FourCC("nogn"), UNLIMITED); //Stonemaul Ogre Magi
-      ModObjectLimit(FourCC("o00I"), 6); //Horde War Machine
-      ModObjectLimit(FourCC("e01M"), 4); //Azerite Siege Engine
-      ModObjectLimit(FourCC("okod"), 4); //Kodo Beast
-      ModObjectLimit(FourCC("o00G"), 6); //Blademaster
-      ModObjectLimit(FourCC("n03F"), 6); //Korkron elite
-      ModObjectLimit(FourCC("owyv"), 8); //Wind Rider
-
-      //Ship
-      ModObjectLimit(FourCC("obot"), UNLIMITED); //Transport Ship
-      ModObjectLimit(FourCC("h0AS"), UNLIMITED); //Scout
-      ModObjectLimit(FourCC("h0AP"), UNLIMITED); //Frigate
-      ModObjectLimit(FourCC("h0B2"), UNLIMITED); //Fireship
-      ModObjectLimit(FourCC("h0AY"), UNLIMITED); //Galley
-      ModObjectLimit(FourCC("h0B5"), UNLIMITED); //Boarding
-      ModObjectLimit(FourCC("h0BC"), UNLIMITED); //Juggernaut
-      ModObjectLimit(FourCC("h0AO"), 6); //Bombard
-
-      ModObjectLimit(FourCC("Ogrh"), 1); //Grom
-      ModObjectLimit(FourCC("Obla"), 1); //Varok
-      ModObjectLimit(FourCC("O06L"), 1); //Garrosh
-      ModObjectLimit(UNIT_NSJS_BREWMASTER_WARSONG, 1);
-      ModObjectLimit(FourCC("n0CN"), 1); //Gibbs
-      ModObjectLimit(UNIT_OPGH_CORRUPTOR_OF_THE_WARSONG_CLAN_WARSONG_BLOODPACT, 1); //Blood Pact Grom   Fixes Perma Death Grom Blood Pact bug
-
-      ModObjectLimit(FourCC("Robs"), UNLIMITED); //Berserker Strength
-      ModObjectLimit(FourCC("Rotr"), UNLIMITED); //Troll Regeneration
-      ModObjectLimit(FourCC("R01J"), UNLIMITED); //Ensnare
-      ModObjectLimit(FourCC("R02I"), UNLIMITED); //Ogre Magi Adept Training
-      ModObjectLimit(FourCC("R03Q"), UNLIMITED); //Warlock Adept Training
-      ModObjectLimit(FourCC("Rorb"), UNLIMITED); //Reinforced Defenses
-      ModObjectLimit(FourCC("Rosp"), UNLIMITED); //Spiked Barricades
-      ModObjectLimit(FourCC("R016"), UNLIMITED); //Warlords
-      ModObjectLimit(FourCC("R019"), UNLIMITED); //Improved Shockwave
-      ModObjectLimit(UPGRADE_R01Z_BATTLE_STATIONS_ORC, UNLIMITED);
-      SetObjectLevel(UPGRADE_R01Z_BATTLE_STATIONS_ORC, 1);
-      ModObjectLimit(UPGRADE_R00D_MASS_BLOODLUST_FROSTWOLF, UNLIMITED);
-      ModObjectLimit(UPGRADE_ROVS_ENVENOMED_SPEARS_WARSONG, UNLIMITED);
-      ModObjectLimit(UPGRADE_R017_IMPROVED_IGNORE_PAIN_WARSONG, UNLIMITED);
-
-
-      ModObjectLimit(UPGRADE_R09N_FLIGHT_PATH_WARSONG, 1);
-
-      ModAbilityAvailability(ABILITY_A0PF_FEL_ENERGY_TEAL_FORTRESSES, -1);
-      ModAbilityAvailability(ABILITY_ANTR_TROLL_REGENERATION_PINK_WITCH_DOCTOR_TROLL_HEADHUNTER_TROLL_BATRIDER_DARKSPEAR_WARLORD_TROLL_BERSERKER_ICON, -1);
-      ModAbilityAvailability(ABILITY_ABTL_BATTLE_STATIONS_FROSTWOLF_WARSONG_BURROW, 1);
-      ModAbilityAvailability(ABILITY_A0M4_BATTLE_STATIONS_PINK_GREY_ORC_BURROW_BLOODPACT, -1);
-      ModAbilityAvailability(ABILITY_A0GM_FOR_THE_HORDE_PINK_GREY_MAIN_BUILDINGS, 1);
-
-      ModObjectLimit(UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, 1);
-      ModObjectLimit(UPGRADE_R09P_REVERT_BLOODPACT, 1);
+      foreach (var (objectTypeId, objectLimit) in WarsongObjectLimitData.GetAllObjectLimits())
+        ModObjectLimit(FourCC(objectTypeId), objectLimit);
     }
 
     private void RegisterQuests()

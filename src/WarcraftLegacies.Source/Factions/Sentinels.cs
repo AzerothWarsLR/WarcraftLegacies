@@ -6,6 +6,7 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.Powers;
+using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests.Sentinels;
 using WarcraftLegacies.Source.Setup;
@@ -66,62 +67,8 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
 
     private void RegisterObjectLimits()
     {
-      ModObjectLimit(FourCC("e00V"), UNLIMITED); //Temple of Elune
-      ModObjectLimit(FourCC("e00R"), UNLIMITED); //Altar of Watchers
-      ModObjectLimit(FourCC("e00L"), UNLIMITED); //War Academy
-      ModObjectLimit(FourCC("edob"), UNLIMITED); //Hunter)s Hall
-      ModObjectLimit(FourCC("eden"), UNLIMITED); //Ancient of Wonders
-      ModObjectLimit(FourCC("e011"), UNLIMITED); //Night Elf Shipyard
-      ModObjectLimit(FourCC("h03N"), UNLIMITED); //Enchanged Runestone
-      ModObjectLimit(FourCC("h03M"), UNLIMITED); //Runestone
-      ModObjectLimit(FourCC("n06O"), UNLIMITED); //Sentinel Embassy
-      ModObjectLimit(FourCC("n06P"), UNLIMITED); //Sentinel Enclave
-      ModObjectLimit(FourCC("n06J"), UNLIMITED); //Sentinel Outpost
-      ModObjectLimit(FourCC("n06M"), UNLIMITED); //Residence
-      ModObjectLimit(FourCC("edos"), UNLIMITED); //Roost
-      ModObjectLimit(FourCC("e00T"), UNLIMITED); //Bastion
-
-      ModObjectLimit(FourCC("ewsp"), UNLIMITED); //Wisp
-      ModObjectLimit(FourCC("e006"), UNLIMITED); //Priestess
-      ModObjectLimit(FourCC("n06C"), UNLIMITED); //Trapper
-      ModObjectLimit(FourCC("h04L"), 6); //Priestess of the Moon
-      ModObjectLimit(FourCC("earc"), UNLIMITED); //Archer
-      ModObjectLimit(FourCC("esen"), UNLIMITED); //Huntress
-      ModObjectLimit(FourCC("h08V"), UNLIMITED); //Nightsaber Knight
-      ModObjectLimit(FourCC("ebal"), 8); //Glaive Thrower
-      ModObjectLimit(FourCC("ehpr"), 6); //Hippogryph Rider
-      ModObjectLimit(FourCC("n034"), 12); //Guild Ranger
-      ModObjectLimit(FourCC("nwat"), UNLIMITED); //Nightblade
-      ModObjectLimit(FourCC("nnmg"), 12); //Redeemed Highborne
-      ModObjectLimit(FourCC("e022"), 2); //Moon Rider
-      ModObjectLimit(UNIT_ECHM_CHIMAERA_SENTINELS, 6);
-      ModObjectLimit(UNIT_H045_WARDEN_SENTINELS, 8);
-
-      //Ships
-      ModObjectLimit(FourCC("etrs"), UNLIMITED); //Night Elf Transport Ship
-      ModObjectLimit(FourCC("h0AU"), UNLIMITED); // Scout
-      ModObjectLimit(FourCC("h0AV"), UNLIMITED); // Frigate
-      ModObjectLimit(FourCC("h0B1"), UNLIMITED); // Fireship
-      ModObjectLimit(FourCC("h057"), UNLIMITED); // Galley
-      ModObjectLimit(FourCC("h0B4"), UNLIMITED); // Boarding
-      ModObjectLimit(FourCC("h0BA"), UNLIMITED); // Juggernaut
-      ModObjectLimit(FourCC("h0B8"), 6); // Bombard
-
-      ModObjectLimit(FourCC("E025"), 1); //Naisha
-      ModObjectLimit(FourCC("Etyr"), 1); //Tyrande
-      ModObjectLimit(FourCC("E002"), 1); //Shandris
-      ModObjectLimit(FourCC("Ewrd"), 1); //Maiev
-
-      ModObjectLimit(FourCC("R00S"), UNLIMITED); //Priestess Adept Training
-      ModObjectLimit(FourCC("R064"), UNLIMITED); //Sentinel Fortifications
-      ModObjectLimit(FourCC("R01W"), UNLIMITED); //Trapper Adept Training
-      ModObjectLimit(FourCC("Reib"), UNLIMITED); //Improved Bows
-      ModObjectLimit(FourCC("Reuv"), UNLIMITED); //Ultravision
-      ModObjectLimit(FourCC("Remg"), UNLIMITED); //Upgraded Moon Glaive
-      ModObjectLimit(FourCC("Roen"), UNLIMITED); //Ensnare
-      ModObjectLimit(UPGRADE_R04E_YSERA_S_GIFT_DRUIDS, UNLIMITED);
-      ModObjectLimit(UPGRADE_R03J_WIND_WALK_SENTINELS, UNLIMITED);
-      ModObjectLimit(UPGRADE_R018_IMPROVED_LIGHTNING_BARRAGE_SENTINELS, UNLIMITED);
+      foreach (var (objectTypeId, objectLimit) in SentinelsObjectLimitData.GetAllObjectLimits())
+        ModObjectLimit(FourCC(objectTypeId), objectLimit);
     }
 
     private void RegisterQuests()

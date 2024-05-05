@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
+using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Gilneas;
@@ -78,59 +79,8 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
 
     private void RegisterObjectLimits()
     {
-      //Structures
-      ModObjectLimit(FourCC("h01R"), UNLIMITED); //Town Hall
-      ModObjectLimit(FourCC("h023"), UNLIMITED); //Keep
-      ModObjectLimit(FourCC("h02C"), UNLIMITED); //Castle
-      ModObjectLimit(FourCC("h02F"), UNLIMITED); //Farm
-      ModObjectLimit(FourCC("h02X"), UNLIMITED); //Altar
-      ModObjectLimit(FourCC("h039"), UNLIMITED); //Scout Tower
-      ModObjectLimit(FourCC("h03A"), UNLIMITED); //Guard Tower
-      ModObjectLimit(FourCC("h03B"), UNLIMITED); //Cannon Tower
-      ModObjectLimit(FourCC("h03D"), UNLIMITED); //Temple of the cursed
-      ModObjectLimit(FourCC("h03E"), UNLIMITED); //Training Hall
-      ModObjectLimit(FourCC("n008"), UNLIMITED); //Marketplace
-      ModObjectLimit(FourCC("h03H"), UNLIMITED); //Shipyard
-      ModObjectLimit(FourCC("h03O"), UNLIMITED); //Blacksmith
-      ModObjectLimit(FourCC("h03Q"), UNLIMITED); //Garrison
-      ModObjectLimit(FourCC("h052"), UNLIMITED); //Improved Guard Tower
-      ModObjectLimit(FourCC("h04N"), UNLIMITED); //Improved Cannon Tower
-
-      //Units
-      ModObjectLimit(FourCC("hpea"), UNLIMITED); //Peasant
-      ModObjectLimit(FourCC("n06K"), UNLIMITED); //Druid of the Scythe
-      ModObjectLimit(FourCC("h04M"), UNLIMITED); //Cleric
-      ModObjectLimit(FourCC("h04E"), UNLIMITED); //Protector
-      ModObjectLimit(FourCC("n06L"), UNLIMITED); //Armored Wolf
-      ModObjectLimit(FourCC("o01V"), 6); //Greyguard
-      ModObjectLimit(FourCC("o02J"), 12); //Worgen
-      ModObjectLimit(FourCC("h03L"), UNLIMITED); //Shotgunner
-      ModObjectLimit(FourCC("n067"), UNLIMITED); //Spider summon
-      ModObjectLimit(FourCC("o04U"), 6); //Cyclone Cannon
-      ModObjectLimit(FourCC("o06P"), 6); //Worgen Shaman
-      ModObjectLimit(FourCC("h04X"), 6); //HarvestWitch
-
-      ModObjectLimit(FourCC("E01E"), 1); //Goldrinn
-      ModObjectLimit(FourCC("Ewar"), 1); //Tess
-      ModObjectLimit(FourCC("Hhkl"), 1); //Genn
-      ModObjectLimit(FourCC("Hpb2"), 1); //Darius
-
-      //Ships
-      ModObjectLimit(FourCC("hbot"), UNLIMITED); //Alliance Transport Ship
-      ModObjectLimit(FourCC("h0AR"), UNLIMITED); //Alliance Scout
-      ModObjectLimit(FourCC("h0AX"), UNLIMITED); //Alliance Frigate
-      ModObjectLimit(FourCC("h0B3"), UNLIMITED); //Alliance Fireship
-      ModObjectLimit(FourCC("h0B0"), UNLIMITED); //Alliance Galley
-      ModObjectLimit(FourCC("h0B6"), UNLIMITED); //Alliance Boarding
-      ModObjectLimit(FourCC("h0AN"), UNLIMITED); //Alliance Juggernaut
-      ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
-
-      //Upgrades
-      ModObjectLimit(UPGRADE_R04O_CLERIC_MASTER_TRAINING_GILNEAS, UNLIMITED);
-      ModObjectLimit(UPGRADE_R04P_DRUID_OF_THE_SCYTHE_MASTER_TRAINING_GILNEAS, UNLIMITED);
-      ModObjectLimit(UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, UNLIMITED);
-      ModObjectLimit(UPGRADE_R09L_WORGEN_SHAMAN_MASTER_TRAINING_GILNEAS, UNLIMITED);
-      ModObjectLimit(UPGRADE_R09M_HARVEST_WITCH_MASTER_TRAINING_GILNEAS, UNLIMITED);
+      foreach (var (objectTypeId, objectLimit) in GilneasObjectLimitData.GetAllObjectLimits())
+        ModObjectLimit(FourCC(objectTypeId), objectLimit);
     }
     
     private void RegisterQuests()

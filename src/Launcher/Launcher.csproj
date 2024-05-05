@@ -27,6 +27,7 @@
 
     <ItemGroup>
         <ProjectReference Include="..\War3Api.Object\War3Api.Object.csproj"/>
+        <ProjectReference Include="..\WarcraftLegacies.Shared\WarcraftLegacies.Shared.csproj" />
     </ItemGroup>
     
     <ItemGroup>

@@ -58,7 +58,7 @@ namespace Launcher.IntegrityChecker
       }
       catch (KeyNotFoundException)
       {
-        issue = $"{GetReadableId(unit)} has an invalid Researches Available field.";
+        issue = $"{unit.GetReadableId()} has an invalid Researches Available field.";
         return true;
       }
       
@@ -78,7 +78,7 @@ namespace Launcher.IntegrityChecker
       }
       catch (KeyNotFoundException)
       {
-        issue = $"{GetReadableId(unit)} has an invalid Researches Required field.";
+        issue = $"{unit.GetReadableId()} has an invalid Researches Required field.";
         return true;
       }
       
@@ -98,7 +98,7 @@ namespace Launcher.IntegrityChecker
       }
       catch (KeyNotFoundException)
       {
-        issue = $"{GetReadableId(unit)} has at least one invalid normal Ability.";
+        issue = $"{unit.GetReadableId()} has at least one invalid normal Ability.";
         return true;
       }
       
@@ -118,14 +118,11 @@ namespace Launcher.IntegrityChecker
       }
       catch (KeyNotFoundException)
       {
-        issue = $"{GetReadableId(unit)} has at least one invalid hero Ability.";
+        issue = $"{unit.GetReadableId()} has at least one invalid hero Ability.";
         return true;
       }
       
       return false;
     }
-    
-    private static string GetReadableId(BaseObject baseObject) =>
-      baseObject.NewId != 0 ? baseObject.NewId.IdToFourCc() : baseObject.OldId.IdToFourCc();
   }
 }

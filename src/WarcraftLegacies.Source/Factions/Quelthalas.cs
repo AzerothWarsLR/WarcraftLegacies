@@ -4,6 +4,7 @@ using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ResearchSystems;
+using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.Quelthalas;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
@@ -61,71 +62,8 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
 
     private void RegisterObjectLimits()
     {
-      //Structures
-      ModObjectLimit(FourCC("h033"), UNLIMITED); //Steading
-      ModObjectLimit(FourCC("h03S"), UNLIMITED); //Mansion
-      ModObjectLimit(FourCC("h03T"), UNLIMITED); //Palace
-      ModObjectLimit(FourCC("h01H"), UNLIMITED); //Altar of Prowess
-      ModObjectLimit(FourCC("h02Y"), UNLIMITED); //Artisan)s Hall
-      ModObjectLimit(FourCC("h034"), UNLIMITED); //Arcane Sanctum (Quel)thalas)
-      ModObjectLimit(FourCC("h073"), UNLIMITED); //Scout Tower
-      ModObjectLimit(FourCC("h074"), UNLIMITED); //Arcane Tower
-      ModObjectLimit(FourCC("h075"), UNLIMITED); //Arcane Tower (Improved)
-      ModObjectLimit(FourCC("negt"), UNLIMITED); //High Elven Guard Tower
-      ModObjectLimit(FourCC("n003"), UNLIMITED); //High Elven Guard Tower (Improved)
-      ModObjectLimit(FourCC("h04V"), UNLIMITED); //Arcane Vault (Elven)
-      ModObjectLimit(FourCC("nheb"), UNLIMITED); //Cantonment
-      ModObjectLimit(FourCC("n0A2"), UNLIMITED); //Consortium
-      ModObjectLimit(FourCC("h03J"), UNLIMITED); //Academy
-      ModObjectLimit(FourCC("h077"), UNLIMITED); //Alliance Shipyard
-      ModObjectLimit(FourCC("nefm"), UNLIMITED); //Residence
-
-      //Units
-      ModObjectLimit(FourCC("nbee"), UNLIMITED); //Elven Worker
-      ModObjectLimit(FourCC("hhes"), UNLIMITED); //Elven Warrior
-      ModObjectLimit(FourCC("hmpr"), UNLIMITED); //Priest
-      ModObjectLimit(FourCC("hsor"), UNLIMITED); //Sorceress
-      ModObjectLimit(FourCC("hdhw"), 6); //Dragonhawk Rider
-      ModObjectLimit(FourCC("nhea"), UNLIMITED); //Archer
-      ModObjectLimit(FourCC("e008"), 6); //Elven Ballista
-      ModObjectLimit(FourCC("n00A"), 6); //Farstrider
-      ModObjectLimit(FourCC("e01B"), 6); //Arcane Annihilator
-      ModObjectLimit(FourCC("n02F"), 6); //Warlock
-      ModObjectLimit(FourCC("n063"), 12); //Magus
-      ModObjectLimit(FourCC("hspt"), UNLIMITED); //Spell Breaker
-      ModObjectLimit(FourCC("u00J"), 2); //Arcane Wagon
-      ModObjectLimit(UNIT_N048_BLOOD_MAGE_QUEL_THALAS, 6);
-
-      //Ships
-      ModObjectLimit(FourCC("hbot"), UNLIMITED); //Alliance Transport Ship
-      ModObjectLimit(FourCC("h0AR"), UNLIMITED); //Alliance Scout
-      ModObjectLimit(FourCC("h0AX"), UNLIMITED); //Alliance Frigate
-      ModObjectLimit(FourCC("h0B3"), UNLIMITED); //Alliance Fireship
-      ModObjectLimit(FourCC("h0B0"), UNLIMITED); //Alliance Galley
-      ModObjectLimit(FourCC("h0B6"), UNLIMITED); //Alliance Boarding
-      ModObjectLimit(FourCC("h0AN"), UNLIMITED); //Alliance Juggernaut
-      ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
-
-      //Demi-heroes
-      ModObjectLimit(FourCC("n075"), 1); //Vareesa
-      ModObjectLimit(FourCC("Hvwd"), 1); //Sylvanas
-      ModObjectLimit(FourCC("H00Q"), 1); //Anasterian
-      ModObjectLimit(FourCC("H04F"), 1); //Rommath
-      ModObjectLimit(FourCC("H02E"), 1); //Lorthemar
-
-      //Upgrades
-      ModObjectLimit(FourCC("R01S"), UNLIMITED); //Aimed Shot
-      ModObjectLimit(FourCC("R00G"), UNLIMITED); //Feint
-      ModObjectLimit(FourCC("R01R"), UNLIMITED); //Improved Bows
-      ModObjectLimit(FourCC("R029"), UNLIMITED); //Magus Adept Training
-      ModObjectLimit(FourCC("Rhcd"), UNLIMITED); //Cloud
-      ModObjectLimit(FourCC("Rhss"), UNLIMITED); //Control Magic
-      ModObjectLimit(FourCC("Rhac"), UNLIMITED); //Improved Masonry
-      ModObjectLimit(FourCC("Rhse"), UNLIMITED); //Magic Sentry
-      ModObjectLimit(FourCC("Rhpt"), UNLIMITED); //Priest Adept Training
-      ModObjectLimit(FourCC("Rhst"), UNLIMITED); //Sorceress Adept Training
-      ModObjectLimit(FourCC("R004"), UNLIMITED); //Sunfury Warrior Training
-      ModObjectLimit(FourCC("R02Y"), UNLIMITED); //Improved Glaives
+      foreach (var (objectTypeId, objectLimit) in QuelthalasObjectLimitData.GetAllObjectLimits())
+        ModObjectLimit(FourCC(objectTypeId), objectLimit);
 
       ModAbilityAvailability(ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
       ModAbilityAvailability(ABILITY_A0OC_EXTRACT_VIAL_ALL, -1);

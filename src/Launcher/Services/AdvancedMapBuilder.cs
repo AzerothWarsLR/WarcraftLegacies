@@ -127,7 +127,7 @@ namespace Launcher.Services
       //Set debug options if necessary, configure compiler
       var csproj = Directory.EnumerateFiles(projectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
       var compiler = new Compiler(csproj, compilerSettings.ArtifactsPath, string.Empty, null!,
-        "War3Api.*;WCSharp.*;MacroTools.*", "", null!, false, null,
+        "War3Api.*;WCSharp.*;MacroTools.*;WarcraftLegacies.Shared.*", "", null!, false, null,
         string.Empty)
       {
         IsExportMetadata = true,

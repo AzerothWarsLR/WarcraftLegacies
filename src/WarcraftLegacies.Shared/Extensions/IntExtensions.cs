@@ -1,8 +1,8 @@
-﻿namespace Launcher.Extensions
+﻿namespace WarcraftLegacies.Shared.Extensions
 {
   public static class IntExtensions
   {
-    public static string IdToFourCc(this int value)
+    public static string IdToFourCc(this int value, bool reverse = false)
     {
       const string charMap =
         ".................................!.#$%&'()*+,-./0123456789:;<=>.@ABCDEFGHIJKLMNOPQRSTUVWXYZ[.]^_`abcdefghijklmnopqrstuvwxyz{|}~.................................................................................................................................";
@@ -17,7 +17,7 @@
         result += charMap[charValue];
       }
 
-      return result;
+      return reverse ? result.Reverse() : result;
     }
   }
 }
