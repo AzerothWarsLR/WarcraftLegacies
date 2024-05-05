@@ -68,6 +68,18 @@ namespace Launcher.Extensions
       return Array.Empty<Upgrade>();
     }
     
+    public static IEnumerable<Unit> GetUnitsTrainedSafe(this Unit unit)
+    {
+      try
+      {
+        return unit.TechtreeUnitsTrained;
+      }
+      catch
+      {
+        return Array.Empty<Unit>();
+      }
+    } 
+    
     public static string GetTextNameSafe(this Unit unit)
     {
       try

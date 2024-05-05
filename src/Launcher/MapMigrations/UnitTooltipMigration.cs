@@ -87,21 +87,24 @@ namespace Launcher.MapMigrations
     private static void AppendHeroAbilities(StringBuilder tooltipBuilder, Unit unit)
     {
       if (!unit.IsAbilitiesHeroModified) return;
-      var heroAbilities = unit.AbilitiesHero.OrderBy(AbilityExtensions.GetPrioritySafe).Select(AbilityExtensions.GetNameSafe).ToArray();
+      var heroAbilities = unit.AbilitiesHero
+        .OrderBy(AbilityExtensions.GetPrioritySafe)
+        .Select(AbilityExtensions.GetNameSafe)
+        .ToArray();
+      
       if (heroAbilities.Any())
-      {
         tooltipBuilder.Append($"{LineSeperator}{HeroAbilitiesKnown}{string.Join(", ", heroAbilities)}");
-      }
     }
     
     private static void AppendUnitsTrained(StringBuilder tooltipBuilder, Unit unit)
     {
-      if (!unit.IsTechtreeUnitsTrainedModified) return;
-      var unitsTrained = unit.TechtreeUnitsTrained.OrderBy(x => x.GetPrioritySafe()).Select(GetBestName).ToArray();
-      if (unitsTrained.Any())
-      {
+      var unitsTrained = unit.GetUnitsTrainedSafe()
+        .OrderBy(x => x.GetPrioritySafe())
+        .Select(GetBestName)
+        .ToArray();
+      
+      if (unitsTrained.Any()) 
         tooltipBuilder.Append($"{LineSeperator}{UnitsTrained}{string.Join(", ", unitsTrained)}");
-      }
     }
     
     private static void AppendResearchesAvailable(StringBuilder tooltipBuilder, Unit unit)
