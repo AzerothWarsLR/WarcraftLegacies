@@ -8,11 +8,18 @@ namespace Launcher.Extensions
     {
       try
       {
-        return upgrade.TextName[1];
+        return upgrade.TextName[0];
       }
       catch
       {
-        return "";
+        try
+        {
+          return upgrade.TextName[1];
+        }
+        catch
+        {
+          return "";
+        }
       }
     }
 
