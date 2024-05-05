@@ -3,6 +3,7 @@ using System.Text;
 using Launcher.Extensions;
 using War3Api.Object;
 using War3Net.Build;
+using WarcraftLegacies.Shared;
 
 namespace Launcher.MapMigrations
 {
@@ -19,6 +20,8 @@ namespace Launcher.MapMigrations
     private const string ResearchesAvailable = "|cfff5962dResearches:|r ";
     private const string ItemsSold = "|cfff5962dSells:|r ";
 
+    private readonly ObjectLimitRepository _objectLimitRepository = new();
+
     /// <inheritdoc />
     public void Migrate(Map map, ObjectDatabase objectDatabase)
     {
@@ -34,7 +37,7 @@ namespace Launcher.MapMigrations
       map.UnitSkinObjectData = unitData;
     }
 
-    private static void DetermineTooltip(Unit unit)
+    private void DetermineTooltip(Unit unit)
     {
       var tooltipBuilder = new StringBuilder();
 
@@ -44,8 +47,9 @@ namespace Launcher.MapMigrations
       AppendInnateAbilities(tooltipBuilder, unit);
       AppendLearnedAbilities(tooltipBuilder, unit);
       AppendHeroAbilities(tooltipBuilder, unit);
-      AppendTargetsAllowed(tooltipBuilder, unit);
       AppendSoldItems(tooltipBuilder, unit);
+      AppendObjectLimit(tooltipBuilder, unit);
+      AppendTargetsAllowed(tooltipBuilder, unit);
       
       var extendedTooltip = tooltipBuilder.ToString();
       unit.TextTooltipExtended = extendedTooltip;
@@ -93,7 +97,7 @@ namespace Launcher.MapMigrations
     private static void AppendUnitsTrained(StringBuilder tooltipBuilder, Unit unit)
     {
       if (!unit.IsTechtreeUnitsTrainedModified) return;
-      var unitsTrained = unit.TechtreeUnitsTrained.OrderBy(x => x.GetPrioritySafe()).Select(x => x.GetTextNameSafe()).ToArray();
+      var unitsTrained = unit.TechtreeUnitsTrained.OrderBy(x => x.GetPrioritySafe()).Select(GetBestName).ToArray();
       if (unitsTrained.Any())
       {
         tooltipBuilder.Append($"{LineSeperator}{UnitsTrained}{string.Join(", ", unitsTrained)}");
@@ -126,6 +130,21 @@ namespace Launcher.MapMigrations
         tooltipBuilder.Append($"{LineSeperator}{ItemsSold}{string.Join(", ", soldItems)}");
       }
     }
+
+    private void AppendObjectLimit(StringBuilder tooltipBuilder, Unit unit)
+    {
+      var unitId = unit.NewId != 0 ? unit.NewId : unit.OldId;
+      if (!_objectLimitRepository.TryGetObjectLimit(unitId, out var limit)) 
+        return;
+      
+      var isABuilding = unit.StatsIsABuilding;
+      var trainType = isABuilding ? "build" : "train";
+      
+      if (limit is > 0 and < 200)
+      {
+        tooltipBuilder.Append($"{LineSeperator}|cff99b4d1Can only {trainType} {limit}.|r");
+      }
+    }
     
     private static void AppendTargetsAllowed(StringBuilder tooltipBuilder, Unit unit)
     {
@@ -148,6 +167,23 @@ namespace Launcher.MapMigrations
     {
       var split = unit.GetExtendedTooltipSafe().Split("|n");
       stringBuilder.Append(split[0]); 
+    }
+    
+    /// <summary>
+    /// Gets the best name for a unit, preferring hero proper name over their text name.
+    /// </summary>
+    private static string GetBestName(Unit unit)
+    {
+      try
+      {
+        if (unit.TextProperNames.Any())
+          return unit.TextProperNames.First();
+      }
+      catch
+      {
+        //do nothing
+      }
+      return unit.GetTextNameSafe();
     }
   }
 }
