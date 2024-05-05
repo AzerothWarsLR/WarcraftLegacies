@@ -14,6 +14,7 @@ using War3Net.Build.Environment;
 using War3Net.Build.Info;
 using War3Net.Build.Object;
 using War3Net.Build.Widget;
+using WarcraftLegacies.Shared.Extensions;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 using static Launcher.MapDataPaths;
 
