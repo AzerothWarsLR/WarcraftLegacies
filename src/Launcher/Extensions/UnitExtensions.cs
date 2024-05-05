@@ -101,7 +101,7 @@ namespace Launcher.Extensions
       try
       {
         var (x, y) = (unit.ArtButtonPositionX, unit.ArtButtonPositionY);
-        return x - y * 10;
+        return x + y * 10;
       }
       catch
       {
