@@ -44,6 +44,10 @@ namespace Launcher.IntegrityChecker.TestSupport
       if (unit.IsTechtreeStructuresBuiltModified)
         foreach (var builtStructure in unit.TechtreeStructuresBuilt)
           RemoveWithChildren(builtStructure);
+      
+      if (unit.IsTechtreeUpgradesToModified)
+        foreach (var upgradesTo in unit.TechtreeUpgradesTo)
+          RemoveWithChildren(upgradesTo);
 
       if (unit.IsTechtreeResearchesAvailableModified)
         foreach (var research in unit.TechtreeResearchesAvailable)
