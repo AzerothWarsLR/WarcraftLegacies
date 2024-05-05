@@ -52,7 +52,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Offensive caster.|n|cfff5962dAbilities:|R Magic Missile, Mana Shield|n|cfff5962dCan Learn:|R Dispel Magic, Suppression|n|n|cffffcc00Attacks land and air units.|R"
+      "Value": "Offensive caster.|n|cfff5962dAbilities:|r Magic Missile, Mana Shield|n|cfff5962dAbilities (unlockable):|r Dispel Magic, Suppression|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1635083125,

@@ -24,6 +24,11 @@
       "Id": 1668510581,
       "Type": 1,
       "Value": 1
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light melee unit. |n|cfff5962dAbilities:|r Poisonous Attacks|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

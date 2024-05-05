@@ -3,5 +3,11 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit with Command Aura. |n|cfff5962dAbilities:|r Command Aura, Bash|n|n|cffffcc00Attacks land units.|r"
+    }
+  ]
 }

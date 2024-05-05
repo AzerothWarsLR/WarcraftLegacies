@@ -40,7 +40,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Primary troop production building. |n|n|cfff5962dTrains:|R Footman, Huntsman, Knight|n|cfff5962dResearches:|r Ensnare, Veteran Footman, Animal War Training, Rapid Fire"
+      "Value": "Primary troop production building. |n|cfff5962dTrains:|r Footman, Veteran Footman, Royal Arbalest, Rifleman, Huntsman, Gallant Knight, Knight|n|cfff5962dResearches:|r Veteran Footmen, Ensnare, Animal War Training, Rapid Fire"
     }
   ]
 }

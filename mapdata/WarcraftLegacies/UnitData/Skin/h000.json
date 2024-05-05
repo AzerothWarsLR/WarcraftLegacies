@@ -44,6 +44,11 @@
       "Id": 1868786037,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNLordaeronPalace.blp"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Upgrade to Castle to enable the production of additional types of structures and units.|n|cfff5962dTrains:|r Farmer, Peasant, Templar, Paladin|n|cfff5962dTrains (unlockable):|r Throne Guard|n|cfff5962dAbilities:|r Summon Garrison, Life Regeneration Aura, Return Gold and Lumber"
     }
   ]
 }

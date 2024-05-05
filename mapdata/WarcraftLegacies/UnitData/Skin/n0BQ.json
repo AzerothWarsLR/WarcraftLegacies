@@ -56,6 +56,11 @@
       "Id": 1831952757,
       "Type": 3,
       "Value": "war3mapImported\\FrostOrb.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary defensive structure. |n|cfff5962dAbilities:|r Spell Immunity|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

@@ -46,7 +46,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Primary troop production building. |n|n|cfff5962dTrains:|R Fel Grunt, Crossbowman, Demolisher|n|cfff5962dResearches:|R Fel Infused Skeleton, Demonic Flux, Improved Frenzy, Burning Oil|n|cfff5962dCan learn:|R Spiked Barricades"
+      "Value": "Primary troop production building. |n|cfff5962dTrains:|r Chaos Warsong Grunt, Fel Crossbowman, War Machine, Marauder, Grunt, Fel Grunt, Catapult, Headhunter, Axe Thrower, Blademaster, Demolisher, Catapult, Warbringer|n|cfff5962dTrains (unlockable):|r Warlord|n|cfff5962dResearches:|r Demonic Flux, Improved Frenzy, Burning Oil, Fel Infused Skeleton|n|cfff5962dAbilities:|r Spiked Barricades"
     }
   ]
 }

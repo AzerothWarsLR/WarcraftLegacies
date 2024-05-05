@@ -37,7 +37,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Advanced troop production building.|n|n|r|cfff5962dTrains:|R Fel Raider, Bonebreaker, Obsidian Drake |n|cfff5962dResearches:|R Demonic Flux, Improved Frenzy, Incinerate, Enhanced Breath|n|cfff5962dCan learn:|R Spiked Barricades"
+      "Value": "Advanced troop production building.|n|cfff5962dTrains:|r Bonebreaker, Raider, Chaos Raider, Fel Raider, Stonemaul Bruiser, Warlock, Shadowpriest, Nether Drake, Obsidian Drake, Ogron, Blackrock Dragonkin|n|cfff5962dTrains (unlockable):|r Batrider, Wind Rider|n|cfff5962dResearches:|r Demonic Flux, Improved Frenzy, Incinerate, Enhanced Breath"
     }
   ]
 }

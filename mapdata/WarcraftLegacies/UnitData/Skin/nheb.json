@@ -41,7 +41,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Primary troop production building. |n|n|cfff5962dTrains:|R Swordsman, Ranger, Ballista|n|cfff5962dResearches:|R Precision Shots, Enchanted Bowstrings, Sunfury Training"
+      "Value": "Primary troop production building. |n|cfff5962dTrains:|r Swordsman, Sunfury Warrior, Ranger, Ballista|n|cfff5962dResearches:|r Sunfury Training, Precision Shots, Enchanted Bowstrings"
     }
   ]
 }

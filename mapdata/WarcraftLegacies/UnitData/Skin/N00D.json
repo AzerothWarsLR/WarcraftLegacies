@@ -34,6 +34,11 @@
       "Id": 1818520949,
       "Type": 3,
       "Value": "war3mapImported\\Ragnaros.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical Hero, adept at disrupting spells and dealing large amounts of fire damage.  Can learn Soul Burn, Summon Lava Spawn, Incinerate and Volcano.|n|cfff5962dAbilities:|r Breath of Fire, Spawn Fire Element, Flame Shield, Resistant Skin, Permanent Immolation, Spell Immunity|n|cfff5962dAbilities (hero):|r Battle Trance|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

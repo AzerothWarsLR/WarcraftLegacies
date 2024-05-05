@@ -62,6 +62,11 @@
       "Id": 1684960117,
       "Type": 3,
       "Value": "Waygate"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Opens the portal.|n|cfff5962dAbilities:|r Anti Portal Blocking, Waygate ability"
     }
   ]
 }

@@ -70,6 +70,11 @@
     {
       "Id": 1651270517,
       "Value": 150
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary defensive structure. |n|cfff5962dUpgrades to:|r Improved Tidal Watcher|n|cfff5962dAbilities:|r Multishot|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

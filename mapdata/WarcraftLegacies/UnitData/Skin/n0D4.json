@@ -47,6 +47,11 @@
       "Id": 1651012469,
       "Type": 3,
       "Value": "BuildingShadowSmall"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary defensive structure. |n|cfff5962dAbilities:|r True Sight|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

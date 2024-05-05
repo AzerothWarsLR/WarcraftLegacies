@@ -3,5 +3,11 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit that can Slam opponents and hurl bolts of frost. Immune to spells. |n|cfff5962dAbilities:|r Greater Frost Bolt, Howl of Terror, Spell Immunity|n|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
 }

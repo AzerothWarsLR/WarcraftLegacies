@@ -51,6 +51,11 @@
       "Id": 1718840949,
       "Type": 3,
       "Value": " (Illidari/Fel Horde)"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Upgrade to Fortress to enable the production of additional types of structures and units.|n|cfff5962dTrains:|r Technician, Bloodwarder, Mur\u0027gul Slave, Fel Peon, Royal Guard, Executioner|n|cfff5962dTrains (unlockable):|r Fel Death Knight, Infernal Juggernaut|n|cfff5962dAbilities:|r Fel Energy, Return Gold and Lumber"
     }
   ]
 }

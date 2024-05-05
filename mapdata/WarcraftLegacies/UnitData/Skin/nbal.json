@@ -31,7 +31,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Heavy melee unit can cast Dispel Magic, Summon Fel Beast, Cripple and Rain of Fire. |n|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Heavy melee unit can cast Dispel Magic, Summon Fel Beast, Cripple and Rain of Fire. |n|cfff5962dAbilities:|r Rain of Fire, Dispel Magic, Summon Fel Stalker, Resistant Skin|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

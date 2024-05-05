@@ -8,6 +8,11 @@
       "Id": 1633907573,
       "Type": 1,
       "Value": 1.05
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit with Shadowmeld and Devotion Aura. Can cast Divine Shield. |n|cfff5962dAbilities:|r Cleaving Attack, Divine Shield|n|cfff5962dAbilities (unlockable):|r Devotion Aura|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

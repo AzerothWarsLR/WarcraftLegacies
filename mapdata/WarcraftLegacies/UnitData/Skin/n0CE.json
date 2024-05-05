@@ -21,7 +21,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Light ranged unit that has a poison attack which slows and damages enemy units. Has True Sight and the Submerge ability, which allows this unit to hide in water. |n|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Light ranged unit that has a poison attack which slows and damages enemy units. Has True Sight and the Submerge ability, which allows this unit to hide in water. |n|cfff5962dAbilities:|r Slow Poison|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1835101813,

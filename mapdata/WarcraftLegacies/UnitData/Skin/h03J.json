@@ -48,7 +48,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Advanced troop production building.|n|n|r|cfff5962dTrains:|R Spell Breaker, Dragonhawk Rider, Arcane Annihilator|n|cfff5962dResearches:|R Control Magic, Cloud, Improved Glaives"
+      "Value": "Advanced troop production building.|n|cfff5962dTrains:|r Spellbreaker|n|cfff5962dTrains (unlockable):|r Dragonhawk Rider, Arcane Annihilator|n|cfff5962dResearches:|r Control Magic, Improved Glaives, Cloud"
     }
   ]
 }

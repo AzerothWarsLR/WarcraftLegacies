@@ -53,7 +53,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Mystical Hero, adept at absording damage and returning it.|n|cfff5962dAbilities:|R Mana Shield|n|cfff5962dCan learn:|R Arcane Burst, Devour Magic, Defensive Orbs, Ashes of Al\u0027ar|n|n|cffffcc00Attacks land units.|R"
+      "Value": "Mystical Hero, adept at absording damage and returning it.|n|cfff5962dAbilities:|r Mana Shield, Hero Glow Origin|n|cfff5962dAbilities (hero):|r Arcane Burst, Devour Magic, Defensive Orbs, Ashes of Al\u0027ar, Attribute Bonus|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

@@ -53,7 +53,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Devout believer in the purity of the Light.|n|cfff5962dAbilities:|R Cleanse|n|cfff5962dCan Learn:|R Renewal, Rain of Light|n|n|cffffcc00Attacks land and air units.|R\r\n"
+      "Value": "Devout believer in the purity of the Light.|n|cfff5962dAbilities:|r Cleanse|n|cfff5962dAbilities (unlockable):|r Renewal, Rain of Light|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

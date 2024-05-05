@@ -3,5 +3,11 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit that hurls bolts of frost at opponents. Immune to spells. |n|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
 }

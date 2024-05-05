@@ -3,5 +3,11 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit with Crushing Wave and Frost Armor. |n|cfff5962dAbilities:|r Crushing Wave, Frost Armor, Spell Immunity|n|n|cffffcc00Attacks land units.|r"
+    }
+  ]
 }

@@ -82,7 +82,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Master of technomechanical tools.|n|cfff5962dAbilities:|R Mech Kit|n|cfff5962dCan Learn:|R EMP, Portable Turret, Stun Mine|n|n|cffffcc00Attacks land and air units.|R"
+      "Value": "Master of technomechanical tools.|n|cfff5962dAbilities:|r Mech Kit|n|cfff5962dAbilities (unlockable):|r EMP, Stun Mine, Portable Turret|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

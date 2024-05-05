@@ -62,7 +62,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Melee siege unit which can transform into an immobile ranged siege unit.|n|n|cfff5962dAbilities:|r Siege Form|n|cff99b4d1Can only train 6|n|cffffcc00Attacks land units.|r"
+      "Value": "Melee siege unit which can transform into an immobile ranged siege unit.|n|cfff5962dAbilities:|r Siege Form|n|cff99b4d1Can only train 6.|r|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

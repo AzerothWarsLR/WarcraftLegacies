@@ -31,7 +31,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Primary troop production building. |n|n|cfff5962dTrains:|R Naga Incursor, Hatchling, Gargantuan Sea Turtle"
+      "Value": "Primary troop production building. |n|cfff5962dTrains:|r Naga Incursor, Hatchling, Gargantuan Sea Turtle|n|cff99b4d1Can only build 1.|r"
     },
     {
       "Id": 1651012469,

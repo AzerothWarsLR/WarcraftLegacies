@@ -44,6 +44,11 @@
       "Id": 1818520949,
       "Type": 3,
       "Value": "war3mapImported\\DivineGolem.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit cloaked in demonic flames that damage nearby enemy ground units. Immune to magic. |n|cfff5962dAbilities:|r Massive Attack, Spell Immunity, Resistant Skin|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }
