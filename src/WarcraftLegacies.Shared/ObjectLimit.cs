@@ -6,7 +6,8 @@ namespace WarcraftLegacies.Shared
   {
     public string ObjectTypeId { get; }
     public int Limit { get; }
-
+    
+    [Obsolete("Use the version that takes in two integers instead.")]
     public ObjectLimit(string objectTypeId, int limit)
     {
       ObjectTypeId = objectTypeId;
