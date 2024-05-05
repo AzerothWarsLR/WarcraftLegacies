@@ -20,7 +20,8 @@ namespace Launcher.MapMigrations
     private const string UnlockableUnitsTrained = "|cfff5962dTrains (unlockable):|r ";
     private const string ResearchesAvailable = "|cfff5962dResearches:|r ";
     private const string UpgradesTo = "|cfff5962dUpgrades to:|r ";
-    private const string ItemsSold = "|cfff5962dSells:|r ";
+    private const string ItemsSold = "|cfff5962dSells items:|r ";
+    private const string UnitsSold = "|cfff5962dSells units:|r ";
 
     private readonly ObjectLimitRepository _objectLimitRepository = new();
 
@@ -52,6 +53,7 @@ namespace Launcher.MapMigrations
       AppendLearnedAbilities(tooltipBuilder, unit);
       AppendHeroAbilities(tooltipBuilder, unit);
       AppendSoldItems(tooltipBuilder, unit);
+      AppendUnitsSold(tooltipBuilder, unit);
       AppendObjectLimit(tooltipBuilder, unit);
       AppendTargetsAllowed(tooltipBuilder, unit);
       
@@ -98,6 +100,20 @@ namespace Launcher.MapMigrations
       
       if (heroAbilities.Any())
         tooltipBuilder.Append($"{LineSeperator}{HeroAbilitiesKnown}{string.Join(", ", heroAbilities)}");
+    }
+    
+    private static void AppendUnitsSold(StringBuilder tooltipBuilder, Unit unit)
+    {
+      if (!unit.IsTechtreeUnitsSoldModified) 
+        return;
+      
+      var unitsSold = unit.TechtreeUnitsSold
+        .OrderBy(x => x.GetPrioritySafe())
+        .Select(x => x.GetTextNameSafe())
+        .ToArray();
+      
+      if (unitsSold.Any())
+        tooltipBuilder.Append($"{LineSeperator}{UnitsSold}{string.Join(", ", unitsSold)}");
     }
     
     private static void AppendInnateUnitsTrained(StringBuilder tooltipBuilder, Unit unit)
