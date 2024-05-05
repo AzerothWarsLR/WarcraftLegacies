@@ -11,7 +11,7 @@ namespace Launcher.Extensions
     {
       return ability is not (InventoryPackMule or Inventory2SlotUnitHuman or Inventory2SlotUnitOrc or Inventory2SlotUnitUndead
         or Inventory2SlotUnitNightElf or Invulnerable or DefenseBonus1 or Ultravision or SellItem or AlliedBuilding or 
-        PurchaseItem or LightningAttack or Inventory);
+        PurchaseItem or LightningAttack or Inventory or AttributeModifierSkill);
     }
     
     public static IEnumerable<Tech> GetTechtreeRequirementsSafe(this Ability unit)
