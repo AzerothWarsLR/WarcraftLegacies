@@ -4,6 +4,19 @@ namespace Launcher.Extensions
 {
   public static class TechExtensions
   {
+    public static bool IsUpgradeSafe(this Tech tech)
+    {
+      try
+      {
+        _ = tech.AsUpgrade;
+        return true;
+      }
+      catch
+      {
+        return false;
+      }
+    }
+    
     public static string GetTextNameSafe(this Upgrade upgrade)
     {
       try

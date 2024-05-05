@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using War3Api.Object;
 using War3Api.Object.Enums;
 
@@ -7,6 +8,15 @@ namespace Launcher.Extensions
 {
   public static class UnitExtensions
   {
+    /// <summary>
+    /// Returns true if any of the unit's requirements are a research.
+    /// </summary>
+    /// <returns></returns>
+    public static bool HasUpgradeRequirement(this Unit unit)
+    {
+      return unit.GetTechtreeRequirementsSafe().Any(x => x.IsUpgradeSafe());
+    }
+    
     public static List<Target> GetAllTargetsAllowedSafe(this Unit unit)
     {
       List<Target> targetsAllowed = new();
@@ -66,6 +76,18 @@ namespace Launcher.Extensions
         return unit.TechtreeResearchesAvailable;
         
       return Array.Empty<Upgrade>();
+    }
+    
+    public static IEnumerable<Tech> GetTechtreeRequirementsSafe(this Unit unit)
+    {
+      try
+      {
+        return unit.TechtreeRequirements;
+      }
+      catch
+      {
+        return Array.Empty<Tech>();
+      }
     }
     
     public static IEnumerable<Unit> GetUnitsTrainedSafe(this Unit unit)

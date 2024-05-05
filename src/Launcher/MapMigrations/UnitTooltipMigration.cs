@@ -17,6 +17,7 @@ namespace Launcher.MapMigrations
     private const string AbilitiesLearnable = "|cfff5962dAbilities (unlockable):|r ";
     private const string HeroAbilitiesKnown = "|cfff5962dAbilities (hero):|r ";
     private const string UnitsTrained = "|cfff5962dTrains:|r ";
+    private const string UnlockableUnitsTrained = "|cfff5962dTrains (unlockable):|r ";
     private const string ResearchesAvailable = "|cfff5962dResearches:|r ";
     private const string ItemsSold = "|cfff5962dSells:|r ";
 
@@ -42,7 +43,8 @@ namespace Launcher.MapMigrations
       var tooltipBuilder = new StringBuilder();
 
       AppendFlavour(tooltipBuilder, unit);
-      AppendUnitsTrained(tooltipBuilder, unit);
+      AppendInnateUnitsTrained(tooltipBuilder, unit);
+      AppendUnlockableUnitsTrained(tooltipBuilder, unit);
       AppendResearchesAvailable(tooltipBuilder, unit);
       AppendInnateAbilities(tooltipBuilder, unit);
       AppendLearnedAbilities(tooltipBuilder, unit);
@@ -96,15 +98,29 @@ namespace Launcher.MapMigrations
         tooltipBuilder.Append($"{LineSeperator}{HeroAbilitiesKnown}{string.Join(", ", heroAbilities)}");
     }
     
-    private static void AppendUnitsTrained(StringBuilder tooltipBuilder, Unit unit)
+    private static void AppendInnateUnitsTrained(StringBuilder tooltipBuilder, Unit unit)
     {
       var unitsTrained = unit.GetUnitsTrainedSafe()
+        .Where(x => !x.HasUpgradeRequirement())
         .OrderBy(x => x.GetPrioritySafe())
         .Select(GetBestName)
         .ToArray();
       
       if (unitsTrained.Any()) 
         tooltipBuilder.Append($"{LineSeperator}{UnitsTrained}{string.Join(", ", unitsTrained)}");
+    }
+    
+    private static void AppendUnlockableUnitsTrained(StringBuilder tooltipBuilder, Unit unit)
+    {
+      var unitsTrained = unit
+        .GetUnitsTrainedSafe()
+        .Where(x => x.HasUpgradeRequirement())
+        .OrderBy(x => x.GetPrioritySafe())
+        .Select(GetBestName)
+        .ToArray();
+      
+      if (unitsTrained.Any()) 
+        tooltipBuilder.Append($"{LineSeperator}{UnlockableUnitsTrained}{string.Join(", ", unitsTrained)}");
     }
     
     private static void AppendResearchesAvailable(StringBuilder tooltipBuilder, Unit unit)
