@@ -58,7 +58,8 @@ namespace Launcher.MapMigrations
       AppendTargetsAllowed(tooltipBuilder, unit);
       
       var extendedTooltip = tooltipBuilder.ToString();
-      unit.TextTooltipExtended = extendedTooltip;
+      if (unit.GetExtendedTooltipSafe() != extendedTooltip)
+        unit.TextTooltipExtended = extendedTooltip;
     }
 
     private static void AppendInnateAbilities(StringBuilder tooltipBuilder, Unit unit)
