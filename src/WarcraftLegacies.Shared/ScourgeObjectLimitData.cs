@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using static Constants;
 
 namespace WarcraftLegacies.Shared
@@ -78,7 +78,7 @@ namespace WarcraftLegacies.Shared
       yield return new(UPGRADE_R06N_IMPROVED_ORB_OF_ANNIHILATION_SCOURGE, Unlimited);
       yield return new(UPGRADE_RUSL_SKELETAL_LONGEVITY, Unlimited);
       yield return new(UPGRADE_RUSM_SKELETAL_MASTERY, Unlimited);
-      
+
       yield return new(UPGRADE_R07X_MAKE_ARTHAS_THE_LICH_KING_SCOURGE, Unlimited);
     }
   }

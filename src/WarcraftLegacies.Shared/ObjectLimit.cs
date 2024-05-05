@@ -1,17 +1,25 @@
-﻿namespace WarcraftLegacies.Shared
+﻿using WarcraftLegacies.Shared.Extensions;
+
+namespace WarcraftLegacies.Shared
 {
   public sealed class ObjectLimit
   {
-    public int ObjectTypeId { get; }
+    public string ObjectTypeId { get; }
     public int Limit { get; }
 
-    public ObjectLimit(int objectTypeId, int limit)
+    public ObjectLimit(string objectTypeId, int limit)
     {
       ObjectTypeId = objectTypeId;
       Limit = limit;
     }
-    
-    public void Deconstruct(out int objectTypeId, out int limit)
+
+    public ObjectLimit(int objectTypeId, int limit)
+    {
+      ObjectTypeId = objectTypeId.IdToFourCc();
+      Limit = limit;
+    }
+
+    public void Deconstruct(out string objectTypeId, out int limit)
     {
       objectTypeId = ObjectTypeId;
       limit = Limit;

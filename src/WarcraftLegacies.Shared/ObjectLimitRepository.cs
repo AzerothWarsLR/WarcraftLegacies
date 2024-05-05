@@ -6,7 +6,7 @@ namespace WarcraftLegacies.Shared
   public sealed class ObjectLimitRepository
   {
     private readonly Dictionary<string, int> _objectLimits = new();
-    
+
     public ObjectLimitRepository()
     {
       AddFactionObjectLimits(ScourgeObjectLimitData.GetAllObjectLimits());
@@ -16,11 +16,11 @@ namespace WarcraftLegacies.Shared
     {
       return _objectLimits.TryGetValue(objectTypeId.IdToFourCc(), out limit);
     }
-    
+
     private void AddFactionObjectLimits(IEnumerable<ObjectLimit> factionObjectLimits)
     {
-      foreach (var (objectTypeId, limit) in factionObjectLimits) 
-        _objectLimits.Add(objectTypeId.IdToFourCc(true), limit);
+      foreach (var (objectTypeId, limit) in factionObjectLimits)
+        _objectLimits.Add(objectTypeId, limit);
     }
   }
 }

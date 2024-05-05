@@ -82,7 +82,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
     {
       foreach (var (objectTypeId, objectLimit) in ScourgeObjectLimitData.GetAllObjectLimits())
       {
-        ModObjectLimit(objectTypeId, objectLimit);
+        ModObjectLimit(FourCC(objectTypeId), objectLimit);
       }
 
       //Abilities
