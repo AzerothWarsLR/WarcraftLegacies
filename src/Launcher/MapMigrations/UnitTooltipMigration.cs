@@ -183,6 +183,9 @@ namespace Launcher.MapMigrations
 
     private void AppendObjectLimit(StringBuilder tooltipBuilder, Unit unit)
     {
+      if (unit.IsAbilitiesHeroModified && unit.AbilitiesHero.Any())
+        return;
+      
       var unitId = unit.NewId != 0 ? unit.NewId : unit.OldId;
       if (!_objectLimitRepository.TryGetObjectLimit(unitId, out var limit)) 
         return;
