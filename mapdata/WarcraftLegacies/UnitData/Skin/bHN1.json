@@ -27,12 +27,12 @@
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "- Firestorm,- Firestorm|n- Stasis Trap,- Firestorm|n- Stasis Trap|n- Mass Bloodlust"
+      "Value": "- Obelisk of Nyalotha,- Obelisk of Nyalotha|n- Stasis Trap,- Obelisk of Nyalotha|n- Stasis Trap|n- Mass Bloodlust"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(tolvir)"
+      "Value": "(yogg)"
     },
     {
       "Id": 1818520949,
@@ -47,7 +47,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Herald of Nyalotha"
+      "Value": "Herald"
     },
     {
       "Id": 1668510581,
@@ -57,12 +57,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Train Herald of Nyalotha"
+      "Value": "Train Herald"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Powerful Eredar Warlock in service of Magtheridon.|n|cfff5962dAbilities:|R Firestorm, Resistant Skin |n|cfff5962dCan learn:|R Stasis Trap, Mass Bloodlust|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Herald to the Dark God N\u0027zoth.|n|cfff5962dAbilities:|R Firestorm, Resistant Skin |n|cfff5962dCan learn:|R Stasis Trap, Mass Bloodlust|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1684960117,
@@ -73,6 +73,11 @@
       "Id": 1633907573,
       "Type": 1,
       "Value": 1
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\BlackArrow\\BlackArrowMissile.mdl"
     }
   ]
 }
