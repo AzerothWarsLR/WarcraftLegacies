@@ -1,7 +1,6 @@
-using System.Collections.Generic;
-using static Constants;
+using static Constants;using System.Collections.Generic;
 
-namespace WarcraftLegacies.Shared
+namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
   public static class ScourgeObjectLimitData
   {

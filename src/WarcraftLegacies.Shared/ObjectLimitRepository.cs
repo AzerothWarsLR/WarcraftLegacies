@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using WarcraftLegacies.Shared.Extensions;
+using WarcraftLegacies.Shared.FactionObjectLimits;
 
 namespace WarcraftLegacies.Shared
 {
@@ -9,7 +10,30 @@ namespace WarcraftLegacies.Shared
 
     public ObjectLimitRepository()
     {
+      AddFactionObjectLimits(AhnqirajObjectLimitData.GetAllObjectLimits());
+      AddFactionObjectLimits(BilgewaterObjectLimitData.GetAllObjectLimits());
+      AddFactionObjectLimits(BlackEmpireObjectLimitData.GetAllObjectLimits());
+      AddFactionObjectLimits(DalaranObjectLimitData.GetAllObjectLimits());
+      AddFactionObjectLimits(DraeneiObjectLimitData.GetAllObjectLimits());
+      AddFactionObjectLimits(DruidsObjectLimitData.GetAllObjectLimits());
+      AddFactionObjectLimits(FelHordeObjectLimitData.GetAllObjectLimits());
+      AddFactionObjectLimits(FrostwolfObjectLimitData.GetAllObjectLimits());
+      AddFactionObjectLimits(GilneasObjectLimitData.GetAllObjectLimits());
+      AddFactionObjectLimits(IllidariObjectLimitData.GetAllObjectLimits());
+      AddFactionObjectLimits(IronforgeObjectLimitData.GetAllObjectLimits());
+      AddFactionObjectLimits(KultirasObjectLimitData.GetAllObjectLimits());
+      AddFactionObjectLimits(LegionObjectLimitData.GetAllObjectLimits());
+      AddFactionObjectLimits(LordaeronObjectLimitData.GetAllObjectLimits());
+      AddFactionObjectLimits(NazjatarObjectLimitData.GetAllObjectLimits());
+      AddFactionObjectLimits(QuelthalasObjectLimitData.GetAllObjectLimits());
+      AddFactionObjectLimits(ScarletCrusadeObjectLimitData.GetAllObjectLimits());
       AddFactionObjectLimits(ScourgeObjectLimitData.GetAllObjectLimits());
+      AddFactionObjectLimits(SentinelsObjectLimitData.GetAllObjectLimits());
+      AddFactionObjectLimits(SkywallObjectLimitData.GetAllObjectLimits());
+      AddFactionObjectLimits(StormwindObjectLimitData.GetAllObjectLimits());
+      AddFactionObjectLimits(SunfuryObjectLimitData.GetAllObjectLimits());
+      AddFactionObjectLimits(WarsongObjectLimitData.GetAllObjectLimits());
+      AddFactionObjectLimits(ZandalarObjectLimitData.GetAllObjectLimits());
     }
 
     public bool TryGetObjectLimit(int objectTypeId, out int limit)
@@ -20,7 +44,7 @@ namespace WarcraftLegacies.Shared
     private void AddFactionObjectLimits(IEnumerable<ObjectLimit> factionObjectLimits)
     {
       foreach (var (objectTypeId, limit) in factionObjectLimits)
-        _objectLimits.Add(objectTypeId, limit);
+        _objectLimits.TryAdd(objectTypeId, limit);
     }
   }
 }

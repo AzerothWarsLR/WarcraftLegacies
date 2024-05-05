@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace WarcraftLegacies.Shared.Extensions
+﻿namespace WarcraftLegacies.Shared.Extensions
 {
   public static class IntExtensions
   {
@@ -19,14 +17,7 @@ namespace WarcraftLegacies.Shared.Extensions
         result += charMap[charValue];
       }
 
-      return reverse ? Reverse(result) : result;
-    }
-
-    private static string Reverse(string s)
-    {
-      var charArray = s.ToCharArray();
-      Array.Reverse(charArray);
-      return new string(charArray);
+      return reverse ? result.Reverse() : result;
     }
   }
 }
