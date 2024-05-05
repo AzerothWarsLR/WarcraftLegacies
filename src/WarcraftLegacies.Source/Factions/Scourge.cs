@@ -83,10 +83,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
     private void RegisterObjectLimits()
     {
       foreach (var (objectTypeId, objectLimit) in ScourgeObjectLimitData.GetAllObjectLimits())
-      {
-        Console.WriteLine(objectTypeId);
         ModObjectLimit(FourCC(objectTypeId), objectLimit);
-      }
 
       //Abilities
       ModAbilityAvailability(ABILITY_A0WG_SPELL_SHIELD_SPELL_BOOK_ORANGE_ANTONIDAS_RED_LICH_KING, -1);

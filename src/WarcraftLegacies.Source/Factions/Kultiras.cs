@@ -3,6 +3,7 @@ using MacroTools;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.KulTiras;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
@@ -53,67 +54,8 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
 
     private void RegisterObjectLimits()
     {
-      ModObjectLimit(FourCC("h062"), UNLIMITED); //Town Hall
-      ModObjectLimit(FourCC("h064"), UNLIMITED); //Keep
-      ModObjectLimit(FourCC("h06I"), UNLIMITED); //Castle
-      ModObjectLimit(FourCC("h07N"), UNLIMITED); //Farm
-      ModObjectLimit(FourCC("h07M"), UNLIMITED); //Altar
-      ModObjectLimit(FourCC("h07R"), UNLIMITED); //Scout Tower
-      ModObjectLimit(FourCC("h07S"), UNLIMITED); //Guard Tower
-      ModObjectLimit(FourCC("h07T"), UNLIMITED); //Improved Guard Tower
-      ModObjectLimit(FourCC("h07U"), UNLIMITED); //Cannon Tower
-      ModObjectLimit(FourCC("h07V"), UNLIMITED); //Improved Cannon Tower
-      ModObjectLimit(FourCC("h07O"), UNLIMITED); //Blacksmith
-      ModObjectLimit(FourCC("h07Q"), UNLIMITED); //Arcane Sanctum
-      ModObjectLimit(FourCC("n07H"), UNLIMITED); //Marketplace
-      ModObjectLimit(FourCC("h07W"), UNLIMITED); //Shipyard
-      ModObjectLimit(FourCC("h06R"), UNLIMITED); //Garrison
-      ModObjectLimit(FourCC("h07P"), UNLIMITED); //Workshop
-      ModObjectLimit(FourCC("h093"), UNLIMITED); //Workshop
-
-      //Units
-      ModObjectLimit(FourCC("h01E"), UNLIMITED); //Deckhand
-      ModObjectLimit(FourCC("e007"), UNLIMITED); //Thornspeaker
-      ModObjectLimit(FourCC("n09A"), 12); //Ember Cleric
-      ModObjectLimit(FourCC("n09B"), 8); //Witch Hunter
-      ModObjectLimit(FourCC("h092"), 4); //Order Inquisitor
-      ModObjectLimit(FourCC("h05K"), UNLIMITED); //Tidesage
-      ModObjectLimit(FourCC("h041"), UNLIMITED); //Marine
-      ModObjectLimit(FourCC("e00B"), UNLIMITED); //Thornspeaker Bear
-      ModObjectLimit(FourCC("n009"), 12); //Revenant of the Tides
-      ModObjectLimit(FourCC("n07G"), 6); //muskateer
-      ModObjectLimit(FourCC("n029"), 12); //Sea Giant
-      ModObjectLimit(FourCC("h06J"), UNLIMITED); //Sniper
-      ModObjectLimit(FourCC("o01A"), 6); //Cannon Team
-      ModObjectLimit(FourCC("h04O"), 12); //Bomber
-      ModObjectLimit(FourCC("h04W"), 3); //Siege Tank
-      ModObjectLimit(FourCC("h0A0"), 8); //Fusillier
-
-      //Ships
-      ModObjectLimit(FourCC("hbot"), UNLIMITED); //Alliance Transport Ship
-      ModObjectLimit(FourCC("h0AR"), UNLIMITED); //Alliance Scout
-      ModObjectLimit(FourCC("h0AX"), UNLIMITED); //Alliance Frigate
-      ModObjectLimit(FourCC("h0B3"), UNLIMITED); //Alliance Fireship
-      ModObjectLimit(FourCC("h0B0"), UNLIMITED); //Alliance Galley
-      ModObjectLimit(FourCC("h0B6"), UNLIMITED); //Alliance Boarding
-      ModObjectLimit(FourCC("h0AN"), UNLIMITED); //Alliance Juggernaut
-      ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
-
-      //Upgrades
-      ModObjectLimit(FourCC("R001"), UNLIMITED); //Rising Tides
-      ModObjectLimit(FourCC("R000"), UNLIMITED); //Tidesage Adept Training
-      ModObjectLimit(FourCC("R01O"), UNLIMITED); //Crushing Wave
-      ModObjectLimit(FourCC("R01T"), UNLIMITED); //Cluster Rockets
-      ModObjectLimit(FourCC("R01U"), UNLIMITED); //Improved Barrage
-      ModObjectLimit(FourCC("R05G"), UNLIMITED); //Thornspeaker Training
-      ModObjectLimit(FourCC("Rhac"), UNLIMITED); //Improved Masonry
-      ModObjectLimit(FourCC("R08B"), UNLIMITED); //Long Rifles
-      ModObjectLimit(FourCC("R05J"), UNLIMITED); //Expedition
-
-      //Heroes
-      ModObjectLimit(UNIT_HAPM_LORD_ADMIRAL_OF_KUL_TIRAS_KUL_TIRAS, 1);
-      ModObjectLimit(UNIT_H05L_LADY_OF_HOUSE_PROUDMOORE_KUL_TIRAS, 1);
-      ModObjectLimit(UNIT_U026_MATRIARCH_OF_HOUSE_WAYCREST_KULTIRAS, 1);
+      foreach (var (objectTypeId, objectLimit) in KultirasObjectLimitData.GetAllObjectLimits())
+        ModObjectLimit(FourCC(objectTypeId), objectLimit);
     }
 
     private void RegisterQuests()

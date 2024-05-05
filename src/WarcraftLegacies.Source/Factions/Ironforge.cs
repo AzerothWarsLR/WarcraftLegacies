@@ -2,6 +2,7 @@
 using MacroTools;
 using MacroTools.FactionSystem;
 using MacroTools.ResearchSystems;
+using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.Ironforge;
 using WarcraftLegacies.Source.Researches.Ironforge;
 using WarcraftLegacies.Source.Setup;
@@ -55,75 +56,8 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
 
     private void RegisterObjectLimits()
     {
-      //Structures
-      ModObjectLimit(FourCC("h07E"), UNLIMITED); //Town Hall
-      ModObjectLimit(FourCC("h07F"), UNLIMITED); //Keep
-      ModObjectLimit(FourCC("h07G"), UNLIMITED); //Castle
-      ModObjectLimit(FourCC("h02P"), UNLIMITED); //Farm  (Dwarven)
-      ModObjectLimit(FourCC("h01S"), UNLIMITED); //Tavern
-      ModObjectLimit(FourCC("h07B"), UNLIMITED); //Altar of Kings
-      ModObjectLimit(FourCC("h07C"), UNLIMITED); //Barracks
-      ModObjectLimit(FourCC("hlum"), UNLIMITED); //Lumber Mill
-      ModObjectLimit(FourCC("h048"), UNLIMITED); //Blacksmith (Dwarven)
-      ModObjectLimit(FourCC("h042"), UNLIMITED); //Machine Factory
-      ModObjectLimit(FourCC("harm"), UNLIMITED); //Workshop
-      ModObjectLimit(FourCC("hgra"), UNLIMITED); //Gryphon Aviary
-      ModObjectLimit(FourCC("h07H"), UNLIMITED); //Scout Tower
-      ModObjectLimit(FourCC("h07J"), UNLIMITED); //Cannon Tower
-      ModObjectLimit(FourCC("h07K"), UNLIMITED); //Cannon Tower (Improved)
-      ModObjectLimit(FourCC("h07D"), UNLIMITED); //Alliance Shipyard
-      ModObjectLimit(FourCC("n07U"), UNLIMITED); //Marketplace
-      ModObjectLimit(FourCC("h07I"), UNLIMITED); //Guard Tower
-      ModObjectLimit(FourCC("h07L"), UNLIMITED); //Guard Tower (Improved)
-
-      //Units
-      ModObjectLimit(FourCC("h019"), UNLIMITED); //Dwarven Worker
-      ModObjectLimit(FourCC("hrif"), UNLIMITED); //Rifleman
-      ModObjectLimit(FourCC("hmtm"), 9); //Mortar Team
-      ModObjectLimit(FourCC("n0CZ"), 4); //Dreadnaught
-      ModObjectLimit(FourCC("hgry"), 6); //Gryphon Rider
-      ModObjectLimit(FourCC("h018"), UNLIMITED); //Dwarven Warrior
-      ModObjectLimit(FourCC("h01L"), 6); //Thane
-      ModObjectLimit(FourCC("h037"), UNLIMITED); //Engineer
-      ModObjectLimit(FourCC("n02D"), UNLIMITED); //War Golem
-      ModObjectLimit(FourCC("h01P"), 3); //Steam Tank
-      ModObjectLimit(FourCC("n00C"), UNLIMITED); //Rune Priest
-      ModObjectLimit(FourCC("h03Z"), 3); //War Gryphon
-
-      ModObjectLimit(FourCC("h01M"), 1); //Baelgun
-      ModObjectLimit(FourCC("H00S"), 1); //Magni
-      ModObjectLimit(FourCC("Hmbr"), 1); //Muradin
-      ModObjectLimit(UNIT_H03G_EMPEROR_OF_BLACKROCK_RAGNAROS, 1);
-      ModObjectLimit(UNIT_H028_THANE_OF_AERIE_PEAK_IRONFORGE, 1);
-
-      //Ships
-      ModObjectLimit(FourCC("hbot"), UNLIMITED); //Alliance Transport Ship
-      ModObjectLimit(FourCC("h0AR"), UNLIMITED); //Alliance Scout
-      ModObjectLimit(FourCC("h0AX"), UNLIMITED); //Alliance Frigate
-      ModObjectLimit(FourCC("h0B3"), UNLIMITED); //Alliance Fireship
-      ModObjectLimit(FourCC("h0B0"), UNLIMITED); //Alliance Galley
-      ModObjectLimit(FourCC("h0B6"), UNLIMITED); //Alliance Boarding
-      ModObjectLimit(FourCC("h0AN"), UNLIMITED); //Alliance Juggernaut
-      ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
-
-      //Upgrades
-      ModObjectLimit(FourCC("R03H"), UNLIMITED); //Engineering Adept Training
-      ModObjectLimit(FourCC("R00F"), UNLIMITED); //Mithril Armor
-      ModObjectLimit(FourCC("Rhfl"), UNLIMITED); //Flare
-      ModObjectLimit(FourCC("Rhfs"), UNLIMITED); //Dragmentation Shards
-      ModObjectLimit(FourCC("Rhac"), UNLIMITED); //Improved Masonry
-      ModObjectLimit(FourCC("Rhri"), UNLIMITED); //Long Rifles
-      ModObjectLimit(FourCC("Rhhb"), UNLIMITED); //Storm Hammers
-      ModObjectLimit(FourCC("R063"), UNLIMITED); //Thunder Ale
-      ModObjectLimit(FourCC("R02K"), UNLIMITED); //Gryphon Superior Breed
-      ModObjectLimit(UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE, 2);
-      ModObjectLimit(UPGRADE_RHAR_PYRITE_ARMOR_PLATING_UNIVERSAL_UPGRADE, 2);
-      ModObjectLimit(UPGRADE_R00V_RUNE_PRIEST_MASTER_TRAINING_IRONFORGE, UNLIMITED);
-      ModObjectLimit(UPGRADE_R00Z_ARMOR_PENETRATION_ROUNDS_IRONFORGE, UNLIMITED);
-      ModObjectLimit(UPGRADE_R010_IMPROVED_SPELL_RESISTANCE_IRONFORGE, UNLIMITED);
-      ModObjectLimit(UPGRADE_R00T_OVERCLOCK_IRONFORGE_STEAM_TANK, UNLIMITED);
-      ModObjectLimit(UPGRADE_R00N_IMPROVED_SWIG_IRONFORGE_TAVERN, UNLIMITED);
-      ModObjectLimit(UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 1);
+      foreach (var (objectTypeId, objectLimit) in IronforgeObjectLimitData.GetAllObjectLimits())
+        ModObjectLimit(FourCC(objectTypeId), objectLimit);
 
       ModAbilityAvailability(ABILITY_A0IH_SPIKED_BARRICADES_DWARF_KEEP, -1);
       ModAbilityAvailability(ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);

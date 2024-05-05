@@ -1,5 +1,4 @@
 ﻿using WarcraftLegacies.Shared.Extensions;
-using System;
 
 namespace WarcraftLegacies.Shared
 {
@@ -11,7 +10,7 @@ namespace WarcraftLegacies.Shared
     [Obsolete("Use the version that takes in two integers instead.")]
     public ObjectLimit(string objectTypeId, int limit)
     {
-      ObjectTypeId = objectTypeId.Reverse();
+      ObjectTypeId = objectTypeId;
       Limit = limit;
     }
 
