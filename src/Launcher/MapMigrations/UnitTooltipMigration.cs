@@ -106,7 +106,6 @@ namespace Launcher.MapMigrations
     
     private static void AppendResearchesAvailable(StringBuilder tooltipBuilder, Unit unit)
     {
-      if (!unit.IsTechtreeUnitsTrainedModified) return;
       var researchesAvailable = unit.GetResearchesAvailableSafe()
         .OrderBy(x => x.GetPrioritySafe())
         .Select(x => x.GetTextNameSafe())

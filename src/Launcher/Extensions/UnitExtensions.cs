@@ -62,14 +62,10 @@ namespace Launcher.Extensions
     
     public static IEnumerable<Upgrade> GetResearchesAvailableSafe(this Unit unit)
     {
-      try
-      {
+      if (unit.IsTechtreeResearchesAvailableModified)
         return unit.TechtreeResearchesAvailable;
-      }
-      catch
-      {
-        return Array.Empty<Upgrade>();
-      }
+        
+      return Array.Empty<Upgrade>();
     }
     
     public static string GetTextNameSafe(this Unit unit)
