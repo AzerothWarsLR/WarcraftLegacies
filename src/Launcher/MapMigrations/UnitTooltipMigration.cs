@@ -19,6 +19,7 @@ namespace Launcher.MapMigrations
     private const string UnitsTrained = "|cfff5962dTrains:|r ";
     private const string UnlockableUnitsTrained = "|cfff5962dTrains (unlockable):|r ";
     private const string ResearchesAvailable = "|cfff5962dResearches:|r ";
+    private const string UpgradesTo = "|cfff5962dUpgrades to:|r ";
     private const string ItemsSold = "|cfff5962dSells:|r ";
 
     private readonly ObjectLimitRepository _objectLimitRepository = new();
@@ -46,6 +47,7 @@ namespace Launcher.MapMigrations
       AppendInnateUnitsTrained(tooltipBuilder, unit);
       AppendUnlockableUnitsTrained(tooltipBuilder, unit);
       AppendResearchesAvailable(tooltipBuilder, unit);
+      AppendUpgradesTo(tooltipBuilder, unit);
       AppendInnateAbilities(tooltipBuilder, unit);
       AppendLearnedAbilities(tooltipBuilder, unit);
       AppendHeroAbilities(tooltipBuilder, unit);
@@ -100,7 +102,8 @@ namespace Launcher.MapMigrations
     
     private static void AppendInnateUnitsTrained(StringBuilder tooltipBuilder, Unit unit)
     {
-      var unitsTrained = unit.GetUnitsTrainedSafe()
+      var unitsTrained = unit
+        .GetUnitsTrainedSafe()
         .Where(x => !x.HasUpgradeRequirement())
         .OrderBy(x => x.GetPrioritySafe())
         .Select(GetBestName)
@@ -133,6 +136,19 @@ namespace Launcher.MapMigrations
       if (researchesAvailable.Any())
       {
         tooltipBuilder.Append($"{LineSeperator}{ResearchesAvailable}{string.Join(", ", researchesAvailable)}");
+      }
+    }
+    
+    private static void AppendUpgradesTo(StringBuilder tooltipBuilder, Unit unit)
+    {
+      var upgradesTo = unit.GetUpgradesToSafe()
+        .OrderBy(x => x.GetPrioritySafe())
+        .Select(x => x.GetTextNameSafe())
+        .ToArray();
+      
+      if (upgradesTo.Any())
+      {
+        tooltipBuilder.Append($"{LineSeperator}{UpgradesTo}{string.Join(", ", upgradesTo)}");
       }
     }
     

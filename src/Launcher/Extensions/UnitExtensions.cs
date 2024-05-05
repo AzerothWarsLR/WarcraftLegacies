@@ -90,6 +90,18 @@ namespace Launcher.Extensions
       }
     }
     
+    public static IEnumerable<Unit> GetUpgradesToSafe(this Unit unit)
+    {
+      try
+      {
+        return unit.TechtreeUpgradesTo;
+      }
+      catch
+      {
+        return Array.Empty<Unit>();
+      }
+    }
+    
     public static IEnumerable<Unit> GetUnitsTrainedSafe(this Unit unit)
     {
       try
