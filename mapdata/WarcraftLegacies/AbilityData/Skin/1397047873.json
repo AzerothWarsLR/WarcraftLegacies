@@ -1,0 +1,52 @@
+{
+  "OldId": 1937010753,
+  "NewId": 1397047873,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASFacelessOneWidow.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Stygian Hulk)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Genesis Attack"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Drops a small tentacle with each attack. |nLasts 10 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Seed of Madness"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Drops a medium tentacle with each attack. |nLasts 10 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Genesis Attack"
+    }
+  ]
+}

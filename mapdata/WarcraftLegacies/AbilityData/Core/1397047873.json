@@ -1,0 +1,62 @@
+{
+  "OldId": 1937010753,
+  "NewId": 1397047873,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "Bapl,Bplg"
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "debris,enemies,ground,organic,structure,tree,wall"
+    },
+    {
+      "Level": 1,
+      "Id": 1969518440,
+      "Type": 3,
+      "Value": "o04Z"
+    },
+    {
+      "Level": 2,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "Bapl,Bplg"
+    },
+    {
+      "Level": 2,
+      "Id": 1969518440,
+      "Type": 3,
+      "Value": "rt4E"
+    },
+    {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "debris,enemies,ground,organic,structure,tree,wall"
+    }
+  ]
+}

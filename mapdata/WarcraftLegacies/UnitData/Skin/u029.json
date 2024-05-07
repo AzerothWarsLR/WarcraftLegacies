@@ -56,7 +56,7 @@
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2.5
+      "Value": 2.6
     },
     {
       "Id": 1751675765,
@@ -96,7 +96,12 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.7
+      "Value": 0.8
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\NightFlyer(Purple).mdl"
     }
   ]
 }

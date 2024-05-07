@@ -11,11 +11,6 @@
       "Value": "(yogg)"
     },
     {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 0.85
-    },
-    {
       "Id": 1651864693,
       "Type": 3,
       "Value": "Long Range flying Horrors.|n|cfff5962dAbilities:|R Envenomed Dart|n |n|cff99b4d1Can only train 12.|r|n|cffffcc00Attacks land and air units.|r"
@@ -47,7 +42,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\NightFlyer(Purple).mdl"
+      "Value": "war3mapImported\\NightFlyerPurpleSmall.mdl"
     },
     {
       "Id": 1768841589,
@@ -63,6 +58,16 @@
       "Id": 1684960117,
       "Type": 3,
       "Value": "FacelessOne"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.4
     }
   ]
 }
