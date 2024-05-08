@@ -1,0 +1,55 @@
+{
+  "OldId": 1919174721,
+  "NewId": 1296384577,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(yogg-Herald)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Transfers mana between the Blood Mage and a target. Drains mana from an enemy, or transfers mana to an ally.|n|nSiphon Mana can push the Blood Mage\u0027s mana over its maximum value, though excess mana drains off rapidly if not used.|nLasts \u003CAHdr,Dur1\u003E seconds.|n|n|cffffcc00Level 1|r - \u003CAHdr,DataB1\u003E mana drained per second. |n|cffffcc00Level 2|r - \u003CAHdr,DataB2\u003E mana drained per second. |n|cffffcc00Level 3|r - \u003CAHdr,DataB3\u003E mana drained per second. |n|cffffcc00Level 4|r - \u003CAHdr,DataB4\u003E mana drained per second. |n|cffffcc00Level 5|r - \u003CAHdr,DataB5\u003E mana drained per second."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Chaos Siphon"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Transfers Chaotic Energy between the caster and a target. Drains \u003CABEM,DataB1\u003E mana and \u003CABEM,DataA1\u003E health per second from an enemy, or transfers \u003CABEM,DataE1\u003E mana and \u003CABEM,DataD1\u003E health per second to an ally.|n|nChaos Siphon can push the casters\u0027 mana over its maximum value, though excess mana drains off rapidly if not used.|nLasts 6 seconds."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Chaos Siphon"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLifeEssenceDAB.blp"
+    }
+  ]
+}
