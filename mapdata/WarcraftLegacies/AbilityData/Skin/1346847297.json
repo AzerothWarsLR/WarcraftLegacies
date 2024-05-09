@@ -9,7 +9,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "This unit has a 40% chance on attack to slow the enemy unit\u0027s attack speed by \u003CABSG,DataB1,%\u003E% and movement speed by \u003CABSG,DataA1,%\u003E%. |n|cffffcc00Lasts \u003CABSG,Dur1\u003E (\u003CABSG,HeroDur1\u003E for Heros) seconds."
+      "Value": "This unit has a 40% chance on attack to slow the enemy unit\u0027s attack speed by \u003CABSG,DataB1,%\u003E% and movement speed by \u003CABSG,DataA1,%\u003E%. |n|cffffcc00Lasts \u003CABSG,Dur1\u003E (1.5 for Heros) seconds."
     },
     {
       "Id": 1835101793,
