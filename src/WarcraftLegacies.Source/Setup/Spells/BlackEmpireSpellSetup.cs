@@ -40,6 +40,24 @@ namespace WarcraftLegacies.Source.Setup.Spells
         TargetType = SpellTargetType.None
       };
       SpellSystem.Register(shadowVeilSpell);
+
+      var paralysingFear = new SpellOnAttack(UNIT_O01G_BRUTE_YOGG,
+        ABILITY_ABPF_PARALYSING_FEAR)
+      {
+        DummyAbilityId = ABILITY_ABSF_SLOW_PARALYSING_FEAR,
+        DummyOrderId = OrderId("slow"),
+        ProcChance = 0.2f
+      };
+      PassiveAbilityManager.Register(paralysingFear);
+
+      var greaterParalysingFear = new SpellOnAttack(UNIT_H09F_DEEP_FIEND_YOGG,
+        ABILITY_ABGP_GREATER_PARALYSING_FEAR)
+      {
+        DummyAbilityId = ABILITY_ABSG_SLOW_GREATER_PARALYSING_FEAR,
+        DummyOrderId = OrderId("slow"),
+        ProcChance = 0.4f
+      };
+      PassiveAbilityManager.Register(greaterParalysingFear);
     }
   }
 }
