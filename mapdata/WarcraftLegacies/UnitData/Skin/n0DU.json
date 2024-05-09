@@ -54,6 +54,11 @@
       "Id": 1768841589,
       "Type": 3,
       "Value": "upgrade,second"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary structure, used to train Mur\u0027gul Slaves, Mur\u0027gul Reavers and receive gathered resources. Also contains the Naga weapon and armor upgrades, and the Submerge upgrade.|n|cfff5962dTrains:|r Scavenger, Reaper|n|cfff5962dAbilities:|r Capital, Return Gold and Lumber, Blight Dispel Small"
     }
   ]
 }

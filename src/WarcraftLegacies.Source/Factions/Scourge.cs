@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MacroTools;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
@@ -7,6 +8,8 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.Powers;
+using WarcraftLegacies.Shared;
+using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Scourge;
 using WarcraftLegacies.Source.FactionMechanics.Scourge.Blight;
 using WarcraftLegacies.Source.FactionMechanics.Scourge.Plague;
@@ -79,79 +82,8 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
 
     private void RegisterObjectLimits()
     {
-      //Buildings
-      ModObjectLimit(FourCC("unpl"), UNLIMITED); //Necropolis
-      ModObjectLimit(FourCC("unp1"), UNLIMITED); //Halls of the Dead
-      ModObjectLimit(FourCC("unp2"), UNLIMITED); //Black Citadel
-      ModObjectLimit(FourCC("uzig"), UNLIMITED); //Ziggurat
-      ModObjectLimit(FourCC("uzg1"), UNLIMITED); //Spirit Tower
-      ModObjectLimit(FourCC("uzg2"), UNLIMITED); //Nerubian Tower
-      ModObjectLimit(FourCC("uaod"), UNLIMITED); //Altar of Darkness
-      ModObjectLimit(FourCC("usep"), UNLIMITED); //Crypt
-      ModObjectLimit(FourCC("ugrv"), UNLIMITED); //Graveyard
-      ModObjectLimit(FourCC("uslh"), UNLIMITED); //Slaughterhouse
-      ModObjectLimit(FourCC("utod"), UNLIMITED); //Temple of the Damned
-      ModObjectLimit(FourCC("ubon"), UNLIMITED); //Boneyard
-      ModObjectLimit(FourCC("utom"), UNLIMITED); //Tomb of Relics
-      ModObjectLimit(FourCC("ushp"), UNLIMITED); //Undead Shipyard
-      ModObjectLimit(FourCC("u002"), UNLIMITED); //Improved Spirit Tower
-      ModObjectLimit(FourCC("u003"), UNLIMITED); //Improved Nerubian Tower
-
-      //Units
-      ModObjectLimit(FourCC("uaco"), UNLIMITED); //Acolyte
-      ModObjectLimit(FourCC("ushd"), UNLIMITED); //Shade
-      ModObjectLimit(FourCC("ugho"), UNLIMITED); //Ghoul
-      ModObjectLimit(FourCC("uabo"), UNLIMITED); //Abomination
-      ModObjectLimit(FourCC("umtw"), 8); //Meat Wagon
-      ModObjectLimit(FourCC("ucry"), UNLIMITED); //Crypt Fiend
-      ModObjectLimit(FourCC("ugar"), 12); //Gargoyle
-      ModObjectLimit(FourCC("h02G"), UNLIMITED); //Vrykul Warrior
-      ModObjectLimit(FourCC("h061"), 12); //Vrykul Champion
-      ModObjectLimit(FourCC("h00P"), 4); //Mammoth rider
-      ModObjectLimit(FourCC("uban"), UNLIMITED); //Banshee
-      ModObjectLimit(FourCC("unec"), UNLIMITED); //Necromancer
-      ModObjectLimit(FourCC("uobs"), 4); //Obsidian Statue
-      ModObjectLimit(FourCC("ufro"), 4); //Frost Wyrm
-      ModObjectLimit(FourCC("h00H"), 6); //Death Knight
-      ModObjectLimit(FourCC("ubsp"), 6); //Destroyer
-      ModObjectLimit(FourCC("nfgl"), 2); //Plague Titan
-
-      //Ship
-      ModObjectLimit(FourCC("ubot"), UNLIMITED); //Undead Transport Ship
-      ModObjectLimit(FourCC("h0AT"), UNLIMITED); //Scout
-      ModObjectLimit(FourCC("h0AW"), UNLIMITED); //Frigate
-      ModObjectLimit(FourCC("h0AM"), UNLIMITED); //Fireship
-      ModObjectLimit(FourCC("h0AZ"), UNLIMITED); //Galley
-      ModObjectLimit(FourCC("h0AQ"), UNLIMITED); //Boarding
-      ModObjectLimit(FourCC("h0BB"), UNLIMITED); //Juggernaut
-      ModObjectLimit(FourCC("h0B9"), 6); //Bombard
-
-      //Demi-Heroes
-      ModObjectLimit(FourCC("ubdd"), 1); //Sapphiron
-      ModObjectLimit(FourCC("uswb"), 1); //Banshee
-      ModObjectLimit(FourCC("Uanb"), 1); //Anub'arak
-      ModObjectLimit(FourCC("U001"), 1); //Kel'thuzad
-      ModObjectLimit(FourCC("U00M"), 1); //Kel'thuzad (Ghost)
-      ModObjectLimit(FourCC("U00A"), 1); //Rivendare
-      ModObjectLimit(FourCC("Uktl"), 1); //Kel'thuzad (Lich)
-      ModObjectLimit(UNIT_UEAR_CHAMPION_OF_THE_SCOURGE_SCOURGE, 1);
-
-      //Upgrades
-      ModObjectLimit(FourCC("Ruba"), UNLIMITED); //Banshee Adept Training
-      ModObjectLimit(FourCC("Rubu"), UNLIMITED); //Burrow
-      ModObjectLimit(FourCC("Ruex"), UNLIMITED); //Exhume Corpses
-      ModObjectLimit(FourCC("Rufb"), UNLIMITED); //Freezing Breath
-      ModObjectLimit(FourCC("Rugf"), UNLIMITED); //Ghoul Frenzy
-      ModObjectLimit(FourCC("Rune"), UNLIMITED); //Necromancer Adept Training
-      ModObjectLimit(FourCC("Ruwb"), UNLIMITED); //Web
-      ModObjectLimit(FourCC("R00Q"), UNLIMITED); //Chilling Aura
-      ModObjectLimit(UPGRADE_R01X_EPIDEMIC_SCOURGE, UNLIMITED);
-      ModObjectLimit(UPGRADE_R01D_HOWL_OF_TERROR_SCOURGE, UNLIMITED);
-      ModObjectLimit(UPGRADE_R06N_IMPROVED_ORB_OF_ANNIHILATION_SCOURGE, UNLIMITED);
-      ModObjectLimit(UPGRADE_RUSL_SKELETAL_LONGEVITY, UNLIMITED);
-      ModObjectLimit(UPGRADE_RUSM_SKELETAL_MASTERY, UNLIMITED);
-
-      ModObjectLimit(UPGRADE_R07X_MAKE_ARTHAS_THE_LICH_KING_SCOURGE, UNLIMITED);
+      foreach (var (objectTypeId, objectLimit) in ScourgeObjectLimitData.GetAllObjectLimits())
+        ModObjectLimit(FourCC(objectTypeId), objectLimit);
 
       //Abilities
       ModAbilityAvailability(ABILITY_A0WG_SPELL_SHIELD_SPELL_BOOK_ORANGE_ANTONIDAS_RED_LICH_KING, -1);

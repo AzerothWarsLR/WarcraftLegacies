@@ -3,5 +3,11 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light melee unit that poisons opponents. Can cast Entangling Roots. |n|cfff5962dAbilities:|r Envenomed Weapons|n|cfff5962dAbilities (unlockable):|r Disease Cloud|n|n|cffffcc00Attacks land units.|r"
+    }
+  ]
 }

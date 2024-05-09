@@ -97,7 +97,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Magic Hero, robust damage dealing spellcaster.|n|n|cfff5962dCan learn:|R Defensive Cocoon, Universal Shackles, Hardened, Mana Shield, Desert Storm|n|n|cffffcc00Attacks land and air units.|R"
+      "Value": "Magic Hero, robust damage dealing spellcaster.|n|cfff5962dAbilities:|r Hero Glow Origin|n|cfff5962dAbilities (unlockable):|r Defensive Cocoon|n|cfff5962dAbilities (hero):|r Universal Shackles, Hardened, Mana Shield, Desert Storm, Attribute Bonus|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

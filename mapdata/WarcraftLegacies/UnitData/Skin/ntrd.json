@@ -3,5 +3,11 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee amphibious unit with Devour and Spiked Shell. Can cast Crushing Wave. |n|cfff5962dAbilities:|r Devour, Spiked Shell, Devour Cargo|n|n|cffffcc00Attacks land units.|r"
+    }
+  ]
 }

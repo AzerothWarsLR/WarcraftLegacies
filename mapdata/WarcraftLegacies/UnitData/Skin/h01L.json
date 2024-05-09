@@ -59,7 +59,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Elite Melee unit and head of a Dwarven clan.|n|cfff5962dAbilities:|R Taunt, Storming Brew, Bash, Resistant Skin, Spell Resistance, Perfect Avatar|n|cfff5962dCan learn:|R Mithril Plated Armor |n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land units.|r"
+      "Value": "Elite Melee unit and head of a Dwarven clan.|n|cfff5962dAbilities:|r Taunt, Storming Brew, Heavy Bash, Perfect Avatar, Resistant Skin, AAASpell Resistance|n|cfff5962dAbilities (unlockable):|r Mithril Plated Armor|n|cff99b4d1Can only train 6.|r|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

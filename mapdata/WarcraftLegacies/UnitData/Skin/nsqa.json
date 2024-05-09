@@ -3,5 +3,11 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit that can Slam opponents. Can cast Force of Nature. Also has Reincarnation. |n|cfff5962dAbilities:|r Force of Nature, Reincarnation|n|n|cffffcc00Attacks land units.|r"
+    }
+  ]
 }

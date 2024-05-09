@@ -62,7 +62,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Manipulative demon of the nether. |n|cfff5962dAbilities:|R Heal|n|cfff5962dCan Learn:|R Dispel Magic, Mind Flay|n|n|cffffcc00Attacks land and air units.|R"
+      "Value": "Manipulative demon of the nether. |n|cfff5962dAbilities:|r Heal|n|cfff5962dAbilities (unlockable):|r Dispel Magic, Mind Flay|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

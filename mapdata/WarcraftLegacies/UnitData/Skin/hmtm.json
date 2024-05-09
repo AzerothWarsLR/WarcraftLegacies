@@ -21,7 +21,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Long-range siege weaponry. Exceptional damage versus buildings, but slow and vulnerable.|n|cfff5962dAbilities:|R  Spell Resistance |n|cfff5962dCan Learn:|R Flare, Fragmentation Shards|n|n|cff99b4d1Can only train 9.|r|n|cffffcc00Attacks land units and trees. |r"
+      "Value": "Long-range siege weaponry. Exceptional damage versus buildings, but slow and vulnerable.|n|cfff5962dAbilities:|r Spell Resistance|n|cfff5962dAbilities (unlockable):|r Flare, Fragmentation Shards|n|cff99b4d1Can only train 9.|r|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

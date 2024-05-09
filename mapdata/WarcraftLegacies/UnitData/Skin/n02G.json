@@ -17,6 +17,11 @@
     {
       "Id": 1919705973,
       "Value": 150
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit that hurls boulders at opponents. Immune to spells. |n|cfff5962dAbilities:|r Hurl Boulder, Bash, Spell Immunity|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

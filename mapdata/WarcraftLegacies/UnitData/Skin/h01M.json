@@ -69,7 +69,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Second in command of Muradin\u0027s expedition force, Baelgun is a stout scout of bristling fire and wily leadership.|n|n|cfff5962dAbilities:|R Mithril Plated Armor, Resistant Skin, Explorer\u0027s Flare, Dispel Magic|n|n|cffffcc00Attacks land units.|R"
+      "Value": "Second in command of Muradin\u0027s expedition force, Baelgun is a stout scout of bristling fire and wily leadership.|n|cfff5962dAbilities:|r Explorer\u0027s Flare, Dispel Magic, Resistant Skin|n|cfff5962dAbilities (unlockable):|r Mithril Plated Armor|n|cff99b4d1Can only train 1.|r|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

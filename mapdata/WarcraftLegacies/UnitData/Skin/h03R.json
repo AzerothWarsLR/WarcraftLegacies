@@ -77,7 +77,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Gnomish engineer equipped with brilliant gadgetry.|n|cfff5962dAbilities:|R Deploy Barricades|n|cfff5962dCan Learn:|R Mech Kit, Overclock|n|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Gnomish engineer equipped with brilliant gadgetry.|n|cfff5962dAbilities:|r Mech Kit, Repair|n|cfff5962dAbilities (unlockable):|r Deploy Barricades, Overclock|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

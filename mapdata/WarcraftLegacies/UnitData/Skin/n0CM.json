@@ -34,6 +34,11 @@
       "Id": 1831952757,
       "Type": 3,
       "Value": "Abilities\\Spells\\NightElf\\shadowstrike\\ShadowStrikeMissile.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

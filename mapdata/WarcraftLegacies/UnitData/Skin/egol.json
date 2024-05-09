@@ -13,6 +13,11 @@
       "Id": 1935832437,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "A cluster of roots that allows wisps to mine gold from goldmines.|n|cfff5962dAbilities:|r Load Wisp, Load, Unload Instant, Entangled Gold Mine Ability"
     }
   ]
 }

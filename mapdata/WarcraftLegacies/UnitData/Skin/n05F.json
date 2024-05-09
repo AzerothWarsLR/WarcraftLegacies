@@ -55,7 +55,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Gateway attuned to the Voidwalkers of the Burning Crusade, summoning 1 every 60 seconds. |n|n|cfff5962dAbilities:|R Frost Attack|n|cfff5962dUpgrades Into:|R Voidcrusher, Voidlord or Terrorguard Demon Gate"
+      "Value": "Gateway attuned to the Voidwalkers of the Burning Crusade, summoning 1 every 60 seconds. |n|cfff5962dUpgrades to:|r Voidcrusher Demon Gate, Voidlord Demon Gate, Terrorguard Demon Gate|n|cfff5962dAbilities:|r Rally"
     }
   ]
 }

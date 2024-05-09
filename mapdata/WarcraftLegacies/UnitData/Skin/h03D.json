@@ -42,7 +42,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Spellcaster production building. |n|n|r|cfff5962dTrains:|R Cleric, Druids of the Scythe, Harvest-Witch|n|cfff5962dResearches:|R Cleric Training, Druid of the Scythe Training, Harvest-Witch Training"
+      "Value": "Spellcaster production building. |n|cfff5962dTrains:|r Cleric, Druid of the Scythe, Harvest-Witch|n|cfff5962dResearches:|r Cleric Master Training, Druid of the Scythe Master Training, Harvest-Witch Master Training"
     },
     {
       "Id": 1835101813,

@@ -43,7 +43,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Basic melee unit that can reflect incoming melee damage.|n|cfff5962dAbilities:|R Thorns|n|cfff5962dCan learn:|R Grasping Vines|n|n|cffffcc00Attacks land units.|r"
+      "Value": "Basic melee unit that can reflect incoming melee damage.|n|cfff5962dAbilities:|r Thorns|n|cfff5962dAbilities (unlockable):|r Grasping Vines, Ultravision|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1684960117,

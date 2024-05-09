@@ -1,4 +1,5 @@
 ﻿using MacroTools.FactionSystem;
+using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Factions
@@ -90,6 +91,8 @@ namespace WarcraftLegacies.Source.Factions
       ModObjectLimit(UPGRADE_RBFC_CURSED_FLESH_BLACK_EMPIRE_AQIR_AND_FORGOTTEN_ONE, UNLIMITED);
       ModObjectLimit(UPGRADE_RBES_UNWORDLY_SCYTHE_BLACK_EMPIRE_REAPER, UNLIMITED);
 
+      foreach (var (objectTypeId, objectLimit) in BlackEmpireObjectLimitData.GetAllObjectLimits())
+        ModObjectLimit(FourCC(objectTypeId), objectLimit);
     }
   }
 }

@@ -43,6 +43,11 @@
     {
       "Id": 2020631157,
       "Value": 3
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit. |n|cfff5962dAbilities:|r Heavy Bash, Thick Skin|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

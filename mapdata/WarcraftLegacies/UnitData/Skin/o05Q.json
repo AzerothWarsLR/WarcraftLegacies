@@ -77,6 +77,11 @@
       "Id": 2054188149,
       "Type": 2,
       "Value": 240
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Defensive structure. Can learn the Reinforced Defenses upgrade. |n|cfff5962dAbilities:|r Multi Shot|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

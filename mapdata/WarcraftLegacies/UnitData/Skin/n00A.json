@@ -67,7 +67,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Agile, deadly and skilled Rangers of Quel\u0027Thalas.|n|cfff5962dAbilities:|R Splintering Arrows, Smoke Bomb, Spell Resistance, Resistant Skin, Precision Shots, Evasion|n|cfff5962dCan Learn:|R Feint, Improved Bows|n|n|cff99b4d1Can only train 6.|r|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Agile, deadly and skilled Rangers of Quel\u0027Thalas.|n|cfff5962dAbilities:|r Splintering Arrows, Smoke Bomb, Evasion, AAASpell Resistance, Resistant Skin|n|cfff5962dAbilities (unlockable):|r Feint, Precision Shots|n|cff99b4d1Can only train 6.|r|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

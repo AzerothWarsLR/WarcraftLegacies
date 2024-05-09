@@ -22,6 +22,11 @@
       "Id": 1885959285,
       "Type": 3,
       "Value": "Train In|cffffcc00f|rernal Machine"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy ranged unit that hurls fiery missiles. Can cast Breath of Fire. |n|cfff5962dAbilities:|r Breath of Fire|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

@@ -49,6 +49,11 @@
       "Id": 1868786037,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNWhirlpool.blp"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "|n|cfff5962dAbilities:|r Whirlpool Aura, Locust"
     }
   ]
 }

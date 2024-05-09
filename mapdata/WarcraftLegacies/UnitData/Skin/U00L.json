@@ -48,7 +48,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Cunning hero, adept at dealing magic damage and supporting armies.|n|cfff5962dCan learn:|R Astral Walk, Feedback, Energy Wave, Summon Fel Hounds, Devour Magic, Death and Decay|n|n|cffffcc00Attacks land units.|R"
+      "Value": "Cunning hero, adept at dealing magic damage and supporting armies.|n|cfff5962dAbilities:|r Feedback, Permanent Invisibility|n|cfff5962dAbilities (unlockable):|r Astral Walk|n|cfff5962dAbilities (hero):|r Summon Fel Stalkers , Energy Wave, Devour Magic, Death And Decay, Attribute Bonus|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1953980789,

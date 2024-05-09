@@ -18,7 +18,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Undead Worker.|n|cfff5962dAbilities:|R Unsummon Building, Restore, Gather, Sacrifice|n|n|cffffcc00Attacks land units."
+      "Value": "Undead Worker.|n|cfff5962dAbilities:|r Unsummon Building, Restore, Harvest, Return Lumber|n|n|cffffcc00Attacks land units.|r"
     },
     {
       "Id": 1818520949,

@@ -3,5 +3,11 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Medium melee unit. Immune to spells. |n|cfff5962dAbilities:|r Crushing Wave|n|n|cffffcc00Attacks land units.|r"
+    }
+  ]
 }

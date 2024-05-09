@@ -19,7 +19,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "A";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\AshenTree\\AshenTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 1;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 32;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\AshenvaleTree\\AshenTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -27,14 +31,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 5;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 170f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 54;
@@ -45,7 +58,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 128f;
             return destructable;
         }
 
@@ -57,7 +74,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "B";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\BarrensTree\\BarrensTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 1;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 33;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\BarrensTree\\BarrensTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -65,14 +86,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 10;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 170f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 155;
             destructable.ArtMinimapColor2Green = 110;
@@ -83,7 +113,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 128f;
             return destructable;
         }
 
@@ -95,7 +129,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "C";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\AshenTree\\AshenTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 1;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 32;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\AshenvaleTree\\FelwoodTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -103,14 +141,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 5;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 170f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 45;
             destructable.ArtMinimapColor2Green = 54;
@@ -121,7 +168,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 128f;
             return destructable;
         }
 
@@ -133,7 +184,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\LordaeronTree\\LordaeronTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 1;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 31;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\LordaeronTree\\LordaeronFallTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -141,14 +196,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 10;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 170f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 110;
             destructable.ArtMinimapColor2Green = 60;
@@ -159,7 +223,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 128f;
             return destructable;
         }
 
@@ -171,6 +239,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\Cage\\Cage";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
@@ -179,14 +249,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "ShadowCage";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -197,7 +275,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 80f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\LordaeronSummer\\Props\\Cage\\Cage";
             return destructable;
         }
 
@@ -209,6 +292,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\Barricade\\Barricade";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -217,14 +302,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 2;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "ShadowCrates";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -235,7 +328,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 80f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\LordaeronSummer\\Terrain\\Barricade\\Barricade0";
             return destructable;
         }
 
@@ -247,6 +345,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\Crates\\Crates";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -255,14 +355,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 2;
             destructable.StatsHitPoints = 20f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "CrateDeath";
+            destructable.ArtShadowRaw = "ShadowCrates";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -273,7 +382,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 60f;
+            destructable.ArtModelFilePortraitRaw = "Buildings\\Other\\CratesUnit\\CratesUnit";
             return destructable;
         }
 
@@ -285,6 +399,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Buildings\\Other\\BarrelsUnit0\\BarrelsUnit0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -293,14 +409,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 20f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 80f;
+            destructable.EditorMinimumScale = 1.1f;
+            destructable.EditorMaximumScale = 1.5f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\2x2Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "CrateDeath";
+            destructable.ArtShadowRaw = "ShadowCrates";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -311,7 +436,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 80f;
+            destructable.ArtModelFilePortraitRaw = "Buildings\\Other\\BarrelsUnit0\\BarrelsUnit0";
             return destructable;
         }
 
@@ -323,6 +453,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Buildings\\Other\\BarrelsUnit1\\BarrelsUnit1";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -331,14 +463,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 20f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 80f;
+            destructable.EditorMinimumScale = 1.1f;
+            destructable.EditorMaximumScale = 1.5f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\2x2Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "CrateDeath";
+            destructable.ArtShadowRaw = "ShadowCrates";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -349,7 +490,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 80f;
+            destructable.ArtModelFilePortraitRaw = "Buildings\\Other\\BarrelsUnit1\\BarrelsUnit1";
             return destructable;
         }
 
@@ -361,6 +507,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Buildings\\Other\\BarrelsUnit\\BarrelsUnit";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -369,14 +517,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 20f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 80f;
+            destructable.EditorMinimumScale = 1.1f;
+            destructable.EditorMaximumScale = 1.5f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\2x2Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "CrateDeath";
+            destructable.ArtShadowRaw = "ShadowCrates";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -387,7 +544,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 80f;
+            destructable.ArtModelFilePortraitRaw = "Buildings\\Other\\BarrelsUnit\\BarrelsUnit";
             return destructable;
         }
 
@@ -399,6 +561,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Units\\Other\\TNTBarrel\\TNTBarrel";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -407,14 +571,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 20f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 80f;
+            destructable.EditorMinimumScale = 1.1f;
+            destructable.EditorMaximumScale = 1.5f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\2x2Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "ExplodingBarrelDeath";
+            destructable.ArtShadowRaw = "ShadowCrates";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -425,7 +598,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 90f;
+            destructable.ArtModelFilePortraitRaw = "Units\\Other\\TNTBarrel\\TNTBarrel";
             return destructable;
         }
 
@@ -437,6 +615,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\Gate\\Gate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -445,14 +625,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -463,7 +651,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -475,6 +668,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\Gate45\\Gate45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -483,14 +678,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate2";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -501,7 +704,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -513,6 +721,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\Gate\\Gate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -521,14 +731,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate3";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -539,7 +757,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -551,6 +774,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\Gate45\\Gate45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -559,14 +784,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 180f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate4";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -577,7 +810,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -589,6 +827,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\ElfGate\\ElfGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -597,14 +837,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -615,7 +863,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -627,6 +880,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\ElfGate45\\ElfGate45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -635,14 +890,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate2";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -653,7 +916,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -665,6 +933,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\ElfGate\\ElfGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -673,14 +943,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate3";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -691,7 +969,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -703,6 +986,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\ElfGate45\\ElfGate45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -711,14 +996,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 180f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate4";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -729,7 +1022,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -741,6 +1039,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\BigElfGate\\BigElfGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -749,14 +1049,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -767,7 +1075,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\BigElfGate_Portrait\\BigElfGate_Portrait";
             return destructable;
         }
 
@@ -779,6 +1092,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\BigElfGate45\\BigElfGate45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -787,14 +1102,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate2";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -805,7 +1128,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\BigElfGate_Portrait\\BigElfGate_Portrait";
             return destructable;
         }
 
@@ -817,6 +1145,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\BigElfGate\\BigElfGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -825,14 +1155,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate3";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -843,7 +1181,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\BigElfGate_Portrait\\BigElfGate_Portrait";
             return destructable;
         }
 
@@ -855,6 +1198,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\BigElfGate45\\BigElfGate45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -863,14 +1208,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 180f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate4";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -881,7 +1234,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\BigElfGate_Portrait\\BigElfGate_Portrait";
             return destructable;
         }
 
@@ -893,6 +1251,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\IronGate\\IronGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -901,14 +1261,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -919,7 +1287,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -931,6 +1304,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\IronGate45\\IronGate45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -939,14 +1314,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate2";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -957,7 +1340,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -969,6 +1357,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\IronGate\\IronGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -977,14 +1367,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate3";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -995,7 +1393,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -1007,6 +1410,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,B,A,C,Y,X,V,Q,D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\IronGate45\\IronGate45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -1015,14 +1420,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 180f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate4";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -1033,7 +1446,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -1045,6 +1463,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G,Y,X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Dungeon\\Terrain\\DungeonPorticulisGate\\DungeonPorticulisGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -1053,14 +1473,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 100f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -1071,7 +1499,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\DungeonPorticulisGate_Portrait\\DungeonPorticulisGate_Portrait";
             return destructable;
         }
 
@@ -1083,6 +1516,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G,Y,X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Dungeon\\Terrain\\DungeonPorticulisGate45\\DungeonPorticulisGate45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -1091,14 +1526,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 100f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate2";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -1109,7 +1552,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\DungeonPorticulisGate_Portrait\\DungeonPorticulisGate_Portrait";
             return destructable;
         }
 
@@ -1121,6 +1569,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G,Y,X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Dungeon\\Terrain\\DungeonPorticulisGate\\DungeonPorticulisGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -1129,14 +1579,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 100f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate3";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -1147,7 +1605,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\DungeonPorticulisGate_Portrait\\DungeonPorticulisGate_Portrait";
             return destructable;
         }
 
@@ -1159,6 +1622,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G,Y,X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Dungeon\\Terrain\\DungeonPorticulisGate45\\DungeonPorticulisGate45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -1167,14 +1632,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 100f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 180f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate4";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -1185,7 +1658,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\DungeonPorticulisGate_Portrait\\DungeonPorticulisGate_Portrait";
             return destructable;
         }
 
@@ -1197,7 +1675,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\LordaeronTree\\LordaeronTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 1;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 31;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\LordaeronTree\\LordaeronSummerTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -1205,14 +1687,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 10;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 170f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 32;
             destructable.ArtMinimapColor2Green = 90;
@@ -1223,7 +1714,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 128f;
             return destructable;
         }
 
@@ -1235,7 +1730,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "N";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\NorthrendTree\\NorthrendTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 1;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 34;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\NorthrendTree\\NorthTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -1243,14 +1742,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 10;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 170f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 32;
             destructable.ArtMinimapColor2Green = 48;
@@ -1261,7 +1769,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 128f;
             return destructable;
         }
 
@@ -1273,7 +1785,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "W";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\LordaeronTree\\LordaeronTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 1;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 31;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\LordaeronTree\\LordaeronWinterTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -1281,14 +1797,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 10;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 170f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 80;
             destructable.ArtMinimapColor2Green = 160;
@@ -1299,7 +1824,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 128f;
             return destructable;
         }
 
@@ -1311,7 +1840,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "W,N";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\LordaeronTree\\LordaeronTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 1;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 31;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\LordaeronTree\\LordaeronSnowTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -1319,14 +1852,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 10;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 170f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 110;
             destructable.ArtMinimapColor2Green = 170;
@@ -1337,7 +1879,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 128f;
             return destructable;
         }
 
@@ -1349,7 +1895,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Y,X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityscapeTree\\CityscapeTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 1;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 31;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\LordaeronTree\\LordaeronSummerTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -1357,14 +1907,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 2;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
             destructable.ArtFlyOverHeight = 170f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "ShadowCityTree";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 32;
             destructable.ArtMinimapColor2Green = 90;
@@ -1375,7 +1934,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 128f;
             return destructable;
         }
 
@@ -1387,7 +1950,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Y,X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityscapeTree\\CityscapeTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 1;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 31;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\LordaeronTree\\LordaeronWinterTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -1395,14 +1962,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 2;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
             destructable.ArtFlyOverHeight = 170f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "ShadowCityTree";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 80;
             destructable.ArtMinimapColor2Green = 160;
@@ -1413,7 +1989,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 128f;
             return destructable;
         }
 
@@ -1425,7 +2005,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Y,X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityscapeTree\\CityscapeTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 1;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 31;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\LordaeronTree\\LordaeronSnowTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -1433,14 +2017,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 2;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
             destructable.ArtFlyOverHeight = 170f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "ShadowCityTree";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 110;
             destructable.ArtMinimapColor2Green = 170;
@@ -1451,7 +2044,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 128f;
             return destructable;
         }
 
@@ -1463,7 +2060,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Y,X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityscapeTree\\CityscapeTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 1;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 31;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\LordaeronTree\\LordaeronFallTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -1471,14 +2072,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 2;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
             destructable.ArtFlyOverHeight = 170f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "ShadowCityTree";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 75;
             destructable.ArtMinimapColor2Green = 50;
@@ -1489,7 +2099,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 128f;
             return destructable;
         }
 
@@ -1501,7 +2115,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "V";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\LordaeronTree\\LordaeronTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 1;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 31;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\LordaeronTree\\LordaeronSummerTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -1509,14 +2127,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 10;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 170f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 32;
             destructable.ArtMinimapColor2Green = 90;
@@ -1527,7 +2154,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 128f;
             return destructable;
         }
 
@@ -1539,6 +2170,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,Y,X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\StoneWall0\\StoneWall0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -1547,14 +2180,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "wall";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 5;
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\StoneWall1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "ShadowStoneWall1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -1565,7 +2206,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -1577,6 +2222,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,Y,X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\StoneWall45\\StoneWall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -1585,14 +2232,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "wall";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 5;
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\StoneWall2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "ShadowStoneWall2";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -1603,7 +2258,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -1615,6 +2274,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,Y,X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\StoneWall90\\StoneWall90";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -1623,14 +2284,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "wall";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 5;
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\StoneWall3Path.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "ShadowStoneWall3";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -1641,7 +2310,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -1653,6 +2326,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,F,W,Y,X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\StoneWall135\\StoneWall135";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -1661,14 +2336,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "wall";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 5;
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\StoneWall4Path.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "ShadowStoneWall4";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -1679,7 +2362,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -1691,7 +2378,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeSmall0\\RockBridgeSmall0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -1699,14 +2390,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -1717,7 +2416,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -1729,7 +2432,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeSmall45\\RockBridgeSmall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -1737,14 +2444,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -1755,7 +2470,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -1767,7 +2486,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeSmall0\\RockBridgeSmall0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -1775,14 +2498,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -1793,7 +2524,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -1805,7 +2540,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeSmall45\\RockBridgeSmall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -1813,14 +2552,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -1831,7 +2578,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -1843,7 +2594,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeLarge0\\RockBridgeLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -1851,14 +2606,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -1869,7 +2632,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -1881,7 +2648,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeLarge45\\RockBridgeLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -1889,14 +2660,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -1907,7 +2686,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -1919,7 +2702,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeLarge0\\RockBridgeLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -1927,14 +2714,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -1945,7 +2740,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -1957,7 +2756,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeLarge45\\RockBridgeLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -1965,14 +2768,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -1983,7 +2794,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -1995,7 +2810,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeExtraLarge0\\RockBridgeExtraLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2003,14 +2822,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2021,7 +2848,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2033,7 +2864,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeExtraLarge45\\RockBridgeExtraLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2041,14 +2876,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2059,7 +2902,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2071,7 +2918,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeExtraLarge0\\RockBridgeExtraLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2079,14 +2930,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2097,7 +2956,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2109,7 +2972,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeExtraLarge45\\RockBridgeExtraLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2117,14 +2984,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2135,7 +3010,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2147,7 +3026,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeSmall0\\CityBridgeSmall0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2155,14 +3038,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2173,7 +3064,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2185,7 +3080,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeSmall45\\CityBridgeSmall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2193,14 +3092,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2211,7 +3118,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2223,7 +3134,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeSmall90\\CityBridgeSmall90";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2231,14 +3146,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall90.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall90Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2249,7 +3172,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2261,7 +3188,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeSmall135\\CityBridgeSmall135";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2269,14 +3200,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall135.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall135Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2287,7 +3226,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2299,7 +3242,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeLarge0\\CityBridgeLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2307,14 +3254,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2325,7 +3280,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2337,7 +3296,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeLarge45\\CityBridgeLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2345,14 +3308,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2363,7 +3334,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2375,7 +3350,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeLarge90\\CityBridgeLarge90";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2383,14 +3362,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge90.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge90Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2401,7 +3388,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2413,7 +3404,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeLarge135\\CityBridgeLarge135";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2421,14 +3416,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge135.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge135Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2439,7 +3442,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2451,7 +3458,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeExtraLarge0\\CityBridgeExtraLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2459,14 +3470,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2477,7 +3496,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2489,7 +3512,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeExtraLarge45\\CityBridgeExtraLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2497,14 +3524,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2515,7 +3550,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2527,7 +3566,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeExtraLarge90\\CityBridgeExtraLarge90";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2535,14 +3578,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge90.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge90Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2553,7 +3604,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2565,7 +3620,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeExtraLarge135\\CityBridgeExtraLarge135";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2573,14 +3632,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge135.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge135Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2591,7 +3658,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2603,7 +3674,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\WoodBridgeSmall0\\WoodBridgeSmall0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2611,14 +3686,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2629,7 +3712,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2641,7 +3728,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\WoodBridgeSmall45\\WoodBridgeSmall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2649,14 +3740,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2667,7 +3766,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2679,7 +3782,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\WoodBridgeSmall0\\WoodBridgeSmall0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2687,14 +3794,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2705,7 +3820,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2717,7 +3836,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\WoodBridgeSmall45\\WoodBridgeSmall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2725,14 +3848,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2743,7 +3874,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2755,7 +3890,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\WoodBridgeLarge0\\WoodBridgeLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2763,14 +3902,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2781,7 +3928,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2793,7 +3944,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\WoodBridgeLarge45\\WoodBridgeLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2801,14 +3956,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2819,7 +3982,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2831,7 +3998,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\WoodBridgeLarge0\\WoodBridgeLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2839,14 +4010,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2857,7 +4036,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2869,7 +4052,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\WoodBridgeLarge45\\WoodBridgeLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2877,14 +4064,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2895,7 +4090,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2907,7 +4106,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\WoodBridgeExtraLarge0\\WoodBridgeExtraLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2915,14 +4118,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2933,7 +4144,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2945,7 +4160,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\WoodBridgeExtraLarge45\\WoodBridgeExtraLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2953,14 +4172,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -2971,7 +4198,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -2983,7 +4214,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\WoodBridgeExtraLarge0\\WoodBridgeExtraLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -2991,14 +4226,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3009,7 +4252,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -3021,7 +4268,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A,B,Y,X,J,D,C,I,F,L,W,N,Z,G,V,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\WoodBridgeExtraLarge45\\WoodBridgeExtraLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -3029,14 +4280,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3047,7 +4306,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -3059,6 +4322,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Dalaran\\Terrain\\DalaranBuilding\\DalaranBuilding";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
@@ -3067,14 +4332,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 2;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 384f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\8x8Unflyable.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "ShadowDalaranBuilding";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3085,7 +4358,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -3097,6 +4374,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranVioletCitadel\\DalaranVioletCitadel";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
@@ -3105,14 +4384,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 512f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\12x12Unflyable.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "ShadowDalaranBuilding";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3123,7 +4410,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -3135,7 +4426,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\BridgeRampSmall135\\BridgeRampSmall135";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -3143,14 +4438,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 30f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1.33f;
+            destructable.EditorMaximumScale = 1.33f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\StoneCliffRamp45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\StoneCliffRamp45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3161,7 +4464,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -3173,7 +4480,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\BridgeRampSmall225\\BridgeRampSmall225";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -3181,14 +4492,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 30f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1.33f;
+            destructable.EditorMaximumScale = 1.33f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\StoneCliffRamp135.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\StoneCliffRamp135Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3199,7 +4518,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -3211,7 +4534,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\BridgeRampSmall315\\BridgeRampSmall315";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -3219,14 +4546,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 30f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1.33f;
+            destructable.EditorMaximumScale = 1.33f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\StoneCliffRamp45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\StoneCliffRamp45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3237,7 +4572,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -3249,7 +4588,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\BridgeRampSmall45\\BridgeRampSmall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -3257,14 +4600,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 30f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1.33f;
+            destructable.EditorMaximumScale = 1.33f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\StoneCliffRamp135.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\StoneCliffRamp135Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3275,7 +4626,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -3287,7 +4642,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\BridgeRampSmall135\\BridgeRampSmall135";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -3295,14 +4654,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 30f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1.33f;
+            destructable.EditorMaximumScale = 1.33f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\StoneCliffRamp45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\StoneCliffRamp45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3313,7 +4680,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -3325,7 +4696,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\BridgeRampSmall225\\BridgeRampSmall225";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -3333,14 +4708,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 30f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1.33f;
+            destructable.EditorMaximumScale = 1.33f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\StoneCliffRamp135.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\StoneCliffRamp135Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3351,7 +4734,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -3363,7 +4750,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\BridgeRampSmall315\\BridgeRampSmall315";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -3371,14 +4762,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 30f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1.33f;
+            destructable.EditorMaximumScale = 1.33f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\StoneCliffRamp45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\StoneCliffRamp45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3389,7 +4788,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -3401,7 +4804,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\BridgeRampSmall45\\BridgeRampSmall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -3409,14 +4816,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 30f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1.33f;
+            destructable.EditorMaximumScale = 1.33f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\StoneCliffRamp135.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\StoneCliffRamp135Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3427,7 +4842,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -3439,6 +4858,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "N";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Northrend\\Water\\Battleship\\Battleship";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
@@ -3447,14 +4868,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 100f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\8x8Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3465,7 +4894,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -3477,6 +4910,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Dungeon\\Terrain\\EggSack\\EggSack";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
@@ -3485,14 +4920,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 2;
             destructable.StatsHitPoints = 15f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 60f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\2x2Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "EggSackDeath";
+            destructable.ArtShadowRaw = "ShadowCrates.blp";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3503,7 +4947,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 112f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\EggSack_portrait\\EggSack_portrait";
             return destructable;
         }
 
@@ -3515,7 +4964,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\Shrooms\\Shrooms";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 35;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Mushroom\\MushroomTree.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -3523,14 +4976,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 8;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 170f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 155;
             destructable.ArtMinimapColor2Green = 70;
@@ -3541,7 +5003,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -3553,7 +5019,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "Y";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBridgeLarge45Destroyed\\CityBridgeLarge45Destroyed";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -3561,14 +5031,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CitybridgeDestroyed.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CitybridgeDestroyed.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3579,7 +5057,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -3591,7 +5073,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "Y";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBridgeLarge45Destroyed\\CityBridgeLarge45Destroyed";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -3599,14 +5085,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CitybridgeDestroyed.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CitybridgeDestroyed.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3617,7 +5111,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -3629,6 +5127,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "X,Y";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Dalaran\\Props\\KingThrone\\KingThrone";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -3637,14 +5137,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\throne.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3655,7 +5163,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -3667,6 +5179,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Dalaran\\Props\\KingThrone45\\KingThrone45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -3675,14 +5189,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\throne135.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3693,7 +5215,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -3705,6 +5231,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Dalaran\\Props\\KingThrone135\\KingThrone135";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -3713,14 +5241,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\throne45.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3731,7 +5267,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -3743,6 +5283,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Dungeon\\Terrain\\CaveGate\\CaveGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -3751,14 +5293,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CaveGate1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CaveGate1PathDeath.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3769,7 +5319,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 160f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -3781,6 +5336,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Dungeon\\Terrain\\CaveGate2\\CaveGate2";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -3789,14 +5346,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CaveGate2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CaveGate2PathDeath.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3807,7 +5372,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 160f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -3819,6 +5389,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Abilities\\Spells\\Orc\\SpikeBarrier\\SpikeBarrier";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -3827,14 +5399,24 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.6f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 45f;
+            destructable.ArtMaxRollAngledegrees = 45f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Unbuildable.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3845,7 +5427,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -3857,6 +5443,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockChunks\\RockChunks";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -3865,14 +5453,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 6;
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 100f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "RockChunkDeath";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3883,7 +5480,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 200f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\RockChunks_Portrait\\RockChunks_Portrait";
             return destructable;
         }
 
@@ -3895,7 +5497,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\ForceBridgeLarge0\\ForceBridgeLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -3903,14 +5509,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3921,7 +5535,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -3933,7 +5551,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\ForceBridgeLarge45\\ForceBridgeLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -3941,14 +5563,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3959,7 +5589,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -3971,7 +5605,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\ForceBridgeLarge0\\ForceBridgeLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -3979,14 +5617,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -3997,7 +5643,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4009,7 +5659,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\ForceBridgeLarge45\\ForceBridgeLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4017,14 +5671,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4035,7 +5697,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4047,6 +5713,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\Forcewall\\Forcewall";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -4055,14 +5723,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\ForceWall.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "ForceWallDeath";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4073,7 +5750,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4085,6 +5766,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\Forcewall45\\Forcewall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -4093,14 +5776,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\ForceWall45.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "ForceWallDeath";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4111,7 +5803,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4123,7 +5819,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeSmall0\\RockBridgeSmall0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4131,14 +5831,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4149,7 +5857,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4161,7 +5873,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeSmall45\\RockBridgeSmall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4169,14 +5885,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4187,7 +5911,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4199,7 +5927,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeSmall0\\RockBridgeSmall0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4207,14 +5939,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4225,7 +5965,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4237,7 +5981,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeSmall45\\RockBridgeSmall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4245,14 +5993,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4263,7 +6019,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4275,7 +6035,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeLarge0\\RockBridgeLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4283,14 +6047,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4301,7 +6073,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4313,7 +6089,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeLarge45\\RockBridgeLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4321,14 +6101,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4339,7 +6127,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4351,7 +6143,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeLarge0\\RockBridgeLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4359,14 +6155,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4377,7 +6181,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4389,7 +6197,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeLarge45\\RockBridgeLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4397,14 +6209,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4415,7 +6235,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4427,7 +6251,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeExtraLarge0\\RockBridgeExtraLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4435,14 +6263,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4453,7 +6289,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4465,7 +6305,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeExtraLarge45\\RockBridgeExtraLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4473,14 +6317,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4491,7 +6343,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4503,7 +6359,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeExtraLarge0\\RockBridgeExtraLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4511,14 +6371,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4529,7 +6397,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4541,7 +6413,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeExtraLarge45\\RockBridgeExtraLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4549,14 +6425,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4567,7 +6451,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4579,7 +6467,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeSmall0\\CityBridgeSmall0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4587,14 +6479,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4605,7 +6505,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4617,7 +6521,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeSmall45\\CityBridgeSmall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4625,14 +6533,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4643,7 +6559,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4655,7 +6575,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeSmall90\\CityBridgeSmall90";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4663,14 +6587,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall90.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall90Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4681,7 +6613,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4693,7 +6629,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeSmall135\\CityBridgeSmall135";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4701,14 +6641,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall135.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall135Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4719,7 +6667,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4731,7 +6683,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeLarge0\\CityBridgeLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4739,14 +6695,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4757,7 +6721,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4769,7 +6737,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeLarge45\\CityBridgeLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4777,14 +6749,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4795,7 +6775,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4807,7 +6791,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeLarge90\\CityBridgeLarge90";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4815,14 +6803,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge90.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge90Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4833,7 +6829,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4845,7 +6845,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeLarge135\\CityBridgeLarge135";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4853,14 +6857,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge135.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge135Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4871,7 +6883,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4883,7 +6899,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeExtraLarge0\\CityBridgeExtraLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4891,14 +6911,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4909,7 +6937,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4921,7 +6953,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeExtraLarge45\\CityBridgeExtraLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4929,14 +6965,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4947,7 +6991,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4959,7 +7007,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeExtraLarge90\\CityBridgeExtraLarge90";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -4967,14 +7019,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge90.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge90Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -4985,7 +7045,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -4997,7 +7061,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityBridgeExtraLarge135\\CityBridgeExtraLarge135";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -5005,14 +7073,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge135.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge135Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5023,7 +7099,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -5035,7 +7115,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\NagaStairsSmall0\\NagaStairsSmall0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -5043,14 +7127,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 1;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\NagaStairsSmall0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\NagaStairsSmall0.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5061,7 +7153,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -5073,7 +7169,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\NagaStairsSmall90\\NagaStairsSmall90";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -5081,14 +7181,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 1;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\NagaStairsSmall90.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\NagaStairsSmall90.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5099,7 +7207,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -5111,7 +7223,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\NagaStairsSmall180\\NagaStairsSmall180";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -5119,14 +7235,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 1;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\NagaStairsSmall180.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\NagaStairsSmall180.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5137,7 +7261,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -5149,7 +7277,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\NagaStairsSmall270\\NagaStairsSmall270";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -5157,14 +7289,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 1;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\NagaStairsSmall270.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\NagaStairsSmall270.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5175,7 +7315,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -5187,7 +7331,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RuinsTree\\RuinsTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 1;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 36;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\RuinsTree\\RuinsTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -5195,14 +7343,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 10;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 170f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.65f;
+            destructable.EditorMaximumScale = 1.05f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 88;
             destructable.ArtMinimapColor2Green = 124;
@@ -5213,7 +7370,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 128f;
             return destructable;
         }
 
@@ -5225,6 +7386,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ruins\\Terrain\\RuinsWall0\\RuinsWall0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -5233,14 +7396,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "wall";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 5;
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\StoneWall1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "ShadowStoneWall1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5251,7 +7422,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -5263,6 +7438,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ruins\\Terrain\\RuinsWall45\\RuinsWall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -5271,14 +7448,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "wall";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 5;
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\StoneWall2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "ShadowStoneWall2";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5289,7 +7474,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -5301,6 +7490,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ruins\\Terrain\\RuinsWall90\\RuinsWall90";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -5309,14 +7500,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "wall";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 5;
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\StoneWall3Path.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "ShadowStoneWall3";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5327,7 +7526,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -5339,6 +7542,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ruins\\Terrain\\RuinsWall135\\RuinsWall135";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -5347,14 +7552,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "wall";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 5;
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\StoneWall4Path.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "ShadowStoneWall4";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5365,7 +7578,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -5377,6 +7594,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ruins\\Terrain\\RuinsGate\\RuinsGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -5385,14 +7604,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5403,7 +7630,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -5415,6 +7647,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ruins\\Terrain\\RuinsGate45\\RuinsGate45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -5423,14 +7657,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate2";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5441,7 +7683,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -5453,6 +7700,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ruins\\Terrain\\RuinsGate\\RuinsGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -5461,14 +7710,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate3";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5479,7 +7736,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -5491,6 +7753,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ruins\\Terrain\\RuinsGate45\\RuinsGate45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -5499,14 +7763,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 180f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate4";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5517,7 +7789,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -5529,7 +7806,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\AshenTree\\AshenTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 32;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\AshenvaleTree\\Ice_Tree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -5537,14 +7818,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 10;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 170f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 42;
             destructable.ArtMinimapColor2Green = 85;
@@ -5555,7 +7845,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -5567,7 +7861,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ruins\\Terrain\\RuinsRoundDoor\\RuinsRoundDoor";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -5575,14 +7873,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\RoundDoor2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\RoundDoor2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5593,7 +7899,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\RuinsRoundDoor_Portrait\\RuinsRoundDoor_Portrait";
             return destructable;
         }
 
@@ -5605,7 +7916,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ruins\\Terrain\\RuinsRoundDoor\\RuinsRoundDoor";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -5613,14 +7928,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\RoundDoor1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\RoundDoor1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5631,7 +7954,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\RuinsRoundDoor_Portrait\\RuinsRoundDoor_Portrait";
             return destructable;
         }
 
@@ -5643,7 +7971,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ruins\\Terrain\\RuinsRoundDoor\\RuinsRoundDoor";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -5651,14 +7983,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\RoundDoor2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\RoundDoor2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate2";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5669,7 +8009,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\RuinsRoundDoor_Portrait\\RuinsRoundDoor_Portrait";
             return destructable;
         }
 
@@ -5681,7 +8026,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ruins\\Terrain\\RuinsRoundDoor\\RuinsRoundDoor";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -5689,14 +8038,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 180f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\RoundDoor2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\RoundDoor2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate2";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5707,7 +8064,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\RuinsRoundDoor_Portrait\\RuinsRoundDoor_Portrait";
             return destructable;
         }
 
@@ -5719,7 +8081,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ruins\\Terrain\\RuinsRoundDoor\\RuinsRoundDoor";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -5727,14 +8093,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\RoundDoor2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\RoundDoor2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5745,7 +8119,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\RuinsRoundDoor_Portrait\\RuinsRoundDoor_Portrait";
             return destructable;
         }
 
@@ -5757,7 +8136,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ruins\\Terrain\\RuinsRoundDoor\\RuinsRoundDoor";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -5765,14 +8148,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\RoundDoor1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\RoundDoor1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5783,7 +8174,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\RuinsRoundDoor_Portrait\\RuinsRoundDoor_Portrait";
             return destructable;
         }
 
@@ -5795,7 +8191,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ruins\\Terrain\\RuinsRoundDoor\\RuinsRoundDoor";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -5803,14 +8203,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\RoundDoor2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\RoundDoor2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate2";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5821,7 +8229,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\RuinsRoundDoor_Portrait\\RuinsRoundDoor_Portrait";
             return destructable;
         }
 
@@ -5833,7 +8246,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ruins\\Terrain\\RuinsRoundDoor\\RuinsRoundDoor";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -5841,14 +8258,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 180f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\RoundDoor2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\RoundDoor2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate2";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5859,7 +8284,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\RuinsRoundDoor_Portrait\\RuinsRoundDoor_Portrait";
             return destructable;
         }
 
@@ -5871,7 +8301,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "I,N";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\IceBridge\\IceBridge";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\IceBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -5879,14 +8313,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 1;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5897,7 +8339,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -5909,7 +8355,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "I,N";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\IceBridge45\\IceBridge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\IceBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -5917,14 +8367,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 1;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5935,7 +8393,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -5947,7 +8409,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "I,N";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\IceBridge\\IceBridge";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\IceBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -5955,14 +8421,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 1;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -5973,7 +8447,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -5985,7 +8463,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "I,N";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\IceBridge45\\IceBridge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\IceBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -5993,14 +8475,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 1;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6011,7 +8501,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -6023,6 +8517,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Icecrown\\Terrain\\IceCrownGate\\IceCrownGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -6031,14 +8527,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6049,7 +8553,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -6061,6 +8570,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Icecrown\\Terrain\\IceCrownGate45\\IceCrownGate45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -6069,14 +8580,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate2";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6087,7 +8606,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -6099,6 +8623,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Icecrown\\Terrain\\IceCrownGate\\IceCrownGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -6107,14 +8633,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate3";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6125,7 +8659,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -6137,6 +8676,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Icecrown\\Terrain\\IceCrownGate45\\IceCrownGate45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -6145,14 +8686,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 180f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate4";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6163,7 +8712,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -6175,6 +8729,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Icecrown\\Terrain\\IceCrownWall0\\IceCrownWall0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -6183,14 +8739,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "wall";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 5;
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\StoneWall1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "ShadowStoneWall1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6201,7 +8765,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -6213,6 +8781,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Icecrown\\Terrain\\IceCrownWall45\\IceCrownWall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -6221,14 +8791,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "wall";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 5;
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\StoneWall2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "ShadowStoneWall2";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6239,7 +8817,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -6251,6 +8833,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Icecrown\\Terrain\\IceCrownWall90\\IceCrownWall90";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -6259,14 +8843,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "wall";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 5;
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\StoneWall3Path.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "ShadowStoneWall3";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6277,7 +8869,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -6289,6 +8885,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Icecrown\\Terrain\\IceCrownWall135\\IceCrownWall135";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -6297,14 +8895,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "wall";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 5;
             destructable.StatsHitPoints = 200f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\StoneWall4Path.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "ShadowStoneWall4";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6315,7 +8921,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -6327,7 +8937,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "L";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\TreeBridge0\\TreeBridge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 31;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\LordaeronTree\\LordaeronSummerTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -6335,14 +8949,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 1;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\TreeBridge0Death.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\TreeBridge0.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6353,7 +8975,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -6365,7 +8991,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "L";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\TreeBridge0\\TreeBridge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 31;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\LordaeronTree\\LordaeronSummerTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -6373,14 +9003,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 1;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\TreeBridge0Death.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\TreeBridge0.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6391,7 +9029,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -6403,7 +9045,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "F,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\TreeBridge0\\TreeBridge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 31;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\LordaeronTree\\LordaeronFallTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -6411,14 +9057,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 1;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\TreeBridge0Death.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\TreeBridge0.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6429,7 +9083,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -6441,7 +9099,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "F,Q";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\TreeBridge0\\TreeBridge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 31;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\LordaeronTree\\LordaeronFallTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -6449,14 +9111,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 1;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\TreeBridge0Death.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\TreeBridge0.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6467,7 +9137,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -6479,7 +9153,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "W,N,I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\TreeBridge0\\TreeBridge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 31;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\LordaeronTree\\LordaeronWinterTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -6487,14 +9165,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 1;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\TreeBridge0Death.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\TreeBridge0.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6505,7 +9191,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -6517,7 +9207,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "W,N,I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\TreeBridge0\\TreeBridge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 31;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\LordaeronTree\\LordaeronWinterTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -6525,14 +9219,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 1;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\TreeBridge0Death.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\TreeBridge0.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6543,7 +9245,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -6555,7 +9261,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\TreeBridge0\\TreeBridge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 31;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\AshenvaleTree\\AshenTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -6563,14 +9273,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 1;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\TreeBridge0Death.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\TreeBridge0.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6581,7 +9299,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -6593,7 +9315,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\TreeBridge0\\TreeBridge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 31;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\AshenvaleTree\\AshenTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -6601,14 +9327,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 1;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\TreeBridge0Death.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\TreeBridge0.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6619,7 +9353,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -6631,6 +9369,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ruins\\Props\\Ruins_NagaCircle\\Ruins_NagaCircle";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -6639,14 +9379,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Unbuildable.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6657,7 +9405,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -6669,6 +9421,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I,N";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Northrend\\Water\\North_IceFloe\\North_IceFloe";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -6677,14 +9431,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Unbuildable.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6695,7 +9457,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -6707,6 +9473,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I,N";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Northrend\\Water\\North_IceFloe2\\North_IceFloe2";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -6715,14 +9483,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Unbuildable.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6733,7 +9509,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -6745,6 +9525,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I,N";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Northrend\\Water\\North_IceFloe3\\North_IceFloe3";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -6753,14 +9535,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Unbuildable.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6771,7 +9561,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -6783,6 +9577,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I,N";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Northrend\\Water\\North_IceFloe4\\North_IceFloe4";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -6791,14 +9587,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Unbuildable.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6809,7 +9613,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -6821,6 +9629,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I,N";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Icecrown\\Terrain\\IceGate\\IceGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -6829,14 +9639,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6847,7 +9665,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -6859,6 +9682,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I,N";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Icecrown\\Terrain\\IceGate45\\IceGate45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -6867,14 +9692,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate2";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6885,7 +9718,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -6897,6 +9735,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I,N";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Icecrown\\Terrain\\IceGate\\IceGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -6905,14 +9745,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate3";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6923,7 +9771,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -6935,6 +9788,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I,N";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Icecrown\\Terrain\\IceGate45\\IceGate45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -6943,14 +9798,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 180f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\Gate2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\Gate2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate4";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -6961,7 +9824,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -6973,7 +9841,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "A";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ashenvale\\Plants\\AshenCanopyTree\\AshenCanopyTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 32;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\AshenvaleTree\\AshenCanopyTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -6981,14 +9853,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 3;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
             destructable.ArtFlyOverHeight = 435f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\2x2Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 30;
             destructable.ArtMinimapColor2Green = 94;
@@ -6999,7 +9880,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -7011,7 +9896,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "O";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\OutlandMushroomTree\\OutlandMushroomTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 1;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 37;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\OutlandMushroomTree\\MushroomTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -7019,14 +9908,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 10;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 170f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.65f;
+            destructable.EditorMaximumScale = 0.85f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 170;
             destructable.ArtMinimapColor2Green = 92;
@@ -7037,7 +9935,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 128f;
             return destructable;
         }
 
@@ -7049,7 +9951,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "K";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\OutlandMushroomTree\\OutlandMushroomTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 1;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 37;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\OutlandMushroomTree\\MushroomTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -7057,14 +9963,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 10;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 170f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.65f;
+            destructable.EditorMaximumScale = 0.85f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 135;
             destructable.ArtMinimapColor2Green = 75;
@@ -7075,7 +9990,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 128f;
             return destructable;
         }
 
@@ -7087,6 +10006,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I,N";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Icecrown\\Structures\\Igloo\\Igloo";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -7095,14 +10016,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 100f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 200f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "RockChunkDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7113,7 +10043,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 256f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Icecrown\\Structures\\Igloo\\Igloo";
             return destructable;
         }
 
@@ -7125,7 +10060,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Cinematic\\ElevatorPuzzle\\ElevatorPuzzle";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 1;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -7133,14 +10072,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\8x8Unbuildable.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\8x8Unbuildable.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7151,7 +10098,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -7163,7 +10114,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Cinematic\\ElevatorPuzzle\\ElevatorPuzzle";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 1;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -7171,14 +10126,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\8x8Unbuildable.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\8x8Unbuildable.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7189,7 +10152,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -7201,6 +10168,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\DalaranMagicalPen\\DalaranMagicalPen";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -7209,14 +10178,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\8x8PenPath.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "MagicalCellDeathSound";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 0;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7227,7 +10205,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 288f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\DalaranMagicalPen_portrait\\DalaranMagicalPen_portrait";
             return destructable;
         }
 
@@ -7239,6 +10222,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\DalaranMagicalPen45\\DalaranMagicalPen45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -7247,14 +10232,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\12x10Pen45Path.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "MagicalCellDeathSound";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 0;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7265,7 +10259,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 288f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\DalaranMagicalPen_portrait\\DalaranMagicalPen_portrait";
             return destructable;
         }
 
@@ -7277,6 +10276,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\DalaranMagicalPenWall\\DalaranMagicalPenWall";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -7285,14 +10286,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.85f;
+            destructable.EditorMaximumScale = 0.85f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\8x2Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "MagicalCellDeathSound";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 0;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7303,7 +10313,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 128f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\DalaranMagicalPen_portrait\\DalaranMagicalPen_portrait";
             return destructable;
         }
 
@@ -7315,6 +10330,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\DalaranMagicalPenWall45\\DalaranMagicalPenWall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -7323,14 +10340,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\Fence45.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "MagicalCellDeathSound";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 0;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7341,7 +10367,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 128f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\DalaranMagicalPen_portrait\\DalaranMagicalPen_portrait";
             return destructable;
         }
 
@@ -7353,6 +10384,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Icecrown\\Terrain\\ClearIceRock\\ClearIceRock";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -7361,14 +10394,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 6;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 100f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\8x8Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "RockChunkDeath";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7379,7 +10421,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -7391,6 +10437,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\LOSBlocker\\LOSBlocker";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -7399,14 +10447,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 9999f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 80f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\16x4ElevatorBlockPath.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\16x4ElevatorBlockPathDeath.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 0;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7417,7 +10473,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -7429,6 +10489,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "A";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\Wharf\\Wharf";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -7437,14 +10499,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "_";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7455,7 +10525,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -7467,6 +10541,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "P";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\LOSBlocker\\LOSBlocker";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -7475,14 +10551,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 9999f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 80f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\2x2Unflyable.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 0;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7493,7 +10577,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -7505,6 +10593,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "P";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\LOSBlocker\\LOSBlocker";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -7513,14 +10603,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 9999f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 160f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Unflyable.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 0;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7531,7 +10629,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -7543,6 +10645,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "P";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\LOSBlocker\\LOSBlocker";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -7551,14 +10655,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 9999f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 80f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\2x2Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 0;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7569,7 +10681,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -7581,6 +10697,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "P";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\LOSBlocker\\LOSBlocker";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -7589,14 +10707,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 9999f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 160f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 0;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7607,7 +10733,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -7619,6 +10749,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "P";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\LOSBlocker\\LOSBlocker";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -7627,14 +10759,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 9999f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 80f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\2x2Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 0;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7645,7 +10785,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -7657,6 +10801,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "P";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\LOSBlocker\\LOSBlocker";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -7665,14 +10811,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 9999f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 160f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 0;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7683,7 +10837,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -7695,6 +10853,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "P";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\LOSBlocker\\LOSBlocker";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -7703,14 +10863,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 9999f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 80f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\2x2Cyan.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 0;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7721,7 +10889,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -7733,6 +10905,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "P";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\LOSBlocker\\LOSBlocker";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -7741,14 +10915,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 9999f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 160f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Cyan.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 0;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7759,7 +10941,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -7771,6 +10957,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Cinematic\\SargerasGate\\SargerasGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -7779,14 +10967,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 180f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\GateLarge1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\GateLarge1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate3";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7797,7 +10993,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -7809,6 +11010,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Cinematic\\SargerasGate\\SargerasGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -7817,14 +11020,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\GateLarge1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\GateLarge1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7835,7 +11046,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -7847,7 +11063,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Cinematic\\FootSwitch\\FootSwitch";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -7855,14 +11075,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 175f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Unbuildable.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\4x4Unbuildable.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7873,7 +11101,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -7885,7 +11117,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Cinematic\\FootSwitch\\FootSwitch";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -7893,14 +11129,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 175f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Unbuildable.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\4x4Unbuildable.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7911,7 +11155,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -7923,6 +11171,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "D,G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Cinematic\\DungeonLever\\DungeonLever";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -7931,14 +11181,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 5f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 1.1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\2x2Default.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\2x2Default.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 0;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7949,7 +11207,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 96f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Cinematic\\DungeonLever\\DungeonLever";
             return destructable;
         }
 
@@ -7961,7 +11224,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Y,X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Cityscape\\Terrain\\CityEnteranceGate\\CityEnteranceGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -7969,14 +11236,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 180f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\GateLarge1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\GateLarge1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate3";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -7987,7 +11262,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\CityEnteranceGate_Portrait\\CityEnteranceGate_Portrait";
             return destructable;
         }
 
@@ -7999,7 +11279,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Y,X";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Cityscape\\Terrain\\CityEnteranceGate\\CityEnteranceGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -8007,14 +11291,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\GateLarge1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\GateLarge1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -8025,7 +11317,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\CityEnteranceGate_Portrait\\CityEnteranceGate_Portrait";
             return destructable;
         }
 
@@ -8037,7 +11334,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Cinematic\\TyrandeWoodBridgeLarge\\TyrandeWoodBridgeLarge";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -8045,14 +11346,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -8063,7 +11372,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -8075,7 +11388,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "Q";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Cinematic\\TyrandeWoodBridgeLarge\\TyrandeWoodBridgeLarge";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -8083,14 +11400,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -8101,7 +11426,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -8113,7 +11442,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "J";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityscapeTree\\CityscapeTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 1;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 31;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\DalaranRuinsTree\\DalaranRuinsTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -8121,14 +11454,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 2;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
             destructable.ArtFlyOverHeight = 170f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "ShadowCityTree";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 32;
             destructable.ArtMinimapColor2Green = 90;
@@ -8139,7 +11481,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 128f;
             return destructable;
         }
 
@@ -8151,7 +11497,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "J";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\LordaeronTree\\LordaeronTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 1;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 31;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\DalaranRuinsTree\\DalaranRuinsTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -8159,14 +11509,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 10;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 170f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 32;
             destructable.ArtMinimapColor2Green = 90;
@@ -8177,7 +11536,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 128f;
             return destructable;
         }
 
@@ -8189,6 +11552,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Icecrown\\Terrain\\IceCrownThroneGate\\IceCrownThroneGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -8197,14 +11562,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 180f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\GateLarge1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\GateLarge1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate3";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -8215,7 +11588,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\Gate_Portrait\\Gate_Portrait";
             return destructable;
         }
 
@@ -8227,7 +11605,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "G";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\Shrooms\\Shrooms";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 35;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\UndergroundTree\\UnderMushroomTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -8235,14 +11617,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 8;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 170f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 60;
             destructable.ArtMinimapColor2Green = 124;
@@ -8253,7 +11644,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 128f;
             return destructable;
         }
 
@@ -8265,6 +11660,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "B";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Cinematic\\RessurectionStoneSW\\RessurectionStoneSW";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -8273,14 +11670,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "wall";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "RockChunkDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 0;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -8291,7 +11697,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 256f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Cinematic\\RessurectionStoneSW\\RessurectionStoneSW";
             return destructable;
         }
 
@@ -8303,6 +11714,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "B";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Cinematic\\RessurectionStoneSE\\RessurectionStoneSE";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -8311,14 +11724,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "wall";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "RockChunkDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 0;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -8329,7 +11751,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 256f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Cinematic\\RessurectionStoneSE\\RessurectionStoneSE";
             return destructable;
         }
 
@@ -8341,6 +11768,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Cinematic\\ShimmeringPortal\\ShimmeringPortal";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -8349,14 +11778,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 80f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "_";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "ShimmeringPortalDeath2";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 0;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -8367,7 +11805,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 256f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Cinematic\\ShimmeringPortal\\ShimmeringPortal";
             return destructable;
         }
 
@@ -8379,6 +11822,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\InvisiblePlatform\\InvisiblePlatform";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -8387,14 +11832,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 80f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Unbuildable.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 0;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -8405,7 +11858,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 80f;
             return destructable;
         }
 
@@ -8417,6 +11874,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\InvisiblePlatformSmall\\InvisiblePlatformSmall";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -8425,14 +11884,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 60f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\2x2Unbuildable.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 0;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -8443,7 +11910,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 80f;
             return destructable;
         }
 
@@ -8455,7 +11926,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "B";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ashenvale\\Plants\\AshenCanopyTree\\AshenCanopyTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 32;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\BarrensTree\\BarrensTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -8463,14 +11938,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 3;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
             destructable.ArtFlyOverHeight = 435f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\2x2Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 155;
             destructable.ArtMinimapColor2Green = 110;
@@ -8481,7 +11965,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -8493,7 +11981,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "C";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ashenvale\\Plants\\AshenCanopyTree\\AshenCanopyTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 32;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\AshenvaleTree\\FelwoodTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -8501,14 +11993,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 3;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
             destructable.ArtFlyOverHeight = 435f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\2x2Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 75;
             destructable.ArtMinimapColor2Green = 78;
@@ -8519,7 +12020,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -8531,7 +12036,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ashenvale\\Plants\\AshenCanopyTree\\AshenCanopyTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 32;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\NorthrendTree\\NorthTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -8539,14 +12048,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 3;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
             destructable.ArtFlyOverHeight = 435f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\2x2Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 54;
             destructable.ArtMinimapColor2Green = 54;
@@ -8557,7 +12075,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -8569,7 +12091,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ashenvale\\Plants\\AshenCanopyTree\\AshenCanopyTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 32;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\RuinsTree\\RuinsTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -8577,14 +12103,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 3;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
             destructable.ArtFlyOverHeight = 435f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\2x2Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 135;
             destructable.ArtMinimapColor2Green = 116;
@@ -8595,7 +12130,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -8607,7 +12146,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ashenvale\\Plants\\AshenCanopyTree\\AshenCanopyTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 32;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\AshenvaleTree\\Ice_Tree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -8615,14 +12158,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 3;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
             destructable.ArtFlyOverHeight = 435f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\2x2Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 157;
             destructable.ArtMinimapColor2Green = 163;
@@ -8633,7 +12185,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -8645,6 +12201,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Icecrown\\Terrain\\IceCrownThrone\\IceCrownThrone";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -8653,14 +12211,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\throne.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -8671,7 +12237,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -8683,6 +12253,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Icecrown\\Terrain\\IceCrownThrone45\\IceCrownThrone45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -8691,14 +12263,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\throne135.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -8709,7 +12289,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -8721,6 +12305,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Icecrown\\Terrain\\IceCrownThrone135\\IceCrownThrone135";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -8729,14 +12315,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\throne45.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -8747,7 +12341,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -8759,6 +12357,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,W,F,V,Q,X,Y,J";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\LoardaeronRockChunks\\LoardaeronRockChunks";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -8767,14 +12367,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 6;
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 100f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "RockChunkDeath";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -8785,7 +12394,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 144f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\RockChunks_Portrait\\RockChunks_Portrait";
             return destructable;
         }
 
@@ -8797,6 +12411,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "L,W,F,V,Q,X,Y,J";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\LoardaeronRockChunks\\LoardaeronRockChunks";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -8805,14 +12421,25 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 6;
             destructable.StatsHitPoints = 250f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 20f;
+            destructable.ArtMaxRollAngledegrees = 20f;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "RockChunkDeath";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -8823,7 +12450,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 144f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\RockChunks_Portrait\\RockChunks_Portrait";
             return destructable;
         }
 
@@ -8835,7 +12467,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeExtraLarge0\\RockBridgeExtraLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -8843,14 +12479,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraExtraLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraExtraLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -8861,7 +12505,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -8873,7 +12521,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeExtraLarge45\\RockBridgeExtraLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -8881,14 +12533,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraExtraLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraExtraLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -8899,7 +12559,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -8911,7 +12575,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeExtraLarge0\\RockBridgeExtraLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -8919,14 +12587,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraExtraLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraExtraLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -8937,7 +12613,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -8949,7 +12629,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RockBridgeExtraLarge45\\RockBridgeExtraLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -8957,14 +12641,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1.1f;
+            destructable.EditorMaximumScale = 1.1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraExtraLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraExtraLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -8975,7 +12667,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -8987,6 +12683,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Cinematic\\DemonStorm\\DemonStorm";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -8995,14 +12693,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 80f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "_";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 0;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9013,7 +12719,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 80f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Cinematic\\DemonStorm\\DemonStorm";
             return destructable;
         }
 
@@ -9025,6 +12736,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Cinematic\\RockinArthas\\RockinArthas";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -9033,14 +12746,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 256f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "_";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 0;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9051,7 +12772,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 80f;
             return destructable;
         }
 
@@ -9063,6 +12788,8 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "doodads\\underground\\terrain\\SupportBeam\\SupportBeam";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
@@ -9071,14 +12798,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "wall";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 256f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\2x2Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9089,7 +12825,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 256f;
+            destructable.ArtModelFilePortraitRaw = "doodads\\underground\\terrain\\SupportBeam\\SupportBeam";
             return destructable;
         }
 
@@ -9101,7 +12842,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\BridgeRampSmall135\\BridgeRampSmall135";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9109,14 +12854,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 30f;
+            destructable.ArtFixedRotation = 225f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1.33f;
+            destructable.EditorMaximumScale = 1.33f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\CliffRampStraight90.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CliffRampStraight90Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9127,7 +12880,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -9139,7 +12896,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\BridgeRampSmall45\\BridgeRampSmall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9147,14 +12908,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 30f;
+            destructable.ArtFixedRotation = 225f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1.33f;
+            destructable.EditorMaximumScale = 1.33f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\CliffRampStraight180.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CliffRampStraight180Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9165,7 +12934,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -9177,7 +12950,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\BridgeRampSmall315\\BridgeRampSmall315";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9185,14 +12962,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 30f;
+            destructable.ArtFixedRotation = 225f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1.33f;
+            destructable.EditorMaximumScale = 1.33f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\CliffRampStraight270.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CliffRampStraight270Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9203,7 +12988,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -9215,7 +13004,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\BridgeRampSmall225\\BridgeRampSmall225";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9223,14 +13016,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 30f;
+            destructable.ArtFixedRotation = 225f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1.33f;
+            destructable.EditorMaximumScale = 1.33f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\CliffRampStraight0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CliffRampStraight0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9241,7 +13042,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -9253,7 +13058,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\BridgeRampSmall135\\BridgeRampSmall135";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9261,14 +13070,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 30f;
+            destructable.ArtFixedRotation = 225f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1.33f;
+            destructable.EditorMaximumScale = 1.33f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\CliffRampStraight90.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CliffRampStraight90Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9279,7 +13096,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -9291,7 +13112,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\BridgeRampSmall45\\BridgeRampSmall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9299,14 +13124,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 30f;
+            destructable.ArtFixedRotation = 225f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1.33f;
+            destructable.EditorMaximumScale = 1.33f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\CliffRampStraight180.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CliffRampStraight180Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9317,7 +13150,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -9329,7 +13166,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\BridgeRampSmall315\\BridgeRampSmall315";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9337,14 +13178,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 30f;
+            destructable.ArtFixedRotation = 225f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1.33f;
+            destructable.EditorMaximumScale = 1.33f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\CliffRampStraight270.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CliffRampStraight270Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9355,7 +13204,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -9367,7 +13220,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\BridgeRampSmall225\\BridgeRampSmall225";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9375,14 +13232,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 30f;
+            destructable.ArtFixedRotation = 225f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1.33f;
+            destructable.EditorMaximumScale = 1.33f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\CliffRampStraight0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CliffRampStraight0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9393,7 +13258,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -9405,7 +13274,10 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Abilities\\Spells\\Other\\Volcano\\Volcano";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9413,14 +13285,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "decoration";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "_";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 0;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9431,7 +13311,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -9443,7 +13327,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Y";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\CityscapeTree\\CityscapeTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 1;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 31;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\LordaeronTree\\LordaeronSummerTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9451,14 +13339,25 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 10;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 300f;
             destructable.ArtFlyOverHeight = 256f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 0;
+            destructable.ArtMaxRollAngledegrees = 0;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "ShadowCityTree";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 125;
             destructable.ArtMinimapColor2Green = 108;
@@ -9469,7 +13368,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 128f;
             return destructable;
         }
 
@@ -9481,7 +13384,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "I";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Cityscape\\Terrain\\CityEnteranceGate\\CityEnteranceGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9489,14 +13396,24 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 0;
+            destructable.ArtMaxRollAngledegrees = 0;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = null;
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "_";
+            destructable.ArtShadowRaw = "ShadowGate1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9507,6 +13424,9 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
             return destructable;
         }
@@ -9519,7 +13439,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Cityscape\\Terrain\\CityEnteranceGate\\CityEnteranceGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9527,14 +13451,24 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 0;
+            destructable.ArtMaxRollAngledegrees = 0;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = null;
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "_";
+            destructable.ArtShadowRaw = "ShadowGate1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9545,6 +13479,9 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
             return destructable;
         }
@@ -9557,7 +13494,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Cityscape\\Terrain\\CityEnteranceGate\\CityEnteranceGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 0;
+            destructable.ArtReplaceableTextureFileRaw = "_";
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9565,14 +13506,24 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "wall";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 256f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 0;
+            destructable.ArtMaxRollAngledegrees = 0;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\8x8Default.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\8x8Default.tga";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9583,6 +13534,9 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
             return destructable;
         }
@@ -9595,7 +13549,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Cityscape\\Terrain\\CityEnteranceGate\\CityEnteranceGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9603,14 +13561,24 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 0;
+            destructable.ArtMaxRollAngledegrees = 0;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = null;
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "_";
+            destructable.ArtShadowRaw = "ShadowGate1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9621,6 +13589,9 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
             return destructable;
         }
@@ -9633,7 +13604,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Cityscape\\Terrain\\CityEnteranceGate\\CityEnteranceGate";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 0;
+            destructable.ArtReplaceableTextureFileRaw = "_";
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9641,14 +13616,24 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "wall";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 256f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 0;
+            destructable.ArtMaxRollAngledegrees = 0;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\8x8Default.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\8x8Default.tga";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9659,6 +13644,9 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
             return destructable;
         }
@@ -9671,7 +13659,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\BlackCitadel\\Props\\BlackCitadelStatue\\BlackCitadelStatue";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 0;
+            destructable.ArtReplaceableTextureFileRaw = "_";
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9679,14 +13671,24 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "wall";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 256f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 0;
+            destructable.ArtMaxRollAngledegrees = 0;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\8x8Default.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\8x8Default.tga";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9697,6 +13699,9 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
             return destructable;
         }
@@ -9709,7 +13714,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\BlackCitadel\\Props\\BlackCitadelStatue\\BlackCitadelStatue";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 0;
+            destructable.ArtReplaceableTextureFileRaw = "_";
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9717,14 +13726,24 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "wall";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 256f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 0;
+            destructable.ArtMaxRollAngledegrees = 0;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\8x8Default.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\8x8Default.tga";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9735,6 +13754,9 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
             return destructable;
         }
@@ -9747,7 +13769,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\BlackCitadel\\Props\\BlackCitadelStatue\\BlackCitadelStatue";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 0;
+            destructable.ArtReplaceableTextureFileRaw = "_";
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9755,14 +13781,24 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "wall";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 256f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 0;
+            destructable.ArtMaxRollAngledegrees = 0;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\8x8Default.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\8x8Default.tga";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9773,6 +13809,9 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
             return destructable;
         }
@@ -9785,7 +13824,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\BlackCitadel\\Props\\BlackCitadelStatue\\BlackCitadelStatue";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 0;
+            destructable.ArtReplaceableTextureFileRaw = "_";
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9793,14 +13836,24 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "wall";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 256f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 0;
+            destructable.ArtMaxRollAngledegrees = 0;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\8x8Default.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\8x8Default.tga";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9811,6 +13864,9 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
             return destructable;
         }
@@ -9823,7 +13879,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Dalaran\\Terrain\\DalaranVioletCitadel\\DalaranVioletCitadel";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 0;
+            destructable.ArtReplaceableTextureFileRaw = "_";
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9831,14 +13891,24 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 512f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 0;
+            destructable.ArtMaxRollAngledegrees = 0;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = null;
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "_";
+            destructable.ArtShadowRaw = "ShadowDalaranBuilding";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9849,6 +13919,9 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
             return destructable;
         }
@@ -9861,7 +13934,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Dalaran\\Terrain\\DalaranVioletCitadel\\DalaranVioletCitadel";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 0;
+            destructable.ArtReplaceableTextureFileRaw = "_";
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9869,14 +13946,24 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 512f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 0;
+            destructable.ArtMaxRollAngledegrees = 0;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = null;
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "_";
+            destructable.ArtShadowRaw = "ShadowDalaranBuilding";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9887,6 +13974,9 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
             return destructable;
         }
@@ -9899,7 +13989,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Dalaran\\Terrain\\DalaranVioletCitadel\\DalaranVioletCitadel";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 0;
+            destructable.ArtReplaceableTextureFileRaw = "_";
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9907,14 +14001,24 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 512f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 0;
+            destructable.ArtMaxRollAngledegrees = 0;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = null;
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "_";
+            destructable.ArtShadowRaw = "ShadowDalaranBuilding";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9925,6 +14029,9 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
             return destructable;
         }
@@ -9937,7 +14044,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "F";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Dalaran\\Terrain\\DalaranVioletCitadel\\DalaranVioletCitadel";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 0;
+            destructable.ArtReplaceableTextureFileRaw = "_";
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9945,14 +14056,24 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 512f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 0;
+            destructable.ArtMaxRollAngledegrees = 0;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = null;
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "_";
+            destructable.ArtShadowRaw = "ShadowDalaranBuilding";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -9963,6 +14084,9 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
             return destructable;
         }
@@ -9975,7 +14099,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "B";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Barrens\\Terrain\\OrgrimmarWallSegment_UnderConstruction\\OrgrimmarWallSegment_UnderConstruction";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 0;
+            destructable.ArtReplaceableTextureFileRaw = "_";
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -9983,14 +14111,24 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 512f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 0;
+            destructable.ArtMaxRollAngledegrees = 0;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\12x12Unflyable.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "_";
+            destructable.ArtShadowRaw = "ShadowDalaranBuilding";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10001,6 +14139,9 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
             return destructable;
         }
@@ -10013,7 +14154,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "B";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Barrens\\Terrain\\OrgrimmarWallSegment_Completed\\OrgrimmarWallSegment_Completed";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 0;
+            destructable.ArtReplaceableTextureFileRaw = "_";
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10021,14 +14166,24 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 512f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 0;
+            destructable.ArtMaxRollAngledegrees = 0;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\12x12Unflyable.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "_";
+            destructable.ArtShadowRaw = "ShadowDalaranBuilding";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10039,6 +14194,9 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
             return destructable;
         }
@@ -10051,7 +14209,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "B";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Dalaran\\Terrain\\DalaranVioletCitadel\\DalaranVioletCitadel";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 0;
+            destructable.ArtReplaceableTextureFileRaw = "_";
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10059,14 +14221,24 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 512f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 0;
+            destructable.ArtMaxRollAngledegrees = 0;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = null;
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "_";
+            destructable.ArtShadowRaw = "ShadowDalaranBuilding";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10077,6 +14249,9 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
             return destructable;
         }
@@ -10089,7 +14264,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "B";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Dalaran\\Terrain\\DalaranVioletCitadel\\DalaranVioletCitadel";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 0;
+            destructable.ArtReplaceableTextureFileRaw = "_";
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10097,14 +14276,24 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 512f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 0;
+            destructable.ArtMaxRollAngledegrees = 0;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = null;
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "_";
+            destructable.ArtShadowRaw = "ShadowDalaranBuilding";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10115,6 +14304,9 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
             return destructable;
         }
@@ -10127,7 +14319,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "B";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Barrens\\Terrain\\OrgrimmarGate_Completed\\OrgrimmarGate_Completed";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10135,14 +14331,24 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 0;
+            destructable.ArtMaxRollAngledegrees = 0;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = null;
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "_";
+            destructable.ArtShadowRaw = "ShadowGate1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10153,6 +14359,9 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
             return destructable;
         }
@@ -10165,7 +14374,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "Y";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\SpecialIceBridge\\SpecialIceBridge";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\IceBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10173,14 +14386,24 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 0;
+            destructable.ArtMaxRollAngledegrees = 0;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge0Death.tga";
+            destructable.SoundDeathRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10191,6 +14414,9 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
             return destructable;
         }
@@ -10203,7 +14429,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "Y";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\ElvenBridge\\ElvenBridge";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 1;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10211,14 +14441,24 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
+            destructable.ArtMaximumPitchAngledegrees = 0;
+            destructable.ArtMaxRollAngledegrees = 0;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge0Death.tga";
+            destructable.SoundDeathRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10229,6 +14469,9 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
             return destructable;
         }
@@ -10241,7 +14484,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\StratholmeBridgeSmall0\\StratholmeBridgeSmall0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10249,14 +14496,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10267,7 +14522,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -10279,7 +14538,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\StratholmeBridgeSmall45\\StratholmeBridgeSmall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10287,14 +14550,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10305,7 +14576,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -10317,7 +14592,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\StratholmeBridgeSmall90\\StratholmeBridgeSmall90";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10325,14 +14604,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall90.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall90Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10343,7 +14630,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -10355,7 +14646,10 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\StratholmeBridgeSmall135\\StratholmeBridgeSmall135";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10363,6 +14657,8 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
@@ -10371,6 +14667,7 @@ namespace War3Api.Object
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall135.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall135Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10382,6 +14679,7 @@ namespace War3Api.Object
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -10393,7 +14691,10 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\StratholmeBridgeLarge0\\StratholmeBridgeLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10401,6 +14702,8 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
@@ -10409,6 +14712,7 @@ namespace War3Api.Object
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10420,6 +14724,7 @@ namespace War3Api.Object
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -10431,7 +14736,10 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\StratholmeBridgeLarge45\\StratholmeBridgeLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10439,6 +14747,8 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
@@ -10447,6 +14757,7 @@ namespace War3Api.Object
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10458,6 +14769,7 @@ namespace War3Api.Object
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -10469,7 +14781,10 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\StratholmeBridgeLarge90\\StratholmeBridgeLarge90";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10477,6 +14792,8 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
@@ -10485,6 +14802,7 @@ namespace War3Api.Object
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge90.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge90Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10496,6 +14814,7 @@ namespace War3Api.Object
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -10507,7 +14826,10 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\StratholmeBridgeLarge135\\StratholmeBridgeLarge135";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10515,6 +14837,8 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
@@ -10523,6 +14847,7 @@ namespace War3Api.Object
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge135.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge135Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10534,6 +14859,7 @@ namespace War3Api.Object
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -10545,7 +14871,10 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\StratholmeBridgeExtraLarge0\\StratholmeBridgeExtraLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\StratholmeBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10553,6 +14882,8 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
@@ -10561,6 +14892,7 @@ namespace War3Api.Object
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10572,6 +14904,7 @@ namespace War3Api.Object
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -10583,7 +14916,10 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\StratholmeBridgeExtraLarge45\\StratholmeBridgeExtraLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10591,6 +14927,8 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
@@ -10599,6 +14937,7 @@ namespace War3Api.Object
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10610,6 +14949,7 @@ namespace War3Api.Object
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -10621,7 +14961,10 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\StratholmeBridgeExtraLarge90\\StratholmeBridgeExtraLarge90";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10629,6 +14972,8 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
@@ -10637,6 +14982,7 @@ namespace War3Api.Object
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge90.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge90Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10648,6 +14994,7 @@ namespace War3Api.Object
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -10659,7 +15006,10 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\StratholmeBridgeExtraLarge135\\StratholmeBridgeExtraLarge135";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff1.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10667,6 +15017,8 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
@@ -10675,6 +15027,7 @@ namespace War3Api.Object
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge135.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge135Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10686,6 +15039,7 @@ namespace War3Api.Object
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -10697,7 +15051,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\OvergrownBridgeSmall0\\OvergrownBridgeSmall0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\OvergrownBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10705,14 +15063,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10723,7 +15089,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -10735,7 +15105,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\OvergrownBridgeSmall45\\OvergrownBridgeSmall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\OvergrownBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10743,14 +15117,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10761,7 +15143,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -10773,7 +15159,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\OvergrownBridgeSmall0\\OvergrownBridgeSmall0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\OvergrownBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10781,14 +15171,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10799,7 +15197,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -10811,7 +15213,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\OvergrownBridgeSmall45\\OvergrownBridgeSmall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\OvergrownBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10819,14 +15225,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10837,7 +15251,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -10849,7 +15267,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\OvergrownBridgeLarge0\\OvergrownBridgeLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\OvergrownBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10857,14 +15279,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10875,7 +15305,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -10887,7 +15321,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\OvergrownBridgeLarge45\\OvergrownBridgeLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\OvergrownBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10895,14 +15333,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10913,7 +15359,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -10925,7 +15375,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\OvergrownBridgeLarge0\\OvergrownBridgeLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\OvergrownBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10933,14 +15387,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10951,7 +15413,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -10963,7 +15429,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\OvergrownBridgeLarge45\\OvergrownBridgeLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\OvergrownBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -10971,14 +15441,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -10989,7 +15467,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11001,7 +15483,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\OvergrownBridgeExtraLarge0\\OvergrownBridgeExtraLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\OvergrownBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11009,14 +15495,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11027,7 +15521,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11039,7 +15537,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\OvergrownBridgeExtraLarge45\\OvergrownBridgeExtraLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\OvergrownBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11047,14 +15549,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11065,7 +15575,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11077,7 +15591,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\OvergrownBridgeExtraLarge0\\OvergrownBridgeExtraLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\OvergrownBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11085,14 +15603,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11103,7 +15629,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11115,7 +15645,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\OvergrownBridgeExtraLarge45\\OvergrownBridgeExtraLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\OvergrownBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11123,14 +15657,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11141,7 +15683,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11153,7 +15699,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RicketyWoodenBridgeSmall0\\RicketyWoodBridgeSmall0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11161,14 +15711,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11179,7 +15737,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11191,7 +15753,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RicketyWoodenBridgeSmall45\\RicketyWoodenBridgeSmall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11199,14 +15765,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11217,7 +15791,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11229,7 +15807,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RicketyWoodenBridgeSmall0\\RicketyWoodenBridgeSmall0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11237,14 +15819,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11255,7 +15845,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11267,7 +15861,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RicketyWoodenBridgeSmall45\\RicketyWoodenBridgeSmall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11275,14 +15873,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11293,7 +15899,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11305,7 +15915,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RicketyWoodenBridgeLarge0\\RicketyWoodenBridgeLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11313,14 +15927,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11331,7 +15953,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11343,7 +15969,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RicketyWoodenBridgeLarge45\\RicketyWoodenBridgeLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11351,14 +15981,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11369,7 +16007,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11381,7 +16023,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RicketyWoodenBridgeLarge0\\RicketyWoodenBridgeLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11389,14 +16035,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11407,7 +16061,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11419,7 +16077,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RicketyWoodenBridgeLarge45\\RicketyWoodenBridgeLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11427,14 +16089,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11445,7 +16115,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11457,7 +16131,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RicketyWoodenBridgeExtraLarge0\\RicketyWoodenBridgeExtraLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11465,14 +16143,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11483,7 +16169,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11495,7 +16185,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RicketyWoodenBridgeExtraLarge45\\RicketyWoodenBridgeExtraLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11503,14 +16197,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11521,7 +16223,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11533,7 +16239,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RicketyWoodenBridgeExtraLarge0\\RicketyWoodenBridgeExtraLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11541,14 +16251,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11559,7 +16277,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11571,7 +16293,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\RicketyWoodenBridgeExtraLarge45\\RicketyWoodenBridgeExtraLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11579,14 +16305,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11597,7 +16331,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11609,7 +16347,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\ElvenBridgeSmall0\\ElvenBridgeSmall0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11617,14 +16359,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11635,7 +16385,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11647,7 +16401,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\ElvenBridgeSmall45\\ElvenBridgeSmall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11655,14 +16413,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11673,7 +16439,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11685,7 +16455,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\ElvenBridgeSmall0\\ElvenBridgeSmall0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11693,14 +16467,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11711,7 +16493,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11723,7 +16509,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\ElvenBridgeSmall45\\ElvenBridgeSmall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11731,14 +16521,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11749,7 +16547,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11761,7 +16563,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\ElvenBridgeLarge0\\ElvenBridgeLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11769,14 +16575,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11787,7 +16601,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11799,7 +16617,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\ElvenBridgeLarge45\\ElvenBridgeLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11807,14 +16629,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11825,7 +16655,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11837,7 +16671,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\ElvenBridgeLarge0\\ElvenBridgeLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11845,14 +16683,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11863,7 +16709,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11875,7 +16725,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\ElvenBridgeLarge45\\ElvenBridgeLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11883,14 +16737,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11901,7 +16763,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11913,7 +16779,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\ElvenBridgeExtraLarge0\\ElvenBridgeExtraLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11921,14 +16791,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11939,7 +16817,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11951,7 +16833,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\ElvenBridgeExtraLarge45\\ElvenBridgeExtraLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11959,14 +16845,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -11977,7 +16871,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -11989,7 +16887,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\ElvenBridgeExtraLarge0\\ElvenBridgeExtraLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -11997,14 +16899,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -12015,7 +16925,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -12027,7 +16941,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\ElvenBridgeExtraLarge45\\ElvenBridgeExtraLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -12035,14 +16953,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -12053,7 +16979,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -12065,7 +16995,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\NightElvenWoodBridgeSmall0\\NightElvenWoodBridgeSmall0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\NightElvenWoodenBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -12073,14 +17007,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -12091,7 +17033,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -12103,7 +17049,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\NightElvenWoodBridgeSmall45\\NightElvenWoodBridgeSmall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\NightElvenWoodenBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -12111,14 +17061,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -12129,7 +17087,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -12141,7 +17103,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\NightElvenWoodBridgeSmall0\\NightElvenWoodBridgeSmall0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\NightElvenWoodenBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -12149,14 +17115,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -12167,7 +17141,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -12179,7 +17157,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\NightElvenWoodBridgeSmall45\\NightElvenWoodBridgeSmall45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\NightElvenWoodenBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -12187,14 +17169,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 100f;
             destructable.ArtFogRadius = 100f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeSmall45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeSmall45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -12205,7 +17195,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -12217,7 +17211,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\NightElvenWoodBridgeLarge0\\NightElvenWoodBridgeLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\NightElvenWoodenBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -12225,14 +17223,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -12243,7 +17249,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -12255,7 +17265,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\NightElvenWoodBridgeLarge45\\NightElvenWoodBridgeLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\NightElvenWoodenBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -12263,14 +17277,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -12281,7 +17303,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -12293,7 +17319,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\NightElvenWoodBridgeLarge0\\NightElvenWoodBridgeLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\NightElvenWoodenBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -12301,14 +17331,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -12319,7 +17357,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -12331,7 +17373,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\NightElvenWoodBridgeLarge45\\NightElvenWoodBridgeLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\NightElvenWoodenBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -12339,14 +17385,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -12357,7 +17411,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -12369,7 +17427,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\NightElvenWoodBridgeExtraLarge0\\NightElvenWoodBridgeExtraLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\NightElvenWoodenBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -12377,14 +17439,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -12395,7 +17465,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -12407,7 +17481,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\NightElvenWoodBridgeExtraLarge45\\NightElvenWoodBridgeExtraLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\NightElvenWoodenBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -12415,14 +17493,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -12433,7 +17519,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -12445,7 +17535,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\NightElvenWoodBridgeExtraLarge0\\NightElvenWoodBridgeExtraLarge0";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\NightElvenWoodenBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -12453,14 +17547,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge0.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge0Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -12471,7 +17573,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -12483,7 +17589,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 1;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\NightElvenWoodBridgeExtraLarge45\\NightElvenWoodBridgeExtraLarge45";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Bridges\\NightElvenWoodenBridge.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -12491,14 +17601,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 2;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 2500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 200f;
             destructable.ArtFogRadius = 200f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\CityBridgeExtraLarge45.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\CityBridgeExtraLarge45Death.tga";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -12509,7 +17627,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -12559,7 +17681,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ruins\\Terrain\\RuinsRoundDoor\\RuinsRoundDoor";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -12567,14 +17693,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\RoundDoor2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\RoundDoor2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -12585,7 +17719,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\RuinsRoundDoor_Portrait\\RuinsRoundDoor_Portrait";
             return destructable;
         }
 
@@ -12597,7 +17736,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ruins\\Terrain\\RuinsRoundDoor\\RuinsRoundDoor";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -12605,14 +17748,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 0f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\RoundDoor1Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\RoundDoor1PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate1";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -12623,7 +17774,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\RuinsRoundDoor_Portrait\\RuinsRoundDoor_Portrait";
             return destructable;
         }
 
@@ -12635,7 +17791,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ruins\\Terrain\\RuinsRoundDoor\\RuinsRoundDoor";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -12643,14 +17803,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 90f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\RoundDoor2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\RoundDoor2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate2";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -12661,7 +17829,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\RuinsRoundDoor_Portrait\\RuinsRoundDoor_Portrait";
             return destructable;
         }
 
@@ -12673,7 +17846,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "Z";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Ruins\\Terrain\\RuinsRoundDoor\\RuinsRoundDoor";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -12681,14 +17858,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "debris";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 400f;
             destructable.ArtFlyOverHeight = 0f;
+            destructable.ArtFixedRotation = 180f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.9f;
+            destructable.EditorMaximumScale = 0.9f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 1;
             destructable.PathingPathingTextureRaw = "PathTextures\\RoundDoor2Path.tga";
             destructable.PathingPathingTextureDeadRaw = "PathTextures\\RoundDoor2PathDeath.tga";
+            destructable.ArtShadowRaw = "ShadowGate2";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -12699,7 +17884,12 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 1;
+            destructable.ArtSelectionSizeGame = 512f;
+            destructable.ArtModelFilePortraitRaw = "Doodads\\Terrain\\Portraits\\RuinsRoundDoor_Portrait\\RuinsRoundDoor_Portrait";
             return destructable;
         }
 
@@ -12711,7 +17901,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "B";
             destructable.EditorTilesetsRaw = "*";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Terrain\\BridgeRampSmall135\\BridgeRampSmall135";
+            destructable.ArtModelFileHasLightweightModelRaw = 0;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 11;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\Cliff\\Cliff0.blp";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 1;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -12719,14 +17913,22 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 1;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "bridge";
+            destructable.CombatArmorTypeRaw = "Stone";
+            destructable.ArtModelFileVariations = 1;
             destructable.StatsHitPoints = 500f;
             destructable.ArtOcclusionHeight = 0f;
             destructable.ArtFlyOverHeight = 30f;
+            destructable.ArtFixedRotation = -1f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 1f;
+            destructable.EditorMaximumScale = 1f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 50f;
             destructable.ArtFogRadius = 50f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "_";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.ArtShadowRaw = "none";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 0;
             destructable.ArtMinimapColor2Green = 0;
@@ -12737,7 +17939,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 200;
             destructable.StatsRepairLumberCost = 100;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 256f;
             return destructable;
         }
 
@@ -12749,7 +17955,11 @@ namespace War3Api.Object
             destructable.EditorCategoryRaw = "D";
             destructable.EditorTilesetsRaw = "N";
             destructable.EditorHasTilesetSpecificDataRaw = 0;
+            destructable.ArtModelFileRaw = "Doodads\\Terrain\\NorthrendTree\\NorthrendTree";
+            destructable.ArtModelFileHasLightweightModelRaw = 1;
             destructable.ArtFatLineOfSightRaw = 0;
+            destructable.ArtReplaceableTextureID = 34;
+            destructable.ArtReplaceableTextureFileRaw = "ReplaceableTextures\\NorthrendTree\\NorthTree";
             destructable.EditorShowHelperObjectForSelectionRaw = 0;
             destructable.EditorPlaceableOnCliffsRaw = 0;
             destructable.EditorPlaceableOnWaterRaw = 1;
@@ -12757,14 +17967,23 @@ namespace War3Api.Object
             destructable.PathingIsWalkableRaw = 0;
             destructable.PathingCliffHeight = 0;
             destructable.CombatTargetedAsRaw = "tree";
+            destructable.CombatArmorTypeRaw = "Wood";
+            destructable.ArtModelFileVariations = 10;
             destructable.StatsHitPoints = 50f;
             destructable.ArtOcclusionHeight = 230f;
             destructable.ArtFlyOverHeight = 170f;
+            destructable.ArtFixedRotation = 270f;
+            destructable.ArtSelectionSizeEditor = 0f;
+            destructable.EditorMinimumScale = 0.8f;
+            destructable.EditorMaximumScale = 1.2f;
+            destructable.EditorCanPlaceRandomScaleRaw = 1;
             destructable.ArtElevationSampleRadius = 0f;
             destructable.ArtFogRadius = 0f;
             destructable.ArtFogVisibilityRaw = 0;
             destructable.PathingPathingTextureRaw = "PathTextures\\4x4Default.tga";
             destructable.PathingPathingTextureDeadRaw = "_";
+            destructable.SoundDeathRaw = "TreeWallDeath";
+            destructable.ArtShadowRaw = "BuildingShadowSmall";
             destructable.ArtMinimapShowRaw = 1;
             destructable.ArtMinimapColor1Red = 166;
             destructable.ArtMinimapColor2Green = 187;
@@ -12775,7 +17994,11 @@ namespace War3Api.Object
             destructable.StatsRepairGoldCost = 0;
             destructable.StatsRepairLumberCost = 0;
             destructable.EditorOnUserSpecifiedListRaw = 0;
+            destructable.ArtTintingColor1Red = 255;
+            destructable.ArtTintingColor2Green = 255;
+            destructable.ArtTintingColor3Blue = 255;
             destructable.ArtSelectableInGameRaw = 0;
+            destructable.ArtSelectionSizeGame = 128f;
             return destructable;
         }
 

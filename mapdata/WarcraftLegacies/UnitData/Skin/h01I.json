@@ -47,7 +47,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Well-versed sorceress in the arcane arts.|n|cfff5962dAbilities:|R Magic Missile|n|cfff5962dCan Learn:|R Dispel Magic, Flame Shield, Spell Steal|n|n|cffffcc00Attacks land and air units.|R"
+      "Value": "Well-versed sorceress in the arcane arts.|n|cfff5962dAbilities:|r Magic Missile|n|cfff5962dAbilities (unlockable):|r Dispel Magic, Flame Shield, Spell Steal|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1818520949,

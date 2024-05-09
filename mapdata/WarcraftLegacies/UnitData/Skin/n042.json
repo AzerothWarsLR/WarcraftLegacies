@@ -24,6 +24,11 @@
       "Id": 1668510581,
       "Type": 1,
       "Value": 3
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit cloaked in demonic flames that damage nearby enemy ground units. Immune to magic. |n|cfff5962dAbilities:|r Permanent Immolation, Spell Immunity, Resistant Skin|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

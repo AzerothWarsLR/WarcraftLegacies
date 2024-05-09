@@ -8,6 +8,11 @@
       "Id": 1633907573,
       "Type": 1,
       "Value": 0.8
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light ranged unit that can cast Frost Armor. |n|cfff5962dAbilities:|r Frost Nova, Frost Armor|n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }

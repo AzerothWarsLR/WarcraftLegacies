@@ -36,7 +36,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "War-beast production building.|n|n|r|cfff5962dTrains:|R Batrider, Packleader, Mammoth Wrangler|n|cfff5962dResearches:|R Airborn Toxins"
+      "Value": "War-beast production building.|n|cfff5962dTrains:|r Packleader|n|cfff5962dTrains (unlockable):|r Batrider, Mammoth Wrangler|n|cfff5962dResearches:|r Airborne Toxins"
     }
   ]
 }

@@ -34,6 +34,11 @@
       "Id": 1818520949,
       "Type": 3,
       "Value": "war3mapImported\\incursor.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Powerful melee unit. Has the Submerge ability, which allows this unit to hide in water. Can learn the Ensnare ability.  |n|cfff5962dAbilities:|r Ensnare, Cleaving Attack|n|cfff5962dAbilities (unlockable):|r Hardened, Submerge|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }
