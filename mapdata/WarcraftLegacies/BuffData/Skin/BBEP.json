@@ -24,6 +24,11 @@
       "Id": 811693158,
       "Type": 3,
       "Value": "chest"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_CR_Faceless_OLDGODS.blp"
     }
   ]
 }

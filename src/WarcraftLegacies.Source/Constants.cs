@@ -2344,6 +2344,7 @@ public static class Constants
 	public const int BUFF_B0B8_SALVATION = 1110458936;
 	public const int BUFF_B0B9_BLESSED_GROUND = 1110458937;
 	public const int BUFF_BBEG_GENESIS_ATTACK = 1111639367;
+	public const int BUFF_BBEP_PARALYSING_FEAR = 1111639376;
 	public const int BUFF_BLSN_ICE_TRAP = 1112298318;
 	public const int BUFF_BSLY_PLAGUE_STRIKE = 1112755289;
 	public const int BUFF_BSYL_PLAGUE_STRIKE = 1112758604;
@@ -2393,7 +2394,6 @@ public static class Constants
 	public const int BUFF_ZB09_APOCALYPSE = 1514287161;
 	public const int BUFF_ZB11_GROUND_SHACKLES = 1514287409;
 	public const int BUFF_ZBMA_MATURING_INCUBATION = 1514294593;
-	public const int BUFF_BBEP_PARALYSING_FEAR = 1111639376;
 	public const int ITEM_AMRC_AMULET_OF_RECALL = 1634562659;
 	public const int ITEM_ARSH_SHROUD_OF_NOZDORMU = 1634890600;
 	public const int ITEM_AZHR_HEART_OF_ASZUNE = 1635412082;
