@@ -41,13 +41,13 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       PassiveAbilityManager.Register(maievVengeance);
 
-      var elunesGaze = new MassAnySpell(ABILITY_A0VX_ELUNE_S_GAZE_SENTINELS)
+      var elunesGaze = new MassAnySpell(ABILITY_ASEG_ELUNE_S_GAZE_SENTINELS_REAL)
       {
         DummyAbilityId = ABILITY_A0VY_INVISIBILITY_LB,
         DummyAbilityOrderId = OrderId("invisibility"),
         Radius = 350,
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
-        TargetType = SpellTargetType.Point
+        TargetType = SpellTargetType.None
       };
       SpellSystem.Register(elunesGaze);
 
