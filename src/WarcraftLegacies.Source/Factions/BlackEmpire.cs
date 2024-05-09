@@ -57,7 +57,7 @@ namespace WarcraftLegacies.Source.Factions
 
       ModObjectLimit(UNIT_O04Z_FLYING_HORROR_YOGG, 12);
       ModObjectLimit(UNIT_N0AH_DEFORMED_CHIMERA_YOGG, 4);
-      ModObjectLimit(UNIT_U029_STYGIAN_HULK_YOGG, 12);
+      ModObjectLimit(UNIT_U029_STYGIAN_HULK_YOGG, 8);
 
 
       // All Nzoth Ships
