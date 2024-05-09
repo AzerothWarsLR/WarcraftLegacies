@@ -50,7 +50,7 @@
     },
     {
       "Id": 1836083317,
-      "Value": 740
+      "Value": 590
     },
     {
       "Id": 1836412021,
@@ -95,7 +95,7 @@
     {
       "Id": 1919381621,
       "Type": 3,
-      "Value": "Rhpm,Rhar,Rhfl,Rhme,R012,Rhfs,Rguv"
+      "Value": "Rhar,RBFC,Rhme,Rguv"
     },
     {
       "Id": 1918985077,
@@ -112,11 +112,16 @@
     },
     {
       "Id": 1717920885,
-      "Value": 3
+      "Value": 2
     },
     {
       "Id": 1835098997,
       "Value": 1
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "RBFC"
     }
   ]
 }
