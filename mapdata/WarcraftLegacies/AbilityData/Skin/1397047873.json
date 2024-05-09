@@ -17,7 +17,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Stygian Hulk)"
+      "Value": "(Icon Stygian Hulk)"
     },
     {
       "Id": 1835101793,
@@ -28,7 +28,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Drops a small tentacle with each attack. |nLasts 10 seconds."
+      "Value": "The Stygian Hulk attack afflicts a target enemy unit with a deadly parasite that deals \u003CABEG,DataA1\u003E damage per second for \u003CABEG,Dur1\u003E seconds. If the afflicted unit dies while under the effect of Genesis Attack, a Flying Horror will spawn from its corpse. |nLasts \u003CABEG,Cast1\u003E seconds."
     },
     {
       "Level": 2,

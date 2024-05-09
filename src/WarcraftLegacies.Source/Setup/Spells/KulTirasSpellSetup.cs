@@ -1,4 +1,5 @@
-﻿using MacroTools.Spells;
+﻿using MacroTools.DummyCasters;
+using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 
@@ -41,6 +42,17 @@ namespace WarcraftLegacies.Source.Setup.Spells
         SpecialEffect = @"Abilities\Spells\Other\HowlOfTerror\HowlCaster.mdl"
       };
       SpellSystem.Register(warStompMeredith);
+
+      var scattershot = new MassAnySpell(ABILITY_A0GP_SCATTERSHOT_KUL_TIRAS_LADY_ASHVANE)
+      {
+        DummyAbilityId = ABILITY_A0GL_SCATTERSHOT_KUL_TIRAS_LADY_ASHVANE_DUMMY,
+        DummyAbilityOrderId = OrderId("thunderbolt"),
+        Radius = 250,
+        CastFilter = CastFilters.IsTargetEnemyAndAlive,
+        TargetType = SpellTargetType.Point,
+        DummyCastOriginType = DummyCastOriginType.Caster
+      };
+      SpellSystem.Register(scattershot);
     }
   }
 }
