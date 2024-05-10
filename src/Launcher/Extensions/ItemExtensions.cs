@@ -4,19 +4,7 @@ namespace Launcher.Extensions
 {
   public static class ItemExtensions
   {
-    public static string GetTextNameSafe(this Item item)
-    {
-      try
-      {
-        return item.TextName;
-      }
-      catch
-      {
-        return "";
-      }
-    }
-
-    public static int GetPrioritySafe(this Item item)
+    public static int GetPriority(this Item item)
     {
       try
       {

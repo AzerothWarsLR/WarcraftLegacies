@@ -4,7 +4,7 @@ namespace Launcher.Extensions
 {
   public static class TechExtensions
   {
-    public static bool IsUpgradeSafe(this Tech tech)
+    public static bool IsUpgrade(this Tech tech)
     {
       try
       {
@@ -17,7 +17,7 @@ namespace Launcher.Extensions
       }
     }
     
-    public static string GetTextNameSafe(this Upgrade upgrade)
+    public static string GetTextName(this Upgrade upgrade)
     {
       try
       {
@@ -36,7 +36,7 @@ namespace Launcher.Extensions
       }
     }
 
-    public static int GetPrioritySafe(this Upgrade upgrade)
+    public static int GetPriority(this Upgrade upgrade)
     {
       try
       {
