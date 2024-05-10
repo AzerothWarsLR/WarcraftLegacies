@@ -29,25 +29,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Calls forth a wave of healing energy that bounces up to \u003CANhw,DataB1\u003E times, healing \u003CANhw,DataA1\u003E damage on the primary target. Each jump heals 25% less."
+      "Value": "Calls forth a wave of healing energy that bounces up to \u003CA0RR,DataB1\u003E times, healing \u003CA0RR,DataA1\u003E damage on the primary target. Each jump heals 25% less."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Calls forth a wave of healing energy that bounces up to \u003CANhw,DataB2\u003E times, healing \u003CANhw,DataA2\u003E damage on the primary target. Each jump heals 20% less."
+      "Value": "Calls forth a wave of healing energy that bounces up to \u003CA0RR,DataB2\u003E times, healing \u003CA0RR,DataA2\u003E damage on the primary target. Each jump heals 20% less."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Calls forth a wave of healing energy that bounces up to \u003CANhw,DataB3\u003E times, healing \u003CANhw,DataA3\u003E damage on the primary target. Each jump heals 15% less."
+      "Value": "Calls forth a wave of healing energy that bounces up to \u003CA0RR,DataB3\u003E times, healing \u003CA0RR,DataA3\u003E damage on the primary target. Each jump heals 15% less."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Calls forth a wave of healing energy that bounces up to \u003CANhw,DataB4\u003E times, healing \u003CANhw,DataA4\u003E damage on the primary target. Each jump heals 10% less."
+      "Value": "Calls forth a wave of healing energy that bounces up to \u003CA0RR,DataB4\u003E times, healing \u003CA0RR,DataA4\u003E damage on the primary target. Each jump heals 10% less."
     },
     {
       "Id": 1952543841,

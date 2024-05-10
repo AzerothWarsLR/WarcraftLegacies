@@ -35,13 +35,13 @@
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero sprays poison all around him, damaging nearby enemies. Each knife does \u003CA0ND,DataA3\u003E damage."
+      "Value": "The hero sprays poison all around him, damaging nearby enemies. Each missile does \u003CA0ND,DataA3\u003E damage."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero sprays poison all around him, damaging nearby enemies. Each knife does \u003CA0ND,DataA4\u003E damage."
+      "Value": "The hero sprays poison all around him, damaging nearby enemies. Each missile does \u003CA0ND,DataA4\u003E damage."
     },
     {
       "Id": 1835101793,
@@ -75,13 +75,13 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero sprays poison all around him, damaging nearby enemies. Each knife does \u003CA0ND,DataA1\u003E damage."
+      "Value": "The hero sprays poison all around him, damaging nearby enemies. Each missile does \u003CA0ND,DataA1\u003E damage."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero sprays poison all around him, damaging nearby enemies. Each knife does \u003CA0ND,DataA2\u003E damage."
+      "Value": "The hero sprays poison all around him, damaging nearby enemies. Each missile does \u003CA0ND,DataA2\u003E damage."
     },
     {
       "Id": 1952542049,

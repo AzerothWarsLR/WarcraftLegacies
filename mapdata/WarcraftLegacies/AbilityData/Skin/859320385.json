@@ -31,7 +31,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Stops all enemies in a target area from casting spells. The area of effect and duration increase with level. |n|n|cffffcc00Level 1|r - Small area, lasts 12(4 for Heroes) seconds. |n|cffffcc00Level 2|r - Medium area, lasts 14(5 for Heroes) seconds. |n|cffffcc00Level 3|r - Medium area, lasts 16(6 for Heroes) seconds. |n|cffffcc00Level 4|r - Large area, lasts 18(7 for Heroes) seconds."
+      "Value": "Stops all enemies in a target area from casting spells. The area of effect and duration increase with level. |n|n|cffffcc00Level 1|r - Small area, lasts \u003CA083,Dur1\u003E (\u003CA083,HeroDur1\u003E  for Heroes) seconds. |n|cffffcc00Level 2|r - Medium area, lasts \u003CA083,Dur2\u003E (\u003CA083,HeroDur2\u003E for Heroes) seconds. |n|cffffcc00Level 3|r - Medium area, lasts \u003CA083,Dur3\u003E (\u003CA083,HeroDur3\u003E for Heroes) seconds. |n|cffffcc00Level 4|r - Large area, lasts \u003CA083,Dur4\u003E (\u003CA083,HeroDur4\u003E for Heroes) seconds."
     },
     {
       "Level": 4,
@@ -43,25 +43,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Stops all enemies in a medium target area from casting spells for 12 seconds. 4 seconds for Heroes."
+      "Value": "Stops all enemies in a medium target area from casting spells for \u003CA083,Dur1\u003E seconds. \u003CA083,HeroDur1\u003E seconds for Heroes."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Stops all enemies in a medium target area from casting spells for 14 seconds. 5 seconds for Heroes."
+      "Value": "Stops all enemies in a medium target area from casting spells for \u003CA083,Dur2\u003E seconds. \u003CA083,HeroDur2\u003E seconds for Heroes."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Stops all enemies in a medium target area from casting spells for 16 seconds. 6 seconds for Heroes."
+      "Value": "Stops all enemies in a medium target area from casting spells for \u003CA083,Dur3\u003E seconds. \u003CA083,HeroDur3\u003E seconds for Heroes."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Stops all enemies in a medium target area from casting spells for 18 seconds. 7 seconds for Heroes."
+      "Value": "Stops all enemies in a medium target area from casting spells for \u003CA083,Dur4\u003E seconds. \u003CA083,HeroDur4\u003E seconds for Heroes."
     }
   ]
 }

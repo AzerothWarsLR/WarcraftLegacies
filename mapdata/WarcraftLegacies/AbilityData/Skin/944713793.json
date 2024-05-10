@@ -41,7 +41,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Consumes all magical buffs from units in an area, restoring mana and hit points per unit. Area of effect and damage to summoned units increases with levels.|r|n|n|cffffcc00Level 1|r - 30 mana and hit points, 200 AOE, 300 damage to summoned units.|n|cffffcc00Level 2|r - 45 mana and hit points, 225 AOE, 400 damage to summoned units.|n|cffffcc00Level 3|r - 60 mana and hit points, 250 AOE, 500 damage to summoned units.|n|cffffcc00Level 4|r - 75 mana and hit points, 275 AOE, 600 damage to summoned units."
+      "Value": "Consumes all magical buffs from units in an area, restoring mana and hit points per unit. Area of effect and damage to summoned units increases with levels.|r|n|n|cffffcc00Level 1|r - \u003CA0O8,DataA1\u003E mana and hit points, \u003CA0O8,Area1\u003E AOE, \u003CA0O8,DataE1\u003E damage to summoned units.|n|cffffcc00Level 2|r - \u003CA0O8,DataA2\u003E mana and hit points, \u003CA0O8,Area2\u003E AOE, \u003CA0O8,DataE2\u003E damage to summoned units.|n|cffffcc00Level 3|r - \u003CA0O8,DataA3\u003E mana and hit points, \u003CA0O8,Area3\u003E AOE, \u003CA0O8,DataE3\u003E damage to summoned units.|n|cffffcc00Level 4|r - \u003CA0O8,DataA4\u003E mana and hit points, \u003CA0O8,Area4\u003E AOE, \u003CA0O8,DataE4\u003E damage to summoned units."
     },
     {
       "Level": 1,
@@ -71,25 +71,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Consumes all magical buffs from units in an area. Each unit that is devoured of magic gives the caster 30 hit points and mana. |n|cffffcc00Deals 300 damage to summoned units.|r"
+      "Value": "Consumes all magical buffs from units in an area. Each unit that is devoured of magic gives the caster \u003CA0O8,DataA1\u003E hit points and mana. |n|cffffcc00Deals \u003CA0O8,DataE1\u003E damage to summoned units.|r"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Consumes all magical buffs from units in an area. Each unit that is devoured of magic gives the caster 45 hit points and mana. |n|cffffcc00Deals 400 damage to summoned units.|r"
+      "Value": "Consumes all magical buffs from units in an area. Each unit that is devoured of magic gives the caster \u003CA0O8,DataA2\u003E hit points and mana. |n|cffffcc00Deals \u003CA0O8,DataE2\u003E damage to summoned units.|r"
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Consumes all magical buffs from units in an area. Each unit that is devoured of magic gives the caster 60 hit points and mana. |n|cffffcc00Deals 500 damage to summoned units.|r"
+      "Value": "Consumes all magical buffs from units in an area. Each unit that is devoured of magic gives the caster \u003CA0O8,DataA3\u003E hit points and mana. |n|cffffcc00Deals \u003CA0O8,DataE3\u003E damage to summoned units.|r"
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Consumes all magical buffs from units in an area. Each unit that is devoured of magic gives the caster 75 hit points and mana. |n|cffffcc00Deals 600 damage to summoned units.|r"
+      "Value": "Consumes all magical buffs from units in an area. Each unit that is devoured of magic gives the caster \u003CA0O8,DataA4\u003E hit points and mana. |n|cffffcc00Deals \u003CA0O8,DataE4\u003E damage to summoned units.|r"
     }
   ]
 }
