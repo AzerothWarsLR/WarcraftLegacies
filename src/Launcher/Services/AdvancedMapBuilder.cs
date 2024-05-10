@@ -95,11 +95,18 @@ namespace Launcher.Services
 
     private static void ApplyMigrations(Map map)
     {
+      Console.WriteLine("Applying object data migrations...");
+      var timer = new Stopwatch();
+      timer.Start();
+      
       var objectDatabase = map.GetObjectDatabaseFromMap();
       foreach (var migration in MapMigrationProvider.GetMapMigrations())
         migration.Migrate(map, objectDatabase);
 
       map.UnitObjectData.FixUnkValues();
+
+      timer.Stop();
+      Console.WriteLine($"Completed object data migrations in {timer.Elapsed.Milliseconds} milliseconds.");
     }
     
     private static void SetMapTitles(Map map, string version)
