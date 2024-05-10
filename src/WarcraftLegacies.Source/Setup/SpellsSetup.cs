@@ -223,6 +223,7 @@ namespace WarcraftLegacies.Source.Setup
       DalaranSpellSetup.Setup();
       TrollSpellSetup.Setup();
       GilneasSpellSetup.Setup();
+      BlackEmpireSpellSetup.Setup();
       SharedSpellSetup.Setup();
     }
   }
