@@ -58,7 +58,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Damages everything in its area of effect by \u003CABED,DataA1,%\u003E% of its base hit points per second. Also destroys trees. |nLasts \u003CABED,Dur1\u003E seconds."
+      "Value": "Damages everything in its area of effect by \u003CABED,DataA1,%\u003E% of its base hit points per second. |nLasts \u003CABED,Dur1\u003E seconds."
     },
     {
       "Id": 2020631137,
