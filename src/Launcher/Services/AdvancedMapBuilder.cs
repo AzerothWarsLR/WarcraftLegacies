@@ -58,8 +58,12 @@ namespace Launcher.Services
       };
 
       mapBuilder.Build(mapFilePath, archiveCreateOptions);
+      Console.WriteLine($"Exported map to {Path.GetFullPath(mapFilePath)}.");
       if (options.Launch)
+      {
+        Console.WriteLine("Launching map in Warcraft 3...");
         LaunchGame(_compilerSettings.Warcraft3ExecutablePath, mapFilePath);
+      }
     }
 
     /// <summary>
