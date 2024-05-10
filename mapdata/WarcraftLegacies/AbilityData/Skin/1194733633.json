@@ -13,7 +13,7 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNMarksmanship.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArrowShower.BLP"
     },
     {
       "Id": 2020631137,
@@ -42,7 +42,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Barrage"
+      "Value": "Hail of Arrows"
     },
     {
       "Id": 1918988897,
@@ -72,13 +72,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Barrage"
+      "Value": "Hail of Arrows"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Shoots a long distance arrows, dealing \u003CA06G,DataA1\u003E damage to enemies with successful hit, up to a maximum of \u003CA06G,DataD1\u003E. Stuns non-Hero units for 0.75 seconds. Has a range of \u003CA06G,Rng1\u003E."
+      "Value": "Shoots a volley of arrows, dealing \u003CA06G,DataA1\u003E damage to enemies with each successful hit, up to a maximum of \u003CA06G,DataD1\u003E. Stuns non-Hero units for 0.75 seconds. Has a range of \u003CA06G,Rng1\u003E."
     }
   ]
 }
