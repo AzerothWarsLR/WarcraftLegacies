@@ -13,48 +13,14 @@ namespace Launcher.Extensions
         or Inventory2SlotUnitNightElf or Invulnerable or DefenseBonus1 or Ultravision or SellItem or AlliedBuilding or 
         PurchaseItem or LightningAttack or Inventory or AttributeModifierSkill);
     }
-    
-    public static IEnumerable<Tech> GetTechtreeRequirementsSafe(this Ability unit)
-    {
-      try
-      {
-        return unit.TechtreeRequirements;
-      }
-      catch
-      {
-        return Array.Empty<Tech>();
-      }
-    }
-
-    /// <summary>
-    /// Gets a name that can be used to describe an ability. Usually just the name field.
-    /// </summary>
-    public static string GetNameSafe(this Ability ability)
-    {
-      try
-      {
-        return ability.TextName;
-      }
-      catch
-      {
-        return "Not found";
-      }
-    }
 
     /// <summary>
     /// Determines the order that abilities appear in tooltips.
     /// </summary>
-    public static int GetPrioritySafe(this Ability ability)
+    public static int GetPriority(this Ability ability)
     {
-      try
-      {
         var (x, y) = (ability.ArtButtonPositionNormalX, ability.ArtButtonPositionNormalY);
         return x - y * 10;
-      }
-      catch
-      {
-        return 0;
-      }
     }
   }
 }

@@ -1488,6 +1488,8 @@ namespace War3Api.Object
             var upgrade = new Upgrade(UpgradeType.OrcChaosConversion, db);
             upgrade.TextName[1] = "Chaos";
             upgrade.StatsRaceRaw = "demon";
+            upgrade.ArtButtonPositionX = 0;
+            upgrade.ArtButtonPositionY = 0;
             upgrade.ArtIconRaw[1] = "ReplaceableTextures\\CommandButtons\\BTNOrcMeleeUpOne.blp";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -2345,6 +2347,8 @@ namespace War3Api.Object
             upgrade.TextTooltip[1] = "Research Destroyer Form";
             upgrade.TextTooltipExtended[1] = "Allows the Obsidian Statue to transform into a Destroyer, a large flying unit that must devour magic to sustain its mana. The Destroyer has Spell Immunity, Devour Magic, Absorb Mana, and Orb of Annihilation. |n|n|cffffcc00Attacks land and air units.|r";
             upgrade.TextHotkeyRaw[1] = "T";
+            upgrade.ArtButtonPositionX = 0;
+            upgrade.ArtButtonPositionY = 0;
             upgrade.ArtIconRaw[1] = "ReplaceableTextures\\CommandButtons\\BTNDestroyer.blp";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;
@@ -3366,6 +3370,8 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Glyph of Fortification";
             upgrade.TextEditorSuffix[1] = " (Upgrade 1)";
             upgrade.StatsRaceRaw = "unknown";
+            upgrade.ArtButtonPositionX = 0;
+            upgrade.ArtButtonPositionY = 0;
             upgrade.ArtIconRaw[1] = "ReplaceableTextures\\CommandButtons\\BTNGlyph.blp";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 3;
@@ -3402,6 +3408,8 @@ namespace War3Api.Object
             upgrade.TextName[1] = "Glyph of Ultravision";
             upgrade.TextEditorSuffix[1] = " (Upgrade)";
             upgrade.StatsRaceRaw = "unknown";
+            upgrade.ArtButtonPositionX = 0;
+            upgrade.ArtButtonPositionY = 0;
             upgrade.ArtIconRaw[1] = "ReplaceableTextures\\CommandButtons\\BTNGlyph.blp";
             upgrade.StatsClassRaw = "_";
             upgrade.StatsLevels = 1;

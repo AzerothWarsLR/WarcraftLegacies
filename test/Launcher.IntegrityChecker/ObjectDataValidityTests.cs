@@ -23,6 +23,9 @@ namespace Launcher.IntegrityChecker
       
       foreach (var unit in objectDatabase.GetUnits().ToArray())
       {
+        if (VerifyUnitsTrained(unit, out var unitsTrainedIssues)) 
+          issues.Add(unitsTrainedIssues);
+        
         if (VerifyResearchesAvailable(unit, out var researchesAvailableIssue)) 
           issues.Add(researchesAvailableIssue);
         
@@ -45,6 +48,26 @@ namespace Launcher.IntegrityChecker
       throw new XunitException(exceptionMessageBuilder.ToString());
     }
 
+    private static bool VerifyUnitsTrained(Unit unit, [NotNullWhen(true)] out string? issue)
+    {
+      issue = null;
+      
+      if (!unit.IsTechtreeUnitsTrainedModified)
+        return false;
+
+      try
+      {
+        _ = unit.TechtreeUnitsTrained;
+      }
+      catch (KeyNotFoundException)
+      {
+        issue = $"{unit.GetReadableId()} has an invalid Units Trained field.";
+        return true;
+      }
+      
+      return false;
+    }
+    
     private static bool VerifyResearchesAvailable(Unit unit, [NotNullWhen(true)] out string? issue)
     {
       issue = null;

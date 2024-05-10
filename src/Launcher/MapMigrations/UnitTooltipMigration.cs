@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Launcher.Extensions;
 using War3Api.Object;
@@ -32,7 +34,14 @@ namespace Launcher.MapMigrations
       var copiedUnits = units.ToList();
       foreach (var unit in copiedUnits)
       {
-        DetermineTooltip(unit);
+        try
+        {
+          DetermineTooltip(unit);
+        }
+        catch (Exception ex)
+        {
+          Console.WriteLine($"Failed to apply tooltip migration for {unit.TextName}: {ex}");
+        }
       }
 
       var unitData = objectDatabase.GetAllData().UnitData;
@@ -58,7 +67,7 @@ namespace Launcher.MapMigrations
       AppendTargetsAllowed(tooltipBuilder, unit);
       
       var extendedTooltip = tooltipBuilder.ToString();
-      if (unit.GetExtendedTooltipSafe() != extendedTooltip)
+      if (unit.TextTooltipExtended != extendedTooltip)
         unit.TextTooltipExtended = extendedTooltip;
     }
 
@@ -67,9 +76,9 @@ namespace Launcher.MapMigrations
       if (!unit.IsAbilitiesNormalModified) return;
       var innateAbilities = unit.AbilitiesNormal
         .Where(x => x.HasVisibleIcon())
-        .Where(x => !x.GetTechtreeRequirementsSafe().Any())
-        .OrderBy(AbilityExtensions.GetPrioritySafe)
-        .Select(AbilityExtensions.GetNameSafe)
+        .Where(x => !x.TechtreeRequirements.Any())
+        .OrderBy(AbilityExtensions.GetPriority)
+        .Select((x) => x.TextName)
         .ToArray();
       if (innateAbilities.Any())
       {
@@ -81,9 +90,9 @@ namespace Launcher.MapMigrations
     {
       if (!unit.IsAbilitiesNormalModified) return;
       var learnableAbilities = unit.AbilitiesNormal
-        .Where(x => x.GetTechtreeRequirementsSafe().Any())
-        .OrderBy(AbilityExtensions.GetPrioritySafe)
-        .Select(AbilityExtensions.GetNameSafe)
+        .Where(x => x.TechtreeRequirements.Any())
+        .OrderBy(AbilityExtensions.GetPriority)
+        .Select(x => x.TextName)
         .ToArray();
       if (learnableAbilities.Any())
       {
@@ -95,8 +104,8 @@ namespace Launcher.MapMigrations
     {
       if (!unit.IsAbilitiesHeroModified) return;
       var heroAbilities = unit.AbilitiesHero
-        .OrderBy(AbilityExtensions.GetPrioritySafe)
-        .Select(AbilityExtensions.GetNameSafe)
+        .OrderBy(AbilityExtensions.GetPriority)
+        .Select((x) => x.TextName)
         .ToArray();
       
       if (heroAbilities.Any())
@@ -109,8 +118,8 @@ namespace Launcher.MapMigrations
         return;
       
       var unitsSold = unit.TechtreeUnitsSold
-        .OrderBy(x => x.GetPrioritySafe())
-        .Select(x => x.GetTextNameSafe())
+        .OrderBy(x => x.GetPriority())
+        .Select(x => x.TextName)
         .ToArray();
       
       if (unitsSold.Any())
@@ -119,10 +128,9 @@ namespace Launcher.MapMigrations
     
     private static void AppendInnateUnitsTrained(StringBuilder tooltipBuilder, Unit unit)
     {
-      var unitsTrained = unit
-        .GetUnitsTrainedSafe()
-        .Where(x => !x.HasUpgradeRequirement())
-        .OrderBy(x => x.GetPrioritySafe())
+      var unitsTrained = unit.TechtreeUnitsTrained
+        .Where(x => !(bool)((IEnumerable<Tech>)x.TechtreeRequirements).Any(x1 => x1.IsUpgrade()))
+        .OrderBy(x => x.GetPriority())
         .Select(GetBestName)
         .ToArray();
       
@@ -132,10 +140,9 @@ namespace Launcher.MapMigrations
     
     private static void AppendUnlockableUnitsTrained(StringBuilder tooltipBuilder, Unit unit)
     {
-      var unitsTrained = unit
-        .GetUnitsTrainedSafe()
-        .Where(x => x.HasUpgradeRequirement())
-        .OrderBy(x => x.GetPrioritySafe())
+      var unitsTrained = unit.TechtreeUnitsTrained
+        .Where(x => (bool)((IEnumerable<Tech>)x.TechtreeRequirements).Any(x1 => x1.IsUpgrade()))
+        .OrderBy(x => x.GetPriority())
         .Select(GetBestName)
         .ToArray();
       
@@ -145,9 +152,9 @@ namespace Launcher.MapMigrations
     
     private static void AppendResearchesAvailable(StringBuilder tooltipBuilder, Unit unit)
     {
-      var researchesAvailable = unit.GetResearchesAvailableSafe()
-        .OrderBy(x => x.GetPrioritySafe())
-        .Select(x => x.GetTextNameSafe())
+      var researchesAvailable = unit.TechtreeResearchesAvailable
+        .OrderBy(x => x.GetPriority())
+        .Select(x => x.GetTextName())
         .ToArray();
       
       if (researchesAvailable.Any())
@@ -158,9 +165,9 @@ namespace Launcher.MapMigrations
     
     private static void AppendUpgradesTo(StringBuilder tooltipBuilder, Unit unit)
     {
-      var upgradesTo = unit.GetUpgradesToSafe()
-        .OrderBy(x => x.GetPrioritySafe())
-        .Select(x => x.GetTextNameSafe())
+      var upgradesTo = ((IEnumerable<Unit>)unit.TechtreeUpgradesTo)
+        .OrderBy(x => x.GetPriority())
+        .Select(x => x.TextName)
         .ToArray();
       
       if (upgradesTo.Any())
@@ -171,9 +178,9 @@ namespace Launcher.MapMigrations
     
     private static void AppendSoldItems(StringBuilder tooltipBuilder, Unit unit)
     {
-      var soldItems = unit.GetSoldItemsSafe()
-        .OrderBy(x => x.GetPrioritySafe())
-        .Select(x => x.GetTextNameSafe())
+      var soldItems = unit.GetTechtreeItemsSoldAndMade()
+        .OrderBy(x => x.GetPriority())
+        .Select(x => x.TextName)
         .ToArray();
       
       if (soldItems.Any())
@@ -202,7 +209,7 @@ namespace Launcher.MapMigrations
     
     private static void AppendTargetsAllowed(StringBuilder tooltipBuilder, Unit unit)
     {
-      var targetsAllowed = unit.GetAllTargetsAllowedSafe();
+      var targetsAllowed = unit.GetAllTargetsAllowed();
 
       if (!targetsAllowed.Any())
         return;
@@ -219,7 +226,7 @@ namespace Launcher.MapMigrations
 
     private static void AppendFlavour(StringBuilder stringBuilder, Unit unit)
     {
-      var split = unit.GetExtendedTooltipSafe().Split("|n");
+      var split = unit.TextTooltipExtended.Split("|n");
       stringBuilder.Append(split[0]); 
     }
     
@@ -237,7 +244,7 @@ namespace Launcher.MapMigrations
       {
         //do nothing
       }
-      return unit.GetTextNameSafe();
+      return unit.TextName;
     }
   }
 }

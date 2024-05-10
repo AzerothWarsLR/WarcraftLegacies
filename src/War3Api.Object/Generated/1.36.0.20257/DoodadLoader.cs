@@ -19,6 +19,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A,G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Plants\\AshenShrooms\\AshenShrooms";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -26,6 +27,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 4;
@@ -84,6 +87,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Props\\AshenHollowStump\\AshenHollowStump";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -91,6 +95,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -149,6 +155,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Felwood\\Plants\\Felwood_Thorns\\Felwood_Thorns";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -156,6 +163,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 7;
@@ -214,6 +223,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A,L,F,W,Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Plants\\AshenCatTail\\AshenCatTail";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -221,6 +231,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -279,6 +291,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Props\\Bird\\Bird";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -286,6 +299,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -352,6 +367,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -410,6 +427,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Water\\Fish\\Fish";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -417,6 +435,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -475,6 +495,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Props\\SentinelStatue\\SentinelStatue";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -482,6 +503,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -540,6 +563,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Props\\KeeperStatue\\KeeperStatue";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -547,6 +571,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -605,6 +631,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Props\\AshenLogStraight\\AshenLogStraight";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -612,6 +639,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -670,6 +699,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Props\\AshenLogAngled\\AshenLogAngled";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -677,6 +707,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -735,6 +767,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "C,O,K";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Props\\Obelisk\\Obelisk";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -742,6 +775,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -800,6 +835,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Props\\AshenObilisk\\AshenObilisk";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -807,6 +843,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -865,6 +903,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Props\\AshenBrokenObilisk\\AshenBrokenObilisk";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -872,6 +911,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -930,6 +971,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Props\\ScorchedRemains\\ScorchedRemains";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -937,6 +979,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -995,6 +1039,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Plants\\AshenBush0\\AshenBush0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -1002,6 +1047,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -1060,6 +1107,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Water\\AshenLillyPad\\AshenLillyPad";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -1067,6 +1115,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -1125,6 +1175,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Water\\AshenvaleLilyPad\\AshenvaleLilyPad";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -1132,6 +1183,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -1190,6 +1243,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Rocks\\AshenRock\\AshenRock";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -1197,6 +1251,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 10;
@@ -1255,6 +1311,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Structures\\AshenBrokenColumn\\AshenBrokenColumn";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -1262,6 +1319,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -1320,6 +1379,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Structures\\AshenRubble\\AshenRubble";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -1327,6 +1387,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -1385,6 +1447,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Structures\\AshenRuinsBlocks\\AshenRuinsBlocks";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -1392,6 +1455,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -1450,6 +1515,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Structures\\ARockArch\\ARockArch";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -1457,6 +1523,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -1515,6 +1583,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Structures\\ARockArch45\\ARockArch45";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -1522,6 +1591,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -1580,6 +1651,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Structures\\Worldtree\\Worldtree";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 1024f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -1587,6 +1659,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -1645,6 +1719,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "B";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Barrens\\Plants\\Cactus\\Cactus";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -1652,6 +1727,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 10;
@@ -1710,6 +1787,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "B,O,K";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Barrens\\Props\\Barrens_Bones\\Barrens_Bones";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -1717,6 +1795,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 10;
@@ -1775,6 +1855,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "B";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Barrens\\Props\\CentaurTotem\\CentaurTotem";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -1782,6 +1863,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -1840,6 +1923,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "B";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Barrens\\Props\\HellscreamThrone\\HellscreamThrone";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -1847,6 +1931,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -1905,6 +1991,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "B";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Barrens\\Props\\TaurenTotem\\TaurenTotem";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -1912,6 +1999,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -1970,6 +2059,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "B";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Barrens\\Rocks\\Crator\\Crator";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -1977,6 +2067,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -2035,6 +2127,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "B";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Barrens\\Rocks\\BarrensFissure\\BarrensFissure";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -2042,6 +2135,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -2100,6 +2195,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "B";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Barrens\\Rocks\\Barrens_Rocks\\Barrens_Rocks";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -2107,6 +2203,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 10;
@@ -2165,6 +2263,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "B";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Barrens\\Rocks\\RockPillar\\RockPillar";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -2172,6 +2271,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -2230,6 +2331,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "B";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Barrens\\Rocks\\Barrens_Spires\\Barrens_Spires";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -2237,6 +2339,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 8;
@@ -2295,6 +2399,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "B";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Barrens\\Rocks\\Barrens_Spires\\Barrens_Spires";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -2302,6 +2407,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -2360,6 +2467,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "B";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Barrens\\Rocks\\Barrens_Spires\\Barrens_Spires";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.36f;
             doodad.EditorMinimumScale = 0.8f;
@@ -2367,6 +2475,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 0f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 8;
@@ -2425,6 +2535,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "B";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Barrens\\Rocks\\Geyser\\Geyser";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -2432,6 +2543,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -2490,6 +2603,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "B";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Barrens\\Structures\\RuinedArch\\RuinedArch";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -2497,6 +2611,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -2555,6 +2671,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "B";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Barrens\\Structures\\BRockArch\\BRockArch";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -2562,6 +2679,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -2620,6 +2739,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "B";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Barrens\\Structures\\BRockArch45\\BRockArch45";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -2627,6 +2747,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -2685,6 +2807,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "B";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Barrens\\Structures\\RuinedChunk\\RuinedChunk";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -2692,6 +2815,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -2750,6 +2875,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "B";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Barrens\\Structures\\RuinedCurvedWall\\RuinedCurvedWall";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -2757,6 +2883,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -2815,6 +2943,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "B";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Barrens\\Structures\\RuinedWall\\RuinedWall";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -2822,6 +2951,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -2880,6 +3011,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Environment\\BlightDoodad\\BlightDoodad";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -2887,6 +3019,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -2945,6 +3079,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Felwood\\Props\\FelwoodHollowStump\\FelwoodHollowStump";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -2952,6 +3087,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -3010,6 +3147,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Felwood\\Props\\FelwoodLogStraight\\FelwoodLogStraight";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -3017,6 +3155,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -3075,6 +3215,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Felwood\\Props\\FelwoodLogAngled\\FelwoodLogAngled";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -3082,6 +3223,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -3140,6 +3283,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Felwood\\Props\\FelwoodObilisk\\FelwoodObilisk";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -3147,6 +3291,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -3205,6 +3351,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Felwood\\Props\\FelwoodBrokenObilisk\\FelwoodBrokenObilisk";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -3212,6 +3359,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -3270,6 +3419,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Felwood\\Plants\\FelwoodBush\\FelwoodBush";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -3277,6 +3427,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -3335,6 +3487,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Felwood\\Plants\\FelwoodCatTail\\FelwoodCatTail";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -3342,6 +3495,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -3400,6 +3555,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Felwood\\Plants\\FelwoodShrooms\\FelwoodShrooms";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -3407,6 +3563,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 4;
@@ -3465,6 +3623,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Felwood\\Plants\\FelwoodLillyPad\\FelwoodLillyPad";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -3472,6 +3631,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -3530,6 +3691,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Felwood\\Rocks\\FelwoodFissure\\FelwoodFissure";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -3537,6 +3699,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -3595,6 +3759,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Felwood\\Rocks\\Felwood_Spires\\Felwood_Spires";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -3602,6 +3767,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 8;
@@ -3660,6 +3827,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Felwood\\Structures\\FelwoodBrokenColumn\\FelwoodBrokenColumn";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -3667,6 +3835,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -3725,6 +3895,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Felwood\\Structures\\FelwoodRubble\\FelwoodRubble";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -3732,6 +3903,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -3790,6 +3963,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Felwood\\Structures\\FelwoodRuinsBlocks\\FelwoodRuinsBlocks";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -3797,6 +3971,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -3855,6 +4031,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Felwood\\Structures\\CRockArch\\CRockArch";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -3862,6 +4039,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -3920,6 +4099,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Felwood\\Structures\\CRockArch45\\CRockArch45";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -3927,6 +4107,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -3985,6 +4167,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Plants\\Corn\\Corn";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -3992,6 +4175,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -4050,6 +4235,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Plants\\LilyPad\\LilyPad";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -4057,6 +4243,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -4115,6 +4303,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Plants\\LillyPad\\LillyPad";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -4122,6 +4311,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -4180,6 +4371,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Plants\\RiverRushes\\RiverRushes";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -4187,6 +4379,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 4;
@@ -4245,6 +4439,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Plants\\WheatBunch\\WheatBunch";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -4252,6 +4447,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -4310,6 +4507,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Plants\\Wheat\\Wheat";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -4317,6 +4515,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -4375,6 +4575,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Plants\\CornWheatScorched\\CornWheatScorched";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -4382,6 +4583,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -4440,6 +4643,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\ArcheryRange\\ArcheryRange";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -4447,6 +4651,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -4505,6 +4711,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\ArmorRack\\ArmorRack";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -4512,6 +4719,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -4570,6 +4779,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\BannerHuman\\BannerHuman";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -4577,6 +4787,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -4635,6 +4847,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\BannerOrc\\BannerOrc";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -4642,6 +4855,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -4700,6 +4915,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\TutorialOrcBanner\\TutorialOrcBanner";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -4707,6 +4923,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -4773,6 +4991,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -4831,6 +5051,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\brazieromni\\brazieromni";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -4838,6 +5059,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -4896,6 +5119,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\CageEmpty\\CageEmpty";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -4903,6 +5127,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -4969,6 +5195,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -5027,6 +5255,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\CageTrashed\\CageTrashed";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -5034,6 +5263,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -5100,6 +5331,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -5158,6 +5391,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\Grave\\Grave";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -5165,6 +5399,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -5223,6 +5459,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\Hay\\Hay";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -5230,6 +5467,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 5;
@@ -5288,6 +5527,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\HayCart\\HayCart";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -5295,6 +5535,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -5353,6 +5595,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\HayCartbroken\\HayCartbroken";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -5360,6 +5603,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -5418,6 +5663,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\RottenHayCart\\RottenHayCart";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -5425,6 +5671,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -5483,6 +5731,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\RottenHayCartbroken\\RottenHayCartbroken";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -5490,6 +5739,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -5548,6 +5799,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\HayClump\\HayClump";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -5555,6 +5807,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -5613,6 +5867,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\HeadOnSpear\\HeadOnSpear";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -5620,6 +5875,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -5678,6 +5935,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\HitchingPost\\HitchingPost";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -5685,6 +5943,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -5743,6 +6003,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\ImpaledBody\\ImpaledBody";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -5750,6 +6011,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -5808,6 +6071,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\LanternPost\\LanternPost";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -5815,6 +6079,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -5873,6 +6139,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\PeasantGrave\\PeasantGrave";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -5880,6 +6147,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -5938,6 +6207,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\RibBones\\RibBones";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -5945,6 +6215,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 4;
@@ -6003,6 +6275,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\RottenHay\\RottenHay";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -6010,6 +6283,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 5;
@@ -6068,6 +6343,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\SignPost\\SignPost";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -6075,6 +6351,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -6133,6 +6411,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\SittingCorpse\\SittingCorpse";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -6140,6 +6419,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -6198,6 +6479,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\SkullonStick\\SkullonStick";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -6205,6 +6487,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 6;
@@ -6263,6 +6547,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\SkullPile\\SkullPile";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -6270,6 +6555,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 4;
@@ -6328,6 +6615,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\SmokeSmudge\\SmokeSmudge";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -6335,6 +6623,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -6393,6 +6683,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\RubbleStoneWall\\RubbleStoneWall";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -6400,6 +6691,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -6466,6 +6759,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -6532,6 +6827,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -6590,6 +6887,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\Trash1\\Trash1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -6597,6 +6895,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -6655,6 +6955,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\Trough\\Trough";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -6662,6 +6963,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -6720,6 +7023,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\WheelBarrel\\WheelBarrel";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -6727,6 +7031,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -6785,6 +7091,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\WheelBarrelBroken\\WheelBarrelBroken";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -6792,6 +7099,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -6850,6 +7159,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\Weapons\\Weapons";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -6857,6 +7167,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -6915,6 +7227,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Rocks\\Lords_Rock\\Lords_Rock";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -6922,6 +7235,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 10;
@@ -6980,6 +7295,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Structures\\Barn\\Barn";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -6987,6 +7303,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -7045,6 +7363,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Structures\\ElvenVillageBuilding\\ElvenVillageBuilding";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -7052,6 +7371,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -7110,6 +7431,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Structures\\BarnScorched\\BarnScorched";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.9f;
@@ -7117,6 +7439,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -7175,6 +7499,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Structures\\FarmScorched\\FarmScorched";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -7182,6 +7507,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -7240,6 +7567,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Structures\\Granary\\Granary";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -7247,6 +7575,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -7305,6 +7635,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Structures\\GranaryBurned\\GranaryBurned";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.9f;
@@ -7312,6 +7643,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -7370,6 +7703,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Structures\\Inn\\Inn";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.9f;
@@ -7377,6 +7711,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -7435,6 +7771,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Structures\\LRockArch\\LRockArch";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -7442,6 +7779,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -7500,6 +7839,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Structures\\LRockArch45\\LRockArch45";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -7507,6 +7847,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -7565,6 +7907,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Structures\\InnScorched\\InnScorched";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.9f;
@@ -7572,6 +7915,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -7630,6 +7975,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Structures\\TowerScorched\\TowerScorched";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -7637,6 +7983,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -7695,6 +8043,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Structures\\well\\well";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -7702,6 +8051,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -7760,6 +8111,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Structures\\WindMillBurned\\WindMillBurned";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -7767,6 +8119,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -7833,6 +8187,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -7891,6 +8247,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Props\\NorthrendBrokenColumn\\NorthrendBrokenColumn";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -7898,6 +8255,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -7956,6 +8315,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Props\\NorthrendBrokenObilisk\\NorthrendBrokenObilisk";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -7963,6 +8323,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -8021,6 +8383,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N,I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Props\\North_Bones\\North_Bones";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -8028,6 +8391,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 10;
@@ -8086,6 +8451,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N,I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Props\\NorthrendFenceStraight\\NorthrendFenceStraight";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1.2f;
@@ -8093,6 +8459,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -8151,6 +8519,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N,I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Props\\NorthrendFenceAngled\\NorthrendFenceAngled";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1.2f;
@@ -8158,6 +8527,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -8216,6 +8587,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Props\\NorthrendGrave\\NorthrendGrave";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -8223,6 +8595,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -8281,6 +8655,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Props\\NorthrendObilisk\\NorthrendObilisk";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -8288,6 +8663,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -8346,6 +8723,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Props\\NorthrendTombstone\\NorthrendTombstone";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -8353,6 +8731,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -8411,6 +8791,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Water\\FloatingBox\\FloatingBox";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -8418,6 +8799,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -8476,6 +8859,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Water\\FloatingPlank\\FloatingPlank";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -8483,6 +8867,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -8541,6 +8927,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N,I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Water\\North_IceFloe\\North_IceFloe";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -8548,6 +8935,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -8606,6 +8995,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N,I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Water\\North_IceFloe2\\North_IceFloe2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -8613,6 +9003,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -8671,6 +9063,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N,I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Water\\North_IceFloe3\\North_IceFloe3";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -8678,6 +9071,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -8736,6 +9131,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N,I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Water\\North_IceFloe4\\North_IceFloe4";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -8743,6 +9139,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -8801,6 +9199,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N,I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Water\\North_Iceberg\\North_Iceberg";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -8808,6 +9207,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -8866,6 +9267,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N,I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Water\\North_Iceberg2\\North_Iceberg2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -8873,6 +9275,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -8931,6 +9335,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N,I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Water\\North_Iceberg3\\North_Iceberg3";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -8938,6 +9343,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -8996,6 +9403,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N,I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Water\\North_Iceberg4\\North_Iceberg4";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -9003,6 +9411,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -9061,6 +9471,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Water\\FloatingPanel\\FloatingPanel";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -9068,6 +9479,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -9134,6 +9547,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -9200,6 +9615,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -9258,6 +9675,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Props\\FirePitTrashed\\FirePitTrashed";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -9265,6 +9683,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -9323,6 +9743,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Props\\Bats\\Bats";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -9330,6 +9751,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -9388,6 +9811,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Water\\Rowboat\\Rowboat";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -9455,6 +9879,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Water\\RowboatDestroyed\\RowboatDestroyed";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -9462,6 +9887,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -9528,6 +9955,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -9586,6 +10015,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Water\\BattleshipDestroyed\\BattleshipDestroyed";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -9593,6 +10023,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -9651,6 +10083,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,F,W,N";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Water\\Whale\\Whale";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -9658,6 +10091,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -9716,6 +10151,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Plants\\North_Thorns\\North_Thorns";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -9723,6 +10159,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 7;
@@ -9781,6 +10219,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Rocks\\NorthrendFissure\\NorthrendFissure";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -9788,6 +10227,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -9846,6 +10287,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Rocks\\North_IceClaw\\North_IceClaw";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -9853,6 +10295,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 10;
@@ -9911,6 +10355,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Rocks\\North_Rocks\\North_Rocks";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -9918,6 +10363,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 10;
@@ -9976,6 +10423,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N,G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Rocks\\North_WebRocks\\North_WebRocks";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -9983,6 +10431,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 8;
@@ -10041,6 +10491,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Structures\\NorthrendCrypt\\NorthrendCrypt";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.9f;
@@ -10048,6 +10499,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -10106,6 +10559,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Structures\\NRockArch\\NRockArch";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -10113,6 +10567,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -10171,6 +10627,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Structures\\NRockArch45\\NRockArch45";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -10178,6 +10635,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -10236,6 +10695,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "N";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Northrend\\Structures\\NorthrendRubble\\NorthrendRubble";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -10243,6 +10703,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -10301,6 +10763,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "V,Q,L,F,W,Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Village\\Props\\Village_Fencelong\\Village_Fencelong";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1.2f;
@@ -10308,6 +10771,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -10366,6 +10831,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "V,Q,L,F,W,Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Village\\Props\\Village_FencelongAngled\\Village_FencelongAngled";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1.2f;
@@ -10373,6 +10839,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -10431,6 +10899,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "V,Q,L,F,W,Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Village\\Props\\Village_Fenceshort\\Village_Fenceshort";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1.2f;
@@ -10438,6 +10907,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -10496,6 +10967,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "V,Q,L,F,W,Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Village\\Props\\Village_FenceshortAngled\\Village_FenceshortAngled";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1.2f;
@@ -10503,6 +10975,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -10561,6 +11035,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "V,Q,L,F,W,X,Y,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Village\\Structures\\VillageBuilding\\VillageBuilding";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 256f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -10568,6 +11043,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -10626,6 +11103,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\Banner_Long\\Banner_Long";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.5f;
@@ -10633,6 +11111,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -10691,6 +11171,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\Banner_Long2\\Banner_Long2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.5f;
@@ -10698,6 +11179,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -10756,6 +11239,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\CityStoneBench\\CityStoneBench";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -10763,6 +11247,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -10821,6 +11307,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\CityStoneBenchAngled\\CityStoneBenchAngled";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -10828,6 +11315,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -10886,6 +11375,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityAlonsusChapel\\CityAlonsusChapel";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -10893,6 +11383,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -10951,6 +11443,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityMainTower\\CityMainTower";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -10958,6 +11451,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -11016,6 +11511,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\MarketStallLarge\\MarketStallLarge";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -11023,6 +11519,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -11081,6 +11579,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\MarketStallSmall\\MarketStallSmall";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -11088,6 +11587,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -11146,6 +11647,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\MarketItemBaubles\\MarketItemBaubles";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -11153,6 +11655,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -11211,6 +11715,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\MarketItemBaublesAlt\\MarketItemBaublesAlt";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -11218,6 +11723,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -11276,6 +11783,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\MarketItemProduce\\MarketItemProduce";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -11283,6 +11791,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -11341,6 +11851,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\MarketItemProduceAlt\\MarketItemProduceAlt";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -11348,6 +11859,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -11406,6 +11919,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\MarketItemTextiles\\MarketItemTextiles";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -11413,6 +11927,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -11471,6 +11987,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\MarketItemTextilesAlt\\MarketItemTextilesAlt";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -11478,6 +11995,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -11536,6 +12055,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\CityWoodBench\\CityWoodBench";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -11543,6 +12063,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -11601,6 +12123,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\CityWoodBenchAngled\\CityWoodBenchAngled";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -11608,6 +12131,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -11674,6 +12199,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -11732,6 +12259,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\CityGrave\\CityGrave";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -11739,6 +12267,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 4;
@@ -11797,6 +12327,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\City_Oblisk\\City_Oblisk";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 128f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -11804,6 +12335,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -11862,6 +12395,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\LanternPost\\LanternPost";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -11869,6 +12403,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -11927,6 +12463,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\City_Statue\\City_Statue";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -11934,6 +12471,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -11992,6 +12531,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\KnightStatueA\\KnightStatueA";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -11999,6 +12539,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -12065,6 +12607,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -12131,6 +12675,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -12197,6 +12743,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -12255,6 +12803,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\TavernSign\\TavernSign";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -12262,6 +12811,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -12320,6 +12871,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\TavernSignBobsGuns\\TavernSignBobsGuns";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -12327,6 +12879,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -12385,6 +12939,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\TavernSignTraceysArmory\\TavernSignTraceysArmory";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1.4f;
             doodad.EditorMinimumScale = 0.8f;
@@ -12392,6 +12947,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -12450,6 +13007,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\EmptyCrates\\EmptyCrates";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -12457,6 +13015,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -12515,6 +13075,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,D,G,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\Throne\\Throne";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -12522,6 +13083,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -12580,6 +13143,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\WhaleStatue\\WhaleStatue";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -12587,6 +13151,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -12645,6 +13211,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\StatueKingTerenas\\StatueKingTerenas";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -12652,6 +13219,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -12710,6 +13279,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\IronGateA\\IronGateA";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -12717,6 +13287,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -12775,6 +13347,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\IronGateB\\IronGateB";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -12782,6 +13355,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -12840,6 +13415,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Plants\\CityBush\\CityBush";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -12847,6 +13423,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -12905,6 +13483,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CityscapeTreePlanter\\CityscapeTreePlanter";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -12912,6 +13491,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 9;
@@ -12970,6 +13551,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Plants\\FlowerBedStraight\\FlowerBedStraight";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -12977,6 +13559,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -13035,6 +13619,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Plants\\FlowerBedAngled\\FlowerBedAngled";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -13042,6 +13627,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -13100,6 +13687,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Plants\\PottedPlant\\PottedPlant";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -13107,6 +13695,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -13165,6 +13755,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\Archway1\\Archway1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -13172,6 +13763,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -13230,6 +13823,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\Archway45\\Archway45";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -13237,6 +13831,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -13295,6 +13891,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\ArchwayEntrance1\\ArchwayEntrance1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -13302,6 +13899,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -13360,6 +13959,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\ArchwayEntrance45\\ArchwayEntrance45";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -13367,6 +13967,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -13433,6 +14035,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -13491,6 +14095,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\City_ColumnSingle\\City_ColumnSingle";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1.05f;
             doodad.EditorMinimumScale = 0.9f;
@@ -13498,6 +14103,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -13556,6 +14163,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\City_ColumnDouble\\City_ColumnDouble";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1.095f;
             doodad.EditorMinimumScale = 1.095f;
@@ -13563,6 +14171,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -13621,6 +14231,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\City_ColumnDouble45\\City_ColumnDouble45";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1.095f;
             doodad.EditorMinimumScale = 1.095f;
@@ -13628,6 +14239,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -13686,6 +14299,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\City_ColumnSemiCircle\\City_ColumnSemiCircle";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1.095f;
             doodad.EditorMinimumScale = 1.095f;
@@ -13693,6 +14307,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -13751,6 +14367,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\City_ColumnSemiCircle\\City_ColumnSemiCircle";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1.095f;
             doodad.EditorMinimumScale = 1.095f;
@@ -13758,6 +14375,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -13816,6 +14435,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\City_ColumnSemiCircle\\City_ColumnSemiCircle";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1.095f;
             doodad.EditorMinimumScale = 1.095f;
@@ -13823,6 +14443,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -13881,6 +14503,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\City_ColumnSemiCircle\\City_ColumnSemiCircle";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1.095f;
             doodad.EditorMinimumScale = 1.095f;
@@ -13888,6 +14511,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -13946,6 +14571,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\City_LowWall_ShortEndCap\\City_LowWall_ShortEndCap";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -13953,6 +14579,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -14011,6 +14639,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityLowWall0\\CityLowWall0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -14018,6 +14647,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -14076,6 +14707,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityLowWall45\\CityLowWall45";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -14083,6 +14715,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -14141,6 +14775,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityLowWall90\\CityLowWall90";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -14148,6 +14783,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -14206,6 +14843,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityLowWall135\\CityLowWall135";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -14213,6 +14851,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -14271,6 +14911,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityWallCorner\\CityWallCorner";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -14278,6 +14919,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -14336,6 +14979,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityWallEndcap\\CityWallEndcap";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1.95f;
@@ -14343,6 +14987,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -14401,6 +15047,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityWallStraight\\CityWallStraight";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -14408,6 +15055,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -14466,6 +15115,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityWallCornerAlt\\CityWallCornerAlt";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -14473,6 +15123,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -14531,6 +15183,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityWallStraightLong\\CityWallStraightLong";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -14538,6 +15191,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -14596,6 +15251,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityWallStraightShort\\CityWallStraightShort";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -14603,6 +15259,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -14661,6 +15319,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityWall_T\\CityWall_T";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -14668,6 +15327,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -14726,6 +15387,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityWall_TAlt\\CityWall_Talt";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -14733,6 +15395,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -14791,6 +15455,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityWallEntrance\\CityWallEntrance";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -14798,6 +15463,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -14856,6 +15523,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityWallStraightDoor\\CityWallStraightDoor";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -14863,6 +15531,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -14921,6 +15591,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityWallStraightShortDoor\\CityWallStraightShortDoor";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -14928,6 +15599,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -14986,6 +15659,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\City_LowWall_TallEndCap\\City_LowWall_TallEndCap";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -14993,6 +15667,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -15051,6 +15727,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\City_LowWall_TallEndCapWithLantern\\City_LowWall_TallEndCapWithLantern";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -15058,6 +15735,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -15124,6 +15803,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -15182,6 +15863,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "C,D,G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Felwood\\Props\\Fish_Dead\\Fish_Dead";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -15189,6 +15871,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -15247,6 +15931,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Felwood\\Rocks\\FelwoodRock\\FelwoodRock";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -15254,6 +15939,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 10;
@@ -15312,6 +15999,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Rocks\\DungeonRock\\DungeonRock";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -15319,6 +16007,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 10;
@@ -15377,6 +16067,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cinematic\\Lightningbolt\\Lightningbolt";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 64f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -15384,6 +16075,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -15450,6 +16143,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -15516,6 +16211,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -15582,6 +16279,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -15640,6 +16339,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cinematic\\FireTrapSide\\FireTrapSide";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 96f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -15647,6 +16347,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -15705,6 +16407,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cinematic\\FireTrapUp\\FireTrapUp";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 96f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -15712,6 +16415,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -15778,6 +16483,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -15836,6 +16543,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cinematic\\FrostTrapSide\\FrostTrapSide";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 96f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -15843,6 +16551,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -15901,6 +16611,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cinematic\\FrostTrapUp\\FrostTrapUp";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 96f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -15908,6 +16619,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -15966,6 +16679,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Structures\\DRockArch\\DRockArch";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -15973,6 +16687,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -16031,6 +16747,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Structures\\DRockArch45\\DRockArch45";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -16038,6 +16755,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -16096,6 +16815,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Structures\\DungeonArchway1\\DungeonArchway1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -16103,6 +16823,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -16161,6 +16883,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Structures\\DungeonArchway45\\DungeonArchway45";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -16168,6 +16891,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -16226,6 +16951,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\TreasurePile\\TreasurePile";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -16233,6 +16959,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -16291,6 +17019,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\JunkPile\\JunkPile";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -16298,6 +17027,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -16356,6 +17087,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D,G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\Chain\\Chain";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -16363,6 +17095,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -16421,6 +17155,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D,G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\ChainPost\\ChainPost";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -16428,6 +17163,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -16494,6 +17231,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -16552,6 +17291,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Rocks\\DungeonStalagmite\\DungeonStalagmite";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -16559,6 +17299,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 4;
@@ -16617,6 +17359,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D,G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\LavaCracks\\LavaCracks";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -16624,6 +17367,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 4;
@@ -16682,6 +17427,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D,G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\Chair\\Chair";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -16689,6 +17435,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -16747,6 +17495,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D,G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\Bench\\Bench";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -16754,6 +17503,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -16812,6 +17563,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D,G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\Bookshelf\\Bookshelf";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -16819,6 +17571,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -16877,6 +17631,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D,G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\BigBookshelf\\BigBookshelf";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -16884,6 +17639,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -16942,6 +17699,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D,G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\BookshelfWall\\BookshelfWall";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -16949,6 +17707,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -17007,6 +17767,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D,G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\BookshelfWall45\\BookshelfWall45";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -17014,6 +17775,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -17072,6 +17835,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\DungeonObilisk\\DungeonObilisk";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -17079,6 +17843,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -17137,6 +17903,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D,G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\Table\\Table";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -17144,6 +17911,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -17202,6 +17971,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D,G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\TableNChair\\TableNChair";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -17209,6 +17979,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -17267,6 +18039,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D,G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\IronMaiden\\IronMaiden";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -17274,6 +18047,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -17332,6 +18107,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D,G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\TortureTable\\TortureTable";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -17339,6 +18115,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -17397,6 +18175,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D,G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\MineCart\\MineCart";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -17404,6 +18183,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -17462,6 +18243,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D,G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\MineCartEmpty\\MineCartEmpty";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -17469,6 +18251,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -17527,6 +18311,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Structures\\PorticulisWall0_\\PorticulisWall0_";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -17534,6 +18319,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -17592,6 +18379,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Structures\\PorticulisWall45_\\PorticulisWall45_";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -17599,6 +18387,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -17657,6 +18447,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Underground\\Plants\\ShroomsBlue\\ShroomsBlue";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.75f;
@@ -17664,6 +18455,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -17722,6 +18515,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Underground\\Rocks\\UndergoundRock\\UndergoundRock";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -17729,6 +18523,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 10;
@@ -17795,6 +18591,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -17853,6 +18651,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Underground\\Rocks\\UndergroundStalagmite\\UndergroundStalagmite";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -17860,6 +18659,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 4;
@@ -17918,6 +18719,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Underground\\Props\\UndergroundObilisk\\UndergroundObilisk";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -17925,6 +18727,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -17983,6 +18787,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Underground\\Structures\\UndergroundArchway1\\UndergroundArchway1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -17990,6 +18795,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -18048,6 +18855,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Underground\\Structures\\UndergroundArchway45\\UndergroundArchway45";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -18055,6 +18863,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -18113,6 +18923,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Underground\\Structures\\GRockArch\\GRockArch";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -18120,6 +18931,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -18178,6 +18991,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Underground\\Structures\\GRockArch45\\GRockArch45";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -18185,6 +18999,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -18243,6 +19059,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Underground\\Structures\\GPorticulisWall0_\\GPorticulisWall0_";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -18250,6 +19067,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -18308,6 +19127,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Underground\\Structures\\GPorticulisWall45_\\GPorticulisWall45_";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -18315,6 +19135,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -18373,6 +19195,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Underground\\Props\\GCracks\\GCracks";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -18380,6 +19203,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 4;
@@ -18446,6 +19271,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 100f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -18504,6 +19331,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\CliffDoodadCave\\CliffDoodadCave";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -18511,6 +19339,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -18569,6 +19399,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\CliffDoodadCave2\\CliffDoodadCave2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -18576,6 +19407,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -18642,6 +19475,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -18700,6 +19535,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cinematic\\CameraProp\\CameraProp";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -18707,6 +19543,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -18765,6 +19603,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\CityBuildingSmall45_0\\CityBuildingSmall45_0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -18772,6 +19611,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -18830,6 +19671,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\CityBuildingSmall45_1\\CityBuildingSmall45_1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -18837,6 +19679,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -18895,6 +19739,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\CityBuildingSmall45_2\\CityBuildingSmall45_2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -18902,6 +19747,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -18960,6 +19807,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\CityBuildingSmall90_0\\CityBuildingSmall90_0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -18967,6 +19815,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -19025,6 +19875,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\CityBuildingSmall90_1\\CityBuildingSmall90_1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -19032,6 +19883,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -19090,6 +19943,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\CityBuildingSmall90_2\\CityBuildingSmall90_2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -19097,6 +19951,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -19155,6 +20011,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\CityBuildingSmall135_0\\CityBuildingSmall135_0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -19162,6 +20019,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -19220,6 +20079,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\CityBuildingSmall135_1\\CityBuildingSmall135_1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -19227,6 +20087,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -19285,6 +20147,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\CityBuildingSmall135_2\\CityBuildingSmall135_2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -19292,6 +20155,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -19350,6 +20215,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\CityBuildingSmall0_0\\CityBuildingSmall0_0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -19357,6 +20223,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -19415,6 +20283,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\CityBuildingSmall0_1\\CityBuildingSmall0_1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -19422,6 +20291,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -19480,6 +20351,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\CityBuildingSmall0_2\\CityBuildingSmall0_2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -19487,6 +20359,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -19545,6 +20419,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\CityBuildingLarge_0\\CityBuildingLarge_0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -19552,6 +20427,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -19610,6 +20487,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\CityBuildingLarge_45\\CityBuildingLarge_45";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -19617,6 +20495,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -19675,6 +20555,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\CityBuildingLarge_90\\CityBuildingLarge_90";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -19682,6 +20563,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -19740,6 +20623,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\CityBuildingLarge_135\\CityBuildingLarge_135";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -19747,6 +20631,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -19805,6 +20691,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cinematic\\EnergyField\\EnergyField";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 512f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -19812,6 +20699,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -19870,6 +20759,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cinematic\\ThrallsHut\\ThrallsHut";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -19877,6 +20767,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -19943,6 +20835,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -20001,6 +20895,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Props\\Statue\\Statue";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -20008,6 +20903,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -20066,6 +20963,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Props\\StatueBroken\\StatueBroken";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.95f;
             doodad.EditorMinimumScale = 0.9f;
@@ -20073,6 +20971,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -20131,6 +21031,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Props\\Stone\\Stone";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -20138,6 +21039,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 4;
@@ -20196,6 +21099,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Structures\\SRuinArch\\SRuinArch";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -20203,6 +21107,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -20261,6 +21167,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Structures\\SRuinArch45\\SRuinArch45";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -20268,6 +21175,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -20326,6 +21235,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Structures\\RuinsArchway0_\\RuinsArchway0_";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -20333,6 +21243,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -20391,6 +21303,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Structures\\RuinsArchway45_\\RuinsArchway45_";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -20398,6 +21311,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -20456,6 +21371,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Structures\\RuinsArchwayBroken00\\RuinsArchwayBroken00";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -20463,6 +21379,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -20521,6 +21439,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Structures\\RuinsArchwayBroken450\\RuinsArchwayBroken450";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -20528,6 +21447,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -20586,6 +21507,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Water\\FishTropical\\FishTropical";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -20593,6 +21515,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -20651,6 +21575,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Water\\FishSchool\\FishSchool";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -20658,6 +21583,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -20716,6 +21643,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Structures\\RuinsBuilding\\RuinsBuilding";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 288f;
             doodad.ArtDefaultScale = 0.9f;
             doodad.EditorMinimumScale = 0.8f;
@@ -20723,6 +21651,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -20789,6 +21719,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -20847,6 +21779,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Props\\RuinsObelisk\\RuinsObelisk";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -20854,6 +21787,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -20912,6 +21847,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Props\\RuinsRuinedThrone\\RuinsRuinedThrone";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -20919,6 +21855,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -20977,6 +21915,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Icecrown\\Rocks\\Ice_Rock\\Ice_Rock";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -20984,6 +21923,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 8;
@@ -21042,6 +21983,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Props\\RuinsPillar\\RuinsPillar";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 80f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -21049,6 +21991,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 5;
@@ -21107,6 +22051,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Props\\Ruins_Shells\\Ruins_Shells";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -21114,6 +22059,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 10;
@@ -21172,6 +22119,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCave1\\CityCliffDoodadCave1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -21179,6 +22127,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -21237,6 +22187,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCave2\\CityCliffDoodadCave2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -21244,6 +22195,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -21302,6 +22255,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCave3\\CityCliffDoodadCave3";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -21309,6 +22263,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -21367,6 +22323,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCave4\\CityCliffDoodadCave4";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -21374,6 +22331,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -21432,6 +22391,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCollapse0\\CityCliffDoodadCollapse0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -21439,6 +22399,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -21497,6 +22459,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCollapse1\\CityCliffDoodadCollapse1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -21504,6 +22467,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -21562,6 +22527,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCollapse2\\CityCliffDoodadCollapse2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -21569,6 +22535,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -21627,6 +22595,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCollapse3\\CityCliffDoodadCollapse3";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -21634,6 +22603,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -21692,6 +22663,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Props\\DalaranRuinCrystals\\DalaranRuinCrystals";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 288f;
             doodad.ArtDefaultScale = 0.9f;
             doodad.EditorMinimumScale = 0.8f;
@@ -21699,6 +22671,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -21757,6 +22731,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Props\\DalaranRuinTower\\DalaranRuinTower";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 288f;
             doodad.ArtDefaultScale = 0.9f;
             doodad.EditorMinimumScale = 0.8f;
@@ -21764,6 +22739,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -21822,6 +22799,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Props\\DalaranRuinTower2\\DalaranRuinTower2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 288f;
             doodad.ArtDefaultScale = 0.9f;
             doodad.EditorMinimumScale = 0.8f;
@@ -21829,6 +22807,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -21887,6 +22867,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Props\\DalaranRuinTowerBase\\DalaranRuinTowerBase";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 288f;
             doodad.ArtDefaultScale = 0.9f;
             doodad.EditorMinimumScale = 0.8f;
@@ -21894,6 +22875,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -21952,6 +22935,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Props\\DalaranRuinTwoBases\\DalaranRuinTwoBases";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 288f;
             doodad.ArtDefaultScale = 0.9f;
             doodad.EditorMinimumScale = 0.8f;
@@ -21959,6 +22943,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -22017,6 +23003,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Props\\DalaranRuinTwoBases2\\DalaranRuinTwoBases2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 288f;
             doodad.ArtDefaultScale = 0.9f;
             doodad.EditorMinimumScale = 0.8f;
@@ -22024,6 +23011,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -22082,6 +23071,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Props\\DalaranVioletCitadelRuin\\DalaranVioletCitadelRuin";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 128f;
             doodad.ArtDefaultScale = 0.9f;
             doodad.EditorMinimumScale = 0.8f;
@@ -22089,6 +23079,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -22155,6 +23147,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -22213,6 +23207,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Rocks\\Ruins_Rock\\Ruins_Rock";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -22220,6 +23215,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 10;
@@ -22278,6 +23275,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Terrain\\CityCliffVines0\\CityCliffVines0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -22285,6 +23283,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -22343,6 +23343,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Terrain\\CityCliffVines1\\CityCliffVines1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -22350,6 +23351,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -22408,6 +23411,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A,B,L,F,W,Y,X,V,Q,N,Z,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Water\\Seaweed0\\Seaweed0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1.75f;
             doodad.EditorMinimumScale = 1.5f;
@@ -22415,6 +23419,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 5;
@@ -22473,6 +23479,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Water\\BubbleGeyser\\BubbleGeyser";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 64f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -22480,6 +23487,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -22538,6 +23547,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Icecrown\\Water\\BubbleGeyserSteam\\BubbleGeyserSteam";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 96f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -22545,6 +23555,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -22603,6 +23615,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "I,N";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Icecrown\\Water\\IceEdge\\IceEdge";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -22610,6 +23623,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 4;
@@ -22676,6 +23691,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 100f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -22734,6 +23751,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z,L,F,A,C,X,J,Y,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Plants\\Ruins_Flower\\Ruins_Flower";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -22741,6 +23759,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 5;
@@ -22799,6 +23819,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z,L,F,A,C,X,J,Y,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Plants\\Ruins_Shrub\\Ruins_Shrub";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -22806,6 +23827,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -22864,6 +23887,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Plants\\Ruins_Lilypad\\Ruins_Lilypad";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -22871,6 +23895,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -22929,6 +23955,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Plants\\Ruins_Rush\\Ruins_Rush";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -22936,6 +23963,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -22994,6 +24023,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Water\\Coral\\Coral";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -23001,6 +24031,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 10;
@@ -23059,6 +24091,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Water\\CoralArch\\CoralArch";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -23066,6 +24099,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -23124,6 +24159,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cinematic\\DemonFootPrint\\DemonFootPrint";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 64f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -23131,6 +24167,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -23197,6 +24235,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -23255,6 +24295,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Icecrown\\Structures\\IC_IceArch\\IC_IceArch";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -23262,6 +24303,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -23320,6 +24363,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Icecrown\\Structures\\IC_IceArch45\\IC_IceArch45";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -23327,6 +24371,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -23385,6 +24431,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Icecrown\\Props\\IceCrownObelisk\\IceCrownObelisk";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -23392,6 +24439,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -23450,6 +24499,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Icecrown\\Props\\IceCrownPillar\\IceCrownPillar";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -23457,6 +24507,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -23515,6 +24567,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "I,N";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Icecrown\\Rocks\\IceBlock\\IceBlock";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -23522,6 +24575,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 4;
@@ -23580,6 +24635,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\AzsharaStatue\\AzsharaStatue";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -23587,6 +24643,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -23645,6 +24703,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Icecrown\\Props\\SnowMan\\SnowMan";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -23652,6 +24711,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -23710,6 +24771,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Rocks\\Ruins_Spires\\Ruins_Spires";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -23717,6 +24779,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 8;
@@ -23775,6 +24839,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Rocks\\Ruins_Spires\\Ruins_Spires";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 0.36f;
             doodad.EditorMinimumScale = 0.8f;
@@ -23782,6 +24847,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 0f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 8;
@@ -23840,6 +24907,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "O,K";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Outland\\Rocks\\Outland_Rock\\Outland_Rock";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -23847,6 +24915,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 10;
@@ -23905,6 +24975,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "O,K";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Outland\\Rocks\\Outland_Spires\\Outland_Spires";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -23912,6 +24983,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 10;
@@ -23970,6 +25043,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Icecrown\\Props\\SpiderStatue1\\SpiderStatue1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -23977,6 +25051,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -24035,6 +25111,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Icecrown\\Props\\SpiderStatue0\\SpiderStatue0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -24042,6 +25119,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -24100,6 +25179,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A,C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cinematic\\NightElfTransportShipRuined\\NightElfTransportShipRuined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -24107,6 +25187,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -24165,6 +25247,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "O,K";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Outland\\Plants\\Outland_Plant\\Outland_Plant";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -24172,6 +25255,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 8;
@@ -24230,6 +25315,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Icecrown\\Rocks\\Glacier\\Glacier";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -24237,6 +25323,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 10;
@@ -24295,6 +25383,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "O,K";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Outland\\Rocks\\Outland_MagmaRock\\Outland_MagmaRock";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -24302,6 +25391,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 5;
@@ -24360,6 +25451,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\Ruinedfloor2x2_0\\Ruinedfloor2x2_0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -24367,6 +25459,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -24425,6 +25519,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\Ruinedfloor2x2_1\\Ruinedfloor2x2_1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -24432,6 +25527,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -24490,6 +25587,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\Ruinedfloor2x2_2\\Ruinedfloor2x2_2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -24497,6 +25595,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -24555,6 +25655,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\Ruinedfloor2x2_3\\Ruinedfloor2x2_3";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -24562,6 +25663,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -24620,6 +25723,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\Ruinedfloor4x4_0\\Ruinedfloor4x4_0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -24627,6 +25731,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -24685,6 +25791,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\Ruinedfloor4x4_1\\Ruinedfloor4x4_1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -24692,6 +25799,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -24750,6 +25859,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\Ruinedfloor4x2_0\\Ruinedfloor4x2_0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -24757,6 +25867,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -24815,6 +25927,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\Ruinedfloor4x2_1\\Ruinedfloor4x2_1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -24822,6 +25935,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -24880,6 +25995,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\NewRoughCliffDoodadCave1\\NewRoughCliffDoodadCave1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -24887,6 +26003,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -24945,6 +26063,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\NewRoughCliffDoodadCave2\\NewRoughCliffDoodadCave2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -24952,6 +26071,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -25010,6 +26131,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\NewRoughCliffDoodadCave3\\NewRoughCliffDoodadCave3";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -25017,6 +26139,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -25075,6 +26199,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\NewRoughCliffDoodadCave4\\NewRoughCliffDoodadCave4";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -25082,6 +26207,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -25140,6 +26267,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadCollapse0\\RoughCliffDoodadCollapse0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -25147,6 +26275,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -25205,6 +26335,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadCollapse1\\RoughCliffDoodadCollapse1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -25212,6 +26343,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -25270,6 +26403,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadCollapse2\\RoughCliffDoodadCollapse2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -25277,6 +26411,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -25335,6 +26471,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadCollapse3\\RoughCliffDoodadCollapse3";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -25342,6 +26479,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -25400,6 +26539,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadSlide0\\CityCliffDoodadSlide0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -25407,6 +26547,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -25465,6 +26607,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadSlide1\\CityCliffDoodadSlide1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -25472,6 +26615,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -25530,6 +26675,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadSlide2\\CityCliffDoodadSlide2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -25537,6 +26683,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -25595,6 +26743,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadSlide3\\CityCliffDoodadSlide3";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -25602,6 +26751,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -25660,6 +26811,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCollapseShort0\\CityCliffDoodadCollapseShort0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -25667,6 +26819,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -25725,6 +26879,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCollapseShort1\\CityCliffDoodadCollapseShort1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -25732,6 +26887,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -25790,6 +26947,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCollapseShort2\\CityCliffDoodadCollapseShort2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -25797,6 +26955,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -25855,6 +27015,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadCollapseShort3\\CityCliffDoodadCollapseShort3";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -25862,6 +27023,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -25920,6 +27083,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadSlideShort0\\CityCliffDoodadSlideShort0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -25927,6 +27091,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -25985,6 +27151,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadSlideShort1\\CityCliffDoodadSlideShort1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -25992,6 +27159,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -26050,6 +27219,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadSlideShort2\\CityCliffDoodadSlideShort2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -26057,6 +27227,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -26115,6 +27287,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,D,G,Z,I,O,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\CityCliffDoodadSlideShort3\\CityCliffDoodadSlideShort3";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -26122,6 +27295,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -26180,6 +27355,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadSlide0\\RoughCliffDoodadSlide0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -26187,6 +27363,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -26245,6 +27423,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadSlide1\\RoughCliffDoodadSlide1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -26252,6 +27431,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -26310,6 +27491,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadSlide2\\RoughCliffDoodadSlide2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -26317,6 +27499,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -26375,6 +27559,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadSlide3\\RoughCliffDoodadSlide3";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -26382,6 +27567,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -26440,6 +27627,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadSlideShort0\\RoughCliffDoodadSlideShort0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -26447,6 +27635,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -26505,6 +27695,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadSlideShort1\\RoughCliffDoodadSlideShort1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -26512,6 +27703,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -26570,6 +27763,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadSlideShort2\\RoughCliffDoodadSlideShort2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -26577,6 +27771,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -26635,6 +27831,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadSlideShort3\\RoughCliffDoodadSlideShort3";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -26642,6 +27839,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -26700,6 +27899,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadCollapseShort0\\RoughCliffDoodadCollapseShort0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -26707,6 +27907,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -26765,6 +27967,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadCollapseShort1\\RoughCliffDoodadCollapseShort1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -26772,6 +27975,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -26830,6 +28035,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadCollapseShort2\\RoughCliffDoodadCollapseShort2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -26837,6 +28043,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -26895,6 +28103,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Terrain\\CliffDoodad\\RoughCliffDoodadCollapseShort3\\RoughCliffDoodadCollapseShort3";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -26902,6 +28111,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 1;
             doodad.ArtVariations = 1;
@@ -26960,6 +28171,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Rocks\\CliffRubble_Single\\CliffRubble_Single";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -26967,6 +28179,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 4;
@@ -27025,6 +28239,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Rocks\\CliffRubble_Double\\CliffRubble_Double";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -27032,6 +28247,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 4;
@@ -27090,6 +28307,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "O,K";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cinematic\\Outland_FloatingChunks\\Outland_FloatingChunks";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -27097,6 +28315,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 4;
@@ -27155,6 +28375,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "O,K";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cinematic\\Outland_FloatingChunksCluster\\Outland_FloatingChunksCluster";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -27162,6 +28383,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -27220,6 +28443,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A,C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Structures\\Pier\\Pier";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -27227,6 +28451,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -27285,6 +28511,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A,C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Structures\\PierTrashed\\PierTrashed";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -27292,6 +28519,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -27350,6 +28579,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Plants\\Ruins_Shroom\\Ruins_Shroom";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -27357,6 +28587,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 6;
@@ -27415,6 +28647,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Plants\\VinyPlant\\VinyPlant";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -27422,6 +28655,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 4;
@@ -27480,6 +28715,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Props\\LibraryShelf\\LibraryShelf";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -27487,6 +28723,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -27545,6 +28783,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CathedralRuined\\CathedralRuined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1.2f;
             doodad.EditorMinimumScale = 1.1f;
@@ -27552,6 +28791,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -27610,6 +28851,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\FountainRuined\\FountainRuined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 288f;
             doodad.ArtDefaultScale = 0.9f;
             doodad.EditorMinimumScale = 0.8f;
@@ -27617,6 +28859,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -27675,6 +28919,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cinematic\\RunesOfGuldan\\RunesOfGuldan";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.5f;
@@ -27682,6 +28927,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 6;
@@ -27740,6 +28987,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cinematic\\EnergyFieldWall\\EnergyFieldWall";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 128f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -27747,6 +28995,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -27805,6 +29055,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBuildingSmall45_0_Ruined\\CityBuildingSmall45_0_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -27812,6 +29063,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -27870,6 +29123,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBuildingSmall45_1_Ruined\\CityBuildingSmall45_1_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -27877,6 +29131,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -27935,6 +29191,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBuildingSmall45_2_Ruined\\CityBuildingSmall45_2_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -27942,6 +29199,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -28000,6 +29259,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBuildingSmall90_0_Ruined\\CityBuildingSmall90_0_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -28007,6 +29267,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -28065,6 +29327,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBuildingSmall90_1_Ruined\\CityBuildingSmall90_1_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -28072,6 +29335,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -28130,6 +29395,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBuildingSmall90_2_Ruined\\CityBuildingSmall90_2_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -28137,6 +29403,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -28195,6 +29463,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBuildingSmall135_0_Ruined\\CityBuildingSmall135_0_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -28202,6 +29471,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -28260,6 +29531,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBuildingSmall135_1_Ruined\\CityBuildingSmall135_1_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -28267,6 +29539,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -28325,6 +29599,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBuildingSmall135_2_Ruined\\CityBuildingSmall135_2_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -28332,6 +29607,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -28390,6 +29667,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBuildingSmall0_0_Ruined\\CityBuildingSmall0_0_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -28397,6 +29675,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -28455,6 +29735,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBuildingSmall0_1_Ruined\\CityBuildingSmall0_1_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -28462,6 +29743,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -28520,6 +29803,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBuildingSmall0_2_Ruined\\CityBuildingSmall0_2_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -28527,6 +29811,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -28585,6 +29871,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBuildingLarge_0_Ruined\\CityBuildingLarge_0_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -28592,6 +29879,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -28650,6 +29939,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBuildingLarge_45_Ruined\\CityBuildingLarge_45_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -28657,6 +29947,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -28715,6 +30007,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBuildingLarge_90_Ruined\\CityBuildingLarge_90_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -28722,6 +30015,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -28780,6 +30075,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBuildingLarge_135_Ruined\\CityBuildingLarge_135_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -28787,6 +30083,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -28845,6 +30143,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBuildingRow_0\\CityBuildingRow_0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -28852,6 +30151,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -28910,6 +30211,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBuildingRow_1\\CityBuildingRow_1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -28917,6 +30219,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -28975,6 +30279,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,V,Q,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBuildingRow_2\\CityBuildingRow_2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -28982,6 +30287,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -29040,6 +30347,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cinematic\\EyeOfSargeras\\EyeOfSargeras";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -29047,6 +30355,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -29105,6 +30415,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\City_ColumnSemiCircle_Ruined\\City_ColumnSemiCircle_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1.095f;
             doodad.EditorMinimumScale = 1.095f;
@@ -29112,6 +30423,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -29170,6 +30483,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\City_ColumnSemiCircle_Ruined\\City_ColumnSemiCircle_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1.095f;
             doodad.EditorMinimumScale = 1.095f;
@@ -29177,6 +30491,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -29235,6 +30551,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\City_ColumnSemiCircle_Ruined\\City_ColumnSemiCircle_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1.095f;
             doodad.EditorMinimumScale = 1.095f;
@@ -29242,6 +30559,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -29300,6 +30619,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\City_ColumnSemiCircle_Ruined\\City_ColumnSemiCircle_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1.095f;
             doodad.EditorMinimumScale = 1.095f;
@@ -29307,6 +30627,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -29365,6 +30687,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\City_ColumnSingle1_Ruined\\City_ColumnSingle1_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1.05f;
             doodad.EditorMinimumScale = 0.9f;
@@ -29372,6 +30695,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -29430,6 +30755,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\City_ColumnSingle2_Ruined\\City_ColumnSingle2_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1.05f;
             doodad.EditorMinimumScale = 0.9f;
@@ -29437,6 +30763,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -29495,6 +30823,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBuildingLarge_0_BaseRuin\\CityBuildingLarge_0_BaseRuin";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -29502,6 +30831,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -29560,6 +30891,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityBuildingSmall135_0_BaseRuin\\CityBuildingSmall135_0_BaseRuin";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -29567,6 +30899,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -29625,6 +30959,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\Archway2_Ruined\\Archway2_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -29632,6 +30967,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -29690,6 +31027,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\Archway1_Ruined\\Archway1_Ruined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -29697,6 +31035,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -29755,6 +31095,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z,D,G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cinematic\\CavernDust\\CavernDust";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -29762,6 +31103,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -29820,6 +31163,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "L,W,F,Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Structures\\GoblinShipyardRuined\\GoblinShipyardRuined";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -29827,6 +31171,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -29885,6 +31231,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A,C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ashenvale\\Props\\Totem\\Totem";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -29892,6 +31239,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -29950,6 +31299,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D,G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\SewerVent\\SewerVent";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -29957,6 +31307,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 4;
@@ -30015,6 +31367,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "D,G";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\SewerWallpipes\\SewerWallpipes";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -30022,6 +31375,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -30088,6 +31443,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -30146,6 +31503,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "K";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\BlackCitadel\\Props\\RuneArt\\RuneArt";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -30153,6 +31511,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 7;
@@ -30211,6 +31571,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "O,K";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cinematic\\ShimmeringPortal\\ShimmeringPortal";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -30218,6 +31579,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -30276,6 +31639,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A,C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\ElvenFishVillageBuilding0\\ElvenFishVillageBuilding0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -30283,6 +31647,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -30341,6 +31707,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A,C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\ElvenFishVillageBuilding1\\ElvenFishVillageBuilding1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -30348,6 +31715,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -30406,6 +31775,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A,C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\ElvenFishVillageBuilding2\\ElvenFishVillageBuilding2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -30413,6 +31783,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -30471,6 +31843,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A,C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\ElvenFishVillageBuilding3\\ElvenFishVillageBuilding3";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -30478,6 +31851,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -30536,6 +31911,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A,C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\ElvenFishVillageBuilding4\\ElvenFishVillageBuilding4";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -30543,6 +31919,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -30601,6 +31979,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A,C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\ElvenFishVillageBuildingRuined0\\ElvenFishVillageBuildingRuined0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -30608,6 +31987,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -30666,6 +32047,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A,C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\ElvenFishVillageBuildingRuined1\\ElvenFishVillageBuildingRuined1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -30673,6 +32055,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -30731,6 +32115,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "A,C";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Buildings\\Other\\ElvenFishVillageBuildingRuined2\\ElvenFishVillageBuildingRuined2";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -30738,6 +32123,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -30796,6 +32183,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Props\\RuinsTrash\\RuinsTrash";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -30803,6 +32191,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -30861,6 +32251,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Props\\RuinsBloodyAltar\\RuinsBloodyAltar";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -30868,6 +32259,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -30926,6 +32319,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "I";
             doodad.EditorHasTilesetSpecificDataRaw = 1;
             doodad.ArtModelFileRaw = "Doodads\\Cinematic\\RisingWaterDoodad\\RisingWaterDoodad";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -30933,6 +32327,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -30991,6 +32387,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "K";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\BlackCitadel\\Props\\BlackCitadelStatue\\BlackCitadelStatue";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -30998,6 +32395,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -31056,6 +32455,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cinematic\\FrozenThrone\\FrozenThrone";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 256f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -31063,6 +32463,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 0f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -31121,6 +32523,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Icecrown\\Props\\Icecrown_IceChair\\Icecrown_IceChair";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -31128,6 +32531,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -31186,6 +32591,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Icecrown\\Rocks\\Icecrown_Crystal\\Icecrown_Crystal";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -31193,6 +32599,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 9;
@@ -31251,6 +32659,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Icecrown\\Structures\\Icecrown_StoneArch\\Icecrown_StoneArch";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -31258,6 +32667,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -31316,6 +32727,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Icecrown\\Structures\\Icecrown_StoneArch45\\Icecrown_StoneArch45";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -31323,6 +32735,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -31381,6 +32795,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Icecrown\\Props\\IcecrownChair\\IcecrownChair";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -31388,6 +32803,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -31446,6 +32863,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "O,K";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Outland\\Props\\Altar\\Altar";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -31453,6 +32871,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -31511,6 +32931,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "O,K";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Outland\\Props\\Grate\\Grate";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -31518,6 +32939,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -31576,6 +32999,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "O,K";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Outland\\Props\\Obstacle\\Obstacle";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -31583,6 +33007,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 5;
@@ -31641,6 +33067,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "O,K";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Outland\\Props\\Skull\\Skull";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -31648,6 +33075,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -31706,6 +33135,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "O,K";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Outland\\Props\\Stake\\Stake";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -31713,6 +33143,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -31771,6 +33203,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "O,K";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Outland\\Rocks\\RubbleRock\\RubbleRock";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -31778,6 +33211,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 6;
@@ -31836,6 +33271,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "*";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cinematic\\UndergroundDome\\UndergroundDome";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 256f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -31843,6 +33279,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 1;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 0f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -31901,6 +33339,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "O,K";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Outland\\Props\\Standard\\Standard";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 64f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -31908,6 +33347,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -31966,6 +33407,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "I,N";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Icecrown\\Rocks\\Ice_SnowRock\\Ice_SnowRock";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -31973,6 +33415,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 10;
@@ -32031,6 +33475,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "I";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Icecrown\\Structures\\Icecrown_Rubble\\Icecrown_Rubble";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -32038,6 +33483,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 3;
@@ -32104,6 +33551,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 9;
@@ -32162,6 +33611,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "B";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Barrens\\Plants\\Barrens_TreeDoodad\\Barrens_TreeDoodad";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -32169,6 +33619,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 10;
@@ -32227,6 +33679,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Plants\\RuinsTreeDoodad\\RuinsTreeDoodad";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -32234,6 +33687,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 10;
@@ -32292,6 +33747,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "I";
             doodad.EditorHasTilesetSpecificDataRaw = 1;
             doodad.ArtModelFileRaw = "Doodads\\Cinematic\\RisingWaterWIDEDoodad\\RisingWaterWIDEDoodad";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -32299,6 +33755,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -32357,6 +33815,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y,X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\City_LowWall_TallEndCapWithoutLantern\\City_LowWall_TallEndCapWithoutLantern";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 1f;
@@ -32364,6 +33823,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -32422,6 +33883,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "O,K";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Outland\\Structures\\Outland_RockArch\\Outland_RockArch";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -32429,6 +33891,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -32487,6 +33951,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "O,K";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Outland\\Structures\\Outland_RockArch45\\Outland_RockArch45";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -32494,6 +33959,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 0;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -32552,6 +34019,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "F";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\MarketStallLarge\\MarketStallLarge";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 256f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -32559,6 +34027,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -32617,6 +34087,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "F";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Barrens\\Rocks\\Barrens_Spires\\Barrens_Spires";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 512f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -32624,6 +34095,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -32682,6 +34155,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "F";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\MarketStallLarge\\MarketStallLarge";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 256f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -32689,6 +34163,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -32747,6 +34223,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "F";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\MarketStallLarge\\MarketStallLarge";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 256f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -32754,6 +34231,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -32812,6 +34291,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "F";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\MarketStallLarge\\MarketStallLarge";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 256f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -32819,6 +34299,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -32877,6 +34359,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "F";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\MarketStallLarge\\MarketStallLarge";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 768f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -32884,6 +34367,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -32942,6 +34427,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "F";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\MarketStallLarge\\MarketStallLarge";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 256f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -32949,6 +34435,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -33007,6 +34495,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\Banner_Long\\Banner_Long";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 128f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -33014,6 +34503,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -33072,6 +34563,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Props\\Banner_Long\\Banner_Long";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 128f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -33079,6 +34571,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -33137,6 +34631,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\SilvermoonResidentialBuildings_45\\SilvermoonResidentialBuildings_45";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 192f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -33144,6 +34639,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -33202,6 +34699,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\SilvermoonResidentialBuildings_135\\SilvermoonResidentialBuildings_135";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 192f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -33209,6 +34707,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -33267,6 +34767,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\SilvermoonResidentialBuildings_0\\SilvermoonResidentialBuildings_0";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 192f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -33274,6 +34775,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -33332,6 +34835,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\SilvermoonResidentialBuildings_90\\SilvermoonResidentialBuildings_90";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 192f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -33339,6 +34843,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -33397,6 +34903,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\SunfurySpireMainTower\\SunfurySpireMainTower";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 640f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -33404,6 +34911,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -33462,6 +34971,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\SunfurySpireSideTower\\SunfurySpireSideTower";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 256f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -33469,6 +34979,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 1;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -33527,6 +35039,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\SilvermoonTowerDoodadsLarge\\SilvermoonTowerDoodadsLarge";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 384f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -33534,6 +35047,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -33592,6 +35107,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\SilvermoonTowerDoodadsMedium\\SilvermoonTowerDoodadsMedium";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 256f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -33599,6 +35115,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -33657,6 +35175,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\SilvermoonTowerDoodadsSmall\\SilvermoonTowerDoodadsSmall";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 128f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -33664,6 +35183,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -33722,6 +35243,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\SilvermoonWallStraightDoorShort\\SilvermoonWallStraightDoorShort.mdl";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 704f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -33729,6 +35251,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -33787,6 +35311,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\SilvermoonWallStraight\\SilvermoonWallStraight";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 512f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -33794,6 +35319,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -33852,6 +35379,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\SilvermoonWallStraightLong\\SilvermoonWallStraightLong";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 128f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -33859,6 +35387,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -33917,6 +35447,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\SilvermoonWall_T\\SilvermoonWall_T";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 512f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -33924,6 +35455,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -33982,6 +35515,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\SilvermoonWallStraightDoor\\SilvermoonWallStraightDoor.mdl";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 512f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -33989,6 +35523,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -34047,6 +35583,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\SilvermoonWallStraightDoorShort\\SilvermoonWallStraightDoorShort.mdl";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 256f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -34054,6 +35591,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -34112,6 +35651,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\SilvermoonWallCorner\\SilvermoonWallCorner";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 512f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -34119,6 +35659,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -34177,6 +35719,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\SilvermoonWallEndcap\\SilvermoonWallEndcap";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 256f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -34184,6 +35727,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -34242,6 +35787,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\SilvermoonArchwayEntrance_1\\SilvermoonArchwayEntrance_1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 1024f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -34249,6 +35795,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -34307,6 +35855,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\SilvermoonArchwayEntrance_45\\SilvermoonArchwayEntrance_45";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 768f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -34314,6 +35863,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -34372,6 +35923,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\SilvermoonArchway_1\\SilvermoonArchway_1";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 1024f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -34379,6 +35931,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -34437,6 +35991,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\SilvermoonArchway_45\\SilvermoonArchway_45";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 896f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -34444,6 +35999,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -34502,6 +36059,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Y";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Silvermoon\\Structures\\LargeSilvermoonTower\\LargeSilvermoonTower";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 384f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -34509,6 +36067,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -34567,6 +36127,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityMainTower\\CityMainTower";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 384f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -34574,6 +36135,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -34632,6 +36195,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityMainTower\\CityMainTower";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 384f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -34639,6 +36203,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -34697,6 +36263,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityMainTower\\CityMainTower";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 384f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -34704,6 +36271,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 0f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -34762,6 +36331,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Cityscape\\Structures\\CityMainTower\\CityMainTower";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 384f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -34769,6 +36339,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -34827,6 +36399,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Outland\\Structures\\Outland_RockArch\\Outland_RockArch";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 896f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -34834,6 +36407,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -34892,6 +36467,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dungeon\\Props\\AzsharaStatue\\AzsharaStatue";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 384f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -34899,6 +36475,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -34957,6 +36535,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\LordaeronSummer\\Props\\SittingCorpse\\SittingCorpse";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 128f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -34964,6 +36543,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -35022,6 +36603,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranVioletHoldMainStructure\\DalaranVioletHoldMainStructure";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 512f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -35029,6 +36611,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -35087,6 +36671,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranVioletHoldSpire\\DalaranVioletHoldSpire";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 384f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -35094,6 +36679,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -35152,6 +36739,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranVioletHoldSpire_Small\\DalaranVioletHoldSpire_Small";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 256f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -35159,6 +36747,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -35217,6 +36807,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranVioletHoldArchwayEndpiece\\DalaranVioletHoldArchwayEndpiece";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 1536f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -35224,6 +36815,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -35282,6 +36875,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranMagusTurret\\DalaranMagusTurret";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 384f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -35289,6 +36883,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -35347,6 +36943,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranMagusHighrise\\MagusHighrise";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 256f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -35354,6 +36951,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -35412,6 +37011,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranMagusConservatory\\DalaranMagusConservatory";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 256f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -35419,6 +37019,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -35477,6 +37079,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranSunreaverArchway\\DalaranSunreaverArchway";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 896f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -35484,6 +37087,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -35542,6 +37147,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranSunreaverDome\\DalaranSunreaverDome";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 512f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -35549,6 +37155,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -35607,6 +37215,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranSunreaverDome_Small\\DalaranSunreaverDome_Small";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 384f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -35614,6 +37223,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -35672,6 +37283,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranSunreaverSpire\\DalaranSunreaverSpire";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 256f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -35679,6 +37291,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -35737,6 +37351,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranEnclaveMainStructure\\DalaranEnclaveMainStructure";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 768f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -35744,6 +37359,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -35802,6 +37419,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranEnclaveSpire\\DalaranEnclaveSpire";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 256f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -35809,6 +37427,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -35867,6 +37487,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranEnclaveHouse\\DalaranEnclaveHouse";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 384f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -35874,6 +37495,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -35932,6 +37555,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranEnclaveHouseB\\DalaranEnclaveHouseB";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 384f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -35939,6 +37563,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -35997,6 +37623,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranEnclaveTurret\\DalaranEnclaveTurret";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 256f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -36004,6 +37631,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -36062,6 +37691,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranSunreaverFountain\\DalaranSunreaverFountain";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 256f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -36069,6 +37699,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -36127,6 +37759,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranBuildingA\\DalaranBuildingA";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 768f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -36134,6 +37767,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -36192,6 +37827,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranBuildingB\\DalaranBuildingB";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 768f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -36199,6 +37835,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -36257,6 +37895,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranBuildingC\\DalaranBuildingC";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 768f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -36264,6 +37903,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -36322,6 +37963,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranWallStraightShort\\DalaranWallStraightShort";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 128f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -36329,6 +37971,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -36387,6 +38031,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranWallStraight\\DalaranWallStraight";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 512f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -36394,6 +38039,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -36452,6 +38099,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranWallStraightLong\\DalaranWallStraightLong";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 704f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -36459,6 +38107,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -36517,6 +38167,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranWall_T\\DalaranWall_T";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 512f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -36524,6 +38175,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -36582,6 +38235,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranWall_TAlt\\DalaranWall_TAlt";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 512f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -36589,6 +38243,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -36647,6 +38303,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranWallSpire\\DalaranWallSpire";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 512f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -36654,6 +38311,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -36712,6 +38371,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranWallSpireAlt\\DalaranWallSpireAlt";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 256f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -36719,6 +38379,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -36777,6 +38439,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranWall90\\DalaranWall90";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 512f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -36784,6 +38447,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 2;
@@ -36842,6 +38507,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "X,J";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Dalaran\\Structures\\DalaranWallEndcap\\DalaranWallEndcap";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 256f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -36849,6 +38515,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 1;
@@ -36907,6 +38575,7 @@ namespace War3Api.Object
             doodad.EditorTilesetsRaw = "Z,L,F,A,C,X,J,Y,V,Q";
             doodad.EditorHasTilesetSpecificDataRaw = 0;
             doodad.ArtModelFileRaw = "Doodads\\Ruins\\Plants\\Ruins_Flower\\Ruins_Flower";
+            doodad.SoundLoopingSoundRaw = "";
             doodad.ArtSelectionSize = 0f;
             doodad.ArtDefaultScale = 1f;
             doodad.EditorMinimumScale = 0.8f;
@@ -36914,6 +38583,8 @@ namespace War3Api.Object
             doodad.EditorCanPlaceRandomScaleRaw = 1;
             doodad.EditorUseClickHelperRaw = 0;
             doodad.EditorIgnoreModelClicksRaw = 0;
+            doodad.ArtMaximumPitchAngledegrees = 0;
+            doodad.ArtMaxRollAngledegrees = 0;
             doodad.ArtVisibilityRadius = 50f;
             doodad.PathingWalkableRaw = 0;
             doodad.ArtVariations = 5;
