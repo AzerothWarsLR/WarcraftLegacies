@@ -18,5 +18,5 @@
       yield return new(UPGRADE_RBEV_SHADOW_VEIL_BLACK_EMPIRE, Unlimited);
       yield return new(UPGRADE_RBEA_ACCELERATED_CYCLE_BLACK_EMPIRE_STYGIAN_HULK, Unlimited);
       yield return new(UPGRADE_RBFC_CURSED_FLESH_BLACK_EMPIRE_AQIR_AND_FORGOTTEN_ONE, Unlimited);
-      yield return new(UPGRADE_RBES_UNWORDLY_SCYTHE_BLACK_EMPIRE_REAPER, Unlimited);
+      yield return new(UPGRADE_RBES_UNWORLDLY_SCYTHE_BLACK_EMPIRE_REAPER, Unlimited);
     }  }}
