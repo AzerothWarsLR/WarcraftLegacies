@@ -3,5 +3,11 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Medium ranged unit that hurls Demon fire. Can cast Raise Dead and Carrion Swarm. "
+    }
+  ]
 }

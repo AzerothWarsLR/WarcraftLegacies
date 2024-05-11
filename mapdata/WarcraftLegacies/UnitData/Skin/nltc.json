@@ -13,6 +13,11 @@
       "Id": 1818520949,
       "Type": 3,
       "Value": "Units\\Creeps\\Lobstrokkred\\Lobstrokkred.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light ranged unit with Heal and Frost Armor. "
     }
   ]
 }

@@ -8,6 +8,11 @@
       "Id": 1831952757,
       "Type": 3,
       "Value": "Abilities\\Weapons\\LichMissile\\LichMissile.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Tiny ranged flying unit that deals cold damage and slows enemy units. "
     }
   ]
 }
