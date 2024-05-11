@@ -67,6 +67,11 @@
       "Id": 1651864693,
       "Type": 3,
       "Value": "Primary defensive structure. |n|cfff5962dAbilities:|r True Sight|n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
     }
   ]
 }
