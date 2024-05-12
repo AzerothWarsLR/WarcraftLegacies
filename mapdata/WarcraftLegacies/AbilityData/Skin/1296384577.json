@@ -39,7 +39,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Transfers Chaotic Energy between the caster and a target. Drains \u003CABEM,DataB1\u003E mana and \u003CABEM,DataA1\u003E health per second from an enemy, or transfers \u003CABEM,DataE1\u003E mana and \u003CABEM,DataD1\u003E health per second to an ally.|n|nChaos Siphon can push the casters\u0027 mana over its maximum value, though excess mana drains off rapidly if not used.|nLasts 6 seconds."
+      "Value": "Drains \u003CABEM,DataB1\u003E mana and \u003CABEM,DataA1\u003E health per second from an enemy, or transfers \u003CABEM,DataE1\u003E mana and \u003CABEM,DataD1\u003E health per second to an ally.|nLasts 6 seconds."
     },
     {
       "Id": 1835101793,
