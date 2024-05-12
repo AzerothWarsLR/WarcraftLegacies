@@ -8,6 +8,11 @@
       "Id": 1885959285,
       "Type": 3,
       "Value": "Train |cffffcc00F|rel Beast"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light melee unit. "
     }
   ]
 }
