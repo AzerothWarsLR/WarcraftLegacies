@@ -221,13 +221,13 @@
     "CreationNumber": 16450
   },
   {
-    "State": 2,
+    "State": 6,
     "Life": 100,
     "TypeId": 1093677122,
     "Position": {
       "X": -9440,
       "Y": -20768,
-      "Z": -11.03125
+      "Z": -525.86536
     },
     "Rotation": 4.712389,
     "Scale": {
