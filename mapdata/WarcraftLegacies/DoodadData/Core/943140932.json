@@ -1,0 +1,29 @@
+{
+  "OldId": 1651265369,
+  "NewId": 943140932,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818846820,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Cyclone\\CycloneTarget.mdl"
+    },
+    {
+      "Id": 1935764836,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Id": 1835101796,
+      "Type": 3,
+      "Value": "Cyclone"
+    },
+    {
+      "Id": 1818588004,
+      "Type": 2,
+      "Value": 0
+    }
+  ]
+}

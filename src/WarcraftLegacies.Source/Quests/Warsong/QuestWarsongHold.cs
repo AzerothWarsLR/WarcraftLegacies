@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
     /// <inheritdoc/>
     public override string RewardFlavour =>
-      "The Warsong Clan has sail for the icy shores of Northrend and up a formidable encampment at Borean Tundra.";
+      "The Warsong Clan has set sail for the icy shores of Northrend and set up a formidable encampment at Borean Tundra.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "A new base at Borean Tundra in Northrend";
