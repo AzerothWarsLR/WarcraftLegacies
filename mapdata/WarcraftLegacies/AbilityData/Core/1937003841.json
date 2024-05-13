@@ -44,25 +44,46 @@
       "Pointer": 3,
       "Id": 863204437,
       "Type": 2,
-      "Value": 7
+      "Value": 10
     },
     {
       "Level": 3,
       "Pointer": 3,
       "Id": 863204437,
       "Type": 2,
-      "Value": 10
+      "Value": 15
     },
     {
       "Level": 4,
       "Pointer": 3,
       "Id": 863204437,
       "Type": 2,
-      "Value": 14
+      "Value": 20
     },
     {
       "Id": 1986358369,
       "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846427221,
+      "Type": 2,
+      "Value": 0.9
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 846427221,
+      "Type": 2,
+      "Value": 0.8
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 846427221,
+      "Type": 2,
+      "Value": 0.7
     }
   ]
 }
