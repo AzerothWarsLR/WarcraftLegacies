@@ -7,10 +7,11 @@ namespace WarcraftLegacies.Source.Factions
   public class BlackEmpire : Faction
   {
     /// <inheritdoc />
-    public BlackEmpire() : base("BlackEmpire", PLAYER_COLOR_TURQUOISE, "|C0000FFFF",
+    public BlackEmpire() : base("BlackEmpire", PLAYER_COLOR_MAROON, "|cff800000",
       @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
     {
       ControlPointDefenderUnitTypeId = UNIT_N0DV_CONTROL_POINT_DEFENDER_BLACK_EMPIRE_TOWER;
+      TraditionalTeam = TeamSetup.OldGods;
     }
     
     /// <inheritdoc />

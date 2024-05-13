@@ -67,6 +67,11 @@
       "Id": 1651864693,
       "Type": 3,
       "Value": "Primary defensive structure. Has a splash attack. "
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
     }
   ]
 }

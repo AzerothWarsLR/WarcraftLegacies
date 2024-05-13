@@ -8,7 +8,7 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "A0S4,A0UZ,A04Z,ACrk,Aiun,A0EQ"
+      "Value": "A020,A0S4,A0UZ,A0KK,ACrk,Aiun,A0EQ"
     },
     {
       "Id": 1684824693,
@@ -38,11 +38,11 @@
     },
     {
       "Id": 1647403381,
-      "Value": 60
+      "Value": 45
     },
     {
       "Id": 1647468917,
-      "Value": 60
+      "Value": 65
     },
     {
       "Id": 1869571701,
@@ -75,10 +75,6 @@
       "Value": "n0AT"
     },
     {
-      "Id": 1932616053,
-      "Value": 12
-    },
-    {
       "Id": 1937141109,
       "Value": 260
     },
@@ -97,15 +93,79 @@
     {
       "Id": 1919381621,
       "Type": 3,
-      "Value": "Rhme,Rhar,Rguv"
+      "Value": "RBES,Rhme,Rhar,Rguv"
     },
     {
       "Id": 1852137845,
-      "Value": 2
+      "Value": 1
     },
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1949393269,
+      "Type": 3,
+      "Value": "hero"
+    },
+    {
+      "Id": 1714512245,
+      "Value": 0
+    },
+    {
+      "Id": 1748066677,
+      "Value": 0
+    },
+    {
+      "Id": 1899061621,
+      "Value": 0
+    },
+    {
+      "Id": 1882284405,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 1.35
+    },
+    {
+      "Id": 828663925,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 828666229,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 828927349,
+      "Value": 0
+    },
+    {
+      "Id": 2050056565,
+      "Value": 0
+    },
+    {
+      "Id": 1915838837,
+      "Value": 128
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "debris,ground,item,structure,ward"
+    },
+    {
+      "Id": 829645685,
+      "Type": 3,
+      "Value": "MetalHeavySlice"
+    },
+    {
+      "Id": 1999724917,
+      "Type": 3,
+      "Value": "normal"
     }
   ]
 }
