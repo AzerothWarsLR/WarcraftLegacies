@@ -26,6 +26,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
           ABILITY_A10U_MANA_BURN_DALARAN_YOGG,
           ABILITY_A11O_BLACK_HOLE_KHADGAR,
         }
+      });
+
       var genesisAttack = new SpellOnAttack(UNIT_U029_STYGIAN_HULK_YOGG,
         ABILITY_ABES_GENESIS_ATTACK_ICON_STYGIAN_HULK)
       {
