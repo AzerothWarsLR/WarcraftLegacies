@@ -17,6 +17,7 @@ namespace WarcraftLegacies.Source.Factions
       _allLegendSetup = allLegendSetup;
       ControlPointDefenderUnitTypeId = UNIT_N0DV_CONTROL_POINT_DEFENDER_BLACK_EMPIRE_TOWER;
       TraditionalTeam = TeamSetup.OldGods;
+      StartingGold = 200;
     }
     
     /// <inheritdoc />
@@ -29,12 +30,15 @@ namespace WarcraftLegacies.Source.Factions
 
     private void RegisterQuests()
     {
-      var newQuest = AddQuest(new QuestMawofGorma(Regions.BlackEmpireOutpost1));
-      StartingQuest = newQuest;
+      var QuestGorma = AddQuest(new QuestMawofGorma(Regions.BlackEmpireOutpost1));
+      StartingQuest = QuestGorma;
  
-      AddQuest(new QuestWakingCity(Regions.Nyalotha));
+      AddQuest(new QuestWakingCity(QuestGorma, Regions.Nyalotha));
       AddQuest(new QuestGiftofFlesh());
       AddQuest(new QuestWakingDream(_allLegendSetup.BlackEmpire.Zaqul));
+      AddQuest(new QuestMawofGorath(_allLegendSetup.BlackEmpire.Zonozz));
+      AddQuest(new QuestMawofShuma(_allLegendSetup.BlackEmpire.Yorsahj));
+      AddQuest(new QuestBladeoftheBlackEmpire());
     }
 
     private void RegisterObjectLimits()

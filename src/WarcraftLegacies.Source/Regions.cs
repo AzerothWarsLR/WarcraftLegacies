@@ -343,7 +343,7 @@ public static class Regions
 	public static Rectangle WinterspringAmbient1 { get; set; } = new Rectangle(-11936f, 9216f, -8512f, 12096f);
 	public static Rectangle WinterspringAmbient2 { get; set; } = new Rectangle(-9792f, 5792f, -8416f, 9088f);
 	public static Rectangle WorldTunnelExit { get; set; } = new Rectangle(17472f, -11584f, 17792f, -11040f);
-	public static Rectangle WyrmrestTemple { get; set; } = new Rectangle(-928f, 17056f, -288f, 17824f);
+	public static Rectangle WyrmrestTemple { get; set; } = new Rectangle(-960f, 16928f, -320f, 17696f);
 	public static Rectangle YoggSaronPrison { get; set; } = new Rectangle(3712f, 23104f, 4448f, 23712f);
 	public static Rectangle Zandalari_Echo_Unlock { get; set; } = new Rectangle(-9280f, -5440f, -8384f, -4512f);
 	public static Rectangle ZandalarUnlock { get; set; } = new Rectangle(-5440f, -17152f, -2400f, -14656f);

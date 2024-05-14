@@ -3,6 +3,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
@@ -20,15 +21,17 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     /// Initializes a new instance of the <see cref="QuestWakingCity"/> class.
     /// </summary>
     /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
-    public QuestWakingCity(Rectangle rescueRect) : base("The Waking City",
+    public QuestWakingCity(QuestData prerequisite, Rectangle rescueRect) : base("The Waking City",
       "Adventurers from Azeroth are threatening our God N'zoth, we need to annihilate them.",
       @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
     {
       AddObjective(new ObjectiveControlPoint(UNIT_NNYA_NY_ALOTHA_THE_WAKING_CITY));
+      AddObjective(new ObjectiveQuestComplete(prerequisite));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      ResearchId = UPGRADE_RBIT_QUEST_COMPLETED_LOCUS_OF_INFINITE_TRUTH;
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
+        filterUnit => filterUnit.GetTypeId() != FourCC("ngme"));
+      ResearchId = UPGRADE_RBIT_QUEST_COMPLETED_THE_WAKING_CITY;
 
     }
 
