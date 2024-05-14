@@ -50,10 +50,12 @@ namespace MacroTools.Powers
       if (GetRandomReal(0, 1) > _chance 
           || !EligibilityCondition(dyingUnit) 
           || _noReturnRect.Contains(dyingUnit.GetPosition())
+          || dyingUnit.IsType(UNIT_TYPE_RESISTANT)
           || dyingUnit.IsType(UNIT_TYPE_HERO) 
           || dyingUnit.IsType(UNIT_TYPE_MECHANICAL) 
           || dyingUnit.IsIllusion() 
           || dyingUnit.IsType(UNIT_TYPE_SUMMONED))
+
         return;
       AddSpecialEffect(@"Abilities\Spells\Items\AIil\AIilTarget.mdl", _returnPoint.X, _returnPoint.Y)
         .SetLifespan();
