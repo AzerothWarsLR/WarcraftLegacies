@@ -38,6 +38,8 @@ public static class Regions
 	public static Rectangle Biodome1 { get; set; } = new Rectangle(1088f, -19392f, 1632f, -18880f);
 	public static Rectangle Biodome2 { get; set; } = new Rectangle(1824f, -21248f, 2368f, -20736f);
 	public static Rectangle Biodome3 { get; set; } = new Rectangle(864f, -20512f, 1408f, -20000f);
+	public static Rectangle BlackEmpireOutpost1 { get; set; } = new Rectangle(-28672f, -10240f, -25760f, -6848f);
+	public static Rectangle BlackEmpireOutpost2 { get; set; } = new Rectangle(-25312f, -7424f, -22752f, -4640f);
 	public static Rectangle BlackrockUnlock { get; set; } = new Rectangle(11840f, -12224f, 13632f, -10208f);
 	public static Rectangle BlackTempleBase { get; set; } = new Rectangle(2112f, -31584f, 6496f, -28288f);
 	public static Rectangle BlademasterUnlock { get; set; } = new Rectangle(4352f, -10496f, 5024f, -10112f);
@@ -205,6 +207,7 @@ public static class Regions
 	public static Rectangle NorthrendRock2 { get; set; } = new Rectangle(3296f, 17536f, 4064f, 18528f);
 	public static Rectangle NorthrendRock3 { get; set; } = new Rectangle(3008f, 16224f, 3776f, 17216f);
 	public static Rectangle NorthrendRock4 { get; set; } = new Rectangle(-704f, 21280f, 160f, 22144f);
+	public static Rectangle Nyalotha { get; set; } = new Rectangle(-28640f, -11424f, -21984f, -2848f);
 	public static Rectangle Orgrimmar { get; set; } = new Rectangle(-9824f, -2080f, -5824f, 1248f);
 	public static Rectangle OrgrimmarFlight { get; set; } = new Rectangle(-9728f, -800f, -9568f, -640f);
 	public static Rectangle Outland_Ships { get; set; } = new Rectangle(-7104f, -32256f, 6016f, -18208f);
@@ -349,8 +352,5 @@ public static class Regions
 	public static Rectangle ZulAman_trolls { get; set; } = new Rectangle(20288f, 11648f, 22848f, 17440f);
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
-	public static Rectangle Nyalotha { get; set; } = new Rectangle(-28640f, -11424f, -21984f, -2848f);
-	public static Rectangle BlackEmpireOutpost1 { get; set; } = new Rectangle(-28672f, -10240f, -25760f, -6848f);
-	public static Rectangle BlackEmpireOutpost2 { get; set; } = new Rectangle(-25312f, -7424f, -22752f, -4640f);
 
 }

@@ -10,10 +10,10 @@
     "AbilityData": [],
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "TypeId": 825765992,
+    "TypeId": 943796328,
     "Position": {
-      "X": -19264,
-      "Y": -25920
+      "X": -18956.836,
+      "Y": -25624.057
     },
     "Rotation": 4.71238899230957,
     "Scale": {
@@ -21,9 +21,9 @@
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 825765992,
+    "SkinId": 943796328,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 3138
+    "CreationNumber": 3220
   }
 ]
