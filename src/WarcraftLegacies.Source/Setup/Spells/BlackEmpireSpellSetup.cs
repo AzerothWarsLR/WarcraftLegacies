@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
     /// </summary>
     public static void Setup()
     {
-      PassiveAbilityManager.Register(new NoTargetSpellOnCast(UNIT_E01D_MOUTH_OF_N_ZOTH_YOGG, ABILITY_AXK2_VOID_RIFT_ICON_XKORR)
+      PassiveAbilityManager.Register(new NoTargetSpellOnCast(UNIT_E01D_HARBINGER_OF_NY_ALOTHA_YOGG, ABILITY_AXK2_VOID_RIFT_ICON_XKORR)
       {
         DummyAbilityId = ABILITY_AXK1_VOIDBOLTDUMMY_X_KORR_DUMMY_SPELL,
         DummyOrderId = OrderId("fanofknives"),
