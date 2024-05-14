@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
   {
     public LegendaryHero Nzoth { get; }
     public LegendaryHero Zonozz { get; }
-    public LegendaryHero Xkorr { get; }
+    public LegendaryHero Zaqul { get; }
     public LegendaryHero Yorsahj { get; }
 
     public LegendBlackEmpire(PreplacedUnitSystem preplacedUnitSystem)
@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 7000,
       };
 
-      Xkorr = new LegendaryHero("X'korr the Compelling")
+      Zaqul = new LegendaryHero("X'korr the Compelling")
       {
         UnitType = UNIT_E01D_MOUTH_OF_N_ZOTH_YOGG,
         StartingXp = 7000,
@@ -43,7 +43,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       LegendaryHeroManager.Register(Nzoth);
       LegendaryHeroManager.Register(Zonozz);
-      LegendaryHeroManager.Register(Xkorr);
+      LegendaryHeroManager.Register(Zaqul);
       LegendaryHeroManager.Register(Yorsahj);
     }
   }

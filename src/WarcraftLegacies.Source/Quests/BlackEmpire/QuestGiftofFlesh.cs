@@ -8,13 +8,13 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
   /// <summary>
   /// Get to Ranazjar to unlock the Aqir
   /// </summary>
-  public sealed class QuestGuestofFlesh : QuestData
+  public sealed class QuestGiftofFlesh : QuestData
   {
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="QuestGuestofFlesh"/> class.
+    /// Initializes a new instance of the <see cref="QuestGiftofFlesh"/> class.
     /// </summary>
-    public QuestGuestofFlesh() : base("Gift of Flesh",
+    public QuestGiftofFlesh() : base("Gift of Flesh",
       "The Aqir are one of the oldest followers of the Old Gods, by connecting to the sea again, N'zoth could call for their service once again",
       @"ReplaceableTextures\CommandButtons\BTNCurse of Flesh.blp")
     {

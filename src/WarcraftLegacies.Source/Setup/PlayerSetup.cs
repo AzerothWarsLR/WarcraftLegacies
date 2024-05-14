@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Setup
       Player(7).SetTeam(TeamSetup.NorthAlliance);
       SetupPlayer(Player(9), new Lordaeron(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
       SetupPlayer(Player(11), new Druids(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
-      SetupPlayer(Player(12), new BlackEmpire());
+      SetupPlayer(Player(12), new BlackEmpire(_allLegendSetup));
       SetupPlayer(Player(16), new Ahnqiraj(_allLegendSetup));
       SetupPlayer(Player(18), new Sentinels(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
       Player(15).SetTeam(TeamSetup.Outland);

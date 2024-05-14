@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
   {
     private readonly LegendaryHero _zaqul;
 
-    public QuestWakingDream(PreplacedUnitSystem preplacedUnitSystem, LegendaryHero zaqul) : base("Waking Dream",
+    public QuestWakingDream(LegendaryHero zaqul) : base("Waking Dream",
       "Countless ages ago, Warlord Zon'ozz was one of the strongest generals of N'zoth. In this new time of need, he needs to be called to Azeroth once more to wage war.",
       @"ReplaceableTextures\CommandButtons\BTNDarkPortal.blp")
     {
