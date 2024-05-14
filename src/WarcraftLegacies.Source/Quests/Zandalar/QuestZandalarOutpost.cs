@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     {
       AddObjective(_enterZandalarRegion = new ObjectiveAnyUnitInRect(Regions.Zandalari_Echo_Unlock, "Zandalar Outpost", true));
       AddObjective(new ObjectiveSelfExists());
-      AddObjective(new ObjectiveExpire(180, Title));
+      AddObjective(new ObjectiveExpire(600, Title));
 
       ResearchId = UPGRADE_VQ02_QUEST_COMPLETED_ZANDALAR_OUTPOST;
       _rescueUnits = Regions.Zandalari_Echo_Unlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     {
       AddObjective(new ObjectiveControlPoint(UNIT_N0BK_LOST_CITY_OF_THE_TOL_VIR));
       AddObjective(new ObjectiveControlPoint(UNIT_N0BD_ULDUM));
-      AddObjective(new ObjectiveExpire(180, Title));
+      AddObjective(new ObjectiveExpire(600, Title));
       AddObjective(new ObjectiveSelfExists());
       
       ResearchId = UPGRADE_VQ03_QUEST_COMPLETED_ULDUM_EXCAVATION;
