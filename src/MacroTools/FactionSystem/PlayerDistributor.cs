@@ -13,9 +13,6 @@ namespace MacroTools.FactionSystem
   {
     /// <summary>How much gold is refunded from units that get refunded when a player leaves.</summary>
     private const float RefundMultiplier = 1;
-
-    /// <summary>How much experience is transferred from heroes that leave the game.</summary>
-    private const float ExperienceTransferMultiplier = 1;
     
     /// <summary>The gold cost value of a hero.</summary>
     public const int HeroCost = 100;
@@ -26,20 +23,9 @@ namespace MacroTools.FactionSystem
     public static void DistributePlayer(player player)
     {
       var eligiblePlayers = GetPlayersEligibleForReceivingDistribution(player);
-
-      if (eligiblePlayers.Any() && GameTime.GetGameTime() > GameTime.TurnDuration)
-        DistributePlayer(player, eligiblePlayers);
-      else
-        player
-          .RemoveAllResources()
-          .RemoveAllUnits();
-    }
-
-    private static void DistributePlayer(player player, List<player> eligiblePlayers)
-    {
       var resourcesToRefund = DistributeAndRefundUnits(player, eligiblePlayers);
       DistributeGold(player, eligiblePlayers, resourcesToRefund);
-      DistributeExperience(eligiblePlayers, resourcesToRefund.Experience);
+      DistributeExperience(eligiblePlayers, resourcesToRefund.Experience);    
     }
 
     private static List<player> GetPlayersEligibleForReceivingDistribution(player playerBeingDistributed)
@@ -64,6 +50,7 @@ namespace MacroTools.FactionSystem
 
     private static void DistributeExperience(List<player> playersToDistributeTo, int experience)
     {
+      var experiencePerPlayer = experience / playersToDistributeTo.Count;
       foreach (var ally in playersToDistributeTo)
       {
         var allyHeroes = CreateGroup()
@@ -73,7 +60,7 @@ namespace MacroTools.FactionSystem
 
         foreach (var hero in allyHeroes)
         {
-          var expToAdd = (int)((float)experience / (playersToDistributeTo.Count - 1) / allyHeroes.Count * ExperienceTransferMultiplier);
+          var expToAdd = (int)((float)experiencePerPlayer / allyHeroes.Count);
           AddHeroXP(hero, expToAdd, true);
         }
       }
