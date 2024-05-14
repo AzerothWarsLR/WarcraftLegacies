@@ -1,6 +1,8 @@
 ﻿using MacroTools;
 using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
+using MacroTools.SpellSystem;
+using WarcraftLegacies.Source.Spells;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -34,6 +36,22 @@ namespace WarcraftLegacies.Source.Setup.Spells
         },
         Effect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl"
       });
+
+      var stormEarthandFire = new StormEarthandFire(ABILITY_A0HM_STORM_EARTH_AND_FIRE_WARSONG_CHEN_SUMMON)
+      {
+        UnitType1 = FourCC("npn4"),
+        UnitType2 = FourCC("npn5"),
+        UnitType3 = FourCC("npn6"),
+        Duration = 60.0F,
+        EffectTarget = @"Abilities\Spells\Items\AIil\AIilTarget.mdl",
+        EffectScaleTarget = 1.0F,
+        HealthBonusBase = -0.15F,
+        HealthBonusLevel = 0.15F,
+        DamageBonusBase = -0.15F,
+        DamageBonusLevel = 0.15F
+      };
+      SpellSystem.Register(stormEarthandFire);
+      //Todo: inappropriately named
     }
   }
 }

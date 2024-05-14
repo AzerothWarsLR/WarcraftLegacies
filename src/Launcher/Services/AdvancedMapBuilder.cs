@@ -58,8 +58,12 @@ namespace Launcher.Services
       };
 
       mapBuilder.Build(mapFilePath, archiveCreateOptions);
+      Console.WriteLine($"Exported map to {Path.GetFullPath(mapFilePath)}.");
       if (options.Launch)
+      {
+        Console.WriteLine("Launching map in Warcraft 3...");
         LaunchGame(_compilerSettings.Warcraft3ExecutablePath, mapFilePath);
+      }
     }
 
     /// <summary>
@@ -81,8 +85,6 @@ namespace Launcher.Services
     
     private void SupplementMap(Map map, AdvancedMapBuilderOptions options)
     {
-      ApplyMigrations(map);
-      
       if (options.SetMapTitles)
         SetMapTitles(map, _mapSettings.Version);
 
@@ -90,7 +92,10 @@ namespace Launcher.Services
         SetTestPlayerSlot(map, _compilerSettings.TestingPlayerSlot);
 
       if (options.SourceCodeProjectFolderPath != null)
+      {
+        ApplyMigrations(map);
         AddCSharpCode(map, options.SourceCodeProjectFolderPath, _compilerSettings);
+      }
     }
 
     private static void ApplyMigrations(Map map)

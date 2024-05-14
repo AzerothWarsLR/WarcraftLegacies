@@ -41,7 +41,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Channels a Storm Cloud at the target location after casting for \u003CA04L,Cast1\u003E seconds. The Storm Cloud will attack nearby enemy units, dealing \u003Cn03J,maxdmg1\u003E Chaos damage with each attack. In addition, the Storm Cloud will deal \u003CA0CZ,DataA1\u003E damage per second to nearby enemy air units.|nLasts \u003CA04L,Dur1\u003E seconds."
+      "Value": "Channels a Storm Cloud at the target location after casting for \u003CA04L,Cast1\u003E seconds. The Storm Cloud will attack nearby enemy units, dealing 50 Chaos damage with each attack. In addition, the Storm Cloud will deal \u003CA0CZ,DataA1\u003E damage per second to nearby enemy air units.|nLasts \u003CA04L,Dur1\u003E seconds."
     },
     {
       "Level": 2,

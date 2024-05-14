@@ -41,12 +41,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\BlackEmpireTowerEndlessFountain.mdl"
-    },
-    {
-      "Id": 1768841589,
-      "Type": 3,
-      "Value": "upgrade,second"
+      "Value": "war3mapImported/Building_NyAlothaObelisk.mdl"
     },
     {
       "Id": 1835101813,
@@ -66,7 +61,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Primary defensive structure. |n|cfff5962dUpgrades to:|r Improved Tidal Watcher|n|cfff5962dAbilities:|r Multishot|n|n|cffffcc00Attacks land units.|r"
+      "Value": "Primary defensive structure. "
     }
   ]
 }

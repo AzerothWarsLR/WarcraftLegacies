@@ -1,0 +1,83 @@
+{
+  "OldId": 1953195119,
+  "NewId": 827213922,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroMastermind.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1635083125,
+      "Type": 3,
+      "Value": "UI\\Widgets\\Console\\Human\\infocard-witchdoctor.blp"
+    },
+    {
+      "Id": 1853186933,
+      "Type": 3,
+      "Value": "Initiate, Adept, Master"
+    },
+    {
+      "Id": 1953850229,
+      "Type": 3,
+      "Value": "- Obelisk of Nyalotha,- Obelisk of Nyalotha|n- Chaos Siphon,- Obelisk of Nyalotha|n- Chaos Siphon|n- Death and Decay"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(yogg)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\FacelessOneMastermind.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Herald"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.7
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Herald"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Herald to the Dark God N\u0027zoth."
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "PitLord"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\BlackArrow\\BlackArrowMissile.mdl"
+    }
+  ]
+}

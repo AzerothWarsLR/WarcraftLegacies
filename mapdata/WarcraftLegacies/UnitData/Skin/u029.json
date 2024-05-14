@@ -21,10 +21,6 @@
       "Value": 0.15
     },
     {
-      "Id": 2020631157,
-      "Value": 2
-    },
-    {
       "Id": 1667462261,
       "Value": 1
     },
@@ -41,17 +37,12 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "E"
+      "Value": "W"
     },
     {
       "Id": 2053990773,
       "Type": 2,
       "Value": 60
-    },
-    {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 1
     },
     {
       "Id": 1835101813,
@@ -61,7 +52,7 @@
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 2
+      "Value": 2.6
     },
     {
       "Id": 1751675765,
@@ -91,12 +82,22 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Heavy melee Siege unit.|n|cfff5962dAbilities:|r Heavy Bash|n|cff99b4d1Can only train 12.|r|n|n|cffffcc00Attacks land units.|r"
+      "Value": "Heavy range unit."
     },
     {
       "Id": 1684960117,
       "Type": 3,
       "Value": "KotoBeast"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\NightFlyerPurpleSmall.mdl"
     }
   ]
 }

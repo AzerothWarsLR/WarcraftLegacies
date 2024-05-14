@@ -3,6 +3,7 @@ using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
+using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.Slipstream;
 
 namespace WarcraftLegacies.Source.Setup.Spells
@@ -41,6 +42,23 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DummyAbilityId = ABILITY_A130_RESURRECTION_STORMWIND_CHAMPION_SINGLE,
         DummyAbilityOrderId = OrderId("resurrection"),
       });
+
+      var electricStrike = new ElectricStrike(ABILITY_A0RC_ELECTRIC_STRIKE_DARK_GREEN_WIZARD_S_SANCTUM)
+      {
+        StunId = ABILITY_A0RD_ELECTRIC_STRIKE_MINI_STUN_DARK_GREEN,
+        PurgeId = ABILITY_APRG_PURGE_ELECTRIKE_STRIKE,
+        PurgeOrder = OrderId("purge"),
+        StunOrder = OrderId("firebolt"),
+        Radius = 500f,
+        Effect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
+      };
+      SpellSystem.Register(electricStrike);
+
+      var manaSyphon = new GrantMana(ABILITY_A0RG_MANA_SYPHON_STORMWIND_MAGE_TOWER)
+      {
+        ManaToGrant = 250
+      };
+      SpellSystem.Register(manaSyphon);
     }
   }
 }

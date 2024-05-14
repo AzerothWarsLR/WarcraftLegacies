@@ -61,7 +61,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Unique gateway that causes units spawned from normal Demon Gates to appear at this location instead.|n|cfff5962dAbilities:|r Rally, Self Destruct"
+      "Value": "Unique gateway that causes units spawned from normal Demon Gates to appear at this location instead."
     }
   ]
 }

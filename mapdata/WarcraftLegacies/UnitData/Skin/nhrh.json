@@ -3,5 +3,11 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Medium flying ranged unit that hurls bolts of lightning. Can Curse opponents and cast Sleep. "
+    }
+  ]
 }

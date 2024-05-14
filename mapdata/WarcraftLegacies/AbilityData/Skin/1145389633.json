@@ -1,0 +1,68 @@
+{
+  "OldId": 1684297025,
+  "NewId": 1145389633,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Yogg-Herald)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Death and Decay - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Damages everything in its area of effect by a percentage of its base hit points per second. Also destroys trees.|nLasts 15 seconds.|n|n|cffffcc00Level 1|r - Decays for 4% hit points.|n|cffffcc00Level 2|r - Decays for 5% hit points.|n|cffffcc00Level 3|r - Decays for 6% hit points."
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Death And Decay - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Death And Decay - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Damages everything in its area of effect by \u003CAUdd,DataA2,%\u003E% of its base hit points per second. Also destroys trees. |nLasts \u003CAUdd,Dur2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Damages everything in its area of effect by \u003CAUdd,DataA3,%\u003E% of its base hit points per second. Also destroys trees. |nLasts \u003CAUdd,Dur3\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Damages everything in its area of effect by \u003CABED,DataA1,%\u003E% of its base hit points per second. |nLasts \u003CABED,Dur1\u003E seconds."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    }
+  ]
+}

@@ -63,7 +63,7 @@
         "Y": -2880
       },
       "AllyLowPriorityFlags": 4456450,
-      "AllyHighPriorityFlags": 475136,
+      "AllyHighPriorityFlags": 462848,
       "EnemyLowPriorityFlags": 262144,
       "EnemyHighPriorityFlags": 262144
     },
@@ -172,13 +172,13 @@
         "X": -9344,
         "Y": 10560
       },
-      "AllyLowPriorityFlags": 475144,
+      "AllyLowPriorityFlags": 462856,
       "AllyHighPriorityFlags": 76,
       "EnemyLowPriorityFlags": 262144,
       "EnemyHighPriorityFlags": 262144
     },
     {
-      "Id": 14,
+      "Id": 12,
       "Controller": 1,
       "Race": 3,
       "Flags": 1,
@@ -187,7 +187,7 @@
         "X": -23872,
         "Y": -8960
       },
-      "AllyHighPriorityFlags": 196608
+      "AllyHighPriorityFlags": 32768
     },
     {
       "Id": 15,
@@ -200,7 +200,7 @@
         "Y": 5952
       },
       "AllyLowPriorityFlags": 4194816,
-      "AllyHighPriorityFlags": 477185
+      "AllyHighPriorityFlags": 464897
     },
     {
       "Id": 16,
@@ -212,7 +212,7 @@
         "X": -23232,
         "Y": -19584
       },
-      "AllyHighPriorityFlags": 147456
+      "AllyHighPriorityFlags": 131072
     },
     {
       "Id": 17,
@@ -224,7 +224,7 @@
         "X": -13504,
         "Y": -20160
       },
-      "AllyHighPriorityFlags": 81920
+      "AllyHighPriorityFlags": 65536
     },
     {
       "Id": 18,
@@ -4378,10 +4378,6 @@
     },
     {
       "Players": 16777215,
-      "Id": 1261514856
-    },
-    {
-      "Players": 16777215,
       "Id": 1278226543
     },
     {
@@ -6714,10 +6710,6 @@
     },
     {
       "Players": 1,
-      "Id": 1093808213
-    },
-    {
-      "Players": 1,
       "Id": 1110585429
     },
     {
@@ -7215,6 +7207,14 @@
     {
       "Players": 14986751,
       "Id": 1446064229
+    },
+    {
+      "Players": 16777215,
+      "Id": 1261514856
+    },
+    {
+      "Players": 1,
+      "Id": 1093808213
     },
     {
       "Players": 131071,
