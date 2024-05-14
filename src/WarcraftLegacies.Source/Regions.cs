@@ -109,7 +109,7 @@ public static class Regions
 	public static Rectangle FeathermoonUnlock { get; set; } = new Rectangle(-21376f, -10272f, -19776f, -7840f);
 	public static Rectangle Fenris_ships { get; set; } = new Rectangle(5760f, 4960f, 13024f, 8128f);
 	public static Rectangle FeralasAmbient1 { get; set; } = new Rectangle(-17408f, -11552f, -14336f, -7904f);
-	public static Rectangle FeralasAmbient2 { get; set; } = new Rectangle(-23808f, -14464f, -17248f, -5536f);
+	public static Rectangle FeralasAmbient2 { get; set; } = new Rectangle(-22976f, -14464f, -17248f, -5536f);
 	public static Rectangle FeralasEmeraldPortal { get; set; } = new Rectangle(-18144f, -6464f, -17696f, -6208f);
 	public static Rectangle Fjord { get; set; } = new Rectangle(1536f, 13408f, 8192f, 20320f);
 	public static Rectangle FountainOfHealthAlterac { get; set; } = new Rectangle(10656f, 5536f, 11104f, 6016f);
@@ -349,5 +349,8 @@ public static class Regions
 	public static Rectangle ZulAman_trolls { get; set; } = new Rectangle(20288f, 11648f, 22848f, 17440f);
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
+	public static Rectangle Nyalotha { get; set; } = new Rectangle(-28640f, -11424f, -21984f, -2848f);
+	public static Rectangle BlackEmpireOutpost1 { get; set; } = new Rectangle(-28672f, -10240f, -25760f, -6848f);
+	public static Rectangle BlackEmpireOutpost2 { get; set; } = new Rectangle(-25312f, -7424f, -22752f, -4640f);
 
 }
