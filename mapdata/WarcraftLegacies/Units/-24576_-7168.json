@@ -1,57 +1,56 @@
 [
   {
     "Flags": 2,
-    "OwnerId": 27,
+    "OwnerId": 24,
     "HP": -1,
     "MP": -1,
-    "TargetAcquisition": -1,
+    "TargetAcquisition": -2,
     "HeroLevel": 1,
     "InventoryData": [],
     "AbilityData": [],
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "TypeId": 1380003950,
+    "TypeId": 942747752,
     "Position": {
-      "X": -27712,
-      "Y": -9088
+      "X": -24796.955,
+      "Y": -7288.108
     },
-    "Rotation": 4.71238899230957,
+    "Rotation": 0.17953598499298096,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1380003950,
+    "SkinId": 942747752,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 2205
+    "CreationNumber": 3088
   },
   {
     "Flags": 2,
-    "OwnerId": 27,
+    "OwnerId": 24,
     "HP": -1,
-    "MP": -1,
-    "TargetAcquisition": -1,
+    "TargetAcquisition": -2,
     "HeroLevel": 1,
     "InventoryData": [],
     "AbilityData": [],
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "TypeId": 826421358,
+    "TypeId": 1835561839,
     "Position": {
-      "X": -28032,
-      "Y": -8704
+      "X": -24759.227,
+      "Y": -7179.84
     },
-    "Rotation": 4.71238899230957,
+    "Rotation": 5.1035919189453125,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 826421358,
+    "SkinId": 1835561839,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 2317
+    "CreationNumber": 3094
   },
   {
     "Flags": 2,
@@ -64,20 +63,20 @@
     "AbilityData": [],
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "TypeId": 1853188207,
+    "TypeId": 1768844136,
     "Position": {
-      "X": -27681.797,
-      "Y": -8828.325
+      "X": -24604.893,
+      "Y": -7201.547
     },
-    "Rotation": 5.161427974700928,
+    "Rotation": 4.595304489135742,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1853188207,
+    "SkinId": 1768844136,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 3079
+    "CreationNumber": 3104
   }
 ]

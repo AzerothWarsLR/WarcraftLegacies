@@ -39,7 +39,6 @@ public static class Regions
 	public static Rectangle Biodome2 { get; set; } = new Rectangle(1824f, -21248f, 2368f, -20736f);
 	public static Rectangle Biodome3 { get; set; } = new Rectangle(864f, -20512f, 1408f, -20000f);
 	public static Rectangle BlackEmpireOutpost1 { get; set; } = new Rectangle(-28672f, -10240f, -25760f, -6848f);
-	public static Rectangle BlackEmpireOutpost2 { get; set; } = new Rectangle(-25312f, -7424f, -22752f, -4640f);
 	public static Rectangle BlackrockUnlock { get; set; } = new Rectangle(11840f, -12224f, 13632f, -10208f);
 	public static Rectangle BlackTempleBase { get; set; } = new Rectangle(2112f, -31584f, 6496f, -28288f);
 	public static Rectangle BlademasterUnlock { get; set; } = new Rectangle(4352f, -10496f, 5024f, -10112f);
@@ -233,7 +232,7 @@ public static class Regions
 	public static Rectangle Quelthalas { get; set; } = new Rectangle(15136f, 13536f, 21408f, 23168f);
 	public static Rectangle QuelthalasAmbient { get; set; } = new Rectangle(16224f, 11776f, 20224f, 17440f);
 	public static Rectangle RagnarosSummon { get; set; } = new Rectangle(12192f, -10784f, 12512f, -10464f);
-	public static Rectangle RanazjarAmbient { get; set; } = new Rectangle(-21344f, -5536f, -19424f, -1248f);
+	public static Rectangle RanazjarAmbient { get; set; } = new Rectangle(-21344f, -5504f, -19424f, -1248f);
 	public static Rectangle Ratchet_Unlock_1 { get; set; } = new Rectangle(-10624f, -4672f, -10144f, -3392f);
 	public static Rectangle RiseBaseUnlock { get; set; } = new Rectangle(-13056f, 5440f, -11072f, 7488f);
 	public static Rectangle RuinOfDalaran { get; set; } = new Rectangle(9152f, 5056f, 9312f, 5248f);
