@@ -196,8 +196,8 @@
       "Flags": 1,
       "Name": "Illidari",
       "StartPosition": {
-        "X": 384,
-        "Y": 5952
+        "X": 640,
+        "Y": 6016
       },
       "AllyLowPriorityFlags": 4194816,
       "AllyHighPriorityFlags": 464897
@@ -233,7 +233,7 @@
       "Flags": 1,
       "Name": "Sentinels",
       "StartPosition": {
-        "X": -20672,
+        "X": -20736,
         "Y": 8448
       },
       "AllyLowPriorityFlags": 4194321,
