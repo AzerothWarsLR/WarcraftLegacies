@@ -12,7 +12,7 @@
     {
       "Id": 1650550901,
       "Type": 3,
-      "Value": "ANsg,A0ON,Aamk,AHbz,A00Y"
+      "Value": "ANsg,Aamk,AHbz"
     },
     {
       "Id": 1836083317,
@@ -38,12 +38,12 @@
     {
       "Id": 1667330677,
       "Type": 3,
-      "Value": "orc"
+      "Value": "naga"
     },
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "A11J,A0GK,AInv"
+      "Value": "A0GK,AInv"
     },
     {
       "Id": 1633772661,
@@ -83,6 +83,11 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

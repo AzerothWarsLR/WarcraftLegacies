@@ -1,0 +1,105 @@
+{
+  "OldId": 1718832961,
+  "NewId": 1095976257,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSummonAirElemental.BLP"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(elemental-Ertan)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Summon Air Elemental"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSummonAirElemental.BLP"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Summon Air Elemental - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Summons an air elemental to attack the hero\u0027s enemies. |nLasts 60 seconds.|r |n|n|cffffcc00Level 1|r - Summons 2 Air Elementals|n|cffffcc00Level 2|r - Summons 3 Air Elementals.|n|cffffcc00Level 3|r - Summons 4 Air  Elementals.|n|cffffcc00Level 4|r - Summons 5 Air  Elementals."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Air Elemental - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Air Elemental - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Air Elemental - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Summon Air Elemental - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons 2 Air Elementals with Evasion to attack the hero\u0027s enemies. |n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons 3 Air Elementals with Evasion to attack the hero\u0027s enemies. |n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons 4 Air Elementals with Evasion to attack the hero\u0027s enemies. |n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons 5 Air Elementals with Evasion to attack the hero\u0027s enemies. |n|n|cffffcc00Attacks land and air units.|r"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "OldId": 1819568981,
-  "NewId": 1395732565,
+  "NewId": 1313621333,
   "Unk": [
     0
   ],
@@ -22,7 +22,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Windlord"
+      "Value": "The Tidehunter"
     },
     {
       "Id": 1651864693,
@@ -32,12 +32,12 @@
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "Al-Akir"
+      "Value": "Neptulon"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Hero_WindlordV1.mdl"
+      "Value": "war3mapImported\\TidalLord.mdl"
     },
     {
       "Id": 1868786037,
@@ -52,27 +52,27 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "Revive Al-Akir"
+      "Value": "Revive Neptulon"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Summon Al-Akir"
+      "Value": "Summon Neptulon"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "Revive Al-Akir"
+      "Value": "Revive Neptulon"
     },
     {
       "Id": 1831952757,
       "Type": 3,
-      "Value": "Abilities\\Spells\\Orc\\LightningShield\\LightningShieldTarget.mdl"
+      "Value": ".mdl"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 3
+      "Value": 2
     },
     {
       "Id": 1668510581,
