@@ -73,6 +73,10 @@
       "Id": 1831952757,
       "Type": 3,
       "Value": "Abilities\\Spells\\Other\\BlackArrow\\BlackArrowMissile.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 255
     }
   ]
 }

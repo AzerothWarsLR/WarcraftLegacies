@@ -1,0 +1,19 @@
+{
+  "OldId": 1936286785,
+  "NewId": 1145849153,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(whipping wind)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    }
+  ]
+}

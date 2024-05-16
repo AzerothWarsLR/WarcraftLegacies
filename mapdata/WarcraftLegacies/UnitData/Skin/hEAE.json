@@ -39,6 +39,10 @@
       "Id": 1831952757,
       "Type": 3,
       "Value": "Abilities\\Weapons\\GargoyleMissile\\GargoyleMissile.mdl"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 255
     }
   ]
 }
