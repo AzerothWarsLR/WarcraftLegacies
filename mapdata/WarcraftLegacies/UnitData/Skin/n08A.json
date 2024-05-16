@@ -16,7 +16,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Tolvir Barracks)"
+      "Value": "(elemental Barracks)"
     },
     {
       "Id": 1953458293,
@@ -57,6 +57,16 @@
       "Id": 1633907573,
       "Type": 1,
       "Value": 0.75
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Arcane Foundry"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Arcane Foundry"
     }
   ]
 }
