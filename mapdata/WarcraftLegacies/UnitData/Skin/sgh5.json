@@ -38,6 +38,21 @@
       "Id": 1885959285,
       "Type": 3,
       "Value": "Train Ballista Carrier"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNElemental-Fencer.blp"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.1
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\BallistaMissile\\BallistaMissile.mdl"
     }
   ]
 }

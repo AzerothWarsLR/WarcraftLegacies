@@ -43,7 +43,7 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "A0GK,AInv"
+      "Value": "A0NN,A0GK,AInv"
     },
     {
       "Id": 1633772661,
@@ -88,6 +88,11 @@
       "Id": 1887007861,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": 1953654901,
+      "Type": 3,
+      "Value": "always"
     }
   ]
 }

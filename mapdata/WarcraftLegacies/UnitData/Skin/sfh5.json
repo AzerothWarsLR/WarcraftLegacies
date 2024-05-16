@@ -33,12 +33,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Wind Revenant"
+      "Value": "Air Revenant"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Train Wind Revenant"
+      "Value": "Train Air Revenant"
     },
     {
       "Id": 1831952757,
@@ -48,7 +48,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNFacelessOneCultist.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAirRevenant.blp"
     },
     {
       "Id": 1768841589,
