@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(Constants.UNIT_N07N_PAVILION_ELEMENTAL_MAGIC, Unlimited);
       yield return new(Constants.UNIT_N08B_DJINN_PALACE_ELEMENTAL_SPECIALIST, Unlimited);
       yield return new(Constants.UNIT_N07J_FORGE_OF_WISHES_ELEMENTAL_SHOP, Unlimited);
-      yield return new(Constants.UNIT_N078_ALTAR_OF_THE_WINDS_ELEMENTAL_ALTAR, Unlimited);
+      yield return new(Constants.UNIT_N078_ALTAR_OF_ELEMENTS_ELEMENTAL_ALTAR, Unlimited);
       yield return new(Constants.UNIT_N08L_LATICE_SPIRE_ELEMENTAL_TOWER, Unlimited);
       yield return new(Constants.UNIT_N08N_IMPROVED_LATICE_SPIRE_ELEMENTAL_TOWER, Unlimited);
 
