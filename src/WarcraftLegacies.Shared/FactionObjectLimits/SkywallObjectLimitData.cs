@@ -33,15 +33,15 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(Constants.UNIT_N0CG_CORE_HOUND_RAGNAROS, 12);
       yield return new(Constants.UNIT_N0CF_FIRE_WYRM_RAGNAROS, 2);
 
-      yield return new("e020", Unlimited); //Shipyard
-      yield return new("etrs", Unlimited); //Night Elf Transport Ship
-      yield return new("h0AU", Unlimited); // Scout
-      yield return new("h0AV", Unlimited); // Frigate
-      yield return new("h0B1", Unlimited); // Fireship
-      yield return new("h057", Unlimited); // Galley
-      yield return new("h0B4", Unlimited); // Boarding
-      yield return new("h0BA", Unlimited); // Juggernaut
-      yield return new("h0B8", 6); // Bombard
+      yield return new(Constants.UNIT_E020_ANCIENT_SHIPYARD_NAGA_SHIPYARD, Unlimited);
+      yield return new(Constants.UNIT_ETRS_NIGHT_ELF_TRANSPORT_SHIP_DRUIDS_SENTINELS, Unlimited);
+      yield return new(Constants.UNIT_H0AU_SCOUT_SHIP_NIGHT_ELVES, Unlimited);
+      yield return new(Constants.UNIT_H0AV_FRIGATE_NIGHT_ELVES, Unlimited);
+      yield return new(Constants.UNIT_H0B1_FIRESHIP_NIGHT_ELVES, Unlimited);
+      yield return new(Constants.UNIT_H057_GALLEY_NIGHT_ELVES, Unlimited);
+      yield return new(Constants.UNIT_H0B4_BOARDING_VESSEL_NIGHT_ELVES, Unlimited);
+      yield return new(Constants.UNIT_H0BA_JUGGERNAUT_NIGHT_ELVES, Unlimited);
+      yield return new(Constants.UNIT_H0B8_BOMBARD_NIGHT_ELVES, Unlimited);
 
       yield return new(Constants.UNIT_U02K_LORD_OF_THE_FIRELANDS_ELEMENTAL, 1);
       yield return new(Constants.UNIT_E023_GRAND_VIZIER_ELEMENTAL, 1);
