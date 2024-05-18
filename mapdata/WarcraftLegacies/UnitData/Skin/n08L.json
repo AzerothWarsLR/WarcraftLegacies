@@ -24,11 +24,6 @@
       "Value": "Z"
     },
     {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 0.7
-    },
-    {
       "Id": 1668510581,
       "Type": 1,
       "Value": 2
@@ -61,7 +56,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\ArabianCannonTowers.mdl"
+      "Value": "war3mapImported\\DarkIronBunker2.mdl"
     },
     {
       "Id": 1768841589,
