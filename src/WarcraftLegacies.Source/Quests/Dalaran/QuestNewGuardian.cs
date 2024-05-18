@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       @"ReplaceableTextures\CommandButtons\BTNAstral Blessing.blp")
     {
       _jaina = jaina;
-      AddObjective(new ObjectiveControlCapital(dalaran, false));
+      AddObjective(new ObjectiveCapitalAlive(dalaran));
       AddObjective(new ObjectiveLegendHasArtifact(jaina, bookOfMedivh));
       AddObjective(new ObjectiveTime(1500));
       ResearchId = UPGRADE_R063_QUEST_COMPLETED_GUARDIAN_OF_TIRISFAL;

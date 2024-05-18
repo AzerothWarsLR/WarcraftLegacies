@@ -33,7 +33,7 @@ namespace MacroTools.Powers
       _chance = chance;
       _returnPoint = returnPoint;
       _noReturnRect = noReturnRect;
-      Description = $"Your unlimited units have a {chance*100}% chance to rematerialize at {returnPointName} upon death.";
+      Description = $"Your non-Resistant units a {chance*100}% chance to rematerialize in {returnPointName} upon death.";
     }
     
     /// <inheritdoc />
