@@ -20,13 +20,13 @@
       "Level": 1,
       "Pointer": 2,
       "Id": 845574991,
-      "Value": 6
+      "Value": 5
     },
     {
       "Level": 1,
       "Id": 1920296033,
       "Type": 2,
-      "Value": 50
+      "Value": 40
     },
     {
       "Id": 1919248481,
@@ -59,13 +59,13 @@
       "Level": 2,
       "Pointer": 2,
       "Id": 845574991,
-      "Value": 6
+      "Value": 5
     },
     {
       "Level": 3,
       "Pointer": 2,
       "Id": 845574991,
-      "Value": 6
+      "Value": 5
     },
     {
       "Level": 2,
@@ -93,39 +93,39 @@
     },
     {
       "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 70
+    },
+    {
+      "Level": 3,
       "Id": 1852072801,
       "Type": 2,
       "Value": 60
     },
     {
+      "Level": 2,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 50
+    },
+    {
       "Level": 3,
-      "Id": 1852072801,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 2,
+      "Id": 1920296033,
       "Type": 2,
       "Value": 40
     },
     {
-      "Level": 2,
-      "Id": 1969514593,
-      "Type": 2,
-      "Value": 50
-    },
-    {
-      "Level": 3,
-      "Id": 1969514593,
-      "Type": 2,
-      "Value": 50
-    },
-    {
-      "Level": 2,
-      "Id": 1920296033,
-      "Type": 2,
-      "Value": 50
-    },
-    {
       "Level": 3,
       "Id": 1920296033,
       "Type": 2,
-      "Value": 50
+      "Value": 40
     },
     {
       "Level": 2,
@@ -145,7 +145,7 @@
       "Level": 4,
       "Pointer": 2,
       "Id": 845574991,
-      "Value": 6
+      "Value": 5
     },
     {
       "Level": 4,
@@ -163,7 +163,7 @@
       "Level": 4,
       "Id": 1852072801,
       "Type": 2,
-      "Value": 20
+      "Value": 50
     },
     {
       "Level": 4,
@@ -175,7 +175,7 @@
       "Level": 4,
       "Id": 1920296033,
       "Type": 2,
-      "Value": 50
+      "Value": 40
     },
     {
       "Level": 4,

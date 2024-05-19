@@ -35,7 +35,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The Thanes, having perfected their avatar, will take almost no damage while in it. They also gain 20 bonus damage and 200 hit point bonus.|n|nLasts 15 seconds."
+      "Value": "The Thanes, having perfected their avatar, will take almost no damage while in it. They also gain 20 bonus damage and 200 hit point bonus.|n|nLasts \u003CA061,Dur1\u003E seconds."
     },
     {
       "Id": 1802007905,
