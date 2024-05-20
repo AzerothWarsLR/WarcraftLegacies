@@ -4,9 +4,7 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
-using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-
 
 namespace WarcraftLegacies.Source.Quests.Dalaran
 {
@@ -19,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       @"ReplaceableTextures\CommandButtons\BTNAstral Blessing.blp")
     {
       _jaina = jaina;
-      AddObjective(new ObjectiveUnitAlive(violetCitadel.Unit));
+      AddObjective(new ObjectiveControlCapital(violetCitadel, true));
       AddObjective(new ObjectiveLegendHasArtifact(jaina, bookOfMedivh));
       AddObjective(new ObjectiveTime(1500));
       ResearchId = UPGRADE_R063_QUEST_COMPLETED_GUARDIAN_OF_TIRISFAL;
