@@ -17,7 +17,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Al-akir summons a fierce controllable Hurricane that slows enemy units and randomly throws them into the air while dealing damage in an area of effect around the Hurricane.|n|cffffcc00Level 1|r - Lasts 45 seconds.|n|cffffcc00Level 2|r - Deals increased damage and moves faster. Lasts 50 seconds.|n|cffffcc00Level 3|r - Deals increased damage and moves faster. Lasts 55 seconds."
+      "Value": "Al-akir summons a fierce fast-moving controllable Tornado that slows enemy units and randomly throws them into the air while dealing damage in an area of effect around the Hurricane.|n|cffffcc00Level 1|r - Lasts 45 seconds.|n|cffffcc00Level 2|r - Deals increased damage and moves faster. Lasts 50 seconds.|n|cffffcc00Level 3|r - Deals increased damage and moves faster. Lasts 55 seconds."
     },
     {
       "Id": 1802007137,
@@ -74,19 +74,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons a fierce controllable Tornado that slows enemy units\u0027 movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts 45 seconds and got 120 seconds cooldown."
+      "Value": "Summons a fierce controllable Tornado that slows enemy units\u0027 movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts \u003CANsg,Dur1\u003E seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons a fierce controllable Tornado that slows enemy units\u0027 movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts \u003CANto,Dur2\u003E seconds and got 105 seconds cooldown."
+      "Value": "Summons a fierce controllable Tornado that slows enemy units\u0027 movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts \u003CANsg,Dur2\u003E seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons a fierce controllable Tornado that slows enemy units\u0027 movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts \u003CANto,Dur3\u003E seconds."
+      "Value": "Summons a fierce controllable Tornado that slows enemy units\u0027 movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. |nLasts \u003CANsg,Dur3\u003E seconds."
     }
   ]
 }

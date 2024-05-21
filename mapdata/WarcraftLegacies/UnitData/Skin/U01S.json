@@ -12,7 +12,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Twilight)"
+      "Value": "(Elemental)"
     },
     {
       "Id": 1953458293,
@@ -67,7 +67,7 @@
     {
       "Id": 1831952757,
       "Type": 3,
-      "Value": ".mdl"
+      "Value": "Abilities\\Spells\\Orc\\LightningShield\\LightningShieldTarget.mdl"
     },
     {
       "Id": 1633907573,

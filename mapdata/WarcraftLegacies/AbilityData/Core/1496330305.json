@@ -199,28 +199,22 @@
       "Value": "undead"
     },
     {
-      "Level": 1,
-      "Id": 1918989409,
-      "Type": 3,
-      "Value": "air,enemies,ground,nonhero,vulnerable"
-    },
-    {
       "Level": 2,
       "Id": 1918989409,
       "Type": 3,
-      "Value": "air,enemies,ground,nonhero,vulnerable"
+      "Value": "air,ground,organic"
     },
     {
       "Level": 3,
       "Id": 1918989409,
       "Type": 3,
-      "Value": "air,enemies,ground,nonhero,vulnerable"
+      "Value": "air,ground,organic"
     },
     {
       "Level": 4,
       "Id": 1918989409,
       "Type": 3,
-      "Value": "air,enemies,ground,nonhero,vulnerable"
+      "Value": "air,ground,organic"
     }
   ]
 }

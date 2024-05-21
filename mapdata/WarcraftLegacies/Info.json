@@ -62,8 +62,8 @@
         "X": -8512,
         "Y": -2880
       },
-      "AllyLowPriorityFlags": 4456450,
-      "AllyHighPriorityFlags": 462848,
+      "AllyLowPriorityFlags": 6553602,
+      "AllyHighPriorityFlags": 331776,
       "EnemyLowPriorityFlags": 262144,
       "EnemyHighPriorityFlags": 262144
     },
@@ -133,7 +133,7 @@
         "Y": -31040
       },
       "AllyLowPriorityFlags": 262152,
-      "AllyHighPriorityFlags": 4194440,
+      "AllyHighPriorityFlags": 6291592,
       "EnemyLowPriorityFlags": 262144,
       "EnemyHighPriorityFlags": 262144
     },
@@ -172,7 +172,7 @@
         "X": -9344,
         "Y": 10560
       },
-      "AllyLowPriorityFlags": 462856,
+      "AllyLowPriorityFlags": 331784,
       "AllyHighPriorityFlags": 76,
       "EnemyLowPriorityFlags": 262144,
       "EnemyHighPriorityFlags": 262144
@@ -187,6 +187,7 @@
         "X": -23872,
         "Y": -8960
       },
+      "AllyLowPriorityFlags": 2097152,
       "AllyHighPriorityFlags": 32768
     },
     {
@@ -200,7 +201,7 @@
         "Y": 6016
       },
       "AllyLowPriorityFlags": 4194816,
-      "AllyHighPriorityFlags": 464897
+      "AllyHighPriorityFlags": 333825
     },
     {
       "Id": 16,
@@ -212,19 +213,7 @@
         "X": -23232,
         "Y": -19584
       },
-      "AllyHighPriorityFlags": 131072
-    },
-    {
-      "Id": 17,
-      "Controller": 1,
-      "Race": 4,
-      "Flags": 1,
-      "Name": "Skywall",
-      "StartPosition": {
-        "X": -13504,
-        "Y": -20160
-      },
-      "AllyHighPriorityFlags": 65536
+      "AllyHighPriorityFlags": 2097152
     },
     {
       "Id": 18,
@@ -240,6 +229,19 @@
       "AllyHighPriorityFlags": 262164,
       "EnemyLowPriorityFlags": 4194448,
       "EnemyHighPriorityFlags": 12582912
+    },
+    {
+      "Id": 21,
+      "Controller": 1,
+      "Race": 4,
+      "Flags": 1,
+      "Name": "Skywall",
+      "StartPosition": {
+        "X": -12416,
+        "Y": -19712
+      },
+      "AllyLowPriorityFlags": 4160,
+      "AllyHighPriorityFlags": 65536
     },
     {
       "Id": 22,
@@ -6190,10 +6192,6 @@
     },
     {
       "Players": 16777215,
-      "Id": 1160917109
-    },
-    {
-      "Players": 16777215,
       "Id": 1177694325
     },
     {
@@ -6854,10 +6852,6 @@
     },
     {
       "Players": 16777215,
-      "Id": 1496789096
-    },
-    {
-      "Players": 16777215,
       "Id": 1513566312
     },
     {
@@ -7189,10 +7183,6 @@
       "Id": 926232686
     },
     {
-      "Players": 16777215,
-      "Id": 892350575
-    },
-    {
       "Players": 14986751,
       "Id": 1362178149
     },
@@ -7207,6 +7197,18 @@
     {
       "Players": 14986751,
       "Id": 1446064229
+    },
+    {
+      "Players": 16777215,
+      "Id": 1160917109
+    },
+    {
+      "Players": 16777215,
+      "Id": 1496789096
+    },
+    {
+      "Players": 16777215,
+      "Id": 892350575
     },
     {
       "Players": 16777215,

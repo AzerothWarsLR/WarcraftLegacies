@@ -1,0 +1,25 @@
+{
+  "OldId": 1752394817,
+  "NewId": 1280066881,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(lurking tempest)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Forms a shield of electricity around a target unit, dealing \u003CAELL,DataA1\u003E damage per second to units around it. |nLasts \u003CAELL,DataDur1\u003E seconds."
+    }
+  ]
+}
