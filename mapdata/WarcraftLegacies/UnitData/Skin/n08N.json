@@ -51,7 +51,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\DarkIronBunker2.mdl"
+      "Value": "war3mapImported\\DarkIronGuardBunker2.mdl"
     },
     {
       "Id": 1868786037,
@@ -61,7 +61,7 @@
     {
       "Id": 1768841589,
       "Type": 3,
-      "Value": "upgrade,first"
+      "Value": "upgrade"
     },
     {
       "Id": 1651864693,
