@@ -48,6 +48,7 @@ namespace WarcraftLegacies.Source.Setup
       commandManager.Register(new CheatGetUnitCurrentOrder());
       commandManager.Register(new PreviewForsaken());
       commandManager.Register(new CheatPingGoldMines());
+      commandManager.Register(new CheatGetWaygateDestination());
       TestMode.Setup(commandManager);
       CheatSkipCinematic.Init();
     }
