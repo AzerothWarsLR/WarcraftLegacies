@@ -12,7 +12,7 @@
     },
     {
       "Id": 1651270517,
-      "Value": 120
+      "Value": 50
     },
     {
       "Id": 2020631157,
@@ -26,7 +26,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Unit_EvilEye.mdl"
+      "Value": "units\\creeps\\VoidWalker\\VoidWalker.mdl"
     },
     {
       "Id": 1953458293,
@@ -45,7 +45,7 @@
     },
     {
       "Id": 1919705973,
-      "Value": 120
+      "Value": 50
     },
     {
       "Id": 1668510581,

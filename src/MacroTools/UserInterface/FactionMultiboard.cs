@@ -48,7 +48,8 @@ namespace MacroTools.UserInterface
     /// </summary>
     public static void Setup()
     {
-      if (_initialized) throw new SystemAlreadyInitializedException(nameof(FactionMultiboard));
+      if (_initialized) 
+        throw new SystemAlreadyInitializedException(nameof(FactionMultiboard));
 
       var timer = CreateTimer();
       TimerStart(timer, 2, false, () => { Instance = new FactionMultiboard(ColumnCount, 3, Title); }
@@ -56,6 +57,7 @@ namespace MacroTools.UserInterface
 
       PlayerData.FactionChange += (_, _) => { Instance?.Render(); };
       FactionManager.AnyFactionNameChanged += OnFactionAnyFactionNameChanged;
+      FactionManager.FactionRegistered += (_, faction) => { RegisterFaction(faction); };
       
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
@@ -63,16 +65,13 @@ namespace MacroTools.UserInterface
         player.GetPlayerData().PlayerJoinedTeam += (_, _) => { Instance?.Render(); };  
         player.GetPlayerData().PlayerLeftTeam += (_, _) => { Instance?.Render(); };
       }
-
-      foreach (var faction in FactionManager.GetAllFactions())
-      {
-        faction.StatusChanged += (_, _) => { Instance?.Render(); };
-        faction.IconChanged += OnFactionIconChanged;
-      }
+      
+      foreach (var faction in FactionManager.GetAllFactions()) 
+        RegisterFaction(faction);
 
       _initialized = true;
     }
-    
+
     private void UpdateFactionRow(Faction faction)
     {
       if (!_rowsByFaction.ContainsKey(faction))
@@ -156,6 +155,12 @@ namespace MacroTools.UserInterface
       MultiboardSetRowCount(_multiboard, row);
     }
 
+    private static void RegisterFaction(Faction faction)
+    {
+      faction.StatusChanged += (_, _) => { Instance?.Render(); };
+      faction.IconChanged += OnFactionIconChanged;
+    }
+    
     private static void OnFactionAnyFactionNameChanged(object? sender, Faction faction)
     {
       Instance?.UpdateFactionRow(faction);
