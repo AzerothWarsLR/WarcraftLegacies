@@ -21,7 +21,7 @@ namespace MacroTools.Cheats
     public static bool CheatCondition()
     {
       var triggerPlayerName = GetPlayerName(GetTriggerPlayer());
-      return triggerPlayerName is "YakaryBovine#6863" or "Lordsebas#11619" or "Technopig#2179" || AreCheatsActive;
+      return triggerPlayerName is "YakaryBovine#6863" or "Lordsebas#11619" or "Technopig#2179" or "Vampirika#2506" || AreCheatsActive;
     }
 
     private static void CreateInfoQuests(CommandManager commandManager)
