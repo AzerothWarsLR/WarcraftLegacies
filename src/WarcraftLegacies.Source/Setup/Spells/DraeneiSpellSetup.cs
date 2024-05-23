@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 20,
         ClosingDelay = 10,
-        TargetLocation = new Point(22573, -26856),
+        TargetLocation = new Point(22010, -26816),
         Color = new Color(255, 50, 50, 255)
       });
 
@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 20,
         ClosingDelay = 10,
-        TargetLocation = new Point(2649, -22845),
+        TargetLocation = new Point(2943, -21644),
         Color = new Color(55, 50, 250, 255)
       });
 
