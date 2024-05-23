@@ -16,15 +16,18 @@ namespace MacroTools.ControlPointSystem
   {
     static ControlPointManager()
     {
-      CreateTimer().Start(Period, true, () =>
+      GameTime.GameStarted += (_, _) =>
       {
-        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-          if (player.GetFaction() != null)
-          {
-            var goldPerSecond = player.GetTotalIncome() * Period / 60;
-            player.AddGold(goldPerSecond);
-          }
-      });
+        CreateTimer().Start(Period, true, () =>
+        {
+          foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+            if (player.GetFaction() != null)
+            {
+              var goldPerSecond = player.GetTotalIncome() * Period / 60;
+              player.AddGold(goldPerSecond);
+            }
+        });
+      };
     }
 
     /// <summary>

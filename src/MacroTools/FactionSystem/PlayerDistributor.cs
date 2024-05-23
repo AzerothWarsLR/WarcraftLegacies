@@ -23,9 +23,17 @@ namespace MacroTools.FactionSystem
     public static void DistributePlayer(player player)
     {
       var eligiblePlayers = GetPlayersEligibleForReceivingDistribution(player);
-      var resourcesToRefund = DistributeAndRefundUnits(player, eligiblePlayers);
-      DistributeGold(player, eligiblePlayers, resourcesToRefund);
-      DistributeExperience(eligiblePlayers, resourcesToRefund.Experience);    
+      if (eligiblePlayers.Any())
+      {
+        var resourcesToRefund = DistributeAndRefundUnits(player, eligiblePlayers);
+        DistributeGold(player, eligiblePlayers, resourcesToRefund);
+        DistributeExperience(eligiblePlayers, resourcesToRefund.Experience);
+      }
+      else
+      {
+        player.RemoveAllUnits();
+        player.RemoveAllResources();
+      }
     }
 
     private static List<player> GetPlayersEligibleForReceivingDistribution(player playerBeingDistributed)
@@ -87,7 +95,7 @@ namespace MacroTools.FactionSystem
       var playerUnits = CreateGroup()
         .EnumUnitsOfPlayer(playerToDistribute)
         .EmptyToList();
-
+      
       var refund = new UnitsRefund();
       foreach (var unit in playerUnits)
       {

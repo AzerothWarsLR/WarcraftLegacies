@@ -3,6 +3,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.Warsong
@@ -23,6 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     {
       AddObjective(new ObjectiveControlPoint(UNIT_N0BK_LOST_CITY_OF_THE_TOL_VIR));
       AddObjective(new ObjectiveControlPoint(UNIT_N0BD_ULDUM));
+      AddObjective(new ObjectiveExpire(600, Title));
       AddObjective(new ObjectiveSelfExists());
       
       ResearchId = UPGRADE_VQ03_QUEST_COMPLETED_ULDUM_EXCAVATION;
