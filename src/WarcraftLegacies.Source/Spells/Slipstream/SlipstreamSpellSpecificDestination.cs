@@ -10,7 +10,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
   /// <summary>
   /// Channel a portal to a predetermined location.
   /// </summary>
-  public sealed class SlipstreamSpellSpecificLocation : Spell
+  public sealed class SlipstreamSpellSpecificDestination : Spell
   {
     /// <summary>
     /// The unit to spawn to act as the actual portal.
@@ -41,7 +41,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
     /// Initializes a new instance of the <see cref="SlipstreamSpell"/> class.
     /// </summary>
     /// <param name="id"><inheritdoc /></param>
-    public SlipstreamSpellSpecificLocation(int id) : base(id)
+    public SlipstreamSpellSpecificDestination(int id) : base(id)
     {
     }
 

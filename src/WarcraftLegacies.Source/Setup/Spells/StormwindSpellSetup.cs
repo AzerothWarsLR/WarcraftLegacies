@@ -18,14 +18,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
     /// </summary>
     public static void Setup()
     {
-      SpellSystem.Register(new SlipstreamSpell(ABILITY_A00D_SLIPSTREAM_STORMWIND_KHADGAR)
-      {
-        PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
-        OpeningDelay = 5,
-        ClosingDelay = 10,
-        Color = new Color(40, 40, 255, 255)
-      });
-
       var legendaryWarrior = new ChannelSpellOnAttack(UNIT_H00R_KING_OF_STORMWIND_DARK_GREEN,
         ABILITY_A12C_LEGENDARY_WARRIOR_VARIAN)
       {
