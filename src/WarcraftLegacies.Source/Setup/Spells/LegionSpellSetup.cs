@@ -44,22 +44,25 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       SpellSystem.Register(massSummonUnit);
 
+      var slipstreamOrigin = new Point(22951.6f, -29964.4f);
       //Northrend
-      SpellSystem.Register(new SlipstreamSpellSpecificLocation(ABILITY_A0UB_OPEN_A_PORTAL_TO_NORTHREND_LEGION_NORTHREND)
+      SpellSystem.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0UB_PORTAL_TO_NORTHREND_LEGION)
       {
         PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 10,
         ClosingDelay = 5,
+        OriginLocation = slipstreamOrigin,
         TargetLocation = new Point(3587, 20680),
         Color = new Color(55, 50, 250, 255)
       });
 
       //Alterac
-      SpellSystem.Register(new SlipstreamSpellSpecificLocation(ABILITY_A0UC_OPEN_A_PORTAL_TO_ALTERAC_LEGION_ALTERAC)
+      SpellSystem.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0UC_PORTAL_TO_ALTERAC_LEGION)
       {
         PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 10,
         ClosingDelay = 5,
+        OriginLocation = slipstreamOrigin,
         TargetLocation = new Point(11331, 5819),
         Color = new Color(155, 250, 50, 255)
       });

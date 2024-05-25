@@ -28,7 +28,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Draenei) (Argus)"
+      "Value": "(Draenei)"
     },
     {
       "Id": 1952540001,
@@ -43,7 +43,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Dimensional Jump to Argus"
+      "Value": "Portal to Argus"
     },
     {
       "Id": 1918988897,
@@ -78,7 +78,7 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Dimensional Jump to Argus"
+      "Value": "Portal to Argus"
     },
     {
       "Level": 2,
@@ -96,7 +96,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Opens a two-way portal to Argus at the target location within a range of \u003CA00D,Rng1\u003E. The portal becomes useable after 20 seconds, and closes 10 seconds after the caster stops channeling."
+      "Value": "Opens a two-way portal to Argus. The portal becomes useable after 20 seconds, and closes 10 seconds after the caster stops channeling."
     },
     {
       "Level": 2,
