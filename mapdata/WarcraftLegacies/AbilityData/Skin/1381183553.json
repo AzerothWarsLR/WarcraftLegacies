@@ -28,7 +28,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Draenei) (Tempest Keep)"
+      "Value": "(Draenei)"
     },
     {
       "Id": 1952540001,
@@ -43,7 +43,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Dimensional Jump to Tempest Keep"
+      "Value": "Portal to Tempest Keep"
     },
     {
       "Id": 1918988897,
@@ -78,7 +78,7 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Dimensional Jump to Tempest Keep"
+      "Value": "Portal to Tempest Keep"
     },
     {
       "Level": 2,

@@ -45,7 +45,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       SpellSystem.Register(massSummonUnit);
 
       //Northrend
-      SpellSystem.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0UB_OPEN_A_PORTAL_TO_NORTHREND_LEGION_NORTHREND)
+      SpellSystem.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0UB_PORTAL_TO_NORTHREND_LEGION)
       {
         PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 10,
@@ -56,7 +56,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       });
 
       //Alterac
-      SpellSystem.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0UC_OPEN_A_PORTAL_TO_ALTERAC_LEGION_ALTERAC)
+      SpellSystem.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0UC_PORTAL_TO_ALTERAC_LEGION)
       {
         PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 10,

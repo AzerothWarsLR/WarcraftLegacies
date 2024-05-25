@@ -1,9 +1,7 @@
 ﻿using MacroTools;
-using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
-using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.MassiveAttack;
 using WarcraftLegacies.Source.Spells.Slipstream;
 using WCSharp.Shared.Data;
@@ -23,7 +21,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var slipstreamOrigin = new Point(-22259.9f, 7104.2f);
       
       //Azuremyst
-      SpellSystem.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0P9_DIMENSIONAL_JUMP_TO_AZUREMYST_DRAENEI_AZUREMYST)
+      SpellSystem.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0P9_PORTAL_TO_AZUREMYST_DRAENEI)
       {
         PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 20,
@@ -34,7 +32,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       });
 
       //Argus
-      SpellSystem.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0RB_DIMENSIONAL_JUMP_TO_ARGUS_DRAENEI_ARGUS)
+      SpellSystem.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0RB_PORTAL_TO_ARGUS_DRAENEI)
       {
         PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 20,
@@ -45,7 +43,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       });
 
       //Outland
-      SpellSystem.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0SR_DIMENSIONAL_JUMP_TO_TEMPEST_KEEP_DRAENEI_TEMPEST_KEEP)
+      SpellSystem.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0SR_PORTAL_TO_TEMPEST_KEEP_DRAENEI)
       {
         PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 20,
