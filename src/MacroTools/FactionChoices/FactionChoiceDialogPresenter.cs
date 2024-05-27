@@ -24,8 +24,8 @@ namespace MacroTools.FactionChoices
       if (pickedFaction.StartingCameraPosition != null)
         pickingPlayer.RepositionCamera(pickedFaction.StartingCameraPosition);
 
-      FactionManager.Register(pickedFaction);
       pickingPlayer.SetFaction(pickedFaction);
+      FactionManager.Register(pickedFaction);
       var startingUnits = pickedFaction.StartingUnits;
       pickingPlayer.RescueGroup(startingUnits);
 
