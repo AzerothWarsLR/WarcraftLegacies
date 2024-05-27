@@ -60,6 +60,7 @@ Join up with your allies and brace for a tough fight and counter-attack. ";
     public override void OnNotPicked()
     {
       Regions.ZandalarUnlock.CleanupNeutralPassiveUnits();
+      Regions.Zandalari_Echo_Unlock.CleanupNeutralPassiveUnits();
       base.OnNotPicked();
     }
 
