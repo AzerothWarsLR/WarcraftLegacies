@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Launcher.Extensions;
@@ -53,7 +52,7 @@ namespace Launcher.MapMigrations
     {
       var tooltipBuilder = new StringBuilder();
 
-      AppendFlavour(tooltipBuilder, unit);
+      tooltipBuilder.Append(unit.TextTooltipExtended);
       AppendInnateUnitsTrained(tooltipBuilder, unit);
       AppendUnlockableUnitsTrained(tooltipBuilder, unit);
       AppendResearchesAvailable(tooltipBuilder, unit);
@@ -129,7 +128,7 @@ namespace Launcher.MapMigrations
     private static void AppendInnateUnitsTrained(StringBuilder tooltipBuilder, Unit unit)
     {
       var unitsTrained = unit.TechtreeUnitsTrained
-        .Where(x => !(bool)((IEnumerable<Tech>)x.TechtreeRequirements).Any(x1 => x1.IsUpgrade()))
+        .Where(x => !x.TechtreeRequirements.Any(x1 => x1.IsUpgrade()))
         .OrderBy(x => x.GetPriority())
         .Select(GetBestName)
         .ToArray();
@@ -141,7 +140,7 @@ namespace Launcher.MapMigrations
     private static void AppendUnlockableUnitsTrained(StringBuilder tooltipBuilder, Unit unit)
     {
       var unitsTrained = unit.TechtreeUnitsTrained
-        .Where(x => (bool)((IEnumerable<Tech>)x.TechtreeRequirements).Any(x1 => x1.IsUpgrade()))
+        .Where(x => x.TechtreeRequirements.Any(x1 => x1.IsUpgrade()))
         .OrderBy(x => x.GetPriority())
         .Select(GetBestName)
         .ToArray();
@@ -165,7 +164,7 @@ namespace Launcher.MapMigrations
     
     private static void AppendUpgradesTo(StringBuilder tooltipBuilder, Unit unit)
     {
-      var upgradesTo = ((IEnumerable<Unit>)unit.TechtreeUpgradesTo)
+      var upgradesTo = unit.TechtreeUpgradesTo
         .OrderBy(x => x.GetPriority())
         .Select(x => x.TextName)
         .ToArray();
@@ -224,12 +223,6 @@ namespace Launcher.MapMigrations
       }
     }
 
-    private static void AppendFlavour(StringBuilder stringBuilder, Unit unit)
-    {
-      var split = unit.TextTooltipExtended.Split("|n");
-      stringBuilder.Append(split[0]); 
-    }
-    
     /// <summary>
     /// Gets the best name for a unit, preferring hero proper name over their text name.
     /// </summary>
