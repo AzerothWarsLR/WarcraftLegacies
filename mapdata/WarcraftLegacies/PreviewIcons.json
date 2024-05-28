@@ -20,12 +20,6 @@
     },
     {
       "IconType": 2,
-      "X": 194,
-      "Y": 234,
-      "Color": "#ECF0ff"
-    },
-    {
-      "IconType": 2,
       "X": 193,
       "Y": 127,
       "Color": "#FFFC00"
@@ -56,7 +50,7 @@
     },
     {
       "IconType": 2,
-      "X": 140,
+      "X": 141,
       "Y": 85,
       "Color": "#BD00ff"
     },

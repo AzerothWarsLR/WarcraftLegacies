@@ -1,4 +1,5 @@
 ﻿using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 
@@ -31,10 +32,24 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     }
 
     /// <inheritdoc/>
-    public override string RewardFlavour =>
-      $"{_anyEnemyUnitInRectsObjective.CompletingUnit?.OwningPlayer().GetFaction()?.Name} has encroached on the shores of Northrend. Soon they will feel the biting chill of death.";
+    public override string RewardFlavour
+    {
+      get
+      {
+        var completingUnit = _anyEnemyUnitInRectsObjective.CompletingUnit;
+        return
+          $"A {GetUnitName(completingUnit)} under the control of {completingUnit?.OwningPlayer().GetFaction()?.ColoredName} has encroached on the shores of Northrend. Soon they will feel the biting chill of death.";
+      }
+    }
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Learn to cast Frost Nova and Animate Dead from the Frozen Throne";
+
+    /// <inheritdoc />
+    protected override void OnComplete(Faction whichFaction)
+    {
+      var completingUnit = _anyEnemyUnitInRectsObjective.CompletingUnit;
+      whichFaction.Player?.PingMinimapSimple(GetUnitX(completingUnit), GetUnitY(completingUnit), 10, 255, 100, 100);
+    }
   }
 }

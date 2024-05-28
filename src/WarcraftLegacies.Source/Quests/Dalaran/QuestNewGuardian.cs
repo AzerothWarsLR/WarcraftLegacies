@@ -6,19 +6,18 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 
-
 namespace WarcraftLegacies.Source.Quests.Dalaran
 {
   public sealed class QuestNewGuardian : QuestData
   {
     private readonly LegendaryHero _jaina;
 
-    public QuestNewGuardian(Artifact bookOfMedivh, LegendaryHero jaina, Capital dalaran) : base("Guardian of Tirisfal",
+    public QuestNewGuardian(Artifact bookOfMedivh, LegendaryHero jaina, Capital violetCitadel) : base("Guardian of Tirisfal",
       "Medivh's death left Azeroth without a Guardian. The spell book he left behind could be used to empower a new one.",
       @"ReplaceableTextures\CommandButtons\BTNAstral Blessing.blp")
     {
       _jaina = jaina;
-      AddObjective(new ObjectiveControlCapital(dalaran, false));
+      AddObjective(new ObjectiveControlCapital(violetCitadel, true));
       AddObjective(new ObjectiveLegendHasArtifact(jaina, bookOfMedivh));
       AddObjective(new ObjectiveTime(1500));
       ResearchId = UPGRADE_R063_QUEST_COMPLETED_GUARDIAN_OF_TIRISFAL;

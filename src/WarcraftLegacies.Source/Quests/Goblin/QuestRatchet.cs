@@ -3,6 +3,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 
@@ -27,7 +28,8 @@ namespace WarcraftLegacies.Source.Quests.Goblin
         new ObjectiveControlPoint(UNIT_N0A6_RATCHET));
       AddObjective(_enterRatchetRegion = new ObjectiveAnyUnitInRect(Regions.Ratchet_Unlock_1, "Ratchet", true));
       AddObjective(new ObjectiveSelfExists());
-      
+      AddObjective(new ObjectiveExpire(600, Title));
+
       ResearchId = UPGRADE_VQ01_QUEST_COMPLETED_RATCHET_PORT;
       _rescueUnits = Regions.Ratchet_Unlock_1.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures,
         filterUnit => filterUnit.GetTypeId() != FourCC("ngme"));

@@ -17,6 +17,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     /// <summary>
     /// Initializes a new instance of the <see cref="ObjectiveControlCapital"/> class.
     /// </summary>
+    /// <param name="target">The <see cref="Capital"/> that needs to be controlled to complete the objective.</param>
+    /// <param name="canFail">If true, the objective will fail whenever the target is destroyed or you lose control.</param>
     public ObjectiveControlCapital(Capital target, bool canFail)
     {
       _target = target;
@@ -33,7 +35,13 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 
       CreateTrigger()
         .RegisterUnitEvent(target.Unit, EVENT_UNIT_DEATH)
-        .AddAction(() => { if (_canFail) { Progress = QuestProgress.Failed; } });
+        .AddAction(() =>
+        {
+          if (_canFail)
+          {
+            Progress = QuestProgress.Failed;
+          }
+        });
       
       Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
     }

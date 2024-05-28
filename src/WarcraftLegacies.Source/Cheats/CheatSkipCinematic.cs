@@ -1,4 +1,5 @@
 ﻿using System;
+using MacroTools;
 using MacroTools.Cheats;
 using WarcraftLegacies.Source.GameLogic;
 
@@ -18,6 +19,7 @@ namespace WarcraftLegacies.Source.Cheats
       try
       {
         CinematicMode.EndEarly();
+        GameTime.SkipTurns(1);
       }
       catch (Exception ex)
       {

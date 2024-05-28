@@ -79,6 +79,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendaryHeroManager.Register(ChenStormstout);
       LegendaryHeroManager.Register(Saurfang);
       LegendaryHeroManager.Register(Garrosh);
+      LegendaryHeroManager.Register(Mannoroth);
       CapitalManager.Register(StonemaulKeep);
       CapitalManager.Register(Orgrimmar);
       //CapitalManager.Register(LumberCamp);
