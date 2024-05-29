@@ -41,7 +41,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Consumes all magical buffs from units in an area, restoring mana and hit points per unit. Area of effect and damage to summoned units increases with levels.|r|n|n|cffffcc00Level 1|r - \u003CA0O8,DataA1\u003E mana and hit points, \u003CA0O8,Area1\u003E AOE, \u003CA0O8,DataE1\u003E damage to summoned units.|n|cffffcc00Level 2|r - \u003CA0O8,DataA2\u003E mana and hit points, \u003CA0O8,Area2\u003E AOE, \u003CA0O8,DataE2\u003E damage to summoned units.|n|cffffcc00Level 3|r - \u003CA0O8,DataA3\u003E mana and hit points, \u003CA0O8,Area3\u003E AOE, \u003CA0O8,DataE3\u003E damage to summoned units.|n|cffffcc00Level 4|r - \u003CA0O8,DataA4\u003E mana and hit points, \u003CA0O8,Area4\u003E AOE, \u003CA0O8,DataE4\u003E damage to summoned units."
+      "Value": "Consumes all magical buffs from units in an area, restoring mana and hit points per unit.|r|n|n|cffffcc00Level 1|r - \u003CA0O8,DataA1\u003E mana and hit points, \u003CA0O8,Area1\u003E area of effect, \u003CA0O8,DataE1\u003E damage to summoned units.|n|cffffcc00Level 2|r - \u003CA0O8,DataA2\u003E mana and hit points, \u003CA0O8,Area2\u003E area of effect, \u003CA0O8,DataE2\u003E damage to summoned units.|n|cffffcc00Level 3|r - \u003CA0O8,DataA3\u003E mana and hit points, \u003CA0O8,Area3\u003E area of effect, \u003CA0O8,DataE3\u003E damage to summoned units.|n|cffffcc00Level 4|r - \u003CA0O8,DataA4\u003E mana and hit points, \u003CA0O8,Area4\u003E area of effect, \u003CA0O8,DataE4\u003E damage to summoned units."
     },
     {
       "Level": 1,
