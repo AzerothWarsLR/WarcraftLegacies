@@ -19,6 +19,11 @@
       "Id": 1835101798,
       "Type": 3,
       "Value": "Battleshout"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBattleShout.blp"
     }
   ]
 }

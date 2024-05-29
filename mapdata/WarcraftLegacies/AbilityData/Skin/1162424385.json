@@ -12,7 +12,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Yellow - Falstad)"
+      "Value": "(Yellow - Falstad, Warsong - Varok)"
     },
     {
       "Id": 2037082209,
@@ -46,7 +46,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "The hero lets loose an inspiring shout that strengthens nearby troops for 20 seconds.|n|n|cffffcc00Level 1|r - 2 bonus armor, 200% regen|n|cffffcc00Level 2|r - 3 bonus armor, 300% regen|n|cffffcc00Level 3|r - 4 bonus armor, 400% regen|n|cffffcc00Level 4|r - 5 bonus armor, 500% regen"
+      "Value": "The hero lets loose an inspiring shout that strengthens nearby troops.|n|n|cffffcc00Level 1|r - \u003CA0IE,DataB1\u003E bonus armor, \u003CA0IE,DataC1\u003E bonus regen|n|cffffcc00Level 2|r - \u003CA0IE,DataB2\u003E bonus armor, \u003CA0IE,DataC2\u003E bonus regen|n|cffffcc00Level 3|r - \u003CA0IE,DataB3\u003E bonus armor, \u003CA0IE,DataC3\u003E bonus regen|n|cffffcc00Level 4|r - \u003CA0IE,DataB4\u003E bonus armor, \u003CA0IE,DataC4\u003E bonus regen"
     },
     {
       "Level": 1,
@@ -76,25 +76,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives friendly nearby units a 2 bonus to armour, and 200% increased life regeneration. Lasts 25 seconds."
+      "Value": "Gives friendly nearby units a \u003CA0IE,DataB1\u003E bonus to armour, and \u003CA0IE,DataC1\u003E bonus life regeneration. Lasts \u003CA0IE,Dur1\u003E seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives friendly nearby units a 3 bonus to armour, and 300% increased life regeneration. Lasts 25 seconds."
+      "Value": "Gives friendly nearby units a \u003CA0IE,DataB2\u003E bonus to armour, and \u003CA0IE,DataC2\u003E bonus life regeneration. Lasts \u003CA0IE,Dur2\u003E seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives friendly nearby units a 4 bonus to armour, and 400% increased life regeneration. Lasts 25 seconds."
+      "Value": "Gives friendly nearby units a \u003CA0IE,DataB3\u003E bonus to armour, and \u003CA0IE,DataC3\u003E bonus life regeneration. Lasts \u003CA0IE,Dur3\u003E seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives friendly nearby units a 5 bonus to armour, and 500% increased life regeneration. Lasts 25 seconds."
+      "Value": "Gives friendly nearby units a \u003CA0IE,DataB3\u003E bonus to armour, and \u003CA0IE,DataC3\u003E bonus life regeneration. Lasts \u003CA0IE,Dur3\u003E seconds."
     },
     {
       "Id": 1768841569,
