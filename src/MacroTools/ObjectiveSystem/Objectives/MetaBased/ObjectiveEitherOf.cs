@@ -8,13 +8,13 @@ namespace MacroTools.ObjectiveSystem.Objectives.MetaBased
 
     public Objective ObjectiveB { get; }
 
-    public ObjectiveEitherOf(Objective questItemA, Objective questItemB)
+    public ObjectiveEitherOf(Objective objectiveA, Objective objectiveB)
     {
-      ObjectiveA = questItemA;
-      ObjectiveB = questItemB;
-      Description = $"{questItemA.Description} or {questItemB.Description}";
-      questItemA.ProgressChanged += OnChildProgressChanged;
-      questItemB.ProgressChanged += OnChildProgressChanged;
+      ObjectiveA = objectiveA;
+      ObjectiveB = objectiveB;
+      Description = $"{objectiveA.Description} or {objectiveB.Description}";
+      objectiveA.ProgressChanged += OnChildProgressChanged;
+      objectiveB.ProgressChanged += OnChildProgressChanged;
       Position = ObjectiveA.Position;
     }
 

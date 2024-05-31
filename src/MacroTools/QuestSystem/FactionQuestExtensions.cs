@@ -31,13 +31,13 @@ namespace MacroTools.QuestSystem
         ? $"\n|cffffcc00QUEST FAILED - {questData.Title}|r\n{questData.PenaltyFlavour}\n"
         : $"\n|cffffcc00QUEST FAILED - {questData.Title}|r\n{questData.Flavour}\n";
 
-      foreach (var questItem in questData.Objectives)
-        if (questItem.ShowsInQuestLog)
-          display = questItem.Progress switch
+      foreach (var objective in questData.Objectives)
+        if (objective.ShowsInQuestLog)
+          display = objective.Progress switch
           {
-            QuestProgress.Complete => $"{display} - |cff808080{questItem.Description} (Completed)|r\n",
-            QuestProgress.Failed => $"{display} - |cffCD5C5C{questItem.Description} (Failed)|r\n",
-            _ => $"{display} - {questItem.Description}\n"
+            QuestProgress.Complete => $"{display} - |cff808080{objective.Description} (Completed)|r\n",
+            QuestProgress.Failed => $"{display} - |cffCD5C5C{objective.Description} (Failed)|r\n",
+            _ => $"{display} - {objective.Description}\n"
           };
       if (faction.Player != null && faction.Player.GetPlayerSettings().ShowQuestText)
         DisplayTextToPlayer(faction.Player, 0, 0, display);
@@ -48,9 +48,9 @@ namespace MacroTools.QuestSystem
     internal static void DisplayCompleted(this Faction faction, QuestData questData)
     {
       var display = $"\n|cffffcc00QUEST COMPLETED - {questData.Title}|r\n{questData.RewardFlavour}\n";
-      foreach (var questItem in questData.Objectives)
-        if (questItem.ShowsInQuestLog)
-          display = $"{display} - |cff808080{questItem.Description} (Completed)|r\n";
+      foreach (var objective in questData.Objectives)
+        if (objective.ShowsInQuestLog)
+          display = $"{display} - |cff808080{objective.Description} (Completed)|r\n";
       if (faction.Player != null && faction.Player.GetPlayerSettings().ShowQuestText)
         DisplayTextToPlayer(faction.Player, 0, 0, display);
 
@@ -63,12 +63,12 @@ namespace MacroTools.QuestSystem
     public static void DisplayDiscovered(this Faction faction, QuestData questData)
     {
       var display = $"\n|cffffcc00QUEST DISCOVERED - {questData.Title}|r\n{questData.Flavour}\n";
-      foreach (var questItem in questData.Objectives)
-        if (questItem.ShowsInQuestLog)
+      foreach (var objective in questData.Objectives)
+        if (objective.ShowsInQuestLog)
         {
-          display = questItem.Progress == QuestProgress.Complete
-            ? $"{display} - |cff808080{questItem.Description} (Completed)|r\n"
-            : $"{display} - {questItem.Description}\n";
+          display = objective.Progress == QuestProgress.Complete
+            ? $"{display} - |cff808080{objective.Description} (Completed)|r\n"
+            : $"{display} - {objective.Description}\n";
         }
 
       if (faction.Player != null && faction.Player.GetPlayerSettings().ShowQuestText)
