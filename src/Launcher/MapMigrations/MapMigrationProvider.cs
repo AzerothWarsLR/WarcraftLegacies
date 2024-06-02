@@ -9,6 +9,7 @@
         new ControlPointMapMigration(),
         new CreepLevelMapMigration(),
         new GoldBountyMapMigration(),
+        new FlightMigration(),
         new UnitTooltipMigration()
       };
     }
