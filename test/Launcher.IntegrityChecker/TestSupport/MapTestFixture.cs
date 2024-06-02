@@ -5,7 +5,7 @@ using Launcher.Settings;
 using War3Api.Object;
 using War3Net.Build;
 
-namespace Launcher.IntegrityChecker
+namespace Launcher.IntegrityChecker.TestSupport
 {
   /// <summary>
   /// Provides a fully constructed Warcraft Legacies map.

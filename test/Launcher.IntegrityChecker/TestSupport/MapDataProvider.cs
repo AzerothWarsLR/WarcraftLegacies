@@ -2,7 +2,7 @@
 using Launcher.Services;
 using War3Net.Build;
 
-namespace Launcher.IntegrityChecker
+namespace Launcher.IntegrityChecker.TestSupport
 {
   public static class MapDataProvider
   {
