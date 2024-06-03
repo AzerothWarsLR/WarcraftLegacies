@@ -1,4 +1,4 @@
-﻿namespace Launcher.IntegrityChecker
+﻿namespace Launcher.IntegrityChecker.TestSupport
 {
   public static class StringExtensions
   {
