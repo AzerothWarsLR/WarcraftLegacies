@@ -3,6 +3,7 @@ using System.Linq;
 using War3Api.Object;
 using War3Api.Object.Enums;
 using War3Net.Build;
+using War3Net.CodeAnalysis.Jass.Extensions;
 
 namespace Launcher.MapMigrations
 {
@@ -15,7 +16,7 @@ namespace Launcher.MapMigrations
     public void Migrate(Map map, ObjectDatabase objectDatabase)
     {
       var units = objectDatabase.GetUnits().ToList();
-      var flight = objectDatabase.GetUpgrade(1480142930);
+      var flight = objectDatabase.GetUpgrade(Constants.UPGRADE_R09X_FORTIFIED_HULLS_UNIVERSAL_UPGRADE.InvertEndianness());
       
       foreach (var unit in units)
       {
