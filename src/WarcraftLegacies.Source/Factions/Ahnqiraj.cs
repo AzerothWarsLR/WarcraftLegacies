@@ -12,6 +12,7 @@ using WarcraftLegacies.Source.PassiveAbilities.SpellConduction;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Researches.Ahnqiraj;
 using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Spells;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -120,6 +121,15 @@ namespace WarcraftLegacies.Source.Factions
         },
         RequiredResearch = UPGRADE_ZBML_SPELL_CONDUCTION_C_THUN,
         Radius = 500
+      });
+
+      SpellSystem.Register(new InspireMadness(ABILITY_ZBIM_INSPIRE_MADNESS_C_THUN)
+      {
+        Radius = 300,
+        CountBase = 14,
+        Duration = 30,
+        EffectTarget = @"Abilities\Spells\Other\Charm\CharmTarget.mdl",
+        EffectScaleTarget = 0.5f
       });
     }
   }
