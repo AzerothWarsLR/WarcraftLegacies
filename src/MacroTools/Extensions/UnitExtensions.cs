@@ -620,6 +620,18 @@ namespace MacroTools.Extensions
       BlzSetUnitBaseDamage(whichUnit, R2I(I2R(BlzGetUnitBaseDamage(whichUnit, weaponIndex)) * multiplier), weaponIndex);
       return whichUnit;
     }
+    
+    /// <summary>
+    /// Multiplies the specified unit's attack cooldown by the specified amount.
+    /// </summary>
+    /// <param name="whichUnit">The unit to affect.</param>
+    /// <param name="multiplier">The amount to multiply attack speed by.</param>
+    /// <param name="weaponIndex">Which weapon to change; can be 1 or 2.</param>
+    public static unit MultiplyAttackCooldown(this unit whichUnit, float multiplier, int weaponIndex)
+    {
+      BlzSetUnitAttackCooldown(whichUnit, BlzGetUnitAttackCooldown(whichUnit, weaponIndex) * multiplier, weaponIndex);
+      return whichUnit;
+    }
 
     /// <summary>
     /// Multiplities the specified unit's hit points by the specified amount.

@@ -131,6 +131,23 @@ namespace WarcraftLegacies.Source.Factions
         EffectTarget = @"Abilities\Spells\Other\Charm\CharmTarget.mdl",
         EffectScaleTarget = 0.5f
       });
+      
+      SpellSystem.Register(new UnstableEvolution(ABILITY_ZBUE_UNSTABLE_EVOLUTION_C_THUN)
+      {
+        Radius = 400,
+        Duration = 30,
+        AttackDamageMultiplier = new LeveledAbilityField<float>
+        {
+          Base = 1.5f,
+          PerLevel = 0.5f
+        },
+        AttackSpeedMultiplier = new LeveledAbilityField<float>
+        {
+          Base = 2
+        },
+        EffectTarget = @"Abilities\Spells\Human\Feedback\ArcaneTowerAttack.mdl",
+        EffectScaleTarget = 1
+      });
     }
   }
 }
