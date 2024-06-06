@@ -20,8 +20,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
         CountBase = 2,
         CountLevel = 4,
         Duration = 30,
-        Effect = @"war3mapImported\Call of Dread Purple.mdx",
-        EffectScale = 1.1f,
         EffectTarget = @"Abilities\Spells\Other\Charm\CharmTarget.mdl",
         EffectScaleTarget = 0.5f
       };
