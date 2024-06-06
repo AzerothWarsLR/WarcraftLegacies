@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var darkPact = new DarkPact(ABILITY_A0A0_DARK_PACT_LEGION_ARCHIMONDE);
       SpellSystem.Register(darkPact);
       
-      var inspireMadness = new InspireMadness(ABILITY_A10M_INSPIRE_MADNESS_LEGION_TICHONDRIUS)
+      var inspireMadness = new InspireMadness(ABILITY_A10M_INSPIRE_MADNESS_TICHONDRIUS)
       {
         Radius = 400,
         CountBase = 2,
