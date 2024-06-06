@@ -76,7 +76,7 @@
       "Pointer": 5,
       "Id": 897213000,
       "Type": 2,
-      "Value": 20
+      "Value": 0
     },
     {
       "Level": 1,
@@ -216,6 +216,27 @@
       "Id": 1717986657,
       "Type": 3,
       "Value": "X00P"
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": 897213000,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": 897213000,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 897213000,
+      "Type": 2,
+      "Value": 0
     }
   ]
 }
