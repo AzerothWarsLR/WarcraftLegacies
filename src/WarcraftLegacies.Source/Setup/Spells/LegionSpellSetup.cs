@@ -16,10 +16,10 @@ namespace WarcraftLegacies.Source.Setup.Spells
       
       var inspireMadness = new InspireMadness(ABILITY_A10M_INSPIRE_MADNESS_TICHONDRIUS)
       {
-        Radius = 400,
+        Radius = 300,
         CountBase = 2,
         CountLevel = 4,
-        Duration = 16,
+        Duration = 30,
         Effect = @"war3mapImported\Call of Dread Purple.mdx",
         EffectScale = 1.1f,
         EffectTarget = @"Abilities\Spells\Other\Charm\CharmTarget.mdl",
