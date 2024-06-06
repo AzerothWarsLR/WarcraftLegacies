@@ -1,6 +1,6 @@
 {
   "OldId": 1986348353,
-  "NewId": 1261449537,
+  "NewId": 1229537882,
   "Unk": [
     0
   ],
@@ -8,7 +8,7 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\PASTentacles.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\PASFhtagn2.blp"
     },
     {
       "Id": 1718840929,
@@ -18,7 +18,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Hideous Appendages"
+      "Value": "Infinite Influence"
     },
     {
       "Id": 1918988897,
@@ -39,7 +39,7 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Hideous Appendages"
+      "Value": "Infinite Influence"
     },
     {
       "Level": 2,
@@ -63,7 +63,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "This unit is surrounded by Tentacles which attack nearby enemy units. Each Tentacle has the same attack damage as the hero."
+      "Value": "This hero can cast its abilities anywhere within 700 units of a hero you control."
     },
     {
       "Level": 2,
@@ -85,6 +85,10 @@
     },
     {
       "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 2020631137,
       "Value": 1
     }
   ]
