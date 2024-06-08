@@ -4,20 +4,20 @@
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
-  public sealed class LegendCthun
+  public sealed class LegendAhnqiraj
   {
     public LegendaryHero Cthun { get; }
     public LegendaryHero Ouro { get; }
     public LegendaryHero Skeram { get; }
     public LegendaryHero Moam { get; }
 
-    public LegendCthun()
+    public LegendAhnqiraj()
     {
       Cthun = new LegendaryHero("C'thun")
       {
         UnitType = UNIT_U00R_OLD_GOD_AHN_QIRAJ,
         PermaDies = true,
-        StartingXp = 10000,
+        StartingXp = 41800,
       };
 
       Moam = new LegendaryHero("Moam")
