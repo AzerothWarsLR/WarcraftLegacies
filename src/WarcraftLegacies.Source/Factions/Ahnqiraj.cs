@@ -1,5 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
+using MacroTools.PassiveAbilities;
 using WarcraftLegacies.Source.Quests.Cthun;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
@@ -147,6 +148,13 @@ namespace WarcraftLegacies.Source.Factions
         },
         EffectTarget = @"Abilities\Spells\Human\Feedback\ArcaneTowerAttack.mdl",
         EffectScaleTarget = 1
+      });
+      
+      PassiveAbilityManager.Register(new HideousAppendages(ABILITY_A10K_HIDEOUS_APPENDAGES_C_THUN)
+      {
+        TentacleUnitTypeId = UNIT_N073_TENTACLE_C_THUN,
+        TentacleCount = 6,
+        RadiusOffset = 450
       });
     }
   }

@@ -40,7 +40,9 @@ namespace TestMap.Source.Setup
 
         var hideousAppendages = new HideousAppendages(FourCC("Huth"))
         {
-          TentacleUnitTypeId = FourCC("nfgt")
+          TentacleUnitTypeId = FourCC("nfgt"),
+          TentacleCount = 6,
+          RadiusOffset = 250
         };
         PassiveAbilityManager.Register(hideousAppendages);
 

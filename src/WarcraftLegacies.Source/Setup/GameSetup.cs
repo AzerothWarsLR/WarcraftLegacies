@@ -37,6 +37,7 @@ namespace WarcraftLegacies.Source.Setup
       ControlPointSetup.Setup();
       InstanceSetup.Setup(preplacedUnitSystem);
       NeutralHostileSetup.Setup();
+      PassiveAbilityManager.InitializePreplacedUnits();
       TeamSetup.Setup();
       new PlayerSetup(preplacedUnitSystem, allLegendSetup, artifactSetup).Setup();
       FactionChoiceDialogSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
@@ -81,7 +82,6 @@ namespace WarcraftLegacies.Source.Setup
       PlayerLeaves.Setup();
       FloatingTextSetup.Setup(60, 10);
       AmbianceSetup.Setup();
-      PassiveAbilityManager.InitializePreplacedUnits();
       IncompatibleResearchSetup.Setup();
       DemonGateSetup.Setup();
       SummonRallyPoints.Setup();

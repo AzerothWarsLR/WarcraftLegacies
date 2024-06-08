@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
     /// Initializes a new instance of the <see cref="QuestTitanJailors"/> class.
     /// </summary>
     /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
-    public QuestTitanJailors(Rectangle rescueRect) : base("Destroy the Titan Jailors",
+    public QuestTitanJailors(Rectangle rescueRect) : base("Titan Jailors",
       "C'thun is currently watched by a Titan Construct, we need to destroy it to free our god.",
       @"ReplaceableTextures\CommandButtons\BTNArmorGolem.blp")
     {

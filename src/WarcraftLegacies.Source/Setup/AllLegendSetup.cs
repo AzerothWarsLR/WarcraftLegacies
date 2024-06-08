@@ -132,7 +132,7 @@ namespace WarcraftLegacies.Source.Setup
       Warsong = new LegendWarsong(preplacedUnitSystem);
       Neutral = new LegendNeutral(preplacedUnitSystem);
       Gilneas = new LegendGilneas(preplacedUnitSystem);
-      Ahnqiraj = new LegendAhnqiraj();
+      Ahnqiraj = new LegendAhnqiraj(preplacedUnitSystem);
       Nazjatar = new LegendNazjatar();
       BlackEmpire = new LegendBlackEmpire(preplacedUnitSystem);
       Twilight = new LegendTwilight();
