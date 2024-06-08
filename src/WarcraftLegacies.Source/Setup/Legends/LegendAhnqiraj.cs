@@ -1,4 +1,5 @@
-﻿using MacroTools.LegendSystem;
+﻿using MacroTools;
+using MacroTools.LegendSystem;
 
 #pragma warning disable CS1591
 
@@ -11,11 +12,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero Skeram { get; }
     public LegendaryHero Moam { get; }
 
-    public LegendAhnqiraj()
+    public LegendAhnqiraj(PreplacedUnitSystem preplacedUnitSystem)
     {
       Cthun = new LegendaryHero("C'thun")
       {
-        UnitType = UNIT_U00R_OLD_GOD_AHN_QIRAJ,
+        Unit = preplacedUnitSystem.GetUnit(UNIT_U00R_OLD_GOD_AHN_QIRAJ),
         PermaDies = true,
         StartingXp = 41800,
       };
@@ -42,6 +43,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Cthun);
+      UnitModifySkillPoints(Cthun.Unit, -20);
       LegendaryHeroManager.Register(Moam);
       LegendaryHeroManager.Register(Ouro);
       LegendaryHeroManager.Register(Skeram);

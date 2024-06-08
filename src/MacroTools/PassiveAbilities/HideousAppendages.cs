@@ -14,14 +14,14 @@ namespace MacroTools.PassiveAbilities
     {
     }
 
-    public int TentacleUnitTypeId { get; init; } = FourCC("hfoo");
+    public required int TentacleUnitTypeId { get; init; }
 
-    public int TentacleCount { get; init; } = 6;
+    public required int TentacleCount { get; init; }
 
     /// <summary>
     ///   How far away from the buff holder to position the tentacles.
     /// </summary>
-    public float RadiusOffset { get; init; } = 250;
+    public required float RadiusOffset { get; init; }
 
     public override void OnCreated(unit createdUnit)
     {

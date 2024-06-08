@@ -32,7 +32,7 @@
     "HP": -1,
     "MP": -1,
     "TargetAcquisition": -1,
-    "HeroLevel": 1,
+    "HeroLevel": 20,
     "InventoryData": [],
     "AbilityData": [],
     "CustomPlayerColorId": -1,
@@ -42,7 +42,7 @@
       "X": -23657.584,
       "Y": -15923.234
     },
-    "Rotation": 5.392486095428467,
+    "Rotation": 5.392543792724609,
     "Scale": {
       "X": 1,
       "Y": 1,

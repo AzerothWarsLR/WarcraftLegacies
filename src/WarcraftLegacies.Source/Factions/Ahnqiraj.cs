@@ -1,5 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
+using MacroTools.PassiveAbilities;
 using WarcraftLegacies.Source.Quests.Cthun;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
@@ -47,7 +48,7 @@ namespace WarcraftLegacies.Source.Factions
 
     private void RegisterQuests()
     {
-      var newQuest = AddQuest(new QuestTitanJailors(Regions.QirajInsideUnlock));
+      var newQuest = AddQuest(new QuestTitanJailors(_allLegendSetup, Regions.QirajInsideUnlock));
       StartingQuest = newQuest;
       AddQuest(new QuestRebuildAhnqiraj(Regions.QirajOutsideUnlock));
       AddQuest(new QuestSlitheringForward(Regions.QirajOutpost1, Regions.QirajOutpost2, Regions.QirajOutpost3));
@@ -147,6 +148,13 @@ namespace WarcraftLegacies.Source.Factions
         },
         EffectTarget = @"Abilities\Spells\Human\Feedback\ArcaneTowerAttack.mdl",
         EffectScaleTarget = 1
+      });
+      
+      PassiveAbilityManager.Register(new HideousAppendages(UNIT_U00R_OLD_GOD_AHN_QIRAJ)
+      {
+        TentacleUnitTypeId = UNIT_N073_TENTACLE_C_THUN,
+        TentacleCount = 9,
+        RadiusOffset = 520
       });
     }
   }
