@@ -59,15 +59,15 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       if (_currentKillCount == _maxKillCount && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer())) 
         Progress = QuestProgress.Complete;
     }
-    
+
     private void RegisterKillTriggers(float range)
     {
       var unitsNearby = CreateGroup()
-        .EnumUnitsInRange(_target.Unit.GetPosition(), range)
-        .EmptyToList()
-        .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !x.IsType(UNIT_TYPE_ANCIENT) &&
-                    !x.IsType(UNIT_TYPE_SAPPER));
-      
+          .EnumUnitsInRange(_target.Unit.GetPosition(), range)
+          .EmptyToList()
+          .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !x.IsType(UNIT_TYPE_ANCIENT) &&
+           !x.IsType(UNIT_TYPE_SAPPER) && !x.IsType(UNIT_TYPE_STRUCTURE)); 
+
       foreach (var unit in unitsNearby)
       {
         _maxKillCount++;
