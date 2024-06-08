@@ -24,7 +24,7 @@ namespace MacroTools.Buffs
     /// <summary>
     ///   How far away from the buff holder to position the tentacles.
     /// </summary>
-    public float RadiusOffset { get; init; } = 250;
+    public float RadiusOffset { get; init; } = 700;
 
     public override void OnDispose()
     {
