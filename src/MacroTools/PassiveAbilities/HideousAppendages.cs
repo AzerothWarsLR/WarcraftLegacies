@@ -1,5 +1,4 @@
-﻿using System;
-using MacroTools.Buffs;
+﻿using MacroTools.Buffs;
 using MacroTools.PassiveAbilitySystem;
 using WCSharp.Buffs;
 using static War3Api.Common;
@@ -26,7 +25,6 @@ namespace MacroTools.PassiveAbilities
 
     public override void OnCreated(unit createdUnit)
     {
-      Console.WriteLine("found");
       var hideousAppendagesBuff = new HideousAppendagesBuff(createdUnit, createdUnit)
       {
         TentacleUnitTypeId = TentacleUnitTypeId,

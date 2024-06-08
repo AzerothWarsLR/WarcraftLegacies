@@ -1,21 +1,21 @@
 ﻿using System.Collections.Generic;
+using MacroTools.Extensions;
 using MacroTools.Libraries;
 using WCSharp.Buffs;
+using WCSharp.Events;
 using static War3Api.Common;
-
 
 namespace MacroTools.Buffs
 {
   /// <summary>
   ///   Surrounds the buff holder with tentacles.
   /// </summary>
-  public sealed class HideousAppendagesBuff : TickingBuff
+  public sealed class HideousAppendagesBuff : PassiveBuff
   {
     private readonly List<unit> _tentacles = new();
 
     public HideousAppendagesBuff(unit caster, unit target) : base(caster, target)
     {
-      Interval = 0.01f;
     }
 
     public int TentacleUnitTypeId { get; init; } = FourCC("hfoo");
@@ -28,13 +28,23 @@ namespace MacroTools.Buffs
 
     public override void OnDispose()
     {
-      foreach (var tentacle in _tentacles) KillUnit(tentacle);
+      foreach (var tentacle in _tentacles) 
+        KillUnit(tentacle);
+      
+      PlayerUnitEvents.Unregister(UnitEvent.ChangesOwner, OnOwnershipChanged, Target);
     }
 
     public override void OnApply()
     {
       SpawnTentacles();
       RepositionTentacles();
+      PlayerUnitEvents.Register(UnitEvent.ChangesOwner, OnOwnershipChanged, Target);
+    }
+
+    private void OnOwnershipChanged()
+    {
+      foreach (var tentacle in _tentacles) 
+        tentacle.SetOwner(Target.OwningPlayer());
     }
 
     private void SpawnTentacles()
@@ -51,7 +61,7 @@ namespace MacroTools.Buffs
         _tentacles.Add(newTentacle);
       }
     }
-
+    
     private void RepositionTentacles()
     {
       var i = 0;
@@ -63,11 +73,6 @@ namespace MacroTools.Buffs
         SetUnitPosition(tentacle, offsetX, offsetY);
         i++;
       }
-    }
-
-    public override void OnTick()
-    {
-      RepositionTentacles();
     }
   }
 }
