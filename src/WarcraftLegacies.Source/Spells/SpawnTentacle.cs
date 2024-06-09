@@ -30,8 +30,9 @@ namespace WarcraftLegacies.Source.Spells
       
       CreateUnit(caster.OwningPlayer(), UnitTypeId, targetPoint.X, targetPoint.Y, caster.GetFacing())
         .SetTimedLife(Duration.Base + Duration.PerLevel * level)
-        .SetDamageBase(AttackDamageBase.Base + AttackDamageBase.PerLevel * level, 1)
+        .SetDamageBase(AttackDamageBase.Base + AttackDamageBase.PerLevel * level)
         .SetMaximumHitpoints(HitPoints.Base + HitPoints.PerLevel * level)
+        .SetLifePercent(100)
         .SetAnimation("birth")
         .QueueAnimation("stand");
     }
