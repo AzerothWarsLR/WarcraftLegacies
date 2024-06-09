@@ -23,6 +23,11 @@ namespace WarcraftLegacies.Source.Spells.MassiveAttack
     public required float Distance { get; init; }
 
     /// <summary>
+    /// If set, additional damage is NOT dealt to the attack target the ability was triggered against.
+    /// </summary>
+    public bool IgnoreAttackTarget { get; init; }
+    
+    /// <summary>
     /// Initializes a new instance of the <see cref="SpellOnAttack"/> class.
     /// </summary>
     /// <param name="unitTypeId"><inheritdoc /></param>
@@ -38,10 +43,10 @@ namespace WarcraftLegacies.Source.Spells.MassiveAttack
 
       var caster = GetEventDamageSource();
 
-      DoSpellOnTarget(caster);
+      DoSpellOnTarget(caster, GetTriggerUnit());
     }
 
-    private void DoSpellOnTarget(unit caster)
+    private void DoSpellOnTarget(unit caster, unit attackTarget)
     {
       var facing = GetUnitFacing(caster);
       var targetX = MathEx.GetPolarOffsetX(GetUnitX(caster), Distance, facing);
@@ -53,6 +58,8 @@ namespace WarcraftLegacies.Source.Spells.MassiveAttack
         AttackType = ConvertAttackType(caster.GetAttackType()),
         DamageType = BlzGetEventDamageType()
       };
+      if (IgnoreAttackTarget)
+        missile.Hits.Add(attackTarget);
       MissileSystem.Add(missile);
     }
   }
