@@ -48,7 +48,8 @@ namespace WarcraftLegacies.Source.Spells.MassiveAttack
 
     private void DoSpellOnTarget(unit caster, unit attackTarget)
     {
-      var facing = GetUnitFacing(caster);
+      var facing = MathEx.GetAngleBetweenPoints(GetUnitX(caster), GetUnitY(caster), GetUnitX(attackTarget),
+        GetUnitY(attackTarget));
       var targetX = MathEx.GetPolarOffsetX(GetUnitX(caster), Distance, facing);
       var targetY = MathEx.GetPolarOffsetY(GetUnitY(caster), Distance, facing);
       
