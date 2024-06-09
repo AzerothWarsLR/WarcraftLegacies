@@ -38,6 +38,7 @@ namespace MacroTools.FactionSystem
     private player? _player;
     private readonly int _undefeatedResearch;
     private readonly List<unit> _goldMines = new();
+    private static int _highestId;
 
     internal List<FactionDependentInitializer> FactionDependentInitializers { get; } = new();
     
@@ -53,44 +54,13 @@ namespace MacroTools.FactionSystem
     /// <summary>Invoked when one of the <see cref="Faction"/>'s <see cref="QuestData"/>s changes progress.</summary>
     public event EventHandler<FactionQuestProgressChangedEventArgs>? QuestProgressChanged;
 
+    /// <summary>A unique numerical identifier.</summary>
+    public int Id { get; set; }
+    
     protected internal IReadOnlyList<unit> GoldMines
     {
       get => _goldMines;
-      init => _goldMines = value as List<unit> ?? throw new InvalidOperationException();
-    }
-
-    static Faction()
-    {
-      PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
-      {
-        try
-        {
-          var faction = GetTriggerPlayer().GetFaction();
-          if (faction == null)
-            return;
-          
-          var researchId = GetResearched();
-          var research = ResearchManager.GetFromTypeId(researchId);
-          if (research == null || !research.IncompatibleWith.Any(x => faction.GetObjectLevel(x.ResearchTypeId) > 0))
-          {
-            faction.SetObjectLevel(researchId, GetPlayerTechCount(GetTriggerPlayer(), researchId, true));
-            if (research == null)
-              return;
-            research.OnResearch(GetTriggerPlayer());
-            foreach (var otherResearch in research.IncompatibleWith)
-              faction.SetObjectLimit(otherResearch.ResearchTypeId, -UNLIMITED);
-          }
-          else
-          {
-            faction.SetObjectLimit(researchId, -UNLIMITED);
-            research.Refund(GetTriggerPlayer());
-          }
-        }
-        catch (Exception ex)
-        {
-          Logger.LogError(ex.ToString());
-        }
-      });
+      protected init => _goldMines = value as List<unit> ?? throw new InvalidOperationException();
     }
 
     /// <summary>Displayed to the <see cref="Faction" /> when the game starts.</summary>
@@ -108,7 +78,7 @@ namespace MacroTools.FactionSystem
     public bool HasEssentialLegend => GetEssentialLegends().Count > 0;
 
     /// <summary>How much gold the faction starts with.</summary>
-    public int StartingGold { get; init; }
+    public int StartingGold { get; protected init; }
 
     /// <summary>The units this faction should start the game with.</summary>
     public List<unit> StartingUnits { get; protected init; } = new();
@@ -223,22 +193,40 @@ namespace MacroTools.FactionSystem
       }
     }
 
-    /// <summary>Gets a list of legends that are flagged as essential and alive that the faction currently has.</summary>
-    private List<Legend> GetEssentialLegends()
+    static Faction()
     {
-      var essentialLegends = new List<Legend>();
-      
-      foreach (var legend in LegendaryHeroManager.GetAll())
-        if (legend.Essential && legend.OwningPlayer == Player && legend.Unit?.IsAlive() == true)
-          essentialLegends.Add(legend);
-      
-      foreach (var capital in CapitalManager.GetAll())
-        if (capital.Essential && capital.OwningPlayer == Player && capital.Unit?.IsAlive() == true)
-          essentialLegends.Add(capital);
-
-      return essentialLegends;
+      PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
+      {
+        try
+        {
+          var faction = GetTriggerPlayer().GetFaction();
+          if (faction == null)
+            return;
+          
+          var researchId = GetResearched();
+          var research = ResearchManager.GetFromTypeId(researchId);
+          if (research == null || !research.IncompatibleWith.Any(x => faction.GetObjectLevel(x.ResearchTypeId) > 0))
+          {
+            faction.SetObjectLevel(researchId, GetPlayerTechCount(GetTriggerPlayer(), researchId, true));
+            if (research == null)
+              return;
+            research.OnResearch(GetTriggerPlayer());
+            foreach (var otherResearch in research.IncompatibleWith)
+              faction.SetObjectLimit(otherResearch.ResearchTypeId, -UNLIMITED);
+          }
+          else
+          {
+            faction.SetObjectLimit(researchId, -UNLIMITED);
+            research.Refund(GetTriggerPlayer());
+          }
+        }
+        catch (Exception ex)
+        {
+          Logger.LogError(ex.ToString());
+        }
+      });
     }
-
+    
     protected Faction(string name, playercolor playerColor, string prefixCol, string icon)
     {
       _name = name;
@@ -246,6 +234,8 @@ namespace MacroTools.FactionSystem
       PrefixCol = prefixCol;
       _icon = icon;
       FoodMaximum = FoodMaximumDefault;
+      Id = _highestId + 1;
+      _highestId = Id;
     }
 
     /// <summary>Fires when the <see cref="Faction" /> changes its name.</summary>
@@ -566,6 +556,22 @@ namespace MacroTools.FactionSystem
           initializer(factionDependencyA, factionDependencyB, factionDependencyC, factionDependencyD);
       });
       FactionDependentInitializers.Add(factionDependentInitializer);
+    }
+    
+    /// <summary>Gets a list of legends that are flagged as essential and alive that the faction currently has.</summary>
+    private List<Legend> GetEssentialLegends()
+    {
+      var essentialLegends = new List<Legend>();
+      
+      foreach (var legend in LegendaryHeroManager.GetAll())
+        if (legend.Essential && legend.OwningPlayer == Player && legend.Unit?.IsAlive() == true)
+          essentialLegends.Add(legend);
+      
+      foreach (var capital in CapitalManager.GetAll())
+        if (capital.Essential && capital.OwningPlayer == Player && capital.Unit?.IsAlive() == true)
+          essentialLegends.Add(capital);
+
+      return essentialLegends;
     }
     
     /// <summary>Removes all gold mines assigned to the faction</summary>
