@@ -10,39 +10,12 @@
     "AbilityData": [],
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "TypeId": 1969710702,
-    "Position": {
-      "X": -139.95097,
-      "Y": -31103.676
-    },
-    "Rotation": 3.4735543727874756,
-    "Scale": {
-      "X": 1,
-      "Y": 1,
-      "Z": 1
-    },
-    "SkinId": 1969710702,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 3362
-  },
-  {
-    "Flags": 2,
-    "OwnerId": 24,
-    "HP": -1,
-    "MP": -1,
-    "TargetAcquisition": -2,
-    "HeroLevel": 1,
-    "InventoryData": [],
-    "AbilityData": [],
-    "CustomPlayerColorId": -1,
-    "WaygateDestinationRegionId": -1,
     "TypeId": 1734894446,
     "Position": {
-      "X": -140.10681,
-      "Y": -30989.39
+      "X": -201.66919,
+      "Y": -31211.35
     },
-    "Rotation": 4.902944087982178,
+    "Rotation": 0.26548174023628235,
     "Scale": {
       "X": 1,
       "Y": 1,
@@ -51,7 +24,7 @@
     "SkinId": 1734894446,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 893
+    "CreationNumber": 916
   },
   {
     "Flags": 2,
@@ -66,10 +39,10 @@
     "WaygateDestinationRegionId": -1,
     "TypeId": 1734894446,
     "Position": {
-      "X": -346.21597,
-      "Y": -30919.62
+      "X": -209.46394,
+      "Y": -31090.135
     },
-    "Rotation": 1.3504778146743774,
+    "Rotation": 2.2926738262176514,
     "Scale": {
       "X": 1,
       "Y": 1,
@@ -91,39 +64,12 @@
     "AbilityData": [],
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "TypeId": 1412640878,
-    "Position": {
-      "X": -420.4371,
-      "Y": -31199.709
-    },
-    "Rotation": 1.3962633609771729,
-    "Scale": {
-      "X": 1,
-      "Y": 1,
-      "Z": 1
-    },
-    "SkinId": 1412640878,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 555
-  },
-  {
-    "Flags": 2,
-    "OwnerId": 24,
-    "HP": -1,
-    "MP": -1,
-    "TargetAcquisition": -2,
-    "HeroLevel": 1,
-    "InventoryData": [],
-    "AbilityData": [],
-    "CustomPlayerColorId": -1,
-    "WaygateDestinationRegionId": -1,
     "TypeId": 1818523246,
     "Position": {
-      "X": -195.19727,
-      "Y": -31221.613
+      "X": 42.328857,
+      "Y": -31158.387
     },
-    "Rotation": 1.8521466255187988,
+    "Rotation": 2.5693130493164062,
     "Scale": {
       "X": 1,
       "Y": 1,
@@ -133,32 +79,5 @@
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 2986
-  },
-  {
-    "Flags": 2,
-    "OwnerId": 24,
-    "HP": -1,
-    "MP": -1,
-    "TargetAcquisition": -2,
-    "HeroLevel": 1,
-    "InventoryData": [],
-    "AbilityData": [],
-    "CustomPlayerColorId": -1,
-    "WaygateDestinationRegionId": -1,
-    "TypeId": 1818523246,
-    "Position": {
-      "X": -322.69763,
-      "Y": -31035.91
-    },
-    "Rotation": 0.6322111487388611,
-    "Scale": {
-      "X": 1,
-      "Y": 1,
-      "Z": 1
-    },
-    "SkinId": 1818523246,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 3200
   }
 ]
