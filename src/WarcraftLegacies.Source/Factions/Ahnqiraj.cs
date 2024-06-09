@@ -153,7 +153,7 @@ namespace WarcraftLegacies.Source.Factions
       
       PassiveAbilityManager.Register(new HideousAppendages(UNIT_U00R_OLD_GOD_AHN_QIRAJ)
       {
-        TentacleUnitTypeId = UNIT_N073_TENTACLE_C_THUN,
+        TentacleUnitTypeId = UNIT_N073_TENTACLE_HIDEOUS_APPENDAGES_C_THUN,
         TentacleCount = 9,
         RadiusOffset = 520
       });
@@ -175,14 +175,14 @@ namespace WarcraftLegacies.Source.Factions
           Base = 25,
           PerLevel = 25
         },
-        UnitTypeId = UNIT_N073_TENTACLE_C_THUN,
+        UnitTypeId = UNIT_ZBTH_TENTACLE_SPAWN_TENTACLE_C_THUN,
         Duration = new LeveledAbilityField<float>
         {
           Base = 60
         }
       });
       
-      PassiveAbilityManager.Register(new MassiveAttackAbility(UNIT_N073_TENTACLE_C_THUN)
+      PassiveAbilityManager.Register(new MassiveAttackAbility(UNIT_ZBTH_TENTACLE_SPAWN_TENTACLE_C_THUN)
       {
         AttackDamagePercentage = 1,
         Distance = 400,
