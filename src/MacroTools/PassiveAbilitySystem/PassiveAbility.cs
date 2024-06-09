@@ -32,6 +32,13 @@ namespace MacroTools.PassiveAbilitySystem
     public IEnumerable<int> UnitTypeIds { get; }
 
     /// <summary>
+    /// Fired when the <see cref="PassiveAbility"/> is registered.
+    /// </summary>
+    public virtual void OnRegistered()
+    {
+    }
+    
+    /// <summary>
     /// Fired when the unit finishes upgrading itself.
     /// </summary>
     public virtual void OnUpgrade()

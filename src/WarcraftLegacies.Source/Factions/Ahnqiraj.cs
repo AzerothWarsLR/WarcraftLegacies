@@ -156,6 +156,11 @@ namespace WarcraftLegacies.Source.Factions
         TentacleCount = 9,
         RadiusOffset = 520
       });
+      
+      PassiveAbilityManager.Register(new InfiniteInfluence(UNIT_U00R_OLD_GOD_AHN_QIRAJ)
+      {
+        Radius = 700
+      });
     }
   }
 }

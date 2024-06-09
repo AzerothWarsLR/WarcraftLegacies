@@ -62,11 +62,11 @@ namespace MacroTools.PassiveAbilitySystem
         foreach (var unitTypeId in passiveAbility.UnitTypeIds)
         {
           if (!PassiveAbilitiesByUnitTypeId.ContainsKey(unitTypeId))
-          {
             PassiveAbilitiesByUnitTypeId.Add(unitTypeId, new List<PassiveAbility>());
-          }
 
           PassiveAbilitiesByUnitTypeId[unitTypeId].Add(passiveAbility);
+          
+          passiveAbility.OnRegistered();
         }
       }
       catch (Exception ex)
