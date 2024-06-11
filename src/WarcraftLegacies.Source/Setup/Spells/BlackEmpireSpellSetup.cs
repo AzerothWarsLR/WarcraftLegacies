@@ -22,11 +22,24 @@ namespace WarcraftLegacies.Source.Setup.Spells
         AbilityWhitelist = new List<int>
         {
           ABILITY_A032_ARCANE_BOMBARDMENT_ORANGE_ANTONIDAS_MEDIVH,
-          ABILITY_A013_DEVOUR_MAGIC_GUL_DAN,
+          ABILITY_ABEH_HEALING_WAVE_BLACK_EMPIRE,
           ABILITY_A10U_MANA_BURN_DALARAN_YOGG,
           ABILITY_A11O_BLACK_HOLE_KHADGAR,
         }
       });
+
+      var poisonYor = new Stomp(ABILITY_ABNT_VOID_TOXIN_BLACK_EMPIRE)
+      {
+        Radius = 600,
+        DamageBase = 50,
+        DamageLevel = 40,
+        DurationBase = 15,
+        DurationLevel = 0,
+        StunAbilityId = ABILITY_ABSS_SHADOW_STRIKE_VOID_TOXIN_REAL,
+        StunOrderId = OrderId("shadowstrike"),
+        SpecialEffect = @"Abilities\Weapons\ChimaeraAcidMissile\ChimaeraAcidMissile.mdl"
+      };
+      SpellSystem.Register(poisonYor);
 
       var genesisAttack = new SpellOnAttack(UNIT_U029_STYGIAN_HULK_YOGG,
         ABILITY_ABES_GENESIS_ATTACK_ICON_STYGIAN_HULK)
