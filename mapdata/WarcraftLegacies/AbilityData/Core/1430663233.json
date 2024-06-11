@@ -9,7 +9,7 @@
       "Level": 1,
       "Id": 1701994849,
       "Type": 2,
-      "Value": 350
+      "Value": 150
     },
     {
       "Level": 1,
@@ -27,6 +27,12 @@
       "Id": 1851880033,
       "Type": 2,
       "Value": 800
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,invulnerable,vulnerable"
     }
   ]
 }
