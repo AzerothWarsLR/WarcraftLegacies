@@ -31,7 +31,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Stops all enemies in a target area from casting spells. The area of effect and duration increase with level. |n|n|cffffcc00Level 1|r - Small area, lasts \u003CA083,Dur1\u003E (\u003CA083,HeroDur1\u003E  for Heroes) seconds. |n|cffffcc00Level 2|r - Medium area, lasts \u003CA083,Dur2\u003E (\u003CA083,HeroDur2\u003E for Heroes) seconds. |n|cffffcc00Level 3|r - Medium area, lasts \u003CA083,Dur3\u003E (\u003CA083,HeroDur3\u003E for Heroes) seconds. |n|cffffcc00Level 4|r - Large area, lasts \u003CA083,Dur4\u003E (\u003CA083,HeroDur4\u003E for Heroes) seconds."
+      "Value": "Stops all enemies in a target area from casting spells. |n|n|cffffcc00Level 1|r - Small area, lasts \u003CA083,Dur1\u003E (\u003CA083,HeroDur1\u003E  for Heroes) seconds. |n|cffffcc00Level 2|r - Medium area, lasts \u003CA083,Dur2\u003E (\u003CA083,HeroDur2\u003E for Heroes) seconds. |n|cffffcc00Level 3|r - Medium area, lasts \u003CA083,Dur3\u003E (\u003CA083,HeroDur3\u003E for Heroes) seconds. |n|cffffcc00Level 4|r - Large area, lasts \u003CA083,Dur4\u003E (\u003CA083,HeroDur4\u003E for Heroes) seconds."
     },
     {
       "Level": 4,
