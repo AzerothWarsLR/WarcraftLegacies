@@ -33,7 +33,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Unleash a burst of poison from the void, poisoning all living enemies in a 600 radius around the caster dealing damage plus an additional 20 damage per second for 15 seconds. Additionally, the target\u0027s movement speed will be slowed by 75% for the duration. |n|n|cffffcc00Level 1|r - 90 damage. |n|cffffcc00Level 2|r - 130 damage. |n|cffffcc00Level 3|r - 170 damage. |n|cffffcc00Level 4|r - 210 damage."
+      "Value": "Poisons enemy units within a radius of 600, dealing instant damage, then dealing 20 additional damage per second and reducing their movement speed by 75% for 15 seconds. |n|n|cffffcc00Level 1|r - 90 instant damage. |n|cffffcc00Level 2|r - 130 instant damage. |n|cffffcc00Level 3|r - 170 instant damage. |n|cffffcc00Level 4|r - 210 instant damage."
     },
     {
       "Level": 1,
@@ -57,19 +57,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Unleash a burst of poison from the void, poisoning all living enemies in a 600 radius around the caster. The poison deals 90 damage plus an additional 20 per second for 15 seconds. Additionally, the target\u0027s movement speed will be slowed by 75% for the duration."
+      "Value": "Poisons enemy units within a radius of 600, dealing 90 damage, then dealing 20 additional damage per second and reducing their movement speed by 75% for 15 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Unleash a burst of poison from the void, poisoning all living enemies in a 600 radius around the caster. The poison deals 130 damage plus an additional 20 per second for 15 seconds. Additionally, the target\u0027s movement speed will be slowed by 75% for the duration."
+      "Value": "Poisons enemy units within a radius of 600, dealing 130 damage, then dealing 20 additional damage per second and reducing their movement speed by 75% for 15 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Unleash a burst of poison from the void, poisoning all living enemies in a 600 radius around the caster. The poison deals 170 damage plus an additional 20 per second for 15 seconds. Additionally, the target\u0027s movement speed will be slowed by 75% for the duration."
+      "Value": "Poisons enemy units within a radius of 600, dealing 170 damage, then dealing 20 additional damage per second and reducing their movement speed by 75% for 15 seconds."
     },
     {
       "Level": 4,
@@ -81,7 +81,7 @@
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Unleash a burst of poison from the void, poisoning all living enemies in a 600 radius around the caster. The poison deals 210 damage plus an additional 20 per second for 15 seconds. Additionally, the target\u0027s movement speed will be slowed by 75% for the duration."
+      "Value": "Poisons enemy units within a radius of 600, dealing 210 damage, then dealing 20 additional damage per second and reducing their movement speed by 75% for 15 seconds."
     },
     {
       "Id": 2020631137,
