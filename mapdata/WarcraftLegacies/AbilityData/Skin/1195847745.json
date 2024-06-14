@@ -25,6 +25,14 @@
       "Id": 829453409,
       "Type": 3,
       "Value": "The Kirin Tor\u0027s expertise in spell casting allows them to deflect a incoming negative spell every 15 seconds."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2037408353,
+      "Value": 2
     }
   ]
 }
