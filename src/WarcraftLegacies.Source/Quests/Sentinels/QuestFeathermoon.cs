@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
 
     /// <inheritdoc />
     protected override string RewardDescription => 
-      $"Upon completion, you will gain control of all units in Feathermoon Stronghold, including the ability to train {GetObjectName(UNIT_EBAL_GLAIVE_THROWER_SENTINELS)}s from the {GetObjectName(UNIT_E00L_WAR_ACADEMY_SENTINEL_BARRACKS)}. Additionally, you can now train Tyrande at the {GetObjectName(UNIT_E00R_ALTAR_OF_WATCHERS_SENTINEL_ALTAR)}";
+      $"Gain control of all units in Feathermoon Stronghold, learn to train {GetObjectName(UNIT_EBAL_GLAIVE_THROWER_SENTINELS)}s from the {GetObjectName(UNIT_E00L_WAR_ACADEMY_SENTINEL_BARRACKS)}, and learn to train Tyrande from the {GetObjectName(UNIT_E00R_ALTAR_OF_WATCHERS_SENTINEL_ALTAR)}";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
