@@ -1,5 +1,6 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
+using MacroTools.PassiveAbilities;
 using WarcraftLegacies.Source.Quests.Cthun;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
@@ -12,6 +13,8 @@ using WarcraftLegacies.Source.PassiveAbilities.SpellConduction;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Researches.Ahnqiraj;
 using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.Spells.MassiveAttack;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -46,7 +49,7 @@ namespace WarcraftLegacies.Source.Factions
 
     private void RegisterQuests()
     {
-      var newQuest = AddQuest(new QuestTitanJailors(Regions.QirajInsideUnlock));
+      var newQuest = AddQuest(new QuestTitanJailors(_allLegendSetup, Regions.QirajInsideUnlock));
       StartingQuest = newQuest;
       AddQuest(new QuestRebuildAhnqiraj(Regions.QirajOutsideUnlock));
       AddQuest(new QuestSlitheringForward(Regions.QirajOutpost1, Regions.QirajOutpost2, Regions.QirajOutpost3));
@@ -120,6 +123,70 @@ namespace WarcraftLegacies.Source.Factions
         },
         RequiredResearch = UPGRADE_ZBML_SPELL_CONDUCTION_C_THUN,
         Radius = 500
+      });
+
+      SpellSystem.Register(new InspireMadness(ABILITY_ZBIM_INSPIRE_MADNESS_C_THUN)
+      {
+        Radius = 300,
+        CountBase = 14,
+        Duration = 30,
+        EffectTarget = @"Abilities\Spells\Other\Charm\CharmTarget.mdl",
+        EffectScaleTarget = 0.5f
+      });
+      
+      SpellSystem.Register(new UnstableEvolution(ABILITY_ZBUE_UNSTABLE_EVOLUTION_C_THUN)
+      {
+        Radius = 300,
+        Duration = 30,
+        AttackDamageMultiplier = new LeveledAbilityField<float>
+        {
+          Base = 1.5f,
+          PerLevel = 0.5f
+        },
+        AttackSpeedMultiplier = new LeveledAbilityField<float>
+        {
+          Base = 2
+        },
+        EffectTarget = @"Abilities\Spells\Human\Feedback\ArcaneTowerAttack.mdl",
+        EffectScaleTarget = 1
+      });
+      
+      PassiveAbilityManager.Register(new HideousAppendages(UNIT_U00R_OLD_GOD_AHN_QIRAJ)
+      {
+        TentacleUnitTypeId = UNIT_N073_TENTACLE_HIDEOUS_APPENDAGES_C_THUN,
+        TentacleCount = 9,
+        RadiusOffset = 520
+      });
+      
+      PassiveAbilityManager.Register(new InfiniteInfluence(UNIT_U00R_OLD_GOD_AHN_QIRAJ)
+      {
+        Radius = 700
+      });
+      
+      SpellSystem.Register(new SpawnTentacle(ABILITY_ZBST_SPAWN_TENTACLE_C_THUN)
+      {
+        HitPoints = new LeveledAbilityField<int>
+        {
+          Base = 500,
+          PerLevel = 500
+        },
+        AttackDamageBase = new LeveledAbilityField<int>
+        {
+          Base = 25,
+          PerLevel = 25
+        },
+        UnitTypeId = UNIT_ZBTH_TENTACLE_SPAWN_TENTACLE_C_THUN,
+        Duration = new LeveledAbilityField<float>
+        {
+          Base = 60
+        }
+      });
+      
+      PassiveAbilityManager.Register(new MassiveAttackAbility(UNIT_ZBTH_TENTACLE_SPAWN_TENTACLE_C_THUN)
+      {
+        AttackDamagePercentage = 1,
+        Distance = 400,
+        IgnoreAttackTarget = true
       });
     }
   }

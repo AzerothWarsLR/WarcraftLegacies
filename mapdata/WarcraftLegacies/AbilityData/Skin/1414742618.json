@@ -1,0 +1,124 @@
+{
+  "OldId": 1818447425,
+  "NewId": 1414742618,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "spell"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTentacle.blp"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 2
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885430625,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(C\u0027thun)"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Spawn Tentacle"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTentacle.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Spawn Tentacle - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Summons a powerful Tentacle at the target location. The Tentacle\u0027s attacks deal damage to all units in a straight line in front of it. Lasts 60 seconds. |n|n|cffffcc00Level 1|r - The Tentacle has 1000 hit points and 50 base damage.|n|cffffcc00Level 2|r - The Tentacle has 1500 hit points and 75 base damage.|n|cffffcc00Level 3|r - The Tentacle has 2000 hit points and 100 base damage."
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Spawn Tentacle - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Spawn Tentacle - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Spawn Tentacle - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Spawn Tentacle - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons a powerful Tentacle with 1000 hit points and 50 base damage at the target location. The Tentacle\u0027s attacks deal damage to all units in a straight line in front of it. Lasts 60 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons a powerful Tentacle with 1500 hit points and 75 base damage at the target location. The Tentacle\u0027s attacks deal damage to all units in a straight line in front of it. Lasts 60 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons a powerful Tentacle with 2000 hit points and 100 base damage at the target location. The Tentacle\u0027s attacks deal damage to all units in a straight line in front of it. Lasts 60 seconds."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    }
+  ]
+}

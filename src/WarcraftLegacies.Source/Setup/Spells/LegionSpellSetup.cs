@@ -14,14 +14,12 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var darkPact = new DarkPact(ABILITY_A0A0_DARK_PACT_LEGION_ARCHIMONDE);
       SpellSystem.Register(darkPact);
       
-      var inspireMadness = new InspireMadness(ABILITY_A10M_INSPIRE_MADNESS_LEGION_TICHONDRIUS)
+      var inspireMadness = new InspireMadness(ABILITY_A10M_INSPIRE_MADNESS_TICHONDRIUS)
       {
-        Radius = 400,
+        Radius = 300,
         CountBase = 2,
         CountLevel = 4,
-        Duration = 16,
-        Effect = @"war3mapImported\Call of Dread Purple.mdx",
-        EffectScale = 1.1f,
+        Duration = 30,
         EffectTarget = @"Abilities\Spells\Other\Charm\CharmTarget.mdl",
         EffectScaleTarget = 0.5f
       };

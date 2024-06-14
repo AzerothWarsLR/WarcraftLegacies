@@ -17,8 +17,6 @@ namespace WarcraftLegacies.Source.Spells
     public int CountBase { get; init; }
     public int CountLevel { get; init; }
     public float Duration { get; init; }
-    public string Effect { get; init; } = "";
-    public float EffectScale { get; init; }
     public string EffectTarget { get; init; } = "";
     public float EffectScaleTarget { get; init; }
 
@@ -26,7 +24,7 @@ namespace WarcraftLegacies.Source.Spells
     {
       try
       {
-        var maxTargets = CountBase * CountLevel * GetAbilityLevel(caster);
+        var maxTargets = CountBase + CountLevel * GetAbilityLevel(caster);
         foreach (var unit in CreateGroup()
                    .EnumUnitsInRange(targetPoint, Radius)
                    .EmptyToList()
@@ -34,9 +32,6 @@ namespace WarcraftLegacies.Source.Spells
                  )
           if (IsValidTarget(caster, unit))
             ConvertUnit(caster, unit);
-        var tempEffect = AddSpecialEffect(Effect, GetSpellTargetX(), GetSpellTargetY());
-        BlzSetSpecialEffectScale(tempEffect, EffectScale);
-        EffectSystem.Add(tempEffect);
       }
       catch (Exception ex)
       {

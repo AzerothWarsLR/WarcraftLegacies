@@ -91,7 +91,7 @@ namespace WarcraftLegacies.Source.Setup
 
     public LegendTroll Troll { get; }
     
-    public LegendCthun Cthun { get; }
+    public LegendAhnqiraj Ahnqiraj { get; }
     
     public LegendNazjatar Nazjatar { get; }
     
@@ -132,7 +132,7 @@ namespace WarcraftLegacies.Source.Setup
       Warsong = new LegendWarsong(preplacedUnitSystem);
       Neutral = new LegendNeutral(preplacedUnitSystem);
       Gilneas = new LegendGilneas(preplacedUnitSystem);
-      Cthun = new LegendCthun();
+      Ahnqiraj = new LegendAhnqiraj(preplacedUnitSystem);
       Nazjatar = new LegendNazjatar();
       BlackEmpire = new LegendBlackEmpire(preplacedUnitSystem);
       Twilight = new LegendTwilight();
@@ -161,7 +161,7 @@ namespace WarcraftLegacies.Source.Setup
       Stormwind.RegisterLegends();
       Warsong.RegisterLegends();
       Troll.RegisterLegends();
-      Cthun.RegisterLegends();
+      Ahnqiraj.RegisterLegends();
       Nazjatar.RegisterLegends();
       BlackEmpire.RegisterLegends();
       Twilight.RegisterLegends();
