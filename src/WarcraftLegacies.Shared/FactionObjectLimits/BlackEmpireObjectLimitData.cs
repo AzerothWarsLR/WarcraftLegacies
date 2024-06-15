@@ -1,4 +1,4 @@
-﻿using static Constants;
+﻿using static Constants;using System.Collections.Generic;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
@@ -48,7 +48,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(UNIT_H0B9_BOMBARD_UNDEAD, 6); //Bombard
       yield return new(UNIT_U00P_LIEUTENANT_OF_N_ZOTH, 1);
       yield return new(UNIT_U02B_N_RAQI_ABERRATION, 1);
-      yield return new(UNIT_E01D_MOUTH_OF_N_ZOTH_YOGG, 1);
+      yield return new(UNIT_E01D_HARBINGER_OF_NY_ALOTHA_YOGG, 1);
       yield return new(UPGRADE_RBEF_FATEWEAVER_MASTER_TRAINING_BLACKEMPIRE, Unlimited);
       yield return new(UPGRADE_RBEM_MINDLASHER_MASTER_TRAINING_BLACKEMPIRE, Unlimited);
       yield return new(UPGRADE_RBEH_HERALD_MASTER_TRAINING_BLACKEMPIRE, Unlimited);
