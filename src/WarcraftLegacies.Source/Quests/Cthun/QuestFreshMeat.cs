@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
   /// <summary>
   /// Kill many units to give C'thun some extra skill points.
   /// </summary>
-  public sealed class QuestDeliciousMusculature : QuestData
+  public sealed class QuestFreshMeat : QuestData
   {
     private readonly LegendaryHero _cthun;
     private const int SkillPoints = 2;
@@ -22,9 +22,9 @@ namespace WarcraftLegacies.Source.Quests.Cthun
       $"Cthun gains {SkillPoints} skill points";
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="QuestDeliciousMusculature"/> class.
+    /// Initializes a new instance of the <see cref="QuestFreshMeat"/> class.
     /// </summary>
-    public QuestDeliciousMusculature(LegendaryHero cthun) : base("Delicious Musculature",
+    public QuestFreshMeat(LegendaryHero cthun) : base("Fresh Meat",
       "Only recently awoken from their long slumber, the Qiraji are ravenous for flesh.",
       @"ReplaceableTextures\CommandButtons\BTNSilithid.blp")
     {

@@ -58,7 +58,7 @@ namespace WarcraftLegacies.Source.Factions
       AddQuest(new QuestMockeryOfLife());
       AddQuest(new QuestWarOfTheShiftingSand(_allLegendSetup.Ahnqiraj.Cthun, 
         _allLegendSetup.Druids.Nordrassil));
-      AddQuest(new QuestDeliciousMusculature(_allLegendSetup.Ahnqiraj.Cthun));
+      AddQuest(new QuestFreshMeat(_allLegendSetup.Ahnqiraj.Cthun));
       AddQuest(new QuestLitheMeat());
       AddQuest(new QuestFiendThousandFaces(_allLegendSetup.Neutral.YoggSaron));
     }
