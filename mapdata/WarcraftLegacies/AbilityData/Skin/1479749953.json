@@ -25,7 +25,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Causes the Control Point to take a maximum of 100% from Magic damage regardless of armor type."
+      "Value": "Causes the Control Point to take 100% damage from Magic attacks regardless of armor type."
     }
   ]
 }
