@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Setup
       PassiveAbilityManager.Register(new FocalDemonGate(UNIT_N0AP_FOCAL_DEMON_GATE_FEL_HORDE_SIEGE));
       
       PassiveAbilityManager.Register(new DemonGateType(UNIT_N000_FEL_HOUND_DEMON_GATE_T1_HOUNDS,
-        UNIT_N059_FEL_HOUND_FEL_HORDE_PORTAL, 80, 2));
+        UNIT_N059_FEL_HOUND_FEL_HORDE_PORTAL, 80, 1));
       PassiveAbilityManager.Register(new DemonGateType(UNIT_N04I_EREDAR_WITCH_DEMON_GATE_T1_SUCCUBUS,
         UNIT_NDQN_SUCCUBUS_FEL_HORDE_PORTAL, 90, 1));
       PassiveAbilityManager.Register(new DemonGateType(UNIT_N05F_VOIDWALKER_DEMON_GATE_T1_VOIDWALKER,

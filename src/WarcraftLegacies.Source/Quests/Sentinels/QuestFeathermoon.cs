@@ -37,8 +37,8 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       "Feathermoon Stronghold has been relieved and has joined the Sentinels in their war effort";
 
     /// <inheritdoc />
-    protected override string RewardDescription =>
-      "Control of all units in Feathermoon Stronghold and enable Tyrande to be trained at the Altar of Watchers";
+    protected override string RewardDescription => 
+      $"Gain control of all units in Feathermoon Stronghold, learn to train {GetObjectName(UNIT_EBAL_GLAIVE_THROWER_SENTINELS)}s from the {GetObjectName(UNIT_E00L_WAR_ACADEMY_SENTINEL_BARRACKS)}, and learn to train Tyrande from the {GetObjectName(UNIT_E00R_ALTAR_OF_WATCHERS_SENTINEL_ALTAR)}";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)

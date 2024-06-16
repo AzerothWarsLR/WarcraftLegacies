@@ -10,21 +10,21 @@
     "AbilityData": [],
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "TypeId": 1651795054,
+    "TypeId": 1685747566,
     "Position": {
-      "X": -1545.039,
-      "Y": -13560.094
+      "X": 15130.404,
+      "Y": 5178.826
     },
-    "Rotation": 0.19557884335517883,
+    "Rotation": 3.002859115600586,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1651795054,
+    "SkinId": 1685747566,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 158
+    "CreationNumber": 846
   },
   {
     "Flags": 2,
@@ -37,20 +37,20 @@
     "AbilityData": [],
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "TypeId": 1651795054,
+    "TypeId": 1936941422,
     "Position": {
-      "X": -1594.3702,
-      "Y": -13400.559
+      "X": 15118.84,
+      "Y": 5371.18
     },
-    "Rotation": 5.772162437438965,
+    "Rotation": 2.8151326179504395,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1651795054,
+    "SkinId": 1936941422,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 2408
+    "CreationNumber": 861
   }
 ]
