@@ -19,7 +19,17 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Aura of Protection"
+      "Value": "Protection Aura"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNProtection.blp"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "war3mapImported\\KingstrideAura.mdx"
     }
   ]
 }
