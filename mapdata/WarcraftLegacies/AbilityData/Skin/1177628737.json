@@ -104,19 +104,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Targets an area for solar bombardment, carpeting it with 56 bolts over the course of 14 seconds. Each bolt deals 30 damage to enemy units and heals non-Undead allies for 150% of that amount. Undead enemies take 10% additional damage."
+      "Value": "Targets an area for solar bombardment, carpeting it with 40 bolts over the course of 10 seconds. Each bolt deals 25 damage to enemy units and heals non-Undead allies for 150% of that amount. Undead enemies take 10% additional damage."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Targets an area for solar bombardment, carpeting it with 56 bolts over the course of 14 seconds. Each bolt deals 50 damage to enemy units and heals non-Undead allies for 150% of that amount. Undead enemies take 10% additional damage."
+      "Value": "Targets an area for solar bombardment, carpeting it with 40 bolts over the course of 10 seconds. Each bolt deals 50 damage to enemy units and heals non-Undead allies for 150% of that amount. Undead enemies take 10% additional damage."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Targets an area for solar bombardment, carpeting it with 56 bolts over the course of 14 seconds. Each bolt deals 70 damage to enemy units and heals non-Undead allies for 150% of that amount. Undead enemies take 10% additional damage."
+      "Value": "Targets an area for solar bombardment, carpeting it with 40 bolts over the course of 10 seconds. Each bolt deals 75 damage to enemy units and heals non-Undead allies for 150% of that amount. Undead enemies take 10% additional damage."
     }
   ]
 }

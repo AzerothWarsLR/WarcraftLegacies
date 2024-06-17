@@ -81,25 +81,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Slams the ground, dealing 100 damage to nearby enemy land units and slowing their movement and attack rate by 50%."
+      "Value": "Slams the ground, dealing 80 damage to nearby enemy land units and slowing their movement and attack rate by 50%."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Slams the ground, dealing 150 damage to nearby enemy land units and slowing their movement and attack rate by 50%."
+      "Value": "Slams the ground, dealing 120 damage to nearby enemy land units and slowing their movement and attack rate by 50%."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Slams the ground, dealing 200 damage to nearby enemy land units and slowing their movement and attack rate by 50%."
+      "Value": "Slams the ground, dealing 160 damage to nearby enemy land units and slowing their movement and attack rate by 50%."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Slams the ground, dealing 250 damage to nearby enemy land units and slowing their movement and attack rate by 50%."
+      "Value": "Slams the ground, dealing 200 damage to nearby enemy land units and slowing their movement and attack rate by 50%."
     }
   ]
 }
