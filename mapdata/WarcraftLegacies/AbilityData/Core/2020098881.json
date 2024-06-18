@@ -19,7 +19,7 @@
     {
       "Level": 2,
       "Id": 1935895905,
-      "Value": 50
+      "Value": 35
     },
     {
       "Level": 2,
@@ -100,6 +100,11 @@
       "Id": 846818384,
       "Type": 3,
       "Value": "nsea,ncrb,nrat"
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 70
     }
   ]
 }

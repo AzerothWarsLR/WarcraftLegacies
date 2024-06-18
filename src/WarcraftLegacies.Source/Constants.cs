@@ -1950,6 +1950,7 @@ public static class Constants
 	public const int BUFF_BNAB_SHADOW_STRIKE = 1112432994;
 	public const int BUFF_BNFY_VOID_PORTAL = 1112434297;
 	public const int BUFF_BUSL = 1112896364;
+	public const int BUFF_AOP1_PROTECTION_AURA = 1095716913;
 	public const int BUFF_B000_FROSTBITE = 1110454320;
 	public const int BUFF_B001_SOLAR_FLARE = 1110454321;
 	public const int BUFF_B002_SUMMONIN_TARGET = 1110454322;
@@ -2379,7 +2380,6 @@ public static class Constants
 	public const int BUFF_ZB04_REAP = 1514287156;
 	public const int BUFF_ZB08_APOCALYPSE = 1514287160;
 	public const int BUFF_ZB09_APOCALYPSE = 1514287161;
-	public const int BUFF_AOP1_PROTECTION_AURA = 1095716913;
 	public const int ITEM_AMRC_AMULET_OF_RECALL = 1634562659;
 	public const int ITEM_ARSH_SHROUD_OF_NOZDORMU = 1634890600;
 	public const int ITEM_AZHR_HEART_OF_ASZUNE = 1635412082;
