@@ -224,14 +224,26 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>
-    /// Sets the unit's animation speed.
+    /// Sets the unit's active animation.
     /// </summary>
-    /// <param name="whichUnit">The unit to set animation speed for.</param>
+    /// <param name="whichUnit">The unit to set the animation for.</param>
     /// <param name="animation">The name of the animation to play, e.g. "birth".</param>
     /// <returns>The same unit that was passed in.</returns>
     public static unit SetAnimation(this unit whichUnit, string animation)
     {
       SetUnitAnimation(whichUnit, animation);
+      return whichUnit;
+    }
+    
+    /// <summary>
+    /// Queue an animation so it plays after the current one.
+    /// </summary>
+    /// <param name="whichUnit">The unit to queue the animation for.</param>
+    /// <param name="animation">The name of the animation to queue, e.g. "birth".</param>
+    /// <returns>The same unit that was passed in.</returns>
+    public static unit QueueAnimation(this unit whichUnit, string animation)
+    {
+      QueueUnitAnimation(whichUnit, animation);
       return whichUnit;
     }
 
@@ -618,6 +630,18 @@ namespace MacroTools.Extensions
     public static unit MultiplyBaseDamage(this unit whichUnit, float multiplier, int weaponIndex)
     {
       BlzSetUnitBaseDamage(whichUnit, R2I(I2R(BlzGetUnitBaseDamage(whichUnit, weaponIndex)) * multiplier), weaponIndex);
+      return whichUnit;
+    }
+    
+    /// <summary>
+    /// Multiplies the specified unit's attack cooldown by the specified amount.
+    /// </summary>
+    /// <param name="whichUnit">The unit to affect.</param>
+    /// <param name="multiplier">The amount to multiply attack speed by.</param>
+    /// <param name="weaponIndex">Which weapon to change; can be 1 or 2.</param>
+    public static unit MultiplyAttackCooldown(this unit whichUnit, float multiplier, int weaponIndex)
+    {
+      BlzSetUnitAttackCooldown(whichUnit, BlzGetUnitAttackCooldown(whichUnit, weaponIndex) * multiplier, weaponIndex);
       return whichUnit;
     }
 

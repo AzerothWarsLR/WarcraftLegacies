@@ -13,70 +13,55 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "Q"
+      "Value": "W"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "Q"
-    },
-    {
-      "Id": 1952805473,
-      "Type": 3,
-      "Value": "Learn Silence (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
+      "Value": "W"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Stops all enemies in a target area from casting spells. The area of effect and duration increase with level. |n|n|cffffcc00Level 1|r - Small area, lasts 12 seconds (4 for Heroes). |n|cffffcc00Level 2|r - Medium area, lasts 14 seconds (5 for Heroes). |n|cffffcc00Level 3|r - Medium area, lasts 16 seconds (7 for Heroes). |n|cffffcc00Level 4|r - Large area, lasts 18 seconds (9 for Heroes)."
-    },
-    {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Silence (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
-    },
-    {
-      "Level": 2,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Silence (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
-    },
-    {
-      "Level": 3,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Silence (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
+      "Value": "Stops all enemies in a target area from casting spells.  |n|n|cffffcc00Level 1|r - Affects units within \u003CA0XS,Area1\u003E radius of the target point. Lasts \u003CA0XS,Dur1\u003E seconds against units and \u003CA0XS,HeroDur1\u003E seconds against heroes. |n|cffffcc00Level 2|r - Affects units within \u003CA0XS,Area2\u003E radius of the target point. Lasts \u003CA0XS,Dur2\u003E seconds against units and \u003CA0XS,HeroDur2\u003E seconds against heroes.|n|cffffcc00Level 3|r - Affects units within \u003CA0XS,Area3\u003E radius of the target point. Lasts \u003CA0XS,Dur3\u003E seconds against units and \u003CA0XS,HeroDur3\u003E seconds against heroes."
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Silence (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
+      "Value": "Silence - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Stops all enemies in a medium target area from casting spells for 12 seconds. 4 seconds for Heroes."
+      "Value": "Stops all enemies within a \u003CA0XS,Area1\u003E radius of the target point from casting spells. Lasts \u003CA0XS,Dur1\u003E seconds against units and \u003CA0XS,HeroDur1\u003E seconds against heroes."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Stops all enemies in a medium target area from casting spells for 14 seconds. 5 seconds for Heroes."
+      "Value": "Stops all enemies within a \u003CA0XS,Area2\u003E radius of the target point from casting spells. Lasts \u003CA0XS,Dur2\u003E seconds against units and \u003CA0XS,HeroDur2\u003E seconds against heroes."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Stops all enemies in a medium target area from casting spells for 16 seconds. 6 seconds for Heroes."
+      "Value": "Stops all enemies within a \u003CA0XS,Area3\u003E radius of the target point from casting spells. Lasts \u003CA0XS,Dur3\u003E seconds against units and \u003CA0XS,HeroDur3\u003E seconds against heroes."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Stops all enemies in a medium target area from casting spells for 18 seconds. 7 seconds for Heroes."
+      "Value": "Stops all enemies within \u003CA0XS,Area4\u003E of the target point from casting spells. Lasts \u003CA0XS,Dur4\u003E seconds against units and \u003CA0XS,HeroDur4\u003E seconds against heroes."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
     }
   ]
 }

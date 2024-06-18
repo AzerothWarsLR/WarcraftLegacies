@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 
@@ -24,7 +25,8 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     {
       AddObjective(_enterZandalarRegion = new ObjectiveAnyUnitInRect(Regions.Zandalari_Echo_Unlock, "Zandalar Outpost", true));
       AddObjective(new ObjectiveSelfExists());
-      
+      AddObjective(new ObjectiveExpire(600, Title));
+
       ResearchId = UPGRADE_VQ02_QUEST_COMPLETED_ZANDALAR_OUTPOST;
       _rescueUnits = Regions.Zandalari_Echo_Unlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }

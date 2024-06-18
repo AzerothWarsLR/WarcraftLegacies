@@ -14,14 +14,12 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var darkPact = new DarkPact(ABILITY_A0A0_DARK_PACT_LEGION_ARCHIMONDE);
       SpellSystem.Register(darkPact);
       
-      var inspireMadness = new InspireMadness(ABILITY_A10M_INSPIRE_MADNESS_LEGION_TICHONDRIUS)
+      var inspireMadness = new InspireMadness(ABILITY_A10M_INSPIRE_MADNESS_TICHONDRIUS)
       {
-        Radius = 400,
+        Radius = 300,
         CountBase = 2,
         CountLevel = 4,
-        Duration = 16,
-        Effect = @"war3mapImported\Call of Dread Purple.mdx",
-        EffectScale = 1.1f,
+        Duration = 30,
         EffectTarget = @"Abilities\Spells\Other\Charm\CharmTarget.mdl",
         EffectScaleTarget = 0.5f
       };
@@ -44,23 +42,26 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       SpellSystem.Register(massSummonUnit);
 
+      var slipstreamOrigin = new Point(22951.6f, -29964.4f);
       //Northrend
-      SpellSystem.Register(new SlipstreamSpellSpecificLocation(ABILITY_A0UB_OPEN_A_PORTAL_TO_NORTHREND_LEGION_NORTHREND)
+      SpellSystem.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0UB_PORTAL_TO_NORTHREND_LEGION)
       {
         PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 10,
         ClosingDelay = 5,
-        TargetLocation = new Point(3578, 20707),
+        OriginLocation = slipstreamOrigin,
+        TargetLocation = new Point(3587, 20680),
         Color = new Color(55, 50, 250, 255)
       });
 
       //Alterac
-      SpellSystem.Register(new SlipstreamSpellSpecificLocation(ABILITY_A0UC_OPEN_A_PORTAL_TO_ALTERAC_LEGION_ALTERAC)
+      SpellSystem.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0UC_PORTAL_TO_ALTERAC_LEGION)
       {
         PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 10,
         ClosingDelay = 5,
-        TargetLocation = new Point(11366, 5802),
+        OriginLocation = slipstreamOrigin,
+        TargetLocation = new Point(11331, 5819),
         Color = new Color(155, 250, 50, 255)
       });
 

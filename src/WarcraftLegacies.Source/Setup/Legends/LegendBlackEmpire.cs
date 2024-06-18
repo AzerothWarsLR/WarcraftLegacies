@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Zaqul = new LegendaryHero("X'korr the Compelling")
       {
-        UnitType = UNIT_E01D_MOUTH_OF_N_ZOTH_YOGG,
+        UnitType = UNIT_E01D_HARBINGER_OF_NY_ALOTHA_YOGG,
         StartingXp = 7000,
       };
 

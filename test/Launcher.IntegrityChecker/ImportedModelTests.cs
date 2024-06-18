@@ -1,5 +1,6 @@
 using System.Text.RegularExpressions;
 using FluentAssertions;
+using Launcher.IntegrityChecker.TestSupport;
 using War3Net.Build;
 using War3Net.Build.Object;
 

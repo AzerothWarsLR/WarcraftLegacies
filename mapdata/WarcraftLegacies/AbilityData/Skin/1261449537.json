@@ -13,7 +13,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(oldGod)"
+      "Value": "(C\u0027thun)"
     },
     {
       "Id": 1835101793,
@@ -63,7 +63,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The Old God has Tentacles which attack nearby enemy units autonomosly. Each Tentacle has the same attack damage as the hero."
+      "Value": "This unit is surrounded by Tentacles which attack nearby enemy units. Each Tentacle has the same attack damage as the hero."
     },
     {
       "Level": 2,
@@ -86,6 +86,10 @@
     {
       "Id": 2037408353,
       "Value": 1
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
     }
   ]
 }

@@ -1,9 +1,7 @@
 ﻿using MacroTools;
-using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
-using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.MassiveAttack;
 using WarcraftLegacies.Source.Spells.Slipstream;
 using WCSharp.Shared.Data;
@@ -20,42 +18,46 @@ namespace WarcraftLegacies.Source.Setup.Spells
     /// </summary>
     public static void Setup()
     {
+      var slipstreamOrigin = new Point(-22259.9f, 7104.2f);
+      
       //Azuremyst
-      SpellSystem.Register(new SlipstreamSpellSpecificLocation(ABILITY_A0P9_DIMENSIONAL_JUMP_TO_AZUREMYST_DRAENEI_AZUREMYST)
+      SpellSystem.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0P9_PORTAL_TO_AZUREMYST_DRAENEI)
       {
         PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 20,
         ClosingDelay = 10,
+        OriginLocation = slipstreamOrigin,
         TargetLocation = new Point(-20940, 10412),
         Color = new Color(155, 250, 50, 255)
       });
 
       //Argus
-      SpellSystem.Register(new SlipstreamSpellSpecificLocation(ABILITY_A0RB_DIMENSIONAL_JUMP_TO_ARGUS_DRAENEI_ARGUS)
+      SpellSystem.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0RB_PORTAL_TO_ARGUS_DRAENEI)
       {
         PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 20,
         ClosingDelay = 10,
-        TargetLocation = new Point(22573, -26856),
+        OriginLocation = slipstreamOrigin,
+        TargetLocation = new Point(22010, -26816),
         Color = new Color(255, 50, 50, 255)
       });
 
       //Outland
-      SpellSystem.Register(new SlipstreamSpellSpecificLocation(ABILITY_A0SR_DIMENSIONAL_JUMP_TO_TEMPEST_KEEP_DRAENEI_TEMPEST_KEEP)
+      SpellSystem.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0SR_PORTAL_TO_TEMPEST_KEEP_DRAENEI)
       {
         PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
         OpeningDelay = 20,
         ClosingDelay = 10,
-        TargetLocation = new Point(2649, -22845),
+        OriginLocation = slipstreamOrigin,
+        TargetLocation = new Point(2943, -21644),
         Color = new Color(55, 50, 250, 255)
       });
-
-      var holyShockwave = new MassiveAttackAbility(UNIT_N0CX_LIGHTFORGED_WARFRAME_DRAENEI)
+      
+      PassiveAbilityManager.Register(new MassiveAttackAbility(UNIT_N0CX_LIGHTFORGED_WARFRAME_DRAENEI)
       {
         AttackDamagePercentage = 0.3f,
         Distance = 700
-      };
-      PassiveAbilityManager.Register(holyShockwave);
+      });
 
       var warStompAdal = new Stomp(ABILITY_A105_BLINDING_STARLIGHT_ADAL)
       {

@@ -1,0 +1,59 @@
+{
+  "OldId": 1801864513,
+  "NewId": 827021377,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(x\u0027korr Dummy spell)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The Warden hurls a flurry of knives, damaging nearby enemies. |n|n|cffffcc00Level 1|r - \u003CAEfk,DataA1\u003E damage per target. |n|cffffcc00Level 2|r - \u003CAEfk,DataA2\u003E damage per target. |n|cffffcc00Level 3|r - \u003CAEfk,DataA3\u003E damage per target. |n|cffffcc00Level 4|r - \u003CAEfk,DataA4\u003E damage per target."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "VoidBoltDummy"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "war3mapImported\\Voidbolt Medium.mdx"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "VoidBoltDummy"
+    },
+    {
+      "Id": 1667329377,
+      "Type": 2,
+      "Value": 0.5
+    }
+  ]
+}
