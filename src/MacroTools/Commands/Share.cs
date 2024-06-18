@@ -26,7 +26,6 @@ namespace MacroTools.Commands
     {
       var cheaterTeam = cheater.GetTeam();
 
-    
       if (parameters.Length >= 1 && parameters[0].ToLower() == "all")
       {
         var factions = FactionManager.GetAllFactions();
@@ -40,12 +39,6 @@ namespace MacroTools.Commands
         }
 
         return $"Shared control with all factions on your team.";
-      }
-
-      
-      if (parameters.Length == 0 || parameters[0].ToLower() == "")
-      {
-        return $"Please specify a faction name or 'all' to share control.";
       }
 
       var targetFaction = FactionManager.GetFactionByName(parameters[0]);
@@ -62,5 +55,7 @@ namespace MacroTools.Commands
 
       return $"Shared control with {targetFaction.Name}.";
     }
+
   }
+}
 }
