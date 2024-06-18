@@ -61,7 +61,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         OpeningDelay = 10,
         ClosingDelay = 5,
         OriginLocation = slipstreamOrigin,
-        TargetLocation = new Point(11331, 5819),
+        TargetLocation = new Point(11000, 6424),
         Color = new Color(155, 250, 50, 255)
       });
 
