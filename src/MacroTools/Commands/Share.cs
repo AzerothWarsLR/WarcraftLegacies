@@ -24,7 +24,7 @@ namespace MacroTools.Commands
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      var cheaterTeam = cheater.GetTeam(); // Declare cheaterTeam once at the beginning
+      var cheaterTeam = cheater.GetTeam();
 
       // Check if the first parameter is 'all', regardless of any additional parameters
       if (parameters.Length >= 1 && parameters[0].ToLower() == "all")
