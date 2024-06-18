@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
 
     /// <inheritdoc/>
     public override string RewardFlavour =>
-      "Zon'ozz has been unleashed on Azeroth";
+      "Zon'ozz has been unleashed on Azeroth.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => $"Learn to train {GetObjectName(UNIT_U00P_LIEUTENANT_OF_N_ZOTH)}s from the {GetObjectName(UNIT_N0AV_ALTAR_OF_MADNESS_YOGG_ALTAR)}";

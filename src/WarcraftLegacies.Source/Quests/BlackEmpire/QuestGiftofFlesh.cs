@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     /// Initializes a new instance of the <see cref="QuestGiftofFlesh"/> class.
     /// </summary>
     public QuestGiftofFlesh() : base("Gift of Flesh",
-      "The Aqir are one of the oldest followers of the Old Gods, by connecting to the sea again, N'zoth could call for their service once again",
+      "The Aqir are one of the oldest followers of the Old Gods, by connecting to the sea again, N'zoth could call for their service once again.",
       @"ReplaceableTextures\CommandButtons\BTNCurse of Flesh.blp")
     {
       AddObjective(new ObjectiveControlPoint(UNIT_N03O_RANAZJAR_ISLE));

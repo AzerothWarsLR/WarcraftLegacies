@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     /// </summary>
     /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
     public QuestMawofGorma(Rectangle rescueRect) : base("The Maw of Gor'ma",
-      "Invaders from Azeroth have taken control of the Maw of Gor'ma. Destroy them",
+      "Invaders from Azeroth have taken control of the Maw of Gor'ma. Destroy them!",
       @"ReplaceableTextures\CommandButtons\BTNForgottenOne.blp")
     {
       AddObjective(new ObjectiveControlPoint(UNIT_NMOG_MAW_OF_GOR_MA));
@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     }
 
     /// <inheritdoc />
-    public override string RewardFlavour => "With the invaders defeated, we have retaken control of the Maw of Gor'ma";
+    public override string RewardFlavour => "With the invaders defeated, we have retaken control of the Maw of Gor'ma.";
 
     /// <inheritdoc />
     protected override string RewardDescription => $"Control of all buildings in the Maw of Gor'ma area, learn to train {GetObjectName(UNIT_E01D_MOUTH_OF_N_ZOTH_YOGG)}s from the {GetObjectName(UNIT_N0AV_ALTAR_OF_MADNESS_YOGG_ALTAR)} and the ability to train 1 {GetObjectName(UNIT_U02F_FORGOTTEN_ONE_YOGG)}";
