@@ -26,7 +26,7 @@ namespace MacroTools.Commands
     {
       var cheaterTeam = cheater.GetTeam();
 
-      // Check if the first parameter is 'all', regardless of any additional parameters
+    
       if (parameters.Length >= 1 && parameters[0].ToLower() == "all")
       {
         var factions = FactionManager.GetAllFactions();
@@ -42,7 +42,7 @@ namespace MacroTools.Commands
         return $"Shared control with all factions on your team.";
       }
 
-      // If not 'all', then proceed with previous share logic from Yak's code
+      
       if (parameters.Length == 0 || parameters[0].ToLower() == "")
       {
         return $"Please specify a faction name or 'all' to share control.";
