@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     /// Initializes a new instance of the <see cref="QuestMawofGorma"/> class.
     /// </summary>
     /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
-    public QuestMawofGorma(Rectangle rescueRect) : base("The Maw of Gor'ma",
+    public QuestMawofGorma(Rectangle rescueRect) : base("Maw of Gor'ma",
       "Invaders from Azeroth have taken control of the Maw of Gor'ma. Destroy them!",
       @"ReplaceableTextures\CommandButtons\BTNForgottenOne.blp")
     {
