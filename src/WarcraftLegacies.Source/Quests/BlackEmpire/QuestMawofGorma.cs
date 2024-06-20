@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     public override string RewardFlavour => "With the invaders defeated, we have retaken control of the Maw of Gor'ma.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => $"Control of all buildings in the Maw of Gor'ma area, learn to train {GetObjectName(UNIT_E01D_HARBINGER_OF_NY_ALOTHA_YOGG)}s from the {GetObjectName(UNIT_N0AV_ALTAR_OF_MADNESS_YOGG_ALTAR)} and the ability to train 1 {GetObjectName(UNIT_U02F_FORGOTTEN_ONE_YOGG)}";
+    protected override string RewardDescription => $"Gain control of all buildings in the Maw of Gor'ma area, learn to train {GetObjectName(UNIT_E01D_HARBINGER_OF_NY_ALOTHA_YOGG)}s from the {GetObjectName(UNIT_N0AV_ALTAR_OF_MADNESS_YOGG_ALTAR)}, and learn to train 1 {GetObjectName(UNIT_U02F_FORGOTTEN_ONE_YOGG)}";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
