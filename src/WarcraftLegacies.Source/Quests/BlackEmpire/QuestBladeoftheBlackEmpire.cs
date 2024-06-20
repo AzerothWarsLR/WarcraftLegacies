@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     /// Initializes a new instance of the <see cref="QuestBladeoftheBlackEmpire"/> class.
     /// </summary>
     public QuestBladeoftheBlackEmpire() : base("The Blade of the Black Empire",
-      "An ancient blade from the time of the Black Empire itself. The Dagger has a mind of it's own and tries to corrupt whoever wields it. It has been lost to time.",
+      "An ancient blade from the time of the Black Empire itself. The Dagger has a mind of its own and tries to corrupt whoever wields it. It has been lost to time.",
       @"ReplaceableTextures\CommandButtons\BTNmidnightGS.blp")
     {
       AddObjective(new ObjectiveControlLevel(UNIT_N00P_THE_ABYSS, 20));
