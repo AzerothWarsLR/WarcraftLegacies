@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     /// Initializes a new instance of the <see cref="QuestMawofGorma"/> class.
     /// </summary>
     /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
-    public QuestMawofGorma(Rectangle rescueRect) : base("The Maw of Gor'ma",
+    public QuestMawofGorma(Rectangle rescueRect) : base("Maw of Gor'ma",
       "Invaders from Azeroth have taken control of the Maw of Gor'ma. Destroy them!",
       @"ReplaceableTextures\CommandButtons\BTNForgottenOne.blp")
     {
@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     public override string RewardFlavour => "With the invaders defeated, we have retaken control of the Maw of Gor'ma.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => $"Control of all buildings in the Maw of Gor'ma area, learn to train {GetObjectName(UNIT_E01D_HARBINGER_OF_NY_ALOTHA_YOGG)} from the {GetObjectName(UNIT_N0AV_ALTAR_OF_MADNESS_YOGG_ALTAR)} and the ability to train 1 {GetObjectName(UNIT_U02F_FORGOTTEN_ONE_YOGG)} from the {GetObjectName(UNIT_N0AX_MUTATION_CIRCLE_YOGG_SPECIALIST)}";
+    protected override string RewardDescription => $"Gain Control of all buildings in the Maw of Gor'ma area, learn to train {GetObjectName(UNIT_E01D_HARBINGER_OF_NY_ALOTHA_YOGG)} from the {GetObjectName(UNIT_N0AV_ALTAR_OF_MADNESS_YOGG_ALTAR)} and the ability to train 1 {GetObjectName(UNIT_U02F_FORGOTTEN_ONE_YOGG)} from the {GetObjectName(UNIT_N0AX_MUTATION_CIRCLE_YOGG_SPECIALIST)}";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
