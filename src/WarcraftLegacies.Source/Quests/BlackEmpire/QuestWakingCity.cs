@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     public override string RewardFlavour => "With the adventurer party destroyed, we have saved N'zoth.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => $"Control of all buildings in Ny'lotha, enable to build the {GetObjectName(UNIT_N0AX_MUTATION_CIRCLE_YOGG_SPECIALIST)} and gain control of N'zoth";
+    protected override string RewardDescription => $"Gain control of all buildings in Ny'lotha, learn to build the {GetObjectName(UNIT_N0AX_MUTATION_CIRCLE_YOGG_SPECIALIST)}, and gain control of N'zoth";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
