@@ -41,12 +41,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\NerubianZiggurat.mdl"
-    },
-    {
-      "Id": 1768841589,
-      "Type": 3,
-      "Value": "upgrade,second"
+      "Value": "war3mapImported\\CthunTentacleEye.mdl"
     },
     {
       "Id": 1835101813,
@@ -75,6 +70,11 @@
       "Id": 1651864693,
       "Type": 3,
       "Value": "Primary defensive structure. "
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
     }
   ]
 }
