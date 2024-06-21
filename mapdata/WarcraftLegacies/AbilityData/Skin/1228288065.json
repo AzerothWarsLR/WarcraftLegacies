@@ -22,12 +22,6 @@
     },
     {
       "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Activate Perfect Avatar"
-    },
-    {
-      "Level": 1,
       "Id": 828536161,
       "Type": 3,
       "Value": "The Thane goes into avatar stance.He will gain \u003CA06I,DataC1\u003E bonus damage and \u003CA06I,DataA1\u003E defence bonus.|n|nLasts \u003CA06I,Dur1\u003E seconds."
@@ -36,12 +30,6 @@
       "Id": 1802007905,
       "Type": 3,
       "Value": "R"
-    },
-    {
-      "Level": 1,
-      "Id": 829715809,
-      "Type": 3,
-      "Value": "Deactivate Perfect A|cffffcc00v|ratar"
     }
   ]
 }
