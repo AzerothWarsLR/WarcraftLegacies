@@ -43,7 +43,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Cthun);
-      UnitModifySkillPoints(Cthun.Unit, -8);
+      UnitModifySkillPoints(Cthun.Unit, -7);
       LegendaryHeroManager.Register(Moam);
       LegendaryHeroManager.Register(Ouro);
       LegendaryHeroManager.Register(Skeram);

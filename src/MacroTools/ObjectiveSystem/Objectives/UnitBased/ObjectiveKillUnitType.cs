@@ -7,13 +7,13 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
   /// <summary>
   ///   Completes when the quest holder has killed a certain number of units of a certain type.
   /// </summary>
-  public sealed class ObjectiveKillXUnit : Objective
+  public sealed class ObjectiveKillUnitType : Objective
   {
     private readonly int _objectId;
     private readonly int _targetKillXUnitCount;
     private int _currentKillXUnitCount;
 
-    public ObjectiveKillXUnit(int objectId, int targetKillXUnitCount)
+    public ObjectiveKillUnitType(int objectId, int targetKillXUnitCount)
     {
       _objectId = objectId;
       _targetKillXUnitCount = targetKillXUnitCount;

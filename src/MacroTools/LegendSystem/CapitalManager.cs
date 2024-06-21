@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using WCSharp.Events;
 using static War3Api.Common;
 
 namespace MacroTools.LegendSystem
@@ -15,6 +16,11 @@ namespace MacroTools.LegendSystem
 
     /// <summary>Capitals will gain this many hit points, as a percentage of their maximum, per turn.</summary>
     public const float HitPointPercentagePerTurn = 0.02f;
+
+    /// <summary>
+    /// Invoked when any <see cref="Capital"/> is destroyed.
+    /// </summary>
+    public static event EventHandler<Capital>? CapitalDestroyed;
     
     /// <summary>
     /// Registers a <see cref="Capital"/> to the <see cref="CapitalManager"/>.
@@ -23,10 +29,13 @@ namespace MacroTools.LegendSystem
     {
       if (capital.Unit == null)
         return;
+      
       if (ByUnit.ContainsKey(capital.Unit))
         throw new Exception($"Tried to register {nameof(Capital)} {capital.Name} but it is already registered.");
+      
       ByUnit.Add(capital.Unit, capital);
       AllCapitals.Add(capital);
+      PlayerUnitEvents.Register(UnitEvent.Dies, () => { CapitalDestroyed?.Invoke(capital, capital); }, capital.Unit);
       TurnBasedHitpointsManager.Register(capital.Unit, HitPointPercentagePerTurn);
     }
 

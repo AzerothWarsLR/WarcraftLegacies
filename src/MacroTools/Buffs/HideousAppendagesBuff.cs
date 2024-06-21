@@ -52,11 +52,13 @@ namespace MacroTools.Buffs
       for (var i = 0; i < TentacleCount; i++)
       {
         var newTentacle = CreateUnit(GetOwningPlayer(Target), TentacleUnitTypeId, GetUnitX(Target), GetUnitY(Target),
-          0);
-        SetUnitAnimation(newTentacle, "birth");
-        SetUnitAnimation(newTentacle, "stand");
-        SetUnitVertexColor(newTentacle, 255, 255, 255, 255);
-        UnitAddAbility(newTentacle, FourCC("Aloc"));
+          0)
+          .SetAnimation("birth")
+          .QueueAnimation("stand")
+          .SetColor(255, 255, 255, 255)
+          .AddAbility(FourCC("Aloc"))
+          .SetInvulnerable(true);
+        
         SetUnitPathing(newTentacle, false);
         _tentacles.Add(newTentacle);
       }

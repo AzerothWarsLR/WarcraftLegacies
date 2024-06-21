@@ -4903,6 +4903,7 @@ public static class Constants
 	public const int UPGRADE_R099_QUEST_COMPLETED_A_NEW_HOME = 1378892089;
 	public const int UPGRADE_R0A9_QUEST_COMPLETED_A_FEAST_FOR_OUR_KIN = 1378894137;
 	public const int UPGRADE_RHL9_WEB_CTHUN = 1380469817;
+	public const int UPGRADE_ZBAW_QUEST_COMPLETED_AWAKENING = 1514291543;
 	public const int ORDER_OFFSET = 851970;
 	public const int ORDER_WAND_ILLUSION = 852274;
 	public const int ORDER_ABSORB = 852529;
