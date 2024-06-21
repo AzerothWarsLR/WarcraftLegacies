@@ -56,6 +56,7 @@ namespace WarcraftLegacies.Source.Factions
       AddQuest(new QuestTanarisOutpost(Regions.QirajOutpost5));
       AddQuest(new QuestEmperorConstruct());
       AddQuest(new QuestMockeryOfLife());
+      AddQuest(new QuestDesolation(_allLegendSetup.Ahnqiraj.Cthun));
       AddQuest(new QuestFreshMeat(_allLegendSetup.Ahnqiraj.Cthun));
       AddQuest(new QuestAwakening(_allLegendSetup.Ahnqiraj.Cthun));
       AddQuest(new QuestWarOfTheShiftingSand(_allLegendSetup.Ahnqiraj.Cthun, _allLegendSetup.Druids.Nordrassil));
