@@ -24,7 +24,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The Thane goes into avatar stance.He will gain \u003CA06I,DataC1\u003E bonus damage and \u003CA06I,DataA1\u003E defence bonus.|n|nLasts \u003CA06I,Dur1\u003E seconds."
+      "Value": "Causes the Thane to gain \u003CA06I,DataC1\u003E bonus damage and \u003CA06I,DataA1\u003E armor for \u003CA06I,Dur1\u003E seconds."
     },
     {
       "Id": 1802007905,
