@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Cthun gains {SkillPoints} skill points";
+      $"I gain {SkillPoints} skill points";
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestWarOfTheShiftingSand"/> class.
