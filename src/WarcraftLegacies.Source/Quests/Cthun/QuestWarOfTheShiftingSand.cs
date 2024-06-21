@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
     /// Initializes a new instance of the <see cref="QuestWarOfTheShiftingSand"/> class.
     /// </summary>
     public QuestWarOfTheShiftingSand(LegendaryHero cthun, Capital nordrassil) : base("War of the Shifting Sands",
-      "A millenia ago, the Night Elves soundly defeated the Qiraji and drove them scurrying back into Ahn'qiraj. For C'thun to succeed in his domination of Azeroth, the second War of the Shifting Sands must begin with their demise.",
+      "A millenia ago, the Night Elves soundly defeated my Qiraji and drove them scurrying back into Ahn'qiraj. If I am to succeed in my domination of Azeroth, the second War of the Shifting Sands must begin with their demise.",
       @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
     {
       _cthun = cthun;

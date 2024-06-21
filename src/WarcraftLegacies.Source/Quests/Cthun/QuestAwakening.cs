@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
     
     /// <inheritdoc />
     public QuestAwakening(LegendaryHero cthun) : base("Awakening",
-      "The Old God C'thun, only recently awoken, wields but a shadow of his might during the days of the Black Empire.",
+      "I have only recently awoken, wielding but a shadow of my might during the days of the Black Empire. I must reclaim my powers.",
       @"ReplaceableTextures\CommandButtons\BTNMind Crush.blp")
     {
       AddObjective(new ObjectiveSpendSkillPoints(cthun, 5));
@@ -22,9 +22,9 @@ namespace WarcraftLegacies.Source.Quests.Cthun
 
     /// <inheritdoc />
     public override string RewardFlavour =>
-      "C'thun's singular gaze opens wide, pouring into the minds of all those unfortunate enough to inhabit Azeroth during his imminent reign.";
+      "My singular gaze opens wide, pouring into the minds of all those unfortunate enough to inhabit Azeroth during my imminent reign.";
     
     /// <inheritdoc />
-    protected override string RewardDescription => $"C'thun learns to cast {GetObjectName(Ultimate)}";
+    protected override string RewardDescription => $"I learn to cast {GetObjectName(Ultimate)}";
   }
 }

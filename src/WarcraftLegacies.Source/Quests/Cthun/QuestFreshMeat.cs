@@ -15,17 +15,17 @@ namespace WarcraftLegacies.Source.Quests.Cthun
 
     /// <inheritdoc/>
     public override string RewardFlavour =>
-      "The Qiraji have ripped, torn, and consumed scores of fallen prey, satiating their hunger and lifting a bloody haze from C'thun's mind.";
+      "My Qiraji have ripped, torn, and consumed scores of fallen prey, satiating their hunger and lifting a bloody haze from C'thun's mind.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Cthun gains {SkillPoints} skill points";
+      $"I gain {SkillPoints} skill points";
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestFreshMeat"/> class.
     /// </summary>
     public QuestFreshMeat(LegendaryHero cthun) : base("Fresh Meat",
-      "Only recently awoken from their long slumber, the Qiraji are ravenous for flesh.",
+      "Only recently awoken from their long slumber, my Qiraji are ravenous for flesh.",
       @"ReplaceableTextures\CommandButtons\BTNSilithid.blp")
     {
       _cthun = cthun;
