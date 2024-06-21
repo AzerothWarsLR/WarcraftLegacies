@@ -21,11 +21,6 @@
       "Value": "R"
     },
     {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Perfect Avatar"
-    },
-    {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
@@ -35,7 +30,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The Thanes, having perfected their avatar, will take almost no damage while in it. They also gain 20 bonus damage and 200 hit point bonus.|n|nLasts \u003CA06I,Dur1\u003E seconds."
+      "Value": "The Thane goes into avatar stance.He will gain \u003CA06I,DataC1\u003E bonus damage and \u003CA06I,DataA1\u003E defence bonus.|n|nLasts \u003CA06I,Dur1\u003E seconds."
     },
     {
       "Id": 1802007905,

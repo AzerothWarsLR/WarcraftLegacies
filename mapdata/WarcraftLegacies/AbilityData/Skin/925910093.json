@@ -1,0 +1,86 @@
+{
+  "OldId": 1986086977,
+  "NewId": 925910093,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Yellow-Muradin)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Perfect Avatar - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "When Perfect Avatar is activated, it gives the Mountain King bonus armor, bonus hit points, bonus damage and spell immunity. |n|cffffcc00Level 1|r - \u003CMAD07,DataC1\u003E damage, \u003CMAD07,DataA1\u003E armor, \u003CMAD07,DataB1\u003E hit points, \u003CMAD07,Dur1\u003E seconds.|n|cffffcc00Level 2|r - \u003CMAD07,DataC2\u003E damage, \u003CMAD07,DataA2\u003E armor, \u003CMAD07,DataB2\u003E hit points, \u003CMAD07,Dur2\u003E seconds.|n|cffffcc00Level 3|r - \u003CMAD07,DataC3\u003E damage, \u003CMAD07,DataA3\u003E armor, \u003CMAD07,DataB3\u003E hit points, \u003CMAD07,Dur3\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Activate Perfect Avatar - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Activate Perfect Avatar - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Activate Perfect Avatar - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Activate Avatar to give the Mountain King \u003CMD07,DataA2\u003E bonus armor, \u003CMD07,DataB2\u003E bonus hit points, \u003CMD07,DataC2\u003E bonus damage and spell immunity. |nLasts \u003CMD07,Dur2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Activate Avatar to give the Mountain King \u003CMD07,DataA3\u003E bonus armor, \u003CMD07,DataB3\u003E bonus hit points, \u003CMD07,DataC3\u003E bonus damage and spell immunity. |nLasts \u003CMD07,Dur3\u003E seconds."
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Perfect Avatar"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Activate Avatar to give the Mountain King \u003CMD07,DataA1\u003E bonus armor, \u003CMD07,DataB1\u003E bonus hit points, \u003CMD07,DataC1\u003E bonus damage and spell immunity. |nLasts \u003CMD07,Dur1\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "Deactivate Perfect Avatar"
+    }
+  ]
+}
