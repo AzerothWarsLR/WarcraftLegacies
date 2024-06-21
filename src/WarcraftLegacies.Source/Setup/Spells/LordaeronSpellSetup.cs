@@ -14,8 +14,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var consecration = new Stomp(ABILITY_A0WE_CONSECRATION_LORDAERON_UTHER)
       {
         Radius = 350,
-        DamageBase = 0,
-        DamageLevel = 60,
+        DamageBase = 20,
+        DamageLevel = 50,
         DurationBase = 1,
         StunAbilityId = ABILITY_S00H_THUNDER_CLAP_DUMMY,
         StunOrderId = OrderId("cripple"),
@@ -25,9 +25,9 @@ namespace WarcraftLegacies.Source.Setup.Spells
       
       var solarJudgement = new SolarJudgementSpell(ABILITY_A01F_SOLAR_JUDGEMENT_LORDAERON_ARTHAS)
       {
-        DamageBase = 10,
-        DamageLevel = 20,
-        Duration = 14,
+        DamageBase = 0,
+        DamageLevel = 25,
+        Duration = 10,
         Period = 0.25f,
         HealMultiplier = 1.5f,
         UndeadDamageMultiplier = 1.1f,
