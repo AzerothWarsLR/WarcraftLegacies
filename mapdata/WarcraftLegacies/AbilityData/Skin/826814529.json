@@ -75,7 +75,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Restores 200 hit points to friendly units within a range of 250."
+      "Value": "Restores \u003CA0H1,DataB1\u003E hit points to friendly units within a range of \u003CA0H1,Area1\u003E."
     },
     {
       "Level": 2,
