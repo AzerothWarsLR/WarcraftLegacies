@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     }
 
     /// <inheritdoc />
-    public override string RewardFlavour => "We have gained a new Forgotten One.";
+    public override string RewardFlavour => "I have gained a new Forgotten One.";
 
     /// <inheritdoc />
     protected override string RewardDescription => $"Learn to train one additional {GetObjectName(UNIT_U02F_FORGOTTEN_ONE_YOGG)}";

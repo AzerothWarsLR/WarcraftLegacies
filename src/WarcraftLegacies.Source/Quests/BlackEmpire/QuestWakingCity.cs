@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     /// </summary>
     /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
     public QuestWakingCity(QuestData prerequisite, Rectangle rescueRect) : base("The Waking City",
-      "Adventurers from Azeroth are threatening our God N'zoth, we need to annihilate them.",
+      "Adventurers from Azeroth are threatening me, your god. Snnihilate them.",
       @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
     {
       AddObjective(new ObjectiveControlPoint(UNIT_NNYA_NY_ALOTHA_THE_WAKING_CITY));
@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     }
 
     /// <inheritdoc />
-    public override string RewardFlavour => "With the adventurer party destroyed, we have saved N'zoth.";
+    public override string RewardFlavour => "With the adventurer party destroyed, no one stands in my way.";
 
     /// <inheritdoc />
     protected override string RewardDescription => $"Gain control of all buildings in Ny'lotha, learn to build the {GetObjectName(UNIT_N0AX_MUTATION_CIRCLE_YOGG_SPECIALIST)}, and gain control of N'zoth";

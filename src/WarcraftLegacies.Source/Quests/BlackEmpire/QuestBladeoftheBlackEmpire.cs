@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     }
 
     /// <inheritdoc />
-    public override string RewardFlavour => "We have found the Blade of the Black Empire.";
+    public override string RewardFlavour => "I have found the Blade of the Black Empire.";
 
     /// <inheritdoc />
     protected override string RewardDescription => "The Blade of the Black Empire appears near The Abyss";

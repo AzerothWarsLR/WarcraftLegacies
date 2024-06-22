@@ -15,15 +15,15 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     /// Initializes a new instance of the <see cref="QuestGiftofFlesh"/> class.
     /// </summary>
     public QuestGiftofFlesh() : base("Gift of Flesh",
-      "The Aqir are one of the oldest followers of the Old Gods, by connecting to the sea again, N'zoth could call for their service once again.",
+      "The A'qir have always served me faithfully. They are probably buried deep in the ruins of their old city, Ahn'qiraj. I will need to awaken them once more.",
       @"ReplaceableTextures\CommandButtons\BTNCurse of Flesh.blp")
     {
-      AddObjective(new ObjectiveControlPoint(UNIT_N03O_RANAZJAR_ISLE));
+      
       ResearchId = UPGRADE_RBCF_QUEST_COMPLETED_GIFT_OF_FLESH;
     }
 
     /// <inheritdoc />
-    public override string RewardFlavour => "The Aqir have joined N'zoth in glory again!";
+    public override string RewardFlavour => "The Aqir have joined my ranks in glory again!";
 
     /// <inheritdoc />
     protected override string RewardDescription => $"Learn to train {GetObjectName(UNIT_SHZ5_AQIR_BLACK_EMPIRE)}s from the {GetObjectName(UNIT_ST5K_PIT_OF_TORMENT_YOGG_SPECIALIST)}";
