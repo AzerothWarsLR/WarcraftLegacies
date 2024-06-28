@@ -5,18 +5,20 @@ using static War3Api.Common;
 namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
 {
   /// <summary>
-  ///   Completes when the quest holder has killed a certain number of units.
+  ///   Completes when the quest holder has killed a certain number of units of a certain type.
   /// </summary>
-  public sealed class ObjectiveKillXUnit : Objective
+  public sealed class ObjectiveKillXYUnit : Objective
   {
+    private readonly int _objectId;
     private readonly int _targetKillXUnitCount;
     private int _currentKillXUnitCount;
 
-    public ObjectiveKillXUnit(int targetKillXUnitCount)
+    public ObjectiveKillXYUnit(int objectId, int targetKillXUnitCount)
     {
+      _objectId = objectId;
       _targetKillXUnitCount = targetKillXUnitCount;
       CurrentKillXUnitCount = 0;
-      PlayerUnitEvents.Register(UnitTypeEvent.Dies, OnKillUnit);
+      PlayerUnitEvents.Register(UnitTypeEvent.Dies, OnKillUnit, objectId);
     }
 
     private int CurrentKillXUnitCount
@@ -24,7 +26,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       set
       {
         _currentKillXUnitCount = value;
-        Description = $"Kill units ({_currentKillXUnitCount}/{_targetKillXUnitCount})";
+        Description = $"Kill {GetObjectName(_objectId)}s ({_currentKillXUnitCount}/{_targetKillXUnitCount})";
       }
     }
 

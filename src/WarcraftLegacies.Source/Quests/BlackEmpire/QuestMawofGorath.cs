@@ -2,6 +2,7 @@
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Factions;
 
@@ -17,12 +18,11 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     /// Initializes a new instance of the <see cref="QuestMawofGorath"/> class.
     /// </summary>
     public QuestMawofGorath(LegendaryHero zonozz) : base("Maw of Go'rath",
-      "Zon'ozz can awaken the Maw of Go'rath, a terrible Forgotten One.",
+      "Zon'ozz has been tasked awaken the Maw of Go'rath, a terrible Forgotten One. To that end, he will need to carve a crest of blood with the corpses of his enemies.",
       @"ReplaceableTextures\CommandButtons\BTNFacelessKing.blp")
     {
-      AddObjective(new ObjectiveControlLevel(UNIT_N02Q_DRAGONBLIGHT, 10));
+      AddObjective(new ObjectiveKillXUnit(200));
       AddObjective(new ObjectiveLegendLevel(zonozz, 8));
-      AddObjective(new ObjectiveLegendInRect(zonozz, Regions.WyrmrestTemple, "Wyrmrest Temple"));
 
     }
 

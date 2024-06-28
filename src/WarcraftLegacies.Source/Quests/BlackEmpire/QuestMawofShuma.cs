@@ -2,6 +2,7 @@
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Factions;
 
@@ -17,12 +18,11 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     /// Initializes a new instance of the <see cref="QuestMawofShuma"/> class.
     /// </summary>
     public QuestMawofShuma(LegendaryHero yorsahj) : base("Maw of Shu'ma",
-      "Yor'sahj can awaken the Maw of Shu'ma, a terrible Forgotten One.",
+      "Yor'sahj needs awaken the Maw of Shu'ma for me, a terrible Forgotten One. To do so",
       @"ReplaceableTextures\CommandButtons\BTNFacelessOneWidow.blp")
     {
-      AddObjective(new ObjectiveControlLevel(UNIT_N02Q_DRAGONBLIGHT, 10));
+      AddObjective(new ObjectiveCastSpellFromLegendInRect(Regions.MountHyjal, "the World Tree", ABILITY_A0O8_DEVOUR_MAGIC_ANETHERON, yorsahj));
       AddObjective(new ObjectiveLegendLevel(yorsahj, 8));
-      AddObjective(new ObjectiveLegendInRect(yorsahj, Regions.WyrmrestTemple, "Wyrmrest Temple"));
 
     }
 
