@@ -1,6 +1,5 @@
 ﻿using MacroTools.Commands;
 using MacroTools.CommandSystem;
-using WarcraftLegacies.Source.Commands;
 
 namespace WarcraftLegacies.Source.Setup
 {
@@ -8,7 +7,6 @@ namespace WarcraftLegacies.Source.Setup
   {
     public static void Setup(CommandManager commandManager)
     {
-      ObserverCommand.Setup();
       commandManager.Register(new Limited());
       commandManager.Register(new Clear("clear"));
       commandManager.Register(new Clear("c"));
@@ -24,6 +22,7 @@ namespace WarcraftLegacies.Source.Setup
       commandManager.Register(new ListArtifacts());
       commandManager.Register(new Artifact());
       commandManager.Register(new MacroTools.Commands.Powers());
+      commandManager.Register(new Observer());
       commandManager.CreateInfoQuest();
     }
   }
