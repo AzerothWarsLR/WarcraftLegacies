@@ -96,7 +96,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Opens a two-way portal to Alterac. The portal becomes useable after 10 seconds, and closes 5 seconds after the caster stops channeling."
+      "Value": "Opens a two-way portal to Alterac. The portal becomes useable after 5 seconds, and lasts 30 seconds. You will not be able to open another portal for the duration."
     },
     {
       "Level": 2,
