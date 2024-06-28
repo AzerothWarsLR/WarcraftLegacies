@@ -11,7 +11,7 @@ namespace MacroTools.Commands
   /// </summary>
   public sealed class Observer : Command
   {
-    private Team? _observers = new ("Observers");
+    private Team? _observers;
 
     /// <inheritdoc />
     public override void OnRegister()
