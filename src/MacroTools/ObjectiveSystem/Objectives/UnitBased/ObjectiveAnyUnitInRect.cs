@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
@@ -54,9 +55,10 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     /// <inheritdoc />
     public string CompletingUnitName => CompletingUnit != null ? CompletingUnit.GetProperName() : "an unknown hero";
 
-    private bool IsUnitValid(unit whichUnit) =>
-      EligibleFactions.Contains(whichUnit.OwningPlayer()) && whichUnit.IsAlive() &&
-      (IsUnitType(whichUnit, UNIT_TYPE_HERO) || !_heroOnly);
+    private bool IsUnitValid(unit whichUnit) => EligibleFactions.Contains(whichUnit.OwningPlayer()) &&
+                                                whichUnit.IsAlive() &&
+                                                (IsUnitType(whichUnit, UNIT_TYPE_HERO) || !_heroOnly) &&
+                                                !whichUnit.IsControlPoint() && whichUnit.IsSelectable();
 
     private bool IsValidUnitInRect() => CreateGroup().EnumUnitsInRect(_targetRect).EmptyToList().Any(IsUnitValid);
 

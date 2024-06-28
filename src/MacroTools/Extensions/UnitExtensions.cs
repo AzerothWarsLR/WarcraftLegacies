@@ -871,5 +871,10 @@ namespace MacroTools.Extensions
       return !CapitalManager.UnitIsCapital(whichUnit) && !CapitalManager.UnitIsProtector(whichUnit) &&
              !ControlPointManager.Instance.UnitIsControlPoint(whichUnit) && !unitType.NeverDelete;
     }
+
+    /// <summary>
+    /// Returns true if the unit can be selected, i.e. it does not have Locust.
+    /// </summary>
+    public static bool IsSelectable(this unit whichUnit) => GetUnitAbilityLevel(whichUnit, FourCC("Aloc")) == 0;
   }
 }
