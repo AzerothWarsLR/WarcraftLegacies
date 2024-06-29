@@ -27,11 +27,14 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       PassiveAbilityManager.Register(new Trader(UNIT_O04S_TRADER_GOBLIN, 25, traderTradeTargets));
 
-      SpellSystem.Register(new NuclearLaunch(ABILITY_A0RH_INTERCONTINENTAL_BOMBARDMENT_GOBLIN_ARTILLERY, 25));
+      SpellSystem.Register(new NuclearLaunch(ABILITY_A0RH_INTERCONTINENTAL_BOMBARDMENT_GOBLIN_ARTILLERY)
+      {
+        CastTime = 25,
+        NuclearWarningUnitTypeId = UNIT_H06L_DUMMY_NUKE_WARNING,
+        WarningSoundPath = "war3mapImported/NuclearLaunchDetected.mp3",
+        DummyNukeLeftOverId = UNIT_H050_DUMMY_NUKE_LEFTOVER
+      });
 
-      PassiveAbilityManager.Register(new NuclearLaunchWarning(UNIT_H011_INTERCONTINENTAL_ARTILLERY_GOBLIN_TOWER,
-        UNIT_H06L_DUMMY_NUKE_WARNING, @"war3mapImported/NuclearLaunchDetected.mp3", 25));
-      
       PassiveAbilityManager.Register(new AnimationSpeedMultiplier(UNIT_H011_INTERCONTINENTAL_ARTILLERY_GOBLIN_TOWER, 0.4f));
       
       PassiveAbilityManager.Register(new OilUser(UNIT_H011_INTERCONTINENTAL_ARTILLERY_GOBLIN_TOWER));
