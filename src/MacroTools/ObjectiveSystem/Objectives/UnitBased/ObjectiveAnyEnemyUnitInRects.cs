@@ -26,11 +26,12 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     /// </summary>
     /// <param name="targetRects">Where the player has to move a unit.</param>
     /// <param name="rectName">A user-friendly name for the area.</param>
-    public ObjectiveAnyEnemyUnitInRects(IEnumerable<Rectangle> targetRects, string rectName)
+    /// <param name="unitDescriptor">A user-friendly descriptor for the type of unit that can enter.</param>
+    public ObjectiveAnyEnemyUnitInRects(IEnumerable<Rectangle> targetRects, string rectName, string unitDescriptor)
     {
       var rectangles = targetRects as Rectangle[] ?? targetRects.ToArray();
       _targetRects = rectangles;
-      Description = $"Enemy unit has entered {rectName}";
+      Description = $"Enemy {unitDescriptor} unit has entered {rectName}";
       DisplaysPosition = false;
       PingPath = "MinimapQuestTurnIn";
     }
