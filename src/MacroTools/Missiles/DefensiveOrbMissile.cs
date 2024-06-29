@@ -37,7 +37,7 @@ namespace MacroTools.Missiles
     {
       if (!IsValidTarget(unit)) 
         return;
-      unit.TakeDamage(Caster, Damage, attackType: ATTACK_TYPE_MAGIC, damageType: DAMAGE_TYPE_MAGIC);
+      unit.TakeDamage(Caster, Damage);
       _targetsHitCooldown.Add(new UnitHit(unit));
     }
 
