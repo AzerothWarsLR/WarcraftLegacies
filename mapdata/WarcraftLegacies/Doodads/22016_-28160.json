@@ -2,6 +2,46 @@
   {
     "State": 2,
     "Life": 255,
+    "TypeId": 842477636,
+    "Position": {
+      "X": 22016,
+      "Y": -28480,
+      "Z": 85.75
+    },
+    "Rotation": 0.7679449,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 842477636,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 6500
+  },
+  {
+    "State": 2,
+    "Life": 255,
+    "TypeId": 842477636,
+    "Position": {
+      "X": 22016,
+      "Y": -28608,
+      "Z": 90
+    },
+    "Rotation": 0.8552113,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 842477636,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 6511
+  },
+  {
+    "State": 2,
+    "Life": 255,
     "TypeId": 1144008772,
     "Variation": 3,
     "Position": {
@@ -63,63 +103,21 @@
   },
   {
     "State": 2,
-    "Life": 100,
-    "TypeId": 2004112462,
-    "Variation": 4,
+    "Life": 255,
+    "TypeId": 842477636,
+    "Variation": 1,
     "Position": {
       "X": 21888,
-      "Y": -28480,
-      "Z": 69.125
+      "Y": -28416,
+      "Z": 93.25
     },
-    "Rotation": 3.2463124,
+    "Rotation": 6.2482786,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 2004112462,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 6511
-  },
-  {
-    "State": 2,
-    "Life": 100,
-    "TypeId": 2004112462,
-    "Variation": 8,
-    "Position": {
-      "X": 22016,
-      "Y": -28544,
-      "Z": 77.25
-    },
-    "Rotation": 4.520403,
-    "Scale": {
-      "X": 1,
-      "Y": 1,
-      "Z": 1
-    },
-    "SkinId": 2004112462,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 6500
-  },
-  {
-    "State": 6,
-    "Life": 100,
-    "TypeId": 2004112462,
-    "Variation": 8,
-    "Position": {
-      "X": 21952,
-      "Y": -28480,
-      "Z": 77.4375
-    },
-    "Rotation": 3.6128316,
-    "Scale": {
-      "X": 1,
-      "Y": 1,
-      "Z": 1
-    },
-    "SkinId": 2004112462,
+    "SkinId": 842477636,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 6499
