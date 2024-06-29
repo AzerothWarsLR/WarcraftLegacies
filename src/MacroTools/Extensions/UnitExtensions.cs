@@ -876,5 +876,14 @@ namespace MacroTools.Extensions
     /// Returns true if the unit can be selected, i.e. it does not have Locust.
     /// </summary>
     public static bool IsSelectable(this unit whichUnit) => GetUnitAbilityLevel(whichUnit, FourCC("Aloc")) == 0;
+
+    /// <summary>
+    /// Returns true if the unit is classifed as a boat unit, i.e. has movement type 16.
+    /// </summary>
+    public static bool IsUnitBoat(this unit whichUnit)
+    {
+      var movementType = BlzGetUnitIntegerField(whichUnit, UNIT_IF_MOVE_TYPE);
+      return movementType == 16;
+    }
   }
 }

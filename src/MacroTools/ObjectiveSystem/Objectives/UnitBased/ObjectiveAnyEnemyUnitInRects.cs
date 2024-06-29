@@ -17,6 +17,11 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     private readonly IEnumerable<Rectangle> _targetRects;
 
     /// <summary>
+    /// The condition that units need to pass to be eligible for quest objective.
+    /// </summary>
+    public Func<unit, bool> EligibilityCondition { get; init; } = _ => true;
+
+    /// <summary>
     /// Initializes a new instance of the <see cref="ObjectiveAnyEnemyUnitInRects"/> class.
     /// </summary>
     /// <param name="targetRects">Where the player has to move a unit.</param>
@@ -39,7 +44,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     private bool IsUnitValid(unit whichUnit) =>
       !IsPlayerOnSameTeamAsAnyEligibleFaction(whichUnit.OwningPlayer()) && whichUnit.IsAlive() &&
       whichUnit.OwningPlayer() != Player(PLAYER_NEUTRAL_AGGRESSIVE) &&
-      whichUnit.OwningPlayer() != Player(PLAYER_NEUTRAL_PASSIVE);
+      whichUnit.OwningPlayer() != Player(PLAYER_NEUTRAL_PASSIVE) &&
+      EligibilityCondition(whichUnit);
     
     private bool IsValidUnitInRects()
     {
