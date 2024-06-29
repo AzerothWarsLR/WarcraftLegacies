@@ -68,13 +68,13 @@ namespace MacroTools.Extensions
     public static Team? GetTeam(this player player) => PlayerData.ByHandle(player).Team;
 
     /// <summary>Sets the player's <see cref="Team"/>.</summary>
-    public static void SetTeam(this player player, Team whichTeam) => PlayerData.ByHandle(player).SetTeam(whichTeam);
+    public static void SetTeam(this player player, Team? whichTeam) => PlayerData.ByHandle(player).SetTeam(whichTeam);
 
     /// <summary>Returns the player's <see cref="Faction"/>.</summary>
     public static Faction? GetFaction(this player player) => PlayerData.ByHandle(player).Faction;
 
     /// <summary>Sets the player's <see cref="Faction"/>.</summary>
-    public static void SetFaction(this player player, Faction faction) => PlayerData.ByHandle(player).Faction = faction;
+    public static void SetFaction(this player player, Faction? faction) => PlayerData.ByHandle(player).Faction = faction;
 
     /// <summary>Returns the player's gold income, including any bonuses.</summary>
     public static float GetTotalIncome(this player player) => PlayerData.ByHandle(player).TotalIncome;

@@ -6,11 +6,6 @@
   ],
   "Modifications": [
     {
-      "Id": 1885959270,
-      "Type": 3,
-      "Value": "Perfect Avatar"
-    },
-    {
       "Id": 1718840934,
       "Type": 3,
       "Value": " (Thane)"
@@ -18,7 +13,7 @@
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "This unit is in Perfect Avatar form; it has dramatically increased hit points, attack damage, armor, and is immune to spells."
+      "Value": "This unit is in Avatar form; it has dramatically increased hit points, attack damage, armor, and is immune to spells."
     }
   ]
 }

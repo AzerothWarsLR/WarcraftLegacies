@@ -28,7 +28,7 @@ namespace MacroTools.DialogueSystem
         foreach (var dialogue in _dialogues)
         {
           dialogue.Play(whichPlayer);
-          TriggerWaitForSound(dialogue.Sound, 0.75f);
+          TriggerSleepAction(dialogue.Length + 0.75f);
         }
         GetTriggeringTrigger().Destroy();
       }).Execute();
