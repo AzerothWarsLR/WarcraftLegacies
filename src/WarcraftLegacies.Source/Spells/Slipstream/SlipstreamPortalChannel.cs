@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using MacroTools;
 using MacroTools.ChannelSystem;
 using MacroTools.Extensions;
 using WCSharp.Buffs;
+using WCSharp.Events;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells.Slipstream
@@ -36,6 +38,17 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
     /// The color of the created portals.
     /// </summary>
     public Color Color { get; init; } = new(255, 255, 255, 255);
+    
+    /// <summary>
+    /// An ability that can be used to close the portal early.
+    /// </summary>
+    public int? CloseAbilityId { get; init; }
+    
+    /// <summary>
+    /// Any other instance of <see cref="SlipstreamSpellLegionTeleporter"/> that might exist on the same unit.
+    /// <para>Their cooldowns will be expired when this portal closes.</para>
+    /// </summary>
+    public IEnumerable<SlipstreamSpellLegionTeleporter>? RelatedSlipstreams { get; init; }
 
     private unit? _portalOrigin;
     private unit? _portalDestination;
@@ -76,13 +89,24 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
       };
       BuffSystem.Add(_portalDestinationBuff);
       _portalDestinationBuff.Open(OpeningDelay);
+      
+      if (CloseAbilityId != null)
+        PlayerUnitEvents.Register(SpellEvent.Effect, OnPortalCloseSpell, CloseAbilityId.Value);
     }
+
+    private void OnPortalCloseSpell() => Active = false;
 
     /// <inheritdoc />
     protected override void OnDispose()
     {
       _portalOriginBuff?.Close(ClosingDelay);
       _portalDestinationBuff?.Close(ClosingDelay);
+      if (CloseAbilityId != null)
+        PlayerUnitEvents.Unregister(SpellEvent.Effect, OnPortalCloseSpell, CloseAbilityId.Value);
+      
+      if (RelatedSlipstreams != null)
+        foreach (var relatedSlipstream in RelatedSlipstreams)
+          Caster.StartAbilityCooldown(relatedSlipstream.Id, ClosingDelay);
     }
   }
 }

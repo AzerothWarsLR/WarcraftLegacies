@@ -42,28 +42,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       SpellSystem.Register(massSummonUnit);
 
-      var slipstreamOrigin = new Point(22951.6f, -29964.4f);
-      //Northrend
-      SpellSystem.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0UB_PORTAL_TO_NORTHREND_LEGION)
-      {
-        PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
-        OpeningDelay = 10,
-        ClosingDelay = 5,
-        OriginLocation = slipstreamOrigin,
-        TargetLocation = new Point(3587, 20680),
-        Color = new Color(55, 50, 250, 255)
-      });
-
-      //Alterac
-      SpellSystem.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0UC_PORTAL_TO_ALTERAC_LEGION)
-      {
-        PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
-        OpeningDelay = 10,
-        ClosingDelay = 5,
-        OriginLocation = slipstreamOrigin,
-        TargetLocation = new Point(11000, 6424),
-        Color = new Color(155, 250, 50, 255)
-      });
+      RegisterSlipstreams();
 
       var summonFelHounds = new SummonUnits(ABILITY_A12B_HOUND_COMPANION_LEGION_FELGUARD)
       {
@@ -73,6 +52,40 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Radius = 50,
       };
       SpellSystem.Register(summonFelHounds);
+    }
+
+    private static void RegisterSlipstreams()
+    {
+      var slipstreamOrigin = new Point(22951.6f, -29964.4f);
+      var slipstreamNorthrend = new SlipstreamSpellLegionTeleporter(ABILITY_A0UB_PORTAL_TO_NORTHREND_LEGION)
+      {
+        PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
+        OpeningDelay = 10,
+        ClosingDelay = 5,
+        OriginLocation = slipstreamOrigin,
+        TargetLocation = new Point(3587, 20680),
+        Color = new Color(55, 50, 250, 255),
+        CloseAbilityId = ABILITY_ZBCP_CLOSE_PORTALS_LEGION_TELEPORTERS
+      };
+      SpellSystem.Register(slipstreamNorthrend);
+
+      var slipstreamAlterac = new SlipstreamSpellLegionTeleporter(ABILITY_A0UC_PORTAL_TO_ALTERAC_LEGION)
+      {
+        PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
+        OpeningDelay = 10,
+        ClosingDelay = 5,
+        OriginLocation = slipstreamOrigin,
+        TargetLocation = new Point(11000, 6424),
+        Color = new Color(155, 250, 50, 255),
+        CloseAbilityId = ABILITY_ZBCP_CLOSE_PORTALS_LEGION_TELEPORTERS
+      };
+      SpellSystem.Register(slipstreamAlterac);
+
+      slipstreamNorthrend.RelatedSlipstreams.Add(slipstreamAlterac);
+      slipstreamNorthrend.RelatedSlipstreams.Add(slipstreamNorthrend);
+      
+      slipstreamAlterac.RelatedSlipstreams.Add(slipstreamNorthrend);
+      slipstreamAlterac.RelatedSlipstreams.Add(slipstreamAlterac);
     }
   }
 }
