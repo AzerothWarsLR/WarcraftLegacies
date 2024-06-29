@@ -36,8 +36,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
       UnitApplyTimedLife(dummyNukeLeftover, 0, 3);
       dummyNukeLeftover.IssueOrder(OrderId("flamestrike"), targetPoint);
     }
-
-
+    
     /// <inheritdoc />
     public void OnStartChannel(unit caster, Point targetPoint)
     {
