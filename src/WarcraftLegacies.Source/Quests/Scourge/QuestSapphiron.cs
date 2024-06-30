@@ -25,6 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       _unitIsDeadObjective = new ObjectiveUnitIsDead(sapphiron);
       AddObjective(_unitIsDeadObjective);
       AddObjective(new ObjectiveControlLegend(kelthuzad, false));
+      AddObjective(new ObjectiveResearch(UPGRADE_R09X_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, UNIT_UGRV_GRAVEYARD_SCOURGE_RESEARCH));
       ResearchId = UPGRADE_R025_QUEST_COMPLETED_SAPPHIRON_SCOURGE;
     }
 
@@ -33,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       "Sapphiron has been slain, and has been reanimated as a mighty Frost Wyrm under the command of the Scourge.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Unlock one of the requirements to train Frost Wyrms. " +
+    protected override string RewardDescription => $"Learn to train {GetObjectName(UNIT_UFRO_FROST_WYRM_SCOURGE)}s from the {GetObjectName(UNIT_UBON_BONEYARD_SCOURGE_SIEGE)}. " +
                                                    "If your team killed Sapphiron, gain him in an undead form; " +
                                                    $"otherwise, learn to train him from the {GetObjectName(UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)}";
 
@@ -44,8 +45,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       if (killingPlayer == null)
         return;
       if (completingFaction.Player?.GetTeam()?.Contains(killingPlayer) == true)
-        CreateUnit(completingFaction.Player, SapphironId, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()),
-          GetUnitFacing(GetTriggerUnit()));
+        CreateUnit(completingFaction.Player, SapphironId, -2600, 18800, 300);
     }
   }
 }
