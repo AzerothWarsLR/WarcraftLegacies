@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       "Sapphiron has been slain, and has been reanimated as a mighty Frost Wyrm under the command of the Scourge.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Unlock ability to train Frost Wyrms. " +
+    protected override string RewardDescription => $"Learn to train {GetObjectName(UNIT_UFRO_FROST_WYRM_SCOURGE)}s from the {GetObjectName(UNIT_UBON_BONEYARD_SCOURGE_SIEGE)}. " +
                                                    "If your team killed Sapphiron, gain him in an undead form; " +
                                                    $"otherwise, learn to train him from the {GetObjectName(UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)}";
 
