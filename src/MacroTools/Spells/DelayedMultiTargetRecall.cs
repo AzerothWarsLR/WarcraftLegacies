@@ -79,13 +79,7 @@ namespace MacroTools.Spells
              !IsUnitType(target, UNIT_TYPE_STRUCTURE) && 
              !IsUnitType(target, UNIT_TYPE_ANCIENT) &&
              caster != target &&
-             !IsUnitBoat(target);
-    }
-
-    private static bool IsUnitBoat(unit whichUnit)
-    {
-      var movementType = BlzGetUnitIntegerField(whichUnit, UNIT_IF_MOVE_TYPE);
-      return movementType == 16;
+             !target.IsUnitBoat();
     }
   }
 }

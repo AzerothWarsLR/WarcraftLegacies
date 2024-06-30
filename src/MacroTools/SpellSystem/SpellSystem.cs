@@ -35,7 +35,16 @@ namespace MacroTools.SpellSystem
       PlayerUnitEvents.Register(SpellEvent.Effect, OnCast, spell.Id);
       PlayerUnitEvents.Register(SpellEvent.EndCast, OnStop, spell.Id);
       PlayerUnitEvents.Register(SpellEvent.Learned, OnLearn, spell.Id);
+      if (spell is IStartChannelEffect)
+        PlayerUnitEvents.Register(SpellEvent.Channel, OnStartChannel, spell.Id);
+      
       SpellsByAbilityId.Add(spell.Id, spell);
+    }
+
+    private static void OnStartChannel()
+    {
+      var startChannelEffect = SpellsByAbilityId[GetSpellAbilityId()] as IStartChannelEffect;
+      startChannelEffect!.OnStartChannel(GetTriggerUnit(), new Point(GetSpellTargetX(), GetSpellTargetY()));
     }
 
     private static void OnStop() =>
