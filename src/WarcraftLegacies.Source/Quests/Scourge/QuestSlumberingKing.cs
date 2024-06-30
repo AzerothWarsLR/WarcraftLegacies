@@ -26,7 +26,10 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         Regions.Coldarra,
         Regions.Borean_Tundra,
         Regions.IcecrownShipyard
-      }, "Northrend");
+      }, "Northrend", "non-boat")
+      {
+        EligibilityCondition = triggeringUnit => !triggeringUnit.IsUnitBoat()
+      };
       AddObjective(_anyEnemyUnitInRectsObjective);
       ResearchId = UPGRADE_R04V_QUEST_COMPLETED_THE_SLUMBERING_KING;
     }
