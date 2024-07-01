@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
       "Zon'ozz has been tasked awaken the Maw of Go'rath, a terrible Forgotten One. To that end, he will need to carve a crest of blood with the corpses of his enemies.",
       @"ReplaceableTextures\CommandButtons\BTNFacelessKing.blp")
     {
-      AddObjective(new ObjectiveKillXUnit(200));
+      AddObjective(new ObjectiveKillCount(200));
       AddObjective(new ObjectiveLegendLevel(zonozz, 8));
 
     }
