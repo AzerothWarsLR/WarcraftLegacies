@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     /// </summary>
     /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
     public QuestWakingCity(QuestData prerequisite, Rectangle rescueRect) : base("The Waking City",
-      "Adventurers from Azeroth are threatening me, your god. Snnihilate them.",
+      "Adventurers from Azeroth are threatening me, your god. Annihilate them.",
       @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
     {
       AddObjective(new ObjectiveControlPoint(UNIT_NNYA_NY_ALOTHA_THE_WAKING_CITY));

@@ -2,9 +2,10 @@
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Factions;
+using WarcraftLegacies.Source.Quests.Cthun;
 
 namespace WarcraftLegacies.Source.Quests.BlackEmpire
 {
@@ -17,11 +18,11 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestMawofShuma"/> class.
     /// </summary>
-    public QuestMawofShuma(LegendaryHero yorsahj) : base("Maw of Shu'ma",
-      "Yor'sahj needs awaken the Maw of Shu'ma for me, a terrible Forgotten One. To do so",
+    public QuestMawofShuma(LegendaryHero yorsahj, Faction cthun) : base("Maw of Shu'ma",
+      "Yor'sahj needs souls to awaken the Maw of Shu'ma for me, a terrible Forgotten One. C'thun has been gathering samples of living things for his experiments, but i can use their souls for my own purposes.",
       @"ReplaceableTextures\CommandButtons\BTNFacelessOneWidow.blp")
     {
-      AddObjective(new ObjectiveCastSpellFromLegendInRect(Regions.MountHyjal, "the World Tree", ABILITY_A0O8_DEVOUR_MAGIC_ANETHERON, yorsahj));
+      AddObjective(new ObjectiveFactionQuestComplete(cthun.GetQuestByType<QuestMockeryOfLife>(), cthun));
       AddObjective(new ObjectiveLegendLevel(yorsahj, 8));
 
     }

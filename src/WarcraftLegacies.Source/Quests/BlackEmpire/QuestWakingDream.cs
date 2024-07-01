@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 
@@ -12,11 +13,12 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
   public sealed class QuestWakingDream : QuestData
   {
 
-    public QuestWakingDream(LegendaryHero zaqul) : base("Waking Dream",
-      "Countless ages ago, Warlord Zon'ozz was one of my strongest generals. In this new time of need, he needs to be called to Azeroth once more to wage war in my name.",
+    public QuestWakingDream(LegendaryHero zaqul, PreplacedUnitSystem preplacedUnitSystem) : base("Waking Dream",
+      "Countless ages ago, Warlord Zon'ozz was one of my strongest generals. Unfortunately, he is currently trapped in the past. To summon him, I need to capture the cavern of time and call him to serve me in the present once again.",
       @"ReplaceableTextures\CommandButtons\BTNDarkPortal.blp")
     {
-      AddObjective(new ObjectiveChannelRect(Regions.FeralasEmeraldPortal, "the Feralas Emerald Portal", zaqul, 180, 270, Title));
+      AddObjective(new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(UNIT_O070_OCCULUS_CREEP_CAVERNS)));
+      AddObjective(new ObjectiveChannelRect(Regions.CavernofTime, "the Cavern of Time", zaqul, 180, 315, Title));
       ResearchId = UPGRADE_RBWD_QUEST_COMPLETED_WAKING_DREAM;
 
     }
