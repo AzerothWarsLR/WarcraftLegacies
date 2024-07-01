@@ -1,4 +1,4 @@
-using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+﻿using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.Goblin
@@ -23,6 +23,6 @@ namespace WarcraftLegacies.Source.Quests.Goblin
     public override string RewardFlavour => "With all the Goblin towns united, a new empire rises!";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Unlock the Intercontinental Artillery";
+    protected override string RewardDescription => $"Unlock the Intercontinental Artillery upgrade from the {GetObjectName(UNIT_O01M_ENGINEER_S_GUILD_GOBLIN_SPECIALIST)}";
   }
 }

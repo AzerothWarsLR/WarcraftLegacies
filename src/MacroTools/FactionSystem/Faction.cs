@@ -27,37 +27,20 @@ namespace MacroTools.FactionSystem
     /// <summary>The amount of food <see cref="Faction"/>s can have by default.</summary>
     private const int FoodMaximumDefault = 200;
 
+    private static int _highestId;
+
     private readonly Dictionary<int, int> _abilityAvailabilities = new();
+    private readonly List<unit> _goldMines = new();
     private readonly Dictionary<int, int> _objectLevels = new();
     private readonly Dictionary<int, int> _objectLimits = new();
     private readonly List<Power> _powers = new();
     private readonly Dictionary<string, QuestData> _questsByName = new();
+    private readonly int _undefeatedResearch;
+    
     private int _foodMaximum;
     private string _icon;
     private string _name;
     private player? _player;
-    private readonly int _undefeatedResearch;
-    private readonly List<unit> _goldMines = new();
-
-    internal List<FactionDependentInitializer> FactionDependentInitializers { get; } = new();
-    
-    /// <summary>Fired when the <see cref="Faction" /> gains a <see cref="Power" />.</summary>
-    public event EventHandler<FactionPowerEventArgs>? PowerAdded;
-
-    /// <summary>Fired when the <see cref="Faction" /> loses a <see cref="Power" />.</summary>
-    public event EventHandler<FactionPowerEventArgs>? PowerRemoved;
-
-    /// <summary>Invoked when <see cref="ScoreStatus"/> changes.</summary>
-    public event EventHandler<Faction>? ScoreStatusChanged;
-
-    /// <summary>Invoked when one of the <see cref="Faction"/>'s <see cref="QuestData"/>s changes progress.</summary>
-    public event EventHandler<FactionQuestProgressChangedEventArgs>? QuestProgressChanged;
-
-    protected internal IReadOnlyList<unit> GoldMines
-    {
-      get => _goldMines;
-      init => _goldMines = value as List<unit> ?? throw new InvalidOperationException();
-    }
 
     static Faction()
     {
@@ -93,6 +76,28 @@ namespace MacroTools.FactionSystem
       });
     }
 
+    protected Faction(string name, playercolor playerColor, string prefixCol, string icon)
+    {
+      _name = name;
+      PlayerColor = playerColor;
+      PrefixCol = prefixCol;
+      _icon = icon;
+      FoodMaximum = FoodMaximumDefault;
+      Id = _highestId + 1;
+      _highestId = Id;
+    }
+
+    internal List<FactionDependentInitializer> FactionDependentInitializers { get; } = new();
+
+    /// <summary>A unique numerical identifier.</summary>
+    public int Id { get; }
+
+    protected internal IReadOnlyList<unit> GoldMines
+    {
+      get => _goldMines;
+      protected init => _goldMines = value as List<unit> ?? throw new InvalidOperationException();
+    }
+
     /// <summary>Displayed to the <see cref="Faction" /> when the game starts.</summary>
     public string? IntroText { get; protected init; }
 
@@ -108,11 +113,11 @@ namespace MacroTools.FactionSystem
     public bool HasEssentialLegend => GetEssentialLegends().Count > 0;
 
     /// <summary>How much gold the faction starts with.</summary>
-    public int StartingGold { get; init; }
+    public int StartingGold { get; protected init; }
 
     /// <summary>The units this faction should start the game with.</summary>
     public List<unit> StartingUnits { get; protected init; } = new();
-    
+
     /// <summary>Where any player occupying this faction should have their camera set to on game start.</summary>
     public Point? StartingCameraPosition { get; protected init; }
 
@@ -123,13 +128,13 @@ namespace MacroTools.FactionSystem
     /// A list of additional names that this Faction can be referred to by in commands.
     /// </summary>
     public IReadOnlyList<string> Nicknames { get; protected init; } = new List<string>();
-    
+
     /// <summary>
     /// The <see cref="Team"/> that the <see cref="Faction"/> would traditionally be on.
     /// <para>May or may not be used depending on actual game mode selections.</para>
     /// </summary>
     public Team? TraditionalTeam { get; protected init; }
-    
+
     /// <summary>
     ///   The <see cref="Faction" />'s food limit.
     ///   A <see cref="player" /> with this Faction can never exceed this amount of food.
@@ -158,7 +163,7 @@ namespace MacroTools.FactionSystem
     /// even if it doesn't have to perform a lot of micro in fights.</para>
     /// </summary>
     public FactionLearningDifficulty LearningDifficulty { get; protected init; }
-    
+
     public string ColoredName => $"{PrefixCol}{_name}|r";
 
     public string PrefixCol { get; }
@@ -223,30 +228,17 @@ namespace MacroTools.FactionSystem
       }
     }
 
-    /// <summary>Gets a list of legends that are flagged as essential and alive that the faction currently has.</summary>
-    private List<Legend> GetEssentialLegends()
-    {
-      var essentialLegends = new List<Legend>();
-      
-      foreach (var legend in LegendaryHeroManager.GetAll())
-        if (legend.Essential && legend.OwningPlayer == Player && legend.Unit?.IsAlive() == true)
-          essentialLegends.Add(legend);
-      
-      foreach (var capital in CapitalManager.GetAll())
-        if (capital.Essential && capital.OwningPlayer == Player && capital.Unit?.IsAlive() == true)
-          essentialLegends.Add(capital);
+    /// <summary>Fired when the <see cref="Faction" /> gains a <see cref="Power" />.</summary>
+    public event EventHandler<FactionPowerEventArgs>? PowerAdded;
 
-      return essentialLegends;
-    }
+    /// <summary>Fired when the <see cref="Faction" /> loses a <see cref="Power" />.</summary>
+    public event EventHandler<FactionPowerEventArgs>? PowerRemoved;
 
-    protected Faction(string name, playercolor playerColor, string prefixCol, string icon)
-    {
-      _name = name;
-      PlayerColor = playerColor;
-      PrefixCol = prefixCol;
-      _icon = icon;
-      FoodMaximum = FoodMaximumDefault;
-    }
+    /// <summary>Invoked when <see cref="ScoreStatus"/> changes.</summary>
+    public event EventHandler<Faction>? ScoreStatusChanged;
+
+    /// <summary>Invoked when one of the <see cref="Faction"/>'s <see cref="QuestData"/>s changes progress.</summary>
+    public event EventHandler<FactionQuestProgressChangedEventArgs>? QuestProgressChanged;
 
     /// <summary>Fires when the <see cref="Faction" /> changes its name.</summary>
     public event EventHandler<FactionNameChangeEventArgs>? NameChanged;
@@ -274,7 +266,7 @@ namespace MacroTools.FactionSystem
     {
       RemoveGoldMines();
     }
-    
+
     /// <summary>
     /// Defeats the player, making them an observer, and distributing their units and resources to allies if possible.
     /// </summary>
@@ -285,11 +277,13 @@ namespace MacroTools.FactionSystem
 
       if (Player != null)
       {
-        FogModifierStart(CreateFogModifierRect(Player, FOG_OF_WAR_VISIBLE,
+        var defeatedPlayer = Player;
+        FogModifierStart(CreateFogModifierRect(defeatedPlayer, FOG_OF_WAR_VISIBLE,
           Rectangle.WorldBounds.Rect, false, false));
-        RemovePlayer(Player, PLAYER_GAME_RESULT_DEFEAT);
-        SetPlayerState(Player, PLAYER_STATE_OBSERVER, 1);
-        PlayerDistributor.DistributePlayer(Player);
+        RemovePlayer(defeatedPlayer, PLAYER_GAME_RESULT_DEFEAT);
+        SetPlayerState(defeatedPlayer, PLAYER_STATE_OBSERVER, 1);
+        defeatedPlayer.SetFaction(null);
+        PlayerDistributor.DistributePlayer(defeatedPlayer);
         RemoveGoldMines();
       }
 
@@ -334,7 +328,7 @@ namespace MacroTools.FactionSystem
       power = _powers.FirstOrDefault(x => x.Name == name);
       return power != null;
     }
-    
+
     /// <summary>Gets the first <see cref="Power" /> this <see cref="Faction" /> has with the provided type.</summary>
     public T? GetPowerByType<T>() where T : Power
     {
@@ -450,7 +444,7 @@ namespace MacroTools.FactionSystem
           SetObjectLevel(objectId, Math.Min(objectLimit, level));
       }
     }
-    
+
     /// <summary>Returns all <see cref="Power" />s this <see cref="Faction" /> has.</summary>
     public IEnumerable<Power> GetAllPowers()
     {
@@ -472,7 +466,7 @@ namespace MacroTools.FactionSystem
       return _questsByName.Values.FirstOrDefault(x => x.GetType() == typeof(T)) as T ??
              throw new Exception($"{Name} does not have a {nameof(QuestData)} of type {typeof(T)}");
     }
-    
+
     /// <summary>Returns all <see cref="QuestData"/>s the <see cref="Faction"/> can complete.</summary>
     public List<QuestData> GetAllQuests() => _questsByName.Values.ToList();
 
@@ -493,7 +487,7 @@ namespace MacroTools.FactionSystem
       });
       FactionDependentInitializers.Add(factionDependentInitializer);
     }
-    
+
     /// <summary>
     /// Registers an initializer function that will only fire once all <see cref="Faction"/>s of the specified types have
     /// been registered.
@@ -513,7 +507,7 @@ namespace MacroTools.FactionSystem
       });
       FactionDependentInitializers.Add(factionDependentInitializer);
     }
-    
+
     /// <summary>
     /// Registers an initializer function that will only fire once all <see cref="Faction"/>s of the specified types have
     /// been registered.
@@ -538,7 +532,7 @@ namespace MacroTools.FactionSystem
       });
       FactionDependentInitializers.Add(factionDependentInitializer);
     }
-    
+
     /// <summary>
     /// Registers an initializer function that will only fire once all <see cref="Faction"/>s of the specified types have
     /// been registered.
@@ -567,7 +561,23 @@ namespace MacroTools.FactionSystem
       });
       FactionDependentInitializers.Add(factionDependentInitializer);
     }
-    
+
+    /// <summary>Gets a list of legends that are flagged as essential and alive that the faction currently has.</summary>
+    private List<Legend> GetEssentialLegends()
+    {
+      var essentialLegends = new List<Legend>();
+      
+      foreach (var legend in LegendaryHeroManager.GetAll())
+        if (legend.Essential && legend.OwningPlayer == Player && legend.Unit?.IsAlive() == true)
+          essentialLegends.Add(legend);
+      
+      foreach (var capital in CapitalManager.GetAll())
+        if (capital.Essential && capital.OwningPlayer == Player && capital.Unit?.IsAlive() == true)
+          essentialLegends.Add(capital);
+
+      return essentialLegends;
+    }
+
     /// <summary>Removes all gold mines assigned to the faction</summary>
     private void RemoveGoldMines()
     {
@@ -576,7 +586,7 @@ namespace MacroTools.FactionSystem
       
       _goldMines.Clear();
     }
-    
+
     /// <summary>
     /// Modifies the player to have the <see cref="Faction"/>'s attributes.
     /// </summary>
@@ -599,7 +609,7 @@ namespace MacroTools.FactionSystem
       UnapplyObjects();
       UnapplyPowers();
     }
-    
+
     private void ApplyPowers()
     {
       if (Player == null) return;
@@ -654,7 +664,7 @@ namespace MacroTools.FactionSystem
         quest.ShowSync();
       }
     }
-    
+
     private void HideAllQuests()
     {
       foreach (var quest in _questsByName.Values)

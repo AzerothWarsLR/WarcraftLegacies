@@ -25,7 +25,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Reduces the damage taken from Magic attacks to \u003CA13X,DataE1,%\u003E%."
+      "Value": "Causes the Control Point to take 100% damage from Magic attacks regardless of armor type."
     }
   ]
 }

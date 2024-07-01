@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.LegendSystem;
@@ -95,7 +96,7 @@ namespace MacroTools.FactionSystem
       var playerUnits = CreateGroup()
         .EnumUnitsOfPlayer(playerToDistribute)
         .EmptyToList();
-      
+
       var refund = new UnitsRefund();
       foreach (var unit in playerUnits)
       {

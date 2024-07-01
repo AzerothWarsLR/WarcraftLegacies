@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Quests
       "Beyond our local conflicts lies a larger war for the fate of Azeroth itself. It will reach us eventually, whether we wish it or not.",
       @"ReplaceableTextures\CommandButtons\BTNFarSight.blp")
     {
-      AddObjective(new ObjectiveTime(960));
+      AddObjective(new ObjectiveTime(840));
       IsFactionQuest = false;
     }
     

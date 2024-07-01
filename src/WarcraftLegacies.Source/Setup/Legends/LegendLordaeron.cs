@@ -45,7 +45,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Mograine = new LegendaryHero("Alexandros Mograine")
       {
         UnitType = UNIT_H01J_THE_ASHBRINGER_LORDAERON,
-        StartingXp = 5400,
+        StartingXp = 4000,
         StartingArtifacts = new List<Artifact>
         {
           new(CreateItem(ITEM_I012_ASHBRINGER, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
@@ -55,7 +55,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Garithos = new LegendaryHero("Garithos")
       {
         UnitType = UNIT_HLGR_GRAND_MARSHAL_SCARLET,
-        StartingXp = 5400
+        StartingXp = 4000
       };
 
       Goodchild = new LegendaryHero("High Commander Goodchilde")
