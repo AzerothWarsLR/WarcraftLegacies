@@ -29,6 +29,7 @@ namespace WarcraftLegacies.Source.Factions
     {
       RegisterObjectLimits();
       RegisterQuests();
+      RegisterFactionDependentInitializer<Ahnqiraj>(RegisterAhnqirajQuests);
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
@@ -44,7 +45,7 @@ namespace WarcraftLegacies.Source.Factions
       AddQuest(new QuestBladeoftheBlackEmpire());
     }
 
-    private void RegisterCthunQuests(Ahnqiraj ahnqiraj)
+    private void RegisterAhnqirajQuests(Ahnqiraj ahnqiraj)
     {
       AddQuest(new QuestMawofShuma(_allLegendSetup.BlackEmpire.Yorsahj, ahnqiraj));
     }
