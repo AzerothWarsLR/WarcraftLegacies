@@ -1,7 +1,9 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools;
+using MacroTools.FactionSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.BlackEmpire;
 using WarcraftLegacies.Source.Setup;
+
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -9,12 +11,14 @@ namespace WarcraftLegacies.Source.Factions
   {
 
     private readonly AllLegendSetup _allLegendSetup;
+    private readonly PreplacedUnitSystem _preplacedUnitSystem;
 
     /// <inheritdoc />
-    public BlackEmpire(AllLegendSetup allLegendSetup) : base("BlackEmpire", PLAYER_COLOR_MAROON, "|cff800000",
+    public BlackEmpire(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("BlackEmpire", PLAYER_COLOR_MAROON, "|cff800000",
       @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
     {
       _allLegendSetup = allLegendSetup;
+      _preplacedUnitSystem = preplacedUnitSystem;
       ControlPointDefenderUnitTypeId = UNIT_N0DV_CONTROL_POINT_DEFENDER_BLACK_EMPIRE_TOWER;
       TraditionalTeam = TeamSetup.OldGods;
       StartingGold = 200;
@@ -35,10 +39,14 @@ namespace WarcraftLegacies.Source.Factions
  
       AddQuest(new QuestWakingCity(QuestGorma, Regions.Nyalotha));
       AddQuest(new QuestGiftofFlesh());
-      AddQuest(new QuestWakingDream(_allLegendSetup.BlackEmpire.Zaqul));
+      AddQuest(new QuestWakingDream(_allLegendSetup.BlackEmpire.Xkorr, _preplacedUnitSystem));
       AddQuest(new QuestMawofGorath(_allLegendSetup.BlackEmpire.Zonozz));
-      AddQuest(new QuestMawofShuma(_allLegendSetup.BlackEmpire.Yorsahj));
       AddQuest(new QuestBladeoftheBlackEmpire());
+    }
+
+    private void RegisterCthunQuests(Ahnqiraj ahnqiraj)
+    {
+      AddQuest(new QuestMawofShuma(_allLegendSetup.BlackEmpire.Yorsahj, ahnqiraj));
     }
 
     private void RegisterObjectLimits()
