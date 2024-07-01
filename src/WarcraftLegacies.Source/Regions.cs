@@ -176,7 +176,7 @@ public static class Regions
 	public static Rectangle KaliRock14 { get; set; } = new Rectangle(-8608f, 6720f, -7744f, 7936f);
 	public static Rectangle KaliRock15 { get; set; } = new Rectangle(-15328f, -13120f, -14016f, -11872f);
 	public static Rectangle KaliRock4 { get; set; } = new Rectangle(-10304f, -12960f, -9408f, -12384f);
-	public static Rectangle KaliRock7 { get; set; } = new Rectangle(-13056f, 352f, -12128f, 1472f);
+	public static Rectangle KaliRock7 { get; set; } = new Rectangle(-13120f, 320f, -12192f, 1440f);
 	public static Rectangle KaliRock8 { get; set; } = new Rectangle(-14400f, -9536f, -13632f, -8768f);
 	public static Rectangle KaliRock9 { get; set; } = new Rectangle(-14848f, -11808f, -13632f, -10432f);
 	public static Rectangle KezanAmbient { get; set; } = new Rectangle(-3200f, -10368f, 736f, -5184f);
