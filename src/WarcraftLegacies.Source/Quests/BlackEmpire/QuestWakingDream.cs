@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
   {
 
     public QuestWakingDream(LegendaryHero Xkorr, PreplacedUnitSystem preplacedUnitSystem) : base("Waking Dream",
-      "Countless ages ago, Warlord Zon'ozz was one of my strongest generals. Unfortunately, he is currently trapped in the past. To summon him, I need to capture the cavern of time and call him to serve me in the present once again.",
+      "Countless ages ago, Warlord Zon'ozz was one of my strongest generals. Unfortunately, he is currently trapped in the past. To summon him, I need to capture the Caverns of Time and call him to serve me in the present once again.",
       @"ReplaceableTextures\CommandButtons\BTNDarkPortal.blp")
     {
       AddObjective(new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(UNIT_O070_OCCULUS_CREEP_CAVERNS)));
