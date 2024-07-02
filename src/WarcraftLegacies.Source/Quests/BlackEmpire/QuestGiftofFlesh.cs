@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     /// Initializes a new instance of the <see cref="QuestGiftofFlesh"/> class.
     /// </summary>
     public QuestGiftofFlesh() : base("Gift of Flesh",
-      "The original A'qir have always served me faithfully. They are probably buried deep beneath the earth. If I am to awaken them once more, I will need to search in the deepest reaches of Kalimdor: The Stonetalon caverns and the tunnels of Ahn'qiraj.",
+      "The original Aqir, now buried deep beneath the earth, have always served me faithfully. To awaken them once more, I must search in the deepest reaches of Kalimdor: the Stonetalon caverns and the tunnels of Ahn'qiraj.",
       @"ReplaceableTextures\CommandButtons\BTNCurse of Flesh.blp")
     {
       AddObjective(new ObjectiveControlPoint(UNIT_N01U_STONETALON_PEAK));
