@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     /// Initializes a new instance of the <see cref="QuestMawofGorath"/> class.
     /// </summary>
     public QuestMawofGorath(LegendaryHero zonozz) : base("Maw of Go'rath",
-      "Zon'ozz has been tasked awaken the Maw of Go'rath, a terrible Forgotten One. To that end, he will need to carve a crest of blood with the corpses of his enemies.",
+      "Zon'ozz has been tasked with awakening the Maw of Go'rath, a terrible Forgotten One. To that end, he will need to carve a crest of blood with the corpses of his enemies.",
       @"ReplaceableTextures\CommandButtons\BTNFacelessKing.blp")
     {
       AddObjective(new ObjectiveKillCount(200));
