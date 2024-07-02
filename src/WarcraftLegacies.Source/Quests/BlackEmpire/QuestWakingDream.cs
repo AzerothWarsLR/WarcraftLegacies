@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
       @"ReplaceableTextures\CommandButtons\BTNDarkPortal.blp")
     {
       AddObjective(new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(UNIT_O070_OCCULUS_CREEP_CAVERNS)));
-      AddObjective(new ObjectiveChannelRect(Regions.CavernofTime, "the Cavern of Time", Xkorr, 180, 315, Title));
+      AddObjective(new ObjectiveChannelRect(Regions.CavernofTime, "the Caverns of Time", Xkorr, 180, 315, Title));
       ResearchId = UPGRADE_RBWD_QUEST_COMPLETED_WAKING_DREAM;
 
     }
