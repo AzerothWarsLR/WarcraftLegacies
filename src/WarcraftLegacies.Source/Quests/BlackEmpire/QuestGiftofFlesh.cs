@@ -5,9 +5,6 @@ using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.BlackEmpire
 {
-  /// <summary>
-  /// Get to Ranazjar to unlock the Aqir
-  /// </summary>
   public sealed class QuestGiftofFlesh : QuestData
   {
 
