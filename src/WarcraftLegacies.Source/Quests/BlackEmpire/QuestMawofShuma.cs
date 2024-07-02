@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     /// Initializes a new instance of the <see cref="QuestMawofShuma"/> class.
     /// </summary>
     public QuestMawofShuma(LegendaryHero yorsahj, Faction ahnqiraj) : base("Maw of Shu'ma",
-      "Yor'sahj needs souls to awaken the Maw of Shu'ma for me, a terrible Forgotten One. C'thun has been gathering samples of living things for his experiments, but i can use their souls for my own purposes.",
+      "Yor'sahj needs souls to awaken the Maw of Shu'ma, a terrible Forgotten one, for me. C'thun gathers samples of living things for his experiments, but I can use their souls for my own purposes.",
       @"ReplaceableTextures\CommandButtons\BTNFacelessOneWidow.blp")
     {
       AddObjective(new ObjectiveFactionQuestComplete(ahnqiraj.GetQuestByType<QuestMockeryOfLife>(), ahnqiraj));
