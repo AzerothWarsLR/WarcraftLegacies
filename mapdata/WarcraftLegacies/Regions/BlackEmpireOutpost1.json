@@ -1,0 +1,15 @@
+{
+  "Left": -28672,
+  "Bottom": -10240,
+  "Right": -25760,
+  "Top": -6848,
+  "Name": "BlackEmpireOutpost1",
+  "CreationNumber": 132,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

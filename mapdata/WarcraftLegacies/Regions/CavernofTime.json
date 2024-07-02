@@ -1,0 +1,15 @@
+{
+  "Left": -9344,
+  "Bottom": -16192,
+  "Right": -8960,
+  "Top": -15840,
+  "Name": "CavernofTime",
+  "CreationNumber": 133,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}
