@@ -29,7 +29,6 @@ namespace WarcraftLegacies.Source.Factions
     {
       RegisterObjectLimits();
       RegisterQuests();
-      RegisterFactionDependentInitializer<Ahnqiraj>(RegisterAhnqirajQuests);
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
@@ -41,13 +40,9 @@ namespace WarcraftLegacies.Source.Factions
       AddQuest(new QuestWakingCity(QuestGorma, Regions.Nyalotha));
       AddQuest(new QuestGiftofFlesh());
       AddQuest(new QuestWakingDream(_allLegendSetup.BlackEmpire.Xkorr, _preplacedUnitSystem));
+      AddQuest(new QuestMawofShuma(_allLegendSetup.BlackEmpire.Yorsahj));
       AddQuest(new QuestMawofGorath(_allLegendSetup.BlackEmpire.Zonozz));
-      AddQuest(new QuestBladeoftheBlackEmpire());
-    }
-
-    private void RegisterAhnqirajQuests(Ahnqiraj ahnqiraj)
-    {
-      AddQuest(new QuestMawofShuma(_allLegendSetup.BlackEmpire.Yorsahj, ahnqiraj));
+      AddQuest(new QuestBladeoftheBlackEmpire(Regions.TheAbyss));
     }
 
     private void RegisterObjectLimits()

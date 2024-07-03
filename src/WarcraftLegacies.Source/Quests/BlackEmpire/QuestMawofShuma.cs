@@ -14,15 +14,17 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
   /// </summary>
   public sealed class QuestMawofShuma : QuestData
   {
+    private readonly ObjectiveDestroyAnyCapital _objectiveDestroyAnyCapital;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestMawofShuma"/> class.
     /// </summary>
-    public QuestMawofShuma(LegendaryHero yorsahj, Faction ahnqiraj) : base("Maw of Shu'ma",
-      "Yor'sahj needs souls to awaken the Maw of Shu'ma, a terrible Forgotten one, for me. C'thun gathers samples of living things for his experiments, but I can use their souls for my own purposes.",
+    public QuestMawofShuma(LegendaryHero yorsahj) : base("Maw of Shu'ma",
+      "Yor'sahj needs souls to awaken the Maw of Shu'ma, a terrible Forgotten one, for me. Destroying and ravaging one of the mortals great cities will grant him the souls he needs.",
       @"ReplaceableTextures\CommandButtons\BTNFacelessOneWidow.blp")
     {
-      AddObjective(new ObjectiveFactionQuestComplete(ahnqiraj.GetQuestByType<QuestMockeryOfLife>(), ahnqiraj));
+      _objectiveDestroyAnyCapital = new ObjectiveDestroyAnyCapital();
+      AddObjective(_objectiveDestroyAnyCapital);
       AddObjective(new ObjectiveLegendLevel(yorsahj, 8));
 
     }

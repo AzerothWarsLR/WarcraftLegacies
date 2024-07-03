@@ -1,9 +1,12 @@
 ﻿using MacroTools.ArtifactSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.BlackEmpire
 {
@@ -14,13 +17,16 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestBladeoftheBlackEmpire"/> class.
     /// </summary>
-    public QuestBladeoftheBlackEmpire() : base("The Blade of the Black Empire",
+    public QuestBladeoftheBlackEmpire(Rectangle area) : base("The Blade of the Black Empire",
       "An ancient blade from the time of the Black Empire itself. The Dagger has a mind of its own and tries to corrupt whoever wields it. It has been lost to time.",
       @"ReplaceableTextures\CommandButtons\BTNmidnightGS.blp")
     {
       AddObjective(new ObjectiveControlLevel(UNIT_N00P_THE_ABYSS, 20));
+      _anyUnitInRect = new ObjectiveAnyUnitInRect(area, "The Abyss", false);
+      AddObjective(_anyUnitInRect);
     }
 
+    private readonly ObjectiveAnyUnitInRect _anyUnitInRect;
     /// <inheritdoc />
     public override string RewardFlavour => "I have found the Blade of the Black Empire.";
 
@@ -34,7 +40,8 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
         TitanforgedAbility = ABILITY_A0VM_TITANFORGED_9_STRENGTH
       };
       ArtifactManager.Register(xalatath);
-    }
 
+      _anyUnitInRect.CompletingUnit?.AddItemSafe(xalatath.Item);
+    }
   }
 }
