@@ -23,8 +23,8 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     public QuestGilneasCity(unit gilneasDoor) : base("Liberation of Gilneas", "Gilneas has been under the curse of the Worgen. Eliminate all of them to free Gilneas of the curse.", @"ReplaceableTextures\CommandButtons\BTNGilneasCathedral.blp")
     {
       _gilneasDoor = gilneasDoor;
-      AddObjective(new ObjectiveKillXYUnit(UNIT_O02J_WORGEN_GILNEAS, 8));
-      AddObjective(new ObjectiveKillXYUnit(UNIT_O038_WORGEN_BLOOD_SHAMAN_WORGEN_HERO, 3));
+      AddObjective(new ObjectiveKillUnitType(UNIT_O02J_WORGEN_GILNEAS, 8));
+      AddObjective(new ObjectiveKillUnitType(UNIT_O038_WORGEN_BLOOD_SHAMAN_WORGEN_HERO, 3));
       AddObjective(new ObjectiveUpgrade(UNIT_H02C_CASTLE_GILNEAS_T3, UNIT_H01R_TOWN_HALL_GILNEAS_T1));
       AddObjective(new ObjectiveExpire(660, "Liberation of Gilneas"));
       AddObjective(new ObjectiveSelfExists());

@@ -12,7 +12,7 @@ namespace TestMap.Source.Quests
       @"ReplaceableTextures\CommandButtons\BTNUnholyFrenzy.blp")
     {
       AddObjective(new ObjectiveTime(35));
-      AddObjective(new ObjectiveKillXYUnit(FourCC("hfoo"), 4));
+      AddObjective(new ObjectiveKillUnitType(FourCC("hfoo"), 4));
     }
     
     protected override string RewardDescription => "The Tomb of Sargeras has been opened.";
