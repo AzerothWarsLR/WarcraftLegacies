@@ -1,5 +1,4 @@
-﻿using MacroTools.DummyCasters;
-using MacroTools.PassiveAbilities;
+﻿using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;

@@ -7,7 +7,6 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
-using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Cthun

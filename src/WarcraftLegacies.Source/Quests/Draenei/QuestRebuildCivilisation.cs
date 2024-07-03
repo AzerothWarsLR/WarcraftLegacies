@@ -4,7 +4,6 @@ using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using System.Collections.Generic;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 
