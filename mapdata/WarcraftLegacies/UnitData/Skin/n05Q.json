@@ -31,19 +31,14 @@
       "Value": "Primary structure. "
     },
     {
-      "Id": 1768841589,
-      "Type": 3,
-      "Value": "upgrade,first"
-    },
-    {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTN_Tolvir_TownHall.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAlAkirTownHall1.blp"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Arabian palace.mdl"
+      "Value": "war3mapImported\\DarkIronTownHall2.mdl"
     },
     {
       "Id": 1651012469,
@@ -58,7 +53,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": 0.85
     }
   ]
 }
