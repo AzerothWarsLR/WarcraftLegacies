@@ -62,12 +62,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Mouth of N\u0027Zoth"
+      "Value": "Harbinger of Ny\u0027alotha"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "X\u0027korr the Compelling"
+      "Value": "Za\u0027qul"
     },
     {
       "Id": 1919972469,
@@ -110,18 +110,13 @@
       "Value": "Nerubian"
     },
     {
-      "Id": 1953458293,
-      "Type": 3,
-      "Value": "Q"
-    },
-    {
       "Id": 2037408373,
       "Value": 0
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Summon X\u0027korr the Compelling"
+      "Value": "Summon Za\u0027qul"
     },
     {
       "Id": 1718840949,
@@ -132,6 +127,10 @@
       "Id": 1651864693,
       "Type": 3,
       "Value": "Mystical Hero, adept at disruption and ranged combat."
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
     }
   ]
 }

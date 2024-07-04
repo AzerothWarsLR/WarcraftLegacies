@@ -14,14 +14,12 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var darkPact = new DarkPact(ABILITY_A0A0_DARK_PACT_LEGION_ARCHIMONDE);
       SpellSystem.Register(darkPact);
       
-      var inspireMadness = new InspireMadness(ABILITY_A10M_INSPIRE_MADNESS_LEGION_TICHONDRIUS)
+      var inspireMadness = new InspireMadness(ABILITY_A10M_INSPIRE_MADNESS_TICHONDRIUS)
       {
-        Radius = 400,
+        Radius = 300,
         CountBase = 2,
         CountLevel = 4,
-        Duration = 16,
-        Effect = @"war3mapImported\Call of Dread Purple.mdx",
-        EffectScale = 1.1f,
+        Duration = 30,
         EffectTarget = @"Abilities\Spells\Other\Charm\CharmTarget.mdl",
         EffectScaleTarget = 0.5f
       };
@@ -44,25 +42,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       SpellSystem.Register(massSummonUnit);
 
-      //Northrend
-      SpellSystem.Register(new SlipstreamSpellSpecificLocation(ABILITY_A0UB_OPEN_A_PORTAL_TO_NORTHREND_LEGION_NORTHREND)
-      {
-        PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
-        OpeningDelay = 10,
-        ClosingDelay = 5,
-        TargetLocation = new Point(3578, 20707),
-        Color = new Color(55, 50, 250, 255)
-      });
-
-      //Alterac
-      SpellSystem.Register(new SlipstreamSpellSpecificLocation(ABILITY_A0UC_OPEN_A_PORTAL_TO_ALTERAC_LEGION_ALTERAC)
-      {
-        PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
-        OpeningDelay = 10,
-        ClosingDelay = 5,
-        TargetLocation = new Point(11366, 5802),
-        Color = new Color(155, 250, 50, 255)
-      });
+      RegisterSlipstreams();
 
       var summonFelHounds = new SummonUnits(ABILITY_A12B_HOUND_COMPANION_LEGION_FELGUARD)
       {
@@ -72,6 +52,40 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Radius = 50,
       };
       SpellSystem.Register(summonFelHounds);
+    }
+
+    private static void RegisterSlipstreams()
+    {
+      var slipstreamOrigin = new Point(22951.6f, -29964.4f);
+      var slipstreamNorthrend = new SlipstreamSpellLegionTeleporter(ABILITY_A0UB_PORTAL_TO_NORTHREND_LEGION)
+      {
+        PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
+        OpeningDelay = 10,
+        ClosingDelay = 5,
+        OriginLocation = slipstreamOrigin,
+        TargetLocation = new Point(3587, 20680),
+        Color = new Color(55, 50, 250, 255),
+        CloseAbilityId = ABILITY_ZBCP_CLOSE_PORTALS_LEGION_TELEPORTERS
+      };
+      SpellSystem.Register(slipstreamNorthrend);
+
+      var slipstreamAlterac = new SlipstreamSpellLegionTeleporter(ABILITY_A0UC_PORTAL_TO_ALTERAC_LEGION)
+      {
+        PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
+        OpeningDelay = 10,
+        ClosingDelay = 5,
+        OriginLocation = slipstreamOrigin,
+        TargetLocation = new Point(11000, 6424),
+        Color = new Color(155, 250, 50, 255),
+        CloseAbilityId = ABILITY_ZBCP_CLOSE_PORTALS_LEGION_TELEPORTERS
+      };
+      SpellSystem.Register(slipstreamAlterac);
+
+      slipstreamNorthrend.RelatedSlipstreams.Add(slipstreamAlterac);
+      slipstreamNorthrend.RelatedSlipstreams.Add(slipstreamNorthrend);
+      
+      slipstreamAlterac.RelatedSlipstreams.Add(slipstreamNorthrend);
+      slipstreamAlterac.RelatedSlipstreams.Add(slipstreamAlterac);
     }
   }
 }

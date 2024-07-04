@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
   public sealed class QuestSummonLegion : QuestData
   {
     private const int RitualId = ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS;
-    private readonly List<unit> _rescueUnits = new();
+    private readonly List<unit> _rescueUnits;
     private readonly unit _interiorPortal;
     private readonly ObjectiveCastSpell _objectiveCastSpell;
 
@@ -24,14 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       AddObjective(_objectiveCastSpell);
       ResearchId = UPGRADE_R04B_QUEST_COMPLETED_UNDER_THE_BURNING_SKY;
       Global = true;
-      
-      foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
-        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
-        {
-          if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE)) ShowUnit(unit, false);
-          SetUnitInvulnerable(unit, true);
-          _rescueUnits.Add(unit);
-        }
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 
     /// <inheritdoc />
@@ -50,11 +43,8 @@ namespace WarcraftLegacies.Source.Quests.Legion
       whichFaction.ModObjectLimit(UNIT_NINF_INFERNAL_LEGION, 6);
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         SetPlayerAbilityAvailable(player, ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS, false);
-      
-      if (whichFaction.Player != null)
-        foreach (var unit in _rescueUnits)
-          unit.Rescue(whichFaction.Player);
-      
+
+      whichFaction.Player.RescueGroup(_rescueUnits);
       _rescueUnits.Clear();
 
       CreatePortals(whichFaction.Player);

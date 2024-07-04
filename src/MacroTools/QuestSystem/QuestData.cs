@@ -157,10 +157,10 @@ namespace MacroTools.QuestSystem
       if (ResearchId != 0)
         faction.ModObjectLimit(ResearchId, 1);
       OnAdd(faction);
-      foreach (var questItem in Objectives)
+      foreach (var objective in Objectives)
       {
-        questItem.EligibleFactions.Add(faction);
-        questItem.OnAdd(faction);
+        objective.EligibleFactions.Add(faction);
+        objective.OnAdd(faction);
       }
 
       RefreshDescription();
@@ -197,20 +197,20 @@ namespace MacroTools.QuestSystem
 
       //If the quest is incomplete, show its markers. Otherwise, hide them.
       if (Progress != QuestProgress.Incomplete)
-        foreach (var questItem in Objectives)
+        foreach (var objective in Objectives)
         {
           if (GetLocalPlayer() == whichFaction.Player)
-            questItem.HideLocal();
+            objective.HideLocal();
 
-          questItem.HideSync();
+          objective.HideSync();
         }
       else
-        foreach (var questItem in Objectives)
+        foreach (var objective in Objectives)
         {
           if (GetLocalPlayer() == whichFaction.Player)
-            questItem.ShowLocal(Progress);
+            objective.ShowLocal(Progress);
 
-          questItem.ShowSync(Progress);
+          objective.ShowSync(Progress);
         }
     }
 
@@ -236,28 +236,28 @@ namespace MacroTools.QuestSystem
     internal void ShowLocal()
     {
       QuestSetEnabled(Quest, true);
-      foreach (var questItem in Objectives) questItem.ShowLocal(Progress);
+      foreach (var objective in Objectives) objective.ShowLocal(Progress);
     }
 
     /// <summary>Enables the synchronous aspects of all child QuestItems.</summary>
     internal void ShowSync()
     {
-      foreach (var questItem in Objectives) 
-        questItem.ShowSync(Progress);
+      foreach (var objective in Objectives) 
+        objective.ShowSync(Progress);
     }
 
     /// <summary>Disables the local aspects of all child QuestItems.</summary>
     internal void HideLocal()
     {
       QuestSetEnabled(Quest, false);
-      foreach (var questItem in Objectives) questItem.HideLocal();
+      foreach (var objective in Objectives) objective.HideLocal();
     }
 
     /// <summary>Disables the synchronous aspects of all child QuestItems.</summary>
     internal void HideSync()
     {
-      foreach (var questItem in Objectives) 
-        questItem.HideSync();
+      foreach (var objective in Objectives) 
+        objective.HideSync();
     }
 
     private void OnQuestItemProgressChanged(object? sender, Objective changedObjective)

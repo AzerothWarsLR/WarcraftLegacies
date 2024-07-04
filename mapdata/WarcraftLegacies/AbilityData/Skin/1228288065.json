@@ -21,32 +21,15 @@
       "Value": "R"
     },
     {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Perfect Avatar"
-    },
-    {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Activate Perfect Avatar"
-    },
-    {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The Thanes, having perfected their avatar, will take almost no damage while in it. They also gain 20 bonus damage and 200 hit point bonus.|n|nLasts 15 seconds."
+      "Value": "Causes the Thane to gain \u003CA06I,DataC1\u003E bonus damage and \u003CA06I,DataA1\u003E armor for \u003CA06I,Dur1\u003E seconds."
     },
     {
       "Id": 1802007905,
       "Type": 3,
       "Value": "R"
-    },
-    {
-      "Level": 1,
-      "Id": 829715809,
-      "Type": 3,
-      "Value": "Deactivate Perfect A|cffffcc00v|ratar"
     }
   ]
 }

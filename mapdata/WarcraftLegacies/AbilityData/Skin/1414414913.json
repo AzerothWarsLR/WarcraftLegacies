@@ -1,0 +1,105 @@
+{
+  "OldId": 1702316097,
+  "NewId": 1414414913,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPoison Cloud.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(black empire)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Void Toxin"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPoison Cloud.blp"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Void Toxin - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Poisons enemy units within a radius of 600, dealing instant damage, then dealing 20 additional damage per second and reducing their movement speed by 75% for 15 seconds. |n|n|cffffcc00Level 1|r - 90 instant damage. |n|cffffcc00Level 2|r - 130 instant damage. |n|cffffcc00Level 3|r - 170 instant damage. |n|cffffcc00Level 4|r - 210 instant damage."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Void Toxin - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Void Toxin - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Void Toxin - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Poisons enemy units within a radius of 600, dealing 90 damage, then dealing 20 additional damage per second and reducing their movement speed by 75% for 15 seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Poisons enemy units within a radius of 600, dealing 130 damage, then dealing 20 additional damage per second and reducing their movement speed by 75% for 15 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Poisons enemy units within a radius of 600, dealing 170 damage, then dealing 20 additional damage per second and reducing their movement speed by 75% for 15 seconds."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Void Toxin - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Poisons enemy units within a radius of 600, dealing 210 damage, then dealing 20 additional damage per second and reducing their movement speed by 75% for 15 seconds."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 2020635233,
+      "Value": 0
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    }
+  ]
+}

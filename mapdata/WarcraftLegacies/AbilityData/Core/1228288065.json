@@ -21,14 +21,14 @@
       "Pointer": 1,
       "Id": 829841736,
       "Type": 2,
-      "Value": 500
+      "Value": 75
     },
     {
       "Level": 1,
       "Pointer": 2,
       "Id": 846618952,
       "Type": 2,
-      "Value": 200
+      "Value": 0
     },
     {
       "Level": 1,
@@ -41,7 +41,7 @@
       "Level": 1,
       "Id": 1920296033,
       "Type": 2,
-      "Value": 15
+      "Value": 10
     },
     {
       "Id": 1919248481,

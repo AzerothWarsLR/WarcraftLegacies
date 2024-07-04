@@ -39,7 +39,7 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Grants your demon units a 20% chance to rematerialize at Argus upon death."
+      "Value": "Grants your non-Resistant units a 20% chance to rematerialize in Argus upon death."
     },
     {
       "Id": 2037408359,

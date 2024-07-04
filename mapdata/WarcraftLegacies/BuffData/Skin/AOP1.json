@@ -1,0 +1,34 @@
+{
+  "OldId": 1684097090,
+  "NewId": 827346753,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Protection Aura"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is under the effects of Protection Aura; it has increased armor."
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Protection Aura"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNProtection1.blp"
+    }
+  ]
+}

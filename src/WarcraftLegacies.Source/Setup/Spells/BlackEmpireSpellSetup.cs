@@ -1,8 +1,8 @@
-﻿using MacroTools;
-using MacroTools.PassiveAbilities;
+﻿using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
+using System.Collections.Generic;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -13,6 +13,33 @@ namespace WarcraftLegacies.Source.Setup.Spells
     /// </summary>
     public static void Setup()
     {
+      PassiveAbilityManager.Register(new NoTargetSpellOnCast(UNIT_E01D_HARBINGER_OF_NY_ALOTHA_YOGG, ABILITY_AXK2_VOID_RIFT_ICON_XKORR)
+      {
+        DummyAbilityId = ABILITY_AXK1_VOIDBOLTDUMMY_X_KORR_DUMMY_SPELL,
+        DummyOrderId = OrderId("fanofknives"),
+        ProcChance = 1.0f,
+        AbilityWhitelist = new List<int>
+        {
+          ABILITY_A032_ARCANE_BOMBARDMENT_ORANGE_ANTONIDAS_MEDIVH,
+          ABILITY_ABEH_HEALING_WAVE_BLACK_EMPIRE,
+          ABILITY_A10U_MANA_BURN_DALARAN_YOGG,
+          ABILITY_A11O_BLACK_HOLE_KHADGAR,
+        }
+      });
+
+      var poisonYor = new Stomp(ABILITY_ABNT_VOID_TOXIN_BLACK_EMPIRE)
+      {
+        Radius = 600,
+        DamageBase = 50,
+        DamageLevel = 40,
+        DurationBase = 15,
+        DurationLevel = 0,
+        StunAbilityId = ABILITY_ABSS_SHADOW_STRIKE_VOID_TOXIN_REAL,
+        StunOrderId = OrderId("shadowstrike"),
+        SpecialEffect = @"Abilities\Weapons\ChimaeraAcidMissile\ChimaeraAcidMissile.mdl"
+      };
+      SpellSystem.Register(poisonYor);
+
       var genesisAttack = new SpellOnAttack(UNIT_U029_STYGIAN_HULK_YOGG,
         ABILITY_ABES_GENESIS_ATTACK_ICON_STYGIAN_HULK)
       {

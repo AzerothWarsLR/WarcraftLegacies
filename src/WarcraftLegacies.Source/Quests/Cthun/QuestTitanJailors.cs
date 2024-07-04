@@ -4,7 +4,9 @@ using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
+using MacroTools.PassiveAbilitySystem;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Cthun
@@ -14,21 +16,21 @@ namespace WarcraftLegacies.Source.Quests.Cthun
   /// </summary>
   public sealed class QuestTitanJailors : QuestData
   {
+    private readonly AllLegendSetup _allLegendSetup;
     private readonly List<unit> _rescueUnits;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestTitanJailors"/> class.
     /// </summary>
-    /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
-    public QuestTitanJailors(Rectangle rescueRect) : base("Destroy the Titan Jailors",
+    public QuestTitanJailors(AllLegendSetup allLegendSetup, Rectangle rescueRect) : base("Titan Jailors",
       "C'thun is currently watched by a Titan Construct, we need to destroy it to free our god.",
       @"ReplaceableTextures\CommandButtons\BTNArmorGolem.blp")
     {
       AddObjective(new ObjectiveControlPoint(UNIT_NLSE_TEMPLE_OF_AHN_QIRAJ));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
+      _allLegendSetup = allLegendSetup;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      
     }
 
     /// <inheritdoc />
@@ -48,7 +50,12 @@ namespace WarcraftLegacies.Source.Quests.Cthun
     }
 
     /// <inheritdoc />
-    protected override void OnComplete(Faction completingFaction) => 
+    protected override void OnComplete(Faction completingFaction)
+    {
       completingFaction.Player.RescueGroup(_rescueUnits);
+      var cthun = _allLegendSetup.Ahnqiraj.Cthun.Unit;
+      if (cthun != null)
+        PassiveAbilityManager.ForceOnCreated(cthun);
+    }
   }
 }

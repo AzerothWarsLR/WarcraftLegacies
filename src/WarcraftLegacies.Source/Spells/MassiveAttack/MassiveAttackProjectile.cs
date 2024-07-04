@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using System.Collections.Generic;
+using MacroTools.Extensions;
 using WCSharp.Missiles;
 
 namespace WarcraftLegacies.Source.Spells.MassiveAttack;
@@ -13,6 +14,11 @@ public sealed class MassiveAttackProjectile : BasicMissile
   public required attacktype AttackType { get; init; }
   
   public required damagetype DamageType { get; init; }
+
+  /// <summary>
+  /// Units that have already been hit by the projectile and thus cannot be hit again.
+  /// </summary>
+  public List<unit> Hits { get; } = new();
 
   public MassiveAttackProjectile(unit caster, float targetX, float targetY) : base(caster, targetX, targetY)
   {
@@ -29,11 +35,13 @@ public sealed class MassiveAttackProjectile : BasicMissile
       return;
     
     UnitDamageTarget(Caster, unit, Damage, false, false, AttackType, DamageType, WEAPON_TYPE_WHOKNOWS);
+    Hits.Add(unit);
   }
   
-  private static bool IsValidTarget(unit target, unit caster) =>
+  private bool IsValidTarget(unit target, unit caster) =>
     UnitAlive(target) &&
     !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
     !IsUnitType(target, UNIT_TYPE_ANCIENT) &&
-    !IsPlayerAlly(caster.OwningPlayer(), target.OwningPlayer());
+    !IsPlayerAlly(caster.OwningPlayer(), target.OwningPlayer())
+    |Hits.Contains(target);
 }
