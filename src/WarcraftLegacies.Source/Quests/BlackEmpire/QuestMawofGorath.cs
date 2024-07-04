@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     public override string RewardFlavour => "I have gained a new Forgotten One.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => $"Learn to train one additional {GetObjectName(UNIT_U02F_FORGOTTEN_ONE_YOGG)}";
+    protected override string RewardDescription => $"Learn to train one additional {GetObjectName(UNIT_U02F_FORGOTTEN_ONE_YOGG)} from the {GetObjectName(UNIT_N0AX_MUTATION_CIRCLE_YOGG_SPECIALIST)}";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
