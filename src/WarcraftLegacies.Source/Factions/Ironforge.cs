@@ -81,7 +81,6 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
         ITEM_I01A_DEMON_SOUL,
         ITEM_I00F_GLOVES_OF_AHN_QIRAJ,
         ITEM_I00Z_THUNDERFURY,
-        ITEM_I015_XAL_ATATH_BLADE_OF_THE_BLACK_EMPIRE,
         ITEM_I01T_FANDRAL_S_FLAMESCYTHE
       };
       AddQuest(new QuestExpedition(missingArtifacts[GetRandomInt(0, missingArtifacts.Length - 1)]));

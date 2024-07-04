@@ -110,11 +110,6 @@
       "Value": "Nerubian"
     },
     {
-      "Id": 1953458293,
-      "Type": 3,
-      "Value": "Q"
-    },
-    {
       "Id": 2037408373,
       "Value": 0
     },
@@ -132,6 +127,10 @@
       "Id": 1651864693,
       "Type": 3,
       "Value": "Mystical Hero, adept at disruption and ranged combat."
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
     }
   ]
 }
