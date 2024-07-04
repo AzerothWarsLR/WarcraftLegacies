@@ -134,6 +134,28 @@
       "Id": 1902473845,
       "Type": 3,
       "Value": "RZZL"
+    },
+    {
+      "Id": 1714512245,
+      "Value": 1
+    },
+    {
+      "Id": 1748066677,
+      "Value": 1
+    },
+    {
+      "Id": 1899061621,
+      "Value": 1
+    },
+    {
+      "Id": 1882284405,
+      "Type": 3,
+      "Value": "air,debris,enemies,ground,nonancient,structure,vulnerable"
+    },
+    {
+      "Id": 1999724917,
+      "Type": 3,
+      "Value": "msplash"
     }
   ]
 }
