@@ -25,6 +25,6 @@ namespace WarcraftLegacies.Source.Quests.Cthun
       "My singular gaze opens wide, pouring into the minds of all those unfortunate enough to inhabit Azeroth during my imminent reign.";
     
     /// <inheritdoc />
-    protected override string RewardDescription => $"I learn to cast {GetObjectName(Ultimate)}";
+    protected override string RewardDescription => $"C'thun learn to cast {GetObjectName(Ultimate)}";
   }
 }

@@ -23,7 +23,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "|cffff8c00Artifact|r|nIncreases the Hitpoints by 150, Agility by 5 and Intelligence of the Hero by 9 when carried. Can be used to cast Nether Explosions.|n|cffffcc00Lore|r|n|cffffdeadAn ancient blade from the time of the Black Empire itself. The Dagger has a mind of it\u0027s own and tries to corrupt whoever wields it."
+      "Value": "|cffff8c00Artifact|r|nIncreases the Hitpoints by 150, Agility by 5 and Intelligence of the Hero by 9 when carried. Can be used to cast Nether Explosions which calls down 6 Nether Explosions waves in a large area; each wave deals 45 damage to units in a small area.|n|cffffcc00Lore|r|n|cffffdeadAn ancient blade from the time of the Black Empire itself. The Dagger has a mind of it\u0027s own and tries to corrupt whoever wields it."
     }
   ]
 }

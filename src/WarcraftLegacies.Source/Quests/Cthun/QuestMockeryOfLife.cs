@@ -1,7 +1,4 @@
-﻿using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
-using MacroTools.QuestSystem;
+﻿using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.Cthun
 {

@@ -1,0 +1,15 @@
+{
+  "Left": -4512,
+  "Bottom": 1312,
+  "Right": -3360,
+  "Top": 2624,
+  "Name": "TheAbyss",
+  "CreationNumber": 135,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

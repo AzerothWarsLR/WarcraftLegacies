@@ -1,9 +1,6 @@
-﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+﻿using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Cthun

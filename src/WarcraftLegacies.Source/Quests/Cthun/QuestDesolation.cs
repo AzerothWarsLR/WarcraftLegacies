@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"I gain {SkillPoints} skill points";
+      $"C'thun gain {SkillPoints} skill points";
 
     /// <inheritdoc />
     public QuestDesolation(LegendaryHero cthun) : base("Desolation",
