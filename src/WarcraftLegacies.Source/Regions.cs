@@ -297,6 +297,7 @@ public static class Regions
 	public static Rectangle Terenas { get; set; } = new Rectangle(8096f, 7648f, 9984f, 9568f);
 	public static Rectangle Terrordale { get; set; } = new Rectangle(14656f, 10336f, 15968f, 10880f);
 	public static Rectangle The_Basin { get; set; } = new Rectangle(-8288f, 16256f, -4096f, 22336f);
+	public static Rectangle TheAbyss { get; set; } = new Rectangle(-4512f, 1312f, -3360f, 2624f);
 	public static Rectangle TheAthenaeum { get; set; } = new Rectangle(-17408f, -8768f, -16576f, -7968f);
 	public static Rectangle ThelUnlock { get; set; } = new Rectangle(14432f, -6752f, 15648f, -4768f);
 	public static Rectangle Theramore { get; set; } = new Rectangle(-8480f, -10304f, -6016f, -7776f);
@@ -352,6 +353,5 @@ public static class Regions
 	public static Rectangle ZulAman_trolls { get; set; } = new Rectangle(20288f, 11648f, 22848f, 17440f);
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
-	public static Rectangle TheAbyss { get; set; } = new Rectangle(-4512f, 1312f, -3360f, 2624f);
 
 }
