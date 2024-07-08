@@ -1,33 +1,28 @@
 {
-  "OldId": 1835429486,
-  "NewId": 1095126117,
+  "OldId": 1634954862,
+  "NewId": 1179403635,
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": 2
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(elemental farm)"
+      "Value": "(elemental Specialist)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "W"
+      "Value": "D"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
-    },
-    {
-      "Id": 1668510581,
-      "Type": 1,
-      "Value": 2
+      "Value": 1.2
     },
     {
       "Id": 1935832437,
@@ -37,22 +32,32 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Provides 8 food, which increases the maximum number of units that can be trained."
+      "Value": "Air production building."
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "upgrade,first"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\DarkIronHouse2.mdl"
+      "Value": "war3mapImported\\DarkIronLair2.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNAlAkirLair.blp"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Material Box"
+      "Value": "Magma Cavern Complex"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Material Box"
+      "Value": "Build Djinn Palace"
     }
   ]
 }
