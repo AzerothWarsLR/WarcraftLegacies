@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(Constants.UNIT_N0CG_CORE_HOUND_RAGNAROS, 12);
       yield return new(Constants.UNIT_N0CF_FIRE_WYRM_RAGNAROS, 2);
 
-      yield return new(Constants.UNIT_E020_ANCIENT_SHIPYARD_NAGA_SHIPYARD, Unlimited);
+      yield return new(Constants.UNIT_H07X_SHIPYARD_ELEMENTAL_SHIPYARD, Unlimited);
       yield return new(Constants.UNIT_ETRS_NIGHT_ELF_TRANSPORT_SHIP_DRUIDS_SENTINELS, Unlimited);
       yield return new(Constants.UNIT_H0AU_SCOUT_SHIP_NIGHT_ELVES, Unlimited);
       yield return new(Constants.UNIT_H0AV_FRIGATE_NIGHT_ELVES, Unlimited);
@@ -46,6 +46,9 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(Constants.UNIT_U02K_LORD_OF_THE_FIRELANDS_ELEMENTAL, 1);
       yield return new(Constants.UNIT_E023_GRAND_VIZIER_ELEMENTAL, 1);
       yield return new(Constants.UNIT_U01S_WINDLORD_ELEMENTAL, 1);
+      yield return new(Constants.UNIT_UELN_THE_TIDEHUNTER_ELEMENTAL, 1);
+
+      yield return new(Constants.UPGRADE_RELT_TRANSFIGURATION_SKYWALL, 1);
     }
   }
 }

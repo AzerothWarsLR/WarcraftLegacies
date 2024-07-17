@@ -12,7 +12,7 @@
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": 3
     },
     {
       "Id": 1718840929,
@@ -22,7 +22,7 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "W"
+      "Value": "R"
     },
     {
       "Id": 1835101793,
@@ -36,12 +36,12 @@
     },
     {
       "Id": 2020635233,
-      "Value": 1
+      "Value": 3
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "W"
+      "Value": "R"
     },
     {
       "Id": 1952805473,
@@ -51,7 +51,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Summons an air elemental to attack the hero\u0027s enemies. |nLasts 60 seconds.|r |n|n|cffffcc00Level 1|r - Summons 2 Air Elementals|n|cffffcc00Level 2|r - Summons 3 Air Elementals.|n|cffffcc00Level 3|r - Summons 4 Air  Elementals.|n|cffffcc00Level 4|r - Summons 5 Air  Elementals."
+      "Value": "Summons air elementals to attack the hero\u0027s enemies. |nLasts 60 seconds.|r |n|n|cffffcc00Level 1|r - Summons 2 Air Elementals|n|cffffcc00Level 2|r - Summons 3 Air Elementals|n|cffffcc00Level 3|r - Summons 4 Air Elementals"
     },
     {
       "Level": 1,

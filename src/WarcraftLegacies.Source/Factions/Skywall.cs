@@ -1,6 +1,11 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools.Extensions;
+using MacroTools.FactionSystem;
+using MacroTools.Powers;
+using MacroTools.ResearchSystems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
+using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -17,8 +22,20 @@ namespace WarcraftLegacies.Source.Factions
     /// <inheritdoc />
     public override void OnRegistered()
     {
+      RegisterResearches();
       RegisterObjectLimits();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    }
+
+    private void RegisterResearches()
+    {
+      ResearchManager.Register(new PowerResearch(Constants.UPGRADE_RELT_TRANSFIGURATION_SKYWALL, 100,
+        new Transfiguration(0.25f, new Point(-10396.5f, -20963.6f), "The Vortex Pinnacle", Regions.ElementalRealm)
+        {
+          IconName = "ItemForging",
+          Name = "Transfiguration",
+          EligibilityCondition = dyingUnit => dyingUnit.OwningPlayer().GetObjectLimit(dyingUnit.GetTypeId()) != 0
+        }));
     }
 
     private void RegisterObjectLimits()
