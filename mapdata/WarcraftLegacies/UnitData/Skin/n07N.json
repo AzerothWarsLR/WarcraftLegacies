@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTN_Tolvir_RoyalTemple.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTN_Tolvir_Barracks.blp"
     },
     {
       "Id": 2037408373,
@@ -22,7 +22,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\TolvirZiggurat.mdl"
+      "Value": "war3mapImported\\DarkIronBarracks2.mdl"
     },
     {
       "Id": 1835101813,
@@ -62,7 +62,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.55
+      "Value": 0.8
     }
   ]
 }

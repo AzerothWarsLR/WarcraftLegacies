@@ -41,7 +41,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\DarkIronBarracks2.mdl"
+      "Value": "war3mapImported\\DarkIronWorkshop2.mdl"
     },
     {
       "Id": 1768841589,
@@ -51,7 +51,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTN_Tolvir_Barracks.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAlAkirWorkshop.blp"
     },
     {
       "Id": 1835101813,
