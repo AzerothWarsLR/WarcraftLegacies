@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      ResearchId = UPGRADE_RBMG_QUEST_COMPLETED_THE_MAW_OF_GOR_MA;
+      ResearchId = UPGRADE_RBMG_QUEST_COMPLETED_MAW_OF_GOR_MA;
 
     }
 
