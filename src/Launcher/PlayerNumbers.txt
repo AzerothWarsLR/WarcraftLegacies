@@ -6,7 +6,7 @@
 //  5	Empty
 //  6	Fel Horde
 //  7	Dalaran/Gilneas
-//  8	Empty
+//  8	Skywall
 //  9	Lordaeron
 //  10	Empty
 //  11	Druids
@@ -19,7 +19,7 @@
 //  18	Sentinels
 //  19  Emprt
 //  20  Empty
-//  21  Skywall
+//  21  Empty
 //  22  Kultiras
 //  23  Legion
 //  24  Neutral Hostile

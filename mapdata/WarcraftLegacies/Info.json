@@ -62,8 +62,8 @@
         "X": -8512,
         "Y": -2880
       },
-      "AllyLowPriorityFlags": 6553602,
-      "AllyHighPriorityFlags": 331776,
+      "AllyLowPriorityFlags": 4456450,
+      "AllyHighPriorityFlags": 332032,
       "EnemyLowPriorityFlags": 262144,
       "EnemyHighPriorityFlags": 262144
     },
@@ -133,7 +133,7 @@
         "Y": -31040
       },
       "AllyLowPriorityFlags": 262152,
-      "AllyHighPriorityFlags": 6291592,
+      "AllyHighPriorityFlags": 4194440,
       "EnemyLowPriorityFlags": 262144,
       "EnemyHighPriorityFlags": 262144
     },
@@ -149,6 +149,19 @@
       },
       "AllyLowPriorityFlags": 262144,
       "AllyHighPriorityFlags": 262664
+    },
+    {
+      "Id": 8,
+      "Controller": 1,
+      "Race": 4,
+      "Flags": 1,
+      "Name": "Skywall",
+      "StartPosition": {
+        "X": -12416,
+        "Y": -19712
+      },
+      "AllyLowPriorityFlags": 1,
+      "AllyHighPriorityFlags": 32768
     },
     {
       "Id": 9,
@@ -172,7 +185,7 @@
         "X": -9344,
         "Y": 10560
       },
-      "AllyLowPriorityFlags": 331784,
+      "AllyLowPriorityFlags": 332040,
       "AllyHighPriorityFlags": 76,
       "EnemyLowPriorityFlags": 262144,
       "EnemyHighPriorityFlags": 262144
@@ -187,7 +200,6 @@
         "X": -23872,
         "Y": -8960
       },
-      "AllyLowPriorityFlags": 2097152,
       "AllyHighPriorityFlags": 32768
     },
     {
@@ -201,7 +213,7 @@
         "Y": 6016
       },
       "AllyLowPriorityFlags": 4194816,
-      "AllyHighPriorityFlags": 333825
+      "AllyHighPriorityFlags": 334081
     },
     {
       "Id": 16,
@@ -212,8 +224,7 @@
       "StartPosition": {
         "X": -23232,
         "Y": -19584
-      },
-      "AllyHighPriorityFlags": 2097152
+      }
     },
     {
       "Id": 18,
@@ -229,19 +240,6 @@
       "AllyHighPriorityFlags": 262164,
       "EnemyLowPriorityFlags": 4194448,
       "EnemyHighPriorityFlags": 12582912
-    },
-    {
-      "Id": 21,
-      "Controller": 1,
-      "Race": 4,
-      "Flags": 1,
-      "Name": "Skywall",
-      "StartPosition": {
-        "X": -12416,
-        "Y": -19712
-      },
-      "AllyLowPriorityFlags": 4160,
-      "AllyHighPriorityFlags": 65536
     },
     {
       "Id": 22,
@@ -6532,10 +6530,6 @@
     },
     {
       "Players": 16777215,
-      "Id": 1462775893
-    },
-    {
-      "Players": 16777215,
       "Id": 1818978376
     },
     {
@@ -6852,63 +6846,7 @@
     },
     {
       "Players": 16777215,
-      "Id": 1513566312
-    },
-    {
-      "Players": 16777215,
-      "Id": 943206504
-    },
-    {
-      "Players": 16777215,
-      "Id": 808988776
-    },
-    {
-      "Players": 16777215,
-      "Id": 825765992
-    },
-    {
-      "Players": 16777215,
-      "Id": 842543208
-    },
-    {
-      "Players": 16777215,
-      "Id": 926429288
-    },
-    {
-      "Players": 16777215,
-      "Id": 892874856
-    },
-    {
-      "Players": 16777215,
-      "Id": 859320424
-    },
-    {
-      "Players": 16777215,
-      "Id": 876097640
-    },
-    {
-      "Players": 16777215,
-      "Id": 1245196392
-    },
-    {
-      "Players": 16777215,
       "Id": 1312239726
-    },
-    {
-      "Players": 16777215,
-      "Id": 1295528040
-    },
-    {
-      "Players": 16777215,
-      "Id": 909717608
-    },
-    {
-      "Players": 16777215,
-      "Id": 892940392
-    },
-    {
-      "Players": 16777215,
-      "Id": 926494824
     },
     {
       "Players": 16777215,
@@ -7197,6 +7135,66 @@
     {
       "Players": 14986751,
       "Id": 1446064229
+    },
+    {
+      "Players": 16777215,
+      "Id": 1462775893
+    },
+    {
+      "Players": 16777215,
+      "Id": 1513566312
+    },
+    {
+      "Players": 16777215,
+      "Id": 943206504
+    },
+    {
+      "Players": 16777215,
+      "Id": 808988776
+    },
+    {
+      "Players": 16777215,
+      "Id": 825765992
+    },
+    {
+      "Players": 16777215,
+      "Id": 842543208
+    },
+    {
+      "Players": 16777215,
+      "Id": 926429288
+    },
+    {
+      "Players": 16777215,
+      "Id": 892874856
+    },
+    {
+      "Players": 16777215,
+      "Id": 859320424
+    },
+    {
+      "Players": 16777215,
+      "Id": 876097640
+    },
+    {
+      "Players": 16777215,
+      "Id": 1245196392
+    },
+    {
+      "Players": 16777215,
+      "Id": 1295528040
+    },
+    {
+      "Players": 16777215,
+      "Id": 909717608
+    },
+    {
+      "Players": 16777215,
+      "Id": 892940392
+    },
+    {
+      "Players": 16777215,
+      "Id": 926494824
     },
     {
       "Players": 16777215,

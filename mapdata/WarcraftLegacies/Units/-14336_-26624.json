@@ -1,9 +1,8 @@
 [
   {
     "Flags": 2,
-    "OwnerId": 21,
+    "OwnerId": 8,
     "HP": -1,
-    "MP": -1,
     "TargetAcquisition": -1,
     "HeroLevel": 1,
     "InventoryData": [],
@@ -28,9 +27,8 @@
   },
   {
     "Flags": 2,
-    "OwnerId": 21,
+    "OwnerId": 8,
     "HP": -1,
-    "MP": -1,
     "TargetAcquisition": -1,
     "HeroLevel": 1,
     "InventoryData": [],
@@ -55,9 +53,8 @@
   },
   {
     "Flags": 2,
-    "OwnerId": 21,
+    "OwnerId": 8,
     "HP": -1,
-    "MP": -1,
     "TargetAcquisition": -1,
     "HeroLevel": 1,
     "InventoryData": [],

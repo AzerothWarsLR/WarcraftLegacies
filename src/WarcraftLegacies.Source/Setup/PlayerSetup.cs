@@ -28,13 +28,13 @@ namespace WarcraftLegacies.Source.Setup
       SetupPlayer(Player(4), new Ironforge(_preplacedUnitSystem, _allLegendSetup));
       SetupPlayer(Player(6), new FelHorde(_preplacedUnitSystem, _allLegendSetup));
       Player(7).SetTeam(TeamSetup.NorthAlliance);
+      SetupPlayer(Player(8), new Skywall());
       SetupPlayer(Player(9), new Lordaeron(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
       SetupPlayer(Player(11), new Druids(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
       SetupPlayer(Player(12), new BlackEmpire(_preplacedUnitSystem, _allLegendSetup));
       SetupPlayer(Player(16), new Ahnqiraj(_allLegendSetup));
       SetupPlayer(Player(18), new Sentinels(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
       Player(15).SetTeam(TeamSetup.Outland);
-      SetupPlayer(Player(21), new Skywall());
       SetupPlayer(Player(22), new Kultiras(_preplacedUnitSystem, _allLegendSetup));
       SetupPlayer(Player(23), new Legion(_preplacedUnitSystem, _allLegendSetup));
     }
