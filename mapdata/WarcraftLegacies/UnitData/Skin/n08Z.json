@@ -25,11 +25,6 @@
       "Value": "Initiate,Adept,Master"
     },
     {
-      "Id": 1953850229,
-      "Type": 3,
-      "Value": "- Magic Missile,- Magic Missile|n- Devour Magic,- Magic Missile|n- Devour Magic|n - Arcane Barrage"
-    },
-    {
       "Id": 1718840949,
       "Type": 3,
       "Value": "(elemental)"
@@ -62,7 +57,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Dark Arcanist from Ny\u0027alotha."
+      "Value": "Casters from the four winds."
     },
     {
       "Id": 1835101813,

@@ -53,6 +53,28 @@
       "Id": 1831952757,
       "Type": 3,
       "Value": "Abilities\\Weapons\\BallistaMissile\\BallistaMissile.mdl"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 150
+    },
+    {
+      "Id": 1735156597,
+      "Value": 150
+    },
+    {
+      "Id": 1651270517,
+      "Value": 150
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "ObsidianStatue"
     }
   ]
 }
