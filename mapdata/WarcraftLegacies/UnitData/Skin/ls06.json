@@ -18,12 +18,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Forgotten one"
+      "Value": "Train Efreet"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Evil Abomination of the Old Gods."
+      "Value": "Offensive Spellcaster."
     },
     {
       "Id": 1835101813,
@@ -43,17 +43,17 @@
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4
+      "Value": 2
     },
     {
       "Id": 1684960117,
       "Type": 3,
-      "Value": "KotoBeast"
+      "Value": "Shade"
     },
     {
       "Id": 1831952757,
       "Type": 3,
-      "Value": ""
+      "Value": "Abilities\\Weapons\\SorceressMissile\\SorceressMissile.mdl"
     },
     {
       "Id": 1633907573,

@@ -19,7 +19,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Causes the Faerie Dragon to channel negative magical energies that damage nearby enemies when they cast spells. Also increases the Faerie Dragon\u0027s armor by 20. |n|nLasts 15 seconds.|nDeals 0.65 damage per point of mana.|n50 second cooldown."
+      "Value": "Causes the caster to channel negative magical energies that damage nearby enemies when they cast spells. Also increases the caster\u0027s armor by 20. |n|nLasts 15 seconds.|nDeals 0.65 damage per point of mana.|n50 second cooldown."
     },
     {
       "Id": 1802007905,
@@ -49,12 +49,6 @@
       "Id": 829453409,
       "Type": 3,
       "Value": "Mana Flare - [|cffffcc00Level 2|r]"
-    },
-    {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Mana Flare - [|cffffcc00Level 1|r]"
     }
   ]
 }

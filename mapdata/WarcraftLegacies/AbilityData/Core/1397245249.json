@@ -1,17 +1,10 @@
 {
-  "OldId": 1700876097,
-  "NewId": 1263808577,
+  "OldId": 1936215617,
+  "NewId": 1397245249,
   "Unk": [
     0
   ],
   "Modifications": [
-    {
-      "Level": 1,
-      "Pointer": 2,
-      "Id": 845504847,
-      "Type": 2,
-      "Value": 0.15
-    },
     {
       "Id": 1919248481,
       "Value": 0
@@ -28,7 +21,7 @@
     {
       "Id": 1902473825,
       "Type": 3,
-      "Value": "RELG"
+      "Value": "RELB"
     }
   ]
 }

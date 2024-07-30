@@ -1,6 +1,6 @@
 {
   "OldId": 1650681170,
-  "NewId": 1145849170,
+  "NewId": 1112294738,
   "Unk": [
     0
   ],
@@ -9,11 +9,7 @@
       "Level": 1,
       "Id": 829579623,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNDragonFire2.blp"
-    },
-    {
-      "Id": 2020631143,
-      "Value": 1
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNElementalObliteration.blp"
     },
     {
       "Level": 1,
@@ -31,19 +27,23 @@
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "Magma Fire"
+      "Value": "Bursting Miracles"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "Research Magma Fire"
+      "Value": "Research Bursting Miracles"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Improves the Fire Wyrms by increasing their attack range by 200 and change their damage type to Chaos."
+      "Value": "Grants the Djinn the Healing Spray ability and the Efreet the Firestorm ability."
+    },
+    {
+      "Id": 2020631143,
+      "Value": 1
     }
   ]
 }
