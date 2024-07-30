@@ -15,9 +15,9 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var purgeAttack = new SpellOnAttack(UNIT_O01I_ANIMATED_ARMOR_ELEMENTAL,
         ABILITY_AELP_SHOCKING_BLADES_ANIMATED_ARMOR)
       {
-        DummyAbilityId = ABILITY_APG2_PURGE_TEAL_DARK_SHAMAN_PINK_SHAMAN,
+        DummyAbilityId = ABILITY_AEPU_PURGE_SHOCKING_BLADE,
         DummyOrderId = OrderId("purge"),
-        ProcChance = 0.25f
+        ProcChance = 0.20f
       };
       PassiveAbilityManager.Register(purgeAttack);
     }

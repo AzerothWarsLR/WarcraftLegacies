@@ -16,11 +16,6 @@
       "Value": ""
     },
     {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Serrated Bite"
-    },
-    {
       "Id": 1718840929,
       "Type": 3,
       "Value": " (Core Hound, Yellow)"
@@ -44,6 +39,11 @@
       "Id": 1953526625,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Serrated Bite"
     }
   ]
 }

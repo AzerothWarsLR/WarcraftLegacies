@@ -30,7 +30,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "When this unit attacks, it has a 25% chance to cast purge on the target, dispelling and slowing their attack and movement speed."
+      "Value": "When this unit attacks, it has a 20% chance to cast purge on the target, dispelling and slowing their movement speed. Summoned Units will take 200 damage."
     },
     {
       "Level": 2,

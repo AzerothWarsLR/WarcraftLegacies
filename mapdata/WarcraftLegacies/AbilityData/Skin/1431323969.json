@@ -1,0 +1,25 @@
+{
+  "OldId": 845639745,
+  "NewId": 1431323969,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Shocking Blade)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Removes all buffs from a target unit. Enemy units are also immobilized for \u003CA07Q,DataD1\u003E seconds and their movement speed is reduced by a factor of \u003CA07Q,DataA1\u003E; they will slowly regain their movement speed over \u003CA07Q,Dur1\u003E seconds. |n|cffffcc00Deals \u003CA07Q,DataC1\u003E damage to summoned units.|r"
+    }
+  ]
+}

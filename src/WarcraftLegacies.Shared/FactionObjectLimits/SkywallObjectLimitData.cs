@@ -54,6 +54,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(Constants.UPGRADE_RELL_LURKING_TEMPEST_MASTER_TRAINING_SKYWALL, Unlimited);
       yield return new(Constants.UPGRADE_RELW_WHIPPING_WIND_MASTER_TRAINING_SKYWALL, Unlimited);
       yield return new(Constants.UPGRADE_RELO_TIDAL_LORD_MASTER_TRAINING_SKYWALL, Unlimited);
+      yield return new(Constants.UPGRADE_RELD_MAGMA_FIRE_ELEMENTAL, Unlimited);
     }
   }
 }
