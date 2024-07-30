@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Factions
   public sealed class Skywall : Faction
   {
     /// <inheritdoc />
-    public Skywall() : base("Elemental Lords", PLAYER_COLOR_SNOW, "|cffffffff",
+    public Skywall() : base("Elemental Lords", PLAYER_COLOR_LIGHT_GRAY, "|cffffffff",
       @"ReplaceableTextures\CommandButtons\BTNFrostRevenant2.blp")
     {
       ControlPointDefenderUnitTypeId = Constants.UNIT_U02T_CONTROL_POINT_DEFENDER_NAZJATAR;
