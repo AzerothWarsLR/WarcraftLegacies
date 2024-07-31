@@ -1,4 +1,4 @@
-using static Constants;
+﻿using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
@@ -18,8 +18,6 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(UNIT_U01H_ANCIENT_CATACOMBS_C_THUN_SPECIALIST, Unlimited);
       yield return new(UNIT_U01I_CHAMBER_OF_WONDERS_C_THUN_SHOP, Unlimited);
       yield return new(UNIT_U01F_ALTAR_OF_THE_OLD_ONES_C_THUN_ALTAR, Unlimited);
-      yield return new(UNIT_STZ5_LIGHTHOUSE_C_THUN_EMPTY, Unlimited);
-      yield return new(UNIT_TP73_TUNNEL_CTHUN, Unlimited);
       yield return new(UNIT_U019_WORKER_C_THUN_WORKER, Unlimited);
       yield return new(UNIT_O000_ROYALTY_C_THUN_ELITES, 6);
       yield return new(UNIT_N06I_SOLDIER_C_THUN_SILITHID_WARRIOR, Unlimited);
@@ -31,15 +29,6 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(UNIT_O02N_ELATE_CTHUN, 24);
       yield return new(UNIT_H01N_VILE_CORRUPTER_C_THUN, 4);
       yield return new(UNIT_SL2O_OBSIDIAN_ERADICATOR_CTHUN, 12);
-      yield return new(UNIT_USHP_HAUNTED_HARBOR_SCOURGE_SHIPYARD, Unlimited);
-      yield return new(UNIT_UBOT_HAUNTED_TRANSPORT_SHIP_SCOURGE_LEGION, Unlimited);
-      yield return new(UNIT_H0AT_SCOUT_SHIP_UNDEAD, Unlimited);
-      yield return new(UNIT_H0AW_FRIGATE_UNDEAD, Unlimited);
-      yield return new(UNIT_H0AM_FIRESHIP_UNDEAD, Unlimited);
-      yield return new(UNIT_H0AZ_GALLEY_UNDEAD, Unlimited);
-      yield return new(UNIT_H0AQ_BOARDING_VESSEL_UNDEAD, Unlimited);
-      yield return new(UNIT_H0BB_JUGGERNAUT_UNDEAD, Unlimited);
-      yield return new(UNIT_H0B9_BOMBARD_UNDEAD, 6);
       yield return new(UNIT_U02S_ANCIENT_SAND_WORM, 1);
       yield return new(UNIT_E005_THE_PROPHET, 1);
       yield return new(UNIT_U00Z_OBSIDIAN_DESTROYER, 1);
