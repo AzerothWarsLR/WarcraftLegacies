@@ -16,7 +16,7 @@ namespace MacroTools.Powers
     private readonly float _chance;
     private readonly Point _returnPoint;
     private readonly Rectangle _noReturnRect;
-    public int AnimatedArmorID { get; init; } = FourCC("o01I");
+    public required int AnimatedArmorID { get; init; }
 
     /// <summary>
     /// The condition that units need to pass to be eligible for rematerialization.
