@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Factions
         new Windforging(0.25f, new Point(-10396.5f, -20963.6f), "the Vortex Pinnacle", Regions.ElementalRealm)
         {
           IconName = "ItemForging",
-          Name = "Transfiguration",
+          Name = "Windforging",
           EligibilityCondition = dyingUnit => dyingUnit.OwningPlayer().GetObjectLimit(dyingUnit.GetTypeId()) != 0,
           AnimatedArmorID = Constants.UNIT_O01I_ANIMATED_ARMOR_ELEMENTAL
         }));
