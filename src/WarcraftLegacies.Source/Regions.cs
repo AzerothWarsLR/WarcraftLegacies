@@ -111,7 +111,7 @@ public static class Regions
 	public static Rectangle FeathermoonUnlock { get; set; } = new Rectangle(-21376f, -10272f, -19776f, -7840f);
 	public static Rectangle Fenris_ships { get; set; } = new Rectangle(5760f, 4960f, 13024f, 8128f);
 	public static Rectangle FeralasAmbient1 { get; set; } = new Rectangle(-17408f, -11552f, -14336f, -7904f);
-	public static Rectangle FeralasAmbient2 { get; set; } = new Rectangle(-22976f, -14464f, -17248f, -5536f);
+	public static Rectangle FeralasAmbient2 { get; set; } = new Rectangle(-22976f, -11744f, -17376f, -5536f);
 	public static Rectangle FeralasEmeraldPortal { get; set; } = new Rectangle(-18144f, -6464f, -17696f, -6208f);
 	public static Rectangle Fjord { get; set; } = new Rectangle(1536f, 13408f, 8192f, 20320f);
 	public static Rectangle FountainOfHealthAlterac { get; set; } = new Rectangle(10656f, 5536f, 11104f, 6016f);
@@ -255,7 +255,7 @@ public static class Regions
 	public static Rectangle ShipInside { get; set; } = new Rectangle(8928f, -31168f, 9472f, -30720f);
 	public static Rectangle ShipTarget { get; set; } = new Rectangle(4608f, -10528f, 4640f, -10496f);
 	public static Rectangle ShrineBaseUnlock { get; set; } = new Rectangle(-13184f, 7488f, -9632f, 9568f);
-	public static Rectangle SilithusAmbient { get; set; } = new Rectangle(-20768f, -19744f, -15712f, -11744f);
+	public static Rectangle SilithusAmbient { get; set; } = new Rectangle(-24832f, -20320f, -15712f, -11744f);
 	public static Rectangle SilverpineForest { get; set; } = new Rectangle(6880f, 3936f, 7552f, 4544f);
 	public static Rectangle SkullRetrieval { get; set; } = new Rectangle(8864f, 4672f, 9184f, 4928f);
 	public static Rectangle Solliden_Farmstead { get; set; } = new Rectangle(6400f, 8992f, 7808f, 10592f);
