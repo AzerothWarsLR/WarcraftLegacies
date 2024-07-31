@@ -9,7 +9,7 @@ using static War3Api.Common;
 namespace MacroTools.Powers
 {
   /// <summary>
-  /// Causes dying units to Transfiguring at a specific location.
+  /// Causes dying units to spawn a new unit at a predefined location.
   /// </summary>
   public sealed class Transfiguration : Power
   {
