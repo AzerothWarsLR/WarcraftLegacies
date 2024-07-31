@@ -11,7 +11,7 @@ namespace MacroTools.Powers
   /// <summary>
   /// Causes dying units to spawn a new unit at a predefined location.
   /// </summary>
-  public sealed class Transfiguration : Power
+  public sealed class Windforging : Power
   {
     private readonly float _chance;
     private readonly Point _returnPoint;
@@ -24,18 +24,18 @@ namespace MacroTools.Powers
     public Func<unit, bool> EligibilityCondition { get; init; } = _ => true;
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="Transfiguring"/> class.
+    /// Initializes a new instance of the <see cref="Windforging"/> class.
     /// </summary>
-    /// <param name="chance">The chance that dying units have to rematerialize.</param>
-    /// <param name="returnPoint">Where rematerialized units appear.</param>
-    /// <param name="returnPointName">A user-friendly name for where rematerialized units appear.</param>
-    /// <param name="noReturnRect">Units that die within this area are not rematerialized.</param>
-    public Transfiguration(float chance, Point returnPoint, string returnPointName, Rectangle noReturnRect)
+    /// <param name="chance">The chance that dying units have to respawn.</param>
+    /// <param name="returnPoint">Where the spawned units appear.</param>
+    /// <param name="returnPointName">A user-friendly name for where the spawned units appear.</param>
+    /// <param name="noReturnRect">Units that die within this area are not considered for the power.</param>
+    public Windforging(float chance, Point returnPoint, string returnPointName, Rectangle noReturnRect)
     {
       _chance = chance;
       _returnPoint = returnPoint;
       _noReturnRect = noReturnRect;
-      Description = $"Your non-Resistant units have a {chance*100}% chance to be transfigured into as an animated armor in {returnPointName} upon death.";
+      Description = $"Your non-Resistant units have a {chance*100}% chance to be transfigured into as a {GetObjectName(AnimatedArmorID)} in {returnPointName} upon death.";
     }
     
     /// <inheritdoc />
