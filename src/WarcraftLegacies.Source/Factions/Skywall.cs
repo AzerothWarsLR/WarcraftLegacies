@@ -1,7 +1,11 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.PassiveAbilities;
+using MacroTools.PassiveAbilitySystem;
 using MacroTools.Powers;
 using MacroTools.ResearchSystems;
+using MacroTools.Spells;
+using MacroTools.SpellSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
@@ -24,6 +28,7 @@ namespace WarcraftLegacies.Source.Factions
     {
       RegisterResearches();
       RegisterObjectLimits();
+      RegisterSpells();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
@@ -34,7 +39,6 @@ namespace WarcraftLegacies.Source.Factions
         {
           IconName = "ItemForging",
           Name = "Windforging",
-          EligibilityCondition = dyingUnit => dyingUnit.OwningPlayer().GetObjectLimit(dyingUnit.GetTypeId()) != 0,
           AnimatedArmorID = Constants.UNIT_O01I_ANIMATED_ARMOR_ELEMENTAL
         }));
     }
@@ -43,6 +47,31 @@ namespace WarcraftLegacies.Source.Factions
     {
       foreach (var (objectTypeId, objectLimit) in SkywallObjectLimitData.GetAllObjectLimits())
         ModObjectLimit(FourCC(objectTypeId), objectLimit);
+    }
+
+    private void RegisterSpells()
+    {
+
+      var purgeAttack = new SpellOnAttack(UNIT_O01I_ANIMATED_ARMOR_ELEMENTAL,
+        ABILITY_AELP_SHOCKING_BLADES_ANIMATED_ARMOR)
+      {
+        DummyAbilityId = ABILITY_AEPU_PURGE_SHOCKING_BLADE,
+        DummyOrderId = OrderId("purge"),
+        ProcChance = 0.20f
+      };
+      PassiveAbilityManager.Register(purgeAttack);
+
+      var stormSurge = new Stomp(ABILITY_AESS_STORM_SURGE_ARMORED_MISTRAL)
+      {
+        Radius = 300,
+        DamageBase = 60,
+        DurationBase = 3,
+        StunAbilityId = ABILITY_AEPU_PURGE_SHOCKING_BLADE,
+        StunOrderId = OrderId("purge"),
+        SpecialEffect = @"war3mapImported\Cyclon Explosion.mdx"
+      };
+      SpellSystem.Register(stormSurge);
+
     }
   }
 }

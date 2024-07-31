@@ -113,7 +113,6 @@ namespace WarcraftLegacies.Source.Setup
       TrollSpellSetup.Setup();
       GilneasSpellSetup.Setup();
       BlackEmpireSpellSetup.Setup();
-      ElementalSpellSetup.Setup();
       SharedSpellSetup.Setup();
     }
   }
