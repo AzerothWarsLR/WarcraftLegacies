@@ -35,7 +35,7 @@ namespace MacroTools.Powers
       _chance = chance;
       _returnPoint = returnPoint;
       _noReturnRect = noReturnRect;
-      Description = $"Your non-Resistant units have a {chance*100}% chance to transfigure as an animated armor in {returnPointName} upon death.";
+      Description = $"Your non-Resistant units have a {chance*100}% chance to be transfigured into as an animated armor in {returnPointName} upon death.";
     }
     
     /// <inheritdoc />
