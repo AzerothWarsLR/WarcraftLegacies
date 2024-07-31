@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Factions
     private void RegisterResearches()
     {
       ResearchManager.Register(new PowerResearch(Constants.UPGRADE_RELT_TRANSFIGURATION_SKYWALL, 100,
-        new Transfiguration(0.25f, new Point(-10396.5f, -20963.6f), "The Vortex Pinnacle", Regions.ElementalRealm)
+        new Transfiguration(0.25f, new Point(-10396.5f, -20963.6f), "the Vortex Pinnacle", Regions.ElementalRealm)
         {
           IconName = "ItemForging",
           Name = "Transfiguration",
