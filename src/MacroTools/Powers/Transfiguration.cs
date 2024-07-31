@@ -19,7 +19,7 @@ namespace MacroTools.Powers
     public required int AnimatedArmorID { get; init; }
 
     /// <summary>
-    /// The condition that units need to pass to be eligible for rematerialization.
+    /// The condition that units need to pass to be eligible.
     /// </summary>
     public Func<unit, bool> EligibilityCondition { get; init; } = _ => true;
 
