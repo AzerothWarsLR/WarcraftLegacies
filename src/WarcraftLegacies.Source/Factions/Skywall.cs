@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Factions
     public Skywall() : base("Elemental Lords", PLAYER_COLOR_LIGHT_GRAY, "|cffffffff",
       @"ReplaceableTextures\CommandButtons\BTNFrostRevenant2.blp")
     {
-      ControlPointDefenderUnitTypeId = Constants.UNIT_U02T_CONTROL_POINT_DEFENDER_NAZJATAR;
+      ControlPointDefenderUnitTypeId = Constants.UNIT_NECP_CONTROL_POINT_DEFENDER_SKYWALL_TOWER;
       TraditionalTeam = TeamSetup.OldGods;
     }
 
