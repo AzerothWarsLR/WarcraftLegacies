@@ -105,8 +105,8 @@ namespace WarcraftLegacies.Source.Factions
         HatchedUnitTypeId = UNIT_N06I_SOLDIER_C_THUN_SILITHID_WARRIOR,
         MaturationDuration = new LeveledAbilityField<float>
         {
-          Base = 195f,
-          PerLevel = -75f
+          Base = 315f,
+          PerLevel = -135f
         }
       });
 

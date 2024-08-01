@@ -1,7 +1,7 @@
 [
   {
     "State": 2,
-    "Life": 100,
+    "Life": 255,
     "TypeId": 859254852,
     "Position": {
       "X": 18432,
@@ -42,7 +42,7 @@
   },
   {
     "State": 2,
-    "Life": 100,
+    "Life": 255,
     "TypeId": 859254852,
     "Position": {
       "X": 18624,
@@ -62,7 +62,7 @@
   },
   {
     "State": 2,
-    "Life": 100,
+    "Life": 255,
     "TypeId": 859254852,
     "Position": {
       "X": 18560,
