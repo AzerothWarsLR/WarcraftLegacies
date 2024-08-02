@@ -34,11 +34,10 @@ namespace WarcraftLegacies.Source.Factions
     private void RegisterResearches()
     {
       ResearchManager.Register(new PowerResearch(Constants.UPGRADE_RELT_WINDFORGING_SKYWALL, 100,
-        new Windforging(0.25f, new Point(-10396.5f, -20963.6f), "the Vortex Pinnacle", Regions.ElementalRealm)
+        new Windforging(Constants.UNIT_O01I_ANIMATED_ARMOR_ELEMENTAL, 0.25f, new Point( - 10396.5f, -20963.6f), "the Vortex Pinnacle", Regions.ElementalRealm)
         {
           IconName = "ItemForging",
           Name = "Windforging",
-          AnimatedArmorID = Constants.UNIT_O01I_ANIMATED_ARMOR_ELEMENTAL
         }));
     }
 

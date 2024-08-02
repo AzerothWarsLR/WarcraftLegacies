@@ -16,7 +16,7 @@ namespace MacroTools.Powers
     private readonly float _chance;
     private readonly Point _returnPoint;
     private readonly Rectangle _noReturnRect;
-    public required int AnimatedArmorID { get; init; }
+    private readonly int _unitTypeId;
 
     /// <summary>
     /// The condition that units need to pass to be eligible.
@@ -30,14 +30,16 @@ namespace MacroTools.Powers
     /// <param name="returnPoint">Where the spawned units appear.</param>
     /// <param name="returnPointName">A user-friendly name for where the spawned units appear.</param>
     /// <param name="noReturnRect">Units that die within this area are not considered for the power.</param>
-    public Windforging(float chance, Point returnPoint, string returnPointName, Rectangle noReturnRect)
+    /// <param name="unitTypeId">What sort of unit is spawned.</param>
+    public Windforging(int unitTypeId, float chance, Point returnPoint, string returnPointName, Rectangle noReturnRect)
     {
+      _unitTypeId = unitTypeId;
       _chance = chance;
       _returnPoint = returnPoint;
       _noReturnRect = noReturnRect;
-      Description = $"Your non-Resistant units have a {chance*100}% chance to be transfigured into as a {GetObjectName(AnimatedArmorID)} in {returnPointName} upon death.";
+      Description = $"Your non-Resistant units have a {chance * 100}% chance to be transfigured into as a {GetObjectName(_unitTypeId)} in {returnPointName} upon death.";
     }
-    
+
     /// <inheritdoc />
     public override void OnAdd(player whichPlayer) => 
       PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerUnitDies, OnUnitDeath, GetPlayerId(whichPlayer));
@@ -61,7 +63,7 @@ namespace MacroTools.Powers
         return;
       AddSpecialEffect(@"Abilities\Spells\Items\AIil\AIilTarget.mdl", _returnPoint.X, _returnPoint.Y)
         .SetLifespan();
-      CreateUnit(dyingUnit.OwningPlayer(), AnimatedArmorID, _returnPoint.X, _returnPoint.Y, 0);
+      CreateUnit(dyingUnit.OwningPlayer(), _unitTypeId, _returnPoint.X, _returnPoint.Y, 0);
     }
   }
 }
