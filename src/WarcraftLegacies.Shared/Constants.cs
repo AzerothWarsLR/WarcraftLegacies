@@ -2406,6 +2406,7 @@ public static class Constants
 	public const int BUFF_ZB09_APOCALYPSE = 1514287161;
 	public const int BUFF_ZB11_GROUND_SHACKLES = 1514287409;
 	public const int BUFF_ZBMA_MATURING_INCUBATION = 1514294593;
+	public const int BUFF_BUFA = 1112893025;
 	public const int ITEM_AMRC_AMULET_OF_RECALL = 1634562659;
 	public const int ITEM_ARSH_SHROUD_OF_NOZDORMU = 1634890600;
 	public const int ITEM_AZHR_HEART_OF_ASZUNE = 1635412082;
