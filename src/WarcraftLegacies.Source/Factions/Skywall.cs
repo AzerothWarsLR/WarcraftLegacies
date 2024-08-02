@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Factions
   public sealed class Skywall : Faction
   {
     /// <inheritdoc />
-    public Skywall() : base("Elemental Lords", PLAYER_COLOR_LIGHT_GRAY, "|cffffffff",
+    public Skywall() : base("Skywall", PLAYER_COLOR_LIGHT_GRAY, "|cffffffff",
       @"ReplaceableTextures\CommandButtons\BTNFrostRevenant2.blp")
     {
       ControlPointDefenderUnitTypeId = Constants.UNIT_NECP_CONTROL_POINT_DEFENDER_SKYWALL_TOWER;
@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Factions
 
     private void RegisterResearches()
     {
-      ResearchManager.Register(new PowerResearch(Constants.UPGRADE_RELT_TRANSFIGURATION_SKYWALL, 100,
+      ResearchManager.Register(new PowerResearch(Constants.UPGRADE_RELT_WINDFORGING_SKYWALL, 100,
         new Windforging(0.25f, new Point(-10396.5f, -20963.6f), "the Vortex Pinnacle", Regions.ElementalRealm)
         {
           IconName = "ItemForging",

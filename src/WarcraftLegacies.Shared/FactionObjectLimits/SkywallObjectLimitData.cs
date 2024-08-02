@@ -48,7 +48,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(Constants.UNIT_U01S_WINDLORD_ELEMENTAL, 1);
       yield return new(Constants.UNIT_UELN_THE_TIDEHUNTER_ELEMENTAL, 1);
 
-      yield return new(Constants.UPGRADE_RELT_TRANSFIGURATION_SKYWALL, Unlimited);
+      yield return new(Constants.UPGRADE_RELT_WINDFORGING_SKYWALL, Unlimited);
       yield return new(Constants.UPGRADE_RELP_SHOCKING_BLADES_SKYWALL, Unlimited);
       yield return new(Constants.UPGRADE_RELA_INFUSED_STEEL_SKYWALL, Unlimited);
       yield return new(Constants.UPGRADE_RELL_LURKING_TEMPEST_MASTER_TRAINING_SKYWALL, Unlimited);

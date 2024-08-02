@@ -27,7 +27,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Summon Air Elemental"
+      "Value": "Summon Greater Air Elemental"
     },
     {
       "Id": 1918988897,
@@ -46,12 +46,12 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "Learn Summon Air Elemental - [|cffffcc00Level %d|r]"
+      "Value": "Learn Summon Greater Air Elemental - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Summons air elementals to attack the hero\u0027s enemies. |nLasts 60 seconds.|r |n|n|cffffcc00Level 1|r - Summons 2 Air Elementals|n|cffffcc00Level 2|r - Summons 3 Air Elementals|n|cffffcc00Level 3|r - Summons 4 Air Elementals"
+      "Value": "Summons Greater Air Elementals to attack the hero\u0027s enemies. |nLasts 60 seconds.|r |n|n|cffffcc00Level 1|r - Summons 2 Greater Air Elementals|n|cffffcc00Level 2|r - Summons 3 Greater Air Elementals|n|cffffcc00Level 3|r - Summons 4 Greater Air Elementals"
     },
     {
       "Level": 1,

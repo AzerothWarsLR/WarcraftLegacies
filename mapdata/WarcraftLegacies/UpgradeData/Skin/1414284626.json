@@ -27,19 +27,19 @@
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "Transfiguration"
+      "Value": "Windforging"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "Research Transfiguration"
+      "Value": "Research Windforging"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Grants your non-Resistant units a 25% chance to transfigure in the Vortex Pinnacle upon death."
+      "Value": "Grants your non-Resistant units a 25% chance to spawn an Animated Armor in the Vortex Pinnacle upon death."
     },
     {
       "Id": 2037408359,

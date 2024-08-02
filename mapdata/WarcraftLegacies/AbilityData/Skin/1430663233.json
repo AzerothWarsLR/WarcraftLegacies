@@ -35,6 +35,11 @@
       "Id": 1835101793,
       "Type": 3,
       "Value": "Fog"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNSmoke.blp"
     }
   ]
 }

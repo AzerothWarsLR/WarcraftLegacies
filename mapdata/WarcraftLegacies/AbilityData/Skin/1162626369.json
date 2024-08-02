@@ -13,7 +13,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Water Elementals"
+      "Value": "Summon Water Elementals"
     },
     {
       "Level": 1,
@@ -25,7 +25,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons 2 water elemental to attack the caster\u0027s enemies. They have 600 hit points and lasts 90 seconds. |n|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Summons 3 Water Elementals to attack the caster\u0027s enemies. They have 600 hit points and lasts 90 seconds. |n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }
