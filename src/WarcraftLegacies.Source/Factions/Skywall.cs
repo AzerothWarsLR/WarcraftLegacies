@@ -55,7 +55,8 @@ namespace WarcraftLegacies.Source.Factions
       {
         DummyAbilityId = ABILITY_AEPU_PURGE_SHOCKING_BLADE,
         DummyOrderId = OrderId("purge"),
-        ProcChance = 0.20f
+        ProcChance = 0.20f,
+        RequiredResearch = Constants.UPGRADE_RELP_SHOCKING_BLADES_SKYWALL
       };
       PassiveAbilityManager.Register(purgeAttack);
 
