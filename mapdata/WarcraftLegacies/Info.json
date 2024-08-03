@@ -54,7 +54,7 @@
   "GameDataVersion": 1,
   "Players": [
     {
-      "Controller": 1,
+      "Controller": 2,
       "Race": 2,
       "Flags": 1,
       "Name": "Frostwolf Clan",
@@ -177,7 +177,7 @@
     },
     {
       "Id": 11,
-      "Controller": 1,
+      "Controller": 2,
       "Race": 4,
       "Flags": 1,
       "Name": "Druids",
@@ -228,7 +228,7 @@
     },
     {
       "Id": 18,
-      "Controller": 1,
+      "Controller": 2,
       "Race": 4,
       "Flags": 1,
       "Name": "Sentinels",
