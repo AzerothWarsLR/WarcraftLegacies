@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       Nzoth = new LegendaryHero("N'zoth")
       {
-        UnitType = UNIT_U01Z_OLD_GOD_NZOTH,
+        Unit = preplacedUnitSystem.GetUnit(UNIT_U01Z_OLD_GOD_NZOTH),
         PermaDies = true,
         StartingXp = 41800,
       };
