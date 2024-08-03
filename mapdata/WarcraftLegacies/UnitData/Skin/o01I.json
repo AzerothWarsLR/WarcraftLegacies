@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(tolvir)"
+      "Value": "(elemental)"
     },
     {
       "Id": 1953458293,
@@ -23,17 +23,17 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Warriors of the N\u0027raqi."
+      "Value": "Armor inhabited by an elemental."
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Outrunner"
+      "Value": "Animated Armor"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Train Faceless Marauder"
+      "Value": "Train Animated Armor"
     },
     {
       "Id": 1818520949,
@@ -43,12 +43,12 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNFacelessOne.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArmorGolem.blp"
     },
     {
       "Id": 1684960117,
       "Type": 3,
-      "Value": "NagaMyrmidon"
+      "Value": "RockGolem"
     },
     {
       "Id": 1633907573,

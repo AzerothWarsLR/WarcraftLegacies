@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(tolvir)"
+      "Value": "(elemental)"
     },
     {
       "Id": 1953458293,
@@ -23,7 +23,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Ancient spirit builder of the Kaldorei."
+      "Value": "Builders of the elemental."
     },
     {
       "Id": 1835101813,
@@ -39,6 +39,11 @@
       "Id": 1818520949,
       "Type": 3,
       "Value": "war3mapImported\\Unit_Shaper.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNShaper.blp"
     }
   ]
 }

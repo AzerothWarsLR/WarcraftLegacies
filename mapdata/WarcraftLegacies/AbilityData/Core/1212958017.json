@@ -1,0 +1,25 @@
+{
+  "OldId": 1685547073,
+  "NewId": 1212958017,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "RELO"
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 1,
+      "Id": 1969518440,
+      "Type": 3,
+      "Value": "el06"
+    }
+  ]
+}

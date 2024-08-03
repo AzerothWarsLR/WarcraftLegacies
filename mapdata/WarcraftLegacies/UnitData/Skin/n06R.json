@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Tolvir T3)"
+      "Value": "(elemental T3)"
     },
     {
       "Id": 1953458293,
@@ -28,17 +28,17 @@
     {
       "Id": 1768841589,
       "Type": 3,
-      "Value": "upgrade,third"
+      "Value": "upgrade,second"
     },
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTN_Tolvir_Castle.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAlAkirTownHall3.blp"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Arabian palace.mdl"
+      "Value": "war3mapImported\\DarkIronTownHall2.mdl"
     },
     {
       "Id": 2020631157,
@@ -51,12 +51,17 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Upgrade to Temple of Tides"
+      "Value": "Upgrade to Great Alcazar"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": 0.95
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Great Alcazar"
     }
   ]
 }

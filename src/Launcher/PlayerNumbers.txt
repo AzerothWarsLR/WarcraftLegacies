@@ -6,7 +6,7 @@
 //  5	Empty
 //  6	Fel Horde
 //  7	Dalaran/Gilneas
-//  8	Empty
+//  8	Skywall
 //  9	Lordaeron
 //  10	Empty
 //  11	Druids
@@ -15,7 +15,7 @@
 //  14	Empty
 //  15	Illidan/Sunfury
 //  16	Ahn'qiraj
-//  17  Skywall
+//  17  Empty
 //  18	Sentinels
 //  19  Emprt
 //  20  Empty

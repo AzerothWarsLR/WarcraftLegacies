@@ -8,7 +8,7 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "A0SP,A0SO"
+      "Value": "ACah,AERJ,AEHS"
     },
     {
       "Id": 1633772661,
@@ -22,7 +22,7 @@
     {
       "Id": 1819239285,
       "Type": 2,
-      "Value": 16
+      "Value": 8
     },
     {
       "Id": 1717920885,
@@ -67,7 +67,7 @@
     },
     {
       "Id": 1937141109,
-      "Value": 180
+      "Value": 260
     },
     {
       "Id": 1887007861,
@@ -77,7 +77,7 @@
     {
       "Id": 1919381621,
       "Type": 3,
-      "Value": "Rguv,Rhme,Rhar"
+      "Value": "REOW,RELB,RELG,Rhme,Rhar"
     },
     {
       "Id": 1902473845,
@@ -97,12 +97,7 @@
     {
       "Id": 1731289461,
       "Type": 3,
-      "Value": "debris,ground,item,structure,ward"
-    },
-    {
-      "Id": 1999724917,
-      "Type": 3,
-      "Value": "artillery"
+      "Value": "ground,structure,debris,air,item,ward"
     },
     {
       "Id": 1915838837,
@@ -120,34 +115,7 @@
     },
     {
       "Id": 2050056565,
-      "Value": 10000
-    },
-    {
-      "Id": 1882284405,
-      "Type": 3,
-      "Value": "debris,ground,item,structure,ward"
-    },
-    {
-      "Id": 1714512245,
-      "Value": 25
-    },
-    {
-      "Id": 1748066677,
-      "Value": 25
-    },
-    {
-      "Id": 1899061621,
-      "Value": 25
-    },
-    {
-      "Id": 828663925,
-      "Type": 2,
-      "Value": 0.2
-    },
-    {
-      "Id": 828666229,
-      "Type": 2,
-      "Value": 0.2
+      "Value": 400
     },
     {
       "Id": 1835098997,

@@ -1,4 +1,4 @@
-namespace WarcraftLegacies.Shared.FactionObjectLimits
+﻿namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
   public static class NazjatarObjectLimitData
   {
@@ -17,8 +17,6 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(Constants.UNIT_N08V_PORTAL_OF_THE_DEEP_NZOTH_SIEGE, Unlimited);
       yield return new(Constants.UNIT_N0BZ_DEEP_VAULT_NZOTH_SHOP, Unlimited);
       yield return new(Constants.UNIT_N0C0_ALTAR_OF_THE_QUEEN_NZOTH_ALTAR, Unlimited);
-      yield return new(Constants.UNIT_N08L_TEMPLE_PROTECTOR_TOLVIR_TOWER, Unlimited);
-      yield return new(Constants.UNIT_N08N_IMPROVED_TEMPLE_PROTECTOR_TOLVIR_TOWER, Unlimited);
       yield return new(Constants.UNIT_N0D7_DEEP_FORAGER_N_ZOTH_WORKER, Unlimited);
       yield return new(Constants.UNIT_N0DT_TIDEMISTRESS_NZOTH, 6);
       yield return new(Constants.UNIT_N0CA_NAGA_INCURSOR_NZOTH, Unlimited);

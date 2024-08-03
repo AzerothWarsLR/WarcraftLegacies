@@ -1,0 +1,36 @@
+{
+  "OldId": 1685547073,
+  "NewId": 1212958017,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Tidal Lord)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons an immovable whirlpool that slows enemy units, reducing their attack speed by 25% and movement speed by 40%. |nLasts \u003CAELH,Dur1\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Superior Whirlpool"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Superior Whirlpool"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWhirlpool.blp"
+    }
+  ]
+}

@@ -13,7 +13,7 @@
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "This unit is covered in fog"
+      "Value": "This unit is covered in fog; it cannot use ranged attacks."
     },
     {
       "Id": 1952543846,

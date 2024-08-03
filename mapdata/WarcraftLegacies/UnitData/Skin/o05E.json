@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Tolvir)"
+      "Value": "(elemental)"
     },
     {
       "Id": 1953458293,
@@ -18,7 +18,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Master of magics from Ny\u0027alotha."
+      "Value": "Thunder elemental from the Pinnacle."
     },
     {
       "Id": 1868786037,
@@ -33,7 +33,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Train Fateweaver"
+      "Value": "Train Lurking Tempest"
     },
     {
       "Id": 1835101813,
@@ -43,12 +43,12 @@
     {
       "Id": 1684960117,
       "Type": 3,
-      "Value": "KelThuzadNecro"
+      "Value": "ObsidianStatue"
     },
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "- Parasite,- Parasite|n- Anti-magic Shell,- Parasite|n- Anti-magic Shell|n- Suppression"
+      "Value": ""
     }
   ]
 }
