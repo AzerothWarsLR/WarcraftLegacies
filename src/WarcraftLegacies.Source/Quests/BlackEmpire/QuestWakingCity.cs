@@ -58,9 +58,9 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.Player.RescueGroup(_rescueUnits);
-      var cthun = _allLegendSetup.Ahnqiraj.Cthun.Unit;
-      if (cthun != null)
-        PassiveAbilityManager.ForceOnCreated(cthun);
+      var nzoth = _allLegendSetup.BlackEmpire.Nzoth.Unit;
+      if (nzoth != null)
+        PassiveAbilityManager.ForceOnCreated(nzoth);
     }
   }
 }
