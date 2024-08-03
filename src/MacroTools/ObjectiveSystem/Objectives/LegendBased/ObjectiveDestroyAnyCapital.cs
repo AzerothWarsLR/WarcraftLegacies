@@ -2,6 +2,7 @@
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
+using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 {
@@ -10,7 +11,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     /// <summary>
     /// The <see cref="Capital"/> that was destroyed to complete the objective, if any.
     /// </summary>
-    public Capital? DestroyedCapital { get; set; }
+    public Capital? DestroyedCapital { get; private set; }
     
     /// <summary>
     /// Initializes a new instance of the <see cref="ObjectiveDestroyAnyCapital"/> class.
@@ -25,13 +26,10 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     {
       CapitalManager.CapitalDestroyed += (_, capital) =>
       {
-        foreach (var eligibleFaction in EligibleFactions)
+        if (IsPlayerOnSameTeamAsAnyEligibleFaction(GetKillingUnit().OwningPlayer()))
         {
-          if (eligibleFaction.Player?.GetTeam() != capital.OwningPlayer?.GetTeam())
-          {
-            DestroyedCapital = capital;
-            Progress = QuestProgress.Complete;
-          }
+          DestroyedCapital = capital;
+          Progress = QuestProgress.Complete;
         }
       };
     }
