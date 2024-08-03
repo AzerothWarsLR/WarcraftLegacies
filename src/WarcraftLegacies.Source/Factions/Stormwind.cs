@@ -52,7 +52,7 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
     private void RegisterObjectLimits()
     {
       foreach (var (objectTypeId, objectLimit) in StormwindObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit);
+        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
 
       ModAbilityAvailability(ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, 1);
       ModAbilityAvailability(ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);

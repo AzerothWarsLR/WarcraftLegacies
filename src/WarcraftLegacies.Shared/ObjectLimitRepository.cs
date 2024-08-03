@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System.Diagnostics.CodeAnalysis;
 using WarcraftLegacies.Shared.Extensions;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 
@@ -6,7 +6,7 @@ namespace WarcraftLegacies.Shared
 {
   public sealed class ObjectLimitRepository
   {
-    private readonly Dictionary<string, int> _objectLimits = new();
+    private readonly Dictionary<string, ObjectLimit> _objectLimits = new();
 
     public ObjectLimitRepository()
     {
@@ -36,15 +36,15 @@ namespace WarcraftLegacies.Shared
       AddFactionObjectLimits(ZandalarObjectLimitData.GetAllObjectLimits());
     }
 
-    public bool TryGetObjectLimit(int objectTypeId, out int limit)
+    public bool TryGetObjectLimit(int objectTypeId, [NotNullWhen(true)] out ObjectLimit? objectLimit)
     {
-      return _objectLimits.TryGetValue(objectTypeId.IdToFourCc(), out limit);
+      return _objectLimits.TryGetValue(objectTypeId.IdToFourCc(), out objectLimit);
     }
 
     private void AddFactionObjectLimits(IEnumerable<ObjectLimit> factionObjectLimits)
     {
-      foreach (var (objectTypeId, limit) in factionObjectLimits)
-        _objectLimits.TryAdd(objectTypeId, limit);
+      foreach (var (objectTypeId, objectLimit) in factionObjectLimits)
+        _objectLimits.TryAdd(objectTypeId, objectLimit);
     }
   }
 }

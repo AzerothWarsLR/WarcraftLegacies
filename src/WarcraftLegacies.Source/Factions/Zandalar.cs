@@ -67,7 +67,7 @@ Join up with your allies and brace for a tough fight and counter-attack. ";
     private void RegisterObjectLimits()
     {
       foreach (var (objectTypeId, objectLimit) in ZandalarObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit);
+        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

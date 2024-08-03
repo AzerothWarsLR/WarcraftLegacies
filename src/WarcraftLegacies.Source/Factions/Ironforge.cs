@@ -57,7 +57,7 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
     private void RegisterObjectLimits()
     {
       foreach (var (objectTypeId, objectLimit) in IronforgeObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit);
+        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
 
       ModAbilityAvailability(ABILITY_A0IH_SPIKED_BARRICADES_DWARF_KEEP, -1);
       ModAbilityAvailability(ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);

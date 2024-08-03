@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(UNIT_SHZ5_AQIR_BLACK_EMPIRE, 6);
       yield return new(UNIT_N077_MINDLASHER_YOGG, Unlimited);
       yield return new(UNIT_O04Y_FATEWEAVER_YOGG, Unlimited);
-      yield return new(UNIT_U02F_FORGOTTEN_ONE_YOGG, 1);
+      yield return new(UNIT_U02F_FORGOTTEN_ONE_YOGG, 1, "completing certain Quests");
       yield return new(UNIT_BHN1_HERALD_YOGG, 6);
       yield return new(UNIT_O04Z_FLYING_HORROR_YOGG, 12);
       yield return new(UNIT_N0AH_DEFORMED_CHIMERA_YOGG, 4);

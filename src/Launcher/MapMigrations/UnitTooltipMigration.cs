@@ -194,15 +194,17 @@ namespace Launcher.MapMigrations
         return;
       
       var unitId = unit.NewId != 0 ? unit.NewId : unit.OldId;
-      if (!_objectLimitRepository.TryGetObjectLimit(unitId, out var limit)) 
+      if (!_objectLimitRepository.TryGetObjectLimit(unitId, out var objectLimit)) 
         return;
       
       var isABuilding = unit.StatsIsABuilding;
       var trainType = isABuilding ? "build" : "train";
       
-      if (limit is > 0 and < 200)
+      if (objectLimit.Limit is > 0 and < 200)
       {
-        tooltipBuilder.Append($"{LineSeparator}|cff99b4d1Can only {trainType} {limit}.|r");
+        tooltipBuilder.Append($"{LineSeparator}|cff99b4d1Can only {trainType} {objectLimit.Limit}.|r");
+        if (objectLimit.LimitIncreaseHint != null)
+          tooltipBuilder.Append($"|cff99b4d1 This limit can be increased by {objectLimit.LimitIncreaseHint}.|r");
       }
     }
     

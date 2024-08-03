@@ -73,7 +73,7 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
     private void RegisterObjectLimits()
     {
       foreach (var (objectTypeId, objectLimit) in SunfuryObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit);
+        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

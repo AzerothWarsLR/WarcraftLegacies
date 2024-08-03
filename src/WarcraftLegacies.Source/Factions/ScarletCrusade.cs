@@ -45,7 +45,7 @@ Fortify your strongholds against the storm to come and make ready to unleash the
     private void RegisterObjectLimits()
     {
       foreach (var (objectTypeId, objectLimit) in ScarletCrusadeObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit);
+        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()
