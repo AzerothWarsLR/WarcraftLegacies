@@ -1,6 +1,6 @@
 {
-  "OldId": 1952998209,
-  "NewId": 1448297025,
+  "OldId": 1886208833,
+  "NewId": 1296646721,
   "Unk": [
     0
   ],
@@ -9,13 +9,7 @@
       "Level": 1,
       "Id": 1701994849,
       "Type": 2,
-      "Value": 200
-    },
-    {
-      "Level": 1,
-      "Id": 1718968929,
-      "Type": 3,
-      "Value": "Binv"
+      "Value": 100
     },
     {
       "Level": 1,
@@ -24,39 +18,42 @@
       "Value": 30
     },
     {
-      "Id": 1667330657,
-      "Type": 3,
-      "Value": "nightelf"
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 200
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 828469074,
+      "Id": 829253973,
       "Type": 2,
-      "Value": 0
+      "Value": 1200
     },
     {
       "Level": 1,
       "Id": 1969514593,
       "Type": 2,
-      "Value": 0.001
+      "Value": 0.5
     },
     {
       "Level": 1,
-      "Id": 1920296033,
+      "Pointer": 3,
+      "Id": 862808405,
       "Type": 2,
-      "Value": 0.001
+      "Value": 25
     },
     {
       "Level": 1,
-      "Id": 1935895905,
-      "Value": 150
+      "Pointer": 2,
+      "Id": 846031189,
+      "Type": 2,
+      "Value": 3
     },
     {
       "Level": 1,
-      "Id": 1918989409,
-      "Type": 3,
-      "Value": "friend,ground,neutral,nonsapper"
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 1200
     }
   ]
 }

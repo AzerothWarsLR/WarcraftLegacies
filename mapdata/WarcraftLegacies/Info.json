@@ -54,7 +54,7 @@
   "GameDataVersion": 1,
   "Players": [
     {
-      "Controller": 1,
+      "Controller": 2,
       "Race": 2,
       "Flags": 1,
       "Name": "Frostwolf Clan",
@@ -152,7 +152,7 @@
     },
     {
       "Id": 8,
-      "Controller": 1,
+      "Controller": 2,
       "Race": 4,
       "Flags": 1,
       "Name": "Skywall",
@@ -177,7 +177,7 @@
     },
     {
       "Id": 11,
-      "Controller": 1,
+      "Controller": 2,
       "Race": 4,
       "Flags": 1,
       "Name": "Druids",
@@ -228,7 +228,7 @@
     },
     {
       "Id": 18,
-      "Controller": 1,
+      "Controller": 2,
       "Race": 4,
       "Flags": 1,
       "Name": "Sentinels",
@@ -268,7 +268,7 @@
   "Forces": [
     {
       "Flags": 11,
-      "Players": -4491992,
+      "Players": -4561880,
       "Name": "Scourge, Legion"
     },
     {
@@ -278,8 +278,8 @@
     },
     {
       "Flags": 11,
-      "Players": 1,
-      "Name": "Frostwolf, Warsong, Goblin"
+      "Players": 264193,
+      "Name": "Frostwolf, Druids, Sentinels"
     },
     {
       "Flags": 11,
@@ -288,8 +288,8 @@
     },
     {
       "Flags": 11,
-      "Players": 264192,
-      "Name": "Druids, Draenei, Sentinels"
+      "Players": 69888,
+      "Name": "Skywall, Black Empire, Ahn\u0027qiraj"
     },
     {
       "Flags": 11,

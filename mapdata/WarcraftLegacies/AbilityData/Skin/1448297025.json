@@ -30,7 +30,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Turns every allied ground unit in a 300 area of effect invisible. If an invisible unit attacks, uses an ability or casts a spell, it will become visible. |nLasts 6 seconds."
+      "Value": "Give every allied unit in a 200 area anti magic shell"
     },
     {
       "Id": 1952539489,
