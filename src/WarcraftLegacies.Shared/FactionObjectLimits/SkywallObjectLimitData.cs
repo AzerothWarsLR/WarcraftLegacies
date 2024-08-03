@@ -1,3 +1,5 @@
+﻿using System.Collections.Generic;
+
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
   public static class SkywallObjectLimitData
@@ -6,41 +8,57 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
 
     public static IEnumerable<ObjectLimit> GetAllObjectLimits()
     {
-      yield return new(Constants.UNIT_N05Q_PILLAR_OF_WAVES_TOLVIR_T1, Unlimited);
-      yield return new(Constants.UNIT_N05W_MONUMENT_OF_THE_DEEP_TOLVIR_T2, Unlimited);
-      yield return new(Constants.UNIT_N06R_TEMPLE_OF_TIDES_TOLVIR_T3, Unlimited);
-      yield return new(Constants.UNIT_H03I_CORAL_FORGE_TOLVIR_RESEARCH, Unlimited);
-      yield return new(Constants.UNIT_N08A_SPAWNING_GROUNDS_TOLVIR_BARRACKS, Unlimited);
-      yield return new(Constants.UNIT_N07N_ROYAL_TEMPLE_TOLVIR_MAGIC, Unlimited);
-      yield return new(Constants.UNIT_N08B_SHRINE_OF_AZSHARA_TOLVIR_SPECIALIST, Unlimited);
-      yield return new(Constants.UNIT_N08V_PORTAL_OF_THE_DEEP_NZOTH_SIEGE, Unlimited);
-      yield return new(Constants.UNIT_N07J_DEEP_VAULT_TOLVIR_SHOP, Unlimited);
-      yield return new(Constants.UNIT_N078_ALTAR_OF_THE_QUEEN_TOLVIR_ALTAR, Unlimited);
-      yield return new(Constants.UNIT_N08L_TEMPLE_PROTECTOR_TOLVIR_TOWER, Unlimited);
-      yield return new(Constants.UNIT_N08N_IMPROVED_TEMPLE_PROTECTOR_TOLVIR_TOWER, Unlimited);
-      yield return new(Constants.UNIT_N0D7_DEEP_FORAGER_N_ZOTH_WORKER, Unlimited);
-      yield return new(Constants.UNIT_N0DT_TIDEMISTRESS_NZOTH, 6);
-      yield return new(Constants.UNIT_N0CA_NAGA_INCURSOR_NZOTH, Unlimited);
-      yield return new(Constants.UNIT_N0CE_HATCHLING_NZOTH, Unlimited);
-      yield return new(Constants.UNIT_N0CL_GARGANTUAN_SEA_TURTLE_NZOTH, 8);
-      yield return new(Constants.UNIT_N0CB_DEEPSEER_NZOTH, Unlimited);
-      yield return new(Constants.UNIT_N0CD_BLOODKIN_NZOTH, Unlimited);
-      yield return new(Constants.UNIT_O060_RIPTIDE_DRAKE_NZOTH, 6);
-      yield return new(Constants.UNIT_U02J_TIDAL_TERROR_NZOTH, 4);
-      yield return new(Constants.UNIT_H01Q_IMMORTAL_GUARDIAN_NZOTH, 4);
-      yield return new(Constants.UNIT_N0CO_TRENCH_HYDRA_NZOTH, 2);
-      yield return new("e020", Unlimited); //Shipyard
-      yield return new("etrs", Unlimited); //Night Elf Transport Ship
-      yield return new("h0AU", Unlimited); // Scout
-      yield return new("h0AV", Unlimited); // Frigate
-      yield return new("h0B1", Unlimited); // Fireship
-      yield return new("h057", Unlimited); // Galley
-      yield return new("h0B4", Unlimited); // Boarding
-      yield return new("h0BA", Unlimited); // Juggernaut
-      yield return new("h0B8", 6); // Bombard
-      yield return new(Constants.UNIT_U02K_LORD_OF_THE_FIRELANDS_RAGNAROS, 1);
-      yield return new(Constants.UNIT_E023_GRAND_VIZIER_TOLVIR, 1);
-      yield return new(Constants.UNIT_U01S_WINDLORD_TWILIGHT, 1);
+      yield return new(Constants.UNIT_N05Q_HOLDFAST_ELEMENTAL_T1, Unlimited);
+      yield return new(Constants.UNIT_N05W_FORTIFIED_BURG_ELEMENTAL_T2, Unlimited);
+      yield return new(Constants.UNIT_N06R_GREAT_ALCAZAR_ELEMENTAL_T3, Unlimited);
+      yield return new(Constants.UNIT_H03I_PROCESSING_FACILITY_ELEMENTAL_RESEARCH, Unlimited);
+      yield return new(Constants.UNIT_N08A_ARCANE_FOUNDRY_ELEMENTAL_BARRACKS, Unlimited);
+      yield return new(Constants.UNIT_N07N_PAVILION_ELEMENTAL_MAGIC, Unlimited);
+      yield return new(Constants.UNIT_N08B_DJINN_PALACE_ELEMENTAL_SPECIALIST, Unlimited);
+      yield return new(Constants.UNIT_N07J_FORGE_OF_WISHES_ELEMENTAL_SHOP, Unlimited);
+      yield return new(Constants.UNIT_N078_ALTAR_OF_ELEMENTS_ELEMENTAL_ALTAR, Unlimited);
+      yield return new(Constants.UNIT_N08L_LATTICE_SPIRE_ELEMENTAL_TOWER, Unlimited);
+      yield return new(Constants.UNIT_N08N_IMPROVED_LATTICE_SPIRE_ELEMENTAL_TOWER, Unlimited);
+
+      yield return new(Constants.UNIT_LS05_SHAPER_ELEMENTAL, Unlimited);
+      yield return new(Constants.UNIT_N08S_ARMORED_MISTRAL_ELEMENTAL, 6);
+      yield return new(Constants.UNIT_O01I_ANIMATED_ARMOR_ELEMENTAL, Unlimited);
+      yield return new(Constants.UNIT_SFH5_AIR_REVENANT_ELEMENTAL, Unlimited);
+      yield return new(Constants.UNIT_SGH5_BALLISTA_CARRIER_ELEMENTAL, 8);
+      yield return new(Constants.UNIT_O05E_LURKING_TEMPEST_ELEMENTAL, Unlimited);
+      yield return new(Constants.UNIT_N08Z_WHIPPING_WIND_ELEMENTAL, Unlimited);
+      yield return new(Constants.UNIT_OETL_TIDAL_LORD_ELEMENTAL, 6);
+      yield return new(Constants.UNIT_U02P_DJINN_ELEMENTAL, 4);
+      yield return new(Constants.UNIT_LS06_EFREET_ELEMENTAL, 4);
+      yield return new(Constants.UNIT_N0CG_CORE_HOUND_RAGNAROS, 12);
+      yield return new(Constants.UNIT_N0CF_FIRE_WYRM_RAGNAROS, 2);
+
+      yield return new(Constants.UNIT_H07X_SHIPYARD_ELEMENTAL_SHIPYARD, Unlimited);
+      yield return new(Constants.UNIT_ETRS_NIGHT_ELF_TRANSPORT_SHIP_DRUIDS_SENTINELS, Unlimited);
+      yield return new(Constants.UNIT_H0AU_SCOUT_SHIP_NIGHT_ELVES, Unlimited);
+      yield return new(Constants.UNIT_H0AV_FRIGATE_NIGHT_ELVES, Unlimited);
+      yield return new(Constants.UNIT_H0B1_FIRESHIP_NIGHT_ELVES, Unlimited);
+      yield return new(Constants.UNIT_H057_GALLEY_NIGHT_ELVES, Unlimited);
+      yield return new(Constants.UNIT_H0B4_BOARDING_VESSEL_NIGHT_ELVES, Unlimited);
+      yield return new(Constants.UNIT_H0BA_JUGGERNAUT_NIGHT_ELVES, Unlimited);
+      yield return new(Constants.UNIT_H0B8_BOMBARD_NIGHT_ELVES, Unlimited);
+
+      yield return new(Constants.UNIT_U02K_LORD_OF_THE_FIRELANDS_ELEMENTAL, 1);
+      yield return new(Constants.UNIT_E023_GRAND_VIZIER_ELEMENTAL, 1);
+      yield return new(Constants.UNIT_U01S_WINDLORD_ELEMENTAL, 1);
+      yield return new(Constants.UNIT_UELN_THE_TIDEHUNTER_ELEMENTAL, 1);
+
+      yield return new(Constants.UPGRADE_RELT_WINDFORGING_SKYWALL, Unlimited);
+      yield return new(Constants.UPGRADE_RELP_SHOCKING_BLADES_SKYWALL, Unlimited);
+      yield return new(Constants.UPGRADE_RELA_INFUSED_STEEL_SKYWALL, Unlimited);
+      yield return new(Constants.UPGRADE_RELL_LURKING_TEMPEST_MASTER_TRAINING_SKYWALL, Unlimited);
+      yield return new(Constants.UPGRADE_RELW_WHIPPING_WIND_MASTER_TRAINING_SKYWALL, Unlimited);
+      yield return new(Constants.UPGRADE_RELO_TIDAL_LORD_MASTER_TRAINING_SKYWALL, Unlimited);
+      yield return new(Constants.UPGRADE_RELD_MAGMA_FIRE_ELEMENTAL, Unlimited);
+      yield return new(Constants.UPGRADE_RELS_MAGMA_HEART_ELEMENTAL, Unlimited);
+      yield return new(Constants.UPGRADE_REOW_OFFENSIVE_WISHES_ELEMENTAL, Unlimited);
+      yield return new(Constants.UPGRADE_RELB_BURSTING_MIRACLES_ELEMENTAL, Unlimited);
+      yield return new(Constants.UPGRADE_RELG_INSPIRING_GIFTS_ELEMENTAL, Unlimited);
     }
   }
 }

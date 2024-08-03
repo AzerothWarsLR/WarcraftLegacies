@@ -28,6 +28,7 @@ namespace WarcraftLegacies.Source.Setup
       SetupPlayer(Player(4), new Ironforge(_preplacedUnitSystem, _allLegendSetup));
       SetupPlayer(Player(6), new FelHorde(_preplacedUnitSystem, _allLegendSetup));
       Player(7).SetTeam(TeamSetup.NorthAlliance);
+      SetupPlayer(Player(8), new Skywall());
       SetupPlayer(Player(9), new Lordaeron(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
       SetupPlayer(Player(11), new Druids(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
       SetupPlayer(Player(12), new BlackEmpire(_preplacedUnitSystem, _allLegendSetup));

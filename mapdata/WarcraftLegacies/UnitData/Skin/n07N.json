@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTN_Tolvir_RoyalTemple.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPavilion.blp"
     },
     {
       "Id": 2037408373,
@@ -17,22 +17,22 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Tolvir Magic)"
+      "Value": "(elemental Magic)"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\TolvirZiggurat.mdl"
+      "Value": "war3mapImported\\DarkIronBarracks2.mdl"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Royal Temple"
+      "Value": "Pavilion"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Royal Temple"
+      "Value": "Build Pavilion"
     },
     {
       "Id": 1935832437,
@@ -62,7 +62,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.55
+      "Value": 0.8
     }
   ]
 }

@@ -16,7 +16,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Tolvir Altar)"
+      "Value": "(elemental Altar)"
     },
     {
       "Id": 1953458293,
@@ -24,14 +24,9 @@
       "Value": "X"
     },
     {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 0.7
-    },
-    {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Altar of the Queen"
+      "Value": "Build Altar of Elements"
     },
     {
       "Id": 1935832437,
@@ -46,12 +41,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Altar of the Queen"
+      "Value": "Altar of Elements"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Arabian University.mdl"
+      "Value": "war3mapImported\\DarkIronAltar2.mdl"
     },
     {
       "Id": 1768841589,
@@ -61,7 +56,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTN_TolvirAlter.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAltarOfElements.blp"
     },
     {
       "Id": 1651864693,

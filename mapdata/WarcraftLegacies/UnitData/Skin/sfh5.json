@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(tolvir)"
+      "Value": "(elemental)"
     },
     {
       "Id": 1818520949,
@@ -28,27 +28,27 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Powerful hunters of magic. "
+      "Value": "Tormented spirit of the wind."
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Wind Revenant"
+      "Value": "Air Revenant"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Train Wind Revenant"
+      "Value": "Train Air Revenant"
     },
     {
       "Id": 1831952757,
       "Type": 3,
-      "Value": "war3mapImported\\TuskMissile.mdl"
+      "Value": "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
     },
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNFacelessOneCultist.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAirRevenant.blp"
     },
     {
       "Id": 1768841589,
@@ -68,7 +68,7 @@
     {
       "Id": 1684960117,
       "Type": 3,
-      "Value": "Gargoyle"
+      "Value": "Revenant"
     }
   ]
 }

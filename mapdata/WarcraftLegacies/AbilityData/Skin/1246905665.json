@@ -1,0 +1,25 @@
+{
+  "OldId": 846349121,
+  "NewId": 1246905665,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Djinn)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Heals a target friendly unit for \u003CAERJ,DataA1\u003E hit points and \u003CAERJ,DataB1\u003E mana over \u003CAERJ,Dur1\u003E seconds."
+    }
+  ]
+}
