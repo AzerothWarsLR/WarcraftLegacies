@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
   /// </summary>
   public sealed class QuestAscension : QuestData
   {
-    private const int Ultimate = ABILITY_ANMC;
+    private const int Ultimate = ABILITY_ANMC_MIND_CONFUSION_NZOTH;
     
     /// <inheritdoc />
     public QuestAscension(LegendaryHero nzoth) : base("Ascension",

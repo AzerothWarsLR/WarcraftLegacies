@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = UNIT_U01Z_OLD_GOD_NZOTH,
         PermaDies = true,
-        StartingXp = 10000,
+        StartingXp = 41800,
       };
 
       Zonozz = new LegendaryHero("General Vezax")
@@ -42,6 +42,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Nzoth);
+      UnitModifySkillPoints(Nzoth.Unit, -7);
       LegendaryHeroManager.Register(Zonozz);
       LegendaryHeroManager.Register(Xkorr);
       LegendaryHeroManager.Register(Yorsahj);

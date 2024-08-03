@@ -41,7 +41,7 @@ namespace WarcraftLegacies.Source.Factions
       var QuestGorma = AddQuest(new QuestMawofGorma(Regions.BlackEmpireOutpost1));
       StartingQuest = QuestGorma;
 
-      AddQuest(new QuestWakingCity(QuestGorma, Regions.Nyalotha));
+      AddQuest(new QuestWakingCity(QuestGorma, _allLegendSetup, Regions.Nyalotha));
       AddQuest(new QuestGiftofFlesh());
       AddQuest(new QuestWakingDream(_allLegendSetup.BlackEmpire.Xkorr, _preplacedUnitSystem));
       AddQuest(new QuestMawofShuma(_allLegendSetup.BlackEmpire.Yorsahj));
