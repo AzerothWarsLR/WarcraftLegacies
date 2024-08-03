@@ -31,10 +31,6 @@ namespace MacroTools.ObjectiveSystem.Objectives.ArtifactBased
       {
         RefreshProgress(faction);
       };
-      _target.FactionChanged += (_, _) =>
-      {
-        RefreshProgress(faction);
-      };
     }
 
     private void RefreshProgress(Faction whichFaction)
