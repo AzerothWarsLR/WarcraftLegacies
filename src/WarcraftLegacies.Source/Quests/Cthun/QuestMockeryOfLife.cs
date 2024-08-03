@@ -1,4 +1,5 @@
-﻿using MacroTools.QuestSystem;
+﻿using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.Cthun
 {
@@ -15,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
       "C'thun, the great distorter of flesh, needs to amass samples from many beings to create ",
       @"ReplaceableTextures\CommandButtons\BTNMindWorm.blp")
     {
-      //TODO Add kill different units objective
+      AddObjective(new ObjectiveKillCount(100));
       ResearchId = UPGRADE_RLLL_QUEST_COMPLETED_MOCKERY_OF_LIFE;
     }
 

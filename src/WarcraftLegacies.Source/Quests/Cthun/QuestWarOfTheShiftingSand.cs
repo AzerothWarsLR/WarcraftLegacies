@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
   public sealed class QuestWarOfTheShiftingSand : QuestData
   {
     private readonly LegendaryHero _cthun;
-    private const int SkillPoints = 2;
+    private const int SkillPoints = 3;
     
     /// <inheritdoc/>
     public override string RewardFlavour =>

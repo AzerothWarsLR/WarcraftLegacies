@@ -5,7 +5,7 @@
     "HP": -1,
     "MP": -1,
     "TargetAcquisition": -1,
-    "HeroLevel": 1,
+    "HeroLevel": 20,
     "InventoryData": [],
     "AbilityData": [],
     "CustomPlayerColorId": -1,
