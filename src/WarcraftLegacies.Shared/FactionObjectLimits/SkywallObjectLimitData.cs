@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace WarcraftLegacies.Shared.FactionObjectLimits
+﻿namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
   public static class SkywallObjectLimitData
   {

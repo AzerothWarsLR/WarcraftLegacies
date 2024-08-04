@@ -2,7 +2,7 @@ name: .NET
 
 on:
     push:
-        branches: [ main, dev ]
+        branches: [ main, dev, YakaryBovine/fixAnalysisSettings ]
     pull_request:
         branches: [ main, dev ]
 
@@ -18,7 +18,7 @@ jobs:
             -   name: Build
                 run: dotnet build
             -   name: Inspect code
-                uses: muno92/resharper_inspectcode@1.6.2
+                uses: muno92/resharper_inspectcode@1.11.14
                 with:
                     solutionPath: ./WarcraftLegacies.sln
                     minimumSeverity: error
@@ -26,6 +26,8 @@ jobs:
                     include: |
                         ./src/MacroTools/**
                         ./src/WarcraftLegacies.Source/**
+                        ./src/Launcher/**
+                        ./src/TestMap/**
                     solutionWideAnalysis: false
                     
     Integrity-Check:

@@ -58,7 +58,7 @@ The Night Elves are aware of your presence and are gathering a mighty host again
     private void RegisterObjectLimits()
     {
       foreach (var (objectTypeId, objectLimit) in WarsongObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit);
+        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

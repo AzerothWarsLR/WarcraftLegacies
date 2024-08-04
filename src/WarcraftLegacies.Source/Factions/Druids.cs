@@ -69,7 +69,7 @@ Gather your forces and strike before the Horde can organize their efforts.";
     private void RegisterObjectLimits()
     {
       foreach (var (objectTypeId, objectLimit) in DruidsObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit);
+        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
   /// </summary>
   public sealed class QuestStormglen : QuestData
   {
-    private List<unit> _rescueUnits { get; }
+    private List<unit> RescueUnits { get; }
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestKeelHarbor"/> class.
@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
       AddObjective(new ObjectiveControlPoint(UNIT_N084_TEMPEST_REACH));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
-      _rescueUnits = Regions.GilneasUnlock2.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      RescueUnits = Regions.GilneasUnlock2.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       
     }
 
@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-      whichFaction.Player?.RescueGroup(_rescueUnits);
+      whichFaction.Player?.RescueGroup(RescueUnits);
     }
 
     /// <inheritdoc/>
@@ -47,7 +47,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
         ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
         : completingFaction.Player;
 
-      rescuer.RescueGroup(_rescueUnits);
+      rescuer.RescueGroup(RescueUnits);
     }
   }
 }

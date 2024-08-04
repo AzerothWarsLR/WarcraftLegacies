@@ -55,7 +55,7 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
     private void RegisterObjectLimits()
     {
       foreach (var (objectTypeId, objectLimit) in DraeneiObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit);
+        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

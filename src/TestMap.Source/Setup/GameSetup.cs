@@ -5,7 +5,6 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
 using MacroTools.Save;
 using MacroTools.UserInterface;
-using static War3Api.Common;
 
 namespace TestMap.Source.Setup
 {

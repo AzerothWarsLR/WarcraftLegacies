@@ -66,7 +66,7 @@ namespace MacroTools.SpellSystem
     }
 
     /// <inheritdoc />
-    public bool Active { get; set; } = true;
+    public bool Active { get; set; }
 
     /// <summary>
     /// Fired when the <see cref="Hazard"/> is initially registered.

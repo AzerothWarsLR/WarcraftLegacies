@@ -1,7 +1,6 @@
 ﻿using System.Linq;
 using MacroTools.CommandSystem;
 using MacroTools.Extensions;
-using MacroTools.LegendSystem;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats

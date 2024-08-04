@@ -13,7 +13,7 @@ namespace Launcher.MapMigrations
   /// </summary>
   public sealed class UnitTooltipMigration : IMapMigration
   {
-    private const string LineSeperator = "|n";
+    private const string LineSeparator = "|n";
     private const string AbilitiesKnown = "|cfff5962dAbilities:|r ";
     private const string AbilitiesLearnable = "|cfff5962dAbilities (unlockable):|r ";
     private const string HeroAbilitiesKnown = "|cfff5962dAbilities (hero):|r ";
@@ -81,7 +81,7 @@ namespace Launcher.MapMigrations
         .ToArray();
       if (innateAbilities.Any())
       {
-        tooltipBuilder.Append($"{LineSeperator}{AbilitiesKnown}{string.Join(", ", innateAbilities)}");
+        tooltipBuilder.Append($"{LineSeparator}{AbilitiesKnown}{string.Join(", ", innateAbilities)}");
       }
     }
     
@@ -95,7 +95,7 @@ namespace Launcher.MapMigrations
         .ToArray();
       if (learnableAbilities.Any())
       {
-        tooltipBuilder.Append($"{LineSeperator}{AbilitiesLearnable}{string.Join(", ", learnableAbilities)}");
+        tooltipBuilder.Append($"{LineSeparator}{AbilitiesLearnable}{string.Join(", ", learnableAbilities)}");
       }
     }
 
@@ -108,7 +108,7 @@ namespace Launcher.MapMigrations
         .ToArray();
       
       if (heroAbilities.Any())
-        tooltipBuilder.Append($"{LineSeperator}{HeroAbilitiesKnown}{string.Join(", ", heroAbilities)}");
+        tooltipBuilder.Append($"{LineSeparator}{HeroAbilitiesKnown}{string.Join(", ", heroAbilities)}");
     }
     
     private static void AppendUnitsSold(StringBuilder tooltipBuilder, Unit unit)
@@ -122,7 +122,7 @@ namespace Launcher.MapMigrations
         .ToArray();
       
       if (unitsSold.Any())
-        tooltipBuilder.Append($"{LineSeperator}{UnitsSold}{string.Join(", ", unitsSold)}");
+        tooltipBuilder.Append($"{LineSeparator}{UnitsSold}{string.Join(", ", unitsSold)}");
     }
     
     private static void AppendInnateUnitsTrained(StringBuilder tooltipBuilder, Unit unit)
@@ -134,7 +134,7 @@ namespace Launcher.MapMigrations
         .ToArray();
       
       if (unitsTrained.Any()) 
-        tooltipBuilder.Append($"{LineSeperator}{UnitsTrained}{string.Join(", ", unitsTrained)}");
+        tooltipBuilder.Append($"{LineSeparator}{UnitsTrained}{string.Join(", ", unitsTrained)}");
     }
     
     private static void AppendUnlockableUnitsTrained(StringBuilder tooltipBuilder, Unit unit)
@@ -146,7 +146,7 @@ namespace Launcher.MapMigrations
         .ToArray();
       
       if (unitsTrained.Any()) 
-        tooltipBuilder.Append($"{LineSeperator}{UnlockableUnitsTrained}{string.Join(", ", unitsTrained)}");
+        tooltipBuilder.Append($"{LineSeparator}{UnlockableUnitsTrained}{string.Join(", ", unitsTrained)}");
     }
     
     private static void AppendResearchesAvailable(StringBuilder tooltipBuilder, Unit unit)
@@ -158,7 +158,7 @@ namespace Launcher.MapMigrations
       
       if (researchesAvailable.Any())
       {
-        tooltipBuilder.Append($"{LineSeperator}{ResearchesAvailable}{string.Join(", ", researchesAvailable)}");
+        tooltipBuilder.Append($"{LineSeparator}{ResearchesAvailable}{string.Join(", ", researchesAvailable)}");
       }
     }
     
@@ -171,7 +171,7 @@ namespace Launcher.MapMigrations
       
       if (upgradesTo.Any())
       {
-        tooltipBuilder.Append($"{LineSeperator}{UpgradesTo}{string.Join(", ", upgradesTo)}");
+        tooltipBuilder.Append($"{LineSeparator}{UpgradesTo}{string.Join(", ", upgradesTo)}");
       }
     }
     
@@ -184,7 +184,7 @@ namespace Launcher.MapMigrations
       
       if (soldItems.Any())
       {
-        tooltipBuilder.Append($"{LineSeperator}{ItemsSold}{string.Join(", ", soldItems)}");
+        tooltipBuilder.Append($"{LineSeparator}{ItemsSold}{string.Join(", ", soldItems)}");
       }
     }
 
@@ -194,15 +194,17 @@ namespace Launcher.MapMigrations
         return;
       
       var unitId = unit.NewId != 0 ? unit.NewId : unit.OldId;
-      if (!_objectLimitRepository.TryGetObjectLimit(unitId, out var limit)) 
+      if (!_objectLimitRepository.TryGetObjectLimit(unitId, out var objectLimit)) 
         return;
       
       var isABuilding = unit.StatsIsABuilding;
       var trainType = isABuilding ? "build" : "train";
       
-      if (limit is > 0 and < 200)
+      if (objectLimit.Limit is > 0 and < 200)
       {
-        tooltipBuilder.Append($"{LineSeperator}|cff99b4d1Can only {trainType} {limit}.|r");
+        tooltipBuilder.Append($"{LineSeparator}|cff99b4d1Can only {trainType} {objectLimit.Limit}.|r");
+        if (objectLimit.LimitIncreaseHint != null)
+          tooltipBuilder.Append($"|cff99b4d1 This limit can be increased by {objectLimit.LimitIncreaseHint}.|r");
       }
     }
     
@@ -213,7 +215,7 @@ namespace Launcher.MapMigrations
       if (!targetsAllowed.Any())
         return;
 
-      tooltipBuilder.Append(LineSeperator + LineSeperator);
+      tooltipBuilder.Append(LineSeparator + LineSeparator);
       
       if (targetsAllowed.CanTargetGround())
       {

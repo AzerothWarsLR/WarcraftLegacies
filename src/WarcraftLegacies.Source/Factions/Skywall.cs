@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Factions
     private void RegisterObjectLimits()
     {
       foreach (var (objectTypeId, objectLimit) in SkywallObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit);
+        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterSpells()

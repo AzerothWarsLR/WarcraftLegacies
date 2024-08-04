@@ -68,7 +68,7 @@ Once you have secured your holdings, gather your army and destroy the Orcish Hor
     private void RegisterObjectLimits()
     {
       foreach (var (objectTypeId, objectLimit) in SentinelsObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit);
+        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

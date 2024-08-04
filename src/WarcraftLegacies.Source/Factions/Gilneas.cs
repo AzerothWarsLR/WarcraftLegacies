@@ -80,7 +80,7 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
     private void RegisterObjectLimits()
     {
       foreach (var (objectTypeId, objectLimit) in GilneasObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit);
+        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
     
     private void RegisterQuests()

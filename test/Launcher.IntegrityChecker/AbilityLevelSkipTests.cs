@@ -1,6 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Text;
-using Launcher.Extensions;
 using Launcher.IntegrityChecker.TestSupport;
 using War3Api.Object;
 using WarcraftLegacies.Shared.Extensions;

@@ -25,15 +25,15 @@
         SetTextTagPos(westToEast, Regions.West_of_Kalimdor.Center.X, Regions.West_of_Kalimdor.Center.Y, 0);
         SetTextTagColor(westToEast, 255, 255, 255, 0);
 
-        var LegionNorth = CreateTextTag();
-        SetTextTagText(LegionNorth, "To Northrend", fontSize);
-        SetTextTagPos(LegionNorth, 22939, -29345, 0);
-        SetTextTagColor(LegionNorth, 255, 255, 255, 0);
+        var legionNorth = CreateTextTag();
+        SetTextTagText(legionNorth, "To Northrend", fontSize);
+        SetTextTagPos(legionNorth, 22939, -29345, 0);
+        SetTextTagColor(legionNorth, 255, 255, 255, 0);
 
-        var LegionAlterac = CreateTextTag();
-        SetTextTagText(LegionAlterac, "To Alterac", fontSize);
-        SetTextTagPos(LegionAlterac, 23536, -29975, 0);
-        SetTextTagColor(LegionAlterac, 255, 255, 255, 0);
+        var legionAlterac = CreateTextTag();
+        SetTextTagText(legionAlterac, "To Alterac", fontSize);
+        SetTextTagPos(legionAlterac, 23536, -29975, 0);
+        SetTextTagColor(legionAlterac, 255, 255, 255, 0);
 
         DestroyTimer(GetExpiredTimer());
       });

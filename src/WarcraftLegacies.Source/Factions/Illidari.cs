@@ -78,7 +78,7 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
     private void RegisterObjectLimits()
     {
       foreach (var (objectTypeId, objectLimit) in IllidariObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit);
+        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

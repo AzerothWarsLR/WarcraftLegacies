@@ -5,11 +5,11 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
   public static class Plagueling
   {
     private static readonly int PlaguelingId = FourCC("n08G");
-    private const float DURATION = 15;
+    private const float Duration = 15;
     
     private static void OnSell()
     {
-      UnitApplyTimedLife(GetSoldUnit(), 0, DURATION);
+      UnitApplyTimedLife(GetSoldUnit(), 0, Duration);
       SetUnitExploded(GetSoldUnit(), true);
     }
 

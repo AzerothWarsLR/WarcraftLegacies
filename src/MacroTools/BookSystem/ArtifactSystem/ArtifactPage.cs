@@ -1,6 +1,5 @@
 ﻿using MacroTools.ArtifactSystem;
 using MacroTools.BookSystem.Core;
-using MacroTools.BookSystem.Powers;
 
 namespace MacroTools.BookSystem.ArtifactSystem
 {

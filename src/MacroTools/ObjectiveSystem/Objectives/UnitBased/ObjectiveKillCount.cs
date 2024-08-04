@@ -1,4 +1,5 @@
 ﻿using MacroTools.FactionSystem;
+using MacroTools.QuestSystem;
 using WCSharp.Events;
 
 namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
@@ -18,6 +19,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       {
         _currentCount = value;
         Description = $"Kill {_requiredCount} units ({_currentCount}/{_requiredCount})";
+        if (_currentCount >= _requiredCount)
+          Progress = QuestProgress.Complete;
       }
     }
     
