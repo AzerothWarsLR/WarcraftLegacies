@@ -13,10 +13,10 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
   /// </summary>
   public sealed class QuestZulgurub : QuestData
   {
-    private const int _zulgurubResearch = UPGRADE_R02M_QUEST_COMPLETED_THE_HEART_OF_HAKKAR_WARSONG;
-    private const int _trollShrineId = UNIT_O04X_LOA_SHRINE_ZANDALARI_SIEGE;
-    private const int _ravagerId = UNIT_O021_RAVAGER_ZANDALAR;
-    private readonly int goldReward = 50;
+    private const int ZulgurubResearch = UPGRADE_R02M_QUEST_COMPLETED_THE_HEART_OF_HAKKAR_WARSONG;
+    private const int TrollShrineId = UNIT_O04X_LOA_SHRINE_ZANDALARI_SIEGE;
+    private const int RavagerId = UNIT_O021_RAVAGER_ZANDALAR;
+    private readonly int _goldReward = 50;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestZulgurub"/> class
@@ -35,22 +35,22 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"{goldReward} gold and the ability to train {GetObjectName(_ravagerId)}s from the {GetObjectName(_trollShrineId)}";
+      $"{_goldReward} gold and the ability to train {GetObjectName(RavagerId)}s from the {GetObjectName(TrollShrineId)}";
 
     /// <inheritdoc/>>
     protected override void OnComplete(Faction completingFaction)
     {
       if(completingFaction.Player != null)
       {
-        SetPlayerTechResearched(completingFaction.Player, _zulgurubResearch, 1);
-        completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, goldReward);
+        SetPlayerTechResearched(completingFaction.Player, ZulgurubResearch, 1);
+        completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, _goldReward);
       }
     }
 
     /// <inheritdoc/>
     protected override void OnAdd(Faction whichFaction)
     {
-      whichFaction.ModObjectLimit(_zulgurubResearch, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(ZulgurubResearch, Faction.UNLIMITED);
     }
   }
 }

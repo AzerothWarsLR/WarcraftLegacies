@@ -9,8 +9,8 @@ namespace Launcher.DataTransferObjects
     public int OwnerId { get; set; }
     public int Unk1 { get; set; }
     public int Unk2 { get; set; }
-    public int HP { get; set; }
-    public int MP { get; set; }
+    public int Hp { get; set; }
+    public int Mp { get; set; }
     public int GoldAmount { get; set; }
     public int TargetAcquisition { get; set; }
     public int HeroLevel { get; set; }

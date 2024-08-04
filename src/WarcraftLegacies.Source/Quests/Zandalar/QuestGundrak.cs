@@ -14,10 +14,10 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
   /// </summary>
   public sealed class QuestGundrak : QuestData
   {
-    private const int _gundrakResearch = UPGRADE_R02Q_QUEST_COMPLETED_THE_DRAKKARI_FORTRESS_WARSONG;
-    private const int _warlordId = UNIT_NFTK_WARLORD_WARSONG;
-    private const int _trollShrineId = UNIT_O04X_LOA_SHRINE_ZANDALARI_SIEGE;
-    private readonly int goldReward = 50;
+    private const int GundrakResearch = UPGRADE_R02Q_QUEST_COMPLETED_THE_DRAKKARI_FORTRESS_WARSONG;
+    private const int WarlordId = UNIT_NFTK_WARLORD_WARSONG;
+    private const int TrollShrineId = UNIT_O04X_LOA_SHRINE_ZANDALARI_SIEGE;
+    private readonly int _goldReward = 50;
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestGundrak"/> class
     /// </summary>
@@ -35,22 +35,22 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"{goldReward} gold and the ability to train {GetObjectName(_warlordId)}s from the {GetObjectName(_trollShrineId)}.";
+      $"{_goldReward} gold and the ability to train {GetObjectName(WarlordId)}s from the {GetObjectName(TrollShrineId)}.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       if (completingFaction.Player != null)
       {
-        SetPlayerTechResearched(completingFaction.Player, _gundrakResearch, 1);
-        completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, goldReward);
+        SetPlayerTechResearched(completingFaction.Player, GundrakResearch, 1);
+        completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, _goldReward);
       }
     }
 
     /// <inheritdoc/>
     protected override void OnAdd(Faction whichFaction)
     {
-      whichFaction.ModObjectLimit(_gundrakResearch, Faction.UNLIMITED);
+      whichFaction.ModObjectLimit(GundrakResearch, Faction.UNLIMITED);
     }
   }
 }
