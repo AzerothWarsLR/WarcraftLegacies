@@ -23,7 +23,13 @@ jobs:
                     solutionPath: ./WarcraftLegacies.sln
                     minimumSeverity: error
                     failOnIssue: 1
-                    solutionWideAnalysis: true
+                    include: |
+                        ./src/MacroTools/**
+                        ./src/WarcraftLegacies.Source/**
+                        ./src/WarcraftLegacies.Shared/**
+                        ./src/Launcher/**
+                        ./src/TestMap/**
+                    solutionWideAnalysis: false
                     
     Integrity-Check:
         runs-on: windows-latest
