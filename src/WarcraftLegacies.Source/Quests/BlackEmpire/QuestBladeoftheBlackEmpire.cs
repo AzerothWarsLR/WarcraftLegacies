@@ -1,9 +1,7 @@
 ﻿using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;

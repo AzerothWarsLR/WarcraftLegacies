@@ -1,11 +1,7 @@
 ﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
-using MacroTools.ObjectiveSystem.Objectives.QuestBased;
-using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Quests.Cthun;
 
 namespace WarcraftLegacies.Source.Quests.BlackEmpire
 {

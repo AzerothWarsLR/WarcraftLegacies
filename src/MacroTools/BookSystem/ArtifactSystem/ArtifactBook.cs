@@ -1,6 +1,5 @@
 ﻿using MacroTools.ArtifactSystem;
 using MacroTools.BookSystem.Core;
-using MacroTools.BookSystem.Powers;
 using MacroTools.Extensions;
 using WCSharp.Shared.Data;
 using static War3Api.Common;

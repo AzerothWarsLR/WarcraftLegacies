@@ -7,7 +7,6 @@ using MacroTools.SpellSystem;
 using System.Collections.Generic;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.BlackEmpire;
-using WarcraftLegacies.Source.Quests.Cthun;
 using WarcraftLegacies.Source.Setup;
 
 
@@ -151,4 +150,4 @@ namespace WarcraftLegacies.Source.Factions
       PassiveAbilityManager.Register(greaterParalysingFear);
     }
   }
-};
+}

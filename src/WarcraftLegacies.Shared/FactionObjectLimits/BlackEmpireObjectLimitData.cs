@@ -1,4 +1,4 @@
-﻿using static Constants;using System.Collections.Generic;
+﻿using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
