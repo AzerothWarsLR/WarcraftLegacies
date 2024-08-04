@@ -2,8 +2,8 @@
   {
     "Flags": 2,
     "OwnerId": 24,
-    "HP": -1,
-    "MP": 200,
+    "Hp": -1,
+    "Mp": -1,
     "TargetAcquisition": -1,
     "HeroLevel": 1,
     "InventoryData": [],

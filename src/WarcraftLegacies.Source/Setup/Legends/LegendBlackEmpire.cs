@@ -24,19 +24,19 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Zonozz = new LegendaryHero("General Vezax")
       {
         UnitType = UNIT_U00P_LIEUTENANT_OF_N_ZOTH,
-        StartingXp = 7000,
+        StartingXp = 5000,
       };
 
       Xkorr = new LegendaryHero("X'korr the Compelling")
       {
         UnitType = UNIT_E01D_HARBINGER_OF_NY_ALOTHA_YOGG,
-        StartingXp = 7000,
+        StartingXp = 2800,
       };
 
       Yorsahj = new LegendaryHero("Yor'sahj")
       {
         UnitType = UNIT_U02B_N_RAQI_ABERRATION,
-        StartingXp = 7000,
+        StartingXp = 0,
       };
     }
     public void RegisterLegends()

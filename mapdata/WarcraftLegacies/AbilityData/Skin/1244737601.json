@@ -59,7 +59,7 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "Learn Greater Flame Strike - [|cffffcc00Level %d|r]"
+      "Value": "Learn Inferno Strike - [|cffffcc00Level %d|r]"
     },
     {
       "Level": 3,
@@ -118,7 +118,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Greater Flame Strike"
+      "Value": "Inferno Strike"
     }
   ]
 }

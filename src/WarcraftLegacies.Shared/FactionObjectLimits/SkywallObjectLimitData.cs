@@ -9,8 +9,8 @@
       yield return new(Constants.UNIT_N05Q_HOLDFAST_ELEMENTAL_T1, Unlimited);
       yield return new(Constants.UNIT_N05W_FORTIFIED_BURG_ELEMENTAL_T2, Unlimited);
       yield return new(Constants.UNIT_N06R_GREAT_ALCAZAR_ELEMENTAL_T3, Unlimited);
-      yield return new(Constants.UNIT_H03I_PROCESSING_FACILITY_ELEMENTAL_RESEARCH, Unlimited);
-      yield return new(Constants.UNIT_N08A_ARCANE_FOUNDRY_ELEMENTAL_BARRACKS, Unlimited);
+      yield return new(Constants.UNIT_H03I_NIJARA_ELEMENTAL_RESEARCH, Unlimited);
+      yield return new(Constants.UNIT_N08A_FOUNDRY_ELEMENTAL_BARRACKS, Unlimited);
       yield return new(Constants.UNIT_N07N_PAVILION_ELEMENTAL_MAGIC, Unlimited);
       yield return new(Constants.UNIT_N08B_DJINN_PALACE_ELEMENTAL_SPECIALIST, Unlimited);
       yield return new(Constants.UNIT_N07J_FORGE_OF_WISHES_ELEMENTAL_SHOP, Unlimited);

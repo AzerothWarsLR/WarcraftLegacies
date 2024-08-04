@@ -96,7 +96,9 @@ namespace WarcraftLegacies.Source.Setup
     public LegendNazjatar Nazjatar { get; }
     
     public LegendBlackEmpire BlackEmpire { get; }
-    
+
+    public LegendSkywall Skywall { get; }
+
     public LegendTwilight Twilight { get; }
     
     public LegendGilneas Gilneas { get; }
@@ -135,6 +137,7 @@ namespace WarcraftLegacies.Source.Setup
       Ahnqiraj = new LegendAhnqiraj(preplacedUnitSystem);
       Nazjatar = new LegendNazjatar();
       BlackEmpire = new LegendBlackEmpire(preplacedUnitSystem);
+      Skywall = new LegendSkywall(preplacedUnitSystem);
       Twilight = new LegendTwilight();
       Scarlet = new LegendScarlet(preplacedUnitSystem);
     }
@@ -164,6 +167,7 @@ namespace WarcraftLegacies.Source.Setup
       Ahnqiraj.RegisterLegends();
       Nazjatar.RegisterLegends();
       BlackEmpire.RegisterLegends();
+      Skywall.RegisterLegends();
       Twilight.RegisterLegends();
       Neutral.RegisterLegends();
       Gilneas.RegisterLegends();

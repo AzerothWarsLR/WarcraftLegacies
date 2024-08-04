@@ -20,6 +20,7 @@ namespace WarcraftLegacies.Source.Factions
     {
       ControlPointDefenderUnitTypeId = Constants.UNIT_NECP_CONTROL_POINT_DEFENDER_SKYWALL_TOWER;
       TraditionalTeam = TeamSetup.OldGods;
+      StartingGold = 200;
     }
 
     /// <inheritdoc />
