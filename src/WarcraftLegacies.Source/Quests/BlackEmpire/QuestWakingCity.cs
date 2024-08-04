@@ -24,6 +24,8 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     /// Initializes a new instance of the <see cref="QuestWakingCity"/> class.
     /// </summary>
     /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
+    /// <param name= "prerequisite">What quest is required to complete this.</param>
+    /// <param name= "allLegendSetup"> required to grab the hero.</param>
     public QuestWakingCity(QuestData prerequisite, AllLegendSetup allLegendSetup, Rectangle rescueRect) : base("The Waking City",
       "Adventurers from Azeroth are threatening me, your god. Annihilate them.",
       @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")

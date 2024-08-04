@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
       $"N'zoth gains {SkillPoints} skill points";
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="QuestWarOfTheShiftingSand"/> class.
+    /// Initializes a new instance of the <see cref="QuestWorldStone"/> class.
     /// </summary>
     public QuestWorldStone(LegendaryHero nzoth, Capital thunderbluff, Capital orgrimmar) : base("The World Stone",
       "The Horde shamans, through rituals, are preventing me from expanding through the earth. I will need to destroy the seats of their power",

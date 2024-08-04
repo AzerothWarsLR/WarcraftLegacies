@@ -24,20 +24,19 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Moam = new LegendaryHero("Moam")
       {
         UnitType = UNIT_U00Z_OBSIDIAN_DESTROYER,
-        StartingXp = 7000,
+        StartingXp = 1000,
       };
 
       Skeram = new LegendaryHero("Prophet Skeram")
       {
         UnitType = UNIT_E005_THE_PROPHET,
-        StartingXp = 7000,
-        PlayerColor = PLAYER_COLOR_RED
+        StartingXp = 0,
       };
 
       Ouro = new LegendaryHero("Ouro")
       {
         UnitType = UNIT_U02S_ANCIENT_SAND_WORM,
-        StartingXp = 7000,
+        StartingXp = 2800,
       };
     }
     public void RegisterLegends()
