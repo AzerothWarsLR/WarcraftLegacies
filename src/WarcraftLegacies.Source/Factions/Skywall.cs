@@ -6,6 +6,8 @@ using MacroTools.ResearchSystems;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Quests.Cthun;
+using WarcraftLegacies.Source.Quests.Skywall;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
@@ -29,7 +31,16 @@ namespace WarcraftLegacies.Source.Factions
       RegisterResearches();
       RegisterObjectLimits();
       RegisterSpells();
+      RegisterQuests();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    }
+
+    private void RegisterQuests()
+    {
+      var newQuest = AddQuest(new QuestVortexPinnacle(Regions.Tempest_Rain));
+      StartingQuest = newQuest;
+      AddQuest(new QuestEmissary());
+
     }
 
     private void RegisterResearches()

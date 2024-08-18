@@ -1,0 +1,63 @@
+{
+  "OldId": 846229109,
+  "NewId": 1397978995,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Z"
+    },
+    {
+      "Id": 1919447925,
+      "Value": 0
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary structure. "
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Scourge T3)"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Sulfuron Spire"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Demon_BulwarkBastionCitadel.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDemonHallsOfTheDead.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\RedDragonBreath\\RedDragonMissile.mdl"
+    }
+  ]
+}
