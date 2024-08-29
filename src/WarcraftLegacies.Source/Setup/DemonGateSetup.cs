@@ -18,12 +18,12 @@ namespace WarcraftLegacies.Source.Setup
       PassiveAbilityManager.Register(new FocalDemonGate(UNIT_N0AP_FOCAL_DEMON_GATE_FEL_HORDE_SIEGE));
 
       // Red
-      PassiveAbilityManager.Register(new DemonGateType(UNIT_N000_FEL_HOUND_DEMON_GATE_T1_HOUNDS, UNIT_N059_FEL_HOUND_FEL_HORDE_PORTAL, 30, 1));
-      PassiveAbilityManager.Register(new DemonGateType(UNIT_N05F_VOIDWALKER_DEMON_GATE_T1_VOIDWALKER, UNIT_NVDL_VOIDWALKER_FEL_HORDE_PORTAL, 30, 1));
+      PassiveAbilityManager.Register(new DemonGateType(UNIT_N000_FEL_HOUND_DEMON_GATE_T1_HOUNDS, UNIT_N059_FEL_HOUND_FEL_HORDE_PORTAL, 30, 1, 12));
+      PassiveAbilityManager.Register(new DemonGateType(UNIT_N05F_VOIDWALKER_DEMON_GATE_T1_VOIDWALKER, UNIT_NVDL_VOIDWALKER_FEL_HORDE_PORTAL, 30, 1, 12));
 
       // Fel Gates
-      PassiveAbilityManager.Register(new DemonGateType(UNIT_N05I_FEL_HOUND_PACK_DEMON_GATE_T2_HOUNDS_PACK, UNIT_N059_FEL_HOUND_FEL_HORDE_PORTAL, 30, 3));
-      PassiveAbilityManager.Register(new DemonGateType(UNIT_N05R_FELGUARD_DEMON_GATE_T2_BLOODFIEND, UNIT_N05B_FELGUARD_FEL_HORDE_PORTAL, 60, 2));
+      PassiveAbilityManager.Register(new DemonGateType(UNIT_N05I_FEL_HOUND_PACK_DEMON_GATE_T2_HOUNDS_PACK, UNIT_N059_FEL_HOUND_FEL_HORDE_PORTAL, 30, 3, 12));
+      PassiveAbilityManager.Register(new DemonGateType(UNIT_N05R_FELGUARD_DEMON_GATE_T2_BLOODFIEND, UNIT_N05B_FELGUARD_FEL_HORDE_PORTAL, 60, 2, 12));
       PassiveAbilityManager.Register(new DemonGateType(UNIT_N06H_PIT_FIEND_DEMON_GATE_T2_PITFIEND, UNIT_O015_PIT_FIEND_FEL_HORDE_PORTAL, 60, 1, 6));
 
       // Void Gates

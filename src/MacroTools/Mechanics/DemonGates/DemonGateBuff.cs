@@ -85,7 +85,7 @@ namespace MacroTools.Mechanics.DemonGates
     public override void OnApply()
     {
       Target
-        .IssueOrder(852002, Target.GetPosition())
+        .IssueOrder(OrderId("setrally"), Target.GetPosition())
         .SetMaximumMana((int)_spawnInterval)
         .AddAbility(_toggleAbilityTypeId)
         .IssueOrder("immolation");
@@ -132,7 +132,7 @@ namespace MacroTools.Mechanics.DemonGates
       for (var i = 0; i < _spawnCount; i++)
       {
         var spawnedDemon = CreateUnit(Target.OwningPlayer(), _demonUnitTypeId, SpawnPoint.X, SpawnPoint.Y, Target.GetFacing() + FacingOffset)
-          .IssueOrder(851983, RallyPoint);
+          .IssueOrder(OrderId("attack"), RallyPoint);
         
         _spawnedDemons.Add(spawnedDemon);
 

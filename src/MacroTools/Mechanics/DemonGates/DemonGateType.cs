@@ -21,8 +21,8 @@ namespace MacroTools.Mechanics.DemonGates
     /// <param name="demonUnitTypeId">The unit to spawn.</param>
     /// <param name="spawnInterval">How often to spawn the unit.</param>
     /// <param name="spawnCount">How many of the unit to spawn each time.</param>
-    /// <param name="spawnLimit">How many of the unit to spawn each time.</param>
-    public DemonGateType(int gateUnitTypeId, int demonUnitTypeId, float spawnInterval, int spawnCount, int spawnLimit = 12) : base(gateUnitTypeId)
+    /// <param name="spawnLimit">The maximum number of units that will be spawned per gate.</param>
+    public DemonGateType(int gateUnitTypeId, int demonUnitTypeId, float spawnInterval, int spawnCount, int spawnLimit) : base(gateUnitTypeId)
     {
       _demonUnitTypeId = demonUnitTypeId;
       _spawnInterval = spawnInterval;
