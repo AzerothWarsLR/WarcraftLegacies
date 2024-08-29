@@ -26,7 +26,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(T3 Voidlord)"
+      "Value": "(T2 Voidlord)"
     },
     {
       "Id": 1735156597,
@@ -59,7 +59,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Gateway attuned to the Voidlords of the Burning Crusade, summoning 1 every 60 seconds. |n|n|cfff5962dAbilities:|R Frost Attack, Soul Ritual"
+      "Value": "Gateway attuned to the Voidlords of the Burning Crusade, summoning 1 every 60 seconds. |n|n|cfff5962dAbilities:|R Frost Attack, Soul Ritual|n|n|cff99b4d1Limit 6 per gate."
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
     }
   ]
 }

@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNVoidWalker.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNetherDragon.blp"
     },
     {
       "Id": 1651270517,
@@ -22,7 +22,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(T2 Voidcrusher)"
+      "Value": "(T2 Nether Drake)"
     },
     {
       "Id": 1735156597,
@@ -36,7 +36,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Voidcrusher Demon Gate"
+      "Value": "Nether Drake Demon Gate"
     },
     {
       "Id": 1919705973,
@@ -45,7 +45,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Upgrade to Voidcrusher Demon Gate"
+      "Value": "Upgrade to Nether Drake Demon Gate"
     },
     {
       "Id": 1935832437,
@@ -55,11 +55,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Gateway attuned to the Voidcrushers of the Burning Crusade, summoning 1 every 60 seconds. |n|n|cfff5962dAbilities:|R Frost Attack"
+      "Value": "Gateway attuned to the void infused Nether Drakes of the Burning Crusade, summoning 1 every 60 seconds. |n|n|cfff5962dAbilities:|R Spell Resistance|n|n|cff99b4d1Limit 6 per gate."
     },
     {
-      "Id": 2020631157,
-      "Value": 2
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
     }
   ]
 }

@@ -55,11 +55,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Gateway attuned to the Fel Hounds of the Burning Crusade, summoning 6 every 80 seconds. |n|n|cfff5962dAbilities:|R Feedback"
+      "Value": "Gateway attuned to the packs of numerous Fel Hounds of the Burning Crusade, summoning 3 every 30 seconds. |n|n|cfff5962dAbilities:|R Mana Burn, Magic Resistance, Feedback|n|n|cff99b4d1Limit 12 per gate."
     },
     {
-      "Id": 2020631157,
-      "Value": 2
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
     }
   ]
 }

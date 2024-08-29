@@ -89,6 +89,7 @@ namespace MacroTools.Mechanics.DemonGates
         .SetMaximumMana((int)_spawnInterval)
         .AddAbility(_toggleAbilityTypeId)
         .IssueOrder("immolation");
+      Progress = _spawnInterval / 2;
     }
 
     /// <inheritdoc />
@@ -100,7 +101,7 @@ namespace MacroTools.Mechanics.DemonGates
           && Caster.OwningPlayer().GetFoodUsed() < Caster.OwningPlayer().GetFoodCap()
           && Caster.OwningPlayer().GetFoodUsed() < Caster.OwningPlayer().GetFoodCapCeiling()
           && GetUnitAbilityLevel(Caster, _toggleBuffTypeId) > 0
-          && _spawnedDemons.Count < SpawnLimit)
+          && _spawnedDemons.Count <= SpawnLimit - _spawnCount)
       {
         SpawnDemon();
       }
