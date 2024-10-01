@@ -285,6 +285,7 @@ public static class Regions
 	public static Rectangle Stromgarde { get; set; } = new Rectangle(12896f, 192f, 15232f, 1632f);
 	public static Rectangle Stromwind_antiship { get; set; } = new Rectangle(7968f, -12768f, 11520f, -9344f);
 	public static Rectangle STV_Ships { get; set; } = new Rectangle(10112f, -20032f, 14048f, -17600f);
+	public static Rectangle SulfuronSpire { get; set; } = new Rectangle(-11520f, 4352f, -10656f, 5120f);
 	public static Rectangle SunfuryStartingPosition { get; set; } = new Rectangle(1888f, -23424f, 3616f, -22048f);
 	public static Rectangle Sunwell { get; set; } = new Rectangle(18144f, 21248f, 18976f, 22048f);
 	public static Rectangle SunwellAmbient { get; set; } = new Rectangle(15168f, 17440f, 21376f, 23104f);
@@ -355,6 +356,5 @@ public static class Regions
 	public static Rectangle ZulAman_trolls { get; set; } = new Rectangle(20288f, 11648f, 22848f, 17440f);
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
-	public static Rectangle SulfuronSpire { get; set; } = new Rectangle(-11520f, 4352f, -10656f, 5120f);
 
 }

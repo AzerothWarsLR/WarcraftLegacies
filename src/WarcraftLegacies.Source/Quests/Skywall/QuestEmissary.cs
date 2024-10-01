@@ -24,9 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Skywall
       "Ragnaros and the Firelands will join the Old Gods, we need to make contact with them.",
       @"ReplaceableTextures\CommandButtons\BTNHeroAvatarOfFlame.blp")
     {
-      AddObjective(new ObjectiveControlPoint(UNIT_N0BD_ULDUM));
-      AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.UldumAmbiance }, "in Uldum"));
-      AddObjective(new ObjectiveExpire(660, Title));
+      AddObjective(new ObjectiveControlPoint(UNIT_N025_UN_GORO_CRATER));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = UPGRADE_RSW2_QUEST_COMPLETED_EMISSARY_OF_THE_FIRELANDS;
 

@@ -40,6 +40,7 @@ namespace WarcraftLegacies.Source.Factions
       var newQuest = AddQuest(new QuestVortexPinnacle(Regions.Tempest_Rain));
       StartingQuest = newQuest;
       AddQuest(new QuestEmissary());
+      AddQuest(new QuestThroneWind(Regions.ThroneoftheFourWind));
 
     }
 
