@@ -11,13 +11,9 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNNetherDragon.blp"
     },
     {
-      "Id": 2020631157,
-      "Value": 2
-    },
-    {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Fel Horde)"
+      "Value": "(Fel Horde-Portal)"
     },
     {
       "Id": 1818520949,
@@ -37,7 +33,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.9
+      "Value": 0.7
     },
     {
       "Id": 1835101813,
@@ -52,7 +48,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Captured drake of from Outland.|n|cfff5962dAbilities:|R Soul Burn, Spell Resistance.|n|n|cff99b4d1Can only summon 6. |r|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Swift nether drake summoned from the void.|n|cfff5962dAbilities:|R Spell Resistance.|n |r|n|cffffcc00Attacks land and air units.|r|n|n|cff99b4d1Limit 6 per gate."
     },
     {
       "Id": 1684960117,

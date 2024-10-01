@@ -8,7 +8,7 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "A0P7,A07C"
+      "Value": "A07C"
     },
     {
       "Id": 1949393269,
@@ -18,10 +18,6 @@
     {
       "Id": 1684824693,
       "Value": 6
-    },
-    {
-      "Id": 1835098997,
-      "Value": 1
     },
     {
       "Id": 2037671029,
@@ -55,7 +51,7 @@
     {
       "Id": 1667330677,
       "Type": 3,
-      "Value": "undead"
+      "Value": "orc"
     },
     {
       "Id": 1919970677,
@@ -74,7 +70,7 @@
     {
       "Id": 1731289461,
       "Type": 3,
-      "Value": "debris,ground,item,nonancient,structure,ward"
+      "Value": "air,debris,ground,item,nonancient,structure,ward"
     },
     {
       "Id": 1919381621,
@@ -94,6 +90,30 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1836083317,
+      "Value": 975
+    },
+    {
+      "Id": 1701868405,
+      "Value": 1
+    },
+    {
+      "Id": 1936681077,
+      "Value": 0
+    },
+    {
+      "Id": 1647403381,
+      "Value": 40
+    },
+    {
+      "Id": 1915838837,
+      "Value": 600
+    },
+    {
+      "Id": 1852137845,
+      "Value": 1
     }
   ]
 }

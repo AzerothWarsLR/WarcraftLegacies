@@ -86,7 +86,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Winged demon-cousin of the Doomguard, and bringer of shadow and misery.|n|cfff5962dAbilities:|R Consume, Nether\u0027s Eye, Living Missile, Resistant Skin, True Sight|n|n|cff99b4d1Can only summon 4.|r|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Winged demon-cousin of the Doomguard, and bringer of shadow and misery.|n|cfff5962dAbilities:|R Consume, Nether\u0027s Eye, Living Missile, Resistant Skin, True Sight|n|r|n|cffffcc00Attacks land and air units.|r|n|n|cff99b4d1Limit 6 per gate."
     },
     {
       "Id": 1684960117,
@@ -97,6 +97,10 @@
       "Id": 1633907573,
       "Type": 1,
       "Value": 0.8
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
     }
   ]
 }

@@ -21,7 +21,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": 2
     },
     {
       "Id": 1718840949,
@@ -59,7 +59,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Gateway attuned to the Pit Fiends of the Burning Crusade, summoning 1 every 90 seconds. |n|n|cfff5962dAbility:|R Self-Bloodlust"
+      "Value": "Gateway attuned to the Pit Fiends of the Burning Crusade, summoning 1 every 60 seconds. |n|n|cfff5962dAbility:|R Self-Bloodlust, Felsteel Plating|n|n|cff99b4d1Limit 6 per gate."
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
     }
   ]
 }

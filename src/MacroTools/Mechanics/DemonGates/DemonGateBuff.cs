@@ -85,10 +85,11 @@ namespace MacroTools.Mechanics.DemonGates
     public override void OnApply()
     {
       Target
-        .IssueOrder("setrally", Target.GetPosition())
+        .IssueOrder(OrderId("setrally"), Target.GetPosition())
         .SetMaximumMana((int)_spawnInterval)
         .AddAbility(_toggleAbilityTypeId)
         .IssueOrder("immolation");
+      Progress = _spawnInterval / 2;
     }
 
     /// <inheritdoc />
@@ -100,7 +101,7 @@ namespace MacroTools.Mechanics.DemonGates
           && Caster.OwningPlayer().GetFoodUsed() < Caster.OwningPlayer().GetFoodCap()
           && Caster.OwningPlayer().GetFoodUsed() < Caster.OwningPlayer().GetFoodCapCeiling()
           && GetUnitAbilityLevel(Caster, _toggleBuffTypeId) > 0
-          && _spawnedDemons.Count < SpawnLimit)
+          && _spawnedDemons.Count <= SpawnLimit - _spawnCount)
       {
         SpawnDemon();
       }
@@ -112,7 +113,7 @@ namespace MacroTools.Mechanics.DemonGates
       if (newStack is DemonGateBuff newDemonGateBuff) 
         _demonUnitTypeId = newDemonGateBuff._demonUnitTypeId;
       Target.SetMaximumMana((int)_spawnInterval);
-      return StackResult.Stack;
+      return StackResult.Consume;
     }
 
     /// <summary>
@@ -130,10 +131,11 @@ namespace MacroTools.Mechanics.DemonGates
     {
       for (var i = 0; i < _spawnCount; i++)
       {
-        var spawnedDemon = CreateUnit(Target.OwningPlayer(), _demonUnitTypeId, SpawnPoint.X, SpawnPoint.Y,
-          Target.GetFacing() + FacingOffset)
-          .IssueOrder("attack", RallyPoint);
+        var spawnedDemon = CreateUnit(Target.OwningPlayer(), _demonUnitTypeId, SpawnPoint.X, SpawnPoint.Y, Target.GetFacing() + FacingOffset)
+          .IssueOrder(OrderId("attack"), RallyPoint);
+        
         _spawnedDemons.Add(spawnedDemon);
+
         CreateTrigger()
           .RegisterUnitEvent(spawnedDemon, EVENT_UNIT_DEATH)
           .AddAction(() =>
