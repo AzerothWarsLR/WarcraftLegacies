@@ -41,6 +41,7 @@ namespace WarcraftLegacies.Source.Factions
       StartingQuest = newQuest;
       AddQuest(new QuestEmissary());
       AddQuest(new QuestThroneWind(Regions.ThroneoftheFourWind));
+      AddQuest(new QuestSubduing());
 
     }
 
