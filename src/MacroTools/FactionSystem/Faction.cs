@@ -285,13 +285,11 @@ namespace MacroTools.FactionSystem
 
       if (Player != null)
       {
-        var defeatedPlayer = Player;
-        FogModifierStart(CreateFogModifierRect(defeatedPlayer, FOG_OF_WAR_VISIBLE,
+        FogModifierStart(CreateFogModifierRect(Player, FOG_OF_WAR_VISIBLE,
           Rectangle.WorldBounds.Rect, false, false));
-        RemovePlayer(defeatedPlayer, PLAYER_GAME_RESULT_DEFEAT);
-        SetPlayerState(defeatedPlayer, PLAYER_STATE_OBSERVER, 1);
-        defeatedPlayer.SetFaction(null);
-        PlayerDistributor.DistributePlayer(defeatedPlayer);
+        RemovePlayer(Player, PLAYER_GAME_RESULT_DEFEAT);
+        SetPlayerState(Player, PLAYER_STATE_OBSERVER, 1);
+        PlayerDistributor.DistributePlayer(Player);
         RemoveGoldMines();
       }
 
