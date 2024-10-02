@@ -8,8 +8,6 @@ using MacroTools.SpellSystem;
 using System.Collections.Generic;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Scourge.Plague;
-using WarcraftLegacies.Source.Quests.Cthun;
-using WarcraftLegacies.Source.Quests.Scourge;
 using WarcraftLegacies.Source.Quests.Skywall;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
