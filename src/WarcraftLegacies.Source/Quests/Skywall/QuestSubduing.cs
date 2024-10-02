@@ -13,7 +13,6 @@ namespace WarcraftLegacies.Source.Quests.Skywall
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestSubduing"/> class.
     /// </summary>
-    /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
     public QuestSubduing() : base("Subduing Neptulon",
       "Neptulon is refusing to join us, we will force him to",
       @"ReplaceableTextures\CommandButtons\BTNTidelord.blp")
