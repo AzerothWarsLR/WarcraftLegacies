@@ -158,6 +158,12 @@ public static class Regions
 	public static Rectangle IllidanStartingPosition { get; set; } = new Rectangle(-640f, 5152f, 1536f, 6720f);
 	public static Rectangle IllidariUnlockSA { get; set; } = new Rectangle(12000f, -22816f, 13376f, -21280f);
 	public static Rectangle InstanceOutland { get; set; } = new Rectangle(-7104f, -32256f, 6016f, -18208f);
+	public static Rectangle Invasion1 { get; set; } = new Rectangle(-13152f, 3936f, -10560f, 5056f);
+	public static Rectangle Invasion2 { get; set; } = new Rectangle(-14624f, 5184f, -13664f, 8992f);
+	public static Rectangle Invasion3 { get; set; } = new Rectangle(-17856f, 5792f, -15680f, 9120f);
+	public static Rectangle Invasion4 { get; set; } = new Rectangle(-15040f, 2240f, -13632f, 5120f);
+	public static Rectangle Invasion5 { get; set; } = new Rectangle(-15680f, 896f, -11168f, 2176f);
+	public static Rectangle Invasion6 { get; set; } = new Rectangle(-13120f, 5856f, -8992f, 7072f);
 	public static Rectangle Ironforge { get; set; } = new Rectangle(9792f, -5728f, 10016f, -5536f);
 	public static Rectangle IronforgeAmbient { get; set; } = new Rectangle(9504f, -6656f, 11712f, -4160f);
 	public static Rectangle JainaChannel { get; set; } = new Rectangle(-9888f, 17632f, -9792f, 17728f);
@@ -239,6 +245,7 @@ public static class Regions
 	public static Rectangle RiseBaseUnlock { get; set; } = new Rectangle(-13056f, 5440f, -11072f, 7488f);
 	public static Rectangle RuinOfDalaran { get; set; } = new Rectangle(9152f, 5056f, 9312f, 5248f);
 	public static Rectangle Sargeras_Entrance { get; set; } = new Rectangle(-1024f, 8096f, -448f, 8576f);
+	public static Rectangle SatyrCamp { get; set; } = new Rectangle(-14816f, 6080f, -13888f, 6912f);
 	public static Rectangle Scarlet_Spawn { get; set; } = new Rectangle(19904f, 9472f, 21568f, 10624f);
 	public static Rectangle ScarletHarbor { get; set; } = new Rectangle(-9728f, 21984f, -7872f, 23648f);
 	public static Rectangle ScholomanceAmbient1 { get; set; } = new Rectangle(13728f, 7072f, 16096f, 8416f);
@@ -355,11 +362,5 @@ public static class Regions
 	public static Rectangle ZulAman_trolls { get; set; } = new Rectangle(20288f, 11648f, 22848f, 17440f);
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
-	public static Rectangle Invasion1 { get; set; } = new Rectangle(-13152f, 3936f, -10560f, 5056f);
-	public static Rectangle Invasion2 { get; set; } = new Rectangle(-14624f, 5184f, -13664f, 8992f);
-	public static Rectangle Invasion3 { get; set; } = new Rectangle(-17856f, 5792f, -15680f, 9120f);
-	public static Rectangle Invasion4 { get; set; } = new Rectangle(-15040f, 2240f, -13632f, 5120f);
-	public static Rectangle Invasion5 { get; set; } = new Rectangle(-15680f, 896f, -11168f, 2176f);
-	public static Rectangle Invasion6 { get; set; } = new Rectangle(-13120f, 5856f, -8992f, 7072f);
 
 }
