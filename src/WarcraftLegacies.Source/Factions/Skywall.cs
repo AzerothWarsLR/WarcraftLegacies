@@ -59,7 +59,7 @@ namespace WarcraftLegacies.Source.Factions
         Regions.Invasion5,
         Regions.Invasion6,
       };
-      invasionParameters.InvasionArmySummonParameters = new List<PlagueArmySummonParameter>
+      invasionParameters.InvasionArmySummonParameters = new List<InvasionArmySummonParameter>
       {
         new(1, UNIT_LS05_SHAPER_ELEMENTAL),
         new(4, UNIT_N0CG_CORE_HOUND_RAGNAROS),
