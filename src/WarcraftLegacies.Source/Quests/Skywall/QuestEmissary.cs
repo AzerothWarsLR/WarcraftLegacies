@@ -19,7 +19,6 @@ namespace WarcraftLegacies.Source.Quests.Skywall
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestEmissary"/> class.
     /// </summary>
-    /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
     public QuestEmissary() : base("Emissary of the Firelands",
       "Ragnaros and the Firelands will join the Old Gods, we need to make contact with them.",
       @"ReplaceableTextures\CommandButtons\BTNHeroAvatarOfFlame.blp")
