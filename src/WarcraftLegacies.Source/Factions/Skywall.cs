@@ -64,8 +64,8 @@ namespace WarcraftLegacies.Source.Factions
       invasionParameters.InvasionArmySummonParameters = new List<PlagueArmySummonParameter>
       {
         new(1, UNIT_LS05_SHAPER_ELEMENTAL),
-        new(1, UNIT_N0CG_CORE_HOUND_RAGNAROS),
-        new(3, UNIT_N056_FIRE_ELEMENTAL_DAGRAN_SUMMON_LEVEL_4),
+        new(4, UNIT_N0CG_CORE_HOUND_RAGNAROS),
+        new(6, UNIT_N056_FIRE_ELEMENTAL_DAGRAN_SUMMON_LEVEL_4),
       };
       invasionParameters.AttackTargets = new List<Point>
       {
