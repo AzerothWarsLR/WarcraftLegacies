@@ -1,12 +1,6 @@
-﻿using System.Collections.Generic;
-using MacroTools.Extensions;
-using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+﻿using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
-using MacroTools.ObjectiveSystem.Objectives.TimeBased;
-using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Skywall
 { 
