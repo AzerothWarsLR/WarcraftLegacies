@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Factions
     public Druids(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) :
       base("Druids", PLAYER_COLOR_BROWN, "|c004e2a04", @"ReplaceableTextures\CommandButtons\BTNFurion.blp")
     {
-      TraditionalTeam = TeamSetup.NightElves;
+      TraditionalTeam = TeamSetup.Kalimdor;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
@@ -81,8 +81,8 @@ Gather your forces and strike before the Horde can organize their efforts.";
       AddQuest(new QuestShrineBase(Regions.ShrineBaseUnlock));
       AddQuest(new QuestRiseBase(Regions.RiseBaseUnlock));
       AddQuest(new QuestAshenvale(Regions.AshenvaleUnlock));
-      AddQuest(new QuestDruidsKillFrostwolf(_allLegendSetup.Frostwolf.ThunderBluff));
-      AddQuest(new QuestDruidsKillWarsong());
+      AddQuest(new QuestDruidsKillElemental(_allLegendSetup.Skywall.Vortex));
+      AddQuest(new QuestDruidsKillCthun(_allLegendSetup.Ahnqiraj.Cthun));
       AddQuest(new QuestShaladrassil(_allLegendSetup.Neutral.Shaladrassil));
       AddQuest(new QuestTortolla(_allLegendSetup.Druids.Tortolla));
     }

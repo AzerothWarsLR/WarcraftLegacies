@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Setup
     public static Team NightElves { get; private set; }
     public static Team Outland { get; private set; }
     public static Team OldGods { get; private set; }
-
+    public static Team Kalimdor { get; private set; }
     public static void Setup( ){
       Alliance = new Team("Alliance")
       {
@@ -60,6 +60,12 @@ namespace WarcraftLegacies.Source.Setup
         VictoryMusic = "DarkVictory"
       };
       FactionManager.Register(OldGods);
+
+      Kalimdor = new Team("Kalimdor")
+      {
+        VictoryMusic = "HeroicVictory"
+      };
+      FactionManager.Register(Kalimdor);
     }
 
   }

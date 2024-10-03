@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Factions
     public Sentinels(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80",
       @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
     {
-      TraditionalTeam = TeamSetup.NightElves;
+      TraditionalTeam = TeamSetup.Kalimdor;
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
       UndefeatedResearch = FourCC("R05Y");
