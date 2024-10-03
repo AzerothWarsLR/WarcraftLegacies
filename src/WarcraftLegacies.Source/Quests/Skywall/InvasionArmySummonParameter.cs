@@ -1,4 +1,4 @@
-﻿namespace WarcraftLegacies.Source.FactionMechanics.Scourge.Plague
+﻿namespace WarcraftLegacies.Source.Quests.Skywall.Plague
 {
   /// <summary>
   /// Specifies how many of each unit type to spawn during the Invasion.
