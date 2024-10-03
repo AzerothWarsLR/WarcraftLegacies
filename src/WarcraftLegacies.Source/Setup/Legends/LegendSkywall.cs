@@ -11,6 +11,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero Aqir { get; }
     public LegendaryHero Ragnaros { get; }
     public LegendaryHero Neptulon { get; }
+    public Capital Vortex { get; }
 
     public LegendSkywall(PreplacedUnitSystem preplacedUnitSystem)
     {
@@ -37,6 +38,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
         UnitType = UNIT_UELN_THE_TIDEHUNTER_ELEMENTAL,
         StartingXp = 7000,
       };
+
+      Vortex = new Capital
+      {
+        Unit = preplacedUnitSystem.GetUnit(FourCC("nELC")),
+        Capturable = true,
+        Essential = true
+      };
     }
     public void RegisterLegends()
     {
@@ -44,6 +52,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendaryHeroManager.Register(Aqir);
       LegendaryHeroManager.Register(Ragnaros);
       LegendaryHeroManager.Register(Neptulon);
+      CapitalManager.Register(Vortex);
     }
   }
 }

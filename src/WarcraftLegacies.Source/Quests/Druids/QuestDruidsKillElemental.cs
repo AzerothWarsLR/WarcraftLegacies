@@ -6,23 +6,23 @@ using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.Druids
 {
-  public sealed class QuestDruidsKillFrostwolf : QuestData
+  public sealed class QuestDruidsKillElemental : QuestData
   {
     private const int ElementalGuardianId = UNIT_E00X_ELEMENTAL_GUARDIAN_DRUIDS_DEMI;
 
     /// <inheritdoc/>
     public override string RewardFlavour =>
-      "The Frostwolves have been driven from Kalimdor. Their departure reveals the existence of a powerful nature spirit that now heeds the call of the Druids.";
+      "The elementals have been subdued. This new found balance reveals the existence of a powerful nature spirit that now heeds the call of the Druids.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => $"The demihero {GetObjectName(ElementalGuardianId)}";
 
-    public QuestDruidsKillFrostwolf(Capital thunderBluff) : base("Natural Contest",
-      "The Frostwolf Clan has arrived on the shores of Kalimdor. Though their respect of the wild spirits is to be admired, their presence cannot be tolerated.",
-      @"ReplaceableTextures\CommandButtons\BTNHeroTaurenChieftain.blp")
+    public QuestDruidsKillElemental(Capital vortex) : base("Deformed Nature",
+      "The elemental planes have gone out of control, disturbing the balance of nature. We need to put an end to it.",
+      @"ReplaceableTextures\CommandButtons\BTNAlAkirTownHall3.blp")
     {
-      AddObjective(new ObjectiveControlCapital(thunderBluff, false));
-      ResearchId = UPGRADE_R044_QUEST_COMPLETED_NATURAL_CONTEST_DRUIDS;
+      AddObjective(new ObjectiveControlCapital(vortex, false));
+      ResearchId = UPGRADE_R044_QUEST_COMPLETED_DEFORMED_NATURE_DRUIDS;
     }
     
     /// <inheritdoc/>

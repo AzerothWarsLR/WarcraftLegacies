@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Factions
       ArtifactSetup artifactSetup) : base("Frostwolf", PLAYER_COLOR_RED, "|c00ff0303",
       @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
     {
-      TraditionalTeam = TeamSetup.Horde;
+      TraditionalTeam = TeamSetup.Kalimdor;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;

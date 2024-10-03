@@ -1,4 +1,4 @@
-﻿namespace WarcraftLegacies.Source.FactionMechanics.Scourge.Plague
+﻿namespace WarcraftLegacies.Source.Quests.Scourge
 {
   /// <summary>
   /// Specifies how many of each unit type to spawn during the Plague.

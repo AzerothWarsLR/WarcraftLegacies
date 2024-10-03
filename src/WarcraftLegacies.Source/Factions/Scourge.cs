@@ -10,7 +10,6 @@ using MacroTools.Powers;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Scourge;
 using WarcraftLegacies.Source.FactionMechanics.Scourge.Blight;
-using WarcraftLegacies.Source.FactionMechanics.Scourge.Plague;
 using WarcraftLegacies.Source.Quests.Scourge;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
