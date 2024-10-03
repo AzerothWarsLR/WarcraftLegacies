@@ -36,6 +36,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Feathermoon = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("e00M")),
+        Capturable = true,
         Essential = true
       };
 

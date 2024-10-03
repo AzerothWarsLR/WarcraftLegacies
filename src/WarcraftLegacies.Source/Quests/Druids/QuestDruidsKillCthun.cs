@@ -10,13 +10,13 @@ namespace WarcraftLegacies.Source.Quests.Druids
   {
     private const int UnittypeId = UNIT_E012_SIEGE_ANCIENT_DRUIDS_ELITE;
 
-    public QuestDruidsKillCthun(Legend cthun) : base("The Gates of Ahn'Qiraj",
+    public QuestDruidsKillCthun(Legend cthun) : base("The War of the Shifting Sands",
       "The ravaging hordes of the Qiraji have been consumming Kalimdor. We must put an end to their rampage.",
       @"ReplaceableTextures\CommandButtons\BTNCthunT3.blp")
     {
       AddObjective(new ObjectiveKillUnit(cthun.Unit));
 
-      ResearchId = UPGRADE_R05A_QUEST_COMPLETED_THE_GATES_OF_AHN_QIRAJ;
+      ResearchId = UPGRADE_R05A_QUEST_COMPLETED_THE_WAR_OF_THE_SHIFTING_SANDS;
     }
     
     /// <inheritdoc/>
