@@ -1,30 +1,31 @@
 ﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.Sentinels
 {
   /// <summary>
-  /// Destroy Orgrimmar to unlock the Watcher Bastion as a building.
+  /// Destroy Nzoth to defeat the black empire.
   /// </summary>
-  public sealed class QuestSentinelsKillWarsong : QuestData
+  public sealed class QuestSentinelsKillBlackEmpire : QuestData
   {
     /// <summary>
-    /// Initializes a new instance of the <see cref="QuestSentinelsKillWarsong"/> class.
+    /// Initializes a new instance of the <see cref="QuestSentinelsKillBlackEmpire"/> class.
     /// </summary>
-    public QuestSentinelsKillWarsong(Capital orgrimmar) : base("Green-skinned Brutes",
+    public QuestSentinelsKillBlackEmpire(Legend nzoth) : base("Otherworldy Invaders",
       "The Warsong Clan has arrived near Ashenvale and begun threatening the wilds. These invaders must be repelled.",
-      @"ReplaceableTextures\CommandButtons\BTNRaider.blp")
+      @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
     {
-      AddObjective(new ObjectiveCapitalDead(orgrimmar));
-      ResearchId = UPGRADE_R007_QUEST_COMPLETED_GREEN_SKINNED_BRUTES_SENTINELS;
+      AddObjective(new ObjectiveKillUnit(nzoth.Unit));
+      ResearchId = UPGRADE_R007_QUEST_COMPLETED_OTHERWORDLY_INVADERS_SENTINELS;
       
     }
 
     /// <inheritdoc/>
     public override string RewardFlavour =>
-      "The Warsong presence on Kalimdor has been eliminated. The land has been protected from their misbegotten race.";
+      "The Black Empire presence on Kalimdor has been eliminated. The land has been protected from their misbegotten race.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => $"Allows {GetObjectName(UNIT_N034_GUILD_RANGER_SENTINELS)}s to be trained from {GetObjectName(UNIT_E00T_WATCHER_S_BASTION_SENTINEL_SIEGE)}s";

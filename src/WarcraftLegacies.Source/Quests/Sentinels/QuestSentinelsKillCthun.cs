@@ -1,6 +1,7 @@
 ﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.Sentinels
@@ -8,23 +9,23 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
   /// <summary>
   /// Destroy Thunderbluff to unlock a hero and a demi hero.
   /// </summary>
-  public sealed class QuestSentinelsKillFrostwolf : QuestData
+  public sealed class QuestSentinelsKillCthun : QuestData
   {
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="QuestSentinelsKillFrostwolf"/> class.
+    /// Initializes a new instance of the <see cref="QuestSentinelsKillCthun"/> class.
     /// </summary>
-    public QuestSentinelsKillFrostwolf(Capital thunderBluff) : base("Drive Them Back",
-      "The Frostwolf Clan is beginning to seize a firm foothold within the Barrens and on the plains of Mulgore. They must be driven back.",
-      @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
+    public QuestSentinelsKillCthun(Legend cthun) : base("Gates of Ahn'Qiraj",
+      "The Qiraji have bursted out of their underground city. They need to be ridden from the surface of Kalimdor.",
+      @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
     {
-      AddObjective(new ObjectiveControlCapital(thunderBluff, false));
-      ResearchId = UPGRADE_R052_QUEST_COMPLETED_DRIVE_THEM_BACK_SENTINELS;
+      AddObjective(new ObjectiveKillUnit(cthun.Unit));
+      ResearchId = UPGRADE_R052_QUEST_COMPLETED_GATES_OF_AHN_QIRAJ_SENTINELS;
       
     }
     /// <inheritdoc/>
     public override string RewardFlavour =>
-      "The Frostwolves have been ousted from Kalimdor, along with their Tauren allies. They will not be missed.";
+      "C'thun, the Qiraji god, has been killed. Their hordes have dispersed";
 
     /// <inheritdoc/>
     protected override string RewardDescription => $"Learn to train {GetObjectName(UNIT_E022_MOON_RIDER_SENTINELS)}s from the {GetObjectName(UNIT_EDOS_ROOST_SENTINEL_SPECIALIST)}s and research {GetObjectName(UPGRADE_REMG_UPGRADE_MOON_GLAIVE_LIGHT_BLUE_RESEARCH)}'s second level from the {GetObjectName(UNIT_E00L_WAR_ACADEMY_SENTINEL_BARRACKS)}";
