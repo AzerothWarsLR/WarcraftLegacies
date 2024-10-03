@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestSentinelsKillBlackEmpire"/> class.
     /// </summary>
-    public QuestSentinelsKillBlackEmpire(Legend nzoth) : base("Otherworldy Invaders",
+    public QuestSentinelsKillBlackEmpire(Legend nzoth) : base("Otherwordly Invaders",
       "The Warsong Clan has arrived near Ashenvale and begun threatening the wilds. These invaders must be repelled.",
       @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
     {
