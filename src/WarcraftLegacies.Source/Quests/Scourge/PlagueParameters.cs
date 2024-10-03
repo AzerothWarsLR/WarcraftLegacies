@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using WarcraftLegacies.Source.FactionMechanics.Scourge;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Scourge
