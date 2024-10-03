@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using WarcraftLegacies.Source.FactionMechanics.Scourge.Plague;
+using WarcraftLegacies.Source.Quests.Skywall;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Skywall
