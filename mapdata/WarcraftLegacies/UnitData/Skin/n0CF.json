@@ -58,6 +58,11 @@
       "Id": 1832018293,
       "Type": 3,
       "Value": "Abilities\\Weapons\\RedDragonBreath\\RedDragonMissile.mdl"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.5
     }
   ]
 }

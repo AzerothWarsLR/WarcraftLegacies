@@ -68,8 +68,8 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
       invasionParameters.InvasionArmySummonParameters = new List<InvasionArmySummonParameter>
       {
         new(1, UNIT_LS05_SHAPER_ELEMENTAL),
-        new(4, UNIT_N0CG_CORE_HOUND_RAGNAROS),
-        new(6, UNIT_N056_FIRE_ELEMENTAL_DAGRAN_SUMMON_LEVEL_4),
+        new(3, UNIT_N0CG_CORE_HOUND_RAGNAROS),
+        new(3, UNIT_VSW0_FIRE_ELEMENTAL_ELEMENTALS),
       };
       invasionParameters.AttackTargets = new List<Point>
       {
