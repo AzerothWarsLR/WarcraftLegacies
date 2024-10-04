@@ -27,6 +27,13 @@ namespace WarcraftLegacies.Source.Factions
       ControlPointDefenderUnitTypeId = UNIT_N0DV_CONTROL_POINT_DEFENDER_BLACK_EMPIRE_TOWER;
       TraditionalTeam = TeamSetup.OldGods;
       StartingGold = 200;
+      IntroText = @"You are playing as the Black Empire of N'zoth|r|r.
+
+You start in Nyalotha, restore the city to it's glory by repelling the invaders from Azeroth.
+
+Then, move onto Kalimdor with your allies. You will quickly run into the Sentinels.
+
+Be sure to train Forsaken Ones, they are powerful units";
     }
 
     /// <inheritdoc />
