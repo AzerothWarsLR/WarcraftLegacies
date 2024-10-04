@@ -89,7 +89,6 @@ public static class Regions
 	public static Rectangle Dreadscar_1 { get; set; } = new Rectangle(18080f, 12256f, 18784f, 14688f);
 	public static Rectangle Dreadscar_2 { get; set; } = new Rectangle(17856f, 15392f, 19360f, 17376f);
 	public static Rectangle Dreadscar_3 { get; set; } = new Rectangle(18304f, 19424f, 18816f, 21408f);
-	public static Rectangle Drekthars_Spellbook { get; set; } = new Rectangle(-10592f, 9984f, -9216f, 11328f);
 	public static Rectangle DrownedTemple { get; set; } = new Rectangle(17248f, -15936f, 17696f, -15520f);
 	public static Rectangle Dun_Morogh_Ships { get; set; } = new Rectangle(7296f, -7872f, 14240f, -4992f);
 	public static Rectangle DunmoroghAmbient1 { get; set; } = new Rectangle(6688f, -8416f, 9536f, -4096f);

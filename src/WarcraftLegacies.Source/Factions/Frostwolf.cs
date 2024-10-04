@@ -79,15 +79,15 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
     private void RegisterQuests()
     {
       StartingQuest = AddQuest(new QuestThunderBluff(Regions.ThunderBluff));
-      AddQuest(new QuestStonemaul(Regions.StonemaulKeep));
+      AddQuest(new QuestCrossroadsFrostwolf(Regions.Crossroads));
       AddQuest(new QuestDarkspear());
+      AddQuest(new QuestOrgrimmarFrostwolf(Regions.Orgrimmar));
       AddQuest(new QuestRagetotem(_allLegendSetup.Frostwolf.Cairne));
       AddQuest(new QuestHighmountain(_allLegendSetup.Frostwolf.Cairne, Regions.Highmountain_Unlock));
       AddQuest(new QuestMammoth(_allLegendSetup.Frostwolf.Rexxar));
-      AddQuest(new QuestDrektharsSpellbook(_allLegendSetup.Druids.Nordrassil, _allLegendSetup.Frostwolf.Thrall));
+      AddQuest(new QuestDrektharsSpellbook(_allLegendSetup.Skywall.Vortex, _allLegendSetup.Frostwolf.Thrall));
       AddQuest(new QuestFreeNerzhul(_allLegendSetup.Scourge.TheFrozenThrone, _allLegendSetup.Frostwolf.Thrall));
       AddQuest(new QuestWorldShaman(_allLegendSetup.Frostwolf.Thrall));
-      AddQuest(new QuestScepterOfTheQueenWarsong(Regions.TheAthenaeum, _artifactSetup.ScepterOfTheQueen, _allLegendSetup.Sentinels.Auberdine));
     }
 
     private void RegisterDialogue()

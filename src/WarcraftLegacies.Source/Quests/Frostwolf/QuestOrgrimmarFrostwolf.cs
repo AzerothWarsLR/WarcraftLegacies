@@ -29,10 +29,10 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
 
     /// <inheritdoc/>
     public override string RewardFlavour =>
-      "The city of Orgrimmar was finally constructed by the Frostwolf engineers, it is now a home for the new Horde and a symbol of power and innovation";
+      "The city of Orgrimmar was finally constructed by the Frostwolf engineers, it is now a home for the new Horde and a symbol of power and innovation. Rexxar has now joined the Horde!";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Control of all units in Orgrimmar";
+    protected override string RewardDescription => "Control of all units in Orgrimmar and enable to train Rexxar at the Altar.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
