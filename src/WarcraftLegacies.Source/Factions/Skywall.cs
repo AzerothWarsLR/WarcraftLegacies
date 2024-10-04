@@ -23,6 +23,13 @@ namespace WarcraftLegacies.Source.Factions
       ControlPointDefenderUnitTypeId = Constants.UNIT_NECP_CONTROL_POINT_DEFENDER_SKYWALL_TOWER;
       TraditionalTeam = TeamSetup.OldGods;
       StartingGold = 200;
+      IntroText = @"You are playing as the Elementals of Skywall|r|r.
+
+At the start, clear Uldum and take control of Tanaris. 
+
+Coordinate with your Qiraji ally to push the Horde before the Druids can get there.
+
+You have a very powerful event in the Burning of the World Tree. Use it at the right time to surprise the Druids and maybe attack them from behind.";
     }
 
     /// <inheritdoc />

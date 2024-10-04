@@ -38,10 +38,10 @@ namespace WarcraftLegacies.Source.Factions
 
 You begin isolated in the deepest parts of Mount Hyjal near the World Tree.
 
-The Horde is gathering to burn Ashenvale forest and the World Tree. Cenarius has emerged from his seclusion to stop them. 
+The Old Gods are  gathering to burn Ashenvale forest and the World Tree. Cenarius has emerged from his seclusion to stop them. 
 Use him to awaken Malfurion from his slumber as soon as possible.
 
-Gather your forces and strike before the Horde can organize their efforts.";
+Gather your forces and strike before the Old Gods can organize their efforts.";
       GoldMines = new List<unit>
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9200, 10742))
