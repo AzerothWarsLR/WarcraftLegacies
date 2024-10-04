@@ -1,0 +1,19 @@
+{
+  "OldId": 1634035778,
+  "NewId": 1496395842,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfDeathOn.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Shadow Infusion"
+    }
+  ]
+}

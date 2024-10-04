@@ -1,0 +1,41 @@
+{
+  "OldId": 1937140033,
+  "NewId": 1482043457,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMoonOrb.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Sentinels)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Elune\u0027s Gaze"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Turns target unit and every allied unit in a 350 area of effect invisible. If an invisible unit attacks, uses an ability or casts a spell, it will become visible. |nLasts 60 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Elune\u0027s Gaze"
+    }
+  ]
+}

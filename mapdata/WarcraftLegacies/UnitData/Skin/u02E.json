@@ -1,0 +1,80 @@
+{
+  "OldId": 1868718453,
+  "NewId": 1160917109,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBOSSGeneralVezax.blp"
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651270517,
+      "Value": 150
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Black Emprie)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\FacelessNightmareWeaver.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 200
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Herald of Ny\u0027alotha"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 200
+    },
+    {
+      "Id": 1634759541,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Herald of Ny\u0027alotha"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heralds of Ny\u0027alotha, use them to summon the Obelisks|n|cfff5962dAbilities:|R Blink, Spell Immunity, Summon Obelisk|n|n|cff99b4d1Can only train 1.|r|n|cffffcc00No Attack.|r"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Varimathras"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    }
+  ]
+}

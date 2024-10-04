@@ -1,0 +1,39 @@
+{
+  "OldId": 1802726977,
+  "NewId": 1311846465,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(yogg)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Titan Skin"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Titan Skin"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces all attacks on the unit by 20 damage. Attacks cannot be reduced below 6 damage."
+    }
+  ]
+}

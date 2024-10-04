@@ -1,0 +1,58 @@
+{
+  "OldId": 1634493032,
+  "NewId": 892874856,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkIronMill.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Ragnaros Research)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "DarkIronMillV1.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.85
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Lumber Yard"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Lumber Yard"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "General research building.|n|n|cfff5962dAbilities:|R Titanforge Artifact|n|cfff5962dResearches: |RForged Weaponry, Armor Plating, Improved Swig, Improved Masonry, Navigation, Improved Cannons, Fortified Hulls"
+    }
+  ]
+}

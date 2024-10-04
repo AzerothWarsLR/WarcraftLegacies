@@ -1,0 +1,41 @@
+{
+  "OldId": 1952937838,
+  "NewId": 1094135918,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Avul,A0A4,Awrp"
+    },
+    {
+      "Id": 1836017781,
+      "Value": 1
+    },
+    {
+      "Id": 1836083317,
+      "Value": 100000
+    },
+    {
+      "Id": 1835167349,
+      "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\StoneWall3Path.tga"
+    },
+    {
+      "Id": 1919969397,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Id": 1953654901,
+      "Type": 3,
+      "Value": "always"
+    }
+  ]
+}

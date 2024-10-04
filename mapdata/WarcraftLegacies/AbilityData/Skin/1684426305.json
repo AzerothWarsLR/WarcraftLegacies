@@ -1,0 +1,84 @@
+{
+  "OldId": 1684426305,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Azil)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1734962273,
+      "Type": 3,
+      "Value": "CLPB"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Mind Destruction"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Mind Destruction"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Instantly turns a creature mind inside-out, destroying it utterly. |n|cffffcc00Level 1|r - 800 damage. |n|cffffcc00Level 2|r - 950 damage. |n|cffffcc00Level 3|r - 1100 damage."
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\ReplenishMana\\ReplenishManaCasterOverhead.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mind Destruction - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Instantly turns a creature mind inside-out, destroying it utterly. |n|cffffcc00Level 1|r - 800 damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Instantly turns a creature mind inside-out, destroying it utterly. |n|cffffcc00Level 2|r - 950 damage."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Instantly turns a creature mind inside-out, destroying it utterly. |n|cffffcc00Level 3|r - 1100 damage."
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mind Destruction - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mind Destruction - [|cffffcc00Level 3|r]"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "OldId": 1936485697,
+  "NewId": 878260289,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCripple.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(C\u0027thun Silithid Tunneler)"
+    },
+    {
+      "Id": 1734962273,
+      "Type": 3,
+      "Value": "MBUR"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Earth Shackles"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Earth Shackles"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Binds the target in Earth energy immoblising them and dealing 30 damage per second. |nLasts 20 seconds."
+    }
+  ]
+}

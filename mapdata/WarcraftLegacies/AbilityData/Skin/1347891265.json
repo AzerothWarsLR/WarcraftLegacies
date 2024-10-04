@@ -1,0 +1,139 @@
+{
+  "OldId": 1952992833,
+  "NewId": 1347891265,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The Majordomo throws a curse of weakness on all nearby enemies, reducing their attack damage. |n|n|cffffcc00Level 1|r - \u003CA0WP,DataA1,%\u003E% attack damage reduction. |n|cffffcc00Level 2|r - \u003CA0WP,DataA2,%\u003E% attack damage reduction. |n|cffffcc00Level 3|r - \u003CA0WP,DataA3,%\u003E% attack damage reduction. |n|cffffcc00Level 4|r - \u003CA0WP,DataA4,%\u003E% attack damage reduction. "
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Curse of Executus - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 5,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Howl of |cffffcc00T|rerror - [|cffffcc00Level 5|r]"
+    },
+    {
+      "Level": 6,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Howl of |cffffcc00T|rerror - [|cffffcc00Level 6|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces nearby enemy units\u0027 attack damage by \u003CA0WP,DataA4,%\u003E% for \u003CA0WP,Dur4\u003E seconds."
+    },
+    {
+      "Level": 5,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Pit Lord lets loose a terrifying howl that reduces nearby enemy units\u0027 attack damage by \u003CANht,DataA5,%\u003E% for \u003CANht,Dur5\u003E seconds."
+    },
+    {
+      "Level": 6,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Pit Lord lets loose a terrifying howl that reduces nearby enemy units\u0027 attack damage by \u003CANht,DataA6,%\u003E% for \u003CANht,Dur6\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Curse of Executus - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Curse of Executus - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Curse of Executus - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Curse of Executus"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Curse of Executus - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces nearby enemy units\u0027 attack damage by \u003CA0WP,DataA1,%\u003E% for \u003CA0WP,Dur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces nearby enemy units\u0027 attack damage by \u003CA0WP,DataA2,%\u003E% for \u003CA0WP,Dur2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces nearby enemy units\u0027 attack damage by \u003CA0WP,DataA3,%\u003E% for \u003CA0WP,Dur3\u003E seconds."
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAuraShadow.blp"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAuraShadow.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": " (Majordomo Executus, Yellow)"
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASAuraShadow.blp"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "V"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 2020635233,
+      "Value": 2
+    }
+  ]
+}

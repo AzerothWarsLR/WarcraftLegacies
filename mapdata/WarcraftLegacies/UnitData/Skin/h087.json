@@ -1,0 +1,63 @@
+{
+  "OldId": 1836212584,
+  "NewId": 926429288,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkIronArcaneHall.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Ragnaros Magic)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "DarkIronArcaneHall.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "S"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Hall of Logi"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Hall of Logi"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "PocketFactory"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Spellcaster production building. |n|n|r|cfff5962dTrains:|R Shadowcaster, Flamekeeper|n|cfff5962dResearches:|R Shadowcaster Adept Training, Shadow Priest Master Training"
+    }
+  ]
+}

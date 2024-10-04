@@ -1,0 +1,54 @@
+{
+  "OldId": 2004116328,
+  "NewId": 1379414120,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkIronCannonBunker.blp"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Ragnaros Tower)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "DarkIronInfernoBunkerV1.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "X"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy defensive structure, effective against clusters of ground units. |n|n|cfff5962dUpgrades to:|R Improved Cannon Tower|n|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Upgrade to Improved Cannon Bunker"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Cannon Bunker"
+    }
+  ]
+}

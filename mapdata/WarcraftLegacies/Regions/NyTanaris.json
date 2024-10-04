@@ -1,0 +1,15 @@
+{
+  "Left": -15136,
+  "Bottom": -17888,
+  "Right": -14656,
+  "Top": -17376,
+  "Name": "NyTanaris",
+  "CreationNumber": 437,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

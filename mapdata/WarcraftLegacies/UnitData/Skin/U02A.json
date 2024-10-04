@@ -1,0 +1,95 @@
+{
+  "OldId": 1667853397,
+  "NewId": 1093808213,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroMastermind.blp"
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive"
+    },
+    {
+      "Id": 1667462261,
+      "Value": 1
+    },
+    {
+      "Id": 1919252085,
+      "Value": 0
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "war3mapImported\\PeeKay\u0027s BoneSpear.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "N\u0027raqi Aberration"
+    },
+    {
+      "Id": 1970434165,
+      "Value": 1
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Yor\u0027sahj the Unsleeping"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive"
+    },
+    {
+      "Id": 1769173877,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroMastermind.blp"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroDemonHunterMorphed"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\FacelessOneMastermind.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Yor\u0027sahj"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(yogg)"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Cunning Hero, adept at illusion and deception.|n|cfff5962dAbilities:|r Wind Walk |n|cfff5962dCan learn:|R Power Surge, Accelerated Vitality, Simulacrum, Mirror Image |n|n|cffffcc00Attacks land and air units.|R"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "OldId": 1802661230,
+  "NewId": 1513697390,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "Aall,Apit"
+    },
+    {
+      "Id": 1684824693,
+      "Value": 30
+    },
+    {
+      "Id": 1717920885,
+      "Value": 5
+    },
+    {
+      "Id": 1819240309,
+      "Value": 13
+    },
+    {
+      "Id": 1836083317,
+      "Value": 800
+    },
+    {
+      "Id": 1768648053,
+      "Type": 3,
+      "Value": "sreg,phea,pman,stwp,hslv,I01P,pdiv,brac"
+    },
+    {
+      "Id": 1852404597,
+      "Value": 750
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\4x4SimpleSolid.tga"
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1684632437,
+      "Value": 1000
+    },
+    {
+      "Id": 1868788853,
+      "Value": -1
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "Rhac,Rgfo"
+    }
+  ]
+}

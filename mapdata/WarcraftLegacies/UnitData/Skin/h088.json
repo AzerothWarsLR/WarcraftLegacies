@@ -1,0 +1,63 @@
+{
+  "OldId": 1836212584,
+  "NewId": 943206504,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDarkIronWorkshop.blp"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Ragnaros Siege)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "DarkIronWorkshopV1.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 4
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Siege production building. |n|n|r|cfff5962dTrains:|R Shadowforge Titan, Magma Tank.|n|cfff5962dResearches:|R Overclock, Improved Spell Resistance"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Ember Workshop"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Ember Workshop"
+    }
+  ]
+}

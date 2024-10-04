@@ -1,0 +1,63 @@
+{
+  "OldId": 1918984808,
+  "NewId": 876097640,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684824693,
+      "Value": 30
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Id": 1819240309,
+      "Value": 16
+    },
+    {
+      "Id": 1919903605,
+      "Value": 13
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\6x6SimpleSolid.tga"
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
+    },
+    {
+      "Id": 1769107573,
+      "Value": 20
+    },
+    {
+      "Id": 1936028277,
+      "Type": 3,
+      "Value": "R00Z,Rhfl,Rhfs,Rhri,R00F"
+    },
+    {
+      "Id": 1634890869,
+      "Type": 3,
+      "Value": "h0A6,h00B,h0A7"
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    }
+  ]
+}

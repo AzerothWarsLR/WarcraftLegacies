@@ -1,0 +1,97 @@
+{
+  "OldId": 1868718453,
+  "NewId": 1160851573,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "large"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCarrionScarabs.blp"
+    },
+    {
+      "Id": 1701601909,
+      "Type": 1,
+      "Value": 0.15
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1667462261,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(C\u0027thun Giant Scarab)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\Barrens\\Rocks\\Geyser\\Geyser0.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 2053990773,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 3
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Burrowed Giant Scarab"
+    },
+    {
+      "Id": 1751675765,
+      "Type": 1,
+      "Value": 120
+    },
+    {
+      "Id": 2003334005,
+      "Type": 1,
+      "Value": 102
+    },
+    {
+      "Id": 2020111221,
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": 2036888437,
+      "Type": 1,
+      "Value": 50
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train [|cffffcc00E|r] - Giant Scarab"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee Siege unit. Has Cleaving attack. |n|n|cffffcc00Attacks land units.|r"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Scarab"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "OldId": 2036883822,
+  "NewId": 809054318,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Scryer"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Trench Hydra"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Tolvir)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy Amphibian Ranged Unit.|n|cfff5962dAbilities:|R Slow Poison, Multi Shot, Spawn Hydra|n|n|cff99b4d1Can only train 2.|r|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Hero_Ramkahen_Huntress.mdl"
+    }
+  ]
+}

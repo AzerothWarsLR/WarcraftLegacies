@@ -1,0 +1,115 @@
+{
+  "OldId": 1651787841,
+  "NewId": 1431711809,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": " (Ragnaros)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\LordofFlameMissile\\LordofFlameMissile.mdl"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Throws a gobule of magma at a target enemy unit, dealing substantial damage and stunning it.|n|n|cffffcc00Level 1|r - Deals \u003CA0VU,DataA1\u003E damage, stuns heroes for \u003CA0VU,HeroDur1\u003E second and normal units for \u003CA0VU,Dur1\u003E second.|n|cffffcc00Level 2|r - Deals \u003CA0VU,DataA2\u003E damage, stuns heroes for \u003CA0VU,HeroDur2\u003E seconds and normal units for \u003CA0VU,Dur2\u003E seconds.|n|cffffcc00Level 3|r - Deals \u003CA0VU,DataA3\u003E damage, stuns heroes for \u003CA0VU,HeroDur3\u003E seconds and normal units for \u003CA0VU,Dur3\u003E seconds.|n|cffffcc00Level 4|r - Deals \u003CA0VU,DataA4\u003E damage, stuns heroes for \u003CA0VU,HeroDur4\u003E seconds and normal units for \u003CA0VU,Dur4\u003E seconds."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Magma Blast - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Deals \u003CA0VU,DataA1\u003E damage, stuns heroes for \u003CA0VU,HeroDur1\u003E seconds and normal units for \u003CA0VU,Dur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Deals \u003CA0VU,DataA2\u003E damage, stuns heroes for \u003CA0VU,HeroDur2\u003E seconds and normal units for \u003CA0VU,Dur2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Deals \u003CA0VU,DataA3\u003E damage, stuns heroes for \u003CA0VU,HeroDur3\u003E seconds and normal units for \u003CA0VU,Dur3\u003E seconds."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Deals \u003CA0VU,DataA4\u003E damage, stuns heroes for \u003CA0VU,HeroDur4\u003E seconds and normal units for \u003CA0VU,Dur4\u003E seconds."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Magma Blast"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Magma Blast - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Magma Blast - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Magma Blast - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Magma Blast - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRagnaB1.blp"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRagnaB1.blp"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "V"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    }
+  ]
+}

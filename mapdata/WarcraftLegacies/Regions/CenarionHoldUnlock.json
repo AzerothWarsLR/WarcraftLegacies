@@ -1,0 +1,15 @@
+{
+  "Left": -18272,
+  "Bottom": -14400,
+  "Right": -15680,
+  "Top": -12768,
+  "Name": "CenarionHoldUnlock",
+  "CreationNumber": 122,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}
