@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
   {
 
     /// <inheritdoc/>
-    public override string RewardFlavour => "Yogg-saron has been consumed. His genome has been added to the brood!";
+    public override string RewardFlavour => "Yogg-Saron has been consumed. His genome has been added to the brood!";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
     /// Initializes a new instance of the <see cref="QuestFiendThousandFaces"/> class.
     /// </summary>
     public QuestFiendThousandFaces(LegendaryHero yoggsaron) : base("Fiend of a Thousand Faces",
-      "Yogg Saron is still imprisoned and weak, but holds great power. If he is released and vanquished, I can consume his power and infuse it into my the Qiraji.",
+      "Yogg-Saron is still imprisoned and weak, but holds great power. If he is released and vanquished, I can consume his power and infuse it into my the Qiraji.",
       @"ReplaceableTextures\CommandButtons\BTNCannibalize.blp")
     {
       AddObjective(new ObjectiveControlLevel(UNIT_N02S_STORM_PEAKS, 20));

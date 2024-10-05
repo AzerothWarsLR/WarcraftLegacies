@@ -66,7 +66,7 @@ namespace WarcraftLegacies.Source.Quests.Skywall
         SpawnArmies(completingFaction);
 
       ResetVictimControlPointLevel();
-      PresentInvasionDialogs();
+      //PresentInvasionDialogs();
       RescueBases(completingFaction);
 
     }
@@ -76,13 +76,13 @@ namespace WarcraftLegacies.Source.Quests.Skywall
       completingFaction.Player.RescueGroup(_sulfuronUnits);
     }
 
-    private static void PresentInvasionDialogs()
-    {
-      new ScourgeInvasionDialogPresenter(
-          new Choice<Rectangle?>(null, "No invasion"),
-          new Choice<Rectangle?>(Regions.SulfuronSpire, "Sulfuron Spire"))
-        .Run(Player(8));
-    }
+    //private static void PresentInvasionDialogs()
+    //{
+    //  new ScourgeInvasionDialogPresenter(
+    //      new Choice<Rectangle?>(null, "No invasion"),
+    //      new Choice<Rectangle?>(Regions.SulfuronSpire, "Sulfuron Spire"))
+    //    .Run(Player(8));
+    //}
 
     /// <inheritdoc />
     protected override void OnAdd(Faction whichFaction) =>

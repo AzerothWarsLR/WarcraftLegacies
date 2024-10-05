@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
     /// </summary>
     /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
     public QuestTanarisOutpost(Rectangle rescueRect) : base("The Noxious Lair",
-      "The sands of Tanaris call for the Hive, we needto eliminate the Trolls of Zul'farrak first.",
+      "The sands of Tanaris call for the Hive, we need to eliminate the Trolls of Zul'farrak first.",
       @"ReplaceableTextures/CommandButtons/BTNScorpion.blp")
     {
       AddObjective(new ObjectiveControlPoint(UNIT_N020_TANARIS));

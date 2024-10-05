@@ -21,12 +21,14 @@ namespace WarcraftLegacies.Source.Factions
   public sealed class Ahnqiraj : Faction
   {
     private readonly AllLegendSetup _allLegendSetup;
+    private readonly unit _gateAhnQiraj;
 
     /// <inheritdoc />
-    public Ahnqiraj(AllLegendSetup allLegendSetup) : base("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cffaaa050",
+    public Ahnqiraj(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cffaaa050",
       @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
     {
       _allLegendSetup = allLegendSetup;
+      _gateAhnQiraj = preplacedUnitSystem.GetUnit(UNIT_H02U_GATES_OF_AHN_QIRAJ_CLOSED);
       ControlPointDefenderUnitTypeId = UNIT_N0DW_CONTROL_POINT_DEFENDER_CTHUN_TOWER;
       TraditionalTeam = TeamSetup.OldGods;
       StartingGold = 200;
@@ -59,7 +61,7 @@ You do not possess boats, but your workers can burrow through water, use them to
     {
       var newQuest = AddQuest(new QuestTitanJailors(_allLegendSetup, Regions.QirajInsideUnlock));
       StartingQuest = newQuest;
-      AddQuest(new QuestRebuildAhnqiraj(Regions.QirajOutsideUnlock));
+      AddQuest(new QuestRebuildAhnqiraj(Regions.QirajOutsideUnlock, _gateAhnQiraj));
       AddQuest(new QuestSlitheringForward(Regions.QirajOutpost1, Regions.QirajOutpost2, Regions.QirajOutpost3));
       AddQuest(new QuestTanarisOutpost(Regions.QirajOutpost5));
       AddQuest(new QuestEmperorConstruct());
