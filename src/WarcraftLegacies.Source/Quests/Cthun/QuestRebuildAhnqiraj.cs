@@ -8,7 +8,6 @@ namespace WarcraftLegacies.Source.Quests.Cthun
   /// <summary>
   /// Rebuild Ahnqiraj to open the gate of Ahnqiraj and unlock some units.
   /// </summary>
-  /// <param name="gateAhnQiraj">This unit will be transferred to the completeing player.</param>
   public sealed class QuestRebuildAhnqiraj : QuestData
   {
     private readonly unit _gateAhnQiraj;
@@ -16,6 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestRebuildAhnqiraj"/> class.
     /// </summary>
+    /// <param name="gateAhnQiraj">This unit will be transferred to the completeing player.</param>
     public QuestRebuildAhnqiraj(Rectangle questRect, unit gateAhnQiraj) : base("Rebuilding of Ahn'Qiraj",
       "The once great kingdom of Ahn'Qiraj was lost to the sands of time. The hive needs to awaken and be rebuilt.",
       @"ReplaceableTextures\CommandButtons\BTNCthunHatchery.blp")

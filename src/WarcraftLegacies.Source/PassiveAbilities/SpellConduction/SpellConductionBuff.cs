@@ -53,8 +53,8 @@ namespace WarcraftLegacies.Source.PassiveAbilities.SpellConduction
     }
 
     private void DamageCaster(unit damager, float eventDamage) =>
-      Caster.TakeDamage(damager, eventDamage * RedirectionPercentage, false, true, ATTACK_TYPE_CHAOS,
-        DAMAGE_TYPE_UNIVERSAL, BlzGetEventWeaponType());
+      Caster.TakeDamage(damager, eventDamage * RedirectionPercentage, false, true, BlzGetEventAttackType(),
+        BlzGetEventDamageType(), BlzGetEventWeaponType());
 
     private bool IsRedirectableAttackType(attacktype attackType) => RedirectableAttackTypes.Contains(attackType);
   }
