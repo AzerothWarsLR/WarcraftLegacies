@@ -27,23 +27,13 @@
       "Level": 2,
       "Id": 1852072801,
       "Type": 2,
-      "Value": 165
+      "Value": 115
     },
     {
       "Level": 3,
       "Id": 1852072801,
       "Type": 2,
-      "Value": 150
-    },
-    {
-      "Level": 1,
-      "Id": 1935895905,
-      "Value": 200
-    },
-    {
-      "Level": 3,
-      "Id": 1935895905,
-      "Value": 200
+      "Value": 95
     },
     {
       "Level": 1,
@@ -71,21 +61,21 @@
       "Pointer": 2,
       "Id": 846618952,
       "Type": 2,
-      "Value": 450
+      "Value": 150
     },
     {
       "Level": 2,
       "Pointer": 2,
       "Id": 846618952,
       "Type": 2,
-      "Value": 900
+      "Value": 300
     },
     {
       "Level": 3,
       "Pointer": 2,
       "Id": 846618952,
       "Type": 2,
-      "Value": 1350
+      "Value": 450
     },
     {
       "Level": 1,
@@ -112,37 +102,37 @@
       "Level": 1,
       "Id": 1920296033,
       "Type": 2,
-      "Value": 45
+      "Value": 25
     },
     {
       "Level": 2,
       "Id": 1920296033,
       "Type": 2,
-      "Value": 45
+      "Value": 25
     },
     {
       "Level": 3,
       "Id": 1920296033,
       "Type": 2,
-      "Value": 45
+      "Value": 25
     },
     {
       "Level": 1,
       "Id": 1969514593,
       "Type": 2,
-      "Value": 45
+      "Value": 25
     },
     {
       "Level": 2,
       "Id": 1969514593,
       "Type": 2,
-      "Value": 45
+      "Value": 25
     },
     {
       "Level": 3,
       "Id": 1969514593,
       "Type": 2,
-      "Value": 45
+      "Value": 25
     },
     {
       "Id": 1986358369,
@@ -169,14 +159,14 @@
       "Pointer": 1,
       "Id": 829841736,
       "Type": 2,
-      "Value": 7
+      "Value": 8
     },
     {
       "Level": 4,
       "Pointer": 2,
       "Id": 846618952,
       "Type": 2,
-      "Value": 1800
+      "Value": 600
     },
     {
       "Level": 4,
@@ -188,29 +178,45 @@
       "Level": 4,
       "Id": 1852072801,
       "Type": 2,
-      "Value": 135
+      "Value": 75
     },
     {
       "Level": 4,
       "Id": 1969514593,
       "Type": 2,
-      "Value": 45
+      "Value": 25
     },
     {
       "Level": 4,
       "Id": 1920296033,
       "Type": 2,
-      "Value": 45
+      "Value": 25
     },
     {
-      "Level": 4,
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 135
+    },
+    {
+      "Level": 1,
       "Id": 1935895905,
-      "Value": 200
+      "Value": 110
     },
     {
       "Level": 2,
       "Id": 1935895905,
-      "Value": 200
+      "Value": 110
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 110
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 110
     }
   ]
 }

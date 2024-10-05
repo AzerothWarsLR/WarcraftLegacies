@@ -65,7 +65,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Sends a gigantic wave which deals 300 damage to each enemy land unit in a line, up to 1200 max damage."
+      "Value": "Sends a gigantic wave which deals \u003CA118,DataA1\u003E damage to each enemy land unit in a line, up to \u003CA118,DataB1\u003E max damage."
     },
     {
       "Id": 2019718497,

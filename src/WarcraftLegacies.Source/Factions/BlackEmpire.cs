@@ -99,9 +99,9 @@ Be sure to train Forsaken Ones, they are powerful units";
       var poisonYor = new Stomp(ABILITY_ABNT_VOID_TOXIN_BLACK_EMPIRE)
       {
         Radius = 600,
-        DamageBase = 50,
-        DamageLevel = 40,
-        DurationBase = 15,
+        DamageBase = 20,
+        DamageLevel = 70,
+        DurationBase = 6,
         DurationLevel = 0,
         StunAbilityId = ABILITY_ABSS_SHADOW_STRIKE_VOID_TOXIN_REAL,
         StunOrderId = OrderId("shadowstrike"),
