@@ -50,6 +50,7 @@ You do not possess boats, but your workers can burrow through water, use them to
       };
     }
 
+
     /// <inheritdoc />
     public override void OnRegistered()
     {
