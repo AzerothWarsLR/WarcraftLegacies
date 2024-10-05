@@ -15,6 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestRebuildAhnqiraj"/> class.
     /// </summary>
+    /// <param name="questRect">This area is where the player needs to build.</param>
     /// <param name="gateAhnQiraj">This unit will be transferred to the completeing player.</param>
     public QuestRebuildAhnqiraj(Rectangle questRect, unit gateAhnQiraj) : base("Rebuilding of Ahn'Qiraj",
       "The once great kingdom of Ahn'Qiraj was lost to the sands of time. The hive needs to awaken and be rebuilt.",
