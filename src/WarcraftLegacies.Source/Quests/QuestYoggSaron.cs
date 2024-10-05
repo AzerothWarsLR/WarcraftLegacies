@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests
     /// Initializes a new instance of the <see cref="QuestYoggSaron"/> class.
     /// </summary>
     public QuestYoggSaron(LegendaryHero yoggsaron, unit yoggsaronPrison) : base("The Beast With a Thousand Maws",
-      "TODO Yogg-Saron cool description for Yak",
+      "Yogg-Saron rests dormant in Ulduar but his corruption seeps out from his prison. Once we are strong enough, we should open his prison and confront the Old God.",
       @"ReplaceableTextures\CommandButtons\BTNYogg-saronIcon.blp")
     {
       _yoggsaron = yoggsaron;
@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests
     }
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Yogg-Saron is emprisonned near Storm peaks, and can be slain to acquire X";
+    protected override string RewardDescription => "Yogg-Saron is imprisonned near Storm peaks, and can be slain to acquire Val'anyr, Hammer of Ancient Kings.";
 
     /// <inheritdoc/>
     public override string RewardFlavour => $"{_heroInRectObjective.CompletingUnitName} has seized control of the prison of Yogg-Saron, and can now free him.";
@@ -63,7 +63,7 @@ namespace WarcraftLegacies.Source.Quests
 
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         player.DisplayLegendaryHeroSummoned(_yoggsaron,
-          "TODO right a cool description of Yogg-saron being summoned yak!");
+          "LOOK UPON YOGG-SARON, GOD OF DEATH, AND KNOW THAT YOUR END COMES SOON!!");
     }
   }
 }
