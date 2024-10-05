@@ -33,7 +33,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Poisons enemy units within a radius of 600, dealing instant damage, then dealing 20 additional damage per second and reducing their movement speed by 75% for 15 seconds. |n|n|cffffcc00Level 1|r - 90 instant damage. |n|cffffcc00Level 2|r - 130 instant damage. |n|cffffcc00Level 3|r - 170 instant damage. |n|cffffcc00Level 4|r - 210 instant damage."
+      "Value": "Poisons enemy units within a radius of 600, dealing instant damage, then dealing 20 additional damage every 3 seconds and reducing their movement speed by 75% for 6 seconds. |n|n|cffffcc00Level 1|r - 100 instant damage. |n|cffffcc00Level 2|r - 170 instant damage. |n|cffffcc00Level 3|r - 240 instant damage. |n|cffffcc00Level 4|r - 310 instant damage."
     },
     {
       "Level": 1,
@@ -57,19 +57,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Poisons enemy units within a radius of 600, dealing 90 damage, then dealing 20 additional damage per second and reducing their movement speed by 75% for 15 seconds."
+      "Value": "Poisons enemy units within a radius of 600, dealing 100 damage, then dealing 20 additional damage per second and reducing their movement speed by 75% for 6 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Poisons enemy units within a radius of 600, dealing 130 damage, then dealing 20 additional damage per second and reducing their movement speed by 75% for 15 seconds."
+      "Value": "Poisons enemy units within a radius of 600, dealing 170 damage, then dealing 20 additional damage per second and reducing their movement speed by 75% for 6 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Poisons enemy units within a radius of 600, dealing 170 damage, then dealing 20 additional damage per second and reducing their movement speed by 75% for 15 seconds."
+      "Value": "Poisons enemy units within a radius of 600, dealing 240 damage, then dealing 20 additional damage per second and reducing their movement speed by 75% for 6 seconds."
     },
     {
       "Level": 4,
@@ -81,7 +81,7 @@
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Poisons enemy units within a radius of 600, dealing 210 damage, then dealing 20 additional damage per second and reducing their movement speed by 75% for 15 seconds."
+      "Value": "Poisons enemy units within a radius of 600, dealing 310 damage, then dealing 20 additional damage per second and reducing their movement speed by 75% for 6 seconds."
     },
     {
       "Id": 2020631137,

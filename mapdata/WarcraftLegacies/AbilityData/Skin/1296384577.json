@@ -39,7 +39,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Drains \u003CABEM,DataB1\u003E mana and \u003CABEM,DataA1\u003E health per second from an enemy, or transfers \u003CABEM,DataE1\u003E mana and \u003CABEM,DataD1\u003E health per second to an ally.|nLasts 6 seconds."
+      "Value": "Drains \u003CABEM,DataB1\u003E mana and \u003CABEM,DataA1\u003E health per second from an enemy, or transfers \u003CABEM,DataE1\u003E mana and \u003CABEM,DataD1\u003E health per second to an ally.|nLasts \u003CABEM,Dur1\u003E seconds."
     },
     {
       "Id": 1835101793,

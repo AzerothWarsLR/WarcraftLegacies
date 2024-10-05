@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Zonozz = new LegendaryHero("General Vezax")
       {
-        UnitType = UNIT_U00P_LIEUTENANT_OF_N_ZOTH,
+        UnitType = UNIT_U00P_LIEUTENANT_OF_N_ZOTH_BLACK_EMPIRE,
         StartingXp = 5000,
       };
 
@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Yorsahj = new LegendaryHero("Yor'sahj")
       {
-        UnitType = UNIT_U02B_N_RAQI_ABERRATION,
+        UnitType = UNIT_U02B_N_RAQI_ABERRATION_BLACK_EMPIRE,
         StartingXp = 0,
       };
     }
