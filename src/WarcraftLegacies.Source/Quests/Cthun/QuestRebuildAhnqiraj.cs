@@ -8,7 +8,6 @@ namespace WarcraftLegacies.Source.Quests.Cthun
   /// <summary>
   /// Rebuild Ahnqiraj to open the gate of Ahnqiraj and unlock some units.
   /// </summary>
-  /// <param name="gateAhnQiraj">This unit will be transferred to the completeing player.</param>
   public sealed class QuestRebuildAhnqiraj : QuestData
   {
     private readonly unit _gateAhnQiraj;
