@@ -34,6 +34,16 @@ You start in Nyalotha, restore the city to it's glory by repelling the invaders 
 Then, move onto Kalimdor with your allies. You will quickly run into the Sentinels.
 
 Be sure to train Forsaken Ones, they are powerful units";
+      Nicknames = new List<string>
+      {
+        "be",
+        "black empire",
+        "blackempire",
+        "black",
+        "nzoth",
+        "n'zoth",
+        "nz"
+      };
     }
 
     /// <inheritdoc />

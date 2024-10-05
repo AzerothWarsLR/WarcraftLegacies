@@ -15,6 +15,7 @@ using WarcraftLegacies.Source.Researches.Ahnqiraj;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.MassiveAttack;
+using System.Collections.Generic;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -39,7 +40,16 @@ You start deep in the tunnels of Ahn'qiraj. You will need to awaken C'thun and f
 Then, quickly start making your move north, coordinate with your elemental ally to attack Kalimdor.
 
 You do not possess boats, but your workers can burrow through water, use them to outmaneuver your enemies.";
+      Nicknames = new List<string>
+      {
+        "aq",
+        "ahnqiraj",
+        "ahn'qiraj",
+        "cthun",
+        "c'thun"
+      };
     }
+
 
     /// <inheritdoc />
     public override void OnRegistered()

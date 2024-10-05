@@ -30,6 +30,17 @@ At the start, clear Uldum and take control of Tanaris.
 Coordinate with your Qiraji ally to push the Horde before the Druids can get there.
 
 You have a very powerful event in the Burning of the World Tree. Use it at the right time to surprise the Druids and maybe attack them from behind.";
+      Nicknames = new List<string>
+      {
+        "sky",
+        "skywall",
+        "ele",
+        "eles",
+        "elemental",
+        "elementals",
+        "rag",
+        "ragnaros"
+      };
     }
 
     /// <inheritdoc />
