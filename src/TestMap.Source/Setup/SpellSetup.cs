@@ -3,7 +3,6 @@ using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
-using static War3Api.Common;
 
 namespace TestMap.Source.Setup
 {
@@ -40,7 +39,9 @@ namespace TestMap.Source.Setup
 
         var hideousAppendages = new HideousAppendages(FourCC("Huth"))
         {
-          TentacleUnitTypeId = FourCC("nfgt")
+          TentacleUnitTypeId = FourCC("nfgt"),
+          TentacleCount = 6,
+          RadiusOffset = 250
         };
         PassiveAbilityManager.Register(hideousAppendages);
 

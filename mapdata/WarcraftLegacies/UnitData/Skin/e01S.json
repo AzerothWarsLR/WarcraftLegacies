@@ -37,7 +37,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Summons Heroes and Demi-heroes. |nRevives slain Heroes and Demi-heroes."
+      "Value": "Summons Heroes and Demi-heroes. "
     },
     {
       "Id": 1835101813,
@@ -52,12 +52,17 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "buildings\\naga\\AltarOfDepths\\AltarOfDepths.mdl"
+      "Value": "war3mapimported/Altarthinh23_Deaths.mdl"
     },
     {
       "Id": 1651012469,
       "Type": 3,
       "Value": "ShadowAltarofStorms"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "Upgrade,Second"
     }
   ]
 }

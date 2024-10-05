@@ -17,7 +17,6 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
   {
     private readonly List<unit> _rescueUnits1;
     private readonly List<unit> _rescueUnits2;
-    private Rectangle _rescueRect;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestBlackrock"/> class.
@@ -35,8 +34,6 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       ResearchId = UPGRADE_R03C_QUEST_COMPLETED_BLACKROCK_UNIFICATION;
       _rescueUnits1 = rescueRect1.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _rescueUnits2 = rescueRect2.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      _rescueRect = rescueRect1;
-      
     }
 
     //Todo: bad flavour

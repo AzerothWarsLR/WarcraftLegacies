@@ -71,6 +71,12 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         PercentageOfMaxHealth = 0.5f
       });
+
+      var unholyArmor = new UnholyArmor(ABILITY_A0F8_UNHOLY_ARMOR_FEL_HORDE_FEL_WARLOCK)
+      {
+        PercentageDamage = 0.06f
+      };
+      SpellSystem.Register(unholyArmor);
     }
   }
 }

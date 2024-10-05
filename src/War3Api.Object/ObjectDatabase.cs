@@ -97,187 +97,277 @@ namespace War3Api.Object
             return _objects.CastWhere<int, BaseObject, Upgrade>();
         }
 
-        public void AddObjects(ObjectData objectData)
+        public void AddObjects(UnitObjectData unitObjectData, UnitObjectData unitSkinObjectData)
         {
-            if (objectData is null)
+            foreach (var baseUnit in unitObjectData.BaseUnits) 
+              AddOrModifyOldUnit(baseUnit);
+            
+            foreach (var newUnit in unitObjectData.NewUnits) 
+              AddOrModifyNewUnit(newUnit);
+
+            foreach (var baseUnit in unitSkinObjectData.BaseUnits) 
+              AddOrModifyOldUnit(baseUnit);
+
+            foreach (var newUnit in unitSkinObjectData.NewUnits)
+              AddOrModifyNewUnit(newUnit);
+
+            Unit AddOrModifyOldUnit(SimpleObjectModification simpleObjectModification)
             {
-                throw new ArgumentNullException(nameof(objectData));
+              if (this.TryGetUnit(simpleObjectModification.OldId, out var existingUnit))
+              {
+                existingUnit.AddModifications(simpleObjectModification.Modifications);
+                return existingUnit;
+              }
+              var newUnit = new Unit((UnitType)simpleObjectModification.OldId, this);
+              newUnit.AddModifications(simpleObjectModification.Modifications);
+              return newUnit;
+            }
+            
+            void AddOrModifyNewUnit(SimpleObjectModification simpleObjectModification)
+             {
+               if (this.TryGetUnit(simpleObjectModification.NewId, out var existingUnit))
+               {
+                 existingUnit.AddModifications(simpleObjectModification.Modifications);
+                 return;
+               }
+               var newUnit = new Unit((UnitType)simpleObjectModification.OldId, simpleObjectModification.NewId, this);
+               newUnit.AddModifications(simpleObjectModification.Modifications);
+               return;
+             }
+        }
+
+        public void AddObjects(ItemObjectData itemObjectData, ItemObjectData itemSkinObjectData)
+        {
+          foreach (var baseItem in itemObjectData.BaseItems) 
+            AddOrModifyBaseItem(baseItem);
+            
+          foreach (var newItem in itemObjectData.NewItems) 
+            AddOrModifyNewItem(newItem);
+
+          foreach (var baseItem in itemSkinObjectData.BaseItems) 
+            AddOrModifyBaseItem(baseItem);
+
+          foreach (var newItem in itemSkinObjectData.NewItems)
+            AddOrModifyNewItem(newItem);
+
+          void AddOrModifyBaseItem(SimpleObjectModification simpleObjectModification)
+          {
+            if (this.TryGetItem(simpleObjectModification.OldId, out var existingItem))
+            {
+              existingItem.AddModifications(simpleObjectModification.Modifications);
+              return;
+            }
+            var newItem = new Item((ItemType)simpleObjectModification.OldId, this);
+            newItem.AddModifications(simpleObjectModification.Modifications);
+            return;
+          }
+            
+          void AddOrModifyNewItem(SimpleObjectModification simpleObjectModification)
+          {
+            if (this.TryGetItem(simpleObjectModification.NewId, out var existingItem))
+            {
+              existingItem.AddModifications(simpleObjectModification.Modifications);
+              return;
+            }
+            var newItem = new Item((ItemType)simpleObjectModification.OldId, simpleObjectModification.NewId, this);
+            newItem.AddModifications(simpleObjectModification.Modifications);
+            return;
+          }
+        }
+
+        public void AddObjects(DestructableObjectData destructableObjectData, DestructableObjectData destructableSkinObjectData)
+        {
+          foreach (var oldDestructable in destructableObjectData.BaseDestructables) 
+            AddOrModifyBaseDestructable(oldDestructable);
+            
+          foreach (var oldDestructable in destructableObjectData.NewDestructables) 
+            AddOrModifyBaseDestructable(oldDestructable);
+
+          foreach (var newDestructable in destructableSkinObjectData.BaseDestructables) 
+            AddOrModifyNewDestructable(newDestructable);
+
+          foreach (var newDestructable in destructableSkinObjectData.NewDestructables)
+            AddOrModifyNewDestructable(newDestructable);
+
+          void AddOrModifyBaseDestructable(SimpleObjectModification simpleObjectModification)
+          {
+            if (this.TryGetDestructable(simpleObjectModification.OldId, out var existingDestructable))
+            {
+              existingDestructable.AddModifications(simpleObjectModification.Modifications);
+              return;
+            }
+            var newDestructable = new Destructable((DestructableType)simpleObjectModification.OldId, this);
+            newDestructable.AddModifications(simpleObjectModification.Modifications);
+            return;
+          }
+            
+          void AddOrModifyNewDestructable(SimpleObjectModification simpleObjectModification)
+          {
+            if (this.TryGetDestructable(simpleObjectModification.NewId, out var existingDestructable))
+            {
+              existingDestructable.AddModifications(simpleObjectModification.Modifications);
+              return;
+            }
+            var newDestructable = new Destructable((DestructableType)simpleObjectModification.OldId, simpleObjectModification.NewId, this);
+            newDestructable.AddModifications(simpleObjectModification.Modifications);
+            return;
+          }
+        }
+
+        public void AddObjects(DoodadObjectData doodadObjectData, DoodadObjectData doodadSkinObjectData)
+        {
+          foreach (var baseDoodad in doodadObjectData.BaseDoodads) 
+            AddOrModifyBaseDoodad(baseDoodad);
+            
+          foreach (var newDoodad in doodadObjectData.NewDoodads) 
+            AddOrModifyNewDoodad(newDoodad);
+
+          foreach (var baseDoodad in doodadSkinObjectData.BaseDoodads) 
+            AddOrModifyBaseDoodad(baseDoodad);
+
+          foreach (var newDoodad in doodadSkinObjectData.NewDoodads)
+            AddOrModifyNewDoodad(newDoodad);
+
+          void AddOrModifyBaseDoodad(VariationObjectModification variationObjectModification)
+          {
+            if (this.TryGetDoodad(variationObjectModification.OldId, out var existingDoodad))
+            {
+              existingDoodad.AddModifications(variationObjectModification.Modifications);
+              return;
+            }
+            var newDoodad = new Doodad((DoodadType)variationObjectModification.OldId, this);
+            newDoodad.AddModifications(variationObjectModification.Modifications);
+            return;
+          }
+            
+          void AddOrModifyNewDoodad(VariationObjectModification variationObjectModification)
+          {
+            if (this.TryGetDoodad(variationObjectModification.NewId, out var existingDoodad))
+            {
+              existingDoodad.AddModifications(variationObjectModification.Modifications);
+              return;
+            }
+            var newDoodad = new Doodad((DoodadType)variationObjectModification.OldId, variationObjectModification.NewId, this);
+            newDoodad.AddModifications(variationObjectModification.Modifications);
+            return;
+          }
+        }
+
+        public void AddObjects(AbilityObjectData abilityObjectData, AbilityObjectData abilitySkinObjectData)
+        {
+            foreach (var baseAbility in abilityObjectData.BaseAbilities) 
+              AddOrModifyBaseAbility(baseAbility);
+
+            foreach (var newAbility in abilityObjectData.NewAbilities) 
+              AddOrModifyNewAbility(newAbility);
+            
+            foreach (var baseAbility in abilitySkinObjectData.BaseAbilities) 
+              AddOrModifyBaseAbility(baseAbility);
+
+            foreach (var newAbility in abilitySkinObjectData.NewAbilities) 
+              AddOrModifyNewAbility(newAbility);
+
+            void AddOrModifyBaseAbility(LevelObjectModification levelObjectModification)
+            {
+              if (this.TryGetAbility(levelObjectModification.OldId, out var existingAbility))
+              {
+                existingAbility.AddModifications(levelObjectModification.Modifications);
+                return;
+              }
+              var newAbility = AbilityFactory.Create((AbilityType)levelObjectModification.OldId, this);
+              newAbility.AddModifications(levelObjectModification.Modifications);
+              return;
             }
 
-            if (objectData.UnitData is not null)
+            void AddOrModifyNewAbility(LevelObjectModification levelObjectModification)
             {
-                AddObjects(objectData.UnitData);
-            }
-
-            if (objectData.ItemData is not null)
-            {
-                AddObjects(objectData.ItemData);
-            }
-
-            //if (objectData.DestructableData is not null)
-            //{
-            //    AddObjects(objectData.DestructableData);
-            //}
-
-            if (objectData.DoodadData is not null)
-            {
-                AddObjects(objectData.DoodadData);
-            }
-
-            if (objectData.AbilityData is not null)
-            {
-                AddObjects(objectData.AbilityData);
-            }
-
-            if (objectData.BuffData is not null)
-            {
-                AddObjects(objectData.BuffData);
-            }
-
-            if (objectData.UpgradeData is not null)
-            {
-                AddObjects(objectData.UpgradeData);
+              if (this.TryGetAbility(levelObjectModification.NewId, out var existingAbility))
+              {
+                existingAbility.AddModifications(levelObjectModification.Modifications);
+                return;
+              }
+              var newAbility = AbilityFactory.Create((AbilityType)levelObjectModification.OldId, levelObjectModification.NewId, this);
+              newAbility.AddModifications(levelObjectModification.Modifications);
+              return;
             }
         }
 
-        public void AddObjects(UnitObjectData unitObjectData)
+        public void AddObjects(BuffObjectData buffObjectData, BuffObjectData buffSkinObjectData)
         {
-            if (unitObjectData is null)
-            {
-                throw new ArgumentNullException(nameof(unitObjectData));
-            }
+          foreach (var oldBuff in buffObjectData.BaseBuffs) 
+            AddOrModifyBaseBuff(oldBuff);
+            
+          foreach (var oldBuff in buffObjectData.NewBuffs) 
+            AddOrModifyNewBuff(oldBuff);
 
-            foreach (var baseUnit in unitObjectData.BaseUnits)
-            {
-                var unit = new Unit((UnitType)baseUnit.OldId, this);
-                unit.AddModifications(baseUnit.Modifications);
-            }
+          foreach (var newBuff in buffSkinObjectData.BaseBuffs) 
+            AddOrModifyBaseBuff(newBuff);
 
-            foreach (var newUnit in unitObjectData.NewUnits)
+          foreach (var newBuff in buffSkinObjectData.NewBuffs)
+            AddOrModifyNewBuff(newBuff);
+
+          void AddOrModifyBaseBuff(SimpleObjectModification simpleObjectModification)
+          {
+            if (this.TryGetBuff(simpleObjectModification.OldId, out var existingBuff))
             {
-                var unit = new Unit((UnitType)newUnit.OldId, newUnit.NewId, this);
-                unit.AddModifications(newUnit.Modifications);
+              existingBuff.AddModifications(simpleObjectModification.Modifications);
+              return;
             }
+            var newBuff = new Buff((BuffType)simpleObjectModification.OldId, this);
+            newBuff.AddModifications(simpleObjectModification.Modifications);
+            return;
+          }
+            
+          void AddOrModifyNewBuff(SimpleObjectModification simpleObjectModification)
+          {
+            if (this.TryGetBuff(simpleObjectModification.NewId, out var existingBuff))
+            {
+              existingBuff.AddModifications(simpleObjectModification.Modifications);
+              return;
+            }
+            var newBuff = new Buff((BuffType)simpleObjectModification.OldId, simpleObjectModification.NewId, this);
+            newBuff.AddModifications(simpleObjectModification.Modifications);
+            return;
+          }
         }
 
-        public void AddObjects(ItemObjectData itemObjectData)
+        public void AddObjects(UpgradeObjectData upgradeObjectData, UpgradeObjectData upgradeSkinObjectData)
         {
-            if (itemObjectData is null)
-            {
-                throw new ArgumentNullException(nameof(itemObjectData));
-            }
+          foreach (var baseUpgrade in upgradeObjectData.BaseUpgrades) 
+            AddOrModifyBaseUpgrade(baseUpgrade);
+            
+          foreach (var newUpgrade in upgradeObjectData.NewUpgrades) 
+            AddOrModifyNewUpgrade(newUpgrade);
 
-            foreach (var baseItem in itemObjectData.BaseItems)
-            {
-                var item = new Item((ItemType)baseItem.OldId, this);
-                item.AddModifications(baseItem.Modifications);
-            }
+          foreach (var baseUpgrade in upgradeSkinObjectData.BaseUpgrades) 
+            AddOrModifyBaseUpgrade(baseUpgrade);
 
-            foreach (var newItem in itemObjectData.NewItems)
-            {
-                var item = new Item((ItemType)newItem.OldId, newItem.NewId, this);
-                item.AddModifications(newItem.Modifications);
-            }
-        }
+          foreach (var newUpgrade in upgradeSkinObjectData.NewUpgrades)
+            AddOrModifyNewUpgrade(newUpgrade);
 
-        public void AddObjects(DestructableObjectData destructableObjectData)
-        {
-            if (destructableObjectData is null)
+          void AddOrModifyBaseUpgrade(LevelObjectModification levelObjectModification)
+          {
+            if (this.TryGetUpgrade(levelObjectModification.OldId, out var existingUpgrade))
             {
-                throw new ArgumentNullException(nameof(destructableObjectData));
+              existingUpgrade.AddModifications(levelObjectModification.Modifications);
+              return;
             }
-
-            foreach (var baseDestructable in destructableObjectData.BaseDestructables)
+            var newUpgrade = new Upgrade((UpgradeType)levelObjectModification.OldId, this);
+            newUpgrade.AddModifications(levelObjectModification.Modifications);
+            return;
+          }
+            
+          void AddOrModifyNewUpgrade(LevelObjectModification levelObjectModification)
+          {
+            if (this.TryGetUpgrade(levelObjectModification.NewId, out var existingUpgrade))
             {
-                var destructable = new Destructable((DestructableType)baseDestructable.OldId, this);
-                destructable.AddModifications(baseDestructable.Modifications);
+              existingUpgrade.AddModifications(levelObjectModification.Modifications);
+              return;
             }
-
-            foreach (var newDestructable in destructableObjectData.NewDestructables)
-            {
-                var destructable = new Destructable((DestructableType)newDestructable.OldId, newDestructable.NewId, this);
-                destructable.AddModifications(newDestructable.Modifications);
-            }
-        }
-
-        public void AddObjects(DoodadObjectData doodadObjectData)
-        {
-            if (doodadObjectData is null)
-            {
-                throw new ArgumentNullException(nameof(doodadObjectData));
-            }
-
-            foreach (var baseDoodad in doodadObjectData.BaseDoodads)
-            {
-                var doodad = new Doodad((DoodadType)baseDoodad.OldId, this);
-                doodad.AddModifications(baseDoodad.Modifications);
-            }
-
-            foreach (var newDoodad in doodadObjectData.NewDoodads)
-            {
-                var doodad = new Doodad((DoodadType)newDoodad.OldId, newDoodad.NewId, this);
-                doodad.AddModifications(newDoodad.Modifications);
-            }
-        }
-
-        public void AddObjects(AbilityObjectData abilityObjectData)
-        {
-            if (abilityObjectData is null)
-            {
-                throw new ArgumentNullException(nameof(abilityObjectData));
-            }
-
-            foreach (var baseAbility in abilityObjectData.BaseAbilities)
-            {
-                var ability = AbilityFactory.Create((AbilityType)baseAbility.OldId, this);
-                ability.AddModifications(baseAbility.Modifications);
-            }
-
-            foreach (var newAbility in abilityObjectData.NewAbilities)
-            {
-                var ability = AbilityFactory.Create((AbilityType)newAbility.OldId, newAbility.NewId, this);
-                ability.AddModifications(newAbility.Modifications);
-            }
-        }
-
-        public void AddObjects(BuffObjectData buffObjectData)
-        {
-            if (buffObjectData is null)
-            {
-                throw new ArgumentNullException(nameof(buffObjectData));
-            }
-
-            foreach (var baseBuff in buffObjectData.BaseBuffs)
-            {
-                var buff = new Buff((BuffType)baseBuff.OldId, this);
-                buff.AddModifications(baseBuff.Modifications);
-            }
-
-            foreach (var newBuff in buffObjectData.NewBuffs)
-            {
-                var buff = new Buff((BuffType)newBuff.OldId, newBuff.NewId, this);
-                buff.AddModifications(newBuff.Modifications);
-            }
-        }
-
-        public void AddObjects(UpgradeObjectData upgradeObjectData)
-        {
-            if (upgradeObjectData is null)
-            {
-                throw new ArgumentNullException(nameof(upgradeObjectData));
-            }
-
-            foreach (var baseUpgrade in upgradeObjectData.BaseUpgrades)
-            {
-                var upgrade = new Upgrade((UpgradeType)baseUpgrade.OldId, this);
-                upgrade.AddModifications(baseUpgrade.Modifications);
-            }
-
-            foreach (var newUpgrade in upgradeObjectData.NewUpgrades)
-            {
-                var upgrade = new Upgrade((UpgradeType)newUpgrade.OldId, newUpgrade.NewId, this);
-                upgrade.AddModifications(newUpgrade.Modifications);
-            }
+            var newUpgrade = new Upgrade((UpgradeType)levelObjectModification.OldId, levelObjectModification.NewId, this);
+            newUpgrade.AddModifications(levelObjectModification.Modifications);
+            return;
+          }
         }
 
         public ObjectData GetAllData(ObjectDataFormatVersion formatVersion = ObjectDataFormatVersion.v3)

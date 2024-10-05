@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtonsBTNNerubianArcaneSanctum.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunShop.blp"
     },
     {
       "Id": 1651270517,
@@ -35,7 +35,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(C\u0027thun Building)"
+      "Value": "(C\u0027thun Magic)"
     },
     {
       "Id": 1953523061,
@@ -49,7 +49,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\NerubianArcaneSanctum.mdl"
+      "Value": "CthunShop.mdl"
     },
     {
       "Id": 1735156597,
@@ -68,7 +68,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Pyramid"
+      "Value": "Summon Pyramid"
     },
     {
       "Id": 1935832437,
@@ -78,22 +78,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Spellcaster production building. |rTrains Silithid Tunneler, Faceless Shadow Weaver and Tol\u0027vir Statue. Contains caster health upgrade."
+      "Value": "Spellcaster production building. "
     },
     {
       "Id": 1684960117,
       "Type": 3,
       "Value": "TempleOfTheDamned"
-    },
-    {
-      "Id": 1668510581,
-      "Type": 1,
-      "Value": 4.5
-    },
-    {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 0.7
     }
   ]
 }

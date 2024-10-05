@@ -1,0 +1,41 @@
+{
+  "OldId": 1700873043,
+  "NewId": 1479560261,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Superior Whirlpool Aura"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(tidal Lord)"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Superior Whirlpool Aura"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces nearby enemy units\u0027 movement speed by 40% and attack rate by 25%."
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\commandButtons\\PASWhirlpool.blp"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

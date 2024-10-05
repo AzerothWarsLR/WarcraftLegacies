@@ -8,6 +8,7 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.Naga;
 using WarcraftLegacies.Source.Setup;
 
@@ -76,52 +77,8 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
 
     private void RegisterObjectLimits()
     {
-      ModObjectLimit(FourCC("nntt"), UNLIMITED); //Pillar of Waves
-      ModObjectLimit(FourCC("n04T"), UNLIMITED); //Monument of Currents
-      ModObjectLimit(FourCC("n055"), UNLIMITED); //Temple of Tides
-      ModObjectLimit(FourCC("nnad"), UNLIMITED); //Altar of the Depths
-      ModObjectLimit(FourCC("nnsg"), UNLIMITED); //Spawning Grounds
-      ModObjectLimit(FourCC("h06S"), UNLIMITED); //Coral Forge
-      ModObjectLimit(FourCC("n0A3"), UNLIMITED); //Royal Pyramid
-      ModObjectLimit(FourCC("nnsa"), UNLIMITED); //Temple of Azshara
-      ModObjectLimit(FourCC("nnfm"), UNLIMITED); //Coral Beds
-      ModObjectLimit(FourCC("nntg"), UNLIMITED); //Tidal Guardian
-      ModObjectLimit(FourCC("n005"), UNLIMITED); //Improved Tidal Guardian
-      ModObjectLimit(FourCC("nmrb"), UNLIMITED); //Deep Sea Vault
-      ModObjectLimit(FourCC("n08W"), UNLIMITED); //Deep Sea Vault
-      ModObjectLimit(FourCC("e020"), UNLIMITED); //Shipyard
-
-      ModObjectLimit(FourCC("nmpe"), UNLIMITED); //Murgul Slave
-      ModObjectLimit(FourCC("nmyr"), UNLIMITED); //Myrmidon
-      ModObjectLimit(FourCC("nsnp"), UNLIMITED); //Snap Dragon
-      ModObjectLimit(FourCC("nnsw"), UNLIMITED); //Siren
-      ModObjectLimit(FourCC("nmsc"), UNLIMITED); //Shadowcaster
-      ModObjectLimit(FourCC("nnsu"), 6); //Summoner
-      ModObjectLimit(FourCC("nnrg"), 6); //Royal Guard
-      ModObjectLimit(FourCC("nhyc"), 8); //Dragon Turtle
-      ModObjectLimit(FourCC("nwgs"), 8); //Couatl
-      ModObjectLimit(FourCC("e00Y"), 4); //Scylla
-      ModObjectLimit(FourCC("h0AC"), 6); //Sea Witch
-      ModObjectLimit(FourCC("ndrn"), UNLIMITED); //AshtongueMelee
-      ModObjectLimit(FourCC("ndrs"), 6); //Ashtonguecaster
-
-      //Ships
-      ModObjectLimit(FourCC("etrs"), UNLIMITED); //Night Elf Transport Ship
-      ModObjectLimit(FourCC("h0AU"), UNLIMITED); // Scout
-      ModObjectLimit(FourCC("h0AV"), UNLIMITED); // Frigate
-      ModObjectLimit(FourCC("h0B1"), UNLIMITED); // Fireship
-      ModObjectLimit(FourCC("h057"), UNLIMITED); // Galley
-      ModObjectLimit(FourCC("h0B4"), UNLIMITED); // Boarding
-      ModObjectLimit(FourCC("h0BA"), UNLIMITED); // Juggernaut
-      ModObjectLimit(FourCC("h0B8"), 6); // Bombard
-
-      ModObjectLimit(FourCC("Hvsh"), 1); //Vashj
-      ModObjectLimit(FourCC("U00S"), 1); //Najentus
-      ModObjectLimit(FourCC("Naka"), 1); //Akama
-      ModObjectLimit(FourCC("Eevi"), 1); //Illidan
-
-      ModObjectLimit(UPGRADE_RNSW_NAGA_SIREN_ADEPT_TRAINING_NAGA_SIREN_MASTER_TRAINING, UNLIMITED);
-      ModObjectLimit(UPGRADE_R02V_SHADOWCASTER_MASTER_TRAINING, UNLIMITED);
+      foreach (var (objectTypeId, objectLimit) in IllidariObjectLimitData.GetAllObjectLimits())
+        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

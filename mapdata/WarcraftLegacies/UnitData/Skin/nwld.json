@@ -13,6 +13,11 @@
       "Id": 1718840949,
       "Type": 3,
       "Value": "(Creep)"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Medium melee unit with Critical Strike. Can cast Roar. "
     }
   ]
 }

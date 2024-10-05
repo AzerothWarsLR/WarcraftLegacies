@@ -27,6 +27,11 @@
     {
       "Id": 1651270517,
       "Value": 170
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit with Shadowmeld and Devotion Aura. Can cast Divine Shield. "
     }
   ]
 }

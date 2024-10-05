@@ -6,6 +6,7 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Druids;
 using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests.Druids;
@@ -25,7 +26,7 @@ namespace WarcraftLegacies.Source.Factions
     public Druids(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) :
       base("Druids", PLAYER_COLOR_BROWN, "|c004e2a04", @"ReplaceableTextures\CommandButtons\BTNFurion.blp")
     {
-      TraditionalTeam = TeamSetup.NightElves;
+      TraditionalTeam = TeamSetup.Kalimdor;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
@@ -37,10 +38,10 @@ namespace WarcraftLegacies.Source.Factions
 
 You begin isolated in the deepest parts of Mount Hyjal near the World Tree.
 
-The Horde is gathering to burn Ashenvale forest and the World Tree. Cenarius has emerged from his seclusion to stop them. 
+The Old Gods are  gathering to burn Ashenvale forest and the World Tree. Cenarius has emerged from his seclusion to stop them. 
 Use him to awaken Malfurion from his slumber as soon as possible.
 
-Gather your forces and strike before the Horde can organize their efforts.";
+Gather your forces and strike before the Old Gods can organize their efforts.";
       GoldMines = new List<unit>
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9200, 10742))
@@ -67,84 +68,21 @@ Gather your forces and strike before the Horde can organize their efforts.";
 
     private void RegisterObjectLimits()
     {
-      ModObjectLimit(FourCC("etol"), UNLIMITED); //Tree of Life
-      ModObjectLimit(FourCC("etoa"), UNLIMITED); //Tree of Ages
-      ModObjectLimit(FourCC("etoe"), UNLIMITED); //Tree of Eternity
-      ModObjectLimit(FourCC("emow"), UNLIMITED); //Moon Well
-      ModObjectLimit(FourCC("eate"), UNLIMITED); //Altar of Elders
-      ModObjectLimit(FourCC("eaoe"), UNLIMITED); //Ancient of Lore
-      ModObjectLimit(FourCC("eaow"), UNLIMITED); //Ancient of Wind
-      ModObjectLimit(FourCC("eaom"), UNLIMITED); //Ancient of war
-      ModObjectLimit(FourCC("etrp"), UNLIMITED); //Ancient Protector
-      ModObjectLimit(FourCC("e010"), UNLIMITED); //Hunter)s Hall
-      ModObjectLimit(FourCC("e019"), UNLIMITED); //Ancient of Wonders
-      ModObjectLimit(FourCC("eshy"), UNLIMITED); //Night Elf Shipyard
-      ModObjectLimit(FourCC("e000"), UNLIMITED); //Improved Ancient Protector
-
-      ModObjectLimit(FourCC("ewsp"), UNLIMITED); //Wisp
-      ModObjectLimit(FourCC("edry"), UNLIMITED); //Dryad
-      ModObjectLimit(FourCC("edot"), UNLIMITED); //Druid of the Talon
-      ModObjectLimit(FourCC("emtg"), 12); //Mountain Giant
-      ModObjectLimit(FourCC("efdr"), 6); //Faerie Dragon
-      ModObjectLimit(FourCC("edoc"), UNLIMITED); //Druid of the Claw
-      ModObjectLimit(FourCC("edcm"), UNLIMITED); //Druid of the Claw bear form
-      ModObjectLimit(FourCC("e00N"), 6); //Keeper of the Grove
-      ModObjectLimit(FourCC("n05H"), UNLIMITED); //Furbolg
-      ModObjectLimit(FourCC("n065"), 6); //Green Dragon
-      ModObjectLimit(UNIT_E012_SIEGE_ANCIENT_DRUIDS_ELITE, 6);
-
-      //Ships
-      ModObjectLimit(FourCC("etrs"), UNLIMITED); //Night Elf Transport Ship
-      ModObjectLimit(FourCC("h0AU"), UNLIMITED); // Scout
-      ModObjectLimit(FourCC("h0AV"), UNLIMITED); // Frigate
-      ModObjectLimit(FourCC("h0B1"), UNLIMITED); // Fireship
-      ModObjectLimit(FourCC("h057"), UNLIMITED); // Galley
-      ModObjectLimit(FourCC("h0B4"), UNLIMITED); // Boarding
-      ModObjectLimit(FourCC("h0BA"), UNLIMITED); // Juggernaut
-      ModObjectLimit(FourCC("h0B8"), 6); // Bombard
-
-      ModObjectLimit(FourCC("Ecen"), 1); //Cenarius
-      ModObjectLimit(FourCC("E00H"), 1); //Cenarius
-      ModObjectLimit(FourCC("E00K"), 1); //Tortolla
-      ModObjectLimit(FourCC("Efur"), 1); //Furion
-      ModObjectLimit(UNIT_E00A_ANCIENT_GUARDIAN_DRUIDS, 1);
-      ModObjectLimit(UNIT_E00X_ELEMENTAL_GUARDIAN_DRUIDS_DEMI, 1);
-      ModObjectLimit(UNIT_H04U_DEMIGOD_DRUIDS, 1);
-
-      ModObjectLimit(FourCC("Redt"), UNLIMITED); //Druid of the Talon Adept Training
-      ModObjectLimit(FourCC("Renb"), UNLIMITED); //Nature)s Blessing
-      ModObjectLimit(FourCC("Rers"), UNLIMITED); //Resistant Skin
-      ModObjectLimit(FourCC("Reuv"), UNLIMITED); //Ultravision
-      ModObjectLimit(FourCC("Rews"), UNLIMITED); //Well Spring
-      ModObjectLimit(FourCC("Redc"), UNLIMITED); //Druid of the Claw Adept Training
-      ModObjectLimit(FourCC("R04E"), UNLIMITED); //Ysera)s Gift
-      ModObjectLimit(FourCC("R02G"), UNLIMITED); //Emerald Flames
-      ModObjectLimit(FourCC("R05X"), UNLIMITED); //Blessing of Ursoc
-      ModObjectLimit(FourCC("R002"), UNLIMITED); //Blackwald Enhancement
-      ModObjectLimit(FourCC("R00A"), UNLIMITED); //Improved Thorns
-      ModObjectLimit(FourCC("R02T"), UNLIMITED); //Improved Moonwells
-      ModObjectLimit(FourCC("R033"), UNLIMITED); //Limber Timber
-      ModObjectLimit(FourCC("R046"), UNLIMITED); //Grasping Vines
-      ModObjectLimit(FourCC("R047"), UNLIMITED); //Crippling Poison
-      ModObjectLimit(FourCC("R048"), UNLIMITED); //Deadly Poison
-      ModObjectLimit(FourCC("R008"), UNLIMITED); //Improved Natures FuryR015
-      ModObjectLimit(FourCC("R015"), UPGRADE_R015_IMPROVED_MANA_FLARE_DRUIDS);
-      ModObjectLimit(UPGRADE_R09V_STORM_CROW_FORM_DRUIDS, UNLIMITED);
-
-      SetObjectLevel(UPGRADE_REWS_WELL_SPRING, 1);
+      foreach (var (objectTypeId, objectLimit) in DruidsObjectLimitData.GetAllObjectLimits())
+        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()
     {
-      var newQuest = AddQuest(new QuestMalfurionAwakens(Regions.MoongladeVillage, Regions.TeldrassilUnlock, Regions.CenarionHoldUnlock,
+      var newQuest = AddQuest(new QuestMalfurionAwakens(Regions.MoongladeVillage, Regions.TeldrassilUnlock,
         _allLegendSetup.Druids.Nordrassil.Unit, _artifactSetup.HornOfCenarius,
         _allLegendSetup.Druids.Malfurion));
       StartingQuest = newQuest;
       AddQuest(new QuestShrineBase(Regions.ShrineBaseUnlock));
       AddQuest(new QuestRiseBase(Regions.RiseBaseUnlock));
       AddQuest(new QuestAshenvale(Regions.AshenvaleUnlock));
-      AddQuest(new QuestDruidsKillFrostwolf(_allLegendSetup.Frostwolf.ThunderBluff));
-      AddQuest(new QuestDruidsKillWarsong());
+      AddQuest(new QuestDruidsKillElemental(_allLegendSetup.Skywall.Vortex));
+      AddQuest(new QuestDruidsKillCthun(_allLegendSetup.Ahnqiraj.Cthun));
       AddQuest(new QuestShaladrassil(_allLegendSetup.Neutral.Shaladrassil));
       AddQuest(new QuestTortolla(_allLegendSetup.Druids.Tortolla));
     }
@@ -196,6 +134,7 @@ Gather your forces and strike before the Horde can organize their efforts.";
       };
       AddPower(new Immortality(20, 40, worldTrees)
       {
+        IconName = "ArcaneRessurection",
         Name = "Immortality",
         Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
         ResearchId = UPGRADE_YB01_IMMORTALITY_POWER_IS_ACTIVE

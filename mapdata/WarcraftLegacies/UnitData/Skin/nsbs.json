@@ -18,6 +18,11 @@
       "Id": 1668510581,
       "Type": 1,
       "Value": 0.7
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light ranged unit that has a poison attack which slows and damages enemy units. Has the Submerge ability, which allows this unit to hide in water. "
     }
   ]
 }

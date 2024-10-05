@@ -85,8 +85,6 @@ namespace Launcher.Services
     
     private void SupplementMap(Map map, AdvancedMapBuilderOptions options)
     {
-      ApplyMigrations(map);
-      
       if (options.SetMapTitles)
         SetMapTitles(map, _mapSettings.Version);
 
@@ -94,16 +92,26 @@ namespace Launcher.Services
         SetTestPlayerSlot(map, _compilerSettings.TestingPlayerSlot);
 
       if (options.SourceCodeProjectFolderPath != null)
+      {
+        ApplyMigrations(map);
         AddCSharpCode(map, options.SourceCodeProjectFolderPath, _compilerSettings);
+      }
     }
 
     private static void ApplyMigrations(Map map)
     {
+      Console.WriteLine("Applying object data migrations...");
+      var timer = new Stopwatch();
+      timer.Start();
+      
       var objectDatabase = map.GetObjectDatabaseFromMap();
       foreach (var migration in MapMigrationProvider.GetMapMigrations())
         migration.Migrate(map, objectDatabase);
 
       map.UnitObjectData.FixUnkValues();
+
+      timer.Stop();
+      Console.WriteLine($"Completed object data migrations in {timer.Elapsed.Milliseconds} milliseconds.");
     }
     
     private static void SetMapTitles(Map map, string version)
@@ -131,7 +139,7 @@ namespace Launcher.Services
       //Set debug options if necessary, configure compiler
       var csproj = Directory.EnumerateFiles(projectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
       var compiler = new Compiler(csproj, compilerSettings.ArtifactsPath, string.Empty, null!,
-        "War3Api.*;WCSharp.*;MacroTools.*", "", null!, false, null,
+        "War3Api.*;WCSharp.*;MacroTools.*;WarcraftLegacies.Shared.*", "", null!, false, null,
         string.Empty)
       {
         IsExportMetadata = true,

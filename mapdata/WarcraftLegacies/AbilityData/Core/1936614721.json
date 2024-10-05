@@ -78,12 +78,6 @@
       "Value": ""
     },
     {
-      "Level": 1,
-      "Id": 1851880033,
-      "Type": 2,
-      "Value": 550
-    },
-    {
       "Level": 2,
       "Id": 1851880033,
       "Type": 2,
@@ -100,6 +94,12 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,enemies,ground,neutral,nonhero"
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 525
     }
   ]
 }

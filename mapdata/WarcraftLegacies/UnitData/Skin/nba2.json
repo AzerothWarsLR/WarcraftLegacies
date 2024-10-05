@@ -7,6 +7,11 @@
     {
       "Id": 2037408373,
       "Value": 2
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy ranged unit can cast Dispel Magic, War Stomp, Cripple and Rain of Fire. "
     }
   ]
 }

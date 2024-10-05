@@ -75,7 +75,12 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.6
+      "Value": 5
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical Hero, particularly adept at cold magic. Can learn Frost Armor, Frost Nova, Dark Ritual and Death And Decay. "
     }
   ]
 }

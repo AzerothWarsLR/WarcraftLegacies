@@ -5,6 +5,7 @@ using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ResearchSystems;
+using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.Frostwolf;
 using WarcraftLegacies.Source.Quests.Warsong;
 using WarcraftLegacies.Source.Researches;
@@ -25,7 +26,7 @@ namespace WarcraftLegacies.Source.Factions
       ArtifactSetup artifactSetup) : base("Frostwolf", PLAYER_COLOR_RED, "|c00ff0303",
       @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
     {
-      TraditionalTeam = TeamSetup.Horde;
+      TraditionalTeam = TeamSetup.Kalimdor;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
@@ -35,12 +36,12 @@ namespace WarcraftLegacies.Source.Factions
       ControlPointDefenderUnitTypeId = UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF;
       IntroText = @"You are playing as the honorable |cffff0000Frostwolf Clan|r.
 
-You begin in the Salt Flats, separated from your ally, the Warsong Clan in the North.
+You begin in Durotan, make your way south to establish your bases, the Echo Isles and Thunder Bluff.
 
-Salvage the wrecked ships, establish a base and gather your troops to move inland and assist your ally against the Night Elf threat.";
+Your allies will be coming south to help you defend against the Old Gods, do not engage them alone.";
       GoldMines = new List<unit>
       {
-        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8793, -11350)),
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8123, -2514)),
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-15828, -3120))
       };
       Nicknames = new List<string>
@@ -65,88 +66,28 @@ Salvage the wrecked ships, establish a base and gather your troops to move inlan
 
     private void RegisterObjectLimits()
     {
-      ModObjectLimit(UNIT_OGRE_GREAT_HALL_FROSTWOLF_T1, UNLIMITED);
-      ModObjectLimit(UNIT_OSTR_STRONGHOLD_FROSTWOLF_T2, UNLIMITED);
-      ModObjectLimit(UNIT_OFRT_FORTRESS_FROSTWOLF_T3, UNLIMITED);
-      ModObjectLimit(UNIT_OALT_ALTAR_OF_STORMS_FROSTWOLF_ALTAR, UNLIMITED);
-      ModObjectLimit(UNIT_OBAR_WAR_CAMP_FROSTWOLF_BARRACKS, UNLIMITED);
-      ModObjectLimit(UNIT_OFOR_WAR_MILL_FROSTWOLF_RESEARCH, UNLIMITED);
-      ModObjectLimit(UNIT_OTTO_TAUREN_TOTEM_FROSTWOLF_SIEGE, UNLIMITED);
-      ModObjectLimit(UNIT_OSLD_SPIRIT_LODGE_FROSTWOLF_MAGIC, UNLIMITED);
-      ModObjectLimit(UNIT_OTRB_BURROW_FROSTWOLF_FARM, UNLIMITED);
-      ModObjectLimit(UNIT_OWTW_WATCH_TOWER_FROSTWOLF_TOWER, UNLIMITED);
-      ModObjectLimit(UNIT_O002_IMPROVED_WATCH_TOWER_FROSTWOLF_TOWER_2, UNLIMITED);
-      ModObjectLimit(UNIT_OVLN_VOODOO_LOUNGE_FROSTWOLF_SHOP, UNLIMITED);
-      ModObjectLimit(UNIT_OSHY_HORDE_PIER_FROSTWOLF_SHIPYARD, UNLIMITED);
-      ModObjectLimit(UNIT_OOSC_PACK_KODO_FROSTWOLF, UNLIMITED);
-      ModObjectLimit(UNIT_OBEA_BEASTIARY_FROSTWOLF_SPECIALIST, UNLIMITED);
-
-      ModObjectLimit(UNIT_OPEO_PEON_FROSTWOLF_WARSONG_WORKER, UNLIMITED);
-      ModObjectLimit(UNIT_OGRU_GRUNT_FROSTWOLF, UNLIMITED);
-      ModObjectLimit(UNIT_OTAU_TAUREN_FROSTWOLF, UNLIMITED);
-      ModObjectLimit(UNIT_OHUN_HEADHUNTER_FROSTWOLF, UNLIMITED);
-      ModObjectLimit(UNIT_OCAT_CATAPULT_FROSTWOLF, 6);
-      ModObjectLimit(UNIT_OTBR_BATRIDER_FROSTWOLF, 12);
-      ModObjectLimit(UNIT_ODOC_WITCH_DOCTOR_FROSTWOLF, UNLIMITED);
-      ModObjectLimit(UNIT_OSHM_SHAMAN_FROSTWOLF, UNLIMITED);
-      ModObjectLimit(UNIT_OSPW_SPIRIT_WALKER_FROSTWOLF, UNLIMITED);
-      ModObjectLimit(UNIT_O00A_FAR_SEER_FROSTWOLF_ELITE, 6);
-
-      ModObjectLimit(UNIT_O06T_TAUREN_GLADIATOR_FROSTWOLF, 6);
-      ModObjectLimit(UNIT_H0CN_PACKLEADER_FROSTWOLF, 4);
-      ModObjectLimit(UNIT_H0CO_MAMMOTH_WRANGLER_FROSTWOLF, 2);
-      ModObjectLimit(UNIT_N049_WANDERER_FROSTWOLF, 4);
-
-      //Ship
-      ModObjectLimit(FourCC("obot"), UNLIMITED); //Transport Ship
-      ModObjectLimit(FourCC("h0AS"), UNLIMITED); //Scout
-      ModObjectLimit(FourCC("h0AP"), UNLIMITED); //Frigate
-      ModObjectLimit(FourCC("h0B2"), UNLIMITED); //Fireship
-      ModObjectLimit(FourCC("h0AY"), UNLIMITED); //Galley
-      ModObjectLimit(FourCC("h0B5"), UNLIMITED); //Boarding
-      ModObjectLimit(FourCC("h0BC"), UNLIMITED); //Juggernaut
-      ModObjectLimit(FourCC("h0AO"), 6); //Bombard
-
-      ModObjectLimit(FourCC("h00C"), 1); //Drek)thar
-      ModObjectLimit(FourCC("Othr"), 1); //Thrall
-      ModObjectLimit(FourCC("Ocbh"), 1); //Cairne
-      ModObjectLimit(FourCC("Orkn"), 1); //Voljin
-      ModObjectLimit(FourCC("Orex"), 1); //Rexxar
-
-      ModObjectLimit(FourCC("Rows"), UNLIMITED); //Improved Pulverize
-      ModObjectLimit(FourCC("Rost"), UNLIMITED); //Shaman Adept Training
-      ModObjectLimit(FourCC("Rowd"), UNLIMITED); //Witch Doctor Adept Training
-      ModObjectLimit(FourCC("Rowt"), UNLIMITED); //Spirit Walker Adept Training
-      ModObjectLimit(FourCC("Rolf"), UNLIMITED); //Liquid Fire
-      ModObjectLimit(FourCC("Rosp"), UNLIMITED); //Spiked Barricades
-      ModObjectLimit(FourCC("Rorb"), UNLIMITED); //reinforced Defenses
-      ModObjectLimit(FourCC("R00H"), UNLIMITED); //Animal Companion
-      ModObjectLimit(FourCC("R00R"), UNLIMITED); //Improved Chain Lightning
-      ModObjectLimit(FourCC("R00W"), UNLIMITED); //Toughened Hides
-      ModObjectLimit(FourCC("R01Z"), UNLIMITED); //Battle Stations
-      SetObjectLevel(FourCC("R01Z"), 1); //Battle Stations
+      foreach (var (objectTypeId, objectLimit) in FrostwolfObjectLimitData.GetAllObjectLimits())
+        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
 
       ModAbilityAvailability(ABILITY_A0PF_FEL_ENERGY_TEAL_FORTRESSES, -1);
       ModAbilityAvailability(ABILITY_ANTR_TROLL_REGENERATION_PINK_WITCH_DOCTOR_TROLL_HEADHUNTER_TROLL_BATRIDER_DARKSPEAR_WARLORD_TROLL_BERSERKER_ICON, -1);
       ModAbilityAvailability(ABILITY_A0M4_BATTLE_STATIONS_PINK_GREY_ORC_BURROW_BLOODPACT, -1);
       ModAbilityAvailability(ABILITY_ABTL_BATTLE_STATIONS_FROSTWOLF_WARSONG_BURROW, 1);
       ModAbilityAvailability(ABILITY_A0GM_FOR_THE_HORDE_PINK_GREY_MAIN_BUILDINGS, 1);
-      
-      ModObjectLimit(UPGRADE_R09N_FLIGHT_PATH_WARSONG, 1);
     }
     
     private void RegisterQuests()
     {
       StartingQuest = AddQuest(new QuestThunderBluff(Regions.ThunderBluff));
-      AddQuest(new QuestStonemaul(Regions.StonemaulKeep));
+      AddQuest(new QuestCrossroadsFrostwolf(Regions.Crossroads));
       AddQuest(new QuestDarkspear());
+      AddQuest(new QuestOrgrimmarFrostwolf(Regions.Orgrimmar));
       AddQuest(new QuestRagetotem(_allLegendSetup.Frostwolf.Cairne));
       AddQuest(new QuestHighmountain(_allLegendSetup.Frostwolf.Cairne, Regions.Highmountain_Unlock));
       AddQuest(new QuestMammoth(_allLegendSetup.Frostwolf.Rexxar));
-      AddQuest(new QuestDrektharsSpellbook(_allLegendSetup.Druids.Nordrassil, _allLegendSetup.Frostwolf.Thrall));
+      AddQuest(new QuestDrektharsSpellbook(_allLegendSetup.Skywall.Vortex, _allLegendSetup.Frostwolf.Thrall));
       AddQuest(new QuestFreeNerzhul(_allLegendSetup.Scourge.TheFrozenThrone, _allLegendSetup.Frostwolf.Thrall));
       AddQuest(new QuestWorldShaman(_allLegendSetup.Frostwolf.Thrall));
-      AddQuest(new QuestScepterOfTheQueenWarsong(Regions.TheAthenaeum, _artifactSetup.ScepterOfTheQueen, _allLegendSetup.Sentinels.Auberdine));
     }
 
     private void RegisterDialogue()

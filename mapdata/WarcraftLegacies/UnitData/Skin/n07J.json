@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTN_TolvirShop.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNForgeOfWishes.blp"
     },
     {
       "Id": 1651012469,
@@ -31,17 +31,17 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Tolvir Shop)"
+      "Value": "(elemental Shop)"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\ArabianMarket.mdl"
+      "Value": "war3mapImported\\DarkIronForge2.mdl"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Deep Vault"
+      "Value": "Forge of Wishes"
     },
     {
       "Id": 1668510581,
@@ -51,7 +51,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Deep Vault"
+      "Value": "Build Forge of Wishes"
     },
     {
       "Id": 1935832437,
@@ -81,7 +81,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.55
+      "Value": 1
     }
   ]
 }

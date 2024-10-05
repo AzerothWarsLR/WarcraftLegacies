@@ -36,7 +36,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 2
+      "Value": 4
     },
     {
       "Id": 1835101813,
@@ -71,6 +71,16 @@
       "Id": 2054188149,
       "Type": 2,
       "Value": 300
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Cunning Hero, adept at exerting influence across the world."
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Ahn\u0027qiraj)"
     }
   ]
 }

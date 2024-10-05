@@ -1,0 +1,62 @@
+{
+  "OldId": 1868783989,
+  "NewId": 1145193333,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1651270517,
+      "Value": 101
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(C\u0027thun, Worker)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\Barrens\\Rocks\\Crator\\Crator1.mdl"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 221
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.17
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Burrowed Worker"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Worker"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Worshipper and structure summoner of C\u0027thun."
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNnerubianSpiderLord.blp"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "Arachnathid"
+    }
+  ]
+}

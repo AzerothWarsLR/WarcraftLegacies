@@ -36,7 +36,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "C\u0027thrax Aberration"
+      "Value": "Lieutenant of N\u0027Zoth"
     },
     {
       "Id": 1970434165,
@@ -45,7 +45,7 @@
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "Zakajz the Corruptor"
+      "Value": "Warlord Zon\u0027ozz"
     },
     {
       "Id": 1919972469,
@@ -55,7 +55,7 @@
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 4
+      "Value": 2.5
     },
     {
       "Id": 1769173877,
@@ -70,7 +70,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Summon Zakajz"
+      "Value": "Summon Warlord Zon\u0027ozz"
     },
     {
       "Id": 1953458293,
@@ -84,12 +84,17 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.6
+      "Value": 1.2
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Warrior Hero, adept at debuffing enemies.|n|cfff5962dAbilities:|r Pulverise, Unholy Armor |n|cfff5962dCan learn:|R Shadow Ball, Devour Magic, Death Aura, Roar of Despair |n|n|cffffcc00Attacks land and air units.|R"
+      "Value": "Warrior Hero, adept at debuffing enemies."
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(black empire)"
     }
   ]
 }

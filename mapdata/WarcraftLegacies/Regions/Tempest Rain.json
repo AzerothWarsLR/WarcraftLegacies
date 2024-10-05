@@ -1,0 +1,16 @@
+{
+  "Left": -11744,
+  "Bottom": -22624,
+  "Right": -9440,
+  "Top": -20608,
+  "Name": "Tempest Rain",
+  "CreationNumber": 127,
+  "WeatherType": 1919435090,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

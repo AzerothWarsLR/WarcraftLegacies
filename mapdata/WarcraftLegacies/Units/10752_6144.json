@@ -2,8 +2,8 @@
   {
     "Flags": 2,
     "OwnerId": 27,
-    "HP": -1,
-    "MP": -1,
+    "Hp": -1,
+    "Mp": -1,
     "TargetAcquisition": -1,
     "HeroLevel": 1,
     "InventoryData": [],
@@ -12,8 +12,8 @@
     "WaygateDestinationRegionId": -1,
     "TypeId": 909127797,
     "Position": {
-      "X": 10848,
-      "Y": 6112
+      "X": 10784,
+      "Y": 5984
     },
     "Rotation": 4.71238899230957,
     "Scale": {

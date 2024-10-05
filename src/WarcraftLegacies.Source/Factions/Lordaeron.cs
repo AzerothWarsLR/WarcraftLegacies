@@ -9,6 +9,7 @@ using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using MacroTools.ResearchSystems;
+using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.Lordaeron;
 using WarcraftLegacies.Source.Quests.Scourge;
 using WarcraftLegacies.Source.Researches;
@@ -72,69 +73,8 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
     
     private void RegisterObjectLimits()
     {
-      //Structures
-      ModObjectLimit(FourCC("htow"), UNLIMITED); //Town Hall
-      ModObjectLimit(FourCC("hkee"), UNLIMITED); //Keep
-      ModObjectLimit(FourCC("hcas"), UNLIMITED); //Castle
-      ModObjectLimit(FourCC("hhou"), UNLIMITED); //Farm
-      ModObjectLimit(FourCC("halt"), UNLIMITED); //Altar of Kings
-      ModObjectLimit(FourCC("hbar"), UNLIMITED); //Barracks
-      ModObjectLimit(FourCC("hbla"), UNLIMITED); //Blacksmith
-      ModObjectLimit(FourCC("h035"), UNLIMITED); //Chapel
-      ModObjectLimit(FourCC("hwtw"), UNLIMITED); //Scout Tower
-      ModObjectLimit(FourCC("hgtw"), UNLIMITED); //Guard Tower
-      ModObjectLimit(FourCC("h006"), UNLIMITED); //Guard Tower (Improved)
-      ModObjectLimit(FourCC("hctw"), UNLIMITED); //Cannon Tower
-      ModObjectLimit(FourCC("h007"), UNLIMITED); //Cannon Tower (Improved)
-      ModObjectLimit(FourCC("hshy"), UNLIMITED); //Alliance Shipyard
-      ModObjectLimit(FourCC("nmrk"), UNLIMITED); //Marketplace
-      ModObjectLimit(FourCC("h06C"), UNLIMITED); //Aviary
-      ModObjectLimit(FourCC("h094"), UNLIMITED); //Siege Camp
-
-      //Units
-      ModObjectLimit(FourCC("hpea"), UNLIMITED); //Peasant
-      ModObjectLimit(FourCC("hfoo"), UNLIMITED); //Footman
-      ModObjectLimit(FourCC("hkni"), UNLIMITED); //Knight
-      ModObjectLimit(FourCC("nchp"), UNLIMITED); //Cleric
-      ModObjectLimit(FourCC("h00F"), 6); //Paladin
-      ModObjectLimit(FourCC("nwe2"), 6); //Thunder Eagle
-      ModObjectLimit(FourCC("h01C"), UNLIMITED); //Longbowman
-      ModObjectLimit(FourCC("n03K"), UNLIMITED); //Chaplain
-      ModObjectLimit(FourCC("hcth"), 12); //Silver Hand Squire
-      ModObjectLimit(FourCC("h02Q"), 6); //Pegasus Knight
-      ModObjectLimit(FourCC("e017"), 8); //Scorpion
-      ModObjectLimit(FourCC("o02F"), 6); //Mangonel
-      ModObjectLimit(FourCC("h09Y"), 2); //Throne Guard
-
-      //Ships
-      ModObjectLimit(FourCC("hbot"), UNLIMITED); //Alliance Transport Ship
-      ModObjectLimit(FourCC("h0AR"), UNLIMITED); //Alliance Scout
-      ModObjectLimit(FourCC("h0AX"), UNLIMITED); //Alliance Frigate
-      ModObjectLimit(FourCC("h0B3"), UNLIMITED); //Alliance Fireship
-      ModObjectLimit(FourCC("h0B0"), UNLIMITED); //Alliance Galley
-      ModObjectLimit(FourCC("h0B6"), UNLIMITED); //Alliance Boarding
-      ModObjectLimit(FourCC("h0AN"), UNLIMITED); //Alliance Juggernaut
-      ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
-
-      //Demis
-      ModObjectLimit(UNIT_H012_CAPTAIN_FALRIC_LORDAERON_DEMI, 1);
-
-      //Heroes
-      ModObjectLimit(UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON, 1);
-      ModObjectLimit(UNIT_HUTH_LEADER_OF_THE_SILVER_HAND_LORDAERON, 1);
-      ModObjectLimit(UNIT_H01J_THE_ASHBRINGER_LORDAERON, 1);
-      ModObjectLimit(FourCC("Hlgr"), 1); //Garithos
-      ModObjectLimit(UNIT_HARF_HIGH_KING_LORDAERON_HIGH_KING, 1);
-
-      //Upgrades
-      ModObjectLimit(UPGRADE_R02E_LIGHT_S_PRAISE_MASTER_TRAINING_ARATHOR_LORDAERON, UNLIMITED);
-      ModObjectLimit(UPGRADE_R00I_MAGE_MASTER_TRAINING_LORDAERON, UNLIMITED);
-      ModObjectLimit(UPGRADE_RHAN_ANIMAL_WAR_TRAINING_DARK_GREEN_PURPLE_RESEARCH, UNLIMITED);
-      ModObjectLimit(UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, UNLIMITED);
-      ModObjectLimit(UPGRADE_R04D_SEAL_OF_RIGHTEOUSNESS_LORDAERON, UNLIMITED);
-      ModObjectLimit(UPGRADE_R01P_ENSNARE_LORDAERON, UNLIMITED);
-      ModObjectLimit(UPGRADE_R04A_RAPID_FIRE_LORDAERON, UNLIMITED);
-      ModObjectLimit(UPGRADE_R00B_VETERAN_FOOTMEN_LORDAERON, UNLIMITED);
+      foreach (var (objectTypeId, objectLimit) in LordaeronObjectLimitData.GetAllObjectLimits())
+        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
 
       //Todo: these probably should be in some kind of ability library, not here
       ModAbilityAvailability(ABILITY_A0N2_GRASPING_VINES_TREANTS, -1);
@@ -142,8 +82,6 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
       ModAbilityAvailability(ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
       ModAbilityAvailability(ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, 1);
       ModAbilityAvailability(ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);
-
-      ModObjectLimit(UPGRADE_R0XZ_THE_SCARLET_CRUSADE_LORDAERON_SCARLET, UNLIMITED);
     }
 
     private void RegisterQuests()

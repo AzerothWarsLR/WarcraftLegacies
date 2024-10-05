@@ -41,12 +41,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\BlackEmpireTowerEndlessFountain.mdl"
-    },
-    {
-      "Id": 1768841589,
-      "Type": 3,
-      "Value": "upgrade,second"
+      "Value": "war3mapImported/Building_NyAlothaObelisk.mdl"
     },
     {
       "Id": 1835101813,
@@ -62,6 +57,11 @@
       "Id": 1831952757,
       "Type": 3,
       "Value": "Abilities\\Weapons\\GreenDragonMissile\\GreenDragonMissile.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary defensive structure. "
     }
   ]
 }

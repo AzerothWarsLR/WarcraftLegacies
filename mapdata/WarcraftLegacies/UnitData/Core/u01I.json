@@ -34,7 +34,7 @@
     {
       "Id": 1768648053,
       "Type": 3,
-      "Value": "sreg,phea,pman,I019,I00L,hslv,oli2,rwiz,rag1"
+      "Value": "sreg,phea,pman,I019,hslv,oli2,rwiz,rag1"
     },
     {
       "Id": 1953918325,
@@ -55,10 +55,6 @@
       "Id": 1918988405,
       "Type": 3,
       "Value": ""
-    },
-    {
-      "Id": 1868788853,
-      "Value": 16
     },
     {
       "Id": 1836412021,

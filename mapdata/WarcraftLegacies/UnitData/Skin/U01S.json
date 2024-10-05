@@ -7,17 +7,17 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 3
+      "Value": 1
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Twilight)"
+      "Value": "(Elemental)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "R"
+      "Value": "W"
     },
     {
       "Id": 1835101813,
@@ -27,7 +27,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Mystical Hero, Excels at slowing the enemies around him. |n|cfff5962dCan learn:|R Blizzard, Frost Armor, Chilling Aura, Living Tornado|n|n|cffffcc00Attacks land and air units."
+      "Value": "Mystical Hero, Excels at slowing the enemies around him. "
     },
     {
       "Id": 1869770869,
@@ -67,7 +67,7 @@
     {
       "Id": 1831952757,
       "Type": 3,
-      "Value": ".mdl"
+      "Value": "Abilities\\Spells\\Orc\\LightningShield\\LightningShieldTarget.mdl"
     },
     {
       "Id": 1633907573,

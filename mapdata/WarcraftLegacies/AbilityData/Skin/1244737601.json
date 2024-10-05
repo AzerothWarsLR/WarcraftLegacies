@@ -59,30 +59,25 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "Learn Inferno Strike (|cffffcc00R|r) - [|cffffcc00Level %d|r]"
+      "Value": "Learn Inferno Strike - [|cffffcc00Level %d|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Inferno Strike (|cffffcc00R|r) - [|cffffcc00Level 3|r]"
+      "Value": "Inferno Strike - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Inferno Strike (|cffffcc00R|r) - [|cffffcc00Level 2|r]"
+      "Value": "Inferno Strike - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Inferno Strike (|cffffcc00R|r) - [|cffffcc00Level 1|r]"
-    },
-    {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Inferno Strike"
+      "Value": "Inferno Strike - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 1,
@@ -119,6 +114,11 @@
       "Id": 1718840929,
       "Type": 3,
       "Value": "(Yellow - Dagran)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Inferno Strike"
     }
   ]
 }

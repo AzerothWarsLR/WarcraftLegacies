@@ -32,7 +32,7 @@
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "W"
+      "Value": "E"
     },
     {
       "Id": 2053990773,
@@ -57,7 +57,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Gladiator"
+      "Value": "Deep Fiend"
     },
     {
       "Id": 1668510581,
@@ -82,12 +82,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Train - Gladiator"
+      "Value": "Train Deep Fiend"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Elite melee unit. Has the Bash and Combat Experiencee abilities.|r|n|cffffcc00Attacks land units.|r"
+      "Value": "Elite melee unit."
     },
     {
       "Id": 1684960117,
@@ -96,7 +96,7 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": 2
     }
   ]
 }

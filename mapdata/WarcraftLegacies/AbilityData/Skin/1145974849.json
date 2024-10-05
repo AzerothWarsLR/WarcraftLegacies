@@ -23,7 +23,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "The Alchemist sprays poison all around him. |n|n|cffffcc00Level 1|r - \u003CAEfk,DataA1\u003E damage per target. |n|cffffcc00Level 2|r - \u003CAEfk,DataA2\u003E damage per target. |n|cffffcc00Level 3|r - \u003CAEfk,DataA3\u003E damage per target. |n|cffffcc00Level 4|r - \u003CAEfk,DataA4\u003E damage per target."
+      "Value": "The hero sprays poison all around him. |n|n|cffffcc00Level 1|r - \u003CA0ND,DataA1\u003E damage per target. |n|cffffcc00Level 2|r - \u003CA0ND,DataA2\u003E damage per target. |n|cffffcc00Level 3|r - \u003CA0ND,DataA3\u003E damage per target. |n|cffffcc00Level 4|r - \u003CA0ND,DataA4\u003E damage per target."
     },
     {
       "Level": 4,
@@ -35,13 +35,13 @@
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The Alchemist sprays poison all around him, damaging nearby enemies. Each knife does \u003CAEfk,DataA3\u003E damage."
+      "Value": "The hero sprays poison all around him, damaging nearby enemies. Each missile does \u003CA0ND,DataA3\u003E damage."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The Alchemist sprays poison all around him, damaging nearby enemies. Each knife does \u003CAEfk,DataA4\u003E damage."
+      "Value": "The hero sprays poison all around him, damaging nearby enemies. Each missile does \u003CA0ND,DataA4\u003E damage."
     },
     {
       "Id": 1835101793,
@@ -75,13 +75,13 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The Alchemist sprays poison all around him, damaging nearby enemies. Each knife does \u003CAEfk,DataA1\u003E damage."
+      "Value": "The hero sprays poison all around him, damaging nearby enemies. Each missile does \u003CA0ND,DataA1\u003E damage."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The Alchemist sprays poison all around him, damaging nearby enemies. Each knife does \u003CAEfk,DataA2\u003E damage."
+      "Value": "The hero sprays poison all around him, damaging nearby enemies. Each missile does \u003CA0ND,DataA2\u003E damage."
     },
     {
       "Id": 1952542049,
@@ -96,12 +96,12 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNAcidBomb.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPoison Cloud.blp"
     },
     {
       "Id": 1918988897,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNAcidBomb.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPoison Cloud.blp"
     }
   ]
 }

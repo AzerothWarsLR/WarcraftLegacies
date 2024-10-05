@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
-using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
@@ -20,12 +20,14 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     /// <summary>
     /// Initializes a new instance of <see cref="QuestAstranaar"/>.
     /// </summary>
-    public QuestAstranaar(QuestData prerequisite, List<Rectangle> rescueRects) : base("Daughters of the Moon",
-      "Shandris need to warn the Sentinels in Auberdine of the Horde invadors by sending a messenger.",
+    public QuestAstranaar(List<Rectangle> rescueRects) : base("Daughters of the Moon",
+      "Auberdin needs to be mobilized for war. Darkshore has already been attacked by wild creatures gone mad.",
       @"ReplaceableTextures\CommandButtons\BTNShandris.blp")
     {
-      AddObjective(new ObjectiveQuestComplete(prerequisite));
-      AddObjective(new ObjectiveAnyUnitInRect(Regions.AuberdineUnlock, "Auberdine", false));
+      AddObjective(new ObjectiveControlPoint(UNIT_N02Z_AZUREMYST_ISLE));
+      AddObjective(new ObjectiveControlPoint(UNIT_N02U_DARKSHORE));
+      AddObjective(new ObjectiveControlPoint(UNIT_N064_GROVE_OF_THE_ANCIENTS));
+      AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.Invasion3 }, "in Darkshore"));
       AddObjective(new ObjectiveUpgrade(UNIT_N06P_SENTINEL_ENCLAVE_SENTINEL_T3,
         UNIT_N06J_SENTINEL_OUTPOST_SENTINEL_T1));
       AddObjective(new ObjectiveExpire(480, Title));
@@ -40,10 +42,10 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
 
     /// <inheritdoc />
     public override string RewardFlavour =>
-      "Auberdine has been reached and has joined the Sentinels in their war effort";
+      "Darkshore has been secured and Auberdine has joined us";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Control of all units in Astranaar Outpost and Auberdine. Maiev and Naisha will be trainable at Altar";
+    protected override string RewardDescription => "Control of all units in Astranaar Outpost and Auberdine. Tyrande and Maiev will be trainable at the Altar";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
@@ -58,7 +60,8 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player.RescueGroup(_rescueUnits);
+      completingFaction.Player.RescueGroup(_rescueUnits)
+      .PlayMusicThematic("war3mapImported\\SentinelTheme.mp3");
     }
   }
 }

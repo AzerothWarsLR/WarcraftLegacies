@@ -1,85 +1,160 @@
 ﻿using MacroTools;
 using MacroTools.FactionSystem;
+using MacroTools.PassiveAbilities;
+using MacroTools.PassiveAbilitySystem;
+using MacroTools.Spells;
+using MacroTools.SpellSystem;
+using System.Collections.Generic;
+using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Quests.BlackEmpire;
 using WarcraftLegacies.Source.Setup;
+
 
 namespace WarcraftLegacies.Source.Factions
 {
   public class BlackEmpire : Faction
   {
-    private readonly PreplacedUnitSystem _preplacedUnitSystem;
+
     private readonly AllLegendSetup _allLegendSetup;
-    private readonly ArtifactSetup _artifactSetup;
+    private readonly PreplacedUnitSystem _preplacedUnitSystem;
 
     /// <inheritdoc />
-    public BlackEmpire(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("BlackEmpire", PLAYER_COLOR_TURQUOISE, "|C0000FFFF",
+    public BlackEmpire(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("BlackEmpire", PLAYER_COLOR_MAROON, "|cff800000",
       @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
     {
-      _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
-      _artifactSetup = artifactSetup;
+      _preplacedUnitSystem = preplacedUnitSystem;
       ControlPointDefenderUnitTypeId = UNIT_N0DV_CONTROL_POINT_DEFENDER_BLACK_EMPIRE_TOWER;
+      TraditionalTeam = TeamSetup.OldGods;
+      StartingGold = 200;
+      IntroText = @"You are playing as the Black Empire of N'zoth|r|r.
+
+You start in Nyalotha, restore the city to it's glory by repelling the invaders from Azeroth.
+
+Then, move onto Kalimdor with your allies. You will quickly run into the Sentinels.
+
+Be sure to train Forsaken Ones, they are powerful units";
     }
-    
+
     /// <inheritdoc />
     public override void OnRegistered()
     {
       RegisterObjectLimits();
+      RegisterQuests();
+      RegisterSpells();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    }
+
+    private void RegisterQuests()
+    {
+      var questGorma = AddQuest(new QuestMawofGorma(Regions.BlackEmpireOutpost1));
+      StartingQuest = questGorma;
+
+      AddQuest(new QuestWakingCity(questGorma, _allLegendSetup, Regions.Nyalotha));
+      AddQuest(new QuestGiftofFlesh());
+      AddQuest(new QuestWakingDream(_allLegendSetup.BlackEmpire.Xkorr, _preplacedUnitSystem));
+      AddQuest(new QuestMawofShuma(_allLegendSetup.BlackEmpire.Yorsahj));
+      AddQuest(new QuestMawofGorath(_allLegendSetup.BlackEmpire.Zonozz));
+      AddQuest(new QuestBladeoftheBlackEmpire(Regions.TheAbyss));
+      AddQuest(new QuestDestruction(_allLegendSetup.BlackEmpire.Nzoth));
+      AddQuest(new QuestWorldStone(_allLegendSetup.BlackEmpire.Nzoth, _allLegendSetup.Frostwolf.ThunderBluff, _allLegendSetup.Warsong.Orgrimmar));
+      AddQuest(new QuestAscension(_allLegendSetup.BlackEmpire.Nzoth));
+      AddQuest(new QuestAlignement(_allLegendSetup.BlackEmpire.Nzoth));
     }
 
     private void RegisterObjectLimits()
     {
-      ModObjectLimit(UNIT_N0AR_TWISTING_HALLS_YOGG_T1, UNLIMITED);
-      ModObjectLimit(UNIT_N0AS_WHISPERING_LABYRINTH_YOGG_T2, UNLIMITED);
-      ModObjectLimit(UNIT_N0AT_CATHEDRAL_OF_MADNESS_YOGG_T3, UNLIMITED);
-      ModObjectLimit(UNIT_N0AU_PULSATING_PORTAL_YOGG_FARM, UNLIMITED);
-      ModObjectLimit(UNIT_H06U_SIPHONING_CRYSTAL_YOGG_RESEARCH, UNLIMITED);
-      ModObjectLimit(UNIT_N0AW_INCUBATION_POOL_YOGG_BARRACKS, UNLIMITED);
-      ModObjectLimit(UNIT_N0B3_SHADOW_LAIR_YOGG_MAGIC, UNLIMITED);
-      ModObjectLimit(UNIT_N0AX_PIT_OF_TORMENT_YOGG_SPECIALIST, UNLIMITED);
-      ModObjectLimit(UNIT_N0B2_OMINOUS_VAULT_YOGG_SHOP, UNLIMITED);
-      ModObjectLimit(UNIT_N0AV_ALTAR_OF_MADNESS_YOGG_ALTAR, UNLIMITED);
-      ModObjectLimit(UNIT_H09E_MADNESS_POOL_YOGG_TOWER, UNLIMITED);
-      ModObjectLimit(UNIT_N0AY_ACID_SPITTER_YOGG_TOWER, UNLIMITED);
-      ModObjectLimit(UNIT_N0B0_IMPROVED_ACID_SPITTER_YOGG_TOWER, UNLIMITED);
-      ModObjectLimit(UNIT_N0AZ_SLEEPLESS_WATCHER_YOGG_TOWER, UNLIMITED);
-      ModObjectLimit(UNIT_N0B1_IMPROVED_SLEEPLESS_WATCHER_YOGG_TOWER, UNLIMITED);
+      foreach (var (objectTypeId, objectLimit) in BlackEmpireObjectLimitData.GetAllObjectLimits())
+        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
+    }
 
-      // All Nzoth Units listed below - with total limits 
+    private void RegisterSpells()
+    {
+      PassiveAbilityManager.Register(new HideousAppendages(UNIT_U01Z_OLD_GOD_NZOTH)
+      {
+        TentacleUnitTypeId = UNIT_N098_NZOTHTENTACLE_HIDEOUS_APPENDAGES_N_ZOTH,
+        TentacleCount = 9,
+        RadiusOffset = 520
+      });
 
-      ModObjectLimit(UNIT_N0B5_SCAVENGER_YOGG_WORKER, UNLIMITED);
-      ModObjectLimit(UNIT_N0B4_REAPER_YOGG, 6);
+      PassiveAbilityManager.Register(new InfiniteInfluence(UNIT_U01Z_OLD_GOD_NZOTH)
+      {
+        Radius = 700
+      });
 
-      ModObjectLimit(UNIT_O01G_FACELESS_MARAUDER_YOGG, UNLIMITED);
-      ModObjectLimit(UNIT_O04V_SOUL_HUNTER_YOGG, UNLIMITED);
-      ModObjectLimit(UNIT_U029_STYGIAN_HULK_YOGG, 12);
+      PassiveAbilityManager.Register(new NoTargetSpellOnCast(UNIT_E01D_HARBINGER_OF_NY_ALOTHA_YOGG, ABILITY_AXK2_VOID_RIFT_ICON_XKORR)
+      {
+        DummyAbilityId = ABILITY_AXK1_VOIDBOLTDUMMY_X_KORR_DUMMY_SPELL,
+        DummyOrderId = OrderId("fanofknives"),
+        ProcChance = 1.0f,
+        AbilityWhitelist = new List<int>
+        {
+          ABILITY_A032_ARCANE_BOMBARDMENT_ORANGE_ANTONIDAS_MEDIVH,
+          ABILITY_ABEH_HEALING_WAVE_BLACK_EMPIRE,
+          ABILITY_A10U_MANA_BURN_DALARAN_YOGG,
+          ABILITY_A11O_BLACK_HOLE_KHADGAR,
+        }
+      });
 
-      ModObjectLimit(UNIT_N077_SORCERER_YOGG, UNLIMITED);
-      ModObjectLimit(UNIT_O04Y_FATEWEAVER_YOGG, UNLIMITED);
-      ModObjectLimit(UNIT_U02F_FORGOTTEN_ONE_YOGG, 2);
-      ModObjectLimit(UNIT_O04Z_FLYING_HORROR_YOGG, 12);
-      ModObjectLimit(UNIT_N0AH_DEFORMED_CHIMERA_YOGG, 4);
-      ModObjectLimit(UNIT_H09F_GLADIATOR_YOGG, UNLIMITED  );
+      var poisonYor = new Stomp(ABILITY_ABNT_VOID_TOXIN_BLACK_EMPIRE)
+      {
+        Radius = 600,
+        DamageBase = 20,
+        DamageLevel = 70,
+        DurationBase = 6,
+        DurationLevel = 0,
+        StunAbilityId = ABILITY_ABSS_SHADOW_STRIKE_VOID_TOXIN_REAL,
+        StunOrderId = OrderId("shadowstrike"),
+        SpecialEffect = @"Abilities\Weapons\ChimaeraAcidMissile\ChimaeraAcidMissile.mdl"
+      };
+      SpellSystem.Register(poisonYor);
 
-     // All Nzoth Ships
+      var genesisAttack = new SpellOnAttack(UNIT_U029_STYGIAN_HULK_YOGG,
+        ABILITY_ABES_GENESIS_ATTACK_ICON_STYGIAN_HULK)
+      {
+        DummyAbilityId = ABILITY_ABEG_PARASITE_GENESIS_ATTACK_REAL,
+        DummyOrderId = OrderId("parasite"),
+        ProcChance = 1.0f
+      };
+      PassiveAbilityManager.Register(genesisAttack);
 
-      ModObjectLimit(FourCC("ushp"), UNLIMITED); //Undead Shipyard
-      ModObjectLimit(FourCC("ubot"), UNLIMITED); //Undead Transport Ship
-      ModObjectLimit(FourCC("h0AT"), UNLIMITED); //Scout
-      ModObjectLimit(FourCC("h0AW"), UNLIMITED); //Frigate
-      ModObjectLimit(FourCC("h0AM"), UNLIMITED); //Fireship
-      ModObjectLimit(FourCC("h0AZ"), UNLIMITED); //Galley
-      ModObjectLimit(FourCC("h0AQ"), UNLIMITED); //Boarding
-      ModObjectLimit(FourCC("h0BB"), UNLIMITED); //Juggernaut
-      ModObjectLimit(FourCC("h0B9"), 6); //Bombard
+      var shadowVeilPassive = new NoTargetSpellOnAttack(UNIT_N0AH_DEFORMED_CHIMERA_YOGG,
+  ABILITY_ABEV_SHADOW_VEIL)
+      {
+        DummyAbilityId = ABILITY_ABSV_SHADOW_VEIL_SHADOW_VEIL_REAL,
+        DummyOrderId = OrderId("howlofterror"),
+        ProcChance = 0.25f,
+        RequiredResearch = Constants.UPGRADE_RBEV_SHADOW_VEIL_BLACK_EMPIRE
+      };
+      PassiveAbilityManager.Register(shadowVeilPassive);
 
+      var shadowVeilSpell = new MassAnySpell(ABILITY_ABSV_SHADOW_VEIL_SHADOW_VEIL_REAL)
+      {
+        DummyAbilityId = ABILITY_ACAM_ANTI_MAGIC_SHELL_BLACK_EMPIRE,
+        DummyAbilityOrderId = OrderId("antimagicshell"),
+        Radius = 200,
+        CastFilter = CastFilters.IsTargetOrganicAndAlive,
+        TargetType = SpellTargetType.None
+      };
+      SpellSystem.Register(shadowVeilSpell);
 
-      // All Nzoth Heroes listed below - with total limits
+      var paralysingFear = new SpellOnAttack(UNIT_O01G_BRUTE_YOGG,
+        ABILITY_ABPF_PARALYSING_FEAR)
+      {
+        DummyAbilityId = ABILITY_ABSF_SLOW_PARALYSING_FEAR,
+        DummyOrderId = OrderId("slow"),
+        ProcChance = 0.2f
+      };
+      PassiveAbilityManager.Register(paralysingFear);
 
-      ModObjectLimit(UNIT_U02A_N_RAQI_ABERRATION_YOGG, 1);
-      ModObjectLimit(UNIT_U02B_YOGG_SARON_CHAMPION, 1);
-      ModObjectLimit(UNIT_E01D_N_RAQI_ARCANIST_YOGG, 1);
-
+      var greaterParalysingFear = new SpellOnAttack(UNIT_H09F_DEEP_FIEND_YOGG,
+        ABILITY_ABGP_GREATER_PARALYSING_FEAR)
+      {
+        DummyAbilityId = ABILITY_ABSG_SLOW_GREATER_PARALYSING_FEAR,
+        DummyOrderId = OrderId("slow"),
+        ProcChance = 0.4f
+      };
+      PassiveAbilityManager.Register(greaterParalysingFear);
     }
   }
 }

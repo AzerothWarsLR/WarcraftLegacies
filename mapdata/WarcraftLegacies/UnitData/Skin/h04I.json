@@ -42,6 +42,11 @@
       "Id": 1668510581,
       "Type": 1,
       "Value": 6
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Upgrade to Castle to enable the production of additional types of structures and units."
     }
   ]
 }

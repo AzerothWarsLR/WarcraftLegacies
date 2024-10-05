@@ -8,8 +8,8 @@ namespace WarcraftLegacies.Source.Setup
   {
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
-      new FactionChoiceDialogPresenter(new Zandalar(preplacedUnitSystem, allLegendSetup, artifactSetup),
-        new Bilgewater(preplacedUnitSystem, allLegendSetup)).Run(Player(8));
+      //new FactionChoiceDialogPresenter(new Zandalar(preplacedUnitSystem, allLegendSetup, artifactSetup),
+      //  new Bilgewater(preplacedUnitSystem, allLegendSetup)).Run(Player(8));
       
       new FactionChoiceDialogPresenter(new Illidari(allLegendSetup, artifactSetup),
         new Sunfury(preplacedUnitSystem, allLegendSetup, artifactSetup)).Run(Player(15));

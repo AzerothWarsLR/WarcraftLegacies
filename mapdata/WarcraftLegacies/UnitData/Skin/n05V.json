@@ -32,7 +32,7 @@
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "- Shadow Infusion,- Shadow Infusion|n- Regeneration,- Shadow Infusion|n- Regeneration|n - Earth Shackles"
+      "Value": "- Heal,- Heal|n- Rejuvenation,- Heal|n- Rejuvenation|n - Ground Shackles"
     },
     {
       "Id": 1667462261,
@@ -85,12 +85,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Train - Shadow Weaver"
+      "Value": "Train Shadow Weaver"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Powerful spellcaster. Deceitful and mysterious, these Faceless Shadow Weaver support their kin with Shadow spells.|n|cffffcc00Casts:|r Eye of C\u0027thun, Regeneration, Earth Shackles. |n|n|cffd5d500Attacks land and air units.|r"
+      "Value": "Healing spellcaster."
     },
     {
       "Id": 1684960117,

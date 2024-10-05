@@ -1,0 +1,19 @@
+{
+  "OldId": 1919906926,
+  "NewId": 844382574,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Level 2)"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Living Tornado"
+    }
+  ]
+}

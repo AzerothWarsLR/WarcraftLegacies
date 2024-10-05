@@ -3,5 +3,11 @@
   "Unk": [
     0
   ],
-  "Modifications": []
+  "Modifications": [
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light melee unit that poisons opponents. Can cast Entangling Roots. "
+    }
+  ]
 }

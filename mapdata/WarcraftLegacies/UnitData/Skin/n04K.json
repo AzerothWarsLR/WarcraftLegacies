@@ -27,7 +27,7 @@
     {
       "Id": 1953850229,
       "Type": 3,
-      "Value": "- Shadow Infusion,- Shadow Infusion|n- Dispel magic,- Shadow Infusion|n- Dispel magic|n- Mind Flay"
+      "Value": "- Heal,- Heal|n- Dispel Magic,- Heal|n- Dispel Magic|n- Mind Flay"
     },
     {
       "Id": 1718840949,
@@ -62,7 +62,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Manipulative demon of the nether. |n|cfff5962dAbilities:|R Shadow Infusion|n|cfff5962dCan Learn:|R Dispel Magic, Mind Flay|n|n|cffffcc00Attacks land and air units.|R"
+      "Value": "Manipulative demon of the nether. "
     }
   ]
 }

@@ -7,18 +7,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Quel\u0027Thalas-Dragonhawk Rider)"
+      "Value": "(Dragonhawk Rider)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
       "Value": "Q"
-    },
-    {
-      "Level": 1,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "Stuns and deals \u003CAmls,DataA1\u003E damage per second to a target enemy air unit.|n|cffffcc00Lasts 10(1 for Heros) seconds."
     }
   ]
 }

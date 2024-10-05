@@ -24,6 +24,11 @@
       "Id": 1818520949,
       "Type": 3,
       "Value": "units\\creeps\\RedDragon\\RedDragon.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy ranged flying unit that deals cold damage and slows enemy units. Can Devour opponents and is immune to magic. "
     }
   ]
 }

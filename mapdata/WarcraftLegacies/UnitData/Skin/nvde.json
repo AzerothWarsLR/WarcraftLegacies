@@ -26,6 +26,11 @@
       "Id": 1885959285,
       "Type": 3,
       "Value": "Train Elder Voidwalker"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy ranged unit that can cast Devour Magic and Forked Lightning. "
     }
   ]
 }

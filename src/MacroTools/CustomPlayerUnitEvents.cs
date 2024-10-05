@@ -1,4 +1,6 @@
-﻿using WCSharp.Events;
+﻿using MacroTools.Extensions;
+using MacroTools.FactionSystem;
+using WCSharp.Events;
 using static War3Api.Common;
 
 namespace MacroTools
@@ -27,6 +29,11 @@ namespace MacroTools
     /// A unit owned by a specific player dies.
     /// </summary>
     public static string PlayerUnitDies => nameof(PlayerUnitDies);
+    
+    /// <summary>
+    /// A unit owned by a specific <see cref="Faction"/> kills a unit.
+    /// </summary>
+    public static string FactionUnitKills => nameof(FactionUnitKills);
 
     static CustomPlayerUnitEvents()
     {
@@ -37,6 +44,8 @@ namespace MacroTools
       PlayerUnitEvents.AddCustomEvent(PlayerTakesDamage, () => GetPlayerId(GetOwningPlayer(GetTriggerUnit())),
         EVENT_PLAYER_UNIT_DAMAGED);
       PlayerUnitEvents.AddCustomEvent(PlayerUnitDies, () => GetPlayerId(GetOwningPlayer(GetTriggerUnit())),
+        EVENT_PLAYER_UNIT_DEATH);
+      PlayerUnitEvents.AddCustomEvent(FactionUnitKills, () => GetKillingUnit().OwningPlayer().GetFaction().Id,
         EVENT_PLAYER_UNIT_DEATH);
     }
   }

@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNBOSSMythrax.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRoyalGuardGolem.blp"
     },
     {
       "Id": 1885430133,
@@ -57,7 +57,7 @@
     {
       "Id": 1831952757,
       "Type": 3,
-      "Value": "Abilities\\Weapons\\DruidoftheTalonMissile\\DruidoftheTalonMissile.mdl"
+      "Value": "Abilities\\Spells\\Orc\\LightningShield\\LightningShieldTarget.mdl"
     },
     {
       "Id": 1835101813,
@@ -77,7 +77,7 @@
     {
       "Id": 1769173877,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNBOSSMythrax.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRoyalGuardGolem.blp"
     },
     {
       "Id": 1751675765,
@@ -121,17 +121,17 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Summon Herald Volazj"
+      "Value": "Summon Grand Vizier Ertan"
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(tolvir)"
+      "Value": "(elemental)"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Mystical Hero, adept at disruption and ranged combat.|n|cfff5962dCan Learn:|R Arcane Bombardment, Banish, Arcane Bomb, Curse of Silence|n|n|cffffcc00Attacks land and air units.|R"
+      "Value": "Mystical Hero, adept at disruption and ranged combat."
     },
     {
       "Id": 1633907573,

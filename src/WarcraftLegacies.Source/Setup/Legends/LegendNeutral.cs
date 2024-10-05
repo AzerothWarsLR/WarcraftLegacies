@@ -8,6 +8,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
   public sealed class LegendNeutral
   {
     public LegendaryHero Ragnaros { get; }
+    public LegendaryHero YoggSaron { get; }
     public Capital Auchindoun { get; }
     public Capital DraktharonKeep { get; }
     public Capital Oshugun { get; }
@@ -41,7 +42,19 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 15404
       };
 
-      Auchindoun = new Capital
+        YoggSaron = new LegendaryHero("Yogg-Saron")
+        {
+          UnitType = UNIT_U02C_OLD_GOD,
+          PermaDies = true,
+          DeathMessage = "Yogg-Saron, the beast with a thousand maws has been destroyed.",
+          StartingArtifacts = new()
+        {
+          new(CreateItem(ITEM_IYGL_VAL_ANYR_HAMMER_OF_ANCIENT_KINGS, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+        },
+          StartingXp = 23800
+        };
+
+        Auchindoun = new Capital
       {
         Capturable = true,
         Unit = preplacedUnitSystem.GetUnit(FourCC("h026"))
@@ -159,6 +172,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(Ragnaros);
+      LegendaryHeroManager.Register(YoggSaron);
       LegendaryHeroManager.Register(Vaelastrasz);
       CapitalManager.Register(Auchindoun);
       CapitalManager.Register(DraktharonKeep);

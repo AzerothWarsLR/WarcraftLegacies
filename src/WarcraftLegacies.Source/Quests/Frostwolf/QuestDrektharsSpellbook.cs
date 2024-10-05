@@ -11,19 +11,19 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
   {
     private readonly LegendaryHero _thrall;
 
-    public QuestDrektharsSpellbook(Capital nodrassil, LegendaryHero thrall) : base("Drekthar's Spellbook",
-      "The savage Night Elves threaten the safety of the entire Horde. Capture their World Tree and bring Thrall to its roots.",
+    public QuestDrektharsSpellbook(Capital vortex, LegendaryHero thrall) : base("Drekthar's Spellbook",
+      "The elemental planes are out of control. Bring Thrall to the Vortex Pinnacle to bring back the balance.",
       @"ReplaceableTextures\CommandButtons\BTNSorceressMaster.blp")
     {
       _thrall = thrall;
-      AddObjective(new ObjectiveControlCapital(nodrassil, false));
-      AddObjective(new ObjectiveLegendInRect(thrall, Regions.Drekthars_Spellbook,
-        "Nordrassil"));
+      AddObjective(new ObjectiveControlCapital(vortex, false));
+      AddObjective(new ObjectiveLegendInRect(thrall, Regions.Tempest_Rain,
+        "Vortex Pinnacle"));
     }
 
     /// <inheritdoc />
     public override string RewardFlavour =>
-      "The World Tree, Nordrassil, has been captured by the forces of the Horde. Drek'thar has gifted Warchief Thrall his magical spellbook for this achievement.";
+      "The Vortex Pinnacle has been captured by the Horde. Drek'thar has gifted Warchief Thrall his magical spellbook for this achievement.";
 
     /// <inheritdoc />
     protected override string RewardDescription => "Drek'thar's Spellbook";

@@ -1,0 +1,40 @@
+{
+  "OldId": 1851877441,
+  "NewId": 1397507393,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASBreatheFire.blp"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Searing Bite"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Searing Bite"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "On attack, the unit reduces it\u0027s target armor by 3 for 5 seconds."
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(icon)"
+    }
+  ]
+}

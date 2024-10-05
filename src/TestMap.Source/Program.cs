@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using TestMap.Source.Setup;
-using static War3Api.Common;
 
 namespace TestMap.Source
 {

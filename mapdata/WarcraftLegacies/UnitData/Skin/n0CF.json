@@ -22,7 +22,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Mighty wyrm from Blackrock\u0027s depths.  |n|cfff5962dAbilities:|R Breath of Fire|n|cff99b4d1Can only train 2.|r|n|cffffcc00Attacks land units.|r"
+      "Value": "Mighty wyrm from the Firelands.  "
     },
     {
       "Id": 1835101813,
@@ -47,7 +47,22 @@
     {
       "Id": 1831952757,
       "Type": 3,
+      "Value": "Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1832018293,
+      "Type": 3,
       "Value": "Abilities\\Weapons\\RedDragonBreath\\RedDragonMissile.mdl"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.5
     }
   ]
 }

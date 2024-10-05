@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(tolvir)"
+      "Value": "(elemental)"
     },
     {
       "Id": 1953458293,
@@ -23,32 +23,37 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Warriors of the N\u0027raqi.|n|cfff5962dAbilities:|R Charge, Bash|R|n|cfff5962d|n|cffffcc00Attacks land units.|r"
+      "Value": "Armor inhabited by an elemental."
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Outrunner"
+      "Value": "Animated Armor"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Train Faceless Marauder"
+      "Value": "Train Animated Armor"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "units\\creeps\\Centaur\\Centaur.mdl"
+      "Value": "war3mapImported\\NightElfMoonProtectorV2.mdl"
     },
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNFacelessOne.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArmorGolem.blp"
     },
     {
       "Id": 1684960117,
       "Type": 3,
-      "Value": "NagaMyrmidon"
+      "Value": "RockGolem"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.6
     }
   ]
 }

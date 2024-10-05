@@ -1,9 +1,8 @@
-﻿using MacroTools;
-using MacroTools.PassiveAbilities;
+﻿using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
-using WarcraftLegacies.Source.Spells.Slipstream;
+using WarcraftLegacies.Source.Spells;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -17,14 +16,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
     /// </summary>
     public static void Setup()
     {
-      SpellSystem.Register(new SlipstreamSpell(ABILITY_A00D_SLIPSTREAM_STORMWIND_KHADGAR)
-      {
-        PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
-        OpeningDelay = 5,
-        ClosingDelay = 10,
-        Color = new Color(40, 40, 255, 255)
-      });
-
       var legendaryWarrior = new ChannelSpellOnAttack(UNIT_H00R_KING_OF_STORMWIND_DARK_GREEN,
         ABILITY_A12C_LEGENDARY_WARRIOR_VARIAN)
       {
@@ -41,6 +32,23 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DummyAbilityId = ABILITY_A130_RESURRECTION_STORMWIND_CHAMPION_SINGLE,
         DummyAbilityOrderId = OrderId("resurrection"),
       });
+
+      var electricStrike = new ElectricStrike(ABILITY_A0RC_ELECTRIC_STRIKE_DARK_GREEN_WIZARD_S_SANCTUM)
+      {
+        StunId = ABILITY_A0RD_ELECTRIC_STRIKE_MINI_STUN_DARK_GREEN,
+        PurgeId = ABILITY_APRG_PURGE_ELECTRIKE_STRIKE,
+        PurgeOrder = OrderId("purge"),
+        StunOrder = OrderId("firebolt"),
+        Radius = 500f,
+        Effect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
+      };
+      SpellSystem.Register(electricStrike);
+
+      var manaSyphon = new GrantMana(ABILITY_A0RG_MANA_SYPHON_STORMWIND_MAGE_TOWER)
+      {
+        ManaToGrant = 250
+      };
+      SpellSystem.Register(manaSyphon);
     }
   }
 }

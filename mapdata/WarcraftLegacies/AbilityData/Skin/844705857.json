@@ -12,7 +12,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(C\u0027thun Silithis Collosus)"
+      "Value": "(C\u0027thun Colossus)"
     },
     {
       "Id": 2037082209,
@@ -38,7 +38,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Creates a swarm of angry locusts that bite and tear at nearby enemy units. As they chew the enemy flesh, they convert it into a substance that restores hit points to the Silithis Collosus when they return.|n|nSpawns 10 locusts. 50 damage return.|n|n|cffcece00|nAoE: 800.|nLasts 10 seconds.|n60 second cooldown.|r"
+      "Value": "Creates a swarm of \u003CA0Y2,DataA1\u003E angry locusts that bite enemy units within a radius of \u003CA0Y2,Area1\u003E. As they chew the enemy flesh, they convert it into a substance that restores hit points to this unit when they return. Lasts \u003CA0Y2,Dur1\u003E seconds."
     }
   ]
 }

@@ -1,0 +1,106 @@
+[
+  {
+    "State": 2,
+    "Life": 255,
+    "TypeId": 1160982596,
+    "Variation": 1,
+    "Position": {
+      "X": -26952.836,
+      "Y": -6060.317,
+      "Z": 511.71466
+    },
+    "Rotation": 5.2720356,
+    "Scale": {
+      "X": 1.4585001,
+      "Y": 1.4585001,
+      "Z": 2.3084993
+    },
+    "SkinId": 1160982596,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 10119
+  },
+  {
+    "State": 6,
+    "Life": 255,
+    "TypeId": 1144336452,
+    "Position": {
+      "X": -26917.59,
+      "Y": -6028.276,
+      "Z": 447.7726
+    },
+    "Rotation": 3.445837,
+    "Scale": {
+      "X": 3.45,
+      "Y": 3.45,
+      "Z": 3.9499998
+    },
+    "SkinId": 1144336452,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 32758
+  },
+  {
+    "State": 6,
+    "Life": 255,
+    "TypeId": 926167108,
+    "Variation": 1,
+    "Position": {
+      "X": -27129.506,
+      "Y": -5912.641,
+      "Z": 736.92993
+    },
+    "Rotation": 4.07196,
+    "Scale": {
+      "X": 1.0414007,
+      "Y": 1.0414007,
+      "Z": 1.6914003
+    },
+    "SkinId": 926167108,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 32965
+  },
+  {
+    "State": 6,
+    "Life": 255,
+    "TypeId": 926167108,
+    "Variation": 1,
+    "Position": {
+      "X": -27101.549,
+      "Y": -5899.6514,
+      "Z": 956.30286
+    },
+    "Rotation": 4.3022623,
+    "Scale": {
+      "X": 1.0414007,
+      "Y": 1.0414007,
+      "Z": 1.6914003
+    },
+    "SkinId": 926167108,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 33097
+  },
+  {
+    "State": 6,
+    "Life": 255,
+    "TypeId": 926167108,
+    "Variation": 1,
+    "Position": {
+      "X": -27116.252,
+      "Y": -5892.0874,
+      "Z": 878.5628
+    },
+    "Rotation": 4.46907,
+    "Scale": {
+      "X": 1.0414007,
+      "Y": 1.0414007,
+      "Z": 1.6914003
+    },
+    "SkinId": 926167108,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 33101
+  }
+]

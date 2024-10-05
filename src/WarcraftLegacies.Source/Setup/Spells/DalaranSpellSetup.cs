@@ -1,6 +1,7 @@
 ﻿using MacroTools.DummyCasters;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
+using WarcraftLegacies.Source.Spells;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -31,6 +32,23 @@ namespace WarcraftLegacies.Source.Setup.Spells
 
       var rebornTime = new CooldownReset(ABILITY_A10T_REBORN_THROUGH_TIME_DALARAN);
       SpellSystem.Register(rebornTime);
+
+      var massSimulacrum = new MassSimulacrum(ABILITY_A0DG_MASS_SIMULACRUM_ORANGE_ANTONIDAS)
+      {
+        Radius = 150,
+        CountBase = 2,
+        CountLevel = 4,
+        Duration = 60,
+        Effect = @"war3mapImported\Soul Discharge Blue.mdx",
+        EffectScale = 1.1f,
+        EffectTarget = @"Abilities\Spells\Items\AIil\AIilTarget.mdl",
+        EffectScaleTarget = 1.0f,
+        HealthBonusBase = -0.5f,
+        HealthBonusLevel = 0.2f,
+        DamageBonusBase = -0.5f,
+        DamageBonusLevel = 0.2f
+      };
+      SpellSystem.Register(massSimulacrum);
     }
   }
 }

@@ -36,6 +36,11 @@
       "Id": 1818520949,
       "Type": 3,
       "Value": "Doodads\\Dalaran\\Terrain\\DalaranBuilding\\DalaranBuilding1.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Basic observation tower. Has no attack, but can be upgraded into a Guard Tower, an Arcane Tower, or a Cannon Tower. Can learn the Magic Sentry ability."
     }
   ]
 }

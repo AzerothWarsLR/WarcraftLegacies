@@ -1,0 +1,15 @@
+{
+  "Left": -16992,
+  "Bottom": -22560,
+  "Right": -14144,
+  "Top": -20480,
+  "Name": "ThroneoftheFourWind",
+  "CreationNumber": 140,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

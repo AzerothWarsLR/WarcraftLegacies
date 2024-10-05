@@ -5,7 +5,6 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
 using MacroTools.Save;
 using MacroTools.UserInterface;
-using static War3Api.Common;
 
 namespace TestMap.Source.Setup
 {
@@ -26,10 +25,9 @@ namespace TestMap.Source.Setup
       ControlPointSetup.Setup();
       AllQuestSetup.Setup();
       SpellSetup.Setup();
-      var commandManager = new CommandManager();
-      CheatSetup.Setup(commandManager);
-      CommandSetup.Setup(commandManager);
+      CheatSetup.Setup(new CommandManager());
       FactionMultiboard.Setup();
+      BookSetup.Setup();
       TestSetup.Setup();
       WaygateManager.Setup(FourCC("nwgt"));
       HintSetup.Setup();

@@ -1,0 +1,138 @@
+{
+  "OldId": 1868718453,
+  "NewId": 1328704627,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "ZBHL,ZBMR,A13J,A0WJ,A020,A0GF,Aiun"
+    },
+    {
+      "Id": 1836212597,
+      "Type": 3,
+      "Value": "Stone"
+    },
+    {
+      "Id": 829645429,
+      "Type": 2,
+      "Value": 0.64
+    },
+    {
+      "Id": 1684824693,
+      "Value": 5
+    },
+    {
+      "Id": 1819239285,
+      "Type": 2,
+      "Value": 8
+    },
+    {
+      "Id": 1664180597,
+      "Type": 2,
+      "Value": 3.2
+    },
+    {
+      "Id": 1836344437,
+      "Type": 2,
+      "Value": 3.03
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": 1647403381,
+      "Value": 74
+    },
+    {
+      "Id": 829449333,
+      "Type": 2,
+      "Value": 0.33
+    },
+    {
+      "Id": 1869571701,
+      "Value": 1
+    },
+    {
+      "Id": 1819240309,
+      "Value": 26
+    },
+    {
+      "Id": 1919903605,
+      "Value": 24
+    },
+    {
+      "Id": 1836083317,
+      "Value": 1105
+    },
+    {
+      "Id": 1836412021,
+      "Value": 0
+    },
+    {
+      "Id": 1920298101,
+      "Value": 0
+    },
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": 1915838837,
+      "Value": 140
+    },
+    {
+      "Id": 1953654901,
+      "Type": 3,
+      "Value": "always"
+    },
+    {
+      "Id": 1836348021,
+      "Value": 5
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "RZZL,u021"
+    },
+    {
+      "Id": 1731289461,
+      "Type": 3,
+      "Value": "debris,ground,item,structure,tree,ward"
+    },
+    {
+      "Id": 1887007861,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1919381621,
+      "Type": 3,
+      "Value": "ZBML,ZBHS,Rhme,Rhar,Rguv"
+    },
+    {
+      "Id": 829645685,
+      "Type": 3,
+      "Value": "WoodHeavyBash"
+    },
+    {
+      "Id": 1935827829,
+      "Type": 2,
+      "Value": 0.15
+    },
+    {
+      "Id": 1953522549,
+      "Type": 2,
+      "Value": 0.5
+    },
+    {
+      "Id": 1937141109,
+      "Value": 250
+    }
+  ]
+}

@@ -43,7 +43,7 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Improves Obsidian Drakes by causing their attacks to cause fire to cling to a unit. If a unit dies while under this effect, it is incinerated, causing up to \u003CA0DS,DataB1\u003E damage to all nearby hostile units."
+      "Value": "Enhances the attacks of Obsidian Drakes with living flames that cling to the target. If a unit dies while under this effect, it is incinerated, causing up to \u003CZBIN,DataB1\u003E damage to all nearby hostile units."
     }
   ]
 }

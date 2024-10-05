@@ -18,7 +18,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\OceanReef1.2.mdl"
+      "Value": "war3mapImported\\Monolith_NoFlyingAttachments_Overheads.mdl"
     },
     {
       "Id": 1953458293,
@@ -28,7 +28,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.8
+      "Value": 0.6
     },
     {
       "Id": 1835101813,
@@ -59,6 +59,11 @@
       "Id": 1651012469,
       "Type": 3,
       "Value": "BuildingShadowLarge"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": "Upgrade,Second"
     }
   ]
 }

@@ -1,14 +1,8 @@
 {
-  "OldId": 1668050242,
+  "OldId": 1735553090,
   "NewId": 808529986,
   "Unk": [
     0
   ],
-  "Modifications": [
-    {
-      "Id": 1667330662,
-      "Type": 3,
-      "Value": "orc"
-    }
-  ]
+  "Modifications": []
 }

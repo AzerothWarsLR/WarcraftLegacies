@@ -8,17 +8,17 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "Serrated Bite"
+      "Value": "Searing Bite"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "This unit was hit by a Serrated Bite; its armor is temporarily reduced."
+      "Value": "This unit was hit by a Searing Bite; its armor is temporarily reduced."
     },
     {
       "Id": 1953653094,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHowlOfTerror.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBreatheFire.blp"
     }
   ]
 }

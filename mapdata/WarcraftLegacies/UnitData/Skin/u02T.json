@@ -49,6 +49,11 @@
       "Id": 1831952757,
       "Type": 3,
       "Value": "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Upgrade to create a defensive structure. "
     }
   ]
 }

@@ -24,6 +24,11 @@
       "Id": 1835101813,
       "Type": 3,
       "Value": "Feral Wolf"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Medium melee unit with Critical Strike. Can cast Roar. "
     }
   ]
 }

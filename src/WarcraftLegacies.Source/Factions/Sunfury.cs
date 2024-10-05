@@ -3,6 +3,7 @@ using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
+using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.Quelthalas;
 using WarcraftLegacies.Source.Quests.Sunfury;
 using WarcraftLegacies.Source.Setup;
@@ -71,60 +72,8 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
 
     private void RegisterObjectLimits()
     {
-      //Structures
-      ModObjectLimit(FourCC("h02P"), UNLIMITED); //t1
-      ModObjectLimit(FourCC("h0C4"), UNLIMITED); //t2
-      ModObjectLimit(FourCC("h0C5"), UNLIMITED); //t3
-      ModObjectLimit(FourCC("h0C7"), 3); //house
-      ModObjectLimit(FourCC("h0C8"), UNLIMITED); //forge
-      ModObjectLimit(FourCC("h0C9"), UNLIMITED); //barrack
-      ModObjectLimit(FourCC("h0CB"), UNLIMITED); //magic
-      ModObjectLimit(FourCC("h0CA"), UNLIMITED); //VOid Well
-      ModObjectLimit(FourCC("h0CI"), UNLIMITED); //Tempest-Forge
-      ModObjectLimit(FourCC("h0C6"), UNLIMITED); //Altar
-      ModObjectLimit(FourCC("h0CC"), UNLIMITED); //Vault
-      ModObjectLimit(FourCC("h0CD"), UNLIMITED); //Scout tower
-      ModObjectLimit(FourCC("n0E0"), UNLIMITED); //Skyfury tower
-      ModObjectLimit(FourCC("n0E1"), UNLIMITED); //improved skyfury tower
-      ModObjectLimit(FourCC("N0DZ"), 1); //Fountain
-      ModObjectLimit(FourCC("tp04"), UNLIMITED); //Alliance Shipyard
-
-      //Units
-      ModObjectLimit(FourCC("n0E2"), UNLIMITED); //worker
-      ModObjectLimit(FourCC("n09S"), UNLIMITED); //Elven Warrior
-      ModObjectLimit(FourCC("h0CF"), UNLIMITED); //Elven Ranger
-      ModObjectLimit(FourCC("u02W"), 2); //Energy Wagon
-      ModObjectLimit(FourCC("h0CH"), UNLIMITED); //Astromancer
-      ModObjectLimit(FourCC("h0CG"), UNLIMITED); //Flamekeeper
-      ModObjectLimit(UNIT_H0CE_BLOOD_KNIGHT_SQUIRE_SUNFURY, 12);
-      ModObjectLimit(FourCC("n0E3"), 6); //Warlock
-      ModObjectLimit(FourCC("n0E4"), 6); //Elven Ballista
-      ModObjectLimit(FourCC("n0E8"), 3); //Skyship
-      ModObjectLimit(FourCC("n0E7"), 6); //Bloodwarder
-      ModObjectLimit(FourCC("e01B"), 6); //Arcane Annihilator
-      ModObjectLimit(FourCC("n006"), 2); //Ancient of the Arcane
-
-      //Ships
-      ModObjectLimit(FourCC("hbot"), UNLIMITED); //Alliance Transport Ship
-      ModObjectLimit(FourCC("h0AR"), UNLIMITED); //Alliance Scout
-      ModObjectLimit(FourCC("h0AX"), UNLIMITED); //Alliance Frigate
-      ModObjectLimit(FourCC("h0B3"), UNLIMITED); //Alliance Fireship
-      ModObjectLimit(FourCC("h0B0"), UNLIMITED); //Alliance Galley
-      ModObjectLimit(FourCC("h0B6"), UNLIMITED); //Alliance Boarding
-      ModObjectLimit(FourCC("h0AN"), UNLIMITED); //Alliance Juggernaut
-      ModObjectLimit(FourCC("h0B7"), 6); //Alliance Bombard
-
-      //Demi-heroes
-      ModObjectLimit(FourCC("H098"), 1); //Pathaleon
-      ModObjectLimit(FourCC("U02V"), 1); //Solarian
-      ModObjectLimit(FourCC("Hkal"), 1); //Kael
-      ModObjectLimit(FourCC("U004"), 1); //Kil
-      ModObjectLimit(UNIT_N0E5_VOID_REAVER_SUNFURY_DEMI, 1);
-
-      //Upgrades
-      ModObjectLimit(UPGRADE_R09H_ASTROMANCER_MASTER_TRAINING_SUNFURY, UNLIMITED);
-      ModObjectLimit(UPGRADE_R09G_FLAMEKEEPER_MASTER_TRAINING_SUNFURY, UNLIMITED);
-      ModObjectLimit(UPGRADE_R09U_SEAL_OF_BLOOD_SUNFURY, UNLIMITED);
+      foreach (var (objectTypeId, objectLimit) in SunfuryObjectLimitData.GetAllObjectLimits())
+        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

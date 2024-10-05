@@ -7,7 +7,7 @@
   "Modifications": [
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": 1
     },
     {
       "Id": 1718840929,
@@ -17,40 +17,50 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "Q"
+      "Value": "W"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "|cffffcc00Q|r Burrow"
+      "Value": "Deep Burrow"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The Giant Scarab digs into the ground, becomes invisible, and gains a regeneration rate of 15 hit points per second. |nThe Scarab cannot attack while burrowed."
+      "Value": "The Drone digs deep into the ground, becoming invisible and allowing it to move through water, but preventing it from attacking."
     },
     {
       "Id": 2019718497,
-      "Value": 0
+      "Value": 1
     },
     {
       "Id": 1802007905,
       "Type": 3,
-      "Value": "Q"
+      "Value": "W"
     },
     {
       "Level": 1,
       "Id": 829715809,
       "Type": 3,
-      "Value": "Resurface (|cffffcc00Q|r)"
+      "Value": "Resurface"
     },
     {
       "Level": 1,
       "Id": 829781345,
       "Type": 3,
-      "Value": "The Scarab pops out of the ground and becomes visible again."
+      "Value": "The Drone pops out of the ground and becomes visible again."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Deep Burrow"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWormBurrow.blp"
     }
   ]
 }

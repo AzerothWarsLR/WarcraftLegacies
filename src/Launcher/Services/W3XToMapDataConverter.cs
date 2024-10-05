@@ -8,13 +8,13 @@ using Launcher.DataTransferObjects;
 using Launcher.DTOMappers;
 using Launcher.Extensions;
 using Launcher.JsonConverters;
-using Launcher.MapMigrations;
 using War3Net.Build;
 using War3Net.Build.Audio;
 using War3Net.Build.Environment;
 using War3Net.Build.Info;
 using War3Net.Build.Object;
 using War3Net.Build.Widget;
+using WarcraftLegacies.Shared.Extensions;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 using static Launcher.MapDataPaths;
 
@@ -52,7 +52,6 @@ namespace Launcher.Services
       CopyImportedFiles(baseMapPath, outputFolderPath);
       CopyUnserializableFiles(baseMapPath, outputFolderPath);
       CopyGameInterface(baseMapPath, triggerStrings, outputFolderPath);
-      ApplyMigrations(map);
     }
 
     private void SerializeAndWriteMapData(Map map, TriggerStringDictionary triggerStrings, string outputFolderPath)
@@ -359,13 +358,6 @@ namespace Launcher.Services
       var asJson = JsonSerializer.Serialize(levelObjectModification, _jsonSerializerOptions);
       var fullPath = Path.Combine(outputDirectoryPath, $"{id}.json");
       File.WriteAllText(fullPath, asJson);
-    }
-    
-    private static void ApplyMigrations(Map map)
-    {
-      var objectDatabase = map.GetObjectDatabaseFromMap();
-      foreach (var migration in MapMigrationProvider.GetMapMigrations())
-        migration.Migrate(map, objectDatabase);
     }
   }
 }

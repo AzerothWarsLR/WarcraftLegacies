@@ -41,11 +41,11 @@ namespace WarcraftLegacies.Source.Setup
       new PlayerSetup(preplacedUnitSystem, allLegendSetup, artifactSetup).Setup();
       FactionChoiceDialogSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       SharedQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
-      ObserverSetup.Setup(new[] { Player(21) });
       SpellsSetup.Setup();
       var commandManager = new CommandManager();
       CommandSetup.Setup(commandManager);
       FactionMultiboard.Setup();
+      BookSetup.Setup();
       HintConfig.Setup();
       QuestMenuSetup.Setup();
       GameTime.Start();

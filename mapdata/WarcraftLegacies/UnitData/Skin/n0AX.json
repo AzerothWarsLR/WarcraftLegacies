@@ -22,12 +22,12 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1
+      "Value": 0.5
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Pit of Torment"
+      "Value": "Build Mutation Circle"
     },
     {
       "Id": 1935832437,
@@ -37,22 +37,22 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "War-beast production building.|n|n|r|cfff5962dTrains:|R Flying Horror, Gladiator, Deformed Chimera"
+      "Value": "War-beast production building."
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\BlackEmpirePrisonOfUnspeakableHorrors.mdl"
+      "Value": "war3mapImported\\GreatRift.mdl"
     },
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackEmpirePrisonOfUnspeakableHorrors.blp"
+      "Value": "ReplaceableTextures/CommandButtons\\BTNGreatRift.blp"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Pit of Torment"
+      "Value": "Mutation Circle"
     }
   ]
 }

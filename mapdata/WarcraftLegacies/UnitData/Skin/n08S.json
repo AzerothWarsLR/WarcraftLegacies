@@ -8,7 +8,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Tolvir)"
+      "Value": "(elemental)"
     },
     {
       "Id": 1953458293,
@@ -28,12 +28,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Summon Reaper"
+      "Value": "Summon Armored Mistral"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Strongest N\u0027raqi Warriors.|n|cfff5962dAbilities:|R Otherworldy Rampage, Execute, Nether Eye, Evasion , Cleaving Attack, Resistant Skin|n|n|cff99b4d1Can only summon 6.|r|n|cffffcc00Attacks land units.|r"
+      "Value": "Heavily armored Skywall Warriors."
     },
     {
       "Id": 2020631157,
@@ -47,17 +47,17 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNFacelessKing.blp"
-    },
-    {
-      "Id": 1668510581,
-      "Type": 1,
-      "Value": 3
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPurpleFullPlate.blp"
     },
     {
       "Id": 1684960117,
       "Type": 3,
-      "Value": "Mannoroth"
+      "Value": "HeroLich"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }

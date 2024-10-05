@@ -23,7 +23,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Summons a Black Hole that slows enemy units\u0027 movement speed by 90% and damages enemy units for 15 damage per second. If they within 200 range of the Black Hole, they take 100 damage per second. |n|n|cffffcc00Level 1|r - 240 cooldown. 6 seconds duration. |n|cffffcc00Level 2|r - 160 cooldown. 9 seconds duration. |n|cffffcc00Level 3|r - 120 cooldown. 12 seconds duration."
+      "Value": "Summons a Black Hole that slows enemy units\u0027 movement speed by 90% and damages enemy units for 15 damage per second. If they are within 200 range of the Black Hole, they take 100 damage per second. |n|n|cffffcc00Level 1|r - 240 cooldown. 6 seconds duration. |n|cffffcc00Level 2|r - 160 cooldown. 9 seconds duration. |n|cffffcc00Level 3|r - 120 cooldown. 12 seconds duration."
     },
     {
       "Level": 2,
@@ -41,19 +41,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons a Black Hole that slows enemy units\u0027 movement speed by 90% and damages enemy units for 15 damage per second. If they within 200 range of the Black Hole, they take 100 damage per second."
+      "Value": "Summons a Black Hole that slows enemy units\u0027 movement speed by 90% and damages enemy units for 15 damage per second. If they are within 200 range of the Black Hole, they take 100 damage per second."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons a Black Hole that slows enemy units\u0027 movement speed by 90% and damages enemy units for 15 damage per second. If they within 200 range of the Black Hole, they take 100 damage per second."
+      "Value": "Summons a Black Hole that slows enemy units\u0027 movement speed by 90% and damages enemy units for 15 damage per second. If they are within 200 range of the Black Hole, they take 100 damage per second."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons a Black Hole that slows enemy units\u0027 movement speed by 90% and damages enemy units for 15 damage per second. If they within 200 range of the Black Hole, they take 100 damage per second."
+      "Value": "Summons a Black Hole that slows enemy units\u0027 movement speed by 90% and damages enemy units for 15 damage per second. If they are within 200 range of the Black Hole, they take 100 damage per second."
     },
     {
       "Id": 1953653089,

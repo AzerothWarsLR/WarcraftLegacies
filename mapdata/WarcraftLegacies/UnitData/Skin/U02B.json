@@ -36,7 +36,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Yogg-Saron Champion"
+      "Value": "N\u0027raqi Aberration"
     },
     {
       "Id": 1970434165,
@@ -45,7 +45,7 @@
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "General Vezax"
+      "Value": "Yor\u0027sahj the Unsleeping"
     },
     {
       "Id": 1919972469,
@@ -70,12 +70,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Summon Vezax"
+      "Value": "Summon Yor\u0027sahj the Unsleeping\r\n"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.6
+      "Value": 1.5
     },
     {
       "Id": 1885430133,
@@ -85,12 +85,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Warrior Hero, adept at enduring and strengthening nearby allies.|n|cfff5962dAbilities:|r Unholy Plating |n|cfff5962dCan learn:|R Dark Burst, General\u0027s Order, Dread Aura, Reincarnation|n|n|cffffcc00Attacks land units.|R"
+      "Value": "Warrior Hero, adept at enduring and strengthening nearby allies."
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "W"
+      "Value": "Q"
     },
     {
       "Id": 2037408373,
@@ -98,7 +98,12 @@
     },
     {
       "Id": 2020631157,
-      "Value": 1
+      "Value": 0
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(black empire)"
     }
   ]
 }

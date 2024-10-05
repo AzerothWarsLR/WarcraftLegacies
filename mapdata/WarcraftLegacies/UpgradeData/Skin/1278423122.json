@@ -21,19 +21,19 @@
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "Improved Shadow Infusion"
+      "Value": "Improved Heal"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "Research Improved Shadow Infusion"
+      "Value": "Research Improved Heal"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Improves Shadow Infusion by increasing its heal amount by 35 and reducing its mana cost to 0."
+      "Value": "Improves Heal by increasing its heal amount to \u003CR0AL,DataA2\u003E and reducing its mana cost to \u003CR0AL,Cost2\u003E."
     },
     {
       "Level": 1,

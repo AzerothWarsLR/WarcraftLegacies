@@ -8,7 +8,7 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "A0GK,AInv"
+      "Value": "ZBEG,A0GK,AInv"
     },
     {
       "Id": 1902338421,
@@ -17,12 +17,12 @@
     },
     {
       "Id": 1768382837,
-      "Value": 28
+      "Value": 27
     },
     {
       "Id": 1885823349,
       "Type": 2,
-      "Value": 2.8
+      "Value": 2.7
     },
     {
       "Id": 1684824693,
@@ -44,11 +44,11 @@
     {
       "Id": 1650550901,
       "Type": 3,
-      "Value": "A02G,AUcb,Aamk,A0XU,A0XT"
+      "Value": "ANms,CT01,Aamk,A0XU,A0XT"
     },
     {
       "Id": 1836083317,
-      "Value": 400
+      "Value": 200
     },
     {
       "Id": 1953393013,
@@ -93,7 +93,7 @@
     },
     {
       "Id": 1920234357,
-      "Value": 20
+      "Value": 22
     },
     {
       "Id": 1868788853,
@@ -129,6 +129,33 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1902473845,
+      "Type": 3,
+      "Value": "RZZL"
+    },
+    {
+      "Id": 1714512245,
+      "Value": 1
+    },
+    {
+      "Id": 1748066677,
+      "Value": 1
+    },
+    {
+      "Id": 1899061621,
+      "Value": 1
+    },
+    {
+      "Id": 1882284405,
+      "Type": 3,
+      "Value": "air,debris,enemies,ground,nonancient,structure,vulnerable"
+    },
+    {
+      "Id": 1999724917,
+      "Type": 3,
+      "Value": "msplash"
     }
   ]
 }

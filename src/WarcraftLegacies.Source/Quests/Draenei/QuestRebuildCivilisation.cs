@@ -4,7 +4,6 @@ using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using System.Collections.Generic;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 
@@ -23,7 +22,6 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     {
       
       AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.DraeneiQuestKill }, "in Desolace"));
-      AddObjective(new ObjectiveLegendReachRect(velen, Regions.DesolaceUnlock, "Desolace"));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       ResearchId = UPGRADE_R082_QUEST_COMPLETED_THE_WAY_FORWARD;

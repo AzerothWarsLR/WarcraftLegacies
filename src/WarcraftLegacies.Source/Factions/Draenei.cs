@@ -4,6 +4,7 @@ using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Powers;
+using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.Draenei;
 using WarcraftLegacies.Source.Setup;
 
@@ -53,53 +54,8 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
 
     private void RegisterObjectLimits()
     {
-      ModObjectLimit(FourCC("o02P"), UNLIMITED); //Crystal Hall
-      ModObjectLimit(FourCC("o050"), UNLIMITED); //Metropolis
-      ModObjectLimit(FourCC("o051"), UNLIMITED); //Divine Citadel
-      ModObjectLimit(FourCC("o058"), UNLIMITED); //Altar of Light
-      ModObjectLimit(FourCC("o052"), UNLIMITED); //Ceremonial Altar
-      ModObjectLimit(FourCC("o053"), UNLIMITED); //Smithery
-      ModObjectLimit(FourCC("o054"), UNLIMITED); //Astral Sanctum
-      ModObjectLimit(FourCC("o055"), UNLIMITED); //Crystal Spire
-      ModObjectLimit(FourCC("o056"), 48); //Arcane Well
-      ModObjectLimit(FourCC("o057"), UNLIMITED); //Vaults of Relic
-      ModObjectLimit(FourCC("u00U"), UNLIMITED); //Crystal Protector
-      ModObjectLimit(FourCC("u01Q"), UNLIMITED); //Crystal Protector improved
-      ModObjectLimit(FourCC("o059"), UNLIMITED); //Improved Ancient Protector
-      ModObjectLimit(FourCC("o05U"), UNLIMITED); //Lightforged Gateway
-
-      ModObjectLimit(FourCC("o05A"), UNLIMITED); //Wisp
-      ModObjectLimit(FourCC("o05B"), UNLIMITED); //Defender
-      ModObjectLimit(FourCC("h09T"), UNLIMITED); //Rangari
-      ModObjectLimit(FourCC("e01K"), 3); //Polybolos
-      ModObjectLimit(FourCC("o05D"), UNLIMITED); //Elementalist
-      ModObjectLimit(FourCC("o05C"), UNLIMITED); //Luminarch
-      ModObjectLimit(FourCC("h09R"), 6); //Vindicator
-      ModObjectLimit(FourCC("nmdr"), UNLIMITED); //Elekk
-      ModObjectLimit(FourCC("h09U"), 4); //Elekk Knight
-      ModObjectLimit(FourCC("u02H"), 6); //Nether Ray
-
-      ModObjectLimit(FourCC("n0BJ"), 6); //Sharpshooter
-      ModObjectLimit(FourCC("n0BP"), 4); //Juggernaut
-      ModObjectLimit(FourCC("n0BM"), 8); //Nether Ray
-
-      //Ships
-      ModObjectLimit(FourCC("etrs"), UNLIMITED); //Night Elf Transport Ship
-      ModObjectLimit(FourCC("h0AU"), UNLIMITED); // Scout
-      ModObjectLimit(FourCC("h0AV"), UNLIMITED); // Frigate
-      ModObjectLimit(FourCC("h0B1"), UNLIMITED); // Fireship
-      ModObjectLimit(FourCC("h057"), UNLIMITED); // Galley
-      ModObjectLimit(FourCC("h0B4"), UNLIMITED); // Boarding
-      ModObjectLimit(FourCC("h0BA"), UNLIMITED); // Juggernaut
-      ModObjectLimit(FourCC("h0B8"), 6); // Bombard
-
-      ModObjectLimit(FourCC("H09S"), 1); //Maraad
-      ModObjectLimit(FourCC("E01I"), 1); //Velen
-      ModObjectLimit(FourCC("E01J"), 1); //Nobundo
-      ModObjectLimit(FourCC("H09M"), 1); //Adal
-
-      ModObjectLimit(FourCC("R078"), UNLIMITED); //Elementalist training
-      ModObjectLimit(FourCC("R07C"), UNLIMITED); //Luminarch training
+      foreach (var (objectTypeId, objectLimit) in DraeneiObjectLimitData.GetAllObjectLimits())
+        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()
@@ -107,7 +63,6 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
       var questRepairHull = new QuestRepairExodarHull(Regions.ExodarBaseUnlock, _allLegendSetup.Draenei.LegendExodar);
       StartingQuest = questRepairHull;
       AddQuest(questRepairHull);
-      AddQuest(new QuestRebuildCivilisation(Regions.DesolaceUnlock, _allLegendSetup.Draenei.Velen));
       AddQuest(new QuestShipArgus(
         _preplacedUnitSystem.GetUnit(UNIT_H03V_ENTRANCE_PORTAL, Regions.OutlandToArgus.Center),
         _preplacedUnitSystem.GetUnit(UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center),
@@ -127,7 +82,8 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
     private void RegisterPowers()
     {
       var dummyPower = new DummyPower("Crystallization",
-        "Arcane Wells placed directly near Divine Citadels will generate mana for them over time. You can then convert that mana into units. The maximum number of Arcane Well around a Divine Citadel is 12 if placed optimally");
+        "Arcane Wells placed directly near Divine Citadels will generate mana for them over time. You can then convert that mana into units. The maximum number of Arcane Well around a Divine Citadel is 12 if placed optimally",
+        "ManaGem.blp");
       AddPower(dummyPower);
     }
   }

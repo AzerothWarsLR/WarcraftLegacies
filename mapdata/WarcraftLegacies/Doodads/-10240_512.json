@@ -22,21 +22,21 @@
   {
     "State": 2,
     "Life": 255,
-    "TypeId": 1295396932,
+    "TypeId": 1936872003,
     "Position": {
-      "X": -10309.9795,
-      "Y": 693.0659,
-      "Z": -0.3796835
+      "X": -10496,
+      "Y": 640,
+      "Z": -27
     },
-    "Rotation": 5.9794602,
+    "Rotation": 2.3911014,
     "Scale": {
-      "X": 0.9,
-      "Y": 0.9,
-      "Z": 0.9
+      "X": 0.99999994,
+      "Y": 0.99999994,
+      "Z": 0.99999994
     },
-    "SkinId": 1295396932,
+    "SkinId": 1936872003,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 7817
+    "CreationNumber": 18449
   }
 ]

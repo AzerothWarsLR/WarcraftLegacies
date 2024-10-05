@@ -13,7 +13,7 @@
     {
       "Id": 1635083125,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNSearingArrows.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\UPGBTNSearingArrows.blp"
     },
     {
       "Id": 1853186933,
@@ -43,7 +43,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Holy man of the South Kingdom.|n|cfff5962dAbilities:|R Smite|n|cfff5962dCan Learn:|R Renewal, Rain of Light|n|n|cffffcc00Attacks land and air units.|R\r\n"
+      "Value": "Holy man of the South Kingdom."
     },
     {
       "Id": 1818520949,

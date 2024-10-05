@@ -1,7 +1,6 @@
 ﻿using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace TestMap.Source.Quests
 {
@@ -12,7 +11,7 @@ namespace TestMap.Source.Quests
       @"ReplaceableTextures\CommandButtons\BTNUnholyFrenzy.blp")
     {
       AddObjective(new ObjectiveTime(35));
-      AddObjective(new ObjectiveKillXUnit(FourCC("hfoo"), 4));
+      AddObjective(new ObjectiveKillUnitType(FourCC("hfoo"), 4));
     }
     
     protected override string RewardDescription => "The Tomb of Sargeras has been opened.";

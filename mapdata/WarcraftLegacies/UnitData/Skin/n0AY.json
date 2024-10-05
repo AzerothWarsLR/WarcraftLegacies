@@ -67,6 +67,11 @@
       "Id": 1831952757,
       "Type": 3,
       "Value": "Abilities\\Weapons\\ChimaeraAcidMissile\\ChimaeraAcidMissile.mdl"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Primary defensive structure. "
     }
   ]
 }

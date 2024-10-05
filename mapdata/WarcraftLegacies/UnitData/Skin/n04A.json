@@ -34,6 +34,11 @@
       "Id": 1684960117,
       "Type": 3,
       "Value": "AncientOfWar"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit that can Slam opponents. "
     }
   ]
 }

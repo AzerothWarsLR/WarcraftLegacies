@@ -5,7 +5,6 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.Powers;
 using MacroTools.QuestSystem;
 using TestMap.Source.Setup;
-using static War3Api.Common;
 
 namespace TestMap.Source.Quests
 {
@@ -18,7 +17,7 @@ namespace TestMap.Source.Quests
     {
       AddObjective(new ObjectiveAcquireArtifact(ArtifactSetup.Killmaim));
       AddObjective(new ObjectiveSelfExists());
-      _zerglingPower = new DummyPower("Zerglings", "Spawn zerglings constantly.");
+      _zerglingPower = new DummyPower("Zerglings", "Spawn zerglings constantly.", "Zergling");
     }
 
     protected override string RewardDescription => "A free Zergling, and destroy Kelen's Dagger of Escape";

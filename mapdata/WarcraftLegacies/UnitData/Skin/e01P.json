@@ -1,5 +1,5 @@
 {
-  "OldId": 1819243621,
+  "OldId": 1852138597,
   "NewId": 1345400933,
   "Unk": [
     0
@@ -33,7 +33,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Primary structure, used to train workers and gather resources.|n|cfff5962dTrains:|R Slaves |n|cfff5962dUpgrades to:|R Coral of Ages"
+      "Value": "Primary structure, used to train workers and gather resources."
     },
     {
       "Id": 1835101813,
@@ -48,7 +48,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\CoralofLifeV1.00.mdl"
+      "Value": "war3mapImported/DoyenOfWishes2.mdl"
     }
   ]
 }

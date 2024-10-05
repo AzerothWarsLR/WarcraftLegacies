@@ -57,7 +57,7 @@
     {
       "Id": 1831952757,
       "Type": 3,
-      "Value": "Abilities\\Weapons\\LichMissile\\LichMissile.mdl"
+      "Value": "Abilities\\Weapons\\CryptFiendMissile\\CryptFiendMissile.mdl"
     },
     {
       "Id": 1835101813,
@@ -131,6 +131,11 @@
       "Id": 1885959285,
       "Type": 3,
       "Value": "Summon Skeram"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Disruptive Hero, strong at disorienting enemies."
     }
   ]
 }

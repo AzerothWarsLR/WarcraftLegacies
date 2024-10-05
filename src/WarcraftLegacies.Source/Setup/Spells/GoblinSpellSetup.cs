@@ -1,5 +1,6 @@
 ﻿using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
+using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.FactionMechanics.Goblins;
 using WarcraftLegacies.Source.Spells;
@@ -59,6 +60,9 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         Duration = 10
       });
+
+      var overclock = new CooldownReset(ABILITY_A0RA_OVERCLOCK_GAZLOWEE);
+      SpellSystem.Register(overclock);
     }
   }
 }

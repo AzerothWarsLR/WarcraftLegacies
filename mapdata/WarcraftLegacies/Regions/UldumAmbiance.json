@@ -2,14 +2,13 @@
   "Left": -15712,
   "Bottom": -20576,
   "Right": -11552,
-  "Top": -15232,
+  "Top": -15392,
   "Name": "UldumAmbiance",
   "CreationNumber": 439,
   "AmbientSound": "",
   "Color": {
     "A": 255,
-    "R": 128,
-    "G": 128,
+    "R": 255,
     "B": 255
   }
 }

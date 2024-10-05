@@ -16,7 +16,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(Tolvir Barracks)"
+      "Value": "(elemental Barracks)"
     },
     {
       "Id": 1953458293,
@@ -31,7 +31,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Primary troop production building. |n|n|cfff5962dTrains:|R Naga Incursor, Hatchling, Gargantuan Sea Turtle"
+      "Value": "Primary troop production building. "
     },
     {
       "Id": 1651012469,
@@ -41,7 +41,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Arabian town hall.mdl"
+      "Value": "war3mapImported\\DarkIronWorkshop2.mdl"
     },
     {
       "Id": 1768841589,
@@ -51,12 +51,17 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTN_Tolvir_Barracks.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAlAkirWorkshop.blp"
     },
     {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 0.75
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Foundry"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Foundry"
     }
   ]
 }

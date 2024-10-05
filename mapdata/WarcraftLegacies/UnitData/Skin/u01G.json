@@ -16,7 +16,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(C\u0027thun Building)"
+      "Value": "(C\u0027thun Research)"
     },
     {
       "Id": 1953523061,
@@ -54,7 +54,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Summon - Spirit Hall"
+      "Value": "Summon Spirit Hall"
     },
     {
       "Id": 1935832437,
@@ -64,16 +64,21 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Provides attack, armor and infusion upgrades for Old God units."
+      "Value": "General research building. "
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\NerubianArmory.mdl"
+      "Value": "war3mapImported\\CthunResearch.mdl"
     },
     {
       "Id": 2020631157,
       "Value": 2
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCthunResearch.blp"
     }
   ]
 }

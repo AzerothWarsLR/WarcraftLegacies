@@ -7,17 +7,17 @@
   "Modifications": [
     {
       "Id": 2020631157,
-      "Value": 3
+      "Value": 2
     },
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": " (Ragnaros)"
+      "Value": "(elemental)"
     },
     {
       "Id": 1953458293,
       "Type": 3,
-      "Value": "R"
+      "Value": "E"
     },
     {
       "Id": 1835101813,
@@ -27,7 +27,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Supremely deadly Warrior Hero, Excels at killing enemy Heroes. |n|cfff5962dCan learn:|R Elemental Fire, Magma Blast, Wrath of Ragnaros, Herald of Destruction|n|n|cffffcc00Attacks land units."
+      "Value": "Supremely deadly Warrior Hero, Excels at killing enemy Heroes. "
     },
     {
       "Id": 1869770869,

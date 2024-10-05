@@ -43,6 +43,11 @@
     {
       "Id": 1919705973,
       "Value": 10
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit that can cast Frost Nova. Immune to spells. "
     }
   ]
 }

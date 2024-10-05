@@ -79,8 +79,6 @@ namespace MacroTools.Spells
         DamageUnit(caster, enumUnit);
         StunUnit(caster, enumUnit);
       }
-      DestroyEffect(AddSpecialEffect(@"Abilities\\Spells\\Orc\\Warstomp\\WarStompCaster.mdl", GetUnitX(caster),
-        GetUnitY(caster)));
     }
 
     /// <inheritdoc />

@@ -8,7 +8,7 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNTentacle.blp"
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASForbidden Ritual.blp"
     },
     {
       "Id": 2020631137,
@@ -34,7 +34,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Spawn a tentacle when attacking. |nLasts 20 seconds."
+      "Value": "Instead of doing damage, the Forgotten One spawns a tentacle when attacking.|nThe tentacle has 40-45 damage and lasts \u003CA0SP,Dur1\u003E seconds."
     }
   ]
 }
