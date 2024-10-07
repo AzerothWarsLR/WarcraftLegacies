@@ -3,7 +3,12 @@ GiantClass="Demi-hero"
 
 [CmdSelectSkill]
 Hotkey=F
-	@@ -12,37 +12,37 @@ InfoPanelIconArmorNormal=UI\Widgets\Console\Human\UPGGate.blp
+Tip=Hero Abilities (|cffffcc00F|r)
+
+[CustomSkin]
+InfoPanelIconArmorDivine=ReplaceableTextures\CommandButtons\ATTDivineArmor.blp
+InfoPanelIconArmorDivineNeutral=ReplaceableTextures\CommandButtons\ATTDivineArmor.blp
+InfoPanelIconArmorNormal=UI\Widgets\Console\Human\UPGGate.blp
 InfoPanelIconArmorNormalNeutral=UI\Widgets\Console\Human\BTNGate.blp
 
 [FrameDef]
