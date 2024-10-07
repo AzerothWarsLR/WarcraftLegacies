@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Skywall
     /// </summary>
     /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
     public QuestThroneWind(Rectangle rescueRect) : base("The Throne of the Four Winds",
-      "We still don't have full control of the Elemental Realm. If we defeat the trolls of Zul'Farrak, we could use their power to secure dominion over the Throne of the Four Winds.",
+      "We still don't have full control of Skywall. If we defeat the trolls of Zul'Farrak, we could use their power to secure dominion over the Throne of the Four Winds.",
       @"ReplaceableTextures\CommandButtons\BTNAlAkirTownHall3.blp")
     {
       AddObjective(new ObjectiveControlPoint(UNIT_N092_ZUL_FARRAK));

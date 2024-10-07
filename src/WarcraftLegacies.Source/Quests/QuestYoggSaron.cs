@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests
     }
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Yogg-Saron is imprisonned near Storm peaks, and can be slain to acquire Val'anyr, Hammer of Ancient Kings";
+    protected override string RewardDescription => "Gain the ability to release Yogg-Saron from his near Storm peaks; he can be slain to acquire Val'anyr, Hammer of Ancient Kings";
 
     /// <inheritdoc/>
     public override string RewardFlavour => $"{_heroInRectObjective.CompletingUnitName} has seized control of the prison of Yogg-Saron, and can now free him.";
@@ -63,7 +63,7 @@ namespace WarcraftLegacies.Source.Quests
 
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         player.DisplayLegendaryHeroSummoned(_yoggsaron,
-          "LOOK UPON YOGG-SARON, GOD OF DEATH, AND KNOW THAT YOUR END COMES SOON!!");
+          "LOOK UPON YOGG-SARON, GOD OF DEATH, AND KNOW THAT YOUR END COMES SOON!");
     }
   }
 }
