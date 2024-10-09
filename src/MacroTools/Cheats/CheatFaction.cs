@@ -26,16 +26,11 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      if (!FactionManager.FactionWithNameExists(parameters[0]))
+      if (!FactionManager.TryGetFactionByName(parameters[0], out var f))
         return $"There is no registered {nameof(Faction)} with the name {parameters[0]}.";
-
-      var f = FactionManager.GetFactionByName(parameters[0]);
-      if (f != null)
-      {
-        PlayerData.ByHandle(GetTriggerPlayer()).Faction = f;
-        return $"Successfully changed faction to {f.Name}.";
-      }
-      return $"Failed changing faction to {parameters[0]}";
+      
+      PlayerData.ByHandle(GetTriggerPlayer()).Faction = f;
+      return $"Successfully changed faction to {f.Name}.";
     }
   }
 }
