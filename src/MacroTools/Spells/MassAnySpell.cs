@@ -13,7 +13,7 @@ namespace MacroTools.Spells
     
     public float Radius { get; init; }
     
-    public DummyCasterManager.CastFilter CastFilter { get; init; }
+    public required DummyCasterManager.CastFilter CastFilter { get; init; }
     
     public SpellTargetType TargetType { get; init; } = SpellTargetType.None;
 

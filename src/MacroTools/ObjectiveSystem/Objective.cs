@@ -141,7 +141,7 @@ namespace MacroTools.ObjectiveSystem
           parentQuestProgress != QuestProgress.Incomplete) 
         return;
       
-      if (_minimapIcon == null && DisplaysPosition)
+      if (_minimapIcon == null && DisplaysPosition && Position != null)
         _minimapIcon = CreateMinimapIcon(Position.X, Position.Y, 255, 255, 0, SkinManagerGetLocalPath(PingPath),
           FOG_OF_WAR_MASKED);
       else if (_minimapIcon != null)
@@ -155,7 +155,7 @@ namespace MacroTools.ObjectiveSystem
         return;
       
       string effectPath;
-      if (MapEffectPath != null && _mapEffect == null)
+      if (MapEffectPath != null && _mapEffect == null && Position != null)
       {
         effectPath = EligibleFactions.Contains(GetLocalPlayer()) ? MapEffectPath : "";
         _mapEffect = AddSpecialEffect(effectPath, Position.X, Position.Y);
