@@ -47,9 +47,8 @@ namespace MacroTools.Cheats
       }
       else
       {
-        faction = FactionManager.GetFactionByName(parameters[1]);
-        if (faction == null) 
-          return $"{parameters[1]} is not a valid {nameof(Faction)}.";
+        if (!FactionManager.TryGetFactionByName(parameters[1], out faction))
+          return $"There is no faction named {parameters[0]}.";
       }
       
       var quest = faction.GetQuestByTitle(parameters[0]);

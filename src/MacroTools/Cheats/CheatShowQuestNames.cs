@@ -26,11 +26,14 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      var quests = FactionManager.GetFactionByName(parameters[0])?.GetAllQuests();
+      if (!FactionManager.TryGetFactionByName(parameters[0], out var faction))
+        return $"There is no faction named {parameters[0]}.";
+      
+      var quests = faction.GetAllQuests();
       var message = $"Attempting to display all quests names of faction {parameters[0]}.\n";
-      if (quests != null)
-        foreach (var quest in quests)
-          message += $"Quest name: {quest.Title}\n";
+
+      foreach (var quest in quests)
+        message += $"Quest name: {quest.Title}\n";
       return message;
     }
   }

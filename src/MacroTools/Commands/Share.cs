@@ -37,11 +37,10 @@ namespace MacroTools.Commands
           }
         }
 
-        return $"Shared control with all factions on your team.";
+        return "Shared control with all factions on your team.";
       }
 
-      var targetFaction = FactionManager.GetFactionByName(parameters[0]);
-      if (targetFaction == null)
+      if (!FactionManager.TryGetFactionByName(parameters[0], out var targetFaction))
         return $"There is no faction named {parameters[0]}.";
 
       if (targetFaction.Player == null)
@@ -54,6 +53,5 @@ namespace MacroTools.Commands
 
       return $"Shared control with {targetFaction.Name}.";
     }
-
   }
 }
