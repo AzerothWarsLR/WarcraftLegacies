@@ -45,4 +45,3 @@ QUIT_MISSION=Quit Game DO NOT FORGET TO RESTART WARCRAFT 3
 RESOURCE_UBERTIP_GOLD="Gold is given every second depending on how many Control Points a player owns."
 RESOURCE_UBERTIP_UPKEEP="Visit our discord server: discord.gg/4eGZnR5"
 UPKEEP_NONE="discord.gg/4eGZnR5"
-

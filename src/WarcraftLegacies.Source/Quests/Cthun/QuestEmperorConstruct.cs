@@ -4,7 +4,7 @@ using MacroTools.QuestSystem;
 namespace WarcraftLegacies.Source.Quests.Cthun
 {
   /// <summary>
-  /// Control level 15 Uldum control point.
+  /// Control level 5 Uldum control point.
   /// </summary>
   public sealed class QuestEmperorConstruct : QuestData
   {
@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
       "Queen Azshara studied many forms of arcane knowledge, some darker than others. With access to her library and enough time, the highborn scholares could uncover her secrets",
       @"ReplaceableTextures\CommandButtons\BTNObsidianStatue.blp")
     {
-      AddObjective(new ObjectiveControlLevel(UNIT_N0BD_ULDUM, 15));
+      AddObjective(new ObjectiveControlLevel(UNIT_N0BD_ULDUM, 5));
       ResearchId = UPGRADE_RZZL_QUEST_COMPLETED_THE_EMPEROR_S_CONSTRUCTS;
     }
 

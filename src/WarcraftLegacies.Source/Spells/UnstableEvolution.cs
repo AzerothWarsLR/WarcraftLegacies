@@ -52,7 +52,12 @@ namespace WarcraftLegacies.Source.Spells
         .SetColor(100, 255, 150, 255)
         .SetTimedLife(Duration)
         .SetExplodeOnDeath(true)
-        .SetScale(1.2f);
+        .SetScale(1.1f);
+
+      if (target.GetTypeId() == UNIT_U013_SUPER_MAJOR_C_THUN)
+      {
+        target.SetScale(0.6f);
+      }
       
       AddSpecialEffect(EffectTarget, GetUnitX(target), GetUnitY(target))
         .SetScale(EffectScaleTarget)

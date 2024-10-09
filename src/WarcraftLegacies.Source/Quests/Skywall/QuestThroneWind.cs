@@ -21,16 +21,14 @@ namespace WarcraftLegacies.Source.Quests.Skywall
     /// </summary>
     /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
     public QuestThroneWind(Rectangle rescueRect) : base("The Throne of the Four Winds",
-      "We have lost contact with the Elemental Realm, conquer Uldum to access the Vortex Pinnacle.",
+      "We still don't have full control of Skywall. If we defeat the trolls of Zul'Farrak, we could use their power to secure dominion over the Throne of the Four Winds.",
       @"ReplaceableTextures\CommandButtons\BTNAlAkirTownHall3.blp")
     {
-      AddObjective(new ObjectiveControlPoint(UNIT_N026_THOUSAND_NEEDLES));
-      AddObjective(new ObjectiveControlPoint(UNIT_N022_STONEMAUL));
+      AddObjective(new ObjectiveControlPoint(UNIT_N092_ZUL_FARRAK));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
         filterUnit => filterUnit.GetTypeId() != FourCC("ngme"));
-
     }
 
     /// <inheritdoc />
