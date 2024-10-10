@@ -9,12 +9,12 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
   public sealed class QuestWakingDream : QuestData
   {
 
-    public QuestWakingDream(LegendaryHero xkorr, PreplacedUnitSystem preplacedUnitSystem) : base("Waking Dream",
+    public QuestWakingDream(LegendaryHero channelingHero, PreplacedUnitSystem preplacedUnitSystem) : base("Waking Dream",
       "Countless ages ago, Warlord Zon'ozz was one of my strongest generals. Unfortunately, he is currently trapped in the past. To summon him, I need to capture the Caverns of Time and call him to serve me in the present once again.",
       @"ReplaceableTextures\CommandButtons\BTNDarkPortal.blp")
     {
       AddObjective(new ObjectiveKillUnit(preplacedUnitSystem.GetUnit(UNIT_O070_OCCULUS_CREEP_CAVERNS)));
-      AddObjective(new ObjectiveChannelRect(Regions.CavernofTime, "the Caverns of Time", xkorr, 180, 315, Title));
+      AddObjective(new ObjectiveChannelRect(Regions.CavernofTime, "the Caverns of Time", channelingHero, 90, 315, Title));
       ResearchId = UPGRADE_RBWD_QUEST_COMPLETED_WAKING_DREAM;
 
     }

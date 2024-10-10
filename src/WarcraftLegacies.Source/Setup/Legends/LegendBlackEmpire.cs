@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
   {
     public LegendaryHero Nzoth { get; }
     public LegendaryHero Zonozz { get; }
-    public LegendaryHero Xkorr { get; }
+    public LegendaryHero Zaqul { get; }
     public LegendaryHero Yorsahj { get; }
 
     public LegendBlackEmpire(PreplacedUnitSystem preplacedUnitSystem)
@@ -21,13 +21,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 41800,
       };
 
-      Zonozz = new LegendaryHero("General Vezax")
+      Zonozz = new LegendaryHero("Warlord Zon'ozz")
       {
         UnitType = UNIT_U00P_LIEUTENANT_OF_N_ZOTH_BLACK_EMPIRE,
         StartingXp = 5000,
       };
 
-      Xkorr = new LegendaryHero("X'korr the Compelling")
+      Zaqul = new LegendaryHero("Za'qul")
       {
         UnitType = UNIT_E01D_HARBINGER_OF_NY_ALOTHA_YOGG,
         StartingXp = 2800,
@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendaryHeroManager.Register(Nzoth);
       UnitModifySkillPoints(Nzoth.Unit, -7);
       LegendaryHeroManager.Register(Zonozz);
-      LegendaryHeroManager.Register(Xkorr);
+      LegendaryHeroManager.Register(Zaqul);
       LegendaryHeroManager.Register(Yorsahj);
     }
   }
