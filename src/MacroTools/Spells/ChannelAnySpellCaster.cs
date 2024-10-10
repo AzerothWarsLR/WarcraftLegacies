@@ -8,7 +8,7 @@ namespace MacroTools.Spells
   public sealed class ChannelAnySpellCaster : Spell
   {
     public int DummyAbilityId { get; init; }
-    public string DummyAbilityOrderString { get; init; }
+    public required string DummyAbilityOrderString { get; init; }
     public int Duration { get; init; }
 
     public ChannelAnySpellCaster(int id) : base(id)
