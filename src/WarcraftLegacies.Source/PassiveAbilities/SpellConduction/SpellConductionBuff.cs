@@ -46,10 +46,6 @@ namespace WarcraftLegacies.Source.PassiveAbilities.SpellConduction
       if (!IsRedirectableAttackType(attackType))
         return;
 
-      var damageType = BlzGetEventDamageType();
-      if (damageType == DAMAGE_TYPE_MIND)
-        return;
-
       var eventDamage = GetEventDamage();
 
       BlzSetEventDamage(eventDamage * (1 - RedirectionPercentage));
@@ -57,8 +53,8 @@ namespace WarcraftLegacies.Source.PassiveAbilities.SpellConduction
     }
 
     private void DamageCaster(unit damager, float eventDamage) =>
-      Caster.TakeDamage(damager, eventDamage * RedirectionPercentage, false, true, BlzGetEventAttackType(),
-        DAMAGE_TYPE_MIND, BlzGetEventWeaponType());
+      Caster.TakeDamage(damager, eventDamage * RedirectionPercentage, false, true, ATTACK_TYPE_CHAOS,
+        DAMAGE_TYPE_UNIVERSAL, BlzGetEventWeaponType());
 
     private bool IsRedirectableAttackType(attacktype attackType) => RedirectableAttackTypes.Contains(attackType);
   }
