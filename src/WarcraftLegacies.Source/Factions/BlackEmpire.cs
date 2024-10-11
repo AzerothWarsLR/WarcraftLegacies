@@ -62,7 +62,7 @@ Be sure to train Forsaken Ones, they are powerful units";
 
       AddQuest(new QuestWakingCity(questGorma, _allLegendSetup, Regions.Nyalotha));
       AddQuest(new QuestGiftofFlesh());
-      AddQuest(new QuestWakingDream(_allLegendSetup.BlackEmpire.Xkorr, _preplacedUnitSystem));
+      AddQuest(new QuestWakingDream(_allLegendSetup.BlackEmpire.Zaqul, _preplacedUnitSystem));
       AddQuest(new QuestMawofShuma(_allLegendSetup.BlackEmpire.Yorsahj));
       AddQuest(new QuestMawofGorath(_allLegendSetup.BlackEmpire.Zonozz));
       AddQuest(new QuestBladeoftheBlackEmpire(Regions.TheAbyss));
