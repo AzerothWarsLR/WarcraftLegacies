@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
     public override string RewardFlavour => "With the Titan Construct defeat, C'thun is now free";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Control of all units in inner Ahn'qiraj and gain control of C'thun";
+    protected override string RewardDescription => "Control of all units in inner Ahn'Qiraj and gain control of C'thun";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)

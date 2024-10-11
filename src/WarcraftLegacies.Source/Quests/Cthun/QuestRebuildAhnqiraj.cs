@@ -10,27 +10,34 @@ namespace WarcraftLegacies.Source.Quests.Cthun
   /// </summary>
   public sealed class QuestRebuildAhnqiraj : QuestData
   {
+    private readonly unit _gateAhnQiraj;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestRebuildAhnqiraj"/> class.
     /// </summary>
-    public QuestRebuildAhnqiraj(Rectangle questRect) : base(
-      "Rebuilding of Ahn'qira",
-      "The once great kingdom of Ahn'qiraj was lost to the sands of time. The hive needs to awaken and be rebuilt.",
+    /// <param name="questRect">This area is where the player needs to build.</param>
+    /// <param name="gateAhnQiraj">This unit will be transferred to the completeing player.</param>
+    public QuestRebuildAhnqiraj(Rectangle questRect, unit gateAhnQiraj) : base("Rebuilding of Ahn'Qiraj",
+      "The once great kingdom of Ahn'Qiraj was lost to the sands of time. The hive needs to awaken and be rebuilt.",
       @"ReplaceableTextures\CommandButtons\BTNCthunHatchery.blp")
     {
-      
-      AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in outer Ahn'Qiraj", 7));
+      _gateAhnQiraj = gateAhnQiraj;
+      AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in outer Ahn'Qiraj", 5));
     }
 
     /// <inheritdoc/>
-    protected override void OnComplete(Faction whichFaction)
+    protected override void OnComplete(Faction completingFaction)
     {
+      if (completingFaction.Player == null)
+        return;
+      SetUnitOwner(_gateAhnQiraj, completingFaction.Player, true);
     }
 
     /// <inheritdoc/>
     public override string RewardFlavour =>
-      "The glorious kingdom of Ahn'Qiraj has now been rebuild, the gates are open, the world shall fear the Qiraji once more.";
+      "The glorious kingdom of Ahn'Qiraj has now been rebuilt, the gates are open and the world shall fear the Qiraji once more.";
 
+    /// <inheritdoc/>
+    protected override string RewardDescription => "Gain control of the gate of Ahn'Qiraj";
   }
 }
