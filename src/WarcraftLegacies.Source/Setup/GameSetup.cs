@@ -49,7 +49,7 @@ namespace WarcraftLegacies.Source.Setup
       HintConfig.Setup();
       QuestMenuSetup.Setup();
       GameTime.Start();
-      CheatSetup.Setup(commandManager);
+      CheatSetup.Setup(commandManager, artifactSetup);
       MapFlagSetup.Setup();
       InfoQuests.Setup();
       DestructibleSetup.Setup(preplacedUnitSystem);

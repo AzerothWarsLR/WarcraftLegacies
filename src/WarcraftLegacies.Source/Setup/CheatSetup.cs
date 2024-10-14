@@ -1,4 +1,6 @@
-﻿using MacroTools.Cheats;
+﻿using System.Collections.Generic;
+using MacroTools.ArtifactSystem;
+using MacroTools.Cheats;
 using MacroTools.CommandSystem;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Cheats;
@@ -7,7 +9,7 @@ namespace WarcraftLegacies.Source.Setup
 {
   public static class CheatSetup
   {
-    public static void Setup(CommandManager commandManager)
+    public static void Setup(CommandManager commandManager, ArtifactSetup artifactSetup)
     {
       commandManager.Register(new CheatAddSpell());
       commandManager.Register(new CheatResearchLevel());
@@ -46,6 +48,14 @@ namespace WarcraftLegacies.Source.Setup
       commandManager.Register(new CheatSkipTurns());
       commandManager.Register(new CheatPermaKill());
       commandManager.Register(new CheatGetUnitCurrentOrder());
+      commandManager.Register(new AssembleZinrokh(new List<Artifact>
+      {
+        artifactSetup.AzureFragment,
+        artifactSetup.BronzeFragment,
+        artifactSetup.EmeraldFragment,
+        artifactSetup.RubyFragment,
+        artifactSetup.ObsidianFragment
+      }));
       commandManager.Register(new PreviewForsaken());
       commandManager.Register(new CheatPingGoldMines());
       commandManager.Register(new CheatGetWaygateDestination());
