@@ -25,9 +25,8 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      var faction = FactionManager.GetFactionByName(parameters[0]);
-      if (faction == null)
-        return $"You must specify a valid {nameof(Faction)} name as the first parameter.";
+      if (!FactionManager.TryGetFactionByName(parameters[0], out var faction))
+        return $"There is no faction named {parameters[0]}.";
       
       if (faction.Player == null)
         return $"The specified {nameof(Faction)} is not occupied by a player and therefore cannot have a {nameof(Team)}.";

@@ -78,18 +78,15 @@ namespace MacroTools.FactionSystem
     public static bool TryGetTeamByName(string teamName, [NotNullWhen(true)] out Team? team) =>
       TeamsByName.TryGetValue(teamName.ToLower(), out team);
 
-    public static bool FactionWithNameExists(string name)
-    {
-      return FactionsByName.ContainsKey(name.ToLower());
-    }
-
     /// <summary>
-    /// Returns the <see cref="Faction"/> with the specified name if one exists.
-    /// Returns null otherwise.
+    /// Outputs the registered <see cref="Faction"/> with the specified name.
     /// </summary>
-    public static Faction? GetFactionByName(string name) => 
-      FactionsByName.TryGetValue(name.ToLower(), out var faction) ? faction : null;
-    
+    /// <param name="factionName">The name of the faction.</param>
+    /// <param name="faction">The faction with the specified name.</param>
+    /// <returns>Returns true if a faction with the specified name exists.</returns>
+    public static bool TryGetFactionByName(string factionName, [NotNullWhen(true)] out Faction? faction) => 
+      FactionsByName.TryGetValue(factionName.ToLower(), out faction);
+
     /// <summary>
     /// Returns true if a <see cref="Faction"/> with the specified type exists.
     /// </summary>
@@ -99,11 +96,6 @@ namespace MacroTools.FactionSystem
       faction = FactionsByName.Values.FirstOrDefault(x => x.GetType() == typeof(T)) as T;
       return faction != null;
     }
-
-    /// <summary>
-    /// Returns true if a <see cref="Faction"/> with the specified type exists.
-    /// </summary>
-    public static bool FactionOfTypeExists(Type factionType) => AllFactions.Any(x => x.GetType() == factionType);
 
     /// <summary>
     ///   Registers a <see cref="Faction" /> to the <see cref="FactionManager" />,
@@ -158,5 +150,10 @@ namespace MacroTools.FactionSystem
       foreach (var initializer in dependentInitializers)
         initializer.Execute();
     }
+    
+    /// <summary>
+    /// Returns true if a <see cref="Faction"/> with the specified type exists.
+    /// </summary>
+    private static bool FactionOfTypeExists(Type factionType) => AllFactions.Any(x => x.GetType() == factionType);
   }
 }

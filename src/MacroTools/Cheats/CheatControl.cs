@@ -59,10 +59,9 @@ namespace MacroTools.Cheats
         return $"{givesOrTakes} control of all players.";
       }
 
-      var target = FactionManager.GetFactionByName(parameters[0]);
-      if (target == null)
-        return $"{parameters[0]} is not a valid faction.";
-
+      if (!FactionManager.TryGetFactionByName(parameters[0], out var target))
+        return $"There is no faction named {parameters[0]}.";
+      
       if (target.Player == null)
         return $"Nobody is playing {target.ColoredName}.";
 
