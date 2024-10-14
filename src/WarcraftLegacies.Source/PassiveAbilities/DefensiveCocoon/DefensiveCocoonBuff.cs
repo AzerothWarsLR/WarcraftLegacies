@@ -41,6 +41,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
     {
       Target
         .SetLifePercent(100)
+        .PauseEx(true)
         .Show(false);
       
       _egg = CreateUnit(Target.OwningPlayer(), EggId, GetUnitX(Target), GetUnitY(Target), 0)
@@ -63,14 +64,17 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
     public override void OnDispose()
     {
       _deathTrigger?.Destroy();
-      Target.Show(true);
+      Target
+        .Show(true)
+        .PauseEx(false);
       
       if (UnitAlive(_egg)) 
         Revive();
       else
       {
-        Target.Kill();
-        Target.SetPosition(_egg!.GetPosition());
+        Target
+          .Kill()
+          .SetPosition(_egg!.GetPosition());
       }
     }
 
