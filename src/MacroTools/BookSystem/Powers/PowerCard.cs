@@ -14,10 +14,12 @@ namespace MacroTools.BookSystem.Powers
     private readonly TextFrame _title;
     private readonly Frame _icon;
 
-    
     /// <inheritdoc />
     public override bool Occupied => Item != null;
-    
+
+    /// <inheritdoc />
+    public override void Clear() => Item = null;
+
     /// <summary>
     /// The <see cref="Item"/> currently being represented by this <see cref="PowerCard"/>.
     /// </summary>

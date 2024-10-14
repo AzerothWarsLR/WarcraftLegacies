@@ -17,10 +17,7 @@ namespace MacroTools.BookSystem.Core
     /// <summary>
     /// Clears the thing that the Card is representing, if anything.
     /// </summary>
-    public void Clear()
-    {
-      Item = default(T);
-    }
+    public abstract void Clear();
     
     protected Card(Frame parent, float width, float height) : base("ArtifactItemBox", parent, 0)
     {

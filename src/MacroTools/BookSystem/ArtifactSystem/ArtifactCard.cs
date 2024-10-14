@@ -24,7 +24,10 @@ namespace MacroTools.BookSystem.ArtifactSystem
     private readonly TextFrame _title;
 
     /// <inheritdoc />
-    public override bool Occupied => _artifact != null;
+    public override bool Occupied => Item != null;
+
+    /// <inheritdoc />
+    public override void Clear() => Item = null;
 
     /// <summary>
     /// The <see cref="Item"/> currently being represented by this <see cref="ArtifactCard"/>.
