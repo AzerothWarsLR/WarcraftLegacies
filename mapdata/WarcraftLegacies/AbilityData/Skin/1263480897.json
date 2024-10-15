@@ -13,12 +13,12 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "W"
+      "Value": "E"
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "W"
+      "Value": "E"
     },
     {
       "Id": 1952805473,
@@ -28,7 +28,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Corrupt the target blood with the power of the Old Gods. The afflicted target cannot cast spells and will take damage per second. Upon its death, a Faceless One Deathbringer will spawn from its corpse. Corrupt Blood cannot be dispelled or cancelled.\r\nLasts 8 seconds on heroes and indefinitely on units.\r\n |n|cffffcc00Level 1|r - 40 damage per second and 2 Greater Doom Guards summoned.|n|cffffcc00Level 2|r - 70 damage per second and 4 Greater Doom Guards summoned. |n|cffffcc00Level 3|r - 100 damage per second and 6 Greater Doom Guards"
+      "Value": "Corrupt the target blood with the power of the Old Gods. The afflicted target cannot cast spells and will take damage per second. Upon its death, a Faceless One Deathbringer will spawn from its corpse. Corrupt Blood cannot be dispelled or cancelled.\r\nLasts 8 seconds on heroes and indefinitely on units.\r\n |n|cffffcc00Level 1|r - \u003CA0OK,DataA1\u003E damage per second and \u003CA0OK,DataB1\u003E Faceless One Deathbringers summoned.|n|cffffcc00Level 2|r - \u003CA0OK,DataA2\u003E damage per second and \u003CA0OK,DataB2\u003E Faceless One Deathbringers summoned. |n|cffffcc00Level 3|r - \u003CA0OK,DataA3\u003E damage per second and \u003CA0OK,DataB3\u003E Faceless One Deathbringers summoned."
     },
     {
       "Level": 1,
@@ -52,19 +52,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Corrupt the blood of a target unit with the power of the Old Gods. The afflicted unit cannot cast spells and will take \u003CA04A,DataA1\u003E damage per second. Upon its death, 2 Faceless One Deathbringer will spawn from its corpse. Corrupt Blood cannot be dispelled or cancelled.|nLasts 8 seconds on heroes and indefinitely on units."
+      "Value": "Corrupt the blood of a target unit with the power of the Old Gods. The afflicted unit cannot cast spells and will take \u003CA0OK,DataA1\u003E damage per second. Upon its death, \u003CA0OK,DataB1\u003E Faceless One Deathbringers will spawn from its corpse. Corrupt Blood cannot be dispelled or cancelled.|nLasts 8 seconds on heroes and indefinitely on units."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Corrupt the blood of a target unit with the power of the Old Gods. The afflicted unit cannot cast spells and will take \u003CA04A,DataA2\u003E damage per second. Upon its death, 4 Faceless One Deathbringer will spawn from its corpse. Corrupt Blood cannot be dispelled or cancelled.|nLasts 8 seconds on heroes and indefinitely on units."
+      "Value": "Corrupt the blood of a target unit with the power of the Old Gods. The afflicted unit cannot cast spells and will take \u003CA0OK,DataA2\u003E damage per second. Upon its death, \u003CA0OK,DataB2\u003E Faceless One Deathbringers will spawn from its corpse. Corrupt Blood cannot be dispelled or cancelled.|nLasts 8 seconds on heroes and indefinitely on units."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Corrupt the blood of a target unit with the power of the Old Gods. The afflicted unit cannot cast spells and will take \u003CA04A,DataA3\u003E damage per second. Upon its death, 6 Faceless One Deathbringer will spawn from its corpse. Corrupt Blood cannot be dispelled or cancelled.|nLasts 8 seconds on heroes and indefinitely on units."
+      "Value": "Corrupt the blood of a target unit with the power of the Old Gods. The afflicted unit cannot cast spells and will take \u003CA0OK,DataA3\u003E damage per second. Upon its death, \u003CA0OK,DataB3\u003E Faceless One Deathbringers will spawn from its corpse. Corrupt Blood cannot be dispelled or cancelled.|nLasts 8 seconds on heroes and indefinitely on units."
     },
     {
       "Id": 1835101793,
@@ -73,11 +73,11 @@
     },
     {
       "Id": 2020631137,
-      "Value": 1
+      "Value": 2
     },
     {
       "Id": 2020635233,
-      "Value": 1
+      "Value": 2
     }
   ]
 }
