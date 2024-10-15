@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
@@ -13,8 +11,6 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
   /// </summary>
   public sealed class QuestFeathermoon : QuestData
   {
-    private readonly List<unit> _rescueUnits;
-
     /// <summary>
     /// Initializes a new instance of <see cref="QuestFeathermoon"/>.
     /// </summary>
@@ -23,9 +19,8 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       @"ReplaceableTextures\CommandButtons\BTNBearDen.blp")
     {
       AddObjective(new ObjectiveControlCapital(feathermoon, false));
-      AddObjective(new ObjectiveControlLevel(UNIT_N05U_FEATHERMOON_STRONGHOLD, 8));
+      AddObjective(new ObjectiveControlPoint(UNIT_N05U_FEATHERMOON_STRONGHOLD));
       ResearchId = UPGRADE_R06M_QUEST_COMPLETED_SHORES_OF_FEATHERMOON;
-      
     }
 
     /// <inheritdoc />
@@ -34,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
 
     /// <inheritdoc />
     protected override string RewardDescription => 
-      $"Gain control of all units in Feathermoon Stronghold and learn to train Naisha from the {GetObjectName(UNIT_E00R_ALTAR_OF_WATCHERS_SENTINEL_ALTAR)}";
+      $"Learn to train Naisha from the {GetObjectName(UNIT_E00R_ALTAR_OF_WATCHERS_SENTINEL_ALTAR)}";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
@@ -42,15 +37,6 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
         ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
         : completingFaction.Player;
-
-      rescuer.RescueGroup(_rescueUnits);
-    }
-
-    /// <inheritdoc />
-    protected override void OnComplete(Faction completingFaction)
-    {
-      completingFaction.Player?
-        .RescueGroup(_rescueUnits);
     }
   }
 }
