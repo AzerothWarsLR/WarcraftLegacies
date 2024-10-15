@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
 
     /// <inheritdoc />
     protected override string RewardDescription => 
-      $"Gain the ability to train Naisha from the {GetObjectName(UNIT_E00R_ALTAR_OF_WATCHERS_SENTINEL_ALTAR)}";
+      $"Learn to train Naisha from the {GetObjectName(UNIT_E00R_ALTAR_OF_WATCHERS_SENTINEL_ALTAR)}";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
@@ -37,12 +37,6 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
         ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
         : completingFaction.Player;
-    }
-
-    /// <inheritdoc />
-    protected override void OnComplete(Faction completingFaction)
-    {
-      SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
     }
   }
 }
