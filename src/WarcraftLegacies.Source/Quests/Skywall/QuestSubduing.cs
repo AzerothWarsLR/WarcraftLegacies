@@ -23,14 +23,12 @@ namespace WarcraftLegacies.Source.Quests.Skywall
       AddObjective(new ObjectiveControlPoint(UNIT_N028_DROWNED_REACHES));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = UPGRADE_RSW3_QUEST_COMPLETED_SUBDUING_NEPTULON;
-
     }
 
     /// <inheritdoc />
     public override string RewardFlavour => "Neptulon has been subdued";
 
     /// <inheritdoc />
-    protected override string RewardDescription => $"Learn to train Ragnaros from the {GetObjectName(UNIT_N078_ALTAR_OF_ELEMENTS_ELEMENTAL_ALTAR)} and learn to build the Magma Complex";
-
+    protected override string RewardDescription => $"Learn to train Neptulon from the {GetObjectName(UNIT_N078_ALTAR_OF_ELEMENTS_ELEMENTAL_ALTAR)} and learn to build the Magma Complex";
   }
 }
