@@ -23,13 +23,13 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts forever seconds. |nThe stun lasts \u003CALS9,DataD1\u003E seconds. |n\u003CALS9,DataA1\u003E second activation delay."
+      "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts forever seconds. |nThe stun lasts \u003CALS9,DataD1\u003E seconds (\u003CALS9,HeroDur1,.\u003E for heroes). |n\u003CALS9,DataA1\u003E second activation delay."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts forever seconds. |nThe stun lasts \u003CALS9,DataD2\u003E seconds. |n\u003CALS9,DataA2\u003E second activation delay."
+      "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts forever seconds. |nThe stun lasts \u003CALS9,DataD2\u003E seconds (\u003CALS9,HeroDur1,.\u003E for heroes). |n\u003CALS9,DataA2\u003E second activation delay."
     },
     {
       "Id": 1835101793,
@@ -50,7 +50,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other Ice Traps in its area of effect. |nThe trap lasts forever.|n|n|cffffcc00Level 1|r - \u003CALS9,DataD1\u003E seconds stun duration. \u003CALS9,DataA1\u003E seconds activation delay.|n|cffffcc00Level 2|r - \u003CALS9,DataD2\u003E seconds stun duration. \u003CALS9,DataA2\u003E seconds activation delay.|n|cffffcc00Level 3|r - \u003CALS9,DataD3\u003E seconds stun duration. \u003CALS9,DataA3\u003E seconds activation delay.|n|cffffcc00Level 4|r - \u003CALS9,DataD4\u003E seconds stun duration. \u003CALS9,DataA4\u003E seconds activation delay."
+      "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other Ice Traps in its area of effect. |nThe trap lasts forever.|n|n|cffffcc00Level 1|r - Stuns for \u003CALS9,DataD1\u003E seconds (\u003CALS9,HeroDur1,.\u003E for heroes). \u003CALS9,DataA1\u003E seconds activation delay.|n|cffffcc00Level 2|r - Stuns for \u003CALS9,DataD2\u003E seconds (\u003CALS9,HeroDur2,.\u003E for heroes). \u003CALS9,DataA2\u003E seconds activation delay.|n|cffffcc00Level 3|r - Stuns for \u003CALS9,DataD3\u003E seconds (\u003CALS9,HeroDur3,.\u003E for heroes). \u003CALS9,DataA3\u003E seconds activation delay.|n|cffffcc00Level 4|r - Stuns for \u003CALS9,DataD4\u003E seconds (\u003CALS9,HeroDur4,.\u003E for heroes). \u003CALS9,DataA4\u003E seconds activation delay."
     },
     {
       "Id": 1952805473,
@@ -79,13 +79,13 @@
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts forever seconds. |nThe stun lasts \u003CALS9,DataD3\u003E seconds. |n\u003CALS9,DataA3\u003E second activation delay."
+      "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts forever seconds. |nThe stun lasts \u003CALS9,DataD3\u003E seconds (\u003CALS9,HeroDur1,.\u003E for heroes). |n\u003CALS9,DataA3\u003E second activation delay."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts forever seconds. |nThe stun lasts \u003CALS9,DataD4\u003E seconds. |n\u003CALS9,DataA4\u003E second activation delay."
+      "Value": "Summons an invisible and immovable ward that stuns enemy land units around it. The trap activates when an enemy land unit approaches and destroys all other stasis wards in its area of effect. |nThe trap lasts forever seconds. |nThe stun lasts \u003CALS9,DataD4\u003E seconds (\u003CALS9,HeroDur1,.\u003E for heroes). |n\u003CALS9,DataA4\u003E second activation delay."
     },
     {
       "Id": 1918988897,
