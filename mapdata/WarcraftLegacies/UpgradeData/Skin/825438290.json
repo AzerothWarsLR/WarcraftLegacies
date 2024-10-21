@@ -43,7 +43,7 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Survivors of the Alliance Expedition into Draenor, returning to arms to once again defend Azeroth.|n|n-Allows training of |cffcece00Marksmen |rin place of |cffcece00Spearmen|r with the following changes:|n|n- Damage increased by 9.|n|n- Range increased by 150.|n|n- Movement Speed increased by 20.|n|n- Health increased by 50.|n|n Marksmen have the following abilities:|n|n|cffcece00Critical Strike|r - Gives a 15% chance to do 2 times normal damage on an attack.|n|cffcece00|nFire Arrows|r - Deals 2 bonus damage and burns the target dealing 8 bonus fire damage every second for 4 seconds. |n|cffcece00|nFeedback|r - Attacks combust \u003CA0UJ,DataA1\u003E mana per hit dealing damage to the attacked unit equal to the mana destroyed."
+      "Value": "Survivors of the Alliance Expedition into Draenor, returning to arms to once again defend Azeroth.|n|nAllows training of |cffcece00Marksmen |rin place of |cffcece00Spearmen|r with the following changes:|n|n- Damage increased by 12.|n- Range increased by 150.|n- Movement Speed increased by 20.|n- Health increased by 100.|n|nMarksmen have the following abilities:|n|n|cffcece00Critical Strike|r - Gives a 15% chance to do 2 times normal damage on an attack.|n|cffcece00|nPoison Arrows|r - Deals \u003CAEpa,DataA1\u003E bonus damage and poisons the target dealing \u003CAEpa,DataB1\u003E bonus damage every second for 4 seconds."
     }
   ]
 }
