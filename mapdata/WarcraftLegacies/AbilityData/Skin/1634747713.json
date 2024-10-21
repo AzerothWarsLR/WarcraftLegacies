@@ -19,21 +19,16 @@
       "Value": "Q"
     },
     {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Fire Arrows"
-    },
-    {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Fire Arrows"
+      "Value": "Poison Arrows"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Deals 2 bonus damage and burns the target dealing 8 bonus fire damage every second, but drains 8 mana per attack. |n|cffffcc00Last 4 seconds."
+      "Value": "Deals \u003CAEpa,DataA1\u003E bonus damage and poisons the target dealing \u003CAEpa,DataB1\u003E bonus damage every second, but drains \u003CAEpa,Cost1\u003E mana per attack. |n|cffffcc00Last 4 seconds."
     },
     {
       "Id": 2019718497,
@@ -43,6 +38,21 @@
       "Id": 1802007905,
       "Type": 3,
       "Value": "Q"
+    },
+    {
+      "Id": 1952542049,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\PoisonArrow\\PoisonArrowMissile.mdl"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCPoisonedSpear.blp"
+    },
+    {
+      "Id": 1918989665,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCPoisonedSpear.blp"
     }
   ]
 }
