@@ -193,7 +193,7 @@ You do not possess boats, but your workers can burrow through water, use them to
         AttackDamageBase = new LeveledAbilityField<int>
         {
           Base = 20,
-          PerLevel = 40
+          PerLevel = 20
         },
         UnitTypeId = UNIT_ZBTH_TENTACLE_SPAWN_TENTACLE_C_THUN,
         Duration = new LeveledAbilityField<float>
