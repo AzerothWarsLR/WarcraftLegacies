@@ -28,7 +28,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Summons Tentacles at the target location. Lasts 60 seconds. |n|n|cffffcc00Level 1|r - 5 Tentacles.|n|cffffcc00Level 2|r - 10 Tentacles.|n|cffffcc00Level 3|r - 20 Tentacles."
+      "Value": "Summons Tentacles at the target location. Lasts 60 seconds. |n|n|cffffcc00Level 1|r - 3 Tentacles.|n|cffffcc00Level 2|r - 6 Tentacles.|n|cffffcc00Level 3|r - 9 Tentacles."
     },
     {
       "Level": 1,
@@ -52,19 +52,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Unleashes 5 mighty tentacles upon the enemy."
+      "Value": "Unleashes 3 mighty tentacles upon the enemy."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Unleashes 10 mighty tentacles upon the enemy."
+      "Value": "Unleashes 6 mighty tentacles upon the enemy."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Unleashes 20 mighty tentacles upon the enemy."
+      "Value": "Unleashes 9 mighty tentacles upon the enemy."
     },
     {
       "Id": 1918988897,
