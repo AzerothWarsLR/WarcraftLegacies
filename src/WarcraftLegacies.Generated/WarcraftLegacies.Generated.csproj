@@ -5,8 +5,4 @@
     <RootNamespace>WarcraftLegacies.Generated</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Include="..\MacroTools\Extensions\DestructableExtensions.cs" Link="DestructableExtensions.cs" />
-  </ItemGroup>
-
 </Project>
