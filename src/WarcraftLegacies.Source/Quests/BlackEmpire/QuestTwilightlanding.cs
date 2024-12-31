@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
         filterUnit => filterUnit.GetTypeId() != FourCC("ngol"));
-      ResearchId = UPGRADE_RBMG_QUEST_COMPLETED_MAW_OF_GOR_MA;
+      ResearchId = UPGRADE_RBMG_QUEST_COMPLETED_TWILIGHT_LANDING;
 
     }
 

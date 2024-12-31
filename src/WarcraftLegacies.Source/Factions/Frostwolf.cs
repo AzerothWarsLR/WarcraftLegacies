@@ -41,8 +41,7 @@ You begin in Durotan, make your way south to establish your bases, the Echo Isle
 Your allies will be coming south to help you defend against the Old Gods, do not engage them alone.";
       GoldMines = new List<unit>
       {
-        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8123, -2514)),
-        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-15828, -3120))
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9729, 2426)),
       };
       Nicknames = new List<string>
       {
