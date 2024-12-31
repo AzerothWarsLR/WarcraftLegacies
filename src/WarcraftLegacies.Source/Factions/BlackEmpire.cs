@@ -57,7 +57,7 @@ Be sure to train Forsaken Ones, they are powerful units";
 
     private void RegisterQuests()
     {
-      var questGorma = AddQuest(new QuestMawofGorma(Regions.BlackEmpireOutpost1));
+      var questGorma = AddQuest(new QuestTwilightlanding(Regions.BlackEmpireOutpost1));
       StartingQuest = questGorma;
 
       AddQuest(new QuestWakingCity(questGorma, _allLegendSetup, Regions.Nyalotha));

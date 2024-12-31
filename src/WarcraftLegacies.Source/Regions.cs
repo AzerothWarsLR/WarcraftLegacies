@@ -38,7 +38,7 @@ public static class Regions
 	public static Rectangle Biodome1 { get; set; } = new Rectangle(1088f, -19392f, 1632f, -18880f);
 	public static Rectangle Biodome2 { get; set; } = new Rectangle(1824f, -21248f, 2368f, -20736f);
 	public static Rectangle Biodome3 { get; set; } = new Rectangle(864f, -20512f, 1408f, -20000f);
-	public static Rectangle BlackEmpireOutpost1 { get; set; } = new Rectangle(-25600f, -10912f, -22688f, -7520f);
+	public static Rectangle BlackEmpireOutpost1 { get; set; } = new Rectangle(-25600f, -10496f, -22880f, -7520f);
 	public static Rectangle BlackrockUnlock { get; set; } = new Rectangle(11840f, -12224f, 13632f, -10208f);
 	public static Rectangle BlackTempleBase { get; set; } = new Rectangle(2112f, -31584f, 6496f, -28288f);
 	public static Rectangle BlademasterUnlock { get; set; } = new Rectangle(4352f, -10496f, 5024f, -10112f);
