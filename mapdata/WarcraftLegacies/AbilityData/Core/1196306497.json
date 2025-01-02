@@ -7,12 +7,6 @@
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 20
-    },
-    {
-      "Level": 1,
       "Id": 1935895905,
       "Value": 75
     },
@@ -21,14 +15,14 @@
       "Pointer": 1,
       "Id": 829845609,
       "Type": 2,
-      "Value": 20
+      "Value": 10
     },
     {
       "Level": 1,
       "Pointer": 2,
       "Id": 846622825,
       "Type": 2,
-      "Value": 1
+      "Value": 0.5
     },
     {
       "Level": 1,
@@ -56,6 +50,12 @@
       "Id": 1718968929,
       "Type": 3,
       "Value": "B08L"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 45
     }
   ]
 }

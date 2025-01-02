@@ -122,8 +122,8 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
 
       var stormSurge = new Stomp(ABILITY_AESS_STORM_SURGE_ARMORED_MISTRAL)
       {
-        Radius = 300,
-        DamageBase = 60,
+        Radius = 200,
+        DamageBase = 50,
         DurationBase = 3,
         StunAbilityId = ABILITY_AEPU_PURGE_SHOCKING_BLADE,
         StunOrderId = OrderId("purge"),
