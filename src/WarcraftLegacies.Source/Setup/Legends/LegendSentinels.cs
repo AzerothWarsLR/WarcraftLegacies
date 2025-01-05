@@ -44,14 +44,14 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = FourCC("Etyr"),
         PlayerColor = PLAYER_COLOR_CYAN,
-        StartingXp = 400
+        StartingXp = 1000
       };
 
       Naisha = new LegendaryHero("Naisha")
       {
         UnitType = FourCC("E025"),
         PlayerColor = PLAYER_COLOR_PINK,
-        StartingXp = 1800
+        StartingXp = 2800
       };
 
       Shandris = new LegendaryHero("Shandris Feathermoon")

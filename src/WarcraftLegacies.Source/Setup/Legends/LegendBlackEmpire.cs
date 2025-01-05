@@ -24,13 +24,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Zonozz = new LegendaryHero("Warlord Zon'ozz")
       {
         UnitType = UNIT_U00P_LIEUTENANT_OF_N_ZOTH_BLACK_EMPIRE,
-        StartingXp = 5000,
+        StartingXp = 2800,
       };
 
       Zaqul = new LegendaryHero("Za'qul")
       {
         UnitType = UNIT_E01D_HARBINGER_OF_NY_ALOTHA_YOGG,
-        StartingXp = 2800,
+        StartingXp = 1000,
       };
 
       Yorsahj = new LegendaryHero("Yor'sahj")

@@ -17,10 +17,10 @@ namespace WarcraftLegacies.Source.Quests.Skywall
       "Neptulon is refusing to join us, we will force him to",
       @"ReplaceableTextures\CommandButtons\BTNTidelord.blp")
     {
-      AddObjective(new ObjectiveControlPoint(UNIT_N00P_THE_ABYSS));
-      AddObjective(new ObjectiveControlPoint(UNIT_N02P_MAK_ARA));
-      AddObjective(new ObjectiveControlPoint(UNIT_N04B_GISHAN_CAVERNS));
-      AddObjective(new ObjectiveControlPoint(UNIT_N028_DROWNED_REACHES));
+      AddObjective(new ObjectiveControlLevel(UNIT_N00P_THE_ABYSS, 5));
+      AddObjective(new ObjectiveControlLevel(UNIT_N02P_MAK_ARA, 5));
+      AddObjective(new ObjectiveControlLevel(UNIT_N04B_GISHAN_CAVERNS, 5));
+      AddObjective(new ObjectiveControlLevel(UNIT_N028_DROWNED_REACHES, 5));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = UPGRADE_RSW3_QUEST_COMPLETED_SUBDUING_NEPTULON;
     }

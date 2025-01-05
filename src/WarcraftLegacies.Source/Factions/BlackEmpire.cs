@@ -110,7 +110,7 @@ Be sure to train Forsaken Ones, they are powerful units";
       {
         Radius = 500,
         DamageBase = 80,
-        DamageLevel = 40,
+        DamageLevel = 30,
         DurationBase = 3,
         DurationLevel = 0,
         StunAbilityId = ABILITY_ABSS_SHADOW_STRIKE_VOID_TOXIN_REAL,
@@ -133,7 +133,7 @@ Be sure to train Forsaken Ones, they are powerful units";
       {
         DummyAbilityId = ABILITY_ABSV_SHADOW_VEIL_SHADOW_VEIL_REAL,
         DummyOrderId = OrderId("howlofterror"),
-        ProcChance = 0.25f,
+        ProcChance = 0.20f,
         RequiredResearch = Constants.UPGRADE_RBEV_SHADOW_VEIL_BLACK_EMPIRE
       };
       PassiveAbilityManager.Register(shadowVeilPassive);

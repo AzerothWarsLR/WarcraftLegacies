@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Neptulon = new LegendaryHero("Neptulon")
       {
         UnitType = UNIT_UELN_THE_TIDEHUNTER_ELEMENTAL,
-        StartingXp = 7000,
+        StartingXp = 4000,
       };
 
       Vortex = new Capital
