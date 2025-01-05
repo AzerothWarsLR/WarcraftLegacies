@@ -34,7 +34,8 @@ namespace WarcraftLegacies.Source.Spells
         .SetMaximumHitpoints(HitPoints.Base + HitPoints.PerLevel * level)
         .SetLifePercent(100)
         .SetAnimation("birth")
-        .QueueAnimation("stand");
+        .QueueAnimation("stand")
+        .AddType(UNIT_TYPE_SUMMONED);
     }
   }
 }
