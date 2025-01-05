@@ -133,7 +133,7 @@ Be sure to train Forsaken Ones, they are powerful units";
       {
         DummyAbilityId = ABILITY_ABSV_SHADOW_VEIL_SHADOW_VEIL_REAL,
         DummyOrderId = OrderId("howlofterror"),
-        ProcChance = 0.20f,
+        ProcChance = 0.10f,
         RequiredResearch = Constants.UPGRADE_RBEV_SHADOW_VEIL_BLACK_EMPIRE
       };
       PassiveAbilityManager.Register(shadowVeilPassive);
