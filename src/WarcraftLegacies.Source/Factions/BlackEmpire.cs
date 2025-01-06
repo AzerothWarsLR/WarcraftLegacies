@@ -142,8 +142,8 @@ Be sure to train Forsaken Ones, they are powerful units";
       {
         DummyAbilityId = ABILITY_ACAM_ANTI_MAGIC_SHELL_BLACK_EMPIRE,
         DummyAbilityOrderId = OrderId("antimagicshell"),
-        Radius = 200,
-        CastFilter = CastFilters.IsTargetOrganicAndAlive,
+        Radius = 150,
+        CastFilter = CastFilters.IsTargetAllyAndAlive,
         TargetType = SpellTargetType.None
       };
       SpellSystem.Register(shadowVeilSpell);
