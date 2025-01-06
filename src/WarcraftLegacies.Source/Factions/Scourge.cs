@@ -93,12 +93,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
 
     private void RegisterQuests()
     {
-      QuestDefeatFrozenThrone questDefeatFrozenThrone = new(
-    this,
-    _allLegendSetup.Scourge.TheFrozenThrone,
-    _artifactSetup.HelmOfDomination,
-    _allLegendSetup.Scourge.Arthas);
-
+      QuestDefeatFrozenThrone questDefeatFrozenThrone = new(this, _allLegendSetup.Scourge.TheFrozenThrone, _artifactSetup.HelmOfDomination, _allLegendSetup.Scourge.Arthas);
       QuestSpiderWar questSpiderWar = new(Regions.Ice_Crown);
       QuestEnKilahUnlock questEnKilahUnlock = new(Regions.EnKilahUnlock);
       QuestDrakUnlock questDrakUnlock = new(Regions.DrakUnlock, _allLegendSetup.Scourge.Kelthuzad);
