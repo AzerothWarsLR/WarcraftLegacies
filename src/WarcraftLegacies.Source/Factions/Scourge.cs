@@ -1,7 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MacroTools;
+using MacroTools.ArtifactSystem;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
@@ -55,6 +58,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
         "ud",
         "undead"
       };
+      RegisterFactionDependentInitializer<Scourge>(RegisterScourgeRelatedQuests);
       RegisterFactionDependentInitializer<Lordaeron>(RegisterLordaeronRelatedQuests);
       RegisterFactionDependentInitializer<Lordaeron, Legion>(RegisterLordaeronLegionRelatedQuests);
       RegisterFactionDependentInitializer<Dalaran>(RegisterDalaranDialogue);
@@ -350,13 +354,24 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
             new ObjectiveLegendMeetsLegend(_allLegendSetup.Scourge.Arthas, _allLegendSetup.Legion.Tichondrius)
           }));
     }
-    
-    private void RegisterLordaeronRelatedQuests(Lordaeron lordaeron)
+      private void RegisterLordaeronRelatedQuests(Faction lordaeron)
     {
-      AddQuest(new QuestDestroyStratholme(lordaeron, _allLegendSetup.Lordaeron.Stratholme, _allLegendSetup.Lordaeron.Arthas));
+      Capital stratholme = _allLegendSetup.Lordaeron.Stratholme;
+      Capital frozenThrone = _allLegendSetup.Scourge?.TheFrozenThrone;
+      LegendaryHero arthas = _allLegendSetup.Lordaeron.Arthas;
+
+
+      // Initialize and add QuestDestroyStratholme with all required parameters
+      QuestDestroyStratholme questDestroyStratholme = new(lordaeron, stratholme, frozenThrone, arthas);
+      AddQuest(questDestroyStratholme);
+
+      // Add other Lordaeron quests
       AddQuest(new QuestCultoftheDamned(lordaeron, _allLegendSetup.Scourge.Rivendare));
     }
-    
+
+
+
+
     private void RegisterLordaeronLegionRelatedQuests(Lordaeron lordaeron, Legion legion)
     {
       var plagueParameters = new PlagueParameters();

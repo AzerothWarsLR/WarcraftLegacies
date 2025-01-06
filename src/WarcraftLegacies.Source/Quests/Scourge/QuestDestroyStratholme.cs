@@ -4,6 +4,7 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Quests.Lordaeron;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased; // Ensure this is included
 
 namespace WarcraftLegacies.Source.Quests.Scourge
 {
@@ -11,18 +12,21 @@ namespace WarcraftLegacies.Source.Quests.Scourge
   {
     private readonly Faction _lordaeron;
     private readonly LegendaryHero _arthas;
-    
-    public QuestDestroyStratholme(Faction lordaeron, Capital stratholme, LegendaryHero arthas) : base("The Culling",
+    private readonly Capital _frozenThrone;
+
+    public QuestDestroyStratholme(Faction lordaeron, Capital stratholme, Capital frozenThrone, LegendaryHero arthas) : base("The Culling",
       "When the city of Stratholme falls, Prince Arthas' despair will make him more susceptible to the power of the Lich King.",
       @"ReplaceableTextures\CommandButtons\BTNRuneblade.blp")
     {
       _lordaeron = lordaeron;
       _arthas = arthas;
+      _frozenThrone = frozenThrone;
+
       AddObjective(new ObjectiveCapitalDead(stratholme));
+      AddObjective(new ObjectiveControlCapital(frozenThrone, true)); // Ensure the Frozen Throne is under control and alive
       var lineOfSuccession = lordaeron.GetQuestByType<QuestKingArthas>();
       AddObjective(new ObjectiveFactionQuestNotComplete(lineOfSuccession, lordaeron));
       ResearchId = UPGRADE_R01K_QUEST_COMPLETED_THE_CULLING;
-      
     }
 
     /// <inheritdoc />

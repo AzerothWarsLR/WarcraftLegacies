@@ -31,11 +31,6 @@
       "Value": " (Scourge Main)"
     },
     {
-      "Id": 1818520949,
-      "Type": 3,
-      "Value": "doodads\\cinematic\\lichking\\lichking.mdl"
-    },
-    {
       "Id": 1831952757,
       "Type": 3,
       "Value": "Abilities\\Weapons\\FrostWyrmMissile\\FrostWyrmMissile.mdl"
@@ -74,6 +69,11 @@
       "Id": 1651864693,
       "Type": 3,
       "Value": "Upgrade to Black Citadel to enable the production of additional types of structures and units. "
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\LichKing.mdl"
     }
   ]
 }
