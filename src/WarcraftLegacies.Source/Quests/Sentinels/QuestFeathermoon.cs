@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
 
     /// <inheritdoc />
     protected override string RewardDescription => 
-      $"Learn to train Naisha from the {GetObjectName(UNIT_E00R_ALTAR_OF_WATCHERS_SENTINEL_ALTAR)}";
+      $"Learn to train Maiev from the {GetObjectName(UNIT_E00R_ALTAR_OF_WATCHERS_SENTINEL_ALTAR)}";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)

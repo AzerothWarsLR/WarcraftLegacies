@@ -45,7 +45,10 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       "Darkshore has been secured and Auberdine has joined us";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Control of all units in Astranaar Outpost and Auberdine. Tyrande and Maiev will be trainable at the Altar";
+    protected override string RewardDescription =>
+       $"Control of all units in Astranaar Outpost and Auberdine and learn to train Tyrande and Naisha from the {GetObjectName(UNIT_E00R_ALTAR_OF_WATCHERS_SENTINEL_ALTAR)}"
+
+
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)

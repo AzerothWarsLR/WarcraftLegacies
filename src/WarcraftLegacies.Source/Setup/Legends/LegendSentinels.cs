@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Maiev = new LegendaryHero("Maiev Shadowsong")
       {
         UnitType = FourCC("Ewrd"),
-        StartingXp = 1800
+        StartingXp = 2800
       };
 
       Auberdine = new Capital
@@ -51,7 +51,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = FourCC("E025"),
         PlayerColor = PLAYER_COLOR_PINK,
-        StartingXp = 2800
+        StartingXp = 1800
       };
 
       Shandris = new LegendaryHero("Shandris Feathermoon")
