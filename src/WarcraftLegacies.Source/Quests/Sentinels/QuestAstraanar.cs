@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-       $"Control of all units in Astranaar Outpost and Auberdine and learn to train Tyrande and Naisha from the {GetObjectName(UNIT_E00R_ALTAR_OF_WATCHERS_SENTINEL_ALTAR)}"
+       $"Control of all units in Astranaar Outpost and Auberdine and learn to train Tyrande and Naisha from the {GetObjectName(UNIT_E00R_ALTAR_OF_WATCHERS_SENTINEL_ALTAR)}";
 
 
 
