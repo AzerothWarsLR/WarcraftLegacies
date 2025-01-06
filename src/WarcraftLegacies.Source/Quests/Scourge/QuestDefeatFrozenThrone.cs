@@ -5,7 +5,6 @@ using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
 using MacroTools.ArtifactSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
-using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Quests.Scourge
@@ -25,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestDefeatFrozenThrone"/> class.
     /// </summary>
-    public QuestDefeatFrozenThrone(Faction scourge, Capital frozenThrone, Artifact helmOfDomination, LegendaryHero arthas, QuestDestroyStratholme questDestroyStratholme)
+    public QuestDefeatFrozenThrone(Faction scourge, Capital frozenThrone, Artifact helmOfDomination, LegendaryHero arthas)
         : base("From the Ruins, Reborn",
       "The Scourge's power crumbles as the Frozen Throne falls. The mindless undead wander the wastes. However, there is still hope; if Arthas can obtain The Helm of Domination, the Scourge may rise again!",
       @"ReplaceableTextures\CommandButtons\BTNBlackKing.blp")
@@ -91,7 +90,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     {
       var player = completingFaction.Player;
 
-      // Re-enable training if Arthas has obtained the Helm of Domination
+      // Re-enable training if Arthas ha obtained the Helm of Domination
       if (player != null && ArthasHasHelmOfDomination(_arthas, _helmOfDomination))
       {
         foreach (var unitType in _specificUnitIds)
