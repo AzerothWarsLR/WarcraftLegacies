@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     private readonly List<int> _specificUnitIds;
     private readonly Artifact _helmOfDomination;
     private readonly LegendaryHero _arthas;
-    private bool _frozenThroneDestroyed = false;
+    private bool _isActive;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestDefeatFrozenThrone"/> class.
@@ -60,7 +60,6 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     private void ChangeUnitOwnershipAndDisableTraining()
     {
-      _frozenThroneDestroyed = true;
       var player = GetOwningPlayer(_frozenThrone.Unit);
 
       if (player != null)
@@ -77,11 +76,8 @@ namespace WarcraftLegacies.Source.Quests.Scourge
           }
         }
 
-        // Disable training of specific units by setting their maximum allowed to 0
-        foreach (var unitType in _specificUnitIds)
-        {
-          SetPlayerTechMaxAllowed(player, unitType, 0);
-        }
+        var researchLevel = 0;
+        SetPlayerTechResearched(player, ResearchId, researchLevel);
       }
     }
 
@@ -90,14 +86,10 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     {
       var player = completingFaction.Player;
 
-      // Re-enable training if Arthas ha obtained the Helm of Domination
       if (player != null && ArthasHasHelmOfDomination(_arthas, _helmOfDomination))
       {
-        foreach (var unitType in _specificUnitIds)
-        {
-          int limit = unitType == Constants.UNIT_UFRO_FROST_WYRM_SCOURGE ? 4 : 200; // Frost Wyrms limited to 4, others unlimited
-          SetPlayerTechMaxAllowed(player, unitType, limit);
-        }
+        var researchLevel = 1;
+        SetPlayerTechResearched(player, ResearchId, researchLevel);
       }
     }
 
@@ -109,11 +101,12 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// <inheritdoc />
     protected override void OnAdd(Faction whichFaction)
     {
-      whichFaction.ModObjectLimit(Constants.UNIT_UGHO_GHOUL_SCOURGE, Faction.UNLIMITED);
-      whichFaction.ModObjectLimit(Constants.UNIT_UABO_ABOMINATION_SCOURGE, Faction.UNLIMITED);
-      whichFaction.ModObjectLimit(Constants.UNIT_UFRO_FROST_WYRM_SCOURGE, 4); // Example limit, adjust as needed
-      whichFaction.ModObjectLimit(Constants.UNIT_UCRM_BURROWED_CRYPT_FIEND_RED, Faction.UNLIMITED);
-      whichFaction.ModObjectLimit(Constants.UNIT_UCRY_CRYPT_FIEND_SCOURGE, Faction.UNLIMITED);
+      var player = whichFaction.Player;
+      if (player != null)
+      {
+        var researchLevel = 1;
+        SetPlayerTechResearched(player, ResearchId, researchLevel);
+      }
     }
   }
 }
