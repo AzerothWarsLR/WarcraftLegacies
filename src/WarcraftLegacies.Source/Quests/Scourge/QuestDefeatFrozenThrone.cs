@@ -19,12 +19,12 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     private readonly List<int> _specificUnitIds;
     private readonly Artifact _helmOfDomination;
     private readonly LegendaryHero _arthas;
-    private bool _isActive;
+    public int UnitRequirementResearchId { get; init; }
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestDefeatFrozenThrone"/> class.
     /// </summary>
-    public QuestDefeatFrozenThrone(Faction scourge, Capital frozenThrone, Artifact helmOfDomination, LegendaryHero arthas)
+    public QuestDefeatFrozenThrone(Faction scourge, Capital frozenThrone, Artifact helmOfDomination, LegendaryHero arthas, int unitRequirementResearchId)
         : base("From the Ruins, Reborn",
       "The Scourge's power crumbles as the Frozen Throne falls. The mindless undead wander the wastes. However, there is still hope; if Arthas can obtain The Helm of Domination, the Scourge may rise again!",
       @"ReplaceableTextures\CommandButtons\BTNBlackKing.blp")
@@ -32,6 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       _frozenThrone = frozenThrone;
       _helmOfDomination = helmOfDomination;
       _arthas = arthas;
+      UnitRequirementResearchId = unitRequirementResearchId; // Initialize UnitRequirementResearchId here
       _specificUnitIds = new List<int>
       {
         Constants.UNIT_UGHO_GHOUL_SCOURGE,  // Ghoul
@@ -75,9 +76,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
             unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
           }
         }
-
-        var researchLevel = 0;
-        SetPlayerTechResearched(player, ResearchId, researchLevel);
+        SetPlayerTechResearched(player, UnitRequirementResearchId, 0);
       }
     }
 
@@ -86,10 +85,10 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     {
       var player = completingFaction.Player;
 
+  
       if (player != null && ArthasHasHelmOfDomination(_arthas, _helmOfDomination))
       {
-        var researchLevel = 1;
-        SetPlayerTechResearched(player, ResearchId, researchLevel);
+        SetPlayerTechResearched(player, UnitRequirementResearchId, 1);
       }
     }
 
@@ -101,11 +100,12 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// <inheritdoc />
     protected override void OnAdd(Faction whichFaction)
     {
+      // set starting research level 
       var player = whichFaction.Player;
       if (player != null)
       {
-        var researchLevel = 1;
-        SetPlayerTechResearched(player, ResearchId, researchLevel);
+        whichFaction.SetObjectLimit(UnitRequirementResearchId, Faction.UNLIMITED); // Set object limit to unlimited
+        SetPlayerTechResearched(player, UnitRequirementResearchId, 1);
       }
     }
   }
