@@ -9,7 +9,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "This unit has a 25% chance on attack to give every ground unit in a 200 area of effect an Anti-Magic Shell."
+      "Value": "This unit has a 10% chance on attack to give every ground unit in a 150 area of effect an Anti-Magic Shell."
     },
     {
       "Id": 1835101793,

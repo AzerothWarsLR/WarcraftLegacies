@@ -205,7 +205,7 @@ You do not possess boats, but your workers can burrow through water, use them to
       PassiveAbilityManager.Register(new MassiveAttackAbility(UNIT_ZBTH_TENTACLE_SPAWN_TENTACLE_C_THUN)
       {
         AttackDamagePercentage = 1,
-        Distance = 200,
+        Distance = 400,
         IgnoreAttackTarget = true
       });
     }
