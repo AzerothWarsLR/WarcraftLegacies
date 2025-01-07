@@ -33,7 +33,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Poisons enemy units within a radius of 500, dealing instant damage, then reducing their movement speed by 75% for 3 seconds, after which they will take another 20 damage. |n|n|cffffcc00Level 1|r - 120 instant damage. |n|cffffcc00Level 2|r - 160 instant damage. |n|cffffcc00Level 3|r - 200 instant damage. |n|cffffcc00Level 4|r - 240 instant damage."
+      "Value": "Poisons enemy units within a radius of 500, dealing instant damage, then reducing their movement speed by 75% for 3 seconds, after which they will take another 20 damage. |n|n|cffffcc00Level 1|r - 120 instant damage. |n|cffffcc00Level 2|r - 140 instant damage. |n|cffffcc00Level 3|r - 160 instant damage. |n|cffffcc00Level 4|r - 180 instant damage."
     },
     {
       "Level": 1,
