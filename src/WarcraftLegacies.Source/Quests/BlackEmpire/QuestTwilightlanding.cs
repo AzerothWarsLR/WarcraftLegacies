@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
       "Invaders from Azeroth have taken control of the Twilight landing. Destroy them!",
       @"ReplaceableTextures\CommandButtons\BTNForgottenOne.blp")
     {
-      AddObjective(new ObjectiveControlPoint(UNIT_NTWL_TWILIGHT_LANDING));
+      AddObjective(new ObjectiveControlPoint(UNIT_NTWL_TWILIGHT_LANDING,900));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
