@@ -19,10 +19,7 @@ namespace WarcraftLegacies.Source.Powers
     /// <summary>The Power is only active while this Artifact is held by the player.</summary>
     public required Artifact DependentArtifact { get; init; }
 
-    public Domination()
-    {
-      Name = "Domination";
-    }
+    public Domination() => Name = "Domination";
 
     private bool IsActive
     {
@@ -32,10 +29,16 @@ namespace WarcraftLegacies.Source.Powers
         _isActive = value;
         var prefix = IsActive ? "" : "|cffc0c0c0";
         Description =
-          $"{prefix}You can train and control Ghouls, Abominations, Frost Wyrms, and Crypt Fiends. Only active while you hold the Helm of Domination.";
+          $"{prefix}You can train and control Ghouls, Abominations, Frost Wyrms, and Crypt Fiends. Only active while the Lich King holds the Helm of Domination.";
         var researchLevel = _isActive ? 1 : 0;
         foreach (var player in _playersWithPower)
+        {
           SetPlayerTechResearched(player, ResearchId, researchLevel);
+          if (IsActive)
+            ChangeControlOfUndead(Player(PLAYER_NEUTRAL_AGGRESSIVE), player);
+          else 
+            ChangeControlOfUndead(player, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+        }
       }
     }
 
@@ -46,9 +49,6 @@ namespace WarcraftLegacies.Source.Powers
     public override void OnAdd(player whichPlayer)
     {
       _playersWithPower.Add(whichPlayer);
-      SetPlayerTechResearched(whichPlayer, ResearchId, 1);
-      ChangeControlOfUndead(Player(PLAYER_NEUTRAL_AGGRESSIVE), whichPlayer);
-
       DependentArtifact.OwnerChanged += OnArtifactOwnerChanged;
       RefreshIsActive();
     }
@@ -60,7 +60,6 @@ namespace WarcraftLegacies.Source.Powers
     public override void OnRemove(player whichPlayer)
     {
       _playersWithPower.Remove(whichPlayer);
-      SetPlayerTechResearched(whichPlayer, ResearchId, 0);
       ChangeControlOfUndead(whichPlayer, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
