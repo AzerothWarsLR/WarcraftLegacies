@@ -137,7 +137,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
 
       var domination = new Domination
       {
-        ResearchId = UPGRADE_R008_QUEST_COMPLETED_FROM_THE_RUINS_REBORN,
+        ResearchId = UPGRADE_R008_DOMINATION_POWER,
         MindlessUndeadUnitTypes = new List<int>
         {
           UNIT_UGHO_GHOUL_SCOURGE,
