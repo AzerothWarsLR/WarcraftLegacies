@@ -2,6 +2,7 @@
 using MacroTools;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
@@ -101,7 +102,8 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       QuestLichKingArthas questLichKingArthas =
         new(_preplacedUnitSystem.GetUnit(UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER),
           _artifactSetup.HelmOfDomination,
-          _allLegendSetup.Scourge.Arthas);
+          _allLegendSetup.Scourge.Arthas,
+          _allLegendSetup.Scourge.TheFrozenThrone);
       QuestSlumberingKing questSlumberingKing = new();
       
       var questKelthuzadLich = AddQuest(new QuestKelthuzadLich(_allLegendSetup.Quelthalas.Sunwell, _allLegendSetup.Scourge.Kelthuzad));
@@ -147,7 +149,12 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
           UNIT_UCRY_CRYPT_FIEND_SCOURGE
         },
         DependentArtifact = _artifactSetup.HelmOfDomination,
-        IconName = "Revenant"
+        IconName = "Revenant",
+        ValidHolders = new List<Legend>
+        {
+          _allLegendSetup.Scourge.TheFrozenThrone,
+          _allLegendSetup.Scourge.Arthas
+        }
       };
       
       AddPower(domination);

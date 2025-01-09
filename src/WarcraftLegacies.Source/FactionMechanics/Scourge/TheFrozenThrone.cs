@@ -47,6 +47,12 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
       _frozenThrone.Capturable = false;
       _frozenThrone.DeathMessage =
         "Northrend quakes as Icecrown Citadel topples to the glacier below, bringing a final end to Ner'zhul's fortress and prison of ice.";
+
+      if (_frozenThrone.ProtectorCount == 0)
+        _frozenThrone.Unit?.SetInvulnerable(false);
+
+      if (_frozenThrone.OwningPlayer == Player(PLAYER_NEUTRAL_PASSIVE))
+        _frozenThrone.Unit?.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     /// <summary>
@@ -58,11 +64,14 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
         return;
 
       RemoveAbilities();
-      _frozenThrone.Unit?.SetName("Fractured Throne");
+      _frozenThrone.Unit?
+        .SetName("Frozen Throne (Ruptured)")
+        .SetOwner(Player(PLAYER_NEUTRAL_PASSIVE))
+        .SetInvulnerable(true);
 
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         DisplayTextToPlayer(player, 0, 0,
-          "\n|cffffcc00CAPITAL DAMAGED|r\nThe Frozen Throne, once thought to be an indomitable bastion of death, has been ruptured. The powers of the Lich King recede within, retreating desperately to protect what remains of Icecrown Citadel.");
+          "\n|cffffcc00CAPITAL DAMAGED|r\nThe Frozen Throne, once thought to be an indomitable bastion of death, has been ruptured. Ner'zhul's consciousness recedes within, retreating desperately to protect what remains of Icecrown Citadel.");
 
       _state = FrozenThroneState.Fractured;
     }
@@ -79,8 +88,8 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
 
     private static void OnFrozenThroneChangeOwner()
     {
-      Fracture();
       GetTriggeringTrigger().Destroy();
+      Fracture();
     }
   }
 

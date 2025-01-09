@@ -1,10 +1,8 @@
 ﻿using System.Collections.Generic;
 using MacroTools;
 using MacroTools.ArtifactSystem;
-using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Blizzard;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
@@ -80,13 +78,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
       TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3015, 20762)));
       TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3643, 22588)));
       TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3638, 23374)));
-      CreateTrigger()
-        .RegisterUnitEvent(TheFrozenThrone.Unit, EVENT_UNIT_CHANGE_OWNER)
-        .AddAction(() =>
-      {
-        if (TheFrozenThrone.Unit.OwningPlayer() != Player(bj_PLAYER_NEUTRAL_VICTIM))
-          TheFrozenThrone.Unit.SetOwner(Player(bj_PLAYER_NEUTRAL_VICTIM));
-      });
       CapitalManager.Register(Utgarde);
     }
   }

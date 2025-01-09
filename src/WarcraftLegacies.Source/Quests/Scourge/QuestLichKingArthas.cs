@@ -21,13 +21,14 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestLichKingArthas"/> class.
     /// </summary>
-    public QuestLichKingArthas(unit utgardeKeep, Artifact helmOfDomination, LegendaryHero arthas) : base("The Ascension",
+    public QuestLichKingArthas(unit utgardeKeep, Artifact helmOfDomination, LegendaryHero arthas, Capital theFrozenThrone) : base("The Ascension",
       "From within the depths of the Frozen Throne, the Lich King Ner'zhul cries out for his champion. Release the Helm of Domination from its confines and merge its power with that of the Scourge's greatest Death Knight.",
       @"ReplaceableTextures\CommandButtons\BTNRevenant.blp")
     {
       _utgardeKeep = utgardeKeep;
       _helmOfDomination = helmOfDomination;
       _arthas = arthas;
+      AddObjective(new ObjectiveControlCapital(theFrozenThrone, false));
       AddObjective(new ObjectiveControlLegend(arthas, false));
       AddObjective(new ObjectiveLegendLevel(arthas, 15));
       AddObjective(new ObjectiveResearch(UPGRADE_R07X_MAKE_ARTHAS_THE_LICH_KING_SCOURGE, UNIT_U000_FROZEN_THRONE_SCOURGE_MAIN));

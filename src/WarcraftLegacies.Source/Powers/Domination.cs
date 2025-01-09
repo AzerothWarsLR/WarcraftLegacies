@@ -1,10 +1,16 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 
 namespace WarcraftLegacies.Source.Powers
 {
+  /// <summary>
+  /// Allows the holder to train and control mindless Undead as long as one of their Lich King units holds the
+  /// Helm of Domination.
+  /// </summary>
   public sealed class Domination : Power
   {
     private readonly List<player> _playersWithPower = new();
@@ -18,6 +24,11 @@ namespace WarcraftLegacies.Source.Powers
 
     /// <summary>The Power is only active while this Artifact is held by the player.</summary>
     public required Artifact DependentArtifact { get; init; }
+    
+    /// <summary>
+    /// The Power is only active while <see cref="DependentArtifact"/> is held by one of these.
+    /// </summary>
+    public required List<Legend> ValidHolders { get; init; }
 
     public Domination() => Name = "Domination";
 
@@ -29,7 +40,7 @@ namespace WarcraftLegacies.Source.Powers
         _isActive = value;
         var prefix = IsActive ? "" : "|cffc0c0c0";
         Description =
-          $"{prefix}You can train and control Ghouls, Abominations, Frost Wyrms, and Crypt Fiends. Only active while the Lich King holds the Helm of Domination.";
+          $"{prefix}You can train and control Ghouls, Abominations, Frost Wyrms, and Crypt Fiends. Only active while Ner'zhul or Arthas holds the Helm of Domination.";
         var researchLevel = _isActive ? 1 : 0;
         foreach (var player in _playersWithPower)
         {
@@ -65,8 +76,12 @@ namespace WarcraftLegacies.Source.Powers
 
     private void OnArtifactOwnerChanged(object? sender, Artifact artifact) => RefreshIsActive();
 
-    private void RefreshIsActive() =>
-      IsActive = DependentArtifact.OwningPlayer != null && _playersWithPower.Contains(DependentArtifact.OwningPlayer);
+    private void RefreshIsActive()
+    {
+      IsActive = DependentArtifact.OwningPlayer != null 
+                 && _playersWithPower.Contains(DependentArtifact.OwningPlayer)
+                 && ValidHolders.Select(x => x.Unit).Contains(DependentArtifact.OwningUnit);
+    }
 
     private void ChangeControlOfUndead(player oldOwner, player newOwner)
     {
