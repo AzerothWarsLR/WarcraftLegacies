@@ -9,6 +9,9 @@ using WarcraftLegacies.Source.Quests.Quelthalas;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
+using WarcraftLegacies.Source.Powers;
+using MacroTools.Powers;
+using MacroTools.LegendSystem;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -58,7 +61,29 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       RegisterQuests();
       RegisterResearches();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
+      RegisterPowers();
     }
+    private void RegisterPowers()
+    {
+      var fontsOfPowerList = new List<Capital>
+{
+    _allLegendSetup.Quelthalas.Sunwell,
+    _allLegendSetup.FelHorde.BlackTemple,
+    _allLegendSetup.Druids.Nordrassil,
+};
+
+
+      AddPower(new FontOfPower(fontsOfPowerList)
+      {
+        IconName = "FullVial",
+        Name = "Font of Power",
+        Effect = @"Abilities\Spells\Human\ManaShield\ManaShieldCaster.mdl",
+        ResearchId = UPGRADE_R00K_FONT_OF_POWER_IS_ACTIVE_POWER
+      });
+    }
+
+
+
 
     private void RegisterObjectLimits()
     {
