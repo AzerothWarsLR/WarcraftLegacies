@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MacroTools.Commands;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
@@ -14,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
   public sealed class QuestFeathermoon : QuestData
   {
     private readonly List<unit> _rescueUnits;
-    private readonly Capital _feathermoon; // Reference to the capital Feathermoon unit
+    private readonly Capital _feathermoon; 
 
     public QuestFeathermoon(Rectangle questRect, Capital feathermoon) : base("Shores of Feathermoon",
       "Feathermoon Stronghold will undoubtedly fall to the assault of the Old gods, we will need to restore it.",
@@ -24,6 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       _feathermoon = feathermoon;
       AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in Feathermoon", 3));
       AddObjective(new ObjectiveControlPoint(UNIT_N05U_FEATHERMOON_STRONGHOLD, 900));
+      AddObjective(new ObjectiveControlCapital(feathermoon, false));
       ResearchId = UPGRADE_R06M_QUEST_COMPLETED_SHORES_OF_FEATHERMOON;
 
       // Prepare units for rescue excluding the capital
