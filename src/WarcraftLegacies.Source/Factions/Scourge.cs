@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools;
-using MacroTools.ArtifactSystem;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
-using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
@@ -13,6 +10,7 @@ using MacroTools.Powers;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Scourge;
 using WarcraftLegacies.Source.FactionMechanics.Scourge.Blight;
+using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests.Scourge;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
@@ -93,7 +91,6 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
 
     private void RegisterQuests()
     {
-      QuestDefeatFrozenThrone questDefeatFrozenThrone = new(this, _allLegendSetup.Scourge.TheFrozenThrone, _artifactSetup.HelmOfDomination, _allLegendSetup.Scourge.Arthas);
       QuestSpiderWar questSpiderWar = new(Regions.Ice_Crown);
       QuestEnKilahUnlock questEnKilahUnlock = new(Regions.EnKilahUnlock);
       QuestDrakUnlock questDrakUnlock = new(Regions.DrakUnlock, _allLegendSetup.Scourge.Kelthuzad);
@@ -109,7 +106,6 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       
       var questKelthuzadLich = AddQuest(new QuestKelthuzadLich(_allLegendSetup.Quelthalas.Sunwell, _allLegendSetup.Scourge.Kelthuzad));
       AddQuest(new QuestKelthuzadDies(questKelthuzadLich, _allLegendSetup.Scourge.Kelthuzad));
-      AddQuest(questDefeatFrozenThrone);
       AddQuest(questSpiderWar);
       StartingQuest = questSpiderWar;
       AddQuest(questDrakUnlock);
@@ -122,8 +118,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
 
     private void RegisterPowers()
     {
-      //Powers
-      var visionPower = new RegionVisionPower("All-Seeing",
+      var allSeeing = new RegionVisionPower("All-Seeing",
         "Grants permanent vision over Northrend.",
         "Charm", new[]
         {
@@ -138,7 +133,24 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
           Regions.Borean_Tundra,
           Regions.IcecrownShipyard
         });
-      AddPower(visionPower);
+      AddPower(allSeeing);
+
+      var domination = new Domination
+      {
+        ResearchId = UPGRADE_R008_QUEST_COMPLETED_FROM_THE_RUINS_REBORN,
+        MindlessUndeadUnitTypes = new List<int>
+        {
+          UNIT_UGHO_GHOUL_SCOURGE,
+          UNIT_UABO_ABOMINATION_SCOURGE,
+          UNIT_UFRO_FROST_WYRM_SCOURGE,
+          UNIT_UCRM_BURROWED_CRYPT_FIEND_RED,
+          UNIT_UCRY_CRYPT_FIEND_SCOURGE
+        },
+        DependentArtifact = _artifactSetup.HelmOfDomination,
+        IconName = "Revenant"
+      };
+      
+      AddPower(domination);
     }
 
     private void RegisterDialogue()
@@ -354,23 +366,18 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
             new ObjectiveLegendMeetsLegend(_allLegendSetup.Scourge.Arthas, _allLegendSetup.Legion.Tichondrius)
           }));
     }
-      private void RegisterLordaeronRelatedQuests(Faction lordaeron)
+
+    private void RegisterLordaeronRelatedQuests(Faction lordaeron)
     {
-      Capital stratholme = _allLegendSetup.Lordaeron.Stratholme;
-      Capital frozenThrone = _allLegendSetup.Scourge?.TheFrozenThrone;
-      LegendaryHero arthas = _allLegendSetup.Lordaeron.Arthas;
-
-
-      // Initialize and add QuestDestroyStratholme with all required parameters
+      var stratholme = _allLegendSetup.Lordaeron.Stratholme;
+      var frozenThrone = _allLegendSetup.Scourge?.TheFrozenThrone;
+      var arthas = _allLegendSetup.Lordaeron.Arthas;
+      
       QuestDestroyStratholme questDestroyStratholme = new(lordaeron, stratholme, frozenThrone, arthas);
       AddQuest(questDestroyStratholme);
-
-      // Add other Lordaeron quests
+      
       AddQuest(new QuestCultoftheDamned(lordaeron, _allLegendSetup.Scourge.Rivendare));
     }
-
-
-
 
     private void RegisterLordaeronLegionRelatedQuests(Lordaeron lordaeron, Legion legion)
     {
