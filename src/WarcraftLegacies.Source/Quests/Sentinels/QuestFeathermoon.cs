@@ -13,14 +13,12 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
   public sealed class QuestFeathermoon : QuestData
   {
     private readonly List<unit> _rescueUnits;
-    private readonly Capital _feathermoon; 
 
     public QuestFeathermoon(Rectangle questRect, Capital feathermoon) : base("Shores of Feathermoon",
       "Feathermoon Stronghold will undoubtedly fall to the assault of the Old gods, we will need to restore it.",
       @"ReplaceableTextures\CommandButtons\BTNBearDen.blp")
     {
-     
-      _feathermoon = feathermoon;
+
       AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in Feathermoon", 3));
       AddObjective(new ObjectiveControlPoint(UNIT_N05U_FEATHERMOON_STRONGHOLD, 900));
       AddObjective(new ObjectiveControlCapital(feathermoon, false));
@@ -33,16 +31,12 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      // Include the capital unit in the rescue group
-      _rescueUnits.Add(_feathermoon.Unit);
       completingFaction.Player.RescueGroup(_rescueUnits);
     }
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      // Include the capital unit in the rescue group
-      _rescueUnits.Add(_feathermoon.Unit);
       var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
         ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
         : completingFaction.Player;
