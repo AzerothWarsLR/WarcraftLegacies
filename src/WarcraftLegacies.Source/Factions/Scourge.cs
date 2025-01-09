@@ -71,11 +71,11 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       RegisterQuests();
       RegisterPowers();
       RegisterDialogue();
-      RegisterHelmOfDominationLogic();
       BlightSystem.Setup(this);
       BlightSetup.Setup(_preplacedUnitSystem);
       SacrificeAcolyte.Setup();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
+      TheFrozenThrone.Setup(this, _allLegendSetup.Scourge.TheFrozenThrone);
     }
 
     private void RegisterObjectLimits()
@@ -101,7 +101,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       QuestLichKingArthas questLichKingArthas =
         new(_preplacedUnitSystem.GetUnit(UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER),
           _artifactSetup.HelmOfDomination,
-          _allLegendSetup.Scourge.Arthas, _allLegendSetup.Scourge.TheFrozenThrone);
+          _allLegendSetup.Scourge.Arthas);
       QuestSlumberingKing questSlumberingKing = new();
       
       var questKelthuzadLich = AddQuest(new QuestKelthuzadLich(_allLegendSetup.Quelthalas.Sunwell, _allLegendSetup.Scourge.Kelthuzad));
@@ -195,11 +195,6 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
               EligibleFactions = new List<Faction> { this }
             }
           }));
-    }
-
-    private void RegisterHelmOfDominationLogic()
-    {
-      HelmOfDominationDropsWhenScourgeLeaves.Setup(this, _artifactSetup.HelmOfDomination, _allLegendSetup.Scourge.TheFrozenThrone);
     }
     
     private void RegisterDalaranDialogue(Dalaran dalaran)

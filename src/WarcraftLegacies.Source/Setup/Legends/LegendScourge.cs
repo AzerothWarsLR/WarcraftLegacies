@@ -63,10 +63,9 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       TheFrozenThrone = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(FourCC("u000")),
-        DeathMessage =
-          "The great Lich King has been destroyed. With no central mind to command them, the forces of the Undead have gone rogue.",
-        Essential = true
+        Unit = preplacedUnitSystem.GetUnit(UNIT_U000_FROZEN_THRONE_SCOURGE_MAIN),
+        Essential = true,
+        Capturable = true
       };
     }
       
