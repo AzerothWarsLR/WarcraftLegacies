@@ -20,7 +20,6 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       _arthas = arthas;
 
       AddObjective(new ObjectiveCapitalDead(stratholme));
-      AddObjective(new ObjectiveControlCapital(frozenThrone, true));
       var lineOfSuccession = lordaeron.GetQuestByType<QuestKingArthas>();
       AddObjective(new ObjectiveFactionQuestNotComplete(lineOfSuccession, lordaeron));
       ResearchId = UPGRADE_R01K_QUEST_COMPLETED_THE_CULLING;
