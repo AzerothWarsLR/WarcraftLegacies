@@ -17,6 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     private readonly unit _utgardeKeep;
     private readonly Artifact _helmOfDomination;
     private readonly LegendaryHero _arthas;
+    private readonly Capital _theFrozenThrone;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestLichKingArthas"/> class.
@@ -28,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       _utgardeKeep = utgardeKeep;
       _helmOfDomination = helmOfDomination;
       _arthas = arthas;
-      AddObjective(new ObjectiveControlCapital(theFrozenThrone, false));
+      _theFrozenThrone = theFrozenThrone;
       AddObjective(new ObjectiveControlLegend(arthas, false));
       AddObjective(new ObjectiveLegendLevel(arthas, 15));
       AddObjective(new ObjectiveResearch(UPGRADE_R07X_MAKE_ARTHAS_THE_LICH_KING_SCOURGE, UNIT_U000_FROZEN_THRONE_SCOURGE_MAIN));
@@ -50,6 +51,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       PlayThematicMusic(@"Sound\Music\mp3Music\LichKingTheme.mp3");
 
       TheFrozenThrone.Vacate();
+      _theFrozenThrone.Unit?.SetOwner(completingFaction.Player!);
 
       _arthas.UnitType = UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE;
       _arthas.PermaDies = true;
@@ -60,7 +62,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         .SetManaPercent(100)
         .AddItemSafe(_helmOfDomination.Item);
 
-      _utgardeKeep.Rescue(completingFaction.Player);
+      _utgardeKeep.Rescue(completingFaction.Player!);
     }
   }
 }
