@@ -40,6 +40,9 @@ namespace WarcraftLegacies.Source.Powers
     }
 
     /// <inheritdoc />
+    public override void OnAdd(Faction whichFaction) => whichFaction.ModObjectLimit(ResearchId, Faction.UNLIMITED);
+
+    /// <inheritdoc />
     public override void OnAdd(player whichPlayer)
     {
       _playersWithPower.Add(whichPlayer);
@@ -50,6 +53,9 @@ namespace WarcraftLegacies.Source.Powers
       RefreshIsActive();
     }
 
+    /// <inheritdoc />
+    public override void OnRemove(Faction whichFaction) => whichFaction.ModObjectLimit(ResearchId, -Faction.UNLIMITED);
+    
     /// <inheritdoc />
     public override void OnRemove(player whichPlayer)
     {
