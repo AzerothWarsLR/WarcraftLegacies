@@ -75,7 +75,7 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
 
       AddPower(new FontOfPower(fontsOfPowerList)
       {
-        IconName = "PriestAdept",
+        IconName = "FullVial",
         Name = "Font of Power",
         Effect = @"Abilities\Spells\Human\ManaShield\ManaShieldCaster.mdl",
         ResearchId = UPGRADE_R00K_FONT_OF_POWER_IS_ACTIVE_POWER
