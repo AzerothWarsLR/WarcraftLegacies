@@ -197,13 +197,13 @@
     {
       "Id": 1667330657,
       "Type": 3,
-      "Value": "human"
+      "Value": "undead"
     },
     {
       "Level": 1,
       "Id": 1851880033,
       "Type": 2,
-      "Value": 400
+      "Value": 300
     },
     {
       "Level": 2,
@@ -228,9 +228,15 @@
       "Value": 0
     },
     {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "invulnerable,structure,vulnerable"
+    },
+    {
       "Id": 1902473825,
       "Type": 3,
-      "Value": "R04H"
+      "Value": "ZB85"
     }
   ]
 }
