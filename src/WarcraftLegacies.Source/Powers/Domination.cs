@@ -45,10 +45,8 @@ namespace WarcraftLegacies.Source.Powers
         foreach (var player in _playersWithPower)
         {
           SetPlayerTechResearched(player, ResearchId, researchLevel);
-          if (IsActive)
-            ChangeControlOfUndead(Player(PLAYER_NEUTRAL_AGGRESSIVE), player);
-          else 
-            ChangeControlOfUndead(player, Player(PLAYER_NEUTRAL_AGGRESSIVE));
+          if (!IsActive)
+            KillUndead(player);
         }
       }
     }
@@ -71,7 +69,6 @@ namespace WarcraftLegacies.Source.Powers
     public override void OnRemove(player whichPlayer)
     {
       _playersWithPower.Remove(whichPlayer);
-      ChangeControlOfUndead(whichPlayer, Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     private void OnArtifactOwnerChanged(object? sender, Artifact artifact) => RefreshIsActive();
@@ -83,15 +80,15 @@ namespace WarcraftLegacies.Source.Powers
                  && ValidHolders.Select(x => x.Unit).Contains(DependentArtifact.OwningUnit);
     }
 
-    private void ChangeControlOfUndead(player oldOwner, player newOwner)
+    private void KillUndead(player whichPlayer)
     {
       var playerUnits = CreateGroup()
-        .EnumUnitsOfPlayer(oldOwner)
+        .EnumUnitsOfPlayer(whichPlayer)
         .EmptyToList();
 
       foreach (var unit in playerUnits)
         if (MindlessUndeadUnitTypes.Contains(unit.GetTypeId()))
-          unit.SetOwner(newOwner);
+          unit.Kill();
     }
   }
 }
