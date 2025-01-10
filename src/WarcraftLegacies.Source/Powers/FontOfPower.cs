@@ -84,17 +84,33 @@ namespace WarcraftLegacies.Source.Powers
 
     private void OnDamage()
     {
-      if (!IsActive) return;
+      if (!IsActive)
+      {
+        Console.WriteLine("Font of Power is inactive.");
+        return;
+      }
+
+      Console.WriteLine("Font of Power is active.");
 
       var damagedUnit = GetEventDamageSource();
       var extraDamage = (float)(GetEventDamage() * 0.1);
       UnitDamageTarget(damagedUnit, GetTriggerUnit(), extraDamage, false, false, ATTACK_TYPE_NORMAL, DAMAGE_TYPE_MAGIC, WEAPON_TYPE_WHOKNOWS);
 
+
+      Console.WriteLine($"Extra damage dealt by {GetTriggerUnit().GetName()}: {extraDamage}");
     }
+
+
 
     private void OnSpellCast()
     {
-      if (!IsActive) return;
+      if (!IsActive)
+      {
+        Console.WriteLine("Font of Power is inactive.");
+        return;
+      }
+
+      Console.WriteLine("Font of Power is active.");
 
       var castingUnit = GetTriggerUnit();
       if (castingUnit == null) return; // Check if castingUnit is null
@@ -106,8 +122,12 @@ namespace WarcraftLegacies.Source.Powers
       SetUnitState(castingUnit, UNIT_STATE_MANA, GetUnitState(castingUnit, UNIT_STATE_MANA) + manaRefund);
       AddSpecialEffectTarget(Effect, castingUnit, "origin")
           .SetLifespan(1);
-
+      // Debugging statement for mana refund
+      Console.WriteLine($"Mana refunded to {castingUnit.GetName()}: {manaRefund}");
+        
     }
+
+
 
     private void AddObjective(Objective objective)
     {
@@ -125,21 +145,25 @@ namespace WarcraftLegacies.Source.Powers
 
     private void RefreshIsActive()
     {
-      var wasActive = _isActive;
-      IsActive = _objectives.Any(x => x.Progress == QuestProgress.Complete);
+      var wasActive = _isActive;  
+      IsActive = _objectives.Any(x => x.Progress == QuestProgress.Complete); 
 
+      // Debugging statements for state changes
       if (wasActive && !IsActive)
       {
-        // Font of Power deactivated
+        Console.WriteLine("Font of Power deactivated because no objectives are complete.");
       }
       else if (!wasActive && IsActive)
       {
         var completedObjective = _objectives.FirstOrDefault(x => x.Progress == QuestProgress.Complete);
         if (completedObjective != null)
         {
-          // Font of Power activated
+          Console.WriteLine($"Font of Power activated because the objective '{completedObjective.Description}' was completed.");
         }
       }
     }
+
   }
 }
+
+
