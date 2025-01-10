@@ -36,13 +36,12 @@ namespace WarcraftLegacies.Source.Factions
       ControlPointDefenderUnitTypeId = UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF;
       IntroText = @"You are playing as the honorable |cffff0000Frostwolf Clan|r.
 
-You begin in Durotan, make your way south to establish your bases, the Echo Isles and Thunder Bluff.
+You begin in Ashenvale, make your way south to establish your bases, the Echo Isles and Thunder Bluff.
 
 Your allies will be coming south to help you defend against the Old Gods, do not engage them alone.";
       GoldMines = new List<unit>
       {
-        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8123, -2514)),
-        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-15828, -3120))
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9729, 2426)),
       };
       Nicknames = new List<string>
       {

@@ -40,11 +40,6 @@
       "Value": 1
     },
     {
-      "Id": 1818520949,
-      "Type": 3,
-      "Value": "war3mapImported\\Purple_Full_plate_revenant.mdl"
-    },
-    {
       "Id": 1868786037,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNPurpleFullPlate.blp"
@@ -58,6 +53,21 @@
       "Id": 1831952757,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Purple_Full_plate_revenant.mdl"
+    },
+    {
+      "Id": 1919905909,
+      "Type": 3,
+      "Value": "war3mapImported\\Purple_Full_plate_revenant.mdl"
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": "AESS,A07C,ACrk,AEMF,Aiun"
     }
   ]
 }

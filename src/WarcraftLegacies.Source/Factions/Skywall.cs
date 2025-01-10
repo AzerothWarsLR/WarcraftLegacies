@@ -78,7 +78,7 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
       };
       invasionParameters.InvasionArmySummonParameters = new List<InvasionArmySummonParameter>
       {
-        new(1, UNIT_LS05_SHAPER_ELEMENTAL),
+        new(1, UNIT_LS05_SHAPER_ELEMENTAL_WORKER),
         new(2, UNIT_N0CG_CORE_HOUND_RAGNAROS),
         new(2, UNIT_VSW0_FIRE_ELEMENTAL_ELEMENTALS),
       };
@@ -122,8 +122,8 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
 
       var stormSurge = new Stomp(ABILITY_AESS_STORM_SURGE_ARMORED_MISTRAL)
       {
-        Radius = 300,
-        DamageBase = 60,
+        Radius = 200,
+        DamageBase = 50,
         DurationBase = 3,
         StunAbilityId = ABILITY_AEPU_PURGE_SHOCKING_BLADE,
         StunOrderId = OrderId("purge"),

@@ -59,8 +59,8 @@
       "Flags": 1,
       "Name": "Frostwolf Clan",
       "StartPosition": {
-        "X": -8512,
-        "Y": -2880
+        "X": -10048,
+        "Y": 2048
       },
       "AllyLowPriorityFlags": 4456450,
       "AllyHighPriorityFlags": 332032,
@@ -197,8 +197,8 @@
       "Flags": 1,
       "Name": "Black Empire",
       "StartPosition": {
-        "X": -23872,
-        "Y": -8960
+        "X": -28032,
+        "Y": -9216
       },
       "AllyHighPriorityFlags": 32768
     },

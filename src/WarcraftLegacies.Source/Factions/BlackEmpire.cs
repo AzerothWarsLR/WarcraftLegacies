@@ -57,7 +57,7 @@ Be sure to train Forsaken Ones, they are powerful units";
 
     private void RegisterQuests()
     {
-      var questGorma = AddQuest(new QuestMawofGorma(Regions.BlackEmpireOutpost1));
+      var questGorma = AddQuest(new QuestTwilightlanding(Regions.BlackEmpireOutpost1));
       StartingQuest = questGorma;
 
       AddQuest(new QuestWakingCity(questGorma, _allLegendSetup, Regions.Nyalotha));
@@ -89,7 +89,7 @@ Be sure to train Forsaken Ones, they are powerful units";
 
       PassiveAbilityManager.Register(new InfiniteInfluence(UNIT_U01Z_OLD_GOD_NZOTH)
       {
-        Radius = 700
+        Radius = 800
       });
 
       PassiveAbilityManager.Register(new NoTargetSpellOnCast(UNIT_E01D_HARBINGER_OF_NY_ALOTHA_YOGG, ABILITY_AXK2_VOID_RIFT_ICON_XKORR)
@@ -108,10 +108,10 @@ Be sure to train Forsaken Ones, they are powerful units";
 
       var poisonYor = new Stomp(ABILITY_ABNT_VOID_TOXIN_BLACK_EMPIRE)
       {
-        Radius = 600,
-        DamageBase = 20,
-        DamageLevel = 70,
-        DurationBase = 6,
+        Radius = 500,
+        DamageBase = 80,
+        DamageLevel = 40,
+        DurationBase = 3,
         DurationLevel = 0,
         StunAbilityId = ABILITY_ABSS_SHADOW_STRIKE_VOID_TOXIN_REAL,
         StunOrderId = OrderId("shadowstrike"),

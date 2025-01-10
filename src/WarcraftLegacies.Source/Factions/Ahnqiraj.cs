@@ -180,7 +180,7 @@ You do not possess boats, but your workers can burrow through water, use them to
       
       PassiveAbilityManager.Register(new InfiniteInfluence(UNIT_U00R_OLD_GOD_AHN_QIRAJ)
       {
-        Radius = 700
+        Radius = 800
       });
       
       SpellSystem.Register(new SpawnTentacle(ABILITY_ZBST_SPAWN_TENTACLE_C_THUN)
@@ -188,24 +188,24 @@ You do not possess boats, but your workers can burrow through water, use them to
         HitPoints = new LeveledAbilityField<int>
         {
           Base = 500,
-          PerLevel = 500
+          PerLevel = 250
         },
         AttackDamageBase = new LeveledAbilityField<int>
         {
-          Base = 25,
-          PerLevel = 25
+          Base = 20,
+          PerLevel = 20
         },
         UnitTypeId = UNIT_ZBTH_TENTACLE_SPAWN_TENTACLE_C_THUN,
         Duration = new LeveledAbilityField<float>
         {
-          Base = 60
+          Base = 30
         }
       });
       
       PassiveAbilityManager.Register(new MassiveAttackAbility(UNIT_ZBTH_TENTACLE_SPAWN_TENTACLE_C_THUN)
       {
         AttackDamagePercentage = 1,
-        Distance = 400,
+        Distance = 200,
         IgnoreAttackTarget = true
       });
     }
