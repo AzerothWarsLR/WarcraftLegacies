@@ -23,7 +23,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     }
 
     /// <inheritdoc/>
-    internal override void OnAdd(FactionSystem.Faction faction)
+    public override void OnAdd(FactionSystem.Faction faction)
     {
       Progress = QuestProgress.Complete;
       CreateTrigger()

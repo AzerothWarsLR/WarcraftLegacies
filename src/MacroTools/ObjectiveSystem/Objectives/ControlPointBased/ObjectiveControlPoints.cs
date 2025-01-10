@@ -39,7 +39,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
     }
 
     /// <inheritdoc/>
-    internal override void OnAdd(Faction whichFaction)
+    public override void OnAdd(Faction whichFaction)
     {
       ControlPointCount = 0;
       foreach (var controlPoint in _progressByControlPoint.Keys.ToArray())

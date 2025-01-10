@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using System;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 
@@ -10,6 +11,21 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
 
     private static Capital _frozenThrone = null!;
 
+    /// <summary>
+    /// Invoked when the Frozen Throne's state has changed.
+    /// </summary>
+    public static event EventHandler<FrozenThroneState>? FrozenThroneStateChanged;
+
+    private static FrozenThroneState State
+    {
+      get => _state;
+      set
+      {
+        _state = value;
+        FrozenThroneStateChanged?.Invoke(null, value);
+      }
+    }
+    
     public static void Setup(Factions.Scourge scourge, Capital frozenThrone)
     {
       _frozenThrone = frozenThrone;
@@ -38,12 +54,12 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
     /// </summary>
     public static void Vacate()
     {
-      if (_state == FrozenThroneState.Empty)
+      if (State == FrozenThroneState.Empty)
         return;
 
       RemoveAbilities();
       _frozenThrone.Unit?.SetName("Frozen Throne (Empty)");
-      _state = FrozenThroneState.Empty;
+      State = FrozenThroneState.Empty;
       _frozenThrone.Capturable = false;
       _frozenThrone.DeathMessage =
         "Northrend quakes as Icecrown Citadel topples to the glacier below, bringing a final end to Ner'zhul's fortress and prison of ice.";
@@ -60,7 +76,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
     /// </summary>
     private static void Fracture()
     {
-      if (_state != FrozenThroneState.Alive)
+      if (State != FrozenThroneState.Alive)
         return;
 
       RemoveAbilities();
@@ -73,7 +89,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
         DisplayTextToPlayer(player, 0, 0,
           "\n|cffffcc00CAPITAL DAMAGED|r\nThe Frozen Throne, once thought to be an indomitable bastion of death, has been ruptured. Ner'zhul's consciousness recedes within, retreating desperately to protect what remains of Icecrown Citadel.");
 
-      _state = FrozenThroneState.Fractured;
+      State = FrozenThroneState.Ruptured;
     }
 
     private static void RemoveAbilities()
@@ -103,7 +119,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
     /// <summary>
     /// The Throne has been severely damaged and can no longer function.
     /// </summary>
-    Fractured,
+    Ruptured,
 
     /// <summary>
     /// Ner'zhul has been removed from the Throne.

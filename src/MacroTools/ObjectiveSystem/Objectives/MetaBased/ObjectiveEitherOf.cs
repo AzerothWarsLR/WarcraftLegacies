@@ -18,7 +18,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.MetaBased
       Position = ObjectiveA.Position;
     }
 
-    internal override void OnAdd(FactionSystem.Faction whichFaction)
+    public override void OnAdd(FactionSystem.Faction whichFaction)
     {
       ObjectiveA.OnAdd(whichFaction);
       ObjectiveB.OnAdd(whichFaction);

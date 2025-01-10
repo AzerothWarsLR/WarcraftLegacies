@@ -24,7 +24,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       targetArtifact.PickedUp += OnPickedUp;
     }
 
-    internal override void OnAdd(FactionSystem.Faction whichFaction)
+    public override void OnAdd(FactionSystem.Faction whichFaction)
     {
       if (_targetArtifact.OwningUnit != null && _targetArtifact.OwningUnit == _targetLegend.Unit) 
         Progress = QuestProgress.Complete;

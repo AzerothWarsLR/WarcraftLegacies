@@ -119,7 +119,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       QuestNewGuardian newGuardian = new(_artifactSetup.BookOfMedivh, _allLegendSetup.Dalaran.Jaina,
         _allLegendSetup.Dalaran.Dalaran);
       QuestAegwynn aegwynn = new(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Dalaran.Antonidas);
-      QuestTheNexus theNexus = new(_allLegendSetup.Dalaran, _allLegendSetup.Scourge.TheFrozenThrone, _allLegendSetup.Neutral.TheNexus);
+      QuestTheNexus theNexus = new(_allLegendSetup.Scourge.TheFrozenThrone, _allLegendSetup.Dalaran, _allLegendSetup.Neutral.TheNexus);
       QuestCrystalGolem crystalGolem = new(_allLegendSetup.Neutral.DraktharonKeep);
       QuestFallenGuardian fallenGuardian = new(_allLegendSetup.Neutral.Karazhan);
 

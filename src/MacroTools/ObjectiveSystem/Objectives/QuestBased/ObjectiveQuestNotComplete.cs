@@ -15,7 +15,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.QuestBased
     }
 
     /// <inheritdoc />
-    internal override void OnAdd(Faction faction) => faction.QuestProgressChanged += OnQuestProgressChanged;
+    public override void OnAdd(Faction faction) => faction.QuestProgressChanged += OnQuestProgressChanged;
 
     private void OnQuestProgressChanged(object? sender, FactionQuestProgressChangedEventArgs args)
     {

@@ -1,7 +1,10 @@
 ﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.FactionMechanics.Scourge;
+using WarcraftLegacies.Source.Objectives;
 using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Quests.Dalaran
@@ -10,14 +13,14 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
   {
     private readonly LegendaryHero _jaina;
 
-    public QuestTheNexus(LegendDalaran legendDalaran, Capital lichKing, Capital theNexus) : base("The Nexus",
-      "The Nexus is a tower of powerful arcane energy, Jaina could absord it to gain it's power",
+    public QuestTheNexus(Capital theFrozenThrone, LegendDalaran legendDalaran, Capital theNexus) : base("The Nexus",
+      "The Nexus is a tower of powerful arcane energy, Jaina could absorb it to gain it's power",
       @"ReplaceableTextures\CommandButtons\BTNBlueDragonNexus.blp")
     {
       _jaina = legendDalaran.Jaina;
       AddObjective(new ObjectiveChannelRect(Regions.JainaChannel, "The Nexus", legendDalaran.Jaina, 60, 270, Title));
       AddObjective(new ObjectiveControlLegend(legendDalaran.Jaina, true));
-      AddObjective(new ObjectiveCapitalDead(lichKing));
+      AddObjective(new ObjectiveEitherOf(new ObjectiveFrozenThroneState(FrozenThroneState.Ruptured), new ObjectiveCapitalDead(theFrozenThrone)));
       AddObjective(new ObjectiveCapitalDead(legendDalaran.Dalaran));
       AddObjective(new ObjectiveDontControlLegend(legendDalaran.Aegwynn));
       AddObjective(new ObjectiveControlCapital(theNexus, false));

@@ -36,7 +36,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       Position = _objectiveUnit.GetPosition();
     }
 
-    internal override void OnAdd(Faction faction)
+    public override void OnAdd(Faction faction)
     {
       if (!UnitAlive(_objectiveUnit))
         Progress = QuestProgress.Failed;

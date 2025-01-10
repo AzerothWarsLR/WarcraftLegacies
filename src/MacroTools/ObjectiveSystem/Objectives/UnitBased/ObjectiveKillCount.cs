@@ -30,7 +30,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     }
 
     /// <inheritdoc/>
-    internal override void OnAdd(Faction faction)
+    public override void OnAdd(Faction faction)
     {
       PlayerUnitEvents.Register(CustomPlayerUnitEvents.FactionUnitKills, OnKillUnit, faction.Id);
       CurrentCount = 0;
