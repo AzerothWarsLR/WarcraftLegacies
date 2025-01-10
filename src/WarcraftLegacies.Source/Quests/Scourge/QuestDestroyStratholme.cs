@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     private readonly Faction _lordaeron;
     private readonly LegendaryHero _arthas;
 
-    public QuestDestroyStratholme(Faction lordaeron, Capital stratholme, Capital frozenThrone, LegendaryHero arthas) : base("The Culling",
+    public QuestDestroyStratholme(Faction lordaeron, Capital stratholme, LegendaryHero arthas) : base("The Culling",
       "When the city of Stratholme falls, Prince Arthas' despair will make him more susceptible to the power of the Lich King.",
       @"ReplaceableTextures\CommandButtons\BTNRuneblade.blp")
     {

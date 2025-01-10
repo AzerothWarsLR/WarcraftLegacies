@@ -399,7 +399,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       var frozenThrone = _allLegendSetup.Scourge?.TheFrozenThrone;
       var arthas = _allLegendSetup.Lordaeron.Arthas;
       
-      QuestDestroyStratholme questDestroyStratholme = new(lordaeron, stratholme, frozenThrone, arthas);
+      QuestDestroyStratholme questDestroyStratholme = new(lordaeron, stratholme, arthas);
       AddQuest(questDestroyStratholme);
       
       AddQuest(new QuestCultoftheDamned(lordaeron, _allLegendSetup.Scourge.Rivendare));
