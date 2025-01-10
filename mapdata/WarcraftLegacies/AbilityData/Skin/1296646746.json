@@ -104,7 +104,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Takes control of 14 random enemy units in the target area. After 30 seconds, each unit controlled this way dies."
+      "Value": "Takes control of up to 14 non-summoned enemy units in the target area. Controlled units die after 30 seconds"
     },
     {
       "Level": 2,
