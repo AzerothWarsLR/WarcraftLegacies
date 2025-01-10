@@ -202,6 +202,30 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
               EligibleFactions = new List<Faction> { this }
             }
           }));
+
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new DialogueSequence(
+          new Dialogue(
+            soundFile: @"Sound\Dialogue\UndeadExpCamp\Undead01x\L01Arthas43.flac",
+            caption: "Aarrghh... Not again!",
+            speaker: "Arthas Menethil"),
+          new Dialogue(
+            soundFile: @"Sound\Dialogue\UndeadExpCamp\Undead01x\L01LichKing44.flac",
+            caption:
+            "It is I, the Lich King. Danger draws near the Frozen Throne! You must return to Northrend immediately! Obey!",
+            speaker: "The Lich King")),
+        new Faction[] { this }, 
+        new Objective[]
+        {
+          new ObjectiveDontControlCapital(_allLegendSetup.Scourge.TheFrozenThrone, false)
+          {
+            EligibleFactions = new List<Faction> { this }
+          },
+          new ObjectiveControlLegend(_allLegendSetup.Scourge.Arthas, false)
+          {
+            EligibleFactions = new List<Faction> { this }
+          }
+        }));
     }
     
     private void RegisterDalaranDialogue(Dalaran dalaran)

@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
         return;
 
       RemoveAbilities();
-      _frozenThrone.Unit?.SetName("Icecrown Citadel");
+      _frozenThrone.Unit?.SetName("Frozen Throne (Empty)");
       _state = FrozenThroneState.Empty;
       _frozenThrone.Capturable = false;
       _frozenThrone.DeathMessage =
