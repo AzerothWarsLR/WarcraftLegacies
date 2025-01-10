@@ -30,10 +30,11 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       _helmOfDomination = helmOfDomination;
       _arthas = arthas;
       _theFrozenThrone = theFrozenThrone;
-      AddObjective(new ObjectiveControlLegend(arthas, false));
-      AddObjective(new ObjectiveLegendLevel(arthas, 15));
-      AddObjective(new ObjectiveResearch(UPGRADE_R07X_MAKE_ARTHAS_THE_LICH_KING_SCOURGE, UNIT_U000_FROZEN_THRONE_SCOURGE_MAIN));
-      AddObjective(new ObjectiveLegendInRect(arthas, Regions.LichKing, "Icecrown Citadel"));
+      AddObjective(new ObjectiveLegendLevel(arthas, 15)
+      {
+        ResearchId = UPGRADE_ZB85_ARTHAS_MENETHIL_IS_LEVEL_15
+      });
+      AddObjective(new ObjectiveLegendCastSpellOnUnit(arthas, ABILITY_A0LR_ASCEND_ARTHAS, theFrozenThrone.Unit!));
       Global = true;
     }
 

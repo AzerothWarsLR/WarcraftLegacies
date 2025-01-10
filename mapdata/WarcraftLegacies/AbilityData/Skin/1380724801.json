@@ -121,6 +121,14 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Creates a summoned copy of all friendly units in the target area. Each summoned unit has 30% increased hit points and attack damage. Lasts 30 seconds."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
     }
   ]
 }
