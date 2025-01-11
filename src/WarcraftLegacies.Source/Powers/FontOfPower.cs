@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools;
 using MacroTools.Extensions;
@@ -84,20 +83,23 @@ namespace WarcraftLegacies.Source.Powers
 
     private void OnDamage()
     {
-      if (!IsActive) return;
+      if (!IsActive) 
+        return;
 
       var damagedUnit = GetEventDamageSource();
       var extraDamage = (float)(GetEventDamage() * 0.1);
-      UnitDamageTarget(damagedUnit, GetTriggerUnit(), extraDamage, false, false, ATTACK_TYPE_NORMAL, DAMAGE_TYPE_MAGIC, WEAPON_TYPE_WHOKNOWS);
-
+      UnitDamageTarget(damagedUnit, GetTriggerUnit(), extraDamage, false, false, ATTACK_TYPE_NORMAL, DAMAGE_TYPE_MAGIC,
+        WEAPON_TYPE_WHOKNOWS);
     }
 
     private void OnSpellCast()
     {
-      if (!IsActive) return;
+      if (!IsActive) 
+        return;
 
       var castingUnit = GetTriggerUnit();
-      if (castingUnit == null) return; // Check if castingUnit is null
+      if (castingUnit == null) 
+        return;
 
       var abilityId = GetSpellAbilityId();
       var abilityLevel = GetUnitAbilityLevel(castingUnit, abilityId);
@@ -106,7 +108,6 @@ namespace WarcraftLegacies.Source.Powers
       SetUnitState(castingUnit, UNIT_STATE_MANA, GetUnitState(castingUnit, UNIT_STATE_MANA) + manaRefund);
       AddSpecialEffectTarget(Effect, castingUnit, "origin")
           .SetLifespan(1);
-
     }
 
     private void AddObjective(Objective objective)
