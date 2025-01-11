@@ -48,7 +48,7 @@ namespace WarcraftLegacies.Source.Powers
     public override void OnAdd(player whichPlayer)
     {
       PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerDealsDamage, OnDamage, GetPlayerId(whichPlayer));
-      PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerCastsSpell, OnSpellCast, GetPlayerId(whichPlayer));
+      PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerSpellEffect, OnSpellCast, GetPlayerId(whichPlayer));
       _playersWithPower.Add(whichPlayer);
     }
 
@@ -67,7 +67,7 @@ namespace WarcraftLegacies.Source.Powers
     public override void OnRemove(player whichPlayer)
     {
       PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerDealsDamage, OnDamage, GetPlayerId(whichPlayer));
-      PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerCastsSpell, OnSpellCast, GetPlayerId(whichPlayer));
+      PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerSpellEffect, OnSpellCast, GetPlayerId(whichPlayer));
       _playersWithPower.Remove(whichPlayer);
       SetPlayerTechResearched(whichPlayer, ResearchId, 0);
     }
@@ -86,10 +86,7 @@ namespace WarcraftLegacies.Source.Powers
       if (!IsActive) 
         return;
 
-      var damagedUnit = GetEventDamageSource();
-      var extraDamage = (float)(GetEventDamage() * 0.1);
-      UnitDamageTarget(damagedUnit, GetTriggerUnit(), extraDamage, false, false, ATTACK_TYPE_NORMAL, DAMAGE_TYPE_MAGIC,
-        WEAPON_TYPE_WHOKNOWS);
+      BlzSetEventDamage(GetEventDamage() * 1.1f);
     }
 
     private void OnSpellCast()
@@ -103,8 +100,9 @@ namespace WarcraftLegacies.Source.Powers
 
       var abilityId = GetSpellAbilityId();
       var abilityLevel = GetUnitAbilityLevel(castingUnit, abilityId);
-      var manaCost = BlzGetUnitAbilityManaCost(castingUnit, abilityId, abilityLevel);
-      var manaRefund = (float)(manaCost * 0.15);
+      var manaCost = BlzGetUnitAbilityManaCost(castingUnit, abilityId, abilityLevel - 1);
+      var manaRefund = manaCost * 0.15f;
+      
       SetUnitState(castingUnit, UNIT_STATE_MANA, GetUnitState(castingUnit, UNIT_STATE_MANA) + manaRefund);
       AddSpecialEffectTarget(Effect, castingUnit, "origin")
           .SetLifespan(1);
@@ -124,23 +122,6 @@ namespace WarcraftLegacies.Source.Powers
 
     private void OnObjectiveProgressChanged(object? sender, Objective objective) => RefreshIsActive();
 
-    private void RefreshIsActive()
-    {
-      var wasActive = _isActive;
-      IsActive = _objectives.Any(x => x.Progress == QuestProgress.Complete);
-
-      if (wasActive && !IsActive)
-      {
-        // Font of Power deactivated
-      }
-      else if (!wasActive && IsActive)
-      {
-        var completedObjective = _objectives.FirstOrDefault(x => x.Progress == QuestProgress.Complete);
-        if (completedObjective != null)
-        {
-          // Font of Power activated
-        }
-      }
-    }
+    private void RefreshIsActive() => IsActive = _objectives.Any(x => x.Progress == QuestProgress.Complete);
   }
 }

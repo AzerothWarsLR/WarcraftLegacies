@@ -34,10 +34,11 @@ namespace MacroTools
     /// A unit owned by a specific <see cref="Faction"/> kills a unit.
     /// </summary>
     public static string FactionUnitKills => nameof(FactionUnitKills);
+
     /// <summary>
-    /// A unit owned by a specific player casts a spell with any unit they control.
+    /// A unit owned by a specific player casts any spell.
     /// </summary>
-    public static string PlayerCastsSpell => nameof(PlayerCastsSpell);
+    public static string PlayerSpellEffect => nameof(PlayerSpellEffect);
 
     static CustomPlayerUnitEvents()
     {
@@ -51,8 +52,8 @@ namespace MacroTools
         EVENT_PLAYER_UNIT_DEATH);
       PlayerUnitEvents.AddCustomEvent(FactionUnitKills, () => GetKillingUnit().OwningPlayer().GetFaction().Id,
         EVENT_PLAYER_UNIT_DEATH);
-      PlayerUnitEvents.AddCustomEvent(PlayerCastsSpell, () => GetPlayerId(GetOwningPlayer(GetTriggerUnit())),
-        EVENT_PLAYER_UNIT_SPELL_CAST);
+      PlayerUnitEvents.AddCustomEvent(PlayerSpellEffect, () => GetPlayerId(GetOwningPlayer(GetTriggerUnit())),
+        EVENT_PLAYER_UNIT_SPELL_EFFECT);
     }
   }
 }

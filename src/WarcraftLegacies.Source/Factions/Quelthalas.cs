@@ -10,7 +10,6 @@ using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 using WarcraftLegacies.Source.Powers;
-using MacroTools.Powers;
 using MacroTools.LegendSystem;
 
 namespace WarcraftLegacies.Source.Factions
