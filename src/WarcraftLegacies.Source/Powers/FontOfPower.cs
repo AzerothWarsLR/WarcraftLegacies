@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Powers
         Description = $"{prefix}All units deal 10% extra damage and regain 15% of the mana cost of abilities. Only active while your team controls a Font of Power.";
         var researchLevel = _isActive ? 1 : 0;
         foreach (var player in _playersWithPower)
-          SetPlayerTechResearched(player, ResearchId, researchLevel);
+          player.GetFaction()?.SetObjectLevel(ResearchId, researchLevel);
       }
     }
 
@@ -70,13 +70,13 @@ namespace WarcraftLegacies.Source.Powers
       PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerDealsDamage, OnDamage, GetPlayerId(whichPlayer));
       PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerSpellEffect, OnSpellCast, GetPlayerId(whichPlayer));
       _playersWithPower.Remove(whichPlayer);
-      SetPlayerTechResearched(whichPlayer, ResearchId, 0);
     }
 
     /// <inheritdoc />
     public override void OnRemove(Faction whichFaction)
     {
       whichFaction.ModObjectLimit(ResearchId, -Faction.UNLIMITED);
+      whichFaction.SetObjectLevel(ResearchId, 0);
       
       foreach (var objective in _objectives)
         RemoveObjective(objective);
