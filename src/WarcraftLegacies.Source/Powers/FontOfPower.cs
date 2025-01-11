@@ -55,6 +55,7 @@ namespace WarcraftLegacies.Source.Powers
     /// <inheritdoc />
     public override void OnAdd(Faction whichFaction)
     {
+      whichFaction.ModObjectLimit(ResearchId, Faction.UNLIMITED);
       foreach (var fontOfPower in _fontsOfPower)
         AddObjective(new ObjectiveControlCapital(fontOfPower, false)
         {
@@ -75,6 +76,8 @@ namespace WarcraftLegacies.Source.Powers
     /// <inheritdoc />
     public override void OnRemove(Faction whichFaction)
     {
+      whichFaction.ModObjectLimit(ResearchId, -Faction.UNLIMITED);
+      
       foreach (var objective in _objectives)
         RemoveObjective(objective);
 
