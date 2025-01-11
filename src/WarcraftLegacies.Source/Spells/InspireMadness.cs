@@ -43,7 +43,8 @@ namespace WarcraftLegacies.Source.Spells
     {
       return !IsUnitType(target, UNIT_TYPE_STRUCTURE) && !IsUnitType(target, UNIT_TYPE_ANCIENT) &&
              !IsUnitType(target, UNIT_TYPE_MECHANICAL) && !IsUnitType(target, UNIT_TYPE_RESISTANT) &&
-             !IsUnitType(target, UNIT_TYPE_HERO) && !IsUnitAlly(target, GetOwningPlayer(caster)) && UnitAlive(target);
+             !IsUnitType(target, UNIT_TYPE_HERO) && !IsUnitAlly(target, GetOwningPlayer(caster)) && UnitAlive(target) &&
+             !IsUnitType(target, UNIT_TYPE_SUMMONED);
     }
 
     private void ConvertUnit(unit caster, unit target)

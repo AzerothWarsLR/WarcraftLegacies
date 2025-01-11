@@ -34,7 +34,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Deals \u003CA0Y3,DataA1\u003E poison damage per second, slows movement speed and attack speed by \u003CA0Y3,DataC1,%\u003E%. The poison damage stacks. |nLasts \u003CA0Y3,Dur1\u003E seconds (\u003CA0Y3,HeroDur1\u003E on heroes)."
+      "Value": "Deals \u003CA0Y3,DataA1\u003E poison damage per second, slows movement speed and attack speed by \u003CA0Y3,DataC1,%\u003E%. The poison damage stacks. |nLasts \u003CA0Y3,Dur1\u003E seconds (0.1 on heroes)."
     }
   ]
 }

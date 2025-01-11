@@ -67,7 +67,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Greatly increases the attack damage and attack speed of all player-controlled non-hero units near the target location, then kills them after 30 seconds. |n|n|cffffcc00Level 1|r - Increases damage by 100% and attack speed by 100%.|n|cffffcc00Level 2|r - Increases damage by 150% and attack speed by 100%.|n|cffffcc00Level 3|r - Increases damage by 200% and attack speed by 100%."
+      "Value": "Greatly increases the attack damage and attack speed of all player-controlled, non-hero, non-summoned units near the target location, then kills them after 30 seconds. |n|n|cffffcc00Level 1|r - Increases damage by 100% and attack speed by 100%.|n|cffffcc00Level 2|r - Increases damage by 150% and attack speed by 100%.|n|cffffcc00Level 3|r - Increases damage by 200% and attack speed by 100%."
     },
     {
       "Id": 1952543841,
@@ -96,19 +96,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Empowers all player-controlled non-hero units near the target location by increasing their damage and attack speed by 100%, then kills them after 30 seconds."
+      "Value": "Empowers all player-controlled, non-hero, non-summoned units near the target location by increasing their damage and attack speed by 100%, then kills them after 30 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Empowers all player-controlled non-hero units near the target location by increasing their damage by 150% and attack speed by 100%, then kills them after 30 seconds."
+      "Value": "Empowers all player-controlled, non-hero, non-summoned units near the target location by increasing their damage by 150% and attack speed by 100%, then kills them after 30 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Empowers all player-controlled non-hero units near the target location by increasing their damage by 200% and attack speed by 100%, then kills them after 30 seconds."
+      "Value": "Empowers all player-controlled non-hero and non-summoned units near the target location by increasing their damage by 200% and attack speed by 100%, then kills them after 30 seconds."
     },
     {
       "Level": 4,
