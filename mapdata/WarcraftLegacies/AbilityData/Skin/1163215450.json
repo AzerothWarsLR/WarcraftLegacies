@@ -102,7 +102,7 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Empowers all player-controlled non-hero and non-summoned units near the target location by increasing their damage by 150% and attack speed by 100%, then kills them after 30 seconds."
+      "Value": "Empowers all player-controlled, non-hero, non-summoned units near the target location by increasing their damage by 150% and attack speed by 100%, then kills them after 30 seconds."
     },
     {
       "Level": 3,
