@@ -63,6 +63,8 @@ namespace WarcraftLegacies.Source.FactionMechanics.QuelThalas
       RemoveAbilities();
       AddCorruptedAbilities();
       _sunwell.Unit?.SetName("Corrupted Sunwell");
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) DisplayTextToPlayer(player, 0, 0,
+      "\n|cffffcc00CAPITAL LOST|r\nThe Sunwell, a beacon of eternal light and power, has been corrupted. Its radiant energies twisted into a font of dark magic, spreading malevolence across the land.");
       State = SunwellState.Corrupted;
     }
 
