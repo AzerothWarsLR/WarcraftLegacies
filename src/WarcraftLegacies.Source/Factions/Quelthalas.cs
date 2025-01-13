@@ -65,12 +65,20 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
     private void RegisterPowers()
     {
       var fontsOfPowerList = new List<Capital>
-{
+  {
     _allLegendSetup.Quelthalas.Sunwell,
     _allLegendSetup.FelHorde.BlackTemple,
     _allLegendSetup.Druids.Nordrassil,
-};
+  };
 
+      var sunwellCapital = _allLegendSetup.Quelthalas.Sunwell;
+
+      AddPower(new CorruptedSunwell(sunwellCapital)
+      {
+        IconName = "LifeDrain",
+        Name = "Corrupted Sunwell",
+        ResearchId = UPGRADE_R008_CORRUPTED_SUNWELL_IS_ACTIVE_POWER
+      });
 
       AddPower(new FontOfPower(fontsOfPowerList)
       {
@@ -80,6 +88,7 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
         ResearchId = UPGRADE_R00K_FONT_OF_POWER_IS_ACTIVE_POWER
       });
     }
+
 
 
 
@@ -100,8 +109,7 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       StartingQuest = newQuest;
       AddQuest(new QuestUnlockSpire(Regions.WindrunnerSpireUnlock, _allLegendSetup.Quelthalas.Sylvanas));
       AddQuest(new QuestTheBloodElves(_allLegendSetup.Neutral.DraktharonKeep));
-      AddQuest(new QuestQueldanil(Regions.QuelDanil_Lodge, Regions.BloodElfSecondChanceSpawn, 
-        _allLegendSetup.Quelthalas.Sunwell, _allLegendSetup.Quelthalas.Rommath));
+      AddQuest(new QuestQueldanil(Regions.QuelDanil_Lodge));
       AddQuest(new QuestQueensArchive(_allLegendSetup.Quelthalas.Rommath));
       AddQuest(new QuestForgottenKnowledge());
     }
