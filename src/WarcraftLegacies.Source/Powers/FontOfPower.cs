@@ -104,7 +104,14 @@ namespace WarcraftLegacies.Source.Powers
       var abilityId = GetSpellAbilityId();
       var abilityLevel = GetUnitAbilityLevel(castingUnit, abilityId);
       var manaCost = BlzGetUnitAbilityManaCost(castingUnit, abilityId, abilityLevel - 1);
+
+      if (manaCost <= 0)
+        return;
+
+
       var manaRefund = manaCost * 0.15f;
+
+
       
       SetUnitState(castingUnit, UNIT_STATE_MANA, GetUnitState(castingUnit, UNIT_STATE_MANA) + manaRefund);
       AddSpecialEffectTarget(Effect, castingUnit, "origin")
