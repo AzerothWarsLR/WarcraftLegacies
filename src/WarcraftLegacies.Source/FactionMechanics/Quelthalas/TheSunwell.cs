@@ -15,14 +15,9 @@ namespace WarcraftLegacies.Source.FactionMechanics.QuelThalas
     /// </summary>
     public static event EventHandler<SunwellState>? SunwellStateChanged;
 
-    private static SunwellState State
+    public static SunwellState State
     {
-      get => _state;
-      set
-      {
-        _state = value;
-        SunwellStateChanged?.Invoke(null, value);
-      }
+      get => _state; private set { _state = value; SunwellStateChanged?.Invoke(null, value); }
     }
 
     public static void Setup(Factions.Quelthalas quelThalas, Capital sunwell)
@@ -50,7 +45,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.QuelThalas
     /// <summary>
     /// Corrupt the Sunwell, changing its state and abilities.
     /// </summary>
-    private static void Corrupt()
+    public static void Corrupt()
     {
       if (State != SunwellState.Normal)
         return;
@@ -63,6 +58,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.QuelThalas
         "\n|cffffcc00CAPITAL LOST|r\nThe Sunwell, a beacon of eternal light and power, has been corrupted. Its radiant energies twisted into a font of dark magic, spreading malevolence across the land.");
       State = SunwellState.Corrupted;
     }
+
 
     private static void RemoveAbilities()
     {

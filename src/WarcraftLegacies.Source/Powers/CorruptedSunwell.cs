@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
@@ -8,6 +7,7 @@ using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using WCSharp.Events;
+using WarcraftLegacies.Source.FactionMechanics.QuelThalas;
 
 namespace WarcraftLegacies.Source.Powers
 {
@@ -16,19 +16,14 @@ namespace WarcraftLegacies.Source.Powers
     private readonly List<Objective> _objectives = new();
     private readonly Capital _sunwell;
     private bool _isActive;
-    private bool _wasScourgeControl;
     private readonly List<player> _playersWithPower = new();
 
     private bool IsActive
     {
-      get => _isActive || _wasScourgeControl;
+      get => _isActive;
       set
       {
         _isActive = value;
-        if (_isActive)
-        {
-          _wasScourgeControl = true;
-        }
         var prefix = IsActive ? "" : "|cffc0c0c0";
         Description = $"{prefix}Your units are damaged for 20% of the mana they spend on spells. Units that die from this effect are reanimated as hostile Wretched. Activated once the Scourge takes control of the Sunwell.";
         var researchLevel = _isActive ? 1 : 0;
@@ -43,43 +38,21 @@ namespace WarcraftLegacies.Source.Powers
     {
       Name = "Corrupted Sunwell";
       _sunwell = sunwell;
+
+      // Subscribe to Sunwell state changes
+      Sunwell.SunwellStateChanged += OnSunwellStateChanged;
     }
 
-    /// <inheritdoc />
     public override void OnAdd(player whichPlayer)
     {
       PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerSpellEffect, OnSpellCast, GetPlayerId(whichPlayer));
       _playersWithPower.Add(whichPlayer);
     }
 
-    /// <inheritdoc />
-    public override void OnAdd(Faction whichFaction)
-    {
-      whichFaction.ModObjectLimit(ResearchId, Faction.UNLIMITED);
-      AddObjective(new ObjectiveControlCapital(_sunwell, false)
-      {
-        EligibleFactions = new List<Faction> { whichFaction }
-      });
-      RefreshIsActive(whichFaction);
-    }
-
-    /// <inheritdoc />
     public override void OnRemove(player whichPlayer)
     {
       PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerSpellEffect, OnSpellCast, GetPlayerId(whichPlayer));
       _playersWithPower.Remove(whichPlayer);
-    }
-
-    /// <inheritdoc />
-    public override void OnRemove(Faction whichFaction)
-    {
-      whichFaction.ModObjectLimit(ResearchId, -Faction.UNLIMITED);
-      whichFaction.SetObjectLevel(ResearchId, 0);
-
-      foreach (var objective in _objectives)
-        RemoveObjective(objective);
-
-      _objectives.Clear();
     }
 
     private void OnSpellCast()
@@ -100,11 +73,32 @@ namespace WarcraftLegacies.Source.Powers
 
       if (GetUnitState(castingUnit, UNIT_STATE_LIFE) <= 0)
       {
-        // Reanimate as hostile Wretched if unit dies from this effect
         var x = GetUnitX(castingUnit);
         var y = GetUnitY(castingUnit);
-        CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), UNIT_NZOM_ZOMBIE_SCOURGE, x, y, 0);
+        CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), Constants.UNIT_NZOM_ZOMBIE_SCOURGE, x, y, 0);
       }
+    }
+
+    public override void OnAdd(Faction whichFaction)
+    {
+      whichFaction.ModObjectLimit(ResearchId, Faction.UNLIMITED);
+      AddObjective(new ObjectiveControlCapital(_sunwell, false)
+      {
+        EligibleFactions = new List<Faction> { whichFaction }
+      });
+      RefreshIsActive();
+      CheckAndCorruptSunwell(whichFaction);
+    }
+
+    public override void OnRemove(Faction whichFaction)
+    {
+      whichFaction.ModObjectLimit(ResearchId, -Faction.UNLIMITED);
+      whichFaction.SetObjectLevel(ResearchId, 0);
+
+      foreach (var objective in _objectives)
+        RemoveObjective(objective);
+
+      _objectives.Clear();
     }
 
     private void AddObjective(Objective objective)
@@ -121,17 +115,25 @@ namespace WarcraftLegacies.Source.Powers
 
     private void OnObjectiveProgressChanged(object? sender, Objective objective)
     {
-      RefreshIsActive(null);
+      RefreshIsActive();
     }
 
-    private void RefreshIsActive(Faction? whichFaction)
+    private void RefreshIsActive()
     {
-      if (whichFaction != null && whichFaction.Name == "Scourge")
-      {
-        _wasScourgeControl = true;
-      }
+      IsActive = Sunwell.State == SunwellState.Corrupted;
+    }
 
-      IsActive = _wasScourgeControl;
+    private void OnSunwellStateChanged(object? sender, SunwellState newState)
+    {
+      RefreshIsActive();
+    }
+
+    private void CheckAndCorruptSunwell(Faction faction)
+    {
+      if (faction.Name == "Scourge")
+      {
+        Sunwell.Corrupt();
+      }
     }
   }
 }
