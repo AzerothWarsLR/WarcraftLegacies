@@ -28,7 +28,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.TimeBased
       _questName = questName;
     }
 
-    internal override void OnAdd(Faction whichFaction)
+    public override void OnAdd(Faction whichFaction)
     {
       _assignedFactions.Add(whichFaction);
       Progress = QuestProgress.Complete;

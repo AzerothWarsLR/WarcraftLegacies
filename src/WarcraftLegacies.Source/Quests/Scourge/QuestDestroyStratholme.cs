@@ -11,18 +11,18 @@ namespace WarcraftLegacies.Source.Quests.Scourge
   {
     private readonly Faction _lordaeron;
     private readonly LegendaryHero _arthas;
-    
+
     public QuestDestroyStratholme(Faction lordaeron, Capital stratholme, LegendaryHero arthas) : base("The Culling",
       "When the city of Stratholme falls, Prince Arthas' despair will make him more susceptible to the power of the Lich King.",
       @"ReplaceableTextures\CommandButtons\BTNRuneblade.blp")
     {
       _lordaeron = lordaeron;
       _arthas = arthas;
+
       AddObjective(new ObjectiveCapitalDead(stratholme));
       var lineOfSuccession = lordaeron.GetQuestByType<QuestKingArthas>();
       AddObjective(new ObjectiveFactionQuestNotComplete(lineOfSuccession, lordaeron));
       ResearchId = UPGRADE_R01K_QUEST_COMPLETED_THE_CULLING;
-      
     }
 
     /// <inheritdoc />

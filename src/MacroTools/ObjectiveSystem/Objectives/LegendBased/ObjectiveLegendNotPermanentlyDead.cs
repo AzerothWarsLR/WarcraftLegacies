@@ -38,7 +38,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
         Progress = QuestProgress.Complete;
     }
 
-    internal override void OnAdd(FactionSystem.Faction whichFaction)
+    public override void OnAdd(FactionSystem.Faction whichFaction)
     {
       if (UnitAlive(_target.Unit)) Progress = QuestProgress.Complete;
     }

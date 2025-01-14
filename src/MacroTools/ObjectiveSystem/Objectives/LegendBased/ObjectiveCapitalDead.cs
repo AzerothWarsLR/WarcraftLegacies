@@ -10,19 +10,12 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
   /// </summary>
   public sealed class ObjectiveCapitalDead : Objective
   {
-    private readonly Capital _target;
-    
     /// <summary>
     /// Initializes a new instance of the <see cref="ObjectiveCapitalDead"/> class.
     /// </summary>
     /// <param name="target">The <see cref="Capital"/> that has to die for this objective to be completed.</param>
     public ObjectiveCapitalDead(Capital target)
     {
-      _target = target;
-      if (target.Capturable)
-        Logger.LogWarning(
-          $"{target.Unit.GetName()} should not be a target of {nameof(ObjectiveCapitalDead)} because it is capturable.");
-
       TargetWidget = target.Unit;
       Description = $"{target.Unit.GetName()} is destroyed";
       DisplaysPosition = true;
@@ -30,7 +23,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
         .RegisterUnitEvent(target.Unit, EVENT_UNIT_DEATH)
         .AddAction(() => Progress = QuestProgress.Complete);
       
-      Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
+      Position = new(GetUnitX(target.Unit), GetUnitY(target.Unit));
     }
   }
 }

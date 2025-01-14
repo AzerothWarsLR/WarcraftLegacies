@@ -7,18 +7,22 @@ using static War3Api.Common;
 namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 {
   /// <summary>
-  /// Do not gain control of a particular <see cref="Legend"/>.
+  /// Do not gain control of a particular <see cref="Capital"/>.
   /// </summary>
-  public sealed class ObjectiveDontControlLegend : Objective
+  public sealed class ObjectiveDontControlCapital : Objective
   {
-    private readonly Legend _target;
+    private readonly Capital _target;
+    private readonly QuestProgress _incompleteState;
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="ObjectiveDontControlLegend"/> class.
+    /// Initializes a new instance of the <see cref="ObjectiveDontControlCapital"/> class.
     /// </summary>
-    public ObjectiveDontControlLegend(LegendaryHero target)
+    /// <param name="target">The Capital which should not be controlled.</param>
+    /// <param name="canFail">If true, the Objective will be failed when the Capital is taken.</param>
+    public ObjectiveDontControlCapital(Capital target, bool canFail)
     {
       _target = target;
+      _incompleteState = canFail ? QuestProgress.Failed : QuestProgress.Incomplete;
       Description = $"You don't control {target.Name}";
       if (target.Unit != null) 
         TargetWidget = target.Unit;
@@ -31,7 +35,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     public override void OnAdd(Faction whichFaction)
     {
       if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
-        Progress = QuestProgress.Failed;
+        Progress = _incompleteState;
       else
         Progress = QuestProgress.Complete;
     }
@@ -39,7 +43,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     private void OnTargetChangeOwner(object? sender, LegendChangeOwnerEventArgs legendChangeOwnerEventArgs)
     {
       if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
-        Progress = QuestProgress.Failed;
+        Progress = _incompleteState;
+      else
+        Progress = QuestProgress.Complete;
     }
   }
 }

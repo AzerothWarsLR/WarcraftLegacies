@@ -26,7 +26,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
     }
 
-    internal override void OnAdd(FactionSystem.Faction whichFaction)
+    public override void OnAdd(FactionSystem.Faction whichFaction)
     {
       RefreshDescription();
       RefreshProgress();

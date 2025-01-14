@@ -1,6 +1,6 @@
 {
   "OldId": 846229109,
-  "NewId": 808464501,
+  "NewId": 1413890650,
   "Unk": [
     0
   ],
@@ -28,7 +28,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": " (Scourge Main)"
+      "Value": "(Empty)"
     },
     {
       "Id": 1831952757,
@@ -73,7 +73,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\FrozenThrone.mdl"
+      "Value": "war3mapImported\\FrozenThroneEmpty.mdl"
     }
   ]
 }

@@ -45,7 +45,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
         Description = $"You control {_target.Name}";
     }
 
-    internal override void OnAdd(Faction whichFaction)
+    public override void OnAdd(Faction whichFaction)
     {
       Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer())
         ? QuestProgress.Complete

@@ -62,7 +62,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
 
     private bool IsValidUnitInRect() => CreateGroup().EnumUnitsInRect(_targetRect).EmptyToList().Any(IsUnitValid);
 
-    internal override void OnAdd(FactionSystem.Faction whichFaction)
+    public override void OnAdd(FactionSystem.Faction whichFaction)
     {
       Progress = IsValidUnitInRect() ? QuestProgress.Complete : QuestProgress.Incomplete;
     }

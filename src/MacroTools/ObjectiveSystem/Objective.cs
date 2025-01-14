@@ -130,7 +130,7 @@ namespace MacroTools.ObjectiveSystem
     /// Runs when this <see cref="Objective"/> is registered to a <see cref="QuestData"/>
     /// or the <see cref="TriggeredDialogueManager"/>.
     /// </summary>
-    internal virtual void OnAdd(Faction faction)
+    public virtual void OnAdd(Faction faction)
     {
     }
 

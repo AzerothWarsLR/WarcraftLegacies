@@ -13,7 +13,7 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNSacrifice.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHelmofdomination.blp"
     },
     {
       "Id": 1952539489,
@@ -28,7 +28,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Global - Altars)"
+      "Value": "(Arthas)"
     },
     {
       "Id": 1952540001,
@@ -38,12 +38,12 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "Z"
+      "Value": ""
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Sacrifice"
+      "Value": "Ascend"
     },
     {
       "Id": 1918988897,
@@ -78,7 +78,7 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Sacrifice"
+      "Value": "Ascend"
     },
     {
       "Level": 2,
@@ -102,7 +102,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Permanently kills a target Hero under your control, allowing you to summon additional Heroes.|n|n|cffffcc00Sacrificed Heroes can never be reacquired."
+      "Value": "Cast this spell on the Frozen Throne to have him ascend to become the indomitable Lich King."
     },
     {
       "Level": 2,
@@ -124,11 +124,11 @@
     },
     {
       "Id": 2020631137,
-      "Value": 0
+      "Value": 1
     },
     {
       "Id": 2037408353,
-      "Value": 2
+      "Value": 1
     }
   ]
 }
