@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
+using WarcraftLegacies.Source.Factions;
 
 namespace WarcraftLegacies.Source.FactionMechanics.QuelThalas
 {
@@ -20,7 +21,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.QuelThalas
       get => _state; private set { _state = value; SunwellStateChanged?.Invoke(null, value); }
     }
 
-    public static void Setup(Factions.Quelthalas quelThalas, Capital sunwell)
+    public static void Setup(Factions.Quelthalas quelThalas, Capital sunwell, Factions.Scourge scourge)
     {
       _sunwell = sunwell;
 
@@ -89,12 +90,25 @@ namespace WarcraftLegacies.Source.FactionMechanics.QuelThalas
 
     private static void OnSunwellChangeOwner()
     {
-      GetTriggeringTrigger().Destroy();
-      Corrupt();
-    }
-  }
 
-  public enum SunwellState
+
+
+      var newOwner = _sunwell.Unit?.OwningPlayer;
+      var scourgePlayer = Factions.Scourge;
+
+      if (newOwner != null && newOwner == scourgePlayer)
+      {
+        GetTriggeringTrigger().Destroy();
+        Corrupt();
+      }
+    }
+
+
+
+
+
+
+    public enum SunwellState
   {
     /// <summary>
     /// The Sunwell is in its normal state.
