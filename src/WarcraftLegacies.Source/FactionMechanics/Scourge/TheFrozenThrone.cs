@@ -58,7 +58,9 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
         return;
 
       RemoveAbilities();
-      _frozenThrone.Unit?.SetName("Frozen Throne (Empty)");
+      _frozenThrone.Unit?
+        .SetName("Frozen Throne (Empty)").
+        SetSkin(UNIT_ZBFT_FROZEN_THRONE_EMPTY);
       State = FrozenThroneState.Empty;
       _frozenThrone.Capturable = false;
       _frozenThrone.DeathMessage =
