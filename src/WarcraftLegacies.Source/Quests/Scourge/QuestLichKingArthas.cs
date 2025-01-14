@@ -30,9 +30,9 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       _helmOfDomination = helmOfDomination;
       _arthas = arthas;
       _theFrozenThrone = theFrozenThrone;
-      AddObjective(new ObjectiveLegendLevel(arthas, 15)
+      AddObjective(new ObjectiveLegendLevel(arthas, 12)
       {
-        ResearchId = UPGRADE_ZB85_ARTHAS_MENETHIL_IS_LEVEL_15
+        ResearchId = UPGRADE_ZB85_ARTHAS_MENETHIL_IS_LEVEL_12
       });
       AddObjective(new ObjectiveLegendCastSpellOnUnit(arthas, ABILITY_A0LR_ASCEND_ARTHAS, theFrozenThrone.Unit!));
       Global = true;
