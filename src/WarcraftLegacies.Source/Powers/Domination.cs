@@ -66,10 +66,7 @@ namespace WarcraftLegacies.Source.Powers
     public override void OnRemove(Faction whichFaction) => whichFaction.ModObjectLimit(ResearchId, -Faction.UNLIMITED);
     
     /// <inheritdoc />
-    public override void OnRemove(player whichPlayer)
-    {
-      _playersWithPower.Remove(whichPlayer);
-    }
+    public override void OnRemove(player whichPlayer) => _playersWithPower.Remove(whichPlayer);
 
     private void OnArtifactOwnerChanged(object? sender, Artifact artifact) => RefreshIsActive();
 
