@@ -148,35 +148,6 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
             new ObjectiveStartSpell(ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS, false,
               _allLegendSetup.Scourge.Kelthuzad)
           }));
-
-      TriggeredDialogueManager.Add(
-        new TriggeredDialogue(
-          new DialogueSequence(
-            new Dialogue(
-              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead02\U02KelThuzad27.flac",
-              caption: "Told you my death would mean little.",
-              speaker: "Kel'thuzad"),
-            new Dialogue(
-              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead02\U02Arthas28.flac",
-              caption: "What the... Am I hearing ghosts now?",
-              speaker: "Arthas Menethil"),
-            new Dialogue(
-              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead02\U02KelThuzad29.flac",
-              caption: "It is I, Kel'Thuzad. I was right about you, Prince Arthas.",
-              speaker: "Kel'thuzad")),
-          new[] { this },
-          new Objective[]
-          {
-            new ObjectiveLegendMeetsLegend(_allLegendSetup.Scourge.Arthas, _allLegendSetup.Scourge.Kelthuzad),
-            new ObjectiveQuestComplete(GetQuestByType<QuestKelthuzadDies>())
-            {
-              EligibleFactions = new List<Faction> { this }
-            },
-            new ObjectiveQuestNotComplete(GetQuestByType<QuestKelthuzadLich>())
-            {
-              EligibleFactions = new List<Faction> { this }
-            }
-          }));
     }
 
     private void RegisterHelmOfDominationLogic()
@@ -299,11 +270,6 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
         new TriggeredDialogue(
           new DialogueSequence(
             new Dialogue(
-              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead05A\U05AArthas22.flac",
-              caption:
-              "Citizens of Silvermoon! I have given you ample opportunities to surrender, but you have stubbornly refused! Know that today, your entire race and your ancient heritage will end! Death itself has come to claim the high home of the elves!",
-              speaker: "Arthas Menethil"),
-            new Dialogue(
               soundFile: @"Sound\Dialogue\UndeadCampaign\Undead05A\U05AArthas30.flac",
               caption: "Now, arise, Kel'Thuzad, and serve the Lich King once again!",
               speaker: "Arthas Menethil"),
@@ -319,6 +285,35 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
           new[]
           {
             new ObjectiveQuestComplete(GetQuestByType<QuestKelthuzadLich>())
+            {
+              EligibleFactions = new List<Faction> { this }
+            }
+          }));
+      
+      TriggeredDialogueManager.Add(
+        new TriggeredDialogue(
+          new DialogueSequence(
+            new Dialogue(
+              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead02\U02KelThuzad27.flac",
+              caption: "Told you my death would mean little.",
+              speaker: "Kel'thuzad"),
+            new Dialogue(
+              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead02\U02Arthas28.flac",
+              caption: "What the... Am I hearing ghosts now?",
+              speaker: "Arthas Menethil"),
+            new Dialogue(
+              soundFile: @"Sound\Dialogue\UndeadCampaign\Undead02\U02KelThuzad29.flac",
+              caption: "It is I, Kel'Thuzad. I was right about you, Prince Arthas.",
+              speaker: "Kel'thuzad")),
+          new[] { this },
+          new Objective[]
+          {
+            new ObjectiveLegendMeetsLegend(_allLegendSetup.Scourge.Arthas, _allLegendSetup.Scourge.Kelthuzad),
+            new ObjectiveQuestComplete(GetQuestByType<QuestKelthuzadDies>())
+            {
+              EligibleFactions = new List<Faction> { this }
+            },
+            new ObjectiveQuestNotComplete(GetQuestByType<QuestKelthuzadLich>())
             {
               EligibleFactions = new List<Faction> { this }
             }
