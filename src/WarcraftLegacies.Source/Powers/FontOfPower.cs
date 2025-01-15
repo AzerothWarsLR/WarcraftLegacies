@@ -18,10 +18,10 @@ namespace WarcraftLegacies.Source.Powers
     private bool _isActive;
     private readonly List<player> _playersWithPower = new();
 
-    public bool IsActive
+    private bool IsActive
     {
       get => _isActive;
-      private set
+      set
       {
         _isActive = value;
         var prefix = IsActive ? "" : "|cffc0c0c0";

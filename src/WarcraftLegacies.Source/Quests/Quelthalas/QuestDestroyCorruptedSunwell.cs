@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
 
     /// <inheritdoc />
     public QuestDestroyCorruptedSunwell(Capital sunwell, CorruptedSunwell corruptedSunwellPower, FontOfPower fontOfPower) : base("Forever Dusk", 
-      "The necrotic taint at the heart of the Sunwell now permeates not only our people, but all we have built. The sacrifice we must now make is grave but inevitable: the Sunwell will be destroyed.",
+      "The necrotic taint at the heart of the Sunwell now permeates not only our people, but all we have built. The sacrifice we must make is grave but inevitable: the Sunwell must be destroyed by Thalassian hands.",
       @"ReplaceableTextures\CommandButtons\BTNWispSplode.blp")
     {
       _sunwell = sunwell;
@@ -33,11 +33,10 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     {
       get
       {
-        if (!_fontOfPower.IsActive)
-          return "With the Sunwell destroyed, the people of Quel'thalas are freed from its necrotic influence. Yet still they yearn for its magical energies - this addiction must be sated another way.";
-
-        var firstActiveFont = _fontOfPower.GetActiveFonts().First();
-        return $"The blighted tumour of the Sunwell has been excised from the Thalassian homeland. Its people have already turned their magical thirst elsewhere, drawing upon the magicks of {firstActiveFont.Name}.";
+        var firstActiveFont = _fontOfPower.GetActiveFonts().FirstOrDefault(x => x != _sunwell);
+        return firstActiveFont != null
+          ? $"The blighted tumour of the Sunwell has been excised from the Thalassian homeland. Its people have already turned their magical thirst elsewhere, drawing upon the magicks of {firstActiveFont.Name}."
+          : "With the Sunwell destroyed, the people of Quel'thalas are freed from its necrotic influence. Yet still they yearn for its magical energies - this addiction must be sated another way.";
       }
     }
 
