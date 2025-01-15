@@ -16,6 +16,7 @@ namespace WarcraftLegacies.Source.Powers
       Name = "Corrupted Sunwell";
       Description =
         $"Your units are damaged for {damage * 100}% of the mana they spend on spells. Units that die from this effect are reanimated as hostile Wretched.";
+      IconName = "OrbOfDarkness";
     }
 
     public override void OnAdd(player whichPlayer) =>
