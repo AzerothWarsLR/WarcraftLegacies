@@ -18,10 +18,10 @@ namespace WarcraftLegacies.Source.Powers
     private bool _isActive;
     private readonly List<player> _playersWithPower = new();
 
-    private bool IsActive
+    public bool IsActive
     {
       get => _isActive;
-      set
+      private set
       {
         _isActive = value;
         var prefix = IsActive ? "" : "|cffc0c0c0";
@@ -84,6 +84,12 @@ namespace WarcraftLegacies.Source.Powers
       _objectives.Clear();
     }
 
+    /// <summary>
+    /// Gets all fonts that currently count for the activeness of this Power.
+    /// </summary>
+    public IEnumerable<Capital> GetActiveFonts() =>
+      _fontsOfPower.Where(x => x.OwningPlayer != null && _playersWithPower.Contains(x.OwningPlayer));
+
     private void OnDamage()
     {
       if (!IsActive) 
@@ -107,11 +113,8 @@ namespace WarcraftLegacies.Source.Powers
 
       if (manaCost <= 0)
         return;
-
-
+      
       var manaRefund = manaCost * 0.15f;
-
-
       
       SetUnitState(castingUnit, UNIT_STATE_MANA, GetUnitState(castingUnit, UNIT_STATE_MANA) + manaRefund);
       AddSpecialEffectTarget(Effect, castingUnit, "origin")

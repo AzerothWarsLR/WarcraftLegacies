@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.QuelThalas
       }
     }
 
-    public static void Setup(Quelthalas quelthalas, Capital sunwell, Factions.Scourge scourge)
+    public static void Setup(Quelthalas quelthalas, Capital sunwell)
     {
       _sunwell = sunwell;
       _quelthalas = quelthalas;
@@ -66,7 +66,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.QuelThalas
       State = SunwellState.Corrupted;
       var corruptedSunwellPower = new CorruptedSunwell(0.2f);
       _quelthalas.AddPower(corruptedSunwellPower);
-      var destroySunwellQuest = new QuestDestroyCorruptedSunwell(_sunwell, corruptedSunwellPower);
+      var destroySunwellQuest = new QuestDestroyCorruptedSunwell(_sunwell, corruptedSunwellPower, _quelthalas.GetPowerByType<FontOfPower>()!);
       _quelthalas.AddQuest(destroySunwellQuest);
       _quelthalas.DisplayDiscovered(destroySunwellQuest);
     }
