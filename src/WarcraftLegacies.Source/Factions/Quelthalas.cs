@@ -74,7 +74,6 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       {
         IconName = "PriestAdept",
         Name = "Font of Power",
-        Effect = @"abilities\spells\items\aima\aimatarget.mdx",
         ResearchId = UPGRADE_ZBFO_FONT_OF_POWER_IS_ACTIVE_POWER
       });
     }

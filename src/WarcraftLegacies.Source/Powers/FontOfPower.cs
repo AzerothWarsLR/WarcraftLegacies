@@ -32,15 +32,11 @@ namespace WarcraftLegacies.Source.Powers
       }
     }
 
-    /// <summary>The effect that appears when an ability is cast.</summary>
-    public string Effect { get; init; } = "";
-
     /// <summary>Active when the <see cref="Power"/> is active, inactive otherwise.</summary>
     public int ResearchId { get; init; }
 
     public FontOfPower(List<Capital> fontsOfPower)
     {
-      Name = "Font of Power";
       _fontsOfPower = fontsOfPower;
     }
 
@@ -117,8 +113,6 @@ namespace WarcraftLegacies.Source.Powers
       var manaRefund = manaCost * 0.15f;
       
       SetUnitState(castingUnit, UNIT_STATE_MANA, GetUnitState(castingUnit, UNIT_STATE_MANA) + manaRefund);
-      AddSpecialEffectTarget(Effect, castingUnit, "origin")
-          .SetLifespan(1);
     }
 
     private void AddObjective(Objective objective)
