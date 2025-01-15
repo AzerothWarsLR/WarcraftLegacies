@@ -1,0 +1,79 @@
+{
+  "OldId": 846229109,
+  "NewId": 1413890650,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNFrostArmor.blp"
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651012469,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Empty)"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\FrostWyrmMissile\\FrostWyrmMissile.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.35
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Frozen Throne"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 4
+    },
+    {
+      "Id": 1634759541,
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\NightElf\\NECancelDeath\\NECancelDeath.mdl"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Upgrade to Black Citadel to enable the production of additional types of structures and units. "
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\FrozenThroneEmpty.mdl"
+    }
+  ]
+}

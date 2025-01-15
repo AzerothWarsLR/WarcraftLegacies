@@ -38,7 +38,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.75
+      "Value": 1.35
     },
     {
       "Id": 1835101813,
@@ -69,6 +69,11 @@
       "Id": 1651864693,
       "Type": 3,
       "Value": "Upgrade to Black Citadel to enable the production of additional types of structures and units. "
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\FrozenThrone.mdl"
     }
   ]
 }

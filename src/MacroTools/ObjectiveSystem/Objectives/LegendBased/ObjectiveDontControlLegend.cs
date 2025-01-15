@@ -28,7 +28,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
     }
 
-    internal override void OnAdd(Faction whichFaction)
+    public override void OnAdd(Faction whichFaction)
     {
       if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
         Progress = QuestProgress.Failed;

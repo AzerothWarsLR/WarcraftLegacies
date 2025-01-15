@@ -22,7 +22,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     }
     
     /// <inheritdoc />
-    internal override void OnAdd(Faction faction)
+    public override void OnAdd(Faction faction)
     {
       CapitalManager.CapitalDestroyed += (_, capital) =>
       {

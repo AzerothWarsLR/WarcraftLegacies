@@ -24,7 +24,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ArtifactBased
     }
 
     /// <inheritdoc/>
-    internal override void OnAdd(Faction faction)
+    public override void OnAdd(Faction faction)
     {
       Progress = QuestProgress.Complete;
       _target.OwnerChanged += (_, _) =>

@@ -20,7 +20,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.FactionBased
       ShowsInQuestLog = false;
     }
 
-    internal override void OnAdd(Faction whichFaction)
+    public override void OnAdd(Faction whichFaction)
     {
       Progress = QuestProgress.Complete;
       whichFaction.ScoreStatusChanged += OnAnyFactionScoreStatusChanged;

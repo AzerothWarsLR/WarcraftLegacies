@@ -109,8 +109,8 @@ Be sure to train Forsaken Ones, they are powerful units";
       var poisonYor = new Stomp(ABILITY_ABNT_VOID_TOXIN_BLACK_EMPIRE)
       {
         Radius = 500,
-        DamageBase = 80,
-        DamageLevel = 40,
+        DamageBase = 60,
+        DamageLevel = 20,
         DurationBase = 3,
         DurationLevel = 0,
         StunAbilityId = ABILITY_ABSS_SHADOW_STRIKE_VOID_TOXIN_REAL,
@@ -133,7 +133,7 @@ Be sure to train Forsaken Ones, they are powerful units";
       {
         DummyAbilityId = ABILITY_ABSV_SHADOW_VEIL_SHADOW_VEIL_REAL,
         DummyOrderId = OrderId("howlofterror"),
-        ProcChance = 0.25f,
+        ProcChance = 0.10f,
         RequiredResearch = Constants.UPGRADE_RBEV_SHADOW_VEIL_BLACK_EMPIRE
       };
       PassiveAbilityManager.Register(shadowVeilPassive);
@@ -142,8 +142,8 @@ Be sure to train Forsaken Ones, they are powerful units";
       {
         DummyAbilityId = ABILITY_ACAM_ANTI_MAGIC_SHELL_BLACK_EMPIRE,
         DummyAbilityOrderId = OrderId("antimagicshell"),
-        Radius = 200,
-        CastFilter = CastFilters.IsTargetOrganicAndAlive,
+        Radius = 150,
+        CastFilter = CastFilters.IsTargetAllyAndAlive,
         TargetType = SpellTargetType.None
       };
       SpellSystem.Register(shadowVeilSpell);

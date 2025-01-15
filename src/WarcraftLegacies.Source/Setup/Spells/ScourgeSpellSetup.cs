@@ -75,6 +75,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         CreateUnitTypeId = UNIT_U012_HALF_GHOUL_SCOURGE,
         CreateCount = 1,
         SpecialEffectPath = @"Objects\Spawnmodels\Human\HumanBlood\HumanBloodLarge0.mdl",
+        RequiredResearch = UPGRADE_R008_DOMINATION_POWER
       });
 
       PassiveAbilityManager.Register(new CreateCorpseOnDeath(UNIT_U012_HALF_GHOUL_SCOURGE)

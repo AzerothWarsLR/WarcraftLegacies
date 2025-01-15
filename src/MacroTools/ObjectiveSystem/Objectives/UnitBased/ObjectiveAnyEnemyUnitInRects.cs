@@ -58,7 +58,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     } 
     
     /// <inheritdoc />
-    internal override void OnAdd(Faction whichFaction)
+    public override void OnAdd(Faction whichFaction)
     {
       Progress = IsValidUnitInRects() ? QuestProgress.Complete : QuestProgress.Incomplete;
       

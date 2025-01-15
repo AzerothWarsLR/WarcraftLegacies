@@ -26,7 +26,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ArtifactBased
       target.Disposed += (_, _) => Progress = QuestProgress.Failed;
     }
 
-    internal override void OnAdd(Faction whichFaction)
+    public override void OnAdd(Faction whichFaction)
     {
       if (EligibleFactions.Contains(_target.OwningPlayer))
         Progress = QuestProgress.Complete;

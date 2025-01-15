@@ -2,6 +2,7 @@
 using MacroTools;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
@@ -10,6 +11,7 @@ using MacroTools.Powers;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Scourge;
 using WarcraftLegacies.Source.FactionMechanics.Scourge.Blight;
+using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests.Scourge;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
@@ -71,11 +73,11 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       RegisterQuests();
       RegisterPowers();
       RegisterDialogue();
-      RegisterHelmOfDominationLogic();
       BlightSystem.Setup(this);
       BlightSetup.Setup(_preplacedUnitSystem);
       SacrificeAcolyte.Setup();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
+      TheFrozenThrone.Setup(this, _allLegendSetup.Scourge.TheFrozenThrone);
     }
 
     private void RegisterObjectLimits()
@@ -101,7 +103,8 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       QuestLichKingArthas questLichKingArthas =
         new(_preplacedUnitSystem.GetUnit(UNIT_H00O_UTGARDE_KEEP_SCOURGE_OTHER),
           _artifactSetup.HelmOfDomination,
-          _allLegendSetup.Scourge.Arthas, _allLegendSetup.Scourge.TheFrozenThrone);
+          _allLegendSetup.Scourge.Arthas,
+          _allLegendSetup.Scourge.TheFrozenThrone);
       QuestSlumberingKing questSlumberingKing = new();
       
       AddQuest(questSpiderWar);
@@ -116,8 +119,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
 
     private void RegisterPowers()
     {
-      //Powers
-      var visionPower = new RegionVisionPower("All-Seeing",
+      var allSeeing = new RegionVisionPower("All-Seeing",
         "Grants permanent vision over Northrend.",
         "Charm", new[]
         {
@@ -132,7 +134,30 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
           Regions.Borean_Tundra,
           Regions.IcecrownShipyard
         });
-      AddPower(visionPower);
+      AddPower(allSeeing);
+
+      var domination = new Domination
+      {
+        ResearchId = UPGRADE_R008_DOMINATION_POWER,
+        MindlessUndeadUnitTypes = new List<int>
+        {
+          UNIT_UGHO_GHOUL_SCOURGE,
+          UNIT_U012_HALF_GHOUL_SCOURGE,
+          UNIT_UABO_ABOMINATION_SCOURGE,
+          UNIT_UFRO_FROST_WYRM_SCOURGE,
+          UNIT_UCRM_BURROWED_CRYPT_FIEND_RED,
+          UNIT_UCRY_CRYPT_FIEND_SCOURGE
+        },
+        DependentArtifact = _artifactSetup.HelmOfDomination,
+        IconName = "Revenant",
+        ValidHolders = new List<Legend>
+        {
+          _allLegendSetup.Scourge.TheFrozenThrone,
+          _allLegendSetup.Scourge.Arthas
+        }
+      };
+      
+      AddPower(domination);
     }
 
     private void RegisterDialogue()
@@ -351,12 +376,18 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       AddQuest(new QuestKelthuzadDies(questKelthuzadLich, _allLegendSetup.Scourge.Kelthuzad));
     }
     
-    private void RegisterLordaeronRelatedQuests(Lordaeron lordaeron)
+    private void RegisterLordaeronRelatedQuests(Faction lordaeron)
     {
-      AddQuest(new QuestDestroyStratholme(lordaeron, _allLegendSetup.Lordaeron.Stratholme, _allLegendSetup.Lordaeron.Arthas));
+      var stratholme = _allLegendSetup.Lordaeron.Stratholme;
+      var frozenThrone = _allLegendSetup.Scourge?.TheFrozenThrone;
+      var arthas = _allLegendSetup.Lordaeron.Arthas;
+      
+      QuestDestroyStratholme questDestroyStratholme = new(lordaeron, stratholme, arthas);
+      AddQuest(questDestroyStratholme);
+      
       AddQuest(new QuestCultoftheDamned(lordaeron, _allLegendSetup.Scourge.Rivendare));
     }
-    
+
     private void RegisterLordaeronLegionRelatedQuests(Lordaeron lordaeron, Legion legion)
     {
       var plagueParameters = new PlagueParameters();
