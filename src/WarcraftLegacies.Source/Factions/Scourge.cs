@@ -174,11 +174,6 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
               _allLegendSetup.Scourge.Kelthuzad)
           }));
     }
-
-    private void RegisterHelmOfDominationLogic()
-    {
-      HelmOfDominationDropsWhenScourgeLeaves.Setup(this, _artifactSetup.HelmOfDomination, _allLegendSetup.Scourge.TheFrozenThrone);
-    }
     
     private void RegisterDalaranDialogue(Dalaran dalaran)
     {
@@ -379,7 +374,6 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
     private void RegisterLordaeronRelatedQuests(Faction lordaeron)
     {
       var stratholme = _allLegendSetup.Lordaeron.Stratholme;
-      var frozenThrone = _allLegendSetup.Scourge?.TheFrozenThrone;
       var arthas = _allLegendSetup.Lordaeron.Arthas;
       
       QuestDestroyStratholme questDestroyStratholme = new(lordaeron, stratholme, arthas);
