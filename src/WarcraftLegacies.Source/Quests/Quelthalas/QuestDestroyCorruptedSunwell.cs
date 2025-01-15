@@ -29,6 +29,11 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       completingFaction.RemovePower(_corruptedSunwellPower);
       TheSunwell.Destroy();
     }
-
+    
+    /// <inheritdoc />
+    protected override void OnAdd(Faction faction)
+    {
+      faction.ModAbilityAvailability(ABILITY_A00D_DESTROY_THE_CORRUPTED_SUNWELL_QUEL_THALAS_SUNWELL, 1);
+    }
   }
 }
