@@ -58,11 +58,9 @@ namespace WarcraftLegacies.Source.FactionMechanics.QuelThalas
 
       RemoveAbilities();
       AddCorruptedAbilities();
+      _sunwell.Essential = false;
       _sunwell.Unit?.SetName("Corrupted Sunwell");
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-        DisplayTextToPlayer(player, 0, 0,
-          "\n|cffffcc00CAPITAL LOST|r\nThe Sunwell, a beacon of eternal light and power, has been corrupted. Its radiant energies have been twisted into a font of dark magic, spreading malevolence across the land.");
-      
+
       State = SunwellState.Corrupted;
       var corruptedSunwellPower = new CorruptedSunwell(0.2f);
       _quelthalas.AddPower(corruptedSunwellPower);
@@ -79,9 +77,8 @@ namespace WarcraftLegacies.Source.FactionMechanics.QuelThalas
       if (State != SunwellState.Corrupted)
         return;
 
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-        DisplayTextToPlayer(player, 0, 0,
-          "\n|cffffcc00CAPITAL DESTROYED|r\nThe Sunwell, once a source of great magical energy, is no more. Its corruption has ended, and the land is free from its dark influence.");
+      _sunwell.Capturable = false;
+      _sunwell.Unit!.Kill();
       State = SunwellState.Destroyed;
     }
     

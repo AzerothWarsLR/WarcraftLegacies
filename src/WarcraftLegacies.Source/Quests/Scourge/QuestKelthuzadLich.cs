@@ -19,10 +19,11 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       AddObjective(new ObjectiveControlCapital(sunwell, false));
       AddObjective(new ObjectiveLegendInRect(kelthuzad, Regions.Sunwell, "The Sunwell"));
       ResearchId = UPGRADE_R065_QUEST_COMPLETED_INTO_THE_REALM_ETERNAL;
+      Global = true;
     }
 
     /// <inheritdoc />
-    public override string RewardFlavour => "Kel'thuzad has been reanimated and empowered through the unlimited magical energies of the Sunwell. He now has the ability to summon the Burning Legion.";
+    public override string RewardFlavour => "The Necromancer Kel'thuzad has been immersed in the Sunwell and reborn as a Lich. The well, formerly a beacon of eternal light and power, has been twisted into a font of dark magic, spreading malevolence across the land.";
 
     /// <inheritdoc />
     protected override string RewardDescription => "Permanently corrupt the Sunwell and turn Kel'thuzad into a Lich, causing his Dark Ritual ability to also summon a Revenant";
