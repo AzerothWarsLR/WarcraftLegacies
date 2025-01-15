@@ -55,6 +55,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
         "ud",
         "undead"
       };
+      RegisterFactionDependentInitializer<Quelthalas>(RegisterQuelthalasRelatedQuests);
       RegisterFactionDependentInitializer<Lordaeron>(RegisterLordaeronRelatedQuests);
       RegisterFactionDependentInitializer<Lordaeron, Legion>(RegisterLordaeronLegionRelatedQuests);
       RegisterFactionDependentInitializer<Dalaran>(RegisterDalaranDialogue);
@@ -102,9 +103,6 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
           _artifactSetup.HelmOfDomination,
           _allLegendSetup.Scourge.Arthas, _allLegendSetup.Scourge.TheFrozenThrone);
       QuestSlumberingKing questSlumberingKing = new();
-      
-      var questKelthuzadLich = AddQuest(new QuestKelthuzadLich(_allLegendSetup.Quelthalas.Sunwell, _allLegendSetup.Scourge.Kelthuzad));
-      AddQuest(new QuestKelthuzadDies(questKelthuzadLich, _allLegendSetup.Scourge.Kelthuzad));
       
       AddQuest(questSpiderWar);
       StartingQuest = questSpiderWar;
@@ -349,6 +347,13 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
           {
             new ObjectiveLegendMeetsLegend(_allLegendSetup.Scourge.Arthas, _allLegendSetup.Legion.Tichondrius)
           }));
+    }
+    
+    private void RegisterQuelthalasRelatedQuests(Quelthalas quelthalas)
+    {
+      var questKelthuzadLich = AddQuest(new QuestKelthuzadLich(_allLegendSetup.Quelthalas.Sunwell,
+        _allLegendSetup.Scourge.Kelthuzad, quelthalas));
+      AddQuest(new QuestKelthuzadDies(questKelthuzadLich, _allLegendSetup.Scourge.Kelthuzad));
     }
     
     private void RegisterLordaeronRelatedQuests(Lordaeron lordaeron)

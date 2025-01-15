@@ -1,26 +1,28 @@
 ﻿using System.Linq;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.FactionMechanics.QuelThalas;
 using WarcraftLegacies.Source.Powers;
 
 namespace WarcraftLegacies.Source.Quests.Quelthalas
 {
   public sealed class QuestDestroyCorruptedSunwell : QuestData
   {
+    private readonly Capital _sunwell;
     private readonly CorruptedSunwell _corruptedSunwellPower;
     private readonly FontOfPower _fontOfPower;
 
     /// <inheritdoc />
-    public QuestDestroyCorruptedSunwell(Capital theSunwell, CorruptedSunwell corruptedSunwellPower, FontOfPower fontOfPower) : base("Forever Dusk", 
+    public QuestDestroyCorruptedSunwell(Capital sunwell, CorruptedSunwell corruptedSunwellPower, FontOfPower fontOfPower) : base("Forever Dusk", 
       "The necrotic taint at the heart of the Sunwell now permeates not only our people, but all we have built. The sacrifice we must now make is grave but inevitable: the Sunwell will be destroyed.",
       @"ReplaceableTextures\CommandButtons\BTNWispSplode.blp")
     {
+      _sunwell = sunwell;
       _corruptedSunwellPower = corruptedSunwellPower;
       _fontOfPower = fontOfPower;
-      AddObjective(new ObjectiveCastSpellFromUnit(ABILITY_A00D_DESTROY_THE_CORRUPTED_SUNWELL_QUEL_THALAS_SUNWELL, theSunwell.Unit!));
+      AddObjective(new ObjectiveCastSpellFromUnit(ABILITY_A00D_DESTROY_THE_CORRUPTED_SUNWELL_QUEL_THALAS_SUNWELL, sunwell.Unit!));
     }
     
     /// <inheritdoc/>
@@ -43,9 +45,10 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.RemovePower(_corruptedSunwellPower);
-      TheSunwell.Destroy();
+      _sunwell.Capturable = false;
+      _sunwell.Unit!.Kill();
     }
-    
+
     /// <inheritdoc />
     protected override void OnAdd(Faction faction) =>
       faction.ModAbilityAvailability(ABILITY_A00D_DESTROY_THE_CORRUPTED_SUNWELL_QUEL_THALAS_SUNWELL, 1);
