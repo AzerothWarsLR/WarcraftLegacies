@@ -64,23 +64,21 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
     }
     private void RegisterPowers()
     {
-      var fontsOfPowerList = new List<Capital>
-  {
-    _allLegendSetup.Quelthalas.Sunwell,
-    _allLegendSetup.FelHorde.BlackTemple,
-    _allLegendSetup.Druids.Nordrassil,
-  };
+      var fontsOfPower = new List<Capital>
+      {
+        _allLegendSetup.Quelthalas.Sunwell,
+        _allLegendSetup.FelHorde.BlackTemple,
+        _allLegendSetup.Druids.Nordrassil,
+      };
 
-      var sunwellCapital = _allLegendSetup.Quelthalas.Sunwell;
-
-      AddPower(new CorruptedSunwell(sunwellCapital)
+      AddPower(new CorruptedSunwell(0.2f)
       {
         IconName = "LifeDrain",
         Name = "Corrupted Sunwell",
         ResearchId = UPGRADE_R008_CORRUPTED_SUNWELL_IS_ACTIVE_POWER
       });
 
-      AddPower(new FontOfPower(fontsOfPowerList)
+      AddPower(new FontOfPower(fontsOfPower)
       {
         IconName = "PriestAdept",
         Name = "Font of Power",
@@ -88,11 +86,7 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
         ResearchId = UPGRADE_R00K_FONT_OF_POWER_IS_ACTIVE_POWER
       });
     }
-
-
-
-
-
+    
     private void RegisterObjectLimits()
     {
       foreach (var (objectTypeId, objectLimit) in QuelthalasObjectLimitData.GetAllObjectLimits())
