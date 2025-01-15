@@ -1,0 +1,39 @@
+{
+  "OldId": 1752131182,
+  "NewId": 959918190,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "Doodads\\Cinematic\\SunWell\\SunWell.mdl"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "The Sunwell Corrupted"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Reconstruct the Elven Grand Sunwell."
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Reconstruct the Elven Grand Sunwell to again have a  life regeneration aura throughout your lands."
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Quel\u0027thalas Other)"
+    }
+  ]
+}
