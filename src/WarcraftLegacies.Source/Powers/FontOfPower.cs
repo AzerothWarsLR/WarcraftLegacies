@@ -88,7 +88,7 @@ namespace WarcraftLegacies.Source.Powers
     /// Gets all fonts that currently count for the activeness of this Power.
     /// </summary>
     public IEnumerable<Capital> GetActiveFonts() =>
-      _fontsOfPower.Where(x => x.OwningPlayer != null && _playersWithPower.Contains(x.OwningPlayer));
+      _fontsOfPower.Where(x => x.OwningPlayer != null && UnitAlive(x.Unit) && _playersWithPower.Contains(x.OwningPlayer));
 
     private void OnDamage()
     {
