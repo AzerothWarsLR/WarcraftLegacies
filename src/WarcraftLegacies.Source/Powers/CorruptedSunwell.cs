@@ -43,9 +43,9 @@ namespace WarcraftLegacies.Source.Powers
       {
         var x = GetUnitX(castingUnit);
         var y = GetUnitY(castingUnit);
-        var zombie = CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), UNIT_NZOM_ZOMBIE_SCOURGE, x, y, 0);
-        zombie.SetTimedLife(120.0f)
-               .AddType(UNIT_TYPE_SUMMONED);
+       CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), UNIT_N05K_WRETCHED_CORRUPTED_SUNWELL, x, y, 0)
+          .SetTimedLife(120.0f)
+          .AddType(UNIT_TYPE_SUMMONED);
       }
     }
   }

@@ -60,17 +60,18 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       RemoveAbilities();
       AddCorruptedAbilities();
       _sunwell.Essential = false;
-      _sunwell.Unit?.SetSkin(UNIT_N079_THE_SUNWELL_CORRUPTED_QUEL_THALAS_OTHER);
-      _sunwell.Unit?.SetName("Corrupted Sunwell");
-    
+      _sunwell.Unit?
+        .SetSkin(UNIT_N079_THE_SUNWELL_CORRUPTED_QUEL_THALAS_OTHER)
+        .SetName("Corrupted Sunwell");
 
-       var corruptedSunwellPower = new CorruptedSunwell(0.2f);
+      var corruptedSunwellPower = new CorruptedSunwell(0.2f);
       _quelthalas.AddPower(corruptedSunwellPower);
-      var destroySunwellQuest =
-        new QuestDestroyCorruptedSunwell(_sunwell, corruptedSunwellPower, _quelthalas.GetPowerByType<FontOfPower>()!);
+
+      var destroySunwellQuest = new QuestDestroyCorruptedSunwell(_sunwell, corruptedSunwellPower, _quelthalas.GetPowerByType<FontOfPower>()!);
       _quelthalas.AddQuest(destroySunwellQuest);
       _quelthalas.DisplayDiscovered(destroySunwellQuest);
     }
+
 
     private void RemoveAbilities()
     {
