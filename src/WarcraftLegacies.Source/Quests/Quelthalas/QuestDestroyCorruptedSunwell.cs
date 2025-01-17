@@ -46,6 +46,11 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
       completingFaction.RemovePower(_corruptedSunwellPower);
       _sunwell.Capturable = false;
       _sunwell.Unit!.Kill();
+      DestroyEffect(AddSpecialEffect(@"objects\spawnmodels\undead\udeathmedium\udeath.mdx",
+        GetUnitX(_sunwell.Unit),
+        GetUnitY(_sunwell.Unit)));
+      DestroyEffect(AddSpecialEffect(@"objects\spawnmodels\undead\undeaddissipate\undeaddissipate.mdx",
+        GetUnitX(_sunwell.Unit), GetUnitY(_sunwell.Unit)));
     }
 
     /// <inheritdoc />
