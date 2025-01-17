@@ -57,12 +57,14 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     private void CorruptSunwell()
     {
-      RemoveAbilities();
-      AddCorruptedAbilities();
-      _sunwell.Essential = false;
       _sunwell.Unit?
+        .RemoveAbility(ABILITY_A0OC_EXTRACT_VIAL_ALL)
+        .RemoveAbility(ABILITY_A0EP_SUMMON_GRANITE_GOLEMS_QUEL_THALAS_SUNWELL)
+        .AddAbility(ABILITY_A00D_DESTROY_THE_CORRUPTED_SUNWELL_QUEL_THALAS_SUNWELL)
+        .SetMaximumMana(0)
         .SetSkin(UNIT_N079_THE_SUNWELL_CORRUPTED_QUEL_THALAS_OTHER)
         .SetName("Corrupted Sunwell");
+      _sunwell.Essential = false;
 
       var corruptedSunwellPower = new CorruptedSunwell(0.2f);
       _quelthalas.AddPower(corruptedSunwellPower);
@@ -70,20 +72,6 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       var destroySunwellQuest = new QuestDestroyCorruptedSunwell(_sunwell, corruptedSunwellPower, _quelthalas.GetPowerByType<FontOfPower>()!);
       _quelthalas.AddQuest(destroySunwellQuest);
       _quelthalas.DisplayDiscovered(destroySunwellQuest);
-    }
-
-
-    private void RemoveAbilities()
-    {
-      _sunwell.Unit?
-        .RemoveAbility(ABILITY_A0OC_EXTRACT_VIAL_ALL)
-        .RemoveAbility(ABILITY_A0EP_SUMMON_GRANITE_GOLEMS_QUEL_THALAS_SUNWELL);
-    }
-
-    private void AddCorruptedAbilities()
-    {
-      _sunwell.Unit?
-        .AddAbility(ABILITY_A00D_DESTROY_THE_CORRUPTED_SUNWELL_QUEL_THALAS_SUNWELL);
     }
   }
 }
