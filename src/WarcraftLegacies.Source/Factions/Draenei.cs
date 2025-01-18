@@ -5,6 +5,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Powers;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Draenei;
 using WarcraftLegacies.Source.Setup;
 
@@ -14,15 +15,17 @@ namespace WarcraftLegacies.Source.Factions
   {
     private readonly PreplacedUnitSystem _preplacedUnitSystem;
     private readonly AllLegendSetup _allLegendSetup;
+    private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
     
-    public Draenei(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("The Exodar",
+    public Draenei(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup _artifactSetup) : base("The Exodar",
       PLAYER_COLOR_NAVY, "|cff000080", @"ReplaceableTextures\CommandButtons\BTNBOSSVelen.blp")
     {
       TraditionalTeam = TeamSetup.NightElves;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
+      this._artifactSetup = _artifactSetup;
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_U008_CONTROL_POINT_DEFENDER_DRAENEI;
       IntroText = @"You are playing as the exiled |cff000080Draenei|r.
@@ -77,6 +80,7 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
       AddQuest(new QuestTriumvirate(_allLegendSetup.Draenei.Velen));
       var questDimensionalShip = new QuestDimensionalShip(Regions.ExodarBaseUnlock, questRepairGenerator, _allLegendSetup.Draenei.LegendExodarGenerator);
       AddQuest(questDimensionalShip);
+      AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
     }
 
     private void RegisterPowers()

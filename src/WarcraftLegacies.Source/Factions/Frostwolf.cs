@@ -6,6 +6,7 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ResearchSystems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Frostwolf;
 using WarcraftLegacies.Source.Quests.Warsong;
 using WarcraftLegacies.Source.Researches;
@@ -87,6 +88,7 @@ Your allies will be coming south to help you defend against the Old Gods, do not
       AddQuest(new QuestDrektharsSpellbook(_allLegendSetup.Skywall.Vortex, _allLegendSetup.Frostwolf.Thrall));
       AddQuest(new QuestFreeNerzhul(_allLegendSetup.Scourge.TheFrozenThrone, _allLegendSetup.Frostwolf.Thrall));
       AddQuest(new QuestWorldShaman(_allLegendSetup.Frostwolf.Thrall));
+      AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
     }
 
     private void RegisterDialogue()

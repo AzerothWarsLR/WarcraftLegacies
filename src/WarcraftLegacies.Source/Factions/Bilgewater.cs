@@ -7,6 +7,7 @@ using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.Powers;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Goblin;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
@@ -16,13 +17,15 @@ namespace WarcraftLegacies.Source.Factions
   public sealed class Bilgewater : Faction
   {
     private readonly AllLegendSetup _allLegendSetup;
+    private ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    public Bilgewater(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Bilgewater", PLAYER_COLOR_LIGHT_GRAY, "|cff808080",
+    public Bilgewater(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Bilgewater", PLAYER_COLOR_LIGHT_GRAY, "|cff808080",
       @"ReplaceableTextures\CommandButtons\BTNHeroTinker.blp")
     {
       TraditionalTeam = TeamSetup.Horde;
       _allLegendSetup = allLegendSetup;
+      _artifactSetup = artifactSetup;
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_O01C_CONTROL_POINT_DEFENDER_GOBLIN;
       LearningDifficulty = FactionLearningDifficulty.Advanced;
@@ -80,6 +83,7 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
       AddQuest(new QuestLumberMarket(_allLegendSetup.Druids.Nordrassil));
       AddQuest(new QuestBusinessExpansion());
       AddQuest(new QuestGoblinEmpire());
+      AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
     }
 
     private void RegisterDialogue()
