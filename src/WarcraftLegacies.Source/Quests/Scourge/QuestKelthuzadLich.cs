@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using MacroTools.ArtifactSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
@@ -13,9 +14,10 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     private readonly Capital _sunwell;
     private readonly LegendaryHero _kelthuzad;
     private readonly Faction _quelthalas;
+    private readonly Artifact _sunwellVial;
     private const int UnittypeKelthuzadLich = UNIT_UKTL_ARCHLICH_OF_THE_SCOURGE_SCOURGE_LICH;
 
-    public QuestKelthuzadLich(Capital sunwell, LegendaryHero kelthuzad, Faction quelthalas) : base(
+    public QuestKelthuzadLich(Capital sunwell, LegendaryHero kelthuzad, Faction quelthalas, Artifact sunwellVial) : base(
       "Into the Realm Eternal",
       "Kel'thuzad is the leader of the Cult of the Damned and an extraordinarily powerful necromancer. If he were to be brought to the Sunwell and submerged in its waters, he would be reanimated as an immortal Lich.",
       @"ReplaceableTextures\CommandButtons\BTNLichVersion2.blp")
@@ -23,6 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       _sunwell = sunwell;
       _kelthuzad = kelthuzad;
       _quelthalas = quelthalas;
+      _sunwellVial = sunwellVial;
       AddObjective(new ObjectiveControlCapital(sunwell, false));
       AddObjective(new ObjectiveLegendInRect(kelthuzad, Regions.Sunwell, "The Sunwell"));
       ResearchId = UPGRADE_R065_QUEST_COMPLETED_INTO_THE_REALM_ETERNAL;
@@ -72,6 +75,9 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       var destroySunwellQuest = new QuestDestroyCorruptedSunwell(_sunwell, corruptedSunwellPower, _quelthalas.GetPowerByType<FontOfPower>()!);
       _quelthalas.AddQuest(destroySunwellQuest);
       _quelthalas.DisplayDiscovered(destroySunwellQuest);
+      
+      if (_sunwellVial.OwningUnit == _sunwell.Unit)
+        ArtifactManager.Destroy(_sunwellVial);
     }
   }
 }

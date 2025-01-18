@@ -32,6 +32,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     {
       if (_targetArtifact.OwningUnit != null && _targetArtifact.OwningUnit == _targetLegend.Unit) 
         Progress = QuestProgress.Complete;
+
+      _targetArtifact.Disposed += (_, _) => Progress = QuestProgress.Failed;
     }
 
     private void OnPickedUp(object? sender, Artifact artifact)

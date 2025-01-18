@@ -11,6 +11,7 @@ namespace WarcraftLegacies.Source.Quests
   public sealed class QuestExtractSunwellVial : QuestData
   {
     private readonly Capital _sunwell;
+    private readonly Artifact _sunwellVial;
 
     /// <inheritdoc />
     public QuestExtractSunwellVial(Capital sunwell, Artifact sunwellVial) : base("Eternity, Distilled",
@@ -18,6 +19,7 @@ namespace WarcraftLegacies.Source.Quests
       @"ReplaceableTextures\CommandButtons\BTNPoTN_Sanctity_Potion.blp")
     {
       _sunwell = sunwell;
+      _sunwellVial = sunwellVial;
       AddObjective(new ObjectiveCastSpellFromUnit(ABILITY_A0OC_EXTRACT_VIAL_ALL, sunwell.Unit!));
       AddObjective(new ObjectiveLegendHasArtifact(sunwell, sunwellVial));
       IsFactionQuest = false;
@@ -33,8 +35,8 @@ namespace WarcraftLegacies.Source.Quests
     protected override void OnComplete(Faction completingFaction)
     {
       var sunwellPosition = _sunwell.Unit!.GetPosition();
-      var vial = CreateItem(ITEM_I018_VIAL_OF_THE_SUNWELL, sunwellPosition.X, sunwellPosition.Y);
-      ArtifactManager.Register(new Artifact(vial));
+      _sunwellVial.Item.SetPositionSafe(sunwellPosition);
+
       _sunwell.Unit!
         .RemoveAbility(ABILITY_A0OC_EXTRACT_VIAL_ALL)
         .SetMaximumMana(500);

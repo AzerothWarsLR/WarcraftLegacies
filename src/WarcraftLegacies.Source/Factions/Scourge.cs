@@ -367,7 +367,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
     private void RegisterQuelthalasRelatedQuests(Quelthalas quelthalas)
     {
       var questKelthuzadLich = AddQuest(new QuestKelthuzadLich(_allLegendSetup.Quelthalas.Sunwell,
-        _allLegendSetup.Scourge.Kelthuzad, quelthalas));
+        _allLegendSetup.Scourge.Kelthuzad, quelthalas, _artifactSetup.SunwellVial));
       AddQuest(new QuestKelthuzadDies(questKelthuzadLich, _allLegendSetup.Scourge.Kelthuzad));
     }
     
