@@ -6,6 +6,7 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Powers;
+using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Quelthalas;
 using WarcraftLegacies.Source.Quests.Sunfury;
 using WarcraftLegacies.Source.Setup;
@@ -108,6 +109,7 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
       AddQuest(new QuestSummonKil(_allLegendSetup.Stormwind.StormwindKeep, _allLegendSetup.Neutral.Karazhan, _allLegendSetup.Sunfury.Kael));
       AddQuest(new QuestForgottenKnowledge());
       AddQuest(new QuestWellOfEternity(_preplacedUnitSystem, _allLegendSetup.Sunfury.Kiljaeden));
+      AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
     }
   }
 }
