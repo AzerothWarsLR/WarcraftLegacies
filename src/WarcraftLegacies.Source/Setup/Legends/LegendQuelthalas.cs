@@ -10,12 +10,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
   {
     public LegendaryHero Anasterian { get; }
     public LegendaryHero Rommath { get; }
-    public LegendaryHero Solarian { get; }
     public LegendaryHero Sylvanas { get; }
-    public LegendaryHero Kael { get; }
     public LegendaryHero Lorthemar { get; }
-    public LegendaryHero Kiljaeden { get; }
-    public LegendaryHero Pathaleon { get; }
     public Capital Silvermoon { get; }
     public Capital Sunwell { get; }
     public Capital Spire { get; }
@@ -57,17 +53,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 4000
       };
 
-      Solarian = new LegendaryHero("Solarian")
-      {
-        UnitType = UNIT_U02V_HIGH_ASTROMANCER_SUNFURY,
-        StartingXp = 2800
-      };
-
-      Pathaleon = new LegendaryHero("Pathaleon")
-      {
-        UnitType = UNIT_H098_SUNFURY_MASTERMIND_HIGH_ELVES,
-        StartingXp = 1800
-      };
+    
 
       Sylvanas = new LegendaryHero("Sylvanas Windrunner")
       {
@@ -75,11 +61,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         PlayerColor = PLAYER_COLOR_GREEN
       };
 
-      Kael = new LegendaryHero("Kael'thas Sunstrider")
-      {
-        PlayerColor = PLAYER_COLOR_RED,
-        UnitType = UNIT_HKAL_PRINCE_OF_QUEL_THALAS_QUEL_THALAS
-      };
 
       Lorthemar = new LegendaryHero("Lor'themar Theron")
       {
@@ -87,14 +68,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 2800
       };
 
-      Kiljaeden = new LegendaryHero("Kil'jaeden")
-      {
-        UnitType = UNIT_U004_THE_DECEIVER_LEGION,
-        PermaDies = true,
-        StartingXp = 10800,
-        DeathMessage =
-          "Kil'jaeden the Deceiver has been annihilated, but it is too late for the Sunfury, who will continue to live and die with demonic taint coursing through their veins."
-      };
 
       Spire = new Capital
       {
@@ -107,12 +80,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       LegendaryHeroManager.Register(Anasterian);
       LegendaryHeroManager.Register(Rommath);
-      LegendaryHeroManager.Register(Solarian);
       LegendaryHeroManager.Register(Sylvanas);
-      LegendaryHeroManager.Register(Kael);
       LegendaryHeroManager.Register(Lorthemar);
-      LegendaryHeroManager.Register(Kiljaeden);
-      LegendaryHeroManager.Register(Pathaleon);
       CapitalManager.Register(Silvermoon);
       CapitalManager.Register(Sunwell);
       CapitalManager.Register(Spire);

@@ -68,6 +68,7 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
         _allLegendSetup.Quelthalas.Sunwell,
         _allLegendSetup.FelHorde.BlackTemple,
         _allLegendSetup.Druids.Nordrassil,
+        _allLegendSetup.Sunfury.WellOfEternity,
       };
 
       AddPower(new FontOfPower(fontsOfPower)
@@ -120,7 +121,7 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
             scourge
           }, new[]
           {
-            new ObjectiveLegendMeetsLegend(_allLegendSetup.Scourge.Arthas, _allLegendSetup.Quelthalas.Kael)
+            new ObjectiveLegendMeetsLegend(_allLegendSetup.Scourge.Arthas, _allLegendSetup.Sunfury.Kael)
           }));
     }
   }

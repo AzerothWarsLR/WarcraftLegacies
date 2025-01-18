@@ -3,7 +3,10 @@ using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
+using MacroTools.ResearchSystems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests.Quelthalas;
 using WarcraftLegacies.Source.Quests.Sunfury;
 using WarcraftLegacies.Source.Setup;
@@ -50,15 +53,16 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
         "sun"
       };
     }
-        
+
     /// <inheritdoc />
     public override void OnRegistered()
     {
       RegisterObjectLimits();
       RegisterQuests();
+      RegisterPowers();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
-    
+
     /// <inheritdoc />
     public override void OnNotPicked()
     {
@@ -68,6 +72,24 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
       Regions.TempestKeep.CleanupNeutralPassiveUnits();
       _preplacedUnitSystem.GetUnit(UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER).Remove();
       base.OnNotPicked();
+    }
+
+    private void RegisterPowers()
+    {
+      var fontsOfPower = new List<Capital>
+  {
+    _allLegendSetup.Quelthalas.Sunwell,
+    _allLegendSetup.FelHorde.BlackTemple,
+    _allLegendSetup.Druids.Nordrassil,
+    _allLegendSetup.Sunfury.WellOfEternity,
+  };
+
+      AddPower(new FontOfPower(fontsOfPower)
+      {
+        IconName = "PriestAdept",
+        Name = "Font of Power",
+        ResearchId = UPGRADE_ZBFO_FONT_OF_POWER_IS_ACTIVE_POWER
+      });
     }
 
     private void RegisterObjectLimits()
@@ -84,9 +106,9 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
       AddQuest(new QuestArea52(Regions.Area52Unlock));
       AddQuest(new QuestUpperNetherstorm(Regions.UpperNetherstorm));
       AddQuest(new QuestSolarian(_artifactSetup.EssenceofMurmur));
-      AddQuest(new QuestSummonKil(_allLegendSetup.Stormwind.StormwindKeep, _allLegendSetup.Neutral.Karazhan, _allLegendSetup.Quelthalas.Kael));
+      AddQuest(new QuestSummonKil(_allLegendSetup.Stormwind.StormwindKeep, _allLegendSetup.Neutral.Karazhan, _allLegendSetup.Sunfury.Kael));
       AddQuest(new QuestForgottenKnowledge());
-      AddQuest(new QuestWellOfEternity(_preplacedUnitSystem, _allLegendSetup.Quelthalas.Kiljaeden));
+      AddQuest(new QuestWellOfEternity(_preplacedUnitSystem, _allLegendSetup.Sunfury.Kiljaeden));
     }
   }
 }

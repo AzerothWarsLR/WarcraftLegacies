@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Powers
       {
         _isActive = value;
         var prefix = IsActive ? "" : "|cffc0c0c0";
-        Description = $"{prefix}All units deal 10% extra damage and regain 15% of the mana cost of abilities. Only active while your team controls the Sunwell, Black Temple, or Nordrassil.";
+        Description = $"{prefix}All units deal 10% extra damage and regain 15% of the mana cost of abilities. Only active while your team controls the Sunwell, the Well of Eternity, Black Temple, or Nordrassil.";
         var researchLevel = _isActive ? 1 : 0;
         foreach (var player in _playersWithPower)
           player.GetFaction()?.SetObjectLevel(ResearchId, researchLevel);
