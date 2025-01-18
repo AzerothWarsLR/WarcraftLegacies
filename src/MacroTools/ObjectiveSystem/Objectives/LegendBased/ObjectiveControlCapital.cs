@@ -24,20 +24,11 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       _target = target;
       Description = $"You control {target.Name}";
       _failOnControlLoss = failOnControlLoss;
-      if (target.Unit != null)
-      {
+      if (target.Unit != null) 
         TargetWidget = target.Unit;
-      }
 
       DisplaysPosition = true;
-      target.ChangedOwner += (_, _) => { RecalculateProgress(); };
-      target.UnitChanged += (_, _) => { RecalculateProgress(); };
-
-      CreateTrigger()
-        .RegisterUnitEvent(target.Unit, EVENT_UNIT_DEATH)
-        .AddAction(() => { Progress = QuestProgress.Failed; });
-
-      Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
+      Position = _target.Unit?.GetPosition();
     }
 
     public override void OnAdd(Faction whichFaction)
@@ -46,6 +37,12 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       {
         Progress = QuestProgress.Complete;
       }
+      _target.ChangedOwner += (_, _) => { RecalculateProgress(); };
+      _target.UnitChanged += (_, _) => { RecalculateProgress(); };
+
+      CreateTrigger()
+        .RegisterUnitEvent(_target.Unit, EVENT_UNIT_DEATH)
+        .AddAction(() => { Progress = QuestProgress.Failed; });
     }
 
     private void RecalculateProgress()

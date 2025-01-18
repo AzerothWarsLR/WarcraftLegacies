@@ -56,7 +56,7 @@ namespace WarcraftLegacies.Source.Powers
         AddObjective(new ObjectiveControlCapital(fontOfPower, false)
         {
           EligibleFactions = new List<Faction> { whichFaction }
-        });
+        }, whichFaction);
       RefreshIsActive();
     }
 
@@ -115,9 +115,10 @@ namespace WarcraftLegacies.Source.Powers
       SetUnitState(castingUnit, UNIT_STATE_MANA, GetUnitState(castingUnit, UNIT_STATE_MANA) + manaRefund);
     }
 
-    private void AddObjective(Objective objective)
+    private void AddObjective(Objective objective, Faction faction)
     {
       _objectives.Add(objective);
+      objective.OnAdd(faction);
       objective.ProgressChanged += OnObjectiveProgressChanged;
     }
 
