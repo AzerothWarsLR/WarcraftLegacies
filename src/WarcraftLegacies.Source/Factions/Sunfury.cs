@@ -4,7 +4,6 @@ using MacroTools.Extensions;
 using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-using MacroTools.ResearchSystems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests.Quelthalas;

@@ -7,11 +7,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
 {
   public sealed class LegendSunfury
   {
-    public LegendaryHero Solarian { get; private set; }
-    public LegendaryHero Kael { get; private set; }
-    public LegendaryHero Kiljaeden { get; private set; }
-    public LegendaryHero Pathaleon { get; private set; }
-    public Capital WellOfEternity { get; private set; }
+    public LegendaryHero Solarian { get; }
+    public LegendaryHero Kael { get; }
+    public LegendaryHero Kiljaeden { get; }
+    public LegendaryHero Pathaleon { get; }
+    public Capital WellOfEternity { get; }
 
     public LegendSunfury(PreplacedUnitSystem preplacedUnitSystem)
     {
@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         Unit = preplacedUnitSystem.GetUnit(UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER),
         Essential = true,
-        DeathMessage = "The Well of Eternity, once a beacon of immense power, has been destroyed. Its demise marks the end of an era, and the world breathes a sigh of relief."
+        DeathMessage = "The destruction of the original Well of Eternity tore apart the Azerothean supercontinent. The rupturing of its second successor reaches no such heights, but its absence is felt by Elves and arcanists the world over."
       };
 
       Solarian = new LegendaryHero("Solarian")

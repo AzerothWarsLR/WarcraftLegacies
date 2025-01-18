@@ -1,4 +1,5 @@
 using MacroTools.ArtifactSystem;
+using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
 using static War3Api.Common;
@@ -16,9 +17,12 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     /// <summary>
     /// Initializes a new instance of the <see cref="ObjectiveLegendHasArtifact"/> class.
     /// </summary>
-    public ObjectiveLegendHasArtifact(LegendaryHero targetLegend, Artifact targetArtifact)
+    public ObjectiveLegendHasArtifact(Legend targetLegend, Artifact targetArtifact)
     {
-      Description = $"{targetLegend.Name} has {GetItemName(targetArtifact.Item)}";
+      Description = targetLegend is LegendaryHero legendaryHero
+        ? $"{legendaryHero.Name} has {GetItemName(targetArtifact.Item)}"
+        : $"{targetLegend.Unit!.GetName()} has {GetItemName(targetArtifact.Item)}";
+
       _targetLegend = targetLegend;
       _targetArtifact = targetArtifact;
       targetArtifact.PickedUp += OnPickedUp;

@@ -1,6 +1,5 @@
 ﻿using MacroTools;
 using MacroTools.LegendSystem;
-using WarcraftLegacies.Source.Factions;
 using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Setup
@@ -101,10 +100,11 @@ namespace WarcraftLegacies.Source.Setup
     public LegendSkywall Skywall { get; }
 
     public LegendTwilight Twilight { get; }
-    
+
     public LegendGilneas Gilneas { get; }
 
     public LegendScarlet Scarlet { get; }
+
     public LegendSunfury Sunfury { get; }
 
     /// <summary>

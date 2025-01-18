@@ -1,4 +1,5 @@
 ﻿using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WCSharp.Events;
 using static War3Api.Common;
@@ -10,6 +11,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
   /// </summary>
   public sealed class ObjectiveCastSpellFromUnit : Objective
   {
+    private readonly int _spellId;
     private readonly unit _caster;
 
     /// <summary>
@@ -19,16 +21,22 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     /// <param name="caster">The caster that must cast the spell.</param>
     public ObjectiveCastSpellFromUnit(int spellId, unit caster)
     {
-      PlayerUnitEvents.Register(UnitEvent.SpellEffect, () =>
-      {
-        if (GetSpellAbilityId() == spellId)
-          Progress = QuestProgress.Complete;
-      }, caster);
       Description = $"Cast {GetObjectName(spellId)} from {caster.GetName()}";
       TargetWidget = caster;
       DisplaysPosition = true;
+      _spellId = spellId;
       _caster = caster;
       Position = _caster.GetPosition();
+    }
+
+    /// <inheritdoc />
+    public override void OnAdd(Faction faction)
+    {
+      PlayerUnitEvents.Register(UnitEvent.SpellEffect, () =>
+      {
+        if (GetSpellAbilityId() == _spellId && IsPlayerOnSameTeamAsAnyEligibleFaction(_caster.OwningPlayer()))
+          Progress = QuestProgress.Complete;
+      }, _caster);
     }
   }
 }
