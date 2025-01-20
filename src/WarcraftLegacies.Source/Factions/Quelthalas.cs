@@ -73,7 +73,7 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
 
       AddPower(new FontOfPower(fontsOfPower)
       {
-        IconName = "PriestAdept",
+        IconName = "FountainOfLife",
         Name = "Font of Power",
         ResearchId = UPGRADE_ZBFO_FONT_OF_POWER_IS_ACTIVE_POWER,
         ManaRefundPercentage = 0.15f,
