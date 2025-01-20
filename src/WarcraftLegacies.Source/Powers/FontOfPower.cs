@@ -18,6 +18,15 @@ namespace WarcraftLegacies.Source.Powers
     private bool _isActive;
     private readonly List<player> _playersWithPower = new();
 
+    /// <summary>Active when the <see cref="Power"/> is active, inactive otherwise.</summary>
+    public required int ResearchId { get; init; }
+    
+    /// <summary>How much mana to refund per mana cost spend on spells.</summary>
+    public required float ManaRefundPercentage { get; init; }
+    
+    /// <summary>How much additional damage is dealt per point of damage.</summary>
+    public required float BonusDamagePercentage { get; init; }
+    
     private bool IsActive
     {
       get => _isActive;
@@ -25,15 +34,12 @@ namespace WarcraftLegacies.Source.Powers
       {
         _isActive = value;
         var prefix = IsActive ? "" : "|cffc0c0c0";
-        Description = $"{prefix}All units deal 10% extra damage and regain 15% of the mana cost of abilities. Only active while your team controls the Sunwell, the Well of Eternity, Black Temple, or Nordrassil.";
+        Description = $"{prefix}All units deal {(int)(BonusDamagePercentage*100)}% extra damage and regain {(int)(ManaRefundPercentage*100)}% of the mana cost of abilities. Only active while your team controls the Sunwell, the Well of Eternity, Black Temple, or Nordrassil.";
         var researchLevel = _isActive ? 1 : 0;
         foreach (var player in _playersWithPower)
           player.GetFaction()?.SetObjectLevel(ResearchId, researchLevel);
       }
     }
-
-    /// <summary>Active when the <see cref="Power"/> is active, inactive otherwise.</summary>
-    public int ResearchId { get; init; }
 
     public FontOfPower(List<Capital> fontsOfPower)
     {
@@ -44,7 +50,7 @@ namespace WarcraftLegacies.Source.Powers
     public override void OnAdd(player whichPlayer)
     {
       PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerDealsDamage, OnDamage, GetPlayerId(whichPlayer));
-      PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerSpellEffect, OnSpellCast, GetPlayerId(whichPlayer));
+      PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerSpellEffect, RefundMana, GetPlayerId(whichPlayer));
       _playersWithPower.Add(whichPlayer);
     }
 
@@ -64,7 +70,7 @@ namespace WarcraftLegacies.Source.Powers
     public override void OnRemove(player whichPlayer)
     {
       PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerDealsDamage, OnDamage, GetPlayerId(whichPlayer));
-      PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerSpellEffect, OnSpellCast, GetPlayerId(whichPlayer));
+      PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerSpellEffect, RefundMana, GetPlayerId(whichPlayer));
       _playersWithPower.Remove(whichPlayer);
     }
 
@@ -94,25 +100,39 @@ namespace WarcraftLegacies.Source.Powers
       BlzSetEventDamage(GetEventDamage() * 1.1f);
     }
 
-    private void OnSpellCast()
+    private void RefundMana()
     {
       if (!IsActive) 
         return;
 
-      var castingUnit = GetTriggerUnit();
-      if (castingUnit == null) 
+      var caster = GetTriggerUnit();
+      if (caster == null) 
         return;
 
       var abilityId = GetSpellAbilityId();
-      var abilityLevel = GetUnitAbilityLevel(castingUnit, abilityId);
-      var manaCost = BlzGetUnitAbilityManaCost(castingUnit, abilityId, abilityLevel - 1);
+      var abilityLevel = GetUnitAbilityLevel(caster, abilityId);
+      var manaCost = BlzGetUnitAbilityManaCost(caster, abilityId, abilityLevel - 1);
 
       if (manaCost <= 0)
         return;
-      
+
       var manaRefund = manaCost * 0.15f;
-      
-      SetUnitState(castingUnit, UNIT_STATE_MANA, GetUnitState(castingUnit, UNIT_STATE_MANA) + manaRefund);
+      var currentMana = GetUnitState(caster, UNIT_STATE_MANA);
+      if (GetUnitState(caster, UNIT_STATE_MANA) + manaRefund > GetUnitState(caster, UNIT_STATE_MAX_MANA))
+      {
+        //WC3's spell event triggers before mana cost is subtracted, so if the caster is already near maximum mana,
+        //we need to defer the refund until later.
+        CreateTimer().Start(0, false, () =>
+        {
+          SetUnitState(caster, UNIT_STATE_MANA, GetUnitState(caster, UNIT_STATE_MANA) + manaRefund);
+          GetExpiredTimer().Destroy();
+        });
+      }
+      else
+      {
+        //If the caster is not near maximum mana, do it the simple way, performant way.
+        SetUnitState(caster, UNIT_STATE_MANA, currentMana + manaRefund);
+      }
     }
 
     private void AddObjective(Objective objective, Faction faction)
