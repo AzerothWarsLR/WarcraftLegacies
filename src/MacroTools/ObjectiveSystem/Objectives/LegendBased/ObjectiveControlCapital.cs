@@ -11,39 +11,24 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
   /// </summary>
   public sealed class ObjectiveControlCapital : Objective
   {
-    private readonly bool _canFail;
+    private readonly bool _failOnControlLoss;
     private readonly Legend _target;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="ObjectiveControlCapital"/> class.
     /// </summary>
     /// <param name="target">The <see cref="Capital"/> that needs to be controlled to complete the objective.</param>
-    /// <param name="canFail">If true, the objective will fail whenever the target is destroyed or you lose control.</param>
-    public ObjectiveControlCapital(Capital target, bool canFail)
+    /// <param name="failOnControlLoss">If true, the objective will fail when control of the capital is lost for the tirst time.</param>
+    public ObjectiveControlCapital(Capital target, bool failOnControlLoss)
     {
       _target = target;
       Description = $"You control {target.Name}";
-      _canFail = canFail;
-      if (target.Unit != null)
-      {
+      _failOnControlLoss = failOnControlLoss;
+      if (target.Unit != null) 
         TargetWidget = target.Unit;
-      }
 
       DisplaysPosition = true;
-      target.ChangedOwner += (_, _) => { RecalculateProgress(); };
-      target.UnitChanged += (_, _) => { RecalculateProgress(); };
-
-      CreateTrigger()
-        .RegisterUnitEvent(target.Unit, EVENT_UNIT_DEATH)
-        .AddAction(() =>
-        {
-          if (_canFail)
-          {
-            Progress = QuestProgress.Failed;
-          }
-        });
-      
-      Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
+      Position = _target.Unit?.GetPosition();
     }
 
     public override void OnAdd(Faction whichFaction)
@@ -52,6 +37,12 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       {
         Progress = QuestProgress.Complete;
       }
+      _target.ChangedOwner += (_, _) => { RecalculateProgress(); };
+      _target.UnitChanged += (_, _) => { RecalculateProgress(); };
+
+      CreateTrigger()
+        .RegisterUnitEvent(_target.Unit, EVENT_UNIT_DEATH)
+        .AddAction(() => { Progress = QuestProgress.Failed; });
     }
 
     private void RecalculateProgress()
@@ -59,7 +50,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
         Progress = QuestProgress.Complete;
       else
-        Progress = _canFail ? QuestProgress.Failed : QuestProgress.Incomplete;
+        Progress = _failOnControlLoss ? QuestProgress.Failed : QuestProgress.Incomplete;
     }
   }
 }

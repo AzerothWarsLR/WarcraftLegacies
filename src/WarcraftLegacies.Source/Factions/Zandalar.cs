@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Zandalar;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
@@ -81,6 +82,7 @@ Join up with your allies and brace for a tough fight and counter-attack. ";
       AddQuest(new QuestZulgurub(_allLegendSetup));
       AddQuest(new QuestHakkar(_artifactSetup.ZinRokh));
       AddQuest(new QuestZandalarOutpost());
+      AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
     }
   }
 }

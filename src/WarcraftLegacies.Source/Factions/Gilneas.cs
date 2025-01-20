@@ -91,6 +91,7 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       AddQuest(new QuestTempestReach());
       AddQuest(new QuestGilneasCity(_gilneasGate));
       AddQuest(new QuestCrowley());
+      AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
     }
     
     private void RegisterBookOfMedivhQuest(Legion legion)

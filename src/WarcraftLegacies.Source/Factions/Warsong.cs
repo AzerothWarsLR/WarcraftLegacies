@@ -5,6 +5,7 @@ using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Warsong;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
@@ -15,15 +16,18 @@ namespace WarcraftLegacies.Source.Factions
   {
     private readonly PreplacedUnitSystem _preplacedUnitSystem;
     private readonly AllLegendSetup _allLegendSetup;
+    private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
     
-    public Warsong(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Warsong", PLAYER_COLOR_ORANGE, "|c00ff8000",
+    public Warsong(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
+      : base("Warsong", PLAYER_COLOR_ORANGE, "|c00ff8000",
       @"ReplaceableTextures\CommandButtons\BTNHellScream.blp")
     {
       TraditionalTeam = TeamSetup.Horde;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
+      _artifactSetup = artifactSetup;
       UndefeatedResearch = FourCC("R05W");
       StartingGold = 200;
       CinematicMusic = "DarkAgents";
@@ -72,6 +76,7 @@ The Night Elves are aware of your presence and are gathering a mighty host again
       AddQuest(new QuestWarsongKillDruids(_allLegendSetup.Druids.Nordrassil, _allLegendSetup.Warsong.GromHellscream));
       AddQuest(new QuestMoreWyverns(_allLegendSetup.Sentinels.Feathermoon, _allLegendSetup.Sentinels.Auberdine));
       AddQuest(new QuestWarsongHold());
+      AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
     }
 
     private void RegisterDialogue()

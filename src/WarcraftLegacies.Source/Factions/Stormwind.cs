@@ -2,6 +2,7 @@
 using MacroTools.FactionSystem;
 using System.Collections.Generic;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Stormwind;
 using WarcraftLegacies.Source.Researches.Stormwind;
 using WarcraftLegacies.Source.Setup;
@@ -79,6 +80,7 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
       }));
       AddQuest(new QuestKingdomOfManStormwind(_artifactSetup.CrownOfLordaeron, _artifactSetup.CrownOfStormwind,
         _allLegendSetup.Stormwind.Varian));
+      AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
     }
     
     private void RegisterResearches()

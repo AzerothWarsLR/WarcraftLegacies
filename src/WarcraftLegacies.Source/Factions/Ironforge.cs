@@ -3,6 +3,7 @@ using MacroTools;
 using MacroTools.FactionSystem;
 using MacroTools.ResearchSystems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Ironforge;
 using WarcraftLegacies.Source.Researches.Ironforge;
 using WarcraftLegacies.Source.Setup;
@@ -14,15 +15,17 @@ namespace WarcraftLegacies.Source.Factions
   {
     private readonly PreplacedUnitSystem _preplacedUnitSystem;
     private readonly AllLegendSetup _allLegendSetup;
+    private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
     
-    public Ironforge(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Ironforge",
+    public Ironforge(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Ironforge",
       PLAYER_COLOR_YELLOW, "|C00FFFC01", @"ReplaceableTextures\CommandButtons\BTNHeroMountainKing.blp")
     {
       TraditionalTeam = TeamSetup.SouthAlliance;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
+      _artifactSetup = artifactSetup;
       UndefeatedResearch = FourCC("R05T");
       StartingGold = 200;
       CinematicMusic = "PursuitTheme";
@@ -75,6 +78,7 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       AddQuest(new QuestGnomeregan(Regions.Gnomergan));
       AddQuest(new QuestDarkIron(Regions.Shadowforge_City, _allLegendSetup.FelHorde.BlackTemple, _allLegendSetup.Ironforge.Magni));
       AddQuest(new QuestWildhammer(_allLegendSetup.Ironforge.Magni));
+      AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
 
       var missingArtifacts = new int[]
       {

@@ -97,6 +97,8 @@ namespace WarcraftLegacies.Source.Setup
     /// </summary>
     public Artifact BronzeFragment { get; }
     
+    public Artifact SunwellVial { get; set; }
+    
     /// <summary>
     /// Sets up <see cref="ArtifactSetup"/>.
     /// </summary>
@@ -192,6 +194,12 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddAbility(worgenBloodShamanHero, Artifact.ArtifactHolderAbilId);
       UnitAddItem(worgenBloodShamanHero, ScytheOfElune.Item);
       ArtifactManager.Register(ScytheOfElune);
+      
+      SunwellVial = new Artifact(CreateItem(ITEM_I018_VIAL_OF_THE_SUNWELL, DummyX, DummyX));
+      var sunwell = preplacedUnitSystem.GetUnit(UNIT_N001_THE_SUNWELL_QUEL_THALAS_OTHER);
+      UnitAddAbility(sunwell, Artifact.ArtifactHolderAbilId);
+      UnitAddItem(sunwell, SunwellVial.Item);
+      ArtifactManager.Register(SunwellVial);
     }
   }
 }

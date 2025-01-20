@@ -8,6 +8,7 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.Powers;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Powers;
+using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Sentinels;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
@@ -82,6 +83,7 @@ Once you have secured your holdings, gather your army and destroy the Old Gods. 
       AddQuest(new QuestSentinelsKillCthun(_allLegendSetup.Ahnqiraj.Cthun));
       AddQuest(new QuestScepterOfTheQueenSentinels(questFeathermoon, Regions.TheAthenaeum, _artifactSetup.ScepterOfTheQueen));
       AddQuest(new QuestVaultoftheWardens(_allLegendSetup.Sentinels.Maiev, _allLegendSetup.Sentinels.VaultOfTheWardens));
+      AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
     }
 
     private void RegisterDialogue()

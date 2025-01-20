@@ -4,6 +4,7 @@ using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.KulTiras;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
@@ -14,14 +15,16 @@ namespace WarcraftLegacies.Source.Factions
   {
     private readonly AllLegendSetup _allLegendSetup;
     private readonly unit _proudmooreCapitalShip;
+    private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
     
-    public Kultiras(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Kul'tiras",
+    public Kultiras(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Kul'tiras",
       PLAYER_COLOR_EMERALD, "|cff00781e", @"ReplaceableTextures\CommandButtons\BTNProudmoore.blp")
     {
       TraditionalTeam = TeamSetup.SouthAlliance;
       _allLegendSetup = allLegendSetup;
+      _artifactSetup = artifactSetup;
       _proudmooreCapitalShip = preplacedUnitSystem.GetUnit(UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS);
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_H09W_CONTROL_POINT_DEFENDER_KUL_TIRAS;
@@ -69,6 +72,7 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       AddQuest(new QuestHighBank(Regions.HighbankUnlock, _allLegendSetup.Kultiras.LegendKatherine));
       AddQuest(new QuestBeyondPortal(_allLegendSetup.FelHorde.HellfireCitadel,
         _allLegendSetup.FelHorde.KilsorrowFortress));
+      AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
     }
 
     private void RegisterDialogue(Frostwolf frostwolf)

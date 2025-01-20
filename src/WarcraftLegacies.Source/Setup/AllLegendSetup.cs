@@ -100,10 +100,12 @@ namespace WarcraftLegacies.Source.Setup
     public LegendSkywall Skywall { get; }
 
     public LegendTwilight Twilight { get; }
-    
+
     public LegendGilneas Gilneas { get; }
-    
+
     public LegendScarlet Scarlet { get; }
+
+    public LegendSunfury Sunfury { get; }
 
     /// <summary>
     /// Contains references to all Neutral <see cref="Legend"/>s.
@@ -140,6 +142,7 @@ namespace WarcraftLegacies.Source.Setup
       Skywall = new LegendSkywall(preplacedUnitSystem);
       Twilight = new LegendTwilight();
       Scarlet = new LegendScarlet(preplacedUnitSystem);
+      Sunfury = new LegendSunfury(preplacedUnitSystem);
     }
 
     /// <summary>
@@ -172,6 +175,7 @@ namespace WarcraftLegacies.Source.Setup
       Neutral.RegisterLegends();
       Gilneas.RegisterLegends();
       Scarlet.RegisterLegends();
+      Sunfury.RegisterLegends();
     }
   }
 }
