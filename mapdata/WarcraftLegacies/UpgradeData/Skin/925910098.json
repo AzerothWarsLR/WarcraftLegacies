@@ -1,6 +1,6 @@
 {
   "OldId": 1802331474,
-  "NewId": 875578450,
+  "NewId": 925910098,
   "Unk": [
     0
   ],
@@ -9,25 +9,25 @@
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "Alligned Crystal Mechanism"
+      "Value": "Improved Crystal Discharge"
     },
     {
       "Level": 1,
       "Id": 829579623,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNCrystalShield.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEarthCrystalElement.blp"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Give Polybolos 25% bonus attack speed."
+      "Value": "Improve the stun duration for Crystal Discharge from 0.15 and 1 to 0.30 and 2"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "Research Alligned Crystal Mechanism"
+      "Value": "Research Improved Crystal Discharge"
     },
     {
       "Level": 1,

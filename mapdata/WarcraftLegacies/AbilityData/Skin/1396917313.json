@@ -1,0 +1,100 @@
+{
+  "OldId": 1651787841,
+  "NewId": 1396917313,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Crystal Spire)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Crystal Discharge"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Greater Storm Bolt (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "A magical hammer that is thrown at an enemy unit, causing damage and stunning the target. |n|n|cffffcc00Level 1|r - 250 damage, 4 second stun. 2 second on Heroes.|n|cffffcc00Level 2|r - 300 damage, 5 second stun. 2.5 seconds on Heroes.|n|cffffcc00Level 3|r - 350 damage, 6 second stun. 3 seconds on Heroes.|n|cffffcc00Level 4|r - 400 damage, 7 second stun. 3.5 seconds on Heroes"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Crystal Discharge - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Crystal Discharge - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Greater Storm Bolt (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Greater Storm Bolt (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Launches a Crystal at a target enemy unit, stunning the target for 1 seconds. (0.15 for heroes)"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Launches a Crystal at a target enemy unit, stunning the target for 2 seconds. (0.3 for heroes)"
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Throws a magical hammer at a target enemy unit, dealing 350 damage and stunning the target for 6 seconds. Lasts 3 seconds on heroes."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Throws a magical hammer at a target enemy unit, dealing 400 damage and stunning the target for 7 seconds. Lasts 3.5 seconds on heroes."
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDraenei Crystals.blp"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 0
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    }
+  ]
+}

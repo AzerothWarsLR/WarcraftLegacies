@@ -52,6 +52,8 @@
       yield return new("RD04", Unlimited); //Polybolos Upgrade
       yield return new("RD06", Unlimited); //Azerotian Breed
       yield return new("RD05", Unlimited); //Elek Knight Upgrade
+      yield return new("RD07", Unlimited); //Crystal Discharge
+      yield return new("RD08", Unlimited); //Mana Syphon
     }
   }
 }

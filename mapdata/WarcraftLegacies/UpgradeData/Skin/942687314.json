@@ -1,6 +1,6 @@
 {
   "OldId": 1802331474,
-  "NewId": 875578450,
+  "NewId": 942687314,
   "Unk": [
     0
   ],
@@ -9,25 +9,25 @@
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "Alligned Crystal Mechanism"
+      "Value": "Mana Syphon"
     },
     {
       "Level": 1,
       "Id": 829579623,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNCrystalShield.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNNeutralManaShield.blp"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Give Polybolos 25% bonus attack speed."
+      "Value": "Enable the Astral Sanctum to cast Mana Syphon"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "Research Alligned Crystal Mechanism"
+      "Value": "Research Mana Syphon"
     },
     {
       "Level": 1,
