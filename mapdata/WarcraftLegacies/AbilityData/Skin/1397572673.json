@@ -31,7 +31,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Mana Syphon"
+      "Value": "Arcane Infusion"
     },
     {
       "Id": 1952543841,
@@ -42,13 +42,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Mana Syphon"
+      "Value": "Arcane Infusion"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Restores 240 mana to target unit.|n|n|cffffcc0090 second cooldown.|nGlobal range"
+      "Value": "Restores 240 mana to a target unit anywhere on the map.\r\n\r\n"
     },
     {
       "Id": 1802007905,

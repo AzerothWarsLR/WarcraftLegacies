@@ -63,13 +63,13 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Launches a Crystal at a target enemy unit, stunning the target for 1 seconds. (0.15 for heroes)"
+      "Value": "Launches a Crystal at a target enemy unit anywhere on the map, stunning the target for 1 seconds. (0.15 for heroes)"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Launches a Crystal at a target enemy unit, stunning the target for 2 seconds. (0.3 for heroes)"
+      "Value": "Launches a Crystal at a target enemy unit anywhere on the map, stunning the target for 2 seconds. (0.3 for heroes)\r\n\r\n"
     },
     {
       "Level": 3,
