@@ -50,6 +50,8 @@
       yield return new("RD01", Unlimited); //Defender Upgrade
       yield return new("RD02", Unlimited); //Rangari Upgrade
       yield return new("RD04", Unlimited); //Polybolos Upgrade
+      yield return new("RD06", Unlimited); //Azerotian Breed
+      yield return new("RD05", Unlimited); //Elek Knight Upgrade
     }
   }
 }
