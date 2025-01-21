@@ -9,7 +9,7 @@
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "Arcane Infusion"
+      "Value": "Restore Mana"
     },
     {
       "Level": 1,
@@ -21,13 +21,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Allows Astral Sanctum to use Arcane Infusion, which restores 240 mana to a target unit anywhere on the map.\r\n\r\n"
+      "Value": "Allows Astral Sanctum to use Restore Mana, which restores 240 mana to a target unit anywhere on the map.\r\n\r\n"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "Research Arcane Infusion"
+      "Value": "Research Restore Mana"
     },
     {
       "Level": 1,
