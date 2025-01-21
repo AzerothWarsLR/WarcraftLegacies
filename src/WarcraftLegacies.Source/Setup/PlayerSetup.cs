@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Setup
       SetupPlayer(Player(11), new Druids(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
       SetupPlayer(Player(12), new BlackEmpire(_preplacedUnitSystem, _allLegendSetup));
       SetupPlayer(Player(16), new Ahnqiraj(_preplacedUnitSystem, _allLegendSetup));
-      SetupPlayer(Player(18), new Sentinels(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
+      Player(18).SetTeam(TeamSetup.Kalimdor);
       Player(15).SetTeam(TeamSetup.Outland);
       SetupPlayer(Player(22), new Kultiras(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
       SetupPlayer(Player(23), new Legion(_preplacedUnitSystem, _allLegendSetup));
