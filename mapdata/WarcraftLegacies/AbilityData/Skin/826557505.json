@@ -1,6 +1,6 @@
 {
-  "OldId": 828655937,
-  "NewId": 1179922497,
+  "OldId": 1919054401,
+  "NewId": 826557505,
   "Unk": [
     0
   ],
@@ -8,12 +8,18 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Attachment)"
+      "Value": "(Draenei attachement)"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Defender Shield"
+      "Value": "Defender Shield Visual"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Defender Shield Visual"
     },
     {
       "Id": 1952543841,
@@ -24,10 +30,6 @@
       "Id": 811693153,
       "Type": 3,
       "Value": "hand,right"
-    },
-    {
-      "Id": 1667331169,
-      "Value": 1
     }
   ]
 }

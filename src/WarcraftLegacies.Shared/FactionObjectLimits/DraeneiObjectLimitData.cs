@@ -1,4 +1,4 @@
-namespace WarcraftLegacies.Shared.FactionObjectLimits
+﻿namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
   public static class DraeneiObjectLimitData
   {
@@ -47,6 +47,9 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("H09M", 1); //Adal
       yield return new("R078", Unlimited); //Elementalist training
       yield return new("R07C", Unlimited); //Luminarch training
+      yield return new("RD01", Unlimited); //Defender Upgrade
+      yield return new("RD02", Unlimited); //Rangari Upgrade
+      yield return new("RD04", Unlimited); //Polybolos Upgrade
     }
   }
 }
