@@ -81,7 +81,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       SpellSystem.Register(summonGateway);
 
-      var manaSyphon2 = new GrantMana(ABILITY_ADMS_MANA_SYPHON_DRAENEI_CASTER_BUILDING)
+      var manaSyphon2 = new GrantMana(ABILITY_ADMS_RESTORE_MANA_DRAENEI_CASTER_BUILDING)
       {
         ManaToGrant = 240
       };
