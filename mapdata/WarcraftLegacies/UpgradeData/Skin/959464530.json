@@ -1,6 +1,6 @@
 {
   "OldId": 1802331474,
-  "NewId": 909132882,
+  "NewId": 959464530,
   "Unk": [
     0
   ],
@@ -9,31 +9,31 @@
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "Azerotian Husbandry"
+      "Value": "Endless Energy"
     },
     {
       "Level": 1,
       "Id": 829579623,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNStormWyrmEgg.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNManaBreathe.blp"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Give Nether Rays a 50 extra moment speed and 200 extra health."
+      "Value": "Double the Arcane Wells mana regeneration."
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "Research Azerotian Husbandry"
+      "Value": "Research Endless Energy"
     },
     {
       "Level": 1,
       "Id": 829122663,
       "Type": 3,
-      "Value": "X"
+      "Value": "E"
     },
     {
       "Level": 1,
@@ -43,11 +43,11 @@
     },
     {
       "Id": 2037408359,
-      "Value": 2
+      "Value": 0
     },
     {
       "Id": 2020631143,
-      "Value": 1
+      "Value": 2
     }
   ]
 }

@@ -54,6 +54,7 @@
       yield return new("RD05", Unlimited); //Elek Knight Upgrade
       yield return new("RD07", Unlimited); //Crystal Discharge
       yield return new("RD08", Unlimited); //Mana Syphon
+      yield return new("RD09", Unlimited); //Endless Energy
     }
   }
 }
