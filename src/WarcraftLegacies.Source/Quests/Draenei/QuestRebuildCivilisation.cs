@@ -10,7 +10,7 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 namespace WarcraftLegacies.Source.Quests.Draenei
 {
   /// <summary>
-  /// Build various structures inside <see cref="Regions.AzuremystAmbient"/>
+  /// Take control of Darkshore
   /// </summary>
   public sealed class QuestRebuildCivilisation : QuestData
   {
@@ -18,10 +18,10 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestRebuildCivilisation"/> class.
     /// </summary>
-    public QuestRebuildCivilisation(Rectangle rescueRect, LegendaryHero velen) : base("The Way Forward", "The Draenei will need to rebuild their civilisation in Azeroth. Desolace seems like a perfect place for the birth of the second Draenei settlement.", @"ReplaceableTextures\CommandButtons\BTNDraeneiDivineCitadel.blp")
+    public QuestRebuildCivilisation(Rectangle rescueRect) : base("The Way Forward", "The Draenei will need to rebuild their civilisation in Azeroth. Darkshore seems like a perfect place for the birth of the second Draenei settlement.", @"ReplaceableTextures\CommandButtons\BTNDraeneiDivineCitadel.blp")
     {
       
-      AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.DraeneiQuestKill }, "in Desolace"));
+      AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.Darkshore }, "in Darkshore"));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       ResearchId = UPGRADE_R082_QUEST_COMPLETED_THE_WAY_FORWARD;
@@ -41,6 +41,6 @@ namespace WarcraftLegacies.Source.Quests.Draenei
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Gain an Outpost in Desolace and Maraad is now trainable at the altar.";
+      "Gain an Outpost in Darkshore and Maraad is now trainable at the altar.";
   }
 }
