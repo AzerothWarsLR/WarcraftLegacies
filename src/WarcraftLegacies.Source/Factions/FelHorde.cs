@@ -3,6 +3,7 @@ using MacroTools;
 using MacroTools.FactionSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Fel_Horde;
+using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Fel_Horde;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
@@ -13,15 +14,17 @@ namespace WarcraftLegacies.Source.Factions
   {
     private readonly PreplacedUnitSystem _preplacedUnitSystem;
     private readonly AllLegendSetup _allLegendSetup;
+    private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
     
-    public FelHorde(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Fel Horde",
+    public FelHorde(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Fel Horde",
       PLAYER_COLOR_GREEN, "|c0020c000", @"ReplaceableTextures\CommandButtons\BTNPitLord.blp")
     {
       TraditionalTeam = TeamSetup.Outland;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
+      _artifactSetup = artifactSetup;
       UndefeatedResearch = FourCC("R05L");
       StartingGold = 200;
       CinematicMusic = "Doom";
@@ -78,6 +81,7 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare for a 
         _preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_1.Center),
         _preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_2.Center),
         _preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_3.Center)));
+      AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
     }
   }
 }

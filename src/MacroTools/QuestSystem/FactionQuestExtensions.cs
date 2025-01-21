@@ -29,7 +29,7 @@ namespace MacroTools.QuestSystem
     {
       var display = !string.IsNullOrEmpty(questData.PenaltyFlavour)
         ? $"\n|cffffcc00QUEST FAILED - {questData.Title}|r\n{questData.PenaltyFlavour}\n"
-        : $"\n|cffffcc00QUEST FAILED - {questData.Title}|r\n{questData.Flavour}\n";
+        : $"\n|cffffcc00QUEST FAILED - {questData.Title}|r\n";
 
       foreach (var objective in questData.Objectives)
         if (objective.ShowsInQuestLog)

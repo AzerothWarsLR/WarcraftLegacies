@@ -9,6 +9,7 @@ using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Druids;
 using WarcraftLegacies.Source.Powers;
+using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Druids;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
@@ -85,6 +86,7 @@ Gather your forces and strike before the Old Gods can organize their efforts.";
       AddQuest(new QuestDruidsKillCthun(_allLegendSetup.Ahnqiraj.Cthun));
       AddQuest(new QuestShaladrassil(_allLegendSetup.Neutral.Shaladrassil));
       AddQuest(new QuestTortolla(_allLegendSetup.Druids.Tortolla));
+      AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
     }
 
     private void RegisterDialogue()

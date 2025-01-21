@@ -9,6 +9,7 @@ using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Naga;
 using WarcraftLegacies.Source.Setup;
 
@@ -96,6 +97,7 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
       }));
       AddQuest(new QuestRegroupCastaway());
       AddQuest(new QuestBlackrookHold(_allLegendSetup.Sentinels.BlackrookHold));
+      AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
     }
 
     private void RegisterDialogue()

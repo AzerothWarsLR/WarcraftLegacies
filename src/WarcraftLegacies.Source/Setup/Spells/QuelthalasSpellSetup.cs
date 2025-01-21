@@ -70,9 +70,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
           ABILITY_AHPX_ASHES_OF_AL_AR_QUEL_THALAS_ANASTERIAN_KAEL_THAS
         }
       });
-
-      //Todo: create an "Extract Vial" spell for the Sunwell and assign it below
-      SpellSystem.Register(new ExtractSunwellVial(ABILITY_A0OC_EXTRACT_VIAL_ALL, ITEM_I018_VIAL_OF_THE_SUNWELL));
     }
   }
 }
