@@ -55,6 +55,7 @@
       yield return new("RD07", Unlimited); //Crystal Discharge
       yield return new("RD08", Unlimited); //Mana Syphon
       yield return new("RD09", Unlimited); //Endless Energy
+      yield return new("RD10", Unlimited); //Naarus Shield
     }
   }
 }
