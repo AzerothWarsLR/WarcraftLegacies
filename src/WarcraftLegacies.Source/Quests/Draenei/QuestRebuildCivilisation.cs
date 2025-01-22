@@ -3,7 +3,6 @@ using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
-using MacroTools.LegendSystem;
 using System.Collections.Generic;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 
