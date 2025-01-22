@@ -8,12 +8,12 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNOldschoolGrunt.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNChaosGeneral.blp"
     },
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "Revive Dragonmaw Chieftain"
+      "Value": "Revive Mor\u0027ghor"
     },
     {
       "Id": 1718840949,
@@ -23,7 +23,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Warlord1.mdl"
+      "Value": "war3mapImported\\WarlordChaos1.mdl"
     },
     {
       "Id": 1953458293,
@@ -31,34 +31,29 @@
       "Value": "W"
     },
     {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 0.9
-    },
-    {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Dragonmaw Chieftain"
+      "Value": "Overlord"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "Nek\u0027rosh Skullcrusher"
+      "Value": "Mor\u0027ghor"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "Revive Dragonmaw Chieftain"
+      "Value": "Revive Mor\u0027ghor"
     },
     {
       "Id": 1769173877,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNOldschoolGrunt.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNChaosGeneral.blp"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Summon Nek\u0027rosh"
+      "Value": "Summon Mor\u0027ghor"
     },
     {
       "Id": 1651864693,
@@ -83,6 +78,11 @@
       "Id": 828468597,
       "Type": 2,
       "Value": 0
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.5
     }
   ]
 }

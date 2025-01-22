@@ -13,7 +13,7 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "Revive Demigod"
+      "Value": "Revive Fetid Devourer"
     },
     {
       "Id": 1718840949,
@@ -23,7 +23,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "Units\\Creeps\\Hydra\\Hydra.mdl"
+      "Value": "war3mapImported\\HeroAncientHydra4.mdl"
     },
     {
       "Id": 1953458293,
@@ -36,24 +36,19 @@
       "Value": "Abilities\\Weapons\\LichMissile\\LichMissile.mdl"
     },
     {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 1.2
-    },
-    {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Demigod"
+      "Value": "Aberration"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "Gahz\u0027rilla"
+      "Value": "Fetid Devourer"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "Revive Demigod"
+      "Value": "Revive Fetid Devourer"
     },
     {
       "Id": 1769173877,
@@ -63,7 +58,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Train Gahz\u0027rilla"
+      "Value": "Train Fetid Devourer"
     },
     {
       "Id": 1651864693,
@@ -107,6 +102,11 @@
     {
       "Id": 2020631157,
       "Value": 1
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
     }
   ]
 }

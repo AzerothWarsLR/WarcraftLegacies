@@ -44,6 +44,11 @@
       "Id": 1953850229,
       "Type": 3,
       "Value": "- Heal,- Heal|n- Stasis Trap,- Heal|n- Stasis Trap|n- Hex"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\ZandalariWitchDoctor.mdl"
     }
   ]
 }

@@ -8,12 +8,12 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcWarrior.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTagarSpinebreakerMagharOrcB.blp"
     },
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "Revive Gorfax"
+      "Value": "Revive Tagar"
     },
     {
       "Id": 2020631157,
@@ -31,7 +31,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Grunt Captain.mdl"
+      "Value": "war3mapImported\\TagarSpinebreakerBrown.mdl"
     },
     {
       "Id": 1953458293,
@@ -46,7 +46,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Blood Warrior"
+      "Value": "Chieftain of the Bonechewer Clan"
     },
     {
       "Id": 1970434165,
@@ -55,17 +55,17 @@
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "Gorfax Angerfang"
+      "Value": "Tagar Spinebreaker"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "Revive Gorfax"
+      "Value": "Revive Tagar"
     },
     {
       "Id": 1769173877,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcWarrior.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNTagarSpinebreakerMagharOrcB.blp"
     },
     {
       "Id": 1751675765,
@@ -80,7 +80,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Summon Gorfax"
+      "Value": "Summon Tagar"
     },
     {
       "Id": 1651864693,

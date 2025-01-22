@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNDragonRoost.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDragonRoostDM.blp"
     },
     {
       "Id": 2020631157,
@@ -37,17 +37,22 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Dragon Hatchery"
+      "Value": "Dragon Roost"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Dragon Hatchery"
+      "Value": "Build Dragon Roost"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "buildings\\other\\DragonBuilding\\DragonBuilding.mdl"
+      "Value": "war3mapImported\\DragonRoost.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.9
     }
   ]
 }
