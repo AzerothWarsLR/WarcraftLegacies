@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       PassiveAbilityManager.Register(new OilUser(UNIT_NTIN_CHIEF_ENGINEER_GOBLIN));
       PassiveAbilityManager.Register(new OilUser(UNIT_N062_SHREDDER_GOBLIN));
       PassiveAbilityManager.Register(new OilUser(UNIT_H08Z_ASSAULT_TANK_GOBLIN));
-      PassiveAbilityManager.Register(new OilUser(UNIT_H09H_SIEGE_WALKER_GOBLIN));
+      PassiveAbilityManager.Register(new OilUser(UNIT_H09H_WALKER_GOBLIN));
       PassiveAbilityManager.Register(new OilUser(UNIT_O01M_ENGINEER_S_GUILD_GOBLIN_SPECIALIST));
       PassiveAbilityManager.Register(new OilUser(UNIT_NTIN_CHIEF_ENGINEER_GOBLIN));
       PassiveAbilityManager.Register(new OilUser(UNIT_H09I_PERSONAL_TANK_GOBLIN));

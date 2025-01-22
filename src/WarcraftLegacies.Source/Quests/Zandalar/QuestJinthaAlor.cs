@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
   public sealed class QuestJinthaAlor : QuestData
   {
     private const int JinthaalorResearch = UPGRADE_R02N_QUEST_COMPLETED_THE_ANCIENT_EGG_WARSONG;
-    private const int BearRiderId = UNIT_O02K_BEAR_RIDER_ZANDALAR;
+    private const int BearRiderId = UNIT_O02K_NALORAKK_S_RIDER_ZANDALAR;
     private const int TrollShrineId = UNIT_O04X_LOA_SHRINE_ZANDALARI_SIEGE;
     private readonly int _goldReward = 50;
 
