@@ -1,0 +1,110 @@
+[
+  {
+    "Flags": 2,
+    "OwnerId": 27,
+    "Hp": -1,
+    "Mp": -1,
+    "TargetAcquisition": -1,
+    "HeroLevel": 1,
+    "InventoryData": [],
+    "AbilityData": [],
+    "CustomPlayerColorId": -1,
+    "WaygateDestinationRegionId": -1,
+    "TypeId": 1345532015,
+    "Position": {
+      "X": -17056,
+      "Y": -26656
+    },
+    "Rotation": 4.71238899230957,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 1345532015,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 2886
+  },
+  {
+    "Flags": 2,
+    "OwnerId": 27,
+    "Hp": -1,
+    "Mp": -1,
+    "TargetAcquisition": -1,
+    "HeroLevel": 1,
+    "InventoryData": [],
+    "AbilityData": [],
+    "CustomPlayerColorId": -1,
+    "WaygateDestinationRegionId": -1,
+    "TypeId": 1496854632,
+    "Position": {
+      "X": -17052.998,
+      "Y": -26828.01
+    },
+    "Rotation": 4.635174751281738,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 1496854632,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 3005
+  },
+  {
+    "Flags": 2,
+    "OwnerId": 27,
+    "Hp": -1,
+    "Mp": -1,
+    "TargetAcquisition": -1,
+    "HeroLevel": 1,
+    "InventoryData": [],
+    "AbilityData": [],
+    "CustomPlayerColorId": -1,
+    "WaygateDestinationRegionId": -1,
+    "TypeId": 1480077416,
+    "Position": {
+      "X": -16916.814,
+      "Y": -26809.066
+    },
+    "Rotation": 0.9392083883285522,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 1480077416,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 3008
+  },
+  {
+    "Flags": 2,
+    "OwnerId": 27,
+    "Hp": -1,
+    "Mp": -1,
+    "TargetAcquisition": -1,
+    "HeroLevel": 1,
+    "InventoryData": [],
+    "AbilityData": [],
+    "CustomPlayerColorId": -1,
+    "WaygateDestinationRegionId": -1,
+    "TypeId": 960049262,
+    "Position": {
+      "X": -17198.305,
+      "Y": -26811.348
+    },
+    "Rotation": 3.737466812133789,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 960049262,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 3026
+  }
+]
