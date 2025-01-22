@@ -92,13 +92,5 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
       AddQuest(questDimensionalShip);
       AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
     }
-
-    private void RegisterPowers()
-    {
-      var dummyPower = new DummyPower("Crystallization",
-        "Arcane Wells placed directly near Divine Citadels will generate mana for them over time. You can then convert that mana into units. The maximum number of Arcane Well around a Divine Citadel is 12 if placed optimally",
-        "ManaGem.blp");
-      AddPower(dummyPower);
-    }
   }
 }
