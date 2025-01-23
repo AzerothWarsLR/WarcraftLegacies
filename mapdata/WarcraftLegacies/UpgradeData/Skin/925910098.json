@@ -21,7 +21,7 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Improve the stun duration for Crystal Discharge from 0.15 and 1 to 0.30 and 2"
+      "Value": "Improves Crystal Discharge by increasing its stun duration against units to 1 and its stun duration against heroes to 2."
     },
     {
       "Level": 1,
