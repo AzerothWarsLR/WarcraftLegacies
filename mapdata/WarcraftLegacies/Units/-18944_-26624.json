@@ -30,6 +30,7 @@
     "Flags": 2,
     "OwnerId": 27,
     "Hp": -1,
+    "Mp": -1,
     "TargetAcquisition": -1,
     "HeroLevel": 1,
     "InventoryData": [],
@@ -41,7 +42,7 @@
       "X": -18998.328,
       "Y": -26750.166
     },
-    "Rotation": -1.5526981353759766,
+    "Rotation": 4.73048734664917,
     "Scale": {
       "X": 1,
       "Y": 1,

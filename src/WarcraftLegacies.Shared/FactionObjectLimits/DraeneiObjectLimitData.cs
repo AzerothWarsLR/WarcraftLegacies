@@ -1,4 +1,6 @@
-﻿namespace WarcraftLegacies.Shared.FactionObjectLimits
+﻿using static Constants;
+
+namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
   public static class DraeneiObjectLimitData
   {
@@ -14,7 +16,7 @@
       yield return new("o053", Unlimited); //Smithery
       yield return new("o054", Unlimited); //Astral Sanctum
       yield return new("o055", Unlimited); //Crystal Spire
-      yield return new("o056", 48); //Arcane Well
+      yield return new("o056", 60); //Arcane Well
       yield return new("o057", Unlimited); //Vaults of Relic
       yield return new("u00U", Unlimited); //Crystal Protector
       yield return new("u01Q", Unlimited); //Crystal Protector improved
@@ -47,15 +49,16 @@
       yield return new("H09M", 1); //Adal
       yield return new("R078", Unlimited); //Elementalist training
       yield return new("R07C", Unlimited); //Luminarch training
-      yield return new("RD01", Unlimited); //Defender Upgrade
-      yield return new("RD02", Unlimited); //Rangari Upgrade
-      yield return new("RD04", Unlimited); //Polybolos Upgrade
-      yield return new("RD06", Unlimited); //Azerotian Breed
-      yield return new("RD05", Unlimited); //Elek Knight Upgrade
-      yield return new("RD07", Unlimited); //Crystal Discharge
-      yield return new("RD08", Unlimited); //Mana Syphon
-      yield return new("RD09", Unlimited); //Endless Energy
-      yield return new("RD10", Unlimited); //Naarus Shield
+
+      yield return new(UPGRADE_RD01_CRYSTAL_SHIELDS_DRAENEI, Unlimited); //Defender Upgrade
+      yield return new(UPGRADE_RD02_KALIMDOR_WILDS_ACCLIMATIZATION_DRAENEI, Unlimited); //Rangari Upgrade
+      yield return new(UPGRADE_RD04_ALIGNED_CRYSTAL_MECHANISM_DRAENEI, Unlimited); //Polybolos Upgrade
+      yield return new(UPGRADE_RD06_AZEROTHIAN_HUSBANDRY_DRAENEI, Unlimited); //Azerotian Breed
+      yield return new(UPGRADE_RD05_PROTECTOR_OF_KINGS_DRAENEI, Unlimited); //Elek Knight Upgrade
+      yield return new(UPGRADE_RD07_IMPROVED_CRYSTAL_DISCHARGE_DRAENEI, Unlimited); //Crystal Discharge
+      yield return new(UPGRADE_RD08_RESTORE_MANA_DRAENEI, Unlimited); //Mana Syphon
+      yield return new(UPGRADE_RD09_ENDLESS_ENERGY_DRAENEI, Unlimited); //Endless Energy
+      yield return new(UPGRADE_RD10_NAARU_S_SHIELD_DRAENEI, Unlimited); //Naarus Shield
     }
   }
 }
