@@ -8,7 +8,7 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNManaGem.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCRevive.blp"
     },
     {
       "Id": 1718840929,
@@ -28,13 +28,13 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Gateway Reinforcements"
+      "Value": "Gateway Reinforcement"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Gateway Reinforcements"
+      "Value": "Gateway Reinforcement"
     },
     {
       "Level": 1,
@@ -45,7 +45,7 @@
     {
       "Id": 1918989665,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNManaGem.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\ATCRevive.blp"
     },
     {
       "Id": 1802007905,
