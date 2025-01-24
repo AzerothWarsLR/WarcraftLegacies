@@ -40,7 +40,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summon a Defender to a target unit location"
+      "Value": "Summons a permanent Defender at the position of the target friendly unit anywhere on the map."
     },
     {
       "Id": 1918989665,
