@@ -2365,8 +2365,8 @@ namespace War3Api.Object
         }
         public string ArtPortraitModelFile
         {
-            get => _modifications.GetModification(1970033778).ValueAsString;
-            set => _modifications[1970033778] = new SimpleObjectDataModification
+            get => _modifications.GetModification(1919905909).ValueAsString;
+            set => _modifications[1919905909] = new SimpleObjectDataModification
             {
                 Id = 1970033778,
                 Type = ObjectDataType.String,
@@ -2374,12 +2374,12 @@ namespace War3Api.Object
             };
         }
 
-        public bool IsArtPortraitModelFileModified => _modifications.ContainsKey(1970033778);
+        public bool IsArtPortraitModelFileModified => _modifications.ContainsKey(1919905909);
 
         public string ArtPortraitModelFileRaw
         {
-            get => _modifications.GetModification(1970033778).ValueAsString;
-            set => _modifications[1970033778] = new SimpleObjectDataModification
+            get => _modifications.GetModification(1919905909).ValueAsString;
+            set => _modifications[1919905909] = new SimpleObjectDataModification
             {
                 Id = 1970033778,
                 Type = ObjectDataType.String,
