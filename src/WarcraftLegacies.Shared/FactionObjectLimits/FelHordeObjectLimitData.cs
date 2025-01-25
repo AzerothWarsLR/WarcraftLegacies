@@ -69,7 +69,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("R035", Unlimited); //Improved Firebolt
       yield return new("R01Z", Unlimited); //Battle Stations
       yield return new(UPGRADE_R098_FEL_INFUSED_SKELETON_FEL_HORDE, Unlimited);
-      yield return new(UPGRADE_R09W_IMPROVED_GREATER_CARRION_SWARM_FEL_HORDE, Unlimited);
+      yield return new(UPGRADE_R09W_IMPROVED_GREATER_CARRION_SWARM_LEGION, Unlimited);
       yield return new("n05R", Unlimited); //Felguard
       yield return new("n06H", Unlimited); //Pit Fiend
       yield return new("n07B", Unlimited); //Queen
