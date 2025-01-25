@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -2363,8 +2363,32 @@ namespace War3Api.Object
             get => AbilitiesHeroSkinRaw.ToIEnumerableAbility(this);
             set => AbilitiesHeroSkinRaw = value.ToRaw(null, null);
         }
+        public string ArtPortraitModelFile
+        {
+            get => _modifications.GetModification(1970033778).ValueAsString;
+            set => _modifications[1970033778] = new SimpleObjectDataModification
+            {
+                Id = 1970033778,
+                Type = ObjectDataType.String,
+                Value = value
+            };
+        }
 
-        public static explicit operator SimpleObjectModification(Unit unit) => new SimpleObjectModification{OldId = unit.OldId, NewId = unit.NewId, Modifications = unit.Modifications.ToList()};
+        public bool IsArtPortraitModelFileModified => _modifications.ContainsKey(1970033778);
+
+        public string ArtPortraitModelFileRaw
+        {
+            get => _modifications.GetModification(1970033778).ValueAsString;
+            set => _modifications[1970033778] = new SimpleObjectDataModification
+            {
+                Id = 1970033778,
+                Type = ObjectDataType.String,
+                Value = value
+            };
+        }
+    
+
+    public static explicit operator SimpleObjectModification(Unit unit) => new SimpleObjectModification{OldId = unit.OldId, NewId = unit.NewId, Modifications = unit.Modifications.ToList()};
         internal override bool TryGetSimpleModifications([NotNullWhen(true)] out SimpleObjectDataModifications? modifications)
         {
             modifications = _modifications;
