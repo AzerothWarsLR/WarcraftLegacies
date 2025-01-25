@@ -6,14 +6,9 @@
   ],
   "Modifications": [
     {
-      "Id": 1953653089,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNmedkit.blp"
-    },
-    {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(muskateer)"
+      "Value": "(Musketeer)"
     },
     {
       "Id": 2037082209,
@@ -21,21 +16,10 @@
       "Value": "W"
     },
     {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Field Medkit"
-    },
-    {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Field Medkit"
-    },
-    {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Heals a target friendly unit for 600 hit points over 20 seconds."
+      "Value": "Heals a target friendly unit for \u003CA0TX,DataA1\u003E hit points over \u003CA0TX,Dur1\u003E seconds."
     }
   ]
 }
