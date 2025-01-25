@@ -15,7 +15,8 @@ namespace Launcher.Extensions
         PurchaseItem or LightningAttack or Inventory or AttributeModifierSkill or OrbOfCorruption or ReinforcedBurrows
         or SpikedBarricades or BlightDispelSmall or BlightDispelLarge or CargoHoldBurrow or CargoHoldDeath
         or CargoHoldDevour or CargoHoldShip or CargoHoldTank or CargoHoldTransport or CargoHoldGoldMine
-        or CargoHoldMeatWagon or AuraRegenerationStatue or TreeOfLifeForAttachingArt);
+        or CargoHoldMeatWagon or AuraRegenerationStatue or TreeOfLifeForAttachingArt or ChaosGrom or ChaosGrunt
+        or ChaosPeon or ChaosKodo or ChaosRaider or ChaosShaman or ChaosCargoLoad);
     }
 
     /// <summary>
