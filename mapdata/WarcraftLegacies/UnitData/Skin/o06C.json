@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNIronHordeBurrow.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDragonNest.blp"
     },
     {
       "Id": 2020631157,
@@ -26,7 +26,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Building_DragonmawFarm.mdl"
+      "Value": "war3mapImported\\DragonNest.mdl"
     },
     {
       "Id": 1953458293,
@@ -41,7 +41,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Dragon Fodder Farm"
+      "Value": "Build Nest"
     },
     {
       "Id": 1935832437,
@@ -56,7 +56,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Dragon Fodder Farm"
+      "Value": "Nest"
     }
   ]
 }

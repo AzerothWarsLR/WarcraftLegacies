@@ -1,0 +1,68 @@
+{
+  "OldId": 1852535375,
+  "NewId": 1413634639,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Troll)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "The Blood Matriarch"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Grand Ma\u0027da Ateena"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mystical Hero, adept at destructive and disrupting magic."
+    },
+    {
+      "Id": 1869770869,
+      "Type": 3,
+      "Value": "Grand Ma\u0027da Ateena"
+    },
+    {
+      "Id": 1953980789,
+      "Type": 3,
+      "Value": "Revive Grand Ma\u0027da Ateena"
+    },
+    {
+      "Id": 1919972469,
+      "Type": 3,
+      "Value": "Revive Grand Ma\u0027da Ateena"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\Troll Voodoo Priestess.mdl"
+    },
+    {
+      "Id": 2037408373,
+      "Value": 0
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNshadowhunterhd.blp"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.5
+    }
+  ]
+}

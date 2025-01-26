@@ -63,6 +63,6 @@ namespace WarcraftLegacies.Source.Quests.Draenei
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "The Dimensional Generator gains the ability to channel portals to Argus, Azuremyst, and Outland. The Lightforged units and A'dal will become available";
+      "The Dimensional Generator gains the ability to channel portals to Argus and Outland. The Lightforged units and A'dal will become available";
   }
 }

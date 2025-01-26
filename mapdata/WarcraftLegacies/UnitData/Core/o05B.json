@@ -8,7 +8,7 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "A0TF,A020,A0BG,Aion"
+      "Value": "ADD1,A020,A0BG,Aion"
     },
     {
       "Id": 1633772661,
@@ -56,7 +56,7 @@
     {
       "Id": 1919381621,
       "Type": 3,
-      "Value": "Rguv,Rhar,Rhme"
+      "Value": "RD01,Rguv,Rhar,Rhme"
     },
     {
       "Id": 1680957813,
@@ -78,6 +78,11 @@
     {
       "Id": 1717920885,
       "Value": 4
+    },
+    {
+      "Id": 2037671029,
+      "Type": 3,
+      "Value": "small"
     }
   ]
 }

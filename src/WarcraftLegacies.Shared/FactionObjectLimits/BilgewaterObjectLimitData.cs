@@ -1,4 +1,4 @@
-using static Constants;
+﻿using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(UNIT_O03N_FORTRESS_GOBLIN_T3, Unlimited);
       yield return new(UNIT_O03O_ALTAR_OF_INDUSTRY_GOBLIN_ALTAR, Unlimited);
       yield return new(UNIT_O03P_MERCENARY_DEN_GOBLIN_BARRACKS, Unlimited);
-      yield return new(UNIT_O05T_BOOT_CAMP_GOBLIN_SIEGE, Unlimited);
+      yield return new(UNIT_O05T_TANK_FACTORY_GOBLIN_SIEGE, Unlimited);
       yield return new(UNIT_O03Q_SCRAPYARD_GOBLIN_RESEARCH, Unlimited);
       yield return new(UNIT_O03S_LABORATORY_GOBLIN_MAGIC, Unlimited);
       yield return new(UNIT_O01M_ENGINEER_S_GUILD_GOBLIN_SPECIALIST, Unlimited);
@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(UNIT_N062_SHREDDER_GOBLIN, 12);
       yield return new(UNIT_H08Z_ASSAULT_TANK_GOBLIN, 5);
       yield return new(UNIT_H091_WAR_ZEPPELIN_GOBLIN, 6);
-      yield return new(UNIT_H09H_SIEGE_WALKER_GOBLIN, 5);
+      yield return new(UNIT_H09H_WALKER_GOBLIN, 5);
       yield return new(UNIT_NZEP_TRADING_ZEPPELIN_WARSONG, 16);
       yield return new(UNIT_O04S_TRADER_GOBLIN, 10);
       yield return new(UNIT_O04N_TRADE_PRINCE_OF_THE_BILGEWATER_CARTEL_GOBLIN, 1);

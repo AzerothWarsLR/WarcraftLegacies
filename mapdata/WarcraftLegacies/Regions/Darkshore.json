@@ -1,0 +1,15 @@
+{
+  "Left": -18144,
+  "Bottom": 3936,
+  "Right": -15744,
+  "Top": 8672,
+  "Name": "Darkshore",
+  "CreationNumber": 167,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

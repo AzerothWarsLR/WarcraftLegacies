@@ -72,7 +72,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       SpellSystem.Register(warStompAdal);
 
-      var summonGateway = new SummonUnitsTarget(ABILITY_A0LX_GATEWAY_REINFORCEMENTS_DRAENEI)
+      var summonGateway = new SummonUnitsTarget(ABILITY_A0LX_GATEWAY_REINFORCEMENT_DRAENEI)
       {
         SummonUnitTypeId = UNIT_O05B_DEFENDER_DRAENEI,
         SummonCount = 1,
@@ -80,6 +80,12 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Duration = 0,
       };
       SpellSystem.Register(summonGateway);
+
+      var manaSyphon2 = new GrantMana(ABILITY_ADMS_RESTORE_MANA_DRAENEI_CASTER_BUILDING)
+      {
+        ManaToGrant = 240
+      };
+      SpellSystem.Register(manaSyphon2);
     }
   }
 }

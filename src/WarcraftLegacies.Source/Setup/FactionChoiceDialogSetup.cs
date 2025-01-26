@@ -16,6 +16,9 @@ namespace WarcraftLegacies.Source.Setup
       
       new FactionChoiceDialogPresenter(new Dalaran(preplacedUnitSystem, artifactSetup, allLegendSetup),
         new Gilneas(preplacedUnitSystem, artifactSetup, allLegendSetup)).Run(Player(7));
+
+      new FactionChoiceDialogPresenter(new Sentinels(preplacedUnitSystem, allLegendSetup, artifactSetup),
+        new Draenei(preplacedUnitSystem, allLegendSetup, artifactSetup)).Run(Player(18));
     }
   }
 }

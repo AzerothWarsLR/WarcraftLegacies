@@ -42,12 +42,12 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Siege Walker"
+      "Value": "Walker"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build Siege Walker"
+      "Value": "Build Walker"
     },
     {
       "Id": 1651864693,
@@ -57,7 +57,7 @@
     {
       "Id": 1668510581,
       "Type": 1,
-      "Value": 3.5
+      "Value": 2
     },
     {
       "Id": 1831952757,
@@ -92,6 +92,11 @@
       "Id": 2037410933,
       "Type": 2,
       "Value": 100
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
     }
   ]
 }
