@@ -7,7 +7,7 @@
       return new IMapMigration[]
       {
         new ControlPointMapMigration(),
-        // new CreepLevelMapMigration(),
+        new CreepLevelMapMigration(),
         // new GoldBountyMapMigration(),
         // new FlightMigration(),
         //new UnitTooltipMigration(),

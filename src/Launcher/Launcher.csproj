@@ -11,7 +11,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Remove="MapMigrations\CreepLevelMapMigration.cs" />
       <Compile Remove="MapMigrations\FlightMigration.cs" />
       <Compile Remove="MapMigrations\GoldBountyMapMigration.cs" />
       <Compile Remove="MapMigrations\UnitTooltipMigration.cs" />
