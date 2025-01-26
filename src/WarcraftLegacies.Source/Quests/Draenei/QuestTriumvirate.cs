@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     {
       _velen = velen;
       AddObjective(new ObjectiveControlPoint(UNIT_N0BH_EREDATH));
-      AddObjective(new ObjectiveControlPoint(UNIT_N0BL_EXODAR_REGALIS));
+      AddObjective(new ObjectiveControlPoint(UNIT_N0BL_EXODAR_REGALIS, 0));
       AddObjective(new ObjectiveControlPoint(UNIT_N09X_SHATTRATH_CITY));
       AddObjective(new ObjectiveLegendNotPermanentlyDead(velen));
       Global = true;
