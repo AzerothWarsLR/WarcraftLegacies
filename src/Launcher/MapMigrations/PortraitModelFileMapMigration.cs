@@ -1,50 +1,23 @@
-﻿using System;
-using System.IO;
-using System.Linq;
+﻿using System.Linq;
 using War3Api.Object;
+using War3Api.Object.Enums;
 using War3Net.Build;
 
 namespace Launcher.MapMigrations
 {
+  /// <summary>
+  /// Sets the Art Portrait Model File to an empty string for all units in the map.
+  /// </summary>
   public sealed class PortraitModelFileMapMigration : IMapMigration
   {
-    private readonly string logFilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "migration_log.txt");
-
     public void Migrate(Map map, ObjectDatabase objectDatabase)
     {
-      try
+      foreach (var unit in objectDatabase.GetUnits())
       {
-        // Start logging to file
-        LogToFile("Starting migration...");
-
-        // Log the number of units before migration
-        LogToFile($"Number of units before migration: {objectDatabase.GetUnits().Count()}");
-
-        foreach (var unit in objectDatabase.GetUnits())
-        {
-          // Minimal processing: Just log the units for now
-          LogToFile($"Processing unit: {unit.OldId}");
-        }
-
-        // Assign unit data and log completion
-        map.UnitObjectData = objectDatabase.GetAllData().UnitData;
-        LogToFile("Migration completed.");
+        unit.ArtPortraitModelFile = "";
       }
-      catch (Exception ex)
-      {
-        // Log the exception details
-        LogToFile($"Exception occurred: {ex.Message}");
-        LogToFile($"Stack trace: {ex.StackTrace}");
-        throw; // Re-throw the exception to propagate it
-      }
-    }
 
-    private void LogToFile(string message)
-    {
-      using (StreamWriter writer = new StreamWriter(logFilePath, true))
-      {
-        writer.WriteLine(message);
-      }
+      map.UnitObjectData = objectDatabase.GetAllData().UnitData;
     }
   }
 }

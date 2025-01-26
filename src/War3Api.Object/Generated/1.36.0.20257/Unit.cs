@@ -2363,30 +2363,15 @@ namespace War3Api.Object
             get => AbilitiesHeroSkinRaw.ToIEnumerableAbility(this);
             set => AbilitiesHeroSkinRaw = value.ToRaw(null, null);
         }
-        public string ArtPortraitModelFile
-        {
-            get => _modifications.GetModification(1919905909).ValueAsString;
-            set => _modifications[1919905909] = new SimpleObjectDataModification
-            {
-                Id = 1970033778,
-                Type = ObjectDataType.String,
-                Value = value
-            };
-        }
+    public string ArtPortraitModelFile
+    {
+      get => _modifications.GetModification(1919905909).ValueAsString;
+      set => _modifications[1919905909] = new SimpleObjectDataModification { Id = 1919905909, Type = ObjectDataType.String, Value = value };
+    }
 
-        public bool IsArtPortraitModelFileModified => _modifications.ContainsKey(1919905909);
+    public bool IsArtPortraitModelFileModified => _modifications.ContainsKey(1919905909);
 
-        public string ArtPortraitModelFileRaw
-        {
-            get => _modifications.GetModification(1919905909).ValueAsString;
-            set => _modifications[1919905909] = new SimpleObjectDataModification
-            {
-                Id = 1970033778,
-                Type = ObjectDataType.String,
-                Value = value
-            };
-        }
-    
+
 
     public static explicit operator SimpleObjectModification(Unit unit) => new SimpleObjectModification{OldId = unit.OldId, NewId = unit.NewId, Modifications = unit.Modifications.ToList()};
         internal override bool TryGetSimpleModifications([NotNullWhen(true)] out SimpleObjectDataModifications? modifications)
