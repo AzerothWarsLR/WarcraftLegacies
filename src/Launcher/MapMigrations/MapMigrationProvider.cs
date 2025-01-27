@@ -10,7 +10,7 @@
         new CreepLevelMapMigration(),
         new GoldBountyMapMigration(),
         new FlightMigration(),
-        //new UnitTooltipMigration(),
+        new UnitTooltipMigration(),
         new PortraitModelFileMapMigration()
       };
     }

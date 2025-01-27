@@ -45,7 +45,7 @@ namespace Launcher.MapMigrations
 
       var unitData = objectDatabase.GetAllData().UnitData;
       map.UnitObjectData = unitData;
-      map.UnitSkinObjectData = unitData;
+     // map.UnitSkinObjectData = unitData;
     }
 
     private void DetermineTooltip(Unit unit)
