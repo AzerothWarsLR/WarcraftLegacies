@@ -17,7 +17,9 @@ namespace Launcher.MapMigrations
         unit.ArtPortraitModelFile = "";
       }
 
-      map.UnitObjectData = objectDatabase.GetAllData().UnitData;
+      var unitData = objectDatabase.GetAllData().UnitData;
+      map.UnitObjectData = unitData;
+      map.UnitSkinObjectData = unitData; 
     }
   }
 }

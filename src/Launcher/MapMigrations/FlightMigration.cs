@@ -3,6 +3,7 @@ using System.Linq;
 using War3Api.Object;
 using War3Api.Object.Enums;
 using War3Net.Build;
+using War3Net.Build.Widget;
 using War3Net.CodeAnalysis.Jass.Extensions;
 
 namespace Launcher.MapMigrations
@@ -29,10 +30,10 @@ namespace Launcher.MapMigrations
           //ignore
         }
       }
-
       var unitData = objectDatabase.GetAllData().UnitData;
       map.UnitObjectData = unitData;
-     
+      map.UnitSkinObjectData = unitData;
+
     }
 
     private static void AddFlightResearch(Unit unit, Tech flight)
