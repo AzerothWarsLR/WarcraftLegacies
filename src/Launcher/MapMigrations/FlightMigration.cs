@@ -17,7 +17,7 @@ namespace Launcher.MapMigrations
     {
       var units = objectDatabase.GetUnits().ToList();
       var flight = objectDatabase.GetUpgrade(Constants.UPGRADE_R09X_FORTIFIED_HULLS_UNIVERSAL_UPGRADE.InvertEndianness());
-      
+
       foreach (var unit in units)
       {
         try
@@ -32,7 +32,7 @@ namespace Launcher.MapMigrations
 
       var unitData = objectDatabase.GetAllData().UnitData;
       map.UnitObjectData = unitData;
-      map.UnitSkinObjectData = unitData;
+     
     }
 
     private static void AddFlightResearch(Unit unit, Tech flight)
