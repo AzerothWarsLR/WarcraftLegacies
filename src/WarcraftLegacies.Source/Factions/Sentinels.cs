@@ -22,15 +22,16 @@ namespace WarcraftLegacies.Source.Factions
     private readonly SharedGoldMineManager _sharedGoldMineManager;
     private readonly AllLegendSetup _allLegendSetup;
     private readonly ArtifactSetup _artifactSetup;
+    private SharedStartLocationManager _sharedStartLocationManager;
 
-    /// <inheritdoc />
 
-    public Sentinels(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80",
-      @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
+    public Sentinels(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup, SharedStartLocationManager sharedStartLocationManager)
+        : base("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80", @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
     {
       TraditionalTeam = TeamSetup.Kalimdor;
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
+      _sharedStartLocationManager = sharedStartLocationManager;
       UndefeatedResearch = FourCC("R05Y");
       StartingGold = 200;
       CinematicMusic = "Comradeship";
@@ -38,28 +39,27 @@ namespace WarcraftLegacies.Source.Factions
       StartingCameraPosition = Regions.SentStartPos.Center;
       StartingUnits = Regions.SentStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       LearningDifficulty = FactionLearningDifficulty.Basic;
-      IntroText = @"You are playing as the ever-watchful 
 
-The Druids are slowly waking from their slumber, and it falls to you to drive back the Old Gods invaders from Kalimdor until then.
-
-Your first mission is to race down the coast to Feathermoon Stronghold, a powerful Sentinel stronghold on the southern half of the continent. 
-
-Once you have secured your holdings, gather your army and destroy the Old Gods. Be careful, they will outnumber you if given time to establish a foothold in Azeroth.";
       GoldMines = new List<unit>
-      {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-21300, 8400))
-      };
+            {
+                preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-21300, 8400))
+            };
       Nicknames = new List<string>
-      {
-        "sent",
-        "sentinel",
-        "elf",
-        "elfs",
-        "elves"
-      };
       RegisterFactionDependentInitializer<Druids>(RegisterDruidsDialogue);
       RegisterFactionDependentInitializer<Illidari>(RegisterIllidariQuestsAndDialogue);
       RegisterFactionDependentInitializer<Legion>(RegisterLegionDialogue);
+
+      _sharedStartLocationManager.RegisterFactionWorkerUnitType(this, UNIT_EWSP_WISP_DRUIDS_SENTINELS_WORKER);
+    }
+
+    public Point GetStartLocation()
+    {
+      return Regions.SentStartPos.Center;
+    }
+
+    public override void PrepareStartingUnits()
+    {
+      StartingUnits = Regions.SentStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
     }
 
     public override void OnNotPicked()
@@ -72,12 +72,10 @@ Once you have secured your holdings, gather your army and destroy the Old Gods. 
           {
             _sharedGoldMineManager.TransferGoldMineOwnership(goldMine, this);
           }
-         
         }
       }
     }
 
-    /// <inheritdoc />
     public override void OnRegistered()
     {
       RegisterObjectLimits();

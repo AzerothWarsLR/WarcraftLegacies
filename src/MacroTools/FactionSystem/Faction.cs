@@ -23,7 +23,7 @@ namespace MacroTools.FactionSystem
   {
     /// <summary>Signifies unlimited unit production.</summary>
     public const int UNLIMITED = 200;
-
+   
     /// <summary>The amount of food <see cref="Faction"/>s can have by default.</summary>
     private const int FoodMaximumDefault = 200;
 
@@ -117,8 +117,10 @@ namespace MacroTools.FactionSystem
     public int StartingGold { get; protected init; }
 
     /// <summary>The units this faction should start the game with.</summary>
-    public List<unit> StartingUnits { get; protected init; } = new();
-
+    public List<unit> StartingUnits { get; set; } = new();
+    public virtual void PrepareStartingUnits()
+    {
+    }
     /// <summary>Where any player occupying this faction should have their camera set to on game start.</summary>
     public Point? StartingCameraPosition { get; protected init; }
 

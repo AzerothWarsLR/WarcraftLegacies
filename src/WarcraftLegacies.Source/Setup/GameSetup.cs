@@ -1,4 +1,5 @@
-﻿using MacroTools;
+﻿using System.Collections.Generic;
+using MacroTools;
 using MacroTools.CommandSystem;
 using MacroTools.ControlPointSystem;
 using MacroTools.FactionChoices;
@@ -8,6 +9,7 @@ using MacroTools.Save;
 using MacroTools.Sound;
 using MacroTools.UserInterface;
 using WarcraftLegacies.Source.ArtifactBehaviour;
+using WarcraftLegacies.Source.Factions;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.GameModes;
@@ -41,6 +43,9 @@ namespace WarcraftLegacies.Source.Setup
       TeamSetup.Setup();
       new PlayerSetup(preplacedUnitSystem, allLegendSetup, artifactSetup).Setup();
       var sharedGoldMineManager = new SharedGoldMineManager();
+      var sharedStartLocationManager = new SharedStartLocationManager();
+      RegisterFactionWorkerUnitTypes(sharedStartLocationManager);
+      ReplacePreplacedUnits(sharedStartLocationManager);
       FactionChoiceDialogSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup, sharedGoldMineManager);
       SharedQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       SpellsSetup.Setup();
@@ -56,7 +61,7 @@ namespace WarcraftLegacies.Source.Setup
       InfoQuests.Setup();
       DestructibleSetup.Setup(preplacedUnitSystem);
       PatronSystem.Setup(preplacedUnitSystem);
-      var gameModeManager =new GameModeManager(new IGameMode[]
+      var gameModeManager = new GameModeManager(new IGameMode[]
       {
         new ClosedAlliance(),
         new OpenAlliance(),
@@ -94,6 +99,7 @@ namespace WarcraftLegacies.Source.Setup
       DarkPortalControlNexusSetup.Setup(preplacedUnitSystem);
       TagSummonedUnits.Setup();
     }
+    
 
     private static void SetupControlPointManager()
     {

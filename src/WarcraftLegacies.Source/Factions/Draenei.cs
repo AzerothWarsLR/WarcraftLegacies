@@ -71,9 +71,18 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
           {
             _sharedGoldMineManager.TransferGoldMineOwnership(goldMine, this);
           }
-         
+
         }
       }
+    }
+
+    public Point GetStartLocation()
+    {
+      return Regions.SentStartPos.Center;
+    }
+    public override void PrepareStartingUnits()
+    {
+      StartingUnits = Regions.SentStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
     }
 
     public override void OnRegistered()
