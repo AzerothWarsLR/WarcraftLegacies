@@ -19,11 +19,12 @@ namespace WarcraftLegacies.Source.Factions
 {
   public sealed class Sentinels : Faction
   {
+    private readonly SharedGoldMineManager _sharedGoldMineManager;
     private readonly AllLegendSetup _allLegendSetup;
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    
+
     public Sentinels(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80",
       @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
     {
@@ -59,6 +60,21 @@ Once you have secured your holdings, gather your army and destroy the Old Gods. 
       RegisterFactionDependentInitializer<Druids>(RegisterDruidsDialogue);
       RegisterFactionDependentInitializer<Illidari>(RegisterIllidariQuestsAndDialogue);
       RegisterFactionDependentInitializer<Legion>(RegisterLegionDialogue);
+    }
+
+    public override void OnNotPicked()
+    {
+      if (GoldMines != null)
+      {
+        foreach (var goldMine in GoldMines)
+        {
+          if (_sharedGoldMineManager.IsSharedGoldMine(goldMine))
+          {
+            _sharedGoldMineManager.TransferGoldMineOwnership(goldMine, this);
+          }
+         
+        }
+      }
     }
 
     /// <inheritdoc />

@@ -29,6 +29,8 @@ namespace MacroTools.FactionChoices
       var startingUnits = pickedFaction.StartingUnits;
       pickingPlayer.RescueGroup(startingUnits);
 
+  
+
       foreach (var unpickedFaction in Choices.Where(x => x.Data != choice.Data))
         RemoveFaction(unpickedFaction.Data);
     }

@@ -10,23 +10,24 @@ using WarcraftLegacies.Source.Quests.Draenei;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 
+
 namespace WarcraftLegacies.Source.Factions
 {
   public sealed class Draenei : Faction
   {
+    private readonly SharedGoldMineManager _sharedGoldMineManager;
     private readonly PreplacedUnitSystem _preplacedUnitSystem;
     private readonly AllLegendSetup _allLegendSetup;
     private readonly ArtifactSetup _artifactSetup;
 
-    /// <inheritdoc />
-    
-    public Draenei(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("The Exodar",
-      PLAYER_COLOR_NAVY, "|cff000080", @"ReplaceableTextures\CommandButtons\BTNBOSSVelen.blp")
+    public Draenei(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup, SharedGoldMineManager sharedGoldMineManager)
+      : base("The Exodar", PLAYER_COLOR_NAVY, "|cff000080", @"ReplaceableTextures\CommandButtons\BTNBOSSVelen.blp")
     {
       TraditionalTeam = TeamSetup.NightElves;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
-      this._artifactSetup = artifactSetup;
+      _artifactSetup = artifactSetup;
+      _sharedGoldMineManager = sharedGoldMineManager;
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_U008_CONTROL_POINT_DEFENDER_DRAENEI;
       StartingCameraPosition = Regions.DraeneiStartPos.Center;
@@ -41,8 +42,14 @@ Further inland your Night-elf allies will need your help against the Orcish Hord
 The Exodar is a mighty fortress-base with the ability to move around the map, but it will take a long time to repair.";
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-21000, 8600))
+        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-21300, 8400))
       };
+
+      foreach (var goldMine in GoldMines)
+      {
+        _sharedGoldMineManager.RegisterSharedGoldMine(goldMine, this);
+      }
+
       Nicknames = new List<string>
       {
         "draenei",
@@ -53,8 +60,22 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
         "goats"
       };
     }
-    
-    /// <inheritdoc />
+
+    public override void OnNotPicked()
+    {
+      if (GoldMines != null)
+      {
+        foreach (var goldMine in GoldMines)
+        {
+          if (_sharedGoldMineManager.IsSharedGoldMine(goldMine))
+          {
+            _sharedGoldMineManager.TransferGoldMineOwnership(goldMine, this);
+          }
+         
+        }
+      }
+    }
+
     public override void OnRegistered()
     {
       RegisterObjectLimits();

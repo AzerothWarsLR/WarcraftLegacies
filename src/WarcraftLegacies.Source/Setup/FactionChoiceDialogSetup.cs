@@ -6,7 +6,7 @@ namespace WarcraftLegacies.Source.Setup
 {
   public static class FactionChoiceDialogSetup
   {
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
+    public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup, SharedGoldMineManager sharedGoldMineManager )
     {
       //new FactionChoiceDialogPresenter(new Zandalar(preplacedUnitSystem, allLegendSetup, artifactSetup),
       //  new Bilgewater(preplacedUnitSystem, allLegendSetup)).Run(Player(8));
@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Setup
         new Gilneas(preplacedUnitSystem, artifactSetup, allLegendSetup)).Run(Player(7));
 
       new FactionChoiceDialogPresenter(new Sentinels(preplacedUnitSystem, allLegendSetup, artifactSetup),
-        new Draenei(preplacedUnitSystem, allLegendSetup, artifactSetup)).Run(Player(18));
+        new Draenei(preplacedUnitSystem, allLegendSetup, artifactSetup, sharedGoldMineManager)).Run(Player(18));
     }
   }
 }

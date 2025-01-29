@@ -29,6 +29,7 @@ namespace MacroTools.FactionSystem
 
     private static int _highestId;
 
+    private readonly SharedGoldMineManager _sharedGoldMineManager;
     private readonly Dictionary<int, int> _abilityAvailabilities = new();
     private readonly List<unit> _goldMines = new();
     private readonly Dictionary<int, int> _objectLevels = new();
@@ -262,10 +263,23 @@ namespace MacroTools.FactionSystem
     /// <para>Override this to cleanup anything that would have been used by the <see cref="Faction"/> if it had
     /// been picked.</para>
     /// </summary>
-    public virtual void OnNotPicked()
-    {
-      RemoveGoldMines();
-    }
+        public virtual void OnNotPicked()
+        {
+            if (GoldMines != null)
+            {
+                foreach (var unit in GoldMines)
+                {
+                    if (_sharedGoldMineManager.IsSharedGoldMine(unit))
+                    {
+                        _sharedGoldMineManager.TransferGoldMineOwnership(unit, this);
+                    }
+                    else
+                    {
+                        RemoveUnit(unit);
+                    }
+                }
+            }
+        }
 
     /// <summary>
     /// Defeats the player, making them an observer, and distributing their units and resources to allies if possible.
@@ -580,7 +594,7 @@ namespace MacroTools.FactionSystem
     private void RemoveGoldMines()
     {
       foreach (var unit in GoldMines) 
-        KillUnit(unit);
+        RemoveUnit(unit);
       
       _goldMines.Clear();
     }
@@ -685,5 +699,10 @@ namespace MacroTools.FactionSystem
         Logger.LogError($"{Name} failed to execute {nameof(OnQuestProgressChanged)}: {ex.Message}");
       }
     }
+        public Faction(SharedGoldMineManager sharedGoldMineManager)
+        {
+            _sharedGoldMineManager = sharedGoldMineManager;
+        
+        }
   }
 }
