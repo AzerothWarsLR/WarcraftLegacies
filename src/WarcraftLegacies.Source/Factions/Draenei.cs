@@ -71,12 +71,7 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
 
     public void ReplaceWorkersInRectangle(Rectangle rectangle, int replacementUnitTypeId)
     {
-            Func<unit, bool> condition = unit =>
-            {
-                bool isPeon = IsUnitType(unit, UNIT_TYPE_PEON);
-                Console.WriteLine($"Unit {GetUnitName(unit)} is peon: {isPeon}");
-                return isPeon;
-            };
+      Func<unit, bool> condition = unit => IsUnitType(unit, UNIT_TYPE_PEON);
       var replacedUnits = rectangle.ReplaceWorkers(replacementUnitTypeId, condition);
 
       foreach (var unit in replacedUnits)

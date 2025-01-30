@@ -79,15 +79,16 @@ Once you have secured your holdings, gather your army and destroy the Old Gods. 
     ReplaceWorkersInRectangle(Regions.SentStartPos, replacementUnitTypeId);
   }
 
-    public void ReplaceWorkersInRectangle(Rectangle rectangle, int replacementUnitTypeId)
+  public void ReplaceWorkersInRectangle(Rectangle rectangle, int replacementUnitTypeId)
+  {
+    Func<unit, bool> condition = unit => IsUnitType(unit, UNIT_TYPE_PEON);
+    var replacedUnits = rectangle.ReplaceWorkers(replacementUnitTypeId, condition);
+
+    foreach (var unit in replacedUnits)
     {
-      Func<unit, bool> condition = unit =>
-      {
-        bool isPeon = IsUnitType(unit, UNIT_TYPE_PEON);
-        Console.WriteLine($"Unit {GetUnitName(unit)} is peon: {isPeon}");
-        return isPeon;
-      };
+      SetUnitOwner(unit, Player(18), true);
     }
+  }
 
   /// <inheritdoc />
   public override void OnRegistered()

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
@@ -7,6 +8,7 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 
+
 namespace WarcraftLegacies.Source.Quests.Dalaran
 {
   /// <summary>
@@ -14,6 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
   /// </summary>
   public sealed class QuestSouthshore : QuestData
   {
+    private const int replacementUnitTypeId = UNIT_O05A_GEMCRAFTER_DRAENEI_WORKER;
     private readonly List<unit> _rescueUnits;
 
     /// <summary>
@@ -28,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      
+
     }
 
     /// <inheritdoc />
@@ -48,7 +51,22 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     }
 
     /// <inheritdoc />
-    protected override void OnComplete(Faction completingFaction) => 
+    protected override void OnComplete(Faction completingFaction)
+    {
       completingFaction.Player.RescueGroup(_rescueUnits);
+      ReplaceWorkersInRectangle(Regions.SouthshoreUnlock, replacementUnitTypeId);
+    }
+
+
+    public void ReplaceWorkersInRectangle(Rectangle rectangle, int replacementUnitTypeId)
+    {
+      Func<unit, bool> condition = unit => IsUnitType(unit, UNIT_TYPE_PEON);
+      var replacedUnits = rectangle.ReplaceWorkers(replacementUnitTypeId, condition);
+
+      foreach (var unit in replacedUnits)
+      {
+        SetUnitOwner(unit, Player(18), true);
+      }
+    }
   }
 }
