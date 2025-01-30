@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools;
+using System;
 using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionChoices;
@@ -14,19 +15,31 @@ using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Sentinels;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Factions
 {
   public sealed class Sentinels : Faction
   {
+<<<<<<< Updated upstream
     private readonly SharedGoldMineManager _sharedGoldMineManager;
+=======
+    private const int replacementUnitTypeId = Constants.UNIT_EWSP_WISP_DRUIDS_SENTINELS_WORKER;
+>>>>>>> Stashed changes
     private readonly AllLegendSetup _allLegendSetup;
     private readonly ArtifactSetup _artifactSetup;
     private SharedStartLocationManager _sharedStartLocationManager;
 
+<<<<<<< Updated upstream
 
     public Sentinels(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup, SharedStartLocationManager sharedStartLocationManager)
         : base("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80", @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
+=======
+    /// <inheritdoc />
+
+    public Sentinels(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80",
+      @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
+>>>>>>> Stashed changes
     {
       TraditionalTeam = TeamSetup.Kalimdor;
       _allLegendSetup = allLegendSetup;
@@ -76,6 +89,27 @@ namespace WarcraftLegacies.Source.Factions
       }
     }
 
+<<<<<<< Updated upstream
+=======
+    public override void OnNotPicked()
+    {
+      ReplaceWorkersInRectangle(Regions.SentStartPos, replacementUnitTypeId);
+      base.OnNotPicked();
+    }
+
+    public void ReplaceWorkersInRectangle(Rectangle rectangle, int replacementUnitTypeId)
+    {
+      Func<unit, bool> condition = unit => IsUnitType(unit, UNIT_TYPE_PEON);
+      var replacedUnits = rectangle.ReplaceWorkers(replacementUnitTypeId, condition);
+
+      foreach (var unit in replacedUnits)
+      {
+        SetUnitOwner(unit, Player(18), true);
+      }
+    }
+
+    /// <inheritdoc />
+>>>>>>> Stashed changes
     public override void OnRegistered()
     {
       RegisterObjectLimits();
