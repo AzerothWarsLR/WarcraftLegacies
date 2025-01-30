@@ -1,6 +1,6 @@
 {
   "OldId": 1785033282,
-  "NewId": 925970498,
+  "NewId": 892617306,
   "Unk": [
     0
   ],
@@ -8,17 +8,17 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "Medkit"
+      "Value": "Innervate"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "This unit has Medkit, it is healing hit points over time."
+      "Value": "This unit has Innervate; it is healing hit points and mana over time."
     },
     {
       "Id": 1953653094,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNmedkit.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRestorationBlue.blp"
     }
   ]
 }

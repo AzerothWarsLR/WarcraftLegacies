@@ -12,7 +12,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Brown - Malfurion. Grey - Rokhan)(freya)"
+      "Value": "(Malfurion)"
     },
     {
       "Id": 2037082209,
@@ -22,7 +22,7 @@
     {
       "Id": 1918988897,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNRejuvenation.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRestorationBlue.blp"
     },
     {
       "Id": 1802007137,
@@ -32,60 +32,70 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "Learn Rejuvenation (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
+      "Value": "Learn Innervate - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Restores a target units Health and Mana over 10 seconds.|n|n|cffffcc00Level 1|r - 500 Hitpoints 50 Mana.|n|cffffcc00Level 2|r - 750 Hitpoints 100 Mana.|n|cffffcc00Level 3|r - 1000 Hitpoints 150 Mana.|n|cffffcc00Level 4|r - 1250 Hitpoints 200 Mana."
+      "Value": "Heals a target friendly units hit points and mana over \u003CA0DD,Dur1\u003E seconds.|n|n|cffffcc00Level 1|r - Restores \u003CA0DD,DataA1\u003E hit points and \u003CA0DD,DataB1\u003E mana.|n|cffffcc00Level 2|r - Restores \u003CA0DD,DataA2\u003E hit points and \u003CA0DD,DataB2\u003E mana.|n|cffffcc00Level 3|r - Restores \u003CA0DD,DataA3\u003E hit points and \u003CA0DD,DataB3\u003E mana.|n|cffffcc00Level 4|r - Restores \u003CA0DD,DataA4\u003E hit points and \u003CA0DD,DataB4\u003E mana."
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Rejuvenation - [|cffffcc00Level 1|r]"
+      "Value": "Innervate - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Rejuvenation - [|cffffcc00Level 2|r]"
+      "Value": "Innervate - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Rejuvenation - [|cffffcc00Level 3|r]"
+      "Value": "Innervate - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Rejuvenation - [|cffffcc00Level 4|r]"
+      "Value": "Innervate - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Heals a target friendly unit for \u003CA0DD,DataA2\u003E hit points and \u003CA0DD,DataB2\u003E mana over \u003CA0DD,Dur2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Heals a target friendly unit for \u003CA0DD,DataA3\u003E hit points and \u003CA0DD,DataB3\u003E mana over \u003CA0DD,Dur3\u003E seconds."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Heals a target friendly unit for \u003CA0DD,DataA4\u003E hit points and \u003CA0DD,DataB4\u003E mana over \u003CA0DD,Dur4\u003E seconds."
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRestorationBlue.blp"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Heals a target friendly unit for 500 hit points over 10 seconds. Also Restores 50 mana to the Target."
+      "Value": "Heals a target friendly unit for \u003CA0DD,DataA1\u003E hit points and \u003CA0DD,DataB1\u003E mana over \u003CA0DD,Dur1\u003E seconds."
     },
     {
-      "Level": 2,
-      "Id": 828536161,
+      "Id": 1835101793,
       "Type": 3,
-      "Value": "Heals a target friendly unit for 750 hit points over 10 seconds. Also Restores 100 mana to the Target."
-    },
-    {
-      "Level": 3,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "Heals a target friendly unit for 1000 hit points over 10 seconds. Also Restores 150 mana to the Target."
-    },
-    {
-      "Level": 4,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "Heals a target friendly unit for 1250 hit points over 10 seconds. Also Restores 200 mana to the Target."
+      "Value": "Innervate"
     }
   ]
 }

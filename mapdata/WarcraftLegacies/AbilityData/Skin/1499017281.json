@@ -6,18 +6,13 @@
   ],
   "Modifications": [
     {
-      "Id": 1953653089,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlueImmolationOff.blp"
-    },
-    {
       "Id": 2020631137,
       "Value": 0
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(infiltrators)"
+      "Value": "(Nazrethim Infiltrator)"
     },
     {
       "Id": 2037082209,
@@ -25,21 +20,10 @@
       "Value": "Q"
     },
     {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Dark Regeneration"
-    },
-    {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Dark Regeneration"
-    },
-    {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Heals a target friendly unit for 600 hit points over 10 seconds."
+      "Value": "Heals a target friendly unit for \u003CA0YY,DataA1\u003E hit points over \u003CA0YY,Dur1\u003E seconds."
     }
   ]
 }

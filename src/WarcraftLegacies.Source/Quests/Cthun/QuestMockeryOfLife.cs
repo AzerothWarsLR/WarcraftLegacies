@@ -4,11 +4,10 @@ using MacroTools.QuestSystem;
 namespace WarcraftLegacies.Source.Quests.Cthun
 {
   /// <summary>
-  /// Kill a bunch of different units to unlock ouro.
+  /// Kill a bunch of different units to unlock Ouro.
   /// </summary>
   public sealed class QuestMockeryOfLife : QuestData
   {
-
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestMockeryOfLife"/> class.
     /// </summary>
@@ -24,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
     public override string RewardFlavour => "The abominable sandwurm Ouro has been created by Cthun";
 
     /// <inheritdoc />
-    protected override string RewardDescription => $"Learn to train {GetObjectName(UNIT_U02S_ANCIENT_SAND_WORM)}s from the {GetObjectName(UNIT_U01F_ALTAR_OF_THE_OLD_ONES_C_THUN_ALTAR)}";
-
+    protected override string RewardDescription =>
+      $"Learn to train {GetObjectName(UNIT_U02S_ANCIENT_SAND_WORM)}s from the {GetObjectName(UNIT_U01F_ALTAR_OF_THE_OLD_ONES_C_THUN_ALTAR)}";
   }
 }

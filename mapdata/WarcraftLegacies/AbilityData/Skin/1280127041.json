@@ -6,30 +6,14 @@
   ],
   "Modifications": [
     {
-      "Id": 1953653089,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_Renew.blp"
-    },
-    {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Gilneas)"
+      "Value": "(Cleric)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
       "Value": "W"
-    },
-    {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Renewal"
-    },
-    {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Renewal"
     },
     {
       "Level": 2,
@@ -44,12 +28,6 @@
       "Value": "Renewal - [|cffffcc00Level 3|r]"
     },
     {
-      "Level": 1,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "Heals a target friendly unit for \u003CA07U,DataA1\u003E hit points over \u003CA07U,Dur1\u003E seconds."
-    },
-    {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
@@ -60,6 +38,12 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Heals a target friendly unit for \u003CA07U,DataA3\u003E hit points over \u003CA07U,Dur3\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Heals a target friendly unit for \u003CA0ML,DataA1\u003E hit points over \u003CA0ML,Dur1\u003E seconds."
     }
   ]
 }
