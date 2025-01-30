@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Factions
 {
   public sealed class Draenei : Faction
   {
-    private const int replacementUnitTypeId = Constants.UNIT_O05A_GEMCRAFTER_DRAENEI_WORKER;
+    private const int replacementUnitTypeId = UNIT_O05A_GEMCRAFTER_DRAENEI_WORKER;
     private readonly SharedGoldMineManager _sharedGoldMineManager;
     private readonly PreplacedUnitSystem _preplacedUnitSystem;
     private readonly AllLegendSetup _allLegendSetup;
@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Factions
 
     /// <inheritdoc />
     
-    public Draenei(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("The Exodar",
+    public Draenei(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup, SharedGoldMineManager sharedGoldMineManager) : base("The Exodar",
       PLAYER_COLOR_NAVY, "|cff000080", @"ReplaceableTextures\CommandButtons\BTNBOSSVelen.blp")
     {
       _sharedGoldMineManager = sharedGoldMineManager;
@@ -43,10 +43,16 @@ You begin on Azuremyst Island, amid the wreckage of your flight from the Burning
 Further inland your Night-elf allies will need your help against the Orcish Horde, quickly build your base and gain entry to the Exodar.
 
 The Exodar is a mighty fortress-base with the ability to move around the map, but it will take a long time to repair.";
+
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-21000, 8600))
+        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-21300, 8400))
       };
+
+      foreach (var goldMine in GoldMines)
+      {
+        _sharedGoldMineManager.RegisterSharedGoldMine(goldMine, this);
+      }
       Nicknames = new List<string>
       {
         "draenei",
@@ -60,12 +66,17 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
     public override void OnNotPicked()
     {
       ReplaceWorkersInRectangle(Regions.DraeneiStartPos, replacementUnitTypeId);
-      base.OnNotPicked();
+  
     }
 
     public void ReplaceWorkersInRectangle(Rectangle rectangle, int replacementUnitTypeId)
     {
-      Func<unit, bool> condition = unit => IsUnitType(unit, UNIT_TYPE_PEON);
+            Func<unit, bool> condition = unit =>
+            {
+                bool isPeon = IsUnitType(unit, UNIT_TYPE_PEON);
+                Console.WriteLine($"Unit {GetUnitName(unit)} is peon: {isPeon}");
+                return isPeon;
+            };
       var replacedUnits = rectangle.ReplaceWorkers(replacementUnitTypeId, condition);
 
       foreach (var unit in replacedUnits)

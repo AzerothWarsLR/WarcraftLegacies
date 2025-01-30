@@ -20,14 +20,14 @@ namespace WarcraftLegacies.Source.Factions
 {
   public sealed class Sentinels : Faction
   {
-    private const int replacementUnitTypeId = Constants.UNIT_EWSP_WISP_DRUIDS_SENTINELS_WORKER;
+    private const int replacementUnitTypeId = UNIT_EWSP_WISP_DRUIDS_SENTINELS_WORKER;
     private readonly SharedGoldMineManager _sharedGoldMineManager;
     private readonly AllLegendSetup _allLegendSetup;
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
     
-    public Sentinels(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80",
+    public Sentinels(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup, SharedGoldMineManager sharedGoldMineManager) : base("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80",
       @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
     {
       _sharedGoldMineManager = sharedGoldMineManager;
@@ -76,20 +76,18 @@ Once you have secured your holdings, gather your army and destroy the Old Gods. 
 
   public override void OnNotPicked()
   {
-    ReplaceWorkersInRectangle(Regions.DraeneiStartPos, replacementUnitTypeId);
-    base.OnNotPicked();
+    ReplaceWorkersInRectangle(Regions.SentStartPos, replacementUnitTypeId);
   }
 
-  public void ReplaceWorkersInRectangle(Rectangle rectangle, int replacementUnitTypeId)
-  {
-    Func<unit, bool> condition = unit => IsUnitType(unit, UNIT_TYPE_PEON);
-    var replacedUnits = rectangle.ReplaceWorkers(replacementUnitTypeId, condition);
-
-    foreach (var unit in replacedUnits)
+    public void ReplaceWorkersInRectangle(Rectangle rectangle, int replacementUnitTypeId)
     {
-      SetUnitOwner(unit, Player(18), true);
+      Func<unit, bool> condition = unit =>
+      {
+        bool isPeon = IsUnitType(unit, UNIT_TYPE_PEON);
+        Console.WriteLine($"Unit {GetUnitName(unit)} is peon: {isPeon}");
+        return isPeon;
+      };
     }
-  }
 
   /// <inheritdoc />
   public override void OnRegistered()
