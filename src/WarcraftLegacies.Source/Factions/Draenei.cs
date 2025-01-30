@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using MacroTools;
 using MacroTools.Extensions;
@@ -14,6 +15,8 @@ namespace WarcraftLegacies.Source.Factions
 {
   public sealed class Draenei : Faction
   {
+    private const int replacementUnitTypeId = Constants.UNIT_O05A_GEMCRAFTER_DRAENEI_WORKER;
+    private readonly SharedGoldMineManager _sharedGoldMineManager;
     private readonly PreplacedUnitSystem _preplacedUnitSystem;
     private readonly AllLegendSetup _allLegendSetup;
     private readonly ArtifactSetup _artifactSetup;
@@ -23,6 +26,7 @@ namespace WarcraftLegacies.Source.Factions
     public Draenei(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("The Exodar",
       PLAYER_COLOR_NAVY, "|cff000080", @"ReplaceableTextures\CommandButtons\BTNBOSSVelen.blp")
     {
+      _sharedGoldMineManager = sharedGoldMineManager;
       TraditionalTeam = TeamSetup.NightElves;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
@@ -53,7 +57,22 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
         "goats"
       };
     }
-    
+    public override void OnNotPicked()
+    {
+      ReplaceWorkersInRectangle(Regions.DraeneiStartPos, replacementUnitTypeId);
+      base.OnNotPicked();
+    }
+
+    public void ReplaceWorkersInRectangle(Rectangle rectangle, int replacementUnitTypeId)
+    {
+      Func<unit, bool> condition = unit => IsUnitType(unit, UNIT_TYPE_PEON);
+      var replacedUnits = rectangle.ReplaceWorkers(replacementUnitTypeId, condition);
+
+      foreach (var unit in replacedUnits)
+      {
+        SetUnitOwner(unit, Player(18), true);
+      }
+    }
     /// <inheritdoc />
     public override void OnRegistered()
     {

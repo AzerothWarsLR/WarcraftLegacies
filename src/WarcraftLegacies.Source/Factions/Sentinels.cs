@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MacroTools;
 using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
@@ -19,6 +20,8 @@ namespace WarcraftLegacies.Source.Factions
 {
   public sealed class Sentinels : Faction
   {
+    private const int replacementUnitTypeId = Constants.UNIT_EWSP_WISP_DRUIDS_SENTINELS_WORKER;
+    private readonly SharedGoldMineManager _sharedGoldMineManager;
     private readonly AllLegendSetup _allLegendSetup;
     private readonly ArtifactSetup _artifactSetup;
 
@@ -27,6 +30,7 @@ namespace WarcraftLegacies.Source.Factions
     public Sentinels(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80",
       @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
     {
+      _sharedGoldMineManager = sharedGoldMineManager;
       TraditionalTeam = TeamSetup.Kalimdor;
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
@@ -44,10 +48,16 @@ The Druids are slowly waking from their slumber, and it falls to you to drive ba
 Your first mission is to race down the coast to Feathermoon Stronghold, a powerful Sentinel stronghold on the southern half of the continent. 
 
 Once you have secured your holdings, gather your army and destroy the Old Gods. Be careful, they will outnumber you if given time to establish a foothold in Azeroth.";
+
       GoldMines = new List<unit>
       {
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-21300, 8400))
       };
+
+      foreach (var goldMine in GoldMines)
+      {
+        _sharedGoldMineManager.RegisterSharedGoldMine(goldMine, this);
+      }
       Nicknames = new List<string>
       {
         "sent",
@@ -61,8 +71,28 @@ Once you have secured your holdings, gather your army and destroy the Old Gods. 
       RegisterFactionDependentInitializer<Legion>(RegisterLegionDialogue);
     }
 
-    /// <inheritdoc />
-    public override void OnRegistered()
+
+
+
+  public override void OnNotPicked()
+  {
+    ReplaceWorkersInRectangle(Regions.DraeneiStartPos, replacementUnitTypeId);
+    base.OnNotPicked();
+  }
+
+  public void ReplaceWorkersInRectangle(Rectangle rectangle, int replacementUnitTypeId)
+  {
+    Func<unit, bool> condition = unit => IsUnitType(unit, UNIT_TYPE_PEON);
+    var replacedUnits = rectangle.ReplaceWorkers(replacementUnitTypeId, condition);
+
+    foreach (var unit in replacedUnits)
+    {
+      SetUnitOwner(unit, Player(18), true);
+    }
+  }
+
+  /// <inheritdoc />
+  public override void OnRegistered()
     {
       RegisterObjectLimits();
       RegisterQuests();
