@@ -9,7 +9,7 @@
       "Level": 1,
       "Id": 829579623,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_Renew.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNRejuvenation.blp"
     },
     {
       "Level": 2,
@@ -63,7 +63,7 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Chaplains\u0027 or Pastors\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Renewal."
+      "Value": "Increases Chaplains\u0027 or Pastors\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Rejuvenation."
     },
     {
       "Level": 2,

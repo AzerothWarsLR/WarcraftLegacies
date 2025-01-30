@@ -6,22 +6,10 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Id": 1718968929,
-      "Type": 3,
-      "Value": "B014"
-    },
-    {
       "Level": 2,
       "Id": 1718968929,
       "Type": 3,
-      "Value": "B014"
-    },
-    {
-      "Level": 3,
-      "Id": 1718968929,
-      "Type": 3,
-      "Value": "B014"
+      "Value": "Brej"
     },
     {
       "Id": 1684562785,
@@ -130,10 +118,6 @@
       "Value": 5
     },
     {
-      "Id": 1986358369,
-      "Value": 3
-    },
-    {
       "Id": 1667330657,
       "Type": 3,
       "Value": "human"
@@ -171,6 +155,12 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,ground,friend,vuln,invu,self,organic,neutral"
+    },
+    {
+      "Level": 3,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "Brej"
     }
   ]
 }

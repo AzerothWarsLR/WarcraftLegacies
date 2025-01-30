@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
 
     /// <inheritdoc/>
     public override string RewardFlavour =>
-      $"{_objectiveDestroyAnyCapital.DestroyedCapital?.Name} has fallen, merely the first in a row of dominos that will topple this world.";
+      $"{_objectiveDestroyAnyCapital.DestroyedCapital?.Name} has fallen, merely the first in a row of dominoes that will topple this world.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
 
     /// <inheritdoc />
     public QuestDesolation(LegendaryHero cthun) : base("Desolation",
-      "Before this time of mortals, The Old Gods ruled this world, our empires stretching to every corner. I will bury their cities, and return Azeroth to primordial chaos.",
+      "Before this time of mortals, the Old Gods ruled this world, our empires stretching to every corner. I will bury their cities, and return Azeroth to primordial chaos.",
       @"ReplaceableTextures\CommandButtons\BTNWallOfFire.blp")
     {
       _cthun = cthun;

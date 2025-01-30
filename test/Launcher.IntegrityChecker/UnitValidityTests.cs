@@ -3,15 +3,16 @@ using System.Text;
 using Launcher.Extensions;
 using Launcher.IntegrityChecker.TestSupport;
 using War3Api.Object;
+using War3Api.Object.Abilities;
 using Xunit.Sdk;
 
 namespace Launcher.IntegrityChecker
 {
-  public sealed class ObjectDataValidityTests : IClassFixture<MapTestFixture>
+  public sealed class UnitValidityTests : IClassFixture<MapTestFixture>
   {
     private readonly MapTestFixture _mapTestFixture;
 
-    public ObjectDataValidityTests(MapTestFixture mapTestFixture)
+    public UnitValidityTests(MapTestFixture mapTestFixture)
     {
       _mapTestFixture = mapTestFixture;
     }
@@ -38,6 +39,9 @@ namespace Launcher.IntegrityChecker
         
         if (VerifyHeroAbilities(unit, out var heroAbilitiesIssue)) 
           issues.Add(heroAbilitiesIssue);
+
+        if (VerifyForbiddenAbilities(unit, out var forbiddenAbilityIssue))
+          issues.Add(forbiddenAbilityIssue);
       }
       if (issues.Count == 0)
         return;
@@ -146,6 +150,39 @@ namespace Launcher.IntegrityChecker
         return true;
       }
       
+      return false;
+    }
+    
+    private static bool VerifyForbiddenAbilities(Unit unit, [NotNullWhen(true)] out string? issue)
+    {
+      issue = null;
+
+      foreach (var ability in unit.AbilitiesNormal)
+      {
+        if (AbilityIsForbidden(ability))
+        {
+          issue = $"{unit.GetReadableId()} has forbidden unit ability {ability.GetReadableId()}. Legacies doesn't use blight.";
+          return true;
+        }
+      }
+      
+      foreach (var ability in unit.AbilitiesHero)
+      {
+        if (AbilityIsForbidden(ability))
+        {
+          issue = $"{unit.GetReadableId()} has forbidden hero ability {ability.GetReadableId()}. Legacies doesn't use blight.";
+          return true;
+        }
+      }
+      
+      return false;
+    }
+    
+    private static bool AbilityIsForbidden(Ability ability)
+    {
+      if (ability is BlightDispelLarge or BlightDispelSmall or BlightPlacement or BlightedGoldMine or BlightGrowthLarge or BlightGrowthSmall)
+        return true;
+
       return false;
     }
   }
