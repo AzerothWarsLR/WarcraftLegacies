@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
 
     /// <inheritdoc/>
     public override string RewardFlavour =>
-      "The glorious kingdom of Ahn'Qiraj has now been rebuilt. The gates are open, and the world shall fear the Qiraji once more.";
+      "The glorious kingdom of Ahn'Qiraj has now been rebuilt, the gates are open and the world shall fear the Qiraji once more.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Gain control of the gate of Ahn'Qiraj";

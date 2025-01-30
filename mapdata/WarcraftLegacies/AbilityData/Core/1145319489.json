@@ -9,19 +9,19 @@
       "Level": 2,
       "Id": 1718968929,
       "Type": 3,
-      "Value": "ZB45"
+      "Value": "Brej"
     },
     {
       "Level": 3,
       "Id": 1718968929,
       "Type": 3,
-      "Value": "ZB45"
+      "Value": "Brej"
     },
     {
       "Level": 4,
       "Id": 1718968929,
       "Type": 3,
-      "Value": "ZB45"
+      "Value": "Brej"
     },
     {
       "Level": 1,
@@ -230,31 +230,19 @@
       "Level": 2,
       "Id": 1918989409,
       "Type": 3,
-      "Value": "air,ground,friend,vuln,invu,self,organic,neutral"
+      "Value": "air,friend,ground,invulnerable,neutral,organic,self,vulnerable"
     },
     {
       "Level": 3,
       "Id": 1918989409,
       "Type": 3,
-      "Value": "air,ground,friend,vuln,invu,self,organic,neutral"
+      "Value": "air,friend,ground,invulnerable,neutral,organic,self,vulnerable"
     },
     {
       "Level": 4,
       "Id": 1918989409,
       "Type": 3,
-      "Value": "air,ground,friend,vuln,invu,self,organic,neutral"
-    },
-    {
-      "Level": 1,
-      "Id": 1918989409,
-      "Type": 3,
-      "Value": "air,ground,friend,vuln,invu,self,organic,neutral"
-    },
-    {
-      "Level": 1,
-      "Id": 1718968929,
-      "Type": 3,
-      "Value": "ZB45"
+      "Value": "air,friend,ground,invulnerable,neutral,organic,self,vulnerable"
     }
   ]
 }

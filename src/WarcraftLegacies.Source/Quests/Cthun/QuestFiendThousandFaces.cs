@@ -1,4 +1,5 @@
-﻿using MacroTools.LegendSystem;
+﻿using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
@@ -15,7 +16,8 @@ namespace WarcraftLegacies.Source.Quests.Cthun
     public override string RewardFlavour => "Yogg-Saron has been consumed. His genome has been added to the brood!";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Soldiers and Super Majors gain the Vampiric Attack ability";
+    protected override string RewardDescription =>
+      $"Soldier and Super Major gain the Vampiric Attack ability";
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestFiendThousandFaces"/> class.
@@ -28,5 +30,10 @@ namespace WarcraftLegacies.Source.Quests.Cthun
       AddObjective(new ObjectiveLegendDead(yoggsaron));
       ResearchId = UPGRADE_RFTF_QUEST_COMPLETED_FIEND_OF_A_THOUSAND_FACES;
     }
+
+    /// <inheritdoc/>
+    protected override void OnComplete(Faction completingFaction) {
+      
+    } 
   }
 }

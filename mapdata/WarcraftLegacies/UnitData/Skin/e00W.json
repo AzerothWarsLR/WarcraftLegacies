@@ -1,0 +1,41 @@
+{
+  "OldId": 1835230309,
+  "NewId": 1462775909,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEnchantedBears.blp"
+    },
+    {
+      "Id": 1651270517,
+      "Value": 113
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Druids, Bear Form)"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 222
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Broll Bearmantle"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 200
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Melee spellcaster. Can initially cast Roar, which increases attack damage. Can also learn Rejuvenation, Bear Form and Mark of the Claw. "
+    }
+  ]
+}

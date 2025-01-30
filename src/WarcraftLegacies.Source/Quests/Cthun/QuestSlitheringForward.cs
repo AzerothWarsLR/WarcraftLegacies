@@ -32,10 +32,11 @@ namespace WarcraftLegacies.Source.Quests.Cthun
       _outpost1Units = outpost1.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _outpost2Units = outpost2.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _outpost3Units = outpost3.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+
     }
 
     /// <inheritdoc />
-    public override string RewardFlavour => "The land has been secured. I can now expand the hive warrens to Silithus.";
+    public override string RewardFlavour => "The land has been secured, we can now expand the hive warrens to Silithus.";
 
     /// <inheritdoc />
     protected override string RewardDescription => "Control of all outposts in Silithus";

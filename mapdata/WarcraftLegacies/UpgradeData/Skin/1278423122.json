@@ -9,13 +9,13 @@
       "Level": 1,
       "Id": 829579623,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeal.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrbOfDeath.blp"
     },
     {
       "Level": 1,
       "Id": 1718840935,
       "Type": 3,
-      "Value": "(Fel Horde)"
+      "Value": "(fel horde)"
     },
     {
       "Level": 1,
@@ -33,7 +33,7 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Improves Heal by increasing its heal amount to \u003CA0AR,DataA2\u003E and reducing its mana cost to \u003CA0AR,Cost2\u003E."
+      "Value": "Improves Heal by increasing its heal amount to \u003CR0AL,DataA2\u003E and reducing its mana cost to \u003CR0AL,Cost2\u003E."
     },
     {
       "Level": 1,

@@ -1,0 +1,29 @@
+{
+  "OldId": 1785033282,
+  "NewId": 875638850,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpell_Holy_FlashHeal.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Renewal"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has Renewal; it is healing hit points over time."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\StaffOfSanctuary\\Staff_Sanctuary_Target.mdl"
+    }
+  ]
+}

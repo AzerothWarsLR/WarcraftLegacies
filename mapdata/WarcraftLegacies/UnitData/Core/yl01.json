@@ -36,7 +36,7 @@
     {
       "Id": 1902338421,
       "Type": 2,
-      "Value": 1000
+      "Value": 1500
     },
     {
       "Id": 1920363893,
@@ -46,16 +46,7 @@
     {
       "Id": 1664180597,
       "Type": 2,
-      "Value": 1.2
-    },
-    {
-      "Id": 1647403381,
-      "Value": 4
-    },
-    {
-      "Id": 1731289461,
-      "Type": 3,
-      "Value": "debris,ground,item,nonancient,structure,ward"
+      "Value": 1
     }
   ]
 }
