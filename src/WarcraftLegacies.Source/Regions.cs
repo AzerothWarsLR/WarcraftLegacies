@@ -83,7 +83,7 @@ public static class Regions
 	public static Rectangle DemonGate3 { get; set; } = new Rectangle(352f, -25472f, 864f, -25024f);
 	public static Rectangle Desolace_Ships { get; set; } = new Rectangle(-18720f, -7584f, -17088f, -3488f);
 	public static Rectangle DraeneiQuestKill { get; set; } = new Rectangle(-20928f, -5376f, -17184f, -2624f);
-	public static Rectangle DraeneiStartPos { get; set; } = new Rectangle(-21216f, 7744f, -20512f, 8512f);
+	public static Rectangle DraeneiStartPos { get; set; } = new Rectangle(-20928f, 8480f, -20512f, 8832f);
 	public static Rectangle DragonmawPortal { get; set; } = new Rectangle(22176f, -4896f, 22720f, -4576f);
 	public static Rectangle DragonmawUnlock { get; set; } = new Rectangle(20832f, -5088f, 23168f, -2720f);
 	public static Rectangle DrakUnlock { get; set; } = new Rectangle(1120f, 18592f, 3360f, 20960f);

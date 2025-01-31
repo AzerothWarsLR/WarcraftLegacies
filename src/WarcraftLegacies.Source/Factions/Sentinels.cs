@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Factions
       UndefeatedResearch = FourCC("R05Y");
       StartingGold = 200;
       CinematicMusic = "Comradeship";
-      ControlPointDefenderUnitTypeId = UNIT_H03F_CONTROL_POINT_DEFENDER_SENTINELS;
+      ControlPointDefenderUnitTypeId = UNIT_O05A_GEMCRAFTER_DRAENEI_WORKER;
       StartingCameraPosition = Regions.SentStartPos.Center;
       StartingUnits = Regions.SentStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       LearningDifficulty = FactionLearningDifficulty.Basic;
@@ -74,24 +74,28 @@ Once you have secured your holdings, gather your army and destroy the Old Gods. 
 
 
 
-  public override void OnNotPicked()
-  {
-    ReplaceWorkersInRectangle(Regions.SentStartPos, replacementUnitTypeId);
-  }
-
-  public void ReplaceWorkersInRectangle(Rectangle rectangle, int replacementUnitTypeId)
-  {
-    Func<unit, bool> condition = unit => IsUnitType(unit, UNIT_TYPE_PEON);
-    var replacedUnits = rectangle.ReplaceWorkers(replacementUnitTypeId, condition);
-
-    foreach (var unit in replacedUnits)
+    public override void OnNotPicked()
     {
-      SetUnitOwner(unit, Player(18), true);
+      Console.WriteLine("OnNotPicked called. Replacing workers in SentStartPos.");
+      ReplaceWorkersInRectangle(Regions.SentStartPos, replacementUnitTypeId);
     }
-  }
 
-  /// <inheritdoc />
-  public override void OnRegistered()
+    public void ReplaceWorkersInRectangle(Rectangle rectangle, int replacementUnitTypeId)
+    {
+      Console.WriteLine($"Replacing workers in rectangle: {rectangle}");
+      Func<unit, bool> condition = unit => IsUnitType(unit, UNIT_TYPE_PEON);
+      var replacedUnits = rectangle.ReplaceWorkers(replacementUnitTypeId, condition);
+
+      Console.WriteLine($"Number of units replaced: {replacedUnits.Count}");
+      foreach (var unit in replacedUnits)
+      {
+        SetUnitOwner(unit, Player(18), true);
+        Console.WriteLine($"Replaced unit with ID {GetUnitTypeId(unit)} and set owner to player 18");
+      }
+    }
+
+    /// <inheritdoc />
+    public override void OnRegistered()
     {
       RegisterObjectLimits();
       RegisterQuests();
