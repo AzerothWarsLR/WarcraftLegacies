@@ -21,12 +21,16 @@ namespace MacroTools.FactionChoices
     {
       var pickedFaction = choice.Data;
       HasChoiceBeenPicked = true;
+
+      // Replace workers in the starting units
+      var startingUnits = pickedFaction.StartingUnits;
+      startingUnits.ReplaceWorkers(pickingPlayer, pickedFaction.ReplacementUnitTypeId, unit => IsUnitType(unit, UNIT_TYPE_PEON));
+
       if (pickedFaction.StartingCameraPosition != null)
         pickingPlayer.RepositionCamera(pickedFaction.StartingCameraPosition);
 
       pickingPlayer.SetFaction(pickedFaction);
       FactionManager.Register(pickedFaction);
-      var startingUnits = pickedFaction.StartingUnits;
       pickingPlayer.RescueGroup(startingUnits);
 
       foreach (var unpickedFaction in Choices.Where(x => x.Data != choice.Data))
@@ -44,10 +48,10 @@ namespace MacroTools.FactionChoices
           unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
         else
           unit.Remove();
-      
+
       faction.OnNotPicked();
     }
-    
+
     private static Choice<Faction>[] ConvertToFactionChoices(IEnumerable<Faction> factions)
     {
       return factions

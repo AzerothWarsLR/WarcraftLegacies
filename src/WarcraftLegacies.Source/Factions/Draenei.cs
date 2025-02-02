@@ -23,6 +23,7 @@ namespace WarcraftLegacies.Source.Factions
     public Draenei(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("The Exodar",
       PLAYER_COLOR_NAVY, "|cff000080", @"ReplaceableTextures\CommandButtons\BTNBOSSVelen.blp")
     {
+      ReplacementUnitTypeId = UNIT_O05A_GEMCRAFTER_DRAENEI_WORKER;
       TraditionalTeam = TeamSetup.NightElves;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;

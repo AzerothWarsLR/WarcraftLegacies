@@ -27,6 +27,7 @@ namespace WarcraftLegacies.Source.Factions
     public Sentinels(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80",
       @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
     {
+      ReplacementUnitTypeId = UNIT_EWSP_WISP_DRUIDS_SENTINELS_WORKER;
       TraditionalTeam = TeamSetup.Kalimdor;
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
@@ -38,6 +39,7 @@ namespace WarcraftLegacies.Source.Factions
       StartingUnits = Regions.SentStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       LearningDifficulty = FactionLearningDifficulty.Basic;
       IntroText = @"You are playing as the ever-watchful 
+
 
 The Druids are slowly waking from their slumber, and it falls to you to drive back the Old Gods invaders from Kalimdor until then.
 

@@ -116,28 +116,26 @@ namespace MacroTools.Extensions
       return group;
     }
 
-    public static List<unit> ReplaceWorkers(this Rectangle rectangle, int replacementUnitTypeId, Func<unit, bool> condition)
-    {
-      var unitsInArea = CreateGroup()
-          .EnumUnitsInRect(rectangle)
-          .EmptyToList()
-          .Where(condition)
-          .ToList();
 
-      Console.WriteLine($"Total units matching condition: {unitsInArea.Count}");
-
-      foreach (var unit in unitsInArea)
+      public static List<unit> ReplaceWorkers(this List<unit> units, player pickingPlayer, int replacementUnitTypeId, Func<unit, bool> condition)
       {
-        var x = GetUnitX(unit);
-        var y = GetUnitY(unit);
-        var facing = GetUnitFacing(unit);
-        var newUnit = CreateUnit(unit.OwningPlayer(), replacementUnitTypeId, x, y, facing);
-        Console.WriteLine($"Replacing unit at ({x}, {y}) with new unit of type {replacementUnitTypeId}");
-        RemoveUnit(unit);
-      }
+        var unitsToReplace = units.Where(condition).ToList();
 
-      return unitsInArea;
+        Console.WriteLine($"Total units matching condition: {unitsToReplace.Count}");
+
+        foreach (var unit in unitsToReplace)
+        {
+          var x = GetUnitX(unit);
+          var y = GetUnitY(unit);
+          var facing = GetUnitFacing(unit);
+          var newUnit = CreateUnit(pickingPlayer, replacementUnitTypeId, x, y, facing);
+          Console.WriteLine($"Replacing unit at ({x}, {y}) with new unit of type {replacementUnitTypeId}");
+          RemoveUnit(unit);
+        }
+
+        return unitsToReplace;
+      }
     }
   }
-}
-  
+
+

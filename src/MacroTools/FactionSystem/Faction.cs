@@ -105,8 +105,13 @@ namespace MacroTools.FactionSystem
     /// All of the <see cref="Faction"/>'s <see cref="ControlPoint"/> <see cref="ControlPoint.Defender"/>s
     /// will be represented by this unit type.
     /// </summary>
-    public int? ControlPointDefenderUnitTypeId { get; protected init; }
 
+
+    public int? ControlPointDefenderUnitTypeId { get; protected init; }
+    /// <summary>
+    /// Sets this to on the Faction's active Worker unit
+    /// </summary>
+    public int ReplacementUnitTypeId { get; set; }
     /// <summary>
     /// Check to see if <see cref="Faction"/> has any living essential legends
     /// </summary>
