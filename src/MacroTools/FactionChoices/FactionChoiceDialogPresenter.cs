@@ -22,9 +22,12 @@ namespace MacroTools.FactionChoices
       var pickedFaction = choice.Data;
       HasChoiceBeenPicked = true;
 
-      // Replace workers in the starting units
+      // Replace townhall and workers in the starting units
       var startingUnits = pickedFaction.StartingUnits;
-      startingUnits.ReplaceWorkers(pickingPlayer, pickedFaction.ReplacementUnitTypeId, unit => IsUnitType(unit, UNIT_TYPE_PEON));
+      startingUnits.ReplaceWorkers(pickingPlayer, pickedFaction.FactionWorker, unit => IsUnitType(unit, UNIT_TYPE_PEON));
+      startingUnits.ReplaceTownHall(pickingPlayer, pickedFaction.FactionTownHall);
+
+
 
       if (pickedFaction.StartingCameraPosition != null)
         pickingPlayer.RepositionCamera(pickedFaction.StartingCameraPosition);

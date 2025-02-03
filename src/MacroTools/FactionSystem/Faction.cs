@@ -111,7 +111,11 @@ namespace MacroTools.FactionSystem
     /// <summary>
     /// Sets this to on the Faction's active Worker unit
     /// </summary>
-    public int ReplacementUnitTypeId { get; set; }
+    public int FactionWorker { get; set; }
+    /// <summary>
+    /// Sets this to the Factions Town Hall unit
+    /// </summary>
+    public int FactionTownHall { get; set; }
     /// <summary>
     /// Check to see if <see cref="Faction"/> has any living essential legends
     /// </summary>
