@@ -90,60 +90,56 @@ namespace MacroTools.Extensions
 
     public static List<unit> ReplaceWorkers(this List<unit> units, player pickingPlayer, int factionWorker)
     {
-      var unitsToReplace = units.Where(unit => IsUnitType(unit, UNIT_TYPE_PEON)).ToList();
+      var newUnits = new List<unit>();
 
-      if (unitsToReplace.Count == 0)
+      foreach (var unit in units)
       {
-        Console.WriteLine("No workers to replace.");
-        return unitsToReplace;
+        if (IsUnitType(unit, UNIT_TYPE_PEON))
+        {
+          var x = GetUnitX(unit);
+          var y = GetUnitY(unit);
+          var facing = GetUnitFacing(unit);
+
+          RemoveUnit(unit);
+
+          var newUnit = CreateUnit(pickingPlayer, factionWorker, x, y, facing);
+          newUnits.Add(newUnit);
+          Console.WriteLine($"Replacing worker at ({x}, {y}) with new worker of type {factionWorker}");
+        }
+        else
+        {
+          newUnits.Add(unit);
+        }
       }
 
-      Console.WriteLine($"Total workers matching condition: {unitsToReplace.Count}");
-
-      foreach (var unit in unitsToReplace)
-      {
-        var x = GetUnitX(unit);
-        var y = GetUnitY(unit);
-        var facing = GetUnitFacing(unit);
-
-        // Remove the old unit
-        RemoveUnit(unit);
-
-        // Create the new unit at the captured position and facing
-        var newUnit = CreateUnit(pickingPlayer, factionWorker, x, y, facing);
-        Console.WriteLine($"Replacing worker at ({x}, {y}) with new worker of type {factionWorker}");
-      }
-
-      return unitsToReplace;
+      return newUnits;
     }
 
     public static List<unit> ReplaceTownHall(this List<unit> units, player pickingPlayer, int townHallUnitTypeId)
     {
-      var unitsToReplace = units.Where(unit => IsUnitType(unit, UNIT_TYPE_TOWNHALL)).ToList();
+      var newUnits = new List<unit>();
 
-      if (unitsToReplace.Count == 0)
+      foreach (var unit in units)
       {
-        Console.WriteLine("No town halls to replace.");
-        return unitsToReplace;
+        if (IsUnitType(unit, UNIT_TYPE_TOWNHALL))
+        {
+          var x = GetUnitX(unit);
+          var y = GetUnitY(unit);
+          var facing = GetUnitFacing(unit);
+
+          RemoveUnit(unit);
+
+          var newUnit = CreateUnit(pickingPlayer, townHallUnitTypeId, x, y, facing);
+          newUnits.Add(newUnit);
+          Console.WriteLine($"Replacing town hall at ({x}, {y}) with new town hall of type {townHallUnitTypeId}");
+        }
+        else
+        {
+          newUnits.Add(unit);
+        }
       }
 
-      Console.WriteLine($"Total town halls matching condition: {unitsToReplace.Count}");
-
-      foreach (var unit in unitsToReplace)
-      {
-        var x = GetUnitX(unit);
-        var y = GetUnitY(unit);
-        var facing = GetUnitFacing(unit);
-
-        // Remove the old unit
-        RemoveUnit(unit);
-
-        // Create the new unit at the captured position and facing
-        var newUnit = CreateUnit(pickingPlayer, townHallUnitTypeId, x, y, facing);
-        Console.WriteLine($"Replacing town hall at ({x}, {y}) with new town hall of type {townHallUnitTypeId}");
-      }
-
-      return unitsToReplace;
+      return newUnits;
     }
 
   }
