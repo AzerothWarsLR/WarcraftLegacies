@@ -69,7 +69,7 @@ Gather your forces and strike before the Old Gods can organize their efforts.";
 
     private void RegisterObjectLimits()
     {
-      foreach (var (objectTypeId, objectLimit) in DruidsObjectLimitData.GetAllObjectLimits())
+      foreach (var (objectTypeId, objectLimit) in DruidsObjectInfo.GetAllObjectLimits())
         ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 

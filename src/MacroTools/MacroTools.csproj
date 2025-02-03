@@ -17,5 +17,9 @@
         <PackageReference Include="WCSharp.SaveLoad" Version="2.2.0" />
         <PackageReference Include="WCSharp.Shared" Version="2.2.0" />
     </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MacroTools.Shared\MacroTools.Shared.csproj" />
+    </ItemGroup>
     
 </Project>

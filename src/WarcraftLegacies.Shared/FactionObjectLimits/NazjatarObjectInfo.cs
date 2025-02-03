@@ -1,10 +1,12 @@
-﻿namespace WarcraftLegacies.Shared.FactionObjectLimits
+﻿using MacroTools.Shared;
+
+namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class NazjatarObjectLimitData
+  public static class NazjatarObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
       yield return new(Constants.UNIT_N0C2_PILLAR_OF_WAVES_NZOTH_T1, Unlimited);
       yield return new(Constants.UNIT_N0C8_MONUMENT_OF_THE_DEEP_NZOTH_T2, Unlimited);
@@ -28,7 +30,7 @@
       yield return new(Constants.UNIT_U02J_TIDAL_TERROR_NZOTH, 4);
       yield return new(Constants.UNIT_H01Q_IMMORTAL_GUARDIAN_NZOTH, 4);
       yield return new(Constants.UNIT_N0CO_TRENCH_HYDRA_NZOTH, 2);
-      yield return new("e020", Unlimited); //Shipyard
+      yield return new(Constants.UNIT_E020_ANCIENT_SHIPYARD_NAGA_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new("etrs", Unlimited); //Night Elf Transport Ship
       yield return new("h0AU", Unlimited); // Scout
       yield return new("h0AV", Unlimited); // Frigate

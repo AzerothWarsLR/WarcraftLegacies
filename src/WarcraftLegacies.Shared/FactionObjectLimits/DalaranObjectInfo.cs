@@ -1,12 +1,13 @@
+using MacroTools.Shared;
 using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class DalaranObjectLimitData
+  public static class DalaranObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
       yield return new("h065", Unlimited); //Refuge
       yield return new("h066", Unlimited); //Conclave
@@ -20,7 +21,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("h079", Unlimited); //Arcane Tower
       yield return new("h07A", Unlimited); //Arcane Tower (Improved)
       yield return new("hvlt", Unlimited); //Arcane Vault
-      yield return new("h076", Unlimited); //Alliance Shipyard
+      yield return new(UNIT_H076_SHIPYARD_DALARAN_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new("ndgt", Unlimited); //Dalaran Tower
       yield return new("n004", Unlimited); //Dalaran Tower (Improved)
       yield return new("h067", Unlimited); //Laboratory

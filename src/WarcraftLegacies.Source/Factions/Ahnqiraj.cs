@@ -62,7 +62,7 @@ You do not possess boats, but your workers can burrow through water, use them to
 
     private void RegisterObjectLimits()
     {
-      foreach (var (objectTypeId, objectLimit) in AhnqirajObjectLimitData.GetAllObjectLimits())
+      foreach (var (objectTypeId, objectLimit) in AhnqirajObjectInfo.GetAllObjectInfos())
         ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 

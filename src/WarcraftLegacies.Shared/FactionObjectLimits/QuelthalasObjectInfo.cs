@@ -1,12 +1,13 @@
+using MacroTools.Shared;
 using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class QuelthalasObjectLimitData
+  public static class QuelthalasObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
       yield return new("h033", Unlimited); //Steading
       yield return new("h03S", Unlimited); //Mansion
@@ -23,7 +24,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("nheb", Unlimited); //Cantonment
       yield return new("n0A2", Unlimited); //Consortium
       yield return new("h03J", Unlimited); //Academy
-      yield return new("h077", Unlimited); //Alliance Shipyard
+      yield return new(UNIT_H077_SHIPYARD_QUEL_THALAS_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new("nefm", Unlimited); //Residence
       yield return new("nbee", Unlimited); //Elven Worker
       yield return new("hhes", Unlimited); //Elven Warrior

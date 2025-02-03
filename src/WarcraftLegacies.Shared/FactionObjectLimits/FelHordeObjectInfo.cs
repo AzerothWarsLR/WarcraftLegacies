@@ -1,12 +1,13 @@
+using MacroTools.Shared;
 using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class FelHordeObjectLimitData
+  public static class FelHordeObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectInfos()
     {
       yield return new("o02Y", Unlimited); //Great Hall
       yield return new("o02Z", Unlimited); //Stronghold
@@ -16,7 +17,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("o031", Unlimited); //War Mill
       yield return new("o033", Unlimited); //Spirit Lodge
       yield return new("o02X", Unlimited); //Bestiary
-      yield return new("o032", Unlimited); //Shipyard
+      yield return new(UNIT_O032_SHIPYARD_FEL_HORDE_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new("o034", Unlimited); //Watch Tower
       yield return new("o035", Unlimited); //Improved Watch Tower
       yield return new("u00Q", Unlimited); //Hellforge

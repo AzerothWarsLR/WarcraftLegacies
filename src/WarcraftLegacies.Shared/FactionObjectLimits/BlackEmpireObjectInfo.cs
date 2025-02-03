@@ -1,12 +1,13 @@
-﻿using static Constants;
+﻿using MacroTools.Shared;
+using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class BlackEmpireObjectLimitData
+  public static class BlackEmpireObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
       yield return new(UNIT_N0AR_TWISTING_HALLS_YOGG_T1, Unlimited);
       yield return new(UNIT_N0AS_WHISPERING_LABYRINTH_YOGG_T2, Unlimited);
@@ -32,20 +33,20 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(UNIT_SHZ5_AQIR_BLACK_EMPIRE, 6);
       yield return new(UNIT_N077_MINDLASHER_YOGG, Unlimited);
       yield return new(UNIT_O04Y_FATEWEAVER_YOGG, Unlimited);
-      yield return new(UNIT_U02F_FORGOTTEN_ONE_YOGG, 1, "completing certain Quests");
+      yield return new(UNIT_U02F_FORGOTTEN_ONE_YOGG, 1, null, "completing certain Quests");
       yield return new(UNIT_BHN1_HERALD_YOGG, 6);
       yield return new(UNIT_O04Z_FLYING_HORROR_YOGG, 12);
       yield return new(UNIT_N0AH_DEFORMED_CHIMERA_YOGG, 4);
       yield return new(UNIT_H09F_DEEP_FIEND_YOGG, 12);
-      yield return new(UNIT_USHP_HAUNTED_HARBOR_SCOURGE_SHIPYARD, Unlimited); //Undead Shipyard
-      yield return new(UNIT_H0AT_SCOUT_SHIP_UNDEAD, Unlimited); //Undead Transport Ship
-      yield return new(UNIT_H0AW_FRIGATE_UNDEAD, Unlimited); //Scout
-      yield return new(UNIT_UBOT_HAUNTED_TRANSPORT_SHIP_SCOURGE_LEGION, Unlimited); //Frigate
-      yield return new(UNIT_H0AM_FIRESHIP_UNDEAD, Unlimited); //Fireship
-      yield return new(UNIT_H0AZ_GALLEY_UNDEAD, Unlimited); //Galley
-      yield return new(UNIT_H0AQ_BOARDING_VESSEL_UNDEAD, Unlimited); //Boarding
-      yield return new(UNIT_H0BB_JUGGERNAUT_UNDEAD, Unlimited); //Juggernaut
-      yield return new(UNIT_H0B9_BOMBARD_UNDEAD, 6); //Bombard
+      yield return new(UNIT_USHP_HAUNTED_HARBOR_SCOURGE_SHIPYARD, Unlimited, UnitCategory.Shipyard);
+      yield return new(UNIT_H0AT_SCOUT_SHIP_UNDEAD, Unlimited);
+      yield return new(UNIT_H0AW_FRIGATE_UNDEAD, Unlimited);
+      yield return new(UNIT_UBOT_HAUNTED_TRANSPORT_SHIP_SCOURGE_LEGION, Unlimited);
+      yield return new(UNIT_H0AM_FIRESHIP_UNDEAD, Unlimited);
+      yield return new(UNIT_H0AZ_GALLEY_UNDEAD, Unlimited);
+      yield return new(UNIT_H0AQ_BOARDING_VESSEL_UNDEAD, Unlimited);
+      yield return new(UNIT_H0BB_JUGGERNAUT_UNDEAD, Unlimited);
+      yield return new(UNIT_H0B9_BOMBARD_UNDEAD, 6);
       yield return new(UNIT_U00P_LIEUTENANT_OF_N_ZOTH_BLACK_EMPIRE, 1);
       yield return new(UNIT_U02B_N_RAQI_ABERRATION_BLACK_EMPIRE, 1);
       yield return new(UNIT_E01D_HARBINGER_OF_NY_ALOTHA_YOGG, 1);

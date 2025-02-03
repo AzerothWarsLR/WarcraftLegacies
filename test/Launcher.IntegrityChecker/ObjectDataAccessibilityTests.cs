@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using Launcher.IntegrityChecker.TestSupport;
+using MacroTools.Shared.Extensions;
 using War3Api.Object;
-using WarcraftLegacies.Shared.Extensions;
 using Xunit.Sdk;
 
 namespace Launcher.IntegrityChecker

@@ -59,7 +59,7 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare for a 
 
     private void RegisterObjectLimits()
     {
-      foreach (var (objectTypeId, objectLimit) in FelHordeObjectLimitData.GetAllObjectLimits())
+      foreach (var (objectTypeId, objectLimit) in FelHordeObjectInfo.GetAllObjectInfos())
         ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
 
       ModAbilityAvailability(ABILITY_A0MZ_DEMONIC_CONSTRUCTION_TEAL_DEMOLISHERS, -1);

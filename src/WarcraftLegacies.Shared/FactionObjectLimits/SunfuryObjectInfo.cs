@@ -1,12 +1,13 @@
+using MacroTools.Shared;
 using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class SunfuryObjectLimitData
+  public static class SunfuryObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
       yield return new("h02P", Unlimited); //t1
       yield return new("h0C4", Unlimited); //t2
@@ -23,7 +24,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("n0E0", Unlimited); //Skyfury tower
       yield return new("n0E1", Unlimited); //improved skyfury tower
       yield return new("N0DZ", 1); //Fountain
-      yield return new("tp04", Unlimited); //Alliance Shipyard
+      yield return new(UNIT_TP04_SHIPYARD_SUNFURY_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new("n0E2", Unlimited); //worker
       yield return new("n09S", Unlimited); //Elven Warrior
       yield return new("h0CF", Unlimited); //Elven Ranger

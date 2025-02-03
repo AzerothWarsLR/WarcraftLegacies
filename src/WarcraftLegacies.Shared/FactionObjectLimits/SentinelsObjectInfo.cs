@@ -1,28 +1,29 @@
+using MacroTools.Shared;
 using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class SentinelsObjectLimitData
+  public static class SentinelsObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
-      yield return new("e00V", Unlimited); //Temple of Elune
+      yield return new(UNIT_E00V_TEMPLE_OF_ELUNE_SENTINEL_MAGIC, Unlimited);
       yield return new("e00R", Unlimited); //Altar of Watchers
       yield return new("e00L", Unlimited); //War Academy
       yield return new("edob", Unlimited); //Hunter)s Hall
       yield return new("eden", Unlimited); //Ancient of Wonders
-      yield return new("e011", Unlimited); //Night Elf Shipyard
+      yield return new(UNIT_E011_KALDOREI_DOCKS_SENTINEL_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new("h03N", Unlimited); //Enchanged Runestone
       yield return new("h03M", Unlimited); //Runestone
       yield return new("n06O", Unlimited); //Sentinel Embassy
       yield return new("n06P", Unlimited); //Sentinel Enclave
-      yield return new("n06J", Unlimited); //Sentinel Outpost
+      yield return new(UNIT_N06J_SENTINEL_OUTPOST_SENTINEL_T1, Unlimited, UnitCategory.TownHall);
       yield return new("n06M", Unlimited); //Residence
       yield return new("edos", Unlimited); //Roost
       yield return new("e00T", Unlimited); //Bastion
-      yield return new("ewsp", Unlimited); //Wisp
+      yield return new(UNIT_EWSP_WISP_DRUIDS_SENTINELS_WORKER, Unlimited, UnitCategory.Worker);
       yield return new("e006", Unlimited); //Priestess
       yield return new("n06C", Unlimited); //Trapper
       yield return new("h04L", 6); //Priestess of the Moon

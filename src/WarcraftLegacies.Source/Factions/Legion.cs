@@ -73,7 +73,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
 
     private void RegisterObjectLimits()
     {
-      foreach (var (objectTypeId, objectLimit) in LegionObjectLimitData.GetAllObjectLimits())
+      foreach (var (objectTypeId, objectLimit) in LegionObjectInfo.GetAllObjectLimits())
         ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 

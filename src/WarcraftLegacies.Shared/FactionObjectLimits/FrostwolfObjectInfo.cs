@@ -1,12 +1,13 @@
+using MacroTools.Shared;
 using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class FrostwolfObjectLimitData
+  public static class FrostwolfObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
       yield return new(UNIT_OGRE_GREAT_HALL_FROSTWOLF_T1, Unlimited);
       yield return new(UNIT_OSTR_STRONGHOLD_FROSTWOLF_T2, Unlimited);
@@ -20,7 +21,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(UNIT_OWTW_WATCH_TOWER_FROSTWOLF_TOWER, Unlimited);
       yield return new(UNIT_O002_IMPROVED_WATCH_TOWER_FROSTWOLF_TOWER_2, Unlimited);
       yield return new(UNIT_OVLN_VOODOO_LOUNGE_FROSTWOLF_SHOP, Unlimited);
-      yield return new(UNIT_OSHY_HORDE_PIER_FROSTWOLF_SHIPYARD, Unlimited);
+      yield return new(UNIT_OSHY_HORDE_PIER_FROSTWOLF_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new(UNIT_OOSC_PACK_KODO_FROSTWOLF, Unlimited);
       yield return new(UNIT_OBEA_BEASTIARY_FROSTWOLF_SPECIALIST, Unlimited);
       yield return new(UNIT_OPEO_PEON_FROSTWOLF_WARSONG_WORKER, Unlimited);

@@ -1,12 +1,13 @@
+using MacroTools.Shared;
 using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class LordaeronObjectLimitData
+  public static class LordaeronObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
       yield return new("htow", Unlimited); //Town Hall
       yield return new("hkee", Unlimited); //Keep
@@ -21,7 +22,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("h006", Unlimited); //Guard Tower (Improved)
       yield return new("hctw", Unlimited); //Cannon Tower
       yield return new("h007", Unlimited); //Cannon Tower (Improved)
-      yield return new("hshy", Unlimited); //Alliance Shipyard
+      yield return new(UNIT_HSHY_SHIPYARD_LORDAERON_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new("nmrk", Unlimited); //Marketplace
       yield return new("h06C", Unlimited); //Aviary
       yield return new("h094", Unlimited); //Siege Camp

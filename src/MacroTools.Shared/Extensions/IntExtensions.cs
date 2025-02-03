@@ -1,4 +1,4 @@
-﻿namespace WarcraftLegacies.Shared.Extensions
+﻿namespace MacroTools.Shared.Extensions
 {
   public static class IntExtensions
   {

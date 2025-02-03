@@ -66,7 +66,7 @@ Your allies will be coming south to help you defend against the Old Gods, do not
 
     private void RegisterObjectLimits()
     {
-      foreach (var (objectTypeId, objectLimit) in FrostwolfObjectLimitData.GetAllObjectLimits())
+      foreach (var (objectTypeId, objectLimit) in FrostwolfObjectInfo.GetAllObjectLimits())
         ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
 
       ModAbilityAvailability(ABILITY_A0PF_FEL_ENERGY_TEAL_FORTRESSES, -1);

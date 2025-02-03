@@ -83,7 +83,7 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
     
     private void RegisterObjectLimits()
     {
-      foreach (var (objectTypeId, objectLimit) in QuelthalasObjectLimitData.GetAllObjectLimits())
+      foreach (var (objectTypeId, objectLimit) in QuelthalasObjectInfo.GetAllObjectLimits())
         ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
 
       ModAbilityAvailability(ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);

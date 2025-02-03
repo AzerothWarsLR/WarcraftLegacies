@@ -74,7 +74,7 @@ Be sure to train Forsaken Ones, they are powerful units";
 
     private void RegisterObjectLimits()
     {
-      foreach (var (objectTypeId, objectLimit) in BlackEmpireObjectLimitData.GetAllObjectLimits())
+      foreach (var (objectTypeId, objectLimit) in BlackEmpireObjectInfo.GetAllObjectLimits())
         ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 

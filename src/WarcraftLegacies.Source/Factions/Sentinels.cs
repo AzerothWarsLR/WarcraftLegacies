@@ -23,12 +23,9 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    
     public Sentinels(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80",
       @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
     {
-      FactionTownHall = UNIT_N06J_SENTINEL_OUTPOST_SENTINEL_T1;
-      FactionWorker = UNIT_EWSP_WISP_DRUIDS_SENTINELS_WORKER;
       TraditionalTeam = TeamSetup.Kalimdor;
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
@@ -39,7 +36,7 @@ namespace WarcraftLegacies.Source.Factions
       StartingCameraPosition = Regions.SentDraeSharedStartPos.Center;
       StartingUnits = Regions.SentDraeSharedStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       LearningDifficulty = FactionLearningDifficulty.Basic;
-      IntroText = @"You are playing as the ever-watchful 
+      IntroText = @"You are playing as the ever-watchful |CFFBFFF80Sentinels|r.
 
 
 The Druids are slowly waking from their slumber, and it falls to you to drive back the Old Gods invaders from Kalimdor until then.
@@ -76,7 +73,7 @@ Once you have secured your holdings, gather your army and destroy the Old Gods. 
 
     private void RegisterObjectLimits()
     {
-      foreach (var (objectTypeId, objectLimit) in SentinelsObjectLimitData.GetAllObjectLimits())
+      foreach (var (objectTypeId, objectLimit) in SentinelsObjectInfo.GetAllObjectLimits())
         ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 

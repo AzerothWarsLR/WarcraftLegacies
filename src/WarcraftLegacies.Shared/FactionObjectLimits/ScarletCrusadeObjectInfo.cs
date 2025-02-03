@@ -1,19 +1,20 @@
+using MacroTools.Shared;
 using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class ScarletCrusadeObjectLimitData
+  public static class ScarletCrusadeObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
       yield return new(UNIT_H0BM_TOWN_HALL_CRUSADE_T1, Unlimited);
       yield return new(UNIT_H0BN_KEEP_CRUSADE_T2, Unlimited);
       yield return new(UNIT_H0BO_CASTLE_CRUSADE_T3, Unlimited);
       yield return new(UNIT_H0BP_FARMSTEAD_CRUSADE_FARM, Unlimited);
       yield return new(UNIT_H0A3_BLACKSMITH_CRUSADE_RESEARCH, Unlimited);
-      yield return new(UNIT_H09X_SHIPYARD_CRUSADE_SHIPYARD, Unlimited);
+      yield return new(UNIT_H09X_SHIPYARD_CRUSADE_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new(UNIT_H0AG_HALL_OF_SWORDS_CRUSADE_BARRACKS, Unlimited);
       yield return new(UNIT_H0BE_STUDIUM_CRUSADE_MAGIC, Unlimited);
       yield return new(UNIT_H0BL_ROOKERY_CRUSADE_BEAST, Unlimited);

@@ -19,16 +19,13 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    
     public Draenei(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("The Exodar",
       PLAYER_COLOR_NAVY, "|cff000080", @"ReplaceableTextures\CommandButtons\BTNBOSSVelen.blp")
     {
-      FactionTownHall = UNIT_O02P_CRYSTAL_HALL_DRAENEI_T1;
-      FactionWorker = UNIT_O05A_GEMCRAFTER_DRAENEI_WORKER;
       TraditionalTeam = TeamSetup.NightElves;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
-      this._artifactSetup = artifactSetup;
+      _artifactSetup = artifactSetup;
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_U008_CONTROL_POINT_DEFENDER_DRAENEI;
       StartingCameraPosition = Regions.SentDraeSharedStartPos.Center;
@@ -66,7 +63,7 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
 
     private void RegisterObjectLimits()
     {
-      foreach (var (objectTypeId, objectLimit) in DraeneiObjectLimitData.GetAllObjectLimits())
+      foreach (var (objectTypeId, objectLimit) in DraeneiObjectInfo.GetAllObjectLimits())
         ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 

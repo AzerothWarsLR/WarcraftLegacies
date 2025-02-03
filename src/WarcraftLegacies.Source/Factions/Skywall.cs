@@ -103,7 +103,7 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
 
     private void RegisterObjectLimits()
     {
-      foreach (var (objectTypeId, objectLimit) in SkywallObjectLimitData.GetAllObjectLimits())
+      foreach (var (objectTypeId, objectLimit) in SkywallObjectInfo.GetAllObjectLimits())
         ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 

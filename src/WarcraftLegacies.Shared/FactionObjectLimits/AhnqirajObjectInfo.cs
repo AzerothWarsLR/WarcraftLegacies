@@ -1,12 +1,13 @@
-﻿using static Constants;
+﻿using MacroTools.Shared;
+using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class AhnqirajObjectLimitData
+  public static class AhnqirajObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectInfos()
     {
       yield return new(UNIT_U020_MONUMENT_C_THUN_T1, Unlimited);
       yield return new(UNIT_U021_RUINED_TEMPLE_C_THUN_T2, Unlimited);

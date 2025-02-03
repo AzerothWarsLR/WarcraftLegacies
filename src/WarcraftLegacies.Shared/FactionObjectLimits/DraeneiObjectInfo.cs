@@ -1,14 +1,15 @@
-﻿using static Constants;
+﻿using MacroTools.Shared;
+using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class DraeneiObjectLimitData
+  public static class DraeneiObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
-      yield return new(UNIT_O02P_CRYSTAL_HALL_DRAENEI_T1, Unlimited);
+      yield return new(UNIT_O02P_CRYSTAL_HALL_DRAENEI_T1, Unlimited, UnitCategory.TownHall);
       yield return new(UNIT_O050_METROPOLIS_DRAENEI_T2, Unlimited);
       yield return new(UNIT_O051_DIVINE_CITADEL_DRAENEI_T3, Unlimited);
       yield return new(UNIT_O058_ALTAR_OF_LIGHT_DRAENEI_ALTAR, Unlimited);
@@ -20,9 +21,9 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(UNIT_O057_VAULT_OF_RELICS_DRAENEI_SHOP, Unlimited);
       yield return new(UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER, Unlimited);
       yield return new(UNIT_U01Q_IMPROVED_CRYSTAL_PROTECTOR_DRAENEI_TOWER_2, Unlimited);
-      yield return new(UNIT_O059_SHIPYARD_DRAENEI_SHIPYARD, Unlimited);
+      yield return new(UNIT_O059_SHIPYARD_DRAENEI_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new(UNIT_O05U_LIGHTFORGED_GATEWAY_DRAENEI_ELITE, Unlimited);
-      yield return new(UNIT_O05A_GEMCRAFTER_DRAENEI_WORKER, Unlimited);
+      yield return new(UNIT_O05A_GEMCRAFTER_DRAENEI_WORKER, Unlimited, UnitCategory.Worker);
       yield return new(UNIT_O05B_DEFENDER_DRAENEI, Unlimited);
       yield return new(UNIT_H09T_RANGARI_DRAENEI, Unlimited);
       yield return new(UNIT_E01K_POLYBOLOS_DRAENEI, 3);

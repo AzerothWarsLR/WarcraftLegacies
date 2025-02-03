@@ -9,6 +9,7 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
 using MacroTools.ResearchSystems;
+using MacroTools.Shared;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -33,6 +34,7 @@ namespace MacroTools.FactionSystem
     private readonly List<unit> _goldMines = new();
     private readonly Dictionary<int, int> _objectLevels = new();
     private readonly Dictionary<int, int> _objectLimits = new();
+    private readonly Dictionary<UnitCategory, int> _objectsByCategory = new();
     private readonly List<Power> _powers = new();
     private readonly Dictionary<string, QuestData> _questsByName = new();
     private readonly int _undefeatedResearch;
@@ -105,17 +107,8 @@ namespace MacroTools.FactionSystem
     /// All of the <see cref="Faction"/>'s <see cref="ControlPoint"/> <see cref="ControlPoint.Defender"/>s
     /// will be represented by this unit type.
     /// </summary>
-
-
     public int? ControlPointDefenderUnitTypeId { get; protected init; }
-    /// <summary>
-    /// Sets this to the Faction's active Worker ID if Starting Units are shared with another Faction
-    /// </summary>
-    public int FactionWorker { get; set; }
-    /// <summary>
-    /// Sets this to the Factions Town Hall ID if Starting Units are shared with another Faction
-    /// </summary>
-    public int FactionTownHall { get; set; }
+
     /// <summary>
     /// Check to see if <see cref="Faction"/> has any living essential legends
     /// </summary>
@@ -303,7 +296,13 @@ namespace MacroTools.FactionSystem
     ///   Returns the maximum number of times the Faction can train a unit, build a building, or research a research.
     /// </summary>
     /// <param name="whichObject">The object ID of a unit, building, or research.</param>
-    public int GetObjectLimit(int whichObject) => _objectLimits.TryGetValue(whichObject, out var limit) ? limit : 0;
+    public int GetObjectLimit(int whichObject) => _objectLimits.GetValueOrDefault(whichObject, 0);
+
+    /// <summary>
+    /// Provides the unit type belonging to the provided <see cref="UnitCategory"/> for this faction, if any.
+    /// </summary>
+    public bool TryGetObjectByCategory(UnitCategory category, out int objectTypeId) =>
+      _objectsByCategory.TryGetValue(category, out objectTypeId);
 
     /// <summary>Adds a <see cref="Power" /> to this <see cref="Faction" />.</summary>
     public void AddPower(Power power)

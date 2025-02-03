@@ -1,5 +1,5 @@
-﻿using War3Api.Object;
-using WarcraftLegacies.Shared.Extensions;
+﻿using MacroTools.Shared.Extensions;
+using War3Api.Object;
 
 namespace Launcher.Extensions
 {

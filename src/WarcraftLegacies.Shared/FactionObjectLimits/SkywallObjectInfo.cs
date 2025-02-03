@@ -1,10 +1,12 @@
-﻿namespace WarcraftLegacies.Shared.FactionObjectLimits
+﻿using MacroTools.Shared;
+
+namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class SkywallObjectLimitData
+  public static class SkywallObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
       yield return new(Constants.UNIT_N05Q_HOLDFAST_ELEMENTAL_T1, Unlimited);
       yield return new(Constants.UNIT_N05W_FORTIFIED_BURG_ELEMENTAL_T2, Unlimited);
@@ -31,7 +33,7 @@
       yield return new(Constants.UNIT_N0CG_CORE_HOUND_RAGNAROS, 12);
       yield return new(Constants.UNIT_N0CF_FIRE_WYRM_RAGNAROS, 2);
 
-      yield return new(Constants.UNIT_H07X_SHIPYARD_ELEMENTAL_SHIPYARD, Unlimited);
+      yield return new(Constants.UNIT_H07X_SHIPYARD_ELEMENTAL_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new(Constants.UNIT_ETRS_NIGHT_ELF_TRANSPORT_SHIP_DRUIDS_SENTINELS, Unlimited);
       yield return new(Constants.UNIT_H0AU_SCOUT_SHIP_NIGHT_ELVES, Unlimited);
       yield return new(Constants.UNIT_H0AV_FRIGATE_NIGHT_ELVES, Unlimited);

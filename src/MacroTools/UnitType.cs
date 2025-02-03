@@ -1,4 +1,7 @@
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using MacroTools.Extensions;
+using MacroTools.Shared;
 using static War3Api.Common;
 
 namespace MacroTools
@@ -10,7 +13,7 @@ namespace MacroTools
   {
     private static readonly List<UnitType> All = new();
     private static readonly Dictionary<int, UnitType> ById = new();
-    
+
     /// <summary>
     /// The Warcraft 3 unit type ID for the <see cref="UnitType"/> wrapper.
     /// </summary>
@@ -25,7 +28,7 @@ namespace MacroTools
     /// How much gold the UnitType costs to train or build.
     /// </summary>
     public int GoldCost => GetUnitGoldCost(Id);
-    
+
     /// <summary>
     /// If true, this unit should never be deleted.
     /// </summary>
@@ -34,7 +37,16 @@ namespace MacroTools
     /// <summary>
     /// An arbitrary category, like "Shipyard" or "Shop".
     /// </summary>
-    public UnitCategory Category { get; init; }
+    public UnitCategory? Category { get; init; }
+
+    /// <summary>
+    /// Gets the <see cref="UnitType"/> of the provided unit.
+    /// </summary>
+    /// <param name="whichUnit">The unit to get the type of.</param>
+    /// <param name="unitType">The <see cref="UnitType"/> of the unit if it has one, and null otherwise.</param>
+    /// <returns>True if the unit has a <see cref="UnitType"/>.</returns>
+    public static bool TryGetFromHandle(unit whichUnit, [NotNullWhen(true)] out UnitType? unitType) =>
+      ById.TryGetValue(whichUnit.GetTypeId(), out unitType);
 
     /// <summary>
     /// Returns the UnitType representation of a unit on the map.
@@ -45,10 +57,7 @@ namespace MacroTools
     /// <summary>
     /// Returns the UnitType representation of a particular UnitTypeId.
     /// </summary>
-    public static UnitType GetFromId(int id)
-    {
-      return ById[id];
-    }
+    public static UnitType GetFromId(int id) => ById[id];
 
     /// <summary>
     /// Registers a <see cref="UnitType"/> to the system.

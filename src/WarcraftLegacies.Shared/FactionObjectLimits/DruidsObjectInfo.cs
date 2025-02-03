@@ -1,12 +1,13 @@
+using MacroTools.Shared;
 using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class DruidsObjectLimitData
+  public static class DruidsObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
       yield return new("etol", Unlimited); //Tree of Life
       yield return new("etoa", Unlimited); //Tree of Ages
@@ -19,7 +20,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("etrp", Unlimited); //Ancient Protector
       yield return new("e010", Unlimited); //Hunter)s Hall
       yield return new("e019", Unlimited); //Ancient of Wonders
-      yield return new("eshy", Unlimited); //Night Elf Shipyard
+      yield return new(UNIT_ESHY_KALDOREI_DOCKS_DRUID_SENTINEL_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new("e000", Unlimited); //Improved Ancient Protector
       yield return new("ewsp", Unlimited); //Wisp
       yield return new("edry", Unlimited); //Dryad

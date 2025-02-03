@@ -1,10 +1,12 @@
+using MacroTools.Shared;
+
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class ZandalarObjectLimitData
+  public static class ZandalarObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
       yield return new("o03R", Unlimited); //Great Hall
       yield return new("o03Y", Unlimited); //Stronghold
@@ -18,7 +20,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("o046", Unlimited); //Watch Tower
       yield return new("o048", Unlimited); //Improved Watch Tower
       yield return new("o047", Unlimited); //Voodoo Lounge
-      yield return new("o049", Unlimited); //Shipyard
+      yield return new(Constants.UNIT_O049_GOLDEN_DOCK_ZANDALARI_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new("o04X", Unlimited); //Loa Shrine
       yield return new("o04A", Unlimited); //Peon
       yield return new("h021", Unlimited); //Grunt

@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Factions
 
     private void RegisterObjectLimits()
     {
-      foreach (var (objectTypeId, objectLimit) in NazjatarObjectLimitData.GetAllObjectLimits())
+      foreach (var (objectTypeId, objectLimit) in NazjatarObjectInfo.GetAllObjectLimits())
         ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
   }

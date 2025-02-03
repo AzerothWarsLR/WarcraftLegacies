@@ -1,12 +1,13 @@
+using MacroTools.Shared;
 using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class GilneasObjectLimitData
+  public static class GilneasObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
       yield return new("h01R", Unlimited); //Town Hall
       yield return new("h023", Unlimited); //Keep
@@ -19,7 +20,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("h03D", Unlimited); //Temple of the cursed
       yield return new("h03E", Unlimited); //Training Hall
       yield return new("n008", Unlimited); //Marketplace
-      yield return new("h03H", Unlimited); //Shipyard
+      yield return new(UNIT_H03H_SHIPYARD_GILNEAS_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new("h03O", Unlimited); //Blacksmith
       yield return new("h03Q", Unlimited); //Garrison
       yield return new("h052", Unlimited); //Improved Guard Tower

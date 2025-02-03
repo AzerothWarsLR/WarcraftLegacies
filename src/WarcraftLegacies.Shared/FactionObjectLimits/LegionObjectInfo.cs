@@ -1,12 +1,13 @@
+using MacroTools.Shared;
 using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class LegionObjectLimitData
+  public static class LegionObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
       yield return new("u00H", Unlimited); //Legion Defensive Pylon
       yield return new("u00I", Unlimited); //Improved Defensive Pylon
@@ -14,7 +15,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("u00C", Unlimited); //Legion Bastion
       yield return new("u00N", Unlimited); //Burning Citadel
       yield return new("n040", Unlimited); //Armory
-      yield return new("u009", Unlimited); //Undead Shipyard
+      yield return new(UNIT_U009_SHIPYARD_LEGION_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new("u00E", Unlimited); //Generator
       yield return new("u01N", Unlimited); //Burning Altar
       yield return new(UNIT_U015_UNHOLY_RELIQUARY_LEGION_SHOP, Unlimited);

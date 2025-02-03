@@ -1,12 +1,13 @@
+using MacroTools.Shared;
 using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class WarsongObjectLimitData
+  public static class WarsongObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
       yield return new("o00C", Unlimited); //Great Hall
       yield return new("o02R", Unlimited); //Stronghold
@@ -21,7 +22,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("n03E", Unlimited); //Watch Tower
       yield return new("o01H", Unlimited); //Troll Shrine
       yield return new("n0AL", Unlimited); //Improved Watch Tower
-      yield return new("o02T", Unlimited); //Shipyard
+      yield return new(UNIT_O02T_SHIPYARD_WARSONG_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new("o01T", Unlimited); //Goblin Hardware Shop
       yield return new("o04L", Unlimited); //Peon
       yield return new("o02M", Unlimited); //Grunt

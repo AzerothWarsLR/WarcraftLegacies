@@ -1,12 +1,13 @@
+using MacroTools.Shared;
 using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class IllidariObjectLimitData
+  public static class IllidariObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
       yield return new("nntt", Unlimited); //Pillar of Waves
       yield return new("n04T", Unlimited); //Monument of Currents
@@ -21,7 +22,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("n005", Unlimited); //Improved Tidal Guardian
       yield return new("nmrb", Unlimited); //Deep Sea Vault
       yield return new("n08W", Unlimited); //Deep Sea Vault
-      yield return new("e020", Unlimited); //Shipyard
+      yield return new(UNIT_E020_ANCIENT_SHIPYARD_NAGA_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new("nmpe", Unlimited); //Murgul Slave
       yield return new("nmyr", Unlimited); //Myrmidon
       yield return new("nsnp", Unlimited); //Snap Dragon

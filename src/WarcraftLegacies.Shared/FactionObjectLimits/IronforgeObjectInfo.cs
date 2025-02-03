@@ -1,12 +1,13 @@
+using MacroTools.Shared;
 using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class IronforgeObjectLimitData
+  public static class IronforgeObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
       yield return new("h07E", Unlimited); //Town Hall
       yield return new("h07F", Unlimited); //Keep
@@ -23,7 +24,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("h07H", Unlimited); //Scout Tower
       yield return new("h07J", Unlimited); //Cannon Tower
       yield return new("h07K", Unlimited); //Cannon Tower (Improved)
-      yield return new("h07D", Unlimited); //Alliance Shipyard
+      yield return new(UNIT_H07D_SHIPYARD_IRONFORGE_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new("n07U", Unlimited); //Marketplace
       yield return new("h07I", Unlimited); //Guard Tower
       yield return new("h07L", Unlimited); //Guard Tower (Improved)

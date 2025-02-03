@@ -1,12 +1,13 @@
-﻿using static Constants;
+﻿using MacroTools.Shared;
+using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class BilgewaterObjectLimitData
+  public static class BilgewaterObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
       yield return new(UNIT_O03L_GREAT_HALL_GOBLIN_T1, Unlimited);
       yield return new(UNIT_O03M_STRONGHOLD_GOBLIN_T2, Unlimited);
@@ -21,7 +22,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(UNIT_O03U_ROCKET_TOWER_GOBLIN_TOWER, Unlimited);
       yield return new(UNIT_O03W_IMPROVED_ROCKET_TOWER_GOBLIN_TOWER_2, Unlimited);
       yield return new(UNIT_O03X_AUCTION_HOUSE_GOBLIN_SHOP, Unlimited);
-      yield return new(UNIT_O03V_BILGEWATER_HARBOR_GOBLIN_SHIPYARD, Unlimited);
+      yield return new(UNIT_O03V_BILGEWATER_HARBOR_GOBLIN_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new(UNIT_H011_INTERCONTINENTAL_ARTILLERY_GOBLIN_TOWER, 1);
       yield return new(UNIT_O06G_OIL_RIG_CONSTRUCTOR_GOBLIN, Unlimited);
       yield return new(UNIT_H0AS_SCOUT_SHIP_HORDE, Unlimited);

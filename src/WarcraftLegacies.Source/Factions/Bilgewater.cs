@@ -70,7 +70,7 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
     
     private void RegisterObjectLimits()
     {
-      foreach (var (objectTypeId, objectLimit) in BilgewaterObjectLimitData.GetAllObjectLimits())
+      foreach (var (objectTypeId, objectLimit) in BilgewaterObjectInfo.GetAllObjectLimits())
         ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 

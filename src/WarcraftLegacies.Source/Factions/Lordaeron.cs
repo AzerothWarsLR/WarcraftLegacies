@@ -73,7 +73,7 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
     
     private void RegisterObjectLimits()
     {
-      foreach (var (objectTypeId, objectLimit) in LordaeronObjectLimitData.GetAllObjectLimits())
+      foreach (var (objectTypeId, objectLimit) in LordaeronObjectInfo.GetAllObjectLimits())
         ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
 
       //Todo: these probably should be in some kind of ability library, not here

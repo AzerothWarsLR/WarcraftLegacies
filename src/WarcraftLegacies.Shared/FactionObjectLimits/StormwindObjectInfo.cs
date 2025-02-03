@@ -1,12 +1,13 @@
+using MacroTools.Shared;
 using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class StormwindObjectLimitData
+  public static class StormwindObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
       yield return new("h06K", Unlimited); //Town Hall
       yield return new("h06M", Unlimited); //Keep
@@ -23,7 +24,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("h06X", Unlimited); //Cannon Tower
       yield return new("h071", Unlimited); //Cannon Tower (Improved)
       yield return new("n07T", Unlimited); //Marketplace
-      yield return new("h06D", Unlimited); //Alliance Shipyard
+      yield return new(UNIT_H06D_ROYAL_HARBOUR_STORMWIND_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new("h06Y", Unlimited); //Arcane Tower
       yield return new("h06Z", Unlimited); //Arcane Tower (Improved)
       yield return new("h024", Unlimited); //Light House

@@ -1,12 +1,13 @@
+using MacroTools.Shared;
 using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
 {
-  public static class KultirasObjectLimitData
+  public static class KultirasObjectInfo
   {
     private const int Unlimited = 200;
 
-    public static IEnumerable<ObjectLimit> GetAllObjectLimits()
+    public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
       yield return new("h062", Unlimited); //Town Hall
       yield return new("h064", Unlimited); //Keep
@@ -21,7 +22,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("h07O", Unlimited); //Blacksmith
       yield return new("h07Q", Unlimited); //Arcane Sanctum
       yield return new("n07H", Unlimited); //Marketplace
-      yield return new("h07W", Unlimited); //Shipyard
+      yield return new(UNIT_H07W_SHIPYARD_KUL_TIRAS_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new("h06R", Unlimited); //Garrison
       yield return new("h07P", Unlimited); //Workshop
       yield return new("h093", Unlimited); //Workshop

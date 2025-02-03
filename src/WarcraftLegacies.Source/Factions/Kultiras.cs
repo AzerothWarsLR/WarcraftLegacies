@@ -57,7 +57,7 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
 
     private void RegisterObjectLimits()
     {
-      foreach (var (objectTypeId, objectLimit) in KultirasObjectLimitData.GetAllObjectLimits())
+      foreach (var (objectTypeId, objectLimit) in KultirasObjectInfo.GetAllObjectLimits())
         ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
