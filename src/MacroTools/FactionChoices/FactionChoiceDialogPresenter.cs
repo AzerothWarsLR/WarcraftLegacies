@@ -24,7 +24,7 @@ namespace MacroTools.FactionChoices
 
       // Replace townhall and workers in the starting units
       var startingUnits = pickedFaction.StartingUnits;
-      startingUnits.ReplaceWorkers(pickingPlayer, pickedFaction.FactionWorker, unit => IsUnitType(unit, UNIT_TYPE_PEON));
+      startingUnits.ReplaceWorkers(pickingPlayer, pickedFaction.FactionWorker);
       startingUnits.ReplaceTownHall(pickingPlayer, pickedFaction.FactionTownHall);
 
 
