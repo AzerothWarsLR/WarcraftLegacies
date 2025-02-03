@@ -104,7 +104,7 @@ namespace MacroTools.Extensions
 
           var newUnit = CreateUnit(pickingPlayer, factionWorker, x, y, facing);
           newUnits.Add(newUnit);
-          Console.WriteLine($"Replacing worker at ({x}, {y}) with new worker of type {factionWorker}");
+         
         }
         else
         {
@@ -131,7 +131,7 @@ namespace MacroTools.Extensions
 
           var newUnit = CreateUnit(pickingPlayer, townHallUnitTypeId, x, y, facing);
           newUnits.Add(newUnit);
-          Console.WriteLine($"Replacing town hall at ({x}, {y}) with new town hall of type {townHallUnitTypeId}");
+          
         }
         else
         {

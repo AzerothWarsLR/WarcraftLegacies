@@ -25,10 +25,7 @@ namespace MacroTools.FactionChoices
             HasChoiceBeenPicked = true;
             var startingUnits = pickedFaction.StartingUnits;
 
-            // Log the initial starting units
-            Console.WriteLine("Initial starting units:");
-            LogUnits(startingUnits);
-
+            
             if (pickedFaction.FactionWorker != 0)
             {
                 startingUnits = startingUnits.ReplaceWorkers(pickingPlayer, pickedFaction.FactionWorker);
@@ -38,16 +35,14 @@ namespace MacroTools.FactionChoices
                 startingUnits = startingUnits.ReplaceTownHall(pickingPlayer, pickedFaction.FactionTownHall);
             }
 
-            // Log the starting units after replacement
-            Console.WriteLine("Starting units after replacement:");
-            LogUnits(startingUnits);
+           
 
             // Rescue control points explicitly after replacements
             foreach (var unit in startingUnits)
             {
                 if (ControlPointManager.Instance.UnitIsControlPoint(unit))
                 {
-                    Console.WriteLine($"Rescuing control point unit ID: {GetUnitTypeId(unit)} to player ID: {GetPlayerId(pickingPlayer)}");
+                
                     SetUnitOwner(unit, pickingPlayer, true);
                 }
             }
@@ -64,15 +59,7 @@ namespace MacroTools.FactionChoices
         }
 
 
-        // Helper method to log units
-        private void LogUnits(List<unit> units)
-        {
-            foreach (var unit in units)
-            {
-                Console.WriteLine($"Unit ID: {GetUnitTypeId(unit)}, Position: ({GetUnitX(unit)}, {GetUnitY(unit)})");
-            }
-        }
-
+      
 
     /// <inheritdoc />
     protected override Choice<Faction> GetDefaultChoice(player whichPlayer) => Choices.First();
@@ -87,13 +74,10 @@ namespace MacroTools.FactionChoices
                     // Check if the control point is part of the picked faction's starting units
                     if (!pickedFactionStartingUnits.Contains(unit))
                     {
-                        Console.WriteLine($"Rescuing control point unit ID: {GetUnitTypeId(unit)} to Neutral Aggressive");
+                      
                         unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
                     }
-                    else
-                    {
-                        Console.WriteLine($"Skipping control point unit ID: {GetUnitTypeId(unit)} as it is part of the picked faction's starting units");
-                    }
+                 
                 }
                 else
                 {
