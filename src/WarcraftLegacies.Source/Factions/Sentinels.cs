@@ -21,15 +21,17 @@ namespace WarcraftLegacies.Source.Factions
   {
     private readonly AllLegendSetup _allLegendSetup;
     private readonly ArtifactSetup _artifactSetup;
+    private readonly SharedGoldMineManager _sharedGoldMineManager;
 
     /// <inheritdoc />
-    
+
     public Sentinels(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup, SharedGoldMineManager sharedGoldMineManager) : base("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80",
       @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
     {
       TraditionalTeam = TeamSetup.Kalimdor;
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
+      _sharedGoldMineManager = sharedGoldMineManager;
       UndefeatedResearch = FourCC("R05Y");
       StartingGold = 200;
       CinematicMusic = "Comradeship";
@@ -44,10 +46,16 @@ The Druids are slowly waking from their slumber, and it falls to you to drive ba
 Your first mission is to race down the coast to Feathermoon Stronghold, a powerful Sentinel stronghold on the southern half of the continent. 
 
 Once you have secured your holdings, gather your army and destroy the Old Gods. Be careful, they will outnumber you if given time to establish a foothold in Azeroth.";
+
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-21300, 8400))
+       preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-21300, 8400))
       };
+
+      foreach (var goldMine in GoldMines)
+      {
+        _sharedGoldMineManager.RegisterSharedGoldMine(goldMine, this);
+      }
       Nicknames = new List<string>
       {
         "sent",

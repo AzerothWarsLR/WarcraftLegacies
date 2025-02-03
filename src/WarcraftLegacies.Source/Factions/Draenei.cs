@@ -17,9 +17,11 @@ namespace WarcraftLegacies.Source.Factions
     private readonly PreplacedUnitSystem _preplacedUnitSystem;
     private readonly AllLegendSetup _allLegendSetup;
     private readonly ArtifactSetup _artifactSetup;
+    private readonly SharedGoldMineManager _sharedGoldMineManager; 
+
 
     /// <inheritdoc />
-    
+
     public Draenei(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup, SharedGoldMineManager sharedGoldMineManager) : base("The Exodar",
       PLAYER_COLOR_NAVY, "|cff000080", @"ReplaceableTextures\CommandButtons\BTNBOSSVelen.blp")
     {
@@ -27,6 +29,7 @@ namespace WarcraftLegacies.Source.Factions
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
       this._artifactSetup = artifactSetup;
+      _sharedGoldMineManager = sharedGoldMineManager;
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_U008_CONTROL_POINT_DEFENDER_DRAENEI;
       StartingCameraPosition = Regions.DraeneiStartPos.Center;
@@ -41,8 +44,13 @@ Further inland your Night-elf allies will need your help against the Orcish Hord
 The Exodar is a mighty fortress-base with the ability to move around the map, but it will take a long time to repair.";
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-21000, 8600))
+       preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-21300, 8400))
       };
+
+      foreach (var goldMine in GoldMines)
+      {
+        _sharedGoldMineManager.RegisterSharedGoldMine(goldMine, this);
+      }
       Nicknames = new List<string>
       {
         "draenei",

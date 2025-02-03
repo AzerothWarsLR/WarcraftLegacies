@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using MacroTools.Extensions;
+﻿using System.Collections.Generic;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
+
+
 
 namespace MacroTools.FactionChoices
 {
@@ -24,3 +23,5 @@ namespace MacroTools.FactionChoices
     {
       return _sharedGoldMines.ContainsKey(goldMine) && _sharedGoldMines[goldMine].Count > 1;
     }
+  }
+}
