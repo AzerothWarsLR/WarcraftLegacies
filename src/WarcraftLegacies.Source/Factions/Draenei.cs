@@ -32,8 +32,8 @@ namespace WarcraftLegacies.Source.Factions
       _sharedGoldMineManager = sharedGoldMineManager;
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_U008_CONTROL_POINT_DEFENDER_DRAENEI;
-      StartingCameraPosition = Regions.DraeneiStartPos.Center;
-      StartingUnits = Regions.DraeneiStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
+      StartingCameraPosition = Regions.SentDraeSharedStartPos.Center;
+      StartingUnits = Regions.SentDraeSharedStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       LearningDifficulty = FactionLearningDifficulty.Advanced;
       IntroText = @"You are playing as the exiled |cff000080Draenei|r.
 
