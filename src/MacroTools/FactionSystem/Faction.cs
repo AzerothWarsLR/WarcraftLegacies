@@ -227,6 +227,10 @@ namespace MacroTools.FactionSystem
           SetPlayerTechResearched(player, _undefeatedResearch, 1);
       }
     }
+    // <summary>
+    /// Fired when the faction gains a GoldMine that was previously registered to another Faction.
+    /// </summary>
+    private readonly SharedGoldMineManager _sharedGoldMineManager;
 
     /// <summary>Fired when the <see cref="Faction" /> gains a <see cref="Power" />.</summary>
     public event EventHandler<FactionPowerEventArgs>? PowerAdded;
@@ -264,7 +268,25 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public virtual void OnNotPicked()
     {
-      RemoveGoldMines();
+      if (GoldMines != null)
+      {
+        foreach (var unit in GoldMines)
+        {
+          if (_sharedGoldMineManager.IsSharedGoldMine(unit))
+          {
+          }
+          else
+          {
+            RemoveUnit(unit);
+          }
+        }
+      }
+    }
+
+    public Faction(SharedGoldMineManager sharedGoldMineManager)
+    {
+      _sharedGoldMineManager = sharedGoldMineManager;
+
     }
 
     /// <summary>

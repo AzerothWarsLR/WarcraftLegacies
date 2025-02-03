@@ -1,6 +1,7 @@
 ﻿using MacroTools;
 using MacroTools.CommandSystem;
 using MacroTools.ControlPointSystem;
+using MacroTools.FactionChoices;
 using MacroTools.GameModes;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Save;
@@ -39,8 +40,8 @@ namespace WarcraftLegacies.Source.Setup
       NeutralHostileSetup.Setup();
       TeamSetup.Setup();
       new PlayerSetup(preplacedUnitSystem, allLegendSetup, artifactSetup).Setup();
-      FactionChoiceDialogSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
-      SharedQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
+      var sharedGoldMineManager = new SharedGoldMineManager();
+      FactionChoiceDialogSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup, sharedGoldMineManager); SharedQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       SpellsSetup.Setup();
       var commandManager = new CommandManager();
       CommandSetup.Setup(commandManager);
@@ -74,6 +75,7 @@ namespace WarcraftLegacies.Source.Setup
       GateSetup.Setup();
       StartingResources.Setup();
       StartingQuestPopup.Setup(63);
+      RefundZeroLimitUnits.Setup();
       RefundZeroLimitUnits.Setup();
       HeroGlowFix.Setup();
       CleanupUnoccupiedPlayerSlots.Setup();
