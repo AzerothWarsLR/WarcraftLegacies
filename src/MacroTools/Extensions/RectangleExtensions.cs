@@ -88,9 +88,10 @@ namespace MacroTools.Extensions
     }
 
 
-    public static List<unit> ReplaceWorkers(this List<unit> units, player pickingPlayer, int factionWorker, Func<unit, bool> condition)
+    public static List<unit> ReplaceWorkers(this List<unit> units, player pickingPlayer, int factionWorker)
     {
-      var unitsToReplace = units.Where(condition).ToList();
+  
+      var unitsToReplace = units.Where(unit => IsUnitType(unit, UNIT_TYPE_PEON)).ToList();
 
       Console.WriteLine($"Total units matching condition: {unitsToReplace.Count}");
 
