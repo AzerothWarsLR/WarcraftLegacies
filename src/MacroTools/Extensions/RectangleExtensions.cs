@@ -90,19 +90,28 @@ namespace MacroTools.Extensions
 
     public static List<unit> ReplaceWorkers(this List<unit> units, player pickingPlayer, int factionWorker)
     {
-  
       var unitsToReplace = units.Where(unit => IsUnitType(unit, UNIT_TYPE_PEON)).ToList();
 
-      Console.WriteLine($"Total units matching condition: {unitsToReplace.Count}");
+      if (unitsToReplace.Count == 0)
+      {
+        Console.WriteLine("No workers to replace.");
+        return unitsToReplace;
+      }
+
+      Console.WriteLine($"Total workers matching condition: {unitsToReplace.Count}");
 
       foreach (var unit in unitsToReplace)
       {
         var x = GetUnitX(unit);
         var y = GetUnitY(unit);
         var facing = GetUnitFacing(unit);
-        var newUnit = CreateUnit(pickingPlayer, factionWorker, x, y, facing);
-        Console.WriteLine($"Replacing unit at ({x}, {y}) with new unit of type {factionWorker}");
+
+        // Remove the old unit
         RemoveUnit(unit);
+
+        // Create the new unit at the captured position and facing
+        var newUnit = CreateUnit(pickingPlayer, factionWorker, x, y, facing);
+        Console.WriteLine($"Replacing worker at ({x}, {y}) with new worker of type {factionWorker}");
       }
 
       return unitsToReplace;
@@ -112,15 +121,23 @@ namespace MacroTools.Extensions
     {
       var unitsToReplace = units.Where(unit => IsUnitType(unit, UNIT_TYPE_TOWNHALL)).ToList();
 
+      if (unitsToReplace.Count == 0)
+      {
+        Console.WriteLine("No town halls to replace.");
+        return unitsToReplace;
+      }
+
       Console.WriteLine($"Total town halls matching condition: {unitsToReplace.Count}");
 
       foreach (var unit in unitsToReplace)
       {
-       
         var x = GetUnitX(unit);
         var y = GetUnitY(unit);
         var facing = GetUnitFacing(unit);
+
+        // Remove the old unit
         RemoveUnit(unit);
+
         // Create the new unit at the captured position and facing
         var newUnit = CreateUnit(pickingPlayer, townHallUnitTypeId, x, y, facing);
         Console.WriteLine($"Replacing town hall at ({x}, {y}) with new town hall of type {townHallUnitTypeId}");
@@ -128,5 +145,6 @@ namespace MacroTools.Extensions
 
       return unitsToReplace;
     }
+
   }
 }
