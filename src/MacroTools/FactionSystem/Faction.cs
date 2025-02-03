@@ -109,11 +109,11 @@ namespace MacroTools.FactionSystem
 
     public int? ControlPointDefenderUnitTypeId { get; protected init; }
     /// <summary>
-    /// Sets this to on the Faction's active Worker unit
+    /// Sets this to the Faction's active Worker ID if Starting Units are shared with another Faction
     /// </summary>
     public int FactionWorker { get; set; }
     /// <summary>
-    /// Sets this to the Factions Town Hall unit
+    /// Sets this to the Factions Town Hall ID if Starting Units are shared with another Faction
     /// </summary>
     public int FactionTownHall { get; set; }
     /// <summary>
