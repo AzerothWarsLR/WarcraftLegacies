@@ -116,12 +116,14 @@ namespace MacroTools.Extensions
 
       foreach (var unit in unitsToReplace)
       {
+       
         var x = GetUnitX(unit);
         var y = GetUnitY(unit);
         var facing = GetUnitFacing(unit);
+        RemoveUnit(unit);
+        // Create the new unit at the captured position and facing
         var newUnit = CreateUnit(pickingPlayer, townHallUnitTypeId, x, y, facing);
         Console.WriteLine($"Replacing town hall at ({x}, {y}) with new town hall of type {townHallUnitTypeId}");
-        RemoveUnit(unit);
       }
 
       return unitsToReplace;
