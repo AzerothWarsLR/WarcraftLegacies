@@ -41,13 +41,13 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
         "rag",
         "ragnaros"
       };
+      ProcessObjectInfo(SkywallObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
       RegisterResearches();
-      ProcessObjectInfo(SkywallObjectInfo.GetAllObjectLimits());
       RegisterSpells();
       RegisterQuests();
       RegisterFactionDependentInitializer<Druids, Ahnqiraj>(RegisterInvasionRelatedQuests);

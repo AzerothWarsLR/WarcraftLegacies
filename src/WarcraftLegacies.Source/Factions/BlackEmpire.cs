@@ -44,12 +44,12 @@ Be sure to train Forsaken Ones, they are powerful units";
         "n'zoth",
         "nz"
       };
+      ProcessObjectInfo(BlackEmpireObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      ProcessObjectInfo(BlackEmpireObjectInfo.GetAllObjectLimits());
       RegisterQuests();
       RegisterSpells();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);

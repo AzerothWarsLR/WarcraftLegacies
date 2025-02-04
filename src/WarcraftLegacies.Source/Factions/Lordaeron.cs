@@ -58,12 +58,12 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
       RegisterFactionDependentInitializer<Dalaran>(RegisterDalaranDialogue);
       RegisterFactionDependentInitializer<Scourge, Legion>(RegisterScourgeLegionDialogue);
+      ProcessObjectInfo(LordaeronObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      ProcessObjectInfo(LordaeronObjectInfo.GetAllObjectLimits());
       RegisterObjectLevels();
       RegisterQuests();
       RegisterDialogue();

@@ -47,12 +47,12 @@ Join up with your allies and brace for a tough fight and counter-attack. ";
         "troll",
         "trolls"
       };
+      ProcessObjectInfo(ZandalarObjectInfo.GetAllObjectLimits());
     }
         
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      ProcessObjectInfo(ZandalarObjectInfo.GetAllObjectLimits());
       RegisterQuests();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }

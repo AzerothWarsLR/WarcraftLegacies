@@ -50,12 +50,12 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
         "sf",
         "sun"
       };
+      ProcessObjectInfo(SunfuryObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      ProcessObjectInfo(SunfuryObjectInfo.GetAllObjectLimits());
       RegisterQuests();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }

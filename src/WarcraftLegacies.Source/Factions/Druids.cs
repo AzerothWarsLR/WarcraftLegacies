@@ -54,12 +54,12 @@ Gather your forces and strike before the Old Gods can organize their efforts.";
       RegisterFactionDependentInitializer<Sentinels>(RegisterSentinelsDialogue);
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeQuests);
       RegisterFactionDependentInitializer<Sentinels, Frostwolf, Warsong>(RegisterSentinelsFrostwolfWarsongDialogue);
+      ProcessObjectInfo(DruidsObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      ProcessObjectInfo(DruidsObjectInfo.GetAllObjectLimits());
       RegisterQuests();
       RegisterDialogue();
       RegisterPowers();

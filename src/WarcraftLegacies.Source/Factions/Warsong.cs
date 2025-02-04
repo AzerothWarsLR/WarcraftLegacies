@@ -48,12 +48,12 @@ The Night Elves are aware of your presence and are gathering a mighty host again
         "ws",
         "war"
       };
+      ProcessObjectInfo(WarsongObjectInfo.GetAllObjectLimits());
     }
         
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      ProcessObjectInfo(WarsongObjectInfo.GetAllObjectLimits());
       RegisterQuests();
       RegisterDialogue();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);

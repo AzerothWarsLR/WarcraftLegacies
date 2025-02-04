@@ -39,12 +39,12 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
         "sw",
         "storm"
       };
+      ProcessObjectInfo(StormwindObjectInfo.GetAllObjectLimits());
     }
         
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      ProcessObjectInfo(StormwindObjectInfo.GetAllObjectLimits());
       RegisterObjectLevels();
       RegisterQuests();
       RegisterResearches();

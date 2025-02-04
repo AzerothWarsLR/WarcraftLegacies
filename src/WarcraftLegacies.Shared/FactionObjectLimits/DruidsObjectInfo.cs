@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("e019", Unlimited); //Ancient of Wonders
       yield return new(UNIT_ESHY_KALDOREI_DOCKS_DRUID_SENTINEL_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new("e000", Unlimited); //Improved Ancient Protector
-      yield return new("ewsp", Unlimited); //Wisp
+      yield return new(UNIT_EWSP_WISP_DRUIDS_SENTINELS_WORKER, Unlimited, UnitCategory.Worker);
       yield return new("edry", Unlimited); //Dryad
       yield return new("edot", Unlimited); //Druid of the Talon
       yield return new("emtg", 12); //Mountain Giant

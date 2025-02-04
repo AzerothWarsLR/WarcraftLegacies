@@ -46,12 +46,12 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare for a 
         "fh",
         "fel"
       };
+      ProcessObjectInfo(FelHordeObjectInfo.GetAllObjectInfos());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      ProcessObjectInfo(FelHordeObjectInfo.GetAllObjectInfos());
       RegisterObjectLevels();
       RegisterQuests();
       JuggernautDeath.Setup(_preplacedUnitSystem);

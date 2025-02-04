@@ -51,12 +51,12 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
         "theexodar",
         "goats"
       };
+      ProcessObjectInfo(DraeneiObjectInfo.GetAllObjectLimits());
     }
     
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      ProcessObjectInfo(DraeneiObjectInfo.GetAllObjectLimits());
       RegisterQuests();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }

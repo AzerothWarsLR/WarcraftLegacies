@@ -32,12 +32,12 @@ Fortify your strongholds against the storm to come and make ready to unleash the
         "scarlet",
         "scarletcrusade"
       };
+      ProcessObjectInfo(ScarletCrusadeObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      ProcessObjectInfo(ScarletCrusadeObjectInfo.GetAllObjectLimits());
       RegisterQuests();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }

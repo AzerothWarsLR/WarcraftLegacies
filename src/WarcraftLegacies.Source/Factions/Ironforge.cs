@@ -47,12 +47,12 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
         "dwarves"
       };
       RegisterFactionDependentInitializer<Stormwind>(RegisterStormwindResearches);
+      ProcessObjectInfo(IronforgeObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      ProcessObjectInfo(IronforgeObjectInfo.GetAllObjectLimits());
       RegisterObjectLevels();
       RegisterQuests();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);

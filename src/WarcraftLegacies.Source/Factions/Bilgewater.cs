@@ -49,12 +49,12 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
         "goblin",
         "goblins"
       };
+      ProcessObjectInfo(BilgewaterObjectInfo.GetAllObjectLimits());
     }
         
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      ProcessObjectInfo(BilgewaterObjectInfo.GetAllObjectLimits());
       RegisterQuests();
       RegisterDialogue();
       RegisterPowers();

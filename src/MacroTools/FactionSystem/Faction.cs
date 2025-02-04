@@ -485,7 +485,8 @@ namespace MacroTools.FactionSystem
       {
         var fourCc = FourCC(objectTypeId);
         ModObjectLimit(FourCC(objectTypeId), objectInfo.Limit);
-        _objectsByCategory[objectInfo.Category] = fourCc;
+        if (objectInfo.Category != UnitCategory.None) 
+          _objectsByCategory[objectInfo.Category] = fourCc;
       }
     }
 

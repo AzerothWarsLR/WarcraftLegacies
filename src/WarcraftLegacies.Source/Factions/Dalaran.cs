@@ -65,12 +65,12 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
 
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
       RegisterFactionDependentInitializer<Legion>(RegisterBookOfMedivhQuest);
+      ProcessObjectInfo(DalaranObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      ProcessObjectInfo(DalaranObjectInfo.GetAllObjectLimits());
       RegisterObjectLevels();
       RegisterQuests();
       RegisterDialogue();

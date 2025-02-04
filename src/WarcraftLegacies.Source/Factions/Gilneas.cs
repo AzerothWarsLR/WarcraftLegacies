@@ -55,12 +55,12 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       };
       RegisterFactionDependentInitializer<Legion>(RegisterBookOfMedivhQuest);
       RegisterFactionDependentInitializer<Druids>(RegisterDruidsQuests);
+      ProcessObjectInfo(GilneasObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      ProcessObjectInfo(GilneasObjectInfo.GetAllObjectLimits());
       RegisterQuests();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }

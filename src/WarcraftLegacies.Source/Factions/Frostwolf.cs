@@ -53,12 +53,12 @@ Your allies will be coming south to help you defend against the Old Gods, do not
       };
       RegisterFactionDependentInitializer<Warsong>(RegisterWarsongDialogue);
       RegisterFactionDependentInitializer<Warsong>(RegisterWarsongRelatedResearches);
+      ProcessObjectInfo(FrostwolfObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      ProcessObjectInfo(FrostwolfObjectInfo.GetAllObjectLimits());
       RegisterObjectLevels();
       RegisterQuests();
       RegisterDialogue();

@@ -14,7 +14,7 @@ namespace MacroTools.FactionSystem
     /// Replaces a unit with a unit of the same category from a different faction.
     /// <para>Will simply do nothing if either of the specified factions don't have a unit in the right category.</para>
     /// </summary>
-    /// <returns>The new unit after a successful replacement.</returns>
+    /// <returns>The new unit after a successful replacement, or the old unit if no replacement was needed.</returns>
     /// <exception cref="InvalidOperationException">Thrown if the unit could not be replaced for some reason.</exception>
     public static unit ReplaceWithFactionEquivalent(this unit whichUnit, Faction newFaction)
     {
@@ -31,6 +31,9 @@ namespace MacroTools.FactionSystem
       if (!newFaction.TryGetObjectByCategory(unitType.Category, out var newUnitType)) 
         throw new InvalidOperationException($"{whichUnit.GetName()} can't be replaced because {newFaction.Name} doesn't have a registered unit type of category {unitType.Category}.");
 
+      if (whichUnit.GetTypeId() == newUnitType)
+        return whichUnit;
+      
       whichUnit.Remove();
       var newUnit = CreateUnit(oldOwner, newUnitType, oldPosition.X, oldPosition.Y, oldFacing);
       return newUnit;

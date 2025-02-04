@@ -50,12 +50,12 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       };
 
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
+      ProcessObjectInfo(QuelthalasObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      ProcessObjectInfo(QuelthalasObjectInfo.GetAllObjectLimits());
       RegisterObjectLevels();
       RegisterQuests();
       RegisterResearches();

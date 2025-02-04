@@ -59,12 +59,12 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeQuests);
       RegisterFactionDependentInitializer<Druids>(RegisterDruidsRelatedQuestsAndDialogue);
+      ProcessObjectInfo(LegionObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      ProcessObjectInfo(LegionObjectInfo.GetAllObjectLimits());
       RegisterQuests();
       RegisterResearches();
       RegisterDialogue();

@@ -64,12 +64,13 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       RegisterFactionDependentInitializer<Quelthalas>(RegisterQuelthalasDialogue);
       RegisterFactionDependentInitializer<Lordaeron>(RegisterLordaeronDialogue);
       RegisterFactionDependentInitializer<Legion>(RegisterLegionDialogue);
+      
+      ProcessObjectInfo(ScourgeObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      ProcessObjectInfo(ScourgeObjectInfo.GetAllObjectLimits());
       RegisterObjectLevels();
       RegisterQuests();
       RegisterPowers();
