@@ -1,5 +1,6 @@
 ﻿using System;
 using MacroTools.Extensions;
+using MacroTools.Shared;
 using static War3Api.Common;
 
 namespace MacroTools.FactionSystem
@@ -24,10 +25,10 @@ namespace MacroTools.FactionSystem
       if (!UnitType.TryGetFromHandle(whichUnit, out var unitType)) 
         throw new InvalidOperationException($"{whichUnit.GetName()} doesn't have a registered {nameof(UnitType)}.");
 
-      if (unitType.Category == null)
+      if (unitType.Category == UnitCategory.None)
         throw new InvalidOperationException($"{whichUnit.GetName()} doesn't have a category.");
 
-      if (!newFaction.TryGetObjectByCategory(unitType.Category.Value, out var newUnitType)) 
+      if (!newFaction.TryGetObjectByCategory(unitType.Category, out var newUnitType)) 
         throw new InvalidOperationException($"{whichUnit.GetName()} can't be replaced because {newFaction.Name} doesn't have a registered unit type of category {unitType.Category}.");
 
       whichUnit.Remove();

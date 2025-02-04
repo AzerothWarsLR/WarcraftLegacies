@@ -52,8 +52,11 @@ namespace WarcraftLegacies.Shared
     /// <summary>
     /// Gets the object information for a specific object type.
     /// </summary>
-    public bool TryGetObjectInfo(int objectTypeId, [NotNullWhen(true)] out ObjectInfo? objectLimit) =>
-      _byObjectId.TryGetValue(objectTypeId.IdToFourCc(), out objectLimit);
+    public bool TryGetObjectInfo(int objectTypeId, [NotNullWhen(true)] out ObjectInfo? objectLimit)
+    {
+      objectLimit = _byObjectId.TryGetValue(objectTypeId.IdToFourCc(), out var value) ? value : null;
+      return value != null;
+    }
 
     private void AddFactionObjectInfo(IEnumerable<ObjectInfo> factionObjectLimits)
     {

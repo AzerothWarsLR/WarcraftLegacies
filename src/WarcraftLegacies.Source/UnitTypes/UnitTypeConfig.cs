@@ -20,12 +20,9 @@ namespace WarcraftLegacies.Source.UnitTypes
       var objectInfoRepository = new ObjectInfoRepository();
       foreach (var objectInfo in objectInfoRepository.GetAllObjectInfo())
       {
-        if (!objectInfo.Category.HasValue)
-          continue;
-
         UnitType.Register(new UnitType(FourCC(objectInfo.ObjectTypeId))
         {
-          Category = objectInfo.Category.Value
+          Category = objectInfo.Category
         });
       }
     }

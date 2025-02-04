@@ -37,7 +37,7 @@ namespace MacroTools
     /// <summary>
     /// An arbitrary category, like "Shipyard" or "Shop".
     /// </summary>
-    public UnitCategory? Category { get; init; }
+    public UnitCategory Category { get; init; } = UnitCategory.None;
 
     /// <summary>
     /// Gets the <see cref="UnitType"/> of the provided unit.
@@ -45,8 +45,11 @@ namespace MacroTools
     /// <param name="whichUnit">The unit to get the type of.</param>
     /// <param name="unitType">The <see cref="UnitType"/> of the unit if it has one, and null otherwise.</param>
     /// <returns>True if the unit has a <see cref="UnitType"/>.</returns>
-    public static bool TryGetFromHandle(unit whichUnit, [NotNullWhen(true)] out UnitType? unitType) =>
-      ById.TryGetValue(whichUnit.GetTypeId(), out unitType);
+    public static bool TryGetFromHandle(unit whichUnit, [NotNullWhen(true)] out UnitType? unitType)
+    {
+      unitType = ById.TryGetValue(whichUnit.GetTypeId(), out var value) ? value : null;
+      return value != null;
+    }
 
     /// <summary>
     /// Returns the UnitType representation of a unit on the map.

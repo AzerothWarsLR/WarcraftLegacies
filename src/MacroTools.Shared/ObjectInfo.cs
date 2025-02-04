@@ -10,11 +10,11 @@ namespace MacroTools.Shared
     public string ObjectTypeId { get; }
     
     public int Limit { get; }
-    
+
     /// <summary>
     /// The arbitrary category the object is assigned to, if any.
     /// </summary>
-    public UnitCategory? Category { get; }
+    public UnitCategory Category { get; } = UnitCategory.None;
     
     /// <summary>
     /// If set, indicates to the player how the object's limit can be changed in-game.
@@ -29,7 +29,7 @@ namespace MacroTools.Shared
       LimitIncreaseHint = limitIncreaseHint;
     }
 
-    public ObjectInfo(int objectTypeId, int limit, UnitCategory? category = null, string? limitIncreaseHint = null)
+    public ObjectInfo(int objectTypeId, int limit, UnitCategory category = UnitCategory.None, string? limitIncreaseHint = null)
     {
       Category = category;
       ObjectTypeId = objectTypeId.IdToFourCc(true);
