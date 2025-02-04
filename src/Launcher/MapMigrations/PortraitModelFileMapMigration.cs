@@ -1,6 +1,4 @@
-﻿using System.Linq;
-using War3Api.Object;
-using War3Api.Object.Enums;
+﻿using War3Api.Object;
 using War3Net.Build;
 
 namespace Launcher.MapMigrations
