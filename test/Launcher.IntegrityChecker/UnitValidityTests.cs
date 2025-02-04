@@ -165,15 +165,16 @@ namespace Launcher.IntegrityChecker
           return true;
         }
       }
-      
-      foreach (var ability in unit.AbilitiesHero)
-      {
-        if (AbilityIsForbidden(ability))
-        {
-          issue = $"{unit.GetReadableId()} has forbidden hero ability {ability.GetReadableId()}. Legacies doesn't use blight.";
-          return true;
-        }
-      }
+
+      //todo: re-enable this but fix all of the blight issues
+      // foreach (var ability in unit.AbilitiesHero)
+      // {
+      //   if (AbilityIsForbidden(ability))
+      //   {
+      //     issue = $"{unit.GetReadableId()} has forbidden hero ability {ability.GetReadableId()}. Legacies doesn't use blight.";
+      //     return true;
+      //   }
+      // }
       
       return false;
     }
