@@ -80,14 +80,6 @@ Once you have secured your holdings, gather your army and destroy the Old Gods. 
       Regions.AstranaarUnlock.CleanupNeutralPassiveUnits();
       base.OnNotPicked();
     }
-    
-    /// <inheritdoc />
-    public override void OnNotPicked()
-    {
-      Regions.AuberdineUnlock.CleanupNeutralPassiveUnits();
-      Regions.AstranaarUnlock.CleanupNeutralPassiveUnits();
-      base.OnNotPicked();
-    }
 
     private void RegisterQuests()
     {
