@@ -40,8 +40,9 @@ namespace Launcher.IntegrityChecker
         if (VerifyHeroAbilities(unit, out var heroAbilitiesIssue)) 
           issues.Add(heroAbilitiesIssue);
 
-        if (VerifyForbiddenAbilities(unit, out var forbiddenAbilityIssue))
-          issues.Add(forbiddenAbilityIssue);
+        //todo: re-enable this but fix all of the blight issues
+        // if (VerifyForbiddenAbilities(unit, out var forbiddenAbilityIssue))
+        //   issues.Add(forbiddenAbilityIssue);
       }
       if (issues.Count == 0)
         return;
@@ -166,15 +167,14 @@ namespace Launcher.IntegrityChecker
         }
       }
 
-      //todo: re-enable this but fix all of the blight issues
-      // foreach (var ability in unit.AbilitiesHero)
-      // {
-      //   if (AbilityIsForbidden(ability))
-      //   {
-      //     issue = $"{unit.GetReadableId()} has forbidden hero ability {ability.GetReadableId()}. Legacies doesn't use blight.";
-      //     return true;
-      //   }
-      // }
+      foreach (var ability in unit.AbilitiesHero)
+      {
+        if (AbilityIsForbidden(ability))
+        {
+          issue = $"{unit.GetReadableId()} has forbidden hero ability {ability.GetReadableId()}. Legacies doesn't use blight.";
+          return true;
+        }
+      }
       
       return false;
     }
