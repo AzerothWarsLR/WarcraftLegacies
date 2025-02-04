@@ -47,12 +47,12 @@ Join up with your allies and brace for a tough fight and counter-attack. ";
         "troll",
         "trolls"
       };
+      ProcessObjectInfo(ZandalarObjectInfo.GetAllObjectLimits());
     }
         
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
       RegisterQuests();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
@@ -63,12 +63,6 @@ Join up with your allies and brace for a tough fight and counter-attack. ";
       Regions.ZandalarUnlock.CleanupNeutralPassiveUnits();
       Regions.Zandalari_Echo_Unlock.CleanupNeutralPassiveUnits();
       base.OnNotPicked();
-    }
-
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in ZandalarObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

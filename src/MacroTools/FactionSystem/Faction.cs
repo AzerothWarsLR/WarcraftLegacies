@@ -9,6 +9,7 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
 using MacroTools.ResearchSystems;
+using MacroTools.Shared;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -33,6 +34,7 @@ namespace MacroTools.FactionSystem
     private readonly List<unit> _goldMines = new();
     private readonly Dictionary<int, int> _objectLevels = new();
     private readonly Dictionary<int, int> _objectLimits = new();
+    private readonly Dictionary<UnitCategory, int> _objectsByCategory = new();
     private readonly List<Power> _powers = new();
     private readonly Dictionary<string, QuestData> _questsByName = new();
     private readonly int _undefeatedResearch;
@@ -294,7 +296,13 @@ namespace MacroTools.FactionSystem
     ///   Returns the maximum number of times the Faction can train a unit, build a building, or research a research.
     /// </summary>
     /// <param name="whichObject">The object ID of a unit, building, or research.</param>
-    public int GetObjectLimit(int whichObject) => _objectLimits.TryGetValue(whichObject, out var limit) ? limit : 0;
+    public int GetObjectLimit(int whichObject) => _objectLimits.GetValueOrDefault(whichObject, 0);
+
+    /// <summary>
+    /// Provides the unit type belonging to the provided <see cref="UnitCategory"/> for this faction, if any.
+    /// </summary>
+    public bool TryGetObjectByCategory(UnitCategory category, out int objectTypeId) =>
+      _objectsByCategory.TryGetValue(category, out objectTypeId);
 
     /// <summary>Adds a <see cref="Power" /> to this <see cref="Faction" />.</summary>
     public void AddPower(Power power)
@@ -467,6 +475,20 @@ namespace MacroTools.FactionSystem
 
     /// <summary>Returns all <see cref="QuestData"/>s the <see cref="Faction"/> can complete.</summary>
     public List<QuestData> GetAllQuests() => _questsByName.Values.ToList();
+
+    /// <summary>
+    /// Takes the provided object information and registers object limits and categories to the <see cref="Faction"/>/
+    /// </summary>
+    protected void ProcessObjectInfo(IEnumerable<ObjectInfo> objectInfos)
+    {
+      foreach (var (objectTypeId, objectInfo) in objectInfos)
+      {
+        var fourCc = FourCC(objectTypeId);
+        ModObjectLimit(FourCC(objectTypeId), objectInfo.Limit);
+        if (objectInfo.Category != UnitCategory.None) 
+          _objectsByCategory[objectInfo.Category] = fourCc;
+      }
+    }
 
     /// <summary>
     /// Registers an initializer function that will only fire once a <see cref="Faction"/>s of the specified type has

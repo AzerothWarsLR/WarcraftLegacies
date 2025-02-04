@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools;
 using MacroTools.Extensions;
+using MacroTools.Shared;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 

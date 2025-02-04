@@ -55,12 +55,12 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       };
       RegisterFactionDependentInitializer<Legion>(RegisterBookOfMedivhQuest);
       RegisterFactionDependentInitializer<Druids>(RegisterDruidsQuests);
+      ProcessObjectInfo(GilneasObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
       RegisterQuests();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
@@ -75,12 +75,6 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       Regions.GilneasUnlock5.CleanupNeutralPassiveUnits();
       Regions.GilneasUnlock6.CleanupNeutralPassiveUnits();
       base.OnNotPicked();
-    }
-
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in GilneasObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
     
     private void RegisterQuests()

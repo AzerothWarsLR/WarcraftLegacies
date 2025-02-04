@@ -54,23 +54,17 @@ Gather your forces and strike before the Old Gods can organize their efforts.";
       RegisterFactionDependentInitializer<Sentinels>(RegisterSentinelsDialogue);
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeQuests);
       RegisterFactionDependentInitializer<Sentinels, Frostwolf, Warsong>(RegisterSentinelsFrostwolfWarsongDialogue);
+      ProcessObjectInfo(DruidsObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
       RegisterQuests();
       RegisterDialogue();
       RegisterPowers();
       CenariusGhost.Setup(_allLegendSetup.Druids.Cenarius, this);
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
-    }
-
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in DruidsObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

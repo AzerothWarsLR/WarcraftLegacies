@@ -4,6 +4,7 @@ using System.Linq;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
+
 namespace MacroTools.Extensions
 {
   /// <summary>
@@ -21,7 +22,7 @@ namespace MacroTools.Extensions
       SetSoundPosition(soundHandle, GetRectCenterX(region.Rect), GetRectCenterY(region.Rect), 0);
       RegisterStackedSound(soundHandle, true, width, height);
     }
-   
+
     /// <summary>
     /// Prepares neutral passive units within the specified <paramref name="rectangle"/> according to
     /// the provided <see cref="RescuePreparationMode"/>.
@@ -32,7 +33,8 @@ namespace MacroTools.Extensions
     /// The unit gets rescued if and only if <paramref name="filter"/> returns true.
     /// </param>
     /// <returns>Returns all neutral passive units not matching the <paramref name="filter"/> in the specified rectangle.</returns>
-    public static List<unit> PrepareUnitsForRescue(this Rectangle rectangle, RescuePreparationMode rescuePreparationMode, Func<unit, bool>? filter = null)
+    public static List<unit> PrepareUnitsForRescue(this Rectangle rectangle,
+      RescuePreparationMode rescuePreparationMode, Func<unit, bool>? filter = null)
     {
       filter ??= _ => true;
       return rescuePreparationMode switch
@@ -48,12 +50,13 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Removes all Neutral Passive units from the area, except for unremovable units, which are instead made hostile.
     /// </summary>
-    public static void CleanupNeutralPassiveUnits(this Rectangle area, NeutralPassiveCleanupType cleanupType = NeutralPassiveCleanupType.RemoveUnits)
+    public static void CleanupNeutralPassiveUnits(this Rectangle area,
+      NeutralPassiveCleanupType cleanupType = NeutralPassiveCleanupType.RemoveUnits)
     {
       var unitsInArea = CreateGroup()
         .EnumUnitsInRect(area)
         .EmptyToList();
-      
+
       foreach (var unit in unitsInArea)
       {
         if (unit.OwningPlayer() != Player(PLAYER_NEUTRAL_PASSIVE) || unit.GetTypeId() == FourCC("ngol"))
@@ -65,7 +68,8 @@ namespace MacroTools.Extensions
           continue;
         }
 
-        if (unit.IsRemovable() && !BlzIsUnitInvulnerable(unit) && (cleanupType == NeutralPassiveCleanupType.RemoveUnits || unit.IsType(UNIT_TYPE_STRUCTURE)))
+        if (unit.IsRemovable() && !BlzIsUnitInvulnerable(unit) &&
+            (cleanupType == NeutralPassiveCleanupType.RemoveUnits || unit.IsType(UNIT_TYPE_STRUCTURE)))
           unit.Remove();
         else
           unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
@@ -88,7 +92,7 @@ namespace MacroTools.Extensions
         }
       }
     }
-    
+
     /// <summary>
     /// Prepares all Neutral Passive inside the specified <paramref name="rectangle"/>.
     /// </summary>
@@ -97,7 +101,8 @@ namespace MacroTools.Extensions
     /// <param name="hideStructures">If true, prepared structures are hidden.</param>
     /// <param name="filter"></param>
     /// <returns>Returns all neutral passive units not matching the <paramref name="filter"/> in the specified rectangle.</returns>
-    private static List<unit> PrepareUnitsForRescue(this Rectangle rectangle, bool hideUnits, bool hideStructures, Func<unit, bool> filter)
+    private static List<unit> PrepareUnitsForRescue(this Rectangle rectangle, bool hideUnits, bool hideStructures,
+      Func<unit, bool> filter)
     {
       var group = CreateGroup()
         .EnumUnitsInRect(rectangle)
@@ -113,6 +118,7 @@ namespace MacroTools.Extensions
           .SetInvulnerable(true)
           .PauseEx(true);
       }
+
       return group;
     }
   }

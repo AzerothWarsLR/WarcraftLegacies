@@ -58,12 +58,13 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
       RegisterFactionDependentInitializer<Dalaran>(RegisterDalaranDialogue);
       RegisterFactionDependentInitializer<Scourge, Legion>(RegisterScourgeLegionDialogue);
+      ProcessObjectInfo(LordaeronObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
+      RegisterObjectLevels();
       RegisterQuests();
       RegisterDialogue();
       RegisterCrownOfLordaeronDrop();
@@ -71,11 +72,8 @@ If you survive the Plague, sail to the frozen wasteland of Northrend and take th
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
     
-    private void RegisterObjectLimits()
+    private void RegisterObjectLevels()
     {
-      foreach (var (objectTypeId, objectLimit) in LordaeronObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
-
       //Todo: these probably should be in some kind of ability library, not here
       ModAbilityAvailability(ABILITY_A0N2_GRASPING_VINES_TREANTS, -1);
       ModAbilityAvailability(ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, -1);

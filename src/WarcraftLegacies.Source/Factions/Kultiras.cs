@@ -45,20 +45,14 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
       };
 
       RegisterFactionDependentInitializer<Frostwolf>(RegisterDialogue);
+      ProcessObjectInfo(KultirasObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
       RegisterQuests();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
-    }
-
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in KultirasObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

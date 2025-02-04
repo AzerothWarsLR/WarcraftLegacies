@@ -53,22 +53,20 @@ Your allies will be coming south to help you defend against the Old Gods, do not
       };
       RegisterFactionDependentInitializer<Warsong>(RegisterWarsongDialogue);
       RegisterFactionDependentInitializer<Warsong>(RegisterWarsongRelatedResearches);
+      ProcessObjectInfo(FrostwolfObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
+      RegisterObjectLevels();
       RegisterQuests();
       RegisterDialogue();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
-    private void RegisterObjectLimits()
+    private void RegisterObjectLevels()
     {
-      foreach (var (objectTypeId, objectLimit) in FrostwolfObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
-
       ModAbilityAvailability(ABILITY_A0PF_FEL_ENERGY_TEAL_FORTRESSES, -1);
       ModAbilityAvailability(ABILITY_ANTR_TROLL_REGENERATION_PINK_WITCH_DOCTOR_TROLL_HEADHUNTER_TROLL_BATRIDER_DARKSPEAR_WARLORD_TROLL_BERSERKER_ICON, -1);
       ModAbilityAvailability(ABILITY_A0M4_BATTLE_STATIONS_PINK_GREY_ORC_BURROW_BLOODPACT, -1);

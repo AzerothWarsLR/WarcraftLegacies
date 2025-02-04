@@ -48,22 +48,16 @@ You do not possess boats, but your workers can burrow through water, use them to
         "cthun",
         "c'thun"
       };
+      ProcessObjectInfo(AhnqirajObjectInfo.GetAllObjectInfos());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
       RegisterResearches();
       RegisterSpells();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
       RegisterQuests();
-    }
-
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in AhnqirajObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

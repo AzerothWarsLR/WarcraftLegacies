@@ -65,12 +65,13 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
 
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
       RegisterFactionDependentInitializer<Legion>(RegisterBookOfMedivhQuest);
+      ProcessObjectInfo(DalaranObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
+      RegisterObjectLevels();
       RegisterQuests();
       RegisterDialogue();
       RegisterProtectors();
@@ -88,11 +89,8 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       base.OnNotPicked();
     }
       
-    private void RegisterObjectLimits()
+    private void RegisterObjectLevels()
     {
-      foreach (var (objectTypeId, objectLimit) in DalaranObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
-
       ModAbilityAvailability(ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, 1);
       ModAbilityAvailability(ABILITY_A0GG_SPELL_SHIELD_SPELL_BOOK_ORANGE_KIRIN_TOR, -1); //Todo: should be global
       ModAbilityAvailability(ABILITY_A0WG_SPELL_SHIELD_SPELL_BOOK_ORANGE_ANTONIDAS_RED_LICH_KING, -1);

@@ -23,7 +23,6 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    
     public Sentinels(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80",
       @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
     {
@@ -34,10 +33,11 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       CinematicMusic = "Comradeship";
       ControlPointDefenderUnitTypeId = UNIT_H03F_CONTROL_POINT_DEFENDER_SENTINELS;
-      StartingCameraPosition = Regions.SentStartPos.Center;
-      StartingUnits = Regions.SentStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
+      StartingCameraPosition = Regions.SentDraeSharedStartPos.Center;
+      StartingUnits = Regions.SentDraeSharedStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       LearningDifficulty = FactionLearningDifficulty.Basic;
-      IntroText = @"You are playing as the ever-watchful 
+      IntroText = @"You are playing as the ever-watchful |CFFBFFF80Sentinels|r.
+
 
 The Druids are slowly waking from their slumber, and it falls to you to drive back the Old Gods invaders from Kalimdor until then.
 
@@ -46,7 +46,7 @@ Your first mission is to race down the coast to Feathermoon Stronghold, a powerf
 Once you have secured your holdings, gather your army and destroy the Old Gods. Be careful, they will outnumber you if given time to establish a foothold in Azeroth.";
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-21300, 8400))
+        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-20780, 7860))
       };
       Nicknames = new List<string>
       {
@@ -59,12 +59,12 @@ Once you have secured your holdings, gather your army and destroy the Old Gods. 
       RegisterFactionDependentInitializer<Druids>(RegisterDruidsDialogue);
       RegisterFactionDependentInitializer<Illidari>(RegisterIllidariQuestsAndDialogue);
       RegisterFactionDependentInitializer<Legion>(RegisterLegionDialogue);
+      ProcessObjectInfo(SentinelsObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
       RegisterQuests();
       RegisterDialogue();
       RegisterPowers();
@@ -79,12 +79,6 @@ Once you have secured your holdings, gather your army and destroy the Old Gods. 
       Regions.AuberdineUnlock.CleanupNeutralPassiveUnits();
       Regions.AstranaarUnlock.CleanupNeutralPassiveUnits();
       base.OnNotPicked();
-    }
-
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in SentinelsObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

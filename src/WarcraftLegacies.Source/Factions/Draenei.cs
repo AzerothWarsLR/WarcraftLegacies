@@ -19,18 +19,17 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    
     public Draenei(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("The Exodar",
       PLAYER_COLOR_NAVY, "|cff000080", @"ReplaceableTextures\CommandButtons\BTNBOSSVelen.blp")
     {
       TraditionalTeam = TeamSetup.NightElves;
       _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
-      this._artifactSetup = artifactSetup;
+      _artifactSetup = artifactSetup;
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_U008_CONTROL_POINT_DEFENDER_DRAENEI;
-      StartingCameraPosition = Regions.DraeneiStartPos.Center;
-      StartingUnits = Regions.DraeneiStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
+      StartingCameraPosition = Regions.SentDraeSharedStartPos.Center;
+      StartingUnits = Regions.SentDraeSharedStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       LearningDifficulty = FactionLearningDifficulty.Advanced;
       IntroText = @"You are playing as the exiled |cff000080Draenei|r.
 
@@ -52,29 +51,21 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
         "theexodar",
         "goats"
       };
+      ProcessObjectInfo(DraeneiObjectInfo.GetAllObjectLimits());
     }
     
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
       RegisterQuests();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
-
     /// <inheritdoc />
     public override void OnNotPicked()
     {
       Regions.ExodarBaseUnlock.CleanupNeutralPassiveUnits();
       Regions.Darkshore.CleanupNeutralPassiveUnits();
       base.OnNotPicked();
-    }
-
-
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in DraeneiObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

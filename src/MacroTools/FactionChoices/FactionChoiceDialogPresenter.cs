@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.UserInterface;
@@ -21,33 +20,26 @@ namespace MacroTools.FactionChoices
     {
       var pickedFaction = choice.Data;
       HasChoiceBeenPicked = true;
+      
+      var startingUnits = pickedFaction.StartingUnits;
+
+      foreach (var unit in startingUnits)
+        unit.ReplaceWithFactionEquivalent(pickedFaction).Rescue(pickingPlayer);
+
       if (pickedFaction.StartingCameraPosition != null)
         pickingPlayer.RepositionCamera(pickedFaction.StartingCameraPosition);
 
       pickingPlayer.SetFaction(pickedFaction);
       FactionManager.Register(pickedFaction);
-      var startingUnits = pickedFaction.StartingUnits;
-      pickingPlayer.RescueGroup(startingUnits);
 
-      foreach (var unpickedFaction in Choices.Where(x => x.Data != choice.Data))
-        RemoveFaction(unpickedFaction.Data);
+      var unpickedFactions = Choices.Where(x => x.Data != choice.Data).ToList();
+      foreach (var unpickedFaction in unpickedFactions)
+        unpickedFaction.Data.OnNotPicked();
     }
 
     /// <inheritdoc />
     protected override Choice<Faction> GetDefaultChoice(player whichPlayer) => Choices.First();
 
-    private static void RemoveFaction(Faction faction)
-    {
-      var startingUnits = faction.StartingUnits;
-      foreach (var unit in startingUnits)
-        if (ControlPointManager.Instance.UnitIsControlPoint(unit))
-          unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-        else
-          unit.Remove();
-      
-      faction.OnNotPicked();
-    }
-    
     private static Choice<Faction>[] ConvertToFactionChoices(IEnumerable<Faction> factions)
     {
       return factions

@@ -44,12 +44,12 @@ Be sure to train Forsaken Ones, they are powerful units";
         "n'zoth",
         "nz"
       };
+      ProcessObjectInfo(BlackEmpireObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
       RegisterQuests();
       RegisterSpells();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
@@ -70,12 +70,6 @@ Be sure to train Forsaken Ones, they are powerful units";
       AddQuest(new QuestWorldStone(_allLegendSetup.BlackEmpire.Nzoth, _allLegendSetup.Frostwolf.ThunderBluff, _allLegendSetup.Warsong.Orgrimmar));
       AddQuest(new QuestAscension(_allLegendSetup.BlackEmpire.Nzoth));
       AddQuest(new QuestAlignement(_allLegendSetup.BlackEmpire.Nzoth));
-    }
-
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in BlackEmpireObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterSpells()

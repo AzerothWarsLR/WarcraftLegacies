@@ -54,12 +54,12 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
       RegisterFactionDependentInitializer<Druids>(RegisterDruidsDialogue);
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
       RegisterFactionDependentInitializer<Sentinels, Druids>(RegisterSentinelsDruidsDialogue);
+      ProcessObjectInfo(IllidariObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
       RegisterQuests();
       RegisterDialogue();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
@@ -74,12 +74,6 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
       Regions.IllidariUnlockSA.CleanupNeutralPassiveUnits(NeutralPassiveCleanupType.TurnUnitsHostile);
       Regions.AkamaUnlock.CleanupNeutralPassiveUnits(NeutralPassiveCleanupType.TurnUnitsHostile);
       base.OnNotPicked();
-    }
-
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in IllidariObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

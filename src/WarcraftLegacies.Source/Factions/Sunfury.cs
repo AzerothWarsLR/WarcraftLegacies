@@ -50,12 +50,12 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
         "sf",
         "sun"
       };
+      ProcessObjectInfo(SunfuryObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
       RegisterQuests();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
@@ -69,12 +69,6 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
       Regions.TempestKeep.CleanupNeutralPassiveUnits();
       _preplacedUnitSystem.GetUnit(UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER).Remove();
       base.OnNotPicked();
-    }
-
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in SunfuryObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()
