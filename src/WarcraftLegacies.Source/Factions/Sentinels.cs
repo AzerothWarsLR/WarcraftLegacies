@@ -64,17 +64,11 @@ Once you have secured your holdings, gather your army and destroy the Old Gods. 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
+      ProcessObjectInfo(SentinelsObjectInfo.GetAllObjectLimits());
       RegisterQuests();
       RegisterDialogue();
       RegisterPowers();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
-    }
-
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in SentinelsObjectInfo.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

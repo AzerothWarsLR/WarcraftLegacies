@@ -54,7 +54,7 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
+      ProcessObjectInfo(BilgewaterObjectInfo.GetAllObjectLimits());
       RegisterQuests();
       RegisterDialogue();
       RegisterPowers();
@@ -66,12 +66,6 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
     {
       Regions.KezanUnlock.CleanupNeutralPassiveUnits();
       base.OnNotPicked();
-    }
-    
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in BilgewaterObjectInfo.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

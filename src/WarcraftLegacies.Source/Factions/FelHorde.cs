@@ -51,17 +51,15 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare for a 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
+      ProcessObjectInfo(FelHordeObjectInfo.GetAllObjectInfos());
+      RegisterObjectLevels();
       RegisterQuests();
       JuggernautDeath.Setup(_preplacedUnitSystem);
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
-    private void RegisterObjectLimits()
+    private void RegisterObjectLevels()
     {
-      foreach (var (objectTypeId, objectLimit) in FelHordeObjectInfo.GetAllObjectInfos())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
-
       ModAbilityAvailability(ABILITY_A0MZ_DEMONIC_CONSTRUCTION_TEAL_DEMOLISHERS, -1);
       ModAbilityAvailability(ABILITY_A0GM_FOR_THE_HORDE_PINK_GREY_MAIN_BUILDINGS, -1);
     }

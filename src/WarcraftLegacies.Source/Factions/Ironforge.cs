@@ -52,16 +52,14 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
+      ProcessObjectInfo(IronforgeObjectInfo.GetAllObjectLimits());
+      RegisterObjectLevels();
       RegisterQuests();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
-    private void RegisterObjectLimits()
+    private void RegisterObjectLevels()
     {
-      foreach (var (objectTypeId, objectLimit) in IronforgeObjectInfo.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
-
       ModAbilityAvailability(ABILITY_A0IH_SPIKED_BARRICADES_DWARF_KEEP, -1);
       ModAbilityAvailability(ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);
       ModAbilityAvailability(ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);

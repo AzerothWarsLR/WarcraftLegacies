@@ -64,17 +64,11 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
+      ProcessObjectInfo(LegionObjectInfo.GetAllObjectLimits());
       RegisterQuests();
       RegisterResearches();
       RegisterDialogue();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
-    }
-
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in LegionObjectInfo.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

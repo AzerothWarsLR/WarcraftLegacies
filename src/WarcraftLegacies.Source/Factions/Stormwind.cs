@@ -44,17 +44,15 @@ Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
+      ProcessObjectInfo(StormwindObjectInfo.GetAllObjectLimits());
+      RegisterObjectLevels();
       RegisterQuests();
       RegisterResearches();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
-    private void RegisterObjectLimits()
+    private void RegisterObjectLevels()
     {
-      foreach (var (objectTypeId, objectLimit) in StormwindObjectInfo.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
-
       ModAbilityAvailability(ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, 1);
       ModAbilityAvailability(ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);
       ModAbilityAvailability(ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, -1);

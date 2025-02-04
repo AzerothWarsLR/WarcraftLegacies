@@ -59,7 +59,7 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
+      ProcessObjectInfo(IllidariObjectInfo.GetAllObjectLimits());
       RegisterQuests();
       RegisterDialogue();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
@@ -74,12 +74,6 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
       Regions.IllidariUnlockSA.CleanupNeutralPassiveUnits(NeutralPassiveCleanupType.TurnUnitsHostile);
       Regions.AkamaUnlock.CleanupNeutralPassiveUnits(NeutralPassiveCleanupType.TurnUnitsHostile);
       base.OnNotPicked();
-    }
-
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in IllidariObjectInfo.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

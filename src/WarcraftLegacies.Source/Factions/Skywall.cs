@@ -47,7 +47,7 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
     public override void OnRegistered()
     {
       RegisterResearches();
-      RegisterObjectLimits();
+      ProcessObjectInfo(SkywallObjectInfo.GetAllObjectLimits());
       RegisterSpells();
       RegisterQuests();
       RegisterFactionDependentInitializer<Druids, Ahnqiraj>(RegisterInvasionRelatedQuests);
@@ -99,12 +99,6 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
           IconName = "ItemForging",
           Name = "Windforging",
         }));
-    }
-
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in SkywallObjectInfo.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterSpells()

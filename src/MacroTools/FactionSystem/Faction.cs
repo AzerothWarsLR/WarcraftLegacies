@@ -477,6 +477,19 @@ namespace MacroTools.FactionSystem
     public List<QuestData> GetAllQuests() => _questsByName.Values.ToList();
 
     /// <summary>
+    /// Takes the provided object information and registers object limits and categories to the <see cref="Faction"/>/
+    /// </summary>
+    protected void ProcessObjectInfo(IEnumerable<ObjectInfo> objectInfos)
+    {
+      foreach (var (objectTypeId, objectInfo) in objectInfos)
+      {
+        var fourCc = FourCC(objectTypeId);
+        ModObjectLimit(FourCC(objectTypeId), objectInfo.Limit);
+        _objectsByCategory[objectInfo.Category] = fourCc;
+      }
+    }
+
+    /// <summary>
     /// Registers an initializer function that will only fire once a <see cref="Faction"/>s of the specified type has
     /// been registered.
     /// </summary>

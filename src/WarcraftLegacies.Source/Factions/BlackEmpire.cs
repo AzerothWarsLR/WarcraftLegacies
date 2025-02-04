@@ -49,7 +49,7 @@ Be sure to train Forsaken Ones, they are powerful units";
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
+      ProcessObjectInfo(BlackEmpireObjectInfo.GetAllObjectLimits());
       RegisterQuests();
       RegisterSpells();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
@@ -70,12 +70,6 @@ Be sure to train Forsaken Ones, they are powerful units";
       AddQuest(new QuestWorldStone(_allLegendSetup.BlackEmpire.Nzoth, _allLegendSetup.Frostwolf.ThunderBluff, _allLegendSetup.Warsong.Orgrimmar));
       AddQuest(new QuestAscension(_allLegendSetup.BlackEmpire.Nzoth));
       AddQuest(new QuestAlignement(_allLegendSetup.BlackEmpire.Nzoth));
-    }
-
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in BlackEmpireObjectInfo.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterSpells()

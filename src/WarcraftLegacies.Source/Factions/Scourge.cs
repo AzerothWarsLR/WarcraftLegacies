@@ -69,7 +69,8 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
+      ProcessObjectInfo(ScourgeObjectInfo.GetAllObjectLimits());
+      RegisterObjectLevels();
       RegisterQuests();
       RegisterPowers();
       RegisterDialogue();
@@ -80,12 +81,8 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       TheFrozenThrone.Setup(this, _allLegendSetup.Scourge.TheFrozenThrone);
     }
 
-    private void RegisterObjectLimits()
+    private void RegisterObjectLevels()
     {
-      foreach (var (objectTypeId, objectLimit) in ScourgeObjectInfo.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
-
-      //Abilities
       ModAbilityAvailability(ABILITY_A0WG_SPELL_SHIELD_SPELL_BOOK_ORANGE_ANTONIDAS_RED_LICH_KING, -1);
       ModAbilityAvailability(ABILITY_A0K2_RAISE_DEAD_AUTO_CAST_RED_TEMPLE_OF_THE_DAMNED_OFF, -1);
       ModAbilityAvailability(ABILITY_A09N_PERMANENT_IMMOLATION_SCOURGE_ICECROWN_OBELISK, -1);

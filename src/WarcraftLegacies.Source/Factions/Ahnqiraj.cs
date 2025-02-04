@@ -53,17 +53,11 @@ You do not possess boats, but your workers can burrow through water, use them to
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
+      ProcessObjectInfo(AhnqirajObjectInfo.GetAllObjectInfos());
       RegisterResearches();
       RegisterSpells();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
       RegisterQuests();
-    }
-
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in AhnqirajObjectInfo.GetAllObjectInfos())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

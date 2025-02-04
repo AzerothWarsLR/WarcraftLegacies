@@ -52,7 +52,7 @@ Join up with your allies and brace for a tough fight and counter-attack. ";
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
+      ProcessObjectInfo(ZandalarObjectInfo.GetAllObjectLimits());
       RegisterQuests();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
@@ -63,12 +63,6 @@ Join up with your allies and brace for a tough fight and counter-attack. ";
       Regions.ZandalarUnlock.CleanupNeutralPassiveUnits();
       Regions.Zandalari_Echo_Unlock.CleanupNeutralPassiveUnits();
       base.OnNotPicked();
-    }
-
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in ZandalarObjectInfo.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

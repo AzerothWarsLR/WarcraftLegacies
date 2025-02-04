@@ -59,18 +59,12 @@ Gather your forces and strike before the Old Gods can organize their efforts.";
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
+      ProcessObjectInfo(DruidsObjectInfo.GetAllObjectLimits());
       RegisterQuests();
       RegisterDialogue();
       RegisterPowers();
       CenariusGhost.Setup(_allLegendSetup.Druids.Cenarius, this);
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
-    }
-
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in DruidsObjectInfo.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()
