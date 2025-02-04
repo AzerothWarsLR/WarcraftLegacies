@@ -60,7 +60,6 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
       RegisterQuests();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
-    
     /// <inheritdoc />
     public override void OnNotPicked()
     {
