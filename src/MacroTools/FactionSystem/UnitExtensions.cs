@@ -18,10 +18,9 @@ namespace MacroTools.FactionSystem
     /// <exception cref="InvalidOperationException">Thrown if the unit could not be replaced for some reason.</exception>
     public static unit ReplaceWithFactionEquivalent(this unit whichUnit, Faction newFaction)
     {
-      var oldPosition = whichUnit.GetPosition();
-      var oldOwner = whichUnit.OwningPlayer();
-      var oldFacing = whichUnit.GetFacing();
-
+      if (!whichUnit.IsRemovable())
+        return whichUnit;
+      
       if (!UnitType.TryGetFromHandle(whichUnit, out var unitType)) 
         throw new InvalidOperationException($"{whichUnit.GetName()} doesn't have a registered {nameof(UnitType)}.");
 
@@ -33,6 +32,10 @@ namespace MacroTools.FactionSystem
 
       if (whichUnit.GetTypeId() == newUnitType)
         return whichUnit;
+      
+      var oldPosition = whichUnit.GetPosition();
+      var oldOwner = whichUnit.OwningPlayer();
+      var oldFacing = whichUnit.GetFacing();
       
       whichUnit.Remove();
       var newUnit = CreateUnit(oldOwner, newUnitType, oldPosition.X, oldPosition.Y, oldFacing);
