@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.UserInterface;
@@ -21,47 +20,25 @@ namespace MacroTools.FactionChoices
     {
       var pickedFaction = choice.Data;
       HasChoiceBeenPicked = true;
+      
       var startingUnits = pickedFaction.StartingUnits;
-      var unpickedFactions = Choices.Where(x => x.Data != choice.Data).ToList();
 
       foreach (var unit in startingUnits)
-        unit.ReplaceWithFactionEquivalent(pickedFaction);
-
-      foreach (var unit in startingUnits)
-        if (ControlPointManager.Instance.UnitIsControlPoint(unit)) 
-          SetUnitOwner(unit, pickingPlayer, true);
+        unit.ReplaceWithFactionEquivalent(pickedFaction).Rescue(pickingPlayer);
 
       if (pickedFaction.StartingCameraPosition != null)
         pickingPlayer.RepositionCamera(pickedFaction.StartingCameraPosition);
 
       pickingPlayer.SetFaction(pickedFaction);
       FactionManager.Register(pickedFaction);
-      pickingPlayer.RescueGroup(startingUnits);
 
+      var unpickedFactions = Choices.Where(x => x.Data != choice.Data).ToList();
       foreach (var unpickedFaction in unpickedFactions)
-        RemoveFaction(unpickedFaction.Data, startingUnits);
+        unpickedFaction.Data.OnNotPicked();
     }
-
 
     /// <inheritdoc />
     protected override Choice<Faction> GetDefaultChoice(player whichPlayer) => Choices.First();
-
-    private static void RemoveFaction(Faction faction, List<unit> pickedFactionStartingUnits)
-    {
-      var startingUnits = faction.StartingUnits;
-      foreach (var unit in startingUnits)
-      {
-        if (ControlPointManager.Instance.UnitIsControlPoint(unit))
-        {
-          if (!pickedFactionStartingUnits.Contains(unit)) 
-            unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-        }
-        else
-          unit.Remove();
-      }
-
-      faction.OnNotPicked();
-    }
 
     private static Choice<Faction>[] ConvertToFactionChoices(IEnumerable<Faction> factions)
     {
