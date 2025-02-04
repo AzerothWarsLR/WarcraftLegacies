@@ -16,8 +16,9 @@ namespace Launcher.MapMigrations
     public void Migrate(Map map, ObjectDatabase objectDatabase)
     {
       var units = objectDatabase.GetUnits().ToList();
-      var flight = objectDatabase.GetUpgrade(Constants.UPGRADE_R09X_FORTIFIED_HULLS_UNIVERSAL_UPGRADE.InvertEndianness());
-      
+      var flight =
+        objectDatabase.GetUpgrade(Constants.UPGRADE_R09X_FORTIFIED_HULLS_UNIVERSAL_UPGRADE.InvertEndianness());
+
       foreach (var unit in units)
       {
         try
