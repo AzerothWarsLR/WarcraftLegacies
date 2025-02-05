@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using MacroTools.Buffs;
-using MacroTools.Extensions;
 using MacroTools.SpellSystem;
+using MacroTools.Utils;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 
@@ -52,7 +52,7 @@ namespace WarcraftLegacies.Source.Spells
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
       var maxTargets = CountBase * CountLevel * GetAbilityLevel(caster);
-      foreach (var unit in CreateGroup().EnumUnitsInRange(targetPoint, Radius).EmptyToList().Take(maxTargets))
+      foreach (var unit in GlobalGroup.EnumUnitsInRange(targetPoint, Radius).Take(maxTargets))
       {
         if (IsValidTarget(caster, unit))
         {

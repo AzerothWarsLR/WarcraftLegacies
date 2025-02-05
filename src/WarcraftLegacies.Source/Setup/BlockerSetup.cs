@@ -1,4 +1,6 @@
-﻿namespace WarcraftLegacies.Source.Setup
+﻿using WCSharp.Shared.Data;
+
+namespace WarcraftLegacies.Source.Setup
 {
   /// <summary>
   /// Hides all pathing blockers on the map.
@@ -25,7 +27,7 @@
         FourCC("B011"),
       };
 
-      EnumDestructablesInRect(WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, null, () =>
+      EnumDestructablesInRect(Rectangle.WorldBounds.Rect, null, () =>
       {
         foreach (var pathingBlocker in pathingBlockers)
         {

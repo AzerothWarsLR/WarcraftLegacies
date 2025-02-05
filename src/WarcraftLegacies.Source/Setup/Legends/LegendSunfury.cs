@@ -1,7 +1,6 @@
 ﻿using MacroTools.LegendSystem;
 using MacroTools.Systems;
 
-
 namespace WarcraftLegacies.Source.Setup.Legends
 {
   public sealed class LegendSunfury

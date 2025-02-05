@@ -1,10 +1,10 @@
-﻿using MacroTools.FactionSystem;
-using MacroTools.QuestSystem;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
+using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.Gilneas
 {

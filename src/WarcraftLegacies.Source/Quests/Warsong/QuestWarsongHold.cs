@@ -5,7 +5,6 @@ using MacroTools.Libraries;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 
-
 namespace WarcraftLegacies.Source.Quests.Warsong
 {
   public sealed class QuestWarsongHold : QuestData

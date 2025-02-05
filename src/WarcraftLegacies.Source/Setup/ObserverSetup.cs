@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Setup
 {
@@ -15,7 +16,7 @@ namespace WarcraftLegacies.Source.Setup
       foreach (var observer in observers)
       {
         FogModifierStart(CreateFogModifierRect(observer, FOG_OF_WAR_VISIBLE,
-          WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, false, false));
+          Rectangle.WorldBounds.Rect, false, false));
         RemovePlayer(observer, PLAYER_GAME_RESULT_DEFEAT);
         SetPlayerState(observer, PLAYER_STATE_OBSERVER, 1);
       }

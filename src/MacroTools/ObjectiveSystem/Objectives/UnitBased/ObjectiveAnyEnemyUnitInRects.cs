@@ -4,6 +4,7 @@ using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -50,9 +51,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     
     private bool IsValidUnitInRects()
     {
-      return _targetRects.Select(targetRect => CreateGroup()
-        .EnumUnitsInRect(targetRect)
-        .EmptyToList()
+      return _targetRects.Select(targetRect => GlobalGroup
+          .EnumUnitsInRect(targetRect)
         .Any(IsUnitValid))
         .Any(any => any);
     } 

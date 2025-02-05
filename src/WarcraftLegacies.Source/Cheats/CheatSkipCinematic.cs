@@ -3,6 +3,7 @@ using MacroTools.Cheats;
 using MacroTools.Extensions;
 using MacroTools.Systems;
 using WarcraftLegacies.Source.GameLogic;
+using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.Cheats
 {
@@ -39,7 +40,7 @@ namespace WarcraftLegacies.Source.Cheats
     private static void DelayedSetup()
     {
       _skipTrigger = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      foreach (var player in Util.EnumeratePlayers())
         TriggerRegisterPlayerEvent(_skipTrigger, player, EVENT_PLAYER_END_CINEMATIC);
       TriggerAddAction(_skipTrigger, Actions);
 

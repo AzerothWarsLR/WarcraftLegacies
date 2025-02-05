@@ -3,6 +3,7 @@ using MacroTools.ControlPointSystem;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.Save;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -121,7 +122,7 @@ namespace MacroTools.Extensions
     {
       SetPlayerColor(whichPlayer, color);
       if (!changeExisting) return;
-      foreach (var unit in CreateGroup().EnumUnitsOfPlayer(whichPlayer).EmptyToList())
+      foreach (var unit in GlobalGroup.EnumUnitsOfPlayer(whichPlayer))
         SetUnitColor(unit, color);
     }
 
@@ -134,9 +135,8 @@ namespace MacroTools.Extensions
     /// </summary>
     public static player RemoveAllUnits(this player whichPlayer)
     {
-      foreach (var unit in CreateGroup()
-                 .EnumUnitsOfPlayer(whichPlayer)
-                 .EmptyToList())
+      foreach (var unit in GlobalGroup
+                 .EnumUnitsOfPlayer(whichPlayer))
       {
         if (unit.IsRemovable())
           unit.SafelyRemove();

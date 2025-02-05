@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.UserInterface;
+using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.FactionMechanics.Scourge
 {
@@ -18,7 +19,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
         return;
       
       var invasionLocation = choice.Location;
-      foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.Northrend_Ambiance).EmptyToList()
+      foreach (var unit in GlobalGroup.EnumUnitsInRect(Regions.Northrend_Ambiance)
                  .Where(x => x.OwningPlayer() == pickingPlayer))
       {
         if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) || IsUnitType(unit, UNIT_TYPE_ANCIENT) ||

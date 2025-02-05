@@ -1,5 +1,6 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.Commands
 {
@@ -37,7 +38,7 @@ namespace WarcraftLegacies.Source.Commands
     public static void Setup()
     {
       var trig = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) 
+      foreach (var player in Util.EnumeratePlayers()) 
         TriggerRegisterPlayerChatEvent(trig, player, Command, false);
       TriggerAddAction(trig, Actions);
     }

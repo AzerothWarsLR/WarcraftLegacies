@@ -1,6 +1,6 @@
-﻿using MacroTools.Extensions;
-using MacroTools.Libraries;
+﻿using MacroTools.Libraries;
 using MacroTools.SpellSystem;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 using static War3Api.Common; 
 
@@ -19,7 +19,7 @@ namespace MacroTools.Hazards
     private void DoBolt(float x, float y)
     {
       DestroyEffect(AddSpecialEffect(EffectPath, x, y));
-      var unitsInRange = CreateGroup().EnumUnitsInRange(new Point(x, y), BoltRadius).EmptyToList();
+      var unitsInRange = GlobalGroup.EnumUnitsInRange(new Point(x, y), BoltRadius);
       foreach (var target in unitsInRange)
       {
         if (CastFilters.IsTargetEnemyAndAlive(Caster, target))

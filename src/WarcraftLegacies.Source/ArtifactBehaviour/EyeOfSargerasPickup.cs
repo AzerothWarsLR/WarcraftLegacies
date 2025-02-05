@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
+using MacroTools.Utils;
 using WCSharp.Events;
 using WCSharp.Missiles;
 
@@ -24,8 +25,8 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
       if (GetTriggerUnit().OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
         return;
 
-      var hostileNearby = CreateGroup()
-        .EnumUnitsInRange(GetTriggerUnit().GetPosition(), 700).EmptyToList()
+      var hostileNearby = GlobalGroup
+        .EnumUnitsInRange(GetTriggerUnit().GetPosition(), 700)
         .OrderByDescending(x => MathEx.GetDistanceBetweenPoints(x.GetPosition(), GetTriggerUnit().GetPosition()))
         .FirstOrDefault(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && UnitAlive(x) && !x.IsType(UNIT_TYPE_ANCIENT));
       if (hostileNearby == null)

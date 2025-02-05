@@ -1,4 +1,5 @@
 ﻿using MacroTools.Extensions;
+using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.GameLogic
 {
@@ -16,7 +17,7 @@ namespace WarcraftLegacies.Source.GameLogic
       TriggerRegisterTimerEvent(trig, 58, false);
       TriggerAddAction(trig, () =>
       {
-        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+        foreach (var player in Util.EnumeratePlayers())
         {
           var faction = player.GetFaction();
           if (faction == null) continue;

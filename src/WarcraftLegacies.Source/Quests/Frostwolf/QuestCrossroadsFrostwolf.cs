@@ -7,7 +7,6 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 
-
 namespace WarcraftLegacies.Source.Quests.Frostwolf
 {
   public sealed class QuestCrossroadsFrostwolf : QuestData

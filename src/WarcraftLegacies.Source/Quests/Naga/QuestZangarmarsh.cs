@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// Initializes a new instance of the <see cref="QuestZangarmarsh"/> class.
     /// </summary>
     public QuestZangarmarsh(Rectangle rescueRect, LegendaryHero vashj) : base("The Coilfang Reservoir",
-      $"The bassins of Zangarmarsh will be the perfect breeding ground for Illidan's Naga",
+      "The bassins of Zangarmarsh will be the perfect breeding ground for Illidan's Naga",
       @"ReplaceableTextures\CommandButtons\BTNIllidariDemonGate.blp")
     {
       AddObjective(new ObjectiveLegendInRect(vashj, rescueRect, "Zangarmarsh"));

@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       "With Kalimdor now under the Horde's control, the Warsong will be able to expand towards new conquests";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => $"The Warsong Expedition and Garrosh will become available";
+    protected override string RewardDescription => "The Warsong Expedition and Garrosh will become available";
 
     public QuestGarrosh(Capital templeOfTheMoon) : base("Thirst for Conquest",
       "The Night Elven Druids stand in the way of the Warsong's expansion, they will need to be eliminated for the Horde to grow",

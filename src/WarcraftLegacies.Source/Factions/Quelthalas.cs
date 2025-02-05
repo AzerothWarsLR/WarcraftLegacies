@@ -1,16 +1,16 @@
 ﻿using System.Collections.Generic;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ResearchSystems;
+using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests.Quelthalas;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using WarcraftLegacies.Source.Powers;
-using MacroTools.LegendSystem;
-using MacroTools.Systems;
 
 namespace WarcraftLegacies.Source.Factions
 {

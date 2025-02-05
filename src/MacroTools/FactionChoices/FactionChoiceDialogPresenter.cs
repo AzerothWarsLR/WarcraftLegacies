@@ -3,6 +3,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Systems;
 using MacroTools.UserInterface;
+using MacroTools.Utils;
 using static War3Api.Common;
 
 namespace MacroTools.FactionChoices
@@ -21,9 +22,8 @@ namespace MacroTools.FactionChoices
       var pickedFaction = choice.Faction;
       HasChoiceBeenPicked = true;
 
-      var startingUnits = CreateGroup()
+      var startingUnits = GlobalGroup
         .EnumUnitsInRect(choice.StartingArea)
-        .EmptyToList()
         .Where(x => x.GetTypeId() != FourCC("ngol"));
 
       foreach (var unit in startingUnits)

@@ -2,6 +2,7 @@
 using System.Linq;
 using MacroTools.CommandSystem;
 using MacroTools.Extensions;
+using MacroTools.Utils;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
@@ -26,7 +27,7 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      var firstSelectedUnit = CreateGroup().EnumSelectedUnits(cheater).EmptyToList().First();
+      var firstSelectedUnit = GlobalGroup.EnumSelectedUnits(cheater).First();
       firstSelectedUnit.RemoveAllAbilities(new List<int>{1096905835,1097690998,1112498531});
       return $"All abilities removed from {firstSelectedUnit.GetName()}";
     }

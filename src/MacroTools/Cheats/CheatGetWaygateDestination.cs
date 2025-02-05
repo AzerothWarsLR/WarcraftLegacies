@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using MacroTools.CommandSystem;
 using MacroTools.Extensions;
+using MacroTools.Utils;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
@@ -22,7 +23,7 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override string Execute(player commandUser, params string[] parameters)
     {
-      var selectedUnits = CreateGroup().EnumSelectedUnits(commandUser).EmptyToList();
+      var selectedUnits = GlobalGroup.EnumSelectedUnits(commandUser);
       if (!selectedUnits.Any())
         return "You're not selecting any units.";
       

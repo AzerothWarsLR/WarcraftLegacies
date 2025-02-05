@@ -2,6 +2,7 @@
 using MacroTools.Data;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells
@@ -23,10 +24,7 @@ namespace WarcraftLegacies.Source.Spells
     {
       try
       {
-        foreach (var unit in CreateGroup()
-                   .EnumUnitsInRange(targetPoint, Radius)
-                   .EmptyToList()
-                 )
+        foreach (var unit in GlobalGroup.EnumUnitsInRange(targetPoint, Radius))
           if (IsValidTarget(caster, unit))
             EmpowerUnit(GetAbilityLevel(caster), unit);
       }

@@ -1,11 +1,11 @@
-﻿using MacroTools.FactionSystem;
+﻿using System.Collections.Generic;
+using MacroTools.FactionSystem;
 using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Powers;
 using MacroTools.ResearchSystems;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
-using System.Collections.Generic;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.Skywall;
 using WarcraftLegacies.Source.Researches;
@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Factions
     public Skywall() : base("Skywall", PLAYER_COLOR_LIGHT_GRAY, "|cffffffff",
       @"ReplaceableTextures\CommandButtons\BTNFrostRevenant2.blp")
     {
-      ControlPointDefenderUnitTypeId = Constants.UNIT_NECP_CONTROL_POINT_DEFENDER_SKYWALL_TOWER;
+      ControlPointDefenderUnitTypeId = UNIT_NECP_CONTROL_POINT_DEFENDER_SKYWALL_TOWER;
       TraditionalTeam = TeamSetup.OldGods;
       StartingGold = 200;
       IntroText = @"You are playing as the Elementals of Skywall|r|r.
@@ -93,8 +93,8 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
 
     private void RegisterResearches()
     {
-      ResearchManager.Register(new PowerResearch(Constants.UPGRADE_RELT_WINDFORGING_SKYWALL, 100,
-        new Windforging(Constants.UNIT_O01I_ANIMATED_ARMOR_ELEMENTAL, 0.25f, new Point( - 10396.5f, -20963.6f), "the Vortex Pinnacle", Regions.ElementalRealm)
+      ResearchManager.Register(new PowerResearch(UPGRADE_RELT_WINDFORGING_SKYWALL, 100,
+        new Windforging(UNIT_O01I_ANIMATED_ARMOR_ELEMENTAL, 0.25f, new Point( - 10396.5f, -20963.6f), "the Vortex Pinnacle", Regions.ElementalRealm)
         {
           IconName = "ItemForging",
           Name = "Windforging",
@@ -110,7 +110,7 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
         DummyAbilityId = ABILITY_AEPU_PURGE_SHOCKING_BLADE,
         DummyOrderId = OrderId("purge"),
         ProcChance = 0.20f,
-        RequiredResearch = Constants.UPGRADE_RELP_SHOCKING_BLADES_SKYWALL
+        RequiredResearch = UPGRADE_RELP_SHOCKING_BLADES_SKYWALL
       };
       PassiveAbilityManager.Register(purgeAttack);
 

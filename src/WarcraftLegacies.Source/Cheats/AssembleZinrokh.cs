@@ -3,6 +3,7 @@ using System.Linq;
 using MacroTools.ArtifactSystem;
 using MacroTools.CommandSystem;
 using MacroTools.Extensions;
+using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.Cheats
 {
@@ -30,7 +31,7 @@ namespace WarcraftLegacies.Source.Cheats
     /// <inheritdoc />
     public override string Execute(player commandUser, params string[] parameters)
     {
-      var selectedUnit = CreateGroup().EnumSelectedUnits(commandUser).EmptyToList().First();
+      var selectedUnit = GlobalGroup.EnumSelectedUnits(commandUser).First();
       foreach (var artifact in _zinrokhFragments)
         selectedUnit.AddItemSafe(artifact.Item);
 

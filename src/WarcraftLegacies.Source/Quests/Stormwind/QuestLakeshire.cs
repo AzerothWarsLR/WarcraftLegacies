@@ -5,6 +5,7 @@ using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Stormwind
@@ -20,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       AddObjective(new ObjectiveControlPoint(UNIT_N011_REDRIDGE_MOUNTAINS));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
-      foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
+      foreach (var unit in GlobalGroup.EnumUnitsInRect(rescueRect))
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
           SetUnitInvulnerable(unit, true);

@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.ResearchSystems;
+using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.Researches.Ahnqiraj
 {
@@ -27,9 +28,8 @@ namespace WarcraftLegacies.Source.Researches.Ahnqiraj
     /// <inheritdoc />
     public override void OnResearch(player researchingPlayer)
     {
-      var workers = CreateGroup()
+      var workers = GlobalGroup
         .EnumUnitsOfPlayer(researchingPlayer)
-        .EmptyToList()
         .Where(IsValidTarget);
       
       foreach (var worker in workers)

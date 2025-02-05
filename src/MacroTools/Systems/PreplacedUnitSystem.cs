@@ -120,7 +120,7 @@ namespace MacroTools.Systems
 
     private void ReadAllUnits()
     {
-      foreach (var unit in CreateGroup().EnumUnitsInRect(Rectangle.WorldBounds.Rect).EmptyToList())
+      foreach (var unit in GlobalGroup.EnumUnitsInRect(Rectangle.WorldBounds.Rect))
       {
         var unitTypeId = GetUnitTypeId(unit);
         if (!_unitsByTypeId.ContainsKey(unitTypeId)) _unitsByTypeId[unitTypeId] = new List<unit>();

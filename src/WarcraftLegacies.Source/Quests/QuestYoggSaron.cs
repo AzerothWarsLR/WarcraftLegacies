@@ -4,6 +4,7 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Events;
+using WCSharp.Shared;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests
@@ -61,7 +62,7 @@ namespace WarcraftLegacies.Source.Quests
         .SetLifespan(1);
       _yoggsaronPrison.Kill();
 
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      foreach (var player in Util.EnumeratePlayers())
         player.DisplayLegendaryHeroSummoned(_yoggsaron,
           "LOOK UPON YOGG-SARON, GOD OF DEATH, AND KNOW THAT YOUR END COMES SOON!");
     }

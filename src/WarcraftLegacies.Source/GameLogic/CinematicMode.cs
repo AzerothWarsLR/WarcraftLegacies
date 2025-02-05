@@ -1,5 +1,8 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
+using MacroTools.Utils;
+using WCSharp.Shared;
+using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.GameLogic
 {
@@ -29,9 +32,8 @@ namespace WarcraftLegacies.Source.GameLogic
       FogEnable(false);
       FogMaskEnable(false);
 
-      _pausedUnits = CreateGroup()
-        .EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds)
-        .EmptyToList();
+      _pausedUnits = GlobalGroup
+        .EnumUnitsInRect(Rectangle.WorldBounds);
       
       foreach (var unit in _pausedUnits)
         unit.PauseEx(true);
@@ -75,7 +77,7 @@ namespace WarcraftLegacies.Source.GameLogic
 
     private static void PlayFactionMusic()
     {
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      foreach (var player in Util.EnumeratePlayers())
         player.PlayMusicThematic(player.GetFaction().CinematicMusic);
     }
   }

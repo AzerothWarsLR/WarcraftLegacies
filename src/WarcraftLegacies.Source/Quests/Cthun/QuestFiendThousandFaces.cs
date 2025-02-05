@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Soldier and Super Major gain the Vampiric Attack ability";
+      "Soldier and Super Major gain the Vampiric Attack ability";
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestFiendThousandFaces"/> class.

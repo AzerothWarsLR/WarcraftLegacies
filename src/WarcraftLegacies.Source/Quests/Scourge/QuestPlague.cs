@@ -122,9 +122,8 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         FourCC("nvk2")
       };
 
-      var villagers = CreateGroup()
+      var villagers = GlobalGroup
         .EnumUnitsOfPlayer(Player(PLAYER_NEUTRAL_PASSIVE))
-        .EmptyToList()
         .Where(x => villagerUnitTypeIds.Contains(x.GetTypeId()));
       
       foreach (var villager in villagers) 

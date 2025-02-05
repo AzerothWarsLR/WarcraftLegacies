@@ -9,7 +9,6 @@ using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 
-
 namespace WarcraftLegacies.Source.Quests.Ironforge
 {
   public sealed class QuestDominion : QuestData

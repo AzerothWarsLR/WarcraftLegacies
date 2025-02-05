@@ -1,6 +1,7 @@
 using MacroTools.Cheats;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.GameLogic
 {
@@ -20,7 +21,7 @@ namespace WarcraftLegacies.Source.GameLogic
       {
         if (TestMode.AreCheatsActive) return;
 
-        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+        foreach (var player in Util.EnumeratePlayers())
         {
           var playerFaction = player.GetFaction();
           if (playerFaction == null) continue;

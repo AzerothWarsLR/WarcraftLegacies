@@ -3,6 +3,7 @@ using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Systems;
+using MacroTools.Utils;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Draenei;
@@ -76,9 +77,8 @@ The Exodar is a mighty fortress-base with the ability to move around the map, bu
         _preplacedUnitSystem.GetUnit(UNIT_H03V_ENTRANCE_PORTAL, Regions.TempestKeepSpawn.Center),
         _allLegendSetup.Draenei.Velen
       ));
-      var crystalProtectors = CreateGroup()
+      var crystalProtectors = GlobalGroup
         .EnumUnitsInRect(Regions.ExodarBaseUnlock.Rect)
-        .EmptyToList()
         .Where(x => GetUnitTypeId(x) == UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER);
       var questRepairGenerator = new QuestRepairGenerator(_allLegendSetup.Draenei.LegendExodarGenerator, questRepairHull, crystalProtectors);
       AddQuest(questRepairGenerator);

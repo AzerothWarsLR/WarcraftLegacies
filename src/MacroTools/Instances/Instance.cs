@@ -86,9 +86,8 @@ namespace MacroTools.Instances
         _dependencyDiesTrigger.Destroy();
         foreach (var rect in _rectangles)
         {
-          var unitsInRect = CreateGroup()
-            .EnumUnitsInRect(rect)
-            .EmptyToList();
+          var unitsInRect = GlobalGroup
+            .EnumUnitsInRect(rect);
 
           var evacuationPosition = _gates.First().ExteriorPosition;
           

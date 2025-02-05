@@ -1,4 +1,5 @@
-﻿using MacroTools.Extensions;
+﻿using System.Collections.Generic;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
@@ -9,6 +10,8 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
 {
   public sealed class QuestDunMorogh : QuestData
   {
+    private readonly List<unit> _rescueUnits;
+
     public QuestDunMorogh() : base("Mountain Village",
       "A small troll skirmish is attacking Dun Morogh. Push them back!",
       @"ReplaceableTextures\CommandButtons\BTNIceTrollShadowPriest.blp")
@@ -16,6 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
       AddObjective(new ObjectiveControlPoint(UNIT_N014_DUN_MOROGH));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
+      _rescueUnits = Regions.DunmoroghAmbient2.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
     }
 
     /// <inheritdoc/>
@@ -24,24 +28,6 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
     /// <inheritdoc/>
     protected override string RewardDescription => "Control of all units in Dun Morogh";
 
-    private static void GrantDunMorogh(player whichPlayer)
-    {
-      var tempGroup = CreateGroup();
-
-      //Transfer all Neutral Passive units in DunMorogh
-      GroupEnumUnitsInRect(tempGroup, Regions.DunmoroghAmbient2.Rect, null);
-      var u = FirstOfGroup(tempGroup);
-      while (true)
-      {
-        if (u == null) break;
-        if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_PASSIVE)) u.Rescue(whichPlayer);
-        GroupRemoveUnit(tempGroup, u);
-        u = FirstOfGroup(tempGroup);
-      }
-
-      DestroyGroup(tempGroup);
-    }
-
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
@@ -49,13 +35,10 @@ namespace WarcraftLegacies.Source.Quests.Ironforge
         ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
         : completingFaction.Player;
 
-      GrantDunMorogh(rescuer);
+      rescuer.RescueGroup(_rescueUnits);
     }
 
     /// <inheritdoc/>
-    protected override void OnComplete(Faction completingFaction)
-    {
-      GrantDunMorogh(completingFaction.Player);
-    }
+    protected override void OnComplete(Faction completingFaction) => completingFaction.Player.RescueGroup(_rescueUnits);
   }
 }

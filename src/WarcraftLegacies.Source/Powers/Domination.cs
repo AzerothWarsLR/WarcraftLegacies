@@ -4,6 +4,7 @@ using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
+using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.Powers
 {
@@ -79,9 +80,8 @@ namespace WarcraftLegacies.Source.Powers
 
     private void KillUndead(player whichPlayer)
     {
-      var playerUnits = CreateGroup()
-        .EnumUnitsOfPlayer(whichPlayer)
-        .EmptyToList();
+      var playerUnits = GlobalGroup
+        .EnumUnitsOfPlayer(whichPlayer);
 
       foreach (var unit in playerUnits)
         if (MindlessUndeadUnitTypes.Contains(unit.GetTypeId()))

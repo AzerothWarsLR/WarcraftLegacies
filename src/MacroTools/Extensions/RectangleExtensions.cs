@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -53,9 +54,8 @@ namespace MacroTools.Extensions
     public static void CleanupNeutralPassiveUnits(this Rectangle area,
       NeutralPassiveCleanupType cleanupType = NeutralPassiveCleanupType.RemoveUnits)
     {
-      var unitsInArea = CreateGroup()
-        .EnumUnitsInRect(area)
-        .EmptyToList();
+      var unitsInArea = GlobalGroup
+        .EnumUnitsInRect(area);
 
       foreach (var unit in unitsInArea)
       {
@@ -81,9 +81,8 @@ namespace MacroTools.Extensions
     /// </summary>
     public static void CleanupHostileUnits(this Rectangle area)
     {
-      var unitsInArea = CreateGroup()
-        .EnumUnitsInRect(area)
-        .EmptyToList();
+      var unitsInArea = GlobalGroup
+        .EnumUnitsInRect(area);
       foreach (var unit in unitsInArea)
       {
         if (unit.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && unit.IsRemovable())
@@ -104,9 +103,8 @@ namespace MacroTools.Extensions
     private static List<unit> PrepareUnitsForRescue(this Rectangle rectangle, bool hideUnits, bool hideStructures,
       Func<unit, bool> filter)
     {
-      var group = CreateGroup()
+      var group = GlobalGroup
         .EnumUnitsInRect(rectangle)
-        .EmptyToList()
         .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE) && filter.Invoke(x))
         .ToList();
       foreach (var unit in group)

@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
+using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.FactionMechanics.Scourge
 {
@@ -87,7 +88,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
         .SetOwner(Player(PLAYER_NEUTRAL_PASSIVE))
         .SetInvulnerable(true);
 
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      foreach (var player in Util.EnumeratePlayers())
         DisplayTextToPlayer(player, 0, 0,
           "\n|cffffcc00CAPITAL DAMAGED|r\nThe Frozen Throne, once thought to be an indomitable bastion of death, has been ruptured. Ner'zhul's consciousness recedes within, retreating desperately to protect what remains of Icecrown Citadel.");
 

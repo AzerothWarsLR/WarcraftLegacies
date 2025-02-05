@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using WCSharp.Shared;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Legion
@@ -41,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       whichFaction.ModObjectLimit(UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC, 9);
       whichFaction.ModObjectLimit(UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS, 9);
       whichFaction.ModObjectLimit(UNIT_NINF_INFERNAL_LEGION, 6);
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      foreach (var player in Util.EnumeratePlayers())
         SetPlayerAbilityAvailable(player, ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS, false);
 
       whichFaction.Player.RescueGroup(_rescueUnits);
@@ -55,7 +56,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
         GetExpiredTimer().Destroy();
       });
 
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      foreach (var player in Util.EnumeratePlayers())
         SetPlayerAbilityAvailable(player, RitualId, false);
     }
 

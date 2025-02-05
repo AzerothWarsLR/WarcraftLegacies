@@ -1,14 +1,13 @@
-﻿using MacroTools.FactionSystem;
+﻿using System.Collections.Generic;
+using MacroTools.FactionSystem;
 using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
-using System.Collections.Generic;
 using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.BlackEmpire;
 using WarcraftLegacies.Source.Setup;
-
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -128,7 +127,7 @@ Be sure to train Forsaken Ones, they are powerful units";
         DummyAbilityId = ABILITY_ABSV_SHADOW_VEIL_SHADOW_VEIL_REAL,
         DummyOrderId = OrderId("howlofterror"),
         ProcChance = 0.10f,
-        RequiredResearch = Constants.UPGRADE_RBEV_SHADOW_VEIL_BLACK_EMPIRE
+        RequiredResearch = UPGRADE_RBEV_SHADOW_VEIL_BLACK_EMPIRE
       };
       PassiveAbilityManager.Register(shadowVeilPassive);
 

@@ -1,6 +1,6 @@
-﻿using MacroTools.QuestSystem;
+﻿using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
-using MacroTools.LegendSystem;
+using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.Lordaeron
 {
@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      $"Your casters and Paladins gain 200 hit points and 5 damage, and Paladins gain the Reincarnation ability";
+      "Your casters and Paladins gain 200 hit points and 5 damage, and Paladins gain the Reincarnation ability";
 
   }
 }
