@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
-using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
@@ -30,10 +29,8 @@ namespace WarcraftLegacies.Source.Factions
       UndefeatedResearch = UPGRADE_R02L_ILLIDAN_EXISTS;
       StartingGold = 200;
       FoodMaximum = 250;
-      StartingCameraPosition = Regions.IllidanStartingPosition.Center;
       StartingUnits = Regions.IllidanStartingPosition.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       ControlPointDefenderUnitTypeId = UNIT_N0BB_CONTROL_POINT_DEFENDER_ILLIDARI_TOWER;
-      LearningDifficulty = FactionLearningDifficulty.Basic;
       IntroText = @"You are playing as the Betrayer, Illidan|r|r.
 
 You begin on the Broken Isles, ready to plunder the tombs for artifacts to empower Illidan.

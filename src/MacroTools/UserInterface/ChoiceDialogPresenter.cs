@@ -7,18 +7,18 @@ using static War3Api.Common;
 namespace MacroTools.UserInterface
 {
   /// <summary>Allows a player to choose between one of two factions at the start of the game.</summary>
-  public abstract class ChoiceDialogPresenter<T>
+  public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
   {
     private readonly dialog? _pickDialog = DialogCreate();
-    protected readonly List<Choice<T>> Choices;
+    protected readonly List<TChoice> Choices;
     protected bool HasChoiceBeenPicked = false;
     
-    private readonly Dictionary<button, Choice<T>> _choicePicksByButton = new();
+    private readonly Dictionary<button, TChoice> _choicePicksByButton = new();
     private readonly List<trigger> _triggers = new();
     private readonly string _dialogText;
     
     /// <summary>Initializes a new instance of the <see cref="ChoiceDialogPresenter{T}"/> class.</summary>
-    protected ChoiceDialogPresenter(Choice<T>[] choices, string dialogText)
+    protected ChoiceDialogPresenter(TChoice[] choices, string dialogText)
     {
       foreach (var choice in choices)
       {
@@ -31,10 +31,10 @@ namespace MacroTools.UserInterface
     }
 
     /// <summary>Fired when a choice has been made.</summary>
-    protected abstract void OnChoicePicked(player whichPlayer, Choice<T> choice);
+    protected abstract void OnChoicePicked(player whichPlayer, TChoice choice);
 
     /// <summary>The default choice for this presenter, if the player picks nothing by the time it expires.</summary>
-    protected abstract Choice<T> GetDefaultChoice(player whichPlayer);
+    protected abstract TChoice GetDefaultChoice(player whichPlayer);
 
     /// <summary>Displays the faction choice to a player.</summary>
     public void Run(player whichPlayer)

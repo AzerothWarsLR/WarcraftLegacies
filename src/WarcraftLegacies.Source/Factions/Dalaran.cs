@@ -2,7 +2,6 @@
 using MacroTools;
 using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
-using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using MacroTools.Libraries;
 using MacroTools.Mechanics;
@@ -44,9 +43,7 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       CinematicMusic = "SadMystery";
       ControlPointDefenderUnitTypeId = UNIT_N00N_CONTROL_POINT_DEFENDER_DALARAN;
-      StartingCameraPosition = Regions.DalaStartPos.Center;
       StartingUnits = Regions.DalaStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
-      LearningDifficulty = FactionLearningDifficulty.Basic;
       IntroText = @"You are playing the wise |cffff8080Council of Dalaran|r.
 
 You begin in the Hillsbrad Foothills, separated from the main forces of Dalaran. To unlock Dalaran you must capture Shadowfang Keep, which have been encircled by monsters.

@@ -2,7 +2,6 @@
 using MacroTools;
 using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
-using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem;
@@ -33,9 +32,7 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       CinematicMusic = "Comradeship";
       ControlPointDefenderUnitTypeId = UNIT_H03F_CONTROL_POINT_DEFENDER_SENTINELS;
-      StartingCameraPosition = Regions.SentDraeSharedStartPos.Center;
       StartingUnits = Regions.SentDraeSharedStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
-      LearningDifficulty = FactionLearningDifficulty.Basic;
       IntroText = @"You are playing as the ever-watchful |CFFBFFF80Sentinels|r.
 
 

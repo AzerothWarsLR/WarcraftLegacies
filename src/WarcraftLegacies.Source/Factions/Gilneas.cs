@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools;
 using MacroTools.Extensions;
-using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
@@ -29,9 +28,7 @@ namespace WarcraftLegacies.Source.Factions
       _gilneasGate = preplacedUnitSystem.GetUnit(UNIT_H02K_GREYMANE_S_GATE_CLOSED);
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_H0AF_CONTROL_POINT_DEFENDER_GILNEAS;
-      StartingCameraPosition = Regions.GilneasStartPos.Center;
       StartingUnits = Regions.GilneasStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
-      LearningDifficulty = FactionLearningDifficulty.Advanced;
       IntroText = @"You are playing as the accursed |cff646464Kingdom of Gilneas|r|r.
 
 You start isolated behind the Greymane Wall, the only way for an enemy to reach you is through the Greymane Gate or via the coast.

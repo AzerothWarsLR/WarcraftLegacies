@@ -4,7 +4,6 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
-using MacroTools.FactionChoices;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
@@ -120,9 +119,6 @@ namespace MacroTools.FactionSystem
     /// <summary>The units this faction should start the game with.</summary>
     public List<unit> StartingUnits { get; protected init; } = new();
 
-    /// <summary>Where any player occupying this faction should have their camera set to on game start.</summary>
-    public Point? StartingCameraPosition { get; protected init; }
-
     /// <summary>Players with this faction will become this color.</summary>
     public playercolor PlayerColor { get; }
 
@@ -157,14 +153,6 @@ namespace MacroTools.FactionSystem
 
     /// <summary>Whether or not the <see cref="Faction"/> has been defeated.</summary>
     public ScoreStatus ScoreStatus { get; private set; } = ScoreStatus.Undefeated;
-
-    /// <summary>
-    /// Indicates how difficult it is to learn the basic mechanics of this <see cref="Faction"/>.
-    /// <para>This isn't about how difficult the Faction is to play optimally, but rather how difficult it is to
-    /// play at a very basic level. For instance, a Faction with a very complex starting quest would be very hard
-    /// even if it doesn't have to perform a lot of micro in fights.</para>
-    /// </summary>
-    public FactionLearningDifficulty LearningDifficulty { get; protected init; }
 
     public string ColoredName => $"{PrefixCol}{_name}|r";
 

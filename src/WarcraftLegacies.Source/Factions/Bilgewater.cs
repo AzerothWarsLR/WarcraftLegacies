@@ -2,7 +2,6 @@
 using MacroTools;
 using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
-using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.Powers;
@@ -28,7 +27,6 @@ namespace WarcraftLegacies.Source.Factions
       _artifactSetup = artifactSetup;
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_O01C_CONTROL_POINT_DEFENDER_GOBLIN;
-      LearningDifficulty = FactionLearningDifficulty.Advanced;
       IntroText = @"You are playing as the industrious |cff808080Bilgewater Cartel|r.
 
 You begin in Tanaris with a very small business venture. Expand onto Kalimdor to grow your trade empire.

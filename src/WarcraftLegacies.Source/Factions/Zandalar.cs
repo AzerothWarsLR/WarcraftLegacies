@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools;
 using MacroTools.Extensions;
-using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
@@ -28,7 +27,6 @@ namespace WarcraftLegacies.Source.Factions
       _artifactSetup = artifactSetup;
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_H0C1_CONTROL_POINT_DEFENDER_ZANDALAR;
-      LearningDifficulty = FactionLearningDifficulty.Basic;
       IntroText = @"You are playing as the mighty |cffe1946cZandalari Empire|r.
 
 You start off at the southern coast of Tanaris, seperated from your allies. Raise an army and deal with the rogue Trolls in Zul'Farrak.

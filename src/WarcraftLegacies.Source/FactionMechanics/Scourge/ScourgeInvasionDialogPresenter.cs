@@ -1,24 +1,23 @@
 ﻿using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.UserInterface;
-using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.GameLogic
+namespace WarcraftLegacies.Source.FactionMechanics.Scourge
 {
-  public sealed class ScourgeInvasionDialogPresenter : ChoiceDialogPresenter<Rectangle?>
+  public sealed class ScourgeInvasionDialogPresenter : ChoiceDialogPresenter<ScourgeInvasionChoice>
   {
-    public ScourgeInvasionDialogPresenter(params Choice<Rectangle?>[] invasionTargets) : base(invasionTargets,
+    public ScourgeInvasionDialogPresenter(params ScourgeInvasionChoice[] invasionTargets) : base(invasionTargets,
       "Pick invasion location")
     {
     }
 
-    protected override void OnChoicePicked(player pickingPlayer, Choice<Rectangle?> choice)
+    protected override void OnChoicePicked(player pickingPlayer, ScourgeInvasionChoice choice)
     {
       HasChoiceBeenPicked = true;
-      if (choice.Data == null)
+      if (choice.Location == null)
         return;
       
-      var invasionLocation = choice.Data;
+      var invasionLocation = choice.Location;
       foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.Northrend_Ambiance).EmptyToList()
                  .Where(x => x.OwningPlayer() == pickingPlayer))
       {
@@ -36,6 +35,6 @@ namespace WarcraftLegacies.Source.GameLogic
     }
 
     /// <inheritdoc />
-    protected override Choice<Rectangle?> GetDefaultChoice(player whichPlayer) => Choices.First();
+    protected override ScourgeInvasionChoice GetDefaultChoice(player whichPlayer) => Choices.First();
   }
 }
