@@ -19,7 +19,7 @@ namespace MacroTools.FactionChoices
     /// <inheritdoc />
     public string Name => $"{Faction.Name} {Difficulty.ToColoredText()}";
     
-    /// <summary>Where any player occupying this faction should have their camera set to on game start.</summary>
-    public required Point StartingCameraPosition { get; init; }
+    /// <summary>Where the player will start the game if they pick this faction.</summary>
+    public required Rectangle StartingArea { get; init; }
   }
 }

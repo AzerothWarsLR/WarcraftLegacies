@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup
         Faction = new Illidari(allLegendSetup,
           artifactSetup),
         Difficulty = FactionLearningDifficulty.Basic,
-        StartingCameraPosition = Regions.IllidanStartingPosition.Center
+        StartingArea = Regions.IllidanStartingPosition
       };
       var sunfury = new FactionChoice
       {
@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Setup
           allLegendSetup,
           artifactSetup),
         Difficulty = FactionLearningDifficulty.Advanced,
-        StartingCameraPosition = Regions.SunfuryStartingPosition.Center
+        StartingArea = Regions.SunfuryStartingPosition
       };
       new FactionChoiceDialogPresenter(illidari, sunfury).Run(Player(15));
 
@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Setup
           artifactSetup,
           allLegendSetup),
         Difficulty = FactionLearningDifficulty.Basic,
-        StartingCameraPosition = Regions.DalaStartPos.Center
+        StartingArea = Regions.DalaStartPos
       };
       var gilneas = new FactionChoice
       {
@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.Setup
           artifactSetup,
           allLegendSetup),
         Difficulty = FactionLearningDifficulty.Advanced,
-        StartingCameraPosition = Regions.GilneasStartPos.Center
+        StartingArea = Regions.GilneasStartPos
       };
       new FactionChoiceDialogPresenter(dalaran, gilneas).Run(Player(7));
 
@@ -49,7 +49,7 @@ namespace WarcraftLegacies.Source.Setup
           allLegendSetup,
           artifactSetup),
         Difficulty = FactionLearningDifficulty.Basic,
-        StartingCameraPosition = Regions.SentDraeSharedStartPos.Center
+        StartingArea = Regions.SentDraeSharedStartPos
       };
       var draenei = new FactionChoice
       {
@@ -57,7 +57,7 @@ namespace WarcraftLegacies.Source.Setup
           allLegendSetup,
           artifactSetup),
         Difficulty = FactionLearningDifficulty.Advanced,
-        StartingCameraPosition = Regions.SentDraeSharedStartPos.Center
+        StartingArea = Regions.SentDraeSharedStartPos
       };
       new FactionChoiceDialogPresenter(sentinels, draenei).Run(Player(18));
     }

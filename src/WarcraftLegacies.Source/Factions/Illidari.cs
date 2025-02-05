@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Factions
       UndefeatedResearch = UPGRADE_R02L_ILLIDAN_EXISTS;
       StartingGold = 200;
       FoodMaximum = 250;
-      StartingUnits = Regions.IllidanStartingPosition.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
+      Regions.IllidanStartingPosition.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       ControlPointDefenderUnitTypeId = UNIT_N0BB_CONTROL_POINT_DEFENDER_ILLIDARI_TOWER;
       IntroText = @"You are playing as the Betrayer, Illidan|r|r.
 

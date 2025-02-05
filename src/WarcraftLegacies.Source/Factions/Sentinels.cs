@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       CinematicMusic = "Comradeship";
       ControlPointDefenderUnitTypeId = UNIT_H03F_CONTROL_POINT_DEFENDER_SENTINELS;
-      StartingUnits = Regions.SentDraeSharedStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
+      Regions.SentDraeSharedStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       IntroText = @"You are playing as the ever-watchful |CFFBFFF80Sentinels|r.
 
 

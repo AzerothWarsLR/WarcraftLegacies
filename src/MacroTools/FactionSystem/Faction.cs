@@ -116,9 +116,6 @@ namespace MacroTools.FactionSystem
     /// <summary>How much gold the faction starts with.</summary>
     public int StartingGold { get; protected init; }
 
-    /// <summary>The units this faction should start the game with.</summary>
-    public List<unit> StartingUnits { get; protected init; } = new();
-
     /// <summary>Players with this faction will become this color.</summary>
     public playercolor PlayerColor { get; }
 

@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Factions
       _artifactSetup = artifactSetup;
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_U008_CONTROL_POINT_DEFENDER_DRAENEI;
-      StartingUnits = Regions.SentDraeSharedStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
+      Regions.SentDraeSharedStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       IntroText = @"You are playing as the exiled |cff000080Draenei|r.
 
 You begin on Azuremyst Island, amid the wreckage of your flight from the Burning Legion.

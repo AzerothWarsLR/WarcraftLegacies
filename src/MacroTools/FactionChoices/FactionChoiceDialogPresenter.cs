@@ -19,14 +19,14 @@ namespace MacroTools.FactionChoices
     {
       var pickedFaction = choice.Faction;
       HasChoiceBeenPicked = true;
-      
-      var startingUnits = pickedFaction.StartingUnits;
+
+      var startingUnits = CreateGroup().EnumUnitsInRect(choice.StartingArea).EmptyToList();
 
       foreach (var unit in startingUnits)
         unit.ReplaceWithFactionEquivalent(pickedFaction).Rescue(pickingPlayer);
       
       pickingPlayer
-        .RepositionCamera(choice.StartingCameraPosition)
+        .RepositionCamera(choice.StartingArea.Center)
         .SetFaction(pickedFaction);
 
       FactionManager.Register(pickedFaction);
