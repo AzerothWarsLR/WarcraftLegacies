@@ -12,6 +12,8 @@
     
     Worker,
     
-    Shipyard
+    Shipyard,
+    
+    Farm
   }
 }

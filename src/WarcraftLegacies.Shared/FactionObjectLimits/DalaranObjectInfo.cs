@@ -12,7 +12,8 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(UNIT_H065_REFUGE_DALARAN_T1, Unlimited, UnitCategory.TownHall);
       yield return new("h066", Unlimited); //Conclave
       yield return new("h068", Unlimited); //Observatory
-      yield return new("h063", Unlimited); //Granary
+      yield return new(UNIT_H063_ARCANE_WELL_DALARAN_FARM, Unlimited, UnitCategory.Farm);
+      yield return new(UNIT_H00I_WINDMILL_LORDAERON_OTHER, Unlimited, UnitCategory.Farm);
       yield return new("h044", Unlimited); //Altar of Knowledge
       yield return new("h069", Unlimited); //Barracks
       yield return new("h02N", Unlimited); //Trade Quarters
