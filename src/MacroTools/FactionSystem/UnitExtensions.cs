@@ -32,13 +32,14 @@ namespace MacroTools.FactionSystem
 
       if (whichUnit.GetTypeId() == newUnitType)
         return whichUnit;
-      
+
       var oldPosition = whichUnit.GetPosition();
       var oldOwner = whichUnit.OwningPlayer();
       var oldFacing = whichUnit.GetFacing();
       
       whichUnit.Remove();
       var newUnit = CreateUnit(oldOwner, newUnitType, oldPosition.X, oldPosition.Y, oldFacing);
+
       return newUnit;
     }
   }

@@ -20,11 +20,22 @@ namespace MacroTools.FactionChoices
       var pickedFaction = choice.Faction;
       HasChoiceBeenPicked = true;
 
-      var startingUnits = CreateGroup().EnumUnitsInRect(choice.StartingArea).EmptyToList();
+      var startingUnits = CreateGroup()
+        .EnumUnitsInRect(choice.StartingArea)
+        .EmptyToList()
+        .Where(x => x.GetTypeId() != FourCC("ngol"));
 
       foreach (var unit in startingUnits)
-        unit.ReplaceWithFactionEquivalent(pickedFaction).Rescue(pickingPlayer);
-      
+      {
+        var replacedUnit = unit
+          .ReplaceWithFactionEquivalent(pickedFaction)
+          .SetOwner(pickingPlayer);
+
+        //If the unit was replaced, put back its paused state during game intro.
+        if (replacedUnit != unit && GameTime.GetTurn() == 0) 
+          replacedUnit.PauseEx(true);
+      }
+
       pickingPlayer
         .RepositionCamera(choice.StartingArea.Center)
         .SetFaction(pickedFaction);
