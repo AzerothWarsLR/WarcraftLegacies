@@ -227,7 +227,7 @@ namespace MacroTools.FactionSystem
           SetPlayerTechResearched(player, _undefeatedResearch, 1);
       }
     }
-    // <summary>
+    /// <summary>
     /// Fired when the faction gains a GoldMine that was previously registered to another Faction.
     /// </summary>
     private readonly SharedGoldMineManager _sharedGoldMineManager;
