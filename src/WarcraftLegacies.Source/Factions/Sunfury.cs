@@ -28,7 +28,6 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       CinematicMusic = "BloodElfTheme";
       FoodMaximum = 250;
-      Regions.SunfuryStartingPosition.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       ControlPointDefenderUnitTypeId = UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS;
       IntroText = @"You are playing as the power-hungry |cffff0000Sunfury|r.
 
