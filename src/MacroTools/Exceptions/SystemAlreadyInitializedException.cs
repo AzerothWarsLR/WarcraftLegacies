@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MacroTools
+namespace MacroTools.Exceptions
 {
   /// <summary>
   /// The exception that is thrown when trying to initialize a system that has already been initialized.

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MacroTools
+namespace MacroTools.Exceptions
 {
   public sealed class SystemNotInitializedException : Exception
   {

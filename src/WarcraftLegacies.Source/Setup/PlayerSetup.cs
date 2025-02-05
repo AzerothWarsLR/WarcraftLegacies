@@ -1,7 +1,7 @@
 ﻿using System;
-using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.Systems;
 using WarcraftLegacies.Source.Factions;
 
 namespace WarcraftLegacies.Source.Setup

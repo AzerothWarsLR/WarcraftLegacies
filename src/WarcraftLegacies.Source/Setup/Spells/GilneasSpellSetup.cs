@@ -1,4 +1,4 @@
-﻿using MacroTools;
+﻿using MacroTools.Data;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 

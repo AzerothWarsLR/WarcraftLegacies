@@ -1,9 +1,10 @@
 ﻿using System;
 using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
+using MacroTools.Utils;
 using static War3Api.Common;
 
-namespace MacroTools
+namespace MacroTools.Systems
 {
   /// <summary>
   /// Performs basic checks during runtime to ensure that the map is configured correctly.

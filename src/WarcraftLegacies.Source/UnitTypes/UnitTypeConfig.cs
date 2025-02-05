@@ -1,4 +1,4 @@
-﻿using MacroTools;
+﻿using MacroTools.Systems;
 using WarcraftLegacies.Shared;
 
 namespace WarcraftLegacies.Source.UnitTypes

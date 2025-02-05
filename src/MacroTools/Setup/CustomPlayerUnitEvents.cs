@@ -3,7 +3,7 @@ using MacroTools.FactionSystem;
 using WCSharp.Events;
 using static War3Api.Common;
 
-namespace MacroTools
+namespace MacroTools.Setup
 {
   /// <summary>
   /// Provides a set of custom player unit events for the <see cref="PlayerUnitEvents"/> system.

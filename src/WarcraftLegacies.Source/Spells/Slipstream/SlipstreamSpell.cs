@@ -1,5 +1,5 @@
-﻿using MacroTools;
-using MacroTools.ChannelSystem;
+﻿using MacroTools.ChannelSystem;
+using MacroTools.Data;
 using MacroTools.Extensions;
 using MacroTools.Instances;
 using MacroTools.SpellSystem;

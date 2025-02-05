@@ -1,5 +1,4 @@
-﻿using MacroTools;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.PassiveAbilities;
 using WarcraftLegacies.Source.Quests.Cthun;
 using MacroTools.PassiveAbilitySystem;
@@ -16,6 +15,8 @@ using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.MassiveAttack;
 using System.Collections.Generic;
+using MacroTools.Data;
+using MacroTools.Systems;
 
 namespace WarcraftLegacies.Source.Factions
 {

@@ -1,9 +1,9 @@
-﻿using MacroTools;
-using MacroTools.PassiveAbilities;
+﻿using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using System.Collections.Generic;
+using MacroTools.Data;
 using WarcraftLegacies.Source.FactionMechanics.Scourge;
 using WarcraftLegacies.Source.PassiveAbilities;
 using WarcraftLegacies.Source.Spells;

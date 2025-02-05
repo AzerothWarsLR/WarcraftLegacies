@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 
-namespace MacroTools
+namespace MacroTools.Systems
 {
   /// <summary>
   ///   Once initialized, the system contains a reference to all preplaced units on the map.

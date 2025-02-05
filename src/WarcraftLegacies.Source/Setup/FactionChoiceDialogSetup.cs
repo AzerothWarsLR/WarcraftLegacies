@@ -1,5 +1,5 @@
-﻿using MacroTools;
-using MacroTools.FactionChoices;
+﻿using MacroTools.FactionChoices;
+using MacroTools.Systems;
 using WarcraftLegacies.Source.Factions;
 
 namespace WarcraftLegacies.Source.Setup

@@ -2,7 +2,7 @@
 using MacroTools.Extensions;
 using static War3Api.Common;
 
-namespace MacroTools
+namespace MacroTools.Systems
 {
   /// <summary>Counts the elapsed game time, displayed in number of turns passed.</summary>
   public static class GameTime

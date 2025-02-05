@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MacroTools
+namespace MacroTools.Utils
 {
   /// <summary>
   /// Responsible for logging formatted warnings and errors.

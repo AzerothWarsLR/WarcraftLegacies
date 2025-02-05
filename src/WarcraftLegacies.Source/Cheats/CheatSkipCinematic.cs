@@ -1,7 +1,7 @@
 ﻿using System;
-using MacroTools;
 using MacroTools.Cheats;
 using MacroTools.Extensions;
+using MacroTools.Systems;
 using WarcraftLegacies.Source.GameLogic;
 
 namespace WarcraftLegacies.Source.Cheats

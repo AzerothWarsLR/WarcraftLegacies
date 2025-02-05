@@ -4,7 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.Shared;
 using static War3Api.Common;
 
-namespace MacroTools
+namespace MacroTools.Systems
 {
   /// <summary>
   /// Contains extra Warcraft Legacies-specific information about Warcraft 3 unit types.

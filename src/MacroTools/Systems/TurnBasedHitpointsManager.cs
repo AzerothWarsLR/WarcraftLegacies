@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using MacroTools.Extensions;
 using static War3Api.Common;
 
-namespace MacroTools
+namespace MacroTools.Systems
 {
   /// <summary>A tool for giving units additional hit points per turn.</summary>
   public static class TurnBasedHitpointsManager

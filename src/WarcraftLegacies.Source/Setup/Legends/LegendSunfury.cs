@@ -1,6 +1,5 @@
-﻿using MacroTools;
-using MacroTools.LegendSystem;
-
+﻿using MacroTools.LegendSystem;
+using MacroTools.Systems;
 
 
 namespace WarcraftLegacies.Source.Setup.Legends

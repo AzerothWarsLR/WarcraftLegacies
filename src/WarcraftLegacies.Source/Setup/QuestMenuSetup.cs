@@ -1,6 +1,4 @@
-﻿using static War3Api.Common;
-
-namespace MacroTools
+﻿namespace WarcraftLegacies.Source.Setup
 {
   /// <summary>
   /// Changes the size of the vanilla Quest menu to fit more text in it.

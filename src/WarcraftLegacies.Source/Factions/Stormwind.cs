@@ -1,6 +1,6 @@
-﻿using MacroTools;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using System.Collections.Generic;
+using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Stormwind;

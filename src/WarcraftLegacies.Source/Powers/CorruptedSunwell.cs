@@ -1,6 +1,6 @@
-﻿using MacroTools;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.Setup;
 using WCSharp.Events;
 
 namespace WarcraftLegacies.Source.Powers

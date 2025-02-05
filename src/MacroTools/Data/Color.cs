@@ -1,4 +1,4 @@
-﻿namespace MacroTools
+﻿namespace MacroTools.Data
 {
   /// <summary>
   /// Represents an RGB color.
