@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
 
     public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
-      yield return new("h01R", Unlimited); //Town Hall
+      yield return new(UNIT_H01R_TOWN_HALL_GILNEAS_T1, Unlimited, UnitCategory.TownHall);
       yield return new("h023", Unlimited); //Keep
       yield return new("h02C", Unlimited); //Castle
       yield return new("h02F", Unlimited); //Farm
@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("h03Q", Unlimited); //Garrison
       yield return new("h052", Unlimited); //Improved Guard Tower
       yield return new("h04N", Unlimited); //Improved Cannon Tower
-      yield return new("hpea", Unlimited); //Peasant
+      yield return new(UNIT_HPEA_PEASANT_LORDAERON_STORMWIND_WORKER, Unlimited, UnitCategory.Worker);
       yield return new("n06K", Unlimited); //Druid of the Scythe
       yield return new("h04M", Unlimited); //Cleric
       yield return new("h04E", Unlimited); //Protector

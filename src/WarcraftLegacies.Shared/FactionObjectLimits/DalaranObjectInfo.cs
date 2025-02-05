@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
 
     public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
-      yield return new("h065", Unlimited); //Refuge
+      yield return new(UNIT_H065_REFUGE_DALARAN_T1, Unlimited, UnitCategory.TownHall);
       yield return new("h066", Unlimited); //Conclave
       yield return new("h068", Unlimited); //Observatory
       yield return new("h063", Unlimited); //Granary
@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("n004", Unlimited); //Dalaran Tower (Improved)
       yield return new("h067", Unlimited); //Laboratory
       yield return new("n0AO", 2); //Way Gate
-      yield return new("h022", Unlimited); //Shaper
+      yield return new(UNIT_H022_FARMER_DALARAN_WORKER, Unlimited, UnitCategory.Worker);
       yield return new("nhym", Unlimited); //Hydromancer
       yield return new("h032", Unlimited); //Battlemage
       yield return new("h02D", Unlimited); //Geomancer

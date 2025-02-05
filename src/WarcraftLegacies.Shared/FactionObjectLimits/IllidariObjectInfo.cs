@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
 
     public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
-      yield return new("nntt", Unlimited); //Pillar of Waves
+      yield return new(UNIT_NNTT_BETRAYER_S_RESERVOIR_ILLIDARI_T1, Unlimited, UnitCategory.TownHall);
       yield return new("n04T", Unlimited); //Monument of Currents
       yield return new("n055", Unlimited); //Temple of Tides
       yield return new("nnad", Unlimited); //Altar of the Depths
@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("nmrb", Unlimited); //Deep Sea Vault
       yield return new("n08W", Unlimited); //Deep Sea Vault
       yield return new(UNIT_E020_ANCIENT_SHIPYARD_NAGA_SHIPYARD, Unlimited, UnitCategory.Shipyard);
-      yield return new("nmpe", Unlimited); //Murgul Slave
+      yield return new(UNIT_NMPE_MUR_GUL_SLAVE_ILLIDARI_NZOTH_WORKER, Unlimited, UnitCategory.Worker);
       yield return new("nmyr", Unlimited); //Myrmidon
       yield return new("nsnp", Unlimited); //Snap Dragon
       yield return new("nnsw", Unlimited); //Siren

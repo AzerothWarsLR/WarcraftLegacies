@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
 
     public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
-      yield return new("h02P", Unlimited); //t1
+      yield return new(UNIT_H02P_HOLDING_SUNFURY_T1, Unlimited, UnitCategory.TownHall);
       yield return new("h0C4", Unlimited); //t2
       yield return new("h0C5", Unlimited); //t3
       yield return new("h0C7", 3); //house
@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("n0E1", Unlimited); //improved skyfury tower
       yield return new("N0DZ", 1); //Fountain
       yield return new(UNIT_TP04_SHIPYARD_SUNFURY_SHIPYARD, Unlimited, UnitCategory.Shipyard);
-      yield return new("n0E2", Unlimited); //worker
+      yield return new(UNIT_N0E2_TECHNICIAN_SUNFURY_WORKER, Unlimited, UnitCategory.Worker);
       yield return new("n09S", Unlimited); //Elven Warrior
       yield return new("h0CF", Unlimited); //Elven Ranger
       yield return new("u02W", 2); //Energy Wagon
