@@ -16,12 +16,12 @@ namespace MacroTools.Cheats
     public static bool AreCheatsActive { get; private set; }
 
     /// <summary>
-    /// Returns true if <see cref="GetTriggerPlayer"/> has cheats enabled.
+    /// Returns true if <see cref="whichPlayer"/> has cheats enabled.
     /// </summary>
-    public static bool CheatCondition()
+    public static bool CheatCondition(player whichPlayer)
     {
-      var triggerPlayerName = GetPlayerName(GetTriggerPlayer());
-      return triggerPlayerName is "YakaryBovine#6863" or "Lordsebas#11619" or "Technopig#2179" or "Vampirika#2506" || AreCheatsActive;
+      var name = GetPlayerName(whichPlayer);
+      return name is "YakaryBovine#6863" or "Lordsebas#11619" or "Technopig#2179" or "Vampirika#2506" || AreCheatsActive;
     }
 
     private static void CreateInfoQuests(CommandManager commandManager)

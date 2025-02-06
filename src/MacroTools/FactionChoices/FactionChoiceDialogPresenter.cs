@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using MacroTools.Cheats;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Systems;
@@ -32,9 +33,8 @@ namespace MacroTools.FactionChoices
           .ReplaceWithFactionEquivalent(pickedFaction)
           .SetOwner(pickingPlayer);
 
-        //If the unit was replaced, put back its paused state during game intro.
-        if (replacedUnit != unit && GameTime.GetTurn() == 0) 
-          replacedUnit.PauseEx(true);
+        if (replacedUnit != unit && CinematicMode.State == CinematicState.Active) 
+          CinematicMode.AddPausedUnit(replacedUnit);
       }
 
       pickingPlayer
@@ -50,5 +50,9 @@ namespace MacroTools.FactionChoices
 
     /// <inheritdoc />
     protected override FactionChoice GetDefaultChoice(player whichPlayer) => Choices.First();
+
+    /// <inheritdoc />
+    protected override bool IsChoiceActive(player whichPlayer, FactionChoice choice) =>
+      !choice.RequiresCheats || TestMode.CheatCondition(whichPlayer);
   }
 }

@@ -57,7 +57,8 @@ namespace WarcraftLegacies.Source.Setup
           allLegendSetup,
           artifactSetup),
         Difficulty = FactionLearningDifficulty.Advanced,
-        StartingArea = Regions.SentDraeSharedStartPos
+        StartingArea = Regions.SentDraeSharedStartPos,
+        RequiresCheats = true
       };
       new FactionChoiceDialogPresenter(sentinels, draenei).Run(Player(18));
     }

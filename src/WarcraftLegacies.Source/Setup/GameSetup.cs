@@ -37,19 +37,20 @@ namespace WarcraftLegacies.Source.Setup
       ControlPointSetup.Setup();
       InstanceSetup.Setup(preplacedUnitSystem);
       NeutralHostileSetup.Setup();
+      var commandManager = new CommandManager();
+      CommandSetup.Setup(commandManager);
+      CheatSetup.Setup(commandManager, artifactSetup);
       TeamSetup.Setup();
       new PlayerSetup(preplacedUnitSystem, allLegendSetup, artifactSetup).Setup();
       FactionChoiceDialogSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       SharedQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       SpellsSetup.Setup();
-      var commandManager = new CommandManager();
-      CommandSetup.Setup(commandManager);
       FactionMultiboard.Setup();
       BookSetup.Setup();
       HintConfig.Setup();
       QuestMenuSetup.Setup();
       GameTime.Start();
-      CheatSetup.Setup(commandManager, artifactSetup);
+      
       MapFlagSetup.Setup();
       InfoQuests.Setup();
       DestructibleSetup.Setup(preplacedUnitSystem);

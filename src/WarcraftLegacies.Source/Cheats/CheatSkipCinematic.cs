@@ -2,7 +2,6 @@
 using MacroTools.Cheats;
 using MacroTools.Extensions;
 using MacroTools.Systems;
-using WarcraftLegacies.Source.GameLogic;
 using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.Cheats
@@ -19,7 +18,7 @@ namespace WarcraftLegacies.Source.Cheats
 
     private static void Actions()
     {
-      if (!TestMode.CheatCondition()) 
+      if (!TestMode.CheatCondition(GetTriggerPlayer())) 
         return;
 
       try

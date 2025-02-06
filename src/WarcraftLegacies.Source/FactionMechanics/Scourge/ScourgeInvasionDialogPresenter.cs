@@ -37,5 +37,8 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
 
     /// <inheritdoc />
     protected override ScourgeInvasionChoice GetDefaultChoice(player whichPlayer) => Choices.First();
+
+    /// <inheritdoc />
+    protected override bool IsChoiceActive(player whichPlayer, ScourgeInvasionChoice choice) => true;
   }
 }

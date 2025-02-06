@@ -3,8 +3,9 @@ using MacroTools.Extensions;
 using MacroTools.Utils;
 using WCSharp.Shared;
 using WCSharp.Shared.Data;
+using static War3Api.Common;
 
-namespace WarcraftLegacies.Source.GameLogic
+namespace MacroTools.Systems
 {
   /// <summary>
   /// Used to engage cinematic mode, which prevents players from taking actions and manipulates sound
@@ -16,6 +17,8 @@ namespace WarcraftLegacies.Source.GameLogic
     private static timer? _musicTimer;
     private static CinematicState _state = CinematicState.Inactive;
     private static List<unit>? _pausedUnits = new();
+
+    public static CinematicState State => _state;
     
     /// <summary>
     /// Initiates cinematic mode.
@@ -50,6 +53,19 @@ namespace WarcraftLegacies.Source.GameLogic
       TimerEnd();
     }
 
+    /// <summary>
+    /// Adds an existing unit to the list of paused units. Useful if a unit is added to the game during the initial
+    /// cinematic window.
+    /// </summary>
+    public static void AddPausedUnit(unit whichUnit)
+    {
+      if (_state != CinematicState.Active)
+        return;
+
+      _pausedUnits?.Add(whichUnit);
+      whichUnit.PauseEx(true);
+    }
+    
     private static void TimerEnd()
     {
       if (_state != CinematicState.Active)
@@ -71,7 +87,6 @@ namespace WarcraftLegacies.Source.GameLogic
         foreach (var unit in _pausedUnits)
           unit.PauseEx(false);
         _pausedUnits.Clear();
-        _pausedUnits = null;
       }
     }
 
@@ -80,5 +95,12 @@ namespace WarcraftLegacies.Source.GameLogic
       foreach (var player in Util.EnumeratePlayers())
         player.PlayMusicThematic(player.GetFaction().CinematicMusic);
     }
+  }
+  
+  public enum CinematicState
+  {
+    Inactive,
+    Active,
+    Finished
   }
 }
