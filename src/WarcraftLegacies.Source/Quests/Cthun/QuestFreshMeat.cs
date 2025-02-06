@@ -15,11 +15,10 @@ namespace WarcraftLegacies.Source.Quests.Cthun
 
     /// <inheritdoc/>
     public override string RewardFlavour =>
-      "My Qiraji have ripped, torn, and consumed scores of fallen prey, satiating their hunger and lifting a bloody haze from C'thun's mind.";
+      "My Qiraji have ripped, torn, and consumed scores of fallen prey, satiating their hunger and lifting a bloody haze from my mind.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription =>
-      $"C'thun gains {SkillPoints} skill points";
+    protected override string RewardDescription => $"C'thun gains {SkillPoints} skill points";
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestFreshMeat"/> class.

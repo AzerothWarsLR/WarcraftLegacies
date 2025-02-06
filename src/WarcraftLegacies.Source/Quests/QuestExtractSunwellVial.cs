@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests
       _sunwell = sunwell;
       _sunwellVial = sunwellVial;
       AddObjective(new ObjectiveCastSpellFromUnit(ABILITY_A0OC_EXTRACT_VIAL_ALL, sunwell.Unit!));
-      AddObjective(new ObjectiveLegendHasArtifact(sunwell, sunwellVial));
+      AddObjective(new ObjectiveLegendHasArtifact(sunwell, sunwellVial, true));
       IsFactionQuest = false;
     }
 
