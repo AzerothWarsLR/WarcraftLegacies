@@ -60,7 +60,6 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare for a 
 
     private void RegisterObjectLevels()
     {
-      ModAbilityAvailability(ABILITY_A0MZ_DEMONIC_CONSTRUCTION_TEAL_DEMOLISHERS, -1);
       ModAbilityAvailability(ABILITY_A0GM_FOR_THE_HORDE_PINK_GREY_MAIN_BUILDINGS, -1);
     }
 
