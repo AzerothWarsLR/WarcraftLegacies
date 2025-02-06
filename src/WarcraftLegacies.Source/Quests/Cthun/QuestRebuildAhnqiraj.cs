@@ -23,6 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
       @"ReplaceableTextures\CommandButtons\BTNCthunHatchery.blp")
     {
       _gateAhnQiraj = gateAhnQiraj;
+      _gateAhnQiraj.SetInvulnerable(true);
       AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in outer Ahn'Qiraj", 3));
     }
 
@@ -31,6 +32,9 @@ namespace WarcraftLegacies.Source.Quests.Cthun
     {
       if (completingFaction.Player == null)
         return;
+
+      _gateAhnQiraj
+        .SetInvulnerable(false);
       SetUnitOwner(_gateAhnQiraj, completingFaction.Player, true);
     }
 
