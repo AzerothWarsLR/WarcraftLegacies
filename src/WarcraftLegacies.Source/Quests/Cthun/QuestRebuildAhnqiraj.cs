@@ -1,4 +1,5 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
@@ -22,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
       @"ReplaceableTextures\CommandButtons\BTNCthunHatchery.blp")
     {
       _gateAhnQiraj = gateAhnQiraj;
-      AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in outer Ahn'Qiraj", 5));
+      AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in outer Ahn'Qiraj", 3));
     }
 
     /// <inheritdoc/>
