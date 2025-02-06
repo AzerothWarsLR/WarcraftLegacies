@@ -39,6 +39,14 @@ namespace MacroTools.UserInterface
     {
       DialogSetMessage(_pickDialog, _dialogText);
 
+      var activeChoices = Choices.Where(x => IsChoiceActive(whichPlayer, x));
+
+      if (activeChoices.Count() == 1)
+      {
+        OnChoicePicked(whichPlayer, GetDefaultChoice(whichPlayer));
+        return;
+      }
+
       var choicePicksByButton = new Dictionary<button, TChoice>();
       foreach (var choice in Choices.Where(x => IsChoiceActive(whichPlayer, x)))
       {

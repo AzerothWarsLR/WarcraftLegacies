@@ -24,6 +24,7 @@ namespace WarcraftLegacies.Source.Setup
     /// </summary>
     public static void Setup()
     {
+      UnitTypeConfig.Setup();
       SaveManager.Initialize();
       DisplayIntroText.Setup(25);
       CinematicMode.Setup(59);
@@ -68,7 +69,6 @@ namespace WarcraftLegacies.Source.Setup
       gameModeManager.Setup();
       RockSetup.Setup();
       TurnResearchSetup.Setup();
-      UnitTypeConfig.Setup();
       ShipyardBanZonesSetup.Setup();
       BlockerSetup.Setup();
       NeutralVictimAndPassiveSetup.Setup();
