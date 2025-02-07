@@ -20,8 +20,6 @@ namespace MacroTools.Cheats
     /// </summary>
     public static bool CheatCondition(player whichPlayer)
     {
-      return false;
-      
       var name = GetPlayerName(whichPlayer);
       return name is "YakaryBovine#6863" or "Lordsebas#11619" or "Technopig#2179" or "Vampirika#2506" || AreCheatsActive;
     }
