@@ -252,7 +252,6 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public virtual void OnNotPicked()
     {
-      RemoveGoldMines();
     }
 
     /// <summary>
@@ -463,6 +462,25 @@ namespace MacroTools.FactionSystem
     public List<QuestData> GetAllQuests() => _questsByName.Values.ToList();
 
     /// <summary>
+    /// Removes a number of gold mines both from the game and from this unit's list of mines.
+    /// </summary>
+    internal void RemoveGoldMines(IEnumerable<unit> goldMinesToRemove)
+    {
+      foreach (var goldMine in goldMinesToRemove)
+      {
+        if (!_goldMines.Contains(goldMine))
+          throw new InvalidOperationException($"Tried to remove Gold Mine from {Name} that they don't own.");
+
+        goldMine.Remove();
+      }
+
+      foreach (var goldMine in goldMinesToRemove)
+      {
+        _goldMines.Remove(goldMine);
+      }
+    }
+    
+    /// <summary>
     /// Takes the provided object information and registers object limits and categories to the <see cref="Faction"/>/
     /// </summary>
     protected void ProcessObjectInfo(IEnumerable<ObjectInfo> objectInfos)
@@ -584,7 +602,7 @@ namespace MacroTools.FactionSystem
       return essentialLegends;
     }
 
-    /// <summary>Removes all gold mines assigned to the faction</summary>
+    /// <summary>Removes all gold mines assigned to the faction.</summary>
     private void RemoveGoldMines()
     {
       foreach (var unit in GoldMines) 

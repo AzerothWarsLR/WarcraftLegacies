@@ -20,9 +20,22 @@ namespace MacroTools.FactionChoices
 
     protected override void OnChoicePicked(player pickingPlayer, FactionChoice choice)
     {
-      var pickedFaction = choice.Faction;
       HasChoiceBeenPicked = true;
 
+      var pickedFaction = choice.Faction;
+      ReplaceStartingUnitsWithFactionEquivalents(pickingPlayer, choice, pickedFaction);
+
+      pickingPlayer
+        .RepositionCamera(choice.StartingArea.Center)
+        .SetFaction(pickedFaction);
+
+      FactionManager.Register(pickedFaction);
+      CleanupUnpickedFactions(choice);
+    }
+
+    private static void ReplaceStartingUnitsWithFactionEquivalents(player pickingPlayer, FactionChoice choice,
+      Faction pickedFaction)
+    {
       var startingUnits = GlobalGroup
         .EnumUnitsInRect(choice.StartingArea)
         .Where(x => x.GetTypeId() != FourCC("ngol"));
@@ -36,16 +49,17 @@ namespace MacroTools.FactionChoices
         if (replacedUnit != unit && CinematicMode.State == CinematicState.Active) 
           CinematicMode.AddPausedUnit(replacedUnit);
       }
-
-      pickingPlayer
-        .RepositionCamera(choice.StartingArea.Center)
-        .SetFaction(pickedFaction);
-
-      FactionManager.Register(pickedFaction);
-
-      var unpickedFactions = Choices.Where(x => x != choice).ToList();
+    }
+    
+    private void CleanupUnpickedFactions(FactionChoice choice)
+    {
+      var unpickedFactions = Choices.Where(x => x != choice).Select(x => x.Faction).ToList();
       foreach (var unpickedFaction in unpickedFactions)
-        unpickedFaction.Faction.OnNotPicked();
+      {
+        var goldMinesToRemove = unpickedFaction.GoldMines.Except(choice.Faction.GoldMines);
+        unpickedFaction.RemoveGoldMines(goldMinesToRemove);
+        unpickedFaction.OnNotPicked();
+      }
     }
 
     /// <inheritdoc />
