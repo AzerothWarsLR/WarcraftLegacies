@@ -57,8 +57,8 @@ namespace MacroTools.FactionChoices
       foreach (var unpickedFaction in unpickedFactions)
       {
         var goldMinesToRemove = unpickedFaction.GoldMines.Except(choice.Faction.GoldMines);
-        unpickedFaction.RemoveGoldMines(goldMinesToRemove);
         unpickedFaction.OnNotPicked();
+        unpickedFaction.RemoveGoldMines(goldMinesToRemove);
       }
     }
 

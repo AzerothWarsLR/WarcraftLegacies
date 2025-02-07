@@ -473,11 +473,6 @@ namespace MacroTools.FactionSystem
 
         goldMine.Remove();
       }
-
-      foreach (var goldMine in goldMinesToRemove)
-      {
-        _goldMines.Remove(goldMine);
-      }
     }
     
     /// <summary>
