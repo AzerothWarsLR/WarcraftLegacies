@@ -53,7 +53,6 @@ Gather your forces and strike before the Old Gods can organize their efforts.";
       };
       RegisterFactionDependentInitializer<Sentinels>(RegisterSentinelsDialogue);
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeQuests);
-      RegisterFactionDependentInitializer<Sentinels, Frostwolf, Warsong>(RegisterSentinelsFrostwolfWarsongDialogue);
       ProcessObjectInfo(DruidsObjectInfo.GetAllObjectLimits());
     }
 
@@ -155,10 +154,7 @@ Gather your forces and strike before the Old Gods can organize their efforts.";
         ), 
         new Faction[] { this, sentinels },
         new[] { new ObjectiveLegendMeetsLegend(_allLegendSetup.Druids.Malfurion, _allLegendSetup.Sentinels.Tyrande) }));
-    }
-    
-    private void RegisterSentinelsFrostwolfWarsongDialogue(Sentinels sentinels, Frostwolf frostwolf, Warsong warsong)
-    {
+      
       TriggeredDialogueManager.Add(
         new TriggeredDialogue(new Dialogue(
           @"Sound\Dialogue\OrcCampaign\Orc05\O05Cenarius01",
@@ -166,9 +162,7 @@ Gather your forces and strike before the Old Gods can organize their efforts.";
           "Cenarius"), new Faction[]
         {
           sentinels,
-          this,
-          frostwolf,
-          warsong
+          this
         }, new[]
         {
           new ObjectiveControlLegend(_allLegendSetup.Druids.Cenarius, false)
@@ -180,7 +174,7 @@ Gather your forces and strike before the Old Gods can organize their efforts.";
           }
         }));
     }
-    
+
     private void RegisterScourgeQuests(Scourge scourge)
     {
       AddQuest(new QuestAndrassil(_allLegendSetup.Druids.Vordrassil, _allLegendSetup.Druids.Ursoc, scourge));
