@@ -70,7 +70,7 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       Regions.GilneasUnlock4.CleanupNeutralPassiveUnits();
       Regions.GilneasUnlock5.CleanupNeutralPassiveUnits();
       Regions.GilneasUnlock6.CleanupNeutralPassiveUnits();
-      Regions.DalaStartPos.CleanupNeutralPassiveUnits();
+      Regions.GilneasStartPos.CleanupNeutralPassiveUnits();
       base.OnNotPicked();
     }
     
