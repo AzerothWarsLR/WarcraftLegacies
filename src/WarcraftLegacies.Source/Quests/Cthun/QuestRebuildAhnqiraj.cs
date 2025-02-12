@@ -24,7 +24,6 @@ namespace WarcraftLegacies.Source.Quests.Cthun
       @"ReplaceableTextures\CommandButtons\BTNCthunHatchery.blp")
     {
       _gateAhnQiraj = gateAhnQiraj;
-      _gateAhnQiraj.SetInvulnerable(true);
       AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in outer Ahn'Qiraj", 3));
       AddObjective(new ObjectiveExpire(660, Title));
     }
@@ -54,5 +53,8 @@ namespace WarcraftLegacies.Source.Quests.Cthun
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Gain control of the gate of Ahn'Qiraj";
+
+    /// <inheritdoc/>
+    protected override void OnAdd(Faction whichFaction) => _gateAhnQiraj.SetInvulnerable(true);
   }
 }
