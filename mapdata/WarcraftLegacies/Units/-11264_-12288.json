@@ -66,28 +66,23 @@
     "TargetAcquisition": -2,
     "HeroLevel": 1,
     "InventoryData": [],
-    "AbilityData": [
-      {
-        "AbilityId": 845704769,
-        "IsAutocastActive": true
-      }
-    ],
+    "AbilityData": [],
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "TypeId": 1752458350,
+    "TypeId": 1920230510,
     "Position": {
-      "X": -11324.19,
-      "Y": -12715.645
+      "X": -11381.454,
+      "Y": -12662.635
     },
-    "Rotation": 4.402418613433838,
+    "Rotation": 4.519704341888428,
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-    "SkinId": 1752458350,
+    "SkinId": 1920230510,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 1719
+    "CreationNumber": 801
   }
 ]

@@ -1,6 +1,6 @@
 {
   "OldId": 930300737,
-  "NewId": 1213018177,
+  "NewId": 1311846465,
   "Unk": [
     0
   ],
@@ -9,25 +9,31 @@
       "Level": 1,
       "Id": 1852072801,
       "Type": 2,
-      "Value": 30
+      "Value": 20
     },
     {
       "Level": 2,
       "Id": 1852072801,
       "Type": 2,
-      "Value": 30
+      "Value": 20
     },
     {
       "Level": 3,
       "Id": 1852072801,
       "Type": 2,
-      "Value": 30
+      "Value": 20
     },
     {
       "Level": 4,
       "Id": 1852072801,
       "Type": 2,
-      "Value": 30
+      "Value": 20
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845574991,
+      "Value": 3
     },
     {
       "Level": 3,
@@ -49,19 +55,25 @@
       "Level": 1,
       "Id": 828797775,
       "Type": 3,
-      "Value": "osw3"
+      "Value": "o005"
     },
     {
       "Level": 2,
       "Id": 828797775,
       "Type": 3,
-      "Value": "osw3"
+      "Value": "o005"
     },
     {
-      "Level": 2,
-      "Pointer": 2,
-      "Id": 845574991,
-      "Value": 3
+      "Level": 3,
+      "Id": 828797775,
+      "Type": 3,
+      "Value": "o005"
+    },
+    {
+      "Level": 4,
+      "Id": 828797775,
+      "Type": 3,
+      "Value": "o005"
     }
   ]
 }
