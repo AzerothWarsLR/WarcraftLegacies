@@ -37,8 +37,6 @@ namespace MacroTools.Spells
       var units = GetUnitsInRadius(center, Radius, CastFilter);
 
       var filteredUnits = units.Where(u => GetRandomReal(0, 1) <= Chance).ToList();
-      Console.WriteLine($"Total units in radius: {units.Count()}");
-      Console.WriteLine($"Units affected by chance: {filteredUnits.Count()}");
       if (DummyCasterType == DummyCasterType.Global)
       {
         DummyCasterManager.GetGlobalDummyCaster().CastOnUnitsInCircle(caster, DummyAbilityId, DummyAbilityOrderId, GetAbilityLevel(caster),
@@ -61,7 +59,7 @@ namespace MacroTools.Spells
       while ((u = FirstOfGroup(group)) != null)
       {
         GroupRemoveUnit(group, u);
-        if (castFilter(null, u)) // Adjusted to match the expected signature
+        if (castFilter(null, u))
         {
           units.Add(u);
         }
