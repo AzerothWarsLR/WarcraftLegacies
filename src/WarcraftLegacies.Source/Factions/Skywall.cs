@@ -125,6 +125,16 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
       };
       SpellSystem.Register(stormSurge);
 
+      var massEnsnare = new MassAnySpell(ABILITY_A01N_MASS_ENSNARE_SKYWALL)
+      {
+        DummyAbilityId = ABILITY_A01V_MASS_ENSNARE_SKYWALL_DUMMY,
+        DummyAbilityOrderId = OrderId("ensnare"),
+        Radius = 150,
+        CastFilter = CastFilters.IsTargetEnemyAndAlive,
+        TargetType = SpellTargetType.Point
+      };
+      SpellSystem.Register(massEnsnare);
+
     }
   }
 }
