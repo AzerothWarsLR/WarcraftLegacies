@@ -130,6 +130,7 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
         DummyAbilityId = ABILITY_A01V_MASS_ENSNARE_SKYWALL_DUMMY,
         DummyAbilityOrderId = OrderId("ensnare"),
         Radius = 150,
+        Chance = 0.5f,
         CastFilter = CastFilters.IsTargetEnemyAndAlive,
         TargetType = SpellTargetType.Point
       };
