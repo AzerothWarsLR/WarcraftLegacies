@@ -13,7 +13,7 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNMassFrostArmor.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMassEnsnare.blp"
     },
     {
       "Id": 2037408353,
@@ -106,7 +106,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Causes enemy air units in a target area to be bound to the ground with a 50% chance per unit for \u003CA0F3,Dur1\u003E seconds. Air units that are successfully ensnared can be attacked as though they were land units."
+      "Value": "Each enemy air unit in a target area has a 50% chance to be bound to the ground for \u003CA0F3,Dur1\u003E seconds. Air units that are successfully ensnared can be attacked as though they were land units."
     },
     {
       "Level": 2,
