@@ -4,7 +4,6 @@ using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 using System.Linq;
-using System;
 
 namespace MacroTools.Spells
 {
