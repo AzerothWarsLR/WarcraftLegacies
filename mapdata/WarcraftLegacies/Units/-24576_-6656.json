@@ -12,8 +12,35 @@
     "WaygateDestinationRegionId": -1,
     "TypeId": 1668440421,
     "Position": {
-      "X": -24631.094,
-      "Y": -7176.677
+      "X": -24841.438,
+      "Y": -6869.653
+    },
+    "Rotation": 5.061454772949219,
+    "Scale": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
+    },
+    "SkinId": 1668440421,
+    "MapItemTableId": -1,
+    "ItemTableSets": [],
+    "CreationNumber": 1462
+  },
+  {
+    "Flags": 2,
+    "OwnerId": 24,
+    "Hp": -1,
+    "Mp": -1,
+    "TargetAcquisition": -2,
+    "HeroLevel": 1,
+    "InventoryData": [],
+    "AbilityData": [],
+    "CustomPlayerColorId": -1,
+    "WaygateDestinationRegionId": -1,
+    "TypeId": 1668440421,
+    "Position": {
+      "X": -24629.602,
+      "Y": -6777.879
     },
     "Rotation": 5.061454772949219,
     "Scale": {
@@ -39,8 +66,8 @@
     "WaygateDestinationRegionId": -1,
     "TypeId": 1835561839,
     "Position": {
-      "X": -24728.79,
-      "Y": -7225.8145
+      "X": -24727.297,
+      "Y": -6827.0166
     },
     "Rotation": 5.061454772949219,
     "Scale": {
@@ -66,8 +93,8 @@
     "WaygateDestinationRegionId": -1,
     "TypeId": 1852142437,
     "Position": {
-      "X": -24587.65,
-      "Y": -7321.786
+      "X": -24586.158,
+      "Y": -6922.9883
     },
     "Rotation": 5.061454772949219,
     "Scale": {
@@ -91,37 +118,10 @@
     "AbilityData": [],
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-    "TypeId": 1953457253,
-    "Position": {
-      "X": -24822.85,
-      "Y": -7267.4355
-    },
-    "Rotation": 5.061454772949219,
-    "Scale": {
-      "X": 1,
-      "Y": 1,
-      "Z": 1
-    },
-    "SkinId": 1953457253,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 1462
-  },
-  {
-    "Flags": 2,
-    "OwnerId": 24,
-    "Hp": -1,
-    "Mp": -1,
-    "TargetAcquisition": -2,
-    "HeroLevel": 1,
-    "InventoryData": [],
-    "AbilityData": [],
-    "CustomPlayerColorId": -1,
-    "WaygateDestinationRegionId": -1,
     "TypeId": 1668244581,
     "Position": {
-      "X": -24723.22,
-      "Y": -7370.766
+      "X": -24721.729,
+      "Y": -6971.9683
     },
     "Rotation": 5.061454772949219,
     "Scale": {
