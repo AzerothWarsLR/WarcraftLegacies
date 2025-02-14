@@ -1,79 +1,26 @@
 {
-  "OldId": 930300737,
+  "OldId": 1802728257,
   "NewId": 1311846465,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 20
-    },
-    {
-      "Level": 2,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 20
-    },
-    {
-      "Level": 3,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 20
-    },
-    {
-      "Level": 4,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 20
-    },
-    {
-      "Level": 2,
-      "Pointer": 2,
-      "Id": 845574991,
-      "Value": 3
-    },
-    {
-      "Level": 3,
-      "Pointer": 2,
-      "Id": 845574991,
-      "Value": 4
-    },
-    {
-      "Level": 4,
-      "Pointer": 2,
-      "Id": 845574991,
-      "Value": 5
-    },
-    {
-      "Id": 1986358369,
-      "Value": 4
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": ""
     },
     {
       "Level": 1,
-      "Id": 828797775,
-      "Type": 3,
-      "Value": "o005"
+      "Pointer": 3,
+      "Id": 862679891,
+      "Type": 2,
+      "Value": 30
     },
     {
-      "Level": 2,
-      "Id": 828797775,
+      "Id": 1667330657,
       "Type": 3,
-      "Value": "o005"
-    },
-    {
-      "Level": 3,
-      "Id": 828797775,
-      "Type": 3,
-      "Value": "o005"
-    },
-    {
-      "Level": 4,
-      "Id": 828797775,
-      "Type": 3,
-      "Value": "o005"
+      "Value": "undead"
     }
   ]
 }
