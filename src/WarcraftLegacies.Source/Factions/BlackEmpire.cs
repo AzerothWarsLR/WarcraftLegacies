@@ -1,14 +1,13 @@
-﻿using MacroTools;
+﻿using System.Collections.Generic;
 using MacroTools.FactionSystem;
 using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
-using System.Collections.Generic;
+using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.BlackEmpire;
 using WarcraftLegacies.Source.Setup;
-
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -44,12 +43,12 @@ Be sure to train Forsaken Ones, they are powerful units";
         "n'zoth",
         "nz"
       };
+      ProcessObjectInfo(BlackEmpireObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
       RegisterQuests();
       RegisterSpells();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
@@ -70,12 +69,6 @@ Be sure to train Forsaken Ones, they are powerful units";
       AddQuest(new QuestWorldStone(_allLegendSetup.BlackEmpire.Nzoth, _allLegendSetup.Frostwolf.ThunderBluff, _allLegendSetup.Warsong.Orgrimmar));
       AddQuest(new QuestAscension(_allLegendSetup.BlackEmpire.Nzoth));
       AddQuest(new QuestAlignement(_allLegendSetup.BlackEmpire.Nzoth));
-    }
-
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in BlackEmpireObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterSpells()
@@ -134,7 +127,7 @@ Be sure to train Forsaken Ones, they are powerful units";
         DummyAbilityId = ABILITY_ABSV_SHADOW_VEIL_SHADOW_VEIL_REAL,
         DummyOrderId = OrderId("howlofterror"),
         ProcChance = 0.10f,
-        RequiredResearch = Constants.UPGRADE_RBEV_SHADOW_VEIL_BLACK_EMPIRE
+        RequiredResearch = UPGRADE_RBEV_SHADOW_VEIL_BLACK_EMPIRE
       };
       PassiveAbilityManager.Register(shadowVeilPassive);
 

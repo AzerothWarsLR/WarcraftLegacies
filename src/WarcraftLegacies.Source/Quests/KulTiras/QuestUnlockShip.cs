@@ -1,15 +1,16 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.QuestSystem;
-using WCSharp.Shared.Data;
-using static War3Api.Blizzard;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
-using MacroTools.ObjectiveSystem.Objectives.UnitBased;
-using System.Linq;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using MacroTools.QuestSystem;
+using MacroTools.Utils;
+using WCSharp.Shared.Data;
+using static War3Api.Blizzard;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
@@ -69,7 +70,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
 
     private static void MoveStranglethorn(player whichPlayer)
     {
-      foreach (var unit in CreateGroup().EnumUnitsInRect(Rectangle.WorldBounds).EmptyToList().Where(x => x.OwningPlayer() == whichPlayer))
+      foreach (var unit in GlobalGroup.EnumUnitsInRect(Rectangle.WorldBounds).Where(x => x.OwningPlayer() == whichPlayer))
       {
         if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE) && !IsUnitType(unit, UNIT_TYPE_ANCIENT) && !IsUnitType(unit, UNIT_TYPE_PEON))
           SetUnitPosition(unit, 6864, -17176);

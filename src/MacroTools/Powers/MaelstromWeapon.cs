@@ -2,6 +2,7 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.Setup;
 using WCSharp.Events;
 using static War3Api.Common;
 

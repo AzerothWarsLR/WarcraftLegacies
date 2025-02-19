@@ -2,7 +2,6 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Events;
 
-
 namespace WarcraftLegacies.Source.GameLogic
 {
   /// <summary>

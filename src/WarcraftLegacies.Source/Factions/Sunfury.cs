@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
-using MacroTools;
 using MacroTools.Extensions;
-using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
+using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Quelthalas;
@@ -29,10 +28,7 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       CinematicMusic = "BloodElfTheme";
       FoodMaximum = 250;
-      StartingCameraPosition = Regions.SunfuryStartingPosition.Center;
-      StartingUnits = Regions.SunfuryStartingPosition.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       ControlPointDefenderUnitTypeId = UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS;
-      LearningDifficulty = FactionLearningDifficulty.Advanced;
       IntroText = @"You are playing as the power-hungry |cffff0000Sunfury|r.
 
 You begin in Netherstorm, your first mission is to build three biodomes in the green areas protected by a bubble.
@@ -50,12 +46,12 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
         "sf",
         "sun"
       };
+      ProcessObjectInfo(SunfuryObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
       RegisterQuests();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
@@ -67,14 +63,9 @@ Your main goal is to summon Kil'jaeden and destroy your enemies.";
       Regions.Netherstorm.CleanupNeutralPassiveUnits();
       Regions.UpperNetherstorm.CleanupNeutralPassiveUnits();
       Regions.TempestKeep.CleanupNeutralPassiveUnits();
+      Regions.SunfuryStartingPosition.CleanupNeutralPassiveUnits();
       _preplacedUnitSystem.GetUnit(UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER).Remove();
       base.OnNotPicked();
-    }
-
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in SunfuryObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

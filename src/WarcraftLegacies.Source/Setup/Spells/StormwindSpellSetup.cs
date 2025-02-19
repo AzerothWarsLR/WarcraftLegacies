@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       SpellSystem.Register(electricStrike);
 
-      var manaSyphon = new GrantMana(ABILITY_A0RG_MANA_SYPHON_STORMWIND_MAGE_TOWER)
+      var manaSyphon = new GrantMana(ABILITY_A0RG_RESTORE_MANA_STORMWIND_MAGE_TOWER)
       {
         ManaToGrant = 250
       };

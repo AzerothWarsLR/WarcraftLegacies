@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.PassiveAbilitySystem;
+using MacroTools.Utils;
 using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
@@ -87,7 +88,7 @@ namespace MacroTools.PassiveAbilities
           .SetYaw(GetUnitFacing(caster) * MathEx.DegToRad)
           .SetLifespan();
 
-        foreach (var nearbyUnit in CreateGroup().EnumUnitsInRange(target.GetPosition(), Radius).EmptyToList())
+        foreach (var nearbyUnit in GlobalGroup.EnumUnitsInRange(target.GetPosition(), Radius))
         {
           if (IsUnitAlly(nearbyUnit, caster.OwningPlayer()) || !UnitAlive(nearbyUnit) || BlzIsUnitInvulnerable(nearbyUnit) ||
               IsUnitType(nearbyUnit, UNIT_TYPE_STRUCTURE) || IsUnitType(nearbyUnit, UNIT_TYPE_ANCIENT))

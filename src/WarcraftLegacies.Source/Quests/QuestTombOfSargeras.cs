@@ -5,6 +5,7 @@ using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests
@@ -70,7 +71,7 @@ namespace WarcraftLegacies.Source.Quests
     private void HideUnitsInsideTomb(IEnumerable<Rectangle> rectangles)
     {
       foreach (var rect in rectangles)
-      foreach (var unit in CreateGroup().EnumUnitsInRect(rect.Rect).EmptyToList().Where(x => !BlzIsUnitInvulnerable(x)))
+      foreach (var unit in GlobalGroup.EnumUnitsInRect(rect.Rect).Where(x => !BlzIsUnitInvulnerable(x)))
       {
         _rescueUnits.Add(unit);
         unit

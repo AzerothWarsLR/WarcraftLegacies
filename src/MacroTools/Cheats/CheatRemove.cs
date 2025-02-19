@@ -1,5 +1,5 @@
 using MacroTools.CommandSystem;
-using MacroTools.Extensions;
+using MacroTools.Utils;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
@@ -21,7 +21,7 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      foreach (var unit in CreateGroup().EnumSelectedUnits(cheater).EmptyToList()) 
+      foreach (var unit in GlobalGroup.EnumSelectedUnits(cheater)) 
         RemoveUnit(unit);
       return "Permanently removing selected units.";
     }

@@ -1,4 +1,5 @@
 ﻿using MacroTools.LegendSystem;
+
 #pragma warning disable CS1591
 
 namespace WarcraftLegacies.Source.Setup.Legends

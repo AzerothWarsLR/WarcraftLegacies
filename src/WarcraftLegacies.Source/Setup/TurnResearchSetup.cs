@@ -1,4 +1,4 @@
-﻿using MacroTools;
+﻿using MacroTools.Systems;
 
 namespace WarcraftLegacies.Source.Setup
 {

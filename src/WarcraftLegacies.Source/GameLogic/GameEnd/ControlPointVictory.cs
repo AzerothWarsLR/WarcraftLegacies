@@ -2,6 +2,7 @@
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.GameLogic.GameEnd
 {
@@ -39,7 +40,7 @@ namespace WarcraftLegacies.Source.GameLogic.GameEnd
 
     private static void TeamWarning(Team whichTeam, int controlPoints)
     {
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      foreach (var player in Util.EnumeratePlayers())
         DisplayTextToPlayer(player, 0, 0,
           $"\n{VictoryColor}TEAM VICTORY IMMINENT|r\n{whichTeam.Name} has captured {controlPoints} out of {CpsVictory} Control Points required to win the game!");
     }
@@ -61,7 +62,7 @@ namespace WarcraftLegacies.Source.GameLogic.GameEnd
     private static void TeamVictory(Team whichTeam)
     {
       ClearTextMessages();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      foreach (var player in Util.EnumeratePlayers())
         DisplayTextToPlayer(player, 0, 0,
           $"{VictoryColor}\nTEAM VICTORY!|r\nThe {whichTeam.Name} has won the game! You may choose to continue playing.");
       PlayThematicMusic(whichTeam.VictoryMusic);

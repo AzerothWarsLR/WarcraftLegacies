@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MacroTools.Extensions;
+using MacroTools.Utils;
 using WCSharp.Events;
 using static War3Api.Common;
 
@@ -21,9 +21,8 @@ namespace MacroTools.PassiveAbilitySystem
     /// </summary>
     public static void InitializePreplacedUnits()
     {
-      var group = CreateGroup()
-        .EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds)
-        .EmptyToList();
+      var group = GlobalGroup
+        .EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds);
 
       foreach (var unit in group) 
         ForceOnCreated(unit);

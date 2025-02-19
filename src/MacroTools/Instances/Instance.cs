@@ -4,6 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -85,9 +86,8 @@ namespace MacroTools.Instances
         _dependencyDiesTrigger.Destroy();
         foreach (var rect in _rectangles)
         {
-          var unitsInRect = CreateGroup()
-            .EnumUnitsInRect(rect)
-            .EmptyToList();
+          var unitsInRect = GlobalGroup
+            .EnumUnitsInRect(rect);
 
           var evacuationPosition = _gates.First().ExteriorPosition;
           

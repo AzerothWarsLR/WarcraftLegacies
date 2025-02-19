@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MacroTools;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
@@ -7,6 +6,7 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.Powers;
+using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Scourge;
 using WarcraftLegacies.Source.FactionMechanics.Scourge.Blight;
@@ -63,12 +63,14 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       RegisterFactionDependentInitializer<Quelthalas>(RegisterQuelthalasDialogue);
       RegisterFactionDependentInitializer<Lordaeron>(RegisterLordaeronDialogue);
       RegisterFactionDependentInitializer<Legion>(RegisterLegionDialogue);
+      
+      ProcessObjectInfo(ScourgeObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
+      RegisterObjectLevels();
       RegisterQuests();
       RegisterPowers();
       RegisterDialogue();
@@ -79,12 +81,8 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       TheFrozenThrone.Setup(this, _allLegendSetup.Scourge.TheFrozenThrone, _allLegendSetup.Scourge.Arthas);
     }
 
-    private void RegisterObjectLimits()
+    private void RegisterObjectLevels()
     {
-      foreach (var (objectTypeId, objectLimit) in ScourgeObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
-
-      //Abilities
       ModAbilityAvailability(ABILITY_A0WG_SPELL_SHIELD_SPELL_BOOK_ORANGE_ANTONIDAS_RED_LICH_KING, -1);
       ModAbilityAvailability(ABILITY_A0K2_RAISE_DEAD_AUTO_CAST_RED_TEMPLE_OF_THE_DAMNED_OFF, -1);
       ModAbilityAvailability(ABILITY_A09N_PERMANENT_IMMOLATION_SCOURGE_ICECROWN_OBELISK, -1);

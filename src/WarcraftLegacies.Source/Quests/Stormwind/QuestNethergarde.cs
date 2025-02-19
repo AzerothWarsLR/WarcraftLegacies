@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
@@ -7,6 +6,7 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
+using MacroTools.Systems;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Stormwind

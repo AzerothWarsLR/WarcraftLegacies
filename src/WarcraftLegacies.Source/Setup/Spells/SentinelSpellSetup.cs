@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using MacroTools;
+using MacroTools.Data;
 using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;

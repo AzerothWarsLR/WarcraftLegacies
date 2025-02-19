@@ -4,11 +4,12 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
-using MacroTools.QuestSystem;
-using WCSharp.Shared.Data;
-using static War3Api.Blizzard;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using MacroTools.QuestSystem;
+using MacroTools.Utils;
+using WCSharp.Shared.Data;
+using static War3Api.Blizzard;
 
 namespace WarcraftLegacies.Source.Quests.Dalaran
 {
@@ -51,7 +52,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
 
     /// <inheritdoc />
     protected override string PenaltyDescription =>
-      $"Gain control of all units at Theramore";
+      "Gain control of all units at Theramore";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
@@ -61,11 +62,11 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       else
         Player(bj_PLAYER_NEUTRAL_VICTIM).RescueGroup(_rescueUnits);
 
-      foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.Dalaran).EmptyToList().Where(x =>
+      foreach (var unit in GlobalGroup.EnumUnitsInRect(Regions.Dalaran).Where(x =>
                  x.OwningPlayer() == completingFaction.Player && !IsUnitType(x, UNIT_TYPE_STRUCTURE)).ToList())
         unit.SetPosition(Regions.Theramore.Center);
 
-      foreach (var unit in CreateGroup().EnumUnitsInRect(Regions.Dalaran).EmptyToList().Where(x =>
+      foreach (var unit in GlobalGroup.EnumUnitsInRect(Regions.Dalaran).Where(x =>
                  x.OwningPlayer() == completingFaction.Player && IsUnitType(x, UNIT_TYPE_STRUCTURE)).ToList())
         unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }

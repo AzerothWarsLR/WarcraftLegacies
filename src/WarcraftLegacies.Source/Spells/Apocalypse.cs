@@ -1,5 +1,5 @@
 ﻿using System;
-using MacroTools;
+using MacroTools.Data;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.SpellSystem;

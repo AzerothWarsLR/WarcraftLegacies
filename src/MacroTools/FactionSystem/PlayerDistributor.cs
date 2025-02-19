@@ -2,6 +2,8 @@
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.LegendSystem;
+using MacroTools.Systems;
+using MacroTools.Utils;
 using static War3Api.Common;
 
 namespace MacroTools.FactionSystem
@@ -61,9 +63,8 @@ namespace MacroTools.FactionSystem
       var experiencePerPlayer = experience / playersToDistributeTo.Count;
       foreach (var ally in playersToDistributeTo)
       {
-        var allyHeroes = CreateGroup()
+        var allyHeroes = GlobalGroup
           .EnumUnitsOfPlayer(ally)
-          .EmptyToList()
           .FindAll(unit => IsUnitType(unit, UNIT_TYPE_HERO));
 
         foreach (var hero in allyHeroes)
@@ -92,9 +93,8 @@ namespace MacroTools.FactionSystem
     /// <returns>Resources to be refunded from units that the process removes.</returns>
     private static UnitsRefund DistributeAndRefundUnits(player playerToDistribute, IReadOnlyList<player> playersToDistributeTo)
     {
-      var playerUnits = CreateGroup()
-        .EnumUnitsOfPlayer(playerToDistribute)
-        .EmptyToList();
+      var playerUnits = GlobalGroup
+        .EnumUnitsOfPlayer(playerToDistribute);
 
       var refund = new UnitsRefund();
       foreach (var unit in playerUnits)

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
-using MacroTools;
+using MacroTools.Utils;
 using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source

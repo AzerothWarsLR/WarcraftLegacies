@@ -49,6 +49,14 @@
       "Id": 1868786037,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNRuinsWatchTower.blp"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 200
+    },
+    {
+      "Id": 1651270517,
+      "Value": 200
     }
   ]
 }

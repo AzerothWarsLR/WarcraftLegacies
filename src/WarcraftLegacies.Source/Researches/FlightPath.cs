@@ -1,7 +1,7 @@
-﻿using MacroTools;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ResearchSystems;
+using MacroTools.Systems;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 

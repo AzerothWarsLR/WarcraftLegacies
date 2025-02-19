@@ -6,7 +6,6 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 
-
 namespace WarcraftLegacies.Source.Quests.Zandalar
 {
   /// <summary>
@@ -37,7 +36,7 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
 
     /// <inheritdoc/>
     public override string RewardFlavour =>
-      $"Zul'farrak has fallen. The Sandfury trolls lend their might to the Zandalari.";
+      "Zul'farrak has fallen. The Sandfury trolls lend their might to the Zandalari.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>

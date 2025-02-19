@@ -39,7 +39,7 @@ namespace MacroTools.CommandSystem
         {
           try
           {
-            if (command.Type == CommandType.Cheat && !TestMode.CheatCondition())
+            if (command.Type == CommandType.Cheat && !TestMode.CheatCondition(GetTriggerPlayer()))
               return;
 
             var enteredChatString = GetEventPlayerChatString();

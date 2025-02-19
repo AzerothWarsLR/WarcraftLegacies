@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using MacroTools.CommandSystem;
-using MacroTools.Extensions;
 using MacroTools.LegendSystem;
+using MacroTools.Utils;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
@@ -23,7 +23,7 @@ namespace MacroTools.Cheats
     /// <inheritdoc />
     public override string Execute(player cheater, params string[] parameters)
     {
-      var selectedUnits = CreateGroup().EnumSelectedUnits(cheater).EmptyToList();
+      var selectedUnits = GlobalGroup.EnumSelectedUnits(cheater);
       if (!selectedUnits.Any())
         return "You're not selecting any Legends.";
       

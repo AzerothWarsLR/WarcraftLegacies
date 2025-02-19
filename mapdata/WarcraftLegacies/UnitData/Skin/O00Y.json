@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNShaman.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMasterZuluhedMaghar.blp"
     },
     {
       "Id": 1953980789,
@@ -23,7 +23,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Hero_Zuluhed.mdl"
+      "Value": "war3mapImported\\MasterZuluhedBrown.mdl"
     },
     {
       "Id": 1953458293,
@@ -58,7 +58,7 @@
     {
       "Id": 1769173877,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNShaman.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMasterZuluhedMaghar.blp"
     },
     {
       "Id": 1885959285,
@@ -78,6 +78,11 @@
     {
       "Id": 2037408373,
       "Value": 0
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 1.6
     }
   ]
 }

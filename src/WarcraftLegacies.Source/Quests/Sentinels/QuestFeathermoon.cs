@@ -1,7 +1,8 @@
-﻿using MacroTools.FactionSystem;
-using MacroTools.LegendSystem;
+﻿using System.Collections.Generic;
+using MacroTools.Extensions;
+using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.Sentinels
@@ -11,32 +12,48 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
   /// </summary>
   public sealed class QuestFeathermoon : QuestData
   {
+    private List<unit> _rescueUnits = new();
+
     /// <summary>
     /// Initializes a new instance of <see cref="QuestFeathermoon"/>.
     /// </summary>
-    public QuestFeathermoon(Capital feathermoon) : base("Shores of Feathermoon",
-      "Feathermoon Stronghold will undoublty fall to the assault of the Old gods, we will need to recapture it. ",
+    public QuestFeathermoon() : base("Shores of Feathermoon",
+      "Without aid from the primary Sentinel force, Feathermoon Stronghold will undoubtedly fall to the assault of the Old Gods. We will need to recapture it.",
       @"ReplaceableTextures\CommandButtons\BTNBearDen.blp")
     {
-      AddObjective(new ObjectiveControlCapital(feathermoon, false));
       AddObjective(new ObjectiveControlPoint(UNIT_N05U_FEATHERMOON_STRONGHOLD));
+      AddObjective(new ObjectiveExpire(1200, Title));
       ResearchId = UPGRADE_R06M_QUEST_COMPLETED_SHORES_OF_FEATHERMOON;
     }
 
     /// <inheritdoc />
     public override string RewardFlavour =>
-      "Feathermoon Stronghold has been recaptured and has joined the Sentinels in their war effort";
+      "Those stationed at Feathermoon Stronghold were among the first casualties claimed by the Black Empire. With the base recaptured, the process of avenging them can begin.";
 
     /// <inheritdoc />
     protected override string RewardDescription => 
-      $"Learn to train Maiev from the {GetObjectName(UNIT_E00R_ALTAR_OF_WATCHERS_SENTINEL_ALTAR)}";
+      $"Learn to train Maiev from the {GetObjectName(UNIT_E00R_ALTAR_OF_WATCHERS_SENTINEL_ALTAR)} and gain control of Feathermoon Stronghold";
 
     /// <inheritdoc />
-    protected override void OnFail(Faction completingFaction)
+    protected override void OnAdd(Faction whichFaction)
     {
-      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+      _rescueUnits = Regions.FeathermoonUnlock.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
+    }
+
+    /// <inheritdoc />
+    protected override void OnComplete(Faction completingFaction)
+    {
+      completingFaction.Player.RescueGroup(_rescueUnits);
+    }
+    
+    /// <inheritdoc />
+    protected override void OnFail(Faction failingFaction)
+    {
+      var rescuer = failingFaction.ScoreStatus == ScoreStatus.Defeated
         ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
-        : completingFaction.Player;
+        : failingFaction.Player;
+
+      rescuer.RescueGroup(_rescueUnits);
     }
   }
 }

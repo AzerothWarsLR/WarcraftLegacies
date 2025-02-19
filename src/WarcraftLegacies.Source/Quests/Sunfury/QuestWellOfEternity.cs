@@ -1,9 +1,9 @@
-﻿using MacroTools;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
+using MacroTools.Systems;
 
 namespace WarcraftLegacies.Source.Quests.Sunfury
 {

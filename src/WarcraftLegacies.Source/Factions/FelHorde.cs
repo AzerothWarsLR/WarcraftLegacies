@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using MacroTools;
 using MacroTools.FactionSystem;
+using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Fel_Horde;
 using WarcraftLegacies.Source.Quests;
@@ -46,22 +46,20 @@ The Alliance is gathering outside the Dark Portal to stop you, so prepare for a 
         "fh",
         "fel"
       };
+      ProcessObjectInfo(FelHordeObjectInfo.GetAllObjectInfos());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
+      RegisterObjectLevels();
       RegisterQuests();
       JuggernautDeath.Setup(_preplacedUnitSystem);
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
-    private void RegisterObjectLimits()
+    private void RegisterObjectLevels()
     {
-      foreach (var (objectTypeId, objectLimit) in FelHordeObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
-
       ModAbilityAvailability(ABILITY_A0GM_FOR_THE_HORDE_PINK_GREY_MAIN_BUILDINGS, -1);
     }
 

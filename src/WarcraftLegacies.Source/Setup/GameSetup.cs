@@ -1,10 +1,10 @@
-﻿using MacroTools;
-using MacroTools.CommandSystem;
+﻿using MacroTools.CommandSystem;
 using MacroTools.ControlPointSystem;
 using MacroTools.GameModes;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Save;
 using MacroTools.Sound;
+using MacroTools.Systems;
 using MacroTools.UserInterface;
 using WarcraftLegacies.Source.ArtifactBehaviour;
 using WarcraftLegacies.Source.GameLogic;
@@ -24,6 +24,7 @@ namespace WarcraftLegacies.Source.Setup
     /// </summary>
     public static void Setup()
     {
+      UnitTypeConfig.Setup();
       SaveManager.Initialize();
       DisplayIntroText.Setup(25);
       CinematicMode.Setup(59);
@@ -37,19 +38,20 @@ namespace WarcraftLegacies.Source.Setup
       ControlPointSetup.Setup();
       InstanceSetup.Setup(preplacedUnitSystem);
       NeutralHostileSetup.Setup();
+      var commandManager = new CommandManager();
+      CommandSetup.Setup(commandManager);
+      CheatSetup.Setup(commandManager, artifactSetup);
       TeamSetup.Setup();
       new PlayerSetup(preplacedUnitSystem, allLegendSetup, artifactSetup).Setup();
       FactionChoiceDialogSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       SharedQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
       SpellsSetup.Setup();
-      var commandManager = new CommandManager();
-      CommandSetup.Setup(commandManager);
       FactionMultiboard.Setup();
       BookSetup.Setup();
       HintConfig.Setup();
       QuestMenuSetup.Setup();
       GameTime.Start();
-      CheatSetup.Setup(commandManager, artifactSetup);
+      
       MapFlagSetup.Setup();
       InfoQuests.Setup();
       DestructibleSetup.Setup(preplacedUnitSystem);
@@ -67,7 +69,6 @@ namespace WarcraftLegacies.Source.Setup
       gameModeManager.Setup();
       RockSetup.Setup();
       TurnResearchSetup.Setup();
-      UnitTypeConfig.Setup();
       ShipyardBanZonesSetup.Setup();
       BlockerSetup.Setup();
       NeutralVictimAndPassiveSetup.Setup();

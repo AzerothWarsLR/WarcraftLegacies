@@ -6,5 +6,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\MacroTools.Shared\MacroTools.Shared.csproj" />
+    </ItemGroup>
+
 
 </Project>

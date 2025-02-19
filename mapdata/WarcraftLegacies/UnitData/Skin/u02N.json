@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNFelOrcVoodooLounge.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDragonTreasureHoard.blp"
     },
     {
       "Id": 1651012469,
@@ -23,7 +23,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Building_DragonmawShop.mdl"
+      "Value": "war3mapImported\\DragonTreasureHoardV1.mdl"
     },
     {
       "Id": 1953458293,
@@ -33,7 +33,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.95
+      "Value": 0.8
     },
     {
       "Id": 1835101813,

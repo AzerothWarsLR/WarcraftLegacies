@@ -4,8 +4,8 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
-
 
 namespace WarcraftLegacies.Source.Quests.Stormwind
 {
@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       "Despite Outland's incredibly harsh climate, some Alliance forces have managed to make a home there - a town called Honor Hold",
       @"ReplaceableTextures\CommandButtons\BTNHumanBarracks.blp")
     {
-      foreach (var unit in CreateGroup().EnumUnitsInRect(rescueRect).EmptyToList())
+      foreach (var unit in GlobalGroup.EnumUnitsInRect(rescueRect))
         if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
         {
           SetUnitInvulnerable(unit, true);

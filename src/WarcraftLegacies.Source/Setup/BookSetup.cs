@@ -1,6 +1,7 @@
 ﻿using MacroTools.BookSystem.ArtifactSystem;
 using MacroTools.BookSystem.Core;
 using MacroTools.BookSystem.Powers;
+using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.Setup
 {
@@ -14,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup
     /// </summary>
     public static void Setup()
     {
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) 
+      foreach (var player in Util.EnumeratePlayers()) 
         SpecialMenuManager.Register(PowerBook.Create(player), player);
       
       SpecialMenuManager.Register(new ArtifactBook());

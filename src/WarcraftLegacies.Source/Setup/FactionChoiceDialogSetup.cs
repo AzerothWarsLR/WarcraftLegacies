@@ -1,5 +1,5 @@
-﻿using MacroTools;
-using MacroTools.FactionChoices;
+﻿using MacroTools.FactionChoices;
+using MacroTools.Systems;
 using WarcraftLegacies.Source.Factions;
 
 namespace WarcraftLegacies.Source.Setup
@@ -8,14 +8,59 @@ namespace WarcraftLegacies.Source.Setup
   {
     public static void Setup(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
     {
-      //new FactionChoiceDialogPresenter(new Zandalar(preplacedUnitSystem, allLegendSetup, artifactSetup),
-      //  new Bilgewater(preplacedUnitSystem, allLegendSetup)).Run(Player(8));
-      
-      new FactionChoiceDialogPresenter(new Illidari(allLegendSetup, artifactSetup),
-        new Sunfury(preplacedUnitSystem, allLegendSetup, artifactSetup)).Run(Player(15));
-      
-      new FactionChoiceDialogPresenter(new Dalaran(preplacedUnitSystem, artifactSetup, allLegendSetup),
-        new Gilneas(preplacedUnitSystem, artifactSetup, allLegendSetup)).Run(Player(7));
+      var illidari = new FactionChoice
+      {
+        Faction = new Illidari(allLegendSetup,
+          artifactSetup),
+        Difficulty = FactionLearningDifficulty.Basic,
+        StartingArea = Regions.IllidanStartingPosition
+      };
+      var sunfury = new FactionChoice
+      {
+        Faction = new Sunfury(preplacedUnitSystem,
+          allLegendSetup,
+          artifactSetup),
+        Difficulty = FactionLearningDifficulty.Advanced,
+        StartingArea = Regions.SunfuryStartingPosition
+      };
+      new FactionChoiceDialogPresenter(illidari, sunfury).Run(Player(15));
+
+      var dalaran = new FactionChoice
+      {
+        Faction = new Dalaran(preplacedUnitSystem,
+          artifactSetup,
+          allLegendSetup),
+        Difficulty = FactionLearningDifficulty.Basic,
+        StartingArea = Regions.DalaStartPos
+      };
+      var gilneas = new FactionChoice
+      {
+        Faction = new Gilneas(preplacedUnitSystem,
+          artifactSetup,
+          allLegendSetup),
+        Difficulty = FactionLearningDifficulty.Advanced,
+        StartingArea = Regions.GilneasStartPos
+      };
+      new FactionChoiceDialogPresenter(dalaran, gilneas).Run(Player(7));
+
+      var sentinels = new FactionChoice
+      {
+        Faction = new Sentinels(preplacedUnitSystem,
+          allLegendSetup,
+          artifactSetup),
+        Difficulty = FactionLearningDifficulty.Basic,
+        StartingArea = Regions.SentDraeSharedStartPos
+      };
+      var draenei = new FactionChoice
+      {
+        Faction = new Draenei(preplacedUnitSystem,
+          allLegendSetup,
+          artifactSetup),
+        Difficulty = FactionLearningDifficulty.Advanced,
+        StartingArea = Regions.SentDraeSharedStartPos,
+        RequiresCheats = true
+      };
+      new FactionChoiceDialogPresenter(sentinels, draenei).Run(Player(18));
     }
   }
 }

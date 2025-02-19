@@ -24,7 +24,7 @@ namespace Launcher.MapMigrations
     private const string ItemsSold = "|cfff5962dSells items:|r ";
     private const string UnitsSold = "|cfff5962dSells units:|r ";
 
-    private readonly ObjectLimitRepository _objectLimitRepository = new();
+    private readonly ObjectInfoRepository _objectInfoRepository = new();
 
     /// <inheritdoc />
     public void Migrate(Map map, ObjectDatabase objectDatabase)
@@ -194,7 +194,7 @@ namespace Launcher.MapMigrations
         return;
       
       var unitId = unit.NewId != 0 ? unit.NewId : unit.OldId;
-      if (!_objectLimitRepository.TryGetObjectLimit(unitId, out var objectLimit)) 
+      if (!_objectInfoRepository.TryGetObjectInfo(unitId, out var objectLimit)) 
         return;
       
       var isABuilding = unit.StatsIsABuilding;

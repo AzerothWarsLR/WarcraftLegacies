@@ -1,13 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
+using MacroTools.Setup;
 using WCSharp.Events;
+using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.Powers
 {
@@ -122,7 +123,7 @@ namespace WarcraftLegacies.Source.Powers
       {
         //WC3's spell event triggers before mana cost is subtracted, so if the caster is already near maximum mana,
         //we need to defer the refund until later.
-        CreateTimer().Start(0, false, () =>
+        Delay.Add(() =>
         {
           SetUnitState(caster, UNIT_STATE_MANA, GetUnitState(caster, UNIT_STATE_MANA) + manaRefund);
           GetExpiredTimer().Destroy();

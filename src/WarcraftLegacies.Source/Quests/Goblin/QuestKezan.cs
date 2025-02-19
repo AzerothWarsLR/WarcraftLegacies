@@ -6,7 +6,6 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 
-
 namespace WarcraftLegacies.Source.Quests.Goblin
 {
   /// <summary>

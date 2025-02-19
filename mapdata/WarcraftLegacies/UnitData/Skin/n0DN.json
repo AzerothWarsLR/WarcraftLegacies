@@ -60,14 +60,9 @@
       "Value": "Abilities\\Weapons\\ChimaeraAcidMissile\\ChimaeraAcidMissile.mdl"
     },
     {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 1.6
-    },
-    {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Loa Medium"
+      "Value": "Follower of Shadra"
     },
     {
       "Id": 1668510581,
@@ -87,7 +82,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Train Loa Medium"
+      "Value": "Train Follower of Shadra"
     },
     {
       "Id": 1651864693,
@@ -98,6 +93,11 @@
       "Id": 1684960117,
       "Type": 3,
       "Value": "HeroShadowHunter"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.3
     }
   ]
 }

@@ -4,6 +4,7 @@ using MacroTools.Buffs;
 using MacroTools.Extensions;
 using MacroTools.Instances;
 using MacroTools.SpellSystem;
+using MacroTools.Utils;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -51,9 +52,8 @@ namespace MacroTools.Spells
         ? CrossDimensionalDuration 
         : Math.Clamp(distanceDuration, MinDuration, MaxDuration);
 
-      var targets = CreateGroup()
+      var targets = GlobalGroup
         .EnumUnitsInRange(center, Radius)
-        .EmptyToList()
         .Where(x => IsValidTarget(caster, x))
         .Take(AmountToTarget)
         .ToList();
