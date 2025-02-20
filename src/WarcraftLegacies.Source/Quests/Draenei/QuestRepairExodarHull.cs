@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// Initializes a new instance of the <see cref="QuestRepairExodarHull"/> class.
     /// </summary>
     public QuestRepairExodarHull(Rectangle rescueRect, Legend exodar) : base("A New Home",
-      "After the disastrous voyage through the Twisting Nether, the Exodar crash-landed on Azuremyst Isle. We need to secure the surrounding islands for ressources.",
+      "After the disastrous voyage through the Twisting Nether, the Exodar crash-landed on Azuremyst Isle. We need to secure the surrounding islands for resources.",
       @"ReplaceableTextures\CommandButtons\BTNDraeneiVaultOfRelics.blp")
     {
       
