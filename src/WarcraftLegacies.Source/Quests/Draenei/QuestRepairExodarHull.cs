@@ -25,7 +25,6 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     {
       
       AddObjective(new ObjectiveUpgrade(UNIT_O051_DIVINE_CITADEL_DRAENEI_T3, UNIT_O02P_CRYSTAL_HALL_DRAENEI_T1));
-      AddObjective(new ObjectiveUnitReachesFullHealth(exodar.Unit));
       AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.AzuremystAmbient }, "on Azuremyst Isle"));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
