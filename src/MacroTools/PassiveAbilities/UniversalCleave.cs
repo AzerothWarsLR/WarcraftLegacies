@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using MacroTools.Extensions;
-
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Utils;
 using static War3Api.Common;
@@ -76,7 +75,7 @@ namespace MacroTools.PassiveAbilities
           // Debugging damage to units in radius
           Console.WriteLine($"Nearby unit: {GetUnitName(nearbyUnit)}, Cleave Damage: {cleaveDamage}, DamageType: {DamageType}");
 
-          nearbyUnit.TakeDamage(caster, cleaveDamage, false, false, ATTACK_TYPE_NORMAL, DamageType);
+          nearbyUnit.TakeDamage(caster, cleaveDamage, false, false, ATTACK_TYPE_HERO, DAMAGE_TYPE_NORMAL);
         }
       }
       catch (Exception ex)

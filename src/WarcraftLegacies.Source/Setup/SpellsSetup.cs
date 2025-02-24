@@ -78,12 +78,7 @@ namespace WarcraftLegacies.Source.Setup
       };
       PassiveAbilityManager.Register(burningVengeance);
 
-      var universalCleave = new UniversalCleave(FourCC("A01N"))
-      {
-        Radius = 150,
-      };
-      PassiveAbilityManager.Register(universalCleave);
-
+ 
 
       var demonSoulCooldown = new CooldownReset(ABILITY_A0HF_ABILITY_COOLDOWN_RESET);
       SpellSystem.Register(demonSoulCooldown);
