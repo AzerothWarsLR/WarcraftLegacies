@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
       };
       SpellSystem.Register(consecration);
-      
+
       var solarJudgement = new SolarJudgementSpell(ABILITY_A01F_SOLAR_JUDGEMENT_LORDAERON_ARTHAS)
       {
         DamageBase = 0,
@@ -68,6 +68,18 @@ namespace WarcraftLegacies.Source.Setup.Spells
         ProcChance = 0.2f
       };
       PassiveAbilityManager.Register(willoftheAshbringer);
+
+
+      var universalCleave = new UniversalCleave(UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON,
+    ABILITY_A01N_UNIVERSAL_CLEAVE_GENERIC)
+      {
+        Radius = 150,
+      };
+      PassiveAbilityManager.Register(universalCleave);
+
+
+
+
     }
   }
 }
