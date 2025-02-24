@@ -77,6 +77,12 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       PassiveAbilityManager.Register(universalCleave);
 
+      var universalHardened = new UniversalHardened(UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON, ABILITY_A01V_UNIVERSAL_HARDENED_GENERIC)
+      {
+        MinimumDamage = 6.0f,
+      };
+      PassiveAbilityManager.Register(universalHardened);
+
 
 
 

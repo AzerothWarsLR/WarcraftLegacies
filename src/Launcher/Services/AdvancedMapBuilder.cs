@@ -161,7 +161,7 @@ namespace Launcher.Services
 
       // If compilation failed, output an error
       if (!compileResult.Success)
-        throw new Exception(compileResult.Diagnostics.First(x => x.Severity == DiagnosticSeverity.Error).GetMessage());
+          throw new Exception(compileResult.Diagnostics.First(x => x.Severity == DiagnosticSeverity.Error).GetMessage());
 
       // Update war3map.lua so you can inspect the generated Lua code easily
       if (compilerSettings.ArtifactsPath != null)
