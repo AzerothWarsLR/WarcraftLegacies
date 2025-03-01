@@ -1,0 +1,45 @@
+{
+  "OldId": 1685547073,
+  "NewId": 1127493697,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Nexus)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons an immovable ward that has the feedback and dispel automatic casting, but it will only dispel the debuff of enemy units and reduce 30 mana at the same time. |nLasts 45 seconds.|n|n|cffffcc00Attacks land and air units."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Arcane Ward"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Arcane Ward"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNManaFlare.blp"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    }
+  ]
+}

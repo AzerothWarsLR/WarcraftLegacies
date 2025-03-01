@@ -1,0 +1,50 @@
+{
+  "OldId": 1769161537,
+  "NewId": 1513500737,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Nexus)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Slows a target enemy unit\u0027s attack speed by \u003CA06Z,DataB1,%\u003E% and movement speed by \u003CA06Z,DataA1,%\u003E%. |n|cffffcc00Lasts \u003CA06Z,Dur1\u003E(\u003CA06Z,HeroDur1\u003E for Heros) seconds."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Mass Slow"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSlow.blp"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\ReplenishMana\\ReplenishManaCasterOverhead.mdl"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mass Slow"
+    }
+  ]
+}
