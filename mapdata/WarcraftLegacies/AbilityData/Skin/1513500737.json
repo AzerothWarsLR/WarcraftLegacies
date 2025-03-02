@@ -19,7 +19,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Slows a target enemy unit\u0027s attack speed by \u003CA06Z,DataB1,%\u003E% and movement speed by \u003CA06Z,DataA1,%\u003E%. |n|cffffcc00Lasts \u003CA06Z,Dur1\u003E(\u003CA06Z,HeroDur1\u003E for Heros) seconds."
+      "Value": "Slows target enemy unit\u0027s attack speed by 80% and movement speed by 40%. |n|cffffcc00Lasts \u003CA06Z,Dur1\u003E(\u003CA06Z,HeroDur1\u003E for Heros) seconds."
     },
     {
       "Id": 1835101793,
@@ -29,7 +29,6 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNSlow.blp"
     },
     {
       "Id": 1952540001,

@@ -14,7 +14,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons an immovable ward that has the feedback and dispel automatic casting, but it will only dispel the debuff of enemy units and reduce 30 mana at the same time. |nLasts 45 seconds.|n|n|cffffcc00Attacks land and air units."
+      "Value": "Summons an Immovable Ward to attack enemy units. Has the Feedback ability and automatically dispels positive buffs from enemy units, burning 30 mana to the unit. Lasts 45 seconds.|n|n\r\n|cffffcc00Attacks land and air units.|"
     },
     {
       "Id": 1835101793,
@@ -30,7 +30,7 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNManaFlare.blp"
+      "Value": "ReplaceableTextures/CommandButtons/BTNArcaneEye.blp"
     },
     {
       "Id": 2037082209,
