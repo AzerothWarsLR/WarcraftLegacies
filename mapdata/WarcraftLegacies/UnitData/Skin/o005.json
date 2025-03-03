@@ -8,17 +8,17 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Arcane Ward"
+      "Value": "Rune Sphere"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "Abilities\\Spells\\Human\\ManaFlare\\ManaFlareTarget.mdl"
+      "Value": "ForceGem.mdl"
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 3
+      "Value": 2
     },
     {
       "Id": 1831952757,
@@ -33,7 +33,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNArcaneEye.blp"
+      "Value": "ReplaceableTextures/CommandButtons/BTNArcaneSphere.blp"
     },
     {
       "Id": 1935827317,

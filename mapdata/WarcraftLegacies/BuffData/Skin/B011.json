@@ -8,17 +8,12 @@
     {
       "Id": 1953653094,
       "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNDragonFire2.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDragonTalismanBlue.blp"
     },
     {
       "Id": 1885959270,
       "Type": 3,
       "Value": "Dragon Fury"
-    },
-    {
-      "Id": 1700951398,
-      "Type": 3,
-      "Value": "This unit is Berserk; it will deal more damage,and absorb spell damage and block other damage."
     },
     {
       "Id": 1952543846,
@@ -38,6 +33,11 @@
     {
       "Id": 1685091174,
       "Value": 1
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is berserk;it will deal more damage，absorb spell damage and block other damage."
     }
   ]
 }
