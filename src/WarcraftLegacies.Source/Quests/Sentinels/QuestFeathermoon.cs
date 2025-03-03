@@ -1,59 +1,80 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
-using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.Sentinels
 {
   /// <summary>
-  /// Unlocks Feathermoon Stronghold upon securing the area and bringing a hero to it.
+  /// Build unique buildings and own the control point to rescue the Feathermoon Stronghold.
   /// </summary>
   public sealed class QuestFeathermoon : QuestData
   {
     private List<unit> _rescueUnits = new();
+    private readonly Capital _feathermoon;
 
     /// <summary>
-    /// Initializes a new instance of <see cref="QuestFeathermoon"/>.
+    /// Initializes a new instance of the <see cref="QuestFeathermoon"/> class.
     /// </summary>
-    public QuestFeathermoon() : base("Shores of Feathermoon",
-      "Without aid from the primary Sentinel force, Feathermoon Stronghold will undoubtedly fall to the assault of the Old Gods. We will need to recapture it.",
-      @"ReplaceableTextures\CommandButtons\BTNBearDen.blp")
+    /// <param name="feathermoon">The Feathermoon Stronghold capital to be associated with this quest.</param>
+    public QuestFeathermoon(Capital feathermoon) 
+      : base(
+        "Shores of Feathermoon",
+        "Without aid from the primary Sentinel force, Feathermoon Stronghold will undoubtedly fall to the assault of the Old Gods. We will need to restore it.",
+        @"ReplaceableTextures\CommandButtons\BTNBearDen.blp")
     {
-      AddObjective(new ObjectiveControlPoint(UNIT_N05U_FEATHERMOON_STRONGHOLD));
-      AddObjective(new ObjectiveExpire(1200, Title));
+      _feathermoon = feathermoon; // Assign the Feathermoon Stronghold capital
+
+      AddObjective(new ObjectiveBuildUniqueBuildingsInRect(Regions.FeathermoonUnlock, "in Feathermoon", 3));
+      AddObjective(new ObjectiveControlPoint(UNIT_N05U_FEATHERMOON));
       ResearchId = UPGRADE_R06M_QUEST_COMPLETED_SHORES_OF_FEATHERMOON;
     }
 
     /// <inheritdoc />
     public override string RewardFlavour =>
-      "Those stationed at Feathermoon Stronghold were among the first casualties claimed by the Black Empire. With the base recaptured, the process of avenging them can begin.";
+      "The Sentinels have rebuilt Feathermoon Stronghold to its former glory. Naisha now joins their efforts.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => 
-      $"Learn to train Maiev from the {GetObjectName(UNIT_E00R_ALTAR_OF_WATCHERS_SENTINEL_ALTAR)} and gain control of Feathermoon Stronghold";
+    protected override string RewardDescription =>
+      $"Learn to train Naisha from the {GetObjectName(UNIT_E00R_ALTAR_OF_WATCHERS_SENTINEL_ALTAR)} and gain control of the survivors hiding in Feathermoon.";
 
     /// <inheritdoc />
     protected override void OnAdd(Faction whichFaction)
     {
-      _rescueUnits = Regions.FeathermoonUnlock.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
+      _rescueUnits = Regions.FeathermoonUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
+      // Rescue units in Feathermoon Unlock.
       completingFaction.Player.RescueGroup(_rescueUnits);
+      
+      // Restore Feathermoon Stronghold's hit points to 100%.
+      if (_feathermoon.Unit != null && GetUnitState(_feathermoon.Unit, UNIT_STATE_LIFE) > 0)
+      {
+        _feathermoon.Unit.SetLifePercent(100); // Restore life to 100%.
+      }
     }
-    
+
     /// <inheritdoc />
     protected override void OnFail(Faction failingFaction)
     {
+      // If players fail, the neutral aggressive faction rescues the units.
       var rescuer = failingFaction.ScoreStatus == ScoreStatus.Defeated
         ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
         : failingFaction.Player;
-
+      
       rescuer.RescueGroup(_rescueUnits);
+
+      // Restore Feathermoon Stronghold's hit points to 100%.
+      if (_feathermoon.Unit != null && GetUnitState(_feathermoon.Unit, UNIT_STATE_LIFE) > 0)
+      {
+        _feathermoon.Unit.SetLifePercent(100); // Restore life to 100%.
+      }
     }
   }
 }

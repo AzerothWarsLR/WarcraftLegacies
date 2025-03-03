@@ -82,7 +82,8 @@ Once you have secured your holdings, gather your army and destroy the Old Gods. 
       var questAstranaar = AddQuest(new QuestAstranaar(new List<Rectangle> { Regions.AstranaarUnlock, Regions.AuberdineUnlock }));
       StartingQuest = questAstranaar;
 
-      var questFeathermoon = AddQuest(new QuestFeathermoon());
+      // Register the updated QuestFeathermoon
+      var questFeathermoon = AddQuest(new QuestFeathermoon(_allLegendSetup.Sentinels.Feathermoon));
 
       AddQuest(new QuestSentinelsKillBlackEmpire(_allLegendSetup.BlackEmpire.Nzoth));
       AddQuest(new QuestSentinelsKillCthun(_allLegendSetup.Ahnqiraj.Cthun));
