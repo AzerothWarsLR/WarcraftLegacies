@@ -1,0 +1,24 @@
+{
+  "OldId": 863466351,
+  "NewId": 892350575,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Akama)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.75
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Thrall\u0027s feral embodiment of the Horde."
+    }
+  ]
+}

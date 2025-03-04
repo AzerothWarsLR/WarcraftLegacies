@@ -1,4 +1,6 @@
-﻿using MacroTools.FactionSystem;
+﻿using MacroTools.Extensions;
+using MacroTools.FactionSystem;
+using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
@@ -22,7 +24,8 @@ namespace WarcraftLegacies.Source.Quests.Cthun
       @"ReplaceableTextures\CommandButtons\BTNCthunHatchery.blp")
     {
       _gateAhnQiraj = gateAhnQiraj;
-      AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in outer Ahn'Qiraj", 5));
+      AddObjective(new ObjectiveBuildUniqueBuildingsInRect(questRect, "in outer Ahn'Qiraj", 3));
+      AddObjective(new ObjectiveExpire(660, Title));
     }
 
     /// <inheritdoc/>
@@ -30,7 +33,18 @@ namespace WarcraftLegacies.Source.Quests.Cthun
     {
       if (completingFaction.Player == null)
         return;
-      SetUnitOwner(_gateAhnQiraj, completingFaction.Player, true);
+
+      _gateAhnQiraj
+        .SetInvulnerable(false)
+        .SetOwner(completingFaction.Player);
+    }
+
+    /// <inheritdoc />
+    protected override void OnFail(Faction completingFaction)
+    {
+      _gateAhnQiraj
+        .SetInvulnerable(false)
+        .SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     /// <inheritdoc/>
@@ -39,5 +53,8 @@ namespace WarcraftLegacies.Source.Quests.Cthun
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Gain control of the gate of Ahn'Qiraj";
+
+    /// <inheritdoc/>
+    protected override void OnAdd(Faction whichFaction) => _gateAhnQiraj.SetInvulnerable(true);
   }
 }
