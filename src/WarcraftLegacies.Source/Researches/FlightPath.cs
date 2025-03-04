@@ -8,23 +8,22 @@ using WCSharp.Shared.Data;
 namespace WarcraftLegacies.Source.Researches
 {
   /// <summary>
-  /// When the flight path is researched, the two flight path waygates at Orgrimmar and Thunder Bluff become active
-  /// and connected to each other, operated solely by the Frostwolf clan.
+  /// When flight path is researched, the two flight path waygates at Orgrimmar and Thunder Bluff become active
+  /// and connected to eachother.
   /// </summary>
   public sealed class FlightPath : Research
   {
+    private readonly Faction _warsong;
     private readonly Faction _frostwolf;
     private const int ResearchId = UPGRADE_R09N_FLIGHT_PATH_WARSONG;
     private static unit? _flightToOrgrimmar;
     private static unit? _flightToThunderBluff;
     private static bool _researched;
 
-    /// <summary>
-    /// Initializes the FlightPath research for the Frostwlf faction only.
-    /// </summary>
-    public FlightPath(Faction frostwolf, int researchTypeId, int goldCost, PreplacedUnitSystem preplacedUnitSystem) 
-        : base(researchTypeId, goldCost)
+    /// <inheritdoc />
+    public FlightPath(Faction warsong, Faction frostwolf, int researchTypeId, int goldCost, PreplacedUnitSystem preplacedUnitSystem) : base(researchTypeId, goldCost)
     {
+      _warsong = warsong;
       _frostwolf = frostwolf;
       var orgrimmarLocation = new Point(-9704, -858);
       var thunderbluffLocation = new Point(-14445, -4042);
@@ -35,9 +34,13 @@ namespace WarcraftLegacies.Source.Researches
     /// <inheritdoc />
     public override void OnResearch(player researchingPlayer)
     {
-      if (_researched) return; 
+      if (_researched)
+      {
+        Refund(researchingPlayer, false);
+        return;
+      }
       
-      var recipient = _frostwolf.Player;
+      var recipient = _warsong.Player ?? _frostwolf.Player;
       if (recipient == null)
       {
         _flightToOrgrimmar?.Kill();
@@ -56,6 +59,7 @@ namespace WarcraftLegacies.Source.Researches
         .SetInvulnerable(false);
 
       _frostwolf.SetObjectLevel(ResearchId, 1);
+      _warsong.SetObjectLevel(ResearchId, 1);
       _researched = true;
     }
 
