@@ -35,5 +35,9 @@
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </Content>
     </ItemGroup>
+    
+    <ItemGroup>
+      <Compile Remove="MapMigrations\SelfDestructMigration.cs" />
+    </ItemGroup>
 
 </Project>
