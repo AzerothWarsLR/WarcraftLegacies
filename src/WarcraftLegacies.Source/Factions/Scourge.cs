@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
-using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
@@ -79,7 +78,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
       BlightSetup.Setup(_preplacedUnitSystem);
       SacrificeAcolyte.Setup();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
-      TheFrozenThrone.Setup(this, _allLegendSetup.Scourge.TheFrozenThrone);
+      TheFrozenThrone.Setup(this, _allLegendSetup.Scourge.TheFrozenThrone, _allLegendSetup.Scourge.Arthas);
     }
 
     private void RegisterObjectLevels()
@@ -146,13 +145,7 @@ When the Plague hits Lordaeron, you will have a choice to where you want all you
           UNIT_UCRM_BURROWED_CRYPT_FIEND_RED,
           UNIT_UCRY_CRYPT_FIEND_SCOURGE
         },
-        DependentArtifact = _artifactSetup.HelmOfDomination,
-        IconName = "Revenant",
-        ValidHolders = new List<Legend>
-        {
-          _allLegendSetup.Scourge.TheFrozenThrone,
-          _allLegendSetup.Scourge.Arthas
-        }
+        IconName = "Revenant"
       };
       
       AddPower(domination);
