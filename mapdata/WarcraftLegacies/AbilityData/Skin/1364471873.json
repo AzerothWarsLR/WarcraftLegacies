@@ -56,7 +56,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Shandris fire a powerful arrow, causing damage to units in a line. |n|n|cffffcc00Level 1|r - \u003CA0TQ,DataA1\u003E damage. Max \u003CA0TQ,DataB1\u003E damage.|n|cffffcc00Level 2|r - \u003CA0TQ,DataA2\u003E damage. Max \u003CA0TQ,DataB2\u003E damage.|n|cffffcc00Level 3|r - \u003CA0TQ,DataA3\u003E damage. Max \u003CA0TQ,DataB3\u003E damage.|n|cffffcc00Level 4|r - \u003CA0TQ,DataA4\u003E damage. Max \u003CA0TQ,DataB4\u003E damage."
+      "Value": "Shandris fire a powerful arrow, causing damage to units in a line. |n|n|cffffcc00Level 1|r - 150 damage. Max 2000 damage.|n|cffffcc00Level 2|r - 225 damage. Max 2350 damage.|n|cffffcc00Level 3|r - 300 damage. Max 2600 damage.|n|cffffcc00Level 4|r - 350 damage. Max 2950 damage."
     },
     {
       "Id": 1952543585,
@@ -91,25 +91,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Sends a gigantic wave which deals \u003CA0TQ,DataA1\u003E damage to enemy units in a line, up to \u003CA0TQ,DataB1\u003E max damage."
+      "Value": "Sends a gigantic wave which deals 150 damage to enemy units in a line, up to 2000 max damage."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Sends a gigantic wave which deals \u003CA0TQ,DataA2\u003E damage to enemy units in a line, up to \u003CA0TQ,DataB2\u003E max damage."
+      "Value": "Sends a gigantic wave which deals 225 damage to enemy units in a line, up to 2350 max damage."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Sends a gigantic wave which deals \u003CA0TQ,DataA3\u003E damage to enemy units in a line, up to \u003CA0TQ,DataB3\u003E max damage."
+      "Value": "Sends a gigantic wave which deals 300 damage to enemy units in a line, up to 2600 max damage."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Sends a gigantic wave which deals \u003CA0TQ,DataA4\u003E damage to enemy units in a line, up to \u003CA0TQ,DataB4\u003E max damage."
+      "Value": "Sends a gigantic wave which deals 350 damage to enemy units in a line, up to 2950 max damage."
     }
   ]
 }

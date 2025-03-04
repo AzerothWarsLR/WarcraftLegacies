@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Arthas = new LegendaryHero("Arthas Menethil")
       {
         UnitType = UNIT_UEAR_CHAMPION_OF_THE_SCOURGE_SCOURGE,
-        StartingXp = 4000,
+        StartingXp = 7000,
         StartingArtifacts = new List<Artifact>
         {
           new(CreateItem(ITEM_ZB07_FROSTMOURNE, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))

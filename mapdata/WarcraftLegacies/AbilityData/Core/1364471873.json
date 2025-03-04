@@ -73,49 +73,49 @@
       "Pointer": 1,
       "Id": 829645653,
       "Type": 2,
-      "Value": 180
+      "Value": 225
     },
     {
       "Level": 3,
       "Pointer": 1,
       "Id": 829645653,
       "Type": 2,
-      "Value": 270
+      "Value": 300
     },
     {
       "Level": 4,
       "Pointer": 1,
       "Id": 829645653,
       "Type": 2,
-      "Value": 360
+      "Value": 350
     },
     {
       "Level": 1,
       "Pointer": 2,
       "Id": 846422869,
       "Type": 2,
-      "Value": 800
+      "Value": 2000
     },
     {
       "Level": 2,
       "Pointer": 2,
       "Id": 846422869,
       "Type": 2,
-      "Value": 1600
+      "Value": 2350
     },
     {
       "Level": 3,
       "Pointer": 2,
       "Id": 846422869,
       "Type": 2,
-      "Value": 2400
+      "Value": 2600
     },
     {
       "Level": 4,
       "Pointer": 2,
       "Id": 846422869,
       "Type": 2,
-      "Value": 3200
+      "Value": 2950
     },
     {
       "Level": 1,
@@ -235,13 +235,6 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "ground,air,structure,enemy,neutral"
-    },
-    {
-      "Level": 1,
-      "Pointer": 1,
-      "Id": 829645653,
-      "Type": 2,
-      "Value": 90
     }
   ]
 }

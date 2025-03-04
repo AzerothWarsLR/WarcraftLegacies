@@ -127,7 +127,7 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       AddQuest(new QuestJainaSoulGem(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Neutral.Caerdarrow));
       AddQuest(new QuestBlueDragons(_allLegendSetup.Neutral.TheNexus));
       AddQuest(new QuestKarazhan(_allLegendSetup.Neutral.Karazhan));
-      AddQuest(new QuestGreymaneWall(questDalaran, Regions.GilneasUnlock5));
+      AddQuest(new QuestGreymaneWall(questDalaran, _gilneasGate));
       AddQuest(new QuestTheramore(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Dalaran.Dalaran,  Regions.Theramore));
 
       AddQuest(crystalGolem);
