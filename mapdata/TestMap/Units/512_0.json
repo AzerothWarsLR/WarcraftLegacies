@@ -1,8 +1,6 @@
 [
   {
     "Flags": 2,
-    "HP": -1,
-    "MP": -1,
     "InventoryData": [],
     "AbilityData": [],
     "CustomPlayerColorId": -1,
