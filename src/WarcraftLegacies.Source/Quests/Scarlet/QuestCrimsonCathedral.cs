@@ -1,9 +1,9 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
-using MacroTools.QuestSystem;
 using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
+using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.Scarlet
 {

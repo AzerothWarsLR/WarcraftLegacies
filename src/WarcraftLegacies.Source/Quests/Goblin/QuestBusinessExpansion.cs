@@ -2,7 +2,6 @@
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.QuestSystem;
 
-
 namespace WarcraftLegacies.Source.Quests.Goblin
 {
   /// <summary>
@@ -21,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       AddObjective(new ObjectiveControlLevel(UNIT_N05C_GADGETZAN, 4));
       AddObjective(new ObjectiveControlLevel(UNIT_N0A6_RATCHET, 4));
       AddObjective(new ObjectiveControlLevel(UNIT_N09D_AUBERDINE, 4));
-      AddObjective(new ObjectiveControlLevel(UNIT_N05U_FEATHERMOON_STRONGHOLD, 4));
+      AddObjective(new ObjectiveControlLevel(UNIT_N05U_FEATHERMOON, 4));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = UPGRADE_R07G_QUEST_COMPLETED_BUSINESS_EXPANSION;
     }

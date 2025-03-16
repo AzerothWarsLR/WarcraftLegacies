@@ -1,5 +1,5 @@
-﻿using MacroTools;
-using MacroTools.LegendSystem;
+﻿using MacroTools.LegendSystem;
+using MacroTools.Systems;
 
 #pragma warning disable CS1591
 

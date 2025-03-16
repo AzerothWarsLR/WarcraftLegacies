@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNIronHordeFortress.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDragonLair.blp"
     },
     {
       "Id": 2020631157,
@@ -22,7 +22,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Building_DragonmawGreatHall.mdl"
+      "Value": "war3mapImported\\DragonPitCavernLairV2.mdl"
     },
     {
       "Id": 1953458293,
@@ -38,6 +38,21 @@
       "Id": 1651864693,
       "Type": 3,
       "Value": "Primary structure. "
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Lair"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Upgrade to Lair"
     }
   ]
 }

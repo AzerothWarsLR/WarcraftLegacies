@@ -1,21 +1,22 @@
-﻿using MacroTools;
+﻿using System.Collections.Generic;
+using MacroTools.Data;
 using MacroTools.FactionSystem;
 using MacroTools.PassiveAbilities;
-using WarcraftLegacies.Source.Quests.Cthun;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
+using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon;
 using WarcraftLegacies.Source.PassiveAbilities.Incubate;
 using WarcraftLegacies.Source.PassiveAbilities.SpellConduction;
+using WarcraftLegacies.Source.Quests.Cthun;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Researches.Ahnqiraj;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.MassiveAttack;
-using System.Collections.Generic;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -48,22 +49,16 @@ You do not possess boats, but your workers can burrow through water, use them to
         "cthun",
         "c'thun"
       };
+      ProcessObjectInfo(AhnqirajObjectInfo.GetAllObjectInfos());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
       RegisterResearches();
       RegisterSpells();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
       RegisterQuests();
-    }
-
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in AhnqirajObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

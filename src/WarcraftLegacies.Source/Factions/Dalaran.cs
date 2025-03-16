@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
-using MacroTools;
 using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
-using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using MacroTools.Libraries;
 using MacroTools.Mechanics;
@@ -10,6 +8,7 @@ using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
+using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.GameLogic;
 using WarcraftLegacies.Source.Quests;
@@ -44,9 +43,6 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       CinematicMusic = "SadMystery";
       ControlPointDefenderUnitTypeId = UNIT_N00N_CONTROL_POINT_DEFENDER_DALARAN;
-      StartingCameraPosition = Regions.DalaStartPos.Center;
-      StartingUnits = Regions.DalaStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
-      LearningDifficulty = FactionLearningDifficulty.Basic;
       IntroText = @"You are playing the wise |cffff8080Council of Dalaran|r.
 
 You begin in the Hillsbrad Foothills, separated from the main forces of Dalaran. To unlock Dalaran you must capture Shadowfang Keep, which have been encircled by monsters.
@@ -65,12 +61,13 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
 
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
       RegisterFactionDependentInitializer<Legion>(RegisterBookOfMedivhQuest);
+      ProcessObjectInfo(DalaranObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
+      RegisterObjectLevels();
       RegisterQuests();
       RegisterDialogue();
       RegisterProtectors();
@@ -85,14 +82,12 @@ Your mages are the finest in Azeroth, be sure to utilize them alongside your her
       Regions.Dalaran.CleanupNeutralPassiveUnits();
       Regions.ShadowfangUnlock.CleanupNeutralPassiveUnits();
       Regions.SouthshoreUnlock.CleanupNeutralPassiveUnits();
+      Regions.DalaStartPos.CleanupNeutralPassiveUnits();
       base.OnNotPicked();
     }
       
-    private void RegisterObjectLimits()
+    private void RegisterObjectLevels()
     {
-      foreach (var (objectTypeId, objectLimit) in DalaranObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
-
       ModAbilityAvailability(ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, 1);
       ModAbilityAvailability(ABILITY_A0GG_SPELL_SHIELD_SPELL_BOOK_ORANGE_KIRIN_TOR, -1); //Todo: should be global
       ModAbilityAvailability(ABILITY_A0WG_SPELL_SHIELD_SPELL_BOOK_ORANGE_ANTONIDAS_RED_LICH_KING, -1);

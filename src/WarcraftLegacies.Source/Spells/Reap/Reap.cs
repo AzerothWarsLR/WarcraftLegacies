@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Linq;
-using MacroTools;
+using MacroTools.Data;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.SpellSystem;
+using MacroTools.Utils;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 
@@ -50,9 +51,8 @@ namespace WarcraftLegacies.Source.Spells.Reap
         var abilityLevel = GetAbilityLevel(caster);
         var radius = Radius.Base + Radius.PerLevel * abilityLevel;
         var unitsSlain = UnitsSlain.Base + UnitsSlain.PerLevel * abilityLevel;
-        var killTargets = CreateGroup()
+        var killTargets = GlobalGroup
           .EnumUnitsInRange(casterPosition, radius)
-          .EmptyToList()
           .Where(x => IsValidTarget(x, caster))
           .OrderBy(x => GetUnitLevel(x))
           .ThenBy(x => MathEx.GetDistanceBetweenPoints(caster.GetPosition(), x.GetPosition()))

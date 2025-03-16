@@ -8,7 +8,7 @@
     {
       "Id": 1953980789,
       "Type": 3,
-      "Value": "Revive Warlord Maiden"
+      "Value": "Revive Gargok"
     },
     {
       "Id": 1718840949,
@@ -23,17 +23,17 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
+      "Value": 1.4
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Warlord Maiden"
+      "Value": "Warsong Battlemaster"
     },
     {
       "Id": 1919972469,
       "Type": 3,
-      "Value": "Revive Warlord Maiden"
+      "Value": "Revive Gargok"
     },
     {
       "Id": 1651864693,
@@ -43,32 +43,37 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Summon Warlord Maiden"
+      "Value": "Summon Gargok"
     },
     {
       "Id": 1869770869,
       "Type": 3,
-      "Value": "Zaela"
+      "Value": "Gargok"
     },
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNGarona.blp"
+      "Value": "ReplaceableTextures/CommandButtons/BTNOrcWarrior.blp"
     },
     {
       "Id": 1769173877,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNGarona.blp"
+      "Value": "ReplaceableTextures/CommandButtons/BTNOrcWarrior.blp"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\OrcHuntress.mdl"
+      "Value": "war3mapImported\\WolfriderWarlord.mdl"
     },
     {
       "Id": 1684960117,
       "Type": 3,
       "Value": "HeroWarden"
+    },
+    {
+      "Id": 1668510581,
+      "Type": 1,
+      "Value": 2
     }
   ]
 }

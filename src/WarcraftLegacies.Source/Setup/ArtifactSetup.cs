@@ -1,5 +1,5 @@
-﻿using MacroTools;
-using MacroTools.ArtifactSystem;
+﻿using MacroTools.ArtifactSystem;
+using MacroTools.Systems;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Setup

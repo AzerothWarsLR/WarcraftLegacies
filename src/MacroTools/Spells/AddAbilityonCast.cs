@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Buffs;
+using MacroTools.Data;
 using MacroTools.SpellSystem;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;

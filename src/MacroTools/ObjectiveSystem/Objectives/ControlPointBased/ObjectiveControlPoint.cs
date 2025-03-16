@@ -3,6 +3,7 @@ using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
+using MacroTools.Utils;
 using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
@@ -62,9 +63,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 
     private void RegisterKillTriggers(float range)
     {
-      var unitsNearby = CreateGroup()
-          .EnumUnitsInRange(_target.Unit.GetPosition(), range)
-          .EmptyToList()
+      var unitsNearby = GlobalGroup
+        .EnumUnitsInRange(_target.Unit.GetPosition(), range)
           .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !x.IsType(UNIT_TYPE_ANCIENT) &&
            !x.IsType(UNIT_TYPE_SAPPER) && !x.IsType(UNIT_TYPE_STRUCTURE)); 
 

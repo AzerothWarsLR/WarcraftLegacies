@@ -1,16 +1,16 @@
 ﻿using System.Collections.Generic;
-using MacroTools;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ResearchSystems;
+using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests.Quelthalas;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
-using WarcraftLegacies.Source.Powers;
-using MacroTools.LegendSystem;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -50,12 +50,13 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       };
 
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
+      ProcessObjectInfo(QuelthalasObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
+      RegisterObjectLevels();
       RegisterQuests();
       RegisterResearches();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
@@ -81,11 +82,8 @@ The Plague of Undeath is coming and Lordaeron will need your help with the Scour
       });
     }
     
-    private void RegisterObjectLimits()
+    private void RegisterObjectLevels()
     {
-      foreach (var (objectTypeId, objectLimit) in QuelthalasObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
-
       ModAbilityAvailability(ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
       ModAbilityAvailability(ABILITY_A0OC_EXTRACT_VIAL_ALL, -1);
     }

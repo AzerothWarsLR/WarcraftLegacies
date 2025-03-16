@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using MacroTools;
 using MacroTools.ChannelSystem;
+using MacroTools.Data;
 using MacroTools.Extensions;
 using WCSharp.Buffs;
 using WCSharp.Events;

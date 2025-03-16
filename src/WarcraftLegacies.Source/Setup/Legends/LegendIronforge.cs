@@ -1,5 +1,5 @@
-﻿using MacroTools;
-using MacroTools.LegendSystem;
+﻿using MacroTools.LegendSystem;
+using MacroTools.Systems;
 using WCSharp.Shared.Data;
 
 #pragma warning disable CS1591
@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 1000
       };
 
-      GreatForge = new Capital()
+      GreatForge = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(FourCC("h001")),
         DeathMessage = "The Great Forge has been extinguished.", //Todo: mediocre flavour

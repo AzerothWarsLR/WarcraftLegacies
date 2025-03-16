@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
-using MacroTools.Extensions;
 using MacroTools.SpellSystem;
+using MacroTools.Utils;
 using WCSharp.Effects;
 using WCSharp.Shared.Data;
 
@@ -25,9 +25,8 @@ namespace WarcraftLegacies.Source.Spells
       try
       {
         var maxTargets = CountBase + CountLevel * GetAbilityLevel(caster);
-        foreach (var unit in CreateGroup()
+        foreach (var unit in GlobalGroup
                    .EnumUnitsInRange(targetPoint, Radius)
-                   .EmptyToList()
                    .Take(maxTargets)
                  )
           if (IsValidTarget(caster, unit))

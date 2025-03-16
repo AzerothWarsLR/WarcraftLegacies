@@ -1,6 +1,7 @@
 ﻿using MacroTools.CommandSystem;
 using MacroTools.Extensions;
 using MacroTools.ShoreSystem;
+using MacroTools.Utils;
 using static War3Api.Common;
 
 namespace MacroTools.Cheats
@@ -33,7 +34,7 @@ namespace MacroTools.Cheats
 
       _executed = true;
 
-      foreach (var unit in CreateGroup().EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds).EmptyToList())
+      foreach (var unit in GlobalGroup.EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds))
         unit.Remove();
 
       var newFogModifier = CreateFogModifierRect(cheater, FOG_OF_WAR_VISIBLE,

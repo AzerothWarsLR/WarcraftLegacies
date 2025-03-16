@@ -1,5 +1,5 @@
-﻿using MacroTools;
-using MacroTools.LegendSystem;
+﻿using MacroTools.LegendSystem;
+using MacroTools.Systems;
 
 #pragma warning disable CS1591
 
@@ -45,7 +45,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         PlayerColor = PLAYER_COLOR_GREEN
       };
 
-      LegionStronghold = new Capital()
+      LegionStronghold = new Capital
       {
         Unit = preplacedUnitSystem.GetUnit(UNIT_U00G_LEGION_STRONGHOLD_LEGION_OTHER),
         DeathMessage =

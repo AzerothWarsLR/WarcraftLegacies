@@ -4,11 +4,12 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
-using MacroTools.FactionChoices;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
 using MacroTools.ResearchSystems;
+using MacroTools.Shared;
+using MacroTools.Utils;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -33,6 +34,7 @@ namespace MacroTools.FactionSystem
     private readonly List<unit> _goldMines = new();
     private readonly Dictionary<int, int> _objectLevels = new();
     private readonly Dictionary<int, int> _objectLimits = new();
+    private readonly Dictionary<UnitCategory, int> _objectsByCategory = new();
     private readonly List<Power> _powers = new();
     private readonly Dictionary<string, QuestData> _questsByName = new();
     private readonly int _undefeatedResearch;
@@ -115,12 +117,6 @@ namespace MacroTools.FactionSystem
     /// <summary>How much gold the faction starts with.</summary>
     public int StartingGold { get; protected init; }
 
-    /// <summary>The units this faction should start the game with.</summary>
-    public List<unit> StartingUnits { get; protected init; } = new();
-
-    /// <summary>Where any player occupying this faction should have their camera set to on game start.</summary>
-    public Point? StartingCameraPosition { get; protected init; }
-
     /// <summary>Players with this faction will become this color.</summary>
     public playercolor PlayerColor { get; }
 
@@ -155,14 +151,6 @@ namespace MacroTools.FactionSystem
 
     /// <summary>Whether or not the <see cref="Faction"/> has been defeated.</summary>
     public ScoreStatus ScoreStatus { get; private set; } = ScoreStatus.Undefeated;
-
-    /// <summary>
-    /// Indicates how difficult it is to learn the basic mechanics of this <see cref="Faction"/>.
-    /// <para>This isn't about how difficult the Faction is to play optimally, but rather how difficult it is to
-    /// play at a very basic level. For instance, a Faction with a very complex starting quest would be very hard
-    /// even if it doesn't have to perform a lot of micro in fights.</para>
-    /// </summary>
-    public FactionLearningDifficulty LearningDifficulty { get; protected init; }
 
     public string ColoredName => $"{PrefixCol}{_name}|r";
 
@@ -264,7 +252,6 @@ namespace MacroTools.FactionSystem
     /// </summary>
     public virtual void OnNotPicked()
     {
-      RemoveGoldMines();
     }
 
     /// <summary>
@@ -294,7 +281,13 @@ namespace MacroTools.FactionSystem
     ///   Returns the maximum number of times the Faction can train a unit, build a building, or research a research.
     /// </summary>
     /// <param name="whichObject">The object ID of a unit, building, or research.</param>
-    public int GetObjectLimit(int whichObject) => _objectLimits.TryGetValue(whichObject, out var limit) ? limit : 0;
+    public int GetObjectLimit(int whichObject) => _objectLimits.GetValueOrDefault(whichObject, 0);
+
+    /// <summary>
+    /// Provides the unit type belonging to the provided <see cref="UnitCategory"/> for this faction, if any.
+    /// </summary>
+    public bool TryGetObjectByCategory(UnitCategory category, out int objectTypeId) =>
+      _objectsByCategory.TryGetValue(category, out objectTypeId);
 
     /// <summary>Adds a <see cref="Power" /> to this <see cref="Faction" />.</summary>
     public void AddPower(Power power)
@@ -469,6 +462,34 @@ namespace MacroTools.FactionSystem
     public List<QuestData> GetAllQuests() => _questsByName.Values.ToList();
 
     /// <summary>
+    /// Removes a number of gold mines both from the game and from this unit's list of mines.
+    /// </summary>
+    internal void RemoveGoldMines(IEnumerable<unit> goldMinesToRemove)
+    {
+      foreach (var goldMine in goldMinesToRemove)
+      {
+        if (!_goldMines.Contains(goldMine))
+          throw new InvalidOperationException($"Tried to remove Gold Mine from {Name} that they don't own.");
+
+        goldMine.Remove();
+      }
+    }
+    
+    /// <summary>
+    /// Takes the provided object information and registers object limits and categories to the <see cref="Faction"/>/
+    /// </summary>
+    protected void ProcessObjectInfo(IEnumerable<ObjectInfo> objectInfos)
+    {
+      foreach (var (objectTypeId, objectInfo) in objectInfos)
+      {
+        var fourCc = FourCC(objectTypeId);
+        ModObjectLimit(FourCC(objectTypeId), objectInfo.Limit);
+        if (objectInfo.Category != UnitCategory.None) 
+          _objectsByCategory[objectInfo.Category] = fourCc;
+      }
+    }
+
+    /// <summary>
     /// Registers an initializer function that will only fire once a <see cref="Faction"/>s of the specified type has
     /// been registered.
     /// </summary>
@@ -576,7 +597,7 @@ namespace MacroTools.FactionSystem
       return essentialLegends;
     }
 
-    /// <summary>Removes all gold mines assigned to the faction</summary>
+    /// <summary>Removes all gold mines assigned to the faction.</summary>
     private void RemoveGoldMines()
     {
       foreach (var unit in GoldMines) 

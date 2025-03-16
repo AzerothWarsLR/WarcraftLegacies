@@ -16,7 +16,7 @@
       //};
       //foreach (var area in areas)
       //{
-      //  foreach (var unit in CreateGroup().EnumUnitsInRect(area).EmptyToList())
+      //  foreach (var unit in GlobalGroup.EnumUnitsInRect(area).EmptyToList())
       //    unit.Remove();
       //  EnumDestructablesInRect(area.Rect, null, () => { RemoveDestructable(GetEnumDestructable()); });
       //}

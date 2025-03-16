@@ -1,9 +1,9 @@
-﻿using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+﻿using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using MacroTools.LegendSystem;
 using WCSharp.Shared.Data;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 
 namespace WarcraftLegacies.Source.Quests.Scarlet
 {

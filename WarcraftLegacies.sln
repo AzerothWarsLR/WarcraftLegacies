@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Launcher.IntegrityChecker",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarcraftLegacies.Shared", "src\WarcraftLegacies.Shared\WarcraftLegacies.Shared.csproj", "{A3319E1F-A91C-44CA-83AC-857F439E5825}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacroTools.Shared", "src\MacroTools.Shared\MacroTools.Shared.csproj", "{C56793DB-A403-44D1-9797-0D1E06246108}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{A3319E1F-A91C-44CA-83AC-857F439E5825}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3319E1F-A91C-44CA-83AC-857F439E5825}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3319E1F-A91C-44CA-83AC-857F439E5825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C56793DB-A403-44D1-9797-0D1E06246108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C56793DB-A403-44D1-9797-0D1E06246108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C56793DB-A403-44D1-9797-0D1E06246108}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C56793DB-A403-44D1-9797-0D1E06246108}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,5 +83,6 @@ Global
 		{BD465133-F515-4436-BDCD-31861A3D0DDD} = {626B90E8-C679-4658-88F5-2EDE97F940DE}
 		{6BA878CD-A97E-44A5-B243-CE30FDE2E357} = {7E0407DE-0070-46E2-93C6-C9C662276392}
 		{A3319E1F-A91C-44CA-83AC-857F439E5825} = {626B90E8-C679-4658-88F5-2EDE97F940DE}
+		{C56793DB-A403-44D1-9797-0D1E06246108} = {626B90E8-C679-4658-88F5-2EDE97F940DE}
 	EndGlobalSection
 EndGlobal

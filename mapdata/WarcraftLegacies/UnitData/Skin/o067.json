@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNForsakenMausoleum.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDragonDungeon.blp"
     },
     {
       "Id": 2020631157,
@@ -26,7 +26,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Building_DragonmawBarracks.mdl"
+      "Value": "war3mapImported\\DragonDungeon.mdl"
     },
     {
       "Id": 1953458293,
@@ -36,17 +36,17 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": 0.75
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "War Camp"
+      "Value": "Dungeon"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Build War Camp"
+      "Value": "Build Dungeon"
     },
     {
       "Id": 1935832437,

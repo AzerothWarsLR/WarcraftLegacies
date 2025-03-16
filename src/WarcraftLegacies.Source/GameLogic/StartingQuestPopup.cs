@@ -1,6 +1,7 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
+using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.GameLogic
 {
@@ -20,7 +21,7 @@ namespace WarcraftLegacies.Source.GameLogic
       TriggerRegisterTimerEvent(trig, timeToDisplay, false);
       TriggerAddAction(trig, () =>
       {
-        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+        foreach (var player in Util.EnumeratePlayers())
         {
           var playerFaction = player.GetFaction();
           if (playerFaction?.StartingQuest != null)

@@ -1,9 +1,9 @@
-﻿using MacroTools;
+﻿using System.Collections.Generic;
+using MacroTools.Data;
 using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
-using System.Collections.Generic;
 using WarcraftLegacies.Source.FactionMechanics.Scourge;
 using WarcraftLegacies.Source.PassiveAbilities;
 using WarcraftLegacies.Source.Spells;
@@ -100,7 +100,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         {
           Base = 5
         },
-        StrengthPerUnitUpgraded = new LeveledAbilityField<int>()
+        StrengthPerUnitUpgraded = new LeveledAbilityField<int>
         {
           Base = 7
         },

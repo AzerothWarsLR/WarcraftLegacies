@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
@@ -10,6 +9,7 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.Powers;
 using MacroTools.QuestSystem;
+using MacroTools.Systems;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 

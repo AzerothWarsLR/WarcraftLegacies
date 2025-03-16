@@ -8,13 +8,13 @@ using Launcher.DataTransferObjects;
 using Launcher.DTOMappers;
 using Launcher.Extensions;
 using Launcher.JsonConverters;
+using MacroTools.Shared.Extensions;
 using War3Net.Build;
 using War3Net.Build.Audio;
 using War3Net.Build.Environment;
 using War3Net.Build.Info;
 using War3Net.Build.Object;
 using War3Net.Build.Widget;
-using WarcraftLegacies.Shared.Extensions;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 using static Launcher.MapDataPaths;
 

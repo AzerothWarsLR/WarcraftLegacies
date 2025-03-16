@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Shredders gain the Cleaving Attack ability and 500 hit points";
+      "Shredders gain the Cleaving Attack ability and 500 hit points";
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestLumberMarket"/> class.

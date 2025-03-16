@@ -8,7 +8,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNIceTotem.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNDragonArcaneTemple.blp"
     },
     {
       "Id": 2020631157,
@@ -22,12 +22,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Building_DragonmawConclave.mdl"
-    },
-    {
-      "Id": 1633907573,
-      "Type": 1,
-      "Value": 0.75
+      "Value": "war3mapImported\\DragonArcaneTemple.mdl"
     },
     {
       "Id": 1935832437,
@@ -48,6 +43,11 @@
       "Id": 1885959285,
       "Type": 3,
       "Value": "Build Dark Conclave"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
     }
   ]
 }

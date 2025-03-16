@@ -1,8 +1,9 @@
-﻿using MacroTools;
-using MacroTools.ChannelSystem;
+﻿using MacroTools.ChannelSystem;
+using MacroTools.Data;
 using MacroTools.Extensions;
 using MacroTools.Instances;
 using MacroTools.SpellSystem;
+using WCSharp.Shared;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells.Slipstream
@@ -80,7 +81,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
 
     private bool IsPointValidTarget(unit caster, Point targetPoint) =>
       !IsTerrainPathable(targetPoint.X, targetPoint.Y, PATHING_TYPE_WALKABILITY) 
-      && !(WCSharp.Shared.Util.DistanceBetweenPoints(GetUnitX(caster), GetUnitY(caster), TargetLocation.X, TargetLocation.Y) < 500) 
+      && !(Util.DistanceBetweenPoints(GetUnitX(caster), GetUnitY(caster), TargetLocation.X, TargetLocation.Y) < 500) 
       && InstanceSystem.GetPointInstance(caster.GetPosition()) == InstanceSystem.GetPointInstance(targetPoint);
   }
 }

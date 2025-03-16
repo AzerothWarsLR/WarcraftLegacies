@@ -1,11 +1,11 @@
-﻿using MacroTools.Extensions;
+﻿using System.Collections.Generic;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using System.Collections.Generic;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras

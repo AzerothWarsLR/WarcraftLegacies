@@ -1,5 +1,5 @@
 ﻿using System;
-using MacroTools;
+using MacroTools.Systems;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source

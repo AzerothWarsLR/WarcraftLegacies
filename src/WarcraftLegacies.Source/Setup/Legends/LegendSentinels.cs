@@ -1,5 +1,5 @@
-﻿using MacroTools;
-using MacroTools.LegendSystem;
+﻿using MacroTools.LegendSystem;
+using MacroTools.Systems;
 
 #pragma warning disable CS1591
 
@@ -35,8 +35,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Feathermoon = new Capital
       {
-        Unit = preplacedUnitSystem.GetUnit(FourCC("e00M")),
-        Capturable = true,
+        Unit = preplacedUnitSystem.GetUnit(UNIT_E00M_FEATHERMOON_STRONGHOLD_SENTINEL_OTHER),
         Essential = true
       };
 

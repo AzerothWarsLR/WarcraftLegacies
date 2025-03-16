@@ -1,8 +1,8 @@
 ﻿using System;
-using MacroTools;
 using MacroTools.Cheats;
 using MacroTools.Extensions;
-using WarcraftLegacies.Source.GameLogic;
+using MacroTools.Systems;
+using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.Cheats
 {
@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Cheats
 
     private static void Actions()
     {
-      if (!TestMode.CheatCondition()) 
+      if (!TestMode.CheatCondition(GetTriggerPlayer())) 
         return;
 
       try
@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.Cheats
     private static void DelayedSetup()
     {
       _skipTrigger = CreateTrigger();
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      foreach (var player in Util.EnumeratePlayers())
         TriggerRegisterPlayerEvent(_skipTrigger, player, EVENT_PLAYER_END_CINEMATIC);
       TriggerAddAction(_skipTrigger, Actions);
 

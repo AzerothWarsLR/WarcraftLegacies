@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Skywall
     public override string RewardFlavour => "The Throne of the Four Winds have joined us";
 
     /// <inheritdoc />
-    protected override string RewardDescription => $"Gain Control of all buildings in the Throne of the Four Winds";
+    protected override string RewardDescription => "Gain Control of all buildings in the Throne of the Four Winds";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)

@@ -1,5 +1,6 @@
 ﻿using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
+using MacroTools.Setup;
 using WCSharp.Events;
 
 namespace MacroTools.ObjectiveSystem.Objectives.UnitBased

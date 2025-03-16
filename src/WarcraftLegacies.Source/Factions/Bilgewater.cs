@@ -1,11 +1,10 @@
 ﻿using System.Collections.Generic;
-using MacroTools;
 using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
-using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.Powers;
+using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Goblin;
@@ -28,7 +27,6 @@ namespace WarcraftLegacies.Source.Factions
       _artifactSetup = artifactSetup;
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_O01C_CONTROL_POINT_DEFENDER_GOBLIN;
-      LearningDifficulty = FactionLearningDifficulty.Advanced;
       IntroText = @"You are playing as the industrious |cff808080Bilgewater Cartel|r.
 
 You begin in Tanaris with a very small business venture. Expand onto Kalimdor to grow your trade empire.
@@ -49,12 +47,12 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
         "goblin",
         "goblins"
       };
+      ProcessObjectInfo(BilgewaterObjectInfo.GetAllObjectLimits());
     }
         
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
       RegisterQuests();
       RegisterDialogue();
       RegisterPowers();
@@ -66,12 +64,6 @@ The Trading Center in Kezan will unlock the ability to train Traders. Be sure to
     {
       Regions.KezanUnlock.CleanupNeutralPassiveUnits();
       base.OnNotPicked();
-    }
-    
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in BilgewaterObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

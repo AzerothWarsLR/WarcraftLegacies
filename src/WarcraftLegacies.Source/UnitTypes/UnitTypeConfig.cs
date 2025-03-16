@@ -1,4 +1,5 @@
-﻿using MacroTools;
+﻿using MacroTools.Systems;
+using WarcraftLegacies.Shared;
 
 namespace WarcraftLegacies.Source.UnitTypes
 {
@@ -6,8 +7,7 @@ namespace WarcraftLegacies.Source.UnitTypes
   {
     public static void Setup()
     {
-      SubSetupA();
-      SubSetupB();
+      SubSetupFactionConfig();
       SubSetupPortals();
       SubSetupTrader();
       SubSetupGatesA();
@@ -15,100 +15,20 @@ namespace WarcraftLegacies.Source.UnitTypes
       SubSetupGoblinMerchant();
     }
 
-    private static void SubSetupA()
+    private static void SubSetupFactionConfig()
     {
-      UnitType.Register(new UnitType(UNIT_HSHY_SHIPYARD_LORDAERON_SHIPYARD)
+      var objectInfoRepository = new ObjectInfoRepository();
+      foreach (var objectInfo in objectInfoRepository.GetAllObjectInfo())
       {
-        Category = UnitCategory.Shipyard
-      });
-
-      UnitType.Register(new UnitType(UNIT_H076_SHIPYARD_DALARAN_SHIPYARD)
-      {
-        Category = UnitCategory.Shipyard
-      });
-
-      UnitType.Register(new UnitType(UNIT_H07W_SHIPYARD_KUL_TIRAS_SHIPYARD)
-      {
-        Category = UnitCategory.Shipyard
-      });
-
-      UnitType.Register(new UnitType(UNIT_H077_SHIPYARD_QUEL_THALAS_SHIPYARD)
-      {
-        Category = UnitCategory.Shipyard
-      });
-
-      UnitType.Register(new UnitType(UNIT_H03H_SHIPYARD_GILNEAS_SHIPYARD)
-      {
-        Category = UnitCategory.Shipyard
-      });
-
-      UnitType.Register(new UnitType(UNIT_H06D_ROYAL_HARBOUR_STORMWIND_SHIPYARD)
-      {
-        Category = UnitCategory.Shipyard
-      });
-
-      UnitType.Register(new UnitType(UNIT_H07D_SHIPYARD_IRONFORGE_SHIPYARD)
-      {
-        Category = UnitCategory.Shipyard
-      });
-
-      UnitType.Register(new UnitType(UNIT_OSHY_HORDE_PIER_FROSTWOLF_SHIPYARD)
-      {
-        Category = UnitCategory.Shipyard
-      });
-
-      UnitType.Register(new UnitType(UNIT_O02T_SHIPYARD_WARSONG_SHIPYARD)
-      {
-        Category = UnitCategory.Shipyard
-      });
-
-      UnitType.Register(new UnitType(UNIT_O032_SHIPYARD_FEL_HORDE_SHIPYARD)
-      {
-        Category = UnitCategory.Shipyard
-      });
-    }
-
-    private static void SubSetupB()
-    {
-      UnitType.Register(new UnitType(UNIT_O03I_SHIPYARD_TWILIGHT_DOCK)
-      {
-        Category = UnitCategory.Shipyard
-      });
-
-      UnitType.Register(new UnitType(UNIT_O049_GOLDEN_DOCK_ZANDALARI_SHIPYARD)
-      {
-        Category = UnitCategory.Shipyard
-      });
-
-      UnitType.Register(new UnitType(UNIT_O03V_BILGEWATER_HARBOR_GOBLIN_SHIPYARD)
-      {
-        Category = UnitCategory.Shipyard
-      });
-
-      UnitType.Register(new UnitType(UNIT_USHP_HAUNTED_HARBOR_SCOURGE_SHIPYARD)
-      {
-        Category = UnitCategory.Shipyard
-      });
-
-      UnitType.Register(new UnitType(UNIT_U009_SHIPYARD_LEGION_SHIPYARD)
-      {
-        Category = UnitCategory.Shipyard
-      });
-
-      UnitType.Register(new UnitType(UNIT_ESHY_KALDOREI_DOCKS_DRUID_SENTINEL_SHIPYARD)
-      {
-        Category = UnitCategory.Shipyard
-      });
-
-      UnitType.Register(new UnitType(UNIT_E011_KALDOREI_DOCKS_SENTINEL_SHIPYARD)
-      {
-        Category = UnitCategory.Shipyard
-      });
+        UnitType.Register(new UnitType(FourCC(objectInfo.ObjectTypeId))
+        {
+          Category = objectInfo.Category
+        });
+      }
     }
 
     private static void SubSetupPortals()
     {
-      
       UnitType.Register(new UnitType(UNIT_N036_DARK_PORTAL_WAYGATE)
       {
         NeverDelete = true
@@ -118,7 +38,6 @@ namespace WarcraftLegacies.Source.UnitTypes
       {
         NeverDelete = true
       });
-
     }
     
     private static void SubSetupTrader()

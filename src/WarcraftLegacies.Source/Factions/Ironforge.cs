@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using MacroTools;
 using MacroTools.FactionSystem;
 using MacroTools.ResearchSystems;
+using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Ironforge;
@@ -47,21 +47,19 @@ Stormwind is preparing for an invasion through the Dark Portal in the South. Mus
         "dwarves"
       };
       RegisterFactionDependentInitializer<Stormwind>(RegisterStormwindResearches);
+      ProcessObjectInfo(IronforgeObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
+      RegisterObjectLevels();
       RegisterQuests();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
-    private void RegisterObjectLimits()
+    private void RegisterObjectLevels()
     {
-      foreach (var (objectTypeId, objectLimit) in IronforgeObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
-
       ModAbilityAvailability(ABILITY_A0IH_SPIKED_BARRICADES_DWARF_KEEP, -1);
       ModAbilityAvailability(ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);
       ModAbilityAvailability(ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);

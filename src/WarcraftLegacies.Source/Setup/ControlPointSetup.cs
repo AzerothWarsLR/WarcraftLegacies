@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
-using MacroTools.Extensions;
-
+using MacroTools.Utils;
+using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Setup
 {
@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Setup
 
     public static void Setup()
     {
-      foreach (var unit in CreateGroup().EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds).EmptyToList())
+      foreach (var unit in GlobalGroup.EnumUnitsInRect(Rectangle.WorldBounds))
         InitializeControlPoint(unit);
     }
     

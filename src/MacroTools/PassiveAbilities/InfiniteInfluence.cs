@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
+using MacroTools.Utils;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -37,9 +38,8 @@ namespace MacroTools.PassiveAbilities
 
     private bool IsWithinRangeOfAnyHero(player caster, Point position)
     {
-      return CreateGroup()
+      return GlobalGroup
         .EnumUnitsInRange(position, Radius)
-        .EmptyToList()
         .Any(x => IsAlliedHero(caster, x));
     }
 

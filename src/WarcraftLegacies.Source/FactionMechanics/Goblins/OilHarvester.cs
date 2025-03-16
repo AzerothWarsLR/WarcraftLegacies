@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.Hazards;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Powers;
+using MacroTools.Utils;
 using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.FactionMechanics.Goblins
@@ -62,8 +63,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
 
     private static bool EnsureValidPositioning(unit createdUnit)
     {
-      if (CreateGroup().EnumUnitsInRange(createdUnit.GetPosition(), 900)
-          .EmptyToList()
+      if (GlobalGroup.EnumUnitsInRange(createdUnit.GetPosition(), 900)
           .All(x => x.GetTypeId() != createdUnit.GetTypeId() || x == createdUnit || !UnitAlive(x)))
         return true;
       createdUnit.Kill().Remove();

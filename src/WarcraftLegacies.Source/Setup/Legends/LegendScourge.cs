@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using MacroTools;
 using MacroTools.ArtifactSystem;
 using MacroTools.LegendSystem;
+using MacroTools.Systems;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Setup.Legends

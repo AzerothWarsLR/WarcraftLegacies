@@ -1,5 +1,6 @@
 ﻿using System;
 using MacroTools.Extensions;
+using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.GameLogic
 {
@@ -18,7 +19,7 @@ namespace WarcraftLegacies.Source.GameLogic
       {
         try
         {
-          foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+          foreach (var player in Util.EnumeratePlayers())
             DisplayTextToPlayer(player, 0, 0, player.GetFaction()?.IntroText ?? "");
           
           DestroyTimer(GetExpiredTimer());
@@ -28,7 +29,7 @@ namespace WarcraftLegacies.Source.GameLogic
           Console.WriteLine($"Error displaying intro text {ex}");
         }
       });
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+      foreach (var player in Util.EnumeratePlayers())
         DisplayTimedTextToPlayer(player, 0, 0, displayTime - 1, @"|cffffcc00Warcraft Legacies|r
   |cffaaaaaaJoin our Discord:|r discord.gg/pnWZs69
   |cffff0000Support our Patreon:|r https://www.patreon.com/lordsebas

@@ -1,5 +1,5 @@
-﻿using MacroTools;
-using MacroTools.LegendSystem;
+﻿using MacroTools.LegendSystem;
+using MacroTools.Systems;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
@@ -22,17 +22,17 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       LegendaryHeroManager.Register(Zaela = new LegendaryHero("Zaela")
       {
-        UnitType = UNIT_O05S_WARLORD_MAIDEN_DRAGONMAW
+        UnitType = UNIT_O05S_WARSONG_BATTLEMASTER_DRAGONMAW
       });
 
       LegendaryHeroManager.Register(Nekrosh = new LegendaryHero("Nek'rosh Skullcrasher")
       {
-        UnitType = UNIT_O01Q_DRAGONMAW_CHIEFTAIN_FEL_HORDE
+        UnitType = UNIT_O01Q_OVERLORD_FEL_HORDE
       });
 
       LegendaryHeroManager.Register(Gorfax = new LegendaryHero("Gorfax")
       {
-        UnitType = UNIT_O06F_BLOOD_WARRIOR_DRAGONMAW,
+        UnitType = UNIT_O06F_CHIEFTAIN_OF_THE_BONECHEWER_CLAN_DRAGONMAW,
         StartingXp = 5400,
       });
 

@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MacroTools;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Libraries;
@@ -8,8 +7,8 @@ using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using MacroTools.UserInterface;
-using WarcraftLegacies.Source.GameLogic;
+using MacroTools.Utils;
+using WarcraftLegacies.Source.FactionMechanics.Scourge;
 using WarcraftLegacies.Source.Rocks;
 using WCSharp.Shared.Data;
 
@@ -101,10 +100,10 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     private static void PresentInvasionDialogs()
     {
       new ScourgeInvasionDialogPresenter(
-          new Choice<Rectangle?>(null, "No invasion"),
-          new Choice<Rectangle?>(Regions.CaerDarrow, "Scholomance"),
-          new Choice<Rectangle?>(Regions.StratholmeScourgeBase, "Stratholme"),
-          new Choice<Rectangle?>(Regions.DeathknellUnlock, "Deathknell"))
+          new ScourgeInvasionChoice(null, "No invasion"),
+          new ScourgeInvasionChoice(Regions.CaerDarrow, "Scholomance"),
+          new ScourgeInvasionChoice(Regions.StratholmeScourgeBase, "Stratholme"),
+          new ScourgeInvasionChoice(Regions.DeathknellUnlock, "Deathknell"))
         .Run(Player(3));
     }
 
@@ -123,9 +122,8 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         FourCC("nvk2")
       };
 
-      var villagers = CreateGroup()
+      var villagers = GlobalGroup
         .EnumUnitsOfPlayer(Player(PLAYER_NEUTRAL_PASSIVE))
-        .EmptyToList()
         .Where(x => villagerUnitTypeIds.Contains(x.GetTypeId()));
       
       foreach (var villager in villagers) 

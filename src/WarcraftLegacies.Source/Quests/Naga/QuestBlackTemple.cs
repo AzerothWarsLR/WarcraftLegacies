@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// Initializes a new instance of the <see cref="QuestBlackTemple"/> class.
     /// </summary>
     public QuestBlackTemple(Rectangle rescueRect, LegendaryHero illidan) : base("Seat of Power",
-      $"Illidan requires the aid of his servants in Outland for the upcoming war. He must travel to the Black Temple to muster them. His incredible power allows him to move between worlds with ease.",
+      "Illidan requires the aid of his servants in Outland for the upcoming war. He must travel to the Black Temple to muster them. His incredible power allows him to move between worlds with ease.",
       @"ReplaceableTextures\CommandButtons\BTNWarpPortal.blp")
     {
       AddObjective(new ObjectiveLegendInRect(illidan, Regions.IllidanBlackTempleUnlock, "Black Temple"));
@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     public override string RewardFlavour => "The forces of Outland are now under Illidan's command.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => $"Gain control of the Black Temple and enable Lady Vashj to be trained at the Altar of the Betrayer";
+    protected override string RewardDescription => "Gain control of the Black Temple and enable Lady Vashj to be trained at the Altar of the Betrayer";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)

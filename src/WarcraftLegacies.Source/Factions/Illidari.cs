@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
-using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
@@ -30,10 +29,7 @@ namespace WarcraftLegacies.Source.Factions
       UndefeatedResearch = UPGRADE_R02L_ILLIDAN_EXISTS;
       StartingGold = 200;
       FoodMaximum = 250;
-      StartingCameraPosition = Regions.IllidanStartingPosition.Center;
-      StartingUnits = Regions.IllidanStartingPosition.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       ControlPointDefenderUnitTypeId = UNIT_N0BB_CONTROL_POINT_DEFENDER_ILLIDARI_TOWER;
-      LearningDifficulty = FactionLearningDifficulty.Basic;
       IntroText = @"You are playing as the Betrayer, Illidan|r|r.
 
 You begin on the Broken Isles, ready to plunder the tombs for artifacts to empower Illidan.
@@ -54,12 +50,12 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
       RegisterFactionDependentInitializer<Druids>(RegisterDruidsDialogue);
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
       RegisterFactionDependentInitializer<Sentinels, Druids>(RegisterSentinelsDruidsDialogue);
+      ProcessObjectInfo(IllidariObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
       RegisterQuests();
       RegisterDialogue();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
@@ -74,12 +70,6 @@ Support your ally in Outland by unlocking bases and coordinating with his push o
       Regions.IllidariUnlockSA.CleanupNeutralPassiveUnits(NeutralPassiveCleanupType.TurnUnitsHostile);
       Regions.AkamaUnlock.CleanupNeutralPassiveUnits(NeutralPassiveCleanupType.TurnUnitsHostile);
       base.OnNotPicked();
-    }
-
-    private void RegisterObjectLimits()
-    {
-      foreach (var (objectTypeId, objectLimit) in IllidariObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
     }
 
     private void RegisterQuests()

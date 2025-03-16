@@ -1,8 +1,9 @@
-﻿using MacroTools;
-using MacroTools.ChannelSystem;
+﻿using MacroTools.ChannelSystem;
+using MacroTools.Data;
 using MacroTools.Extensions;
 using MacroTools.Instances;
 using MacroTools.SpellSystem;
+using WCSharp.Shared;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells.Slipstream
@@ -48,7 +49,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
     /// <inheritdoc/>
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      var portalOrigin = WCSharp.Shared.Util.PositionWithPolarOffset(GetUnitX(caster), GetUnitY(caster), PortalOffset, caster.GetFacing());
+      var portalOrigin = Util.PositionWithPolarOffset(GetUnitX(caster), GetUnitY(caster), PortalOffset, caster.GetFacing());
       ChannelManager.Add(new SlipstreamPortalChannel(caster, Id, new Point(portalOrigin.x, portalOrigin.y), targetPoint)
       {
         Active = true,
@@ -64,7 +65,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
     public override void OnStartCast(unit caster, unit target, Point targetPoint)
     {
       if (!IsTerrainPathable(targetPoint.X, targetPoint.Y, PATHING_TYPE_WALKABILITY) &&
-          !(WCSharp.Shared.Util.DistanceBetweenPoints(GetUnitX(caster), GetUnitY(caster), targetPoint.X,
+          !(Util.DistanceBetweenPoints(GetUnitX(caster), GetUnitY(caster), targetPoint.X,
             targetPoint.Y) < 500) && InstanceSystem.GetPointInstance(caster.GetPosition()) ==
           InstanceSystem.GetPointInstance(targetPoint))
         return;

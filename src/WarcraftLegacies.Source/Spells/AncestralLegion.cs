@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using MacroTools;
+using MacroTools.Data;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using WCSharp.Events;

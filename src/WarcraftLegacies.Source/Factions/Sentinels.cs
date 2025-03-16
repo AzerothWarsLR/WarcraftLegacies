@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
-using MacroTools;
 using MacroTools.DialogueSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.Powers;
+using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests;
@@ -21,7 +22,6 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    
     public Sentinels(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80",
       @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
     {
@@ -32,7 +32,8 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       CinematicMusic = "Comradeship";
       ControlPointDefenderUnitTypeId = UNIT_H03F_CONTROL_POINT_DEFENDER_SENTINELS;
-      IntroText = @"You are playing as the ever-watchful 
+      IntroText = @"You are playing as the ever-watchful |CFFBFFF80Sentinels|r.
+
 
 The Druids are slowly waking from their slumber, and it falls to you to drive back the Old Gods invaders from Kalimdor until then.
 
@@ -41,7 +42,7 @@ Your first mission is to race down the coast to Feathermoon Stronghold, a powerf
 Once you have secured your holdings, gather your army and destroy the Old Gods. Be careful, they will outnumber you if given time to establish a foothold in Azeroth.";
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-21000, 8600))
+        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-20780, 7860))
       };
       Nicknames = new List<string>
       {
@@ -54,22 +55,26 @@ Once you have secured your holdings, gather your army and destroy the Old Gods. 
       RegisterFactionDependentInitializer<Druids>(RegisterDruidsDialogue);
       RegisterFactionDependentInitializer<Illidari>(RegisterIllidariQuestsAndDialogue);
       RegisterFactionDependentInitializer<Legion>(RegisterLegionDialogue);
+      ProcessObjectInfo(SentinelsObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterObjectLimits();
       RegisterQuests();
       RegisterDialogue();
       RegisterPowers();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
+      Regions.AstranaarUnlock.CleanupHostileUnits();
+      Regions.AuberdineUnlock.CleanupHostileUnits();
     }
 
-    private void RegisterObjectLimits()
+    /// <inheritdoc />
+    public override void OnNotPicked()
     {
-      foreach (var (objectTypeId, objectLimit) in SentinelsObjectLimitData.GetAllObjectLimits())
-        ModObjectLimit(FourCC(objectTypeId), objectLimit.Limit);
+      Regions.AuberdineUnlock.CleanupNeutralPassiveUnits();
+      Regions.AstranaarUnlock.CleanupNeutralPassiveUnits();
+      base.OnNotPicked();
     }
 
     private void RegisterQuests()
@@ -77,6 +82,7 @@ Once you have secured your holdings, gather your army and destroy the Old Gods. 
       var questAstranaar = AddQuest(new QuestAstranaar(new List<Rectangle> { Regions.AstranaarUnlock, Regions.AuberdineUnlock }));
       StartingQuest = questAstranaar;
 
+      // Register the updated QuestFeathermoon
       var questFeathermoon = AddQuest(new QuestFeathermoon(_allLegendSetup.Sentinels.Feathermoon));
 
       AddQuest(new QuestSentinelsKillBlackEmpire(_allLegendSetup.BlackEmpire.Nzoth));

@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// Initializes a new instance of the <see cref="QuestStranglethornOutpost"/> class.
     /// </summary>
     public QuestStranglethornOutpost(Rectangle rescueRect, LegendaryHero vashj) : base("The Cape of Stranglethorn",
-      $"The Ruins in the Cape of Stranglethorn are an old Naga outpost, they could serve Illidan well",
+      "The Ruins in the Cape of Stranglethorn are an old Naga outpost, they could serve Illidan well",
       @"ReplaceableTextures\CommandButtons\BTNIllidariSpawningGrounds.blp")
     {
       AddObjective(new ObjectiveLegendInRect(vashj, rescueRect, "the Cape of Stranglethorn"));
