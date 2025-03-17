@@ -52,7 +52,6 @@ Your allies will be coming south to help you defend against the Old Gods, do not
         "frostwolve"
       };
       RegisterFactionDependentInitializer<Warsong>(RegisterWarsongDialogue);
-      RegisterFactionDependentInitializer<Warsong>(RegisterWarsongRelatedResearches);
       ProcessObjectInfo(FrostwolfObjectInfo.GetAllObjectLimits());
     }
 
@@ -62,6 +61,7 @@ Your allies will be coming south to help you defend against the Old Gods, do not
       RegisterObjectLevels();
       RegisterQuests();
       RegisterDialogue();
+      RegisterFlightPath();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
@@ -192,10 +192,15 @@ Your allies will be coming south to help you defend against the Old Gods, do not
         }));
     }
     
-    private void RegisterWarsongRelatedResearches(Warsong warsong)
+    private void RegisterFlightPath()
     {
-      ResearchManager.Register(new FlightPath(warsong, this, UPGRADE_R09N_FLIGHT_PATH_WARSONG, 70,
-        _preplacedUnitSystem));
+      // Registering Frostwolf's FlightPath research
+      ResearchManager.Register(new FlightPath(
+        this,                 
+        UPGRADE_R09N_FLIGHT_PATH_WARSONG, 
+        70,                  
+        _preplacedUnitSystem  
+      ));
     }
   }
 }
