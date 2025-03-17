@@ -78,19 +78,19 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Reduces the damage of all incoming attacks by \u003CA209,DataC2\u003E. Attacks cannot be reduced below \u003CA209,DataB2\u003E damage."
+      "Value": "Reduces the damage of all incoming attacks by \u003CA109,DataC2\u003E. Attacks cannot be reduced below \u003CA109,DataB2\u003E damage."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Reduces the damage of all incoming attacks by \u003CA309,DataC3\u003E. Attacks cannot be reduced below \u003CA309,DataB3\u003E damage."
+      "Value": "Reduces the damage of all incoming attacks by \u003CA109,DataC3\u003E. Attacks cannot be reduced below \u003CA109,DataB3\u003E damage."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Reduces the damage of all incoming attacks by \u003CA409,DataC4\u003E. Attacks cannot be reduced below \u003CA409,DataB4\u003E damage."
+      "Value": "Reduces the damage of all incoming attacks by \u003CA109,DataC4\u003E. Attacks cannot be reduced below \u003CA109,DataB4\u003E damage."
     },
     {
       "Id": 2020631137,
