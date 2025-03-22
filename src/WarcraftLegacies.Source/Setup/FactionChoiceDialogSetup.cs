@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Setup
         Difficulty = FactionLearningDifficulty.Advanced,
         StartingArea = Regions.SunfuryStartingPosition
       };
-      new FactionChoiceDialogPresenter(illidari, sunfury).Run(Player(15));
+      new FactionChoiceDialogPresenter(false, illidari, sunfury).Run(Player(15));
 
       var dalaran = new FactionChoice
       {
@@ -41,7 +41,7 @@ namespace WarcraftLegacies.Source.Setup
         Difficulty = FactionLearningDifficulty.Advanced,
         StartingArea = Regions.GilneasStartPos
       };
-      new FactionChoiceDialogPresenter(dalaran, gilneas).Run(Player(7));
+      new FactionChoiceDialogPresenter(false,dalaran, gilneas).Run(Player(7));
 
       var sentinels = new FactionChoice
       {
@@ -59,7 +59,7 @@ namespace WarcraftLegacies.Source.Setup
         Difficulty = FactionLearningDifficulty.Advanced,
         StartingArea = Regions.SentDraeSharedStartPos
       };
-      new FactionChoiceDialogPresenter(sentinels, draenei).Run(Player(18));
+      new FactionChoiceDialogPresenter(true, sentinels, draenei).Run(Player(18));
     }
   }
 }
