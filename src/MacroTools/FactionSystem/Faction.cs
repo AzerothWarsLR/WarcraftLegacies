@@ -281,7 +281,13 @@ namespace MacroTools.FactionSystem
     ///   Returns the maximum number of times the Faction can train a unit, build a building, or research a research.
     /// </summary>
     /// <param name="whichObject">The object ID of a unit, building, or research.</param>
-    public int GetObjectLimit(int whichObject) => _objectLimits.GetValueOrDefault(whichObject, 0);
+    public int GetObjectLimit(int whichObject)
+    {
+      if (_objectLimits.TryGetValue(whichObject, out var limit))
+        return limit;
+
+      return 0; 
+    }
 
     /// <summary>
     /// Provides the unit type belonging to the provided <see cref="UnitCategory"/> for this faction, if any.
