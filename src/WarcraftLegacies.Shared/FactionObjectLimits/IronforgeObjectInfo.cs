@@ -12,8 +12,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("h07E", Unlimited); //Town Hall
       yield return new("h07F", Unlimited); //Keep
       yield return new("h07G", Unlimited); //Castle
-      yield return new("h02P", Unlimited); //Farm  (Dwarven)
-      yield return new("h01S", Unlimited); //Tavern
+      yield return new(UNIT_H01S_TAVERN_IRONFORGE_FARM, Unlimited, UnitCategory.Farm);
       yield return new("h07B", Unlimited); //Altar of Kings
       yield return new("h07C", Unlimited); //Barracks
       yield return new("hlum", Unlimited); //Lumber Mill
