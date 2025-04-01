@@ -32,8 +32,9 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
 
       // Set default values for the rewards as a fallback
-      PillageGoldReward = 500;
-      PillageExperienceReward = 2000;
+      PillageGoldReward = 650;
+      PillageExperienceReward = 1700;
+      ResearchId = Constants.UPGRADE_R00K_SUBDUE_THE_DARKSPEAR_TROLLS;
     }
 
     /// <inheritdoc/>
@@ -68,16 +69,31 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         return;
       }
 
+      // Set Pillage rewards
       PillageGoldReward = 500;
       PillageExperienceReward = 2000;
 
+      // Create the dialog presenter with both Subdue and Pillage choices
       new WarsongPillageDialogPresenter(
         gromUnit,
-        new WarsongPillageChoice(PillageChoiceType.Pillage, "Pillage Echo Isles", Regions.EchoUnlock, PillageGoldReward,
-          PillageExperienceReward), // Custom rewards
-        new WarsongPillageChoice(PillageChoiceType.Subdue, "Subdue the Trolls", Regions.EchoUnlock, 0, 0) 
+        new WarsongPillageChoice(
+          PillageChoiceType.Pillage,
+          "Pillage Echo Isles",
+          Regions.EchoUnlock,
+          PillageGoldReward,
+          PillageExperienceReward
+        ),
+        new WarsongPillageChoice(
+          PillageChoiceType.Subdue,
+          "Subdue the Trolls",
+          Regions.EchoUnlock,
+          0,
+          0,
+          Constants.UPGRADE_R00K_SUBDUE_THE_DARKSPEAR_TROLLS // Assign the relevant research reward
+        )
       ).Run(completingFaction.Player);
     }
+
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)

@@ -32,6 +32,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
             // Set default values for the rewards as a fallback
             PillageGoldReward = 250;
             PillageExperienceReward = 800;
+            ResearchId = Constants.UPGRADE_R00O_SUBDUE_THE_THUNDERBLUFF_TAUREN;
         }
 
         /// <inheritdoc/>
@@ -68,10 +69,24 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
           new WarsongPillageDialogPresenter(
             gromUnit,
-            new WarsongPillageChoice(PillageChoiceType.Pillage, "Pillage Thunder Bluff", Regions.ThunderBluff, 700, 3000),
-            new WarsongPillageChoice(PillageChoiceType.Subdue, "Subdue the Tauren", Regions.ThunderBluff, 0, 0) 
+            new WarsongPillageChoice(
+              PillageChoiceType.Pillage,
+              "Pillage Thunder Bluff",
+              Regions.ThunderBluff,
+              700,       
+              3000      
+            ),
+            new WarsongPillageChoice(
+              PillageChoiceType.Subdue,
+              "Subdue the Tauren",
+              Regions.ThunderBluff,
+              0,
+              0,
+              Constants.UPGRADE_R00O_SUBDUE_THE_THUNDERBLUFF_TAUREN 
+            )
           ).Run(completingFaction.Player);
         }
+
 
         /// <inheritdoc />
         protected override void OnFail(Faction completingFaction)

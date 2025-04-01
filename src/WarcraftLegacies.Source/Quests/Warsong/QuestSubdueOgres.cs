@@ -16,13 +16,15 @@ namespace WarcraftLegacies.Source.Quests.Warsong
   {
     private readonly List<unit> _rescueUnits;
     private readonly LegendaryHero _grom;
+
+    // Rewards
     private int PillageGoldReward { get; set; }
     private int PillageExperienceReward { get; set; }
 
     public QuestSubdueOgres(Rectangle rescueRect, LegendaryHero grom)
       : base(
         "Brute Allegiance",
-        "Their brute strength is untamed, their loyalty unproven.Subdue the ogres and further strengthen the Horde.",
+        "Their brute strength is untamed, their loyalty unproven. Subdue the ogres and further strengthen the Horde.",
         @"ReplaceableTexturesCommandButtonsBTNBarracks.blp")
     {
       _grom = grom;
@@ -30,19 +32,20 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       AddObjective(new ObjectiveSelfExists());
 
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      // default values for fallback
+
+      // Default reward values
       PillageGoldReward = 300;
       PillageExperienceReward = 1000;
+      ResearchId = Constants.UPGRADE_R012_SUBDUE_THE_STONEMAUL_OGRES;
     }
-
 
     /// <inheritdoc/>
     public override string RewardFlavour =>
-      "The fate of the ogres has been decided, the Hordes power grows.";
+      "The fate of the ogres has been decided, and the Horde's power grows.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Control of Stonemaul and the ability to train {GetObjectName(UNIT_N07A_OGRE_WARRIOR_WARSONG)} from the {GetObjectName(UNIT_O01S_WAR_CAMP_WARSONG_BARRACKS)} and {GetObjectName(UNIT_N08O_OGRE_MAGI_WARSONG)} from the {GetObjectName(UNIT_O006_SPIRE_WARSONG_MAGIC)} or gain {PillageGoldReward} gold and {PillageExperienceReward} XP for Grom.";
+      $"Control of Stonemaul and the ability to train Ogres or gain {PillageGoldReward} gold and {PillageExperienceReward} XP for Grom.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
@@ -68,20 +71,31 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         return;
       }
 
-      // Set custom rewards
-      PillageGoldReward = 300;
-      PillageExperienceReward = 1000;
+      // Pillage rewards 
+      PillageGoldReward = 300;        
+      PillageExperienceReward = 1000; 
 
       new WarsongPillageDialogPresenter(
         gromUnit,
-        new WarsongPillageChoice(PillageChoiceType.Pillage, "Pillage Stonemaul", Regions.StonemaulKeep, PillageGoldReward, PillageExperienceReward),
-        new WarsongPillageChoice(PillageChoiceType.Subdue, "Subdue the Ogres", Regions.StonemaulKeep, 0, 0)
+        new WarsongPillageChoice(
+          PillageChoiceType.Pillage,
+          "Pillage Stonemaul",
+          Regions.StonemaulKeep,
+          PillageGoldReward,
+          PillageExperienceReward
+        ),
+        new WarsongPillageChoice(
+          PillageChoiceType.Subdue,
+          "Subdue the Ogres",
+          Regions.StonemaulKeep,
+          0,
+          0,
+          Constants.UPGRADE_R012_SUBDUE_THE_STONEMAUL_OGRES
+        )
       ).Run(completingFaction.Player);
     }
 
-
-
-    /// inheritdoc />
+    /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
       completingFaction.Player.RescueGroup(_rescueUnits);
