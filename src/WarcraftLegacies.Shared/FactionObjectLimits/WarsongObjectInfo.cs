@@ -9,8 +9,9 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
 
         public static IEnumerable<ObjectInfo> GetAllObjectLimits()
         {
-            yield return new("o00C", Unlimited); //Great Hall
             yield return new(UNIT_O00C_GREAT_HALL_WARSONG_T1, Unlimited, UnitCategory.TownHall);
+            yield return new(UNIT_O02R_STRONGHOLD_WARSONG_T2, Unlimited);
+            yield return new(UNIT_O02S_FORTRESS_WARSONG_T3, Unlimited);
             yield return new("o02S", Unlimited); //Fortress
             yield return new("o020", Unlimited); //Altar of Storms
             yield return new("o01S", Unlimited); //Barracks
@@ -25,6 +26,8 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
             yield return new(UNIT_O02T_SHIPYARD_WARSONG_SHIPYARD, Unlimited, UnitCategory.Shipyard);
             yield return new("o01T", Unlimited); //Goblin Hardware Shop
             yield return new(UNIT_O04L_PEON_WARSONG_WORKER, Unlimited, UnitCategory.Worker);
+            yield return new(UNIT_N08O_OGRE_MAGI_WARSONG, Unlimited);
+            yield return new(UNIT_N07A_OGRE_WARRIOR_WARSONG, Unlimited);
             yield return new("o02M", Unlimited); //Grunt
             yield return new("orai", Unlimited); //Raider
             yield return new("n08E", Unlimited); //Hexbinder
@@ -49,9 +52,9 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
             yield return new("O06L", 1); //Garrosh
             yield return new(UNIT_NSJS_BREWMASTER_WARSONG, 1);
             yield return new("n0CN", 1); //Gibbs
-            yield return
-              new(UNIT_OPGH_CORRUPTOR_OF_THE_WARSONG_CLAN_WARSONG_BLOODPACT,
+            yield return new(UNIT_OPGH_CORRUPTOR_OF_THE_WARSONG_CLAN_WARSONG_BLOODPACT,
                 1); //Blood Pact Grom   Fixes Perma Death Grom Blood Pact bug
+            yield return new(UPGRADE_R00J_OGRE_MAGRI_MASTER_TRAINING_WARSONG, Unlimited);
             yield return new("Robs", Unlimited); //Berserker Strength
             yield return new("Rotr", Unlimited); //Troll Regeneration
             yield return new("R01J", Unlimited); //Ensnare
