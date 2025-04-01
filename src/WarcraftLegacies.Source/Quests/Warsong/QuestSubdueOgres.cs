@@ -45,7 +45,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Control of Stonemaul and the ability to train Ogres or gain {PillageGoldReward} gold and {PillageExperienceReward} XP for Grom.";
+      $"Control of Stonemaul and the ability to train {GetObjectName(UNIT_N07A_OGRE_WARRIOR_WARSONG)}s' from the {GetObjectName(UNIT_O01S_WAR_CAMP_WARSONG_BARRACKS)} and {GetObjectName(UNIT_N08O_OGRE_MAGI_WARSONG)}s' from the {GetObjectName(UNIT_O006_SPIRE_WARSONG_MAGIC)} or gain {PillageGoldReward} gold and {PillageExperienceReward} XP for Grom.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)

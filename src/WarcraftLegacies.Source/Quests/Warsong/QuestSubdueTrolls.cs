@@ -43,7 +43,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Control of Echo Isles and the ability to train {GetObjectName(UNIT_OTBK_AXE_THROWER_WARSONG)} and {GetObjectName(UNIT_NOGN_WARLOCK_WARSONG)} from the {GetObjectName(UNIT_O006_SPIRE_WARSONG_MAGIC)} or gain {PillageGoldReward} gold and {PillageExperienceReward} XP for Grom.";
+      $"Control of Echo Isles and the ability to train {GetObjectName(UNIT_OTBK_AXE_THROWER_WARSONG)}s' from the {GetObjectName(UNIT_O01S_WAR_CAMP_WARSONG_BARRACKS)} and {GetObjectName(UNIT_NOGN_WARLOCK_WARSONG)}'s from the {GetObjectName(UNIT_O006_SPIRE_WARSONG_MAGIC)} or gain {PillageGoldReward} gold and {PillageExperienceReward} XP for Grom.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
