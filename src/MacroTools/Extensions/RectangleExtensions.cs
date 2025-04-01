@@ -129,9 +129,15 @@ namespace MacroTools.Extensions
     /// <param name="pickedFaction">The faction whose equivalents will be used.</param>
     public static void ReplaceUnitsWithFactionEquivalents(this Rectangle region, Faction pickedFaction)
     {
+      if (pickedFaction == null)
+      {
+        throw new ArgumentNullException(nameof(pickedFaction), "pickedFaction cannot be null.");
+      }
+
       var unitsInRegion = GlobalGroup
         .EnumUnitsInRect(region) // Enumerates all units in the rectangle
-        .Where(x => x.GetTypeId() != FourCC("ngol")); // Excludes any units of type 'ngol'
+        .Where(x => x.GetTypeId() != FourCC("ngol")) // Excludes any units of type 'ngol'
+        .Where(unit => IsUnitType(unit, UNIT_TYPE_STRUCTURE)); // Filter to include only structures
 
       foreach (var unit in unitsInRegion)
       {
@@ -143,5 +149,6 @@ namespace MacroTools.Extensions
         }
       }
     }
+
   }
 }

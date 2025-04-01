@@ -32,7 +32,14 @@
     
     Tower2,
     
+    Tower3,
+    
     Shop,
     
+    Teleport,
+    
+    SpecailFarm1,
+
+    SpecailFarm2
   }
 }

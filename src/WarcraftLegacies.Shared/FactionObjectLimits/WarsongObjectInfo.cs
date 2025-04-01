@@ -20,12 +20,16 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
             yield return new(UNIT_O028_BURROW_WARSONG_FARM, Unlimited, UnitCategory.Farm);
             yield return new(UNIT_N03E_IRON_KEEP_WARSONG_TOWER, Unlimited, UnitCategory.Tower);
             yield return new(UNIT_N0AL_IMPROVED_IRON_KEEP_WARSONG_TOWER_2, Unlimited, UnitCategory.Tower2);
+            yield return new (UNIT_NBT2_IMPROVED_BOULDER_TOWER, Unlimited, UnitCategory.Tower3);
             yield return new(UNIT_O02T_SHIPYARD_WARSONG_SHIPYARD, Unlimited, UnitCategory.Shipyard);
             yield return new(UNIT_O01T_TREASURE_HOARD_WARSONG_SHOP, Unlimited, UnitCategory.Shop);
+            yield return new(UNIT_NTT2_TAUREN_TENT_FROSTWOLF_OTHER, Unlimited, UnitCategory.SpecailFarm1);
+            yield return new(UNIT_H004_TROLL_HUT_FROSTWOLF_FARM, Unlimited, UnitCategory.SpecailFarm2);
             yield return new(UNIT_O006_SPIRE_WARSONG_MAGIC, Unlimited, UnitCategory.Magic);
             yield return new(UNIT_O04L_PEON_WARSONG_WORKER, Unlimited, UnitCategory.Worker);
             yield return new(UNIT_N08O_OGRE_MAGI_WARSONG, Unlimited);
             yield return new(UNIT_N07A_OGRE_WARRIOR_WARSONG, Unlimited);
+            yield return new(UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, 1, UnitCategory.Teleport);
             yield return new("o02M", Unlimited); //Grunt
             yield return new("orai", Unlimited); //Raider
             yield return new("n08E", Unlimited); //Hexbinder

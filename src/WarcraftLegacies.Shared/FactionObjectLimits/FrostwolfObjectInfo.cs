@@ -20,11 +20,15 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
             yield return new(UNIT_OTRB_BURROW_FROSTWOLF_FARM, Unlimited, UnitCategory.Farm);
             yield return new(UNIT_OWTW_WATCH_TOWER_FROSTWOLF_TOWER, Unlimited, UnitCategory.Tower);
             yield return new(UNIT_O002_IMPROVED_WATCH_TOWER_FROSTWOLF_TOWER_2, Unlimited, UnitCategory.Tower2);
+            yield return new (UNIT_NBT2_IMPROVED_BOULDER_TOWER, Unlimited, UnitCategory.Tower3);
             yield return new(UNIT_OVLN_VOODOO_LOUNGE_FROSTWOLF_SHOP, Unlimited, UnitCategory.Shop);
             yield return new(UNIT_OSHY_HORDE_PIER_FROSTWOLF_SHIPYARD, Unlimited, UnitCategory.Shipyard);
             yield return new(UNIT_OOSC_PACK_KODO_FROSTWOLF, Unlimited);
             yield return new(UNIT_OBEA_BEASTIARY_FROSTWOLF_SPECIALIST, Unlimited, UnitCategory.Specialist);
+            yield return new(UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, 1, UnitCategory.Teleport);
             yield return new(UNIT_OPEO_PEON_FROSTWOLF_WARSONG_WORKER, Unlimited, UnitCategory.Worker);
+            yield return new(UNIT_NTT2_TAUREN_TENT_FROSTWOLF_OTHER, Unlimited, UnitCategory.SpecailFarm1);
+            yield return new(UNIT_H004_TROLL_HUT_FROSTWOLF_FARM, Unlimited, UnitCategory.SpecailFarm2);
             yield return new(UNIT_OGRU_GRUNT_FROSTWOLF, Unlimited);
             yield return new(UNIT_OTAU_TAUREN_FROSTWOLF, Unlimited);
             yield return new(UNIT_OHUN_HEADHUNTER_FROSTWOLF, Unlimited);
