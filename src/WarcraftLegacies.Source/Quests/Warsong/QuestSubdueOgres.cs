@@ -16,6 +16,8 @@ namespace WarcraftLegacies.Source.Quests.Warsong
   {
     private readonly List<unit> _rescueUnits;
     private readonly LegendaryHero _grom;
+    private int PillageGoldReward { get; set; }
+    private int PillageExperienceReward { get; set; }
 
     public QuestSubdueOgres(Rectangle rescueRect, LegendaryHero grom)
       : base(
@@ -28,6 +30,9 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       AddObjective(new ObjectiveSelfExists());
 
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      // default values for fallback
+      PillageGoldReward = 300;
+      PillageExperienceReward = 1000;
     }
 
 
@@ -37,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Control of Stonemaul and the ability to train Ogres or gain 500 gold and 2000 XP for Grom.";
+      $"Control of Stonemaul and the ability to train {GetObjectName(UNIT_N07A_OGRE_WARRIOR_WARSONG)} from the {GetObjectName(UNIT_O01S_WAR_CAMP_WARSONG_BARRACKS)} and {GetObjectName(UNIT_N08O_OGRE_MAGI_WARSONG)} from the {GetObjectName(UNIT_O006_SPIRE_WARSONG_MAGIC)} or gain {PillageGoldReward} gold and {PillageExperienceReward} XP for Grom.";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
@@ -63,11 +68,14 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         return;
       }
 
-      // Create the dialog presenter with Grom and the pillage choices
+      // Set custom rewards
+      PillageGoldReward = 300;
+      PillageExperienceReward = 1000;
+
       new WarsongPillageDialogPresenter(
         gromUnit,
-        new WarsongPillageChoice(PillageChoiceType.Pillage, "Pillage Stonemaul", Regions.StonemaulKeep),
-        new WarsongPillageChoice(PillageChoiceType.Subdue, "Subdue the Ogres", Regions.StonemaulKeep)
+        new WarsongPillageChoice(PillageChoiceType.Pillage, "Pillage Stonemaul", Regions.StonemaulKeep, PillageGoldReward, PillageExperienceReward),
+        new WarsongPillageChoice(PillageChoiceType.Subdue, "Subdue the Ogres", Regions.StonemaulKeep, 0, 0)
       ).Run(completingFaction.Player);
     }
 

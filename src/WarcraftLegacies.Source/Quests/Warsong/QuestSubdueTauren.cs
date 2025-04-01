@@ -15,6 +15,8 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     {
         private readonly List<unit> _rescueUnits;
         private readonly LegendaryHero _grom;
+        private int PillageGoldReward { get; set; }
+        private int PillageExperienceReward { get; set; }
 
         public QuestSubdueTauren(Rectangle rescueRect, LegendaryHero grom)
           : base(
@@ -27,6 +29,9 @@ namespace WarcraftLegacies.Source.Quests.Warsong
             AddObjective(new ObjectiveSelfExists());
 
             _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+            // Set default values for the rewards as a fallback
+            PillageGoldReward = 250;
+            PillageExperienceReward = 800;
         }
 
         /// <inheritdoc/>
@@ -35,7 +40,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
         /// <inheritdoc/>
         protected override string RewardDescription =>
-          $"Control of Thunder Bluff and the ability to train {GetObjectName(UNIT_O06Q_CHAOS_KODO_BEAST_WARSONG)} Kodo Beasts from {GetObjectName(UNIT_O02Q_BEASTIARY_WARSONG_SPECIALIST)} or gain 500 gold and 2000 XP for Grom.";
+          $"Control of Thunder Bluff and the ability to train {GetObjectName(UNIT_OKOD_KODO_BEAST_WARSONG)} Kodo Beasts from {GetObjectName(UNIT_O02Q_BEASTIARY_WARSONG_SPECIALIST)} or gain {PillageGoldReward} gold and {PillageExperienceReward} XP for Grom.";
 
         /// <inheritdoc/>
         protected override void OnComplete(Faction completingFaction)
@@ -54,19 +59,18 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         /// </summary>
         private void PresentPillageDialogs(Faction completingFaction)
         {
-            var gromUnit = _grom?.Unit;
-            if (gromUnit == null)
-            {
-                Console.WriteLine("Without Grom's leadership to guide the Horde, the Tauren remain scattered and their lands pillaged.");
-                return;
-            }
+          var gromUnit = _grom.Unit;
+          if (gromUnit == null)
+          {
+            Console.WriteLine("Without Grom's leadership to guide the Horde, the Tauren remain scattered and their lands pillaged.");
+            return;
+          }
 
-            // Create the dialog presenter with Grom and the pillage choices
-            new WarsongPillageDialogPresenter(
-              gromUnit,
-              new WarsongPillageChoice(PillageChoiceType.Pillage, "Pillage Thunder Bluff", Regions.ThunderBluff),
-              new WarsongPillageChoice(PillageChoiceType.Subdue, "Subdue the Tauren", Regions.ThunderBluff)
-            ).Run(completingFaction.Player);
+          new WarsongPillageDialogPresenter(
+            gromUnit,
+            new WarsongPillageChoice(PillageChoiceType.Pillage, "Pillage Thunder Bluff", Regions.ThunderBluff, 700, 3000),
+            new WarsongPillageChoice(PillageChoiceType.Subdue, "Subdue the Tauren", Regions.ThunderBluff, 0, 0) 
+          ).Run(completingFaction.Player);
         }
 
         /// <inheritdoc />
