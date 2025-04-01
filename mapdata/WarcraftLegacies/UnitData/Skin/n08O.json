@@ -1,6 +1,6 @@
 {
   "OldId": 1735225198,
-  "NewId": 1480011886,
+  "NewId": 1329082478,
   "Unk": [
     0
   ],
@@ -13,7 +13,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(twilight)"
+      "Value": "(Warsong)"
     },
     {
       "Id": 1885959285,
@@ -47,7 +47,7 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Warrior spellcaster of the Twilight Hammer."
+      "Value": "Strong support spellcaster of the Horde."
     },
     {
       "Id": 1831952757,
