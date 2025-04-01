@@ -59,7 +59,7 @@ Your allies will be coming south to help you defend against the Old Gods, do not
             RegisterObjectLevels();
             RegisterQuests();
             RegisterDialogue();
-            Regions.ThunderBluffHostile.CleanupHostileUnits();
+            Regions.ThunderBluff.CleanupHostileUnits();
             Regions.EchoUnlock.CleanupHostileUnits();
             SharedFactionConfigSetup.AddSharedFactionConfig(this);
         }
@@ -75,7 +75,7 @@ Your allies will be coming south to help you defend against the Old Gods, do not
 
         private void RegisterQuests()
         {
-            StartingQuest = AddQuest(new QuestThunderBluff());
+            StartingQuest = AddQuest(new QuestThunderBluff(Regions.ThunderBluff));
             AddQuest(new QuestCrossroadsFrostwolf(Regions.Crossroads));
             AddQuest(new QuestDarkspear());
             AddQuest(new QuestOrgrimmarFrostwolf(Regions.Orgrimmar));
