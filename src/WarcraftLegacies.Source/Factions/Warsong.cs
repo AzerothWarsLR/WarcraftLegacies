@@ -57,6 +57,10 @@ The Night Elves are aware of your presence and are gathering a mighty host again
         {
             RegisterQuests();
             RegisterDialogue();
+            if (FactionManager.TryGetFactionByName("Frostwolf", out var frostwolfFaction))
+            {
+              Regions.Orgrimmar.ReplaceUnitsWithFactionEquivalents(frostwolfFaction);
+            }
             SharedFactionConfigSetup.AddSharedFactionConfig(this);
             Regions.BarrenAmbient2.CleanupHostileUnits();
             var thunderBluffUnit = _preplacedUnitSystem.GetUnit(Constants.UNIT_N03M_THUNDERBLUFF);

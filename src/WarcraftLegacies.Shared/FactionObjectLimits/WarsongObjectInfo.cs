@@ -12,19 +12,17 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
             yield return new(UNIT_O00C_GREAT_HALL_WARSONG_T1, Unlimited, UnitCategory.TownHall);
             yield return new(UNIT_O02R_STRONGHOLD_WARSONG_T2, Unlimited);
             yield return new(UNIT_O02S_FORTRESS_WARSONG_T3, Unlimited);
-            yield return new("o02S", Unlimited); //Fortress
-            yield return new("o020", Unlimited); //Altar of Storms
-            yield return new("o01S", Unlimited); //Barracks
-            yield return new("o009", Unlimited); //War Mill
-            yield return new("o006", Unlimited); //Ogre Barrack
-            yield return new("o05G", Unlimited); //Siege Workshop
-            yield return new("o02Q", Unlimited); //Bestiary
-            yield return new("o028", Unlimited); //Orc Burrow
-            yield return new("n03E", Unlimited); //Watch Tower
-            yield return new("o01H", Unlimited); //Troll Shrine
-            yield return new("n0AL", Unlimited); //Improved Watch Tower
+            yield return new(UNIT_O020_ALTAR_OF_CONQUERORS_WARSONG_ALTAR, Unlimited, UnitCategory.Altar);
+            yield return new(UNIT_O01S_WAR_CAMP_WARSONG_BARRACKS, Unlimited, UnitCategory.Barracks);
+            yield return new(UNIT_O009_REFINERY_WARSONG_RESEARCH, Unlimited, UnitCategory.Research);  
+            yield return new(UNIT_O05G_SIEGE_WORKSHOP_WARSONG_SIEGE, Unlimited, UnitCategory.Siege);
+            yield return new(UNIT_O02Q_BEASTIARY_WARSONG_SPECIALIST, Unlimited, UnitCategory.Specialist);
+            yield return new(UNIT_O028_BURROW_WARSONG_FARM, Unlimited, UnitCategory.Farm);
+            yield return new(UNIT_N03E_IRON_KEEP_WARSONG_TOWER, Unlimited, UnitCategory.Tower);
+            yield return new(UNIT_N0AL_IMPROVED_IRON_KEEP_WARSONG_TOWER_2, Unlimited, UnitCategory.Tower2);
             yield return new(UNIT_O02T_SHIPYARD_WARSONG_SHIPYARD, Unlimited, UnitCategory.Shipyard);
-            yield return new("o01T", Unlimited); //Goblin Hardware Shop
+            yield return new(UNIT_O01T_TREASURE_HOARD_WARSONG_SHOP, Unlimited, UnitCategory.Shop);
+            yield return new(UNIT_O006_SPIRE_WARSONG_MAGIC, Unlimited, UnitCategory.Magic);
             yield return new(UNIT_O04L_PEON_WARSONG_WORKER, Unlimited, UnitCategory.Worker);
             yield return new(UNIT_N08O_OGRE_MAGI_WARSONG, Unlimited);
             yield return new(UNIT_N07A_OGRE_WARRIOR_WARSONG, Unlimited);

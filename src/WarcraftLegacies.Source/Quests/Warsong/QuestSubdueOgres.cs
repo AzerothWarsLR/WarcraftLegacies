@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       : base(
         "Brute Allegiance",
         "Their brute strength is untamed, their loyalty unproven. Subdue the ogres and further strengthen the Horde.",
-        @"ReplaceableTexturesCommandButtonsBTNBarracks.blp")
+        @"ReplaceableTextures\CommandButtons\BTNOgre.blp")
     {
       _grom = grom;
       AddObjective(new ObjectiveControlPoint(Constants.UNIT_N022_STONEMAUL));

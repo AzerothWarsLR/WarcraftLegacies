@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using MacroTools.FactionSystem;
+using MacroTools.Systems;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
-
 
 namespace MacroTools.Extensions
 {
@@ -91,7 +92,7 @@ namespace MacroTools.Extensions
         }
       }
     }
-
+    
     /// <summary>
     /// Prepares all Neutral Passive inside the specified <paramref name="rectangle"/>.
     /// </summary>
@@ -118,6 +119,29 @@ namespace MacroTools.Extensions
       }
 
       return group;
+    }
+
+    /// <summary>
+    /// Replaces all units in a rectangle with their equivalents from the specified faction.
+    /// Ignores all units with the type ID "ngol".
+    /// </summary>
+    /// <param name="region">The rectangular region.</param>
+    /// <param name="pickedFaction">The faction whose equivalents will be used.</param>
+    public static void ReplaceUnitsWithFactionEquivalents(this Rectangle region, Faction pickedFaction)
+    {
+      var unitsInRegion = GlobalGroup
+        .EnumUnitsInRect(region) // Enumerates all units in the rectangle
+        .Where(x => x.GetTypeId() != FourCC("ngol")); // Excludes any units of type 'ngol'
+
+      foreach (var unit in unitsInRegion)
+      {
+        var replacedUnit = unit.ReplaceWithFactionEquivalent(pickedFaction); // Replaces with faction equivalent
+
+        if (replacedUnit != unit && CinematicMode.State == CinematicState.Active)
+        {
+          CinematicMode.AddPausedUnit(replacedUnit); // Handles cinematic transitions
+        }
+      }
     }
   }
 }

@@ -14,6 +14,25 @@
     
     Shipyard,
     
-    Farm
+    Farm,
+    
+    Altar,
+    
+    Specialist,
+    
+    Siege,
+    
+    Barracks,
+    
+    Research,
+    
+    Magic,
+    
+    Tower,
+    
+    Tower2,
+    
+    Shop,
+    
   }
 }
