@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
@@ -54,20 +55,45 @@ The Night Elves are aware of your presence and are gathering a mighty host again
 
         /// <inheritdoc />
         public override void OnRegistered()
-        {
-            RegisterQuests();
-            RegisterDialogue();
-            if (FactionManager.TryGetFactionByName("Frostwolf", out var frostwolfFaction))
-            {
-              Regions.Orgrimmar.ReplaceUnitsWithFactionEquivalents(frostwolfFaction);
-            }
-            SharedFactionConfigSetup.AddSharedFactionConfig(this);
-            Regions.BarrenAmbient2.CleanupHostileUnits();
-            var thunderBluffUnit = _preplacedUnitSystem.GetUnit(Constants.UNIT_N03M_THUNDERBLUFF);
-            thunderBluffUnit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-            var echoIslesUnit = _preplacedUnitSystem.GetUnit(Constants.UNIT_N02V_ECHO_ISLES);
-            echoIslesUnit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-        }
+{
+    Console.WriteLine($"[DEBUG]: OnRegistered called for the Warsong faction.");
+
+    // Register quests and dialogues
+    RegisterQuests();
+    Console.WriteLine($"[DEBUG]: Quests registered for Warsong.");
+    RegisterDialogue();
+    Console.WriteLine($"[DEBUG]: Dialogue registered for Warsong.");
+
+    // Replace units in specified regions with Warsong faction equivalents
+    Console.WriteLine($"[DEBUG]: Replacing units in 'Orgrimmar' region with 'Warsong' faction equivalents...");
+    Regions.Orgrimmar.ReplaceUnitsWithFactionEquivalents(this);
+    Console.WriteLine($"[DEBUG]: Units replaced in 'Orgrimmar' region.");
+
+    Console.WriteLine($"[DEBUG]: Replacing units in 'EchoUnlock' region with 'Warsong' faction equivalents...");
+    Regions.EchoUnlock.ReplaceUnitsWithFactionEquivalents(this);
+    Console.WriteLine($"[DEBUG]: Units replaced in 'EchoUnlock' region.");
+
+    Console.WriteLine($"[DEBUG]: Replacing units in 'ThunderBluff' region with 'Warsong' faction equivalents...");
+    Regions.ThunderBluff.ReplaceUnitsWithFactionEquivalents(this);
+    Console.WriteLine($"[DEBUG]: Units replaced in 'ThunderBluff' region.");
+
+    // Add shared faction configuration
+    SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    Console.WriteLine($"[DEBUG]: Shared faction config setup added for Warsong.");
+
+    // Clean up hostile units in the BarrenAmbient2 region
+    Regions.BarrenAmbient2.CleanupHostileUnits();
+    Console.WriteLine($"[DEBUG]: Hostile units cleaned up in 'BarrenAmbient2' region.");
+
+    // Set ownership of Thunder Bluff and Echo Isles units to neutral aggressive
+    var thunderBluffUnit = _preplacedUnitSystem.GetUnit(Constants.UNIT_N03M_THUNDERBLUFF);
+    thunderBluffUnit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+    Console.WriteLine($"[DEBUG]: Thunder Bluff unit ownership set to Neutral Aggressive.");
+
+    var echoIslesUnit = _preplacedUnitSystem.GetUnit(Constants.UNIT_N02V_ECHO_ISLES);
+    echoIslesUnit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+    Console.WriteLine($"[DEBUG]: Echo Isles unit ownership set to Neutral Aggressive.");
+}
 
 
         private void RegisterQuests()
