@@ -53,10 +53,8 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         Console.WriteLine("Invalid faction or player; cannot complete the quest.");
         return;
       }
-
-
-      PresentPillageDialogs(completingFaction);
       
+      PresentPillageDialogs(completingFaction);
     }
 
     /// <summary>
