@@ -59,7 +59,7 @@ The Night Elves are aware of your presence and are gathering a mighty host again
         public override void OnRegistered()
         { 
           
-            ReplaceWarsongRegionStructures(this);
+            ReplaceWithFactionUnits(this);
             RegisterQuests();
             RegisterDialogue();
             SharedFactionConfigSetup.AddSharedFactionConfig(this);
@@ -89,7 +89,7 @@ The Night Elves are aware of your presence and are gathering a mighty host again
 
         }
         
-        private void ReplaceWarsongRegionStructures(Faction pickedFaction)
+        private void ReplaceWithFactionUnits(Faction pickedFaction)
         {
           if (pickedFaction == null)
             throw new ArgumentNullException(nameof(pickedFaction), "pickedFaction cannot be null.");

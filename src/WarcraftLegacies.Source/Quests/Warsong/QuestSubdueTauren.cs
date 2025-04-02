@@ -32,7 +32,6 @@ namespace WarcraftLegacies.Source.Quests.Warsong
             // Set default values for the rewards as a fallback
             PillageGoldReward = 250;
             PillageExperienceReward = 800;
-            ResearchId = Constants.UPGRADE_R00O_SUBDUE_THE_THUNDERBLUFF_TAUREN;
         }
 
         /// <inheritdoc/>
@@ -73,8 +72,8 @@ namespace WarcraftLegacies.Source.Quests.Warsong
               PillageChoiceType.Pillage,
               "Pillage Thunder Bluff",
               Regions.ThunderBluff,
-              700,       
-              3000      
+              250,       
+              750      
             ),
             new WarsongPillageChoice(
               PillageChoiceType.Subdue,

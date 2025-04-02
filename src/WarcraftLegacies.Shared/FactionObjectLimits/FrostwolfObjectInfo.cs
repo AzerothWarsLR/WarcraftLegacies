@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
             yield return new(UNIT_OCAT_CATAPULT_FROSTWOLF, 6, UnitCategory.SiegeBasic);
             yield return new(UNIT_OTBR_BATRIDER_FROSTWOLF, 12, UnitCategory.FlyingBasic);
             yield return new(UNIT_ODOC_WITCH_DOCTOR_FROSTWOLF, Unlimited, UnitCategory.CasterSupport);
-            yield return new(UNIT_OSHM_SHAMAN_FROSTWOLF, Unlimited, UnitCategory.CasterSupport);
+            yield return new(UNIT_OSHM_SHAMAN_FROSTWOLF, Unlimited, UnitCategory.CasterBasic);
             yield return new(UNIT_OSPW_SPIRIT_WALKER_FROSTWOLF, Unlimited, UnitCategory.CasterAdvanced);
             yield return new(UNIT_O00A_FAR_SEER_FROSTWOLF_ELITE, 6, UnitCategory.Elite);
             yield return new(UNIT_O06T_TAUREN_GLADIATOR_FROSTWOLF, 6);

@@ -36,7 +36,6 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       // Default reward values
       PillageGoldReward = 300;
       PillageExperienceReward = 1000;
-      ResearchId = Constants.UPGRADE_R012_SUBDUE_THE_STONEMAUL_OGRES;
     }
 
     /// <inheritdoc/>

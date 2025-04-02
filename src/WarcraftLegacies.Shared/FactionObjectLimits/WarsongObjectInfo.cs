@@ -27,16 +27,17 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
             yield return new(UNIT_H004_TROLL_HUT_FROSTWOLF_FARM, Unlimited, UnitCategory.SpecailFarm2);
             yield return new(UNIT_O006_SPIRE_WARSONG_MAGIC, Unlimited, UnitCategory.Magic);
             yield return new(UNIT_O04L_PEON_WARSONG_WORKER, Unlimited, UnitCategory.Worker);
-            yield return new(UNIT_N08O_OGRE_MAGI_WARSONG, Unlimited, UnitCategory.CasterAdvanced);
-            yield return new(UNIT_N07A_OGRE_WARRIOR_WARSONG, Unlimited, UnitCategory.MeleeSpecial);
-            yield return new(UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, 1, UnitCategory.Teleport);
             yield return new(UNIT_O02M_WARSONG_GRUNT_WARSONG, Unlimited, UnitCategory.MeleeBasic);
             yield return new(UNIT_ORAI_RAIDER_WARSONG, Unlimited, UnitCategory.MeleeAdvanced);
-            yield return new("n08E", Unlimited); //Hexbinder
+            yield return new(UNIT_N07A_OGRE_WARRIOR_WARSONG, Unlimited, UnitCategory.MeleeSpecial);
+            yield return new(UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, 1, UnitCategory.Teleport);
+            yield return new(UNIT_NOGN_WARLOCK_WARSONG, Unlimited, UnitCategory.CasterBasic);
+            yield return new(UNIT_N08E_SHADOWPRIEST_WARSONG, Unlimited, UnitCategory.CasterSupport);
+            yield return new(UNIT_N08O_OGRE_MAGI_WARSONG, Unlimited, UnitCategory.CasterAdvanced);
             yield return new(UNIT_OTBK_AXE_THROWER_WARSONG, Unlimited, UnitCategory.RangedBasic);
             yield return new(UNIT_O00I_WAR_MACHINE_WARSONG, Unlimited, UnitCategory.SiegeBasic);
-            yield return new(UNIT_E01M_AZERITE_SIEGE_ENGINE_WARSONG, Unlimited, UnitCategory.SiegeAdvanced);
-            yield return new(UNIT_OKOD_KODO_BEAST_WARSONG, Unlimited);
+            yield return new(UNIT_OKOD_KODO_BEAST_WARSONG, Unlimited, UnitCategory.SiegeAdvanced);
+            yield return new(UNIT_E01M_AZERITE_SIEGE_ENGINE_WARSONG, Unlimited, UnitCategory.SiegeSpecial);
             yield return new(UNIT_O00G_BLADEMASTER_WARSONG, 6);
             yield return new(UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE, 6, UnitCategory.Elite);
             yield return new(UNIT_OWYV_WIND_RIDER_WARSONG, 8, UnitCategory.FlyingBasic);

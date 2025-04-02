@@ -28,7 +28,7 @@ public static class Regions
 	public static Rectangle AzsharaAmbient2 { get; set; } = new Rectangle(-8704f, 896f, -3680f, 6112f);
 	public static Rectangle AzuremystAmbient { get; set; } = new Rectangle(-21216f, 6400f, -18528f, 11104f);
 	public static Rectangle BalorAmbient { get; set; } = new Rectangle(3104f, -14400f, 6656f, -10112f);
-	public static Rectangle BarrenAmbient1 { get; set; } = new Rectangle(-19456f, -5504f, -9888f, 512f);
+	public static Rectangle BarrenAmbient1 { get; set; } = new Rectangle(-19552f, -5696f, -9984f, 320f);
 	public static Rectangle BarrenAmbient2 { get; set; } = new Rectangle(-16864f, -8192f, -12160f, -5888f);
 	public static Rectangle BarrenAmbient3 { get; set; } = new Rectangle(-13248f, -10304f, -11520f, -7872f);
 	public static Rectangle BarrenAmbient4 { get; set; } = new Rectangle(-14848f, -11680f, -9344f, -10112f);
@@ -308,7 +308,7 @@ public static class Regions
 	public static Rectangle ThelUnlock { get; set; } = new Rectangle(14432f, -6752f, 15648f, -4768f);
 	public static Rectangle Theramore { get; set; } = new Rectangle(-8480f, -10304f, -6016f, -7776f);
 	public static Rectangle ThroneoftheFourWind { get; set; } = new Rectangle(-16992f, -22560f, -14144f, -20480f);
-	public static Rectangle ThunderBluff { get; set; } = new Rectangle(-17056f, -7808f, -14240f, -3072f);
+	public static Rectangle ThunderBluff { get; set; } = new Rectangle(-17056f, -5344f, -14272f, -3072f);
 	public static Rectangle ThunderbluffFlight { get; set; } = new Rectangle(-15488f, -4096f, -15328f, -3936f);
 	public static Rectangle TolbaradAmbient { get; set; } = new Rectangle(9792f, -2176f, 12608f, 1568f);
 	public static Rectangle TombOfSargerasInteriorA { get; set; } = new Rectangle(-832f, 10144f, 704f, 11168f);

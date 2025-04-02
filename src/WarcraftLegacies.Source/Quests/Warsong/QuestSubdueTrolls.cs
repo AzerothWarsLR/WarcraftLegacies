@@ -34,7 +34,6 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       // Set default values for the rewards as a fallback
       PillageGoldReward = 650;
       PillageExperienceReward = 1700;
-      ResearchId = Constants.UPGRADE_R00K_SUBDUE_THE_DARKSPEAR_TROLLS;
     }
 
     /// <inheritdoc/>

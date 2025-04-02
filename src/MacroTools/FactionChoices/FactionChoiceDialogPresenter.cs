@@ -59,17 +59,17 @@ namespace MacroTools.FactionChoices
         throw new ArgumentNullException(nameof(pickedFaction), "pickedFaction cannot be null.");
 
       var unitsInRegion = GlobalGroup
-        .EnumUnitsInRect(region) // Enumerates units in the given region
-        .Where(x => x.GetTypeId() != FourCC("ngol")) //goldmines excluded
-        .Where(x => IsUnitType(x, UNIT_TYPE_STRUCTURE)); 
+        .EnumUnitsInRect(region) 
+        .Where(x => x.GetTypeId() != FourCC("ngol")) 
+        .Where(x => GetOwningPlayer(x) != Player(PLAYER_NEUTRAL_AGGRESSIVE));
 
       foreach (var unit in unitsInRegion)
       {
-        var replacedUnit = unit.ReplaceWithFactionEquivalent(pickedFaction); // Replace unit with faction equivalent
-    
+        var replacedUnit = unit.ReplaceWithFactionEquivalent(pickedFaction); 
+
         if (replacedUnit != unit && CinematicMode.State == CinematicState.Active)
         {
-          CinematicMode.AddPausedUnit(replacedUnit); // Handle cinematic transitions if cinematic mode is active
+          CinematicMode.AddPausedUnit(replacedUnit); 
         }
       }
     }

@@ -89,6 +89,7 @@ Your allies will be coming south to help you defend against the Old Gods, do not
         }
         public override void OnNotPicked()
         {
+          Regions.Highmountain_Unlock.CleanupNeutralPassiveUnits();
 
             base.OnNotPicked();
         }
