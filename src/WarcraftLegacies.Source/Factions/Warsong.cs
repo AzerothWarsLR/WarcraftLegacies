@@ -12,6 +12,7 @@ using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 using MacroTools.Extensions;
 using MacroTools.FactionChoices;
+using WarcraftLegacies.Source.FactionMechanics.Warsong;
 
 
 namespace WarcraftLegacies.Source.Factions
@@ -62,6 +63,7 @@ The Night Elves are aware of your presence and are gathering a mighty host again
             ReplaceWithFactionUnits(this);
             RegisterQuests();
             RegisterDialogue();
+            BloodPactBattleSimulation.StartSimulation();
             SharedFactionConfigSetup.AddSharedFactionConfig(this);
             Regions.BarrenAmbient2.CleanupHostileUnits();
             var thunderBluffUnit = _preplacedUnitSystem.GetUnit(Constants.UNIT_N03M_THUNDERBLUFF);

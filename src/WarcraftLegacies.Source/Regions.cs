@@ -16,7 +16,7 @@ public static class Regions
 	public static Rectangle Area52Unlock { get; set; } = new Rectangle(-96f, -22688f, 1472f, -20608f);
 	public static Rectangle ArtifactDummyInstance { get; set; } = new Rectangle(19584f, 23232f, 22688f, 24800f);
 	public static Rectangle AshbringerForge { get; set; } = new Rectangle(10240f, -5440f, 10368f, -5312f);
-	public static Rectangle AshenvaleAmbient { get; set; } = new Rectangle(-18560f, 512f, -9856f, 9088f);
+	public static Rectangle AshenvaleAmbient { get; set; } = new Rectangle(-18560f, 544f, -9856f, 9120f);
 	public static Rectangle AshenvaleAmbient2 { get; set; } = new Rectangle(-17760f, 9152f, -11968f, 12704f);
 	public static Rectangle AshenvaleEmeraldPortal { get; set; } = new Rectangle(-8576f, 8992f, -8128f, 9280f);
 	public static Rectangle AshenvaleUnlock { get; set; } = new Rectangle(-15552f, 2464f, -13088f, 4576f);
@@ -201,7 +201,7 @@ public static class Regions
 	public static Rectangle Nazjatar { get; set; } = new Rectangle(-5792f, -3680f, -5024f, -2752f);
 	public static Rectangle NethergardeUnlock { get; set; } = new Rectangle(16576f, -18400f, 18688f, -16960f);
 	public static Rectangle Netherstorm { get; set; } = new Rectangle(-544f, -23712f, 3680f, -18528f);
-	public static Rectangle Northern_Kali_Ships { get; set; } = new Rectangle(-17344f, -1376f, -8704f, 8800f);
+	public static Rectangle Northern_Kali_Ships { get; set; } = new Rectangle(-17760f, -800f, -9120f, 9376f);
 	public static Rectangle Northrend_Ambiance { get; set; } = new Rectangle(-10688f, 13120f, 8608f, 24736f);
 	public static Rectangle Northrend_Blocker_1 { get; set; } = new Rectangle(5376f, 13568f, 6016f, 13952f);
 	public static Rectangle Northrend_Blocker_2 { get; set; } = new Rectangle(5440f, 10880f, 6688f, 11488f);
@@ -361,5 +361,6 @@ public static class Regions
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
 	public static Rectangle FrostwolfStartPos { get; set; } = new Rectangle(-10656f, 1568f, -9760f, 2304f);
+	public static Rectangle BloodPactBattle { get; set; } = new Rectangle(-12224f, 2688f, -11744f, 3168f);
 
 }

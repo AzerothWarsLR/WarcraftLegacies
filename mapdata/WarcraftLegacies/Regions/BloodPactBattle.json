@@ -1,0 +1,15 @@
+{
+  "Left": -12224,
+  "Bottom": 2688,
+  "Right": -11744,
+  "Top": 3168,
+  "Name": "BloodPactBattle",
+  "CreationNumber": 169,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}
