@@ -20,6 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     // Rewards
     private int PillageGoldReward { get; set; }
     private int PillageExperienceReward { get; set; }
+    private int ResearchReward { get; set; }
 
     public QuestSubdueOgres(Rectangle rescueRect, LegendaryHero grom)
       : base(
@@ -27,15 +28,13 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         "Their brute strength is untamed, their loyalty unproven. Subdue the ogres and further strengthen the Horde.",
         @"ReplaceableTextures\CommandButtons\BTNOgre.blp")
     {
-      _grom = grom;
       AddObjective(new ObjectiveControlPoint(Constants.UNIT_N022_STONEMAUL));
       AddObjective(new ObjectiveSelfExists());
-
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-
-      // Default reward values
+      _grom = grom;
       PillageGoldReward = 300;
       PillageExperienceReward = 1000;
+      ResearchReward = UPGRADE_R012_SUBDUE_THE_STONEMAUL_OGRES;
     }
 
     /// <inheritdoc/>
@@ -55,7 +54,9 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         return;
       }
 
+
       PresentPillageDialogs(completingFaction);
+      
     }
 
     /// <summary>
@@ -69,10 +70,6 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         Console.WriteLine("Without Grom's leadership to restrain the Warband, the ogres are slaughtered.");
         return;
       }
-
-      // Pillage rewards 
-      PillageGoldReward = 300;        
-      PillageExperienceReward = 1000; 
 
       new WarsongPillageDialogPresenter(
         gromUnit,
@@ -89,15 +86,10 @@ namespace WarcraftLegacies.Source.Quests.Warsong
           Regions.StonemaulKeep,
           0,
           0,
-          Constants.UPGRADE_R012_SUBDUE_THE_STONEMAUL_OGRES
+          ResearchReward
         )
       ).Run(completingFaction.Player);
     }
-
-    /// <inheritdoc />
-    protected override void OnFail(Faction completingFaction)
-    {
-      completingFaction.Player.RescueGroup(_rescueUnits);
-    }
+    
   }
 }

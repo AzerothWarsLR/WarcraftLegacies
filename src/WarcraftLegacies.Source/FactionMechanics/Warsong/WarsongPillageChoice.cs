@@ -3,15 +3,14 @@ using MacroTools.UserInterface;
 
 namespace WarcraftLegacies.Source.FactionMechanics.Warsong
 {
-  // This class now fully implements IChoice
   public sealed class WarsongPillageChoice : IChoice
   {
-    public Rectangle Location { get; } // The geographical area affected by the choice
-    public string Name { get; } // The display name (required by IChoice)
-    public PillageChoiceType Type { get; } // The type of choice (Pillage or Subdue)
-    public int GoldReward { get; } // The amount of gold rewarded
-    public int ExperienceReward { get; } // The amount of experience rewarded
-    public int ResearchReward { get; } // The research reward granted
+    public Rectangle Location { get; } 
+    public string Name { get; } 
+    public PillageChoiceType Type { get; } 
+    public int GoldReward { get; } 
+    public int ExperienceReward { get; }
+    public int ResearchReward { get; } 
 
     public WarsongPillageChoice(
       PillageChoiceType type,
@@ -29,12 +28,6 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
       ResearchReward = researchReward;
     }
 
-    // This method implements the Execute behavior from IChoice
-    public void Execute()
-    {
-      // Here, you can define what happens when the choice is executed
-      // For example, logging or performing default behavior
-    }
   }
 
   public enum PillageChoiceType
