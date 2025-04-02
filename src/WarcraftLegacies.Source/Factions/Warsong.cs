@@ -57,9 +57,10 @@ The Night Elves are aware of your presence and are gathering a mighty host again
 
         /// <inheritdoc />
         public override void OnRegistered()
-        {
-            RegisterQuests();
+        { 
+          
             ReplaceWarsongRegionStructures(this);
+            RegisterQuests();
             RegisterDialogue();
             SharedFactionConfigSetup.AddSharedFactionConfig(this);
             Regions.BarrenAmbient2.CleanupHostileUnits();
@@ -92,11 +93,10 @@ The Night Elves are aware of your presence and are gathering a mighty host again
         {
           if (pickedFaction == null)
             throw new ArgumentNullException(nameof(pickedFaction), "pickedFaction cannot be null.");
-    
-          // Use the fully qualified class name to call the static method
+          
           FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.ThunderBluff, pickedFaction);
           FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.EchoUnlock, pickedFaction);
-          FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.StonemaulKeep, pickedFaction);
+          FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.Orgrimmar, pickedFaction);
         }
 
 

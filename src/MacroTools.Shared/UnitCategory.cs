@@ -40,6 +40,37 @@
     
     SpecailFarm1,
 
-    SpecailFarm2
+    SpecailFarm2,
+    
+    Elite,
+    
+    CasterSupport,
+    
+    CasterBasic,
+    
+    CasterAdvanced,
+    
+    RangedBasic,
+    
+    MeleeBasic,
+    
+    RangedAdvanced,
+    
+    MeleeAdvanced,
+    
+    RangedSpecial,
+    
+    MeleeSpecial,
+    
+    FlyingBasic,
+    
+    FlyingAdvanced,
+    
+    SiegeBasic,
+    
+    SiegeAdvanced,
+    
+    SiegeSpecial,
+    
   }
 }

@@ -34,7 +34,6 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("h01I", Unlimited); //Arcanist
       yield return new("n007", 6); //Kirin Tor
       yield return new("n096", 6); //Earth Golem
-      yield return new("n03E", Unlimited); //Pyromancer
       yield return new("n0AK", Unlimited); //Sludge Flinger
       yield return new("o02U", 6); //Crystal Artillery
       yield return new(UNIT_N0AC_BLUE_DRAGON_DALARAN, 6);
