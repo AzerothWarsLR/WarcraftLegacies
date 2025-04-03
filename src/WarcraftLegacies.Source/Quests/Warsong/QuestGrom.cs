@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
     public QuestGrom(PreplacedUnitSystem preplacedUnitSystem, LegendaryHero gromHellscreamLegend, LegendaryHero gargok) 
       : base("Breaking Bad Blood",
-          "Tricked by Mannoroth into drinking the corrupted blood, Grom Hellscream has fallen into demonic fury, locked in battle with the Sentinels. To free him from this enslaving curse, you must defeat Mannoroth the Destroyer himself.",
+          "Tricked by Mannoroth into drinking from the corrupted fountain, Grom Hellscream has fallen into demonic fury, locked in battle with the Sentinels. To free him from this enslaving curse, you must defeat Mannoroth the Destroyer himself.",
           @"ReplaceableTextures\CommandButtons\BTNChaosGrom.blp")
     {
       AddObjective(new ObjectiveUnitIsDead(preplacedUnitSystem.GetUnit(UNIT_NMAN_MANNOROTH_THE_DESTROYER_WARSONG_BLOODPACT)));
