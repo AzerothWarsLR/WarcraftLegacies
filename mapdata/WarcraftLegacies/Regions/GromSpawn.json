@@ -1,0 +1,15 @@
+{
+  "Left": -12832,
+  "Bottom": 2304,
+  "Right": -12448,
+  "Top": 2624,
+  "Name": "GromSpawn",
+  "CreationNumber": 176,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

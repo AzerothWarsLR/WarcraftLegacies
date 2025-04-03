@@ -18,6 +18,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
             UNIT_ESEN_HUNTRESS_SENTINELS,
             UNIT_ESEN_HUNTRESS_SENTINELS,
             UNIT_ESEN_HUNTRESS_SENTINELS,
+            UNIT_EARC_ARCHER_SENTINELS,
             UNIT_EARC_ARCHER_SENTINELS
         };
 
@@ -25,7 +26,9 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
         {
             UNIT_OPGH_CORRUPTOR_OF_THE_WARSONG_CLAN_WARSONG_BLOODPACT,
             UNIT_O00P_CHAOS_WARSONG_GRUNT_WARSONG,
-            UNIT_O00P_CHAOS_WARSONG_GRUNT_WARSONG
+            UNIT_O00P_CHAOS_WARSONG_GRUNT_WARSONG,
+            UNIT_O00P_CHAOS_WARSONG_GRUNT_WARSONG,
+            UNIT_O00P_CHAOS_WARSONG_GRUNT_WARSONG,
         };
 
         public static void StartSimulation()

@@ -362,5 +362,6 @@ public static class Regions
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
 	public static Rectangle FrostwolfStartPos { get; set; } = new Rectangle(-10656f, 1568f, -9760f, 2304f);
 	public static Rectangle BloodPactBattle { get; set; } = new Rectangle(-12224f, 2688f, -11744f, 3168f);
+	public static Rectangle GromSpawn { get; set; } = new Rectangle(-12832f, 2304f, -12448f, 2624f);
 
 }

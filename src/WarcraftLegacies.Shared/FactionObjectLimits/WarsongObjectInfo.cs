@@ -49,9 +49,9 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
             yield return new("h0B5", Unlimited); //Boarding
             yield return new("h0BC", Unlimited); //Juggernaut
             yield return new("h0AO", 6); //Bombard
-            yield return new("Ogrh", 1); //Grom
             yield return new("Obla", 1); //Varok
             yield return new("O06L", 1); //Garrosh
+            yield return new(UNIT_O005_WARSONG_BATTLEMASTER_WARSONG, 1); 
             yield return new(UNIT_NSJS_BREWMASTER_WARSONG, 1);
             yield return new("n0CN", 1); //Gibbs
             yield return new(UNIT_OPGH_CORRUPTOR_OF_THE_WARSONG_CLAN_WARSONG_BLOODPACT,

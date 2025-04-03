@@ -1,7 +1,8 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.Warsong
@@ -12,18 +13,18 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     
     private static readonly int UnittypeId = FourCC("owyv");
 
-    public QuestMoreWyverns(Capital feathermoon, Capital auberdine) : base("Perfect Warriors",
-      "The prowess and savagery of the Sentinels is to be respected - and feared. They must be eliminated.",
-      @"ReplaceableTextures\CommandButtons\BTNArcher.blp")
+    public QuestMoreWyverns(Legend cthun, Legend nzoth) : base("Dominion of the Skies",
+      "The Old Gods C'Thun and N'Zoth threaten the Horde from their ancient lairs. Eliminate these eldritch horrors and assert dominance over Kalimdor's skies.",
+      @"ReplaceableTextures\CommandButtons\BTNWyvernRider.blp")
     {
-      AddObjective(new ObjectiveCapitalDead(feathermoon));
-      AddObjective(new ObjectiveCapitalDead(auberdine));
+      AddObjective(new ObjectiveKillUnit(cthun.Unit));
+      AddObjective(new ObjectiveKillUnit(nzoth.Unit));
       
     }
     
     /// <inheritdoc/>
     public override string RewardFlavour =>
-      "The Sentinels have been eliminated. Warchief Thrall breathes a sigh of relief, knowing that his people are safe - for now.";
+      "With the Old Gods driven from Azeroth, the skies themselves recognize the Warsong's rightful dominance. Your Wyvern riders rally eagerly, inspired by your victory.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>

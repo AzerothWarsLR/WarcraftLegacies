@@ -37,13 +37,11 @@ namespace WarcraftLegacies.Source.Factions
             StartingGold = 200;
             CinematicMusic = "DarkAgents";
             ControlPointDefenderUnitTypeId = UNIT_N0D6_CONTROL_POINT_DEFENDER_WARSONG;
-            IntroText = @"You are playing as the brutal |cffd45e19Warsong clan|r.
-
-You begin in the eaves of Ashenvale, isolated from your ally, the Frostwolf Clan in the South. 
-
-The Warchief expects a large amount of gold from you. Begin by harvesting with your Peons, and expanding into the Barrens and Durotar.
-
-The Night Elves are aware of your presence and are gathering a mighty host against you. Unlock Orgrimmar as soon as possible to defend against the Night Elf assault.";
+            IntroText = @"You are playing as the fierce and relentless |cffff0000Warsong Clan|r.
+Begin swiftly by rescuing your Chieftain, Grom Hellscream, who is trapped in battle, consumed by demonic fury. His survival is paramount.
+With Grom secured, you can expand your dominance by subduing or pillaging nearby races to bolster your clan's strength.
+Work closely with your new elven allies—only together will you overcome the looming threat of the Old Gods."
+              ;
             GoldMines = new List<unit>
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9729, 2426)),
@@ -75,19 +73,21 @@ The Night Elves are aware of your presence and are gathering a mighty host again
 
         private void RegisterQuests()
         {
-            StartingQuest = AddQuest(new QuestOrgrimmar(Regions.Orgrimmar, _allLegendSetup.Warsong.GromHellscream));
+          StartingQuest = AddQuest(new QuestGrom(_preplacedUnitSystem, _allLegendSetup.Warsong.GromHellscream, _allLegendSetup.Warsong.Gargok));
+            AddQuest(new QuestOrgrimmar(Regions.Orgrimmar, _allLegendSetup.Warsong.GromHellscream));
             AddQuest(new QuestCrossroads(Regions.Crossroads));
             AddQuest(new QuestChenStormstout(_preplacedUnitSystem.GetUnit(FourCC("Nsjs"))));
-            AddQuest(new QuestFountainOfBlood(_allLegendSetup.Neutral.FountainOfBlood, _allLegendSetup.Warsong.GromHellscream));
-            AddQuest(new QuestBloodpact(_allLegendSetup.Warsong.Mannoroth, _allLegendSetup.Warsong.GromHellscream));
-            AddQuest(new QuestGarrosh(_allLegendSetup.Druids.TempleOfTheMoon));
-            AddQuest(new QuestWarsongKillDruids(_allLegendSetup.Druids.Nordrassil, _allLegendSetup.Warsong.GromHellscream));
-            AddQuest(new QuestMoreWyverns(_allLegendSetup.Sentinels.Feathermoon, _allLegendSetup.Sentinels.Auberdine));
+           // AddQuest(new QuestFountainOfBlood(_allLegendSetup.Neutral.FountainOfBlood, _allLegendSetup.Warsong.GromHellscream));
+           // AddQuest(new QuestBloodpact(_allLegendSetup.Warsong.Mannoroth, _allLegendSetup.Warsong.GromHellscream));
+            AddQuest(new QuestGarrosh(_allLegendSetup.BlackEmpire.Nzoth));
+            AddQuest(new QuestWarsongKillCthun(_allLegendSetup.Ahnqiraj.Cthun, _allLegendSetup.Warsong.GromHellscream));
+            AddQuest(new QuestMoreWyverns(_allLegendSetup.Ahnqiraj.Cthun, _allLegendSetup.BlackEmpire.Nzoth));
             AddQuest(new QuestWarsongHold());
             AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
             AddQuest(new QuestSubdueOgres(Regions.StonemaulKeep, _allLegendSetup.Warsong.GromHellscream));
             AddQuest(new QuestSubdueTrolls(Regions.EchoUnlock, _allLegendSetup.Warsong.GromHellscream));
             AddQuest(new QuestSubdueTauren(Regions.ThunderBluff, _allLegendSetup.Warsong.GromHellscream));
+            
 
         }
         
@@ -99,6 +99,7 @@ The Night Elves are aware of your presence and are gathering a mighty host again
           FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.ThunderBluff, pickedFaction);
           FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.EchoUnlock, pickedFaction);
           FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.Orgrimmar, pickedFaction);
+          FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.Crossroads, pickedFaction);
         }
 
 
