@@ -1,9 +1,9 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+
 
 namespace WarcraftLegacies.Source.Quests.Warsong
 {
@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
   {
     private const int LimitChange = 2;
     
-    private static readonly int UnittypeId = FourCC("owyv");
+    private static readonly int UnittypeId = Constants.UNIT_OWYV_WIND_RIDER_WARSONG;
 
     public QuestMoreWyverns(Legend cthun, Legend nzoth) : base("Dominion of the Skies",
       "The Old Gods C'Thun and N'Zoth threaten the Horde from their ancient lairs. Eliminate these eldritch horrors and assert dominance over Kalimdor's skies.",
@@ -19,7 +19,6 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     {
       AddObjective(new ObjectiveKillUnit(cthun.Unit));
       AddObjective(new ObjectiveKillUnit(nzoth.Unit));
-      
     }
     
     /// <inheritdoc/>
@@ -28,7 +27,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Learn to train {I2S(LimitChange)} additional {GetObjectName(UnittypeId)}s";
+      $"Learn to train {LimitChange} additional {GetObjectName(UnittypeId)}s";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
