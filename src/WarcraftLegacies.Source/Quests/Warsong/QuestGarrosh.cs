@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
     public QuestGarrosh(Legend  nzoth) : base("Twilight's Reckoning",
       "The monstrous Old God N'Zoth threatens Kalimdor with madness and ruin. End his terrifying reign to secure the continent and further the Horde's ambitions.",
-      @"ReplaceableTextures\CommandButtons\BTNFacelessMadness.blp.blp")
+      @"ReplaceableTextures\CommandButtons\BTNFacelessMadness.blp")
     {
       AddObjective(new ObjectiveKillUnit(nzoth.Unit));
       ResearchId = UPGRADE_R062_QUEST_COMPLETED_TWILIGHT_S_RECKONING;
