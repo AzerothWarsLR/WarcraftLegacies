@@ -12,7 +12,7 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "W"
+      "Value": "E"
     },
     {
       "Id": 1953854049,
@@ -48,14 +48,6 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Gives a \u003CAOcr,DataA4\u003E% chance to deal double damage on their attacks."
-    },
-    {
-      "Id": 2020631137,
-      "Value": 1
-    },
-    {
-      "Id": 2020635233,
-      "Value": 1
     }
   ]
 }

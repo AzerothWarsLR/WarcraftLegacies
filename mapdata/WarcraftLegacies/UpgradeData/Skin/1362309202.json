@@ -9,13 +9,13 @@
       "Level": 1,
       "Id": 829579623,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNDevourMagic.blp"
+      "Value": "ReplaceableTextures/CommandButtons/BTNBurning_Mana.blp"
     },
     {
       "Level": 2,
       "Id": 829579623,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHex.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPriestMaster.blp"
     },
     {
       "Level": 1,
@@ -63,13 +63,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Shadowpriests\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Devour Magic."
+      "Value": "Increases Shadowpriests\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Spiritual Guidance."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Shadowpriests\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Spiritual Guidance."
+      "Value": "Increases Shadowpriests\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Windfury."
     }
   ]
 }

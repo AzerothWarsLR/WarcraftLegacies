@@ -1,0 +1,15 @@
+{
+  "Left": -13376,
+  "Bottom": 864,
+  "Right": -11712,
+  "Top": 1920,
+  "Name": "AshenvaleCreeps",
+  "CreationNumber": 182,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

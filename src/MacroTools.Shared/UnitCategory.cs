@@ -14,6 +14,63 @@
     
     Shipyard,
     
-    Farm
+    Farm,
+    
+    Altar,
+    
+    Specialist,
+    
+    Siege,
+    
+    Barracks,
+    
+    Research,
+    
+    Magic,
+    
+    Tower,
+    
+    Tower2,
+    
+    Tower3,
+    
+    Shop,
+    
+    Teleport,
+    
+    SpecailFarm1,
+
+    SpecailFarm2,
+    
+    Elite,
+    
+    CasterSupport,
+    
+    CasterBasic,
+    
+    CasterAdvanced,
+    
+    RangedBasic,
+    
+    MeleeBasic,
+    
+    RangedAdvanced,
+    
+    MeleeAdvanced,
+    
+    RangedSpecial,
+    
+    MeleeSpecial,
+    
+    FlyingBasic,
+    
+    FlyingAdvanced,
+    
+    SiegeBasic,
+    
+    SiegeAdvanced,
+    
+    SiegeSpecial,
+    
   }
 }
