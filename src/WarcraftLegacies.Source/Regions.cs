@@ -135,7 +135,7 @@ public static class Regions
 	public static Rectangle GrimBatolAmbient1 { get; set; } = new Rectangle(14720f, -4032f, 18048f, -512f);
 	public static Rectangle GrimBatolAmbient2 { get; set; } = new Rectangle(18048f, -8352f, 23424f, 576f);
 	public static Rectangle GrizzlyHills { get; set; } = new Rectangle(3840f, 17472f, 6240f, 19488f);
-	public static Rectangle GromSpawn { get; set; } = new Rectangle(-12832f, 2304f, -12448f, 2624f);
+	public static Rectangle GromSpawn { get; set; } = new Rectangle(-12896f, 2176f, -12480f, 2816f);
 	public static Rectangle GuldansCorpse { get; set; } = new Rectangle(-800f, 9792f, -544f, 10080f);
 	public static Rectangle Halaar { get; set; } = new Rectangle(-4896f, -29728f, -3776f, -28736f);
 	public static Rectangle Havenshire { get; set; } = new Rectangle(20128f, 7040f, 22112f, 9472f);
@@ -363,5 +363,6 @@ public static class Regions
 	public static Rectangle ZulAman_trolls { get; set; } = new Rectangle(20288f, 11648f, 22848f, 17440f);
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
+	public static Rectangle AshenvaleCreeps { get; set; } = new Rectangle(-13376f, 864f, -11712f, 1920f);
 
 }

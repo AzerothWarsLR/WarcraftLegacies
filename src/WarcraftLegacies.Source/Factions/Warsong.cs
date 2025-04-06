@@ -66,6 +66,7 @@ Work closely with your new elven allies—only together will you overcome the lo
             BloodPactBattleSimulation.StartSimulation();
             SharedFactionConfigSetup.AddSharedFactionConfig(this);
             Regions.BarrenAmbient2.CleanupHostileUnits();
+            Regions.AshenvaleCreeps.CleanupHostileUnits();
             var thunderBluffUnit = _preplacedUnitSystem.GetUnit(Constants.UNIT_N03M_THUNDERBLUFF);
             thunderBluffUnit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
             var echoIslesUnit = _preplacedUnitSystem.GetUnit(Constants.UNIT_N02V_ECHO_ISLES);
@@ -155,8 +156,8 @@ Work closely with your new elven allies—only together will you overcome the lo
 
             TriggeredDialogueManager.Add(
               new TriggeredDialogue(new DialogueSequence(new Dialogue(
-                    @"Sound\Dialogue\OrcCampaign\Orc04\O04Grom01",
-                    "Damn Thrall for sending us away! He chooses to use his greatest warriors for manual labor? He'll be lost without me.",
+                    @"Sound\Dialogue\OrcCampaign\Orc08\O08Grom33",
+                    "Thrall... I see clearly now.  I'm... sorry.  I am so sorry..",
                     "Grom Hellscream"))
                 , new[]
                 {
