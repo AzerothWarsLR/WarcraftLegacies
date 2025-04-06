@@ -8,16 +8,19 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
     {
         private const int PlayerSentinels = 19;
         private const int PlayerWarsong = 20;
+        private const int Player = 0;
         private const float MinHealthPercentage = 70f;
         private const float HealthRestorePercentage = 100f; 
 
-        private static readonly group BattleSimulationGroup = CreateGroup();
+        public static readonly group BattleSimulationGroup = CreateGroup();
 
         private static readonly int[] SentinelsUnits =
         {
             UNIT_ESEN_HUNTRESS_SENTINELS,
             UNIT_ESEN_HUNTRESS_SENTINELS,
             UNIT_ESEN_HUNTRESS_SENTINELS,
+            UNIT_ESEN_HUNTRESS_SENTINELS,
+            UNIT_EARC_ARCHER_SENTINELS,
             UNIT_EARC_ARCHER_SENTINELS,
             UNIT_EARC_ARCHER_SENTINELS
         };
@@ -29,7 +32,13 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
             UNIT_O00P_CHAOS_WARSONG_GRUNT_WARSONG,
             UNIT_O00P_CHAOS_WARSONG_GRUNT_WARSONG,
             UNIT_O00P_CHAOS_WARSONG_GRUNT_WARSONG,
+            UNIT_O00P_CHAOS_WARSONG_GRUNT_WARSONG,
+            UNIT_O00P_CHAOS_WARSONG_GRUNT_WARSONG,
         };
+
+        private static readonly int[] Playerunits =
+          { UNIT_OEYE_SENTRY_WARD_FROSTWOLF_WITCH_DOCTOR };
+        
 
         public static void StartSimulation()
         {
@@ -64,6 +73,20 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
                 {
                     System.Console.WriteLine($"Warsong spawn error: {ex.Message}");
                 }
+            }
+            
+            foreach (var unitTypeId in Playerunits)
+            {
+              try
+              {
+                Point randomPoint = regionRect.GetRandomPoint();
+                unit spawnedUnit = SpawnSimulationUnit(Player, unitTypeId, randomPoint);
+                GroupAddUnit(BattleSimulationGroup, spawnedUnit);
+              }
+              catch (System.Exception ex)
+              {
+                System.Console.WriteLine($"Warsong spawn error: {ex.Message}");
+              }
             }
 
             IssueGroupAttack(BattleSimulationGroup, midpoint);

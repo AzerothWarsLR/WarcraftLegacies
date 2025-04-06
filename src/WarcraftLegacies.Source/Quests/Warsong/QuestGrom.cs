@@ -5,6 +5,7 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using MacroTools.Systems;
+using WarcraftLegacies.Source.FactionMechanics.Warsong;
 using WCSharp.Shared.Extensions;
 
 namespace WarcraftLegacies.Source.Quests.Warsong
@@ -41,28 +42,25 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     protected override void OnComplete(Faction completingFaction)
     {
       base.OnComplete(completingFaction);
-
-      // Clear all units in BloodPactBattle region upon completion
-      var unitsToRemove = CreateGroup();
-      GroupEnumUnitsInRect(unitsToRemove, Regions.BloodPactBattle.Rect, null);
-
-      foreach (var unit in unitsToRemove.ToList())
+      
+      foreach (var unit in BloodPactBattleSimulation.BattleSimulationGroup.ToList())
       {
         RemoveUnit(unit);
       }
-
-      DestroyGroup(unitsToRemove);
-
-      // ModObject limits updates
+      GroupClear(BloodPactBattleSimulation.BattleSimulationGroup);
+      
       completingFaction.ModObjectLimit(Constants.UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG, 1);
       completingFaction.ModObjectLimit(Constants.UNIT_O005_WARSONG_BATTLEMASTER_WARSONG, -1);
       
       _gargok.PermanentlyKill();
-      
       if (_gromHellscream.Unit == null)
       {
         _gromHellscream.ForceCreate(completingFaction.Player, Regions.GromSpawn.Center, 90);
         _gromHellscream.Unit?.SetLevel(2, false);
+        DestroyEffect(AddSpecialEffect("war3mapImported\\Soul Beam Blue.mdx",
+          GetUnitX(_gromHellscream.Unit), GetUnitY(_gromHellscream.Unit)));
+        DestroyEffect(AddSpecialEffect(@"abilities\spells\human\holybolt.mdl",
+          GetUnitX(_gromHellscream.Unit), GetUnitY(_gromHellscream.Unit)));
       }
     }
   }

@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Gain {GoldReward} 1000 gold and you can now train Foreman Glibbs from the {GetObjectName(UNIT_O020_ALTAR_OF_CONQUERORS_WARSONG_ALTAR)}";
+      $"Gain {GoldReward} gold and you can now train Foreman Glibbs from the {GetObjectName(UNIT_O020_ALTAR_OF_CONQUERORS_WARSONG_ALTAR)}";
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestWarsongKillCthun"/> class.

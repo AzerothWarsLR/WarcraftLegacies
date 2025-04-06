@@ -28,7 +28,7 @@ public static class Regions
 	public static Rectangle AzsharaAmbient2 { get; set; } = new Rectangle(-8704f, 896f, -3680f, 6112f);
 	public static Rectangle AzuremystAmbient { get; set; } = new Rectangle(-21216f, 6400f, -18528f, 11104f);
 	public static Rectangle BalorAmbient { get; set; } = new Rectangle(3104f, -14400f, 6656f, -10112f);
-	public static Rectangle BarrenAmbient1 { get; set; } = new Rectangle(-19552f, -5696f, -9984f, 320f);
+	public static Rectangle BarrenAmbient1 { get; set; } = new Rectangle(-19552f, -5632f, -9984f, 384f);
 	public static Rectangle BarrenAmbient2 { get; set; } = new Rectangle(-16864f, -8192f, -12160f, -5888f);
 	public static Rectangle BarrenAmbient3 { get; set; } = new Rectangle(-13248f, -10304f, -11520f, -7872f);
 	public static Rectangle BarrenAmbient4 { get; set; } = new Rectangle(-14848f, -11680f, -9344f, -10112f);
@@ -41,6 +41,7 @@ public static class Regions
 	public static Rectangle BlackTempleBase { get; set; } = new Rectangle(2112f, -31584f, 6496f, -28288f);
 	public static Rectangle BlademasterUnlock { get; set; } = new Rectangle(4352f, -10496f, 5024f, -10112f);
 	public static Rectangle BlastedlandAmbient { get; set; } = new Rectangle(14912f, -22208f, 20224f, -16896f);
+	public static Rectangle BloodPactBattle { get; set; } = new Rectangle(-12224f, 2688f, -11744f, 3168f);
 	public static Rectangle BookOfMedivhDalaran { get; set; } = new Rectangle(9312f, 4864f, 9600f, 5216f);
 	public static Rectangle BookOfMedivhGilneas { get; set; } = new Rectangle(7840f, 448f, 8032f, 640f);
 	public static Rectangle BootyBayQuest { get; set; } = new Rectangle(9696f, -24160f, 12032f, -22304f);
@@ -114,6 +115,7 @@ public static class Regions
 	public static Rectangle Fjord { get; set; } = new Rectangle(1536f, 13408f, 8192f, 20320f);
 	public static Rectangle FountainOfHealthAlterac { get; set; } = new Rectangle(10656f, 5536f, 11104f, 6016f);
 	public static Rectangle FountainUnlock { get; set; } = new Rectangle(-10976f, 2432f, -10432f, 2848f);
+	public static Rectangle FrostwolfStartPos { get; set; } = new Rectangle(-10656f, 1568f, -9760f, 2304f);
 	public static Rectangle FTSummon { get; set; } = new Rectangle(-3392f, 20384f, -3232f, 20512f);
 	public static Rectangle FurionBlockers { get; set; } = new Rectangle(-13344f, 10048f, -12768f, 10848f);
 	public static Rectangle GarithosCrusadeSpawn { get; set; } = new Rectangle(19168f, 7520f, 19776f, 8160f);
@@ -133,6 +135,7 @@ public static class Regions
 	public static Rectangle GrimBatolAmbient1 { get; set; } = new Rectangle(14720f, -4032f, 18048f, -512f);
 	public static Rectangle GrimBatolAmbient2 { get; set; } = new Rectangle(18048f, -8352f, 23424f, 576f);
 	public static Rectangle GrizzlyHills { get; set; } = new Rectangle(3840f, 17472f, 6240f, 19488f);
+	public static Rectangle GromSpawn { get; set; } = new Rectangle(-12832f, 2304f, -12448f, 2624f);
 	public static Rectangle GuldansCorpse { get; set; } = new Rectangle(-800f, 9792f, -544f, 10080f);
 	public static Rectangle Halaar { get; set; } = new Rectangle(-4896f, -29728f, -3776f, -28736f);
 	public static Rectangle Havenshire { get; set; } = new Rectangle(20128f, 7040f, 22112f, 9472f);
@@ -308,7 +311,7 @@ public static class Regions
 	public static Rectangle ThelUnlock { get; set; } = new Rectangle(14432f, -6752f, 15648f, -4768f);
 	public static Rectangle Theramore { get; set; } = new Rectangle(-8480f, -10304f, -6016f, -7776f);
 	public static Rectangle ThroneoftheFourWind { get; set; } = new Rectangle(-16992f, -22560f, -14144f, -20480f);
-	public static Rectangle ThunderBluff { get; set; } = new Rectangle(-17056f, -5344f, -14272f, -3072f);
+	public static Rectangle ThunderBluff { get; set; } = new Rectangle(-17056f, -5344f, -14336f, -2880f);
 	public static Rectangle ThunderbluffFlight { get; set; } = new Rectangle(-15488f, -4096f, -15328f, -3936f);
 	public static Rectangle TolbaradAmbient { get; set; } = new Rectangle(9792f, -2176f, 12608f, 1568f);
 	public static Rectangle TombOfSargerasInteriorA { get; set; } = new Rectangle(-832f, 10144f, 704f, 11168f);
@@ -360,8 +363,5 @@ public static class Regions
 	public static Rectangle ZulAman_trolls { get; set; } = new Rectangle(20288f, 11648f, 22848f, 17440f);
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
-	public static Rectangle FrostwolfStartPos { get; set; } = new Rectangle(-10656f, 1568f, -9760f, 2304f);
-	public static Rectangle BloodPactBattle { get; set; } = new Rectangle(-12224f, 2688f, -11744f, 3168f);
-	public static Rectangle GromSpawn { get; set; } = new Rectangle(-12832f, 2304f, -12448f, 2624f);
 
 }

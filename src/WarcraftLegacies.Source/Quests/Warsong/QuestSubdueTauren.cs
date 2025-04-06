@@ -8,6 +8,9 @@ using WCSharp.Shared.Data;
 using System;
 using WarcraftLegacies.Source.FactionMechanics.Warsong;
 using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Quests.Warsong
 {
@@ -17,21 +20,25 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         private readonly LegendaryHero _grom;
         private int PillageGoldReward { get; set; }
         private int PillageExperienceReward { get; set; }
+        private readonly ArtifactSetup _artifactSetup;
 
-        public QuestSubdueTauren(Rectangle rescueRect, LegendaryHero grom)
+        
+
+        public QuestSubdueTauren(Rectangle rescueRect, LegendWarsong legendWarsong, LegendaryHero grom, ArtifactSetup artifactSetup)
           : base(
             "Unyielding Bonds",
             "The Tauren of Thunder Bluff are noble warriors, but their allegiances are uncertain. Bring them into the fold or pillage their lands.",
             @"ReplaceableTextures\CommandButtons\BTNTauren.blp")
         {
             _grom = grom;
+            _artifactSetup = artifactSetup;
             AddObjective(new ObjectiveControlPoint(Constants.UNIT_N03M_THUNDERBLUFF));
+            AddObjective(new ObjectiveControlLegend(legendWarsong.GromHellscream, true));
             AddObjective(new ObjectiveSelfExists());
 
             _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-            // Set default values for the rewards as a fallback
-            PillageGoldReward = 250;
-            PillageExperienceReward = 800;
+            PillageGoldReward = 500;
+            PillageExperienceReward = 1200;
         }
 
         /// <inheritdoc/>
@@ -40,7 +47,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
         /// <inheritdoc/>
         protected override string RewardDescription =>
-          $"Control of Thunder Bluff and the ability to train {GetObjectName(UNIT_OKOD_KODO_BEAST_WARSONG)}s' from {GetObjectName(UNIT_O02Q_BEASTIARY_WARSONG_SPECIALIST)} or gain {PillageGoldReward} gold and {PillageExperienceReward} XP for Grom.";
+          $"Control of Thunder Bluff and the ability to train {GetObjectName(UNIT_OKOD_KODO_BEAST_WARSONG)}s' from {GetObjectName(UNIT_O02Q_BEASTIARY_WARSONG_SPECIALIST)} or gain the artifact {GetObjectName(ITEM_I00L_BLOODHOOF_TOTEM)}, {PillageGoldReward} gold and {PillageExperienceReward} XP for Grom.";
 
         /// <inheritdoc/>
         protected override void OnComplete(Faction completingFaction)
@@ -62,7 +69,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
           var gromUnit = _grom.Unit;
           if (gromUnit == null)
           {
-            Console.WriteLine("Without Grom's leadership to guide the Horde, the Tauren remain scattered and their lands pillaged.");
+            Console.WriteLine("Without Grom's leadership to guide the Horde, the Tauren remain scattered and their riches lost.");
             return;
           }
 
@@ -72,8 +79,12 @@ namespace WarcraftLegacies.Source.Quests.Warsong
               PillageChoiceType.Pillage,
               "Pillage Thunder Bluff",
               Regions.ThunderBluff,
-              250,       
-              750      
+              PillageGoldReward,       
+              PillageExperienceReward,
+              0, // Dont award Subdue Research
+              ITEM_I00L_BLOODHOOF_TOTEM
+
+
             ),
             new WarsongPillageChoice(
               PillageChoiceType.Subdue,
@@ -81,16 +92,16 @@ namespace WarcraftLegacies.Source.Quests.Warsong
               Regions.ThunderBluff,
               0,
               0,
-              Constants.UPGRADE_R00O_SUBDUE_THE_THUNDERBLUFF_TAUREN 
+              Constants.UPGRADE_R00O_SUBDUE_THE_THUNDERBLUFF_TAUREN,
+              artifactRewardItemType: null 
+
             )
           ).Run(completingFaction.Player);
         }
-
-
-        /// <inheritdoc />
         protected override void OnFail(Faction completingFaction)
         {
-            completingFaction.Player?.RescueGroup(_rescueUnits);
+          completingFaction.Player?.RescueGroup(_rescueUnits);
         }
+        
     }
 }

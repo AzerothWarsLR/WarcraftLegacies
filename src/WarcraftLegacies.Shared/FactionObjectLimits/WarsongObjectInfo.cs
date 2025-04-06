@@ -33,10 +33,10 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
             yield return new(UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, 1, UnitCategory.Teleport);
             yield return new(UNIT_NOGN_WARLOCK_WARSONG, Unlimited, UnitCategory.CasterBasic);
             yield return new(UNIT_N08E_SHADOWPRIEST_WARSONG, Unlimited, UnitCategory.CasterSupport);
-            yield return new(UNIT_N08O_OGRE_MAGI_WARSONG, Unlimited, UnitCategory.CasterAdvanced);
+            yield return new(UNIT_N08O_OGRE_MAGI_WARSONG, 6, UnitCategory.CasterAdvanced);
             yield return new(UNIT_OTBK_AXE_THROWER_WARSONG, Unlimited, UnitCategory.RangedBasic);
             yield return new(UNIT_O00I_WAR_MACHINE_WARSONG, Unlimited, UnitCategory.SiegeBasic);
-            yield return new(UNIT_OKOD_KODO_BEAST_WARSONG, Unlimited, UnitCategory.SiegeAdvanced);
+            yield return new(UNIT_OKOD_KODO_BEAST_WARSONG, 6, UnitCategory.SiegeAdvanced);
             yield return new(UNIT_E01M_AZERITE_SIEGE_ENGINE_WARSONG, Unlimited, UnitCategory.SiegeSpecial);
             yield return new(UNIT_O00G_BLADEMASTER_WARSONG, 6);
             yield return new(UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE, 6, UnitCategory.Elite);

@@ -135,8 +135,8 @@ namespace MacroTools.Extensions
       }
 
       var unitsInRegion = GlobalGroup
-        .EnumUnitsInRect(region) // Enumerates all units in the rectangle
-        .Where(x => x.GetTypeId() != FourCC("ngol")) // Excludes any units of type 'ngol'
+        .EnumUnitsInRect(region) 
+        .Where(x => x.GetTypeId() != FourCC("ngol")) // exclude goldmines
         .Where(unit => IsUnitType(unit, UNIT_TYPE_STRUCTURE)); // Filter to include only structures
 
       foreach (var unit in unitsInRegion)

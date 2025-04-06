@@ -1,6 +1,6 @@
 {
   "OldId": 1936215617,
-  "NewId": 1397245249,
+  "NewId": 842608705,
   "Unk": [
     0
   ],
@@ -16,17 +16,29 @@
     {
       "Id": 1667330657,
       "Type": 3,
-      "Value": "nightelf"
+      "Value": "orc"
     },
     {
       "Id": 1902473825,
       "Type": 3,
-      "Value": "RELB"
+      "Value": "R00J"
     },
     {
       "Level": 1,
       "Id": 1935895905,
       "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": 879977294,
+      "Type": 2,
+      "Value": 240
+    },
+    {
+      "Id": 1634824801,
+      "Type": 3,
+      "Value": "2"
     }
   ]
 }

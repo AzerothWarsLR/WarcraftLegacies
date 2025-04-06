@@ -8,6 +8,8 @@ using WCSharp.Shared.Data;
 using System;
 using WarcraftLegacies.Source.FactionMechanics.Warsong;
 using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using WarcraftLegacies.Source.Setup.Legends;
 
 
 namespace WarcraftLegacies.Source.Quests.Warsong
@@ -22,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     private int PillageExperienceReward { get; set; }
     private int ResearchReward { get; set; }
 
-    public QuestSubdueOgres(Rectangle rescueRect, LegendaryHero grom)
+    public QuestSubdueOgres(Rectangle rescueRect, LegendWarsong legendWarsong, LegendaryHero grom)
       : base(
         "Brute Allegiance",
         "Their brute strength is untamed, their loyalty unproven. Subdue the ogres and further strengthen the Horde.",
@@ -30,10 +32,11 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     {
       AddObjective(new ObjectiveControlPoint(Constants.UNIT_N022_STONEMAUL));
       AddObjective(new ObjectiveSelfExists());
+      AddObjective(new ObjectiveControlLegend(legendWarsong.GromHellscream, true));
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _grom = grom;
-      PillageGoldReward = 300;
-      PillageExperienceReward = 1000;
+      PillageGoldReward = 600;
+      PillageExperienceReward = 2500;
       ResearchReward = UPGRADE_R012_SUBDUE_THE_STONEMAUL_OGRES;
     }
 
@@ -88,6 +91,13 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         )
       ).Run(completingFaction.Player);
     }
-    
+    protected override void OnFail(Faction completingFaction)
+    {
+      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+        : completingFaction.Player;
+
+      rescuer.RescueGroup(_rescueUnits);
+    }
   }
 }

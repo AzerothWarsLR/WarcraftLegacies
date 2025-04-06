@@ -37,7 +37,19 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
       {
         pickingPlayer.AddGold(choice.GoldReward);
         _grom?.AddExperience(choice.ExperienceReward);
-        
+        if (choice.ArtifactRewardItemType.HasValue && _grom != null)
+        {
+          var artifactItem = CreateItem(
+            choice.ArtifactRewardItemType.Value,
+            Regions.ArtifactDummyInstance.Center.X,
+            Regions.ArtifactDummyInstance.Center.Y
+          );
+          UnitAddItem(_grom, artifactItem);
+        }
+
+
+
+
         foreach (var unit in GlobalGroup.EnumUnitsInRect(choice.Location)
                    .Where(unit => IsUnitType(unit, UNIT_TYPE_STRUCTURE) &&
                                   (unit.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) ||
@@ -55,16 +67,17 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
 
           if (faction != null)
           {
-            var techBefore = GetPlayerTechCount(faction.Player, choice.ResearchReward, true);
-
-            // FIX BELOW (CLEARLY NEEDED CHANGE):
             faction.ModObjectLimit(choice.ResearchReward, Faction.UNLIMITED);
             faction.SetObjectLevel(choice.ResearchReward, 1);
-
-            var techAfter = GetPlayerTechCount(faction.Player, choice.ResearchReward, true);
             
             var rescueUnits = choice.Location.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-            faction.Player.RescueGroup(rescueUnits);
+            faction.Player.RescueGroup(rescueUnits); 
+            
+            foreach (var unit in rescueUnits)
+            {
+              unit.PauseEx(false); // Unpause the units
+            }
+
           }
         }
       }

@@ -15,7 +15,7 @@
       "Level": 2,
       "Id": 829579623,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNInnerFire.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNHealingSpray.blp"
     },
     {
       "Level": 1,
@@ -69,7 +69,7 @@
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Ogre Magis\u0027  mana capacity, mana regeneration rate, hit points and gives them the ability to cast Inner Fire."
+      "Value": "Increases Ogre Magis\u0027  mana capacity, mana regeneration rate, hit points and gives them the ability to cast Healing Spray."
     },
     {
       "Id": 2020631143,

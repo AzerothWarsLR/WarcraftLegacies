@@ -8,6 +8,8 @@ using WCSharp.Shared.Data;
 using System;
 using WarcraftLegacies.Source.FactionMechanics.Warsong;
 using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using WarcraftLegacies.Source.Setup.Legends;
 
 namespace WarcraftLegacies.Source.Quests.Warsong
 {
@@ -19,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     private int PillageGoldReward { get; set; }
     private int PillageExperienceReward { get; set; }
 
-    public QuestSubdueTrolls(Rectangle rescueRect, LegendaryHero grom)
+    public QuestSubdueTrolls(Rectangle rescueRect, LegendWarsong legendWarsong, LegendaryHero grom)
       : base(
         "To Break or Bind",
         "The Darkspear Trolls, fierce and cunning warriors, dwell in Echo Isles. It is time we forced their hand.",
@@ -27,13 +29,12 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     {
       _grom = grom;
       AddObjective(new ObjectiveControlPoint(Constants.UNIT_N02V_ECHO_ISLES));
+      AddObjective(new ObjectiveControlLegend(legendWarsong.GromHellscream, true));
       AddObjective(new ObjectiveSelfExists());
 
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-
-      // Set default values for the rewards as a fallback
       PillageGoldReward = 650;
-      PillageExperienceReward = 1700;
+      PillageExperienceReward = 2000;
     }
 
     /// <inheritdoc/>
@@ -68,10 +69,6 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         return;
       }
 
-      // Set Pillage rewards
-      PillageGoldReward = 500;
-      PillageExperienceReward = 2000;
-
       // Create the dialog presenter with both Subdue and Pillage choices
       new WarsongPillageDialogPresenter(
         gromUnit,
@@ -88,13 +85,10 @@ namespace WarcraftLegacies.Source.Quests.Warsong
           Regions.EchoUnlock,
           0,
           0,
-          Constants.UPGRADE_R00K_SUBDUE_THE_DARKSPEAR_TROLLS // Assign the relevant research reward
+          Constants.UPGRADE_R00K_SUBDUE_THE_DARKSPEAR_TROLLS 
         )
       ).Run(completingFaction.Player);
     }
-
-
-    /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
       completingFaction.Player?.RescueGroup(_rescueUnits);
