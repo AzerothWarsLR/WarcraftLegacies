@@ -43,11 +43,11 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     {
       base.OnComplete(completingFaction);
       
-      foreach (var unit in BloodPactBattleSimulation.BattleSimulationGroup.ToList())
+      foreach (var unit in BloodPactBattleSimulation.battleSimulationGroup.ToList())
       {
         RemoveUnit(unit);
       }
-      GroupClear(BloodPactBattleSimulation.BattleSimulationGroup);
+      GroupClear(BloodPactBattleSimulation.battleSimulationGroup);
       
       completingFaction.ModObjectLimit(Constants.UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG, 1);
       completingFaction.ModObjectLimit(Constants.UNIT_O005_WARSONG_BATTLEMASTER_WARSONG, -1);

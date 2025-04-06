@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
         private const float MinHealthPercentage = 70f;
         private const float HealthRestorePercentage = 100f; 
 
-        public static readonly group BattleSimulationGroup = CreateGroup();
+        public static readonly group battleSimulationGroup = CreateGroup();
 
         private static readonly int[] SentinelsUnits =
         {
@@ -53,7 +53,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
                 {
                     Point randomPoint = regionRect.GetRandomPoint();
                     unit spawnedUnit = SpawnSimulationUnit(PlayerSentinels, unitTypeId, randomPoint);
-                    GroupAddUnit(BattleSimulationGroup, spawnedUnit);
+                    GroupAddUnit(battleSimulationGroup, spawnedUnit);
                 }
                 catch (System.Exception ex)
                 {
@@ -67,7 +67,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
                 {
                     Point randomPoint = regionRect.GetRandomPoint();
                     unit spawnedUnit = SpawnSimulationUnit(PlayerWarsong, unitTypeId, randomPoint);
-                    GroupAddUnit(BattleSimulationGroup, spawnedUnit);
+                    GroupAddUnit(battleSimulationGroup, spawnedUnit);
                 }
                 catch (System.Exception ex)
                 {
@@ -81,7 +81,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
               {
                 Point randomPoint = regionRect.GetRandomPoint();
                 unit spawnedUnit = SpawnSimulationUnit(Player, unitTypeId, randomPoint);
-                GroupAddUnit(BattleSimulationGroup, spawnedUnit);
+                GroupAddUnit(battleSimulationGroup, spawnedUnit);
               }
               catch (System.Exception ex)
               {
@@ -89,7 +89,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
               }
             }
 
-            IssueGroupAttack(BattleSimulationGroup, midpoint);
+            IssueGroupAttack(battleSimulationGroup, midpoint);
 
             // Start the native periodic timer explicitly
             timer healthCheckTimer = CreateTimer();
@@ -121,7 +121,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
         
         private static void CheckAndRestoreUnitHealth()
         {
-            foreach (var unit in BattleSimulationGroup.ToList())
+            foreach (var unit in battleSimulationGroup.ToList())
             {
                 if (GetWidgetLife(unit) <= 0.405f)
                     continue;
