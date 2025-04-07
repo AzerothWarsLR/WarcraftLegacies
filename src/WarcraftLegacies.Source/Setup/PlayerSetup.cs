@@ -21,13 +21,13 @@ namespace WarcraftLegacies.Source.Setup
     
     public void Setup()
     {
-      SetupPlayer(Player(0), new Frostwolf(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
       SetupPlayer(Player(1), new Stormwind(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
       SetupPlayer(Player(2), new Quelthalas(_preplacedUnitSystem, _allLegendSetup));
       SetupPlayer(Player(3), new Scourge(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
       SetupPlayer(Player(4), new Ironforge(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
       SetupPlayer(Player(6), new FelHorde(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
       Player(7).SetTeam(TeamSetup.NorthAlliance);
+      Player(0).SetTeam(TeamSetup.Kalimdor);
       SetupPlayer(Player(8), new Skywall());
       SetupPlayer(Player(9), new Lordaeron(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
       SetupPlayer(Player(11), new Druids(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));

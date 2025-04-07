@@ -1,14 +1,13 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using MacroTools.DialogueSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
-using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ResearchSystems;
 using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Frostwolf;
-using WarcraftLegacies.Source.Quests.Warsong;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
@@ -22,7 +21,7 @@ namespace WarcraftLegacies.Source.Factions
     private readonly PreplacedUnitSystem _preplacedUnitSystem;
 
     /// <inheritdoc />
-    
+
     public Frostwolf(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup,
       ArtifactSetup artifactSetup) : base("Frostwolf", PLAYER_COLOR_RED, "|c00ff0303",
       @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
@@ -51,7 +50,6 @@ Your allies will be coming south to help you defend against the Old Gods, do not
         "frostwolves",
         "frostwolve"
       };
-      RegisterFactionDependentInitializer<Warsong>(RegisterWarsongDialogue);
       ProcessObjectInfo(FrostwolfObjectInfo.GetAllObjectLimits());
     }
 
@@ -59,21 +57,27 @@ Your allies will be coming south to help you defend against the Old Gods, do not
     public override void OnRegistered()
     {
       RegisterObjectLevels();
+      RegisterFlightPath();
       RegisterQuests();
       RegisterDialogue();
-      RegisterFlightPath();
+      Regions.ThunderBluff.CleanupHostileUnits();
+      Regions.Highmountain_Unlock.CleanupHostileUnits();
+      Regions.GromSpawn.CleanupHostileUnits();
+      Regions.EchoUnlock.CleanupHostileUnits();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
     private void RegisterObjectLevels()
     {
       ModAbilityAvailability(ABILITY_A0PF_FEL_ENERGY_TEAL_FORTRESSES, -1);
-      ModAbilityAvailability(ABILITY_ANTR_TROLL_REGENERATION_PINK_WITCH_DOCTOR_TROLL_HEADHUNTER_TROLL_BATRIDER_DARKSPEAR_WARLORD_TROLL_BERSERKER_ICON, -1);
+      ModAbilityAvailability(
+        ABILITY_ANTR_TROLL_REGENERATION_PINK_WITCH_DOCTOR_TROLL_HEADHUNTER_TROLL_BATRIDER_DARKSPEAR_WARLORD_TROLL_BERSERKER_ICON,
+        -1);
       ModAbilityAvailability(ABILITY_A0M4_BATTLE_STATIONS_PINK_GREY_ORC_BURROW_BLOODPACT, -1);
       ModAbilityAvailability(ABILITY_ABTL_BATTLE_STATIONS_FROSTWOLF_WARSONG_BURROW, 1);
       ModAbilityAvailability(ABILITY_A0GM_FOR_THE_HORDE_PINK_GREY_MAIN_BUILDINGS, 1);
     }
-    
+
     private void RegisterQuests()
     {
       StartingQuest = AddQuest(new QuestThunderBluff(Regions.ThunderBluff));
@@ -87,6 +91,13 @@ Your allies will be coming south to help you defend against the Old Gods, do not
       AddQuest(new QuestFreeNerzhul(_allLegendSetup.Scourge.TheFrozenThrone, _allLegendSetup.Frostwolf.Thrall));
       AddQuest(new QuestWorldShaman(_allLegendSetup.Frostwolf.Thrall));
       AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
+    }
+
+    public override void OnNotPicked()
+    {
+      Regions.Highmountain_Unlock.CleanupNeutralPassiveUnits();
+
+      base.OnNotPicked();
     }
 
     private void RegisterDialogue()
@@ -173,34 +184,19 @@ Your allies will be coming south to help you defend against the Old Gods, do not
             new ObjectiveLegendMeetsLegend(_allLegendSetup.Frostwolf.Cairne, _allLegendSetup.Frostwolf.Thrall)
           }));
     }
-    
-    private void RegisterWarsongDialogue(Warsong warsong)
-    {
-      TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new Dialogue(
-          @"Sound\Dialogue\OrcCampaign\Orc08\O08Thrall07",
-          "Hellscream is like a brother to me, Cairne. But he and his clan have fallen under the demon's influence. If I can't save him, then my people might be damned for all time.",
-          "Thrall"), new[]
-        {
-          this
-        }, new[]
-        {
-          new ObjectiveQuestComplete(warsong.GetQuestByType<QuestFountainOfBlood>())
-          {
-            EligibleFactions = new List<Faction> { warsong }
-          }
-        }));
-    }
-    
+
+
+
     private void RegisterFlightPath()
     {
       // Registering Frostwolf's FlightPath research
       ResearchManager.Register(new FlightPath(
-        this,                 
-        UPGRADE_R09N_FLIGHT_PATH_WARSONG, 
-        70,                  
-        _preplacedUnitSystem  
-      ));
+        this,
+        UPGRADE_R09N_FLIGHT_PATH_WARSONG,
+        70,
+        _preplacedUnitSystem));
+
     }
   }
+
 }

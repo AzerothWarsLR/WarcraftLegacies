@@ -6,17 +6,9 @@
   ],
   "Modifications": [
     {
-      "Id": 2020631137,
-      "Value": 2
-    },
-    {
       "Id": 1718840929,
       "Type": 3,
       "Value": "(Gilneas - tess)"
-    },
-    {
-      "Id": 2020635233,
-      "Value": 2
     },
     {
       "Id": 1953854049,
@@ -44,12 +36,12 @@
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "E"
+      "Value": "W"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "E"
+      "Value": "W"
     },
     {
       "Level": 4,

@@ -47,7 +47,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
         Unit = preplacedUnitSystem.GetUnit(FourCC("o02D")),
         Essential = true
       };
-
+    
       Rexxar = new LegendaryHero("Rexxar")
       {
         UnitType = FourCC("Orex"),

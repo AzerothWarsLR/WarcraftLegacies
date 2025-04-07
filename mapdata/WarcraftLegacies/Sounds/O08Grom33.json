@@ -1,0 +1,33 @@
+{
+  "Name": "gg_snd_O08Grom33",
+  "FilePath": "Sound/Dialogue/OrcCampaign/Orc08/O08Grom33.flac",
+  "EaxSetting": "DefaultEAXON",
+  "FadeInRate": 1,
+  "FadeOutRate": 1,
+  "Volume": 127,
+  "Pitch": 4294967296,
+  "PitchVariance": 1,
+  "Priority": 1000,
+  "Channel": -1,
+  "MinDistance": 3000,
+  "MaxDistance": 4294967296,
+  "DistanceCutoff": 100000,
+  "ConeAngleInside": 4294967296,
+  "ConeAngleOutside": 4294967296,
+  "ConeOutsideVolume": -1,
+  "ConeOrientation": {
+    "X": 4.2949673E+09,
+    "Y": 4.2949673E+09,
+    "Z": 4.2949673E+09
+  },
+  "SoundName": "O08Grom33",
+  "DialogueTextKey": -1,
+  "Unk2": "",
+  "DialogueSpeakerNameKey": -1,
+  "Unk6": "",
+  "Unk7": "",
+  "FacialAnimationLabel": "",
+  "FacialAnimationGroupLabel": "",
+  "FacialAnimationSetFilepath": "",
+  "Unk11": 1
+}

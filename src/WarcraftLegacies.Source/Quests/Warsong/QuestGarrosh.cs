@@ -1,5 +1,5 @@
 ﻿using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 
 namespace WarcraftLegacies.Source.Quests.Warsong
@@ -8,17 +8,17 @@ namespace WarcraftLegacies.Source.Quests.Warsong
   {
     /// <inheritdoc/>
     public override string RewardFlavour =>
-      "With Kalimdor now under the Horde's control, the Warsong will be able to expand towards new conquests";
+      "The nightmarish grasp of N'Zoth and the Black Empire has been shattered, allowing Garrosh and the Warsong clan to rally and press forward towards new territories.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "The Warsong Expedition and Garrosh will become available";
+    protected override string RewardDescription => $"Can now train Garrosh from the {GetObjectName(UNIT_O020_ALTAR_OF_CONQUERORS_WARSONG_ALTAR)} and research the Warsong expedition from the {GetObjectName(UNIT_O02T_SHIPYARD_WARSONG_SHIPYARD)}";
 
-    public QuestGarrosh(Capital templeOfTheMoon) : base("Thirst for Conquest",
-      "The Night Elven Druids stand in the way of the Warsong's expansion, they will need to be eliminated for the Horde to grow",
-      @"ReplaceableTextures\CommandButtons\BTNWC1UnholyArmorRemasteredAlt.blp")
+    public QuestGarrosh(Legend  nzoth) : base("Twilight's Reckoning",
+      "The monstrous Old God N'Zoth threatens Kalimdor with madness and ruin. End his terrifying reign to secure the continent and further the Horde's ambitions.",
+      @"ReplaceableTextures\CommandButtons\BTNFacelessMadness.blp")
     {
-      AddObjective(new ObjectiveCapitalDead(templeOfTheMoon));
-      ResearchId = UPGRADE_R062_QUEST_COMPLETED_THIRST_FOR_CONQUEST;
+      AddObjective(new ObjectiveKillUnit(nzoth.Unit));
+      ResearchId = UPGRADE_R062_QUEST_COMPLETED_TWILIGHT_S_RECKONING;
     }
 
   }

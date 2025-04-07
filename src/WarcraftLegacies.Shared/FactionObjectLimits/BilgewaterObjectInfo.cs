@@ -39,7 +39,6 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(UNIT_U02R_HOBGOBLIN_GOBLIN, Unlimited);
       yield return new(UNIT_H09I_PERSONAL_TANK_GOBLIN, 12);
       yield return new(UNIT_H09J_GRENADIER_GOBLIN, 12);
-      yield return new(UNIT_ODOC_WITCH_DOCTOR_FROSTWOLF, Unlimited);
       yield return new(UNIT_O04O_ALCHEMIST_GOBLIN, Unlimited);
       yield return new(UNIT_O04Q_TINKER_GOBLIN, 6);
       yield return new(UNIT_ODES_FRIGATE_WARSONG_FROSTWOLF_FEL_HORDE, Unlimited);

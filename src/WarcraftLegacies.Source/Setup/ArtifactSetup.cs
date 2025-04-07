@@ -99,6 +99,8 @@ namespace WarcraftLegacies.Source.Setup
     
     public Artifact SunwellVial { get; set; }
     
+    public Artifact BloodhoofTotem { get; set; }
+    
     /// <summary>
     /// Sets up <see cref="ArtifactSetup"/>.
     /// </summary>
@@ -118,6 +120,9 @@ namespace WarcraftLegacies.Source.Setup
 
       EyeOfSargeras = new Artifact(CreateItem(ITEM_I003_EYE_OF_SARGERAS, -77.9f, 10910.4f));
       ArtifactManager.Register(EyeOfSargeras);
+      
+      BloodhoofTotem = new Artifact(CreateItem(ITEM_I00L_BLOODHOOF_TOTEM, DummyX, DummyY));
+      ArtifactManager.Register(BloodhoofTotem);
 
       HelmOfDomination = new Artifact(CreateItem(FourCC("I01Y"), DummyX, DummyY)); //Helm of Domination
       UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("u000_0649")), Artifact.ArtifactHolderAbilId); //Frozen Throne

@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("o03R", Unlimited); //Great Hall
       yield return new("o03Y", Unlimited); //Stronghold
       yield return new("o03Z", Unlimited); //Fortress
-      yield return new("o040", Unlimited); //Altar of Storms
+      yield return new(Constants.UNIT_O040_ALTAR_OF_LOA_ZANDALARI_ALTAR, Unlimited, UnitCategory.Altar);
       yield return new("o041", Unlimited); //Barracks
       yield return new("o042", Unlimited); //War Mill
       yield return new("o044", Unlimited); //Tauren Totem
