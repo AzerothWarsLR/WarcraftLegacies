@@ -1,10 +1,12 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using MacroTools.Cheats;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Systems;
 using MacroTools.UserInterface;
 using MacroTools.Utils;
+using WCSharp.Shared.Data;
 using static War3Api.Common;
 
 namespace MacroTools.FactionChoices
@@ -48,6 +50,27 @@ namespace MacroTools.FactionChoices
 
         if (replacedUnit != unit && CinematicMode.State == CinematicState.Active) 
           CinematicMode.AddPausedUnit(replacedUnit);
+      }
+    }
+    
+    public static void ReplaceRegionUnitsWithFactionEquivalents(Rectangle region, Faction pickedFaction)
+    {
+      if (pickedFaction == null)
+        throw new ArgumentNullException(nameof(pickedFaction), "pickedFaction cannot be null.");
+
+      var unitsInRegion = GlobalGroup
+        .EnumUnitsInRect(region) 
+        .Where(x => x.GetTypeId() != FourCC("ngol")) 
+        .Where(x => GetOwningPlayer(x) != Player(PLAYER_NEUTRAL_AGGRESSIVE));
+
+      foreach (var unit in unitsInRegion)
+      {
+        var replacedUnit = unit.ReplaceWithFactionEquivalent(pickedFaction); 
+
+        if (replacedUnit != unit && CinematicMode.State == CinematicState.Active)
+        {
+          CinematicMode.AddPausedUnit(replacedUnit); 
+        }
       }
     }
     

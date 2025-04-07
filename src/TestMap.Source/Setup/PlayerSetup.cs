@@ -1,4 +1,4 @@
-﻿namespace TestMap.Source.Setup
+namespace TestMap.Source.Setup
 {
   public static class PlayerSetup
   {

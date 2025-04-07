@@ -1,5 +1,5 @@
 {
-  "OldId": 1802728257,
+  "OldId": 1785873217,
   "NewId": 1127493697,
   "Unk": [
     0
@@ -8,33 +8,42 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Generic)"
+      "Value": "(Ogre Magi)"
     },
     {
-      "Id": 1835101793,
+      "Id": 2037082209,
       "Type": 3,
-      "Value": "Hardened"
+      "Value": "W"
     },
     {
-      "Level": 1,
+      "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Hardened"
+      "Value": "Rejuvenation"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Rejuvenation"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Reduces all attacks on the unit by \u003CZBHL,DataC1\u003E damage. Attacks cannot be reduced below \u003CZBHL,DataB1\u003E damage."
+      "Value": "Heals a target friendly unit for \u003CA07U,DataA1\u003E hit points over \u003CA04U,Dur1\u003E seconds."
     },
     {
-      "Id": 2037082209,
+      "Level": 2,
+      "Id": 828536161,
       "Type": 3,
-      "Value": ""
+      "Value": "Heals a target friendly unit for \u003CA07U,DataA2\u003E hit points over \u003CA07U,Dur2\u003E seconds."
     },
     {
-      "Id": 2020631137,
-      "Value": 1
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Heals a target friendly unit for \u003CA07U,DataA3\u003E hit points over \u003CA07U,Dur3\u003E seconds."
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "Left": -10656,
+  "Bottom": 1568,
+  "Right": -9760,
+  "Top": 2304,
+  "Name": "FrostwolfStartPos",
+  "CreationNumber": 21,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

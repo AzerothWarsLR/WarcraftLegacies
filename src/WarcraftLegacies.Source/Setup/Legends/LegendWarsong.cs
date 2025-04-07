@@ -9,9 +9,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero ChenStormstout { get; }
     public LegendaryHero Saurfang { get; }
     public LegendaryHero Garrosh { get; }
+    public LegendaryHero Gargok { get; }
     public LegendaryHero Mannoroth { get; }
     public Capital StonemaulKeep { get; }
     public Capital Orgrimmar { get; }
+    
     //public Capital LumberCamp { get; }
     
     public LegendWarsong(PreplacedUnitSystem preplacedUnitSystem)
@@ -39,7 +41,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Mannoroth = new LegendaryHero("Mannoroth")
       {
-        UnitType = UNIT_NMAN_THE_DESTROYER_WARSONG_BLOODPACT,
+        UnitType = UNIT_NMAN_MANNOROTH_THE_DESTROYER_WARSONG_BLOODPACT,
         PermaDies = true,
         DeathMessage =
           "Mannoroth the Corrupter has fallen.",
@@ -50,6 +52,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG,
         StartingXp = 8800
+      };
+      
+      Gargok = new LegendaryHero("Gargok")
+      {
+        UnitType = UNIT_O005_WARSONG_BATTLEMASTER_WARSONG
       };
 
       StonemaulKeep = new Capital
@@ -80,6 +87,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       LegendaryHeroManager.Register(Saurfang);
       LegendaryHeroManager.Register(Garrosh);
       LegendaryHeroManager.Register(Mannoroth);
+      LegendaryHeroManager.Register(Gargok);
       CapitalManager.Register(StonemaulKeep);
       CapitalManager.Register(Orgrimmar);
       //CapitalManager.Register(LumberCamp);
