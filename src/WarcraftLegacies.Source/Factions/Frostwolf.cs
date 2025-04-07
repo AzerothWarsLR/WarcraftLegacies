@@ -57,6 +57,7 @@ Your allies will be coming south to help you defend against the Old Gods, do not
         public override void OnRegistered()
         {
             RegisterObjectLevels();
+            RegisterFlightpath();
             RegisterQuests();
             RegisterDialogue();
             Regions.ThunderBluff.CleanupHostileUnits();
@@ -182,10 +183,14 @@ Your allies will be coming south to help you defend against the Old Gods, do not
 
 
 
-        private void RegisterWarsongRelatedResearches(Warsong warsong)
-        {
-            ResearchManager.Register(new FlightPath(warsong, this, UPGRADE_R09N_FLIGHT_PATH_WARSONG, 70,
-              _preplacedUnitSystem));
-        }
+       private void RegisterFlightpath()
+       {const int flightPathResearchId = UPGRADE_R09N_FLIGHT_PATH_WARSONG;
+         const int flightPathGoldCost = 70;
+         var flightPath = new FlightPath(this, flightPathResearchId, flightPathGoldCost, _preplacedUnitSystem);
+         ResearchSystem.Register(flightPath);
+
+
+
+       }
     }
 }
