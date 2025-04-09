@@ -26,6 +26,14 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Prevent all ranged damage."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 2037408353,
+      "Value": -11
     }
   ]
 }

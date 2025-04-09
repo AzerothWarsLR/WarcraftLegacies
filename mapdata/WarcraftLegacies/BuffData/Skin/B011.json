@@ -11,11 +11,6 @@
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBattleFury.blp"
     },
     {
-      "Id": 1885959270,
-      "Type": 3,
-      "Value": "Martial Spirit"
-    },
-    {
       "Id": 1700951398,
       "Type": 3,
       "Value": "This unit is affected by the Martial Spirit;its movement speed and attack speed are increased. "
@@ -38,6 +33,15 @@
       "Id": 828470374,
       "Type": 3,
       "Value": "hand,right"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Martial Spirit"
+    },
+    {
+      "Id": 1685091174,
+      "Value": 1
     }
   ]
 }

@@ -20,7 +20,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Rouse the battle will of all Warsong units. Increase the attack speed of all non - mechanical,flying, and hero units by 50% and their movement speed by 30%. Meanwhile, these units gain a 15% chance to deal double damage when attacking. Grom becomes immune to all ranged physical damage, and elite units additionally gain a 50% lifesteal ability.|nLasts 20s"
+      "Value": "Rouse the battle will of all Warsong units. Increase the attack speed of all non - mechanical,flying, and hero units by 60% and their movement speed by 30%. Meanwhile, these units gain a 15% chance to deal double damage when attacking. Grom becomes immune to all ranged physical damage, and elite units additionally gain a 50% lifesteal ability.|nLasts 25s."
     },
     {
       "Id": 1835101793,
@@ -35,7 +35,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Rouse the battle will of all Warsong units. Increase the attack speed of all non - mechanical,flying, and hero units by 50% and their movement speed by 30%. Meanwhile, these units gain a 15% chance to deal double damage when attacking. Grom becomes immune to all ranged physical damage, and elite units additionally gain a 50% lifesteal ability. |n|n|cffffcc00Level 1|r - lasts 20s,120s cooldown. |n|cffffcc00Level 2|r - lasts 25s,110s cooldown.|n|cffffcc00Level 3|r - lasts 30s,100s cooldown.|n"
+      "Value": "Rouse the battle will of all Warsong units. Increase the attack speed of all non - mechanical,flying, and hero units by 60% and their movement speed by 30%. Meanwhile, these units gain a 15% chance to deal double damage when attacking. Grom becomes immune to all ranged physical damage, and elite units additionally gain a 50% lifesteal ability. |n|n|cffffcc00Level 1|r - lasts 25s,120s cooldown. |n|cffffcc00Level 2|r - lasts 30s,110s cooldown.|n|cffffcc00Level 3|r - lasts 35s,100s cooldown.|n"
     },
     {
       "Id": 1802007137,
@@ -81,13 +81,13 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Rouse the battle will of all Warsong units. Increase the attack speed of all non - mechanical,flying, and hero units by 50% and their movement speed by 30%. Meanwhile, these units gain a 15% chance to deal double damage when attacking. Grom becomes immune to all ranged physical damage, and elite units additionally gain a 50% lifesteal ability.|nLasts 25s"
+      "Value": "Rouse the battle will of all Warsong units. Increase the attack speed of all non - mechanical,flying, and hero units by 60% and their movement speed by 30%. Meanwhile, these units gain a 15% chance to deal double damage when attacking. Grom becomes immune to all ranged physical damage, and elite units additionally gain a 50% lifesteal ability.|nLasts 30s."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Rouse the battle will of all Warsong units. Increase the attack speed of all non - mechanical,flying, and hero units by 50% and their movement speed by 30%. Meanwhile, these units gain a 15% chance to deal double damage when attacking. Grom becomes immune to all ranged physical damage, and elite units additionally gain a 50% lifesteal ability.|nLasts 30s"
+      "Value": "Rouse the battle will of all Warsong units. Increase the attack speed of all non - mechanical,flying, and hero units by 60% and their movement speed by 30%. Meanwhile, these units gain a 15% chance to deal double damage when attacking. Grom becomes immune to all ranged physical damage, and elite units additionally gain a 50% lifesteal ability.|nLasts 35s."
     },
     {
       "Id": 1952539489,

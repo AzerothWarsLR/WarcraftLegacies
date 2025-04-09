@@ -8,7 +8,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(endurance dummy)"
+      "Value": "(dummy)"
     },
     {
       "Id": 1953854049,
@@ -25,22 +25,31 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Increases nearby friendly units\u0027 movement speed by \u003CA0TK,DataA1,%\u003E% and attack rate by \u003CA0TK,DataB1,%\u003E%."
-    },
-    {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Martial Spirit"
+      "Value": "Increases nearby friendly units\u0027 movement speed by 60% and attack rate by 30%."
     },
     {
       "Id": 1952543841,
       "Type": 3,
-      "Value": ""
+      "Value": "Abilities\\Spells\\Orc\\Bloodlust\\BloodlustTarget.mdl,Abilities\\Spells\\Orc\\Bloodlust\\BloodlustSpecial.mdl"
     },
     {
       "Id": 1953653089,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBattleFury.blp"
+    },
+    {
+      "Id": 1667331169,
+      "Value": 2
+    },
+    {
+      "Id": 811693153,
+      "Type": 3,
+      "Value": "hand,left"
+    },
+    {
+      "Id": 828470369,
+      "Type": 3,
+      "Value": "hand,right"
     },
     {
       "Id": 2020631137,
@@ -49,6 +58,11 @@
     {
       "Id": 2037408353,
       "Value": -11
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Martial Spirit"
     }
   ]
 }
