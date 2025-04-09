@@ -90,9 +90,9 @@
       "Value": "Rouse the battle will of all Warsong units. Increase the attack speed of all non - mechanical,flying, and hero units by 50% and their movement speed by 30%. Meanwhile, these units gain a 15% chance to deal double damage when attacking. Grom becomes immune to all ranged physical damage, and elite units additionally gain a 50% lifesteal ability.|nLasts 30s"
     },
     {
-      "Id": 1952543841,
+      "Id": 1952539489,
       "Type": 3,
-      "Value": "Abilities\\Spells\\Items\\AIam\\AIamTarget.mdl"
+      "Value": "Abilities\\Spells\\Orc\\WarStomp\\WarStompCaster.mdl"
     }
   ]
 }
