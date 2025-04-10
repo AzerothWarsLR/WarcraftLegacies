@@ -1,0 +1,45 @@
+{
+  "OldId": 1685547073,
+  "NewId": 1095315521,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Nexus)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons an Immovable Rune Sphere that has the Feedback and Abolish Magic abilities,which can automatically dispels positive buffs from enemy units,burning 30 mana from the unit. Lasts 45 seconds.|n|n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Rune Sphere"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Rune Sphere"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNArcaneSphere.blp"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    }
+  ]
+}
