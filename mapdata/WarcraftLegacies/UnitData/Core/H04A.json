@@ -17,7 +17,7 @@
     {
       "Id": 1650550901,
       "Type": 3,
-      "Value": "A096,AHmt,Aamk,AHbz,AHab"
+      "Value": "A096,A0LV,Aamk,AHbz,AHab"
     },
     {
       "Id": 1836083317,
@@ -88,6 +88,16 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1633772661,
+      "Type": 3,
+      "Value": "A0JW"
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "AInv,A0JW"
     }
   ]
 }

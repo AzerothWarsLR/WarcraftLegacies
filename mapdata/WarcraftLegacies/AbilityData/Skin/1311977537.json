@@ -38,7 +38,7 @@
     {
       "Id": 1952805473,
       "Type": 3,
-      "Value": "Learn Dragon Form"
+      "Value": "Learn Dragon Form - [|cffffcc00Level %d|r]"
     },
     {
       "Id": 1953854049,
@@ -49,7 +49,7 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Dragon Form"
+      "Value": "Dragon Form - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 1,
@@ -73,6 +73,18 @@
       "Id": 1802728801,
       "Type": 3,
       "Value": "E004"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Dragon Form - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Dragon Form - [|cffffcc00Level 3|r]"
     }
   ]
 }

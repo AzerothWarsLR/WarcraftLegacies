@@ -9,10 +9,6 @@
     "InventoryData": [],
     "AbilityData": [
       {
-        "AbilityId": 1212493889,
-        "IsAutocastActive": true
-      },
-      {
         "AbilityId": 808595521,
         "IsAutocastActive": true
       },
