@@ -1,0 +1,97 @@
+{
+  "OldId": 1936543297,
+  "NewId": 1464479809,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Nexus)"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Activate Mana Shield - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Activates a shield that absorbs \u003CANms,DataA4\u003E damage per point of mana."
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Mana Shield"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 2019718497,
+      "Value": 1
+    },
+    {
+      "Id": 2036495713,
+      "Value": 1
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Creates a shield that absorbs damage by using the hero\u0027s mana. |n|n|cffffcc00Level 1|r - \u003CANms,DataA1\u003E damage per point of mana. |n|cffffcc00Level 2|r - \u003CANms,DataA2\u003E damage per point of mana. |n|cffffcc00Level 3|r - \u003CANms,DataA3\u003E damage per point of mana. |n|cffffcc00Level 3|r - \u003CANms,DataA4\u003E damage per point of mana."
+    },
+    {
+      "Level": 2,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "Deactivate Mana Shield"
+    },
+    {
+      "Level": 3,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "Deactivate Mana Shield"
+    },
+    {
+      "Level": 4,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "Deactivate Mana Shield"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Activate Mana Shield"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Activates a shield that absorbs \u003CA0JW,DataA1\u003E damage per point of mana."
+    }
+  ]
+}

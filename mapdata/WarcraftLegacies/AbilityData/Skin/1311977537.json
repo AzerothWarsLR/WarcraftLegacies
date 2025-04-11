@@ -43,7 +43,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Transforms the hero into a powerful Flying Dragon with a frost attack and 1000/2000/3000 bonus hit points. |nLasts 25 seconds."
+      "Value": "Transforms the hero into a powerful Flying Dragon with a frost attack and 1000/2000/3000 bonus hit points.In dragon form, increase the attack power of all Blue Dragons by 50%,health regeneration by 30,movement speed by 10%.  |nLasts 25/30/35 seconds."
     },
     {
       "Level": 1,
@@ -55,19 +55,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Transforms the hero into a powerful Flying Dragon with a frost ranged attack and 1000 bonus hit points. |nLasts 25 seconds."
+      "Value": "Transforms the hero into a powerful Flying Dragon with a frost ranged attack and 1000 bonus hit points.In dragon form, increase the attack power of all Blue Dragons by 50%,health regeneration by 30,movement speed by 10%. |nLasts 25 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Transforms the hero into a powerful Flying Dragon with a frost ranged attack and 2000 bonus hit points. |nLasts 25 seconds."
+      "Value": "Transforms the hero into a powerful Flying Dragon with a frost ranged attack and 2000 bonus hit points.In dragon form, increase the attack power of all Blue Dragons by 50%,health regeneration by 30,movement speed by 10%. |nLasts 35 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Transforms the hero into a powerful Flying Dragon with a frost ranged attack and 3000 bonus hit points. |nLasts 25 seconds."
+      "Value": "Transforms the hero into a powerful Flying Dragon with a frost ranged attack and 3000 bonus hit points.In dragon form, increase the attack power of all Blue Dragons by 50%,health regeneration by 30,movement speed by 10%. |nLasts 35 seconds."
     },
     {
       "Id": 1802728801,
