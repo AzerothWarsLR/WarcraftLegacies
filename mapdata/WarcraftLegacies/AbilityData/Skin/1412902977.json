@@ -25,11 +25,6 @@
       "Value": "Q"
     },
     {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Dragon Kin"
-    },
-    {
       "Id": 1918988897,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNBlueDragonRoost.blp"
@@ -100,6 +95,11 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Malygos summons 7 Blue Dragon Whelps."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Dragon Kin"
     }
   ]
 }

@@ -22,6 +22,11 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Gives a 50% chance that an attack will deal 40 damage to nearby units."
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Volcano\\VolcanoDeath.mdl"
     }
   ]
 }

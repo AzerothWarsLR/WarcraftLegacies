@@ -1,0 +1,38 @@
+{
+  "OldId": 1635074881,
+  "NewId": 1397502017,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Nexus Dummy life)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Dragon form"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Dragon form"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Id": 2037408353,
+      "Value": -11
+    }
+  ]
+}

@@ -13,6 +13,11 @@
       "Id": 1651864693,
       "Type": 3,
       "Value": "Tiny ranged flying unit that deals cold damage and slows enemy units. "
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
     }
   ]
 }

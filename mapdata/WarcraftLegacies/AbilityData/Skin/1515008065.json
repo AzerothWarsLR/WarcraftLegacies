@@ -1,0 +1,34 @@
+{
+  "OldId": 1852395073,
+  "NewId": 1515008065,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Ice Explosion"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Nexus dummy)"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaneExplosion.blp"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNArcaneExplosion.blp"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "IceExplosion.mdx"
+    }
+  ]
+}
