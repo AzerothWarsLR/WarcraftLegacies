@@ -1,4 +1,3 @@
-
 using WCSharp.Shared.Data;
 using MacroTools.UserInterface;
 
@@ -14,7 +13,6 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
     public int ResearchReward { get; }
     public int? ArtifactRewardItemType { get; }
 
-
     public WarsongPillageChoice(
       PillageChoiceType type,
       string name,
@@ -22,8 +20,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
       int goldReward,
       int experienceReward,
       int researchReward = 0,
-     int? artifactRewardItemType = null)
-
+      int? artifactRewardItemType = null)
     {
       Type = type;
       Name = name;
@@ -32,7 +29,6 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
       ExperienceReward = experienceReward;
       ResearchReward = researchReward;
       ArtifactRewardItemType = artifactRewardItemType;
-
     }
   }
 
