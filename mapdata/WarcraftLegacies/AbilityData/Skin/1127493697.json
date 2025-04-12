@@ -31,7 +31,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Heals a target friendly unit for \u003CA07U,DataA1\u003E hit points over \u003CA04U,Dur1\u003E seconds."
+      "Value": "Heals a target friendly unit for \u003CA04C,DataA1\u003E hit points over \u003CA04C,Dur1\u003E seconds."
     },
     {
       "Level": 2,
