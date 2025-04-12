@@ -64,6 +64,7 @@ Your allies will be coming south to help you defend against the Old Gods, do not
             Regions.GromSpawn.CleanupHostileUnits();
             Regions.EchoUnlock.CleanupHostileUnits();
             SharedFactionConfigSetup.AddSharedFactionConfig(this);
+          
         }
 
         private void RegisterObjectLevels()

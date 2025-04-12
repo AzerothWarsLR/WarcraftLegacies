@@ -21,7 +21,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
         UnitType = FourCC("Ocbh"),
         DeathMessage =
           "Cairne's spirit has passed on from this world. The Tauren have already begun to revere their fallen ancestor.",
-        StartingXp = 1800
+        StartingXp = 1800,
+        StartingArtifacts = new()
+        {
+          new(CreateItem(ITEM_I00L_BLOODHOOF_TOTEM, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+        }
       };
 
       Thrall = new LegendaryHero("Thrall")
