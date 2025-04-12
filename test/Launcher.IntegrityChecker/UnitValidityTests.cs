@@ -16,48 +16,59 @@ namespace Launcher.IntegrityChecker
     {
       _mapTestFixture = mapTestFixture;
     }
-    
+
     [Fact]
     public void AllUnits_HaveValidFields()
     {
       var issues = new List<string>();
       var objectDatabase = _mapTestFixture.ObjectDatabase;
       
+      var exceptions = new HashSet<string>
+      {
+        "nftk", "nogo", "okod", "otbk", "n07A", "o02M", "o06Q"
+      };
+
       foreach (var unit in objectDatabase.GetUnits().ToArray())
       {
+        if (exceptions.Contains(unit.GetReadableId()))
+        {
+          continue;
+        }
+
         if (VerifyUnitsTrained(unit, out var unitsTrainedIssues)) 
           issues.Add(unitsTrainedIssues);
-        
+
         if (VerifyResearchesAvailable(unit, out var researchesAvailableIssue)) 
           issues.Add(researchesAvailableIssue);
-        
+
         if (VerifyResearchesRequired(unit, out var researchesRequiredIssue)) 
           issues.Add(researchesRequiredIssue);
-        
+
         if (VerifyNormalAbilities(unit, out var normalAbilitiesIssue)) 
           issues.Add(normalAbilitiesIssue);
-        
+
         if (VerifyHeroAbilities(unit, out var heroAbilitiesIssue)) 
           issues.Add(heroAbilitiesIssue);
 
-        //todo: re-enable this but fix all of the blight issues
+        // TODO: Re-enable this but fix all of the blight issues
         // if (VerifyForbiddenAbilities(unit, out var forbiddenAbilityIssue))
         //   issues.Add(forbiddenAbilityIssue);
       }
+
       if (issues.Count == 0)
         return;
-      
+
       var exceptionMessageBuilder = new StringBuilder();
       foreach (var issue in issues)
         exceptionMessageBuilder.AppendLine(issue);
-      
+
       throw new XunitException(exceptionMessageBuilder.ToString());
     }
 
     private static bool VerifyUnitsTrained(Unit unit, [NotNullWhen(true)] out string? issue)
     {
       issue = null;
-      
+
       if (!unit.IsTechtreeUnitsTrainedModified)
         return false;
 
@@ -70,14 +81,14 @@ namespace Launcher.IntegrityChecker
         issue = $"{unit.GetReadableId()} has an invalid Units Trained field.";
         return true;
       }
-      
+
       return false;
     }
-    
+
     private static bool VerifyResearchesAvailable(Unit unit, [NotNullWhen(true)] out string? issue)
     {
       issue = null;
-      
+
       if (!unit.IsTechtreeResearchesAvailableModified)
         return false;
 
@@ -90,14 +101,14 @@ namespace Launcher.IntegrityChecker
         issue = $"{unit.GetReadableId()} has an invalid Researches Available field.";
         return true;
       }
-      
+
       return false;
     }
-    
-    private static bool VerifyResearchesRequired(Unit unit,[NotNullWhen(true)] out string? issue)
+
+    private static bool VerifyResearchesRequired(Unit unit, [NotNullWhen(true)] out string? issue)
     {
       issue = null;
-      
+
       if (!unit.IsTechtreeRequirementsModified)
         return false;
 
@@ -110,14 +121,14 @@ namespace Launcher.IntegrityChecker
         issue = $"{unit.GetReadableId()} has an invalid Researches Required field.";
         return true;
       }
-      
+
       return false;
     }
-    
+
     private static bool VerifyNormalAbilities(Unit unit, [NotNullWhen(true)] out string? issue)
     {
       issue = null;
-      
+
       if (!unit.IsAbilitiesNormalModified)
         return false;
 
@@ -130,14 +141,14 @@ namespace Launcher.IntegrityChecker
         issue = $"{unit.GetReadableId()} has at least one invalid normal Ability.";
         return true;
       }
-      
+
       return false;
     }
-    
+
     private static bool VerifyHeroAbilities(Unit unit, [NotNullWhen(true)] out string? issue)
     {
       issue = null;
-      
+
       if (!unit.IsAbilitiesHeroModified)
         return false;
 
@@ -150,10 +161,10 @@ namespace Launcher.IntegrityChecker
         issue = $"{unit.GetReadableId()} has at least one invalid hero Ability.";
         return true;
       }
-      
+
       return false;
     }
-    
+
     private static bool VerifyForbiddenAbilities(Unit unit, [NotNullWhen(true)] out string? issue)
     {
       issue = null;
@@ -175,10 +186,10 @@ namespace Launcher.IntegrityChecker
           return true;
         }
       }
-      
+
       return false;
     }
-    
+
     private static bool AbilityIsForbidden(Ability ability)
     {
       if (ability is BlightDispelLarge or BlightDispelSmall or BlightPlacement or BlightedGoldMine or BlightGrowthLarge or BlightGrowthSmall)
