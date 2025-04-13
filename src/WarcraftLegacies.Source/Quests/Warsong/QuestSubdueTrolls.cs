@@ -43,7 +43,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       "The Darkspear Trolls have been brought to heel.";
 
     protected override string RewardDescription =>
-      $"Control of Echo Isles and the ability to train {GetObjectName(UNIT_OTBK_AXE_THROWER_WARSONG)}s' from the {GetObjectName(UNIT_O01S_WAR_CAMP_WARSONG_BARRACKS)} and {GetObjectName(UNIT_NOGN_WARLOCK_WARSONG)}s' from the {GetObjectName(UNIT_O006_SPIRE_WARSONG_MAGIC)}. Alternatively, earn {PillageGoldReward} gold and {PillageExperienceReward} experience points, shared across all your heroes. Additionally, enhance {GetObjectName(UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE)}'s by increasing their maximum mana by 250 and their mana regeneration by 20%.";
+      $"Control of Echo Isles and the ability to train {GetObjectName(UNIT_OTBK_AXE_THROWER_WARSONG)}s' from the {GetObjectName(UNIT_O01S_WAR_CAMP_WARSONG_BARRACKS)} and {GetObjectName(UNIT_NOGN_WARLOCK_WARSONG)}s' from the {GetObjectName(UNIT_O006_SPIRE_WARSONG_MAGIC)}. Alternatively, earn {PillageGoldReward} gold and {PillageExperienceReward} experience points, shared across all your heroes. Additionally, enhance both {GetObjectName(UNIT_O00G_BLADEMASTER_WARSONG)}s' and {GetObjectName(UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE)}s' by increasing their maximum mana by 250 and their mana regeneration by 20%.";
 
     protected override void OnComplete(Faction completingFaction)
     {
