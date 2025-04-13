@@ -52,6 +52,9 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       SpellSystem.Register(stormEarthandFire);
       //Todo: inappropriately named
+      
+      SpellSystem.Register(new JumpSpell(123456, jumpSpeed: 1000f, maxHeight: 500f));
+
     }
   }
 }
