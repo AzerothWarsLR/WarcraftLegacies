@@ -15,13 +15,16 @@ using WCSharp.Shared.Data;
 namespace WarcraftLegacies.Source.Factions
 {
   public sealed class Skywall : Faction
+  
   {
+    private readonly AllLegendSetup _allLegendSetup;
     /// <inheritdoc />
-    public Skywall() : base("Skywall", PLAYER_COLOR_LIGHT_GRAY, "|cffffffff",
+    public Skywall(AllLegendSetup allLegendSetup) : base("Skywall", PLAYER_COLOR_LIGHT_GRAY, "|cffffffff",
       @"ReplaceableTextures\CommandButtons\BTNFrostRevenant2.blp")
     {
       ControlPointDefenderUnitTypeId = UNIT_NECP_CONTROL_POINT_DEFENDER_SKYWALL_TOWER;
       TraditionalTeam = TeamSetup.OldGods;
+      _allLegendSetup = allLegendSetup;
       StartingGold = 200;
       IntroText = @"You are playing as the Elementals of Skywall|r|r.
 
@@ -61,6 +64,9 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
       AddQuest(new QuestEmissary());
       AddQuest(new QuestThroneWind(Regions.ThroneoftheFourWind));
       AddQuest(new QuestSubduing());
+      AddQuest(new QuestKillDruids(_allLegendSetup.Druids.Nordrassil));
+
+
 
     }
 
