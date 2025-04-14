@@ -1,6 +1,7 @@
 ﻿using MacroTools.Data;
 using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
+using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
 
@@ -13,13 +14,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
     /// </summary>
     public static void Setup()
     {
-      PassiveAbilityManager.Register(new Execute(UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG)
-      {
-        DamageMultNonResistant = 4,
-        DamageMultResistant = 1.5f,
-        DamageMultStructure = 1
-      });
-
       PassiveAbilityManager.Register(new Execute(UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG)
       {
         DamageMultNonResistant = 4,
@@ -36,6 +30,25 @@ namespace WarcraftLegacies.Source.Setup.Spells
         },
         Effect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl"
       });
+
+      var ResoluteHeart = new NoTargetSpellOnAttack(UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG,
+  ABILITY_A0UV_RESOLUTE_HEART_GARROSH)
+      {
+        DummyAbilityId = ABILITY_A0VW_RESOLUTE_HEART_MASS_DUMMY,
+        DummyOrderId = OrderId("howlofterror"),
+        ProcChance = 0.25f,
+      };
+      PassiveAbilityManager.Register(ResoluteHeart);
+
+      var ResoluteHeartlSpell = new MassAnySpell(ABILITY_A0VW_RESOLUTE_HEART_MASS_DUMMY)
+      {
+        DummyAbilityId = ABILITY_A0VR_HEAL_WARSONG_DUMMY,
+        DummyAbilityOrderId = OrderId("heal"),
+        Radius = 600,
+        CastFilter = CastFilters.IsTargetAllyAndAlive,
+        TargetType = SpellTargetType.None
+      };
+      SpellSystem.Register(ResoluteHeartlSpell);
 
       var stormEarthandFire = new StormEarthandFire(ABILITY_A0HM_STORM_EARTH_AND_FIRE_WARSONG_CHEN_SUMMON)
       {
