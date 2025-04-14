@@ -17,7 +17,7 @@ public sealed class UnlockShipDialogPresenter : ChoiceDialogPresenter<UnlockShip
     : base(
       new[]
       {
-        new UnlockShipChoice("Teleport Troops (Reccomended)", UnlockShipChoiceType.TeleportTroops),
+        new UnlockShipChoice("Teleport to Westfall (Recommended)", UnlockShipChoiceType.TeleportTroops),
         new UnlockShipChoice("Do Nothing", UnlockShipChoiceType.DoNothing)
       },
       "Choose What To Do With Your Troops")
@@ -43,13 +43,11 @@ public sealed class UnlockShipDialogPresenter : ChoiceDialogPresenter<UnlockShip
       if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE) && !IsUnitType(unit, UNIT_TYPE_ANCIENT) && !IsUnitType(unit, UNIT_TYPE_PEON))
         SetUnitPosition(unit, 6864, -17176);
     }
-
-    // Rescue units and unlock capital ship
+    
     whichPlayer.RescueGroup(rescueUnits);
     proudmooreCapitalShip.Rescue(whichPlayer);
     proudmooreCapitalShip.PauseEx(false);
-
-    // Adjust camera
+    
     whichPlayer.RepositionCamera(6864, -17176);
   }
 
