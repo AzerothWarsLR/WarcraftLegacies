@@ -17,7 +17,7 @@ public sealed class UnlockShipDialogPresenter : ChoiceDialogPresenter<UnlockShip
     : base(
       new[]
       {
-        new UnlockShipChoice("Teleport to Westfall (Recommended)", UnlockShipChoiceType.TeleportTroops),
+        new UnlockShipChoice("Sail to Westfall (Recommended)", UnlockShipChoiceType.TeleportTroops),
         new UnlockShipChoice("Do Nothing", UnlockShipChoiceType.DoNothing)
       },
       "Choose What To Do With Your Troops")
