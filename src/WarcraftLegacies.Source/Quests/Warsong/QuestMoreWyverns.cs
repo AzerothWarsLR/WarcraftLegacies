@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 {
   public sealed class QuestMoreWyverns : QuestData
   {
-    private const int LimitChange = 2;
+    private const int LimitChange = 4;
     
     private static readonly int UnittypeId = Constants.UNIT_OWYV_WIND_RIDER_WARSONG;
 

@@ -1,6 +1,6 @@
 {
   "OldId": 1802723905,
-  "NewId": 1397174337,
+  "NewId": 1515335745,
   "Unk": [
     0
   ],
@@ -8,7 +8,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Nexus Elite)"
+      "Value": "(Nexus Elementalist)"
     },
     {
       "Id": 2037082209,
@@ -39,7 +39,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Causes this unit to attack \u003CA0GS,DataB1,%\u003E% faster,move \u003CA0GS,DataA1,%\u003E% faster. Blocks all physical damage whilst absorbing and converting spell damage into an equal proportion of HP.|nLasts 8 seconds."
+      "Value": "Causes this unit to attack \u003CA0RZ,DataB1,%\u003E% faster,move \u003CA0RZ,DataA1,%\u003E% faster.Blocks all physical damage whilst absorbing and converting spell damage into an equal proportion of HP.|nLasts 4  seconds."
     }
   ]
 }
