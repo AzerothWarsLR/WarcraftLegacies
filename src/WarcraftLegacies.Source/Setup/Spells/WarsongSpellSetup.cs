@@ -36,6 +36,17 @@ namespace WarcraftLegacies.Source.Setup.Spells
         },
         Effect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl"
       });
+      
+      var resoluteHeart = new ResoluteHeart(UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG,
+        ABILITY_A0R6_RESOLUTE_HEART_ICON)
+      {
+        Radius = 300f, 
+        BaseProcChance = 0.2f, 
+        EffectPath = @"Abilities\Spells\Human\Heal\HealTarget.mdl" 
+      };
+      PassiveAbilityManager.Register(resoluteHeart);
+
+
 
       var stormEarthandFire = new StormEarthandFire(ABILITY_A0HM_STORM_EARTH_AND_FIRE_WARSONG_CHEN_SUMMON)
       {
