@@ -1,0 +1,44 @@
+{
+  "OldId": 829453167,
+  "NewId": 842084463,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Rune Sphere"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "ForceGem.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.85
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\ManaFlare\\ManaFlareMissile.mdl"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Nexus)"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNArcaneSphere.blp"
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

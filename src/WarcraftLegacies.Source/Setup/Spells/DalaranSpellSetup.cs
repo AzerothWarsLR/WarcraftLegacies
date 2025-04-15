@@ -33,6 +33,17 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var rebornTime = new CooldownReset(ABILITY_A10T_REBORN_THROUGH_TIME_DALARAN);
       SpellSystem.Register(rebornTime);
 
+      var massIceLance = new MassAnySpell(ABILITY_A0J0_MASS_ICE_LANCE_NEXUS)
+      {
+        DummyAbilityId = ABILITY_A0IK_MASS_ICE_LANCE_NEXUS_DUMMY,
+        DummyAbilityOrderId = OrderId("thunderbolt"),
+        Radius = 250,
+        CastFilter = CastFilters.IsTargetEnemyAndAlive,
+        TargetType = SpellTargetType.Point,
+        DummyCastOriginType = DummyCastOriginType.Caster
+      };
+      SpellSystem.Register(massIceLance);
+
       var massSimulacrum = new MassSimulacrum(ABILITY_A0DG_MASS_SIMULACRUM_ORANGE_ANTONIDAS)
       {
         Radius = 150,

@@ -40,11 +40,6 @@
       "Value": "Abilities\\Weapons\\LavaSpawnMissile\\LavaSpawnMissile.mdl"
     },
     {
-      "Id": 1835101813,
-      "Type": 3,
-      "Value": "Blue Dragon"
-    },
-    {
       "Id": 1885959285,
       "Type": 3,
       "Value": "Train Blue Dragon"
@@ -53,6 +48,11 @@
       "Id": 1651864693,
       "Type": 3,
       "Value": "Dragons tasked by the Titans with the safeguarding of magic on Azeroth."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Blue Dragon"
     }
   ]
 }

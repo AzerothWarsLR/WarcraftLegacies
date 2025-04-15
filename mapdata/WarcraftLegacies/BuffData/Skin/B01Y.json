@@ -1,0 +1,39 @@
+{
+  "OldId": 1667321666,
+  "NewId": 1496395842,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is affected by the Dragon form; its attack power is increased."
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNAzureDragon.blp"
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Dragon form(bonus attack)"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Dragon form"
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "war3mapImported/Phase Disruptor.mdx"
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": "overhead"
+    }
+  ]
+}

@@ -1,21 +1,19 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
-using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
-using MacroTools.Utils;
+using WarcraftLegacies.Source.FactionMechanics.KulTiras;
 using WCSharp.Shared.Data;
 using static War3Api.Blizzard;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
   /// <summary>
-  /// Proudmoore captial ship starts locked. Take control of Kul Tiras to unlock it.
+  /// Proudmoore capital ship starts locked. Take control of Kul Tiras to unlock it.
   /// </summary>
   public sealed class QuestUnlockShip : QuestData
   {
@@ -26,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     /// Initializes a new instance of the <see cref="QuestUnlockShip"/> class.
     /// </summary>
     /// <param name="rescueRect">All units in this area will be made neutral, then rescued when the quest is completed.</param>
-    /// <param name="proudmooreCapitalShip">starts invulnerable and unusable. Made usuable and vulnerable when the quest is completed.</param>
+    /// <param name="proudmooreCapitalShip">Starts invulnerable and unusable and will be made usable and vulnerable when the quest is completed.</param>
     /// <param name="daelinProudmoore">Must be controlled to complete the quest.</param>
     /// <param name="prerequisite">Needs to be completed first.</param>
     public QuestUnlockShip(Rectangle rescueRect, unit proudmooreCapitalShip, LegendaryHero daelinProudmoore,
@@ -36,7 +34,6 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     {
       AddObjective(new ObjectiveQuestComplete(prerequisite));
       AddObjective(new ObjectiveControlLegend(daelinProudmoore, false));
-      AddObjective(new ObjectiveResearch(UPGRADE_R05J_STRANGLETHORN_EXPEDITION_KULTIRAS, UNIT_H046_BORALUS_KEEP_KUL_TIRAS));
       AddObjective(new ObjectiveSelfExists());
       _proudmooreCapitalShip = proudmooreCapitalShip;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
@@ -47,38 +44,47 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Unlock the Proudmoore capital ship and the buildings inside. Move all your non-worker units to Stranglethorn Vale";
+      "Unlock the Proudmoore capital ship and the buildings inside. Move all your non-worker units to Stranglethorn Vale.";
 
+    /// <inheritdoc/>
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       if (completingFaction.Player != null)
       {
-        MoveStranglethorn(completingFaction.Player);
-        completingFaction.Player.RescueGroup(_rescueUnits);
+        var dialogPresenter = new UnlockShipDialogPresenter(
+          completingFaction.Player,
+          _rescueUnits,
+          _proudmooreCapitalShip
+        );
+        dialogPresenter.Run(completingFaction.Player);
+      }
+      else
+      {
+        // Fallback if no player exists
+        Player(bj_PLAYER_NEUTRAL_VICTIM).RescueGroup(_rescueUnits);
+        _proudmooreCapitalShip.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      }
+    
+      // Ensure the ship is rescued and unlocked
+      EnsureShipIsUnlocked(completingFaction);
+    }
+    
+    private void EnsureShipIsUnlocked(Faction completingFaction)
+    {
+      // Handle ship unlocking logic
+      if (completingFaction.Player != null)
+      {
         _proudmooreCapitalShip.Rescue(completingFaction.Player);
       }
       else
       {
-        Player(bj_PLAYER_NEUTRAL_VICTIM).RescueGroup(_rescueUnits);
         _proudmooreCapitalShip.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       }
+      
       _proudmooreCapitalShip.PauseEx(false);
-
-
     }
-
-    private static void MoveStranglethorn(player whichPlayer)
-    {
-      foreach (var unit in GlobalGroup.EnumUnitsInRect(Rectangle.WorldBounds).Where(x => x.OwningPlayer() == whichPlayer))
-      {
-        if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE) && !IsUnitType(unit, UNIT_TYPE_ANCIENT) && !IsUnitType(unit, UNIT_TYPE_PEON))
-          SetUnitPosition(unit, 6864, -17176);
-      }
-
-      whichPlayer.RepositionCamera(6864, -17176);
-    }
-
+    
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {

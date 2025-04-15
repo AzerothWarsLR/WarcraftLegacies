@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
             _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
             PillageGoldReward = 500;
-            PillageExperienceReward = 1200;
+            PillageExperienceReward = 2500;
         }
 
         /// <inheritdoc/>
@@ -47,7 +47,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
         /// <inheritdoc/>
         protected override string RewardDescription =>
-          $"Control of Thunder Bluff and the ability to train {GetObjectName(UNIT_OKOD_KODO_BEAST_WARSONG)}s' from {GetObjectName(UNIT_O02Q_BEASTIARY_WARSONG_SPECIALIST)} or gain the artifact {GetObjectName(ITEM_I00L_BLOODHOOF_TOTEM)}, {PillageGoldReward} gold and {PillageExperienceReward} XP for Grom.";
+          $"Control of Thunder Bluff and the ability to train {GetObjectName(UNIT_OKOD_KODO_BEAST_WARSONG)}s' from {GetObjectName(UNIT_O02Q_BEASTIARY_WARSONG_SPECIALIST)} or gain the artifact {GetObjectName(ITEM_I00L_BLOODHOOF_TOTEM)}, {PillageGoldReward} gold and {PillageExperienceReward} experience points, shared across all your heroes.";
 
         /// <inheritdoc/>
         protected override void OnComplete(Faction completingFaction)

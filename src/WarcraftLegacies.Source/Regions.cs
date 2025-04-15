@@ -105,7 +105,7 @@ public static class Regions
 	public static Rectangle ElementalRealm { get; set; } = new Rectangle(-18016f, -22848f, -8480f, -20320f);
 	public static Rectangle ElwinForestAmbient { get; set; } = new Rectangle(8704f, -14816f, 13376f, -12672f);
 	public static Rectangle EnKilahUnlock { get; set; } = new Rectangle(-6016f, 18176f, -4832f, 18848f);
-	public static Rectangle ExodarBaseUnlock { get; set; } = new Rectangle(-24608f, 5632f, -21280f, 8896f);
+	public static Rectangle ExodarBaseUnlock { get; set; } = new Rectangle(-24544f, 5792f, -21216f, 9056f);
 	public static Rectangle Far_Eastern_Northrend { get; set; } = new Rectangle(4608f, 20064f, 7328f, 22944f);
 	public static Rectangle FeathermoonCreeps { get; set; } = new Rectangle(-22464f, -12128f, -18368f, -7584f);
 	public static Rectangle FeathermoonUnlock { get; set; } = new Rectangle(-21376f, -10272f, -19776f, -7840f);
@@ -204,7 +204,7 @@ public static class Regions
 	public static Rectangle MountHyjal { get; set; } = new Rectangle(-11328f, 9856f, -8832f, 11264f);
 	public static Rectangle Nazjatar { get; set; } = new Rectangle(-5792f, -3680f, -5024f, -2752f);
 	public static Rectangle NethergardeUnlock { get; set; } = new Rectangle(16576f, -18400f, 18688f, -16960f);
-	public static Rectangle Netherstorm { get; set; } = new Rectangle(-736f, -23616f, 3488f, -18432f);
+	public static Rectangle Netherstorm { get; set; } = new Rectangle(-544f, -23712f, 3680f, -18528f);
 	public static Rectangle Northern_Kali_Ships { get; set; } = new Rectangle(-17760f, -800f, -9120f, 9376f);
 	public static Rectangle Northrend_Ambiance { get; set; } = new Rectangle(-10688f, 13120f, 8608f, 24736f);
 	public static Rectangle Northrend_Blocker_1 { get; set; } = new Rectangle(5376f, 13568f, 6016f, 13952f);
@@ -364,9 +364,6 @@ public static class Regions
 	public static Rectangle ZulAman_trolls { get; set; } = new Rectangle(20288f, 11648f, 22848f, 17440f);
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
-	public static Rectangle SlipstreamTempestOrigin { get; set; } = new Rectangle(-22304f, 6816f, -22112f, 7392f);
-	public static Rectangle SlipstreamTempestTarget { get; set; } = new Rectangle(2752f, -21920f, 3200f, -21504f);
-	public static Rectangle SlipstreamArgusOrigin { get; set; } = new Rectangle(-23104f, 7712f, -22592f, 7872f);
-	public static Rectangle SlipstreamArgusTarget { get; set; } = new Rectangle(21408f, -27200f, 22080f, -26656f);
+	public static Rectangle KatherineSpawn { get; set; } = new Rectangle(4896f, -7200f, 5184f, -6944f);
 
 }
