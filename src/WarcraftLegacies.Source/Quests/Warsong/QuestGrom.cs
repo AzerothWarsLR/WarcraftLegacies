@@ -17,6 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
   {
     private readonly LegendaryHero _gromHellscream;
     private readonly LegendaryHero _gargok; 
+    
 
     public QuestGrom(PreplacedUnitSystem preplacedUnitSystem, LegendaryHero gromHellscreamLegend, LegendaryHero gargok) 
       : base("Breaking Bad Blood",
