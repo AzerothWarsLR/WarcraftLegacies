@@ -364,5 +364,6 @@ public static class Regions
 	public static Rectangle ZulAman_trolls { get; set; } = new Rectangle(20288f, 11648f, 22848f, 17440f);
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
+	public static Rectangle KatherineSpawn { get; set; } = new Rectangle(4896f, -7200f, 5184f, -6944f);
 
 }

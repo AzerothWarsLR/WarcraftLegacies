@@ -58,7 +58,6 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("R05G", Unlimited); //Thornspeaker Training
       yield return new("Rhac", Unlimited); //Improved Masonry
       yield return new("R08B", Unlimited); //Long Rifles
-      yield return new("R05J", Unlimited); //Expedition
       yield return new(UNIT_HAPM_LORD_ADMIRAL_OF_KUL_TIRAS_KUL_TIRAS, 1);
       yield return new(UNIT_H05L_LADY_OF_HOUSE_PROUDMOORE_KUL_TIRAS, 1);
       yield return new(UNIT_U026_MATRIARCH_OF_HOUSE_WAYCREST_KULTIRAS, 1);
