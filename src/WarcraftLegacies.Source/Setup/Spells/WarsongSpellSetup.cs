@@ -1,4 +1,4 @@
-﻿using MacroTools.Data;
+﻿
 using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.SpellSystem;
@@ -18,16 +18,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DamageMultNonResistant = 4,
         DamageMultResistant = 1.5f,
         DamageMultStructure = 1
-      });
-
-      PassiveAbilityManager.Register(new RestoreManaFromDamage(UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG, ABILITY_A0ZG_BLOOD_ABSORPTION_GORFAX)
-      {
-        ManaPerDamage = new LeveledAbilityField<float>
-        {
-          Base = 0.25f,
-          PerLevel = 0.25f
-        },
-        Effect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl"
       });
       
       var resoluteHeart = new ResoluteHeart(UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG,

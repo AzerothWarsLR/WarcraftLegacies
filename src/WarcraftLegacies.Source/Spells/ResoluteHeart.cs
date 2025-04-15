@@ -62,15 +62,13 @@ namespace WarcraftLegacies.Source.Spells
 
                 var damageDealt = GetEventDamage();
                 var level = GetUnitAbilityLevel(caster, AbilityTypeId);
-                var procChance = BaseProcChance + (0.1f * (level - 1)); // Scaling chance based on ability level
+                var procChance = BaseProcChance + (0.1f * (level - 1)); 
 
                 if (new Random().NextDouble() > procChance)
                     return;
 
-                var healAmount = damageDealt * 0.5f; // 50% of physical damage dealt
-
-                // Debugging information for better tracking
-                Console.WriteLine($"ResoluteHeart triggered for {GetUnitName(caster)} - Heal Amount: {healAmount}, Proc Chance: {procChance * 100:0.##}%");
+                var healAmount = damageDealt * 0.5f;
+                
 
                 foreach (var nearbyUnit in GlobalGroup.EnumUnitsInRange(caster.GetPosition(), Radius))
                 {
