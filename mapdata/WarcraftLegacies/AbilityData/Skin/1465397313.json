@@ -6,19 +6,9 @@
   ],
   "Modifications": [
     {
-      "Id": 1953653089,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\PassiveButtons\\PASDeathOrder.blp"
-    },
-    {
       "Id": 1718840929,
       "Type": 3,
       "Value": "(C\u0027thun Soggoth)"
-    },
-    {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Presence of the Unspeakable"
     },
     {
       "Id": 1918988897,
@@ -87,6 +77,16 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Decreases nearby enemy units\u0027 movement speed by 20% and attack rate by 20%"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Presence of the Unspeakable"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\PassiveButtons\\PASDeathOrder.blp"
     }
   ]
 }

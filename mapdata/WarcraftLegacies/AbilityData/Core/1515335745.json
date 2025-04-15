@@ -1,0 +1,52 @@
+{
+  "OldId": 1802723905,
+  "NewId": 1515335745,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 40
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B014"
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862679906,
+      "Type": 2,
+      "Value": -0.001
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845902690,
+      "Type": 2,
+      "Value": 0.3
+    }
+  ]
+}

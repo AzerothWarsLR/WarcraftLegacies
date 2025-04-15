@@ -74,7 +74,7 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Blood Absorption - [|cffffcc00Level 1|r]"
+      "Value": "Blood Absorption"
     },
     {
       "Level": 2,
@@ -87,6 +87,10 @@
       "Id": 829453409,
       "Type": 3,
       "Value": "Blood Absorption - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
     }
   ]
 }
