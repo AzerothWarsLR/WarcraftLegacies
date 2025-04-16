@@ -14,7 +14,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives a 20% chance that an attack will restores hit points of nearby friendly units equal to half the physical damage dealt by the hero within a radius of 300."
+      "Value": "Gives a 10% chance that an attack will restores hit points of nearby friendly units equal to 20% of the physical damage dealt by the hero within a radius of 300."
     },
     {
       "Id": 1835101793,
@@ -48,19 +48,19 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives a 30% chance that an attack will restores hit points of nearby friendly units equal to half the physical damage dealt by the hero within a radius of 300."
+      "Value": "Gives a 20% chance that an attack will restores hit points of nearby friendly units equal to 20% of the physical damage dealt by the hero within a radius of 300."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives a 40% chance that an attack will restores hit points of nearby friendly units equal to half the physical damage dealt by the hero within a radius of 300."
+      "Value": "Gives a 30% chance that an attack will restores hit points of nearby friendly units equal to 20% of the physical damage dealt by the hero within a radius of 300."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives a 50% chance that an attack will restores hit points of nearby friendly units equal to half the physical damage dealt by the hero within a radius of 300."
+      "Value": "Gives a 40% chance that an attack will restores hit points of nearby friendly units equal to 20% of the physical damage dealt by the hero within a radius of 300."
     },
     {
       "Level": 1,
