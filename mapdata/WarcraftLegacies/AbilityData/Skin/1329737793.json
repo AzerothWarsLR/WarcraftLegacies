@@ -20,7 +20,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Empowers all non hero, non flying, Warsong units you control; increasing attack speed by 60% and movement speed by 30%. Attacks gain a 15% chance to deal double damage. Grom becomes immune to ranged physical attacks, and Kor\u0027Kron and Blademaster gain 50% lifesteal.|nLasts 25s."
+      "Value": "Empowers all non hero, non flying, Warsong units you control; increasing attack speed by 60% and movement speed by 30%. Attacks gain a 15% chance to deal double damage. Grom becomes immune to ranged physical attacks, and Kor\u0027Kron and Blademaster gain 50% lifesteal.|nLasts 10 seconds."
     },
     {
       "Id": 1835101793,
@@ -81,13 +81,13 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Empowers all non hero, non flying, Warsong units you control; increasing attack speed by 60% and movement speed by 30%. Attacks gain a 15% chance to deal double damage. Grom becomes immune to ranged physical attacks, and Kor\u0027Kron and Blademaster gain 50% lifesteal.|nLasts 30s."
+      "Value": "Empowers all non hero, non flying, Warsong units you control; increasing attack speed by 60% and movement speed by 30%. Attacks gain a 15% chance to deal double damage. Grom becomes immune to ranged physical attacks, and Kor\u0027Kron and Blademaster gain 50% lifesteal.|nLasts 15 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Empowers all non hero, non flying, Warsong units you control; increasing attack speed by 60% and movement speed by 30%. Attacks gain a 15% chance to deal double damage. Grom becomes immune to ranged physical attacks, and Kor\u0027Kron and Blademaster gain 50% lifesteal.|nLasts 35s."
+      "Value": "Empowers all non hero, non flying, Warsong units you control; increasing attack speed by 60% and movement speed by 30%. Attacks gain a 15% chance to deal double damage. Grom becomes immune to ranged physical attacks, and Kor\u0027Kron and Blademaster gain 50% lifesteal.|nLasts 25 seconds."
     },
     {
       "Id": 1952539489,

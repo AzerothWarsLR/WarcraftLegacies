@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Skywall
       ResearchId = Constants.UPGRADE_R01G_QUEST_COMPLETED_DRUIDS_DEMISE;
     }
 
-    /// <inheritdoc/>
+    /// <inheritdoc/> 
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.ModObjectLimit(UnittypeId1, LimitChange);

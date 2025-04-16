@@ -90,6 +90,16 @@
       "Id": 1918988897,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNHeartAmulet.blp"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Gives a chance that an attack will restores hit points of nearby friendly units equal to half the physical damage dealt by the hero within a radius of 300.|n|n|cffffcc00Level 1|r - 20% chance.|n|cffffcc00Level 2|r - 30% chance.|n|cffffcc00Level 3|r - 40% chance.|n|cffffcc00Level 4|r - 50% chance."
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Resolute Heart  - [|cffffcc00Level %d|r]"
     }
   ]
 }

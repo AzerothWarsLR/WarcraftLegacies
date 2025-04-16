@@ -9,7 +9,7 @@
       "Level": 1,
       "Id": 1852072801,
       "Type": 2,
-      "Value": 120
+      "Value": 90
     },
     {
       "Level": 1,
@@ -20,13 +20,13 @@
       "Level": 1,
       "Id": 1920296033,
       "Type": 2,
-      "Value": 25
+      "Value": 10
     },
     {
       "Level": 1,
       "Id": 1969514593,
       "Type": 2,
-      "Value": 25
+      "Value": 10
     },
     {
       "Level": 1,
@@ -69,47 +69,47 @@
       "Level": 2,
       "Id": 1920296033,
       "Type": 2,
-      "Value": 30
+      "Value": 15
     },
     {
       "Level": 3,
       "Id": 1920296033,
       "Type": 2,
-      "Value": 35
+      "Value": 25
     },
     {
       "Level": 2,
       "Id": 1969514593,
       "Type": 2,
-      "Value": 30
+      "Value": 15
     },
     {
       "Level": 3,
       "Id": 1969514593,
       "Type": 2,
-      "Value": 35
+      "Value": 25
     },
     {
       "Level": 2,
       "Id": 1852072801,
       "Type": 2,
-      "Value": 110
+      "Value": 90
     },
     {
       "Level": 3,
       "Id": 1852072801,
       "Type": 2,
-      "Value": 100
+      "Value": 90
     },
     {
       "Level": 2,
       "Id": 1935895905,
-      "Value": 175
+      "Value": 150
     },
     {
       "Level": 3,
       "Id": 1935895905,
-      "Value": 200
+      "Value": 150
     },
     {
       "Level": 2,
