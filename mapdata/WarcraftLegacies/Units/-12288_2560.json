@@ -5,8 +5,8 @@
     "Hp": -1,
     "Mp": 285,
     "TargetAcquisition": -2,
-    "HeroLevel": 8,
-    "HeroStrength": 50,
+    "HeroLevel": 10,
+    "HeroStrength": 59,
     "HeroAgility": 28,
     "HeroIntelligence": 35,
     "InventoryData": [],
@@ -14,6 +14,10 @@
       {
         "AbilityId": 1262956609,
         "IsAutocastActive": true
+      },
+      {
+        "AbilityId": 1852395091,
+        "HeroAbilityLevel": 1
       }
     ],
     "CustomPlayerColorId": -1,

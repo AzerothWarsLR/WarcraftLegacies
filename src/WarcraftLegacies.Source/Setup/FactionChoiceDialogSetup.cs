@@ -59,7 +59,7 @@ namespace WarcraftLegacies.Source.Setup
                 artifactSetup),
                 Difficulty = FactionLearningDifficulty.Advanced,
                 StartingArea = Regions.SentDraeSharedStartPos,
-                RequiresCheats = true
+                RequiresCheats = false
             };
             new FactionChoiceDialogPresenter(sentinels, draenei).Run(Player(18));
             var frostwolf = new FactionChoice
