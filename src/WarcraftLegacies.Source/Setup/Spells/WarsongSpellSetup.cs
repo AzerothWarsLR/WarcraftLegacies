@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         ABILITY_A0TY_RESOLUTE_HEART_ICON)
       {
         Radius = 300f, 
-        BaseProcChance = 0.2f, 
+        BaseProcChance = 0.1f, 
         EffectPath = @"Abilities\Spells\Human\Heal\HealTarget.mdl" 
       };
       PassiveAbilityManager.Register(resoluteHeart);
