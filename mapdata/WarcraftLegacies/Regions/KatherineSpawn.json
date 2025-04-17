@@ -1,0 +1,15 @@
+{
+  "Left": 4896,
+  "Bottom": -7200,
+  "Right": 5184,
+  "Top": -6944,
+  "Name": "KatherineSpawn",
+  "CreationNumber": 186,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

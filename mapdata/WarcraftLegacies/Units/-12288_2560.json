@@ -5,9 +5,21 @@
     "Hp": -1,
     "Mp": 285,
     "TargetAcquisition": -2,
-    "HeroLevel": 8,
+    "HeroLevel": 10,
+    "HeroStrength": 59,
+    "HeroAgility": 28,
+    "HeroIntelligence": 35,
     "InventoryData": [],
-    "AbilityData": [],
+    "AbilityData": [
+      {
+        "AbilityId": 1262956609,
+        "IsAutocastActive": true
+      },
+      {
+        "AbilityId": 1852395091,
+        "HeroAbilityLevel": 1
+      }
+    ],
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
     "TypeId": 1851878734,

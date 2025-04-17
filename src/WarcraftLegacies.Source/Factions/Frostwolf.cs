@@ -65,6 +65,7 @@ Your allies will be coming south to help you defend against the Old Gods, do not
       Regions.GromSpawn.CleanupHostileUnits();
       Regions.EchoUnlock.CleanupHostileUnits();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
+
     }
 
     private void RegisterObjectLevels()
@@ -195,8 +196,6 @@ Your allies will be coming south to help you defend against the Old Gods, do not
         UPGRADE_R09N_FLIGHT_PATH_WARSONG,
         70,
         _preplacedUnitSystem));
-
     }
   }
-
 }

@@ -1,0 +1,42 @@
+{
+  "OldId": 1700876098,
+  "NewId": 858861634,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBattleFury.blp"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is affected by the Martial Spirit;it becomes immune to ranged physical attacks"
+    },
+    {
+      "Id": 1667331174,
+      "Value": 2
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Martial Spirit"
+    },
+    {
+      "Id": 1685091174,
+      "Value": 1
+    },
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Martial Spirit"
+    },
+    {
+      "Id": 1718840934,
+      "Type": 3,
+      "Value": "(Grom)"
+    }
+  ]
+}

@@ -33,30 +33,30 @@
       "Level": 1,
       "Id": 1852072801,
       "Type": 2,
-      "Value": 60
+      "Value": 25
     },
     {
       "Level": 2,
       "Id": 1852072801,
       "Type": 2,
-      "Value": 50
+      "Value": 25
     },
     {
       "Level": 3,
       "Id": 1852072801,
       "Type": 2,
-      "Value": 40
+      "Value": 25
     },
     {
       "Level": 4,
       "Id": 1852072801,
       "Type": 2,
-      "Value": 35
+      "Value": 25
     },
     {
       "Level": 4,
       "Id": 1935895905,
-      "Value": 75
+      "Value": 105
     },
     {
       "Level": 1,
@@ -114,6 +114,16 @@
       "Id": 828797775,
       "Type": 3,
       "Value": "nadw"
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 75
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 95
     }
   ]
 }

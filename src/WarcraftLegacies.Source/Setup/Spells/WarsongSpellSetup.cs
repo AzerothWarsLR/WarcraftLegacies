@@ -1,4 +1,4 @@
-﻿using MacroTools.Data;
+﻿
 using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.SpellSystem;
@@ -13,29 +13,21 @@ namespace WarcraftLegacies.Source.Setup.Spells
     /// </summary>
     public static void Setup()
     {
-      PassiveAbilityManager.Register(new Execute(UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG)
-      {
-        DamageMultNonResistant = 4,
-        DamageMultResistant = 1.5f,
-        DamageMultStructure = 1
-      });
-
       PassiveAbilityManager.Register(new Execute(UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG)
       {
         DamageMultNonResistant = 4,
         DamageMultResistant = 1.5f,
         DamageMultStructure = 1
       });
-
-      PassiveAbilityManager.Register(new RestoreManaFromDamage(UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG, ABILITY_A0ZG_BLOOD_ABSORPTION_GORFAX)
+      
+      var resoluteHeart = new ResoluteHeart(UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG,
+        ABILITY_A0TY_RESOLUTE_HEART_ICON)
       {
-        ManaPerDamage = new LeveledAbilityField<float>
-        {
-          Base = 0.25f,
-          PerLevel = 0.25f
-        },
-        Effect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl"
-      });
+        Radius = 300f, 
+        BaseProcChance = 0.1f, 
+        EffectPath = @"Abilities\Spells\Human\Heal\HealTarget.mdl" 
+      };
+      PassiveAbilityManager.Register(resoluteHeart);
 
       var stormEarthandFire = new StormEarthandFire(ABILITY_A0HM_STORM_EARTH_AND_FIRE_WARSONG_CHEN_SUMMON)
       {

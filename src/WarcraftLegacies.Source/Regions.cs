@@ -172,6 +172,7 @@ public static class Regions
 	public static Rectangle Kali_Ships { get; set; } = new Rectangle(-17376f, -15680f, -10592f, 5216f);
 	public static Rectangle Kalimdor { get; set; } = new Rectangle(-25600f, -21600f, -6144f, 10496f);
 	public static Rectangle KaliRock12 { get; set; } = new Rectangle(-9472f, -1888f, -8256f, -1248f);
+	public static Rectangle KatherineSpawn { get; set; } = new Rectangle(4896f, -7200f, 5184f, -6944f);
 	public static Rectangle KezanAmbient { get; set; } = new Rectangle(-3200f, -10368f, 736f, -5184f);
 	public static Rectangle KezanUnlock { get; set; } = new Rectangle(-2400f, -8000f, 608f, -5184f);
 	public static Rectangle KilsorrowUnlock { get; set; } = new Rectangle(-4224f, -31904f, -2752f, -30752f);
@@ -267,6 +268,10 @@ public static class Regions
 	public static Rectangle SilithusAmbient { get; set; } = new Rectangle(-24832f, -20320f, -15712f, -11744f);
 	public static Rectangle SilverpineForest { get; set; } = new Rectangle(6880f, 3936f, 7552f, 4544f);
 	public static Rectangle SkullRetrieval { get; set; } = new Rectangle(8864f, 4672f, 9184f, 4928f);
+	public static Rectangle SlipstreamArgusOrigin { get; set; } = new Rectangle(-23104f, 7712f, -22592f, 7872f);
+	public static Rectangle SlipstreamArgusTarget { get; set; } = new Rectangle(21408f, -27200f, 22080f, -26656f);
+	public static Rectangle SlipstreamTempestOrigin { get; set; } = new Rectangle(-22304f, 6816f, -22112f, 7392f);
+	public static Rectangle SlipstreamTempestTarget { get; set; } = new Rectangle(2752f, -21920f, 3200f, -21504f);
 	public static Rectangle Solliden_Farmstead { get; set; } = new Rectangle(6400f, 8992f, 7808f, 10592f);
 	public static Rectangle South_EK_Ships { get; set; } = new Rectangle(7872f, -18240f, 18880f, -12288f);
 	public static Rectangle SouthshoreAmbient { get; set; } = new Rectangle(9216f, 1216f, 14176f, 3520f);
@@ -364,9 +369,5 @@ public static class Regions
 	public static Rectangle ZulAman_trolls { get; set; } = new Rectangle(20288f, 11648f, 22848f, 17440f);
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
-	public static Rectangle SlipstreamTempestOrigin { get; set; } = new Rectangle(-22304f, 6816f, -22112f, 7392f);
-	public static Rectangle SlipstreamTempestTarget { get; set; } = new Rectangle(2752f, -21920f, 3200f, -21504f);
-	public static Rectangle SlipstreamArgusOrigin { get; set; } = new Rectangle(-23104f, 7712f, -22592f, 7872f);
-	public static Rectangle SlipstreamArgusTarget { get; set; } = new Rectangle(21408f, -27200f, 22080f, -26656f);
 
 }

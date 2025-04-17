@@ -74,6 +74,7 @@ Once you have secured your holdings, gather your army and destroy the Old Gods. 
     {
       Regions.AuberdineUnlock.CleanupNeutralPassiveUnits();
       Regions.AstranaarUnlock.CleanupNeutralPassiveUnits();
+      Regions.FeathermoonUnlock.CleanupNeutralPassiveUnits();
       base.OnNotPicked();
     }
 
@@ -83,7 +84,7 @@ Once you have secured your holdings, gather your army and destroy the Old Gods. 
       StartingQuest = questAstranaar;
 
       // Register the updated QuestFeathermoon
-      var questFeathermoon = AddQuest(new QuestFeathermoon(_allLegendSetup.Sentinels.Feathermoon));
+      var questFeathermoon = AddQuest(new QuestFeathermoon(_allLegendSetup.Sentinels.Feathermoon, Regions.FeathermoonUnlock));
 
       AddQuest(new QuestSentinelsKillBlackEmpire(_allLegendSetup.BlackEmpire.Nzoth));
       AddQuest(new QuestSentinelsKillCthun(_allLegendSetup.Ahnqiraj.Cthun));

@@ -11,7 +11,6 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using WarcraftLegacies.Source.Setup.Legends;
 
-
 namespace WarcraftLegacies.Source.Quests.Warsong
 {
   public sealed class QuestSubdueOgres : QuestData
@@ -19,10 +18,10 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     private readonly List<unit> _rescueUnits;
     private readonly LegendaryHero _grom;
 
-    // Rewards
     private int PillageGoldReward { get; set; }
     private int PillageExperienceReward { get; set; }
-    private int ResearchReward { get; set; }
+    private const int SubdueResearchReward = UPGRADE_R012_SUBDUE_THE_STONEMAUL_OGRES;
+    private const int PillageResearchReward = UPGRADE_R017_QUEST_COMPLETED_BRUTE_ALLEGIANCE;
 
     public QuestSubdueOgres(Rectangle rescueRect, LegendWarsong legendWarsong, LegendaryHero grom)
       : base(
@@ -36,19 +35,15 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _grom = grom;
       PillageGoldReward = 600;
-      PillageExperienceReward = 2500;
-      ResearchReward = UPGRADE_R012_SUBDUE_THE_STONEMAUL_OGRES;
+      PillageExperienceReward = 3000;
     }
 
-    /// <inheritdoc/>
     public override string RewardFlavour =>
       "The fate of the ogres has been decided, and the Horde's power grows.";
 
-    /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Control of Stonemaul and the ability to train {GetObjectName(UNIT_N07A_OGRE_WARRIOR_WARSONG)}s' from the {GetObjectName(UNIT_O01S_WAR_CAMP_WARSONG_BARRACKS)} and {GetObjectName(UNIT_N08O_OGRE_MAGI_WARSONG)}s' from the {GetObjectName(UNIT_O006_SPIRE_WARSONG_MAGIC)} or gain {PillageGoldReward} gold and {PillageExperienceReward} XP for Grom.";
+      $"Gain control of Stonemaul and unlock the ability to train {GetObjectName(UNIT_N07A_OGRE_WARRIOR_WARSONG)}s and {GetObjectName(UNIT_N08O_OGRE_MAGI_WARSONG)}s. Alternatively, earn {PillageGoldReward} gold and up to {PillageExperienceReward} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives. Additionally, enhance both {GetObjectName(UNIT_O00G_BLADEMASTER_WARSONG)}s' and {GetObjectName(UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE)}s' attack damage, movement speed, and hit points.";
 
-    /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       if (completingFaction == null || completingFaction.Player == null)
@@ -56,13 +51,10 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         Console.WriteLine("Invalid faction or player; cannot complete the quest.");
         return;
       }
-      
+
       PresentPillageDialogs(completingFaction);
     }
 
-    /// <summary>
-    /// Handles the logic related to presenting Subdue or Pillage dialogs.
-    /// </summary>
     private void PresentPillageDialogs(Faction completingFaction)
     {
       var gromUnit = _grom.Unit;
@@ -79,7 +71,8 @@ namespace WarcraftLegacies.Source.Quests.Warsong
           "Pillage Stonemaul",
           Regions.StonemaulKeep,
           PillageGoldReward,
-          PillageExperienceReward
+          PillageExperienceReward,
+          PillageResearchReward
         ),
         new WarsongPillageChoice(
           PillageChoiceType.Subdue,
@@ -87,10 +80,11 @@ namespace WarcraftLegacies.Source.Quests.Warsong
           Regions.StonemaulKeep,
           0,
           0,
-          ResearchReward
+          SubdueResearchReward
         )
       ).Run(completingFaction.Player);
     }
+
     protected override void OnFail(Faction completingFaction)
     {
       var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated

@@ -1,0 +1,63 @@
+{
+  "OldId": 1769161537,
+  "NewId": 1179201601,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 175
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828994382,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": 879326030,
+      "Type": 2,
+      "Value": -0.2
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862548814,
+      "Type": 2,
+      "Value": -0.3
+    },
+    {
+      "Id": 1685221217,
+      "Type": 3,
+      "Value": "slow"
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "Bslo"
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 80
+    }
+  ]
+}
