@@ -1,5 +1,5 @@
 {
-  "OldId": 846417729,
+  "OldId": 1986216769,
   "NewId": 1482043457,
   "Unk": [
     0
@@ -7,109 +7,222 @@
   "Modifications": [
     {
       "Level": 2,
-      "Id": 1935895905,
-      "Value": 115
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 100
     },
     {
       "Level": 3,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 4,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 110
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 120
+    },
+    {
+      "Level": 4,
       "Id": 1935895905,
       "Value": 130
     },
     {
-      "Level": 4,
-      "Id": 1935895905,
-      "Value": 145
-    },
-    {
-      "Level": 5,
-      "Id": 1935895905,
-      "Value": 160
-    },
-    {
-      "Level": 6,
-      "Id": 1935895905,
-      "Value": 175
-    },
-    {
       "Level": 2,
       "Pointer": 1,
-      "Id": 828928847,
+      "Id": 829645653,
       "Type": 2,
-      "Value": 140
+      "Value": 225
     },
     {
       "Level": 3,
       "Pointer": 1,
-      "Id": 828928847,
+      "Id": 829645653,
       "Type": 2,
-      "Value": 205
+      "Value": 300
     },
     {
       "Level": 4,
       "Pointer": 1,
-      "Id": 828928847,
+      "Id": 829645653,
       "Type": 2,
-      "Value": 270
-    },
-    {
-      "Level": 5,
-      "Pointer": 1,
-      "Id": 828928847,
-      "Type": 2,
-      "Value": 335
-    },
-    {
-      "Level": 6,
-      "Pointer": 1,
-      "Id": 828928847,
-      "Type": 2,
-      "Value": 400
+      "Value": 350
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 845706063,
+      "Id": 846422869,
       "Type": 2,
-      "Value": 900
+      "Value": 2000
     },
     {
       "Level": 2,
       "Pointer": 2,
-      "Id": 845706063,
+      "Id": 846422869,
       "Type": 2,
-      "Value": 1200
+      "Value": 2350
     },
     {
       "Level": 3,
       "Pointer": 2,
-      "Id": 845706063,
+      "Id": 846422869,
       "Type": 2,
-      "Value": 1500
+      "Value": 2600
     },
     {
       "Level": 4,
       "Pointer": 2,
-      "Id": 845706063,
+      "Id": 846422869,
       "Type": 2,
-      "Value": 1800
+      "Value": 2950
     },
     {
-      "Level": 5,
-      "Pointer": 2,
-      "Id": 845706063,
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 863200085,
       "Type": 2,
-      "Value": 2100
+      "Value": 800
     },
     {
-      "Level": 6,
-      "Pointer": 2,
-      "Id": 845706063,
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 863200085,
       "Type": 2,
-      "Value": 2400
+      "Value": 800
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 863200085,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": 879977301,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 879977301,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": 879977301,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Id": 1919248481,
+      "Value": 1
     },
     {
       "Id": 1986358369,
-      "Value": 6
+      "Value": 4
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1986818657,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 3,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 4,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 450
+    },
+    {
+      "Level": 2,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,neutral,structure"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,neutral,structure"
+    },
+    {
+      "Level": 4,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,neutral,structure"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "enemies,ground,neutral,structure"
     }
   ]
 }
