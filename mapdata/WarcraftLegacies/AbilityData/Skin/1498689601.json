@@ -17,11 +17,6 @@
       "Value": "Gives a 10% chance that an attack will restores hit points of nearby friendly units equal to 20% of the physical damage dealt by the hero within a radius of 300."
     },
     {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Resolute Heart"
-    },
-    {
       "Id": 1953526625,
       "Type": 3,
       "Value": ""
@@ -100,6 +95,16 @@
       "Id": 1952805473,
       "Type": 3,
       "Value": "Learn Resolute Heart  - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Resolute Heart"
     }
   ]
 }
