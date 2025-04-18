@@ -18,7 +18,7 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "Q"
+      "Value": "W"
     },
     {
       "Id": 1952542049,
@@ -34,11 +34,6 @@
       "Id": 1918988897,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNShockWave.blp"
-    },
-    {
-      "Id": 1802007137,
-      "Type": 3,
-      "Value": "Q"
     },
     {
       "Id": 1952805473,
@@ -110,6 +105,11 @@
     {
       "Id": 2020635233,
       "Value": 1
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
     }
   ]
 }
