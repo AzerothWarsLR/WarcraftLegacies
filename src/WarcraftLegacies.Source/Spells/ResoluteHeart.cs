@@ -71,10 +71,11 @@ namespace WarcraftLegacies.Source.Spells
                 var level = GetUnitAbilityLevel(caster, AbilityTypeId);
                 var procChance = BaseProcChance + (0.1f * (level - 1));
 
-                if (new Random().NextDouble() > procChance)
-                    return;
+                if (GetRandomReal(0.0f, 1.0f) > procChance) 
+                  return;
 
-                var healAmount = damageDealt * 0.5f;
+
+                var healAmount = damageDealt * 0.2f;
 
                 // Heal nearby allies
                 foreach (var nearbyUnit in GlobalGroup.EnumUnitsInRange(caster.GetPosition(), Radius))
