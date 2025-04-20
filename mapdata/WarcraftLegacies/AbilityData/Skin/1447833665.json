@@ -36,7 +36,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Unleashes an explosive burst of frost in a target area, both damaging and stunning enemies.\r\nCreates multiple ice blasts within a 600 range, each dealing 100 damage.\r\nStuns enemies for 2 seconds (1 second for heroes). Blasts occur every 0.3 seconds.|n|n|cffffcc00Level 1|r - Unleashes 15 ice blasts. |n|cffffcc00Level 2|r - Unleashes 25 ice blasts. |n|cffffcc00Level 3|r - Unleashes 40 ice blasts."
+      "Value": "Unleashes an explosive burst of frost in a target area, both damaging and stunning enemies.\r\nCreates multiple ice blasts within a 600 range, each dealing 80 damage.\r\nStuns enemies for 2 seconds (1 second for heroes). Blasts occur every 0.5/0.45/0.4 seconds.|n|n|cffffcc00Level 1|r - Unleashes 15 ice blasts. |n|cffffcc00Level 2|r - Unleashes 25 ice blasts. |n|cffffcc00Level 3|r - Unleashes 40 ice blasts."
     },
     {
       "Level": 1,
@@ -60,19 +60,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Unleashes an explosive burst of frost in a target area, both damaging and stunning enemies.\r\nCreates 15 ice blasts within a 600 range, each dealing 100 damage.\r\nStuns enemies for 2 seconds (1 second for heroes). Blasts occur every 0.3 seconds."
+      "Value": "Unleashes an explosive burst of frost in a target area, both damaging and stunning enemies.\r\nCreates 15 ice blasts within a 600 range, each dealing 80 damage.\r\nStuns enemies for 2 seconds (1 second for heroes). Blasts occur every 0.5 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Unleashes an explosive burst of frost in a target area, both damaging and stunning enemies.\r\nCreates 25 ice blasts within a 600 range, each dealing 100 damage.\r\nStuns enemies for 2 seconds (1 second for heroes). Blasts occur every 0.28 seconds."
+      "Value": "Unleashes an explosive burst of frost in a target area, both damaging and stunning enemies.\r\nCreates 25 ice blasts within a 600 range, each dealing 80 damage.\r\nStuns enemies for 2 seconds (1 second for heroes). Blasts occur every 0.45 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Unleashes an explosive burst of frost in a target area, both damaging and stunning enemies.\r\nCreates 40 ice blasts within a 600 range, each dealing 100 damage.\r\nStuns enemies for 2 seconds (1 second for heroes). Blasts occur every 0.25 seconds."
+      "Value": "Unleashes an explosive burst of frost in a target area, both damaging and stunning enemies.\r\nCreates 40 ice blasts within a 600 range, each dealing 80 damage.\r\nStuns enemies for 2 seconds (1 second for heroes). Blasts occur every 0.4 seconds."
     },
     {
       "Id": 1835101793,
