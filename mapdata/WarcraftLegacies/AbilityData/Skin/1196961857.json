@@ -46,7 +46,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Grants this unit \u003CA0XG,DataC1\u003E bonus armor, it recieves \u003CA0XG,DataB1,%\u003E damage from attacks and causes it to return \u003CAUts,DataA1,%\u003E% of melee attack damage to enemies."
+      "Value": "Grants this unit \u003CA0XG,DataC1\u003E bonus armor, it recieves \u003CA0XG,DataB1,%\u003E damage from attacks and causes it to return \u003CA0XG,DataA1,%\u003E% of melee attack damage to enemies."
     }
   ]
 }
