@@ -1,6 +1,6 @@
 ﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 
@@ -22,12 +22,12 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestWorldStone"/> class.
     /// </summary>
-    public QuestWorldStone(LegendaryHero nzoth, Capital thunderbluff, Capital orgrimmar) : base("The World Stone",
+    public QuestWorldStone(LegendaryHero nzoth, Capital orgrimmar) : base("The World Stone",
       "The Horde shamans, through rituals, are preventing me from expanding through the earth. I will need to destroy the seats of their power",
       @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
     {
       _nzoth = nzoth;
-      AddObjective(new ObjectiveControlCapital(thunderbluff, false));
+      AddObjective(new ObjectiveControlPoint(UNIT_N03M_THUNDERBLUFF));
       AddObjective(new ObjectiveKillUnit(orgrimmar.Unit));
     }
 

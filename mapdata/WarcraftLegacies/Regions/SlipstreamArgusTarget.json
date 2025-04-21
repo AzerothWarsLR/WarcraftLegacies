@@ -1,0 +1,15 @@
+{
+  "Left": 21408,
+  "Bottom": -27200,
+  "Right": 22080,
+  "Top": -26656,
+  "Name": "SlipstreamArgusTarget",
+  "CreationNumber": 199,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

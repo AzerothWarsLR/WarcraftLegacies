@@ -32,9 +32,9 @@ namespace WarcraftLegacies.Source.Factions
 
 You begin on Azuremyst Island, amid the wreckage of your flight from the Burning Legion.
 
-Further inland your Night-elf allies will need your help against the Orcish Horde, quickly build your base and gain entry to the Exodar.
+Further inland your Night-elf allies will need your help against the Old Gods, quickly build your base and gain entry to the Exodar.
 
-The Exodar is a mighty fortress-base with the ability to move around the map, but it will take a long time to repair.";
+Power up your buildings with your Arcane Wells to unlock powerful global abilities.";
       GoldMines = new List<unit>
       {
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-21000, 8600))

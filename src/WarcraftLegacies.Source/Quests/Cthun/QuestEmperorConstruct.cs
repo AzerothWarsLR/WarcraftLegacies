@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
       "Queen Azshara studied many forms of arcane knowledge, some darker than others. With access to her library and enough time, I will uncover her secrets.",
       @"ReplaceableTextures\CommandButtons\BTNObsidianStatue.blp")
     {
-      AddObjective(new ObjectiveControlLevel(UNIT_N0BD_ULDUM, 5));
+      AddObjective(new ObjectiveControlLevel(UNIT_N0BD_ULDUM, 3));
       ResearchId = UPGRADE_RZZL_QUEST_COMPLETED_THE_EMPEROR_S_CONSTRUCTS;
     }
 

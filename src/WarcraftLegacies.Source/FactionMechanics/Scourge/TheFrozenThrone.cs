@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
+using WarcraftLegacies.Source.Powers;
 using WCSharp.Shared;
 
 namespace WarcraftLegacies.Source.FactionMechanics.Scourge
@@ -27,13 +28,15 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
       }
     }
     
-    public static void Setup(Factions.Scourge scourge, Capital frozenThrone)
+    public static void Setup(Factions.Scourge scourge, Capital frozenThrone, LegendaryHero lichKing)
     {
       _frozenThrone = frozenThrone;
 
       CreateTrigger()
         .RegisterUnitEvent(frozenThrone.Unit!, EVENT_UNIT_CHANGE_OWNER)
         .AddAction(OnFrozenThroneChangeOwner);
+
+      lichKing.PermanentlyDied += OnLichKingDied;
 
       scourge.ScoreStatusChanged += OnScourgeScoreStatusChanged;
     }
@@ -47,13 +50,13 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
         return;
 
       scourge.ScoreStatusChanged -= OnScourgeScoreStatusChanged;
-      Vacate();
+      Vacate(false);
     }
 
     /// <summary>
     /// Remove Ner'zhul from the Throne, causing it to lose its powers permanently and allowing it to be destroyed.
     /// </summary>
-    public static void Vacate()
+    public static void Vacate(bool removeDomination)
     {
       if (State == FrozenThroneState.Empty)
         return;
@@ -72,6 +75,9 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
 
       if (_frozenThrone.OwningPlayer == Player(PLAYER_NEUTRAL_PASSIVE))
         _frozenThrone.Unit?.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      
+      if (removeDomination) 
+        RemoveDomination();
     }
 
     /// <summary>
@@ -93,6 +99,18 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
           "\n|cffffcc00CAPITAL DAMAGED|r\nThe Frozen Throne, once thought to be an indomitable bastion of death, has been ruptured. Ner'zhul's consciousness recedes within, retreating desperately to protect what remains of Icecrown Citadel.");
 
       State = FrozenThroneState.Ruptured;
+      
+      RemoveDomination();
+    }
+    
+    private static void RemoveDomination()
+    {
+      if (!FactionManager.TryGetFactionByType<Factions.Scourge>(out var scourge)) 
+        return;
+
+      var domination = scourge.GetPowerByType<Domination>();
+      if (domination != null) 
+        scourge.RemovePower(domination);
     }
 
     private static void RemoveAbilities()
@@ -109,6 +127,12 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
     {
       GetTriggeringTrigger().Destroy();
       Fracture();
+    }
+    
+    private static void OnLichKingDied(object? sender, LegendaryHero e)
+    {
+      if (e.UnitType == UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE)
+        RemoveDomination();
     }
   }
 

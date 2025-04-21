@@ -80,7 +80,7 @@ Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist 
       AddQuest(new QuestStormglen());
       AddQuest(new QuestKeelHarbor());
       AddQuest(new QuestTempestReach());
-      AddQuest(new QuestGilneasCity(_gilneasGate));
+      AddQuest(new QuestGilneasCity(Regions.GilneasUnlock5, Regions.GilneasUnlock6));
       AddQuest(new QuestCrowley());
       AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
     }

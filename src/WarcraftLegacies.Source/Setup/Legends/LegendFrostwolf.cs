@@ -1,4 +1,6 @@
-﻿using MacroTools.LegendSystem;
+﻿using System.Collections.Generic;
+using MacroTools.ArtifactSystem;
+using MacroTools.LegendSystem;
 using MacroTools.Systems;
 
 #pragma warning disable CS1591
@@ -19,10 +21,11 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Cairne = new LegendaryHero("Cairne Bloodhoof")
       {
         UnitType = FourCC("Ocbh"),
+        
         DeathMessage =
           "Cairne's spirit has passed on from this world. The Tauren have already begun to revere their fallen ancestor.",
         StartingXp = 1800,
-        StartingArtifacts = new()
+        StartingArtifacts = new List<Artifact>()
         {
           new(CreateItem(ITEM_I00L_BLOODHOOF_TOTEM, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
         }

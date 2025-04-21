@@ -21,11 +21,6 @@
       "Value": "E"
     },
     {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Dragon Guard"
-    },
-    {
       "Id": 1918988897,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNDragonRune.BLP"
@@ -36,14 +31,9 @@
       "Value": "E"
     },
     {
-      "Id": 1952805473,
-      "Type": 3,
-      "Value": "Learn Dragon Guard - [|cffffcc00Level %d|r]"
-    },
-    {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Gives friendly nearby units additional armor,increased life regeneration and increased mana regeneration for 40 seconds.|n|n|cffffcc00Level 1|r - 3 armor,3 life and 0.5 mana regen|n|cffffcc00Level 2|r - 5 armor,5 life and 0.8 mana regen|n|cffffcc00Level 3|r - 7 armor,7 life and 1.1 mana regen|n|cffffcc00Level 4|r - 9 armor,9 life and 1.4 mana regen"
+      "Value": "Gives friendly nearby units additional armor,increased life regeneration and increased mana regeneration for 40 seconds.|n|n|cffffcc00Level 1|r - 3 armor,3 life and 0.4 mana regen|n|cffffcc00Level 2|r - 5 armor,5 life and 0.6 mana regen|n|cffffcc00Level 3|r - 7 armor,7 life and 0.8 mana regen|n|cffffcc00Level 4|r - 9 armor,9 life and 1 mana regen"
     },
     {
       "Level": 1,
@@ -73,25 +63,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives friendly nearby units 3 additional armor,3 increased life regeneration and 0.5 increased mana regeneration.|nLasts 40seconds."
+      "Value": "Gives your own nearby units 3 additional armor,3 increased life regeneration and 0.4 increased mana regeneration.|nLasts 40seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives friendly nearby units 5 additional armor,5 increased life regeneration and 0.8 increased mana regeneration.|nLasts 40seconds."
+      "Value": "Gives your own nearby units 5 additional armor,5 increased life regeneration and 0.6 increased mana regeneration.|nLasts 40seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives friendly nearby units 7 additional armor,7 increased life regeneration and 1.1 increased mana regeneration.|nLasts 40seconds."
+      "Value": "Gives your own nearby units 7 additional armor,7 increased life regeneration and 0.8 increased mana regeneration.|nLasts 40seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives friendly nearby units 9 additional armor,9 increased life regeneration and 1.4 increased mana regeneration.|nLasts 40seconds."
+      "Value": "Gives your own nearby units 9 additional armor,9 increased life regeneration and 1 increased mana regeneration.|nLasts 40seconds."
     },
     {
       "Id": 2020631137,
@@ -105,6 +95,16 @@
       "Id": 1952539489,
       "Type": 3,
       "Value": "Abilities\\Spells\\Items\\AIre\\AIreTarget.mdl"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Dragon Guard - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Dragon Guard"
     }
   ]
 }

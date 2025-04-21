@@ -47,7 +47,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Grants this unit bonus attack damage and lifesteal. |n|n|cffffcc00Level 1|r - 40% lifesteal and 10 bonus damage for 8 seconds.|n|cffffcc00Level 2|r - 60% lifesteal and 20 bonus damage for 10 seconds.|n|cffffcc00Level 3|r - 80% lifesteal and 30 bonus damage for 12 seconds. |n|cffffcc00Level 4|r - 100% lifesteal and 40 bonus damage for 14 seconds."
+      "Value": "Grants this unit bonus attack damage and lifesteal. |n|n|cffffcc00Level 1|r - 30% lifesteal and 10 bonus damage for 8 seconds.|n|cffffcc00Level 2|r - 40% lifesteal and 20 bonus damage for 10 seconds.|n|cffffcc00Level 3|r - 50% lifesteal and 30 bonus damage for 12 seconds. |n|cffffcc00Level 4|r - 60% lifesteal and 40 bonus damage for 14 seconds."
     },
     {
       "Level": 1,

@@ -57,23 +57,11 @@
       "Value": "human"
     },
     {
-      "Level": 1,
-      "Id": 1851880033,
-      "Type": 2,
-      "Value": 700
-    },
-    {
       "Level": 2,
       "Pointer": 1,
       "Id": 829318741,
       "Type": 2,
       "Value": 95
-    },
-    {
-      "Level": 2,
-      "Id": 1851880033,
-      "Type": 2,
-      "Value": 700
     },
     {
       "Level": 2,

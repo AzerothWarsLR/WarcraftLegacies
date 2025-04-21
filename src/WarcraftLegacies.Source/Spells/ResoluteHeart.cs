@@ -57,25 +57,33 @@ namespace WarcraftLegacies.Source.Spells
             try
             {
                 var caster = GetEventDamageSource();
-                if (!BlzGetEventIsAttack() || GetUnitAbilityLevel(caster, AbilityTypeId) == 0)
+                var damagedUnit = BlzGetEventDamageTarget();
+
+                
+                if (!BlzGetEventIsAttack() || GetUnitAbilityLevel(caster, AbilityTypeId) == 0 || damagedUnit == null)
+                    return;
+
+            
+                if (!IsUnitEnemy(damagedUnit, caster.OwningPlayer()) || IsUnitType(damagedUnit, UNIT_TYPE_STRUCTURE) || IsUnitType(damagedUnit, UNIT_TYPE_ANCIENT))
                     return;
 
                 var damageDealt = GetEventDamage();
                 var level = GetUnitAbilityLevel(caster, AbilityTypeId);
-                var procChance = BaseProcChance + (0.1f * (level - 1)); 
+                var procChance = BaseProcChance + (0.1f * (level - 1));
 
-                if (new Random().NextDouble() > procChance)
-                    return;
+                if (GetRandomReal(0.0f, 1.0f) > procChance) 
+                  return;
 
-                var healAmount = damageDealt * 0.5f;
-                
 
+                var healAmount = damageDealt * 0.2f;
+
+                // Heal nearby allies
                 foreach (var nearbyUnit in GlobalGroup.EnumUnitsInRange(caster.GetPosition(), Radius))
                 {
                     if (nearbyUnit == caster || !IsUnitAlly(nearbyUnit, caster.OwningPlayer()) || !UnitAlive(nearbyUnit))
                         continue;
 
-                    // Trigger visual effect here if specified
+                    
                     if (!string.IsNullOrEmpty(EffectPath))
                     {
                         AddSpecialEffect(EffectPath, nearbyUnit.GetPosition().X, nearbyUnit.GetPosition().Y);
@@ -84,9 +92,9 @@ namespace WarcraftLegacies.Source.Spells
                     nearbyUnit.Heal(healAmount);
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                Console.WriteLine($"Failed to execute {nameof(OnDealsDamage)} for {nameof(ResoluteHeart)}: {ex}");
+              
             }
         }
     }
