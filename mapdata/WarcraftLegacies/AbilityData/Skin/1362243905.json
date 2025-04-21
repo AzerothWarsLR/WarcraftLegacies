@@ -91,7 +91,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Activates a shield that absorbs 1.8 damage per point of mana."
+      "Value": "Absorbs 90% of incoming damage. Consumes 1 mana for every 1.2 damage points absorbed"
     }
   ]
 }

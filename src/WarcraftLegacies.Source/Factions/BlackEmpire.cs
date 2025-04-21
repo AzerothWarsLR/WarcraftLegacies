@@ -66,7 +66,7 @@ Be sure to train Forsaken Ones, they are powerful units";
       AddQuest(new QuestMawofGorath(_allLegendSetup.BlackEmpire.Zonozz));
       AddQuest(new QuestBladeoftheBlackEmpire(Regions.TheAbyss));
       AddQuest(new QuestDestruction(_allLegendSetup.BlackEmpire.Nzoth));
-      AddQuest(new QuestWorldStone(_allLegendSetup.BlackEmpire.Nzoth, _allLegendSetup.Frostwolf.ThunderBluff, _allLegendSetup.Warsong.Orgrimmar));
+      AddQuest(new QuestWorldStone(_allLegendSetup.BlackEmpire.Nzoth, _allLegendSetup.Warsong.Orgrimmar));
       AddQuest(new QuestAscension(_allLegendSetup.BlackEmpire.Nzoth));
       AddQuest(new QuestAlignement(_allLegendSetup.BlackEmpire.Nzoth));
     }

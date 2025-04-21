@@ -1,4 +1,5 @@
-﻿using MacroTools.ArtifactSystem;
+﻿using System.Collections.Generic;
+using MacroTools.ArtifactSystem;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
@@ -6,6 +7,7 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.FactionMechanics.Scourge;
+using WarcraftLegacies.Source.Powers;
 
 namespace WarcraftLegacies.Source.Quests.Scourge
 {
@@ -44,14 +46,14 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      "Arthas becomes the Lich King, but the Frozen Throne loses its abilities";
+      "Arthas becomes the Lich King, the Frozen Throne loses its abilities, and you regain the Domination power if you don't have it";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
       PlayThematicMusic(@"Sound\Music\mp3Music\LichKingTheme.mp3");
 
-      TheFrozenThrone.Vacate();
+      TheFrozenThrone.Vacate(false);
       _theFrozenThrone.Unit?.SetOwner(completingFaction.Player!);
 
       _arthas.UnitType = UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE;
@@ -64,6 +66,27 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         .AddItemSafe(_helmOfDomination.Item);
 
       _utgardeKeep.Rescue(completingFaction.Player!);
+
+      var domination = completingFaction.GetPowerByType<Domination>();
+      if (domination == null)
+      {
+        domination = new Domination
+        {
+          ResearchId = UPGRADE_R008_DOMINATION_POWER,
+          MindlessUndeadUnitTypes = new List<int>
+          {
+            UNIT_UGHO_GHOUL_SCOURGE,
+            UNIT_U012_HALF_GHOUL_SCOURGE,
+            UNIT_UABO_ABOMINATION_SCOURGE,
+            UNIT_UFRO_FROST_WYRM_SCOURGE,
+            UNIT_UCRM_BURROWED_CRYPT_FIEND_RED,
+            UNIT_UCRY_CRYPT_FIEND_SCOURGE
+          },
+          IconName = "Revenant"
+        };
+      
+        completingFaction.AddPower(domination);
+      }
     }
   }
 }

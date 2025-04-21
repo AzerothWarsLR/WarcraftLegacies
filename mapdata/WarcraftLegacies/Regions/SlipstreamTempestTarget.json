@@ -1,0 +1,15 @@
+{
+  "Left": 2752,
+  "Bottom": -21920,
+  "Right": 3200,
+  "Top": -21504,
+  "Name": "SlipstreamTempestTarget",
+  "CreationNumber": 190,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

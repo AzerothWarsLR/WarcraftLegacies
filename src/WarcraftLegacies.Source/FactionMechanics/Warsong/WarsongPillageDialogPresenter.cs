@@ -36,12 +36,32 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
 
         if (heroes.Any())
         {
-          var splitExperience = choice.ExperienceReward / heroes.Count;
+          var heroCount = heroes.Count;
+          double multiplier;
+
+         
+          switch (heroCount)
+          {
+            case 1:
+              multiplier = 0.50; 
+              break;
+            case 2:
+              multiplier = 0.75; 
+              break;
+            default:
+              multiplier = 1.0; 
+              break;
+          }
+
+        
+          var splitExperience = (int)(choice.ExperienceReward * multiplier / heroCount);
           foreach (var hero in heroes)
           {
             hero.AddExperience(splitExperience);
           }
         }
+
+
 
         if (choice.ArtifactRewardItemType.HasValue && _grom != null)
         {

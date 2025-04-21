@@ -40,7 +40,7 @@ namespace WarcraftLegacies.Source.Spells
              !IsUnitType(target, UNIT_TYPE_MECHANICAL) && !IsUnitType(target, UNIT_TYPE_RESISTANT) &&
              !IsUnitType(target, UNIT_TYPE_HERO) && target.OwningPlayer() == caster.OwningPlayer() && UnitAlive(target)
              && !BlzIsUnitInvulnerable(target) && 
-             !IsUnitType(target, UNIT_TYPE_SUMMONED);
+             !IsUnitType(target, UNIT_TYPE_SUMMONED) && !IsUnitIllusion(target);
     }
 
     private void EmpowerUnit(int level, unit target)
