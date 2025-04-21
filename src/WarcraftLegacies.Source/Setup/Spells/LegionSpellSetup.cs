@@ -66,8 +66,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         HealthPerTarget = new LeveledAbilityField<int>
         {
-          Base = 25,
-          PerLevel = 25
+          Base = 5,
+          PerLevel = 5
         },
         Effect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl"
       });

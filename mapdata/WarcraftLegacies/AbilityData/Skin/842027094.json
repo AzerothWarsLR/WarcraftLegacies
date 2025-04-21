@@ -8,7 +8,7 @@
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNHeroDreadLord.blp"
+      "Value": "war3mapImported\\PASPowerDrainRed.blp"
     },
     {
       "Id": 1718840929,
@@ -39,13 +39,13 @@
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Warglaives of Azzinoth - [|cffffcc00Level 1|r]"
+      "Value": "Vampiric Siphon - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Warglaives of Azzinoth - [|cffffcc00Level 2|r]"
+      "Value": "Vampiric Siphon - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
@@ -63,13 +63,13 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Causes the hero to heal 50 damage whenever they deal damage to an enemy."
+      "Value": "Causes the hero to heal 10 damage whenever they deal damage to an enemy."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Causes the hero to heal 100 damage whenever they deal damage to an enemy."
+      "Value": "Causes the hero to heal 15 damage whenever they deal damage to an enemy."
     },
     {
       "Level": 3,

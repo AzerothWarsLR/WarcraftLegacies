@@ -42,13 +42,12 @@ namespace MacroTools.PassiveAbilities
     /// <inheritdoc />
     public void OnDealsDamage()
     {
-      var caster = GetEventDamageSource();
-      //!BlzGetEventIsAttack() || 
+      var caster = GetEventDamageSource(); 
       if (GetUnitAbilityLevel(caster, _abilityTypeId) == 0)
         return;
 
       var healthPerTarget = ((HealthPerTarget.Base + HealthPerTarget.PerLevel) * GetUnitAbilityLevel(caster, _abilityTypeId));
-      Console.WriteLine(healthPerTarget.ToString());
+      Console.WriteLine("Healed amount: " + healthPerTarget.ToString());
       caster.Heal(healthPerTarget);
       AddSpecialEffectTarget(Effect, caster, "origin")
         .SetLifespan();

@@ -1,0 +1,141 @@
+{
+  "OldId": 1634750017,
+  "NewId": 892358742,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Legion Hero)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Parasitic Dark Conversion"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Afflicts a target enemy unit with a deadly rotting parasite that deals \u003CVP05,DataA2\u003E damage per second for \u003CANpa,Dur1\u003E seconds. If the afflicted unit dies while under the effect of Parasite, a zombie will spawn from its corpse."
+    },
+    {
+      "Id": 2019718497,
+      "Value": 1
+    },
+    {
+      "Id": 1802007905,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 2,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to activate auto-casting.|r"
+    },
+    {
+      "Level": 2,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to deactivate auto-casting.|r"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Parasitic Dark Conversion"
+    },
+    {
+      "Id": 1802728801,
+      "Type": 3,
+      "Value": "nzom"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Parasitic Dark Conversion"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Parasitic Dark Conversion"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Parasitic Dark Conversion"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Afflicts a target enemy unit with a deadly rotting parasite that deals \u003CVP05,DataA1\u003E damage per second for \u003CANpa,Dur1\u003E seconds. If the afflicted unit dies while under the effect of Parasite, a zombie will rise from its corpse."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Afflicts a target enemy unit with a deadly rotting parasite that deals \u003CVP05,DataA3\u003E damage per second for \u003CANpa,Dur1\u003E seconds. If the afflicted unit dies while under the effect of Parasite, 2 zombies will spawn from its corpse."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Afflicts a target enemy unit with a deadly rotting parasite that deals \u003CVP05,DataA4\u003E damage per second for \u003CANpa,Dur1\u003E seconds. If the afflicted unit dies while under the effect of Parasite, 2 zombie will spawn from its corpse."
+    },
+    {
+      "Level": 3,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to activate auto-casting.|r"
+    },
+    {
+      "Level": 4,
+      "Id": 829715809,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to activate auto-casting.|r"
+    },
+    {
+      "Level": 3,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to deactivate auto-casting.|r"
+    },
+    {
+      "Level": 4,
+      "Id": 829781345,
+      "Type": 3,
+      "Value": "|cffc3dbffRight-click to deactivate auto-casting.|r"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNParasiteOn.blp"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Parasitic Dark Conversion - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Afflicts a target enemy unit with a deadly rotting parasite that deals damage whilst inside. If the afflicted unit dies while under the effect of Parasite, zombies will rise from its corpse. |n|n|cffffcc00Level 1|r - Deals \u003CVP05,DataA1\u003E per second for \u003CVP05,Dur1\u003E seconds, raises 1 zombie. |n|cffffcc00Level 2|r - Deals \u003CVP05,DataA2\u003E per second for \u003CVP05,Dur2\u003E seconds, raises 1 zombie. |n|cffffcc00Level 3|r - Deals \u003CVP05,DataA3\u003E per second for \u003CVP05,Dur3\u003E seconds, raises 2 zombies. |n|cffffcc00Level 4|r - Deals \u003CVP05,DataA4\u003E per second for \u003CVP05,Dur4\u003E seconds, raises 2 zombies."
+    }
+  ]
+}
