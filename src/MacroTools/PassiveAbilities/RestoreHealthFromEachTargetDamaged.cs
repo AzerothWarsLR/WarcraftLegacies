@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using MacroTools.ControlPointSystem;
 using MacroTools.Data;
 using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
@@ -26,6 +27,11 @@ namespace MacroTools.PassiveAbilities
     public LeveledAbilityField<int> HealthPerTarget { get; init; } = new();
 
     /// <summary>
+    /// The amount of health per hero level that is added to the health gained calculation.
+    /// </summary>
+    public int HealthPerLevel { get; init; } = 0;
+
+    /// <summary>
     /// Initializes a new instance of the <see cref="RestoreHealthFromEachTargetDamaged"/> class.
     /// </summary>
     /// <param name="unitTypeId"><inheritdoc /></param>
@@ -42,12 +48,17 @@ namespace MacroTools.PassiveAbilities
     /// <inheritdoc />
     public void OnDealsDamage()
     {
-      var caster = GetEventDamageSource(); 
+      var triggerUnit = GetTriggerUnit();
+      if (IsUnitType(triggerUnit, UNIT_TYPE_STRUCTURE) || ControlPointManager.Instance.UnitIsControlPoint(triggerUnit))
+      {
+        return;
+      }
+
+      var caster = GetEventDamageSource();
       if (GetUnitAbilityLevel(caster, _abilityTypeId) == 0)
         return;
 
-      var healthPerTarget = ((HealthPerTarget.Base + HealthPerTarget.PerLevel) * GetUnitAbilityLevel(caster, _abilityTypeId));
-      Console.WriteLine("Healed amount: " + healthPerTarget.ToString());
+      var healthPerTarget = ((caster.GetLevel() * HealthPerLevel) + (HealthPerTarget.Base + HealthPerTarget.PerLevel) * GetUnitAbilityLevel(caster, _abilityTypeId));
       caster.Heal(healthPerTarget);
       AddSpecialEffectTarget(Effect, caster, "origin")
         .SetLifespan();

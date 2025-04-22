@@ -24,13 +24,14 @@ namespace WarcraftLegacies.Source.Quests.Legion
       "The Kingdom of Lordaeron has fallen, eliminating Azeroth's vanguard against the Legion.";
 
     /// <inheritdoc/>
-    protected override string RewardDescription => "Tichondrius gains 15 Strength, Agility and Intelligence";
+    protected override string RewardDescription => "Tichondrius gains 15 Strength, Agility and Intelligence and improves his Vampiric Siphon ability";
 
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
       _tichondrius.Unit?.DisplayHeroReward(15, 15, 15, 0);
       _tichondrius.Unit?.AddHeroAttributes(15, 15, 15);
+      _tichondrius.Unit?.SetAbilityLevel(ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS, 2);
     }
   }
 }

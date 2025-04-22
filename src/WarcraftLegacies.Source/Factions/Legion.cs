@@ -81,7 +81,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
       AddQuest(new QuestLegionKillLordaeron(_allLegendSetup.Lordaeron.CapitalPalace,
         _allLegendSetup.Lordaeron.Stratholme, _allLegendSetup.Legion.Tichondrius));
       AddQuest(new QuestSummonLegion(Regions.TwistingNether,
-        _preplacedUnitSystem.GetUnit(UNIT_N03C_DEMON_PORTAL_NETHER)));
+        _preplacedUnitSystem.GetUnit(UNIT_N03C_DEMON_PORTAL_NETHER), _allLegendSetup.Legion.Anetheron));
     }
 
     private void RegisterResearches()
@@ -206,7 +206,7 @@ Your primary objective is to summon the great host of the Burning Legion. Invade
 
     private void RegisterScourgeQuests(Scourge scourge)
     {
-      AddQuest(new QuestCunningPlan(Regions.AlteracAmbient, scourge));
+      AddQuest(new QuestCunningPlan(Regions.AlteracAmbient, scourge, _allLegendSetup.Legion.Malganis));
     }
 
     private void RegisterDruidsRelatedQuestsAndDialogue(Druids druids)
