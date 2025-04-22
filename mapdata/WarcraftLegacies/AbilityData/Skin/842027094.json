@@ -63,13 +63,13 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Causes the hero to heal 10 damage whenever they deal damage to an enemy."
+      "Value": "Causes the hero to heal a small amount whenever they deal damage to an enemy. Scales with hero level."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Causes the hero to heal 15 damage whenever they deal damage to an enemy."
+      "Value": "Causes the hero to heal a moderate amount whenever they deal damage to an enemy. Scales with hero level."
     },
     {
       "Level": 3,

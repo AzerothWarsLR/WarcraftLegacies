@@ -49,14 +49,13 @@ namespace MacroTools.PassiveAbilities
     public void OnDealsDamage()
     {
       var triggerUnit = GetTriggerUnit();
-      if (IsUnitType(triggerUnit, UNIT_TYPE_STRUCTURE) || ControlPointManager.Instance.UnitIsControlPoint(triggerUnit))
+      var caster = GetEventDamageSource();
+      
+      if (IsUnitType(triggerUnit, UNIT_TYPE_STRUCTURE) || ControlPointManager.Instance.UnitIsControlPoint(triggerUnit) ||
+        IsUnitAlly(triggerUnit, caster.OwningPlayer()) || GetUnitAbilityLevel(caster, _abilityTypeId) == 0)
       {
         return;
       }
-
-      var caster = GetEventDamageSource();
-      if (GetUnitAbilityLevel(caster, _abilityTypeId) == 0)
-        return;
 
       var healthPerTarget = ((caster.GetLevel() * HealthPerLevel) + (HealthPerTarget.Base + HealthPerTarget.PerLevel) * GetUnitAbilityLevel(caster, _abilityTypeId));
       caster.Heal(healthPerTarget);
