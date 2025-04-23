@@ -18,7 +18,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives a \u003CVP07,DataA1\u003E%% chance that an attack will deal \u003CVP07,DataB1\u003E damage to nearby units."
+      "Value": "Gives a \u003CVP07,DataA1\u003E% chance that an attack will deal \u003CVP07,DataB1\u003E damage to nearby enemies."
     },
     {
       "Id": 1952543585,
@@ -53,37 +53,37 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives a \u003CVP07,DataA2\u003E% chance that an attack will deal \u003CVP07,DataB2\u003E damage to nearby units."
+      "Value": "Gives a \u003CVP07,DataA2\u003E% chance that an attack will deal \u003CVP07,DataB2\u003E damage to nearby enemies."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives a \u003CVP07,DataA3\u003E% chance that an attack will deal \u003CVP07,DataB3\u003E damage to nearby units."
+      "Value": "Gives a \u003CVP07,DataA3\u003E% chance that an attack will deal \u003CVP07,DataB3\u003E damage to nearby enemies."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives a \u003CVP07,DataA4\u003E% chance that an attack will deal \u003CVP07,DataB4\u003E damage to nearby units."
+      "Value": "Gives a \u003CVP07,DataA4\u003E% chance that an attack will deal \u003CVP07,DataB4\u003E damage to nearby enemies."
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Pulverize"
+      "Value": "Pulverize - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Pulverize"
+      "Value": "Pulverize - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Pulverize"
+      "Value": "Pulverize - [|cffffcc00Level 4|r]"
     },
     {
       "Id": 1953854049,
@@ -94,6 +94,12 @@
       "Id": 1952805473,
       "Type": 3,
       "Value": "Learn Pulverize - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Pulverize - [|cffffcc00Level 1|r]"
     }
   ]
 }

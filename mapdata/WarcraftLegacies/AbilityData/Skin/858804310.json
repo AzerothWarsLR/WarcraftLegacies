@@ -28,7 +28,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Calls forth a cone of death to damage enemies. |n|n|cffffcc00Level 1|r - \u003CVP03,DataA1\u003E damage per unit, up to \u003CVP03,DataB1\u003E units. |n|cffffcc00Level 2|r - \u003CVP03,DataA2\u003E damage per unit, up to \u003CVP03,DataB2\u003E units. |n|cffffcc00Level 3|r - \u003CVP03l,DataA3\u003E damage per unit, up to \u003CVP03,DataB1\u003E units. |n|cffffcc00Level 4|r - \u003CVP03,DataA4\u003E damage per unit, up to \u003CVP03,DataB1\u003E units."
+      "Value": "Calls forth a cone of death to damage enemies. |n|n|cffffcc00Level 1|r - \u003CVP03,DataA1\u003E damage per unit, up to \u003CVP03,DataB1\u003E units. |n|cffffcc00Level 2|r - \u003CVP03,DataA2\u003E damage per unit, up to \u003CVP03,DataB2\u003E units. |n|cffffcc00Level 3|r - \u003CVP03l,DataA3\u003E damage per unit, up to \u003CVP03,DataB3\u003E units. |n|cffffcc00Level 4|r - \u003CVP03,DataA4\u003E damage per unit, up to \u003CVP03,DataB4\u003E units."
     },
     {
       "Level": 1,

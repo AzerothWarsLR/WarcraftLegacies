@@ -125,6 +125,11 @@
       "Id": 1953854049,
       "Type": 3,
       "Value": "Afflicts a target enemy unit with a deadly rotting parasite that deals damage whilst inside. If the afflicted unit dies while under the effect of Parasite, zombies will rise from its corpse. |n|n|cffffcc00Level 1|r - Deals \u003CVP05,DataA1\u003E per second for \u003CVP05,Dur1\u003E seconds, raises 1 zombie. |n|cffffcc00Level 2|r - Deals \u003CVP05,DataA2\u003E per second for \u003CVP05,Dur2\u003E seconds, raises 1 zombie. |n|cffffcc00Level 3|r - Deals \u003CVP05,DataA3\u003E per second for \u003CVP05,Dur3\u003E seconds, raises 2 zombies. |n|cffffcc00Level 4|r - Deals \u003CVP05,DataA4\u003E per second for \u003CVP05,Dur4\u003E seconds, raises 2 zombies."
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
     }
   ]
 }
