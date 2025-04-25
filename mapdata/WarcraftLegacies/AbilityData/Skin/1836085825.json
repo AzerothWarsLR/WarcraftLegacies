@@ -18,6 +18,11 @@
       "Id": 1802007905,
       "Type": 3,
       "Value": "W"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Undead\\ReplenishMana\\SpiritTouchTarget.mdl"
     }
   ]
 }
