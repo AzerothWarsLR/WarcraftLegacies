@@ -70,7 +70,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
           PerLevel = 10
         },
         HealthPerLevel = 1,
-        Effect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl"
+        Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
       });
     }
 
