@@ -1,0 +1,69 @@
+{
+  "OldId": 1802981185,
+  "NewId": 909135958,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Allows the Hero to become invisible, and move faster for a set amount of time. When the Hero attacks a unit to break invisibility, he will deal bonus damage. |n|n|cffffcc00Level 1|r - \u003CVP06,DataB1,%\u003E% move, \u003CVP06,DataC1\u003E bonus damage, \u003CVP06,Dur1\u003E seconds. |n|cffffcc00Level 2|r - \u003CVP06,DataB2,%\u003E% move, \u003CVP06,DataC2\u003E bonus damage, \u003CVP06,Dur2\u003E seconds. |n|cffffcc00Level 3|r - \u003CVP06,DataB3,%\u003E% move, \u003CVP06,DataC3\u003E bonus damage, \u003CVP06,Dur3\u003E seconds.|n|cffffcc00Level 4|r - \u003CVP06,DataB4,%\u003E% move, \u003CVP06,DataC4\u003E bonus damage, \u003CVP06,Dur4\u003E seconds."
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Wind Walk - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 5,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Wind Walk (|cffffcc00Q|r) - [|cffffcc00Level 5|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Allows the Hero to become invisible, and move \u003CVP06,DataB1,%\u003E% faster for \u003CVP06,Dur1\u003E seconds. If the Hero attacks a unit to break invisibility, the attack will do \u003CVP06,DataC1\u003E bonus damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Allows the Hero to become invisible, and move \u003CVP06,DataB2,%\u003E% faster for \u003CVP06,Dur2\u003E seconds. If the Hero attacks a unit to break invisibility, the attack will do \u003CVP06,DataC2\u003E bonus damage."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Allows the Hero to become invisible, and move \u003CVP06,DataB3,%\u003E% faster for \u003CVP06,Dur3\u003E seconds. If the Hero attacks a unit to break invisibility, the attack will do \u003CVP06,DataC3\u003E bonus damage."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Allows the Hero to become invisible, and move \u003CVP06,DataB4,%\u003E% faster for \u003CVP06,Dur4\u003E seconds. If the Hero attacks a unit to break invisibility, the attack will do \u003CVP06,DataC4\u003E bonus damage."
+    },
+    {
+      "Level": 5,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Allows the Hero to become invisible, and move \u003CAOwk,DataB5,%\u003E% faster for \u003CAOwk,Dur5\u003E seconds. If the Hero attacks a unit to break invisibility, the attack will do \u003CAOwk,DataC5\u003E bonus damage."
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Legion Hero)"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    }
+  ]
+}

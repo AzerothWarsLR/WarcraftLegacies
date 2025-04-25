@@ -1,4 +1,6 @@
 ﻿using MacroTools.Data;
+using MacroTools.PassiveAbilities;
+using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
@@ -52,6 +54,24 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Radius = 50,
       };
       SpellSystem.Register(summonFelHounds);
+
+      var dreadlordHeroes = new[]
+      {
+        UNIT_UMAL_THE_CUNNING_LEGION,
+        UNIT_UTIC_THE_DARKENER_LEGION,
+        UNIT_U00L_ENVOY_OF_ARCHIMONDE_LEGION
+      };
+
+      PassiveAbilityManager.Register(new RestoreHealthFromEachTargetDamaged(dreadlordHeroes, ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS)
+      {
+        HealthPerTarget = new LeveledAbilityField<int>
+        {
+          Base = -5,
+          PerLevel = 10
+        },
+        HealthPerLevel = 1,
+        Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
+      });
     }
 
     private static void RegisterSlipstreams()
