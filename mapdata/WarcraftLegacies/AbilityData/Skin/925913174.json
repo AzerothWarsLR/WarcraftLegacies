@@ -43,7 +43,7 @@
     {
       "Id": 1918988897,
       "Type": 3,
-      "Value": "ReplaceableTextures\\PassiveButtons\\PASBTNSeaGiantPulverize.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNPulverise.blp"
     },
     {
       "Id": 2020635233,
@@ -88,7 +88,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Gives a chance to deal damage to nearby units. |n|n|cffffcc00Level 1|r - \u003CVP07,DataA1\u003E% chance, \u003CVP07,DataB1\u003E damage. |n|cffffcc00Level 2|r - \u003CVP07,DataA2\u003E% chance, \u003CVP07,DataB2\u003E damage. |n|cffffcc00Level 3|r - \u003CVP07,DataA3\u003E% chance, \u003CVP07,DataB3\u003E damage. |n|cffffcc00Level 4|r - \u003CVP07,DataA4\u003E% chance, \u003CVP07,DataB4\u003E damage."
+      "Value": "Gives a chance to deal damage to nearby enemies. |n|n|cffffcc00Level 1|r - \u003CVP07,DataA1\u003E% chance, \u003CVP07,DataB1\u003E damage. |n|cffffcc00Level 2|r - \u003CVP07,DataA2\u003E% chance, \u003CVP07,DataB2\u003E damage. |n|cffffcc00Level 3|r - \u003CVP07,DataA3\u003E% chance, \u003CVP07,DataB3\u003E damage. |n|cffffcc00Level 4|r - \u003CVP07,DataA4\u003E% chance, \u003CVP07,DataB4\u003E damage."
     },
     {
       "Id": 1952805473,
