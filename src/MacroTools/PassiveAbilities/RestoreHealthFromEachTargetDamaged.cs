@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Data;
 using MacroTools.Extensions;
@@ -43,14 +44,32 @@ namespace MacroTools.PassiveAbilities
     /// <param name="abilityTypeId">The Warcraft 3 ability representing this instance.</param>
     public RestoreHealthFromEachTargetDamaged(IEnumerable<int> unitTypeIds, int abilityTypeId) : base(unitTypeIds) => _abilityTypeId = abilityTypeId;
 
+    public List<unit> Units { get; init; } = new ();
+
+    public damagetype LastDamageType { get; set; }
+
+    public unit LastUnit { get; set; }
+
     /// <inheritdoc />
     public void OnDealsDamage()
     {
       var triggerUnit = GetTriggerUnit();
       var caster = GetEventDamageSource();
-      
+      var damagetype = BlzGetEventDamageType();
+
+      if (BlzGetEventIsAttack() || damagetype != LastDamageType || caster != LastUnit)
+      {
+        Units.Clear();
+        LastDamageType = damagetype;
+        LastUnit = caster;
+      }
+      else
+      {
+        Units.Add(triggerUnit);
+      }
+
       if (IsUnitType(triggerUnit, UNIT_TYPE_STRUCTURE) || ControlPointManager.Instance.UnitIsControlPoint(triggerUnit) ||
-        IsUnitAlly(triggerUnit, caster.OwningPlayer()) || GetUnitAbilityLevel(caster, _abilityTypeId) == 0)
+        IsUnitAlly(triggerUnit, caster.OwningPlayer()) || GetUnitAbilityLevel(caster, _abilityTypeId) == 0 || Units.Count > 10)
       {
         return;
       }
