@@ -72,6 +72,17 @@ namespace WarcraftLegacies.Source.Setup.Spells
         HealthPerLevel = 1,
         Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
       });
+
+      PassiveAbilityManager.Register(new RestoreHealthFromEachTargetDamaged(UNIT_U007_DREADLORD_LEGION_ELITE, ABILITY_VP08_VAMPIRIC_SIPHON_LEGION_ELITES)
+      {
+        HealthPerTarget = new LeveledAbilityField<int>
+        {
+          Base = -5,
+          PerLevel = 10
+        },
+        HealthPerLevel = 1,
+        Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
+      });
     }
 
     private static void RegisterSlipstreams()
