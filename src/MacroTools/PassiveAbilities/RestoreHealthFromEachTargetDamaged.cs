@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.Data;
 using MacroTools.Extensions;
@@ -43,18 +44,37 @@ namespace MacroTools.PassiveAbilities
     /// <param name="abilityTypeId">The Warcraft 3 ability representing this instance.</param>
     public RestoreHealthFromEachTargetDamaged(IEnumerable<int> unitTypeIds, int abilityTypeId) : base(unitTypeIds) => _abilityTypeId = abilityTypeId;
 
-    public List<unit> Units { get; init; } = new ();
+    /// <summary>
+    /// The number of units required for diminishing returns to start.
+    /// </summary>
+    public int DiminishStartAfterUnits { get; set; } = 10;
 
-    public damagetype LastDamageType { get; set; }
+    /// <summary>
+    /// Effect is reduced by this percentage for each additional unit beyond the limit
+    /// </summary>
+    public float DiminishFactor { get; set; } = 0.2f;
 
-    public unit LastUnit { get; set; }
+    private List<unit> Units { get; init; } = new();
+
+    private damagetype? LastDamageType { get; set; }
+
+    private unit? LastUnit { get; set; }
+
 
     /// <inheritdoc />
     public void OnDealsDamage()
     {
       var triggerUnit = GetTriggerUnit();
       var caster = GetEventDamageSource();
+
+      if (IsUnitType(triggerUnit, UNIT_TYPE_STRUCTURE) || ControlPointManager.Instance.UnitIsControlPoint(triggerUnit) ||
+        IsUnitAlly(triggerUnit, caster.OwningPlayer()) || GetUnitAbilityLevel(caster, _abilityTypeId) == 0)
+      {
+        return;
+      }
+
       var damagetype = BlzGetEventDamageType();
+      var diminishMultiplier = 1.0f;
 
       if (BlzGetEventIsAttack() || damagetype != LastDamageType || caster != LastUnit)
       {
@@ -67,10 +87,10 @@ namespace MacroTools.PassiveAbilities
         Units.Add(triggerUnit);
       }
 
-      if (IsUnitType(triggerUnit, UNIT_TYPE_STRUCTURE) || ControlPointManager.Instance.UnitIsControlPoint(triggerUnit) ||
-        IsUnitAlly(triggerUnit, caster.OwningPlayer()) || GetUnitAbilityLevel(caster, _abilityTypeId) == 0 || Units.Count > 10)
+      if (Units.Count > DiminishStartAfterUnits)
       {
-        return;
+        diminishMultiplier -= (Units.Count - DiminishStartAfterUnits) * DiminishFactor;
+        _ = Math.Max(diminishMultiplier, 0.0f);
       }
 
       var healthPerTarget = ((caster.GetLevel() * HealthPerLevel) + (HealthPerTarget.Base + HealthPerTarget.PerLevel) * GetUnitAbilityLevel(caster, _abilityTypeId));
