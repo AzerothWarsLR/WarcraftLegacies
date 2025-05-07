@@ -12,7 +12,9 @@ using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 using MacroTools.Extensions;
 using MacroTools.FactionChoices;
+using MacroTools.ResearchSystems;
 using WarcraftLegacies.Source.FactionMechanics.Warsong;
+using WarcraftLegacies.Source.Researches;
 
 
 namespace WarcraftLegacies.Source.Factions
@@ -63,6 +65,7 @@ Work closely with your new elven allies—only together will you overcome the lo
             ReplaceWithFactionUnits(this);
             RegisterQuests();
             RegisterDialogue();
+            RegisterFlightPath();
             BloodPactBattleSimulation.StartSimulation();
             SharedFactionConfigSetup.AddSharedFactionConfig(this);
             Regions.BarrenAmbient2.CleanupHostileUnits();
@@ -169,6 +172,16 @@ Work closely with your new elven allies—only together will you overcome the lo
               EligibleFactions = new List<Faction>{this}
             }
                 }));
+        }
+        
+        private void RegisterFlightPath()
+        {
+          // Registering Frostwolf's FlightPath research
+          ResearchManager.Register(new FlightPath(
+            this,
+            UPGRADE_R09N_FLIGHT_PATH_WARSONG,
+            70,
+            _preplacedUnitSystem));
         }
     }
 }
