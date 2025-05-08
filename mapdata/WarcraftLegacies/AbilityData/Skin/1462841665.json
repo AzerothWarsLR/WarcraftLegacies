@@ -18,7 +18,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Summon an immobile cloud of toxic waste. The cloud will damage enemies as long as they remain inside it. |n|n|cffffcc00Level 1|r - 50 damage per second, 20 seconds duration.|n|cffffcc00Level 2|r - 75 damage per second, 35 seconds duration.|n|cffffcc00Level 3|r - 100 damage per second, 50 seconds duration."
+      "Value": "Summon an immobile cloud of toxic waste. The cloud will damage enemies as long as they remain inside it. |n|n|cffffcc00Level 1|r - 25 damage per second, 20 seconds duration.|n|cffffcc00Level 2|r - 50 damage per second, 35 seconds duration.|n|cffffcc00Level 3|r - 75 damage per second, 50 seconds duration."
     },
     {
       "Level": 4,
@@ -53,7 +53,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(noggenfogger)"
+      "Value": "(noggenfogger,Yor\u0027sahj the Unsleeping)"
     },
     {
       "Id": 1835101793,
