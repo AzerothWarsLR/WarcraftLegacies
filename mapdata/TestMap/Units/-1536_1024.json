@@ -2,8 +2,6 @@
   {
     "Flags": 2,
     "OwnerId": 24,
-    "HP": -1,
-    "MP": -1,
     "GoldAmount": 12500,
     "TargetAcquisition": -1,
     "HeroLevel": 1,
