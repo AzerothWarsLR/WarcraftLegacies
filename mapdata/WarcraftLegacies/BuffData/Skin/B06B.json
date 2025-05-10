@@ -1,0 +1,43 @@
+{
+  "OldId": 1869374018,
+  "NewId": 1110847554,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "WingsBuff_Overhead.mdx"
+    },
+    {
+      "Id": 1667331174,
+      "Value": 0
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": "overhead"
+    },
+    {
+      "Id": 828470374,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Gale"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWindOrb.blp"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit has Gale; its attack rate and movement speed are increased."
+    }
+  ]
+}

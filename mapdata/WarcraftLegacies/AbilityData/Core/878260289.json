@@ -1,0 +1,80 @@
+{
+  "OldId": 1634693697,
+  "NewId": 878260289,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 800
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828469074,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845246290,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 75
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "self"
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862023506,
+      "Type": 2,
+      "Value": 50
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "B06N"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "R01G"
+    }
+  ]
+}

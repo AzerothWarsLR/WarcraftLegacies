@@ -16,11 +16,6 @@
       "Value": "(Armored mistral)"
     },
     {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Storm Surge"
-    },
-    {
       "Id": 1918988897,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNWarStomp.blp"
@@ -48,13 +43,13 @@
       "Value": "The Mistral releases a burst of energy, dealing 60 damage to nearby enemy land units and purging them for 3 seconds."
     },
     {
-      "Id": 2037082209,
-      "Type": 3,
-      "Value": "Q"
-    },
-    {
       "Id": 2020631137,
       "Value": 0
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Storm Surge"
     }
   ]
 }

@@ -18,22 +18,17 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.2
-    },
-    {
-      "Id": 1835101813,
-      "Type": 3,
-      "Value": "Armored Mistral"
+      "Value": 0.6
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Summon Armored Mistral"
+      "Value": "Summon Elemental Lord"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Heavily armored Skywall Warriors."
+      "Value": "An Elemental Lord that masters the four elements."
     },
     {
       "Id": 2020631157,
@@ -42,7 +37,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNPurpleFullPlate.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNElemental Lord.blp"
     },
     {
       "Id": 1684960117,
@@ -52,22 +47,32 @@
     {
       "Id": 1831952757,
       "Type": 3,
-      "Value": ""
+      "Value": "VoidWalkerMissile.mdl"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\Purple_Full_plate_revenant.mdl"
+      "Value": "Elemental_Lord.mdl"
     },
     {
       "Id": 1919905909,
       "Type": 3,
-      "Value": "war3mapImported\\Purple_Full_plate_revenant.mdl"
+      "Value": "Elemental_Lord.mdl"
     },
     {
       "Id": 1935827317,
       "Type": 3,
-      "Value": "AESS,A07C,ACrk,AEMF,Aiun"
+      "Value": "ACrk,Aiun"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Elemental Lord"
+    },
+    {
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.16
     }
   ]
 }

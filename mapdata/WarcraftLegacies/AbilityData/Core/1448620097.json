@@ -1,0 +1,16 @@
+{
+  "OldId": 1819500865,
+  "NewId": 1448620097,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829385811,
+      "Type": 2,
+      "Value": -0.2
+    }
+  ]
+}
