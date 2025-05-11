@@ -19,7 +19,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Blasts enemy units with a wave of frost that deals \u003CA0OS,DataB1\u003E damage to the target, and \u003CA0OS,DataA1\u003E nova damage. Cold damage slows units\u0027 movement and attack rate for \u003CA0OS,Dur1\u003E seconds."
+      "Value": "Blasts enemy units with a wave of frost that deals \u003CAEFN,DataB1\u003E damage to the target, and \u003CAEFN,DataA1\u003E nova damage. Cold damage slows units\u0027 movement and attack rate for \u003CAEFN,Dur1\u003E seconds."
     }
   ]
 }
