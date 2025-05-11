@@ -120,16 +120,22 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
       };
       PassiveAbilityManager.Register(purgeAttack);
 
-      var stormSurge = new Stomp(ABILITY_AESS_STORM_SURGE_ARMORED_MISTRAL)
+      var stormSurge = new MassSpellAnySpellAndDamage(ABILITY_AESS_STORM_SURGE_ARMORED_MISTRAL)
       {
+        DummyAbilityId = ABILITY_AEPU_PURGE_SHOCKING_BLADE,
+        DummyAbilityOrderId = OrderId("purge"),
         Radius = 400,
         DamageBase = 50,
+        DamageLevel = 20,
         DurationBase = 3,
-        StunAbilityId = ABILITY_AEPU_PURGE_SHOCKING_BLADE,
-        StunOrderId = OrderId("purge"),
-        SpecialEffect = @"war3mapImported\Cyclon Explosion.mdx"
+        DurationLevel = 1,
+        SpecialEffect = @"war3mapImported\Cyclon Explosion.mdx",
+        Chance = 1.0f,
+        TargetType = SpellTargetType.Point,
+        CastFilter = CastFilters.IsTargetEnemyAndAlive
       };
       SpellSystem.Register(stormSurge);
+
 
       var waterPrison = new SpellOnAttack(UNIT_N08S_ELEMENTAL_LORD_ELEMENTAL,
         ABILITY_A0Y6_WATER_PRISON_ELEMENTAL_LORD)
