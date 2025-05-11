@@ -14,18 +14,18 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons a wind core at the specified location. It automatically speeds up two nearby friendly units every 3 seconds,increasing their movement speed by 10% and attack speed by 20%. While the wind core exists, the Elemental Lord gains an extra 50% evasion and reduces the movement speed of enemies within 400 by 15%. Lasts 45 seconds.|n|n|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Summons an enchanted ward that empowers nearby allies, increasing the movement speed of up to two friendly units by 10% and their attack speed by 20% every 3 seconds. While the ward exists, all Elemental Lords gain 40% evasion and slows nearby enemy units movement speed by 15%. Lasts 45 seconds.|n|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Core of the Gale"
+      "Value": "Ward of Gale"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Core of the Gale"
+      "Value": "Ward of Gale"
     },
     {
       "Id": 1953653089,

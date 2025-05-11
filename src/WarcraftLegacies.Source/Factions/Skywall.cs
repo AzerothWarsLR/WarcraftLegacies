@@ -110,7 +110,7 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
     private void RegisterSpells()
     {
 
-      var purgeAttack = new SpellOnAttack(UNIT_N08S_ELEMENTAL_LORD_ELEMENTAL,
+      var purgeAttack = new SpellOnAttack(UNIT_O01I_ANIMATED_ARMOR_ELEMENTAL,
         ABILITY_AELP_SHOCKING_BLADES_ANIMATED_ARMOR)
       {
         DummyAbilityId = ABILITY_AEPU_PURGE_SHOCKING_BLADE,
@@ -136,8 +136,8 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
       {
         DummyAbilityId = ABILITY_A0Y0_WATER_PRISON_REAL,
         DummyOrderId = OrderId("entanglingroots"),
-        ProcChance = 0.4f,
-        Cooldown = 8f,
+        ProcChance = 0.3f,
+        Cooldown = 10f,
         RequiredResearch = UPGRADE_RSW3_QUEST_COMPLETED_SUBDUING_NEPTULON
       };
       PassiveAbilityManager.Register(waterPrison);
@@ -154,8 +154,8 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
       {
         DummyAbilityId = ABILITY_A01V_MASS_ENSNARE_SKYWALL_DUMMY,
         DummyAbilityOrderId = OrderId("ensnare"),
-        Radius = 150,
-        Chance = 0.5f,
+        Radius = 250,
+        Chance = 0.75f,
         CastFilter = CastFilters.IsTargetEnemyAndAlive,
         TargetType = SpellTargetType.Point
       };
