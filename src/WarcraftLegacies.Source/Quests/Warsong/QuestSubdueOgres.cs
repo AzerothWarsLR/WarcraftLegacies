@@ -42,7 +42,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       "The fate of the ogres has been decided, and the Horde's power grows.";
 
     protected override string RewardDescription =>
-      $"Gain control of Stonemaul and unlock the ability to train {GetObjectName(UNIT_N07A_OGRE_WARRIOR_WARSONG)}s and {GetObjectName(UNIT_N08O_OGRE_MAGI_WARSONG)}s. Alternatively, earn {PillageGoldReward} gold and up to {PillageExperienceReward} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives. Additionally, enhance both {GetObjectName(UNIT_O00G_BLADEMASTER_WARSONG)}s' and {GetObjectName(UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE)}s' attack damage, movement speed, and hit points.";
+      $"Gain control of Stonemaul, {GetObjectName(UNIT_O02M_WARSONG_GRUNT_WARSONG)}s' are upgraded to {GetObjectName(UNIT_O02A_MOK_NATHAL_WARRIOR_WARSONG)}s' and unlock the ability to train {GetObjectName(UNIT_N08O_OGRE_MAGI_WARSONG)}s. Alternatively, earn {PillageGoldReward} gold and up to {PillageExperienceReward} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives. Additionally, enhance both {GetObjectName(UNIT_O00G_BLADEMASTER_WARSONG)}s' and {GetObjectName(UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE)}s' attack damage, movement speed, and hit points.";
 
     protected override void OnComplete(Faction completingFaction)
     {
@@ -83,6 +83,9 @@ namespace WarcraftLegacies.Source.Quests.Warsong
           SubdueResearchReward
         )
       ).Run(completingFaction.Player);
+      
+      completingFaction.ModObjectLimit(UNIT_O02M_WARSONG_GRUNT_WARSONG, -Faction.UNLIMITED); 
+      completingFaction.ModObjectLimit(UNIT_O02A_MOK_NATHAL_WARRIOR_WARSONG, Faction.UNLIMITED); 
     }
 
     protected override void OnFail(Faction completingFaction)

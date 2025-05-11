@@ -1,6 +1,6 @@
 {
   "OldId": 1970431855,
-  "NewId": 1295134831,
+  "NewId": 1093808239,
   "Unk": [
     0
   ],
@@ -23,32 +23,32 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": 0.95
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Unyielding pride of the Warsong Clan, forged in battle and bound by honor\r\n"
+      "Value": "The Warsong\u2019s fiercest champion, embodying strength, loyalty, and honor\r\n"
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Warsong Grunt"
+      "Value": "Mok\u0027nathal Warrior"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported\\WarsongGrunt.mdl"
+      "Value": "war3mapImported\\WarsongGruntV2.mdl"
     },
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNwarsonggrunt.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNBlackrockGrunt.blp"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Train Warsong Grunt"
+      "Value": "Train Mok\u0027nathal Warrior"
     }
   ]
 }

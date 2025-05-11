@@ -1,6 +1,6 @@
 {
   "OldId": 1970431855,
-  "NewId": 1295134831,
+  "NewId": 842477679,
   "Unk": [
     0
   ],
@@ -28,12 +28,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Unyielding pride of the Warsong Clan, forged in battle and bound by honor\r\n"
+      "Value": "Pride of the Warsong Clan, warrior of Honor."
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Warsong Grunt"
+      "Value": "Kor\u0027kron Vanguard"
     },
     {
       "Id": 1818520949,
@@ -43,12 +43,7 @@
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNwarsonggrunt.blp"
-    },
-    {
-      "Id": 1885959285,
-      "Type": 3,
-      "Value": "Train Warsong Grunt"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcGrunt.BLP"
     }
   ]
 }

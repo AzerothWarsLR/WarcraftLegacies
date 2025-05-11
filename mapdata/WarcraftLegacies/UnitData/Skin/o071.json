@@ -1,0 +1,69 @@
+{
+  "OldId": 1801614447,
+  "NewId": 825700463,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Warsong)"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\ForestTrollBerserker.mdl"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Powerful yet agile troll hunters. "
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Orc Headhunter"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Axe Thrower"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\Axe\\AxeMissile.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNForestTrollHeadHunter.blp"
+    },
+    {
+      "Id": 1768841589,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1919967861,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1886151029,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}
