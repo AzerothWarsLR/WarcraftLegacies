@@ -120,7 +120,7 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
       };
       PassiveAbilityManager.Register(purgeAttack);
 
-      var stormSurge = new Stomp(ABILITY_AESS_STORM_SURGE_ARMORED_MISTRAL)
+      var stormSurge = new Stomp(ABILITY_AESS_STORM_SURGE_ELEMENTAL_LORD)
       {
         Radius = 400,
         DamageBase = 50,
