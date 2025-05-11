@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.DummyCasters;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
@@ -40,27 +39,15 @@ namespace MacroTools.Spells
         if (!IsUnitEnemy(unit, GetOwningPlayer(caster)) || !UnitAlive(unit) || GetRandomReal(0, 1) > Chance)
           continue;
 
-        // Deal damage
         var damage = DamageBase + DamageLevel * GetAbilityLevel(caster);
         UnitDamageTarget(caster, unit, damage, false, false, ATTACK_TYPE_NORMAL, DAMAGE_TYPE_MAGIC,
           WEAPON_TYPE_WHOKNOWS);
 
-        // Cast dummy ability on the unit for additional effects
         if (DummyAbilityId != 0 && DurationBase > 0)
         {
           var duration = DurationBase + DurationLevel * GetAbilityLevel(caster);
-
-          // Debug: Log the dummy cast
-          Console.WriteLine(
-            $"Casting DummyAbilityId ({DummyAbilityId}) with OrderId ({DummyAbilityOrderId}) on unit: {GetUnitName(unit)}");
-
           DummyCasterManager.GetGlobalDummyCaster()
             .CastUnit(caster, DummyAbilityId, DummyAbilityOrderId, duration, unit, DummyCastOriginType);
-        }
-        else
-        {
-          // Debug: Log missing configuration
-          Console.WriteLine("Skipping dummy cast due to missing DummyAbilityId or invalid DurationBase.");
         }
       }
     }
