@@ -14,7 +14,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons an enchanted ward that empowers nearby allies, increasing the movement speed of up to two friendly units by 10% and their attack speed by 20% every 1.5 seconds. While the ward exists, all Elemental Lords gain 40% evasion and slows nearby enemy units movement speed by 15%. Lasts 45 seconds.|n|n|n|cffffcc00Attacks land and air units.|r"
+      "Value": "Summons an enchanted ward that empowers nearby allies, increasing the movement speed of one friendly units by 10% and their attack speed by 20% every 1.5 seconds. While the ward exists, all Elemental Lords gain 40% evasion and slows nearby enemy units movement speed by 15%. Lasts 45 seconds.|n|n|n|cffffcc00Attacks land and air units.|r"
     },
     {
       "Id": 1835101793,
