@@ -23,10 +23,10 @@ namespace WarcraftLegacies.Source.Quests.Cthun
     /// Initializes a new instance of the <see cref="QuestTitanJailors"/> class.
     /// </summary>
     public QuestTitanJailors(AllLegendSetup allLegendSetup, Rectangle rescueRect) : base("Titan Jailors",
-      "C'thun is currently watched by a Titan Construct, we need to destroy it to free our god.",
+      "C'thun is currently watched by a Titan Construct, we must rid the temple of hostiles and destroy the Titan to free our god.",
       @"ReplaceableTextures\CommandButtons\BTNArmorGolem.blp")
     {
-      AddObjective(new ObjectiveControlPoint(UNIT_NLSE_TEMPLE_OF_AHN_QIRAJ));
+      AddObjective(new ObjectiveControlPoint(UNIT_NLSE_TEMPLE_OF_AHN_QIRAJ, 1500));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       _allLegendSetup = allLegendSetup;
