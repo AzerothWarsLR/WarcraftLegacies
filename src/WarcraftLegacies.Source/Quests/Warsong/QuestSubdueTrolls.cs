@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     private int PillageGoldReward { get; set; }
     private int PillageExperienceReward { get; set; }
     private const int SubdueResearchReward = Constants.UPGRADE_R00K_SUBDUE_THE_DARKSPEAR_TROLLS;
-    private const int PillageResearchReward = Constants.UPGRADE_R01E_QUEST_COMPLETED_TO_BREAK_OR_BIND;
+    private const int PillageResearchReward = Constants.UPGRADE_R01Z_PILLAGE_ECHO_ISLES;
 
     // Unit constants for Subdue
     private const int SubdueRemoveUnit = Constants.UNIT_OTBK_AXE_THROWER_WARSONG;
@@ -39,15 +39,15 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       AddObjective(new ObjectiveSelfExists());
 
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      PillageGoldReward = 650;
-      PillageExperienceReward = 3000;
+      PillageGoldReward = 850;
+      PillageExperienceReward = 3500;
     }
 
     public override string RewardFlavour =>
       "The Darkspear Trolls have been brought to heel.";
 
     protected override string RewardDescription =>
-      $"Gain control of Echo Isles, {GetObjectName(SubdueRemoveUnit)}s are upgraded to {GetObjectName(SubdueAddUnit)}s and unlock the ability to train powerful spellcasters like {GetObjectName(Constants.UNIT_NOGN_WARLOCK_WARSONG)}s. Alternatively, earn {PillageGoldReward} gold and up to {PillageExperienceReward} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives. Additionally, enhance both {GetObjectName(Constants.UNIT_O00G_BLADEMASTER_WARSONG)}s' and {GetObjectName(Constants.UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE)}s' maximum mana by 250 and mana regeneration by 20%.";
+      $"Gain control of Echo Isles, {GetObjectName(SubdueRemoveUnit)}s are upgraded to {GetObjectName(SubdueAddUnit)}s and learn to train {GetObjectName(Constants.UNIT_NOGN_WARLOCK_WARSONG)}s. Alternatively, earn {PillageGoldReward} gold and up to {PillageExperienceReward} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives. Additionally, enhance both {GetObjectName(Constants.UNIT_O00G_BLADEMASTER_WARSONG)}s' and {GetObjectName(Constants.UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE)}s' maximum mana by 250 and mana regeneration by 20%.";
 
     protected override void OnComplete(Faction completingFaction)
     {

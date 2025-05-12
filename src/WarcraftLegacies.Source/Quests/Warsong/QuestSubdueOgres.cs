@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     private int PillageGoldReward { get; set; }
     private int PillageExperienceReward { get; set; }
     private const int SubdueResearchReward = UPGRADE_R012_SUBDUE_THE_STONEMAUL_OGRES;
-    private const int PillageResearchReward = UPGRADE_R017_QUEST_COMPLETED_BRUTE_ALLEGIANCE;
+    private const int PillageResearchReward = UPGRADE_R01U_PILLAGE_STONEMAUL;
     private const int SubdueRemoveUnit = UNIT_O02M_WARSONG_GRUNT_WARSONG;
     private const int SubdueAddUnit = UNIT_O02A_MOK_NATHAL_WARRIOR_WARSONG;
 
@@ -37,8 +37,8 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _grom = grom;
-      PillageGoldReward = 600;
-      PillageExperienceReward = 3000;
+      PillageGoldReward = 900;
+      PillageExperienceReward = 4000;
     }
 
     public override string RewardFlavour =>
