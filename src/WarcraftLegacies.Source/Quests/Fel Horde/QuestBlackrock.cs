@@ -29,7 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
         AddObjective(new ObjectiveQuestComplete(prequisite));
       AddObjective(new ObjectiveResearch(UPGRADE_R090_ACTIVATE_THE_BLACKROCK_CLAN_FEL, UNIT_O008_HELLFIRE_CITADEL_FEL_HORDE));
       AddObjective(new ObjectiveTime(540));
-      AddObjective(new ObjectiveExpire(660, Title));
+      AddObjective(new ObjectiveExpire(900, Title));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = UPGRADE_R03C_QUEST_COMPLETED_BLACKROCK_UNIFICATION;
       _rescueUnits1 = rescueRect1.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
