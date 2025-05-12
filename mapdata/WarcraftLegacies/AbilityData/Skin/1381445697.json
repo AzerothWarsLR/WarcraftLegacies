@@ -1,0 +1,46 @@
+{
+  "OldId": 1869759297,
+  "NewId": 1381445697,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Throne Guard)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Aegis of Lordaeron"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIda\\AIdaCaster.mdl"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increase the defense of nearby heroes by \u003CA0WR,DataB1\u003E. |nLasts \u003CA0WR,Dur1\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Aegis of Lordaeron"
+    }
+  ]
+}

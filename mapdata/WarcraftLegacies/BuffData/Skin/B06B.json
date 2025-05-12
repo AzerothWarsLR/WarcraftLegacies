@@ -1,0 +1,29 @@
+{
+  "OldId": 1634693698,
+  "NewId": 1110847554,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Aegis of Lordaeron"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unis defence has been increased."
+    },
+    {
+      "Id": 1952543846,
+      "Type": 3,
+      "Value": "war3mapImported\\Effect_ShieldBuff_Yellow.mdx"
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMagocracy.blp"
+    }
+  ]
+}

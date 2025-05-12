@@ -1,0 +1,46 @@
+{
+  "OldId": 1936811118,
+  "NewId": 1262039150,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1651270517,
+      "Value": 174
+    },
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Quelthalasl)"
+    },
+    {
+      "Id": 1735156597,
+      "Value": 175
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.2
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Queen of Suffering"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Mother of cruel delights."
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\demon\\Demoness\\Demoness.mdl"
+    }
+  ]
+}
