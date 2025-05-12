@@ -138,16 +138,27 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
 
     private void ApplyUnitUpgrade(Faction faction, UnitUpgrade upgrade)
     {
-      if (upgrade.RemoveUnit != 0)
+      if (faction == null || upgrade == null)
       {
-        faction.ModObjectLimit(upgrade.RemoveUnit, -Faction.UNLIMITED); 
+        Console.WriteLine("UnitUpgrade failed: Either faction or upgrade is null.");
+        return;
       }
 
+
+      if (upgrade.RemoveUnit != 0)
+      {
+        faction.ModObjectLimit(upgrade.RemoveUnit, -Faction.UNLIMITED);
+        Console.WriteLine($"Unit removed from training: {GetObjectName(upgrade.RemoveUnit)}.");
+      }
+
+    
       if (upgrade.AddUnit != 0)
       {
-        faction.ModObjectLimit(upgrade.AddUnit, Faction.UNLIMITED); 
+        faction.ModObjectLimit(upgrade.AddUnit, Faction.UNLIMITED);
+        Console.WriteLine($"Unit added to training: {GetObjectName(upgrade.AddUnit)} is now trainable.");
       }
     }
+
 
     protected override WarsongPillageChoice GetDefaultChoice(player whichPlayer)
     {
