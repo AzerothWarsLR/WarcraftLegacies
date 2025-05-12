@@ -120,9 +120,9 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
       };
       PassiveAbilityManager.Register(purgeAttack);
 
-      var stormSurge = new Stomp(ABILITY_AESS_STORM_SURGE_ARMORED_MISTRAL)
+      var stormSurge = new Stomp(ABILITY_AESS_STORM_SURGE_ELEMENTAL_LORD)
       {
-        Radius = 200,
+        Radius = 400,
         DamageBase = 50,
         DurationBase = 3,
         StunAbilityId = ABILITY_AEPU_PURGE_SHOCKING_BLADE,
@@ -131,12 +131,31 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
       };
       SpellSystem.Register(stormSurge);
 
+      var waterPrison = new SpellOnAttack(UNIT_N08S_ELEMENTAL_LORD_ELEMENTAL,
+        ABILITY_A0Y6_WATER_PRISON_ELEMENTAL_LORD)
+      {
+        DummyAbilityId = ABILITY_A0Y0_WATER_PRISON_REAL,
+        DummyOrderId = OrderId("entanglingroots"),
+        ProcChance = 0.3f,
+        Cooldown = 10f,
+        RequiredResearch = UPGRADE_RSW3_QUEST_COMPLETED_SUBDUING_NEPTULON
+      };
+      PassiveAbilityManager.Register(waterPrison);
+
+      var earthProtectionHero = new AnySpellNoTarget(ABILITY_A0Y4_EARTH_PROTECTION_ELEMENTAL_LORD)
+      {
+        DummyAbilityId = ABILITY_A0XY_EARTH_PROTECTION_HERO_DUMMY,
+        DummyAbilityOrderId = OrderId("roar")
+      };
+      SpellSystem.Register(earthProtectionHero);
+
+
       var massEnsnare = new MassAnySpell(ABILITY_A01N_MASS_ENSNARE_SKYWALL)
       {
         DummyAbilityId = ABILITY_A01V_MASS_ENSNARE_SKYWALL_DUMMY,
         DummyAbilityOrderId = OrderId("ensnare"),
-        Radius = 150,
-        Chance = 0.5f,
+        Radius = 250,
+        Chance = 0.75f,
         CastFilter = CastFilters.IsTargetEnemyAndAlive,
         TargetType = SpellTargetType.Point
       };

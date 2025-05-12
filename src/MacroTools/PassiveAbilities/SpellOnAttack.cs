@@ -1,7 +1,9 @@
 ﻿using MacroTools.DummyCasters;
+using static War3Api.Common;
+using System.Collections.Generic;
+using static MacroTools.Libraries.UnitEventSystem;
 using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
-using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
 {
@@ -14,7 +16,7 @@ namespace MacroTools.PassiveAbilities
     /// The unit type ID which has this <see cref="PassiveAbility"/> should also have an ability with this ID.
     /// </summary>
     public int AbilityTypeId { get; }
-    
+
     /// <summary>
     /// The dummy spell to cast on attack.
     /// </summary>
@@ -24,12 +26,25 @@ namespace MacroTools.PassiveAbilities
     /// An order ID that can be used to cast the specified dummy ability.
     /// </summary>
     public int DummyOrderId { get; init; }
-    
+
     /// <summary>
     /// The percentage chance that the effect will occur on attack.
     /// </summary>
     public float ProcChance { get; init; }
-    
+
+    /// <summary>
+    /// The cooldown in seconds for the effect.
+    /// </summary>
+    public float Cooldown { get; init; } = 0f;
+
+    /// <summary>
+    /// The player must have this research for the ability to take effect.
+    /// </summary>
+    public int RequiredResearch { get; init; }
+
+    // Tracks cooldown timers for each target
+    private readonly Dictionary<int, timer> _targetCooldowns = new Dictionary<int, timer>();
+
     /// <summary>
     /// Initializes a new instance of the <see cref="SpellOnAttack"/> class.
     /// </summary>
@@ -39,29 +54,65 @@ namespace MacroTools.PassiveAbilities
     {
       AbilityTypeId = abilityTypeId;
     }
-    /// <summary>
-    /// The player must have this research for the ability to take effect.
-    /// </summary>
-    public int RequiredResearch { get; init; }
 
     /// <inheritdoc />
     public void OnDealsDamage()
     {
+      // Ensure this is a normal attack
       if (!BlzGetEventIsAttack())
         return;
 
       var caster = GetEventDamageSource();
       var target = GetTriggerUnit();
-      if(RequiredResearch != 0)
-        if (GetPlayerTechCount(caster.OwningPlayer(), RequiredResearch, false) == 0)
-          return;
-      if (GetRandomReal(0, 1) < ProcChance)
-      {
-        DoSpellOnTarget(caster, target);
-      }
+
+      // Check research requirement
+      if (RequiredResearch != 0 &&
+          GetPlayerTechCount(caster.OwningPlayer(), RequiredResearch, false) == 0)
+        return;
+
+      // Check if target is on cooldown
+      var targetId = GetHandleId(target);
+      if (Cooldown > 0 && _targetCooldowns.ContainsKey(targetId))
+        return;
+
+      // Random chance check
+      if (GetRandomReal(0, 1) >= ProcChance)
+        return;
+
+      // Trigger the effect
+      DoSpellOnTarget(caster, target);
+
+      // Start cooldown timer
+      if (Cooldown > 0)
+        StartCooldownTimer(targetId, target);
     }
-    
-    private void DoSpellOnTarget(unit caster, unit target) => DummyCasterManager.GetGlobalDummyCaster().CastUnit(caster, DummyAbilityId,
-      DummyOrderId, GetUnitAbilityLevel(caster, AbilityTypeId), target, DummyCastOriginType.Caster);
+
+    private void StartCooldownTimer(int targetId, unit target)
+    {
+      var timer = CreateTimer();
+      _targetCooldowns[targetId] = timer;
+
+      // Set timer expiration action
+      TimerStart(timer, Cooldown, false, () => {
+        _targetCooldowns.Remove(targetId);
+        DestroyTimer(timer);
+      });
+
+      // Register unit death event to clean up timer when unit dies
+      RegisterDeathEvent(target, () => {
+        if (_targetCooldowns.TryGetValue(targetId, out var activeTimer))
+        {
+          PauseTimer(activeTimer);
+          DestroyTimer(activeTimer);
+          _targetCooldowns.Remove(targetId);
+        }
+      });
+    }
+
+    private void DoSpellOnTarget(unit caster, unit target) =>
+        DummyCasterManager.GetGlobalDummyCaster().CastUnit(
+            caster, DummyAbilityId, DummyOrderId,
+            GetUnitAbilityLevel(caster, AbilityTypeId),
+            target, DummyCastOriginType.Caster);
   }
 }

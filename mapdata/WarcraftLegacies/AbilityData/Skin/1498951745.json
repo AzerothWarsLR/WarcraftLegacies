@@ -1,0 +1,45 @@
+{
+  "OldId": 1634693697,
+  "NewId": 1498951745,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Hero dummy)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases the armor of Elemental Lords within 800 by 20 and their health regeneration speed by 30.|n|cffffcc00Lasts 15 seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Earth Protection"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Earth Protection"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNEarthOrb.blp"
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Undead\\ImpaleTargetDust\\ImpaleTargetDust.mdl"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    }
+  ]
+}
