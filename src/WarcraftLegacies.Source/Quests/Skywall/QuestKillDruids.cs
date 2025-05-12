@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Quests.Skywall
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      $"Harness the magical essence of Nordrassil to empower your forces. The training limit of {GetObjectName(Constants.UNIT_U02P_DJINN_ELEMENTAL)}'s and {GetObjectName(Constants.UNIT_LS06_EFREET_ELEMENTAL)}'s is increased from 4 to 6.";
+      $"Harness the magical essence of Nordrassil to empower your forces and unlocks the {GetObjectName(Constants.ABILITY_A0Y6_WATER_PRISON_ELEMENTAL_LORD)} for {GetObjectName(Constants.UNIT_N08S_ELEMENTAL_LORD_ELEMENTAL)}. The training limit of {GetObjectName(Constants.UNIT_U02P_DJINN_ELEMENTAL)}'s and {GetObjectName(Constants.UNIT_LS06_EFREET_ELEMENTAL)}'s is increased from 4 to 6.";
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestKillDruids"/> class.

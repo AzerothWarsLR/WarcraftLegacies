@@ -13,12 +13,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Armored mistral)"
-    },
-    {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Storm Surge"
+      "Value": "(Elemental Lord)"
     },
     {
       "Id": 1918988897,
@@ -37,24 +32,24 @@
     },
     {
       "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Elemental Lord releases a burst of energy, dealing 50 damage to nearby enemy land units and purging them for 3 seconds."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Level": 1,
       "Id": 829453409,
       "Type": 3,
       "Value": "Storm Surge"
     },
     {
-      "Level": 1,
-      "Id": 828536161,
+      "Id": 1835101793,
       "Type": 3,
-      "Value": "The Mistral releases a burst of energy, dealing 60 damage to nearby enemy land units and purging them for 3 seconds."
-    },
-    {
-      "Id": 2037082209,
-      "Type": 3,
-      "Value": "Q"
-    },
-    {
-      "Id": 2020631137,
-      "Value": 0
+      "Value": "Storm Surge"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "OldId": 1869759297,
+  "OldId": 1685547073,
   "NewId": 1381445697,
   "Unk": [
     0
@@ -8,7 +8,29 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Throne Guard)"
+      "Value": "(Skywall)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons an enchanted ward that empowers nearby allies, increasing the movement speed of one friendly unit by 10% and their attack speed by 20% every 1.5 seconds. While the ward exists, all Elemental Lords gain 40% evasion and slows nearby enemy units movement speed by 15%.The ward itself has 30% evasion.|nLasts 45 seconds.|n|n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Ward of Gale"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Ward of Gale"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWindOrb.blp"
     },
     {
       "Id": 2037082209,
@@ -16,31 +38,13 @@
       "Value": "Q"
     },
     {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Aegis of Lordaeron"
+      "Id": 2020631137,
+      "Value": 0
     },
     {
-      "Id": 1953653089,
+      "Id": 1952540001,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNMagocracy.blp"
-    },
-    {
-      "Id": 1952539489,
-      "Type": 3,
-      "Value": "Abilities\\Spells\\Items\\AIda\\AIdaCaster.mdl"
-    },
-    {
-      "Level": 1,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "Increase the defense of nearby heroes by \u003CA0WR,DataB1\u003E. |nLasts \u003CA0WR,Dur1\u003E seconds."
-    },
-    {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Aegis of Lordaeron"
+      "Value": "Wind Blast.mdx"
     }
   ]
 }
