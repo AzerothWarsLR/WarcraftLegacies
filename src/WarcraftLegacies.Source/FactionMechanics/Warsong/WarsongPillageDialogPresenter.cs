@@ -26,13 +26,13 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
       }
       _rewardsGranted = true;
 
-      // Handle the Pillage choice
+ 
       if (choice.Type == PillageChoiceType.Pillage)
       {
         HandlePillageChoice(pickingPlayer, choice);
       }
 
-      // Handle the Subdue choice
+
       else if (choice.Type == PillageChoiceType.Subdue)
       {
         HandleSubdueChoice(pickingPlayer, choice);
@@ -41,7 +41,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
 
     private void HandlePillageChoice(player pickingPlayer, WarsongPillageChoice choice)
     {
-      // Rewards for choosing Pillage
+   
       pickingPlayer.AddGold(choice.GoldReward);
 
       var heroes = GlobalGroup.EnumUnitsOfPlayer(pickingPlayer)
@@ -56,13 +56,13 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
         switch (heroCount)
         {
           case 1:
-            multiplier = 0.50; 
+            multiplier = 0.50;
             break;
           case 2:
-            multiplier = 0.75; 
+            multiplier = 0.75;
             break;
           default:
-            multiplier = 1.0; 
+            multiplier = 1.0;
             break;
         }
 
@@ -73,7 +73,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
         }
       }
 
-      // Grant artifact if applicable
+
       if (choice.ArtifactRewardItemType.HasValue && _grom != null)
       {
         var artifactItem = CreateItem(
@@ -84,7 +84,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
         UnitAddItem(_grom, artifactItem);
       }
 
-      // Enable research rewards if applicable
+
       if (choice.ResearchReward > 0)
       {
         var faction = FactionManager.GetAllFactions()
@@ -97,7 +97,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
         }
       }
 
-      // Adjust structures in the regions
+
       foreach (var unit in GlobalGroup.EnumUnitsInRect(choice.Location)
                  .Where(unit => IsUnitType(unit, UNIT_TYPE_STRUCTURE) &&
                                 (unit.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) ||
@@ -127,20 +127,26 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
             unit.PauseEx(false);
           }
 
-          // Replace units based on Subdue choice
-          ReplaceUnitsForSubdue(faction);
+ 
+          if (choice.UnitUpgrade != null)
+          {
+            ApplyUnitUpgrade(faction, choice.UnitUpgrade);
+          }
         }
       }
     }
 
-    private void ReplaceUnitsForSubdue(Faction faction)
+    private void ApplyUnitUpgrade(Faction faction, UnitUpgrade upgrade)
     {
-      // Disable Orc Headhunters and enable Axe Throwers for Subdue
-      const int UNIT_O071_ORC_HEADHUNTER_WARSONG = Constants.UNIT_O071_ORC_HEADHUNTER_WARSONG; // Replace with actual constants
-      const int UNIT_OTBK_AXE_THROWER_WARSONG = Constants.UNIT_OTBK_AXE_THROWER_WARSONG;       // Replace with actual constants
+      if (upgrade.RemoveUnit != 0)
+      {
+        faction.ModObjectLimit(upgrade.RemoveUnit, -Faction.UNLIMITED); 
+      }
 
-      faction.ModObjectLimit(UNIT_O071_ORC_HEADHUNTER_WARSONG, -Faction.UNLIMITED); // Remove Orc Headhunters
-      faction.ModObjectLimit(UNIT_OTBK_AXE_THROWER_WARSONG, Faction.UNLIMITED);    // Enable Axe Throwers
+      if (upgrade.AddUnit != 0)
+      {
+        faction.ModObjectLimit(upgrade.AddUnit, Faction.UNLIMITED); 
+      }
     }
 
     protected override WarsongPillageChoice GetDefaultChoice(player whichPlayer)

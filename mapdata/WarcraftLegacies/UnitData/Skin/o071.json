@@ -23,22 +23,22 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1
+      "Value": 0.85
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Powerful yet agile troll hunters. "
+      "Value": "Powerful troll hunters."
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Orc Headhunter"
+      "Value": "Darkspear Berserker"
     },
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Train Axe Thrower"
+      "Value": "Train Darkspear Berserker"
     },
     {
       "Id": 1831952757,

@@ -23,8 +23,9 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     private const int SubdueResearchReward = Constants.UPGRADE_R00K_SUBDUE_THE_DARKSPEAR_TROLLS;
     private const int PillageResearchReward = Constants.UPGRADE_R01E_QUEST_COMPLETED_TO_BREAK_OR_BIND;
 
-    private const int UNIT_O071_ORC_HEADHUNTER_WARSONG = Constants.UNIT_O071_ORC_HEADHUNTER_WARSONG;
-    private const int UNIT_OTBK_AXE_THROWER_WARSONG = Constants.UNIT_OTBK_AXE_THROWER_WARSONG;
+    // Unit constants for Subdue
+    private const int SubdueRemoveUnit = Constants.UNIT_OTBK_AXE_THROWER_WARSONG;
+    private const int SubdueAddUnit = Constants.UNIT_O071_DARKSPEAR_BERSERKER_WARSONG;
 
     public QuestSubdueTrolls(Rectangle rescueRect, LegendWarsong legendWarsong, LegendaryHero grom)
       : base(
@@ -46,7 +47,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       "The Darkspear Trolls have been brought to heel.";
 
     protected override string RewardDescription =>
-      $"Gain control of Echo Isles, {GetObjectName(UNIT_O071_ORC_HEADHUNTER_WARSONG)}s are upgraded to {GetObjectName(UNIT_OTBK_AXE_THROWER_WARSONG)}s and unlock the ability to train powerful spellcasters like {GetObjectName(UNIT_NOGN_WARLOCK_WARSONG)}s. Alternatively, earn {PillageGoldReward} gold and up to {PillageExperienceReward} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives. Additionally, enhance both {GetObjectName(UNIT_O00G_BLADEMASTER_WARSONG)}s' and {GetObjectName(UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE)}s' maximum mana by 250 and mana regeneration by 20%.";
+      $"Gain control of Echo Isles, {GetObjectName(SubdueRemoveUnit)}s are upgraded to {GetObjectName(SubdueAddUnit)}s and unlock the ability to train powerful spellcasters like {GetObjectName(Constants.UNIT_NOGN_WARLOCK_WARSONG)}s. Alternatively, earn {PillageGoldReward} gold and up to {PillageExperienceReward} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives. Additionally, enhance both {GetObjectName(Constants.UNIT_O00G_BLADEMASTER_WARSONG)}s' and {GetObjectName(Constants.UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE)}s' maximum mana by 250 and mana regeneration by 20%.";
 
     protected override void OnComplete(Faction completingFaction)
     {
@@ -68,8 +69,8 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         return;
       }
 
-      // Create dialog with Pillage and Subdue options
-      var dialogPresenter = new WarsongPillageDialogPresenter(
+      // Pass unit upgrade for Subdue to dynamically replace units
+      new WarsongPillageDialogPresenter(
         gromUnit,
         new WarsongPillageChoice(
           PillageChoiceType.Pillage,
@@ -85,28 +86,11 @@ namespace WarcraftLegacies.Source.Quests.Warsong
           Regions.EchoUnlock,
           0,
           0,
-          SubdueResearchReward
+          SubdueResearchReward,
+          artifactRewardItemType: null,
+          unitUpgrade: new UnitUpgrade(SubdueRemoveUnit, SubdueAddUnit)
         )
-      );
-
-      // Subscribe to the OnChoiceMade event
-      dialogPresenter.OnChoiceMade += (choiceType) =>
-      {
-        if (choiceType == PillageChoiceType.Subdue)
-        {
-          // Apply unit replacement logic when "Subdue" is chosen
-          completingFaction.ModObjectLimit(UNIT_O071_ORC_HEADHUNTER_WARSONG, -Faction.UNLIMITED); // Disable Orc Headhunters
-          completingFaction.ModObjectLimit(UNIT_OTBK_AXE_THROWER_WARSONG, Faction.UNLIMITED);    // Enable Axe Throwers
-        }
-        else if (choiceType == PillageChoiceType.Pillage)
-        {
-          // No changes to unit limits for the "Pillage" option
-          Console.WriteLine("Pillage was chosen—no unit replacements performed.");
-        }
-      };
-
-      // Run the dialog presenter
-      dialogPresenter.Run(completingFaction.Player);
+      ).Run(completingFaction.Player);
     }
 
     protected override void OnFail(Faction completingFaction)
