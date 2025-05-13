@@ -120,17 +120,7 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
       };
       PassiveAbilityManager.Register(purgeAttack);
 
-      var stormSurge = new Stomp(ABILITY_AESS_STORM_SURGE_ELEMENTAL_LORD)
-      {
-        Radius = 400,
-        DamageBase = 50,
-        DurationBase = 3,
-        StunAbilityId = ABILITY_AEPU_PURGE_SHOCKING_BLADE,
-        StunOrderId = OrderId("purge"),
-        SpecialEffect = @"war3mapImported\Cyclon Explosion.mdx"
-      };
-      SpellSystem.Register(stormSurge);
-
+      
       var waterPrison = new SpellOnAttack(UNIT_N08S_ELEMENTAL_LORD_ELEMENTAL,
         ABILITY_A0Y6_WATER_PRISON_ELEMENTAL_LORD)
       {
@@ -148,6 +138,20 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
         DummyAbilityOrderId = OrderId("roar")
       };
       SpellSystem.Register(earthProtectionHero);
+      
+      var stormSurge = new MassAnySpellAndDamage(ABILITY_A0YV_STORM_SURGE_SKYWALL)
+      {
+        DummyAbilityId = ABILITY_A0Z1_STORM_SURGE_DUMMY, 
+        DummyAbilityOrderId = OrderId("purge"),         
+        Radius = 200,
+        DamageBase = 30,
+        DamageLevel = 20,
+        DurationBase = 2,
+        DurationLevel = 1,
+        TargetType = SpellTargetType.Point,
+        CastFilter = CastFilters.IsTargetEnemyAndAlive
+      };
+      SpellSystem.Register(stormSurge);
 
 
       var massEnsnare = new MassAnySpell(ABILITY_A01N_MASS_ENSNARE_SKYWALL)
