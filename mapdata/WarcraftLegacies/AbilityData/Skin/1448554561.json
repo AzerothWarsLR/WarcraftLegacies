@@ -1,63 +1,28 @@
 {
-  "OldId": 1718772289,
+  "OldId": 1936016193,
   "NewId": 1448554561,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1953653089,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodelf_Arcane_Annihilator.blp"
+      "Id": 2037408353,
+      "Value": -11
     },
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Arcane Annihilator Quelthalas)"
-    },
-    {
-      "Id": 2037082209,
-      "Type": 3,
-      "Value": "R"
-    },
-    {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Siege Mode"
-    },
-    {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Siege Mode"
+      "Value": "(Skywall dummy)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Immobilizes the Arcane Annihilator to grant it a powerful ranged attack."
+      "Value": "Gives a \u003CA0NN,DataA1,%\u003E% percent chance to avoid an attack."
     },
     {
-      "Id": 1918989665,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNBloodelf_Arcane_Annihilator.blp"
-    },
-    {
-      "Id": 1802007905,
-      "Type": 3,
-      "Value": "R"
-    },
-    {
-      "Level": 1,
-      "Id": 829715809,
-      "Type": 3,
-      "Value": "Mobile Form"
-    },
-    {
-      "Level": 1,
-      "Id": 829781345,
-      "Type": 3,
-      "Value": "Allows the Arcane Annihilator to move again."
+      "Id": 2020631137,
+      "Value": 0
     }
   ]
 }

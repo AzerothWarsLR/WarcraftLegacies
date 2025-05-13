@@ -45,11 +45,6 @@
       "Value": "W"
     },
     {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Mass Ensnare"
-    },
-    {
       "Id": 1918988897,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNMassFrostArmor.blp"
@@ -106,7 +101,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Each enemy air unit in a target area has a 50% chance to be bound to the ground for \u003CA0F3,Dur1\u003E seconds. Air units that are successfully ensnared can be attacked as though they were land units."
+      "Value": "Each enemy air unit in a target area has a 75% chance to be bound to the ground for \u003CA0F3,Dur1\u003E seconds. Air units that are successfully ensnared can be attacked as though they were land units."
     },
     {
       "Level": 2,
@@ -129,6 +124,11 @@
     {
       "Id": 2020631137,
       "Value": 0
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Mass Ensnare"
     }
   ]
 }
