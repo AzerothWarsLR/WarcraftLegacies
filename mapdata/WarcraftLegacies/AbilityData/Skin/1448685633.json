@@ -1,0 +1,50 @@
+{
+  "OldId": 1970291521,
+  "NewId": 1448685633,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Purge (|cffffcc00Q|r)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Storm Surge"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Dummy)"
+    },
+    {
+      "Id": 1952543585,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Purge\\PurgeBuffTarget.mdl"
+    },
+    {
+      "Id": 1953526625,
+      "Type": 3,
+      "Value": "origin"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Purge\\PurgeBuffTarget.mdl"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Orc\\Purge\\PurgeBuffTarget.mdl"
+    }
+  ]
+}

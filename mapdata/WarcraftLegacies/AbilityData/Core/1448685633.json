@@ -1,0 +1,56 @@
+{
+  "OldId": 1970291521,
+  "NewId": 1448685633,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862417488,
+      "Type": 2,
+      "Value": 300
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 9999
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "alive,enemies,ground,organic,ward"
+    },
+    {
+      "Id": 1869770593,
+      "Type": 3,
+      "Value": "purge"
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 0
+    }
+  ]
+}

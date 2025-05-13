@@ -110,7 +110,7 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
     private void RegisterSpells()
     {
 
-      var purgeAttack = new SpellOnAttack(UNIT_O01I_ANIMATED_ARMOR_ELEMENTAL,
+      var purgeAttack = new SpellOnAttack(UNIT_N08S_ELEMENTAL_LORD_ELEMENTAL,
         ABILITY_AELP_SHOCKING_BLADES_ANIMATED_ARMOR)
       {
         DummyAbilityId = ABILITY_AEPU_PURGE_SHOCKING_BLADE,
@@ -120,24 +120,29 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
       };
       PassiveAbilityManager.Register(purgeAttack);
 
-      var stormSurge = new Stomp(ABILITY_AESS_STORM_SURGE_ELEMENTAL_LORD)
+      var stormSurge = new MassAnySpellAndDamage(ABILITY_A0YT_STORM_SURGE_SKYWALL)
       {
-        Radius = 400,
+        DummyAbilityId = ABILITY_A0YV_STORM_SURGE_DUMMY, 
+        DummyAbilityOrderId = OrderId("purge"),         
+        Radius = 250,
         DamageBase = 50,
+        DamageLevel = 20,
         DurationBase = 3,
-        StunAbilityId = ABILITY_AEPU_PURGE_SHOCKING_BLADE,
-        StunOrderId = OrderId("purge"),
-        SpecialEffect = @"war3mapImported\Cyclon Explosion.mdx"
+        DurationLevel = 1,
+        TargetType = SpellTargetType.Point,
+        CastFilter = CastFilters.IsTargetEnemyAndAlive
       };
       SpellSystem.Register(stormSurge);
+
+
 
       var waterPrison = new SpellOnAttack(UNIT_N08S_ELEMENTAL_LORD_ELEMENTAL,
         ABILITY_A0Y6_WATER_PRISON_ELEMENTAL_LORD)
       {
         DummyAbilityId = ABILITY_A0Y0_WATER_PRISON_REAL,
         DummyOrderId = OrderId("entanglingroots"),
-        ProcChance = 0.3f,
-        Cooldown = 10f,
+        ProcChance = 0.15f,
+        Cooldown = 8f,
         RequiredResearch = UPGRADE_RSW3_QUEST_COMPLETED_SUBDUING_NEPTULON
       };
       PassiveAbilityManager.Register(waterPrison);
