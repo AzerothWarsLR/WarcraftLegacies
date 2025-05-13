@@ -1,6 +1,6 @@
 {
   "OldId": 1970431855,
-  "NewId": 842477679,
+  "NewId": 859254895,
   "Unk": [
     0
   ],
@@ -23,27 +23,32 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.95
+      "Value": 0.9
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Pride of the Warsong Clan, warrior of Honor."
+      "Value": "Pride unshaken, battle-forged, and bound by the blood and fury of the Warsong."
     },
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Kor\u0027kron Vanguard"
+      "Value": "Mok\u0027Nathal Warrior"
     },
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "war3mapImported/GruntAlternateBV2.mdl"
+      "Value": "war3mapImported/WarsongGruntV2.mdl"
     },
     {
       "Id": 1868786037,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNOrcGrunt.BLP"
+      "Value": "ReplaceableTextures/CommandButtons/BTNBlackrockGrunt.blp"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Mok\u0027Nathal Warrior"
     }
   ]
 }

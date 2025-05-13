@@ -1,0 +1,50 @@
+{
+  "OldId": 1634693697,
+  "NewId": 1415131201,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Lordaeron)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases the defense of nearby player owned heroes by \u003CA0YT,DataB1\u003E.|n|cffffcc00Lasts \u003CA0YT,DataDur1\u003E seconds."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Aegis of Lordaeron"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Aegis of Lordaeron\r\n"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNMagocracy.blp"
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\AIda\\AIdaCaster.mdl"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    }
+  ]
+}
