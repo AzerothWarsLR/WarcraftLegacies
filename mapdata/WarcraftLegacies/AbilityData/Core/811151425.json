@@ -19,9 +19,20 @@
     },
     {
       "Level": 1,
+<<<<<<<< HEAD:mapdata/WarcraftLegacies/AbilityData/Core/811151425.json
       "Id": 1918989409,
       "Type": 3,
       "Value": "enemies,ground,neutral,organic"
+========
+      "Id": 1935895905,
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 845510472,
+      "Value": 0
+>>>>>>>> dev:mapdata/WarcraftLegacies/AbilityData/Core/1397966145.json
     },
     {
       "Level": 1,
