@@ -66,10 +66,12 @@ Name=A tier 1 hall
 [TWN2]
 DependencyOr=h08O,hcas,ofrt,unp2,etoe,h066,hkee,ostr,etoa,unp1,h023,h064,h07Y,h07F,h03S,h06M,h046,h000,h06I,h02C,h07Z,h06N,h07G,h04I,h068,h03T,h003,h00X,h01G,h02V,h001,h002,h030,o03M,o03Y,o02Z,o03A,o02R,o00F,o00V,o03N,o03Z,o030,o03B,o02S,o00K,o008,o01B,o00J,h08S,h08B,h08A
 Name=A tier 2 hall
+XPFactor=0.00,0
 
 [TWN3]
 DependencyOr=ofrt,h046,h000,h02C,h06I,hcas,h07Z,h06N,h07G,h04I,h068,h03T,h003,h00X,h01G,h02V,h001,h002,h030,o00F,o00V,o03N,o03Z,o030,o02S,o03B,o00K,o01B,o008,o00J,h08S,h08B,unp2,u022,u00N,u000,u00G,u01Q,u012,e00M,etoe,n002,o029,n06P
 Name=A tier 3 hall or Capital
+XPFactor=0.00,0
 
 [TWN4]
 Name=Researched Tier 4 at a tier 3 hall
