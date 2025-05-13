@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     private const int SubdueResearchReward = UPGRADE_R012_SUBDUE_THE_STONEMAUL_OGRES;
     private const int PillageResearchReward = UPGRADE_R01U_PILLAGE_STONEMAUL;
     private const int SubdueRemoveUnit = UNIT_O02M_WARSONG_GRUNT_WARSONG;
-    private const int SubdueAddUnit = UNIT_O02A_MOK_NATHAL_WARRIOR_WARSONG;
+    private const int SubdueAddUnit = UNIT_O02M_WARSONG_GRUNT_WARSONG;
 
     public QuestSubdueOgres(Rectangle rescueRect, LegendWarsong legendWarsong, LegendaryHero grom)
       : base(
