@@ -21,7 +21,7 @@ public sealed class ImportedModelTests : IClassFixture<MapTestFixture>
   {
     var excludedModels = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
     {
-      "OrbOfWind.mdx",
+      "war3mapimported\\orbofwind.mdx",
     };
     
     if (excludedModels.Contains(relativePath))
