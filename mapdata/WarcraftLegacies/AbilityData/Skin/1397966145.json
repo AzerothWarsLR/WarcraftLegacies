@@ -1,0 +1,55 @@
+{
+  "OldId": 1702316097,
+  "NewId": 1397966145,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNShockStorm3.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Elemental Lord)"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWarStomp.blp"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn War Stomp - [|cffffcc00Level %d|r]."
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Slams the ground, stunning and damaging nearby enemy land units. |n|n|cffffcc00Level 1|r - \u003CAOw2,DataA1\u003E damage, \u003CAOw2,Dur1\u003E second stun. |n|cffffcc00Level 2|r - \u003CAOw2,DataA2\u003E damage, \u003CAOw2,Dur2\u003E second stun. |n|cffffcc00Level 3|r - \u003CAOw2,DataA3\u003E damage, \u003CAOw2,Dur3\u003E second stun. |n|cffffcc00Level 4|r - \u003CAOw2,DataA4\u003E damage, \u003CAOw2,Dur4\u003E second stun."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Elemental Lord releases a burst of energy, dealing 50 damage to nearby enemy land units and purging them for 3 seconds."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Storm Surge"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Storm Surge"
+    }
+  ]
+}
