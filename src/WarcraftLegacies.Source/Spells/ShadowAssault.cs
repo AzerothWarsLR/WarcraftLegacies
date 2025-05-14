@@ -10,8 +10,8 @@ namespace WarcraftLegacies.Source.Spells
   public sealed class ShadowAssaultSpell : Spell
   {
     // Basic spell attributes
-    public float BaseDamage { get; init; } = 80;
-    public float DamagePerLevel { get; init; } = 40;
+    public float BaseDamage { get; init; }
+    public float DamagePerLevel { get; init; }
     public float ChargeSpeed { get; init; } = 1500; // Charge movement speed
     public float MaxChargeDistance { get; init; } = 1800; // Maximum charge distance
 
@@ -138,15 +138,15 @@ namespace WarcraftLegacies.Source.Spells
       var currentHp = GetUnitState(target, UNIT_STATE_LIFE);
       var maxHp = BlzGetUnitMaxHP(target);
 
-      // Return true if target's HP is below threshold
+      // Return true if target's HP is below threshold (without adding 1)
       return currentHp < maxHp * threshold;
     }
 
     private void ExecuteTarget(unit caster, unit target)
     {
-      // Deal remaining damage to execute target
+
       var currentHp = GetUnitState(target, UNIT_STATE_LIFE);
-      UnitDamageTarget(caster, target, currentHp, true, false,
+      UnitDamageTarget(caster, target, currentHp + 500, true, false,
           ATTACK_TYPE_NORMAL, DAMAGE_TYPE_MAGIC, WEAPON_TYPE_WHOKNOWS);
 
       // Play execute effect
