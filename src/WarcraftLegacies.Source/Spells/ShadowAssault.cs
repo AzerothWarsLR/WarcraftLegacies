@@ -1,10 +1,9 @@
 ﻿using MacroTools.Libraries;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
-using WCSharp.Buffs;
 using MacroTools.DummyCasters;
 using MacroTools.Extensions;
+using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.Spells
 {
