@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
@@ -11,37 +12,49 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Cthun
 {
-  /// <summary>
-  /// Kill some constructs to gain cthun and the inner temple base.
-  /// </summary>
   public sealed class QuestTitanJailors : QuestData
   {
     private readonly AllLegendSetup _allLegendSetup;
     private readonly List<unit> _rescueUnits;
+    private readonly List<unit> _blockerUnits;
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="QuestTitanJailors"/> class.
-    /// </summary>
-    public QuestTitanJailors(AllLegendSetup allLegendSetup, Rectangle rescueRect) : base("Titan Jailors",
-      "C'thun is currently watched by a Titan Construct, we must rid the temple of hostiles and destroy the Titan to free our god.",
-      @"ReplaceableTextures\CommandButtons\BTNArmorGolem.blp")
+    public QuestTitanJailors(AllLegendSetup allLegendSetup, Rectangle rescueRect, Rectangle blockersRect) 
+      : base("Titan Jailors",
+        "C'thun is currently watched by a Titan Construct, we must rid the temple of hostiles and destroy the Titan to free our god.",
+        @"ReplaceableTextures\CommandButtons\BTNArmorGolem.blp")
     {
       AddObjective(new ObjectiveControlPoint(UNIT_NLSE_TEMPLE_OF_AHN_QIRAJ, 1500));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
+
       _allLegendSetup = allLegendSetup;
+
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+
+      var unitsInBlockers = GlobalGroup.EnumUnitsInRect(blockersRect)
+          .Where(unit => unit.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE))
+          .ToList();
+
+      foreach (var unit in unitsInBlockers)
+      {
+        unit.SetInvulnerable(true);
+        unit.PauseEx(true);
+      }
+
+      _blockerUnits = unitsInBlockers;
     }
 
-    /// <inheritdoc />
     public override string RewardFlavour => "With the Titan Construct defeat, C'thun is now free";
 
-    /// <inheritdoc />
     protected override string RewardDescription => "Control of all units in inner Ahn'Qiraj and gain control of C'thun";
 
-    /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
+      foreach (var unit in _blockerUnits)
+      {
+        unit.Remove();
+      }
+
       var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
         ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
         : completingFaction.Player;
@@ -49,13 +62,42 @@ namespace WarcraftLegacies.Source.Quests.Cthun
       rescuer.RescueGroup(_rescueUnits);
     }
 
-    /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
+      foreach (var unit in _blockerUnits)
+      {
+        unit.Remove();
+      }
+
       completingFaction.Player.RescueGroup(_rescueUnits);
+
       var cthun = _allLegendSetup.Ahnqiraj.Cthun.Unit;
       if (cthun != null)
+      {
         PassiveAbilityManager.ForceOnCreated(cthun);
+      }
+    }
+  }
+
+  public static class GlobalGroup
+  {
+    public static IEnumerable<unit> EnumUnitsInRect(Rectangle rect)
+    {
+      var units = new List<unit>();
+      var group = CreateGroup();
+
+      GroupEnumUnitsInRect(group, rect.Rect, null);
+      unit u = FirstOfGroup(group);
+      
+      while (u != null)
+      {
+        units.Add(u);
+        GroupRemoveUnit(group, u);
+        u = FirstOfGroup(group);
+      }
+
+      DestroyGroup(group);
+      return units;
     }
   }
 }

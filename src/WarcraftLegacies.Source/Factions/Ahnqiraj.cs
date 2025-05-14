@@ -63,7 +63,7 @@ You do not possess boats, but your workers can burrow through water, use them to
 
     private void RegisterQuests()
     {
-      var newQuest = AddQuest(new QuestTitanJailors(_allLegendSetup, Regions.QirajInsideUnlock));
+      var newQuest = AddQuest(new QuestTitanJailors(_allLegendSetup, Regions.QirajInsideUnlock, Regions.AQ_Blockers));
       StartingQuest = newQuest;
       AddQuest(new QuestRebuildAhnqiraj(Regions.QirajOutsideUnlock, _gateAhnQiraj));
       AddQuest(new QuestSlitheringForward(Regions.QirajOutpost1, Regions.QirajOutpost2, Regions.QirajOutpost3));
