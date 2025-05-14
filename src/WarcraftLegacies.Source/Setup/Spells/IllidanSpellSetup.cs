@@ -3,7 +3,6 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
 
-
 namespace WarcraftLegacies.Source.Setup.Spells
 {
   /// <summary>
@@ -26,9 +25,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
                 UNIT_E00G_DEMON_HUNTER_EVIL_MORPHED_LEVEL_3,
                 UNIT_E00E_DEMON_HUNTER_MORPHED_LEVEL_2,
                 UNIT_E00D_DEMON_HUNTER_MORPHED_LEVEL_3
-            };
+      };
 
-      // 修复：恢复缩进级别，与上面的代码块保持一致
       var warglaivesOfAzzinoth = new WarglaivesOfAzzinoth(illidanVariations,
           ABILITY_A0YW_WARGLAIVES_OF_AZZINOTH_GREEN_LIGHT_BLUE_ILLIDAN)
       {
