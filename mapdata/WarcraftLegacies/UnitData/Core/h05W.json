@@ -13,7 +13,7 @@
     {
       "Id": 1819239285,
       "Type": 2,
-      "Value": 100
+      "Value": 80
     },
     {
       "Id": 1717920885,
@@ -46,11 +46,6 @@
       "Value": "unwalkable"
     },
     {
-      "Id": 1919969397,
-      "Type": 2,
-      "Value": -15
-    },
-    {
       "Id": 1953654901,
       "Type": 3,
       "Value": "always"
@@ -76,11 +71,16 @@
     },
     {
       "Id": 1836083317,
-      "Value": 400
+      "Value": 500000
     },
     {
       "Id": 1836412021,
       "Value": 0
+    },
+    {
+      "Id": 1952542837,
+      "Type": 3,
+      "Value": "PathTextures\\StoneWall3Path.tga"
     }
   ]
 }

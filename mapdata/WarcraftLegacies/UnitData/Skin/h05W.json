@@ -18,7 +18,7 @@
     {
       "Id": 1818520949,
       "Type": 3,
-      "Value": "Objects\\Spawnmodels\\Other\\FlameThrower\\FlameThrowerSpawnObj.mdl"
+      "Value": "Doodads\\Dungeon\\Props\\Forcewall45\\Forcewall45.mdl"
     },
     {
       "Id": 1835101813,
@@ -33,7 +33,7 @@
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 1.5
+      "Value": 1.2
     }
   ]
 }

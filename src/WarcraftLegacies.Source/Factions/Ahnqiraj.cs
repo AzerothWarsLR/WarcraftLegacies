@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+
 using MacroTools.Data;
 using MacroTools.FactionSystem;
 using MacroTools.PassiveAbilities;
@@ -63,7 +64,7 @@ You do not possess boats, but your workers can burrow through water, use them to
 
     private void RegisterQuests()
     {
-      var newQuest = AddQuest(new QuestTitanJailors(_allLegendSetup, Regions.QirajInsideUnlock, Regions.AQ_Blockers));
+      var newQuest = AddQuest(new QuestTitanJailors(_allLegendSetup, Regions.QirajInsideUnlock));
       StartingQuest = newQuest;
       AddQuest(new QuestRebuildAhnqiraj(Regions.QirajOutsideUnlock, _gateAhnQiraj));
       AddQuest(new QuestSlitheringForward(Regions.QirajOutpost1, Regions.QirajOutpost2, Regions.QirajOutpost3));
