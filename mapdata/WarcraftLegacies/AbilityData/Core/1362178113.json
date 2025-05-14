@@ -27,7 +27,7 @@
       "Level": 4,
       "Id": 1701994849,
       "Type": 2,
-      "Value": 1000
+      "Value": 250
     },
     {
       "Level": 1,
@@ -51,7 +51,7 @@
       "Level": 4,
       "Id": 1718968929,
       "Type": 3,
-      "Value": "B02Q"
+      "Value": "B04G"
     },
     {
       "Level": 1,
@@ -79,7 +79,7 @@
       "Pointer": 1,
       "Id": 828596547,
       "Type": 2,
-      "Value": -0.25
+      "Value": -0.75
     },
     {
       "Level": 2,
@@ -123,7 +123,7 @@
     },
     {
       "Id": 1986358369,
-      "Value": 3
+      "Value": 4
     },
     {
       "Level": 1,
@@ -150,12 +150,8 @@
       "Value": "air,enemies,ground,vulnerable"
     },
     {
-      "Id": 1802726497,
-      "Value": 5
-    },
-    {
       "Id": 1986818657,
-      "Value": 10
+      "Value": 1
     }
   ]
 }

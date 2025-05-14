@@ -1,6 +1,7 @@
 ﻿using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.SpellSystem;
+using WarcraftLegacies.Source.Spells;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -16,18 +17,18 @@ namespace WarcraftLegacies.Source.Setup.Spells
     {
       var illidanVariations = new[]
       {
-        UNIT_EILL_THE_BETRAYER_ILLIDARI,
-        FourCC("Eidm"),
-        UNIT_EEVM_DEMON_HUNTER_EVIL_MORPHED,
-        UNIT_EILM_DEMON_HUNTER,
-        UNIT_EEVI_BETRAYER_ILLIDARI,
-        UNIT_E00G_DEMON_HUNTER_EVIL_MORPHED_LEVEL_3,
-        UNIT_E00E_DEMON_HUNTER_MORPHED_LEVEL_2,
-        UNIT_E00D_DEMON_HUNTER_MORPHED_LEVEL_3
+                UNIT_EILL_THE_BETRAYER_ILLIDARI,
+                FourCC("Eidm"),
+                UNIT_EEVM_DEMON_HUNTER_EVIL_MORPHED,
+                UNIT_EILM_DEMON_HUNTER,
+                UNIT_EEVI_BETRAYER_ILLIDARI,
+                UNIT_E00G_DEMON_HUNTER_EVIL_MORPHED_LEVEL_3,
+                UNIT_E00E_DEMON_HUNTER_MORPHED_LEVEL_2,
+                UNIT_E00D_DEMON_HUNTER_MORPHED_LEVEL_3
       };
 
       var warglaivesOfAzzinoth = new WarglaivesOfAzzinoth(illidanVariations,
-        ABILITY_A0YW_WARGLAIVES_OF_AZZINOTH_GREEN_LIGHT_BLUE_ILLIDAN)
+          ABILITY_A0YW_WARGLAIVES_OF_AZZINOTH_GREEN_LIGHT_BLUE_ILLIDAN)
       {
         Radius = 150,
         DamageBase = 4,
@@ -38,6 +39,22 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DamageType = DAMAGE_TYPE_MAGIC
       };
       PassiveAbilityManager.Register(warglaivesOfAzzinoth);
+
+      var shadowAssault = new ShadowAssaultSpell(ABILITY_A0TP_SHADOW_ASSAULT_GREEN_AKAMA)
+      {
+        BaseDamage = 150,
+        DamagePerLevel = 50,
+        ChargeSpeed = 1200,
+        MaxChargeDistance = 1800,
+        SpeedUpOrderId = OrderId("bloodlust"),
+        ChargeEffectPath = @"Abilities\Spells\Orc\FeralSpirit\feralspiritdone.mdl",
+        SpeedUpAbilityId = ABILITY_A0YT_BLOODLUST_SHADOW_STRIKE,
+        ExecuteEffectPath = @"Objects\\Spawnmodels\\Human\\HumanLargeDeathExplode\\HumanLargeDeathExplode.mdl",
+        ImpactEffectPath = @"Abilities\Spells\Human\ThunderClap\ThunderClapCaster.mdl",
+        BaseExecuteThreshold = 0.15f,
+        ExecuteThresholdPerLevel = 0.05f
+      };
+      SpellSystem.Register(shadowAssault);
     }
   }
 }

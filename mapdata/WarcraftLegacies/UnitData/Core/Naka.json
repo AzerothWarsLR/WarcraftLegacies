@@ -7,12 +7,12 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "Adtg,A0TV,AInv,Apiv"
+      "Value": "A0LW,A0TV,AInv"
     },
     {
       "Id": 1885823349,
       "Type": 2,
-      "Value": 1.9
+      "Value": 3
     },
     {
       "Id": 1684824693,
@@ -30,7 +30,7 @@
     {
       "Id": 1650550901,
       "Type": 3,
-      "Value": "A01Q,A0TP,A0MH,A033,Aamk"
+      "Value": "A0TP,A01Q,A0YV,ST9J,Aamk"
     },
     {
       "Id": 1836083317,
@@ -84,6 +84,14 @@
     {
       "Id": 1920298101,
       "Value": 0
+    },
+    {
+      "Id": 1768382837,
+      "Value": 24
+    },
+    {
+      "Id": 1647403381,
+      "Value": 15
     }
   ]
 }
