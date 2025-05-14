@@ -9,6 +9,7 @@ namespace WarcraftLegacies.Source.Setup
   {
     private static readonly int RockChunkId = FourCC("LTrc");
     private static readonly int IslandChunkId = FourCC("B013");
+    private static readonly int ForceWallChunk = FourCC("B005");
 
     public static void Setup()
     {
@@ -21,6 +22,9 @@ namespace WarcraftLegacies.Source.Setup
       RockSystem.Register(new RockGroup(Regions.NorthrendRock2, RockChunkId, 360));
       RockSystem.Register(new RockGroup(Regions.NorthrendRock3, RockChunkId, 360));
       RockSystem.Register(new RockGroup(Regions.NorthrendRock4, RockChunkId, 360));
+      
+      //AQ Rocks
+      RockSystem.Register(new RockGroup(Regions.AQ_Blockers, RockChunkId, 0));
 
       //Bridge Rocks
       RockSystem.Register(new RockGroup(Regions.BridgeAmbient, RockChunkId, 1800));
