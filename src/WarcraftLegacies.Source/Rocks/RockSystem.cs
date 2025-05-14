@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.Rocks
   /// </summary>
   public static class RockSystem
   {
-    private static readonly List<RockGroup> _rockGroups = new();
+    private static List<RockGroup> _rockGroups = new();
 
     /// <summary>
     /// Registers a <see cref="RockGroup"/> to the system and optionally
