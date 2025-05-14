@@ -12,17 +12,12 @@
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": 1
     },
     {
       "Id": 1718840929,
       "Type": 3,
       "Value": " (Naga)"
-    },
-    {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Shadow Aura"
     },
     {
       "Id": 1918988897,
@@ -31,12 +26,12 @@
     },
     {
       "Id": 2020635233,
-      "Value": 3
+      "Value": 1
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "R"
+      "Value": "W"
     },
     {
       "Id": 1952805473,
@@ -46,7 +41,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "This Hero\u0027s presence weakens nearby enemies.|n|n|cffffcc00Level 1|r - 30% Reduced Attack damage. |n|cffffcc00Level 2|r - 45% Reduced Attack damage. |n|cffffcc00Level 3|r - 60% Reduced Attack damage."
+      "Value": "This Hero\u0027s presence weakens nearby enemies within a radius of 250.|n|n|cffffcc00Level 1|r - 30% Reduced Attack damage. |n|cffffcc00Level 2|r - 45% Reduced Attack damage. |n|cffffcc00Level 3|r - 60% Reduced Attack damage.|n|cffffcc00Level 4|r - 75% Reduced Attack damage."
     },
     {
       "Level": 1,
@@ -70,7 +65,7 @@
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Grandeur Aura - [|cffffcc00Level 4|r]"
+      "Value": "Shadow Aura - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,
@@ -94,12 +89,17 @@
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The Presence of Loken on the battle field terrifies even the most harden soldiers. Reduces Attack damage by 40%."
+      "Value": "The hero prevents enemies units to fight in the shadows. Reduces Attack damage by 75%."
     },
     {
       "Id": 1952543841,
       "Type": 3,
       "Value": "war3mapImported\\VoidSkullAura_v5.mdx"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Shadow Aura"
     }
   ]
 }

@@ -1,6 +1,8 @@
 ﻿using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.SpellSystem;
+using WarcraftLegacies.Source.Spells;
+using static War3Api.Common;
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -38,6 +40,24 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DamageType = DAMAGE_TYPE_MAGIC
       };
       PassiveAbilityManager.Register(warglaivesOfAzzinoth);
+
+      var shadowAssault = new ShadowAssaultSpell(ABILITY_A0TP_SHADOW_ASSAULT_GREEN_AKAMA)
+      {
+        BaseDamage = 150,
+        DamagePerLevel = 50,
+        ChargeSpeed = 1200,
+        MaxChargeDistance = 1800,
+        SpeedUpOrderId = OrderId("bloodlust"),
+        ChargeEffectPath = @"Abilities\Spells\Orc\FeralSpirit\feralspiritdone.mdl",
+        SpeedUpAbilityId = ABILITY_A0YT_BLOODLUST_SHADOW_STRIKE,
+        ExecuteEffectPath = @"Objects\\Spawnmodels\\Human\\HumanLargeDeathExplode\\HumanLargeDeathExplode.mdl",
+        ImpactEffectPath = @"Abilities\Spells\Human\ThunderClap\ThunderClapCaster.mdl",
+        BaseExecuteThreshold = 0.15f,  
+        ExecuteThresholdPerLevel = 0.05f 
+      };
+      SpellSystem.Register(shadowAssault);
     }
+
   }
-}
+
+  }
