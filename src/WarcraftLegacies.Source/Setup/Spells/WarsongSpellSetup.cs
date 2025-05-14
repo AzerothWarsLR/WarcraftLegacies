@@ -20,13 +20,13 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DamageMultStructure = 1
       });
 
-      var Voodoo_Hex = new InspireMadness(ABILITY_MD28_VOODOO_HEX_ROHKAN)
+      var Voodoo_Hex = new InspireMadness(ABILITY_MD28_VOODOO_HEX_ROKHAN)
       {
         Radius = 400,
         CountBase = 5,
         CountLevel = 5,
         Duration = 60,
-        ChancePercentage = 33.0f,
+        ChancePercentage = 60.0f,
         EffectTarget = @"Abilities\Spells\Other\Charm\CharmTarget.mdl",
         EffectScaleTarget = 0.5f
       };

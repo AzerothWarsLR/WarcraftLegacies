@@ -36,7 +36,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Rohkan)"
+      "Value": "(Rokhan)"
     },
     {
       "Id": 1952540001,
@@ -75,7 +75,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Takes control of several random enemy units in the target area. After 30 seconds, each unit controlled this way dies of madness.|n|n|cffffcc00Level 1|r - Controls 6 units. |n|cffffcc00Level 2|r - Controls 10 units. |n|cffffcc00Level 3|r - Controls 14 units."
+      "Value": "The Hero attempts to charm enemy units in the target area having a 60% chance to take control. After 60 seconds, each unit controlled this way dies of madness.|n|n|cffffcc00Level 1|r - Controls 10 units. |n|cffffcc00Level 2|r - Controls 15 units. |n|cffffcc00Level 3|r - Controls 20 units."
     },
     {
       "Id": 1952543841,
@@ -104,19 +104,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Takes control of 6 random enemy units in the target area. After 30 seconds, each unit controlled this way dies of madness."
+      "Value": "Takes control of 10 random enemy units in the target area. After 60 seconds, each unit controlled this way dies of madness."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Takes control of 10 random enemy units in the target area. After 30 seconds, each unit controlled this way dies of madness."
+      "Value": "Takes control of 15 random enemy units in the target area. After 60 seconds, each unit controlled this way dies of madness."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Takes control of 14 random enemy units in the target area. After 30 seconds, each unit controlled this way dies of madness."
+      "Value": "Takes control of 20 random enemy units in the target area. After 60 seconds, each unit controlled this way dies of madness."
     }
   ]
 }
