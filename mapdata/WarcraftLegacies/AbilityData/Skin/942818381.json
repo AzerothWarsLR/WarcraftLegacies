@@ -104,19 +104,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Takes control of 10 random enemy units in the target area. After 60 seconds, each unit controlled this way dies of madness."
+      "Value": "Have a 60% chance of taking control of 10 random enemy units in the target area. After 60 seconds, each unit controlled this way dies of madness."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Takes control of 15 random enemy units in the target area. After 60 seconds, each unit controlled this way dies of madness."
+      "Value": "Have a 60% chance of taking control of 15 random enemy units in the target area. After 60 seconds, each unit controlled this way dies of madness."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Takes control of 20 random enemy units in the target area. After 60 seconds, each unit controlled this way dies of madness."
+      "Value": "Have a 60% chance of taking control of 20 random enemy units in the target area. After 60 seconds, each unit controlled this way dies of madness."
     }
   ]
 }
