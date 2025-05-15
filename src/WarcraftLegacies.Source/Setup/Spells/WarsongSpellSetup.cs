@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DamageMultStructure = 1
       });
 
-      var VoodooHex = new InspireMadness(ABILITY_MD28_VOODOO_HEX_ROKHAN)
+      var voodooHex = new InspireMadness(ABILITY_MD28_VOODOO_HEX_ROKHAN)
       {
         Radius = 400,
         CountBase = 5,
@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         EffectTarget = @"Abilities\Spells\Other\Charm\CharmTarget.mdl",
         EffectScaleTarget = 0.5f
       };
-      SpellSystem.Register(VoodooHex);
+      SpellSystem.Register(voodooHex);
 
       var resoluteHeart = new ResoluteHeart(UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG,
         ABILITY_A0TY_RESOLUTE_HEART_ICON)
