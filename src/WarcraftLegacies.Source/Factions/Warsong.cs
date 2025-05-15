@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
@@ -79,7 +79,7 @@ Work closely with your new elven allies—only together will you overcome the lo
           StartingQuest = AddQuest(new QuestGrom(_preplacedUnitSystem, _allLegendSetup.Warsong.GromHellscream, _allLegendSetup.Warsong.Gargok));
             AddQuest(new QuestOrgrimmar(Regions.Orgrimmar, _allLegendSetup.Warsong.GromHellscream));
             AddQuest(new QuestCrossroads(Regions.Crossroads));
-            AddQuest(new QuestChenStormstout(_preplacedUnitSystem.GetUnit(FourCC("Nsjs"))));
+            AddQuest(new QuestRokhan(_preplacedUnitSystem.GetUnit(Constants.UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG)));
            // AddQuest(new QuestFountainOfBlood(_allLegendSetup.Neutral.FountainOfBlood, _allLegendSetup.Warsong.GromHellscream));
            // AddQuest(new QuestBloodpact(_allLegendSetup.Warsong.Mannoroth, _allLegendSetup.Warsong.GromHellscream));
             AddQuest(new QuestGarrosh(_allLegendSetup.BlackEmpire.Nzoth));
@@ -137,23 +137,6 @@ Work closely with your new elven allies—only together will you overcome the lo
           }
               }
             ));
-
-            TriggeredDialogueManager.Add(
-              new TriggeredDialogue(new Dialogue(
-                  @"Sound\Dialogue\OrcExpCamp\RandomOrcQuest02x\DR02Chen01",
-                  "Ah, greetings, my friend. I am Chen Stormstout, humble brewmaster of Pandaria. I have traveled the wide world searching for rare, exotic ingredients to use in my special brew! After all, good ale can solve all the problems of this world, don't you agree?",
-                  "Chen Stormstout")
-                , new[]
-                {
-            this
-                }, new[]
-                {
-            new ObjectiveControlLegend(_allLegendSetup.Warsong.ChenStormstout, false)
-            {
-              EligibleFactions = new List<Faction>{ this }
-            }
-                }));
-
             TriggeredDialogueManager.Add(
               new TriggeredDialogue(new DialogueSequence(new Dialogue(
                     @"Sound\Dialogue\OrcCampaign\Orc08\O08Grom33",

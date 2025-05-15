@@ -58,7 +58,7 @@ public static class Regions
 	public static Rectangle CavernofTime { get; set; } = new Rectangle(-9344f, -16192f, -8960f, -15840f);
 	public static Rectangle Cenarius { get; set; } = new Rectangle(-10304f, 10656f, -10208f, 10784f);
 	public static Rectangle Central_Northrend { get; set; } = new Rectangle(-4160f, 15104f, 1952f, 20320f);
-	public static Rectangle Chen { get; set; } = new Rectangle(-10592f, -5568f, -10144f, -5024f);
+	public static Rectangle Chen { get; set; } = new Rectangle(-11136f, -3200f, -10688f, -2880f);
 	public static Rectangle ClosePortal { get; set; } = new Rectangle(16736f, -20256f, 17024f, -20000f);
 	public static Rectangle Coldarra { get; set; } = new Rectangle(-10656f, 16896f, -8704f, 18272f);
 	public static Rectangle Corins_Crossing { get; set; } = new Rectangle(16192f, 8896f, 18080f, 10944f);

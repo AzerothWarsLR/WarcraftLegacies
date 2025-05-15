@@ -19,7 +19,19 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DamageMultResistant = 1.5f,
         DamageMultStructure = 1
       });
-      
+
+      var voodooHex = new InspireMadness(ABILITY_MD28_VOODOO_HEX_ROKHAN)
+      {
+        Radius = 400,
+        CountBase = 5,
+        CountLevel = 5,
+        Duration = 60,
+        ChancePercentage = 60.0f,
+        EffectTarget = @"Abilities\Spells\Other\Charm\CharmTarget.mdl",
+        EffectScaleTarget = 0.5f
+      };
+      SpellSystem.Register(voodooHex);
+
       var resoluteHeart = new ResoluteHeart(UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG,
         ABILITY_A0TY_RESOLUTE_HEART_ICON)
       {
