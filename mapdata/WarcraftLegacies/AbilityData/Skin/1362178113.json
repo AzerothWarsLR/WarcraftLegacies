@@ -41,7 +41,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "This Hero\u0027s presence weakens nearby enemies within a radius of 250.|n|n|cffffcc00Level 1|r - 30% Reduced Attack damage. |n|cffffcc00Level 2|r - 45% Reduced Attack damage. |n|cffffcc00Level 3|r - 60% Reduced Attack damage.|n|cffffcc00Level 4|r - 75% Reduced Attack damage."
+      "Value": "This Hero\u2019s presence weakens nearby enemies reducing their attack damage within a radius of 350 and gain an evasion ability.|n|cffffcc00Level 1|r - 20% Reduced Attack damage,20% evasion. |n|cffffcc00Level 2|r - 30% Reduced Attack damage,25% evasion. |n|cffffcc00Level 3|r - 40% Reduced Attack damage,30% evasion.|n|cffffcc00Level 4|r - 50% Reduced Attack damage,35% evasion."
     },
     {
       "Level": 1,
@@ -71,25 +71,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero prevents enemies units to fight in the shadows. Reduces Attack damage by 30%."
+      "Value": "The hero prevents enemies units to fight in the shadows.Reduces Attack damage by 20% and gives a \u003CA0Z1,DataA1,%\u003E% percent chance to avoid an attack."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero prevents enemies units to fight in the shadows. Reduces Attack damage by 45%."
+      "Value": "The hero prevents enemies units to fight in the shadows.Reduces Attack damage by 30% and gives a \u003CA0Z1,DataA2,%\u003E% percent chance to avoid an attack."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero prevents enemies units to fight in the shadows. Reduces Attack damage by 60%."
+      "Value": "The hero prevents enemies units to fight in the shadows.Reduces Attack damage by 40% and gives a \u003CA0Z1,DataA3,%\u003E% percent chance to avoid an attack."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "The hero prevents enemies units to fight in the shadows. Reduces Attack damage by 75%."
+      "Value": "The hero prevents enemies units to fight in the shadows.Reduces Attack damage by 50% and gives a \u003CA0Z1,DataA4,%\u003E% percent chance to avoid an attack."
     },
     {
       "Id": 1952543841,

@@ -1,5 +1,6 @@
 ﻿using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
+using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
 
@@ -17,14 +18,14 @@ namespace WarcraftLegacies.Source.Setup.Spells
     {
       var illidanVariations = new[]
       {
-                UNIT_EILL_THE_BETRAYER_ILLIDARI,
-                FourCC("Eidm"),
-                UNIT_EEVM_DEMON_HUNTER_EVIL_MORPHED,
-                UNIT_EILM_DEMON_HUNTER,
-                UNIT_EEVI_BETRAYER_ILLIDARI,
-                UNIT_E00G_DEMON_HUNTER_EVIL_MORPHED_LEVEL_3,
-                UNIT_E00E_DEMON_HUNTER_MORPHED_LEVEL_2,
-                UNIT_E00D_DEMON_HUNTER_MORPHED_LEVEL_3
+        UNIT_EILL_THE_BETRAYER_ILLIDARI,
+        FourCC("Eidm"),
+        UNIT_EEVM_DEMON_HUNTER_EVIL_MORPHED,
+        UNIT_EILM_DEMON_HUNTER,
+        UNIT_EEVI_BETRAYER_ILLIDARI,
+        UNIT_E00G_DEMON_HUNTER_EVIL_MORPHED_LEVEL_3,
+        UNIT_E00E_DEMON_HUNTER_MORPHED_LEVEL_2,
+        UNIT_E00D_DEMON_HUNTER_MORPHED_LEVEL_3
       };
 
       var warglaivesOfAzzinoth = new WarglaivesOfAzzinoth(illidanVariations,
@@ -51,10 +52,34 @@ namespace WarcraftLegacies.Source.Setup.Spells
         SpeedUpAbilityId = ABILITY_A0YT_BLOODLUST_SHADOW_STRIKE,
         ExecuteEffectPath = @"Objects\\Spawnmodels\\Human\\HumanLargeDeathExplode\\HumanLargeDeathExplode.mdl",
         ImpactEffectPath = @"Abilities\Spells\Human\ThunderClap\ThunderClapCaster.mdl",
-        BaseExecuteThreshold = 0.15f,
-        ExecuteThresholdPerLevel = 0.05f
+        BaseExecuteThreshold = 0.25f,
+        ExecuteThresholdPerLevel = 0f
       };
       SpellSystem.Register(shadowAssault);
+
+      var cripplingStrike = new DamageMultiplierOnAttack(
+          casterUnitTypeId: UNIT_NAKA_ELDER_SAGE_ILLIDARI,
+          abilityTypeId: ABILITY_A0YV_CRIPPLING_STRIKE_AKAMA
+      )
+      {
+        BaseUnitMultiplier = 1.4f,
+        LevelUnitMultiplier = 0.25f,
+        BaseHeroMultiplier = 1.2f,
+        LevelHeroMultiplier = 0.15f,
+        OnlyAttackDamage = true
+      };
+      PassiveAbilityManager.Register(cripplingStrike);
+    foreach (var unitTypeId in illidanVariations)
+    {
+      var addAbilityOnLearn = new AddAbilityOnLearn(ABILITY_A01Q_SHADOW_AURA_NAGA)
+        {
+          UnitTypeId = UNIT_NAKA_ELDER_SAGE_ILLIDARI,
+          TargetAbilityId = ABILITY_A01Q_SHADOW_AURA_NAGA, 
+          AbilityToAddId = ABILITY_A0Z1_EVASION_AKAMA
+      };
+
+      }
+
     }
   }
 }

@@ -81,25 +81,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Akama strikes a target from the shadows, then enters shadow state. His attack speed increases by 100% for 5 seconds, and he charges towards the enemy. During the charge, he\u0027s immune to all damage and uncontrollable. Once reaching the target, he deals 200 damage. If the target isn\u0027t a hero and its HP is below 20%, Akama executes it and refreshes the ability cooldown."
+      "Value": "Akama strikes from the shadows, entering a shadow state and gaining 100% increased attack speed for 5 seconds. He charges toward a target unit, phasing through other units and dealing 200 damage upon impact. If the target\u2019s HP is below 25% and it is not a hero, Akama executes it, instantly refreshing Shadow Ambush."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Akama strikes a target from the shadows, then enters shadow state. His attack speed increases by 150% for 6 seconds, and he charges towards the enemy. During the charge, he\u0027s immune to all damage and uncontrollable. Once reaching the target, he deals 250 damage. If the target isn\u0027t a hero and its HP is below 25%, Akama executes it and refreshes the ability cooldown."
+      "Value": "Akama strikes from the shadows, entering a shadow state and gaining 150% increased attack speed for 6 seconds. He charges toward a target unit, phasing through other units and dealing 250 damage upon impact. If the target\u2019s HP is below 25% and it is not a hero, Akama executes it, instantly refreshing Shadow Ambush."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Akama strikes a target from the shadows, then enters shadow state. His attack speed increases by 200% for 7 seconds, and he charges towards the enemy. During the charge, he\u0027s immune to all damage and uncontrollable. Once reaching the target, he deals 300 damage. If the target isn\u0027t a hero and its HP is below 30%, Akama executes it and refreshes the ability cooldown."
+      "Value": "Akama strikes from the shadows, entering a shadow state and gaining 200% increased attack speed for 7 seconds. He charges toward a target unit, phasing through other units and dealing 300 damage upon impact. If the target\u2019s HP is below 25% and it is not a hero, Akama executes it, instantly refreshing Shadow Ambush."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Akama strikes a target from the shadows, then enters shadow state. His attack speed increases by 250% for 8 seconds, and he charges towards the enemy. During the charge, he\u0027s immune to all damage and uncontrollable. Once reaching the target, he deals 350 damage. If the target isn\u0027t a hero and its HP is below 35%, Akama executes it and refreshes the ability cooldown."
+      "Value": "Akama strikes from the shadows, entering a shadow state and gaining 250% increased attack speed for 8 seconds. He charges toward a target unit, phasing through other units and dealing 350 damage upon impact. If the target\u2019s HP is below 25% and it is not a hero, Akama executes it, instantly refreshing Shadow Ambush.\r\n"
     },
     {
       "Id": 1953653089,
@@ -114,7 +114,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Akama strikes a target from the shadows, then enters shadow state. His attack speed increases and he charges towards the enemy. During the charge, he\u0027s immune to all damage and uncontrollable. Once reaching the target, he deals damage. If the target isn\u0027t a hero and its HP is below a certain percentage, Akama executes it and refreshes the ability cooldown. |n|n|cffffcc00Level 1|r - Deals 200 damage, increases attack speed by 100% for 5 seconds. Execution threshold: 20%. |n|cffffcc00Level 2|r - Deals 250 damage, increases attack speed by 150% for 6 seconds. Execution threshold: 25%. |n|cffffcc00Level 3|r - Deals 300 damage, increases attack speed by 200% for 7 seconds. Execution threshold: 30%. |n|cffffcc00Level 4|r - Deals 350 damage, increases attack speed by 250% for 8 seconds. Execution threshold: 35%."
+      "Value": "Akama strikes from the shadows, entering a shadow state and gaining increased attack speed. He charges toward a target unit, phasing through other units and dealing damage upon impact. If the target\u2019s HP is below 25% and it is not a hero, Akama executes it, instantly refreshing Shadow Ambush. |n|n|cffffcc00Level 1|r - Deals 200 damage, increases attack speed by 100% for 5 seconds. |n|cffffcc00Level 2|r - Deals 250 damage, increases attack speed by 150% for 6 seconds.  |n|cffffcc00Level 3|r - Deals 300 damage, increases attack speed by 200% for 7 seconds.  |n|cffffcc00Level 4|r - Deals 350 damage, increases attack speed by 250% for 8 seconds. "
     }
   ]
 }
