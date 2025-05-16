@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       _rescueUnits = Regions.EchoUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       AddObjective(new ObjectiveAnyUnitInRect(Regions.EchoUnlock, "Echo Isles", true));
       AddObjective(new ObjectiveSelfExists());
-      AddObjective(new ObjectiveExpire(480, Title));
+      AddObjective(new ObjectiveExpire(900, Title));
       
       ResearchId = UPGRADE_R032_QUEST_COMPLETED_THE_DARKSPEAR_TROLLS;
     }

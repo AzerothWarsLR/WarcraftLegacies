@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       @"ReplaceableTextures\CommandButtons\BTNBarracks.blp")
     {
       AddObjective(new ObjectiveControlPoint(UNIT_N01T_NORTHERN_BARRENS));
-      AddObjective(new ObjectiveExpire(480, Title));
+      AddObjective(new ObjectiveExpire(600, Title));
       AddObjective(new ObjectiveSelfExists());
 
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

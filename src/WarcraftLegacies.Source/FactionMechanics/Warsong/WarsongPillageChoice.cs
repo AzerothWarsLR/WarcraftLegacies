@@ -12,6 +12,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
     public int ExperienceReward { get; }
     public int ResearchReward { get; }
     public int? ArtifactRewardItemType { get; }
+    public UnitUpgrade UnitUpgrade { get; } // Supports unit-specific upgrades
 
     public WarsongPillageChoice(
       PillageChoiceType type,
@@ -20,7 +21,9 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
       int goldReward,
       int experienceReward,
       int researchReward = 0,
-      int? artifactRewardItemType = null)
+      int? artifactRewardItemType = null,
+      UnitUpgrade unitUpgrade = null
+    )
     {
       Type = type;
       Name = name;
@@ -29,6 +32,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
       ExperienceReward = experienceReward;
       ResearchReward = researchReward;
       ArtifactRewardItemType = artifactRewardItemType;
+      UnitUpgrade = unitUpgrade;
     }
   }
 
@@ -36,5 +40,17 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
   {
     Subdue,
     Pillage
+  }
+
+  public class UnitUpgrade
+  {
+    public int RemoveUnit { get; }
+    public int AddUnit { get; }
+
+    public UnitUpgrade(int removeUnit, int addUnit)
+    {
+      RemoveUnit = removeUnit;
+      AddUnit = addUnit;
+    }
   }
 }

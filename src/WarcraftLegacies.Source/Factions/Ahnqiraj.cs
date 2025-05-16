@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+
 using MacroTools.Data;
 using MacroTools.FactionSystem;
 using MacroTools.PassiveAbilities;

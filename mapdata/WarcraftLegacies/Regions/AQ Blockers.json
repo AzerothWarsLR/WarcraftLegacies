@@ -1,0 +1,15 @@
+{
+  "Left": -19584,
+  "Bottom": -18688,
+  "Right": -18880,
+  "Top": -17600,
+  "Name": "AQ Blockers",
+  "CreationNumber": 201,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

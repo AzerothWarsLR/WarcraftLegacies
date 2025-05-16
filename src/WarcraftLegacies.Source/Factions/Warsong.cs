@@ -84,7 +84,7 @@ Work closely with your new elven allies—only together will you overcome the lo
            // AddQuest(new QuestBloodpact(_allLegendSetup.Warsong.Mannoroth, _allLegendSetup.Warsong.GromHellscream));
             AddQuest(new QuestGarrosh(_allLegendSetup.BlackEmpire.Nzoth));
             AddQuest(new QuestWarsongKillCthun(_allLegendSetup.Ahnqiraj.Cthun));
-            AddQuest(new QuestMoreWyverns(_allLegendSetup.Ahnqiraj.Cthun, _allLegendSetup.BlackEmpire.Nzoth));
+            AddQuest(new QuestKillOldGods(_allLegendSetup.Ahnqiraj.Cthun, _allLegendSetup.BlackEmpire.Nzoth));
             AddQuest(new QuestWarsongHold());
             AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
             AddQuest(new QuestSubdueOgres(Regions.StonemaulKeep, _allLegendSetup.Warsong, _allLegendSetup.Warsong.GromHellscream));

@@ -1,4 +1,5 @@
 ﻿using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 
@@ -18,6 +19,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       @"ReplaceableTextures\CommandButtons\BTNFacelessMadness.blp")
     {
       AddObjective(new ObjectiveKillUnit(nzoth.Unit));
+      AddObjective(new ObjectiveControlPoint(UNIT_NNYA_NY_ALOTHA_THE_WAKING_CITY));
       ResearchId = UPGRADE_R062_QUEST_COMPLETED_TWILIGHT_S_RECKONING;
     }
 

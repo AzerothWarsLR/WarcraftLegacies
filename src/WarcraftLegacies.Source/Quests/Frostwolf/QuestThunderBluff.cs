@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     {
       AddObjective(new ObjectiveControlPoint(UNIT_N02A_SOUTHERN_BARRENS ));
       AddObjective(new ObjectiveControlPoint(UNIT_N09G_MULGORE));
-      AddObjective(new ObjectiveExpire(480, Title));
+      AddObjective(new ObjectiveExpire(720, Title));
       AddObjective(new ObjectiveSelfExists());
       ResearchId = UPGRADE_R05I_QUEST_COMPLETED_THE_LONG_MARCH; 
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
