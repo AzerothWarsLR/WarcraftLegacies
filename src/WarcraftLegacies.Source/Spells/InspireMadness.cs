@@ -19,18 +19,24 @@ namespace WarcraftLegacies.Source.Spells
     public float Duration { get; init; }
     public string EffectTarget { get; init; } = "";
     public float EffectScaleTarget { get; init; }
+    public float ChancePercentage { get; init; } = 100f; // Default chance percentage (100%)
 
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
       try
       {
         var maxTargets = CountBase + CountLevel * GetAbilityLevel(caster);
-        foreach (var unit in GlobalGroup
-                   .EnumUnitsInRange(targetPoint, Radius)
-                   .Take(maxTargets)
-                 )
-          if (IsValidTarget(caster, unit))
-            ConvertUnit(caster, unit);
+        var units = GlobalGroup
+          .EnumUnitsInRange(targetPoint, Radius)
+          .Where(unit => IsValidTarget(caster, unit))
+          .Where(_ => GetRandomReal(0, 100) < ChancePercentage)
+          .Take(maxTargets)
+          .ToList();
+
+        foreach (var unit in units)
+        {
+          ConvertUnit(caster, unit);
+        }
       }
       catch (Exception ex)
       {
@@ -40,11 +46,14 @@ namespace WarcraftLegacies.Source.Spells
 
     private static bool IsValidTarget(unit caster, unit target)
     {
-      return !IsUnitType(target, UNIT_TYPE_STRUCTURE) && !IsUnitType(target, UNIT_TYPE_ANCIENT) &&
-             !IsUnitType(target, UNIT_TYPE_MECHANICAL) && !IsUnitType(target, UNIT_TYPE_RESISTANT) &&
-             !IsUnitType(target, UNIT_TYPE_HERO) && !IsUnitAlly(target, GetOwningPlayer(caster)) && UnitAlive(target) &&
+      return !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
+             !IsUnitType(target, UNIT_TYPE_ANCIENT) &&
+             !IsUnitType(target, UNIT_TYPE_MECHANICAL) &&
+             !IsUnitType(target, UNIT_TYPE_RESISTANT) &&
+             !IsUnitType(target, UNIT_TYPE_HERO) &&
+             UnitAlive(target) &&
+             !IsUnitAlly(target, GetOwningPlayer(caster)) &&
              !IsUnitType(target, UNIT_TYPE_SUMMONED);
-      
     }
 
     private void ConvertUnit(unit caster, unit target)
@@ -52,6 +61,7 @@ namespace WarcraftLegacies.Source.Spells
       SetUnitOwner(target, GetOwningPlayer(caster), true);
       UnitApplyTimedLife(target, FourCC("Bpos"), Duration);
       SetUnitExploded(target, true);
+
       var tempEffect = AddSpecialEffect(EffectTarget, GetUnitX(target), GetUnitY(target));
       BlzSetSpecialEffectScale(tempEffect, EffectScaleTarget);
       EffectSystem.Add(tempEffect);
