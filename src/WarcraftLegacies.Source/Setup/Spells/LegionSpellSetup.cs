@@ -26,6 +26,18 @@ namespace WarcraftLegacies.Source.Setup.Spells
         EffectScaleTarget = 0.5f
       };
       SpellSystem.Register(inspireMadness);
+
+      var phantomStep = new PhantomStep(ABILITY_TPY7_PHANTOM_STEP_LEGION_ELITES)
+      {
+        Effect = @"Abilities\Spells\Orc\MirrorImage\MirrorImageCaster.mdl",
+        EffectScale = 1.00f,
+        IllusionDuration = new LeveledAbilityField<float> { Base = 20, PerLevel = 5 },
+        IllusionHealth = new LeveledAbilityField<int> { Base = 200, PerLevel = 50 },
+        IllusionDamage = new LeveledAbilityField<int> { Base = 50, PerLevel = 10 }
+      };
+
+      SpellSystem.Register(phantomStep);
+      
       
       var summonBurningLegion = new SummonLegionSpell(ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS,
         ABILITY_A0KZ_SPELL_IMMUNITY_LEGION_SUMMON);
@@ -84,6 +96,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
       });
     }
+    
+
 
     private static void RegisterSlipstreams()
     {

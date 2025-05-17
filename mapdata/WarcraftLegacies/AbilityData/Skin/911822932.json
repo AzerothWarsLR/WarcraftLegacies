@@ -1,0 +1,45 @@
+{
+  "OldId": 1768771393,
+  "NewId": 911822932,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2020635233,
+      "Value": 3
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Creates images of the caster to fight enemies and dispels all magic from the caster.|n|n|cffffcc00Level 1|r - Creates 3 images which deal 50% damage and take 200% damage. |n|cffffcc00Level 2|r - Creates 5 images which deal 50% damage and take 200% damage. |n|cffffcc00Level 3|r - Creates 7 images which deal 50% damage and take 200% damage."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Creates \u003CAOmi,DataA2\u003E images of the caster, each of which deals \u003CAOmi,DataB2,%\u003E% damage and receives \u003CAOmi,DataC2,%\u003E% damage. Dispels all magic from the caster. |nLasts \u003CAOmi,Dur2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Creates \u003CAOmi,DataA3\u003E images of the caster, each of which deals \u003CAOmi,DataB3,%\u003E% damage and receives \u003CAOmi,DataC3,%\u003E% damage. Dispels all magic from the caster. |nLasts \u003CAOmi,Dur3\u003E seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Creates \u003CAOmi,DataA1\u003E images of the caster, each of which deals \u003CAOmi,DataB1,%\u003E% damage and receives \u003CAOmi,DataC1,%\u003E% damage. Dispels all magic from the caster. |nLasts \u003CAOmi,Dur1\u003E seconds."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Phantom Step Dummy"
+    }
+  ]
+}
