@@ -66,34 +66,18 @@ namespace WarcraftLegacies.Source.Spells
         {
             try
             {
-                // Get the caster's spell level
                 int casterLevel = GetAbilityLevel(caster);
-
-                // Calculate scaling values
                 int illusionCount = IllusionCountBase + (IllusionCountPerLevel * (casterLevel - 1));
                 float illusionDuration = IllusionDurationBase + (IllusionDurationPerLevel * (casterLevel - 1));
                 float effectScale = EffectScaleBase + (EffectScalePerLevel * (casterLevel - 1));
-
-                // Log calculated parameters
-                Console.WriteLine($"[{nameof(PhantomStep)}] Spell cast started for caster: {GetUnitName(caster)} (ID: {GetUnitTypeId(caster)}, Level: {casterLevel}).");
-                Console.WriteLine($"[{nameof(PhantomStep)}] Illusion count: {illusionCount}, Illusion duration: {illusionDuration}s, Effect scale: {effectScale}.");
-
-                // Play the caster effect
                 var effect = AddSpecialEffect(CasterEffect, GetUnitX(caster), GetUnitY(caster));
-                BlzSetSpecialEffectScale(effect, effectScale); // Scale the special effect dynamically
-                DestroyEffect(effect); // Destroy effect after playing
-                Console.WriteLine($"[{nameof(PhantomStep)}] Played special effect at position ({GetUnitX(caster)}, {GetUnitY(caster)}), scale: {effectScale}.");
-
-                // Create illusions
+                BlzSetSpecialEffectScale(effect, effectScale); 
+                DestroyEffect(effect);
                 for (int i = 0; i < illusionCount; i++)
                 {
                     DummyCasterManager.GetGlobalDummyCaster()
                         .CastUnit(caster, DummyAbilityId, DummyOrderId, 1, caster, DummyCastOriginType.Target);
-
-                    Console.WriteLine($"[{nameof(PhantomStep)}] Created illusion #{i + 1} with duration {illusionDuration}s.");
                 }
-
-                Console.WriteLine($"[{nameof(PhantomStep)}] PhantomStep spell execution completed successfully.");
             }
             catch (Exception ex)
             {
