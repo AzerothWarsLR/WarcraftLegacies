@@ -17,7 +17,7 @@
 //  16	Ahn'qiraj
 //  17  Empty
 //  18	Sentinels/Exodar
-//  19  Emprt
+//  19  Empty
 //  20  Empty
 //  21  Empty
 //  22  Kultiras
