@@ -1,0 +1,62 @@
+{
+  "OldId": 1818839361,
+  "NewId": 878268500,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 20
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 2003593545,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 1684826441,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 1,
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,alive,allies,ancient,enemies,friend,ground,hero,invulnerable,item,neutral,nonancient,nonhero,organic,player,self,vulnerable"
+    },
+    {
+      "Id": 1702127969,
+      "Value": 0
+    },
+    {
+      "Id": 1685221217,
+      "Type": 3,
+      "Value": "purge"
+    }
+  ]
+}

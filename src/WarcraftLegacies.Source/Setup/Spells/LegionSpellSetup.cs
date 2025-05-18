@@ -29,14 +29,16 @@ namespace WarcraftLegacies.Source.Setup.Spells
 
       var phantomStep = new PhantomStep(ABILITY_TPY7_PHANTOM_STEP_LEGION_ELITES)
       {
-        Effect = @"Abilities\Spells\Orc\MirrorImage\MirrorImageCaster.mdl",
-        EffectScale = 1.00f,
-        IllusionDuration = new LeveledAbilityField<float> { Base = 20, PerLevel = 5 },
-        IllusionHealth = new LeveledAbilityField<int> { Base = 200, PerLevel = 50 },
-        IllusionDamage = new LeveledAbilityField<int> { Base = 50, PerLevel = 10 }
+        CasterEffect = @"Abilities\Spells\Orc\MirrorImage\MirrorImageCaster.mdl",
+        DummyAbilityId = ABILITY_TPY4_PHANTOM_STEP_DUMMY, 
+        DummyOrderId = OrderId("purge") 
       };
 
       SpellSystem.Register(phantomStep);
+
+
+
+
       
       
       var summonBurningLegion = new SummonLegionSpell(ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS,

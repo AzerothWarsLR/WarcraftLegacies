@@ -1,76 +1,57 @@
 ﻿using System;
-using MacroTools.Data;
-using MacroTools.Extensions;
+using MacroTools.DummyCasters;
 using MacroTools.SpellSystem;
+using WCSharp.Effects;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells
 {
-  public sealed class PhantomStep : Spell
-  {
-    public required LeveledAbilityField<float> IllusionDuration { get; init; }
-    public required LeveledAbilityField<int> IllusionHealth { get; init; }
-    public required LeveledAbilityField<int> IllusionDamage { get; init; }
-    public string Effect { get; init; } = @"Abilities\Spells\Orc\MirrorImage\MirrorImageCaster.mdl";
-    public float EffectScale { get; init; } = 1.25f;
-
-    public PhantomStep(int id) : base(id)
+    /// <summary>
+    /// Casts a Mirror Image effect and an illusion-based dummy ability on the casting unit.
+    /// </summary>
+    public sealed class PhantomStep : Spell
     {
+        /// <summary>
+        /// The visual effect to create on the caster when the spell is cast.
+        /// </summary>
+        public string CasterEffect { get; init; } = string.Empty;
+
+        /// <summary>
+        /// The ID of the dummy spell to cast.
+        /// </summary>
+        public int DummyAbilityId { get; init; }
+
+        /// <summary>
+        /// The order ID for the dummy ability.
+        /// </summary>
+        public int DummyOrderId { get; init; }
+
+        /// <inheritdoc />
+        public PhantomStep(int id) : base(id)
+        {
+        }
+
+        /// <inheritdoc />
+        public override void OnCast(unit caster, unit target, Point targetPoint)
+        {
+            try
+            {
+                Console.WriteLine($"[{nameof(PhantomStep)}] Spell cast started for caster: {GetUnitName(caster)} (ID: {GetUnitTypeId(caster)}).");
+
+                // Play the special effect on the caster
+                EffectSystem.Add(AddSpecialEffect(CasterEffect, GetUnitX(caster), GetUnitY(caster)));
+                Console.WriteLine($"[{nameof(PhantomStep)}] Played special effect at position ({GetUnitX(caster)}, {GetUnitY(caster)}).");
+
+                // Perform the dummy cast targeting the caster
+                DummyCasterManager.GetGlobalDummyCaster()
+                    .CastUnit(caster, DummyAbilityId, DummyOrderId, 1, caster, DummyCastOriginType.Target);
+
+                Console.WriteLine($"[{nameof(PhantomStep)}] Dummy ability {DummyAbilityId} cast on caster {GetUnitName(caster)} (ID: {GetUnitTypeId(caster)}).");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"[{nameof(PhantomStep)}] Error during spell execution: {ex}");
+            }
+        }
     }
-
-    public override void OnCast(unit caster, unit target, Point targetPoint)
-    {
-      try
-      {
-        // Get ability level
-        var level = GetAbilityLevel(caster);
-
-        // Trigger visual effect
-        var effect = AddSpecialEffect(Effect, GetUnitX(caster), GetUnitY(caster));
-        BlzSetSpecialEffectScale(effect, EffectScale);
-        DestroyEffect(effect);
-
-        // Spawn the illusion
-        CreateIllusion(caster, level);
-
-        Console.WriteLine($"Phantom Step successfully cast at level {level}.");
-      }
-      catch (Exception ex)
-      {
-        Console.WriteLine($"Error while executing Phantom Step: {ex}");
-      }
-    }
-
-    private void CreateIllusion(unit caster, int level)
-    {
-      var illusionX = GetUnitX(caster) + 25;
-      var illusionY = GetUnitY(caster) + 25;
-
-      // Create the illusion as a summoned unit
-      var illusion = CreateUnit(
-        GetOwningPlayer(caster),
-        GetUnitTypeId(caster),
-        illusionX,
-        illusionY,
-        GetUnitFacing(caster)
-      );
-      UnitAddType(illusion, UNIT_TYPE_SUMMONED); // Mark as summoned
-
-      // Customize illusion's health
-      BlzSetUnitRealField(illusion, UNIT_RF_HP, IllusionHealth.Base + IllusionHealth.PerLevel * level);
-
-      // Customize illusion's attributes
-      illusion
-        .SetDamageBase(IllusionDamage.Base + IllusionDamage.PerLevel * level) // Adjust illusion damage
-        .SetTimedLife(IllusionDuration.Base + IllusionDuration.PerLevel * level) // Set timed life
-        .SetLifePercent(100); // Set illusion to full health
-
-      // Add a visual effect near the illusion's creation point
-      var effect = AddSpecialEffect(Effect, illusionX, illusionY);
-      BlzSetSpecialEffectScale(effect, EffectScale);
-      DestroyEffect(effect);
-
-      Console.WriteLine($"Summoned illusion of unit {GetUnitName(caster)} with custom stats created.");
-    }
-  }
 }
