@@ -36,6 +36,20 @@ namespace WarcraftLegacies.Source.Setup.Spells
 
       SpellSystem.Register(phantomStep);
 
+      var phantomStepHero = new PhantomStep(ABILITY_TPY1_PHANTOM_STEP_LEGION_HERO)
+      {
+        CasterEffect = @"Abilities\Spells\Orc\MirrorImage\MirrorImageCaster.mdl", // Path to the special effect
+        DummyAbilityId = ABILITY_TPY4_PHANTOM_STEP_DUMMY, 
+        DummyOrderId = ORDER_WAND_ILLUSION,
+        IllusionCountBase = 1, 
+        IllusionCountPerLevel = 0, 
+        IllusionDurationBase = 20.0f, 
+        IllusionDurationPerLevel = 0.0f, 
+        EffectScaleBase = 1.0f, 
+        EffectScalePerLevel = 0.0f,
+      };
+
+      SpellSystem.Register(phantomStepHero);
 
 
 
