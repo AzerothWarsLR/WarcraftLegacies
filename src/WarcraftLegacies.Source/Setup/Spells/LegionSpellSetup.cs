@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         CasterEffect = @"Abilities\Spells\Orc\MirrorImage\MirrorImageCaster.mdl",
         DummyAbilityId = ABILITY_TPY4_PHANTOM_STEP_DUMMY, 
-        DummyOrderId = OrderId("purge") 
+        DummyOrderId = ORDER_WAND_ILLUSION
       };
 
       SpellSystem.Register(phantomStep);
