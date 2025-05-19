@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Skywall
     /// <inheritdoc />
     public override string RewardFlavour => "Neptulon has been subdued";
 
-    /// <inheritdoc />
-    protected override string RewardDescription => $"Learn to train Neptulon from the {GetObjectName(UNIT_N078_ALTAR_OF_ELEMENTS_ELEMENTAL_ALTAR)} and learn to build the Magma Complex";
+    /// <uz />
+    protected override string RewardDescription => $"Learn to train Neptulon from the {GetObjectName(UNIT_N078_ALTAR_OF_ELEMENTS_ELEMENTAL_ALTAR)},Tidal Lords from the {GetObjectName(UNIT_N07N_PAVILION_ELEMENTAL_MAGIC)},and unlocks the {GetObjectName(Constants.ABILITY_A0Y4_EARTH_PROTECTION_ELEMENTAL_LORD)} for {GetObjectName(Constants.UNIT_N08S_ELEMENTAL_LORD_ELEMENTAL)}.";
   }
 }

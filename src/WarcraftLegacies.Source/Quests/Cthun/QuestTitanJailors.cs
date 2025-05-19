@@ -8,54 +8,78 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
+using WarcraftLegacies.Source.Rocks;
 
 namespace WarcraftLegacies.Source.Quests.Cthun
 {
-  /// <summary>
-  /// Kill some constructs to gain cthun and the inner temple base.
-  /// </summary>
-  public sealed class QuestTitanJailors : QuestData
-  {
-    private readonly AllLegendSetup _allLegendSetup;
-    private readonly List<unit> _rescueUnits;
-
-    /// <summary>
-    /// Initializes a new instance of the <see cref="QuestTitanJailors"/> class.
-    /// </summary>
-    public QuestTitanJailors(AllLegendSetup allLegendSetup, Rectangle rescueRect) : base("Titan Jailors",
-      "C'thun is currently watched by a Titan Construct, we need to destroy it to free our god.",
-      @"ReplaceableTextures\CommandButtons\BTNArmorGolem.blp")
+    public sealed class QuestTitanJailors : QuestData
     {
-      AddObjective(new ObjectiveControlPoint(UNIT_NLSE_TEMPLE_OF_AHN_QIRAJ));
-      AddObjective(new ObjectiveExpire(660, Title));
-      AddObjective(new ObjectiveSelfExists());
-      _allLegendSetup = allLegendSetup;
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+        private readonly AllLegendSetup _allLegendSetup;
+        private readonly List<unit> _rescueUnits;
+        private readonly List<RockGroup> _rockGroups; 
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="QuestTitanJailors"/> class.
+        /// </summary>
+        public QuestTitanJailors(AllLegendSetup allLegendSetup, Rectangle rescueRect)
+            : base("Titan Jailors",
+                  "C'thun is currently watched by a Titan Construct. We must rid the temple of hostiles and destroy the Titan to free our god.",
+                  @"ReplaceableTextures\CommandButtons\BTNArmorGolem.blp")
+        {
+            AddObjective(new ObjectiveControlPoint(UNIT_NLSE_TEMPLE_OF_AHN_QIRAJ, 1500));
+            AddObjective(new ObjectiveExpire(660, Title));
+            AddObjective(new ObjectiveSelfExists());
+            _rockGroups = new List<RockGroup>(); 
+            _allLegendSetup = allLegendSetup;
+            _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+            RegisterRockGroups();
+        }
+
+        /// <summary>
+        /// Registers the RockGroups associated with this quest.
+        /// </summary>
+        private void RegisterRockGroups()
+        {
+            _rockGroups.Add(new RockGroup(Regions.AQ_Blockers, FourCC("LTrc"), 0));
+            foreach (var rockGroup in _rockGroups)
+            {
+                RockSystem.Register(rockGroup);
+            }
+        }
+
+        /// <inheritdoc />
+        protected override void OnFail(Faction completingFaction)
+        {
+            CleanupRocks();
+
+            var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+                ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+                : completingFaction.Player;
+
+            rescuer.RescueGroup(_rescueUnits);
+        }
+
+        /// <inheritdoc />
+        protected override void OnComplete(Faction completingFaction)
+        {
+            CleanupRocks();
+            completingFaction.Player.RescueGroup(_rescueUnits);
+            var cthun = _allLegendSetup.Ahnqiraj.Cthun.Unit;
+            if (cthun != null)
+            {
+                PassiveAbilityManager.ForceOnCreated(cthun);
+            }
+        }
+
+        /// <summary>
+        /// Removes all rocks associated with this quest.
+        /// </summary>
+        private void CleanupRocks()
+        {
+            foreach (var rockGroup in _rockGroups)
+            {
+                RockSystem.Remove(rockGroup);
+            }
+        }
     }
-
-    /// <inheritdoc />
-    public override string RewardFlavour => "With the Titan Construct defeat, C'thun is now free";
-
-    /// <inheritdoc />
-    protected override string RewardDescription => "Control of all units in inner Ahn'Qiraj and gain control of C'thun";
-
-    /// <inheritdoc />
-    protected override void OnFail(Faction completingFaction)
-    {
-      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
-        : completingFaction.Player;
-
-      rescuer.RescueGroup(_rescueUnits);
-    }
-
-    /// <inheritdoc />
-    protected override void OnComplete(Faction completingFaction)
-    {
-      completingFaction.Player.RescueGroup(_rescueUnits);
-      var cthun = _allLegendSetup.Ahnqiraj.Cthun.Unit;
-      if (cthun != null)
-        PassiveAbilityManager.ForceOnCreated(cthun);
-    }
-  }
 }

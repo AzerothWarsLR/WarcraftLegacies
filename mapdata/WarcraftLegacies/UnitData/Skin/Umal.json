@@ -43,6 +43,11 @@
       "Id": 1885959285,
       "Type": 3,
       "Value": "Summon Mal\u0027ganis"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\NecromancerMissile\\NecromancerMissile.mdl"
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "Left": -24128,
+  "Bottom": -18368,
+  "Right": -20864,
+  "Top": -15712,
+  "Name": "AQTempleUnlock",
+  "CreationNumber": 200,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}
