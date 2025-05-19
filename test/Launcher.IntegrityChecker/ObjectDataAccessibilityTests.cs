@@ -22,15 +22,28 @@ namespace Launcher.IntegrityChecker
     {
       if (_inaccesibleObjects.Upgrades.Count <= 0) 
         return;
+      var exceptions = new HashSet<string>
+      {
+        "Robk"
+      };
+
+      var upgradesToCheck = _inaccesibleObjects.Upgrades
+        .Where(upgrade => !exceptions.Contains(GetReadableId(upgrade)))
+        .ToList();
+
+      if (upgradesToCheck.Count <= 0) 
+        return;
       
       var exceptionMessageBuilder = new StringBuilder();
       exceptionMessageBuilder.AppendLine(
-        $"There is no way to research the following {_inaccesibleObjects.Upgrades.Count} researches. Remove them from the map or add a way to research them.");
-      foreach (var upgrade in _inaccesibleObjects.Upgrades)
+        $"There is no way to research the following {upgradesToCheck.Count} researches. Remove them from the map or add a way to research them.");
+
+      foreach (var upgrade in upgradesToCheck)
         exceptionMessageBuilder.AppendLine($"{GetReadableId(upgrade)} - {GetId(upgrade)}");
-      
+
       throw new XunitException(exceptionMessageBuilder.ToString());
     }
+
 
     private InaccessibleObjectCollection GetInaccessibleObjects()
     {
