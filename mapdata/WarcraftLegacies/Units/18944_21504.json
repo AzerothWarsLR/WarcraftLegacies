@@ -12,8 +12,8 @@
     "WaygateDestinationRegionId": -1,
     "TypeId": 825254522,
     "Position": {
-      "X": 19136,
-      "Y": 22208
+      "X": 19072,
+      "Y": 21376
     },
     "Rotation": 4.71238899230957,
     "Scale": {
@@ -24,6 +24,6 @@
     "SkinId": 825254522,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 2600
+    "CreationNumber": 2077
   }
 ]
