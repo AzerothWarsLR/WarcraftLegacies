@@ -137,12 +137,12 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
         DummyAbilityId = ABILITY_A0XY_EARTH_PROTECTION_HERO_DUMMY,
         DummyAbilityOrderId = OrderId("roar")
       };
-      SpellSystem.Register(earthProtectionHero);
+      SpellSystem.Register(earthProtectionHero);  
       
       var stormSurge = new MassAnySpellAndDamage(ABILITY_A104_STORM_SURGE_SKYWALL)
       {
         DummyAbilityId = ABILITY_TP04_PURGE_DUMMY, 
-        DummyAbilityOrderId = OrderId("purge"),         
+        DummyAbilityOrderId = ORDER_PURGE,         
         Radius = 200,
         DamageBase = 30,
         DamageLevel = 20,
