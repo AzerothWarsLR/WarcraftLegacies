@@ -1,0 +1,19 @@
+{
+  "OldId": 1802981186,
+  "NewId": 808865876,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Phantom Step"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is invisible. It can move through units and move faster. If it attacks or casts an ability, it will become visible again."
+    }
+  ]
+}
