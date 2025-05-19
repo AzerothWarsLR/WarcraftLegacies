@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(Constants.UNIT_N08N_IMPROVED_LATTICE_SPIRE_ELEMENTAL_TOWER, Unlimited);
 
       yield return new(Constants.UNIT_LS05_SHAPER_ELEMENTAL_WORKER, Unlimited);
-      yield return new(Constants.UNIT_N08S_ELEMENTAL_LORD_ELEMENTAL, 6);
+     // yield return new(Constants.UNIT_N08S_ELEMENTAL_LORD_ELEMENTAL, 6);
       yield return new(Constants.UNIT_O01I_ANIMATED_ARMOR_ELEMENTAL, Unlimited);
       yield return new(Constants.UNIT_SFH5_AIR_REVENANT_ELEMENTAL, Unlimited);
       yield return new(Constants.UNIT_SGH5_BALLISTA_CARRIER_ELEMENTAL, 8);

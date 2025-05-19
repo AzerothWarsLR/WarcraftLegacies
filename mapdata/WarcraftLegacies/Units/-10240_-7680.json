@@ -10,36 +10,20 @@
     "AbilityData": [],
     "CustomPlayerColorId": -1,
     "WaygateDestinationRegionId": -1,
-<<<<<<<< HEAD:mapdata/WarcraftLegacies/Units/-10240_-7680.json
     "TypeId": 1279340654,
     "Position": {
       "X": -10688,
       "Y": -8128
     },
     "Rotation": 4.71238899230957,
-========
-    "TypeId": 1835823982,
-    "Position": {
-      "X": -21514.066,
-      "Y": -16903.838
-    },
-    "Rotation": 3.983294725418091,
->>>>>>>> dev:mapdata/WarcraftLegacies/Units/-21504_-16896.json
     "Scale": {
       "X": 1,
       "Y": 1,
       "Z": 1
     },
-<<<<<<<< HEAD:mapdata/WarcraftLegacies/Units/-10240_-7680.json
     "SkinId": 1279340654,
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 3310
-========
-    "SkinId": 1835823982,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 2058
->>>>>>>> dev:mapdata/WarcraftLegacies/Units/-21504_-16896.json
   }
 ]
