@@ -22,8 +22,6 @@ namespace Launcher.IntegrityChecker
     {
       if (_inaccesibleObjects.Upgrades.Count <= 0) 
         return;
-
-      // Define the single OID to be excluded
       var exceptions = new HashSet<string>
       {
         "Robk"
