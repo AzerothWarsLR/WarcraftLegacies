@@ -1,134 +1,104 @@
 {
-  "OldId": 1818447425,
+  "OldId": 1701072449,
   "NewId": 1448685633,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Id": 1768841569,
+      "Id": 1835101793,
       "Type": 3,
-      "Value": "spell"
+      "Value": "Crippling Strike"
     },
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNShockStorm3.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\PASBTNCrippling Strike.blp"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCrippling Strike.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Akama\uFF09"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Crippling Strike - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Crippling Strike - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Crippling Strike - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Crippling Strike - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Crippling Strike - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes attacks to do 1.4 times normal damage to units and 1.2times normal damage to heroes."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes attacks to do 1.65 times normal damage to units and 1.35 times normal damage to heroes."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes attacks to do 1.9 times normal damage to units and 1.5 times normal damage to heroes."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes attacks to do 2.15 times normal damage to units and 1.65 times normal damage to heroes."
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Akama\u0027s attacks rend the enemy\u0027s wounds, inflicting Damage Amplification.Causes attacks to do more damage to units and heroes.|n|n|cffffcc00Level 1|r - 1.4 times damage to units, 1.2 times damage to heroes. |n|cffffcc00Level 2|r - 1.65 times damage to units, 1.35 times damage to heroes. |n|cffffcc00Level 3|r - 1.9 times damage to units, 1.5 times damage to heroes. |n|cffffcc00Level 4|r - 2.15 times damage to units, 1.65 times damage to heroes."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
     },
     {
       "Id": 2037408353,
       "Value": 2
     },
     {
-      "Id": 1952539489,
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": 1885430625,
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": 1718840929,
-      "Type": 3,
-      "Value": "(Skywall)"
-    },
-    {
-      "Id": 1952540001,
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Id": 2037082209,
-      "Type": 3,
-      "Value": "W"
-    },
-    {
-      "Id": 1918988897,
-      "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNMassFrostArmor.blp"
-    },
-    {
       "Id": 2020635233,
-      "Value": 1
+      "Value": 2
     },
     {
       "Id": 1802007137,
       "Type": 3,
-      "Value": "W"
-    },
-    {
-      "Id": 1952805473,
-      "Type": 3,
-      "Value": "Learn Mass Frost Armor - [|cffffcc00Level %d|r]"
-    },
-    {
-      "Id": 1953854049,
-      "Type": 3,
-      "Value": "Grants Frost Armor to all friendly unit in a target area for \u003CA13S,DataA1\u003E seconds. |n|n|cffffcc00Level 1|r - Grants \u003CA13S,DataB1\u003E armor and has a \u003CA13R,Cool1\u003E second cooldown.|n|cffffcc00Level 2|r - Grants \u003CA13S,DataB2\u003E armor and has a \u003CA13R,Cool2\u003E second cooldown.|n|cffffcc00Level 3|r - Grants \u003CA13S,DataB3\u003E armor and has a \u003CA13R,Cool3\u003E second cooldown.|n|cffffcc00Level 4|r - Grants \u003CA13S,DataB4\u003E armor and has a \u003CA13R,Cool4\u003E second cooldown."
-    },
-    {
-      "Id": 1952543841,
-      "Type": 3,
-      "Value": ""
-    },
-    {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Storm Surge"
-    },
-    {
-      "Level": 2,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Mass Frost Armor - [|cffffcc00Level 2|r]"
-    },
-    {
-      "Level": 3,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Mass Frost Armor - [|cffffcc00Level 3|r]"
-    },
-    {
-      "Level": 4,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Mass Frost Armor - [|cffffcc00Level 4|r]"
-    },
-    {
-      "Level": 1,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "The Elemental Lord releases a burst of energy, dealing 50 damage to nearby enemy land units and purging them for 3 seconds."
-    },
-    {
-      "Level": 2,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "Applies Frost Armor to all friendly unit in a target area for \u003CA13S,DataA2\u003E seconds, granting \u003CA13S,DataB2\u003E bonus armour and slowing units that attack them for 2 seconds."
-    },
-    {
-      "Level": 3,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "Applies Frost Armor to all friendly unit in a target area for \u003CA13S,DataA3\u003E seconds, granting \u003CA13S,DataB3\u003E bonus armour and slowing units that attack them for 2 seconds."
-    },
-    {
-      "Level": 4,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "Applies Frost Armor to all friendly unit in a target area for \u003CA13S,DataA4\u003E seconds, granting \u003CA13S,DataB4\u003E bonus armour and slowing units that attack them for 2 seconds."
-    },
-    {
-      "Id": 2020631137,
-      "Value": 0
-    },
-    {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Storm Surge"
+      "Value": "E"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "OldId": 1634693697,
+  "OldId": 1650606913,
   "NewId": 1415131201,
   "Unk": [
     0
@@ -8,43 +8,25 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Lordaeron)"
+      "Value": "(Shadow Strike)"
     },
     {
-      "Id": 2037082209,
-      "Type": 3,
-      "Value": "W"
-    },
-    {
-      "Level": 1,
-      "Id": 828536161,
-      "Type": 3,
-      "Value": "Increases the defense of nearby player owned heroes by \u003CA0YT,DataB1\u003E.|n|cffffcc00Lasts \u003CA0YT,Dur1\u003E seconds."
-    },
-    {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Aegis of Lordaeron"
-    },
-    {
-      "Level": 1,
+      "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Aegis of Lordaeron\r\n"
+      "Value": "\u55DC\u8840"
     },
     {
-      "Id": 1953653089,
+      "Level": 4,
+      "Id": 829453409,
       "Type": 3,
-      "Value": "ReplaceableTextures/CommandButtons/BTNMagocracy.blp"
+      "Value": "\u55DC\u8840"
     },
     {
-      "Id": 1952539489,
+      "Level": 3,
+      "Id": 829453409,
       "Type": 3,
-      "Value": "Abilities\\Spells\\Items\\AIda\\AIdaCaster.mdl"
-    },
-    {
-      "Id": 2020631137,
-      "Value": 1
+      "Value": "\u55DC\u8840"
     }
   ]
 }

@@ -8,7 +8,7 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "A02T,VP08,A07B,VP10,A08P,Aiun,ACca,TPY7"
+      "Value": "A02T,A07B,A136,A08P,Aiun,VP08,ACca,TPY7"
     },
     {
       "Id": 1902338421,
@@ -44,7 +44,7 @@
     },
     {
       "Id": 1717920885,
-      "Value": 5
+      "Value": 4
     },
     {
       "Id": 2037671029,
@@ -70,6 +70,10 @@
     {
       "Id": 1919903605,
       "Value": 100
+    },
+    {
+      "Id": 1836083317,
+      "Value": 975
     },
     {
       "Id": 1836412021,
@@ -135,16 +139,12 @@
     {
       "Id": 1919381621,
       "Type": 3,
-      "Value": "R04B,R04G,R054,R01Y,Rupm,Rhme,Rhar"
+      "Value": "R054,R04B,R04G,R054,R01Y,Rupm,Rhme,Rhar"
     },
     {
       "Id": 829645685,
       "Type": 3,
       "Value": "WoodHeavyBash"
-    },
-    {
-      "Id": 1836083317,
-      "Value": 1375
     }
   ]
 }

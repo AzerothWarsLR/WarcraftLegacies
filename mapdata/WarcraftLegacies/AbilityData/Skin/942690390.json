@@ -63,13 +63,13 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Causes the unit to heal a small amount whenever they deal damage to an enemy."
+      "Value": "Causes the unit to heal a small amount whenever they deal damage to an enemy. Scales with upgades."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Causes the unit to heal a moderate amount whenever they deal damage to an enemy."
+      "Value": "Causes the unit to heal a small amount whenever they deal damage to an enemy. Scales with upgades."
     },
     {
       "Level": 3,
@@ -87,6 +87,10 @@
       "Id": 1802007137,
       "Type": 3,
       "Value": "D"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
     },
     {
       "Id": 2037408353,

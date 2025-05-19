@@ -1,45 +1,50 @@
 {
-  "OldId": 1735553089,
+  "OldId": 1936016193,
   "NewId": 827994177,
   "Unk": [
     0
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 0
-    },
-    {
-      "Level": 1,
-      "Id": 1935895905,
-      "Value": 0
-    },
-    {
-      "Level": 1,
-      "Pointer": 3,
-      "Id": 862417488,
-      "Type": 2,
-      "Value": 500
-    },
-    {
-      "Level": 1,
-      "Id": 1920296033,
-      "Type": 2,
-      "Value": 3
-    },
-    {
-      "Level": 1,
-      "Id": 1969514593,
-      "Type": 2,
+      "Id": 1684562785,
       "Value": 1
     },
     {
       "Level": 1,
-      "Id": 1851880033,
+      "Pointer": 1,
+      "Id": 829842757,
       "Type": 2,
-      "Value": 99999
+      "Value": 0.2
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Level": 2,
+      "Pointer": 1,
+      "Id": 829842757,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829842757,
+      "Type": 2,
+      "Value": 0.3
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 829842757,
+      "Type": 2,
+      "Value": 0.35000002
     }
   ]
 }
