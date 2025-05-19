@@ -1,8 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
-using static War3Api.Common;
 
-namespace MacroTools.PassiveAbilities
+namespace WarcraftLegacies.Source.PassiveAbilities
 {
   /// <summary>
   /// Applies a damage multiplier to attacks based on ability level (only affects attack damage).

@@ -2,6 +2,7 @@
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
+using WarcraftLegacies.Source.PassiveAbilities;
 using WarcraftLegacies.Source.Spells;
 
 namespace WarcraftLegacies.Source.Setup.Spells
@@ -71,12 +72,11 @@ namespace WarcraftLegacies.Source.Setup.Spells
       PassiveAbilityManager.Register(cripplingStrike);
     foreach (var unitTypeId in illidanVariations)
     {
-      var addAbilityOnLearn = new AddAbilityOnLearn(ABILITY_A01Q_SHADOW_AURA_NAGA)
+      var addAbilityOnLearn = new AddAbilityOnLearn(ABILITY_A01Q_SHADOW_AURA_AKAMA)
         {
           UnitTypeId = UNIT_NAKA_ELDER_SAGE_ILLIDARI,
-          TargetAbilityId = ABILITY_A01Q_SHADOW_AURA_NAGA, 
-          AbilityToAddId = ABILITY_A0Z1_EVASION_AKAMA
-      };
+          TargetAbilityId = ABILITY_A01Q_SHADOW_AURA_AKAMA, 
+          AbilityToAddId = ABILITY_A0Z1_EVASION_AKAMA };
 
       }
 

@@ -113,7 +113,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       });
     }
     
-
+  
 
     private static void RegisterSlipstreams()
     {
