@@ -12,6 +12,8 @@ public static class Regions
 	public static Rectangle AlteracLegionLanding { get; set; } = new Rectangle(11168f, 5632f, 11552f, 5984f);
 	public static Rectangle Andorhal { get; set; } = new Rectangle(11136f, 7712f, 13696f, 9120f);
 	public static Rectangle Andrassil { get; set; } = new Rectangle(4992f, 18400f, 5440f, 18816f);
+	public static Rectangle AQ_Blockers { get; set; } = new Rectangle(-19584f, -18688f, -18880f, -17600f);
+	public static Rectangle AQTempleUnlock { get; set; } = new Rectangle(-24128f, -18368f, -20864f, -15712f);
 	public static Rectangle ArchimondeChannel { get; set; } = new Rectangle(-10048f, 10752f, -9856f, 10944f);
 	public static Rectangle Area52Unlock { get; set; } = new Rectangle(-96f, -22688f, 1472f, -20608f);
 	public static Rectangle ArtifactDummyInstance { get; set; } = new Rectangle(19584f, 23232f, 22688f, 24800f);
@@ -58,7 +60,7 @@ public static class Regions
 	public static Rectangle CavernofTime { get; set; } = new Rectangle(-9344f, -16192f, -8960f, -15840f);
 	public static Rectangle Cenarius { get; set; } = new Rectangle(-10304f, 10656f, -10208f, 10784f);
 	public static Rectangle Central_Northrend { get; set; } = new Rectangle(-4160f, 15104f, 1952f, 20320f);
-	public static Rectangle Chen { get; set; } = new Rectangle(-10592f, -5568f, -10144f, -5024f);
+	public static Rectangle Chen { get; set; } = new Rectangle(-11136f, -3200f, -10688f, -2880f);
 	public static Rectangle ClosePortal { get; set; } = new Rectangle(16736f, -20256f, 17024f, -20000f);
 	public static Rectangle Coldarra { get; set; } = new Rectangle(-10656f, 16896f, -8704f, 18272f);
 	public static Rectangle Corins_Crossing { get; set; } = new Rectangle(16192f, 8896f, 18080f, 10944f);

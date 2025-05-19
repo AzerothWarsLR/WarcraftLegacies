@@ -21,7 +21,9 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     private int PillageGoldReward { get; set; }
     private int PillageExperienceReward { get; set; }
     private const int SubdueResearchReward = UPGRADE_R012_SUBDUE_THE_STONEMAUL_OGRES;
-    private const int PillageResearchReward = UPGRADE_R017_QUEST_COMPLETED_BRUTE_ALLEGIANCE;
+    private const int PillageResearchReward = UPGRADE_R01U_PILLAGE_STONEMAUL;
+    private const int SubdueRemoveUnit = UNIT_O02M_WARSONG_GRUNT_WARSONG;
+    private const int SubdueAddUnit = UNIT_O073_MOK_NATHAL_WARRIOR_WARSONG;
 
     public QuestSubdueOgres(Rectangle rescueRect, LegendWarsong legendWarsong, LegendaryHero grom)
       : base(
@@ -32,17 +34,18 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       AddObjective(new ObjectiveControlPoint(Constants.UNIT_N022_STONEMAUL));
       AddObjective(new ObjectiveSelfExists());
       AddObjective(new ObjectiveControlLegend(legendWarsong.GromHellscream, true));
+      
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _grom = grom;
-      PillageGoldReward = 600;
-      PillageExperienceReward = 3000;
+      PillageGoldReward = 900;
+      PillageExperienceReward = 4000;
     }
 
     public override string RewardFlavour =>
       "The fate of the ogres has been decided, and the Horde's power grows.";
 
     protected override string RewardDescription =>
-      $"Gain control of Stonemaul and unlock the ability to train {GetObjectName(UNIT_N07A_OGRE_WARRIOR_WARSONG)}s and {GetObjectName(UNIT_N08O_OGRE_MAGI_WARSONG)}s. Alternatively, earn {PillageGoldReward} gold and up to {PillageExperienceReward} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives. Additionally, enhance both {GetObjectName(UNIT_O00G_BLADEMASTER_WARSONG)}s' and {GetObjectName(UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE)}s' attack damage, movement speed, and hit points.";
+      $"Gain control of Stonemaul, {GetObjectName(SubdueRemoveUnit)}s' are upgraded to {GetObjectName(SubdueAddUnit)}s' and unlock the ability to train {GetObjectName(UNIT_N08O_OGRE_MAGI_WARSONG)}s. Alternatively, earn {PillageGoldReward} gold and up to {PillageExperienceReward} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives.";
 
     protected override void OnComplete(Faction completingFaction)
     {
@@ -64,6 +67,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         return;
       }
 
+      // Pass unit upgrade for Subdue to dynamically replace units
       new WarsongPillageDialogPresenter(
         gromUnit,
         new WarsongPillageChoice(
@@ -80,7 +84,9 @@ namespace WarcraftLegacies.Source.Quests.Warsong
           Regions.StonemaulKeep,
           0,
           0,
-          SubdueResearchReward
+          SubdueResearchReward,
+          artifactRewardItemType: null,
+          new UnitUpgrade(SubdueRemoveUnit, SubdueAddUnit)
         )
       ).Run(completingFaction.Player);
     }

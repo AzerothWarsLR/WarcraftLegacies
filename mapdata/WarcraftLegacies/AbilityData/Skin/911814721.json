@@ -14,7 +14,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Each attack has a 30% chance to trap the target in a binding prison for 20(3 for heroes) seconds, dealing 30 damage per second. A unit can only be affected by Water Prison once every 10 seconds."
+      "Value": "Each attack has a 20% chance to trap the target in a binding prison for 20(3 for heroes) seconds, dealing 30 damage per second. A unit can only be affected by Water Prison once every 10 seconds."
     },
     {
       "Id": 1835101793,

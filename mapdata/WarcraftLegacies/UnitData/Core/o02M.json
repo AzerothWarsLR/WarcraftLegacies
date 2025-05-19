@@ -8,7 +8,7 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "A0DS,A0DXSca1,A10E,A0ES,A0XM,A020,A0BG,Aion"
+      "Value": "S00Y,A0DS,A0DXSca1,A0ES,A020,A0BG,Aion"
     },
     {
       "Id": 1633772661,
@@ -69,11 +69,6 @@
     {
       "Id": 1836083317,
       "Value": 775
-    },
-    {
-      "Id": 1885693045,
-      "Type": 3,
-      "Value": "o00P"
     }
   ]
 }

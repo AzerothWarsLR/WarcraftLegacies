@@ -33,6 +33,11 @@
       "Id": 1651864693,
       "Type": 3,
       "Value": "Heavy defensive structure, effective against clusters of ground units. "
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": "Abds,Afsh"
     }
   ]
 }
