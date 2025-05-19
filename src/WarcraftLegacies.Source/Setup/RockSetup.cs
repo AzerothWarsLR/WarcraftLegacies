@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup
     {
 
       //south rocks
-      RockSystem.Register(new RockGroup(Regions.KaliRock12, RockChunkId, 300));
+      RockSystem.Register(new RockGroup(Regions.KaliRock12, RockChunkId, 0));
 
       //Northrend Rocks
       RockSystem.Register(new RockGroup(Regions.NorthrendRock1, RockChunkId, 360));

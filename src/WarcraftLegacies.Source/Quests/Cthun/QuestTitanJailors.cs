@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
     {
         private readonly AllLegendSetup _allLegendSetup;
         private readonly List<unit> _rescueUnits;
-        private readonly List<RockGroup> _rockGroups; // Track the rocks
+        private readonly List<RockGroup> _rockGroups; 
 
         /// <summary>
         /// Initializes a new instance of the <see cref="QuestTitanJailors"/> class.
@@ -29,8 +29,7 @@ namespace WarcraftLegacies.Source.Quests.Cthun
             AddObjective(new ObjectiveControlPoint(UNIT_NLSE_TEMPLE_OF_AHN_QIRAJ, 1500));
             AddObjective(new ObjectiveExpire(660, Title));
             AddObjective(new ObjectiveSelfExists());
-
-            _rockGroups = new List<RockGroup>(); // Contains rock groups associated with the quest
+            _rockGroups = new List<RockGroup>(); 
             _allLegendSetup = allLegendSetup;
             _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
             RegisterRockGroups();
