@@ -126,7 +126,7 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
       {
         DummyAbilityId = ABILITY_A0Y0_WATER_PRISON_REAL,
         DummyOrderId = OrderId("entanglingroots"),
-        ProcChance = 0.3f,
+        ProcChance = 0.2f,
         Cooldown = 10f,
         RequiredResearch = UPGRADE_RSW3_QUEST_COMPLETED_SUBDUING_NEPTULON
       };
