@@ -37,13 +37,13 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Kalecgos = new LegendaryHero("Kalecgos")
       {
         UnitType = FourCC("U027"),
-        StartingXp = 9800
+        StartingXp = 5400
       };
 
       Aegwynn = new LegendaryHero("Aegwynn")
       {
         UnitType = FourCC("H09N"),
-        StartingXp = 9800
+        StartingXp = 5400
       };
 
       Dalaran = new Capital

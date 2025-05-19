@@ -71,6 +71,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
             yield return new(UPGRADE_R09N_FLIGHT_PATH_WARSONG, 1);
             yield return new(UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, 1);
             yield return new(UPGRADE_R09P_REVERT_BLOODPACT, 1);
+            yield return new(UPGRADE_TP17_IMPROVED_FRENZY_WARSONG, 1);
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿ using System.Diagnostics.CodeAnalysis;
 using System.Text;
 using Launcher.Extensions;
 using Launcher.IntegrityChecker.TestSupport;
@@ -25,7 +25,7 @@ namespace Launcher.IntegrityChecker
       
       var exceptions = new HashSet<string>
       {
-        "nftk", "nogo", "okod", "otbk", "n07A", "o02M", "o06Q"
+        "nftk", "nogo", "okod", "otbk", "n07A", "o02M", "o06Q", "o071", "o072", "o073"
       };
 
       foreach (var unit in objectDatabase.GetUnits().ToArray())
