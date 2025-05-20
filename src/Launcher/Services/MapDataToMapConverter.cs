@@ -1,4 +1,5 @@
 ﻿#nullable enable
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -143,22 +144,42 @@ namespace Launcher.Services
     {
       var mapUnits = new MapUnits(MapWidgetsFormatVersion.v8, MapWidgetsSubVersion.v11, true);
       var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
+
       foreach (var file in files)
       {
-        var fileContents = File.ReadAllText(file);
-        var unitDtoSet = JsonSerializer.Deserialize<HashSet<UnitDataDto>>(fileContents, _jsonSerializerOptions);
-
-        if (unitDtoSet == null)
-          throw new JsonException($"File {file} could not be serialized to {nameof(HashSet<UnitDataDto>)}.");
+        Console.WriteLine($"Processing file: {file}");
         
-        foreach (var unitDto in unitDtoSet)
+        try
         {
-          var unit = _mapper.Map<UnitData>(unitDto);
-          mapUnits.Units.Add(unit);
+          // Read file contents
+          var fileContents = File.ReadAllText(file);
+          Console.WriteLine($"Contents of {file} (first 200 characters): \n{fileContents.Substring(0, Math.Min(200, fileContents.Length))}");
+
+          // Deserialize JSON to HashSet<UnitDataDto>
+          var unitDtoSet = JsonSerializer.Deserialize<HashSet<UnitDataDto>>(fileContents, _jsonSerializerOptions);
+
+          if (unitDtoSet == null)
+            throw new JsonException($"File {file} could not be deserialized into {nameof(HashSet<UnitDataDto>)}.");
+
+          // Add units to the collection
+          foreach (var unitDto in unitDtoSet)
+          {
+            var unit = _mapper.Map<UnitData>(unitDto);
+            mapUnits.Units.Add(unit);
+          }
+        }
+        catch (Exception ex)
+        {
+          // Log error details and skip the file
+          Console.WriteLine($"Error processing file {file}: {ex.Message}");
+          Console.WriteLine(ex.StackTrace);
+          Console.WriteLine("Skipping this file due to deserialization error.");
         }
       }
+
       return mapUnits;
     }
+
 
     private MapRegions? DeserializeRegionsFromDirectory(string directory)
     {
