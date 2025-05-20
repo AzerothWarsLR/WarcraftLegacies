@@ -54,6 +54,7 @@ namespace WarcraftLegacies.Source.Spells
              UnitAlive(target) &&
              !IsUnitAlly(target, GetOwningPlayer(caster)) &&
              !IsUnitType(target, UNIT_TYPE_SUMMONED);
+      
     }
 
     private void ConvertUnit(unit caster, unit target)

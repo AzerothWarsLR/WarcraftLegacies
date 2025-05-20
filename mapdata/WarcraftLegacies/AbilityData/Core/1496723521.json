@@ -6,13 +6,6 @@
   ],
   "Modifications": [
     {
-      "Level": 1,
-      "Pointer": 1,
-      "Id": 828534085,
-      "Type": 2,
-      "Value": 65
-    },
-    {
       "Id": 1667330657,
       "Type": 3,
       "Value": "undead"
@@ -22,6 +15,12 @@
       "Id": 1851880033,
       "Type": 2,
       "Value": 500
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 30
     }
   ]
 }
