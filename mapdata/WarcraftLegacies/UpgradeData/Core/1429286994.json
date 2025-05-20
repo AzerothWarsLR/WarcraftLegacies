@@ -1,10 +1,6 @@
 {
   "OldId": 1751347026,
-<<<<<<<< HEAD:mapdata/WarcraftLegacies/UpgradeData/Core/925970514.json
-  "NewId": 925970514,
-========
   "NewId": 1429286994,
->>>>>>>> upstream/dev:mapdata/WarcraftLegacies/UpgradeData/Core/1429286994.json
   "Unk": [
     0
   ],
