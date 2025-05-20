@@ -1,4 +1,4 @@
-using MacroTools.Shared;
+﻿using MacroTools.Shared;
 using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
@@ -52,7 +52,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
             yield return new("Obla", 1); //Varok
             yield return new("O06L", 1); //Garrosh
             yield return new(UNIT_O005_WARSONG_BATTLEMASTER_WARSONG, 1); 
-            yield return new(UNIT_NSJS_BREWMASTER_WARSONG, 1);
+            yield return new(UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG, 1); //Rokhan
             yield return new("n0CN", 1); //Gibbs
             yield return new(UNIT_OPGH_CORRUPTOR_OF_THE_WARSONG_CLAN_WARSONG_BLOODPACT,
                 1); //Blood Pact Grom   Fixes Perma Death Grom Blood Pact bug
@@ -71,6 +71,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
             yield return new(UPGRADE_R09N_FLIGHT_PATH_WARSONG, 1);
             yield return new(UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, 1);
             yield return new(UPGRADE_R09P_REVERT_BLOODPACT, 1);
+            yield return new(UPGRADE_TP17_IMPROVED_FRENZY_WARSONG, 1);
         }
     }
 }

@@ -1,0 +1,24 @@
+{
+  "OldId": 1953066049,
+  "NewId": 1398222913,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Elemental Lord)"
+    },
+    {
+      "Id": 1734962273,
+      "Type": 3,
+      "Value": "MFPB"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Other\\Incinerate\\IncinerateBuff.mdl"
+    }
+  ]
+}

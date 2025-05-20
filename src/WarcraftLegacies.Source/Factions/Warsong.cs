@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
@@ -12,9 +12,7 @@ using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 using MacroTools.Extensions;
 using MacroTools.FactionChoices;
-using MacroTools.ResearchSystems;
 using WarcraftLegacies.Source.FactionMechanics.Warsong;
-using WarcraftLegacies.Source.Researches;
 
 
 namespace WarcraftLegacies.Source.Factions
@@ -65,7 +63,6 @@ Work closely with your new elven allies—only together will you overcome the lo
             ReplaceWithFactionUnits(this);
             RegisterQuests();
             RegisterDialogue();
-            RegisterFlightPath();
             BloodPactBattleSimulation.StartSimulation();
             SharedFactionConfigSetup.AddSharedFactionConfig(this);
             Regions.BarrenAmbient2.CleanupHostileUnits();
@@ -82,12 +79,12 @@ Work closely with your new elven allies—only together will you overcome the lo
           StartingQuest = AddQuest(new QuestGrom(_preplacedUnitSystem, _allLegendSetup.Warsong.GromHellscream, _allLegendSetup.Warsong.Gargok));
             AddQuest(new QuestOrgrimmar(Regions.Orgrimmar, _allLegendSetup.Warsong.GromHellscream));
             AddQuest(new QuestCrossroads(Regions.Crossroads));
-            AddQuest(new QuestChenStormstout(_preplacedUnitSystem.GetUnit(FourCC("Nsjs"))));
+            AddQuest(new QuestRokhan(_preplacedUnitSystem.GetUnit(Constants.UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG)));
            // AddQuest(new QuestFountainOfBlood(_allLegendSetup.Neutral.FountainOfBlood, _allLegendSetup.Warsong.GromHellscream));
            // AddQuest(new QuestBloodpact(_allLegendSetup.Warsong.Mannoroth, _allLegendSetup.Warsong.GromHellscream));
             AddQuest(new QuestGarrosh(_allLegendSetup.BlackEmpire.Nzoth));
             AddQuest(new QuestWarsongKillCthun(_allLegendSetup.Ahnqiraj.Cthun));
-            AddQuest(new QuestMoreWyverns(_allLegendSetup.Ahnqiraj.Cthun, _allLegendSetup.BlackEmpire.Nzoth));
+            AddQuest(new QuestKillOldGods(_allLegendSetup.Ahnqiraj.Cthun, _allLegendSetup.BlackEmpire.Nzoth));
             AddQuest(new QuestWarsongHold());
             AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
             AddQuest(new QuestSubdueOgres(Regions.StonemaulKeep, _allLegendSetup.Warsong, _allLegendSetup.Warsong.GromHellscream));
@@ -140,23 +137,6 @@ Work closely with your new elven allies—only together will you overcome the lo
           }
               }
             ));
-
-            TriggeredDialogueManager.Add(
-              new TriggeredDialogue(new Dialogue(
-                  @"Sound\Dialogue\OrcExpCamp\RandomOrcQuest02x\DR02Chen01",
-                  "Ah, greetings, my friend. I am Chen Stormstout, humble brewmaster of Pandaria. I have traveled the wide world searching for rare, exotic ingredients to use in my special brew! After all, good ale can solve all the problems of this world, don't you agree?",
-                  "Chen Stormstout")
-                , new[]
-                {
-            this
-                }, new[]
-                {
-            new ObjectiveControlLegend(_allLegendSetup.Warsong.ChenStormstout, false)
-            {
-              EligibleFactions = new List<Faction>{ this }
-            }
-                }));
-
             TriggeredDialogueManager.Add(
               new TriggeredDialogue(new DialogueSequence(new Dialogue(
                     @"Sound\Dialogue\OrcCampaign\Orc08\O08Grom33",
@@ -172,16 +152,6 @@ Work closely with your new elven allies—only together will you overcome the lo
               EligibleFactions = new List<Faction>{this}
             }
                 }));
-        }
-        
-        private void RegisterFlightPath()
-        {
-          // Registering Frostwolf's FlightPath research
-          ResearchManager.Register(new FlightPath(
-            this,
-            UPGRADE_R09N_FLIGHT_PATH_WARSONG,
-            70,
-            _preplacedUnitSystem));
         }
     }
 }

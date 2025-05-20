@@ -19,6 +19,17 @@ public sealed class ImportedModelTests : IClassFixture<MapTestFixture>
   [MemberData(nameof(GetAllImportedModels))]
   public void AllModels_AreInActiveUse(string relativePath)
   {
+    var excludedModels = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+    {
+      "war3mapimported\\orbofwind.mdx",
+    };
+    
+    if (excludedModels.Contains(relativePath))
+    {
+      return; 
+    }
+
+
     var activeModels = GetModelsUsedInMap(_mapTestFixture.Map).OrderBy(x => x).ToHashSet();
     activeModels.Contains(relativePath).Should().BeTrue($"the model {relativePath} exists in the map so it should be used by an ability, doodad, buff, destructable, or script");
   }

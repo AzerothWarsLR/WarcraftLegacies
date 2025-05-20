@@ -1,4 +1,6 @@
 ﻿using MacroTools.Data;
+using MacroTools.PassiveAbilities;
+using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
@@ -24,6 +26,34 @@ namespace WarcraftLegacies.Source.Setup.Spells
         EffectScaleTarget = 0.5f
       };
       SpellSystem.Register(inspireMadness);
+
+      var phantomStep = new PhantomStep(ABILITY_TPY7_PHANTOM_STEP_LEGION_ELITES)
+      {
+        CasterEffect = @"Abilities\Spells\Orc\MirrorImage\MirrorImageCaster.mdl",
+        DummyAbilityId = ABILITY_TPY4_PHANTOM_STEP_DUMMY, 
+        DummyOrderId = ORDER_WAND_ILLUSION
+      };
+
+      SpellSystem.Register(phantomStep);
+
+      var phantomStepHero = new PhantomStep(ABILITY_TPY1_PHANTOM_STEP_LEGION_HERO)
+      {
+        CasterEffect = @"Abilities\Spells\Orc\MirrorImage\MirrorImageCaster.mdl",
+        DummyAbilityId = ABILITY_TPY4_PHANTOM_STEP_DUMMY, 
+        DummyOrderId = ORDER_WAND_ILLUSION,
+        IllusionCountBase = 1, 
+        IllusionCountPerLevel = 0, 
+        IllusionDurationBase = 20.0f, 
+        IllusionDurationPerLevel = 0.0f, 
+        EffectScaleBase = 1.0f, 
+        EffectScalePerLevel = 0.0f,
+      };
+
+      SpellSystem.Register(phantomStepHero);
+
+
+
+      
       
       var summonBurningLegion = new SummonLegionSpell(ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS,
         ABILITY_A0KZ_SPELL_IMMUNITY_LEGION_SUMMON);
@@ -52,7 +82,38 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Radius = 50,
       };
       SpellSystem.Register(summonFelHounds);
+
+      var dreadlordHeroes = new[]
+      {
+        UNIT_UMAL_THE_CUNNING_LEGION,
+        UNIT_UTIC_THE_DARKENER_LEGION,
+        UNIT_U00L_ENVOY_OF_ARCHIMONDE_LEGION
+      };
+
+      PassiveAbilityManager.Register(new RestoreHealthFromEachTargetDamaged(dreadlordHeroes, ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS)
+      {
+        HealthPerTarget = new LeveledAbilityField<int>
+        {
+          Base = -5,
+          PerLevel = 10
+        },
+        HealthPerLevel = 1,
+        Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
+      });
+
+      PassiveAbilityManager.Register(new RestoreHealthFromEachTargetDamaged(UNIT_U007_DREADLORD_LEGION_ELITE, ABILITY_VP08_VAMPIRIC_SIPHON_LEGION_ELITES)
+      {
+        HealthPerTarget = new LeveledAbilityField<int>
+        {
+          Base = -5,
+          PerLevel = 10
+        },
+        HealthPerLevel = 1,
+        Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
+      });
     }
+    
+  
 
     private static void RegisterSlipstreams()
     {

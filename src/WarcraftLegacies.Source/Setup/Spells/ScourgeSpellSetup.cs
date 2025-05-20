@@ -147,6 +147,34 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DummyAbilityOrderId = OrderId("parasite"),
         UpgradeCondition = unit => GetUnitTypeId(unit) == UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE
       });
+      
+      {
+        var deathPact = new DeathPact(ABILITY_A0W9_DEATH_PACT_ICON)
+        {
+          Radius = 700.0f,
+          KillEffect = @"Abilities\Spells\Undead\DeathPact\DeathPactTarget.mdl",
+          HealEffect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
+          HealthRestorePercent = 1.25f, 
+          ManaRestorePercent = 0.10f 
+        };
+
+        SpellSystem.Register(deathPact);
+
+     
+        var darkRitual = new DeathPact(ABILITY_A0WP_DARK_RITUAL_ICON)
+        {
+          Radius = 900.0f,
+          KillEffect = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl",
+          HealEffect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl",
+          HealthRestorePercent = 0.25f, 
+          ManaRestorePercent = 0.36f 
+        };
+
+        SpellSystem.Register(darkRitual);
+      }
+
+      
+      
 
       PassiveAbilityManager.Register(new SummonUnitOnCast(UNIT_U00A_SCOURGE_COMMANDER_SCOURGE, ABILITY_ST52_ARMY_OF_THE_DEAD_SCOURGE)
       {
@@ -186,6 +214,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
           Base = -0.3f,
           PerLevel = 0.3f
         }
+        
+        
       });
     }
   }

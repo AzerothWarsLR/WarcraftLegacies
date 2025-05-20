@@ -6,7 +6,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
   public sealed class LegendWarsong
   {
     public LegendaryHero GromHellscream { get; }
-    public LegendaryHero ChenStormstout { get; }
+    public LegendaryHero Rokhan { get; }
     public LegendaryHero Saurfang { get; }
     public LegendaryHero Garrosh { get; }
     public LegendaryHero Gargok { get; }
@@ -26,10 +26,10 @@ namespace WarcraftLegacies.Source.Setup.Legends
           new(CreateItem(ITEM_I01V_GOREHOWL, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
         }
       };
-      
-      ChenStormstout = new LegendaryHero("Chen Stormstout")
+
+      Rokhan = new LegendaryHero("Rokhan")
       {
-        UnitType = UNIT_NSJS_BREWMASTER_WARSONG,
+        UnitType = UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG,
         StartingXp = 1000
       };
 
@@ -83,7 +83,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public void RegisterLegends()
     {
       LegendaryHeroManager.Register(GromHellscream);
-      LegendaryHeroManager.Register(ChenStormstout);
+      LegendaryHeroManager.Register(Rokhan);
       LegendaryHeroManager.Register(Saurfang);
       LegendaryHeroManager.Register(Garrosh);
       LegendaryHeroManager.Register(Mannoroth);

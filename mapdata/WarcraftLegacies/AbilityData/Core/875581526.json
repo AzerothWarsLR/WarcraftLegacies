@@ -1,0 +1,231 @@
+{
+  "OldId": 1752384833,
+  "NewId": 875581526,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 90
+    },
+    {
+      "Level": 2,
+      "Id": 1935895905,
+      "Value": 90
+    },
+    {
+      "Level": 3,
+      "Id": 1935895905,
+      "Value": 90
+    },
+    {
+      "Level": 4,
+      "Id": 1935895905,
+      "Value": 90
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828928837,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 4,
+      "Pointer": 1,
+      "Id": 828928837,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845706053,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 845706053,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845706053,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 4,
+      "Pointer": 2,
+      "Id": 845706053,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 896037701,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 3,
+      "Pointer": 5,
+      "Id": 896037701,
+      "Type": 2,
+      "Value": 90
+    },
+    {
+      "Level": 4,
+      "Pointer": 5,
+      "Id": 896037701,
+      "Type": 2,
+      "Value": 120
+    },
+    {
+      "Id": 1986358369,
+      "Value": 4
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 3,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 4,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 500
+    },
+    {
+      "Level": 2,
+      "Pointer": 4,
+      "Id": 879260485,
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 879260485,
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 4,
+      "Pointer": 4,
+      "Id": 879260485,
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 2,
+      "Pointer": 5,
+      "Id": 896037701,
+      "Type": 2,
+      "Value": 60
+    },
+    {
+      "Level": 1,
+      "Id": 1935762273,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": 1935762273,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 3,
+      "Id": 1935762273,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 4,
+      "Id": 1935762273,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 13
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 11
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 9
+    },
+    {
+      "Level": 1,
+      "Pointer": 4,
+      "Id": 879260485,
+      "Type": 2,
+      "Value": 1.5
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862483269,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862483269,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 862483269,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 4,
+      "Pointer": 3,
+      "Id": 862483269,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 7
+    }
+  ]
+}

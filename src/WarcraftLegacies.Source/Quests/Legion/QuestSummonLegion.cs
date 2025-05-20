@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared;
@@ -15,8 +16,9 @@ namespace WarcraftLegacies.Source.Quests.Legion
     private readonly List<unit> _rescueUnits;
     private readonly unit _interiorPortal;
     private readonly ObjectiveCastSpell _objectiveCastSpell;
+    private readonly LegendaryHero _anetheron;
 
-    public QuestSummonLegion(Rectangle rescueRect, unit interiorPortal) : base("Under the Burning Sky",
+    public QuestSummonLegion(Rectangle rescueRect, unit interiorPortal, LegendaryHero anetheron) : base("Under the Burning Sky",
       "The greater forces of the Burning Legion lie in wait in the vast expanse of the Twisting Nether. Use the Book of Medivh to tear open a hole in space-time, and visit the full might of the Legion upon Azeroth.",
       @"ReplaceableTextures\CommandButtons\BTNArchimonde.blp")
     {
@@ -26,6 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
       ResearchId = UPGRADE_R04B_QUEST_COMPLETED_UNDER_THE_BURNING_SKY;
       Global = true;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+      _anetheron = anetheron;
     }
 
     /// <inheritdoc />
@@ -34,11 +37,13 @@ namespace WarcraftLegacies.Source.Quests.Legion
 
     /// <inheritdoc />
     protected override string RewardDescription =>
-      $"The hero Archimonde, control of all units in the Twisting Nether, learn to train Greater Demons, and can now build 9 more {GetObjectName(UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS)} and {GetObjectName(UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC)}";
+      $"The hero Archimonde, control of all units in the Twisting Nether, learn to train Greater Demons, and can now build 9 more {GetObjectName(UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS)} and {GetObjectName(UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC)}. Anetheron improves his Vampiric Siphon ability";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction whichFaction)
     {
+      _anetheron.Unit?.SetAbilityLevel(ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS, 2);
+
       whichFaction.ModObjectLimit(UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC, 9);
       whichFaction.ModObjectLimit(UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS, 9);
       whichFaction.ModObjectLimit(UNIT_NINF_INFERNAL_LEGION, 6);

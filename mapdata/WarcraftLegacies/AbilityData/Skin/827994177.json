@@ -1,0 +1,64 @@
+{
+  "OldId": 1936016193,
+  "NewId": 827994177,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2037408353,
+      "Value": -11
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Akama)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CA0Z1,DataA1,%\u003E% percent chance to avoid an attack."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Evasion"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Evasion"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Evasion"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CA0Z1,DataA2,%\u003E% percent chance to avoid an attack."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CA0Z1,DataA4,%\u003E% percent chance to avoid an attack."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a \u003CA013,DataA3,%\u003E% percent chance to avoid an attack."
+    }
+  ]
+}
