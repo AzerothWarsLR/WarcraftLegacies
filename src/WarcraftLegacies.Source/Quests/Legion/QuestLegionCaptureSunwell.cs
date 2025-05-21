@@ -20,6 +20,6 @@ namespace WarcraftLegacies.Source.Quests.Legion
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Improves Dreadlords and Nathrezim by increasing their attack damage by 20, movement speed by 20, hit points by 200, and granting them the ability to cast Astral Walk";
+      "Improves Dreadlords and Nathrezim by increasing their attack damage by 20, movement speed by 20, hit points by 200, improves the Vampiric Siphon ability and grants them the ability to cast Astral Walk";
   }
 }

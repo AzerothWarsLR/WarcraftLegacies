@@ -1,0 +1,44 @@
+{
+  "OldId": 829453167,
+  "NewId": 1093808239,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Ward of Gale"
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "AirEssence.mdl"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 2.5
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "OrbOfWind.mdl"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Skywall)"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWindOrb.blp"
+    },
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}
