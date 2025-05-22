@@ -43,9 +43,9 @@
     },
     {
       "Level": 1,
-      "Id": 1701994849,
-      "Type": 2,
-      "Value": 200
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "air,ground,ward,vuln,invu,tree"
     }
   ]
 }
