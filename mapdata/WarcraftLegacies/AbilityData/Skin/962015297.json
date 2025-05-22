@@ -12,7 +12,7 @@
     },
     {
       "Id": 2037408353,
-      "Value": 1
+      "Value": 2
     },
     {
       "Id": 1952539489,
@@ -37,7 +37,7 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "D"
+      "Value": "E"
     },
     {
       "Id": 1835101793,
@@ -120,10 +120,6 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Instantly kills the 9 lowest level non-Hero nearby enemy units, granting the caster 5 Strength for each unit slain for 30 seconds."
-    },
-    {
-      "Id": 2020631137,
-      "Value": 1
     }
   ]
 }
