@@ -139,19 +139,19 @@ You have a very powerful event in the Burning of the World Tree. Use it at the r
       };
       SpellSystem.Register(earthProtectionHero);  
       
-      var stormSurge = new MassAnySpellAndDamage(ABILITY_A104_STORM_SURGE_SKYWALL)
+      var stormSurge = new MassAnySpell(ABILITY_A104_STORM_SURGE_SKYWALL)
       {
         DummyAbilityId = ABILITY_TP04_PURGE_DUMMY, 
         DummyAbilityOrderId = ORDER_PURGE,         
         Radius = 200,
         DamageBase = 30,
         DamageLevel = 20,
-        DurationBase = 2,
-        DurationLevel = 1,
+        EnableDamage = true,
         TargetType = SpellTargetType.Point,
         CastFilter = CastFilters.IsTargetEnemyAndAlive
       };
       SpellSystem.Register(stormSurge);
+
 
 
       var massEnsnare = new MassAnySpell(ABILITY_A01N_MASS_ENSNARE_SKYWALL)

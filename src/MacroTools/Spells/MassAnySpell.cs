@@ -12,7 +12,7 @@ namespace MacroTools.Spells
     public int DummyAbilityId { get; init; }
 
     public int DummyAbilityOrderId { get; init; }
-
+    
     public float Radius { get; init; }
 
     public required DummyCasterManager.CastFilter CastFilter { get; init; }
@@ -20,11 +20,14 @@ namespace MacroTools.Spells
     public SpellTargetType TargetType { get; init; } = SpellTargetType.None;
 
     public DummyCasterType DummyCasterType { get; init; } = DummyCasterType.Global;
+
     public float Chance { get; init; } = 1.0f;
-    /// <summary>
-    /// Determines where the spell's dummmy units spawn when they cast <see cref="DummyAbilityId"/>.
-    /// </summary>
+
     public DummyCastOriginType DummyCastOriginType { get; init; } = DummyCastOriginType.Target;
+
+    public float DamageBase { get; init; } = 0f; 
+    public float DamageLevel { get; init; } = 0f;  
+    public bool EnableDamage { get; init; } = false;
 
     public MassAnySpell(int id) : base(id)
     {
@@ -36,15 +39,41 @@ namespace MacroTools.Spells
       var units = GetUnitsInRadius(center, Radius, CastFilter);
 
       var filteredUnits = units.Where(u => GetRandomReal(0, 1) <= Chance).ToList();
+
+      foreach (var unit in filteredUnits)
+      {
+        if (EnableDamage)
+        {
+          var damage = DamageBase + DamageLevel * GetAbilityLevel(caster);
+          UnitDamageTarget(caster, unit, damage, false, false, ATTACK_TYPE_NORMAL, DAMAGE_TYPE_MAGIC, WEAPON_TYPE_WHOKNOWS);
+        }
+      }
+
       if (DummyCasterType == DummyCasterType.Global)
       {
-        DummyCasterManager.GetGlobalDummyCaster().CastOnUnitsInCircle(caster, DummyAbilityId, DummyAbilityOrderId, GetAbilityLevel(caster),
-            center, Radius, (c, t) => filteredUnits.Contains(t), DummyCastOriginType);
+        DummyCasterManager.GetGlobalDummyCaster()
+          .CastOnUnitsInCircle(
+            caster, 
+            DummyAbilityId, 
+            DummyAbilityOrderId, 
+            GetAbilityLevel(caster), 
+            center, 
+            Radius, 
+            (c, t) => filteredUnits.Contains(t), 
+            DummyCastOriginType
+          );
       }
       else if (DummyCasterType == DummyCasterType.AbilitySpecific)
       {
         DummyCasterManager.GetAbilitySpecificDummyCaster(DummyAbilityId, DummyAbilityOrderId)
-            .CastOnUnitsInCircle(caster, GetAbilityLevel(caster), center, Radius, (c, t) => filteredUnits.Contains(t), DummyCastOriginType);
+          .CastOnUnitsInCircle(
+            caster, 
+            GetAbilityLevel(caster), 
+            center, 
+            Radius, 
+            (c, t) => filteredUnits.Contains(t), 
+            DummyCastOriginType
+          );
       }
     }
 

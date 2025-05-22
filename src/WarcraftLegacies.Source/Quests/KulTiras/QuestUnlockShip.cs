@@ -19,6 +19,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
   {
     private readonly unit _proudmooreCapitalShip;
     private readonly List<unit> _rescueUnits;
+    private bool _questProcessed; // New field to prevent repeated execution
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestUnlockShip"/> class.
@@ -50,6 +51,10 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
+      if (_questProcessed)
+        return; 
+
+      _questProcessed = true; 
       if (completingFaction.Player != null)
       {
         var dialogPresenter = new UnlockShipDialogPresenter(
@@ -61,18 +66,15 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       }
       else
       {
-        // Fallback if no player exists
         Player(bj_PLAYER_NEUTRAL_VICTIM).RescueGroup(_rescueUnits);
         _proudmooreCapitalShip.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       }
-    
-      // Ensure the ship is rescued and unlocked
+      
       EnsureShipIsUnlocked(completingFaction);
     }
     
     private void EnsureShipIsUnlocked(Faction completingFaction)
     {
-      // Handle ship unlocking logic
       if (completingFaction.Player != null)
       {
         _proudmooreCapitalShip.Rescue(completingFaction.Player);
@@ -88,7 +90,11 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
+      if (_questProcessed)
+        return; 
+
       _proudmooreCapitalShip.Remove();
+      _questProcessed = true; 
     }
   }
 }

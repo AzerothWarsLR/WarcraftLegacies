@@ -190,7 +190,6 @@ Your allies will be coming south to help you defend against the Old Gods, do not
 
     private void RegisterFlightPath()
     {
-      // Registering Frostwolf's FlightPath research
       ResearchManager.Register(new FlightPath(
         this,
         UPGRADE_R09N_FLIGHT_PATH_WARSONG,
