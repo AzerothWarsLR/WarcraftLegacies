@@ -1,6 +1,6 @@
 {
   "OldId": 1818447425,
-  "NewId": 962015297,
+  "NewId": 1127231809,
   "Unk": [
     0
   ],
@@ -12,7 +12,7 @@
     },
     {
       "Id": 2037408353,
-      "Value": 2
+      "Value": 1
     },
     {
       "Id": 1952539489,
@@ -27,7 +27,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(ICON)"
+      "Value": "(ICON Arthas)"
     },
     {
       "Id": 1952540001,
@@ -37,7 +37,7 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "E"
+      "Value": "D"
     },
     {
       "Id": 1835101793,
@@ -101,7 +101,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Sacrifices a friendly Undead unit, giving 125% of its hit points to the Death Knight and 10% of it\u0027s hitpoints in mana. Prioritises summoned units."
+      "Value": "Sacrifices a friendly Undead unit, giving 150% of its hit points to the Death Knight and 20% of it\u0027s hitpoints in mana. Prioritises summoned units."
     },
     {
       "Level": 2,

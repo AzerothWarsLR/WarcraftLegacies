@@ -6,11 +6,6 @@
   ],
   "Modifications": [
     {
-      "Id": 1768841569,
-      "Type": 3,
-      "Value": "spell"
-    },
-    {
       "Id": 1953653089,
       "Type": 3,
       "Value": "ReplaceableTextures/CommandButtons/BTNShockStorm3.blp"
@@ -129,6 +124,11 @@
       "Id": 1835101793,
       "Type": 3,
       "Value": "Storm Surge"
+    },
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "spell"
     }
   ]
 }

@@ -160,7 +160,18 @@ namespace WarcraftLegacies.Source.Setup.Spells
 
         SpellSystem.Register(deathPact);
 
-     
+        var deathPactarthas = new DeathPact(ABILITY_A10C_DEATH_PACT_ICON_ARTHAS)
+        {
+          Radius = 700.0f,
+          KillEffect = @"Abilities\Spells\Undead\DeathPact\DeathPactTarget.mdl",
+          HealEffect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
+          HealthRestorePercent = 1.5f,
+          ManaRestorePercent = 0.20f
+        };
+
+        SpellSystem.Register(deathPactarthas);
+
+
         var darkRitual = new DeathPact(ABILITY_A0WP_DARK_RITUAL_ICON)
         {
           Radius = 900.0f,

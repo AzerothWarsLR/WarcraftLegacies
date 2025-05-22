@@ -62,7 +62,7 @@
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Increases the unit\u0027s attack rate by \u003CA0XM,DataA1,%\u003E% and movement speed by \u003CA0XM,DataB1,%\u003E% for \u003CA0EH,Dur1\u003E seconds."
+      "Value": "Increases the unit\u0027s attack rate by \u003CA0XM,DataA2,%\u003E% and movement speed by \u003CA0XM,DataB2,%\u003E% for \u003CA0EH,Dur1\u003E seconds."
     },
     {
       "Level": 1,

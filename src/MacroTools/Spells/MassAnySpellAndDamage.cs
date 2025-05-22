@@ -47,7 +47,7 @@ namespace MacroTools.Spells
         {
           var duration = DurationBase + DurationLevel * GetAbilityLevel(caster);
           DummyCasterManager.GetGlobalDummyCaster()
-            .CastUnit(caster, DummyAbilityId, DummyAbilityOrderId, duration, unit, DummyCastOriginType);
+            .CastUnit(caster, DummyAbilityId, DummyAbilityOrderId, GetAbilityLevel(caster), unit, DummyCastOriginType);
         }
       }
     }
