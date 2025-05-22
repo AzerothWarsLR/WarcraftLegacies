@@ -25,20 +25,26 @@ namespace Launcher.MapMigrations
 
           var healthDividedByFactor = unitHealth / HealthFactor;
 
-          if (healthDividedByFactor < 8)
+          if (healthDividedByFactor < 5)
             level += healthDividedByFactor;
           else
-            level += 7;
+            level += 4;
 
           switch (unitHealth)
           {
-            case >= 3000:
-              level += 3;
+            case >= 2800:
+              level += 5;
               break;
             case >= 2400:
-              level += 2;
+              level += 4;
               break;
             case >= 1800:
+              level += 3;
+              break;
+            case >= 1600:
+              level += 2;
+              break;
+            case >= 1200:
               level += 1;
               break;
           }
