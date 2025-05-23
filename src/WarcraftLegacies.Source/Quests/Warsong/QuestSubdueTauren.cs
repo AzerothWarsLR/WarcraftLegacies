@@ -47,7 +47,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
 
         /// <inheritdoc/>
         protected override string RewardDescription =>
-          $"Control of Thunder Bluff and the ability to train {GetObjectName(UNIT_OKOD_KODO_BEAST_WARSONG)}s' from {GetObjectName(UNIT_O02Q_BEASTIARY_WARSONG_SPECIALIST)} or gain the artifact {GetObjectName(ITEM_I00L_BLOODHOOF_TOTEM)}, {PillageGoldReward} gold and {PillageExperienceReward} experience points, shared across all your heroes—the fewer heroes you control, the less experience each receives..";
+          $"Control of Thunder Bluff and the ability to train {GetObjectName(UNIT_OKOD_KODO_BEAST_WARSONG)}s' from {GetObjectName(UNIT_O02Q_BEASTIARY_WARSONG_SPECIALIST)} or gain the artifact {GetObjectName(ITEM_I00L_BLOODHOOF_TOTEM)}, {PillageGoldReward} gold and {PillageExperienceReward} experience points, shared across all your heroes—the fewer heroes you control, the less experience each receives.";
 
         /// <inheritdoc/>
         protected override void OnComplete(Faction completingFaction)

@@ -45,7 +45,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       "The fate of the ogres has been decided, and the Horde's power grows.";
 
     protected override string RewardDescription =>
-      $"Gain control of Stonemaul, {GetObjectName(SubdueRemoveUnit)}s' are upgraded to {GetObjectName(SubdueAddUnit)}s' and unlock the ability to train {GetObjectName(UNIT_N08O_OGRE_MAGI_WARSONG)}s. Alternatively, earn {PillageGoldReward} gold and up to {PillageExperienceReward} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives.";
+      $"Gain control of Stonemaul, {GetObjectName(SubdueRemoveUnit)}s' are upgraded to {GetObjectName(SubdueAddUnit)}s' and unlock the ability to train {GetObjectName(UNIT_N08O_OGRE_MAGI_WARSONG)}s. Alternatively, earn {PillageGoldReward} gold and up to {PillageExperienceReward} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives. Additionally, enhance both {GetObjectName(Constants.UNIT_O00G_BLADEMASTER_WARSONG)}s' and {GetObjectName(Constants.UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE)}s' attack damage by 10, movement speed by 20 and hit points by 300.";
 
     protected override void OnComplete(Faction completingFaction)
     {
@@ -66,8 +66,6 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         Console.WriteLine("Without Grom's leadership to restrain the Warband, the ogres are slaughtered.");
         return;
       }
-
-      // Pass unit upgrade for Subdue to dynamically replace units
       new WarsongPillageDialogPresenter(
         gromUnit,
         new WarsongPillageChoice(

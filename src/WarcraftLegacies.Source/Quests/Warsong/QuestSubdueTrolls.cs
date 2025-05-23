@@ -45,7 +45,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       "The Darkspear Trolls have been brought to heel.";
 
     protected override string RewardDescription =>
-      $"Gain control of Echo Isles, {GetObjectName(SubdueRemoveUnit)}s are upgraded to {GetObjectName(SubdueAddUnit)}s and learn to train {GetObjectName(Constants.UNIT_N08E_SHADOWPRIEST_WARSONG)}s. Alternatively, earn {PillageGoldReward} gold and up to {PillageExperienceReward} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives. Additionally, enhance both {GetObjectName(Constants.UNIT_O00G_BLADEMASTER_WARSONG)}s' and {GetObjectName(Constants.UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE)}s' maximum mana by 250 and mana regeneration by 20%.";
+      $"Gain control of Echo Isles, {GetObjectName(SubdueRemoveUnit)}s are upgraded to {GetObjectName(SubdueAddUnit)}s and learn to train {GetObjectName(Constants.UNIT_N08E_SHADOWPRIEST_WARSONG)}s. Alternatively, earn {PillageGoldReward} gold and up to {PillageExperienceReward} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives. Additionally, enhance both {GetObjectName(Constants.UNIT_O00G_BLADEMASTER_WARSONG)}s' and {GetObjectName(Constants.UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE)}s' maximum mana by 250 and mana regeneration by 50%.";
 
     protected override void OnComplete(Faction completingFaction)
     {
@@ -66,8 +66,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         Console.WriteLine("Without Grom's leadership, the Trolls are scattered in chaos and their riches lost.");
         return;
       }
-
-      // Pass unit upgrade for Subdue to dynamically replace units
+      
       new WarsongPillageDialogPresenter(
         gromUnit,
         new WarsongPillageChoice(
