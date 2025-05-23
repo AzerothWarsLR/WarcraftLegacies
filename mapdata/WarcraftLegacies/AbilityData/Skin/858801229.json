@@ -19,7 +19,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives friendly nearby units a 35 armor.|n|cffffcc00Lasts 30 seconds."
+      "Value": "Gives nearby Heroes a 35 armor buff.|n30 second cooldown|n|cffffcc00Lasts 30 seconds."
     },
     {
       "Id": 1952539489,

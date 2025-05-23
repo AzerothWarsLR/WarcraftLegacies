@@ -46,6 +46,18 @@
       "Id": 1718968929,
       "Type": 3,
       "Value": "B06O"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "hero,player,vulnerable"
     }
   ]
 }
