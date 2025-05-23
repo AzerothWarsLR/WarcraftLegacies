@@ -1,4 +1,4 @@
-using MacroTools.Shared;
+﻿using MacroTools.Shared;
 using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("nhea", Unlimited); //Archer
       yield return new("e008", 6); //Elven Ballista
       yield return new("n00A", 6); //Farstrider
-      yield return new("e01B", 6); //Arcane Annihilator
+      yield return new("e024", 6); //Arcane Annihilator
       yield return new("n02F", 6); //Warlock
       yield return new("n063", 12); //Magus
       yield return new("hspt", Unlimited); //Spell Breaker
