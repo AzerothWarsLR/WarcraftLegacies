@@ -24,6 +24,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Vashj = new LegendaryHero("Lady Vashj")
       {
         UnitType = FourCC("Hvsh"),
+        StartingXp = 1000
       };
 
       Azshara = new LegendaryHero("Azshara")
@@ -34,7 +35,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Najentus = new LegendaryHero("Warlord Najentus")
       {
         UnitType = FourCC("U00S"),
-        StartingXp = 2800
+        StartingXp = 5400
       };
 
       Altruis = new LegendaryHero("Altruis")
