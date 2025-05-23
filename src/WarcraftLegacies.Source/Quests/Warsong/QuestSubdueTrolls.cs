@@ -66,8 +66,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         Console.WriteLine("Without Grom's leadership, the Trolls are scattered in chaos and their riches lost.");
         return;
       }
-
-      // Pass unit upgrade for Subdue to dynamically replace units
+      
       new WarsongPillageDialogPresenter(
         gromUnit,
         new WarsongPillageChoice(

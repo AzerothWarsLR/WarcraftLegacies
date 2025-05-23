@@ -66,8 +66,6 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         Console.WriteLine("Without Grom's leadership to restrain the Warband, the ogres are slaughtered.");
         return;
       }
-
-      // Pass unit upgrade for Subdue to dynamically replace units
       new WarsongPillageDialogPresenter(
         gromUnit,
         new WarsongPillageChoice(

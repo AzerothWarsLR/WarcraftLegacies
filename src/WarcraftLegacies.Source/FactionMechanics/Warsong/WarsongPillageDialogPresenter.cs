@@ -148,14 +148,12 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
       if (upgrade.RemoveUnit != 0)
       {
         faction.ModObjectLimit(upgrade.RemoveUnit, -Faction.UNLIMITED);
-        Console.WriteLine($"Unit removed from training: {GetObjectName(upgrade.RemoveUnit)}.");
       }
 
     
       if (upgrade.AddUnit != 0)
       {
         faction.ModObjectLimit(upgrade.AddUnit, Faction.UNLIMITED);
-        Console.WriteLine($"Unit added to training: {GetObjectName(upgrade.AddUnit)} is now trainable.");
       }
     }
 
