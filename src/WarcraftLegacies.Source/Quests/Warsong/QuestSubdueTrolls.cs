@@ -22,8 +22,6 @@ namespace WarcraftLegacies.Source.Quests.Warsong
     private int PillageExperienceReward { get; set; }
     private const int SubdueResearchReward = Constants.UPGRADE_R00K_SUBDUE_THE_DARKSPEAR_TROLLS;
     private const int PillageResearchReward = Constants.UPGRADE_R01Z_PILLAGE_ECHO_ISLES;
-
-    // Unit constants for Subdue
     private const int SubdueRemoveUnit = Constants.UNIT_OTBK_AXE_THROWER_WARSONG;
     private const int SubdueAddUnit = Constants.UNIT_O071_DARKSPEAR_BERSERKER_WARSONG;
 

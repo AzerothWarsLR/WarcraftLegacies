@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(UNIT_H06D_ROYAL_HARBOUR_STORMWIND_SHIPYARD, Unlimited, UnitCategory.Shipyard);
       yield return new("h06Y", Unlimited); //Arcane Tower
       yield return new("h06Z", Unlimited); //Arcane Tower (Improved)
-      yield return new("h024", Unlimited); //Light House
+      yield return new(UNIT_H024_LIGHT_HOUSE_STORMWIND_OTHER, 10); //Light House
       yield return new(UNIT_H05J_CHAMPION_S_HALL_STORMWIND_OTHER, 1);
       yield return new(UNIT_H05A_WIZARD_S_SANCTUM_STORMWIND_OTHER, 1);
       yield return new("hpea", Unlimited); //Peasant
