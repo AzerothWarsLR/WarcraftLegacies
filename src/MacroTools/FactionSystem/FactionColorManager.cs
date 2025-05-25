@@ -35,7 +35,6 @@ namespace MacroTools.FactionSystem
       ColorAvailability[Common.PLAYER_COLOR_EMERALD] = true;
       ColorAvailability[Common.PLAYER_COLOR_PEANUT] = true;
 
-// UI colours etc 
       ColorHexMap[Common.PLAYER_COLOR_RED] = "|cffff0303";
       ColorHexMap[Common.PLAYER_COLOR_BLUE] = "|cff0042ff";
       ColorHexMap[Common.PLAYER_COLOR_CYAN] = "|cff1be7ba";
@@ -88,7 +87,36 @@ namespace MacroTools.FactionSystem
 
     public static string GetColorHexCode(Common.playercolor color)
     {
-      return ColorHexMap.ContainsKey(color) ? ColorHexMap[color] : "|cffffffff"; // Default to white if color not found
+      return ColorHexMap.ContainsKey(color) ? ColorHexMap[color] : "|cffffffff";
+    }
+
+    public static Common.playercolor GetFallbackColor()
+    {
+      foreach (var kvp in ColorAvailability)
+      {
+        if (kvp.Value)
+        {
+          return kvp.Key;
+        }
+      }
+
+      throw new InvalidOperationException("No colors are available to assign.");
+    }
+
+    public static Common.playercolor AssignPreferredColorOrFallback(Common.playercolor[] preferredColors)
+    {
+      foreach (var color in preferredColors)
+      {
+        if (IsColorAvailable(color))
+        {
+          AssignColor(color);
+          return color;
+        }
+      }
+
+      var fallbackColor = GetFallbackColor();
+      AssignColor(fallbackColor);
+      return fallbackColor;
     }
   }
 }

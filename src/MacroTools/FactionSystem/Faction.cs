@@ -86,23 +86,10 @@ namespace MacroTools.FactionSystem
       Id = _highestId + 1;
       _highestId = Id;
 
-      
-      foreach (var color in colorPriority)
-      {
-        if (ColorManager.IsColorAvailable(color))
-        {
-          PlayerColor = color;
-          ColorManager.AssignColor(color);
-          PrefixCol = ColorManager.GetColorHexCode(color); 
-          break;
-        }
-      }
-
-      if (PlayerColor == null)
-      {
-        throw new InvalidOperationException($"No available colors could be assigned to faction {name}.");
-      }
+      PlayerColor = ColorManager.AssignPreferredColorOrFallback(colorPriority);
+      PrefixCol = ColorManager.GetColorHexCode(PlayerColor);
     }
+
 
 
     internal List<FactionDependentInitializer> FactionDependentInitializers { get; } = new();
