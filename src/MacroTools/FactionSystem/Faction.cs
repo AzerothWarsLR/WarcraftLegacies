@@ -92,6 +92,8 @@ namespace MacroTools.FactionSystem
 
 
 
+
+
     internal List<FactionDependentInitializer> FactionDependentInitializers { get; } = new();
 
     /// <summary>A unique numerical identifier.</summary>
@@ -273,12 +275,19 @@ namespace MacroTools.FactionSystem
         SetPlayerState(Player, PLAYER_STATE_OBSERVER, 1);
         PlayerDistributor.DistributePlayer(Player);
         RemoveGoldMines();
+
+        if (PlayerColor != null)
+        {
+          ColorManager.ReleaseColor(PlayerColor);
+        }
       }
 
       ScoreStatus = ScoreStatus.Defeated;
+
       StatusChanged?.Invoke(this, this);
       ScoreStatusChanged?.Invoke(this, this);
     }
+
 
     /// <summary>
     ///   Returns the maximum number of times the Faction can train a unit, build a building, or research a research.

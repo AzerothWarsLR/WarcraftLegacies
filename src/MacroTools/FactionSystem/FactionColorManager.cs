@@ -83,11 +83,22 @@ namespace MacroTools.FactionSystem
       {
         ColorAvailability[color] = true;
       }
+      else
+      {
+        throw new InvalidOperationException($"Tried to release color {color} but it is not managed.");
+      }
     }
 
     public static string GetColorHexCode(Common.playercolor color)
     {
-      return ColorHexMap.ContainsKey(color) ? ColorHexMap[color] : "|cffffffff";
+      if (ColorHexMap.ContainsKey(color))
+      {
+        return ColorHexMap[color];
+      }
+      else
+      {
+        return "|cffffffff"; // Default to white
+      }
     }
 
     public static Common.playercolor GetFallbackColor()
