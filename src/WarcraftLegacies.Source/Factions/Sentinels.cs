@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    public Sentinels(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Sentinels", PLAYER_COLOR_MINT, "|CFFBFFF80",
+    public Sentinels(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Sentinels", new[] {PLAYER_COLOR_MINT, PLAYER_COLOR_CYAN, PLAYER_COLOR_AQUA},
       @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
     {
       TraditionalTeam = TeamSetup.Kalimdor;

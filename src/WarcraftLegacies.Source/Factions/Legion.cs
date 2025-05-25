@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Factions
     /// <inheritdoc />
     
     public Legion(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Legion",
-      PLAYER_COLOR_PEANUT, "|CFFBF8F4F", @"ReplaceableTextures\CommandButtons\BTNKiljaedin.blp")
+      new[] {PLAYER_COLOR_PEANUT, PLAYER_COLOR_WHEAT, PLAYER_COLOR_VIOLET}, @"ReplaceableTextures\CommandButtons\BTNKiljaedin.blp")
     {
       TraditionalTeam = TeamSetup.Legion;
       _preplacedUnitSystem = preplacedUnitSystem;

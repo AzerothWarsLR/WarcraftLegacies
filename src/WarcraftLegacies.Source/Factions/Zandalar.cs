@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Factions
 
     /// <inheritdoc />
     public Zandalar(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
-      : base("Zandalar", PLAYER_COLOR_PEACH, "|cffff8c6c",
+      : base("Zandalar", new[] {PLAYER_COLOR_PEACH, PLAYER_COLOR_PINK, PLAYER_COLOR_LIGHT_GRAY},
         @"ReplaceableTextures\CommandButtons\BTNHeadHunterBerserker.blp")
     {
       TraditionalTeam = TeamSetup.Horde;

@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Factions
         /// <inheritdoc />
 
         public Warsong(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
-          : base("Warsong", PLAYER_COLOR_ORANGE, "|c00ff8000",
+          : base("Warsong", new[] {PLAYER_COLOR_ORANGE, PLAYER_COLOR_YELLOW, PLAYER_COLOR_COAL},
           @"ReplaceableTextures\CommandButtons\BTNHellScream.blp")
         {
             TraditionalTeam = TeamSetup.Horde;

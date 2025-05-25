@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Factions
     private readonly AllLegendSetup _allLegendSetup;
 
     /// <inheritdoc />
-    public Quelthalas(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Quel'thalas", PLAYER_COLOR_CYAN, "|C0000FFFF",
+    public Quelthalas(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Quel'thalas", new[] {PLAYER_COLOR_CYAN, PLAYER_COLOR_MINT, PLAYER_COLOR_GREEN},
       @"ReplaceableTextures\CommandButtons\BTNSylvanusWindrunner.blp")
     {
       TraditionalTeam = TeamSetup.NorthAlliance;

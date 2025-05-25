@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.Factions
     private readonly AllLegendSetup _allLegendSetup;
 
     /// <inheritdoc />
-    public ScarletCrusade(AllLegendSetup allLegendSetup) : base("Scarlet Crusade", PLAYER_COLOR_MAROON, "|cff800000",
+    public ScarletCrusade(AllLegendSetup allLegendSetup) : base("Scarlet Crusade", new[] {PLAYER_COLOR_MAROON, PLAYER_COLOR_RED, PLAYER_COLOR_PEACH},
       "ReplaceableTextures/CommandButtons/BTNScarletKnight.blp")
     {
       _allLegendSetup = allLegendSetup;

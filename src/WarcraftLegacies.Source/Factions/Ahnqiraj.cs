@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Factions
     private readonly unit _gateAhnQiraj;
 
     /// <inheritdoc />
-    public Ahnqiraj(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cffaaa050",
+    public Ahnqiraj(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Ahn'qiraj", new[] {PLAYER_COLOR_WHEAT, PLAYER_COLOR_PEACH, PLAYER_COLOR_LIGHT_GRAY},
       @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
     {
       _allLegendSetup = allLegendSetup;

@@ -78,16 +78,32 @@ namespace MacroTools.FactionSystem
       });
     }
 
-    protected Faction(string name, playercolor playerColor, string prefixCol, string icon)
+    protected Faction(string name, playercolor[] colorPriority, string icon)
     {
       _name = name;
-      PlayerColor = playerColor;
-      PrefixCol = prefixCol;
       _icon = icon;
       FoodMaximum = FoodMaximumDefault;
       Id = _highestId + 1;
       _highestId = Id;
+
+      
+      foreach (var color in colorPriority)
+      {
+        if (ColorManager.IsColorAvailable(color))
+        {
+          PlayerColor = color;
+          ColorManager.AssignColor(color);
+          PrefixCol = ColorManager.GetColorHexCode(color); 
+          break;
+        }
+      }
+
+      if (PlayerColor == null)
+      {
+        throw new InvalidOperationException($"No available colors could be assigned to faction {name}.");
+      }
     }
+
 
     internal List<FactionDependentInitializer> FactionDependentInitializers { get; } = new();
 

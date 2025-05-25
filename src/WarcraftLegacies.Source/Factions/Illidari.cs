@@ -20,8 +20,7 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    public Illidari(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Illidan", PLAYER_COLOR_VIOLET,
-      "|cffff00ff", @"ReplaceableTextures\CommandButtons\BTNEvilIllidan.blp")
+    public Illidari(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Illidan", new[] {PLAYER_COLOR_VIOLET, PLAYER_COLOR_PURPLE, PLAYER_COLOR_PINK}, @"ReplaceableTextures\CommandButtons\BTNEvilIllidan.blp")
     {
       TraditionalTeam = TeamSetup.Outland;
       _allLegendSetup = allLegendSetup;

@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Factions
     /// <inheritdoc />
 
     public Frostwolf(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup,
-      ArtifactSetup artifactSetup) : base("Frostwolf", PLAYER_COLOR_RED, "|c00ff0303",
+      ArtifactSetup artifactSetup) : base("Frostwolf", new[] {PLAYER_COLOR_RED, PLAYER_COLOR_GREEN, PLAYER_COLOR_PINK},
       @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
     {
       TraditionalTeam = TeamSetup.Kalimdor;

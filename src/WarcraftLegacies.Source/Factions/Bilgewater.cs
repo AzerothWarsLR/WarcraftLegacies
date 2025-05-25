@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Factions
     private ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    public Bilgewater(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Bilgewater", PLAYER_COLOR_LIGHT_GRAY, "|cff808080",
+    public Bilgewater(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Bilgewater", new[] {PLAYER_COLOR_LIGHT_GRAY, PLAYER_COLOR_LIGHT_BLUE, PLAYER_COLOR_AQUA},
       @"ReplaceableTextures\CommandButtons\BTNHeroTinker.blp")
     {
       TraditionalTeam = TeamSetup.Horde;

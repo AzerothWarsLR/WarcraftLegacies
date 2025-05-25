@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Factions
     private readonly PreplacedUnitSystem _preplacedUnitSystem;
 
     /// <inheritdoc />
-    public BlackEmpire(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("BlackEmpire", PLAYER_COLOR_MAROON, "|cff800000",
+    public BlackEmpire(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("BlackEmpire", new[] {PLAYER_COLOR_MAROON, PLAYER_COLOR_RED, PLAYER_COLOR_BROWN},
       @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
     {
       _allLegendSetup = allLegendSetup;

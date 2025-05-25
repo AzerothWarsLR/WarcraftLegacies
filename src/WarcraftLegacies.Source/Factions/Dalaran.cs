@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Factions
 
     /// <inheritdoc />
     public Dalaran(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
-      : base("Dalaran", PLAYER_COLOR_PINK, "|c00e55bb0", @"ReplaceableTextures\CommandButtons\BTNJaina.blp")
+      : base("Dalaran", new[] {PLAYER_COLOR_PINK, PLAYER_COLOR_PEACH, PLAYER_COLOR_RED}, @"ReplaceableTextures\CommandButtons\BTNJaina.blp")
     {
       TraditionalTeam = TeamSetup.NorthAlliance;
       _artifactSetup = artifactSetup;

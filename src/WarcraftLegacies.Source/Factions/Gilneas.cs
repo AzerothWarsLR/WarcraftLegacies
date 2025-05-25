@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Factions
     private readonly unit _gilneasGate;
 
     /// <inheritdoc />
-    public Gilneas(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup) : base("Gilneas", PLAYER_COLOR_COAL, "|cff808080",
+    public Gilneas(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup) : base("Gilneas", new[] {PLAYER_COLOR_COAL, PLAYER_COLOR_LIGHT_GRAY, PLAYER_COLOR_MINT},
       @"ReplaceableTextures\CommandButtons\BTNGreymane.blp")
     {
       TraditionalTeam = TeamSetup.NorthAlliance;
