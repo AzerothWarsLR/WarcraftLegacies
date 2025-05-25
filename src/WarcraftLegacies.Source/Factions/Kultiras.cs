@@ -28,11 +28,10 @@ namespace WarcraftLegacies.Source.Factions
       _proudmooreCapitalShip = preplacedUnitSystem.GetUnit(UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS);
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_H09W_CONTROL_POINT_DEFENDER_KUL_TIRAS;
-      IntroText = @"You are playing as the maritime |cff008000Kingdom of Kul'tiras|r.
+      IntroText = $"You are playing as the maritime {PrefixCol}Kingdom of Kul Tiras|r.\n\n" +
+                  "You begin on Balor Island, separated from your main forces in Kul Tiras. Unite your forces by eliminating your enemies in Tiragarde, Drustvar, and Stormsong Valley.\n\n" +
+                  "Stormwind is preparing for an invasion through the Dark Portal in the South. Muster the Admiralty and assist them, or risk losing your strongest ally.";
 
-You begin on Balor island, separated from your main forces in Kul Tiras. Unite your forces by eliminating your enemies in Tiragarde, Drustvar and Stormsong Valley.
-
-Stormwind is preparing for an invasion through the Dark Portal in the South. Muster the Admiralty and help them, or you may lose your strongest ally.";
       GoldMines = new List<unit>
       {
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(4585, -13038))

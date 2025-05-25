@@ -30,11 +30,10 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       CinematicMusic = "PursuitTheme";
       ControlPointDefenderUnitTypeId = UNIT_H0AL_CONTROL_POINT_DEFENDER_IRONFORGE;
-      IntroText = @"You are playing as the long-enduring |cffe4bc00Kingdom of 
-                    |r
-You begin in the Wetlands, separated from the rest of your forces. Conquer Loch Modan and Dun Morough to gain access to 
- 
-Stormwind is preparing for an invasion through the Dark Portal in the South. Muster the throng and help them, or you may lose your strongest ally.";
+      IntroText = $"You are playing as the long-enduring {PrefixCol}Kingdom of |r.\n\n" +
+                  "You begin in the Wetlands, separated from the rest of your forces. Conquer Loch Modan and Dun Morogh to regain access to your territories.\n\n" +
+                  "Stormwind is preparing for an invasion through the Dark Portal in the South. Muster your forces and aid them, or risk losing your strongest ally.";
+
       GoldMines = new List<unit>
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(12079, -2768))

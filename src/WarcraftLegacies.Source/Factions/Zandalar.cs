@@ -27,13 +27,11 @@ namespace WarcraftLegacies.Source.Factions
       _artifactSetup = artifactSetup;
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_H0C1_CONTROL_POINT_DEFENDER_ZANDALAR;
-      IntroText = @"You are playing as the mighty |cffe1946cZandalari Empire|r.
+      IntroText = $"You are playing as the mighty {PrefixCol}Zandalari Empire|r.\n\n" +
+                  "You start off on the southern coast of Tanaris, separated from your allies. Raise an army and deal with the rogue trolls in Zul'Farrak.\n\n" +
+                  "The Night Elves are mounting an assault on you and your allies from the north.\n\n" +
+                  "Join forces with your allies and brace yourself for a tough fight and counterattack.";
 
-You start off at the southern coast of Tanaris, seperated from your allies. Raise an army and deal with the rogue Trolls in Zul'Farrak.
-
-The Night Elves are mounting an assault on you and your allies from the North.
-
-Join up with your allies and brace for a tough fight and counter-attack. ";
 
       GoldMines = new List<unit>
       {

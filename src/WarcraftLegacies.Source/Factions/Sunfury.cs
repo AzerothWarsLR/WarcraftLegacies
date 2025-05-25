@@ -29,12 +29,11 @@ namespace WarcraftLegacies.Source.Factions
       CinematicMusic = "BloodElfTheme";
       FoodMaximum = 250;
       ControlPointDefenderUnitTypeId = UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS;
-      IntroText = @"You are playing as the power-hungry |cffff0000Sunfury|r.
+      IntroText = $"You are playing as the power-hungry {PrefixCol}Sunfury|r.\n\n" +
+                  "You begin in Netherstorm. Your first mission is to build three biodomes in the green areas protected by a bubble.\n\n" +
+                  "Unite with your fel ally to push through the Dark Portal and destroy Stormwind.\n\n" +
+                  "Your ultimate goal is to summon Kil'jaeden and annihilate your enemies.";
 
-You begin in Netherstorm, your first mission is to build three biodomes in the green areas protected by a bubble.
-Unite with your fel ally to push through the Dark Portal and destroy Stormwind. 
-
-Your main goal is to summon Kil'jaeden and destroy your enemies.";
       GoldMines = new List<unit>
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(3295, -22670)),

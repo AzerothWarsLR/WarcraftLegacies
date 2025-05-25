@@ -29,13 +29,11 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       CinematicMusic = "Doom";
       ControlPointDefenderUnitTypeId = UNIT_N0AA_CONTROL_POINT_DEFENDER_FEL_HORDE;
-      IntroText = @"You are playing as the bloodthirsty Fel Horde.
+      IntroText = IntroText = $"You are playing as the bloodthirsty {PrefixCol}Fel Horde|r.\n\n" +
+                              "You begin in Nagrand, cut off from your forces in Hellfire Citadel. You must raise an army and quickly conquer Outland.\n\n" +
+                              "Once Outland is under your control, gather your hordes and prepare to invade Azeroth through the Dark Portal.\n\n" +
+                              "The Alliance is gathering outside the Dark Portal to stop you, so prepare for a very hard breakout.";
 
-You begin in Nagrand, cut off from your forces in Hellfire Citadel. You must raise an army and quickly conquer Outland.
-
-Once Outland is under your control, gather your hordes and prepare to invade Azeroth through the Dark Portal.
-
-The Alliance is gathering outside the Dark Portal to stop you, so prepare for a very hard breakout.";
       FoodMaximum = 250;
       GoldMines = new List<unit>
       {

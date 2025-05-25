@@ -30,14 +30,11 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       CinematicMusic = "BloodElfTheme";
       ControlPointDefenderUnitTypeId = UNIT_N0BC_CONTROL_POINT_DEFENDER_QUELTHALAS;
-      IntroText = @"You are playing as the proud |cff32e1e1Kingdom of Quel'thalas|r.
+      IntroText = $"You are playing as the proud {PrefixCol}Kingdom of Quel'Thalas|r.\n\n" +
+                  "You begin in Tranquillien, separated from Silvermoon. The Trolls of Zul'Aman have laid siege to the city and are preparing attacks on your base.\n\n" +
+                  "Train soldiers to repel the attacks, then gather enough strength to besiege Zul'Aman and take the head of Zul'jin.\n\n" +
+                  "The Plague of Undeath is imminent, and Lordaeron will soon need your help against the Scourge. Be ready to join them once you have secured Silvermoon and dealt with the Amani invasion.";
 
-You begin in Tranquilien, separated from Silvermoon.
-The Trolls of Zul'Aman have laid siege to the city, and are preparing attacks on your base.
-
-Train soldiers to repel the attacks, then gather enough strength to besiege Zul'Aman and take the head of Zul'jin.
-
-The Plague of Undeath is coming and Lordaeron will need your help with the Scourge soon. Be ready to join them as once you have secured Silvermoon and dealt with the Amani invasion.";
       GoldMines = new List<unit>
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(17716, 13000))

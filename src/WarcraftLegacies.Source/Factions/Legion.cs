@@ -34,13 +34,11 @@ namespace WarcraftLegacies.Source.Factions
       FoodMaximum = 250;
       CinematicMusic = "DarkAgents";
       ControlPointDefenderUnitTypeId = UNIT_U01U_CONTROL_POINT_DEFENDER_LEGION;
-      IntroText = @"You are playing as the mighty |cffa2722dBurning Legion|r.
+      IntroText = $"You are playing as the mighty {PrefixCol}Burning Legion|r.\n\n" +
+                  "You begin isolated on Argus. Once the planet is under your control, you will unlock two teleporters to Northrend and Alterac.\n\n" +
+                  "On Azeroth, the Scourge will need your assistance to destroy the Kingdoms of Lordaeron, Dalaran, and Quel'Thalas.\n\n" +
+                  "Your primary objective is to summon the great host of the Burning Legion. Invade the city of Dalaran, where the Book of Medivh is kept, and use it to open the Demon-gate to Argus.";
 
-You begin isolated on Argus. Once the Planet is under control, you will unlock 2 teleporters to Northrend and Alterac.
-
-On Azeroth, the Scourge will need your assistance to destroy the Kingdoms of Lordaeron, Dalaran and Quel'thalas.
-
-Your primary objective is to summon the great host of the Burning Legion. Invade the city of Dalaran, where the book of Medivh is kept, and use it to open the Demon-gate to Argus.";
       GoldMines = new List<unit>
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(19331f, -30663))

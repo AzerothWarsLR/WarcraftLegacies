@@ -27,13 +27,11 @@ namespace WarcraftLegacies.Source.Factions
       _artifactSetup = artifactSetup;
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_O01C_CONTROL_POINT_DEFENDER_GOBLIN;
-      IntroText = @"You are playing as the industrious |cff808080Bilgewater Cartel|r.
+      IntroText = $"You are playing as the industrious {PrefixCol}Bilgewater Cartel|r.\n\n" +
+                  "You begin in Tanaris with a very small business venture. Expand onto Kalimdor to grow your trade empire.\n\n" +
+                  "Your advanced units require Oil to function. Use oil ships to find oil deposits in the Great Sea and build platforms on them.\n\n" +
+                  "The Trading Center in Kezan will unlock the ability to train Traders. Be sure to protect the Trading Center once you unlock it, as it will form the backbone of your Goblin Empire.";
 
-You begin in Tanaris with a very small business venture. Expand onto Kalimdor to grow your trade empire.
-
-Your advanced units require Oil to function. Use oil ships to find oil deposits in the Great Sea and build platforms on them.
-
-The Trading Center in Kezan will unlock the ability to train Traders. Be sure to protect the Trading Center once you unlock it, as it will form the backbone of your Goblin Empire.";
       GoldMines = new List<unit>
       {
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8615, -12869)), //Starting

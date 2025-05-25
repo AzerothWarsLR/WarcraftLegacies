@@ -38,15 +38,12 @@ namespace WarcraftLegacies.Source.Factions
       FoodMaximum = 250;
       CinematicMusic = "ArthasTheme";
       ControlPointDefenderUnitTypeId = UNIT_U028_CONTROL_POINT_DEFENDER_SCOURGE;
-      IntroText = @"You are playing as the the horrific Undead Scourge.
+      IntroText = $"You are playing as the horrific {PrefixCol}Undead Scourge|r.\n\n" +
+                  "You begin in Northrend, a vast and isolated land—perfect for raising an army of undying warriors to annihilate the living.\n\n" +
+                  "The local Nerubians have declared war on you. Destroy their decrepit holdings and slay their Queen to secure the continent.\n\n" +
+                  "Coordinate with the Burning Legion and unleash the Plague of Undeath to sweep Lordaeron away.\n\n" +
+                  "When the Plague strikes Lordaeron, you will have a choice of where to instantly transport all your military units.";
 
-You begin in Northrend, a vast and isolated land; perfect to raise an army of undying warriors to destroy the living.
-
-The local Nerubians have declared war on you. Destroy their decrepit holdings and kill their Queen to secure the continent.
-
-Coordinate with the Burning Legion and use the Plague of Undeath to sweep Lordaeron away.
-
-When the Plague hits Lordaeron, you will have a choice to where you want all your military units to be instantly transported.";
       GoldMines = new List<unit>
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-4939, 18803))
