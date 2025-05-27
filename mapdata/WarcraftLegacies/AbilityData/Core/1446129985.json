@@ -91,7 +91,7 @@
       "Pointer": 1,
       "Id": 829646408,
       "Type": 2,
-      "Value": -30
+      "Value": 0
     },
     {
       "Level": 2,
@@ -133,7 +133,7 @@
       "Pointer": 3,
       "Id": 863200840,
       "Type": 2,
-      "Value": -10
+      "Value": 0
     },
     {
       "Level": 2,
@@ -175,7 +175,7 @@
       "Pointer": 6,
       "Id": 913532488,
       "Type": 2,
-      "Value": 900
+      "Value": 0
     },
     {
       "Level": 2,
@@ -213,7 +213,7 @@
       "Level": 1,
       "Id": 1717986657,
       "Type": 3,
-      "Value": "X000"
+      "Value": ""
     },
     {
       "Level": 2,

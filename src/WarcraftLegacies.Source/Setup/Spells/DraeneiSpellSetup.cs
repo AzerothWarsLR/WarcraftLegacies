@@ -2,6 +2,7 @@
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
+using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.MassiveAttack;
 using WarcraftLegacies.Source.Spells.Slipstream;
 using WCSharp.Shared.Data;
@@ -75,6 +76,19 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Duration = 0,
       };
       SpellSystem.Register(summonGateway);
+      
+      var blessedGround = new BlessedGroundSpell(ABILITY_A12V_BLESSED_GROUND_DRAENEI)
+      {
+        HealPerSecond = 10.0f, 
+        InitialHeal = 150.0f, 
+        Duration = 30.0f, 
+        MaxInitialHeal = 900.0f,
+        MaxHealingOverTime = 600.0f,
+        Radius = 200.0f, 
+        HealEffectPath = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
+      };
+      SpellSystem.Register(blessedGround);
+
 
       var manaSyphon2 = new GrantMana(ABILITY_ADMS_RESTORE_MANA_DRAENEI_CASTER_BUILDING)
       {
