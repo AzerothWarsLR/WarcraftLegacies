@@ -51,10 +51,15 @@ namespace WarcraftLegacies.Source.Setup.Spells
 
       SpellSystem.Register(phantomStepHero);
 
+      var legionNova = new LegionNova(1)
+      {
+        Radius = 500,
+        Damage = 100,
+      };
+
+      SpellSystem.Register(legionNova);
 
 
-      
-      
       var summonBurningLegion = new SummonLegionSpell(ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS,
         ABILITY_A0KZ_SPELL_IMMUNITY_LEGION_SUMMON);
       SpellSystem.Register(summonBurningLegion);
