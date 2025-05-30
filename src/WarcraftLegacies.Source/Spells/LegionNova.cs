@@ -19,39 +19,57 @@ namespace WarcraftLegacies.Source.Spells
     /// <summary>The radius of the nova around the target. </summary>
     public float Radius { get; init; }
 
-    public float Damage { get; init; }
+    /// <summary>
+    /// Visual effect played when the spell is cast.
+    /// </summary>
+    public string CasterEffect { get; init; } = string.Empty;
+
+    /// <summary>
+    /// Visual effect played when the spell is cast.
+    /// </summary>
+    public string TargetEffect { get; init; } = string.Empty;
+
+    public float BaseDamage { get; init; }
+
+    public float DamagePerLevel { get; init; }
+
+    public float BaseHeal { get; init; }
+
+    public float HealPerLevel { get; init; }
 
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      
+      var abilityLevel = GetAbilityLevel(caster);
       var targetPosition = target.GetPosition();
+      var casterPlayer = caster.OwningPlayer();
+      var damageAmount = BaseDamage + (abilityLevel * DamagePerLevel);
+      var healAmount = BaseHeal + (abilityLevel * HealPerLevel);
       var unitsInRange = GlobalGroup
                 .EnumUnitsInRange(targetPosition, Radius)
                 .Where(x => x != null && UnitAlive(x))
                 .ToList();
 
-      var casterPlayer = caster.OwningPlayer();
+      
 
 
       foreach (var unit in unitsInRange)
       {
         if (IsValidEnemy(unit, caster))
         {
-          unit.TakeDamage(caster, Damage, false, false, damageType: DAMAGE_TYPE_NORMAL);
+          unit.TakeDamage(caster, damageAmount, false, false, damageType: DAMAGE_TYPE_NORMAL);
           Console.WriteLine(unit + " took damage.");
         }
 
         if (IsValidAlly(unit, caster))
         {
-          unit.Heal(Damage);
+          unit.Heal(healAmount);
           Console.WriteLine(unit + " healed damage.");
 
         }
       }
-      var EffectTarget = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl";
 
-      AddSpecialEffect(EffectTarget, GetUnitX(target), GetUnitY(target)).SetLifespan();
-
+      AddSpecialEffect(CasterEffect, GetUnitX(caster), GetUnitY(caster)).SetLifespan();
+      AddSpecialEffect(TargetEffect, GetUnitX(target), GetUnitY(target)).SetLifespan(0.5f);
     }
 
     private static bool IsValidEnemy(unit target, unit caster) =>
