@@ -13,7 +13,7 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "Q"
+      "Value": "R"
     },
     {
       "Id": 1802007137,
@@ -106,6 +106,10 @@
       "Id": 829453409,
       "Type": 3,
       "Value": "Energy Wave - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
     }
   ]
 }
