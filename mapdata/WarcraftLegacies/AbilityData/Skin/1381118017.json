@@ -8,12 +8,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Teron)"
+      "Value": "(Legion Nathrezim Infiltrator)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "W"
+      "Value": "Q"
     },
     {
       "Id": 1802007137,
@@ -29,7 +29,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Calls forth a wave of healing energy that bounces up to \u003CA0RR,DataB1\u003E times, healing \u003CA0RR,DataA1\u003E damage on the primary target. Each jump heals 25% less."
+      "Value": "Calls forth a wave of healing energy that bounces up to \u003CA0RR,DataB1\u003E times, healing \u003CA0RR,DataA1\u003E damage on the primary target. Each jump heals 10% less."
     },
     {
       "Level": 2,
@@ -53,10 +53,6 @@
       "Id": 1952543841,
       "Type": 3,
       "Value": "Abilities\\Spells\\NightElf\\MoonWell\\MoonWellCasterArt.mdl"
-    },
-    {
-      "Id": 2020631137,
-      "Value": 1
     },
     {
       "Id": 2020635233,

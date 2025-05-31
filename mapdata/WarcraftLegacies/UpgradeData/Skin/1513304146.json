@@ -39,7 +39,7 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Gives the Felguard a 25% chance for an attack to be absorbed reducing damage taken by 40 damage. Attacks cannot be reduced below 3 damage."
+      "Value": "Gives Felguards and Doomguards a 25% chance for an attack to be absorbed reducing damage taken by 40 damage. Attacks cannot be reduced below 3 damage."
     },
     {
       "Id": 2020631143,
