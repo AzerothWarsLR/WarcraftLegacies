@@ -66,7 +66,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Bombards an area with arcane missile, stunning enemy land units for 1 second and damaging them. 1200 range. |n|n|cffffcc00Level 1|r - 300 total damage.|n|cffffcc00Level 2|r - 400 total damage.|n|cffffcc00Level 3|r - 500 total damage.|n|cffffcc00Level 4|r - 600 total damage."
+      "Value": "Bombards an area with arcane missile, stunning enemy land units for 1 second and damaging them. 1200 range. |n|n|cffffcc00Level 1|r - \u003CA032,Data.A1\u003E total damage.|n|cffffcc00Level 2|r - \u003CA032,Data.A2\u003E total damage.|n|cffffcc00Level 3|r - \u003CA032,Data.A3\u003E total damage.|n|cffffcc00Level 4|r - \u003CA032,Data.A4\u003E total damage."
     },
     {
       "Level": 1,
@@ -96,25 +96,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Bombards an area with arcane missiles, dealing up to 300 damage to nearby enemy land units and stunning them for 1 seconds."
+      "Value": "Bombards an area with arcane missiles, dealing up to \u003CA032,Data.A1\u003E damage to nearby enemy land units and stunning them for 1 seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Bombards an area with arcane missiles, dealing up to 400 damage to nearby enemy land units and stunning them for 1 seconds."
+      "Value": "Bombards an area with arcane missiles, dealing up to \u003CA032,Data.A2\u003E damage to nearby enemy land units and stunning them for 1 seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Bombards an area with arcane missiles, dealing up to 500 damage to nearby enemy land units and stunning them for 1 seconds."
+      "Value": "Bombards an area with arcane missiles, dealing up to \u003CA032,Data.A3\u003E damage to nearby enemy land units and stunning them for 1 seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Bombards an area with arcane missiles, dealing up to 600 damage to nearby enemy land units and stunning them for 1 seconds."
+      "Value": "Bombards an area with arcane missiles, dealing up to \u003CA032,Data.A4\u003E damage to nearby enemy land units and stunning them for 1 seconds."
     }
   ]
 }

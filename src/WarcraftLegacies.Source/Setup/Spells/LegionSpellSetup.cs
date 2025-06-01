@@ -83,6 +83,15 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       SpellSystem.Register(summonFelHounds);
 
+      var summonFelHoundsDoomGuard = new SummonUnits(ABILITY_VP10_HOUND_COMPANION_LEGION_DOOMGUARD)
+      {
+        SummonUnitTypeId = UNIT_NFEL_FEL_STALKER_SUMMONER_WARLOCK_EYE_OF_SARGERAS,
+        SummonCount = 2,
+        Duration = 60,
+        Radius = 50,
+      };
+      SpellSystem.Register(summonFelHoundsDoomGuard);
+
       var dreadlordHeroes = new[]
       {
         UNIT_UMAL_THE_CUNNING_LEGION,
@@ -101,7 +110,13 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
       });
 
-      PassiveAbilityManager.Register(new RestoreHealthFromEachTargetDamaged(UNIT_U007_DREADLORD_LEGION_ELITE, ABILITY_VP08_VAMPIRIC_SIPHON_LEGION_ELITES)
+      var elites = new[]
+     {
+        UNIT_U007_DREADLORD_LEGION_ELITE,
+        UNIT_N04O_DOOM_LORD_LEGION
+      };
+
+      PassiveAbilityManager.Register(new RestoreHealthFromEachTargetDamaged(elites, ABILITY_VP08_VAMPIRIC_SIPHON_LEGION_ELITES)
       {
         HealthPerTarget = new LeveledAbilityField<int>
         {

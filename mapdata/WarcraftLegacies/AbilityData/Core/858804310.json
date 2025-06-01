@@ -8,63 +8,63 @@
     {
       "Level": 2,
       "Id": 1935895905,
-      "Value": 80
+      "Value": 50
     },
     {
       "Level": 3,
       "Id": 1935895905,
-      "Value": 80
+      "Value": 50
     },
     {
       "Level": 4,
       "Id": 1935895905,
-      "Value": 80
+      "Value": 50
     },
     {
       "Level": 1,
       "Pointer": 1,
       "Id": 829186895,
       "Type": 2,
-      "Value": 50
+      "Value": 60
     },
     {
       "Level": 2,
       "Pointer": 1,
       "Id": 829186895,
       "Type": 2,
-      "Value": 75
+      "Value": 90
     },
     {
       "Level": 3,
       "Pointer": 1,
       "Id": 829186895,
       "Type": 2,
-      "Value": 100
+      "Value": 120
     },
     {
       "Level": 4,
       "Pointer": 1,
       "Id": 829186895,
       "Type": 2,
-      "Value": 125
+      "Value": 150
     },
     {
       "Level": 2,
-      "Pointer": 2,
-      "Id": 845964111,
-      "Value": 6
-    },
-    {
-      "Level": 3,
       "Pointer": 2,
       "Id": 845964111,
       "Value": 8
     },
     {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 845964111,
+      "Value": 11
+    },
+    {
       "Level": 4,
       "Pointer": 2,
       "Id": 845964111,
-      "Value": 10
+      "Value": 14
     },
     {
       "Id": 1986358369,
@@ -74,25 +74,25 @@
       "Level": 1,
       "Id": 1851880033,
       "Type": 2,
-      "Value": 150
+      "Value": 200
     },
     {
       "Level": 2,
       "Id": 1851880033,
       "Type": 2,
-      "Value": 150
+      "Value": 200
     },
     {
       "Level": 3,
       "Id": 1851880033,
       "Type": 2,
-      "Value": 150
+      "Value": 200
     },
     {
       "Level": 4,
       "Id": 1851880033,
       "Type": 2,
-      "Value": 150
+      "Value": 200
     },
     {
       "Level": 1,
@@ -122,7 +122,7 @@
       "Level": 1,
       "Pointer": 2,
       "Id": 845964111,
-      "Value": 4
+      "Value": 5
     },
     {
       "Level": 1,
@@ -179,31 +179,7 @@
     {
       "Level": 1,
       "Id": 1935895905,
-      "Value": 80
-    },
-    {
-      "Level": 1,
-      "Id": 1718968929,
-      "Type": 3,
-      "Value": "B05S"
-    },
-    {
-      "Level": 2,
-      "Id": 1718968929,
-      "Type": 3,
-      "Value": "B05S"
-    },
-    {
-      "Level": 3,
-      "Id": 1718968929,
-      "Type": 3,
-      "Value": "B05S"
-    },
-    {
-      "Level": 4,
-      "Id": 1718968929,
-      "Type": 3,
-      "Value": "B05S"
+      "Value": 50
     }
   ]
 }
