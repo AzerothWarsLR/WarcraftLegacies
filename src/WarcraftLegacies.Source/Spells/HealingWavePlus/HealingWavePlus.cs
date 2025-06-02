@@ -73,13 +73,33 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
 
         private void StartDeathTriggerTimer(unit trackedTarget, unit caster, HashSet<unit> healedUnits)
         {
-            BuffSystem.Add(new HealingWaveBuff(caster, trackedTarget, DeathTriggerDuration) { Active = true, Duration = DeathTriggerDuration, IsBeneficial = true });
+            BuffSystem.Add(new HealingWaveBuff(caster, trackedTarget, DeathTriggerDuration)
+            {
+                Active = true,
+                Duration = DeathTriggerDuration,
+                IsBeneficial = true
+            });
+
             TimerStart(CreateTimer(), DeathTriggerDuration, false, () =>
             {
-                if (!UnitAlive(trackedTarget))
+                if (trackedTarget != null)
                 {
-                    PerformSecondaryWave(caster, trackedTarget, healedUnits);
+                    // Check if the unit is dead or explicitly flagged as dead by the game engine
+                    if (!UnitAlive(trackedTarget) || IsUnitType(trackedTarget, UNIT_TYPE_DEAD))
+                    {
+                        Console.WriteLine($"[HealingWavePlus] Unit {GetUnitName(trackedTarget)} is dead, triggering secondary wave.");
+                        PerformSecondaryWave(caster, trackedTarget, healedUnits);
+                    }
+                    else
+                    {
+                        Console.WriteLine($"[HealingWavePlus] Timer expired but unit {GetUnitName(trackedTarget)} survived.");
+                    }
                 }
+                else
+                {
+                    Console.WriteLine($"[HealingWavePlus] Timer expired but tracked target was null.");
+                }
+
                 DestroyTimer(GetExpiredTimer());
             });
         }
