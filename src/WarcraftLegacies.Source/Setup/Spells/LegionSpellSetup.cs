@@ -4,6 +4,7 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.Spells.HealingWavePlus;
 using WarcraftLegacies.Source.Spells.Slipstream;
 using WCSharp.Shared.Data;
 
@@ -71,6 +72,20 @@ namespace WarcraftLegacies.Source.Setup.Spells
         TargetType = SpellTargetType.Point
       };
       SpellSystem.Register(massSummonUnit);
+      
+      var healingWavePlus = new HealingWavePlus(ABILITY_HWP1_ENERGY_WAVE)
+      {
+        DeathTriggerDuration = 20.0f, // Seconds before triggering secondary wave after unit dies
+        HealAmountBase = 100.0f, // Base healing amount
+        HealAmountLevel = 20.0f, // Additional healing per level
+        MaxBounces = 4, // Maximum bounces in the healing wave
+        BounceRadius = 500.0f, // Radius to find nearby allies for the bounces
+        SecondaryWaveRadius = 800.0f, // Radius for the secondary healing wave
+        HealingEffect = @"Abilities\Spells\Items\HealingSalve\HealingSalveTarget.mdl", // Visual healing effect
+        TargetMarkEffect = @"Abilities\Spells\Other\Charm\CharmTarget.mdl" // Effect for marking death trigger targets
+      };
+      SpellSystem.Register(healingWavePlus);
+
 
       RegisterSlipstreams();
 
@@ -113,8 +128,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var elites = new[]
      {
         UNIT_U007_DREADLORD_LEGION_ELITE,
-        UNIT_N04O_DOOM_LORD_LEGION
-      };
+        UNIT_N04O_DOOM_LORD_LEGION};
 
       PassiveAbilityManager.Register(new RestoreHealthFromEachTargetDamaged(elites, ABILITY_VP08_VAMPIRIC_SIPHON_LEGION_ELITES)
       {

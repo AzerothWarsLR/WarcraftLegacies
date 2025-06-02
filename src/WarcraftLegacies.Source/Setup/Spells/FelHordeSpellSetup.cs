@@ -4,6 +4,7 @@ using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
 
+
 namespace WarcraftLegacies.Source.Setup.Spells
 {
   /// <summary>
@@ -52,6 +53,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         SpecialEffectPath = @"Abilities\Spells\Undead\RaiseSkeletonWarrior\RaiseSkeleton.mdl",
         RequiredResearch = UPGRADE_R098_FEL_INFUSED_SKELETON_FEL_HORDE
       });
+      
 
       PassiveAbilityManager.Register(new Execute(UNIT_O01L_EXECUTIONER_FEL_HORDE_ELITE)
       {
