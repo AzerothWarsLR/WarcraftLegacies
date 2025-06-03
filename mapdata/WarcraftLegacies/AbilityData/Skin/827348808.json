@@ -29,7 +29,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Calls forth a wave of healing energy that bounces up to \u003CA0RR,DataB1\u003E times, healing \u003CA0RR,DataA1\u003E damage on the primary target. Each jump heals 10% less."
+      "Value": "Calls forth a wave of healing energy that bounces up to 4 times. The primary target is healed for 100 and each subsequent bounce heals 10% less. If the last healed unit dies within 20 seconds, the wave continues on to nearby targets.\r\n"
     },
     {
       "Level": 2,

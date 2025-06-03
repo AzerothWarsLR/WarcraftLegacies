@@ -17,20 +17,27 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
         public float HealAmountBase { get; init; }
         public float HealAmountLevel { get; init; }
         public float SecondWaveHealAmount { get; init; }
+        public float HealingReductionFactor { get; init; } = 0.9f; 
         public int MaxBounces { get; init; }
         public float BounceRadius { get; init; }
         public float SecondaryWaveRadius { get; init; }
         public string HealingEffect { get; init; }
-        public string TargetMarkEffect { get; init; } = "Abilities\\Spells\\Other\\Charm\\CharmTarget.mdl";
+        public string TargetMarkEffect { get; init; } 
+
+        private float currentHealingModifier = 1.0f; 
 
         public HealingWavePlus(int id) : base(id) { }
 
         public override void OnCast(unit caster, unit target, Point targetPoint)
         {
+            // Reset diminishing returns for each new spell cast
+            currentHealingModifier = 1.0f;
+
             unit? lastTarget = null;
             var healedUnits = new HashSet<unit>();
             Console.WriteLine($"[HealingWavePlus] Spell cast by {GetUnitName(caster)} on {GetUnitName(target)}.");
             PerformHealingWave(caster, target, ref lastTarget, healedUnits);
+
             if (lastTarget != null)
             {
                 var triggerEffect = AddSpecialEffectTarget(TargetMarkEffect, lastTarget, "overhead");
@@ -63,17 +70,26 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
 
         private void HealTarget(unit caster, unit target, bool isSecondaryWave = false)
         {
-            float healAmount = isSecondaryWave
+            // Apply diminishing returns to healing amounts per wave
+            float healAmount = (isSecondaryWave
                 ? SecondWaveHealAmount
-                : HealAmountBase + (HealAmountLevel * GetAbilityLevel(caster));
+                : HealAmountBase + (HealAmountLevel * GetAbilityLevel(caster))) * currentHealingModifier;
 
+            // Heal the target
             target.Heal(healAmount);
 
+            // Log diminishing returns for debugging
+            Console.WriteLine($"[HealingWavePlus] Healing {GetUnitName(target)} for {healAmount}. Modifier: {currentHealingModifier:P}");
+
+            // Play healing effect
             if (!string.IsNullOrEmpty(HealingEffect))
             {
                 var effect = AddSpecialEffectTarget(HealingEffect, target, "origin");
                 effect.SetLifespan();
             }
+
+            // Reduce healing modifier for subsequent waves
+            currentHealingModifier *= HealingReductionFactor;
         }
 
         private void StartDeathTriggerTimer(unit trackedTarget, unit caster, HashSet<unit> healedUnits)
@@ -95,7 +111,6 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
                     Console.WriteLine($"[HealingWavePlus] Unit {GetUnitName(trackedTarget)} is dead, triggering secondary wave.");
                     PerformSecondaryWave(caster, trackedTarget, healedUnits);
                     hasTriggeredWave = true;
-
                     DestroyTimer(GetExpiredTimer());
                 }
                 else if (trackedTarget == null)
@@ -111,7 +126,6 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
                 {
                     Console.WriteLine($"[HealingWavePlus] Buff expired for unit {GetUnitName(trackedTarget)}, no wave triggered.");
                 }
-
                 DestroyTimer(GetExpiredTimer());
             });
         }
@@ -147,6 +161,8 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
             {
                 var healingWaveBuff = new HealingWaveBuff(caster, lastHealedUnit, DeathTriggerDuration);
                 BuffSystem.Add(healingWaveBuff);
+
+                StartDeathTriggerTimer(lastHealedUnit, caster, healedUnits);
             }
         }
 

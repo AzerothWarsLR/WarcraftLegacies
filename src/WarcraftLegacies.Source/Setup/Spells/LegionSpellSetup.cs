@@ -78,11 +78,12 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DeathTriggerDuration = 20.0f, 
         HealAmountBase = 100.0f,
         HealAmountLevel = 20.0f, 
-        MaxBounces = 4, 
+        MaxBounces = 3, 
         BounceRadius = 500.0f, 
         SecondaryWaveRadius = 500.0f, 
+        SecondWaveHealAmount = 100.0f,
         HealingEffect = @"Abilities\Spells\Items\HealingSalve\HealingSalveTarget.mdl", 
-        TargetMarkEffect = @"Abilities\Spells\Other\Charm\CharmTarget.mdl" 
+        TargetMarkEffect = @"Abilities\Spells\Items\HealingSalve\HealingSalveTarget.mdl" 
       };
       SpellSystem.Register(healingWavePlus);
 
