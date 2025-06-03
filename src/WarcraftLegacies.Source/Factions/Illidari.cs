@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    public Illidari(PreplacedUnitSystem preplacedUnitSystem,AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Illidan", PLAYER_COLOR_VIOLET,
+    public Illidari(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Illidan", PLAYER_COLOR_VIOLET,
       "|cffff00ff", @"ReplaceableTextures\CommandButtons\BTNEvilIllidan.blp")
     {
       TraditionalTeam = TeamSetup.Outland;
@@ -39,11 +39,6 @@ You begin on the Broken Isles, ready to plunder the tombs for artifacts to empow
 Unfortunately, you cannot progress further in the Islands. Use Illidan's mastery of portals to travel to Outland and join forces with your ally.
 
 Support your ally in Outland by unlocking bases and coordinating with his push out of the Dark Portal.";
-
-      GoldMines = new List<unit>
-      {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(795, 6325)),
-      };
       Nicknames = new List<string>
       {
         "illi",

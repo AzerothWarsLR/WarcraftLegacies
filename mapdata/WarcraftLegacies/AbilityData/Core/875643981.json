@@ -1,0 +1,76 @@
+{
+  "OldId": 1769104211,
+  "NewId": 875643981,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BHtc"
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 828994115,
+      "Type": 2,
+      "Value": 0.25
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 862548547,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 15
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 3
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "other"
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 99999
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "ground,organic,vulnerable"
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 845771331,
+      "Type": 2,
+      "Value": 0.25
+    }
+  ]
+}

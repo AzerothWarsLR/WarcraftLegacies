@@ -24,6 +24,17 @@ namespace WarcraftLegacies.Source.Setup
       };
       SpellSystem.Register(thunderClap);
 
+      var thunderClapGil = new Stomp(ABILITY_MD13_THUNDER_CLAP_GILNEAS_GREY_GUARD)
+      {
+        Radius = 300,
+        DamageBase = 40,
+        DurationBase = 1,
+        StunAbilityId = ABILITY_MD14_THUNDER_CLAP_DUMMY_GREY_GUARD,
+        StunOrderId = OrderId("cripple"),
+        SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
+      };
+      SpellSystem.Register(thunderClapGil);
+
       var massAntiMagicShell = new MassAnySpell(FourCC("A099"))
       {
         DummyAbilityId = FourCC("A0JN"),
