@@ -45,7 +45,8 @@ Use him to awaken Malfurion from his slumber as soon as possible.
 Gather your forces and strike before the Old Gods can organize their efforts.";
       GoldMines = new List<unit>
       {
-        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9200, 10742))
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9200, 10742)),
+         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-17545, 15856))
       };
       Nicknames = new List<string>
       {
