@@ -75,14 +75,14 @@ namespace WarcraftLegacies.Source.Setup.Spells
       
       var healingWavePlus = new HealingWavePlus(ABILITY_HWP1_ENERGY_WAVE)
       {
-        DeathTriggerDuration = 20.0f, // Seconds before triggering secondary wave after unit dies
-        HealAmountBase = 100.0f, // Base healing amount
-        HealAmountLevel = 20.0f, // Additional healing per level
-        MaxBounces = 4, // Maximum bounces in the healing wave
-        BounceRadius = 500.0f, // Radius to find nearby allies for the bounces
-        SecondaryWaveRadius = 800.0f, // Radius for the secondary healing wave
-        HealingEffect = @"Abilities\Spells\Items\HealingSalve\HealingSalveTarget.mdl", // Visual healing effect
-        TargetMarkEffect = @"Abilities\Spells\Other\Charm\CharmTarget.mdl" // Effect for marking death trigger targets
+        DeathTriggerDuration = 20.0f, 
+        HealAmountBase = 100.0f,
+        HealAmountLevel = 20.0f, 
+        MaxBounces = 4, 
+        BounceRadius = 500.0f, 
+        SecondaryWaveRadius = 500.0f, 
+        HealingEffect = @"Abilities\Spells\Items\HealingSalve\HealingSalveTarget.mdl", 
+        TargetMarkEffect = @"Abilities\Spells\Other\Charm\CharmTarget.mdl" 
       };
       SpellSystem.Register(healingWavePlus);
 
