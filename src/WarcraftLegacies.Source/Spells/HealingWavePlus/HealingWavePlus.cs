@@ -24,14 +24,14 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
         public string HealingEffect { get; init; }
         public string TargetMarkEffect { get; init; } 
 
-        private float CurrentHealingModifier = 1.0f; 
+        private float _currentHealingModifier = 1.0f; 
 
         public HealingWavePlus(int id) : base(id) { }
 
         public override void OnCast(unit caster, unit target, Point targetPoint)
         {
             // Reset diminishing returns for each new spell cast
-            CurrentHealingModifier = 1.0f;
+            _currentHealingModifier = 1.0f;
 
             unit? lastTarget = null;
             var healedUnits = new HashSet<unit>();
@@ -73,17 +73,17 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
            
             float healAmount = (isSecondaryWave
                 ? SecondWaveHealAmount
-                : HealAmountBase + (HealAmountLevel * GetAbilityLevel(caster))) * CurrentHealingModifier;
+                : HealAmountBase + (HealAmountLevel * GetAbilityLevel(caster))) * _currentHealingModifier;
    
             target.Heal(healAmount);
-            Console.WriteLine($"[HealingWavePlus] Healing {GetUnitName(target)} for {healAmount}. Modifier: {CurrentHealingModifier:P}");
+            Console.WriteLine($"[HealingWavePlus] Healing {GetUnitName(target)} for {healAmount}. Modifier: {_currentHealingModifier:P}");
             
             if (!string.IsNullOrEmpty(HealingEffect))
             {
                 var effect = AddSpecialEffectTarget(HealingEffect, target, "origin");
                 effect.SetLifespan();
             }
-            CurrentHealingModifier *= HealingReductionFactor;
+            _currentHealingModifier *= HealingReductionFactor;
         }
 
         private void StartDeathTriggerTimer(unit trackedTarget, unit caster, HashSet<unit> healedUnits)
