@@ -1,5 +1,6 @@
 {
-  "OldId": 1718121793,
+  "OldId": 1718511937,
+  "NewId": 808535117,
   "Unk": [
     0
   ],
@@ -8,53 +9,54 @@
       "Level": 2,
       "Id": 1718968929,
       "Type": 3,
-      "Value": "BUhf"
+      "Value": "Binf"
     },
     {
       "Level": 2,
       "Id": 1852072801,
       "Type": 2,
-      "Value": 5
+      "Value": 1
     },
     {
       "Level": 2,
       "Id": 1935895905,
-      "Value": 60
+      "Value": 35
     },
     {
       "Level": 2,
       "Pointer": 1,
-      "Id": 828794965,
+      "Id": 828796489,
       "Type": 2,
-      "Value": 0.85
+      "Value": 0.15
     },
     {
       "Level": 2,
       "Pointer": 2,
-      "Id": 845572181,
+      "Id": 845573705,
+      "Value": 6
+    },
+    {
+      "Level": 2,
+      "Pointer": 3,
+      "Id": 862350921,
       "Type": 2,
-      "Value": 4
+      "Value": 500
     },
     {
       "Level": 2,
       "Id": 1920296033,
       "Type": 2,
-      "Value": 45
+      "Value": 60
     },
     {
       "Level": 2,
       "Id": 1969514593,
       "Type": 2,
-      "Value": 45
+      "Value": 60
     },
     {
       "Id": 1986358369,
       "Value": 2
-    },
-    {
-      "Id": 1634824801,
-      "Type": 3,
-      "Value": "2"
     },
     {
       "Level": 2,
@@ -66,13 +68,12 @@
       "Level": 2,
       "Id": 1918989409,
       "Type": 3,
-      "Value": "air,ground,organic"
+      "Value": "air,ground,friend,neutral,self"
     },
     {
-      "Level": 1,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 5
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "RBEF"
     }
   ]
 }
