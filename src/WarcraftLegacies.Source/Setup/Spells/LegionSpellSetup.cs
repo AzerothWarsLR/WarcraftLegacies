@@ -77,7 +77,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         DeathTriggerDuration = 20.0f, 
         HealAmountBase = 100.0f,
-        HealAmountLevel = 20.0f, 
+        HealAmountLevel = 0.0f, 
         MaxBounces = 3, 
         BounceRadius = 500.0f, 
         SecondaryWaveRadius = 500.0f, 

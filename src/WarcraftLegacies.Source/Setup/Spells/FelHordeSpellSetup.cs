@@ -3,6 +3,7 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.Spells.HealingWavePlus;
 
 
 namespace WarcraftLegacies.Source.Setup.Spells
@@ -33,6 +34,21 @@ namespace WarcraftLegacies.Source.Setup.Spells
         }
       };
       SpellSystem.Register(ascendance);
+      
+      var healingWavePlusHero = new HealingWavePlus(ABILITY_HWP4_ENERGY_WAVE_TERON)
+      {
+        DeathTriggerDuration = 20.0f, 
+        HealAmountBase = 100.0f,
+        HealAmountLevel = 0.0f, 
+        MaxBounces = 3, 
+        BounceRadius = 500.0f, 
+        SecondaryWaveRadius = 500.0f, 
+        SecondWaveHealAmount = 100.0f,
+        HealingEffect = @"Abilities\Spells\Items\HealingSalve\HealingSalveTarget.mdl", 
+        TargetMarkEffect = @"Abilities\Spells\Items\HealingSalve\HealingSalveTarget.mdl" 
+      };
+      SpellSystem.Register(healingWavePlusHero);
+
       
       var warStompKazzak = new Stomp(ABILITY_A0AW_WAR_STOMP_BLUE_DOOM_GUARD_TEAL_KAZZAK)
       {

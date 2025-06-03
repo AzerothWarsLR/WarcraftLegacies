@@ -24,14 +24,14 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
         public string HealingEffect { get; init; }
         public string TargetMarkEffect { get; init; } 
 
-        private float currentHealingModifier = 1.0f; 
+        private float CurrentHealingModifier = 1.0f; 
 
         public HealingWavePlus(int id) : base(id) { }
 
         public override void OnCast(unit caster, unit target, Point targetPoint)
         {
             // Reset diminishing returns for each new spell cast
-            currentHealingModifier = 1.0f;
+            CurrentHealingModifier = 1.0f;
 
             unit? lastTarget = null;
             var healedUnits = new HashSet<unit>();
@@ -70,26 +70,20 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
 
         private void HealTarget(unit caster, unit target, bool isSecondaryWave = false)
         {
-            // Apply diminishing returns to healing amounts per wave
+           
             float healAmount = (isSecondaryWave
                 ? SecondWaveHealAmount
-                : HealAmountBase + (HealAmountLevel * GetAbilityLevel(caster))) * currentHealingModifier;
-
-            // Heal the target
+                : HealAmountBase + (HealAmountLevel * GetAbilityLevel(caster))) * CurrentHealingModifier;
+   
             target.Heal(healAmount);
-
-            // Log diminishing returns for debugging
-            Console.WriteLine($"[HealingWavePlus] Healing {GetUnitName(target)} for {healAmount}. Modifier: {currentHealingModifier:P}");
-
-            // Play healing effect
+            Console.WriteLine($"[HealingWavePlus] Healing {GetUnitName(target)} for {healAmount}. Modifier: {CurrentHealingModifier:P}");
+            
             if (!string.IsNullOrEmpty(HealingEffect))
             {
                 var effect = AddSpecialEffectTarget(HealingEffect, target, "origin");
                 effect.SetLifespan();
             }
-
-            // Reduce healing modifier for subsequent waves
-            currentHealingModifier *= HealingReductionFactor;
+            CurrentHealingModifier *= HealingReductionFactor;
         }
 
         private void StartDeathTriggerTimer(unit trackedTarget, unit caster, HashSet<unit> healedUnits)
