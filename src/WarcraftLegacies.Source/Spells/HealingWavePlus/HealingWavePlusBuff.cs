@@ -1,5 +1,4 @@
-﻿using System;
-using WCSharp.Buffs;
+﻿using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.Spells.HealingWavePlus
 {
@@ -23,27 +22,6 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
 
       // Bind the in-game buff to be applied visually/mechanically
       Bind(ABILITY_HWP2_ENERGY_WAVE_BUFF_APPLICATOR, BUFF_HWP3_ENERGY_WAVE);
-    }
-
-    /// <inheritdoc />
-    public override void OnApply()
-    {
-      Console.WriteLine($"[HealingWaveBuff] Buff applied to {GetUnitName(Target)} by {GetUnitName(Caster)} for {Duration:F2} seconds.");
-      base.OnApply();
-    }
-
-    /// <inheritdoc />
-    public override void OnDispose()
-    {
-      Console.WriteLine($"[HealingWaveBuff] Buff on {GetUnitName(Target)} has expired.");
-      base.OnDispose();
-    }
-
-    /// <inheritdoc />
-    public override void OnTick()
-    {
-      Console.WriteLine($"[HealingWaveBuff] Buff is ticking on {GetUnitName(Target)}.");
-      base.OnTick();
     }
   }
 }
