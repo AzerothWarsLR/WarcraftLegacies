@@ -31,6 +31,12 @@
       "Id": 1802007905,
       "Type": 3,
       "Value": "E"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Increases a target friendly unit\u0027s damage by \u003CMD10,DataA1,%\u003E%, armor by \u003CMD10,DataB1\u003E and Life Regeneration by \u003CMD10,DataD1\u003E.  |nLasts \u003CMD10,Dur1\u003E seconds."
     }
   ]
 }
