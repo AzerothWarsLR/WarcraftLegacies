@@ -13,12 +13,12 @@ namespace WarcraftLegacies.Source.Setup
     public static void Setup()
     {
 
-      var thunderClap = new Stomp(FourCC("A0QC"))
+      var thunderClap = new Stomp(ABILITY_A0QC_THUNDER_CLAP_FEL_HORDE_SHATTERED_HAND_EXECUTIONER)
       {
         Radius = 300,
         DamageBase = 75,
         DurationBase = 1,
-        StunAbilityId = FourCC("S00H"),
+        StunAbilityId = ABILITY_S00H_THUNDER_CLAP_DUMMY,
         StunOrderId = OrderId("cripple"),
         SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
       };
