@@ -97,7 +97,7 @@ namespace MacroTools.FactionSystem
       }
       else
       {
-        return "||cff4f5055";
+        return "||cff4f5055"; //default to Coal 
       }
     }
 
