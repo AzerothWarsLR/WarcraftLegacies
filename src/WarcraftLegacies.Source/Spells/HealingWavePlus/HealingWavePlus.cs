@@ -21,6 +21,7 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
         public float BounceRadius { get; init; }
         public float SecondaryWaveRadius { get; init; }
         public string HealingEffect { get; init; }
+        public float HealingEffectScale { get; init; } = 0.5f;
         public string TargetMarkEffect { get; init; }
 
         private float _currentHealingModifier = 1.0f;
@@ -37,7 +38,6 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
 
             if (lastTarget != null)
             {
-                // Create the trigger effect and store its reference.
                 var triggerEffect = AddSpecialEffectTarget(TargetMarkEffect, lastTarget, "overhead");
                 triggerEffect.SetLifespan(DeathTriggerDuration);
                 StartDeathTriggerTimer(lastTarget, caster, healedUnits, triggerEffect);
@@ -76,6 +76,7 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
             if (!string.IsNullOrEmpty(HealingEffect))
             {
                 var effect = AddSpecialEffectTarget(HealingEffect, target, "origin");
+                effect.SetScale(HealingEffectScale);
                 effect.SetLifespan();
             }
             _currentHealingModifier *= HealingReductionFactor;
@@ -110,13 +111,11 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
                     DestroyTimer(GetExpiredTimer());
                 }
             });
-
             TimerStart(CreateTimer(), DeathTriggerDuration, false, () =>
             {
                 DestroyTimer(GetExpiredTimer());
             });
         }
-
         private void PerformSecondaryWave(unit caster, unit triggerPointUnit, HashSet<unit> healedUnits)
         {
             var triggerPoint = triggerPointUnit.GetPosition();
@@ -137,7 +136,6 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
                 lightningEffects.Add(lightning);
                 lastHealedUnit = ally;
             }
-
             TimerStart(CreateTimer(), 0.5f, false, () =>
             {
                 foreach (var lightning in lightningEffects)
@@ -151,12 +149,9 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
             {
                 var healingWaveBuff = new HealingWaveBuff(caster, lastHealedUnit, DeathTriggerDuration);
                 BuffSystem.Add(healingWaveBuff);
-
-                // Subsequent calls here don't need a trigger effect.
                 StartDeathTriggerTimer(lastHealedUnit, caster, healedUnits);
             }
         }
-
         private static bool IsValidAlly(unit caster, unit target)
         {
             return target != null
