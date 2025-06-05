@@ -37,9 +37,10 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
 
             if (lastTarget != null)
             {
+                // Create the trigger effect and store its reference.
                 var triggerEffect = AddSpecialEffectTarget(TargetMarkEffect, lastTarget, "overhead");
                 triggerEffect.SetLifespan(DeathTriggerDuration);
-                StartDeathTriggerTimer(lastTarget, caster, healedUnits);
+                StartDeathTriggerTimer(lastTarget, caster, healedUnits, triggerEffect);
             }
         }
 
@@ -59,7 +60,7 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
         private unit? FindNearestAlly(unit caster, unit currentTarget, HashSet<unit> excludedUnits)
         {
             return GlobalGroup.EnumUnitsInRange(currentTarget.GetPosition(), BounceRadius)
-                .Where(u => IsValidAlly(caster, u) && !excludedUnits.Contains(u))
+                .Where(u => HealingWavePlus.IsValidAlly(caster, u) && !excludedUnits.Contains(u))
                 .OrderBy(u => MathEx.GetDistanceBetweenPoints(currentTarget.GetPosition(), u.GetPosition()))
                 .FirstOrDefault();
         }
@@ -79,8 +80,8 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
             }
             _currentHealingModifier *= HealingReductionFactor;
         }
-
-        private void StartDeathTriggerTimer(unit trackedTarget, unit caster, HashSet<unit> healedUnits)
+        
+        private void StartDeathTriggerTimer(unit trackedTarget, unit caster, HashSet<unit> healedUnits, effect triggerEffect = null)
         {
             var buff = new HealingWaveBuff(caster, trackedTarget, DeathTriggerDuration)
             {
@@ -98,6 +99,10 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
                 {
                     PerformSecondaryWave(caster, trackedTarget, healedUnits);
                     hasTriggeredWave = true;
+                    if (triggerEffect != null)
+                    {
+                        DestroyEffect(triggerEffect);
+                    }
                     DestroyTimer(GetExpiredTimer());
                 }
                 else if (trackedTarget == null)
@@ -118,16 +123,19 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
             var lightningEffects = new List<Common.lightning>();
             unit lastHealedUnit = null;
 
-            foreach (var unit in GlobalGroup.EnumUnitsInRange(triggerPoint, SecondaryWaveRadius))
+            var nearbyAllies = GlobalGroup.EnumUnitsInRange(triggerPoint, SecondaryWaveRadius)
+                .Where(ally => HealingWavePlus.IsValidAlly(caster, ally) && !healedUnits.Contains(ally))
+                .OrderBy(ally => MathEx.GetDistanceBetweenPoints(triggerPoint, ally.GetPosition()))
+                .Take(MaxBounces)
+                .ToList();
+
+            foreach (var ally in nearbyAllies)
             {
-                if (IsValidAlly(caster, unit) && !healedUnits.Contains(unit))
-                {
-                    HealTarget(caster, unit, isSecondaryWave: true);
-                    var lightning = AddLightning("DRAL", true, triggerPoint.X, triggerPoint.Y, GetUnitX(unit), GetUnitY(unit));
-                    SetLightningColor(lightning, 0.0f, 1.0f, 0.0f, 1.0f);
-                    lightningEffects.Add(lightning);
-                    lastHealedUnit = unit;
-                }
+                HealTarget(caster, ally, isSecondaryWave: true);
+                var lightning = AddLightning("DRAL", true, triggerPoint.X, triggerPoint.Y, GetUnitX(ally), GetUnitY(ally));
+                SetLightningColor(lightning, 0.0f, 1.0f, 0.0f, 1.0f);
+                lightningEffects.Add(lightning);
+                lastHealedUnit = ally;
             }
 
             TimerStart(CreateTimer(), 0.5f, false, () =>
@@ -144,6 +152,7 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
                 var healingWaveBuff = new HealingWaveBuff(caster, lastHealedUnit, DeathTriggerDuration);
                 BuffSystem.Add(healingWaveBuff);
 
+                // Subsequent calls here don't need a trigger effect.
                 StartDeathTriggerTimer(lastHealedUnit, caster, healedUnits);
             }
         }
