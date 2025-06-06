@@ -19,20 +19,18 @@ namespace WarcraftLegacies.Source.Factions
   {
     private readonly AllLegendSetup _allLegendSetup;
     /// <inheritdoc />
-    public Skywall(AllLegendSetup allLegendSetup) : base("Skywall", PLAYER_COLOR_LIGHT_GRAY, "|cffffffff",
+    public Skywall(AllLegendSetup allLegendSetup) : base("Skywall", new[] {PLAYER_COLOR_LIGHT_GRAY, PLAYER_COLOR_COAL, PLAYER_COLOR_RED},
       @"ReplaceableTextures\CommandButtons\BTNFrostRevenant2.blp")
     {
       ControlPointDefenderUnitTypeId = UNIT_NECP_CONTROL_POINT_DEFENDER_SKYWALL_TOWER;
       TraditionalTeam = TeamSetup.OldGods;
       _allLegendSetup = allLegendSetup;
       StartingGold = 200;
-      IntroText = @"You are playing as the Elementals of Skywall|r|r.
+      IntroText = $"You are playing as the {PrefixCol}Elementals of Skywall|r.\n\n" +
+                  "At the start, clear Uldum and take control of Tanaris.\n\n" +
+                  "Coordinate with your Qiraji ally to push back the Horde before the Druids can intervene.\n\n" +
+                  "You have a powerful event in the Burning of the World Tree. Use it at the right time to surprise the Druids and possibly attack them from behind.";
 
-At the start, clear Uldum and take control of Tanaris. 
-
-Coordinate with your Qiraji ally to push the Horde before the Druids can get there.
-
-You have a very powerful event in the Burning of the World Tree. Use it at the right time to surprise the Druids and maybe attack them from behind.";
       Nicknames = new List<string>
       {
         "sky",

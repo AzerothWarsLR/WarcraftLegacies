@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Factions
     private readonly unit _gilneasGate;
 
     /// <inheritdoc />
-    public Gilneas(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup) : base("Gilneas", PLAYER_COLOR_COAL, "|cff808080",
+    public Gilneas(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup) : base("Gilneas", new[] {PLAYER_COLOR_COAL, PLAYER_COLOR_LIGHT_GRAY, PLAYER_COLOR_MINT},
       @"ReplaceableTextures\CommandButtons\BTNGreymane.blp")
     {
       TraditionalTeam = TeamSetup.NorthAlliance;
@@ -28,13 +28,11 @@ namespace WarcraftLegacies.Source.Factions
       _gilneasGate = preplacedUnitSystem.GetUnit(UNIT_H02K_GREYMANE_S_GATE_CLOSED);
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_H0AF_CONTROL_POINT_DEFENDER_GILNEAS;
-      IntroText = @"You are playing as the accursed |cff646464Kingdom of Gilneas|r|r.
+      IntroText = $"You are playing as the accursed {PrefixCol}Kingdom of Gilneas|r.\n\n" +
+                  "You start isolated behind the Greymane Wall; the only way for an enemy to reach you is through the Greymane Gate or via the coast.\n\n" +
+                  "You must raise an army and fight back against the feral wolves and worgen that have overrun your Kingdom.\n\n" +
+                  "Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist Lordaeron and Dalaran with the plague, if it's not too late.";
 
-You start isolated behind the Greymane Wall, the only way for an enemy to reach you is through the Greymane Gate or via the coast.
-
-You must raise an army and fight back against the feral wolves and worgen that have overrun  your Kingdom.
-
-Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist Lordaeron and Dalaran with the plague, if it's not too late.";
       GoldMines = new List<unit>
       {
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9392, -921)),

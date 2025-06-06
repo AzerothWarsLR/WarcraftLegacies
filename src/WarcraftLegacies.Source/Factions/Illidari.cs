@@ -21,8 +21,7 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    public Illidari(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Illidan", PLAYER_COLOR_VIOLET,
-      "|cffff00ff", @"ReplaceableTextures\CommandButtons\BTNEvilIllidan.blp")
+    public Illidari(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Illidan", new[] {PLAYER_COLOR_VIOLET, PLAYER_COLOR_PURPLE, PLAYER_COLOR_PINK}, @"ReplaceableTextures\CommandButtons\BTNEvilIllidan.blp")
     {
       TraditionalTeam = TeamSetup.Outland;
       _allLegendSetup = allLegendSetup;
@@ -31,13 +30,11 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       FoodMaximum = 250;
       ControlPointDefenderUnitTypeId = UNIT_N0BB_CONTROL_POINT_DEFENDER_ILLIDARI_TOWER;
-      IntroText = @"You are playing as the Betrayer, Illidan|r|r.
+      IntroText = $"You are playing as the Betrayer, {PrefixCol}Illidan|r.\n\n" +
+                  "You begin on the Broken Isles, ready to plunder the tombs for artifacts to empower Illidan.\n\n" +
+                  "Unfortunately, you cannot progress further in the Islands. Use Illidan's mastery of portals to travel to Outland and join forces with your ally.\n\n" +
+                  "Support your ally in Outland by unlocking bases and coordinating with his push out of the Dark Portal.";
 
-You begin on the Broken Isles, ready to plunder the tombs for artifacts to empower Illidan.
-
-Unfortunately, you cannot progress further in the Islands. Use Illidan's mastery of portals to travel to Outland and join forces with your ally.
-
-Support your ally in Outland by unlocking bases and coordinating with his push out of the Dark Portal.";
       Nicknames = new List<string>
       {
         "illi",

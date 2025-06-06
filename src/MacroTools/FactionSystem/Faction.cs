@@ -78,16 +78,21 @@ namespace MacroTools.FactionSystem
       });
     }
 
-    protected Faction(string name, playercolor playerColor, string prefixCol, string icon)
+    protected Faction(string name, playercolor[] colorPriority, string icon)
     {
       _name = name;
-      PlayerColor = playerColor;
-      PrefixCol = prefixCol;
       _icon = icon;
       FoodMaximum = FoodMaximumDefault;
       Id = _highestId + 1;
       _highestId = Id;
+
+      PlayerColor = ColorManager.AssignPreferredColorOrFallback(colorPriority);
+      PrefixCol = ColorManager.GetColorHexCode(PlayerColor);
     }
+
+
+
+
 
     internal List<FactionDependentInitializer> FactionDependentInitializers { get; } = new();
 
@@ -270,12 +275,19 @@ namespace MacroTools.FactionSystem
         SetPlayerState(Player, PLAYER_STATE_OBSERVER, 1);
         PlayerDistributor.DistributePlayer(Player);
         RemoveGoldMines();
+
+        if (PlayerColor != null)
+        {
+          ColorManager.ReleaseColor(PlayerColor);
+        }
       }
 
       ScoreStatus = ScoreStatus.Defeated;
+
       StatusChanged?.Invoke(this, this);
       ScoreStatusChanged?.Invoke(this, this);
     }
+
 
     /// <summary>
     ///   Returns the maximum number of times the Faction can train a unit, build a building, or research a research.
