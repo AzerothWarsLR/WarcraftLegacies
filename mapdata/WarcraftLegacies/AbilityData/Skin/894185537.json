@@ -106,7 +106,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Calls down holy beams of light that damage units in a target area. |n|n|cffffcc00Level 1|r - \u003CANhs,DataF1\u003E waves at \u003CANhs,DataA1\u003E hit points healed each. |n|cffffcc00Level 2|r - \u003CANhs,DataF2\u003E waves at \u003CANhs,DataA2\u003E hit points healed each. |n|cffffcc00Level 3|r - \u003CANhs,DataF3\u003E waves at \u003CANhs,DataA3\u003E hit points healed each."
+      "Value": "Calls down holy beams of light that damage units in a target area. |n|n|cffffcc00Level 1|r - \u003CANhs,DataF1\u003E waves at \u003CANhs,DataA1\u003E damage per wave.|n|cffffcc00Level 2|r - \u003CANhs,DataF2\u003E waves at \u003CANhs,DataA2\u003E damage per wave. |n|cffffcc00Level 3|r - \u003CANhs,DataF3\u003E waves at \u003CANhs,DataA3\u003E damage per wave."
     },
     {
       "Id": 1667329377,

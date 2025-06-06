@@ -6,10 +6,6 @@
   ],
   "Modifications": [
     {
-      "Id": 2020631137,
-      "Value": 2
-    },
-    {
       "Id": 1718840929,
       "Type": 3,
       "Value": "(Scourge-Necromancer)"
@@ -17,7 +13,7 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "E"
+      "Value": "Q"
     },
     {
       "Level": 1,

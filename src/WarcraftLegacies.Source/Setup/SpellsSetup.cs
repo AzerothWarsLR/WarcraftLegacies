@@ -13,16 +13,27 @@ namespace WarcraftLegacies.Source.Setup
     public static void Setup()
     {
 
-      var thunderClap = new Stomp(FourCC("A0QC"))
+      var thunderClap = new Stomp(ABILITY_A0QC_THUNDER_CLAP_FEL_HORDE_SHATTERED_HAND_EXECUTIONER)
       {
         Radius = 300,
         DamageBase = 75,
         DurationBase = 1,
-        StunAbilityId = FourCC("S00H"),
+        StunAbilityId = ABILITY_S00H_THUNDER_CLAP_DUMMY,
         StunOrderId = OrderId("cripple"),
         SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
       };
       SpellSystem.Register(thunderClap);
+
+      var thunderClapGil = new Stomp(ABILITY_MD13_THUNDER_CLAP_GILNEAS_GREY_GUARD)
+      {
+        Radius = 300,
+        DamageBase = 40,
+        DurationBase = 1,
+        StunAbilityId = ABILITY_MD14_THUNDER_CLAP_DUMMY_GREY_GUARD,
+        StunOrderId = OrderId("cripple"),
+        SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
+      };
+      SpellSystem.Register(thunderClapGil);
 
       var massAntiMagicShell = new MassAnySpell(FourCC("A099"))
       {
