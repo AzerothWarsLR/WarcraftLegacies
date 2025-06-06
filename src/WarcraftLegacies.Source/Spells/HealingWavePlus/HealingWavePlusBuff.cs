@@ -16,11 +16,11 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
     public HealingWaveBuff(unit caster, unit target, float duration)
       : base(caster, target)
     {
-      EffectString = @"Abilities\Spells\Items\HealingSalve\HealingSalveTarget.mdl"; // Default visual effect
-      EffectAttachmentPoint = "overhead"; // Attach to the target's overhead
-      Duration = duration; // Use the provided dynamic duration
+      EffectString = @"Abilities\Spells\Items\HealingSalve\HealingSalveTarget.mdl";
+      EffectAttachmentPoint = "origin"; 
+      Duration = duration; 
 
-      // Bind the in-game buff to be applied visually/mechanically
+     
       Bind(ABILITY_HWP2_ENERGY_WAVE_BUFF_APPLICATOR, BUFF_HWP3_ENERGY_WAVE);
     }
   }
