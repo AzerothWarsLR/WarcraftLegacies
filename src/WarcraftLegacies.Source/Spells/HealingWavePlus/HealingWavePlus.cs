@@ -81,7 +81,7 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
             }
             _currentHealingModifier *= HealingReductionFactor;
         }
-        
+
         private void StartDeathTriggerTimer(unit trackedTarget, unit caster, HashSet<unit> healedUnits, effect triggerEffect = null)
         {
             var buff = new HealingWaveBuff(caster, trackedTarget, DeathTriggerDuration)
@@ -93,8 +93,9 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
             BuffSystem.Add(buff);
 
             var hasTriggeredWave = false;
-
-            TimerStart(CreateTimer(), 0.1f, true, () =>
+            
+            var deathCheckTimer = CreateTimer();
+            TimerStart(deathCheckTimer, 0.1f, true, () =>
             {
                 if (trackedTarget != null && GetUnitState(trackedTarget, UNIT_STATE_LIFE) <= 0 && !hasTriggeredWave)
                 {
@@ -104,18 +105,22 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
                     {
                         DestroyEffect(triggerEffect);
                     }
-                    DestroyTimer(GetExpiredTimer());
+                    DestroyTimer(deathCheckTimer);
                 }
                 else if (trackedTarget == null)
                 {
-                    DestroyTimer(GetExpiredTimer());
+                    DestroyTimer(deathCheckTimer);
                 }
             });
-            TimerStart(CreateTimer(), DeathTriggerDuration, false, () =>
+          
+            var timeoutTimer = CreateTimer();
+            TimerStart(timeoutTimer, DeathTriggerDuration, false, () =>
             {
-                DestroyTimer(GetExpiredTimer());
+                DestroyTimer(deathCheckTimer);
+                DestroyTimer(timeoutTimer);
             });
         }
+
         private void PerformSecondaryWave(unit caster, unit triggerPointUnit, HashSet<unit> healedUnits)
         {
             var triggerPoint = triggerPointUnit.GetPosition();
@@ -152,6 +157,7 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
                 StartDeathTriggerTimer(lastHealedUnit, caster, healedUnits);
             }
         }
+
         private static bool IsValidAlly(unit caster, unit target)
         {
             return target != null

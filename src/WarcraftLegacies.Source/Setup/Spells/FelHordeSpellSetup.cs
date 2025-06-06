@@ -44,8 +44,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
         BounceRadius = 500.0f, 
         SecondaryWaveRadius = 500.0f, 
         SecondWaveHealAmount = 100.0f,
-        HealingEffect = @"Abilities\Spells\Items\HealingSalve\HealingSalveTarget.mdl", 
-        TargetMarkEffect = @"Abilities\Spells\Items\HealingSalve\HealingSalveTarget.mdl" 
+        HealingEffect = @"", 
+        TargetMarkEffect = @"" 
       };
       SpellSystem.Register(healingWavePlusHero);
 
