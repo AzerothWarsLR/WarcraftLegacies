@@ -97,7 +97,7 @@ namespace MacroTools.FactionSystem
       }
       else
       {
-        return "|cffffffff"; // Default to white
+        return "|cff4f5055"; // Default to Coal if no colors can be found freely available.
       }
     }
 
