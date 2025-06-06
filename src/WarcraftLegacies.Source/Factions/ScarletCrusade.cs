@@ -11,21 +11,18 @@ namespace WarcraftLegacies.Source.Factions
     private readonly AllLegendSetup _allLegendSetup;
 
     /// <inheritdoc />
-    public ScarletCrusade(AllLegendSetup allLegendSetup) : base("Scarlet Crusade", PLAYER_COLOR_MAROON, "|cff800000",
+    public ScarletCrusade(AllLegendSetup allLegendSetup) : base("Scarlet Crusade", new[] {PLAYER_COLOR_MAROON, PLAYER_COLOR_RED, PLAYER_COLOR_PEACH},
       "ReplaceableTextures/CommandButtons/BTNScarletKnight.blp")
     {
       _allLegendSetup = allLegendSetup;
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_H09O_CONTROL_POINT_DEFENDER_CRUSADE;
-      IntroText = @"You are playing as the zealous |cff940000Scarlet Crusade|r.
+      IntroText = $"You are playing as the zealous {PrefixCol}Scarlet Crusade|r.\n\n" +
+                  "The Cult of the Damned has mobilized and is quietly spreading corruption throughout Lordaeron.\n\n" +
+                  "Construct towers to detect hidden cultists moving through the Kingdom, and burn any buildings they have corrupted.\n\n" +
+                  "Your soldiers are weaker when alone but gain substantial bonuses when paired with a variety of unit types.\n\n" +
+                  "Fortify your strongholds against the storm to come, and prepare to unleash the Crusade on those who defile your lands.";
 
-The Cult of the Damned has mobilized and is quietly spreading corruption throughout Lordaeron.
-
-Build towers to detect the hidden cultists moving through the Kingdom and burn any buildings they have corrupted.
-
-Your soldiers are weaker when alone, but gain substantial bonuses when paired with a variety of unit-types. 
-
-Fortify your strongholds against the storm to come and make ready to unleash the Crusade on those who would defile your lands.";
       Nicknames = new List<string>
       {
         "sc",

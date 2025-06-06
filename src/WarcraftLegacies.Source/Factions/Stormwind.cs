@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Factions
 
     /// <inheritdoc />
     
-    public Stormwind(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Stormwind", PLAYER_COLOR_BLUE, "|c000042ff",
+    public Stormwind(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Stormwind", new[] {PLAYER_COLOR_BLUE, PLAYER_COLOR_NAVY, PLAYER_COLOR_CYAN},
       @"ReplaceableTextures\CommandButtons\BTNKnight.blp")
     {
       TraditionalTeam = TeamSetup.SouthAlliance;
@@ -27,13 +27,11 @@ namespace WarcraftLegacies.Source.Factions
       UndefeatedResearch = UPGRADE_R060_STORMWIND_EXISTS;
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_H05X_CONTROL_POINT_DEFENDER_STORMWIND;
-      IntroText = @"You are playing as the steadfast |c000042FFKingdom of Stormwind|r.
+      IntroText = $"You are playing as the steadfast {PrefixCol}Kingdom of Stormwind|r.\n\n" +
+                  "You begin in Westfall, separated from the rest of the kingdom. Reunite your lands by liberating Darkshire, Lakeshire, and finally Stormwind City.\n\n" +
+                  "Once you have unified Stormwind's forces, race east to the Nethergarde Stronghold and prepare for the invasion of the Fel Horde.\n\n" +
+                  "Make sure to communicate with your Dwarven and Kul Tiran allies, as they will be key to defeating the evil that lurks beyond the Dark Portal.";
 
-You begin in Westfall, separated from the rest of the kingdom. Reunite your lands by liberating Darkshire, Lakeshire and finally Stormwind City. 
-
-Once you have unified Stormwind's forces, race East to the Nethergarde Stronghold and prepare for the invasion of the Fel Horde.
-
-Make sure to communicate with your Dwarven and Kul'tiran allies, as they will be key in helping you defeat the evil from beyond the Dark Portal.";
       Nicknames = new List<string>
       {
         "sw",

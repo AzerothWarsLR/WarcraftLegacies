@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Factions
     /// <inheritdoc />
     
     public Lordaeron(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Lordaeron",
-      PLAYER_COLOR_LIGHT_BLUE, "|cff8080ff", @"ReplaceableTextures\CommandButtons\BTNArthas.blp")
+      new[] {PLAYER_COLOR_LIGHT_BLUE, PLAYER_COLOR_AQUA, PLAYER_COLOR_PEACH}, @"ReplaceableTextures\CommandButtons\BTNArthas.blp")
     {
       TraditionalTeam = TeamSetup.NorthAlliance;
       _preplacedUnitSystem = preplacedUnitSystem;
@@ -37,13 +37,11 @@ namespace WarcraftLegacies.Source.Factions
       UndefeatedResearch = UPGRADE_R05M_LORDAERON_EXISTS;
       CinematicMusic = "Comradeship";
       ControlPointDefenderUnitTypeId = UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON;
-      IntroText = @"You are playing as the great |cff4242ebKingdom of Lordaeron|r.
+      IntroText = $"You are playing as the great {PrefixCol}Kingdom of Lordaeron|r.\n\n" +
+                  "You begin in Andorhal, isolated from your forces in the rest of the Kingdom, and the Plague of Undeath is imminent.\n\n" +
+                  "Secure your major settlements by clearing out clusters of enemies and fortify your Kingdom as much as possible.\n\n" +
+                  "If you survive the Plague, sail to the frozen wasteland of Northrend and take the fight to the Lich King.";
 
-You begin in Andorhal, isolated from your forces in the rest of the Kingdom, and the Plague of Undeath is coming.
-
-Secure your major settlements by clearing out clusters of enemies and fortify your Kingdom as much as possible.
-
-If you survive the Plague, sail to the frozen wasteland of Northrend and take the fight to the Lich King.";
       GoldMines = new List<unit>
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(13617, 8741)),

@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Factions
     /// <inheritdoc />
     
     public Druids(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) :
-      base("Druids", PLAYER_COLOR_BROWN, "|c004e2a04", @"ReplaceableTextures\CommandButtons\BTNFurion.blp")
+      base("Druids", new[] {PLAYER_COLOR_BROWN, PLAYER_COLOR_WHEAT, PLAYER_COLOR_LAVENDER}, @"ReplaceableTextures\CommandButtons\BTNFurion.blp")
     {
       TraditionalTeam = TeamSetup.Kalimdor;
       _preplacedUnitSystem = preplacedUnitSystem;
@@ -35,14 +35,12 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       CinematicMusic = "DarkAgents";
       ControlPointDefenderUnitTypeId = UNIT_E01Y_CONTROL_POINT_DEFENDER_DRUIDS;
-      IntroText = @"You are playing as the ancient Druids of the Cenarion Circle.
+      IntroText = $"You are playing as the ancient {PrefixCol}Druids of the Cenarion Circle|r.\n\n" +
+                  "You begin isolated in the deepest parts of Mount Hyjal near the World Tree.\n\n" +
+                  "The Old Gods are gathering to burn Ashenvale forest and the World Tree. Cenarius has emerged from his seclusion to stop them. " +
+                  "Use him to awaken Malfurion from his slumber as soon as possible.\n\n" +
+                  "Gather your forces and strike before the Old Gods can organize their efforts.";
 
-You begin isolated in the deepest parts of Mount Hyjal near the World Tree.
-
-The Old Gods are  gathering to burn Ashenvale forest and the World Tree. Cenarius has emerged from his seclusion to stop them. 
-Use him to awaken Malfurion from his slumber as soon as possible.
-
-Gather your forces and strike before the Old Gods can organize their efforts.";
       GoldMines = new List<unit>
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9200, 10742))
