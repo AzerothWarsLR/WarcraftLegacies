@@ -43,37 +43,37 @@
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "Nathrezim Infiltrator Adept Training"
+      "Value": "Nathrezim Warlock Adept Training"
     },
     {
       "Level": 2,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "Nathrezim Infiltrator Master Training"
+      "Value": "Nathrezim Warlock Master Training"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "Research Nathrezim Infiltrator Adept Training"
+      "Value": "Research Nathrezim Warlock Adept Training"
     },
     {
       "Level": 2,
       "Id": 829453415,
       "Type": 3,
-      "Value": "Research Nathrezim Infiltrator Master Training"
+      "Value": "Research Nathrezim Warlock Master Training"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Nathrezim Infiltrators\u0027 mana capacity, hit points and gives them the ability to cast Sight of Sargeras."
+      "Value": "Increases Nathrezim Warlock\u0027s mana capacity, hit points and gives them the ability to cast Sight of Sargeras."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Nathrezim Infiltrators\u0027 mana capacity, hit points and gives them the ability to cast Charm."
+      "Value": "Increases Nathrezim Warlock\u0027s mana capacity, hit points and gives them the ability to cast Energy Wave."
     }
   ]
 }

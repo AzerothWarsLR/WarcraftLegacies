@@ -43,7 +43,8 @@ namespace WarcraftLegacies.Source.Factions
 
       GoldMines = new List<unit>
       {
-        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9200, 10742))
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9200, 10742)),
+         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-17545, 15856))
       };
       Nicknames = new List<string>
       {

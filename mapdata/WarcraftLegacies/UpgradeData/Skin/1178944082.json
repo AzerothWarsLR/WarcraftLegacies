@@ -51,13 +51,13 @@
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Fateweavers\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Anti-magic Shell."
+      "Value": "Increases Fateweavers\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Purge."
     },
     {
       "Level": 2,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Increases Fateweavers\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Suppression."
+      "Value": "Increases Fateweavers\u0027 mana capacity, mana regeneration rate, hit points and gives them the ability to cast Inner Fire"
     }
   ]
 }

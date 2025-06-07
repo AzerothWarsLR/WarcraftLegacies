@@ -3,6 +3,8 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.Spells.HealingWavePlus;
+
 
 namespace WarcraftLegacies.Source.Setup.Spells
 {
@@ -33,6 +35,21 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
       SpellSystem.Register(ascendance);
       
+      var healingWavePlusHero = new HealingWavePlus(ABILITY_HWP4_ENERGY_WAVE_TERON)
+      {
+        DeathTriggerDuration = 20.0f, 
+        HealAmountBase = 100.0f,
+        HealAmountLevel = 0.0f, 
+        MaxBounces = 3, 
+        BounceRadius = 500.0f, 
+        SecondaryWaveRadius = 500.0f, 
+        SecondWaveHealAmount = 100.0f,
+        HealingEffect = @"", 
+        TargetMarkEffect = @"" 
+      };
+      SpellSystem.Register(healingWavePlusHero);
+
+      
       var warStompKazzak = new Stomp(ABILITY_A0AW_WAR_STOMP_BLUE_DOOM_GUARD_TEAL_KAZZAK)
       {
         Radius = 300,
@@ -52,6 +69,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         SpecialEffectPath = @"Abilities\Spells\Undead\RaiseSkeletonWarrior\RaiseSkeleton.mdl",
         RequiredResearch = UPGRADE_R098_FEL_INFUSED_SKELETON_FEL_HORDE
       });
+      
 
       PassiveAbilityManager.Register(new Execute(UNIT_O01L_EXECUTIONER_FEL_HORDE_ELITE)
       {

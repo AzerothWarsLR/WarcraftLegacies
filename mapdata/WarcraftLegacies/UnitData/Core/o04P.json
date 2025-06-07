@@ -8,7 +8,7 @@
     {
       "Id": 1768055157,
       "Type": 3,
-      "Value": "Apiv,A07B,A0WB,A0YY,A13Y,A125,A13J,A08P,Aion"
+      "Value": "A02T,A0YY,TPY7,A07B,A0WB,HWP1,A08P,Aion"
     },
     {
       "Id": 1949393269,
@@ -34,7 +34,7 @@
     },
     {
       "Id": 1819240309,
-      "Value": 25
+      "Value": 35
     },
     {
       "Id": 1919903605,
@@ -67,7 +67,7 @@
     {
       "Id": 1919970677,
       "Type": 2,
-      "Value": 0
+      "Value": 1
     },
     {
       "Id": 1836348021,
@@ -75,7 +75,7 @@
     },
     {
       "Id": 1937141109,
-      "Value": 200
+      "Value": 220
     },
     {
       "Id": 1919381621,
@@ -95,25 +95,7 @@
     {
       "Id": 1731289461,
       "Type": 3,
-      "Value": "debris,ground,item,structure,ward"
-    },
-    {
-      "Id": 1999724917,
-      "Type": 3,
-      "Value": "normal"
-    },
-    {
-      "Id": 1915838837,
-      "Value": 100
-    },
-    {
-      "Id": 829645685,
-      "Type": 3,
-      "Value": "WoodMediumBash"
-    },
-    {
-      "Id": 2050056565,
-      "Value": 0
+      "Value": "air,debris,ground,item,structure,ward"
     },
     {
       "Id": 1902473845,

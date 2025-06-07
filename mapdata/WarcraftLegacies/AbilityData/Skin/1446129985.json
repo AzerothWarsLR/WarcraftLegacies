@@ -80,7 +80,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Conjures a Blessed Cricle which Heals allied ground units in a target area over time. |n|nHeals 150 hitpoints over 5 seconds, then 10 hitpoint every 1 seconds for 35 seconds.|n"
+      "Value": "Conjures a Blessed Circle which Heals allied ground units in a target area. |n|nHeals each unit for 150 hitpoints, then 10 hitpoints a second for 35 seconds."
     },
     {
       "Level": 2,

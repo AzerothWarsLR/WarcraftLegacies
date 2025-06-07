@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Factions
           : base("Warsong", new[] {PLAYER_COLOR_ORANGE, PLAYER_COLOR_YELLOW, PLAYER_COLOR_COAL},
           @"ReplaceableTextures\CommandButtons\BTNHellScream.blp")
         {
-            TraditionalTeam = TeamSetup.Horde;
+            TraditionalTeam = TeamSetup.Kalimdor;
             _preplacedUnitSystem = preplacedUnitSystem;
             _allLegendSetup = allLegendSetup;
             _artifactSetup = artifactSetup;

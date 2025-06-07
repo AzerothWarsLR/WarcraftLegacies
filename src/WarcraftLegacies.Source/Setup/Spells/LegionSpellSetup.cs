@@ -4,6 +4,7 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.Spells.HealingWavePlus;
 using WarcraftLegacies.Source.Spells.Slipstream;
 using WCSharp.Shared.Data;
 
@@ -71,6 +72,21 @@ namespace WarcraftLegacies.Source.Setup.Spells
         TargetType = SpellTargetType.Point
       };
       SpellSystem.Register(massSummonUnit);
+      
+      var healingWavePlus = new HealingWavePlus(ABILITY_HWP1_ENERGY_WAVE)
+      {
+        DeathTriggerDuration = 20.0f, 
+        HealAmountBase = 100.0f,
+        HealAmountLevel = 0.0f, 
+        MaxBounces = 3, 
+        BounceRadius = 500.0f, 
+        SecondaryWaveRadius = 500.0f, 
+        SecondWaveHealAmount = 100.0f,
+        HealingEffect = @"", 
+        TargetMarkEffect = @"" 
+      };
+      SpellSystem.Register(healingWavePlus);
+
 
       RegisterSlipstreams();
 
@@ -82,6 +98,15 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Radius = 50,
       };
       SpellSystem.Register(summonFelHounds);
+
+      var summonFelHoundsDoomGuard = new SummonUnits(ABILITY_VP10_HOUND_COMPANION_LEGION_DOOMGUARD)
+      {
+        SummonUnitTypeId = UNIT_NFEL_FEL_STALKER_SUMMONER_WARLOCK_EYE_OF_SARGERAS,
+        SummonCount = 2,
+        Duration = 60,
+        Radius = 50,
+      };
+      SpellSystem.Register(summonFelHoundsDoomGuard);
 
       var dreadlordHeroes = new[]
       {
@@ -101,7 +126,12 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Effect = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
       });
 
-      PassiveAbilityManager.Register(new RestoreHealthFromEachTargetDamaged(UNIT_U007_DREADLORD_LEGION_ELITE, ABILITY_VP08_VAMPIRIC_SIPHON_LEGION_ELITES)
+      var elites = new[]
+     {
+        UNIT_U007_DREADLORD_LEGION_ELITE,
+        UNIT_N04O_DOOM_LORD_LEGION};
+
+      PassiveAbilityManager.Register(new RestoreHealthFromEachTargetDamaged(elites, ABILITY_VP08_VAMPIRIC_SIPHON_LEGION_ELITES)
       {
         HealthPerTarget = new LeveledAbilityField<int>
         {

@@ -32,7 +32,7 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": "(legion)"
+      "Value": "(Legion)"
     },
     {
       "Id": 1818520949,
@@ -47,7 +47,7 @@
     {
       "Id": 1835101813,
       "Type": 3,
-      "Value": "Nathrezim Infiltrator"
+      "Value": "Nathrezim Warlock"
     },
     {
       "Id": 1668510581,
@@ -57,12 +57,12 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Train Nathrezim Infiltrator"
+      "Value": "Train Nathrezim Warlock"
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Shadowy Nathrezim agents."
+      "Value": "Shadowy Nathrezim support unit."
     },
     {
       "Id": 1684960117,
@@ -73,11 +73,6 @@
       "Id": 1633907573,
       "Type": 1,
       "Value": 0.8
-    },
-    {
-      "Id": 1831952757,
-      "Type": 3,
-      "Value": ""
     }
   ]
 }
