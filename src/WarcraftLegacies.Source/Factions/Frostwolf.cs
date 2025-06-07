@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Factions
     /// <inheritdoc />
 
     public Frostwolf(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup,
-      ArtifactSetup artifactSetup) : base("Frostwolf", PLAYER_COLOR_RED, "|c00ff0303",
+      ArtifactSetup artifactSetup) : base("Frostwolf", new[] {PLAYER_COLOR_RED, PLAYER_COLOR_GREEN, PLAYER_COLOR_PINK},
       @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
     {
       TraditionalTeam = TeamSetup.Kalimdor;
@@ -34,11 +34,10 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       CinematicMusic = "SadMystery";
       ControlPointDefenderUnitTypeId = UNIT_N0B6_CONTROL_POINT_DEFENDER_FROSTWOLF;
-      IntroText = @"You are playing as the honorable |cffff0000Frostwolf Clan|r.
+      IntroText = $"You are playing as the honorable {PrefixCol}Frostwolf Clan|r.\n\n" +
+                  "You begin in Ashenvale, make your way south to establish your bases, the Echo Isles and Thunder Bluff.\n\n" +
+                  "Your allies will be coming south to help you defend against the Old Gods, do not engage them alone.";
 
-You begin in Ashenvale, make your way south to establish your bases, the Echo Isles and Thunder Bluff.
-
-Your allies will be coming south to help you defend against the Old Gods, do not engage them alone.";
       GoldMines = new List<unit>
       {
         _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-9729, 2426)),

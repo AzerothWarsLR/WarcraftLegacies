@@ -1,6 +1,6 @@
 {
   "OldId": 2003324481,
-  "NewId": 1381118017,
+  "NewId": 877680456,
   "Unk": [
     0
   ],
@@ -8,12 +8,12 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Legion Nathrezim Infiltrator)"
+      "Value": "(Teron)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "R"
+      "Value": "W"
     },
     {
       "Id": 1802007137,
@@ -23,31 +23,31 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Calls forth a wave of energy that heals a target and bounces to nearby friendlies. Each bounce heals less damage. |n|n|cffffcc00Level 1|r - Heals \u003CANhw,DataA1\u003E damage, jumps \u003CANhw,DataB1\u003E times, 25% less healing per jump.|n|cffffcc00Level 2|r - Heals \u003CANhw,DataA2\u003E damage, jumps \u003CANhw,DataB2\u003E times, 20% less healing per jump.|n|cffffcc00Level 3|r - Heals \u003CANhw,DataA3\u003E damage, jumps \u003CANhw,DataB3\u003E times, 15% less healing per jump.|n|cffffcc00Level 4|r - Heals \u003CANhw,DataA4\u003E damage, jumps \u003CANhw,DataB4\u003E times, 10% less healing per jump."
+      "Value": "Calls forth a wave of energy that heals a target and bounces to nearby friendlies. Each bounce heals less damage. If the last healed unit dies within 20 seconds, the wave continues on to nearby targets.\r\n |n|n|cffffcc00Level 1|r - Heals 100 damage, jumps \u003CHWP4,DataB1\u003E times, 10% less healing per jump.|n|cffffcc00Level 2|r - Heals 175 damage, jumps \u003CHWP4,DataB2\u003E times, 10% less healing per jump.|n|cffffcc00Level 3|r - Heals 275 damage, jumps \u003CHWP4,DataB3\u003E times, 10% less healing per jump.|n|cffffcc00Level 4|r - Heals 375 damage, jumps \u003CHWP4,DataB4\u003E times, 10% less healing per jump."
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Calls forth a wave of healing energy that bounces up to \u003CA0RR,DataB1\u003E times, healing \u003CA0RR,DataA1\u003E damage on the primary target. Each jump heals 10% less."
+      "Value": "Calls forth a wave of healing energy that bounces up to 5 times. The primary target is healed for 100, each subsequent bounce heals 10% less. If the last healed unit dies within 20 seconds, the wave continues on to nearby targets.\r\n"
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Calls forth a wave of healing energy that bounces up to \u003CA0RR,DataB2\u003E times, healing \u003CA0RR,DataA2\u003E damage on the primary target. Each jump heals 20% less."
+      "Value": "Calls forth a wave of healing energy that bounces up to 5 times. The primary target is healed for 175, each subsequent bounce heals 10% less. If the last healed unit dies within 20 seconds, the wave continues on to nearby targets.\r\n"
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Calls forth a wave of healing energy that bounces up to \u003CA0RR,DataB3\u003E times, healing \u003CA0RR,DataA3\u003E damage on the primary target. Each jump heals 15% less."
+      "Value": "Calls forth a wave of healing energy that bounces up to 5 times. The primary target is healed for 275, each subsequent bounce heals 10% less. If the last healed unit dies within 20 seconds, the wave continues on to nearby targets.\r\n"
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Calls forth a wave of healing energy that bounces up to \u003CA0RR,DataB4\u003E times, healing \u003CA0RR,DataA4\u003E damage on the primary target. Each jump heals 10% less."
+      "Value": "Calls forth a wave of healing energy that bounces up to 5 times. The primary target is healed for 375, each subsequent bounce heals 10% less. If the last healed unit dies within 20 seconds, the wave continues on to nearby targets.\r\n"
     },
     {
       "Id": 1952543841,
@@ -109,7 +109,7 @@
     },
     {
       "Id": 2020631137,
-      "Value": 3
+      "Value": 1
     }
   ]
 }

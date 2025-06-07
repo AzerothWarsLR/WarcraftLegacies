@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Factions
 
     /// <inheritdoc />
     public Dalaran(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
-      : base("Dalaran", PLAYER_COLOR_PINK, "|c00e55bb0", @"ReplaceableTextures\CommandButtons\BTNJaina.blp")
+      : base("Dalaran", new[] {PLAYER_COLOR_PINK, PLAYER_COLOR_PEACH, PLAYER_COLOR_RED}, @"ReplaceableTextures\CommandButtons\BTNJaina.blp")
     {
       TraditionalTeam = TeamSetup.NorthAlliance;
       _artifactSetup = artifactSetup;
@@ -43,13 +43,11 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       CinematicMusic = "SadMystery";
       ControlPointDefenderUnitTypeId = UNIT_N00N_CONTROL_POINT_DEFENDER_DALARAN;
-      IntroText = @"You are playing the wise |cffff8080Council of Dalaran|r.
+      IntroText = $"You are playing the wise {PrefixCol}Council of Dalaran|r.\n\n" +
+                  "You begin in the Hillsbrad Foothills, separated from the main forces of Dalaran. To unlock Dalaran, you must capture Shadowfang Keep, which has been encircled by monsters.\n\n" +
+                  "Once your territory is secured, you will need to prepare for the Plague of Undeath and the invasion of the Burning Legion. Lordaeron will surely need your help.\n\n" +
+                  "Your mages are the finest in Azeroth. Be sure to utilize them alongside your heroes to turn the tide of battle.";
 
-You begin in the Hillsbrad Foothills, separated from the main forces of Dalaran. To unlock Dalaran you must capture Shadowfang Keep, which have been encircled by monsters.
-
-Once your territory is secured, you will need to prepare for the Plague of Undeath and the invasion of the Burning Legion. Lordaeron will surely need your help.
-
-Your mages are the finest in Azeroth, be sure to utilize them alongside your heroes to turn the tide of battle.";
       GoldMines = new List<unit>
       {
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9204, 2471))

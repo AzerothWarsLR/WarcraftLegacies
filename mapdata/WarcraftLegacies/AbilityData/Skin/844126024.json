@@ -1,0 +1,24 @@
+{
+  "OldId": 1819500865,
+  "NewId": 844126024,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Buff Applicator)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Energy Wave"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNCursedScythe.blp"
+    }
+  ]
+}
