@@ -58,19 +58,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Defense Orbs deal 45 damage per orb to each unit it collides with."
+      "Value": "Defense Orbs deal 30 damage per orb to each unit it collides with."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Defense Orbs deal 70 damage per orb to each unit it collides with."
+      "Value": "Defense Orbs deal 45 damage per orb to each unit it collides with."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Defense Orbs deal 95 damage per orb to each unit it collides with."
+      "Value": "Defense Orbs deal 60 damage per orb to each unit it collides with."
     },
     {
       "Id": 1835101793,
@@ -81,7 +81,7 @@
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Defense Orbs deal 120 damage per orb to each unit it collides with."
+      "Value": "Defense Orbs deal 75 damage per orb to each unit it collides with."
     }
   ]
 }

@@ -7,12 +7,11 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
-using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Naga;
 using WarcraftLegacies.Source.Setup;
-using WCSharp.Shared.Data;
+
 
 
 namespace WarcraftLegacies.Source.Factions

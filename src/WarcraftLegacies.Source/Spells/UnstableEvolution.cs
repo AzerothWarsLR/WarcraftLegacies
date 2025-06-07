@@ -19,6 +19,8 @@ namespace WarcraftLegacies.Source.Spells
     public required float EffectScaleTarget { get; init; }
     public required LeveledAbilityField<float> AttackDamageMultiplier { get; init; }
     public required LeveledAbilityField<float> AttackSpeedMultiplier { get; init; }
+    public required LeveledAbilityField<float> MaxHealthMultiplier { get; init; }
+
 
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
@@ -45,13 +47,20 @@ namespace WarcraftLegacies.Source.Spells
 
     private void EmpowerUnit(int level, unit target)
     {
+      var currentHealth = GetUnitState(target, UNIT_STATE_LIFE);
+      var currentMaxHealth = GetUnitState(target, UNIT_STATE_MAX_LIFE);
+      var healthMultiplier = MaxHealthMultiplier.Base + MaxHealthMultiplier.PerLevel * level;
+
       target
         .MultiplyBaseDamage(AttackDamageMultiplier.Base + AttackDamageMultiplier.PerLevel * level, 0)
         .MultiplyAttackCooldown(1 / (AttackSpeedMultiplier.Base + AttackSpeedMultiplier.PerLevel * level), 0)
         .SetColor(100, 255, 150, 255)
         .SetTimedLife(Duration)
         .SetExplodeOnDeath(true)
-        .SetScale(1.1f);
+        .SetScale(1.1f); 
+      SetUnitState(target, UNIT_STATE_MAX_LIFE, currentMaxHealth * healthMultiplier);
+      SetUnitState(target, UNIT_STATE_LIFE, currentHealth * healthMultiplier);
+
 
       if (target.GetTypeId() == UNIT_U013_SUPER_MAJOR_C_THUN)
       {
