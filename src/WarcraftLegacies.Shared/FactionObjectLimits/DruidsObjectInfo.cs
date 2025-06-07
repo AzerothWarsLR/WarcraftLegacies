@@ -1,4 +1,4 @@
-using MacroTools.Shared;
+﻿using MacroTools.Shared;
 using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
@@ -67,6 +67,8 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("R008", Unlimited); //Improved Natures FuryR015
       yield return new("R015", UPGRADE_R015_IMPROVED_MANA_FLARE_DRUIDS);
       yield return new(UPGRADE_R09V_STORM_CROW_FORM_DRUIDS, Unlimited);
+      yield return new(UPGRADE_VP12_NATURE_S_FURY_EARTH_DRUIDS, Unlimited);
+      yield return new(UPGRADE_VP13_NATURE_S_PROTECTION_EARTH_DRUIDS, Unlimited);
     }
   }
 }

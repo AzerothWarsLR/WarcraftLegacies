@@ -5,12 +5,15 @@ using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using MacroTools.ResearchSystems;
 using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Druids;
 using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Druids;
+using WarcraftLegacies.Source.Researches.Ahnqiraj;
+using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 
@@ -61,6 +64,7 @@ namespace WarcraftLegacies.Source.Factions
       RegisterQuests();
       RegisterDialogue();
       RegisterPowers();
+      RegisterResearches();
       CenariusGhost.Setup(_allLegendSetup.Druids.Cenarius, this);
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
@@ -177,6 +181,17 @@ namespace WarcraftLegacies.Source.Factions
     private void RegisterScourgeQuests(Scourge scourge)
     {
       AddQuest(new QuestAndrassil(_allLegendSetup.Druids.Vordrassil, _allLegendSetup.Druids.Ursoc, scourge));
+    }
+
+    private void RegisterResearches()
+    {
+      ResearchManager.RegisterIncompatibleSet(
+        new BasicResearch(UPGRADE_VP12_NATURE_S_FURY_EARTH_DRUIDS, 100),
+        new RemoveAbilityResearch(UPGRADE_VP13_NATURE_S_PROTECTION_EARTH_DRUIDS, 100)
+        {
+          RemovedAbility = ABILITY_VP11_CLEAVING_ATTACK_DRUIDS_MOUNTAIN_GIANTS
+        }
+      ); 
     }
   }
 }

@@ -1,0 +1,49 @@
+{
+  "OldId": 1702062162,
+  "NewId": 858869846,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Id": 829579623,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStoneShield.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 1718840935,
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Level": 1,
+      "Id": 829122663,
+      "Type": 3,
+      "Value": "D"
+    },
+    {
+      "Level": 1,
+      "Id": 1835101799,
+      "Type": 3,
+      "Value": "Nature\u0027s Protection - Earth"
+    },
+    {
+      "Level": 1,
+      "Id": 829453415,
+      "Type": 3,
+      "Value": "Nature\u0027s Protection - Earth"
+    },
+    {
+      "Level": 1,
+      "Id": 828536167,
+      "Type": 3,
+      "Value": "Improves the defensive capabilities of the Mountain Giant by improving their Hardened ability, Nature Vitality spell, and increasing health by \u003CVP13,base2\u003E. |n|n|cffc864c8Can\u0027t be researched with Nature\u0027s Fury - Earth.|r"
+    },
+    {
+      "Id": 2037408359,
+      "Value": 1
+    }
+  ]
+}

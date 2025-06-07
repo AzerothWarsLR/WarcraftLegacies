@@ -1,0 +1,28 @@
+{
+  "OldId": 1701004097,
+  "NewId": 825315414,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Druids Mountain Giants)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The unit strikes with such force that \u003CVP11,DataA1,%\u003E% of their damage strikes through to enemies near the primary attacked unit."
+    }
+  ]
+}

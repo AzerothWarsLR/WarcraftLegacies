@@ -44,6 +44,12 @@
     {
       "Id": 2020631137,
       "Value": 1
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Restores \u003CSLS8,DataA2\u003E hit points to the caster."
     }
   ]
 }

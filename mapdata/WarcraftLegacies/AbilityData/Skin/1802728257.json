@@ -19,6 +19,18 @@
       "Id": 829453409,
       "Type": 3,
       "Value": "Hardened"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Reduces all attacks on the Mountain Giant by \u003CAssk,DataC2\u003E damage. Attacks cannot be reduced below \u003CAssk,DataB2\u003E damage."
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Hardened"
     }
   ]
 }
