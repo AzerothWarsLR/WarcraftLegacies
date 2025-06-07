@@ -1,0 +1,114 @@
+{
+  "OldId": 1650739521,
+  "NewId": 1129795668,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": " (Dalaran)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Archmage\u0027s Council"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNManaStaff.blp"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNManaStaff.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Archmage\u0027s Council - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Archmage\u0027s Council - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Archmage\u0027s Council - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Archmage\u0027s Council - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Restores \u003CTPWC,DataB1\u003E and \u003CTPWC,DataC1\u003E mana."
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Restores health and mana to nearby player owned units.|n|n|cffffcc00Level 1|r - Restores \u003CTPWC,DataB1\u003E and \u003CTPWC,DataC1\u003E mana. |n|cffffcc00Level 2|r - Restores \u003CTPWC,DataB2\u003E and \u003CTPWC,DataC2\u003E mana. |n|cffffcc00Level 3|r - Restores \u003CTPWC,DataB3\u003E and \u003CTPWC,DataB3\u003E mana. |n|cffffcc00Level 4|r - Restores \u003CTPWC,DataB4\u003E and \u003CTPWC,DataB4\u003E mana."
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Wise Council - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Restores \u003CTPWC,DataB2\u003E and \u003CTPWC,DataC2\u003E mana."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Restores \u003CTPWC,DataB3\u003E and \u003CTPWC,DataC3\u003E mana."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Restores \u003CTPWC,DataB3\u003E and \u003CTPWC,DataC3\u003E mana."
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Human\\Heal\\HealTarget.mdl,Abilities\\Spells\\Items\\AIma\\AImaTarget.mdl"
+    },
+    {
+      "Id": 828470369,
+      "Type": 3,
+      "Value": "origin"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 2037408353,
+      "Value": 2
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": ""
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "Left": 4896,
+  "Bottom": 9120,
+  "Right": 5600,
+  "Top": 9792,
+  "Name": "CapitalInvasion",
+  "CreationNumber": 204,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

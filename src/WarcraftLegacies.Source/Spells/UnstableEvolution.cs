@@ -47,30 +47,25 @@ namespace WarcraftLegacies.Source.Spells
 
     private void EmpowerUnit(int level, unit target)
     {
-      var currentHealth = GetUnitState(target, UNIT_STATE_LIFE);
-      var currentMaxHealth = GetUnitState(target, UNIT_STATE_MAX_LIFE);
-      var healthMultiplier = MaxHealthMultiplier.Base + MaxHealthMultiplier.PerLevel * level;
-
       target
         .MultiplyBaseDamage(AttackDamageMultiplier.Base + AttackDamageMultiplier.PerLevel * level, 0)
         .MultiplyAttackCooldown(1 / (AttackSpeedMultiplier.Base + AttackSpeedMultiplier.PerLevel * level), 0)
+        .MultiplyMaxHitpoints(MaxHealthMultiplier.Base + MaxHealthMultiplier.PerLevel * level)
         .SetColor(100, 255, 150, 255)
         .SetTimedLife(Duration)
         .SetExplodeOnDeath(true)
         .SetScale(1.1f); 
-      SetUnitState(target, UNIT_STATE_MAX_LIFE, currentMaxHealth * healthMultiplier);
-      SetUnitState(target, UNIT_STATE_LIFE, currentHealth * healthMultiplier);
-
 
       if (target.GetTypeId() == UNIT_U013_SUPER_MAJOR_C_THUN)
       {
         target.SetScale(0.6f);
       }
-      
+  
       AddSpecialEffect(EffectTarget, GetUnitX(target), GetUnitY(target))
         .SetScale(EffectScaleTarget)
         .SetLifespan()
         .SetColor(0, 255, 0);
     }
+
   }
 }

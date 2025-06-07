@@ -1,0 +1,15 @@
+{
+  "Left": 11424,
+  "Bottom": 12512,
+  "Right": 12160,
+  "Top": 13120,
+  "Name": "StrathInvasion",
+  "CreationNumber": 202,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

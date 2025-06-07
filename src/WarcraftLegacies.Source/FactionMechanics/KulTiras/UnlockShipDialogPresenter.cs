@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿
+using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.UserInterface;
@@ -11,7 +12,6 @@ namespace WarcraftLegacies.Source.FactionMechanics.KulTiras
     {
         private readonly player _player;
         private readonly List<unit> _rescueUnits;
-        private readonly unit _proudmooreCapitalShip;
         private bool _choiceExecuted; 
 
         public UnlockShipDialogPresenter(player player, List<unit> rescueUnits, unit proudmooreCapitalShip)
@@ -25,7 +25,6 @@ namespace WarcraftLegacies.Source.FactionMechanics.KulTiras
         {
             _player = player;
             _rescueUnits = rescueUnits;
-            _proudmooreCapitalShip = proudmooreCapitalShip;
             _choiceExecuted = false; 
         }
 
@@ -35,16 +34,16 @@ namespace WarcraftLegacies.Source.FactionMechanics.KulTiras
                 return; 
 
             _choiceExecuted = true; 
+            _player.RescueGroup(_rescueUnits);
 
             if (choice.Type == UnlockShipChoiceType.TeleportTroops)
             {
-                TeleportTroops(_player, _rescueUnits, _proudmooreCapitalShip);
+                TeleportTroops(_player);
             }
         }
 
-        private static void TeleportTroops(player whichPlayer, List<unit> rescueUnits, unit proudmooreCapitalShip)
+        private static void TeleportTroops(player whichPlayer)
         {
-            
             foreach (var unit in GlobalGroup.EnumUnitsInRect(Rectangle.WorldBounds)
                          .Where(x => x.OwningPlayer() == whichPlayer))
             {
@@ -55,10 +54,6 @@ namespace WarcraftLegacies.Source.FactionMechanics.KulTiras
                     SetUnitPosition(unit, 6864, -17176);
                 }
             }
-
-            whichPlayer.RescueGroup(rescueUnits);
-            proudmooreCapitalShip.Rescue(whichPlayer);
-            proudmooreCapitalShip.PauseEx(false);
 
             whichPlayer.RepositionCamera(6864, -17176);
         }

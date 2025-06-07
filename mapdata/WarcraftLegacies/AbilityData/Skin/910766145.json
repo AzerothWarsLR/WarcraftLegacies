@@ -38,13 +38,13 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives a 10% chance for an attack to be absorbed reducing damage taken by 25 damage. Attacks cannot be reduced below 3 damage."
+      "Value": "Gives a 25% chance for an attack to be absorbed reducing damage taken by 25 damage. Attacks cannot be reduced below 3 damage."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Gives a 25% chance for an attack to be absorbed reducing damage taken by 40 damage. Attacks cannot be reduced below 3 damage."
+      "Value": "Gives a 35% chance for an attack to be absorbed reducing damage taken by 40 damage. Attacks cannot be reduced below 3 damage."
     },
     {
       "Level": 2,
