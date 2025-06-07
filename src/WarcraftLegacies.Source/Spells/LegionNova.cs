@@ -49,27 +49,21 @@ namespace WarcraftLegacies.Source.Spells
                 .Where(x => x != null && UnitAlive(x))
                 .ToList();
 
-      
-
-
       foreach (var unit in unitsInRange)
       {
         if (IsValidEnemy(unit, caster))
         {
           unit.TakeDamage(caster, damageAmount, false, false, damageType: DAMAGE_TYPE_NORMAL);
-          Console.WriteLine(unit + " took damage.");
         }
 
         if (IsValidAlly(unit, caster))
         {
           unit.Heal(healAmount);
-          Console.WriteLine(unit + " healed damage.");
-
         }
       }
 
       AddSpecialEffect(CasterEffect, GetUnitX(caster), GetUnitY(caster)).SetLifespan();
-      AddSpecialEffect(TargetEffect, GetUnitX(target), GetUnitY(target)).SetLifespan(0.5f);
+      AddSpecialEffect(TargetEffect, GetUnitX(target), GetUnitY(target)).SetLifespan(0.5f).SetScale(2);
     }
 
     private static bool IsValidEnemy(unit target, unit caster) =>

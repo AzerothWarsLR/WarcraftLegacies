@@ -52,18 +52,14 @@ namespace WarcraftLegacies.Source.Setup.Spells
 
       SpellSystem.Register(phantomStepHero);
 
-      var legionNova = new LegionNova(ABILITY_VP09_LEGION_NOVA_LEGION_HERO)
+      var legionNova = new LegionNova(ABILITY_VP09_FEL_NOVA_LEGION_HERO)
       {
-        Radius = 250,
+        Radius = 200,
         BaseDamage = 50,
         DamagePerLevel = 50,
         BaseHeal = 50,
         HealPerLevel = 50,
-        CasterEffect = @"Abilities\Spells\Undead\DeathandDecay\DeathandDecayDamage.mdl",
-        //TargetEffect = @"Abilities\Spells\Items\RitualDagger\RitualDaggerTarget.mdl",
-        //Abilities\Spells\Undead\Unsummon\UnsummonTarget.mdl
-        //TargetEffect = @"Abilities\Spells\Other\Incinerate\FireLordDeathExplode.mdl",
-        TargetEffect = @"Abilities\Spells\Undead\Unsummon\UnsummonTarget.mdl",
+        TargetEffect = @"Objects\Spawnmodels\Undead\UDeathSmall\UDeathSmall.mdl",
       };
 
       SpellSystem.Register(legionNova);

@@ -23,42 +23,42 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Blasts enemy units around a target enemy unit with a wave of damaging frost that slows movement and attack rate for 6 seconds. |n|n|cffffcc00Level 1|r - 100 target damage, 100 nova damage. |n|cffffcc00Level 2|r - 125 target damage, 150 nova damage. |n|cffffcc00Level 3|r - 150 target damage, 200 nova damage. |n|cffffcc00Level 4|r - 175 target damage, 250 nova damage."
+      "Value": "Blasts a unit with an unholy nova that damages enemies and heals allies around the target for the same amount. |n|n|cffffcc00Level 1|r - 100 damage and healing. |n|cffffcc00Level 2|r - 150 damage and healing. |n|cffffcc00Level 3|r - 200 damage and healing. |n|cffffcc00Level 4|r - 250 damage and healing."
     },
     {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Legion Nova - [|cffffcc00Level 4|r]"
+      "Value": "Fel Nova - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Blasts enemy units with a wave of frost that deals \u003CAUfn,DataB4\u003E damage to the target, and \u003CAUfn,DataA4\u003E nova damage. Cold damage slows units\u0027 movement and attack rate for \u003CAUfn,Dur4\u003E seconds."
+      "Value": "Blasts a unit with an unholy nova that deals 250 damage to enemies and heals allies around the target for the same amount."
     },
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Legion Nova"
+      "Value": "Fel Nova"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Legion Nova - [|cffffcc00Level 1|r]"
+      "Value": "Fel Nova - [|cffffcc00Level 1|r]"
     },
     {
       "Level": 2,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Legion Nova - [|cffffcc00Level 2|r]"
+      "Value": "Fel Nova - [|cffffcc00Level 2|r]"
     },
     {
       "Level": 3,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Legion Nova - [|cffffcc00Level 3|r]"
+      "Value": "Fel Nova - [|cffffcc00Level 3|r]"
     },
     {
       "Id": 1952540001,
@@ -74,6 +74,29 @@
       "Id": 1918988897,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNFelBurn.blp"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Fel Nova - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Blasts a unit with an unholy nova that deals 100 damage to enemies and heals allies around the target for the same amount."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Blasts a unit with an unholy nova that deals 150 damage to enemies and heals allies around the target for the same amount."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Blasts a unit with an unholy nova that deals 200 damage to enemies and heals allies around the target for the same amount."
     }
   ]
 }

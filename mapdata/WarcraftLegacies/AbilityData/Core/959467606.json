@@ -8,45 +8,45 @@
     {
       "Level": 2,
       "Id": 1935895905,
-      "Value": 100
+      "Value": 90
     },
     {
       "Level": 3,
       "Id": 1935895905,
-      "Value": 100
+      "Value": 90
     },
     {
       "Level": 4,
       "Id": 1935895905,
-      "Value": 100
+      "Value": 90
     },
     {
       "Level": 1,
       "Pointer": 1,
       "Id": 829318741,
       "Type": 2,
-      "Value": 100
+      "Value": 0
     },
     {
       "Level": 2,
       "Pointer": 1,
       "Id": 829318741,
       "Type": 2,
-      "Value": 150
+      "Value": 0
     },
     {
       "Level": 3,
       "Pointer": 1,
       "Id": 829318741,
       "Type": 2,
-      "Value": 200
+      "Value": 0
     },
     {
       "Level": 4,
       "Pointer": 1,
       "Id": 829318741,
       "Type": 2,
-      "Value": 250
+      "Value": 0
     },
     {
       "Level": 2,
@@ -168,7 +168,7 @@
       "Level": 4,
       "Id": 1851880033,
       "Type": 2,
-      "Value": 700
+      "Value": 600
     },
     {
       "Level": 2,
@@ -185,7 +185,7 @@
     {
       "Level": 1,
       "Id": 1935895905,
-      "Value": 100
+      "Value": 90
     },
     {
       "Level": 1,
@@ -210,6 +210,48 @@
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,allies,enemies,friend,ground,neutral,organic,self"
+    },
+    {
+      "Level": 1,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 2,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 3,
+      "Id": 1851880033,
+      "Type": 2,
+      "Value": 600
+    },
+    {
+      "Level": 1,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 2,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 3,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 10
+    },
+    {
+      "Level": 4,
+      "Id": 1852072801,
+      "Type": 2,
+      "Value": 10
     }
   ]
 }
