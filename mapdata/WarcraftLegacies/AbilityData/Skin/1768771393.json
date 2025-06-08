@@ -20,7 +20,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Creates images of the caster to fight enemies and dispels all magic from the caster.|n|n|cffffcc00Level 1|r - Creates 3 images which deal 50% damage and take 200% damage. |n|cffffcc00Level 2|r - Creates 5 images which deal 50% damage and take 200% damage. |n|cffffcc00Level 3|r - Creates 7 images which deal 50% damage and take 200% damage."
+      "Value": "Creates images of the caster to fight enemies and dispels all magic from the caster.|n|n|cffffcc00Level 1|r - Creates 3 images which deal 60% damage and take 125% damage. |n|cffffcc00Level 2|r - Creates 5 images which deal 60% damage and take 125% damage. |n|cffffcc00Level 3|r - Creates 7 images which deal 60% damage and take 125% damage."
     },
     {
       "Level": 2,

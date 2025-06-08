@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Factions
     /// <inheritdoc />
     
     public FelHorde(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Fel Horde",
-      PLAYER_COLOR_GREEN, "|c0020c000", @"ReplaceableTextures\CommandButtons\BTNPitLord.blp")
+      new[] {PLAYER_COLOR_GREEN, PLAYER_COLOR_EMERALD, PLAYER_COLOR_CYAN}, @"ReplaceableTextures\CommandButtons\BTNPitLord.blp")
     {
       TraditionalTeam = TeamSetup.Outland;
       _preplacedUnitSystem = preplacedUnitSystem;
@@ -29,13 +29,11 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       CinematicMusic = "Doom";
       ControlPointDefenderUnitTypeId = UNIT_N0AA_CONTROL_POINT_DEFENDER_FEL_HORDE;
-      IntroText = @"You are playing as the bloodthirsty Fel Horde.
+      IntroText = IntroText = $"You are playing as the bloodthirsty {PrefixCol}Fel Horde|r.\n\n" +
+                              "You begin in Nagrand, cut off from your forces in Hellfire Citadel. You must raise an army and quickly conquer Outland.\n\n" +
+                              "Once Outland is under your control, gather your hordes and prepare to invade Azeroth through the Dark Portal.\n\n" +
+                              "The Alliance is gathering outside the Dark Portal to stop you, so prepare for a very hard breakout.";
 
-You begin in Nagrand, cut off from your forces in Hellfire Citadel. You must raise an army and quickly conquer Outland.
-
-Once Outland is under your control, gather your hordes and prepare to invade Azeroth through the Dark Portal.
-
-The Alliance is gathering outside the Dark Portal to stop you, so prepare for a very hard breakout.";
       FoodMaximum = 250;
       GoldMines = new List<unit>
       {

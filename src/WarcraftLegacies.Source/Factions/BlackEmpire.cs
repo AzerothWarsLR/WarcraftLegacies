@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Factions
     private readonly PreplacedUnitSystem _preplacedUnitSystem;
 
     /// <inheritdoc />
-    public BlackEmpire(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("BlackEmpire", PLAYER_COLOR_MAROON, "|cff800000",
+    public BlackEmpire(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("BlackEmpire", new[] {PLAYER_COLOR_MAROON, PLAYER_COLOR_RED, PLAYER_COLOR_BROWN},
       @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
     {
       _allLegendSetup = allLegendSetup;
@@ -26,13 +26,11 @@ namespace WarcraftLegacies.Source.Factions
       ControlPointDefenderUnitTypeId = UNIT_N0DV_CONTROL_POINT_DEFENDER_BLACK_EMPIRE_TOWER;
       TraditionalTeam = TeamSetup.OldGods;
       StartingGold = 200;
-      IntroText = @"You are playing as the Black Empire of N'zoth|r|r.
+      IntroText = $"You are playing as the {PrefixCol}Black Empire of N'zoth|r.\n\n" +
+                  "You start in Nyalotha, restore the city to its glory by repelling the invaders from Azeroth.\n\n" +
+                  "Then, move onto Kalimdor with your allies. You will quickly run into the Sentinels.\n\n" +
+                  "Be sure to train Forsaken Ones, they are powerful units.";
 
-You start in Nyalotha, restore the city to it's glory by repelling the invaders from Azeroth.
-
-Then, move onto Kalimdor with your allies. You will quickly run into the Sentinels.
-
-Be sure to train Forsaken Ones, they are powerful units";
       Nicknames = new List<string>
       {
         "be",

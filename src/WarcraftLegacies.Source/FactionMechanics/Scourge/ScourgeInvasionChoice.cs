@@ -6,6 +6,8 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
   public sealed class ScourgeInvasionChoice : IChoice
   {
     public Rectangle? Location { get; }
+    public Point AttackTarget { get; set; }
+
     
     /// <inheritdoc />
     public string Name { get; }

@@ -1,0 +1,50 @@
+{
+  "OldId": 1634693697,
+  "NewId": 1347372865,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Exodar)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives nearby player owned heroes 35 bonus armor.|n|cffffcc00Lasts 30 seconds."
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": "war3mapImported/Effect_ShieldBuff_Yellow.mdx"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures/CommandButtons/BTNMagocracy.blp"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Aegis of Protection"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Aegis of Protection"
+    }
+  ]
+}

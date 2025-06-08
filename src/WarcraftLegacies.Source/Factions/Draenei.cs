@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Factions
 
     /// <inheritdoc />
     public Draenei(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("The Exodar",
-      PLAYER_COLOR_NAVY, "|cff000080", @"ReplaceableTextures\CommandButtons\BTNBOSSVelen.blp")
+      new[] {PLAYER_COLOR_NAVY, PLAYER_COLOR_BLUE, PLAYER_COLOR_CYAN}, @"ReplaceableTextures\CommandButtons\BTNBOSSVelen.blp")
     {
       TraditionalTeam = TeamSetup.Kalimdor;
       _preplacedUnitSystem = preplacedUnitSystem;
@@ -28,13 +28,11 @@ namespace WarcraftLegacies.Source.Factions
       _artifactSetup = artifactSetup;
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_U008_CONTROL_POINT_DEFENDER_DRAENEI;
-      IntroText = @"You are playing as the exiled |cff000080Draenei|r.
+      IntroText = $"You are playing as the exiled {PrefixCol}Draenei|r.\n\n" +
+                  "You begin on Azuremyst Island, amid the wreckage of your flight from the Burning Legion.\n\n" +
+                  "Further inland your Night-elf allies will need your help against the Old Gods. Quickly build your base and gain entry to the Exodar.\n\n" +
+                  "Power up your buildings with your Arcane Wells to unlock powerful global abilities.";
 
-You begin on Azuremyst Island, amid the wreckage of your flight from the Burning Legion.
-
-Further inland your Night-elf allies will need your help against the Old Gods, quickly build your base and gain entry to the Exodar.
-
-Power up your buildings with your Arcane Wells to unlock powerful global abilities.";
       GoldMines = new List<unit>
       {
         preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-21000, 8600))

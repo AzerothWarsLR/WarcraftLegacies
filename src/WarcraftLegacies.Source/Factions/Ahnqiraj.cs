@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Factions
     private readonly unit _gateAhnQiraj;
 
     /// <inheritdoc />
-    public Ahnqiraj(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Ahn'qiraj", PLAYER_COLOR_WHEAT, "|cffaaa050",
+    public Ahnqiraj(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Ahn'qiraj", new[] {PLAYER_COLOR_WHEAT, PLAYER_COLOR_PEACH, PLAYER_COLOR_LIGHT_GRAY},
       @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
     {
       _allLegendSetup = allLegendSetup;
@@ -35,13 +35,11 @@ namespace WarcraftLegacies.Source.Factions
       ControlPointDefenderUnitTypeId = UNIT_N0DW_CONTROL_POINT_DEFENDER_CTHUN_TOWER;
       TraditionalTeam = TeamSetup.OldGods;
       StartingGold = 200;
-      IntroText = @"You are playing as the C'thun and his Qiraji followers|r|r.
+      IntroText = $"You are playing as {PrefixCol}C'thun and his Qiraji followers|r.\n\n" +
+                  "You start deep in the tunnels of Ahn'qiraj. You will need to awaken C'thun and free yourself from the Titan Guardians.\n\n" +
+                  "Then, quickly start making your move north, coordinate with your elemental ally to attack Kalimdor.\n\n" +
+                  "You do not possess boats, but your workers can burrow through water, use them to outmaneuver your enemies.";
 
-You start deep in the tunnels of Ahn'qiraj. You will need to awaken C'thun and free yourself from the Titan Guardians.
-
-Then, quickly start making your move north, coordinate with your elemental ally to attack Kalimdor.
-
-You do not possess boats, but your workers can burrow through water, use them to outmaneuver your enemies.";
       Nicknames = new List<string>
       {
         "aq",
@@ -162,6 +160,11 @@ You do not possess boats, but your workers can burrow through water, use them to
         AttackSpeedMultiplier = new LeveledAbilityField<float>
         {
           Base = 2
+        },
+        MaxHealthMultiplier = new LeveledAbilityField<float>
+        {
+          Base =1.25f,
+          PerLevel =0.25f
         },
         EffectTarget = @"Abilities\Spells\Human\Feedback\ArcaneTowerAttack.mdl",
         EffectScaleTarget = 1

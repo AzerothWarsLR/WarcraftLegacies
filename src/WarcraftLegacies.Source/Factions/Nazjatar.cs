@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.Factions
   public sealed class Nazjatar : Faction
   {
     /// <inheritdoc />
-    public Nazjatar() : base("Nazjatar", PLAYER_COLOR_PURPLE, "|c00540081",
+    public Nazjatar() : base("Nazjatar", new[] {PLAYER_COLOR_PURPLE, PLAYER_COLOR_VIOLET, PLAYER_COLOR_LIGHT_GRAY},
       @"ReplaceableTextures\CommandButtons\BTNNagaSummoner.blp")
     {
       ControlPointDefenderUnitTypeId = UNIT_U02T_CONTROL_POINT_DEFENDER_NAZJATAR;
