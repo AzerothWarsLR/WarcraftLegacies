@@ -371,5 +371,9 @@ public static class Regions
 	public static Rectangle ZulAman_trolls { get; set; } = new Rectangle(20288f, 11648f, 22848f, 17440f);
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
+	public static Rectangle StrathInvasion { get; set; } = new Rectangle(11424f, 12512f, 12160f, 13120f);
+	public static Rectangle ScholoInvasion { get; set; } = new Rectangle(14656f, 6816f, 15392f, 7552f);
+	public static Rectangle CapitalInvasion { get; set; } = new Rectangle(4896f, 9120f, 5600f, 9792f);
+	public static Rectangle StrathAttackTarget { get; set; } = new Rectangle(15104f, 12864f, 15392f, 13152f);
 
 }

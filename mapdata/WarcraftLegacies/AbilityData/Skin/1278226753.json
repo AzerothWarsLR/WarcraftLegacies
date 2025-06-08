@@ -71,7 +71,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Fires an enchanted bolt at every enemy unit in the target area, dealing damage and stunning each target for \u003CA0GL,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - Deals \u003CA0GL,DataA1\u003E damage.|n|cffffcc00Level 2|r - Deals \u003CA0GL,DataA2\u003E damage.|n|cffffcc00Level 3|r - Deals \u003CA0GL,DataA3\u003E damage.|n|cffffcc00Level 4|r - Deals \u003CA0GL,DataA4\u003E damage."
+      "Value": "Fires an enchanted bolt at every enemy unit in the target area, dealing damage and stunning each target for \u003CA10O,Dur1\u003E seconds. |n|n|cffffcc00Level 1|r - Deals \u003CA10O,DataA1\u003E damage.|n|cffffcc00Level 2|r - Deals \u003CA10O,DataA2\u003E damage.|n|cffffcc00Level 3|r - Deals \u003CA10O,DataA3\u003E damage.|n|cffffcc00Level 4|r - Deals \u003CA10O,DataA4\u003E damage."
     },
     {
       "Id": 1952543841,
@@ -106,25 +106,25 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Fires an enchanted bolt at every enemy unit in the target area, dealing \u003CA0GL,DataA1\u003E damage and stunning each target for \u003CA0GL,Dur1\u003E seconds."
+      "Value": "Fires an enchanted bolt at every enemy unit in the target area, dealing \u003CA10O,DataA1\u003E damage and stunning each target for \u003CA10O,Dur1\u003E seconds."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Fires an enchanted bolt at every enemy unit in the target area, dealing \u003CA0GL,DataA2\u003E damage and stunning each target for \u003CA0GL,Dur2\u003E seconds."
+      "Value": "Fires an enchanted bolt at every enemy unit in the target area, dealing \u003CA10O,DataA2\u003E damage and stunning each target for \u003CA10O,Dur2\u003E seconds."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Fires an enchanted bolt at every enemy unit in the target area, dealing \u003CA0GL,DataA3\u003E damage and stunning each target for \u003CA0GL,Dur3\u003E seconds."
+      "Value": "Fires an enchanted bolt at every enemy unit in the target area, dealing \u003CA10O,DataA3\u003E damage and stunning each target for \u003CA10O,Dur3\u003E seconds."
     },
     {
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Fires an enchanted bolt at every enemy unit in the target area, dealing \u003CA0GL,DataA4\u003E damage and stunning each target for \u003CA0GL,Dur4\u003E seconds."
+      "Value": "Fires an enchanted bolt at every enemy unit in the target area, dealing \u003CA10O,DataA4\u003E damage and stunning each target for \u003CA10O,Dur4\u003E seconds."
     },
     {
       "Id": 2020635233,

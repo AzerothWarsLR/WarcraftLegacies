@@ -51,7 +51,20 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
 
       SpellSystem.Register(phantomStepHero);
-
+      
+      var healingWavePlus = new HealingWavePlus(ABILITY_HWP1_ENERGY_WAVE)
+      {
+        DeathTriggerDuration = 20.0f, 
+        HealAmountBase = 100.0f,
+        HealAmountLevel = 0.0f, 
+        MaxBounces = 3, 
+        BounceRadius = 500.0f, 
+        SecondaryWaveRadius = 500.0f, 
+        SecondWaveHealAmount = 100.0f,
+        HealingEffect = @"", 
+        TargetMarkEffect = @"" 
+      };
+      SpellSystem.Register(healingWavePlus);
 
 
       
@@ -72,21 +85,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
         TargetType = SpellTargetType.Point
       };
       SpellSystem.Register(massSummonUnit);
-      
-      var healingWavePlus = new HealingWavePlus(ABILITY_HWP1_ENERGY_WAVE)
-      {
-        DeathTriggerDuration = 20.0f, 
-        HealAmountBase = 100.0f,
-        HealAmountLevel = 0.0f, 
-        MaxBounces = 3, 
-        BounceRadius = 500.0f, 
-        SecondaryWaveRadius = 500.0f, 
-        SecondWaveHealAmount = 100.0f,
-        HealingEffect = @"", 
-        TargetMarkEffect = @"" 
-      };
-      SpellSystem.Register(healingWavePlus);
-
 
       RegisterSlipstreams();
 
@@ -129,7 +127,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var elites = new[]
      {
         UNIT_U007_DREADLORD_LEGION_ELITE,
-        UNIT_N04O_DOOM_LORD_LEGION};
+        UNIT_N04O_DOOM_LORD_LEGION };
 
       PassiveAbilityManager.Register(new RestoreHealthFromEachTargetDamaged(elites, ABILITY_VP08_VAMPIRIC_SIPHON_LEGION_ELITES)
       {

@@ -1,0 +1,15 @@
+{
+  "Left": 15104,
+  "Bottom": 12864,
+  "Right": 15392,
+  "Top": 13152,
+  "Name": "StrathAttackTarget",
+  "CreationNumber": 205,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

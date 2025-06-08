@@ -1,5 +1,6 @@
 {
   "OldId": 1768771393,
+  "NewId": 1229802323,
   "Unk": [
     0
   ],
@@ -50,21 +51,21 @@
       "Pointer": 2,
       "Id": 845770063,
       "Type": 2,
-      "Value": 0.6
+      "Value": 0.5
     },
     {
       "Level": 2,
       "Pointer": 2,
       "Id": 845770063,
       "Type": 2,
-      "Value": 0.6
+      "Value": 0.5
     },
     {
       "Level": 3,
       "Pointer": 2,
       "Id": 845770063,
       "Type": 2,
-      "Value": 0.6
+      "Value": 0.5
     },
     {
       "Level": 1,
@@ -115,21 +116,21 @@
       "Pointer": 3,
       "Id": 862547279,
       "Type": 2,
-      "Value": 1
+      "Value": 1.5
     },
     {
       "Level": 2,
       "Pointer": 3,
       "Id": 862547279,
       "Type": 2,
-      "Value": 1
+      "Value": 1.5
     },
     {
       "Level": 3,
       "Pointer": 3,
       "Id": 862547279,
       "Type": 2,
-      "Value": 1
+      "Value": 1.5
     }
   ]
 }
