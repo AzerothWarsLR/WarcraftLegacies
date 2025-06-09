@@ -45,7 +45,7 @@ namespace MacroTools.FactionSystem
       ColorHexMap[Common.PLAYER_COLOR_PINK] = "|cffe45caf";
       ColorHexMap[Common.PLAYER_COLOR_LIGHT_GRAY] = "|cff939596";
       ColorHexMap[Common.PLAYER_COLOR_LIGHT_BLUE] = "|cff7ebff1";
-      ColorHexMap[Common.PLAYER_COLOR_AQUA] = "|cff00ebff";
+      ColorHexMap[Common.PLAYER_COLOR_AQUA] = "|c00006400";
       ColorHexMap[Common.PLAYER_COLOR_BROWN] = "|cff4f2b05";
       ColorHexMap[Common.PLAYER_COLOR_MAROON] = "|cff9c0000";
       ColorHexMap[Common.PLAYER_COLOR_NAVY] = "|cff0000c3";
