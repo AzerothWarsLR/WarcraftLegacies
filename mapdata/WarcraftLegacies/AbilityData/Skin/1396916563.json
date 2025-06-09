@@ -1,0 +1,24 @@
+{
+  "OldId": 1952662337,
+  "NewId": 1396916563,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2020631137,
+      "Value": 1
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Sentinels 1,2)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Gives a 15% chance to do 1.5 times normal damage on an attack."
+    }
+  ]
+}

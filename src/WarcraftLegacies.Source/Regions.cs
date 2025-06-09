@@ -57,7 +57,7 @@ public static class Regions
 	public static Rectangle BurningSteppesAmbient { get; set; } = new Rectangle(11712f, -12704f, 17984f, -7552f);
 	public static Rectangle CaerDarrow { get; set; } = new Rectangle(13952f, 6208f, 15648f, 8064f);
 	public static Rectangle CaerDarrowShipyard { get; set; } = new Rectangle(8608f, 2240f, 18176f, 11424f);
-	public static Rectangle CapitalInvasion { get; set; } = new Rectangle(4896f, 9120f, 5600f, 9792f);
+	public static Rectangle CapitalInvasion { get; set; } = new Rectangle(4832f, 9216f, 5536f, 9728f);
 	public static Rectangle CavernofTime { get; set; } = new Rectangle(-9344f, -16192f, -8960f, -15840f);
 	public static Rectangle Cenarius { get; set; } = new Rectangle(-10304f, 10656f, -10208f, 10784f);
 	public static Rectangle Central_Northrend { get; set; } = new Rectangle(-4160f, 15104f, 1952f, 20320f);
@@ -253,7 +253,7 @@ public static class Regions
 	public static Rectangle SatyrCamp { get; set; } = new Rectangle(-14816f, 6080f, -13888f, 6912f);
 	public static Rectangle Scarlet_Spawn { get; set; } = new Rectangle(19904f, 9472f, 21568f, 10624f);
 	public static Rectangle ScarletHarbor { get; set; } = new Rectangle(-9728f, 21984f, -7872f, 23648f);
-	public static Rectangle ScholoInvasion { get; set; } = new Rectangle(14656f, 6816f, 15392f, 7552f);
+	public static Rectangle ScholoInvasion { get; set; } = new Rectangle(14656f, 6816f, 15360f, 7456f);
 	public static Rectangle ScholomanceAmbient1 { get; set; } = new Rectangle(13728f, 7072f, 16096f, 8416f);
 	public static Rectangle ScholomanceAmbient2 { get; set; } = new Rectangle(12128f, 5440f, 16224f, 7072f);
 	public static Rectangle ScholomanceAmbient3 { get; set; } = new Rectangle(11200f, 7072f, 13728f, 7840f);
@@ -296,7 +296,7 @@ public static class Regions
 	public static Rectangle StranglethornAmbient3 { get; set; } = new Rectangle(8224f, -24768f, 11968f, -19168f);
 	public static Rectangle StranglethornBaseBuild { get; set; } = new Rectangle(5824f, -24704f, 11936f, -14432f);
 	public static Rectangle StrathAttackTarget { get; set; } = new Rectangle(15104f, 12864f, 15392f, 13152f);
-	public static Rectangle StrathInvasion { get; set; } = new Rectangle(11424f, 12512f, 12160f, 13120f);
+	public static Rectangle StrathInvasion { get; set; } = new Rectangle(11520f, 12576f, 12096f, 13088f);
 	public static Rectangle StratholmeAmbient { get; set; } = new Rectangle(12608f, 11136f, 16288f, 15136f);
 	public static Rectangle StratholmeScourgeBase { get; set; } = new Rectangle(10944f, 12160f, 12576f, 13472f);
 	public static Rectangle StratholmeShipyard { get; set; } = new Rectangle(13696f, 7232f, 20128f, 11712f);
