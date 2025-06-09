@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-
 namespace WarcraftLegacies.Source.KeyboardManager
 {
     public class KeyboardManager
@@ -64,30 +63,6 @@ namespace WarcraftLegacies.Source.KeyboardManager
         }
     }
 
-    public class KeyboardDebugger
-    {
-        private readonly KeyboardManager _keyboardManager;
-
-        public KeyboardDebugger()
-        {
-            _keyboardManager = new KeyboardManager();
-        }
-
-        public void Initialize(player whichPlayer)
-        {
-            _keyboardManager.RegisterKeyboardEvents(whichPlayer, OnKeyEvent);
-        }
-
-        private void OnKeyEvent(oskeytype key, int metaKey, bool isKeyDown)
-        {
-            string action = isKeyDown ? "pressed" : "released";
-            string modifiers = KeyboardManager.GetMetaKeyString(metaKey);
-            
-            DisplayTextToPlayer(GetTriggerPlayer(), 0, 0, 
-                $"Debug: Key detected - Code: {key.ToString()}, Action: {action}, Modifiers: {modifiers}");
-        }
-    }
-
     public class HeroHotkeyManager
     {
         private readonly KeyboardManager _keyboardManager;
@@ -104,14 +79,10 @@ namespace WarcraftLegacies.Source.KeyboardManager
 
         private void OnKeyEvent(oskeytype key, int metaKey, bool isKeyDown)
         {
-          if (isKeyDown)
-          {
-            if (key == OSKEY_F4)
+            if (isKeyDown && key == OSKEY_F4)
             {
-              DisplayTextToPlayer(GetTriggerPlayer(), 0, 0, "R key detected. Attempting hero selection...");
-              SelectFourthHero(GetTriggerPlayer());
+                SelectFourthHero(GetTriggerPlayer());
             }
-          }
         }
         
         private void SelectFourthHero(player whichPlayer)
@@ -157,11 +128,6 @@ namespace WarcraftLegacies.Source.KeyboardManager
                 }
                 DestroyGroup(selectedGroup);
                 SelectUnit(fourthHero, true);
-                DisplayTextToPlayer(whichPlayer, 0, 0, "Fourth hero selected.");
-            }
-            else
-            {
-                DisplayTextToPlayer(whichPlayer, 0, 0, "No fourth hero found.");
             }
         }
     }
