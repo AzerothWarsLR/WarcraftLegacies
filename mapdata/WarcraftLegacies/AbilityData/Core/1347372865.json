@@ -1,61 +1,63 @@
 {
-  "OldId": 1987070273,
-  "NewId": 1196306497,
+  "OldId": 1634693697,
+  "NewId": 1347372865,
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1935895905,
-      "Value": 75
+      "Id": 1701994849,
+      "Type": 2,
+      "Value": 350
     },
     {
       "Level": 1,
       "Pointer": 1,
-      "Id": 829845609,
+      "Id": 828469074,
       "Type": 2,
-      "Value": 10
+      "Value": 0
     },
     {
       "Level": 1,
       "Pointer": 2,
-      "Id": 846622825,
-      "Type": 2,
-      "Value": 0.35
+      "Id": 845246290,
+      "Value": 35
     },
     {
       "Level": 1,
       "Id": 1920296033,
       "Type": 2,
-      "Value": 12
+      "Value": 30
     },
     {
       "Level": 1,
       "Id": 1969514593,
       "Type": 2,
-      "Value": 12
+      "Value": 30
     },
     {
-      "Id": 1702127969,
+      "Level": 1,
+      "Id": 1935895905,
       "Value": 0
-    },
-    {
-      "Id": 1667330657,
-      "Type": 3,
-      "Value": "orc"
     },
     {
       "Level": 1,
       "Id": 1718968929,
       "Type": 3,
-      "Value": "B08L"
+      "Value": "B06O"
     },
     {
       "Level": 1,
       "Id": 1852072801,
       "Type": 2,
-      "Value": 45
+      "Value": 30
+    },
+    {
+      "Level": 1,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "hero,player,vulnerable"
     }
   ]
 }

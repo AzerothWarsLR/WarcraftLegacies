@@ -161,6 +161,11 @@ namespace WarcraftLegacies.Source.Factions
         {
           Base = 2
         },
+        MaxHealthMultiplier = new LeveledAbilityField<float>
+        {
+          Base =1.25f,
+          PerLevel =0.25f
+        },
         EffectTarget = @"Abilities\Spells\Human\Feedback\ArcaneTowerAttack.mdl",
         EffectScaleTarget = 1
       });

@@ -63,8 +63,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      // Grant the custom Power
-      var rewardPower = new CityOfHeroes(0.125f, 1.5f, "Ships")
+      var rewardPower = new CityOfHeroes(0.140f, 1.5f, "Ships")
       {
         IconName = "LordAdmiralPendant",
         Name = RewardPowerName,
@@ -80,8 +79,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       
       completingFaction.AddPower(rewardPower);
       completingFaction.Player?.DisplayPowerAcquired(rewardPower);
-
-      // Rescue units connected to the quest
+      
       if (completingFaction.Player != null)
         completingFaction.Player
           .RescueGroup(_rescueUnits)
@@ -92,8 +90,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       if (_katherine.Unit == null)
       {
         _katherine.ForceCreate(completingFaction.Player, Regions.KatherineSpawn.Center, 90);
-        _katherine.Unit?.SetLevel(3, false); // Set level to 3 (adjust if needed)
-        // Add visual effects for Katherine's spawn
+        _katherine.Unit?.SetLevel(3, false);
         DestroyEffect(AddSpecialEffect("war3mapImported\\Soul Beam Blue.mdx",
           GetUnitX(_katherine.Unit), GetUnitY(_katherine.Unit)));
         DestroyEffect(AddSpecialEffect(@"abilities\spells\human\holybolt.mdl",

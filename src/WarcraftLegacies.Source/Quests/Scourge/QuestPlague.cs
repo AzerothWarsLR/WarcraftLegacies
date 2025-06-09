@@ -49,7 +49,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       AddObjective(new ObjectiveEitherOf(
         new ObjectiveResearch(UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, FourCC("u000")),
         new ObjectiveTime(660)));
-      AddObjective(new ObjectiveTime(540));
+      AddObjective(new ObjectiveTime(60));
       _deathknellUnits = deathknell.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       _scholomanceUnits = scholomance.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       _coastUnits = coast.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
@@ -100,12 +100,25 @@ namespace WarcraftLegacies.Source.Quests.Scourge
     private static void PresentInvasionDialogs()
     {
       new ScourgeInvasionDialogPresenter(
-          new ScourgeInvasionChoice(null, "No invasion"),
-          new ScourgeInvasionChoice(Regions.CaerDarrow, "Scholomance"),
-          new ScourgeInvasionChoice(Regions.StratholmeScourgeBase, "Stratholme"),
-          new ScourgeInvasionChoice(Regions.DeathknellUnlock, "Deathknell"))
+          new ScourgeInvasionChoice(null, "No invasion")
+          {
+            AttackTarget = null
+          },
+          new ScourgeInvasionChoice(Regions.ScholoInvasion, "Scholomance")
+          {
+            AttackTarget = new Point(Regions.StrahnbradUnlock.Center.X, Regions.StrahnbradUnlock.Center.Y)
+          },
+          new ScourgeInvasionChoice(Regions.StrathInvasion, "Stratholme")
+          {
+            AttackTarget = new Point(Regions.StrathAttackTarget.Center.X, Regions.StrathAttackTarget.Center.Y)
+          },
+          new ScourgeInvasionChoice(Regions.DeathknellUnlock, "Deathknell")
+          {
+            AttackTarget = new Point(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y)
+          })
         .Run(Player(3));
     }
+
 
     /// <inheritdoc />
     protected override void OnAdd(Faction whichFaction) =>
