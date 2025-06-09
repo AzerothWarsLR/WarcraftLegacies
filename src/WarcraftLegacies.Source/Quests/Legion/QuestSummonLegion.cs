@@ -5,6 +5,7 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using MacroTools.Systems;
 using WCSharp.Shared;
 using WCSharp.Shared.Data;
 
@@ -17,11 +18,15 @@ namespace WarcraftLegacies.Source.Quests.Legion
     private readonly unit _interiorPortal;
     private readonly ObjectiveCastSpell _objectiveCastSpell;
     private readonly LegendaryHero _anetheron;
+    private readonly unit _legionTeleporter1;
+    private readonly unit _legionTeleporter2;
+    private readonly PreplacedUnitSystem _preplacedUnitSystem;
 
-    public QuestSummonLegion(Rectangle rescueRect, unit interiorPortal, LegendaryHero anetheron) : base("Under the Burning Sky",
+    public QuestSummonLegion(Rectangle rescueRect, unit interiorPortal, LegendaryHero anetheron, PreplacedUnitSystem preplacedUnitSystem) : base("Under the Burning Sky",
       "The greater forces of the Burning Legion lie in wait in the vast expanse of the Twisting Nether. Use the Book of Medivh to tear open a hole in space-time, and visit the full might of the Legion upon Azeroth.",
       @"ReplaceableTextures\CommandButtons\BTNArchimonde.blp")
     {
+      _preplacedUnitSystem = preplacedUnitSystem;
       _interiorPortal = interiorPortal;
       _objectiveCastSpell = new ObjectiveCastSpell(RitualId, false);
       AddObjective(_objectiveCastSpell);
@@ -29,6 +34,8 @@ namespace WarcraftLegacies.Source.Quests.Legion
       Global = true;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _anetheron = anetheron;
+      _legionTeleporter1 = _preplacedUnitSystem.GetUnit(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, new Point(22939, -29345));
+      _legionTeleporter2 = _preplacedUnitSystem.GetUnit(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, new Point(23536, -29975));
     }
 
     /// <inheritdoc />
@@ -42,6 +49,15 @@ namespace WarcraftLegacies.Source.Quests.Legion
     /// <inheritdoc />
     protected override void OnComplete(Faction whichFaction)
     {
+      _legionTeleporter1?.IssueOrder(ORDER_BERSERK);
+      _legionTeleporter2?.IssueOrder(ORDER_BERSERK);
+      CreateTimer().Start(0.5f, false, () =>
+      {
+        _legionTeleporter1?.Remove();
+        _legionTeleporter2?.Remove();
+        GetExpiredTimer().Destroy();
+      });
+
       _anetheron.Unit?.SetAbilityLevel(ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS, 2);
 
       whichFaction.ModObjectLimit(UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC, 9);
