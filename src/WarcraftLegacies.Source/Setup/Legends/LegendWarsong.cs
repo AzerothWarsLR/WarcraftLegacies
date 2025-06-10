@@ -35,7 +35,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
       Saurfang = new LegendaryHero("Varok Saurfang")
       {
-        UnitType = UNIT_OBLA_HIGH_OVERLORD_OF_THE_KOR_KRON_VASSAL,
+        UnitType = UNIT_VSWS_HIGH_OVERLORD_OF_THE_KOR_KRON_VASSAL,
         StartingXp = 2800
       };
 
