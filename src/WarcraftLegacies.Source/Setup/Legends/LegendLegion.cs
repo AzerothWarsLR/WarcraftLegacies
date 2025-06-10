@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = FourCC("U00L"),
         PlayerColor = PLAYER_COLOR_ORANGE,
-        StartingXp = 400
+        StartingXp = 1800
       };
 
       Tichondrius = new LegendaryHero("Tichondrius")
