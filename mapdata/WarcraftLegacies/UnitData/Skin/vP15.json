@@ -1,0 +1,29 @@
+{
+  "OldId": 1651994478,
+  "NewId": 892424310,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Druid caster that can specialise into offensive or defensive magics."
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Moonkin"
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\Items\\OrbVenom\\OrbVenomMissile.mdl"
+    }
+  ]
+}

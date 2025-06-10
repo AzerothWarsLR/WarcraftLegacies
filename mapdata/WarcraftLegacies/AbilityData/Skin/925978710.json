@@ -1,0 +1,34 @@
+{
+  "OldId": 1852395073,
+  "NewId": 925978710,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Moonfire"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "E"
+    },
+    {
+      "Id": 1802728801,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": "Abilities\\Spells\\NightElf\\Starfall\\StarfallTarget.mdl"
+    }
+  ]
+}

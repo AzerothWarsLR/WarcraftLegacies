@@ -32,6 +32,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("e00N", 6); //Keeper of the Grove
       yield return new("n05H", Unlimited); //Furbolg
       yield return new("n065", 6); //Green Dragon
+      yield return new(UNIT_VP15_MOONKIN_DRUIDS, 2);
       yield return new(UNIT_E012_SIEGE_ANCIENT_DRUIDS_ELITE, 6);
       yield return new("etrs", Unlimited); //Night Elf Transport Ship
       yield return new("h0AU", Unlimited); // Scout
