@@ -19,7 +19,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Closes any active Portals, allowing a new one to be opened."
+      "Value": "Closes all active portals, enabling a new one to be formed. The Alterac portal, however, takes significantly longer to seal.\r\n"
     },
     {
       "Level": 1,
