@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _grom = grom;
       PillageGoldReward = 900;
-      PillageExperienceReward = 4000;
+      PillageExperienceReward = 6000;
     }
 
     public override string RewardFlavour =>
