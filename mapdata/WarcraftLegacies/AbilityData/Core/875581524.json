@@ -45,7 +45,7 @@
       "Level": 1,
       "Id": 1918989409,
       "Type": 3,
-      "Value": "air,ground,ward,vuln,invu,tree"
+      "Value": "air,enemies,ground,invulnerable,tree,vulnerable,ward"
     }
   ]
 }

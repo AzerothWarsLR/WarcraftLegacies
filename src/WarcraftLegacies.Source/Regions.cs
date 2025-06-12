@@ -57,7 +57,7 @@ public static class Regions
 	public static Rectangle BurningSteppesAmbient { get; set; } = new Rectangle(11712f, -12704f, 17984f, -7552f);
 	public static Rectangle CaerDarrow { get; set; } = new Rectangle(13952f, 6208f, 15648f, 8064f);
 	public static Rectangle CaerDarrowShipyard { get; set; } = new Rectangle(8608f, 2240f, 18176f, 11424f);
-	public static Rectangle CapitalInvasion { get; set; } = new Rectangle(4832f, 9216f, 5536f, 9728f);
+	public static Rectangle CapitalInvasion { get; set; } = new Rectangle(5120f, 9248f, 5632f, 9728f);
 	public static Rectangle CavernofTime { get; set; } = new Rectangle(-9344f, -16192f, -8960f, -15840f);
 	public static Rectangle Cenarius { get; set; } = new Rectangle(-10304f, 10656f, -10208f, 10784f);
 	public static Rectangle Central_Northrend { get; set; } = new Rectangle(-4160f, 15104f, 1952f, 20320f);
