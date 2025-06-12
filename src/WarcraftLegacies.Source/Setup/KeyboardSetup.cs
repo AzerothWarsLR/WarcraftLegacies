@@ -6,13 +6,13 @@ namespace WarcraftLegacies.Source.Setup
   {
     public static void InitializeKeyboard()
     {
-      var hotkeyManager = new HeroHotkeyManager();
-      
       for (int i = 0; i < 24; i++) 
       {
         var player = Player(i);
+        var hotkeyManager = new HeroHotkeyManager();
         hotkeyManager.Initialize(player);
       }
     }
   }
+
 }
