@@ -117,7 +117,10 @@ namespace WarcraftLegacies.Source.KeyboardManager
                 
                 if (wasAlreadySelected)
                 {
-                    SetCameraTargetController(fourthHero, 0, 0, false);
+                    if (whichPlayer == GetLocalPlayer())
+                    {
+                        SetCameraPosition(GetUnitX(fourthHero), GetUnitY(fourthHero));
+                    }
                 }
                 else
                 {
