@@ -113,21 +113,30 @@ namespace WarcraftLegacies.Source.KeyboardManager
 
             if (fourthHero != null)
             {
-                group selectedGroup = CreateGroup();
-                GroupEnumUnitsSelected(selectedGroup, whichPlayer, null);
+                bool wasAlreadySelected = IsUnitSelected(fourthHero, whichPlayer);
                 
-                firstOfGroup = FirstOfGroup(selectedGroup);
-                while (firstOfGroup != null)
+                if (wasAlreadySelected)
                 {
-                    if (IsUnitSelected(firstOfGroup, whichPlayer))
-                    {
-                        SelectUnit(firstOfGroup, false);
-                    }
-                    GroupRemoveUnit(selectedGroup, firstOfGroup);
-                    firstOfGroup = FirstOfGroup(selectedGroup);
+                    SetCameraTargetController(fourthHero, 0, 0, false);
                 }
-                DestroyGroup(selectedGroup);
-                SelectUnit(fourthHero, true);
+                else
+                {
+                    group selectedGroup = CreateGroup();
+                    GroupEnumUnitsSelected(selectedGroup, whichPlayer, null);
+                    
+                    firstOfGroup = FirstOfGroup(selectedGroup);
+                    while (firstOfGroup != null)
+                    {
+                        if (IsUnitSelected(firstOfGroup, whichPlayer))
+                        {
+                            SelectUnit(firstOfGroup, false);
+                        }
+                        GroupRemoveUnit(selectedGroup, firstOfGroup);
+                        firstOfGroup = FirstOfGroup(selectedGroup);
+                    }
+                    DestroyGroup(selectedGroup);
+                    SelectUnit(fourthHero, true);
+                }
             }
         }
     }

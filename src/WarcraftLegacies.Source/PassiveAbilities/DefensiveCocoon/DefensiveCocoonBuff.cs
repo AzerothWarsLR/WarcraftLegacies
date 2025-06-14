@@ -1,6 +1,6 @@
 ﻿using MacroTools.Extensions;
-using WarcraftLegacies.Source.PassiveAbilities.Vengeance;
 using WCSharp.Buffs;
+
 
 namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
 {
@@ -11,6 +11,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
   /// </summary>
   public sealed class DefensiveCocoonBuff : PassiveBuff
   {
+    private static readonly int[] HeroXpTable = { 100, 120, 160, 220, 300 };
     private unit? _egg;
     private trigger? _deathTrigger;
 
@@ -28,15 +29,14 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
     /// The unit type ID of the vengeance form.
     /// </summary>
     public required int EggId { private get; init; }
+    public required float Duration { get; init; } 
+    public int OriginalHeroLevel { get; init; }   
+    public bool IsOriginalUnitHero { get; init; } 
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="VengeanceBuff"/> class.
-    /// </summary>
     public DefensiveCocoonBuff(unit caster, unit target) : base(caster, target)
     {
     }
     
-    /// <inheritdoc />
     public override void OnApply()
     {
       Target
@@ -60,7 +60,6 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
         .AddAction(() => Target.Kill());
     }
 
-    /// <inheritdoc />
     public override void OnDispose()
     {
       _deathTrigger?.Destroy();
@@ -72,6 +71,19 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
         Revive();
       else
       {
+        if (IsOriginalUnitHero)
+        {
+          var killingUnit = GetKillingUnit();
+          if (killingUnit != null)
+          {
+            var experienceGained = CalculateExperience(killingUnit);
+            if (IsUnitType(killingUnit, UNIT_TYPE_HERO))
+            {
+              SetHeroXP(killingUnit, GetHeroXP(killingUnit) + experienceGained, true);
+            }
+          }
+        }
+        
         Target
           .Kill()
           .SetPosition(_egg!.GetPosition());
@@ -87,6 +99,21 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
       AddSpecialEffect(ReviveEffect, GetUnitX(Target), GetUnitY(Target))
         .SetScale(2)
         .SetLifespan();
+    }
+
+    private int CalculateExperience(unit killer)
+    {
+      if (IsUnitType(killer, UNIT_TYPE_HERO))
+      {
+        var index = OriginalHeroLevel - 1;
+        if (index < HeroXpTable.Length)
+        {
+          return HeroXpTable[index];
+        }
+        return HeroXpTable[^1];
+      }
+      
+      return 5 + (OriginalHeroLevel * 5);
     }
   }
 }

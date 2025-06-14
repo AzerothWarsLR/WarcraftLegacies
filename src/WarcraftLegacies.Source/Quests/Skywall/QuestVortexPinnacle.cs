@@ -28,6 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Skywall
       AddObjective(new ObjectiveControlPoint(UNIT_N0BD_ULDUM));
       AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.UldumAmbiance }, "in Uldum"));
       AddObjective(new ObjectiveExpire(660, Title));
+      AddObjective(new ObjectiveUpgrade(UNIT_N06R_GREAT_ALCAZAR_ELEMENTAL_T3, UNIT_N05Q_HOLDFAST_ELEMENTAL_T1));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
         filterUnit => filterUnit.GetTypeId() != FourCC("ngme"));
