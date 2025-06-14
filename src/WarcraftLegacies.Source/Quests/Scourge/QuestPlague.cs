@@ -49,7 +49,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       AddObjective(new ObjectiveEitherOf(
         new ObjectiveResearch(UPGRADE_R06I_PLAGUE_OF_UNDEATH_SCOURGE, FourCC("u000")),
         new ObjectiveTime(660)));
-      AddObjective(new ObjectiveTime(60));
+      AddObjective(new ObjectiveTime(540));
       _deathknellUnits = deathknell.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       _scholomanceUnits = scholomance.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       _coastUnits = coast.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
