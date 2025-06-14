@@ -66,17 +66,9 @@ namespace WarcraftLegacies.Source.Quests.Warsong
         Console.WriteLine("Without Grom's leadership, the Trolls are scattered in chaos and their riches lost.");
         return;
       }
-      
+  
       new WarsongPillageDialogPresenter(
         gromUnit,
-        new WarsongPillageChoice(
-          PillageChoiceType.Pillage,
-          "Pillage Echo Isles",
-          Regions.EchoUnlock,
-          PillageGoldReward,
-          PillageExperienceReward,
-          PillageResearchReward
-        ),
         new WarsongPillageChoice(
           PillageChoiceType.Subdue,
           "Subdue the Trolls",
@@ -86,6 +78,14 @@ namespace WarcraftLegacies.Source.Quests.Warsong
           SubdueResearchReward,
           artifactRewardItemType: null,
           unitUpgrade: new UnitUpgrade(SubdueRemoveUnit, SubdueAddUnit)
+        ),
+        new WarsongPillageChoice(
+          PillageChoiceType.Pillage,
+          "Pillage Echo Isles",
+          Regions.EchoUnlock,
+          PillageGoldReward,
+          PillageExperienceReward,
+          PillageResearchReward
         )
       ).Run(completingFaction.Player);
     }
