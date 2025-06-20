@@ -13,7 +13,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Anasterian generates an arcane orb whenver he casts a spell. The orb orbits around the caster for 30 seconds, dealing damage to enemy units it strikes.|n|n|cffffcc00Level 1|r - 45 damage|n|cffffcc00Level 2|r - 70 damage|n|cffffcc00Level 3|r - 95 damage|n|cffffcc00Level 4|r - 120 damage"
+      "Value": "Anasterian generates an arcane orb whenver he casts a spell. The orb orbits around the caster for 30 seconds, dealing damage to enemy units it strikes.|n|n|cffffcc00Level 1|r - 30 damage|n|cffffcc00Level 2|r - 45 damage|n|cffffcc00Level 3|r - 60 damage|n|cffffcc00Level 4|r - 75 damage"
     },
     {
       "Level": 4,
@@ -58,19 +58,19 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Defense Orbs deal 45 damage per orb to each unit it collides with."
+      "Value": "Defense Orbs deal 30 damage per orb to each unit it collides with."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Defense Orbs deal 70 damage per orb to each unit it collides with."
+      "Value": "Defense Orbs deal 45 damage per orb to each unit it collides with."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Defense Orbs deal 95 damage per orb to each unit it collides with."
+      "Value": "Defense Orbs deal 60 damage per orb to each unit it collides with."
     },
     {
       "Id": 1835101793,
@@ -81,7 +81,7 @@
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Defense Orbs deal 120 damage per orb to each unit it collides with."
+      "Value": "Defense Orbs deal 75 damage per orb to each unit it collides with."
     }
   ]
 }

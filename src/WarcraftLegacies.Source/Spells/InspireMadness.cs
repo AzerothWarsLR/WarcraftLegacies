@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Spells
     public float Duration { get; init; }
     public string EffectTarget { get; init; } = "";
     public float EffectScaleTarget { get; init; }
-    public float ChancePercentage { get; init; } = 100f; // Default chance percentage (100%)
+    public float ChancePercentage { get; init; } = 100f;
 
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {

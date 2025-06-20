@@ -1,0 +1,15 @@
+{
+  "Left": 14656,
+  "Bottom": 6816,
+  "Right": 15360,
+  "Top": 7456,
+  "Name": "ScholoInvasion",
+  "CreationNumber": 203,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

@@ -1,4 +1,5 @@
-﻿using WCSharp.Shared.Data;
+﻿
+using WCSharp.Shared.Data;
 using WCSharp.Shared.Extensions;
 
 
@@ -6,12 +7,13 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
 {
     public static class BloodPactBattleSimulation
     {
-        private const int PlayerSentinels = 19;
-        private const int PlayerWarsong = 20;
+        private const int NeutralHostile = 24;
         private const int Player = 0;
         private const float MinHealthPercentage = 70f;
         private const float HealthRestorePercentage = 100f; 
 
+        public static readonly group sentinelsGroup = CreateGroup();
+        public static readonly group warsongGroup = CreateGroup();
         public static readonly group battleSimulationGroup = CreateGroup();
 
         private static readonly int[] SentinelsUnits =
@@ -33,7 +35,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
             UNIT_O00P_CHAOS_WARSONG_GRUNT_WARSONG,
             UNIT_O00P_CHAOS_WARSONG_GRUNT_WARSONG,
             UNIT_O00P_CHAOS_WARSONG_GRUNT_WARSONG,
-            UNIT_O00P_CHAOS_WARSONG_GRUNT_WARSONG,
+            UNIT_O00P_CHAOS_WARSONG_GRUNT_WARSONG
         };
 
         private static readonly int[] Playerunits =
@@ -42,17 +44,16 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
 
         public static void StartSimulation()
         {
-            SetPlayersHostile(PlayerWarsong, PlayerSentinels, true);
-
             Rectangle regionRect = Regions.BloodPactBattle;
-            Point midpoint = regionRect.Center;
 
+            // Spawn Sentinels units
             foreach (var unitTypeId in SentinelsUnits)
             {
                 try
                 {
                     Point randomPoint = regionRect.GetRandomPoint();
-                    unit spawnedUnit = SpawnSimulationUnit(PlayerSentinels, unitTypeId, randomPoint);
+                    unit spawnedUnit = SpawnSimulationUnit(NeutralHostile, unitTypeId, randomPoint);
+                    GroupAddUnit(sentinelsGroup, spawnedUnit);
                     GroupAddUnit(battleSimulationGroup, spawnedUnit);
                 }
                 catch (System.Exception ex)
@@ -61,12 +62,14 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
                 }
             }
 
+            // Spawn Warsong units
             foreach (var unitTypeId in WarsongUnits)
             {
                 try
                 {
                     Point randomPoint = regionRect.GetRandomPoint();
-                    unit spawnedUnit = SpawnSimulationUnit(PlayerWarsong, unitTypeId, randomPoint);
+                    unit spawnedUnit = SpawnSimulationUnit(NeutralHostile, unitTypeId, randomPoint);
+                    GroupAddUnit(warsongGroup, spawnedUnit);
                     GroupAddUnit(battleSimulationGroup, spawnedUnit);
                 }
                 catch (System.Exception ex)
@@ -75,23 +78,39 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
                 }
             }
             
+            // Spawn player units
             foreach (var unitTypeId in Playerunits)
             {
-              try
-              {
-                Point randomPoint = regionRect.GetRandomPoint();
-                unit spawnedUnit = SpawnSimulationUnit(Player, unitTypeId, randomPoint);
-                GroupAddUnit(battleSimulationGroup, spawnedUnit);
-              }
-              catch (System.Exception ex)
-              {
-                System.Console.WriteLine($"Warsong spawn error: {ex.Message}");
-              }
+                try
+                {
+                    Point randomPoint = regionRect.GetRandomPoint();
+                    unit spawnedUnit = SpawnSimulationUnit(Player, unitTypeId, randomPoint);
+                    GroupAddUnit(battleSimulationGroup, spawnedUnit);
+                }
+                catch (System.Exception ex)
+                {
+                    System.Console.WriteLine($"Player unit spawn error: {ex.Message}");
+                }
             }
-
-            IssueGroupAttack(battleSimulationGroup, midpoint);
-
-            // Start the native periodic timer explicitly
+            
+            foreach (var sentinelUnit in sentinelsGroup.ToList())
+            {
+                var targetUnit = GetRandomUnitFromGroup(warsongGroup);
+                if (targetUnit != null)
+                {
+                    IssueTargetOrder(sentinelUnit, "attack", targetUnit);
+                }
+            }
+            
+            foreach (var warsongUnit in warsongGroup.ToList())
+            {
+                var targetUnit = GetRandomUnitFromGroup(sentinelsGroup);
+                if (targetUnit != null)
+                {
+                    IssueTargetOrder(warsongUnit, "attack", targetUnit);
+                }
+            }
+          
             timer healthCheckTimer = CreateTimer();
             TimerStart(healthCheckTimer, 8f, true, CheckAndRestoreUnitHealth);
         }
@@ -103,20 +122,14 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
             return newUnit;
         }
 
-        private static void IssueGroupAttack(group unitGroup, Point targetLocation)
+        private static unit GetRandomUnitFromGroup(group unitGroup)
         {
-            foreach (var unit in unitGroup.ToList())
-                IssuePointOrder(unit, "attack", targetLocation.X, targetLocation.Y);
-        }
-
-        private static void SetPlayersHostile(int playerA, int playerB, bool hostile)
-        {
-            SetPlayerAlliance(Player(playerA), Player(playerB), ALLIANCE_PASSIVE, !hostile);
-            SetPlayerAlliance(Player(playerA), Player(playerB), ALLIANCE_HELP_REQUEST, !hostile);
-            SetPlayerAlliance(Player(playerA), Player(playerB), ALLIANCE_HELP_RESPONSE, !hostile);
-            SetPlayerAlliance(Player(playerA), Player(playerB), ALLIANCE_SHARED_XP, !hostile);
-            SetPlayerAlliance(Player(playerA), Player(playerB), ALLIANCE_SHARED_SPELLS, !hostile);
-            SetPlayerAlliance(Player(playerA), Player(playerB), ALLIANCE_SHARED_VISION, !hostile);
+            var units = unitGroup.ToList();
+            if (units.Count == 0)
+                return null;
+                
+            int randomIndex = GetRandomInt(0, units.Count - 1);
+            return units[randomIndex];
         }
         
         private static void CheckAndRestoreUnitHealth()

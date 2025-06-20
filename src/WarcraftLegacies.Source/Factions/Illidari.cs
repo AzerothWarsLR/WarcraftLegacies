@@ -13,6 +13,7 @@ using WarcraftLegacies.Source.Quests.Naga;
 using WarcraftLegacies.Source.Setup;
 
 
+
 namespace WarcraftLegacies.Source.Factions
 {
   public sealed class Illidari : Faction

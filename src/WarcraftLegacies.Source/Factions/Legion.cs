@@ -79,7 +79,7 @@ namespace WarcraftLegacies.Source.Factions
       AddQuest(new QuestLegionKillLordaeron(_allLegendSetup.Lordaeron.CapitalPalace,
         _allLegendSetup.Lordaeron.Stratholme, _allLegendSetup.Legion.Tichondrius));
       AddQuest(new QuestSummonLegion(Regions.TwistingNether,
-        _preplacedUnitSystem.GetUnit(UNIT_N03C_DEMON_PORTAL_NETHER), _allLegendSetup.Legion.Anetheron));
+        _preplacedUnitSystem.GetUnit(UNIT_N03C_DEMON_PORTAL_NETHER), _allLegendSetup.Legion.Anetheron, _preplacedUnitSystem));;
     }
 
     private void RegisterResearches()
