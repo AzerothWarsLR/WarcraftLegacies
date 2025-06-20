@@ -58,8 +58,8 @@ namespace WarcraftLegacies.Source.Factions
 
         /// <inheritdoc />
         public override void OnRegistered()
-        { 
-          
+        {
+            RegisterObjectLevels();
             ReplaceWithFactionUnits(this);
             RegisterQuests();
             RegisterDialogue();
@@ -74,6 +74,11 @@ namespace WarcraftLegacies.Source.Factions
             echoIslesUnit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
         }
 
+        private void RegisterObjectLevels()
+        {
+          ModAbilityAvailability(ABILITY_ABTL_BATTLE_STATIONS_FROSTWOLF_WARSONG_BURROW, 1);
+          ModAbilityAvailability(ABILITY_A0GM_FOR_THE_HORDE_PINK_GREY_MAIN_BUILDINGS, 1);
+        }
 
         private void RegisterQuests()
         {

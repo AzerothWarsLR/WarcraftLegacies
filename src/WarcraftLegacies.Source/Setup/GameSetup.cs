@@ -26,6 +26,7 @@ namespace WarcraftLegacies.Source.Setup
     {
       UnitTypeConfig.Setup();
       SaveManager.Initialize();
+      KeyboardSetup.InitializeKeyboard(); 
       DisplayIntroText.Setup(25);
       CinematicMode.Setup(59);
       SetupControlPointManager();

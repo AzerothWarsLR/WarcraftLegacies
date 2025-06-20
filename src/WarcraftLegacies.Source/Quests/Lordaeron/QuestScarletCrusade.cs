@@ -104,6 +104,9 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
         4.712389f * MathEx.DegToRad, 256);
       CreateStructureForced(whichPlayer, UNIT_H0BJ_IMPROVED_BOMBARD_TOWER_CRUSADE_TOWER, 18427, 7929,
         4.712389f * MathEx.DegToRad, 256);
+      
+      CreateStructureForced(whichPlayer, UNIT_H09X_SHIPYARD_CRUSADE_SHIPYARD, 21447, 9882,
+        4.712389f * MathEx.DegToRad, 256);
 
       CreateStructureForced(whichPlayer, UNIT_H0BJ_IMPROVED_BOMBARD_TOWER_CRUSADE_TOWER, 20040, 8111,
         4.712389f * MathEx.DegToRad, 256);

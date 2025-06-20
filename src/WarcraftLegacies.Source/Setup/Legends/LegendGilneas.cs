@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       Tess = new LegendaryHero("Tess Greymane")
       {
-        UnitType = UNIT_EWAR_PRINCESS_OF_GILNEAS_GILNEAS,
+        UnitType = UNIT_TGGN_PRINCESS_OF_GILNEAS_GILNEAS,
       };
 
       Goldrinn = new LegendaryHero("Goldrinn")

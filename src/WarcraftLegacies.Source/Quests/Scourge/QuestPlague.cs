@@ -106,7 +106,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
           },
           new ScourgeInvasionChoice(Regions.ScholoInvasion, "Scholomance")
           {
-            AttackTarget = new Point(Regions.StrahnbradUnlock.Center.X, Regions.StrahnbradUnlock.Center.Y)
+            AttackTarget = new Point(Regions.SkullRetrieval.Center.X, Regions.SkullRetrieval.Center.Y)
           },
           new ScourgeInvasionChoice(Regions.StrathInvasion, "Stratholme")
           {
