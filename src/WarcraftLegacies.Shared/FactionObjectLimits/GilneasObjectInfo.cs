@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new("o06P", 6); //Worgen Shaman
       yield return new("h04X", 6); //HarvestWitch
       yield return new("E01E", 1); //Goldrinn
-      yield return new("Ewar", 1); //Tess
+      yield return new(UNIT_TGGN_PRINCESS_OF_GILNEAS_GILNEAS, 1); 
       yield return new("Hhkl", 1); //Genn
       yield return new("Hpb2", 1); //Darius
       yield return new("hbot", Unlimited); //Alliance Transport Ship

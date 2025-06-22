@@ -18,13 +18,13 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
 
         private static readonly int[] SentinelsUnits =
         {
-            UNIT_ESEN_HUNTRESS_SENTINELS,
-            UNIT_ESEN_HUNTRESS_SENTINELS,
-            UNIT_ESEN_HUNTRESS_SENTINELS,
-            UNIT_ESEN_HUNTRESS_SENTINELS,
-            UNIT_EARC_ARCHER_SENTINELS,
-            UNIT_EARC_ARCHER_SENTINELS,
-            UNIT_EARC_ARCHER_SENTINELS
+            UNIT_BPH1_HUNTRESS_SENTINELS,
+            UNIT_BPH1_HUNTRESS_SENTINELS,
+            UNIT_BPH1_HUNTRESS_SENTINELS,
+            UNIT_BPH1_HUNTRESS_SENTINELS,
+            UNIT_BPA1_ARCHER_SENTINELS,
+            UNIT_BPA1_ARCHER_SENTINELS,
+            UNIT_BPA1_ARCHER_SENTINELS
         };
 
         private static readonly int[] WarsongUnits =
@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
         {
             Rectangle regionRect = Regions.BloodPactBattle;
 
-            // Spawn Sentinels units
+          
             foreach (var unitTypeId in SentinelsUnits)
             {
                 try
@@ -61,8 +61,6 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
                     System.Console.WriteLine($"Sentinel spawn error: {ex.Message}");
                 }
             }
-
-            // Spawn Warsong units
             foreach (var unitTypeId in WarsongUnits)
             {
                 try
@@ -78,7 +76,6 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
                 }
             }
             
-            // Spawn player units
             foreach (var unitTypeId in Playerunits)
             {
                 try

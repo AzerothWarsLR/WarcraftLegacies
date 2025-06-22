@@ -5,6 +5,7 @@ using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
@@ -33,6 +34,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
       AddObjective(new ObjectiveControlPoint(UNIT_NNYA_NY_ALOTHA_THE_WAKING_CITY));
       AddObjective(new ObjectiveQuestComplete(prerequisite));
       AddObjective(new ObjectiveExpire(660, Title));
+      AddObjective(new ObjectiveUpgrade(UNIT_N0AT_CATHEDRAL_OF_MADNESS_YOGG_T3, UNIT_N0AR_TWISTING_HALLS_YOGG_T1));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
         filterUnit => filterUnit.GetTypeId() != FourCC("ngol"));

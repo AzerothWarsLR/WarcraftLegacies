@@ -44,6 +44,16 @@
       "Id": 1953854049,
       "Type": 3,
       "Value": "Puts a target enemy unit to sleep. A sleeping unit can be awoken by attacking it. |n|n|cffffcc00Level 1|r - \u003CANSL,Dur1\u003E second sleep for \u003CANSL,Cost1\u003E mana. |n|cffffcc00Level 2|r - \u003CANSL,Dur2\u003E second sleep for \u003CANSL,Cost2\u003E mana. |n|cffffcc00Level 3|r - \u003CANSL,Dur3\u003E second sleep for \u003CANSL,Cost3\u003E mana."
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
     }
   ]
 }
