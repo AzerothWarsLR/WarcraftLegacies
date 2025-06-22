@@ -69,14 +69,6 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       new WarsongPillageDialogPresenter(
         gromUnit,
         new WarsongPillageChoice(
-          PillageChoiceType.Pillage,
-          "Pillage Stonemaul",
-          Regions.StonemaulKeep,
-          PillageGoldReward,
-          PillageExperienceReward,
-          PillageResearchReward
-        ),
-        new WarsongPillageChoice(
           PillageChoiceType.Subdue,
           "Subdue the Ogres",
           Regions.StonemaulKeep,
@@ -85,9 +77,18 @@ namespace WarcraftLegacies.Source.Quests.Warsong
           SubdueResearchReward,
           artifactRewardItemType: null,
           new UnitUpgrade(SubdueRemoveUnit, SubdueAddUnit)
+        ),
+        new WarsongPillageChoice(
+          PillageChoiceType.Pillage,
+          "Pillage Stonemaul",
+          Regions.StonemaulKeep,
+          PillageGoldReward,
+          PillageExperienceReward,
+          PillageResearchReward
         )
       ).Run(completingFaction.Player);
     }
+
 
     protected override void OnFail(Faction completingFaction)
     {

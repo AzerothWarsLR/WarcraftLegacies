@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿
+using System;
+using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.UserInterface;
 using MacroTools.Utils;
@@ -19,6 +21,11 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
         return;
 
       var invasionLocation = choice.Location;
+      var center = invasionLocation.Center;
+      var spreadRadius = 10;
+      var angle = 0f;
+      var angleStep = 45f;
+      const float DegreesToRadians = (float)(Math.PI / 180);
 
       var unitsToTeleport = GlobalGroup.EnumUnitsInRect(Regions.Northrend_Ambiance)
         .Where(x => x.OwningPlayer() == pickingPlayer)
@@ -30,27 +37,28 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
 
       foreach (var unit in unitsToTeleport)
       {
-        var randomPoint = invasionLocation.GetRandomPoint();
-        SetUnitPosition(unit, randomPoint.X, randomPoint.Y);
+        var x = center.X + spreadRadius * (float)Math.Cos(angle * DegreesToRadians);
+        var y = center.Y + spreadRadius * (float)Math.Sin(angle * DegreesToRadians);
+        SetUnitPosition(unit, x, y);
 
         if (IsUnitType(unit, UNIT_TYPE_SUMMONED) && choice.AttackTarget != null)
         {
           IssuePointOrder(unit, "attack", choice.AttackTarget.X, choice.AttackTarget.Y);
         }
+
+        angle += angleStep;
+        if (angle >= 360)
+        {
+          angle = 0;
+          spreadRadius += 10;
+        }
       }
+      
       pickingPlayer.RepositionCamera(invasionLocation.Center);
     }
 
-      
-    
-
-
-
-
-    /// <inheritdoc />
     protected override ScourgeInvasionChoice GetDefaultChoice(player whichPlayer) => Choices.First();
 
-    /// <inheritdoc />
     protected override bool IsChoiceActive(player whichPlayer, ScourgeInvasionChoice choice) => true;
   }
 }

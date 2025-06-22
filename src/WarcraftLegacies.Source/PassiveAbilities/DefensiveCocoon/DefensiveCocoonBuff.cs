@@ -1,42 +1,25 @@
-﻿using MacroTools.Extensions;
-using WarcraftLegacies.Source.PassiveAbilities.Vengeance;
+﻿using System;
+using MacroTools.Extensions;
 using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
 {
-  /// <summary>
-  /// The unit becomes an immobile cocoon, reducing their maximum hit points and fully healing them.
-  /// If the cocoon survives for long enough, it revives.
-  /// Otherwise, it dies.
-  /// </summary>
   public sealed class DefensiveCocoonBuff : PassiveBuff
   {
+    private static readonly int[] HeroXpTable = { 100, 120, 160, 220, 300 };
     private unit? _egg;
     private trigger? _deathTrigger;
+    private readonly int _originalHeroLevel;
 
-    /// <summary>
-    /// How many maximum hit points the cocoon should have.
-    /// </summary>
     public required int MaximumHitPoints { private get; init; }
-    
-    /// <summary>
-    /// The effect when the vengeance form is exited ans the hero is revived.
-    /// </summary>
     public required string ReviveEffect { private get; init; }
-    
-    /// <summary>
-    /// The unit type ID of the vengeance form.
-    /// </summary>
     public required int EggId { private get; init; }
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="VengeanceBuff"/> class.
-    /// </summary>
     public DefensiveCocoonBuff(unit caster, unit target) : base(caster, target)
     {
+      _originalHeroLevel = GetHeroLevel(target);
     }
     
-    /// <inheritdoc />
     public override void OnApply()
     {
       Target
@@ -57,17 +40,25 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
 
       _deathTrigger = CreateTrigger()
         .RegisterUnitEvent(_egg, EVENT_UNIT_DEATH)
-        .AddAction(() => Target.Kill());
+        .AddAction(() => {
+          var killingUnit = GetKillingUnit();
+          if (killingUnit != null && IsUnitType(killingUnit, UNIT_TYPE_HERO))
+          {
+            var index = Math.Min(_originalHeroLevel - 1, HeroXpTable.Length - 1);
+            var experienceGained = HeroXpTable[index];
+            SetHeroXP(killingUnit, GetHeroXP(killingUnit) + experienceGained, true);
+          }
+          Target.Kill();
+        });
     }
 
-    /// <inheritdoc />
     public override void OnDispose()
     {
       _deathTrigger?.Destroy();
       Target
         .Show(true)
         .PauseEx(false);
-      
+
       if (UnitAlive(_egg)) 
         Revive();
       else

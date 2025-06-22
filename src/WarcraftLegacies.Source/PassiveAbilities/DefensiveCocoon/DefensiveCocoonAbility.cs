@@ -54,8 +54,9 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
       var abilityLevel = GetUnitAbilityLevel(damaged, AbilityTypeId);
       if (!ShouldBecomeEgg(abilityLevel, damaged)) 
         return;
-      
+  
       BlzSetEventDamage(0);
+  
       var vengeanceBuff = new DefensiveCocoonBuff(damaged, damaged)
       {
         Duration = Duration,
@@ -65,6 +66,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
       };
       BuffSystem.Add(vengeanceBuff);
     }
+
 
     private bool ShouldBecomeEgg(int abilityLevel, unit target) =>
       GetPlayerTechCount(target.OwningPlayer(), RequiredResearch, false) > 0 && 

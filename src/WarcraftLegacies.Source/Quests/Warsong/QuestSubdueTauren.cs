@@ -76,28 +76,26 @@ namespace WarcraftLegacies.Source.Quests.Warsong
           new WarsongPillageDialogPresenter(
             gromUnit,
             new WarsongPillageChoice(
-              PillageChoiceType.Pillage,
-              "Pillage Thunder Bluff",
-              Regions.ThunderBluff,
-              PillageGoldReward,       
-              PillageExperienceReward,
-              0, // Dont award Subdue Research
-              ITEM_I00L_BLOODHOOF_TOTEM
-
-
-            ),
-            new WarsongPillageChoice(
               PillageChoiceType.Subdue,
               "Subdue the Tauren",
               Regions.ThunderBluff,
               0,
               0,
               Constants.UPGRADE_R00O_SUBDUE_THE_THUNDERBLUFF_TAUREN,
-              artifactRewardItemType: null 
-
+              artifactRewardItemType: null
+            ),
+            new WarsongPillageChoice(
+              PillageChoiceType.Pillage,
+              "Pillage Thunder Bluff",
+              Regions.ThunderBluff,
+              PillageGoldReward,       
+              PillageExperienceReward,
+              0, 
+              ITEM_I00L_BLOODHOOF_TOTEM
             )
           ).Run(completingFaction.Player);
         }
+
         protected override void OnFail(Faction completingFaction)
         {
           var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated

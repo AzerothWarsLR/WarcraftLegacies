@@ -42,7 +42,7 @@ namespace MacroTools.Spells
 
       foreach (var unit in filteredUnits)
       {
-        if (EnableDamage)
+        if (EnableDamage && IsUnitEnemy(unit, GetOwningPlayer(caster)))
         {
           var damage = DamageBase + DamageLevel * GetAbilityLevel(caster);
           UnitDamageTarget(caster, unit, damage, false, false, ATTACK_TYPE_NORMAL, DAMAGE_TYPE_MAGIC, WEAPON_TYPE_WHOKNOWS);
@@ -76,6 +76,7 @@ namespace MacroTools.Spells
           );
       }
     }
+
 
     private IEnumerable<unit> GetUnitsInRadius(Point center, float radius, DummyCasterManager.CastFilter castFilter)
     {

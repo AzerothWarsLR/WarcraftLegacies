@@ -4,6 +4,7 @@ using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
+using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
@@ -29,11 +30,17 @@ namespace WarcraftLegacies.Source.Quests.Cthun
             AddObjective(new ObjectiveControlPoint(UNIT_NLSE_TEMPLE_OF_AHN_QIRAJ, 1500));
             AddObjective(new ObjectiveExpire(660, Title));
             AddObjective(new ObjectiveSelfExists());
+            AddObjective(new ObjectiveUpgrade(UNIT_U022_NEXUS_C_THUN_T3, UNIT_U020_MONUMENT_C_THUN_T1));
             _rockGroups = new List<RockGroup>(); 
             _allLegendSetup = allLegendSetup;
             _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
             RegisterRockGroups();
         }
+        /// <inheritdoc />
+        public override string RewardFlavour => "The Titan Construct has fallen, and C'thun stirs within his prison. The Old God is free to spread chaos once more.";
+        // <inheritdoc />
+        protected override string RewardDescription => "Control of all units in Ahn'Qiraj Temple and C'thun becomes active";
+
 
         /// <summary>
         /// Registers the RockGroups associated with this quest.
