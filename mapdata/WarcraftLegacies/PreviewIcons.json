@@ -26,21 +26,15 @@
     },
     {
       "IconType": 2,
-      "X": 182,
-      "Y": 99,
-      "Color": "#E45Cb0"
-    },
-    {
-      "IconType": 2,
-      "X": 176,
-      "Y": 104,
-      "Color": "#4F5055"
-    },
-    {
-      "IconType": 2,
       "X": 170,
       "Y": 182,
       "Color": "#0042ff"
+    },
+    {
+      "IconType": 2,
+      "X": 165,
+      "Y": 95,
+      "Color": "#E45Cb0"
     },
     {
       "IconType": 2,
@@ -257,21 +251,6 @@
       "Color": "#FFFFff"
     },
     {
-      "X": 181,
-      "Y": 116,
-      "Color": "#FFFFff"
-    },
-    {
-      "X": 180,
-      "Y": 101,
-      "Color": "#FFFFff"
-    },
-    {
-      "X": 178,
-      "Y": 103,
-      "Color": "#FFFFff"
-    },
-    {
       "X": 173,
       "Y": 60,
       "Color": "#FFFFff"
@@ -284,6 +263,11 @@
     {
       "X": 164,
       "Y": 243,
+      "Color": "#FFFFff"
+    },
+    {
+      "X": 163,
+      "Y": 97,
       "Color": "#FFFFff"
     },
     {

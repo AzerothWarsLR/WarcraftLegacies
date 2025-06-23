@@ -26,6 +26,10 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Tess = new LegendaryHero("Tess Greymane")
       {
         UnitType = UNIT_TGGN_PRINCESS_OF_GILNEAS_GILNEAS,
+        StartingArtifacts = new()
+        {
+          new(CreateItem(ITEM_I00R_SCYTHE_OF_ELUNE, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+        }
       };
 
       Goldrinn = new LegendaryHero("Goldrinn")

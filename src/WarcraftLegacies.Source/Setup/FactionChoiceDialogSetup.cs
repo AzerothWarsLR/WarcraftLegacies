@@ -1,4 +1,4 @@
-using MacroTools.FactionChoices;
+﻿using MacroTools.FactionChoices;
 using MacroTools.Systems;
 using WarcraftLegacies.Source.Factions;
 
@@ -39,7 +39,8 @@ namespace WarcraftLegacies.Source.Setup
                 artifactSetup,
                 allLegendSetup),
                 Difficulty = FactionLearningDifficulty.Advanced,
-                StartingArea = Regions.GilneasStartPos
+                StartingArea = Regions.DalaStartPos,
+                RequiresCheats = false
             };
             new FactionChoiceDialogPresenter(dalaran, gilneas).Run(Player(7));
 

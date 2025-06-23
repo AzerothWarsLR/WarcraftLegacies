@@ -1,4 +1,4 @@
-using MacroTools.Shared;
+﻿using MacroTools.Shared;
 using static Constants;
 
 namespace WarcraftLegacies.Shared.FactionObjectLimits
@@ -10,32 +10,37 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
     public static IEnumerable<ObjectInfo> GetAllObjectLimits()
     {
       yield return new(UNIT_H065_REFUGE_DALARAN_T1, Unlimited, UnitCategory.TownHall);
-      yield return new("h066", Unlimited); //Conclave
-      yield return new("h068", Unlimited); //Observatory
-      yield return new(UNIT_H063_ARCANE_WELL_DALARAN_FARM, Unlimited, UnitCategory.Farm);
-      yield return new(UNIT_H00I_WINDMILL_LORDAERON_OTHER, Unlimited, UnitCategory.Farm);
-      yield return new("h044", Unlimited); //Altar of Knowledge
-      yield return new("h069", Unlimited); //Barracks
-      yield return new("h02N", Unlimited); //Trade Quarters
-      yield return new("h036", Unlimited); //Arcane Sanctuary
-      yield return new("h078", Unlimited); //Scout Tower
-      yield return new("h079", Unlimited); //Arcane Tower
-      yield return new("h07A", Unlimited); //Arcane Tower (Improved)
-      yield return new("hvlt", Unlimited); //Arcane Vault
-      yield return new(UNIT_H076_SHIPYARD_DALARAN_SHIPYARD, Unlimited, UnitCategory.Shipyard);
-      yield return new("ndgt", Unlimited); //Dalaran Tower
-      yield return new("n004", Unlimited); //Dalaran Tower (Improved)
-      yield return new("h067", Unlimited); //Laboratory
-      yield return new("n0AO", 2); //Way Gate
-      yield return new(UNIT_H022_FARMER_DALARAN_WORKER, Unlimited, UnitCategory.Worker);
-      yield return new("nhym", Unlimited); //Hydromancer
-      yield return new("h032", Unlimited); //Battlemage
-      yield return new("h02D", Unlimited); //Geomancer
-      yield return new("h01I", Unlimited); //Arcanist
-      yield return new("n007", 6); //Kirin Tor
-      yield return new("n096", 6); //Earth Golem
-      yield return new("n0AK", Unlimited); //Sludge Flinger
-      yield return new("o02U", 6); //Crystal Artillery
+      yield return new(UNIT_H066_CONCLAVE_DALARAN_T2, Unlimited); //Conclave
+      yield return new(UNIT_H068_OBSERVATORY_DALARAN_T3, Unlimited); //Observatory
+      yield return new(UNIT_H063_ARCANE_WELL_DALARAN_FARM, Unlimited, UnitCategory.Farm); //farm
+      yield return new(UNIT_H00I_WINDMILL_LORDAERON_OTHER, Unlimited, UnitCategory.Farm); //farm
+      yield return new(UNIT_H044_ALTAR_OF_KNOWLEDGE_DALARAN_ALTAR, Unlimited, UnitCategory.Altar); //Altar of Knowledge
+      yield return new(UNIT_H069_MILITARY_QUARTER_DALARAN_BARRACKS, Unlimited, UnitCategory.Barracks); //Barracks
+      yield return new(UNIT_H02N_LUMBER_MILL_DALARAN_RESEARCH, Unlimited, UnitCategory.Research); //Lumber Mill
+      yield return new(UNIT_H036_ARCANE_SANCTUARY_DALARAN_MAGIC, Unlimited, UnitCategory.Magic); //Arcane Sanctuary
+      yield return new(UNIT_HVLT_ARCANE_VAULT_DALARAN_SHOP, Unlimited, UnitCategory.Shop); //Arcane Vault
+      yield return new(UNIT_H076_SHIPYARD_DALARAN_SHIPYARD, Unlimited, UnitCategory.Shipyard); //Shipyeard
+      yield return new(UNIT_H067_MANAFORGE_DALARAN_SPECIALIST, Unlimited, UnitCategory.Specialist); //Manaforge
+      yield return new(UNIT_N0AO_WAY_GATE_DALARAN_SIEGE, 2, UnitCategory.Waygate); //Way Gate
+
+      yield return new(UNIT_H078_SCOUT_TOWER_DALARAN_TOWER, Unlimited, UnitCategory.Tower); //Scout Tower
+      yield return new(UNIT_H079_ARCANE_TOWER_DALARAN_TOWER, Unlimited, UnitCategory.Tower2); //Arcane Tower
+      yield return new(UNIT_H07A_IMPROVED_ARCANE_TOWER_DALARAN_TOWER, Unlimited, UnitCategory.Tower3); //Arcane Tower (Improved)
+      yield return new(UNIT_NDGT_KIRIN_TOR_TOWER_DALARAN_TOWER, Unlimited, UnitCategory.Tower4); //Dalaran Tower
+      yield return new(UNIT_N004_IMPROVED_KIRIN_TOR_TOWER_DALARAN_TOWER, Unlimited, UnitCategory.Tower5); //Dalaran Tower (Improved)
+
+      yield return new(UNIT_H022_FARMER_DALARAN_WORKER, Unlimited, UnitCategory.Worker); //worker
+      yield return new(UNIT_NHYM_HYDROMANCER_DALARAN, Unlimited, UnitCategory.CasterBasic); //Hydromancer
+      yield return new(UNIT_H032_BATTLEMAGE_DALARAN, Unlimited, UnitCategory.MeleeBasic); //Battlemage
+      yield return new(UNIT_H02D_GEOMANCER_DALARAN, Unlimited, UnitCategory.CasterSupport); //Geomancer
+      yield return new(UNIT_H01I_ARCANIST_DALARAN, Unlimited, UnitCategory.Caster3); //Arcanist
+      yield return new(UNIT_N007_KIRIN_TOR_DALARAN_ELITE, 6, UnitCategory.Elite); //Kirin Tor
+      yield return new(UNIT_N096_EARTH_GOLEM_DALARAN, 6, UnitCategory.MeleeSpecial); //Earth Golem
+      yield return new(UNIT_N0AK_INITIATE_MAGE_DALARAN, Unlimited, UnitCategory.RangedBasic); //Initiate Mage
+      yield return new(UNIT_O02U_CRYSTAL_ARTILLERY_DALARAN, 6, UnitCategory.Siege); //Crystal Artillery
+
+
+
       yield return new(UNIT_N0AC_BLUE_DRAGON_DALARAN, 6);
       yield return new(UNIT_HBOT_TRANSPORT_SHIP_ALLIANCE, Unlimited);
       yield return new(UNIT_H0AR_SCOUT_SHIP_ALLIANCE, Unlimited);

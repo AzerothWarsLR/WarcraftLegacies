@@ -19,6 +19,8 @@
     Altar,
     
     Specialist,
+
+    Waygate,
     
     Siege,
     
@@ -33,6 +35,10 @@
     Tower2,
     
     Tower3,
+
+    Tower4,
+
+    Tower5,
     
     Shop,
     
@@ -47,9 +53,13 @@
     CasterSupport,
     
     CasterBasic,
-    
+
+    Caster3,
+
     CasterAdvanced,
-    
+
+    CasterAdvanced2,
+
     RangedBasic,
     
     MeleeBasic,

@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MacroTools.Extensions;
+using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.Systems;
@@ -19,7 +21,8 @@ namespace WarcraftLegacies.Source.Factions
     private readonly unit _gilneasGate;
 
     /// <inheritdoc />
-    public Gilneas(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup) : base("Gilneas", new[] {PLAYER_COLOR_COAL, PLAYER_COLOR_LIGHT_GRAY, PLAYER_COLOR_MINT},
+    public Gilneas(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
+      : base("Gilneas", new[] {PLAYER_COLOR_COAL, PLAYER_COLOR_LIGHT_GRAY, PLAYER_COLOR_MINT},
       @"ReplaceableTextures\CommandButtons\BTNGreymane.blp")
     {
       TraditionalTeam = TeamSetup.NorthAlliance;
@@ -35,8 +38,7 @@ namespace WarcraftLegacies.Source.Factions
 
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9392, -921)),
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(8784, 1993)),
+        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(5466, 3210)),
       };
       Nicknames = new List<string>
       {
@@ -56,33 +58,37 @@ namespace WarcraftLegacies.Source.Factions
     public override void OnRegistered()
     {
       RegisterQuests();
+      ReplaceWithFactionUnits(this);
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
-    
+
     /// <inheritdoc />
     public override void OnNotPicked()
     {
-      Regions.GilneasUnlock1.CleanupNeutralPassiveUnits();
-      Regions.GilneasUnlock2.CleanupNeutralPassiveUnits();
-      Regions.GilneasUnlock3.CleanupNeutralPassiveUnits();
-      Regions.GilneasUnlock4.CleanupNeutralPassiveUnits();
-      Regions.GilneasUnlock5.CleanupNeutralPassiveUnits();
-      Regions.GilneasUnlock6.CleanupNeutralPassiveUnits();
-      Regions.GilneasStartPos.CleanupNeutralPassiveUnits();
       base.OnNotPicked();
     }
-    
+
     private void RegisterQuests()
     {
-      AddQuest(new QuestDuskhaven());
-      AddQuest(new QuestStormglen());
-      AddQuest(new QuestKeelHarbor());
-      AddQuest(new QuestTempestReach());
-      AddQuest(new QuestGilneasCity(Regions.GilneasUnlock5, Regions.GilneasUnlock6));
+      StartingQuest = AddQuest(new QuestSouthshoregil(Regions.SouthshoreUnlock));
+      AddQuest(new QuestDalarangilneas(Regions.Dalaran));
+      AddQuest(new QuestGilneasCity(Regions.Gilneas));
+      //AddQuest(new QuestKeelHarbor());
+      //AddQuest(new QuestTempestReach())
       AddQuest(new QuestCrowley());
       AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
     }
-    
+
+    private void ReplaceWithFactionUnits(Faction pickedFaction)
+    {
+      if (pickedFaction == null)
+        throw new ArgumentNullException(nameof(pickedFaction), "pickedFaction cannot be null.");
+
+      FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.SouthshoreUnlock, pickedFaction);
+      FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.Gilneas, pickedFaction);
+      FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.Dalaran, pickedFaction);
+    }
+
     private void RegisterBookOfMedivhQuest(Legion legion)
     {
       SharedQuestRepository.RegisterQuestFactory(faction => new QuestBookOfMedivh(_allLegendSetup.Gilneas.GilneasCastle,

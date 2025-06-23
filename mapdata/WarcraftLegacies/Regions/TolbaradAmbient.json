@@ -1,8 +1,8 @@
 {
-  "Left": 9792,
-  "Bottom": -2176,
-  "Right": 12608,
-  "Top": 1568,
+  "Left": 10240,
+  "Bottom": -2144,
+  "Right": 13056,
+  "Top": 1600,
   "Name": "TolbaradAmbient",
   "CreationNumber": 292,
   "AmbientSound": "",
