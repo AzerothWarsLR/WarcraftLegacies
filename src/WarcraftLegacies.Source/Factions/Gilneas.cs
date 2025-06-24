@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using MacroTools.Extensions;
-using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
-using WarcraftLegacies.Source.GameLogic;
-using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Gilneas;
+using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
+using MacroTools.FactionChoices;
+using WarcraftLegacies.Source.GameLogic;
 
 namespace WarcraftLegacies.Source.Factions
 {
@@ -19,6 +18,7 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
     private readonly AllLegendSetup _allLegendSetup;
     private readonly unit _gilneasGate;
+    private readonly PreplacedUnitSystem _preplacedUnitSystem;
 
     /// <inheritdoc />
     public Gilneas(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
@@ -27,6 +27,7 @@ namespace WarcraftLegacies.Source.Factions
     {
       TraditionalTeam = TeamSetup.NorthAlliance;
       _artifactSetup = artifactSetup;
+      _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
       _gilneasGate = preplacedUnitSystem.GetUnit(UNIT_H02K_GREYMANE_S_GATE_CLOSED);
       StartingGold = 200;
@@ -38,7 +39,7 @@ namespace WarcraftLegacies.Source.Factions
 
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(5466, 3210)),
+        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(5466, 3210)),
       };
       Nicknames = new List<string>
       {
@@ -49,16 +50,17 @@ namespace WarcraftLegacies.Source.Factions
         "dog",
         "dogs"
       };
+      ProcessObjectInfo(GilneasObjectInfo.GetAllObjectLimits());
       RegisterFactionDependentInitializer<Legion>(RegisterBookOfMedivhQuest);
       RegisterFactionDependentInitializer<Druids>(RegisterDruidsQuests);
-      ProcessObjectInfo(GilneasObjectInfo.GetAllObjectLimits());
     }
 
     /// <inheritdoc />
     public override void OnRegistered()
     {
-      RegisterQuests();
+      RegisterObjectLevels();
       ReplaceWithFactionUnits(this);
+      RegisterQuests();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
@@ -78,15 +80,23 @@ namespace WarcraftLegacies.Source.Factions
       AddQuest(new QuestCrowley());
       AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
     }
-
+    private void RegisterObjectLevels()
+    {
+      ModAbilityAvailability(ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);
+      ModAbilityAvailability(ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);
+      ModAbilityAvailability(ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
+      ModAbilityAvailability(ABILITY_A0JV_SUMMON_INITIATE_MAGE_DALARAN_GARRISON, -1);
+    }
     private void ReplaceWithFactionUnits(Faction pickedFaction)
     {
       if (pickedFaction == null)
         throw new ArgumentNullException(nameof(pickedFaction), "pickedFaction cannot be null.");
-
+      Console.WriteLine($"I am now swapping buildings");
       FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.SouthshoreUnlock, pickedFaction);
       FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.Gilneas, pickedFaction);
+      Console.WriteLine($"I am now swapping 2");
       FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.Dalaran, pickedFaction);
+      Console.WriteLine($"I am now swapping 3");
     }
 
     private void RegisterBookOfMedivhQuest(Legion legion)

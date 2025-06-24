@@ -12,7 +12,13 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(UNIT_H01R_TOWN_HALL_GILNEAS_T1, Unlimited, UnitCategory.TownHall); //Townhall
       yield return new(UNIT_H023_KEEP_GILNEAS_T2, Unlimited); //Keep
       yield return new(UNIT_H02C_CASTLE_GILNEAS_T3, Unlimited); //Castle
+      yield return new(UNIT_H0A9_MANOR_GILNEAS_OTHER, Unlimited, UnitCategory.GilneasManor); //Greymane Manor
+      yield return new(UNIT_H024_LIGHT_HOUSE_STORMWIND_OTHER, Unlimited, UnitCategory.LightHouse); // Lighthouse
       yield return new(UNIT_H02F_HOUSEHOLD_GILNEAS_FARM, Unlimited, UnitCategory.Farm); //Farm
+      yield return new(UNIT_H01T_INN_LORDAERON_OTHER, Unlimited, UnitCategory.SpecailFarm4); //Farm 2
+      yield return new(UNIT_H05P_DALARAN_BUILDING_DALARAN_OTHER_1, Unlimited, UnitCategory.SpecailFarm1); //farm in Dalaran
+      yield return new(UNIT_H05Q_DALARAN_BUILDING_DALARAN_OTHER_2, Unlimited, UnitCategory.SpecailFarm2); //farm in Dalaran
+      yield return new(UNIT_H05O_DALARAN_BUILDING_DALARAN_OTHER_3, Unlimited, UnitCategory.SpecailFarm3); //farm in Dalaran
       yield return new(UNIT_H02X_ALTAR_OF_KINGS_GILNEAS_ALTAR, Unlimited, UnitCategory.Altar); //Altar
       yield return new(UNIT_H03D_TEMPLE_OF_THE_CURSED_GILNEAS_MAGIC, Unlimited, UnitCategory.Magic); //Temple of the cursed
       yield return new(UNIT_H03E_WORGEN_MANOR_GILNEAS_SPECIALIST, Unlimited,UnitCategory.Specialist); //Worgen Manor
@@ -26,6 +32,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(UNIT_H03B_CANNON_TOWER_GILNEAS_TOWER, Unlimited, UnitCategory.Tower3); //Cannon Tower
       yield return new(UNIT_H052_IMPROVED_GUARD_TOWER_GILNEAS_TOWER, Unlimited, UnitCategory.Tower4); //Improved Guard Tower
       yield return new(UNIT_H04N_IMPROVED_CANNON_TOWER_GILNEAS_TOWER, Unlimited, UnitCategory.Tower5); //Improved Cannon Tower
+      yield return new(UNIT_N03G_VIOLET_TOWER_DALARAN, Unlimited, UnitCategory.Tower6); //Violet Towers
 
       yield return new(UNIT_HPEA_PEASANT_LORDAERON_STORMWIND_WORKER, Unlimited, UnitCategory.Worker); //Worker
       yield return new(UNIT_H04M_CLERIC_GILNEAS, Unlimited, UnitCategory.CasterSupport); //Cleric

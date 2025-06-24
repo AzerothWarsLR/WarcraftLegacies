@@ -16,23 +16,18 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
   /// </summary>
   public sealed class QuestDalarangilneas : QuestData
   {
-    private List<unit> RescueUnits { get;}
+    private readonly List<unit> _rescueUnits;
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="QuestDalarangilneas"/> class.
-    /// </summary>
     public QuestDalarangilneas(Rectangle rescueRect1) : base("Dalaran", "To force the mages of Dalaran to submit to our might we must Secure the outlying regions of the Arathi Highlands, " +
       "The Hinterlands and the Troll city of Jintha'alor", @"ReplaceableTextures\CommandButtons\BTNArcaneCastle.blp")
     {
-      RescueUnits = new List<unit>();
-      RescueUnits = rescueRect1.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+      _rescueUnits = rescueRect1.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
       AddObjective(new ObjectiveUpgrade(UNIT_H02C_CASTLE_GILNEAS_T3, UNIT_H01R_TOWN_HALL_GILNEAS_T1));
       AddObjective(new ObjectiveControlPoint(UNIT_N01A_HINTERLANDS));
       AddObjective(new ObjectiveControlPoint(UNIT_N0EB_JINTHA_ALOR));
       AddObjective(new ObjectiveControlPoint(UNIT_N01Z_ARATHI_HIGHLANDS));
       AddObjective(new ObjectiveExpire(660, "Dalaran"));
       AddObjective(new ObjectiveSelfExists());
-      
     }
 
     /// <inheritdoc/>
@@ -44,7 +39,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in RescueUnits)
+      foreach (var unit in _rescueUnits)
         unit.Rescue(completingFaction.Player);
     }
 
@@ -55,7 +50,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
         ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
         : completingFaction.Player;
 
-      rescuer.RescueGroup(RescueUnits);
+      rescuer.RescueGroup(_rescueUnits);
     }
   }
 }

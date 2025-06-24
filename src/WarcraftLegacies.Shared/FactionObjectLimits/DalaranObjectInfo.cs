@@ -12,8 +12,13 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(UNIT_H065_REFUGE_DALARAN_T1, Unlimited, UnitCategory.TownHall);
       yield return new(UNIT_H066_CONCLAVE_DALARAN_T2, Unlimited); //Conclave
       yield return new(UNIT_H068_OBSERVATORY_DALARAN_T3, Unlimited); //Observatory
+      yield return new(UNIT_H0A9_MANOR_GILNEAS_OTHER, Unlimited, UnitCategory.GilneasManor); //Greymane Manor
+      yield return new(UNIT_H024_LIGHT_HOUSE_STORMWIND_OTHER, Unlimited, UnitCategory.LightHouse); // Lighthouse
       yield return new(UNIT_H063_ARCANE_WELL_DALARAN_FARM, Unlimited, UnitCategory.Farm); //farm
-      yield return new(UNIT_H00I_WINDMILL_LORDAERON_OTHER, Unlimited, UnitCategory.Farm); //farm
+      yield return new(UNIT_H00I_WINDMILL_LORDAERON_OTHER, Unlimited, UnitCategory.SpecailFarm4); //farm
+      yield return new(UNIT_H05P_DALARAN_BUILDING_DALARAN_OTHER_1, Unlimited, UnitCategory.SpecailFarm1); //farm in Dalaran
+      yield return new(UNIT_H05Q_DALARAN_BUILDING_DALARAN_OTHER_2, Unlimited, UnitCategory.SpecailFarm2); //farm in Dalaran
+      yield return new(UNIT_H05O_DALARAN_BUILDING_DALARAN_OTHER_3, Unlimited, UnitCategory.SpecailFarm3); //farm in Dalaran
       yield return new(UNIT_H044_ALTAR_OF_KNOWLEDGE_DALARAN_ALTAR, Unlimited, UnitCategory.Altar); //Altar of Knowledge
       yield return new(UNIT_H069_MILITARY_QUARTER_DALARAN_BARRACKS, Unlimited, UnitCategory.Barracks); //Barracks
       yield return new(UNIT_H02N_LUMBER_MILL_DALARAN_RESEARCH, Unlimited, UnitCategory.Research); //Lumber Mill
@@ -28,12 +33,13 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(UNIT_H07A_IMPROVED_ARCANE_TOWER_DALARAN_TOWER, Unlimited, UnitCategory.Tower3); //Arcane Tower (Improved)
       yield return new(UNIT_NDGT_KIRIN_TOR_TOWER_DALARAN_TOWER, Unlimited, UnitCategory.Tower4); //Dalaran Tower
       yield return new(UNIT_N004_IMPROVED_KIRIN_TOR_TOWER_DALARAN_TOWER, Unlimited, UnitCategory.Tower5); //Dalaran Tower (Improved)
+      yield return new(UNIT_N03G_VIOLET_TOWER_DALARAN, Unlimited, UnitCategory.Tower6); //Violet Towers
 
       yield return new(UNIT_H022_FARMER_DALARAN_WORKER, Unlimited, UnitCategory.Worker); //worker
       yield return new(UNIT_NHYM_HYDROMANCER_DALARAN, Unlimited, UnitCategory.CasterBasic); //Hydromancer
       yield return new(UNIT_H032_BATTLEMAGE_DALARAN, Unlimited, UnitCategory.MeleeBasic); //Battlemage
       yield return new(UNIT_H02D_GEOMANCER_DALARAN, Unlimited, UnitCategory.CasterSupport); //Geomancer
-      yield return new(UNIT_H01I_ARCANIST_DALARAN, Unlimited, UnitCategory.Caster3); //Arcanist
+      yield return new(UNIT_H01I_ARCANIST_DALARAN, Unlimited, UnitCategory.CasterAdvanced); //Arcanist
       yield return new(UNIT_N007_KIRIN_TOR_DALARAN_ELITE, 6, UnitCategory.Elite); //Kirin Tor
       yield return new(UNIT_N096_EARTH_GOLEM_DALARAN, 6, UnitCategory.MeleeSpecial); //Earth Golem
       yield return new(UNIT_N0AK_INITIATE_MAGE_DALARAN, Unlimited, UnitCategory.RangedBasic); //Initiate Mage

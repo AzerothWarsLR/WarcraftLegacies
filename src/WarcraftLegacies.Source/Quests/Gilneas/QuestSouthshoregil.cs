@@ -14,18 +14,16 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
   /// </summary>
   public sealed class QuestSouthshoregil : QuestData
   {
-    private List<unit> RescueUnits { get; }
+    private readonly List<unit> _rescueUnits;
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="QuestSouthshoregil"/> class.
-    /// </summary>
     public QuestSouthshoregil(Rectangle rescueRect) : base("SouthShore", "Placeholder.", @"ReplaceableTextures\CommandButtons\BTNGilneasWizardTower.blp")
     {
-      RescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+      
       AddObjective(new ObjectiveControlPoint(UNIT_N08M_SOUTHSHORE));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
-      
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+
     }
 
     /// <inheritdoc/>
@@ -37,7 +35,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      foreach (var unit in RescueUnits)
+      foreach (var unit in _rescueUnits)
         unit.Rescue(completingFaction.Player);
     }
 
@@ -48,7 +46,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
         ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
         : completingFaction.Player;
 
-      rescuer.RescueGroup(RescueUnits);
+      rescuer.RescueGroup(_rescueUnits);
     }
   }
 }

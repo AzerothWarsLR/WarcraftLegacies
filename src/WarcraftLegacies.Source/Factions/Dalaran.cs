@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
+using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using MacroTools.Libraries;
 using MacroTools.Mechanics;
@@ -66,14 +68,19 @@ namespace WarcraftLegacies.Source.Factions
     public override void OnRegistered()
     {
       RegisterObjectLevels();
+      ReplaceWithFactionUnits(this);
       RegisterQuests();
       RegisterDialogue();
       RegisterProtectors();
-      Regions.Dalaran.CleanupHostileUnits();
       WaygateManager.Setup(UNIT_N0AO_WAY_GATE_DALARAN_SIEGE);
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
-
+    private void ReplaceWithFactionUnits(Faction pickedFaction)
+    {
+      if (pickedFaction == null)
+        throw new ArgumentNullException(nameof(pickedFaction), "pickedFaction cannot be null.");
+      FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.Gilneas, pickedFaction);
+    }
     /// <inheritdoc />
     public override void OnNotPicked()
     {
@@ -99,15 +106,8 @@ namespace WarcraftLegacies.Source.Factions
     {
       var questSouthshore = AddQuest(new QuestSouthshore(Regions.SouthshoreUnlock));
       StartingQuest = questSouthshore;
-      var questShadowfang = AddQuest(new QuestShadowfang(Regions.ShadowfangUnlock));
-      var questDalaran = AddQuest(new QuestDalaran(new[]
-      {
-        Regions.Dalaran
-      }, new QuestData[]
-      {
-        questSouthshore,
-        questShadowfang
-      }));
+      AddQuest(new QuestShadowfang(Regions.ShadowfangUnlock));
+      AddQuest(new QuestDalaran(Regions.Dalaran));
       
       QuestNewGuardian newGuardian = new(_artifactSetup.BookOfMedivh, _allLegendSetup.Dalaran.Jaina,
         _allLegendSetup.Dalaran.Dalaran);
@@ -125,7 +125,7 @@ namespace WarcraftLegacies.Source.Factions
       AddQuest(new QuestJainaSoulGem(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Neutral.Caerdarrow));
       AddQuest(new QuestBlueDragons(_allLegendSetup.Neutral.TheNexus));
       AddQuest(new QuestKarazhan(_allLegendSetup.Neutral.Karazhan));
-      AddQuest(new QuestGreymaneWall(questDalaran, Regions.GilneasUnlock5));
+      AddQuest(new QuestGilneas(Regions.Gilneas));
       AddQuest(new QuestTheramore(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Dalaran.Dalaran,  Regions.Theramore));
 
       AddQuest(crystalGolem);

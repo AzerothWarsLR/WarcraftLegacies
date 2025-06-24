@@ -11,9 +11,13 @@
     TownHall,
     
     Worker,
-    
+
+    GilneasManor,
+
     Shipyard,
-    
+
+    LightHouse,
+
     Farm,
     
     Altar,
@@ -39,7 +43,9 @@
     Tower4,
 
     Tower5,
-    
+
+    Tower6,
+
     Shop,
     
     Teleport,
@@ -47,7 +53,11 @@
     SpecailFarm1,
 
     SpecailFarm2,
-    
+
+    SpecailFarm3,
+
+    SpecailFarm4,
+
     Elite,
     
     CasterSupport,
