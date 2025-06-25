@@ -12,7 +12,6 @@ using WarcraftLegacies.Source.FactionMechanics.Druids;
 using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Druids;
-using WarcraftLegacies.Source.Researches.Ahnqiraj;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;

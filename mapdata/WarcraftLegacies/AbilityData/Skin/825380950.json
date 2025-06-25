@@ -1,6 +1,6 @@
 {
   "OldId": 1852395073,
-  "NewId": 925978710,
+  "NewId": 825380950,
   "Unk": [
     0
   ],
@@ -8,7 +8,7 @@
     {
       "Id": 1835101793,
       "Type": 3,
-      "Value": "Moonfire"
+      "Value": "Sunfire2"
     },
     {
       "Id": 1718840929,
@@ -28,12 +28,12 @@
     {
       "Id": 1952540001,
       "Type": 3,
-      "Value": "Abilities\\Spells\\NightElf\\Starfall\\StarfallTarget.mdl"
+      "Value": "Shining Flare.mdx"
     },
     {
       "Id": 1953653089,
       "Type": 3,
-      "Value": "ReplaceableTextures\\CommandButtons\\BTNStarfall.blp"
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNStaffOfSanctuary.blp"
     },
     {
       "Level": 1,

@@ -1,0 +1,41 @@
+{
+  "OldId": 1685547073,
+  "NewId": 942755926,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Druids)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Summons an immovable ward that heals 1% of a nearby friendly non-mechanical unit\u0027s hit points per second. |nLasts \u003CAhwd,Dur1\u003E seconds."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Moon Beam"
+    },
+    {
+      "Id": 1802728801,
+      "Type": 3,
+      "Value": "vP01"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMoonlight.blp"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Moon Beam"
+    }
+  ]
+}
