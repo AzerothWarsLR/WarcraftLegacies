@@ -18,7 +18,6 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
         /// <summary>
         /// Initializes a new instance of the <see cref="QuestGilneas"/> class.
         /// </summary>
-        /// <param name="prerequisite">This quests must be completed before this one can be completed.</param>
         /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
         public QuestGilneas(Rectangle rescueRect) : base("The Greymane Wall",
           "The Gilneans, fearful of a potential invasion from the frozen north, sealed themselves behind the Greymane Wall. If we are to survive the coming storm, we must force our neighbor back out into the open.",
@@ -55,7 +54,6 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
             foreach (var unit in _rescueUnits)
                unit.Rescue(completingFaction.Player);
                completingFaction.Player?.PlayMusicThematic("war3mapImported\\DalaranTheme.mp3");
-
             AddSpecialEffect(@"Abilities\Spells\Human\DispelMagic\DispelMagicTarget.mdl", GetUnitX(_rescueUnits[0]), GetUnitY(_rescueUnits[0]))
               .SetScale(3)
               .SetLifespan();
