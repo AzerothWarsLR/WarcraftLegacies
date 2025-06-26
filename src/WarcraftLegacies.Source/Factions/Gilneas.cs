@@ -72,11 +72,10 @@ namespace WarcraftLegacies.Source.Factions
 
     private void RegisterQuests()
     {
-      StartingQuest = AddQuest(new QuestSouthshoregil(Regions.SouthshoreUnlock));
-      AddQuest(new QuestDalarangilneas(Regions.Dalaran));
+      StartingQuest = AddQuest(new QuestShadowfangKeep(Regions.ShadowfangUnlock));
+      AddQuest(new QuestSouthshoregil(Regions.SouthshoreUnlock));
       AddQuest(new QuestGilneasCity(Regions.Gilneas));
-      //AddQuest(new QuestKeelHarbor());
-      //AddQuest(new QuestTempestReach())
+      AddQuest(new QuestDalarangilneas(Regions.Dalaran));
       AddQuest(new QuestCrowley());
       AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
     }
@@ -86,17 +85,18 @@ namespace WarcraftLegacies.Source.Factions
       ModAbilityAvailability(ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);
       ModAbilityAvailability(ABILITY_A0K5_DWARVEN_MASONRY_CASTLES_YELLOW, -1);
       ModAbilityAvailability(ABILITY_A0JV_SUMMON_INITIATE_MAGE_DALARAN_GARRISON, -1);
+      ModAbilityAvailability(UPGRADE_R0A7_ESCAPE_TO_THERAMORE_DALARAN, -1);
+      ModAbilityAvailability(ABILITY_A0KT_ARCANE_RECALL_DALARAN, -1);
     }
+
     private void ReplaceWithFactionUnits(Faction pickedFaction)
     {
       if (pickedFaction == null)
         throw new ArgumentNullException(nameof(pickedFaction), "pickedFaction cannot be null.");
-      Console.WriteLine($"I am now swapping buildings");
+      FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.ShadowfangUnlock, pickedFaction);
       FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.SouthshoreUnlock, pickedFaction);
       FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.Gilneas, pickedFaction);
-      Console.WriteLine($"I am now swapping 2");
       FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.Dalaran, pickedFaction);
-      Console.WriteLine($"I am now swapping 3");
     }
 
     private void RegisterBookOfMedivhQuest(Legion legion)

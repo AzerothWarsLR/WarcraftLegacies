@@ -16,12 +16,8 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
   {
     private readonly List<unit> _rescueUnits;
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="QuestShadowfang"/> class.
-    /// </summary>
-    /// <param name="rescueRect">Units in this region will start invulnerable and be rescued when the quest completes.</param>
     public QuestShadowfang(Rectangle rescueRect) : base("Shadows of Silverpine Forest",
-      "The woods of Silverspine are unsafe for travellers, they need to be investigated",
+      "Placeholder",
       @"ReplaceableTextures\CommandButtons\BTNworgen.blp")
     {
       AddObjective(new ObjectiveControlPoint(UNIT_N01D_SILVERPINE_FOREST));
@@ -35,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
       "Shadowfang has been liberated, and its military is now free to assist Dalaran.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Control of all units in Shadowfang";
+    protected override string RewardDescription => "Control of all Buildings and units in Shadowfang";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
@@ -48,7 +44,10 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     }
 
     /// <inheritdoc />
-    protected override void OnComplete(Faction completingFaction) =>
-      completingFaction.Player.RescueGroup(_rescueUnits);
+    protected override void OnComplete(Faction completingFaction)
+    {
+      foreach (var unit in _rescueUnits)
+        unit.Rescue(completingFaction.Player);
+    }
   }
 }

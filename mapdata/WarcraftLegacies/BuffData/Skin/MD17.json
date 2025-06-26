@@ -1,0 +1,24 @@
+{
+  "OldId": 1634693698,
+  "NewId": 925975629,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Roar of the Worgen"
+    },
+    {
+      "Id": 1700951398,
+      "Type": 3,
+      "Value": "This unit is under the affect of Roar of the Worgen its attack damage and armor has been increased."
+    },
+    {
+      "Id": 1953653094,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWolfRageRed.blp"
+    }
+  ]
+}

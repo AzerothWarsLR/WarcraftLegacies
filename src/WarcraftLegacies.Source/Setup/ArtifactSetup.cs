@@ -31,17 +31,17 @@ namespace WarcraftLegacies.Source.Setup
     /// The Crown of Lordaeron.
     /// </summary>
     public Artifact CrownOfLordaeron { get; }
-    
+
     /// <summary>
     /// The Helm of Domination worn by the Lich King.
     /// </summary>
     public Artifact HelmOfDomination { get; }
-    
+
     /// <summary>
     /// Azshara's Scepter.
     /// </summary>
     public Artifact ScepterOfTheQueen { get; }
-    
+
     /// <summary>
     /// Powerful tome left behind by the Guardian Medivh.
     /// </summary>
@@ -56,7 +56,7 @@ namespace WarcraftLegacies.Source.Setup
     /// Horn that can be used to call a bunch of wisps.
     /// </summary>
     public Artifact HornOfCenarius { get; }
-    
+
     /// <summary>
     /// A remnant of the Titan Sargeras.
     /// </summary>
@@ -66,44 +66,43 @@ namespace WarcraftLegacies.Source.Setup
     /// Destroyer of Worlds.
     /// </summary>
     public Artifact ZinRokh { get; }
-    
+
     /// <summary>
     /// Scythe tied to the origin of the Worgen.
     /// </summary>
-    public Artifact ScytheOfElune { get; }
-    
+    public Artifact ScytheOfElune { get; private set; }
+
     /// <summary>
     /// A fragment of Zin'rokh.
     /// </summary>
     public Artifact AzureFragment { get; }
-    
+
     /// <summary>
     /// A fragment of Zin'rokh.
     /// </summary>
     public Artifact EmeraldFragment { get; }
-    
+
     /// <summary>
     /// A fragment of Zin'rokh.
     /// </summary>
     public Artifact RubyFragment { get; }
-    
+
     /// <summary>
     /// A fragment of Zin'rokh.
     /// </summary>
     public Artifact ObsidianFragment { get; }
-    
+
     /// <summary>
     /// A fragment of Zin'rokh.
     /// </summary>
     public Artifact BronzeFragment { get; }
-    
+
     public Artifact SunwellVial { get; set; }
-    
-    
+
     /// <summary>
     /// Sets up <see cref="ArtifactSetup"/>.
     /// </summary>
-    public ArtifactSetup(PreplacedUnitSystem preplacedUnitSystem)
+    public ArtifactSetup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup? allLegendSetup)
     {
       CrownOfStormwind = new Artifact(CreateItem(FourCC("I002"), DummyX, DummyY));
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n021")), CrownOfStormwind.Item); //Hogger
@@ -194,6 +193,14 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddAbility(sunwell, Artifact.ArtifactHolderAbilId);
       UnitAddItem(sunwell, SunwellVial.Item);
       ArtifactManager.Register(SunwellVial);
+    }
+
+    /// <summary>
+    /// Initializes dependencies that would cause circular references in the constructor (used in a quest and preplaced)
+    /// </summary>
+    public void Initialize(AllLegendSetup allLegendSetup)
+    {
+      ScytheOfElune = allLegendSetup.Gilneas.ScytheOfElune;
     }
   }
 }

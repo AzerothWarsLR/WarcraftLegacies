@@ -16,13 +16,14 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
   {
     private readonly List<unit> _rescueUnits;
 
-    public QuestSouthshoregil(Rectangle rescueRect) : base("SouthShore", "Placeholder.", @"ReplaceableTextures\CommandButtons\BTNGilneasWizardTower.blp")
+    public QuestSouthshoregil(Rectangle rescueRect) : base("SouthShore", 
+      "Placeholder.",
+      @"ReplaceableTextures\CommandButtons\BTNGilneasWizardTower.blp")
     {
-      
       AddObjective(new ObjectiveControlPoint(UNIT_N08M_SOUTHSHORE));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
 
     }
 

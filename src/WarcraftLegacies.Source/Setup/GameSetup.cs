@@ -26,14 +26,15 @@ namespace WarcraftLegacies.Source.Setup
     {
       UnitTypeConfig.Setup();
       SaveManager.Initialize();
-      KeyboardSetup.InitializeKeyboard(); 
+      KeyboardSetup.InitializeKeyboard();
       DisplayIntroText.Setup(25);
       CinematicMode.Setup(59);
       SetupControlPointManager();
       var preplacedUnitSystem = new PreplacedUnitSystem();
       SoundLibrary.Setup();
-      var artifactSetup = new ArtifactSetup(preplacedUnitSystem);
+      var artifactSetup = new ArtifactSetup(preplacedUnitSystem, null);
       var allLegendSetup = new AllLegendSetup(preplacedUnitSystem, artifactSetup);
+      artifactSetup.Initialize(allLegendSetup);
       allLegendSetup.RegisterLegends(preplacedUnitSystem);
       ShoreSetup.Setup();
       ControlPointSetup.Setup();
@@ -52,12 +53,12 @@ namespace WarcraftLegacies.Source.Setup
       HintConfig.Setup();
       QuestMenuSetup.Setup();
       GameTime.Start();
-      
+
       MapFlagSetup.Setup();
       InfoQuests.Setup();
       DestructibleSetup.Setup(preplacedUnitSystem);
       PatronSystem.Setup(preplacedUnitSystem);
-      var gameModeManager =new GameModeManager(new IGameMode[]
+      var gameModeManager = new GameModeManager(new IGameMode[]
       {
         new ClosedAlliance(),
         new OpenAlliance(),

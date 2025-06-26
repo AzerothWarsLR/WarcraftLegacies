@@ -1,5 +1,6 @@
 ﻿using MacroTools.LegendSystem;
 using MacroTools.Systems;
+using MacroTools.ArtifactSystem;
 
 namespace WarcraftLegacies.Source.Setup.Legends
 {
@@ -9,27 +10,36 @@ namespace WarcraftLegacies.Source.Setup.Legends
   public sealed class LegendGilneas
   {
     public LegendaryHero Tess { get; }
-    
+
     public LegendaryHero Genn { get; }
-    
+
     public LegendaryHero Darius { get; }
-    
+
     public LegendaryHero Goldrinn { get; }
-    
+
     public Capital GilneasCastle { get; }
+
+    /// <summary>
+    /// The Scythe of Elune artifact.
+    /// </summary>
+    public Artifact ScytheOfElune { get; }
 
     /// <summary>
     /// Sets up <see cref="LegendGilneas"/>.
     /// </summary>
     public LegendGilneas(PreplacedUnitSystem preplacedUnitSystem)
     {
+      ScytheOfElune = new Artifact(CreateItem(ITEM_I00R_SCYTHE_OF_ELUNE,
+        Regions.ArtifactDummyInstance.Center.X,
+        Regions.ArtifactDummyInstance.Center.Y));
+
       Tess = new LegendaryHero("Tess Greymane")
       {
         UnitType = UNIT_TGGN_PRINCESS_OF_GILNEAS_GILNEAS,
         StartingArtifacts = new()
         {
-          new(CreateItem(ITEM_I00R_SCYTHE_OF_ELUNE, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
-        }
+          new Artifact(CreateItem(ITEM_I00R_SCYTHE_OF_ELUNE,Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+    }
       };
 
       Goldrinn = new LegendaryHero("Goldrinn")
@@ -59,6 +69,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
     public void RegisterLegends()
     {
+      ArtifactManager.Register(ScytheOfElune);
       LegendaryHeroManager.Register(Genn);
       LegendaryHeroManager.Register(Darius);
       LegendaryHeroManager.Register(Tess);

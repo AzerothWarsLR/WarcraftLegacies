@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     /// Initializes a new instance of the <see cref="QuestGilneasCity"/> class.
     /// </summary>
     public QuestGilneasCity(Rectangle rescueRect1) : base("Gilneas City",
-      "Before the first war with the orcs southern Lordaeron was under our control, we must reclaim it.",
+      "The Great Kingdom of Gilneas has been reduced to its land behind the Greymane Wall, We must reclaim our lost land to regain our strength.",
       @"ReplaceableTextures\CommandButtons\BTNGilneasCathedral.blp")
     {
       _rescueUnits = new List<unit>();

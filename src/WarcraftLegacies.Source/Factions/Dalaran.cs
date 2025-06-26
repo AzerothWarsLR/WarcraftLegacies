@@ -104,11 +104,11 @@ namespace WarcraftLegacies.Source.Factions
     
     private void RegisterQuests()
     {
-      var questSouthshore = AddQuest(new QuestSouthshore(Regions.SouthshoreUnlock));
-      StartingQuest = questSouthshore;
-      AddQuest(new QuestShadowfang(Regions.ShadowfangUnlock));
+      StartingQuest = AddQuest(new QuestShadowfang(Regions.ShadowfangUnlock));
+      AddQuest(new QuestSouthshore(Regions.SouthshoreUnlock));
       AddQuest(new QuestDalaran(Regions.Dalaran));
-      
+      AddQuest(new QuestGilneas(Regions.Gilneas));
+
       QuestNewGuardian newGuardian = new(_artifactSetup.BookOfMedivh, _allLegendSetup.Dalaran.Jaina,
         _allLegendSetup.Dalaran.Dalaran);
       QuestAegwynn aegwynn = new(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Dalaran.Antonidas);
@@ -125,7 +125,6 @@ namespace WarcraftLegacies.Source.Factions
       AddQuest(new QuestJainaSoulGem(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Neutral.Caerdarrow));
       AddQuest(new QuestBlueDragons(_allLegendSetup.Neutral.TheNexus));
       AddQuest(new QuestKarazhan(_allLegendSetup.Neutral.Karazhan));
-      AddQuest(new QuestGilneas(Regions.Gilneas));
       AddQuest(new QuestTheramore(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Dalaran.Dalaran,  Regions.Theramore));
 
       AddQuest(crystalGolem);
