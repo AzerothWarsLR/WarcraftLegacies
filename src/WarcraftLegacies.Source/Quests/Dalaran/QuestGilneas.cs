@@ -53,14 +53,6 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
         {
             foreach (var unit in _rescueUnits)
                unit.Rescue(completingFaction.Player);
-               completingFaction.Player?.PlayMusicThematic("war3mapImported\\DalaranTheme.mp3");
-            AddSpecialEffect(@"Abilities\Spells\Human\DispelMagic\DispelMagicTarget.mdl", GetUnitX(_rescueUnits[0]), GetUnitY(_rescueUnits[0]))
-              .SetScale(3)
-              .SetLifespan();
-
-            AddSpecialEffect(@"Units\NightElf\Wisp\WispExplode.mdl", GetUnitX(_rescueUnits[0]), GetUnitY(_rescueUnits[0]))
-              .SetScale(3)
-              .SetLifespan();
         }
     }
 }

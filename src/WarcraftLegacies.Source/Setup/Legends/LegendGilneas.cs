@@ -38,8 +38,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
         UnitType = UNIT_TGGN_PRINCESS_OF_GILNEAS_GILNEAS,
         StartingArtifacts = new()
         {
-          new Artifact(CreateItem(ITEM_I00R_SCYTHE_OF_ELUNE,Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
-    }
+          ScytheOfElune
+        }
       };
 
       Goldrinn = new LegendaryHero("Goldrinn")
