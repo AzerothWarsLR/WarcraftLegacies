@@ -19,6 +19,11 @@
       "Id": 1953653094,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\BTNWolfRageRed.blp"
+    },
+    {
+      "Id": 1885959270,
+      "Type": 3,
+      "Value": "Roar of the Worgen"
     }
   ]
 }

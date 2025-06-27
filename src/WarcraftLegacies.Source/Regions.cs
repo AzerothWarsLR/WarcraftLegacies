@@ -209,7 +209,7 @@ public static class Regions
 	public static Rectangle NethergardeUnlock { get; set; } = new Rectangle(16576f, -18400f, 18688f, -16960f);
 	public static Rectangle Netherstorm { get; set; } = new Rectangle(-736f, -23616f, 3488f, -18432f);
 	public static Rectangle Northern_Kali_Ships { get; set; } = new Rectangle(-17760f, -800f, -9120f, 9376f);
-	public static Rectangle Northrend_Ambiance { get; set; } = new Rectangle(-10688f, 13120f, 8608f, 24736f);
+	public static Rectangle Northrend_Ambiance { get; set; } = new Rectangle(-10656f, 12192f, 8640f, 23808f);
 	public static Rectangle Northrend_Blocker_1 { get; set; } = new Rectangle(5376f, 13568f, 6016f, 13952f);
 	public static Rectangle Northrend_Blocker_2 { get; set; } = new Rectangle(5440f, 10880f, 6688f, 11488f);
 	public static Rectangle Northrend_ships { get; set; } = new Rectangle(-9216f, 19680f, 6048f, 24992f);

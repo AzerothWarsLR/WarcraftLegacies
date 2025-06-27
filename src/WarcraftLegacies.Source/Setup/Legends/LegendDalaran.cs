@@ -57,7 +57,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
       Antonidas = new LegendaryHero("Antonidas")
       {
         UnitType = FourCC("Hant"),
-        StartingXp = 1000,
+        StartingXp = 2800,
         DeathMessage =
           "Archmage Antonidas has been cut down, his vast knowledge forever lost with his death. The mages of Dalaran have lost their brightest mind."
       };
