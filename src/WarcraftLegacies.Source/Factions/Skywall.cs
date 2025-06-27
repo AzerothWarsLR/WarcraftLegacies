@@ -10,6 +10,7 @@ using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.Skywall;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Spells.WhimOfTheWinds;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions
@@ -162,6 +163,12 @@ namespace WarcraftLegacies.Source.Factions
         TargetType = SpellTargetType.Point
       };
       SpellSystem.Register(massEnsnare);
+      
+      var whimOfTheWinds = new WhimOfTheWinds(ABILITY_WOTW_WHIM_OF_THE_WINDS_SKYWALL);
+      SpellSystem.Register(whimOfTheWinds);
+
+
+
 
     }
   }
