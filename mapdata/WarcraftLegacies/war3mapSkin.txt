@@ -43,9 +43,9 @@ ARMORTIP_NONE_V0C="Normal: |cffffff00100%|r|NMagic: |cffffff00100%|r|nSpell: |cf
 "
 ARMORTIP_NONE_V0M="Normal: |cffffff00100%|r|NMagic: |cffffff00100%|r|nSpell: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r|NPierce: |cffff0000150%|r|NSiege: |cffff0000150%|r
 "
-ARMORTIP_NORMAL="Siege: |cff00ff0050%|r|NPierce: |cff00ff0075%|r|NMagic: |cff00ff0075%|r|NSpell: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r|NNormal: |cffff0000150%|r
+ARMORTIP_NORMAL="Medium: |cff00ff0030% |r|NUnarmored: |cff00ff0030%|r|NLight: |cff00ff0030%|r|r|NHeavy: |cff00ff0030%|r|NHero: |cff00ff0030%|r|NSeige |cffff0000400%|r
 "
-ARMORTIP_NORMAL_V0M="Medium: |cffff000030%|r|NUnarmored: |cffff000030%|r|NLight: |cffff000030%|r|r|NHeavy: |cffff000030%|r|NHero: |cffff000030%|r|NSeige:|cff00ff00400%|r
+ARMORTIP_NORMAL_V0M="Medium: |cff00ff0030% |r|NUnarmored: |cff00ff0030%|r|NLight: |cff00ff0030%|r|r|NHeavy: |cff00ff0030%|r|NHero: |cff00ff0030%|r|NSeige |cffff0000400%|r
 "
 ARMORTIP_SMALL="Normal: |cffffff00100%|r|NSiege: |cffffff00100%|r|NSpell: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r|NMagic: |cffff0000125%|r|NPierce: |cffff0000200%|r
 "
