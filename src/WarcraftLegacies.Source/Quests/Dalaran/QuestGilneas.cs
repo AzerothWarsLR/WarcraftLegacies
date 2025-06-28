@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
 
         /// <inheritdoc/>
         public override string RewardFlavour =>
-          $"smashes down the gate to Gilneas. What lies behind the Greymane Wall reveals a tragic history: the Gilneans have already fallen to the Worgen curse. There is nothing more to be done, other than to put them out of their misery.";
+          $" Gilneas notcing our regained might in Southern-Lordaeron has decided to submit to our might to defend Lordaeron from the iminent Scourge invasion.";
 
         /// <inheritdoc/>
         protected override string RewardDescription => "Gain control of Gilneas";

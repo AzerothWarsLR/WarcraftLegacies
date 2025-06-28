@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     private readonly List<unit> _rescueUnits;
 
     public QuestShadowfangKeep(Rectangle rescueRect) : base("Shadowfang Keep", 
-      "Placeholder.",
+      "Shadowfang and Ambermill are under seige by hostile creatures we must clear them out so that they can help us reclaim our lost lands.",
       @"ReplaceableTextures\CommandButtons\BTNworgen.blp")
     {
       AddObjective(new ObjectiveControlPoint(UNIT_N01D_SILVERPINE_FOREST));

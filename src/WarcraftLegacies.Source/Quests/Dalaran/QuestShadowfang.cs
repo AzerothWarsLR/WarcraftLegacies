@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     private readonly List<unit> _rescueUnits;
 
     public QuestShadowfang(Rectangle rescueRect) : base("Shadows of Silverpine Forest",
-      "Placeholder",
+      "Shadowfang and Ambermill are under seige by hostile creatures we must clear them out so that they can help us secure our lands",
       @"ReplaceableTextures\CommandButtons\BTNworgen.blp")
     {
       AddObjective(new ObjectiveControlPoint(UNIT_N01D_SILVERPINE_FOREST));
@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
 
     /// <inheritdoc />
     public override string RewardFlavour =>
-      "Shadowfang has been liberated, and its military is now free to assist Dalaran.";
+      "Shadowfang and Ambermill has been liberated, and its military is now free to assist Dalaran.";
 
     /// <inheritdoc />
     protected override string RewardDescription => "Control of all Buildings and units in Shadowfang";

@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     }
 
     /// <inheritdoc/>
-    public override string RewardFlavour => "The mages of Dalaran has been subjegated.";
+    public override string RewardFlavour => "The mages of Dalaran has decided to submit to our might after noticing our resurgent control of Southern-Lordaeron to help defeat the Scourge.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Control of all buildings in Dalaran.";
