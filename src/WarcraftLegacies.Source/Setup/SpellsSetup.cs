@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.Setup
       var thunderClapGil = new Stomp(ABILITY_MD13_THUNDER_CLAP_GILNEAS_GREY_GUARD)
       {
         Radius = 300,
-        DamageBase = 40,
+        DamageBase = 55,
         DurationBase = 1,
         StunAbilityId = ABILITY_MD14_THUNDER_CLAP_DUMMY_GREY_GUARD,
         StunOrderId = OrderId("cripple"),

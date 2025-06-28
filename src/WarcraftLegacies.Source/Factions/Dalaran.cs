@@ -83,10 +83,6 @@ namespace WarcraftLegacies.Source.Factions
     /// <inheritdoc />
     public override void OnNotPicked()
     {
-      Regions.Dalaran.CleanupNeutralPassiveUnits();
-      Regions.ShadowfangUnlock.CleanupNeutralPassiveUnits();
-      Regions.SouthshoreUnlock.CleanupNeutralPassiveUnits();
-      Regions.DalaStartPos.CleanupNeutralPassiveUnits();
       base.OnNotPicked();
     }
       
