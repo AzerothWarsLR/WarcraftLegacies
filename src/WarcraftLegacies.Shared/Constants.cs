@@ -2147,7 +2147,6 @@ public static class Constants
 	public const int BUFF_B01T_CORROSION_AURA = 1110454612;
 	public const int BUFF_B01U_BLAZE_OF_BURDEN = 1110454613;
 	public const int BUFF_B01W_MIND_SHIELD = 1110454615;
-	public const int BUFF_B01X_MIND_FLAY = 1110454616;
 	public const int BUFF_B01Y_DRAGON_FORM = 1110454617;
 	public const int BUFF_B01Z_DEMONIC_POSSESSION = 1110454618;
 	public const int BUFF_B020_DEMONIC_POSSESSION = 1110454832;
@@ -2522,6 +2521,7 @@ public static class Constants
 	public const int BUFF_ZBMA_MATURING_INCUBATION = 1514294593;
 	public const int BUFF_DBTP_DUMMY_BUFF = 1145197648;
 	public const int BUFF_CRWM_DUMMY_DEBUFF = 1129469773;
+	public const int BUFF_B01X_MIND_FLAY = 1110454616;
 	public const int ITEM_AMRC_AMULET_OF_RECALL = 1634562659;
 	public const int ITEM_ARSH_SHROUD_OF_NOZDORMU = 1634890600;
 	public const int ITEM_AZHR_HEART_OF_ASZUNE = 1635412082;

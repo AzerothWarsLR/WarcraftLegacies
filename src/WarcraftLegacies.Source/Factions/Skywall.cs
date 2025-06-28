@@ -151,9 +151,7 @@ namespace WarcraftLegacies.Source.Factions
         CastFilter = CastFilters.IsTargetEnemyAndAlive
       };
       SpellSystem.Register(stormSurge);
-
-
-
+      
       var massEnsnare = new MassAnySpell(ABILITY_A01N_MASS_ENSNARE_SKYWALL)
       {
         DummyAbilityId = ABILITY_A01V_MASS_ENSNARE_SKYWALL_DUMMY,
@@ -171,9 +169,7 @@ namespace WarcraftLegacies.Source.Factions
       var warpedMalediction = new WarpedMalediction(ABILITY_WMTP_WARPED_MALEDICTION_SKYWALL);
       SpellSystem.Register(warpedMalediction);
 
-
-
-
+      
     }
   }
 }

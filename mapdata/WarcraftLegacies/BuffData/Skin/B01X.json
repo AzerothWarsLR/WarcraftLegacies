@@ -13,12 +13,12 @@
     {
       "Id": 1885959270,
       "Type": 3,
-      "Value": "Mind Flay"
+      "Value": "|c00FF0000Mind Flay|r"
     },
     {
       "Id": 1700951398,
       "Type": 3,
-      "Value": "This unit\u0027s Mind has been Flayed. Its mana is being reduced and is taking damage over time."
+      "Value": "This unit has been Mind Flayed. Its mana is being reduced and is taking damage over time."
     },
     {
       "Id": 1952543846,

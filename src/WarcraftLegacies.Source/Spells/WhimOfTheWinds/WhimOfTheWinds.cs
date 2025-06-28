@@ -1,5 +1,4 @@
-﻿using System;
-using MacroTools.SpellSystem;
+﻿using MacroTools.SpellSystem;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 
@@ -35,39 +34,23 @@ namespace WarcraftLegacies.Source.Spells.WhimOfTheWinds
 
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      try
+      if (!CastFilters.IsTargetAllyAndAlive(caster, target))
+        return;
+
+      foreach (var buff in _possibleBuffs)
       {
-        if (!CastFilters.IsTargetAllyAndAlive(caster, target))
-        {
-          Console.WriteLine("WhimOfTheWinds: Target is not a valid ally");
+        if (GetUnitAbilityLevel(target, buff.AbilityId) > 0)
           return;
-        }
-        
-        foreach (var buff in _possibleBuffs)
-        {
-          if (GetUnitAbilityLevel(target, buff.AbilityId) > 0)
-          {
-            Console.WriteLine($"WhimOfTheWinds: Target already has {buff.Name}");
-            return;
-          }
-        }
-
-        var randomValue = GetRandomReal(0, 1);
-        var randomIndex = (int)(randomValue * _possibleBuffs.Length);
-        var selectedBuff = _possibleBuffs[randomIndex];
-
-        Console.WriteLine(
-          $"WhimOfTheWinds: Selected {selectedBuff.Name} (index {randomIndex}, random value {randomValue})");
-
-        BuffSystem.Add(new WhimOfTheWindsBuff(caster, target, selectedBuff.AbilityId, selectedBuff.OrderId)
-        {
-          Active = true
-        });
       }
-      catch (Exception ex)
+
+      var randomValue = GetRandomReal(0, 1);
+      var randomIndex = (int)(randomValue * _possibleBuffs.Length);
+      var selectedBuff = _possibleBuffs[randomIndex];
+
+      BuffSystem.Add(new WhimOfTheWindsBuff(caster, target, selectedBuff.AbilityId, selectedBuff.OrderId)
       {
-        Console.WriteLine($"Failed to cast {nameof(WhimOfTheWinds)}: {ex}");
-      }
+        Active = true
+      });
     }
   }
 }

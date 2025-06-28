@@ -39,7 +39,6 @@ namespace WarcraftLegacies.Source.Spells.WarpedMalediction
       {
         if (!CastFilters.IsTargetEnemyAndAlive(caster, target))
         {
-          Console.WriteLine("WarpedMalediction: Target is not a valid enemy");
           return;
         }
         
@@ -47,7 +46,6 @@ namespace WarcraftLegacies.Source.Spells.WarpedMalediction
         {
           if (GetUnitAbilityLevel(target, buff.AbilityId) > 0)
           {
-            Console.WriteLine($"WarpedMalediction: Target already has {buff.Name}");
             return;
           }
         }
@@ -55,9 +53,6 @@ namespace WarcraftLegacies.Source.Spells.WarpedMalediction
         var randomValue = GetRandomReal(0, 1);
         var randomIndex = (int)(randomValue * _possibleBuffs.Length);
         var selectedBuff = _possibleBuffs[randomIndex];
-
-        Console.WriteLine(
-          $"WarpedMalediction: Selected {selectedBuff.Name} (index {randomIndex}, random value {randomValue})");
 
         BuffSystem.Add(new WarpedMaledictionBuff(caster, target, selectedBuff.AbilityId, selectedBuff.OrderId)
         {
