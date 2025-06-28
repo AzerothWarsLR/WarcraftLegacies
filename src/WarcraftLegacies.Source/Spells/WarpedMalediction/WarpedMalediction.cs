@@ -27,9 +27,9 @@ namespace WarcraftLegacies.Source.Spells.WarpedMalediction
     {
       _possibleBuffs = new[]
       {
-        new BuffSpell(ABILITY_FAWW_FROST_ARMOR_WHIM_OF_THE_WINDS, ORDER_FROST_ARMOR, "Frost Armor"),
-        new BuffSpell(ABILITY_IFWW_INNER_FIRE_WHIM_OF_THE_WINDS, ORDER_INNER_FIRE, "Inner Fire"),
-        new BuffSpell(ABILITY_BLWW_BLOODLUST_WHIM_OF_THE_WINDS, ORDER_BLOODLUST, "Bloodlust")
+        new BuffSpell(ABILITY_WMMF_MIND_FLAY_WARPED_MALEDICTION,ORDER_REJUVINATION, "Mind Flay"),
+        new BuffSpell(ABILITY_WMSB_SOUL_BURN_WARPED_MALEDICTION, ORDER_SOUL_BURN, "Soul Burn"),
+        new BuffSpell(ABILITY_WMCR_CURSE_WARPED_MALEDICTION, ORDER_CURSE, "Curse")
       };
     }
 
@@ -37,9 +37,9 @@ namespace WarcraftLegacies.Source.Spells.WarpedMalediction
     {
       try
       {
-        if (!CastFilters.IsTargetAllyAndAlive(caster, target))
+        if (!CastFilters.IsTargetEnemyAndAlive(caster, target))
         {
-          Console.WriteLine("WhimOfTheWinds: Target is not a valid ally");
+          Console.WriteLine("WarpedMalediction: Target is not a valid enemy");
           return;
         }
         
@@ -47,7 +47,7 @@ namespace WarcraftLegacies.Source.Spells.WarpedMalediction
         {
           if (GetUnitAbilityLevel(target, buff.AbilityId) > 0)
           {
-            Console.WriteLine($"WhimOfTheWinds: Target already has {buff.Name}");
+            Console.WriteLine($"WarpedMalediction: Target already has {buff.Name}");
             return;
           }
         }
@@ -57,16 +57,16 @@ namespace WarcraftLegacies.Source.Spells.WarpedMalediction
         var selectedBuff = _possibleBuffs[randomIndex];
 
         Console.WriteLine(
-          $"WhimOfTheWinds: Selected {selectedBuff.Name} (index {randomIndex}, random value {randomValue})");
+          $"WarpedMalediction: Selected {selectedBuff.Name} (index {randomIndex}, random value {randomValue})");
 
-        BuffSystem.Add(new WhimOfTheWindsBuff(caster, target, selectedBuff.AbilityId, selectedBuff.OrderId)
+        BuffSystem.Add(new WarpedMaledictionBuff(caster, target, selectedBuff.AbilityId, selectedBuff.OrderId)
         {
           Active = true
         });
       }
       catch (Exception ex)
       {
-        Console.WriteLine($"Failed to cast {nameof(WhimOfTheWinds)}: {ex}");
+        Console.WriteLine($"Failed to cast {nameof(WarpedMalediction)}: {ex}");
       }
     }
   }
