@@ -189,13 +189,6 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("hmtm"), new Point(15109, -895)), tempArtifact.Item);
       ArtifactManager.Register(tempArtifact);
 
-      ScytheOfElune = new Artifact(CreateItem(ITEM_I00R_SCYTHE_OF_ELUNE, DummyX, DummyX));
-      var worgenBloodShamanHero = preplacedUnitSystem.GetUnit(UNIT_O038_WORGEN_BLOOD_SHAMAN_WORGEN_HERO,
-        new Point(5410.7f, 2499.0f));
-      UnitAddAbility(worgenBloodShamanHero, Artifact.ArtifactHolderAbilId);
-      UnitAddItem(worgenBloodShamanHero, ScytheOfElune.Item);
-      ArtifactManager.Register(ScytheOfElune);
-
       SunwellVial = new Artifact(CreateItem(ITEM_I018_VIAL_OF_THE_SUNWELL, DummyX, DummyX));
       var sunwell = preplacedUnitSystem.GetUnit(UNIT_N001_THE_SUNWELL_QUEL_THALAS_OTHER);
       UnitAddAbility(sunwell, Artifact.ArtifactHolderAbilId);
