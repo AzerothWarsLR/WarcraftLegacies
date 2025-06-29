@@ -68,11 +68,6 @@ namespace WarcraftLegacies.Source.Setup
     public Artifact ZinRokh { get; }
 
     /// <summary>
-    /// Scythe tied to the origin of the Worgen.
-    /// </summary>
-    public Artifact ScytheOfElune { get; }
-
-    /// <summary>
     /// A fragment of Zin'rokh.
     /// </summary>
     public Artifact AzureFragment { get; }

@@ -108,7 +108,7 @@ namespace WarcraftLegacies.Source.Factions
     
     private void RegisterDruidsQuests(Druids druids)
     {
-      AddQuest(new QuestGoldrinn(_allLegendSetup.Gilneas.Tess, _allLegendSetup.Gilneas.Goldrinn, _artifactSetup.ScytheOfElune, druids));
+      AddQuest(new QuestGoldrinn(_allLegendSetup.Gilneas.Tess, _allLegendSetup.Gilneas.Goldrinn, druids));
     }
   }
 }

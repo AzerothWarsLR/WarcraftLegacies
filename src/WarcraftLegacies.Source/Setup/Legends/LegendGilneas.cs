@@ -18,12 +18,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
     public LegendaryHero Goldrinn { get; }
 
     public Capital GilneasCastle { get; }
-
-    /// <summary>
-    /// The Scythe of Elune artifact.
-    /// </summary>
-    public Artifact ScytheOfElune { get; }
-
     /// <summary>
     /// Sets up <see cref="LegendGilneas"/>.
     /// </summary>
@@ -66,7 +60,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
 
     public void RegisterLegends()
     {
-      ArtifactManager.Register(ScytheOfElune);
       LegendaryHeroManager.Register(Genn);
       LegendaryHeroManager.Register(Darius);
       LegendaryHeroManager.Register(Tess);
