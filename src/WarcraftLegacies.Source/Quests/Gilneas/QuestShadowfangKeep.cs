@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     private readonly List<unit> _rescueUnits;
 
     public QuestShadowfangKeep(Rectangle rescueRect) : base("Shadowfang Keep", 
-      "Shadowfang and Ambermill are under seige by hostile creatures we must clear them out so that they can help us reclaim our lost lands.",
+      "Shadowfang and Ambermill are under seige by hostile creatures we must clear them out so that they can help us secure our lost lands.",
       @"ReplaceableTextures\CommandButtons\BTNworgen.blp")
     {
       AddObjective(new ObjectiveControlPoint(UNIT_N01D_SILVERPINE_FOREST));
@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     }
 
     /// <inheritdoc/>
-    public override string RewardFlavour => "Shadowfang Keep and Ambermill has been liberated.";
+    public override string RewardFlavour => "Shadowfang and Ambermill has been liberated, and its military is now free to assist Gilneas.";
 
     /// <inheritdoc/>
     protected override string RewardDescription => "Control of all buildings and units in Shadowfang.";

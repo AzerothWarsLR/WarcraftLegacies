@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
     private readonly List<unit> _rescueUnits;
 
     public QuestSouthshoregil(Rectangle rescueRect) : base("SouthShore", 
-      "Placeholder.",
+      "Southshore a great port city in Southern Lordaeron is under seige by murlocks if we clear them out they will rally to our cause.",
       @"ReplaceableTextures\CommandButtons\BTNGilneasWizardTower.blp")
     {
       AddObjective(new ObjectiveControlPoint(UNIT_N08M_SOUTHSHORE));

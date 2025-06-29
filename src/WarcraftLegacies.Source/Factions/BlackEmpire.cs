@@ -134,7 +134,7 @@ namespace WarcraftLegacies.Source.Factions
         DummyAbilityId = ABILITY_ACAM_ANTI_MAGIC_SHELL_BLACK_EMPIRE,
         DummyAbilityOrderId = OrderId("antimagicshell"),
         Radius = 200,
-        CastFilter = CastFilters.IsTargetAllyAndAlive,
+        CastFilter = CastFilters.IsTargetOrganicAndAlive,
         TargetType = SpellTargetType.None
       };
       SpellSystem.Register(shadowVeilSpell);
