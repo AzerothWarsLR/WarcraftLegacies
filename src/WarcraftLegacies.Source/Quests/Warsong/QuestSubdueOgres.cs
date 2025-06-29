@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Quests.Warsong
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _grom = grom;
       PillageGoldReward = 900;
-      PillageExperienceReward = 6000;
+      PillageExperienceReward = 3000;
     }
 
     public override string RewardFlavour =>

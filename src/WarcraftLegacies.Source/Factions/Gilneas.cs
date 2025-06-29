@@ -77,6 +77,7 @@ namespace WarcraftLegacies.Source.Factions
       AddQuest(new QuestGilneasCity(Regions.Gilneas));
       AddQuest(new QuestDalarangilneas(Regions.Dalaran));
       AddQuest(new QuestCrowley());
+      AddQuest(new QuestGoldrinn());
       AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
     }
     private void RegisterObjectLevels()
