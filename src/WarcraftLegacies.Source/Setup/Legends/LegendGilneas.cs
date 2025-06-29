@@ -27,18 +27,15 @@ namespace WarcraftLegacies.Source.Setup.Legends
     /// <summary>
     /// Sets up <see cref="LegendGilneas"/>.
     /// </summary>
+    /// 
     public LegendGilneas(PreplacedUnitSystem preplacedUnitSystem)
     {
-      ScytheOfElune = new Artifact(CreateItem(ITEM_I00R_SCYTHE_OF_ELUNE,
-        Regions.ArtifactDummyInstance.Center.X,
-        Regions.ArtifactDummyInstance.Center.Y));
-
       Tess = new LegendaryHero("Tess Greymane")
       {
         UnitType = UNIT_TGGN_PRINCESS_OF_GILNEAS_GILNEAS,
         StartingArtifacts = new()
-        {
-          ScytheOfElune
+        { 
+          new(CreateItem(ITEM_I00R_SCYTHE_OF_ELUNE, Regions.ArtifactDummyInstance.Center.X,Regions.ArtifactDummyInstance.Center.Y))
         }
       };
 

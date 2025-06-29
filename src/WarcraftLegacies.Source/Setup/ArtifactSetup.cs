@@ -70,7 +70,7 @@ namespace WarcraftLegacies.Source.Setup
     /// <summary>
     /// Scythe tied to the origin of the Worgen.
     /// </summary>
-    public Artifact ScytheOfElune { get; private set; }
+    public Artifact ScytheOfElune { get; }
 
     /// <summary>
     /// A fragment of Zin'rokh.
@@ -99,10 +99,11 @@ namespace WarcraftLegacies.Source.Setup
 
     public Artifact SunwellVial { get; set; }
 
+
     /// <summary>
     /// Sets up <see cref="ArtifactSetup"/>.
     /// </summary>
-    public ArtifactSetup(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup? allLegendSetup)
+    public ArtifactSetup(PreplacedUnitSystem preplacedUnitSystem)
     {
       CrownOfStormwind = new Artifact(CreateItem(FourCC("I002"), DummyX, DummyY));
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n021")), CrownOfStormwind.Item); //Hogger
@@ -188,19 +189,18 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("hmtm"), new Point(15109, -895)), tempArtifact.Item);
       ArtifactManager.Register(tempArtifact);
 
+      ScytheOfElune = new Artifact(CreateItem(ITEM_I00R_SCYTHE_OF_ELUNE, DummyX, DummyX));
+      var worgenBloodShamanHero = preplacedUnitSystem.GetUnit(UNIT_O038_WORGEN_BLOOD_SHAMAN_WORGEN_HERO,
+        new Point(5410.7f, 2499.0f));
+      UnitAddAbility(worgenBloodShamanHero, Artifact.ArtifactHolderAbilId);
+      UnitAddItem(worgenBloodShamanHero, ScytheOfElune.Item);
+      ArtifactManager.Register(ScytheOfElune);
+
       SunwellVial = new Artifact(CreateItem(ITEM_I018_VIAL_OF_THE_SUNWELL, DummyX, DummyX));
       var sunwell = preplacedUnitSystem.GetUnit(UNIT_N001_THE_SUNWELL_QUEL_THALAS_OTHER);
       UnitAddAbility(sunwell, Artifact.ArtifactHolderAbilId);
       UnitAddItem(sunwell, SunwellVial.Item);
       ArtifactManager.Register(SunwellVial);
-    }
-
-    /// <summary>
-    /// Initializes dependencies that would cause circular references in the constructor (used in a quest and preplaced)
-    /// </summary>
-    public void Initialize(AllLegendSetup allLegendSetup)
-    {
-      ScytheOfElune = allLegendSetup.Gilneas.ScytheOfElune;
     }
   }
 }

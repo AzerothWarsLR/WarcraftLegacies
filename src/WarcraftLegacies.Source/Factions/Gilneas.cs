@@ -77,7 +77,6 @@ namespace WarcraftLegacies.Source.Factions
       AddQuest(new QuestGilneasCity(Regions.Gilneas));
       AddQuest(new QuestDalarangilneas(Regions.Dalaran));
       AddQuest(new QuestCrowley());
-      AddQuest(new QuestGoldrinn());
       AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
     }
     private void RegisterObjectLevels()
@@ -109,7 +108,7 @@ namespace WarcraftLegacies.Source.Factions
     
     private void RegisterDruidsQuests(Druids druids)
     {
-      AddQuest(new QuestGoldrinn(_artifactSetup.ScytheOfElune, _allLegendSetup.Gilneas.Goldrinn, druids));
+      AddQuest(new QuestGoldrinn(_allLegendSetup.Gilneas.Tess, _allLegendSetup.Gilneas.Goldrinn, _artifactSetup.ScytheOfElune, druids));
     }
   }
 }
