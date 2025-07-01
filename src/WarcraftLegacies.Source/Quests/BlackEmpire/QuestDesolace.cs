@@ -16,14 +16,14 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestDesolace"/> class.
     /// </summary>
-    public QuestDesolace(Rectangle Desolace) : base("Desolace",
+    public QuestDesolace(Rectangle desolace) : base("Desolace",
       "We must establish a forward base in Desolace to stop Night elf incursions.",
       @"ReplaceableTextures\CommandButtons\BTNCentaurKhan.blp")
     {
       AddObjective(new ObjectiveControlPoint(UNIT_N01Y_DESOLACE));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
-      _rescueUnits = Desolace.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+      _rescueUnits = desolace.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
 
     }
 

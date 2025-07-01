@@ -16,14 +16,14 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestFeralas"/> class.
     /// </summary>
-    public QuestFeralas(Rectangle Feralas) : base("Feralas",
+    public QuestFeralas(Rectangle feralas) : base("Feralas",
       "With our hives restored we can establish a forward one in Feralas.",
       @"ReplaceableTextures\CommandButtons\BTNJungleBeast.blp")
     {
       AddObjective(new ObjectiveControlPoint(UNIT_N00Q_SPINEBARK_GROVE));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
-      _rescueUnits = Feralas.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+      _rescueUnits = feralas.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
 
     }
 

@@ -16,14 +16,14 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestShimmering"/> class.
     /// </summary>
-    public QuestShimmering(Rectangle Skywallshimmering) : base("Shimmering Flats",
+    public QuestShimmering(Rectangle shimmering) : base("Shimmering Flats",
       "With our lands secured we must establish a forward base.",
       @"ReplaceableTextures\CommandButtons\BTNPavilion.blp")
     {
       AddObjective(new ObjectiveControlPoint(UNIT_N0BN_SHIMMERING_FLATS));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
-      _rescueUnits = Skywallshimmering.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+      _rescueUnits = shimmering.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
 
     }
 
