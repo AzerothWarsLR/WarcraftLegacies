@@ -7,7 +7,6 @@ using MacroTools.ResearchSystems;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
-using WarcraftLegacies.Source.Quests.Lordaeron;
 using WarcraftLegacies.Source.Quests.Skywall;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;

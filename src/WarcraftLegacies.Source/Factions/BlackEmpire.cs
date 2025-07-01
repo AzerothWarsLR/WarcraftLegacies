@@ -7,7 +7,6 @@ using MacroTools.SpellSystem;
 using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.BlackEmpire;
-using WarcraftLegacies.Source.Quests.Lordaeron;
 using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Factions

@@ -13,7 +13,6 @@ using WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon;
 using WarcraftLegacies.Source.PassiveAbilities.Incubate;
 using WarcraftLegacies.Source.PassiveAbilities.SpellConduction;
 using WarcraftLegacies.Source.Quests.Cthun;
-using WarcraftLegacies.Source.Quests.Lordaeron;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Researches.Ahnqiraj;
 using WarcraftLegacies.Source.Setup;
