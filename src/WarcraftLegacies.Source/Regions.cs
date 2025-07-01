@@ -161,7 +161,7 @@ public static class Regions
 	public static Rectangle IllidanStartingPosition { get; set; } = new Rectangle(-640f, 5152f, 1536f, 6720f);
 	public static Rectangle IllidariUnlockSA { get; set; } = new Rectangle(12000f, -22816f, 13376f, -21280f);
 	public static Rectangle InstanceOutland { get; set; } = new Rectangle(-7104f, -32256f, 6016f, -18208f);
-	public static Rectangle Invasion1 { get; set; } = new Rectangle(-13152f, 3936f, -10560f, 5056f);
+	public static Rectangle Invasion1 { get; set; } = new Rectangle(-13248f, 3776f, -10656f, 4896f);
 	public static Rectangle Invasion2 { get; set; } = new Rectangle(-14624f, 5184f, -13664f, 8992f);
 	public static Rectangle Invasion3 { get; set; } = new Rectangle(-17856f, 5792f, -15680f, 9120f);
 	public static Rectangle Invasion4 { get; set; } = new Rectangle(-15040f, 2240f, -13632f, 5120f);
@@ -374,5 +374,8 @@ public static class Regions
 	public static Rectangle ZulAman_trolls { get; set; } = new Rectangle(20288f, 11648f, 22848f, 17440f);
 	public static Rectangle Zulfarrak { get; set; } = new Rectangle(-12352f, -14272f, -10528f, -12064f);
 	public static Rectangle ZulfarrakAmbient { get; set; } = new Rectangle(-5952f, -17216f, 2944f, -10368f);
+	public static Rectangle BEDesolaceUnlock { get; set; } = new Rectangle(-19968f, -5280f, -17440f, -3040f);
+	public static Rectangle AQFeralasUnlock { get; set; } = new Rectangle(-15968f, -12224f, -13056f, -10080f);
+	public static Rectangle SkywallShimmering_Unlock { get; set; } = new Rectangle(-10720f, -12544f, -8288f, -10496f);
 
 }

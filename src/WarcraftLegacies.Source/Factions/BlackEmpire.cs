@@ -7,6 +7,7 @@ using MacroTools.SpellSystem;
 using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.BlackEmpire;
+using WarcraftLegacies.Source.Quests.Lordaeron;
 using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Factions
@@ -62,6 +63,7 @@ namespace WarcraftLegacies.Source.Factions
       AddQuest(new QuestWakingDream(_allLegendSetup.BlackEmpire.Zaqul, _preplacedUnitSystem));
       AddQuest(new QuestMawofShuma(_allLegendSetup.BlackEmpire.Yorsahj));
       AddQuest(new QuestMawofGorath(_allLegendSetup.BlackEmpire.Zonozz));
+      AddQuest(new QuestDesolace(Regions.BEDesolaceUnlock));
       AddQuest(new QuestBladeoftheBlackEmpire(Regions.TheAbyss));
       AddQuest(new QuestDestruction(_allLegendSetup.BlackEmpire.Nzoth));
       AddQuest(new QuestWorldStone(_allLegendSetup.BlackEmpire.Nzoth, _allLegendSetup.Warsong.Orgrimmar));

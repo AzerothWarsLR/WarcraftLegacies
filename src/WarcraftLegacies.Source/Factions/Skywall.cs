@@ -7,6 +7,7 @@ using MacroTools.ResearchSystems;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Quests.Lordaeron;
 using WarcraftLegacies.Source.Quests.Skywall;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
@@ -61,6 +62,7 @@ namespace WarcraftLegacies.Source.Factions
       StartingQuest = newQuest;
       AddQuest(new QuestEmissary());
       AddQuest(new QuestThroneWind(Regions.ThroneoftheFourWind));
+      AddQuest(new QuestShimmering(Regions.SkywallShimmering_Unlock));
       AddQuest(new QuestSubduing());
       AddQuest(new QuestKillDruids(_allLegendSetup.Druids.Nordrassil));
 
