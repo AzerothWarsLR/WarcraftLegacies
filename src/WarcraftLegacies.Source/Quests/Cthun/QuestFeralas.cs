@@ -7,7 +7,7 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Quests.Lordaeron
+namespace WarcraftLegacies.Source.Quests.Cthun
 {
   public sealed class QuestFeralas : QuestData
   {
