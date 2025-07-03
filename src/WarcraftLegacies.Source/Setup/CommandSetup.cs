@@ -16,6 +16,8 @@ namespace WarcraftLegacies.Source.Setup
       commandManager.Register(new Dialogue());
       commandManager.Register(new Settings());
       commandManager.Register(new Share());
+      commandManager.Register(new Unshare());
+      commandManager.Register(new Text());
       commandManager.Register(new GiveGold("givegold"));
       commandManager.Register(new GiveGold("gold"));
       commandManager.Register(new GiveGold("g"));

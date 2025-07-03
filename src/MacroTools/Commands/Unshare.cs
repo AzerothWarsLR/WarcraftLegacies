@@ -6,14 +6,14 @@ using static War3Api.Common;
 namespace MacroTools.Commands
 {
   /// <summary>
-  /// Share control of your units with another player or all allied factions.
+  /// Removes shared unit control from another faction or all allied factions.
   /// </summary>
-  public sealed class Share : Command
+  public sealed class Unshare : Command
   {
-    public override string CommandText => "share";
+    public override string CommandText => "unshare";
     public override ExpectedParameterCount ExpectedParameterCount => new(0, 1);
     public override CommandType Type => CommandType.Normal;
-    public override string Description => "Share control of your units with another faction or all allied factions.";
+    public override string Description => "Removes shared unit control from a faction or all factions on your team.";
 
     public override string Execute(player commandUser, params string[] parameters)
     {
@@ -27,11 +27,11 @@ namespace MacroTools.Commands
         {
           if (faction.Player != null && faction.Player.GetTeam() == commandUserTeam)
           {
-            SetPlayerAlliance(commandUser, faction.Player, ALLIANCE_SHARED_CONTROL, true);
+            SetPlayerAlliance(commandUser, faction.Player, ALLIANCE_SHARED_CONTROL, false);
           }
         }
 
-        return "Shared control with all factions on your team.";
+        return "Removed shared control from all factions on your team.";
       }
 
       if (!FactionManager.TryGetFactionByName(parameters[0], out var targetFaction))
@@ -41,10 +41,11 @@ namespace MacroTools.Commands
         return $"There is nobody playing the {targetFaction.Name} faction.";
 
       if (commandUserTeam != targetFaction.Player.GetTeam())
-        return $"{targetFaction.Name} isn't on your team, so you can't share control with them.";
+        return $"{targetFaction.Name} isn't on your team, so you can't unshare control with them.";
 
-      SetPlayerAlliance(commandUser, targetFaction.Player, ALLIANCE_SHARED_CONTROL, true);
-      return $"Shared control with {targetFaction.Name}.";
+      SetPlayerAlliance(commandUser, targetFaction.Player, ALLIANCE_SHARED_CONTROL, false);
+
+      return $"Removed shared control from {targetFaction.Name}.";
     }
   }
 }

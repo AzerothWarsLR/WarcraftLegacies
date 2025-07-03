@@ -20,14 +20,14 @@ namespace MacroTools.Commands
     public override CommandType Type => CommandType.Normal;
 
     /// <inheritdoc />
-    public override string Description => "Sets your camera zoom to a specified distance (numeric or preset: 'near', 'medium', 'far').";
+    public override string Description =>
+      "Sets your camera zoom to a specified distance (number between 700–2701 or presets like 'near', 'medium', 'far').";
 
     /// <inheritdoc />
     public override string Execute(player commandUser, params string[] parameters)
     {
       var input = parameters[0].ToLowerInvariant();
 
-      // Preset mappings
       int? parsedHeight = input switch
       {
         "near" => 1000,
@@ -37,7 +37,7 @@ namespace MacroTools.Commands
       };
 
       if (parsedHeight is null)
-        return "Invalid parameter. Use a number between 700–2701 or presets like 'near', 'medium', or 'far'.";
+        return "Invalid parameter. Please use a number between 700 and 2701, or one of the presets: 'near', 'medium', 'far'.";
 
       PlayerData.ByHandle(commandUser).UpdatePlayerSetting("CamDistance", parsedHeight.Value);
       return $"Setting camera height to {parsedHeight.Value}.";
