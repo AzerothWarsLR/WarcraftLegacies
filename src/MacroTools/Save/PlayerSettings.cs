@@ -13,10 +13,10 @@ namespace MacroTools.Save
       set => _camDistance = Math.Clamp(value, 700, 2701);
     }
     
-    internal bool ShowQuestText { get; set; } = true;
+    public bool ShowQuestText { get; set; } = true;
     
-    internal bool PlayDialogue { get; set; } = true;
+    public bool PlayDialogue { get; set; } = true;
     
-    internal bool ShowCaptions { get; set; } = true;
+    public bool ShowCaptions { get; set; } = true;
   }
 }

@@ -14,7 +14,7 @@ namespace MacroTools.Save
   {
     internal static Dictionary<player, PlayerSettings> SavesByPlayer { get; } = new();
     private static SaveSystem<PlayerSettings>? _saveSystem;
-	
+
     public static void Initialize()
     {
       _saveSystem = new SaveSystem<PlayerSettings>(new SaveSystemOptions
@@ -45,8 +45,12 @@ namespace MacroTools.Save
         save.PlayDialogue = true;
         save.ShowCaptions = true;
       }
+
       save.GetPlayer().ApplyCameraField(CAMERA_FIELD_TARGET_DISTANCE, save.CamDistance, 1);
-		
+      save.GetPlayer().GetPlayerSettings().ShowQuestText = save.ShowQuestText;
+      save.GetPlayer().GetPlayerSettings().PlayDialogue = save.PlayDialogue;
+      save.GetPlayer().GetPlayerSettings().ShowCaptions = save.ShowCaptions;
+
       // If the load result is anything except success, the save will be a newly created object
       if (loadResult == LoadResult.FailedHash)
       {
@@ -58,7 +62,7 @@ namespace MacroTools.Save
         Console.WriteLine("An existing save failed to load correctly!");
       }
     }
-	
+
     /// <summary>
     /// Saves the player settings for the given player.
     /// </summary>

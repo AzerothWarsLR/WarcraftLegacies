@@ -6,7 +6,7 @@ using static War3Api.Common;
 namespace MacroTools.Commands
 {
   /// <summary>
-  /// A <see cref="CommandSystem.Command"/> that sets the player's camera to a specific height.
+  /// A <see cref="CommandSystem.Command"/> that sets the player's camera to a specific height or preset.
   /// </summary>
   public sealed class Cam : Command
   {
@@ -20,18 +20,27 @@ namespace MacroTools.Commands
     public override CommandType Type => CommandType.Normal;
 
     /// <inheritdoc />
-    public override string Description => "Sets your camera zoom to the specified distance.";
+    public override string Description => "Sets your camera zoom to a specified distance (numeric or preset: 'near', 'medium', 'far').";
 
     /// <inheritdoc />
     public override string Execute(player commandUser, params string[] parameters)
     {
-      var cameraHeight = parameters[0];
-      if (!int.TryParse(cameraHeight, out var cameraHeightInt))
-        return "You must specify a number as the first parameter.";
-      
-      cameraHeightInt = Math.Clamp(cameraHeightInt, 700, 2701);
-      PlayerData.ByHandle(commandUser).UpdatePlayerSetting("CamDistance", cameraHeightInt);
-      return $"Setting camera height to {cameraHeightInt}.";
+      var input = parameters[0].ToLowerInvariant();
+
+      // Preset mappings
+      int? parsedHeight = input switch
+      {
+        "near" => 1000,
+        "medium" => 1700,
+        "far" => 2400,
+        _ => int.TryParse(input, out var h) ? Math.Clamp(h, 700, 2701) : null
+      };
+
+      if (parsedHeight is null)
+        return "Invalid parameter. Use a number between 700–2701 or presets like 'near', 'medium', or 'far'.";
+
+      PlayerData.ByHandle(commandUser).UpdatePlayerSetting("CamDistance", parsedHeight.Value);
+      return $"Setting camera height to {parsedHeight.Value}.";
     }
   }
 }
