@@ -14,7 +14,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons an immovable ward that heals 1% of a nearby friendly non-mechanical unit\u0027s hit points per second. |nLasts \u003CAhwd,Dur1\u003E seconds."
+      "Value": "Light an area with a sunbeam that increases the damage of units within the area |nLasts \u003CVP20,Dur1\u003E seconds."
     },
     {
       "Id": 1835101793,

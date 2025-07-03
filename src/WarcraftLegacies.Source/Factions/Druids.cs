@@ -6,6 +6,8 @@ using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.ResearchSystems;
+using MacroTools.Spells;
+using MacroTools.SpellSystem;
 using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Druids;
@@ -14,6 +16,7 @@ using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Druids;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Spells;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions
