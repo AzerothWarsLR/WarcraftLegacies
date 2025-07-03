@@ -18,8 +18,8 @@ namespace WarcraftLegacies.Source.Spells
     public float Radius { get; init; }
     public string KillEffect { get; init; } = string.Empty;
     public string HealEffect { get; init; } = string.Empty;
-    public float HealthRestorePercent { get; init; } = 1.25f;
-    public float ManaRestorePercent { get; init; } = 0.10f;
+    public float HealthRestorePercent { get; init; }
+    public float ManaRestorePercent { get; init; }
 
     public DeathPact(int id) : base(id) { }
 
@@ -36,10 +36,7 @@ namespace WarcraftLegacies.Source.Spells
             .ToList();
 
         if (unitsInRange.Count == 0)
-        {
-          Console.WriteLine($"[DeathPact DEBUG] No valid units to sacrifice within radius {Radius}.");
           return;
-        }
 
         var targetUnit = unitsInRange
             .OrderByDescending(x => IsUnitType(x, UNIT_TYPE_SUMMONED))
@@ -49,26 +46,16 @@ namespace WarcraftLegacies.Source.Spells
             .FirstOrDefault();
 
         if (targetUnit == null || !UnitAlive(targetUnit))
-        {
-          Console.WriteLine("[DeathPact DEBUG] Target unit is null or dead after selection.");
           return;
-        }
 
         var targetHealth = GetUnitState(targetUnit, UNIT_STATE_LIFE);
         if (targetHealth <= 0)
-        {
-          Console.WriteLine($"[DeathPact DEBUG] Target unit '{targetUnit.GetName()}' has no health.");
           return;
-        }
-
-        Console.WriteLine($"[DeathPact DEBUG] Sacrificing unit '{targetUnit.GetName()}' with {targetHealth} HP.");
 
         targetUnit.Kill();
 
         var healthToRestore = targetHealth * HealthRestorePercent;
         caster.Heal(healthToRestore);
-
-        Console.WriteLine($"[DeathPact DEBUG] Healed caster '{caster.GetName()}' for {healthToRestore} HP.");
 
         if (!string.IsNullOrEmpty(HealEffect))
         {
@@ -84,19 +71,12 @@ namespace WarcraftLegacies.Source.Spells
           var maxMana = GetUnitState(caster, UNIT_STATE_MAX_MANA);
           var restoredMana = Math.Min(currentMana + manaToRestore, maxMana);
           SetUnitState(caster, UNIT_STATE_MANA, restoredMana);
-
-          Console.WriteLine($"[DeathPact DEBUG] [DELAYED] Restored {manaToRestore} mana to caster '{caster.GetName()}'. " +
-                            $"Current: {currentMana} → Final: {restoredMana}");
-
           GetExpiredTimer().Destroy();
         });
 
         AddSpecialEffect(KillEffect, targetUnit.GetPosition().X, targetUnit.GetPosition().Y).SetLifespan();
       }
-      catch (Exception e)
-      {
-        Console.WriteLine($"[DeathPact ERROR] {e.Message}");
-      }
+      catch (Exception) { }
     }
 
     private static bool IsValidTarget(unit target, player casterPlayer)

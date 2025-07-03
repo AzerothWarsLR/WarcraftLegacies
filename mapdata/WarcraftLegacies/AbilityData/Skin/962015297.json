@@ -101,7 +101,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Sacrifices a friendly Undead unit, giving 125% of its hit points to the Death Knight and 10% of it\u0027s hitpoints in mana. Prioritises summoned units."
+      "Value": "Sacrifices a friendly Undead unit, restoring 125% of its hit points to the Death Knight as health and 10% as mana. Prioritizes summoned units."
     },
     {
       "Level": 2,

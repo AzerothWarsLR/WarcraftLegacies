@@ -179,7 +179,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
           KillEffect = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl",
           HealEffect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl",
           HealthRestorePercent = 0.25f,
-          ManaRestorePercent = 0.36f,
+          ManaRestorePercent = 0.3f,
         };
 
         SpellSystem.Register(darkRitual);
