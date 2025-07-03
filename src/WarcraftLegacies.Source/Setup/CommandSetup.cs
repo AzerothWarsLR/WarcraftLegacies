@@ -1,6 +1,7 @@
 ﻿using MacroTools.Commands;
 using MacroTools.CommandSystem;
 
+
 namespace WarcraftLegacies.Source.Setup
 {
   public static class CommandSetup

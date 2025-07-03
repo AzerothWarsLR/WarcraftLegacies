@@ -6,18 +6,26 @@ using static War3Api.Common;
 namespace MacroTools.Commands
 {
   /// <summary>
-  /// Share control of your units with another player or all allied factions.
+  /// Share control of your units with another player.
   /// </summary>
   public sealed class Share : Command
   {
+    /// <inheritdoc />
     public override string CommandText => "share";
-    public override ExpectedParameterCount ExpectedParameterCount => new(0, 1);
-    public override CommandType Type => CommandType.Normal;
-    public override string Description => "Share control of your units with another faction or all allied factions.";
 
-    public override string Execute(player commandUser, params string[] parameters)
+    /// <inheritdoc />
+    public override ExpectedParameterCount ExpectedParameterCount => new(0, 1);
+
+    /// <inheritdoc />
+    public override CommandType Type => CommandType.Normal;
+
+    /// <inheritdoc />
+    public override string Description => "Share control of your units with another faction.";
+
+    /// <inheritdoc />
+    public override string Execute(player cheater, params string[] parameters)
     {
-      var commandUserTeam = commandUser.GetTeam();
+      var cheaterTeam = cheater.GetTeam();
 
       if (parameters.Length >= 1 && parameters[0].ToLower() == "all")
       {
@@ -25,9 +33,9 @@ namespace MacroTools.Commands
 
         foreach (var faction in factions)
         {
-          if (faction.Player != null && faction.Player.GetTeam() == commandUserTeam)
+          if (faction.Player != null && faction.Player.GetTeam() == cheaterTeam)
           {
-            SetPlayerAlliance(commandUser, faction.Player, ALLIANCE_SHARED_CONTROL, true);
+            SetPlayerAlliance(cheater, faction.Player, ALLIANCE_SHARED_CONTROL, true);
           }
         }
 
@@ -40,10 +48,11 @@ namespace MacroTools.Commands
       if (targetFaction.Player == null)
         return $"There is nobody playing the {targetFaction.Name} faction.";
 
-      if (commandUserTeam != targetFaction.Player.GetTeam())
+      if (cheaterTeam != targetFaction.Player.GetTeam())
         return $"{targetFaction.Name} isn't on your team, so you can't share control with them.";
 
-      SetPlayerAlliance(commandUser, targetFaction.Player, ALLIANCE_SHARED_CONTROL, true);
+      SetPlayerAlliance(cheater, targetFaction.Player, ALLIANCE_SHARED_CONTROL, true);
+
       return $"Shared control with {targetFaction.Name}.";
     }
   }
