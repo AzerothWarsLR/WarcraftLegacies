@@ -191,9 +191,22 @@ namespace WarcraftLegacies.Source.Factions
         new BasicResearch(UPGRADE_VP12_NATURE_S_FURY_EARTH_DRUIDS, 100),
         new RemoveAbilityResearch(UPGRADE_VP13_NATURE_S_PROTECTION_EARTH_DRUIDS, 100)
         {
-          RemovedAbility = ABILITY_VP11_CLEAVING_ATTACK_DRUIDS_MOUNTAIN_GIANTS
+          RemovedAbility = ABILITY_VP11_CLEAVING_ATTACK_DRUIDS_MOUNTAIN_GIANTS,
+          SecondRemovedAbility = 0
         }
-      ); 
+      );
+      ResearchManager.RegisterIncompatibleSet(
+         new RemoveAbilityResearch(UPGRADE_VP28_SOLAR_ECLIPSE_DRUIDS, 100)
+         {
+           RemovedAbility = ABILITY_VP18_MOON_BEAM_DRUIDS,
+           SecondRemovedAbility = ABILITY_VP17_MOONFIRE_DRUIDS
+         },
+        new RemoveAbilityResearch(UPGRADE_VP27_LUNAR_ECLIPSE_DRUIDS, 100)
+        {
+          RemovedAbility = ABILITY_VP26_SUNFIRE_DRUIDS,
+          SecondRemovedAbility = ABILITY_VP20_SUN_BEAM_DRUIDS
+        }
+      );
     }
   }
 }

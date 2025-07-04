@@ -1,15 +1,10 @@
 {
-  "OldId": 1852395073,
-  "NewId": 825380950,
+  "OldId": 1852195649,
+  "NewId": 909267030,
   "Unk": [
     0
   ],
   "Modifications": [
-    {
-      "Id": 1835101793,
-      "Type": 3,
-      "Value": "Sunfire2"
-    },
     {
       "Id": 1718840929,
       "Type": 3,
@@ -18,12 +13,18 @@
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "W"
+      "Value": "Q"
     },
     {
-      "Id": 1802728801,
+      "Level": 1,
+      "Id": 828536161,
       "Type": 3,
-      "Value": ""
+      "Value": "Blasts a unit with a sun ray, dealing \u003CVP26,DataA1\u003E damage to it and nearby enemy units."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Sunfire"
     },
     {
       "Id": 1952540001,
@@ -37,9 +38,9 @@
     },
     {
       "Level": 1,
-      "Id": 828536161,
+      "Id": 829453409,
       "Type": 3,
-      "Value": "Summons an falling star from the sky, causing area effect damage and stunning where it lands."
+      "Value": "Sunfire"
     }
   ]
 }

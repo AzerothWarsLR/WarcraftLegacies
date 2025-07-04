@@ -1,0 +1,63 @@
+{
+  "OldId": 1852195649,
+  "NewId": 909267030,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "nightelf"
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 829318741,
+      "Type": 2,
+      "Value": 200
+    },
+    {
+      "Level": 1,
+      "Pointer": 5,
+      "Id": 896427605,
+      "Type": 2,
+      "Value": 2000
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846095957,
+      "Type": 2,
+      "Value": 0
+    },
+    {
+      "Level": 1,
+      "Id": 1935895905,
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Id": 1969514593,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1920296033,
+      "Type": 2,
+      "Value": 1
+    },
+    {
+      "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1902473825,
+      "Type": 3,
+      "Value": "VP28"
+    }
+  ]
+}

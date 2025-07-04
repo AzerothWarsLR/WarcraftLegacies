@@ -12,7 +12,12 @@ namespace WarcraftLegacies.Source.Researches
     /// The ability to remove access to.
     /// </summary>
     public required int RemovedAbility { get; init; }
-    
+
+    /// <summary>
+    /// The ability to remove access to.
+    /// </summary>
+    public required int SecondRemovedAbility { get; init; }
+
     /// <inheritdoc />
     public RemoveAbilityResearch(int researchTypeId, int goldCost) : base(researchTypeId, goldCost)
     {
@@ -23,6 +28,7 @@ namespace WarcraftLegacies.Source.Researches
     {
       var faction = researchingPlayer.GetFaction();
       faction?.ModAbilityAvailability(RemovedAbility, -1);
+      faction?.ModAbilityAvailability(SecondRemovedAbility, -1);
     }
   }
 }
