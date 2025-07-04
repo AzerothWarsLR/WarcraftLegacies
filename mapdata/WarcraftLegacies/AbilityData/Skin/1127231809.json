@@ -101,7 +101,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Sacrifices a friendly Undead unit, restoring 150% of its hit points to the Hero as health and 20% as mana. Prioritizes summoned units."
+      "Value": "Sacrifices a nearby friendly Undead unit, restoring 150% of its hit points to the Hero as health and 20% as mana. Prioritizes summoned units."
     },
     {
       "Level": 2,
