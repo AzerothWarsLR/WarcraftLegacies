@@ -1,0 +1,40 @@
+{
+  "OldId": 1785033281,
+  "NewId": 1179471191,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMind Crush.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 2
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Warped Malediction)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Mind Flay"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mind Flay"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Inflicts a curse upon the target unit, causing it to lose 25 hit points and 50 mana per second for the next \u003CA0EZ,Dur1\u003E seconds."
+    }
+  ]
+}

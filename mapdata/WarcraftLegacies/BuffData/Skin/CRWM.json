@@ -1,0 +1,14 @@
+{
+  "OldId": 1936876354,
+  "NewId": 1297568323,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1835101798,
+      "Type": 3,
+      "Value": "Dummy Debuff"
+    }
+  ]
+}
