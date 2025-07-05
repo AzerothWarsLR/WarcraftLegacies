@@ -33,9 +33,9 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_H0AF_CONTROL_POINT_DEFENDER_GILNEAS;
       IntroText = $"You are playing as the accursed {PrefixCol}Kingdom of Gilneas|r.\n\n" +
-                  "You start isolated behind the Greymane Wall; the only way for an enemy to reach you is through the Greymane Gate or via the coast.\n\n" +
-                  "You must raise an army and fight back against the feral wolves and worgen that have overrun your Kingdom.\n\n" +
-                  "Once you have reclaimed Gilneas, open Greymane's Gate and march North to assist Lordaeron and Dalaran with the plague, if it's not too late.";
+                  "You start isolated beyond the Greymane Wall;\n\n" +
+                  "You must raise an army and fight back against the feral wolves and bandits that have taken over Southern-Lordaeron.\n\n" +
+                  "Once you have reclaimed Southern-Lordaeron, open Greymane's Gate and march North to assist Lordaeron and Dalaran with the plague, if it's not too late.";
 
       GoldMines = new List<unit>
       {

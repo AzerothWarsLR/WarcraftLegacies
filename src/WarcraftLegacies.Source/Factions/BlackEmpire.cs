@@ -125,7 +125,7 @@ namespace WarcraftLegacies.Source.Factions
       {
         DummyAbilityId = ABILITY_ABSV_SHADOW_VEIL_SHADOW_VEIL_REAL,
         DummyOrderId = OrderId("howlofterror"),
-        ProcChance = 0.25f,
+        ProcChance = 0.10f,
         RequiredResearch = UPGRADE_RBEV_SHADOW_VEIL_BLACK_EMPIRE
       };
       PassiveAbilityManager.Register(shadowVeilPassive);
