@@ -155,7 +155,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
           KillEffect = @"Abilities\Spells\Undead\DeathPact\DeathPactTarget.mdl",
           HealEffect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
           HealthRestorePercent = 1.25f, 
-          ManaRestorePercent = 0.10f 
+          ManaRestorePercent = 0.10f,
         };
 
         SpellSystem.Register(deathPact);
@@ -166,7 +166,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
           KillEffect = @"Abilities\Spells\Undead\DeathPact\DeathPactTarget.mdl",
           HealEffect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
           HealthRestorePercent = 1.5f,
-          ManaRestorePercent = 0.20f
+          ManaRestorePercent = 0.20f,
+        
         };
 
         SpellSystem.Register(deathPactarthas);
@@ -177,11 +178,12 @@ namespace WarcraftLegacies.Source.Setup.Spells
           Radius = 900.0f,
           KillEffect = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl",
           HealEffect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl",
-          HealthRestorePercent = 0.25f, 
-          ManaRestorePercent = 0.36f 
+          HealthRestorePercent = 0.25f,
+          ManaRestorePercent = 0.35f,
         };
 
         SpellSystem.Register(darkRitual);
+
       }
 
       
