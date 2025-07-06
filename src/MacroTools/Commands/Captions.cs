@@ -5,7 +5,7 @@ using static War3Api.Common;
 namespace MacroTools.Commands
 {
   /// <summary>
-  /// A <see cref="CommandSystem.Command"/> That turns dialogue captions on or off.
+  /// A <see cref="CommandSystem.Command"/> that turns dialogue captions on or off.
   /// </summary>
   public sealed class Captions : Command
   {
@@ -19,17 +19,24 @@ namespace MacroTools.Commands
     public override CommandType Type => CommandType.Normal;
 
     /// <inheritdoc />
-    public override string Description => "Turns dialogue captions on or off.";
+    public override string Description => "Turns dialogue captions on or off (accepts 'true', 'false', 'on', 'off').";
 
     /// <inheritdoc />
     public override string Execute(player commandUser, params string[] parameters)
     {
-      var captions = parameters[0];
-      if (!bool.TryParse(captions, out var captionsBool))
-        return "You must specify either true or false as the first parameter.";
-      
-      PlayerData.ByHandle(commandUser).UpdatePlayerSetting("ShowCaptions", captionsBool);
-      return $"Setting show captions option to {captionsBool}.";
+      var input = parameters[0].ToLowerInvariant();
+      bool? parsed = input switch
+      {
+        "true" or "on" => true,
+        "false" or "off" => false,
+        _ => null
+      };
+
+      if (parsed is null)
+        return "Invalid parameter. Please use 'true', 'false', 'on', or 'off'.";
+
+      PlayerData.ByHandle(commandUser).UpdatePlayerSetting("ShowCaptions", parsed.Value);
+      return $"Setting show captions option to {parsed.Value}.";
     }
   }
 }

@@ -20,7 +20,7 @@ namespace MacroTools.QuestSystem
       
       foreach (var enumPlayer in WCSharp.Shared.Util.EnumeratePlayers())
         if (enumPlayer != whichPlayer)
-          if (PlayerData.ByHandle(whichPlayer).PlayerSettings.ShowQuestText)
+          if (PlayerData.ByHandle(enumPlayer).PlayerSettings.ShowQuestText)
             DisplayTextToPlayer(enumPlayer, 0, 0,
               $"\n|cffffcc00MAJOR EVENT - {whichPlayer.GetFaction()?.PrefixCol}{questData.Title}|r\n{questData.RewardFlavour}\n");
     }

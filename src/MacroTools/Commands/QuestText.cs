@@ -19,17 +19,24 @@ namespace MacroTools.Commands
     public override CommandType Type => CommandType.Normal;
 
     /// <inheritdoc />
-    public override string Description => "Turns quest text on or off.";
+    public override string Description => "Turns quest text on or off (accepts 'true', 'false', 'on', 'off').";
 
     /// <inheritdoc />
     public override string Execute(player commandUser, params string[] parameters)
     {
-      var questText = parameters[0];
-      if (!bool.TryParse(questText, out var questTextBool))
-        return "You must specify either true or false as the first parameter.";
-      
-      PlayerData.ByHandle(commandUser).UpdatePlayerSetting("ShowQuestText", questTextBool);
-      return $"Setting show quest text option to {questTextBool}.";
+      var input = parameters[0].ToLowerInvariant();
+      bool? parsed = input switch
+      {
+        "true" or "on" => true,
+        "false" or "off" => false,
+        _ => null
+      };
+
+      if (parsed is null)
+        return "Invalid parameter. Please use 'true', 'false', 'on', or 'off'.";
+
+      PlayerData.ByHandle(commandUser).UpdatePlayerSetting("ShowQuestText", parsed.Value);
+      return $"Setting show quest text option to {parsed.Value}.";
     }
   }
 }

@@ -5,7 +5,9 @@ using static War3Api.Common;
 
 namespace MacroTools.Commands
 {
-  /// <summary>Share control of your units with another player.</summary>
+  /// <summary>
+  /// Share control of your units with another player.
+  /// </summary>
   public sealed class Share : Command
   {
     /// <inheritdoc />
