@@ -4,31 +4,43 @@
       "IconType": 2,
       "X": 223,
       "Y": 250,
-      "Color": "#A57034"
+      "Color": "#AD7D31"
     },
     {
       "IconType": 2,
       "X": 218,
       "Y": 55,
-      "Color": "#1BE7ba"
+      "Color": "#0DF4b8"
     },
     {
       "IconType": 2,
       "X": 197,
       "Y": 74,
-      "Color": "#7EC0f2"
+      "Color": "#65E2ff"
     },
     {
       "IconType": 2,
       "X": 193,
       "Y": 127,
-      "Color": "#FFFC00"
+      "Color": "#FFEB00"
+    },
+    {
+      "IconType": 2,
+      "X": 182,
+      "Y": 99,
+      "Color": "#FF41ad"
+    },
+    {
+      "IconType": 2,
+      "X": 176,
+      "Y": 104,
+      "Color": "#424152"
     },
     {
       "IconType": 2,
       "X": 170,
       "Y": 182,
-      "Color": "#0042ff"
+      "Color": "#005Aff"
     },
     {
       "IconType": 2,
@@ -40,61 +52,61 @@
       "IconType": 2,
       "X": 156,
       "Y": 172,
-      "Color": "#00781e"
+      "Color": "#007629"
     },
     {
       "IconType": 2,
       "X": 141,
       "Y": 85,
-      "Color": "#BD00ff"
+      "Color": "#C900ff"
     },
     {
       "IconType": 2,
       "X": 131,
       "Y": 13,
-      "Color": "#550081"
+      "Color": "#7E00ff"
     },
     {
       "IconType": 2,
       "X": 124,
       "Y": 251,
-      "Color": "#21C000"
+      "Color": "#31FF00"
     },
     {
       "IconType": 2,
       "X": 96,
       "Y": 64,
-      "Color": "#4F2B05"
+      "Color": "#7B4100"
     },
     {
       "IconType": 2,
       "X": 93,
       "Y": 103,
-      "Color": "#FF0303"
+      "Color": "#FF1500"
     },
     {
       "IconType": 2,
       "X": 83,
       "Y": 200,
-      "Color": "#949697"
+      "Color": "#A2AAb5"
     },
     {
       "IconType": 2,
       "X": 45,
       "Y": 75,
-      "Color": "#C0FF81"
+      "Color": "#B0FF4d"
     },
     {
       "IconType": 2,
       "X": 34,
       "Y": 200,
-      "Color": "#ECCE87"
+      "Color": "#FFCC57"
     },
     {
       "IconType": 2,
       "X": 12,
       "Y": 153,
-      "Color": "#9C0000"
+      "Color": "#D6004a"
     },
     {
       "IconType": 1,

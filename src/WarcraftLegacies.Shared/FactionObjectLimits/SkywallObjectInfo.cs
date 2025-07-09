@@ -28,8 +28,8 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(Constants.UNIT_O05E_LURKING_TEMPEST_ELEMENTAL, Unlimited);
       yield return new(Constants.UNIT_N08Z_WHIPPING_WIND_ELEMENTAL, Unlimited);
       yield return new(Constants.UNIT_OETL_TIDAL_LORD_ELEMENTAL, 6);
-      yield return new(Constants.UNIT_U02P_DJINN_ELEMENTAL, 4);
-      yield return new(Constants.UNIT_LS06_EFREET_ELEMENTAL, 4);
+      yield return new(Constants.UNIT_U02P_DJINN_ELEMENTAL, 4, limitIncreaseHint:"completing Druids Demise");
+      yield return new(Constants.UNIT_LS06_EFREET_ELEMENTAL, 4, limitIncreaseHint:"completing Druids Demise");
       yield return new(Constants.UNIT_N0CG_CORE_HOUND_RAGNAROS, 12);
       yield return new(Constants.UNIT_N0CF_FIRE_WYRM_RAGNAROS, 2);
 

@@ -10,6 +10,8 @@ using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests.Skywall;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Spells.WarpedMalediction;
+using WarcraftLegacies.Source.Spells.WhimOfTheWinds;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions
@@ -150,9 +152,7 @@ namespace WarcraftLegacies.Source.Factions
         CastFilter = CastFilters.IsTargetEnemyAndAlive
       };
       SpellSystem.Register(stormSurge);
-
-
-
+      
       var massEnsnare = new MassAnySpell(ABILITY_A01N_MASS_ENSNARE_SKYWALL)
       {
         DummyAbilityId = ABILITY_A01V_MASS_ENSNARE_SKYWALL_DUMMY,
@@ -163,7 +163,14 @@ namespace WarcraftLegacies.Source.Factions
         TargetType = SpellTargetType.Point
       };
       SpellSystem.Register(massEnsnare);
+      
+      var whimOfTheWinds = new WhimOfTheWinds(ABILITY_WOTW_WHIM_OF_THE_WINDS_SKYWALL);
+      SpellSystem.Register(whimOfTheWinds);
+      
+      var warpedMalediction = new WarpedMalediction(ABILITY_WMTP_WARPED_MALEDICTION_SKYWALL);
+      SpellSystem.Register(warpedMalediction);
 
+      
     }
   }
 }
