@@ -138,7 +138,10 @@ namespace WarcraftLegacies.Source.KeyboardManager
                         firstOfGroup = FirstOfGroup(selectedGroup);
                     }
                     DestroyGroup(selectedGroup);
-                    SelectUnit(fourthHero, true);
+                    if (whichPlayer == GetLocalPlayer())
+                       { 
+                          SelectUnit(fourthHero, true);
+                       }
                 }
             }
         }

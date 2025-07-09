@@ -1,0 +1,15 @@
+{
+  "Left": -19968,
+  "Bottom": -5280,
+  "Right": -17440,
+  "Top": -3040,
+  "Name": "BEDesolaceUnlock",
+  "CreationNumber": 159,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

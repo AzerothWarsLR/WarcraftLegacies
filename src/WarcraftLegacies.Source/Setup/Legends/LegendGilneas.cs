@@ -9,23 +9,27 @@ namespace WarcraftLegacies.Source.Setup.Legends
   public sealed class LegendGilneas
   {
     public LegendaryHero Tess { get; }
-    
-    public LegendaryHero Genn { get; }
-    
-    public LegendaryHero Darius { get; }
-    
-    public LegendaryHero Goldrinn { get; }
-    
-    public Capital GilneasCastle { get; }
 
+    public LegendaryHero Genn { get; }
+
+    public LegendaryHero Darius { get; }
+
+    public LegendaryHero Goldrinn { get; }
+
+    public Capital GilneasCastle { get; }
     /// <summary>
     /// Sets up <see cref="LegendGilneas"/>.
     /// </summary>
+    /// 
     public LegendGilneas(PreplacedUnitSystem preplacedUnitSystem)
     {
       Tess = new LegendaryHero("Tess Greymane")
       {
         UnitType = UNIT_TGGN_PRINCESS_OF_GILNEAS_GILNEAS,
+        StartingArtifacts = new()
+        { 
+          new(CreateItem(ITEM_I00R_SCYTHE_OF_ELUNE, Regions.ArtifactDummyInstance.Center.X,Regions.ArtifactDummyInstance.Center.Y))
+        }
       };
 
       Goldrinn = new LegendaryHero("Goldrinn")

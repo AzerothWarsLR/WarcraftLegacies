@@ -1,0 +1,15 @@
+{
+  "Left": -10720,
+  "Bottom": -12544,
+  "Right": -8288,
+  "Top": -10496,
+  "Name": "SkywallShimmering Unlock",
+  "CreationNumber": 207,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

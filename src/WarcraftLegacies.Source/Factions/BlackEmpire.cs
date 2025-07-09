@@ -62,6 +62,7 @@ namespace WarcraftLegacies.Source.Factions
       AddQuest(new QuestWakingDream(_allLegendSetup.BlackEmpire.Zaqul, _preplacedUnitSystem));
       AddQuest(new QuestMawofShuma(_allLegendSetup.BlackEmpire.Yorsahj));
       AddQuest(new QuestMawofGorath(_allLegendSetup.BlackEmpire.Zonozz));
+      AddQuest(new QuestDesolace(Regions.BEDesolaceUnlock));
       AddQuest(new QuestBladeoftheBlackEmpire(Regions.TheAbyss));
       AddQuest(new QuestDestruction(_allLegendSetup.BlackEmpire.Nzoth));
       AddQuest(new QuestWorldStone(_allLegendSetup.BlackEmpire.Nzoth, _allLegendSetup.Warsong.Orgrimmar));
@@ -124,7 +125,7 @@ namespace WarcraftLegacies.Source.Factions
       {
         DummyAbilityId = ABILITY_ABSV_SHADOW_VEIL_SHADOW_VEIL_REAL,
         DummyOrderId = OrderId("howlofterror"),
-        ProcChance = 0.25f,
+        ProcChance = 0.10f,
         RequiredResearch = UPGRADE_RBEV_SHADOW_VEIL_BLACK_EMPIRE
       };
       PassiveAbilityManager.Register(shadowVeilPassive);
@@ -134,7 +135,7 @@ namespace WarcraftLegacies.Source.Factions
         DummyAbilityId = ABILITY_ACAM_ANTI_MAGIC_SHELL_BLACK_EMPIRE,
         DummyAbilityOrderId = OrderId("antimagicshell"),
         Radius = 200,
-        CastFilter = CastFilters.IsTargetAllyAndAlive,
+        CastFilter = CastFilters.IsTargetOrganicAndAlive,
         TargetType = SpellTargetType.None
       };
       SpellSystem.Register(shadowVeilSpell);

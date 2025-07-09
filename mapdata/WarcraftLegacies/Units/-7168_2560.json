@@ -12,10 +12,10 @@
     "WaygateDestinationRegionId": -1,
     "TypeId": 1819438446,
     "Position": {
-      "X": -7602.7363,
-      "Y": 2321.0452
+      "X": -7447.045,
+      "Y": 2451.401
     },
-    "Rotation": 0.32137882709503174,
+    "Rotation": 4.71238899230957,
     "Scale": {
       "X": 1,
       "Y": 1,
@@ -24,7 +24,7 @@
     "SkinId": 1819438446,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 1821
+    "CreationNumber": 1101
   },
   {
     "Flags": 2,
@@ -39,10 +39,10 @@
     "WaygateDestinationRegionId": -1,
     "TypeId": 1819438446,
     "Position": {
-      "X": -7447.045,
-      "Y": 2451.401
+      "X": -7602.7363,
+      "Y": 2321.0452
     },
-    "Rotation": 4.71238899230957,
+    "Rotation": 0.32137882709503174,
     "Scale": {
       "X": 1,
       "Y": 1,
@@ -51,6 +51,6 @@
     "SkinId": 1819438446,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 1101
+    "CreationNumber": 1821
   }
 ]

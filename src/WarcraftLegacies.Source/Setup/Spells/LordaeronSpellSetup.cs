@@ -13,9 +13,9 @@ namespace WarcraftLegacies.Source.Setup.Spells
     {
       var consecration = new Stomp(ABILITY_A0WE_CONSECRATION_LORDAERON_UTHER)
       {
-        Radius = 350,
+        Radius = 300,
         DamageBase = 20,
-        DamageLevel = 50,
+        DamageLevel = 40,
         DurationBase = 1,
         StunAbilityId = ABILITY_S00H_THUNDER_CLAP_DUMMY,
         StunOrderId = OrderId("cripple"),

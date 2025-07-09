@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Quests.BlackEmpire
     public override string RewardFlavour => "With the invaders defeated, I have retaken control of the Twilight landing.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => $"Gain Control of all buildings in the Twilight landing area, learn to train X'korr the Compelling from the {GetObjectName(UNIT_N0AV_ALTAR_OF_MADNESS_YOGG_ALTAR)} and the ability to train 1 {GetObjectName(UNIT_U02F_FORGOTTEN_ONE_YOGG)} from the {GetObjectName(UNIT_N0AX_MUTATION_CIRCLE_YOGG_SPECIALIST)}";
+    protected override string RewardDescription => $"Gain Control of all buildings and units in the Twilight landing area, learn to train X'korr the Compelling from the {GetObjectName(UNIT_N0AV_ALTAR_OF_MADNESS_YOGG_ALTAR)} and the ability to train 1 {GetObjectName(UNIT_U02F_FORGOTTEN_ONE_YOGG)} from the {GetObjectName(UNIT_N0AX_MUTATION_CIRCLE_YOGG_SPECIALIST)}";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
