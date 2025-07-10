@@ -1,13 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MacroTools.DialogueSystem;
 using MacroTools.Extensions;
+using MacroTools.FactionChoices;
 using MacroTools.FactionSystem;
 using MacroTools.Libraries;
 using MacroTools.Mechanics;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
-using MacroTools.QuestSystem;
 using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.GameLogic;
@@ -50,7 +51,7 @@ namespace WarcraftLegacies.Source.Factions
 
       GoldMines = new List<unit>
       {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(9204, 2471))
+        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(5466, 3210)),
       };
       Nicknames = new List<string>
       {
@@ -66,21 +67,22 @@ namespace WarcraftLegacies.Source.Factions
     public override void OnRegistered()
     {
       RegisterObjectLevels();
+      ReplaceWithFactionUnits(this);
       RegisterQuests();
       RegisterDialogue();
       RegisterProtectors();
-      Regions.Dalaran.CleanupHostileUnits();
       WaygateManager.Setup(UNIT_N0AO_WAY_GATE_DALARAN_SIEGE);
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
-
+    private void ReplaceWithFactionUnits(Faction pickedFaction)
+    {
+      if (pickedFaction == null)
+        throw new ArgumentNullException(nameof(pickedFaction), "pickedFaction cannot be null.");
+      FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.Gilneas, pickedFaction);
+    }
     /// <inheritdoc />
     public override void OnNotPicked()
     {
-      Regions.Dalaran.CleanupNeutralPassiveUnits();
-      Regions.ShadowfangUnlock.CleanupNeutralPassiveUnits();
-      Regions.SouthshoreUnlock.CleanupNeutralPassiveUnits();
-      Regions.DalaStartPos.CleanupNeutralPassiveUnits();
       base.OnNotPicked();
     }
       
@@ -97,18 +99,11 @@ namespace WarcraftLegacies.Source.Factions
     
     private void RegisterQuests()
     {
-      var questSouthshore = AddQuest(new QuestSouthshore(Regions.SouthshoreUnlock));
-      StartingQuest = questSouthshore;
-      var questShadowfang = AddQuest(new QuestShadowfang(Regions.ShadowfangUnlock));
-      var questDalaran = AddQuest(new QuestDalaran(new[]
-      {
-        Regions.Dalaran
-      }, new QuestData[]
-      {
-        questSouthshore,
-        questShadowfang
-      }));
-      
+      StartingQuest = AddQuest(new QuestShadowfang(Regions.ShadowfangUnlock));
+      AddQuest(new QuestSouthshore(Regions.SouthshoreUnlock));
+      AddQuest(new QuestDalaran(Regions.Dalaran));
+      AddQuest(new QuestGilneas(Regions.Gilneas));
+
       QuestNewGuardian newGuardian = new(_artifactSetup.BookOfMedivh, _allLegendSetup.Dalaran.Jaina,
         _allLegendSetup.Dalaran.Dalaran);
       QuestAegwynn aegwynn = new(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Dalaran.Antonidas);
@@ -125,7 +120,6 @@ namespace WarcraftLegacies.Source.Factions
       AddQuest(new QuestJainaSoulGem(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Neutral.Caerdarrow));
       AddQuest(new QuestBlueDragons(_allLegendSetup.Neutral.TheNexus));
       AddQuest(new QuestKarazhan(_allLegendSetup.Neutral.Karazhan));
-      AddQuest(new QuestGreymaneWall(questDalaran, Regions.GilneasUnlock5));
       AddQuest(new QuestTheramore(_allLegendSetup.Dalaran.Jaina, _allLegendSetup.Dalaran.Dalaran,  Regions.Theramore));
 
       AddQuest(crystalGolem);

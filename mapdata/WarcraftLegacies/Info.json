@@ -144,8 +144,8 @@
       "Flags": 1,
       "Name": "Dalaran",
       "StartPosition": {
-        "X": 9792,
-        "Y": 2816
+        "X": 5824,
+        "Y": 3648
       },
       "AllyLowPriorityFlags": 262144,
       "AllyHighPriorityFlags": 262664

@@ -31,17 +31,17 @@ namespace WarcraftLegacies.Source.Setup
     /// The Crown of Lordaeron.
     /// </summary>
     public Artifact CrownOfLordaeron { get; }
-    
+
     /// <summary>
     /// The Helm of Domination worn by the Lich King.
     /// </summary>
     public Artifact HelmOfDomination { get; }
-    
+
     /// <summary>
     /// Azshara's Scepter.
     /// </summary>
     public Artifact ScepterOfTheQueen { get; }
-    
+
     /// <summary>
     /// Powerful tome left behind by the Guardian Medivh.
     /// </summary>
@@ -56,7 +56,7 @@ namespace WarcraftLegacies.Source.Setup
     /// Horn that can be used to call a bunch of wisps.
     /// </summary>
     public Artifact HornOfCenarius { get; }
-    
+
     /// <summary>
     /// A remnant of the Titan Sargeras.
     /// </summary>
@@ -66,40 +66,35 @@ namespace WarcraftLegacies.Source.Setup
     /// Destroyer of Worlds.
     /// </summary>
     public Artifact ZinRokh { get; }
-    
-    /// <summary>
-    /// Scythe tied to the origin of the Worgen.
-    /// </summary>
-    public Artifact ScytheOfElune { get; }
-    
+
     /// <summary>
     /// A fragment of Zin'rokh.
     /// </summary>
     public Artifact AzureFragment { get; }
-    
+
     /// <summary>
     /// A fragment of Zin'rokh.
     /// </summary>
     public Artifact EmeraldFragment { get; }
-    
+
     /// <summary>
     /// A fragment of Zin'rokh.
     /// </summary>
     public Artifact RubyFragment { get; }
-    
+
     /// <summary>
     /// A fragment of Zin'rokh.
     /// </summary>
     public Artifact ObsidianFragment { get; }
-    
+
     /// <summary>
     /// A fragment of Zin'rokh.
     /// </summary>
     public Artifact BronzeFragment { get; }
-    
+
     public Artifact SunwellVial { get; set; }
-    
-    
+
+
     /// <summary>
     /// Sets up <see cref="ArtifactSetup"/>.
     /// </summary>
@@ -189,13 +184,6 @@ namespace WarcraftLegacies.Source.Setup
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("hmtm"), new Point(15109, -895)), tempArtifact.Item);
       ArtifactManager.Register(tempArtifact);
 
-      ScytheOfElune = new Artifact(CreateItem(ITEM_I00R_SCYTHE_OF_ELUNE, DummyX, DummyX));
-      var worgenBloodShamanHero = preplacedUnitSystem.GetUnit(UNIT_O038_WORGEN_BLOOD_SHAMAN_WORGEN_HERO,
-        new Point(5410.7f, 2499.0f));
-      UnitAddAbility(worgenBloodShamanHero, Artifact.ArtifactHolderAbilId);
-      UnitAddItem(worgenBloodShamanHero, ScytheOfElune.Item);
-      ArtifactManager.Register(ScytheOfElune);
-      
       SunwellVial = new Artifact(CreateItem(ITEM_I018_VIAL_OF_THE_SUNWELL, DummyX, DummyX));
       var sunwell = preplacedUnitSystem.GetUnit(UNIT_N001_THE_SUNWELL_QUEL_THALAS_OTHER);
       UnitAddAbility(sunwell, Artifact.ArtifactHolderAbilId);

@@ -67,6 +67,7 @@ namespace WarcraftLegacies.Source.Factions
       AddQuest(new QuestRebuildAhnqiraj(Regions.QirajOutsideUnlock, _gateAhnQiraj));
       AddQuest(new QuestSlitheringForward(Regions.QirajOutpost1, Regions.QirajOutpost2, Regions.QirajOutpost3));
       AddQuest(new QuestTanarisOutpost(Regions.QirajOutpost5));
+      AddQuest(new QuestFeralas(Regions.AQFeralasUnlock));
       AddQuest(new QuestEmperorConstruct());
       AddQuest(new QuestMockeryOfLife());
       AddQuest(new QuestDesolation(_allLegendSetup.Ahnqiraj.Cthun));

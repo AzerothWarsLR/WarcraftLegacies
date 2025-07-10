@@ -1,0 +1,15 @@
+{
+  "Left": -15968,
+  "Bottom": -12224,
+  "Right": -13056,
+  "Top": -10080,
+  "Name": "AQFeralasUnlock",
+  "CreationNumber": 206,
+  "AmbientSound": "",
+  "Color": {
+    "A": 255,
+    "R": 128,
+    "G": 128,
+    "B": 255
+  }
+}

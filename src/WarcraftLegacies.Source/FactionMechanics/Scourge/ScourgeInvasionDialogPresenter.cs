@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
       var spreadRadius = 10;
       var angle = 0f;
       var angleStep = 45f;
-      const float DegreesToRadians = (float)(Math.PI / 180);
+      const float degreesToRadians = (float)(Math.PI / 180);
 
       var unitsToTeleport = GlobalGroup.EnumUnitsInRect(Regions.Northrend_Ambiance)
         .Where(x => x.OwningPlayer() == pickingPlayer)
@@ -37,8 +37,8 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
 
       foreach (var unit in unitsToTeleport)
       {
-        var x = center.X + spreadRadius * (float)Math.Cos(angle * DegreesToRadians);
-        var y = center.Y + spreadRadius * (float)Math.Sin(angle * DegreesToRadians);
+        var x = center.X + spreadRadius * (float)Math.Cos(angle * degreesToRadians);
+        var y = center.Y + spreadRadius * (float)Math.Sin(angle * degreesToRadians);
         SetUnitPosition(unit, x, y);
 
         if (IsUnitType(unit, UNIT_TYPE_SUMMONED) && choice.AttackTarget != null)

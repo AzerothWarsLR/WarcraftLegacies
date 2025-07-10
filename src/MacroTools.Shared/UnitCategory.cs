@@ -11,14 +11,20 @@
     TownHall,
     
     Worker,
-    
+
+    GilneasManor,
+
     Shipyard,
-    
+
+    LightHouse,
+
     Farm,
     
     Altar,
     
     Specialist,
+
+    Waygate,
     
     Siege,
     
@@ -33,7 +39,13 @@
     Tower2,
     
     Tower3,
-    
+
+    Tower4,
+
+    Tower5,
+
+    Tower6,
+
     Shop,
     
     Teleport,
@@ -41,15 +53,23 @@
     SpecailFarm1,
 
     SpecailFarm2,
-    
+
+    SpecailFarm3,
+
+    SpecailFarm4,
+
     Elite,
     
     CasterSupport,
     
     CasterBasic,
-    
+
+    Caster3,
+
     CasterAdvanced,
-    
+
+    CasterAdvanced2,
+
     RangedBasic,
     
     MeleeBasic,
