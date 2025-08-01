@@ -6,12 +6,6 @@
   "Modifications": [
     {
       "Level": 1,
-      "Id": 1852072801,
-      "Type": 2,
-      "Value": 5
-    },
-    {
-      "Level": 1,
       "Id": 1918989409,
       "Type": 3,
       "Value": "air,alive,allies,ancient,bridge,dead,debris,decoration,enemies,friend,ground,hero,invulnerable,item,mechanical,neutral,nonancient,nonhero,nonsapper,none,notself,organic,player,self,structure,sapper,terrain,tree,vulnerable,wall,ward"
