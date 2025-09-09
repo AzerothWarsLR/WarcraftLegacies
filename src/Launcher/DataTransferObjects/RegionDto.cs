@@ -1,4 +1,4 @@
-﻿using War3Net.Build;
+﻿using War3Net.Build.Common;
 
 namespace Launcher.DataTransferObjects
 {
