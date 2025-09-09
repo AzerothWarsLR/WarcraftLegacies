@@ -28,11 +28,6 @@
       "Value": "Reduces all attacks on the unit by \u003CZBHL,DataC1\u003E damage. Attacks cannot be reduced below \u003CZBHL,DataB1\u003E damage."
     },
     {
-      "Id": 2037082209,
-      "Type": 3,
-      "Value": ""
-    },
-    {
       "Id": 2020631137,
       "Value": 1
     }
