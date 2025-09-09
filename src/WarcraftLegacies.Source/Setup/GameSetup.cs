@@ -1,5 +1,6 @@
 ﻿using MacroTools.CommandSystem;
 using MacroTools.ControlPointSystem;
+using MacroTools.FactionSystem;
 using MacroTools.GameModes;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Save;
@@ -24,6 +25,7 @@ namespace WarcraftLegacies.Source.Setup
     /// </summary>
     public static void Setup()
     {
+      FactionManager.Setup();
       UnitTypeConfig.Setup();
       SaveManager.Initialize();
       KeyboardSetup.InitializeKeyboard();

@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using MacroTools.Extensions;
+using MacroTools.ResearchSystems;
+using MacroTools.Utils;
+using WCSharp.Events;
+using static War3Api.Common;
 
 namespace MacroTools.FactionSystem
 {
@@ -43,6 +48,43 @@ namespace MacroTools.FactionSystem
       }
     }
 
+    /// <summary>
+    /// Initialize WC3 game events related to <see cref="Faction"/>s.
+    /// </summary>
+    public static void Setup()
+    {
+      PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
+      {
+        try
+        {
+          var faction = GetTriggerPlayer().GetFaction();
+          if (faction == null)
+            return;
+          
+          var researchId = GetResearched();
+          var research = ResearchManager.GetFromTypeId(researchId);
+          if (research == null || !research.IncompatibleWith.Any(x => faction.GetObjectLevel(x.ResearchTypeId) > 0))
+          {
+            faction.SetObjectLevel(researchId, GetPlayerTechCount(GetTriggerPlayer(), researchId, true));
+            if (research == null)
+              return;
+            research.OnResearch(GetTriggerPlayer());
+            foreach (var otherResearch in research.IncompatibleWith)
+              faction.SetObjectLimit(otherResearch.ResearchTypeId, -Faction.UNLIMITED);
+          }
+          else
+          {
+            faction.SetObjectLimit(researchId, -Faction.UNLIMITED);
+            research.Refund(GetTriggerPlayer());
+          }
+        }
+        catch (Exception ex)
+        {
+          Logger.LogError(ex.ToString());
+        }
+      });
+    }
+    
     private static void OnFactionNameChange(object? sender, FactionNameChangeEventArgs args)
     {
       try

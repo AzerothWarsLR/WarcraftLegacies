@@ -7,10 +7,8 @@ using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives;
 using MacroTools.QuestSystem;
-using MacroTools.ResearchSystems;
 using MacroTools.Shared;
 using MacroTools.Utils;
-using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
 
@@ -44,40 +42,6 @@ namespace MacroTools.FactionSystem
     private string _name;
     private player? _player;
 
-    static Faction()
-    {
-      PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
-      {
-        try
-        {
-          var faction = GetTriggerPlayer().GetFaction();
-          if (faction == null)
-            return;
-          
-          var researchId = GetResearched();
-          var research = ResearchManager.GetFromTypeId(researchId);
-          if (research == null || !research.IncompatibleWith.Any(x => faction.GetObjectLevel(x.ResearchTypeId) > 0))
-          {
-            faction.SetObjectLevel(researchId, GetPlayerTechCount(GetTriggerPlayer(), researchId, true));
-            if (research == null)
-              return;
-            research.OnResearch(GetTriggerPlayer());
-            foreach (var otherResearch in research.IncompatibleWith)
-              faction.SetObjectLimit(otherResearch.ResearchTypeId, -UNLIMITED);
-          }
-          else
-          {
-            faction.SetObjectLimit(researchId, -UNLIMITED);
-            research.Refund(GetTriggerPlayer());
-          }
-        }
-        catch (Exception ex)
-        {
-          Logger.LogError(ex.ToString());
-        }
-      });
-    }
-
     protected Faction(string name, playercolor[] colorPriority, string icon)
     {
       _name = name;
@@ -89,10 +53,6 @@ namespace MacroTools.FactionSystem
       PlayerColor = ColorManager.AssignPreferredColorOrFallback(colorPriority);
       PrefixCol = ColorManager.GetColorHexCode(PlayerColor);
     }
-
-
-
-
 
     internal List<FactionDependentInitializer> FactionDependentInitializers { get; } = new();
 
