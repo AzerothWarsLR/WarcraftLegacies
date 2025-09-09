@@ -17,8 +17,14 @@ namespace Launcher.MapMigrations
     {
       var units = objectDatabase.GetUnits().ToList();
       var flight =
-        objectDatabase.GetUpgrade(Constants.UPGRADE_R09X_FORTIFIED_HULLS_UNIVERSAL_UPGRADE.InvertEndianness());
+        objectDatabase.TryGetUpgrade(Constants.UPGRADE_R09X_FORTIFIED_HULLS_UNIVERSAL_UPGRADE.InvertEndianness());
 
+      if (flight == null)
+      {
+        Console.WriteLine($"Could not execute {nameof(FlightMigration)} due to missing Flight research.");
+        return;
+      }
+      
       foreach (var unit in units)
       {
         try
