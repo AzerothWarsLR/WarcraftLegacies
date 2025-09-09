@@ -22,19 +22,9 @@ namespace Launcher.IntegrityChecker
     {
       var issues = new List<string>();
       var objectDatabase = _mapTestFixture.ObjectDatabase;
-      
-      var exceptions = new HashSet<string>
-      {
-        "nftk", "nogo", "okod", "otbk", "n07A", "o02M", "o06Q", "o071", "o072", "o073"
-      };
 
       foreach (var unit in objectDatabase.GetUnits().ToArray())
       {
-        if (exceptions.Contains(unit.GetReadableId()))
-        {
-          continue;
-        }
-
         if (VerifyUnitsTrained(unit, out var unitsTrainedIssues)) 
           issues.Add(unitsTrainedIssues);
 
