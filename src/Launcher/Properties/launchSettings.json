@@ -27,6 +27,10 @@
     "WarcraftLegacies: Convert MapData to W3X": {
       "commandName": "Project",
       "commandLineArgs": "mapdata-to-w3x WarcraftLegacies false \"..\\..\\..\\..\\..\\mapdata\\WarcraftLegacies\" \"..\\..\\..\\..\\..\\maps\" --backup-directory \"..\\..\\..\\..\\..\\maps\\backups\" --output-type Folder"
+    },
+    "WarcraftLegacies: Transpile C# to Lua": {
+      "commandName": "Project",
+      "commandLineArgs": "csharp-to-lua WarcraftLegacies \"..\\..\\..\\..\\..\\maps\" \"..\\..\\..\\..\\WarcraftLegacies.Source\""
     }
   }
 }
