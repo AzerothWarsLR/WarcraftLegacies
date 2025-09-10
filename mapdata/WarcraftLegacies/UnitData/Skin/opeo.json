@@ -20,13 +20,13 @@
       "Value": 0.85
     },
     {
-      "Id": 1651864693,
-      "Type": 3,
-      "Value": "Hard working, back breaking laborer."
-    },
-    {
       "Id": 1667462261,
       "Value": 1
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Basic worker unit."
     }
   ]
 }
