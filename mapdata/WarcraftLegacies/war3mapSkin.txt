@@ -1,3 +1,6 @@
+[Categories]
+GiantClass="Elite"
+
 [CmdSelectSkill]
 Hotkey=F
 Tip=Hero Abilities (|cffffcc00F|r)
