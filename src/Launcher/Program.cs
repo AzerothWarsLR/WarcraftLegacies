@@ -19,6 +19,7 @@ namespace Launcher
       var rootCommand = new RootCommand();
       rootCommand.RegisterMapDataToW3XCommand();
       rootCommand.RegisterW3XToMapDataCommand();
+      rootCommand.RegisterCSharpToLuaCommand();
       return rootCommand.Invoke(args);
     }
 
