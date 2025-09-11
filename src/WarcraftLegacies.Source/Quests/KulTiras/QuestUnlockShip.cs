@@ -8,7 +8,7 @@ using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.FactionMechanics.KulTiras;
 using WCSharp.Shared.Data;
-using static War3Api.Blizzard;
+using static WCSharp.Api.Blizzard;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {

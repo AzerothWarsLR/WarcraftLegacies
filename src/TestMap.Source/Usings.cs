@@ -1,2 +1,2 @@
-﻿global using static War3Api.Common;
-global using static MacroTools.Libraries.GeneralHelpers;
+﻿global using WCSharp.Api;
+global using static WCSharp.Api.Common;

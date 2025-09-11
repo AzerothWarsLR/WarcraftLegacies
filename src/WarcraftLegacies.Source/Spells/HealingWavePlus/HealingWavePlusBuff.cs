@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
       Duration = duration; 
 
      
-      Bind(ABILITY_HWP2_ENERGY_WAVE_BUFF_APPLICATOR, BUFF_HWP3_ENERGY_WAVE);
+      BindAura(ABILITY_HWP2_ENERGY_WAVE_BUFF_APPLICATOR, BUFF_HWP3_ENERGY_WAVE);
     }
   }
 }

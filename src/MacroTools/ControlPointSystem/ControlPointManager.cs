@@ -7,7 +7,7 @@ using MacroTools.Libraries;
 using MacroTools.Systems;
 using WCSharp.Effects;
 using WCSharp.Events;
-using static War3Api.Blizzard;
+using static WCSharp.Api.Blizzard;
 
 namespace MacroTools.ControlPointSystem
 {

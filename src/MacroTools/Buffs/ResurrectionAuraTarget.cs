@@ -18,7 +18,7 @@ namespace MacroTools.Buffs
     
     public ResurrectionAuraTarget(unit caster, unit target, float resurrectionChance) : base(caster, target)
     {
-      Bind(FourCC("Hres"), FourCC("Ares"));
+      BindAura(FourCC("Hres"), FourCC("Ares"));
       EffectString = @"Abilities\Spells\Other\GeneralAuraTarget\GeneralAuraTarget.mdl";
       _resurrectionChance = resurrectionChance;
     }

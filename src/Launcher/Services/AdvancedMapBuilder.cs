@@ -150,7 +150,7 @@ namespace Launcher.Services
       };
       
       // Collect required paths and compile
-      var coreSystemFiles = CoreSystemProvider.GetCoreSystemFiles();
+      var coreSystemFiles = CoreSystemProvider.GetCoreSystemFiles(CSharpLua.CoreSystem.Wc3Api.WCSharp);
       const string blizzardJ = "../../../../../build/blizzard.j";
       const string commonJ = "../../../../../build/common.j";
       var mapScriptBuilder = new MapScriptBuilder();

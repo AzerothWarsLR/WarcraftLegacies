@@ -9,7 +9,7 @@ using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
-using static War3Api.Blizzard;
+using static WCSharp.Api.Blizzard;
 
 namespace WarcraftLegacies.Source.Quests.Dalaran
 {
