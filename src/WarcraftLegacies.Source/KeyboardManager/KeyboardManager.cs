@@ -1,21 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using WCSharp.Api.Enums;
 
 namespace WarcraftLegacies.Source.KeyboardManager
 {
     public class KeyboardManager
     {
-        private readonly Dictionary<player, Action<oskeytype, int, bool>> _keyHandlers;
+        private readonly Dictionary<player, Action<oskeytype, MetaKey, bool>> _keyHandlers;
         private readonly trigger _keyTrigger;
 
         public KeyboardManager()
         {
-            _keyHandlers = new Dictionary<player, Action<oskeytype, int, bool>>();
+            _keyHandlers = new Dictionary<player, Action<oskeytype, MetaKey, bool>>();
             _keyTrigger = CreateTrigger();
             TriggerAddAction(_keyTrigger, OnKeyEvent);
         }
 
-        public void RegisterKeyboardEvents(player whichPlayer, Action<oskeytype, int, bool> handler)
+        public void RegisterKeyboardEvents(player whichPlayer, Action<oskeytype, MetaKey, bool> handler)
         {
             if (whichPlayer == null) throw new ArgumentNullException(nameof(whichPlayer));
             if (handler == null) throw new ArgumentNullException(nameof(handler));
@@ -77,7 +78,7 @@ namespace WarcraftLegacies.Source.KeyboardManager
             _keyboardManager.RegisterKeyboardEvents(whichPlayer, OnKeyEvent);
         }
 
-        private void OnKeyEvent(oskeytype key, int metaKey, bool isKeyDown)
+        private void OnKeyEvent(oskeytype key, MetaKey metaKey, bool isKeyDown)
         {
             if (isKeyDown && key == OSKEY_F4)
             {

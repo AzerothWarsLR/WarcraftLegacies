@@ -2,7 +2,6 @@
 using MacroTools.CommandSystem;
 using MacroTools.Extensions;
 using MacroTools.Utils;
-using static MacroTools.Libraries.GeneralHelpers;
 
 namespace MacroTools.Cheats
 {

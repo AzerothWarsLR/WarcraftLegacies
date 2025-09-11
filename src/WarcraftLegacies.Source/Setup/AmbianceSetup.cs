@@ -1,6 +1,6 @@
 ﻿using MacroTools.Extensions;
 using static WarcraftLegacies.Source.AmbianceLibrary;
-using static War3Api.Blizzard;
+using static WCSharp.Api.Blizzard;
 
 namespace WarcraftLegacies.Source.Setup
 {

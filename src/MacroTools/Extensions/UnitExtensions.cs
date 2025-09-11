@@ -5,7 +5,6 @@ using MacroTools.LegendSystem;
 using MacroTools.Libraries;
 using MacroTools.Systems;
 using WCSharp.Shared.Data;
-using static MacroTools.Libraries.GeneralHelpers;
 
 namespace MacroTools.Extensions
 {
