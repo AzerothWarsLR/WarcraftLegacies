@@ -31,11 +31,12 @@ namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
       var formerLifePercent = Target.GetLifePercent();
       var formerPosition = Target.GetPosition();
       var formerOwner = Target.OwningPlayer();
-      
-      Target.Kill().Remove();
-      
-      var matureEgg = CreateUnit(formerOwner, MatureEggUnitTypeId, formerPosition.X, formerPosition.Y, 270)
-        .SetLifePercent(formerLifePercent);
+
+      KillUnit(Target);
+      RemoveUnit(Target);
+
+      var matureEgg = CreateUnit(formerOwner, MatureEggUnitTypeId, formerPosition.X, formerPosition.Y, 270);
+      matureEgg.SetLifePercent(formerLifePercent);
       
       var matureEggBuff = new MatureEggBuff(matureEgg)
       {

@@ -68,7 +68,10 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
 
       foreach (var unit in GlobalGroup.EnumUnitsInRect(Regions.Dalaran).Where(x =>
                  x.OwningPlayer() == completingFaction.Player && IsUnitType(x, UNIT_TYPE_STRUCTURE)).ToList())
-        unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      {
+        player whichPlayer = Player(PLAYER_NEUTRAL_AGGRESSIVE);
+        SetUnitOwner(unit, whichPlayer, true);
+      }
     }
 
     /// <inheritdoc />

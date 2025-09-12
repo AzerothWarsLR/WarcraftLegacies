@@ -72,8 +72,8 @@ namespace WarcraftLegacies.Source.Spells
                 return;
             }
 
-          
-            targetUnit.Kill();
+
+            KillUnit(targetUnit);
 
             var healthToRestore = targetHealth * HealthRestorePercent;
             caster.Heal(healthToRestore);

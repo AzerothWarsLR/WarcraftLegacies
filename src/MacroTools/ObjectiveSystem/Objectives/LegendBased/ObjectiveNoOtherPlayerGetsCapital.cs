@@ -19,7 +19,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     public NoOtherPlayerGetsCapital(Capital target)
     {
       _target = target;
-      Description = $"No other player has acquired {target.Unit.GetName()}";
+      Description = $"No other player has acquired {GetUnitName(target.Unit)}";
     }
 
     /// <inheritdoc/>

@@ -45,13 +45,13 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       
       foreach (var unit in _rescueUnits)
       {
-        unit.PauseEx(false);
+        BlzPauseUnitEx(unit, false);
       }
       
       if (_feathermoon.Unit != null && GetUnitState(_feathermoon.Unit, UNIT_STATE_LIFE) > 0)
       {
         _feathermoon.Unit.SetLifePercent(100);
-        _feathermoon.Unit.PauseEx(false);
+        BlzPauseUnitEx(_feathermoon.Unit, false);
       }
     }
 
@@ -65,13 +65,13 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
       
       foreach (var unit in _rescueUnits)
       {
-        unit.PauseEx(false);
+        BlzPauseUnitEx(unit, false);
       }
 
       if (_feathermoon.Unit != null && GetUnitState(_feathermoon.Unit, UNIT_STATE_LIFE) > 0)
       {
         _feathermoon.Unit.SetLifePercent(100);
-        _feathermoon.Unit.PauseEx(false);
+        BlzPauseUnitEx(_feathermoon.Unit, false);
       }
     }
   }

@@ -35,14 +35,16 @@ namespace WarcraftLegacies.Source.Quests
     {
       CreateRegion();
       _entrance = entrance;
-      guldanRemains.SetAnimation("death").SetInvulnerable(true);
+      SetUnitAnimation(guldanRemains, "death");
+      SetUnitInvulnerable(guldanRemains, true);
       AddObjective(new ObjectiveTime(900));
       _enterTombOfSargerasRegion =
         new ObjectiveAnyHeroWithLevelReachRect(10, Regions.Sargeras_Entrance, "the Tomb of Sargeras' entrance");
       AddObjective(_enterTombOfSargerasRegion);
       _preventAccessTriggers = CreatePreventAccessTriggers(interiorRects);
       HideUnitsInsideTomb(interiorRects);
-      _entranceDoor = entranceDoor.SetInvulnerable(true);
+      SetUnitInvulnerable(entranceDoor, true);
+      _entranceDoor = entranceDoor;
       IsFactionQuest = false;
     }
 
@@ -63,8 +65,8 @@ namespace WarcraftLegacies.Source.Quests
           preventAccessTrigger.Destroy();
 
       _preventAccessTriggers = null;
+      SetUnitInvulnerable(_entranceDoor, false);
       _entranceDoor
-        .SetInvulnerable(false)
         .TakeDamage(_enterTombOfSargerasRegion.CompletingUnit, 10000);
     }
 
@@ -74,9 +76,9 @@ namespace WarcraftLegacies.Source.Quests
       foreach (var unit in GlobalGroup.EnumUnitsInRect(rect.Rect).Where(x => !BlzIsUnitInvulnerable(x)))
       {
         _rescueUnits.Add(unit);
-        unit
-          .SetInvulnerable(true)
-          .Show(false);
+        SetUnitInvulnerable(unit, true);
+        unit tempQualifier = unit;
+        ShowUnit(tempQualifier, false);
       }
     }
 

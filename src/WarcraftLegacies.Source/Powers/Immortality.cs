@@ -86,13 +86,14 @@ namespace WarcraftLegacies.Source.Powers
     private void OnDamage()
     {
       var damagedUnit = GetTriggerUnit();
-      if (!IsActive || !(GetEventDamage() >= damagedUnit.GetHitPoints()) ||
+      if (!IsActive || !(GetEventDamage() >= GetUnitState(damagedUnit, UNIT_STATE_LIFE)) ||
           !(GetRandomInt(0, 100) < _healChancePercentage) || IsUnitType(damagedUnit, UNIT_TYPE_STRUCTURE) ||
           IsUnitType(damagedUnit, UNIT_TYPE_MECHANICAL)) 
         return;
       
       BlzSetEventDamage(0);
-      damagedUnit.SetCurrentHitpoints((int)(damagedUnit.GetMaximumHitPoints() * ((float)_healAmountPercentage / 100)));
+      int value = (int)(BlzGetUnitMaxHP(damagedUnit) * ((float)_healAmountPercentage / 100));
+      SetUnitState(damagedUnit, UNIT_STATE_LIFE, value);
       AddSpecialEffectTarget(Effect, damagedUnit, "origin")
         .SetLifespan(1);
     }

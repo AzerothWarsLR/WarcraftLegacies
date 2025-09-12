@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Utils;
 
@@ -49,8 +48,10 @@ namespace WarcraftLegacies.Source.Powers
         .EnumUnitsOfPlayer(whichPlayer);
 
       foreach (var unit in playerUnits)
-        if (MindlessUndeadUnitTypes.Contains(unit.GetTypeId()))
-          unit.Kill();
+        if (MindlessUndeadUnitTypes.Contains(GetUnitTypeId(unit)))
+        {
+          KillUnit(unit);
+        }
     }
   }
 }

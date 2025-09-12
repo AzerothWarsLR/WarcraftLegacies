@@ -53,12 +53,28 @@ namespace WarcraftLegacies.Source.Quests.Legion
       _legionTeleporter2?.IssueOrder(ORDER_BERSERK);
       CreateTimer().Start(0.5f, false, () =>
       {
-        _legionTeleporter1?.Remove();
-        _legionTeleporter2?.Remove();
+        unit tempQualifier = _legionTeleporter1;
+        if (tempQualifier != null)
+        {
+          RemoveUnit(tempQualifier);
+        }
+
+        unit tempQualifier1 = _legionTeleporter2;
+        if (tempQualifier1 != null)
+        {
+          RemoveUnit(tempQualifier1);
+        }
+
         GetExpiredTimer().Destroy();
       });
 
-      _anetheron.Unit?.SetAbilityLevel(ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS, 2);
+      unit tempQualifier2 = _anetheron.Unit;
+      unit ret = null;
+      if (tempQualifier2 != null)
+      {
+        SetUnitAbilityLevel(tempQualifier2, ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS, 2);
+        ret = tempQualifier2;
+      }
 
       whichFaction.ModObjectLimit(UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC, 9);
       whichFaction.ModObjectLimit(UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS, 9);

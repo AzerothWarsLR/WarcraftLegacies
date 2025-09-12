@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       
       ResearchId = UPGRADE_R09Z_QUEST_COMPLETED_OFFSHORE_INVESTMENT;
       _rescueUnits = Regions.KezanUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures,
-        filterUnit => filterUnit.GetTypeId() != FourCC("ngme"));
+        filterUnit => GetUnitTypeId(filterUnit) != FourCC("ngme"));
     }
 
     /// <inheritdoc />

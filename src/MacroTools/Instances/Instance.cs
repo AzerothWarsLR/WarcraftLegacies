@@ -97,7 +97,9 @@ namespace MacroTools.Instances
         }
 
         foreach (var unit in _dependencies)
-          unit.Kill();
+        {
+          KillUnit(unit);
+        }
       }
       catch (Exception ex)
       {

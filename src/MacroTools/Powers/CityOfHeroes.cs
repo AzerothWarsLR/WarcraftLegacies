@@ -49,20 +49,20 @@ namespace MacroTools.Powers
 
     private void Heroize(unit whichUnit)
     {
-      if (whichUnit.IsType(UNIT_TYPE_HERO) || whichUnit.IsType(UNIT_TYPE_PEON) || !Filter(whichUnit))
+      if (IsUnitType(whichUnit, UNIT_TYPE_HERO) || IsUnitType(whichUnit, UNIT_TYPE_PEON) || !Filter(whichUnit))
         return;
 
       AddSpecialEffect(@"Abilities\Spells\Other\Levelup\Levelupcaster.mdx", GetUnitX(whichUnit), GetUnitY(whichUnit))
         .SetLifespan(1);
-      whichUnit
-        .MultiplyBaseDamage(_statMultiplier, 0)
-        .MultiplyBaseDamage(_statMultiplier, 1)
-        .MultiplyMaxHitpoints(_statMultiplier)
-        .MultiplyMaxMana(_statMultiplier)
-        .RemoveAbility(FourCC("Aihn"))
-        .AddAbility(HeroGlowAbilityTypeId)
-        .AddAbility(FourCC("AInv"))
-        .SetArmorType(5);
+
+      whichUnit.MultiplyBaseDamage(_statMultiplier, 0);
+      whichUnit.MultiplyBaseDamage(_statMultiplier, 1);
+      whichUnit.MultiplyMaxHitpoints(_statMultiplier);
+      whichUnit.MultiplyMaxMana(_statMultiplier);
+      UnitRemoveAbility(whichUnit, FourCC("Aihn"));
+      whichUnit.AddAbility(HeroGlowAbilityTypeId);
+      whichUnit.AddAbility(FourCC("AInv"));
+      whichUnit.SetArmorType(5);
 
       if (whichUnit.GetAttackType() != 3)
         whichUnit.SetAttackType(6);

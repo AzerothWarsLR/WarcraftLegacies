@@ -51,7 +51,7 @@ namespace MacroTools.PassiveAbilities
           .SetTimedLife(Duration);
       AddSpecialEffect(SpecialEffectPath, pos.X, pos.Y)
         .SetLifespan(1);
-      triggerUnit.Remove();
+      RemoveUnit(triggerUnit);
     }
   }
 }

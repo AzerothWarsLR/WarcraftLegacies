@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
@@ -16,7 +15,9 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
       "The Maelstrom still hides the shattered Well of Eternity. With his immense power, Kil'jaeden can summon a new well that will bring forth the destruction of the world.",
       @"ReplaceableTextures\CommandButtons\BTNFountainOfLife.blp")
     {
-      _well = preplacedUnitSystem.GetUnit(UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER).Show(false);
+      unit tempQualifier = preplacedUnitSystem.GetUnit(UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER);
+      ShowUnit(tempQualifier, false);
+      _well = tempQualifier;
       AddObjective(new ObjectiveChannelRect(Regions.MaelstromChannel, "The Maelstrom", kiljaeden, 420, 90, Title));
       Global = true;
     }
@@ -32,7 +33,7 @@ namespace WarcraftLegacies.Source.Quests.Sunfury
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      _well.Show(true);
+      ShowUnit(_well, true);
       SetUnitOwner(_well, completingFaction.Player, true);
     }
   }

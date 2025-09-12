@@ -43,7 +43,8 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
       if (_oilPower == null) 
         return;
       _oilPower.Income += _incomePerSecond;
-      Target.SetMana((int)_oilPower.Amount);
+      int value = (int)_oilPower.Amount;
+      SetUnitState(Target, UNIT_STATE_MANA, value);
     }
 
     /// <inheritdoc/>

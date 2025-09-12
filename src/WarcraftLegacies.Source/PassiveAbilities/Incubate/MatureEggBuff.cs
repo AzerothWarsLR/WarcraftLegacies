@@ -20,9 +20,9 @@ namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
     /// <inheritdoc />
     public override void OnApply()
     {
+      BlzSetUnitName(Target, "Mature Egg");
+      SetUnitVertexColor(Target, 255, 255, 255, 255);
       Target
-        .SetName("Mature Egg")
-        .SetColor(255, 255, 255, 255)
         .AddAbility(ABILITY_ZBBS_HATCH_INCUBATE);
 
       AddSpecialEffect(@"Abilities\Spells\Items\AIem\AIemTarget.mdl", GetUnitX(Target), GetUnitY(Target))

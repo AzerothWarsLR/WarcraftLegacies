@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.GameLogic
       PlayerUnitEvents.Register(UnitTypeEvent.IsSummoned, () =>
       {
         var summoningUnit = GetSummoningUnit();
-        if (summoningUnit.IsType(UNIT_TYPE_STRUCTURE))
+        if (IsUnitType(summoningUnit, UNIT_TYPE_STRUCTURE))
           GetSummonedUnit().IssueOrder("attack", summoningUnit.GetRallyPoint());
       });
     }

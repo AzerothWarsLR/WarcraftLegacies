@@ -22,18 +22,17 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
     
     public override void OnApply()
     {
-      Target
-        .SetLifePercent(100)
-        .PauseEx(true)
-        .Show(false);
-      
-      _egg = CreateUnit(Target.OwningPlayer(), EggId, GetUnitX(Target), GetUnitY(Target), 0)
-        .SetTimedLife(Duration + 1)
-        .SetMaximumHitpoints(MaximumHitPoints)
-        .SetLifePercent(100)
-        .SetArmor((int)BlzGetUnitArmor(Target))
-        .SetName($"Cocoon ({Target.GetProperName()})");
-      
+      Target.SetLifePercent(100);
+      BlzPauseUnitEx(Target, true);
+      ShowUnit(Target, false);
+
+      _egg = CreateUnit(Target.OwningPlayer(), EggId, GetUnitX(Target), GetUnitY(Target), 0);
+      _egg.SetTimedLife(Duration + 1);
+      BlzSetUnitMaxHP(_egg, MaximumHitPoints);
+      _egg.SetLifePercent(100);
+      BlzSetUnitArmor(_egg, BlzGetUnitArmor(Target));
+      BlzSetUnitName(_egg, $"Cocoon ({Target.GetProperName()})");
+
       AddSpecialEffect(ReviveEffect, GetUnitX(Target), GetUnitY(Target))
         .SetScale(2)
         .SetLifespan();
@@ -48,31 +47,32 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
             var experienceGained = HeroXpTable[index];
             SetHeroXP(killingUnit, GetHeroXP(killingUnit) + experienceGained, true);
           }
-          Target.Kill();
+
+          KillUnit(Target);
         });
     }
 
     public override void OnDispose()
     {
       _deathTrigger?.Destroy();
-      Target
-        .Show(true)
-        .PauseEx(false);
+      ShowUnit(Target, true);
+      BlzPauseUnitEx(Target, false);
 
       if (UnitAlive(_egg)) 
         Revive();
       else
       {
+        KillUnit(Target);
         Target
-          .Kill()
           .SetPosition(_egg!.GetPosition());
       }
     }
 
     private void Revive()
     {
-      Target.SetCurrentHitpoints(_egg!.GetCurrentHitPoints());
-      _egg!.Kill();
+      int value = (int)GetUnitState(_egg!, UNIT_STATE_LIFE);
+      SetUnitState(Target, UNIT_STATE_LIFE, value);
+      KillUnit(_egg!);
       Target.SetPosition(_egg!.GetPosition());
       
       AddSpecialEffect(ReviveEffect, GetUnitX(Target), GetUnitY(Target))

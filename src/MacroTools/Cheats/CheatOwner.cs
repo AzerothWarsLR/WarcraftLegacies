@@ -1,5 +1,4 @@
 using MacroTools.CommandSystem;
-using MacroTools.Extensions;
 using MacroTools.Utils;
 using static War3Api.Common;
 
@@ -25,8 +24,10 @@ namespace MacroTools.Cheats
       if (!int.TryParse(parameters[0], out var playerNumber))
         return "You must specify a valid player number as the first parameter.";
 
+      var newOwner = Player(playerNumber);
       foreach (var unit in GlobalGroup.EnumSelectedUnits(cheater)) 
-        unit.SetOwner(Player(playerNumber));
+        SetUnitOwner(unit, newOwner, true);
+
       return $"Setting owner of selected units to {GetPlayerName(Player(playerNumber))}.";
     }
   }

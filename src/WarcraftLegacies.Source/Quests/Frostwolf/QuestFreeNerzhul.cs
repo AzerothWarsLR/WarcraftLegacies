@@ -41,9 +41,8 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      _thrall.Unit?
-        .AddHeroAttributes(10, 10, 10)
-        .AddItemSafe(CreateItem(ITEM_I017_PORTAL_TO_NAGRAND, 0, 0));
+      _thrall.Unit?.AddHeroAttributes(10, 10, 10);
+      _thrall.Unit?.AddItemSafe(CreateItem(ITEM_I017_PORTAL_TO_NAGRAND, 0, 0));
     }
   }
 }

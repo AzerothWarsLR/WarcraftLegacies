@@ -124,7 +124,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
 
           foreach (var unit in rescueUnits)
           {
-            unit.PauseEx(false);
+            BlzPauseUnitEx(unit, false);
           }
 
  

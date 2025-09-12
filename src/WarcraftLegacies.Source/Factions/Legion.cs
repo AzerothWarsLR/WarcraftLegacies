@@ -89,7 +89,7 @@ namespace WarcraftLegacies.Source.Factions
         {
           IconName = "achievement_raid_argusraid",
           Name = "Rematerialization",
-          EligibilityCondition = dyingUnit => dyingUnit.OwningPlayer().GetObjectLimit(dyingUnit.GetTypeId()) != 0
+          EligibilityCondition = dyingUnit => dyingUnit.OwningPlayer().GetObjectLimit(GetUnitTypeId(dyingUnit)) != 0
         }));
     }
 

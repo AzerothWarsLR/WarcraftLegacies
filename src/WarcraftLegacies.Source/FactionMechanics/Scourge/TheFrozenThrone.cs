@@ -62,20 +62,43 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
         return;
 
       RemoveAbilities();
-      _frozenThrone.Unit?
-        .SetName("Frozen Throne (Empty)").
-        SetSkin(UNIT_ZBFT_FROZEN_THRONE_EMPTY);
+      unit tempQualifier1 = _frozenThrone.Unit;
+      unit ret1 = null;
+      if (tempQualifier1 != null)
+      {
+        BlzSetUnitName(tempQualifier1, "Frozen Throne (Empty)");
+        ret1 = tempQualifier1;
+      }
+
+      BlzSetUnitSkin(ret1, UNIT_ZBFT_FROZEN_THRONE_EMPTY);
       State = FrozenThroneState.Empty;
       _frozenThrone.Capturable = false;
       _frozenThrone.DeathMessage =
         "Northrend quakes as Icecrown Citadel topples to the glacier below, bringing a final end to Ner'zhul's fortress and prison of ice.";
 
       if (_frozenThrone.ProtectorCount == 0)
-        _frozenThrone.Unit?.SetInvulnerable(false);
+      {
+        unit tempQualifier = _frozenThrone.Unit;
+        unit ret = null;
+        if (tempQualifier != null)
+        {
+          SetUnitInvulnerable(tempQualifier, false);
+          ret = tempQualifier;
+        }
+      }
 
       if (_frozenThrone.OwningPlayer == Player(PLAYER_NEUTRAL_PASSIVE))
-        _frozenThrone.Unit?.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
-      
+      {
+        unit tempQualifier = _frozenThrone.Unit;
+        unit ret = null;
+        if (tempQualifier != null)
+        {
+          player whichPlayer = Player(PLAYER_NEUTRAL_AGGRESSIVE);
+          SetUnitOwner(tempQualifier, whichPlayer, true);
+          ret = tempQualifier;
+        }
+      }
+
       if (removeDomination) 
         RemoveDomination();
     }
@@ -89,10 +112,18 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
         return;
 
       RemoveAbilities();
-      _frozenThrone.Unit?
-        .SetName("Frozen Throne (Ruptured)")
-        .SetOwner(Player(PLAYER_NEUTRAL_PASSIVE))
-        .SetInvulnerable(true);
+      unit tempQualifier = _frozenThrone.Unit;
+      unit ret = null;
+      if (tempQualifier != null)
+      {
+        BlzSetUnitName(tempQualifier, "Frozen Throne (Ruptured)");
+        unit tempQualifier1 = tempQualifier;
+        player whichPlayer = Player(PLAYER_NEUTRAL_PASSIVE);
+        SetUnitOwner(tempQualifier1, whichPlayer, true);
+        ret = tempQualifier1;
+      }
+
+      SetUnitInvulnerable(ret, true);
 
       foreach (var player in Util.EnumeratePlayers())
         DisplayTextToPlayer(player, 0, 0,
@@ -115,12 +146,21 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
 
     private static void RemoveAbilities()
     {
-      _frozenThrone.Unit?
-        .RemoveAbility(ABILITY_A0W8_RECALL_FROZEN_THRONE)
-        .RemoveAbility(ABILITY_A0L3_ANIMATE_DEAD_THE_FROZEN_THRONE)
-        .RemoveAbility(ABILITY_A001_FROST_NOVA_THE_FROZEN_THRONE)
-        .SetMaximumMana(0)
-        .SetName("Icecrown Citadel");
+      unit tempQualifier = _frozenThrone.Unit;
+      unit ret = null;
+      if (tempQualifier != null)
+      {
+        UnitRemoveAbility(tempQualifier, ABILITY_A0W8_RECALL_FROZEN_THRONE);
+        unit tempQualifier2 = tempQualifier;
+        UnitRemoveAbility(tempQualifier2, ABILITY_A0L3_ANIMATE_DEAD_THE_FROZEN_THRONE);
+        unit tempQualifier3 = tempQualifier2;
+        UnitRemoveAbility(tempQualifier3, ABILITY_A001_FROST_NOVA_THE_FROZEN_THRONE);
+        unit tempQualifier1 = tempQualifier3;
+        BlzSetUnitMaxMana(tempQualifier1, 0);
+        ret = tempQualifier1;
+      }
+
+      BlzSetUnitName(ret, "Icecrown Citadel");
     }
 
     private static void OnFrozenThroneChangeOwner()

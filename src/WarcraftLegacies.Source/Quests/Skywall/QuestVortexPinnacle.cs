@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Skywall
       AddObjective(new ObjectiveUpgrade(UNIT_N06R_GREAT_ALCAZAR_ELEMENTAL_T3, UNIT_N05Q_HOLDFAST_ELEMENTAL_T1));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
-        filterUnit => filterUnit.GetTypeId() != FourCC("ngme"));
+        filterUnit => GetUnitTypeId(filterUnit) != FourCC("ngme"));
       ResearchId = UPGRADE_RSW1_QUEST_COMPLETED_THE_VORTEX_PINNACLE;
 
     }

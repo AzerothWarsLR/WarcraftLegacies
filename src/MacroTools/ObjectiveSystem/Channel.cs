@@ -57,11 +57,11 @@ namespace MacroTools.ObjectiveSystem
 
       _position = position;
 
-      caster.SetPosition(_position)
-        .PauseEx(true)
-        .SetAnimation("channel")
-        .SetFacingEx(facing)
-        .SetInvulnerable(false);
+      caster.SetPosition(_position);
+      BlzPauseUnitEx(caster, true);
+      SetUnitAnimation(caster, "channel");
+      BlzSetUnitFacingEx(caster, facing);
+      SetUnitInvulnerable(caster, false);
       _sfxProgress = AddSpecialEffect(ProgressEffect, GetUnitX(caster), GetUnitY(caster))
         .SetTimeScale(10 / (float)duration)
         .SetColor(caster.OwningPlayer())
@@ -95,9 +95,11 @@ namespace MacroTools.ObjectiveSystem
     
     private void End(bool finishedWithoutInterruption)
     {
-      _caster.PauseEx(false);
+      BlzPauseUnitEx(_caster, false);
       if (finishedWithoutInterruption)
-        _caster.SetAnimation("spell");
+      {
+        SetUnitAnimation(_caster, "spell");
+      }
 
       if (UnitAlive(_caster)) 
         QueueUnitAnimation(_caster, "stand");

@@ -26,10 +26,10 @@ namespace WarcraftLegacies.Source.Quests
       @"ReplaceableTextures\CommandButtons\BTNYogg-saronIcon.blp")
     {
       _yoggsaron = yoggsaron;
-      _yoggsaronPrison = yoggsaronPrison
-        .MakeCapturable()
-        .SetOwner(Player(PLAYER_NEUTRAL_PASSIVE))
-        .SetInvulnerable(true);
+      yoggsaronPrison.MakeCapturable();
+      SetUnitOwner(yoggsaronPrison, Player(PLAYER_NEUTRAL_PASSIVE), true);
+      SetUnitInvulnerable(yoggsaronPrison, true);
+      _yoggsaronPrison = yoggsaronPrison;
 
       _heroInRectObjective =
         new ObjectiveHeroWithLevelInRect(14, Regions.YoggSaronPrison, "the Prison of Yogg-Saron");
@@ -47,9 +47,9 @@ namespace WarcraftLegacies.Source.Quests
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      _yoggsaronPrison
-        .SetOwner(_heroInRectObjective.CompletingUnit?.OwningPlayer() ?? Player(PLAYER_NEUTRAL_AGGRESSIVE))
-        .SetInvulnerable(false);
+      player whichPlayer = _heroInRectObjective.CompletingUnit?.OwningPlayer() ?? Player(PLAYER_NEUTRAL_AGGRESSIVE);
+      SetUnitOwner(_yoggsaronPrison, whichPlayer, true);
+      SetUnitInvulnerable(_yoggsaronPrison, false);
     }
 
     private void OnCastSummonSpell()
@@ -60,7 +60,7 @@ namespace WarcraftLegacies.Source.Quests
           yoggsaronSummonPoint.Y)
         .SetScale(2)
         .SetLifespan(1);
-      _yoggsaronPrison.Kill();
+      KillUnit(_yoggsaronPrison);
 
       foreach (var player in Util.EnumeratePlayers())
         player.DisplayLegendaryHeroSummoned(_yoggsaron,

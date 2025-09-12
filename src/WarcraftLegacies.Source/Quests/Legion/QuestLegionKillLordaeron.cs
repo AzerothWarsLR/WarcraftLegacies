@@ -31,7 +31,13 @@ namespace WarcraftLegacies.Source.Quests.Legion
     {
       _tichondrius.Unit?.DisplayHeroReward(15, 15, 15, 0);
       _tichondrius.Unit?.AddHeroAttributes(15, 15, 15);
-      _tichondrius.Unit?.SetAbilityLevel(ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS, 2);
+      unit tempQualifier = _tichondrius.Unit;
+      unit ret = null;
+      if (tempQualifier != null)
+      {
+        SetUnitAbilityLevel(tempQualifier, ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS, 2);
+        ret = tempQualifier;
+      }
     }
   }
 }

@@ -62,7 +62,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
         Duration = Duration,
         EggId = EggId,
         ReviveEffect = ReviveEffect,
-        MaximumHitPoints = (int)(damaged.GetMaximumHitPoints() * MaximumHealthPercentage)
+        MaximumHitPoints = (int)(BlzGetUnitMaxHP(damaged) * MaximumHealthPercentage)
       };
       BuffSystem.Add(vengeanceBuff);
     }

@@ -380,7 +380,15 @@ namespace WarcraftLegacies.Source.Factions
           if (lordaeronPlayer?.GetTeam()?.Contains(GetOwningPlayer(GetTriggerUnit())) == true){
             return;
           }
-          _allLegendSetup.Lordaeron.Terenas.Unit?.Kill();
+
+          unit tempQualifier = _allLegendSetup.Lordaeron.Terenas.Unit;
+          unit ret = null;
+          if (tempQualifier != null)
+          {
+            KillUnit(tempQualifier);
+            ret = tempQualifier;
+          }
+
           SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,
             FourCC("Ysaw"), false, "hide", false);
           SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,

@@ -449,7 +449,7 @@ namespace MacroTools.FactionSystem
         if (!_goldMines.Contains(goldMine))
           throw new InvalidOperationException($"Tried to remove Gold Mine from {Name} that they don't own.");
 
-        goldMine.Remove();
+        RemoveUnit(goldMine);
       }
     }
     
@@ -565,12 +565,16 @@ namespace MacroTools.FactionSystem
       var essentialLegends = new List<Legend>();
       
       foreach (var legend in LegendaryHeroManager.GetAll())
-        if (legend.Essential && legend.OwningPlayer == Player && legend.Unit?.IsAlive() == true)
+      {
+        if (legend.Essential && legend.OwningPlayer == Player && (legend.Unit != null ? UnitAlive(legend.Unit) : null) == true)
           essentialLegends.Add(legend);
-      
+      }
+
       foreach (var capital in CapitalManager.GetAll())
-        if (capital.Essential && capital.OwningPlayer == Player && capital.Unit?.IsAlive() == true)
+      {
+        if (capital.Essential && capital.OwningPlayer == Player && (capital.Unit != null ? UnitAlive(capital.Unit) : null) == true)
           essentialLegends.Add(capital);
+      }
 
       return essentialLegends;
     }

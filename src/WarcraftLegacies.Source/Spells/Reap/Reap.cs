@@ -64,7 +64,7 @@ namespace WarcraftLegacies.Source.Spells.Reap
 
         foreach (var killTarget in killTargets)
         {
-          killTarget.TakeDamage(caster, killTarget.GetHitPoints(), damageType: DAMAGE_TYPE_UNIVERSAL,
+          killTarget.TakeDamage(caster, GetUnitState(killTarget, UNIT_STATE_LIFE), damageType: DAMAGE_TYPE_UNIVERSAL,
             attackType: ATTACK_TYPE_CHAOS);
           AddSpecialEffect(KillEffect, GetUnitX(killTarget), GetUnitY(killTarget))
             .SetLifespan();

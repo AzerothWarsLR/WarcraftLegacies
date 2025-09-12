@@ -26,11 +26,11 @@ namespace MacroTools.DummyCasters
     public void CastUnit(unit caster, int level, unit target, DummyCastOriginType originType)
     {
       var originPoint = originType == DummyCastOriginType.Caster ? caster.GetPosition() : target.GetPosition();
-      _unit
-        .SetOwner(caster.OwningPlayer())
-        .SetPosition(originPoint)
-        .AddAbility(_abilityTypeId)
-        .SetAbilityLevel(_abilityTypeId, level);
+      var whichPlayer = caster.OwningPlayer();
+      SetUnitOwner(_unit, whichPlayer, true);
+      _unit.SetPosition(originPoint);
+      _unit.AddAbility(_abilityTypeId);
+      SetUnitAbilityLevel(_unit, _abilityTypeId, level);
 
       if (originType == DummyCastOriginType.Caster)
         _unit.FacePosition(target.GetPosition());
@@ -40,11 +40,11 @@ namespace MacroTools.DummyCasters
 
     public void CastNoTarget(unit caster, int level)
     {
-      _unit
-        .SetOwner(caster.OwningPlayer())
-        .SetPosition(caster.GetPosition())
-        .AddAbility(_abilityTypeId)
-        .SetAbilityLevel(_abilityTypeId, level);
+      var whichPlayer = caster.OwningPlayer();
+      SetUnitOwner(_unit, whichPlayer, true);
+      _unit.SetPosition(caster.GetPosition());
+      _unit.AddAbility(_abilityTypeId);
+      SetUnitAbilityLevel(_unit, _abilityTypeId, level);
 
       _unit.IssueOrder(_abilityOrderId);
     }
@@ -54,11 +54,11 @@ namespace MacroTools.DummyCasters
     /// </summary>
     public void CastNoTargetOnUnit(unit caster, int level, unit target)
     {
-      _unit
-        .SetOwner(caster.OwningPlayer())
-        .SetPosition(target.GetPosition())
-        .AddAbility(_abilityTypeId)
-        .SetAbilityLevel(_abilityTypeId, level);
+      var whichPlayer = caster.OwningPlayer();
+      SetUnitOwner(_unit, whichPlayer, true);
+      _unit.SetPosition(target.GetPosition());
+       _unit.AddAbility(_abilityTypeId);
+      SetUnitAbilityLevel(_unit, _abilityTypeId, level);
 
       _unit.IssueOrder(_abilityOrderId);
     }
@@ -68,11 +68,11 @@ namespace MacroTools.DummyCasters
     /// </summary>
     public void CastPoint(player whichPlayer, int level, Point target)
     {
+      SetUnitOwner(_unit, whichPlayer, true);
+      _unit.SetPosition(target);
+      _unit.AddAbility(_abilityTypeId);
+      SetUnitAbilityLevel(_unit, _abilityTypeId, level);
       _unit
-        .SetOwner(whichPlayer)
-        .SetPosition(target)
-        .AddAbility(_abilityTypeId)
-        .SetAbilityLevel(_abilityTypeId, level)
         .IssueOrder(_abilityOrderId, target);
     }
 

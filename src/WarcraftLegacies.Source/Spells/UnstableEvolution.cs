@@ -47,19 +47,16 @@ namespace WarcraftLegacies.Source.Spells
 
     private void EmpowerUnit(int level, unit target)
     {
-      target
-        .MultiplyBaseDamage(AttackDamageMultiplier.Base + AttackDamageMultiplier.PerLevel * level, 0)
-        .MultiplyAttackCooldown(1 / (AttackSpeedMultiplier.Base + AttackSpeedMultiplier.PerLevel * level), 0)
-        .MultiplyMaxHitpoints(MaxHealthMultiplier.Base + MaxHealthMultiplier.PerLevel * level)
-        .SetColor(100, 255, 150, 255)
-        .SetTimedLife(Duration)
-        .SetExplodeOnDeath(true)
-        .SetScale(1.1f); 
+      target.MultiplyBaseDamage(AttackDamageMultiplier.Base + AttackDamageMultiplier.PerLevel * level, 0);
+      target.MultiplyAttackCooldown(1 / (AttackSpeedMultiplier.Base + AttackSpeedMultiplier.PerLevel * level), 0);
+      target.MultiplyMaxHitpoints(MaxHealthMultiplier.Base + MaxHealthMultiplier.PerLevel * level);
+      SetUnitVertexColor(target, 100, 255, 150, 255);
+      target.SetTimedLife(Duration);
+      SetUnitExploded(target, true);
+      SetUnitScale(target, 1.1f, 1.1f, 1.1f);
 
-      if (target.GetTypeId() == UNIT_U013_SUPER_MAJOR_C_THUN)
-      {
-        target.SetScale(0.6f);
-      }
+      if (GetUnitTypeId(target) == UNIT_U013_SUPER_MAJOR_C_THUN) 
+        SetUnitScale(target, 0.6f, 0.6f, 0.6f);
   
       AddSpecialEffect(EffectTarget, GetUnitX(target), GetUnitY(target))
         .SetScale(EffectScaleTarget)

@@ -57,7 +57,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     public string CompletingUnitName => CompletingUnit != null ? CompletingUnit.GetProperName() : "an unknown hero";
 
     private bool IsUnitValid(unit whichUnit) =>
-      EligibleFactions.Contains(whichUnit.OwningPlayer()) && whichUnit.IsAlive() && IsUnitType(whichUnit, UNIT_TYPE_HERO) &&
+      EligibleFactions.Contains(whichUnit.OwningPlayer()) && UnitAlive(whichUnit) && IsUnitType(whichUnit, UNIT_TYPE_HERO) &&
       GetHeroLevel(whichUnit) >= _targetLevel;
 
     private bool IsValidUnitInRect() => GlobalGroup.EnumUnitsInRect(_targetRect).Any(IsUnitValid);

@@ -57,7 +57,7 @@ namespace MacroTools.Mechanics
 
     private void OnTrainUnitType()
     {
-      if (GetTrainedUnit().GetTypeId() != _packedUnitId)
+      if (GetUnitTypeId(GetTrainedUnit()) != _packedUnitId)
         return;
       PackBuilding(GetTriggerUnit(), GetTrainedUnit());
       RemoveUnit(GetTriggerUnit());

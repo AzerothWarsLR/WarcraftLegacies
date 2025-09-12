@@ -17,7 +17,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     public ObjectiveCapitalDead(Capital target)
     {
       TargetWidget = target.Unit;
-      Description = $"{target.Unit.GetName()} is destroyed";
+      Description = $"{GetUnitName(target.Unit)} is destroyed";
       DisplaysPosition = true;
       CreateTrigger()
         .RegisterUnitEvent(target.Unit, EVENT_UNIT_DEATH)

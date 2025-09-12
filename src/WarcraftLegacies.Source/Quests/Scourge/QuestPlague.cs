@@ -137,10 +137,12 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
       var villagers = GlobalGroup
         .EnumUnitsOfPlayer(Player(PLAYER_NEUTRAL_PASSIVE))
-        .Where(x => villagerUnitTypeIds.Contains(x.GetTypeId()));
+        .Where(x => villagerUnitTypeIds.Contains(GetUnitTypeId(x)));
       
-      foreach (var villager in villagers) 
-        villager.Kill();
+      foreach (var villager in villagers)
+      {
+        KillUnit(villager);
+      }
     }
     
     private void SpawnArmies(Faction completingFaction)
@@ -168,7 +170,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
         foreach (var unit in CreateUnits(primaryPlaguePlayer, parameter.SummonUnitTypeId,
                    position.X, position.Y, 0, parameter.SummonCount))
         {
-          if (!unit.IsType(UNIT_TYPE_PEON))
+          if (!IsUnitType(unit, UNIT_TYPE_PEON))
             unit.IssueOrder(OrderId("attack"), attackTarget);
         }
       }

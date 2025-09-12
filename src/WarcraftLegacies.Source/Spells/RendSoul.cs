@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Spells
     /// <inheritdoc />
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      var targetMaximumHitPoints = target.GetMaximumHitPoints();
+      var targetMaximumHitPoints = BlzGetUnitMaxHP(target);
       var healthGained = targetMaximumHitPoints * HitPointsPerTargetMaximumHitPoints;
       var manaGained = targetMaximumHitPoints * ManaPointsPerTargetMaximumHitPoints;
 
@@ -38,14 +38,14 @@ namespace WarcraftLegacies.Source.Spells
       AddSpecialEffect(EffectTarget, GetUnitX(target), GetUnitY(target)).SetLifespan();
 
       var targetPosition = target.GetPosition();
-      target.Kill();
-      
+      KillUnit(target);
+
       caster.Heal(healthGained);
       caster.RestoreMana(manaGained);
 
-      CreateUnit(caster.OwningPlayer(), UnitTypeSummoned, targetPosition.X, targetPosition.Y, caster.GetFacing())
-        .SetTimedLife(Duration)
-        .AddType(UNIT_TYPE_SUMMONED);
+      var summonedUnit = CreateUnit(caster.OwningPlayer(), UnitTypeSummoned, targetPosition.X, targetPosition.Y, caster.GetFacing());
+      summonedUnit.SetTimedLife(Duration);
+      UnitAddType(summonedUnit, UNIT_TYPE_SUMMONED);
     }
   }
 }

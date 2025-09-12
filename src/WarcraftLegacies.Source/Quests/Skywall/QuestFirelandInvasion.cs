@@ -114,7 +114,7 @@ namespace WarcraftLegacies.Source.Quests.Skywall
         foreach (var unit in CreateUnits(primaryInvasionPlayer, parameter.SummonUnitTypeId,
                    position.X, position.Y, 0, parameter.SummonCount))
         {
-          if (!unit.IsType(UNIT_TYPE_PEON))
+          if (!IsUnitType(unit, UNIT_TYPE_PEON))
             unit.IssueOrder(OrderId("attack"), attackTarget);
         }
       }

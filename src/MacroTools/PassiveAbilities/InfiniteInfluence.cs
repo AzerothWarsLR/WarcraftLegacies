@@ -45,7 +45,7 @@ namespace MacroTools.PassiveAbilities
 
     private static bool IsAlliedHero(player caster, unit whichUnit)
     {
-      return whichUnit.IsType(UNIT_TYPE_HERO) && whichUnit.OwningPlayer() == caster && UnitAlive(whichUnit);
+      return IsUnitType(whichUnit, UNIT_TYPE_HERO) && whichUnit.OwningPlayer() == caster && UnitAlive(whichUnit);
     }
   }
 }

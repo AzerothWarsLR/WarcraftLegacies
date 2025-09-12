@@ -68,7 +68,6 @@ namespace WarcraftLegacies.Source.Spells
             {
                 int casterLevel = GetAbilityLevel(caster);
                 int illusionCount = IllusionCountBase + (IllusionCountPerLevel * (casterLevel - 1));
-                float illusionDuration = IllusionDurationBase + (IllusionDurationPerLevel * (casterLevel - 1));
                 float effectScale = EffectScaleBase + (EffectScalePerLevel * (casterLevel - 1));
                 var effect = AddSpecialEffect(CasterEffect, GetUnitX(caster), GetUnitY(caster));
                 BlzSetSpecialEffectScale(effect, effectScale); 

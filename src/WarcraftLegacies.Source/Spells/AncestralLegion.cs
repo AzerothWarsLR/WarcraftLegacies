@@ -54,13 +54,14 @@ namespace WarcraftLegacies.Source.Spells
       var taurenToSummon = Math.Min(summonCap, availableTauren);
       for (var i = 0; i < taurenToSummon; i++)
       {
-        var summonedTauren = CreateUnit(caster.OwningPlayer(), RememberableUnitTypeId, targetPoint.X, targetPoint.Y, caster.GetFacing())
-          .SetColor(200, 165, 50, 150)
-          .MultiplyBaseDamage(1 + DamageBonus.Base + DamageBonus.PerLevel * level, 0)
-          .MultiplyMaxHitpoints(1 + HealthBonus.Base + HealthBonus.PerLevel * level)
-          .SetTimedLife(Duration)
-          .SetName("Ancestor")
-          .AddType(UNIT_TYPE_SUMMONED);
+        var summonedTauren = CreateUnit(caster.OwningPlayer(), RememberableUnitTypeId, targetPoint.X, targetPoint.Y, caster.GetFacing());
+        SetUnitVertexColor(summonedTauren, 200, 165, 50, 150);
+
+        summonedTauren.MultiplyBaseDamage(1 + DamageBonus.Base + DamageBonus.PerLevel * level, 0);
+        summonedTauren.MultiplyMaxHitpoints(1 + HealthBonus.Base + HealthBonus.PerLevel * level);
+        summonedTauren.SetTimedLife(Duration);
+        BlzSetUnitName(summonedTauren, "Ancestor");
+        UnitAddType(summonedTauren, UNIT_TYPE_SUMMONED);
 
         CreateTrigger()
           .RegisterUnitEvent(summonedTauren, EVENT_UNIT_DEATH)
@@ -69,7 +70,7 @@ namespace WarcraftLegacies.Source.Spells
             AddSpecialEffect(DeathEffect, GetUnitX(summonedTauren), GetUnitY(summonedTauren))
               .SetLifespan(1);
             
-            summonedTauren.Remove();
+            RemoveUnit(summonedTauren);
             
             GetTriggeringTrigger()
               .Destroy();

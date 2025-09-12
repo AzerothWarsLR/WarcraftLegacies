@@ -30,7 +30,8 @@ namespace MacroTools.Mechanics.DemonGates
       set
       {
         _progress = value;
-        Target.SetMana((int)value);
+        int value1 = (int)value;
+        SetUnitState(Target, UNIT_STATE_MANA, value1);
       }
     }
 
@@ -38,7 +39,7 @@ namespace MacroTools.Mechanics.DemonGates
     {
       get
       {
-        if (FocalDemonGateBuff.Instance != null && FocalDemonGateBuff.Instance.Target.IsAlive())
+        if (FocalDemonGateBuff.Instance != null && UnitAlive(FocalDemonGateBuff.Instance.Target))
           return FocalDemonGateBuff.Instance.SpawnPoint;
 
         var targetPosition = Target.GetPosition();
@@ -50,7 +51,7 @@ namespace MacroTools.Mechanics.DemonGates
     }
 
     private Point RallyPoint =>
-      FocalDemonGateBuff.Instance != null && FocalDemonGateBuff.Instance.Target.IsAlive()
+      FocalDemonGateBuff.Instance != null && UnitAlive(FocalDemonGateBuff.Instance.Target)
         ? FocalDemonGateBuff.Instance.RallyPoint
         : Target.GetRallyPoint();
 
@@ -84,11 +85,10 @@ namespace MacroTools.Mechanics.DemonGates
     /// <inheritdoc />
     public override void OnApply()
     {
-      Target
-        .IssueOrder(OrderId("setrally"), Target.GetPosition())
-        .SetMaximumMana((int)_spawnInterval)
-        .AddAbility(_toggleAbilityTypeId)
-        .IssueOrder("immolation");
+      Target.IssueOrder(OrderId("setrally"), Target.GetPosition());
+      BlzSetUnitMaxMana(Target, (int)_spawnInterval);
+      Target.AddAbility(_toggleAbilityTypeId);
+      Target.IssueOrder("immolation");
       Progress = _spawnInterval / 2;
     }
 
@@ -112,7 +112,8 @@ namespace MacroTools.Mechanics.DemonGates
     {
       if (newStack is DemonGateBuff newDemonGateBuff) 
         _demonUnitTypeId = newDemonGateBuff._demonUnitTypeId;
-      Target.SetMaximumMana((int)_spawnInterval);
+      int maximumMana = (int)_spawnInterval;
+      BlzSetUnitMaxMana(Target, maximumMana);
       return StackResult.Consume;
     }
 
@@ -131,8 +132,9 @@ namespace MacroTools.Mechanics.DemonGates
     {
       for (var i = 0; i < _spawnCount; i++)
       {
-        var spawnedDemon = CreateUnit(Target.OwningPlayer(), _demonUnitTypeId, SpawnPoint.X, SpawnPoint.Y, Target.GetFacing() + FacingOffset)
-          .IssueOrder(OrderId("attack"), RallyPoint);
+        var spawnedDemon = CreateUnit(Target.OwningPlayer(), _demonUnitTypeId, SpawnPoint.X, SpawnPoint.Y,
+          Target.GetFacing() + FacingOffset);
+        spawnedDemon.IssueOrder(OrderId("attack"), RallyPoint);
         
         _spawnedDemons.Add(spawnedDemon);
 

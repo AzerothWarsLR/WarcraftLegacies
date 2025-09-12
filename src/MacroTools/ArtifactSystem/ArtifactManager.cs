@@ -90,7 +90,7 @@ namespace MacroTools.ArtifactSystem
         try
         {
           var triggerUnit = GetTriggerUnit();
-          if (triggerUnit.IsType(UNIT_TYPE_SUMMONED) || triggerUnit.IsIllusion())
+          if (IsUnitType(triggerUnit, UNIT_TYPE_SUMMONED) || IsUnitIllusion(triggerUnit))
             return;
 
           bool? isPositionPathable = null;

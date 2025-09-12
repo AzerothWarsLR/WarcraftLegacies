@@ -135,13 +135,14 @@ namespace MacroTools.Extensions
     /// </summary>
     public static player RemoveAllUnits(this player whichPlayer)
     {
+      var hostilePlayer = Player(PLAYER_NEUTRAL_AGGRESSIVE);
       foreach (var unit in GlobalGroup
                  .EnumUnitsOfPlayer(whichPlayer))
       {
         if (unit.IsRemovable())
           unit.SafelyRemove();
         else
-          unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+          SetUnitOwner(unit, hostilePlayer, true);
       }
 
       return whichPlayer;

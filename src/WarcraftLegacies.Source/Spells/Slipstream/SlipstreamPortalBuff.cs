@@ -38,18 +38,18 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
         .SetTimeScale(10f / delay)
         .SetColor(Caster.OwningPlayer())
         .SetHeight(450);
-      Target
-        .SetAnimationSpeed(9.3f * (1 / delay))
-        .SetAnimation("birth");
+      float speed = 9.3f * (1 / delay);
+      SetUnitTimeScale(Target, speed);
+      SetUnitAnimation(Target, "birth");
       CreateTimer().Start(delay, false, () =>
       {
         if (_state == SlipstreamPortalState.Opening)
         {
           _state = SlipstreamPortalState.Stable;
-          Target
-            .SetAnimationSpeed(1)
-            .SetAnimation("stand")
-            .SetWaygateActive(true);
+          SetUnitTimeScale(Target, 1);
+          SetUnitAnimation(Target, "stand");
+          unit tempQualifier = Target;
+          WaygateActivate(tempQualifier, true);
           _progressBar.Destroy();
         }
 
@@ -73,9 +73,9 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
       if (_state != SlipstreamPortalState.Stable) return;
 
       _state = SlipstreamPortalState.Closing;
-      Target
-        .SetAnimationSpeed(0.65f * (1 / delay))
-        .SetAnimation("death");
+      float speed = 0.65f * (1 / delay);
+      SetUnitTimeScale(Target, speed);
+      SetUnitAnimation(Target, "death");
       CreateTimer().Start(delay, false, () =>
       {
         CloseInstantly();
@@ -86,7 +86,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
     /// <inheritdoc />
     public override void OnApply()
     {
-      Target.SetWaygateActive(false);
+      WaygateActivate(Target, false);
     }
 
     /// <inheritdoc />
@@ -98,10 +98,9 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
     private void CloseInstantly()
     {
       _state = SlipstreamPortalState.Closed;
-      Target
-        .SetAnimationSpeed(1)
-        .Kill()
-        .Remove();
+      SetUnitTimeScale(Target, 1);
+      KillUnit(Target);
+      RemoveUnit(Target);
       AddSpecialEffect(@"Abilities\Spells\Human\Feedback\SpellBreakerAttack.mdl", GetUnitX(Target), GetUnitY(Target))
         .SetScale(6)
         .SetLifespan();

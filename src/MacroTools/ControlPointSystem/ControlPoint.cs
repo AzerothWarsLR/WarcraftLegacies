@@ -84,7 +84,7 @@ namespace MacroTools.ControlPointSystem
     {
       Unit = representingUnit;
       Value = value;
-      Name = representingUnit.GetName();
+      Name = GetUnitName(representingUnit);
       UseControlLevels = useControlLevels;
     }
 

@@ -9,8 +9,11 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
     
     private static void OnSell()
     {
-      GetTriggerUnit().Kill();
-      GetSoldUnit().SetFacingEx(GetTriggerUnit().GetFacing());
+      unit tempQualifier1 = GetTriggerUnit();
+      KillUnit(tempQualifier1);
+      unit tempQualifier = GetSoldUnit();
+      float facing = GetTriggerUnit().GetFacing();
+      BlzSetUnitFacingEx(tempQualifier, facing);
       GetSoldUnit().OwningPlayer().Select(GetSoldUnit());
     }
 

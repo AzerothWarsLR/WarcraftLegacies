@@ -61,8 +61,23 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
 
       rescuer.RescueGroup(_rescueUnits);
       if (UnitAlive(_elvenRunestone))
-        _silvermoon.Unit?.SetInvulnerable(true);
-      _sunwell.Unit?.SetInvulnerable(true);
+      {
+        unit tempQualifier = _silvermoon.Unit;
+        unit ret = null;
+        if (tempQualifier != null)
+        {
+          SetUnitInvulnerable(tempQualifier, true);
+          ret = tempQualifier;
+        }
+      }
+
+      unit tempQualifier1 = _sunwell.Unit;
+      unit ret1 = null;
+      if (tempQualifier1 != null)
+      {
+        SetUnitInvulnerable(tempQualifier1, true);
+        ret1 = tempQualifier1;
+      }
     }
 
     /// <inheritdoc />
@@ -73,8 +88,23 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
         .PlayMusicThematic("war3mapImported\\SilvermoonTheme.mp3");
       
       if (UnitAlive(_elvenRunestone))
-        _silvermoon.Unit?.SetInvulnerable(true);
-      _sunwell.Unit?.SetInvulnerable(true);
+      {
+        unit tempQualifier = _silvermoon.Unit;
+        unit ret = null;
+        if (tempQualifier != null)
+        {
+          SetUnitInvulnerable(tempQualifier, true);
+          ret = tempQualifier;
+        }
+      }
+
+      unit tempQualifier1 = _sunwell.Unit;
+      unit ret1 = null;
+      if (tempQualifier1 != null)
+      {
+        SetUnitInvulnerable(tempQualifier1, true);
+        ret1 = tempQualifier1;
+      }
     }
   }
 }

@@ -51,9 +51,9 @@ namespace WarcraftLegacies.Source.Quests
       {
         _bookOfMedivhPedestal = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), UNIT_NBSM_BOOK_OF_MEDIVH,
           bookLocation.Rectangle.Center.X, bookLocation.Rectangle.Center.Y, 270);
-        _bookOfMedivhPedestal.SetInvulnerable(true)
-          .AddAbility(ABILITY_A01Y_INVENTORY_DUMMY_DROP_ARTIFACT)
-          .AddItemSafe(bookOfMedivh.Item);
+        SetUnitInvulnerable(_bookOfMedivhPedestal, true);
+        _bookOfMedivhPedestal.AddAbility(ABILITY_A01Y_INVENTORY_DUMMY_DROP_ARTIFACT);
+        _bookOfMedivhPedestal.AddItemSafe(bookOfMedivh.Item);
       }
       
       IsFactionQuest = bypassLevelRequirement;
@@ -77,7 +77,14 @@ namespace WarcraftLegacies.Source.Quests
     protected override void OnComplete(Faction completingFaction)
     {
       _objectiveWithCompletingUnit.CompletingUnit?.AddItemSafe(_bookOfMedivh.Item);
-      _bookOfMedivhPedestal?.Kill();
+      unit tempQualifier = _bookOfMedivhPedestal;
+      unit ret = null;
+      if (tempQualifier != null)
+      {
+        KillUnit(tempQualifier);
+        ret = tempQualifier;
+        ret = ret;
+      }
     }
   }
 }

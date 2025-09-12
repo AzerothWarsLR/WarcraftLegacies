@@ -69,9 +69,11 @@ namespace WarcraftLegacies.Source.Factions
             Regions.BarrenAmbient2.CleanupHostileUnits();
             Regions.AshenvaleCreeps.CleanupHostileUnits();
             var thunderBluffUnit = _preplacedUnitSystem.GetUnit(Constants.UNIT_N03M_THUNDERBLUFF);
-            thunderBluffUnit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+            player whichPlayer = Player(PLAYER_NEUTRAL_AGGRESSIVE);
+            SetUnitOwner(thunderBluffUnit, whichPlayer, true);
             var echoIslesUnit = _preplacedUnitSystem.GetUnit(Constants.UNIT_N02V_ECHO_ISLES);
-            echoIslesUnit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+            player whichPlayer1 = Player(PLAYER_NEUTRAL_AGGRESSIVE);
+            SetUnitOwner(echoIslesUnit, whichPlayer1, true);
         }
 
         private void RegisterObjectLevels()

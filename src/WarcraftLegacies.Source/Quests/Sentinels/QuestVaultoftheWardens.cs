@@ -49,13 +49,25 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      _vaultOfTheWardens.Unit?.Kill();
+      unit tempQualifier = _vaultOfTheWardens.Unit;
+      unit ret = null;
+      if (tempQualifier != null)
+      {
+        KillUnit(tempQualifier);
+        ret = tempQualifier;
+      }
     }
 
     /// <inheritdoc />
     protected override void OnAdd(Faction whichFaction)
     {
-      _vaultOfTheWardens.Unit?.SetInvulnerable(true);
+      unit tempQualifier = _vaultOfTheWardens.Unit;
+      unit ret = null;
+      if (tempQualifier != null)
+      {
+        SetUnitInvulnerable(tempQualifier, true);
+        ret = tempQualifier;
+      }
     }
   }
 }

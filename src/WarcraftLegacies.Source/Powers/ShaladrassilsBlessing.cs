@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Powers
       _summonedUnitCount = summonedUnitCount;
       _manaCost = manaCost;
       Description =
-        $"When an undamaged Control Point you control takes damage and you control {shaladrassil.GetName()}, consume {_manaCost} mana from {GetUnitName(shaladrassil)} to summon {_summonedUnitCount} {GetObjectName(summonedUnitTypeId)}s to defend the Control Point for {_duration} seconds.";
+        $"When an undamaged Control Point you control takes damage and you control {GetUnitName(shaladrassil)}, consume {_manaCost} mana from {GetUnitName(shaladrassil)} to summon {_summonedUnitCount} {GetObjectName(summonedUnitTypeId)}s to defend the Control Point for {_duration} seconds.";
       Name = $"{GetUnitName(shaladrassil)}'s Blessing";
     }
 
@@ -55,7 +55,7 @@ namespace WarcraftLegacies.Source.Powers
       var owner = GetTriggerUnit().OwningPlayer();
       if (!GetTriggerUnit().IsControlPoint() 
           || _shaladrassil.OwningPlayer() != owner
-          || !(_shaladrassil.GetMana() >= _manaCost)
+          || !(GetUnitState(_shaladrassil, UNIT_STATE_MANA) >= _manaCost)
           || GetTriggerUnit().GetLifePercent() < 100)
         return;
 
@@ -70,10 +70,10 @@ namespace WarcraftLegacies.Source.Powers
 
       for (var i = 0; i < _summonedUnitCount; i++)
       {
-        var treant = CreateUnit(owningPlayer, _summonedUnitTypeId, point.X, point.Y, 270)
-          .SetTimedLife(_duration)
-          .AddType(UNIT_TYPE_SUMMONED)
-          .SetExplodeOnDeath(true);
+        var treant = CreateUnit(owningPlayer, _summonedUnitTypeId, point.X, point.Y, 270);
+        treant.SetTimedLife(_duration);
+        UnitAddType(treant, UNIT_TYPE_SUMMONED);
+        SetUnitExploded(treant, true);
         AddSpecialEffect(@"Objects\Spawnmodels\NightElf\EntBirthTarget\EntBirthTarget.mdl", treant.GetPosition().X,
             treant.GetPosition().Y)
           .SetLifespan();

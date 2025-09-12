@@ -39,7 +39,7 @@ namespace MacroTools.PassiveAbilities
       var pos = triggerUnit.GetPosition();
       for (var i = 0; i < CorpseCount; i++)
         CreateCorpse(triggerUnit.OwningPlayer(), CorpseUnitTypeId, pos.X, pos.Y, triggerUnit.GetFacing());
-      triggerUnit.Remove();
+      RemoveUnit(triggerUnit);
     }
   }
 }

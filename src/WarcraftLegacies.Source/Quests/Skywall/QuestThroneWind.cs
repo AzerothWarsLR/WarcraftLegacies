@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Quests.Skywall
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
-        filterUnit => filterUnit.GetTypeId() != FourCC("ngme"));
+        filterUnit => GetUnitTypeId(filterUnit) != FourCC("ngme"));
     }
 
     /// <inheritdoc />

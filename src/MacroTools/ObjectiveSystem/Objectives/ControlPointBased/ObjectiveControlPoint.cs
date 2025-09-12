@@ -65,8 +65,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
     {
       var unitsNearby = GlobalGroup
         .EnumUnitsInRange(_target.Unit.GetPosition(), range)
-          .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !x.IsType(UNIT_TYPE_ANCIENT) &&
-           !x.IsType(UNIT_TYPE_SAPPER) && !x.IsType(UNIT_TYPE_STRUCTURE)); 
+          .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !IsUnitType(x, UNIT_TYPE_ANCIENT) &&
+           !IsUnitType(x, UNIT_TYPE_SAPPER) && !IsUnitType(x, UNIT_TYPE_STRUCTURE)); 
 
       foreach (var unit in unitsNearby)
       {

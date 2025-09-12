@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using MacroTools.Extensions;
 using static War3Api.Common;
 
 namespace MacroTools.Systems
@@ -18,12 +17,12 @@ namespace MacroTools.Systems
     public static void Register(unit whichUnit, float hitPointPercentagePerTurn)
     {
       if (UnitData.ContainsKey(whichUnit))
-        throw new InvalidOperationException($"Tried to register {whichUnit.GetName()} to {nameof(TurnBasedHitpointsManager)}, but it's already registered.");
+        throw new InvalidOperationException($"Tried to register {GetUnitName(whichUnit)} to {nameof(TurnBasedHitpointsManager)}, but it's already registered.");
 
       UnitData.Add(whichUnit, new TurnBasedHitpointData
       {
         HitPointPercentagePerTurn = hitPointPercentagePerTurn,
-        BaseHitPoints = whichUnit.GetMaximumHitPoints()
+        BaseHitPoints = BlzGetUnitMaxHP(whichUnit)
       });
       if (_intialized)
         return;
@@ -45,10 +44,12 @@ namespace MacroTools.Systems
       {
         var bonusPercentage = turnBasedHitpointData.HitPointPercentagePerTurn * turn;
         var bonusHitPoints = (int)Math.Ceiling(turnBasedHitpointData.BaseHitPoints * bonusPercentage);
-        unit.SetMaximumHitpoints(turnBasedHitpointData.BaseHitPoints + bonusHitPoints);
+        int value = turnBasedHitpointData.BaseHitPoints + bonusHitPoints;
+        BlzSetUnitMaxHP(unit, value);
 
         var heal = turnBasedHitpointData.BaseHitPoints * turnBasedHitpointData.HitPointPercentagePerTurn;
-        unit.SetCurrentHitpoints((int)Math.Ceiling(unit.GetHitPoints() + heal));
+        int value1 = (int)Math.Ceiling(GetUnitState(unit, UNIT_STATE_LIFE) + heal);
+        SetUnitState(unit, UNIT_STATE_LIFE, value1);
       }
 
       if (turn >= TurnLimit)

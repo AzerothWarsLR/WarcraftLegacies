@@ -69,7 +69,7 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
         IconName = "Angel",
         Name = RewardPowerName,
         HeroGlowAbilityTypeId = ABILITY_A0GK_HERO_GLOW_ORIGIN,
-        Filter = unit => !unit.IsType(UNIT_TYPE_MECHANICAL) && unit.GetTypeId() != UNIT_H05F_STORMWIND_CHAMPION_STORMWIND_ELITE,
+        Filter = unit => !IsUnitType(unit, UNIT_TYPE_MECHANICAL) && GetUnitTypeId(unit) != UNIT_H05F_STORMWIND_CHAMPION_STORMWIND_ELITE,
       };
       
       completingFaction.AddPower(rewardPower);

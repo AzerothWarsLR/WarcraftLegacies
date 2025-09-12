@@ -26,10 +26,10 @@ namespace WarcraftLegacies.Source.Quests
       @"ReplaceableTextures\CommandButtons\BTNHeroAvatarOfFlame.blp")
     {
       _ragnaros = ragnaros;
-      _ragnarosSummoningPedestal = ragnarosSummmoningPedestal
-        .MakeCapturable()
-        .SetOwner(Player(PLAYER_NEUTRAL_PASSIVE))
-        .SetInvulnerable(true);
+      ragnarosSummmoningPedestal.MakeCapturable();
+      SetUnitOwner(ragnarosSummmoningPedestal,  Player(PLAYER_NEUTRAL_PASSIVE), true);
+      SetUnitInvulnerable(ragnarosSummmoningPedestal, true);
+      _ragnarosSummoningPedestal = ragnarosSummmoningPedestal;
 
       _heroInRectObjective =
         new ObjectiveHeroWithLevelInRect(10, Regions.RagnarosSummon, "the Portal to the Firelands");
@@ -47,9 +47,9 @@ namespace WarcraftLegacies.Source.Quests
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      _ragnarosSummoningPedestal
-        .SetOwner(_heroInRectObjective.CompletingUnit?.OwningPlayer() ?? Player(PLAYER_NEUTRAL_AGGRESSIVE))
-        .SetInvulnerable(false);
+      player whichPlayer = _heroInRectObjective.CompletingUnit?.OwningPlayer() ?? Player(PLAYER_NEUTRAL_AGGRESSIVE);
+      SetUnitOwner(_ragnarosSummoningPedestal, whichPlayer, true);
+      SetUnitInvulnerable(_ragnarosSummoningPedestal, false);
     }
 
     private void OnCastSummonSpell()
@@ -60,7 +60,7 @@ namespace WarcraftLegacies.Source.Quests
           ragnarosSummonPoint.Y)
         .SetScale(2)
         .SetLifespan(1);
-      _ragnarosSummoningPedestal.Kill();
+      KillUnit(_ragnarosSummoningPedestal);
 
       foreach (var player in Util.EnumeratePlayers())
         player.DisplayLegendaryHeroSummoned(_ragnaros,

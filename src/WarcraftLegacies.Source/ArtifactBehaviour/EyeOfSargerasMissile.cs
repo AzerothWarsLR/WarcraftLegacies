@@ -33,10 +33,9 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
     {
       if (!UnitAlive(Target)) 
         return;
-      
-      Target
-        .AddAbility(ABILITY_A01Y_INVENTORY_DUMMY_DROP_ARTIFACT)
-        .AddItemSafe(_eyeOfSargeras);
+
+      Target.AddAbility(ABILITY_A01Y_INVENTORY_DUMMY_DROP_ARTIFACT);
+      Target.AddItemSafe(_eyeOfSargeras);
       _impacted = true;
         
       AddSpecialEffect(ImpactEffect, GetUnitX(Target), GetUnitY(Target))

@@ -27,7 +27,10 @@ namespace MacroTools.Spells
       var casterTeam = caster.OwningPlayer().GetTeam();
 
       if (targetTeam == casterTeam)
-        caster.SetOwner(target.OwningPlayer());
+      {
+        player whichPlayer = target.OwningPlayer();
+        SetUnitOwner(caster, whichPlayer, true);
+      }
     }
 
   }

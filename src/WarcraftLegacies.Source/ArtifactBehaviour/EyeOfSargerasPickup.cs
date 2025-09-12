@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
       var hostileNearby = GlobalGroup
         .EnumUnitsInRange(GetTriggerUnit().GetPosition(), 700)
         .OrderByDescending(x => MathEx.GetDistanceBetweenPoints(x.GetPosition(), GetTriggerUnit().GetPosition()))
-        .FirstOrDefault(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && UnitAlive(x) && !x.IsType(UNIT_TYPE_ANCIENT));
+        .FirstOrDefault(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && UnitAlive(x) && !IsUnitType(x, UNIT_TYPE_ANCIENT));
       if (hostileNearby == null)
       {
         PlayerUnitEvents.Unregister(ItemTypeEvent.IsPickedUp, OnEyeOfSargerasPickedUp,
