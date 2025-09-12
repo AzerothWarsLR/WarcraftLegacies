@@ -7,7 +7,7 @@ namespace MacroTools.Mechanics.DemonGates
   /// <summary>
   /// Causes the unit type to periodically spawn units.
   /// </summary>
-  public sealed class DemonGateType : PassiveAbility
+  public sealed class DemonGateType : PassiveAbility, IEffectOnUpgrade, IEffectOnCreated
   {
     private readonly int _demonUnitTypeId;
     private readonly float _spawnInterval;
@@ -31,13 +31,13 @@ namespace MacroTools.Mechanics.DemonGates
     }
     
     /// <inheritdoc />
-    public override void OnUpgrade()
+    public void OnUpgrade()
     {
       ApplyBuff(GetTriggerUnit());
     }
     
     /// <inheritdoc />
-    public override void OnCreated(unit createdUnit)
+    public void OnCreated(unit createdUnit)
     {
       ApplyBuff(createdUnit);
     }

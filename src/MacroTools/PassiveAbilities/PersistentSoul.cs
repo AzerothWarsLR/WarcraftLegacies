@@ -11,7 +11,7 @@ namespace MacroTools.PassiveAbilities
   /// <summary>
   /// When the unit dies, it reanimates nearby friendly units.
   /// </summary>
-  public sealed class PersistentSoul : PassiveAbility
+  public sealed class PersistentSoul : PassiveAbility, IEffectOnDeath
   {
     private readonly int _abilityTypeId;
 
@@ -43,7 +43,7 @@ namespace MacroTools.PassiveAbilities
     public float Radius { get; init; }
     
     /// <inheritdoc/>
-    public override void OnDeath()
+    public void OnDeath()
     {
       var caster = GetTriggerUnit();
 

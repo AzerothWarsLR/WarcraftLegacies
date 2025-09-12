@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
   /// <summary>
   /// Oil users use oil instead of mana. The oil is provided by the owner's <see cref="OilPower"/> if they have one.
   /// </summary>
-  public sealed class OilUser : PassiveAbility
+  public sealed class OilUser : PassiveAbility, IEffectOnCreated
   {
     /// <inheritdoc />
     public OilUser(int unitTypeId) : base(unitTypeId)
@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
     }
 
     /// <inheritdoc />
-    public override void OnCreated(unit createdUnit)
+    public void OnCreated(unit createdUnit)
     {
       var owningFaction = createdUnit.OwningPlayer().GetFaction();
       var oilPower = owningFaction?.GetPowerByType<OilPower>();

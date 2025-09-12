@@ -7,7 +7,7 @@ namespace MacroTools.Mechanics.DemonGates
   /// <summary>
   /// Units spawned at Demon Gates spawn at the Focal Demon Gate instead, if one exists.
   /// </summary>
-  public sealed class FocalDemonGate : PassiveAbility
+  public sealed class FocalDemonGate : PassiveAbility, IEffectOnConstruction
   {
     /// <summary>
     /// Initializes a new instance of the <see cref="FocalDemonGate"/> class.
@@ -18,7 +18,7 @@ namespace MacroTools.Mechanics.DemonGates
     }
     
     /// <inheritdoc />
-    public override void OnConstruction()
+    public void OnConstruction()
     {
       var buff = new FocalDemonGateBuff(GetTriggerUnit());
       BuffSystem.Add(buff);

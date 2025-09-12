@@ -8,7 +8,7 @@ namespace MacroTools.PassiveAbilities
   /// <summary>
   /// Gates are buildings that can open and close.
   /// </summary>
-  public sealed class Gate : PassiveAbility
+  public sealed class Gate : PassiveAbility, IEffectOnUpgrade, IEffectOnDeath, IEffectOnSpellFinish, IEffectOnCancelUpgrade, IEffectOnCreated
   {
     /// <summary>Gates will gain this many hit points, as a percentage of their maximum, per turn.</summary>
     public const float HitPointPercentagePerTurn = 0.05f;
@@ -29,7 +29,7 @@ namespace MacroTools.PassiveAbilities
     }
 
     /// <inheritdoc/>
-    public override void OnDeath()
+    public void OnDeath()
     {
       var dyingGate = GetTriggerUnit();
       var dyingGatePos = dyingGate.GetPosition();
@@ -41,14 +41,14 @@ namespace MacroTools.PassiveAbilities
     }
 
     /// <inheritdoc/>
-    public override void OnSpellFinish()
+    public void OnSpellFinish()
     {
       if (GetTriggerUnit().GetTypeId() == _openedId) 
         GetTriggerUnit().SetAnimation("death alternate");
     }
     
     /// <inheritdoc/>
-    public override void OnCreated(unit createdUnit)
+    public void OnCreated(unit createdUnit)
     {
       if (createdUnit.GetTypeId() == _openedId) 
         createdUnit.SetAnimation("death alternate");
@@ -56,11 +56,11 @@ namespace MacroTools.PassiveAbilities
     }
 
     /// <inheritdoc />
-    public override void OnCancelUpgrade() => 
+    public void OnCancelUpgrade() => 
       GetTriggerUnit().SetAnimation("death");
 
     /// <inheritdoc />
-    public override void OnUpgrade()
+    public void OnUpgrade()
     {
       TurnBasedHitpointsManager.UnRegister(GetTriggerUnit());
       TurnBasedHitpointsManager.Register(GetTriggerUnit(), HitPointPercentagePerTurn);

@@ -5,7 +5,7 @@ using static War3Api.Common;
 namespace MacroTools.PassiveAbilities
 {
   /// <summary>Causes the unit to be removed when it dies, instead of leaving a corpse.</summary>
-  public sealed class RemoveOnDeath : PassiveAbility
+  public sealed class RemoveOnDeath : PassiveAbility, IEffectOnDeath
   {
     /// <summary>An effect that appears when the unit dies.</summary>
     public string? DeathEffectPath { get; init; }
@@ -16,7 +16,7 @@ namespace MacroTools.PassiveAbilities
     }
 
     /// <inheritdoc />
-    public override void OnDeath()
+    public void OnDeath()
     {
       var triggerUnit = GetTriggerUnit();
       var position = triggerUnit.GetPosition();

@@ -7,7 +7,7 @@ namespace MacroTools.PassiveAbilities
   /// <summary>
   /// Causes the unit to summon a unit upon death.
   /// </summary>
-  public sealed class CreateCorpseOnDeath : PassiveAbility
+  public sealed class CreateCorpseOnDeath : PassiveAbility, IEffectOnDeath
   {
     
     /// <summary>
@@ -31,7 +31,7 @@ namespace MacroTools.PassiveAbilities
     }
     
     /// <inheritdoc />
-    public override void OnDeath()
+    public void OnDeath()
     {
       var triggerUnit = GetTriggerUnit();
       if (RequiredResearch != 0 && (GetPlayerTechCount(triggerUnit.OwningPlayer(), RequiredResearch, false) == 0))

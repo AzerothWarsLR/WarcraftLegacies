@@ -3,7 +3,7 @@ using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
 {
-  public sealed class AnimationSpeedMultiplier : PassiveAbility
+  public sealed class AnimationSpeedMultiplier : PassiveAbility, IEffectOnConstruction
   {
     private readonly float _multiplier;
 
@@ -12,7 +12,7 @@ namespace MacroTools.PassiveAbilities
       _multiplier = multiplier;
     }
 
-    public override void OnConstruction()
+    public void OnConstruction()
     {
       SetUnitTimeScale(GetConstructedStructure(), _multiplier);
     }
