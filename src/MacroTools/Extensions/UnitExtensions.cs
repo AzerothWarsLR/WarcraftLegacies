@@ -71,24 +71,11 @@ namespace MacroTools.Extensions
       PingMinimap(GetUnitX(whichUnit), GetUnitY(whichUnit), duration);
 
     /// <summary>
-    /// Removes the unit from the game permanently.
-    /// <para>Prefer using <see cref="SafelyRemove"/> for non-dummy units.</para>
-    /// </summary>
-    public static void Remove(this unit unit) => RemoveUnit(unit);
-
-    /// <summary>
     /// Orders a unit to perform a specified order at a specified <see cref="Point"/>.
     /// </summary>
     [Obsolete("Use the version that takes an integer order ID instead.")]
     public static void IssueOrder(this unit unit, string order, Point target) => 
       IssuePointOrder(unit, order, target.X, target.Y);
-
-    /// <summary>
-    /// Orders a unit to perform a specified order on the specified target.
-    /// </summary>
-    [Obsolete("Use the version that takes an integer order ID instead.")]
-    public static void IssueOrder(this unit unit, string order, widget target) => 
-      IssueTargetOrder(unit, order, target);
 
     /// <summary>
     /// Orders a unit to perform a specified order at a specified <see cref="Point"/>.
@@ -526,7 +513,6 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>Safely removes the unit by dropping its items, killing it, then removing it.
-    /// <para>Should generally be used instead of <see cref="Remove"/>.</para>
     /// </summary>
     public static void SafelyRemove(this unit whichUnit)
     {
