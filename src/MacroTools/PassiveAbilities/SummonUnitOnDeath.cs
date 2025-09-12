@@ -49,10 +49,9 @@ namespace MacroTools.PassiveAbilities
       var pos = triggerUnit.GetPosition();
       for (var i = 0; i < SummonCount; i++)
       {
-        unit tempQualifier = CreateUnit(triggerUnit.OwningPlayer(), SummonUnitTypeId, pos.X, pos.Y, triggerUnit.GetFacing());
-        UnitAddType(tempQualifier, UNIT_TYPE_SUMMONED);
-        tempQualifier
-          .SetTimedLife(Duration);
+        var summonedUnit = CreateUnit(triggerUnit.OwningPlayer(), SummonUnitTypeId, pos.X, pos.Y, triggerUnit.GetFacing());
+        UnitAddType(summonedUnit, UNIT_TYPE_SUMMONED);
+        summonedUnit.SetTimedLife(Duration);
       }
 
       AddSpecialEffect(SpecialEffectPath, pos.X, pos.Y)

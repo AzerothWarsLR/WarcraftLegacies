@@ -41,13 +41,8 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     protected override void OnComplete(Faction completingFaction)
     {
       _maiev.Unit?.SetPosition(new Point(-5252, -27597));
-      unit tempQualifier = _vaultOfTheWardens.Unit;
-      unit ret = null;
-      if (tempQualifier != null)
-      {
-        UnitRemoveAbility(tempQualifier, ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL);
-        ret = tempQualifier;
-      }
+      if (_vaultOfTheWardens.Unit != null) 
+        UnitRemoveAbility(_vaultOfTheWardens.Unit, ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL);
 
       completingFaction?.Player.RescueGroup(_rescueUnits);
     }
@@ -55,13 +50,8 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     /// <inheritdoc/>
     protected override void OnFail(Faction completingFaction)
     {
-      unit tempQualifier = _vaultOfTheWardens.Unit;
-      unit ret = null;
-      if (tempQualifier != null)
-      {
-        UnitRemoveAbility(tempQualifier, ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL);
-        ret = tempQualifier;
-      }
+      if (_vaultOfTheWardens.Unit != null) 
+        UnitRemoveAbility(_vaultOfTheWardens.Unit, ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL);
 
       Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
     }

@@ -381,13 +381,8 @@ namespace WarcraftLegacies.Source.Factions
             return;
           }
 
-          unit tempQualifier = _allLegendSetup.Lordaeron.Terenas.Unit;
-          unit ret = null;
-          if (tempQualifier != null)
-          {
-            KillUnit(tempQualifier);
-            ret = tempQualifier;
-          }
+          if (_allLegendSetup.Lordaeron.Terenas.Unit != null) 
+            KillUnit(_allLegendSetup.Lordaeron.Terenas.Unit);
 
           SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,
             FourCC("Ysaw"), false, "hide", false);

@@ -278,14 +278,10 @@ namespace MacroTools.ControlPointSystem
       var lifePercent = Math.Max(controlPoint.Unit.GetLifePercent(), 1);
 
       BlzSetUnitMaxHP(controlPoint.Unit, maxHitPoints);
-      unit tempQualifier = controlPoint.Unit;
-      int armor = ControlLevelSettings.ArmorPerControlLevel * ControlLevelSettings.ArmorPerControlLevel;
-      BlzSetUnitArmor(tempQualifier, armor);
-      BlzSetUnitIntegerField(tempQualifier, UNIT_IF_LEVEL, flooredLevel);
-      unit tempQualifier1 = tempQualifier;
-      int armor1 = ControlLevelSettings.ArmorPerControlLevel * flooredLevel;
-      BlzSetUnitArmor(tempQualifier1, armor1);
-      tempQualifier1
+      BlzSetUnitArmor(controlPoint.Unit, ControlLevelSettings.ArmorPerControlLevel * ControlLevelSettings.ArmorPerControlLevel);
+      BlzSetUnitIntegerField(controlPoint.Unit, UNIT_IF_LEVEL, flooredLevel);
+      BlzSetUnitArmor(controlPoint.Unit, ControlLevelSettings.ArmorPerControlLevel * flooredLevel);
+      controlPoint.Unit
         .ShowAttackUi(false);
 
       if (initialize && controlPoint.Unit.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
@@ -324,15 +320,12 @@ namespace MacroTools.ControlPointSystem
 
     private void ConfigureControlPointOrDefenderAttack(unit whichUnit, int controlLevel)
     {
-      int value = controlLevel == 0
+      BlzSetUnitBaseDamage(whichUnit, controlLevel == 0
         ? -1
-        : ControlLevelSettings.DamageBase - 1 + controlLevel * ControlLevelSettings.DamagePerControlLevel;
-      BlzSetUnitBaseDamage(whichUnit, value, 0);
+        : ControlLevelSettings.DamageBase - 1 + controlLevel * ControlLevelSettings.DamagePerControlLevel, 0);
       BlzSetUnitDiceNumber(whichUnit, 1, 0);
-      unit tempQualifier = whichUnit;
-      BlzSetUnitDiceSides(tempQualifier, 1, 0);
-      tempQualifier
-        .SetAttackType(5);
+      BlzSetUnitDiceSides(whichUnit, 1, 0);
+      whichUnit.SetAttackType(5);
     }
   }
 }

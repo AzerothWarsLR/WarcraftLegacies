@@ -32,8 +32,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
     {
       _oilPool.OilPower.Income += OilHarvestedPerSecond;
       BlzSetUnitMaxMana(Target, _oilPool.OilAmount);
-      unit tempQualifier = Target;
-      SetUnitState(tempQualifier, UNIT_STATE_MANA, _oilPool.OilAmount);
+      SetUnitState(Target, UNIT_STATE_MANA, _oilPool.OilAmount);
     }
 
     /// <inheritdoc />

@@ -77,14 +77,8 @@ namespace WarcraftLegacies.Source.Quests
     protected override void OnComplete(Faction completingFaction)
     {
       _objectiveWithCompletingUnit.CompletingUnit?.AddItemSafe(_bookOfMedivh.Item);
-      unit tempQualifier = _bookOfMedivhPedestal;
-      unit ret = null;
-      if (tempQualifier != null)
-      {
-        KillUnit(tempQualifier);
-        ret = tempQualifier;
-        ret = ret;
-      }
+      if (_bookOfMedivhPedestal != null) 
+        KillUnit(_bookOfMedivhPedestal);
     }
   }
 }

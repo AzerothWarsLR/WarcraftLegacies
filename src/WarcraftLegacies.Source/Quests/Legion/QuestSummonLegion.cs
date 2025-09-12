@@ -20,13 +20,11 @@ namespace WarcraftLegacies.Source.Quests.Legion
     private readonly LegendaryHero _anetheron;
     private readonly unit _legionTeleporter1;
     private readonly unit _legionTeleporter2;
-    private readonly PreplacedUnitSystem _preplacedUnitSystem;
 
     public QuestSummonLegion(Rectangle rescueRect, unit interiorPortal, LegendaryHero anetheron, PreplacedUnitSystem preplacedUnitSystem) : base("Under the Burning Sky",
       "The greater forces of the Burning Legion lie in wait in the vast expanse of the Twisting Nether. Use the Book of Medivh to tear open a hole in space-time, and visit the full might of the Legion upon Azeroth.",
       @"ReplaceableTextures\CommandButtons\BTNArchimonde.blp")
     {
-      _preplacedUnitSystem = preplacedUnitSystem;
       _interiorPortal = interiorPortal;
       _objectiveCastSpell = new ObjectiveCastSpell(RitualId, false);
       AddObjective(_objectiveCastSpell);
@@ -34,8 +32,8 @@ namespace WarcraftLegacies.Source.Quests.Legion
       Global = true;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
       _anetheron = anetheron;
-      _legionTeleporter1 = _preplacedUnitSystem.GetUnit(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, new Point(22939, -29345));
-      _legionTeleporter2 = _preplacedUnitSystem.GetUnit(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, new Point(23536, -29975));
+      _legionTeleporter1 = preplacedUnitSystem.GetUnit(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, new Point(22939, -29345));
+      _legionTeleporter2 = preplacedUnitSystem.GetUnit(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, new Point(23536, -29975));
     }
 
     /// <inheritdoc />
@@ -53,27 +51,18 @@ namespace WarcraftLegacies.Source.Quests.Legion
       _legionTeleporter2?.IssueOrder(ORDER_BERSERK);
       CreateTimer().Start(0.5f, false, () =>
       {
-        unit tempQualifier = _legionTeleporter1;
-        if (tempQualifier != null)
-        {
-          RemoveUnit(tempQualifier);
-        }
+        if (_legionTeleporter1 != null) 
+          RemoveUnit(_legionTeleporter1);
 
-        unit tempQualifier1 = _legionTeleporter2;
-        if (tempQualifier1 != null)
-        {
-          RemoveUnit(tempQualifier1);
-        }
+        if (_legionTeleporter2 != null) 
+          RemoveUnit(_legionTeleporter2);
 
         GetExpiredTimer().Destroy();
       });
 
-      unit tempQualifier2 = _anetheron.Unit;
-      unit ret = null;
-      if (tempQualifier2 != null)
+      if (_anetheron.Unit != null)
       {
-        SetUnitAbilityLevel(tempQualifier2, ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS, 2);
-        ret = tempQualifier2;
+        SetUnitAbilityLevel(_anetheron.Unit, ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS, 2);
       }
 
       whichFaction.ModObjectLimit(UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC, 9);

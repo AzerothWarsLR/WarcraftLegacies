@@ -92,8 +92,7 @@ namespace WarcraftLegacies.Source.Powers
         return;
       
       BlzSetEventDamage(0);
-      int value = (int)(BlzGetUnitMaxHP(damagedUnit) * ((float)_healAmountPercentage / 100));
-      SetUnitState(damagedUnit, UNIT_STATE_LIFE, value);
+      SetUnitState(damagedUnit, UNIT_STATE_LIFE, (int)(BlzGetUnitMaxHP(damagedUnit) * ((float)_healAmountPercentage / 100)));
       AddSpecialEffectTarget(Effect, damagedUnit, "origin")
         .SetLifespan(1);
     }

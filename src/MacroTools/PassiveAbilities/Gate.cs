@@ -36,37 +36,29 @@ namespace MacroTools.PassiveAbilities
       var dyingGateFacing = GetUnitFacing(dyingGate);
       RemoveUnit(dyingGate);
       TurnBasedHitpointsManager.UnRegister(dyingGate);
-      unit tempQualifier = CreateUnit(GetOwningPlayer(GetKillingUnit()), _deadId, dyingGatePos.X, dyingGatePos.Y, dyingGateFacing);
-      SetUnitAnimation(tempQualifier, "death");
+      SetUnitAnimation(
+        CreateUnit(GetOwningPlayer(GetKillingUnit()), _deadId, dyingGatePos.X, dyingGatePos.Y, dyingGateFacing),
+        "death");
     }
 
     /// <inheritdoc/>
     public override void OnSpellFinish()
     {
-      if (GetUnitTypeId(GetTriggerUnit()) == _openedId)
-      {
-        unit tempQualifier = GetTriggerUnit();
-        SetUnitAnimation(tempQualifier, "death alternate");
-      }
+      if (GetUnitTypeId(GetTriggerUnit()) == _openedId) 
+        SetUnitAnimation(GetTriggerUnit(), "death alternate");
     }
     
     /// <inheritdoc/>
     public override void OnCreated(unit createdUnit)
     {
-      if (GetUnitTypeId(createdUnit) == _openedId)
-      {
+      if (GetUnitTypeId(createdUnit) == _openedId) 
         SetUnitAnimation(createdUnit, "death alternate");
-      }
 
       TurnBasedHitpointsManager.Register(createdUnit, HitPointPercentagePerTurn);
     }
 
     /// <inheritdoc />
-    public override void OnCancelUpgrade()
-    {
-      var tempQualifier = GetTriggerUnit();
-      SetUnitAnimation(tempQualifier, "death");
-    }
+    public override void OnCancelUpgrade() => SetUnitAnimation(GetTriggerUnit(), "death");
 
     /// <inheritdoc />
     public override void OnUpgrade()

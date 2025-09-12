@@ -70,8 +70,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
 
     private void Revive()
     {
-      int value = (int)GetUnitState(_egg!, UNIT_STATE_LIFE);
-      SetUnitState(Target, UNIT_STATE_LIFE, value);
+      SetUnitState(Target, UNIT_STATE_LIFE, GetUnitState(_egg!, UNIT_STATE_LIFE));
       KillUnit(_egg!);
       Target.SetPosition(_egg!.GetPosition());
       

@@ -77,8 +77,7 @@ namespace WarcraftLegacies.Source.Quests
       {
         _rescueUnits.Add(unit);
         SetUnitInvulnerable(unit, true);
-        unit tempQualifier = unit;
-        ShowUnit(tempQualifier, false);
+        ShowUnit(unit, false);
       }
     }
 

@@ -38,8 +38,7 @@ namespace WarcraftLegacies.Source.Quests
       _sunwellVial.Item.SetPositionSafe(sunwellPosition);
 
       UnitRemoveAbility(_sunwell.Unit!, ABILITY_A0OC_EXTRACT_VIAL_ALL);
-      unit tempQualifier = _sunwell.Unit!;
-      BlzSetUnitMaxMana(tempQualifier, 500);
+      BlzSetUnitMaxMana(_sunwell.Unit!, 500);
     }
 
     /// <inheritdoc />

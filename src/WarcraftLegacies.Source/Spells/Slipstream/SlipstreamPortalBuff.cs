@@ -38,8 +38,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
         .SetTimeScale(10f / delay)
         .SetColor(Caster.OwningPlayer())
         .SetHeight(450);
-      float speed = 9.3f * (1 / delay);
-      SetUnitTimeScale(Target, speed);
+      SetUnitTimeScale(Target, 9.3f * (1 / delay));
       SetUnitAnimation(Target, "birth");
       CreateTimer().Start(delay, false, () =>
       {
@@ -48,8 +47,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
           _state = SlipstreamPortalState.Stable;
           SetUnitTimeScale(Target, 1);
           SetUnitAnimation(Target, "stand");
-          unit tempQualifier = Target;
-          WaygateActivate(tempQualifier, true);
+          WaygateActivate(Target, true);
           _progressBar.Destroy();
         }
 
@@ -73,8 +71,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
       if (_state != SlipstreamPortalState.Stable) return;
 
       _state = SlipstreamPortalState.Closing;
-      float speed = 0.65f * (1 / delay);
-      SetUnitTimeScale(Target, speed);
+      SetUnitTimeScale(Target, 0.65f * (1 / delay));
       SetUnitAnimation(Target, "death");
       CreateTimer().Start(delay, false, () =>
       {

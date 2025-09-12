@@ -43,13 +43,9 @@ namespace MacroTools.LegendSystem
         if (!BlzIsUnitInvulnerable(Unit))
           throw new Exception(
             $"{GetUnitName(Unit)}'s last protector died, which should make it vulnerable, but it is already vulnerable.");
-        unit tempQualifier = Unit;
-        unit ret = null;
-        if (tempQualifier != null)
-        {
-          SetUnitInvulnerable(tempQualifier, false);
-          ret = tempQualifier;
-        }
+
+        if (Unit != null) 
+          SetUnitInvulnerable(Unit, false);
       }
       catch (Exception ex)
       {
@@ -69,13 +65,8 @@ namespace MacroTools.LegendSystem
       var protector = new Protector(whichUnit);
       _protectors.Add(protector);
       ProtectorsByUnit.Add(whichUnit, protector);
-      unit tempQualifier = Unit;
-      unit ret = null;
-      if (tempQualifier != null)
-      {
-        SetUnitInvulnerable(tempQualifier, true);
-        ret = tempQualifier;
-      }
+      if (Unit != null) 
+        SetUnitInvulnerable(Unit, true);
 
       protector.ProtectorDied += OnProtectorDeath;
     }

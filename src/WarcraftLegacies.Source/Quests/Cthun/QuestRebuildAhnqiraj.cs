@@ -34,17 +34,14 @@ namespace WarcraftLegacies.Source.Quests.Cthun
         return;
 
       SetUnitInvulnerable(_gateAhnQiraj, false);
-      unit tempQualifier = _gateAhnQiraj;
-      SetUnitOwner(tempQualifier, completingFaction.Player, true);
+      SetUnitOwner(_gateAhnQiraj, completingFaction.Player, true);
     }
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
       SetUnitInvulnerable(_gateAhnQiraj, false);
-      unit tempQualifier = _gateAhnQiraj;
-      player whichPlayer = Player(PLAYER_NEUTRAL_AGGRESSIVE);
-      SetUnitOwner(tempQualifier, whichPlayer, true);
+      SetUnitOwner(_gateAhnQiraj, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
     }
 
     /// <inheritdoc/>

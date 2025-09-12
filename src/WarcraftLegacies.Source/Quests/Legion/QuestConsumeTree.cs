@@ -39,14 +39,8 @@ namespace WarcraftLegacies.Source.Quests.Legion
         .RemoveAllResources()
         .RemoveAllUnits();
 
-      unit tempQualifier = archimondeUnit;
-      unit ret = null;
-      if (tempQualifier != null)
-      {
-        BlzSetUnitName(tempQualifier, "Devourer of Worlds");
-        ret = tempQualifier;
-        ret = ret;
-      }
+      if (archimondeUnit != null) 
+        BlzSetUnitName(archimondeUnit, "Devourer of Worlds");
 
       AddSpecialEffectTarget(@"Abilities\Weapons\GreenDragonMissile\GreenDragonMissile.mdl", archimondeUnit,
         "hand, right");

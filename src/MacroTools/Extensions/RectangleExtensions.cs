@@ -113,8 +113,7 @@ namespace MacroTools.Extensions
         }
 
         SetUnitInvulnerable(unit, true);
-        unit tempQualifier = unit;
-        BlzPauseUnitEx(tempQualifier, true);
+        BlzPauseUnitEx(unit, true);
       }
 
       return group;
