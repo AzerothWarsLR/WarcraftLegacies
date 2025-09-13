@@ -42,7 +42,7 @@ namespace MacroTools.FactionSystem
     private string _name;
     private player? _player;
 
-    protected Faction(string name, playercolor[] colorPriority, string icon)
+    protected Faction(string name, playercolor playerColor, string icon)
     {
       _name = name;
       _icon = icon;
@@ -50,7 +50,7 @@ namespace MacroTools.FactionSystem
       Id = _highestId + 1;
       _highestId = Id;
 
-      PlayerColor = ColorManager.AssignPreferredColorOrFallback(colorPriority);
+      PlayerColor = playerColor;
       PrefixCol = ColorManager.GetColorHexCode(PlayerColor);
     }
 
@@ -235,11 +235,6 @@ namespace MacroTools.FactionSystem
         SetPlayerState(Player, PLAYER_STATE_OBSERVER, 1);
         PlayerDistributor.DistributePlayer(Player);
         RemoveGoldMines();
-
-        if (PlayerColor != null)
-        {
-          ColorManager.ReleaseColor(PlayerColor);
-        }
       }
 
       ScoreStatus = ScoreStatus.Defeated;

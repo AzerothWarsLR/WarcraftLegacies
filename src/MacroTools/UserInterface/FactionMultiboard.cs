@@ -21,7 +21,7 @@ namespace MacroTools.UserInterface
     private const int ColumnIncome = 2;
     private const int ColumnTeam = 0;
 
-    private const float WidthFaction = 0.08f;
+    private const float WidthFaction = 0.09f;
     private const float WidthCp = 0.02f;
     private const float WidthIncome = 0.022f;
     private const float WidthTeam = WidthFaction + WidthCp + WidthIncome;

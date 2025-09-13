@@ -7,8 +7,7 @@ namespace TestMap.Source.Factions
   public sealed class SpaceMarines : Faction
   {
     /// <inheritdoc />
-    public SpaceMarines() : base("Space Marines", new[] { PLAYER_COLOR_LIGHT_BLUE, PLAYER_COLOR_AQUA, PLAYER_COLOR_PEACH},
-      @"ReplaceableTextures\CommandButtons\BTNMarine.blp")
+    public SpaceMarines() : base("Space Marines", PLAYER_COLOR_LIGHT_BLUE, @"ReplaceableTextures\CommandButtons\BTNMarine.blp")
     {
       TraditionalTeam = TeamSetup.TeamAlliance;
     }

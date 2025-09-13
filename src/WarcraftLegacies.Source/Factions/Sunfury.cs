@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Factions
 
     /// <inheritdoc />
     public Sunfury(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
-      : base("Sunfury", new[] {PLAYER_COLOR_RED, PLAYER_COLOR_LAVENDER, PLAYER_COLOR_PINK}, @"ReplaceableTextures\CommandButtons\BTNBloodMage2.blp")
+      : base("Sunfury", PLAYER_COLOR_VIOLET, @"ReplaceableTextures\CommandButtons\BTNBloodMage2.blp")
     {
       TraditionalTeam = TeamSetup.Outland;
       _preplacedUnitSystem = preplacedUnitSystem;

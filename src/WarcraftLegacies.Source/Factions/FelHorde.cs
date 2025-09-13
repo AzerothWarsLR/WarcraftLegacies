@@ -18,8 +18,8 @@ namespace WarcraftLegacies.Source.Factions
 
     /// <inheritdoc />
     
-    public FelHorde(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Fel Horde",
-      new[] {PLAYER_COLOR_GREEN, PLAYER_COLOR_EMERALD, PLAYER_COLOR_CYAN}, @"ReplaceableTextures\CommandButtons\BTNPitLord.blp")
+    public FelHorde(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
+      : base("Fel Horde", PLAYER_COLOR_GREEN, @"ReplaceableTextures\CommandButtons\BTNPitLord.blp")
     {
       TraditionalTeam = TeamSetup.Outland;
       _preplacedUnitSystem = preplacedUnitSystem;
