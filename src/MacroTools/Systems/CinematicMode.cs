@@ -3,7 +3,6 @@ using MacroTools.Extensions;
 using MacroTools.Utils;
 using WCSharp.Shared;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace MacroTools.Systems
 {

@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using WCSharp.Events;
-using static War3Api.Common;
 using WCSharp.Missiles;
 using WCSharp.Shared.Extensions;
 

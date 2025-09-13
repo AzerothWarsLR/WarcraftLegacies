@@ -3,7 +3,6 @@ using System.Linq;
 using MacroTools.Extensions;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 using Environment = MacroTools.Libraries.Environment;
 
 namespace MacroTools.Buffs

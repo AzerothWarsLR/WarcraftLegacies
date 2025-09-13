@@ -4,7 +4,6 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.Utils;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
 {

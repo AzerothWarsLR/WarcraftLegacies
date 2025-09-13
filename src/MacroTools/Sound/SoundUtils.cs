@@ -1,5 +1,3 @@
-﻿using static War3Api.Common;
-
 namespace MacroTools.Sound
 {
   public static class SoundUtils

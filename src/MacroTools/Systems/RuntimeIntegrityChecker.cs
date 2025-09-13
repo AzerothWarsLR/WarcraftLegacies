@@ -2,7 +2,6 @@
 using MacroTools.ControlPointSystem;
 using MacroTools.FactionSystem;
 using MacroTools.Utils;
-using static War3Api.Common;
 
 namespace MacroTools.Systems
 {

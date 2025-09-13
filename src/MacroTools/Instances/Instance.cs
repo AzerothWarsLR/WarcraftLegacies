@@ -6,7 +6,6 @@ using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace MacroTools.Instances
 {
