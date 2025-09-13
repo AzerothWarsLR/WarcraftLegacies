@@ -1,7 +1,6 @@
 using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
 using WCSharp.Events;
-using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 {

@@ -1,4 +1,3 @@
-﻿using static War3Api.Common;
 using System.Collections.Generic;
 
 namespace MacroTools.Libraries

@@ -3,7 +3,6 @@ using MacroTools.Extensions;
 using MacroTools.Powers;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace MacroTools.Hazards
 {

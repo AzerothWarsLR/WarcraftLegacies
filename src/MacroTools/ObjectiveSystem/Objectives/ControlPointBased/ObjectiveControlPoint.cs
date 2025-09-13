@@ -4,7 +4,6 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.Utils;
-using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 {

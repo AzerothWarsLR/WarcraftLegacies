@@ -1,7 +1,6 @@
 ﻿using System;
 using MacroTools.Extensions;
 using WCSharp.Events;
-using static War3Api.Common;
 
 namespace MacroTools.ChannelSystem
 {
