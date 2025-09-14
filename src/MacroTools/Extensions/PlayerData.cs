@@ -179,7 +179,7 @@ namespace MacroTools.Extensions
         {
           if (value.Player == null)
           {
-            _player.SetColor(value.PlayerColor, true);
+            _player.SetColorAndChangeExisting(value.PlayerColor);
             _faction = value;
             //Enforce referential integrity
             if (value.Player != _player)

@@ -110,10 +110,9 @@ namespace MacroTools.Extensions
     internal static void SetObjectLimit(this player player, int objectId, int limit) =>
       PlayerData.ByHandle(player).SetObjectLimit(objectId, limit);
 
-    internal static void SetColor(this player whichPlayer, playercolor color, bool changeExisting)
+    internal static void SetColorAndChangeExisting(this player whichPlayer, playercolor color)
     {
       SetPlayerColor(whichPlayer, color);
-      if (!changeExisting) return;
       foreach (var unit in GlobalGroup.EnumUnitsOfPlayer(whichPlayer))
         SetUnitColor(unit, color);
     }
