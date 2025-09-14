@@ -19,8 +19,8 @@ namespace WarcraftLegacies.Source.Factions
 
     /// <inheritdoc />
     
-    public Kultiras(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Kul'tiras",
-      new[] {PLAYER_COLOR_EMERALD, PLAYER_COLOR_TURQUOISE, PLAYER_COLOR_CYAN}, @"ReplaceableTextures\CommandButtons\BTNProudmoore.blp")
+    public Kultiras(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
+      : base("Kul'tiras", PLAYER_COLOR_EMERALD, @"ReplaceableTextures\CommandButtons\BTNProudmoore.blp")
     {
       TraditionalTeam = TeamSetup.SouthAlliance;
       _allLegendSetup = allLegendSetup;

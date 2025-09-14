@@ -26,8 +26,7 @@ namespace WarcraftLegacies.Source.Factions
     /// <inheritdoc />
     
     public Scourge(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
-      : base("Scourge", new[] {PLAYER_COLOR_PURPLE, PLAYER_COLOR_VIOLET, PLAYER_COLOR_EMERALD, PLAYER_COLOR_RED},
-        @"ReplaceableTextures\CommandButtons\BTNRevenant.blp")
+      : base("Scourge", PLAYER_COLOR_PURPLE, @"ReplaceableTextures\CommandButtons\BTNRevenant.blp")
     {
       TraditionalTeam = TeamSetup.Legion;
       _preplacedUnitSystem = preplacedUnitSystem;
