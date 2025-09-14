@@ -71,9 +71,8 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player
-        .RescueGroup(_rescueUnits)
-        .PlayMusicThematic("war3mapImported\\SilvermoonTheme.mp3");
+      completingFaction.Player.RescueGroup(_rescueUnits);
+      completingFaction.Player?.PlayMusicThematic("war3mapImported\\SilvermoonTheme.mp3");
 
       if (_silvermoon.Unit == null) 
         return;

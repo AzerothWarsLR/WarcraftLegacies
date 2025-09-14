@@ -73,11 +73,10 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
       };
       
       completingFaction.AddPower(rewardPower);
-      
-      completingFaction.Player?
-        .RescueGroup(_rescueUnits)
-        .DisplayPowerAcquired(rewardPower)
-        .PlayMusicThematic("war3mapImported\\StormwindTheme.mp3");
+
+      completingFaction.Player?.RescueGroup(_rescueUnits);
+      completingFaction.Player?.DisplayPowerAcquired(rewardPower);
+      completingFaction.Player?.PlayMusicThematic("war3mapImported\\StormwindTheme.mp3");
     }
   }
 }
