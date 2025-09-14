@@ -61,10 +61,10 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     public override void OnAdd(Faction whichFaction)
     {
       Progress = IsValidUnitInRects() ? QuestProgress.Complete : QuestProgress.Incomplete;
-      
-      CreateTrigger()
-        .RegisterEnterRegions(_targetRects)
-        .AddAction(() =>
+
+      var enterTrigger = CreateTrigger();
+      enterTrigger.RegisterEnterRegions(_targetRects);
+      enterTrigger.AddAction(() =>
         {
           var triggerUnit = GetTriggerUnit();
           if (!IsUnitValid(triggerUnit)) 
@@ -72,9 +72,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
           CompletingUnit = triggerUnit;
           Progress = QuestProgress.Complete;
         });
-      CreateTrigger()
-        .RegisterLeaveRegions(_targetRects)
-        .AddAction(() =>
+      var leaveTrigger = CreateTrigger();
+      leaveTrigger.RegisterLeaveRegions(_targetRects);
+      leaveTrigger.AddAction(() =>
         {
           if (!IsValidUnitInRects()) 
             Progress = QuestProgress.Incomplete;

@@ -22,9 +22,9 @@ namespace WarcraftLegacies.Source.Spells.ExactJustice
     /// <inheritdoc />
     public override void OnApply()
     {
-      _noDamageTrigger = CreateTrigger()
-        .RegisterUnitEvent(Target, EVENT_UNIT_DAMAGED)
-        .AddAction(() => BlzSetEventDamage(0));
+      _noDamageTrigger = CreateTrigger();
+      _noDamageTrigger.RegisterUnitEvent(Target, EVENT_UNIT_DAMAGED);
+      _noDamageTrigger.AddAction(() => BlzSetEventDamage(0));
     }
 
     /// <inheritdoc />

@@ -208,7 +208,8 @@ namespace MacroTools.Extensions
         return;
       
       _dialoguePlaying = true;
-      CreateTrigger().AddAction(() =>
+      var dialogueTrigger = CreateTrigger();
+      dialogueTrigger.AddAction(() =>
       {
         while (_dialogueQueue.Any())
         {
@@ -217,9 +218,11 @@ namespace MacroTools.Extensions
           TriggerSleepAction(nextDialogue.Length);
           TriggerSleepAction(5f);
         }
+
         _dialoguePlaying = false;
         GetTriggeringTrigger().Destroy();
-      }).Execute();
+      });
+      dialogueTrigger.Execute();
     }
     
     /// <summary>

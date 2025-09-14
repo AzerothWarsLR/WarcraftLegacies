@@ -138,9 +138,9 @@ namespace MacroTools.Mechanics.DemonGates
         
         _spawnedDemons.Add(spawnedDemon);
 
-        CreateTrigger()
-          .RegisterUnitEvent(spawnedDemon, EVENT_UNIT_DEATH)
-          .AddAction(() =>
+        var deathTrigger = CreateTrigger();
+        deathTrigger.RegisterUnitEvent(spawnedDemon, EVENT_UNIT_DEATH);
+        deathTrigger.AddAction(() =>
           {
             _spawnedDemons.Remove(spawnedDemon);
             DestroyTrigger(GetTriggeringTrigger());

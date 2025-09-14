@@ -28,10 +28,10 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       Description = $"Reach {rectName} with a level {targetLevel}+ hero";
       PingPath = "MinimapQuestTurnIn";
       DisplaysPosition = true;
-      
-      CreateTrigger()
-        .RegisterEnterRegion(targetRect)
-        .AddAction(() =>
+
+      var enterTrigger = CreateTrigger();
+      enterTrigger.RegisterEnterRegion(targetRect);
+      enterTrigger.AddAction(() =>
         {
           var triggerUnit = GetTriggerUnit();
           if (!IsUnitValid(triggerUnit)) 
@@ -39,9 +39,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
           CompletingUnit = triggerUnit;
           Progress = QuestProgress.Complete;
         });
-      CreateTrigger()
-        .RegisterLeaveRegion(targetRect)
-        .AddAction(() =>
+      var leaveTrigger = CreateTrigger();
+      leaveTrigger.RegisterLeaveRegion(targetRect);
+      leaveTrigger.AddAction(() =>
         {
           if (!IsValidUnitInRect()) 
             Progress = QuestProgress.Incomplete;

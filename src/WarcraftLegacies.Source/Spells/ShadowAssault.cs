@@ -34,8 +34,8 @@ namespace WarcraftLegacies.Source.Spells
 
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      // Check if target is alive before proceeding
-      if (!UnitAlive(target)) return;
+      if (!UnitAlive(target)) 
+        return;
 
       var spellLevel = GetUnitAbilityLevel(caster, Id);
       var invulnerabilityBuff = ApplySpeedUpAndInvulnerability(caster, spellLevel);
@@ -100,14 +100,11 @@ namespace WarcraftLegacies.Source.Spells
 
     private void EndCharge(unit caster, unit target, effect effect, timer timer, InvulnerabilityBuff invulnerabilityBuff)
     {
-      // Cleanup timer and effect
       DestroyTimer(timer);
       DestroyEffect(effect);
-
-      // Remove invulnerability buff
+      
       invulnerabilityBuff.Dispose();
-
-      // Deal damage and check for execute condition
+      
       DealDamageAndCheckExecute(caster, target);
     }
 
@@ -116,15 +113,12 @@ namespace WarcraftLegacies.Source.Spells
       var spellLevel = GetUnitAbilityLevel(caster, Id);
       var damage = BaseDamage + DamagePerLevel * spellLevel;
 
-      // Deal base damage to target
       UnitDamageTarget(caster, target, damage, true, false,
           ATTACK_TYPE_NORMAL, DAMAGE_TYPE_MAGIC, WEAPON_TYPE_WHOKNOWS);
 
-      // Play impact effect
       var impactEffect = AddSpecialEffect(ImpactEffectPath, GetUnitX(target), GetUnitY(target));
       DestroyEffect(impactEffect);
 
-      // Check if target is non-hero and meets execute threshold
       if (!IsUnitType(target, UNIT_TYPE_HERO) && CheckExecute(target, spellLevel))
       {
         ExecuteTarget(caster, target);
@@ -149,21 +143,17 @@ namespace WarcraftLegacies.Source.Spells
       UnitDamageTarget(caster, target, currentHp + 500, true, false,
           ATTACK_TYPE_NORMAL, DAMAGE_TYPE_MAGIC, WEAPON_TYPE_WHOKNOWS);
 
-      // Play execute effect
       var executeEffect = AddSpecialEffect(ExecuteEffectPath, GetUnitX(target), GetUnitY(target));
       DestroyEffect(executeEffect);
 
-      // Refresh spell cooldown
       RefreshSpellCooldown(caster);
     }
 
     private void RefreshSpellCooldown(unit caster)
     {
       var level = GetUnitAbilityLevel(caster, Id);
-      // Reset ability to refresh cooldown
       UnitRemoveAbility(caster, Id);
       UnitAddAbility(caster, Id);
-      // Restore ability level
       SetUnitAbilityLevel(caster, Id, level);
     }
 
@@ -176,10 +166,9 @@ namespace WarcraftLegacies.Source.Spells
 
       public override void OnApply()
       {
-        // Create trigger to block all incoming damage
-        _damageTrigger = CreateTrigger()
-           .RegisterUnitEvent(Target, EVENT_UNIT_DAMAGED)
-           .AddAction(() => BlzSetEventDamage(0));
+        _damageTrigger = CreateTrigger();
+        _damageTrigger.RegisterUnitEvent(Target, EVENT_UNIT_DAMAGED);
+        _damageTrigger.AddAction(() => BlzSetEventDamage(0));
       }
 
       public override void OnDispose()

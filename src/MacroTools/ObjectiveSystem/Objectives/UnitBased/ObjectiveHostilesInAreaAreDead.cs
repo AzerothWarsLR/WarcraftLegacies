@@ -49,9 +49,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
         foreach (var unit in unitsInAreas)
         {
           _maxKillCount++;
-          CreateTrigger()
-            .RegisterUnitEvent(unit, EVENT_UNIT_DEATH)
-            .AddAction(() =>
+          var deathTrigger = CreateTrigger();
+          deathTrigger.RegisterUnitEvent(unit, EVENT_UNIT_DEATH);
+          deathTrigger.AddAction(() =>
             {
               CurrentKillCount++;
               DestroyTrigger(GetTriggeringTrigger());

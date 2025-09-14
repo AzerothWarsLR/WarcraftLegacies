@@ -37,19 +37,20 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
         .SetScale(2)
         .SetLifespan();
 
-      _deathTrigger = CreateTrigger()
-        .RegisterUnitEvent(_egg, EVENT_UNIT_DEATH)
-        .AddAction(() => {
-          var killingUnit = GetKillingUnit();
-          if (killingUnit != null && IsUnitType(killingUnit, UNIT_TYPE_HERO))
-          {
-            var index = Math.Min(_originalHeroLevel - 1, HeroXpTable.Length - 1);
-            var experienceGained = HeroXpTable[index];
-            SetHeroXP(killingUnit, GetHeroXP(killingUnit) + experienceGained, true);
-          }
+      _deathTrigger = CreateTrigger();
+      _deathTrigger.RegisterUnitEvent(_egg, EVENT_UNIT_DEATH);
+      _deathTrigger.AddAction(() =>
+      {
+        var killingUnit = GetKillingUnit();
+        if (killingUnit != null && IsUnitType(killingUnit, UNIT_TYPE_HERO))
+        {
+          var index = Math.Min(_originalHeroLevel - 1, HeroXpTable.Length - 1);
+          var experienceGained = HeroXpTable[index];
+          SetHeroXP(killingUnit, GetHeroXP(killingUnit) + experienceGained, true);
+        }
 
-          KillUnit(Target);
-        });
+        KillUnit(Target);
+      });
     }
 
     public override void OnDispose()

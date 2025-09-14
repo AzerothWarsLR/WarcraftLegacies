@@ -66,7 +66,9 @@ namespace MacroTools.Mechanics
     private static void OnUnitTypeCastSpell()
     {
       GetTriggerUnit().SetTimedLife(0.01f);
-      CreateTrigger().RegisterUnitEvent(GetTriggerUnit(), EVENT_UNIT_DEATH).AddAction(() =>
+      var deathTrigger = CreateTrigger();
+      deathTrigger.RegisterUnitEvent(GetTriggerUnit(), EVENT_UNIT_DEATH);
+      deathTrigger.AddAction(() =>
       {
         RemoveUnit(GetTriggerUnit());
         DestroyTrigger(GetTriggeringTrigger());

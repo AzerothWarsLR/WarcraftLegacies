@@ -63,9 +63,9 @@ namespace WarcraftLegacies.Source.Spells
         BlzSetUnitName(summonedTauren, "Ancestor");
         UnitAddType(summonedTauren, UNIT_TYPE_SUMMONED);
 
-        CreateTrigger()
-          .RegisterUnitEvent(summonedTauren, EVENT_UNIT_DEATH)
-          .AddAction(() =>
+        var deathTrigger = CreateTrigger();
+        deathTrigger.RegisterUnitEvent(summonedTauren, EVENT_UNIT_DEATH);
+        deathTrigger.AddAction(() =>
           {
             AddSpecialEffect(DeathEffect, GetUnitX(summonedTauren), GetUnitY(summonedTauren))
               .SetLifespan(1);

@@ -25,9 +25,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     /// <param name="unitToKill"></param>
     public ObjectiveUnitIsDead(unit unitToKill)
     {
-      CreateTrigger()
-        .RegisterUnitEvent(unitToKill, EVENT_UNIT_DEATH)
-        .AddAction(() =>
+      var deathTrigger = CreateTrigger();
+      deathTrigger.RegisterUnitEvent(unitToKill, EVENT_UNIT_DEATH);
+      deathTrigger.AddAction(() =>
         {
           KillingUnit = GetKillingUnit();
           Progress = QuestProgress.Complete;

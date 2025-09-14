@@ -75,19 +75,19 @@ namespace MacroTools.LegendSystem
     protected override void OnChangeUnit()
     {
       _deathTrig?.Destroy();
-      _deathTrig = CreateTrigger()
-        .RegisterUnitEvent(Unit, EVENT_UNIT_DEATH)
-        .AddAction(OnDeath);
+      _deathTrig = CreateTrigger();
+      _deathTrig.RegisterUnitEvent(Unit, EVENT_UNIT_DEATH);
+      _deathTrig.AddAction(OnDeath);
 
       _damageTrig?.Destroy();
-      _damageTrig = CreateTrigger()
-        .RegisterUnitEvent(Unit, EVENT_UNIT_DAMAGED)
-        .AddAction(OnDamaged);
+      _damageTrig = CreateTrigger();
+      _damageTrig.RegisterUnitEvent(Unit, EVENT_UNIT_DAMAGED);
+      _damageTrig.AddAction(OnDamaged);
 
       _ownerTrig?.Destroy();
-      _ownerTrig = CreateTrigger()
-        .RegisterUnitEvent(Unit, EVENT_UNIT_CHANGE_OWNER)
-        .AddAction(() =>
+      _ownerTrig = CreateTrigger();
+      _ownerTrig.RegisterUnitEvent(Unit, EVENT_UNIT_CHANGE_OWNER);
+      _ownerTrig.AddAction(() =>
         {
           OnChangeOwner(new LegendChangeOwnerEventArgs(this, GetChangingUnitPrevOwner()));
         });

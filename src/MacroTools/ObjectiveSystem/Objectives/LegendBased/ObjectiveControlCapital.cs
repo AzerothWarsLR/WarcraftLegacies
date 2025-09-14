@@ -40,9 +40,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       _target.ChangedOwner += (_, _) => { RecalculateProgress(); };
       _target.UnitChanged += (_, _) => { RecalculateProgress(); };
 
-      CreateTrigger()
-        .RegisterUnitEvent(_target.Unit, EVENT_UNIT_DEATH)
-        .AddAction(() => { Progress = QuestProgress.Failed; });
+      var deathTrigger = CreateTrigger();
+      deathTrigger.RegisterUnitEvent(_target.Unit, EVENT_UNIT_DEATH);
+      deathTrigger.AddAction(() => { Progress = QuestProgress.Failed; });
     }
 
     private void RecalculateProgress()

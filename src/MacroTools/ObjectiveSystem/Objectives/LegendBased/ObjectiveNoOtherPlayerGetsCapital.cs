@@ -26,9 +26,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     public override void OnAdd(FactionSystem.Faction faction)
     {
       Progress = QuestProgress.Complete;
-      CreateTrigger()
-        .RegisterUnitEvent(_target.Unit, EVENT_UNIT_CHANGE_OWNER)
-        .AddAction(() =>
+      var changeTrigger = CreateTrigger();
+      changeTrigger.RegisterUnitEvent(_target.Unit, EVENT_UNIT_CHANGE_OWNER);
+      changeTrigger.AddAction(() =>
         {
           if (GetTriggerUnit().OwningPlayer() != faction.Player) 
             Progress = QuestProgress.Failed;

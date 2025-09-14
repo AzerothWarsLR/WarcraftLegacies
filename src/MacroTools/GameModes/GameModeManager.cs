@@ -40,11 +40,10 @@ namespace MacroTools.GameModes
         foreach (var gameModeVote in _gameModeVotes)
         {
           var dialogButton = DialogAddButton(dialog, gameModeVote.GameMode.Name, 0);
-          buttonClickTriggers.Add(CreateTrigger()
-            .RegisterDialogButtonEvent(dialogButton)
-            .AddAction(() => { gameModeVote.VoteCount += 1; }
-            )
-          );
+          var buttonClickTrigger = CreateTrigger();
+          buttonClickTrigger.RegisterDialogButtonEvent(dialogButton);
+          buttonClickTrigger.AddAction(() => { gameModeVote.VoteCount += 1; });
+          buttonClickTriggers.Add(buttonClickTrigger);
         }
 
         foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())

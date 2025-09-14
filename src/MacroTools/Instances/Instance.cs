@@ -31,8 +31,8 @@ namespace MacroTools.Instances
       _rectangles = areas.ToArray();
       foreach (var rectangle in _rectangles)
         RegionAddRect(Region, rectangle.Rect);
-      _dependencyDiesTrigger = CreateTrigger()
-        .AddAction(Destroy);
+      _dependencyDiesTrigger = CreateTrigger();
+      _dependencyDiesTrigger.AddAction(Destroy);
     }
 
     /// <summary>Initializes a new instance of the <see cref="Instance"/> class.</summary>

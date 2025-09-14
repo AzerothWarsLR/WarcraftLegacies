@@ -13,73 +13,67 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Causes the <see cref="trigger"/> to fire when any player executes the specified chat command.
     /// </summary>
-    public static trigger RegisterSharedChatEvent(this trigger whichTrigger, string chatMessageToDetect, bool exactMatchOnly)
+    public static void RegisterSharedChatEvent(this trigger whichTrigger, string chatMessageToDetect,
+      bool exactMatchOnly)
     {
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         TriggerRegisterPlayerChatEvent(whichTrigger, player, chatMessageToDetect, exactMatchOnly);
-      return whichTrigger;
     }
-    
+
     /// <summary>
     /// Registers a key event for all players.
     /// </summary>
-    public static trigger RegisterSharedKeyEvent(this trigger whichTrigger, oskeytype key, int metaKey, bool keyDown)
+    public static void RegisterSharedKeyEvent(this trigger whichTrigger, oskeytype key, int metaKey, bool keyDown)
     {
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         BlzTriggerRegisterPlayerKeyEvent(whichTrigger, player, key, metaKey, keyDown);
-      return whichTrigger;
     }
-    
-    public static trigger RegisterEnterRegion(this trigger whichTrigger, Rectangle region, boolexpr? filter = null)
+
+    public static void RegisterEnterRegion(this trigger whichTrigger, Rectangle region, boolexpr? filter = null)
     {
       TriggerRegisterEnterRegion(whichTrigger, region.Region, filter);
-      return whichTrigger;
     }
-    
-    public static trigger RegisterEnterRegions(this trigger whichTrigger, IEnumerable<Rectangle> regions, boolexpr? filter = null)
+
+    public static void RegisterEnterRegions(this trigger whichTrigger, IEnumerable<Rectangle> regions,
+      boolexpr? filter = null)
     {
       foreach (var region in regions)
         TriggerRegisterEnterRegion(whichTrigger, region.Region, filter);
-      return whichTrigger;
     }
 
-    public static trigger RegisterLeaveRegion(this trigger whichTrigger, Rectangle region, boolexpr? filter = null)
+    public static void RegisterLeaveRegion(this trigger whichTrigger, Rectangle region, boolexpr? filter = null)
     {
       TriggerRegisterLeaveRegion(whichTrigger, region.Region, filter);
-      return whichTrigger;
     }
-    
-    public static trigger RegisterLeaveRegions(this trigger whichTrigger, IEnumerable<Rectangle> regions, boolexpr? filter = null)
+
+    public static void RegisterLeaveRegions(this trigger whichTrigger, IEnumerable<Rectangle> regions,
+      boolexpr? filter = null)
     {
       foreach (var region in regions)
         TriggerRegisterLeaveRegion(whichTrigger, region.Region, filter);
-      return whichTrigger;
     }
 
-    public static trigger RegisterLifeEvent(this trigger whichTrigger, unit whichUnit, unitstate unitState, limitop limitOp, float limitValue)
+    public static void RegisterLifeEvent(this trigger whichTrigger, unit whichUnit, unitstate unitState,
+      limitop limitOp, float limitValue)
     {
       TriggerRegisterUnitStateEvent(whichTrigger, whichUnit, unitState, limitOp, limitValue);
-      return whichTrigger;
-    }
-    
-    public static trigger RegisterUnitEvent(this trigger whichTrigger, unit whichUnit, unitevent whichEvent)
-    {
-      TriggerRegisterUnitEvent(whichTrigger, whichUnit, whichEvent);
-      return whichTrigger;
     }
 
-    public static trigger RegisterDialogButtonEvent(this trigger whichTrigger, button whichButton)
+    public static void RegisterUnitEvent(this trigger whichTrigger, unit whichUnit, unitevent whichEvent)
+    {
+      TriggerRegisterUnitEvent(whichTrigger, whichUnit, whichEvent);
+    }
+
+    public static void RegisterDialogButtonEvent(this trigger whichTrigger, button whichButton)
     {
       TriggerRegisterDialogButtonEvent(whichTrigger, whichButton);
-      return whichTrigger;
     }
-    
-    public static trigger AddAction(this trigger whichTrigger, Action actionFunc)
+
+    public static void AddAction(this trigger whichTrigger, Action actionFunc)
     {
       TriggerAddAction(whichTrigger, actionFunc);
-      return whichTrigger;
     }
-    
+
     /// <summary>
     /// Destroys the trigger.
     /// </summary>
@@ -88,10 +82,9 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Immediately executes all of the trigger's actions.
     /// </summary>
-    public static trigger Execute(this trigger whichTrigger)
+    public static void Execute(this trigger whichTrigger)
     {
       TriggerExecute(whichTrigger);
-      return whichTrigger;
     }
   }
 }

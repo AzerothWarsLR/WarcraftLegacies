@@ -71,9 +71,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       foreach (var unit in unitsNearby)
       {
         _maxKillCount++;
-        CreateTrigger()
-          .RegisterUnitEvent(unit, EVENT_UNIT_DEATH)
-          .AddAction(() =>
+        var killTrigger = CreateTrigger();
+        killTrigger.RegisterUnitEvent(unit, EVENT_UNIT_DEATH);
+        killTrigger .AddAction(() =>
           {
             CurrentKillCount++;
             DestroyTrigger(GetTriggeringTrigger());

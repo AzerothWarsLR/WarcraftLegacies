@@ -372,9 +372,9 @@ namespace WarcraftLegacies.Source.Factions
     
     private void RegisterCrownOfLordaeronDrop()
     {
-      CreateTrigger()
-        .RegisterUnitEvent(_allLegendSetup.Lordaeron.CapitalPalace.Unit, EVENT_UNIT_CHANGE_OWNER)
-        .AddAction(() =>
+      var ownerChangeTrigger = CreateTrigger();
+      ownerChangeTrigger.RegisterUnitEvent(_allLegendSetup.Lordaeron.CapitalPalace.Unit, EVENT_UNIT_CHANGE_OWNER);
+      ownerChangeTrigger.AddAction(() =>
         {
           var lordaeronPlayer = Player;
           if (lordaeronPlayer?.GetTeam()?.Contains(GetOwningPlayer(GetTriggerUnit())) == true){

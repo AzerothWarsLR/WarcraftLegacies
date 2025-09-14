@@ -191,16 +191,16 @@ namespace MacroTools.LegendSystem
 
       if (Unit == null) 
         return;
-      
-      _becomesRevivableTrig = CreateTrigger()
-        .RegisterUnitEvent(Unit, EVENT_UNIT_HERO_REVIVABLE)
-        .AddAction(OnDeath);
-      _castTrig = CreateTrigger()
-        .RegisterUnitEvent(Unit, EVENT_UNIT_SPELL_FINISH)
-        .AddAction(OnCast);
-      _ownerTrig = CreateTrigger()
-        .RegisterUnitEvent(Unit, EVENT_UNIT_CHANGE_OWNER)
-        .AddAction(() =>
+
+      _becomesRevivableTrig = CreateTrigger();
+      _becomesRevivableTrig.RegisterUnitEvent(Unit, EVENT_UNIT_HERO_REVIVABLE);
+      _becomesRevivableTrig.AddAction(OnDeath);
+      _castTrig = CreateTrigger();
+      _castTrig.RegisterUnitEvent(Unit, EVENT_UNIT_SPELL_FINISH);
+      _castTrig.AddAction(OnCast);
+      _ownerTrig = CreateTrigger();
+      _ownerTrig.RegisterUnitEvent(Unit, EVENT_UNIT_CHANGE_OWNER);
+      _ownerTrig.AddAction(() =>
         {
           OnChangeOwner(new LegendChangeOwnerEventArgs(this, GetChangingUnitPrevOwner()));
         });

@@ -179,32 +179,32 @@ namespace MacroTools.ControlPointSystem
 
     private static void RegisterDamageTrigger(ControlPoint controlPoint)
     {
-      CreateTrigger()
-        .RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_DAMAGED)
-        .AddAction(() =>
+      var trigger = CreateTrigger();
+      trigger.RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_DAMAGED);
+      trigger.AddAction(() =>
+      {
+        try
         {
-          try
-          {
-            var attacker = GetEventDamageSource();
-            var hitPoints = GetUnitState(controlPoint.Unit, UNIT_STATE_LIFE) - GetEventDamage();
-            if (hitPoints > 1)
-              return;
-            BlzSetEventDamage(0);
-            SetUnitOwner(controlPoint.Unit, GetOwningPlayer(attacker), true);
-            controlPoint.Unit.SetLifePercent(100);
-          }
-          catch (Exception ex)
-          {
-            Console.WriteLine(ex);
-          }
-        });
+          var attacker = GetEventDamageSource();
+          var hitPoints = GetUnitState(controlPoint.Unit, UNIT_STATE_LIFE) - GetEventDamage();
+          if (hitPoints > 1)
+            return;
+          BlzSetEventDamage(0);
+          SetUnitOwner(controlPoint.Unit, GetOwningPlayer(attacker), true);
+          controlPoint.Unit.SetLifePercent(100);
+        }
+        catch (Exception ex)
+        {
+          Console.WriteLine(ex);
+        }
+      });
     }
 
     private void RegisterOwnershipChangeTrigger(ControlPoint controlPoint)
     {
-      CreateTrigger()
-        .RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_CHANGE_OWNER)
-        .AddAction(() =>
+      var trigger = CreateTrigger();
+      trigger.RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_CHANGE_OWNER);
+      trigger.AddAction(() =>
         {
           try
           {

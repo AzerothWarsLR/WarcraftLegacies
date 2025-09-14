@@ -76,9 +76,9 @@ namespace MacroTools.UserInterface
 
       foreach (var (button, choice) in choicePicksByButton)
       {
-        var pickTrigger = CreateTrigger()
-          .RegisterDialogButtonEvent(button)
-          .AddAction(() =>
+        var pickTrigger = CreateTrigger();
+        pickTrigger.RegisterDialogButtonEvent(button);
+        pickTrigger.AddAction(() =>
         {
           try
           {

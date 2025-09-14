@@ -23,7 +23,8 @@ namespace MacroTools.DialogueSystem
     /// <inheritdoc />
     public void Play(player whichPlayer)
     {
-      CreateTrigger().AddAction(() =>
+      var trigger = CreateTrigger();
+      trigger.AddAction(() =>
       {
         foreach (var dialogue in _dialogues)
         {
@@ -31,7 +32,8 @@ namespace MacroTools.DialogueSystem
           TriggerSleepAction(dialogue.Length + 0.75f);
         }
         GetTriggeringTrigger().Destroy();
-      }).Execute();
+      });
+      trigger.Execute();
     }
   }
 }

@@ -96,8 +96,9 @@ namespace MacroTools.ChannelSystem
     /// </summary>
     internal void RegisterCancellationTrigger()
     {
-      _cancelTrigger = CreateTrigger().RegisterUnitEvent(Caster, EVENT_UNIT_SPELL_ENDCAST)
-        .AddAction(() => { Active = false; });
+      _cancelTrigger = CreateTrigger();
+      _cancelTrigger.RegisterUnitEvent(Caster, EVENT_UNIT_SPELL_ENDCAST);
+      _cancelTrigger.AddAction(() => { Active = false; });
     }
     
     /// <summary>

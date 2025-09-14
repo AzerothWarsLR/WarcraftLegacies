@@ -424,9 +424,9 @@ namespace MacroTools.Extensions
     /// </summary>
     public static void MakeCapturable(this unit whichUnit)
     {
-      CreateTrigger()
-        .RegisterUnitEvent(whichUnit, EVENT_UNIT_DAMAGED)
-        .AddAction(() =>
+      var damageTrigger = CreateTrigger();
+      damageTrigger.RegisterUnitEvent(whichUnit, EVENT_UNIT_DAMAGED);
+      damageTrigger.AddAction(() =>
         {
           if (!(GetEventDamage() + 1 >= GetUnitState(whichUnit, UNIT_STATE_LIFE))) return;
           SetUnitOwner(whichUnit, GetOwningPlayer(GetEventDamageSource()), true);
