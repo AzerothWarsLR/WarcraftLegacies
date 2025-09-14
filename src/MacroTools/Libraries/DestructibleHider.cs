@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 /*
         Original vJASS version by Zwiebelchen. Rewriten in C# by Savantic and the Warcraft Legacis team https://discord.gg/N49uHDAA

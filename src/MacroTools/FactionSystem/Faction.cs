@@ -10,7 +10,6 @@ using MacroTools.QuestSystem;
 using MacroTools.Shared;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace MacroTools.FactionSystem
 {

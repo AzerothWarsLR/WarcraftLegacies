@@ -1,5 +1,4 @@
 ﻿using System;
-using static War3Api.Common;
 
 namespace MacroTools.LegendSystem
 {

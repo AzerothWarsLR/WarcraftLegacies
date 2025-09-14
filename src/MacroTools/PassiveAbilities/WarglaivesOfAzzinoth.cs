@@ -4,7 +4,6 @@ using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Utils;
-using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
 {

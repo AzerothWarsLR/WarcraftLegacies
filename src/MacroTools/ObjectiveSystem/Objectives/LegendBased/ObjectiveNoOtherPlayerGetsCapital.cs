@@ -1,7 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 {

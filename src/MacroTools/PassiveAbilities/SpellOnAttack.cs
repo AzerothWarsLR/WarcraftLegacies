@@ -1,5 +1,4 @@
 ﻿using MacroTools.DummyCasters;
-using static War3Api.Common;
 using System.Collections.Generic;
 using static MacroTools.Libraries.UnitEventSystem;
 using MacroTools.Extensions;

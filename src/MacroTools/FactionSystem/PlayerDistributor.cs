@@ -4,7 +4,6 @@ using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using MacroTools.Systems;
 using MacroTools.Utils;
-using static War3Api.Common;
 
 namespace MacroTools.FactionSystem
 {

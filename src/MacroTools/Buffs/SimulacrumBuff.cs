@@ -1,6 +1,5 @@
 ﻿using MacroTools.Extensions;
 using WCSharp.Buffs;
-using static War3Api.Common;
 
 namespace MacroTools.Buffs
 {
