@@ -101,10 +101,6 @@ namespace MacroTools.Extensions
         unit.Rescue(newOwningPlayer);
     }
 
-    /// <summary>Determines whether or not the player can see or use the specified ability.</summary>
-    internal static void SetAbilityAvailability(this player player, int ability, bool value) =>
-      SetPlayerAbilityAvailable(player, ability, value);
-
     internal static void SetObjectLevel(this player player, int objectId, int level) =>
       PlayerData.ByHandle(player).SetObjectLevel(objectId, level);
 
