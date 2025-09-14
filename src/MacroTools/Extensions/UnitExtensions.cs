@@ -292,8 +292,8 @@ namespace MacroTools.Extensions
         var y = unitY + HeroDropDist * Sin(angInRadians);
         angInRadians += 360 * MathEx.DegToRad / 6;
         var itemToDrop = UnitItemInSlot(whichUnit, i);
-        if (!itemToDrop.IsDroppable())
-          itemToDrop.SetDroppable(true);
+        if (!BlzGetItemBooleanField(itemToDrop, ITEM_BF_CAN_BE_DROPPED))
+          SetItemDroppable(itemToDrop, true);
 
         UnitRemoveItem(whichUnit, itemToDrop);
         itemToDrop.SetPositionSafe(new Point(x, y));

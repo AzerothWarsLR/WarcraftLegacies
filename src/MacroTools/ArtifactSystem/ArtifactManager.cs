@@ -97,7 +97,7 @@ namespace MacroTools.ArtifactSystem
           for (var i = 0; i < 6; i++)
           {
             var itemInSlot = UnitItemInSlot(triggerUnit, i);
-            if (itemInSlot == null || !itemInSlot.IsDroppable())
+            if (itemInSlot == null || !BlzGetItemBooleanField(itemInSlot, ITEM_BF_CAN_BE_DROPPED))
               continue;
             
             var artifactInSlot = GetFromTypeId(GetItemTypeId(itemInSlot));
