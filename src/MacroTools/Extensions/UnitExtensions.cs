@@ -425,14 +425,14 @@ namespace MacroTools.Extensions
     public static void MakeCapturable(this unit whichUnit)
     {
       var damageTrigger = CreateTrigger();
-      damageTrigger.RegisterUnitEvent(whichUnit, EVENT_UNIT_DAMAGED);
-      damageTrigger.AddAction(() =>
-        {
-          if (!(GetEventDamage() + 1 >= GetUnitState(whichUnit, UNIT_STATE_LIFE))) return;
-          SetUnitOwner(whichUnit, GetOwningPlayer(GetEventDamageSource()), true);
-          BlzSetEventDamage(0);
-          SetUnitState(whichUnit, UNIT_STATE_LIFE, GetUnitState(whichUnit, UNIT_STATE_MAX_LIFE));
-        });
+      TriggerRegisterUnitEvent(damageTrigger, whichUnit, EVENT_UNIT_DAMAGED);
+      TriggerAddAction(damageTrigger, () =>
+      {
+        if (!(GetEventDamage() + 1 >= GetUnitState(whichUnit, UNIT_STATE_LIFE))) return;
+        SetUnitOwner(whichUnit, GetOwningPlayer(GetEventDamageSource()), true);
+        BlzSetEventDamage(0);
+        SetUnitState(whichUnit, UNIT_STATE_LIFE, GetUnitState(whichUnit, UNIT_STATE_MAX_LIFE));
+      });
     }
     
     /// <summary>

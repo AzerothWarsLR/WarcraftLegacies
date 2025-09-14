@@ -62,7 +62,7 @@ namespace WarcraftLegacies.Source.Quests
       _rescueUnits.Clear();
       if (_preventAccessTriggers != null)
         foreach (var preventAccessTrigger in _preventAccessTriggers)
-          preventAccessTrigger.Destroy();
+          DestroyTrigger(preventAccessTrigger);
 
       _preventAccessTriggers = null;
       SetUnitInvulnerable(_entranceDoor, false);
@@ -87,8 +87,8 @@ namespace WarcraftLegacies.Source.Quests
       foreach (var rect in rectangles)
       {
         var enterTrigger = CreateTrigger();
-        enterTrigger.RegisterEnterRegion(rect);
-        enterTrigger.AddAction(() => GetEnteringUnit().SetPosition(_entrance.Center));
+        TriggerRegisterEnterRegion(enterTrigger, rect.Region, null);
+        TriggerAddAction(enterTrigger, () => GetEnteringUnit().SetPosition(_entrance.Center));
         triggers.Add(enterTrigger);
       }
 

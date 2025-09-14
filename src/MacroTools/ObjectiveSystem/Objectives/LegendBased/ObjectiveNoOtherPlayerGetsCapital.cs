@@ -27,12 +27,12 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     {
       Progress = QuestProgress.Complete;
       var changeTrigger = CreateTrigger();
-      changeTrigger.RegisterUnitEvent(_target.Unit, EVENT_UNIT_CHANGE_OWNER);
-      changeTrigger.AddAction(() =>
-        {
-          if (GetTriggerUnit().OwningPlayer() != faction.Player) 
-            Progress = QuestProgress.Failed;
-        });
+      TriggerRegisterUnitEvent(changeTrigger, _target.Unit, EVENT_UNIT_CHANGE_OWNER);
+      TriggerAddAction(changeTrigger, () =>
+      {
+        if (GetTriggerUnit().OwningPlayer() != faction.Player) 
+          Progress = QuestProgress.Failed;
+      });
     }
   }
 }

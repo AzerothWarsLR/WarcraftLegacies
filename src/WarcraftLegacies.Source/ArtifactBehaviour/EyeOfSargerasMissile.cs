@@ -44,12 +44,12 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
       
       var eyeEffect = AddSpecialEffectTarget(@"Doodads\Cinematic\EyeOfSargeras\EyeOfSargeras.mdl", Target, "overhead");
       var deathTrigger = CreateTrigger();
-      deathTrigger.RegisterUnitEvent(Target, EVENT_UNIT_DEATH);
-      deathTrigger.AddAction(() =>
-        {
-          eyeEffect.Destroy();
-          DestroyTrigger(GetTriggeringTrigger());
-        });
+      TriggerRegisterUnitEvent(deathTrigger, Target, EVENT_UNIT_DEATH);
+      TriggerAddAction(deathTrigger, () =>
+      {
+        eyeEffect.Destroy();
+        DestroyTrigger(GetTriggeringTrigger());
+      });
     }
 
     /// <inheritdoc />

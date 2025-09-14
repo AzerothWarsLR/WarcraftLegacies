@@ -64,21 +64,21 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
 
       var enterTrigger = CreateTrigger();
       enterTrigger.RegisterEnterRegions(_targetRects);
-      enterTrigger.AddAction(() =>
-        {
-          var triggerUnit = GetTriggerUnit();
-          if (!IsUnitValid(triggerUnit)) 
-            return;
-          CompletingUnit = triggerUnit;
-          Progress = QuestProgress.Complete;
-        });
+      TriggerAddAction(enterTrigger, () =>
+      {
+        var triggerUnit = GetTriggerUnit();
+        if (!IsUnitValid(triggerUnit)) 
+          return;
+        CompletingUnit = triggerUnit;
+        Progress = QuestProgress.Complete;
+      });
       var leaveTrigger = CreateTrigger();
       leaveTrigger.RegisterLeaveRegions(_targetRects);
-      leaveTrigger.AddAction(() =>
-        {
-          if (!IsValidUnitInRects()) 
-            Progress = QuestProgress.Incomplete;
-        });
+      TriggerAddAction(leaveTrigger, () =>
+      {
+        if (!IsValidUnitInRects()) 
+          Progress = QuestProgress.Incomplete;
+      });
     }
   }
 }

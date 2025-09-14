@@ -41,8 +41,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       _target.UnitChanged += (_, _) => { RecalculateProgress(); };
 
       var deathTrigger = CreateTrigger();
-      deathTrigger.RegisterUnitEvent(_target.Unit, EVENT_UNIT_DEATH);
-      deathTrigger.AddAction(() => { Progress = QuestProgress.Failed; });
+      TriggerRegisterUnitEvent(deathTrigger, _target.Unit, EVENT_UNIT_DEATH);
+      TriggerAddAction(deathTrigger, () => { Progress = QuestProgress.Failed; });
     }
 
     private void RecalculateProgress()

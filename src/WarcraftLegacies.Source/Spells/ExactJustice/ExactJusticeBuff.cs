@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using WCSharp.Buffs;
+﻿using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.Spells.ExactJustice
 {
@@ -23,8 +22,8 @@ namespace WarcraftLegacies.Source.Spells.ExactJustice
     public override void OnApply()
     {
       _noDamageTrigger = CreateTrigger();
-      _noDamageTrigger.RegisterUnitEvent(Target, EVENT_UNIT_DAMAGED);
-      _noDamageTrigger.AddAction(() => BlzSetEventDamage(0));
+      TriggerRegisterUnitEvent(_noDamageTrigger, Target, EVENT_UNIT_DAMAGED);
+      TriggerAddAction(_noDamageTrigger, () => BlzSetEventDamage(0));
     }
 
     /// <inheritdoc />

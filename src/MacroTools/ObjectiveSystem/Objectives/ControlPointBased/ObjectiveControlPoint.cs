@@ -72,12 +72,12 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       {
         _maxKillCount++;
         var killTrigger = CreateTrigger();
-        killTrigger.RegisterUnitEvent(unit, EVENT_UNIT_DEATH);
-        killTrigger .AddAction(() =>
-          {
-            CurrentKillCount++;
-            DestroyTrigger(GetTriggeringTrigger());
-          });
+        TriggerRegisterUnitEvent(killTrigger, unit, EVENT_UNIT_DEATH);
+        TriggerAddAction(killTrigger, () =>
+        {
+          CurrentKillCount++;
+          DestroyTrigger(GetTriggeringTrigger());
+        });
       }
     }
   }

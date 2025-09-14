@@ -64,17 +64,16 @@ namespace WarcraftLegacies.Source.Spells
         UnitAddType(summonedTauren, UNIT_TYPE_SUMMONED);
 
         var deathTrigger = CreateTrigger();
-        deathTrigger.RegisterUnitEvent(summonedTauren, EVENT_UNIT_DEATH);
-        deathTrigger.AddAction(() =>
-          {
-            AddSpecialEffect(DeathEffect, GetUnitX(summonedTauren), GetUnitY(summonedTauren))
-              .SetLifespan(1);
+        TriggerRegisterUnitEvent(deathTrigger, summonedTauren, EVENT_UNIT_DEATH);
+        TriggerAddAction(deathTrigger, () =>
+        {
+          AddSpecialEffect(DeathEffect, GetUnitX(summonedTauren), GetUnitY(summonedTauren))
+            .SetLifespan(1);
             
-            RemoveUnit(summonedTauren);
+          RemoveUnit(summonedTauren);
             
-            GetTriggeringTrigger()
-              .Destroy();
-          });
+          DestroyTrigger(GetTriggeringTrigger());
+        });
         
         AddSpecialEffect(SummonEffect, targetPoint.X, targetPoint.Y)
           .SetLifespan();

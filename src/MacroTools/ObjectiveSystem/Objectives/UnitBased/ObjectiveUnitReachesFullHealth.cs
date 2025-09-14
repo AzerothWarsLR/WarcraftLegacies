@@ -26,12 +26,13 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
         : $"Bring {GetUnitName(objectiveUnit)} to {hitPointRequirement} hit points";
       DisplaysPosition = IsUnitType(objectiveUnit, UNIT_TYPE_STRUCTURE);
       var lifeTrigger = CreateTrigger();
-      lifeTrigger.RegisterLifeEvent(objectiveUnit, UNIT_STATE_LIFE, GREATER_THAN, hitPointRequirement - 1);
-      lifeTrigger.AddAction(() =>
-        {
-          Progress = QuestProgress.Complete;
-          GetTriggeringTrigger().Destroy();
-        });
+      float limitValue = hitPointRequirement - 1;
+      TriggerRegisterUnitStateEvent(lifeTrigger, objectiveUnit, UNIT_STATE_LIFE, GREATER_THAN, limitValue);
+      TriggerAddAction(lifeTrigger, () =>
+      {
+        Progress = QuestProgress.Complete;
+        DestroyTrigger(GetTriggeringTrigger());
+      });
 
       Position = _objectiveUnit.GetPosition();
     }

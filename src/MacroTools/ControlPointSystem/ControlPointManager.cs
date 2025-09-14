@@ -180,8 +180,8 @@ namespace MacroTools.ControlPointSystem
     private static void RegisterDamageTrigger(ControlPoint controlPoint)
     {
       var trigger = CreateTrigger();
-      trigger.RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_DAMAGED);
-      trigger.AddAction(() =>
+      TriggerRegisterUnitEvent(trigger, controlPoint.Unit, EVENT_UNIT_DAMAGED);
+      TriggerAddAction(trigger, () =>
       {
         try
         {
@@ -203,33 +203,33 @@ namespace MacroTools.ControlPointSystem
     private void RegisterOwnershipChangeTrigger(ControlPoint controlPoint)
     {
       var trigger = CreateTrigger();
-      trigger.RegisterUnitEvent(controlPoint.Unit, EVENT_UNIT_CHANGE_OWNER);
-      trigger.AddAction(() =>
+      TriggerRegisterUnitEvent(trigger, controlPoint.Unit, EVENT_UNIT_CHANGE_OWNER);
+      TriggerAddAction(trigger, () =>
+      {
+        try
         {
-          try
-          {
-            var previousOwner = PlayerData.ByHandle(GetChangingUnitPrevOwner());
-            previousOwner.RemoveControlPoint(controlPoint);
-            previousOwner.BaseIncome -= controlPoint.Value;
+          var previousOwner = PlayerData.ByHandle(GetChangingUnitPrevOwner());
+          previousOwner.RemoveControlPoint(controlPoint);
+          previousOwner.BaseIncome -= controlPoint.Value;
 
-            var newOwner = PlayerData.ByHandle(GetTriggerUnit().OwningPlayer());
-            newOwner.AddControlPoint(controlPoint);
-            newOwner.BaseIncome += controlPoint.Value;
+          var newOwner = PlayerData.ByHandle(GetTriggerUnit().OwningPlayer());
+          newOwner.AddControlPoint(controlPoint);
+          newOwner.BaseIncome += controlPoint.Value;
 
-            if (GetUnitAbilityLevel(controlPoint.Unit, RegenerationAbility) == 0)
-              controlPoint.Unit.AddAbility(RegenerationAbility);
+          if (GetUnitAbilityLevel(controlPoint.Unit, RegenerationAbility) == 0)
+            controlPoint.Unit.AddAbility(RegenerationAbility);
             
-            if (GetUnitAbilityLevel(controlPoint.Unit, PiercingResistanceAbility) == 0)
-              controlPoint.Unit.AddAbility(PiercingResistanceAbility);
+          if (GetUnitAbilityLevel(controlPoint.Unit, PiercingResistanceAbility) == 0)
+            controlPoint.Unit.AddAbility(PiercingResistanceAbility);
             
-            controlPoint.Unit.SetLifePercent(100);
-            controlPoint.ControlLevel = 0;
-          }
-          catch (Exception ex)
-          {
-            Console.WriteLine(ex);
-          }
-        });
+          controlPoint.Unit.SetLifePercent(100);
+          controlPoint.ControlLevel = 0;
+        }
+        catch (Exception ex)
+        {
+          Console.WriteLine(ex);
+        }
+      });
     }
 
     private void RegisterControlLevelChangeTrigger(ControlPoint controlPoint)

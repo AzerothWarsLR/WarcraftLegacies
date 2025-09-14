@@ -1,5 +1,4 @@
 ﻿using System;
-using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using WarcraftLegacies.Source.Powers;
@@ -33,8 +32,8 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
       _frozenThrone = frozenThrone;
 
       var ownerChangeTrigger = CreateTrigger();
-      ownerChangeTrigger.RegisterUnitEvent(frozenThrone.Unit!, EVENT_UNIT_CHANGE_OWNER);
-      ownerChangeTrigger.AddAction(OnFrozenThroneChangeOwner);
+      TriggerRegisterUnitEvent(ownerChangeTrigger, frozenThrone.Unit!, EVENT_UNIT_CHANGE_OWNER);
+      TriggerAddAction(ownerChangeTrigger, OnFrozenThroneChangeOwner);
 
       lichKing.PermanentlyDied += OnLichKingDied;
 
@@ -135,7 +134,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
 
     private static void OnFrozenThroneChangeOwner()
     {
-      GetTriggeringTrigger().Destroy();
+      DestroyTrigger(GetTriggeringTrigger());
       Fracture();
     }
     

@@ -1,6 +1,5 @@
 ﻿using System;
 using MacroTools.Cheats;
-using MacroTools.Extensions;
 using MacroTools.Systems;
 using WCSharp.Shared;
 
@@ -43,7 +42,14 @@ namespace WarcraftLegacies.Source.Cheats
         TriggerRegisterPlayerEvent(_skipTrigger, player, EVENT_PLAYER_END_CINEMATIC);
       TriggerAddAction(_skipTrigger, Actions);
 
-      GameTime.GameStarted += (_, _) => _skipTrigger?.Destroy();
+      GameTime.GameStarted += (_, _) =>
+      {
+        trigger tempQualifier = _skipTrigger;
+        if (tempQualifier != null)
+        {
+          DestroyTrigger(tempQualifier);
+        }
+      };
     }
   }
 }

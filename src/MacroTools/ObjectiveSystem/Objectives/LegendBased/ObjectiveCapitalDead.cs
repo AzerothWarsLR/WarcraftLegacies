@@ -1,4 +1,3 @@
-using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
 using static War3Api.Common;
@@ -20,8 +19,8 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       Description = $"{GetUnitName(target.Unit)} is destroyed";
       DisplaysPosition = true;
       var deathTrigger = CreateTrigger();
-      deathTrigger.RegisterUnitEvent(target.Unit, EVENT_UNIT_DEATH);
-      deathTrigger.AddAction(() => Progress = QuestProgress.Complete);
+      TriggerRegisterUnitEvent(deathTrigger, target.Unit, EVENT_UNIT_DEATH);
+      TriggerAddAction(deathTrigger, () => Progress = QuestProgress.Complete);
       
       Position = new(GetUnitX(target.Unit), GetUnitY(target.Unit));
     }

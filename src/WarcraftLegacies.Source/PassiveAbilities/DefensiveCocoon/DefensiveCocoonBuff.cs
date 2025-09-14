@@ -38,8 +38,8 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
         .SetLifespan();
 
       _deathTrigger = CreateTrigger();
-      _deathTrigger.RegisterUnitEvent(_egg, EVENT_UNIT_DEATH);
-      _deathTrigger.AddAction(() =>
+      TriggerRegisterUnitEvent(_deathTrigger, _egg, EVENT_UNIT_DEATH);
+      TriggerAddAction(_deathTrigger, () =>
       {
         var killingUnit = GetKillingUnit();
         if (killingUnit != null && IsUnitType(killingUnit, UNIT_TYPE_HERO))
@@ -55,7 +55,12 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
 
     public override void OnDispose()
     {
-      _deathTrigger?.Destroy();
+      trigger tempQualifier = _deathTrigger;
+      if (tempQualifier != null)
+      {
+        DestroyTrigger(tempQualifier);
+      }
+
       ShowUnit(Target, true);
       BlzPauseUnitEx(Target, false);
 

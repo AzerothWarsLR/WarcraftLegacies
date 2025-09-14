@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
 
@@ -74,23 +73,36 @@ namespace MacroTools.LegendSystem
     /// <inheritdoc />
     protected override void OnChangeUnit()
     {
-      _deathTrig?.Destroy();
+      trigger tempQualifier = _deathTrig;
+      if (tempQualifier != null)
+      {
+        DestroyTrigger(tempQualifier);
+      }
+
       _deathTrig = CreateTrigger();
-      _deathTrig.RegisterUnitEvent(Unit, EVENT_UNIT_DEATH);
-      _deathTrig.AddAction(OnDeath);
+      TriggerRegisterUnitEvent(_deathTrig, Unit, EVENT_UNIT_DEATH);
+      TriggerAddAction(_deathTrig, OnDeath);
 
-      _damageTrig?.Destroy();
+      if (_damageTrig != null)
+      {
+        DestroyTrigger(_damageTrig);
+      }
+
       _damageTrig = CreateTrigger();
-      _damageTrig.RegisterUnitEvent(Unit, EVENT_UNIT_DAMAGED);
-      _damageTrig.AddAction(OnDamaged);
+      TriggerRegisterUnitEvent(_damageTrig, Unit, EVENT_UNIT_DAMAGED);
+      TriggerAddAction(_damageTrig, OnDamaged);
 
-      _ownerTrig?.Destroy();
+      if (_ownerTrig != null)
+      {
+        DestroyTrigger(_ownerTrig);
+      }
+
       _ownerTrig = CreateTrigger();
-      _ownerTrig.RegisterUnitEvent(Unit, EVENT_UNIT_CHANGE_OWNER);
-      _ownerTrig.AddAction(() =>
-        {
-          OnChangeOwner(new LegendChangeOwnerEventArgs(this, GetChangingUnitPrevOwner()));
-        });
+      TriggerRegisterUnitEvent(_ownerTrig, Unit, EVENT_UNIT_CHANGE_OWNER);
+      TriggerAddAction(_ownerTrig, () =>
+      {
+        OnChangeOwner(new LegendChangeOwnerEventArgs(this, GetChangingUnitPrevOwner()));
+      });
     }
     
     private void OnDamaged()

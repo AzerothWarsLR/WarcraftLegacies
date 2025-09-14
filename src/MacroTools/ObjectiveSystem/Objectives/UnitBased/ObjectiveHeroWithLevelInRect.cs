@@ -30,22 +30,22 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       DisplaysPosition = true;
 
       var enterTrigger = CreateTrigger();
-      enterTrigger.RegisterEnterRegion(targetRect);
-      enterTrigger.AddAction(() =>
-        {
-          var triggerUnit = GetTriggerUnit();
-          if (!IsUnitValid(triggerUnit)) 
-            return;
-          CompletingUnit = triggerUnit;
-          Progress = QuestProgress.Complete;
-        });
+      TriggerRegisterEnterRegion(enterTrigger, targetRect.Region, null);
+      TriggerAddAction(enterTrigger, () =>
+      {
+        var triggerUnit = GetTriggerUnit();
+        if (!IsUnitValid(triggerUnit)) 
+          return;
+        CompletingUnit = triggerUnit;
+        Progress = QuestProgress.Complete;
+      });
       var leaveTrigger = CreateTrigger();
-      leaveTrigger.RegisterLeaveRegion(targetRect);
-      leaveTrigger.AddAction(() =>
-        {
-          if (!IsValidUnitInRect()) 
-            Progress = QuestProgress.Incomplete;
-        });
+      TriggerRegisterLeaveRegion(leaveTrigger, targetRect.Region, null);
+      TriggerAddAction(leaveTrigger, () =>
+      {
+        if (!IsValidUnitInRect()) 
+          Progress = QuestProgress.Incomplete;
+      });
       
       Position = new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
     }

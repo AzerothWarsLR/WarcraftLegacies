@@ -50,12 +50,12 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
         {
           _maxKillCount++;
           var deathTrigger = CreateTrigger();
-          deathTrigger.RegisterUnitEvent(unit, EVENT_UNIT_DEATH);
-          deathTrigger.AddAction(() =>
-            {
-              CurrentKillCount++;
-              DestroyTrigger(GetTriggeringTrigger());
-            });
+          TriggerRegisterUnitEvent(deathTrigger, unit, EVENT_UNIT_DEATH);
+          TriggerAddAction(deathTrigger, () =>
+          {
+            CurrentKillCount++;
+            DestroyTrigger(GetTriggeringTrigger());
+          });
         }
       }
       CurrentKillCount = 0;

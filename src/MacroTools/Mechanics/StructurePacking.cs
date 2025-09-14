@@ -67,8 +67,8 @@ namespace MacroTools.Mechanics
     {
       GetTriggerUnit().SetTimedLife(0.01f);
       var deathTrigger = CreateTrigger();
-      deathTrigger.RegisterUnitEvent(GetTriggerUnit(), EVENT_UNIT_DEATH);
-      deathTrigger.AddAction(() =>
+      TriggerRegisterUnitEvent(deathTrigger, GetTriggerUnit(), EVENT_UNIT_DEATH);
+      TriggerAddAction(deathTrigger, () =>
       {
         RemoveUnit(GetTriggerUnit());
         DestroyTrigger(GetTriggeringTrigger());

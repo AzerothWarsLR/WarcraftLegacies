@@ -85,7 +85,7 @@ namespace MacroTools.BookSystem.Core
       
       var trigger = CreateTrigger();
       trigger.RegisterSharedKeyEvent(OSKEY_ESCAPE, BlzGetTriggerPlayerMetaKey(), false);
-      trigger.AddAction(() =>
+      TriggerAddAction(trigger, () =>
       {
         if (GetTriggerPlayer() != GetLocalPlayer())
           return;

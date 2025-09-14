@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.QuestSystem;
+﻿using MacroTools.QuestSystem;
 using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
@@ -26,12 +25,12 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     public ObjectiveUnitIsDead(unit unitToKill)
     {
       var deathTrigger = CreateTrigger();
-      deathTrigger.RegisterUnitEvent(unitToKill, EVENT_UNIT_DEATH);
-      deathTrigger.AddAction(() =>
-        {
-          KillingUnit = GetKillingUnit();
-          Progress = QuestProgress.Complete;
-        });
+      TriggerRegisterUnitEvent(deathTrigger, unitToKill, EVENT_UNIT_DEATH);
+      TriggerAddAction(deathTrigger, () =>
+      {
+        KillingUnit = GetKillingUnit();
+        Progress = QuestProgress.Complete;
+      });
       Target = unitToKill;
       TargetWidget = Target;
       InitializeDescription();

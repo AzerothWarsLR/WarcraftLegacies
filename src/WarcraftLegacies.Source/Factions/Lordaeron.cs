@@ -373,26 +373,26 @@ namespace WarcraftLegacies.Source.Factions
     private void RegisterCrownOfLordaeronDrop()
     {
       var ownerChangeTrigger = CreateTrigger();
-      ownerChangeTrigger.RegisterUnitEvent(_allLegendSetup.Lordaeron.CapitalPalace.Unit, EVENT_UNIT_CHANGE_OWNER);
-      ownerChangeTrigger.AddAction(() =>
-        {
-          var lordaeronPlayer = Player;
-          if (lordaeronPlayer?.GetTeam()?.Contains(GetOwningPlayer(GetTriggerUnit())) == true){
-            return;
-          }
+      TriggerRegisterUnitEvent(ownerChangeTrigger, _allLegendSetup.Lordaeron.CapitalPalace.Unit, EVENT_UNIT_CHANGE_OWNER);
+      TriggerAddAction(ownerChangeTrigger, () =>
+      {
+        var lordaeronPlayer = Player;
+        if (lordaeronPlayer?.GetTeam()?.Contains(GetOwningPlayer(GetTriggerUnit())) == true){
+          return;
+        }
 
-          if (_allLegendSetup.Lordaeron.Terenas.Unit != null) 
-            KillUnit(_allLegendSetup.Lordaeron.Terenas.Unit);
+        if (_allLegendSetup.Lordaeron.Terenas.Unit != null) 
+          KillUnit(_allLegendSetup.Lordaeron.Terenas.Unit);
 
-          SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,
-            FourCC("Ysaw"), false, "hide", false);
-          SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,
-            FourCC("D044"), false, "hide", false);
-          SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,
-            FourCC("YObb"), false, "hide", false);
-          SetDoodadAnimationRect(Regions.Terenas.Rect, FourCC("YScr"), "show", false);
-          DestroyTrigger(GetTriggeringTrigger());
-        });
+        SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,
+          FourCC("Ysaw"), false, "hide", false);
+        SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,
+          FourCC("D044"), false, "hide", false);
+        SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,
+          FourCC("YObb"), false, "hide", false);
+        SetDoodadAnimationRect(Regions.Terenas.Rect, FourCC("YScr"), "show", false);
+        DestroyTrigger(GetTriggeringTrigger());
+      });
     }
   }
 }

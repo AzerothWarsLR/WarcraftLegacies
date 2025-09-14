@@ -185,25 +185,39 @@ namespace MacroTools.LegendSystem
     /// <inheritdoc />
     protected override void OnChangeUnit()
     {
-      _becomesRevivableTrig?.Destroy();
-      _castTrig?.Destroy();
-      _ownerTrig?.Destroy();
+      trigger tempQualifier = _becomesRevivableTrig;
+      if (tempQualifier != null)
+      {
+        DestroyTrigger(tempQualifier);
+      }
+
+      trigger tempQualifier1 = _castTrig;
+      if (tempQualifier1 != null)
+      {
+        DestroyTrigger(tempQualifier1);
+      }
+
+      trigger tempQualifier2 = _ownerTrig;
+      if (tempQualifier2 != null)
+      {
+        DestroyTrigger(tempQualifier2);
+      }
 
       if (Unit == null) 
         return;
 
       _becomesRevivableTrig = CreateTrigger();
-      _becomesRevivableTrig.RegisterUnitEvent(Unit, EVENT_UNIT_HERO_REVIVABLE);
-      _becomesRevivableTrig.AddAction(OnDeath);
+      TriggerRegisterUnitEvent(_becomesRevivableTrig, Unit, EVENT_UNIT_HERO_REVIVABLE);
+      TriggerAddAction(_becomesRevivableTrig, OnDeath);
       _castTrig = CreateTrigger();
-      _castTrig.RegisterUnitEvent(Unit, EVENT_UNIT_SPELL_FINISH);
-      _castTrig.AddAction(OnCast);
+      TriggerRegisterUnitEvent(_castTrig, Unit, EVENT_UNIT_SPELL_FINISH);
+      TriggerAddAction(_castTrig, OnCast);
       _ownerTrig = CreateTrigger();
-      _ownerTrig.RegisterUnitEvent(Unit, EVENT_UNIT_CHANGE_OWNER);
-      _ownerTrig.AddAction(() =>
-        {
-          OnChangeOwner(new LegendChangeOwnerEventArgs(this, GetChangingUnitPrevOwner()));
-        });
+      TriggerRegisterUnitEvent(_ownerTrig, Unit, EVENT_UNIT_CHANGE_OWNER);
+      TriggerAddAction(_ownerTrig, () =>
+      {
+        OnChangeOwner(new LegendChangeOwnerEventArgs(this, GetChangingUnitPrevOwner()));
+      });
       PlayerUnitEvents.Register(UnitEvent.Damaging, () =>
       {
         DealtDamage?.Invoke(this, EventArgs.Empty);

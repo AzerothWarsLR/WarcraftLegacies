@@ -167,8 +167,8 @@ namespace WarcraftLegacies.Source.Spells
       public override void OnApply()
       {
         _damageTrigger = CreateTrigger();
-        _damageTrigger.RegisterUnitEvent(Target, EVENT_UNIT_DAMAGED);
-        _damageTrigger.AddAction(() => BlzSetEventDamage(0));
+        TriggerRegisterUnitEvent(_damageTrigger, Target, EVENT_UNIT_DAMAGED);
+        TriggerAddAction(_damageTrigger, () => BlzSetEventDamage(0));
       }
 
       public override void OnDispose()

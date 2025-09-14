@@ -53,8 +53,8 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     {
       _objectivePowerSource.UsedPowerSource?.SetDroppable(false);
       var deathTrigger = CreateTrigger();
-      deathTrigger.RegisterUnitEvent(_dimensionalGenerator, EVENT_UNIT_DEATH);
-      deathTrigger.AddAction(() => { _objectivePowerSource.UsedPowerSource?.SetDroppable(true); });
+      TriggerRegisterUnitEvent(deathTrigger, _dimensionalGenerator, EVENT_UNIT_DEATH);
+      TriggerAddAction(deathTrigger, () => { _objectivePowerSource.UsedPowerSource?.SetDroppable(true); });
     }
 
     /// <inheritdoc/>

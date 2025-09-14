@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MacroTools.Extensions;
 using static War3Api.Common;
 
 namespace MacroTools.DialogueSystem
@@ -24,16 +23,16 @@ namespace MacroTools.DialogueSystem
     public void Play(player whichPlayer)
     {
       var trigger = CreateTrigger();
-      trigger.AddAction(() =>
+      TriggerAddAction(trigger, () =>
       {
         foreach (var dialogue in _dialogues)
         {
           dialogue.Play(whichPlayer);
           TriggerSleepAction(dialogue.Length + 0.75f);
         }
-        GetTriggeringTrigger().Destroy();
+        DestroyTrigger(GetTriggeringTrigger());
       });
-      trigger.Execute();
+      TriggerExecute(trigger);
     }
   }
 }

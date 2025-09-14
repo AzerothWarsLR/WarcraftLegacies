@@ -209,7 +209,7 @@ namespace MacroTools.Extensions
       
       _dialoguePlaying = true;
       var dialogueTrigger = CreateTrigger();
-      dialogueTrigger.AddAction(() =>
+      TriggerAddAction(dialogueTrigger, () =>
       {
         while (_dialogueQueue.Any())
         {
@@ -220,9 +220,9 @@ namespace MacroTools.Extensions
         }
 
         _dialoguePlaying = false;
-        GetTriggeringTrigger().Destroy();
+        DestroyTrigger(GetTriggeringTrigger());
       });
-      dialogueTrigger.Execute();
+      TriggerExecute(dialogueTrigger);
     }
     
     /// <summary>

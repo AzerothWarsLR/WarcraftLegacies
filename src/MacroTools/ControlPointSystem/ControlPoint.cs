@@ -1,5 +1,4 @@
 using System;
-using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using static War3Api.Common;
 
@@ -94,11 +93,8 @@ namespace MacroTools.ControlPointSystem
     internal void OnRegister()
     {
       var trigger = CreateTrigger();
-      trigger.RegisterUnitEvent(Unit, EVENT_UNIT_CHANGE_OWNER);
-      trigger.AddAction(() =>
-        {
-          SignalOwnerAllianceChange();
-        });
+      TriggerRegisterUnitEvent(trigger, Unit, EVENT_UNIT_CHANGE_OWNER);
+      TriggerAddAction(trigger, SignalOwnerAllianceChange);
     }
 
     /// <summary>

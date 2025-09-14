@@ -41,8 +41,8 @@ namespace MacroTools.GameModes
         {
           var dialogButton = DialogAddButton(dialog, gameModeVote.GameMode.Name, 0);
           var buttonClickTrigger = CreateTrigger();
-          buttonClickTrigger.RegisterDialogButtonEvent(dialogButton);
-          buttonClickTrigger.AddAction(() => { gameModeVote.VoteCount += 1; });
+          TriggerRegisterDialogButtonEvent(buttonClickTrigger, dialogButton);
+          TriggerAddAction(buttonClickTrigger, () => { gameModeVote.VoteCount += 1; });
           buttonClickTriggers.Add(buttonClickTrigger);
         }
 
@@ -74,7 +74,7 @@ namespace MacroTools.GameModes
       }
       
       foreach (var trigger in buttonClickTriggers)
-        trigger.Destroy();
+        DestroyTrigger(trigger);
     }
 
     private sealed class GameModeVote
