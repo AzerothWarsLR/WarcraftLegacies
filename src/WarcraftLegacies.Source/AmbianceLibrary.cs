@@ -7,304 +7,291 @@ namespace WarcraftLegacies.Source
   /// </summary>
   public static class AmbianceLibrary
   {
-    public static sound DalaranRuinsNight
+    public static sound DalaranRuinsNight { get; } = InitDalaranRuinsNight();
+
+    public static sound BlackCitadelOutlandNight { get; } = InitBlackCitadelOutlandNight();
+
+    public static sound BlackCitadelOutlandDay { get; } = InitBlackCitadelOutlandDay();
+
+    public static sound IceCrownNight { get; } = InitIceCrownNight();
+
+    public static sound AshenvaleNight { get; } = InitAshenvaleNight();
+
+    public static sound LordaeronFallDay { get; } = InitLordaeronFallDay();
+
+    public static sound AshenvaleDay { get; } = InitAshenvaleDay();
+
+    public static sound BarrensDay { get; } = InitBarrensDay();
+
+    public static sound DalaranRuinsDay { get; } = InitDalaranRuinsDay();
+
+    public static sound WetlandsNight { get; } = InitWetlandsNight();
+
+    public static sound WetlandsDay { get; } = InitWetlandsDay();
+
+    public static sound IceCrownDay { get; } = InitIceCrownDay();
+
+    public static sound LordaeronSummerDay { get; } = InitLordaeronSummerDay();
+
+    public static sound CityScapeDay { get; } = InitCityScapeDay();
+
+    public static sound LordaeronSummerNight { get; } = InitLordaeronSummerNight();
+
+    public static sound NorthrendDay { get; } = InitNorthrendDay();
+
+    public static sound NorthrendNight { get; } = InitNorthrendNight();
+
+    public static sound LordaeronWinterNight { get; } = InitLordaeronWinterNight();
+
+    public static sound LordaeronFallNight { get; } = InitLordaeronFallNight();
+
+    public static sound LordaeronWinterDay { get; } = InitLordaeronWinterDay();
+
+    private static sound InitDalaranRuinsNight()
     {
-      get
-      {
-        var s = CreateSound("Sound/Ambient/DalaranRuins/DalaranRuinsNight.flac", true, true, true, 1, 1, "DefaultEAXON");
-        SetSoundParamsFromLabel(s, "DalaranRuinsNight");
-        SetSoundDuration(s, 114759);
-        SetSoundChannel(s, 10);
-        SetSoundVolume(s, 15);
-        SetSoundDistances(s, 0, 10000.0f);
-        SetSoundDistanceCutoff(s, 100);
-        return s;
-      }
+      var s = CreateSound("Sound/Ambient/DalaranRuins/DalaranRuinsNight.flac", true, true, true, 1, 1, "DefaultEAXON");
+      SetSoundParamsFromLabel(s, "DalaranRuinsNight");
+      SetSoundDuration(s, 114759);
+      SetSoundChannel(s, 10);
+      SetSoundVolume(s, 15);
+      SetSoundDistances(s, 0, 10000.0f);
+      SetSoundDistanceCutoff(s, 100);
+      return s;
     }
 
-    public static sound BlackCitadelOutlandNight
+    private static sound InitBlackCitadelOutlandNight()
     {
-      get
-      {
-        var s = CreateSound("Sound/Ambient/BlackCitadel/BlackCitadel_OutlandNight.flac", true, true, true, 1, 1, "DefaultEAXON");
-        SetSoundParamsFromLabel(s, "BlackCitadelNight");
-        SetSoundDuration(s, 116318);
-        SetSoundChannel(s, 10);
-        SetSoundVolume(s, 18);
-        SetSoundDistances(s, 0, 10000.0f);
-        SetSoundDistanceCutoff(s, 100);
-        return s;
-      }
+      var s = CreateSound("Sound/Ambient/BlackCitadel/BlackCitadel_OutlandNight.flac", true, true, true, 1, 1,
+        "DefaultEAXON");
+      SetSoundParamsFromLabel(s, "BlackCitadelNight");
+      SetSoundDuration(s, 116318);
+      SetSoundChannel(s, 10);
+      SetSoundVolume(s, 18);
+      SetSoundDistances(s, 0, 10000.0f);
+      SetSoundDistanceCutoff(s, 100);
+      return s;
     }
 
-    public static sound BlackCitadelOutlandDay
+    private static sound InitBlackCitadelOutlandDay()
     {
-      get
-      {
-        var s = CreateSound("Sound/Ambient/BlackCitadel/BlackCitadel_OutlandDay.flac", true, true, true, 1, 1, "DefaultEAXON");
-        SetSoundParamsFromLabel(s, "BlackCitadelDay");
-        SetSoundDuration(s, 119186);
-        SetSoundChannel(s, 10);
-        SetSoundVolume(s, 14);
-        SetSoundDistances(s, 0, 10000f);
-        SetSoundDistanceCutoff(s, 100);
-        return s;
-      }
+      var s = CreateSound("Sound/Ambient/BlackCitadel/BlackCitadel_OutlandDay.flac", true, true, true, 1, 1,
+        "DefaultEAXON");
+      SetSoundParamsFromLabel(s, "BlackCitadelDay");
+      SetSoundDuration(s, 119186);
+      SetSoundChannel(s, 10);
+      SetSoundVolume(s, 14);
+      SetSoundDistances(s, 0, 10000f);
+      SetSoundDistanceCutoff(s, 100);
+      return s;
     }
 
-    public static sound IceCrownNight
+    private static sound InitIceCrownNight()
     {
-      get
-      {
-        var s = CreateSound("Sound/Ambient/IceCrown/IceCrownNight.flac", true, true, true, 1, 1, "DefaultEAXON");
-        SetSoundParamsFromLabel(s, "IceCrownNight");
-        SetSoundDuration(s, 123220);
-        SetSoundChannel(s, 10);
-        SetSoundVolume(s, 14);
-        SetSoundDistances(s, 0, 10000f);
-        SetSoundDistanceCutoff(s, 100);
-        return s;
-      }
+      var s = CreateSound("Sound/Ambient/IceCrown/IceCrownNight.flac", true, true, true, 1, 1, "DefaultEAXON");
+      SetSoundParamsFromLabel(s, "IceCrownNight");
+      SetSoundDuration(s, 123220);
+      SetSoundChannel(s, 10);
+      SetSoundVolume(s, 14);
+      SetSoundDistances(s, 0, 10000f);
+      SetSoundDistanceCutoff(s, 100);
+      return s;
     }
 
-    public static sound AshenvaleNight
+    private static sound InitAshenvaleNight()
     {
-      get
-      {
-        var s = CreateSound("Sound/Ambient/Ashenvale/AshenvaleNight.flac", true, true, true, 1, 1, "DefaultEAXON");
-        SetSoundParamsFromLabel(s, "AshenvaleNight");
-        SetSoundDuration(s, 119013);
-        SetSoundChannel(s, 10);
-        SetSoundVolume(s, 10);
-        SetSoundDistances(s, 0, 10000);
-        SetSoundDistanceCutoff(s, 100);
-        return s;
-      }
+      var s = CreateSound("Sound/Ambient/Ashenvale/AshenvaleNight.flac", true, true, true, 1, 1, "DefaultEAXON");
+      SetSoundParamsFromLabel(s, "AshenvaleNight");
+      SetSoundDuration(s, 119013);
+      SetSoundChannel(s, 10);
+      SetSoundVolume(s, 10);
+      SetSoundDistances(s, 0, 10000);
+      SetSoundDistanceCutoff(s, 100);
+      return s;
     }
 
-    public static sound LordaeronFallDay
+    private static sound InitLordaeronFallDay()
     {
-      get
-      {
-        var s = CreateSound("Sound/Ambient/LordaeronFall/LordaeronFallDay.flac", true, true, true, 1, 1, "DefaultEAXON");
-        SetSoundParamsFromLabel(s, "LordaeronFallDay");
-        SetSoundDuration(s, 124766);
-        SetSoundChannel(s, 10);
-        SetSoundVolume(s, 10);
-        SetSoundDistances(s, 0, 10000);
-        SetSoundDistanceCutoff(s, 100);
-        return s;
-      }
+      var s = CreateSound("Sound/Ambient/LordaeronFall/LordaeronFallDay.flac", true, true, true, 1, 1, "DefaultEAXON");
+      SetSoundParamsFromLabel(s, "LordaeronFallDay");
+      SetSoundDuration(s, 124766);
+      SetSoundChannel(s, 10);
+      SetSoundVolume(s, 10);
+      SetSoundDistances(s, 0, 10000);
+      SetSoundDistanceCutoff(s, 100);
+      return s;
     }
 
-    public static sound AshenvaleDay
+    private static sound InitAshenvaleDay()
     {
-      get
-      {
-        var s = CreateSound("Sound/Ambient/Ashenvale/AshenvaleDay.flac", true, true, true, 1, 1, "DefaultEAXON");
-        SetSoundParamsFromLabel(s, "AshenvaleDay");
-        SetSoundDuration(s, 47700);
-        SetSoundChannel(s, 10);
-        SetSoundVolume(s, 10);
-        SetSoundDistances(s, 0, 10000);
-        SetSoundDistanceCutoff(s, 100);
-        return s;
-      }
+      var s = CreateSound("Sound/Ambient/Ashenvale/AshenvaleDay.flac", true, true, true, 1, 1, "DefaultEAXON");
+      SetSoundParamsFromLabel(s, "AshenvaleDay");
+      SetSoundDuration(s, 47700);
+      SetSoundChannel(s, 10);
+      SetSoundVolume(s, 10);
+      SetSoundDistances(s, 0, 10000);
+      SetSoundDistanceCutoff(s, 100);
+      return s;
     }
 
-    public static sound BarrensDay
+    private static sound InitBarrensDay()
     {
-      get
-      {
-        var s = CreateSound("Sound/Ambient/Barrens/BarrensDay.flac", true, true, true, 1, 1, "DefaultEAXON");
-        SetSoundParamsFromLabel(s, "BarrensDay");
-        SetSoundDuration(s, 113856);
-        SetSoundChannel(s, 10);
-        SetSoundVolume(s, 20);
-        SetSoundDistances(s, 0, 10000);
-        SetSoundDistanceCutoff(s, 100);
-        return s;
-      }
+      var s = CreateSound("Sound/Ambient/Barrens/BarrensDay.flac", true, true, true, 1, 1, "DefaultEAXON");
+      SetSoundParamsFromLabel(s, "BarrensDay");
+      SetSoundDuration(s, 113856);
+      SetSoundChannel(s, 10);
+      SetSoundVolume(s, 20);
+      SetSoundDistances(s, 0, 10000);
+      SetSoundDistanceCutoff(s, 100);
+      return s;
     }
 
-    public static sound DalaranRuinsDay
+    private static sound InitDalaranRuinsDay()
     {
-      get
-      {
-        var s = CreateSound("Sound/Ambient/DalaranRuins/DalaranRuinsDay.flac", true, true, true, 1, 1, "DefaultEAXON");
-        SetSoundParamsFromLabel(s, "DalaranRuinsDay");
-        SetSoundDuration(s, 119795);
-        SetSoundChannel(s, 10);
-        SetSoundVolume(s, 20);
-        SetSoundDistances(s, 0, 10000);
-        SetSoundDistanceCutoff(s, 100);
-        return s;
-      }
+      var s = CreateSound("Sound/Ambient/DalaranRuins/DalaranRuinsDay.flac", true, true, true, 1, 1, "DefaultEAXON");
+      SetSoundParamsFromLabel(s, "DalaranRuinsDay");
+      SetSoundDuration(s, 119795);
+      SetSoundChannel(s, 10);
+      SetSoundVolume(s, 20);
+      SetSoundDistances(s, 0, 10000);
+      SetSoundDistanceCutoff(s, 100);
+      return s;
     }
 
-    public static sound WetlandsNight
+    private static sound InitWetlandsNight()
     {
-      get
-      {
-        var s = CreateSound("Sound/Ambient/SunkenRuins/WetlandsNight.flac", true, true, true, 1, 1, "DefaultEAXON");
-        SetSoundParamsFromLabel(s, "SunkenRuinsNight");
-        SetSoundDuration(s, 172730);
-        SetSoundChannel(s, 10);
-        SetSoundVolume(s, 5);
-        SetSoundDistances(s, 0, 10000);
-        SetSoundDistanceCutoff(s, 100);
-        return s;
-      }
+      var s = CreateSound("Sound/Ambient/SunkenRuins/WetlandsNight.flac", true, true, true, 1, 1, "DefaultEAXON");
+      SetSoundParamsFromLabel(s, "SunkenRuinsNight");
+      SetSoundDuration(s, 172730);
+      SetSoundChannel(s, 10);
+      SetSoundVolume(s, 5);
+      SetSoundDistances(s, 0, 10000);
+      SetSoundDistanceCutoff(s, 100);
+      return s;
     }
 
-    public static sound Wetlandsday
+    private static sound InitWetlandsDay()
     {
-      get
-      {
-        var s = CreateSound("Sound/Ambient/SunkenRuins/Wetlandsday.flac", true, true, true, 1, 1, "DefaultEAXON");
-        SetSoundParamsFromLabel(s, "SunkenRuinsDay");
-        SetSoundDuration(s, 175048);
-        SetSoundChannel(s, 10);
-        SetSoundVolume(s, 5);
-        SetSoundDistances(s, 0, 10000);
-        SetSoundDistanceCutoff(s, 100);
-        return s;
-      }
+      var s = CreateSound("Sound/Ambient/SunkenRuins/Wetlandsday.flac", true, true, true, 1, 1, "DefaultEAXON");
+      SetSoundParamsFromLabel(s, "SunkenRuinsDay");
+      SetSoundDuration(s, 175048);
+      SetSoundChannel(s, 10);
+      SetSoundVolume(s, 5);
+      SetSoundDistances(s, 0, 10000);
+      SetSoundDistanceCutoff(s, 100);
+      return s;
     }
 
-    public static sound IceCrownDay
+    private static sound InitIceCrownDay()
     {
-      get
-      {
-        var s = CreateSound("Sound/Ambient/IceCrown/IceCrownDay.flac", true, true, true, 1, 1, "DefaultEAXON");
-        SetSoundParamsFromLabel(s, "IceCrownDay");
-        SetSoundDuration(s, 120528);
-        SetSoundChannel(s, 10);
-        SetSoundVolume(s, 14);
-        SetSoundDistances(s, 0, 10000);
-        SetSoundDistanceCutoff(s, 100);
-        return s;
-      }
+      var s = CreateSound("Sound/Ambient/IceCrown/IceCrownDay.flac", true, true, true, 1, 1, "DefaultEAXON");
+      SetSoundParamsFromLabel(s, "IceCrownDay");
+      SetSoundDuration(s, 120528);
+      SetSoundChannel(s, 10);
+      SetSoundVolume(s, 14);
+      SetSoundDistances(s, 0, 10000);
+      SetSoundDistanceCutoff(s, 100);
+      return s;
     }
 
-    public static sound LordaeronSummerDay
+    private static sound InitLordaeronSummerDay()
     {
-      get
-      {
-        var s = CreateSound("Sound/Ambient/LordaeronSummer/LordaeronSummerDay.flac", true, true, true, 1, 1, "DefaultEAXON");
-        SetSoundParamsFromLabel(s, "LordaeronSummerDay");
-        SetSoundDuration(s, 117210);
-        SetSoundChannel(s, 10);
-        SetSoundVolume(s, 10);
-        SetSoundDistances(s, 0, 10000);
-        SetSoundDistanceCutoff(s, 100);
-        return s;
-      }
+      var s = CreateSound("Sound/Ambient/LordaeronSummer/LordaeronSummerDay.flac", true, true, true, 1, 1,
+        "DefaultEAXON");
+      SetSoundParamsFromLabel(s, "LordaeronSummerDay");
+      SetSoundDuration(s, 117210);
+      SetSoundChannel(s, 10);
+      SetSoundVolume(s, 10);
+      SetSoundDistances(s, 0, 10000);
+      SetSoundDistanceCutoff(s, 100);
+      return s;
     }
 
-    public static sound CityScapeDay
+    private static sound InitCityScapeDay()
     {
-      get
-      {
-        var s = CreateSound("Sound/Ambient/CityScape/CityScapeDay.flac", true, true, true, 1, 1, "DefaultEAXON");
-        SetSoundParamsFromLabel(s, "DalaranDay");
-        SetSoundDuration(s, 253775);
-        SetSoundChannel(s, 10);
-        SetSoundVolume(s, 16);
-        SetSoundDistances(s, 0, 10000);
-        SetSoundDistanceCutoff(s, 100);
-        return s;
-      }
+      var s = CreateSound("Sound/Ambient/CityScape/CityScapeDay.flac", true, true, true, 1, 1, "DefaultEAXON");
+      SetSoundParamsFromLabel(s, "DalaranDay");
+      SetSoundDuration(s, 253775);
+      SetSoundChannel(s, 10);
+      SetSoundVolume(s, 16);
+      SetSoundDistances(s, 0, 10000);
+      SetSoundDistanceCutoff(s, 100);
+      return s;
     }
 
-    public static sound LordaeronSummerNight
+    private static sound InitLordaeronSummerNight()
     {
-      get
-      {
-        var s = CreateSound("Sound/Ambient/LordaeronSummer/LordaeronSummerNight.flac", true, true, true, 1, 1, "DefaultEAXON");
-        SetSoundParamsFromLabel(s, "LordaeronSummerNight");
-        SetSoundDuration(s, 122859);
-        SetSoundChannel(s, 10);
-        SetSoundVolume(s, 10);
-        SetSoundDistances(s, 0, 10000);
-        SetSoundDistanceCutoff(s, 100);
-        return s;
-      }
+      var s = CreateSound("Sound/Ambient/LordaeronSummer/LordaeronSummerNight.flac", true, true, true, 1, 1,
+        "DefaultEAXON");
+      SetSoundParamsFromLabel(s, "LordaeronSummerNight");
+      SetSoundDuration(s, 122859);
+      SetSoundChannel(s, 10);
+      SetSoundVolume(s, 10);
+      SetSoundDistances(s, 0, 10000);
+      SetSoundDistanceCutoff(s, 100);
+      return s;
     }
 
-    public static sound NorthrendDay
+    private static sound InitNorthrendDay()
     {
-      get
-      {
-        var s = CreateSound("Sound/Ambient/Northrend/NorthrendDay.flac", true, true, true, 1, 1, "DefaultEAXON");
-        SetSoundParamsFromLabel(s, "NorthrendDay");
-        SetSoundDuration(s, 114102);
-        SetSoundChannel(s, 10);
-        SetSoundVolume(s, 15);
-        SetSoundDistances(s, 0, 10000);
-        SetSoundDistanceCutoff(s, 100);
-        return s;
-      }
+      var s = CreateSound("Sound/Ambient/Northrend/NorthrendDay.flac", true, true, true, 1, 1, "DefaultEAXON");
+      SetSoundParamsFromLabel(s, "NorthrendDay");
+      SetSoundDuration(s, 114102);
+      SetSoundChannel(s, 10);
+      SetSoundVolume(s, 15);
+      SetSoundDistances(s, 0, 10000);
+      SetSoundDistanceCutoff(s, 100);
+      return s;
     }
 
-    public static sound NorthrendNight
+    private static sound InitNorthrendNight()
     {
-      get
-      {
-        var s = CreateSound("Sound/Ambient/Northrend/NorthrendNight.flac", true, true, true, 1, 1, "DefaultEAXON");
-        SetSoundParamsFromLabel(s, "DungeonNight");
-        SetSoundDuration(s, 106607);
-        SetSoundChannel(s, 10);
-        SetSoundVolume(s, 25);
-        SetSoundDistances(s, 0, 10000);
-        SetSoundDistanceCutoff(s, 400);
-        return s;
-      }
+      var s = CreateSound("Sound/Ambient/Northrend/NorthrendNight.flac", true, true, true, 1, 1, "DefaultEAXON");
+      SetSoundParamsFromLabel(s, "DungeonNight");
+      SetSoundDuration(s, 106607);
+      SetSoundChannel(s, 10);
+      SetSoundVolume(s, 25);
+      SetSoundDistances(s, 0, 10000);
+      SetSoundDistanceCutoff(s, 400);
+      return s;
     }
 
-    public static sound LordaeronWinterNight
+    private static sound InitLordaeronWinterNight()
     {
-      get
-      {
-        var s = CreateSound("Sound/Ambient/LordaeronWinter/LordaeronWinterNight.flac", true, true, true, 1, 1, "DefaultEAXON");
-        SetSoundParamsFromLabel(s, "LordaeronWinterNight");
-        SetSoundDuration(s, 118060);
-        SetSoundChannel(s, 10);
-        SetSoundVolume(s, 10);
-        SetSoundDistances(s, 0, 10000);
-        SetSoundDistanceCutoff(s, 100);
-        return s;
-      }
+      var s = CreateSound("Sound/Ambient/LordaeronWinter/LordaeronWinterNight.flac", true, true, true, 1, 1,
+        "DefaultEAXON");
+      SetSoundParamsFromLabel(s, "LordaeronWinterNight");
+      SetSoundDuration(s, 118060);
+      SetSoundChannel(s, 10);
+      SetSoundVolume(s, 10);
+      SetSoundDistances(s, 0, 10000);
+      SetSoundDistanceCutoff(s, 100);
+      return s;
     }
 
-    public static sound LordaeronFallNight
+    private static sound InitLordaeronFallNight()
     {
-      get
-      {
-        var s = CreateSound("Sound/Ambient/LordaeronFall/LordaeronFallNight.flac", true, true, true, 1, 1, "DefaultEAXON");
-        SetSoundParamsFromLabel(s, "VillageFallNight");
-        SetSoundDuration(s, 124342);
-        SetSoundChannel(s, 10);
-        SetSoundVolume(s, 10);
-        SetSoundDistances(s, 0, 10000.0f);
-        SetSoundDistanceCutoff(s, 100);
-        return s;
-      }
+      var s = CreateSound("Sound/Ambient/LordaeronFall/LordaeronFallNight.flac", true, true, true, 1, 1,
+        "DefaultEAXON");
+      SetSoundParamsFromLabel(s, "VillageFallNight");
+      SetSoundDuration(s, 124342);
+      SetSoundChannel(s, 10);
+      SetSoundVolume(s, 10);
+      SetSoundDistances(s, 0, 10000.0f);
+      SetSoundDistanceCutoff(s, 100);
+      return s;
     }
 
-    public static sound LordaeronWinterDay
+    private static sound InitLordaeronWinterDay()
     {
-      get
-      {
-        var s = CreateSound("Sound/Ambient/LordaeronWinter/LordaeronWinterDay.flac", true, true, true, 1, 1, "DefaultEAXON");
-        SetSoundParamsFromLabel(s, "LordaeronWinterDay");
-        SetSoundDuration(s, 117986);
-        SetSoundChannel(s, 10);
-        SetSoundVolume(s, 10);
-        SetSoundDistances(s, 0, 10000.0f);
-        SetSoundDistanceCutoff(s, 100);
-        return s;
-      }
+      var s = CreateSound("Sound/Ambient/LordaeronWinter/LordaeronWinterDay.flac", true, true, true, 1, 1,
+        "DefaultEAXON");
+      SetSoundParamsFromLabel(s, "LordaeronWinterDay");
+      SetSoundDuration(s, 117986);
+      SetSoundChannel(s, 10);
+      SetSoundVolume(s, 10);
+      SetSoundDistances(s, 0, 10000.0f);
+      SetSoundDistanceCutoff(s, 100);
+      return s;
     }
   }
 }
