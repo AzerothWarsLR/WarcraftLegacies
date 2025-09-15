@@ -3,6 +3,7 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared;
 using WCSharp.Shared.Data;
@@ -47,8 +48,7 @@ namespace WarcraftLegacies.Source.Quests
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      player whichPlayer = _heroInRectObjective.CompletingUnit?.OwningPlayer() ?? Player(PLAYER_NEUTRAL_AGGRESSIVE);
-      SetUnitOwner(_ragnarosSummoningPedestal, whichPlayer, true);
+      SetUnitOwner(_ragnarosSummoningPedestal, _heroInRectObjective.CompletingUnit?.OwningPlayer() ?? Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
       SetUnitInvulnerable(_ragnarosSummoningPedestal, false);
     }
 
@@ -57,8 +57,8 @@ namespace WarcraftLegacies.Source.Quests
       var ragnarosSummonPoint = new Point(12332, -10597);
       _ragnaros.ForceCreate(Player(PLAYER_NEUTRAL_AGGRESSIVE), ragnarosSummonPoint, 320);
       var effect = AddSpecialEffect(@"Abilities\Spells\Other\BreathOfFire\BreathOfFireMissile.mdl", ragnarosSummonPoint.X, ragnarosSummonPoint.Y);
-      effect.SetScale(2);
-      effect.SetLifespan(1);
+      BlzSetSpecialEffectScale(effect, 2);
+      EffectSystem.Add(effect, 1);
       KillUnit(_ragnarosSummoningPedestal);
 
       foreach (var player in Util.EnumeratePlayers())

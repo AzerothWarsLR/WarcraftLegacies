@@ -3,6 +3,7 @@ using MacroTools.Data;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.SpellSystem;
+using WCSharp.Effects;
 using WCSharp.Missiles;
 using WCSharp.Shared.Data;
 
@@ -86,8 +87,8 @@ namespace WarcraftLegacies.Source.Spells
       {
         var projectileOrigin = GetProjectileOrigin(i, middle, casterFacing, casterX, casterY, width, projectileCount);
         var effect = AddSpecialEffect(EffectOnProjectileSpawn, projectileOrigin.X, projectileOrigin.Y);
-        effect.SetScale(EffectOnProjectileSpawnScale);
-        effect.SetLifespan();
+        BlzSetSpecialEffectScale(effect, EffectOnProjectileSpawnScale);
+        EffectSystem.Add(effect);
 
         var projectileDestination = GetProjectileDestination(projectileOrigin, casterFacing);
         

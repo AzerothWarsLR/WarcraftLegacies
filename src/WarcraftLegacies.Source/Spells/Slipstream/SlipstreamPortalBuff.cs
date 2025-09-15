@@ -1,6 +1,7 @@
 ﻿using System;
 using MacroTools.Extensions;
 using WCSharp.Buffs;
+using WCSharp.Effects;
 
 namespace WarcraftLegacies.Source.Spells.Slipstream
 {
@@ -35,9 +36,9 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
       if (_state != SlipstreamPortalState.Unopened) return;
       _state = SlipstreamPortalState.Opening;
       _progressBar = AddSpecialEffect(@"war3mapImported\Progressbar10sec.mdx", Target.GetPosition().X, Target.GetPosition().Y);
-      _progressBar.SetTimeScale(10f / delay);
-      _progressBar.SetColor(Caster.OwningPlayer());
-      _progressBar.SetHeight(450);
+      BlzSetSpecialEffectTimeScale(_progressBar, 10f / delay);
+      BlzSetSpecialEffectColorByPlayer(_progressBar, Caster.OwningPlayer());
+      BlzSetSpecialEffectHeight(_progressBar, 450);
       SetUnitTimeScale(Target, 9.3f * (1 / delay));
       SetUnitAnimation(Target, "birth");
       CreateTimer().Start(delay, false, () =>
@@ -48,7 +49,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
           SetUnitTimeScale(Target, 1);
           SetUnitAnimation(Target, "stand");
           WaygateActivate(Target, true);
-          _progressBar.Destroy();
+          DestroyEffect(_progressBar);
         }
 
         DestroyTimer(GetExpiredTimer());
@@ -89,7 +90,8 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
     /// <inheritdoc />
     public override void OnDispose()
     {
-      _progressBar?.Destroy();
+      if (_progressBar != null) 
+        DestroyEffect(_progressBar);
     }
 
     private void CloseInstantly()
@@ -99,8 +101,8 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
       KillUnit(Target);
       RemoveUnit(Target);
       var effect = AddSpecialEffect(@"Abilities\Spells\Human\Feedback\SpellBreakerAttack.mdl", GetUnitX(Target), GetUnitY(Target));
-      effect.SetScale(6);
-      effect.SetLifespan();
+      BlzSetSpecialEffectScale(effect, 6);
+      EffectSystem.Add(effect);
       Active = false;
     }
   }

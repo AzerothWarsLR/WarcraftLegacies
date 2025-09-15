@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Setup;
+using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 using static War3Api.Common;
@@ -58,8 +59,7 @@ namespace MacroTools.Powers
           || IsUnitType(dyingUnit, UNIT_TYPE_SUMMONED))
 
         return;
-      AddSpecialEffect(@"Abilities\Spells\Items\AIil\AIilTarget.mdl", _returnPoint.X, _returnPoint.Y)
-        .SetLifespan();
+      EffectSystem.Add(AddSpecialEffect(@"Abilities\Spells\Items\AIil\AIilTarget.mdl", _returnPoint.X, _returnPoint.Y));
       CreateUnit(dyingUnit.OwningPlayer(), GetUnitTypeId(dyingUnit), _returnPoint.X, _returnPoint.Y, 0);
     }
   }

@@ -35,8 +35,7 @@ namespace WarcraftLegacies.Source.Spells
 
       if (UpgradeCondition(caster))
       {
-        AddSpecialEffectTarget(@"Abilities\Spells\Human\Heal\HealTarget.mdl", caster, "origin")
-          .Destroy();
+        DestroyEffect(AddSpecialEffectTarget(@"Abilities\Spells\Human\Heal\HealTarget.mdl", caster, "origin"));
         foreach (var unused in dummyTargets) 
           caster.Heal(CasterHealPerTargetUpgraded);
       }

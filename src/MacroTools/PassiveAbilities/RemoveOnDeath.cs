@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
+using WCSharp.Effects;
 using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
@@ -23,8 +24,7 @@ namespace MacroTools.PassiveAbilities
       RemoveUnit(GetTriggerUnit());
       
       if (DeathEffectPath != null)
-        AddSpecialEffect(DeathEffectPath, position.X, position.Y)
-          .SetLifespan();
+        EffectSystem.Add(AddSpecialEffect(DeathEffectPath, position.X, position.Y));
     }
   }
 }

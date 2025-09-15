@@ -3,6 +3,7 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared;
 using WCSharp.Shared.Data;
@@ -57,8 +58,8 @@ namespace WarcraftLegacies.Source.Quests
       var yoggsaronSummonPoint = new Point(3995, 23488);
       _yoggsaron.ForceCreate(Player(PLAYER_NEUTRAL_AGGRESSIVE), yoggsaronSummonPoint, 320);
       var effect = AddSpecialEffect(@"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl", yoggsaronSummonPoint.X, yoggsaronSummonPoint.Y);
-      effect.SetScale(2);
-      effect.SetLifespan(1);
+      BlzSetSpecialEffectScale(effect, 2);
+      EffectSystem.Add(effect, 1);
       KillUnit(_yoggsaronPrison);
 
       foreach (var player in Util.EnumeratePlayers())

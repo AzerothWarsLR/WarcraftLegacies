@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.ResearchSystems;
 using MacroTools.Utils;
+using WCSharp.Effects;
 
 namespace WarcraftLegacies.Source.Researches.Ahnqiraj
 {
@@ -39,8 +40,7 @@ namespace WarcraftLegacies.Source.Researches.Ahnqiraj
         var hitPointsPercentage = worker.GetLifePercent();
         var owner = worker.OwningPlayer();
 
-        AddSpecialEffect(@"Objects\Spawnmodels\Critters\Albatross\CritterBloodAlbatross.mdl", position.X, position.Y)
-          .SetLifespan();
+        EffectSystem.Add(AddSpecialEffect(@"Objects\Spawnmodels\Critters\Albatross\CritterBloodAlbatross.mdl", position.X, position.Y));
         
         worker.SafelyRemove();
         var soldier = CreateUnit(owner, TransformedUnitTypeId, position.X, position.Y, facing);

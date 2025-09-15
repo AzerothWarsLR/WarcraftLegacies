@@ -5,6 +5,7 @@ using MacroTools.Exceptions;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.Systems;
+using WCSharp.Effects;
 using WCSharp.Events;
 using static War3Api.Common;
 using static War3Api.Blizzard;
@@ -93,8 +94,8 @@ namespace MacroTools.ControlPointSystem
             controlPoint.ControlLevel += 1;
             var effect = AddSpecialEffect(@"Abilities\Spells\Items\AIlm\AIlmTarget.mdl", GetUnitX(controlPoint.Unit),
               GetUnitY(controlPoint.Unit));
-            effect.SetScale(1.5f);
-            effect.SetLifespan();
+            BlzSetSpecialEffectScale(effect, 1.5f);
+            EffectSystem.Add(effect);
           }
           catch (Exception ex)
           {
@@ -266,8 +267,8 @@ namespace MacroTools.ControlPointSystem
         controlPoint.ControlLevel += 1 + controlPoint.Owner.GetControlLevelPerTurnBonus();
         var effect = AddSpecialEffect(@"Abilities\Spells\Items\AIlm\AIlmTarget.mdl", GetUnitX(controlPoint.Unit),
           GetUnitY(controlPoint.Unit));
-        effect.SetScale(1.5f);
-        effect.SetLifespan();
+        BlzSetSpecialEffectScale(effect, 1.5f);
+        EffectSystem.Add(effect);
       };
     }
 

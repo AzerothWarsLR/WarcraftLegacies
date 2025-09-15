@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Setup;
+using WCSharp.Effects;
 using WCSharp.Events;
 using static War3Api.Common;
 
@@ -52,8 +53,7 @@ namespace MacroTools.Powers
       if (IsUnitType(whichUnit, UNIT_TYPE_HERO) || IsUnitType(whichUnit, UNIT_TYPE_PEON) || !Filter(whichUnit))
         return;
 
-      AddSpecialEffect(@"Abilities\Spells\Other\Levelup\Levelupcaster.mdx", GetUnitX(whichUnit), GetUnitY(whichUnit))
-        .SetLifespan(1);
+      EffectSystem.Add(AddSpecialEffect(@"Abilities\Spells\Other\Levelup\Levelupcaster.mdx", GetUnitX(whichUnit), GetUnitY(whichUnit)), 1);
 
       whichUnit.MultiplyBaseDamage(_statMultiplier, 0);
       whichUnit.MultiplyBaseDamage(_statMultiplier, 1);

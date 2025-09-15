@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using MacroTools.Data;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
+using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 
@@ -67,16 +68,14 @@ namespace WarcraftLegacies.Source.Spells
         TriggerRegisterUnitEvent(deathTrigger, summonedTauren, EVENT_UNIT_DEATH);
         TriggerAddAction(deathTrigger, () =>
         {
-          AddSpecialEffect(DeathEffect, GetUnitX(summonedTauren), GetUnitY(summonedTauren))
-            .SetLifespan(1);
+          EffectSystem.Add(AddSpecialEffect(DeathEffect, GetUnitX(summonedTauren), GetUnitY(summonedTauren)), 1);
             
           RemoveUnit(summonedTauren);
             
           DestroyTrigger(GetTriggeringTrigger());
         });
         
-        AddSpecialEffect(SummonEffect, targetPoint.X, targetPoint.Y)
-          .SetLifespan();
+        EffectSystem.Add(AddSpecialEffect(SummonEffect, targetPoint.X, targetPoint.Y));
       }
       ancestralLegionData.RememberedUnits -= taurenToSummon;
       RegenerateTooltip(caster);

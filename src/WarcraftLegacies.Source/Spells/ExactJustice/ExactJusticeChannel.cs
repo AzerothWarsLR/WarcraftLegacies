@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using MacroTools.Utils;
 using WCSharp.Buffs;
+using WCSharp.Effects;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells.ExactJustice
@@ -54,20 +55,20 @@ namespace WarcraftLegacies.Source.Spells.ExactJustice
       
       _maximumDuration = Duration;
       _ringEffect = AddSpecialEffect(EffectSettings.RingPath, x, y);
-      _ringEffect.SetAlpha(0);
-      _ringEffect.SetTimeScale(0);
-      _ringEffect.SetColor(235, 235, 50);
-      _ringEffect.SetScale(EffectSettings.RingScale);
+      BlzSetSpecialEffectAlpha(_ringEffect, 0);
+      BlzSetSpecialEffectTimeScale(_ringEffect, 0);
+      BlzSetSpecialEffectColor(_ringEffect, 235, 235, 50);
+      BlzSetSpecialEffectScale(_ringEffect, EffectSettings.RingScale);
 
       _sparkleEffect = AddSpecialEffect(EffectSettings.SparklePath, x, y);
-      _sparkleEffect.SetScale(EffectSettings.SparkleScale);
-      _sparkleEffect.SetColor(255, 255, 0);
+      BlzSetSpecialEffectScale(_sparkleEffect, EffectSettings.SparkleScale);
+      BlzSetSpecialEffectColor(_sparkleEffect, 255, 255, 0);
 
       _progressEffect = AddSpecialEffect(EffectSettings.ProgressBarPath, x, y);
-      _progressEffect.SetTimeScale(1 / Duration);
-      _progressEffect.SetColor(Player(4));
-      _progressEffect.SetScale(EffectSettings.ProgressBarScale);
-      _progressEffect.SetHeight(EffectSettings.ProgressBarHeight);
+      BlzSetSpecialEffectTimeScale(_progressEffect, 1 / Duration);
+      BlzSetSpecialEffectColorByPlayer(_progressEffect, Player(4));
+      BlzSetSpecialEffectScale(_progressEffect, EffectSettings.ProgressBarScale);
+      BlzSetSpecialEffectHeight(_progressEffect, EffectSettings.ProgressBarHeight);
 
       _aura = new ExactJusticeAura(Caster)
       {
@@ -86,16 +87,18 @@ namespace WarcraftLegacies.Source.Spells.ExactJustice
         _damage += MaximumDamage / (_maximumDuration / Interval);
       if (!(_ringAlpha < EffectSettings.AlphaRing))
         return;
+
       _ringAlpha += EffectSettings.AlphaRing / (_maximumDuration / Interval);
-      _ringEffect?.SetAlpha(R2I(_ringAlpha));
+      if (_ringEffect != null) 
+        BlzSetSpecialEffectAlpha(_ringEffect, R2I(_ringAlpha));
     }
 
     /// <inheritdoc />
     protected override void OnDispose()
     {
       var explodeEffect = AddSpecialEffect(EffectSettings.ExplodePath, GetUnitX(Caster), GetUnitY(Caster));
-      explodeEffect.SetScale(EffectSettings.ExplodeScale);
-      explodeEffect.SetLifespan();
+      BlzSetSpecialEffectScale(explodeEffect, EffectSettings.ExplodeScale);
+      EffectSystem.Add(explodeEffect);
       foreach (var unit in GlobalGroup.EnumUnitsInRange(Caster.GetPosition(), Radius)
                  .Where(target => CastFilters.IsTargetEnemyAndAlive(Caster, target)))
       {
@@ -104,12 +107,24 @@ namespace WarcraftLegacies.Source.Spells.ExactJustice
       
       //The below effects have no death animations so they have//to be moved off the map as they are destroyed.
       var dummyRemovalPoint = new Point(-100000, -100000);
-      _sparkleEffect?.SetPosition(dummyRemovalPoint);
-      _sparkleEffect?.Destroy();
-      _progressEffect?.SetPosition(dummyRemovalPoint);
-      _progressEffect?.Destroy();
-      _ringEffect?.SetTimeScale(1);
-      _ringEffect?.Destroy();
+      if (_sparkleEffect != null) 
+        BlzSetSpecialEffectPosition(_sparkleEffect, dummyRemovalPoint.X, dummyRemovalPoint.Y, 0);
+
+      if (_sparkleEffect != null) 
+        DestroyEffect(_sparkleEffect);
+
+      if (_progressEffect != null) 
+        BlzSetSpecialEffectPosition(_progressEffect, dummyRemovalPoint.X, dummyRemovalPoint.Y, 0);
+
+      if (_progressEffect != null) 
+        DestroyEffect(_progressEffect);
+
+      if (_ringEffect != null) 
+        BlzSetSpecialEffectTimeScale(_ringEffect, 1);
+
+      if (_ringEffect != null) 
+        DestroyEffect(_ringEffect);
+
       if (_aura != null) 
         _aura.Active = false;
     }

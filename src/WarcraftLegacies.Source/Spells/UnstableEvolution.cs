@@ -3,6 +3,7 @@ using MacroTools.Data;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using MacroTools.Utils;
+using WCSharp.Effects;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells
@@ -59,9 +60,9 @@ namespace WarcraftLegacies.Source.Spells
         SetUnitScale(target, 0.6f, 0.6f, 0.6f);
 
       var effect = AddSpecialEffect(EffectTarget, GetUnitX(target), GetUnitY(target));
-      effect.SetScale(EffectScaleTarget);
-      effect.SetLifespan();
-      effect.SetColor(0, 255, 0);
+      BlzSetSpecialEffectScale(effect, EffectScaleTarget);
+      EffectSystem.Add(effect);
+      BlzSetSpecialEffectColor(effect, 0, 255, 0);
     }
 
   }

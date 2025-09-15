@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using MacroTools.Utils;
+using WCSharp.Effects;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells
@@ -63,7 +64,7 @@ namespace WarcraftLegacies.Source.Spells
 
                 if (!string.IsNullOrEmpty(data.HealEffectPath))
                 {
-                    AddSpecialEffect(data.HealEffectPath, unit.GetPosition().X, unit.GetPosition().Y).SetLifespan(1.0f);
+                    EffectSystem.Add(AddSpecialEffect(data.HealEffectPath, unit.GetPosition().X, unit.GetPosition().Y), 1.0f);
                 }
             }
         }
@@ -85,7 +86,7 @@ namespace WarcraftLegacies.Source.Spells
 
                 if (!string.IsNullOrEmpty(data.HealEffectPath))
                 {
-                    AddSpecialEffect(data.HealEffectPath, unit.GetPosition().X, unit.GetPosition().Y).SetLifespan(1.0f);
+                    EffectSystem.Add(AddSpecialEffect(data.HealEffectPath, unit.GetPosition().X, unit.GetPosition().Y), 1.0f);
                 }
             }
         }

@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using WCSharp.Buffs;
+using WCSharp.Effects;
 
 namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
 {
@@ -26,9 +27,9 @@ namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
         .AddAbility(ABILITY_ZBBS_HATCH_INCUBATE);
 
       var effect = AddSpecialEffect(@"Abilities\Spells\Items\AIem\AIemTarget.mdl", GetUnitX(Target), GetUnitY(Target));
-      effect.SetColor(0, 255, 0);
-      effect.SetScale(0.5f);
-      effect.SetLifespan();
+      BlzSetSpecialEffectColor(effect, 0, 255, 0);
+      BlzSetSpecialEffectScale(effect, 0.5f);
+      EffectSystem.Add(effect);
     }
 
     /// <inheritdoc />

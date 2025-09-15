@@ -6,6 +6,7 @@ using MacroTools.Libraries;
 using MacroTools.SpellSystem;
 using MacroTools.Utils;
 using WCSharp.Buffs;
+using WCSharp.Effects;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells.Reap
@@ -66,8 +67,7 @@ namespace WarcraftLegacies.Source.Spells.Reap
         {
           killTarget.TakeDamage(caster, GetUnitState(killTarget, UNIT_STATE_LIFE), damageType: DAMAGE_TYPE_UNIVERSAL,
             attackType: ATTACK_TYPE_CHAOS);
-          AddSpecialEffect(KillEffect, GetUnitX(killTarget), GetUnitY(killTarget))
-            .SetLifespan();
+          EffectSystem.Add(AddSpecialEffect(KillEffect, GetUnitX(killTarget), GetUnitY(killTarget)));
         }
 
         var strengthGainPerTarget = UpgradeCondition(caster)

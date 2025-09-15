@@ -1,8 +1,8 @@
 ﻿using MacroTools.DummyCasters;
 using MacroTools.Extensions;
+using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Missiles;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells
 {
@@ -46,8 +46,8 @@ namespace WarcraftLegacies.Source.Spells
         DummyCastOriginType.Target);
 
       var effect = AddSpecialEffect(EffectOnHitModel, GetUnitX(unit), GetUnitY(unit));
-      effect.SetScale(EffectOnHitScale);
-      effect.SetLifespan();
+      BlzSetSpecialEffectScale(effect, EffectOnHitScale);
+      EffectSystem.Add(effect);
     }
 
     /// <inheritdoc />
@@ -62,10 +62,10 @@ namespace WarcraftLegacies.Source.Spells
     /// <inheritdoc />
     public override void OnDispose()
     {
-      Effect.SetPosition(new Point(21623f, 24212f));
+      BlzSetSpecialEffectPosition(Effect, 21623f, 24212f, 0);
       var effect = AddSpecialEffect(EffectOnProjectileDespawnModel, MissileX, MissileY);
-      effect.SetScale(EffectOnProjectileDespawnScale);
-      effect.SetLifespan();
+      BlzSetSpecialEffectScale(effect, EffectOnProjectileDespawnScale);
+      EffectSystem.Add(effect);
     }
 
     private static bool IsValidTarget(unit target, unit caster) =>

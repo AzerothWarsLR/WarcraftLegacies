@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Utils;
+using WCSharp.Effects;
 using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
@@ -84,9 +85,9 @@ namespace MacroTools.PassiveAbilities
         var target = GetTriggerUnit();
 
         var effect = AddSpecialEffect(Effect, GetUnitX(target), GetUnitY(target));
-        effect.SetScale(EffectScale);
-        effect.SetYaw(GetUnitFacing(caster) * MathEx.DegToRad);
-        effect.SetLifespan();
+        BlzSetSpecialEffectScale(effect, EffectScale);
+        BlzSetSpecialEffectYaw(effect, GetUnitFacing(caster) * MathEx.DegToRad);
+        EffectSystem.Add(effect);
 
         foreach (var nearbyUnit in GlobalGroup.EnumUnitsInRange(target.GetPosition(), Radius))
         {

@@ -2,6 +2,7 @@
 using MacroTools.Data;
 using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
+using WCSharp.Effects;
 using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
@@ -43,8 +44,7 @@ namespace MacroTools.PassiveAbilities
       var damager = GetEventDamageSource();
       var manaPerDamage = GetEventDamage() * (ManaPerDamage.Base + ManaPerDamage.PerLevel * GetUnitAbilityLevel(damager, _abilityTypeId));
       damager.RestoreMana(manaPerDamage);
-      AddSpecialEffectTarget(Effect, damager, "origin")
-        .SetLifespan();
+      EffectSystem.Add(AddSpecialEffectTarget(Effect, damager, "origin"));
     }
   }
 }

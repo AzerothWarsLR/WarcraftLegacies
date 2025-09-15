@@ -3,6 +3,7 @@ using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Setup;
+using WCSharp.Effects;
 using WCSharp.Events;
 using static War3Api.Common;
 
@@ -54,8 +55,7 @@ namespace MacroTools.Powers
         return;
       
       GetTriggerUnit().TakeDamage(GetEventDamageSource(), _damageDealt);
-      AddSpecialEffect(Effect, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()))
-        .SetLifespan(1);
+      EffectSystem.Add(AddSpecialEffect(Effect, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit())), 1);
     }
   }
 }

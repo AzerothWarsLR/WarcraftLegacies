@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using MacroTools.Setup;
+using WCSharp.Effects;
 using WCSharp.Events;
 
 namespace WarcraftLegacies.Source.Powers
@@ -93,8 +93,7 @@ namespace WarcraftLegacies.Source.Powers
       
       BlzSetEventDamage(0);
       SetUnitState(damagedUnit, UNIT_STATE_LIFE, (int)(BlzGetUnitMaxHP(damagedUnit) * ((float)_healAmountPercentage / 100)));
-      AddSpecialEffectTarget(Effect, damagedUnit, "origin")
-        .SetLifespan(1);
+      EffectSystem.Add(AddSpecialEffectTarget(Effect, damagedUnit, "origin"), 1);
     }
     
     private void AddObjective(Objective objective, Faction faction)

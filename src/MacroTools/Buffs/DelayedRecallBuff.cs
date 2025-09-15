@@ -50,18 +50,24 @@ namespace MacroTools.Buffs
         TargetPosition.Y);
 
       _progressEffect = AddSpecialEffect("war3mapImported\\Progressbar10sec.mdx", TargetPosition.X, TargetPosition.Y);
-      _progressEffect.SetTimeScale(10 / Duration);
-      _progressEffect.SetColor(Caster.OwningPlayer());
-      _progressEffect.SetHeight(185f + Environment.GetPositionZ(TargetPosition));
+      float scale = 10 / Duration;
+      BlzSetSpecialEffectTimeScale(_progressEffect, scale);
+      player playerToCopy = Caster.OwningPlayer();
+      BlzSetSpecialEffectColorByPlayer(_progressEffect, playerToCopy);
+      float height = 185f + Environment.GetPositionZ(TargetPosition);
+      BlzSetSpecialEffectHeight(_progressEffect, height);
     }
 
     /// <inheritdoc />
     /// <inheritdoc />
     public override void OnDispose()
     {
-      Effect?.Destroy();
-      _progressEffect?.Destroy();
-      
+      if (Effect != null) 
+        DestroyEffect(Effect);
+
+      if (_progressEffect != null) 
+        DestroyEffect(_progressEffect);
+
       if (!UnitAlive(Caster))
       {
         var amountToKill = (int)(UnitsToMove.Count * DeathPenalty);

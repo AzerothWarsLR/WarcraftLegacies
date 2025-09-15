@@ -1,5 +1,4 @@
 ﻿using System;
-using MacroTools.Extensions;
 using MacroTools.Powers;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
@@ -42,18 +41,18 @@ namespace MacroTools.Hazards
     {
       OilPower = oilPower;
       _effectOil = AddSpecialEffect(owner == GetLocalPlayer() ? effectPath : "", position.X, position.Y);
-      _effectOil.SetScale(2);
+      BlzSetSpecialEffectScale(_effectOil, 2);
       _effectCircle = AddSpecialEffect(owner == GetLocalPlayer() ? @"buildings\other\CircleOfPower\CircleOfPower" : "", position.X, position.Y);
-      _effectCircle.SetScale(2);
-      _effectCircle.SetHeight(Libraries.Environment.GetPositionZ(position));
-      _effectCircle.SetColor(Player(20));
+      BlzSetSpecialEffectScale(_effectCircle, 2);
+      BlzSetSpecialEffectHeight(_effectCircle, Libraries.Environment.GetPositionZ(position));
+      BlzSetSpecialEffectColorByPlayer(_effectCircle, Player(20));
     }
 
     /// <inheritdoc />
     protected override void OnDispose()
     {
-      _effectOil.Destroy();
-      _effectCircle.Destroy();
+      DestroyEffect(_effectOil);
+      DestroyEffect(_effectCircle);
       Disposed?.Invoke(this, this);
     }
   }

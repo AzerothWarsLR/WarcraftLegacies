@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
+using WCSharp.Effects;
 using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
@@ -49,8 +50,7 @@ namespace MacroTools.PassiveAbilities
       for (var i = 0; i < CreateCount; i++)
         CreateUnit(triggerUnit.OwningPlayer(), CreateUnitTypeId, pos.X, pos.Y, triggerUnit.GetFacing())
           .SetTimedLife(Duration);
-      AddSpecialEffect(SpecialEffectPath, pos.X, pos.Y)
-        .SetLifespan(1);
+      EffectSystem.Add(AddSpecialEffect(SpecialEffectPath, pos.X, pos.Y), 1);
       RemoveUnit(triggerUnit);
     }
   }

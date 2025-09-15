@@ -1,6 +1,7 @@
 ﻿using System;
 using MacroTools.Extensions;
 using WCSharp.Buffs;
+using WCSharp.Effects;
 
 namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
 {
@@ -34,8 +35,8 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
       BlzSetUnitName(_egg, $"Cocoon ({Target.GetProperName()})");
 
       var reviveEffect = AddSpecialEffect(ReviveEffect, GetUnitX(Target), GetUnitY(Target));
-      reviveEffect.SetScale(2);
-      reviveEffect.SetLifespan();
+      BlzSetSpecialEffectScale(reviveEffect, 2);
+      EffectSystem.Add(reviveEffect);
 
       _deathTrigger = CreateTrigger();
       TriggerRegisterUnitEvent(_deathTrigger, _egg, EVENT_UNIT_DEATH);
@@ -81,8 +82,8 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
       Target.SetPosition(_egg!.GetPosition());
 
       var reviveEffect = AddSpecialEffect(ReviveEffect, GetUnitX(Target), GetUnitY(Target));
-      reviveEffect.SetScale(2);
-      reviveEffect.SetLifespan();
+      BlzSetSpecialEffectScale(reviveEffect, 2);
+      EffectSystem.Add(reviveEffect);
     }
   }
 }

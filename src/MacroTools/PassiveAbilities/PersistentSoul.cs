@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Utils;
+using WCSharp.Effects;
 using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
@@ -72,9 +73,8 @@ namespace MacroTools.PassiveAbilities
     {
       var whichUnitPosition = whichUnit.GetPosition();
 
-      AddSpecialEffect(@"Abilities\Spells\Undead\AnimateDead\AnimateDeadTarget.mdl", GetUnitX(whichUnit),
-          GetUnitY(whichUnit))
-        .SetLifespan();
+      EffectSystem.Add(AddSpecialEffect(@"Abilities\Spells\Undead\AnimateDead\AnimateDeadTarget.mdl", GetUnitX(whichUnit),
+        GetUnitY(whichUnit)));
 
       var reanimatedUnit = CreateUnit(castingPlayer, GetUnitTypeId(whichUnit), whichUnitPosition.X,
           whichUnitPosition.Y, whichUnit.GetFacing());
