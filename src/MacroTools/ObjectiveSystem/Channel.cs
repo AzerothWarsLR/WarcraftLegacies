@@ -78,7 +78,8 @@ namespace MacroTools.ObjectiveSystem
         TimerDialogDisplay(_channelingDialog, true);
       }
 
-      _periodictimer = CreateTimer().Start(Period, true, Periodic);
+      _periodictimer = CreateTimer();
+      _periodictimer.Start(Period, true, Periodic);
     }
 
     /// <inheritdoc />

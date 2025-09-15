@@ -85,8 +85,9 @@ namespace MacroTools.Powers
       _owners.Add(whichPlayer);
       _oilIncomePeriodicAction = new OilIncomePeriodicAction(this);
       OilIncomePeriodicTrigger.Add(_oilIncomePeriodicAction);
-      
-      _oilTimer = CreateTimer().Start(150, true, GenerateRandomOilPool);
+
+      _oilTimer = CreateTimer();
+      _oilTimer.Start(150, true, GenerateRandomOilPool);
 
       foreach (var position in ForcedStartingOilPoolSpawnLocations)
         GenerateOilPool(position);

@@ -16,19 +16,17 @@ namespace MacroTools.Extensions
     /// <param name="periodic">If true, the timer immediately restarts after finishing.</param>
     /// <param name="handlerFunc">The function to run when the timer finishes.</param>
     /// <returns></returns>
-    public static timer Start(this timer timer, float timeout, bool periodic, Action handlerFunc)
+    public static void Start(this timer timer, float timeout, bool periodic, Action handlerFunc)
     {
       TimerStart(timer, timeout, periodic, handlerFunc);
-      return timer;
     }
 
     /// <summary>
     /// Destroys the timer.
     /// </summary>
-    public static timer Destroy(this timer timer)
+    public static void Destroy(this timer timer)
     {
       DestroyTimer(timer);
-      return timer;
     }
   }
 }
