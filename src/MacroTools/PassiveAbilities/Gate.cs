@@ -1,7 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Systems;
-using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
 {
@@ -34,30 +33,30 @@ namespace MacroTools.PassiveAbilities
       var dyingGate = GetTriggerUnit();
       var dyingGatePos = dyingGate.GetPosition();
       var dyingGateFacing = GetUnitFacing(dyingGate);
-      dyingGate.Remove();
+      RemoveUnit(dyingGate);
       TurnBasedHitpointsManager.UnRegister(dyingGate);
-      CreateUnit(GetOwningPlayer(GetKillingUnit()), _deadId, dyingGatePos.X, dyingGatePos.Y, dyingGateFacing)
-        .SetAnimation("death");
+      var deadGate = CreateUnit(GetOwningPlayer(GetKillingUnit()), _deadId, dyingGatePos.X, dyingGatePos.Y, dyingGateFacing);
+      SetUnitAnimation(deadGate, "death");
     }
 
     /// <inheritdoc/>
     public void OnSpellFinish()
     {
-      if (GetTriggerUnit().GetTypeId() == _openedId) 
-        GetTriggerUnit().SetAnimation("death alternate");
+      if (GetUnitTypeId(GetTriggerUnit()) == _openedId) 
+        SetUnitAnimation(GetTriggerUnit(), "death alternate");
     }
     
     /// <inheritdoc/>
     public void OnCreated(unit createdUnit)
     {
-      if (createdUnit.GetTypeId() == _openedId) 
-        createdUnit.SetAnimation("death alternate");
+      if (GetUnitTypeId(createdUnit) == _openedId)
+        SetUnitAnimation(createdUnit, "death alternate");
       TurnBasedHitpointsManager.Register(createdUnit, HitPointPercentagePerTurn);
     }
 
     /// <inheritdoc />
     public void OnCancelUpgrade() => 
-      GetTriggerUnit().SetAnimation("death");
+      SetUnitAnimation(GetTriggerUnit(), "death");
 
     /// <inheritdoc />
     public void OnUpgrade()
