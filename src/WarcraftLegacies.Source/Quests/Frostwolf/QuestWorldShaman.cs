@@ -53,7 +53,7 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf
       {
         BlzSetUnitName(_thrall.Unit, "World-Shaman");
         _thrall.Unit.AddHeroAttributes(0, 10, 0);
-        _thrall.Unit.AddExperience(2000);
+        AddHeroXP(_thrall.Unit, 2000, true);
       }
 
       completingFaction.AddPower(new MaelstromWeapon(0.12f, 100)

@@ -250,14 +250,6 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>
-    /// Adds an amount of experience to the hero.
-    /// </summary>
-    public static void AddExperience(this unit whichUnit, int amount)
-    {
-      AddHeroXP(whichUnit, amount, true);
-    }
-
-    /// <summary>
     ///   Drops a units entire inventory on the ground.
     /// </summary>
     public static void DropAllItems(this unit whichUnit)

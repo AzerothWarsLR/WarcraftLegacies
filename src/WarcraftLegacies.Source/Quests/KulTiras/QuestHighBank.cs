@@ -52,7 +52,8 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     {
       completingFaction.Player?.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 225);
       completingFaction.Player.RescueGroup(_rescueUnits);
-      _katherine.Unit?.AddExperience(2000);
+      if (_katherine.Unit != null) 
+        AddHeroXP(_katherine.Unit, 2000, true);
     }
   }
 }

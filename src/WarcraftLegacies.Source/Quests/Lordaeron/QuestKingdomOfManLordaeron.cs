@@ -53,8 +53,8 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       SetPlayerTechResearched(completingFaction.Player, RewardResearchId, 1);
       completingFaction.Player?.DisplayResearchAcquired(RewardResearchId, 1);
 
-      _arthas.Unit?
-      .AddExperience(CompletionExperienceBonus);
+      if (_arthas.Unit != null) 
+        AddHeroXP(_arthas.Unit, CompletionExperienceBonus, true);
 
       var crownHolder = _crownOfStormwind.OwningUnit;
 

@@ -69,7 +69,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
         var splitExperience = (int)(choice.ExperienceReward * multiplier / heroCount);
         foreach (var hero in heroes)
         {
-          hero.AddExperience(splitExperience);
+          AddHeroXP(hero, splitExperience, true);
         }
       }
 
