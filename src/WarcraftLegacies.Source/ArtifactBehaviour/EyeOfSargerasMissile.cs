@@ -10,7 +10,7 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
   {
     private readonly item _eyeOfSargeras;
     private bool _impacted;
-    private const string ImpactEffect = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl";
+    private const string ImpactEffectPath = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl";
 
     /// <summary>
     /// Initializes a new instance of the <see cref="EyeOfSargerasMissile"/> class.
@@ -38,10 +38,10 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
       Target.AddAbility(ABILITY_A01Y_INVENTORY_DUMMY_DROP_ARTIFACT);
       Target.AddItemSafe(_eyeOfSargeras);
       _impacted = true;
-        
-      AddSpecialEffect(ImpactEffect, GetUnitX(Target), GetUnitY(Target))
-        .SetScale(2)
-        .SetLifespan(1);
+
+      var impactEffect = AddSpecialEffect(ImpactEffectPath, GetUnitX(Target), GetUnitY(Target));
+      impactEffect.SetScale(2);
+      impactEffect.SetLifespan(1);
       
       var eyeEffect = AddSpecialEffectTarget(@"Doodads\Cinematic\EyeOfSargeras\EyeOfSargeras.mdl", Target, "overhead");
       var deathTrigger = CreateTrigger();
@@ -60,9 +60,9 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
         return;
       
       SetItemPosition(_eyeOfSargeras, MissileX, MissileY);
-      AddSpecialEffect(ImpactEffect, MissileX, MissileY)
-        .SetScale(2)
-        .SetLifespan(1);
+      var impactEffect = AddSpecialEffect(ImpactEffectPath, MissileX, MissileY);
+      impactEffect.SetScale(2);
+      impactEffect.SetLifespan(1);
     }
   }
 }

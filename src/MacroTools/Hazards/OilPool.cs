@@ -41,13 +41,12 @@ namespace MacroTools.Hazards
       position.Y)
     {
       OilPower = oilPower;
-      _effectOil = AddSpecialEffect(owner == GetLocalPlayer() ? effectPath : "", position.X, position.Y)
-        .SetScale(2);
-      _effectCircle = AddSpecialEffect(owner == GetLocalPlayer() ? @"buildings\other\CircleOfPower\CircleOfPower" : "",
-          position.X, position.Y)
-        .SetScale(2)
-        .SetHeight(Libraries.Environment.GetPositionZ(position))
-        .SetColor(Player(20));
+      _effectOil = AddSpecialEffect(owner == GetLocalPlayer() ? effectPath : "", position.X, position.Y);
+      _effectOil.SetScale(2);
+      _effectCircle = AddSpecialEffect(owner == GetLocalPlayer() ? @"buildings\other\CircleOfPower\CircleOfPower" : "", position.X, position.Y);
+      _effectCircle.SetScale(2);
+      _effectCircle.SetHeight(Libraries.Environment.GetPositionZ(position));
+      _effectCircle.SetColor(Player(20));
     }
 
     /// <inheritdoc />

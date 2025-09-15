@@ -62,11 +62,11 @@ namespace MacroTools.ObjectiveSystem
       SetUnitAnimation(caster, "channel");
       BlzSetUnitFacingEx(caster, facing);
       SetUnitInvulnerable(caster, false);
-      _sfxProgress = AddSpecialEffect(ProgressEffect, GetUnitX(caster), GetUnitY(caster))
-        .SetTimeScale(10 / (float)duration)
-        .SetColor(caster.OwningPlayer())
-        .SetScale(ProgressScale)
-        .SetHeight(ProgressHeight + Environment.GetPositionZ(position));
+      _sfxProgress = AddSpecialEffect(ProgressEffect, GetUnitX(caster), GetUnitY(caster));
+      _sfxProgress.SetTimeScale(10 / (float)duration);
+      _sfxProgress.SetColor(caster.OwningPlayer());
+      _sfxProgress.SetScale(ProgressScale);
+      _sfxProgress.SetHeight(ProgressHeight + Environment.GetPositionZ(position));
       _sfx = AddSpecialEffect(Effect, GetUnitX(caster), GetUnitY(caster));
 
       if (timerDialogTitle != null)
@@ -84,9 +84,8 @@ namespace MacroTools.ObjectiveSystem
     /// <inheritdoc />
     public void Dispose()
     {
-      _sfxProgress
-        .SetPosition(new Point(-100000, -100000)) //Has no death animation so needs to be moved off the map
-        .Destroy();
+      _sfxProgress.SetPosition(new Point(-100000, -100000)); //Has no death animation so needs to be moved off the map
+      _sfxProgress.Destroy();
       _sfx.Destroy();
       _channelingTimer?.Destroy();
       _periodictimer.Destroy();

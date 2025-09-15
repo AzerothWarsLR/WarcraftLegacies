@@ -25,10 +25,10 @@ namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
       Target
         .AddAbility(ABILITY_ZBBS_HATCH_INCUBATE);
 
-      AddSpecialEffect(@"Abilities\Spells\Items\AIem\AIemTarget.mdl", GetUnitX(Target), GetUnitY(Target))
-        .SetColor(0, 255, 0)
-        .SetScale(0.5f)
-        .SetLifespan();
+      var effect = AddSpecialEffect(@"Abilities\Spells\Items\AIem\AIemTarget.mdl", GetUnitX(Target), GetUnitY(Target));
+      effect.SetColor(0, 255, 0);
+      effect.SetScale(0.5f);
+      effect.SetLifespan();
     }
 
     /// <inheritdoc />

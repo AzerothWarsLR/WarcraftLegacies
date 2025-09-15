@@ -44,10 +44,10 @@ namespace WarcraftLegacies.Source.Spells
       
       _dummyCaster.CastUnit(Caster, DummyAbilityId, DummyAbilityOrderId, DummyAbilityLevel, unit,
         DummyCastOriginType.Target);
-      
-      AddSpecialEffect(EffectOnHitModel, GetUnitX(unit), GetUnitY(unit))
-        .SetScale(EffectOnHitScale)
-        .SetLifespan();
+
+      var effect = AddSpecialEffect(EffectOnHitModel, GetUnitX(unit), GetUnitY(unit));
+      effect.SetScale(EffectOnHitScale);
+      effect.SetLifespan();
     }
 
     /// <inheritdoc />
@@ -63,9 +63,9 @@ namespace WarcraftLegacies.Source.Spells
     public override void OnDispose()
     {
       Effect.SetPosition(new Point(21623f, 24212f));
-      AddSpecialEffect(EffectOnProjectileDespawnModel, MissileX, MissileY)
-        .SetScale(EffectOnProjectileDespawnScale)
-        .SetLifespan();
+      var effect = AddSpecialEffect(EffectOnProjectileDespawnModel, MissileX, MissileY);
+      effect.SetScale(EffectOnProjectileDespawnScale);
+      effect.SetLifespan();
     }
 
     private static bool IsValidTarget(unit target, unit caster) =>

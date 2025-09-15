@@ -57,11 +57,11 @@ namespace WarcraftLegacies.Source.Spells
 
       if (GetUnitTypeId(target) == UNIT_U013_SUPER_MAJOR_C_THUN) 
         SetUnitScale(target, 0.6f, 0.6f, 0.6f);
-  
-      AddSpecialEffect(EffectTarget, GetUnitX(target), GetUnitY(target))
-        .SetScale(EffectScaleTarget)
-        .SetLifespan()
-        .SetColor(0, 255, 0);
+
+      var effect = AddSpecialEffect(EffectTarget, GetUnitX(target), GetUnitY(target));
+      effect.SetScale(EffectScaleTarget);
+      effect.SetLifespan();
+      effect.SetColor(0, 255, 0);
     }
 
   }

@@ -82,11 +82,11 @@ namespace MacroTools.PassiveAbilities
         if (!BlzGetEventIsAttack() || GetUnitAbilityLevel(caster, AbilityTypeId) == 0)
           return;
         var target = GetTriggerUnit();
-        
-        AddSpecialEffect(Effect, GetUnitX(target), GetUnitY(target))
-          .SetScale(EffectScale)
-          .SetYaw(GetUnitFacing(caster) * MathEx.DegToRad)
-          .SetLifespan();
+
+        var effect = AddSpecialEffect(Effect, GetUnitX(target), GetUnitY(target));
+        effect.SetScale(EffectScale);
+        effect.SetYaw(GetUnitFacing(caster) * MathEx.DegToRad);
+        effect.SetLifespan();
 
         foreach (var nearbyUnit in GlobalGroup.EnumUnitsInRange(target.GetPosition(), Radius))
         {

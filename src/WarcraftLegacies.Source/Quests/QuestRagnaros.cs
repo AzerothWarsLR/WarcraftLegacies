@@ -56,10 +56,9 @@ namespace WarcraftLegacies.Source.Quests
     {
       var ragnarosSummonPoint = new Point(12332, -10597);
       _ragnaros.ForceCreate(Player(PLAYER_NEUTRAL_AGGRESSIVE), ragnarosSummonPoint, 320);
-      AddSpecialEffect(@"Abilities\Spells\Other\BreathOfFire\BreathOfFireMissile.mdl", ragnarosSummonPoint.X,
-          ragnarosSummonPoint.Y)
-        .SetScale(2)
-        .SetLifespan(1);
+      var effect = AddSpecialEffect(@"Abilities\Spells\Other\BreathOfFire\BreathOfFireMissile.mdl", ragnarosSummonPoint.X, ragnarosSummonPoint.Y);
+      effect.SetScale(2);
+      effect.SetLifespan(1);
       KillUnit(_ragnarosSummoningPedestal);
 
       foreach (var player in Util.EnumeratePlayers())

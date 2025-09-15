@@ -14,20 +14,18 @@ namespace MacroTools.Extensions
     /// Sets the size of the effect.
     /// </summary>
     /// <returns>The same effect that was provided.</returns>
-    public static effect SetScale(this effect effect, float scale)
+    public static void SetScale(this effect effect, float scale)
     {
       BlzSetSpecialEffectScale(effect, scale);
-      return effect;
     }
 
     /// <summary>
     /// Sets the effect's yaw rotation instantly.
     /// </summary>
     /// <returns>The same effect that was provided.</returns>
-    public static effect SetYaw(this effect effect, float yaw)
+    public static void SetYaw(this effect effect, float yaw)
     {
       BlzSetSpecialEffectYaw(effect, yaw);
-      return effect;
     }
     
     /// <summary>
@@ -35,10 +33,9 @@ namespace MacroTools.Extensions
     /// <para>255 is fully visible, 0 is invisible.</para>
     /// </summary>
     /// <returns>The same effect that was provided.</returns>
-    public static effect SetAlpha(this effect effect, int alpha)
+    public static void SetAlpha(this effect effect, int alpha)
     {
       BlzSetSpecialEffectAlpha(effect, alpha);
-      return effect;
     }
     
     /// <summary>
@@ -46,70 +43,63 @@ namespace MacroTools.Extensions
     /// <para>1 is full speed, 0 is paused.</para>
     /// </summary>
     /// <returns>The same effect that was provided.</returns>
-    public static effect SetTimeScale(this effect effect, float scale)
+    public static void SetTimeScale(this effect effect, float scale)
     {
       BlzSetSpecialEffectTimeScale(effect, scale);
-      return effect;
     }
     
     /// <summary>
     /// Sets the effect's color.
     /// </summary>
     /// <returns>The same effect that was provided.</returns>
-    public static effect SetColor(this effect effect, int red, int green, int blue)
+    public static void SetColor(this effect effect, int red, int green, int blue)
     {
       BlzSetSpecialEffectColor(effect, red, green, blue);
-      return effect;
     }
     
     /// <summary>
     /// Sets the effect's color to be the same as the provided player's.
     /// </summary>
     /// <returns>The same effect that was provided.</returns>
-    public static effect SetColor(this effect effect, player playerToCopy)
+    public static void SetColor(this effect effect, player playerToCopy)
     {
       BlzSetSpecialEffectColorByPlayer(effect, playerToCopy);
-      return effect;
     }
 
     /// <summary>
     /// Causes the effect to be removed after the provided duration has elapsed.
     /// </summary>
     /// <returns>The same effect that was provided.</returns>
-    public static effect SetLifespan(this effect effect, float lifespan = 0.03125F)
+    public static void SetLifespan(this effect effect, float lifespan = 0.03125F)
     {
       EffectSystem.Add(effect, lifespan);
-      return effect;
     }
 
     /// <summary>
     /// Sets the effect's height above the ground.
     /// </summary>
     /// <returns>The same effect that was provided.</returns>
-    public static effect SetHeight(this effect effect, float height)
+    public static void SetHeight(this effect effect, float height)
     {
       BlzSetSpecialEffectHeight(effect, height);
-      return effect;
     }
     
     /// <summary>
     /// Sets the effect's position in the game world.
     /// </summary>
     /// <returns>The same effect that was provided.</returns>
-    public static effect SetPosition(this effect effect, Point point)
+    public static void SetPosition(this effect effect, Point point)
     {
       BlzSetSpecialEffectPosition(effect, point.X, point.Y, 0);
-      return effect;
     }
 
     /// <summary>
     /// Destroys the effect.
     /// </summary>
     /// <returns>The same effect that was provided.</returns>
-    public static effect Destroy(this effect effect)
+    public static void Destroy(this effect effect)
     {
       DestroyEffect(effect);
-      return effect;
     }
   }
 }
