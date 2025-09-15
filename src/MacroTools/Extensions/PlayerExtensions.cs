@@ -22,7 +22,6 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Set the number of extra <see cref="ControlPoint.ControlLevel"/>s the player gets each turn.
     /// </summary>
-    /// <returns></returns>
     public static void SetControlLevelPerTurnBonus(this player whichPlayer, float value)
     {
       PlayerData.ByHandle(whichPlayer).ControlLevelPerTurnBonus = value;
@@ -40,7 +39,6 @@ namespace MacroTools.Extensions
     /// <param name="whichPlayer">Who to display the ping to.</param>
     /// <param name="position">Where to ping.</param>
     /// <param name="duration">How long the ping should last.</param>
-    /// <returns>The same player that was passed in.</returns>
     public static void PingLocation(this player whichPlayer, Point position, float duration)
     {
       if (GetLocalPlayer() == whichPlayer)
