@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
   /// <summary>
   /// Oil harvesters consume oil from <see cref="OilPool"/>s around them.
   /// </summary>
-  public sealed class OilHarvester : PassiveAbility
+  public sealed class OilHarvester : PassiveAbility, IEffectOnCreated
   {
     /// <summary>
     /// Initializes a new instance of the <see cref="OilHarvester"/> class.
@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
     public float Radius { get; init; }
 
     /// <inheritdoc />
-    public override void OnCreated(unit createdUnit)
+    public void OnCreated(unit createdUnit)
     {
       if (!EnsureValidPositioning(createdUnit))
         return;

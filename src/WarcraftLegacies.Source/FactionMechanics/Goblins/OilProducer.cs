@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
   /// <summary>
   /// Oil producers generate Oil for their owner's <see cref="OilPower"/>.
   /// </summary>
-  public sealed class OilProducer : PassiveAbility
+  public sealed class OilProducer : PassiveAbility, IEffectOnCreated
   {
     /// <summary>
     /// How much Oil the <see cref="OilProducer"/> produces per second.
@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
     }
 
     /// <inheritdoc />
-    public override void OnCreated(unit createdUnit)
+    public void OnCreated(unit createdUnit)
     {
       var oilBuff = new OilProducerBuff(createdUnit, OilProducedPerSecond);
       BuffSystem.Add(oilBuff);

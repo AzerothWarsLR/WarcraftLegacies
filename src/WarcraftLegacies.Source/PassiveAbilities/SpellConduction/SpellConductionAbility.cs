@@ -3,7 +3,7 @@ using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.PassiveAbilities.SpellConduction
 {
-  public sealed class SpellConductionAbility : PassiveAbility
+  public sealed class SpellConductionAbility : PassiveAbility, IEffectOnCreated
   {
     /// <summary>
     /// The research required for this ability to work.
@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.SpellConduction
     }
 
     /// <inheritdoc />
-    public override void OnCreated(unit createdUnit)
+    public void OnCreated(unit createdUnit)
     {
       var aura = new SpellConductionAura(createdUnit)
       {

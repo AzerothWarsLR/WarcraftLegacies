@@ -9,7 +9,7 @@ namespace MacroTools.PassiveAbilities
   /// <summary>
   /// Causes the unit to summon a number of units whenever they cast a spell.
   /// </summary>
-  public sealed class SummonUnitOnCast : PassiveAbility
+  public sealed class SummonUnitOnCast : PassiveAbility, IEffectOnSpellEffect
   {
     private readonly int _abilityTypeId;
 
@@ -50,7 +50,7 @@ namespace MacroTools.PassiveAbilities
     }
     
     /// <inheritdoc />
-    public override void OnSpellEffect()
+    public void OnSpellEffect()
     {
       var triggerUnit = GetTriggerUnit();
       var abilityLevel = GetUnitAbilityLevel(triggerUnit, _abilityTypeId);

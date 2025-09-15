@@ -7,7 +7,7 @@ namespace MacroTools.PassiveAbilities
   /// <summary>
   /// Any unit with this effect increases its owner's income.
   /// </summary>
-  public sealed class ProvidesIncome : PassiveAbility
+  public sealed class ProvidesIncome : PassiveAbility, IEffectOnUpgrade, IEffectOnConstruction, IEffectOnCreated
   {
     private readonly int _income;
 
@@ -29,19 +29,19 @@ namespace MacroTools.PassiveAbilities
     }
 
     /// <inheritdoc />
-    public override void OnUpgrade()
+    public void OnUpgrade()
     {
       ApplyBuff();
     }
 
     /// <inheritdoc />
-    public override void OnConstruction()
+    public void OnConstruction()
     {
       ApplyBuff();
     }
 
     /// <inheritdoc />
-    public override void OnCreated(unit createdUnit)
+    public void OnCreated(unit createdUnit)
     {
       if (!IsUnitType(createdUnit, UNIT_TYPE_STRUCTURE)) 
         ApplyBuff();

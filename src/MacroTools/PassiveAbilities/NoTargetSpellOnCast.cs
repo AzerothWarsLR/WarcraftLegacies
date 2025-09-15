@@ -7,7 +7,7 @@ namespace MacroTools.PassiveAbilities
   /// <summary>
   /// When the unit deals casts a spell, it has a chance to cast a dummy spell without a target.
   /// </summary>
-  public sealed class NoTargetSpellOnCast : PassiveAbility
+  public sealed class NoTargetSpellOnCast : PassiveAbility, IEffectOnSpellEffect
   {
     /// <summary>
     /// The unit type ID which has this <see cref="PassiveAbility"/> should also have an ability with this ID.
@@ -42,7 +42,7 @@ namespace MacroTools.PassiveAbilities
     public List<int> AbilityWhitelist { get; init; } = new();
 
     /// <inheritdoc />
-    public override void OnSpellEffect()
+    public void OnSpellEffect()
     {
       var caster = GetTriggerUnit();
       var abilityLevel = GetUnitAbilityLevel(caster, _abilityTypeId);

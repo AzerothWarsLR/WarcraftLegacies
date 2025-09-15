@@ -7,7 +7,7 @@ namespace MacroTools.PassiveAbilities
   /// <summary>
   ///   Causes the specified unit type to always have a squad of tentacles surrounding them.
   /// </summary>
-  public sealed class HideousAppendages : PassiveAbility
+  public sealed class HideousAppendages : PassiveAbility, IEffectOnCreated
   {
     public HideousAppendages(int id) : base(id)
     {
@@ -22,7 +22,7 @@ namespace MacroTools.PassiveAbilities
     /// </summary>
     public required float RadiusOffset { get; init; }
 
-    public override void OnCreated(unit createdUnit)
+    public void OnCreated(unit createdUnit)
     {
       var hideousAppendagesBuff = new HideousAppendagesBuff(createdUnit, createdUnit)
       {

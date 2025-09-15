@@ -7,7 +7,7 @@ namespace MacroTools.PassiveAbilities
   /// <summary>
   /// Causes the unit to summon a unit upon death.
   /// </summary>
-  public sealed class SummonUnitOnDeath : PassiveAbility
+  public sealed class SummonUnitOnDeath : PassiveAbility, IEffectOnDeath
   {
     /// <summary>
     /// How long the summoned unit should last.
@@ -40,7 +40,7 @@ namespace MacroTools.PassiveAbilities
     }
     
     /// <inheritdoc />
-    public override void OnDeath()
+    public void OnDeath()
     {
       var triggerUnit = GetTriggerUnit();
       if (GetPlayerTechCount(GetOwningPlayer(triggerUnit), RequiredResearch, false) == 0 || IsUnitType(triggerUnit, UNIT_TYPE_SUMMONED))

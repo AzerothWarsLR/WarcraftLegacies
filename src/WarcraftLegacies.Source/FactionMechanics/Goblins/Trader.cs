@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
   /// When trained, the <see cref="Trader"/> patrols between the originating point and a random trade destination.
   /// If the training unit dies, the <see cref="Trader"/> dies too.
   /// </summary>
-  public sealed class Trader : PassiveAbility
+  public sealed class Trader : PassiveAbility, IEffectOnTrained
   {
     private readonly int _goldIncomeBonus;
     private readonly Point[] _tradeTargets;
@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
       _tradeTargets = tradeTargets.ToArray();
     }
 
-    public override void OnTrained()
+    public void OnTrained()
     {
       try
       {

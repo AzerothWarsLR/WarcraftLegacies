@@ -7,7 +7,7 @@ namespace MacroTools.PassiveAbilities
   /// <summary>
   /// Gates are buildings that can open and close.
   /// </summary>
-  public sealed class Gate : PassiveAbility
+  public sealed class Gate : PassiveAbility, IEffectOnUpgrade, IEffectOnDeath, IEffectOnSpellFinish, IEffectOnCancelUpgrade, IEffectOnCreated
   {
     /// <summary>Gates will gain this many hit points, as a percentage of their maximum, per turn.</summary>
     public const float HitPointPercentagePerTurn = 0.05f;
@@ -28,39 +28,38 @@ namespace MacroTools.PassiveAbilities
     }
 
     /// <inheritdoc/>
-    public override void OnDeath()
+    public void OnDeath()
     {
       var dyingGate = GetTriggerUnit();
       var dyingGatePos = dyingGate.GetPosition();
       var dyingGateFacing = GetUnitFacing(dyingGate);
       RemoveUnit(dyingGate);
       TurnBasedHitpointsManager.UnRegister(dyingGate);
-      SetUnitAnimation(
-        CreateUnit(GetOwningPlayer(GetKillingUnit()), _deadId, dyingGatePos.X, dyingGatePos.Y, dyingGateFacing),
-        "death");
+      var deadGate = CreateUnit(GetOwningPlayer(GetKillingUnit()), _deadId, dyingGatePos.X, dyingGatePos.Y, dyingGateFacing);
+      SetUnitAnimation(deadGate, "death");
     }
 
     /// <inheritdoc/>
-    public override void OnSpellFinish()
+    public void OnSpellFinish()
     {
       if (GetUnitTypeId(GetTriggerUnit()) == _openedId) 
         SetUnitAnimation(GetTriggerUnit(), "death alternate");
     }
     
     /// <inheritdoc/>
-    public override void OnCreated(unit createdUnit)
+    public void OnCreated(unit createdUnit)
     {
-      if (GetUnitTypeId(createdUnit) == _openedId) 
+      if (GetUnitTypeId(createdUnit) == _openedId)
         SetUnitAnimation(createdUnit, "death alternate");
-
       TurnBasedHitpointsManager.Register(createdUnit, HitPointPercentagePerTurn);
     }
 
     /// <inheritdoc />
-    public override void OnCancelUpgrade() => SetUnitAnimation(GetTriggerUnit(), "death");
+    public void OnCancelUpgrade() => 
+      SetUnitAnimation(GetTriggerUnit(), "death");
 
     /// <inheritdoc />
-    public override void OnUpgrade()
+    public void OnUpgrade()
     {
       TurnBasedHitpointsManager.UnRegister(GetTriggerUnit());
       TurnBasedHitpointsManager.Register(GetTriggerUnit(), HitPointPercentagePerTurn);
