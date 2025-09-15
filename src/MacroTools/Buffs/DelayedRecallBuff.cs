@@ -49,12 +49,9 @@ namespace MacroTools.Buffs
         TargetPosition.Y);
 
       _progressEffect = AddSpecialEffect("war3mapImported\\Progressbar10sec.mdx", TargetPosition.X, TargetPosition.Y);
-      float scale = 10 / Duration;
-      BlzSetSpecialEffectTimeScale(_progressEffect, scale);
-      player playerToCopy = Caster.OwningPlayer();
-      BlzSetSpecialEffectColorByPlayer(_progressEffect, playerToCopy);
-      float height = 185f + Environment.GetPositionZ(TargetPosition);
-      BlzSetSpecialEffectHeight(_progressEffect, height);
+      BlzSetSpecialEffectTimeScale(_progressEffect, 10 / Duration);
+      BlzSetSpecialEffectColorByPlayer(_progressEffect, Caster.OwningPlayer());
+      BlzSetSpecialEffectHeight(_progressEffect, 185f + Environment.GetPositionZ(TargetPosition));
     }
 
     /// <inheritdoc />
