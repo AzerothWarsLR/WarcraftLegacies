@@ -358,11 +358,6 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>
-    /// Returns the unit's facing angle.
-    /// </summary>
-    public static float GetFacing(this unit whichUnit) => GetUnitFacing(whichUnit);
-
-    /// <summary>
     /// Returns the unit's active rally point.
     /// </summary>
     public static Point GetRallyPoint(this unit whichUnit)

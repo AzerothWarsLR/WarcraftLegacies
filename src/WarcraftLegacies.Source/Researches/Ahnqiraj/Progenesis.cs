@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Researches.Ahnqiraj
       foreach (var worker in workers)
       {
         var position = worker.GetPosition();
-        var facing = worker.GetFacing();
+        var facing = GetUnitFacing(worker);
         var hitPointsPercentage = worker.GetLifePercent();
         var owner = worker.OwningPlayer();
 

@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.Spells
     {
       var level = GetAbilityLevel(caster);
 
-      var tentacle = CreateUnit(caster.OwningPlayer(), UnitTypeId, targetPoint.X, targetPoint.Y, caster.GetFacing());
+      var tentacle = CreateUnit(caster.OwningPlayer(), UnitTypeId, targetPoint.X, targetPoint.Y, GetUnitFacing(caster));
       tentacle.SetTimedLife(Duration.Base + Duration.PerLevel * level);
       BlzSetUnitBaseDamage(tentacle, AttackDamageBase.Base + AttackDamageBase.PerLevel * level, 0);
       BlzSetUnitMaxHP(tentacle, HitPoints.Base + HitPoints.PerLevel * level);

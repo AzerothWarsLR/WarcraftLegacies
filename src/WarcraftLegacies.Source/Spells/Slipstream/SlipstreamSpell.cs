@@ -49,7 +49,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
     /// <inheritdoc/>
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      var portalOrigin = Util.PositionWithPolarOffset(GetUnitX(caster), GetUnitY(caster), PortalOffset, caster.GetFacing());
+      var portalOrigin = Util.PositionWithPolarOffset(GetUnitX(caster), GetUnitY(caster), PortalOffset, GetUnitFacing(caster));
       ChannelManager.Add(new SlipstreamPortalChannel(caster, Id, new Point(portalOrigin.x, portalOrigin.y), targetPoint)
       {
         Active = true,

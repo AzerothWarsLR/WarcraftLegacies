@@ -74,14 +74,14 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
     public override void OnCreate()
     {
       _portalOrigin = CreateUnit(Caster.OwningPlayer(), PortalUnitTypeId, _origin.X, _origin.Y,
-        Caster.GetFacing() - 180);
+        GetUnitFacing(Caster) - 180);
       _portalOrigin.SetWaygateDestination(_target);
       SetUnitVertexColor(_portalOrigin, Color.Red, Color.Green, Color.Blue, Color.Alpha);
       _portalOriginBuff = new SlipstreamPortalBuff(Caster, _portalOrigin);
       BuffSystem.Add(_portalOriginBuff);
       _portalOriginBuff.Open(OpeningDelay);
 
-      _portalDestination = CreateUnit(Caster.OwningPlayer(), PortalUnitTypeId, _target.X, _target.Y, Caster.GetFacing());
+      _portalDestination = CreateUnit(Caster.OwningPlayer(), PortalUnitTypeId, _target.X, _target.Y, GetUnitFacing(Caster));
       _portalDestination.SetWaygateDestination(new Point(_origin.X, _origin.Y));
       SetUnitVertexColor(_portalDestination, Color.Red, Color.Green, Color.Blue, Color.Alpha);
       _portalDestinationBuff = new SlipstreamPortalBuff(Caster, _portalDestination)

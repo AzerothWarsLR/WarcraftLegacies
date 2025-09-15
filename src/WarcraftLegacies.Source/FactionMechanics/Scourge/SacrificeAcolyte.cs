@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
       var triggerUnit = GetTriggerUnit();
       KillUnit(triggerUnit);
       var soldUnit = GetSoldUnit();
-      var facing = triggerUnit.GetFacing();
+      var facing = GetUnitFacing(triggerUnit);
       BlzSetUnitFacingEx(soldUnit, facing);
       soldUnit.OwningPlayer().Select(soldUnit);
     }

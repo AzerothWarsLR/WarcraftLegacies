@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Spells
       caster.Heal(healthGained);
       caster.RestoreMana(manaGained);
 
-      var summonedUnit = CreateUnit(caster.OwningPlayer(), UnitTypeSummoned, targetPosition.X, targetPosition.Y, caster.GetFacing());
+      var summonedUnit = CreateUnit(caster.OwningPlayer(), UnitTypeSummoned, targetPosition.X, targetPosition.Y, GetUnitFacing(caster));
       summonedUnit.SetTimedLife(Duration);
       UnitAddType(summonedUnit, UNIT_TYPE_SUMMONED);
     }

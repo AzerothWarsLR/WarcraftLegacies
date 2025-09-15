@@ -55,7 +55,7 @@ namespace WarcraftLegacies.Source.Spells
       var taurenToSummon = Math.Min(summonCap, availableTauren);
       for (var i = 0; i < taurenToSummon; i++)
       {
-        var summonedTauren = CreateUnit(caster.OwningPlayer(), RememberableUnitTypeId, targetPoint.X, targetPoint.Y, caster.GetFacing());
+        var summonedTauren = CreateUnit(caster.OwningPlayer(), RememberableUnitTypeId, targetPoint.X, targetPoint.Y, GetUnitFacing(caster));
         SetUnitVertexColor(summonedTauren, 200, 165, 50, 150);
 
         summonedTauren.MultiplyBaseDamage(1 + DamageBonus.Base + DamageBonus.PerLevel * level, 0);

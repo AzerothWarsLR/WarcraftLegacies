@@ -76,7 +76,7 @@ namespace MacroTools.PassiveAbilities
         GetUnitY(whichUnit)));
 
       var reanimatedUnit = CreateUnit(castingPlayer, GetUnitTypeId(whichUnit), whichUnitPosition.X,
-          whichUnitPosition.Y, whichUnit.GetFacing());
+          whichUnitPosition.Y, GetUnitFacing(whichUnit));
       reanimatedUnit.RemoveAllAbilities(new List<int> { 1096905835, 1097690998, 1112498531 });
       reanimatedUnit.SetTimedLife(Duration, BuffId);
       SetUnitVertexColor(reanimatedUnit, 200, 50, 50, 255);

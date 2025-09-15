@@ -47,7 +47,7 @@ namespace MacroTools.PassiveAbilities
         return;
       var pos = triggerUnit.GetPosition();
       for (var i = 0; i < CreateCount; i++)
-        CreateUnit(triggerUnit.OwningPlayer(), CreateUnitTypeId, pos.X, pos.Y, triggerUnit.GetFacing())
+        CreateUnit(triggerUnit.OwningPlayer(), CreateUnitTypeId, pos.X, pos.Y, GetUnitFacing(triggerUnit))
           .SetTimedLife(Duration);
       EffectSystem.Add(AddSpecialEffect(SpecialEffectPath, pos.X, pos.Y), 1);
       RemoveUnit(triggerUnit);

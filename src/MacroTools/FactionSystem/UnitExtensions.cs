@@ -35,7 +35,7 @@ namespace MacroTools.FactionSystem
 
       var oldPosition = whichUnit.GetPosition();
       var oldOwner = whichUnit.OwningPlayer();
-      var oldFacing = whichUnit.GetFacing();
+      var oldFacing = GetUnitFacing(whichUnit);
       
       RemoveUnit(whichUnit);
       var newUnit = CreateUnit(oldOwner, newUnitType, oldPosition.X, oldPosition.Y, oldFacing);
