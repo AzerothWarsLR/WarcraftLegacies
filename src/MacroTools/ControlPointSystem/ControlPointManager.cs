@@ -278,7 +278,6 @@ namespace MacroTools.ControlPointSystem
       var lifePercent = Math.Max(controlPoint.Unit.GetLifePercent(), 1);
 
       BlzSetUnitMaxHP(controlPoint.Unit, maxHitPoints);
-      BlzSetUnitArmor(controlPoint.Unit, ControlLevelSettings.ArmorPerControlLevel * ControlLevelSettings.ArmorPerControlLevel);
       BlzSetUnitIntegerField(controlPoint.Unit, UNIT_IF_LEVEL, flooredLevel);
       BlzSetUnitArmor(controlPoint.Unit, ControlLevelSettings.ArmorPerControlLevel * flooredLevel);
       controlPoint.Unit
