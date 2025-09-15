@@ -48,8 +48,11 @@ namespace WarcraftLegacies.Source.Quests
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      player whichPlayer = _heroInRectObjective.CompletingUnit?.OwningPlayer() ?? Player(PLAYER_NEUTRAL_AGGRESSIVE);
-      SetUnitOwner(_yoggsaronPrison, whichPlayer, true);
+      var newOwner = _heroInRectObjective.CompletingUnit == null
+        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+        : GetOwningPlayer(_heroInRectObjective.CompletingUnit);
+
+      SetUnitOwner(_yoggsaronPrison, newOwner, true);
       SetUnitInvulnerable(_yoggsaronPrison, false);
     }
 
