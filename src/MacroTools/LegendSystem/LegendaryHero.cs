@@ -185,23 +185,14 @@ namespace MacroTools.LegendSystem
     /// <inheritdoc />
     protected override void OnChangeUnit()
     {
-      trigger tempQualifier = _becomesRevivableTrig;
-      if (tempQualifier != null)
-      {
-        DestroyTrigger(tempQualifier);
-      }
+      if (_becomesRevivableTrig != null) 
+        DestroyTrigger(_becomesRevivableTrig);
 
-      trigger tempQualifier1 = _castTrig;
-      if (tempQualifier1 != null)
-      {
-        DestroyTrigger(tempQualifier1);
-      }
+      if (_castTrig != null) 
+        DestroyTrigger(_castTrig);
 
-      trigger tempQualifier2 = _ownerTrig;
-      if (tempQualifier2 != null)
-      {
-        DestroyTrigger(tempQualifier2);
-      }
+      if (_ownerTrig != null) 
+        DestroyTrigger(_ownerTrig);
 
       if (Unit == null) 
         return;

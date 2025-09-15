@@ -44,11 +44,8 @@ namespace WarcraftLegacies.Source.Cheats
 
       GameTime.GameStarted += (_, _) =>
       {
-        trigger tempQualifier = _skipTrigger;
-        if (tempQualifier != null)
-        {
-          DestroyTrigger(tempQualifier);
-        }
+        if (_skipTrigger != null) 
+          DestroyTrigger(_skipTrigger);
       };
     }
   }

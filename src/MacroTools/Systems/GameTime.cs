@@ -29,20 +29,20 @@ namespace MacroTools.Systems
     /// <summary>Starts the timers that keeps trac of the game's ticks and turns.</summary>
     public static void Start()
     {
-      CreateTimer().Start(0, false, () =>
+      TimerStart(CreateTimer(), 0, false, () =>
       {
-        CreateTimer().Start(1, true, GameTick);
+        TimerStart(CreateTimer(), 1, true, GameTick);
         var turnTimer = CreateTimer();
-        turnTimer.Start(TurnDuration, true, EndTurn);
+        TimerStart(turnTimer, TurnDuration, true, EndTurn);
         _turnTimerDialog = CreateTimerDialog(turnTimer);
-        GetExpiredTimer().Destroy();
+        DestroyTimer(GetExpiredTimer());
       });
 
-      CreateTimer().Start(TimerDelay, false, () =>
+      TimerStart(CreateTimer(), TimerDelay, false, () =>
       {
         TimerDialogDisplay(_turnTimerDialog, true);
         TimerDialogSetTitle(_turnTimerDialog, "Game starts in:");
-        GetExpiredTimer().Destroy();
+        DestroyTimer(GetExpiredTimer());
       });
     }
 

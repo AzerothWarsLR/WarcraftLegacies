@@ -57,7 +57,7 @@ namespace WarcraftLegacies.Source.Quests
       AddObjective(new ObjectiveKillUnit(nightmareDragonEk));
       AddObjective(new ObjectiveTime(360));
       _timer = CreateTimer();
-      _timer.Start(360, false, OnTimeElapsed);
+      TimerStart(_timer, 360, false, OnTimeElapsed);
       IsFactionQuest = false;
     }
 

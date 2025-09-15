@@ -639,12 +639,8 @@ namespace MacroTools.FactionSystem
 
       foreach (var (key, value) in _abilityAvailabilities)
       {
-        player tempQualifier = Player;
-        if (tempQualifier != null)
-        {
-          bool value1 = value > 0;
-          SetPlayerAbilityAvailable(tempQualifier, key, value1);
-        }
+        if (Player != null) 
+          SetPlayerAbilityAvailable(Player, key, value > 0);
       }
     }
 
@@ -659,11 +655,8 @@ namespace MacroTools.FactionSystem
 
       foreach (var (key, _) in _abilityAvailabilities)
       {
-        player tempQualifier = Player;
-        if (tempQualifier != null)
-        {
-          SetPlayerAbilityAvailable(tempQualifier, key, true);
-        }
+        if (Player != null) 
+          SetPlayerAbilityAvailable(Player, key, true);
       }
     }
 

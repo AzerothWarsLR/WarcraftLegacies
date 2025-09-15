@@ -79,7 +79,7 @@ namespace MacroTools.ObjectiveSystem
       }
 
       _periodictimer = CreateTimer();
-      _periodictimer.Start(Period, true, Periodic);
+      TimerStart(_periodictimer, Period, true, Periodic);
     }
 
     /// <inheritdoc />
@@ -88,8 +88,10 @@ namespace MacroTools.ObjectiveSystem
       BlzSetSpecialEffectPosition(_sfxProgress, -100000, -100000, 0); //Has no death animation so needs to be moved off the map
       DestroyEffect(_sfxProgress);
       DestroyEffect(_sfx);
-      _channelingTimer?.Destroy();
-      _periodictimer.Destroy();
+      if (_channelingTimer != null) 
+        DestroyTimer(_channelingTimer);
+
+      DestroyTimer(_periodictimer);
       DestroyTimerDialog(_channelingDialog);
     }
     

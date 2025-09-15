@@ -21,7 +21,7 @@ namespace MacroTools.ControlPointSystem
     {
       GameTime.GameStarted += (_, _) =>
       {
-        CreateTimer().Start(Period, true, () =>
+        TimerStart(CreateTimer(), Period, true, () =>
         {
           foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
             if (player.GetFaction() != null)

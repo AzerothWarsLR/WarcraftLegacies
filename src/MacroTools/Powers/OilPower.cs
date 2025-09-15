@@ -87,7 +87,7 @@ namespace MacroTools.Powers
       OilIncomePeriodicTrigger.Add(_oilIncomePeriodicAction);
 
       _oilTimer = CreateTimer();
-      _oilTimer.Start(150, true, GenerateRandomOilPool);
+      TimerStart(_oilTimer, 150, true, GenerateRandomOilPool);
 
       foreach (var position in ForcedStartingOilPoolSpawnLocations)
         GenerateOilPool(position);
@@ -103,7 +103,8 @@ namespace MacroTools.Powers
       _oilIncomePeriodicAction.Active = false;
       _oilIncomePeriodicAction = null;
       _owners.Remove(whichPlayer);
-      _oilTimer?.Destroy();
+      if (_oilTimer != null) 
+        DestroyTimer(_oilTimer);
     }
     
     /// <summary>

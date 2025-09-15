@@ -56,11 +56,8 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
 
     public override void OnDispose()
     {
-      trigger tempQualifier = _deathTrigger;
-      if (tempQualifier != null)
-      {
-        DestroyTrigger(tempQualifier);
-      }
+      if (_deathTrigger != null) 
+        DestroyTrigger(_deathTrigger);
 
       ShowUnit(Target, true);
       BlzPauseUnitEx(Target, false);

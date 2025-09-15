@@ -41,7 +41,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
       BlzSetSpecialEffectHeight(_progressBar, 450);
       SetUnitTimeScale(Target, 9.3f * (1 / delay));
       SetUnitAnimation(Target, "birth");
-      CreateTimer().Start(delay, false, () =>
+      TimerStart(CreateTimer(), delay, false, () =>
       {
         if (_state == SlipstreamPortalState.Opening)
         {
@@ -74,7 +74,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
       _state = SlipstreamPortalState.Closing;
       SetUnitTimeScale(Target, 0.65f * (1 / delay));
       SetUnitAnimation(Target, "death");
-      CreateTimer().Start(delay, false, () =>
+      TimerStart(CreateTimer(), delay, false, () =>
       {
         CloseInstantly();
         DestroyTimer(GetExpiredTimer());

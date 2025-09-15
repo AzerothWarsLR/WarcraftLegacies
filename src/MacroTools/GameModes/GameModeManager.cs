@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MacroTools.Extensions;
 using MacroTools.Utils;
 using static War3Api.Common;
 
@@ -27,7 +26,7 @@ namespace MacroTools.GameModes
 
     public void Setup()
     {
-      CreateTimer().Start(TimeToDisplay, false, PresentVotesToPlayers);
+      TimerStart(CreateTimer(), TimeToDisplay, false, PresentVotesToPlayers);
     }
 
     private void PresentVotesToPlayers()
@@ -49,8 +48,8 @@ namespace MacroTools.GameModes
         foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
           DialogDisplay(player, dialog, true);
 
-        GetExpiredTimer().Destroy();
-        CreateTimer().Start(VoteLength, false, () => { ConcludeVote(dialog, buttonClickTriggers); });
+        DestroyTimer(GetExpiredTimer());
+        TimerStart(CreateTimer(), VoteLength, false, () => { ConcludeVote(dialog, buttonClickTriggers); });
       }
 
       catch (Exception ex)
@@ -64,7 +63,7 @@ namespace MacroTools.GameModes
       var highestVotedGameMode = _gameModeVotes.OrderByDescending(x => x.VoteCount).First();
       highestVotedGameMode.GameMode.OnChoose();
 
-      GetExpiredTimer().Destroy();
+      DestroyTimer(GetExpiredTimer());
       DialogClear(dialog);
 
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())

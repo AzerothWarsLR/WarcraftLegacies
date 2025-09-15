@@ -49,7 +49,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
     {
       _legionTeleporter1?.IssueOrder(ORDER_BERSERK);
       _legionTeleporter2?.IssueOrder(ORDER_BERSERK);
-      CreateTimer().Start(0.5f, false, () =>
+      TimerStart(CreateTimer(), 0.5f, false, () =>
       {
         if (_legionTeleporter1 != null) 
           RemoveUnit(_legionTeleporter1);
@@ -57,7 +57,7 @@ namespace WarcraftLegacies.Source.Quests.Legion
         if (_legionTeleporter2 != null) 
           RemoveUnit(_legionTeleporter2);
 
-        GetExpiredTimer().Destroy();
+        DestroyTimer(GetExpiredTimer());
       });
 
       if (_anetheron.Unit != null)
@@ -76,10 +76,10 @@ namespace WarcraftLegacies.Source.Quests.Legion
 
       CreatePortals(whichFaction.Player);
 
-      CreateTimer().Start(6, false, () =>
+      TimerStart(CreateTimer(), 6, false, () =>
       {
         PlayThematicMusic("Doom");
-        GetExpiredTimer().Destroy();
+        DestroyTimer(GetExpiredTimer());
       });
 
       foreach (var player in Util.EnumeratePlayers())
