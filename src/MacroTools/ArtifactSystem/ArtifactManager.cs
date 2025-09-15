@@ -5,7 +5,6 @@ using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.ShoreSystem;
 using WCSharp.Events;
-using static War3Api.Common;
 
 namespace MacroTools.ArtifactSystem
 {

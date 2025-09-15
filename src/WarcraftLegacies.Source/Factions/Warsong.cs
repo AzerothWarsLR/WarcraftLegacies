@@ -27,8 +27,8 @@ namespace WarcraftLegacies.Source.Factions
 
         /// <inheritdoc />
 
-        public Warsong(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
-          : base("Warsong", new[] {PLAYER_COLOR_ORANGE, PLAYER_COLOR_YELLOW, PLAYER_COLOR_COAL},
+        public Warsong(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup,
+          ArtifactSetup artifactSetup) : base("Warsong", PLAYER_COLOR_RED,
           @"ReplaceableTextures\CommandButtons\BTNHellScream.blp")
         {
             TraditionalTeam = TeamSetup.Kalimdor;

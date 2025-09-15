@@ -5,7 +5,6 @@ using MacroTools.Setup;
 using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace MacroTools.Powers
 {

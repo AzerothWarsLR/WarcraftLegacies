@@ -4,7 +4,6 @@ using MacroTools.FactionSystem;
 using MacroTools.Setup;
 using WCSharp.Effects;
 using WCSharp.Events;
-using static War3Api.Common;
 
 namespace MacroTools.Powers
 {

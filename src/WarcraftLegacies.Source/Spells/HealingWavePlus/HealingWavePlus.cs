@@ -4,7 +4,6 @@ using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.SpellSystem;
 using MacroTools.Utils;
-using War3Api;
 using WCSharp.Buffs;
 using WCSharp.Effects;
 using WCSharp.Shared.Data;
@@ -125,7 +124,7 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
         private void PerformSecondaryWave(unit caster, unit triggerPointUnit, HashSet<unit> healedUnits)
         {
             var triggerPoint = triggerPointUnit.GetPosition();
-            var lightningEffects = new List<Common.lightning>();
+            var lightningEffects = new List<lightning>();
             unit lastHealedUnit = null;
 
             var nearbyAllies = GlobalGroup.EnumUnitsInRange(triggerPoint, SecondaryWaveRadius)

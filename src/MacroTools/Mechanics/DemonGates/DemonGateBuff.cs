@@ -3,7 +3,6 @@ using MacroTools.Extensions;
 using WCSharp.Buffs;
 using WCSharp.Effects;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace MacroTools.Mechanics.DemonGates
 {

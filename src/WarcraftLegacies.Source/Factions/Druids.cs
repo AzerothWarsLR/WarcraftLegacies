@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Factions
     /// <inheritdoc />
     
     public Druids(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) :
-      base("Druids", new[] {PLAYER_COLOR_BROWN, PLAYER_COLOR_WHEAT, PLAYER_COLOR_LAVENDER}, @"ReplaceableTextures\CommandButtons\BTNFurion.blp")
+      base("Druids", PLAYER_COLOR_BROWN, @"ReplaceableTextures\CommandButtons\BTNFurion.blp")
     {
       TraditionalTeam = TeamSetup.Kalimdor;
       _preplacedUnitSystem = preplacedUnitSystem;

@@ -3,7 +3,6 @@ using MacroTools.Extensions;
 using MacroTools.Libraries;
 using WCSharp.Buffs;
 using WCSharp.Events;
-using static War3Api.Common;
 
 namespace MacroTools.Buffs
 {

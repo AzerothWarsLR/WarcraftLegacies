@@ -4,7 +4,6 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using MacroTools.Cheats;
 using MacroTools.Extensions;
-using static War3Api.Common;
 
 namespace MacroTools.CommandSystem
 {

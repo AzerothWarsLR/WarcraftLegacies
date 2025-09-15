@@ -17,19 +17,14 @@ namespace WarcraftLegacies.Source.Factions
   {
     private readonly ArtifactSetup _artifactSetup;
     private readonly AllLegendSetup _allLegendSetup;
-    private readonly unit _gilneasGate;
-    private readonly PreplacedUnitSystem _preplacedUnitSystem;
 
     /// <inheritdoc />
     public Gilneas(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
-      : base("Gilneas", new[] {PLAYER_COLOR_COAL, PLAYER_COLOR_LIGHT_GRAY, PLAYER_COLOR_MINT},
-      @"ReplaceableTextures\CommandButtons\BTNGreymane.blp")
+      : base("Gilneas", PLAYER_COLOR_PINK, @"ReplaceableTextures\CommandButtons\BTNGreymane.blp")
     {
       TraditionalTeam = TeamSetup.NorthAlliance;
       _artifactSetup = artifactSetup;
-      _preplacedUnitSystem = preplacedUnitSystem;
       _allLegendSetup = allLegendSetup;
-      _gilneasGate = preplacedUnitSystem.GetUnit(UNIT_H02K_GREYMANE_S_GATE_CLOSED);
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_H0AF_CONTROL_POINT_DEFENDER_GILNEAS;
       IntroText = $"You are playing as the accursed {PrefixCol}Kingdom of Gilneas|r.\n\n" +
@@ -39,7 +34,7 @@ namespace WarcraftLegacies.Source.Factions
 
       GoldMines = new List<unit>
       {
-        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(5466, 3210)),
+        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(5466, 3210)),
       };
       Nicknames = new List<string>
       {
@@ -62,12 +57,6 @@ namespace WarcraftLegacies.Source.Factions
       ReplaceWithFactionUnits(this);
       RegisterQuests();
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
-    }
-
-    /// <inheritdoc />
-    public override void OnNotPicked()
-    {
-      base.OnNotPicked(); 
     }
 
     private void RegisterQuests()

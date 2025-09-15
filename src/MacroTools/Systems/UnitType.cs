@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using MacroTools.Shared;
-using static War3Api.Common;
 
 namespace MacroTools.Systems
 {

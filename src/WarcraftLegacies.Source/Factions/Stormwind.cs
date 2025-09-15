@@ -17,7 +17,8 @@ namespace WarcraftLegacies.Source.Factions
 
     /// <inheritdoc />
     
-    public Stormwind(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Stormwind", new[] {PLAYER_COLOR_BLUE, PLAYER_COLOR_NAVY, PLAYER_COLOR_CYAN},
+    public Stormwind(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup,
+      ArtifactSetup artifactSetup) : base("Stormwind", PLAYER_COLOR_BLUE,
       @"ReplaceableTextures\CommandButtons\BTNKnight.blp")
     {
       TraditionalTeam = TeamSetup.SouthAlliance;

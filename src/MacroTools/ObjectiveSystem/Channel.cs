@@ -3,7 +3,6 @@ using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 using Environment = MacroTools.Libraries.Environment;
 
 namespace MacroTools.ObjectiveSystem

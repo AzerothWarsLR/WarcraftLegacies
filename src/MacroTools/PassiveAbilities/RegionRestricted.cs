@@ -3,7 +3,6 @@ using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
 {

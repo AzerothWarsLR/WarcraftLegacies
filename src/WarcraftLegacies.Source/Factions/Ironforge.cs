@@ -19,8 +19,8 @@ namespace WarcraftLegacies.Source.Factions
 
     /// <inheritdoc />
     
-    public Ironforge(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Ironforge",
-      new[] {PLAYER_COLOR_YELLOW, PLAYER_COLOR_ORANGE, PLAYER_COLOR_LIGHT_BLUE}, @"ReplaceableTextures\CommandButtons\BTNHeroMountainKing.blp")
+    public Ironforge(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) 
+      : base("Ironforge", PLAYER_COLOR_YELLOW, @"ReplaceableTextures\CommandButtons\BTNHeroMountainKing.blp")
     {
       TraditionalTeam = TeamSetup.SouthAlliance;
       _preplacedUnitSystem = preplacedUnitSystem;

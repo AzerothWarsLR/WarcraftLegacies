@@ -2,7 +2,6 @@
 using MacroTools.Extensions;
 using MacroTools.Shared;
 using MacroTools.Systems;
-using static War3Api.Common;
 
 namespace MacroTools.FactionSystem
 {

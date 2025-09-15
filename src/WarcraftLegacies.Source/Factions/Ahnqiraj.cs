@@ -27,8 +27,8 @@ namespace WarcraftLegacies.Source.Factions
     private readonly unit _gateAhnQiraj;
 
     /// <inheritdoc />
-    public Ahnqiraj(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Ahn'qiraj", new[] {PLAYER_COLOR_WHEAT, PLAYER_COLOR_PEACH, PLAYER_COLOR_LIGHT_GRAY},
-      @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
+    public Ahnqiraj(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Ahn'qiraj",
+      PLAYER_COLOR_WHEAT, @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
     {
       _allLegendSetup = allLegendSetup;
       _gateAhnQiraj = preplacedUnitSystem.GetUnit(UNIT_H02U_GATES_OF_AHN_QIRAJ_CLOSED);

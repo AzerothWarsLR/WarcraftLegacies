@@ -1,7 +1,6 @@
 ﻿using MacroTools.CommandSystem;
 using System.Linq;
 using WCSharp.Shared;
-using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {

@@ -3,7 +3,6 @@ using System.Collections.ObjectModel;
 using MacroTools.Instances;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace MacroTools.ShoreSystem
 {

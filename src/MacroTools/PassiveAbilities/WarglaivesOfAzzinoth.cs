@@ -5,7 +5,6 @@ using MacroTools.Libraries;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Utils;
 using WCSharp.Effects;
-using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
 {

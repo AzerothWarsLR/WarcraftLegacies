@@ -3,7 +3,6 @@ using System.Linq;
 using MacroTools.CommandSystem;
 using MacroTools.Extensions;
 using MacroTools.Utils;
-using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {

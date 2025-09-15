@@ -1,6 +1,5 @@
 ﻿using System;
 using MacroTools.Wrappers;
-using static War3Api.Common;
 
 namespace MacroTools.LegendSystem
 {

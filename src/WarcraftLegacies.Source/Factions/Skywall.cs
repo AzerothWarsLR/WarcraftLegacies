@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Factions
   {
     private readonly AllLegendSetup _allLegendSetup;
     /// <inheritdoc />
-    public Skywall(AllLegendSetup allLegendSetup) : base("Skywall", new[] {PLAYER_COLOR_LIGHT_GRAY, PLAYER_COLOR_COAL, PLAYER_COLOR_RED},
+    public Skywall(AllLegendSetup allLegendSetup) : base("Skywall", PLAYER_COLOR_LIGHT_GRAY,
       @"ReplaceableTextures\CommandButtons\BTNFrostRevenant2.blp")
     {
       ControlPointDefenderUnitTypeId = UNIT_NECP_CONTROL_POINT_DEFENDER_SKYWALL_TOWER;

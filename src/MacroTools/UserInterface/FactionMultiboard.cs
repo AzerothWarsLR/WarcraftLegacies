@@ -3,7 +3,6 @@ using MacroTools.ControlPointSystem;
 using MacroTools.Exceptions;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using static War3Api.Common;
 
 namespace MacroTools.UserInterface
 {
@@ -21,7 +20,7 @@ namespace MacroTools.UserInterface
     private const int ColumnIncome = 2;
     private const int ColumnTeam = 0;
 
-    private const float WidthFaction = 0.08f;
+    private const float WidthFaction = 0.09f;
     private const float WidthCp = 0.02f;
     private const float WidthIncome = 0.022f;
     private const float WidthTeam = WidthFaction + WidthCp + WidthIncome;
