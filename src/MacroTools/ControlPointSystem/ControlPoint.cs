@@ -1,5 +1,4 @@
 using System;
-using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 
 namespace MacroTools.ControlPointSystem
@@ -83,7 +82,7 @@ namespace MacroTools.ControlPointSystem
     {
       Unit = representingUnit;
       Value = value;
-      Name = representingUnit.GetName();
+      Name = GetUnitName(representingUnit);
       UseControlLevels = useControlLevels;
     }
 
@@ -92,12 +91,9 @@ namespace MacroTools.ControlPointSystem
     /// </summary>
     internal void OnRegister()
     {
-      CreateTrigger()
-        .RegisterUnitEvent(Unit, EVENT_UNIT_CHANGE_OWNER)
-        .AddAction(() =>
-        {
-          SignalOwnerAllianceChange();
-        });
+      var trigger = CreateTrigger();
+      TriggerRegisterUnitEvent(trigger, Unit, EVENT_UNIT_CHANGE_OWNER);
+      TriggerAddAction(trigger, SignalOwnerAllianceChange);
     }
 
     /// <summary>

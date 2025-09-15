@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using WCSharp.Events;
+﻿using WCSharp.Events;
 
 namespace WarcraftLegacies.Source.GameLogic
 {
@@ -16,8 +15,8 @@ namespace WarcraftLegacies.Source.GameLogic
       PlayerUnitEvents.Register(UnitTypeEvent.IsSummoned, () =>
       {
         var unit = GetTriggerUnit(); 
-        if (IsUnitType(unit, UNIT_TYPE_UNDEAD))
-          GetTriggerUnit().AddType(UNIT_TYPE_SUMMONED);
+        if (IsUnitType(unit, UNIT_TYPE_UNDEAD)) 
+          UnitAddType(GetTriggerUnit(), UNIT_TYPE_SUMMONED);
       });
     }
   }

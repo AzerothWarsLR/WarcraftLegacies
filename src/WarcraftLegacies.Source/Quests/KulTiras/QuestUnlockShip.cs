@@ -83,8 +83,8 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       {
         _proudmooreCapitalShip.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       }
-      
-      _proudmooreCapitalShip.PauseEx(false);
+
+      BlzPauseUnitEx(_proudmooreCapitalShip, false);
     }
     
     /// <inheritdoc/>
@@ -93,7 +93,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       if (_questProcessed)
         return; 
 
-      _proudmooreCapitalShip.Remove();
+      RemoveUnit(_proudmooreCapitalShip);
       _questProcessed = true; 
     }
   }

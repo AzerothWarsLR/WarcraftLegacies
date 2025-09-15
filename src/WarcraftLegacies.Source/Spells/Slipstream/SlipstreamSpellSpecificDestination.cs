@@ -69,7 +69,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
     {
       if (IsPointValidTarget(caster, targetPoint)) 
         return;
-      caster.IssueOrder("stop");
+      IssueImmediateOrder(caster, "stop");
       Refund(caster);
     }
 

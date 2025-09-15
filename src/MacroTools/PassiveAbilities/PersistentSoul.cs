@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Utils;
+using WCSharp.Effects;
 
 namespace MacroTools.PassiveAbilities
 {
@@ -52,7 +53,7 @@ namespace MacroTools.PassiveAbilities
                  .ThenBy(x => MathEx.GetDistanceBetweenPoints(caster.GetPosition(), x.GetPosition()))
                  .Take(ReanimationCountLevel * GetUnitAbilityLevel(caster, _abilityTypeId)))
       {
-        Reanimate(caster.OwningPlayer(), unit);
+        Reanimate(GetOwningPlayer(caster), unit);
       }
     }
 
@@ -71,20 +72,19 @@ namespace MacroTools.PassiveAbilities
     {
       var whichUnitPosition = whichUnit.GetPosition();
 
-      AddSpecialEffect(@"Abilities\Spells\Undead\AnimateDead\AnimateDeadTarget.mdl", GetUnitX(whichUnit),
-          GetUnitY(whichUnit))
-        .SetLifespan();
+      EffectSystem.Add(AddSpecialEffect(@"Abilities\Spells\Undead\AnimateDead\AnimateDeadTarget.mdl", GetUnitX(whichUnit),
+        GetUnitY(whichUnit)));
 
-      var reanimatedUnit = CreateUnit(castingPlayer, whichUnit.GetTypeId(), whichUnitPosition.X,
-          whichUnitPosition.Y, whichUnit.GetFacing())
-        .RemoveAllAbilities(new List<int>{1096905835,1097690998,1112498531})
-        .SetTimedLife(Duration, BuffId)
-        .SetColor(200, 50, 50, 255)
-        .SetExplodeOnDeath(true)
-        .AddType(UNIT_TYPE_UNDEAD)
-        .AddType(UNIT_TYPE_SUMMONED);
+      var reanimatedUnit = CreateUnit(castingPlayer, GetUnitTypeId(whichUnit), whichUnitPosition.X,
+          whichUnitPosition.Y, GetUnitFacing(whichUnit));
+      reanimatedUnit.RemoveAllAbilities(new List<int> { 1096905835, 1097690998, 1112498531 });
+      reanimatedUnit.SetTimedLife(Duration, BuffId);
+      SetUnitVertexColor(reanimatedUnit, 200, 50, 50, 255);
+      SetUnitExploded(reanimatedUnit, true);
+      UnitAddType(reanimatedUnit, UNIT_TYPE_UNDEAD);
+      UnitAddType(reanimatedUnit, UNIT_TYPE_SUMMONED);
       
-      whichUnit.Remove();
+      RemoveUnit(whichUnit);
       
       reanimatedUnit.SetPosition(whichUnitPosition);
     }

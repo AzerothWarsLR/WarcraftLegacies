@@ -20,14 +20,14 @@ namespace MacroTools.BookSystem.ArtifactSystem
       Title = "Artifacts (F7)";
       LauncherParent = BlzGetFrameByName("UpperButtonBarQuestsButton", 0);
       Position = new Point(0.4f, 0.35f);
-      CreateTrigger()
-        .RegisterSharedKeyEvent(OSKEY_F7, BlzGetTriggerPlayerMetaKey(), false)
-        .AddAction(() =>
-        {
-          if (GetTriggerPlayer() != GetLocalPlayer())
-            return;
-          Open(GetLocalPlayer());
-        });
+      var trigger = CreateTrigger();
+      trigger.RegisterSharedKeyEvent(OSKEY_F7, BlzGetTriggerPlayerMetaKey(), false);
+      TriggerAddAction(trigger, () =>
+      {
+        if (GetTriggerPlayer() != GetLocalPlayer())
+          return;
+        Open(GetLocalPlayer());
+      });
     }
 
     private void AddArtifact(Artifact artifact)

@@ -22,19 +22,19 @@ namespace WarcraftLegacies.Source.Objectives
     public ObjectivePowerSource(unit dimensionalGenerator, IEnumerable<int> validItemTypeIds)
     {
       Description = $"Place a valid power source in the {GetUnitName(dimensionalGenerator)}";
-      CreateTrigger()
-        .RegisterUnitEvent(dimensionalGenerator, EVENT_UNIT_PICKUP_ITEM)
-        .AddAction(() =>
+      var pickupTrigger = CreateTrigger();
+      TriggerRegisterUnitEvent(pickupTrigger, dimensionalGenerator, EVENT_UNIT_PICKUP_ITEM);
+      TriggerAddAction(pickupTrigger, () =>
+      {
+        if (validItemTypeIds.Contains(GetItemTypeId(GetManipulatedItem())))
         {
-          if (validItemTypeIds.Contains(GetItemTypeId(GetManipulatedItem())))
-          {
-            UsedPowerSource = GetManipulatedItem();
-            Progress = QuestProgress.Complete;
-          }
+          UsedPowerSource = GetManipulatedItem();
+          Progress = QuestProgress.Complete;
+        }
             
-          else
-            GetManipulatedItem().SetPosition(GetTriggerUnit().GetPosition());
-        });
+        else
+          GetManipulatedItem().SetPosition(GetTriggerUnit().GetPosition());
+      });
     }
   }
 }

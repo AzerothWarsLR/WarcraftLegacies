@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.ResearchSystems;
 using MacroTools.Systems;
 using WCSharp.Events;
@@ -21,7 +20,8 @@ namespace WarcraftLegacies.Source.Researches.Ironforge
     private static bool _researched;
 
     /// <inheritdoc />
-    public DeeprunTram(Faction ironforge, Faction stormwind, int researchTypeId, int goldCost, PreplacedUnitSystem preplacedUnitSystem) : base(researchTypeId, goldCost)
+    public DeeprunTram(Faction ironforge, Faction stormwind, int researchTypeId, int goldCost,
+      PreplacedUnitSystem preplacedUnitSystem) : base(researchTypeId, goldCost)
     {
       _ironforge = ironforge;
       _stormwind = stormwind;
@@ -43,20 +43,18 @@ namespace WarcraftLegacies.Source.Researches.Ironforge
       var recipient = _ironforge.Player ?? _stormwind.Player;
       if (recipient == null)
       {
-        _tramToIronforge?.Kill();
-        _tramToStormwind?.Kill();
+        KillUnit(_tramToIronforge);
+        KillUnit(_tramToStormwind);
         return;
       }
       
-      _tramToIronforge?
-        .SetOwner(recipient)
-        .SetWaygateDestination(Regions.Ironforge.Center)
-        .SetInvulnerable(false);
-
-      _tramToStormwind?
-        .SetOwner(recipient)
-        .SetWaygateDestination(Regions.Stormwind.Center)
-        .SetInvulnerable(false);
+      SetUnitOwner(_tramToIronforge, recipient, true);
+      WaygateSetDestination(_tramToIronforge, Regions.Ironforge.Center.X, Regions.Ironforge.Center.Y);
+      WaygateActivate(_tramToIronforge, true);
+      
+      SetUnitOwner(_tramToStormwind, recipient, true);
+      WaygateSetDestination(_tramToStormwind, Regions.Stormwind.Center.X, Regions.Stormwind.Center.Y);
+      WaygateActivate(_tramToStormwind, true);
       
       _stormwind.SetObjectLevel(ResearchId, 1);
       _ironforge.SetObjectLevel(ResearchId, 1);
@@ -66,8 +64,8 @@ namespace WarcraftLegacies.Source.Researches.Ironforge
     /// <inheritdoc />
     public override void OnRegister()
     {
-      PlayerUnitEvents.Register(UnitEvent.Dies, () => { _tramToStormwind?.Kill(); }, _tramToIronforge);
-      PlayerUnitEvents.Register(UnitEvent.Dies, () => { _tramToIronforge?.Kill(); }, _tramToStormwind);
+      PlayerUnitEvents.Register(UnitEvent.Dies, () => { KillUnit(_tramToStormwind); }, _tramToIronforge);
+      PlayerUnitEvents.Register(UnitEvent.Dies, () => { KillUnit(_tramToIronforge); }, _tramToStormwind);
     }
   }
 }

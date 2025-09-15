@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.Utils;
+﻿using MacroTools.Utils;
 
 namespace WarcraftLegacies.Source.Setup
 {
@@ -14,7 +13,10 @@ namespace WarcraftLegacies.Source.Setup
     public static void Setup()
     {
       foreach (var unit in GlobalGroup.EnumUnitsOfPlayer(Player(20)))
-          unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      {
+        player whichPlayer = Player(PLAYER_NEUTRAL_AGGRESSIVE);
+        SetUnitOwner(unit, whichPlayer, true);
+      }
     }
   }
 }

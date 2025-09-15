@@ -1,5 +1,4 @@
 ﻿using MacroTools.DummyCasters;
-using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
 
 namespace MacroTools.PassiveAbilities
@@ -52,7 +51,7 @@ namespace MacroTools.PassiveAbilities
       if (!BlzGetEventIsAttack() || GetUnitAbilityLevel(caster, AbilityTypeId) == 0)
         return;
       if (RequiredResearch != 0)
-        if (GetPlayerTechCount(caster.OwningPlayer(), RequiredResearch, false) == 0)
+        if (GetPlayerTechCount(GetOwningPlayer(caster), RequiredResearch, false) == 0)
           return;
       if (GetRandomReal(0, 1) < ProcChance)
       {

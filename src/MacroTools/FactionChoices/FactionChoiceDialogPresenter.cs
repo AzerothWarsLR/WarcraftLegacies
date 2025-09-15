@@ -39,13 +39,12 @@ namespace MacroTools.FactionChoices
     {
       var startingUnits = GlobalGroup
         .EnumUnitsInRect(choice.StartingArea)
-        .Where(x => x.GetTypeId() != FourCC("ngol"));
+        .Where(x => GetUnitTypeId(x) != FourCC("ngol"));
 
       foreach (var unit in startingUnits)
       {
-        var replacedUnit = unit
-          .ReplaceWithFactionEquivalent(pickedFaction)
-          .SetOwner(pickingPlayer);
+        var replacedUnit = unit.ReplaceWithFactionEquivalent(pickedFaction);
+        SetUnitOwner(replacedUnit, pickingPlayer, true);
 
         if (replacedUnit != unit && CinematicMode.State == CinematicState.Active) 
           CinematicMode.AddPausedUnit(replacedUnit);
@@ -59,7 +58,7 @@ namespace MacroTools.FactionChoices
 
       var unitsInRegion = GlobalGroup
         .EnumUnitsInRect(region) 
-        .Where(x => x.GetTypeId() != FourCC("ngol")) 
+        .Where(x => GetUnitTypeId(x) != FourCC("ngol")) 
         .Where(x => GetOwningPlayer(x) != Player(PLAYER_NEUTRAL_AGGRESSIVE));
 
       foreach (var unit in unitsInRegion)

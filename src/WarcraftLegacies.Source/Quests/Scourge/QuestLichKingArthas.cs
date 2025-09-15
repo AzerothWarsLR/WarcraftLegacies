@@ -54,16 +54,16 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       PlayThematicMusic(@"Sound\Music\mp3Music\LichKingTheme.mp3");
 
       TheFrozenThrone.Vacate(false);
-      _theFrozenThrone.Unit?.SetOwner(completingFaction.Player!);
+      if (_theFrozenThrone.Unit != null) 
+        SetUnitOwner(_theFrozenThrone.Unit, completingFaction.Player!, true);
 
       _arthas.UnitType = UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE;
       _arthas.PermaDies = true;
       _arthas.DeathMessage = "The day he was born, the very forests of Lordaeron whispered the name Arthas - but no King rules forever.";
 
-      _arthas.Unit?
-        .SetLifePercent(100)
-        .SetManaPercent(100)
-        .AddItemSafe(_helmOfDomination.Item);
+      _arthas.Unit?.SetLifePercent(100);
+      _arthas.Unit?.SetManaPercent(100);
+      _arthas.Unit?.AddItemSafe(_helmOfDomination.Item);
 
       _utgardeKeep.Rescue(completingFaction.Player!);
 

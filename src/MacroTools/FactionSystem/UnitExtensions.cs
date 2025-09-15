@@ -22,22 +22,22 @@ namespace MacroTools.FactionSystem
         return whichUnit;
       
       if (!UnitType.TryGetFromHandle(whichUnit, out var unitType)) 
-        throw new InvalidOperationException($"{whichUnit.GetName()} doesn't have a registered {nameof(UnitType)}.");
+        throw new InvalidOperationException($"{GetUnitName(whichUnit)} doesn't have a registered {nameof(UnitType)}.");
 
       if (unitType.Category == UnitCategory.None)
-        throw new InvalidOperationException($"{whichUnit.GetName()} doesn't have a category.");
+        throw new InvalidOperationException($"{GetUnitName(whichUnit)} doesn't have a category.");
 
       if (!newFaction.TryGetObjectByCategory(unitType.Category, out var newUnitType)) 
-        throw new InvalidOperationException($"{whichUnit.GetName()} can't be replaced because {newFaction.Name} doesn't have a registered unit type of category {unitType.Category}.");
+        throw new InvalidOperationException($"{GetUnitName(whichUnit)} can't be replaced because {newFaction.Name} doesn't have a registered unit type of category {unitType.Category}.");
 
-      if (whichUnit.GetTypeId() == newUnitType)
+      if (GetUnitTypeId(whichUnit) == newUnitType)
         return whichUnit;
 
       var oldPosition = whichUnit.GetPosition();
-      var oldOwner = whichUnit.OwningPlayer();
-      var oldFacing = whichUnit.GetFacing();
+      var oldOwner = GetOwningPlayer(whichUnit);
+      var oldFacing = GetUnitFacing(whichUnit);
       
-      whichUnit.Remove();
+      RemoveUnit(whichUnit);
       var newUnit = CreateUnit(oldOwner, newUnitType, oldPosition.X, oldPosition.Y, oldFacing);
 
       return newUnit;

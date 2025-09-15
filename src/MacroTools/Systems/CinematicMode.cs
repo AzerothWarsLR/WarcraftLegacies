@@ -38,7 +38,9 @@ namespace MacroTools.Systems
         .EnumUnitsInRect(Rectangle.WorldBounds);
       
       foreach (var unit in _pausedUnits)
-        unit.PauseEx(true);
+      {
+        BlzPauseUnitEx(unit, true);
+      }
 
       _state = CinematicState.Active;
     }
@@ -62,7 +64,7 @@ namespace MacroTools.Systems
         return;
 
       _pausedUnits?.Add(whichUnit);
-      whichUnit.PauseEx(true);
+      BlzPauseUnitEx(whichUnit, true);
     }
     
     private static void TimerEnd()
@@ -84,7 +86,10 @@ namespace MacroTools.Systems
       if (_pausedUnits != null)
       {
         foreach (var unit in _pausedUnits)
-          unit.PauseEx(false);
+        {
+          BlzPauseUnitEx(unit, false);
+        }
+
         _pausedUnits.Clear();
       }
     }

@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
     /// <inheritdoc />
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      var dummyNukeLeftover = CreateUnit(caster.OwningPlayer(), DummyNukeLeftOverId, targetPoint.X, targetPoint.Y, 0);
+      var dummyNukeLeftover = CreateUnit(GetOwningPlayer(caster), DummyNukeLeftOverId, targetPoint.X, targetPoint.Y, 0);
       UnitApplyTimedLife(dummyNukeLeftover, 0, 3);
       dummyNukeLeftover.IssueOrder(OrderId("flamestrike"), targetPoint);
     }
@@ -43,7 +43,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
       var sound = SoundUtils.CreateNormalSound(WarningSoundPath);
       StartSound(sound);
       var dummyNukeWarning =
-        CreateUnit(caster.OwningPlayer(), NuclearWarningUnitTypeId, targetPoint.X, targetPoint.Y, 0);
+        CreateUnit(GetOwningPlayer(caster), NuclearWarningUnitTypeId, targetPoint.X, targetPoint.Y, 0);
       
       UnitApplyTimedLife(dummyNukeWarning, 0, CastTime);
     }

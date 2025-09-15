@@ -1,4 +1,3 @@
-using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
 
@@ -16,11 +15,11 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     public ObjectiveCapitalDead(Capital target)
     {
       TargetWidget = target.Unit;
-      Description = $"{target.Unit.GetName()} is destroyed";
+      Description = $"{GetUnitName(target.Unit)} is destroyed";
       DisplaysPosition = true;
-      CreateTrigger()
-        .RegisterUnitEvent(target.Unit, EVENT_UNIT_DEATH)
-        .AddAction(() => Progress = QuestProgress.Complete);
+      var deathTrigger = CreateTrigger();
+      TriggerRegisterUnitEvent(deathTrigger, target.Unit, EVENT_UNIT_DEATH);
+      TriggerAddAction(deathTrigger, () => Progress = QuestProgress.Complete);
       
       Position = new(GetUnitX(target.Unit), GetUnitY(target.Unit));
     }

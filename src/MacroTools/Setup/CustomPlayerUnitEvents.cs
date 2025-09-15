@@ -49,7 +49,7 @@ namespace MacroTools.Setup
         EVENT_PLAYER_UNIT_DAMAGED);
       PlayerUnitEvents.AddCustomEvent(PlayerUnitDies, () => GetPlayerId(GetOwningPlayer(GetTriggerUnit())),
         EVENT_PLAYER_UNIT_DEATH);
-      PlayerUnitEvents.AddCustomEvent(FactionUnitKills, () => GetKillingUnit().OwningPlayer().GetFaction().Id,
+      PlayerUnitEvents.AddCustomEvent(FactionUnitKills, () => GetOwningPlayer(GetKillingUnit()).GetFaction().Id,
         EVENT_PLAYER_UNIT_DEATH);
       PlayerUnitEvents.AddCustomEvent(PlayerSpellEffect, () => GetPlayerId(GetOwningPlayer(GetTriggerUnit())),
         EVENT_PLAYER_UNIT_SPELL_EFFECT);

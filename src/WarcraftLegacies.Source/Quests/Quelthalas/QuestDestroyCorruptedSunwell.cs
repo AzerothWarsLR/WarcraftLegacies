@@ -1,5 +1,4 @@
 ﻿using System.Linq;
-using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
@@ -45,7 +44,7 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas
     {
       completingFaction.RemovePower(_corruptedSunwellPower);
       _sunwell.Capturable = false;
-      _sunwell.Unit!.Kill();
+      KillUnit(_sunwell.Unit!);
       DestroyEffect(AddSpecialEffect(@"objects\spawnmodels\undead\udeathmedium\udeath.mdx",
         GetUnitX(_sunwell.Unit),
         GetUnitY(_sunwell.Unit)));

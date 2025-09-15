@@ -32,7 +32,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
 
     private void OnUnitDeath()
     {
-      Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(GetKillingUnit().OwningPlayer())
+      Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(GetKillingUnit()))
         ? QuestProgress.Complete
         : QuestProgress.Failed;
     }

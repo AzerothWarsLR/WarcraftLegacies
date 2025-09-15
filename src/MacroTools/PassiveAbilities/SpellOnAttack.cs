@@ -1,7 +1,6 @@
 ﻿using MacroTools.DummyCasters;
 using System.Collections.Generic;
 using static MacroTools.Libraries.UnitEventSystem;
-using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
 
 namespace MacroTools.PassiveAbilities
@@ -66,7 +65,7 @@ namespace MacroTools.PassiveAbilities
 
       // Check research requirement
       if (RequiredResearch != 0 &&
-          GetPlayerTechCount(caster.OwningPlayer(), RequiredResearch, false) == 0)
+          GetPlayerTechCount(GetOwningPlayer(caster), RequiredResearch, false) == 0)
         return;
 
       // Check if target is on cooldown

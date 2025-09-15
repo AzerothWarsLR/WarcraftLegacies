@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.QuestSystem;
+﻿using MacroTools.QuestSystem;
 
 namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
 {
@@ -15,12 +14,12 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     public ObjectiveUnitAlive(unit whichUnit)
     {
       Description = IsUnitType(whichUnit, UNIT_TYPE_STRUCTURE)
-        ? $"{whichUnit.GetName()} is intact"
-        : $"{whichUnit.GetName()} is alive";
+        ? $"{GetUnitName(whichUnit)} is intact"
+        : $"{GetUnitName(whichUnit)} is alive";
       Progress = QuestProgress.Complete;
-      CreateTrigger()
-        .RegisterUnitEvent(whichUnit, EVENT_UNIT_DEATH)
-        .AddAction(() => { Progress = QuestProgress.Failed; });
+      var deathTrigger = CreateTrigger();
+      TriggerRegisterUnitEvent(deathTrigger, whichUnit, EVENT_UNIT_DEATH);
+      TriggerAddAction(deathTrigger, () => { Progress = QuestProgress.Failed; });
     }
   }
 }

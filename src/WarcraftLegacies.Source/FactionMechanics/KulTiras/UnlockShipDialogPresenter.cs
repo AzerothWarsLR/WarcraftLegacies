@@ -45,7 +45,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.KulTiras
         private static void TeleportTroops(player whichPlayer)
         {
             foreach (var unit in GlobalGroup.EnumUnitsInRect(Rectangle.WorldBounds)
-                         .Where(x => x.OwningPlayer() == whichPlayer))
+                         .Where(x => GetOwningPlayer(x) == whichPlayer))
             {
                 if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE) && 
                     !IsUnitType(unit, UNIT_TYPE_ANCIENT) && 

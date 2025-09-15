@@ -1,6 +1,5 @@
 ﻿using System.Linq;
 using MacroTools.CommandSystem;
-using MacroTools.Extensions;
 using MacroTools.Utils;
 
 namespace MacroTools.Cheats
@@ -26,7 +25,7 @@ namespace MacroTools.Cheats
     public override string Execute(player cheater, params string[] parameters)
     {
       var firstSelectedUnit = GlobalGroup.EnumSelectedUnits(cheater).First();
-      return $"{firstSelectedUnit.GetName()} is at position {GetUnitX(firstSelectedUnit)}, {GetUnitY(firstSelectedUnit)}.";
+      return $"{GetUnitName(firstSelectedUnit)} is at position {GetUnitX(firstSelectedUnit)}, {GetUnitY(firstSelectedUnit)}.";
     }
   }
 }

@@ -60,13 +60,16 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
     private void CorruptSunwell()
     {
-      _sunwell.Unit?
-        .RemoveAbility(ABILITY_A0OC_EXTRACT_VIAL_ALL)
-        .RemoveAbility(ABILITY_A0EP_SUMMON_GRANITE_GOLEMS_QUEL_THALAS_SUNWELL)
-        .AddAbility(ABILITY_A00D_DESTROY_THE_CORRUPTED_SUNWELL_QUEL_THALAS_SUNWELL)
-        .SetMaximumMana(0)
-        .SetSkin(UNIT_N079_THE_SUNWELL_CORRUPTED_QUEL_THALAS_OTHER)
-        .SetName("Corrupted Sunwell");
+      if (_sunwell.Unit != null)
+      {
+        UnitRemoveAbility(_sunwell.Unit, ABILITY_A0OC_EXTRACT_VIAL_ALL);
+        UnitRemoveAbility(_sunwell.Unit, ABILITY_A0EP_SUMMON_GRANITE_GOLEMS_QUEL_THALAS_SUNWELL);
+        _sunwell.Unit.AddAbility(ABILITY_A00D_DESTROY_THE_CORRUPTED_SUNWELL_QUEL_THALAS_SUNWELL);
+        BlzSetUnitMaxMana(_sunwell.Unit, 0);
+        BlzSetUnitSkin(_sunwell.Unit, UNIT_N079_THE_SUNWELL_CORRUPTED_QUEL_THALAS_OTHER);
+        BlzSetUnitName(_sunwell.Unit, "Corrupted Sunwell");
+      }
+
       _sunwell.Essential = false;
 
       var corruptedSunwellPower = new CorruptedSunwell(0.2f);

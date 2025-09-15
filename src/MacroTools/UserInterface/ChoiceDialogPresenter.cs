@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MacroTools.Extensions;
 
 namespace MacroTools.UserInterface
 {
@@ -75,9 +74,9 @@ namespace MacroTools.UserInterface
 
       foreach (var (button, choice) in choicePicksByButton)
       {
-        var pickTrigger = CreateTrigger()
-          .RegisterDialogButtonEvent(button)
-          .AddAction(() =>
+        var pickTrigger = CreateTrigger();
+        TriggerRegisterDialogButtonEvent(pickTrigger, button);
+        TriggerAddAction(pickTrigger, () =>
         {
           try
           {
@@ -105,7 +104,7 @@ namespace MacroTools.UserInterface
       DialogDestroy(_pickDialog);
       
       foreach (var trigger in _triggers)
-        trigger.Destroy();
+        DestroyTrigger(trigger);
     }
   }
 }

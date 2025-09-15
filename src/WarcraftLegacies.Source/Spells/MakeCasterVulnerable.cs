@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.SpellSystem;
+﻿using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells
@@ -15,7 +14,9 @@ namespace WarcraftLegacies.Source.Spells
     }
     
     /// <inheritdoc />
-    public override void OnStartCast(unit caster, unit target, Point targetPoint) => 
-      caster.SetInvulnerable(false);
+    public override void OnStartCast(unit caster, unit target, Point targetPoint)
+    {
+      SetUnitInvulnerable(caster, false);
+    }
   }
 }

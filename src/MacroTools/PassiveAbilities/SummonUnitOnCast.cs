@@ -2,6 +2,7 @@
 using MacroTools.Data;
 using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
+using WCSharp.Effects;
 
 namespace MacroTools.PassiveAbilities
 {
@@ -65,13 +66,12 @@ namespace MacroTools.PassiveAbilities
 
       for (var i = 0; i < summonCount; i++)
       {
-        var summonedUnit = CreateUnit(triggerUnit.OwningPlayer(), SummonUnitTypeId, casterPosition.X, casterPosition.Y, triggerUnit.GetFacing())
-          .AddType(UNIT_TYPE_SUMMONED)
-          .SetTimedLife(Duration);
+        var summonedUnit = CreateUnit(GetOwningPlayer(triggerUnit), SummonUnitTypeId, casterPosition.X, casterPosition.Y, GetUnitFacing(triggerUnit));
+        UnitAddType(summonedUnit, UNIT_TYPE_SUMMONED);
+        summonedUnit.SetTimedLife(Duration);
         var summonedUnitX = GetUnitX(summonedUnit);
         var summonedUnitY = GetUnitY(summonedUnit);
-        AddSpecialEffect(SpecialEffectPath, summonedUnitX, summonedUnitY)
-          .SetLifespan(1);
+        EffectSystem.Add(AddSpecialEffect(SpecialEffectPath, summonedUnitX, summonedUnitY), 1);
       }
     }
   }

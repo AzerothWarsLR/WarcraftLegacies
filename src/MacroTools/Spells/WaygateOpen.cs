@@ -58,14 +58,14 @@ namespace MacroTools.Spells
       
       var exteriorWaygatePosition = GetExteriorWaygatePosition();
       var interiorWaygatePosition = GetInteriorWaygatePosition();
-      
-      _exteriorWaygate = 
-        CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), ExteriorWaygateUnitTypeId, exteriorWaygatePosition.X, exteriorWaygatePosition.Y, 0)
-          .SetWaygateDestination(interiorWaygatePosition);
-      
-      _interiorWaygate = 
-        CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), InteriorWaygateUnitTypeId, interiorWaygatePosition.X, interiorWaygatePosition.Y, 0)
-          .SetWaygateDestination(exteriorWaygatePosition);
+
+      _exteriorWaygate = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), ExteriorWaygateUnitTypeId,
+        exteriorWaygatePosition.X, exteriorWaygatePosition.Y, 0);
+      _exteriorWaygate.SetWaygateDestination(interiorWaygatePosition);
+
+      _interiorWaygate = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), InteriorWaygateUnitTypeId,
+        interiorWaygatePosition.X, interiorWaygatePosition.Y, 0);
+      _exteriorWaygate.SetWaygateDestination(exteriorWaygatePosition);
     }
 
     /// <inheritdoc />

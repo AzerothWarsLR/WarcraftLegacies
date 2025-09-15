@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
     public int PortalUnitTypeId { get; init; }
 
     /// <summary>
-    /// The portal won't be useable until the caster has channeled for this long.
+    /// The portal won't be usable until the caster has channeled for this long.
     /// </summary>
     public float OpeningDelay { get; init; }
 
@@ -73,16 +73,17 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
     /// <inheritdoc />
     public override void OnCreate()
     {
-      _portalOrigin = CreateUnit(Caster.OwningPlayer(), PortalUnitTypeId, _origin.X, _origin.Y, Caster.GetFacing() - 180)
-        .SetWaygateDestination(_target)
-        .SetColor(Color.Red, Color.Green, Color.Blue, Color.Alpha);
+      _portalOrigin = CreateUnit(GetOwningPlayer(Caster), PortalUnitTypeId, _origin.X, _origin.Y,
+        GetUnitFacing(Caster) - 180);
+      _portalOrigin.SetWaygateDestination(_target);
+      SetUnitVertexColor(_portalOrigin, Color.Red, Color.Green, Color.Blue, Color.Alpha);
       _portalOriginBuff = new SlipstreamPortalBuff(Caster, _portalOrigin);
       BuffSystem.Add(_portalOriginBuff);
       _portalOriginBuff.Open(OpeningDelay);
-      
-      _portalDestination = CreateUnit(Caster.OwningPlayer(), PortalUnitTypeId, _target.X, _target.Y, Caster.GetFacing())
-        .SetWaygateDestination(new Point(_origin.X, _origin.Y))
-        .SetColor(Color.Red, Color.Green, Color.Blue, Color.Alpha);
+
+      _portalDestination = CreateUnit(GetOwningPlayer(Caster), PortalUnitTypeId, _target.X, _target.Y, GetUnitFacing(Caster));
+      _portalDestination.SetWaygateDestination(new Point(_origin.X, _origin.Y));
+      SetUnitVertexColor(_portalDestination, Color.Red, Color.Green, Color.Blue, Color.Alpha);
       _portalDestinationBuff = new SlipstreamPortalBuff(Caster, _portalDestination)
       {
         RefundFunc = RefundFunc

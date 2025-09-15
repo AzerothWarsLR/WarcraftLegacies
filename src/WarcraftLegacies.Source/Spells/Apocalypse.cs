@@ -1,8 +1,8 @@
 ﻿using System;
 using MacroTools.Data;
-using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.SpellSystem;
+using WCSharp.Effects;
 using WCSharp.Missiles;
 using WCSharp.Shared.Data;
 
@@ -85,13 +85,13 @@ namespace WarcraftLegacies.Source.Spells
       for (var i = 0; i < projectileCount; i++)
       {
         var projectileOrigin = GetProjectileOrigin(i, middle, casterFacing, casterX, casterY, width, projectileCount);
-        AddSpecialEffect(EffectOnProjectileSpawn, projectileOrigin.X, projectileOrigin.Y)
-          .SetScale(EffectOnProjectileSpawnScale)
-          .SetLifespan();
+        var effect = AddSpecialEffect(EffectOnProjectileSpawn, projectileOrigin.X, projectileOrigin.Y);
+        BlzSetSpecialEffectScale(effect, EffectOnProjectileSpawnScale);
+        EffectSystem.Add(effect);
 
         var projectileDestination = GetProjectileDestination(projectileOrigin, casterFacing);
         
-        var missile = new ApocalypseProjectile(caster.OwningPlayer(), projectileOrigin.X, projectileOrigin.Y,
+        var missile = new ApocalypseProjectile(GetOwningPlayer(caster), projectileOrigin.X, projectileOrigin.Y,
           projectileDestination.X, projectileDestination.Y)
         {
           CollisionRadius = ProjectileRadius,

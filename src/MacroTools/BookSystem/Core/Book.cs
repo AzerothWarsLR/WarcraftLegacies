@@ -82,9 +82,9 @@ namespace MacroTools.BookSystem.Core
       _title.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOP, 0, -0.025f);
       AddFrame(_title);
       
-      CreateTrigger()
-        .RegisterSharedKeyEvent(OSKEY_ESCAPE, BlzGetTriggerPlayerMetaKey(), false)
-        .AddAction(() =>
+      var trigger = CreateTrigger();
+      trigger.RegisterSharedKeyEvent(OSKEY_ESCAPE, BlzGetTriggerPlayerMetaKey(), false);
+      TriggerAddAction(trigger, () =>
       {
         if (GetTriggerPlayer() != GetLocalPlayer())
           return;

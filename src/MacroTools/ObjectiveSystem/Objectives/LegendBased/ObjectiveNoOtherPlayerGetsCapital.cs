@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.LegendSystem;
+﻿using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
 
 namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
@@ -18,20 +17,20 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     public NoOtherPlayerGetsCapital(Capital target)
     {
       _target = target;
-      Description = $"No other player has acquired {target.Unit.GetName()}";
+      Description = $"No other player has acquired {GetUnitName(target.Unit)}";
     }
 
     /// <inheritdoc/>
     public override void OnAdd(FactionSystem.Faction faction)
     {
       Progress = QuestProgress.Complete;
-      CreateTrigger()
-        .RegisterUnitEvent(_target.Unit, EVENT_UNIT_CHANGE_OWNER)
-        .AddAction(() =>
-        {
-          if (GetTriggerUnit().OwningPlayer() != faction.Player) 
-            Progress = QuestProgress.Failed;
-        });
+      var changeTrigger = CreateTrigger();
+      TriggerRegisterUnitEvent(changeTrigger, _target.Unit, EVENT_UNIT_CHANGE_OWNER);
+      TriggerAddAction(changeTrigger, () =>
+      {
+        if (GetOwningPlayer(GetTriggerUnit()) != faction.Player) 
+          Progress = QuestProgress.Failed;
+      });
     }
   }
 }

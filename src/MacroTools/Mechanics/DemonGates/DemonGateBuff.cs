@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using WCSharp.Buffs;
+using WCSharp.Effects;
 using WCSharp.Shared.Data;
 
 namespace MacroTools.Mechanics.DemonGates
@@ -29,7 +30,8 @@ namespace MacroTools.Mechanics.DemonGates
       set
       {
         _progress = value;
-        Target.SetMana((int)value);
+        int value1 = (int)value;
+        SetUnitState(Target, UNIT_STATE_MANA, value1);
       }
     }
 
@@ -37,19 +39,19 @@ namespace MacroTools.Mechanics.DemonGates
     {
       get
       {
-        if (FocalDemonGateBuff.Instance != null && FocalDemonGateBuff.Instance.Target.IsAlive())
+        if (FocalDemonGateBuff.Instance != null && UnitAlive(FocalDemonGateBuff.Instance.Target))
           return FocalDemonGateBuff.Instance.SpawnPoint;
 
         var targetPosition = Target.GetPosition();
         var offsetPosition =
           WCSharp.Shared.Util.PositionWithPolarOffset(targetPosition.X, targetPosition.Y, SpawnDistance,
-            Target.GetFacing() + FacingOffset);
+            GetUnitFacing(Target) + FacingOffset);
         return new Point(offsetPosition.x, offsetPosition.y);
       }
     }
 
     private Point RallyPoint =>
-      FocalDemonGateBuff.Instance != null && FocalDemonGateBuff.Instance.Target.IsAlive()
+      FocalDemonGateBuff.Instance != null && UnitAlive(FocalDemonGateBuff.Instance.Target)
         ? FocalDemonGateBuff.Instance.RallyPoint
         : Target.GetRallyPoint();
 
@@ -83,11 +85,10 @@ namespace MacroTools.Mechanics.DemonGates
     /// <inheritdoc />
     public override void OnApply()
     {
-      Target
-        .IssueOrder(OrderId("setrally"), Target.GetPosition())
-        .SetMaximumMana((int)_spawnInterval)
-        .AddAbility(_toggleAbilityTypeId)
-        .IssueOrder("immolation");
+      Target.IssueOrder(OrderId("setrally"), Target.GetPosition());
+      BlzSetUnitMaxMana(Target, (int)_spawnInterval);
+      Target.AddAbility(_toggleAbilityTypeId);
+      IssueImmediateOrder(Target, "immolation");
       Progress = _spawnInterval / 2;
     }
 
@@ -97,8 +98,8 @@ namespace MacroTools.Mechanics.DemonGates
       if (Progress < _spawnInterval)
         Progress += Interval;
       if (Progress >= _spawnInterval
-          && Caster.OwningPlayer().GetFoodUsed() < Caster.OwningPlayer().GetFoodCap()
-          && Caster.OwningPlayer().GetFoodUsed() < Caster.OwningPlayer().GetFoodCapCeiling()
+          && GetOwningPlayer(Caster).GetFoodUsed() < GetOwningPlayer(Caster).GetFoodCap()
+          && GetOwningPlayer(Caster).GetFoodUsed() < GetOwningPlayer(Caster).GetFoodCapCeiling()
           && GetUnitAbilityLevel(Caster, _toggleBuffTypeId) > 0
           && _spawnedDemons.Count <= SpawnLimit - _spawnCount)
       {
@@ -111,7 +112,8 @@ namespace MacroTools.Mechanics.DemonGates
     {
       if (newStack is DemonGateBuff newDemonGateBuff) 
         _demonUnitTypeId = newDemonGateBuff._demonUnitTypeId;
-      Target.SetMaximumMana((int)_spawnInterval);
+      int maximumMana = (int)_spawnInterval;
+      BlzSetUnitMaxMana(Target, maximumMana);
       return StackResult.Consume;
     }
 
@@ -130,21 +132,22 @@ namespace MacroTools.Mechanics.DemonGates
     {
       for (var i = 0; i < _spawnCount; i++)
       {
-        var spawnedDemon = CreateUnit(Target.OwningPlayer(), _demonUnitTypeId, SpawnPoint.X, SpawnPoint.Y, Target.GetFacing() + FacingOffset)
-          .IssueOrder(OrderId("attack"), RallyPoint);
+        var spawnedDemon = CreateUnit(GetOwningPlayer(Target), _demonUnitTypeId, SpawnPoint.X, SpawnPoint.Y,
+          GetUnitFacing(Target) + FacingOffset);
+        spawnedDemon.IssueOrder(OrderId("attack"), RallyPoint);
         
         _spawnedDemons.Add(spawnedDemon);
 
-        CreateTrigger()
-          .RegisterUnitEvent(spawnedDemon, EVENT_UNIT_DEATH)
-          .AddAction(() =>
-          {
-            _spawnedDemons.Remove(spawnedDemon);
-            DestroyTrigger(GetTriggeringTrigger());
-          });
+        var deathTrigger = CreateTrigger();
+        TriggerRegisterUnitEvent(deathTrigger, spawnedDemon, EVENT_UNIT_DEATH);
+        TriggerAddAction(deathTrigger, () =>
+        {
+          _spawnedDemons.Remove(spawnedDemon);
+          DestroyTrigger(GetTriggeringTrigger());
+        });
       }
 
-      AddSpecialEffect(SpawnEffectPath, SpawnPoint.X, SpawnPoint.Y).SetLifespan();
+      EffectSystem.Add(AddSpecialEffect(SpawnEffectPath, SpawnPoint.X, SpawnPoint.Y));
       Progress = 0;
     }
   }

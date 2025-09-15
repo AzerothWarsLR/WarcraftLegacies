@@ -24,8 +24,10 @@ namespace WarcraftLegacies.Source.Quests.Draenei
       "Tempest Keep still has the power to open a portal Argus, but Velen needs to channel it",
       @"ReplaceableTextures\CommandButtons\BTNArcaneCastle.blp")
     {
-      _outlandToArgusWaygate = outlandToArgusWaygate.Show(false);
-      _argusToOutlandWaygate = argusToOutlandWaygate.Show(false);
+      ShowUnit(outlandToArgusWaygate, false);
+      _outlandToArgusWaygate = outlandToArgusWaygate;
+      ShowUnit(argusToOutlandWaygate, false);
+      _argusToOutlandWaygate = argusToOutlandWaygate;
       AddObjective(new ObjectiveChannelRect(Regions.TempestKeepSpawn, "Tempest Keep", velen, 180, 0));
       Global = true;
       Progress = QuestProgress.Undiscovered;
@@ -40,11 +42,11 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
+      ShowUnit(_outlandToArgusWaygate, true);
       _outlandToArgusWaygate
-        .Show(true)
         .SetWaygateDestination(Regions.TempestKeepSpawn.Center);
+      ShowUnit(_argusToOutlandWaygate, true);
       _argusToOutlandWaygate
-        .Show(true)
         .SetWaygateDestination(Regions.OutlandToArgus.Center);
     }
   }

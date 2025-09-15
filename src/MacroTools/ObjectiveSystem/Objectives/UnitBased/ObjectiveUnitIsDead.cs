@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.QuestSystem;
+﻿using MacroTools.QuestSystem;
 
 namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
 {
@@ -24,13 +23,13 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     /// <param name="unitToKill"></param>
     public ObjectiveUnitIsDead(unit unitToKill)
     {
-      CreateTrigger()
-        .RegisterUnitEvent(unitToKill, EVENT_UNIT_DEATH)
-        .AddAction(() =>
-        {
-          KillingUnit = GetKillingUnit();
-          Progress = QuestProgress.Complete;
-        });
+      var deathTrigger = CreateTrigger();
+      TriggerRegisterUnitEvent(deathTrigger, unitToKill, EVENT_UNIT_DEATH);
+      TriggerAddAction(deathTrigger, () =>
+      {
+        KillingUnit = GetKillingUnit();
+        Progress = QuestProgress.Complete;
+      });
       Target = unitToKill;
       TargetWidget = Target;
       InitializeDescription();

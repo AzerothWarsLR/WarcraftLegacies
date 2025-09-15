@@ -1,6 +1,5 @@
 ﻿using System.Linq;
 using MacroTools.CommandSystem;
-using MacroTools.Extensions;
 using MacroTools.Utils;
 
 namespace MacroTools.Cheats
@@ -31,10 +30,10 @@ namespace MacroTools.Cheats
       var y = WaygateGetDestinationY(firstUnit);
       
       if (!WaygateIsActive(firstUnit))
-        return $"{firstUnit.GetName()} is not an active Waygate.";
+        return $"{GetUnitName(firstUnit)} is not an active Waygate.";
 
       PingMinimap(x, y, 10);
-      return $"Pinging {firstUnit.GetName()} Waygate destination.";
+      return $"Pinging {GetUnitName(firstUnit)} Waygate destination.";
     }
   }
 }

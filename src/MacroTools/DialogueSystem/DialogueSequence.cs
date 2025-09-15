@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MacroTools.Extensions;
 
 namespace MacroTools.DialogueSystem
 {
@@ -22,15 +21,17 @@ namespace MacroTools.DialogueSystem
     /// <inheritdoc />
     public void Play(player whichPlayer)
     {
-      CreateTrigger().AddAction(() =>
+      var trigger = CreateTrigger();
+      TriggerAddAction(trigger, () =>
       {
         foreach (var dialogue in _dialogues)
         {
           dialogue.Play(whichPlayer);
           TriggerSleepAction(dialogue.Length + 0.75f);
         }
-        GetTriggeringTrigger().Destroy();
-      }).Execute();
+        DestroyTrigger(GetTriggeringTrigger());
+      });
+      TriggerExecute(trigger);
     }
   }
 }

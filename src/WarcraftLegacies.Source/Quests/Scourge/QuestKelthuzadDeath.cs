@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.MetaBased;
@@ -50,7 +49,8 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       }
       else
       {
-        _kelthuzad.Unit?.AddExperience(4000);
+        if (_kelthuzad.Unit != null) 
+          AddHeroXP(_kelthuzad.Unit, 4000, true);
       }
     }
   }

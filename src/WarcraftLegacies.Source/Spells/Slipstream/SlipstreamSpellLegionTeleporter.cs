@@ -85,7 +85,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
     /// <inheritdoc/>
     public override void OnStartCast(unit caster, unit target, Point targetPoint)
     {
-      caster.IssueOrder("stop");
+      IssueImmediateOrder(caster, "stop");
       Refund(caster);
     }
 

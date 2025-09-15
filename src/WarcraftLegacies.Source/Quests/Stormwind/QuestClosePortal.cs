@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
@@ -58,7 +57,8 @@ namespace WarcraftLegacies.Source.Quests.Stormwind
         RemoveUnit(unit);
       }
       _unitsToRemove.Clear();
-      _khadgar.Unit?.AddExperience(10000);
+      if (_khadgar.Unit != null) 
+        AddHeroXP(_khadgar.Unit, 10000, true);
     }
   }
 }

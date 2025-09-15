@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.SpellSystem;
 using MacroTools.Utils;
+using WCSharp.Effects;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells
@@ -39,7 +40,7 @@ namespace WarcraftLegacies.Source.Spells
     {
         try
         {
-            var casterPlayer = caster.OwningPlayer();
+            var casterPlayer = GetOwningPlayer(caster);
             var casterPosition = caster.GetPosition();
 
           
@@ -72,8 +73,8 @@ namespace WarcraftLegacies.Source.Spells
                 return;
             }
 
-          
-            targetUnit.Kill();
+
+            KillUnit(targetUnit);
 
             var healthToRestore = targetHealth * HealthRestorePercent;
             caster.Heal(healthToRestore);
@@ -81,7 +82,7 @@ namespace WarcraftLegacies.Source.Spells
             if (!string.IsNullOrEmpty(HealEffect))
             {
                 var casterEffect = AddSpecialEffectTarget(HealEffect, caster, "origin");
-                casterEffect.SetLifespan();
+                EffectSystem.Add(casterEffect);
             }
 
             var manaToRestore = targetHealth * ManaRestorePercent;
@@ -91,8 +92,7 @@ namespace WarcraftLegacies.Source.Spells
             SetUnitState(caster, UNIT_STATE_MANA, Math.Min(currentMana + manaToRestore, maxMana));
 
             
-            AddSpecialEffect(KillEffect, targetUnit.GetPosition().X, targetUnit.GetPosition().Y)
-                .SetLifespan();
+            EffectSystem.Add(AddSpecialEffect(KillEffect, targetUnit.GetPosition().X, targetUnit.GetPosition().Y));
         }
         catch (Exception)
         {}
@@ -104,7 +104,7 @@ namespace WarcraftLegacies.Source.Spells
             return false;
 
         return UnitAlive(target) &&
-               target.OwningPlayer() == casterPlayer &&
+               GetOwningPlayer(target) == casterPlayer &&
                !target.IsResistant() &&
                !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
                !IsUnitType(target, UNIT_TYPE_ANCIENT) &&

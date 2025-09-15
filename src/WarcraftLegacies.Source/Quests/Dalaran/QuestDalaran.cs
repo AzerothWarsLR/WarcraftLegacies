@@ -50,9 +50,8 @@ namespace WarcraftLegacies.Source.Quests.Dalaran
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player
-        .RescueGroup(_rescueUnits)
-        .PlayMusicThematic("war3mapImported\\DalaranTheme.mp3");
+      completingFaction.Player.RescueGroup(_rescueUnits);
+      completingFaction.Player.PlayMusicThematic("war3mapImported\\DalaranTheme.mp3");
     }
   }
 }

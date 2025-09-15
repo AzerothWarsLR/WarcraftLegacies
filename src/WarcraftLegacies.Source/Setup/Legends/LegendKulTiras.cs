@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.LegendSystem;
+﻿using MacroTools.LegendSystem;
 using MacroTools.Systems;
 
 #pragma warning disable CS1591
@@ -51,8 +50,8 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         Unit = preplacedUnitSystem.GetUnit(UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS)
       };
-      Flagship.Unit.SetInvulnerable(true);
-      Flagship.Unit.PauseEx(true);
+      SetUnitInvulnerable(Flagship.Unit, true);
+      BlzPauseUnitEx(Flagship.Unit, true);
     }
     
     public void RegisterLegends()

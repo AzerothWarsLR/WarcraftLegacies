@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
+using WCSharp.Effects;
 
 namespace MacroTools.PassiveAbilities
 {
@@ -19,11 +20,10 @@ namespace MacroTools.PassiveAbilities
     {
       var triggerUnit = GetTriggerUnit();
       var position = triggerUnit.GetPosition();
-      GetTriggerUnit().Remove();
+      RemoveUnit(GetTriggerUnit());
       
       if (DeathEffectPath != null)
-        AddSpecialEffect(DeathEffectPath, position.X, position.Y)
-          .SetLifespan();
+        EffectSystem.Add(AddSpecialEffect(DeathEffectPath, position.X, position.Y));
     }
   }
 }

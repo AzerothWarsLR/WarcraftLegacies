@@ -18,11 +18,11 @@ namespace MacroTools.DummyCasters
     /// </summary>
     public void ChannelOnPoint(unit caster, int abilityId, string orderId, int level, Point targetPoint, float duration)
     {
-      CreateUnit(GetOwningPlayer(caster), _unitTypeId, targetPoint.X, targetPoint.Y, 0)
-        .AddAbility(abilityId)
-        .SetAbilityLevel(abilityId, level)
-        .IssueOrder(orderId)
-        .SetTimedLife(duration);
+      var newUnit = CreateUnit(GetOwningPlayer(caster), _unitTypeId, targetPoint.X, targetPoint.Y, 0);
+      newUnit.AddAbility(abilityId);
+      SetUnitAbilityLevel(newUnit, abilityId, level);
+      IssueImmediateOrder(newUnit, orderId);
+      newUnit.SetTimedLife(duration);
     }
 
     /// <summary>
@@ -30,10 +30,11 @@ namespace MacroTools.DummyCasters
     /// </summary>
     public void ChannelAtCaster(unit caster, int abilityId, string orderId, int level, float duration)
     {
-      CreateUnit(GetOwningPlayer(caster), _unitTypeId, caster.GetPosition().X, caster.GetPosition().Y, 0)
-        .AddAbility(abilityId)
-        .SetAbilityLevel(abilityId, level)
-        .IssueOrder(orderId);
+      var newUnit = CreateUnit(GetOwningPlayer(caster), _unitTypeId, caster.GetPosition().X, caster.GetPosition().Y, 0);
+      newUnit.AddAbility(abilityId);
+      SetUnitAbilityLevel(newUnit, abilityId, level);
+      IssueImmediateOrder(newUnit, orderId);
+      newUnit.SetTimedLife(duration);
     }
   }
 }

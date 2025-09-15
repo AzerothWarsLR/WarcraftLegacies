@@ -63,8 +63,8 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player.RescueGroup(_rescueUnits)
-      .PlayMusicThematic("war3mapImported\\SentinelTheme.mp3");
+      completingFaction.Player.RescueGroup(_rescueUnits);
+      completingFaction.Player?.PlayMusicThematic("war3mapImported\\SentinelTheme.mp3");
     }
   }
 }

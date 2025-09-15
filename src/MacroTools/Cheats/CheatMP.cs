@@ -1,5 +1,4 @@
 using MacroTools.CommandSystem;
-using MacroTools.Extensions;
 using MacroTools.Utils;
 
 namespace MacroTools.Cheats
@@ -25,7 +24,8 @@ namespace MacroTools.Cheats
         return "You must specify a valid integer as the first parameter.";
 
       foreach (var unit in GlobalGroup.EnumSelectedUnits(cheater)) 
-        unit.SetMana(mana);
+        SetUnitState(unit, UNIT_STATE_MANA, mana);
+
       return $"Setting mana of selected units to {mana}.";
     }
   }

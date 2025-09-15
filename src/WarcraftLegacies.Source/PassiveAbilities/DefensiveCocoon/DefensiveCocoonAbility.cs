@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
 using WarcraftLegacies.Source.PassiveAbilities.Vengeance;
 using WCSharp.Buffs;
@@ -62,14 +61,14 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
         Duration = Duration,
         EggId = EggId,
         ReviveEffect = ReviveEffect,
-        MaximumHitPoints = (int)(damaged.GetMaximumHitPoints() * MaximumHealthPercentage)
+        MaximumHitPoints = (int)(BlzGetUnitMaxHP(damaged) * MaximumHealthPercentage)
       };
       BuffSystem.Add(vengeanceBuff);
     }
 
 
     private bool ShouldBecomeEgg(int abilityLevel, unit target) =>
-      GetPlayerTechCount(target.OwningPlayer(), RequiredResearch, false) > 0 && 
+      GetPlayerTechCount(GetOwningPlayer(target), RequiredResearch, false) > 0 && 
       abilityLevel != 0 &&
       BlzGetUnitSkin(target) != EggId && 
       GetEventDamage() >= GetUnitState(target, UNIT_STATE_LIFE) &&

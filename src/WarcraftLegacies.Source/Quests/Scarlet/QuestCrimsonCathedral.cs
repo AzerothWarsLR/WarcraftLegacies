@@ -23,9 +23,11 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
       AddObjective(new ObjectiveQuestComplete(newhearthglen));
       AddObjective(new ObjectiveControlPoint(UNIT_N00F_SHOLAZAR_BASIN));
       ResearchId = UPGRADE_R04H_QUEST_COMPLETED_THE_CRIMSON_CATHEDRAL;
-      crimsonCathedral.Unit?
-        .SetInvulnerable(true)
-        .Show(false);
+      if (crimsonCathedral.Unit != null)
+      {
+        SetUnitInvulnerable(crimsonCathedral.Unit, true);
+        ShowUnit(crimsonCathedral.Unit, false);
+      }
     }
 
     /// <inheritdoc/>>

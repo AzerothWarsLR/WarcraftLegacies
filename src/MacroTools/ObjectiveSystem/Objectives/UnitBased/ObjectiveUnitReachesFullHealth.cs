@@ -19,18 +19,19 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     {
       _objectiveUnit = objectiveUnit;
       TargetWidget = objectiveUnit;
-      var hitPointRequirement = objectiveUnit.GetMaximumHitPoints();
-      Description = objectiveUnit.IsType(UNIT_TYPE_STRUCTURE)
+      var hitPointRequirement = BlzGetUnitMaxHP(objectiveUnit);
+      Description = IsUnitType(objectiveUnit, UNIT_TYPE_STRUCTURE)
         ? $"Repair {GetUnitName(objectiveUnit)} to {hitPointRequirement} hit points"
         : $"Bring {GetUnitName(objectiveUnit)} to {hitPointRequirement} hit points";
       DisplaysPosition = IsUnitType(objectiveUnit, UNIT_TYPE_STRUCTURE);
-      CreateTrigger()
-        .RegisterLifeEvent(objectiveUnit, UNIT_STATE_LIFE, GREATER_THAN, hitPointRequirement - 1)
-        .AddAction(() =>
-        {
-          Progress = QuestProgress.Complete;
-          GetTriggeringTrigger().Destroy();
-        });
+      var lifeTrigger = CreateTrigger();
+      float limitValue = hitPointRequirement - 1;
+      TriggerRegisterUnitStateEvent(lifeTrigger, objectiveUnit, UNIT_STATE_LIFE, GREATER_THAN, limitValue);
+      TriggerAddAction(lifeTrigger, () =>
+      {
+        Progress = QuestProgress.Complete;
+        DestroyTrigger(GetTriggeringTrigger());
+      });
 
       Position = _objectiveUnit.GetPosition();
     }

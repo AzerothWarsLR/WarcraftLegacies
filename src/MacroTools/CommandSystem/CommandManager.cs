@@ -32,37 +32,37 @@ namespace MacroTools.CommandSystem
     {
       _registeredCommands.Add(command);
       command.OnRegister();
-      CreateTrigger()
-        .RegisterSharedChatEvent($"{Prefix}{command.CommandText}", command.ExpectedParameterCount.Maximum == 0)
-        .AddAction(() =>
+      var trigger = CreateTrigger();
+      trigger.RegisterSharedChatEvent($"{Prefix}{command.CommandText}", command.ExpectedParameterCount.Maximum == 0);
+      TriggerAddAction(trigger, () =>
+      {
+        try
         {
-          try
+          if (command.Type == CommandType.Cheat && !TestMode.CheatCondition(GetTriggerPlayer()))
+            return;
+
+          var enteredChatString = GetEventPlayerChatString();
+          if (!EnteredCommandEndsWithSpaceOrNothing(command, enteredChatString)) 
+            return;
+
+          var parameters = SplitParameters(command, enteredChatString);
+
+          if (parameters.Length < command.ExpectedParameterCount.Minimum)
           {
-            if (command.Type == CommandType.Cheat && !TestMode.CheatCondition(GetTriggerPlayer()))
-              return;
-
-            var enteredChatString = GetEventPlayerChatString();
-            if (!EnteredCommandEndsWithSpaceOrNothing(command, enteredChatString)) 
-              return;
-
-            var parameters = SplitParameters(command, enteredChatString);
-
-            if (parameters.Length < command.ExpectedParameterCount.Minimum)
-            {
-              DisplayTextToPlayer(GetTriggerPlayer(), 0, 0,
-                $"|{CommandColor}{command.CommandText}:|r You must supply at least {command.ExpectedParameterCount.Minimum} parameters. If you're trying to use a parameter with multiple words, try enclosing it in quotes.");
-              return;
-            }
-
-            var message = command.Execute(GetTriggerPlayer(), parameters);
             DisplayTextToPlayer(GetTriggerPlayer(), 0, 0,
-              command.Type == CommandType.Cheat ? $"|{CommandColor}CHEAT:|r {message}" : $"|{CommandColor}{command.CommandText}:|r {message}");
+              $"|{CommandColor}{command.CommandText}:|r You must supply at least {command.ExpectedParameterCount.Minimum} parameters. If you're trying to use a parameter with multiple words, try enclosing it in quotes.");
+            return;
           }
-          catch (Exception ex)
-          {
-            Console.WriteLine($"Failed to execute command: {ex}");
-          }
-        });
+
+          var message = command.Execute(GetTriggerPlayer(), parameters);
+          DisplayTextToPlayer(GetTriggerPlayer(), 0, 0,
+            command.Type == CommandType.Cheat ? $"|{CommandColor}CHEAT:|r {message}" : $"|{CommandColor}{command.CommandText}:|r {message}");
+        }
+        catch (Exception ex)
+        {
+          Console.WriteLine($"Failed to execute command: {ex}");
+        }
+      });
     }
 
     /// <summary>Creates a dummy quest that players can read to see the available commands.</summary>

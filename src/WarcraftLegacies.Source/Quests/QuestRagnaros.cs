@@ -3,6 +3,7 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared;
 using WCSharp.Shared.Data;
@@ -26,10 +27,10 @@ namespace WarcraftLegacies.Source.Quests
       @"ReplaceableTextures\CommandButtons\BTNHeroAvatarOfFlame.blp")
     {
       _ragnaros = ragnaros;
-      _ragnarosSummoningPedestal = ragnarosSummmoningPedestal
-        .MakeCapturable()
-        .SetOwner(Player(PLAYER_NEUTRAL_PASSIVE))
-        .SetInvulnerable(true);
+      ragnarosSummmoningPedestal.MakeCapturable();
+      SetUnitOwner(ragnarosSummmoningPedestal,  Player(PLAYER_NEUTRAL_PASSIVE), true);
+      SetUnitInvulnerable(ragnarosSummmoningPedestal, true);
+      _ragnarosSummoningPedestal = ragnarosSummmoningPedestal;
 
       _heroInRectObjective =
         new ObjectiveHeroWithLevelInRect(10, Regions.RagnarosSummon, "the Portal to the Firelands");
@@ -47,20 +48,18 @@ namespace WarcraftLegacies.Source.Quests
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      _ragnarosSummoningPedestal
-        .SetOwner(_heroInRectObjective.CompletingUnit?.OwningPlayer() ?? Player(PLAYER_NEUTRAL_AGGRESSIVE))
-        .SetInvulnerable(false);
+      SetUnitOwner(_ragnarosSummoningPedestal, GetOwningPlayer(_heroInRectObjective.CompletingUnit) ?? Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
+      SetUnitInvulnerable(_ragnarosSummoningPedestal, false);
     }
 
     private void OnCastSummonSpell()
     {
       var ragnarosSummonPoint = new Point(12332, -10597);
       _ragnaros.ForceCreate(Player(PLAYER_NEUTRAL_AGGRESSIVE), ragnarosSummonPoint, 320);
-      AddSpecialEffect(@"Abilities\Spells\Other\BreathOfFire\BreathOfFireMissile.mdl", ragnarosSummonPoint.X,
-          ragnarosSummonPoint.Y)
-        .SetScale(2)
-        .SetLifespan(1);
-      _ragnarosSummoningPedestal.Kill();
+      var effect = AddSpecialEffect(@"Abilities\Spells\Other\BreathOfFire\BreathOfFireMissile.mdl", ragnarosSummonPoint.X, ragnarosSummonPoint.Y);
+      BlzSetSpecialEffectScale(effect, 2);
+      EffectSystem.Add(effect, 1);
+      KillUnit(_ragnarosSummoningPedestal);
 
       foreach (var player in Util.EnumeratePlayers())
         player.DisplayLegendaryHeroSummoned(_ragnaros,

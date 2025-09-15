@@ -67,6 +67,6 @@ namespace WarcraftLegacies.Source.Quests.Gilneas
       rescuer.RescueGroup(_rescueUnits);
     }
 
-    private static bool RescuableFilter(unit filterUnit) => filterUnit.GetTypeId() != UNIT_O05Q_GREYMANETOWER_GILNEAS_REAL_TOWER;
+    private static bool RescuableFilter(unit filterUnit) => GetUnitTypeId(filterUnit) != UNIT_O05Q_GREYMANETOWER_GILNEAS_REAL_TOWER;
   }
 }

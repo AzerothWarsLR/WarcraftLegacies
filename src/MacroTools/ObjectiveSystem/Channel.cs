@@ -56,16 +56,16 @@ namespace MacroTools.ObjectiveSystem
 
       _position = position;
 
-      caster.SetPosition(_position)
-        .PauseEx(true)
-        .SetAnimation("channel")
-        .SetFacingEx(facing)
-        .SetInvulnerable(false);
-      _sfxProgress = AddSpecialEffect(ProgressEffect, GetUnitX(caster), GetUnitY(caster))
-        .SetTimeScale(10 / (float)duration)
-        .SetColor(caster.OwningPlayer())
-        .SetScale(ProgressScale)
-        .SetHeight(ProgressHeight + Environment.GetPositionZ(position));
+      caster.SetPosition(_position);
+      BlzPauseUnitEx(caster, true);
+      SetUnitAnimation(caster, "channel");
+      BlzSetUnitFacingEx(caster, facing);
+      SetUnitInvulnerable(caster, false);
+      _sfxProgress = AddSpecialEffect(ProgressEffect, GetUnitX(caster), GetUnitY(caster));
+      BlzSetSpecialEffectTimeScale(_sfxProgress, 10 / (float)duration);
+      BlzSetSpecialEffectColorByPlayer(_sfxProgress, GetOwningPlayer(caster));
+      BlzSetSpecialEffectScale(_sfxProgress, ProgressScale);
+      BlzSetSpecialEffectHeight(_sfxProgress, ProgressHeight + Environment.GetPositionZ(position));
       _sfx = AddSpecialEffect(Effect, GetUnitX(caster), GetUnitY(caster));
 
       if (timerDialogTitle != null)
@@ -77,26 +77,28 @@ namespace MacroTools.ObjectiveSystem
         TimerDialogDisplay(_channelingDialog, true);
       }
 
-      _periodictimer = CreateTimer().Start(Period, true, Periodic);
+      _periodictimer = CreateTimer();
+      TimerStart(_periodictimer, Period, true, Periodic);
     }
 
     /// <inheritdoc />
     public void Dispose()
     {
-      _sfxProgress
-        .SetPosition(new Point(-100000, -100000)) //Has no death animation so needs to be moved off the map
-        .Destroy();
-      _sfx.Destroy();
-      _channelingTimer?.Destroy();
-      _periodictimer.Destroy();
+      BlzSetSpecialEffectPosition(_sfxProgress, -100000, -100000, 0); //Has no death animation so needs to be moved off the map
+      DestroyEffect(_sfxProgress);
+      DestroyEffect(_sfx);
+      if (_channelingTimer != null) 
+        DestroyTimer(_channelingTimer);
+
+      DestroyTimer(_periodictimer);
       DestroyTimerDialog(_channelingDialog);
     }
     
     private void End(bool finishedWithoutInterruption)
     {
-      _caster.PauseEx(false);
-      if (finishedWithoutInterruption)
-        _caster.SetAnimation("spell");
+      BlzPauseUnitEx(_caster, false);
+      if (finishedWithoutInterruption) 
+        SetUnitAnimation(_caster, "spell");
 
       if (UnitAlive(_caster)) 
         QueueUnitAnimation(_caster, "stand");

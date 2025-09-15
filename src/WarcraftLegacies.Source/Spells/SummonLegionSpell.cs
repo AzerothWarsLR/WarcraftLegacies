@@ -19,9 +19,9 @@ namespace WarcraftLegacies.Source.Spells
       if (InstanceSystem.GetPointInstance(caster.GetPosition()) == null)
         return;
 
-      CreateTimer().Start(1f, false, () =>
+      TimerStart(CreateTimer(), 1f, false, () =>
       {
-        caster.IssueOrder("stop");
+        IssueImmediateOrder(caster, "stop");
         DestroyTimer(GetExpiredTimer());
       });
     }

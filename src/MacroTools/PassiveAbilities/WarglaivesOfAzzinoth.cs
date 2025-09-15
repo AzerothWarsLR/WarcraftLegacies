@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Utils;
+using WCSharp.Effects;
 
 namespace MacroTools.PassiveAbilities
 {
@@ -81,15 +82,15 @@ namespace MacroTools.PassiveAbilities
         if (!BlzGetEventIsAttack() || GetUnitAbilityLevel(caster, AbilityTypeId) == 0)
           return;
         var target = GetTriggerUnit();
-        
-        AddSpecialEffect(Effect, GetUnitX(target), GetUnitY(target))
-          .SetScale(EffectScale)
-          .SetYaw(GetUnitFacing(caster) * MathEx.DegToRad)
-          .SetLifespan();
+
+        var effect = AddSpecialEffect(Effect, GetUnitX(target), GetUnitY(target));
+        BlzSetSpecialEffectScale(effect, EffectScale);
+        BlzSetSpecialEffectYaw(effect, GetUnitFacing(caster) * MathEx.DegToRad);
+        EffectSystem.Add(effect);
 
         foreach (var nearbyUnit in GlobalGroup.EnumUnitsInRange(target.GetPosition(), Radius))
         {
-          if (IsUnitAlly(nearbyUnit, caster.OwningPlayer()) || !UnitAlive(nearbyUnit) || BlzIsUnitInvulnerable(nearbyUnit) ||
+          if (IsUnitAlly(nearbyUnit, GetOwningPlayer(caster)) || !UnitAlive(nearbyUnit) || BlzIsUnitInvulnerable(nearbyUnit) ||
               IsUnitType(nearbyUnit, UNIT_TYPE_STRUCTURE) || IsUnitType(nearbyUnit, UNIT_TYPE_ANCIENT))
             continue;
 

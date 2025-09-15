@@ -26,11 +26,11 @@ namespace WarcraftLegacies.Source.Spells
     /// <inheritdoc />
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      var oilPower = GetTriggerUnit().OwningPlayer().GetFaction()?.GetPowerByType<OilPower>();
+      var oilPower = GetOwningPlayer(GetTriggerUnit()).GetFaction()?.GetPowerByType<OilPower>();
       if (oilPower == null) 
         return;
       foreach (var oilDeposit in oilPower.GetAllOilPools())
-        caster.OwningPlayer().PingMinimapSimple(oilDeposit.Position.X, oilDeposit.Position.Y, Duration);
+        GetOwningPlayer(caster).PingMinimapSimple(oilDeposit.Position.X, oilDeposit.Position.Y, Duration);
     }
   }
 }

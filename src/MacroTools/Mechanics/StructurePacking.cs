@@ -56,7 +56,7 @@ namespace MacroTools.Mechanics
 
     private void OnTrainUnitType()
     {
-      if (GetTrainedUnit().GetTypeId() != _packedUnitId)
+      if (GetUnitTypeId(GetTrainedUnit()) != _packedUnitId)
         return;
       PackBuilding(GetTriggerUnit(), GetTrainedUnit());
       RemoveUnit(GetTriggerUnit());
@@ -65,7 +65,9 @@ namespace MacroTools.Mechanics
     private static void OnUnitTypeCastSpell()
     {
       GetTriggerUnit().SetTimedLife(0.01f);
-      CreateTrigger().RegisterUnitEvent(GetTriggerUnit(), EVENT_UNIT_DEATH).AddAction(() =>
+      var deathTrigger = CreateTrigger();
+      TriggerRegisterUnitEvent(deathTrigger, GetTriggerUnit(), EVENT_UNIT_DEATH);
+      TriggerAddAction(deathTrigger, () =>
       {
         RemoveUnit(GetTriggerUnit());
         DestroyTrigger(GetTriggeringTrigger());

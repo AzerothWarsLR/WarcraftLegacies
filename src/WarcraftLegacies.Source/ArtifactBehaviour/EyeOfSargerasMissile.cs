@@ -1,4 +1,5 @@
 ﻿using MacroTools.Extensions;
+using WCSharp.Effects;
 using WCSharp.Missiles;
 
 namespace WarcraftLegacies.Source.ArtifactBehaviour
@@ -10,7 +11,7 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
   {
     private readonly item _eyeOfSargeras;
     private bool _impacted;
-    private const string ImpactEffect = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl";
+    private const string ImpactEffectPath = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl";
 
     /// <summary>
     /// Initializes a new instance of the <see cref="EyeOfSargerasMissile"/> class.
@@ -21,7 +22,8 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
       EffectScale = 1.5f;
       Arc = 0.3f;
       Speed = 700;
-      _eyeOfSargeras = eyeOfSargeras.SetPosition(20229f, 24244);
+      _eyeOfSargeras = eyeOfSargeras;
+      SetItemPosition(_eyeOfSargeras, 20229f, 24244);
       CollisionRadius = 100;
       Active = true;
       CasterLaunchZ = 50;
@@ -33,24 +35,23 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
     {
       if (!UnitAlive(Target)) 
         return;
-      
-      Target
-        .AddAbility(ABILITY_A01Y_INVENTORY_DUMMY_DROP_ARTIFACT)
-        .AddItemSafe(_eyeOfSargeras);
+
+      Target.AddAbility(ABILITY_A01Y_INVENTORY_DUMMY_DROP_ARTIFACT);
+      Target.AddItemSafe(_eyeOfSargeras);
       _impacted = true;
-        
-      AddSpecialEffect(ImpactEffect, GetUnitX(Target), GetUnitY(Target))
-        .SetScale(2)
-        .SetLifespan(1);
+
+      var impactEffect = AddSpecialEffect(ImpactEffectPath, GetUnitX(Target), GetUnitY(Target));
+      BlzSetSpecialEffectScale(impactEffect, 2);
+      EffectSystem.Add(impactEffect, 1);
       
       var eyeEffect = AddSpecialEffectTarget(@"Doodads\Cinematic\EyeOfSargeras\EyeOfSargeras.mdl", Target, "overhead");
-      CreateTrigger()
-        .RegisterUnitEvent(Target, EVENT_UNIT_DEATH)
-        .AddAction(() =>
-        {
-          eyeEffect.Destroy();
-          DestroyTrigger(GetTriggeringTrigger());
-        });
+      var deathTrigger = CreateTrigger();
+      TriggerRegisterUnitEvent(deathTrigger, Target, EVENT_UNIT_DEATH);
+      TriggerAddAction(deathTrigger, () =>
+      {
+        DestroyEffect(eyeEffect);
+        DestroyTrigger(GetTriggeringTrigger());
+      });
     }
 
     /// <inheritdoc />
@@ -59,10 +60,10 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
       if (_impacted) 
         return;
       
-      _eyeOfSargeras.SetPosition(MissileX, MissileY);
-      AddSpecialEffect(ImpactEffect, MissileX, MissileY)
-        .SetScale(2)
-        .SetLifespan(1);
+      SetItemPosition(_eyeOfSargeras, MissileX, MissileY);
+      var impactEffect = AddSpecialEffect(ImpactEffectPath, MissileX, MissileY);
+      BlzSetSpecialEffectScale(impactEffect, 2);
+      EffectSystem.Add(impactEffect, 1);
     }
   }
 }

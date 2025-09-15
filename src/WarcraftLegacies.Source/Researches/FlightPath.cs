@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.ResearchSystems;
 using MacroTools.Systems;
 using WCSharp.Events;
@@ -14,46 +13,51 @@ namespace WarcraftLegacies.Source.Researches
   public sealed class FlightPath : Research
   {
     private readonly Faction _frostwolf;
-    private const int ResearchId = UPGRADE_R09N_FLIGHT_PATH_WARSONG; // Rename if needed to match Frostwolf context
+    private const int ResearchId = UPGRADE_R09N_FLIGHT_PATH_WARSONG;
     private static unit? _flightToOrgrimmar;
     private static unit? _flightToThunderBluff;
     private static bool _researched;
 
     /// <inheritdoc />
-    public FlightPath(Faction frostwolf, int researchTypeId, int goldCost, PreplacedUnitSystem preplacedUnitSystem) : base(researchTypeId, goldCost)
+    public FlightPath(Faction frostwolf, int researchTypeId, int goldCost, PreplacedUnitSystem preplacedUnitSystem) 
+      : base(researchTypeId, goldCost)
     {
       _frostwolf = frostwolf;
       var orgrimmarLocation = new Point(-9704, -858);
       var thunderbluffLocation = new Point(-14445, -4042);
-      _flightToOrgrimmar = preplacedUnitSystem.GetUnit(UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, thunderbluffLocation);
-      _flightToThunderBluff = preplacedUnitSystem.GetUnit(UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, orgrimmarLocation);
+      _flightToOrgrimmar = preplacedUnitSystem.GetUnit(
+        UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, thunderbluffLocation);
+      _flightToThunderBluff = preplacedUnitSystem.GetUnit(
+        UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, orgrimmarLocation);
     }
 
     /// <inheritdoc />
     public override void OnResearch(player researchingPlayer)
     {
       if (_researched)
-      {
         return;
-      }
       
       var recipient = _frostwolf.Player;
       if (recipient == null)
       {
-        _flightToOrgrimmar?.Kill();
-        _flightToThunderBluff?.Kill();
+        if (_flightToOrgrimmar != null) KillUnit(_flightToOrgrimmar);
+        if (_flightToThunderBluff != null) KillUnit(_flightToThunderBluff);
         return;
       }
 
-      _flightToOrgrimmar?
-        .SetOwner(recipient)
-        .SetWaygateDestination(Regions.OrgrimmarFlight.Center)
-        .SetInvulnerable(false);
+      if (_flightToOrgrimmar != null)
+      {
+        SetUnitOwner(_flightToOrgrimmar, recipient, true);
+        WaygateSetDestination(_flightToOrgrimmar, Regions.OrgrimmarFlight.Center.X, Regions.ThunderbluffFlight.Center.Y);
+        SetUnitInvulnerable(_flightToOrgrimmar, false);
+      }
 
-      _flightToThunderBluff?
-        .SetOwner(recipient)
-        .SetWaygateDestination(Regions.ThunderbluffFlight.Center)
-        .SetInvulnerable(false);
+      if (_flightToThunderBluff != null)
+      {
+        SetUnitOwner(_flightToThunderBluff, recipient, true);
+        WaygateSetDestination(_flightToThunderBluff, Regions.ThunderbluffFlight.Center.X, Regions.ThunderbluffFlight.Center.Y);
+        SetUnitInvulnerable(_flightToThunderBluff, false);
+      }
 
       _frostwolf.SetObjectLevel(ResearchId, 1);
       _researched = true;
@@ -62,8 +66,13 @@ namespace WarcraftLegacies.Source.Researches
     /// <inheritdoc />
     public override void OnRegister()
     {
-      PlayerUnitEvents.Register(UnitEvent.Dies, () => { _flightToThunderBluff?.Kill(); }, _flightToOrgrimmar);
-      PlayerUnitEvents.Register(UnitEvent.Dies, () => { _flightToOrgrimmar?.Kill(); }, _flightToThunderBluff);
+      PlayerUnitEvents.Register(UnitEvent.Dies, 
+        () => { if (_flightToThunderBluff != null) KillUnit(_flightToThunderBluff); }, 
+        _flightToOrgrimmar);
+
+      PlayerUnitEvents.Register(UnitEvent.Dies, 
+        () => { if (_flightToOrgrimmar != null) KillUnit(_flightToOrgrimmar); }, 
+        _flightToThunderBluff);
     }
   }
 }

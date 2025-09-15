@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using MacroTools.Extensions;
 using MacroTools.Shared;
 
 namespace MacroTools.Systems
@@ -46,7 +45,7 @@ namespace MacroTools.Systems
     /// <returns>True if the unit has a <see cref="UnitType"/>.</returns>
     public static bool TryGetFromHandle(unit whichUnit, [NotNullWhen(true)] out UnitType? unitType)
     {
-      unitType = ById.TryGetValue(whichUnit.GetTypeId(), out var value) ? value : null;
+      unitType = ById.TryGetValue(GetUnitTypeId(whichUnit), out var value) ? value : null;
       return value != null;
     }
 

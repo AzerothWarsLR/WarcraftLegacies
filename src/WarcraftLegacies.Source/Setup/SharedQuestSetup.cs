@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using MacroTools.ArtifactSystem;
-using MacroTools.Extensions;
 using MacroTools.QuestSystem;
 using MacroTools.Systems;
 using WarcraftLegacies.Source.GameLogic;
@@ -35,8 +34,12 @@ namespace WarcraftLegacies.Source.Setup
     
     private static QuestDragonsOfNightmare CreateDragonsOfNightmareQuest(PreplacedUnitSystem preplacedUnitSystem)
     {
-      var waygateOne = preplacedUnitSystem.GetUnit(UNIT_N07F_EMERALD_PORTAL_DRAGON_PORTALS, Regions.FeralasEmeraldPortal.Center).Show(false);
-      var waygateTwo = preplacedUnitSystem.GetUnit(UNIT_N07F_EMERALD_PORTAL_DRAGON_PORTALS, Regions.AshenvaleEmeraldPortal.Center).Show(false);
+      unit waygateOne = preplacedUnitSystem.GetUnit(UNIT_N07F_EMERALD_PORTAL_DRAGON_PORTALS, Regions.FeralasEmeraldPortal.Center);
+      ShowUnit(waygateOne, false);
+      
+      unit waygateTwo = preplacedUnitSystem.GetUnit(UNIT_N07F_EMERALD_PORTAL_DRAGON_PORTALS, Regions.AshenvaleEmeraldPortal.Center);
+      ShowUnit(waygateTwo, false);
+      
       var dragonEk = preplacedUnitSystem.GetUnit(UNIT_N04X_YSONDRE);
       var dragonKalimdor = preplacedUnitSystem.GetUnit(UNIT_N04S_TAERAR);
       return new QuestDragonsOfNightmare(dragonKalimdor, dragonEk, "Feralas", "Ashenvale", waygateOne, waygateTwo, Regions.AshenvaleEmeraldPortal, Regions.FeralasEmeraldPortal, "BTNWarpPortalGreen");

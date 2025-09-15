@@ -20,7 +20,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     /// <param name="caster">The caster that must cast the spell.</param>
     public ObjectiveCastSpellFromUnit(int spellId, unit caster)
     {
-      Description = $"Cast {GetObjectName(spellId)} from {caster.GetName()}";
+      Description = $"Cast {GetObjectName(spellId)} from {GetUnitName(caster)}";
       TargetWidget = caster;
       DisplaysPosition = true;
       _spellId = spellId;
@@ -33,7 +33,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     {
       PlayerUnitEvents.Register(UnitEvent.SpellEffect, () =>
       {
-        if (GetSpellAbilityId() == _spellId && IsPlayerOnSameTeamAsAnyEligibleFaction(_caster.OwningPlayer()))
+        if (GetSpellAbilityId() == _spellId && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_caster)))
           Progress = QuestProgress.Complete;
       }, _caster);
     }

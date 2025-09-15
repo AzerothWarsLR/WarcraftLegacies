@@ -126,7 +126,7 @@ namespace WarcraftLegacies.Source.Powers
         Delay.Add(() =>
         {
           SetUnitState(caster, UNIT_STATE_MANA, GetUnitState(caster, UNIT_STATE_MANA) + manaRefund);
-          GetExpiredTimer().Destroy();
+          DestroyTimer(GetExpiredTimer());
         });
       }
       else

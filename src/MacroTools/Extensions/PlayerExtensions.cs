@@ -22,11 +22,9 @@ namespace MacroTools.Extensions
     /// <summary>
     /// Set the number of extra <see cref="ControlPoint.ControlLevel"/>s the player gets each turn.
     /// </summary>
-    /// <returns></returns>
-    public static player SetControlLevelPerTurnBonus(this player whichPlayer, float value)
+    public static void SetControlLevelPerTurnBonus(this player whichPlayer, float value)
     {
       PlayerData.ByHandle(whichPlayer).ControlLevelPerTurnBonus = value;
-      return whichPlayer;
     }
 
     /// <summary>
@@ -41,12 +39,10 @@ namespace MacroTools.Extensions
     /// <param name="whichPlayer">Who to display the ping to.</param>
     /// <param name="position">Where to ping.</param>
     /// <param name="duration">How long the ping should last.</param>
-    /// <returns>The same player that was passed in.</returns>
-    public static player PingLocation(this player whichPlayer, Point position, float duration)
+    public static void PingLocation(this player whichPlayer, Point position, float duration)
     {
       if (GetLocalPlayer() == whichPlayer)
         PingMinimap(position.X, position.Y, duration);
-      return whichPlayer;
     }
 
     /// <summary>
@@ -94,19 +90,13 @@ namespace MacroTools.Extensions
     /// </summary>
     /// <param name="newOwningPlayer">The player who should own the units after being rescued</param>
     /// <param name="units">The units to rescue.</param>
-    public static player RescueGroup(this player? newOwningPlayer, List<unit> units)
+    public static void RescueGroup(this player? newOwningPlayer, List<unit> units)
     {
       newOwningPlayer ??= Player(PLAYER_NEUTRAL_AGGRESSIVE);
 
       foreach (var unit in units)
         unit.Rescue(newOwningPlayer);
-
-      return newOwningPlayer;
     }
-
-    /// <summary>Determines whether or not the player can see or use the specified ability.</summary>
-    internal static void SetAbilityAvailability(this player player, int ability, bool value) =>
-      SetPlayerAbilityAvailable(player, ability, value);
 
     internal static void SetObjectLevel(this player player, int objectId, int level) =>
       PlayerData.ByHandle(player).SetObjectLevel(objectId, level);
@@ -117,10 +107,9 @@ namespace MacroTools.Extensions
     internal static void SetObjectLimit(this player player, int objectId, int limit) =>
       PlayerData.ByHandle(player).SetObjectLimit(objectId, limit);
 
-    internal static void SetColor(this player whichPlayer, playercolor color, bool changeExisting)
+    internal static void SetColorAndChangeExisting(this player whichPlayer, playercolor color)
     {
       SetPlayerColor(whichPlayer, color);
-      if (!changeExisting) return;
       foreach (var unit in GlobalGroup.EnumUnitsOfPlayer(whichPlayer))
         SetUnitColor(unit, color);
     }
@@ -132,40 +121,35 @@ namespace MacroTools.Extensions
     /// Safely removes all of the player's units.
     /// <para>Units that cannot be safely removed are instead turned hostile.</para>
     /// </summary>
-    public static player RemoveAllUnits(this player whichPlayer)
+    public static void RemoveAllUnits(this player whichPlayer)
     {
+      var hostilePlayer = Player(PLAYER_NEUTRAL_AGGRESSIVE);
       foreach (var unit in GlobalGroup
                  .EnumUnitsOfPlayer(whichPlayer))
       {
         if (unit.IsRemovable())
           unit.SafelyRemove();
         else
-          unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+          SetUnitOwner(unit, hostilePlayer, true);
       }
-
-      return whichPlayer;
     }
 
     /// <summary>
     /// Selects the specified unit for the player.
     /// </summary>
-    public static player Select(this player whichPlayer, unit whichUnit)
+    public static void Select(this player whichPlayer, unit whichUnit)
     {
       if (GetLocalPlayer() == whichPlayer)
         SelectUnit(whichUnit, true);
-      
-      return whichPlayer;
     }
 
     /// <summary>
     /// Flashes the quest menu for the player.
     /// </summary>
-    public static player FlashQuests(this player whichPlayer)
+    public static void FlashQuests(this player whichPlayer)
     {
       if (GetLocalPlayer() == whichPlayer)
         FlashQuestDialogButton();
-
-      return whichPlayer;
     }
 
     /// <summary>
