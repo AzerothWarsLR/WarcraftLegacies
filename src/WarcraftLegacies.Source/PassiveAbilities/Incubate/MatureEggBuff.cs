@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using WCSharp.Buffs;
+using WCSharp.Effects;
 
 namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
 {
@@ -20,15 +21,15 @@ namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
     /// <inheritdoc />
     public override void OnApply()
     {
+      BlzSetUnitName(Target, "Mature Egg");
+      SetUnitVertexColor(Target, 255, 255, 255, 255);
       Target
-        .SetName("Mature Egg")
-        .SetColor(255, 255, 255, 255)
         .AddAbility(ABILITY_ZBBS_HATCH_INCUBATE);
 
-      AddSpecialEffect(@"Abilities\Spells\Items\AIem\AIemTarget.mdl", GetUnitX(Target), GetUnitY(Target))
-        .SetColor(0, 255, 0)
-        .SetScale(0.5f)
-        .SetLifespan();
+      var effect = AddSpecialEffect(@"Abilities\Spells\Items\AIem\AIemTarget.mdl", GetUnitX(Target), GetUnitY(Target));
+      BlzSetSpecialEffectColor(effect, 0, 255, 0);
+      BlzSetSpecialEffectScale(effect, 0.5f);
+      EffectSystem.Add(effect);
     }
 
     /// <inheritdoc />
@@ -38,7 +39,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
       if (rallyPoint.X == 0 && rallyPoint.Y == 0)
         rallyPoint = Target.GetPosition();
       
-      CreateUnit(Target.OwningPlayer(), HatchedUnitTypeId, GetUnitX(Target), GetUnitY(Target), 270)
+      CreateUnit(GetOwningPlayer(Target), HatchedUnitTypeId, GetUnitX(Target), GetUnitY(Target), 270)
         .IssueOrder("attack", rallyPoint);
     }
   }

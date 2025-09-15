@@ -45,8 +45,10 @@ namespace WarcraftLegacies.Source.Quests
       _waygateTwo = waygateTwo;
       _wayGateOneDestination = wayGateOneDestination;
       _wayGateTwoDestination = wayGateTwoDestination;
-      _nightmareDragonKalimdor = nightmareDragonKalimdor.Show(false);
-      _nightmareDragonEk = nightmareDragonEk.Show(false);
+      ShowUnit(nightmareDragonKalimdor, false);
+      _nightmareDragonKalimdor = nightmareDragonKalimdor;
+      ShowUnit(nightmareDragonEk, false);
+      _nightmareDragonEk = nightmareDragonEk;
       _nightmareDragonKalimdor = nightmareDragonKalimdor;
       _nightmareDragonEk = nightmareDragonEk;
       _portalOneLocation = portalOneLocation;
@@ -54,7 +56,8 @@ namespace WarcraftLegacies.Source.Quests
       AddObjective(new ObjectiveKillUnit(nightmareDragonKalimdor));
       AddObjective(new ObjectiveKillUnit(nightmareDragonEk));
       AddObjective(new ObjectiveTime(360));
-      _timer = CreateTimer().Start(360, false, OnTimeElapsed);
+      _timer = CreateTimer();
+      TimerStart(_timer, 360, false, OnTimeElapsed);
       IsFactionQuest = false;
     }
 
@@ -66,8 +69,9 @@ namespace WarcraftLegacies.Source.Quests
         DisplayTextToPlayer(player, 0, 0, $"\n|cff590ff7 NIGHTMARE DRAGONS SPAWNED \n|r {_nightmareDragonKalimdor.GetProperName()} and {_nightmareDragonEk.GetProperName()} have appeared in {_portalOneLocation} and {_portalTwoLocation}.");
         StartSound(SoundLibrary.Warning);
       }
-      _nightmareDragonEk.Show(true);
-      _nightmareDragonKalimdor.Show(true);
+
+      ShowUnit(_nightmareDragonEk, true);
+      ShowUnit(_nightmareDragonKalimdor, true);
     }
     
     /// <inheritdoc/>
@@ -79,11 +83,11 @@ namespace WarcraftLegacies.Source.Quests
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
+      ShowUnit(_waygateOne, true);
       _waygateOne
-     .Show(true)
      .SetWaygateDestination(_wayGateOneDestination.Center);
+      ShowUnit(_waygateTwo, true);
       _waygateTwo
-        .Show(true)
         .SetWaygateDestination(_wayGateTwoDestination.Center);
     }
   }

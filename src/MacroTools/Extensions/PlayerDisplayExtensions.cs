@@ -1,7 +1,6 @@
 ﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.Sound;
-using static War3Api.Common;
 
 namespace MacroTools.Extensions
 {

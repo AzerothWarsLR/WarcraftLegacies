@@ -3,6 +3,7 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
+using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared;
 using WCSharp.Shared.Data;
@@ -26,10 +27,10 @@ namespace WarcraftLegacies.Source.Quests
       @"ReplaceableTextures\CommandButtons\BTNYogg-saronIcon.blp")
     {
       _yoggsaron = yoggsaron;
-      _yoggsaronPrison = yoggsaronPrison
-        .MakeCapturable()
-        .SetOwner(Player(PLAYER_NEUTRAL_PASSIVE))
-        .SetInvulnerable(true);
+      yoggsaronPrison.MakeCapturable();
+      SetUnitOwner(yoggsaronPrison, Player(PLAYER_NEUTRAL_PASSIVE), true);
+      SetUnitInvulnerable(yoggsaronPrison, true);
+      _yoggsaronPrison = yoggsaronPrison;
 
       _heroInRectObjective =
         new ObjectiveHeroWithLevelInRect(14, Regions.YoggSaronPrison, "the Prison of Yogg-Saron");
@@ -47,20 +48,22 @@ namespace WarcraftLegacies.Source.Quests
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      _yoggsaronPrison
-        .SetOwner(_heroInRectObjective.CompletingUnit?.OwningPlayer() ?? Player(PLAYER_NEUTRAL_AGGRESSIVE))
-        .SetInvulnerable(false);
+      var newOwner = _heroInRectObjective.CompletingUnit == null
+        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+        : GetOwningPlayer(_heroInRectObjective.CompletingUnit);
+
+      SetUnitOwner(_yoggsaronPrison, newOwner, true);
+      SetUnitInvulnerable(_yoggsaronPrison, false);
     }
 
     private void OnCastSummonSpell()
     {
       var yoggsaronSummonPoint = new Point(3995, 23488);
       _yoggsaron.ForceCreate(Player(PLAYER_NEUTRAL_AGGRESSIVE), yoggsaronSummonPoint, 320);
-      AddSpecialEffect(@"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl", yoggsaronSummonPoint.X,
-          yoggsaronSummonPoint.Y)
-        .SetScale(2)
-        .SetLifespan(1);
-      _yoggsaronPrison.Kill();
+      var effect = AddSpecialEffect(@"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl", yoggsaronSummonPoint.X, yoggsaronSummonPoint.Y);
+      BlzSetSpecialEffectScale(effect, 2);
+      EffectSystem.Add(effect, 1);
+      KillUnit(_yoggsaronPrison);
 
       foreach (var player in Util.EnumeratePlayers())
         player.DisplayLegendaryHeroSummoned(_yoggsaron,

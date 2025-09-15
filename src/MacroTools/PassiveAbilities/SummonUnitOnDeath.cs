@@ -1,6 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
-using static War3Api.Common;
+using WCSharp.Effects;
 
 namespace MacroTools.PassiveAbilities
 {
@@ -43,17 +43,19 @@ namespace MacroTools.PassiveAbilities
     public void OnDeath()
     {
       var triggerUnit = GetTriggerUnit();
-      if (GetPlayerTechCount(triggerUnit.OwningPlayer(), RequiredResearch, false) == 0 || IsUnitType(triggerUnit, UNIT_TYPE_SUMMONED))
+      if (GetPlayerTechCount(GetOwningPlayer(triggerUnit), RequiredResearch, false) == 0 || IsUnitType(triggerUnit, UNIT_TYPE_SUMMONED))
         return;
       
       var pos = triggerUnit.GetPosition();
       for (var i = 0; i < SummonCount; i++)
-        CreateUnit(triggerUnit.OwningPlayer(), SummonUnitTypeId, pos.X, pos.Y, triggerUnit.GetFacing())
-          .AddType(UNIT_TYPE_SUMMONED)
-          .SetTimedLife(Duration);
-      AddSpecialEffect(SpecialEffectPath, pos.X, pos.Y)
-        .SetLifespan(1);
-      triggerUnit.Remove();
+      {
+        var summonedUnit = CreateUnit(GetOwningPlayer(triggerUnit), SummonUnitTypeId, pos.X, pos.Y, GetUnitFacing(triggerUnit));
+        UnitAddType(summonedUnit, UNIT_TYPE_SUMMONED);
+        summonedUnit.SetTimedLife(Duration);
+      }
+
+      EffectSystem.Add(AddSpecialEffect(SpecialEffectPath, pos.X, pos.Y), 1);
+      RemoveUnit(triggerUnit);
     }
   }
 }

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using MacroTools.Systems;
 using WCSharp.Events;
-using static War3Api.Common;
 
 namespace MacroTools.LegendSystem
 {

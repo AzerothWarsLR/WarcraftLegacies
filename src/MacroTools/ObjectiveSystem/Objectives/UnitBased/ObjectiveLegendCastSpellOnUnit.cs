@@ -1,8 +1,6 @@
-﻿using MacroTools.Extensions;
-using MacroTools.LegendSystem;
+﻿using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
 using WCSharp.Events;
-using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
 {
@@ -27,7 +25,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       _spellId = spellId;
       _target = target;
       PlayerUnitEvents.Register(SpellEvent.Effect, OnCast, spellId);
-      Description = $"{caster.Name} has casted {GetObjectName(spellId)} on {target.GetName()}";
+      Description = $"{caster.Name} has casted {GetObjectName(spellId)} on {GetUnitName(target)}";
     }
 
     private void OnCast()

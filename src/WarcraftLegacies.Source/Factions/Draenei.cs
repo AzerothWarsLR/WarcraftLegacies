@@ -19,8 +19,8 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    public Draenei(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("The Exodar",
-      new[] {PLAYER_COLOR_NAVY, PLAYER_COLOR_BLUE, PLAYER_COLOR_CYAN}, @"ReplaceableTextures\CommandButtons\BTNBOSSVelen.blp")
+    public Draenei(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
+      : base("The Exodar", PLAYER_COLOR_MINT, @"ReplaceableTextures\CommandButtons\BTNBOSSVelen.blp")
     {
       TraditionalTeam = TeamSetup.Kalimdor;
       _preplacedUnitSystem = preplacedUnitSystem;

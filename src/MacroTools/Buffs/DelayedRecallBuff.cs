@@ -3,7 +3,6 @@ using System.Linq;
 using MacroTools.Extensions;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 using Environment = MacroTools.Libraries.Environment;
 
 namespace MacroTools.Buffs
@@ -40,35 +39,44 @@ namespace MacroTools.Buffs
     /// <inheritdoc />
     public override void OnApply()
     {
-      foreach (var unit in UnitsToMove) 
-        unit.Show(false).SetInvulnerable(true);
+      foreach (var unit in UnitsToMove)
+      {
+        ShowUnit(unit, false);
+        SetUnitInvulnerable(unit, true);
+      }
 
       Effect = AddSpecialEffect(@"Abilities\Spells\Undead\Darksummoning\DarkSummonTarget.mdl", TargetPosition.X,
         TargetPosition.Y);
-      
-      _progressEffect = AddSpecialEffect("war3mapImported\\Progressbar10sec.mdx", TargetPosition.X, TargetPosition.Y)
-        .SetTimeScale(10 / Duration)
-        .SetColor(Caster.OwningPlayer())
-        .SetHeight(185f + Environment.GetPositionZ(TargetPosition));
+
+      _progressEffect = AddSpecialEffect("war3mapImported\\Progressbar10sec.mdx", TargetPosition.X, TargetPosition.Y);
+      BlzSetSpecialEffectTimeScale(_progressEffect, 10 / Duration);
+      BlzSetSpecialEffectColorByPlayer(_progressEffect, GetOwningPlayer(Caster));
+      BlzSetSpecialEffectHeight(_progressEffect, 185f + Environment.GetPositionZ(TargetPosition));
     }
 
     /// <inheritdoc />
+    /// <inheritdoc />
     public override void OnDispose()
     {
-      Effect?.Destroy();
-      _progressEffect?.Destroy();
-      
+      if (Effect != null) 
+        DestroyEffect(Effect);
+
+      if (_progressEffect != null) 
+        DestroyEffect(_progressEffect);
+
       if (!UnitAlive(Caster))
       {
         var amountToKill = (int)(UnitsToMove.Count * DeathPenalty);
         foreach (var unit in UnitsToMove.Take(amountToKill)) 
-          unit.Kill();
+          KillUnit(unit);
       }
       
-      foreach (var unit in UnitsToMove) 
-        unit.Show(true)
-          .SetPosition(TargetPosition)
-          .SetInvulnerable(false);
+      foreach (var unit in UnitsToMove)
+      {
+        ShowUnit(unit, true);
+        unit.SetPosition(TargetPosition);
+        SetUnitInvulnerable(unit, false);
+      }
     }
   }
 }

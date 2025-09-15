@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Quests.Goblin
       
       ResearchId = UPGRADE_R09Z_QUEST_COMPLETED_OFFSHORE_INVESTMENT;
       _rescueUnits = Regions.KezanUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures,
-        filterUnit => filterUnit.GetTypeId() != FourCC("ngme"));
+        filterUnit => GetUnitTypeId(filterUnit) != FourCC("ngme"));
     }
 
     /// <inheritdoc />
@@ -52,9 +52,8 @@ namespace WarcraftLegacies.Source.Quests.Goblin
     /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player
-        .RescueGroup(_rescueUnits)
-        .PlayMusicThematic("war3mapImported\\GoblinTheme.mp3");
+      completingFaction.Player.RescueGroup(_rescueUnits);
+      completingFaction.Player?.PlayMusicThematic("war3mapImported\\GoblinTheme.mp3");
     }
   }
 }

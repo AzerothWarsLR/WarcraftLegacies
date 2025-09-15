@@ -1,10 +1,8 @@
 ﻿using System.Linq;
-using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Utils;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
 {
@@ -32,7 +30,7 @@ namespace MacroTools.PassiveAbilities
     private void OnSpellCast()
     {
       var triggerUnit = GetTriggerUnit();
-      if (!IsWithinRangeOfAnyHero(triggerUnit.OwningPlayer(), new Point(GetSpellTargetX(), GetSpellTargetY()))) 
+      if (!IsWithinRangeOfAnyHero(GetOwningPlayer(triggerUnit), new Point(GetSpellTargetX(), GetSpellTargetY()))) 
         IssueImmediateOrder(triggerUnit, "stop");
     }
 
@@ -45,7 +43,7 @@ namespace MacroTools.PassiveAbilities
 
     private static bool IsAlliedHero(player caster, unit whichUnit)
     {
-      return whichUnit.IsType(UNIT_TYPE_HERO) && whichUnit.OwningPlayer() == caster && UnitAlive(whichUnit);
+      return IsUnitType(whichUnit, UNIT_TYPE_HERO) && GetOwningPlayer(whichUnit) == caster && UnitAlive(whichUnit);
     }
   }
 }

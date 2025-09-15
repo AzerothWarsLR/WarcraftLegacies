@@ -4,8 +4,8 @@ using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.SpellSystem;
 using MacroTools.Utils;
-using War3Api;
 using WCSharp.Buffs;
+using WCSharp.Effects;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells.HealingWavePlus
@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
             if (lastTarget != null)
             {
                 var triggerEffect = AddSpecialEffectTarget(TargetMarkEffect, lastTarget, "overhead");
-                triggerEffect.SetLifespan(DeathTriggerDuration);
+                EffectSystem.Add(triggerEffect, DeathTriggerDuration);
                 StartDeathTriggerTimer(lastTarget, caster, healedUnits, triggerEffect);
             }
         }
@@ -76,8 +76,8 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
             if (!string.IsNullOrEmpty(HealingEffect))
             {
                 var effect = AddSpecialEffectTarget(HealingEffect, target, "origin");
-                effect.SetScale(HealingEffectScale);
-                effect.SetLifespan();
+                BlzSetSpecialEffectScale(effect, HealingEffectScale);
+                EffectSystem.Add(effect);
             }
             _currentHealingModifier *= HealingReductionFactor;
         }
@@ -124,7 +124,7 @@ namespace WarcraftLegacies.Source.Spells.HealingWavePlus
         private void PerformSecondaryWave(unit caster, unit triggerPointUnit, HashSet<unit> healedUnits)
         {
             var triggerPoint = triggerPointUnit.GetPosition();
-            var lightningEffects = new List<Common.lightning>();
+            var lightningEffects = new List<lightning>();
             unit lastHealedUnit = null;
 
             var nearbyAllies = GlobalGroup.EnumUnitsInRange(triggerPoint, SecondaryWaveRadius)

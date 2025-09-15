@@ -1,7 +1,6 @@
 ﻿using MacroTools.Extensions;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace MacroTools.Mechanics.DemonGates
 {
@@ -28,7 +27,7 @@ namespace MacroTools.Mechanics.DemonGates
         var targetPosition = Target.GetPosition();
         var offsetPosition =
           WCSharp.Shared.Util.PositionWithPolarOffset(targetPosition.X, targetPosition.Y, SpawnDistance,
-            Target.GetFacing() + FacingOffset);
+            GetUnitFacing(Target) + FacingOffset);
         return new Point(offsetPosition.x, offsetPosition.y);
       }
     }

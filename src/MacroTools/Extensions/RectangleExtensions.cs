@@ -5,7 +5,6 @@ using MacroTools.FactionSystem;
 using MacroTools.Systems;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace MacroTools.Extensions
 {
@@ -60,20 +59,20 @@ namespace MacroTools.Extensions
 
       foreach (var unit in unitsInArea)
       {
-        if (unit.OwningPlayer() != Player(PLAYER_NEUTRAL_PASSIVE) || unit.GetTypeId() == FourCC("ngol"))
+        if (GetOwningPlayer(unit) != Player(PLAYER_NEUTRAL_PASSIVE) || GetUnitTypeId(unit) == FourCC("ngol"))
           continue;
 
         if (!unit.IsRemovable())
         {
-          unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+          SetUnitOwner(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
           continue;
         }
 
         if (unit.IsRemovable() && !BlzIsUnitInvulnerable(unit) &&
-            (cleanupType == NeutralPassiveCleanupType.RemoveUnits || unit.IsType(UNIT_TYPE_STRUCTURE)))
-          unit.Remove();
+            (cleanupType == NeutralPassiveCleanupType.RemoveUnits || IsUnitType(unit, UNIT_TYPE_STRUCTURE)))
+          RemoveUnit(unit);
         else
-          unit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+          SetUnitOwner(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
       }
     }
 
@@ -85,12 +84,8 @@ namespace MacroTools.Extensions
       var unitsInArea = GlobalGroup
         .EnumUnitsInRect(area);
       foreach (var unit in unitsInArea)
-      {
-        if (unit.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && unit.IsRemovable())
-        {
-          unit.Remove();
-        }
-      }
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && unit.IsRemovable()) 
+          RemoveUnit(unit);
     }
     
     /// <summary>
@@ -106,16 +101,18 @@ namespace MacroTools.Extensions
     {
       var group = GlobalGroup
         .EnumUnitsInRect(rectangle)
-        .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE) && filter.Invoke(x))
+        .Where(x => GetOwningPlayer(x) == Player(PLAYER_NEUTRAL_PASSIVE) && filter.Invoke(x))
         .ToList();
       foreach (var unit in group)
       {
         if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) && hideStructures && !IsUnitType(unit, UNIT_TYPE_ANCIENT) ||
             !IsUnitType(unit, UNIT_TYPE_STRUCTURE) && hideUnits)
-          unit.Show(false);
-        unit
-          .SetInvulnerable(true)
-          .PauseEx(true);
+        {
+          ShowUnit(unit, false);
+        }
+
+        SetUnitInvulnerable(unit, true);
+        BlzPauseUnitEx(unit, true);
       }
 
       return group;
@@ -136,7 +133,7 @@ namespace MacroTools.Extensions
 
       var unitsInRegion = GlobalGroup
         .EnumUnitsInRect(region) 
-        .Where(x => x.GetTypeId() != FourCC("ngol")) // exclude goldmines
+        .Where(x => GetUnitTypeId(x) != FourCC("ngol")) // exclude goldmines
         .Where(unit => IsUnitType(unit, UNIT_TYPE_STRUCTURE)); // Filter to include only structures
 
       foreach (var unit in unitsInRegion)

@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
@@ -41,10 +40,17 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-      _saiden.Unit?.AddExperience(ExperienceReward);
-      _renault.Unit?.AddExperience(ExperienceReward);
-      _sally.Unit?.AddExperience(ExperienceReward);
-      _brigitte.Unit?.AddExperience(ExperienceReward);
+      if (_saiden.Unit != null) 
+        AddHeroXP(_saiden.Unit, ExperienceReward, true);
+
+      if (_renault.Unit != null) 
+        AddHeroXP(_renault.Unit, ExperienceReward, true);
+
+      if (_sally.Unit != null) 
+        AddHeroXP(_sally.Unit, ExperienceReward, true);
+
+      if (_brigitte.Unit != null) 
+        AddHeroXP(_brigitte.Unit, ExperienceReward, true);
     }
 
     /// <inheritdoc/>

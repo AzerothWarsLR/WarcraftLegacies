@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
@@ -33,7 +32,8 @@ namespace WarcraftLegacies.Source.Quests.Scarlet
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-      _saiden.Unit?.AddExperience(ExperienceReward);
+      if (_saiden.Unit != null) 
+        AddHeroXP(_saiden.Unit, ExperienceReward, true);
     }
 
     /// <inheritdoc/>

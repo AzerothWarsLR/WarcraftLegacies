@@ -3,8 +3,8 @@ using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Setup;
+using WCSharp.Effects;
 using WCSharp.Events;
-using static War3Api.Common;
 
 namespace MacroTools.Powers
 {
@@ -47,15 +47,14 @@ namespace MacroTools.Powers
 
     private void OnDamage()
     {
-      if (!BlzGetEventIsAttack() || (ValidUnitTypes != null && !ValidUnitTypes.Contains(GetEventDamageSource().GetTypeId()))) 
+      if (!BlzGetEventIsAttack() || (ValidUnitTypes != null && !ValidUnitTypes.Contains(GetUnitTypeId(GetEventDamageSource())))) 
         return;
 
-      if (!IsHeroUnitId(GetEventDamageSource().GetTypeId()) && !(GetRandomReal(0, 1) < _damageChance)) 
+      if (!IsHeroUnitId(GetUnitTypeId(GetEventDamageSource())) && !(GetRandomReal(0, 1) < _damageChance)) 
         return;
       
       GetTriggerUnit().TakeDamage(GetEventDamageSource(), _damageDealt);
-      AddSpecialEffect(Effect, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit()))
-        .SetLifespan(1);
+      EffectSystem.Add(AddSpecialEffect(Effect, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit())), 1);
     }
   }
 }

@@ -24,16 +24,14 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
     private readonly AllLegendSetup _allLegendSetup;
     private readonly List<unit> _dalaranProtectors;
-    private readonly unit _gilneasGate;
 
     /// <inheritdoc />
     public Dalaran(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
-      : base("Dalaran", new[] {PLAYER_COLOR_PINK, PLAYER_COLOR_PEACH, PLAYER_COLOR_RED}, @"ReplaceableTextures\CommandButtons\BTNJaina.blp")
+      : base("Dalaran", PLAYER_COLOR_PINK, @"ReplaceableTextures\CommandButtons\BTNJaina.blp")
     {
       TraditionalTeam = TeamSetup.NorthAlliance;
       _artifactSetup = artifactSetup;
       _allLegendSetup = allLegendSetup;
-      _gilneasGate = preplacedUnitSystem.GetUnit(UNIT_H02K_GREYMANE_S_GATE_CLOSED);
       _dalaranProtectors = new List<unit>
       {
         preplacedUnitSystem.GetUnit(UNIT_N03G_VIOLET_TOWER_DALARAN, new Point(9084, 4979)),
@@ -80,12 +78,7 @@ namespace WarcraftLegacies.Source.Factions
         throw new ArgumentNullException(nameof(pickedFaction), "pickedFaction cannot be null.");
       FactionChoiceDialogPresenter.ReplaceRegionUnitsWithFactionEquivalents(Regions.Gilneas, pickedFaction);
     }
-    /// <inheritdoc />
-    public override void OnNotPicked()
-    {
-      base.OnNotPicked();
-    }
-      
+
     private void RegisterObjectLevels()
     {
       ModAbilityAvailability(ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, 1);

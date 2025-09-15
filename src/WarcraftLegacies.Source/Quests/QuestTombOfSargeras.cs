@@ -35,14 +35,16 @@ namespace WarcraftLegacies.Source.Quests
     {
       CreateRegion();
       _entrance = entrance;
-      guldanRemains.SetAnimation("death").SetInvulnerable(true);
+      SetUnitAnimation(guldanRemains, "death");
+      SetUnitInvulnerable(guldanRemains, true);
       AddObjective(new ObjectiveTime(900));
       _enterTombOfSargerasRegion =
         new ObjectiveAnyHeroWithLevelReachRect(10, Regions.Sargeras_Entrance, "the Tomb of Sargeras' entrance");
       AddObjective(_enterTombOfSargerasRegion);
       _preventAccessTriggers = CreatePreventAccessTriggers(interiorRects);
       HideUnitsInsideTomb(interiorRects);
-      _entranceDoor = entranceDoor.SetInvulnerable(true);
+      SetUnitInvulnerable(entranceDoor, true);
+      _entranceDoor = entranceDoor;
       IsFactionQuest = false;
     }
 
@@ -60,11 +62,11 @@ namespace WarcraftLegacies.Source.Quests
       _rescueUnits.Clear();
       if (_preventAccessTriggers != null)
         foreach (var preventAccessTrigger in _preventAccessTriggers)
-          preventAccessTrigger.Destroy();
+          DestroyTrigger(preventAccessTrigger);
 
       _preventAccessTriggers = null;
+      SetUnitInvulnerable(_entranceDoor, false);
       _entranceDoor
-        .SetInvulnerable(false)
         .TakeDamage(_enterTombOfSargerasRegion.CompletingUnit, 10000);
     }
 
@@ -74,9 +76,8 @@ namespace WarcraftLegacies.Source.Quests
       foreach (var unit in GlobalGroup.EnumUnitsInRect(rect.Rect).Where(x => !BlzIsUnitInvulnerable(x)))
       {
         _rescueUnits.Add(unit);
-        unit
-          .SetInvulnerable(true)
-          .Show(false);
+        SetUnitInvulnerable(unit, true);
+        ShowUnit(unit, false);
       }
     }
 
@@ -84,10 +85,13 @@ namespace WarcraftLegacies.Source.Quests
     {
       List<trigger> triggers = new();
       foreach (var rect in rectangles)
-        triggers.Add(CreateTrigger()
-          .RegisterEnterRegion(rect)
-          .AddAction(() => GetEnteringUnit().SetPosition(_entrance.Center))
-        );
+      {
+        var enterTrigger = CreateTrigger();
+        TriggerRegisterEnterRegion(enterTrigger, rect.Region, null);
+        TriggerAddAction(enterTrigger, () => GetEnteringUnit().SetPosition(_entrance.Center));
+        triggers.Add(enterTrigger);
+      }
+
       return triggers;
     }
   }

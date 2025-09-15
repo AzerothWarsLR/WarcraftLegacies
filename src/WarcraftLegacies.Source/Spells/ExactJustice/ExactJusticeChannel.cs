@@ -4,6 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using MacroTools.Utils;
 using WCSharp.Buffs;
+using WCSharp.Effects;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells.ExactJustice
@@ -53,21 +54,21 @@ namespace WarcraftLegacies.Source.Spells.ExactJustice
       var y = GetUnitY(Caster);
       
       _maximumDuration = Duration;
-      _ringEffect = AddSpecialEffect(EffectSettings.RingPath, x, y)
-        .SetAlpha(0)
-        .SetTimeScale(0)
-        .SetColor(235, 235, 50)
-        .SetScale(EffectSettings.RingScale);
+      _ringEffect = AddSpecialEffect(EffectSettings.RingPath, x, y);
+      BlzSetSpecialEffectAlpha(_ringEffect, 0);
+      BlzSetSpecialEffectTimeScale(_ringEffect, 0);
+      BlzSetSpecialEffectColor(_ringEffect, 235, 235, 50);
+      BlzSetSpecialEffectScale(_ringEffect, EffectSettings.RingScale);
 
-      _sparkleEffect = AddSpecialEffect(EffectSettings.SparklePath, x, y)
-        .SetScale(EffectSettings.SparkleScale)
-        .SetColor(255, 255, 0);
+      _sparkleEffect = AddSpecialEffect(EffectSettings.SparklePath, x, y);
+      BlzSetSpecialEffectScale(_sparkleEffect, EffectSettings.SparkleScale);
+      BlzSetSpecialEffectColor(_sparkleEffect, 255, 255, 0);
 
-      _progressEffect = AddSpecialEffect(EffectSettings.ProgressBarPath, x, y)
-        .SetTimeScale(1 / Duration)
-        .SetColor(Player(4))
-        .SetScale(EffectSettings.ProgressBarScale)
-        .SetHeight(EffectSettings.ProgressBarHeight);
+      _progressEffect = AddSpecialEffect(EffectSettings.ProgressBarPath, x, y);
+      BlzSetSpecialEffectTimeScale(_progressEffect, 1 / Duration);
+      BlzSetSpecialEffectColorByPlayer(_progressEffect, Player(4));
+      BlzSetSpecialEffectScale(_progressEffect, EffectSettings.ProgressBarScale);
+      BlzSetSpecialEffectHeight(_progressEffect, EffectSettings.ProgressBarHeight);
 
       _aura = new ExactJusticeAura(Caster)
       {
@@ -86,16 +87,18 @@ namespace WarcraftLegacies.Source.Spells.ExactJustice
         _damage += MaximumDamage / (_maximumDuration / Interval);
       if (!(_ringAlpha < EffectSettings.AlphaRing))
         return;
+
       _ringAlpha += EffectSettings.AlphaRing / (_maximumDuration / Interval);
-      _ringEffect?.SetAlpha(R2I(_ringAlpha));
+      if (_ringEffect != null) 
+        BlzSetSpecialEffectAlpha(_ringEffect, R2I(_ringAlpha));
     }
 
     /// <inheritdoc />
     protected override void OnDispose()
     {
-      AddSpecialEffect(EffectSettings.ExplodePath, GetUnitX(Caster), GetUnitY(Caster))
-        .SetScale(EffectSettings.ExplodeScale)
-        .SetLifespan();
+      var explodeEffect = AddSpecialEffect(EffectSettings.ExplodePath, GetUnitX(Caster), GetUnitY(Caster));
+      BlzSetSpecialEffectScale(explodeEffect, EffectSettings.ExplodeScale);
+      EffectSystem.Add(explodeEffect);
       foreach (var unit in GlobalGroup.EnumUnitsInRange(Caster.GetPosition(), Radius)
                  .Where(target => CastFilters.IsTargetEnemyAndAlive(Caster, target)))
       {
@@ -104,9 +107,24 @@ namespace WarcraftLegacies.Source.Spells.ExactJustice
       
       //The below effects have no death animations so they have//to be moved off the map as they are destroyed.
       var dummyRemovalPoint = new Point(-100000, -100000);
-      _sparkleEffect?.SetPosition(dummyRemovalPoint).Destroy();
-      _progressEffect?.SetPosition(dummyRemovalPoint).Destroy();
-      _ringEffect?.SetTimeScale(1).Destroy();
+      if (_sparkleEffect != null) 
+        BlzSetSpecialEffectPosition(_sparkleEffect, dummyRemovalPoint.X, dummyRemovalPoint.Y, 0);
+
+      if (_sparkleEffect != null) 
+        DestroyEffect(_sparkleEffect);
+
+      if (_progressEffect != null) 
+        BlzSetSpecialEffectPosition(_progressEffect, dummyRemovalPoint.X, dummyRemovalPoint.Y, 0);
+
+      if (_progressEffect != null) 
+        DestroyEffect(_progressEffect);
+
+      if (_ringEffect != null) 
+        BlzSetSpecialEffectTimeScale(_ringEffect, 1);
+
+      if (_ringEffect != null) 
+        DestroyEffect(_ringEffect);
+
       if (_aura != null) 
         _aura.Active = false;
     }

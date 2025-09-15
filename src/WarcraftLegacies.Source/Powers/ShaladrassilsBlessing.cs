@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Setup;
+using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 
@@ -34,7 +35,7 @@ namespace WarcraftLegacies.Source.Powers
       _summonedUnitCount = summonedUnitCount;
       _manaCost = manaCost;
       Description =
-        $"When an undamaged Control Point you control takes damage and you control {shaladrassil.GetName()}, consume {_manaCost} mana from {GetUnitName(shaladrassil)} to summon {_summonedUnitCount} {GetObjectName(summonedUnitTypeId)}s to defend the Control Point for {_duration} seconds.";
+        $"When an undamaged Control Point you control takes damage and you control {GetUnitName(shaladrassil)}, consume {_manaCost} mana from {GetUnitName(shaladrassil)} to summon {_summonedUnitCount} {GetObjectName(summonedUnitTypeId)}s to defend the Control Point for {_duration} seconds.";
       Name = $"{GetUnitName(shaladrassil)}'s Blessing";
     }
 
@@ -52,10 +53,10 @@ namespace WarcraftLegacies.Source.Powers
 
     private void OnPlayerTakesDamage()
     {
-      var owner = GetTriggerUnit().OwningPlayer();
+      var owner = GetOwningPlayer(GetTriggerUnit());
       if (!GetTriggerUnit().IsControlPoint() 
-          || _shaladrassil.OwningPlayer() != owner
-          || !(_shaladrassil.GetMana() >= _manaCost)
+          || GetOwningPlayer(_shaladrassil) != owner
+          || !(GetUnitState(_shaladrassil, UNIT_STATE_MANA) >= _manaCost)
           || GetTriggerUnit().GetLifePercent() < 100)
         return;
 
@@ -70,13 +71,12 @@ namespace WarcraftLegacies.Source.Powers
 
       for (var i = 0; i < _summonedUnitCount; i++)
       {
-        var treant = CreateUnit(owningPlayer, _summonedUnitTypeId, point.X, point.Y, 270)
-          .SetTimedLife(_duration)
-          .AddType(UNIT_TYPE_SUMMONED)
-          .SetExplodeOnDeath(true);
-        AddSpecialEffect(@"Objects\Spawnmodels\NightElf\EntBirthTarget\EntBirthTarget.mdl", treant.GetPosition().X,
-            treant.GetPosition().Y)
-          .SetLifespan();
+        var treant = CreateUnit(owningPlayer, _summonedUnitTypeId, point.X, point.Y, 270);
+        treant.SetTimedLife(_duration);
+        UnitAddType(treant, UNIT_TYPE_SUMMONED);
+        SetUnitExploded(treant, true);
+        EffectSystem.Add(AddSpecialEffect(@"Objects\Spawnmodels\NightElf\EntBirthTarget\EntBirthTarget.mdl", treant.GetPosition().X,
+          treant.GetPosition().Y));
       }
 
       return true;

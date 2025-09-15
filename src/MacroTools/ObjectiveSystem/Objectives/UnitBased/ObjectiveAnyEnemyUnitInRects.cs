@@ -6,7 +6,6 @@ using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
 {
@@ -44,9 +43,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     public string CompletingUnitName => CompletingUnit != null ? CompletingUnit.GetProperName() : "an unknown hero";
 
     private bool IsUnitValid(unit whichUnit) =>
-      !IsPlayerOnSameTeamAsAnyEligibleFaction(whichUnit.OwningPlayer()) && whichUnit.IsAlive() &&
-      whichUnit.OwningPlayer() != Player(PLAYER_NEUTRAL_AGGRESSIVE) &&
-      whichUnit.OwningPlayer() != Player(PLAYER_NEUTRAL_PASSIVE) &&
+      !IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(whichUnit)) && UnitAlive(whichUnit) &&
+      GetOwningPlayer(whichUnit) != Player(PLAYER_NEUTRAL_AGGRESSIVE) &&
+      GetOwningPlayer(whichUnit) != Player(PLAYER_NEUTRAL_PASSIVE) &&
       EligibilityCondition(whichUnit);
     
     private bool IsValidUnitInRects()
@@ -61,24 +60,24 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     public override void OnAdd(Faction whichFaction)
     {
       Progress = IsValidUnitInRects() ? QuestProgress.Complete : QuestProgress.Incomplete;
-      
-      CreateTrigger()
-        .RegisterEnterRegions(_targetRects)
-        .AddAction(() =>
-        {
-          var triggerUnit = GetTriggerUnit();
-          if (!IsUnitValid(triggerUnit)) 
-            return;
-          CompletingUnit = triggerUnit;
-          Progress = QuestProgress.Complete;
-        });
-      CreateTrigger()
-        .RegisterLeaveRegions(_targetRects)
-        .AddAction(() =>
-        {
-          if (!IsValidUnitInRects()) 
-            Progress = QuestProgress.Incomplete;
-        });
+
+      var enterTrigger = CreateTrigger();
+      enterTrigger.RegisterEnterRegions(_targetRects);
+      TriggerAddAction(enterTrigger, () =>
+      {
+        var triggerUnit = GetTriggerUnit();
+        if (!IsUnitValid(triggerUnit)) 
+          return;
+        CompletingUnit = triggerUnit;
+        Progress = QuestProgress.Complete;
+      });
+      var leaveTrigger = CreateTrigger();
+      leaveTrigger.RegisterLeaveRegions(_targetRects);
+      TriggerAddAction(leaveTrigger, () =>
+      {
+        if (!IsValidUnitInRects()) 
+          Progress = QuestProgress.Incomplete;
+      });
     }
   }
 }

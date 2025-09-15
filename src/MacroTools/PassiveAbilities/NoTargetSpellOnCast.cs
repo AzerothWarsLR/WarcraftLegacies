@@ -1,7 +1,6 @@
 ﻿using MacroTools.PassiveAbilitySystem;
 using System.Collections.Generic;
 using MacroTools.DummyCasters;
-using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
 {

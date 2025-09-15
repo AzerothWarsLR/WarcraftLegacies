@@ -7,7 +7,6 @@ using MacroTools.Hazards;
 using MacroTools.SpellSystem;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace MacroTools.Powers
 {
@@ -85,8 +84,9 @@ namespace MacroTools.Powers
       _owners.Add(whichPlayer);
       _oilIncomePeriodicAction = new OilIncomePeriodicAction(this);
       OilIncomePeriodicTrigger.Add(_oilIncomePeriodicAction);
-      
-      _oilTimer = CreateTimer().Start(150, true, GenerateRandomOilPool);
+
+      _oilTimer = CreateTimer();
+      TimerStart(_oilTimer, 150, true, GenerateRandomOilPool);
 
       foreach (var position in ForcedStartingOilPoolSpawnLocations)
         GenerateOilPool(position);
@@ -102,7 +102,8 @@ namespace MacroTools.Powers
       _oilIncomePeriodicAction.Active = false;
       _oilIncomePeriodicAction = null;
       _owners.Remove(whichPlayer);
-      _oilTimer?.Destroy();
+      if (_oilTimer != null) 
+        DestroyTimer(_oilTimer);
     }
     
     /// <summary>

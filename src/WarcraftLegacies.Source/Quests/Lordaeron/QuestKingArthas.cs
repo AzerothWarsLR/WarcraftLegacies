@@ -52,7 +52,7 @@ namespace WarcraftLegacies.Source.Quests.Lordaeron
       _arthas.ClearUnitDependencies();
       _arthas.Unit?
         .AddItemSafe(_crownOfLordaeron.Item);
-      _terenas.SetName("King Emeritus Terenas Menethil");
+      BlzSetUnitName(_terenas, "King Emeritus Terenas Menethil");
       completingFaction.ModObjectLimit(UNIT_HKNI_KNIGHT_LORDAERON, -Faction.UNLIMITED);
       completingFaction.ModObjectLimit(UNIT_H0CP_GALLANT_KNIGHT_LORDAERON, Faction.UNLIMITED);
 

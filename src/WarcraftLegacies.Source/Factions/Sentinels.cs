@@ -22,13 +22,14 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    public Sentinels(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Sentinels", new[] {PLAYER_COLOR_MINT, PLAYER_COLOR_CYAN, PLAYER_COLOR_AQUA},
+    public Sentinels(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup,
+      ArtifactSetup artifactSetup) : base("Sentinels", PLAYER_COLOR_MINT,
       @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
     {
       TraditionalTeam = TeamSetup.Kalimdor;
       _allLegendSetup = allLegendSetup;
       _artifactSetup = artifactSetup;
-      UndefeatedResearch = FourCC("R05Y");
+      UndefeatedResearch = UPGRADE_R05Y_SENTINELS_EXISTS;
       StartingGold = 200;
       CinematicMusic = "Comradeship";
       ControlPointDefenderUnitTypeId = UNIT_H03F_CONTROL_POINT_DEFENDER_SENTINELS;

@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 
 namespace MacroTools.Systems
@@ -165,7 +163,7 @@ namespace MacroTools.Systems
       if (closestDistance > MaximumDistanceToFind)
       {
         var unit = units.FirstOrDefault();
-        Logger.LogWarning($"Could not find a {unit?.GetName()}({GeneralHelpers.DebugIdInteger2IdString(unit.GetTypeId())}) within {MaximumDistanceToFind} of Point {location.X}, {location.Y}.");
+        Logger.LogWarning($"Could not find a {(unit != null ? GetUnitName(unit) : null)}({GeneralHelpers.DebugIdInteger2IdString(GetUnitTypeId(unit))}) within {MaximumDistanceToFind} of Point {location.X}, {location.Y}.");
       }
         
 

@@ -56,7 +56,7 @@ namespace WarcraftLegacies.Source.Spells.MassiveAttack
       var missile = new MassiveAttackProjectile(caster, targetX, targetY)
       {
         Damage = caster.GetAverageDamage(0) * AttackDamagePercentage,
-        AttackType = ConvertAttackType(caster.GetAttackType()),
+        AttackType = ConvertAttackType(BlzGetUnitWeaponIntegerField(caster, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0)),
         DamageType = BlzGetEventDamageType()
       };
       if (IgnoreAttackTarget)

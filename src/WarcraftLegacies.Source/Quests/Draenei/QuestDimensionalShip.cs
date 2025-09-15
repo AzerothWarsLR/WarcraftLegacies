@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
@@ -51,10 +50,20 @@ namespace WarcraftLegacies.Source.Quests.Draenei
     /// <inheritdoc/>
     protected override void OnComplete(Faction whichFaction)
     {
-      _objectivePowerSource.UsedPowerSource?.SetDroppable(false);
-      CreateTrigger()
-        .RegisterUnitEvent(_dimensionalGenerator, EVENT_UNIT_DEATH)
-        .AddAction(() => { _objectivePowerSource.UsedPowerSource?.SetDroppable(true); });
+      if (_objectivePowerSource.UsedPowerSource != null)
+      {
+        SetItemDroppable(_objectivePowerSource.UsedPowerSource, false);
+      }
+
+      var deathTrigger = CreateTrigger();
+      TriggerRegisterUnitEvent(deathTrigger, _dimensionalGenerator, EVENT_UNIT_DEATH);
+      TriggerAddAction(deathTrigger, () =>
+      {
+        if (_objectivePowerSource.UsedPowerSource != null)
+        {
+          SetItemDroppable(_objectivePowerSource.UsedPowerSource, true);
+        }
+      });
     }
 
     /// <inheritdoc/>

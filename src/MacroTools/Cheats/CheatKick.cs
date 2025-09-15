@@ -1,7 +1,6 @@
 ﻿using System;
 using MacroTools.CommandSystem;
 using MacroTools.FactionSystem;
-using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {

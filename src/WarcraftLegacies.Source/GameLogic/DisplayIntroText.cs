@@ -15,12 +15,12 @@ namespace WarcraftLegacies.Source.GameLogic
     /// <param name="displayTime">The time after which to display intro text, in seconds.</param>
     public static void Setup(float displayTime)
     {
-      CreateTimer().Start(displayTime, false, () =>
+      TimerStart(CreateTimer(), displayTime, false, () =>
       {
         try
         {
-          foreach (var player in Util.EnumeratePlayers())
-            DisplayTextToPlayer(player, 0, 0, player.GetFaction()?.IntroText ?? "");
+          foreach (var player1 in Util.EnumeratePlayers())
+            DisplayTextToPlayer(player1, 0, 0, player1.GetFaction()?.IntroText ?? "");
           
           DestroyTimer(GetExpiredTimer());
         }

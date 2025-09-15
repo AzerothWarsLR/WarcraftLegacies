@@ -12,8 +12,6 @@ using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Naga;
 using WarcraftLegacies.Source.Setup;
 
-
-
 namespace WarcraftLegacies.Source.Factions
 {
   public sealed class Illidari : Faction
@@ -22,7 +20,8 @@ namespace WarcraftLegacies.Source.Factions
     private readonly ArtifactSetup _artifactSetup;
 
     /// <inheritdoc />
-    public Illidari(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Illidan", new[] {PLAYER_COLOR_VIOLET, PLAYER_COLOR_PURPLE, PLAYER_COLOR_PINK}, @"ReplaceableTextures\CommandButtons\BTNEvilIllidan.blp")
+    public Illidari(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Illidan", PLAYER_COLOR_VIOLET,
+      @"ReplaceableTextures\CommandButtons\BTNEvilIllidan.blp")
     {
       TraditionalTeam = TeamSetup.Outland;
       _allLegendSetup = allLegendSetup;

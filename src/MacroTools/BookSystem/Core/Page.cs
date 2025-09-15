@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Frames;
-using static War3Api.Common;
 
 namespace MacroTools.BookSystem.Core
 {

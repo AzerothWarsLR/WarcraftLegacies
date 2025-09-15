@@ -2,7 +2,6 @@
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 {
@@ -33,21 +32,21 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 
     public override void OnAdd(Faction whichFaction)
     {
-      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
+      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
       {
         Progress = QuestProgress.Complete;
       }
       _target.ChangedOwner += (_, _) => { RecalculateProgress(); };
       _target.UnitChanged += (_, _) => { RecalculateProgress(); };
 
-      CreateTrigger()
-        .RegisterUnitEvent(_target.Unit, EVENT_UNIT_DEATH)
-        .AddAction(() => { Progress = QuestProgress.Failed; });
+      var deathTrigger = CreateTrigger();
+      TriggerRegisterUnitEvent(deathTrigger, _target.Unit, EVENT_UNIT_DEATH);
+      TriggerAddAction(deathTrigger, () => { Progress = QuestProgress.Failed; });
     }
 
     private void RecalculateProgress()
     {
-      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
+      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
         Progress = QuestProgress.Complete;
       else
         Progress = _failOnControlLoss ? QuestProgress.Failed : QuestProgress.Incomplete;

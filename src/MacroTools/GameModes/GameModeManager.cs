@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using MacroTools.Extensions;
 using MacroTools.Utils;
-using static War3Api.Common;
 
 namespace MacroTools.GameModes
 {
@@ -27,7 +25,7 @@ namespace MacroTools.GameModes
 
     public void Setup()
     {
-      CreateTimer().Start(TimeToDisplay, false, PresentVotesToPlayers);
+      TimerStart(CreateTimer(), TimeToDisplay, false, PresentVotesToPlayers);
     }
 
     private void PresentVotesToPlayers()
@@ -40,18 +38,17 @@ namespace MacroTools.GameModes
         foreach (var gameModeVote in _gameModeVotes)
         {
           var dialogButton = DialogAddButton(dialog, gameModeVote.GameMode.Name, 0);
-          buttonClickTriggers.Add(CreateTrigger()
-            .RegisterDialogButtonEvent(dialogButton)
-            .AddAction(() => { gameModeVote.VoteCount += 1; }
-            )
-          );
+          var buttonClickTrigger = CreateTrigger();
+          TriggerRegisterDialogButtonEvent(buttonClickTrigger, dialogButton);
+          TriggerAddAction(buttonClickTrigger, () => { gameModeVote.VoteCount += 1; });
+          buttonClickTriggers.Add(buttonClickTrigger);
         }
 
         foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
           DialogDisplay(player, dialog, true);
 
-        GetExpiredTimer().Destroy();
-        CreateTimer().Start(VoteLength, false, () => { ConcludeVote(dialog, buttonClickTriggers); });
+        DestroyTimer(GetExpiredTimer());
+        TimerStart(CreateTimer(), VoteLength, false, () => { ConcludeVote(dialog, buttonClickTriggers); });
       }
 
       catch (Exception ex)
@@ -65,7 +62,7 @@ namespace MacroTools.GameModes
       var highestVotedGameMode = _gameModeVotes.OrderByDescending(x => x.VoteCount).First();
       highestVotedGameMode.GameMode.OnChoose();
 
-      GetExpiredTimer().Destroy();
+      DestroyTimer(GetExpiredTimer());
       DialogClear(dialog);
 
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
@@ -75,7 +72,7 @@ namespace MacroTools.GameModes
       }
       
       foreach (var trigger in buttonClickTriggers)
-        trigger.Destroy();
+        DestroyTrigger(trigger);
     }
 
     private sealed class GameModeVote

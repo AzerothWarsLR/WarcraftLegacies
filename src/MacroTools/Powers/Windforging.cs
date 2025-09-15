@@ -2,9 +2,9 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Setup;
+using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace MacroTools.Powers
 {
@@ -54,16 +54,15 @@ namespace MacroTools.Powers
       if (GetRandomReal(0, 1) > _chance 
           || !EligibilityCondition(dyingUnit) 
           || _noReturnRect.Contains(dyingUnit.GetPosition())
-          || dyingUnit.IsType(UNIT_TYPE_RESISTANT)
-          || dyingUnit.IsType(UNIT_TYPE_HERO) 
-          || dyingUnit.IsType(UNIT_TYPE_MECHANICAL) 
-          || dyingUnit.IsIllusion() 
-          || dyingUnit.IsType(UNIT_TYPE_SUMMONED))
+          || IsUnitType(dyingUnit, UNIT_TYPE_RESISTANT)
+          || IsUnitType(dyingUnit, UNIT_TYPE_HERO) 
+          || IsUnitType(dyingUnit, UNIT_TYPE_MECHANICAL) 
+          || IsUnitIllusion(dyingUnit) 
+          || IsUnitType(dyingUnit, UNIT_TYPE_SUMMONED))
 
         return;
-      AddSpecialEffect(@"Abilities\Spells\Items\AIil\AIilTarget.mdl", _returnPoint.X, _returnPoint.Y)
-        .SetLifespan();
-      CreateUnit(dyingUnit.OwningPlayer(), _unitTypeId, _returnPoint.X, _returnPoint.Y, 0);
+      EffectSystem.Add(AddSpecialEffect(@"Abilities\Spells\Items\AIil\AIilTarget.mdl", _returnPoint.X, _returnPoint.Y));
+      CreateUnit(GetOwningPlayer(dyingUnit), _unitTypeId, _returnPoint.X, _returnPoint.Y, 0);
     }
   }
 }

@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
-using MacroTools.Extensions;
 using MacroTools.Libraries;
 using WCSharp.Buffs;
 using WCSharp.Events;
-using static War3Api.Common;
 
 namespace MacroTools.Buffs
 {
@@ -44,23 +42,22 @@ namespace MacroTools.Buffs
     private void OnOwnershipChanged()
     {
       foreach (var tentacle in _tentacles) 
-        tentacle.SetOwner(Target.OwningPlayer());
+        SetUnitOwner(tentacle, GetOwningPlayer(Target), true);
     }
 
     private void SpawnTentacles()
     {
       for (var i = 0; i < TentacleCount; i++)
       {
-        var newTentacle = CreateUnit(GetOwningPlayer(Target), TentacleUnitTypeId, GetUnitX(Target), GetUnitY(Target),
-          0)
-          .SetAnimation("birth")
-          .QueueAnimation("stand")
-          .SetColor(255, 255, 255, 255)
-          .AddAbility(FourCC("Aloc"))
-          .SetInvulnerable(true);
-        
-        SetUnitPathing(newTentacle, false);
-        _tentacles.Add(newTentacle);
+        var tentacle = CreateUnit(GetOwningPlayer(Target), TentacleUnitTypeId, GetUnitX(Target), GetUnitY(Target),
+          0);
+        SetUnitAnimation(tentacle, "birth");
+        QueueUnitAnimation(tentacle, "stand");
+        SetUnitVertexColor(tentacle, 255, 255, 255, 255);
+        UnitAddAbility(tentacle, FourCC("Aloc"));
+        SetUnitInvulnerable(tentacle, true);
+        SetUnitPathing(tentacle, false);
+        _tentacles.Add(tentacle);
       }
     }
     

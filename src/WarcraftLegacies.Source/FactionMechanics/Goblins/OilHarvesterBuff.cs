@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.Hazards;
+﻿using MacroTools.Hazards;
 using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.FactionMechanics.Goblins
@@ -32,9 +31,8 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
     public override void OnApply()
     {
       _oilPool.OilPower.Income += OilHarvestedPerSecond;
-      Target
-        .SetMaximumMana(_oilPool.OilAmount)
-        .SetMana(_oilPool.OilAmount);
+      BlzSetUnitMaxMana(Target, _oilPool.OilAmount);
+      SetUnitState(Target, UNIT_STATE_MANA, _oilPool.OilAmount);
     }
 
     /// <inheritdoc />
@@ -45,7 +43,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
     {
       if (!_oilPool.Active || _oilPool.OilAmount <= OilHarvestedPerSecond)
       {
-        Caster.Kill();
+        KillUnit(Caster);
         _oilPool.OilAmount -= OilHarvestedPerSecond;
         _oilPool.OilPower.Amount += OilHarvestedPerSecond;
         _oilPool.Dispose();
@@ -53,7 +51,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
       else
       {
         _oilPool.OilAmount -= OilHarvestedPerSecond;
-        Target.SetMana(_oilPool.OilAmount);
+        SetUnitState(Target, UNIT_STATE_MANA, _oilPool.OilAmount);
       }
     }
   }

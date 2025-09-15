@@ -4,7 +4,7 @@ using MacroTools.ControlPointSystem;
 using MacroTools.Data;
 using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
-using static War3Api.Common;
+using WCSharp.Effects;
 
 namespace MacroTools.PassiveAbilities
 {
@@ -68,7 +68,7 @@ namespace MacroTools.PassiveAbilities
       var caster = GetEventDamageSource();
 
       if (IsUnitType(triggerUnit, UNIT_TYPE_STRUCTURE) || ControlPointManager.Instance.UnitIsControlPoint(triggerUnit) ||
-        IsUnitAlly(triggerUnit, caster.OwningPlayer()) || GetUnitAbilityLevel(caster, _abilityTypeId) == 0)
+        IsUnitAlly(triggerUnit, GetOwningPlayer(caster)) || GetUnitAbilityLevel(caster, _abilityTypeId) == 0)
       {
         return;
       }
@@ -95,8 +95,7 @@ namespace MacroTools.PassiveAbilities
 
       var healthPerTarget = ((caster.GetLevel() * HealthPerLevel) + (HealthPerTarget.Base + HealthPerTarget.PerLevel) * GetUnitAbilityLevel(caster, _abilityTypeId));
       caster.Heal(healthPerTarget);
-      AddSpecialEffectTarget(Effect, caster, "origin")
-        .SetLifespan();
+      EffectSystem.Add(AddSpecialEffectTarget(Effect, caster, "origin"));
     }
   }
 }

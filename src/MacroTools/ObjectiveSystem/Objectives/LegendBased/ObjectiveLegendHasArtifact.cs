@@ -1,8 +1,6 @@
 using MacroTools.ArtifactSystem;
-using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 {
@@ -22,7 +20,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     {
       Description = targetLegend is LegendaryHero legendaryHero
         ? $"{legendaryHero.Name} has {GetItemName(targetArtifact.Item)}"
-        : $"{targetLegend.Unit!.GetName()} has {GetItemName(targetArtifact.Item)}";
+        : $"{GetUnitName(targetLegend.Unit!)} has {GetItemName(targetArtifact.Item)}";
 
       _targetLegend = targetLegend;
       _targetArtifact = targetArtifact;

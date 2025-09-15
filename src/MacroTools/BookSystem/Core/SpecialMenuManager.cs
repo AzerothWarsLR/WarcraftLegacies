@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using MacroTools.Extensions;
 using MacroTools.Frames;
-using static War3Api.Common;
 
 namespace MacroTools.BookSystem.Core
 {
@@ -24,8 +22,8 @@ namespace MacroTools.BookSystem.Core
       Books.Add(specialMenu);
       specialMenu.LauncherButton = new Button("SpectrumMenuButtonMenu", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0))
       {
-        Width = specialMenu.LauncherParent.GetWidth(),
-        Height = specialMenu.LauncherParent.GetHeight(),
+        Width = BlzFrameGetWidth(specialMenu.LauncherParent),
+        Height = BlzFrameGetHeight(specialMenu.LauncherParent),
         Text = specialMenu.Title,
         Visible = whichPlayer == null || whichPlayer == GetLocalPlayer()
       };

@@ -9,14 +9,14 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
     
     private static void OnSell()
     {
-      GetTriggerUnit().Kill();
-      GetSoldUnit().SetFacingEx(GetTriggerUnit().GetFacing());
-      GetSoldUnit().OwningPlayer().Select(GetSoldUnit());
+      var triggerUnit = GetTriggerUnit();
+      KillUnit(triggerUnit);
+      var soldUnit = GetSoldUnit();
+      var facing = GetUnitFacing(triggerUnit);
+      BlzSetUnitFacingEx(soldUnit, facing);
+      GetOwningPlayer(soldUnit).Select(soldUnit);
     }
 
-    public static void Setup()
-    {
-      PlayerUnitEvents.Register(UnitTypeEvent.SellsUnit, OnSell, AcolyteId);
-    }
+    public static void Setup() => PlayerUnitEvents.Register(UnitTypeEvent.SellsUnit, OnSell, AcolyteId);
   }
 }

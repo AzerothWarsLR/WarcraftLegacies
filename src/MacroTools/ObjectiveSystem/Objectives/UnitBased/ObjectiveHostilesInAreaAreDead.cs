@@ -1,10 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MacroTools.Extensions;
 using MacroTools.QuestSystem;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
 {
@@ -44,18 +42,18 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       foreach (var rectangle in rectangles)
       {
         var unitsInAreas = GlobalGroup.EnumUnitsInRect(rectangle)
-          .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !x.IsType(UNIT_TYPE_ANCIENT) &&
-                      !x.IsType(UNIT_TYPE_SAPPER));
+          .Where(x => GetOwningPlayer(x) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !IsUnitType(x, UNIT_TYPE_ANCIENT) &&
+                      !IsUnitType(x, UNIT_TYPE_SAPPER));
         foreach (var unit in unitsInAreas)
         {
           _maxKillCount++;
-          CreateTrigger()
-            .RegisterUnitEvent(unit, EVENT_UNIT_DEATH)
-            .AddAction(() =>
-            {
-              CurrentKillCount++;
-              DestroyTrigger(GetTriggeringTrigger());
-            });
+          var deathTrigger = CreateTrigger();
+          TriggerRegisterUnitEvent(deathTrigger, unit, EVENT_UNIT_DEATH);
+          TriggerAddAction(deathTrigger, () =>
+          {
+            CurrentKillCount++;
+            DestroyTrigger(GetTriggeringTrigger());
+          });
         }
       }
       CurrentKillCount = 0;

@@ -72,7 +72,7 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
         {
           var x = GetUnitX(unit);
           var y = GetUnitY(unit);
-          return unit.IsType(UNIT_TYPE_MECHANICAL) && !IsTerrainPathable(x, y, PATHING_TYPE_FLOATABILITY) &&
+          return IsUnitType(unit, UNIT_TYPE_MECHANICAL) && !IsTerrainPathable(x, y, PATHING_TYPE_FLOATABILITY) &&
                  IsTerrainPathable(x, y, PATHING_TYPE_WALKABILITY);
         }
       };
@@ -81,9 +81,10 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
       completingFaction.Player?.DisplayPowerAcquired(rewardPower);
       
       if (completingFaction.Player != null)
-        completingFaction.Player
-          .RescueGroup(_rescueUnits)
-          .PlayMusicThematic("war3mapImported\\KultirasTheme.mp3");
+      {
+        completingFaction.Player.RescueGroup(_rescueUnits);
+        completingFaction.Player.PlayMusicThematic("war3mapImported\\KultirasTheme.mp3");
+      }
       else
         Player(bj_PLAYER_NEUTRAL_VICTIM).RescueGroup(_rescueUnits);
       

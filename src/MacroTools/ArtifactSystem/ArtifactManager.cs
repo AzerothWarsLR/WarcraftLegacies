@@ -5,7 +5,6 @@ using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.ShoreSystem;
 using WCSharp.Events;
-using static War3Api.Common;
 
 namespace MacroTools.ArtifactSystem
 {
@@ -90,14 +89,14 @@ namespace MacroTools.ArtifactSystem
         try
         {
           var triggerUnit = GetTriggerUnit();
-          if (triggerUnit.IsType(UNIT_TYPE_SUMMONED) || triggerUnit.IsIllusion())
+          if (IsUnitType(triggerUnit, UNIT_TYPE_SUMMONED) || IsUnitIllusion(triggerUnit))
             return;
 
           bool? isPositionPathable = null;
           for (var i = 0; i < 6; i++)
           {
             var itemInSlot = UnitItemInSlot(triggerUnit, i);
-            if (itemInSlot == null || !itemInSlot.IsDroppable())
+            if (itemInSlot == null || !BlzGetItemBooleanField(itemInSlot, ITEM_BF_CAN_BE_DROPPED))
               continue;
             
             var artifactInSlot = GetFromTypeId(GetItemTypeId(itemInSlot));

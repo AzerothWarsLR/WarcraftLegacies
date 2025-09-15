@@ -1,8 +1,6 @@
-﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
-using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 {
@@ -26,7 +24,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
     {
       CapitalManager.CapitalDestroyed += (_, capital) =>
       {
-        if (IsPlayerOnSameTeamAsAnyEligibleFaction(GetKillingUnit().OwningPlayer()))
+        if (IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(GetKillingUnit())))
         {
           DestroyedCapital = capital;
           Progress = QuestProgress.Complete;

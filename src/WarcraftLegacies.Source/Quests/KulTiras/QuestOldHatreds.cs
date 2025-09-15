@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
@@ -31,7 +30,10 @@ namespace WarcraftLegacies.Source.Quests.KulTiras
     protected override string RewardDescription => "Daelin Proudmoore gains 4000 experience";
 
     /// <inheritdoc/>
-    protected override void OnComplete(Faction completingFaction) =>
-      _proudmoore.Unit?.AddExperience(4000);
+    protected override void OnComplete(Faction completingFaction)
+    {
+      if (_proudmoore.Unit != null) 
+        AddHeroXP(_proudmoore.Unit, 4000, true);
+    }
   }
 }

@@ -10,7 +10,6 @@ using MacroTools.QuestSystem;
 using MacroTools.Shared;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace MacroTools.FactionSystem
 {
@@ -42,7 +41,7 @@ namespace MacroTools.FactionSystem
     private string _name;
     private player? _player;
 
-    protected Faction(string name, playercolor[] colorPriority, string icon)
+    protected Faction(string name, playercolor playerColor, string icon)
     {
       _name = name;
       _icon = icon;
@@ -50,7 +49,7 @@ namespace MacroTools.FactionSystem
       Id = _highestId + 1;
       _highestId = Id;
 
-      PlayerColor = ColorManager.AssignPreferredColorOrFallback(colorPriority);
+      PlayerColor = playerColor;
       PrefixCol = ColorManager.GetColorHexCode(PlayerColor);
     }
 
@@ -235,11 +234,6 @@ namespace MacroTools.FactionSystem
         SetPlayerState(Player, PLAYER_STATE_OBSERVER, 1);
         PlayerDistributor.DistributePlayer(Player);
         RemoveGoldMines();
-
-        if (PlayerColor != null)
-        {
-          ColorManager.ReleaseColor(PlayerColor);
-        }
       }
 
       ScoreStatus = ScoreStatus.Defeated;
@@ -363,7 +357,10 @@ namespace MacroTools.FactionSystem
         _abilityAvailabilities[ability] += value;
       else
         _abilityAvailabilities[ability] = value;
-      Player?.SetAbilityAvailability(ability, value > 0);
+      if (Player != null)
+      {
+        SetPlayerAbilityAvailable(Player, ability, value > 0);
+      }
     }
 
     /// <summary>
@@ -449,7 +446,7 @@ namespace MacroTools.FactionSystem
         if (!_goldMines.Contains(goldMine))
           throw new InvalidOperationException($"Tried to remove Gold Mine from {Name} that they don't own.");
 
-        goldMine.Remove();
+        RemoveUnit(goldMine);
       }
     }
     
@@ -565,12 +562,16 @@ namespace MacroTools.FactionSystem
       var essentialLegends = new List<Legend>();
       
       foreach (var legend in LegendaryHeroManager.GetAll())
-        if (legend.Essential && legend.OwningPlayer == Player && legend.Unit?.IsAlive() == true)
+      {
+        if (legend.Essential && legend.OwningPlayer == Player && (legend.Unit != null ? UnitAlive(legend.Unit) : null) == true)
           essentialLegends.Add(legend);
-      
+      }
+
       foreach (var capital in CapitalManager.GetAll())
-        if (capital.Essential && capital.OwningPlayer == Player && capital.Unit?.IsAlive() == true)
+      {
+        if (capital.Essential && capital.OwningPlayer == Player && (capital.Unit != null ? UnitAlive(capital.Unit) : null) == true)
           essentialLegends.Add(capital);
+      }
 
       return essentialLegends;
     }
@@ -631,7 +632,10 @@ namespace MacroTools.FactionSystem
         Player?.SetObjectLevel(key, value);
 
       foreach (var (key, value) in _abilityAvailabilities)
-        Player?.SetAbilityAvailability(key, value > 0);
+      {
+        if (Player != null) 
+          SetPlayerAbilityAvailable(Player, key, value > 0);
+      }
     }
 
     //Removes this Faction's object limits and levels from its active Person
@@ -644,7 +648,10 @@ namespace MacroTools.FactionSystem
         Player?.SetObjectLevel(key, 0);
 
       foreach (var (key, _) in _abilityAvailabilities)
-        Player?.SetAbilityAvailability(key, true);
+      {
+        if (Player != null) 
+          SetPlayerAbilityAvailable(Player, key, true);
+      }
     }
 
     /// <summary>

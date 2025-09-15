@@ -3,7 +3,6 @@ using MacroTools.Data;
 using MacroTools.Missiles;
 using MacroTools.PassiveAbilitySystem;
 using WCSharp.Missiles;
-using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
 {

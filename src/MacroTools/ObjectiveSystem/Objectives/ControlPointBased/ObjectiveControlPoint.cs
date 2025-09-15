@@ -4,7 +4,6 @@ using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using MacroTools.Utils;
-using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 {
@@ -48,7 +47,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 
     public override void OnAdd(Faction whichFaction)
     {
-      Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer())
+      Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit))
         ? QuestProgress.Complete
         : QuestProgress.Incomplete;
       
@@ -57,7 +56,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 
     private void RefreshProgress()
     {
-      if (_currentKillCount == _maxKillCount && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer())) 
+      if (_currentKillCount == _maxKillCount && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit))) 
         Progress = QuestProgress.Complete;
     }
 
@@ -65,19 +64,19 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
     {
       var unitsNearby = GlobalGroup
         .EnumUnitsInRange(_target.Unit.GetPosition(), range)
-          .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !x.IsType(UNIT_TYPE_ANCIENT) &&
-           !x.IsType(UNIT_TYPE_SAPPER) && !x.IsType(UNIT_TYPE_STRUCTURE)); 
+          .Where(x => GetOwningPlayer(x) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !IsUnitType(x, UNIT_TYPE_ANCIENT) &&
+           !IsUnitType(x, UNIT_TYPE_SAPPER) && !IsUnitType(x, UNIT_TYPE_STRUCTURE)); 
 
       foreach (var unit in unitsNearby)
       {
         _maxKillCount++;
-        CreateTrigger()
-          .RegisterUnitEvent(unit, EVENT_UNIT_DEATH)
-          .AddAction(() =>
-          {
-            CurrentKillCount++;
-            DestroyTrigger(GetTriggeringTrigger());
-          });
+        var killTrigger = CreateTrigger();
+        TriggerRegisterUnitEvent(killTrigger, unit, EVENT_UNIT_DEATH);
+        TriggerAddAction(killTrigger, () =>
+        {
+          CurrentKillCount++;
+          DestroyTrigger(GetTriggeringTrigger());
+        });
       }
     }
   }

@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Spells
       if (target.IsResistant())
         target.TakeDamage(caster, Damage.Base + Damage.PerLevel * GetAbilityLevel(caster), damageType: DAMAGE_TYPE_MAGIC);
       else
-        target.TakeDamage(caster, target.GetHitPoints(), damageType: DAMAGE_TYPE_UNIVERSAL, attackType: ATTACK_TYPE_CHAOS);
+        target.TakeDamage(caster, GetUnitState(target, UNIT_STATE_LIFE), damageType: DAMAGE_TYPE_UNIVERSAL, attackType: ATTACK_TYPE_CHAOS);
       
       SetUnitState(caster, UNIT_STATE_LIFE, GetUnitState(caster, UNIT_STATE_LIFE) + GetUnitState(caster, UNIT_STATE_MAX_LIFE)*PercentageOfMaxHealth);
     }

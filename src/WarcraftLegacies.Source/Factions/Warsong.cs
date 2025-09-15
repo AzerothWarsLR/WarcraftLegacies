@@ -27,8 +27,8 @@ namespace WarcraftLegacies.Source.Factions
 
         /// <inheritdoc />
 
-        public Warsong(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
-          : base("Warsong", new[] {PLAYER_COLOR_ORANGE, PLAYER_COLOR_YELLOW, PLAYER_COLOR_COAL},
+        public Warsong(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup,
+          ArtifactSetup artifactSetup) : base("Warsong", PLAYER_COLOR_RED,
           @"ReplaceableTextures\CommandButtons\BTNHellScream.blp")
         {
             TraditionalTeam = TeamSetup.Kalimdor;
@@ -69,9 +69,11 @@ namespace WarcraftLegacies.Source.Factions
             Regions.BarrenAmbient2.CleanupHostileUnits();
             Regions.AshenvaleCreeps.CleanupHostileUnits();
             var thunderBluffUnit = _preplacedUnitSystem.GetUnit(Constants.UNIT_N03M_THUNDERBLUFF);
-            thunderBluffUnit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+            player whichPlayer = Player(PLAYER_NEUTRAL_AGGRESSIVE);
+            SetUnitOwner(thunderBluffUnit, whichPlayer, true);
             var echoIslesUnit = _preplacedUnitSystem.GetUnit(Constants.UNIT_N02V_ECHO_ISLES);
-            echoIslesUnit.SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+            player whichPlayer1 = Player(PLAYER_NEUTRAL_AGGRESSIVE);
+            SetUnitOwner(echoIslesUnit, whichPlayer1, true);
         }
 
         private void RegisterObjectLevels()

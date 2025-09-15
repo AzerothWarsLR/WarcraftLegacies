@@ -3,7 +3,6 @@ using System.Linq;
 using MacroTools.CommandSystem;
 using MacroTools.Extensions;
 using MacroTools.Utils;
-using static War3Api.Common;
 
 namespace MacroTools.Cheats
 {
@@ -29,7 +28,7 @@ namespace MacroTools.Cheats
     {
       var firstSelectedUnit = GlobalGroup.EnumSelectedUnits(cheater).First();
       firstSelectedUnit.RemoveAllAbilities(new List<int>{1096905835,1097690998,1112498531});
-      return $"All abilities removed from {firstSelectedUnit.GetName()}";
+      return $"All abilities removed from {GetUnitName(firstSelectedUnit)}";
     }
   }
 }

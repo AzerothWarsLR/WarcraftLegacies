@@ -3,6 +3,7 @@ using MacroTools.Data;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using MacroTools.Utils;
+using WCSharp.Effects;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells
@@ -40,31 +41,28 @@ namespace WarcraftLegacies.Source.Spells
     {
       return !IsUnitType(target, UNIT_TYPE_STRUCTURE) && !IsUnitType(target, UNIT_TYPE_ANCIENT) &&
              !IsUnitType(target, UNIT_TYPE_MECHANICAL) && !IsUnitType(target, UNIT_TYPE_RESISTANT) &&
-             !IsUnitType(target, UNIT_TYPE_HERO) && target.OwningPlayer() == caster.OwningPlayer() && UnitAlive(target)
+             !IsUnitType(target, UNIT_TYPE_HERO) && GetOwningPlayer(target) == GetOwningPlayer(caster) && UnitAlive(target)
              && !BlzIsUnitInvulnerable(target) && 
              !IsUnitType(target, UNIT_TYPE_SUMMONED) && !IsUnitIllusion(target);
     }
 
     private void EmpowerUnit(int level, unit target)
     {
-      target
-        .MultiplyBaseDamage(AttackDamageMultiplier.Base + AttackDamageMultiplier.PerLevel * level, 0)
-        .MultiplyAttackCooldown(1 / (AttackSpeedMultiplier.Base + AttackSpeedMultiplier.PerLevel * level), 0)
-        .MultiplyMaxHitpoints(MaxHealthMultiplier.Base + MaxHealthMultiplier.PerLevel * level)
-        .SetColor(100, 255, 150, 255)
-        .SetTimedLife(Duration)
-        .SetExplodeOnDeath(true)
-        .SetScale(1.1f); 
+      target.MultiplyBaseDamage(AttackDamageMultiplier.Base + AttackDamageMultiplier.PerLevel * level, 0);
+      target.MultiplyAttackCooldown(1 / (AttackSpeedMultiplier.Base + AttackSpeedMultiplier.PerLevel * level), 0);
+      target.MultiplyMaxHitpoints(MaxHealthMultiplier.Base + MaxHealthMultiplier.PerLevel * level);
+      SetUnitVertexColor(target, 100, 255, 150, 255);
+      target.SetTimedLife(Duration);
+      SetUnitExploded(target, true);
+      SetUnitScale(target, 1.1f, 1.1f, 1.1f);
 
-      if (target.GetTypeId() == UNIT_U013_SUPER_MAJOR_C_THUN)
-      {
-        target.SetScale(0.6f);
-      }
-  
-      AddSpecialEffect(EffectTarget, GetUnitX(target), GetUnitY(target))
-        .SetScale(EffectScaleTarget)
-        .SetLifespan()
-        .SetColor(0, 255, 0);
+      if (GetUnitTypeId(target) == UNIT_U013_SUPER_MAJOR_C_THUN) 
+        SetUnitScale(target, 0.6f, 0.6f, 0.6f);
+
+      var effect = AddSpecialEffect(EffectTarget, GetUnitX(target), GetUnitY(target));
+      BlzSetSpecialEffectScale(effect, EffectScaleTarget);
+      EffectSystem.Add(effect);
+      BlzSetSpecialEffectColor(effect, 0, 255, 0);
     }
 
   }

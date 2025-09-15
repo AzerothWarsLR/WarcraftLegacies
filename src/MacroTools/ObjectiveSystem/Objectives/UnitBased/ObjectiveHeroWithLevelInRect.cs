@@ -3,7 +3,6 @@ using MacroTools.Extensions;
 using MacroTools.QuestSystem;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
 {
@@ -28,24 +27,24 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       Description = $"Reach {rectName} with a level {targetLevel}+ hero";
       PingPath = "MinimapQuestTurnIn";
       DisplaysPosition = true;
-      
-      CreateTrigger()
-        .RegisterEnterRegion(targetRect)
-        .AddAction(() =>
-        {
-          var triggerUnit = GetTriggerUnit();
-          if (!IsUnitValid(triggerUnit)) 
-            return;
-          CompletingUnit = triggerUnit;
-          Progress = QuestProgress.Complete;
-        });
-      CreateTrigger()
-        .RegisterLeaveRegion(targetRect)
-        .AddAction(() =>
-        {
-          if (!IsValidUnitInRect()) 
-            Progress = QuestProgress.Incomplete;
-        });
+
+      var enterTrigger = CreateTrigger();
+      TriggerRegisterEnterRegion(enterTrigger, targetRect.Region, null);
+      TriggerAddAction(enterTrigger, () =>
+      {
+        var triggerUnit = GetTriggerUnit();
+        if (!IsUnitValid(triggerUnit)) 
+          return;
+        CompletingUnit = triggerUnit;
+        Progress = QuestProgress.Complete;
+      });
+      var leaveTrigger = CreateTrigger();
+      TriggerRegisterLeaveRegion(leaveTrigger, targetRect.Region, null);
+      TriggerAddAction(leaveTrigger, () =>
+      {
+        if (!IsValidUnitInRect()) 
+          Progress = QuestProgress.Incomplete;
+      });
       
       Position = new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
     }
@@ -57,7 +56,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     public string CompletingUnitName => CompletingUnit != null ? CompletingUnit.GetProperName() : "an unknown hero";
 
     private bool IsUnitValid(unit whichUnit) =>
-      EligibleFactions.Contains(whichUnit.OwningPlayer()) && whichUnit.IsAlive() && IsUnitType(whichUnit, UNIT_TYPE_HERO) &&
+      EligibleFactions.Contains(GetOwningPlayer(whichUnit)) && UnitAlive(whichUnit) && IsUnitType(whichUnit, UNIT_TYPE_HERO) &&
       GetHeroLevel(whichUnit) >= _targetLevel;
 
     private bool IsValidUnitInRect() => GlobalGroup.EnumUnitsInRect(_targetRect).Any(IsUnitValid);

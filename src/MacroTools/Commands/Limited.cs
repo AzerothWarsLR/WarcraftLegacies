@@ -6,7 +6,6 @@ using MacroTools.FactionSystem;
 using MacroTools.Libraries;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace MacroTools.Commands
 {
@@ -34,7 +33,7 @@ namespace MacroTools.Commands
       
       var limitedUnits = GlobalGroup
         .EnumUnitsOfPlayer(commandUser)
-        .Where(u => commandUser.GetObjectLimit(u.GetTypeId()) is > 0 and < Faction.UNLIMITED && u.IsAlive());
+        .Where(u => commandUser.GetObjectLimit(GetUnitTypeId(u)) is > 0 and < Faction.UNLIMITED && UnitAlive(u));
 
       foreach (var unit in limitedUnits)
       {

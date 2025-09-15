@@ -1,6 +1,5 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
-using static War3Api.Common;
 
 namespace MacroTools.PassiveAbilities
 {
@@ -34,12 +33,12 @@ namespace MacroTools.PassiveAbilities
     public void OnDeath()
     {
       var triggerUnit = GetTriggerUnit();
-      if (RequiredResearch != 0 && (GetPlayerTechCount(triggerUnit.OwningPlayer(), RequiredResearch, false) == 0))
+      if (RequiredResearch != 0 && (GetPlayerTechCount(GetOwningPlayer(triggerUnit), RequiredResearch, false) == 0))
         return;
       var pos = triggerUnit.GetPosition();
       for (var i = 0; i < CorpseCount; i++)
-        CreateCorpse(triggerUnit.OwningPlayer(), CorpseUnitTypeId, pos.X, pos.Y, triggerUnit.GetFacing());
-      triggerUnit.Remove();
+        CreateCorpse(GetOwningPlayer(triggerUnit), CorpseUnitTypeId, pos.X, pos.Y, GetUnitFacing(triggerUnit));
+      RemoveUnit(triggerUnit);
     }
   }
 }

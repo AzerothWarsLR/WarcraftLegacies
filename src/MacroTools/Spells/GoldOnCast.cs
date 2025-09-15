@@ -1,7 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace MacroTools.Spells
 {
@@ -15,7 +14,7 @@ namespace MacroTools.Spells
 
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      caster.OwningPlayer().AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, GoldToGrant);
+      GetOwningPlayer(caster).AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, GoldToGrant);
     }
   }
 }

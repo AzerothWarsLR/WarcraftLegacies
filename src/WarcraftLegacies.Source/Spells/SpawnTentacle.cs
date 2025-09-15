@@ -27,15 +27,15 @@ namespace WarcraftLegacies.Source.Spells
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
       var level = GetAbilityLevel(caster);
-      
-      CreateUnit(caster.OwningPlayer(), UnitTypeId, targetPoint.X, targetPoint.Y, caster.GetFacing())
-        .SetTimedLife(Duration.Base + Duration.PerLevel * level)
-        .SetDamageBase(AttackDamageBase.Base + AttackDamageBase.PerLevel * level)
-        .SetMaximumHitpoints(HitPoints.Base + HitPoints.PerLevel * level)
-        .SetLifePercent(100)
-        .SetAnimation("birth")
-        .QueueAnimation("stand")
-        .AddType(UNIT_TYPE_SUMMONED);
+
+      var tentacle = CreateUnit(GetOwningPlayer(caster), UnitTypeId, targetPoint.X, targetPoint.Y, GetUnitFacing(caster));
+      tentacle.SetTimedLife(Duration.Base + Duration.PerLevel * level);
+      BlzSetUnitBaseDamage(tentacle, AttackDamageBase.Base + AttackDamageBase.PerLevel * level, 0);
+      BlzSetUnitMaxHP(tentacle, HitPoints.Base + HitPoints.PerLevel * level);
+      tentacle.SetLifePercent(100);
+      SetUnitAnimation(tentacle, "birth");
+      QueueUnitAnimation(tentacle, "stand");
+      UnitAddType(tentacle, UNIT_TYPE_SUMMONED);
     }
   }
 }

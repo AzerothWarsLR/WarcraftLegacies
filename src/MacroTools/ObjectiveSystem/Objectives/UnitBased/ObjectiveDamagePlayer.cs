@@ -1,8 +1,6 @@
-﻿using MacroTools.Extensions;
-using MacroTools.QuestSystem;
+﻿using MacroTools.QuestSystem;
 using MacroTools.Setup;
 using WCSharp.Events;
-using static War3Api.Common;
 
 namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
 {
@@ -19,7 +17,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     {
       PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerTakesDamage, () =>
       {
-        if (IsPlayerOnSameTeamAsAnyEligibleFaction(GetEventDamageSource().OwningPlayer()))
+        if (IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(GetEventDamageSource())))
           Progress = QuestProgress.Complete;
       }, GetPlayerId(playerToDamage));
     }

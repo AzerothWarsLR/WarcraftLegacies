@@ -3,7 +3,6 @@ using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using System.Collections.Generic;
 using System.Linq;
-using MacroTools.Extensions;
 
 namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 {
@@ -45,7 +44,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
       foreach (var controlPoint in _progressByControlPoint.Keys.ToArray())
       {
         controlPoint.OwnerAllianceChanged += OnTargetOwnerAllianceChanged;
-        SetControlPointProgress(controlPoint, IsPlayerOnSameTeamAsAnyEligibleFaction(controlPoint.Unit.OwningPlayer()));
+        SetControlPointProgress(controlPoint, IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(controlPoint.Unit)));
       }
     }
 

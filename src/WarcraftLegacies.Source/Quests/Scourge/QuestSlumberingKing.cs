@@ -41,7 +41,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       {
         var completingUnit = _anyEnemyUnitInRectsObjective.CompletingUnit;
         return
-          $"A {GetUnitName(completingUnit)} under the control of {completingUnit?.OwningPlayer().GetFaction()?.ColoredName} has encroached on the shores of Northrend. Soon they will feel the biting chill of death.";
+          $"A {GetUnitName(completingUnit)} under the control of {(completingUnit != null ? GetOwningPlayer(completingUnit) : null).GetFaction()?.ColoredName} has encroached on the shores of Northrend. Soon they will feel the biting chill of death.";
       }
     }
 

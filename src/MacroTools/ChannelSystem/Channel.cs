@@ -1,7 +1,5 @@
 ﻿using System;
-using MacroTools.Extensions;
 using WCSharp.Events;
-using static War3Api.Common;
 
 namespace MacroTools.ChannelSystem
 {
@@ -96,8 +94,9 @@ namespace MacroTools.ChannelSystem
     /// </summary>
     internal void RegisterCancellationTrigger()
     {
-      _cancelTrigger = CreateTrigger().RegisterUnitEvent(Caster, EVENT_UNIT_SPELL_ENDCAST)
-        .AddAction(() => { Active = false; });
+      _cancelTrigger = CreateTrigger();
+      TriggerRegisterUnitEvent(_cancelTrigger, Caster, EVENT_UNIT_SPELL_ENDCAST);
+      TriggerAddAction(_cancelTrigger, () => { Active = false; });
     }
     
     /// <summary>

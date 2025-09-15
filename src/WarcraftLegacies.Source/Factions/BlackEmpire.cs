@@ -11,15 +11,15 @@ using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Factions
 {
-  public class BlackEmpire : Faction
+  public sealed class BlackEmpire : Faction
   {
 
     private readonly AllLegendSetup _allLegendSetup;
     private readonly PreplacedUnitSystem _preplacedUnitSystem;
 
     /// <inheritdoc />
-    public BlackEmpire(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("BlackEmpire", new[] {PLAYER_COLOR_MAROON, PLAYER_COLOR_RED, PLAYER_COLOR_BROWN},
-      @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
+    public BlackEmpire(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Black Empire",
+      PLAYER_COLOR_MAROON, @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
     {
       _allLegendSetup = allLegendSetup;
       _preplacedUnitSystem = preplacedUnitSystem;

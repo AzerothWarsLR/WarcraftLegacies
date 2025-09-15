@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
       if (!EnsureValidPositioning(createdUnit))
         return;
 
-      var owningFaction = createdUnit.OwningPlayer().GetFaction();
+      var owningFaction = GetOwningPlayer(createdUnit).GetFaction();
       var oilPower = owningFaction?.GetPowerByType<OilPower>();
       if (oilPower == null)
         throw new Exception(
@@ -48,7 +48,8 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
 
       if (oilPoolNearby == null)
       {
-        createdUnit.Kill().Remove();
+        KillUnit(createdUnit);
+        RemoveUnit(createdUnit);
         return;
       }
       
@@ -64,9 +65,10 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
     private static bool EnsureValidPositioning(unit createdUnit)
     {
       if (GlobalGroup.EnumUnitsInRange(createdUnit.GetPosition(), 900)
-          .All(x => x.GetTypeId() != createdUnit.GetTypeId() || x == createdUnit || !UnitAlive(x)))
+          .All(x => GetUnitTypeId(x) != GetUnitTypeId(createdUnit) || x == createdUnit || !UnitAlive(x)))
         return true;
-      createdUnit.Kill().Remove();
+      KillUnit(createdUnit);
+      RemoveUnit(createdUnit);
       return false;
     }
   }

@@ -1,7 +1,6 @@
 using System;
 using MacroTools.Extensions;
 using WCSharp.Events;
-using static War3Api.Common;
 
 namespace MacroTools.LegendSystem
 {
@@ -42,7 +41,7 @@ namespace MacroTools.LegendSystem
 
         if (_unit == null) 
           return;
-        _unitType = _unit.GetTypeId();
+        _unitType = GetUnitTypeId(_unit);
         OnChangeUnit();
         UnitChanged?.Invoke(this, new LegendChangeUnitEventArgs(this, previousUnit));
       }

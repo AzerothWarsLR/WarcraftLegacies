@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using MacroTools.Data;
 using MacroTools.Extensions;
 using MacroTools.SpellSystem;
+using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 
@@ -54,29 +55,27 @@ namespace WarcraftLegacies.Source.Spells
       var taurenToSummon = Math.Min(summonCap, availableTauren);
       for (var i = 0; i < taurenToSummon; i++)
       {
-        var summonedTauren = CreateUnit(caster.OwningPlayer(), RememberableUnitTypeId, targetPoint.X, targetPoint.Y, caster.GetFacing())
-          .SetColor(200, 165, 50, 150)
-          .MultiplyBaseDamage(1 + DamageBonus.Base + DamageBonus.PerLevel * level, 0)
-          .MultiplyMaxHitpoints(1 + HealthBonus.Base + HealthBonus.PerLevel * level)
-          .SetTimedLife(Duration)
-          .SetName("Ancestor")
-          .AddType(UNIT_TYPE_SUMMONED);
+        var summonedTauren = CreateUnit(GetOwningPlayer(caster), RememberableUnitTypeId, targetPoint.X, targetPoint.Y, GetUnitFacing(caster));
+        SetUnitVertexColor(summonedTauren, 200, 165, 50, 150);
 
-        CreateTrigger()
-          .RegisterUnitEvent(summonedTauren, EVENT_UNIT_DEATH)
-          .AddAction(() =>
-          {
-            AddSpecialEffect(DeathEffect, GetUnitX(summonedTauren), GetUnitY(summonedTauren))
-              .SetLifespan(1);
+        summonedTauren.MultiplyBaseDamage(1 + DamageBonus.Base + DamageBonus.PerLevel * level, 0);
+        summonedTauren.MultiplyMaxHitpoints(1 + HealthBonus.Base + HealthBonus.PerLevel * level);
+        summonedTauren.SetTimedLife(Duration);
+        BlzSetUnitName(summonedTauren, "Ancestor");
+        UnitAddType(summonedTauren, UNIT_TYPE_SUMMONED);
+
+        var deathTrigger = CreateTrigger();
+        TriggerRegisterUnitEvent(deathTrigger, summonedTauren, EVENT_UNIT_DEATH);
+        TriggerAddAction(deathTrigger, () =>
+        {
+          EffectSystem.Add(AddSpecialEffect(DeathEffect, GetUnitX(summonedTauren), GetUnitY(summonedTauren)), 1);
             
-            summonedTauren.Remove();
+          RemoveUnit(summonedTauren);
             
-            GetTriggeringTrigger()
-              .Destroy();
-          });
+          DestroyTrigger(GetTriggeringTrigger());
+        });
         
-        AddSpecialEffect(SummonEffect, targetPoint.X, targetPoint.Y)
-          .SetLifespan();
+        EffectSystem.Add(AddSpecialEffect(SummonEffect, targetPoint.X, targetPoint.Y));
       }
       ancestralLegionData.RememberedUnits -= taurenToSummon;
       RegenerateTooltip(caster);

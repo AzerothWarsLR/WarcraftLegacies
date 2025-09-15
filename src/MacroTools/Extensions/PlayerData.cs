@@ -5,7 +5,6 @@ using MacroTools.ControlPointSystem;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
 using MacroTools.Save;
-using static War3Api.Common;
 
 namespace MacroTools.Extensions
 {
@@ -179,7 +178,7 @@ namespace MacroTools.Extensions
         {
           if (value.Player == null)
           {
-            _player.SetColor(value.PlayerColor, true);
+            _player.SetColorAndChangeExisting(value.PlayerColor);
             _faction = value;
             //Enforce referential integrity
             if (value.Player != _player)
@@ -208,7 +207,8 @@ namespace MacroTools.Extensions
         return;
       
       _dialoguePlaying = true;
-      CreateTrigger().AddAction(() =>
+      var dialogueTrigger = CreateTrigger();
+      TriggerAddAction(dialogueTrigger, () =>
       {
         while (_dialogueQueue.Any())
         {
@@ -217,9 +217,11 @@ namespace MacroTools.Extensions
           TriggerSleepAction(nextDialogue.Length);
           TriggerSleepAction(5f);
         }
+
         _dialoguePlaying = false;
-        GetTriggeringTrigger().Destroy();
-      }).Execute();
+        DestroyTrigger(GetTriggeringTrigger());
+      });
+      TriggerExecute(dialogueTrigger);
     }
     
     /// <summary>

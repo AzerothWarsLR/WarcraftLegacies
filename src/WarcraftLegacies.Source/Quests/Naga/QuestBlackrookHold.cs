@@ -47,7 +47,8 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// <inheritdoc />
     protected override void OnAdd(Faction whichFaction)
     {
-      _blackrookHold.Unit?.SetInvulnerable(true);
+      if (_blackrookHold.Unit != null) 
+        SetUnitInvulnerable(_blackrookHold.Unit, true);
     }
   }
 }

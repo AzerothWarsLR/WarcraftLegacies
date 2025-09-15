@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using WCSharp.Buffs;
+﻿using WCSharp.Buffs;
 using WCSharp.Events;
 
 namespace WarcraftLegacies.Source.PassiveAbilities.Vengeance
@@ -55,8 +54,8 @@ namespace WarcraftLegacies.Source.PassiveAbilities.Vengeance
 
     private void OnInflictsDamage()
     {
-      var isAttackerAlliedToVictim = GetPlayerAlliance(GetEventDamageSource().OwningPlayer(),
-        GetTriggerUnit().OwningPlayer(), ALLIANCE_PASSIVE);
+      var isAttackerAlliedToVictim = GetPlayerAlliance(GetOwningPlayer(GetEventDamageSource()),
+        GetOwningPlayer(GetTriggerUnit()), ALLIANCE_PASSIVE);
       if (!BlzGetEventIsAttack() || isAttackerAlliedToVictim) 
         return;
       

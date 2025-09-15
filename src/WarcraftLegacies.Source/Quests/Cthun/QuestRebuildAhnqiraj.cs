@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
@@ -34,17 +33,15 @@ namespace WarcraftLegacies.Source.Quests.Cthun
       if (completingFaction.Player == null)
         return;
 
-      _gateAhnQiraj
-        .SetInvulnerable(false)
-        .SetOwner(completingFaction.Player);
+      SetUnitInvulnerable(_gateAhnQiraj, false);
+      SetUnitOwner(_gateAhnQiraj, completingFaction.Player, true);
     }
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
-      _gateAhnQiraj
-        .SetInvulnerable(false)
-        .SetOwner(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      SetUnitInvulnerable(_gateAhnQiraj, false);
+      SetUnitOwner(_gateAhnQiraj, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
     }
 
     /// <inheritdoc/>
@@ -55,6 +52,9 @@ namespace WarcraftLegacies.Source.Quests.Cthun
     protected override string RewardDescription => "Gain control of the gate of Ahn'Qiraj";
 
     /// <inheritdoc/>
-    protected override void OnAdd(Faction whichFaction) => _gateAhnQiraj.SetInvulnerable(true);
+    protected override void OnAdd(Faction whichFaction)
+    {
+      SetUnitInvulnerable(_gateAhnQiraj, true);
+    }
   }
 }

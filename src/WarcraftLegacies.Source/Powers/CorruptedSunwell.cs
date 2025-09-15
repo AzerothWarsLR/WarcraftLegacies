@@ -36,17 +36,17 @@ namespace WarcraftLegacies.Source.Powers
       var manaCost = BlzGetUnitAbilityManaCost(castingUnit, abilityId, abilityLevel - 1);
       var damageAmount = manaCost * 0.2f;
 
-      castingUnit.SetCurrentHitpoints((int)(castingUnit.GetCurrentHitPoints() - damageAmount));
+      SetUnitState(castingUnit, UNIT_STATE_LIFE, GetUnitState(castingUnit, UNIT_STATE_LIFE) - damageAmount);
       SetUnitState(castingUnit, UNIT_STATE_LIFE, GetUnitState(castingUnit, UNIT_STATE_LIFE) - damageAmount);
 
-      if (!UnitAlive(castingUnit))
-      {
-        var x = GetUnitX(castingUnit);
-        var y = GetUnitY(castingUnit);
-       CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), UNIT_N05K_WRETCHED_CORRUPTED_SUNWELL, x, y, 0)
-          .SetTimedLife(120.0f)
-          .AddType(UNIT_TYPE_SUMMONED);
-      }
+      if (UnitAlive(castingUnit)) 
+        return;
+
+      var x = GetUnitX(castingUnit);
+      var y = GetUnitY(castingUnit);
+      var wretched = CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), UNIT_N05K_WRETCHED_CORRUPTED_SUNWELL, x, y, 0);
+      wretched.SetTimedLife(120.0f);
+      UnitAddType(wretched, UNIT_TYPE_SUMMONED);
     }
   }
 }

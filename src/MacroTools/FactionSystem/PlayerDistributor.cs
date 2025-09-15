@@ -4,7 +4,6 @@ using MacroTools.Extensions;
 using MacroTools.LegendSystem;
 using MacroTools.Systems;
 using MacroTools.Utils;
-using static War3Api.Common;
 
 namespace MacroTools.FactionSystem
 {
@@ -120,18 +119,18 @@ namespace MacroTools.FactionSystem
         {
           if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE)) 
             refund.Gold += loopUnitType.GoldCost * RefundMultiplier;
-          unit
-            .DropAllItems()
-            .Kill()
-            .Remove();
+          
+          unit.DropAllItems();
+          KillUnit(unit);
+          RemoveUnit(unit);
           continue;
         }
 
         var newOwner = playerToDistribute.GetTeam()?.Size > 1
           ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count - 1)]
           : Player(GetBJPlayerNeutralVictim());
-        
-        unit.SetOwner(newOwner);
+
+        SetUnitOwner(unit, newOwner, true);
       }
       return refund;
     }

@@ -6,7 +6,6 @@ using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
-using static War3Api.Common;
 
 namespace MacroTools.Instances
 {
@@ -31,8 +30,8 @@ namespace MacroTools.Instances
       _rectangles = areas.ToArray();
       foreach (var rectangle in _rectangles)
         RegionAddRect(Region, rectangle.Rect);
-      _dependencyDiesTrigger = CreateTrigger()
-        .AddAction(Destroy);
+      _dependencyDiesTrigger = CreateTrigger();
+      TriggerAddAction(_dependencyDiesTrigger, Destroy);
     }
 
     /// <summary>Initializes a new instance of the <see cref="Instance"/> class.</summary>
@@ -73,7 +72,7 @@ namespace MacroTools.Instances
     public void AddDependency(unit dependency)
     {
       _dependencies.Add(dependency);
-      _dependencyDiesTrigger.RegisterUnitEvent(dependency, EVENT_UNIT_DEATH);
+      TriggerRegisterUnitEvent(_dependencyDiesTrigger, dependency, EVENT_UNIT_DEATH);
     }
     
     /// <summary>
@@ -83,7 +82,7 @@ namespace MacroTools.Instances
     {
       try
       {
-        _dependencyDiesTrigger.Destroy();
+        DestroyTrigger(_dependencyDiesTrigger);
         foreach (var rect in _rectangles)
         {
           var unitsInRect = GlobalGroup
@@ -97,7 +96,9 @@ namespace MacroTools.Instances
         }
 
         foreach (var unit in _dependencies)
-          unit.Kill();
+        {
+          KillUnit(unit);
+        }
       }
       catch (Exception ex)
       {

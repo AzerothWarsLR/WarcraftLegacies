@@ -41,7 +41,8 @@ namespace WarcraftLegacies.Source.Quests.Legion
       CreateUnit(completingFaction.Player, UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL, 11138, 12802, 0);
       CreateUnit(completingFaction.Player, UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL, 4860, 9277, 0);
       CreateUnit(completingFaction.Player, UNIT_U005_DREAD_SHRINE_LEGION_SPECIAL, 14725, 7356, 0);
-      _malganis.Unit?.SetAbilityLevel(ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS, 2);
+      if (_malganis.Unit != null) 
+        SetUnitAbilityLevel(_malganis.Unit, ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS, 2);
     }
   }
 }

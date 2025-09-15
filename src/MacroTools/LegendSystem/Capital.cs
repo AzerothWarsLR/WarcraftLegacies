@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using static War3Api.Common;
 
 namespace MacroTools.LegendSystem
 {
@@ -43,7 +41,9 @@ namespace MacroTools.LegendSystem
         if (!BlzIsUnitInvulnerable(Unit))
           throw new Exception(
             $"{GetUnitName(Unit)}'s last protector died, which should make it vulnerable, but it is already vulnerable.");
-        Unit?.SetInvulnerable(false);
+
+        if (Unit != null) 
+          SetUnitInvulnerable(Unit, false);
       }
       catch (Exception ex)
       {
@@ -58,35 +58,47 @@ namespace MacroTools.LegendSystem
     public void AddProtector(unit whichUnit)
     {
       if (ProtectorsByUnit.ContainsKey(whichUnit))
-        throw new InvalidOperationException($"{whichUnit.GetName()} is already registered as a Protector for {Name}.");
+        throw new InvalidOperationException($"{GetUnitName(whichUnit)} is already registered as a Protector for {Name}.");
       
       var protector = new Protector(whichUnit);
       _protectors.Add(protector);
       ProtectorsByUnit.Add(whichUnit, protector);
-      Unit?.SetInvulnerable(true);
+      if (Unit != null) 
+        SetUnitInvulnerable(Unit, true);
+
       protector.ProtectorDied += OnProtectorDeath;
     }
     
     /// <inheritdoc />
     protected override void OnChangeUnit()
     {
-      _deathTrig?.Destroy();
-      _deathTrig = CreateTrigger()
-        .RegisterUnitEvent(Unit, EVENT_UNIT_DEATH)
-        .AddAction(OnDeath);
+      if (_deathTrig != null) 
+        DestroyTrigger(_deathTrig);
 
-      _damageTrig?.Destroy();
-      _damageTrig = CreateTrigger()
-        .RegisterUnitEvent(Unit, EVENT_UNIT_DAMAGED)
-        .AddAction(OnDamaged);
+      _deathTrig = CreateTrigger();
+      TriggerRegisterUnitEvent(_deathTrig, Unit, EVENT_UNIT_DEATH);
+      TriggerAddAction(_deathTrig, OnDeath);
 
-      _ownerTrig?.Destroy();
-      _ownerTrig = CreateTrigger()
-        .RegisterUnitEvent(Unit, EVENT_UNIT_CHANGE_OWNER)
-        .AddAction(() =>
-        {
-          OnChangeOwner(new LegendChangeOwnerEventArgs(this, GetChangingUnitPrevOwner()));
-        });
+      if (_damageTrig != null)
+      {
+        DestroyTrigger(_damageTrig);
+      }
+
+      _damageTrig = CreateTrigger();
+      TriggerRegisterUnitEvent(_damageTrig, Unit, EVENT_UNIT_DAMAGED);
+      TriggerAddAction(_damageTrig, OnDamaged);
+
+      if (_ownerTrig != null)
+      {
+        DestroyTrigger(_ownerTrig);
+      }
+
+      _ownerTrig = CreateTrigger();
+      TriggerRegisterUnitEvent(_ownerTrig, Unit, EVENT_UNIT_CHANGE_OWNER);
+      TriggerAddAction(_ownerTrig, () =>
+      {
+        OnChangeOwner(new LegendChangeOwnerEventArgs(this, GetChangingUnitPrevOwner()));
+      });
     }
     
     private void OnDamaged()
