@@ -102,14 +102,6 @@ namespace MacroTools.Extensions
     public static Point GetPosition(this unit unit) => new(GetUnitX(unit), GetUnitY(unit));
 
     /// <summary>
-    /// Returns the current owner of the specified unit.
-    /// </summary>
-    public static player OwningPlayer(this unit unit)
-    {
-      return GetOwningPlayer(unit);
-    }
-
-    /// <summary>
     ///   Sets the Waygate's destination to the target point.
     ///   Blindly assumes that the unit is a Waygate.
     /// </summary>
@@ -147,7 +139,7 @@ namespace MacroTools.Extensions
       var face = GetUnitFacing(whichUnit);
       DestroyEffect(AddSpecialEffect(@"Abilities\Spells\Human\Resurrect\ResurrectTarget.mdl", x, y));
       RemoveUnit(whichUnit);
-      CreateUnit(OwningPlayer(whichUnit), unitType, x, y, face);
+      CreateUnit(GetOwningPlayer(whichUnit), unitType, x, y, face);
     }
 
     /// <summary>
@@ -415,7 +407,7 @@ namespace MacroTools.Extensions
     public static bool IsResistant(this unit whichUnit)
     {
       return IsUnitType(whichUnit, UNIT_TYPE_RESISTANT) || IsUnitType(whichUnit, UNIT_TYPE_HERO) ||
-             (whichUnit.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && whichUnit.GetLevel() >= 6);
+             (GetOwningPlayer(whichUnit) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && whichUnit.GetLevel() >= 6);
     }
 
     /// <summary>

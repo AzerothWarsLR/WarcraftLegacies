@@ -62,7 +62,7 @@ namespace MacroTools.Powers
 
         return;
       EffectSystem.Add(AddSpecialEffect(@"Abilities\Spells\Items\AIil\AIilTarget.mdl", _returnPoint.X, _returnPoint.Y));
-      CreateUnit(dyingUnit.OwningPlayer(), _unitTypeId, _returnPoint.X, _returnPoint.Y, 0);
+      CreateUnit(GetOwningPlayer(dyingUnit), _unitTypeId, _returnPoint.X, _returnPoint.Y, 0);
     }
   }
 }

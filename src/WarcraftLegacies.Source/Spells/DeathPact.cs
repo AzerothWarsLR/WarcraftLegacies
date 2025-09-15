@@ -40,7 +40,7 @@ namespace WarcraftLegacies.Source.Spells
     {
         try
         {
-            var casterPlayer = caster.OwningPlayer();
+            var casterPlayer = GetOwningPlayer(caster);
             var casterPosition = caster.GetPosition();
 
           
@@ -104,7 +104,7 @@ namespace WarcraftLegacies.Source.Spells
             return false;
 
         return UnitAlive(target) &&
-               target.OwningPlayer() == casterPlayer &&
+               GetOwningPlayer(target) == casterPlayer &&
                !target.IsResistant() &&
                !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
                !IsUnitType(target, UNIT_TYPE_ANCIENT) &&

@@ -18,7 +18,7 @@ namespace MacroTools.DummyCasters
     public void CastUnit(unit caster, int abilId, int orderId, int level, unit target, DummyCastOriginType originType)
     {
       var originPoint = originType == DummyCastOriginType.Caster ? caster.GetPosition() : target.GetPosition();
-      var owningPlayer = caster.OwningPlayer();
+      var owningPlayer = GetOwningPlayer(caster);
       SetUnitOwner(_unit, owningPlayer, true);
       _unit.SetPosition(originPoint);
       _unit.AddAbility(abilId);
@@ -33,7 +33,7 @@ namespace MacroTools.DummyCasters
 
     public void CastNoTarget(unit caster, int abilId, int orderId, int level)
     {
-      var owningPlayer = caster.OwningPlayer();
+      var owningPlayer = GetOwningPlayer(caster);
       SetUnitOwner(_unit, owningPlayer, true);
       _unit.SetPosition(caster.GetPosition());
       _unit.AddAbility(abilId);
@@ -48,7 +48,7 @@ namespace MacroTools.DummyCasters
     /// </summary>
     public void CastNoTargetOnUnit(unit caster, int abilId, int orderId, int level, unit target)
     {
-      var owningPlayer = caster.OwningPlayer();
+      var owningPlayer = GetOwningPlayer(caster);
       SetUnitOwner(_unit, owningPlayer, true);
       _unit.SetPosition(target.GetPosition());
       _unit.AddAbility(abilId);

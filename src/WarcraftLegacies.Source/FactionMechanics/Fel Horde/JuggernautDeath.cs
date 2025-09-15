@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.Systems;
+﻿using MacroTools.Systems;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 
@@ -40,7 +39,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Fel_Horde
       {
         foreach (var juggernaut in dependentJuggernauts)
         {
-          player whichPlayer = GetTriggerUnit().OwningPlayer();
+          player whichPlayer = GetOwningPlayer(GetTriggerUnit());
           SetUnitOwner(juggernaut, whichPlayer, true);
         }
       }, powerGenerator);

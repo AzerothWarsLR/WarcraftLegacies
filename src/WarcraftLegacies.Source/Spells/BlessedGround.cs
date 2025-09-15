@@ -94,7 +94,7 @@ namespace WarcraftLegacies.Source.Spells
         private static bool IsValidTarget(unit caster, unit target)
         {
             return UnitAlive(target) &&
-                   IsUnitAlly(target, caster.OwningPlayer()) &&
+                   IsUnitAlly(target, GetOwningPlayer(caster)) &&
                    !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
                    !IsUnitType(target, UNIT_TYPE_ANCIENT);
         }

@@ -50,7 +50,7 @@ namespace MacroTools.Buffs
 
       _progressEffect = AddSpecialEffect("war3mapImported\\Progressbar10sec.mdx", TargetPosition.X, TargetPosition.Y);
       BlzSetSpecialEffectTimeScale(_progressEffect, 10 / Duration);
-      BlzSetSpecialEffectColorByPlayer(_progressEffect, Caster.OwningPlayer());
+      BlzSetSpecialEffectColorByPlayer(_progressEffect, GetOwningPlayer(Caster));
       BlzSetSpecialEffectHeight(_progressEffect, 185f + Environment.GetPositionZ(TargetPosition));
     }
 

@@ -53,9 +53,9 @@ namespace WarcraftLegacies.Source.Powers
 
     private void OnPlayerTakesDamage()
     {
-      var owner = GetTriggerUnit().OwningPlayer();
+      var owner = GetOwningPlayer(GetTriggerUnit());
       if (!GetTriggerUnit().IsControlPoint() 
-          || _shaladrassil.OwningPlayer() != owner
+          || GetOwningPlayer(_shaladrassil) != owner
           || !(GetUnitState(_shaladrassil, UNIT_STATE_MANA) >= _manaCost)
           || GetTriggerUnit().GetLifePercent() < 100)
         return;

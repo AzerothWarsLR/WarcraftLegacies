@@ -14,7 +14,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
       var soldUnit = GetSoldUnit();
       var facing = GetUnitFacing(triggerUnit);
       BlzSetUnitFacingEx(soldUnit, facing);
-      soldUnit.OwningPlayer().Select(soldUnit);
+      GetOwningPlayer(soldUnit).Select(soldUnit);
     }
 
     public static void Setup() => PlayerUnitEvents.Register(UnitTypeEvent.SellsUnit, OnSell, AcolyteId);

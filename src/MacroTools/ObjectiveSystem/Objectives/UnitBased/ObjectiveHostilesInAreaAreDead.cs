@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MacroTools.Extensions;
 using MacroTools.QuestSystem;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
@@ -43,7 +42,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
       foreach (var rectangle in rectangles)
       {
         var unitsInAreas = GlobalGroup.EnumUnitsInRect(rectangle)
-          .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !IsUnitType(x, UNIT_TYPE_ANCIENT) &&
+          .Where(x => GetOwningPlayer(x) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !IsUnitType(x, UNIT_TYPE_ANCIENT) &&
                       !IsUnitType(x, UNIT_TYPE_SAPPER));
         foreach (var unit in unitsInAreas)
         {

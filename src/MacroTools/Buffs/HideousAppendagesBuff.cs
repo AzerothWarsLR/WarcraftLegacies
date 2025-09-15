@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MacroTools.Extensions;
 using MacroTools.Libraries;
 using WCSharp.Buffs;
 using WCSharp.Events;
@@ -43,7 +42,7 @@ namespace MacroTools.Buffs
     private void OnOwnershipChanged()
     {
       foreach (var tentacle in _tentacles) 
-        SetUnitOwner(tentacle, Target.OwningPlayer(), true);
+        SetUnitOwner(tentacle, GetOwningPlayer(Target), true);
     }
 
     private void SpawnTentacles()

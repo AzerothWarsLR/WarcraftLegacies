@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Setup
       //Control Nexus inside Outland
       PlayerUnitEvents.Register(UnitEvent.ChangesOwner, () =>
       {
-        var newOwner = GetTriggerUnit().OwningPlayer();
+        var newOwner = GetOwningPlayer(GetTriggerUnit());
         SetUnitOwner(preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_1.Center), newOwner, true);
         SetUnitOwner(preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_2.Center), newOwner, true);
         SetUnitOwner(preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_3.Center), newOwner, true);
@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Setup
       //Control Nexus outside Outland
       PlayerUnitEvents.Register(UnitEvent.ChangesOwner, () =>
       {
-        var newOwner = GetTriggerUnit().OwningPlayer();
+        var newOwner = GetOwningPlayer(GetTriggerUnit());
         SetUnitOwner(preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_1.Center), newOwner, true);
         SetUnitOwner(preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_2.Center), newOwner, true);
         SetUnitOwner(preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_3.Center), newOwner, true);

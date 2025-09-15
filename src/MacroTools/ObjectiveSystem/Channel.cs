@@ -63,7 +63,7 @@ namespace MacroTools.ObjectiveSystem
       SetUnitInvulnerable(caster, false);
       _sfxProgress = AddSpecialEffect(ProgressEffect, GetUnitX(caster), GetUnitY(caster));
       BlzSetSpecialEffectTimeScale(_sfxProgress, 10 / (float)duration);
-      BlzSetSpecialEffectColorByPlayer(_sfxProgress, caster.OwningPlayer());
+      BlzSetSpecialEffectColorByPlayer(_sfxProgress, GetOwningPlayer(caster));
       BlzSetSpecialEffectScale(_sfxProgress, ProgressScale);
       BlzSetSpecialEffectHeight(_sfxProgress, ProgressHeight + Environment.GetPositionZ(position));
       _sfx = AddSpecialEffect(Effect, GetUnitX(caster), GetUnitY(caster));

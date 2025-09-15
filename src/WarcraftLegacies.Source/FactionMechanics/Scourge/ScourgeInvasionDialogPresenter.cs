@@ -28,7 +28,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
       const float degreesToRadians = (float)(Math.PI / 180);
 
       var unitsToTeleport = GlobalGroup.EnumUnitsInRect(Regions.Northrend_Ambiance)
-        .Where(x => x.OwningPlayer() == pickingPlayer)
+        .Where(x => GetOwningPlayer(x) == pickingPlayer)
         .Where(unit => !IsUnitType(unit, UNIT_TYPE_STRUCTURE) &&
                        !IsUnitType(unit, UNIT_TYPE_ANCIENT) &&
                        !IsUnitType(unit, UNIT_TYPE_PEON) &&

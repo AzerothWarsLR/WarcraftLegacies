@@ -68,7 +68,7 @@ namespace MacroTools.PassiveAbilities
       var caster = GetEventDamageSource();
 
       if (IsUnitType(triggerUnit, UNIT_TYPE_STRUCTURE) || ControlPointManager.Instance.UnitIsControlPoint(triggerUnit) ||
-        IsUnitAlly(triggerUnit, caster.OwningPlayer()) || GetUnitAbilityLevel(caster, _abilityTypeId) == 0)
+        IsUnitAlly(triggerUnit, GetOwningPlayer(caster)) || GetUnitAbilityLevel(caster, _abilityTypeId) == 0)
       {
         return;
       }

@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.LegendSystem;
+﻿using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
 
 namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
@@ -29,7 +28,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
       TriggerRegisterUnitEvent(changeTrigger, _target.Unit, EVENT_UNIT_CHANGE_OWNER);
       TriggerAddAction(changeTrigger, () =>
       {
-        if (GetTriggerUnit().OwningPlayer() != faction.Player) 
+        if (GetOwningPlayer(GetTriggerUnit()) != faction.Player) 
           Progress = QuestProgress.Failed;
       });
     }

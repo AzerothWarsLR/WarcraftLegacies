@@ -64,7 +64,7 @@ namespace WarcraftLegacies.Source.Spells
                     return;
 
             
-                if (!IsUnitEnemy(damagedUnit, caster.OwningPlayer()) || IsUnitType(damagedUnit, UNIT_TYPE_STRUCTURE) || IsUnitType(damagedUnit, UNIT_TYPE_ANCIENT))
+                if (!IsUnitEnemy(damagedUnit, GetOwningPlayer(caster)) || IsUnitType(damagedUnit, UNIT_TYPE_STRUCTURE) || IsUnitType(damagedUnit, UNIT_TYPE_ANCIENT))
                     return;
 
                 var damageDealt = GetEventDamage();
@@ -80,7 +80,7 @@ namespace WarcraftLegacies.Source.Spells
                 // Heal nearby allies
                 foreach (var nearbyUnit in GlobalGroup.EnumUnitsInRange(caster.GetPosition(), Radius))
                 {
-                    if (nearbyUnit == caster || !IsUnitAlly(nearbyUnit, caster.OwningPlayer()) || !UnitAlive(nearbyUnit))
+                    if (nearbyUnit == caster || !IsUnitAlly(nearbyUnit, GetOwningPlayer(caster)) || !UnitAlive(nearbyUnit))
                         continue;
 
                     

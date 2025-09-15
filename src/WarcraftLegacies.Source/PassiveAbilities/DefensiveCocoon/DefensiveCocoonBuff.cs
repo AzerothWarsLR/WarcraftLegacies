@@ -27,7 +27,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon
       BlzPauseUnitEx(Target, true);
       ShowUnit(Target, false);
 
-      _egg = CreateUnit(Target.OwningPlayer(), EggId, GetUnitX(Target), GetUnitY(Target), 0);
+      _egg = CreateUnit(GetOwningPlayer(Target), EggId, GetUnitX(Target), GetUnitY(Target), 0);
       _egg.SetTimedLife(Duration + 1);
       BlzSetUnitMaxHP(_egg, MaximumHitPoints);
       _egg.SetLifePercent(100);

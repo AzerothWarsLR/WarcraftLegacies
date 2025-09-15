@@ -1,6 +1,5 @@
 ﻿using System;
 using MacroTools.Data;
-using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.SpellSystem;
 using WCSharp.Effects;
@@ -92,7 +91,7 @@ namespace WarcraftLegacies.Source.Spells
 
         var projectileDestination = GetProjectileDestination(projectileOrigin, casterFacing);
         
-        var missile = new ApocalypseProjectile(caster.OwningPlayer(), projectileOrigin.X, projectileOrigin.Y,
+        var missile = new ApocalypseProjectile(GetOwningPlayer(caster), projectileOrigin.X, projectileOrigin.Y,
           projectileDestination.X, projectileDestination.Y)
         {
           CollisionRadius = ProjectileRadius,

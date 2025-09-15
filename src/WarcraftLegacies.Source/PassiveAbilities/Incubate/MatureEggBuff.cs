@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.Incubate
       if (rallyPoint.X == 0 && rallyPoint.Y == 0)
         rallyPoint = Target.GetPosition();
       
-      CreateUnit(Target.OwningPlayer(), HatchedUnitTypeId, GetUnitX(Target), GetUnitY(Target), 270)
+      CreateUnit(GetOwningPlayer(Target), HatchedUnitTypeId, GetUnitX(Target), GetUnitY(Target), 270)
         .IssueOrder("attack", rallyPoint);
     }
   }

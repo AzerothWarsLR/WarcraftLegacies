@@ -33,7 +33,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     {
       PlayerUnitEvents.Register(UnitEvent.SpellEffect, () =>
       {
-        if (GetSpellAbilityId() == _spellId && IsPlayerOnSameTeamAsAnyEligibleFaction(_caster.OwningPlayer()))
+        if (GetSpellAbilityId() == _spellId && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_caster)))
           Progress = QuestProgress.Complete;
       }, _caster);
     }

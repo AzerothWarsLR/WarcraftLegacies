@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
       if (!EnsureValidPositioning(createdUnit))
         return;
 
-      var owningFaction = createdUnit.OwningPlayer().GetFaction();
+      var owningFaction = GetOwningPlayer(createdUnit).GetFaction();
       var oilPower = owningFaction?.GetPowerByType<OilPower>();
       if (oilPower == null)
         throw new Exception(

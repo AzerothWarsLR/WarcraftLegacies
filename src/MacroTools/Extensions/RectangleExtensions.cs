@@ -59,7 +59,7 @@ namespace MacroTools.Extensions
 
       foreach (var unit in unitsInArea)
       {
-        if (unit.OwningPlayer() != Player(PLAYER_NEUTRAL_PASSIVE) || GetUnitTypeId(unit) == FourCC("ngol"))
+        if (GetOwningPlayer(unit) != Player(PLAYER_NEUTRAL_PASSIVE) || GetUnitTypeId(unit) == FourCC("ngol"))
           continue;
 
         if (!unit.IsRemovable())
@@ -84,7 +84,7 @@ namespace MacroTools.Extensions
       var unitsInArea = GlobalGroup
         .EnumUnitsInRect(area);
       foreach (var unit in unitsInArea)
-        if (unit.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && unit.IsRemovable()) 
+        if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && unit.IsRemovable()) 
           RemoveUnit(unit);
     }
     
@@ -101,7 +101,7 @@ namespace MacroTools.Extensions
     {
       var group = GlobalGroup
         .EnumUnitsInRect(rectangle)
-        .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE) && filter.Invoke(x))
+        .Where(x => GetOwningPlayer(x) == Player(PLAYER_NEUTRAL_PASSIVE) && filter.Invoke(x))
         .ToList();
       foreach (var unit in group)
       {

@@ -32,7 +32,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 
     public override void OnAdd(Faction whichFaction)
     {
-      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
+      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
       {
         Progress = QuestProgress.Complete;
       }
@@ -46,7 +46,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 
     private void RecalculateProgress()
     {
-      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
+      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
         Progress = QuestProgress.Complete;
       else
         Progress = _failOnControlLoss ? QuestProgress.Failed : QuestProgress.Incomplete;

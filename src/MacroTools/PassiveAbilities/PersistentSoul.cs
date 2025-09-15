@@ -53,7 +53,7 @@ namespace MacroTools.PassiveAbilities
                  .ThenBy(x => MathEx.GetDistanceBetweenPoints(caster.GetPosition(), x.GetPosition()))
                  .Take(ReanimationCountLevel * GetUnitAbilityLevel(caster, _abilityTypeId)))
       {
-        Reanimate(caster.OwningPlayer(), unit);
+        Reanimate(GetOwningPlayer(caster), unit);
       }
     }
 

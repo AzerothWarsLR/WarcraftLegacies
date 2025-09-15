@@ -166,7 +166,7 @@ namespace MacroTools.ControlPointSystem
       }
       
       controlPoint.OnRegister();
-      if (controlPoint.Unit.OwningPlayer() != Player(PLAYER_NEUTRAL_AGGRESSIVE))
+      if (GetOwningPlayer(controlPoint.Unit) != Player(PLAYER_NEUTRAL_AGGRESSIVE))
         controlPoint.Unit.AddAbility(RegenerationAbility);
     }
 
@@ -212,7 +212,7 @@ namespace MacroTools.ControlPointSystem
           previousOwner.RemoveControlPoint(controlPoint);
           previousOwner.BaseIncome -= controlPoint.Value;
 
-          var newOwner = PlayerData.ByHandle(GetTriggerUnit().OwningPlayer());
+          var newOwner = PlayerData.ByHandle(GetOwningPlayer(GetTriggerUnit()));
           newOwner.AddControlPoint(controlPoint);
           newOwner.BaseIncome += controlPoint.Value;
 
@@ -283,7 +283,7 @@ namespace MacroTools.ControlPointSystem
       controlPoint.Unit
         .ShowAttackUi(false);
 
-      if (initialize && controlPoint.Unit.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+      if (initialize && GetOwningPlayer(controlPoint.Unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE))
         SetUnitState(controlPoint.Unit, UNIT_STATE_LIFE, HostileStartingCurrentHitPoints);
       else
         controlPoint.Unit.SetLifePercent(lifePercent);

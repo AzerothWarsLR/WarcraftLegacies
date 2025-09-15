@@ -47,7 +47,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 
     public override void OnAdd(Faction whichFaction)
     {
-      Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer())
+      Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit))
         ? QuestProgress.Complete
         : QuestProgress.Incomplete;
       
@@ -56,7 +56,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
 
     private void RefreshProgress()
     {
-      if (_currentKillCount == _maxKillCount && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer())) 
+      if (_currentKillCount == _maxKillCount && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit))) 
         Progress = QuestProgress.Complete;
     }
 
@@ -64,7 +64,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.ControlPointBased
     {
       var unitsNearby = GlobalGroup
         .EnumUnitsInRange(_target.Unit.GetPosition(), range)
-          .Where(x => x.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !IsUnitType(x, UNIT_TYPE_ANCIENT) &&
+          .Where(x => GetOwningPlayer(x) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !IsUnitType(x, UNIT_TYPE_ANCIENT) &&
            !IsUnitType(x, UNIT_TYPE_SAPPER) && !IsUnitType(x, UNIT_TYPE_STRUCTURE)); 
 
       foreach (var unit in unitsNearby)

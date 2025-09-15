@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
       _state = SlipstreamPortalState.Opening;
       _progressBar = AddSpecialEffect(@"war3mapImported\Progressbar10sec.mdx", Target.GetPosition().X, Target.GetPosition().Y);
       BlzSetSpecialEffectTimeScale(_progressBar, 10f / delay);
-      BlzSetSpecialEffectColorByPlayer(_progressBar, Caster.OwningPlayer());
+      BlzSetSpecialEffectColorByPlayer(_progressBar, GetOwningPlayer(Caster));
       BlzSetSpecialEffectHeight(_progressBar, 450);
       SetUnitTimeScale(Target, 9.3f * (1 / delay));
       SetUnitAnimation(Target, "birth");

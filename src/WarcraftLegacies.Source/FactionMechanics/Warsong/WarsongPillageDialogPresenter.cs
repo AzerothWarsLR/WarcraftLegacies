@@ -100,8 +100,8 @@ namespace WarcraftLegacies.Source.FactionMechanics.Warsong
 
       foreach (var unit in GlobalGroup.EnumUnitsInRect(choice.Location)
                  .Where(unit => IsUnitType(unit, UNIT_TYPE_STRUCTURE) &&
-                                (unit.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE) ||
-                                 unit.OwningPlayer() == Player(PLAYER_NEUTRAL_PASSIVE))))
+                                (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE) ||
+                                 GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))))
       {
         unit.SetLifePercent(15);
       }

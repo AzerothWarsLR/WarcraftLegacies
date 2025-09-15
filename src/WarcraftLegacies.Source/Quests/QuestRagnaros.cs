@@ -48,7 +48,7 @@ namespace WarcraftLegacies.Source.Quests
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      SetUnitOwner(_ragnarosSummoningPedestal, _heroInRectObjective.CompletingUnit?.OwningPlayer() ?? Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
+      SetUnitOwner(_ragnarosSummoningPedestal, GetOwningPlayer(_heroInRectObjective.CompletingUnit) ?? Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
       SetUnitInvulnerable(_ragnarosSummoningPedestal, false);
     }
 

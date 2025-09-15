@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MacroTools.Extensions;
 using WCSharp.Missiles;
 
 namespace WarcraftLegacies.Source.Spells.MassiveAttack;
@@ -42,6 +41,6 @@ public sealed class MassiveAttackProjectile : BasicMissile
     UnitAlive(target) &&
     !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
     !IsUnitType(target, UNIT_TYPE_ANCIENT) &&
-    !IsPlayerAlly(caster.OwningPlayer(), target.OwningPlayer())
+    !IsPlayerAlly(GetOwningPlayer(caster), GetOwningPlayer(target))
     |Hits.Contains(target);
 }

@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
 
@@ -33,7 +32,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 
     public override void OnAdd(Faction whichFaction)
     {
-      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
+      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
         Progress = _incompleteState;
       else
         Progress = QuestProgress.Complete;
@@ -41,7 +40,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
 
     private void OnTargetChangeOwner(object? sender, LegendChangeOwnerEventArgs legendChangeOwnerEventArgs)
     {
-      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.OwningPlayer()))
+      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
         Progress = _incompleteState;
       else
         Progress = QuestProgress.Complete;

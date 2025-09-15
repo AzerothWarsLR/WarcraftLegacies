@@ -43,9 +43,9 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     public string CompletingUnitName => CompletingUnit != null ? CompletingUnit.GetProperName() : "an unknown hero";
 
     private bool IsUnitValid(unit whichUnit) =>
-      !IsPlayerOnSameTeamAsAnyEligibleFaction(whichUnit.OwningPlayer()) && UnitAlive(whichUnit) &&
-      whichUnit.OwningPlayer() != Player(PLAYER_NEUTRAL_AGGRESSIVE) &&
-      whichUnit.OwningPlayer() != Player(PLAYER_NEUTRAL_PASSIVE) &&
+      !IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(whichUnit)) && UnitAlive(whichUnit) &&
+      GetOwningPlayer(whichUnit) != Player(PLAYER_NEUTRAL_AGGRESSIVE) &&
+      GetOwningPlayer(whichUnit) != Player(PLAYER_NEUTRAL_PASSIVE) &&
       EligibilityCondition(whichUnit);
     
     private bool IsValidUnitInRects()

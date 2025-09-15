@@ -95,6 +95,6 @@ namespace WarcraftLegacies.Source.Spells.Reap
       !IsUnitType(target, UNIT_TYPE_ANCIENT) && 
       !IsUnitType(target, UNIT_TYPE_MECHANICAL) &&
       !IsUnitType(target, UNIT_TYPE_MAGIC_IMMUNE) && 
-      !IsPlayerAlly(caster.OwningPlayer(), target.OwningPlayer());
+      !IsPlayerAlly(GetOwningPlayer(caster), GetOwningPlayer(target));
   }
 }

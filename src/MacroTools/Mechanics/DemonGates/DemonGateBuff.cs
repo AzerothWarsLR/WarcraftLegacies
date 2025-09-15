@@ -98,8 +98,8 @@ namespace MacroTools.Mechanics.DemonGates
       if (Progress < _spawnInterval)
         Progress += Interval;
       if (Progress >= _spawnInterval
-          && Caster.OwningPlayer().GetFoodUsed() < Caster.OwningPlayer().GetFoodCap()
-          && Caster.OwningPlayer().GetFoodUsed() < Caster.OwningPlayer().GetFoodCapCeiling()
+          && GetOwningPlayer(Caster).GetFoodUsed() < GetOwningPlayer(Caster).GetFoodCap()
+          && GetOwningPlayer(Caster).GetFoodUsed() < GetOwningPlayer(Caster).GetFoodCapCeiling()
           && GetUnitAbilityLevel(Caster, _toggleBuffTypeId) > 0
           && _spawnedDemons.Count <= SpawnLimit - _spawnCount)
       {
@@ -132,7 +132,7 @@ namespace MacroTools.Mechanics.DemonGates
     {
       for (var i = 0; i < _spawnCount; i++)
       {
-        var spawnedDemon = CreateUnit(Target.OwningPlayer(), _demonUnitTypeId, SpawnPoint.X, SpawnPoint.Y,
+        var spawnedDemon = CreateUnit(GetOwningPlayer(Target), _demonUnitTypeId, SpawnPoint.X, SpawnPoint.Y,
           GetUnitFacing(Target) + FacingOffset);
         spawnedDemon.IssueOrder(OrderId("attack"), RallyPoint);
         

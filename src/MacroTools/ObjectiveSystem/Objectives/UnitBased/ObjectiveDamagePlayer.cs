@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.QuestSystem;
+﻿using MacroTools.QuestSystem;
 using MacroTools.Setup;
 using WCSharp.Events;
 
@@ -18,7 +17,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
     {
       PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerTakesDamage, () =>
       {
-        if (IsPlayerOnSameTeamAsAnyEligibleFaction(GetEventDamageSource().OwningPlayer()))
+        if (IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(GetEventDamageSource())))
           Progress = QuestProgress.Complete;
       }, GetPlayerId(playerToDamage));
     }

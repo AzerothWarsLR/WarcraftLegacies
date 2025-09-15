@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Researches.Ahnqiraj
         var position = worker.GetPosition();
         var facing = GetUnitFacing(worker);
         var hitPointsPercentage = worker.GetLifePercent();
-        var owner = worker.OwningPlayer();
+        var owner = GetOwningPlayer(worker);
 
         EffectSystem.Add(AddSpecialEffect(@"Objects\Spawnmodels\Critters\Albatross\CritterBloodAlbatross.mdl", position.X, position.Y));
         
