@@ -69,7 +69,7 @@ namespace WarcraftLegacies.Source.Spells.Slipstream
             targetPoint.Y) < 500) && InstanceSystem.GetPointInstance(caster.GetPosition()) ==
           InstanceSystem.GetPointInstance(targetPoint))
         return;
-      caster.IssueOrder("stop");
+      IssueImmediateOrder(caster, "stop");
       Refund(caster);
     }
 

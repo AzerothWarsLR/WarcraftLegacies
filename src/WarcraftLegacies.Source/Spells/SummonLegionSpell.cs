@@ -21,7 +21,7 @@ namespace WarcraftLegacies.Source.Spells
 
       TimerStart(CreateTimer(), 1f, false, () =>
       {
-        caster.IssueOrder("stop");
+        IssueImmediateOrder(caster, "stop");
         DestroyTimer(GetExpiredTimer());
       });
     }

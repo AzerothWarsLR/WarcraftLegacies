@@ -88,7 +88,7 @@ namespace MacroTools.Mechanics.DemonGates
       Target.IssueOrder(OrderId("setrally"), Target.GetPosition());
       BlzSetUnitMaxMana(Target, (int)_spawnInterval);
       Target.AddAbility(_toggleAbilityTypeId);
-      Target.IssueOrder("immolation");
+      IssueImmediateOrder(Target, "immolation");
       Progress = _spawnInterval / 2;
     }
 

@@ -27,7 +27,7 @@ namespace MacroTools.DummyCasters
       if (originType == DummyCastOriginType.Caster)
         _unit.FacePosition(target.GetPosition());
 
-      _unit.IssueOrder(orderId, target);
+      IssueTargetOrderById(_unit, orderId, target);
       UnitRemoveAbility(_unit, abilId);
     }
 
@@ -39,8 +39,7 @@ namespace MacroTools.DummyCasters
       _unit.AddAbility(abilId);
       SetUnitAbilityLevel(_unit, abilId, level);
 
-      _unit
-        .IssueOrder(orderId);
+      IssueImmediateOrderById(_unit, orderId);
       UnitRemoveAbility(_unit, abilId);
     }
 
@@ -55,7 +54,7 @@ namespace MacroTools.DummyCasters
       _unit.AddAbility(abilId);
       SetUnitAbilityLevel(_unit, abilId, level);
 
-      _unit.IssueOrder(orderId);
+      IssueImmediateOrderById(_unit, orderId);
       UnitRemoveAbility(_unit, abilId);
     }
 

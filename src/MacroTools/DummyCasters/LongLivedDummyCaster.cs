@@ -21,7 +21,7 @@ namespace MacroTools.DummyCasters
       var newUnit = CreateUnit(GetOwningPlayer(caster), _unitTypeId, targetPoint.X, targetPoint.Y, 0);
       newUnit.AddAbility(abilityId);
       SetUnitAbilityLevel(newUnit, abilityId, level);
-      newUnit.IssueOrder(orderId);
+      IssueImmediateOrder(newUnit, orderId);
       newUnit.SetTimedLife(duration);
     }
 
@@ -33,7 +33,7 @@ namespace MacroTools.DummyCasters
       var newUnit = CreateUnit(GetOwningPlayer(caster), _unitTypeId, caster.GetPosition().X, caster.GetPosition().Y, 0);
       newUnit.AddAbility(abilityId);
       SetUnitAbilityLevel(newUnit, abilityId, level);
-      newUnit.IssueOrder(orderId);
+      IssueImmediateOrder(newUnit, orderId);
       newUnit.SetTimedLife(duration);
     }
   }

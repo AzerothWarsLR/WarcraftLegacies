@@ -83,22 +83,6 @@ namespace MacroTools.Extensions
       IssuePointOrderById(unit, orderId, target.X, target.Y);
 
     /// <summary>
-    /// Orders a unit to perform a specified order on the specified target.
-    /// </summary>
-    public static void IssueOrder(this unit unit, int orderId, widget target) => 
-      IssueTargetOrderById(unit, orderId, target);
-
-    /// <summary>
-    /// Orders a unit to perform the specified targetless order.
-    /// </summary>
-    public static void IssueOrder(this unit unit, string order) => IssueImmediateOrder(unit, order);
-
-    /// <summary>
-    /// Orders a unit to perform the specified targetless order.
-    /// </summary>
-    public static void IssueOrder(this unit unit, int orderId) => IssueImmediateOrderById(unit, orderId);
-
-    /// <summary>
     /// Moves the unit to a specified <see cref="Point"/>.
     /// </summary>
     public static void SetPosition(this unit unit, Point where, bool considerPathability = false)
