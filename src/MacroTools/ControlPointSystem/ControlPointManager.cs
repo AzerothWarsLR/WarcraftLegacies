@@ -148,7 +148,7 @@ namespace MacroTools.ControlPointSystem
 
       BlzSetUnitMaxHP(controlPoint.Unit, StartingMaxHitPoints);
       controlPoint.Unit.SetLifePercent(100);
-      controlPoint.Unit.SetArmorType(2);
+      BlzSetUnitIntegerField(controlPoint.Unit, UNIT_IF_DEFENSE_TYPE, 2);
 
       BlzSetUnitName(controlPoint.Unit, $"{GetUnitName(controlPoint.Unit)} ({controlPoint.Value} gold/min)");
       UnitAddAbility(controlPoint.Unit, PiercingResistanceAbility);
@@ -285,9 +285,7 @@ namespace MacroTools.ControlPointSystem
         .ShowAttackUi(false);
 
       if (initialize && controlPoint.Unit.OwningPlayer() == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-      {
         SetUnitState(controlPoint.Unit, UNIT_STATE_LIFE, HostileStartingCurrentHitPoints);
-      }
       else
         controlPoint.Unit.SetLifePercent(lifePercent);
 
@@ -325,7 +323,7 @@ namespace MacroTools.ControlPointSystem
         : ControlLevelSettings.DamageBase - 1 + controlLevel * ControlLevelSettings.DamagePerControlLevel, 0);
       BlzSetUnitDiceNumber(whichUnit, 1, 0);
       BlzSetUnitDiceSides(whichUnit, 1, 0);
-      whichUnit.SetAttackType(5);
+      BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0, 5);
     }
   }
 }

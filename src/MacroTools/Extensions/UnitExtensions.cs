@@ -382,26 +382,6 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>
-    /// Changes a unit's attack type as an integer.
-    /// </summary>
-    public static void SetAttackType(this unit whichUnit, int attackType)
-    {
-      BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0, attackType);
-    }
-
-    /// <summary>
-    /// Returns the unit's attack type as an integer.
-    /// </summary>
-    public static int GetAttackType(this unit whichUnit) =>
-      BlzGetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0);
-
-    /// <summary>
-    /// Changes a unit's armor type.
-    /// </summary>
-    public static void SetArmorType(this unit whichUnit, int armorType) => 
-      BlzSetUnitIntegerField(whichUnit, UNIT_IF_DEFENSE_TYPE, armorType);
-
-    /// <summary>
     /// Causes the specified unit to become capturable,
     /// such that it changes ownership to the attacker when reduced below 0 hit points.
     /// </summary>

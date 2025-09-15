@@ -61,10 +61,10 @@ namespace MacroTools.Powers
       UnitRemoveAbility(whichUnit, FourCC("Aihn"));
       whichUnit.AddAbility(HeroGlowAbilityTypeId);
       whichUnit.AddAbility(FourCC("AInv"));
-      whichUnit.SetArmorType(5);
+      BlzSetUnitIntegerField(whichUnit, UNIT_IF_DEFENSE_TYPE, 5);
 
-      if (whichUnit.GetAttackType() != 3)
-        whichUnit.SetAttackType(6);
+      if (BlzGetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0) != 3)
+        BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0, 6);
     }
 
     private void OnTrainUnit()
