@@ -58,9 +58,8 @@ namespace WarcraftLegacies.Source.Quests.Zandalar
     /// <inheritdoc/>
     protected override void OnComplete(Faction completingFaction)
     {
-      completingFaction.Player?
-        .PlayMusicThematic("war3mapImported\\ZandalarTheme.mp3")
-        .RescueGroup(_rescueUnits);
+      completingFaction.Player?.PlayMusicThematic("war3mapImported\\ZandalarTheme.mp3");
+      completingFaction.Player?.RescueGroup(_rescueUnits);
     }
   }
 }

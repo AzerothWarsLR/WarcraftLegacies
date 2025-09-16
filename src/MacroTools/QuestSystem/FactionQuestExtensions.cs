@@ -74,9 +74,8 @@ namespace MacroTools.QuestSystem
         DisplayTextToPlayer(faction.Player, 0, 0, display);
 
       var sound = SoundLibrary.Discovered;
-      faction.Player?
-        .PlaySound(sound)
-        .FlashQuests();
+      faction.Player?.PlaySound(sound);
+      faction.Player?.FlashQuests();
     }
   }
 }
