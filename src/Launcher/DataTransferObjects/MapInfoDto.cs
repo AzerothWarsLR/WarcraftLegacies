@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
-using War3Net.Build;
 using War3Net.Build.Common;
 using War3Net.Build.Info;
 
