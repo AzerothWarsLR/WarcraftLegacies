@@ -21,8 +21,8 @@ public sealed class MapEnvironmentDto
 public sealed class TerrainTileDto
 {
   public int FormatVersion { get; set; }
-  public double Height { get; set; }
-  public double WaterHeight { get; set; }
+  public float Height { get; set; }
+  public float WaterHeight { get; set; }
   public bool IsEdgeTile { get; set; }
   public int Texture { get; set; }
   public bool IsRamp { get; set; }
