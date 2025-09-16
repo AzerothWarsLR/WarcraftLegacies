@@ -4,6 +4,7 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
+using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 
@@ -24,6 +25,7 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
 
       AddObjective(new ObjectiveBuildUniqueBuildingsInRect(Regions.FeathermoonUnlock, "in Feathermoon", 3));
       AddObjective(new ObjectiveControlPoint(UNIT_N05U_FEATHERMOON));
+      AddObjective(new ObjectiveSelfExists());
       ResearchId = UPGRADE_R06M_QUEST_COMPLETED_SHORES_OF_FEATHERMOON;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
@@ -48,10 +50,10 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
         BlzPauseUnitEx(unit, false);
       }
       
-      if (_feathermoon.Unit != null && GetUnitState(_feathermoon.Unit, UNIT_STATE_LIFE) > 0)
+      if (_feathermoon.Unit != null && UnitAlive(_feathermoon.Unit))
       {
         _feathermoon.Unit.SetLifePercent(100);
-        BlzPauseUnitEx(_feathermoon.Unit, false);
+        _feathermoon.Unit.Rescue(completingFaction.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE));
       }
     }
 
@@ -68,10 +70,10 @@ namespace WarcraftLegacies.Source.Quests.Sentinels
         BlzPauseUnitEx(unit, false);
       }
 
-      if (_feathermoon.Unit != null && GetUnitState(_feathermoon.Unit, UNIT_STATE_LIFE) > 0)
+      if (_feathermoon.Unit != null && UnitAlive(_feathermoon.Unit))
       {
         _feathermoon.Unit.SetLifePercent(100);
-        BlzPauseUnitEx(_feathermoon.Unit, false);
+        _feathermoon.Unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
       }
     }
   }
