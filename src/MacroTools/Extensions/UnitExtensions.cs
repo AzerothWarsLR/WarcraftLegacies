@@ -46,7 +46,6 @@ namespace MacroTools.Extensions
     /// <param name="whichUnit">The unit to affect.</param>
     /// <param name="duration">How long the unit should last.</param>
     /// <param name="buffId">This buff's name is placed on the unit's timed life progress bar.</param>
-    /// <returns></returns>
     public static void SetTimedLife(this unit whichUnit, float duration, int buffId = 0)
     {
       if (duration < 1)
@@ -383,7 +382,6 @@ namespace MacroTools.Extensions
     /// <param name="whichUnit">The unit to start the cooldown for.</param>
     /// <param name="abilCode">The ability to start the cooldown for.</param>
     /// <param name="cooldown">How long the cooldown should be. Defaults to the full cooldown of the ability.</param>
-    /// <returns></returns>
     public static void StartAbilityCooldown(this unit whichUnit, int abilCode, float? cooldown = null)
     {
       BlzEndUnitAbilityCooldown(whichUnit, abilCode);
