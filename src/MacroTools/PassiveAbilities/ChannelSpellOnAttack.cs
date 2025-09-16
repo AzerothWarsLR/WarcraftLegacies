@@ -1,6 +1,5 @@
 ﻿using MacroTools.DummyCasters;
 using MacroTools.PassiveAbilitySystem;
-using MacroTools.SpellSystem;
 
 namespace MacroTools.PassiveAbilities;
 
@@ -39,10 +38,6 @@ public sealed class ChannelSpellOnAttack : PassiveAbility, IAppliesEffectOnDamag
   /// </summary>
   public int DurationLevel { get; init; }
 
-  /// <summary>
-  /// The current level of this <see cref="Spell"/> instance for any specified unit.
-  /// </summary>
-  protected int GetAbilityLevel(unit whichUnit) => whichUnit.GetAbilityLevel(AbilityTypeId);
 
   /// <summary>
   /// Initializes a new instance of the <see cref="NoTargetSpellOnAttack"/> class.
@@ -69,6 +64,6 @@ public sealed class ChannelSpellOnAttack : PassiveAbility, IAppliesEffectOnDamag
     }
   }
 
-  private void ChannelNoTarget(unit caster) => DummyCasterManager.GetLongLivedDummyCaster().ChannelAtCaster(caster, DummyAbilityId,
-    DummyOrderId, caster.GetAbilityLevel(AbilityTypeId), DurationBase + DurationLevel * GetAbilityLevel(caster));
+  private void ChannelNoTarget(unit caster) => DummyCaster.Cast(caster, DummyAbilityId,
+    DummyOrderId, caster.GetAbilityLevel(AbilityTypeId), DurationBase + DurationLevel * caster.GetAbilityLevel(AbilityTypeId));
 }

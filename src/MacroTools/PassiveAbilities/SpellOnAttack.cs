@@ -119,8 +119,8 @@ public sealed class SpellOnAttack : PassiveAbility, IAppliesEffectOnDamage
   }
 
   private void DoSpellOnTarget(unit caster, unit target) =>
-      DummyCasterManager.GetGlobalDummyCaster().CastUnit(
+      DummyCaster.Cast(
           caster, DummyAbilityId, DummyOrderId,
           caster.GetAbilityLevel(AbilityTypeId),
-          target, DummyCastOriginType.Caster);
+          target);
 }

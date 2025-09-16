@@ -15,6 +15,6 @@ public sealed class AnySpellOnTarget : Spell
 
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    DummyCasterManager.GetGlobalDummyCaster().CastNoTargetOnUnit(caster, DummyAbilityId, DummyAbilityOrderId, GetAbilityLevel(caster), target);
+    DummyCaster.Cast(caster, DummyAbilityId, DummyAbilityOrderId, GetAbilityLevel(caster), target);
   }
 }

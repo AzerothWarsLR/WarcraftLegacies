@@ -16,7 +16,7 @@ public sealed class ChannelAnySpell : Spell
 
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    DummyCasterManager.GetLongLivedDummyCaster().ChannelOnPoint(caster, DummyAbilityId, DummyAbilityOrderId,
+    DummyCaster.Cast(caster, DummyAbilityId, DummyAbilityOrderId,
       GetAbilityLevel(caster), targetPoint, Duration);
   }
 }

@@ -9,6 +9,7 @@
 
     <ItemGroup>
         <PackageReference Include="WCSharp.Buffs" Version="3.2.10" />
+        <PackageReference Include="WCSharp.Dummies" Version="3.2.10" />
         <PackageReference Include="WCSharp.Effects" Version="3.2.10" />
         <PackageReference Include="WCSharp.Events" Version="3.2.10" />
         <PackageReference Include="WCSharp.Json" Version="3.2.10" />

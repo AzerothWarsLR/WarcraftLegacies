@@ -64,7 +64,7 @@ public sealed class Stomp : Spell
       return;
     }
 
-    DummyCasterManager.GetGlobalDummyCaster().CastUnit(caster, StunAbilityId, StunOrderId, duration, target, DummyCastOriginType.Target);
+    DummyCaster.Cast(caster, StunAbilityId, StunOrderId, duration, target, DummyCastOriginType.Target);
   }
 
   /// <inheritdoc />

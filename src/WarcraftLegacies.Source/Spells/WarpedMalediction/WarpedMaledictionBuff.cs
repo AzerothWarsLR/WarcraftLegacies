@@ -17,8 +17,8 @@ public sealed class WarpedMaledictionBuff : Buff
 
   public override void OnApply()
   {
-    DummyCasterManager.GetGlobalDummyCaster()
-      .CastUnit(Caster, _dummyAbilityId, _dummyAbilityOrderId, 1, Target, DummyCastOriginType.Caster);
+    DummyCaster
+      .Cast(Caster, _dummyAbilityId, _dummyAbilityOrderId, 1, Target);
   }
 
   public override void OnDispose()

@@ -15,13 +15,19 @@ public sealed class RecurrentSpellHazard : Hazard
   /// <inheritdoc />
   protected override void OnPeriodic()
   {
-    DummyCasterManager.GetGlobalDummyCaster().CastPoint(Caster.Owner, _dummySpellId, _dummySpellOrderId, _level, Position);
+    if (Caster != null)
+    {
+      DummyCaster.Cast(Caster, _dummySpellId, _dummySpellOrderId, _level, Position);
+    }
   }
 
   /// <inheritdoc />
   public override void OnCreate()
   {
-    DummyCasterManager.GetGlobalDummyCaster().CastPoint(Caster.Owner, _dummySpellId, _dummySpellOrderId, _level, Position);
+    if (Caster != null)
+    {
+      DummyCaster.Cast(Caster, _dummySpellId, _dummySpellOrderId, _level, Position);
+    }
   }
 
   /// <summary>
