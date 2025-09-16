@@ -20,7 +20,6 @@ public sealed class MapEnvironmentDto
 
 public sealed class TerrainTileDto
 {
-  public int FormatVersion { get; set; }
   public float Height { get; set; }
   public float WaterHeight { get; set; }
   public bool IsEdgeTile { get; set; }
