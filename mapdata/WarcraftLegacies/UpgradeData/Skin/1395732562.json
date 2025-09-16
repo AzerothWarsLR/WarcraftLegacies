@@ -27,19 +27,19 @@
       "Level": 1,
       "Id": 1835101799,
       "Type": 3,
-      "Value": "Precision Shots"
+      "Value": "Rapid Shots"
     },
     {
       "Level": 1,
       "Id": 829453415,
       "Type": 3,
-      "Value": "Research Precision Shots"
+      "Value": "Research Rapid Shots"
     },
     {
       "Level": 1,
       "Id": 828536167,
       "Type": 3,
-      "Value": "Enables the Precision Shots ability for your Rangers and Farstriders, which provides a \u003CA02H,DataA1\u003E% chance to do \u003CA02H,DataB1\u003E times damage on an attack."
+      "Value": "Increases the attack speed of Rangers and Farstriders by 20%."
     }
   ]
 }
