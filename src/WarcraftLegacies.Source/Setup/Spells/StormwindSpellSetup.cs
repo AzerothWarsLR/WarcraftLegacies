@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         ABILITY_A12C_LEGENDARY_WARRIOR_VARIAN)
       {
         DummyAbilityId = ABILITY_A12D_LEGENDARY_WARRIOR_STORMWIND_DUMMY,
-        DummyOrderString = "voodoo",
+        DummyOrderId = ORDER_VOODOO,
         ProcChance = 0.15f,
         DurationBase = (int)0.5,
         DurationLevel = (int)0.5

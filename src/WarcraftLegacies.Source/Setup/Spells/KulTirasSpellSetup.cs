@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       SpellSystem.Register(new ChannelAnySpell(ABILITY_A0S5_BOMBING_RUN_STORMWIND_DUMMY)
       {
         DummyAbilityId = ABILITY_A0S1_BOMBING_RUN_STORMWIND,
-        DummyAbilityOrderString = "locustswarm",
+        DummyAbilityOrderId = ORDER_LOCUST_SWARM,
         Duration = 15
       });
 

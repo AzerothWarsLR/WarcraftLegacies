@@ -7,7 +7,7 @@ namespace MacroTools.Spells
   public sealed class ChannelAnySpell : Spell
   {
     public int DummyAbilityId { get; init; }
-    public string DummyAbilityOrderString { get; init; }
+    public int DummyAbilityOrderId { get; init; }
     public int Duration { get; init; }
 
     public ChannelAnySpell(int id) : base(id)
@@ -16,7 +16,7 @@ namespace MacroTools.Spells
 
     public override void OnCast(unit caster, unit target, Point targetPoint)
     {
-      DummyCasterManager.GetLongLivedDummyCaster().ChannelOnPoint(caster, DummyAbilityId, DummyAbilityOrderString,
+      DummyCasterManager.GetLongLivedDummyCaster().ChannelOnPoint(caster, DummyAbilityId, DummyAbilityOrderId,
         GetAbilityLevel(caster), targetPoint, Duration);
     }
   }
