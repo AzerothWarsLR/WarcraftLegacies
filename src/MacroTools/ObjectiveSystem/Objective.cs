@@ -59,31 +59,12 @@ namespace MacroTools.ObjectiveSystem
         if (ProgressLocked || _progress == value) return;
 
         _progress = value;
-        if (ShowsInQuestLog)
-          switch (value)
-          {
-            case QuestProgress.Incomplete:
-              QuestItemSetCompleted(QuestItem, false);
-              SetResearchLevelForAllPlayers(ResearchId, 0);
-              break;
-            case QuestProgress.Complete:
-              QuestItemSetCompleted(QuestItem, true);
-              SetResearchLevelForAllPlayers(ResearchId, 1);
-              break;
-            case QuestProgress.Undiscovered:
-              QuestItemSetCompleted(QuestItem, false);
-              SetResearchLevelForAllPlayers(ResearchId, 0);
-              break;
-            case QuestProgress.Failed:
-              QuestItemSetCompleted(QuestItem, false);
-              SetResearchLevelForAllPlayers(ResearchId, 0);
-              break;
-          }
+        UpdateDisplay();
 
         ProgressChanged?.Invoke(this, this);
       }
     }
-
+    
     /// <summary>Describes what must be done in order to complete the <see cref="Objective"/>.</summary>
     public string Description
     {
@@ -190,6 +171,34 @@ namespace MacroTools.ObjectiveSystem
       _overheadEffect = null;
     }
 
+    internal void UpdateDisplay()
+    {
+      if (!ShowsInQuestLog)
+        return;
+      
+      QuestItemSetDescription(QuestItem, Description);
+      
+      switch (Progress)
+      {
+        case QuestProgress.Incomplete:
+          QuestItemSetCompleted(QuestItem, false);
+          SetResearchLevelForAllPlayers(ResearchId, 0);
+          break;
+        case QuestProgress.Complete:
+          QuestItemSetCompleted(QuestItem, true);
+          SetResearchLevelForAllPlayers(ResearchId, 1);
+          break;
+        case QuestProgress.Undiscovered:
+          QuestItemSetCompleted(QuestItem, false);
+          SetResearchLevelForAllPlayers(ResearchId, 0);
+          break;
+        case QuestProgress.Failed:
+          QuestItemSetCompleted(QuestItem, false);
+          SetResearchLevelForAllPlayers(ResearchId, 0);
+          break;
+      }
+    }
+    
     private static void SetResearchLevelForAllPlayers(int researchId, int level)
     {
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
