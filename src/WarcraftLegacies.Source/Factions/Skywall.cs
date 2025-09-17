@@ -115,7 +115,7 @@ namespace WarcraftLegacies.Source.Factions
         ABILITY_AELP_SHOCKING_BLADES_ANIMATED_ARMOR)
       {
         DummyAbilityId = ABILITY_AEPU_PURGE_SHOCKING_BLADE,
-        DummyOrderId = OrderId("purge"),
+        DummyOrderId = ORDER_PURGE,
         ProcChance = 0.20f,
         RequiredResearch = UPGRADE_RELP_SHOCKING_BLADES_SKYWALL
       };
@@ -126,7 +126,7 @@ namespace WarcraftLegacies.Source.Factions
         ABILITY_A0Y6_WATER_PRISON_ELEMENTAL_LORD)
       {
         DummyAbilityId = ABILITY_A0Y0_WATER_PRISON_REAL,
-        DummyOrderId = OrderId("entanglingroots"),
+        DummyOrderId = ORDER_ENTANGLING_ROOTS,
         ProcChance = 0.2f,
         Cooldown = 10f,
         RequiredResearch = UPGRADE_RSW3_QUEST_COMPLETED_SUBDUING_NEPTULON
@@ -136,7 +136,7 @@ namespace WarcraftLegacies.Source.Factions
       var earthProtectionHero = new AnySpellNoTarget(ABILITY_A0Y4_EARTH_PROTECTION_ELEMENTAL_LORD)
       {
         DummyAbilityId = ABILITY_A0XY_EARTH_PROTECTION_HERO_DUMMY,
-        DummyAbilityOrderId = OrderId("roar")
+        DummyAbilityOrderId = ORDER_ROAR
       };
       SpellSystem.Register(earthProtectionHero);  
       
@@ -156,7 +156,7 @@ namespace WarcraftLegacies.Source.Factions
       var massEnsnare = new MassAnySpell(ABILITY_A01N_MASS_ENSNARE_SKYWALL)
       {
         DummyAbilityId = ABILITY_A01V_MASS_ENSNARE_SKYWALL_DUMMY,
-        DummyAbilityOrderId = OrderId("ensnare"),
+        DummyAbilityOrderId = ORDER_ENSNARE,
         Radius = 250,
         Chance = 0.75f,
         CastFilter = CastFilters.IsTargetEnemyAndAlive,

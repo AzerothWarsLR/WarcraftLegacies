@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DamageLevel = 40,
         DurationBase = 1,
         StunAbilityId = ABILITY_S00H_THUNDER_CLAP_DUMMY,
-        StunOrderId = OrderId("cripple"),
+        StunOrderId = ORDER_CRIPPLE,
         SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
       };
       SpellSystem.Register(consecration);
@@ -64,7 +64,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         ABILITY_A122_WILL_OF_THE_ASHBRINGER_MOGRAINE)
       {
         DummyAbilityId = ABILITY_A0KA_RESURRECTION_DUMMY_MOGRAINE,
-        DummyOrderId = OrderId("resurrection"),
+        DummyOrderId = ORDER_RESURRECTION,
         ProcChance = 0.2f
       };
       PassiveAbilityManager.Register(willoftheAshbringer);

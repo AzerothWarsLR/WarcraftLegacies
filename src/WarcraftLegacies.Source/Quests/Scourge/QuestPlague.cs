@@ -171,7 +171,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
                    position.X, position.Y, 0, parameter.SummonCount))
         {
           if (!IsUnitType(unit, UNIT_TYPE_PEON))
-            unit.IssueOrder(OrderId("attack"), attackTarget);
+            unit.IssueOrder(ORDER_ATTACK, attackTarget);
         }
       }
     }

@@ -63,7 +63,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DurationBase = 6,
         DurationLevel = 3,
         StunAbilityId = ABILITY_A106_CURSE_DRAENEI,
-        StunOrderId = OrderId("curse"),
+        StunOrderId = ORDER_CURSE,
         SpecialEffect = @"war3mapImported\FrostNova.mdx"
       };
       SpellSystem.Register(warStompAdal);

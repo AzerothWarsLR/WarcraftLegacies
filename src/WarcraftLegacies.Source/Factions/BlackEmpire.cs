@@ -87,7 +87,7 @@ namespace WarcraftLegacies.Source.Factions
       PassiveAbilityManager.Register(new NoTargetSpellOnCast(UNIT_E01D_HARBINGER_OF_NY_ALOTHA_YOGG, ABILITY_AXK2_VOID_RIFT_ICON_XKORR)
       {
         DummyAbilityId = ABILITY_AXK1_VOIDBOLTDUMMY_X_KORR_DUMMY_SPELL,
-        DummyOrderId = OrderId("fanofknives"),
+        DummyOrderId = ORDER_FAN_OF_KNIVES,
         ProcChance = 1.0f,
         AbilityWhitelist = new List<int>
         {
@@ -106,7 +106,7 @@ namespace WarcraftLegacies.Source.Factions
         DurationBase = 3,
         DurationLevel = 0,
         StunAbilityId = ABILITY_ABSS_SHADOW_STRIKE_VOID_TOXIN_REAL,
-        StunOrderId = OrderId("shadowstrike"),
+        StunOrderId = ORDER_SHADOWSTRIKE,
         SpecialEffect = @"Abilities\Weapons\ChimaeraAcidMissile\ChimaeraAcidMissile.mdl"
       };
       SpellSystem.Register(poisonYor);
@@ -115,7 +115,7 @@ namespace WarcraftLegacies.Source.Factions
         ABILITY_ABES_GENESIS_ATTACK_ICON_STYGIAN_HULK)
       {
         DummyAbilityId = ABILITY_ABEG_PARASITE_GENESIS_ATTACK_REAL,
-        DummyOrderId = OrderId("parasite"),
+        DummyOrderId = ORDER_PARASITE,
         ProcChance = 1.0f
       };
       PassiveAbilityManager.Register(genesisAttack);
@@ -124,7 +124,7 @@ namespace WarcraftLegacies.Source.Factions
   ABILITY_ABEV_SHADOW_VEIL)
       {
         DummyAbilityId = ABILITY_ABSV_SHADOW_VEIL_SHADOW_VEIL_REAL,
-        DummyOrderId = OrderId("howlofterror"),
+        DummyOrderId = ORDER_HOWL_OF_TERROR,
         ProcChance = 0.10f,
         RequiredResearch = UPGRADE_RBEV_SHADOW_VEIL_BLACK_EMPIRE
       };
@@ -133,7 +133,7 @@ namespace WarcraftLegacies.Source.Factions
       var shadowVeilSpell = new MassAnySpell(ABILITY_ABSV_SHADOW_VEIL_SHADOW_VEIL_REAL)
       {
         DummyAbilityId = ABILITY_ACAM_ANTI_MAGIC_SHELL_BLACK_EMPIRE,
-        DummyAbilityOrderId = OrderId("antimagicshell"),
+        DummyAbilityOrderId = ORDER_ANTI_MAGIC_SHELL,
         Radius = 200,
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
         TargetType = SpellTargetType.None
@@ -144,7 +144,7 @@ namespace WarcraftLegacies.Source.Factions
         ABILITY_ABPF_PARALYSING_FEAR)
       {
         DummyAbilityId = ABILITY_ABSF_SLOW_PARALYSING_FEAR,
-        DummyOrderId = OrderId("slow"),
+        DummyOrderId = ORDER_SLOW,
         ProcChance = 0.2f
       };
       PassiveAbilityManager.Register(paralysingFear);
@@ -153,7 +153,7 @@ namespace WarcraftLegacies.Source.Factions
         ABILITY_ABGP_GREATER_PARALYSING_FEAR)
       {
         DummyAbilityId = ABILITY_ABSG_SLOW_GREATER_PARALYSING_FEAR,
-        DummyOrderId = OrderId("slow"),
+        DummyOrderId = ORDER_SLOW,
         ProcChance = 0.4f
       };
       PassiveAbilityManager.Register(greaterParalysingFear);

@@ -18,7 +18,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         ABILITY_A10J_MASTER_OF_LIGHTNING_STORMRIDERS)
       {
         DummyAbilityId = ABILITY_ACFL_FORKED_LIGHTNING_LIGHT_BLUE_HIGHBORNE,
-        DummyOrderId = OrderId("forkedlightning"),
+        DummyOrderId = ORDER_FORKED_LIGHTNING,
         ProcChance = 0.15f
       };
       PassiveAbilityManager.Register(lightningAttack);

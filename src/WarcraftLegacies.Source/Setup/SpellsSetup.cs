@@ -19,7 +19,7 @@ namespace WarcraftLegacies.Source.Setup
         DamageBase = 75,
         DurationBase = 1,
         StunAbilityId = ABILITY_S00H_THUNDER_CLAP_DUMMY,
-        StunOrderId = OrderId("cripple"),
+        StunOrderId = ORDER_CRIPPLE,
         SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
       };
       SpellSystem.Register(thunderClap);
@@ -30,7 +30,7 @@ namespace WarcraftLegacies.Source.Setup
         DamageBase = 55,
         DurationBase = 1,
         StunAbilityId = ABILITY_MD14_THUNDER_CLAP_DUMMY_GREY_GUARD,
-        StunOrderId = OrderId("cripple"),
+        StunOrderId = ORDER_CRIPPLE,
         SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
       };
       SpellSystem.Register(thunderClapGil);
@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Setup
       var massAntiMagicShell = new MassAnySpell(FourCC("A099"))
       {
         DummyAbilityId = FourCC("A0JN"),
-        DummyAbilityOrderId = OrderId("antimagicshell"),
+        DummyAbilityOrderId = ORDER_ANTI_MAGIC_SHELL,
         Radius = 200,
         CastFilter = CastFilters.IsTargetAllyAndAlive,
         TargetType = SpellTargetType.Point
@@ -48,7 +48,7 @@ namespace WarcraftLegacies.Source.Setup
       var massEnrage = new MassAnySpell(FourCC("A0QK"))
       {
         DummyAbilityId = FourCC("ACuf"),
-        DummyAbilityOrderId = OrderId("unholyfrenzy"),
+        DummyAbilityOrderId = ORDER_UNHOLY_FRENZY,
         Radius = 200,
         CastFilter = CastFilters.IsTargetEnemyAndAlive,
         TargetType = SpellTargetType.Point
@@ -60,7 +60,7 @@ namespace WarcraftLegacies.Source.Setup
         ABILITY_A0LN_THUNDER_FISTS_CHO_GALL)
       {
         DummyAbilityId = ABILITY_A024_THUNDER_FISTS_CHO_GALL_DUMMY_CAST,
-        DummyOrderId = OrderId("forkedlightning"),
+        DummyOrderId = ORDER_FORKED_LIGHTNING,
         ProcChance = 0.15f
       };
       PassiveAbilityManager.Register(thunderFists);
@@ -68,7 +68,7 @@ namespace WarcraftLegacies.Source.Setup
       var seismicShard = new MassAnySpell(ABILITY_A0OD_SEISMIC_SHARD_AZIL)
       {
         DummyAbilityId = ABILITY_A0OE_SEISMIC_SHARD_AZIL_DUMMY,
-        DummyAbilityOrderId = OrderId("thunderbolt"),
+        DummyAbilityOrderId = ORDER_THUNDERBOLT,
         Radius = 250,
         CastFilter = CastFilters.IsTargetEnemyAndAlive,
         TargetType = SpellTargetType.Point

@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Scourge
                        !IsUnitType(unit, UNIT_TYPE_ANCIENT) &&
                        !IsUnitType(unit, UNIT_TYPE_PEON) &&
                        GetResourceAmount(unit) == 0 &&
-                       OrderId2String(GetUnitCurrentOrder(unit)) != "harvest");
+                       GetUnitCurrentOrder(unit) != ORDER_HARVEST);
 
       foreach (var unit in unitsToTeleport)
       {
