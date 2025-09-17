@@ -7,9 +7,10 @@ namespace MacroTools.ObjectiveSystem.Objectives.QuestBased
   {
     private readonly QuestData _target;
 
-    public ObjectiveQuestComplete(QuestData target)
+    public ObjectiveQuestComplete(QuestData target, QuestProgress startingProgress = QuestProgress.Incomplete)
     {
       _target = target;
+      Progress = startingProgress;
       Description = $"Complete the quest {target.Title}";
     }
 

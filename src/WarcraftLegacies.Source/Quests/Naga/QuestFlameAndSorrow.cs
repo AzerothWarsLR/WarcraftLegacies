@@ -15,22 +15,21 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// Initializes a new instance of the <see cref="QuestFlameAndSorrow"/> class.
     /// </summary>
     public QuestFlameAndSorrow(Artifact skullofGuldan, LegendaryHero illidan) : base("A Destiny of Flame and Sorrow",
-      "The Skull of Gul'dan is an artifact of immeasurable demonic power. Illidan will need to grow stronger before he can extract its energies.",
+      "The Skull of Gul'dan is an artifact of immeasurable demonic power, and is found somewhere on these isles. Illidan must extract its energies before he has the strength to force his way into Outland.",
       @"ReplaceableTextures\CommandButtons\BTNMetamorphosis.blp")
     {
       _skullofGuldan = skullofGuldan;
       AddObjective(new ObjectiveLegendHasArtifact(illidan, skullofGuldan));
-      AddObjective(new ObjectiveLegendLevel(illidan, 8));
       ResearchId = UPGRADE_R095_QUEST_COMPLETED_A_DESTINY_OF_FLAME_AND_SORROW;
     }
 
     /// <inheritdoc/>
     public override string RewardFlavour =>
-      "With the power to dominate the Skull of Gul'dan finally in hand, Illidan breathes deep of its power. With one swift motion, he crushes it to dust, absorbing its phenomenal demonic energies for himself.";
+      "Illidan crushes the Skull of Gul'dan, absorbing the long-dead Warlock's phenomenal demonic energies for himself. He now has the power to tear upon a portal through reality to his seat of power, the Black Temple.";
 
     /// <inheritdoc/>
     protected override string RewardDescription =>
-      "Illidan gains the ability to cast Metamorphosis, and the Skull of Gul'dan is destroyed";
+      "Illidan consumes the Skull of Gul'dan to learn Metamorphosis and Portal to Black Temple";
 
     /// <inheritdoc />
     protected override void OnComplete(Faction whichFaction)
