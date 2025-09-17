@@ -21,7 +21,7 @@ namespace MacroTools.DummyCasters
       var owningPlayer = GetOwningPlayer(caster);
       SetUnitOwner(_unit, owningPlayer, true);
       _unit.SetPosition(originPoint);
-      _unit.AddAbility(abilId);
+      UnitAddAbility(_unit, abilId);
       SetUnitAbilityLevel(_unit, abilId, level);
 
       if (originType == DummyCastOriginType.Caster)
@@ -36,7 +36,7 @@ namespace MacroTools.DummyCasters
       var owningPlayer = GetOwningPlayer(caster);
       SetUnitOwner(_unit, owningPlayer, true);
       _unit.SetPosition(caster.GetPosition());
-      _unit.AddAbility(abilId);
+      UnitAddAbility(_unit, abilId);
       SetUnitAbilityLevel(_unit, abilId, level);
 
       IssueImmediateOrderById(_unit, orderId);
@@ -51,7 +51,7 @@ namespace MacroTools.DummyCasters
       var owningPlayer = GetOwningPlayer(caster);
       SetUnitOwner(_unit, owningPlayer, true);
       _unit.SetPosition(target.GetPosition());
-      _unit.AddAbility(abilId);
+      UnitAddAbility(_unit, abilId);
       SetUnitAbilityLevel(_unit, abilId, level);
 
       IssueImmediateOrderById(_unit, orderId);
@@ -65,7 +65,7 @@ namespace MacroTools.DummyCasters
     {
       SetUnitOwner(_unit, whichPlayer, true);
       _unit.SetPosition(target);
-      _unit.AddAbility(abilId);
+      UnitAddAbility(_unit, abilId);
       SetUnitAbilityLevel(_unit, abilId, level);
       _unit.IssueOrder(orderId, target);
       UnitRemoveAbility(_unit, abilId);

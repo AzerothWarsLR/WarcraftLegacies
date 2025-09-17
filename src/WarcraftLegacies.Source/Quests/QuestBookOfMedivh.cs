@@ -52,7 +52,7 @@ namespace WarcraftLegacies.Source.Quests
         _bookOfMedivhPedestal = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), UNIT_NBSM_BOOK_OF_MEDIVH,
           bookLocation.Rectangle.Center.X, bookLocation.Rectangle.Center.Y, 270);
         SetUnitInvulnerable(_bookOfMedivhPedestal, true);
-        _bookOfMedivhPedestal.AddAbility(ABILITY_A01Y_INVENTORY_DUMMY_DROP_ARTIFACT);
+        UnitAddAbility(_bookOfMedivhPedestal, ABILITY_A01Y_INVENTORY_DUMMY_DROP_ARTIFACT);
         _bookOfMedivhPedestal.AddItemSafe(bookOfMedivh.Item);
       }
       

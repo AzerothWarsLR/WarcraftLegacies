@@ -28,7 +28,7 @@ namespace MacroTools.DummyCasters
       var whichPlayer = GetOwningPlayer(caster);
       SetUnitOwner(_unit, whichPlayer, true);
       _unit.SetPosition(originPoint);
-      _unit.AddAbility(_abilityTypeId);
+      UnitAddAbility(_unit, _abilityTypeId);
       SetUnitAbilityLevel(_unit, _abilityTypeId, level);
 
       if (originType == DummyCastOriginType.Caster)
@@ -42,7 +42,7 @@ namespace MacroTools.DummyCasters
       var whichPlayer = GetOwningPlayer(caster);
       SetUnitOwner(_unit, whichPlayer, true);
       _unit.SetPosition(caster.GetPosition());
-      _unit.AddAbility(_abilityTypeId);
+      UnitAddAbility(_unit, _abilityTypeId);
       SetUnitAbilityLevel(_unit, _abilityTypeId, level);
 
       IssueImmediateOrderById(_unit, _abilityOrderId);
@@ -56,7 +56,7 @@ namespace MacroTools.DummyCasters
       var whichPlayer = GetOwningPlayer(caster);
       SetUnitOwner(_unit, whichPlayer, true);
       _unit.SetPosition(target.GetPosition());
-       _unit.AddAbility(_abilityTypeId);
+      UnitAddAbility(_unit, _abilityTypeId);
       SetUnitAbilityLevel(_unit, _abilityTypeId, level);
 
       IssueImmediateOrderById(_unit, _abilityOrderId);
@@ -69,7 +69,7 @@ namespace MacroTools.DummyCasters
     {
       SetUnitOwner(_unit, whichPlayer, true);
       _unit.SetPosition(target);
-      _unit.AddAbility(_abilityTypeId);
+      UnitAddAbility(_unit, _abilityTypeId);
       SetUnitAbilityLevel(_unit, _abilityTypeId, level);
       _unit
         .IssueOrder(_abilityOrderId, target);
