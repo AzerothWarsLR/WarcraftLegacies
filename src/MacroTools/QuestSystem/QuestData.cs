@@ -326,11 +326,8 @@ namespace MacroTools.QuestSystem
 
     public void AddObjective(Objective objective)
     {
-      if (objective.Progress == QuestProgress.Undiscovered)
-      {
-        Console.WriteLine("Undiscover " + Title);
+      if (objective.Progress == QuestProgress.Undiscovered) 
         Progress = QuestProgress.Undiscovered;
-      }
 
       Objectives.Add(objective);
       if (objective.ShowsInQuestLog)

@@ -28,7 +28,7 @@ namespace MacroTools.ObjectiveSystem
     public Point? Position { get; protected init; }
 
     /// <summary>Whether or not this can be seen as a bullet point in the quest log.</summary>
-    public bool ShowsInQuestLog { get; protected init; } = true;
+    public bool ShowsInQuestLog { get; init; } = true;
     
     /// <summary>This research is enabled for all players while the objective is completed, and disabled otherwise.</summary>
     public int ResearchId { get; init; }
