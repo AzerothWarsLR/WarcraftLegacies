@@ -29,7 +29,8 @@ namespace WarcraftLegacies.Source.Quests.Naga
       var questCompleteObjective = new ObjectiveQuestComplete(prerequisite)
       {
         Progress = QuestProgress.Undiscovered,
-        ShowsInQuestLog = false
+        ShowsInQuestLog = false,
+        ShowsInPopups = false
       };
 
       AddObjective(questCompleteObjective);

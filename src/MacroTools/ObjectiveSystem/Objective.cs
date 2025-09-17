@@ -27,8 +27,11 @@ namespace MacroTools.ObjectiveSystem
     /// </summary>
     public Point? Position { get; protected init; }
 
-    /// <summary>Whether this can be seen as a bullet point in the quest log.</summary>
+    /// <summary>If true, the objective is displayed in the Quest menu.</summary>
     public bool ShowsInQuestLog { get; init; } = true;
+    
+    /// <summary>If true, the objective is displayed in quest popups.</summary>
+    public bool ShowsInPopups { get; init; } = true;
     
     /// <summary>This research is enabled for all players while the objective is completed, and disabled otherwise.</summary>
     public int ResearchId { get; init; }

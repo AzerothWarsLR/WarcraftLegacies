@@ -26,6 +26,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.TimeBased
       TimerStart(_expirationTimer, duration, false, OnExpire);
       TimerStart(_warningTimer, duration - 120, false, OnWarning);
       _questName = questName;
+      ShowsInPopups = false;
     }
 
     public override void OnAdd(Faction whichFaction)
