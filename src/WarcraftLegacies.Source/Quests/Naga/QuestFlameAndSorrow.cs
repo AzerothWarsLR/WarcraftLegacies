@@ -10,6 +10,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
   public sealed class QuestFlameAndSorrow : QuestData
   {
     private readonly Artifact _skullofGuldan;
+    private readonly LegendaryHero _illidan;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestFlameAndSorrow"/> class.
@@ -19,6 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
       @"ReplaceableTextures\CommandButtons\BTNMetamorphosis.blp")
     {
       _skullofGuldan = skullofGuldan;
+      _illidan = illidan;
       AddObjective(new ObjectiveLegendHasArtifact(illidan, skullofGuldan));
       ResearchId = UPGRADE_R095_QUEST_COMPLETED_A_DESTINY_OF_FLAME_AND_SORROW;
     }
@@ -34,6 +36,9 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// <inheritdoc />
     protected override void OnComplete(Faction whichFaction)
     {
+      if (_illidan.Unit != null) 
+        BlzSetUnitSkin(_illidan.Unit, UNIT_EEVI_DEMON_HUNTER_HYBRID_ILLIDARI);
+
       ArtifactManager.Destroy(_skullofGuldan);
     }
   }

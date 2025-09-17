@@ -17,7 +17,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       Illidan = new LegendaryHero("Illidan")
       {
-        UnitType = UNIT_EEVI_BETRAYER_ILLIDARI,
+        UnitType = UNIT_EILL_DEMON_HUNTER_BASE_ILLIDARI,
         PlayerColor = PLAYER_COLOR_PURPLE,
       };
 
