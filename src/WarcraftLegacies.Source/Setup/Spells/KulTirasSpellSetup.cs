@@ -38,7 +38,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DurationBase = 4,
         DurationLevel = 2,
         StunAbilityId = ABILITY_A0L0_SLEEP_DUMMY,
-        StunOrderId = OrderId("sleep"),
+        StunOrderId = ORDER_SLEEP,
         SpecialEffect = @"Abilities\Spells\Other\HowlOfTerror\HowlCaster.mdl"
       };
       SpellSystem.Register(warStompMeredith);
@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var scattershot = new MassAnySpell(ABILITY_A0GP_SCATTERSHOT_KUL_TIRAS_LADY_ASHVANE)
       {
         DummyAbilityId = ABILITY_A0GL_SCATTERSHOT_KUL_TIRAS_LADY_ASHVANE_DUMMY,
-        DummyAbilityOrderId = OrderId("thunderbolt"),
+        DummyAbilityOrderId = ORDER_THUNDERBOLT,
         Radius = 250,
         CastFilter = CastFilters.IsTargetEnemyAndAlive,
         TargetType = SpellTargetType.Point,

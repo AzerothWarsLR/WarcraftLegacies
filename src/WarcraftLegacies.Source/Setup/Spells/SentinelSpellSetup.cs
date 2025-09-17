@@ -44,7 +44,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var elunesGaze = new MassAnySpell(ABILITY_ASEG_ELUNE_S_GAZE_SENTINELS_REAL)
       {
         DummyAbilityId = ABILITY_A0VY_INVISIBILITY_LB,
-        DummyAbilityOrderId = OrderId("invisibility"),
+        DummyAbilityOrderId = ORDER_INVISIBILITY,
         Radius = 350,
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
         TargetType = SpellTargetType.None

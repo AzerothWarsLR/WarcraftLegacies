@@ -56,7 +56,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DamageBase = 25,
         DurationBase = 3,
         StunAbilityId = ABILITY_A0WN_STUN_UNIT_DUMMY,
-        StunOrderId = OrderId("thunderbolt"),
+        StunOrderId = ORDER_THUNDERBOLT,
         SpecialEffect = @"Abilities\Spells\Orc\WarStomp\WarStompCaster.mdl"
       };
       SpellSystem.Register(warStompKazzak);

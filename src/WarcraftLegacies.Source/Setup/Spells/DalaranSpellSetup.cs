@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var enchantedBolt = new MassAnySpell(ABILITY_A10L_ENCHANTED_BOLTS_DALARAN)
       {
         DummyAbilityId = ABILITY_A10O_ENCHANTED_BOLT_DALARAN_DUMMY,
-        DummyAbilityOrderId = OrderId("thunderbolt"),
+        DummyAbilityOrderId = ORDER_THUNDERBOLT,
         Radius = 250,
         CastFilter = CastFilters.IsTargetEnemyAndAlive,
         TargetType = SpellTargetType.Point,
@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var massIceLance = new MassAnySpell(ABILITY_A0J0_MASS_ICE_LANCE_NEXUS)
       {
         DummyAbilityId = ABILITY_A0IK_MASS_ICE_LANCE_NEXUS_DUMMY,
-        DummyAbilityOrderId = OrderId("thunderbolt"),
+        DummyAbilityOrderId = ORDER_THUNDERBOLT,
         Radius = 250,
         CastFilter = CastFilters.IsTargetEnemyAndAlive,
         TargetType = SpellTargetType.Point,

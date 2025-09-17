@@ -47,7 +47,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DamagePerLevel = 50,
         ChargeSpeed = 1200,
         MaxChargeDistance = 1800,
-        SpeedUpOrderId = OrderId("bloodlust"),
+        SpeedUpOrderId = ORDER_BLOODLUST,
         ChargeEffectPath = @"Abilities\Spells\Orc\FeralSpirit\feralspiritdone.mdl",
         SpeedUpAbilityId = ABILITY_A0YT_BLOODLUST_SHADOW_STRIKE,
         ExecuteEffectPath = @"Objects\\Spawnmodels\\Human\\HumanLargeDeathExplode\\HumanLargeDeathExplode.mdl",

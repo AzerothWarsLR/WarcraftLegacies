@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var massUnholyFrenzy = new MassAnySpell(ABILITY_A02W_MASS_UNHOLY_FRENZY_SCOURGE)
       {
         DummyAbilityId = ABILITY_ACUF_UNHOLY_FRENZY_DUMMY,
-        DummyAbilityOrderId = OrderId("unholyfrenzy"),
+        DummyAbilityOrderId = ORDER_UNHOLY_FRENZY,
         Radius = 250,
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
         TargetType = SpellTargetType.Point
@@ -46,7 +46,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var massFrostArmor = new MassAnySpell(ABILITY_A13R_MASS_FROST_ARMOR_KEL_THUZAD)
       {
         DummyAbilityId = ABILITY_A13S_MASS_FROST_ARMOUR_KEL_THUZAD_DUMMY,
-        DummyAbilityOrderId = OrderId("frostarmor"),
+        DummyAbilityOrderId = ORDER_FROST_ARMOR,
         Radius = 200,
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
         TargetType = SpellTargetType.Point
@@ -117,7 +117,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       SpellSystem.Register(new MassDeathCoil(ABILITY_ZB06_MASS_DEATH_COIL_ARTHAS_TERON_GOREFIEND)
       {
         DummyAbilityId = ABILITY_ZB05_MASS_DEATH_COIL_ARTHAS_DUMMY,
-        DummyAbilityOrderId = OrderId("deathcoil"),
+        DummyAbilityOrderId = ORDER_DEATH_COIL,
         Radius = 250,
         CasterHealPerTargetUpgraded = 25,
         UpgradeCondition = unit => GetUnitTypeId(unit) == UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE
@@ -144,7 +144,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         EffectOnProjectileSpawn = @"Abilities\Spells\Items\AIil\AIilTarget.mdl",
         EffectOnProjectileSpawnScale = 0.5f,
         DummyAbilityId = ABILITY_A0YD_APOCALYPSE_DUMMY_CASTER,
-        DummyAbilityOrderId = OrderId("parasite"),
+        DummyAbilityOrderId = ORDER_PARASITE,
         UpgradeCondition = unit => GetUnitTypeId(unit) == UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE
       });
       

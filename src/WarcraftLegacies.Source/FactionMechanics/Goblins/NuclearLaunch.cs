@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.FactionMechanics.Goblins
     {
       var dummyNukeLeftover = CreateUnit(GetOwningPlayer(caster), DummyNukeLeftOverId, targetPoint.X, targetPoint.Y, 0);
       UnitApplyTimedLife(dummyNukeLeftover, 0, 3);
-      dummyNukeLeftover.IssueOrder(OrderId("flamestrike"), targetPoint);
+      dummyNukeLeftover.IssueOrder(ORDER_FLAMESTRIKE, targetPoint);
     }
     
     /// <inheritdoc />
