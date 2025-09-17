@@ -1,5 +1,4 @@
 ﻿using MacroTools.ArtifactSystem;
-using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
@@ -64,7 +63,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
       {
         UnitRemoveAbility(_sunwell.Unit, ABILITY_A0OC_EXTRACT_VIAL_ALL);
         UnitRemoveAbility(_sunwell.Unit, ABILITY_A0EP_SUMMON_GRANITE_GOLEMS_QUEL_THALAS_SUNWELL);
-        _sunwell.Unit.AddAbility(ABILITY_A00D_DESTROY_THE_CORRUPTED_SUNWELL_QUEL_THALAS_SUNWELL);
+        UnitAddAbility(_sunwell.Unit, ABILITY_A00D_DESTROY_THE_CORRUPTED_SUNWELL_QUEL_THALAS_SUNWELL);
         BlzSetUnitMaxMana(_sunwell.Unit, 0);
         BlzSetUnitSkin(_sunwell.Unit, UNIT_N079_THE_SUNWELL_CORRUPTED_QUEL_THALAS_OTHER);
         BlzSetUnitName(_sunwell.Unit, "Corrupted Sunwell");

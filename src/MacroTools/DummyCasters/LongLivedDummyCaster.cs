@@ -19,7 +19,7 @@ namespace MacroTools.DummyCasters
     public void ChannelOnPoint(unit caster, int abilityId, string orderId, int level, Point targetPoint, float duration)
     {
       var newUnit = CreateUnit(GetOwningPlayer(caster), _unitTypeId, targetPoint.X, targetPoint.Y, 0);
-      newUnit.AddAbility(abilityId);
+      UnitAddAbility(newUnit, abilityId);
       SetUnitAbilityLevel(newUnit, abilityId, level);
       IssueImmediateOrder(newUnit, orderId);
       newUnit.SetTimedLife(duration);
@@ -31,7 +31,7 @@ namespace MacroTools.DummyCasters
     public void ChannelAtCaster(unit caster, int abilityId, string orderId, int level, float duration)
     {
       var newUnit = CreateUnit(GetOwningPlayer(caster), _unitTypeId, caster.GetPosition().X, caster.GetPosition().Y, 0);
-      newUnit.AddAbility(abilityId);
+      UnitAddAbility(newUnit, abilityId);
       SetUnitAbilityLevel(newUnit, abilityId, level);
       IssueImmediateOrder(newUnit, orderId);
       newUnit.SetTimedLife(duration);

@@ -162,12 +162,12 @@ namespace MacroTools.ControlPointSystem
         RegisterControlLevelChangeTrigger(controlPoint);
         RegisterControlLevelGrowthOverTime(controlPoint);
         ConfigureControlPointStats(controlPoint, true);
-        controlPoint.Unit.AddAbility(IncreaseControlLevelAbilityTypeId);
+        UnitAddAbility(controlPoint.Unit, IncreaseControlLevelAbilityTypeId);
       }
       
       controlPoint.OnRegister();
       if (GetOwningPlayer(controlPoint.Unit) != Player(PLAYER_NEUTRAL_AGGRESSIVE))
-        controlPoint.Unit.AddAbility(RegenerationAbility);
+        UnitAddAbility(controlPoint.Unit, RegenerationAbility);
     }
 
     private static void RegisterIncome(ControlPoint controlPoint)
@@ -217,10 +217,10 @@ namespace MacroTools.ControlPointSystem
           newOwner.BaseIncome += controlPoint.Value;
 
           if (GetUnitAbilityLevel(controlPoint.Unit, RegenerationAbility) == 0)
-            controlPoint.Unit.AddAbility(RegenerationAbility);
+            UnitAddAbility(controlPoint.Unit, RegenerationAbility);
             
           if (GetUnitAbilityLevel(controlPoint.Unit, PiercingResistanceAbility) == 0)
-            controlPoint.Unit.AddAbility(PiercingResistanceAbility);
+            UnitAddAbility(controlPoint.Unit, PiercingResistanceAbility);
             
           controlPoint.Unit.SetLifePercent(100);
           controlPoint.ControlLevel = 0;
@@ -298,7 +298,7 @@ namespace MacroTools.ControlPointSystem
       var defenderUnitTypeId = controlPoint.Owner.GetFaction()?.ControlPointDefenderUnitTypeId ??
                                ControlLevelSettings.DefaultDefenderUnitTypeId;
       controlPoint.Defender ??= CreateUnit(controlPoint.Owner, defenderUnitTypeId, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit), 270);
-      controlPoint.Defender.AddAbility(FourCC("Aloc"));
+      UnitAddAbility(controlPoint.Defender, FourCC("Aloc"));
       SetUnitInvulnerable(controlPoint.Defender, true);
       ConfigureControlPointOrDefenderAttack(controlPoint.Defender, flooredLevel);
       ConfigureControlPointOrDefenderAttack(controlPoint.Unit, flooredLevel);
@@ -311,8 +311,8 @@ namespace MacroTools.ControlPointSystem
 
       controlPoint.Defender = null;
       SetUnitInvulnerable(controlPoint.Unit, false);
-      controlPoint.Unit
-        .AddAbility(IncreaseControlLevelAbilityTypeId);
+      UnitAddAbility(controlPoint.Unit,
+        IncreaseControlLevelAbilityTypeId);
     }
 
     private void ConfigureControlPointOrDefenderAttack(unit whichUnit, int controlLevel)

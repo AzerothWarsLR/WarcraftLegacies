@@ -351,15 +351,6 @@ namespace MacroTools.Extensions
     }
 
     /// <summary>
-    /// Adds an ability to the unit.
-    /// </summary>
-    public static void AddAbility(this unit whichUnit, int abilityTypeId)
-    {
-      UnitAddAbility(whichUnit, abilityTypeId);
-      UnitMakeAbilityPermanent(whichUnit, true, abilityTypeId);
-    }
-
-    /// <summary>
     /// Causes the specified unit to become capturable,
     /// such that it changes ownership to the attacker when reduced below 0 hit points.
     /// </summary>
