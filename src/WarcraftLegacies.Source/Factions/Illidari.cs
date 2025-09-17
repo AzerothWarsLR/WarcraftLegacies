@@ -74,7 +74,7 @@ namespace WarcraftLegacies.Source.Factions
     {
       var flameAndSorrow = new QuestFlameAndSorrow(_artifactSetup.SkullOfGuldan, _allLegendSetup.Naga.Illidan);
       StartingQuest = flameAndSorrow;
-      AddQuest(new QuestFlameAndSorrow(_artifactSetup.SkullOfGuldan, _allLegendSetup.Naga.Illidan));
+      AddQuest(flameAndSorrow);
       AddQuest(new QuestBlackTemple(flameAndSorrow, Regions.IllidanBlackTempleUnlock, _allLegendSetup.Naga.Illidan));
       AddQuest(new QuestLostOnes(Regions.AkamaUnlock));
       AddQuest(new QuestZangarmarsh(Regions.TelredorUnlock, _allLegendSetup.Naga.Vashj));

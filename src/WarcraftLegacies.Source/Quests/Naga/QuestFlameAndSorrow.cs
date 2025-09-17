@@ -3,6 +3,7 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
+using WCSharp.Effects;
 
 namespace WarcraftLegacies.Source.Quests.Naga
 {
@@ -39,6 +40,11 @@ namespace WarcraftLegacies.Source.Quests.Naga
       if (_illidan.Unit != null) 
         BlzSetUnitSkin(_illidan.Unit, UNIT_EEVI_DEMON_HUNTER_HYBRID_ILLIDARI);
 
+      var effect = AddSpecialEffect(@"Abilities\Spells\Demon\DarkPortal\DarkPortalTarget.mdl", 
+        GetUnitX(_illidan.Unit), 
+        GetUnitY(_illidan.Unit));
+      EffectSystem.Add(effect);
+      
       ArtifactManager.Destroy(_skullofGuldan);
     }
   }

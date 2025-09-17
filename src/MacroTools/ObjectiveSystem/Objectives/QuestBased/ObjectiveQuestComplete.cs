@@ -20,7 +20,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.QuestBased
     {
       if (args.Quest != _target)
         return;
-      
+
       Progress = args.Quest.Progress switch
       {
         QuestProgress.Complete => QuestProgress.Complete,
