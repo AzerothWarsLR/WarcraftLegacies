@@ -20,9 +20,9 @@ namespace MacroTools.PassiveAbilities
     public int DummyAbilityId { get; init; }
 
     /// <summary>
-    /// An order string that can be used to cast the specified dummy ability.
+    /// An order ID that can be used to cast the specified dummy ability.
     /// </summary>
-    public string DummyOrderString { get; init; } = "";
+    public int DummyOrderId { get; init; }
     
     /// <summary>
     /// The percentage chance that the effect will occur on attack.
@@ -68,6 +68,6 @@ namespace MacroTools.PassiveAbilities
     }
     
     private void ChannelNoTarget(unit caster) => DummyCasterManager.GetLongLivedDummyCaster().ChannelAtCaster(caster, DummyAbilityId,
-      DummyOrderString, GetUnitAbilityLevel(caster, AbilityTypeId), DurationBase + DurationLevel * GetAbilityLevel(caster));
+      DummyOrderId, GetUnitAbilityLevel(caster, AbilityTypeId), DurationBase + DurationLevel * GetAbilityLevel(caster));
   }
 }

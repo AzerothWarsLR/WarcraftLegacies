@@ -59,8 +59,8 @@ namespace MacroTools.Powers
       whichUnit.MultiplyMaxHitpoints(_statMultiplier);
       whichUnit.MultiplyMaxMana(_statMultiplier);
       UnitRemoveAbility(whichUnit, FourCC("Aihn"));
-      whichUnit.AddAbility(HeroGlowAbilityTypeId);
-      whichUnit.AddAbility(FourCC("AInv"));
+      UnitAddAbility(whichUnit, HeroGlowAbilityTypeId);
+      UnitAddAbility(whichUnit, FourCC("AInv"));
       BlzSetUnitIntegerField(whichUnit, UNIT_IF_DEFENSE_TYPE, 5);
 
       if (BlzGetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0) != 3)

@@ -36,7 +36,7 @@ namespace WarcraftLegacies.Source.ArtifactBehaviour
       if (!UnitAlive(Target)) 
         return;
 
-      Target.AddAbility(ABILITY_A01Y_INVENTORY_DUMMY_DROP_ARTIFACT);
+      UnitAddAbility(Target, ABILITY_A01Y_INVENTORY_DUMMY_DROP_ARTIFACT);
       Target.AddItemSafe(_eyeOfSargeras);
       _impacted = true;
 

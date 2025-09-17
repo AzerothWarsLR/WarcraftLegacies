@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       SpellSystem.Register(summonGraniteGolems);
 
       var resurgentFlameStrike = new ResurgentSpell(ABILITY_A04H_RESURGENT_FLAME_STRIKE_QUEL_THALAS_KAEL_THAS,
-        ABILITY_A0F9_RESURGENT_FLAME_STRIKE_QUEL_THALAS_KAEL_THAS_DUMMY, OrderId("flamestrike"))
+        ABILITY_A0F9_RESURGENT_FLAME_STRIKE_QUEL_THALAS_KAEL_THAS_DUMMY, ORDER_FLAMESTRIKE)
       {
         Duration = 14,
         Interval = 7
@@ -34,7 +34,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var massBanish = new MassAnySpell(ABILITY_A0FD_MASS_BANISH_QUEL_THALAS_KAEL_THAS)
       {
         DummyAbilityId = ABILITY_A0FE_MASS_BANISH_QUEL_THALAS_KAEL_THAS_DUMMY_CASTER,
-        DummyAbilityOrderId = OrderId("banish"),
+        DummyAbilityOrderId = ORDER_BANISH,
         Radius = 250,
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
         TargetType = SpellTargetType.Point

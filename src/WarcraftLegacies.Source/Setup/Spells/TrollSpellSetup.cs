@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       var massFrostArmor = new MassAnySpell(ABILITY_A0H3_MASS_ICE_ARMOR_WARSONG_GAHZ_RILLA)
       {
         DummyAbilityId = ABILITY_A0H6_MASS_ICE_ARMOR_WARSONG_GAHZ_RILLA_DUMMY,
-        DummyAbilityOrderId = OrderId("frostarmor"),
+        DummyAbilityOrderId = ORDER_FROST_ARMOR,
         Radius = 200,
         CastFilter = CastFilters.IsTargetAllyAndAlive,
         TargetType = SpellTargetType.Point

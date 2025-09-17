@@ -13,7 +13,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       PassiveAbilityManager.Register(new NoTargetSpellOnCast(UNIT_H08H_HIGH_INQUISITOR_SCARLET, ABILITY_Z3X2_HEALING_FRENZY_ICON_SALLY)
       {
         DummyAbilityId = ABILITY_Z3X9_HEALING_FRENZY_SALLY_DUMMY,
-        DummyOrderId = OrderId("fanofknives"),
+        DummyOrderId = ORDER_FAN_OF_KNIVES,
         ProcChance = 1.0f,
         AbilityWhitelist = new List<int>
         {
@@ -32,7 +32,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DurationBase = 2,
         DurationLevel = 1,
         StunAbilityId = ABILITY_A0KD_SOUL_BURN_SAIDEN_DUMMY,
-        StunOrderId = OrderId("soulburn"),
+        StunOrderId = ORDER_SOUL_BURN,
         SpecialEffect = @"war3mapImported\RoarCasterScarlet.mdx"
       };
       SpellSystem.Register(crusaderShout);

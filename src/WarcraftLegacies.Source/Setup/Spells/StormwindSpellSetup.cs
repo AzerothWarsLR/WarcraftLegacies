@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         ABILITY_A12C_LEGENDARY_WARRIOR_VARIAN)
       {
         DummyAbilityId = ABILITY_A12D_LEGENDARY_WARRIOR_STORMWIND_DUMMY,
-        DummyOrderString = "voodoo",
+        DummyOrderId = ORDER_VOODOO,
         ProcChance = 0.15f,
         DurationBase = (int)0.5,
         DurationLevel = (int)0.5
@@ -30,15 +30,15 @@ namespace WarcraftLegacies.Source.Setup.Spells
       SpellSystem.Register(new AnySpellOnTarget(ABILITY_A12Z_RALLYING_BANNER_STORMWIND_DUMMY)
       {
         DummyAbilityId = ABILITY_A130_RESURRECTION_STORMWIND_CHAMPION_SINGLE,
-        DummyAbilityOrderId = OrderId("resurrection"),
+        DummyAbilityOrderId = ORDER_RESURRECTION,
       });
 
       var electricStrike = new ElectricStrike(ABILITY_A0RC_ELECTRIC_STRIKE_DARK_GREEN_WIZARD_S_SANCTUM)
       {
         StunId = ABILITY_A0RD_ELECTRIC_STRIKE_MINI_STUN_DARK_GREEN,
         PurgeId = ABILITY_APRG_PURGE_ELECTRIKE_STRIKE,
-        PurgeOrder = OrderId("purge"),
-        StunOrder = OrderId("firebolt"),
+        PurgeOrder = ORDER_PURGE,
+        StunOrder = ORDER_FIREBOLT,
         Radius = 500f,
         Effect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
       };
