@@ -26,7 +26,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       SpellSystem.Register(new ChannelAnySpellCaster(ABILITY_A11A_TIME_S_SHIELD_DALARAN_2)
       {
         DummyAbilityId = ABILITY_A11K_TIME_S_SHIELD_DALARAN_DUMMY,
-        DummyAbilityOrderString = "voodoo",
+        DummyAbilityOrderId = ORDER_VOODOO,
         Duration = 4
       });
 

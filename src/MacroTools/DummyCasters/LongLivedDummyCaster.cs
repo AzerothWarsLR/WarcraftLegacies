@@ -16,24 +16,24 @@ namespace MacroTools.DummyCasters
     /// <summary>
     /// Causes the specified spell to be channeled at a particular point.
     /// </summary>
-    public void ChannelOnPoint(unit caster, int abilityId, string orderId, int level, Point targetPoint, float duration)
+    public void ChannelOnPoint(unit caster, int abilityId, int orderId, int level, Point targetPoint, float duration)
     {
       var newUnit = CreateUnit(GetOwningPlayer(caster), _unitTypeId, targetPoint.X, targetPoint.Y, 0);
       newUnit.AddAbility(abilityId);
       SetUnitAbilityLevel(newUnit, abilityId, level);
-      IssueImmediateOrder(newUnit, orderId);
+      IssueImmediateOrderById(newUnit, orderId);
       newUnit.SetTimedLife(duration);
     }
 
     /// <summary>
     /// Causes the specified spell to be channeled at the caster's point.
     /// </summary>
-    public void ChannelAtCaster(unit caster, int abilityId, string orderId, int level, float duration)
+    public void ChannelAtCaster(unit caster, int abilityId, int orderId, int level, float duration)
     {
       var newUnit = CreateUnit(GetOwningPlayer(caster), _unitTypeId, caster.GetPosition().X, caster.GetPosition().Y, 0);
       newUnit.AddAbility(abilityId);
       SetUnitAbilityLevel(newUnit, abilityId, level);
-      IssueImmediateOrder(newUnit, orderId);
+      IssueImmediateOrderById(newUnit, orderId);
       newUnit.SetTimedLife(duration);
     }
   }
