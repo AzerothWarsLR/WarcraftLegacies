@@ -61,7 +61,7 @@ namespace MacroTools.QuestSystem
     /// </summary>
     public static void DisplayDiscovered(this Faction faction, QuestData questData)
     {
-      var display = $"\n|cffffcc00QUEST DISCOVERED - {questData.Title}|r\n{questData.Flavour}\n";
+      var display = $"\n|cffffcc00QUEST DISCOVERED - {questData.Title}|r\n";
       foreach (var objective in questData.Objectives)
         if (objective.ShowsInQuestLog)
         {
