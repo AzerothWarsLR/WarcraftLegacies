@@ -49,7 +49,7 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde
       AddObjective(new ObjectiveTime(480));
       Global = true;
     }
-
+ 
     /// <inheritdoc />
     public override string RewardFlavour =>
       "The Dark Portal, previously thought to have been sealed forever, has been opened once more. The people of Stormwind are about to relive their worst nightmares, as the demonic Fel Horde spills forth from Outland to resume their slaughterous rampage.";

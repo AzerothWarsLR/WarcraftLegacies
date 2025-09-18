@@ -10,6 +10,7 @@ using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
+using WarcraftLegacies.Source.Quests.Fel_Horde;
 using WarcraftLegacies.Source.Quests.Naga;
 using WarcraftLegacies.Source.Setup;
 
@@ -49,6 +50,7 @@ namespace WarcraftLegacies.Source.Factions
       RegisterFactionDependentInitializer<Druids>(RegisterDruidsDialogue);
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
       RegisterFactionDependentInitializer<Sentinels, Druids>(RegisterSentinelsDruidsDialogue);
+      RegisterFactionDependentInitializer<FelHorde>(RegisterFelHordeQuests);
       ProcessObjectInfo(IllidariObjectInfo.GetAllObjectLimits());
     }
 
@@ -99,12 +101,6 @@ namespace WarcraftLegacies.Source.Factions
       AddQuest(questZangarmarsh);
 
       AddQuest(new QuestStranglethornOutpost(Regions.IllidariUnlockSA, _allLegendSetup.Naga.Vashj));
-
-      AddQuest(new QuestNajentus(new[]
-      {
-        _allLegendSetup.Stormwind.StormwindKeep,
-        _allLegendSetup.Ironforge.GreatForge
-      }));
       AddQuest(new QuestEyeofSargeras(_artifactSetup.EyeOfSargeras, _allLegendSetup.Naga.Illidan));
       AddQuest(new QuestRegroupCastaway());
       AddQuest(new QuestBlackrookHold(_allLegendSetup.Sentinels.BlackrookHold));
@@ -325,6 +321,22 @@ namespace WarcraftLegacies.Source.Factions
                 }
               })
           }));
+    }
+    
+    private void RegisterFelHordeQuests(FelHorde felHorde)
+    {
+      var questBurningCrusade = new QuestNajentus(new[]
+      {
+        _allLegendSetup.Stormwind.StormwindKeep,
+        _allLegendSetup.Ironforge.GreatForge
+      });
+      questBurningCrusade.AddObjective(new ObjectiveFactionQuestComplete(felHorde.GetQuestByType<QuestDarkPortal>(), felHorde)
+      {
+        ShowsInPopups = false,
+        ShowsInQuestLog = false,
+        Progress = QuestProgress.Undiscovered
+      });
+      AddQuest(questBurningCrusade);
     }
   }
 }
