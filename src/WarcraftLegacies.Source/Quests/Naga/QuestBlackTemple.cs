@@ -22,7 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestBlackTemple"/> class.
     /// </summary>
-    public QuestBlackTemple(QuestData prerequisite, Rectangle rescueRect, LegendaryHero illidan) : base("Seat of Power",
+    public QuestBlackTemple(QuestData prerequisite, Rectangle rescueRect, LegendaryHero illidan) : base("Return to Outland",
       "Illidan requires the aid of his servants in Outland for the upcoming war. He must travel to the Black Temple to muster them. His incredible power allows him to move between worlds with ease.",
       @"ReplaceableTextures\CommandButtons\BTNWarpPortal.blp")
     {
@@ -61,6 +61,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.Player.RescueGroup(_rescueUnits);
+      completingFaction.Player?.PlayMusicThematic("IllidansTheme");
     }
   }
 }

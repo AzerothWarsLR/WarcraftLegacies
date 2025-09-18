@@ -23,6 +23,12 @@ namespace WarcraftLegacies.Source.Quests.Naga
       "The Ruins in the Cape of Stranglethorn are an old Naga outpost, they could serve Illidan well",
       @"ReplaceableTextures\CommandButtons\BTNIllidariSpawningGrounds.blp")
     {
+      AddObjective(new ObjectiveControlLegend(vashj, false)
+      {
+        Progress = QuestProgress.Undiscovered,
+        ShowsInPopups = false,
+        ShowsInQuestLog = false
+      });
       AddObjective(new ObjectiveLegendInRect(vashj, rescueRect, "the Cape of Stranglethorn"));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());

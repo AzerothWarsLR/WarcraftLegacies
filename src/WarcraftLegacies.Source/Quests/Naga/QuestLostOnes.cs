@@ -45,8 +45,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// <inheritdoc/>
     /// </summary>
     protected override string RewardDescription =>
-      $"Gain control of the Draenei camp in Outland, allows construction of the Ashtongue Lair and Akama can be trained from the {GetObjectName(UNIT_NNAD_ALTAR_OF_THE_BETRAYER_ILLIDARI_ALTAR)}";
-
+      $"Gain control of the Draenei camp in Outland, learn to build {GetObjectName(UNIT_N08W_ASHTONGUE_LAIR_ILLIDARI_SIEGE)}s, and learn to train Akama from the {GetObjectName(UNIT_NNAD_ALTAR_OF_THE_BETRAYER_ILLIDARI_ALTAR)}";
 
     /// <summary>
     /// <inheritdoc/>
@@ -54,7 +53,6 @@ namespace WarcraftLegacies.Source.Quests.Naga
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.Player?.RescueGroup(_rescueUnits);
-      completingFaction.Player?.PlayMusicThematic("IllidansTheme");
     }
 
     /// <summary>

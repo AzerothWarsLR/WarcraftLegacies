@@ -7,6 +7,7 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using MacroTools.QuestSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
 using WarcraftLegacies.Source.Quests.Naga;
@@ -75,10 +76,30 @@ namespace WarcraftLegacies.Source.Factions
       var flameAndSorrow = new QuestFlameAndSorrow(_artifactSetup.SkullOfGuldan, _allLegendSetup.Naga.Illidan);
       StartingQuest = flameAndSorrow;
       AddQuest(flameAndSorrow);
-      AddQuest(new QuestBlackTemple(flameAndSorrow, Regions.IllidanBlackTempleUnlock, _allLegendSetup.Naga.Illidan));
-      AddQuest(new QuestLostOnes(Regions.AkamaUnlock));
-      AddQuest(new QuestZangarmarsh(Regions.TelredorUnlock, _allLegendSetup.Naga.Vashj));
+
+      var questBlackTemple = new QuestBlackTemple(flameAndSorrow, Regions.IllidanBlackTempleUnlock, _allLegendSetup.Naga.Illidan);
+      AddQuest(questBlackTemple);
+
+      var questLostOnes = new QuestLostOnes(Regions.AkamaUnlock);
+      questLostOnes.AddObjective(new ObjectiveQuestComplete(questBlackTemple)
+      {
+        ShowsInPopups = false,
+        ShowsInQuestLog = false,
+        Progress = QuestProgress.Undiscovered
+      });
+      AddQuest(questLostOnes);
+
+      var questZangarmarsh = new QuestZangarmarsh(Regions.TelredorUnlock, _allLegendSetup.Naga.Vashj);
+      questZangarmarsh.AddObjective(new ObjectiveQuestComplete(questBlackTemple)
+      {
+        ShowsInPopups = false,
+        ShowsInQuestLog = false,
+        Progress = QuestProgress.Undiscovered
+      });
+      AddQuest(questZangarmarsh);
+
       AddQuest(new QuestStranglethornOutpost(Regions.IllidariUnlockSA, _allLegendSetup.Naga.Vashj));
+
       AddQuest(new QuestNajentus(new[]
       {
         _allLegendSetup.Stormwind.StormwindKeep,
