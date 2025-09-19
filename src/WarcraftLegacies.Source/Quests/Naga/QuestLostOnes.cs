@@ -9,19 +9,13 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Naga
 {
-  /// <summary>
-  /// Drive the Draenai out of Outland, take control of various control points in outland and upgrade main to t3 in order to unlock Hellfire Citadel.
-  /// </summary>
   public sealed class QuestLostOnes : QuestData
   {
     private readonly List<unit> _rescueUnits;
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="QuestLostOnes"/> class.
-    /// </summary>
     /// <param name="rescueRect">Units in this area start invulnerable then get rescued when the quest is complete.</param>
-    public QuestLostOnes(Rectangle rescueRect) : base("The Lost Ones",
-      "A tribe of Draenei known as the Ashtongue are struggling to survive in the harsh environment of Outland. If Illidan helps them, they would plead loyalty to him.",
+    public QuestLostOnes(Rectangle rescueRect) : base("The Draenei",
+      "The native Draenei of Outland, led by Elder Sage Akama, aided Illidan in his assault on the Black Temple, but abandoned him when he let Magtheridon live. With invaders on Outland's doorstep, the Draenei must be forced back into the fold.",
       @"ReplaceableTextures\CommandButtons\BTNDranaiAkama.blp")
     {
       AddObjective(new ObjectiveControlPoint(UNIT_N01J_ZANGARMARSH));
@@ -32,32 +26,19 @@ namespace WarcraftLegacies.Source.Quests.Naga
       AddObjective(new ObjectiveSelfExists());
       ResearchId = UPGRADE_R05H_QUEST_COMPLETED_THE_LOST_ONES;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
-      
     }
 
-    /// <summary>
-    /// <inheritdoc/>
-    /// </summary>
     public override string RewardFlavour =>
-      "The Draenai of the Ashtongue tribe have joined our cause.";
+      "Elder Sage Akama and his Draenei tribesmen have been brought to heel, now forced to fight alongside Illidan - and the Pit Lord that once threatened their extinction.";
 
-    /// <summary>
-    /// <inheritdoc/>
-    /// </summary>
     protected override string RewardDescription =>
       $"Gain control of the Draenei camp in Outland, learn to build {GetObjectName(UNIT_N08W_ASHTONGUE_LAIR_ILLIDARI_SIEGE)}s, and learn to train Akama from the {GetObjectName(UNIT_NNAD_ALTAR_OF_THE_BETRAYER_ILLIDARI_ALTAR)}";
 
-    /// <summary>
-    /// <inheritdoc/>
-    /// </summary>
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.Player?.RescueGroup(_rescueUnits);
     }
 
-    /// <summary>
-    /// <inheritdoc/>
-    /// </summary>
     protected override void OnFail(Faction completingFaction)
     {
       Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
