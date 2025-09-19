@@ -2,18 +2,11 @@
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using WarcraftLegacies.Source.Setup;
 
 namespace WarcraftLegacies.Source.Quests.Naga
 {
-  /// <summary>
-  /// Acquire the <see cref="ArtifactSetup.EyeOfSargeras"/> to unlock Coilfang Summoners
-  /// </summary>
   public sealed class QuestEyeofSargeras : QuestData
   {
-    /// <summary>
-    /// Initializes a new instance of the <see cref="QuestEyeofSargeras"/> class.
-    /// </summary>
     public QuestEyeofSargeras(Artifact eyeOfSargeras, LegendaryHero illidan) : base("The Eye of Sargeras",
       "The Eye of Sargeras is an extremely powerful artifact, it could be the key to satiate Illidan's thirst for power.",
       @"ReplaceableTextures\CommandButtons\BTNKazzakIon.blp")

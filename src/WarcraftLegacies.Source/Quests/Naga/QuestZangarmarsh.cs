@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
       AddObjective(new ObjectiveLegendInRect(vashj, rescueRect, "Zangarmarsh"));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = UPGRADE_R03B_QUEST_COMPLETED_THE_COILFANG_RESERVOIR;
+      ResearchId = UPGRADE_R03B_QUEST_COMPLETED_COILFANG_RESERVOIR;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
     }
 

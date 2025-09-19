@@ -20,7 +20,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
         Regions.BrokenIslesA,
         Regions.BrokenIslesB
       }, "the Broken Isles"));
-      ResearchId = UPGRADE_R095_QUEST_COMPLETED_A_DESTINY_OF_FLAME_AND_SORROW;
+      ResearchId = UPGRADE_R095_QUEST_COMPLETED_THE_BROKEN_ISLES;
     }
 
     /// <inheritdoc/>

@@ -24,7 +24,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
       AddObjective(new ObjectiveControlPoint(UNIT_N0CW_FARAHLON));
       AddObjective(new ObjectiveExpire(1450, Title));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = UPGRADE_R05H_QUEST_COMPLETED_THE_LOST_ONES;
+      ResearchId = UPGRADE_R05H_QUEST_COMPLETED_THE_DRAENEI;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
     }
 
