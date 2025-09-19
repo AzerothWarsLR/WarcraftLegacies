@@ -82,15 +82,6 @@ namespace WarcraftLegacies.Source.Factions
       var questBlackTemple = new QuestBlackTemple(flameAndSorrow, Regions.IllidanBlackTempleUnlock, _allLegendSetup.Naga.Illidan);
       AddQuest(questBlackTemple);
 
-      var questLostOnes = new QuestLostOnes(Regions.AkamaUnlock);
-      questLostOnes.AddObjective(new ObjectiveQuestComplete(questBlackTemple)
-      {
-        ShowsInPopups = false,
-        ShowsInQuestLog = false,
-        Progress = QuestProgress.Undiscovered
-      });
-      AddQuest(questLostOnes);
-
       var questZangarmarsh = new QuestZangarmarsh(Regions.TelredorUnlock, _allLegendSetup.Naga.Vashj);
       questZangarmarsh.AddObjective(new ObjectiveQuestComplete(questBlackTemple)
       {
@@ -99,6 +90,15 @@ namespace WarcraftLegacies.Source.Factions
         Progress = QuestProgress.Undiscovered
       });
       AddQuest(questZangarmarsh);
+      
+      var questLostOnes = new QuestLostOnes(Regions.AkamaUnlock);
+      questLostOnes.AddObjective(new ObjectiveQuestComplete(questBlackTemple)
+      {
+        ShowsInPopups = false,
+        ShowsInQuestLog = false,
+        Progress = QuestProgress.Undiscovered
+      });
+      AddQuest(questLostOnes);
 
       AddQuest(new QuestStranglethornOutpost(Regions.IllidariUnlockSA, _allLegendSetup.Naga.Vashj));
       AddQuest(new QuestEyeofSargeras(_artifactSetup.EyeOfSargeras, _allLegendSetup.Naga.Illidan));

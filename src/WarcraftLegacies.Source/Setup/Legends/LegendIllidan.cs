@@ -17,8 +17,7 @@ namespace WarcraftLegacies.Source.Setup.Legends
     {
       Illidan = new LegendaryHero("Illidan")
       {
-        UnitType = UNIT_EILL_DEMON_HUNTER_BASE_ILLIDARI,
-        PlayerColor = PLAYER_COLOR_PURPLE,
+        UnitType = UNIT_EEVI_DEMON_HUNTER_HYBRID_ILLIDARI,
         StartingArtifacts = new()
         {
           new(CreateItem(ITEM_I007_SKULL_OF_GUL_DAN, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))

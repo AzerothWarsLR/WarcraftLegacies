@@ -31,7 +31,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     public override string RewardFlavour => "With the swamps of Zangarmarsh secured, Lady Vashj and her Naga begin the work of rebuilding their clutcheries.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => $"Gain control of the Zangarmarsh Outpost and learn to build {nameof(UNIT_NNSA_CLUTCHERY_ILLIDARI_SPECIALIST)}s";
+    protected override string RewardDescription => $"Gain control of the Zangarmarsh Outpost and learn to build {GetObjectName(UNIT_NNSA_CLUTCHERY_ILLIDARI_SPECIALIST)}s";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)

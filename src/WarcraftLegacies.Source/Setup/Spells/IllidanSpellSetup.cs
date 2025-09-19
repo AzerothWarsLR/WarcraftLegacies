@@ -20,7 +20,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
       {
         UNIT_EILL_DEMON_HUNTER_BASE_ILLIDARI,
         FourCC("Eidm"),
-        UNIT_EEVM_DEMON_HUNTER_EVIL_MORPHED,
         UNIT_EILM_DEMON_HUNTER,
         UNIT_EEVI_DEMON_HUNTER_HYBRID_ILLIDARI,
         UNIT_E00G_DEMON_HUNTER_EVIL_MORPHED_LEVEL_3,
@@ -69,10 +68,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
         OnlyAttackDamage = true
       };
       PassiveAbilityManager.Register(cripplingStrike);
-    foreach (var unitTypeId in illidanVariations)
-    {
-    }
-
     }
   }
 }
