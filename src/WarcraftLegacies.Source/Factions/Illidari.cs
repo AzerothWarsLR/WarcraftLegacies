@@ -75,7 +75,7 @@ namespace WarcraftLegacies.Source.Factions
 
     private void RegisterQuests()
     {
-      var flameAndSorrow = new QuestBrokenIsles();
+      var flameAndSorrow = new QuestBrokenIsles(_allLegendSetup.Naga.Illidan);
       StartingQuest = flameAndSorrow;
       AddQuest(flameAndSorrow);
 
@@ -143,19 +143,15 @@ namespace WarcraftLegacies.Source.Factions
       ));
 
       TriggeredDialogueManager.Add(new TriggeredDialogue(
-        new DialogueSequence(
-          new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf06\N06Illidan16.flac",
-            "Yes... the power should be mine!",
-            "Illidan Stormrage"),
-          new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf06\N06Illidan17.flac",
-            "Now I am complete!",
-            "Illidan Stormrage"))
+        new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf06\N06Illidan17.flac",
+          "Now I am complete!",
+          "Illidan Stormrage")
         , new[]
         {
           this
         }, new List<Objective>
         {
-          new ObjectiveQuestComplete(GetQuestByType<QuestBrokenIsles>())
+          new ObjectiveQuestComplete(GetQuestByType<QuestEyeofSargeras>())
           {
             EligibleFactions = new List<Faction> { this }
           }

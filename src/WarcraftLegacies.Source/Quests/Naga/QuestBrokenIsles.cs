@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using MacroTools.LegendSystem;
+using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
@@ -11,7 +13,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// <summary>
     /// Initializes a new instance of the <see cref="QuestBrokenIsles"/> class.
     /// </summary>
-    public QuestBrokenIsles() : base("The Broken Isles",
+    public QuestBrokenIsles(LegendaryHero illidan) : base("The Broken Isles",
       "With Outland now under Illidan's command, the Demon Hunter has returned to the Broken Isles in search of a legendary demonic artifact: the Eye of the Dark Titan, Sargeras.",
       @"ReplaceableTextures\CommandButtons\BTNMetamorphosis.blp")
     {
@@ -20,6 +22,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
         Regions.BrokenIslesA,
         Regions.BrokenIslesB
       }, "the Broken Isles"));
+      AddObjective(new ObjectiveLegendReachRect(illidan, Regions.Sargeras_Entrance, "the Tomb of Sargeras entrance"));
       ResearchId = UPGRADE_R095_QUEST_COMPLETED_THE_BROKEN_ISLES;
     }
 

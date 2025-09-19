@@ -23,7 +23,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// Initializes a new instance of the <see cref="QuestBlackTemple"/> class.
     /// </summary>
     public QuestBlackTemple(QuestData prerequisite, Rectangle rescueRect, LegendaryHero illidan) : base("Return to Outland",
-      "Illidan requires the aid of his servants in Outland for the upcoming war. He must travel to the Black Temple to muster them. His incredible power allows him to move between worlds with ease.",
+      "Illidan's servants in Outland have been left to their own devices for too long; he must return swiftly if he is to prepare them for the coming war.",
       @"ReplaceableTextures\CommandButtons\BTNWarpPortal.blp")
     {
       var questCompleteObjective = new ObjectiveQuestComplete(prerequisite)
@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
       AddObjective(new ObjectiveLegendInRect(illidan, Regions.IllidanBlackTempleUnlock, "Black Temple"));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
-      ResearchId = UPGRADE_R09Y_QUEST_COMPLETED_SEAT_OF_POWER;
+      ResearchId = UPGRADE_R09Y_QUEST_COMPLETED_RETURN_TO_OUTLAND;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     }
 
