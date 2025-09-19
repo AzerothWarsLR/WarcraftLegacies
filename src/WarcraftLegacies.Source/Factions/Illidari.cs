@@ -110,6 +110,20 @@ namespace WarcraftLegacies.Source.Factions
     private void RegisterDialogue()
     {
       TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Illidan45.flac",
+          "At last! The Tomb of Sargeras is found!",
+          "Illidan Stormrage")
+        , new[]
+        {
+          this
+        }, new List<Objective>
+        {
+          new ObjectiveLegendReachRect(_allLegendSetup.Naga.Illidan, Regions.Sargeras_Entrance,
+            "the Tomb of Sargeras' entrance")
+        }
+      ));
+      
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
         new Dialogue(@"Sound\Dialogue\HumanExpCamp\Human07x\A07Illidan24",
           "Hear me now, you trembling mortals! I am your lord and master! Illidan reigns supreme!",
           "Illidan Stormrage")
@@ -129,19 +143,24 @@ namespace WarcraftLegacies.Source.Factions
       ));
 
       TriggeredDialogueManager.Add(new TriggeredDialogue(
-        new Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Illidan45.flac",
-          "At last! The Tomb of Sargeras is found!",
-          "Illidan Stormrage")
+        new Dialogue(@"Sound\Dialogue\HumanExpCamp\Human07x\A07LadyVashj32.flac",
+          "The naga are yours to command, Lord Illidan. Where you go, we follow.",
+          "Lady Vashj")
         , new[]
         {
           this
         }, new List<Objective>
         {
-          new ObjectiveLegendReachRect(_allLegendSetup.Naga.Illidan, Regions.Sargeras_Entrance,
-            "the Tomb of Sargeras' entrance")
+          new ObjectiveControlLegend(_allLegendSetup.Naga.Vashj, false)
+          {
+            EligibleFactions = new List<Faction>
+            {
+              this
+            }
+          }
         }
       ));
-
+      
       TriggeredDialogueManager.Add(new TriggeredDialogue(
         new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf06\N06Illidan17.flac",
           "Now I am complete!",
