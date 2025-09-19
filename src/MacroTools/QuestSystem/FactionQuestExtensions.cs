@@ -59,9 +59,13 @@ namespace MacroTools.QuestSystem
     /// <summary>
     /// Indicates to the provided question that the quest has been discovered.
     /// </summary>
-    public static void DisplayDiscovered(this Faction faction, QuestData questData)
+    public static void DisplayDiscovered(this Faction faction, QuestData questData, bool displayFlavour)
     {
       var display = $"\n|cffffcc00QUEST DISCOVERED - {questData.Title}|r\n";
+      
+      if (displayFlavour)
+        display += $"{questData.Flavour}\n";
+      
       foreach (var objective in questData.Objectives)
         if (objective.ShowsInPopups)
         {

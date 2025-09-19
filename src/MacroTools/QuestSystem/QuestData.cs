@@ -200,7 +200,7 @@ namespace MacroTools.QuestSystem
         case QuestProgress.Incomplete:
         {
           if (formerProgress == QuestProgress.Undiscovered) 
-            whichFaction.DisplayDiscovered(this);
+            whichFaction.DisplayDiscovered(this, false);
           break;
         }
         case QuestProgress.Undiscovered:

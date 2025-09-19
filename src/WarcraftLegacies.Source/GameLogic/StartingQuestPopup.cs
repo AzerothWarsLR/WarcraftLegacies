@@ -25,7 +25,7 @@ namespace WarcraftLegacies.Source.GameLogic
         {
           var playerFaction = player.GetFaction();
           if (playerFaction?.StartingQuest != null)
-            playerFaction.DisplayDiscovered(playerFaction.StartingQuest);
+            playerFaction.DisplayDiscovered(playerFaction.StartingQuest, true);
         }
       });
     }
