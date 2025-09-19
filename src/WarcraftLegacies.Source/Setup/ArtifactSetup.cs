@@ -18,11 +18,6 @@ namespace WarcraftLegacies.Source.Setup
     public Artifact CrownOfStormwind { get; }
 
     /// <summary>
-    /// The Skull of Guldan.
-    /// </summary>
-    public Artifact SkullOfGuldan { get; }
-
-    /// <summary>
     /// The Scarab Gong.
     /// </summary>
     public Artifact ScarabGong { get; }
@@ -103,10 +98,6 @@ namespace WarcraftLegacies.Source.Setup
       CrownOfStormwind = new Artifact(CreateItem(FourCC("I002"), DummyX, DummyY));
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n021")), CrownOfStormwind.Item); //Hogger
       ArtifactManager.Register(CrownOfStormwind);
-
-      SkullOfGuldan = new Artifact(CreateItem(FourCC("I007"), DummyX, DummyY)); //Skull of Guldan
-      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n03Y")), SkullOfGuldan.Item); //Drakthul
-      ArtifactManager.Register(SkullOfGuldan);
 
       ScarabGong = new Artifact(CreateItem(FourCC("ISGC"), DummyX, DummyY)); //Scarab Gong
       UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("nJTR")), ScarabGong.Item); //Scarab Gong

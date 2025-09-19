@@ -19,6 +19,10 @@ namespace WarcraftLegacies.Source.Setup.Legends
       {
         UnitType = UNIT_EILL_DEMON_HUNTER_BASE_ILLIDARI,
         PlayerColor = PLAYER_COLOR_PURPLE,
+        StartingArtifacts = new()
+        {
+          new(CreateItem(ITEM_I007_SKULL_OF_GUL_DAN, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+        }
       };
 
       Vashj = new LegendaryHero("Lady Vashj")

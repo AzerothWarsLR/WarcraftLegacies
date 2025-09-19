@@ -47,7 +47,7 @@ namespace WarcraftLegacies.Shared.FactionObjectLimits
       yield return new(UNIT_HVSH_SEA_WITCH_ILLIDARI, 1);
       yield return new(UNIT_U00S_HIGH_WARLORD_NAGA, 1);
       yield return new(UNIT_NAKA_ELDER_SAGE_ILLIDARI, 1);
-      yield return new(UNIT_EILL_DEMON_HUNTER_BASE_ILLIDARI, 1);
+      yield return new(UNIT_EEVI_DEMON_HUNTER_HYBRID_ILLIDARI, 1);
       yield return new(UPGRADE_RNSW_NAGA_SIREN_ADEPT_TRAINING_NAGA_SIREN_MASTER_TRAINING, Unlimited);
       yield return new(UPGRADE_R02V_SHADOWCASTER_MASTER_TRAINING, Unlimited);
     }

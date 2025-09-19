@@ -75,7 +75,7 @@ namespace WarcraftLegacies.Source.Factions
 
     private void RegisterQuests()
     {
-      var flameAndSorrow = new QuestFlameAndSorrow(_artifactSetup.SkullOfGuldan, _allLegendSetup.Naga.Illidan);
+      var flameAndSorrow = new QuestBrokenIsles();
       StartingQuest = flameAndSorrow;
       AddQuest(flameAndSorrow);
 
@@ -155,7 +155,7 @@ namespace WarcraftLegacies.Source.Factions
           this
         }, new List<Objective>
         {
-          new ObjectiveQuestComplete(GetQuestByType<QuestFlameAndSorrow>())
+          new ObjectiveQuestComplete(GetQuestByType<QuestBrokenIsles>())
           {
             EligibleFactions = new List<Faction> { this }
           }
@@ -325,7 +325,7 @@ namespace WarcraftLegacies.Source.Factions
     
     private void RegisterFelHordeQuests(FelHorde felHorde)
     {
-      var questBurningCrusade = new QuestNajentus(new[]
+      var questBurningCrusade = new QuestBurningCrusade(new[]
       {
         _allLegendSetup.Stormwind.StormwindKeep,
         _allLegendSetup.Ironforge.GreatForge

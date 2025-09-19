@@ -16,11 +16,8 @@ namespace WarcraftLegacies.Source.Quests.Naga
   {
     private readonly List<unit> _rescueUnits;
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="QuestZangarmarsh"/> class.
-    /// </summary>
-    public QuestZangarmarsh(Rectangle rescueRect, LegendaryHero vashj) : base("The Coilfang Reservoir",
-      "The bassins of Zangarmarsh will be the perfect breeding ground for Illidan's Naga",
+    public QuestZangarmarsh(Rectangle rescueRect, LegendaryHero vashj) : base("Coilfang Reservoir",
+      "Lady Vashj and here Naga were instrumental in securing Outland, and for their deeds received the swamp of Zangarmarsh. It has become overrun in recent times, and must be reclaimed if the Naga are to aid in the fight against the Alliance.",
       @"ReplaceableTextures\CommandButtons\BTNIllidariDemonGate.blp")
     {
       AddObjective(new ObjectiveLegendInRect(vashj, rescueRect, "Zangarmarsh"));
@@ -28,14 +25,13 @@ namespace WarcraftLegacies.Source.Quests.Naga
       AddObjective(new ObjectiveSelfExists());
       ResearchId = UPGRADE_R03B_QUEST_COMPLETED_THE_COILFANG_RESERVOIR;
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      
     }
 
     /// <inheritdoc />
-    public override string RewardFlavour => "The Clutcheries of Zangarmarsh are now built";
+    public override string RewardFlavour => "With the swamps of Zangarmarsh secured, Lady Vashj and her Naga begin the work of rebuilding their clutcheries.";
 
     /// <inheritdoc />
-    protected override string RewardDescription => "Gain control of the Zangarmarsh Outpost and the ability to build the Clutchery";
+    protected override string RewardDescription => $"Gain control of the Zangarmarsh Outpost and learn to build {nameof(UNIT_NNSA_CLUTCHERY_ILLIDARI_SPECIALIST)}s";
 
     /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
