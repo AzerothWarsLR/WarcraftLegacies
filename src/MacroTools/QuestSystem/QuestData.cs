@@ -98,8 +98,38 @@ namespace MacroTools.QuestSystem
       {
         try
         {
+          if (_progress == value)
+            return;
+          
           var formerProgress = _progress;
           _progress = value;
+
+          switch (_progress)
+          {
+            case QuestProgress.Complete:
+              QuestSetCompleted(Quest, true);
+              QuestSetFailed(Quest, false);
+              QuestSetDiscovered(Quest, true);
+              break;
+            case QuestProgress.Incomplete:
+              QuestSetCompleted(Quest, false);
+              QuestSetFailed(Quest, false);
+              QuestSetDiscovered(Quest, true);
+              break;
+            case QuestProgress.Undiscovered:
+              QuestSetCompleted(Quest, false);
+              QuestSetFailed(Quest, false);
+              QuestSetDiscovered(Quest, false);
+              break;
+            case QuestProgress.Failed:
+              QuestSetCompleted(Quest, false);
+              QuestSetFailed(Quest, true);
+              QuestSetDiscovered(Quest, true);
+              break;
+            default:
+              throw new ArgumentOutOfRangeException(nameof(value));
+          }
+
           ProgressChanged?.Invoke(this, new QuestProgressChangedEventArgs(this, formerProgress));
         }
         catch (Exception ex)
@@ -117,11 +147,8 @@ namespace MacroTools.QuestSystem
           : $"{Flavour}\n|cffffcc00On completion:|r {RewardDescription}");
     }
 
-    private void Complete(Faction whichFaction)
+    private void CompleteForFaction(Faction whichFaction)
     {
-      QuestSetCompleted(Quest, true);
-      QuestSetFailed(Quest, false);
-      QuestSetDiscovered(Quest, true);
       whichFaction
         .DisplayCompleted(this);
       if (Global) 
@@ -130,18 +157,13 @@ namespace MacroTools.QuestSystem
       if (ResearchId != 0)
         SetPlayerTechResearched(whichFaction.Player, ResearchId, 1);
       
-      foreach (var objective in Objectives)
-      {
+      foreach (var objective in Objectives) 
         objective.ProgressLocked = true;
-      }
       OnComplete(whichFaction);
     }
 
-    private void Fail(Faction whichFaction)
+    private void FailForFaction(Faction whichFaction)
     {
-      QuestSetCompleted(Quest, false);
-      QuestSetFailed(Quest, true);
-      QuestSetDiscovered(Quest, true);
       whichFaction.DisplayFailed(this);
       foreach (var objective in Objectives) 
         objective.ProgressLocked = true;
@@ -170,25 +192,18 @@ namespace MacroTools.QuestSystem
       switch (progress)
       {
         case QuestProgress.Complete:
-          Complete(whichFaction);
+          CompleteForFaction(whichFaction);
           break;
         case QuestProgress.Failed:
-          Fail(whichFaction);
+          FailForFaction(whichFaction);
           break;
         case QuestProgress.Incomplete:
         {
           if (formerProgress == QuestProgress.Undiscovered) 
-            whichFaction.DisplayDiscovered(this);
-
-          QuestSetCompleted(Quest, false);
-          QuestSetFailed(Quest, false);
-          QuestSetDiscovered(Quest, true);
+            whichFaction.DisplayDiscovered(this, false);
           break;
         }
         case QuestProgress.Undiscovered:
-          QuestSetCompleted(Quest, false);
-          QuestSetFailed(Quest, false);
-          QuestSetDiscovered(Quest, false);
           break;
         default:
           throw new ArgumentOutOfRangeException(nameof(progress), progress, null);
@@ -296,15 +311,14 @@ namespace MacroTools.QuestSystem
         }
       }
 
-
       //If anything is undiscovered, the quest is undiscovered
-      if (anyUndiscovered && Progress != QuestProgress.Undiscovered)
+      if (anyUndiscovered)
         Progress = QuestProgress.Undiscovered;
       //If everything is complete, the quest is completed
-      else if (allComplete && Progress != QuestProgress.Complete)
+      else if (allComplete)
         Progress = QuestProgress.Complete;
       //If anything is failed, the quest is failed
-      else if (anyFailed && Progress != QuestProgress.Failed)
+      else if (anyFailed)
         Progress = QuestProgress.Failed;
       else
         Progress = QuestProgress.Incomplete;
@@ -312,11 +326,14 @@ namespace MacroTools.QuestSystem
 
     public void AddObjective(Objective objective)
     {
+      if (objective.Progress == QuestProgress.Undiscovered) 
+        Progress = QuestProgress.Undiscovered;
+
       Objectives.Add(objective);
       if (objective.ShowsInQuestLog)
       {
         objective.QuestItem = QuestCreateItem(Quest);
-        QuestItemSetDescription(objective.QuestItem, objective.Description);
+        objective.UpdateDisplay();
       }
 
       objective.ProgressChanged += OnQuestItemProgressChanged;

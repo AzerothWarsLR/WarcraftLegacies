@@ -2,7 +2,6 @@
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
-using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 
@@ -26,7 +25,6 @@ namespace WarcraftLegacies.Source.Quests.Naga
         Regions.BrokenIslesA,
         Regions.BrokenIslesB
       }, "on the Broken Isles"));
-      AddObjective(new NoOtherPlayerGetsCapital(blackrookHold));
       AddObjective(new ObjectiveControlPoint(UNIT_N053_VAL_SHARAH, 0));
     }
 
@@ -41,7 +39,7 @@ namespace WarcraftLegacies.Source.Quests.Naga
     /// <inheritdoc />
     protected override void OnComplete(Faction whichFaction)
     {
-      _blackrookHold.Unit?.Rescue(whichFaction.Player);
+      _blackrookHold.Unit?.Rescue(whichFaction.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE));
     }
 
     /// <inheritdoc />

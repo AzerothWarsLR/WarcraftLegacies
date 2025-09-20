@@ -16,6 +16,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.FactionBased
     {
       Progress = QuestProgress.Complete;
       ShowsInQuestLog = false;
+      ShowsInPopups = false;
     }
 
     public override void OnAdd(Faction whichFaction)

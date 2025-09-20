@@ -5,14 +5,14 @@
   ],
   "Modifications": [
     {
-      "Id": 1952543846,
-      "Type": 3,
-      "Value": "Abilities\\Spells\\Other\\ImmolationRed\\ImmolationRedTarget.mdl"
-    },
-    {
       "Id": 1952543590,
       "Type": 3,
       "Value": ""
+    },
+    {
+      "Id": 811693158,
+      "Type": 3,
+      "Value": "origin"
     }
   ]
 }

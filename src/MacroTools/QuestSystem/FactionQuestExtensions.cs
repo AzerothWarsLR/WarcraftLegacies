@@ -31,7 +31,7 @@ namespace MacroTools.QuestSystem
         : $"\n|cffffcc00QUEST FAILED - {questData.Title}|r\n";
 
       foreach (var objective in questData.Objectives)
-        if (objective.ShowsInQuestLog)
+        if (objective.ShowsInPopups || objective.Progress == QuestProgress.Failed)
           display = objective.Progress switch
           {
             QuestProgress.Complete => $"{display} - |cff808080{objective.Description} (Completed)|r\n",
@@ -48,7 +48,7 @@ namespace MacroTools.QuestSystem
     {
       var display = $"\n|cffffcc00QUEST COMPLETED - {questData.Title}|r\n{questData.RewardFlavour}\n";
       foreach (var objective in questData.Objectives)
-        if (objective.ShowsInQuestLog)
+        if (objective.ShowsInPopups)
           display = $"{display} - |cff808080{objective.Description} (Completed)|r\n";
       if (faction.Player != null && faction.Player.GetPlayerSettings().ShowQuestText)
         DisplayTextToPlayer(faction.Player, 0, 0, display);
@@ -59,11 +59,15 @@ namespace MacroTools.QuestSystem
     /// <summary>
     /// Indicates to the provided question that the quest has been discovered.
     /// </summary>
-    public static void DisplayDiscovered(this Faction faction, QuestData questData)
+    public static void DisplayDiscovered(this Faction faction, QuestData questData, bool displayFlavour)
     {
-      var display = $"\n|cffffcc00QUEST DISCOVERED - {questData.Title}|r\n{questData.Flavour}\n";
+      var display = $"\n|cffffcc00QUEST DISCOVERED - {questData.Title}|r\n";
+      
+      if (displayFlavour)
+        display += $"{questData.Flavour}\n";
+      
       foreach (var objective in questData.Objectives)
-        if (objective.ShowsInQuestLog)
+        if (objective.ShowsInPopups)
         {
           display = objective.Progress == QuestProgress.Complete
             ? $"{display} - |cff808080{objective.Description} (Completed)|r\n"

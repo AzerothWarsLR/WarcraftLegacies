@@ -5,19 +5,6 @@
   ],
   "Modifications": [
     {
-      "Id": 2020631137,
-      "Value": 1
-    },
-    {
-      "Id": 2037408353,
-      "Value": 1
-    },
-    {
-      "Id": 2037082209,
-      "Type": 3,
-      "Value": "D"
-    },
-    {
       "Id": 1802007137,
       "Type": 3,
       "Value": "R"
@@ -30,13 +17,53 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Transforms Illidan into a powerful Demon with a ranged attack. |n|n|cffffcc00Level 1|r - 400 hit points, lasts 60 seconds. Got 180 seconds cooldown. |n|cffffcc00Level 2|r - 800 hit points, lasts 70 seconds. Got 160 seconds cooldown. |n|cffffcc00Level 3|r - 1200 hit points, lasts 80 seconds. Got 140 seconds cooldown."
+      "Value": "Transforms Illidan into a powerful Demon with a ranged attack and additional base damage for \u003CAEvi,HeroDur1\u003E seconds. |n|n|cffffcc00Level 1|r - Adds 500 hit points and 60 damage.|n|cffffcc00Level 2|r - Adds 750 hit points and 90 damage. |n|cffffcc00Level 3|r - Adds 1000 hit points and 120 damage."
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Metamorphosis - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Metamorphosis - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Metamorphosis - [|cffffcc00Level 3|r]"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Transforms the Demon Hunter into a powerful Demon with a ranged attack. Has 900 bonus hit points, 65 bonus damage and lasts for 20 seconds."
+      "Value": "Transforms the Demon Hunter into a powerful Demon with a ranged attack, \u003CAEvi,DataE1\u003E bonus hit points and 60 bonus damage for \u003CAEvi,HeroDur1\u003E seconds."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Transforms the Demon Hunter into a powerful Demon with a ranged attack, \u003CAEvi,DataE2\u003E bonus hit points and 90 bonus damage for \u003CAEvi,HeroDur2\u003E seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Transforms the Demon Hunter into a powerful Demon with a ranged attack, \u003CAEvi,DataE3\u003E bonus hit points and 120 bonus damage for \u003CAEvi,HeroDur3\u003E seconds."
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Illidan)"
     }
   ]
 }

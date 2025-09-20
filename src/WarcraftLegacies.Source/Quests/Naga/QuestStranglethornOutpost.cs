@@ -10,33 +10,30 @@ using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.Naga
 {
-  /// <summary>
-  /// </summary>
   public sealed class QuestStranglethornOutpost : QuestData
   {
     private readonly List<unit> _rescueUnits;
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="QuestStranglethornOutpost"/> class.
-    /// </summary>
     public QuestStranglethornOutpost(Rectangle rescueRect, LegendaryHero vashj) : base("The Cape of Stranglethorn",
-      "The Ruins in the Cape of Stranglethorn are an old Naga outpost, they could serve Illidan well",
+      "Some time ago, a group of Naga were sent to scout out the Cape of Stranglethorn. They should be brought back into the fold to aid in the war with Stormwind.",
       @"ReplaceableTextures\CommandButtons\BTNIllidariSpawningGrounds.blp")
     {
+      AddObjective(new ObjectiveControlLegend(vashj, false)
+      {
+        Progress = QuestProgress.Undiscovered,
+        ShowsInPopups = false,
+        ShowsInQuestLog = false
+      });
       AddObjective(new ObjectiveLegendInRect(vashj, rescueRect, "the Cape of Stranglethorn"));
       AddObjective(new ObjectiveExpire(660, Title));
       AddObjective(new ObjectiveSelfExists());
       _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      
     }
 
-    /// <inheritdoc />
-    public override string RewardFlavour => "The outpost in Stranglethorn is now built";
+    public override string RewardFlavour => "The Naga explorers in the Cape of Stranglethorn are rejoined with the Illidari forces from Outland, and are eager to battle the Alliance.";
 
-    /// <inheritdoc />
-    protected override string RewardDescription => "Gain control of the Stranglethorn Outpost";
+    protected override string RewardDescription => "Gain control of Naga units and buildings in the Cape of Stranglethorn";
 
-    /// <inheritdoc />
     protected override void OnFail(Faction completingFaction)
     {
       var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
@@ -46,7 +43,6 @@ namespace WarcraftLegacies.Source.Quests.Naga
       rescuer.RescueGroup(_rescueUnits);
     }
 
-    /// <inheritdoc />
     protected override void OnComplete(Faction completingFaction)
     {
       completingFaction.Player.RescueGroup(_rescueUnits);

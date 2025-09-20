@@ -76,7 +76,7 @@ namespace WarcraftLegacies.Source.Quests.Scourge
 
       var destroySunwellQuest = new QuestDestroyCorruptedSunwell(_sunwell, corruptedSunwellPower, _quelthalas.GetPowerByType<FontOfPower>()!);
       _quelthalas.AddQuest(destroySunwellQuest);
-      _quelthalas.DisplayDiscovered(destroySunwellQuest);
+      _quelthalas.DisplayDiscovered(destroySunwellQuest, false);
       
       if (_sunwellVial.OwningUnit == _sunwell.Unit)
         ArtifactManager.Destroy(_sunwellVial);

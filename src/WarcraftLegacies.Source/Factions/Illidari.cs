@@ -7,8 +7,10 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.MetaBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
+using MacroTools.QuestSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.Quests;
+using WarcraftLegacies.Source.Quests.Fel_Horde;
 using WarcraftLegacies.Source.Quests.Naga;
 using WarcraftLegacies.Source.Setup;
 
@@ -30,11 +32,6 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       FoodMaximum = 250;
       ControlPointDefenderUnitTypeId = UNIT_N0BB_CONTROL_POINT_DEFENDER_ILLIDARI_TOWER;
-      IntroText = $"You are playing as the Betrayer, {PrefixCol}Illidan|r.\n\n" +
-                  "You begin on the Broken Isles, ready to plunder the tombs for artifacts to empower Illidan.\n\n" +
-                  "Unfortunately, you cannot progress further in the Islands. Use Illidan's mastery of portals to travel to Outland and join forces with your ally.\n\n" +
-                  "Support your ally in Outland by unlocking bases and coordinating with his push out of the Dark Portal.";
-
       Nicknames = new List<string>
       {
         "illi",
@@ -48,6 +45,7 @@ namespace WarcraftLegacies.Source.Factions
       RegisterFactionDependentInitializer<Druids>(RegisterDruidsDialogue);
       RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
       RegisterFactionDependentInitializer<Sentinels, Druids>(RegisterSentinelsDruidsDialogue);
+      RegisterFactionDependentInitializer<FelHorde>(RegisterFelHordeQuests);
       ProcessObjectInfo(IllidariObjectInfo.GetAllObjectLimits());
     }
 
@@ -72,17 +70,33 @@ namespace WarcraftLegacies.Source.Factions
 
     private void RegisterQuests()
     {
-      StartingQuest = AddQuest(new QuestLostOnes(Regions.AkamaUnlock));
-      AddQuest(new QuestBlackTemple(Regions.IllidanBlackTempleUnlock, _allLegendSetup.Naga.Illidan));
-      AddQuest(new QuestEyeofSargeras(_artifactSetup.EyeOfSargeras, _allLegendSetup.Naga.Illidan));
-      AddQuest(new QuestFlameAndSorrow(_artifactSetup.SkullOfGuldan, _allLegendSetup.Naga.Illidan));
-      AddQuest(new QuestZangarmarsh(Regions.TelredorUnlock, _allLegendSetup.Naga.Vashj));
-      AddQuest(new QuestStranglethornOutpost(Regions.IllidariUnlockSA, _allLegendSetup.Naga.Vashj));
-      AddQuest(new QuestNajentus(new[]
+      var flameAndSorrow = new QuestBrokenIsles(_allLegendSetup.Naga.Illidan);
+      StartingQuest = flameAndSorrow;
+      AddQuest(flameAndSorrow);
+
+      var questBlackTemple = new QuestBlackTemple(flameAndSorrow, Regions.IllidanBlackTempleUnlock, _allLegendSetup.Naga.Illidan);
+      AddQuest(questBlackTemple);
+
+      var questZangarmarsh = new QuestZangarmarsh(Regions.TelredorUnlock, _allLegendSetup.Naga.Vashj);
+      questZangarmarsh.AddObjective(new ObjectiveQuestComplete(questBlackTemple)
       {
-        _allLegendSetup.Stormwind.StormwindKeep,
-        _allLegendSetup.Ironforge.GreatForge
-      }));
+        ShowsInPopups = false,
+        ShowsInQuestLog = false,
+        Progress = QuestProgress.Undiscovered
+      });
+      AddQuest(questZangarmarsh);
+      
+      var questLostOnes = new QuestLostOnes(Regions.AkamaUnlock);
+      questLostOnes.AddObjective(new ObjectiveQuestComplete(questBlackTemple)
+      {
+        ShowsInPopups = false,
+        ShowsInQuestLog = false,
+        Progress = QuestProgress.Undiscovered
+      });
+      AddQuest(questLostOnes);
+
+      AddQuest(new QuestStranglethornOutpost(Regions.IllidariUnlockSA, _allLegendSetup.Naga.Vashj));
+      AddQuest(new QuestEyeofSargeras(_artifactSetup.EyeOfSargeras, _allLegendSetup.Naga.Illidan));
       AddQuest(new QuestRegroupCastaway());
       AddQuest(new QuestBlackrookHold(_allLegendSetup.Sentinels.BlackrookHold));
       AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
@@ -90,6 +104,20 @@ namespace WarcraftLegacies.Source.Factions
 
     private void RegisterDialogue()
     {
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Illidan45.flac",
+          "At last! The Tomb of Sargeras is found!",
+          "Illidan Stormrage")
+        , new[]
+        {
+          this
+        }, new List<Objective>
+        {
+          new ObjectiveLegendReachRect(_allLegendSetup.Naga.Illidan, Regions.Sargeras_Entrance,
+            "the Tomb of Sargeras' entrance")
+        }
+      ));
+      
       TriggeredDialogueManager.Add(new TriggeredDialogue(
         new Dialogue(@"Sound\Dialogue\HumanExpCamp\Human07x\A07Illidan24",
           "Hear me now, you trembling mortals! I am your lord and master! Illidan reigns supreme!",
@@ -110,33 +138,34 @@ namespace WarcraftLegacies.Source.Factions
       ));
 
       TriggeredDialogueManager.Add(new TriggeredDialogue(
-        new Dialogue(@"Sound\Dialogue\NightElfExpCamp\NightElf02x\S02Illidan45.flac",
-          "At last! The Tomb of Sargeras is found!",
+        new Dialogue(@"Sound\Dialogue\HumanExpCamp\Human07x\A07LadyVashj32.flac",
+          "The naga are yours to command, Lord Illidan. Where you go, we follow.",
+          "Lady Vashj")
+        , new[]
+        {
+          this
+        }, new List<Objective>
+        {
+          new ObjectiveControlLegend(_allLegendSetup.Naga.Vashj, false)
+          {
+            EligibleFactions = new List<Faction>
+            {
+              this
+            }
+          }
+        }
+      ));
+      
+      TriggeredDialogueManager.Add(new TriggeredDialogue(
+        new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf06\N06Illidan17.flac",
+          "Now I am complete!",
           "Illidan Stormrage")
         , new[]
         {
           this
         }, new List<Objective>
         {
-          new ObjectiveLegendReachRect(_allLegendSetup.Naga.Illidan, Regions.Sargeras_Entrance,
-            "the Tomb of Sargeras' entrance")
-        }
-      ));
-
-      TriggeredDialogueManager.Add(new TriggeredDialogue(
-        new DialogueSequence(
-          new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf06\N06Illidan16.flac",
-            "Yes... the power should be mine!",
-            "Illidan Stormrage"),
-          new Dialogue(@"Sound\Dialogue\NightElfCampaign\NightElf06\N06Illidan17.flac",
-            "Now I am complete!",
-            "Illidan Stormrage"))
-        , new[]
-        {
-          this
-        }, new List<Objective>
-        {
-          new ObjectiveQuestComplete(GetQuestByType<QuestFlameAndSorrow>())
+          new ObjectiveQuestComplete(GetQuestByType<QuestEyeofSargeras>())
           {
             EligibleFactions = new List<Faction> { this }
           }
@@ -302,6 +331,22 @@ namespace WarcraftLegacies.Source.Factions
                 }
               })
           }));
+    }
+    
+    private void RegisterFelHordeQuests(FelHorde felHorde)
+    {
+      var questBurningCrusade = new QuestBurningCrusade(new[]
+      {
+        _allLegendSetup.Stormwind.StormwindKeep,
+        _allLegendSetup.Ironforge.GreatForge
+      });
+      questBurningCrusade.AddObjective(new ObjectiveFactionQuestComplete(felHorde.GetQuestByType<QuestDarkPortal>(), felHorde)
+      {
+        ShowsInPopups = false,
+        ShowsInQuestLog = false,
+        Progress = QuestProgress.Undiscovered
+      });
+      AddQuest(questBurningCrusade);
     }
   }
 }
