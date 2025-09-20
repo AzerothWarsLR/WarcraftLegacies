@@ -2,7 +2,7 @@ name: .NET
 
 on:
     push:
-        branches: [ main, dev, YakaryBovine/fixAnalysisSettings ]
+        branches: [ main, dev ]
     pull_request:
         branches: [ main, dev ]
 
@@ -15,6 +15,8 @@ jobs:
                 uses: actions/setup-dotnet@v1
                 with:
                     dotnet-version: 7.0.x
+            -   name: Run .NET Format
+                run: dotnet format --verify-no-changes --verbosity detailed
             -   name: Build
                 run: dotnet build
             -   name: Inspect code
