@@ -41,11 +41,6 @@ namespace WarcraftLegacies.Source.Setup.Legends
         StartingXp = 5400
       };
 
-      Altruis = new LegendaryHero("Altruis")
-      {
-        UnitType = FourCC("E015")
-      };
-
       Akama = new LegendaryHero("Akama")
       {
         UnitType = FourCC("Naka"),

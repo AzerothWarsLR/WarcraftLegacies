@@ -105,15 +105,12 @@ namespace WarcraftLegacies.Source.Setup
         Target = InstantKill.KillTarget.Self
       });
 
-  
-      
       FrostwolfSpellSetup.Setup();
       LegionSpellSetup.Setup();
       GoblinSpellSetup.Setup();
       ScourgeSpellSetup.Setup();
       LordaeronSpellSetup.Setup();
       DruidsSpellSetup.Setup();
-      IllidanSpellSetup.Setup();
       QuelthalasSpellSetup.Setup();
       KulTirasSpellSetup.Setup();
       StormwindSpellSetup.Setup();

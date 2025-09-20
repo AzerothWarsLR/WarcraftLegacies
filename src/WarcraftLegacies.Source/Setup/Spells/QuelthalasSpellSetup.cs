@@ -50,7 +50,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         ManaDrainedPerSecondBase = 15,
         ManaDrainedPerSecondLevel = 5,
         Range = 800,
-        Radius = 225,
+        Radius = 225, 
         Interval = 0.1f
       };
       SpellSystem.Register(siphoningRitual);
