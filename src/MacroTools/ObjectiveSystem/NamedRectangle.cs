@@ -1,17 +1,16 @@
 ﻿using WCSharp.Shared.Data;
 
-namespace MacroTools.ObjectiveSystem
-{
-  public sealed class NamedRectangle
-  {
-    public string Name { get; }
-    
-    public Rectangle Rectangle { get; }
+namespace MacroTools.ObjectiveSystem;
 
-    public NamedRectangle(string name, Rectangle rectangle)
-    {
-      Name = name;
-      Rectangle = rectangle;
-    }
+public sealed class NamedRectangle
+{
+  public string Name { get; }
+
+  public Rectangle Rectangle { get; }
+
+  public NamedRectangle(string name, Rectangle rectangle)
+  {
+    Name = name;
+    Rectangle = rectangle;
   }
 }

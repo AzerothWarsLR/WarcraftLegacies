@@ -1,8 +1,7 @@
-namespace MacroTools.FactionSystem
+﻿namespace MacroTools.FactionSystem;
+
+public enum ScoreStatus
 {
-  public enum ScoreStatus
-  {
-    Undefeated,
-    Defeated
-  }
+  Undefeated,
+  Defeated
 }

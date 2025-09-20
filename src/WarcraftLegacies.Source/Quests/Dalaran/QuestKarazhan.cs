@@ -1,31 +1,30 @@
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 
-namespace WarcraftLegacies.Source.Quests.Dalaran
+namespace WarcraftLegacies.Source.Quests.Dalaran;
+
+public sealed class QuestKarazhan : QuestData
 {
-  public sealed class QuestKarazhan : QuestData
+  public QuestKarazhan(Capital karazhan) : base("Secrets of Karazhan",
+    "The spire of Medivh stands mysteriously idle. Dalaran could make use of its grand magicks.",
+    @"ReplaceableTextures\CommandButtons\BTNTomeBrown.blp")
   {
-    public QuestKarazhan(Capital karazhan) : base("Secrets of Karazhan",
-      "The spire of Medivh stands mysteriously idle. Dalaran could make use of its grand magicks.",
-      @"ReplaceableTextures\CommandButtons\BTNTomeBrown.blp")
-    {
-      AddObjective(new ObjectiveControlCapital(karazhan, false));
-    }
-    
-    /// <inheritdoc/>
-    public override string RewardFlavour => "Karazhan has been captured. Dalaran's archivists scour its halls for arcane resources.";
+    AddObjective(new ObjectiveControlCapital(karazhan, false));
+  }
 
-    /// <inheritdoc/>
-    protected override string RewardDescription => "Learn to research three powerful upgrades at Karazhan.";
+  /// <inheritdoc/>
+  public override string RewardFlavour => "Karazhan has been captured. Dalaran's archivists scour its halls for arcane resources.";
 
-    /// <inheritdoc/>
-    protected override void OnAdd(Faction whichFaction)
-    {
-      whichFaction.ModObjectLimit(UPGRADE_R020_RAIN_AN_AMALGAM_DALARAN_KARAZHAN, Faction.UNLIMITED);
-      whichFaction.ModObjectLimit(UPGRADE_R03M_METHODS_OF_NEGATION_DALARAN_KARAZHAN, Faction.UNLIMITED);
-      whichFaction.ModObjectLimit(UPGRADE_R01B_A_TREATISE_ON_BARRIERS_DALARAN_KARAZHAN, Faction.UNLIMITED);
-    }
+  /// <inheritdoc/>
+  protected override string RewardDescription => "Learn to research three powerful upgrades at Karazhan.";
+
+  /// <inheritdoc/>
+  protected override void OnAdd(Faction whichFaction)
+  {
+    whichFaction.ModObjectLimit(UPGRADE_R020_RAIN_AN_AMALGAM_DALARAN_KARAZHAN, Faction.Unlimited);
+    whichFaction.ModObjectLimit(UPGRADE_R03M_METHODS_OF_NEGATION_DALARAN_KARAZHAN, Faction.Unlimited);
+    whichFaction.ModObjectLimit(UPGRADE_R01B_A_TREATISE_ON_BARRIERS_DALARAN_KARAZHAN, Faction.Unlimited);
   }
 }

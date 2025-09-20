@@ -5,66 +5,70 @@ using MacroTools.QuestSystem;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
+namespace MacroTools.ObjectiveSystem.Objectives.UnitBased;
+
+/// <summary>
+/// Completed when an eligible player moves a unit into the specified <see cref="Rectangle"/>.
+/// </summary>
+public sealed class ObjectiveAnyUnitInRect : Objective, IHasCompletingUnit
 {
+  private readonly bool _heroOnly;
+  private readonly rect _targetRect;
+
   /// <summary>
-  /// Completed when an eligible player moves a unit into the specified <see cref="Rectangle"/>.
+  /// Initializes a new instance of the <see cref="ObjectiveAnyUnitInRect"/> class.
   /// </summary>
-  public sealed class ObjectiveAnyUnitInRect : Objective, IHasCompletingUnit
+  /// <param name="targetRect">Where the player has to move a unit.</param>
+  /// <param name="rectName">A user-friendly name for the area.</param>
+  /// <param name="heroOnly">If true, can only be completed with a hero.</param>
+  public ObjectiveAnyUnitInRect(Rectangle targetRect, string rectName, bool heroOnly)
   {
-    private readonly bool _heroOnly;
-    private readonly rect _targetRect;
+    _targetRect = targetRect.Rect;
+    Description = heroOnly ? $"You have a hero at {rectName}" : $"You have a unit at {rectName}";
+    _heroOnly = heroOnly;
+    DisplaysPosition = true;
+    PingPath = "MinimapQuestTurnIn";
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="ObjectiveAnyUnitInRect"/> class.
-    /// </summary>
-    /// <param name="targetRect">Where the player has to move a unit.</param>
-    /// <param name="rectName">A user-friendly name for the area.</param>
-    /// <param name="heroOnly">If true, can only be completed with a hero.</param>
-    public ObjectiveAnyUnitInRect(Rectangle targetRect, string rectName, bool heroOnly)
+    var enterTrigger = CreateTrigger();
+    TriggerRegisterEnterRegion(enterTrigger, targetRect.Region, null);
+    TriggerAddAction(enterTrigger, () =>
     {
-      _targetRect = targetRect.Rect;
-      Description = heroOnly ? $"You have a hero at {rectName}" : $"You have a unit at {rectName}";
-      _heroOnly = heroOnly;
-      DisplaysPosition = true;
-      PingPath = "MinimapQuestTurnIn";
-
-      var enterTrigger = CreateTrigger();
-      TriggerRegisterEnterRegion(enterTrigger, targetRect.Region, null);
-      TriggerAddAction(enterTrigger, () =>
+      var triggerUnit = GetTriggerUnit();
+      if (!IsUnitValid(triggerUnit))
       {
-        var triggerUnit = GetTriggerUnit();
-        if (!IsUnitValid(triggerUnit)) 
-          return;
-        CompletingUnit = triggerUnit;
-        Progress = QuestProgress.Complete;
-      });
-      var leaveTrigger = CreateTrigger();
-      TriggerRegisterLeaveRegion(leaveTrigger, targetRect.Region, null);
-      TriggerAddAction(leaveTrigger, () =>
-      {
-        if (!IsValidUnitInRect()) 
-          Progress = QuestProgress.Incomplete;
-      });
-      Position = new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
-    }
+        return;
+      }
 
-    /// <inheritdoc />
-    public unit? CompletingUnit { get; private set; }
-
-    /// <inheritdoc />
-    public string CompletingUnitName => CompletingUnit != null ? CompletingUnit.GetProperName() : "an unknown hero";
-
-    private bool IsUnitValid(unit whichUnit) => EligibleFactions.Contains(GetOwningPlayer(whichUnit)) &&
-                                                UnitAlive(whichUnit) &&
-                                                (IsUnitType(whichUnit, UNIT_TYPE_HERO) || !_heroOnly) &&
-                                                !whichUnit.IsControlPoint() && whichUnit.IsSelectable();
-
-    private bool IsValidUnitInRect() => GlobalGroup.EnumUnitsInRect(_targetRect).Any(IsUnitValid);
-
-    public override void OnAdd(FactionSystem.Faction whichFaction)
+      CompletingUnit = triggerUnit;
+      Progress = QuestProgress.Complete;
+    });
+    var leaveTrigger = CreateTrigger();
+    TriggerRegisterLeaveRegion(leaveTrigger, targetRect.Region, null);
+    TriggerAddAction(leaveTrigger, () =>
     {
-      Progress = IsValidUnitInRect() ? QuestProgress.Complete : QuestProgress.Incomplete;
-    }
+      if (!IsValidUnitInRect())
+      {
+        Progress = QuestProgress.Incomplete;
+      }
+    });
+    Position = new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
+  }
+
+  /// <inheritdoc />
+  public unit? CompletingUnit { get; private set; }
+
+  /// <inheritdoc />
+  public string CompletingUnitName => CompletingUnit != null ? CompletingUnit.GetProperName() : "an unknown hero";
+
+  private bool IsUnitValid(unit whichUnit) => EligibleFactions.Contains(GetOwningPlayer(whichUnit)) &&
+                                              UnitAlive(whichUnit) &&
+                                              (IsUnitType(whichUnit, UNIT_TYPE_HERO) || !_heroOnly) &&
+                                              !whichUnit.IsControlPoint() && whichUnit.IsSelectable();
+
+  private bool IsValidUnitInRect() => GlobalGroup.EnumUnitsInRect(_targetRect).Any(IsUnitValid);
+
+  public override void OnAdd(FactionSystem.Faction whichFaction)
+  {
+    Progress = IsValidUnitInRect() ? QuestProgress.Complete : QuestProgress.Incomplete;
   }
 }

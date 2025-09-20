@@ -1,21 +1,20 @@
 ﻿using WCSharp.Events;
 
-namespace MacroTools.Powers
+namespace MacroTools.Powers;
+
+public sealed class OilIncomePeriodicAction : IPeriodicAction
 {
-  public sealed class OilIncomePeriodicAction : IPeriodicAction
+  private readonly OilPower _oilPower;
+
+  public OilIncomePeriodicAction(OilPower oilPower)
   {
-    private readonly OilPower _oilPower;
-
-    public OilIncomePeriodicAction(OilPower oilPower)
-    {
-      _oilPower = oilPower;
-    }
-
-    public void Action()
-    {
-      _oilPower.Amount += _oilPower.Income;
-    }
-
-    public bool Active { get; set; } = true;
+    _oilPower = oilPower;
   }
+
+  public void Action()
+  {
+    _oilPower.Amount += _oilPower.Income;
+  }
+
+  public bool Active { get; set; } = true;
 }

@@ -9,45 +9,44 @@ using MacroTools.QuestSystem;
 using MacroTools.Systems;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Quests.Stormwind
+namespace WarcraftLegacies.Source.Quests.Stormwind;
+
+public sealed class QuestNethergarde : QuestData
 {
-  public sealed class QuestNethergarde : QuestData
+  private readonly List<unit> _rescueUnits;
+  private readonly unit _gate;
+
+  public QuestNethergarde(PreplacedUnitSystem preplacedUnitSystem, LegendaryHero varian) : base("Nethergarde Relief",
+    "Nethergarde Keep fort is holding down the Dark Portal, they will need to be reinforced soon!",
+    @"ReplaceableTextures\CommandButtons\BTNStormwindGuardTower.blp")
   {
-    private readonly List<unit> _rescueUnits;
-    private readonly unit _gate;
+    AddObjective(new ObjectiveLegendInRect(varian, Regions.NethergardeUnlock, "Nethergarde"));
+    AddObjective(new ObjectiveExpire(600, Title));
+    AddObjective(new ObjectiveSelfExists());
+    _rescueUnits = Regions.NethergardeUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+    _gate = preplacedUnitSystem.GetUnit(UNIT_H00L_HORIZONTAL_WOODEN_GATE_OPEN, new Point(17140, -18000));
+  }
 
-    public QuestNethergarde(PreplacedUnitSystem preplacedUnitSystem, LegendaryHero varian) : base("Nethergarde Relief",
-      "Nethergarde Keep fort is holding down the Dark Portal, they will need to be reinforced soon!",
-      @"ReplaceableTextures\CommandButtons\BTNStormwindGuardTower.blp")
-    {
-      AddObjective(new ObjectiveLegendInRect(varian, Regions.NethergardeUnlock, "Nethergarde"));
-      AddObjective(new ObjectiveExpire(600, Title));
-      AddObjective(new ObjectiveSelfExists());
-      _rescueUnits = Regions.NethergardeUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      _gate = preplacedUnitSystem.GetUnit(UNIT_H00L_HORIZONTAL_WOODEN_GATE_OPEN, new Point(17140, -18000));
-    }
+  /// <inheritdoc />
+  public override string RewardFlavour => "Varian has come to relieve the Nethergarde garrison.";
 
-    /// <inheritdoc />
-    public override string RewardFlavour => "Varian has come to relieve the Nethergarde garrison.";
+  /// <inheritdoc />
+  protected override string RewardDescription => "You gain control of Nethergarde";
 
-    /// <inheritdoc />
-    protected override string RewardDescription => "You gain control of Nethergarde";
+  /// <inheritdoc />
+  protected override void OnFail(Faction completingFaction)
+  {
+    var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      : completingFaction.Player;
 
-    /// <inheritdoc />
-    protected override void OnFail(Faction completingFaction)
-    {
-      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
-        : completingFaction.Player;
+    rescuer.RescueGroup(_rescueUnits);
+  }
 
-      rescuer.RescueGroup(_rescueUnits);
-    }
-
-    /// <inheritdoc />
-    protected override void OnComplete(Faction completingFaction)
-    {
-      completingFaction.Player.RescueGroup(_rescueUnits);
-      SetUnitOwner(_gate, completingFaction.Player, true);
-    }
+  /// <inheritdoc />
+  protected override void OnComplete(Faction completingFaction)
+  {
+    completingFaction.Player.RescueGroup(_rescueUnits);
+    SetUnitOwner(_gate, completingFaction.Player, true);
   }
 }

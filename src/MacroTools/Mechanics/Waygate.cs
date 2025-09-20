@@ -1,53 +1,56 @@
 ﻿using System;
 using MacroTools.Wrappers;
 
-namespace MacroTools.Mechanics
+namespace MacroTools.Mechanics;
+
+public sealed class Waygate
 {
-  public sealed class Waygate
+  private readonly TriggerWrapper _constructTrigger = new();
+  private readonly TriggerWrapper _deathTrigger = new();
+
+  private readonly unit _unit;
+
+  private bool _isConstructed;
+
+  public Waygate(unit whichUnit)
   {
-    private readonly TriggerWrapper _constructTrigger = new();
-    private readonly TriggerWrapper _deathTrigger = new();
+    _unit = whichUnit;
+    _constructTrigger.RegisterUnitEvent(_unit, EVENT_UNIT_CONSTRUCT_FINISH);
+    _constructTrigger.AddAction(OnConstructed);
+    _deathTrigger.RegisterUnitEvent(_unit, EVENT_UNIT_DEATH);
+    _deathTrigger.AddAction(OnDeath);
+  }
 
-    private readonly unit _unit;
+  public Waygate? Sister { get; set; }
+  public event EventHandler<Waygate>? Died;
 
-    private bool _isConstructed;
+  private void OnDeath()
+  {
+    Disconnect();
+    Sister?.Disconnect();
+    Died?.Invoke(this, this);
+  }
 
-    public Waygate(unit whichUnit)
+  private void OnConstructed()
+  {
+    _isConstructed = true;
+    if (Sister?._isConstructed != true)
     {
-      _unit = whichUnit;
-      _constructTrigger.RegisterUnitEvent(_unit, EVENT_UNIT_CONSTRUCT_FINISH);
-      _constructTrigger.AddAction(OnConstructed);
-      _deathTrigger.RegisterUnitEvent(_unit, EVENT_UNIT_DEATH);
-      _deathTrigger.AddAction(OnDeath);
+      return;
     }
 
-    public Waygate? Sister { get; set; }
-    public event EventHandler<Waygate>? Died;
+    Connect(Sister);
+    Sister.Connect(this);
+  }
 
-    private void OnDeath()
-    {
-      Disconnect();
-      Sister?.Disconnect();
-      Died?.Invoke(this, this);
-    }
+  private void Disconnect()
+  {
+    WaygateActivate(_unit, false);
+  }
 
-    private void OnConstructed()
-    {
-      _isConstructed = true;
-      if (Sister?._isConstructed != true) return;
-      Connect(Sister);
-      Sister.Connect(this);
-    }
-
-    private void Disconnect()
-    {
-      WaygateActivate(_unit, false);
-    }
-
-    private void Connect(Waygate otherWaygate)
-    {
-      WaygateSetDestination(_unit, GetUnitX(otherWaygate._unit), GetUnitY(otherWaygate._unit));
-      WaygateActivate(_unit, true);
-    }
+  private void Connect(Waygate otherWaygate)
+  {
+    WaygateSetDestination(_unit, GetUnitX(otherWaygate._unit), GetUnitY(otherWaygate._unit));
+    WaygateActivate(_unit, true);
   }
 }

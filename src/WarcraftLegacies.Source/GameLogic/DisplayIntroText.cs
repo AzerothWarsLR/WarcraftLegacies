@@ -2,35 +2,38 @@
 using MacroTools.Extensions;
 using WCSharp.Shared;
 
-namespace WarcraftLegacies.Source.GameLogic
+namespace WarcraftLegacies.Source.GameLogic;
+
+/// <summary>
+/// Display intro text to all players after some period of time has elapsed.
+/// </summary>
+public static class DisplayIntroText
 {
   /// <summary>
-  /// Display intro text to all players after some period of time has elapsed.
+  /// Displays intro text to all players after some period of time has elapsed.
   /// </summary>
-  public static class DisplayIntroText
+  /// <param name="displayTime">The time after which to display intro text, in seconds.</param>
+  public static void Setup(float displayTime)
   {
-    /// <summary>
-    /// Displays intro text to all players after some period of time has elapsed.
-    /// </summary>
-    /// <param name="displayTime">The time after which to display intro text, in seconds.</param>
-    public static void Setup(float displayTime)
+    TimerStart(CreateTimer(), displayTime, false, () =>
     {
-      TimerStart(CreateTimer(), displayTime, false, () =>
+      try
       {
-        try
+        foreach (var player1 in Util.EnumeratePlayers())
         {
-          foreach (var player1 in Util.EnumeratePlayers())
-            DisplayTextToPlayer(player1, 0, 0, player1.GetFaction()?.IntroText ?? "");
-          
-          DestroyTimer(GetExpiredTimer());
+          DisplayTextToPlayer(player1, 0, 0, player1.GetFaction()?.IntroText ?? "");
         }
-        catch (Exception ex)
-        {
-          Console.WriteLine($"Error displaying intro text {ex}");
-        }
-      });
-      foreach (var player in Util.EnumeratePlayers())
-        DisplayTimedTextToPlayer(player, 0, 0, displayTime - 1, @"|cffffcc00Warcraft Legacies|r
+
+        DestroyTimer(GetExpiredTimer());
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine($"Error displaying intro text {ex}");
+      }
+    });
+    foreach (var player in Util.EnumeratePlayers())
+    {
+      DisplayTimedTextToPlayer(player, 0, 0, displayTime - 1, @"|cffffcc00Warcraft Legacies|r
   |cffaaaaaaJoin our Discord:|r discord.gg/pnWZs69
   |cffff0000Support our Patreon:|r https://www.patreon.com/lordsebas
 

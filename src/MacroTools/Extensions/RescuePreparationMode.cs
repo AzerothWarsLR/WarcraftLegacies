@@ -1,23 +1,22 @@
-﻿namespace MacroTools.Extensions
+﻿namespace MacroTools.Extensions;
+
+/// <summary>
+/// Determines what happens to units as they are prepared for <see cref="UnitExtensions.Rescue"/>.
+/// </summary>
+public enum RescuePreparationMode
 {
   /// <summary>
-  /// Determines what happens to units as they are prepared for <see cref="UnitExtensions.Rescue"/>.
+  /// Render all prepared units invulnerable.
   /// </summary>
-  public enum RescuePreparationMode
-  {
-    /// <summary>
-    /// Render all prepared units invulnerable.
-    /// </summary>
-    Invulnerable,
+  Invulnerable,
 
-    /// <summary>
-    /// Render all prepared units invulnerable, and hide non-structures.
-    /// </summary>
-    HideNonStructures,
+  /// <summary>
+  /// Render all prepared units invulnerable, and hide non-structures.
+  /// </summary>
+  HideNonStructures,
 
-    /// <summary>
-    /// Render all prepared units invulnerable, and hide all units and structures.
-    /// </summary>
-    HideAll
-  }
+  /// <summary>
+  /// Render all prepared units invulnerable, and hide all units and structures.
+  /// </summary>
+  HideAll
 }

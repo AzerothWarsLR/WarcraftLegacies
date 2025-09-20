@@ -6,55 +6,58 @@ using MacroTools.Setup;
 using WCSharp.Effects;
 using WCSharp.Events;
 
-namespace MacroTools.Powers
+namespace MacroTools.Powers;
+
+/// <summary>
+/// The player's units have a chance to do bonus damage when they attack.
+/// </summary>
+public sealed class MaelstromWeapon : Power
 {
+  private readonly float _damageChance;
+  private readonly float _damageDealt;
+
   /// <summary>
-  /// The player's units have a chance to do bonus damage when they attack.
+  /// The effect that appears when bonus damage is dealt.
   /// </summary>
-  public sealed class MaelstromWeapon : Power
+  public string Effect { get; init; } = "";
+
+  /// <summary>
+  /// The unit types that are affected by this <see cref="Power"/>.
+  /// </summary>
+  public IEnumerable<int>? ValidUnitTypes;
+
+  /// <summary>
+  /// Initializes a new instance of the <see cref="MaelstromWeapon"/> class.
+  /// </summary>
+  public MaelstromWeapon(float damageChance, float damageDealt)
   {
-    private readonly float _damageChance;
-    private readonly float _damageDealt;
+    _damageChance = damageChance;
+    _damageDealt = damageDealt;
+    Name = "Maelstrom Spirit";
+    Description = $"Your Orc units have a {damageChance * 100}% chance on attack to call down a lightning bolt dealing {damageDealt} magic damage. Thrall instead has a 100% chance.";
+  }
 
-    /// <summary>
-    /// The effect that appears when bonus damage is dealt.
-    /// </summary>
-    public string Effect { get; init; } = "";
+  /// <inheritdoc />
+  public override void OnAdd(player whichPlayer) =>
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerDealsDamage, OnDamage, GetPlayerId(whichPlayer));
 
-    /// <summary>
-    /// The unit types that are affected by this <see cref="Power"/>.
-    /// </summary>
-    public IEnumerable<int>? ValidUnitTypes;
-    
-    /// <summary>
-    /// Initializes a new instance of the <see cref="MaelstromWeapon"/> class.
-    /// </summary>
-    public MaelstromWeapon(float damageChance, float damageDealt)
+  /// <inheritdoc />
+  public override void OnRemove(player whichPlayer) =>
+    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerDealsDamage, OnDamage, GetPlayerId(whichPlayer));
+
+  private void OnDamage()
+  {
+    if (!BlzGetEventIsAttack() || (ValidUnitTypes != null && !ValidUnitTypes.Contains(GetUnitTypeId(GetEventDamageSource()))))
     {
-      _damageChance = damageChance;
-      _damageDealt = damageDealt;
-      Name = "Maelstrom Spirit";
-      Description = $"Your Orc units have a {damageChance*100}% chance on attack to call down a lightning bolt dealing {damageDealt} magic damage. Thrall instead has a 100% chance.";
+      return;
     }
-    
-    /// <inheritdoc />
-    public override void OnAdd(player whichPlayer) => 
-      PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerDealsDamage, OnDamage, GetPlayerId(whichPlayer));
 
-    /// <inheritdoc />
-    public override void OnRemove(player whichPlayer) => 
-      PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerDealsDamage, OnDamage, GetPlayerId(whichPlayer));
-
-    private void OnDamage()
+    if (!IsHeroUnitId(GetUnitTypeId(GetEventDamageSource())) && !(GetRandomReal(0, 1) < _damageChance))
     {
-      if (!BlzGetEventIsAttack() || (ValidUnitTypes != null && !ValidUnitTypes.Contains(GetUnitTypeId(GetEventDamageSource())))) 
-        return;
-
-      if (!IsHeroUnitId(GetUnitTypeId(GetEventDamageSource())) && !(GetRandomReal(0, 1) < _damageChance)) 
-        return;
-      
-      GetTriggerUnit().TakeDamage(GetEventDamageSource(), _damageDealt);
-      EffectSystem.Add(AddSpecialEffect(Effect, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit())), 1);
+      return;
     }
+
+    GetTriggerUnit().TakeDamage(GetEventDamageSource(), _damageDealt);
+    EffectSystem.Add(AddSpecialEffect(Effect, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit())), 1);
   }
 }

@@ -2,19 +2,18 @@
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.Spells
+namespace MacroTools.Spells;
+
+public sealed class GoldOnCast : Spell
 {
-  public sealed class GoldOnCast : Spell
+
+  public int GoldToGrant { get; init; }
+  public GoldOnCast(int id) : base(id)
   {
+  }
 
-    public int GoldToGrant { get; init; }
-    public GoldOnCast(int id) : base(id)
-    {
-    }
-
-    public override void OnCast(unit caster, unit target, Point targetPoint)
-    {
-      GetOwningPlayer(caster).AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, GoldToGrant);
-    }
+  public override void OnCast(unit caster, unit target, Point targetPoint)
+  {
+    GetOwningPlayer(caster).AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, GoldToGrant);
   }
 }

@@ -1,10 +1,9 @@
-﻿namespace MacroTools.PassiveAbilitySystem
+﻿namespace MacroTools.PassiveAbilitySystem;
+
+/// <summary>
+/// Called when the unit begins a spell effect.
+/// </summary>
+public interface IEffectOnSpellEffect
 {
-  /// <summary>
-  /// Called when the unit begins a spell effect.
-  /// </summary>
-  public interface IEffectOnSpellEffect
-  {
-    void OnSpellEffect();
-  }
+  void OnSpellEffect();
 }

@@ -2,42 +2,49 @@
 using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
 
-namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
+namespace MacroTools.ObjectiveSystem.Objectives.LegendBased;
+
+/// <summary>
+/// Do not gain control of a particular <see cref="Legend"/>.
+/// </summary>
+public sealed class ObjectiveDontControlLegend : Objective
 {
+  private readonly Legend _target;
+
   /// <summary>
-  /// Do not gain control of a particular <see cref="Legend"/>.
+  /// Initializes a new instance of the <see cref="ObjectiveDontControlLegend"/> class.
   /// </summary>
-  public sealed class ObjectiveDontControlLegend : Objective
+  public ObjectiveDontControlLegend(LegendaryHero target)
   {
-    private readonly Legend _target;
-
-    /// <summary>
-    /// Initializes a new instance of the <see cref="ObjectiveDontControlLegend"/> class.
-    /// </summary>
-    public ObjectiveDontControlLegend(LegendaryHero target)
+    _target = target;
+    Description = $"You don't control {target.Name}";
+    if (target.Unit != null)
     {
-      _target = target;
-      Description = $"You don't control {target.Name}";
-      if (target.Unit != null) 
-        TargetWidget = target.Unit;
-
-      DisplaysPosition = GetOwningPlayer(target.Unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE);
-      target.ChangedOwner += OnTargetChangeOwner;
-      Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
+      TargetWidget = target.Unit;
     }
 
-    public override void OnAdd(Faction whichFaction)
-    {
-      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
-        Progress = QuestProgress.Failed;
-      else
-        Progress = QuestProgress.Complete;
-    }
+    DisplaysPosition = GetOwningPlayer(target.Unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE);
+    target.ChangedOwner += OnTargetChangeOwner;
+    Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
+  }
 
-    private void OnTargetChangeOwner(object? sender, LegendChangeOwnerEventArgs legendChangeOwnerEventArgs)
+  public override void OnAdd(Faction whichFaction)
+  {
+    if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
     {
-      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
-        Progress = QuestProgress.Failed;
+      Progress = QuestProgress.Failed;
+    }
+    else
+    {
+      Progress = QuestProgress.Complete;
+    }
+  }
+
+  private void OnTargetChangeOwner(object? sender, LegendChangeOwnerEventArgs legendChangeOwnerEventArgs)
+  {
+    if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
+    {
+      Progress = QuestProgress.Failed;
     }
   }
 }

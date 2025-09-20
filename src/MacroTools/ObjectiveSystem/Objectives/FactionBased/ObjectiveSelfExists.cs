@@ -1,39 +1,42 @@
 ﻿using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 
-namespace MacroTools.ObjectiveSystem.Objectives.FactionBased
+namespace MacroTools.ObjectiveSystem.Objectives.FactionBased;
+
+/// <summary>
+/// An <see cref="Objective"/> that starts <see cref="QuestProgress.Complete"/> and fails any time the owning
+/// <see cref="Faction"/> does not have its <see cref="player"/> slot filled.
+/// </summary>
+public sealed class ObjectiveSelfExists : Objective
 {
   /// <summary>
-  /// An <see cref="Objective"/> that starts <see cref="QuestProgress.Complete"/> and fails any time the owning
-  /// <see cref="Faction"/> does not have its <see cref="player"/> slot filled.
+  /// Initializes a new instance of the <see cref="ObjectiveSelfExists"/> class.
   /// </summary>
-  public sealed class ObjectiveSelfExists : Objective
+  public ObjectiveSelfExists()
   {
-    /// <summary>
-    /// Initializes a new instance of the <see cref="ObjectiveSelfExists"/> class.
-    /// </summary>
-    public ObjectiveSelfExists()
-    {
-      Progress = QuestProgress.Complete;
-      ShowsInQuestLog = false;
-      ShowsInPopups = false;
-    }
+    Progress = QuestProgress.Complete;
+    ShowsInQuestLog = false;
+    ShowsInPopups = false;
+  }
 
-    public override void OnAdd(Faction whichFaction)
+  public override void OnAdd(Faction whichFaction)
+  {
+    Progress = QuestProgress.Complete;
+    whichFaction.ScoreStatusChanged += OnAnyFactionScoreStatusChanged;
+    TimerStart(CreateTimer(), 55, false, () =>
     {
-      Progress = QuestProgress.Complete;
-      whichFaction.ScoreStatusChanged += OnAnyFactionScoreStatusChanged;
-      TimerStart(CreateTimer(), 55, false, () =>
+      if (whichFaction.Player == null)
       {
-        if (whichFaction.Player == null)
-          Progress = QuestProgress.Failed;
-      });
-    }
-
-    private void OnAnyFactionScoreStatusChanged(object? sender, Faction faction)
-    {
-      if (faction.ScoreStatus == ScoreStatus.Defeated) 
         Progress = QuestProgress.Failed;
+      }
+    });
+  }
+
+  private void OnAnyFactionScoreStatusChanged(object? sender, Faction faction)
+  {
+    if (faction.ScoreStatus == ScoreStatus.Defeated)
+    {
+      Progress = QuestProgress.Failed;
     }
   }
 }

@@ -1,25 +1,24 @@
-﻿namespace WarcraftLegacies.Source.GameLogic
+﻿namespace WarcraftLegacies.Source.GameLogic;
+
+/// <summary>
+/// Removes units in areas of the map that are not currently in use.
+/// </summary>
+public static class RemoveUnusedAreas
 {
   /// <summary>
-  /// Removes units in areas of the map that are not currently in use.
+  /// Runs <see cref="RemoveUnusedAreas"/>.
   /// </summary>
-  public static class RemoveUnusedAreas
+  public static void Run()
   {
-    /// <summary>
-    /// Runs <see cref="RemoveUnusedAreas"/>.
-    /// </summary>
-    public static void Run()
-    {
-      //var areas = new Rectangle[]
-      //{
-      //  Regions.TempestKeepHide2
-      //};
-      //foreach (var area in areas)
-      //{
-      //  foreach (var unit in GlobalGroup.EnumUnitsInRect(area).EmptyToList())
-      //    unit.Remove();
-      //  EnumDestructablesInRect(area.Rect, null, () => { RemoveDestructable(GetEnumDestructable()); });
-      //}
-    }
+    //var areas = new Rectangle[]
+    //{
+    //  Regions.TempestKeepHide2
+    //};
+    //foreach (var area in areas)
+    //{
+    //  foreach (var unit in GlobalGroup.EnumUnitsInRect(area).EmptyToList())
+    //    unit.Remove();
+    //  EnumDestructablesInRect(area.Rect, null, () => { RemoveDestructable(GetEnumDestructable()); });
+    //}
   }
 }

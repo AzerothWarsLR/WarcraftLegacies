@@ -9,88 +9,87 @@ using WarcraftLegacies.Source.Researches.Ironforge;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Factions
+namespace WarcraftLegacies.Source.Factions;
+
+public sealed class Ironforge : Faction
 {
-  public sealed class Ironforge : Faction
+  private readonly PreplacedUnitSystem _preplacedUnitSystem;
+  private readonly AllLegendSetup _allLegendSetup;
+  private readonly ArtifactSetup _artifactSetup;
+
+  /// <inheritdoc />
+
+  public Ironforge(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
+    : base("Ironforge", PLAYER_COLOR_YELLOW, @"ReplaceableTextures\CommandButtons\BTNHeroMountainKing.blp")
   {
-    private readonly PreplacedUnitSystem _preplacedUnitSystem;
-    private readonly AllLegendSetup _allLegendSetup;
-    private readonly ArtifactSetup _artifactSetup;
+    TraditionalTeam = TeamSetup.SouthAlliance;
+    _preplacedUnitSystem = preplacedUnitSystem;
+    _allLegendSetup = allLegendSetup;
+    _artifactSetup = artifactSetup;
+    UndefeatedResearch = FourCC("R05T");
+    StartingGold = 200;
+    CinematicMusic = "PursuitTheme";
+    ControlPointDefenderUnitTypeId = UNIT_H0AL_CONTROL_POINT_DEFENDER_IRONFORGE;
+    IntroText = $"You are playing as the long-enduring {PrefixCol}Kingdom of Ironforge |r.\n\n" +
+                "You begin in the Wetlands, separated from the rest of your forces. Conquer Loch Modan and Dun Morogh to regain access to your territories.\n\n" +
+                "Stormwind is preparing for an invasion through the Dark Portal in the South. Muster your forces and aid them, or risk losing your strongest ally.";
 
-    /// <inheritdoc />
-    
-    public Ironforge(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) 
-      : base("Ironforge", PLAYER_COLOR_YELLOW, @"ReplaceableTextures\CommandButtons\BTNHeroMountainKing.blp")
+    GoldMines = new List<unit>
     {
-      TraditionalTeam = TeamSetup.SouthAlliance;
-      _preplacedUnitSystem = preplacedUnitSystem;
-      _allLegendSetup = allLegendSetup;
-      _artifactSetup = artifactSetup;
-      UndefeatedResearch = FourCC("R05T");
-      StartingGold = 200;
-      CinematicMusic = "PursuitTheme";
-      ControlPointDefenderUnitTypeId = UNIT_H0AL_CONTROL_POINT_DEFENDER_IRONFORGE;
-      IntroText = $"You are playing as the long-enduring {PrefixCol}Kingdom of Ironforge |r.\n\n" +
-                  "You begin in the Wetlands, separated from the rest of your forces. Conquer Loch Modan and Dun Morogh to regain access to your territories.\n\n" +
-                  "Stormwind is preparing for an invasion through the Dark Portal in the South. Muster your forces and aid them, or risk losing your strongest ally.";
-
-      GoldMines = new List<unit>
-      {
-        _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(12079, -2768))
-      };
-      Nicknames = new List<string>
-      {
-        "if",
-        "dwarf",
-        "dwarfs",
-        "dwarves"
-      };
-      RegisterFactionDependentInitializer<Stormwind>(RegisterStormwindResearches);
-      ProcessObjectInfo(IronforgeObjectInfo.GetAllObjectLimits());
-    }
-
-    /// <inheritdoc />
-    public override void OnRegistered()
+      _preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(12079, -2768))
+    };
+    Nicknames = new List<string>
     {
-      RegisterObjectLevels();
-      RegisterQuests();
-      SharedFactionConfigSetup.AddSharedFactionConfig(this);
-    }
+      "if",
+      "dwarf",
+      "dwarfs",
+      "dwarves"
+    };
+    RegisterFactionDependentInitializer<Stormwind>(RegisterStormwindResearches);
+    ProcessObjectInfo(IronforgeObjectInfo.GetAllObjectLimits());
+  }
 
-    private void RegisterObjectLevels()
-    {
-      ModAbilityAvailability(ABILITY_A0IH_SPIKED_BARRICADES_DWARF_KEEP, -1);
-      ModAbilityAvailability(ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);
-      ModAbilityAvailability(ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);
-      ModAbilityAvailability(ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, -1);
-      ModAbilityAvailability(ABILITY_A0IH_SPIKED_BARRICADES_DWARF_KEEP, -1);
-    }
+  /// <inheritdoc />
+  public override void OnRegistered()
+  {
+    RegisterObjectLevels();
+    RegisterQuests();
+    SharedFactionConfigSetup.AddSharedFactionConfig(this);
+  }
 
-    private void RegisterQuests()
-    {
-      var questThelsamar = AddQuest(new QuestThelsamar(Regions.ThelUnlock));
-      StartingQuest = questThelsamar;
-      var questDunMorogh = AddQuest(new QuestDunMorogh());
-      AddQuest(new QuestDominion(Regions.IronforgeAmbient, questThelsamar, questDunMorogh));
-      AddQuest(new QuestGnomeregan(Regions.Gnomergan));
-      AddQuest(new QuestDarkIron(Regions.Shadowforge_City, _allLegendSetup.FelHorde.BlackTemple, _allLegendSetup.Ironforge.Magni));
-      AddQuest(new QuestWildhammer(_allLegendSetup.Ironforge.Magni));
-      AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
+  private void RegisterObjectLevels()
+  {
+    ModAbilityAvailability(ABILITY_A0IH_SPIKED_BARRICADES_DWARF_KEEP, -1);
+    ModAbilityAvailability(ABILITY_A0GA_SUMMON_GARRISON_LORDAERON, -1);
+    ModAbilityAvailability(ABILITY_A0GD_SUMMON_GARRISON_STORMWIND, -1);
+    ModAbilityAvailability(ABILITY_A0GC_REPLENISH_MANA_ORANGE_KEEPS_CAPITALS, -1);
+    ModAbilityAvailability(ABILITY_A0IH_SPIKED_BARRICADES_DWARF_KEEP, -1);
+  }
 
-      var missingArtifacts = new int[]
-      {
-        ITEM_I01A_DEMON_SOUL,
-        ITEM_I00F_GLOVES_OF_AHN_QIRAJ,
-        ITEM_I00Z_THUNDERFURY,
-        ITEM_I01T_FANDRAL_S_FLAMESCYTHE
-      };
-      AddQuest(new QuestExpedition(missingArtifacts[GetRandomInt(0, missingArtifacts.Length - 1)]));
-    }
-    
-    private void RegisterStormwindResearches(Stormwind stormwind)
+  private void RegisterQuests()
+  {
+    var questThelsamar = AddQuest(new QuestThelsamar(Regions.ThelUnlock));
+    StartingQuest = questThelsamar;
+    var questDunMorogh = AddQuest(new QuestDunMorogh());
+    AddQuest(new QuestDominion(Regions.IronforgeAmbient, questThelsamar, questDunMorogh));
+    AddQuest(new QuestGnomeregan(Regions.Gnomergan));
+    AddQuest(new QuestDarkIron(Regions.Shadowforge_City, _allLegendSetup.FelHorde.BlackTemple, _allLegendSetup.Ironforge.Magni));
+    AddQuest(new QuestWildhammer(_allLegendSetup.Ironforge.Magni));
+    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
+
+    var missingArtifacts = new int[]
     {
-      ResearchManager.Register(new DeeprunTram(this, stormwind, UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 70,
-        _preplacedUnitSystem));
-    }
+      ITEM_I01A_DEMON_SOUL,
+      ITEM_I00F_GLOVES_OF_AHN_QIRAJ,
+      ITEM_I00Z_THUNDERFURY,
+      ITEM_I01T_FANDRAL_S_FLAMESCYTHE
+    };
+    AddQuest(new QuestExpedition(missingArtifacts[GetRandomInt(0, missingArtifacts.Length - 1)]));
+  }
+
+  private void RegisterStormwindResearches(Stormwind stormwind)
+  {
+    ResearchManager.Register(new DeeprunTram(this, stormwind, UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 70,
+      _preplacedUnitSystem));
   }
 }

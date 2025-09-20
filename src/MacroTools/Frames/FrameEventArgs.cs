@@ -1,14 +1,13 @@
 ﻿using System;
 
-namespace MacroTools.Frames
+namespace MacroTools.Frames;
+
+public class FrameEventArgs : EventArgs
 {
-  public class FrameEventArgs : EventArgs
+  public Frame Frame { get; }
+
+  public FrameEventArgs(Frame frame)
   {
-    public Frame Frame { get; }
-    
-    public FrameEventArgs(Frame frame)
-    {
-      Frame = frame;
-    }
+    Frame = frame;
   }
 }

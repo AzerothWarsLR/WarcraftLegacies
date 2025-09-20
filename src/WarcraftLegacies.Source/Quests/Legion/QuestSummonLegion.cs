@@ -9,97 +9,104 @@ using MacroTools.Systems;
 using WCSharp.Shared;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Quests.Legion
+namespace WarcraftLegacies.Source.Quests.Legion;
+
+public sealed class QuestSummonLegion : QuestData
 {
-  public sealed class QuestSummonLegion : QuestData
+  private const int RitualId = ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS;
+  private readonly List<unit> _rescueUnits;
+  private readonly unit _interiorPortal;
+  private readonly ObjectiveCastSpell _objectiveCastSpell;
+  private readonly LegendaryHero _anetheron;
+  private readonly unit _legionTeleporter1;
+  private readonly unit _legionTeleporter2;
+
+  public QuestSummonLegion(Rectangle rescueRect, unit interiorPortal, LegendaryHero anetheron, PreplacedUnitSystem preplacedUnitSystem) : base("Under the Burning Sky",
+    "The greater forces of the Burning Legion lie in wait in the vast expanse of the Twisting Nether. Use the Book of Medivh to tear open a hole in space-time, and visit the full might of the Legion upon Azeroth.",
+    @"ReplaceableTextures\CommandButtons\BTNArchimonde.blp")
   {
-    private const int RitualId = ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS;
-    private readonly List<unit> _rescueUnits;
-    private readonly unit _interiorPortal;
-    private readonly ObjectiveCastSpell _objectiveCastSpell;
-    private readonly LegendaryHero _anetheron;
-    private readonly unit _legionTeleporter1;
-    private readonly unit _legionTeleporter2;
+    _interiorPortal = interiorPortal;
+    _objectiveCastSpell = new ObjectiveCastSpell(RitualId, false);
+    AddObjective(_objectiveCastSpell);
+    ResearchId = UPGRADE_R04B_QUEST_COMPLETED_UNDER_THE_BURNING_SKY;
+    Global = true;
+    _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+    _anetheron = anetheron;
+    _legionTeleporter1 = preplacedUnitSystem.GetUnit(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, new Point(22939, -29345));
+    _legionTeleporter2 = preplacedUnitSystem.GetUnit(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, new Point(23536, -29975));
+  }
 
-    public QuestSummonLegion(Rectangle rescueRect, unit interiorPortal, LegendaryHero anetheron, PreplacedUnitSystem preplacedUnitSystem) : base("Under the Burning Sky",
-      "The greater forces of the Burning Legion lie in wait in the vast expanse of the Twisting Nether. Use the Book of Medivh to tear open a hole in space-time, and visit the full might of the Legion upon Azeroth.",
-      @"ReplaceableTextures\CommandButtons\BTNArchimonde.blp")
+  /// <inheritdoc />
+  public override string RewardFlavour =>
+    $"A great portal to the depths of the Twisting Nether has been opened by {_objectiveCastSpell.Caster?.GetProperName()}. The Burning Legion steps forth, heralding the beginning of the end.";
+
+  /// <inheritdoc />
+  protected override string RewardDescription =>
+    $"The hero Archimonde, control of all units in the Twisting Nether, learn to train Greater Demons, and can now build 9 more {GetObjectName(UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS)} and {GetObjectName(UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC)}. Anetheron improves his Vampiric Siphon ability";
+
+  /// <inheritdoc />
+  protected override void OnComplete(Faction whichFaction)
+  {
+    IssueImmediateOrderById(_legionTeleporter1, ORDER_BERSERK);
+    IssueImmediateOrderById(_legionTeleporter2, ORDER_BERSERK);
+
+    TimerStart(CreateTimer(), 0.5f, false, () =>
     {
-      _interiorPortal = interiorPortal;
-      _objectiveCastSpell = new ObjectiveCastSpell(RitualId, false);
-      AddObjective(_objectiveCastSpell);
-      ResearchId = UPGRADE_R04B_QUEST_COMPLETED_UNDER_THE_BURNING_SKY;
-      Global = true;
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      _anetheron = anetheron;
-      _legionTeleporter1 = preplacedUnitSystem.GetUnit(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, new Point(22939, -29345));
-      _legionTeleporter2 = preplacedUnitSystem.GetUnit(UNIT_N0BE_LEGION_TELEPORTERS_LEGION_OTHER, new Point(23536, -29975));
+      RemoveUnit(_legionTeleporter1);
+
+      RemoveUnit(_legionTeleporter2);
+
+      DestroyTimer(GetExpiredTimer());
+    });
+
+    if (_anetheron.Unit != null)
+    {
+      SetUnitAbilityLevel(_anetheron.Unit, ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS, 2);
     }
 
-    /// <inheritdoc />
-    public override string RewardFlavour => 
-      $"A great portal to the depths of the Twisting Nether has been opened by {_objectiveCastSpell.Caster?.GetProperName()}. The Burning Legion steps forth, heralding the beginning of the end.";
-
-    /// <inheritdoc />
-    protected override string RewardDescription =>
-      $"The hero Archimonde, control of all units in the Twisting Nether, learn to train Greater Demons, and can now build 9 more {GetObjectName(UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS)} and {GetObjectName(UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC)}. Anetheron improves his Vampiric Siphon ability";
-
-    /// <inheritdoc />
-    protected override void OnComplete(Faction whichFaction)
+    whichFaction.ModObjectLimit(UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC, 9);
+    whichFaction.ModObjectLimit(UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS, 9);
+    whichFaction.ModObjectLimit(UNIT_NINF_INFERNAL_LEGION, 6);
+    foreach (var player in Util.EnumeratePlayers())
     {
-      IssueImmediateOrderById(_legionTeleporter1, ORDER_BERSERK);
-      IssueImmediateOrderById(_legionTeleporter2, ORDER_BERSERK);
-
-      TimerStart(CreateTimer(), 0.5f, false, () =>
-      {
-        RemoveUnit(_legionTeleporter1);
-
-        RemoveUnit(_legionTeleporter2);
-
-        DestroyTimer(GetExpiredTimer());
-      });
-
-      if (_anetheron.Unit != null) 
-        SetUnitAbilityLevel(_anetheron.Unit, ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS, 2);
-
-      whichFaction.ModObjectLimit(UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC, 9);
-      whichFaction.ModObjectLimit(UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS, 9);
-      whichFaction.ModObjectLimit(UNIT_NINF_INFERNAL_LEGION, 6);
-      foreach (var player in Util.EnumeratePlayers())
-        SetPlayerAbilityAvailable(player, ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS, false);
-
-      whichFaction.Player.RescueGroup(_rescueUnits);
-      _rescueUnits.Clear();
-
-      CreatePortals(whichFaction.Player);
-
-      TimerStart(CreateTimer(), 6, false, () =>
-      {
-        PlayThematicMusic("Doom");
-        DestroyTimer(GetExpiredTimer());
-      });
-
-      foreach (var player in Util.EnumeratePlayers())
-        SetPlayerAbilityAvailable(player, RitualId, false);
+      SetPlayerAbilityAvailable(player, ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS, false);
     }
 
-    /// <inheritdoc />
-    protected override void OnAdd(Faction whichFaction)
+    whichFaction.Player.RescueGroup(_rescueUnits);
+    _rescueUnits.Clear();
+
+    CreatePortals(whichFaction.Player);
+
+    TimerStart(CreateTimer(), 6, false, () =>
     {
-      if (whichFaction.UndefeatedResearch == 0)
-        throw new Exception($"{whichFaction.Name} has no presence research. QuestSummonLegion won't work.");
-    }
-    
-    private void CreatePortals(player? whichPlayer)
+      PlayThematicMusic("Doom");
+      DestroyTimer(GetExpiredTimer());
+    });
+
+    foreach (var player in Util.EnumeratePlayers())
     {
-      var exteriorPortalPosition = _objectiveCastSpell.Caster != null
-        ? _objectiveCastSpell.Caster!.GetPosition()
-        : new Point(0, 0);
-      SetUnitOwner(_interiorPortal, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
-      var exteriorPortal = CreateUnit(whichPlayer ?? Player(PLAYER_NEUTRAL_AGGRESSIVE),
-        UNIT_N037_DEMON_PORTAL, exteriorPortalPosition.X, exteriorPortalPosition.Y, 0);
-      exteriorPortal.SetWaygateDestination(_interiorPortal.GetPosition());
-      _interiorPortal.SetWaygateDestination(exteriorPortal.GetPosition());
+      SetPlayerAbilityAvailable(player, RitualId, false);
     }
+  }
+
+  /// <inheritdoc />
+  protected override void OnAdd(Faction whichFaction)
+  {
+    if (whichFaction.UndefeatedResearch == 0)
+    {
+      throw new Exception($"{whichFaction.Name} has no presence research. QuestSummonLegion won't work.");
+    }
+  }
+
+  private void CreatePortals(player? whichPlayer)
+  {
+    var exteriorPortalPosition = _objectiveCastSpell.Caster != null
+      ? _objectiveCastSpell.Caster!.GetPosition()
+      : new Point(0, 0);
+    SetUnitOwner(_interiorPortal, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
+    var exteriorPortal = CreateUnit(whichPlayer ?? Player(PLAYER_NEUTRAL_AGGRESSIVE),
+      UNIT_N037_DEMON_PORTAL, exteriorPortalPosition.X, exteriorPortalPosition.Y, 0);
+    exteriorPortal.SetWaygateDestination(_interiorPortal.GetPosition());
+    _interiorPortal.SetWaygateDestination(exteriorPortal.GetPosition());
   }
 }

@@ -1,34 +1,37 @@
 ﻿using System.Collections.Generic;
 using WCSharp.Buffs;
 
-namespace MacroTools.Buffs
+namespace MacroTools.Buffs;
+
+public sealed class AddSpellOnCastBuff : BoundBuff
 {
-  public sealed class AddSpellOnCastBuff : BoundBuff
+  public IEnumerable<int>? AbilitiesToAdd { get; init; }
+
+  public override void OnApply()
   {
-    public IEnumerable<int>? AbilitiesToAdd { get; init; }
-    
-    public override void OnApply()
+    if (AbilitiesToAdd != null)
     {
-      if (AbilitiesToAdd != null)
-        foreach (var ability in AbilitiesToAdd)
-        {
-          UnitAddAbility(Caster, ability);
+      foreach (var ability in AbilitiesToAdd)
+      {
+        UnitAddAbility(Caster, ability);
 
-        }
+      }
     }
+  }
 
-    public override void OnDispose()
+  public override void OnDispose()
+  {
+    if (AbilitiesToAdd != null)
     {
-      if (AbilitiesToAdd != null)
-        foreach (var ability in AbilitiesToAdd)
-        {
-          UnitRemoveAbility(Caster, ability);
-        }
+      foreach (var ability in AbilitiesToAdd)
+      {
+        UnitRemoveAbility(Caster, ability);
+      }
     }
+  }
 
-    public AddSpellOnCastBuff(unit caster, unit target, int bindApplicatorId, int bindBuffId) : base(caster, target)
-    {
-      BindAura(bindApplicatorId, bindBuffId);
-    }
+  public AddSpellOnCastBuff(unit caster, unit target, int bindApplicatorId, int bindBuffId) : base(caster, target)
+  {
+    BindAura(bindApplicatorId, bindBuffId);
   }
 }

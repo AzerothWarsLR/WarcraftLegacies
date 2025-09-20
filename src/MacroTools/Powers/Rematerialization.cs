@@ -6,60 +6,61 @@ using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.Powers
+namespace MacroTools.Powers;
+
+/// <summary>
+/// Causes dying units to rematerialize at a specific location.
+/// </summary>
+public sealed class Rematerialization : Power
 {
+  private readonly float _chance;
+  private readonly Point _returnPoint;
+  private readonly Rectangle _noReturnRect;
+
   /// <summary>
-  /// Causes dying units to rematerialize at a specific location.
+  /// The condition that units need to pass to be eligible for rematerialization.
   /// </summary>
-  public sealed class Rematerialization : Power
+  public Func<unit, bool> EligibilityCondition { get; init; } = _ => true;
+
+  /// <summary>
+  /// Initializes a new instance of the <see cref="Rematerialization"/> class.
+  /// </summary>
+  /// <param name="chance">The chance that dying units have to rematerialize.</param>
+  /// <param name="returnPoint">Where rematerialized units appear.</param>
+  /// <param name="returnPointName">A user-friendly name for where rematerialized units appear.</param>
+  /// <param name="noReturnRect">Units that die within this area are not rematerialized.</param>
+  public Rematerialization(float chance, Point returnPoint, string returnPointName, Rectangle noReturnRect)
   {
-    private readonly float _chance;
-    private readonly Point _returnPoint;
-    private readonly Rectangle _noReturnRect;
+    _chance = chance;
+    _returnPoint = returnPoint;
+    _noReturnRect = noReturnRect;
+    Description = $"Your non-Resistant units have a {chance * 100}% chance to rematerialize in {returnPointName} upon death.";
+  }
 
-    /// <summary>
-    /// The condition that units need to pass to be eligible for rematerialization.
-    /// </summary>
-    public Func<unit, bool> EligibilityCondition { get; init; } = _ => true;
+  /// <inheritdoc />
+  public override void OnAdd(player whichPlayer) =>
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerUnitDies, OnUnitDeath, GetPlayerId(whichPlayer));
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="Rematerialization"/> class.
-    /// </summary>
-    /// <param name="chance">The chance that dying units have to rematerialize.</param>
-    /// <param name="returnPoint">Where rematerialized units appear.</param>
-    /// <param name="returnPointName">A user-friendly name for where rematerialized units appear.</param>
-    /// <param name="noReturnRect">Units that die within this area are not rematerialized.</param>
-    public Rematerialization(float chance, Point returnPoint, string returnPointName, Rectangle noReturnRect)
+  /// <inheritdoc />
+  public override void OnRemove(player whichPlayer) =>
+    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerUnitDies, OnUnitDeath, GetPlayerId(whichPlayer));
+
+  private void OnUnitDeath()
+  {
+    var dyingUnit = GetTriggerUnit();
+    if (GetRandomReal(0, 1) > _chance
+        || !EligibilityCondition(dyingUnit)
+        || _noReturnRect.Contains(dyingUnit.GetPosition())
+        || IsUnitType(dyingUnit, UNIT_TYPE_RESISTANT)
+        || IsUnitType(dyingUnit, UNIT_TYPE_HERO)
+        || IsUnitType(dyingUnit, UNIT_TYPE_MECHANICAL)
+        || IsUnitIllusion(dyingUnit)
+        || IsUnitType(dyingUnit, UNIT_TYPE_SUMMONED))
     {
-      _chance = chance;
-      _returnPoint = returnPoint;
-      _noReturnRect = noReturnRect;
-      Description = $"Your non-Resistant units have a {chance*100}% chance to rematerialize in {returnPointName} upon death.";
+      return;
     }
-    
-    /// <inheritdoc />
-    public override void OnAdd(player whichPlayer) => 
-      PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerUnitDies, OnUnitDeath, GetPlayerId(whichPlayer));
 
-    /// <inheritdoc />
-    public override void OnRemove(player whichPlayer) => 
-      PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerUnitDies, OnUnitDeath, GetPlayerId(whichPlayer));
-
-    private void OnUnitDeath()
-    {
-      var dyingUnit = GetTriggerUnit();
-      if (GetRandomReal(0, 1) > _chance 
-          || !EligibilityCondition(dyingUnit) 
-          || _noReturnRect.Contains(dyingUnit.GetPosition())
-          || IsUnitType(dyingUnit, UNIT_TYPE_RESISTANT)
-          || IsUnitType(dyingUnit, UNIT_TYPE_HERO) 
-          || IsUnitType(dyingUnit, UNIT_TYPE_MECHANICAL) 
-          || IsUnitIllusion(dyingUnit) 
-          || IsUnitType(dyingUnit, UNIT_TYPE_SUMMONED))
-
-        return;
-      EffectSystem.Add(AddSpecialEffect(@"Abilities\Spells\Items\AIil\AIilTarget.mdl", _returnPoint.X, _returnPoint.Y));
-      CreateUnit(GetOwningPlayer(dyingUnit), GetUnitTypeId(dyingUnit), _returnPoint.X, _returnPoint.Y, 0);
-    }
+    EffectSystem.Add(AddSpecialEffect(@"Abilities\Spells\Items\AIil\AIilTarget.mdl", _returnPoint.X, _returnPoint.Y));
+    CreateUnit(GetOwningPlayer(dyingUnit), GetUnitTypeId(dyingUnit), _returnPoint.X, _returnPoint.Y, 0);
   }
 }

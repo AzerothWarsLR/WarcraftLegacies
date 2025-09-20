@@ -1,64 +1,71 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MacroTools.Systems
+namespace MacroTools.Systems;
+
+/// <summary>A tool for giving units additional hit points per turn.</summary>
+public static class TurnBasedHitpointsManager
 {
-  /// <summary>A tool for giving units additional hit points per turn.</summary>
-  public static class TurnBasedHitpointsManager
+  /// <summary>Past this turn, units will not gain maximum hit points.</summary>
+  private const float TurnLimit = 45;
+
+  private static readonly Dictionary<unit, TurnBasedHitpointData> _unitData = new();
+  private static bool _intialized;
+
+  /// <summary>Causes the unit to continously gain maximum hit points as each turn passes.</summary>
+  public static void Register(unit whichUnit, float hitPointPercentagePerTurn)
   {
-    /// <summary>Past this turn, units will not gain maximum hit points.</summary>
-    private const float TurnLimit = 45;
-
-    private static readonly Dictionary<unit, TurnBasedHitpointData> UnitData = new();
-    private static bool _intialized;
-
-    /// <summary>Causes the unit to continously gain maximum hit points as each turn passes.</summary>
-    public static void Register(unit whichUnit, float hitPointPercentagePerTurn)
+    if (_unitData.ContainsKey(whichUnit))
     {
-      if (UnitData.ContainsKey(whichUnit))
-        throw new InvalidOperationException($"Tried to register {GetUnitName(whichUnit)} to {nameof(TurnBasedHitpointsManager)}, but it's already registered.");
-
-      UnitData.Add(whichUnit, new TurnBasedHitpointData
-      {
-        HitPointPercentagePerTurn = hitPointPercentagePerTurn,
-        BaseHitPoints = BlzGetUnitMaxHP(whichUnit)
-      });
-      if (_intialized)
-        return;
-
-      GameTime.TurnEnded += OnTurnEnded;
-      _intialized = true;
+      throw new InvalidOperationException($"Tried to register {GetUnitName(whichUnit)} to {nameof(TurnBasedHitpointsManager)}, but it's already registered.");
     }
 
-    public static void UnRegister(unit whichUnit)
+    _unitData.Add(whichUnit, new TurnBasedHitpointData
     {
-      if (UnitData.ContainsKey(whichUnit))
-        UnitData.Remove(whichUnit);
+      HitPointPercentagePerTurn = hitPointPercentagePerTurn,
+      BaseHitPoints = BlzGetUnitMaxHP(whichUnit)
+    });
+    if (_intialized)
+    {
+      return;
     }
 
-    private static void OnTurnEnded(object? sender, EventArgs eventArgs)
+    GameTime.TurnEnded += OnTurnEnded;
+    _intialized = true;
+  }
+
+  public static void UnRegister(unit whichUnit)
+  {
+    if (_unitData.ContainsKey(whichUnit))
     {
-      var turn = GameTime.GetTurn();
-      foreach (var (unit, turnBasedHitpointData) in UnitData)
-      {
-        var bonusPercentage = turnBasedHitpointData.HitPointPercentagePerTurn * turn;
-        var bonusHitPoints = (int)Math.Ceiling(turnBasedHitpointData.BaseHitPoints * bonusPercentage);
-        int value = turnBasedHitpointData.BaseHitPoints + bonusHitPoints;
-        BlzSetUnitMaxHP(unit, value);
+      _unitData.Remove(whichUnit);
+    }
+  }
 
-        var heal = turnBasedHitpointData.BaseHitPoints * turnBasedHitpointData.HitPointPercentagePerTurn;
-        int value1 = (int)Math.Ceiling(GetUnitState(unit, UNIT_STATE_LIFE) + heal);
-        SetUnitState(unit, UNIT_STATE_LIFE, value1);
-      }
+  private static void OnTurnEnded(object? sender, EventArgs eventArgs)
+  {
+    var turn = GameTime.GetTurn();
+    foreach (var (unit, turnBasedHitpointData) in _unitData)
+    {
+      var bonusPercentage = turnBasedHitpointData.HitPointPercentagePerTurn * turn;
+      var bonusHitPoints = (int)Math.Ceiling(turnBasedHitpointData.BaseHitPoints * bonusPercentage);
+      var value = turnBasedHitpointData.BaseHitPoints + bonusHitPoints;
+      BlzSetUnitMaxHP(unit, value);
 
-      if (turn >= TurnLimit)
-        GameTime.TurnEnded -= OnTurnEnded;
+      var heal = turnBasedHitpointData.BaseHitPoints * turnBasedHitpointData.HitPointPercentagePerTurn;
+      var value1 = (int)Math.Ceiling(GetUnitState(unit, UNIT_STATE_LIFE) + heal);
+      SetUnitState(unit, UNIT_STATE_LIFE, value1);
     }
 
-    private sealed class TurnBasedHitpointData
+    if (turn >= TurnLimit)
     {
-      public float HitPointPercentagePerTurn { get; init; }
-      public int BaseHitPoints { get; init; }
+      GameTime.TurnEnded -= OnTurnEnded;
     }
+  }
+
+  private sealed class TurnBasedHitpointData
+  {
+    public float HitPointPercentagePerTurn { get; init; }
+    public int BaseHitPoints { get; init; }
   }
 }

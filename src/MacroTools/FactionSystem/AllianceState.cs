@@ -1,10 +1,9 @@
-﻿namespace MacroTools.FactionSystem
+﻿namespace MacroTools.FactionSystem;
+
+public enum AllianceState
 {
-  public enum AllianceState
-  {
-    Unallied,
-    Allied,
-    AlliedVision,
-    UnalliedVision
-  }
+  Unallied,
+  Allied,
+  AlliedVision,
+  UnalliedVision
 }

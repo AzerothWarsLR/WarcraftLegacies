@@ -11,105 +11,104 @@ using WarcraftLegacies.Source.Quests.Goblin;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Factions
+namespace WarcraftLegacies.Source.Factions;
+
+public sealed class Bilgewater : Faction
 {
-  public sealed class Bilgewater : Faction
+  private readonly AllLegendSetup _allLegendSetup;
+  private ArtifactSetup _artifactSetup;
+
+  /// <inheritdoc />
+  public Bilgewater(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup,
+    ArtifactSetup artifactSetup) : base("Bilgewater", PLAYER_COLOR_LIGHT_GRAY,
+    @"ReplaceableTextures\CommandButtons\BTNHeroTinker.blp")
   {
-    private readonly AllLegendSetup _allLegendSetup;
-    private ArtifactSetup _artifactSetup;
+    TraditionalTeam = TeamSetup.Horde;
+    _allLegendSetup = allLegendSetup;
+    _artifactSetup = artifactSetup;
+    StartingGold = 200;
+    ControlPointDefenderUnitTypeId = UNIT_O01C_CONTROL_POINT_DEFENDER_GOBLIN;
+    IntroText = $"You are playing as the industrious {PrefixCol}Bilgewater Cartel|r.\n\n" +
+                "You begin in Tanaris with a very small business venture. Expand onto Kalimdor to grow your trade empire.\n\n" +
+                "Your advanced units require Oil to function. Use oil ships to find oil deposits in the Great Sea and build platforms on them.\n\n" +
+                "The Trading Center in Kezan will unlock the ability to train Traders. Be sure to protect the Trading Center once you unlock it, as it will form the backbone of your Goblin Empire.";
 
-    /// <inheritdoc />
-    public Bilgewater(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup,
-      ArtifactSetup artifactSetup) : base("Bilgewater", PLAYER_COLOR_LIGHT_GRAY,
-      @"ReplaceableTextures\CommandButtons\BTNHeroTinker.blp")
+    GoldMines = new List<unit>
     {
-      TraditionalTeam = TeamSetup.Horde;
-      _allLegendSetup = allLegendSetup;
-      _artifactSetup = artifactSetup;
-      StartingGold = 200;
-      ControlPointDefenderUnitTypeId = UNIT_O01C_CONTROL_POINT_DEFENDER_GOBLIN;
-      IntroText = $"You are playing as the industrious {PrefixCol}Bilgewater Cartel|r.\n\n" +
-                  "You begin in Tanaris with a very small business venture. Expand onto Kalimdor to grow your trade empire.\n\n" +
-                  "Your advanced units require Oil to function. Use oil ships to find oil deposits in the Great Sea and build platforms on them.\n\n" +
-                  "The Trading Center in Kezan will unlock the ability to train Traders. Be sure to protect the Trading Center once you unlock it, as it will form the backbone of your Goblin Empire.";
+      preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8615, -12869)), //Starting
+      preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-730, -6777))    //Kezan
+    };
+    Nicknames = new List<string>
+    {
+      "bw",
+      "bilge",
+      "gob",
+      "goblin",
+      "goblins"
+    };
+    ProcessObjectInfo(BilgewaterObjectInfo.GetAllObjectLimits());
+  }
 
-      GoldMines = new List<unit>
-      {
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-8615, -12869)), //Starting
-        preplacedUnitSystem.GetUnit(FourCC("ngol"), new Point(-730, -6777))    //Kezan
-      };
-      Nicknames = new List<string>
-      {
-        "bw",
-        "bilge",
-        "gob",
-        "goblin",
-        "goblins"
-      };
-      ProcessObjectInfo(BilgewaterObjectInfo.GetAllObjectLimits());
-    }
-        
-    /// <inheritdoc />
-    public override void OnRegistered()
-    {
-      RegisterQuests();
-      RegisterDialogue();
-      RegisterPowers();
-      SharedFactionConfigSetup.AddSharedFactionConfig(this);
-    }
+  /// <inheritdoc />
+  public override void OnRegistered()
+  {
+    RegisterQuests();
+    RegisterDialogue();
+    RegisterPowers();
+    SharedFactionConfigSetup.AddSharedFactionConfig(this);
+  }
 
-    /// <inheritdoc />
-    public override void OnNotPicked()
-    {
-      Regions.KezanUnlock.CleanupNeutralPassiveUnits();
-      base.OnNotPicked();
-    }
+  /// <inheritdoc />
+  public override void OnNotPicked()
+  {
+    Regions.KezanUnlock.CleanupNeutralPassiveUnits();
+    base.OnNotPicked();
+  }
 
-    private void RegisterQuests()
-    {
-      StartingQuest = AddQuest(new QuestKezan());
-      AddQuest(new QuestExplosiveEngineering());
-      AddQuest(new QuestRatchet());
-      AddQuest(new QuestWesternExpansion(new [] { _allLegendSetup.Sentinels.Auberdine, _allLegendSetup.Sentinels.Feathermoon }));
-      AddQuest(new QuestLumberMarket(_allLegendSetup.Druids.Nordrassil));
-      AddQuest(new QuestBusinessExpansion());
-      AddQuest(new QuestGoblinEmpire());
-      AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
-    }
+  private void RegisterQuests()
+  {
+    StartingQuest = AddQuest(new QuestKezan());
+    AddQuest(new QuestExplosiveEngineering());
+    AddQuest(new QuestRatchet());
+    AddQuest(new QuestWesternExpansion(new[] { _allLegendSetup.Sentinels.Auberdine, _allLegendSetup.Sentinels.Feathermoon }));
+    AddQuest(new QuestLumberMarket(_allLegendSetup.Druids.Nordrassil));
+    AddQuest(new QuestBusinessExpansion());
+    AddQuest(new QuestGoblinEmpire());
+    AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
+  }
 
-    private void RegisterDialogue()
-    {
-      TriggeredDialogueManager.Add(
-        new TriggeredDialogue(new Dialogue(
-            @"Sound\Dialogue\OrcExpCamp\OrcQuest03x\D03Gazlowe01",
-            "Ah, new guy, huh? I'm Gazlowe, chief engineer around these parts. But enough about me. We got work to do, buddy!",
-            "Gazlowe")
-          , new[]
+  private void RegisterDialogue()
+  {
+    TriggeredDialogueManager.Add(
+      new TriggeredDialogue(new Dialogue(
+          @"Sound\Dialogue\OrcExpCamp\OrcQuest03x\D03Gazlowe01",
+          "Ah, new guy, huh? I'm Gazlowe, chief engineer around these parts. But enough about me. We got work to do, buddy!",
+          "Gazlowe")
+        , new[]
+        {
+          this
+        }, new[]
+        {
+          new ObjectiveControlLegend(_allLegendSetup.Goblin.Gazlowe, false)
           {
-            this
-          }, new[]
-          {
-            new ObjectiveControlLegend(_allLegendSetup.Goblin.Gazlowe, false)
-            {
-              EligibleFactions = new List<Faction>{ this }
-            }
-          }));
-    }
-    
-    private void RegisterPowers()
+            EligibleFactions = new List<Faction>{ this }
+          }
+        }));
+  }
+
+  private void RegisterPowers()
+  {
+    var oilPower = new OilPower
     {
-      var oilPower = new OilPower
-      {
-        Name = "Oil Tycoon",
-        IconName = "OilStation",
-        StartingRandomOilPoolCount = 3,
-        MaximumOilPoolCount = 15,
-        OilPoolMinimumValue = 1500,
-        OilPoolMaximumValue = 9000,
-        OilPoolBorderDistance = 600,
-        ForcedStartingOilPoolSpawnLocations = new [] { new Point(-4825f, -282f) }
-      };
-      AddPower(oilPower);
-    }
+      Name = "Oil Tycoon",
+      IconName = "OilStation",
+      StartingRandomOilPoolCount = 3,
+      MaximumOilPoolCount = 15,
+      OilPoolMinimumValue = 1500,
+      OilPoolMaximumValue = 9000,
+      OilPoolBorderDistance = 600,
+      ForcedStartingOilPoolSpawnLocations = new[] { new Point(-4825f, -282f) }
+    };
+    AddPower(oilPower);
   }
 }

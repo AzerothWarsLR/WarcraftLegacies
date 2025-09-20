@@ -6,40 +6,39 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 
-namespace WarcraftLegacies.Source.Quests.Stormwind
+namespace WarcraftLegacies.Source.Quests.Stormwind;
+
+public sealed class QuestDarkshire : QuestData
 {
-  public sealed class QuestDarkshire : QuestData
+  private readonly List<unit> _rescueUnits;
+
+  public QuestDarkshire() : base("Gnoll Troubles",
+    "The town of Darkshire is under attack by Gnoll's, clear them out!",
+    @"ReplaceableTextures\CommandButtons\BTNGnollArcher.blp")
   {
-    private readonly List<unit> _rescueUnits;
-
-    public QuestDarkshire() : base("Gnoll Troubles",
-      "The town of Darkshire is under attack by Gnoll's, clear them out!",
-      @"ReplaceableTextures\CommandButtons\BTNGnollArcher.blp")
-    {
-      AddObjective(new ObjectiveControlPoint(UNIT_N00V_DUSKWOOD));
-      AddObjective(new ObjectiveExpire(600, Title));
-      AddObjective(new ObjectiveSelfExists());
-      _rescueUnits = Regions.DarkshireUnlock.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
-    }
-
-    /// <inheritdoc/>
-    public override string RewardFlavour =>
-      "Darkshire has been liberated, and its military is now free to assist Stormwind.";
-
-    /// <inheritdoc/>
-    protected override string RewardDescription => "Control of all units in Darkshire";
-
-    /// <inheritdoc/>
-    protected override void OnFail(Faction completingFaction)
-    {
-      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
-        : completingFaction.Player;
-
-      rescuer.RescueGroup(_rescueUnits);
-    }
-
-    /// <inheritdoc/>
-    protected override void OnComplete(Faction completingFaction) => completingFaction.Player.RescueGroup(_rescueUnits);
+    AddObjective(new ObjectiveControlPoint(UNIT_N00V_DUSKWOOD));
+    AddObjective(new ObjectiveExpire(600, Title));
+    AddObjective(new ObjectiveSelfExists());
+    _rescueUnits = Regions.DarkshireUnlock.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
   }
+
+  /// <inheritdoc/>
+  public override string RewardFlavour =>
+    "Darkshire has been liberated, and its military is now free to assist Stormwind.";
+
+  /// <inheritdoc/>
+  protected override string RewardDescription => "Control of all units in Darkshire";
+
+  /// <inheritdoc/>
+  protected override void OnFail(Faction completingFaction)
+  {
+    var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      : completingFaction.Player;
+
+    rescuer.RescueGroup(_rescueUnits);
+  }
+
+  /// <inheritdoc/>
+  protected override void OnComplete(Faction completingFaction) => completingFaction.Player.RescueGroup(_rescueUnits);
 }

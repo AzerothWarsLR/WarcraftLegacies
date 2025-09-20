@@ -3,37 +3,36 @@ using MacroTools.ObjectiveSystem;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.FactionMechanics.Scourge;
 
-namespace WarcraftLegacies.Source.Objectives
+namespace WarcraftLegacies.Source.Objectives;
+
+/// <summary>
+/// Completed when the Frozen Throne gets into a certain state.
+/// </summary>
+public sealed class ObjectiveFrozenThroneState : Objective
 {
+  private readonly FrozenThroneState _desiredState;
+
   /// <summary>
-  /// Completed when the Frozen Throne gets into a certain state.
+  /// The state of the Frozen Throne when the quest was completed.
   /// </summary>
-  public sealed class ObjectiveFrozenThroneState : Objective
+  public FrozenThroneState State { get; private set; }
+
+  /// <summary>
+  /// Initializes a new instance of the <see cref="ObjectiveFrozenThroneState"/> class.
+  /// </summary>
+  /// <param name="desiredState">The Objective is completed when the Throne changes to this state.</param>
+  public ObjectiveFrozenThroneState(FrozenThroneState desiredState)
   {
-    private readonly FrozenThroneState _desiredState;
+    Description = $"The Frozen Throne is {desiredState}";
+    _desiredState = desiredState;
+  }
 
-    /// <summary>
-    /// The state of the Frozen Throne when the quest was completed.
-    /// </summary>
-    public FrozenThroneState State { get; private set; }
-    
-    /// <summary>
-    /// Initializes a new instance of the <see cref="ObjectiveFrozenThroneState"/> class.
-    /// </summary>
-    /// <param name="desiredState">The Objective is completed when the Throne changes to this state.</param>
-    public ObjectiveFrozenThroneState(FrozenThroneState desiredState)
+  public override void OnAdd(Faction whichFaction)
+  {
+    TheFrozenThrone.FrozenThroneStateChanged += (_, state) =>
     {
-      Description = $"The Frozen Throne is {desiredState}";
-      _desiredState = desiredState;
-    }
-
-    public override void OnAdd(Faction whichFaction)
-    {
-      TheFrozenThrone.FrozenThroneStateChanged += (_, state) =>
-      {
-        Progress = state == _desiredState ? QuestProgress.Complete : QuestProgress.Failed;
-        State = state;
-      };
-    }
+      Progress = state == _desiredState ? QuestProgress.Complete : QuestProgress.Failed;
+      State = state;
+    };
   }
 }

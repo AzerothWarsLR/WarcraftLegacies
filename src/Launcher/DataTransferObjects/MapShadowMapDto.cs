@@ -1,7 +1,6 @@
-﻿namespace Launcher.DataTransferObjects
+﻿namespace Launcher.DataTransferObjects;
+
+public class MapShadowMapDto
 {
-  public class MapShadowMapDto
-  {
-    public int[] Cells { get; set; }
-  }
+  public int[] Cells { get; set; }
 }

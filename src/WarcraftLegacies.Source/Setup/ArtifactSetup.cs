@@ -2,184 +2,183 @@
 using MacroTools.Systems;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Setup
+namespace WarcraftLegacies.Source.Setup;
+
+/// <summary>
+/// Responsible for setting up and storing all <see cref="Artifact"/>s.
+/// </summary>
+public sealed class ArtifactSetup
 {
+  private const float DummyX = 20195;
+  private const float DummyY = 24177;
+
   /// <summary>
-  /// Responsible for setting up and storing all <see cref="Artifact"/>s.
+  /// The Crown of Stormwind.
   /// </summary>
-  public sealed class ArtifactSetup
+  public Artifact CrownOfStormwind { get; }
+
+  /// <summary>
+  /// The Scarab Gong.
+  /// </summary>
+  public Artifact ScarabGong { get; }
+
+  /// <summary>
+  /// The Crown of Lordaeron.
+  /// </summary>
+  public Artifact CrownOfLordaeron { get; }
+
+  /// <summary>
+  /// The Helm of Domination worn by the Lich King.
+  /// </summary>
+  public Artifact HelmOfDomination { get; }
+
+  /// <summary>
+  /// Azshara's Scepter.
+  /// </summary>
+  public Artifact ScepterOfTheQueen { get; }
+
+  /// <summary>
+  /// Powerful tome left behind by the Guardian Medivh.
+  /// </summary>
+  public Artifact BookOfMedivh { get; }
+
+  /// <summary>
+  /// Essence of a powerful voidlord.
+  /// </summary>
+  public Artifact EssenceofMurmur { get; }
+
+  /// <summary>
+  /// Horn that can be used to call a bunch of wisps.
+  /// </summary>
+  public Artifact HornOfCenarius { get; }
+
+  /// <summary>
+  /// A remnant of the Titan Sargeras.
+  /// </summary>
+  public Artifact EyeOfSargeras { get; }
+
+  /// <summary>
+  /// Destroyer of Worlds.
+  /// </summary>
+  public Artifact ZinRokh { get; }
+
+  /// <summary>
+  /// A fragment of Zin'rokh.
+  /// </summary>
+  public Artifact AzureFragment { get; }
+
+  /// <summary>
+  /// A fragment of Zin'rokh.
+  /// </summary>
+  public Artifact EmeraldFragment { get; }
+
+  /// <summary>
+  /// A fragment of Zin'rokh.
+  /// </summary>
+  public Artifact RubyFragment { get; }
+
+  /// <summary>
+  /// A fragment of Zin'rokh.
+  /// </summary>
+  public Artifact ObsidianFragment { get; }
+
+  /// <summary>
+  /// A fragment of Zin'rokh.
+  /// </summary>
+  public Artifact BronzeFragment { get; }
+
+  public Artifact SunwellVial { get; set; }
+
+
+  /// <summary>
+  /// Sets up <see cref="ArtifactSetup"/>.
+  /// </summary>
+  public ArtifactSetup(PreplacedUnitSystem preplacedUnitSystem)
   {
-    private const float DummyX = 20195;
-    private const float DummyY = 24177;
+    CrownOfStormwind = new Artifact(CreateItem(FourCC("I002"), DummyX, DummyY));
+    UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n021")), CrownOfStormwind.Item); //Hogger
+    ArtifactManager.Register(CrownOfStormwind);
 
-    /// <summary>
-    /// The Crown of Stormwind.
-    /// </summary>
-    public Artifact CrownOfStormwind { get; }
+    ScarabGong = new Artifact(CreateItem(FourCC("ISGC"), DummyX, DummyY)); //Scarab Gong
+    UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("nJTR")), ScarabGong.Item); //Scarab Gong
+    ArtifactManager.Register(ScarabGong);
 
-    /// <summary>
-    /// The Scarab Gong.
-    /// </summary>
-    public Artifact ScarabGong { get; }
+    EyeOfSargeras = new Artifact(CreateItem(ITEM_I003_EYE_OF_SARGERAS, -77.9f, 10910.4f));
+    ArtifactManager.Register(EyeOfSargeras);
 
-    /// <summary>
-    /// The Crown of Lordaeron.
-    /// </summary>
-    public Artifact CrownOfLordaeron { get; }
+    HelmOfDomination = new Artifact(CreateItem(FourCC("I01Y"), DummyX, DummyY)); //Helm of Domination
+    UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("u000_0649")), Artifact.ArtifactHolderAbilId); //Frozen Throne
+    UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("u000")), HelmOfDomination.Item);
+    ArtifactManager.Register(HelmOfDomination);
 
-    /// <summary>
-    /// The Helm of Domination worn by the Lich King.
-    /// </summary>
-    public Artifact HelmOfDomination { get; }
+    CrownOfLordaeron = new Artifact(CreateItem(FourCC("I001"), DummyX, DummyY)); //Crown of Lordaeron
+    UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("nemi_0019")), Artifact.ArtifactHolderAbilId); //King Terenas
+    UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("nemi")), CrownOfLordaeron.Item);
+    ArtifactManager.Register(CrownOfLordaeron);
 
-    /// <summary>
-    /// Azshara's Scepter.
-    /// </summary>
-    public Artifact ScepterOfTheQueen { get; }
+    var tempArtifact = new Artifact(CreateItem(FourCC("klmm"), DummyX, DummyY)); //Killmaim
+    UnitAddAbility(preplacedUnitSystem.GetUnit(UNIT_H0BD_RAMZES_THE_HORROR_CREEP_DESOLACE), Artifact.ArtifactHolderAbilId); //Ramzes the Horror
+    UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_H0BD_RAMZES_THE_HORROR_CREEP_DESOLACE), tempArtifact.Item);
+    ArtifactManager.Register(tempArtifact);
 
-    /// <summary>
-    /// Powerful tome left behind by the Guardian Medivh.
-    /// </summary>
-    public Artifact BookOfMedivh { get; }
+    ScepterOfTheQueen = new Artifact(CreateItem(FourCC("I00I"), DummyX, DummyY));
+    UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("n085_2846")), Artifact.ArtifactHolderAbilId); //The Atheneum
+    UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n085")), ScepterOfTheQueen.Item);
+    ArtifactManager.Register(ScepterOfTheQueen);
 
-    /// <summary>
-    /// Essence of a powerful voidlord.
-    /// </summary>
-    public Artifact EssenceofMurmur { get; }
+    BookOfMedivh = new Artifact(CreateItem(ITEM_I006_BOOK_OF_MEDIVH, DummyX, DummyY));
+    ArtifactManager.Register(BookOfMedivh);
 
-    /// <summary>
-    /// Horn that can be used to call a bunch of wisps.
-    /// </summary>
-    public Artifact HornOfCenarius { get; }
-
-    /// <summary>
-    /// A remnant of the Titan Sargeras.
-    /// </summary>
-    public Artifact EyeOfSargeras { get; }
-
-    /// <summary>
-    /// Destroyer of Worlds.
-    /// </summary>
-    public Artifact ZinRokh { get; }
-
-    /// <summary>
-    /// A fragment of Zin'rokh.
-    /// </summary>
-    public Artifact AzureFragment { get; }
-
-    /// <summary>
-    /// A fragment of Zin'rokh.
-    /// </summary>
-    public Artifact EmeraldFragment { get; }
-
-    /// <summary>
-    /// A fragment of Zin'rokh.
-    /// </summary>
-    public Artifact RubyFragment { get; }
-
-    /// <summary>
-    /// A fragment of Zin'rokh.
-    /// </summary>
-    public Artifact ObsidianFragment { get; }
-
-    /// <summary>
-    /// A fragment of Zin'rokh.
-    /// </summary>
-    public Artifact BronzeFragment { get; }
-
-    public Artifact SunwellVial { get; set; }
-
-
-    /// <summary>
-    /// Sets up <see cref="ArtifactSetup"/>.
-    /// </summary>
-    public ArtifactSetup(PreplacedUnitSystem preplacedUnitSystem)
+    ZinRokh = new Artifact(CreateItem(FourCC("I016"), DummyX, DummyY))
     {
-      CrownOfStormwind = new Artifact(CreateItem(FourCC("I002"), DummyX, DummyY));
-      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n021")), CrownOfStormwind.Item); //Hogger
-      ArtifactManager.Register(CrownOfStormwind);
+      TitanforgedAbility = ABILITY_A0VM_TITANFORGED_9_STRENGTH
+    };
 
-      ScarabGong = new Artifact(CreateItem(FourCC("ISGC"), DummyX, DummyY)); //Scarab Gong
-      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("nJTR")), ScarabGong.Item); //Scarab Gong
-      ArtifactManager.Register(ScarabGong);
+    BronzeFragment = new Artifact(CreateItem(ITEM_I01M_BRONZE_FRAGMENT, DummyX, DummyY));
+    UnitAddAbility(preplacedUnitSystem.GetUnit(UNIT_O06Y_UKORZ_CREEP_ZUL_FARRAK), Artifact.ArtifactHolderAbilId);
+    UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_O06Y_UKORZ_CREEP_ZUL_FARRAK), BronzeFragment.Item);
+    ArtifactManager.Register(BronzeFragment);
 
-      EyeOfSargeras = new Artifact(CreateItem(ITEM_I003_EYE_OF_SARGERAS, -77.9f, 10910.4f));
-      ArtifactManager.Register(EyeOfSargeras);
+    ObsidianFragment = new Artifact(CreateItem(ITEM_I01L_OBSIDIAN_FRAGMENT, DummyX, DummyY));
+    UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_NDTW_XU_BA), ObsidianFragment.Item);
+    ArtifactManager.Register(ObsidianFragment);
 
-      HelmOfDomination = new Artifact(CreateItem(FourCC("I01Y"), DummyX, DummyY)); //Helm of Domination
-      UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("u000_0649")), Artifact.ArtifactHolderAbilId); //Frozen Throne
-      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("u000")), HelmOfDomination.Item);
-      ArtifactManager.Register(HelmOfDomination);
+    RubyFragment = new Artifact(CreateItem(ITEM_I01J_RUBY_FRAGMENT, DummyX, DummyY));
+    UnitAddAbility(preplacedUnitSystem.GetUnit(UNIT_O06X_JIN_DO_CREEP_ZUL_GURUB), Artifact.ArtifactHolderAbilId); //Jin)do
+    UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_O06X_JIN_DO_CREEP_ZUL_GURUB), RubyFragment.Item);
+    ArtifactManager.Register(RubyFragment);
 
-      CrownOfLordaeron = new Artifact(CreateItem(FourCC("I001"), DummyX, DummyY)); //Crown of Lordaeron
-      UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("nemi_0019")), Artifact.ArtifactHolderAbilId); //King Terenas
-      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("nemi")), CrownOfLordaeron.Item);
-      ArtifactManager.Register(CrownOfLordaeron);
+    AzureFragment = new Artifact(CreateItem(ITEM_I01I_AZURE_FRAGMENT, DummyX, DummyY));
+    UnitAddAbility(preplacedUnitSystem.GetUnit(UNIT_O06W_GAL_DARAH_CREEP_ZUL_DRAK), Artifact.ArtifactHolderAbilId);
+    UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_O06W_GAL_DARAH_CREEP_ZUL_DRAK), AzureFragment.Item);
+    ArtifactManager.Register(AzureFragment);
 
-      var tempArtifact = new Artifact(CreateItem(FourCC("klmm"), DummyX, DummyY)); //Killmaim
-      UnitAddAbility(preplacedUnitSystem.GetUnit(UNIT_H0BD_RAMZES_THE_HORROR_CREEP_DESOLACE), Artifact.ArtifactHolderAbilId); //Ramzes the Horror
-      UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_H0BD_RAMZES_THE_HORROR_CREEP_DESOLACE), tempArtifact.Item);
-      ArtifactManager.Register(tempArtifact);
+    EssenceofMurmur = new Artifact(CreateItem(FourCC("I00K"), DummyX, DummyY)); //Essence
+    UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n03T")), EssenceofMurmur.Item); //Murmur
+    ArtifactManager.Register(EssenceofMurmur);
 
-      ScepterOfTheQueen = new Artifact(CreateItem(FourCC("I00I"), DummyX, DummyY));
-      UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("n085_2846")), Artifact.ArtifactHolderAbilId); //The Atheneum
-      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n085")), ScepterOfTheQueen.Item);
-      ArtifactManager.Register(ScepterOfTheQueen);
+    EmeraldFragment = new Artifact(CreateItem(ITEM_I01K_EMERALD_FRAGMENT, DummyX, DummyY));
+    UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_O06Z_ZUL_JIN_CREEP_ZUL_AMAN), EmeraldFragment.Item);
+    ArtifactManager.Register(EmeraldFragment);
 
-      BookOfMedivh = new Artifact(CreateItem(ITEM_I006_BOOK_OF_MEDIVH, DummyX, DummyY));
-      ArtifactManager.Register(BookOfMedivh);
+    tempArtifact = new Artifact(CreateItem(FourCC("arsh"), DummyX, DummyY)); //Shroud of Nozdormuru
+    UnitAddAbility(preplacedUnitSystem.GetUnit(UNIT_O070_OCCULUS_CREEP_CAVERNS), Artifact.ArtifactHolderAbilId); //Occulus
+    UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_O070_OCCULUS_CREEP_CAVERNS), tempArtifact.Item);
+    ArtifactManager.Register(tempArtifact);
 
-      ZinRokh = new Artifact(CreateItem(FourCC("I016"), DummyX, DummyY))
-      {
-        TitanforgedAbility = ABILITY_A0VM_TITANFORGED_9_STRENGTH
-      };
+    HornOfCenarius = new Artifact(CreateItem(FourCC("cnhn"), DummyX, DummyY));
+    UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("nhcn_2597")), Artifact.ArtifactHolderAbilId); //Horn of Cenarius Pedestal
+    UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("nhcn")), HornOfCenarius.Item);
+    ArtifactManager.Register(HornOfCenarius);
 
-      BronzeFragment = new Artifact(CreateItem(ITEM_I01M_BRONZE_FRAGMENT, DummyX, DummyY));
-      UnitAddAbility(preplacedUnitSystem.GetUnit(UNIT_O06Y_UKORZ_CREEP_ZUL_FARRAK), Artifact.ArtifactHolderAbilId);
-      UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_O06Y_UKORZ_CREEP_ZUL_FARRAK), BronzeFragment.Item);
-      ArtifactManager.Register(BronzeFragment);
+    tempArtifact = new Artifact(CreateItem(FourCC("kgal"), DummyX, DummyY)); //Keg of Thunderwater
+    UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("hmtm"), new Point(15109, -895)), tempArtifact.Item);
+    ArtifactManager.Register(tempArtifact);
 
-      ObsidianFragment = new Artifact(CreateItem(ITEM_I01L_OBSIDIAN_FRAGMENT, DummyX, DummyY));
-      UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_NDTW_XU_BA), ObsidianFragment.Item);
-      ArtifactManager.Register(ObsidianFragment);
-
-      RubyFragment = new Artifact(CreateItem(ITEM_I01J_RUBY_FRAGMENT, DummyX, DummyY));
-      UnitAddAbility(preplacedUnitSystem.GetUnit(UNIT_O06X_JIN_DO_CREEP_ZUL_GURUB), Artifact.ArtifactHolderAbilId); //Jin)do
-      UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_O06X_JIN_DO_CREEP_ZUL_GURUB), RubyFragment.Item);
-      ArtifactManager.Register(RubyFragment);
-
-      AzureFragment = new Artifact(CreateItem(ITEM_I01I_AZURE_FRAGMENT, DummyX, DummyY));
-      UnitAddAbility(preplacedUnitSystem.GetUnit(UNIT_O06W_GAL_DARAH_CREEP_ZUL_DRAK), Artifact.ArtifactHolderAbilId);
-      UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_O06W_GAL_DARAH_CREEP_ZUL_DRAK), AzureFragment.Item);
-      ArtifactManager.Register(AzureFragment);
-
-      EssenceofMurmur = new Artifact(CreateItem(FourCC("I00K"), DummyX, DummyY)); //Essence
-      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n03T")), EssenceofMurmur.Item); //Murmur
-      ArtifactManager.Register(EssenceofMurmur);
-
-      EmeraldFragment = new Artifact(CreateItem(ITEM_I01K_EMERALD_FRAGMENT, DummyX, DummyY));
-      UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_O06Z_ZUL_JIN_CREEP_ZUL_AMAN), EmeraldFragment.Item);
-      ArtifactManager.Register(EmeraldFragment);
-
-      tempArtifact = new Artifact(CreateItem(FourCC("arsh"), DummyX, DummyY)); //Shroud of Nozdormuru
-      UnitAddAbility(preplacedUnitSystem.GetUnit(UNIT_O070_OCCULUS_CREEP_CAVERNS), Artifact.ArtifactHolderAbilId); //Occulus
-      UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_O070_OCCULUS_CREEP_CAVERNS), tempArtifact.Item);
-      ArtifactManager.Register(tempArtifact);
-
-      HornOfCenarius = new Artifact(CreateItem(FourCC("cnhn"), DummyX, DummyY));
-      UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("nhcn_2597")), Artifact.ArtifactHolderAbilId); //Horn of Cenarius Pedestal
-      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("nhcn")), HornOfCenarius.Item);
-      ArtifactManager.Register(HornOfCenarius);
-
-      tempArtifact = new Artifact(CreateItem(FourCC("kgal"), DummyX, DummyY)); //Keg of Thunderwater
-      UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("hmtm"), new Point(15109, -895)), tempArtifact.Item);
-      ArtifactManager.Register(tempArtifact);
-
-      SunwellVial = new Artifact(CreateItem(ITEM_I018_VIAL_OF_THE_SUNWELL, DummyX, DummyX));
-      var sunwell = preplacedUnitSystem.GetUnit(UNIT_N001_THE_SUNWELL_QUEL_THALAS_OTHER);
-      UnitAddAbility(sunwell, Artifact.ArtifactHolderAbilId);
-      UnitAddItem(sunwell, SunwellVial.Item);
-      ArtifactManager.Register(SunwellVial);
-    }
+    SunwellVial = new Artifact(CreateItem(ITEM_I018_VIAL_OF_THE_SUNWELL, DummyX, DummyX));
+    var sunwell = preplacedUnitSystem.GetUnit(UNIT_N001_THE_SUNWELL_QUEL_THALAS_OTHER);
+    UnitAddAbility(sunwell, Artifact.ArtifactHolderAbilId);
+    UnitAddItem(sunwell, SunwellVial.Item);
+    ArtifactManager.Register(SunwellVial);
   }
 }

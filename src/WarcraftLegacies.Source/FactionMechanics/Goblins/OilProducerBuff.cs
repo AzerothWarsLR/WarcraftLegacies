@@ -3,67 +3,80 @@ using MacroTools.Powers;
 using WCSharp.Buffs;
 using WCSharp.Events;
 
-namespace WarcraftLegacies.Source.FactionMechanics.Goblins
+namespace WarcraftLegacies.Source.FactionMechanics.Goblins;
+
+/// <summary>
+/// Increases the owner's oil income. The owner must have an instance of <see cref="OilPower"/>.
+/// </summary>
+public sealed class OilProducerBuff : PassiveBuff
 {
+  private readonly float _incomePerSecond;
+  private OilPower? _oilPower;
+
   /// <summary>
-  /// Increases the owner's oil income. The owner must have an instance of <see cref="OilPower"/>.
+  /// Construct an <see cref="OilUserBuff"/>.
   /// </summary>
-  public sealed class OilProducerBuff : PassiveBuff
+  /// <param name="target">The unit with the buff.</param>
+  /// <param name="incomePerSecond">How much oil to give the owner per second.</param>
+  public OilProducerBuff(unit target, float incomePerSecond) : base(target, target)
   {
-    private readonly float _incomePerSecond;
-    private OilPower? _oilPower;
+    _incomePerSecond = incomePerSecond;
+    _oilPower = GetOwningPlayer(target).GetFaction()?.GetPowerByType<OilPower>();
 
-    /// <summary>
-    /// Construct an <see cref="OilUserBuff"/>.
-    /// </summary>
-    /// <param name="target">The unit with the buff.</param>
-    /// <param name="incomePerSecond">How much oil to give the owner per second.</param>
-    public OilProducerBuff(unit target, float incomePerSecond) : base(target, target)
+    if (_oilPower != null)
     {
-      _incomePerSecond = incomePerSecond;
-      _oilPower = GetOwningPlayer(target).GetFaction()?.GetPowerByType<OilPower>();
-
-      if (_oilPower != null)
-        _oilPower.AmountChanged += OnOilAmountChanged;
-
-      PlayerUnitEvents.Register(UnitEvent.ChangesOwner, OnChangeOwner, target);
-      
-      Duration = float.MaxValue;
+      _oilPower.AmountChanged += OnOilAmountChanged;
     }
 
-    private void OnOilAmountChanged(object? sender, OilPower oilPower)
-    {
-      if (_oilPower != null)
-        SetUnitState(Target, UNIT_STATE_MANA, _oilPower.Amount);
-    }
+    PlayerUnitEvents.Register(UnitEvent.ChangesOwner, OnChangeOwner, target);
 
-    /// <inheritdoc/>
-    public override void OnApply()
-    {
-      if (_oilPower == null) 
-        return;
+    Duration = float.MaxValue;
+  }
 
-      _oilPower.Income += _incomePerSecond;
+  private void OnOilAmountChanged(object? sender, OilPower oilPower)
+  {
+    if (_oilPower != null)
+    {
       SetUnitState(Target, UNIT_STATE_MANA, _oilPower.Amount);
     }
+  }
 
-    /// <inheritdoc/>
-    public override void OnDispose()
+  /// <inheritdoc/>
+  public override void OnApply()
+  {
+    if (_oilPower == null)
     {
-      if (_oilPower == null) 
-        return;
-      _oilPower.Income -= _incomePerSecond;
-      _oilPower.AmountChanged -= OnOilAmountChanged;
-      PlayerUnitEvents.Unregister(UnitEvent.ChangesOwner, OnChangeOwner, Target);
+      return;
     }
 
-    private void OnChangeOwner()
+    _oilPower.Income += _incomePerSecond;
+    SetUnitState(Target, UNIT_STATE_MANA, _oilPower.Amount);
+  }
+
+  /// <inheritdoc/>
+  public override void OnDispose()
+  {
+    if (_oilPower == null)
     {
-      if (_oilPower != null) 
-        _oilPower.Income -= _incomePerSecond;
-      _oilPower = GetOwningPlayer(Target).GetFaction()?.GetPowerByType<OilPower>();
-      if (_oilPower != null)
-        _oilPower.Income += _incomePerSecond;
+      return;
+    }
+
+    _oilPower.Income -= _incomePerSecond;
+    _oilPower.AmountChanged -= OnOilAmountChanged;
+    PlayerUnitEvents.Unregister(UnitEvent.ChangesOwner, OnChangeOwner, Target);
+  }
+
+  private void OnChangeOwner()
+  {
+    if (_oilPower != null)
+    {
+      _oilPower.Income -= _incomePerSecond;
+    }
+
+    _oilPower = GetOwningPlayer(Target).GetFaction()?.GetPowerByType<OilPower>();
+    if (_oilPower != null)
+    {
+      _oilPower.Income += _incomePerSecond;
     }
   }
 }

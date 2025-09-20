@@ -1,33 +1,32 @@
-﻿namespace MacroTools.CommandSystem
+﻿namespace MacroTools.CommandSystem;
+
+/// <summary>
+/// Indicates the minimum and maximum number of parameters something must have.
+/// </summary>
+public readonly ref struct ExpectedParameterCount
 {
+  public int Maximum { get; }
+
+  public int Minimum { get; }
+
   /// <summary>
-  /// Indicates the minimum and maximum number of parameters something must have.
+  /// Initializes a new instance of the <see cref="ExpectedParameterCount"/> class.
   /// </summary>
-  public readonly ref struct ExpectedParameterCount
+  /// <param name="minimum">The minimum number of parameters.</param>
+  /// <param name="maximum">The maximum number of parameters.</param>
+  public ExpectedParameterCount(int minimum, int maximum)
   {
-    public int Maximum { get; }
+    Minimum = minimum;
+    Maximum = maximum;
+  }
 
-    public int Minimum { get; }
-
-    /// <summary>
-    /// Initializes a new instance of the <see cref="ExpectedParameterCount"/> class.
-    /// </summary>
-    /// <param name="minimum">The minimum number of parameters.</param>
-    /// <param name="maximum">The maximum number of parameters.</param>
-    public ExpectedParameterCount(int minimum, int maximum)
-    {
-      Minimum = minimum;
-      Maximum = maximum;
-    }
-
-    /// <summary>
-    /// Initializes a new instance of the <see cref="ExpectedParameterCount"/> class.
-    /// </summary>
-    /// <param name="both">Both the minimum and maximum number of parameters.</param>
-    public ExpectedParameterCount(int both)
-    {
-      Minimum = both;
-      Maximum = both;
-    }
+  /// <summary>
+  /// Initializes a new instance of the <see cref="ExpectedParameterCount"/> class.
+  /// </summary>
+  /// <param name="both">Both the minimum and maximum number of parameters.</param>
+  public ExpectedParameterCount(int both)
+  {
+    Minimum = both;
+    Maximum = both;
   }
 }

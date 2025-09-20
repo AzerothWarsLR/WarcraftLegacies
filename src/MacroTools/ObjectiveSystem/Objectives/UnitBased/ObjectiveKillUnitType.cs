@@ -1,38 +1,40 @@
 ﻿using MacroTools.QuestSystem;
 using WCSharp.Events;
 
-namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
+namespace MacroTools.ObjectiveSystem.Objectives.UnitBased;
+
+/// <summary>
+///   Completes when the quest holder has killed a certain number of units of a certain type.
+/// </summary>
+public sealed class ObjectiveKillUnitType : Objective
 {
-  /// <summary>
-  ///   Completes when the quest holder has killed a certain number of units of a certain type.
-  /// </summary>
-  public sealed class ObjectiveKillUnitType : Objective
+  private readonly int _objectId;
+  private readonly int _targetKillXUnitCount;
+  private int _currentKillXUnitCount;
+
+  public ObjectiveKillUnitType(int objectId, int targetKillXUnitCount)
   {
-    private readonly int _objectId;
-    private readonly int _targetKillXUnitCount;
-    private int _currentKillXUnitCount;
+    _objectId = objectId;
+    _targetKillXUnitCount = targetKillXUnitCount;
+    CurrentKillXUnitCount = 0;
+    PlayerUnitEvents.Register(UnitTypeEvent.Dies, OnKillUnit, objectId);
+  }
 
-    public ObjectiveKillUnitType(int objectId, int targetKillXUnitCount)
+  private int CurrentKillXUnitCount
+  {
+    set
     {
-      _objectId = objectId;
-      _targetKillXUnitCount = targetKillXUnitCount;
-      CurrentKillXUnitCount = 0;
-      PlayerUnitEvents.Register(UnitTypeEvent.Dies, OnKillUnit, objectId);
+      _currentKillXUnitCount = value;
+      Description = $"Kill {GetObjectName(_objectId)}s ({_currentKillXUnitCount}/{_targetKillXUnitCount})";
     }
+  }
 
-    private int CurrentKillXUnitCount
+  private void OnKillUnit()
+  {
+    CurrentKillXUnitCount = _currentKillXUnitCount + 1;
+    if (_currentKillXUnitCount == _targetKillXUnitCount)
     {
-      set
-      {
-        _currentKillXUnitCount = value;
-        Description = $"Kill {GetObjectName(_objectId)}s ({_currentKillXUnitCount}/{_targetKillXUnitCount})";
-      }
-    }
-
-    private void OnKillUnit()
-    {
-      CurrentKillXUnitCount = _currentKillXUnitCount + 1;
-      if (_currentKillXUnitCount == _targetKillXUnitCount) Progress = QuestProgress.Complete;
+      Progress = QuestProgress.Complete;
     }
   }
 }

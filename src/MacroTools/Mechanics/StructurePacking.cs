@@ -2,76 +2,78 @@
 using MacroTools.Extensions;
 using WCSharp.Events;
 
-namespace MacroTools.Mechanics
+namespace MacroTools.Mechanics;
+
+/// <summary>
+/// Object that contains information and methods for packable structures
+/// </summary>
+public sealed class PackableStructure
 {
+  private int _buildAbility;
+  private string _structureModel = string.Empty;
+  private int _structureId;
+  private int _packedUnitId;
+
   /// <summary>
-  /// Object that contains information and methods for packable structures
+  /// Register a new <see cref="PackableStructure"/>.
   /// </summary>
-  public sealed class PackableStructure
+  public static void Register(int structureId, int packedUnitId, int buildAbility, string structureModel)
   {
-    private int _buildAbility;
-    private string _structureModel = string.Empty;
-    private int _structureId;
-    private int _packedUnitId;
-    
-    /// <summary>
-    /// Register a new <see cref="PackableStructure"/>.
-    /// </summary>
-    public static void Register(int structureId, int packedUnitId, int buildAbility, string structureModel)
+    var packable = new PackableStructure
     {
-      var packable = new PackableStructure
-      {
-        _buildAbility = buildAbility,
-        _structureModel = structureModel,
-        _structureId = structureId,
-        _packedUnitId = packedUnitId
-      };
+      _buildAbility = buildAbility,
+      _structureModel = structureModel,
+      _structureId = structureId,
+      _packedUnitId = packedUnitId
+    };
 
-      PlayerUnitEvents.Register(UnitTypeEvent.FinishesTraining, () => packable.OnTrainUnitType(), structureId);
-      PlayerUnitEvents.Register(UnitTypeEvent.SpellEffect, OnUnitTypeCastSpell, packedUnitId);
+    PlayerUnitEvents.Register(UnitTypeEvent.FinishesTraining, () => packable.OnTrainUnitType(), structureId);
+    PlayerUnitEvents.Register(UnitTypeEvent.SpellEffect, OnUnitTypeCastSpell, packedUnitId);
+  }
+
+  /// <summary>
+  /// Addes the build ability and special effect to pack units
+  /// </summary>
+  public void PackUnitSetup(unit packedUnit)
+  {
+    var effect = AddSpecialEffectTarget(_structureModel, packedUnit, "overhead");
+    BlzSetSpecialEffectScale(effect, (float)0.25);
+    BlzSetSpecialEffectTime(effect, 100);
+    UnitAddAbility(packedUnit, _buildAbility);
+  }
+
+  private void PackBuilding(unit building, unit packedUnit)
+  {
+    if (_structureId != GetUnitTypeId(building))
+    {
+      Console.WriteLine($"ERROR: there is no PackableStructure setup for building: {GetUnitName(building)}");
+      return;
     }
 
-    /// <summary>
-    /// Addes the build ability and special effect to pack units
-    /// </summary>
-    public void PackUnitSetup(unit packedUnit)
+    PackUnitSetup(packedUnit);
+    RemoveUnit(building);
+  }
+
+  private void OnTrainUnitType()
+  {
+    if (GetUnitTypeId(GetTrainedUnit()) != _packedUnitId)
     {
-      var effect = AddSpecialEffectTarget(_structureModel, packedUnit, "overhead");
-      BlzSetSpecialEffectScale(effect, (float)0.25);
-      BlzSetSpecialEffectTime(effect, 100);
-      UnitAddAbility(packedUnit, _buildAbility);
+      return;
     }
 
-    private void PackBuilding(unit building, unit packedUnit)
-    {
-      if (_structureId != GetUnitTypeId(building))
-      {
-        Console.WriteLine($"ERROR: there is no PackableStructure setup for building: {GetUnitName(building)}");
-        return;
-      }
+    PackBuilding(GetTriggerUnit(), GetTrainedUnit());
+    RemoveUnit(GetTriggerUnit());
+  }
 
-      PackUnitSetup(packedUnit);
-      RemoveUnit(building);
-    }
-
-    private void OnTrainUnitType()
+  private static void OnUnitTypeCastSpell()
+  {
+    GetTriggerUnit().SetTimedLife(0.01f);
+    var deathTrigger = CreateTrigger();
+    TriggerRegisterUnitEvent(deathTrigger, GetTriggerUnit(), EVENT_UNIT_DEATH);
+    TriggerAddAction(deathTrigger, () =>
     {
-      if (GetUnitTypeId(GetTrainedUnit()) != _packedUnitId)
-        return;
-      PackBuilding(GetTriggerUnit(), GetTrainedUnit());
       RemoveUnit(GetTriggerUnit());
-    }
-
-    private static void OnUnitTypeCastSpell()
-    {
-      GetTriggerUnit().SetTimedLife(0.01f);
-      var deathTrigger = CreateTrigger();
-      TriggerRegisterUnitEvent(deathTrigger, GetTriggerUnit(), EVENT_UNIT_DEATH);
-      TriggerAddAction(deathTrigger, () =>
-      {
-        RemoveUnit(GetTriggerUnit());
-        DestroyTrigger(GetTriggeringTrigger());
-      });
-    }
+      DestroyTrigger(GetTriggeringTrigger());
+    });
   }
 }

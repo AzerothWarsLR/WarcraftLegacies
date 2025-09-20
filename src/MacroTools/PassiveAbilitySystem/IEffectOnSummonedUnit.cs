@@ -1,13 +1,12 @@
-﻿namespace MacroTools.PassiveAbilitySystem
+﻿namespace MacroTools.PassiveAbilitySystem;
+
+/// <summary>
+/// Provides methods for responding to a unit summoning another unit.
+/// </summary>
+public interface IEffectOnSummonedUnit
 {
   /// <summary>
-  /// Provides methods for responding to a unit summoning another unit.
+  /// A response to a unit dealing damage.
   /// </summary>
-  public interface IEffectOnSummonedUnit
-  {
-    /// <summary>
-    /// A response to a unit dealing damage.
-    /// </summary>
-    public void OnSummonedUnit();
-  }
+  public void OnSummonedUnit();
 }

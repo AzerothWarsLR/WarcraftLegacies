@@ -4,59 +4,60 @@ using MacroTools.QuestSystem;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
+namespace MacroTools.ObjectiveSystem.Objectives.UnitBased;
+
+/// <summary>
+/// Objective that is completed when all Neutral Hostile units in an are are dead.
+/// </summary>
+public sealed class ObjectiveHostilesInAreaAreDead : Objective
 {
-  /// <summary>
-  /// Objective that is completed when all Neutral Hostile units in an are are dead.
-  /// </summary>
-  public sealed class ObjectiveHostilesInAreaAreDead : Objective
+  private readonly string _areaName;
+  private readonly int _maxKillCount;
+  private int _currentKillCount;
+
+  private int CurrentKillCount
   {
-    private readonly string _areaName;
-    private readonly int _maxKillCount;
-    private int _currentKillCount;
-    
-    private int CurrentKillCount
+    get => _currentKillCount;
+    set
     {
-      get => _currentKillCount;
-      set
+      _currentKillCount = value;
+      Description = $"All creeps {_areaName} are dead ({_currentKillCount}/{_maxKillCount})";
+      if (_currentKillCount == _maxKillCount)
       {
-        _currentKillCount = value;
-        Description = $"All creeps {_areaName} are dead ({_currentKillCount}/{_maxKillCount})";
-        if (_currentKillCount == _maxKillCount) 
-          Progress = QuestProgress.Complete;
+        Progress = QuestProgress.Complete;
       }
     }
-    
-    /// <summary>
-    /// Initializes a new instance of the <see cref="ObjectiveHostilesInAreaAreDead"/> class.
-    /// </summary>
-    public ObjectiveHostilesInAreaAreDead(ICollection<Rectangle> rectangles, string areaName)
+  }
+
+  /// <summary>
+  /// Initializes a new instance of the <see cref="ObjectiveHostilesInAreaAreDead"/> class.
+  /// </summary>
+  public ObjectiveHostilesInAreaAreDead(ICollection<Rectangle> rectangles, string areaName)
+  {
+    if (rectangles.Count == 1)
     {
-      if (rectangles.Count == 1)
+      Position = rectangles.First().Center;
+      DisplaysPosition = true;
+    }
+
+    _areaName = areaName;
+    foreach (var rectangle in rectangles)
+    {
+      var unitsInAreas = GlobalGroup.EnumUnitsInRect(rectangle)
+        .Where(x => GetOwningPlayer(x) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !IsUnitType(x, UNIT_TYPE_ANCIENT) &&
+                    !IsUnitType(x, UNIT_TYPE_SAPPER));
+      foreach (var unit in unitsInAreas)
       {
-        Position = rectangles.First().Center;
-        DisplaysPosition = true;
-      }
-      
-      _areaName = areaName;
-      foreach (var rectangle in rectangles)
-      {
-        var unitsInAreas = GlobalGroup.EnumUnitsInRect(rectangle)
-          .Where(x => GetOwningPlayer(x) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !IsUnitType(x, UNIT_TYPE_ANCIENT) &&
-                      !IsUnitType(x, UNIT_TYPE_SAPPER));
-        foreach (var unit in unitsInAreas)
+        _maxKillCount++;
+        var deathTrigger = CreateTrigger();
+        TriggerRegisterUnitEvent(deathTrigger, unit, EVENT_UNIT_DEATH);
+        TriggerAddAction(deathTrigger, () =>
         {
-          _maxKillCount++;
-          var deathTrigger = CreateTrigger();
-          TriggerRegisterUnitEvent(deathTrigger, unit, EVENT_UNIT_DEATH);
-          TriggerAddAction(deathTrigger, () =>
-          {
-            CurrentKillCount++;
-            DestroyTrigger(GetTriggeringTrigger());
-          });
-        }
+          CurrentKillCount++;
+          DestroyTrigger(GetTriggeringTrigger());
+        });
       }
-      CurrentKillCount = 0;
     }
+    CurrentKillCount = 0;
   }
 }

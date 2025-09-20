@@ -1,8 +1,7 @@
-﻿namespace Launcher.Services
+﻿namespace Launcher.Services;
+
+public sealed class DirectoryEnumerationOptions
 {
-  public sealed class DirectoryEnumerationOptions
-  {
-    public string Path { get; init; }
-    public string SearchPattern { get; init; }
-  }
+  public string Path { get; init; }
+  public string SearchPattern { get; init; }
 }

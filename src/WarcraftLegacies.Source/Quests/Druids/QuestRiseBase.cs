@@ -7,47 +7,46 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Quests.Druids
+namespace WarcraftLegacies.Source.Quests.Druids;
+
+public sealed class QuestRiseBase : QuestData
 {
-  public sealed class QuestRiseBase : QuestData
+  private readonly List<unit> _rescueUnits;
+
+  public QuestRiseBase(Rectangle rescueRect) : base("The Druid's Rise",
+    "Theres a dormant ancient's grove at the base of Hyjal, take control of the area to nurture it back and awaken it!",
+    @"ReplaceableTextures\CommandButtons\BTNTreeOfAges.blp")
   {
-    private readonly List<unit> _rescueUnits;
+    AddObjective(new ObjectiveControlLevel(UNIT_N0A0_ASCENDANT_S_RISE, 2));
+    AddObjective(new ObjectiveExpire(480, Title));
+    AddObjective(new ObjectiveSelfExists());
 
-    public QuestRiseBase(Rectangle rescueRect) : base("The Druid's Rise",
-      "Theres a dormant ancient's grove at the base of Hyjal, take control of the area to nurture it back and awaken it!",
-      @"ReplaceableTextures\CommandButtons\BTNTreeOfAges.blp")
-    {
-      AddObjective(new ObjectiveControlLevel(UNIT_N0A0_ASCENDANT_S_RISE, 2));
-      AddObjective(new ObjectiveExpire(480, Title));
-      AddObjective(new ObjectiveSelfExists());
-      
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+    _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
 
-      
-    }
 
-    /// <inheritdoc />
-    public override string RewardFlavour =>
-      "The grove has been rejuvenised and the ancients have awakened";
+  }
 
-    /// <inheritdoc />
-    protected override string RewardDescription =>
-      "Control of all units in the Ascendant's Rise base";
+  /// <inheritdoc />
+  public override string RewardFlavour =>
+    "The grove has been rejuvenised and the ancients have awakened";
 
-    /// <inheritdoc />
-    protected override void OnFail(Faction completingFaction)
-    {
-      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
-        : completingFaction.Player;
+  /// <inheritdoc />
+  protected override string RewardDescription =>
+    "Control of all units in the Ascendant's Rise base";
 
-      rescuer.RescueGroup(_rescueUnits);
-    }
+  /// <inheritdoc />
+  protected override void OnFail(Faction completingFaction)
+  {
+    var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      : completingFaction.Player;
 
-    /// <inheritdoc />
-    protected override void OnComplete(Faction completingFaction)
-    {
-      completingFaction.Player.RescueGroup(_rescueUnits);
-    }
+    rescuer.RescueGroup(_rescueUnits);
+  }
+
+  /// <inheritdoc />
+  protected override void OnComplete(Faction completingFaction)
+  {
+    completingFaction.Player.RescueGroup(_rescueUnits);
   }
 }

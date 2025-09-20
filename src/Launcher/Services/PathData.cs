@@ -1,9 +1,8 @@
-﻿namespace Launcher.Services
+﻿namespace Launcher.Services;
+
+public sealed class PathData
 {
-  public sealed class PathData
-  {
-    public string AbsolutePath { get; init; }
-    
-    public string RelativePath { get; init; }
-  }
+  public string AbsolutePath { get; init; }
+
+  public string RelativePath { get; init; }
 }

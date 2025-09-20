@@ -1,44 +1,43 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 
-namespace MacroTools.Powers
+namespace MacroTools.Powers;
+
+public sealed class IncomePower : Power
 {
-   public sealed class IncomePower : Power
-   {
-      private int _income;
-      
-      public IncomePower(int income)
-      {
-         _income = income;
-         RefreshDescription();
-         IconName = "ChestOfGold";
-         Name = "Offshore Investments";
-      }
+  private int _income;
 
-      private int Income
-      {
-         get => _income;
-         set
-         {
-            _income = value;
-            RefreshDescription();
-         }
-      }
+  public IncomePower(int income)
+  {
+    _income = income;
+    RefreshDescription();
+    IconName = "ChestOfGold";
+    Name = "Offshore Investments";
+  }
 
-      public override void OnAdd(player whichPlayer)
-      {
-         whichPlayer.AddBonusIncome(_income);
-      }
+  private int Income
+  {
+    get => _income;
+    set
+    {
+      _income = value;
+      RefreshDescription();
+    }
+  }
 
-      public override void OnRemove(player whichPlayer)
-      {
-         whichPlayer.AddBonusIncome(-_income);
-      }
+  public override void OnAdd(player whichPlayer)
+  {
+    whichPlayer.AddBonusIncome(_income);
+  }
 
-      private void RefreshDescription()
-      {
-         Description =
-            $"Your gold income is increased by {Income}.";
-      }
-   }
+  public override void OnRemove(player whichPlayer)
+  {
+    whichPlayer.AddBonusIncome(-_income);
+  }
+
+  private void RefreshDescription()
+  {
+    Description =
+       $"Your gold income is increased by {Income}.";
+  }
 }

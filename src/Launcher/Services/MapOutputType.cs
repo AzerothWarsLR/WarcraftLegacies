@@ -1,8 +1,7 @@
-﻿namespace Launcher.Services
+﻿namespace Launcher.Services;
+
+public enum MapOutputType
 {
-  public enum MapOutputType
-  {
-    File,
-    Folder
-  }
+  File,
+  Folder
 }

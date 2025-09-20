@@ -5,41 +5,40 @@ using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
 
-namespace WarcraftLegacies.Source.Setup.Spells
+namespace WarcraftLegacies.Source.Setup.Spells;
+
+/// <summary>
+/// Responsible for setting up all Dragonmaw <see cref="Spell"/>s and <see cref="PassiveAbility"/>s.
+/// </summary>
+public static class DragonmawSpellSetup
 {
   /// <summary>
-  /// Responsible for setting up all Dragonmaw <see cref="Spell"/>s and <see cref="PassiveAbility"/>s.
+  /// Sets up all Dragonmaw <see cref="Spell"/>s and <see cref="PassiveAbility"/>s.
   /// </summary>
-  public static class DragonmawSpellSetup
+  public static void Setup()
   {
-    /// <summary>
-    /// Sets up all Dragonmaw <see cref="Spell"/>s and <see cref="PassiveAbility"/>s.
-    /// </summary>
-    public static void Setup()
+    SpellSystem.Register(new MassAnySpell(ABILITY_A0OJ_MASS_UNHOLY_ARMOR_DRAGONMAW_GORFAX)
     {
-      SpellSystem.Register(new MassAnySpell(ABILITY_A0OJ_MASS_UNHOLY_ARMOR_DRAGONMAW_GORFAX)
-      {
-        DummyAbilityId = ABILITY_A0HG_UNHOLY_ARMOR_DRAGONMAW_GORFAX,
-        DummyAbilityOrderId = ORDER_INNER_FIRE,
-        Radius = 400,
-        CastFilter = CastFilters.IsTargetAllyAndAlive,
-        TargetType = SpellTargetType.Point
-      });
-      
-      SpellSystem.Register(new UnholyArmor(ABILITY_A0HG_UNHOLY_ARMOR_DRAGONMAW_GORFAX)
-      {
-        PercentageDamage = 0.06f
-      });
+      DummyAbilityId = ABILITY_A0HG_UNHOLY_ARMOR_DRAGONMAW_GORFAX,
+      DummyAbilityOrderId = ORDER_INNER_FIRE,
+      Radius = 400,
+      CastFilter = CastFilters.IsTargetAllyAndAlive,
+      TargetType = SpellTargetType.Point
+    });
 
-      PassiveAbilityManager.Register(new RestoreManaFromDamage(UNIT_O06F_CHIEFTAIN_OF_THE_BONECHEWER_CLAN_DRAGONMAW, ABILITY_A0FR_TRANSFUSION_GORFAX)
+    SpellSystem.Register(new UnholyArmor(ABILITY_A0HG_UNHOLY_ARMOR_DRAGONMAW_GORFAX)
+    {
+      PercentageDamage = 0.06f
+    });
+
+    PassiveAbilityManager.Register(new RestoreManaFromDamage(UNIT_O06F_CHIEFTAIN_OF_THE_BONECHEWER_CLAN_DRAGONMAW, ABILITY_A0FR_TRANSFUSION_GORFAX)
+    {
+      ManaPerDamage = new LeveledAbilityField<float>
       {
-        ManaPerDamage = new LeveledAbilityField<float>
-        {
-          Base = 0.25f,
-          PerLevel = 0.25f
-        },
-        Effect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl"
-      });
-    }
+        Base = 0.25f,
+        PerLevel = 0.25f
+      },
+      Effect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl"
+    });
   }
 }

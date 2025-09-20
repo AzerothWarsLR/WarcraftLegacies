@@ -46,137 +46,189 @@ using WCSharp.Shared.Data;
             
     */
 
-namespace MacroTools.Libraries
+namespace MacroTools.Libraries;
+
+/// <summary>
+/// Responsible for hiding destructibles which are not within a player's view.
+/// </summary>
+public static class DestructibleHider
 {
+  //==== CONFIGURABLES ====
+  private const float Interval = 0.10f; //Update interval in seconds.
+  //[in multiplayer, the camera positions will only get updated every 0.05-0.1 seconds, so setting it to a lower value than 0.05 makes no sense]
+  //[update frequency can be much higher in single player mode!]
+  private const int DrawDistance = 3072; //the radius around the camera target in which the tiles are considered visible; should be about the same as sight radius (not diameter) of the camera; for 3d cams, use the FarZ value
+  //Use multiples of 1024 for maximum efficiency on square division. Recommended value: 5120
+  private const int TileResolution = 12; //amount of tiles spread over DRAW_DISTANCE
+  //- higher resolution = more overhead to incrementing loop variables, but less amounts of destructables checked when moving the camera
+  //- lower resolution = less overhead to incrementing loop variables, but higher amounts of destructables checked when moving the camera
+  //-> Recommended value: 8-12
+  //==== END OF CONFIGURABLES ====
+  private static readonly Dictionary<int, List<destructable>> _destructablesByTileId = new();
+  private static readonly int _columns;
+  private static int _lastid;
+  private static readonly float _mapMinX;
+  private static readonly float _mapMinY;
+  private const int Tilesize = DrawDistance / TileResolution;
+
+  private static bool Filter(destructable destructable) =>
+    GetDestructableMaxLife(destructable) == 1;
+
   /// <summary>
-  /// Responsible for hiding destructibles which are not within a player's view.
+  /// Constructor for the DestructibleHider
   /// </summary>
-  public static class DestructibleHider
+  static DestructibleHider()
   {
-    //==== CONFIGURABLES ====
-    private const float Interval = 0.10f; //Update interval in seconds.
-    //[in multiplayer, the camera positions will only get updated every 0.05-0.1 seconds, so setting it to a lower value than 0.05 makes no sense]
-    //[update frequency can be much higher in single player mode!]
-    private const int DrawDistance = 3072; //the radius around the camera target in which the tiles are considered visible; should be about the same as sight radius (not diameter) of the camera; for 3d cams, use the FarZ value
-    //Use multiples of 1024 for maximum efficiency on square division. Recommended value: 5120
-    private const int TileResolution = 12; //amount of tiles spread over DRAW_DISTANCE
-    //- higher resolution = more overhead to incrementing loop variables, but less amounts of destructables checked when moving the camera
-    //- lower resolution = less overhead to incrementing loop variables, but higher amounts of destructables checked when moving the camera
-    //-> Recommended value: 8-12
-    //==== END OF CONFIGURABLES ====
-    private static readonly Dictionary<int, List<destructable>> DestructablesByTileId = new();
-    private static readonly int Columns;
-    private static int _lastid;
-    private static readonly float MapMinX;
-    private static readonly float MapMinY;
-    private const int Tilesize = DrawDistance / TileResolution;
-    
-    private static bool Filter(destructable destructable) => 
-      GetDestructableMaxLife(destructable) == 1;
+    _mapMinX = GetRectMinX(Rectangle.WorldBounds.Rect);
+    _mapMinY = GetRectMinY(Rectangle.WorldBounds.Rect);
+    _columns = GetColumn(GetRectMaxX(Rectangle.WorldBounds.Rect), _mapMinX);
+    TimerStart(CreateTimer(), Interval, true, Periodic);
+  }
 
-    /// <summary>
-    /// Constructor for the DestructibleHider
-    /// </summary>
-    static DestructibleHider()
+  private static int GetTileId(float x, float y)
+  {
+    return GetColumn(x, _mapMinX) + _columns * GetRow(y, _mapMinY);
+  }
+
+  private static int GetRow(float currentY, float mapMinY)
+  {
+    return (int)Math.Max(1, Math.Ceiling((currentY - mapMinY) / Tilesize));
+  }
+
+  private static int GetColumn(float currentX, float mapMinX)
+  {
+    return (int)Math.Max(1, Math.Ceiling((currentX - mapMinX) / Tilesize));
+  }
+
+  private static void Periodic()
+  {
+    var tileId = GetTileId(GetCameraTargetPositionX(), GetCameraTargetPositionY());
+    if (tileId == _lastid)
     {
-      MapMinX = GetRectMinX(Rectangle.WorldBounds.Rect);
-      MapMinY = GetRectMinY(Rectangle.WorldBounds.Rect);
-      Columns = GetColumn(GetRectMaxX(Rectangle.WorldBounds.Rect),MapMinX);
-      TimerStart(CreateTimer(), Interval, true, Periodic);
+      return; //only check for tiles if the camera has left the last tile
     }
 
-    private static int GetTileId(float x, float y)
+    LoadTiles(GetTilesInRadius(tileId, TileResolution).Except(GetTilesInRadius(_lastid, TileResolution)).ToList());
+    UnloadTiles(GetTilesInRadius(_lastid, TileResolution).Except(GetTilesInRadius(tileId, TileResolution)).ToList());
+    _lastid = tileId;
+  }
+
+  /// <summary>
+  /// Add destructable to the DestructibleHider
+  /// </summary>
+  /// <param name="destructable"></param>
+  public static void Register(destructable destructable)
+  {
+    if (!Filter(destructable))
     {
-      return GetColumn(x,MapMinX) + Columns * GetRow(y,MapMinY);
-    }
-    
-    private static int GetRow(float currentY, float mapMinY)
-    {
-      return (int)Math.Max(1,Math.Ceiling((currentY - mapMinY) / Tilesize));
-    }
-    
-    private static int GetColumn(float currentX, float mapMinX)
-    {
-      return (int)Math.Max(1,Math.Ceiling((currentX - mapMinX) / Tilesize));
-    }
-    
-    private static void Periodic()
-    {
-      var tileId = GetTileId(GetCameraTargetPositionX(),GetCameraTargetPositionY());
-      if (tileId == _lastid) return; //only check for tiles if the camera has left the last tile
-      LoadTiles(GetTilesInRadius(tileId,TileResolution).Except(GetTilesInRadius(_lastid,TileResolution)).ToList());
-      UnloadTiles(GetTilesInRadius(_lastid,TileResolution).Except(GetTilesInRadius(tileId,TileResolution)).ToList());
-      _lastid = tileId;
+      return;
     }
 
-    /// <summary>
-    /// Add destructable to the DestructibleHider
-    /// </summary>
-    /// <param name="destructable"></param>
-    public static void Register(destructable destructable)
+    var tileId = GetTileId(GetDestructableX(destructable), GetDestructableY(destructable));
+    if (!_destructablesByTileId.ContainsKey(tileId))
     {
-      if (!Filter(destructable)) return;
-      var tileId = GetTileId(GetDestructableX(destructable),GetDestructableY(destructable));
-      if (!DestructablesByTileId.ContainsKey(tileId))
-        DestructablesByTileId[tileId] = new List<destructable>();
-      DestructablesByTileId[tileId].Add(destructable);
-    }
-    
-    /// <summary>
-    /// Remove adestructable from the DestructibleHider
-    /// </summary>
-    /// <param name="destructable"></param>
-    public static void Unregister(destructable destructable)
-    {
-      var tileId = GetTileId(GetDestructableX(destructable),GetDestructableY(destructable));
-      if (!DestructablesByTileId.ContainsKey(tileId)) return;
-      DestructablesByTileId[tileId].Remove(destructable);
+      _destructablesByTileId[tileId] = new List<destructable>();
     }
 
-    private static List<int> GetTilesInRadius(int cameraTileId, int radius)
+    _destructablesByTileId[tileId].Add(destructable);
+  }
+
+  /// <summary>
+  /// Remove adestructable from the DestructibleHider
+  /// </summary>
+  /// <param name="destructable"></param>
+  public static void Unregister(destructable destructable)
+  {
+    var tileId = GetTileId(GetDestructableX(destructable), GetDestructableY(destructable));
+    if (!_destructablesByTileId.ContainsKey(tileId))
     {
-      var tiles = new List<int> { cameraTileId };
-      for (var i = 0; i < radius; i++)
+      return;
+    }
+
+    _destructablesByTileId[tileId].Remove(destructable);
+  }
+
+  private static List<int> GetTilesInRadius(int cameraTileId, int radius)
+  {
+    var tiles = new List<int> { cameraTileId };
+    for (var i = 0; i < radius; i++)
+    {
+      if (_destructablesByTileId.ContainsKey(cameraTileId + i))
       {
-        if (DestructablesByTileId.ContainsKey(cameraTileId + i)) tiles.Add(cameraTileId + i);
-        if (DestructablesByTileId.ContainsKey(cameraTileId - i)) tiles.Add(cameraTileId - i);
-        if (DestructablesByTileId.ContainsKey(cameraTileId + Columns*i)) tiles.Add(cameraTileId + Columns*i);
-        if (DestructablesByTileId.ContainsKey(cameraTileId - Columns*i)) tiles.Add(cameraTileId - Columns*i);
-
-        for (var j = 0; j < radius; j++)
-        {
-          if (DestructablesByTileId.ContainsKey(cameraTileId + Columns*i + j)) tiles.Add(cameraTileId + Columns*i + j);
-          if (DestructablesByTileId.ContainsKey(cameraTileId + Columns*i - j)) tiles.Add(cameraTileId + Columns*i - j);
-          if (DestructablesByTileId.ContainsKey(cameraTileId - Columns*i + j)) tiles.Add(cameraTileId - Columns*i + j);
-          if (DestructablesByTileId.ContainsKey(cameraTileId - Columns*i - j)) tiles.Add(cameraTileId - Columns*i - j);
-        }
+        tiles.Add(cameraTileId + i);
       }
 
-      return tiles;
-    }
-
-    private static void LoadTiles(List<int> tiles)
-    {
-      foreach (var tileId in tiles)
+      if (_destructablesByTileId.ContainsKey(cameraTileId - i))
       {
-        if (!DestructablesByTileId.ContainsKey(tileId)) continue;
-        foreach (var destructable in DestructablesByTileId[tileId])
+        tiles.Add(cameraTileId - i);
+      }
+
+      if (_destructablesByTileId.ContainsKey(cameraTileId + _columns * i))
+      {
+        tiles.Add(cameraTileId + _columns * i);
+      }
+
+      if (_destructablesByTileId.ContainsKey(cameraTileId - _columns * i))
+      {
+        tiles.Add(cameraTileId - _columns * i);
+      }
+
+      for (var j = 0; j < radius; j++)
+      {
+        if (_destructablesByTileId.ContainsKey(cameraTileId + _columns * i + j))
         {
-          ShowDestructable(destructable,true);
+          tiles.Add(cameraTileId + _columns * i + j);
         }
 
+        if (_destructablesByTileId.ContainsKey(cameraTileId + _columns * i - j))
+        {
+          tiles.Add(cameraTileId + _columns * i - j);
+        }
+
+        if (_destructablesByTileId.ContainsKey(cameraTileId - _columns * i + j))
+        {
+          tiles.Add(cameraTileId - _columns * i + j);
+        }
+
+        if (_destructablesByTileId.ContainsKey(cameraTileId - _columns * i - j))
+        {
+          tiles.Add(cameraTileId - _columns * i - j);
+        }
       }
     }
-    
-    private static void UnloadTiles(List<int> tiles)
+
+    return tiles;
+  }
+
+  private static void LoadTiles(List<int> tiles)
+  {
+    foreach (var tileId in tiles)
     {
-      foreach (var tileId in tiles)
+      if (!_destructablesByTileId.ContainsKey(tileId))
       {
-        if (!DestructablesByTileId.ContainsKey(tileId)) continue;
-        foreach (var destructable in DestructablesByTileId[tileId])
-        {
-          ShowDestructable(destructable,false);
-        }
+        continue;
+      }
+
+      foreach (var destructable in _destructablesByTileId[tileId])
+      {
+        ShowDestructable(destructable, true);
+      }
+
+    }
+  }
+
+  private static void UnloadTiles(List<int> tiles)
+  {
+    foreach (var tileId in tiles)
+    {
+      if (!_destructablesByTileId.ContainsKey(tileId))
+      {
+        continue;
+      }
+
+      foreach (var destructable in _destructablesByTileId[tileId])
+      {
+        ShowDestructable(destructable, false);
       }
     }
   }

@@ -1,15 +1,14 @@
-﻿namespace WarcraftLegacies.Source.Setup
+﻿namespace WarcraftLegacies.Source.Setup;
+
+/// <summary>
+/// Responsible for registering all incompatible researches.
+/// </summary>
+public static class IncompatibleResearchSetup
 {
   /// <summary>
-  /// Responsible for registering all incompatible researches.
+  /// Registers all incompatible researches
   /// </summary>
-  public static class IncompatibleResearchSetup
+  public static void Setup()
   {
-    /// <summary>
-    /// Registers all incompatible researches
-    /// </summary>
-    public static void Setup()
-    {
-    }
   }
 }

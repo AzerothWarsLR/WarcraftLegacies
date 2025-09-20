@@ -3,100 +3,103 @@ using MacroTools.Extensions;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.DummyCasters
+namespace MacroTools.DummyCasters;
+
+/// <summary>A dummy caster that has been predefined to only ever cast one specific instant ability.</summary>
+public sealed class AbilitySpecificDummyCaster
 {
-  /// <summary>A dummy caster that has been predefined to only ever cast one specific instant ability.</summary>
-  public sealed class AbilitySpecificDummyCaster
+  private readonly unit _unit;
+  private readonly int _abilityTypeId;
+  private readonly int _abilityOrderId;
+
+  internal AbilitySpecificDummyCaster(unit unit, int abilityTypeId, int abilityOrderId)
   {
-    private readonly unit _unit;
-    private readonly int _abilityTypeId;
-    private readonly int _abilityOrderId;
-    
-    internal AbilitySpecificDummyCaster(unit unit, int abilityTypeId, int abilityOrderId)
-    {
-      _unit = unit;
-      _abilityTypeId = abilityTypeId;
-      _abilityOrderId = abilityOrderId;
-    }
-    
-    /// <summary>
-    /// Causes the specified ability to be cast from the specified object at the specified target.
-    /// </summary>
-    public void CastUnit(unit caster, int level, unit target, DummyCastOriginType originType)
-    {
-      var originPoint = originType == DummyCastOriginType.Caster ? caster.GetPosition() : target.GetPosition();
-      var whichPlayer = GetOwningPlayer(caster);
-      SetUnitOwner(_unit, whichPlayer, true);
-      _unit.SetPosition(originPoint);
-      UnitAddAbility(_unit, _abilityTypeId);
-      SetUnitAbilityLevel(_unit, _abilityTypeId, level);
+    _unit = unit;
+    _abilityTypeId = abilityTypeId;
+    _abilityOrderId = abilityOrderId;
+  }
 
-      if (originType == DummyCastOriginType.Caster)
-        _unit.FacePosition(target.GetPosition());
+  /// <summary>
+  /// Causes the specified ability to be cast from the specified object at the specified target.
+  /// </summary>
+  public void CastUnit(unit caster, int level, unit target, DummyCastOriginType originType)
+  {
+    var originPoint = originType == DummyCastOriginType.Caster ? caster.GetPosition() : target.GetPosition();
+    var whichPlayer = GetOwningPlayer(caster);
+    SetUnitOwner(_unit, whichPlayer, true);
+    _unit.SetPosition(originPoint);
+    UnitAddAbility(_unit, _abilityTypeId);
+    SetUnitAbilityLevel(_unit, _abilityTypeId, level);
 
-      IssueTargetOrderById(_unit, _abilityOrderId, target);
+    if (originType == DummyCastOriginType.Caster)
+    {
+      _unit.FacePosition(target.GetPosition());
     }
 
-    public void CastNoTarget(unit caster, int level)
-    {
-      var whichPlayer = GetOwningPlayer(caster);
-      SetUnitOwner(_unit, whichPlayer, true);
-      _unit.SetPosition(caster.GetPosition());
-      UnitAddAbility(_unit, _abilityTypeId);
-      SetUnitAbilityLevel(_unit, _abilityTypeId, level);
+    IssueTargetOrderById(_unit, _abilityOrderId, target);
+  }
 
-      IssueImmediateOrderById(_unit, _abilityOrderId);
+  public void CastNoTarget(unit caster, int level)
+  {
+    var whichPlayer = GetOwningPlayer(caster);
+    SetUnitOwner(_unit, whichPlayer, true);
+    _unit.SetPosition(caster.GetPosition());
+    UnitAddAbility(_unit, _abilityTypeId);
+    SetUnitAbilityLevel(_unit, _abilityTypeId, level);
+
+    IssueImmediateOrderById(_unit, _abilityOrderId);
+  }
+
+  /// <summary>
+  /// Causes the specified spell to be cast on a particular point.
+  /// </summary>
+  public void CastNoTargetOnUnit(unit caster, int level, unit target)
+  {
+    var whichPlayer = GetOwningPlayer(caster);
+    SetUnitOwner(_unit, whichPlayer, true);
+    _unit.SetPosition(target.GetPosition());
+    UnitAddAbility(_unit, _abilityTypeId);
+    SetUnitAbilityLevel(_unit, _abilityTypeId, level);
+
+    IssueImmediateOrderById(_unit, _abilityOrderId);
+  }
+
+  /// <summary>
+  /// Causes the specified spell to be cast at a particular point.
+  /// </summary>
+  public void CastPoint(player whichPlayer, int level, Point target)
+  {
+    SetUnitOwner(_unit, whichPlayer, true);
+    _unit.SetPosition(target);
+    UnitAddAbility(_unit, _abilityTypeId);
+    SetUnitAbilityLevel(_unit, _abilityTypeId, level);
+    _unit
+      .IssueOrder(_abilityOrderId, target);
+  }
+
+  /// <summary>
+  /// Causes the specified spell to be cast on all units in a circle.
+  /// </summary>
+  public void CastOnUnitsInCircle(unit caster, int level, Point center,
+    float radius, DummyCasterManager.CastFilter castFilter, DummyCastOriginType originType)
+  {
+    foreach (var target in GlobalGroup
+               .EnumUnitsInRange(center, radius)
+               .FindAll(unit => castFilter(caster, unit)))
+    {
+      CastUnit(caster, level, target, originType);
     }
+  }
 
-    /// <summary>
-    /// Causes the specified spell to be cast on a particular point.
-    /// </summary>
-    public void CastNoTargetOnUnit(unit caster, int level, unit target)
+  /// <summary>
+  /// Causes the specified spell to be cast on all units in a group.
+  /// </summary>
+  public void CastOnTargets(unit caster, int level, IEnumerable<unit> targets,
+    DummyCastOriginType originType)
+  {
+    foreach (var target in targets)
     {
-      var whichPlayer = GetOwningPlayer(caster);
-      SetUnitOwner(_unit, whichPlayer, true);
-      _unit.SetPosition(target.GetPosition());
-      UnitAddAbility(_unit, _abilityTypeId);
-      SetUnitAbilityLevel(_unit, _abilityTypeId, level);
-
-      IssueImmediateOrderById(_unit, _abilityOrderId);
-    }
-
-    /// <summary>
-    /// Causes the specified spell to be cast at a particular point.
-    /// </summary>
-    public void CastPoint(player whichPlayer, int level, Point target)
-    {
-      SetUnitOwner(_unit, whichPlayer, true);
-      _unit.SetPosition(target);
-      UnitAddAbility(_unit, _abilityTypeId);
-      SetUnitAbilityLevel(_unit, _abilityTypeId, level);
-      _unit
-        .IssueOrder(_abilityOrderId, target);
-    }
-
-    /// <summary>
-    /// Causes the specified spell to be cast on all units in a circle.
-    /// </summary>
-    public void CastOnUnitsInCircle(unit caster, int level, Point center,
-      float radius, DummyCasterManager.CastFilter castFilter, DummyCastOriginType originType)
-    {
-      foreach (var target in GlobalGroup
-                 .EnumUnitsInRange(center, radius)
-                 .FindAll(unit => castFilter(caster, unit)))
-      {
-        CastUnit(caster, level, target, originType);
-      }
-    }
-    
-    /// <summary>
-    /// Causes the specified spell to be cast on all units in a group.
-    /// </summary>
-    public void CastOnTargets(unit caster, int level, IEnumerable<unit> targets,
-      DummyCastOriginType originType)
-    {
-      foreach (var target in targets) 
-        CastUnit(caster, level, target, originType);
+      CastUnit(caster, level, target, originType);
     }
   }
 }

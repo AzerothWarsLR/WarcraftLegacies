@@ -8,52 +8,53 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Quests.KulTiras
+namespace WarcraftLegacies.Source.Quests.KulTiras;
+
+/// <inheritdoc/>
+public sealed class QuestHighBank : QuestData
 {
-  /// <inheritdoc/>
-  public sealed class QuestHighBank : QuestData
+  private readonly List<unit> _rescueUnits;
+  private readonly LegendaryHero _katherine;
+
+  /// <summary>
+  /// Initializes a new instance of the <see cref="QuestHighBank"/> class.
+  /// </summary>
+  public QuestHighBank(Rectangle rescueRect, LegendaryHero katherine) : base("Eliminate Piracy",
+    "Kul Tiras' historical isolationism has allowed piracy to fester throughout the seas. It's high time that we do something about it; we can start with the Goblin freebooters living it up in Booty Bay.",
+    @"ReplaceableTextures\CommandButtons\BTNHeroTinker.blp")
   {
-    private readonly List<unit> _rescueUnits;
-    private readonly LegendaryHero _katherine;
+    _katherine = katherine;
+    AddObjective(new ObjectiveControlLegend(katherine, false));
+    AddObjective(new ObjectiveControlPoint(UNIT_N00L_BOOTY_BAY));
+    AddObjective(new ObjectiveSelfExists());
+    _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+  }
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="QuestHighBank"/> class.
-    /// </summary>
-    public QuestHighBank(Rectangle rescueRect, LegendaryHero katherine) : base("Eliminate Piracy",
-      "Kul Tiras' historical isolationism has allowed piracy to fester throughout the seas. It's high time that we do something about it; we can start with the Goblin freebooters living it up in Booty Bay.",
-      @"ReplaceableTextures\CommandButtons\BTNHeroTinker.blp")
+  /// <inheritdoc/>
+  public override string RewardFlavour =>
+    "With the south coast of the Eastern Kingdoms now secure, High Bank has been established as a base of operations on an island near the Twilight Highlands.";
+
+  /// <inheritdoc/>
+  protected override string RewardDescription =>
+    $"Gain control of High Bank, earn 225 gold, and {_katherine.Name} gains 2000 experience";
+
+  protected override void OnFail(Faction completingFaction)
+  {
+    var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      : completingFaction.Player;
+
+    rescuer.RescueGroup(_rescueUnits);
+  }
+
+  /// <inheritdoc/>
+  protected override void OnComplete(Faction completingFaction)
+  {
+    completingFaction.Player?.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 225);
+    completingFaction.Player.RescueGroup(_rescueUnits);
+    if (_katherine.Unit != null)
     {
-      _katherine = katherine;
-      AddObjective(new ObjectiveControlLegend(katherine, false));
-      AddObjective(new ObjectiveControlPoint(UNIT_N00L_BOOTY_BAY));
-      AddObjective(new ObjectiveSelfExists());
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-    }
-
-    /// <inheritdoc/>
-    public override string RewardFlavour =>
-      "With the south coast of the Eastern Kingdoms now secure, High Bank has been established as a base of operations on an island near the Twilight Highlands.";
-
-    /// <inheritdoc/>
-    protected override string RewardDescription =>
-      $"Gain control of High Bank, earn 225 gold, and {_katherine.Name} gains 2000 experience";
-
-    protected override void OnFail(Faction completingFaction)
-    {
-      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
-        : completingFaction.Player;
-
-      rescuer.RescueGroup(_rescueUnits);
-    }
-
-    /// <inheritdoc/>
-    protected override void OnComplete(Faction completingFaction)
-    {
-      completingFaction.Player?.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 225);
-      completingFaction.Player.RescueGroup(_rescueUnits);
-      if (_katherine.Unit != null) 
-        AddHeroXP(_katherine.Unit, 2000, true);
+      AddHeroXP(_katherine.Unit, 2000, true);
     }
   }
 }

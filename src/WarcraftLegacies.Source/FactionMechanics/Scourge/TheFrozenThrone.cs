@@ -4,162 +4,183 @@ using MacroTools.LegendSystem;
 using WarcraftLegacies.Source.Powers;
 using WCSharp.Shared;
 
-namespace WarcraftLegacies.Source.FactionMechanics.Scourge
+namespace WarcraftLegacies.Source.FactionMechanics.Scourge;
+
+public static class TheFrozenThrone
 {
-  public static class TheFrozenThrone
+  private static FrozenThroneState _state = FrozenThroneState.Alive;
+
+  private static Capital _frozenThrone = null!;
+
+  /// <summary>
+  /// Invoked when the Frozen Throne's state has changed.
+  /// </summary>
+  public static event EventHandler<FrozenThroneState>? FrozenThroneStateChanged;
+
+  private static FrozenThroneState State
   {
-    private static FrozenThroneState _state = FrozenThroneState.Alive;
-
-    private static Capital _frozenThrone = null!;
-
-    /// <summary>
-    /// Invoked when the Frozen Throne's state has changed.
-    /// </summary>
-    public static event EventHandler<FrozenThroneState>? FrozenThroneStateChanged;
-
-    private static FrozenThroneState State
+    get => _state;
+    set
     {
-      get => _state;
-      set
-      {
-        _state = value;
-        FrozenThroneStateChanged?.Invoke(null, value);
-      }
+      _state = value;
+      FrozenThroneStateChanged?.Invoke(null, value);
     }
-    
-    public static void Setup(Factions.Scourge scourge, Capital frozenThrone, LegendaryHero lichKing)
+  }
+
+  public static void Setup(Factions.Scourge scourge, Capital frozenThrone, LegendaryHero lichKing)
+  {
+    _frozenThrone = frozenThrone;
+
+    var ownerChangeTrigger = CreateTrigger();
+    TriggerRegisterUnitEvent(ownerChangeTrigger, frozenThrone.Unit!, EVENT_UNIT_CHANGE_OWNER);
+    TriggerAddAction(ownerChangeTrigger, OnFrozenThroneChangeOwner);
+
+    lichKing.PermanentlyDied += OnLichKingDied;
+
+    scourge.ScoreStatusChanged += OnScourgeScoreStatusChanged;
+  }
+
+  /// <summary>
+  /// When the Scourge leaves, vacate Ner'zhul from the Throne.
+  /// </summary>
+  private static void OnScourgeScoreStatusChanged(object? sender, Faction scourge)
+  {
+    if (scourge.ScoreStatus != ScoreStatus.Defeated)
     {
-      _frozenThrone = frozenThrone;
-
-      var ownerChangeTrigger = CreateTrigger();
-      TriggerRegisterUnitEvent(ownerChangeTrigger, frozenThrone.Unit!, EVENT_UNIT_CHANGE_OWNER);
-      TriggerAddAction(ownerChangeTrigger, OnFrozenThroneChangeOwner);
-
-      lichKing.PermanentlyDied += OnLichKingDied;
-
-      scourge.ScoreStatusChanged += OnScourgeScoreStatusChanged;
-    }
-
-    /// <summary>
-    /// When the Scourge leaves, vacate Ner'zhul from the Throne.
-    /// </summary>
-    private static void OnScourgeScoreStatusChanged(object? sender, Faction scourge)
-    {
-      if (scourge.ScoreStatus != ScoreStatus.Defeated) 
-        return;
-
-      scourge.ScoreStatusChanged -= OnScourgeScoreStatusChanged;
-      Vacate(false);
+      return;
     }
 
-    /// <summary>
-    /// Remove Ner'zhul from the Throne, causing it to lose its powers permanently and allowing it to be destroyed.
-    /// </summary>
-    public static void Vacate(bool removeDomination)
+    scourge.ScoreStatusChanged -= OnScourgeScoreStatusChanged;
+    Vacate(false);
+  }
+
+  /// <summary>
+  /// Remove Ner'zhul from the Throne, causing it to lose its powers permanently and allowing it to be destroyed.
+  /// </summary>
+  public static void Vacate(bool removeDomination)
+  {
+    if (State == FrozenThroneState.Empty)
     {
-      if (State == FrozenThroneState.Empty)
-        return;
-
-      RemoveAbilities();
-      if (_frozenThrone.Unit != null)
-      {
-        BlzSetUnitName(_frozenThrone.Unit, "Frozen Throne (Empty)");
-        BlzSetUnitSkin(_frozenThrone.Unit, UNIT_ZBFT_FROZEN_THRONE_EMPTY);
-      }
-      
-      State = FrozenThroneState.Empty;
-      _frozenThrone.Capturable = false;
-      _frozenThrone.DeathMessage =
-        "Northrend quakes as Icecrown Citadel topples to the glacier below, bringing a final end to Ner'zhul's fortress and prison of ice.";
-
-      if (_frozenThrone.Unit != null)
-      {
-        if (_frozenThrone.ProtectorCount == 0)
-          SetUnitInvulnerable(_frozenThrone.Unit, false);
-
-        if (_frozenThrone.OwningPlayer == Player(PLAYER_NEUTRAL_PASSIVE)) 
-          SetUnitOwner(_frozenThrone.Unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
-      }
-
-      if (removeDomination) 
-        RemoveDomination();
+      return;
     }
 
-    /// <summary>
-    /// Fracture the Throne, preventing it from using abilities ever again.
-    /// </summary>
-    private static void Fracture()
+    RemoveAbilities();
+    if (_frozenThrone.Unit != null)
     {
-      if (State != FrozenThroneState.Alive)
-        return;
+      BlzSetUnitName(_frozenThrone.Unit, "Frozen Throne (Empty)");
+      BlzSetUnitSkin(_frozenThrone.Unit, UNIT_ZBFT_FROZEN_THRONE_EMPTY);
+    }
 
-      RemoveAbilities();
-      if (_frozenThrone.Unit != null)
+    State = FrozenThroneState.Empty;
+    _frozenThrone.Capturable = false;
+    _frozenThrone.DeathMessage =
+      "Northrend quakes as Icecrown Citadel topples to the glacier below, bringing a final end to Ner'zhul's fortress and prison of ice.";
+
+    if (_frozenThrone.Unit != null)
+    {
+      if (_frozenThrone.ProtectorCount == 0)
       {
-        BlzSetUnitName(_frozenThrone.Unit, "Frozen Throne (Ruptured)");
-        SetUnitOwner(_frozenThrone.Unit, Player(PLAYER_NEUTRAL_PASSIVE), true);
-        SetUnitInvulnerable(_frozenThrone.Unit, true);
+        SetUnitInvulnerable(_frozenThrone.Unit, false);
       }
 
-      foreach (var player in Util.EnumeratePlayers())
-        DisplayTextToPlayer(player, 0, 0,
-          "\n|cffffcc00CAPITAL DAMAGED|r\nThe Frozen Throne, once thought to be an indomitable bastion of death, has been ruptured. Ner'zhul's consciousness recedes within, retreating desperately to protect what remains of Icecrown Citadel.");
+      if (_frozenThrone.OwningPlayer == Player(PLAYER_NEUTRAL_PASSIVE))
+      {
+        SetUnitOwner(_frozenThrone.Unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
+      }
+    }
 
-      State = FrozenThroneState.Ruptured;
-      
+    if (removeDomination)
+    {
       RemoveDomination();
     }
-    
-    private static void RemoveDomination()
-    {
-      if (!FactionManager.TryGetFactionByType<Factions.Scourge>(out var scourge)) 
-        return;
-
-      var domination = scourge.GetPowerByType<Domination>();
-      if (domination != null) 
-        scourge.RemovePower(domination);
-    }
-
-    private static void RemoveAbilities()
-    {
-      if (_frozenThrone.Unit == null) 
-        return;
-
-      UnitRemoveAbility(_frozenThrone.Unit, ABILITY_A0W8_RECALL_FROZEN_THRONE);
-      UnitRemoveAbility(_frozenThrone.Unit, ABILITY_A0L3_ANIMATE_DEAD_THE_FROZEN_THRONE);
-      UnitRemoveAbility(_frozenThrone.Unit, ABILITY_A001_FROST_NOVA_THE_FROZEN_THRONE);
-      BlzSetUnitMaxMana(_frozenThrone.Unit, 0);
-      BlzSetUnitName(_frozenThrone.Unit, "Icecrown Citadel");
-    }
-
-    private static void OnFrozenThroneChangeOwner()
-    {
-      DestroyTrigger(GetTriggeringTrigger());
-      Fracture();
-    }
-    
-    private static void OnLichKingDied(object? sender, LegendaryHero e)
-    {
-      if (e.UnitType == UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE)
-        RemoveDomination();
-    }
   }
 
-  public enum FrozenThroneState
+  /// <summary>
+  /// Fracture the Throne, preventing it from using abilities ever again.
+  /// </summary>
+  private static void Fracture()
   {
-    /// <summary>
-    /// The Throne is fully intact and has Ner'zhul inside it.
-    /// </summary>
-    Alive,
+    if (State != FrozenThroneState.Alive)
+    {
+      return;
+    }
 
-    /// <summary>
-    /// The Throne has been severely damaged and can no longer function.
-    /// </summary>
-    Ruptured,
+    RemoveAbilities();
+    if (_frozenThrone.Unit != null)
+    {
+      BlzSetUnitName(_frozenThrone.Unit, "Frozen Throne (Ruptured)");
+      SetUnitOwner(_frozenThrone.Unit, Player(PLAYER_NEUTRAL_PASSIVE), true);
+      SetUnitInvulnerable(_frozenThrone.Unit, true);
+    }
 
-    /// <summary>
-    /// Ner'zhul has been removed from the Throne.
-    /// </summary>
-    Empty
+    foreach (var player in Util.EnumeratePlayers())
+    {
+      DisplayTextToPlayer(player, 0, 0,
+        "\n|cffffcc00CAPITAL DAMAGED|r\nThe Frozen Throne, once thought to be an indomitable bastion of death, has been ruptured. Ner'zhul's consciousness recedes within, retreating desperately to protect what remains of Icecrown Citadel.");
+    }
+
+    State = FrozenThroneState.Ruptured;
+
+    RemoveDomination();
   }
+
+  private static void RemoveDomination()
+  {
+    if (!FactionManager.TryGetFactionByType<Factions.Scourge>(out var scourge))
+    {
+      return;
+    }
+
+    var domination = scourge.GetPowerByType<Domination>();
+    if (domination != null)
+    {
+      scourge.RemovePower(domination);
+    }
+  }
+
+  private static void RemoveAbilities()
+  {
+    if (_frozenThrone.Unit == null)
+    {
+      return;
+    }
+
+    UnitRemoveAbility(_frozenThrone.Unit, ABILITY_A0W8_RECALL_FROZEN_THRONE);
+    UnitRemoveAbility(_frozenThrone.Unit, ABILITY_A0L3_ANIMATE_DEAD_THE_FROZEN_THRONE);
+    UnitRemoveAbility(_frozenThrone.Unit, ABILITY_A001_FROST_NOVA_THE_FROZEN_THRONE);
+    BlzSetUnitMaxMana(_frozenThrone.Unit, 0);
+    BlzSetUnitName(_frozenThrone.Unit, "Icecrown Citadel");
+  }
+
+  private static void OnFrozenThroneChangeOwner()
+  {
+    DestroyTrigger(GetTriggeringTrigger());
+    Fracture();
+  }
+
+  private static void OnLichKingDied(object? sender, LegendaryHero e)
+  {
+    if (e.UnitType == UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE)
+    {
+      RemoveDomination();
+    }
+  }
+}
+
+public enum FrozenThroneState
+{
+  /// <summary>
+  /// The Throne is fully intact and has Ner'zhul inside it.
+  /// </summary>
+  Alive,
+
+  /// <summary>
+  /// The Throne has been severely damaged and can no longer function.
+  /// </summary>
+  Ruptured,
+
+  /// <summary>
+  /// Ner'zhul has been removed from the Throne.
+  /// </summary>
+  Empty
 }

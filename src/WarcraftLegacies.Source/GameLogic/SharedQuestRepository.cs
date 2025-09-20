@@ -3,51 +3,58 @@ using System.Collections.Generic;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 
-namespace WarcraftLegacies.Source.GameLogic
+namespace WarcraftLegacies.Source.GameLogic;
+
+/// <summary>
+/// Stores all shared <see cref="QuestData"/>s and distributes them to <see cref="Faction"/>s.
+/// </summary>
+public static class SharedQuestRepository
 {
-  /// <summary>
-  /// Stores all shared <see cref="QuestData"/>s and distributes them to <see cref="Faction"/>s.
-  /// </summary>
-  public static class SharedQuestRepository
+  private static readonly List<QuestData> _sharedQuests = new();
+
+  private static readonly List<Func<Faction, QuestData>> _sharedQuestFactories = new();
+
+  static SharedQuestRepository()
   {
-    private static readonly List<QuestData> SharedQuests = new();
+    FactionManager.FactionRegistered += GiveFactionSharedQuests;
+  }
 
-    private static readonly List<Func<Faction, QuestData>> SharedQuestFactories = new();
-
-    static SharedQuestRepository()
+  /// <summary>
+  /// Registers the provided quest as shareable to all <see cref="Faction"/>s.
+  /// </summary>
+  /// <param name="sharedQuest"></param>
+  public static void RegisterQuest(QuestData sharedQuest)
+  {
+    _sharedQuests.Add(sharedQuest);
+    foreach (var faction in FactionManager.GetAllFactions())
     {
-      FactionManager.FactionRegistered += GiveFactionSharedQuests;
+      faction.AddQuest(sharedQuest);
     }
-    
-    /// <summary>
-    /// Registers the provided quest as shareable to all <see cref="Faction"/>s.
-    /// </summary>
-    /// <param name="sharedQuest"></param>
-    public static void RegisterQuest(QuestData sharedQuest)
+  }
+
+  /// <summary>
+  /// Registers a function that should create a new <see cref="QuestData"/>. All <see cref="Faction"/>s will be given
+  /// a quest generated from this function.
+  /// </summary>
+  public static void RegisterQuestFactory(Func<Faction, QuestData> questFactory)
+  {
+    _sharedQuestFactories.Add(questFactory);
+    foreach (var faction in FactionManager.GetAllFactions())
     {
-      SharedQuests.Add(sharedQuest);
-      foreach (var faction in FactionManager.GetAllFactions()) 
-        faction.AddQuest(sharedQuest);
+      faction.AddQuest(questFactory(faction));
     }
-    
-    /// <summary>
-    /// Registers a function that should create a new <see cref="QuestData"/>. All <see cref="Faction"/>s will be given
-    /// a quest generated from this function.
-    /// </summary>
-    public static void RegisterQuestFactory(Func<Faction, QuestData> questFactory)
+  }
+
+  private static void GiveFactionSharedQuests(object? sender, Faction faction)
+  {
+    foreach (var quest in _sharedQuests)
     {
-      SharedQuestFactories.Add(questFactory);
-      foreach (var faction in FactionManager.GetAllFactions()) 
-        faction.AddQuest(questFactory(faction));
+      faction.AddQuest(quest);
     }
 
-    private static void GiveFactionSharedQuests(object? sender, Faction faction)
+    foreach (var questFactory in _sharedQuestFactories)
     {
-      foreach (var quest in SharedQuests) 
-        faction.AddQuest(quest);
-
-      foreach (var questFactory in SharedQuestFactories) 
-        faction.AddQuest(questFactory(faction));
+      faction.AddQuest(questFactory(faction));
     }
   }
 }

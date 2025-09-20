@@ -3,29 +3,34 @@ using MacroTools.ControlPointSystem;
 using MacroTools.Utils;
 
 
-namespace TestMap.Source.Setup
+namespace TestMap.Source.Setup;
+
+public static class ControlPointSetup
 {
-  public static class ControlPointSetup
+  private static readonly Dictionary<int, int> _controlPointValues = new()
   {
-    private static readonly Dictionary<int, int> ControlPointValues = new()
-    {
-      {FourCC("A001"), 5},
-      {FourCC("A000"), 10},
-      {FourCC("A002"), 15}
-    };
+    {FourCC("A001"), 5},
+    {FourCC("A000"), 10},
+    {FourCC("A002"), 15}
+  };
 
-    private static void InitializeControlPoint(unit unit)
+  private static void InitializeControlPoint(unit unit)
+  {
+    foreach (var (unitTypeId, goldValue) in _controlPointValues)
     {
-      foreach (var (unitTypeId, goldValue) in ControlPointValues)
-        if (GetUnitAbilityLevel(unit, unitTypeId) > 0)
-          ControlPointManager.Instance.Register(new ControlPoint(unit, goldValue, true));
+      if (GetUnitAbilityLevel(unit, unitTypeId) > 0)
+      {
+        ControlPointManager.Instance.Register(new ControlPoint(unit, goldValue, true));
+      }
     }
+  }
 
-    public static void Setup()
+  public static void Setup()
+  {
+    var playableMapArea = WCSharp.Shared.Data.Rectangle.WorldBounds;
+    foreach (var unit in GlobalGroup.EnumUnitsInRect(playableMapArea))
     {
-      var playableMapArea = WCSharp.Shared.Data.Rectangle.WorldBounds;
-      foreach (var unit in GlobalGroup.EnumUnitsInRect(playableMapArea))
-        InitializeControlPoint(unit);
+      InitializeControlPoint(unit);
     }
   }
 }

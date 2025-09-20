@@ -1,12 +1,11 @@
-﻿namespace MacroTools.Shared.Extensions
+﻿namespace MacroTools.Shared.Extensions;
+
+public static class StringExtensions
 {
-  public static class StringExtensions
+  public static string Reverse(this string s)
   {
-    public static string Reverse(this string s)
-    {
-      var charArray = s.ToCharArray();
-      Array.Reverse(charArray);
-      return new string(charArray);
-    }
+    var charArray = s.ToCharArray();
+    Array.Reverse(charArray);
+    return new string(charArray);
   }
 }

@@ -3,50 +3,56 @@ using MacroTools.Cheats;
 using MacroTools.Systems;
 using WCSharp.Shared;
 
-namespace WarcraftLegacies.Source.Cheats
+namespace WarcraftLegacies.Source.Cheats;
+
+public static class CheatSkipCinematic
 {
-  public static class CheatSkipCinematic
+  private static trigger? _skipTrigger;
+
+  public static void Init()
   {
-    private static trigger? _skipTrigger;
+    var timer = CreateTimer();
+    TimerStart(timer, 1, false, DelayedSetup);
+  }
 
-    public static void Init()
+  private static void Actions()
+  {
+    if (!TestMode.CheatCondition(GetTriggerPlayer()))
     {
-      var timer = CreateTimer();
-      TimerStart(timer, 1, false, DelayedSetup);
+      return;
     }
 
-    private static void Actions()
+    try
     {
-      if (!TestMode.CheatCondition(GetTriggerPlayer())) 
-        return;
+      CinematicMode.EndEarly();
+      GameTime.SkipTurns(1);
+    }
+    catch (Exception ex)
+    {
+      Console.WriteLine($"Failed to execute {nameof(CheatSkipCinematic)}: {ex}");
+    }
+    finally
+    {
+      DestroyTrigger(GetTriggeringTrigger());
+    }
+  }
 
-      try
-      {
-        CinematicMode.EndEarly();
-        GameTime.SkipTurns(1);
-      }
-      catch (Exception ex)
-      {
-        Console.WriteLine($"Failed to execute {nameof(CheatSkipCinematic)}: {ex}");
-      }
-      finally
-      {
-        DestroyTrigger(GetTriggeringTrigger());
-      }
+  private static void DelayedSetup()
+  {
+    _skipTrigger = CreateTrigger();
+    foreach (var player in Util.EnumeratePlayers())
+    {
+      TriggerRegisterPlayerEvent(_skipTrigger, player, EVENT_PLAYER_END_CINEMATIC);
     }
 
-    private static void DelayedSetup()
-    {
-      _skipTrigger = CreateTrigger();
-      foreach (var player in Util.EnumeratePlayers())
-        TriggerRegisterPlayerEvent(_skipTrigger, player, EVENT_PLAYER_END_CINEMATIC);
-      TriggerAddAction(_skipTrigger, Actions);
+    TriggerAddAction(_skipTrigger, Actions);
 
-      GameTime.GameStarted += (_, _) =>
+    GameTime.GameStarted += (_, _) =>
+    {
+      if (_skipTrigger != null)
       {
-        if (_skipTrigger != null) 
-          DestroyTrigger(_skipTrigger);
-      };
-    }
+        DestroyTrigger(_skipTrigger);
+      }
+    };
   }
 }

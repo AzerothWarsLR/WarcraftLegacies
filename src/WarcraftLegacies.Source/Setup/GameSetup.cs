@@ -13,109 +13,108 @@ using WarcraftLegacies.Source.GameLogic.GameEnd;
 using WarcraftLegacies.Source.GameModes;
 using WarcraftLegacies.Source.UnitTypes;
 
-namespace WarcraftLegacies.Source.Setup
+namespace WarcraftLegacies.Source.Setup;
+
+/// <summary>
+/// Responsible for setting up the entire game.
+/// </summary>
+public static class GameSetup
 {
   /// <summary>
-  /// Responsible for setting up the entire game.
+  /// Initialize the entire game.
   /// </summary>
-  public static class GameSetup
+  public static void Setup()
   {
-    /// <summary>
-    /// Initialize the entire game.
-    /// </summary>
-    public static void Setup()
-    {
-      FactionManager.Setup();
-      UnitTypeConfig.Setup();
-      SaveManager.Initialize();
-      KeyboardSetup.InitializeKeyboard();
-      DisplayIntroText.Setup(25);
-      CinematicMode.Setup(59);
-      SetupControlPointManager();
-      var preplacedUnitSystem = new PreplacedUnitSystem();
-      SoundLibrary.Setup();
-      var artifactSetup = new ArtifactSetup(preplacedUnitSystem);
-      var allLegendSetup = new AllLegendSetup(preplacedUnitSystem, artifactSetup);
-      allLegendSetup.RegisterLegends(preplacedUnitSystem);
-      ShoreSetup.Setup();
-      ControlPointSetup.Setup();
-      InstanceSetup.Setup(preplacedUnitSystem);
-      NeutralHostileSetup.Setup();
-      var commandManager = new CommandManager();
-      CommandSetup.Setup(commandManager);
-      CheatSetup.Setup(commandManager, artifactSetup);
-      TeamSetup.Setup();
-      new PlayerSetup(preplacedUnitSystem, allLegendSetup, artifactSetup).Setup();
-      FactionChoiceDialogSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
-      SharedQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
-      SpellsSetup.Setup();
-      FactionMultiboard.Setup();
-      BookSetup.Setup();
-      HintConfig.Setup();
-      QuestMenuSetup.Setup();
-      GameTime.Start();
+    FactionManager.Setup();
+    UnitTypeConfig.Setup();
+    SaveManager.Initialize();
+    KeyboardSetup.InitializeKeyboard();
+    DisplayIntroText.Setup(25);
+    CinematicMode.Setup(59);
+    SetupControlPointManager();
+    var preplacedUnitSystem = new PreplacedUnitSystem();
+    SoundLibrary.Setup();
+    var artifactSetup = new ArtifactSetup(preplacedUnitSystem);
+    var allLegendSetup = new AllLegendSetup(preplacedUnitSystem, artifactSetup);
+    allLegendSetup.RegisterLegends(preplacedUnitSystem);
+    ShoreSetup.Setup();
+    ControlPointSetup.Setup();
+    InstanceSetup.Setup(preplacedUnitSystem);
+    NeutralHostileSetup.Setup();
+    var commandManager = new CommandManager();
+    CommandSetup.Setup(commandManager);
+    CheatSetup.Setup(commandManager, artifactSetup);
+    TeamSetup.Setup();
+    new PlayerSetup(preplacedUnitSystem, allLegendSetup, artifactSetup).Setup();
+    FactionChoiceDialogSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
+    SharedQuestSetup.Setup(preplacedUnitSystem, artifactSetup, allLegendSetup);
+    SpellsSetup.Setup();
+    FactionMultiboard.Setup();
+    BookSetup.Setup();
+    HintConfig.Setup();
+    QuestMenuSetup.Setup();
+    GameTime.Start();
 
-      MapFlagSetup.Setup();
-      InfoQuests.Setup();
-      DestructibleSetup.Setup(preplacedUnitSystem);
-      PatronSystem.Setup(preplacedUnitSystem);
-      var gameModeManager = new GameModeManager(new IGameMode[]
-      {
-        new ClosedAlliance(),
-        new OpenAlliance(),
-        new GreatWar()
-      })
-      {
-        TimeToDisplay = 49,
-        VoteLength = 10
-      };
-      gameModeManager.Setup();
-      RockSetup.Setup();
-      TurnResearchSetup.Setup();
-      ShipyardBanZonesSetup.Setup();
-      BlockerSetup.Setup();
-      NeutralVictimAndPassiveSetup.Setup();
-      GateSetup.Setup();
-      StartingResources.Setup();
-      StartingQuestPopup.Setup(63);
-      RefundZeroLimitUnits.Setup();
-      HeroGlowFix.Setup();
-      CleanupUnoccupiedPlayerSlots.Setup();
-      PlayerLeaves.Setup();
-      FloatingTextSetup.Setup(60, 10);
-      AmbianceSetup.Setup();
-      PassiveAbilityManager.InitializePreplacedUnits();
-      IncompatibleResearchSetup.Setup();
-      DemonGateSetup.Setup();
-      SummonRallyPoints.Setup();
-      RemoveUnusedAreas.Run();
-      EyeOfSargerasCooldowns.Setup();
-      CapturableUnitSetup.Setup(preplacedUnitSystem);
-      EyeOfSargerasPickup.Setup();
-      RuntimeIntegrityChecker.Setup();
-      DarkPortalControlNexusSetup.Setup(preplacedUnitSystem);
-      TagSummonedUnits.Setup();
-    }
-
-    private static void SetupControlPointManager()
+    MapFlagSetup.Setup();
+    InfoQuests.Setup();
+    DestructibleSetup.Setup(preplacedUnitSystem);
+    PatronSystem.Setup(preplacedUnitSystem);
+    var gameModeManager = new GameModeManager(new IGameMode[]
     {
-      ControlPointManager.Instance = new ControlPointManager
+      new ClosedAlliance(),
+      new OpenAlliance(),
+      new GreatWar()
+    })
+    {
+      TimeToDisplay = 49,
+      VoteLength = 10
+    };
+    gameModeManager.Setup();
+    RockSetup.Setup();
+    TurnResearchSetup.Setup();
+    ShipyardBanZonesSetup.Setup();
+    BlockerSetup.Setup();
+    NeutralVictimAndPassiveSetup.Setup();
+    GateSetup.Setup();
+    StartingResources.Setup();
+    StartingQuestPopup.Setup(63);
+    RefundZeroLimitUnits.Setup();
+    HeroGlowFix.Setup();
+    CleanupUnoccupiedPlayerSlots.Setup();
+    PlayerLeaves.Setup();
+    FloatingTextSetup.Setup(60, 10);
+    AmbianceSetup.Setup();
+    PassiveAbilityManager.InitializePreplacedUnits();
+    IncompatibleResearchSetup.Setup();
+    DemonGateSetup.Setup();
+    SummonRallyPoints.Setup();
+    RemoveUnusedAreas.Run();
+    EyeOfSargerasCooldowns.Setup();
+    CapturableUnitSetup.Setup(preplacedUnitSystem);
+    EyeOfSargerasPickup.Setup();
+    RuntimeIntegrityChecker.Setup();
+    DarkPortalControlNexusSetup.Setup(preplacedUnitSystem);
+    TagSummonedUnits.Setup();
+  }
+
+  private static void SetupControlPointManager()
+  {
+    ControlPointManager.Instance = new ControlPointManager
+    {
+      StartingMaxHitPoints = 1900,
+      HostileStartingCurrentHitPoints = 1000,
+      RegenerationAbility = ABILITY_A0UT_CP_LIFE_REGEN,
+      PiercingResistanceAbility = ABILITY_A13X_MAGIC_RESISTANCE_CONTROL_POINT_TOWER,
+      IncreaseControlLevelAbilityTypeId = ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
+      ControlLevelSettings = new ControlLevelSettings
       {
-        StartingMaxHitPoints = 1900,
-        HostileStartingCurrentHitPoints = 1000,
-        RegenerationAbility = ABILITY_A0UT_CP_LIFE_REGEN,
-        PiercingResistanceAbility = ABILITY_A13X_MAGIC_RESISTANCE_CONTROL_POINT_TOWER,
-        IncreaseControlLevelAbilityTypeId = ABILITY_A0A8_FORTIFY_CONTROL_POINTS_SHARED,
-        ControlLevelSettings = new ControlLevelSettings
-        {
-          DefaultDefenderUnitTypeId = UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON,
-          DamageBase = 8,
-          DamagePerControlLevel = 1,
-          ArmorPerControlLevel = 1,
-          HitPointsPerControlLevel = 70,
-          ControlLevelMaximum = 30
-        }
-      };
-    }
+        DefaultDefenderUnitTypeId = UNIT_H03W_CONTROL_POINT_DEFENDER_LORDAERON,
+        DamageBase = 8,
+        DamagePerControlLevel = 1,
+        ArmorPerControlLevel = 1,
+        HitPointsPerControlLevel = 70,
+        ControlLevelMaximum = 30
+      }
+    };
   }
 }

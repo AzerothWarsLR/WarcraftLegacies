@@ -1,15 +1,14 @@
 ﻿using WCSharp.Events;
 
-namespace MacroTools.SpellSystem
-{
-  public static class HazardSystem
-  {
-    private static readonly PeriodicDisposableTrigger<Hazard> PeriodicTrigger = new(PeriodicEvents.SYSTEM_INTERVAL);
+namespace MacroTools.SpellSystem;
 
-    public static void Add(Hazard hazard)
-    {
-      PeriodicTrigger.Add(hazard);
-      hazard.OnCreate();
-    }
+public static class HazardSystem
+{
+  private static readonly PeriodicDisposableTrigger<Hazard> _periodicTrigger = new(PeriodicEvents.SYSTEM_INTERVAL);
+
+  public static void Add(Hazard hazard)
+  {
+    _periodicTrigger.Add(hazard);
+    hazard.OnCreate();
   }
 }

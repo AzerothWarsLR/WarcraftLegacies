@@ -16,206 +16,232 @@ using War3Net.Build.Info;
 using War3Net.IO.Mpq;
 using CoreSystemProvider = CSharpLua.CoreSystem.CoreSystemProvider;
 
-namespace Launcher.Services
+namespace Launcher.Services;
+
+/// <summary>
+/// Builds a Warcraft 3 map based on inputs.
+/// </summary>
+public sealed class AdvancedMapBuilder
 {
-  /// <summary>
-  /// Builds a Warcraft 3 map based on inputs.
-  /// </summary>
-  public sealed class AdvancedMapBuilder
+  private readonly CompilerSettings _compilerSettings;
+  private readonly MapSettings _mapSettings;
+  private const string War3MapLua = MapDataPaths.ScriptPath;
+
+  private const string GraphicsApi = "Direct3D9";
+
+  public AdvancedMapBuilder(CompilerSettings compilerSettings, MapSettings mapSettings)
   {
-    private readonly CompilerSettings _compilerSettings;
-    private readonly MapSettings _mapSettings;
-    private const string War3MapLua = MapDataPaths.ScriptPath;
-    
-    private const string GraphicsApi = "Direct3D9";
+    _compilerSettings = compilerSettings;
+    _mapSettings = mapSettings;
+  }
 
-    public AdvancedMapBuilder(CompilerSettings compilerSettings, MapSettings mapSettings)
+  /// <summary>
+  /// Builds a Warcraft 3 map based on the provided inputs and saves it as a file.
+  /// </summary>
+  public void SaveMapFile(Map map, IEnumerable<DirectoryEnumerationOptions> additionalFileDirectories, AdvancedMapBuilderOptions options)
+  {
+    var mapFilePath = GetMapFullFilePath(options);
+    SupplementMap(map, options);
+
+    var mapBuilder = new MapBuilder(map);
+    if (Directory.Exists(_compilerSettings.SharedAssetsPath))
     {
-      _compilerSettings = compilerSettings;
-      _mapSettings = mapSettings;
+      mapBuilder.AddFiles(_compilerSettings.SharedAssetsPath);
     }
-    
-    /// <summary>
-    /// Builds a Warcraft 3 map based on the provided inputs and saves it as a file.
-    /// </summary>
-    public void SaveMapFile(Map map, IEnumerable<DirectoryEnumerationOptions> additionalFileDirectories, AdvancedMapBuilderOptions options)
+
+    foreach (var additionalFileDirectory in additionalFileDirectories)
     {
-      var mapFilePath = GetMapFullFilePath(options);
-      SupplementMap(map, options);
-      
-      var mapBuilder = new MapBuilder(map);
-      if (Directory.Exists(_compilerSettings.SharedAssetsPath))
-        mapBuilder.AddFiles(_compilerSettings.SharedAssetsPath);
+      mapBuilder.AddFiles(additionalFileDirectory.Path, additionalFileDirectory.SearchPattern ?? "*", SearchOption.AllDirectories);
+    }
 
-      foreach (var additionalFileDirectory in additionalFileDirectories)
-        mapBuilder.AddFiles(additionalFileDirectory.Path, additionalFileDirectory.SearchPattern ?? "*", SearchOption.AllDirectories);
+    var archiveCreateOptions = new MpqArchiveCreateOptions
+    {
+      BlockSize = 3,
+      AttributesCreateMode = MpqFileCreateMode.Overwrite,
+      ListFileCreateMode = MpqFileCreateMode.Overwrite
+    };
 
-      var archiveCreateOptions = new MpqArchiveCreateOptions
+    mapBuilder.Build(mapFilePath, archiveCreateOptions);
+    Console.WriteLine($"Exported map to {Path.GetFullPath(mapFilePath)}.");
+    if (options.Launch)
+    {
+      Console.WriteLine("Launching map in Warcraft 3...");
+      LaunchGame(_compilerSettings.Warcraft3ExecutablePath, mapFilePath);
+    }
+  }
+
+  /// <summary>
+  /// Builds a Warcraft 3 map based on the provided inputs and saves it as a directory.
+  /// </summary>
+  public void SaveMapDirectory(Map map, IEnumerable<PathData> additionalFiles, AdvancedMapBuilderOptions options)
+  {
+    var mapFilePath = GetMapFullFilePath(options);
+    SupplementMap(map, options);
+
+    if (options.BackupDirectory != null)
+    {
+      BackupFiles(options.BackupDirectory, mapFilePath);
+    }
+
+    if (Directory.Exists(mapFilePath))
+    {
+      Directory.Delete(mapFilePath, true);
+    }
+
+    map.BuildDirectory(@$"{mapFilePath}\", additionalFiles);
+  }
+
+  private void SupplementMap(Map map, AdvancedMapBuilderOptions options)
+  {
+    if (options.SetMapTitles)
+    {
+      SetMapTitles(map, _mapSettings.Version);
+    }
+
+    if (options.Launch)
+    {
+      SetTestPlayerSlot(map, _compilerSettings.TestingPlayerSlot);
+    }
+
+    if (options.SourceCodeProjectFolderPath != null)
+    {
+      ApplyMigrations(map);
+      AddCSharpCode(map, options.SourceCodeProjectFolderPath, _compilerSettings);
+    }
+  }
+
+  private static void ApplyMigrations(Map map)
+  {
+    Console.WriteLine("Applying object data migrations...");
+    var timer = new Stopwatch();
+    timer.Start();
+
+    var objectDatabase = map.GetObjectDatabaseFromMap();
+    foreach (var migration in MapMigrationProvider.GetMapMigrations())
+    {
+      migration.Migrate(map, objectDatabase);
+    }
+
+    map.UnitObjectData.FixUnkValues();
+
+    timer.Stop();
+    Console.WriteLine($"Completed object data migrations in {timer.Elapsed.Milliseconds} milliseconds.");
+  }
+
+  private static void SetMapTitles(Map map, string version)
+  {
+    if (map.Info == null)
+    {
+      return;
+    }
+
+    map.Info.MapName = $"Warcraft Legacies {version}";
+    map.Info.LoadingScreenTitle = $"Warcraft Legacies {version}";
+  }
+
+  /// <summary>
+  ///   Makes all players prior to the given player slot computers,
+  ///   so that the given player slot is what the tester will play as when the map is launched.
+  /// </summary>
+  private static void SetTestPlayerSlot(Map map, int playerSlot)
+  {
+    if (map.Info == null)
+    {
+      return;
+    }
+
+    foreach (var player in map.Info.Players)
+    {
+      if (player.Id < playerSlot && player.Id != playerSlot && player.Controller != PlayerController.None)
       {
-        BlockSize = 3,
-        AttributesCreateMode = MpqFileCreateMode.Overwrite,
-        ListFileCreateMode = MpqFileCreateMode.Overwrite
-      };
-
-      mapBuilder.Build(mapFilePath, archiveCreateOptions);
-      Console.WriteLine($"Exported map to {Path.GetFullPath(mapFilePath)}.");
-      if (options.Launch)
-      {
-        Console.WriteLine("Launching map in Warcraft 3...");
-        LaunchGame(_compilerSettings.Warcraft3ExecutablePath, mapFilePath);
+        player.Controller = PlayerController.Computer;
       }
     }
+  }
 
-    /// <summary>
-    /// Builds a Warcraft 3 map based on the provided inputs and saves it as a directory.
-    /// </summary>
-    public void SaveMapDirectory(Map map, IEnumerable<PathData> additionalFiles, AdvancedMapBuilderOptions options)
+  public static void AddCSharpCode(Map map, string projectFolderPath, CompilerSettings compilerSettings)
+  {
+    //Set debug options if necessary, configure compiler
+    var csproj = Directory.EnumerateFiles(projectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
+    var compiler = new Compiler(csproj, compilerSettings.ArtifactsPath, string.Empty, null!,
+      "War3Api.*;WCSharp.*;MacroTools.*;MacroTools.Shared.*;WarcraftLegacies.Shared.*", "", null!, false, null,
+      string.Empty)
     {
-      var mapFilePath = GetMapFullFilePath(options);
-      SupplementMap(map, options);
-      
-      if (options.BackupDirectory != null)
-        BackupFiles(options.BackupDirectory, mapFilePath);
-      
-      if (Directory.Exists(mapFilePath))
-        Directory.Delete(mapFilePath, true);
-      
-      map.BuildDirectory(@$"{mapFilePath}\", additionalFiles);
-    }
-    
-    private void SupplementMap(Map map, AdvancedMapBuilderOptions options)
+      IsExportMetadata = true,
+      IsModule = false,
+      IsInlineSimpleProperty = false,
+      IsPreventDebugObject = true,
+      IsCommentsDisabled = true
+    };
+
+    // Collect required paths and compile
+    var coreSystemFiles = CoreSystemProvider.GetCoreSystemFiles(CSharpLua.CoreSystem.Wc3Api.WCSharp);
+    const string blizzardJ = "../../../../../build/blizzard.j";
+    const string commonJ = "../../../../../build/common.j";
+    var mapScriptBuilder = new MapScriptBuilder();
+    mapScriptBuilder.SetDefaultOptionsForCSharpLua();
+    mapScriptBuilder.ForceGenerateGlobalDestructableVariable = false;
+
+    var compileResult = map.CompileScript(compiler, mapScriptBuilder, coreSystemFiles, blizzardJ, commonJ);
+
+    // If compilation failed, output an error
+    if (!compileResult.Success)
     {
-      if (options.SetMapTitles)
-        SetMapTitles(map, _mapSettings.Version);
-
-      if (options.Launch)
-        SetTestPlayerSlot(map, _compilerSettings.TestingPlayerSlot);
-
-      if (options.SourceCodeProjectFolderPath != null)
-      {
-        ApplyMigrations(map);
-        AddCSharpCode(map, options.SourceCodeProjectFolderPath, _compilerSettings);
-      }
-    }
-
-    private static void ApplyMigrations(Map map)
-    {
-      Console.WriteLine("Applying object data migrations...");
-      var timer = new Stopwatch();
-      timer.Start();
-      
-      var objectDatabase = map.GetObjectDatabaseFromMap();
-      foreach (var migration in MapMigrationProvider.GetMapMigrations())
-        migration.Migrate(map, objectDatabase);
-
-      map.UnitObjectData.FixUnkValues();
-
-      timer.Stop();
-      Console.WriteLine($"Completed object data migrations in {timer.Elapsed.Milliseconds} milliseconds.");
-    }
-    
-    private static void SetMapTitles(Map map, string version)
-    {
-      if (map.Info == null)
-        return;
-      map.Info.MapName = $"Warcraft Legacies {version}";
-      map.Info.LoadingScreenTitle = $"Warcraft Legacies {version}";
-    }
-    
-    /// <summary>
-    ///   Makes all players prior to the given player slot computers,
-    ///   so that the given player slot is what the tester will play as when the map is launched.
-    /// </summary>
-    private static void SetTestPlayerSlot(Map map, int playerSlot)
-    {
-      if (map.Info == null) return;
-      foreach (var player in map.Info.Players)
-        if (player.Id < playerSlot && player.Id != playerSlot && player.Controller != PlayerController.None)
-          player.Controller = PlayerController.Computer;
-    }
-    
-    public static void AddCSharpCode(Map map, string projectFolderPath, CompilerSettings compilerSettings)
-    {
-      //Set debug options if necessary, configure compiler
-      var csproj = Directory.EnumerateFiles(projectFolderPath, "*.csproj", SearchOption.TopDirectoryOnly).Single();
-      var compiler = new Compiler(csproj, compilerSettings.ArtifactsPath, string.Empty, null!,
-        "War3Api.*;WCSharp.*;MacroTools.*;MacroTools.Shared.*;WarcraftLegacies.Shared.*", "", null!, false, null,
-        string.Empty)
-      {
-        IsExportMetadata = true,
-        IsModule = false,
-        IsInlineSimpleProperty = false,
-        IsPreventDebugObject = true,
-        IsCommentsDisabled = true
-      };
-      
-      // Collect required paths and compile
-      var coreSystemFiles = CoreSystemProvider.GetCoreSystemFiles(CSharpLua.CoreSystem.Wc3Api.WCSharp);
-      const string blizzardJ = "../../../../../build/blizzard.j";
-      const string commonJ = "../../../../../build/common.j";
-      var mapScriptBuilder = new MapScriptBuilder();
-      mapScriptBuilder.SetDefaultOptionsForCSharpLua();
-      mapScriptBuilder.ForceGenerateGlobalDestructableVariable = false;
-      
-      var compileResult = map.CompileScript(compiler, mapScriptBuilder, coreSystemFiles, blizzardJ, commonJ);
-
-      // If compilation failed, output an error
-      if (!compileResult.Success)
-        throw new Exception(compileResult.Diagnostics.First(x => x.Severity == DiagnosticSeverity.Error).GetMessage());
-
-      // Update war3map.lua so you can inspect the generated Lua code easily
-      if (compilerSettings.ArtifactsPath != null)
-      {
-        Directory.CreateDirectory(compilerSettings.ArtifactsPath);
-        File.WriteAllText(Path.Combine(compilerSettings.ArtifactsPath, War3MapLua), map.Script);
-      }
-    }
-    
-    private string GetMapFullFilePath(AdvancedMapBuilderOptions options)
-    {
-      return options.SetMapTitles
-        ? $"{Path.Combine(options.OutputDirectory, options.MapName)}{_mapSettings.Version}.w3x"
-        : $"{Path.Combine(options.OutputDirectory, options.MapName)}.w3x";
-    }
-    
-    private static void BackupFiles(string backupDirectory, string mapPath)
-    {
-      if (File.Exists(mapPath))
-      {
-        Directory.CreateDirectory(backupDirectory);
-        var backupName = $"{Path.GetFileNameWithoutExtension(mapPath)}-{DateTime.Now:yyyyMMdd_HHmmss}.w3x";
-        File.Copy(mapPath, Path.Combine(backupDirectory, backupName));
-      }
-
-      if (Directory.Exists(mapPath))
-      {
-        Directory.CreateDirectory(backupDirectory);
-        var backupName = $"{Path.GetFileNameWithoutExtension(mapPath)}-{DateTime.Now:yyyyMMdd_HHmmss}.w3x";
-        DirectoryUtils.CopyDirectory(mapPath, Path.Combine(backupDirectory, backupName), true);
-      }
+      throw new Exception(compileResult.Diagnostics.First(x => x.Severity == DiagnosticSeverity.Error).GetMessage());
     }
 
-    private static void LaunchGame(string warcraft3ExecutablePath, string mapFilePath)
+    // Update war3map.lua so you can inspect the generated Lua code easily
+    if (compilerSettings.ArtifactsPath != null)
     {
-      if (File.Exists(warcraft3ExecutablePath))
-      {
-        var commandLineArgs = new StringBuilder();
-        var fileVersion = FileVersionInfo.GetVersionInfo(warcraft3ExecutablePath).FileVersion;
-        var isReforged = fileVersion != null && Version.Parse(fileVersion) >= new Version(1, 32);
-        commandLineArgs.Append(isReforged ? " -launch" : $" -graphicsapi {GraphicsApi}");
+      Directory.CreateDirectory(compilerSettings.ArtifactsPath);
+      File.WriteAllText(Path.Combine(compilerSettings.ArtifactsPath, War3MapLua), map.Script);
+    }
+  }
 
-        commandLineArgs.Append(" -nowfpause");
+  private string GetMapFullFilePath(AdvancedMapBuilderOptions options)
+  {
+    return options.SetMapTitles
+      ? $"{Path.Combine(options.OutputDirectory, options.MapName)}{_mapSettings.Version}.w3x"
+      : $"{Path.Combine(options.OutputDirectory, options.MapName)}.w3x";
+  }
 
-        var absoluteMapPath = new FileInfo(mapFilePath).FullName;
-        commandLineArgs.Append($" -loadfile \"{absoluteMapPath}\"");
+  private static void BackupFiles(string backupDirectory, string mapPath)
+  {
+    if (File.Exists(mapPath))
+    {
+      Directory.CreateDirectory(backupDirectory);
+      var backupName = $"{Path.GetFileNameWithoutExtension(mapPath)}-{DateTime.Now:yyyyMMdd_HHmmss}.w3x";
+      File.Copy(mapPath, Path.Combine(backupDirectory, backupName));
+    }
 
-        Process.Start(warcraft3ExecutablePath, commandLineArgs.ToString());
-      }
-      else
-      {
-        throw new Exception(
-          "Please set Warcraft3ExecutablePath in Launcher/appsettings.json to the path of your Warcraft III executable.");
-      }
+    if (Directory.Exists(mapPath))
+    {
+      Directory.CreateDirectory(backupDirectory);
+      var backupName = $"{Path.GetFileNameWithoutExtension(mapPath)}-{DateTime.Now:yyyyMMdd_HHmmss}.w3x";
+      DirectoryUtils.CopyDirectory(mapPath, Path.Combine(backupDirectory, backupName), true);
+    }
+  }
+
+  private static void LaunchGame(string warcraft3ExecutablePath, string mapFilePath)
+  {
+    if (File.Exists(warcraft3ExecutablePath))
+    {
+      var commandLineArgs = new StringBuilder();
+      var fileVersion = FileVersionInfo.GetVersionInfo(warcraft3ExecutablePath).FileVersion;
+      var isReforged = fileVersion != null && Version.Parse(fileVersion) >= new Version(1, 32);
+      commandLineArgs.Append(isReforged ? " -launch" : $" -graphicsapi {GraphicsApi}");
+
+      commandLineArgs.Append(" -nowfpause");
+
+      var absoluteMapPath = new FileInfo(mapFilePath).FullName;
+      commandLineArgs.Append($" -loadfile \"{absoluteMapPath}\"");
+
+      Process.Start(warcraft3ExecutablePath, commandLineArgs.ToString());
+    }
+    else
+    {
+      throw new Exception(
+        "Please set Warcraft3ExecutablePath in Launcher/appsettings.json to the path of your Warcraft III executable.");
     }
   }
 }

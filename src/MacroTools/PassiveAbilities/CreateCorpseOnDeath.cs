@@ -1,44 +1,49 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
 
-namespace MacroTools.PassiveAbilities
-{
-  /// <summary>
-  /// Causes the unit to summon a unit upon death.
-  /// </summary>
-  public sealed class CreateCorpseOnDeath : PassiveAbility, IEffectOnDeath
-  {
-    
-    /// <summary>
-    /// The unit type corpse to summon on death.
-    /// </summary>
-    public int CorpseUnitTypeId { get; init; }
+namespace MacroTools.PassiveAbilities;
 
-    /// <summary>
-    /// How many corpses to summon.
-    /// </summary>
-    public int CorpseCount { get; init; } = 1;
-    
-    /// <summary>
-    /// The player must have this research for the ability to take effect.
-    /// </summary>
-    public int RequiredResearch { get; init; }
-    
-    /// <inheritdoc />
-    public CreateCorpseOnDeath(int unitTypeId) : base(unitTypeId)
+/// <summary>
+/// Causes the unit to summon a unit upon death.
+/// </summary>
+public sealed class CreateCorpseOnDeath : PassiveAbility, IEffectOnDeath
+{
+
+  /// <summary>
+  /// The unit type corpse to summon on death.
+  /// </summary>
+  public int CorpseUnitTypeId { get; init; }
+
+  /// <summary>
+  /// How many corpses to summon.
+  /// </summary>
+  public int CorpseCount { get; init; } = 1;
+
+  /// <summary>
+  /// The player must have this research for the ability to take effect.
+  /// </summary>
+  public int RequiredResearch { get; init; }
+
+  /// <inheritdoc />
+  public CreateCorpseOnDeath(int unitTypeId) : base(unitTypeId)
+  {
+  }
+
+  /// <inheritdoc />
+  public void OnDeath()
+  {
+    var triggerUnit = GetTriggerUnit();
+    if (RequiredResearch != 0 && (GetPlayerTechCount(GetOwningPlayer(triggerUnit), RequiredResearch, false) == 0))
     {
+      return;
     }
-    
-    /// <inheritdoc />
-    public void OnDeath()
+
+    var pos = triggerUnit.GetPosition();
+    for (var i = 0; i < CorpseCount; i++)
     {
-      var triggerUnit = GetTriggerUnit();
-      if (RequiredResearch != 0 && (GetPlayerTechCount(GetOwningPlayer(triggerUnit), RequiredResearch, false) == 0))
-        return;
-      var pos = triggerUnit.GetPosition();
-      for (var i = 0; i < CorpseCount; i++)
-        CreateCorpse(GetOwningPlayer(triggerUnit), CorpseUnitTypeId, pos.X, pos.Y, GetUnitFacing(triggerUnit));
-      RemoveUnit(triggerUnit);
+      CreateCorpse(GetOwningPlayer(triggerUnit), CorpseUnitTypeId, pos.X, pos.Y, GetUnitFacing(triggerUnit));
     }
+
+    RemoveUnit(triggerUnit);
   }
 }

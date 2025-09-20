@@ -2,19 +2,18 @@
 using MacroTools.FactionSystem;
 using MacroTools.ResearchSystems;
 
-namespace WarcraftLegacies.Source.Researches
+namespace WarcraftLegacies.Source.Researches;
+
+/// <summary>
+/// A <see cref="Research"/> that rewards a <see cref="Power"/> when researched.
+/// </summary>
+public sealed class PowerResearch : Research
 {
-  /// <summary>
-  /// A <see cref="Research"/> that rewards a <see cref="Power"/> when researched.
-  /// </summary>
-  public sealed class PowerResearch : Research
-  {
-    private readonly Power _power;
+  private readonly Power _power;
 
-    /// <inheritdoc />
-    public PowerResearch(int researchTypeId, int goldCost, Power power) : base(researchTypeId, goldCost) => _power = power;
+  /// <inheritdoc />
+  public PowerResearch(int researchTypeId, int goldCost, Power power) : base(researchTypeId, goldCost) => _power = power;
 
-    /// <inheritdoc />
-    public override void OnResearch(player researchingPlayer) => researchingPlayer.GetFaction()?.AddPower(_power);
-  }
+  /// <inheritdoc />
+  public override void OnResearch(player researchingPlayer) => researchingPlayer.GetFaction()?.AddPower(_power);
 }

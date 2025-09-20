@@ -1,30 +1,31 @@
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Shared;
 
-namespace WarcraftLegacies.Source.Commands
+namespace WarcraftLegacies.Source.Commands;
+
+/// <summary>
+///   A command that causes a player to leave their <see cref="Team" /> and be given a solo Team with their
+///   <see cref="Faction" /> as the name.
+/// </summary>
+public static class UnallyCommand
 {
-  /// <summary>
-  ///   A command that causes a player to leave their <see cref="Team" /> and be given a solo Team with their
-  ///   <see cref="Faction" /> as the name.
-  /// </summary>
-  public static class UnallyCommand
+  private const string Command = "-unally";
+
+  private static void Actions()
   {
-    private const string Command = "-unally";
+    var triggerPlayer = GetTriggerPlayer();
+    triggerPlayer.GetFaction()?.Unally();
+  }
 
-    private static void Actions()
+  public static void Setup()
+  {
+    var trig = CreateTrigger();
+    foreach (var player in Util.EnumeratePlayers())
     {
-      var triggerPlayer = GetTriggerPlayer();
-      triggerPlayer.GetFaction()?.Unally();
+      TriggerRegisterPlayerChatEvent(trig, player, Command, true);
     }
 
-    public static void Setup()
-    {
-      var trig = CreateTrigger();
-      foreach (var player in Util.EnumeratePlayers()) 
-        TriggerRegisterPlayerChatEvent(trig, player, Command, true);
-
-      TriggerAddAction(trig, Actions);
-    }
+    TriggerAddAction(trig, Actions);
   }
 }

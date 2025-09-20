@@ -8,46 +8,45 @@ using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Quests.Druids
+namespace WarcraftLegacies.Source.Quests.Druids;
+
+public sealed class QuestShrineBase : QuestData
 {
-  public sealed class QuestShrineBase : QuestData
+  private readonly List<unit> _rescueUnits;
+
+  public QuestShrineBase(Rectangle rescueRect) : base("Hyjal's Rest",
+    "Mount Hyjal has been invaded by the corruption already affecting Felwood. Clear them out to awaken the Ancients",
+    @"ReplaceableTextures\CommandButtons\BTNAncientOfTheMoon.blp")
   {
-    private readonly List<unit> _rescueUnits;
+    AddObjective(new ObjectiveControlPoint(UNIT_N0BI_SHRINE_TO_MALORNE, 0));
+    AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.ShrineBaseUnlock }, "in Hyjal"));
+    AddObjective(new ObjectiveExpire(480, Title));
+    AddObjective(new ObjectiveSelfExists());
 
-    public QuestShrineBase(Rectangle rescueRect) : base("Hyjal's Rest",
-      "Mount Hyjal has been invaded by the corruption already affecting Felwood. Clear them out to awaken the Ancients",
-      @"ReplaceableTextures\CommandButtons\BTNAncientOfTheMoon.blp")
-    {
-      AddObjective(new ObjectiveControlPoint(UNIT_N0BI_SHRINE_TO_MALORNE, 0));
-      AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.ShrineBaseUnlock }, "in Hyjal"));
-      AddObjective(new ObjectiveExpire(480, Title));
-      AddObjective(new ObjectiveSelfExists());
-      
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-    }
+    _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+  }
 
-    /// <inheritdoc />
-    public override string RewardFlavour =>
-      "The World Tree has been rid of corruption and the Ancients can awaken";
+  /// <inheritdoc />
+  public override string RewardFlavour =>
+    "The World Tree has been rid of corruption and the Ancients can awaken";
 
-    /// <inheritdoc />
-    protected override string RewardDescription =>
-      "Control of all units in the Shrine of Malorne base";
+  /// <inheritdoc />
+  protected override string RewardDescription =>
+    "Control of all units in the Shrine of Malorne base";
 
-    /// <inheritdoc />
-    protected override void OnFail(Faction completingFaction)
-    {
-      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
-        : completingFaction.Player;
+  /// <inheritdoc />
+  protected override void OnFail(Faction completingFaction)
+  {
+    var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      : completingFaction.Player;
 
-      rescuer.RescueGroup(_rescueUnits);
-    }
+    rescuer.RescueGroup(_rescueUnits);
+  }
 
-    /// <inheritdoc />
-    protected override void OnComplete(Faction completingFaction)
-    {
-      completingFaction.Player.RescueGroup(_rescueUnits);
-    }
+  /// <inheritdoc />
+  protected override void OnComplete(Faction completingFaction)
+  {
+    completingFaction.Player.RescueGroup(_rescueUnits);
   }
 }

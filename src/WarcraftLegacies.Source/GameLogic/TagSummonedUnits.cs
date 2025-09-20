@@ -1,23 +1,24 @@
 ﻿using WCSharp.Events;
 
-namespace WarcraftLegacies.Source.GameLogic
+namespace WarcraftLegacies.Source.GameLogic;
+
+/// <summary>
+/// When any unit is summoned for any reason, tag it with the Summoned classification.
+/// </summary>
+public static class TagSummonedUnits
 {
   /// <summary>
-  /// When any unit is summoned for any reason, tag it with the Summoned classification.
+  /// Sets up <see cref="TagSummonedUnits"/>.
   /// </summary>
-  public static class TagSummonedUnits
+  public static void Setup()
   {
-    /// <summary>
-    /// Sets up <see cref="TagSummonedUnits"/>.
-    /// </summary>
-    public static void Setup()
+    PlayerUnitEvents.Register(UnitTypeEvent.IsSummoned, () =>
     {
-      PlayerUnitEvents.Register(UnitTypeEvent.IsSummoned, () =>
+      var unit = GetTriggerUnit();
+      if (IsUnitType(unit, UNIT_TYPE_UNDEAD))
       {
-        var unit = GetTriggerUnit(); 
-        if (IsUnitType(unit, UNIT_TYPE_UNDEAD)) 
-          UnitAddType(GetTriggerUnit(), UNIT_TYPE_SUMMONED);
-      });
-    }
+        UnitAddType(GetTriggerUnit(), UNIT_TYPE_SUMMONED);
+      }
+    });
   }
-} 
+}

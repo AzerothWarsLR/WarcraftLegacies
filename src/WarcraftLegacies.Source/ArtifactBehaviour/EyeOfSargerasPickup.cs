@@ -5,38 +5,39 @@ using MacroTools.Utils;
 using WCSharp.Events;
 using WCSharp.Missiles;
 
-namespace WarcraftLegacies.Source.ArtifactBehaviour
+namespace WarcraftLegacies.Source.ArtifactBehaviour;
+
+/// <summary>
+/// When the Eye of Sargeras is picked up with a hostile unit nearby, it transfers itself to the inventory of that hostile unit.
+/// </summary>
+public static class EyeOfSargerasPickup
 {
   /// <summary>
-  /// When the Eye of Sargeras is picked up with a hostile unit nearby, it transfers itself to the inventory of that hostile unit.
+  /// Sets up <see cref="EyeOfSargerasPickup"/>.
   /// </summary>
-  public static class EyeOfSargerasPickup
+  public static void Setup()
   {
-    /// <summary>
-    /// Sets up <see cref="EyeOfSargerasPickup"/>.
-    /// </summary>
-    public static void Setup()
+    PlayerUnitEvents.Register(ItemTypeEvent.IsPickedUp, OnEyeOfSargerasPickedUp, ITEM_I003_EYE_OF_SARGERAS);
+  }
+
+  private static void OnEyeOfSargerasPickedUp()
+  {
+    if (GetOwningPlayer(GetTriggerUnit()) == Player(PLAYER_NEUTRAL_AGGRESSIVE))
     {
-      PlayerUnitEvents.Register(ItemTypeEvent.IsPickedUp, OnEyeOfSargerasPickedUp, ITEM_I003_EYE_OF_SARGERAS);
+      return;
     }
 
-    private static void OnEyeOfSargerasPickedUp()
+    var hostileNearby = GlobalGroup
+      .EnumUnitsInRange(GetTriggerUnit().GetPosition(), 700)
+      .OrderByDescending(x => MathEx.GetDistanceBetweenPoints(x.GetPosition(), GetTriggerUnit().GetPosition()))
+      .FirstOrDefault(x => GetOwningPlayer(x) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && UnitAlive(x) && !IsUnitType(x, UNIT_TYPE_ANCIENT));
+    if (hostileNearby == null)
     {
-      if (GetOwningPlayer(GetTriggerUnit()) == Player(PLAYER_NEUTRAL_AGGRESSIVE))
-        return;
-
-      var hostileNearby = GlobalGroup
-        .EnumUnitsInRange(GetTriggerUnit().GetPosition(), 700)
-        .OrderByDescending(x => MathEx.GetDistanceBetweenPoints(x.GetPosition(), GetTriggerUnit().GetPosition()))
-        .FirstOrDefault(x => GetOwningPlayer(x) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && UnitAlive(x) && !IsUnitType(x, UNIT_TYPE_ANCIENT));
-      if (hostileNearby == null)
-      {
-        PlayerUnitEvents.Unregister(ItemTypeEvent.IsPickedUp, OnEyeOfSargerasPickedUp,
-          ITEM_I003_EYE_OF_SARGERAS);
-        return;
-      }
-
-      MissileSystem.Add(new EyeOfSargerasMissile(GetTriggerUnit(), hostileNearby, GetManipulatedItem()));
+      PlayerUnitEvents.Unregister(ItemTypeEvent.IsPickedUp, OnEyeOfSargerasPickedUp,
+        ITEM_I003_EYE_OF_SARGERAS);
+      return;
     }
+
+    MissileSystem.Add(new EyeOfSargerasMissile(GetTriggerUnit(), hostileNearby, GetManipulatedItem()));
   }
 }

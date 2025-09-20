@@ -7,52 +7,53 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Quests.Lordaeron
+namespace WarcraftLegacies.Source.Quests.Lordaeron;
+
+/// <summary>
+/// Capture Strahnbrad's control point to gain control of the village.
+/// </summary>
+public sealed class QuestStrahnbrad : QuestData
 {
+  private readonly List<unit> _rescueUnits;
+
   /// <summary>
-  /// Capture Strahnbrad's control point to gain control of the village.
+  /// Initializes a new instance of the <see cref="QuestStrahnbrad"/> class.
   /// </summary>
-  public sealed class QuestStrahnbrad : QuestData
+  /// <param name="rescueRect"></param>
+  public QuestStrahnbrad(Rectangle rescueRect) : base("The Defense of Strahnbrad",
+    "The Strahnbrad is under attack by some brigands, clear them out",
+    @"ReplaceableTextures\CommandButtons\BTNFarm.blp")
   {
-    private readonly List<unit> _rescueUnits;
+    AddObjective(
+      new ObjectiveControlPoint(UNIT_N01C_STRAHNBRAD));
+    AddObjective(new ObjectiveExpire(660, Title));
+    AddObjective(new ObjectiveSelfExists());
+    _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="QuestStrahnbrad"/> class.
-    /// </summary>
-    /// <param name="rescueRect"></param>
-    public QuestStrahnbrad(Rectangle rescueRect) : base("The Defense of Strahnbrad",
-      "The Strahnbrad is under attack by some brigands, clear them out",
-      @"ReplaceableTextures\CommandButtons\BTNFarm.blp")
+  }
+
+  /// <inheritdoc/>
+  public override string RewardFlavour => "Strahnbrad has been liberated.";
+
+  /// <inheritdoc/>
+  protected override string RewardDescription => "Control of all buildings in Strahnbrad";
+
+  /// <inheritdoc/>
+  protected override void OnFail(Faction completingFaction)
+  {
+    var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      : completingFaction.Player;
+
+    rescuer.RescueGroup(_rescueUnits);
+  }
+
+  /// <inheritdoc/>
+  protected override void OnComplete(Faction completingFaction)
+  {
+    if (completingFaction.Player != null)
     {
-      AddObjective(
-        new ObjectiveControlPoint(UNIT_N01C_STRAHNBRAD));
-      AddObjective(new ObjectiveExpire(660, Title));
-      AddObjective(new ObjectiveSelfExists());
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-      
-    }
-
-    /// <inheritdoc/>
-    public override string RewardFlavour => "Strahnbrad has been liberated.";
-
-    /// <inheritdoc/>
-    protected override string RewardDescription => "Control of all buildings in Strahnbrad";
-
-    /// <inheritdoc/>
-    protected override void OnFail(Faction completingFaction)
-    {
-      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
-        : completingFaction.Player;
-
-      rescuer.RescueGroup(_rescueUnits);
-    }
-
-    /// <inheritdoc/>
-    protected override void OnComplete(Faction completingFaction)
-    {
-      if (completingFaction.Player != null)
-        completingFaction.Player.RescueGroup(_rescueUnits);
+      completingFaction.Player.RescueGroup(_rescueUnits);
     }
   }
 }

@@ -2,48 +2,57 @@
 using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
 
-namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
+namespace MacroTools.ObjectiveSystem.Objectives.LegendBased;
+
+/// <summary>
+/// Do not gain control of a particular <see cref="Capital"/>.
+/// </summary>
+public sealed class ObjectiveDontControlCapital : Objective
 {
+  private readonly Capital _target;
+  private readonly QuestProgress _incompleteState;
+
   /// <summary>
-  /// Do not gain control of a particular <see cref="Capital"/>.
+  /// Initializes a new instance of the <see cref="ObjectiveDontControlCapital"/> class.
   /// </summary>
-  public sealed class ObjectiveDontControlCapital : Objective
+  /// <param name="target">The Capital which should not be controlled.</param>
+  /// <param name="canFail">If true, the Objective will be failed when the Capital is taken.</param>
+  public ObjectiveDontControlCapital(Capital target, bool canFail)
   {
-    private readonly Capital _target;
-    private readonly QuestProgress _incompleteState;
-
-    /// <summary>
-    /// Initializes a new instance of the <see cref="ObjectiveDontControlCapital"/> class.
-    /// </summary>
-    /// <param name="target">The Capital which should not be controlled.</param>
-    /// <param name="canFail">If true, the Objective will be failed when the Capital is taken.</param>
-    public ObjectiveDontControlCapital(Capital target, bool canFail)
+    _target = target;
+    _incompleteState = canFail ? QuestProgress.Failed : QuestProgress.Incomplete;
+    Description = $"You don't control {target.Name}";
+    if (target.Unit != null)
     {
-      _target = target;
-      _incompleteState = canFail ? QuestProgress.Failed : QuestProgress.Incomplete;
-      Description = $"You don't control {target.Name}";
-      if (target.Unit != null) 
-        TargetWidget = target.Unit;
-
-      DisplaysPosition = GetOwningPlayer(target.Unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE);
-      target.ChangedOwner += OnTargetChangeOwner;
-      Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
+      TargetWidget = target.Unit;
     }
 
-    public override void OnAdd(Faction whichFaction)
-    {
-      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
-        Progress = _incompleteState;
-      else
-        Progress = QuestProgress.Complete;
-    }
+    DisplaysPosition = GetOwningPlayer(target.Unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE);
+    target.ChangedOwner += OnTargetChangeOwner;
+    Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
+  }
 
-    private void OnTargetChangeOwner(object? sender, LegendChangeOwnerEventArgs legendChangeOwnerEventArgs)
+  public override void OnAdd(Faction whichFaction)
+  {
+    if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
     {
-      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
-        Progress = _incompleteState;
-      else
-        Progress = QuestProgress.Complete;
+      Progress = _incompleteState;
+    }
+    else
+    {
+      Progress = QuestProgress.Complete;
+    }
+  }
+
+  private void OnTargetChangeOwner(object? sender, LegendChangeOwnerEventArgs legendChangeOwnerEventArgs)
+  {
+    if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
+    {
+      Progress = _incompleteState;
+    }
+    else
+    {
+      Progress = QuestProgress.Complete;
     }
   }
 }
