@@ -28,7 +28,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Engulfs the Demon Hunter in flames, causing damage to nearby enemy land units. |nDrains mana until deactivated. |n|n|cffffcc00Level 1|r - \u003CZBL6,DataA1\u003E damage per 0.5 second. |n|cffffcc00Level 2|r - \u003CZBL6,DataA2\u003E damage per 0.5 second. |n|cffffcc00Level 3|r - \u003CZBL6,DataA3\u003E damage per 0.5 second.|n|cffffcc00Level 4|r - \u003CZBL6,DataA4\u003E damage per 0.5 second."
+      "Value": "Engulfs the Demon Hunter in flames, causing damage to nearby enemy land units. |nDrains mana until deactivated. |n|n|cffffcc00Level 1|r - \u003CZBL6,DataA1\u003E damage per second. |n|cffffcc00Level 2|r - \u003CZBL6,DataA2\u003E damage per second. |n|cffffcc00Level 3|r - \u003CZBL6,DataA3\u003E damage per second.|n|cffffcc00Level 4|r - \u003CZBL6,DataA4\u003E damage per second."
     },
     {
       "Level": 4,
@@ -40,25 +40,25 @@
       "Level": 4,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Activate Immolation to engulf this unit in flames, causing \u003CZBL6,DataA4\u003E damage per 0.5 second to nearby enemy land units. |nDrains mana until deactivated."
+      "Value": "Activate Immolation to engulf this unit in flames, causing \u003CZBL6,DataA4\u003E damage per second to nearby enemy land units. |nDrains mana until deactivated."
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Activate Immolation to engulf this unit in flames, causing \u003CZBL6,DataA1\u003E damage per 0.5 second to nearby enemy land units. |nDrains mana until deactivated."
+      "Value": "Activate Immolation to engulf this unit in flames, causing \u003CZBL6,DataA1\u003E damage per second to nearby enemy land units. |nDrains mana until deactivated."
     },
     {
       "Level": 2,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Activate Immolation to engulf this unit in flames, causing \u003CZBL6,DataA2\u003E damage per 0.5 second to nearby enemy land units. |nDrains mana until deactivated."
+      "Value": "Activate Immolation to engulf this unit in flames, causing \u003CZBL6,DataA2\u003E damage per second to nearby enemy land units. |nDrains mana until deactivated."
     },
     {
       "Level": 3,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Activate Immolation to engulf this unit in flames, causing \u003CZBL6,DataA3\u003E damage per 0.5 second to nearby enemy land units. |nDrains mana until deactivated."
+      "Value": "Activate Immolation to engulf this unit in flames, causing \u003CZBL6,DataA3\u003E damage per second to nearby enemy land units. |nDrains mana until deactivated."
     }
   ]
 }

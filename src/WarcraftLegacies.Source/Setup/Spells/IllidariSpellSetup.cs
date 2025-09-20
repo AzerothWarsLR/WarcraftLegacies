@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
       };
 
       var warglaivesOfAzzinoth = new WarglaivesOfAzzinoth(illidanVariations,
-        ABILITY_A0YW_WARGLAIVES_OF_AZZINOTH_GREEN_LIGHT_BLUE_ILLIDAN)
+        ABILITY_A0YW_WARGLAIVES_OF_AZZINOTH_ILLIDAN)
       {
         Radius = 150,
         DamageBase = 4,
