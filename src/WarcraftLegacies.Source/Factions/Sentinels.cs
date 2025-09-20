@@ -119,6 +119,18 @@ public sealed class Sentinels : Faction
 
     TriggeredDialogueManager.Add(
       new TriggeredDialogue(new Dialogue(
+        @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S03Naisha39",
+        "Look, mistress--more of Gul'dan's glyphs.",
+        "Naisha"), new[]
+      {
+        this
+      }, new[]
+      {
+        new ObjectiveLegendInRect(_allLegendSetup.Sentinels.Naisha, Regions.TombOfSargerasInteriorB, "the Tomb of Sargeras")
+      }));
+
+    TriggeredDialogueManager.Add(
+      new TriggeredDialogue(new Dialogue(
         @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Maiev24",
         "Priestess Tyrande. I'm surprised you came in person. Are you here to absolve your guilty conscience?",
         "Maiev Shadowsong"), new[]
