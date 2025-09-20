@@ -218,16 +218,7 @@ public sealed class Illidari : Faction
           "Illidan Stormrage"), new Dialogue(
           @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Tyrande32",
           "I was wrong to set you free, Illidan. I can see that now. You've become a monster.",
-          "Tyrande Whisperwind"), new Dialogue(
-          @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Illidan33",
-          "Monster? Is that what you think of me? I have always...cared about you, Tyrande. I sought only to prove my worthiness--my power!",
-          "Illidan Stormrage"), new Dialogue(
-          @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Tyrande34",
-          "Raw power is no substitute for true strength, Illidan. That is why I chose your brother over you.",
-          "Tyrande Whisperwind"), new Dialogue(
-          @"Sound\Dialogue\NightElfExpCamp\NightElf05x\S05Illidan35",
-          "Still you refuse to see me for what I truly am. You believe me to be a villain--your enemy. But soon now, you will see our enemies are the same!",
-          "Illidan Stormrage"))
+          "Tyrande Whisperwind"))
         , new Faction[]
         {
           this,
