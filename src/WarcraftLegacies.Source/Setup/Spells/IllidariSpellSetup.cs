@@ -30,13 +30,10 @@ namespace WarcraftLegacies.Source.Setup.Spells
       
       var illidanVariations = new[]
       {
-        UNIT_EILL_DEMON_HUNTER_BASE_ILLIDARI,
-        FourCC("Eidm"),
-        UNIT_EILM_DEMON_HUNTER,
         UNIT_EEVI_DEMON_HUNTER_HYBRID_ILLIDARI,
-        UNIT_E00G_DEMON_HUNTER_EVIL_MORPHED_LEVEL_3,
-        UNIT_E00E_DEMON_HUNTER_MORPHED_LEVEL_2,
-        UNIT_E00D_DEMON_HUNTER_MORPHED_LEVEL_3
+        UNIT_EEVM_DEMON_HUNTER_MORPHED_LEVEL_1_ILLIDARI,
+        UNIT_ZF4B_DEMON_HUNTER_MORPHED_LEVEL_2_ILLIDARI,
+        UNIT_ZB88_DEMON_HUNTER_MORPHED_LEVEL_3_ILLIDARI
       };
 
       var warglaivesOfAzzinoth = new WarglaivesOfAzzinoth(illidanVariations,

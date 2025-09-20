@@ -66,7 +66,7 @@ namespace WarcraftLegacies.Source.Setup.Spells
         AbilityWhitelist = new List<int>
         {
           ABILITY_A04J_ARCANE_BURST_HIGH_ELVES_ANASTERIAN,
-          ABILITY_A013_DEVOUR_MAGIC_GUL_DAN,
+          ABILITY_A013_DEVOUR_MAGIC_ANASTERIAN,
           ABILITY_AHPX_ASHES_OF_AL_AR_QUEL_THALAS_ANASTERIAN_KAEL_THAS
         }
       });

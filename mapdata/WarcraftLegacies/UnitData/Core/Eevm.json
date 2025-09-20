@@ -1,0 +1,18 @@
+{
+  "OldId": 1836475717,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1667330677,
+      "Type": 3,
+      "Value": "naga"
+    },
+    {
+      "Id": 1768055157,
+      "Type": 3,
+      "Value": "AInv,Ault,ANcl,ZBTE"
+    }
+  ]
+}
