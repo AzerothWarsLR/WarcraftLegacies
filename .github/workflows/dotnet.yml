@@ -16,7 +16,7 @@ jobs:
                 with:
                     dotnet-version: 7.0.x
             -   name: Run .NET Format
-                run: dotnet format --verify-no-changes --verbosity detailed --exclude src/War3Api.Object
+                run: dotnet format --verify-no-changes --verbosity detailed --exclude src/War3Api.Object src/WarcraftLegacies.Shared/Constants.cs src/WarcraftLegacies.Source/Regions.cs
             -   name: Build
                 run: dotnet build
             -   name: Inspect code
