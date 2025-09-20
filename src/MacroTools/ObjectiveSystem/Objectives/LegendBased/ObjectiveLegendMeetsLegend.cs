@@ -3,27 +3,31 @@ using MacroTools.LegendSystem;
 using MacroTools.Libraries;
 using MacroTools.QuestSystem;
 
-namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
+namespace MacroTools.ObjectiveSystem.Objectives.LegendBased;
+
+/// <summary>
+/// Objective that is completed when one <see cref="LegendaryHero"/> inflicts damage while in range of another <see cref="LegendaryHero"/>.
+/// </summary>
+public sealed class ObjectiveLegendMeetsLegend : Objective
 {
   /// <summary>
-  /// Objective that is completed when one <see cref="LegendaryHero"/> inflicts damage while in range of another <see cref="LegendaryHero"/>.
+  /// Initializes a new instance of the <see cref="ObjectiveLegendMeetsLegend"/> class.
   /// </summary>
-  public sealed class ObjectiveLegendMeetsLegend : Objective
+  public ObjectiveLegendMeetsLegend(LegendaryHero damagingLegendaryHero, LegendaryHero legendaryHeroInRange)
   {
-    /// <summary>
-    /// Initializes a new instance of the <see cref="ObjectiveLegendMeetsLegend"/> class.
-    /// </summary>
-    public ObjectiveLegendMeetsLegend(LegendaryHero damagingLegendaryHero, LegendaryHero legendaryHeroInRange)
+    Description = $"{damagingLegendaryHero.Name} has dealt damage within 500 units of {legendaryHeroInRange.Name}";
+    damagingLegendaryHero.DealtDamage += (_, _) =>
     {
-      Description = $"{damagingLegendaryHero.Name} has dealt damage within 500 units of {legendaryHeroInRange.Name}";
-      damagingLegendaryHero.DealtDamage += (_, _) =>
+      if (damagingLegendaryHero.Unit == null || legendaryHeroInRange.Unit == null)
       {
-        if (damagingLegendaryHero.Unit == null || legendaryHeroInRange.Unit == null) 
-          return;
-        if (MathEx.GetDistanceBetweenPoints(damagingLegendaryHero.Unit.GetPosition(),
-              legendaryHeroInRange.Unit.GetPosition()) < 500)
-          Progress = QuestProgress.Complete;
-      };
-    }
+        return;
+      }
+
+      if (MathEx.GetDistanceBetweenPoints(damagingLegendaryHero.Unit.GetPosition(),
+            legendaryHeroInRange.Unit.GetPosition()) < 500)
+      {
+        Progress = QuestProgress.Complete;
+      }
+    };
   }
 }

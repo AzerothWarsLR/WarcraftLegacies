@@ -1,50 +1,49 @@
 ﻿using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.Spells
+namespace MacroTools.Spells;
+
+/// <summary>
+/// Instantly kills a unit.
+/// </summary>
+public sealed class InstantKill : Spell
 {
-  /// <summary>
-  /// Instantly kills a unit.
-  /// </summary>
-  public sealed class InstantKill : Spell
+  public enum KillTarget
   {
-    public enum KillTarget
-    {
-      /// <summary>
-      /// The caster.
-      /// </summary>
-      Self,
-      /// <summary>
-      /// The targeted unit.
-      /// </summary>
-      Target
-    }
-
     /// <summary>
-    /// Defines who is affected by the spell.
+    /// The caster.
     /// </summary>
-    public required KillTarget Target { get; init; }
-
+    Self,
     /// <summary>
-    /// Initializes a new instance of <see cref="InstantKill"/>.
+    /// The targeted unit.
     /// </summary>
-    public InstantKill(int id) : base(id)
-    {
+    Target
+  }
 
-    }
+  /// <summary>
+  /// Defines who is affected by the spell.
+  /// </summary>
+  public required KillTarget Target { get; init; }
 
-    /// <inheritdoc/>
-    public override void OnCast(unit caster, unit target, Point targetPoint)
+  /// <summary>
+  /// Initializes a new instance of <see cref="InstantKill"/>.
+  /// </summary>
+  public InstantKill(int id) : base(id)
+  {
+
+  }
+
+  /// <inheritdoc/>
+  public override void OnCast(unit caster, unit target, Point targetPoint)
+  {
+    switch (Target)
     {
-      switch (Target)
-      {
-        case KillTarget.Self:
-          KillUnit(caster);
-          break;
-        case KillTarget.Target:
-          KillUnit(target);
-          break;
-      }
+      case KillTarget.Self:
+        KillUnit(caster);
+        break;
+      case KillTarget.Target:
+        KillUnit(target);
+        break;
     }
   }
 }

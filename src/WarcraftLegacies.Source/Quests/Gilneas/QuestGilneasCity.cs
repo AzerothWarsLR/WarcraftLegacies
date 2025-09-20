@@ -9,64 +9,68 @@ using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Rocks;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Quests.Gilneas
+namespace WarcraftLegacies.Source.Quests.Gilneas;
+
+/// <summary>
+/// Take Durnholde control point and upgrade the main building to Tier 3 in order to unlock Gilneas City and the Greymane Wall.
+/// </summary>
+public sealed class QuestGilneasCity : QuestData
 {
+  private readonly List<unit> _rescueUnits;
+
   /// <summary>
-  /// Take Durnholde control point and upgrade the main building to Tier 3 in order to unlock Gilneas City and the Greymane Wall.
+  /// Initializes a new instance of the <see cref="QuestGilneasCity"/> class.
   /// </summary>
-  public sealed class QuestGilneasCity : QuestData
+  public QuestGilneasCity(Rectangle rescueRect1) : base("Gilneas City",
+    "The Great Kingdom of Gilneas has been reduced to its land behind the Greymane Wall, We must reclaim our lost land to regain our strength.",
+    @"ReplaceableTextures\CommandButtons\BTNGilneasCathedral.blp")
   {
-    private readonly List<unit> _rescueUnits;
+    _rescueUnits = new List<unit>();
+    _rescueUnits.AddRange(rescueRect1.PrepareUnitsForRescue(RescuePreparationMode.HideAll, RescuableFilter));
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="QuestGilneasCity"/> class.
-    /// </summary>
-    public QuestGilneasCity(Rectangle rescueRect1) : base("Gilneas City",
-      "The Great Kingdom of Gilneas has been reduced to its land behind the Greymane Wall, We must reclaim our lost land to regain our strength.",
-      @"ReplaceableTextures\CommandButtons\BTNGilneasCathedral.blp")
-    {
-      _rescueUnits = new List<unit>();
-      _rescueUnits.AddRange(rescueRect1.PrepareUnitsForRescue(RescuePreparationMode.HideAll, RescuableFilter));
+    AddObjective(new ObjectiveControlPoint(UNIT_N018_DURNHOLDE));
+    AddObjective(new ObjectiveUpgrade(UNIT_H02C_CASTLE_GILNEAS_T3, UNIT_H01R_TOWN_HALL_GILNEAS_T1));
+    AddObjective(new ObjectiveExpire(660, "Liberation of Gilneas"));
+    AddObjective(new ObjectiveSelfExists());
 
-      AddObjective(new ObjectiveControlPoint(UNIT_N018_DURNHOLDE));
-      AddObjective(new ObjectiveUpgrade(UNIT_H02C_CASTLE_GILNEAS_T3, UNIT_H01R_TOWN_HALL_GILNEAS_T1));
-      AddObjective(new ObjectiveExpire(660, "Liberation of Gilneas"));
-      AddObjective(new ObjectiveSelfExists());
-
-      ResearchId = UPGRADE_R02R_QUEST_COMPLETED_LIBERATION_OF_GILNEAS;
-    }
-
-    /// <inheritdoc/>
-    public override string RewardFlavour => "Southern Lordaeron has been Secured, The Cursed Kingdom rallies to our cause!";
-
-    /// <inheritdoc/>
-    protected override string RewardDescription => "Gain control of the Greymane Wall and Gilneas City. Enable to train Genn Greymane and the Worgen units.";
-
-    /// <inheritdoc/>
-    protected override void OnComplete(Faction completingFaction)
-    {
-      foreach (var unit in _rescueUnits)
-        unit.Rescue(completingFaction.Player);
-      completingFaction.Player?.PlayMusicThematic("war3mapImported\\GilneasTheme1.mp3");
-
-      RockSystem.Register(new RockGroup(Regions.GilneasUnlock5, FourCC("LTrc"), 1));
-    }
-
-    /// <inheritdoc/>
-    protected override void OnFail(Faction completingFaction)
-    {
-      if (completingFaction.Player == null)
-        return;
-
-      RockSystem.Register(new RockGroup(Regions.GilneasUnlock5, FourCC("LTrc"), 1));
-
-      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
-        : completingFaction.Player;
-
-      rescuer.RescueGroup(_rescueUnits);
-    }
-
-    private static bool RescuableFilter(unit filterUnit) => GetUnitTypeId(filterUnit) != UNIT_O05Q_GREYMANETOWER_GILNEAS_REAL_TOWER;
+    ResearchId = UPGRADE_R02R_QUEST_COMPLETED_LIBERATION_OF_GILNEAS;
   }
+
+  /// <inheritdoc/>
+  public override string RewardFlavour => "Southern Lordaeron has been Secured, The Cursed Kingdom rallies to our cause!";
+
+  /// <inheritdoc/>
+  protected override string RewardDescription => "Gain control of the Greymane Wall and Gilneas City. Enable to train Genn Greymane and the Worgen units.";
+
+  /// <inheritdoc/>
+  protected override void OnComplete(Faction completingFaction)
+  {
+    foreach (var unit in _rescueUnits)
+    {
+      unit.Rescue(completingFaction.Player);
+    }
+
+    completingFaction.Player?.PlayMusicThematic("war3mapImported\\GilneasTheme1.mp3");
+
+    RockSystem.Register(new RockGroup(Regions.GilneasUnlock5, FourCC("LTrc"), 1));
+  }
+
+  /// <inheritdoc/>
+  protected override void OnFail(Faction completingFaction)
+  {
+    if (completingFaction.Player == null)
+    {
+      return;
+    }
+
+    RockSystem.Register(new RockGroup(Regions.GilneasUnlock5, FourCC("LTrc"), 1));
+
+    var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      : completingFaction.Player;
+
+    rescuer.RescueGroup(_rescueUnits);
+  }
+
+  private static bool RescuableFilter(unit filterUnit) => GetUnitTypeId(filterUnit) != UNIT_O05Q_GREYMANETOWER_GILNEAS_REAL_TOWER;
 }

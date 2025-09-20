@@ -1,24 +1,25 @@
 ﻿using MacroTools.Extensions;
 using WCSharp.Events;
 
-namespace WarcraftLegacies.Source.GameLogic
+namespace WarcraftLegacies.Source.GameLogic;
+
+/// <summary>
+/// When units are summoned by buildings, send them to attack-move towards their rally points.
+/// </summary>
+public static class SummonRallyPoints
 {
   /// <summary>
-  /// When units are summoned by buildings, send them to attack-move towards their rally points.
+  /// Sets up <see cref="SummonRallyPoints"/>.
   /// </summary>
-  public static class SummonRallyPoints
+  public static void Setup()
   {
-    /// <summary>
-    /// Sets up <see cref="SummonRallyPoints"/>.
-    /// </summary>
-    public static void Setup()
+    PlayerUnitEvents.Register(UnitTypeEvent.IsSummoned, () =>
     {
-      PlayerUnitEvents.Register(UnitTypeEvent.IsSummoned, () =>
+      var summoningUnit = GetSummoningUnit();
+      if (IsUnitType(summoningUnit, UNIT_TYPE_STRUCTURE))
       {
-        var summoningUnit = GetSummoningUnit();
-        if (IsUnitType(summoningUnit, UNIT_TYPE_STRUCTURE))
-          GetSummonedUnit().IssueOrder("attack", summoningUnit.GetRallyPoint());
-      });
-    }
+        GetSummonedUnit().IssueOrder("attack", summoningUnit.GetRallyPoint());
+      }
+    });
   }
 }

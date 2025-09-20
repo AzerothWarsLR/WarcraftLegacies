@@ -2,49 +2,50 @@
 using MacroTools.PassiveAbilitySystem;
 using WCSharp.Buffs;
 
-namespace MacroTools.PassiveAbilities
+namespace MacroTools.PassiveAbilities;
+
+/// <summary>
+/// Any unit with this effect increases its owner's income.
+/// </summary>
+public sealed class ProvidesIncome : PassiveAbility, IEffectOnUpgrade, IEffectOnConstruction, IEffectOnCreated
 {
+  private readonly int _income;
+
   /// <summary>
-  /// Any unit with this effect increases its owner's income.
+  /// Initializes a new instance of the <see cref="ProvidesIncome"/> class.
   /// </summary>
-  public sealed class ProvidesIncome : PassiveAbility, IEffectOnUpgrade, IEffectOnConstruction, IEffectOnCreated
+  /// <param name="unitTypeId"><inheritdoc /></param>
+  /// <param name="income">The amount of extra gold income the unit grants.</param>
+  public ProvidesIncome(int unitTypeId, int income) : base(unitTypeId)
   {
-    private readonly int _income;
+    _income = income;
+  }
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="ProvidesIncome"/> class.
-    /// </summary>
-    /// <param name="unitTypeId"><inheritdoc /></param>
-    /// <param name="income">The amount of extra gold income the unit grants.</param>
-    public ProvidesIncome(int unitTypeId, int income) : base(unitTypeId)
-    {
-      _income = income;
-    }
+  private void ApplyBuff()
+  {
+    var triggerUnit = GetTriggerUnit();
+    var buff = new IncomeBuff(triggerUnit, triggerUnit, _income);
+    BuffSystem.Add(buff, StackBehaviour.Stack);
+  }
 
-    private void ApplyBuff()
-    {
-      var triggerUnit = GetTriggerUnit();
-      var buff = new IncomeBuff(triggerUnit, triggerUnit, _income);
-      BuffSystem.Add(buff, StackBehaviour.Stack);
-    }
+  /// <inheritdoc />
+  public void OnUpgrade()
+  {
+    ApplyBuff();
+  }
 
-    /// <inheritdoc />
-    public void OnUpgrade()
+  /// <inheritdoc />
+  public void OnConstruction()
+  {
+    ApplyBuff();
+  }
+
+  /// <inheritdoc />
+  public void OnCreated(unit createdUnit)
+  {
+    if (!IsUnitType(createdUnit, UNIT_TYPE_STRUCTURE))
     {
       ApplyBuff();
-    }
-
-    /// <inheritdoc />
-    public void OnConstruction()
-    {
-      ApplyBuff();
-    }
-
-    /// <inheritdoc />
-    public void OnCreated(unit createdUnit)
-    {
-      if (!IsUnitType(createdUnit, UNIT_TYPE_STRUCTURE)) 
-        ApplyBuff();
     }
   }
 }

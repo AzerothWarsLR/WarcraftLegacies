@@ -1,32 +1,31 @@
 ﻿using System;
 
-namespace MacroTools.Wrappers
+namespace MacroTools.Wrappers;
+
+public sealed class TriggerWrapper : IDisposable
 {
-  public sealed class TriggerWrapper : IDisposable
+  public TriggerWrapper()
   {
-    public TriggerWrapper()
-    {
-      Trigger = CreateTrigger();
-    }
+    Trigger = CreateTrigger();
+  }
 
-    public trigger Trigger { get; }
+  public trigger Trigger { get; }
 
-    /// <inheritdoc />
-    public void Dispose() => DestroyTrigger(Trigger);
+  /// <inheritdoc />
+  public void Dispose() => DestroyTrigger(Trigger);
 
-    public void RegisterUnitEvent(unit whichUnit, unitevent whichEvent)
-    {
-      TriggerRegisterUnitEvent(Trigger, whichUnit, whichEvent);
-    }
+  public void RegisterUnitEvent(unit whichUnit, unitevent whichEvent)
+  {
+    TriggerRegisterUnitEvent(Trigger, whichUnit, whichEvent);
+  }
 
-    public void RegisterFrameEvent(framehandle frame, frameeventtype frameeventtype)
-    {
-      BlzTriggerRegisterFrameEvent(Trigger, frame, frameeventtype);
-    }
+  public void RegisterFrameEvent(framehandle frame, frameeventtype frameeventtype)
+  {
+    BlzTriggerRegisterFrameEvent(Trigger, frame, frameeventtype);
+  }
 
-    public void AddAction(Action actionFunc)
-    {
-      TriggerAddAction(Trigger, actionFunc);
-    }
+  public void AddAction(Action actionFunc)
+  {
+    TriggerAddAction(Trigger, actionFunc);
   }
 }

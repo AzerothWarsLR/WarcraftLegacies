@@ -1,54 +1,53 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace MacroTools.Libraries
+namespace MacroTools.Libraries;
+
+/// <summary>
+/// Static unit event system that provides unit death and damage event listeners.
+/// </summary>
+public static class UnitEventSystem
 {
-  /// <summary>
-  /// Static unit event system that provides unit death and damage event listeners.
-  /// </summary>
-  public static class UnitEventSystem
+  // Stores the mapping between unit IDs and death event callbacks
+  private static readonly Dictionary<int, System.Action> _unitDeathCallbacks = new Dictionary<int, System.Action>();
+
+  // Static constructor that initializes the system automatically
+  static UnitEventSystem()
   {
-    // Stores the mapping between unit IDs and death event callbacks
-    private static readonly Dictionary<int, System.Action> UnitDeathCallbacks = new Dictionary<int, System.Action>();
+    InitializeDeathTrigger();
+  }
 
-    // Static constructor that initializes the system automatically
-    static UnitEventSystem()
+  private static void InitializeDeathTrigger()
+  {
+    var trigger = CreateTrigger();
+
+    // Register unit death events for all players
+    for (var playerId = 0; playerId < 24; playerId++)
     {
-      InitializeDeathTrigger();
+      TriggerRegisterPlayerUnitEvent(trigger, Player(playerId),
+          EVENT_PLAYER_UNIT_DEATH, null);
     }
 
-    private static void InitializeDeathTrigger()
+    TriggerAddAction(trigger, OnUnitDeath);
+  }
+
+  private static void OnUnitDeath()
+  {
+    var dyingUnit = GetTriggerUnit();
+    var unitId = GetHandleId(dyingUnit);
+
+    if (_unitDeathCallbacks.TryGetValue(unitId, out var callback))
     {
-      var trigger = CreateTrigger();
-
-      // Register unit death events for all players
-      for (var playerId = 0; playerId < 24; playerId++)
-      {
-        TriggerRegisterPlayerUnitEvent(trigger, Player(playerId),
-            EVENT_PLAYER_UNIT_DEATH, null);
-      }
-
-      TriggerAddAction(trigger, OnUnitDeath);
+      callback();
+      _unitDeathCallbacks.Remove(unitId); // Remove the triggered callback
     }
+  }
 
-    private static void OnUnitDeath()
-    {
-      var dyingUnit = GetTriggerUnit();
-      var unitId = GetHandleId(dyingUnit);
-
-      if (UnitDeathCallbacks.TryGetValue(unitId, out var callback))
-      {
-        callback();
-        UnitDeathCallbacks.Remove(unitId); // Remove the triggered callback
-      }
-    }
-
-    /// <summary>
-    /// Registers a callback for a unit death event.
-    /// </summary>
-    public static void RegisterDeathEvent(unit unit, System.Action callback)
-    {
-      var unitId = GetHandleId(unit);
-      UnitDeathCallbacks[unitId] = callback;
-    }
+  /// <summary>
+  /// Registers a callback for a unit death event.
+  /// </summary>
+  public static void RegisterDeathEvent(unit unit, System.Action callback)
+  {
+    var unitId = GetHandleId(unit);
+    _unitDeathCallbacks[unitId] = callback;
   }
 }

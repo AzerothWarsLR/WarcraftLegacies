@@ -9,9 +9,9 @@ namespace WarcraftLegacies.Source.Spells.MassiveAttack;
 public sealed class MassiveAttackProjectile : BasicMissile
 {
   public required float Damage { get; init; }
-  
+
   public required attacktype AttackType { get; init; }
-  
+
   public required damagetype DamageType { get; init; }
 
   /// <summary>
@@ -31,16 +31,18 @@ public sealed class MassiveAttackProjectile : BasicMissile
   public override void OnCollision(unit unit)
   {
     if (!IsValidTarget(Caster, unit))
+    {
       return;
-    
+    }
+
     UnitDamageTarget(Caster, unit, Damage, false, false, AttackType, DamageType, WEAPON_TYPE_WHOKNOWS);
     Hits.Add(unit);
   }
-  
+
   private bool IsValidTarget(unit target, unit caster) =>
     UnitAlive(target) &&
     !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
     !IsUnitType(target, UNIT_TYPE_ANCIENT) &&
     !IsPlayerAlly(GetOwningPlayer(caster), GetOwningPlayer(target))
-    |Hits.Contains(target);
+    | Hits.Contains(target);
 }

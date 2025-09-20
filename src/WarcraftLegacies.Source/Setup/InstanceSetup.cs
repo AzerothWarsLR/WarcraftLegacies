@@ -2,36 +2,35 @@
 using MacroTools.Instances;
 using MacroTools.Systems;
 
-namespace WarcraftLegacies.Source.Setup
+namespace WarcraftLegacies.Source.Setup;
+
+/// <summary>
+/// Responsible for setting up all <see cref="Instance"/>s.
+/// </summary>
+public static class InstanceSetup
 {
   /// <summary>
-  /// Responsible for setting up all <see cref="Instance"/>s.
+  /// Sets up all <see cref="Instance"/>s.
   /// </summary>
-  public static class InstanceSetup
+  public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
   {
-    /// <summary>
-    /// Sets up all <see cref="Instance"/>s.
-    /// </summary>
-    public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
-    {
-      InstanceSystem.Register(
-        new Instance(Regions.MonolithNoBuild)
-      );
+    InstanceSystem.Register(
+      new Instance(Regions.MonolithNoBuild)
+    );
 
-      InstanceSystem.Register(
-        new Instance(Regions.InstanceOutland)
-      );
+    InstanceSystem.Register(
+      new Instance(Regions.InstanceOutland)
+    );
 
-      var proudmooreFlagshipUnit = preplacedUnitSystem.GetUnit(UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS);
-      var proudmooreFlagshipInterior = new Instance(Regions.ShipAmbient);
-      proudmooreFlagshipInterior.AddDependency(proudmooreFlagshipUnit);
-      proudmooreFlagshipInterior.AddDependency(preplacedUnitSystem.GetUnit(UNIT_H09D_FLEETMASTER_S_TABLE_KUL_TIRAS_OTHER));
-      proudmooreFlagshipInterior.AddGate(new Gate(
-        () => Regions.ShipInside.Center,
-        () => proudmooreFlagshipUnit.GetPosition()));
-      InstanceSystem.Register(proudmooreFlagshipInterior);
+    var proudmooreFlagshipUnit = preplacedUnitSystem.GetUnit(UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS);
+    var proudmooreFlagshipInterior = new Instance(Regions.ShipAmbient);
+    proudmooreFlagshipInterior.AddDependency(proudmooreFlagshipUnit);
+    proudmooreFlagshipInterior.AddDependency(preplacedUnitSystem.GetUnit(UNIT_H09D_FLEETMASTER_S_TABLE_KUL_TIRAS_OTHER));
+    proudmooreFlagshipInterior.AddGate(new Gate(
+      () => Regions.ShipInside.Center,
+      () => proudmooreFlagshipUnit.GetPosition()));
+    InstanceSystem.Register(proudmooreFlagshipInterior);
 
-      InstanceSystem.Register(new Instance(Regions.ArtifactDummyInstance));
-    }
+    InstanceSystem.Register(new Instance(Regions.ArtifactDummyInstance));
   }
 }

@@ -1,171 +1,170 @@
-using System;
+﻿using System;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.UserInterface;
 using MacroTools.Utils;
 
-namespace WarcraftLegacies.Source.FactionMechanics.Warsong
+namespace WarcraftLegacies.Source.FactionMechanics.Warsong;
+
+public sealed class WarsongPillageDialogPresenter : ChoiceDialogPresenter<WarsongPillageChoice>
 {
-  public sealed class WarsongPillageDialogPresenter : ChoiceDialogPresenter<WarsongPillageChoice>
+  private readonly unit _grom;
+  private bool _rewardsGranted;
+
+  public WarsongPillageDialogPresenter(unit grom, params WarsongPillageChoice[] choices)
+    : base(choices, "Choose their fate")
   {
-    private readonly unit _grom;
-    private bool _rewardsGranted;
+    _grom = grom ?? throw new ArgumentNullException(nameof(grom));
+  }
 
-    public WarsongPillageDialogPresenter(unit grom, params WarsongPillageChoice[] choices)
-      : base(choices, "Choose their fate")
+  protected override void OnChoicePicked(player pickingPlayer, WarsongPillageChoice choice)
+  {
+    if (choice == null || _rewardsGranted)
     {
-      _grom = grom ?? throw new ArgumentNullException(nameof(grom));
+      return;
+    }
+    _rewardsGranted = true;
+
+
+    if (choice.Type == PillageChoiceType.Pillage)
+    {
+      HandlePillageChoice(pickingPlayer, choice);
     }
 
-    protected override void OnChoicePicked(player pickingPlayer, WarsongPillageChoice choice)
+
+    else if (choice.Type == PillageChoiceType.Subdue)
     {
-      if (choice == null || _rewardsGranted)
-      {
-        return;
-      }
-      _rewardsGranted = true;
-
- 
-      if (choice.Type == PillageChoiceType.Pillage)
-      {
-        HandlePillageChoice(pickingPlayer, choice);
-      }
-
-
-      else if (choice.Type == PillageChoiceType.Subdue)
-      {
-        HandleSubdueChoice(pickingPlayer, choice);
-      }
+      HandleSubdueChoice(pickingPlayer, choice);
     }
+  }
 
-    private void HandlePillageChoice(player pickingPlayer, WarsongPillageChoice choice)
+  private void HandlePillageChoice(player pickingPlayer, WarsongPillageChoice choice)
+  {
+
+    pickingPlayer.AddGold(choice.GoldReward);
+
+    var heroes = GlobalGroup.EnumUnitsOfPlayer(pickingPlayer)
+      .Where(unit => IsUnitType(unit, UNIT_TYPE_HERO))
+      .ToList();
+
+    if (heroes.Any())
     {
-   
-      pickingPlayer.AddGold(choice.GoldReward);
+      var heroCount = heroes.Count;
+      double multiplier;
 
-      var heroes = GlobalGroup.EnumUnitsOfPlayer(pickingPlayer)
-        .Where(unit => IsUnitType(unit, UNIT_TYPE_HERO))
-        .ToList();
-
-      if (heroes.Any())
+      switch (heroCount)
       {
-        var heroCount = heroes.Count;
-        double multiplier;
-
-        switch (heroCount)
-        {
-          case 1:
-            multiplier = 0.50;
-            break;
-          case 2:
-            multiplier = 0.75;
-            break;
-          default:
-            multiplier = 1.0;
-            break;
-        }
-
-        var splitExperience = (int)(choice.ExperienceReward * multiplier / heroCount);
-        foreach (var hero in heroes)
-        {
-          AddHeroXP(hero, splitExperience, true);
-        }
+        case 1:
+          multiplier = 0.50;
+          break;
+        case 2:
+          multiplier = 0.75;
+          break;
+        default:
+          multiplier = 1.0;
+          break;
       }
 
-
-      if (choice.ArtifactRewardItemType.HasValue && _grom != null)
+      var splitExperience = (int)(choice.ExperienceReward * multiplier / heroCount);
+      foreach (var hero in heroes)
       {
-        var artifactItem = CreateItem(
-          choice.ArtifactRewardItemType.Value,
-          Regions.ArtifactDummyInstance.Center.X,
-          Regions.ArtifactDummyInstance.Center.Y
-        );
-        UnitAddItem(_grom, artifactItem);
-      }
-
-
-      if (choice.ResearchReward > 0)
-      {
-        var faction = FactionManager.GetAllFactions()
-          .FirstOrDefault(f => f.Player == pickingPlayer);
-
-        if (faction != null)
-        {
-          faction.ModObjectLimit(choice.ResearchReward, Faction.UNLIMITED);
-          faction.SetObjectLevel(choice.ResearchReward, 1);
-        }
-      }
-
-
-      foreach (var unit in GlobalGroup.EnumUnitsInRect(choice.Location)
-                 .Where(unit => IsUnitType(unit, UNIT_TYPE_STRUCTURE) &&
-                                (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE) ||
-                                 GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))))
-      {
-        unit.SetLifePercent(15);
+        AddHeroXP(hero, splitExperience, true);
       }
     }
 
-    private void HandleSubdueChoice(player pickingPlayer, WarsongPillageChoice choice)
+
+    if (choice.ArtifactRewardItemType.HasValue && _grom != null)
     {
-      if (choice.ResearchReward > 0)
+      var artifactItem = CreateItem(
+        choice.ArtifactRewardItemType.Value,
+        Regions.ArtifactDummyInstance.Center.X,
+        Regions.ArtifactDummyInstance.Center.Y
+      );
+      UnitAddItem(_grom, artifactItem);
+    }
+
+
+    if (choice.ResearchReward > 0)
+    {
+      var faction = FactionManager.GetAllFactions()
+        .FirstOrDefault(f => f.Player == pickingPlayer);
+
+      if (faction != null)
       {
-        var faction = FactionManager.GetAllFactions()
-          .FirstOrDefault(f => f.Player == pickingPlayer);
+        faction.ModObjectLimit(choice.ResearchReward, Faction.Unlimited);
+        faction.SetObjectLevel(choice.ResearchReward, 1);
+      }
+    }
 
-        if (faction != null)
+
+    foreach (var unit in GlobalGroup.EnumUnitsInRect(choice.Location)
+               .Where(unit => IsUnitType(unit, UNIT_TYPE_STRUCTURE) &&
+                              (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE) ||
+                               GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))))
+    {
+      unit.SetLifePercent(15);
+    }
+  }
+
+  private void HandleSubdueChoice(player pickingPlayer, WarsongPillageChoice choice)
+  {
+    if (choice.ResearchReward > 0)
+    {
+      var faction = FactionManager.GetAllFactions()
+        .FirstOrDefault(f => f.Player == pickingPlayer);
+
+      if (faction != null)
+      {
+        faction.ModObjectLimit(choice.ResearchReward, Faction.Unlimited);
+        faction.SetObjectLevel(choice.ResearchReward, 1);
+
+        var rescueUnits = choice.Location.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+        faction.Player.RescueGroup(rescueUnits);
+
+        foreach (var unit in rescueUnits)
         {
-          faction.ModObjectLimit(choice.ResearchReward, Faction.UNLIMITED);
-          faction.SetObjectLevel(choice.ResearchReward, 1);
+          BlzPauseUnitEx(unit, false);
+        }
 
-          var rescueUnits = choice.Location.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-          faction.Player.RescueGroup(rescueUnits);
 
-          foreach (var unit in rescueUnits)
-          {
-            BlzPauseUnitEx(unit, false);
-          }
-
- 
-          if (choice.UnitUpgrade != null)
-          {
-            ApplyUnitUpgrade(faction, choice.UnitUpgrade);
-          }
+        if (choice.UnitUpgrade != null)
+        {
+          ApplyUnitUpgrade(faction, choice.UnitUpgrade);
         }
       }
     }
+  }
 
-    private void ApplyUnitUpgrade(Faction faction, UnitUpgrade upgrade)
+  private void ApplyUnitUpgrade(Faction faction, UnitUpgrade upgrade)
+  {
+    if (faction == null || upgrade == null)
     {
-      if (faction == null || upgrade == null)
-      {
-        Console.WriteLine("UnitUpgrade failed: Either faction or upgrade is null.");
-        return;
-      }
-
-
-      if (upgrade.RemoveUnit != 0)
-      {
-        faction.ModObjectLimit(upgrade.RemoveUnit, -Faction.UNLIMITED);
-      }
-
-    
-      if (upgrade.AddUnit != 0)
-      {
-        faction.ModObjectLimit(upgrade.AddUnit, Faction.UNLIMITED);
-      }
+      Console.WriteLine("UnitUpgrade failed: Either faction or upgrade is null.");
+      return;
     }
 
 
-    protected override WarsongPillageChoice GetDefaultChoice(player whichPlayer)
+    if (upgrade.RemoveUnit != 0)
     {
-      return Choices.FirstOrDefault();
+      faction.ModObjectLimit(upgrade.RemoveUnit, -Faction.Unlimited);
     }
 
-    protected override bool IsChoiceActive(player whichPlayer, WarsongPillageChoice choice)
+
+    if (upgrade.AddUnit != 0)
     {
-      return true;
+      faction.ModObjectLimit(upgrade.AddUnit, Faction.Unlimited);
     }
+  }
+
+
+  protected override WarsongPillageChoice GetDefaultChoice(player whichPlayer)
+  {
+    return Choices.FirstOrDefault();
+  }
+
+  protected override bool IsChoiceActive(player whichPlayer, WarsongPillageChoice choice)
+  {
+    return true;
   }
 }

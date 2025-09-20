@@ -2,22 +2,23 @@
 using MacroTools.BookSystem.Core;
 using MacroTools.BookSystem.Powers;
 
-namespace TestMap.Source.Setup
+namespace TestMap.Source.Setup;
+
+/// <summary>
+/// Responsible for setting up all <see cref="ISpecialMenu"/>s.
+/// </summary>
+public static class BookSetup
 {
   /// <summary>
-  /// Responsible for setting up all <see cref="ISpecialMenu"/>s.
+  /// Sets up all <see cref="ISpecialMenu"/>s.
   /// </summary>
-  public static class BookSetup
+  public static void Setup()
   {
-    /// <summary>
-    /// Sets up all <see cref="ISpecialMenu"/>s.
-    /// </summary>
-    public static void Setup()
+    foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers()) 
-        SpecialMenuManager.Register(PowerBook.Create(player), player);
-      
-      SpecialMenuManager.Register(new ArtifactBook());
+      SpecialMenuManager.Register(PowerBook.Create(player), player);
     }
+
+    SpecialMenuManager.Register(new ArtifactBook());
   }
 }

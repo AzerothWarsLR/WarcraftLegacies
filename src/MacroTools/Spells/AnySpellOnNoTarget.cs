@@ -2,25 +2,24 @@
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.Spells
+namespace MacroTools.Spells;
+
+public sealed class AnySpellNoTarget : Spell
 {
-    public sealed class AnySpellNoTarget : Spell
-    {
-        public int DummyAbilityId { get; init; }
-        public int DummyAbilityOrderId { get; init; }
+  public int DummyAbilityId { get; init; }
+  public int DummyAbilityOrderId { get; init; }
 
-        public AnySpellNoTarget(int id) : base(id)
-        {
-        }
+  public AnySpellNoTarget(int id) : base(id)
+  {
+  }
 
-        public override void OnCast(unit caster, unit target, Point targetPoint)
-        {
-            DummyCasterManager.GetGlobalDummyCaster().CastNoTarget(
-                caster,
-                DummyAbilityId,
-                DummyAbilityOrderId,
-                GetAbilityLevel(caster)
-            );
-        }
-    }
+  public override void OnCast(unit caster, unit target, Point targetPoint)
+  {
+    DummyCasterManager.GetGlobalDummyCaster().CastNoTarget(
+        caster,
+        DummyAbilityId,
+        DummyAbilityOrderId,
+        GetAbilityLevel(caster)
+    );
+  }
 }

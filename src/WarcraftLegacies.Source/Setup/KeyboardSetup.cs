@@ -1,18 +1,16 @@
 ﻿using WarcraftLegacies.Source.KeyboardManager;
 
-namespace WarcraftLegacies.Source.Setup
+namespace WarcraftLegacies.Source.Setup;
+
+public static class KeyboardSetup
 {
-  public static class KeyboardSetup
+  public static void InitializeKeyboard()
   {
-    public static void InitializeKeyboard()
+    for (var i = 0; i < 24; i++)
     {
-      for (int i = 0; i < 24; i++) 
-      {
-        var player = Player(i);
-        var hotkeyManager = new HeroHotkeyManager();
-        hotkeyManager.Initialize(player);
-      }
+      var player = Player(i);
+      var hotkeyManager = new HeroHotkeyManager();
+      hotkeyManager.Initialize(player);
     }
   }
-
 }

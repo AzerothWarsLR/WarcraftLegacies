@@ -7,47 +7,48 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Quests.Gilneas
+namespace WarcraftLegacies.Source.Quests.Gilneas;
+
+/// <summary>
+/// Capture control points close to Keel Harbor to gain control of it.
+/// </summary>
+public sealed class QuestShadowfangKeep : QuestData
 {
-  /// <summary>
-  /// Capture control points close to Keel Harbor to gain control of it.
-  /// </summary>
-  public sealed class QuestShadowfangKeep: QuestData
+  private readonly List<unit> _rescueUnits;
+
+  public QuestShadowfangKeep(Rectangle rescueRect) : base("Shadowfang Keep",
+    "Shadowfang and Ambermill are under seige by hostile creatures we must clear them out so that they can help us secure our lost lands.",
+    @"ReplaceableTextures\CommandButtons\BTNworgen.blp")
   {
-    private readonly List<unit> _rescueUnits;
+    AddObjective(new ObjectiveControlPoint(UNIT_N01D_SILVERPINE_FOREST));
+    AddObjective(new ObjectiveExpire(660, Title));
+    AddObjective(new ObjectiveSelfExists());
+    _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
 
-    public QuestShadowfangKeep(Rectangle rescueRect) : base("Shadowfang Keep", 
-      "Shadowfang and Ambermill are under seige by hostile creatures we must clear them out so that they can help us secure our lost lands.",
-      @"ReplaceableTextures\CommandButtons\BTNworgen.blp")
+  }
+
+  /// <inheritdoc/>
+  public override string RewardFlavour => "Shadowfang and Ambermill has been liberated, and its military is now free to assist Gilneas.";
+
+  /// <inheritdoc/>
+  protected override string RewardDescription => "Control of all buildings and units in Shadowfang.";
+
+  /// <inheritdoc/>
+  protected override void OnComplete(Faction completingFaction)
+  {
+    foreach (var unit in _rescueUnits)
     {
-      AddObjective(new ObjectiveControlPoint(UNIT_N01D_SILVERPINE_FOREST));
-      AddObjective(new ObjectiveExpire(660, Title));
-      AddObjective(new ObjectiveSelfExists());
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-
+      unit.Rescue(completingFaction.Player);
     }
+  }
 
-    /// <inheritdoc/>
-    public override string RewardFlavour => "Shadowfang and Ambermill has been liberated, and its military is now free to assist Gilneas.";
+  /// <inheritdoc/>
+  protected override void OnFail(Faction completingFaction)
+  {
+    var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      : completingFaction.Player;
 
-    /// <inheritdoc/>
-    protected override string RewardDescription => "Control of all buildings and units in Shadowfang.";
-
-    /// <inheritdoc/>
-    protected override void OnComplete(Faction completingFaction)
-    {
-      foreach (var unit in _rescueUnits)
-        unit.Rescue(completingFaction.Player);
-    }
-
-    /// <inheritdoc/>
-    protected override void OnFail(Faction completingFaction)
-    {
-      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
-        : completingFaction.Player;
-
-      rescuer.RescueGroup(_rescueUnits);
-    }
+    rescuer.RescueGroup(_rescueUnits);
   }
 }

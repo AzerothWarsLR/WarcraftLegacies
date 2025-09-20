@@ -5,78 +5,83 @@ using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using Environment = MacroTools.Libraries.Environment;
 
-namespace MacroTools.Buffs
+namespace MacroTools.Buffs;
+
+public sealed class DelayedRecallBuff : PassiveBuff
 {
-  public sealed class DelayedRecallBuff : PassiveBuff
+  /// <summary>
+  /// The units that should be moved when the buff is disposed off.
+  /// </summary>
+  private List<unit> UnitsToMove { get; }
+
+  /// <summary>
+  /// The point of the casting unit when first cast.
+  /// </summary>
+  private Point TargetPosition { get; }
+
+  /// <summary>The percentage of units to lose when the caster dies (rounded down)</summary>
+  public float DeathPenalty { get; init; }
+
+  /// <summary>
+  /// The effect that is created when the buff is applied.
+  /// </summary>
+  private new effect? Effect { get; set; }
+
+  private effect? _progressEffect;
+
+  /// <inheritdoc />
+  public DelayedRecallBuff(unit caster, unit target, List<unit> unitsToMove) : base(caster, target)
   {
-    /// <summary>
-    /// The units that should be moved when the buff is disposed off.
-    /// </summary>
-    private List<unit> UnitsToMove { get;}
-    
-    /// <summary>
-    /// The point of the casting unit when first cast.
-    /// </summary>
-    private Point TargetPosition { get; }
-    
-    /// <summary>The percentage of units to lose when the caster dies (rounded down)</summary>
-    public float DeathPenalty { get; init; }
-    
-    /// <summary>
-    /// The effect that is created when the buff is applied.
-    /// </summary>
-    private new effect? Effect { get; set; }
+    UnitsToMove = unitsToMove;
+    TargetPosition = new Point(GetUnitX(caster), GetUnitY(caster));
+  }
 
-    private effect? _progressEffect;
-
-    /// <inheritdoc />
-    public DelayedRecallBuff(unit caster, unit target, List<unit> unitsToMove) : base(caster, target)
+  /// <inheritdoc />
+  public override void OnApply()
+  {
+    foreach (var unit in UnitsToMove)
     {
-      UnitsToMove = unitsToMove;
-      TargetPosition =  new Point(GetUnitX(caster), GetUnitY(caster));
-    }
-    
-    /// <inheritdoc />
-    public override void OnApply()
-    {
-      foreach (var unit in UnitsToMove)
-      {
-        ShowUnit(unit, false);
-        SetUnitInvulnerable(unit, true);
-      }
-
-      Effect = AddSpecialEffect(@"Abilities\Spells\Undead\Darksummoning\DarkSummonTarget.mdl", TargetPosition.X,
-        TargetPosition.Y);
-
-      _progressEffect = AddSpecialEffect("war3mapImported\\Progressbar10sec.mdx", TargetPosition.X, TargetPosition.Y);
-      BlzSetSpecialEffectTimeScale(_progressEffect, 10 / Duration);
-      BlzSetSpecialEffectColorByPlayer(_progressEffect, GetOwningPlayer(Caster));
-      BlzSetSpecialEffectHeight(_progressEffect, 185f + Environment.GetPositionZ(TargetPosition));
+      ShowUnit(unit, false);
+      SetUnitInvulnerable(unit, true);
     }
 
-    /// <inheritdoc />
-    /// <inheritdoc />
-    public override void OnDispose()
+    Effect = AddSpecialEffect(@"Abilities\Spells\Undead\Darksummoning\DarkSummonTarget.mdl", TargetPosition.X,
+      TargetPosition.Y);
+
+    _progressEffect = AddSpecialEffect("war3mapImported\\Progressbar10sec.mdx", TargetPosition.X, TargetPosition.Y);
+    BlzSetSpecialEffectTimeScale(_progressEffect, 10 / Duration);
+    BlzSetSpecialEffectColorByPlayer(_progressEffect, GetOwningPlayer(Caster));
+    BlzSetSpecialEffectHeight(_progressEffect, 185f + Environment.GetPositionZ(TargetPosition));
+  }
+
+  /// <inheritdoc />
+  /// <inheritdoc />
+  public override void OnDispose()
+  {
+    if (Effect != null)
     {
-      if (Effect != null) 
-        DestroyEffect(Effect);
+      DestroyEffect(Effect);
+    }
 
-      if (_progressEffect != null) 
-        DestroyEffect(_progressEffect);
+    if (_progressEffect != null)
+    {
+      DestroyEffect(_progressEffect);
+    }
 
-      if (!UnitAlive(Caster))
+    if (!UnitAlive(Caster))
+    {
+      var amountToKill = (int)(UnitsToMove.Count * DeathPenalty);
+      foreach (var unit in UnitsToMove.Take(amountToKill))
       {
-        var amountToKill = (int)(UnitsToMove.Count * DeathPenalty);
-        foreach (var unit in UnitsToMove.Take(amountToKill)) 
-          KillUnit(unit);
+        KillUnit(unit);
       }
-      
-      foreach (var unit in UnitsToMove)
-      {
-        ShowUnit(unit, true);
-        unit.SetPosition(TargetPosition);
-        SetUnitInvulnerable(unit, false);
-      }
+    }
+
+    foreach (var unit in UnitsToMove)
+    {
+      ShowUnit(unit, true);
+      unit.SetPosition(TargetPosition);
+      SetUnitInvulnerable(unit, false);
     }
   }
 }

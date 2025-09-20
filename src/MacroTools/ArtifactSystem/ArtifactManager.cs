@@ -6,130 +6,137 @@ using MacroTools.Extensions;
 using MacroTools.ShoreSystem;
 using WCSharp.Events;
 
-namespace MacroTools.ArtifactSystem
+namespace MacroTools.ArtifactSystem;
+
+/// <summary>
+/// Manages all <see cref="Artifact"/>s by maintaining a list of registered <see cref="Artifact"/>s indexed by item type,
+/// and by firing <see cref="Artifact"/> related events.
+/// <para>When a hero carrying an <see cref="Artifact"/> dies, the <see cref="Artifact"/> is dropped to the floor,
+/// or to the nearest <see cref="Shore"/> if the hero died on the water.</para>
+/// </summary>
+public static class ArtifactManager
 {
+  private static readonly Dictionary<int, Artifact> _artifactsByType = new();
+  private static readonly Dictionary<string, Artifact> _artifactsByName = new();
+  private static readonly List<Artifact> _allArtifacts = new();
+
   /// <summary>
-  /// Manages all <see cref="Artifact"/>s by maintaining a list of registered <see cref="Artifact"/>s indexed by item type,
-  /// and by firing <see cref="Artifact"/> related events.
-  /// <para>When a hero carrying an <see cref="Artifact"/> dies, the <see cref="Artifact"/> is dropped to the floor,
-  /// or to the nearest <see cref="Shore"/> if the hero died on the water.</para>
+  /// Fired when an <see cref="Artifact"/> is newly registered to the system.
   /// </summary>
-  public static class ArtifactManager
+  public static event EventHandler<Artifact>? ArtifactRegistered;
+
+  /// <summary>
+  /// Returns the registered <see cref="Artifact"/> that represents the item with the provided item type ID.
+  /// If there isn't one, returns null.
+  /// </summary>
+  public static Artifact? GetFromTypeId(int typeId) =>
+    _artifactsByType.ContainsKey(typeId) ? _artifactsByType[typeId] : null;
+
+  /// <summary>
+  /// Returns the registered <see cref="Artifact"/> with the given name.
+  /// <para>Case insensitive.</para>
+  /// <para>Returns null if there is no match.</para>
+  /// </summary>
+  public static bool TryGetByName(string name, [NotNullWhen(true)] out Artifact? artifact)
   {
-    private static readonly Dictionary<int, Artifact> ArtifactsByType = new();
-    private static readonly Dictionary<string, Artifact> ArtifactsByName = new();
-    private static readonly List<Artifact> AllArtifacts = new();
+    artifact = _artifactsByName.TryGetValue(name.ToLower(), out var value) ? value : null;
+    return artifact != null;
+  }
 
-    /// <summary>
-    /// Fired when an <see cref="Artifact"/> is newly registered to the system.
-    /// </summary>
-    public static event EventHandler<Artifact>? ArtifactRegistered;
-
-    /// <summary>
-    /// Returns the registered <see cref="Artifact"/> that represents the item with the provided item type ID.
-    /// If there isn't one, returns null.
-    /// </summary>
-    public static Artifact? GetFromTypeId(int typeId) =>
-      ArtifactsByType.ContainsKey(typeId) ? ArtifactsByType[typeId] : null;
-
-    /// <summary>
-    /// Returns the registered <see cref="Artifact"/> with the given name.
-    /// <para>Case insensitive.</para>
-    /// <para>Returns null if there is no match.</para>
-    /// </summary>
-    public static bool TryGetByName(string name, [NotNullWhen(true)] out Artifact? artifact)
+  /// <summary>
+  /// Registers an <see cref="Artifact"/> to the <see cref="ArtifactManager"/>.
+  /// </summary>
+  public static void Register(Artifact artifact)
+  {
+    if (!_artifactsByType.ContainsKey(GetItemTypeId(artifact.Item)))
     {
-      artifact = ArtifactsByName.TryGetValue(name.ToLower(), out var value) ? value : null;
-      return artifact != null;
+      SetItemDropOnDeath(artifact.Item, false);
+      _artifactsByType[GetItemTypeId(artifact.Item)] = artifact;
+      _artifactsByName.Add(GetItemName(artifact.Item).ToLower(), artifact);
+      ArtifactRegistered?.Invoke(artifact, artifact);
+      _allArtifacts.Add(artifact);
     }
-
-    /// <summary>
-    /// Registers an <see cref="Artifact"/> to the <see cref="ArtifactManager"/>.
-    /// </summary>
-    public static void Register(Artifact artifact)
+    else
     {
-      if (!ArtifactsByType.ContainsKey(GetItemTypeId(artifact.Item)))
-      {
-        SetItemDropOnDeath(artifact.Item, false);
-        ArtifactsByType[GetItemTypeId(artifact.Item)] = artifact;
-        ArtifactsByName.Add(GetItemName(artifact.Item).ToLower(), artifact);
-        ArtifactRegistered?.Invoke(artifact, artifact);
-        AllArtifacts.Add(artifact);
-      }
-      else
-      {
-        throw new Exception($"Attempted to create already existing Artifact from {GetItemName(artifact.Item)}.");
-      }
+      throw new Exception($"Attempted to create already existing Artifact from {GetItemName(artifact.Item)}.");
     }
+  }
 
-    /// <summary>
-    /// Returns all <see cref="Artifact"/>s registered to the system.
-    /// </summary>
-    public static IEnumerable<Artifact> GetAllArtifacts() =>
-      AllArtifacts.AsReadOnly().OrderBy(a => GetItemName(a.Item));
+  /// <summary>
+  /// Returns all <see cref="Artifact"/>s registered to the system.
+  /// </summary>
+  public static IEnumerable<Artifact> GetAllArtifacts() =>
+    _allArtifacts.AsReadOnly().OrderBy(a => GetItemName(a.Item));
 
-    /// <summary>
-    /// Completely removes the given Artifact from the game.
-    /// </summary>
-    /// <param name="artifact"></param>
-    public static void Destroy(Artifact artifact)
+  /// <summary>
+  /// Completely removes the given Artifact from the game.
+  /// </summary>
+  /// <param name="artifact"></param>
+  public static void Destroy(Artifact artifact)
+  {
+    _allArtifacts.Remove(artifact);
+    _artifactsByType.Remove(GetItemTypeId(artifact.Item));
+    _artifactsByName.Remove(GetItemName(artifact.Item));
+    artifact.Dispose();
+  }
+
+  private static void RegisterItemSinkingPrevention()
+  {
+    //When a hero carrying an Artifact dies, the Artifact is dropped to the floor,
+    // or to the nearest Shore if the hero died on the water.
+    PlayerUnitEvents.Register(UnitTypeEvent.Dies, () =>
     {
-      AllArtifacts.Remove(artifact);
-      ArtifactsByType.Remove(GetItemTypeId(artifact.Item));
-      ArtifactsByName.Remove(GetItemName(artifact.Item));
-      artifact.Dispose();
-    }
-
-    private static void RegisterItemSinkingPrevention()
-    {
-      //When a hero carrying an Artifact dies, the Artifact is dropped to the floor,
-      // or to the nearest Shore if the hero died on the water.
-      PlayerUnitEvents.Register(UnitTypeEvent.Dies, () =>
+      try
       {
-        try
+        var triggerUnit = GetTriggerUnit();
+        if (IsUnitType(triggerUnit, UNIT_TYPE_SUMMONED) || IsUnitIllusion(triggerUnit))
         {
-          var triggerUnit = GetTriggerUnit();
-          if (IsUnitType(triggerUnit, UNIT_TYPE_SUMMONED) || IsUnitIllusion(triggerUnit))
-            return;
+          return;
+        }
 
-          bool? isPositionPathable = null;
-          for (var i = 0; i < 6; i++)
+        bool? isPositionPathable = null;
+        for (var i = 0; i < 6; i++)
+        {
+          var itemInSlot = UnitItemInSlot(triggerUnit, i);
+          if (itemInSlot == null || !BlzGetItemBooleanField(itemInSlot, ITEM_BF_CAN_BE_DROPPED))
           {
-            var itemInSlot = UnitItemInSlot(triggerUnit, i);
-            if (itemInSlot == null || !BlzGetItemBooleanField(itemInSlot, ITEM_BF_CAN_BE_DROPPED))
-              continue;
-            
-            var artifactInSlot = GetFromTypeId(GetItemTypeId(itemInSlot));
-            if (artifactInSlot == null) 
-              continue;
-            
-            isPositionPathable ??= !IsTerrainPathable(GetUnitX(triggerUnit), GetUnitY(triggerUnit), PATHING_TYPE_WALKABILITY);
+            continue;
+          }
 
-            if (isPositionPathable == true)
-              itemInSlot.SetPosition(triggerUnit.GetPosition());
-            else
+          var artifactInSlot = GetFromTypeId(GetItemTypeId(itemInSlot));
+          if (artifactInSlot == null)
+          {
+            continue;
+          }
+
+          isPositionPathable ??= !IsTerrainPathable(GetUnitX(triggerUnit), GetUnitY(triggerUnit), PATHING_TYPE_WALKABILITY);
+
+          if (isPositionPathable == true)
+          {
+            itemInSlot.SetPosition(triggerUnit.GetPosition());
+          }
+          else
+          {
+            var shore = ShoreManager.GetNearestShore(triggerUnit.GetPosition());
+            if (shore == null)
             {
-              var shore = ShoreManager.GetNearestShore(triggerUnit.GetPosition());
-              if (shore == null)
-              {
-                throw new InvalidOperationException(
-                  $"{nameof(ArtifactManager)} could not find a {nameof(Shore)} to dump an {nameof(Artifact)}.");
-              }
-
-              itemInSlot.SetPosition(shore.Position);
+              throw new InvalidOperationException(
+                $"{nameof(ArtifactManager)} could not find a {nameof(Shore)} to dump an {nameof(Artifact)}.");
             }
+
+            itemInSlot.SetPosition(shore.Position);
           }
         }
-        catch (Exception ex)
-        {
-          Console.WriteLine($"{nameof(ArtifactManager)} failed to handle a unit dying: {ex}");
-        }
-      });
-    }
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine($"{nameof(ArtifactManager)} failed to handle a unit dying: {ex}");
+      }
+    });
+  }
 
-    static ArtifactManager()
-    {
-      RegisterItemSinkingPrevention();
-    }
+  static ArtifactManager()
+  {
+    RegisterItemSinkingPrevention();
   }
 }

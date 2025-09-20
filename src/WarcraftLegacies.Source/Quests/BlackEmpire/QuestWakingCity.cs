@@ -11,60 +11,61 @@ using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Quests.BlackEmpire
-{ 
+namespace WarcraftLegacies.Source.Quests.BlackEmpire;
+
+/// <summary>
+/// Kill some creeps to gain Nzoth and unlock Nyalotha.
+/// </summary>
+public sealed class QuestWakingCity : QuestData
+{
+  private readonly AllLegendSetup _allLegendSetup;
+  private readonly List<unit> _rescueUnits;
+
   /// <summary>
-  /// Kill some creeps to gain Nzoth and unlock Nyalotha.
+  /// Initializes a new instance of the <see cref="QuestWakingCity"/> class.
   /// </summary>
-  public sealed class QuestWakingCity : QuestData
+  /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
+  /// <param name= "prerequisite">What quest is required to complete this.</param>
+  /// <param name= "allLegendSetup"> required to grab the hero.</param>
+  public QuestWakingCity(QuestData prerequisite, AllLegendSetup allLegendSetup, Rectangle rescueRect) : base("The Waking City",
+    "Adventurers from Azeroth are threatening me, your god. Annihilate them.",
+    @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
   {
-    private readonly AllLegendSetup _allLegendSetup;
-    private readonly List<unit> _rescueUnits;
+    AddObjective(new ObjectiveControlPoint(UNIT_NNYA_NY_ALOTHA_THE_WAKING_CITY));
+    AddObjective(new ObjectiveQuestComplete(prerequisite));
+    AddObjective(new ObjectiveExpire(660, Title));
+    AddObjective(new ObjectiveUpgrade(UNIT_N0AT_CATHEDRAL_OF_MADNESS_YOGG_T3, UNIT_N0AR_TWISTING_HALLS_YOGG_T1));
+    AddObjective(new ObjectiveSelfExists());
+    _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
+      filterUnit => GetUnitTypeId(filterUnit) != FourCC("ngol"));
+    ResearchId = UPGRADE_RBIT_QUEST_COMPLETED_THE_WAKING_CITY;
+    _allLegendSetup = allLegendSetup;
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="QuestWakingCity"/> class.
-    /// </summary>
-    /// <param name="rescueRect">Units in this area will start invulnerable and be rescued when the quest is complete.</param>
-    /// <param name= "prerequisite">What quest is required to complete this.</param>
-    /// <param name= "allLegendSetup"> required to grab the hero.</param>
-    public QuestWakingCity(QuestData prerequisite, AllLegendSetup allLegendSetup, Rectangle rescueRect) : base("The Waking City",
-      "Adventurers from Azeroth are threatening me, your god. Annihilate them.",
-      @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
+  }
+
+  /// <inheritdoc />
+  public override string RewardFlavour => "With the adventurer party destroyed, no one stands in my way.";
+
+  /// <inheritdoc />
+  protected override string RewardDescription => $"Gain control of all buildings in Ny'lotha, learn to build the {GetObjectName(UNIT_N0AX_MUTATION_CIRCLE_YOGG_SPECIALIST)}, and gain control of N'zoth";
+
+  /// <inheritdoc />
+  protected override void OnFail(Faction completingFaction)
+  {
+    var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      : completingFaction.Player;
+
+    rescuer.RescueGroup(_rescueUnits);
+  }
+
+  protected override void OnComplete(Faction completingFaction)
+  {
+    completingFaction.Player.RescueGroup(_rescueUnits);
+    var nzoth = _allLegendSetup.BlackEmpire.Nzoth.Unit;
+    if (nzoth != null)
     {
-      AddObjective(new ObjectiveControlPoint(UNIT_NNYA_NY_ALOTHA_THE_WAKING_CITY));
-      AddObjective(new ObjectiveQuestComplete(prerequisite));
-      AddObjective(new ObjectiveExpire(660, Title));
-      AddObjective(new ObjectiveUpgrade(UNIT_N0AT_CATHEDRAL_OF_MADNESS_YOGG_T3, UNIT_N0AR_TWISTING_HALLS_YOGG_T1));
-      AddObjective(new ObjectiveSelfExists());
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
-        filterUnit => GetUnitTypeId(filterUnit) != FourCC("ngol"));
-      ResearchId = UPGRADE_RBIT_QUEST_COMPLETED_THE_WAKING_CITY;
-      _allLegendSetup = allLegendSetup;
-
-    }
-
-    /// <inheritdoc />
-    public override string RewardFlavour => "With the adventurer party destroyed, no one stands in my way.";
-
-    /// <inheritdoc />
-    protected override string RewardDescription => $"Gain control of all buildings in Ny'lotha, learn to build the {GetObjectName(UNIT_N0AX_MUTATION_CIRCLE_YOGG_SPECIALIST)}, and gain control of N'zoth";
-
-    /// <inheritdoc />
-    protected override void OnFail(Faction completingFaction)
-    {
-      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
-        : completingFaction.Player;
-
-      rescuer.RescueGroup(_rescueUnits);
-    }
-
-    protected override void OnComplete(Faction completingFaction)
-    {
-      completingFaction.Player.RescueGroup(_rescueUnits);
-      var nzoth = _allLegendSetup.BlackEmpire.Nzoth.Unit;
-      if (nzoth != null)
-        PassiveAbilityManager.ForceOnCreated(nzoth);
+      PassiveAbilityManager.ForceOnCreated(nzoth);
     }
   }
 }

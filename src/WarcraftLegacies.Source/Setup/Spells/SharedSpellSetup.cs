@@ -2,20 +2,20 @@
 using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 
-namespace WarcraftLegacies.Source.Setup.Spells
+namespace WarcraftLegacies.Source.Setup.Spells;
+
+public static class SharedSpellSetup
 {
-  public static class SharedSpellSetup
+  public static void Setup()
   {
-    public static void Setup()
-    {
-      PassiveAbilityManager.Register(
-        new RestoreManaFromDamage(
-          new[]
-          {
-            UNIT_N0E7_BLOODWARDER_SUNFURY, 
-            UNIT_H05Y_LORD_WIZARD_STORMWIND,
-            UNIT_N0E8_SKYSHIP_SUNFURY
-          }, ABILITY_A11N_ARCANE_ABSORPTION_SUNFURY_STORMWIND)
+    PassiveAbilityManager.Register(
+      new RestoreManaFromDamage(
+        new[]
+        {
+          UNIT_N0E7_BLOODWARDER_SUNFURY,
+          UNIT_H05Y_LORD_WIZARD_STORMWIND,
+          UNIT_N0E8_SKYSHIP_SUNFURY
+        }, ABILITY_A11N_ARCANE_ABSORPTION_SUNFURY_STORMWIND)
       {
         ManaPerDamage = new LeveledAbilityField<float>
         {
@@ -25,7 +25,6 @@ namespace WarcraftLegacies.Source.Setup.Spells
         Effect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl"
       });
 
-      PassiveAbilityManager.Register(new ProvidesIncome(UNIT_NBOT_GOBLIN_PRIVATEER_NEUTRAL_GOBLIN, -2));
-    }
+    PassiveAbilityManager.Register(new ProvidesIncome(UNIT_NBOT_GOBLIN_PRIVATEER_NEUTRAL_GOBLIN, -2));
   }
 }

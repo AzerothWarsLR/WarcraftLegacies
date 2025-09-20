@@ -1,21 +1,20 @@
 ﻿using System;
 using MacroTools.QuestSystem;
 
-namespace MacroTools.FactionSystem
+namespace MacroTools.FactionSystem;
+
+public sealed class FactionQuestProgressChangedEventArgs : EventArgs
 {
-  public sealed class FactionQuestProgressChangedEventArgs : EventArgs
+  public Faction Faction { get; }
+
+  public QuestData Quest { get; }
+
+  public QuestProgress FormerProgress { get; }
+
+  public FactionQuestProgressChangedEventArgs(Faction faction, QuestData quest, QuestProgress formerProgress)
   {
-    public Faction Faction { get; }
-    
-    public QuestData Quest { get; }
-    
-    public QuestProgress FormerProgress { get; }
-    
-    public FactionQuestProgressChangedEventArgs(Faction faction, QuestData quest, QuestProgress formerProgress)
-    {
-      Faction = faction;
-      Quest = quest;
-      FormerProgress = formerProgress;
-    }
+    Faction = faction;
+    Quest = quest;
+    FormerProgress = formerProgress;
   }
 }

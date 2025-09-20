@@ -1,9 +1,8 @@
-﻿namespace Launcher.DataTransferObjects
-{
-  public sealed class TechDataDto
-  {
-    public int Players { get; set; }
+﻿namespace Launcher.DataTransferObjects;
 
-    public int Id { get; set; }
-  }
+public sealed class TechDataDto
+{
+  public int Players { get; set; }
+
+  public int Id { get; set; }
 }

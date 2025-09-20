@@ -8,58 +8,57 @@ using MacroTools.QuestSystem;
 using MacroTools.Systems;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Quests.Zandalar
+namespace WarcraftLegacies.Source.Quests.Zandalar;
+
+/// <summary>
+/// Fully upgrade your main to unlock Zan
+/// </summary>
+public sealed class QuestZandalar : QuestData
 {
+  private readonly List<unit> _rescueUnits;
+
   /// <summary>
-  /// Fully upgrade your main to unlock Zan
+  /// Initializes a new instance of the <see cref="QuestZandalar"/> class
   /// </summary>
-  public sealed class QuestZandalar : QuestData
+  /// <param name="rescueRect"></param>
+  /// <param name="preplacedUnitSystem"></param>
+  public QuestZandalar(Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem) : base("City of Gold", "We need to regain control of our land.",
+    @"ReplaceableTextures\CommandButtons\BTNBloodTrollMage.blp")
   {
-    private readonly List<unit> _rescueUnits;
+    AddObjective(new ObjectiveControlPoint(UNIT_N092_ZUL_FARRAK));
+    AddObjective(new ObjectiveControlPoint(UNIT_N0BK_LOST_CITY_OF_THE_TOL_VIR));
+    AddObjective(new ObjectiveControlPoint(UNIT_N025_UN_GORO_CRATER));
+    AddObjective(new ObjectiveUpgrade(UNIT_O03Z_FORTRESS_ZANDALARI_T3, UNIT_O03Y_STRONGHOLD_ZANDALARI_T2));
+    AddObjective(new ObjectiveSelfExists());
+    ResearchId = UPGRADE_R04W_QUEST_COMPLETED_CITY_OF_GOLD;
+    _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
+    //For some reason that one dock just does not get rescured even though it is inside the rect so we add it manually here.
+    _rescueUnits.Add(preplacedUnitSystem.GetUnit(UNIT_O049_GOLDEN_DOCK_ZANDALARI_SHIPYARD, new Point(-3738, -16911)));
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="QuestZandalar"/> class
-    /// </summary>
-    /// <param name="rescueRect"></param>
-    /// <param name="preplacedUnitSystem"></param>
-    public QuestZandalar(Rectangle rescueRect, PreplacedUnitSystem preplacedUnitSystem) : base("City of Gold", "We need to regain control of our land.",
-      @"ReplaceableTextures\CommandButtons\BTNBloodTrollMage.blp")
-    {
-      AddObjective(new ObjectiveControlPoint(UNIT_N092_ZUL_FARRAK));
-      AddObjective(new ObjectiveControlPoint(UNIT_N0BK_LOST_CITY_OF_THE_TOL_VIR));
-      AddObjective(new ObjectiveControlPoint(UNIT_N025_UN_GORO_CRATER));
-      AddObjective(new ObjectiveUpgrade(UNIT_O03Z_FORTRESS_ZANDALARI_T3, UNIT_O03Y_STRONGHOLD_ZANDALARI_T2));
-      AddObjective(new ObjectiveSelfExists());
-      ResearchId = UPGRADE_R04W_QUEST_COMPLETED_CITY_OF_GOLD;
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
-      //For some reason that one dock just does not get rescured even though it is inside the rect so we add it manually here.
-      _rescueUnits.Add(preplacedUnitSystem.GetUnit(UNIT_O049_GOLDEN_DOCK_ZANDALARI_SHIPYARD, new Point(-3738, -16911)));
-      
-    }
+  }
 
-    /// <inheritdoc/>
-    public override string RewardFlavour =>
-      "The City of Gold is now yours to command and has joined the Zandalari";
+  /// <inheritdoc/>
+  public override string RewardFlavour =>
+    "The City of Gold is now yours to command and has joined the Zandalari";
 
-    /// <inheritdoc/>
-    protected override string RewardDescription =>
-      "Control of all units in Dazar'alor and enables the Rasthakan to be trained";
+  /// <inheritdoc/>
+  protected override string RewardDescription =>
+    "Control of all units in Dazar'alor and enables the Rasthakan to be trained";
 
-    /// <inheritdoc/>
-    protected override void OnFail(Faction completingFaction)
-    {
-      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
-        : completingFaction.Player;
+  /// <inheritdoc/>
+  protected override void OnFail(Faction completingFaction)
+  {
+    var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      : completingFaction.Player;
 
-      rescuer.RescueGroup(_rescueUnits);
-    }
+    rescuer.RescueGroup(_rescueUnits);
+  }
 
-    /// <inheritdoc/>
-    protected override void OnComplete(Faction completingFaction)
-    {
-      completingFaction.Player?.PlayMusicThematic("war3mapImported\\ZandalarTheme.mp3");
-      completingFaction.Player?.RescueGroup(_rescueUnits);
-    }
+  /// <inheritdoc/>
+  protected override void OnComplete(Faction completingFaction)
+  {
+    completingFaction.Player?.PlayMusicThematic("war3mapImported\\ZandalarTheme.mp3");
+    completingFaction.Player?.RescueGroup(_rescueUnits);
   }
 }

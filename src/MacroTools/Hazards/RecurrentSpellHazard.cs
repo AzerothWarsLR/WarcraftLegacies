@@ -1,37 +1,36 @@
 ﻿using MacroTools.DummyCasters;
 using MacroTools.SpellSystem;
 
-namespace MacroTools.Hazards
+namespace MacroTools.Hazards;
+
+/// <summary>
+/// A <see cref="Hazard"/> that causes a particular spell to be repeatedly cast at its location.
+/// </summary>
+public sealed class RecurrentSpellHazard : Hazard
 {
-  /// <summary>
-  /// A <see cref="Hazard"/> that causes a particular spell to be repeatedly cast at its location.
-  /// </summary>
-  public sealed class RecurrentSpellHazard : Hazard
+  private readonly int _dummySpellId;
+  private readonly int _dummySpellOrderId;
+  private readonly int _level;
+
+  /// <inheritdoc />
+  protected override void OnPeriodic()
   {
-    private readonly int _dummySpellId;
-    private readonly int _dummySpellOrderId;
-    private readonly int _level;
+    DummyCasterManager.GetGlobalDummyCaster().CastPoint(GetOwningPlayer(Caster), _dummySpellId, _dummySpellOrderId, _level, Position);
+  }
 
-    /// <inheritdoc />
-    protected override void OnPeriodic()
-    {
-      DummyCasterManager.GetGlobalDummyCaster().CastPoint(GetOwningPlayer(Caster), _dummySpellId, _dummySpellOrderId, _level, Position);
-    }
+  /// <inheritdoc />
+  public override void OnCreate()
+  {
+    DummyCasterManager.GetGlobalDummyCaster().CastPoint(GetOwningPlayer(Caster), _dummySpellId, _dummySpellOrderId, _level, Position);
+  }
 
-    /// <inheritdoc />
-    public override void OnCreate()
-    {
-      DummyCasterManager.GetGlobalDummyCaster().CastPoint(GetOwningPlayer(Caster), _dummySpellId, _dummySpellOrderId, _level, Position);
-    }
-    
-    /// <summary>
-    /// Initializes a new instance of the <see cref="RecurrentSpellHazard"/> class.
-    /// </summary>
-    public RecurrentSpellHazard(unit caster, float x, float y, int dummySpellOrderId, int level, int dummySpellId) : base(caster, x, y)
-    {
-      _dummySpellOrderId = dummySpellOrderId;
-      _level = level;
-      _dummySpellId = dummySpellId;
-    }
+  /// <summary>
+  /// Initializes a new instance of the <see cref="RecurrentSpellHazard"/> class.
+  /// </summary>
+  public RecurrentSpellHazard(unit caster, float x, float y, int dummySpellOrderId, int level, int dummySpellId) : base(caster, x, y)
+  {
+    _dummySpellOrderId = dummySpellOrderId;
+    _level = level;
+    _dummySpellId = dummySpellId;
   }
 }

@@ -7,47 +7,48 @@ using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Quests.Gilneas
+namespace WarcraftLegacies.Source.Quests.Gilneas;
+
+/// <summary>
+/// Capture control points close to Stormglen to gain control of it.
+/// </summary>
+public sealed class QuestSouthshoregil : QuestData
 {
-  /// <summary>
-  /// Capture control points close to Stormglen to gain control of it.
-  /// </summary>
-  public sealed class QuestSouthshoregil : QuestData
+  private readonly List<unit> _rescueUnits;
+
+  public QuestSouthshoregil(Rectangle rescueRect) : base("SouthShore",
+    "Southshore a great port city in Southern Lordaeron is under seige by murlocks if we clear them out they will rally to our cause.",
+    @"ReplaceableTextures\CommandButtons\BTNGilneasWizardTower.blp")
   {
-    private readonly List<unit> _rescueUnits;
+    AddObjective(new ObjectiveControlPoint(UNIT_N08M_SOUTHSHORE));
+    AddObjective(new ObjectiveExpire(660, Title));
+    AddObjective(new ObjectiveSelfExists());
+    _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
 
-    public QuestSouthshoregil(Rectangle rescueRect) : base("SouthShore", 
-      "Southshore a great port city in Southern Lordaeron is under seige by murlocks if we clear them out they will rally to our cause.",
-      @"ReplaceableTextures\CommandButtons\BTNGilneasWizardTower.blp")
+  }
+
+  /// <inheritdoc/>
+  public override string RewardFlavour => "Southshore Village has been liberated.";
+
+  /// <inheritdoc/>
+  protected override string RewardDescription => "Control of all buildings in Southshore Village";
+
+  /// <inheritdoc/>
+  protected override void OnComplete(Faction completingFaction)
+  {
+    foreach (var unit in _rescueUnits)
     {
-      AddObjective(new ObjectiveControlPoint(UNIT_N08M_SOUTHSHORE));
-      AddObjective(new ObjectiveExpire(660, Title));
-      AddObjective(new ObjectiveSelfExists());
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-
+      unit.Rescue(completingFaction.Player);
     }
+  }
 
-    /// <inheritdoc/>
-    public override string RewardFlavour => "Southshore Village has been liberated.";
+  /// <inheritdoc/>
+  protected override void OnFail(Faction completingFaction)
+  {
+    var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
+      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      : completingFaction.Player;
 
-    /// <inheritdoc/>
-    protected override string RewardDescription => "Control of all buildings in Southshore Village";
-
-    /// <inheritdoc/>
-    protected override void OnComplete(Faction completingFaction)
-    {
-      foreach (var unit in _rescueUnits)
-        unit.Rescue(completingFaction.Player);
-    }
-
-    /// <inheritdoc/>
-    protected override void OnFail(Faction completingFaction)
-    {
-      var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
-        : completingFaction.Player;
-
-      rescuer.RescueGroup(_rescueUnits);
-    }
+    rescuer.RescueGroup(_rescueUnits);
   }
 }

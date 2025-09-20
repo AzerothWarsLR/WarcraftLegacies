@@ -1,53 +1,59 @@
 ﻿using MacroTools.SpellSystem;
 
-namespace MacroTools.Spells
+namespace MacroTools.Spells;
+
+/// <summary>
+/// Adds a specific ability to a unit when it learns a target ability,
+/// and keeps the levels of both abilities synchronized.
+/// </summary>
+public sealed class AddAbilityOnLearn : Spell
 {
-  /// <summary>
-  /// Adds a specific ability to a unit when it learns a target ability,
-  /// and keeps the levels of both abilities synchronized.
-  /// </summary>
-  public sealed class AddAbilityOnLearn : Spell
+  public int UnitTypeId { get; init; }
+  public int TargetAbilityId { get; init; }
+  public int AbilityToAddId { get; init; }
+
+  public AddAbilityOnLearn(int id) : base(id)
   {
-    public int UnitTypeId { get; init; }
-    public int TargetAbilityId { get; init; }
-    public int AbilityToAddId { get; init; }
+    var trig = CreateTrigger();
 
-    public AddAbilityOnLearn(int id) : base(id)
+    for (var i = 0; i < 24; i++)
     {
-      var trig = CreateTrigger();
-
-      for (var i = 0; i < 24; i++)
+      var player = Player(i);
+      if (GetPlayerController(player) == MAP_CONTROL_USER)
       {
-        var player = Player(i);
-        if (GetPlayerController(player) == MAP_CONTROL_USER)
-        {
-          TriggerRegisterPlayerUnitEvent(trig, player, EVENT_PLAYER_HERO_SKILL, null);
-        }
+        TriggerRegisterPlayerUnitEvent(trig, player, EVENT_PLAYER_HERO_SKILL, null);
       }
-
-      TriggerAddAction(trig, OnAbilityLearned);
     }
 
-    private void OnAbilityLearned()
+    TriggerAddAction(trig, OnAbilityLearned);
+  }
+
+  private void OnAbilityLearned()
+  {
+    var learningUnit = GetTriggerUnit();
+
+    if (GetUnitTypeId(learningUnit) != UnitTypeId)
     {
-      var learningUnit = GetTriggerUnit();
-
-      if (GetUnitTypeId(learningUnit) != UnitTypeId) return;
-      if (GetLearnedSkill() != TargetAbilityId) return;
-
-      AddOrUpdateAbility(learningUnit);
+      return;
     }
 
-    private void AddOrUpdateAbility(unit whichUnit)
+    if (GetLearnedSkill() != TargetAbilityId)
     {
-      var targetLevel = GetUnitAbilityLevel(whichUnit, TargetAbilityId);
-
-      if (GetUnitAbilityLevel(whichUnit, AbilityToAddId) == 0)
-      {
-        UnitAddAbility(whichUnit, AbilityToAddId);
-      }
-
-      SetUnitAbilityLevel(whichUnit, AbilityToAddId, targetLevel);
+      return;
     }
+
+    AddOrUpdateAbility(learningUnit);
+  }
+
+  private void AddOrUpdateAbility(unit whichUnit)
+  {
+    var targetLevel = GetUnitAbilityLevel(whichUnit, TargetAbilityId);
+
+    if (GetUnitAbilityLevel(whichUnit, AbilityToAddId) == 0)
+    {
+      UnitAddAbility(whichUnit, AbilityToAddId);
+    }
+
+    SetUnitAbilityLevel(whichUnit, AbilityToAddId, targetLevel);
   }
 }

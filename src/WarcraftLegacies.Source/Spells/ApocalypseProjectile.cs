@@ -4,75 +4,76 @@ using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Missiles;
 
-namespace WarcraftLegacies.Source.Spells
+namespace WarcraftLegacies.Source.Spells;
+
+public sealed class ApocalypseProjectile : BasicMissile
 {
-  public sealed class ApocalypseProjectile : BasicMissile
+  private readonly GlobalDummyCaster _dummyCaster;
+
+  public float Damage { get; init; }
+
+  public string EffectOnHitModel { get; init; } = "";
+
+  public float EffectOnHitScale { get; init; }
+
+  public int DummyAbilityId { get; init; }
+
+  public int DummyAbilityOrderId { get; init; }
+
+  public int DummyAbilityLevel { get; init; }
+
+  public string EffectOnProjectileDespawnModel { get; init; } = "";
+
+  public float EffectOnProjectileDespawnScale { get; init; }
+
+  /// <inheritdoc />
+  public ApocalypseProjectile(player castingPlayer, float casterX, float casterY, float targetX, float targetY) :
+    base(castingPlayer, casterX, casterY, targetX, targetY)
   {
-    private readonly GlobalDummyCaster _dummyCaster;
-
-    public float Damage { get; init; }
-
-    public string EffectOnHitModel { get; init; } = "";
-    
-    public float EffectOnHitScale { get; init; }
-    
-    public int DummyAbilityId { get; init; }
-    
-    public int DummyAbilityOrderId { get; init; }
-    
-    public int DummyAbilityLevel { get; init; }
-
-    public string EffectOnProjectileDespawnModel { get; init; } = "";
-    
-    public float EffectOnProjectileDespawnScale { get; init; }
-
-    /// <inheritdoc />
-    public ApocalypseProjectile(player castingPlayer, float casterX, float casterY, float targetX, float targetY) :
-      base(castingPlayer, casterX, casterY, targetX, targetY)
-    {
-      _dummyCaster = DummyCasterManager.GetGlobalDummyCaster();
-      Interval = PeriodicEvents.SYSTEM_INTERVAL;
-    }
-
-    /// <inheritdoc />
-    public override void OnCollision(unit unit)
-    {
-      if (!IsValidTarget(Caster, unit))
-        return;
-      
-      unit.TakeDamage(Caster, Damage, false, false, damageType: DAMAGE_TYPE_NORMAL);
-      
-      _dummyCaster.CastUnit(Caster, DummyAbilityId, DummyAbilityOrderId, DummyAbilityLevel, unit,
-        DummyCastOriginType.Target);
-
-      var effect = AddSpecialEffect(EffectOnHitModel, GetUnitX(unit), GetUnitY(unit));
-      BlzSetSpecialEffectScale(effect, EffectOnHitScale);
-      EffectSystem.Add(effect);
-    }
-
-    /// <inheritdoc />
-    public override void OnPeriodic()
-    {
-      BlzSetSpecialEffectColorByPlayer(Effect, Player(3));
-      BlzPlaySpecialEffect(Effect, ANIM_TYPE_WALK);
-      BlzSetSpecialEffectAlpha(Effect, 175);
-      Interval = 0;
-    }
-
-    /// <inheritdoc />
-    public override void OnDispose()
-    {
-      BlzSetSpecialEffectPosition(Effect, 21623f, 24212f, 0);
-      var effect = AddSpecialEffect(EffectOnProjectileDespawnModel, MissileX, MissileY);
-      BlzSetSpecialEffectScale(effect, EffectOnProjectileDespawnScale);
-      EffectSystem.Add(effect);
-    }
-
-    private static bool IsValidTarget(unit target, unit caster) =>
-      UnitAlive(target) &&
-      !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
-      !IsUnitType(target, UNIT_TYPE_ANCIENT) && 
-      !IsUnitType(target, UNIT_TYPE_MECHANICAL) &&
-      !IsPlayerAlly(GetOwningPlayer(caster), GetOwningPlayer(target));
+    _dummyCaster = DummyCasterManager.GetGlobalDummyCaster();
+    Interval = PeriodicEvents.SYSTEM_INTERVAL;
   }
+
+  /// <inheritdoc />
+  public override void OnCollision(unit unit)
+  {
+    if (!IsValidTarget(Caster, unit))
+    {
+      return;
+    }
+
+    unit.TakeDamage(Caster, Damage, false, false, damageType: DAMAGE_TYPE_NORMAL);
+
+    _dummyCaster.CastUnit(Caster, DummyAbilityId, DummyAbilityOrderId, DummyAbilityLevel, unit,
+      DummyCastOriginType.Target);
+
+    var effect = AddSpecialEffect(EffectOnHitModel, GetUnitX(unit), GetUnitY(unit));
+    BlzSetSpecialEffectScale(effect, EffectOnHitScale);
+    EffectSystem.Add(effect);
+  }
+
+  /// <inheritdoc />
+  public override void OnPeriodic()
+  {
+    BlzSetSpecialEffectColorByPlayer(Effect, Player(3));
+    BlzPlaySpecialEffect(Effect, ANIM_TYPE_WALK);
+    BlzSetSpecialEffectAlpha(Effect, 175);
+    Interval = 0;
+  }
+
+  /// <inheritdoc />
+  public override void OnDispose()
+  {
+    BlzSetSpecialEffectPosition(Effect, 21623f, 24212f, 0);
+    var effect = AddSpecialEffect(EffectOnProjectileDespawnModel, MissileX, MissileY);
+    BlzSetSpecialEffectScale(effect, EffectOnProjectileDespawnScale);
+    EffectSystem.Add(effect);
+  }
+
+  private static bool IsValidTarget(unit target, unit caster) =>
+    UnitAlive(target) &&
+    !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
+    !IsUnitType(target, UNIT_TYPE_ANCIENT) &&
+    !IsUnitType(target, UNIT_TYPE_MECHANICAL) &&
+    !IsPlayerAlly(GetOwningPlayer(caster), GetOwningPlayer(target));
 }

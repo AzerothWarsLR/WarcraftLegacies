@@ -1,9 +1,8 @@
-﻿namespace MacroTools.SpellSystem
+﻿namespace MacroTools.SpellSystem;
+
+public enum SpellTargetType
 {
-  public enum SpellTargetType
-  {
-    None,
-    Unit,
-    Point
-  }
+  None,
+  Unit,
+  Point
 }

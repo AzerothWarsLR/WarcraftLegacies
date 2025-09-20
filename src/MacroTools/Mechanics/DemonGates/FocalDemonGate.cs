@@ -1,26 +1,25 @@
 ﻿using MacroTools.PassiveAbilitySystem;
 using WCSharp.Buffs;
 
-namespace MacroTools.Mechanics.DemonGates
+namespace MacroTools.Mechanics.DemonGates;
+
+/// <summary>
+/// Units spawned at Demon Gates spawn at the Focal Demon Gate instead, if one exists.
+/// </summary>
+public sealed class FocalDemonGate : PassiveAbility, IEffectOnConstruction
 {
   /// <summary>
-  /// Units spawned at Demon Gates spawn at the Focal Demon Gate instead, if one exists.
+  /// Initializes a new instance of the <see cref="FocalDemonGate"/> class.
   /// </summary>
-  public sealed class FocalDemonGate : PassiveAbility, IEffectOnConstruction
+  /// <param name="unitTypeId"><inheritdoc /></param>
+  public FocalDemonGate(int unitTypeId) : base(unitTypeId)
   {
-    /// <summary>
-    /// Initializes a new instance of the <see cref="FocalDemonGate"/> class.
-    /// </summary>
-    /// <param name="unitTypeId"><inheritdoc /></param>
-    public FocalDemonGate(int unitTypeId) : base(unitTypeId)
-    {
-    }
-    
-    /// <inheritdoc />
-    public void OnConstruction()
-    {
-      var buff = new FocalDemonGateBuff(GetTriggerUnit());
-      BuffSystem.Add(buff);
-    }
+  }
+
+  /// <inheritdoc />
+  public void OnConstruction()
+  {
+    var buff = new FocalDemonGateBuff(GetTriggerUnit());
+    BuffSystem.Add(buff);
   }
 }

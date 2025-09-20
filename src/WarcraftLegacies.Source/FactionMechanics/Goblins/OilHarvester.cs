@@ -7,69 +7,75 @@ using MacroTools.Powers;
 using MacroTools.Utils;
 using WCSharp.Buffs;
 
-namespace WarcraftLegacies.Source.FactionMechanics.Goblins
+namespace WarcraftLegacies.Source.FactionMechanics.Goblins;
+
+/// <summary>
+/// Oil harvesters consume oil from <see cref="OilPool"/>s around them.
+/// </summary>
+public sealed class OilHarvester : PassiveAbility, IEffectOnCreated
 {
   /// <summary>
-  /// Oil harvesters consume oil from <see cref="OilPool"/>s around them.
+  /// Initializes a new instance of the <see cref="OilHarvester"/> class.
   /// </summary>
-  public sealed class OilHarvester : PassiveAbility, IEffectOnCreated
+  /// <param name="unitTypeId"><inheritdoc /></param>
+  public OilHarvester(int unitTypeId) : base(unitTypeId)
   {
-    /// <summary>
-    /// Initializes a new instance of the <see cref="OilHarvester"/> class.
-    /// </summary>
-    /// <param name="unitTypeId"><inheritdoc /></param>
-    public OilHarvester(int unitTypeId) : base(unitTypeId)
+  }
+
+  /// <summary>
+  /// How much oil this unit harvests per second.
+  /// </summary>
+  public int OilHarvestedPerSecond { get; init; }
+
+  /// <summary>
+  /// The radius in which this unit can harvest from <see cref="OilPool"/>s.
+  /// </summary>
+  public float Radius { get; init; }
+
+  /// <inheritdoc />
+  public void OnCreated(unit createdUnit)
+  {
+    if (!EnsureValidPositioning(createdUnit))
     {
+      return;
     }
 
-    /// <summary>
-    /// How much oil this unit harvests per second.
-    /// </summary>
-    public int OilHarvestedPerSecond { get; init; }
-
-    /// <summary>
-    /// The radius in which this unit can harvest from <see cref="OilPool"/>s.
-    /// </summary>
-    public float Radius { get; init; }
-
-    /// <inheritdoc />
-    public void OnCreated(unit createdUnit)
+    var owningFaction = GetOwningPlayer(createdUnit).GetFaction();
+    var oilPower = owningFaction?.GetPowerByType<OilPower>();
+    if (oilPower == null)
     {
-      if (!EnsureValidPositioning(createdUnit))
-        return;
-
-      var owningFaction = GetOwningPlayer(createdUnit).GetFaction();
-      var oilPower = owningFaction?.GetPowerByType<OilPower>();
-      if (oilPower == null)
-        throw new Exception(
-          $"Oil user {GetUnitName(GetTriggerUnit())} was created but owning faction {owningFaction?.Name} doesn't have a power that stores oil.");
-      
-      var oilPoolNearby = oilPower.GetOilPoolsInRadius(createdUnit.GetPosition(), Radius).FirstOrDefault();
-
-      if (oilPoolNearby == null)
-      {
-        KillUnit(createdUnit);
-        RemoveUnit(createdUnit);
-        return;
-      }
-      
-      var oilBuff = new OilHarvesterBuff(createdUnit, oilPoolNearby)
-      {
-        Active = true,
-        Duration = float.MaxValue,
-        OilHarvestedPerSecond = OilHarvestedPerSecond
-      };
-      BuffSystem.Add(oilBuff);
+      throw new Exception(
+        $"Oil user {GetUnitName(GetTriggerUnit())} was created but owning faction {owningFaction?.Name} doesn't have a power that stores oil.");
     }
 
-    private static bool EnsureValidPositioning(unit createdUnit)
+    var oilPoolNearby = oilPower.GetOilPoolsInRadius(createdUnit.GetPosition(), Radius).FirstOrDefault();
+
+    if (oilPoolNearby == null)
     {
-      if (GlobalGroup.EnumUnitsInRange(createdUnit.GetPosition(), 900)
-          .All(x => GetUnitTypeId(x) != GetUnitTypeId(createdUnit) || x == createdUnit || !UnitAlive(x)))
-        return true;
       KillUnit(createdUnit);
       RemoveUnit(createdUnit);
-      return false;
+      return;
     }
+
+    var oilBuff = new OilHarvesterBuff(createdUnit, oilPoolNearby)
+    {
+      Active = true,
+      Duration = float.MaxValue,
+      OilHarvestedPerSecond = OilHarvestedPerSecond
+    };
+    BuffSystem.Add(oilBuff);
+  }
+
+  private static bool EnsureValidPositioning(unit createdUnit)
+  {
+    if (GlobalGroup.EnumUnitsInRange(createdUnit.GetPosition(), 900)
+        .All(x => GetUnitTypeId(x) != GetUnitTypeId(createdUnit) || x == createdUnit || !UnitAlive(x)))
+    {
+      return true;
+    }
+
+    KillUnit(createdUnit);
+    RemoveUnit(createdUnit);
+    return false;
   }
 }

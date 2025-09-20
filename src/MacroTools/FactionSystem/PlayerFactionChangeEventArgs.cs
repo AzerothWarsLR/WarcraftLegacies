@@ -1,16 +1,15 @@
 ﻿using System;
 
-namespace MacroTools.FactionSystem
+namespace MacroTools.FactionSystem;
+
+public sealed class PlayerFactionChangeEventArgs : EventArgs
 {
-  public sealed class PlayerFactionChangeEventArgs : EventArgs
+  public player Player { get; }
+  public Faction? PreviousFaction { get; }
+
+  public PlayerFactionChangeEventArgs(player player, Faction? previousFaction)
   {
-    public player Player { get; }
-    public Faction? PreviousFaction { get; }
-    
-    public PlayerFactionChangeEventArgs(player player, Faction? previousFaction)
-    {
-      Player = player;
-      PreviousFaction = previousFaction;
-    }
+    Player = player;
+    PreviousFaction = previousFaction;
   }
 }

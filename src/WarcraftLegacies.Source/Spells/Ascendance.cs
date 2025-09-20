@@ -6,42 +6,41 @@ using MacroTools.Utils;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Spells
-{
-  /// <summary>
-  /// Heals nearby friendly units and removes specific abilities from the caster for a limited duration.
-  /// </summary>
-  public sealed class Ascendance : Spell
-  {
-    public float DurationBase { get; init; }
-    public float DurationLevel { get; init; }
-    public float HealBase { get; init; }
-    public float HealLevel { get; init; }
-    public float Radius { get; init; }
-    
-    public IEnumerable<int>? AbilitiesToRemove { get; init; }
-    
-    public Ascendance(int id) : base(id)
-    {
-    }
+namespace WarcraftLegacies.Source.Spells;
 
-    public override void OnCast(unit caster, unit target, Point targetPoint)
+/// <summary>
+/// Heals nearby friendly units and removes specific abilities from the caster for a limited duration.
+/// </summary>
+public sealed class Ascendance : Spell
+{
+  public float DurationBase { get; init; }
+  public float DurationLevel { get; init; }
+  public float HealBase { get; init; }
+  public float HealLevel { get; init; }
+  public float Radius { get; init; }
+
+  public IEnumerable<int>? AbilitiesToRemove { get; init; }
+
+  public Ascendance(int id) : base(id)
+  {
+  }
+
+  public override void OnCast(unit caster, unit target, Point targetPoint)
+  {
+    foreach (var unit in GlobalGroup
+               .EnumUnitsInRange(caster.GetPosition(), Radius)
+             )
     {
-      foreach (var unit in GlobalGroup
-                 .EnumUnitsInRange(caster.GetPosition(), Radius)
-               )
+      if (IsPlayerAlly(GetOwningPlayer(caster), GetOwningPlayer(unit)))
       {
-        if (IsPlayerAlly(GetOwningPlayer(caster), GetOwningPlayer(unit)))
-        {
-          unit.Heal(HealBase + HealLevel * GetAbilityLevel(caster));
-        }
+        unit.Heal(HealBase + HealLevel * GetAbilityLevel(caster));
       }
-      var ascendancyBuff = new AscendancyBuff(caster, caster)
-      {
-        Duration = DurationBase + DurationLevel * GetAbilityLevel(caster),
-        AbilitiesToRemove = AbilitiesToRemove
-      };
-      BuffSystem.Add(ascendancyBuff);
     }
+    var ascendancyBuff = new AscendancyBuff(caster, caster)
+    {
+      Duration = DurationBase + DurationLevel * GetAbilityLevel(caster),
+      AbilitiesToRemove = AbilitiesToRemove
+    };
+    BuffSystem.Add(ascendancyBuff);
   }
 }

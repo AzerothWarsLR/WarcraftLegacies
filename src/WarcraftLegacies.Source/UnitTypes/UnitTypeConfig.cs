@@ -1,155 +1,154 @@
 ﻿using MacroTools.Systems;
 using WarcraftLegacies.Shared;
 
-namespace WarcraftLegacies.Source.UnitTypes
+namespace WarcraftLegacies.Source.UnitTypes;
+
+public static class UnitTypeConfig
 {
-  public static class UnitTypeConfig
+  public static void Setup()
   {
-    public static void Setup()
-    {
-      SubSetupFactionConfig();
-      SubSetupPortals();
-      SubSetupTrader();
-      SubSetupGatesA();
-      SubSetupGatesB();
-      SubSetupGoblinMerchant();
-    }
+    SubSetupFactionConfig();
+    SubSetupPortals();
+    SubSetupTrader();
+    SubSetupGatesA();
+    SubSetupGatesB();
+    SubSetupGoblinMerchant();
+  }
 
-    private static void SubSetupFactionConfig()
+  private static void SubSetupFactionConfig()
+  {
+    var objectInfoRepository = new ObjectInfoRepository();
+    foreach (var objectInfo in objectInfoRepository.GetAllObjectInfo())
     {
-      var objectInfoRepository = new ObjectInfoRepository();
-      foreach (var objectInfo in objectInfoRepository.GetAllObjectInfo())
+      UnitType.Register(new UnitType(FourCC(objectInfo.ObjectTypeId))
       {
-        UnitType.Register(new UnitType(FourCC(objectInfo.ObjectTypeId))
-        {
-          Category = objectInfo.Category
-        });
-      }
+        Category = objectInfo.Category
+      });
     }
+  }
 
-    private static void SubSetupPortals()
+  private static void SubSetupPortals()
+  {
+    UnitType.Register(new UnitType(UNIT_N036_DARK_PORTAL_WAYGATE)
     {
-      UnitType.Register(new UnitType(UNIT_N036_DARK_PORTAL_WAYGATE)
-      {
-        NeverDelete = true
-      });
-      
-      UnitType.Register(new UnitType(UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS)
-      {
-        NeverDelete = true
-      });
-    }
-    
-    private static void SubSetupTrader()
-    {
-      UnitType.Register(new UnitType(UNIT_H014_TRADING_POST_SEA)
-      {
-        NeverDelete = true
-      });
-    }
+      NeverDelete = true
+    });
 
-    private static void SubSetupGatesA()
+    UnitType.Register(new UnitType(UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS)
     {
-      UnitType.Register(new UnitType(UNIT_H00L_HORIZONTAL_WOODEN_GATE_OPEN)
-      {
-        NeverDelete = true
-      });
-      
-      UnitType.Register(new UnitType(UNIT_H00K_HORIZONTAL_WOODEN_GATE_CLOSED)
-      {
-        NeverDelete = true
-      });
-      
-      UnitType.Register(new UnitType(UNIT_H00M_HORIZONTAL_WOODEN_GATE_DEAD)
-      {
-        NeverDelete = true
-      });
-      
-      UnitType.Register(new UnitType(UNIT_H01X_ELVEN_GATE_OPEN)
-      {
-        NeverDelete = true
-      });
-      
-      UnitType.Register(new UnitType(UNIT_H01W_ELVEN_GATE_CLOSED)
-      {
-        NeverDelete = true
-      });
-      
-      UnitType.Register(new UnitType(UNIT_H01Y_ELVEN_GATE_DEAD)
-      {
-        NeverDelete = true
-      });
-      
-      UnitType.Register(new UnitType(UNIT_H02J_STORMWIND_HARBOUR_GATE_OPEN)
-      {
-        NeverDelete = true
-      });
-      
-      UnitType.Register(new UnitType(UNIT_H02H_STORMWIND_HARBOUR_GATE_CLOSED)
-      {
-        NeverDelete = true
-      });
-    }
+      NeverDelete = true
+    });
+  }
 
-    private static void SubSetupGatesB()
+  private static void SubSetupTrader()
+  {
+    UnitType.Register(new UnitType(UNIT_H014_TRADING_POST_SEA)
     {
-      UnitType.Register(new UnitType(UNIT_H02I_STORMWIND_HARBOUR_GATE_DEAD)
-      {
-        NeverDelete = true
-      });
-      
-      UnitType.Register(new UnitType(UNIT_H02S_GATES_OF_AHN_QIRAJ_OPEN)
-      {
-        NeverDelete = true
-      });
-      
-      UnitType.Register(new UnitType(UNIT_H02U_GATES_OF_AHN_QIRAJ_CLOSED)
-      {
-        NeverDelete = true
-      });
-      
-      UnitType.Register(new UnitType(UNIT_H02T_GATES_OF_AHN_QIRAJ_DEAD)
-      {
-        NeverDelete = true
-      });
-      
-      UnitType.Register(new UnitType(UNIT_H02M_GREYMANE_S_GATE_OPEN)
-      {
-        NeverDelete = true
-      });
-      
-      UnitType.Register(new UnitType(UNIT_H02K_GREYMANE_S_GATE_CLOSED)
-      {
-        NeverDelete = true
-      });
-      
-      UnitType.Register(new UnitType(UNIT_H02L_GREYMANE_S_GATE_DEAD)
-      {
-        NeverDelete = true
-      });
-      
-      UnitType.Register(new UnitType(UNIT_H04R_DIAGONAL_WOODEN_GATE_OPEN)
-      {
-        NeverDelete = true
-      });
-      
-      UnitType.Register(new UnitType(UNIT_H04T_DIAGONAL_WOODEN_GATE_DEAD)
-      {
-        NeverDelete = true
-      });
-      
-      UnitType.Register(new UnitType(UNIT_H04S_DIAGONAL_WOODEN_GATE_CLOSED)
-      {
-        NeverDelete = true
-      });
-    }
+      NeverDelete = true
+    });
+  }
 
-    private static void SubSetupGoblinMerchant()
+  private static void SubSetupGatesA()
+  {
+    UnitType.Register(new UnitType(UNIT_H00L_HORIZONTAL_WOODEN_GATE_OPEN)
     {
-      UnitType.Register(new UnitType(FourCC("ngol"))
-      {
-        NeverDelete = true
-      });
-    }
+      NeverDelete = true
+    });
+
+    UnitType.Register(new UnitType(UNIT_H00K_HORIZONTAL_WOODEN_GATE_CLOSED)
+    {
+      NeverDelete = true
+    });
+
+    UnitType.Register(new UnitType(UNIT_H00M_HORIZONTAL_WOODEN_GATE_DEAD)
+    {
+      NeverDelete = true
+    });
+
+    UnitType.Register(new UnitType(UNIT_H01X_ELVEN_GATE_OPEN)
+    {
+      NeverDelete = true
+    });
+
+    UnitType.Register(new UnitType(UNIT_H01W_ELVEN_GATE_CLOSED)
+    {
+      NeverDelete = true
+    });
+
+    UnitType.Register(new UnitType(UNIT_H01Y_ELVEN_GATE_DEAD)
+    {
+      NeverDelete = true
+    });
+
+    UnitType.Register(new UnitType(UNIT_H02J_STORMWIND_HARBOUR_GATE_OPEN)
+    {
+      NeverDelete = true
+    });
+
+    UnitType.Register(new UnitType(UNIT_H02H_STORMWIND_HARBOUR_GATE_CLOSED)
+    {
+      NeverDelete = true
+    });
+  }
+
+  private static void SubSetupGatesB()
+  {
+    UnitType.Register(new UnitType(UNIT_H02I_STORMWIND_HARBOUR_GATE_DEAD)
+    {
+      NeverDelete = true
+    });
+
+    UnitType.Register(new UnitType(UNIT_H02S_GATES_OF_AHN_QIRAJ_OPEN)
+    {
+      NeverDelete = true
+    });
+
+    UnitType.Register(new UnitType(UNIT_H02U_GATES_OF_AHN_QIRAJ_CLOSED)
+    {
+      NeverDelete = true
+    });
+
+    UnitType.Register(new UnitType(UNIT_H02T_GATES_OF_AHN_QIRAJ_DEAD)
+    {
+      NeverDelete = true
+    });
+
+    UnitType.Register(new UnitType(UNIT_H02M_GREYMANE_S_GATE_OPEN)
+    {
+      NeverDelete = true
+    });
+
+    UnitType.Register(new UnitType(UNIT_H02K_GREYMANE_S_GATE_CLOSED)
+    {
+      NeverDelete = true
+    });
+
+    UnitType.Register(new UnitType(UNIT_H02L_GREYMANE_S_GATE_DEAD)
+    {
+      NeverDelete = true
+    });
+
+    UnitType.Register(new UnitType(UNIT_H04R_DIAGONAL_WOODEN_GATE_OPEN)
+    {
+      NeverDelete = true
+    });
+
+    UnitType.Register(new UnitType(UNIT_H04T_DIAGONAL_WOODEN_GATE_DEAD)
+    {
+      NeverDelete = true
+    });
+
+    UnitType.Register(new UnitType(UNIT_H04S_DIAGONAL_WOODEN_GATE_CLOSED)
+    {
+      NeverDelete = true
+    });
+  }
+
+  private static void SubSetupGoblinMerchant()
+  {
+    UnitType.Register(new UnitType(FourCC("ngol"))
+    {
+      NeverDelete = true
+    });
   }
 }

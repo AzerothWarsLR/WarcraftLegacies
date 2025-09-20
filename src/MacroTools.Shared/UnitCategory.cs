@@ -1,96 +1,95 @@
-﻿namespace MacroTools.Shared
+﻿namespace MacroTools.Shared;
+
+/// <summary>
+/// An arbitrary category that units can be assigned to. Primarily used to know which units need to be swapped out
+/// for which when changing to another faction.
+/// </summary>
+public enum UnitCategory
 {
-  /// <summary>
-  /// An arbitrary category that units can be assigned to. Primarily used to know which units need to be swapped out
-  /// for which when changing to another faction.
-  /// </summary>
-  public enum UnitCategory
-  {
-    None,
-    
-    TownHall,
-    
-    Worker,
+  None,
 
-    GilneasManor,
+  TownHall,
 
-    Shipyard,
+  Worker,
 
-    LightHouse,
+  GilneasManor,
 
-    Farm,
-    
-    Altar,
-    
-    Specialist,
+  Shipyard,
 
-    Waygate,
-    
-    Siege,
-    
-    Barracks,
-    
-    Research,
-    
-    Magic,
-    
-    Tower,
-    
-    Tower2,
-    
-    Tower3,
+  LightHouse,
 
-    Tower4,
+  Farm,
 
-    Tower5,
+  Altar,
 
-    Tower6,
+  Specialist,
 
-    Shop,
-    
-    Teleport,
-    
-    SpecailFarm1,
+  Waygate,
 
-    SpecailFarm2,
+  Siege,
 
-    SpecailFarm3,
+  Barracks,
 
-    SpecailFarm4,
+  Research,
 
-    Elite,
-    
-    CasterSupport,
-    
-    CasterBasic,
+  Magic,
 
-    Caster3,
+  Tower,
 
-    CasterAdvanced,
+  Tower2,
 
-    CasterAdvanced2,
+  Tower3,
 
-    RangedBasic,
-    
-    MeleeBasic,
-    
-    RangedAdvanced,
-    
-    MeleeAdvanced,
-    
-    RangedSpecial,
-    
-    MeleeSpecial,
-    
-    FlyingBasic,
-    
-    FlyingAdvanced,
-    
-    SiegeBasic,
-    
-    SiegeAdvanced,
-    
-    SiegeSpecial,
-    
-  }
+  Tower4,
+
+  Tower5,
+
+  Tower6,
+
+  Shop,
+
+  Teleport,
+
+  SpecailFarm1,
+
+  SpecailFarm2,
+
+  SpecailFarm3,
+
+  SpecailFarm4,
+
+  Elite,
+
+  CasterSupport,
+
+  CasterBasic,
+
+  Caster3,
+
+  CasterAdvanced,
+
+  CasterAdvanced2,
+
+  RangedBasic,
+
+  MeleeBasic,
+
+  RangedAdvanced,
+
+  MeleeAdvanced,
+
+  RangedSpecial,
+
+  MeleeSpecial,
+
+  FlyingBasic,
+
+  FlyingAdvanced,
+
+  SiegeBasic,
+
+  SiegeAdvanced,
+
+  SiegeSpecial,
+
 }

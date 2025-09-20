@@ -1,14 +1,13 @@
 ﻿using MacroTools.BookSystem.Core;
 using MacroTools.Frames;
 
-namespace MacroTools.BookSystem.Powers
+namespace MacroTools.BookSystem.Powers;
+
+public sealed class PowerCardFactory : ICardFactory<PowerCard>
 {
-  public sealed class PowerCardFactory : ICardFactory<PowerCard>
+  /// <inheritdoc />
+  public PowerCard Create(Frame parent)
   {
-    /// <inheritdoc />
-    public PowerCard Create(Frame parent)
-    {
-      return new PowerCard(parent);
-    }
+    return new PowerCard(parent);
   }
 }

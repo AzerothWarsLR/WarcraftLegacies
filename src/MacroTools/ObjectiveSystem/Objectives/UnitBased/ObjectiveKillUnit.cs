@@ -1,49 +1,48 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.QuestSystem;
 
-namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
+namespace MacroTools.ObjectiveSystem.Objectives.UnitBased;
+
+/// <summary>
+/// An <see cref="Objective"/> in which the objective holder must kill a specific unit.
+/// </summary>
+public sealed class ObjectiveKillUnit : Objective
 {
   /// <summary>
-  /// An <see cref="Objective"/> in which the objective holder must kill a specific unit.
+  /// Initializes a new instance of the <see cref="ObjectiveKillUnit"/> class.
   /// </summary>
-  public sealed class ObjectiveKillUnit : Objective
+  public ObjectiveKillUnit(unit unitToKill)
   {
-    /// <summary>
-    /// Initializes a new instance of the <see cref="ObjectiveKillUnit"/> class.
-    /// </summary>
-    public ObjectiveKillUnit(unit unitToKill)
-    {
-      var trig = CreateTrigger();
-      TriggerRegisterUnitEvent(trig, unitToKill, EVENT_UNIT_DEATH);
-      TriggerAddAction(trig, OnUnitDeath);
-      Target = unitToKill;
-      TargetWidget = Target;
-      InitializeDescription();
-      DisplaysPosition = IsUnitType(Target, UNIT_TYPE_STRUCTURE) ||
-                         GetOwningPlayer(Target) == Player(PLAYER_NEUTRAL_AGGRESSIVE);
-      
-      Position = new(GetUnitX(Target), GetUnitY(Target));
-    }
-    
-    /// <summary>
-    /// The unit that has to die for the objective to be completed.
-    /// </summary>
-    public unit Target { get; }
+    var trig = CreateTrigger();
+    TriggerRegisterUnitEvent(trig, unitToKill, EVENT_UNIT_DEATH);
+    TriggerAddAction(trig, OnUnitDeath);
+    Target = unitToKill;
+    TargetWidget = Target;
+    InitializeDescription();
+    DisplaysPosition = IsUnitType(Target, UNIT_TYPE_STRUCTURE) ||
+                       GetOwningPlayer(Target) == Player(PLAYER_NEUTRAL_AGGRESSIVE);
 
-    private void OnUnitDeath()
-    {
-      Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(GetKillingUnit()))
-        ? QuestProgress.Complete
-        : QuestProgress.Failed;
-    }
+    Position = new(GetUnitX(Target), GetUnitY(Target));
+  }
 
-    private void InitializeDescription()
-    {
-      var killVerb = IsUnitType(Target, UNIT_TYPE_STRUCTURE) || IsUnitType(Target, UNIT_TYPE_ANCIENT)
-        ? "Destroy"
-        : "Kill";
+  /// <summary>
+  /// The unit that has to die for the objective to be completed.
+  /// </summary>
+  public unit Target { get; }
 
-      Description = $"{killVerb} {Target.GetProperName()}";
-    }
+  private void OnUnitDeath()
+  {
+    Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(GetKillingUnit()))
+      ? QuestProgress.Complete
+      : QuestProgress.Failed;
+  }
+
+  private void InitializeDescription()
+  {
+    var killVerb = IsUnitType(Target, UNIT_TYPE_STRUCTURE) || IsUnitType(Target, UNIT_TYPE_ANCIENT)
+      ? "Destroy"
+      : "Kill";
+
+    Description = $"{killVerb} {Target.GetProperName()}";
   }
 }

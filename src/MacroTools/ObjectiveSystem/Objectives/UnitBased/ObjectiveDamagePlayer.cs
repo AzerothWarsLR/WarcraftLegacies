@@ -2,24 +2,25 @@
 using MacroTools.Setup;
 using WCSharp.Events;
 
-namespace MacroTools.ObjectiveSystem.Objectives.UnitBased
+namespace MacroTools.ObjectiveSystem.Objectives.UnitBased;
+
+/// <summary>
+/// An <see cref="Objective"/> that is completed when the holder deals any damage to any unit of a particular <see cref="player"/>.
+/// </summary>
+public sealed class ObjectiveDamagePlayer : Objective
 {
   /// <summary>
-  /// An <see cref="Objective"/> that is completed when the holder deals any damage to any unit of a particular <see cref="player"/>.
+  /// Initializes a new instance of the <see cref="ObjectiveDamagePlayer"/> class.
   /// </summary>
-  public sealed class ObjectiveDamagePlayer : Objective
+  /// <param name="playerToDamage"></param>
+  public ObjectiveDamagePlayer(player playerToDamage)
   {
-    /// <summary>
-    /// Initializes a new instance of the <see cref="ObjectiveDamagePlayer"/> class.
-    /// </summary>
-    /// <param name="playerToDamage"></param>
-    public ObjectiveDamagePlayer(player playerToDamage)
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerTakesDamage, () =>
     {
-      PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerTakesDamage, () =>
+      if (IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(GetEventDamageSource())))
       {
-        if (IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(GetEventDamageSource())))
-          Progress = QuestProgress.Complete;
-      }, GetPlayerId(playerToDamage));
-    }
+        Progress = QuestProgress.Complete;
+      }
+    }, GetPlayerId(playerToDamage));
   }
 }

@@ -2,34 +2,33 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 
-namespace MacroTools.Powers
+namespace MacroTools.Powers;
+
+public sealed class PlayerVisionPower : Power
 {
-  public sealed class PlayerVisionPower : Power
+  private readonly IEnumerable<player?> _playersToGiveVisionOf;
+
+  public PlayerVisionPower(string name, string description, string iconName, IEnumerable<player?> playersToGiveVisionOf)
   {
-    private readonly IEnumerable<player?> _playersToGiveVisionOf;
+    Name = name;
+    Description = description;
+    IconName = iconName;
+    _playersToGiveVisionOf = playersToGiveVisionOf;
+  }
 
-    public PlayerVisionPower(string name, string description, string iconName, IEnumerable<player?> playersToGiveVisionOf)
+  public override void OnAdd(player sourcePlayer)
+  {
+    foreach (var otherPlayer in _playersToGiveVisionOf)
     {
-      Name = name;
-      Description = description;
-      IconName = iconName;
-      _playersToGiveVisionOf = playersToGiveVisionOf;
+      otherPlayer?.SetAllianceState(sourcePlayer, AllianceState.UnalliedVision);
     }
+  }
 
-    public override void OnAdd(player sourcePlayer)
+  public override void OnRemove(player sourcePlayer)
+  {
+    foreach (var otherPlayer in _playersToGiveVisionOf)
     {
-      foreach (var otherPlayer in _playersToGiveVisionOf)
-      {
-        otherPlayer?.SetAllianceState(sourcePlayer, AllianceState.UnalliedVision);
-      }
-    }
-
-    public override void OnRemove(player sourcePlayer)
-    {
-      foreach (var otherPlayer in _playersToGiveVisionOf)
-      {
-        otherPlayer?.SetAllianceState(sourcePlayer, AllianceState.Unallied);
-      }
+      otherPlayer?.SetAllianceState(sourcePlayer, AllianceState.Unallied);
     }
   }
 }

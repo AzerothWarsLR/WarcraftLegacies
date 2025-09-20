@@ -4,37 +4,36 @@ using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.MassiveAttack;
 
-namespace WarcraftLegacies.Source.Setup.Spells
-{
-  public static class DruidsSpellSetup
-  {
-    public static void Setup()
-    {
-      SpellSystem.Register(new Devour(ABILITY_A0NP_DEVOUR_TORTOLLA)
-      {
-        PercentageOfMaxHealth = 0.5f,
-        Damage = new LeveledAbilityField<float>
-        {
-          Base = 100,
-          PerLevel = 100
-        }
-      });
+namespace WarcraftLegacies.Source.Setup.Spells;
 
-      SpellSystem.Register(new Devour(ABILITY_A0S0_DEVOUR_OURO)
+public static class DruidsSpellSetup
+{
+  public static void Setup()
+  {
+    SpellSystem.Register(new Devour(ABILITY_A0NP_DEVOUR_TORTOLLA)
+    {
+      PercentageOfMaxHealth = 0.5f,
+      Damage = new LeveledAbilityField<float>
       {
-        PercentageOfMaxHealth = 0.5f,
-        Damage = new LeveledAbilityField<float>
-        {
-          Base = 100,
-          PerLevel = 100
-        }
-      });
-      
-      PassiveAbilityManager.Register(new MassiveAttackAbility(UNIT_E00A_ANCIENT_GUARDIAN_DRUIDS)
+        Base = 100,
+        PerLevel = 100
+      }
+    });
+
+    SpellSystem.Register(new Devour(ABILITY_A0S0_DEVOUR_OURO)
+    {
+      PercentageOfMaxHealth = 0.5f,
+      Damage = new LeveledAbilityField<float>
       {
-        AttackDamagePercentage = 0.5f,
-        Distance = 700
-      });
-    }
+        Base = 100,
+        PerLevel = 100
+      }
+    });
+
+    PassiveAbilityManager.Register(new MassiveAttackAbility(UNIT_E00A_ANCIENT_GUARDIAN_DRUIDS)
+    {
+      AttackDamagePercentage = 0.5f,
+      Distance = 700
+    });
   }
 }

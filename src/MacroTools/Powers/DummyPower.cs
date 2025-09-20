@@ -1,22 +1,21 @@
 ﻿using MacroTools.FactionSystem;
 
-namespace MacroTools.Powers
+namespace MacroTools.Powers;
+
+public sealed class DummyPower : Power
 {
-  public sealed class DummyPower : Power
+  public DummyPower(string name, string description, string iconName)
   {
-    public DummyPower(string name, string description, string iconName)
-    {
-      Name = name;
-      Description = description;
-      IconName = iconName;
-    }
+    Name = name;
+    Description = description;
+    IconName = iconName;
+  }
 
-    public override void OnAdd(player whichPlayer)
-    {
-    }
+  public override void OnAdd(player whichPlayer)
+  {
+  }
 
-    public override void OnRemove(player whichPlayer)
-    {
-    }
+  public override void OnRemove(player whichPlayer)
+  {
   }
 }

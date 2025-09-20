@@ -1,75 +1,77 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 
-namespace MacroTools.HintSystem
+namespace MacroTools.HintSystem;
+
+public sealed class Hint
 {
-  public sealed class Hint
+  private const float HintInterval = 180;
+
+  private static readonly List<Hint> _unread = new();
+  private readonly string _msg;
+  private static bool _initialized;
+
+  public Hint(string msg)
   {
-    private const float HintInterval = 180;
-    
-    private static readonly List<Hint> Unread = new();
-    private readonly string _msg;
-    private static bool _initialized;
+    _msg = msg;
+  }
 
-    public Hint(string msg)
+  public static void Register(Hint hint)
+  {
+    if (!_initialized)
     {
-      _msg = msg;
+      Initialize();
+    }
+    _unread.Add(hint);
+  }
+
+  /// <summary>
+  /// Registers a new <see cref="Hint"/> with the specified message.
+  /// </summary>
+  public static void Register(string message)
+  {
+    if (!_initialized)
+    {
+      Initialize();
+    }
+    _unread.Add(new Hint(message));
+  }
+
+  private void Display()
+  {
+    foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+    {
+      player.DisplayHint(_msg);
     }
 
-    public static void Register(Hint hint)
+    _unread.Remove(this);
+  }
+
+  private static void DisplayRandom()
+  {
+    if (_unread.Count > 0)
     {
-      if (!_initialized)
+      _unread.ElementAt(GetRandomInt(0, _unread.Count - 1)).Display();
+    }
+  }
+
+  private static void DisplayRandomHints()
+  {
+    foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+    {
+      if (GetLocalPlayer() == player)
       {
-        Initialize();
-      }
-      Unread.Add(hint);
-    }
-
-    /// <summary>
-    /// Registers a new <see cref="Hint"/> with the specified message.
-    /// </summary>
-    public static void Register(string message)
-    {
-      if (!_initialized)
-      {
-        Initialize();
-      }
-      Unread.Add(new Hint(message));
-    }
-
-    private void Display()
-    {
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-        player.DisplayHint(_msg);
-      Unread.Remove(this);
-    }
-
-    private static void DisplayRandom()
-    {
-      if (Unread.Count > 0)
-      {
-        Unread.ElementAt(GetRandomInt(0, Unread.Count - 1)).Display();
-      }
-    }
-
-    private static void DisplayRandomHints()
-    {
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
-      {
-        if (GetLocalPlayer() == player)
-        {
-          DisplayRandom();
-        }
+        DisplayRandom();
       }
     }
+  }
 
-    private static void Initialize()
-    {
-      _initialized = true;
-      var trig = CreateTrigger();
-      TriggerRegisterTimerEvent(trig, HintInterval, true);
-      TriggerAddAction(trig, DisplayRandomHints);
-    }
+  private static void Initialize()
+  {
+    _initialized = true;
+    var trig = CreateTrigger();
+    TriggerRegisterTimerEvent(trig, HintInterval, true);
+    TriggerAddAction(trig, DisplayRandomHints);
   }
 }

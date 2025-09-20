@@ -6,42 +6,41 @@ using MacroTools.Powers;
 using MacroTools.QuestSystem;
 using TestMap.Source.Setup;
 
-namespace TestMap.Source.Quests
+namespace TestMap.Source.Quests;
+
+public sealed class ExampleQuestC : QuestData
 {
-  public sealed class ExampleQuestC : QuestData
+  private readonly Power _zerglingPower;
+
+  public ExampleQuestC() : base("Free Zergling", "We really need a free Zergling.",
+    "ReplaceableTextures\\CommandButtons\\BTNZergling.blp")
   {
-    private readonly Power _zerglingPower;
-  
-    public ExampleQuestC() : base("Free Zergling", "We really need a free Zergling.",
-      "ReplaceableTextures\\CommandButtons\\BTNZergling.blp")
-    {
-      AddObjective(new ObjectiveAcquireArtifact(ArtifactSetup.Killmaim));
-      AddObjective(new ObjectiveSelfExists());
-      _zerglingPower = new DummyPower("Zerglings", "Spawn zerglings constantly.", "Zergling");
-    }
+    AddObjective(new ObjectiveAcquireArtifact(ArtifactSetup.Killmaim));
+    AddObjective(new ObjectiveSelfExists());
+    _zerglingPower = new DummyPower("Zerglings", "Spawn zerglings constantly.", "Zergling");
+  }
 
-    protected override string RewardDescription => "A free Zergling, and destroy Kelen's Dagger of Escape";
-    public override string RewardFlavour => "Congratulations on your free Zergling!";
-    protected override string PenaltyDescription => "A hostile Peasant spawns";
+  protected override string RewardDescription => "A free Zergling, and destroy Kelen's Dagger of Escape";
+  public override string RewardFlavour => "Congratulations on your free Zergling!";
+  protected override string PenaltyDescription => "A hostile Peasant spawns";
 
-    protected override void OnAdd(Faction whichFaction)
-    {
-      whichFaction.AddPower(_zerglingPower);
-    }
+  protected override void OnAdd(Faction whichFaction)
+  {
+    whichFaction.AddPower(_zerglingPower);
+  }
 
-    protected override void OnFail(Faction whichFaction)
-    {
-      CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), FourCC("hpea"), 0, 0, 0);
-    }
-  
-    protected override void OnComplete(Faction whichFaction)
-    {
-      CreateUnit(whichFaction.Player, FourCC("zzrg"), 0, 0, 0);
-      whichFaction.RemovePower(_zerglingPower);
-      whichFaction.Name = "Zerg";
-      whichFaction.Icon = "ReplaceableTextures\\CommandButtons\\BTNZergling.blp";
+  protected override void OnFail(Faction whichFaction)
+  {
+    CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), FourCC("hpea"), 0, 0, 0);
+  }
 
-      ArtifactManager.Destroy(ArtifactSetup.OrbOfFrost);
-    }
+  protected override void OnComplete(Faction whichFaction)
+  {
+    CreateUnit(whichFaction.Player, FourCC("zzrg"), 0, 0, 0);
+    whichFaction.RemovePower(_zerglingPower);
+    whichFaction.Name = "Zerg";
+    whichFaction.Icon = "ReplaceableTextures\\CommandButtons\\BTNZergling.blp";
+
+    ArtifactManager.Destroy(ArtifactSetup.OrbOfFrost);
   }
 }

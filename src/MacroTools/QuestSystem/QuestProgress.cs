@@ -1,10 +1,9 @@
-﻿namespace MacroTools.QuestSystem
+﻿namespace MacroTools.QuestSystem;
+
+public enum QuestProgress
 {
-  public enum QuestProgress
-  {
-    Undiscovered,
-    Incomplete,
-    Complete,
-    Failed
-  }
+  Undiscovered,
+  Incomplete,
+  Complete,
+  Failed
 }

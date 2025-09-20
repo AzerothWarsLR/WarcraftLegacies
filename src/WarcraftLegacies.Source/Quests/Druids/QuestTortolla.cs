@@ -4,45 +4,44 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.QuestSystem;
 
-namespace WarcraftLegacies.Source.Quests.Druids
+namespace WarcraftLegacies.Source.Quests.Druids;
+
+public sealed class QuestTortolla : QuestData
 {
-  public sealed class QuestTortolla : QuestData
+  private const int HeroId = UNIT_H04U_DEMIGOD_DRUIDS;
+  private readonly unit _sleepingTortolla;
+
+  public QuestTortolla(LegendaryHero tortolla) : base("The Turtle Demigod",
+    "Tortolla was badly wounded during the War of the Ancients, and has been resting ever since.",
+    @"ReplaceableTextures\CommandButtons\BTNSeaTurtleGreen.blp")
   {
-    private const int HeroId = UNIT_H04U_DEMIGOD_DRUIDS;
-    private readonly unit _sleepingTortolla;
+    AddObjective(new ObjectiveTime(480));
+    AddObjective(new ObjectiveSelfExists());
+    ResearchId = UPGRADE_R049_QUEST_COMPLETED_THE_TURTLE_DEMIGOD;
 
-    public QuestTortolla(LegendaryHero tortolla) : base("The Turtle Demigod",
-      "Tortolla was badly wounded during the War of the Ancients, and has been resting ever since.",
-      @"ReplaceableTextures\CommandButtons\BTNSeaTurtleGreen.blp")
-    {
-      AddObjective(new ObjectiveTime(480));
-      AddObjective(new ObjectiveSelfExists());
-      ResearchId = UPGRADE_R049_QUEST_COMPLETED_THE_TURTLE_DEMIGOD;
+    var sleepingTurtle = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), HeroId, -11315, 9389, 333);
+    SetUnitInvulnerable(sleepingTurtle, true);
+    _sleepingTortolla = sleepingTurtle;
+    AddHeroXP(sleepingTurtle, tortolla.StartingXp, true);
+    AddSpecialEffectTarget(@"Abilities\Spells\Undead\Sleep\SleepTarget.mdl", _sleepingTortolla,
+      "overhead");
+  }
 
-      var sleepingTurtle = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), HeroId, -11315, 9389, 333);
-      SetUnitInvulnerable(sleepingTurtle, true);
-      _sleepingTortolla = sleepingTurtle;
-      AddHeroXP(sleepingTurtle, tortolla.StartingXp, true);
-      AddSpecialEffectTarget(@"Abilities\Spells\Undead\Sleep\SleepTarget.mdl", _sleepingTortolla,
-        "overhead");
-    }
+  /// <inheritdoc/>
+  public override string RewardFlavour => "Tortolla has finally awoken from his ancient slumber.";
 
-    /// <inheritdoc/>
-    public override string RewardFlavour => "Tortolla has finally awoken from his ancient slumber.";
+  /// <inheritdoc/>
+  protected override string RewardDescription => "You can summon Tortolla from the Altar of Elders";
 
-    /// <inheritdoc/>
-    protected override string RewardDescription => "You can summon Tortolla from the Altar of Elders";
+  /// <inheritdoc/>
+  protected override void OnComplete(Faction completingFaction)
+  {
+    RemoveUnit(_sleepingTortolla);
+  }
 
-    /// <inheritdoc/>
-    protected override void OnComplete(Faction completingFaction)
-    {
-      RemoveUnit(_sleepingTortolla);
-    }
-
-    /// <inheritdoc/>
-    protected override void OnFail(Faction completingFaction)
-    {
-      RemoveUnit(_sleepingTortolla);
-    }
+  /// <inheritdoc/>
+  protected override void OnFail(Faction completingFaction)
+  {
+    RemoveUnit(_sleepingTortolla);
   }
 }

@@ -1,8 +1,7 @@
-﻿namespace WarcraftLegacies.Source
+﻿namespace WarcraftLegacies.Source;
+
+public enum PatronTier
 {
-  public enum PatronTier
-  {
-    One,
-    Two
-  }
+  One,
+  Two
 }

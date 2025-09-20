@@ -3,53 +3,58 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.QuestSystem;
 
-namespace MacroTools.ObjectiveSystem.Objectives.LegendBased
+namespace MacroTools.ObjectiveSystem.Objectives.LegendBased;
+
+/// <summary>
+/// Completed when your team controls a particular <see cref="Capital"/>.
+/// </summary>
+public sealed class ObjectiveControlCapital : Objective
 {
+  private readonly bool _failOnControlLoss;
+  private readonly Legend _target;
+
   /// <summary>
-  /// Completed when your team controls a particular <see cref="Capital"/>.
+  /// Initializes a new instance of the <see cref="ObjectiveControlCapital"/> class.
   /// </summary>
-  public sealed class ObjectiveControlCapital : Objective
+  /// <param name="target">The <see cref="Capital"/> that needs to be controlled to complete the objective.</param>
+  /// <param name="failOnControlLoss">If true, the objective will fail when control of the capital is lost for the tirst time.</param>
+  public ObjectiveControlCapital(Capital target, bool failOnControlLoss)
   {
-    private readonly bool _failOnControlLoss;
-    private readonly Legend _target;
-
-    /// <summary>
-    /// Initializes a new instance of the <see cref="ObjectiveControlCapital"/> class.
-    /// </summary>
-    /// <param name="target">The <see cref="Capital"/> that needs to be controlled to complete the objective.</param>
-    /// <param name="failOnControlLoss">If true, the objective will fail when control of the capital is lost for the tirst time.</param>
-    public ObjectiveControlCapital(Capital target, bool failOnControlLoss)
+    _target = target;
+    Description = $"You control {target.Name}";
+    _failOnControlLoss = failOnControlLoss;
+    if (target.Unit != null)
     {
-      _target = target;
-      Description = $"You control {target.Name}";
-      _failOnControlLoss = failOnControlLoss;
-      if (target.Unit != null) 
-        TargetWidget = target.Unit;
-
-      DisplaysPosition = true;
-      Position = _target.Unit?.GetPosition();
+      TargetWidget = target.Unit;
     }
 
-    public override void OnAdd(Faction whichFaction)
-    {
-      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
-      {
-        Progress = QuestProgress.Complete;
-      }
-      _target.ChangedOwner += (_, _) => { RecalculateProgress(); };
-      _target.UnitChanged += (_, _) => { RecalculateProgress(); };
+    DisplaysPosition = true;
+    Position = _target.Unit?.GetPosition();
+  }
 
-      var deathTrigger = CreateTrigger();
-      TriggerRegisterUnitEvent(deathTrigger, _target.Unit, EVENT_UNIT_DEATH);
-      TriggerAddAction(deathTrigger, () => { Progress = QuestProgress.Failed; });
+  public override void OnAdd(Faction whichFaction)
+  {
+    if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
+    {
+      Progress = QuestProgress.Complete;
     }
+    _target.ChangedOwner += (_, _) => { RecalculateProgress(); };
+    _target.UnitChanged += (_, _) => { RecalculateProgress(); };
 
-    private void RecalculateProgress()
+    var deathTrigger = CreateTrigger();
+    TriggerRegisterUnitEvent(deathTrigger, _target.Unit, EVENT_UNIT_DEATH);
+    TriggerAddAction(deathTrigger, () => { Progress = QuestProgress.Failed; });
+  }
+
+  private void RecalculateProgress()
+  {
+    if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
     {
-      if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
-        Progress = QuestProgress.Complete;
-      else
-        Progress = _failOnControlLoss ? QuestProgress.Failed : QuestProgress.Incomplete;
+      Progress = QuestProgress.Complete;
+    }
+    else
+    {
+      Progress = _failOnControlLoss ? QuestProgress.Failed : QuestProgress.Incomplete;
     }
   }
 }

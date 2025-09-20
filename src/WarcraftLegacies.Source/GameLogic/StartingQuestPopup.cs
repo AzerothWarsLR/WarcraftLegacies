@@ -1,33 +1,34 @@
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.QuestSystem;
 using WCSharp.Shared;
 
-namespace WarcraftLegacies.Source.GameLogic
+namespace WarcraftLegacies.Source.GameLogic;
+
+/// <summary>
+/// Responsible for displaying each <see cref="Faction"/>'s starting <see cref="QuestData"/>.
+/// </summary>
+public static class StartingQuestPopup
 {
   /// <summary>
-  /// Responsible for displaying each <see cref="Faction"/>'s starting <see cref="QuestData"/>.
+  /// Displays each <see cref="Faction"/>'s starting <see cref="QuestData"/> to the occupying player
+  /// after a period of time has elapsed.
   /// </summary>
-  public static class StartingQuestPopup
+  /// <param name="timeToDisplay">Number of seconds after which to display the quests.</param>
+  public static void Setup(float timeToDisplay)
   {
-    /// <summary>
-    /// Displays each <see cref="Faction"/>'s starting <see cref="QuestData"/> to the occupying player
-    /// after a period of time has elapsed.
-    /// </summary>
-    /// <param name="timeToDisplay">Number of seconds after which to display the quests.</param>
-    public static void Setup(float timeToDisplay)
+    var trig = CreateTrigger();
+    TriggerRegisterTimerEvent(trig, timeToDisplay, false);
+    TriggerAddAction(trig, () =>
     {
-      var trig = CreateTrigger();
-      TriggerRegisterTimerEvent(trig, timeToDisplay, false);
-      TriggerAddAction(trig, () =>
+      foreach (var player in Util.EnumeratePlayers())
       {
-        foreach (var player in Util.EnumeratePlayers())
+        var playerFaction = player.GetFaction();
+        if (playerFaction?.StartingQuest != null)
         {
-          var playerFaction = player.GetFaction();
-          if (playerFaction?.StartingQuest != null)
-            playerFaction.DisplayDiscovered(playerFaction.StartingQuest, true);
+          playerFaction.DisplayDiscovered(playerFaction.StartingQuest, true);
         }
-      });
-    }
+      }
+    });
   }
 }

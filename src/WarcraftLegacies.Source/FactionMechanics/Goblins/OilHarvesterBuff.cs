@@ -1,58 +1,57 @@
 ﻿using MacroTools.Hazards;
 using WCSharp.Buffs;
 
-namespace WarcraftLegacies.Source.FactionMechanics.Goblins
+namespace WarcraftLegacies.Source.FactionMechanics.Goblins;
+
+/// <summary>
+/// Units with this buff harvest oil from <see cref="OilPool"/>s around them.
+/// </summary>
+public sealed class OilHarvesterBuff : TickingBuff
 {
+  private readonly OilPool _oilPool;
+
   /// <summary>
-  /// Units with this buff harvest oil from <see cref="OilPool"/>s around them.
+  /// How much oil this buff harvests per second.
   /// </summary>
-  public sealed class OilHarvesterBuff : TickingBuff
+  public int OilHarvestedPerSecond { get; init; }
+
+  /// <summary>
+  /// Construct an <see cref="OilUserBuff"/>.
+  /// </summary>
+  /// <param name="target">The unit with the buff.</param>
+  /// <param name="oilPool">The pool that this harvester is harvesting from.</param>
+  public OilHarvesterBuff(unit target, OilPool oilPool) : base(target, target)
   {
-    private readonly OilPool _oilPool;
+    _oilPool = oilPool;
+    Duration = float.MaxValue;
+    Interval = 1f;
+  }
 
-    /// <summary>
-    /// How much oil this buff harvests per second.
-    /// </summary>
-    public int OilHarvestedPerSecond { get; init; }
-    
-    /// <summary>
-    /// Construct an <see cref="OilUserBuff"/>.
-    /// </summary>
-    /// <param name="target">The unit with the buff.</param>
-    /// <param name="oilPool">The pool that this harvester is harvesting from.</param>
-    public OilHarvesterBuff(unit target, OilPool oilPool) : base(target, target)
+  /// <inheritdoc />
+  public override void OnApply()
+  {
+    _oilPool.OilPower.Income += OilHarvestedPerSecond;
+    BlzSetUnitMaxMana(Target, _oilPool.OilAmount);
+    SetUnitState(Target, UNIT_STATE_MANA, _oilPool.OilAmount);
+  }
+
+  /// <inheritdoc />
+  public override void OnDispose() => _oilPool.OilPower.Income -= OilHarvestedPerSecond;
+
+  /// <inheritdoc />
+  public override void OnTick()
+  {
+    if (!_oilPool.Active || _oilPool.OilAmount <= OilHarvestedPerSecond)
     {
-      _oilPool = oilPool;
-      Duration = float.MaxValue;
-      Interval = 1f;
+      KillUnit(Caster);
+      _oilPool.OilAmount -= OilHarvestedPerSecond;
+      _oilPool.OilPower.Amount += OilHarvestedPerSecond;
+      _oilPool.Dispose();
     }
-
-    /// <inheritdoc />
-    public override void OnApply()
+    else
     {
-      _oilPool.OilPower.Income += OilHarvestedPerSecond;
-      BlzSetUnitMaxMana(Target, _oilPool.OilAmount);
+      _oilPool.OilAmount -= OilHarvestedPerSecond;
       SetUnitState(Target, UNIT_STATE_MANA, _oilPool.OilAmount);
-    }
-
-    /// <inheritdoc />
-    public override void OnDispose() => _oilPool.OilPower.Income -= OilHarvestedPerSecond;
-
-    /// <inheritdoc />
-    public override void OnTick()
-    {
-      if (!_oilPool.Active || _oilPool.OilAmount <= OilHarvestedPerSecond)
-      {
-        KillUnit(Caster);
-        _oilPool.OilAmount -= OilHarvestedPerSecond;
-        _oilPool.OilPower.Amount += OilHarvestedPerSecond;
-        _oilPool.Dispose();
-      }
-      else
-      {
-        _oilPool.OilAmount -= OilHarvestedPerSecond;
-        SetUnitState(Target, UNIT_STATE_MANA, _oilPool.OilAmount);
-      }
     }
   }
 }

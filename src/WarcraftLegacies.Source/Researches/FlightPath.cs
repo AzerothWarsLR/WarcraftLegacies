@@ -4,75 +4,84 @@ using MacroTools.Systems;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Researches
-{
-  /// <summary>
-  /// When flight path is researched, the two flight path waygates at Orgrimmar and Thunder Bluff become active
-  /// and connected to each other.
-  /// </summary>
-  public sealed class FlightPath : Research
-  {
-    private readonly Faction _frostwolf;
-    private const int ResearchId = UPGRADE_R09N_FLIGHT_PATH_WARSONG;
-    private static unit? _flightToOrgrimmar;
-    private static unit? _flightToThunderBluff;
-    private static bool _researched;
+namespace WarcraftLegacies.Source.Researches;
 
-    /// <inheritdoc />
-    public FlightPath(Faction frostwolf, int researchTypeId, int goldCost, PreplacedUnitSystem preplacedUnitSystem) 
-      : base(researchTypeId, goldCost)
+/// <summary>
+/// When flight path is researched, the two flight path waygates at Orgrimmar and Thunder Bluff become active
+/// and connected to each other.
+/// </summary>
+public sealed class FlightPath : Research
+{
+  private readonly Faction _frostwolf;
+  private const int ResearchId = UPGRADE_R09N_FLIGHT_PATH_WARSONG;
+  private static unit? _flightToOrgrimmar;
+  private static unit? _flightToThunderBluff;
+  private static bool _researched;
+
+  /// <inheritdoc />
+  public FlightPath(Faction frostwolf, int researchTypeId, int goldCost, PreplacedUnitSystem preplacedUnitSystem)
+    : base(researchTypeId, goldCost)
+  {
+    _frostwolf = frostwolf;
+    var orgrimmarLocation = new Point(-9704, -858);
+    var thunderbluffLocation = new Point(-14445, -4042);
+    _flightToOrgrimmar = preplacedUnitSystem.GetUnit(
+      UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, thunderbluffLocation);
+    _flightToThunderBluff = preplacedUnitSystem.GetUnit(
+      UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, orgrimmarLocation);
+  }
+
+  /// <inheritdoc />
+  public override void OnResearch(player researchingPlayer)
+  {
+    if (_researched)
     {
-      _frostwolf = frostwolf;
-      var orgrimmarLocation = new Point(-9704, -858);
-      var thunderbluffLocation = new Point(-14445, -4042);
-      _flightToOrgrimmar = preplacedUnitSystem.GetUnit(
-        UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, thunderbluffLocation);
-      _flightToThunderBluff = preplacedUnitSystem.GetUnit(
-        UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, orgrimmarLocation);
+      return;
     }
 
-    /// <inheritdoc />
-    public override void OnResearch(player researchingPlayer)
+    var recipient = _frostwolf.Player;
+    if (recipient == null)
     {
-      if (_researched)
-        return;
-      
-      var recipient = _frostwolf.Player;
-      if (recipient == null)
-      {
-        if (_flightToOrgrimmar != null) KillUnit(_flightToOrgrimmar);
-        if (_flightToThunderBluff != null) KillUnit(_flightToThunderBluff);
-        return;
-      }
-
       if (_flightToOrgrimmar != null)
       {
-        SetUnitOwner(_flightToOrgrimmar, recipient, true);
-        WaygateSetDestination(_flightToOrgrimmar, Regions.OrgrimmarFlight.Center.X, Regions.ThunderbluffFlight.Center.Y);
-        SetUnitInvulnerable(_flightToOrgrimmar, false);
+        KillUnit(_flightToOrgrimmar);
       }
 
       if (_flightToThunderBluff != null)
       {
-        SetUnitOwner(_flightToThunderBluff, recipient, true);
-        WaygateSetDestination(_flightToThunderBluff, Regions.ThunderbluffFlight.Center.X, Regions.ThunderbluffFlight.Center.Y);
-        SetUnitInvulnerable(_flightToThunderBluff, false);
+        KillUnit(_flightToThunderBluff);
       }
 
-      _frostwolf.SetObjectLevel(ResearchId, 1);
-      _researched = true;
+      return;
     }
 
-    /// <inheritdoc />
-    public override void OnRegister()
+    if (_flightToOrgrimmar != null)
     {
-      PlayerUnitEvents.Register(UnitEvent.Dies, 
-        () => { if (_flightToThunderBluff != null) KillUnit(_flightToThunderBluff); }, 
-        _flightToOrgrimmar);
-
-      PlayerUnitEvents.Register(UnitEvent.Dies, 
-        () => { if (_flightToOrgrimmar != null) KillUnit(_flightToOrgrimmar); }, 
-        _flightToThunderBluff);
+      SetUnitOwner(_flightToOrgrimmar, recipient, true);
+      WaygateSetDestination(_flightToOrgrimmar, Regions.OrgrimmarFlight.Center.X, Regions.ThunderbluffFlight.Center.Y);
+      SetUnitInvulnerable(_flightToOrgrimmar, false);
     }
+
+    if (_flightToThunderBluff != null)
+    {
+      SetUnitOwner(_flightToThunderBluff, recipient, true);
+      WaygateSetDestination(_flightToThunderBluff, Regions.ThunderbluffFlight.Center.X, Regions.ThunderbluffFlight.Center.Y);
+      SetUnitInvulnerable(_flightToThunderBluff, false);
+    }
+
+    _frostwolf.SetObjectLevel(ResearchId, 1);
+    _researched = true;
+  }
+
+  /// <inheritdoc />
+  public override void OnRegister()
+  {
+    PlayerUnitEvents.Register(UnitEvent.Dies,
+      () => { if (_flightToThunderBluff != null) { KillUnit(_flightToThunderBluff); } },
+      _flightToOrgrimmar);
+
+    PlayerUnitEvents.Register(UnitEvent.Dies,
+      () => { if (_flightToOrgrimmar != null) { KillUnit(_flightToOrgrimmar); } },
+      _flightToThunderBluff);
   }
 }

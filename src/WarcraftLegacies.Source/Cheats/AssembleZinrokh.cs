@@ -5,37 +5,38 @@ using MacroTools.CommandSystem;
 using MacroTools.Extensions;
 using MacroTools.Utils;
 
-namespace WarcraftLegacies.Source.Cheats
+namespace WarcraftLegacies.Source.Cheats;
+
+public sealed class AssembleZinrokh : Command
 {
-  public sealed class AssembleZinrokh : Command
+  private readonly List<Artifact> _zinrokhFragments;
+
+  public AssembleZinrokh(List<Artifact> zinrokhFragments)
   {
-    private readonly List<Artifact> _zinrokhFragments;
+    _zinrokhFragments = zinrokhFragments;
+  }
 
-    public AssembleZinrokh(List<Artifact> zinrokhFragments)
+  /// <inheritdoc />
+  public override string CommandText => "assemblezinrokh";
+
+  /// <inheritdoc />
+  public override ExpectedParameterCount ExpectedParameterCount => new(0);
+
+  /// <inheritdoc />
+  public override CommandType Type => CommandType.Cheat;
+
+  /// <inheritdoc />
+  public override string Description => "Moves all Zin'rokh fragments to the currently selected unit.";
+
+  /// <inheritdoc />
+  public override string Execute(player commandUser, params string[] parameters)
+  {
+    var selectedUnit = GlobalGroup.EnumSelectedUnits(commandUser).First();
+    foreach (var artifact in _zinrokhFragments)
     {
-      _zinrokhFragments = zinrokhFragments;
+      selectedUnit.AddItemSafe(artifact.Item);
     }
 
-    /// <inheritdoc />
-    public override string CommandText => "assemblezinrokh";
-
-    /// <inheritdoc />
-    public override ExpectedParameterCount ExpectedParameterCount => new(0);
-
-    /// <inheritdoc />
-    public override CommandType Type => CommandType.Cheat;
-
-    /// <inheritdoc />
-    public override string Description => "Moves all Zin'rokh fragments to the currently selected unit.";
-
-    /// <inheritdoc />
-    public override string Execute(player commandUser, params string[] parameters)
-    {
-      var selectedUnit = GlobalGroup.EnumSelectedUnits(commandUser).First();
-      foreach (var artifact in _zinrokhFragments)
-        selectedUnit.AddItemSafe(artifact.Item);
-
-      return "Moved all Zin'rokh fragments to the currently selected unit.";
-    }
+    return "Moved all Zin'rokh fragments to the currently selected unit.";
   }
 }

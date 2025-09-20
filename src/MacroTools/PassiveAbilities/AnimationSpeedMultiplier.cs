@@ -1,19 +1,18 @@
 ﻿using MacroTools.PassiveAbilitySystem;
 
-namespace MacroTools.PassiveAbilities
+namespace MacroTools.PassiveAbilities;
+
+public sealed class AnimationSpeedMultiplier : PassiveAbility, IEffectOnConstruction
 {
-  public sealed class AnimationSpeedMultiplier : PassiveAbility, IEffectOnConstruction
+  private readonly float _multiplier;
+
+  public AnimationSpeedMultiplier(int unitTypeId, float multiplier) : base(unitTypeId)
   {
-    private readonly float _multiplier;
+    _multiplier = multiplier;
+  }
 
-    public AnimationSpeedMultiplier(int unitTypeId, float multiplier) : base(unitTypeId)
-    {
-      _multiplier = multiplier;
-    }
-
-    public void OnConstruction()
-    {
-      SetUnitTimeScale(GetConstructedStructure(), _multiplier);
-    }
+  public void OnConstruction()
+  {
+    SetUnitTimeScale(GetConstructedStructure(), _multiplier);
   }
 }

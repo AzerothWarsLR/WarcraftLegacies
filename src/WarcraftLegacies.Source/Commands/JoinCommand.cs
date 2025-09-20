@@ -1,46 +1,56 @@
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using WCSharp.Shared;
 
-namespace WarcraftLegacies.Source.Commands
+namespace WarcraftLegacies.Source.Commands;
+
+/// <summary>
+///   Joins the specified <see cref="Team" />. Only works if an invite has first been extended.
+/// </summary>
+public static class JoinCommand
 {
-  /// <summary>
-  ///   Joins the specified <see cref="Team" />. Only works if an invite has first been extended.
-  /// </summary>
-  public static class JoinCommand
+  private const string Command = "-join ";
+
+  private static void Actions()
   {
-    private const string Command = "-join ";
+    var enteredString = GetEventPlayerChatString();
+    var triggerPlayer = GetTriggerPlayer();
 
-    private static void Actions()
+    if (SubString(enteredString, 0, StringLength(Command)) != Command)
     {
-      var enteredString = GetEventPlayerChatString();
-      var triggerPlayer = GetTriggerPlayer();
+      return;
+    }
 
-      if (SubString(enteredString, 0, StringLength(Command)) != Command) return;
-      var content = SubString(enteredString, StringLength(Command), StringLength(enteredString));
-      content = StringCase(content, false);
+    var content = SubString(enteredString, StringLength(Command), StringLength(enteredString));
+    content = StringCase(content, false);
 
-      if (FactionManager.TryGetTeamByName(content, out var targetTeam))
+    if (FactionManager.TryGetTeamByName(content, out var targetTeam))
+    {
+      if (targetTeam.IsPlayerInvited(triggerPlayer))
       {
-        if (targetTeam.IsPlayerInvited(triggerPlayer))
-        {
-          triggerPlayer.SetTeam(targetTeam);
-          DisplayTextToPlayer(triggerPlayer, 0, 0, $"You have joined {targetTeam.Name}.");
-          targetTeam.DisplayText($"{triggerPlayer?.GetFaction()?.ColoredName} has joined the {targetTeam.Name}.");
-        }
-        else
-          DisplayTextToPlayer(triggerPlayer, 0, 0, $"You have not been invited to join {targetTeam.Name}.");
+        triggerPlayer.SetTeam(targetTeam);
+        DisplayTextToPlayer(triggerPlayer, 0, 0, $"You have joined {targetTeam.Name}.");
+        targetTeam.DisplayText($"{triggerPlayer?.GetFaction()?.ColoredName} has joined the {targetTeam.Name}.");
       }
       else
-        DisplayTextToPlayer(triggerPlayer, 0, 0, $"There is no Team with the name {content}.");
+      {
+        DisplayTextToPlayer(triggerPlayer, 0, 0, $"You have not been invited to join {targetTeam.Name}.");
+      }
+    }
+    else
+    {
+      DisplayTextToPlayer(triggerPlayer, 0, 0, $"There is no Team with the name {content}.");
+    }
+  }
+
+  public static void Setup()
+  {
+    var trig = CreateTrigger();
+    foreach (var player in Util.EnumeratePlayers())
+    {
+      TriggerRegisterPlayerChatEvent(trig, player, Command, false);
     }
 
-    public static void Setup()
-    {
-      var trig = CreateTrigger();
-      foreach (var player in Util.EnumeratePlayers()) 
-        TriggerRegisterPlayerChatEvent(trig, player, Command, false);
-      TriggerAddAction(trig, Actions);
-    }
+    TriggerAddAction(trig, Actions);
   }
 }

@@ -1,18 +1,17 @@
-﻿namespace Launcher.MapMigrations
+﻿namespace Launcher.MapMigrations;
+
+public static class MapMigrationProvider
 {
-  public static class MapMigrationProvider
+  public static IMapMigration[] GetMapMigrations()
   {
-    public static IMapMigration[] GetMapMigrations()
+    return new IMapMigration[]
     {
-      return new IMapMigration[]
-      {
-        new ControlPointMapMigration(),
-        new CreepLevelMapMigration(),
-        new GoldBountyMapMigration(),
-        new FlightMigration(),
-        new UnitTooltipMigration(),
-        new PortraitModelFileMapMigration()
-      };
-    }
+      new ControlPointMapMigration(),
+      new CreepLevelMapMigration(),
+      new GoldBountyMapMigration(),
+      new FlightMigration(),
+      new UnitTooltipMigration(),
+      new PortraitModelFileMapMigration()
+    };
   }
 }

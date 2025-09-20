@@ -7,53 +7,56 @@ using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
 
-namespace WarcraftLegacies.Source.Quests.Sentinels
+namespace WarcraftLegacies.Source.Quests.Sentinels;
+
+public sealed class QuestMaievOutland : QuestData
 {
-  public sealed class QuestMaievOutland : QuestData
+  private readonly LegendaryHero _maiev;
+  private readonly Capital _vaultOfTheWardens;
+  private readonly List<unit> _rescueUnits;
+
+  /// <summary>
+  /// Initializes a new instance of the <see cref="QuestMaievOutland"/> class
+  /// </summary>
+  public QuestMaievOutland(Rectangle rescueRect, LegendaryHero maiev, Capital vaultOfTheWardens) : base("Driven by Vengeance",
+    "Maiev drive for vengeance leads her to chase Illidan all the way to other worlds.",
+    @"ReplaceableTextures\CommandButtons\BTNMaievArmor.blp")
   {
-    private readonly LegendaryHero _maiev;
-    private readonly Capital _vaultOfTheWardens;
-    private readonly List<unit> _rescueUnits;
+    _maiev = maiev;
+    _vaultOfTheWardens = vaultOfTheWardens;
+    AddObjective(new ObjectiveCastSpell(ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL, true));
+    AddObjective(new ObjectiveControlLegend(maiev, true));
+    AddObjective(new ObjectiveControlCapital(vaultOfTheWardens, true));
+    _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="QuestMaievOutland"/> class
-    /// </summary>
-    public QuestMaievOutland(Rectangle rescueRect, LegendaryHero maiev, Capital vaultOfTheWardens) : base("Driven by Vengeance",
-      "Maiev drive for vengeance leads her to chase Illidan all the way to other worlds.",
-      @"ReplaceableTextures\CommandButtons\BTNMaievArmor.blp")
+  }
+
+  /// <inheritdoc/>
+  protected override string RewardDescription => "Control of Maiev's Outland outpost and moves Maiev to Outland";
+
+  /// <inheritdoc/>
+  public override string RewardFlavour => "Maiev's Outland outpost have been constructed.";
+
+  /// <inheritdoc/>
+  protected override void OnComplete(Faction completingFaction)
+  {
+    _maiev.Unit?.SetPosition(new Point(-5252, -27597));
+    if (_vaultOfTheWardens.Unit != null)
     {
-      _maiev = maiev;
-      _vaultOfTheWardens = vaultOfTheWardens;
-      AddObjective(new ObjectiveCastSpell(ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL, true));
-      AddObjective(new ObjectiveControlLegend(maiev, true));
-      AddObjective(new ObjectiveControlCapital(vaultOfTheWardens, true));
-      _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
-      
+      UnitRemoveAbility(_vaultOfTheWardens.Unit, ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL);
     }
 
-    /// <inheritdoc/>
-    protected override string RewardDescription => "Control of Maiev's Outland outpost and moves Maiev to Outland";
+    completingFaction?.Player.RescueGroup(_rescueUnits);
+  }
 
-    /// <inheritdoc/>
-    public override string RewardFlavour => "Maiev's Outland outpost have been constructed.";
-
-    /// <inheritdoc/>
-    protected override void OnComplete(Faction completingFaction)
+  /// <inheritdoc/>
+  protected override void OnFail(Faction completingFaction)
+  {
+    if (_vaultOfTheWardens.Unit != null)
     {
-      _maiev.Unit?.SetPosition(new Point(-5252, -27597));
-      if (_vaultOfTheWardens.Unit != null) 
-        UnitRemoveAbility(_vaultOfTheWardens.Unit, ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL);
-
-      completingFaction?.Player.RescueGroup(_rescueUnits);
+      UnitRemoveAbility(_vaultOfTheWardens.Unit, ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL);
     }
 
-    /// <inheritdoc/>
-    protected override void OnFail(Faction completingFaction)
-    {
-      if (_vaultOfTheWardens.Unit != null) 
-        UnitRemoveAbility(_vaultOfTheWardens.Unit, ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL);
-
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
-    }
+    Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
   }
 }
