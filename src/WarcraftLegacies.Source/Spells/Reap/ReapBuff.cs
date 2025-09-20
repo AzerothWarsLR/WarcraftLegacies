@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Spells.Reap
       EffectString = effectPath;
       EffectAttachmentPoint = "origin";
       EffectScale = 2;
-      Bind(ABILITY_ZB03_REAP_BUFF_APPLICATOR, BUFF_ZB04_REAP);
+      BindAura(ABILITY_ZB03_REAP_BUFF_APPLICATOR, BUFF_ZB04_REAP);
     }
     
     public override void OnApply()

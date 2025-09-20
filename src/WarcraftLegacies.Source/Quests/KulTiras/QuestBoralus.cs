@@ -9,7 +9,7 @@ using MacroTools.LegendSystem;
 using MacroTools.Powers;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static War3Api.Blizzard;
+using static WCSharp.Api.Blizzard;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras
 {
