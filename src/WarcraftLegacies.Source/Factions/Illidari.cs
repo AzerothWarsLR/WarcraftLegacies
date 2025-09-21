@@ -138,7 +138,7 @@ public sealed class Illidari : Faction
     ));
 
     TriggeredDialogueManager.Add(new TriggeredDialogue(
-      new Dialogue(@"Sound\Dialogue\HumanExpCamp\Human07x\A07LadyVashj32.flac",
+      new Dialogue(@"Sound\Dialogue\HumanExpCamp\Human07xInterlude\A07LadyVashj32.flac",
         "The naga are yours to command, Lord Illidan. Where you go, we follow.",
         "Lady Vashj")
       , new[]
