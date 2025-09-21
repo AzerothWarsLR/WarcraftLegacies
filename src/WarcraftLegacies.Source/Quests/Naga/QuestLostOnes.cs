@@ -26,6 +26,7 @@ public sealed class QuestLostOnes : QuestData
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R05H_QUEST_COMPLETED_THE_DRAENEI;
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
+    Knowledge = 5;
   }
 
   public override string RewardFlavour =>

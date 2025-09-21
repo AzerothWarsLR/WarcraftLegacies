@@ -25,6 +25,7 @@ public sealed class QuestZangarmarsh : QuestData
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R03B_QUEST_COMPLETED_COILFANG_RESERVOIR;
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
+    Knowledge = 5;
   }
 
   /// <inheritdoc />

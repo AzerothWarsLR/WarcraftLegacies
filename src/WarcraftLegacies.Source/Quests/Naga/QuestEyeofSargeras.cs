@@ -12,6 +12,7 @@ public sealed class QuestEyeofSargeras : QuestData
     @"ReplaceableTextures\CommandButtons\BTNKazzakIon.blp")
   {
     AddObjective(new ObjectiveLegendHasArtifact(illidan, eyeOfSargeras));
+    Knowledge = 20;
   }
 
   public override string RewardFlavour =>
