@@ -26,8 +26,8 @@ public static class IllidariObjectInfo
     yield return new(UNIT_NMPE_MUR_GUL_SLAVE_ILLIDARI_NZOTH_WORKER, Unlimited, UnitCategory.Worker);
     yield return new(UNIT_NMYR_NAGA_MYRMIDON_ILLIDARI, Unlimited);
     yield return new(UNIT_NSNP_SNAP_DRAGON_ILLIDARI, Unlimited);
-    yield return new(UNIT_NNSW_NAGA_SIREN_ILLIDARI, Unlimited);
-    yield return new(UNIT_NMSC_MUR_GUL_SHADOWCASTER_ILLIDARI, Unlimited);
+    yield return new(UNIT_NNSW_SIREN_ILLIDARI, Unlimited);
+    yield return new(UNIT_NMSC_SHADOWCASTER_ILLIDARI, Unlimited);
     yield return new(UNIT_NNSU_COILFANG_SUMMONER_ILLIDARI, 6);
     yield return new(UNIT_NNRG_ROYAL_GUARD_ILLIDARI, 6);
     yield return new(UNIT_NHYC_DRAGON_TURTLE_ILLIDARI, 8);
@@ -48,7 +48,7 @@ public static class IllidariObjectInfo
     yield return new(UNIT_U00S_HIGH_WARLORD_NAGA, 1);
     yield return new(UNIT_NAKA_ELDER_SAGE_ILLIDARI, 1);
     yield return new(UNIT_EEVI_DEMON_HUNTER_HYBRID_ILLIDARI, 1);
-    yield return new(UPGRADE_RNSW_NAGA_SIREN_ADEPT_TRAINING_NAGA_SIREN_MASTER_TRAINING, Unlimited);
+    yield return new(UPGRADE_RNSW_SIREN_ADEPT_TRAINING, Unlimited);
     yield return new(UPGRADE_R02V_SHADOWCASTER_MASTER_TRAINING, Unlimited);
   }
 }

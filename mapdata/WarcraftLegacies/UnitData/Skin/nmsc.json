@@ -26,7 +26,7 @@
     {
       "Id": 1885959285,
       "Type": 3,
-      "Value": "Train Mur\u0027gul Shadowcaster"
+      "Value": "Mur\u0027gul Shadowcaster"
     },
     {
       "Id": 1751675765,
@@ -49,11 +49,6 @@
       "Value": 50
     },
     {
-      "Id": 1651864693,
-      "Type": 3,
-      "Value": "Mystic caster of the Naga.  "
-    },
-    {
       "Id": 1853186933,
       "Type": 3,
       "Value": "Initiate,Adept,Master"
@@ -67,6 +62,16 @@
       "Id": 1635083125,
       "Type": 3,
       "Value": "war3mapImported\\UPGClericMastery.blp"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Shadowcaster"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Secondary spellcaster, adept at weakening enemy armies and mass healing. |n|n|cffffcc00Attacks land and air units.|r"
     }
   ]
 }
