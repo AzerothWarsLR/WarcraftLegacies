@@ -27,7 +27,7 @@ public sealed class FocalDemonGateBuff : PassiveBuff
       var targetPosition = Target.GetPosition();
       var offsetPosition =
         WCSharp.Shared.Util.PositionWithPolarOffset(targetPosition.X, targetPosition.Y, SpawnDistance,
-          GetUnitFacing(Target) + FacingOffset);
+          Target.Facing + FacingOffset);
       return new Point(offsetPosition.x, offsetPosition.y);
     }
   }
@@ -48,7 +48,7 @@ public sealed class FocalDemonGateBuff : PassiveBuff
   {
     if (Instance != null)
     {
-      KillUnit(Instance.Target);
+      Instance.Target.Kill();
     }
 
     Instance = this;

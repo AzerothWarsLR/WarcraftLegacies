@@ -44,7 +44,7 @@ public sealed class ObjectiveControlPoints : Objective
     foreach (var controlPoint in _progressByControlPoint.Keys.ToArray())
     {
       controlPoint.OwnerAllianceChanged += OnTargetOwnerAllianceChanged;
-      SetControlPointProgress(controlPoint, IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(controlPoint.Unit)));
+      SetControlPointProgress(controlPoint, IsPlayerOnSameTeamAsAnyEligibleFaction(controlPoint.Unit.Owner));
     }
   }
 

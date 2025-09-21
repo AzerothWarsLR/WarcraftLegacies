@@ -30,12 +30,12 @@ public sealed class ImmatureEggBuff : PassiveBuff
   {
     var formerLifePercent = Target.GetLifePercent();
     var formerPosition = Target.GetPosition();
-    var formerOwner = GetOwningPlayer(Target);
+    var formerOwner = Target.Owner;
 
-    KillUnit(Target);
-    RemoveUnit(Target);
+    Target.Kill();
+    Target.Dispose();
 
-    var matureEgg = CreateUnit(formerOwner, MatureEggUnitTypeId, formerPosition.X, formerPosition.Y, 270);
+    var matureEgg = unit.Create(formerOwner, MatureEggUnitTypeId, formerPosition.X, formerPosition.Y, 270);
     matureEgg.SetLifePercent(formerLifePercent);
 
     var matureEggBuff = new MatureEggBuff(matureEgg)

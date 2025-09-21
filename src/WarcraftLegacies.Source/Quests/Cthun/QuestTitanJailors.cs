@@ -60,7 +60,7 @@ public sealed class QuestTitanJailors : QuestData
     CleanupRocks();
 
     var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-        ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+        ? player.NeutralAggressive
         : completingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);

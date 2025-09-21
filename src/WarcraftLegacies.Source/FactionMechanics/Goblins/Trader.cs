@@ -28,8 +28,8 @@ public sealed class Trader : PassiveAbility, IEffectOnTrained
   {
     try
     {
-      var tradingCenter = GetTriggerUnit();
-      var trainedUnit = GetTrainedUnit();
+      var tradingCenter = @event.Unit;
+      var trainedUnit = @event.TrainedUnit;
       trainedUnit.IssueOrder("patrol", _tradeTargets[GetRandomInt(0, _tradeTargets.Length - 1)]);
       var incomeBuff =
         new TraderBuff(tradingCenter, trainedUnit, _goldIncomeBonus, tradingCenter);

@@ -42,8 +42,8 @@ public sealed class QuestGundrak : QuestData
   {
     if (completingFaction.Player != null)
     {
-      SetPlayerTechResearched(completingFaction.Player, GundrakResearch, 1);
-      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, _goldReward);
+      completingFaction.Player.SetTechResearched(GundrakResearch, 1);
+      completingFaction.Player.AdjustPlayerState(playerstate.ResourceGold, _goldReward);
     }
   }
 

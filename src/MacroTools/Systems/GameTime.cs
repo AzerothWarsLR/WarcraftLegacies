@@ -28,20 +28,20 @@ public static class GameTime
   /// <summary>Starts the timers that keeps trac of the game's ticks and turns.</summary>
   public static void Start()
   {
-    TimerStart(CreateTimer(), 0, false, () =>
+    timer.Create().Start(0, false, () =>
     {
-      TimerStart(CreateTimer(), 1, true, GameTick);
-      var turnTimer = CreateTimer();
-      TimerStart(turnTimer, TurnDuration, true, EndTurn);
-      _turnTimerDialog = CreateTimerDialog(turnTimer);
-      DestroyTimer(GetExpiredTimer());
+      timer.Create().Start(1, true, GameTick);
+      var turnTimer = timer.Create();
+      turnTimer.Start(TurnDuration, true, EndTurn);
+      _turnTimerDialog = timerdialog.Create(turnTimer);
+      @event.ExpiredTimer.Dispose();
     });
 
-    TimerStart(CreateTimer(), TimerDelay, false, () =>
+    timer.Create().Start(TimerDelay, false, () =>
     {
-      TimerDialogDisplay(_turnTimerDialog, true);
-      TimerDialogSetTitle(_turnTimerDialog, "Game starts in:");
-      DestroyTimer(GetExpiredTimer());
+      _turnTimerDialog.IsDisplayed = true;
+      _turnTimerDialog.SetTitle("Game starts in:");
+      @event.ExpiredTimer.Dispose();
     });
   }
 
@@ -73,10 +73,10 @@ public static class GameTime
       GameStarted?.Invoke(null, EventArgs.Empty);
     }
 
-    TimerDialogSetTitle(_turnTimerDialog, $"Turn {_turnCount}");
+    _turnTimerDialog.SetTitle($"Turn {_turnCount}");
     if (_turnCount >= 20)
     {
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers(PLAYER_SLOT_STATE_PLAYING, MAP_CONTROL_USER))
+      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
       {
         var faction = player.GetFaction();
         var meetEliminationThreshold = player.GetControlPoints().Count <= 5 && player.GetFoodUsed() <= 105 &&
@@ -89,10 +89,9 @@ public static class GameTime
           }
           else
           {
-            DisplayTextToPlayer(player, 0, 0,
-              PlayerData.ByHandle(player).EliminationTurns == 2
+            player.DisplayTextTo(PlayerData.ByHandle(player).EliminationTurns == 2
                 ? $"You have met the threshold for being eliminated from the game. Unless you raise your Control Point count above 5, raise food used above 105 or your team retakes/gains an essential Legend you will be defeated in {3 - PlayerData.ByHandle(player).EliminationTurns} turn."
-                : $"You have met the threshold for being eliminated from the game. Unless you raise your cp count above 5, raise food used above 105 or your team retakes/gains an essential Legend you will be defeated in {3 - PlayerData.ByHandle(player).EliminationTurns} turns.");
+                : $"You have met the threshold for being eliminated from the game. Unless you raise your cp count above 5, raise food used above 105 or your team retakes/gains an essential Legend you will be defeated in {3 - PlayerData.ByHandle(player).EliminationTurns} turns.", 0, 0);
           }
 
           PlayerData.ByHandle(player).EliminationTurns++;

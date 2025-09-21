@@ -15,16 +15,16 @@ public static class DisplayIntroText
   /// <param name="displayTime">The time after which to display intro text, in seconds.</param>
   public static void Setup(float displayTime)
   {
-    TimerStart(CreateTimer(), displayTime, false, () =>
+    timer.Create().Start(displayTime, false, () =>
     {
       try
       {
         foreach (var player1 in Util.EnumeratePlayers())
         {
-          DisplayTextToPlayer(player1, 0, 0, player1.GetFaction()?.IntroText ?? "");
+          player1.DisplayTextTo(player1.GetFaction()?.IntroText ?? "", 0, 0);
         }
 
-        DestroyTimer(GetExpiredTimer());
+        @event.ExpiredTimer.Dispose();
       }
       catch (Exception ex)
       {
@@ -33,12 +33,12 @@ public static class DisplayIntroText
     });
     foreach (var player in Util.EnumeratePlayers())
     {
-      DisplayTimedTextToPlayer(player, 0, 0, displayTime - 1, @"|cffffcc00Warcraft Legacies|r
+      player.DisplayTimedTextTo(displayTime - 1, @"|cffffcc00Warcraft Legacies|r
   |cffaaaaaaJoin our Discord:|r discord.gg/pnWZs69
   |cffff0000Support our Patreon:|r https://www.patreon.com/lordsebas
 
   If you are a new player, look at the Quest (F9) tab to see your objectives
-  ");
+  ", 0, 0);
     }
   }
 }

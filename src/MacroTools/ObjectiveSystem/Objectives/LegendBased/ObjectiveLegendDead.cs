@@ -25,13 +25,13 @@ public sealed class ObjectiveLegendDead : Objective
   {
     _target = target;
     TargetWidget = target.Unit;
-    Description = IsUnitType(target.Unit, UNIT_TYPE_STRUCTURE)
+    Description = target.Unit.IsUnitType(unittype.Structure)
       ? $"{target.Name} is destroyed"
       : $"{target.Name} is dead";
-    DisplaysPosition = IsUnitType(_target.Unit, UNIT_TYPE_STRUCTURE) ||
-                       GetOwningPlayer(_target.Unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE);
+    DisplaysPosition = _target.Unit.IsUnitType(unittype.Structure) ||
+                       _target.Unit.Owner == player.NeutralAggressive;
     target.PermanentlyDied += OnDeath;
-    Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
+    Position = new(_target.Unit.X, _target.Unit.Y);
   }
 
   private void OnDeath(object? sender, Legend legend) =>

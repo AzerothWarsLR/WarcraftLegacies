@@ -50,8 +50,8 @@ public sealed class LegendKultiras
     {
       Unit = preplacedUnitSystem.GetUnit(UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS)
     };
-    SetUnitInvulnerable(Flagship.Unit, true);
-    BlzPauseUnitEx(Flagship.Unit, true);
+    Flagship.Unit.IsInvulnerable = true;
+    Flagship.Unit.SetPausedEx(true);
   }
 
   public void RegisterLegends()

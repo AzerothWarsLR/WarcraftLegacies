@@ -109,7 +109,7 @@ public static class ScourgeSpellSetup
         Base = 500
       },
       Duration = 30,
-      UpgradeCondition = unit => GetUnitTypeId(unit) == UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE,
+      UpgradeCondition = unit => unit.UnitType == UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE,
       KillEffect = @"Objects\Spawnmodels\Undead\UndeadDissipate\UndeadDissipate.mdl",
       BuffEffect = @"Abilities\Spells\Items\AIso\BIsvTarget.mdl",
     });
@@ -120,7 +120,7 @@ public static class ScourgeSpellSetup
       DummyAbilityOrderId = ORDER_DEATH_COIL,
       Radius = 250,
       CasterHealPerTargetUpgraded = 25,
-      UpgradeCondition = unit => GetUnitTypeId(unit) == UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE
+      UpgradeCondition = unit => unit.UnitType == UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE
     });
 
     SpellSystem.Register(new Apocalypse(ABILITY_A10N_APOCALYPSE_DEATH_KNIGHT_ARTHAS)
@@ -145,7 +145,7 @@ public static class ScourgeSpellSetup
       EffectOnProjectileSpawnScale = 0.5f,
       DummyAbilityId = ABILITY_A0YD_APOCALYPSE_DUMMY_CASTER,
       DummyAbilityOrderId = ORDER_PARASITE,
-      UpgradeCondition = unit => GetUnitTypeId(unit) == UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE
+      UpgradeCondition = unit => unit.UnitType == UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE
     });
 
     {

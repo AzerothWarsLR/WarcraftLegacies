@@ -30,7 +30,7 @@ public sealed class QuestJainaSoulGem : QuestData
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
   {
-    var soulGem = new Artifact(CreateItem(ITEM_GSOU_SOUL_GEM, 0, 0));
+    var soulGem = new Artifact(item.Create(ITEM_GSOU_SOUL_GEM, 0, 0));
     ArtifactManager.Register(soulGem);
     _jaina.Unit?.AddItemSafe(soulGem.Item);
   }

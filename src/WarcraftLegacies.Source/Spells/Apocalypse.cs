@@ -74,9 +74,9 @@ public sealed class Apocalypse : Spell
   /// <inheritdoc />
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    var casterFacing = MathEx.GetAngleBetweenPoints(GetUnitX(caster), GetUnitY(caster), targetPoint.X, targetPoint.Y);
-    var casterX = GetUnitX(caster);
-    var casterY = GetUnitY(caster);
+    var casterFacing = MathEx.GetAngleBetweenPoints(caster.X, caster.Y, targetPoint.X, targetPoint.Y);
+    var casterX = caster.X;
+    var casterY = caster.Y;
     var level = GetAbilityLevel(caster);
     var isUpgraded = UpgradeCondition(caster);
     var width = isUpgraded ? WidthUpgraded : Width;
@@ -85,13 +85,13 @@ public sealed class Apocalypse : Spell
     for (var i = 0; i < projectileCount; i++)
     {
       var projectileOrigin = GetProjectileOrigin(i, middle, casterFacing, casterX, casterY, width, projectileCount);
-      var effect = AddSpecialEffect(EffectOnProjectileSpawn, projectileOrigin.X, projectileOrigin.Y);
-      BlzSetSpecialEffectScale(effect, EffectOnProjectileSpawnScale);
+      effect effect = effect.Create(EffectOnProjectileSpawn, projectileOrigin.X, projectileOrigin.Y);
+      effect.Scale = EffectOnProjectileSpawnScale;
       EffectSystem.Add(effect);
 
       var projectileDestination = GetProjectileDestination(projectileOrigin, casterFacing);
 
-      var missile = new ApocalypseProjectile(GetOwningPlayer(caster), projectileOrigin.X, projectileOrigin.Y,
+      var missile = new ApocalypseProjectile(caster.Owner, projectileOrigin.X, projectileOrigin.Y,
         projectileDestination.X, projectileDestination.Y)
       {
         CollisionRadius = ProjectileRadius,

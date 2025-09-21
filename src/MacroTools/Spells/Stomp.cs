@@ -53,8 +53,7 @@ public sealed class Stomp : Spell
 
   private void DamageUnit(unit caster, widget target)
   {
-    UnitDamageTarget(caster, target, DamageBase + DamageLevel * GetAbilityLevel(caster), false, false, ATTACK_TYPE_NORMAL,
-      DAMAGE_TYPE_MAGIC, WEAPON_TYPE_WHOKNOWS);
+    caster.DealDamage(target, DamageBase + DamageLevel * GetAbilityLevel(caster), false, false, attacktype.Normal, damagetype.Magic, weapontype.WhoKnows);
   }
 
   private void StunUnit(unit caster, unit target)
@@ -71,10 +70,10 @@ public sealed class Stomp : Spell
   /// <inheritdoc />
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    EffectSystem.Add(AddSpecialEffect(SpecialEffect, GetUnitX(caster), GetUnitY(caster)));
+    EffectSystem.Add(effect.Create(SpecialEffect, caster.X, caster.Y));
 
     foreach (var enumUnit in GlobalGroup
-               .EnumUnitsInRange(new Point(GetUnitX(caster), GetUnitY(caster)), Radius))
+               .EnumUnitsInRange(new Point(caster.X, caster.Y), Radius))
     {
       if (!CastFilters.IsTargetEnemyAndAlive(caster, enumUnit))
       {

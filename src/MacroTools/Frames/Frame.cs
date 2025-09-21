@@ -12,7 +12,7 @@ public class Frame
 
   public Frame Parent
   {
-    init => BlzFrameSetParent(Handle, value.Handle);
+    init => Handle.Parent = value.Handle;
   }
 
   public void AddFrame(Frame frame)
@@ -26,7 +26,7 @@ public class Frame
     set
     {
       _height = value;
-      BlzFrameSetSize(Handle, _width, _height);
+      Handle.SetSize(_width, _height);
     }
   }
 
@@ -36,24 +36,24 @@ public class Frame
     set
     {
       _width = value;
-      BlzFrameSetSize(Handle, _width, _height);
+      Handle.SetSize(_width, _height);
     }
   }
 
   public bool Visible
   {
-    get => BlzFrameIsVisible(Handle);
-    set => BlzFrameSetVisible(Handle, value);
+    get => Handle.Visible;
+    set => Handle.Visible = value;
   }
 
   public string Texture
   {
-    set => BlzFrameSetTexture(Handle, value, 0, true);
+    set => Handle.SetTexture(value, 0, true);
   }
 
   public void SetAbsPoint(framepointtype point, float x, float y)
   {
-    BlzFrameSetAbsPoint(Handle, point, x, y);
+    Handle.SetAbsPoint(point, x, y);
   }
 
   /// <summary>
@@ -61,7 +61,7 @@ public class Frame
   /// </summary>
   public void SetPoint(framepointtype point, framehandle relativeTo, framepointtype relativePoint, float x, float y)
   {
-    BlzFrameSetPoint(Handle, point, relativeTo, relativePoint, x, y);
+    Handle.SetPoint(point, x, y, relativeTo, relativePoint);
   }
 
   /// <summary>
@@ -69,22 +69,22 @@ public class Frame
   /// </summary>
   public void SetPoint(framepointtype point, Frame relativeTo, framepointtype relativePoint, float x, float y)
   {
-    BlzFrameSetPoint(Handle, point, relativeTo.Handle, relativePoint, x, y);
+    Handle.SetPoint(point, x, y, relativeTo.Handle, relativePoint);
   }
 
   public void ClearAllPoints()
   {
-    BlzFrameClearAllPoints(Handle);
+    Handle.ClearPoints();
   }
 
   public Frame(string name, framehandle parent, int priority)
   {
-    Handle = BlzCreateFrame(name, parent, priority, 0);
+    Handle = framehandle.Create(name, parent, priority, 0);
   }
 
   public Frame(string name, Frame parent, int priority)
   {
-    Handle = BlzCreateFrame(name, parent.Handle, priority, 0);
+    Handle = framehandle.Create(name, parent.Handle, priority, 0);
   }
 
   /// <summary>
@@ -94,7 +94,7 @@ public class Frame
   /// <param name="parent">The parent which affects the child's position and visibility.</param>
   public Frame(string name, framehandle parent)
   {
-    Handle = BlzCreateSimpleFrame(name, parent, 0);
+    Handle = framehandle.CreateSimple(name, parent, 0);
   }
 
   /// <summary>
@@ -104,11 +104,11 @@ public class Frame
   /// <param name="parent">The parent which affects the child's position and visibility.</param>
   public Frame(string name, Frame parent)
   {
-    Handle = BlzCreateSimpleFrame(name, parent.Handle, 0);
+    Handle = framehandle.CreateSimple(name, parent.Handle, 0);
   }
 
   public Frame(string typeName, string name, Frame parent, string inherits = "")
   {
-    Handle = BlzCreateFrameByType(typeName, name, parent.Handle, inherits, 0);
+    Handle = framehandle.Create(typeName, name, parent.Handle, inherits, 0);
   }
 }

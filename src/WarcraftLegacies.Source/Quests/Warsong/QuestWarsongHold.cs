@@ -30,14 +30,14 @@ public sealed class QuestWarsongHold : QuestData
   protected override void OnComplete(Faction completingFaction)
   {
     var boreanTundra = ControlPointManager.Instance.GetFromUnitType(FourCC("n00G")).Unit;
-    KillNeutralHostileUnitsInRadius(GetUnitX(boreanTundra), GetUnitY(boreanTundra), 2300);
+    KillNeutralHostileUnitsInRadius(boreanTundra.X, boreanTundra.Y, 2300);
     //Spawn the base
-    SetUnitOwner(boreanTundra, completingFaction.Player, true);
+    boreanTundra.SetOwner(completingFaction.Player, true);
     var warsongHold = CreateStructureForced(completingFaction.Player, FourCC("o02S"), -7648, 15456, 270, 192);
-    BlzSetUnitName(warsongHold, "Warsong Hold");
-    BlzSetUnitMaxHP(warsongHold, 4000);
+    warsongHold.Name = "Warsong Hold";
+    warsongHold.MaxLife = 4000;
     warsongHold.SetLifePercent(100);
-    UnitAddAbility(warsongHold, AbilityId);
+    warsongHold.AddAbility(AbilityId);
     CreateStructureForced(completingFaction.Player, FourCC("n03E"), -7296, 15680, 4.712389f * MathEx.DegToRad, 128);
     CreateStructureForced(completingFaction.Player, FourCC("o01T"), -7456, 15008, 4.712389f * MathEx.DegToRad, 128);
     CreateStructureForced(completingFaction.Player, FourCC("o028"), -7808, 16512, 4.712389f * MathEx.DegToRad, 128);

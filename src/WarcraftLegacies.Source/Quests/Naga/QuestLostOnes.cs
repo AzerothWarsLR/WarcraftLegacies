@@ -42,6 +42,6 @@ public sealed class QuestLostOnes : QuestData
 
   protected override void OnFail(Faction completingFaction)
   {
-    Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+    player.NeutralAggressive.RescueGroup(_rescueUnits);
   }
 }

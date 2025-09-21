@@ -19,21 +19,21 @@ public static class TestMode
   /// </summary>
   public static bool CheatCondition(player whichPlayer)
   {
-    var name = GetPlayerName(whichPlayer);
+    var name = whichPlayer.Name;
     return name is "YakaryBovine#6863" or "Lordsebas#11619" or "Technopig#2179" or "Vampirika#2506" or "zbovo2#1599" or "Madsen#21847" || AreCheatsActive;
   }
 
   private static void CreateInfoQuests(CommandManager commandManager)
   {
-    var newQuest = CreateQuest();
-    QuestSetTitle(newQuest, "Cheats");
+    var newQuest = quest.Create();
+    newQuest.SetTitle("Cheats");
     var description = commandManager.GetAllCommands().Aggregate("",
       (current, command) => $"{current} -{command.CommandText}: {command.Description}\n");
-    QuestSetDescription(newQuest, description);
-    QuestSetDiscovered(newQuest, true);
-    QuestSetRequired(newQuest, false);
-    QuestSetIconPath(newQuest, @"ReplaceableTextures\CommandButtons\BTNStaffOfTeleportation.blp");
-    QuestSetCompleted(newQuest, false);
+    newQuest.SetDescription(description);
+    newQuest.IsDiscovered = true;
+    newQuest.IsRequired = false;
+    newQuest.SetIcon(@"ReplaceableTextures\CommandButtons\BTNStaffOfTeleportation.blp");
+    newQuest.IsCompleted = false;
   }
 
   /// <summary>
@@ -42,7 +42,7 @@ public static class TestMode
   public static void Setup(CommandManager commandManager)
   {
     AreCheatsActive = Util.EnumeratePlayers().Count(player =>
-      GetPlayerSlotState(player) == PLAYER_SLOT_STATE_PLAYING && GetPlayerController(player) == MAP_CONTROL_USER) < 2;
+      player.SlotState == playerslotstate.Playing && player.Controller == mapcontrol.User) < 2;
 
     if (AreCheatsActive)
     {

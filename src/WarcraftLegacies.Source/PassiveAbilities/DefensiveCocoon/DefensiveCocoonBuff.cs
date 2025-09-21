@@ -18,39 +18,39 @@ public sealed class DefensiveCocoonBuff : PassiveBuff
 
   public DefensiveCocoonBuff(unit caster, unit target) : base(caster, target)
   {
-    _originalHeroLevel = GetHeroLevel(target);
+    _originalHeroLevel = target.HeroLevel;
   }
 
   public override void OnApply()
   {
     Target.SetLifePercent(100);
-    BlzPauseUnitEx(Target, true);
-    ShowUnit(Target, false);
+    Target.SetPausedEx(true);
+    Target.IsVisible = false;
 
-    _egg = CreateUnit(GetOwningPlayer(Target), EggId, GetUnitX(Target), GetUnitY(Target), 0);
+    _egg = unit.Create(Target.Owner, EggId, Target.X, Target.Y, 0);
     _egg.SetTimedLife(Duration + 1);
-    BlzSetUnitMaxHP(_egg, MaximumHitPoints);
+    _egg.MaxLife = MaximumHitPoints;
     _egg.SetLifePercent(100);
-    BlzSetUnitArmor(_egg, BlzGetUnitArmor(Target));
-    BlzSetUnitName(_egg, $"Cocoon ({Target.GetProperName()})");
+    _egg.Armor = Target.Armor;
+    _egg.Name = $"Cocoon ({Target.GetProperName()})";
 
-    var reviveEffect = AddSpecialEffect(ReviveEffect, GetUnitX(Target), GetUnitY(Target));
-    BlzSetSpecialEffectScale(reviveEffect, 2);
+    var reviveEffect = effect.Create(ReviveEffect, Target.X, Target.Y);
+    reviveEffect.Scale = 2;
     EffectSystem.Add(reviveEffect);
 
-    _deathTrigger = CreateTrigger();
-    TriggerRegisterUnitEvent(_deathTrigger, _egg, EVENT_UNIT_DEATH);
-    TriggerAddAction(_deathTrigger, () =>
+    _deathTrigger = trigger.Create();
+    _deathTrigger.RegisterUnitEvent(_egg, unitevent.Death);
+    _deathTrigger.AddAction(() =>
     {
-      var killingUnit = GetKillingUnit();
-      if (killingUnit != null && IsUnitType(killingUnit, UNIT_TYPE_HERO))
+      var killingUnit = @event.KillingUnit;
+      if (killingUnit != null && killingUnit.IsUnitType(unittype.Hero))
       {
         var index = Math.Min(_originalHeroLevel - 1, _heroXpTable.Length - 1);
         var experienceGained = _heroXpTable[index];
-        SetHeroXP(killingUnit, GetHeroXP(killingUnit) + experienceGained, true);
+        killingUnit.SetExperience(killingUnit.Experience + experienceGained, true);
       }
 
-      KillUnit(Target);
+      Target.Kill();
     });
   }
 
@@ -58,19 +58,19 @@ public sealed class DefensiveCocoonBuff : PassiveBuff
   {
     if (_deathTrigger != null)
     {
-      DestroyTrigger(_deathTrigger);
+      _deathTrigger.Dispose();
     }
 
-    ShowUnit(Target, true);
-    BlzPauseUnitEx(Target, false);
+    Target.IsVisible = true;
+    Target.SetPausedEx(false);
 
-    if (UnitAlive(_egg))
+    if (_egg.Alive)
     {
       Revive();
     }
     else
     {
-      KillUnit(Target);
+      Target.Kill();
       Target
         .SetPosition(_egg!.GetPosition());
     }
@@ -78,12 +78,12 @@ public sealed class DefensiveCocoonBuff : PassiveBuff
 
   private void Revive()
   {
-    SetUnitState(Target, UNIT_STATE_LIFE, GetUnitState(_egg!, UNIT_STATE_LIFE));
-    KillUnit(_egg!);
+    Target.Life = _egg!.Life;
+    _egg!.Kill();
     Target.SetPosition(_egg!.GetPosition());
 
-    var reviveEffect = AddSpecialEffect(ReviveEffect, GetUnitX(Target), GetUnitY(Target));
-    BlzSetSpecialEffectScale(reviveEffect, 2);
+    var reviveEffect = effect.Create(ReviveEffect, Target.X, Target.Y);
+    reviveEffect.Scale = 2;
     EffectSystem.Add(reviveEffect);
   }
 }

@@ -39,16 +39,16 @@ public sealed class QuestCrossroadsFrostwolf : QuestData
     }
 
     var wardId = FourCC("oeye");
-    CreateUnit(whichPlayer, wardId, -12844, -1975, 0);
-    CreateUnit(whichPlayer, wardId, -10876, -2066, 0);
-    CreateUnit(whichPlayer, wardId, -11922, -824, 0);
+    unit.Create(whichPlayer, wardId, -12844, -1975, 0);
+    unit.Create(whichPlayer, wardId, -10876, -2066, 0);
+    unit.Create(whichPlayer, wardId, -11922, -824, 0);
   }
 
   /// <inheritdoc/>
   protected override void OnFail(Faction completingFaction)
   {
     _ = completingFaction.ScoreStatus == ScoreStatus.Defeated
-      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      ? player.NeutralAggressive
       : completingFaction.Player;
 
     GiveCrossroads(completingFaction.Player);

@@ -28,7 +28,7 @@ public sealed class CheatDestroy : Command
       return $"You must specify the name of a registered {nameof(Artifact)} as the first parameter.";
     }
 
-    var artifactName = GetItemName(artifact.Item);
+    var artifactName = artifact.Item.Name;
     ArtifactManager.Destroy(artifact);
     return $"Destroyed {artifactName}";
   }

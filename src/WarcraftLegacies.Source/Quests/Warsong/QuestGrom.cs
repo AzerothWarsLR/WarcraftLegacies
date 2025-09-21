@@ -46,9 +46,9 @@ public sealed class QuestGrom : QuestData
 
     foreach (var unit in BloodPactBattleSimulation.BattleSimulationGroup.ToList())
     {
-      RemoveUnit(unit);
+      unit.Dispose();
     }
-    GroupClear(BloodPactBattleSimulation.BattleSimulationGroup);
+    BloodPactBattleSimulation.BattleSimulationGroup.Clear();
 
     completingFaction.ModObjectLimit(Constants.UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG, 1);
     completingFaction.ModObjectLimit(Constants.UNIT_O005_WARSONG_BATTLEMASTER_WARSONG, -1);
@@ -58,10 +58,8 @@ public sealed class QuestGrom : QuestData
     {
       _gromHellscream.ForceCreate(completingFaction.Player, Regions.GromSpawn.Center, 90);
       _gromHellscream.Unit?.SetLevel(2, false);
-      DestroyEffect(AddSpecialEffect("war3mapImported\\Soul Beam Blue.mdx",
-        GetUnitX(_gromHellscream.Unit), GetUnitY(_gromHellscream.Unit)));
-      DestroyEffect(AddSpecialEffect(@"abilities\spells\human\holybolt.mdl",
-        GetUnitX(_gromHellscream.Unit), GetUnitY(_gromHellscream.Unit)));
+      effect.Create("war3mapImported\\Soul Beam Blue.mdx", _gromHellscream.Unit.X, _gromHellscream.Unit.Y).Dispose();
+      effect.Create(@"abilities\spells\human\holybolt.mdl", _gromHellscream.Unit.X, _gromHellscream.Unit.Y).Dispose();
     }
   }
 }

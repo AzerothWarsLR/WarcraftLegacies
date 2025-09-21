@@ -25,12 +25,12 @@ public sealed class CheatOwner : Command
       return "You must specify a valid player number as the first parameter.";
     }
 
-    var newOwner = Player(playerNumber);
+    var newOwner = player.Create(playerNumber);
     foreach (var unit in GlobalGroup.EnumSelectedUnits(cheater))
     {
-      SetUnitOwner(unit, newOwner, true);
+      unit.SetOwner(newOwner, true);
     }
 
-    return $"Setting owner of selected units to {GetPlayerName(Player(playerNumber))}.";
+    return $"Setting owner of selected units to {player.Create(playerNumber).Name}.";
   }
 }

@@ -60,7 +60,7 @@ public sealed class Hint
   {
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
-      if (GetLocalPlayer() == player)
+      if (player.LocalPlayer == player)
       {
         DisplayRandom();
       }
@@ -70,8 +70,8 @@ public sealed class Hint
   private static void Initialize()
   {
     _initialized = true;
-    var trig = CreateTrigger();
-    TriggerRegisterTimerEvent(trig, HintInterval, true);
-    TriggerAddAction(trig, DisplayRandomHints);
+    var trig = trigger.Create();
+    trig.RegisterTimerEvent(HintInterval, true);
+    trig.AddAction(DisplayRandomHints);
   }
 }

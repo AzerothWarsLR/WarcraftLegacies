@@ -17,10 +17,10 @@ public sealed class ObjectiveDamagePlayer : Objective
   {
     PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerTakesDamage, () =>
     {
-      if (IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(GetEventDamageSource())))
+      if (IsPlayerOnSameTeamAsAnyEligibleFaction(@event.DamageSource.Owner))
       {
         Progress = QuestProgress.Complete;
       }
-    }, GetPlayerId(playerToDamage));
+    }, playerToDamage.Id);
   }
 }

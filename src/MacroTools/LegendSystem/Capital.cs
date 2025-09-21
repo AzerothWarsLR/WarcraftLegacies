@@ -42,15 +42,15 @@ public sealed class Capital : Legend
         return;
       }
 
-      if (!BlzIsUnitInvulnerable(Unit))
+      if (!Unit.IsInvulnerable)
       {
         throw new Exception(
-          $"{GetUnitName(Unit)}'s last protector died, which should make it vulnerable, but it is already vulnerable.");
+          $"{Unit.Name}'s last protector died, which should make it vulnerable, but it is already vulnerable.");
       }
 
       if (Unit != null)
       {
-        SetUnitInvulnerable(Unit, false);
+        Unit.IsInvulnerable = false;
       }
     }
     catch (Exception ex)
@@ -67,7 +67,7 @@ public sealed class Capital : Legend
   {
     if (ProtectorsByUnit.ContainsKey(whichUnit))
     {
-      throw new InvalidOperationException($"{GetUnitName(whichUnit)} is already registered as a Protector for {Name}.");
+      throw new InvalidOperationException($"{whichUnit.Name} is already registered as a Protector for {Name}.");
     }
 
     var protector = new Protector(whichUnit);
@@ -75,7 +75,7 @@ public sealed class Capital : Legend
     ProtectorsByUnit.Add(whichUnit, protector);
     if (Unit != null)
     {
-      SetUnitInvulnerable(Unit, true);
+      Unit.IsInvulnerable = true;
     }
 
     protector.ProtectorDied += OnProtectorDeath;
@@ -86,45 +86,45 @@ public sealed class Capital : Legend
   {
     if (_deathTrig != null)
     {
-      DestroyTrigger(_deathTrig);
+      _deathTrig.Dispose();
     }
 
-    _deathTrig = CreateTrigger();
-    TriggerRegisterUnitEvent(_deathTrig, Unit, EVENT_UNIT_DEATH);
-    TriggerAddAction(_deathTrig, OnDeath);
+    _deathTrig = trigger.Create();
+    _deathTrig.RegisterUnitEvent(Unit, unitevent.Death);
+    _deathTrig.AddAction(OnDeath);
 
     if (_damageTrig != null)
     {
-      DestroyTrigger(_damageTrig);
+      _damageTrig.Dispose();
     }
 
-    _damageTrig = CreateTrigger();
-    TriggerRegisterUnitEvent(_damageTrig, Unit, EVENT_UNIT_DAMAGED);
-    TriggerAddAction(_damageTrig, OnDamaged);
+    _damageTrig = trigger.Create();
+    _damageTrig.RegisterUnitEvent(Unit, unitevent.Damaged);
+    _damageTrig.AddAction(OnDamaged);
 
     if (_ownerTrig != null)
     {
-      DestroyTrigger(_ownerTrig);
+      _ownerTrig.Dispose();
     }
 
-    _ownerTrig = CreateTrigger();
-    TriggerRegisterUnitEvent(_ownerTrig, Unit, EVENT_UNIT_CHANGE_OWNER);
-    TriggerAddAction(_ownerTrig, () =>
+    _ownerTrig = trigger.Create();
+    _ownerTrig.RegisterUnitEvent(Unit, unitevent.ChangeOwner);
+    _ownerTrig.AddAction(() =>
     {
-      OnChangeOwner(new LegendChangeOwnerEventArgs(this, GetChangingUnitPrevOwner()));
+      OnChangeOwner(new LegendChangeOwnerEventArgs(this, @event.ChangingUnitPrevOwner));
     });
   }
 
   private void OnDamaged()
   {
-    if (!Capturable || !(GetEventDamage() + 1 >= GetUnitState(Unit, UNIT_STATE_LIFE)))
+    if (!Capturable || !(@event.Damage + 1 >= Unit.Life))
     {
       return;
     }
 
-    SetUnitOwner(Unit, GetOwningPlayer(GetEventDamageSource()), true);
-    BlzSetEventDamage(0);
-    SetUnitState(Unit, UNIT_STATE_LIFE, GetUnitState(Unit, UNIT_STATE_MAX_LIFE));
+    Unit.SetOwner(@event.DamageSource.Owner, true);
+    @event.Damage = 0;
+    Unit.Life = Unit.MaxLife;
   }
 
   private void OnDeath()
@@ -141,7 +141,7 @@ public sealed class Capital : Legend
 
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
-      DisplayTextToPlayer(player, 0, 0, $"\n|cffffcc00CAPITAL DESTROYED|r\n{DeathMessage}");
+      player.DisplayTextTo($"\n|cffffcc00CAPITAL DESTROYED|r\n{DeathMessage}", 0, 0);
     }
   }
 }

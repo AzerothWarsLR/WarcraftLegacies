@@ -55,27 +55,27 @@ public sealed class AncestralLegion : Spell
     var taurenToSummon = Math.Min(summonCap, availableTauren);
     for (var i = 0; i < taurenToSummon; i++)
     {
-      var summonedTauren = CreateUnit(GetOwningPlayer(caster), RememberableUnitTypeId, targetPoint.X, targetPoint.Y, GetUnitFacing(caster));
-      SetUnitVertexColor(summonedTauren, 200, 165, 50, 150);
+      var summonedTauren = unit.Create(caster.Owner, RememberableUnitTypeId, targetPoint.X, targetPoint.Y, caster.Facing);
+      summonedTauren.SetVertexColor(200, 165, 50, 150);
 
       summonedTauren.MultiplyBaseDamage(1 + DamageBonus.Base + DamageBonus.PerLevel * level, 0);
       summonedTauren.MultiplyMaxHitpoints(1 + HealthBonus.Base + HealthBonus.PerLevel * level);
       summonedTauren.SetTimedLife(Duration);
-      BlzSetUnitName(summonedTauren, "Ancestor");
-      UnitAddType(summonedTauren, UNIT_TYPE_SUMMONED);
+      summonedTauren.Name = "Ancestor";
+      summonedTauren.AddType(unittype.Summoned);
 
-      var deathTrigger = CreateTrigger();
-      TriggerRegisterUnitEvent(deathTrigger, summonedTauren, EVENT_UNIT_DEATH);
-      TriggerAddAction(deathTrigger, () =>
+      var deathTrigger = trigger.Create();
+      deathTrigger.RegisterUnitEvent(summonedTauren, unitevent.Death);
+      deathTrigger.AddAction(() =>
       {
-        EffectSystem.Add(AddSpecialEffect(DeathEffect, GetUnitX(summonedTauren), GetUnitY(summonedTauren)), 1);
+        EffectSystem.Add(effect.Create(DeathEffect, summonedTauren.X, summonedTauren.Y), 1);
 
-        RemoveUnit(summonedTauren);
+        summonedTauren.Dispose();
 
-        DestroyTrigger(GetTriggeringTrigger());
+        @event.Trigger.Dispose();
       });
 
-      EffectSystem.Add(AddSpecialEffect(SummonEffect, targetPoint.X, targetPoint.Y));
+      EffectSystem.Add(effect.Create(SummonEffect, targetPoint.X, targetPoint.Y));
     }
     ancestralLegionData.RememberedUnits -= taurenToSummon;
     RegenerateTooltip(caster);
@@ -107,7 +107,7 @@ public sealed class AncestralLegion : Spell
   {
     PlayerUnitEvents.Register(UnitTypeEvent.Dies, () =>
     {
-      if (!UnitIsRememberable(GetTriggerUnit()))
+      if (!UnitIsRememberable(@event.Unit))
       {
         return;
       }
@@ -118,7 +118,7 @@ public sealed class AncestralLegion : Spell
   }
 
   private bool UnitIsRememberable(unit getTriggerUnit) =>
-    !IsUnitType(getTriggerUnit, UNIT_TYPE_SUMMONED) && GetRandomReal(0, 1) < RememberChance;
+    !getTriggerUnit.IsUnitType(unittype.Summoned) && GetRandomReal(0, 1) < RememberChance;
 
   private void RegenerateTooltip(unit caster)
   {

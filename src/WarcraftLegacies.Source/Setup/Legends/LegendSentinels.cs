@@ -42,14 +42,14 @@ public sealed class LegendSentinels
     Tyrande = new LegendaryHero("Tyrande Whisperwind")
     {
       UnitType = FourCC("Etyr"),
-      PlayerColor = PLAYER_COLOR_CYAN,
+      PlayerColor = playercolor.Cyan,
       StartingXp = 1000
     };
 
     Naisha = new LegendaryHero("Naisha")
     {
       UnitType = FourCC("E025"),
-      PlayerColor = PLAYER_COLOR_PINK,
+      PlayerColor = playercolor.Pink,
       StartingXp = 1800
     };
 

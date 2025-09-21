@@ -19,7 +19,7 @@ public sealed class ObjectiveNoOtherPlayerGetsArtifact : Objective
   public ObjectiveNoOtherPlayerGetsArtifact(Artifact target)
   {
     _target = target;
-    Description = $"No other player has acquired {GetItemName(target.Item)}";
+    Description = $"No other player has acquired {target.Item.Name}";
   }
 
   /// <inheritdoc/>

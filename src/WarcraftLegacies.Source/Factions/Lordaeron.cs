@@ -27,7 +27,7 @@ public sealed class Lordaeron : Faction
   /// <inheritdoc />
 
   public Lordaeron(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup,
-    ArtifactSetup artifactSetup) : base("Lordaeron", PLAYER_COLOR_LIGHT_BLUE,
+    ArtifactSetup artifactSetup) : base("Lordaeron", playercolor.LightBlue,
     @"ReplaceableTextures\CommandButtons\BTNArthas.blp")
   {
     TraditionalTeam = TeamSetup.NorthAlliance;
@@ -373,19 +373,19 @@ public sealed class Lordaeron : Faction
 
   private void RegisterCrownOfLordaeronDrop()
   {
-    var ownerChangeTrigger = CreateTrigger();
-    TriggerRegisterUnitEvent(ownerChangeTrigger, _allLegendSetup.Lordaeron.CapitalPalace.Unit, EVENT_UNIT_CHANGE_OWNER);
-    TriggerAddAction(ownerChangeTrigger, () =>
+    var ownerChangeTrigger = trigger.Create();
+    ownerChangeTrigger.RegisterUnitEvent(_allLegendSetup.Lordaeron.CapitalPalace.Unit, unitevent.ChangeOwner);
+    ownerChangeTrigger.AddAction(() =>
     {
       var lordaeronPlayer = Player;
-      if (lordaeronPlayer?.GetTeam()?.Contains(GetOwningPlayer(GetTriggerUnit())) == true)
+      if (lordaeronPlayer?.GetTeam()?.Contains(@event.Unit.Owner) == true)
       {
         return;
       }
 
       if (_allLegendSetup.Lordaeron.Terenas.Unit != null)
       {
-        KillUnit(_allLegendSetup.Lordaeron.Terenas.Unit);
+        _allLegendSetup.Lordaeron.Terenas.Unit.Kill();
       }
 
       SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,
@@ -394,8 +394,8 @@ public sealed class Lordaeron : Faction
         FourCC("D044"), false, "hide", false);
       SetDoodadAnimation(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y, 200,
         FourCC("YObb"), false, "hide", false);
-      SetDoodadAnimationRect(Regions.Terenas.Rect, FourCC("YScr"), "show", false);
-      DestroyTrigger(GetTriggeringTrigger());
+      Regions.Terenas.Rect.SetDoodadAnimation(FourCC("YScr"), "show", false);
+      @event.Trigger.Dispose();
     });
   }
 }

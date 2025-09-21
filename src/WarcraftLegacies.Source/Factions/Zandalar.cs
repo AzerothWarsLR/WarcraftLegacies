@@ -18,7 +18,7 @@ public sealed class Zandalar : Faction
 
   /// <inheritdoc />
   public Zandalar(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
-    : base("Zandalar", PLAYER_COLOR_PEACH, @"ReplaceableTextures\CommandButtons\BTNHeadHunterBerserker.blp")
+    : base("Zandalar", playercolor.Peach, @"ReplaceableTextures\CommandButtons\BTNHeadHunterBerserker.blp")
   {
     TraditionalTeam = TeamSetup.Horde;
     _preplacedUnitSystem = preplacedUnitSystem;

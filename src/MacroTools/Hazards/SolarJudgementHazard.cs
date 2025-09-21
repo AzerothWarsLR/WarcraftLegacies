@@ -17,20 +17,19 @@ public sealed class SolarJudgementHazard : Hazard
 
   private void DoBolt(float x, float y)
   {
-    DestroyEffect(AddSpecialEffect(EffectPath, x, y));
+    effect.Create(EffectPath, x, y).Dispose();
     var unitsInRange = GlobalGroup.EnumUnitsInRange(new Point(x, y), BoltRadius);
     foreach (var target in unitsInRange)
     {
       if (CastFilters.IsTargetEnemyAndAlive(Caster, target))
       {
-        var damageMult = IsUnitType(target, UNIT_TYPE_UNDEAD) ? UndeadDamageMultiplier : 1f;
-        UnitDamageTarget(Caster, target, BoltDamage * damageMult, false, false, ATTACK_TYPE_NORMAL, DAMAGE_TYPE_MAGIC,
-          WEAPON_TYPE_WHOKNOWS);
+        var damageMult = target.IsUnitType(unittype.Undead) ? UndeadDamageMultiplier : 1f;
+        Caster.DealDamage(target, BoltDamage * damageMult, false, false, attacktype.Normal, damagetype.Magic, weapontype.WhoKnows);
       }
       if (CastFilters.IsTargetAllyAndAlive(Caster, target))
       {
-        SetUnitState(target, UNIT_STATE_LIFE, GetUnitState(target, UNIT_STATE_LIFE) + BoltDamage * HealMultiplier);
-        DestroyEffect(AddSpecialEffectTarget(EffectHealPath, target, "origin"));
+        target.Life = target.Life + BoltDamage * HealMultiplier;
+        effect.Create(EffectHealPath, target, "origin").Dispose();
       }
     }
   }

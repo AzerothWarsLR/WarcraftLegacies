@@ -36,19 +36,19 @@ public sealed class Progenesis : Research
     foreach (var worker in workers)
     {
       var position = worker.GetPosition();
-      var facing = GetUnitFacing(worker);
+      var facing = worker.Facing;
       var hitPointsPercentage = worker.GetLifePercent();
-      var owner = GetOwningPlayer(worker);
+      var owner = worker.Owner;
 
-      EffectSystem.Add(AddSpecialEffect(@"Objects\Spawnmodels\Critters\Albatross\CritterBloodAlbatross.mdl", position.X, position.Y));
+      EffectSystem.Add(effect.Create(@"Objects\Spawnmodels\Critters\Albatross\CritterBloodAlbatross.mdl", position.X, position.Y));
 
       worker.SafelyRemove();
-      var soldier = CreateUnit(owner, TransformedUnitTypeId, position.X, position.Y, facing);
+      var soldier = unit.Create(owner, TransformedUnitTypeId, position.X, position.Y, facing);
       soldier.SetLifePercent(hitPointsPercentage);
     }
   }
 
-  private bool IsValidTarget(unit target) => TransformableUnitTypeIds.Contains(GetUnitTypeId(target)) &&
-                                                    !IsUnitType(target, UNIT_TYPE_DEAD) &&
-                                                    !IsUnitType(target, UNIT_TYPE_SUMMONED);
+  private bool IsValidTarget(unit target) => TransformableUnitTypeIds.Contains(target.UnitType) &&
+                                                    !target.IsUnitType(unittype.Dead) &&
+                                                    !target.IsUnitType(unittype.Summoned);
 }

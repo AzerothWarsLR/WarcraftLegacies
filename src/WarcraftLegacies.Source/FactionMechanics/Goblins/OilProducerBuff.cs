@@ -21,7 +21,7 @@ public sealed class OilProducerBuff : PassiveBuff
   public OilProducerBuff(unit target, float incomePerSecond) : base(target, target)
   {
     _incomePerSecond = incomePerSecond;
-    _oilPower = GetOwningPlayer(target).GetFaction()?.GetPowerByType<OilPower>();
+    _oilPower = target.Owner.GetFaction()?.GetPowerByType<OilPower>();
 
     if (_oilPower != null)
     {
@@ -37,7 +37,7 @@ public sealed class OilProducerBuff : PassiveBuff
   {
     if (_oilPower != null)
     {
-      SetUnitState(Target, UNIT_STATE_MANA, _oilPower.Amount);
+      Target.Mana = _oilPower.Amount;
     }
   }
 
@@ -50,7 +50,7 @@ public sealed class OilProducerBuff : PassiveBuff
     }
 
     _oilPower.Income += _incomePerSecond;
-    SetUnitState(Target, UNIT_STATE_MANA, _oilPower.Amount);
+    Target.Mana = _oilPower.Amount;
   }
 
   /// <inheritdoc/>
@@ -73,7 +73,7 @@ public sealed class OilProducerBuff : PassiveBuff
       _oilPower.Income -= _incomePerSecond;
     }
 
-    _oilPower = GetOwningPlayer(Target).GetFaction()?.GetPowerByType<OilPower>();
+    _oilPower = Target.Owner.GetFaction()?.GetPowerByType<OilPower>();
     if (_oilPower != null)
     {
       _oilPower.Income += _incomePerSecond;

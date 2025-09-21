@@ -27,7 +27,7 @@ public sealed class CheatMp : Command
 
     foreach (var unit in GlobalGroup.EnumSelectedUnits(cheater))
     {
-      SetUnitState(unit, UNIT_STATE_MANA, mana);
+      unit.Mana = mana;
     }
 
     return $"Setting mana of selected units to {mana}.";

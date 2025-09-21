@@ -25,7 +25,7 @@ public sealed class UnitType
   /// <summary>
   /// How much gold the UnitType costs to train or build.
   /// </summary>
-  public int GoldCost => GetUnitGoldCost(Id);
+  public int GoldCost => unit.GoldCostOf(Id);
 
   /// <summary>
   /// If true, this unit should never be deleted.
@@ -45,7 +45,7 @@ public sealed class UnitType
   /// <returns>True if the unit has a <see cref="UnitType"/>.</returns>
   public static bool TryGetFromHandle(unit whichUnit, [NotNullWhen(true)] out UnitType? unitType)
   {
-    unitType = _byId.TryGetValue(GetUnitTypeId(whichUnit), out var value) ? value : null;
+    unitType = _byId.TryGetValue(whichUnit.UnitType, out var value) ? value : null;
     return value != null;
   }
 
@@ -53,7 +53,7 @@ public sealed class UnitType
   /// Returns the UnitType representation of a unit on the map.
   /// </summary>
   public static UnitType GetFromHandle(unit whichUnit) =>
-    _byId.TryGetValue(GetUnitTypeId(whichUnit), out var unitType) ? unitType : new UnitType(GetUnitTypeId(whichUnit));
+    _byId.TryGetValue(whichUnit.UnitType, out var unitType) ? unitType : new UnitType(whichUnit.UnitType);
 
   /// <summary>
   /// Returns the UnitType representation of a particular UnitTypeId.

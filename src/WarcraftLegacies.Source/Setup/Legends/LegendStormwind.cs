@@ -24,7 +24,7 @@ public sealed class LegendStormwind
       StartingXp = 1800,
       StartingArtifacts = new()
       {
-        new(CreateItem(ITEM_I00D_SHALAMAYNE, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+        new(item.Create(ITEM_I00D_SHALAMAYNE, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
       }
     };
 
@@ -34,7 +34,7 @@ public sealed class LegendStormwind
       StartingXp = 5400,
       StartingArtifacts = new()
       {
-        new(CreateItem(ITEM_I01O_TROL_KALAR, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+        new(item.Create(ITEM_I01O_TROL_KALAR, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
       }
     };
 

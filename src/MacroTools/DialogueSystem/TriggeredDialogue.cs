@@ -47,7 +47,7 @@ public sealed class TriggeredDialogue
     //Play audio to everyone if audience was not set.
     var audience = _audience != null
       ? _audience.Select(x => x.Player)
-      : WCSharp.Shared.Util.EnumeratePlayers(PLAYER_SLOT_STATE_PLAYING, MAP_CONTROL_USER);
+      : WCSharp.Shared.Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User);
 
     foreach (var player in audience)
     {

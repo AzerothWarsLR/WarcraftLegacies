@@ -21,16 +21,16 @@ public sealed class DialogueSequence : IHasPlayableDialogue
   /// <inheritdoc />
   public void Play(player whichPlayer)
   {
-    var trigger = CreateTrigger();
-    TriggerAddAction(trigger, () =>
+    trigger trigger = trigger.Create();
+    trigger.AddAction(() =>
     {
       foreach (var dialogue in _dialogues)
       {
         dialogue.Play(whichPlayer);
         TriggerSleepAction(dialogue.Length + 0.75f);
       }
-      DestroyTrigger(GetTriggeringTrigger());
+      @event.Trigger.Dispose();
     });
-    TriggerExecute(trigger);
+    trigger.Execute();
   }
 }

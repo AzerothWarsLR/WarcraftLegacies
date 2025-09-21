@@ -60,5 +60,5 @@ public abstract class Spell
   /// <summary>
   /// The current level of this <see cref="Spell"/> instance for any specified unit.
   /// </summary>
-  protected int GetAbilityLevel(unit whichUnit) => GetUnitAbilityLevel(whichUnit, Id);
+  protected int GetAbilityLevel(unit whichUnit) => whichUnit.GetAbilityLevel(Id);
 }

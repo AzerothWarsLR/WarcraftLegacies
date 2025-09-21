@@ -23,16 +23,16 @@ public static class ShipyardBanZones
       {
         PlayerUnitEvents.Register(UnitTypeEvent.FinishesConstruction, () =>
         {
-          var constructedStructure = GetConstructedStructure();
+          var constructedStructure = @event.ConstructedStructure;
           foreach (var banZone in banZones)
           {
-            if (!banZone.Contains(GetUnitX(constructedStructure), GetUnitY(constructedStructure)))
+            if (!banZone.Contains(constructedStructure.X, constructedStructure.Y))
             {
               continue;
             }
 
-            GetOwningPlayer(constructedStructure).AddGold(unitType.GoldCost);
-            KillUnit(constructedStructure);
+            constructedStructure.Owner.AddGold(unitType.GoldCost);
+            constructedStructure.Kill();
           }
         }, unitType.Id);
       }

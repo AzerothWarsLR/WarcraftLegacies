@@ -12,7 +12,7 @@ public static class PointExtensions
   /// Returns true if units can path over the <see cref="Point"/>.
   /// </summary>
   public static bool IsPathable(this Point whichPoint, pathingtype pathingType) =>
-    !IsTerrainPathable(whichPoint.X, whichPoint.Y, pathingType);
+    !pathingType.GetPathable(whichPoint.X, whichPoint.Y);
 
   /// <summary>
   /// Returns the terrain type at the <see cref="Point"/>.
@@ -27,7 +27,7 @@ public static class PointExtensions
     EnumDestructablesInCircle(radius, whichPoint,
       () =>
       {
-        RemoveDestructable(GetEnumDestructable());
+        GetEnumDestructable().Dispose();
       });
   }
 }

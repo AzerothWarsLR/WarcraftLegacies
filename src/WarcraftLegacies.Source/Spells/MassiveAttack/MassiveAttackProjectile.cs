@@ -35,14 +35,14 @@ public sealed class MassiveAttackProjectile : BasicMissile
       return;
     }
 
-    UnitDamageTarget(Caster, unit, Damage, false, false, AttackType, DamageType, WEAPON_TYPE_WHOKNOWS);
+    Caster.DealDamage(unit, Damage, false, false, AttackType, DamageType, weapontype.WhoKnows);
     Hits.Add(unit);
   }
 
   private bool IsValidTarget(unit target, unit caster) =>
-    UnitAlive(target) &&
-    !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
-    !IsUnitType(target, UNIT_TYPE_ANCIENT) &&
-    !IsPlayerAlly(GetOwningPlayer(caster), GetOwningPlayer(target))
+    target.Alive &&
+    !target.IsUnitType(unittype.Structure) &&
+    !target.IsUnitType(unittype.Ancient) &&
+    !caster.Owner.IsAlly(target.Owner)
     | Hits.Contains(target);
 }

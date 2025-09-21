@@ -43,9 +43,9 @@ public sealed class ObjectiveAnyEnemyUnitInRects : Objective, IHasCompletingUnit
   public string CompletingUnitName => CompletingUnit != null ? CompletingUnit.GetProperName() : "an unknown hero";
 
   private bool IsUnitValid(unit whichUnit) =>
-    !IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(whichUnit)) && UnitAlive(whichUnit) &&
-    GetOwningPlayer(whichUnit) != Player(PLAYER_NEUTRAL_AGGRESSIVE) &&
-    GetOwningPlayer(whichUnit) != Player(PLAYER_NEUTRAL_PASSIVE) &&
+    !IsPlayerOnSameTeamAsAnyEligibleFaction(whichUnit.Owner) && whichUnit.Alive &&
+    whichUnit.Owner != player.NeutralAggressive &&
+    whichUnit.Owner != player.NeutralPassive &&
     EligibilityCondition(whichUnit);
 
   private bool IsValidUnitInRects()
@@ -61,11 +61,11 @@ public sealed class ObjectiveAnyEnemyUnitInRects : Objective, IHasCompletingUnit
   {
     Progress = IsValidUnitInRects() ? QuestProgress.Complete : QuestProgress.Incomplete;
 
-    var enterTrigger = CreateTrigger();
+    var enterTrigger = trigger.Create();
     enterTrigger.RegisterEnterRegions(_targetRects);
-    TriggerAddAction(enterTrigger, () =>
+    enterTrigger.AddAction(() =>
     {
-      var triggerUnit = GetTriggerUnit();
+      var triggerUnit = @event.Unit;
       if (!IsUnitValid(triggerUnit))
       {
         return;
@@ -74,9 +74,9 @@ public sealed class ObjectiveAnyEnemyUnitInRects : Objective, IHasCompletingUnit
       CompletingUnit = triggerUnit;
       Progress = QuestProgress.Complete;
     });
-    var leaveTrigger = CreateTrigger();
+    var leaveTrigger = trigger.Create();
     leaveTrigger.RegisterLeaveRegions(_targetRects);
-    TriggerAddAction(leaveTrigger, () =>
+    leaveTrigger.AddAction(() =>
     {
       if (!IsValidUnitInRects())
       {

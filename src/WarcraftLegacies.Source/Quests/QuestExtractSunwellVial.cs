@@ -37,8 +37,8 @@ public sealed class QuestExtractSunwellVial : QuestData
     var sunwellPosition = _sunwell.Unit!.GetPosition();
     _sunwellVial.Item.SetPositionSafe(sunwellPosition);
 
-    UnitRemoveAbility(_sunwell.Unit!, ABILITY_A0OC_EXTRACT_VIAL_ALL);
-    BlzSetUnitMaxMana(_sunwell.Unit!, 500);
+    _sunwell.Unit!.RemoveAbility(ABILITY_A0OC_EXTRACT_VIAL_ALL);
+    _sunwell.Unit!.MaxMana = 500;
   }
 
   /// <inheritdoc />

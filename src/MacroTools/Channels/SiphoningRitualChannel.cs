@@ -53,23 +53,23 @@ public sealed class SiphoningRitualChannel : Channel
   /// <inheritdoc />
   protected override void OnPeriodic()
   {
-    if (MathEx.GetDistanceBetweenPoints(Caster.GetPosition(), _target.GetPosition()) > Range || !UnitAlive(_target))
+    if (MathEx.GetDistanceBetweenPoints(Caster.GetPosition(), _target.GetPosition()) > Range || !_target.Alive)
     {
       Active = false;
       return;
     }
 
-    if (GetUnitState(Caster, UNIT_STATE_LIFE) < GetUnitState(Caster, UNIT_STATE_MAX_LIFE) ||
-        !IsUnitAlly(_target, GetOwningPlayer(Caster)))
+    if (Caster.Life < Caster.MaxLife ||
+        !_target.IsAllyTo(Caster.Owner))
     {
-      _target.TakeDamage(Caster, LifeDrainedPerSecond * Interval, ranged: true, damageType: DAMAGE_TYPE_MAGIC);
-      Caster.Heal(Math.Min(LifeDrainedPerSecond * Interval, GetUnitState(_target, UNIT_STATE_LIFE)));
+      _target.TakeDamage(Caster, LifeDrainedPerSecond * Interval, ranged: true, damageType: damagetype.Magic);
+      Caster.Heal(Math.Min(LifeDrainedPerSecond * Interval, _target.Life));
     }
 
-    if (GetUnitState(Caster, UNIT_STATE_MANA) < GetUnitState(Caster, UNIT_STATE_MAX_MANA) ||
-        !IsUnitAlly(_target, GetOwningPlayer(Caster)))
+    if (Caster.Mana < Caster.MaxMana ||
+        !_target.IsAllyTo(Caster.Owner))
     {
-      Caster.RestoreMana(Math.Min(ManaDrainedPerSecond * Interval, GetUnitState(_target, UNIT_STATE_MANA)));
+      Caster.RestoreMana(Math.Min(ManaDrainedPerSecond * Interval, _target.Mana));
       _target.RestoreMana(-ManaDrainedPerSecond * Interval);
     }
   }

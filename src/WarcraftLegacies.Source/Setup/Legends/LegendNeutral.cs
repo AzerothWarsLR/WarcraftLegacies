@@ -37,7 +37,7 @@ public sealed class LegendNeutral
       DeathMessage = "Ragnaros, the King of Fire and Lord of the Firelands, has been extinguished.",
       StartingArtifacts = new()
       {
-        new(CreateItem(ITEM_I00H_SULFURAS_HAND_OF_RAGNAROS, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+        new(item.Create(ITEM_I00H_SULFURAS_HAND_OF_RAGNAROS, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
       },
       StartingXp = 15404
     };
@@ -49,7 +49,7 @@ public sealed class LegendNeutral
       DeathMessage = "Yogg-Saron, the beast with a thousand maws has been destroyed.",
       StartingArtifacts = new()
       {
-        new(CreateItem(ITEM_IYGL_VAL_ANYR_HAMMER_OF_ANCIENT_KINGS, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+        new(item.Create(ITEM_IYGL_VAL_ANYR_HAMMER_OF_ANCIENT_KINGS, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
       },
       StartingXp = 23800
     };

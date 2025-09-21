@@ -66,11 +66,11 @@ public sealed class QuestGilneasCity : QuestData
     RockSystem.Register(new RockGroup(Regions.GilneasUnlock5, FourCC("LTrc"), 1));
 
     var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      ? player.NeutralAggressive
       : completingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);
   }
 
-  private static bool RescuableFilter(unit filterUnit) => GetUnitTypeId(filterUnit) != UNIT_O05Q_GREYMANETOWER_GILNEAS_REAL_TOWER;
+  private static bool RescuableFilter(unit filterUnit) => filterUnit.UnitType != UNIT_O05Q_GREYMANETOWER_GILNEAS_REAL_TOWER;
 }

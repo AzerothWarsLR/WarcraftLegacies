@@ -38,6 +38,6 @@ public sealed class SpellConductionAura : Aura<SpellConductionBuff>
   /// <inheritdoc />
   /// <inheritdoc />
   protected override bool UnitFilter(unit unit) =>
-    GetPlayerTechCount(GetOwningPlayer(Caster), RequiredResearch, false) > 0 &&
+    Caster.Owner.GetTechResearched(RequiredResearch, false) > 0 &&
     CastFilters.IsTargetAllyAndAlive(Caster, unit);
 }

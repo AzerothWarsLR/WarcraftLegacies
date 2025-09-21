@@ -12,10 +12,10 @@ public static class NeutralHostileSetup
   /// </summary>
   public static void Setup()
   {
-    foreach (var unit in GlobalGroup.EnumUnitsOfPlayer(Player(20)))
+    foreach (var unit in GlobalGroup.EnumUnitsOfPlayer(player.Create(20)))
     {
-      var whichPlayer = Player(PLAYER_NEUTRAL_AGGRESSIVE);
-      SetUnitOwner(unit, whichPlayer, true);
+      var whichPlayer = player.NeutralAggressive;
+      unit.SetOwner(whichPlayer, true);
     }
   }
 }

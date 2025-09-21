@@ -18,14 +18,14 @@ public abstract class Channel : IPeriodicDisposableAction
     Active = true;
     Caster = caster;
     SpellId = spellId;
-    var ability = BlzGetUnitAbility(Caster, SpellId);
+    var ability = Caster.GetAbility(SpellId);
     var durationFromObjectEditor = BlzGetAbilityRealLevelField(ability, ABILITY_RLF_DURATION_NORMAL,
-      GetUnitAbilityLevel(Caster, SpellId));
+      Caster.GetAbilityLevel(SpellId));
 
     if (durationFromObjectEditor == 0)
     {
       durationFromObjectEditor = BlzGetAbilityRealLevelField(ability, ABILITY_RLF_FOLLOW_THROUGH_TIME,
-        GetUnitAbilityLevel(Caster, SpellId));
+        Caster.GetAbilityLevel(SpellId));
     }
 
     Duration = durationFromObjectEditor != 0 ? durationFromObjectEditor : float.MaxValue;
@@ -79,7 +79,7 @@ public abstract class Channel : IPeriodicDisposableAction
   public void Dispose()
   {
     Active = false;
-    DestroyTrigger(_cancelTrigger);
+    _cancelTrigger.Dispose();
     _cancelTrigger = null;
     OnDispose();
   }
@@ -99,9 +99,9 @@ public abstract class Channel : IPeriodicDisposableAction
   /// </summary>
   internal void RegisterCancellationTrigger()
   {
-    _cancelTrigger = CreateTrigger();
-    TriggerRegisterUnitEvent(_cancelTrigger, Caster, EVENT_UNIT_SPELL_ENDCAST);
-    TriggerAddAction(_cancelTrigger, () => { Active = false; });
+    _cancelTrigger = trigger.Create();
+    _cancelTrigger.RegisterUnitEvent(Caster, unitevent.SpellEndCast);
+    _cancelTrigger.AddAction(() => { Active = false; });
   }
 
   /// <summary>
@@ -125,8 +125,8 @@ public abstract class Channel : IPeriodicDisposableAction
   protected static float GetZ(float x, float y)
   {
     var loc = Location(x, y);
-    var z = GetLocationZ(loc);
-    RemoveLocation(loc);
+    var z = loc.LocalZ;
+    loc.Dispose();
     return z;
   }
 

@@ -7,7 +7,6 @@ using MacroTools.Libraries;
 using MacroTools.Systems;
 using WCSharp.Effects;
 using WCSharp.Events;
-using static WCSharp.Api.Blizzard;
 
 namespace MacroTools.ControlPointSystem;
 
@@ -20,7 +19,7 @@ public sealed class ControlPointManager
   {
     GameTime.GameStarted += (_, _) =>
     {
-      TimerStart(CreateTimer(), Period, true, () =>
+      timer.Create().Start(Period, true, () =>
       {
         foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
         {
@@ -97,11 +96,10 @@ public sealed class ControlPointManager
       {
         try
         {
-          var controlPoint = _byUnit[GetTriggerUnit()];
+          var controlPoint = _byUnit[@event.Unit];
           controlPoint.ControlLevel += 1;
-          var effect = AddSpecialEffect(@"Abilities\Spells\Items\AIlm\AIlmTarget.mdl", GetUnitX(controlPoint.Unit),
-            GetUnitY(controlPoint.Unit));
-          BlzSetSpecialEffectScale(effect, 1.5f);
+          effect effect = effect.Create(@"Abilities\Spells\Items\AIlm\AIlmTarget.mdl", controlPoint.Unit.X, controlPoint.Unit.Y);
+          effect.Scale = 1.5f;
           EffectSystem.Add(effect);
         }
         catch (Exception ex)
@@ -159,12 +157,12 @@ public sealed class ControlPointManager
       _byUnitType.Add(controlPoint.UnitType, controlPoint);
     }
 
-    BlzSetUnitMaxHP(controlPoint.Unit, StartingMaxHitPoints);
+    controlPoint.Unit.MaxLife = StartingMaxHitPoints;
     controlPoint.Unit.SetLifePercent(100);
-    BlzSetUnitIntegerField(controlPoint.Unit, UNIT_IF_DEFENSE_TYPE, 2);
+    controlPoint.Unit.DefenseType = WCSharp.Api.Enums.DefenseType.Large;
 
-    BlzSetUnitName(controlPoint.Unit, $"{GetUnitName(controlPoint.Unit)} ({controlPoint.Value} gold/min)");
-    UnitAddAbility(controlPoint.Unit, PiercingResistanceAbility);
+    controlPoint.Unit.Name = $"{controlPoint.Unit.Name} ({controlPoint.Value} gold/min)";
+    controlPoint.Unit.AddAbility(PiercingResistanceAbility);
 
     RegisterIncome(controlPoint);
     RegisterDamageTrigger(controlPoint);
@@ -175,13 +173,13 @@ public sealed class ControlPointManager
       RegisterControlLevelChangeTrigger(controlPoint);
       RegisterControlLevelGrowthOverTime(controlPoint);
       ConfigureControlPointStats(controlPoint, true);
-      UnitAddAbility(controlPoint.Unit, IncreaseControlLevelAbilityTypeId);
+      controlPoint.Unit.AddAbility(IncreaseControlLevelAbilityTypeId);
     }
 
     controlPoint.OnRegister();
-    if (GetOwningPlayer(controlPoint.Unit) != Player(PLAYER_NEUTRAL_AGGRESSIVE))
+    if (controlPoint.Unit.Owner != player.NeutralAggressive)
     {
-      UnitAddAbility(controlPoint.Unit, RegenerationAbility);
+      controlPoint.Unit.AddAbility(RegenerationAbility);
     }
   }
 
@@ -194,21 +192,21 @@ public sealed class ControlPointManager
 
   private static void RegisterDamageTrigger(ControlPoint controlPoint)
   {
-    var trigger = CreateTrigger();
-    TriggerRegisterUnitEvent(trigger, controlPoint.Unit, EVENT_UNIT_DAMAGED);
-    TriggerAddAction(trigger, () =>
+    trigger trigger = trigger.Create();
+    trigger.RegisterUnitEvent(controlPoint.Unit, unitevent.Damaged);
+    trigger.AddAction(() =>
     {
       try
       {
-        var attacker = GetEventDamageSource();
-        var hitPoints = GetUnitState(controlPoint.Unit, UNIT_STATE_LIFE) - GetEventDamage();
+        var attacker = @event.DamageSource;
+        var hitPoints = controlPoint.Unit.Life - @event.Damage;
         if (hitPoints > 1)
         {
           return;
         }
 
-        BlzSetEventDamage(0);
-        SetUnitOwner(controlPoint.Unit, GetOwningPlayer(attacker), true);
+        @event.Damage = 0;
+        controlPoint.Unit.SetOwner(attacker.Owner, true);
         controlPoint.Unit.SetLifePercent(100);
       }
       catch (Exception ex)
@@ -220,28 +218,28 @@ public sealed class ControlPointManager
 
   private void RegisterOwnershipChangeTrigger(ControlPoint controlPoint)
   {
-    var trigger = CreateTrigger();
-    TriggerRegisterUnitEvent(trigger, controlPoint.Unit, EVENT_UNIT_CHANGE_OWNER);
-    TriggerAddAction(trigger, () =>
+    trigger trigger = trigger.Create();
+    trigger.RegisterUnitEvent(controlPoint.Unit, unitevent.ChangeOwner);
+    trigger.AddAction(() =>
     {
       try
       {
-        var previousOwner = PlayerData.ByHandle(GetChangingUnitPrevOwner());
+        var previousOwner = PlayerData.ByHandle(@event.ChangingUnitPrevOwner);
         previousOwner.RemoveControlPoint(controlPoint);
         previousOwner.BaseIncome -= controlPoint.Value;
 
-        var newOwner = PlayerData.ByHandle(GetOwningPlayer(GetTriggerUnit()));
+        var newOwner = PlayerData.ByHandle(@event.Unit.Owner);
         newOwner.AddControlPoint(controlPoint);
         newOwner.BaseIncome += controlPoint.Value;
 
-        if (GetUnitAbilityLevel(controlPoint.Unit, RegenerationAbility) == 0)
+        if (controlPoint.Unit.GetAbilityLevel(RegenerationAbility) == 0)
         {
-          UnitAddAbility(controlPoint.Unit, RegenerationAbility);
+          controlPoint.Unit.AddAbility(RegenerationAbility);
         }
 
-        if (GetUnitAbilityLevel(controlPoint.Unit, PiercingResistanceAbility) == 0)
+        if (controlPoint.Unit.GetAbilityLevel(PiercingResistanceAbility) == 0)
         {
-          UnitAddAbility(controlPoint.Unit, PiercingResistanceAbility);
+          controlPoint.Unit.AddAbility(PiercingResistanceAbility);
         }
 
         controlPoint.Unit.SetLifePercent(100);
@@ -262,10 +260,10 @@ public sealed class ControlPointManager
       {
         CreateOrUpdateDefender(controlPoint);
         ConfigureControlPointStats(controlPoint, false);
-        SetUnitScale(controlPoint.Unit, 1.2f, 1.2f, 1.2f);
+        controlPoint.Unit.SetScale(1.2f, 1.2f, 1.2f);
         if ((int)controlPoint.ControlLevel == ControlLevelSettings.ControlLevelMaximum)
         {
-          UnitRemoveAbility(controlPoint.Unit, IncreaseControlLevelAbilityTypeId);
+          controlPoint.Unit.RemoveAbility(IncreaseControlLevelAbilityTypeId);
         }
       }
       else
@@ -280,18 +278,17 @@ public sealed class ControlPointManager
   {
     GameTime.TurnEnded += (_, _) =>
     {
-      if (controlPoint.Owner == Player(PLAYER_NEUTRAL_AGGRESSIVE) ||
-          controlPoint.Owner == Player(PLAYER_NEUTRAL_PASSIVE) ||
-          controlPoint.Owner == Player(bj_PLAYER_NEUTRAL_VICTIM) ||
+      if (controlPoint.Owner == player.NeutralAggressive ||
+          controlPoint.Owner == player.NeutralPassive ||
+          controlPoint.Owner == player.NeutralVictim ||
           controlPoint.ControlLevel >= ControlLevelSettings.ControlLevelMaximum)
       {
         return;
       }
 
       controlPoint.ControlLevel += 1 + controlPoint.Owner.GetControlLevelPerTurnBonus();
-      var effect = AddSpecialEffect(@"Abilities\Spells\Items\AIlm\AIlmTarget.mdl", GetUnitX(controlPoint.Unit),
-        GetUnitY(controlPoint.Unit));
-      BlzSetSpecialEffectScale(effect, 1.5f);
+      effect effect = effect.Create(@"Abilities\Spells\Items\AIlm\AIlmTarget.mdl", controlPoint.Unit.X, controlPoint.Unit.Y);
+      effect.Scale = 1.5f;
       EffectSystem.Add(effect);
     };
   }
@@ -302,15 +299,15 @@ public sealed class ControlPointManager
     var maxHitPoints = StartingMaxHitPoints + flooredLevel * ControlLevelSettings.HitPointsPerControlLevel;
     var lifePercent = Math.Max(controlPoint.Unit.GetLifePercent(), 1);
 
-    BlzSetUnitMaxHP(controlPoint.Unit, maxHitPoints);
+    controlPoint.Unit.MaxLife = maxHitPoints;
     BlzSetUnitIntegerField(controlPoint.Unit, UNIT_IF_LEVEL, flooredLevel);
-    BlzSetUnitArmor(controlPoint.Unit, ControlLevelSettings.ArmorPerControlLevel * flooredLevel);
+    controlPoint.Unit.Armor = ControlLevelSettings.ArmorPerControlLevel * flooredLevel;
     controlPoint.Unit
       .ShowAttackUi(false);
 
-    if (initialize && GetOwningPlayer(controlPoint.Unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+    if (initialize && controlPoint.Unit.Owner == player.NeutralAggressive)
     {
-      SetUnitState(controlPoint.Unit, UNIT_STATE_LIFE, HostileStartingCurrentHitPoints);
+      controlPoint.Unit.Life = HostileStartingCurrentHitPoints;
     }
     else
     {
@@ -326,9 +323,9 @@ public sealed class ControlPointManager
 
     var defenderUnitTypeId = controlPoint.Owner.GetFaction()?.ControlPointDefenderUnitTypeId ??
                              ControlLevelSettings.DefaultDefenderUnitTypeId;
-    controlPoint.Defender ??= CreateUnit(controlPoint.Owner, defenderUnitTypeId, GetUnitX(controlPoint.Unit), GetUnitY(controlPoint.Unit), 270);
-    UnitAddAbility(controlPoint.Defender, FourCC("Aloc"));
-    SetUnitInvulnerable(controlPoint.Defender, true);
+    controlPoint.Defender ??= unit.Create(controlPoint.Owner, defenderUnitTypeId, controlPoint.Unit.X, controlPoint.Unit.Y, 270);
+    controlPoint.Defender.AddAbility(FourCC("Aloc"));
+    controlPoint.Defender.IsInvulnerable = true;
     ConfigureControlPointOrDefenderAttack(controlPoint.Defender, flooredLevel);
     ConfigureControlPointOrDefenderAttack(controlPoint.Unit, flooredLevel);
   }
@@ -337,22 +334,21 @@ public sealed class ControlPointManager
   {
     if (controlPoint.Defender != null)
     {
-      KillUnit(controlPoint.Defender);
+      controlPoint.Defender.Kill();
     }
 
     controlPoint.Defender = null;
-    SetUnitInvulnerable(controlPoint.Unit, false);
-    UnitAddAbility(controlPoint.Unit,
-      IncreaseControlLevelAbilityTypeId);
+    controlPoint.Unit.IsInvulnerable = false;
+    controlPoint.Unit.AddAbility(IncreaseControlLevelAbilityTypeId);
   }
 
   private void ConfigureControlPointOrDefenderAttack(unit whichUnit, int controlLevel)
   {
-    BlzSetUnitBaseDamage(whichUnit, controlLevel == 0
+    whichUnit.AttackBaseDamage1 = controlLevel == 0
       ? -1
-      : ControlLevelSettings.DamageBase - 1 + controlLevel * ControlLevelSettings.DamagePerControlLevel, 0);
-    BlzSetUnitDiceNumber(whichUnit, 1, 0);
-    BlzSetUnitDiceSides(whichUnit, 1, 0);
-    BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0, 5);
+      : ControlLevelSettings.DamageBase - 1 + controlLevel * ControlLevelSettings.DamagePerControlLevel;
+    whichUnit.AttackDiceNumber1 = 1;
+    whichUnit.AttackDiceSides1 = 1;
+    whichUnit.AttackAttackType1 = WCSharp.Api.Enums.AttackType.Chaos;
   }
 }

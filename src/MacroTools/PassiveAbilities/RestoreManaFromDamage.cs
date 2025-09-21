@@ -40,9 +40,9 @@ public sealed class RestoreManaFromDamage : PassiveAbility, IAppliesEffectOnDama
   /// <inheritdoc />
   public void OnDealsDamage()
   {
-    var damager = GetEventDamageSource();
-    var manaPerDamage = GetEventDamage() * (ManaPerDamage.Base + ManaPerDamage.PerLevel * GetUnitAbilityLevel(damager, _abilityTypeId));
+    var damager = @event.DamageSource;
+    var manaPerDamage = @event.Damage * (ManaPerDamage.Base + ManaPerDamage.PerLevel * damager.GetAbilityLevel(_abilityTypeId));
     damager.RestoreMana(manaPerDamage);
-    EffectSystem.Add(AddSpecialEffectTarget(Effect, damager, "origin"));
+    EffectSystem.Add(effect.Create(Effect, damager, "origin"));
   }
 }

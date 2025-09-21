@@ -15,10 +15,10 @@ public static class SummonRallyPoints
   {
     PlayerUnitEvents.Register(UnitTypeEvent.IsSummoned, () =>
     {
-      var summoningUnit = GetSummoningUnit();
-      if (IsUnitType(summoningUnit, UNIT_TYPE_STRUCTURE))
+      var summoningUnit = @event.SummoningUnit;
+      if (summoningUnit.IsUnitType(unittype.Structure))
       {
-        GetSummonedUnit().IssueOrder("attack", summoningUnit.GetRallyPoint());
+        @event.SummonedUnit.IssueOrder("attack", summoningUnit.GetRallyPoint());
       }
     });
   }

@@ -31,17 +31,17 @@ public sealed class QuestDarkPortal : QuestData
       "Following the Second War, the archmage Khadgar and his fellow magi sealed the Dark Portal so that it would never again be used to threaten Azeroth. Little did they know that their magicks were only temporary, and that the portal would open again in time.",
       @"ReplaceableTextures\CommandButtons\BTNDarkPortal.blp")
   {
-    ShowUnit(innerWaygate1, false);
+    innerWaygate1.IsVisible = false;
     _innerWaygate1 = innerWaygate1;
-    ShowUnit(innerWaygate2, false);
+    innerWaygate2.IsVisible = false;
     _innerWaygate2 = innerWaygate2;
-    ShowUnit(innerWaygate3, false);
+    innerWaygate3.IsVisible = false;
     _innerWaygate3 = innerWaygate3;
-    ShowUnit(outerWaygate1, false);
+    outerWaygate1.IsVisible = false;
     _outerWaygate1 = outerWaygate1;
-    ShowUnit(outerWaygate2, false);
+    outerWaygate2.IsVisible = false;
     _outerWaygate2 = outerWaygate2;
-    ShowUnit(outerWaygate3, false);
+    outerWaygate3.IsVisible = false;
     _outerWaygate3 = outerWaygate3;
     AddObjective(new ObjectiveEitherOf(
       new ObjectiveResearch(UPGRADE_R02C_THE_DARK_PORTAL_FEL_HORDE, UNIT_O008_HELLFIRE_CITADEL_FEL_HORDE, true),
@@ -67,22 +67,22 @@ public sealed class QuestDarkPortal : QuestData
 
   private void OpenPortal()
   {
-    ShowUnit(_innerWaygate1, true);
+    _innerWaygate1.IsVisible = true;
     _innerWaygate1
       .SetWaygateDestination(Regions.Dark_Portal_Exit_1.Center);
-    ShowUnit(_innerWaygate2, true);
+    _innerWaygate2.IsVisible = true;
     _innerWaygate2
       .SetWaygateDestination(Regions.Dark_Portal_Exit_2.Center);
-    ShowUnit(_innerWaygate3, true);
+    _innerWaygate3.IsVisible = true;
     _innerWaygate3
       .SetWaygateDestination(Regions.Dark_Portal_Exit_3.Center);
-    ShowUnit(_outerWaygate1, true);
+    _outerWaygate1.IsVisible = true;
     _outerWaygate1
       .SetWaygateDestination(Regions.Dark_Portal_Entrance_1.Center);
-    ShowUnit(_outerWaygate2, true);
+    _outerWaygate2.IsVisible = true;
     _outerWaygate2
       .SetWaygateDestination(Regions.Dark_Portal_Entrance_2.Center);
-    ShowUnit(_outerWaygate3, true);
+    _outerWaygate3.IsVisible = true;
     _outerWaygate3
       .SetWaygateDestination(Regions.Dark_Portal_Entrance_3.Center);
   }

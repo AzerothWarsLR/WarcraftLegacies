@@ -30,5 +30,5 @@ public sealed class QuestDesolation : QuestData
   }
 
   /// <inheritdoc/>
-  protected override void OnComplete(Faction completingFaction) => UnitModifySkillPoints(_cthun.Unit, SkillPoints);
+  protected override void OnComplete(Faction completingFaction) => _cthun.Unit.AddSkillPoints(SkillPoints);
 }

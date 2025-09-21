@@ -66,7 +66,7 @@ public sealed class BlessedGroundSpell : Spell
 
       if (!string.IsNullOrEmpty(data.HealEffectPath))
       {
-        EffectSystem.Add(AddSpecialEffect(data.HealEffectPath, unit.GetPosition().X, unit.GetPosition().Y), 1.0f);
+        EffectSystem.Add(effect.Create(data.HealEffectPath, unit.GetPosition().X, unit.GetPosition().Y), 1.0f);
       }
     }
   }
@@ -90,17 +90,17 @@ public sealed class BlessedGroundSpell : Spell
 
       if (!string.IsNullOrEmpty(data.HealEffectPath))
       {
-        EffectSystem.Add(AddSpecialEffect(data.HealEffectPath, unit.GetPosition().X, unit.GetPosition().Y), 1.0f);
+        EffectSystem.Add(effect.Create(data.HealEffectPath, unit.GetPosition().X, unit.GetPosition().Y), 1.0f);
       }
     }
   }
 
   private static bool IsValidTarget(unit caster, unit target)
   {
-    return UnitAlive(target) &&
-           IsUnitAlly(target, GetOwningPlayer(caster)) &&
-           !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
-           !IsUnitType(target, UNIT_TYPE_ANCIENT);
+    return target.Alive &&
+           target.IsAllyTo(caster.Owner) &&
+           !target.IsUnitType(unittype.Structure) &&
+           !target.IsUnitType(unittype.Ancient);
   }
 }
 
@@ -125,16 +125,16 @@ public static class TimerUtils
 {
   public static void StartRepeatingTimer(BlessedGroundHealingData data, Action<BlessedGroundHealingData> applyHealing)
   {
-    var timer = CreateTimer();
-    TimerStart(timer, 1.0f, true, () =>
+    timer timer = timer.Create();
+    timer.Start(1.0f, true, () =>
     {
       data.CurrentTick++;
       data.CurrentDuration += 1.0f;
 
       if (data.CurrentDuration > data.EffectDuration || data.HealingOverTimeDone >= data.MaxHealingOverTime)
       {
-        PauseTimer(timer);
-        DestroyTimer(timer);
+        timer.Pause();
+        timer.Dispose();
         return;
       }
 

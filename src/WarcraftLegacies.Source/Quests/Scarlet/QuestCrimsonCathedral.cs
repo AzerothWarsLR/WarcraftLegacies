@@ -25,8 +25,8 @@ public sealed class QuestCrimsonCathedral : QuestData
     ResearchId = UPGRADE_R04H_QUEST_COMPLETED_THE_CRIMSON_CATHEDRAL;
     if (crimsonCathedral.Unit != null)
     {
-      SetUnitInvulnerable(crimsonCathedral.Unit, true);
-      ShowUnit(crimsonCathedral.Unit, false);
+      crimsonCathedral.Unit.IsInvulnerable = true;
+      crimsonCathedral.Unit.IsVisible = false;
     }
   }
 

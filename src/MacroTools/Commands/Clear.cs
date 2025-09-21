@@ -32,7 +32,7 @@ public sealed class Clear : Command
   /// <inheritdoc />
   public override string Execute(player commandUser, params string[] parameters)
   {
-    if (GetLocalPlayer() == commandUser)
+    if (player.LocalPlayer == commandUser)
     {
       ClearTextMessages();
     }

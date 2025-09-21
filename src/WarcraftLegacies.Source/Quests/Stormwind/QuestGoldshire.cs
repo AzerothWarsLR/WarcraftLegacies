@@ -23,9 +23,9 @@ public sealed class QuestGoldshire : QuestData
     AddObjective(new ObjectiveSelfExists());
     foreach (var unit in GlobalGroup.EnumUnitsInRect(rescueRect))
     {
-      if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+      if (unit.Owner == player.NeutralPassive)
       {
-        SetUnitInvulnerable(unit, true);
+        unit.IsInvulnerable = true;
         _rescueUnits.Add(unit);
       }
     }
@@ -41,7 +41,7 @@ public sealed class QuestGoldshire : QuestData
   protected override void OnFail(Faction completingFaction)
   {
     var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      ? player.NeutralAggressive
       : completingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);

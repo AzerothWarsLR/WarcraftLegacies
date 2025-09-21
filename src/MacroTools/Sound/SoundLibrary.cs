@@ -16,11 +16,11 @@ public static class SoundLibrary
 
   public static void Setup()
   {
-    Rescue = CreateSoundFromLabel("Rescue", false, false, false, 10000, 10000);
-    Hint = CreateSoundFromLabel("Hint", false, false, false, 10000, 10000);
-    Completed = CreateSoundFromLabel("QuestCompleted", false, false, false, 10000, 10000);
-    Failed = CreateSoundFromLabel("QuestFailed", false, false, false, 10000, 10000);
-    Warning = CreateSoundFromLabel("Warning", false, false, false, 10000, 10000);
-    Discovered = CreateSoundFromLabel("QuestNew", false, false, false, 10000, 10000);
+    Rescue = sound.CreateFromLabel("Rescue", false, false, false, 10000, 10000);
+    Hint = sound.CreateFromLabel("Hint", false, false, false, 10000, 10000);
+    Completed = sound.CreateFromLabel("QuestCompleted", false, false, false, 10000, 10000);
+    Failed = sound.CreateFromLabel("QuestFailed", false, false, false, 10000, 10000);
+    Warning = sound.CreateFromLabel("Warning", false, false, false, 10000, 10000);
+    Discovered = sound.CreateFromLabel("QuestNew", false, false, false, 10000, 10000);
   }
 }

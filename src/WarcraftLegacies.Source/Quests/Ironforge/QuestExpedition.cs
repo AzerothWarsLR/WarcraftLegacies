@@ -27,19 +27,19 @@ public sealed class QuestExpedition : QuestData
   protected override void OnComplete(Faction whichFaction)
   {
     var uldumPosition = ControlPointManager.Instance.GetFromUnitType(UNIT_N0BD_ULDUM).Unit.GetPosition();
-    var rewardItem = CreateItem(_rewardArtifactItemTypeId, uldumPosition.X, uldumPosition.Y);
-    System.Console.WriteLine($"Created item: {GetItemName(rewardItem)}");
+    var rewardItem = item.Create(_rewardArtifactItemTypeId, uldumPosition.X, uldumPosition.Y);
+    System.Console.WriteLine($"Created item: {rewardItem.Name}");
 
     var rewardArtifact = new Artifact(rewardItem);
     ArtifactManager.Register(rewardArtifact);
     System.Console.WriteLine("Registered artifact");
 
-    TimerStart(CreateTimer(), 0.03f, false, () =>
+    timer.Create().Start(0.03f, false, () =>
     {
       System.Console.WriteLine("Timer expired, calling Titanforge");
       rewardArtifact.Titanforge();
       System.Console.WriteLine("Titanforge called");
-      DestroyTimer(GetExpiredTimer());
+      @event.ExpiredTimer.Dispose();
     });
   }
 

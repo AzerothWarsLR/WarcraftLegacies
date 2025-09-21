@@ -46,24 +46,24 @@ public sealed class InspireMadness : Spell
 
   private static bool IsValidTarget(unit caster, unit target)
   {
-    return !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
-           !IsUnitType(target, UNIT_TYPE_ANCIENT) &&
-           !IsUnitType(target, UNIT_TYPE_MECHANICAL) &&
-           !IsUnitType(target, UNIT_TYPE_RESISTANT) &&
-           !IsUnitType(target, UNIT_TYPE_HERO) &&
-           UnitAlive(target) &&
-           !IsUnitAlly(target, GetOwningPlayer(caster)) &&
-           !IsUnitType(target, UNIT_TYPE_SUMMONED);
+    return !target.IsUnitType(unittype.Structure) &&
+           !target.IsUnitType(unittype.Ancient) &&
+           !target.IsUnitType(unittype.Mechanical) &&
+           !target.IsUnitType(unittype.Resistant) &&
+           !target.IsUnitType(unittype.Hero) &&
+           target.Alive &&
+           !target.IsAllyTo(caster.Owner) &&
+           !target.IsUnitType(unittype.Summoned);
   }
 
   private void ConvertUnit(unit caster, unit target)
   {
-    SetUnitOwner(target, GetOwningPlayer(caster), true);
-    UnitApplyTimedLife(target, FourCC("Bpos"), Duration);
-    SetUnitExploded(target, true);
+    target.SetOwner(caster.Owner, true);
+    target.ApplyTimedLife(FourCC("Bpos"), Duration);
+    target.SetExploded(true);
 
-    var tempEffect = AddSpecialEffect(EffectTarget, GetUnitX(target), GetUnitY(target));
-    BlzSetSpecialEffectScale(tempEffect, EffectScaleTarget);
+    var tempEffect = effect.Create(EffectTarget, target.X, target.Y);
+    tempEffect.Scale = EffectScaleTarget;
     EffectSystem.Add(tempEffect);
   }
 }

@@ -24,9 +24,9 @@ public sealed class RegionVisionPower : Power
   {
     foreach (var region in _visionRects)
     {
-      var newFogModifier = CreateFogModifierRect(whichPlayer, FOG_OF_WAR_VISIBLE, region.Rect, true, true);
+      var newFogModifier = region.Rect.AddFogModifier(whichPlayer, fogstate.Visible, true, true);
       _fogModifiers.Add(newFogModifier);
-      FogModifierStart(newFogModifier);
+      newFogModifier.Start();
     }
   }
 
@@ -34,7 +34,7 @@ public sealed class RegionVisionPower : Power
   {
     foreach (var fogModifier in _fogModifiers)
     {
-      DestroyFogModifier(fogModifier);
+      fogModifier.Dispose();
     }
 
     _fogModifiers.Clear();

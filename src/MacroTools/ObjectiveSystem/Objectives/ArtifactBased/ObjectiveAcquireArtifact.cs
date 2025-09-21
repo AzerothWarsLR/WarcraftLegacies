@@ -17,7 +17,7 @@ public sealed class ObjectiveAcquireArtifact : Objective
   /// <param name="target">The objective is completed when this artifact is acquired.</param>
   public ObjectiveAcquireArtifact(Artifact target)
   {
-    Description = $"Acquire {GetItemName(target.Item)}";
+    Description = $"Acquire {target.Item.Name}";
     _target = target;
     target.PickedUp += (_, _) =>
       Progress = EligibleFactions.Contains(_target.OwningPlayer) ? QuestProgress.Complete : QuestProgress.Incomplete;

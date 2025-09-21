@@ -47,13 +47,13 @@ public sealed class UnlockShipDialogPresenter : ChoiceDialogPresenter<UnlockShip
   private static void TeleportTroops(player whichPlayer)
   {
     foreach (var unit in GlobalGroup.EnumUnitsInRect(Rectangle.WorldBounds)
-                 .Where(x => GetOwningPlayer(x) == whichPlayer))
+                 .Where(x => x.Owner == whichPlayer))
     {
-      if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE) &&
-          !IsUnitType(unit, UNIT_TYPE_ANCIENT) &&
-          !IsUnitType(unit, UNIT_TYPE_PEON))
+      if (!unit.IsUnitType(unittype.Structure) &&
+          !unit.IsUnitType(unittype.Ancient) &&
+          !unit.IsUnitType(unittype.Peon))
       {
-        SetUnitPosition(unit, 6864, -17176);
+        unit.SetPosition(6864, -17176);
       }
     }
 

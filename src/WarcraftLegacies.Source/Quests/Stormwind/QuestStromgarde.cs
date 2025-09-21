@@ -25,9 +25,9 @@ public sealed class QuestStromgarde : QuestData
     ResearchId = UPGRADE_R01M_QUEST_COMPLETED_STROMGARDE_STORMWIND;
     foreach (var unit in GlobalGroup.EnumUnitsInRect(rescueRect))
     {
-      if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+      if (unit.Owner == player.NeutralPassive)
       {
-        SetUnitInvulnerable(unit, true);
+        unit.IsInvulnerable = true;
         _rescueUnits.Add(unit);
       }
     }
@@ -45,14 +45,14 @@ public sealed class QuestStromgarde : QuestData
   {
     foreach (var unit in _rescueUnits)
     {
-      unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      unit.Rescue(player.NeutralAggressive);
     }
   }
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
   {
-    SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
+    completingFaction.Player.SetTechResearched(ResearchId, 1);
     foreach (var unit in _rescueUnits)
     {
       unit.Rescue(completingFaction.Player);

@@ -44,10 +44,10 @@ public sealed class QuestShoresOfNorthrend : QuestData
   protected override void OnComplete(Faction completingFaction)
   {
     KillNeutralHostileUnitsInRadius(-512, 15776, 2000);
-    if (GetOwningPlayer(_arthas.Unit) == completingFaction.Player)
+    if (_arthas.Unit.Owner == completingFaction.Player)
     {
-      ReviveHero(_arthas.Unit, 400, 16102, true);
-      BlzSetUnitFacingEx(_arthas.Unit, 112);
+      _arthas.Unit.Revive(400, 16102, true);
+      _arthas.Unit.Facing = 112;
     }
     if (completingFaction.Player != null)
     {

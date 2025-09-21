@@ -47,21 +47,21 @@ public sealed class QuestSummonLegion : QuestData
   /// <inheritdoc />
   protected override void OnComplete(Faction whichFaction)
   {
-    IssueImmediateOrderById(_legionTeleporter1, ORDER_BERSERK);
-    IssueImmediateOrderById(_legionTeleporter2, ORDER_BERSERK);
+    _legionTeleporter1.IssueOrder(ORDER_BERSERK);
+    _legionTeleporter2.IssueOrder(ORDER_BERSERK);
 
-    TimerStart(CreateTimer(), 0.5f, false, () =>
+    timer.Create().Start(0.5f, false, () =>
     {
-      RemoveUnit(_legionTeleporter1);
+      _legionTeleporter1.Dispose();
 
-      RemoveUnit(_legionTeleporter2);
+      _legionTeleporter2.Dispose();
 
-      DestroyTimer(GetExpiredTimer());
+      @event.ExpiredTimer.Dispose();
     });
 
     if (_anetheron.Unit != null)
     {
-      SetUnitAbilityLevel(_anetheron.Unit, ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS, 2);
+      _anetheron.Unit.SetAbilityLevel(ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS, 2);
     }
 
     whichFaction.ModObjectLimit(UNIT_U006_SUMMONING_CIRCLE_LEGION_MAGIC, 9);
@@ -69,7 +69,7 @@ public sealed class QuestSummonLegion : QuestData
     whichFaction.ModObjectLimit(UNIT_NINF_INFERNAL_LEGION, 6);
     foreach (var player in Util.EnumeratePlayers())
     {
-      SetPlayerAbilityAvailable(player, ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS, false);
+      player.SetAbilityAvailable(ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS, false);
     }
 
     whichFaction.Player.RescueGroup(_rescueUnits);
@@ -77,15 +77,15 @@ public sealed class QuestSummonLegion : QuestData
 
     CreatePortals(whichFaction.Player);
 
-    TimerStart(CreateTimer(), 6, false, () =>
+    timer.Create().Start(6, false, () =>
     {
       PlayThematicMusic("Doom");
-      DestroyTimer(GetExpiredTimer());
+      @event.ExpiredTimer.Dispose();
     });
 
     foreach (var player in Util.EnumeratePlayers())
     {
-      SetPlayerAbilityAvailable(player, RitualId, false);
+      player.SetAbilityAvailable(RitualId, false);
     }
   }
 
@@ -103,9 +103,8 @@ public sealed class QuestSummonLegion : QuestData
     var exteriorPortalPosition = _objectiveCastSpell.Caster != null
       ? _objectiveCastSpell.Caster!.GetPosition()
       : new Point(0, 0);
-    SetUnitOwner(_interiorPortal, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
-    var exteriorPortal = CreateUnit(whichPlayer ?? Player(PLAYER_NEUTRAL_AGGRESSIVE),
-      UNIT_N037_DEMON_PORTAL, exteriorPortalPosition.X, exteriorPortalPosition.Y, 0);
+    _interiorPortal.SetOwner(player.NeutralAggressive, true);
+    var exteriorPortal = unit.Create(whichPlayer ?? player.NeutralAggressive, UNIT_N037_DEMON_PORTAL, exteriorPortalPosition.X, exteriorPortalPosition.Y, 0);
     exteriorPortal.SetWaygateDestination(_interiorPortal.GetPosition());
     _interiorPortal.SetWaygateDestination(exteriorPortal.GetPosition());
   }

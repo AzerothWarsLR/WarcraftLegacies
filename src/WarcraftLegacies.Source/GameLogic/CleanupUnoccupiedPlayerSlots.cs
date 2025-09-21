@@ -15,9 +15,9 @@ public static class CleanupUnoccupiedPlayerSlots
   /// </summary>
   public static void Setup()
   {
-    var trig = CreateTrigger();
-    TriggerRegisterTimerEvent(trig, 2, false);
-    TriggerAddAction(trig, () =>
+    var trig = trigger.Create();
+    trig.RegisterTimerEvent(2, false);
+    trig.AddAction(() =>
     {
       if (TestMode.AreCheatsActive)
       {
@@ -32,7 +32,7 @@ public static class CleanupUnoccupiedPlayerSlots
           continue;
         }
 
-        if (GetPlayerSlotState(player) != PLAYER_SLOT_STATE_PLAYING &&
+        if (player.SlotState != playerslotstate.Playing &&
             playerFaction.ScoreStatus == ScoreStatus.Undefeated)
         {
           playerFaction.Defeat();

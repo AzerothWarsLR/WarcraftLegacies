@@ -56,22 +56,22 @@ public sealed class ResoluteHeart : PassiveAbility, IAppliesEffectOnDamage
   {
     try
     {
-      var caster = GetEventDamageSource();
-      var damagedUnit = BlzGetEventDamageTarget();
+      var caster = @event.DamageSource;
+      var damagedUnit = @event.DamageTarget;
 
 
-      if (!BlzGetEventIsAttack() || GetUnitAbilityLevel(caster, AbilityTypeId) == 0 || damagedUnit == null)
+      if (!@event.IsAttack || caster.GetAbilityLevel(AbilityTypeId) == 0 || damagedUnit == null)
       {
         return;
       }
 
-      if (!IsUnitEnemy(damagedUnit, GetOwningPlayer(caster)) || IsUnitType(damagedUnit, UNIT_TYPE_STRUCTURE) || IsUnitType(damagedUnit, UNIT_TYPE_ANCIENT))
+      if (!damagedUnit.IsEnemyTo(caster.Owner) || damagedUnit.IsUnitType(unittype.Structure) || damagedUnit.IsUnitType(unittype.Ancient))
       {
         return;
       }
 
-      var damageDealt = GetEventDamage();
-      var level = GetUnitAbilityLevel(caster, AbilityTypeId);
+      var damageDealt = @event.Damage;
+      var level = caster.GetAbilityLevel(AbilityTypeId);
       var procChance = BaseProcChance + (0.1f * (level - 1));
 
       if (GetRandomReal(0.0f, 1.0f) > procChance)
@@ -84,14 +84,14 @@ public sealed class ResoluteHeart : PassiveAbility, IAppliesEffectOnDamage
       // Heal nearby allies
       foreach (var nearbyUnit in GlobalGroup.EnumUnitsInRange(caster.GetPosition(), Radius))
       {
-        if (nearbyUnit == caster || !IsUnitAlly(nearbyUnit, GetOwningPlayer(caster)) || !UnitAlive(nearbyUnit))
+        if (nearbyUnit == caster || !nearbyUnit.IsAllyTo(caster.Owner) || !nearbyUnit.Alive)
         {
           continue;
         }
 
         if (!string.IsNullOrEmpty(EffectPath))
         {
-          AddSpecialEffect(EffectPath, nearbyUnit.GetPosition().X, nearbyUnit.GetPosition().Y);
+          effect.Create(EffectPath, nearbyUnit.GetPosition().X, nearbyUnit.GetPosition().Y);
         }
 
         nearbyUnit.Heal(healAmount);

@@ -19,12 +19,11 @@ public sealed class QuestTortolla : QuestData
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R049_QUEST_COMPLETED_THE_TURTLE_DEMIGOD;
 
-    var sleepingTurtle = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), HeroId, -11315, 9389, 333);
-    SetUnitInvulnerable(sleepingTurtle, true);
+    var sleepingTurtle = unit.Create(player.NeutralPassive, HeroId, -11315, 9389, 333);
+    sleepingTurtle.IsInvulnerable = true;
     _sleepingTortolla = sleepingTurtle;
     AddHeroXP(sleepingTurtle, tortolla.StartingXp, true);
-    AddSpecialEffectTarget(@"Abilities\Spells\Undead\Sleep\SleepTarget.mdl", _sleepingTortolla,
-      "overhead");
+    effect.Create(@"Abilities\Spells\Undead\Sleep\SleepTarget.mdl", _sleepingTortolla, "overhead");
   }
 
   /// <inheritdoc/>
@@ -36,12 +35,12 @@ public sealed class QuestTortolla : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    RemoveUnit(_sleepingTortolla);
+    _sleepingTortolla.Dispose();
   }
 
   /// <inheritdoc/>
   protected override void OnFail(Faction completingFaction)
   {
-    RemoveUnit(_sleepingTortolla);
+    _sleepingTortolla.Dispose();
   }
 }

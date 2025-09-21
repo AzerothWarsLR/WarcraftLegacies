@@ -13,5 +13,5 @@ public sealed class UnholyArmor : Spell
   }
 
   public override void OnCast(unit caster, unit target, Point targetPoint) =>
-    target.TakeDamage(caster, GetUnitState(target, UNIT_STATE_LIFE) * PercentageDamage);
+    target.TakeDamage(caster, target.Life * PercentageDamage);
 }

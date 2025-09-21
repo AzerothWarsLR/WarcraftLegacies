@@ -20,7 +20,7 @@ public sealed class ObjectiveLegendLevel : Objective
 
   private void OnLevel()
   {
-    if (GetHeroLevel(_target.Unit) >= _level)
+    if (_target.Unit.HeroLevel >= _level)
     {
       Progress = QuestProgress.Complete;
     }

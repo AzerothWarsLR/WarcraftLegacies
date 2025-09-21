@@ -49,7 +49,7 @@ public sealed class SlipstreamSpell : Spell
   /// <inheritdoc/>
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    var portalOrigin = Util.PositionWithPolarOffset(GetUnitX(caster), GetUnitY(caster), PortalOffset, GetUnitFacing(caster));
+    var portalOrigin = Util.PositionWithPolarOffset(caster.X, caster.Y, PortalOffset, caster.Facing);
     ChannelManager.Add(new SlipstreamPortalChannel(caster, Id, new Point(portalOrigin.x, portalOrigin.y), targetPoint)
     {
       Active = true,
@@ -64,21 +64,21 @@ public sealed class SlipstreamSpell : Spell
   /// <inheritdoc/>
   public override void OnStartCast(unit caster, unit target, Point targetPoint)
   {
-    if (!IsTerrainPathable(targetPoint.X, targetPoint.Y, PATHING_TYPE_WALKABILITY) &&
-        !(Util.DistanceBetweenPoints(GetUnitX(caster), GetUnitY(caster), targetPoint.X,
+    if (!pathingtype.Walkability.GetPathable(targetPoint.X, targetPoint.Y) &&
+        !(Util.DistanceBetweenPoints(caster.X, caster.Y, targetPoint.X,
           targetPoint.Y) < 500) && InstanceSystem.GetPointInstance(caster.GetPosition()) ==
         InstanceSystem.GetPointInstance(targetPoint))
     {
       return;
     }
 
-    IssueImmediateOrder(caster, "stop");
+    caster.IssueOrder("stop");
     Refund(caster);
   }
 
   private void Refund(unit whichUnit)
   {
-    whichUnit.RestoreMana(BlzGetUnitAbilityManaCost(whichUnit, Id, GetAbilityLevel(whichUnit)));
-    BlzEndUnitAbilityCooldown(whichUnit, Id);
+    whichUnit.RestoreMana(whichUnit.GetAbilityManaCost(Id, GetAbilityLevel(whichUnit)));
+    whichUnit.EndAbilityCooldown(Id);
   }
 }

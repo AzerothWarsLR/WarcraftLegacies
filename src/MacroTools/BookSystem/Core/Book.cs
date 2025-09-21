@@ -33,7 +33,7 @@ public abstract class Book<TItem, TPage, TCard, TPageFactory, TCardFactory> : Fr
   /// <param name="bottomButtonYOffset">How far the Previous and Next buttons should be from the bottom side of the Book.</param>
   /// <param name="maximumPageCount">How many pages the Book can have. Can't be changed once set.</param>
   protected Book(float width, float height, float bottomButtonXOffset, float bottomButtonYOffset, int maximumPageCount) : base(
-    "ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0)
+    "ArtifactMenuBackdrop", originframetype.GameUI.GetOriginFrame(0), 0)
   {
     Width = width;
     Height = height;
@@ -48,7 +48,7 @@ public abstract class Book<TItem, TPage, TCard, TPageFactory, TCardFactory> : Fr
       Text = "×",
       OnClick = Exit
     };
-    ExitButton.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOPRIGHT, -0.015f, -0.015f);
+    ExitButton.SetPoint(framepointtype.Center, this, framepointtype.TopRight, -0.015f, -0.015f);
     AddFrame(ExitButton);
 
     MoveNextButton = new Button("ScriptDialogButton", this, 0)
@@ -59,7 +59,7 @@ public abstract class Book<TItem, TPage, TCard, TPageFactory, TCardFactory> : Fr
       OnClick = MoveNext,
       Visible = true
     };
-    MoveNextButton.SetPoint(FRAMEPOINT_BOTTOMRIGHT, this, FRAMEPOINT_BOTTOMRIGHT, -bottomButtonXOffset,
+    MoveNextButton.SetPoint(framepointtype.BottomRight, this, framepointtype.BottomRight, -bottomButtonXOffset,
       bottomButtonYOffset);
     AddFrame(MoveNextButton);
 
@@ -71,7 +71,7 @@ public abstract class Book<TItem, TPage, TCard, TPageFactory, TCardFactory> : Fr
       OnClick = MovePrevious,
       Visible = true
     };
-    MovePreviousButton.SetPoint(FRAMEPOINT_BOTTOMLEFT, this, FRAMEPOINT_BOTTOMLEFT, bottomButtonXOffset,
+    MovePreviousButton.SetPoint(framepointtype.BottomLeft, this, framepointtype.BottomLeft, bottomButtonXOffset,
       bottomButtonYOffset);
     AddFrame(MovePreviousButton);
 
@@ -79,19 +79,19 @@ public abstract class Book<TItem, TPage, TCard, TPageFactory, TCardFactory> : Fr
     {
       Text = "Artifacts"
     };
-    _title.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOP, 0, -0.025f);
+    _title.SetPoint(framepointtype.Center, this, framepointtype.Top, 0, -0.025f);
     AddFrame(_title);
 
-    var trigger = CreateTrigger();
-    trigger.RegisterSharedKeyEvent(OSKEY_ESCAPE, BlzGetTriggerPlayerMetaKey(), false);
-    TriggerAddAction(trigger, () =>
+    trigger trigger = trigger.Create();
+    trigger.RegisterSharedKeyEvent(oskeytype.Escape, @event.PlayerMetaKey, false);
+    trigger.AddAction(() =>
     {
-      if (GetTriggerPlayer() != GetLocalPlayer())
+      if (@event.Player != player.LocalPlayer)
       {
         return;
       }
 
-      Exit(GetLocalPlayer());
+      Exit(player.LocalPlayer);
     });
 
     RefreshNavigationButtonVisiblity();
@@ -134,7 +134,7 @@ public abstract class Book<TItem, TPage, TCard, TPageFactory, TCardFactory> : Fr
   /// </summary>
   protected Point Position
   {
-    init => SetAbsPoint(FRAMEPOINT_CENTER, value.X, value.Y);
+    init => SetAbsPoint(framepointtype.Center, value.X, value.Y);
   }
 
   private int ActivePageIndex
@@ -162,7 +162,7 @@ public abstract class Book<TItem, TPage, TCard, TPageFactory, TCardFactory> : Fr
   {
     try
     {
-      if (triggerPlayer != GetLocalPlayer())
+      if (triggerPlayer != player.LocalPlayer)
       {
         return;
       }
@@ -249,7 +249,7 @@ public abstract class Book<TItem, TPage, TCard, TPageFactory, TCardFactory> : Fr
   /// <param name="triggerPlayer"></param>
   private void Exit(player triggerPlayer)
   {
-    if (triggerPlayer != GetLocalPlayer() || !Visible || LauncherButton.Visible)
+    if (triggerPlayer != player.LocalPlayer || !Visible || LauncherButton.Visible)
     {
       return;
     }
@@ -266,7 +266,7 @@ public abstract class Book<TItem, TPage, TCard, TPageFactory, TCardFactory> : Fr
   {
     try
     {
-      if (GetLocalPlayer() == triggerPlayer)
+      if (player.LocalPlayer == triggerPlayer)
       {
         ActivePageIndex++;
       }
@@ -285,7 +285,7 @@ public abstract class Book<TItem, TPage, TCard, TPageFactory, TCardFactory> : Fr
   {
     try
     {
-      if (GetLocalPlayer() == triggerPlayer)
+      if (player.LocalPlayer == triggerPlayer)
       {
         ActivePageIndex--;
       }

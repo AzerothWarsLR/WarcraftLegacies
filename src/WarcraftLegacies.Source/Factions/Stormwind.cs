@@ -18,7 +18,7 @@ public sealed class Stormwind : Faction
   /// <inheritdoc />
 
   public Stormwind(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup,
-    ArtifactSetup artifactSetup) : base("Stormwind", PLAYER_COLOR_BLUE,
+    ArtifactSetup artifactSetup) : base("Stormwind", playercolor.Blue,
     @"ReplaceableTextures\CommandButtons\BTNKnight.blp")
   {
     TraditionalTeam = TeamSetup.SouthAlliance;

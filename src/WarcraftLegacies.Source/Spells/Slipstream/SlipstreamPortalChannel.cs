@@ -73,17 +73,16 @@ public sealed class SlipstreamPortalChannel : Channel
   /// <inheritdoc />
   public override void OnCreate()
   {
-    _portalOrigin = CreateUnit(GetOwningPlayer(Caster), PortalUnitTypeId, _origin.X, _origin.Y,
-      GetUnitFacing(Caster) - 180);
+    _portalOrigin = unit.Create(Caster.Owner, PortalUnitTypeId, _origin.X, _origin.Y, Caster.Facing - 180);
     _portalOrigin.SetWaygateDestination(_target);
-    SetUnitVertexColor(_portalOrigin, Color.Red, Color.Green, Color.Blue, Color.Alpha);
+    _portalOrigin.SetVertexColor(Color.Red, Color.Green, Color.Blue, Color.Alpha);
     _portalOriginBuff = new SlipstreamPortalBuff(Caster, _portalOrigin);
     BuffSystem.Add(_portalOriginBuff);
     _portalOriginBuff.Open(OpeningDelay);
 
-    _portalDestination = CreateUnit(GetOwningPlayer(Caster), PortalUnitTypeId, _target.X, _target.Y, GetUnitFacing(Caster));
+    _portalDestination = unit.Create(Caster.Owner, PortalUnitTypeId, _target.X, _target.Y, Caster.Facing);
     _portalDestination.SetWaygateDestination(new Point(_origin.X, _origin.Y));
-    SetUnitVertexColor(_portalDestination, Color.Red, Color.Green, Color.Blue, Color.Alpha);
+    _portalDestination.SetVertexColor(Color.Red, Color.Green, Color.Blue, Color.Alpha);
     _portalDestinationBuff = new SlipstreamPortalBuff(Caster, _portalDestination)
     {
       RefundFunc = RefundFunc

@@ -52,7 +52,7 @@ public sealed class QuestCapitalCity : QuestData
 
   }
 
-  private static bool RescueUnitFilter(unit whichUnit) => GetUnitTypeId(whichUnit) != UNIT_N08F_UNDERCITY_ENTRANCE;
+  private static bool RescueUnitFilter(unit whichUnit) => whichUnit.UnitType != UNIT_N08F_UNDERCITY_ENTRANCE;
 
   /// <inheritdoc/>
   public override string RewardFlavour =>
@@ -65,11 +65,11 @@ public sealed class QuestCapitalCity : QuestData
   protected override void OnFail(Faction completingFaction)
   {
     var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      ? player.NeutralAggressive
       : completingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);
-    SetUnitInvulnerable(_terenas, true);
+    _terenas.IsInvulnerable = true;
   }
 
   /// <inheritdoc/>
@@ -93,7 +93,7 @@ public sealed class QuestCapitalCity : QuestData
     completingFaction.Player?.RescueGroup(_rescueUnits);
     completingFaction.Player?.PlayMusicThematic("war3mapImported\\CapitalCity.mp3");
 
-    SetUnitInvulnerable(_terenas, true);
+    _terenas.IsInvulnerable = true;
     _uther.AddUnitDependency(_capitalPalace.Unit);
   }
 }

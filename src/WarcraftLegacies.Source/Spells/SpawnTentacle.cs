@@ -28,13 +28,13 @@ public sealed class SpawnTentacle : Spell
   {
     var level = GetAbilityLevel(caster);
 
-    var tentacle = CreateUnit(GetOwningPlayer(caster), UnitTypeId, targetPoint.X, targetPoint.Y, GetUnitFacing(caster));
+    var tentacle = unit.Create(caster.Owner, UnitTypeId, targetPoint.X, targetPoint.Y, caster.Facing);
     tentacle.SetTimedLife(Duration.Base + Duration.PerLevel * level);
-    BlzSetUnitBaseDamage(tentacle, AttackDamageBase.Base + AttackDamageBase.PerLevel * level, 0);
-    BlzSetUnitMaxHP(tentacle, HitPoints.Base + HitPoints.PerLevel * level);
+    tentacle.AttackBaseDamage1 = AttackDamageBase.Base + AttackDamageBase.PerLevel * level;
+    tentacle.MaxLife = HitPoints.Base + HitPoints.PerLevel * level;
     tentacle.SetLifePercent(100);
-    SetUnitAnimation(tentacle, "birth");
-    QueueUnitAnimation(tentacle, "stand");
-    UnitAddType(tentacle, UNIT_TYPE_SUMMONED);
+    tentacle.SetAnimation("birth");
+    tentacle.QueueAnimation("stand");
+    tentacle.AddType(unittype.Summoned);
   }
 }

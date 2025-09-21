@@ -68,7 +68,7 @@ public static class PlayerDistributor
     {
       var allyHeroes = GlobalGroup
         .EnumUnitsOfPlayer(ally)
-        .FindAll(unit => IsUnitType(unit, UNIT_TYPE_HERO));
+        .FindAll(unit => unit.IsUnitType(unittype.Hero));
 
       foreach (var hero in allyHeroes)
       {
@@ -105,16 +105,16 @@ public static class PlayerDistributor
     foreach (var unit in playerUnits)
     {
       var loopUnitType = UnitType.GetFromHandle(unit);
-      if (IsUnitType(unit, UNIT_TYPE_SUMMONED))
+      if (unit.IsUnitType(unittype.Summoned))
       {
         unit.SafelyRemove();
         continue;
       }
 
-      if (IsUnitType(unit, UNIT_TYPE_HERO))
+      if (unit.IsUnitType(unittype.Hero))
       {
         refund.Gold += HeroCost;
-        refund.Experience += GetHeroXP(unit);
+        refund.Experience += unit.Experience;
         if (LegendaryHeroManager.GetFromUnit(unit) != null)
         {
           refund.Experience -= LegendaryHeroManager.GetFromUnit(unit)!.StartingXp;
@@ -126,22 +126,22 @@ public static class PlayerDistributor
 
       if (unit.IsRemovable())
       {
-        if (!IsUnitType(unit, UNIT_TYPE_STRUCTURE))
+        if (!unit.IsUnitType(unittype.Structure))
         {
           refund.Gold += loopUnitType.GoldCost * RefundMultiplier;
         }
 
         unit.DropAllItems();
-        KillUnit(unit);
-        RemoveUnit(unit);
+        unit.Kill();
+        unit.Dispose();
         continue;
       }
 
       var newOwner = playerToDistribute.GetTeam()?.Size > 1
         ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count - 1)]
-        : Player(GetBJPlayerNeutralVictim());
+        : player.NeutralVictim;
 
-      SetUnitOwner(unit, newOwner, true);
+      unit.SetOwner(newOwner, true);
     }
     return refund;
   }

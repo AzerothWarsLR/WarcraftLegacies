@@ -38,8 +38,7 @@ public sealed class QuestAndrassil : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    _vordrassil.Unit = CreateUnit(completingFaction.Player, UNIT_N04F_ANDRASSIL_DRUID_OTHER, GetRectCenterX(Regions.Andrassil.Rect),
-      GetRectCenterY(Regions.Andrassil.Rect), 0);
+    _vordrassil.Unit = unit.Create(completingFaction.Player, UNIT_N04F_ANDRASSIL_DRUID_OTHER, Regions.Andrassil.Rect.CenterX, Regions.Andrassil.Rect.CenterY, 0);
 
     if (ShouldApplyExperiencePenalty(completingFaction))
     {

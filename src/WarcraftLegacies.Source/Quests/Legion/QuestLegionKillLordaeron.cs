@@ -33,7 +33,7 @@ public sealed class QuestLegionKillLordaeron : QuestData
     _tichondrius.Unit?.AddHeroAttributes(15, 15, 15);
     if (_tichondrius.Unit != null)
     {
-      SetUnitAbilityLevel(_tichondrius.Unit, ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS, 2);
+      _tichondrius.Unit.SetAbilityLevel(ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS, 2);
     }
   }
 }

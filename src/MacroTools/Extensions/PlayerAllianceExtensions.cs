@@ -47,19 +47,19 @@ public static class PlayerAllianceExtensions
   /// </summary>
   public static void SetPlayerAllianceStateFullControl(this player sourcePlayer, player otherPlayer, bool flag)
   {
-    SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_SHARED_CONTROL, flag);
-    SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_SHARED_ADVANCED_CONTROL, flag);
+    sourcePlayer.SetAlliance(otherPlayer, alliancetype.SharedControl, flag);
+    sourcePlayer.SetAlliance(otherPlayer, alliancetype.SharedControlAdvanced, flag);
   }
 
   private static void SetPlayerAllianceStateAlly(this player sourcePlayer, player otherPlayer, bool flag)
   {
-    SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_PASSIVE, flag);
-    SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_HELP_REQUEST, flag);
-    SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_HELP_RESPONSE, flag);
-    SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_SHARED_XP, flag);
-    SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_SHARED_SPELLS, flag);
+    sourcePlayer.SetAlliance(otherPlayer, alliancetype.Passive, flag);
+    sourcePlayer.SetAlliance(otherPlayer, alliancetype.HelpRequest, flag);
+    sourcePlayer.SetAlliance(otherPlayer, alliancetype.HelpResponse, flag);
+    sourcePlayer.SetAlliance(otherPlayer, alliancetype.SharedExperience, flag);
+    sourcePlayer.SetAlliance(otherPlayer, alliancetype.SharedSpells, flag);
   }
 
   private static void SetPlayerAllianceStateVision(this player sourcePlayer, player otherPlayer, bool flag) =>
-    SetPlayerAlliance(sourcePlayer, otherPlayer, ALLIANCE_SHARED_VISION, flag);
+    sourcePlayer.SetAlliance(otherPlayer, alliancetype.SharedVision, flag);
 }

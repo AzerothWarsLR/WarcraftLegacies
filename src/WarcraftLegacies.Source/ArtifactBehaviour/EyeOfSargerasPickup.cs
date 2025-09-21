@@ -22,15 +22,15 @@ public static class EyeOfSargerasPickup
 
   private static void OnEyeOfSargerasPickedUp()
   {
-    if (GetOwningPlayer(GetTriggerUnit()) == Player(PLAYER_NEUTRAL_AGGRESSIVE))
+    if (@event.Unit.Owner == player.NeutralAggressive)
     {
       return;
     }
 
     var hostileNearby = GlobalGroup
-      .EnumUnitsInRange(GetTriggerUnit().GetPosition(), 700)
-      .OrderByDescending(x => MathEx.GetDistanceBetweenPoints(x.GetPosition(), GetTriggerUnit().GetPosition()))
-      .FirstOrDefault(x => GetOwningPlayer(x) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && UnitAlive(x) && !IsUnitType(x, UNIT_TYPE_ANCIENT));
+      .EnumUnitsInRange(@event.Unit.GetPosition(), 700)
+      .OrderByDescending(x => MathEx.GetDistanceBetweenPoints(x.GetPosition(), @event.Unit.GetPosition()))
+      .FirstOrDefault(x => x.Owner == player.NeutralAggressive && x.Alive && !x.IsUnitType(unittype.Ancient));
     if (hostileNearby == null)
     {
       PlayerUnitEvents.Unregister(ItemTypeEvent.IsPickedUp, OnEyeOfSargerasPickedUp,
@@ -38,6 +38,6 @@ public static class EyeOfSargerasPickup
       return;
     }
 
-    MissileSystem.Add(new EyeOfSargerasMissile(GetTriggerUnit(), hostileNearby, GetManipulatedItem()));
+    MissileSystem.Add(new EyeOfSargerasMissile(@event.Unit, hostileNearby, @event.ManipulatedItem));
   }
 }

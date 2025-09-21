@@ -21,15 +21,15 @@ public sealed class ExactJusticeBuff : PassiveBuff
   /// <inheritdoc />
   public override void OnApply()
   {
-    _noDamageTrigger = CreateTrigger();
-    TriggerRegisterUnitEvent(_noDamageTrigger, Target, EVENT_UNIT_DAMAGED);
-    TriggerAddAction(_noDamageTrigger, () => BlzSetEventDamage(0));
+    _noDamageTrigger = trigger.Create();
+    _noDamageTrigger.RegisterUnitEvent(Target, unitevent.Damaged);
+    _noDamageTrigger.AddAction(() => @event.Damage = 0);
   }
 
   /// <inheritdoc />
   public override void OnDispose()
   {
-    DestroyTrigger(_noDamageTrigger);
+    _noDamageTrigger.Dispose();
   }
 
   /// <inheritdoc />

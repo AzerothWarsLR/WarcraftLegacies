@@ -20,36 +20,36 @@ public sealed class CorruptedSunwell : Power
   }
 
   public override void OnAdd(player whichPlayer) =>
-    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerSpellEffect, OnSpellCast, GetPlayerId(whichPlayer));
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerSpellEffect, OnSpellCast, whichPlayer.Id);
 
   public override void OnRemove(player whichPlayer) =>
-    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerSpellEffect, OnSpellCast, GetPlayerId(whichPlayer));
+    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerSpellEffect, OnSpellCast, whichPlayer.Id);
 
   private static void OnSpellCast()
   {
-    var castingUnit = GetTriggerUnit();
+    var castingUnit = @event.Unit;
     if (castingUnit == null)
     {
       return;
     }
 
-    var abilityId = GetSpellAbilityId();
-    var abilityLevel = GetUnitAbilityLevel(castingUnit, abilityId);
-    var manaCost = BlzGetUnitAbilityManaCost(castingUnit, abilityId, abilityLevel - 1);
+    var abilityId = @event.SpellAbilityId;
+    var abilityLevel = castingUnit.GetAbilityLevel(abilityId);
+    var manaCost = castingUnit.GetAbilityManaCost(abilityId, abilityLevel - 1);
     var damageAmount = manaCost * 0.2f;
 
-    SetUnitState(castingUnit, UNIT_STATE_LIFE, GetUnitState(castingUnit, UNIT_STATE_LIFE) - damageAmount);
-    SetUnitState(castingUnit, UNIT_STATE_LIFE, GetUnitState(castingUnit, UNIT_STATE_LIFE) - damageAmount);
+    castingUnit.Life = castingUnit.Life - damageAmount;
+    castingUnit.Life = castingUnit.Life - damageAmount;
 
-    if (UnitAlive(castingUnit))
+    if (castingUnit.Alive)
     {
       return;
     }
 
-    var x = GetUnitX(castingUnit);
-    var y = GetUnitY(castingUnit);
-    var wretched = CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), UNIT_N05K_WRETCHED_CORRUPTED_SUNWELL, x, y, 0);
+    var x = castingUnit.X;
+    var y = castingUnit.Y;
+    var wretched = unit.Create(player.NeutralAggressive, UNIT_N05K_WRETCHED_CORRUPTED_SUNWELL, x, y, 0);
     wretched.SetTimedLife(120.0f);
-    UnitAddType(wretched, UNIT_TYPE_SUMMONED);
+    wretched.AddType(unittype.Summoned);
   }
 }

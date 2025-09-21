@@ -50,7 +50,7 @@ public sealed class QuestKingdomOfManLordaeron : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    SetPlayerTechResearched(completingFaction.Player, RewardResearchId, 1);
+    completingFaction.Player.SetTechResearched(RewardResearchId, 1);
     completingFaction.Player?.DisplayResearchAcquired(RewardResearchId, 1);
 
     if (_arthas.Unit != null)
@@ -63,7 +63,7 @@ public sealed class QuestKingdomOfManLordaeron : QuestData
     ArtifactManager.Destroy(_crownOfLordaeron);
     ArtifactManager.Destroy(_crownOfStormwind);
 
-    var crownOfTheEasternKingdoms = new Artifact(CreateItem(ITEM_I00U_CROWN_OF_THE_EASTERN_KINGDOMS, 0, 0));
+    var crownOfTheEasternKingdoms = new Artifact(item.Create(ITEM_I00U_CROWN_OF_THE_EASTERN_KINGDOMS, 0, 0));
     ArtifactManager.Register(crownOfTheEasternKingdoms);
     crownHolder?.AddItemSafe(crownOfTheEasternKingdoms.Item);
   }

@@ -26,21 +26,21 @@ public sealed class LegendLegion
     Anetheron = new LegendaryHero("Anetheron")
     {
       UnitType = FourCC("U00L"),
-      PlayerColor = PLAYER_COLOR_ORANGE,
+      PlayerColor = playercolor.Orange,
       StartingXp = 400
     };
 
     Tichondrius = new LegendaryHero("Tichondrius")
     {
       UnitType = FourCC("Utic"),
-      PlayerColor = PLAYER_COLOR_RED,
+      PlayerColor = playercolor.Red,
       StartingXp = 1000
     };
 
     Malganis = new LegendaryHero("Mal'ganis")
     {
       UnitType = FourCC("Umal"),
-      PlayerColor = PLAYER_COLOR_GREEN
+      PlayerColor = playercolor.Green
     };
 
     LegionStronghold = new Capital

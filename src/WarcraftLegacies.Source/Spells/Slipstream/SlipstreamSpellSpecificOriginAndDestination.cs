@@ -66,13 +66,13 @@ public sealed class SlipstreamSpellSpecificOriginAndDestination : Spell
   /// <inheritdoc/>
   public override void OnStartCast(unit caster, unit target, Point targetPoint)
   {
-    IssueImmediateOrder(caster, "stop");
+    caster.IssueOrder("stop");
     Refund(caster);
   }
 
   private void Refund(unit whichUnit)
   {
-    whichUnit.RestoreMana(BlzGetUnitAbilityManaCost(whichUnit, Id, GetAbilityLevel(whichUnit)));
-    BlzEndUnitAbilityCooldown(whichUnit, Id);
+    whichUnit.RestoreMana(whichUnit.GetAbilityManaCost(Id, GetAbilityLevel(whichUnit)));
+    whichUnit.EndAbilityCooldown(Id);
   }
 }

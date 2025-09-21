@@ -86,7 +86,7 @@ public sealed class LegendaryHero : Legend
       HasCustomColor = true;
       if (Unit != null)
       {
-        SetUnitColor(Unit, _playerColor);
+        Unit.SetColor(_playerColor);
       }
     }
   }
@@ -126,22 +126,22 @@ public sealed class LegendaryHero : Legend
   {
     if (Unit == null)
     {
-      Unit = CreateUnit(owner, UnitType, position.X, position.Y, facing);
+      Unit = unit.Create(owner, UnitType, position.X, position.Y, facing);
       OnChangeOwner(new LegendChangeOwnerEventArgs(this));
     }
-    else if (!UnitAlive(Unit))
+    else if (!Unit.Alive)
     {
-      ReviveHero(Unit, position.X, position.Y, false);
+      Unit.Revive(position.X, position.Y, false);
     }
     else
     {
-      SetUnitX(Unit, position.X);
-      SetUnitY(Unit, position.Y);
-      SetUnitFacing(Unit, facing);
+      Unit.X = position.X;
+      Unit.Y = position.Y;
+      Unit.SetFacing(facing);
     }
-    if (GetOwningPlayer(Unit) != owner)
+    if (Unit.Owner != owner)
     {
-      SetUnitOwner(Unit, owner, true);
+      Unit.SetOwner(owner, true);
     }
 
     RefreshDummy();
@@ -153,7 +153,7 @@ public sealed class LegendaryHero : Legend
   /// </summary>
   public void ClearUnitDependencies()
   {
-    DestroyGroup(_diesWithout);
+    _diesWithout.Dispose();
     _diesWithout = null;
     RefreshDummy();
   }
@@ -165,8 +165,8 @@ public sealed class LegendaryHero : Legend
   /// </summary>
   public void AddUnitDependency(unit whichUnit)
   {
-    _diesWithout ??= CreateGroup();
-    GroupAddUnit(_diesWithout, whichUnit);
+    _diesWithout ??= group.Create();
+    _diesWithout.Add(whichUnit);
     RefreshDummy();
   }
 
@@ -195,7 +195,7 @@ public sealed class LegendaryHero : Legend
   private bool AllDependenciesAreMissing()
   {
     return _diesWithout != null && !_diesWithout.Copy().EmptyToList()
-      .Any(x => GetOwningPlayer(x) == GetOwningPlayer(Unit) && UnitAlive(x));
+      .Any(x => x.Owner == Unit.Owner && x.Alive);
   }
 
   /// <inheritdoc />
@@ -203,17 +203,17 @@ public sealed class LegendaryHero : Legend
   {
     if (_becomesRevivableTrig != null)
     {
-      DestroyTrigger(_becomesRevivableTrig);
+      _becomesRevivableTrig.Dispose();
     }
 
     if (_castTrig != null)
     {
-      DestroyTrigger(_castTrig);
+      _castTrig.Dispose();
     }
 
     if (_ownerTrig != null)
     {
-      DestroyTrigger(_ownerTrig);
+      _ownerTrig.Dispose();
     }
 
     if (Unit == null)
@@ -221,26 +221,26 @@ public sealed class LegendaryHero : Legend
       return;
     }
 
-    _becomesRevivableTrig = CreateTrigger();
-    TriggerRegisterUnitEvent(_becomesRevivableTrig, Unit, EVENT_UNIT_HERO_REVIVABLE);
-    TriggerAddAction(_becomesRevivableTrig, OnDeath);
-    _castTrig = CreateTrigger();
-    TriggerRegisterUnitEvent(_castTrig, Unit, EVENT_UNIT_SPELL_FINISH);
-    TriggerAddAction(_castTrig, OnCast);
-    _ownerTrig = CreateTrigger();
-    TriggerRegisterUnitEvent(_ownerTrig, Unit, EVENT_UNIT_CHANGE_OWNER);
-    TriggerAddAction(_ownerTrig, () =>
+    _becomesRevivableTrig = trigger.Create();
+    _becomesRevivableTrig.RegisterUnitEvent(Unit, unitevent.HeroRevivable);
+    _becomesRevivableTrig.AddAction(OnDeath);
+    _castTrig = trigger.Create();
+    _castTrig.RegisterUnitEvent(Unit, unitevent.SpellFinish);
+    _castTrig.AddAction(OnCast);
+    _ownerTrig = trigger.Create();
+    _ownerTrig.RegisterUnitEvent(Unit, unitevent.ChangeOwner);
+    _ownerTrig.AddAction(() =>
     {
-      OnChangeOwner(new LegendChangeOwnerEventArgs(this, GetChangingUnitPrevOwner()));
+      OnChangeOwner(new LegendChangeOwnerEventArgs(this, @event.ChangingUnitPrevOwner));
     });
     PlayerUnitEvents.Register(UnitEvent.Damaging, () =>
     {
       DealtDamage?.Invoke(this, EventArgs.Empty);
     }, Unit);
-    SetUnitColor(Unit, HasCustomColor ? _playerColor : GetPlayerColor(GetOwningPlayer(Unit)));
-    if (GetHeroXP(Unit) < StartingXp)
+    Unit.SetColor(HasCustomColor ? _playerColor : Unit.Owner.Color);
+    if (Unit.Experience < StartingXp)
     {
-      SetHeroXP(Unit, StartingXp, true);
+      Unit.SetExperience(StartingXp, true);
     }
 
     if (StartingArtifacts.Any())
@@ -258,15 +258,15 @@ public sealed class LegendaryHero : Legend
 
   private void OnPermaDeath()
   {
-    if (IsUnitType(Unit, UNIT_TYPE_HERO))
+    if (Unit.IsUnitType(unittype.Hero))
     {
-      var tempEffect = AddSpecialEffect(DeathSfx, GetUnitX(Unit), GetUnitY(Unit));
-      BlzSetSpecialEffectScale(tempEffect, 2);
-      DestroyEffect(tempEffect);
+      var tempEffect = effect.Create(DeathSfx, Unit.X, Unit.Y);
+      tempEffect.Scale = 2;
+      tempEffect.Dispose();
       if (Unit != null)
       {
         Unit.DropAllItems();
-        RemoveUnit(Unit);
+        Unit.Dispose();
       }
     }
 
@@ -277,10 +277,9 @@ public sealed class LegendaryHero : Legend
 
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
-      DisplayTextToPlayer(player, 0, 0,
-        GetOwningPlayer(Unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      player.DisplayTextTo(Unit.Owner == player.NeutralAggressive
           ? $"\n|cffffcc00LEGENDARY FOE SLAIN|r\n{DeathMessage}"
-          : $"\n|cffffcc00HERO SLAIN|r\n{DeathMessage}");
+          : $"\n|cffffcc00HERO SLAIN|r\n{DeathMessage}", 0, 0);
     }
   }
 
@@ -288,63 +287,63 @@ public sealed class LegendaryHero : Legend
   {
     if (_permaDies)
     {
-      UnitAddAbility(Unit, _dummyPermadies);
+      Unit.AddAbility(_dummyPermadies);
       return;
     }
 
-    UnitRemoveAbility(Unit, _dummyPermadies);
+    Unit.RemoveAbility(_dummyPermadies);
     if (_diesWithout != null)
     {
-      var tempGroup = CreateGroup();
+      var tempGroup = group.Create();
       var tooltip =
         "When this unit dies, it will be unrevivable unless any of the following capitals are under your control:\n";
-      BlzGroupAddGroupFast(_diesWithout, tempGroup);
+      _diesWithout.Add(tempGroup);
       while (true)
       {
-        var u = FirstOfGroup(tempGroup);
+        var u = tempGroup.First;
         if (u == null)
         {
           break;
         }
 
-        tooltip = tooltip + " - " + GetUnitName(u) + "|n";
-        GroupRemoveUnit(tempGroup, u);
+        tooltip = tooltip + " - " + u.Name + "|n";
+        tempGroup.Remove(u);
       }
 
       tooltip += "\nUsing this ability pings each of these capitals on the minimap.";
-      UnitAddAbility(Unit, _dummyDieswithout);
-      BlzSetAbilityStringLevelField(BlzGetUnitAbility(Unit, _dummyDieswithout),
+      Unit.AddAbility(_dummyDieswithout);
+      BlzSetAbilityStringLevelField(Unit.GetAbility(_dummyDieswithout),
         ABILITY_SLF_TOOLTIP_NORMAL_EXTENDED,
         0, tooltip);
-      DestroyGroup(tempGroup);
+      tempGroup.Dispose();
       return;
     }
 
-    UnitRemoveAbility(Unit, _dummyDieswithout);
+    Unit.RemoveAbility(_dummyDieswithout);
   }
 
   private void OnCast()
   {
-    if (GetSpellAbilityId() != _dummyDieswithout)
+    if (@event.SpellAbilityId != _dummyDieswithout)
     {
       return;
     }
 
-    var tempGroup = CreateGroup();
-    BlzGroupAddGroupFast(_diesWithout, tempGroup);
+    var tempGroup = group.Create();
+    _diesWithout.Add(tempGroup);
     while (true)
     {
-      var u = FirstOfGroup(tempGroup);
+      var u = tempGroup.First;
       if (u == null)
       {
         break;
       }
 
-      GetTriggerPlayer().PingMinimapSimple(GetUnitX(u), GetUnitY(u), 5);
+      @event.Player.PingMinimapSimple(u.X, u.Y, 5);
 
-      GroupRemoveUnit(tempGroup, u);
+      tempGroup.Remove(u);
     }
 
-    DestroyGroup(tempGroup);
+    tempGroup.Dispose();
   }
 }

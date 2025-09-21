@@ -18,6 +18,6 @@ public sealed class SpellResistanceAuraCaster : Aura<SpellResistanceAuraTarget>
 
   protected override bool UnitFilter(unit unit)
   {
-    return IsUnitAlly(unit, CastingPlayer);
+    return unit.IsAllyTo(CastingPlayer);
   }
 }

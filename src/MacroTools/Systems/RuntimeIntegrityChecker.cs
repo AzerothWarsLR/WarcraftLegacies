@@ -33,7 +33,7 @@ public static class RuntimeIntegrityChecker
   {
     foreach (var controlPoint in ControlPointManager.Instance.GetAllControlPoints())
     {
-      if (controlPoint.Owner == Player(PLAYER_NEUTRAL_PASSIVE) && !BlzIsUnitInvulnerable(controlPoint.Unit))
+      if (controlPoint.Owner == player.NeutralPassive && !controlPoint.Unit.IsInvulnerable)
       {
         Logger.LogWarning($"{controlPoint.Name} is owned by Neutral Passive and is not invulnerable.");
       }

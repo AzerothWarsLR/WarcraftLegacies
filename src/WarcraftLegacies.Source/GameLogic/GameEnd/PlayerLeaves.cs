@@ -14,16 +14,15 @@ public static class PlayerLeaves
   {
     try
     {
-      var triggerPlayer = GetTriggerPlayer();
+      var triggerPlayer = @event.Player;
 
       var playerFaction = triggerPlayer.GetFaction();
 
       foreach (var player in Util.EnumeratePlayers())
       {
-        DisplayTextToPlayer(player, 0, 0,
-          playerFaction != null
+        player.DisplayTextTo(playerFaction != null
             ? $"{playerFaction.ColoredName} has left the game."
-            : $"{GetPlayerName(triggerPlayer)} has left the game.");
+            : $"{triggerPlayer.Name} has left the game.", 0, 0);
       }
 
       if (playerFaction != null && playerFaction.ScoreStatus != ScoreStatus.Defeated)
@@ -42,12 +41,12 @@ public static class PlayerLeaves
   /// </summary>
   public static void Setup()
   {
-    var trigger = CreateTrigger();
+    trigger trigger = trigger.Create();
     foreach (var player in Util.EnumeratePlayers())
     {
-      TriggerRegisterPlayerEvent(trigger, player, EVENT_PLAYER_LEAVE);
+      trigger.RegisterPlayerEvent(player, playerevent.Leave);
     }
 
-    TriggerAddAction(trigger, PlayerLeavesGame);
+    trigger.AddAction(PlayerLeavesGame);
   }
 }

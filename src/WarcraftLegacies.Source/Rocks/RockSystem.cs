@@ -19,8 +19,8 @@ public static class RockSystem
 
     if (rockGroup.Expiry > 0) // Only use a timer if an expiry is set
     {
-      var timer = CreateTimer();
-      TimerStart(timer, rockGroup.Expiry, false, () =>
+      timer timer = timer.Create();
+      timer.Start(rockGroup.Expiry, false, () =>
       {
         rockGroup.Destroy();
         _rockGroups.Remove(rockGroup);

@@ -21,7 +21,7 @@ public sealed class Skywall : Faction
 {
   private readonly AllLegendSetup _allLegendSetup;
   /// <inheritdoc />
-  public Skywall(AllLegendSetup allLegendSetup) : base("Skywall", PLAYER_COLOR_LIGHT_GRAY,
+  public Skywall(AllLegendSetup allLegendSetup) : base("Skywall", playercolor.LightGray,
     @"ReplaceableTextures\CommandButtons\BTNFrostRevenant2.blp")
   {
     ControlPointDefenderUnitTypeId = UNIT_NECP_CONTROL_POINT_DEFENDER_SKYWALL_TOWER;

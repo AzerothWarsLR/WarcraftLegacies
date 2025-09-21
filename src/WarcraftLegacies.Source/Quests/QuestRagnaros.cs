@@ -28,8 +28,8 @@ public sealed class QuestRagnaros : QuestData
   {
     _ragnaros = ragnaros;
     ragnarosSummmoningPedestal.MakeCapturable();
-    SetUnitOwner(ragnarosSummmoningPedestal, Player(PLAYER_NEUTRAL_PASSIVE), true);
-    SetUnitInvulnerable(ragnarosSummmoningPedestal, true);
+    ragnarosSummmoningPedestal.SetOwner(player.NeutralPassive, true);
+    ragnarosSummmoningPedestal.IsInvulnerable = true;
     _ragnarosSummoningPedestal = ragnarosSummmoningPedestal;
 
     _heroInRectObjective =
@@ -48,18 +48,18 @@ public sealed class QuestRagnaros : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    SetUnitOwner(_ragnarosSummoningPedestal, GetOwningPlayer(_heroInRectObjective.CompletingUnit) ?? Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
-    SetUnitInvulnerable(_ragnarosSummoningPedestal, false);
+    _ragnarosSummoningPedestal.SetOwner(_heroInRectObjective.CompletingUnit.Owner ?? player.NeutralAggressive, true);
+    _ragnarosSummoningPedestal.IsInvulnerable = false;
   }
 
   private void OnCastSummonSpell()
   {
     var ragnarosSummonPoint = new Point(12332, -10597);
-    _ragnaros.ForceCreate(Player(PLAYER_NEUTRAL_AGGRESSIVE), ragnarosSummonPoint, 320);
-    var effect = AddSpecialEffect(@"Abilities\Spells\Other\BreathOfFire\BreathOfFireMissile.mdl", ragnarosSummonPoint.X, ragnarosSummonPoint.Y);
-    BlzSetSpecialEffectScale(effect, 2);
+    _ragnaros.ForceCreate(player.NeutralAggressive, ragnarosSummonPoint, 320);
+    effect effect = effect.Create(@"Abilities\Spells\Other\BreathOfFire\BreathOfFireMissile.mdl", ragnarosSummonPoint.X, ragnarosSummonPoint.Y);
+    effect.Scale = 2;
     EffectSystem.Add(effect, 1);
-    KillUnit(_ragnarosSummoningPedestal);
+    _ragnarosSummoningPedestal.Kill();
 
     foreach (var player in Util.EnumeratePlayers())
     {

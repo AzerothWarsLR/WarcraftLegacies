@@ -23,7 +23,7 @@ public sealed class ObjectiveSelfExists : Objective
   {
     Progress = QuestProgress.Complete;
     whichFaction.ScoreStatusChanged += OnAnyFactionScoreStatusChanged;
-    TimerStart(CreateTimer(), 55, false, () =>
+    timer.Create().Start(55, false, () =>
     {
       if (whichFaction.Player == null)
       {

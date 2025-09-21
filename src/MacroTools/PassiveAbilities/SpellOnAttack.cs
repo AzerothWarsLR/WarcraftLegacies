@@ -57,23 +57,23 @@ public sealed class SpellOnAttack : PassiveAbility, IAppliesEffectOnDamage
   public void OnDealsDamage()
   {
     // Ensure this is a normal attack
-    if (!BlzGetEventIsAttack())
+    if (!@event.IsAttack)
     {
       return;
     }
 
-    var caster = GetEventDamageSource();
-    var target = GetTriggerUnit();
+    var caster = @event.DamageSource;
+    var target = @event.Unit;
 
     // Check research requirement
     if (RequiredResearch != 0 &&
-        GetPlayerTechCount(GetOwningPlayer(caster), RequiredResearch, false) == 0)
+        caster.Owner.GetTechResearched(RequiredResearch, false) == 0)
     {
       return;
     }
 
     // Check if target is on cooldown
-    var targetId = GetHandleId(target);
+    var targetId = target.HandleId;
     if (Cooldown > 0 && _targetCooldowns.ContainsKey(targetId))
     {
       return;
@@ -97,14 +97,14 @@ public sealed class SpellOnAttack : PassiveAbility, IAppliesEffectOnDamage
 
   private void StartCooldownTimer(int targetId, unit target)
   {
-    var timer = CreateTimer();
+    timer timer = timer.Create();
     _targetCooldowns[targetId] = timer;
 
     // Set timer expiration action
-    TimerStart(timer, Cooldown, false, () =>
+    timer.Start(Cooldown, false, () =>
     {
       _targetCooldowns.Remove(targetId);
-      DestroyTimer(timer);
+      timer.Dispose();
     });
 
     // Register unit death event to clean up timer when unit dies
@@ -112,8 +112,8 @@ public sealed class SpellOnAttack : PassiveAbility, IAppliesEffectOnDamage
     {
       if (_targetCooldowns.TryGetValue(targetId, out var activeTimer))
       {
-        PauseTimer(activeTimer);
-        DestroyTimer(activeTimer);
+        activeTimer.Pause();
+        activeTimer.Dispose();
         _targetCooldowns.Remove(targetId);
       }
     });
@@ -122,6 +122,6 @@ public sealed class SpellOnAttack : PassiveAbility, IAppliesEffectOnDamage
   private void DoSpellOnTarget(unit caster, unit target) =>
       DummyCasterManager.GetGlobalDummyCaster().CastUnit(
           caster, DummyAbilityId, DummyOrderId,
-          GetUnitAbilityLevel(caster, AbilityTypeId),
+          caster.GetAbilityLevel(AbilityTypeId),
           target, DummyCastOriginType.Caster);
 }

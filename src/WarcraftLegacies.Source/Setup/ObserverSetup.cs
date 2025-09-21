@@ -15,10 +15,9 @@ public static class ObserverSetup
   {
     foreach (var observer in observers)
     {
-      FogModifierStart(CreateFogModifierRect(observer, FOG_OF_WAR_VISIBLE,
-        Rectangle.WorldBounds.Rect, false, false));
-      RemovePlayer(observer, PLAYER_GAME_RESULT_DEFEAT);
-      SetPlayerState(observer, PLAYER_STATE_OBSERVER, 1);
+      Rectangle.WorldBounds.Rect.AddFogModifier(observer, fogstate.Visible, false, false).Start();
+      observer.Remove(playergameresult.Defeat);
+      observer.SetState(playerstate.Observer, 1);
     }
   }
 }

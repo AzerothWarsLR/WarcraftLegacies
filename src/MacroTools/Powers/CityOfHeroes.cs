@@ -2,6 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Setup;
+using WCSharp.Api.Enums;
 using WCSharp.Effects;
 using WCSharp.Events;
 
@@ -41,33 +42,33 @@ public sealed class CityOfHeroes : Power
 
   /// <inheritdoc />
   public override void OnAdd(player whichPlayer) =>
-    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerFinishesTraining, OnTrainUnit, GetPlayerId(whichPlayer));
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerFinishesTraining, OnTrainUnit, whichPlayer.Id);
 
   /// <inheritdoc />
   public override void OnRemove(player whichPlayer) =>
-    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerFinishesTraining, OnTrainUnit, GetPlayerId(whichPlayer));
+    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerFinishesTraining, OnTrainUnit, whichPlayer.Id);
 
   private void Heroize(unit whichUnit)
   {
-    if (IsUnitType(whichUnit, UNIT_TYPE_HERO) || IsUnitType(whichUnit, UNIT_TYPE_PEON) || !Filter(whichUnit))
+    if (whichUnit.IsUnitType(unittype.Hero) || whichUnit.IsUnitType(unittype.Peon) || !Filter(whichUnit))
     {
       return;
     }
 
-    EffectSystem.Add(AddSpecialEffect(@"Abilities\Spells\Other\Levelup\Levelupcaster.mdx", GetUnitX(whichUnit), GetUnitY(whichUnit)), 1);
+    EffectSystem.Add(effect.Create(@"Abilities\Spells\Other\Levelup\Levelupcaster.mdx", whichUnit.X, whichUnit.Y), 1);
 
     whichUnit.MultiplyBaseDamage(_statMultiplier, 0);
     whichUnit.MultiplyBaseDamage(_statMultiplier, 1);
     whichUnit.MultiplyMaxHitpoints(_statMultiplier);
     whichUnit.MultiplyMaxMana(_statMultiplier);
-    UnitRemoveAbility(whichUnit, FourCC("Aihn"));
-    UnitAddAbility(whichUnit, HeroGlowAbilityTypeId);
-    UnitAddAbility(whichUnit, FourCC("AInv"));
-    BlzSetUnitIntegerField(whichUnit, UNIT_IF_DEFENSE_TYPE, 5);
+    whichUnit.RemoveAbility(FourCC("Aihn"));
+    whichUnit.AddAbility(HeroGlowAbilityTypeId);
+    whichUnit.AddAbility(FourCC("AInv"));
+    whichUnit.DefenseType = DefenseType.Hero;
 
-    if (BlzGetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0) != 3)
+    if (whichUnit.AttackAttackType1 != AttackType.Siege)
     {
-      BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0, 6);
+      whichUnit.AttackAttackType1 = AttackType.Hero;
     }
   }
 
@@ -78,6 +79,6 @@ public sealed class CityOfHeroes : Power
       return;
     }
 
-    Heroize(GetTrainedUnit());
+    Heroize(@event.TrainedUnit);
   }
 }

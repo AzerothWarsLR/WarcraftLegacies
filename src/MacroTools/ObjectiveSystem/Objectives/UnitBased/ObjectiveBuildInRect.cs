@@ -46,7 +46,7 @@ public sealed class ObjectiveBuildInRect : Objective
 
     PlayerUnitEvents.Register(UnitTypeEvent.FinishesConstruction, () =>
     {
-      if (!targetRect.Contains(GetTriggerUnit().GetPosition()))
+      if (!targetRect.Contains(@event.Unit.GetPosition()))
       {
         return;
       }

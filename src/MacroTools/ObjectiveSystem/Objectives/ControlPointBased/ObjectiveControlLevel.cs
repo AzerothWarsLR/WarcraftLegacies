@@ -22,7 +22,7 @@ public sealed class ObjectiveControlLevel : Objective
     _requiredLevel = requiredLevel;
     TargetWidget = _target.Unit;
     DisplaysPosition = true;
-    Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
+    Position = new(_target.Unit.X, _target.Unit.Y);
   }
 
   public override void OnAdd(FactionSystem.Faction whichFaction)

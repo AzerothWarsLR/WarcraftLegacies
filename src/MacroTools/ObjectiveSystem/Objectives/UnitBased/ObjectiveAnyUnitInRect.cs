@@ -29,11 +29,11 @@ public sealed class ObjectiveAnyUnitInRect : Objective, IHasCompletingUnit
     DisplaysPosition = true;
     PingPath = "MinimapQuestTurnIn";
 
-    var enterTrigger = CreateTrigger();
-    TriggerRegisterEnterRegion(enterTrigger, targetRect.Region, null);
-    TriggerAddAction(enterTrigger, () =>
+    var enterTrigger = trigger.Create();
+    enterTrigger.RegisterEnterRegion(targetRect.Region, null);
+    enterTrigger.AddAction(() =>
     {
-      var triggerUnit = GetTriggerUnit();
+      var triggerUnit = @event.Unit;
       if (!IsUnitValid(triggerUnit))
       {
         return;
@@ -42,16 +42,16 @@ public sealed class ObjectiveAnyUnitInRect : Objective, IHasCompletingUnit
       CompletingUnit = triggerUnit;
       Progress = QuestProgress.Complete;
     });
-    var leaveTrigger = CreateTrigger();
-    TriggerRegisterLeaveRegion(leaveTrigger, targetRect.Region, null);
-    TriggerAddAction(leaveTrigger, () =>
+    var leaveTrigger = trigger.Create();
+    leaveTrigger.RegisterLeaveRegion(targetRect.Region, null);
+    leaveTrigger.AddAction(() =>
     {
       if (!IsValidUnitInRect())
       {
         Progress = QuestProgress.Incomplete;
       }
     });
-    Position = new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
+    Position = new(_targetRect.CenterX, _targetRect.CenterY);
   }
 
   /// <inheritdoc />
@@ -60,9 +60,9 @@ public sealed class ObjectiveAnyUnitInRect : Objective, IHasCompletingUnit
   /// <inheritdoc />
   public string CompletingUnitName => CompletingUnit != null ? CompletingUnit.GetProperName() : "an unknown hero";
 
-  private bool IsUnitValid(unit whichUnit) => EligibleFactions.Contains(GetOwningPlayer(whichUnit)) &&
-                                              UnitAlive(whichUnit) &&
-                                              (IsUnitType(whichUnit, UNIT_TYPE_HERO) || !_heroOnly) &&
+  private bool IsUnitValid(unit whichUnit) => EligibleFactions.Contains(whichUnit.Owner) &&
+                                              whichUnit.Alive &&
+                                              (whichUnit.IsUnitType(unittype.Hero) || !_heroOnly) &&
                                               !whichUnit.IsControlPoint() && whichUnit.IsSelectable();
 
   private bool IsValidUnitInRect() => GlobalGroup.EnumUnitsInRect(_targetRect).Any(IsUnitValid);

@@ -15,12 +15,12 @@ public sealed class ObjectiveCapitalDead : Objective
   public ObjectiveCapitalDead(Capital target)
   {
     TargetWidget = target.Unit;
-    Description = $"{GetUnitName(target.Unit)} is destroyed";
+    Description = $"{target.Unit.Name} is destroyed";
     DisplaysPosition = true;
-    var deathTrigger = CreateTrigger();
-    TriggerRegisterUnitEvent(deathTrigger, target.Unit, EVENT_UNIT_DEATH);
-    TriggerAddAction(deathTrigger, () => Progress = QuestProgress.Complete);
+    var deathTrigger = trigger.Create();
+    deathTrigger.RegisterUnitEvent(target.Unit, unitevent.Death);
+    deathTrigger.AddAction(() => Progress = QuestProgress.Complete);
 
-    Position = new(GetUnitX(target.Unit), GetUnitY(target.Unit));
+    Position = new(target.Unit.X, target.Unit.Y);
   }
 }

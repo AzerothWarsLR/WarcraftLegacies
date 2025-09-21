@@ -28,8 +28,8 @@ public sealed class QuestYoggSaron : QuestData
   {
     _yoggsaron = yoggsaron;
     yoggsaronPrison.MakeCapturable();
-    SetUnitOwner(yoggsaronPrison, Player(PLAYER_NEUTRAL_PASSIVE), true);
-    SetUnitInvulnerable(yoggsaronPrison, true);
+    yoggsaronPrison.SetOwner(player.NeutralPassive, true);
+    yoggsaronPrison.IsInvulnerable = true;
     _yoggsaronPrison = yoggsaronPrison;
 
     _heroInRectObjective =
@@ -49,21 +49,21 @@ public sealed class QuestYoggSaron : QuestData
   protected override void OnComplete(Faction completingFaction)
   {
     var newOwner = _heroInRectObjective.CompletingUnit == null
-      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
-      : GetOwningPlayer(_heroInRectObjective.CompletingUnit);
+      ? player.NeutralAggressive
+      : _heroInRectObjective.CompletingUnit.Owner;
 
-    SetUnitOwner(_yoggsaronPrison, newOwner, true);
-    SetUnitInvulnerable(_yoggsaronPrison, false);
+    _yoggsaronPrison.SetOwner(newOwner, true);
+    _yoggsaronPrison.IsInvulnerable = false;
   }
 
   private void OnCastSummonSpell()
   {
     var yoggsaronSummonPoint = new Point(3995, 23488);
-    _yoggsaron.ForceCreate(Player(PLAYER_NEUTRAL_AGGRESSIVE), yoggsaronSummonPoint, 320);
-    var effect = AddSpecialEffect(@"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl", yoggsaronSummonPoint.X, yoggsaronSummonPoint.Y);
-    BlzSetSpecialEffectScale(effect, 2);
+    _yoggsaron.ForceCreate(player.NeutralAggressive, yoggsaronSummonPoint, 320);
+    effect effect = effect.Create(@"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl", yoggsaronSummonPoint.X, yoggsaronSummonPoint.Y);
+    effect.Scale = 2;
     EffectSystem.Add(effect, 1);
-    KillUnit(_yoggsaronPrison);
+    _yoggsaronPrison.Kill();
 
     foreach (var player in Util.EnumeratePlayers())
     {

@@ -85,8 +85,8 @@ public sealed class OilPower : Power
     _oilIncomePeriodicAction = new OilIncomePeriodicAction(this);
     _oilIncomePeriodicTrigger.Add(_oilIncomePeriodicAction);
 
-    _oilTimer = CreateTimer();
-    TimerStart(_oilTimer, 150, true, GenerateRandomOilPool);
+    _oilTimer = timer.Create();
+    _oilTimer.Start(150, true, GenerateRandomOilPool);
 
     foreach (var position in ForcedStartingOilPoolSpawnLocations)
     {
@@ -112,7 +112,7 @@ public sealed class OilPower : Power
     _owners.Remove(whichPlayer);
     if (_oilTimer != null)
     {
-      DestroyTimer(_oilTimer);
+      _oilTimer.Dispose();
     }
   }
 
@@ -184,6 +184,6 @@ public sealed class OilPower : Power
   }
 
   private bool IsPointValidForOilPool(Point whichPoint) =>
-    whichPoint.IsPathable(PATHING_TYPE_FLOATABILITY) && !whichPoint.IsPathable(PATHING_TYPE_WALKABILITY) &&
+    whichPoint.IsPathable(pathingtype.Floatability) && !whichPoint.IsPathable(pathingtype.Walkability) &&
     whichPoint.TerrainType() == FourCC("Gsqd") && !GetOilPoolsInRadius(whichPoint, OilPoolBorderDistance).Any();
 }

@@ -26,7 +26,7 @@ public sealed class Scourge : Faction
   /// <inheritdoc />
 
   public Scourge(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
-    : base("Scourge", PLAYER_COLOR_PURPLE, @"ReplaceableTextures\CommandButtons\BTNRevenant.blp")
+    : base("Scourge", playercolor.Purple, @"ReplaceableTextures\CommandButtons\BTNRevenant.blp")
   {
     TraditionalTeam = TeamSetup.Legion;
     _preplacedUnitSystem = preplacedUnitSystem;

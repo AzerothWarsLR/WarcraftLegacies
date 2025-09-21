@@ -39,19 +39,19 @@ public sealed class OilPool : Hazard
     position.Y)
   {
     OilPower = oilPower;
-    _effectOil = AddSpecialEffect(owner == GetLocalPlayer() ? effectPath : "", position.X, position.Y);
-    BlzSetSpecialEffectScale(_effectOil, 2);
-    _effectCircle = AddSpecialEffect(owner == GetLocalPlayer() ? @"buildings\other\CircleOfPower\CircleOfPower" : "", position.X, position.Y);
-    BlzSetSpecialEffectScale(_effectCircle, 2);
-    BlzSetSpecialEffectHeight(_effectCircle, Libraries.Environment.GetPositionZ(position));
-    BlzSetSpecialEffectColorByPlayer(_effectCircle, Player(20));
+    _effectOil = effect.Create(owner == player.LocalPlayer ? effectPath : "", position.X, position.Y);
+    _effectOil.Scale = 2;
+    _effectCircle = effect.Create(owner == player.LocalPlayer ? @"buildings\other\CircleOfPower\CircleOfPower" : "", position.X, position.Y);
+    _effectCircle.Scale = 2;
+    _effectCircle.SetHeight(Libraries.Environment.GetPositionZ(position));
+    _effectCircle.SetColor(player.Create(20));
   }
 
   /// <inheritdoc />
   protected override void OnDispose()
   {
-    DestroyEffect(_effectOil);
-    DestroyEffect(_effectCircle);
+    _effectOil.Dispose();
+    _effectCircle.Dispose();
     Disposed?.Invoke(this, this);
   }
 }

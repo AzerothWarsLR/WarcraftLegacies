@@ -30,7 +30,7 @@ public sealed class CheatFaction : Command
       return $"There is no registered {nameof(Faction)} with the name {parameters[0]}.";
     }
 
-    PlayerData.ByHandle(GetTriggerPlayer()).Faction = f;
+    PlayerData.ByHandle(@event.Player).Faction = f;
     return $"Successfully changed faction to {f.Name}.";
   }
 }

@@ -33,11 +33,11 @@ public sealed class FactionMultiboard
 
   private FactionMultiboard(int columnCount, int rowCount, string title)
   {
-    _multiboard = CreateMultiboard();
-    MultiboardSetRowCount(_multiboard, rowCount);
-    MultiboardSetColumnCount(_multiboard, columnCount);
-    MultiboardSetTitleText(_multiboard, title);
-    MultiboardDisplay(_multiboard, true);
+    _multiboard = multiboard.Create();
+    _multiboard.Rows = rowCount;
+    _multiboard.Columns = columnCount;
+    _multiboard.Title = title;
+    _multiboard.IsDisplayed = true;
     Render();
   }
 
@@ -53,9 +53,8 @@ public sealed class FactionMultiboard
       throw new SystemAlreadyInitializedException(nameof(FactionMultiboard));
     }
 
-    var timer = CreateTimer();
-    TimerStart(timer, 2, false, () => { Instance = new FactionMultiboard(ColumnCount, 3, Title); }
-    );
+    timer timer = timer.Create();
+    timer.Start(2, false, () => { Instance = new FactionMultiboard(ColumnCount, 3, Title); });
 
     PlayerData.FactionChange += (_, _) => { Instance?.Render(); };
     FactionManager.AnyFactionNameChanged += OnFactionAnyFactionNameChanged;
@@ -84,48 +83,47 @@ public sealed class FactionMultiboard
     }
 
     var row = _rowsByFaction[faction];
-    var factionMbi = MultiboardGetItem(_multiboard, row, ColumnFaction);
-    var cpMbi = MultiboardGetItem(_multiboard, row, ColumnCp);
-    var incomeMbi = MultiboardGetItem(_multiboard, row, ColumnIncome);
-    MultiboardSetItemValue(factionMbi, faction.ColoredName);
-    MultiboardSetItemIcon(factionMbi, faction.Icon);
-    MultiboardSetItemValue(cpMbi, faction.Player?.GetControlPointCount().ToString());
+    var factionMbi = _multiboard.GetItem(row, ColumnFaction);
+    var cpMbi = _multiboard.GetItem(row, ColumnCp);
+    var incomeMbi = _multiboard.GetItem(row, ColumnIncome);
+    factionMbi.SetText(faction.ColoredName);
+    factionMbi.SetIcon(faction.Icon);
+    cpMbi.SetText(faction.Player?.GetControlPointCount().ToString());
     var income = R2I(faction.Player?.GetTotalIncome() ?? 0);
     var incomePrefix = faction.Player?.GetBonusIncome() > 0 ? "|cffffcc00" : "";
-    MultiboardSetItemValue(incomeMbi, income <= 999 ? $"{incomePrefix}{income}" : $"{incomePrefix}BIG");
-    MultiboardSetItemWidth(factionMbi, WidthFaction);
-    MultiboardSetItemWidth(cpMbi, WidthCp);
-    MultiboardSetItemWidth(incomeMbi, WidthIncome);
-    MultiboardSetItemStyle(factionMbi, true, true);
-    MultiboardSetItemStyle(cpMbi, true, false);
-    MultiboardSetItemStyle(incomeMbi, true, false);
+    incomeMbi.SetText(income <= 999 ? $"{incomePrefix}{income}" : $"{incomePrefix}BIG");
+    factionMbi.SetWidth(WidthFaction);
+    cpMbi.SetWidth(WidthCp);
+    incomeMbi.SetWidth(WidthIncome);
+    factionMbi.SetVisibility(true, true);
+    cpMbi.SetVisibility(true, false);
+    incomeMbi.SetVisibility(true, false);
   }
 
   private void UpdateTeamRow(Team team)
   {
     var row = _rowsByTeam[team];
-    var mbi = MultiboardGetItem(_multiboard, row, ColumnTeam);
-    MultiboardSetItemValue(mbi,
-      $"---{team.Name}{SubString("-----------------------------------------", 0, 19 - StringLength(team.Name))}");
-    MultiboardSetItemWidth(mbi, WidthTeam);
-    MultiboardSetItemStyle(mbi, true, false);
-    MultiboardSetItemStyle(MultiboardGetItem(_multiboard, row, ColumnCp), false, false);
-    MultiboardSetItemStyle(MultiboardGetItem(_multiboard, row, ColumnIncome), false, false);
+    var mbi = _multiboard.GetItem(row, ColumnTeam);
+    mbi.SetText($"---{team.Name}{SubString("-----------------------------------------", 0, 19 - StringLength(team.Name))}");
+    mbi.SetWidth(WidthTeam);
+    mbi.SetVisibility(true, false);
+    _multiboard.GetItem(row, ColumnCp).SetVisibility(false, false);
+    _multiboard.GetItem(row, ColumnIncome).SetVisibility(false, false);
   }
 
   private void UpdateHeaderRow()
   {
-    var factionMbi = MultiboardGetItem(_multiboard, 0, ColumnFaction);
-    var cpMbi = MultiboardGetItem(_multiboard, 0, ColumnCp);
-    var incomeMbi = MultiboardGetItem(_multiboard, 0, ColumnIncome);
-    MultiboardSetItemStyle(factionMbi, false, false);
-    MultiboardSetItemStyle(cpMbi, false, true);
-    MultiboardSetItemStyle(incomeMbi, false, true);
-    MultiboardSetItemIcon(cpMbi, "ReplaceableTextures\\CommandButtons\\BTNCOP.blp");
-    MultiboardSetItemIcon(incomeMbi, "ReplaceableTextures\\CommandButtons\\BTNMGexchange.blp");
-    MultiboardSetItemWidth(factionMbi, WidthFaction);
-    MultiboardSetItemWidth(cpMbi, WidthCp);
-    MultiboardSetItemWidth(incomeMbi, WidthIncome);
+    var factionMbi = _multiboard.GetItem(0, ColumnFaction);
+    var cpMbi = _multiboard.GetItem(0, ColumnCp);
+    var incomeMbi = _multiboard.GetItem(0, ColumnIncome);
+    factionMbi.SetVisibility(false, false);
+    cpMbi.SetVisibility(false, true);
+    incomeMbi.SetVisibility(false, true);
+    cpMbi.SetIcon("ReplaceableTextures\\CommandButtons\\BTNCOP.blp");
+    incomeMbi.SetIcon("ReplaceableTextures\\CommandButtons\\BTNMGexchange.blp");
+    factionMbi.SetWidth(WidthFaction);
+    cpMbi.SetWidth(WidthCp);
+    incomeMbi.SetWidth(WidthIncome);
   }
 
   //Run when the number of Teams or Factions have changed, or a Faction has changed its Team
@@ -134,13 +132,13 @@ public sealed class FactionMultiboard
     _rowsByFaction.Clear();
     _rowsByTeam.Clear();
     var row = 0;
-    DestroyMultiboard(_multiboard);
-    _multiboard = CreateMultiboard();
-    MultiboardSetColumnCount(_multiboard, ColumnCount);
-    MultiboardSetRowCount(_multiboard, 3);
-    MultiboardSetTitleText(_multiboard, Title);
-    MultiboardDisplay(_multiboard, true);
-    MultiboardSetRowCount(_multiboard, 30);
+    _multiboard.Dispose();
+    _multiboard = multiboard.Create();
+    _multiboard.Columns = ColumnCount;
+    _multiboard.Rows = 3;
+    _multiboard.Title = Title;
+    _multiboard.IsDisplayed = true;
+    _multiboard.Rows = 30;
     UpdateHeaderRow();
     row += 1;
     foreach (var team in FactionManager.GetAllTeams())
@@ -163,7 +161,7 @@ public sealed class FactionMultiboard
         }
       }
     }
-    MultiboardSetRowCount(_multiboard, row);
+    _multiboard.Rows = row;
   }
 
   private static void RegisterFaction(Faction faction)

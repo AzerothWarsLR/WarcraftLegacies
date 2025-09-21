@@ -39,7 +39,7 @@ public sealed class QuestBlackrookHold : QuestData
   /// <inheritdoc />
   protected override void OnComplete(Faction whichFaction)
   {
-    _blackrookHold.Unit?.Rescue(whichFaction.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE));
+    _blackrookHold.Unit?.Rescue(whichFaction.Player ?? player.NeutralAggressive);
   }
 
   /// <inheritdoc />
@@ -47,7 +47,7 @@ public sealed class QuestBlackrookHold : QuestData
   {
     if (_blackrookHold.Unit != null)
     {
-      SetUnitInvulnerable(_blackrookHold.Unit, true);
+      _blackrookHold.Unit.IsInvulnerable = true;
     }
   }
 }

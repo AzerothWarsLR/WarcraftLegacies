@@ -35,34 +35,34 @@ public sealed class ShaladrassilsBlessing : Power
     _summonedUnitCount = summonedUnitCount;
     _manaCost = manaCost;
     Description =
-      $"When an undamaged Control Point you control takes damage and you control {GetUnitName(shaladrassil)}, consume {_manaCost} mana from {GetUnitName(shaladrassil)} to summon {_summonedUnitCount} {GetObjectName(summonedUnitTypeId)}s to defend the Control Point for {_duration} seconds.";
-    Name = $"{GetUnitName(shaladrassil)}'s Blessing";
+      $"When an undamaged Control Point you control takes damage and you control {shaladrassil.Name}, consume {_manaCost} mana from {shaladrassil.Name} to summon {_summonedUnitCount} {GetObjectName(summonedUnitTypeId)}s to defend the Control Point for {_duration} seconds.";
+    Name = $"{shaladrassil.Name}'s Blessing";
   }
 
   /// <inheritdoc />
   public override void OnAdd(player whichPlayer)
   {
-    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerTakesDamage, OnPlayerTakesDamage, GetPlayerId(whichPlayer));
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerTakesDamage, OnPlayerTakesDamage, whichPlayer.Id);
   }
 
   /// <inheritdoc />
   public override void OnRemove(player whichPlayer)
   {
-    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerTakesDamage, OnPlayerTakesDamage, GetPlayerId(whichPlayer));
+    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerTakesDamage, OnPlayerTakesDamage, whichPlayer.Id);
   }
 
   private void OnPlayerTakesDamage()
   {
-    var owner = GetOwningPlayer(GetTriggerUnit());
-    if (!GetTriggerUnit().IsControlPoint()
-        || GetOwningPlayer(_shaladrassil) != owner
-        || !(GetUnitState(_shaladrassil, UNIT_STATE_MANA) >= _manaCost)
-        || GetTriggerUnit().GetLifePercent() < 100)
+    var owner = @event.Unit.Owner;
+    if (!@event.Unit.IsControlPoint()
+        || _shaladrassil.Owner != owner
+        || !(_shaladrassil.Mana >= _manaCost)
+        || @event.Unit.GetLifePercent() < 100)
     {
       return;
     }
 
-    if (SummonTreants(owner, GetTriggerUnit().GetPosition()))
+    if (SummonTreants(owner, @event.Unit.GetPosition()))
     {
       _shaladrassil.RestoreMana(-_manaCost);
     }
@@ -70,19 +70,18 @@ public sealed class ShaladrassilsBlessing : Power
 
   private bool SummonTreants(player owningPlayer, Point point)
   {
-    if (IsTerrainPathable(point.X, point.Y, PATHING_TYPE_WALKABILITY))
+    if (pathingtype.Walkability.GetPathable(point.X, point.Y))
     {
       return false;
     }
 
     for (var i = 0; i < _summonedUnitCount; i++)
     {
-      var treant = CreateUnit(owningPlayer, _summonedUnitTypeId, point.X, point.Y, 270);
+      var treant = unit.Create(owningPlayer, _summonedUnitTypeId, point.X, point.Y, 270);
       treant.SetTimedLife(_duration);
-      UnitAddType(treant, UNIT_TYPE_SUMMONED);
-      SetUnitExploded(treant, true);
-      EffectSystem.Add(AddSpecialEffect(@"Objects\Spawnmodels\NightElf\EntBirthTarget\EntBirthTarget.mdl", treant.GetPosition().X,
-        treant.GetPosition().Y));
+      treant.AddType(unittype.Summoned);
+      treant.SetExploded(true);
+      EffectSystem.Add(effect.Create(@"Objects\Spawnmodels\NightElf\EntBirthTarget\EntBirthTarget.mdl", treant.GetPosition().X, treant.GetPosition().Y));
     }
 
     return true;

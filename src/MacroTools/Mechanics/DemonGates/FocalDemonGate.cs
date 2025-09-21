@@ -19,7 +19,7 @@ public sealed class FocalDemonGate : PassiveAbility, IEffectOnConstruction
   /// <inheritdoc />
   public void OnConstruction()
   {
-    var buff = new FocalDemonGateBuff(GetTriggerUnit());
+    var buff = new FocalDemonGateBuff(@event.Unit);
     BuffSystem.Add(buff);
   }
 }

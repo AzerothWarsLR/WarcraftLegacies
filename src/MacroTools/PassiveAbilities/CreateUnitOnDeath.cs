@@ -42,8 +42,8 @@ public sealed class CreateUnitOnDeath : PassiveAbility, IEffectOnDeath
   /// <inheritdoc />
   public void OnDeath()
   {
-    var triggerUnit = GetTriggerUnit();
-    if (GetPlayerTechCount(GetOwningPlayer(triggerUnit), RequiredResearch, false) == 0 || IsUnitType(triggerUnit, UNIT_TYPE_SUMMONED))
+    var triggerUnit = @event.Unit;
+    if (triggerUnit.Owner.GetTechResearched(RequiredResearch, false) == 0 || triggerUnit.IsUnitType(unittype.Summoned))
     {
       return;
     }
@@ -51,11 +51,11 @@ public sealed class CreateUnitOnDeath : PassiveAbility, IEffectOnDeath
     var pos = triggerUnit.GetPosition();
     for (var i = 0; i < CreateCount; i++)
     {
-      CreateUnit(GetOwningPlayer(triggerUnit), CreateUnitTypeId, pos.X, pos.Y, GetUnitFacing(triggerUnit))
+      unit.Create(triggerUnit.Owner, CreateUnitTypeId, pos.X, pos.Y, triggerUnit.Facing)
         .SetTimedLife(Duration);
     }
 
-    EffectSystem.Add(AddSpecialEffect(SpecialEffectPath, pos.X, pos.Y), 1);
-    RemoveUnit(triggerUnit);
+    EffectSystem.Add(effect.Create(SpecialEffectPath, pos.X, pos.Y), 1);
+    triggerUnit.Dispose();
   }
 }

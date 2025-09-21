@@ -13,7 +13,7 @@ public sealed class AddSpellOnCastBuff : BoundBuff
     {
       foreach (var ability in AbilitiesToAdd)
       {
-        UnitAddAbility(Caster, ability);
+        Caster.AddAbility(ability);
 
       }
     }
@@ -25,7 +25,7 @@ public sealed class AddSpellOnCastBuff : BoundBuff
     {
       foreach (var ability in AbilitiesToAdd)
       {
-        UnitRemoveAbility(Caster, ability);
+        Caster.RemoveAbility(ability);
       }
     }
   }

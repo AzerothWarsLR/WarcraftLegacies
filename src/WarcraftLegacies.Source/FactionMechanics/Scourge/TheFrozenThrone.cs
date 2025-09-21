@@ -31,9 +31,9 @@ public static class TheFrozenThrone
   {
     _frozenThrone = frozenThrone;
 
-    var ownerChangeTrigger = CreateTrigger();
-    TriggerRegisterUnitEvent(ownerChangeTrigger, frozenThrone.Unit!, EVENT_UNIT_CHANGE_OWNER);
-    TriggerAddAction(ownerChangeTrigger, OnFrozenThroneChangeOwner);
+    var ownerChangeTrigger = trigger.Create();
+    ownerChangeTrigger.RegisterUnitEvent(frozenThrone.Unit!, unitevent.ChangeOwner);
+    ownerChangeTrigger.AddAction(OnFrozenThroneChangeOwner);
 
     lichKing.PermanentlyDied += OnLichKingDied;
 
@@ -67,8 +67,8 @@ public static class TheFrozenThrone
     RemoveAbilities();
     if (_frozenThrone.Unit != null)
     {
-      BlzSetUnitName(_frozenThrone.Unit, "Frozen Throne (Empty)");
-      BlzSetUnitSkin(_frozenThrone.Unit, UNIT_ZBFT_FROZEN_THRONE_EMPTY);
+      _frozenThrone.Unit.Name = "Frozen Throne (Empty)";
+      _frozenThrone.Unit.Skin = UNIT_ZBFT_FROZEN_THRONE_EMPTY;
     }
 
     State = FrozenThroneState.Empty;
@@ -80,12 +80,12 @@ public static class TheFrozenThrone
     {
       if (_frozenThrone.ProtectorCount == 0)
       {
-        SetUnitInvulnerable(_frozenThrone.Unit, false);
+        _frozenThrone.Unit.IsInvulnerable = false;
       }
 
-      if (_frozenThrone.OwningPlayer == Player(PLAYER_NEUTRAL_PASSIVE))
+      if (_frozenThrone.OwningPlayer == player.NeutralPassive)
       {
-        SetUnitOwner(_frozenThrone.Unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
+        _frozenThrone.Unit.SetOwner(player.NeutralAggressive, true);
       }
     }
 
@@ -108,15 +108,14 @@ public static class TheFrozenThrone
     RemoveAbilities();
     if (_frozenThrone.Unit != null)
     {
-      BlzSetUnitName(_frozenThrone.Unit, "Frozen Throne (Ruptured)");
-      SetUnitOwner(_frozenThrone.Unit, Player(PLAYER_NEUTRAL_PASSIVE), true);
-      SetUnitInvulnerable(_frozenThrone.Unit, true);
+      _frozenThrone.Unit.Name = "Frozen Throne (Ruptured)";
+      _frozenThrone.Unit.SetOwner(player.NeutralPassive, true);
+      _frozenThrone.Unit.IsInvulnerable = true;
     }
 
     foreach (var player in Util.EnumeratePlayers())
     {
-      DisplayTextToPlayer(player, 0, 0,
-        "\n|cffffcc00CAPITAL DAMAGED|r\nThe Frozen Throne, once thought to be an indomitable bastion of death, has been ruptured. Ner'zhul's consciousness recedes within, retreating desperately to protect what remains of Icecrown Citadel.");
+      player.DisplayTextTo("\n|cffffcc00CAPITAL DAMAGED|r\nThe Frozen Throne, once thought to be an indomitable bastion of death, has been ruptured. Ner'zhul's consciousness recedes within, retreating desperately to protect what remains of Icecrown Citadel.", 0, 0);
     }
 
     State = FrozenThroneState.Ruptured;
@@ -145,16 +144,16 @@ public static class TheFrozenThrone
       return;
     }
 
-    UnitRemoveAbility(_frozenThrone.Unit, ABILITY_A0W8_RECALL_FROZEN_THRONE);
-    UnitRemoveAbility(_frozenThrone.Unit, ABILITY_A0L3_ANIMATE_DEAD_THE_FROZEN_THRONE);
-    UnitRemoveAbility(_frozenThrone.Unit, ABILITY_A001_FROST_NOVA_THE_FROZEN_THRONE);
-    BlzSetUnitMaxMana(_frozenThrone.Unit, 0);
-    BlzSetUnitName(_frozenThrone.Unit, "Icecrown Citadel");
+    _frozenThrone.Unit.RemoveAbility(ABILITY_A0W8_RECALL_FROZEN_THRONE);
+    _frozenThrone.Unit.RemoveAbility(ABILITY_A0L3_ANIMATE_DEAD_THE_FROZEN_THRONE);
+    _frozenThrone.Unit.RemoveAbility(ABILITY_A001_FROST_NOVA_THE_FROZEN_THRONE);
+    _frozenThrone.Unit.MaxMana = 0;
+    _frozenThrone.Unit.Name = "Icecrown Citadel";
   }
 
   private static void OnFrozenThroneChangeOwner()
   {
-    DestroyTrigger(GetTriggeringTrigger());
+    @event.Trigger.Dispose();
     Fracture();
   }
 

@@ -22,7 +22,7 @@ public sealed class Frostwolf : Faction
 
   /// <inheritdoc />
   public Frostwolf(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup,
-    ArtifactSetup artifactSetup) : base("Frostwolf", PLAYER_COLOR_RED, @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
+    ArtifactSetup artifactSetup) : base("Frostwolf", playercolor.Red, @"ReplaceableTextures\CommandButtons\BTNThrall.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;
     _preplacedUnitSystem = preplacedUnitSystem;

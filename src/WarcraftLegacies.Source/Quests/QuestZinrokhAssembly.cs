@@ -49,7 +49,7 @@ public sealed class QuestZinrokhAssembly : QuestData
       ArtifactManager.Destroy(artifact);
     }
 
-    var zinrokh = new Artifact(CreateItem(ITEM_I016_ZIN_ROKH_DESTROYER_OF_WORLDS, 0, 0))
+    var zinrokh = new Artifact(item.Create(ITEM_I016_ZIN_ROKH_DESTROYER_OF_WORLDS, 0, 0))
     {
       TitanforgedAbility = ABILITY_A0VM_TITANFORGED_9_STRENGTH
     };

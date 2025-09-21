@@ -28,7 +28,7 @@ public sealed class Ahnqiraj : Faction
 
   /// <inheritdoc />
   public Ahnqiraj(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Ahn'qiraj",
-    PLAYER_COLOR_WHEAT, @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
+    playercolor.Wheat, @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
   {
     _allLegendSetup = allLegendSetup;
     _gateAhnQiraj = preplacedUnitSystem.GetUnit(UNIT_H02U_GATES_OF_AHN_QIRAJ_CLOSED);
@@ -133,8 +133,8 @@ public sealed class Ahnqiraj : Faction
       RedirectionPercentage = 0.35f,
       RedirectableAttackTypes = new attacktype[]
       {
-        ATTACK_TYPE_NORMAL,
-        ATTACK_TYPE_MAGIC
+        attacktype.Normal,
+        attacktype.Magic
       },
       RequiredResearch = UPGRADE_ZBML_SPELL_CONDUCTION_C_THUN,
       Radius = 500

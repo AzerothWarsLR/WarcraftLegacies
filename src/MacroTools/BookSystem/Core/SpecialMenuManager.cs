@@ -20,14 +20,14 @@ public static class SpecialMenuManager
   public static void Register(ISpecialMenu specialMenu, player? whichPlayer = null)
   {
     _books.Add(specialMenu);
-    specialMenu.LauncherButton = new Button("SpectrumMenuButtonMenu", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0))
+    specialMenu.LauncherButton = new Button("SpectrumMenuButtonMenu", originframetype.GameUI.GetOriginFrame(0))
     {
-      Width = BlzFrameGetWidth(specialMenu.LauncherParent),
-      Height = BlzFrameGetHeight(specialMenu.LauncherParent),
+      Width = specialMenu.LauncherParent.Width,
+      Height = specialMenu.LauncherParent.Height,
       Text = specialMenu.Title,
-      Visible = whichPlayer == null || whichPlayer == GetLocalPlayer()
+      Visible = whichPlayer == null || whichPlayer == player.LocalPlayer
     };
-    specialMenu.LauncherButton.SetPoint(FRAMEPOINT_TOP, specialMenu.LauncherParent, FRAMEPOINT_BOTTOM, 0, 0);
+    specialMenu.LauncherButton.SetPoint(framepointtype.Top, specialMenu.LauncherParent, framepointtype.Bottom, 0, 0);
     specialMenu.LauncherButton.OnClick = specialMenu.Open;
 
   }

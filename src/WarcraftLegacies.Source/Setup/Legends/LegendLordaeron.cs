@@ -34,9 +34,9 @@ public sealed class LegendLordaeron
     {
       Unit = preplacedUnitSystem.GetUnit(UNIT_NEMI_KING_TERENAS_MENETHIL_LORDAERON)
     };
-    var deathTrigger = CreateTrigger();
-    TriggerRegisterUnitEvent(deathTrigger, Terenas.Unit, EVENT_UNIT_DEATH);
-    TriggerAddAction(deathTrigger, () =>
+    var deathTrigger = trigger.Create();
+    deathTrigger.RegisterUnitEvent(Terenas.Unit, unitevent.Death);
+    deathTrigger.AddAction(() =>
     {
       if (artifactSetup.CrownOfLordaeron.OwningUnit == Terenas.Unit)
       {
@@ -50,7 +50,7 @@ public sealed class LegendLordaeron
       StartingXp = 2800,
       StartingArtifacts = new List<Artifact>
       {
-        new(CreateItem(ITEM_I012_ASHBRINGER, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+        new(item.Create(ITEM_I012_ASHBRINGER, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
       }
     };
 
@@ -110,14 +110,14 @@ public sealed class LegendLordaeron
       UnitType = UNIT_HUTH_LEADER_OF_THE_SILVER_HAND_LORDAERON,
       DeathMessage =
         "Uther the Lightbringer makes his last stand, perishing in the defense of the light. Lordaeron, and humanity itself, has lost one of its finest exemplars in this dark hour.",
-      PlayerColor = PLAYER_COLOR_LIGHT_BLUE,
+      PlayerColor = playercolor.LightBlue,
       StartingXp = 2800
     };
 
     Arthas = new LegendaryHero("Arthas Menethil")
     {
       UnitType = UNIT_HART_CROWN_PRINCE_OF_LORDAERON_LORDAERON,
-      PlayerColor = PLAYER_COLOR_BLUE,
+      PlayerColor = playercolor.Blue,
     };
 
     Monastery = new Capital

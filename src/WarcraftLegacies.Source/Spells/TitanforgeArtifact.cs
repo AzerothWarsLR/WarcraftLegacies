@@ -24,21 +24,21 @@ public sealed class TitanForgeArtifact : Spell
   {
     try
     {
-      var heldItem = UnitItemInSlot(GetTriggerUnit(), 0);
+      var heldItem = @event.Unit.ItemAtOrDefault(0);
       if (heldItem == null)
       {
-        Refund(GetTriggerPlayer());
+        Refund(@event.Player);
         return;
       }
 
-      var heldArtifact = ArtifactManager.GetFromTypeId(GetItemTypeId(heldItem));
+      var heldArtifact = ArtifactManager.GetFromTypeId(heldItem.TypeId);
       if (heldArtifact != null && !heldArtifact.Titanforged)
       {
         heldArtifact.Titanforge();
         return;
       }
 
-      Refund(GetTriggerPlayer());
+      Refund(@event.Player);
     }
     catch (Exception ex)
     {

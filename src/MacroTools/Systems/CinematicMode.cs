@@ -25,11 +25,11 @@ public static class CinematicMode
   /// <param name="duration">How long cinematic mode should last.</param>
   public static void Setup(float duration)
   {
-    _cinematicTimer = CreateTimer();
-    TimerStart(_cinematicTimer, duration, false, TimerEnd);
+    _cinematicTimer = timer.Create();
+    _cinematicTimer.Start(duration, false, TimerEnd);
 
-    _musicTimer = CreateTimer();
-    TimerStart(_musicTimer, 2.1f, false, PlayFactionMusic);
+    _musicTimer = timer.Create();
+    _musicTimer.Start(2.1f, false, PlayFactionMusic);
 
     FogEnable(false);
     FogMaskEnable(false);
@@ -39,7 +39,7 @@ public static class CinematicMode
 
     foreach (var unit in _pausedUnits)
     {
-      BlzPauseUnitEx(unit, true);
+      unit.SetPausedEx(true);
     }
 
     _state = CinematicState.Active;
@@ -50,7 +50,7 @@ public static class CinematicMode
   /// </summary>
   public static void EndEarly()
   {
-    DestroyTimer(_cinematicTimer);
+    _cinematicTimer.Dispose();
     TimerEnd();
   }
 
@@ -66,7 +66,7 @@ public static class CinematicMode
     }
 
     _pausedUnits?.Add(whichUnit);
-    BlzPauseUnitEx(whichUnit, true);
+    whichUnit.SetPausedEx(true);
   }
 
   private static void TimerEnd()
@@ -80,18 +80,18 @@ public static class CinematicMode
 
     SetMapMusic("music", true, 0);
 
-    VolumeGroupReset();
-    VolumeGroupSetVolume(SOUND_VOLUMEGROUP_AMBIENTSOUNDS, 0.4f);
+    volumegroup.Reset();
+    SOUND_VOLUMEGROUP_AMBIENTSOUNDS.SetVolume(0.4f);
 
-    DestroyTimer(_cinematicTimer);
-    DestroyTimer(_musicTimer);
+    _cinematicTimer.Dispose();
+    _musicTimer.Dispose();
     _state = CinematicState.Finished;
 
     if (_pausedUnits != null)
     {
       foreach (var unit in _pausedUnits)
       {
-        BlzPauseUnitEx(unit, false);
+        unit.SetPausedEx(false);
       }
 
       _pausedUnits.Clear();

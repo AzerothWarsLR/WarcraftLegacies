@@ -19,7 +19,7 @@ public sealed class FelHorde : Faction
   /// <inheritdoc />
 
   public FelHorde(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
-    : base("Fel Horde", PLAYER_COLOR_GREEN, @"ReplaceableTextures\CommandButtons\BTNPitLord.blp")
+    : base("Fel Horde", playercolor.Green, @"ReplaceableTextures\CommandButtons\BTNPitLord.blp")
   {
     TraditionalTeam = TeamSetup.Outland;
     _preplacedUnitSystem = preplacedUnitSystem;

@@ -122,7 +122,7 @@ public sealed class QuestPlague : QuestData
         {
           AttackTarget = new Point(Regions.King_Arthas_crown.Center.X, Regions.King_Arthas_crown.Center.Y)
         })
-      .Run(Player(3));
+      .Run(player.Create(3));
   }
 
 
@@ -142,12 +142,12 @@ public sealed class QuestPlague : QuestData
     };
 
     var villagers = GlobalGroup
-      .EnumUnitsOfPlayer(Player(PLAYER_NEUTRAL_PASSIVE))
-      .Where(x => villagerUnitTypeIds.Contains(GetUnitTypeId(x)));
+      .EnumUnitsOfPlayer(player.NeutralPassive)
+      .Where(x => villagerUnitTypeIds.Contains(x.UnitType));
 
     foreach (var villager in villagers)
     {
-      KillUnit(villager);
+      villager.Kill();
     }
   }
 
@@ -155,18 +155,18 @@ public sealed class QuestPlague : QuestData
   {
     var primaryPlaguePlayer = completingFaction.ScoreStatus != ScoreStatus.Defeated && completingFaction.Player != null
       ? completingFaction.Player
-      : Player(PLAYER_NEUTRAL_AGGRESSIVE);
+      : player.NeutralAggressive;
 
     var secondaryPlaguePlayer = _secondaryPlagueFaction.ScoreStatus != ScoreStatus.Defeated && _secondaryPlagueFaction.Player != null
       ? _secondaryPlagueFaction.Player
-      : Player(PLAYER_NEUTRAL_AGGRESSIVE);
+      : player.NeutralAggressive;
 
     foreach (var plagueRect in _plagueParameters.PlagueRects)
     {
       var position = plagueRect.GetRandomPoint();
       position.RemoveDestructablesInRadius(250f);
 
-      CreateUnit(secondaryPlaguePlayer, UNIT_U00D_LEGION_HERALD_LEGION_WORKER, position.X, position.Y, 0);
+      unit.Create(secondaryPlaguePlayer, UNIT_U00D_LEGION_HERALD_LEGION_WORKER, position.X, position.Y, 0);
 
       var attackTarget = _plagueParameters.AttackTargets
         .OrderBy(x => MathEx.GetDistanceBetweenPoints(position, x))
@@ -177,7 +177,7 @@ public sealed class QuestPlague : QuestData
         foreach (var unit in CreateUnits(primaryPlaguePlayer, parameter.SummonUnitTypeId,
                    position.X, position.Y, 0, parameter.SummonCount))
         {
-          if (!IsUnitType(unit, UNIT_TYPE_PEON))
+          if (!unit.IsUnitType(unittype.Peon))
           {
             unit.IssueOrder(ORDER_ATTACK, attackTarget);
           }

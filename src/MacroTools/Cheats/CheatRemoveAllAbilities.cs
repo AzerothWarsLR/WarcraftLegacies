@@ -28,6 +28,6 @@ public sealed class CheatRemoveAllAbilities : Command
   {
     var firstSelectedUnit = GlobalGroup.EnumSelectedUnits(cheater).First();
     firstSelectedUnit.RemoveAllAbilities(new List<int> { 1096905835, 1097690998, 1112498531 });
-    return $"All abilities removed from {GetUnitName(firstSelectedUnit)}";
+    return $"All abilities removed from {firstSelectedUnit.Name}";
   }
 }

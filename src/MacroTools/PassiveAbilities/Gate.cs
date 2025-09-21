@@ -30,30 +30,30 @@ public sealed class Gate : PassiveAbility, IEffectOnUpgrade, IEffectOnDeath, IEf
   /// <inheritdoc/>
   public void OnDeath()
   {
-    var dyingGate = GetTriggerUnit();
+    var dyingGate = @event.Unit;
     var dyingGatePos = dyingGate.GetPosition();
-    var dyingGateFacing = GetUnitFacing(dyingGate);
-    RemoveUnit(dyingGate);
+    var dyingGateFacing = dyingGate.Facing;
+    dyingGate.Dispose();
     TurnBasedHitpointsManager.UnRegister(dyingGate);
-    var deadGate = CreateUnit(GetOwningPlayer(GetKillingUnit()), _deadId, dyingGatePos.X, dyingGatePos.Y, dyingGateFacing);
-    SetUnitAnimation(deadGate, "death");
+    var deadGate = unit.Create(@event.KillingUnit.Owner, _deadId, dyingGatePos.X, dyingGatePos.Y, dyingGateFacing);
+    deadGate.SetAnimation("death");
   }
 
   /// <inheritdoc/>
   public void OnSpellFinish()
   {
-    if (GetUnitTypeId(GetTriggerUnit()) == _openedId)
+    if (@event.Unit.UnitType == _openedId)
     {
-      SetUnitAnimation(GetTriggerUnit(), "death alternate");
+      @event.Unit.SetAnimation("death alternate");
     }
   }
 
   /// <inheritdoc/>
   public void OnCreated(unit createdUnit)
   {
-    if (GetUnitTypeId(createdUnit) == _openedId)
+    if (createdUnit.UnitType == _openedId)
     {
-      SetUnitAnimation(createdUnit, "death alternate");
+      createdUnit.SetAnimation("death alternate");
     }
 
     TurnBasedHitpointsManager.Register(createdUnit, HitPointPercentagePerTurn);
@@ -61,12 +61,12 @@ public sealed class Gate : PassiveAbility, IEffectOnUpgrade, IEffectOnDeath, IEf
 
   /// <inheritdoc />
   public void OnCancelUpgrade() =>
-    SetUnitAnimation(GetTriggerUnit(), "death");
+    @event.Unit.SetAnimation("death");
 
   /// <inheritdoc />
   public void OnUpgrade()
   {
-    TurnBasedHitpointsManager.UnRegister(GetTriggerUnit());
-    TurnBasedHitpointsManager.Register(GetTriggerUnit(), HitPointPercentagePerTurn);
+    TurnBasedHitpointsManager.UnRegister(@event.Unit);
+    TurnBasedHitpointsManager.Register(@event.Unit, HitPointPercentagePerTurn);
   }
 }

@@ -41,7 +41,7 @@ public sealed class QuestHighBank : QuestData
   protected override void OnFail(Faction completingFaction)
   {
     var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      ? player.NeutralAggressive
       : completingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);
@@ -50,7 +50,7 @@ public sealed class QuestHighBank : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    completingFaction.Player?.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, 225);
+    completingFaction.Player?.AdjustPlayerState(playerstate.ResourceGold, 225);
     completingFaction.Player.RescueGroup(_rescueUnits);
     if (_katherine.Unit != null)
     {

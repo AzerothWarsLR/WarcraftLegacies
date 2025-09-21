@@ -19,18 +19,18 @@ public sealed class ObjectiveUnitReachesFullHealth : Objective
   {
     _objectiveUnit = objectiveUnit;
     TargetWidget = objectiveUnit;
-    var hitPointRequirement = BlzGetUnitMaxHP(objectiveUnit);
-    Description = IsUnitType(objectiveUnit, UNIT_TYPE_STRUCTURE)
-      ? $"Repair {GetUnitName(objectiveUnit)} to {hitPointRequirement} hit points"
-      : $"Bring {GetUnitName(objectiveUnit)} to {hitPointRequirement} hit points";
-    DisplaysPosition = IsUnitType(objectiveUnit, UNIT_TYPE_STRUCTURE);
-    var lifeTrigger = CreateTrigger();
+    var hitPointRequirement = objectiveUnit.MaxLife;
+    Description = objectiveUnit.IsUnitType(unittype.Structure)
+      ? $"Repair {objectiveUnit.Name} to {hitPointRequirement} hit points"
+      : $"Bring {objectiveUnit.Name} to {hitPointRequirement} hit points";
+    DisplaysPosition = objectiveUnit.IsUnitType(unittype.Structure);
+    var lifeTrigger = trigger.Create();
     float limitValue = hitPointRequirement - 1;
-    TriggerRegisterUnitStateEvent(lifeTrigger, objectiveUnit, UNIT_STATE_LIFE, GREATER_THAN, limitValue);
-    TriggerAddAction(lifeTrigger, () =>
+    lifeTrigger.RegisterUnitStateEvent(objectiveUnit, unitstate.Life, limitop.GreaterThan, limitValue);
+    lifeTrigger.AddAction(() =>
     {
       Progress = QuestProgress.Complete;
-      DestroyTrigger(GetTriggeringTrigger());
+      @event.Trigger.Dispose();
     });
 
     Position = _objectiveUnit.GetPosition();
@@ -38,11 +38,11 @@ public sealed class ObjectiveUnitReachesFullHealth : Objective
 
   public override void OnAdd(Faction faction)
   {
-    if (!UnitAlive(_objectiveUnit))
+    if (!_objectiveUnit.Alive)
     {
       Progress = QuestProgress.Failed;
     }
-    else if (GetUnitState(_objectiveUnit, UNIT_STATE_LIFE) == GetUnitState(_objectiveUnit, UNIT_STATE_MAX_LIFE))
+    else if (_objectiveUnit.Life == _objectiveUnit.MaxLife)
     {
       Progress = QuestProgress.Complete;
     }

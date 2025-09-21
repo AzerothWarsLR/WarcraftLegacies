@@ -18,7 +18,7 @@ public static class ShoreManager
   /// </summary>
   public static void Register(Shore shore)
   {
-    if (IsTerrainPathable(shore.Position.X, shore.Position.Y, PATHING_TYPE_WALKABILITY))
+    if (pathingtype.Walkability.GetPathable(shore.Position.X, shore.Position.Y))
     {
       Logger.LogWarning($"Registered a {nameof(Shore)} at unwalkable location {shore.Position.X}, {shore.Position.Y}.");
       PingMinimap(shore.Position.X, shore.Position.Y, 10);

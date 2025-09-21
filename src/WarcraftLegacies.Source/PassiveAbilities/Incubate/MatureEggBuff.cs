@@ -21,14 +21,13 @@ public sealed class MatureEggBuff : PassiveBuff
   /// <inheritdoc />
   public override void OnApply()
   {
-    BlzSetUnitName(Target, "Mature Egg");
-    SetUnitVertexColor(Target, 255, 255, 255, 255);
-    UnitAddAbility(Target,
-      ABILITY_ZBBS_HATCH_INCUBATE);
+    Target.Name = "Mature Egg";
+    Target.SetVertexColor(255, 255, 255, 255);
+    Target.AddAbility(ABILITY_ZBBS_HATCH_INCUBATE);
 
-    var effect = AddSpecialEffect(@"Abilities\Spells\Items\AIem\AIemTarget.mdl", GetUnitX(Target), GetUnitY(Target));
-    BlzSetSpecialEffectColor(effect, 0, 255, 0);
-    BlzSetSpecialEffectScale(effect, 0.5f);
+    effect effect = effect.Create(@"Abilities\Spells\Items\AIem\AIemTarget.mdl", Target.X, Target.Y);
+    effect.SetColor(0, 255, 0);
+    effect.Scale = 0.5f;
     EffectSystem.Add(effect);
   }
 
@@ -41,7 +40,7 @@ public sealed class MatureEggBuff : PassiveBuff
       rallyPoint = Target.GetPosition();
     }
 
-    CreateUnit(GetOwningPlayer(Target), HatchedUnitTypeId, GetUnitX(Target), GetUnitY(Target), 270)
+    unit.Create(Target.Owner, HatchedUnitTypeId, Target.X, Target.Y, 270)
       .IssueOrder("attack", rallyPoint);
   }
 }

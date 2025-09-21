@@ -28,7 +28,7 @@ public sealed class QuestThroneWind : QuestData
     AddObjective(new ObjectiveExpire(660, Title));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
-      filterUnit => GetUnitTypeId(filterUnit) != FourCC("ngme"));
+      filterUnit => filterUnit.UnitType != FourCC("ngme"));
   }
 
   /// <inheritdoc />
@@ -41,7 +41,7 @@ public sealed class QuestThroneWind : QuestData
   protected override void OnFail(Faction completingFaction)
   {
     var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      ? player.NeutralAggressive
       : completingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);

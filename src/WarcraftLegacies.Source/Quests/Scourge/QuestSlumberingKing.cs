@@ -41,7 +41,7 @@ public sealed class QuestSlumberingKing : QuestData
     {
       var completingUnit = _anyEnemyUnitInRectsObjective.CompletingUnit;
       return
-        $"A {GetUnitName(completingUnit)} under the control of {(completingUnit != null ? GetOwningPlayer(completingUnit) : null).GetFaction()?.ColoredName} has encroached on the shores of Northrend. Soon they will feel the biting chill of death.";
+        $"A {completingUnit.Name} under the control of {(completingUnit != null ? completingUnit.Owner : null).GetFaction()?.ColoredName} has encroached on the shores of Northrend. Soon they will feel the biting chill of death.";
     }
   }
 
@@ -52,6 +52,6 @@ public sealed class QuestSlumberingKing : QuestData
   protected override void OnComplete(Faction whichFaction)
   {
     var completingUnit = _anyEnemyUnitInRectsObjective.CompletingUnit;
-    whichFaction.Player?.PingMinimapSimple(GetUnitX(completingUnit), GetUnitY(completingUnit), 10, 255, 100, 100);
+    whichFaction.Player?.PingMinimapSimple(completingUnit.X, completingUnit.Y, 10, 255, 100, 100);
   }
 }

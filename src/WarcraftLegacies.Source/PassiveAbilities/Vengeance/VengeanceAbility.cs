@@ -53,17 +53,16 @@ public sealed class VengeanceAbility : TakeDamagePassiveAbility
   /// <inheritdoc />
   public override void OnTakesDamage()
   {
-    var damaged = GetTriggerUnit();
-    var abilityLevel = GetUnitAbilityLevel(damaged, AbilityTypeId);
-    if (abilityLevel == 0 || BlzGetUnitSkin(damaged) == AlternateFormId ||
-        !(GetEventDamage() >= GetUnitState(damaged, UNIT_STATE_LIFE)) || !(GetUnitState(damaged, UNIT_STATE_MANA) >=
-                                                                           BlzGetUnitAbilityManaCost(damaged,
-                                                                             AbilityTypeId, abilityLevel)))
+    var damaged = @event.Unit;
+    var abilityLevel = damaged.GetAbilityLevel(AbilityTypeId);
+    if (abilityLevel == 0 || damaged.Skin == AlternateFormId ||
+        !(@event.Damage >= damaged.Life) || !(damaged.Mana >=
+                                                                           damaged.GetAbilityManaCost(AbilityTypeId, abilityLevel)))
     {
       return;
     }
 
-    BlzSetEventDamage(0);
+    @event.Damage = 0;
     var vengeanceBuff = new VengeanceBuff(damaged, damaged)
     {
       BonusDamage = BonusDamageBase + BonusDamageLevel * abilityLevel,

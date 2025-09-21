@@ -34,7 +34,7 @@ public sealed class LegendSunfury
 
     Kael = new LegendaryHero("Kael'thas Sunstrider")
     {
-      PlayerColor = PLAYER_COLOR_RED,
+      PlayerColor = playercolor.Red,
       UnitType = UNIT_HKAL_PRINCE_OF_QUEL_THALAS_QUEL_THALAS
     };
 

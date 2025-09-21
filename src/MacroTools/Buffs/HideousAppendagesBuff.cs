@@ -28,7 +28,7 @@ public sealed class HideousAppendagesBuff : PassiveBuff
   {
     foreach (var tentacle in _tentacles)
     {
-      KillUnit(tentacle);
+      tentacle.Kill();
     }
 
     PlayerUnitEvents.Unregister(UnitEvent.ChangesOwner, OnOwnershipChanged, Target);
@@ -45,7 +45,7 @@ public sealed class HideousAppendagesBuff : PassiveBuff
   {
     foreach (var tentacle in _tentacles)
     {
-      SetUnitOwner(tentacle, GetOwningPlayer(Target), true);
+      tentacle.SetOwner(Target.Owner, true);
     }
   }
 
@@ -53,14 +53,13 @@ public sealed class HideousAppendagesBuff : PassiveBuff
   {
     for (var i = 0; i < TentacleCount; i++)
     {
-      var tentacle = CreateUnit(GetOwningPlayer(Target), TentacleUnitTypeId, GetUnitX(Target), GetUnitY(Target),
-        0);
-      SetUnitAnimation(tentacle, "birth");
-      QueueUnitAnimation(tentacle, "stand");
-      SetUnitVertexColor(tentacle, 255, 255, 255, 255);
-      UnitAddAbility(tentacle, FourCC("Aloc"));
-      SetUnitInvulnerable(tentacle, true);
-      SetUnitPathing(tentacle, false);
+      var tentacle = unit.Create(Target.Owner, TentacleUnitTypeId, Target.X, Target.Y, 0);
+      tentacle.SetAnimation("birth");
+      tentacle.QueueAnimation("stand");
+      tentacle.SetVertexColor(255, 255, 255, 255);
+      tentacle.AddAbility(FourCC("Aloc"));
+      tentacle.IsInvulnerable = true;
+      tentacle.SetPathing(false);
       _tentacles.Add(tentacle);
     }
   }
@@ -71,9 +70,9 @@ public sealed class HideousAppendagesBuff : PassiveBuff
     foreach (var tentacle in _tentacles)
     {
       var offsetAngle = MathEx.Pi * 2 / TentacleCount * i;
-      var offsetX = GetUnitX(Target) + RadiusOffset * Cos(offsetAngle);
-      var offsetY = GetUnitY(Target) + RadiusOffset * Sin(offsetAngle);
-      SetUnitPosition(tentacle, offsetX, offsetY);
+      var offsetX = Target.X + RadiusOffset * Cos(offsetAngle);
+      var offsetY = Target.Y + RadiusOffset * Sin(offsetAngle);
+      tentacle.SetPosition(offsetX, offsetY);
       i++;
     }
   }

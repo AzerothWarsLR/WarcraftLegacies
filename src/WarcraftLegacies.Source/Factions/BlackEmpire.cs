@@ -19,7 +19,7 @@ public sealed class BlackEmpire : Faction
 
   /// <inheritdoc />
   public BlackEmpire(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Black Empire",
-    PLAYER_COLOR_MAROON, @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
+    playercolor.Maroon, @"ReplaceableTextures\CommandButtons\BTNNzothIcon.blp")
   {
     _allLegendSetup = allLegendSetup;
     _preplacedUnitSystem = preplacedUnitSystem;

@@ -46,7 +46,7 @@ public sealed class QuestMalfurionAwakens : QuestData
     AddObjective(new ObjectiveSelfExists());
     _moongladeUnits = moonglade.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     _darnassusUnits = darnassus.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-    SetUnitInvulnerable(worldTree, true);
+    worldTree.IsInvulnerable = true;
   }
 
   /// <inheritdoc />
@@ -60,7 +60,7 @@ public sealed class QuestMalfurionAwakens : QuestData
   {
     _worldTree.Rescue(completingFaction.Player);
     var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      ? player.NeutralAggressive
       : completingFaction.Player;
 
     rescuer.RescueGroup(_moongladeUnits);
@@ -85,10 +85,9 @@ public sealed class QuestMalfurionAwakens : QuestData
     }
     else
     {
-      _hornofCenarius.Item.SetPositionSafe(GetTriggerUnit().GetPosition());
+      _hornofCenarius.Item.SetPositionSafe(@event.Unit.GetPosition());
     }
   }
 
-  private static void RemoveFurionBlockers() => EnumDestructablesInRect(Regions.FurionBlockers.Rect, null,
-    () => KillDestructable(GetEnumDestructable()));
+  private static void RemoveFurionBlockers() => Regions.FurionBlockers.Rect.EnumerateDestructables(null, () => GetEnumDestructable().Kill());
 }

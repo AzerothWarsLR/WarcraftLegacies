@@ -27,7 +27,7 @@ public sealed class Dalaran : Faction
 
   /// <inheritdoc />
   public Dalaran(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
-    : base("Dalaran", PLAYER_COLOR_PINK, @"ReplaceableTextures\CommandButtons\BTNJaina.blp")
+    : base("Dalaran", playercolor.Pink, @"ReplaceableTextures\CommandButtons\BTNJaina.blp")
   {
     TraditionalTeam = TeamSetup.NorthAlliance;
     _artifactSetup = artifactSetup;

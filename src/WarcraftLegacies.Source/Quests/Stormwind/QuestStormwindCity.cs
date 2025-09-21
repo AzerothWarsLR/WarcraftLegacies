@@ -57,7 +57,7 @@ public sealed class QuestStormwindCity : QuestData
   protected override void OnFail(Faction completingFaction)
   {
     var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      ? player.NeutralAggressive
       : completingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);
@@ -71,7 +71,7 @@ public sealed class QuestStormwindCity : QuestData
       IconName = "Angel",
       Name = RewardPowerName,
       HeroGlowAbilityTypeId = ABILITY_A0GK_HERO_GLOW_ORIGIN,
-      Filter = unit => !IsUnitType(unit, UNIT_TYPE_MECHANICAL) && GetUnitTypeId(unit) != UNIT_H05F_STORMWIND_CHAMPION_STORMWIND_ELITE,
+      Filter = unit => !unit.IsUnitType(unittype.Mechanical) && unit.UnitType != UNIT_H05F_STORMWIND_CHAMPION_STORMWIND_ELITE,
     };
 
     completingFaction.AddPower(rewardPower);

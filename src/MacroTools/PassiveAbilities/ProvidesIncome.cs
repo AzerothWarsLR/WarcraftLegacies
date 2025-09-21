@@ -23,7 +23,7 @@ public sealed class ProvidesIncome : PassiveAbility, IEffectOnUpgrade, IEffectOn
 
   private void ApplyBuff()
   {
-    var triggerUnit = GetTriggerUnit();
+    var triggerUnit = @event.Unit;
     var buff = new IncomeBuff(triggerUnit, triggerUnit, _income);
     BuffSystem.Add(buff, StackBehaviour.Stack);
   }
@@ -43,7 +43,7 @@ public sealed class ProvidesIncome : PassiveAbility, IEffectOnUpgrade, IEffectOn
   /// <inheritdoc />
   public void OnCreated(unit createdUnit)
   {
-    if (!IsUnitType(createdUnit, UNIT_TYPE_STRUCTURE))
+    if (!createdUnit.IsUnitType(unittype.Structure))
     {
       ApplyBuff();
     }

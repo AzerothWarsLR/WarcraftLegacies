@@ -44,12 +44,12 @@ public sealed class FlightPath : Research
     {
       if (_flightToOrgrimmar != null)
       {
-        KillUnit(_flightToOrgrimmar);
+        _flightToOrgrimmar.Kill();
       }
 
       if (_flightToThunderBluff != null)
       {
-        KillUnit(_flightToThunderBluff);
+        _flightToThunderBluff.Kill();
       }
 
       return;
@@ -57,16 +57,16 @@ public sealed class FlightPath : Research
 
     if (_flightToOrgrimmar != null)
     {
-      SetUnitOwner(_flightToOrgrimmar, recipient, true);
-      WaygateSetDestination(_flightToOrgrimmar, Regions.OrgrimmarFlight.Center.X, Regions.ThunderbluffFlight.Center.Y);
-      SetUnitInvulnerable(_flightToOrgrimmar, false);
+      _flightToOrgrimmar.SetOwner(recipient, true);
+      _flightToOrgrimmar.SetWaygateDestination(Regions.OrgrimmarFlight.Center.X, Regions.ThunderbluffFlight.Center.Y);
+      _flightToOrgrimmar.IsInvulnerable = false;
     }
 
     if (_flightToThunderBluff != null)
     {
-      SetUnitOwner(_flightToThunderBluff, recipient, true);
-      WaygateSetDestination(_flightToThunderBluff, Regions.ThunderbluffFlight.Center.X, Regions.ThunderbluffFlight.Center.Y);
-      SetUnitInvulnerable(_flightToThunderBluff, false);
+      _flightToThunderBluff.SetOwner(recipient, true);
+      _flightToThunderBluff.SetWaygateDestination(Regions.ThunderbluffFlight.Center.X, Regions.ThunderbluffFlight.Center.Y);
+      _flightToThunderBluff.IsInvulnerable = false;
     }
 
     _frostwolf.SetObjectLevel(ResearchId, 1);
@@ -77,11 +77,11 @@ public sealed class FlightPath : Research
   public override void OnRegister()
   {
     PlayerUnitEvents.Register(UnitEvent.Dies,
-      () => { if (_flightToThunderBluff != null) { KillUnit(_flightToThunderBluff); } },
+      () => { if (_flightToThunderBluff != null) { _flightToThunderBluff.Kill(); } },
       _flightToOrgrimmar);
 
     PlayerUnitEvents.Register(UnitEvent.Dies,
-      () => { if (_flightToOrgrimmar != null) { KillUnit(_flightToOrgrimmar); } },
+      () => { if (_flightToOrgrimmar != null) { _flightToOrgrimmar.Kill(); } },
       _flightToThunderBluff);
   }
 }

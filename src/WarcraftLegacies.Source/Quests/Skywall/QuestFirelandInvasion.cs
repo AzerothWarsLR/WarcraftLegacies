@@ -83,7 +83,7 @@ public sealed class QuestFirelandInvasion : QuestData
   //  new ScourgeInvasionDialogPresenter(
   //      new Choice<Rectangle?>(null, "No invasion"),
   //      new Choice<Rectangle?>(Regions.SulfuronSpire, "Sulfuron Spire"))
-  //    .Run(Player(8));
+  //    .Run(player.Create(8));
   //}
 
   /// <inheritdoc />
@@ -95,18 +95,18 @@ public sealed class QuestFirelandInvasion : QuestData
   {
     var primaryInvasionPlayer = completingFaction.ScoreStatus != ScoreStatus.Defeated && completingFaction.Player != null
       ? completingFaction.Player
-      : Player(PLAYER_NEUTRAL_AGGRESSIVE);
+      : player.NeutralAggressive;
 
     var secondaryInvasionPlayer = _secondaryInvasionFaction.ScoreStatus != ScoreStatus.Defeated && _secondaryInvasionFaction.Player != null
       ? _secondaryInvasionFaction.Player
-      : Player(PLAYER_NEUTRAL_AGGRESSIVE);
+      : player.NeutralAggressive;
 
     foreach (var invasionRect in _invasionParameters.InvasionRects)
     {
       var position = invasionRect.GetRandomPoint();
       position.RemoveDestructablesInRadius(250f);
 
-      CreateUnit(secondaryInvasionPlayer, UNIT_U019_WORKER_C_THUN_WORKER, position.X, position.Y, 0);
+      unit.Create(secondaryInvasionPlayer, UNIT_U019_WORKER_C_THUN_WORKER, position.X, position.Y, 0);
 
       var attackTarget = _invasionParameters.AttackTargets
         .OrderBy(x => MathEx.GetDistanceBetweenPoints(position, x))
@@ -117,7 +117,7 @@ public sealed class QuestFirelandInvasion : QuestData
         foreach (var unit in CreateUnits(primaryInvasionPlayer, parameter.SummonUnitTypeId,
                    position.X, position.Y, 0, parameter.SummonCount))
         {
-          if (!IsUnitType(unit, UNIT_TYPE_PEON))
+          if (!unit.IsUnitType(unittype.Peon))
           {
             unit.IssueOrder(ORDER_ATTACK, attackTarget);
           }

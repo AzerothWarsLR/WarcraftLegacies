@@ -47,15 +47,15 @@ public sealed class NoTargetSpellOnAttack : PassiveAbility, IAppliesEffectOnDama
 
   public void OnDealsDamage()
   {
-    var caster = GetEventDamageSource();
-    if (!BlzGetEventIsAttack() || GetUnitAbilityLevel(caster, AbilityTypeId) == 0)
+    var caster = @event.DamageSource;
+    if (!@event.IsAttack || caster.GetAbilityLevel(AbilityTypeId) == 0)
     {
       return;
     }
 
     if (RequiredResearch != 0)
     {
-      if (GetPlayerTechCount(GetOwningPlayer(caster), RequiredResearch, false) == 0)
+      if (caster.Owner.GetTechResearched(RequiredResearch, false) == 0)
       {
         return;
       }
@@ -67,5 +67,5 @@ public sealed class NoTargetSpellOnAttack : PassiveAbility, IAppliesEffectOnDama
     }
   }
   private void DoSpellNoTarget(unit caster) => DummyCasterManager.GetGlobalDummyCaster().CastNoTarget(caster, DummyAbilityId,
-    DummyOrderId, GetUnitAbilityLevel(caster, AbilityTypeId));
+    DummyOrderId, caster.GetAbilityLevel(AbilityTypeId));
 }

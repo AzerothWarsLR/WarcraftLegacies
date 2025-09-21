@@ -18,7 +18,7 @@ public static class RemoveUnusedAreas
     //{
     //  foreach (var unit in GlobalGroup.EnumUnitsInRect(area).EmptyToList())
     //    unit.Remove();
-    //  EnumDestructablesInRect(area.Rect, null, () => { RemoveDestructable(GetEnumDestructable()); });
+    //  area.Rect.EnumerateDestructables(null, () => { GetEnumDestructable().Dispose(); });
     //}
   }
 }

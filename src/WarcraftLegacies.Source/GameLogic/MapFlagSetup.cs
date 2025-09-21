@@ -10,9 +10,9 @@ public static class MapFlagSetup
   /// </summary>
   public static void Setup()
   {
-    SetMapFlag(MAP_OBSERVERS, true);
-    SetMapFlag(MAP_OBSERVERS_ON_DEATH, true);
-    SetMapFlag(MAP_LOCK_RESOURCE_TRADING, true);
-    SetMapFlag(MAP_LOCK_ALLIANCE_CHANGES, true);
+    SetMapFlag(mapflag.Observers, true);
+    SetMapFlag(mapflag.ObserversOnDeath, true);
+    SetMapFlag(mapflag.LockResourceTrading, true);
+    SetMapFlag(mapflag.LockAllianceChanges, true);
   }
 }

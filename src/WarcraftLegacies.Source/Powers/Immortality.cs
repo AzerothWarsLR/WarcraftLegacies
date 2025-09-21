@@ -31,7 +31,7 @@ public sealed class Immortality : Power
       var researchLevel = _isActive ? 1 : 0;
       foreach (var player in _playersWithPower)
       {
-        SetPlayerTechResearched(player, ResearchId, researchLevel);
+        player.SetTechResearched(ResearchId, researchLevel);
       }
     }
   }
@@ -53,7 +53,7 @@ public sealed class Immortality : Power
   /// <inheritdoc />
   public override void OnAdd(player whichPlayer)
   {
-    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerTakesDamage, OnDamage, GetPlayerId(whichPlayer));
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerTakesDamage, OnDamage, whichPlayer.Id);
     _playersWithPower.Add(whichPlayer);
   }
 
@@ -74,9 +74,9 @@ public sealed class Immortality : Power
   /// <inheritdoc />
   public override void OnRemove(player whichPlayer)
   {
-    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerTakesDamage, OnDamage, GetPlayerId(whichPlayer));
+    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerTakesDamage, OnDamage, whichPlayer.Id);
     _playersWithPower.Remove(whichPlayer);
-    SetPlayerTechResearched(whichPlayer, ResearchId, 0);
+    whichPlayer.SetTechResearched(ResearchId, 0);
   }
 
   /// <inheritdoc />
@@ -92,17 +92,17 @@ public sealed class Immortality : Power
 
   private void OnDamage()
   {
-    var damagedUnit = GetTriggerUnit();
-    if (!IsActive || !(GetEventDamage() >= GetUnitState(damagedUnit, UNIT_STATE_LIFE)) ||
-        !(GetRandomInt(0, 100) < _healChancePercentage) || IsUnitType(damagedUnit, UNIT_TYPE_STRUCTURE) ||
-        IsUnitType(damagedUnit, UNIT_TYPE_MECHANICAL))
+    var damagedUnit = @event.Unit;
+    if (!IsActive || !(@event.Damage >= damagedUnit.Life) ||
+        !(GetRandomInt(0, 100) < _healChancePercentage) || damagedUnit.IsUnitType(unittype.Structure) ||
+        damagedUnit.IsUnitType(unittype.Mechanical))
     {
       return;
     }
 
-    BlzSetEventDamage(0);
-    SetUnitState(damagedUnit, UNIT_STATE_LIFE, (int)(BlzGetUnitMaxHP(damagedUnit) * ((float)_healAmountPercentage / 100)));
-    EffectSystem.Add(AddSpecialEffectTarget(Effect, damagedUnit, "origin"), 1);
+    @event.Damage = 0;
+    damagedUnit.Life = (int)(damagedUnit.MaxLife * ((float)_healAmountPercentage / 100));
+    EffectSystem.Add(effect.Create(Effect, damagedUnit, "origin"), 1);
   }
 
   private void AddObjective(Objective objective, Faction faction)

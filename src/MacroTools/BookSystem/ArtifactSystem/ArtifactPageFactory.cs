@@ -14,7 +14,7 @@ public sealed class ArtifactPageFactory : IPageFactory<ArtifactPage>
       Parent = parent,
       Visible = false
     };
-    newPage.SetPoint(FRAMEPOINT_CENTER, parent, FRAMEPOINT_CENTER, 0, 0);
+    newPage.SetPoint(framepointtype.Center, parent, framepointtype.Center, 0, 0);
 
     return newPage;
   }

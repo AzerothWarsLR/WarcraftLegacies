@@ -27,11 +27,11 @@ public sealed class ObjectiveAnyHeroWithLevelReachRect : Objective, IHasCompleti
     _targetLevel = targetLevel;
     var target = RectToRegion(_targetRect);
     Description = $"Any level {targetLevel}+ hero reaches {rectName}";
-    TriggerRegisterEnterRegion(_entersRect.Trigger, target, null);
-    TriggerAddAction(_entersRect.Trigger, OnRegionEnter);
+    _entersRect.Trigger.RegisterEnterRegion(target, null);
+    _entersRect.Trigger.AddAction(OnRegionEnter);
     PingPath = "MinimapQuestTurnIn";
     DisplaysPosition = true;
-    Position = new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
+    Position = new(_targetRect.CenterX, _targetRect.CenterY);
   }
 
   /// <inheritdoc />
@@ -42,15 +42,15 @@ public sealed class ObjectiveAnyHeroWithLevelReachRect : Objective, IHasCompleti
 
   private static region RectToRegion(rect whichRect)
   {
-    var rectRegion = CreateRegion();
-    RegionAddRect(rectRegion, whichRect);
+    var rectRegion = region.Create();
+    rectRegion.AddRect(whichRect);
     return rectRegion;
   }
 
   private void OnRegionEnter()
   {
-    var triggerUnit = GetTriggerUnit();
-    if (!UnitAlive(triggerUnit) || GetHeroLevel(triggerUnit) < _targetLevel)
+    var triggerUnit = @event.Unit;
+    if (!triggerUnit.Alive || triggerUnit.HeroLevel < _targetLevel)
     {
       return;
     }

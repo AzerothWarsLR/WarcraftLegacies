@@ -35,7 +35,7 @@ public sealed class MassDeathCoil : Spell
 
     if (UpgradeCondition(caster))
     {
-      DestroyEffect(AddSpecialEffectTarget(@"Abilities\Spells\Human\Heal\HealTarget.mdl", caster, "origin"));
+      effect.Create(@"Abilities\Spells\Human\Heal\HealTarget.mdl", caster, "origin").Dispose();
       foreach (var unused in dummyTargets)
       {
         caster.Heal(CasterHealPerTargetUpgraded);

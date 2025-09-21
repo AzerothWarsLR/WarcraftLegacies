@@ -28,7 +28,7 @@ public sealed class CheatHp : Command
     {
       foreach (var unit in GlobalGroup.EnumSelectedUnits(cheater))
       {
-        SetUnitState(unit, UNIT_STATE_LIFE, S2R(parameters[0]));
+        unit.Life = S2R(parameters[0]);
       }
 
       return "Setting hitpoints of selected units to " + parameters[0] + ".";

@@ -49,10 +49,10 @@ public sealed class CheatBuild : Command
 
   private static void Build()
   {
-    if (GetIssuedOrderId() == 851976 && IsCheatActive(GetTriggerPlayer()))
+    if (@event.IssuedOrderId == 851976 && IsCheatActive(@event.Player))
     {
-      UnitSetUpgradeProgress(GetTriggerUnit(), 100);
-      UnitSetConstructionProgress(GetTriggerUnit(), 100);
+      @event.Unit.SetUpgradeProgress(100);
+      @event.Unit.SetConstructionProgress(100);
     }
   }
 

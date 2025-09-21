@@ -57,9 +57,9 @@ public sealed class DefensiveOrbs : PassiveAbility, IEffectOnSpellEffect
   /// <inheritdoc />
   public void OnSpellEffect()
   {
-    var caster = GetTriggerUnit();
-    var abilityLevel = GetUnitAbilityLevel(caster, _abilityTypeId);
-    if (abilityLevel == 0 || !AbilityWhitelist.Contains(GetSpellAbilityId()))
+    var caster = @event.Unit;
+    var abilityLevel = caster.GetAbilityLevel(_abilityTypeId);
+    if (abilityLevel == 0 || !AbilityWhitelist.Contains(@event.SpellAbilityId))
     {
       return;
     }

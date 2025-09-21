@@ -33,7 +33,7 @@ public sealed class QuestTriumvirate : QuestData
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
   {
-    var crownOfTheTriumvirate = new Artifact(CreateItem(ITEM_I011_CROWN_OF_THE_TRIUMVIRATE, 0, 0));
+    var crownOfTheTriumvirate = new Artifact(item.Create(ITEM_I011_CROWN_OF_THE_TRIUMVIRATE, 0, 0));
     ArtifactManager.Register(crownOfTheTriumvirate);
     _velen.Unit?.AddItemSafe(crownOfTheTriumvirate.Item);
   }

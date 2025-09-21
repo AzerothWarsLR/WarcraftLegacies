@@ -11,10 +11,10 @@ public static class Program
   public static void Main()
   {
     // Delay a little since some stuff can break otherwise
-    var timer = CreateTimer();
-    TimerStart(timer, 0.01f, false, () =>
+    timer timer = timer.Create();
+    timer.Start(0.01f, false, () =>
     {
-      DestroyTimer(timer);
+      timer.Dispose();
       Start();
     });
   }

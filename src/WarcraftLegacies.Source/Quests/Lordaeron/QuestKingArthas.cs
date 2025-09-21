@@ -52,7 +52,7 @@ public sealed class QuestKingArthas : QuestData
     _arthas.ClearUnitDependencies();
     _arthas.Unit?
       .AddItemSafe(_crownOfLordaeron.Item);
-    BlzSetUnitName(_terenas, "King Emeritus Terenas Menethil");
+    _terenas.Name = "King Emeritus Terenas Menethil";
     completingFaction.ModObjectLimit(UNIT_HKNI_KNIGHT_LORDAERON, -Faction.Unlimited);
     completingFaction.ModObjectLimit(UNIT_H0CP_GALLANT_KNIGHT_LORDAERON, Faction.Unlimited);
 

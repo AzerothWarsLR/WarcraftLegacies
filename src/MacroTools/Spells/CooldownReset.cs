@@ -11,6 +11,6 @@ public sealed class CooldownReset : Spell
 
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    UnitResetCooldown(caster);
+    caster.ResetCooldowns();
   }
 }

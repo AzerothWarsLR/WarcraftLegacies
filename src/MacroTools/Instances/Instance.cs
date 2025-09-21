@@ -26,15 +26,15 @@ public sealed class Instance
   /// <summary>Initializes a new instance of the <see cref="Instance"/> class.</summary>
   private Instance(IEnumerable<Rectangle> areas)
   {
-    Region = CreateRegion();
+    Region = region.Create();
     _rectangles = areas.ToArray();
     foreach (var rectangle in _rectangles)
     {
-      RegionAddRect(Region, rectangle.Rect);
+      Region.AddRect(rectangle.Rect);
     }
 
-    _dependencyDiesTrigger = CreateTrigger();
-    TriggerAddAction(_dependencyDiesTrigger, Destroy);
+    _dependencyDiesTrigger = trigger.Create();
+    _dependencyDiesTrigger.AddAction(Destroy);
   }
 
   /// <summary>Initializes a new instance of the <see cref="Instance"/> class.</summary>
@@ -75,7 +75,7 @@ public sealed class Instance
   public void AddDependency(unit dependency)
   {
     _dependencies.Add(dependency);
-    TriggerRegisterUnitEvent(_dependencyDiesTrigger, dependency, EVENT_UNIT_DEATH);
+    _dependencyDiesTrigger.RegisterUnitEvent(dependency, unitevent.Death);
   }
 
   /// <summary>
@@ -85,7 +85,7 @@ public sealed class Instance
   {
     try
     {
-      DestroyTrigger(_dependencyDiesTrigger);
+      _dependencyDiesTrigger.Dispose();
       foreach (var rect in _rectangles)
       {
         var unitsInRect = GlobalGroup
@@ -100,7 +100,7 @@ public sealed class Instance
 
       foreach (var unit in _dependencies)
       {
-        KillUnit(unit);
+        unit.Kill();
       }
     }
     catch (Exception ex)
@@ -113,9 +113,9 @@ public sealed class Instance
   {
     foreach (var unit in unitsToKill)
     {
-      if (!BlzIsUnitInvulnerable(unit))
+      if (!unit.IsInvulnerable)
       {
-        KillUnit(unit);
+        unit.Kill();
       }
     }
   }
@@ -130,7 +130,7 @@ public sealed class Instance
 
   private static void EvacuateItemsInRect(Rectangle rect, Point evacuationPosition)
   {
-    EnumItemsInRect(rect.Rect, null, () =>
+    rect.Rect.EnumerateItems(null, () =>
     {
       try
       {

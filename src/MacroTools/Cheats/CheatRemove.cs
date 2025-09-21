@@ -22,7 +22,7 @@ public sealed class CheatRemove : Command
   {
     foreach (var unit in GlobalGroup.EnumSelectedUnits(cheater))
     {
-      RemoveUnit(unit);
+      unit.Dispose();
     }
 
     return "Permanently removing selected units.";

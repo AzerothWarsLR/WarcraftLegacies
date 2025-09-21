@@ -21,20 +21,20 @@ public sealed class ObjectivePowerSource : Objective
   /// </summary>
   public ObjectivePowerSource(unit dimensionalGenerator, IEnumerable<int> validItemTypeIds)
   {
-    Description = $"Place a valid power source in the {GetUnitName(dimensionalGenerator)}";
-    var pickupTrigger = CreateTrigger();
-    TriggerRegisterUnitEvent(pickupTrigger, dimensionalGenerator, EVENT_UNIT_PICKUP_ITEM);
-    TriggerAddAction(pickupTrigger, () =>
+    Description = $"Place a valid power source in the {dimensionalGenerator.Name}";
+    var pickupTrigger = trigger.Create();
+    pickupTrigger.RegisterUnitEvent(dimensionalGenerator, unitevent.PickupItem);
+    pickupTrigger.AddAction(() =>
     {
-      if (validItemTypeIds.Contains(GetItemTypeId(GetManipulatedItem())))
+      if (validItemTypeIds.Contains(@event.ManipulatedItem.TypeId))
       {
-        UsedPowerSource = GetManipulatedItem();
+        UsedPowerSource = @event.ManipulatedItem;
         Progress = QuestProgress.Complete;
       }
 
       else
       {
-        GetManipulatedItem().SetPosition(GetTriggerUnit().GetPosition());
+        @event.ManipulatedItem.SetPosition(@event.Unit.GetPosition());
       }
     });
   }

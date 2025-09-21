@@ -20,7 +20,7 @@ public sealed class ObjectiveCastSpellFromUnit : Objective
   /// <param name="caster">The caster that must cast the spell.</param>
   public ObjectiveCastSpellFromUnit(int spellId, unit caster)
   {
-    Description = $"Cast {GetObjectName(spellId)} from {GetUnitName(caster)}";
+    Description = $"Cast {GetObjectName(spellId)} from {caster.Name}";
     TargetWidget = caster;
     DisplaysPosition = true;
     _spellId = spellId;
@@ -33,7 +33,7 @@ public sealed class ObjectiveCastSpellFromUnit : Objective
   {
     PlayerUnitEvents.Register(UnitEvent.SpellEffect, () =>
     {
-      if (GetSpellAbilityId() == _spellId && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_caster)))
+      if (@event.SpellAbilityId == _spellId && IsPlayerOnSameTeamAsAnyEligibleFaction(_caster.Owner))
       {
         Progress = QuestProgress.Complete;
       }

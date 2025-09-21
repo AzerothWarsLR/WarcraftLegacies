@@ -7,7 +7,7 @@ namespace MacroTools.UserInterface;
 /// <summary>Allows a player to choose between one of two factions at the start of the game.</summary>
 public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
 {
-  private readonly dialog? _pickDialog = DialogCreate();
+  private readonly dialog? _pickDialog = dialog.Create();
   protected readonly List<TChoice> Choices;
   protected bool HasChoiceBeenPicked = false;
 
@@ -35,7 +35,7 @@ public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
   /// <summary>Displays the faction choice to a player.</summary>
   public void Run(player whichPlayer)
   {
-    DialogSetMessage(_pickDialog, _dialogText);
+    _pickDialog.SetMessage(_dialogText);
 
     var activeChoices = Choices.Where(x => IsChoiceActive(whichPlayer, x));
 
@@ -48,37 +48,37 @@ public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
     var choicePicksByButton = new Dictionary<button, TChoice>();
     foreach (var choice in Choices.Where(x => IsChoiceActive(whichPlayer, x)))
     {
-      var factionButton = DialogAddButton(_pickDialog, choice.Name, 0);
+      var factionButton = _pickDialog.AddButton(choice.Name, 0);
       choicePicksByButton[factionButton] = choice;
     }
 
-    var timer = CreateTimer();
-    TimerStart(timer, 4, false, () =>
+    timer timer = timer.Create();
+    timer.Start(4, false, () =>
     {
       StartChoicePick(whichPlayer, choicePicksByButton);
-      DestroyTimer(GetExpiredTimer());
+      @event.ExpiredTimer.Dispose();
     });
 
-    var concludeTimer = CreateTimer();
-    TimerStart(concludeTimer, 24, false, () =>
+    var concludeTimer = timer.Create();
+    concludeTimer.Start(24, false, () =>
     {
       ChoiceExpired(whichPlayer);
-      DestroyTimer(GetExpiredTimer());
+      @event.ExpiredTimer.Dispose();
     });
   }
 
   private void StartChoicePick(player whichPlayer, Dictionary<button, TChoice> choicePicksByButton)
   {
-    if (GetLocalPlayer() == whichPlayer)
+    if (player.LocalPlayer == whichPlayer)
     {
-      DialogDisplay(GetLocalPlayer(), _pickDialog, true);
+      _pickDialog.SetVisibility(player.LocalPlayer, true);
     }
 
     foreach (var (button, choice) in choicePicksByButton)
     {
-      var pickTrigger = CreateTrigger();
-      TriggerRegisterDialogButtonEvent(pickTrigger, button);
-      TriggerAddAction(pickTrigger, () =>
+      var pickTrigger = trigger.Create();
+      pickTrigger.RegisterButtonEvent(button);
+      pickTrigger.AddAction(() =>
       {
         try
         {
@@ -96,9 +96,9 @@ public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
 
   private void ChoiceExpired(player whichPlayer)
   {
-    if (GetLocalPlayer() == whichPlayer)
+    if (player.LocalPlayer == whichPlayer)
     {
-      DialogDisplay(GetLocalPlayer(), _pickDialog, false);
+      _pickDialog.SetVisibility(player.LocalPlayer, false);
     }
 
     if (!HasChoiceBeenPicked)
@@ -106,12 +106,12 @@ public abstract class ChoiceDialogPresenter<TChoice> where TChoice : IChoice
       OnChoicePicked(whichPlayer, GetDefaultChoice(whichPlayer));
     }
 
-    DialogClear(_pickDialog);
-    DialogDestroy(_pickDialog);
+    _pickDialog.Clear();
+    _pickDialog.Dispose();
 
     foreach (var trigger in _triggers)
     {
-      DestroyTrigger(trigger);
+      trigger.Dispose();
     }
   }
 }

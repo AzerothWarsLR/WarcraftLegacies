@@ -36,44 +36,44 @@ public sealed class PackableStructure
   /// </summary>
   public void PackUnitSetup(unit packedUnit)
   {
-    var effect = AddSpecialEffectTarget(_structureModel, packedUnit, "overhead");
-    BlzSetSpecialEffectScale(effect, (float)0.25);
-    BlzSetSpecialEffectTime(effect, 100);
-    UnitAddAbility(packedUnit, _buildAbility);
+    effect effect = effect.Create(_structureModel, packedUnit, "overhead");
+    effect.Scale = (float)0.25;
+    effect.SetTime(100);
+    packedUnit.AddAbility(_buildAbility);
   }
 
   private void PackBuilding(unit building, unit packedUnit)
   {
-    if (_structureId != GetUnitTypeId(building))
+    if (_structureId != building.UnitType)
     {
-      Console.WriteLine($"ERROR: there is no PackableStructure setup for building: {GetUnitName(building)}");
+      Console.WriteLine($"ERROR: there is no PackableStructure setup for building: {building.Name}");
       return;
     }
 
     PackUnitSetup(packedUnit);
-    RemoveUnit(building);
+    building.Dispose();
   }
 
   private void OnTrainUnitType()
   {
-    if (GetUnitTypeId(GetTrainedUnit()) != _packedUnitId)
+    if (@event.TrainedUnit.UnitType != _packedUnitId)
     {
       return;
     }
 
-    PackBuilding(GetTriggerUnit(), GetTrainedUnit());
-    RemoveUnit(GetTriggerUnit());
+    PackBuilding(@event.Unit, @event.TrainedUnit);
+    @event.Unit.Dispose();
   }
 
   private static void OnUnitTypeCastSpell()
   {
-    GetTriggerUnit().SetTimedLife(0.01f);
-    var deathTrigger = CreateTrigger();
-    TriggerRegisterUnitEvent(deathTrigger, GetTriggerUnit(), EVENT_UNIT_DEATH);
-    TriggerAddAction(deathTrigger, () =>
+    @event.Unit.SetTimedLife(0.01f);
+    var deathTrigger = trigger.Create();
+    deathTrigger.RegisterUnitEvent(@event.Unit, unitevent.Death);
+    deathTrigger.AddAction(() =>
     {
-      RemoveUnit(GetTriggerUnit());
-      DestroyTrigger(GetTriggeringTrigger());
+      @event.Unit.Dispose();
+      @event.Trigger.Dispose();
     });
   }
 }

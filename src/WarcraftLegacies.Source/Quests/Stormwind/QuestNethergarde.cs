@@ -37,7 +37,7 @@ public sealed class QuestNethergarde : QuestData
   protected override void OnFail(Faction completingFaction)
   {
     var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      ? player.NeutralAggressive
       : completingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);
@@ -47,6 +47,6 @@ public sealed class QuestNethergarde : QuestData
   protected override void OnComplete(Faction completingFaction)
   {
     completingFaction.Player.RescueGroup(_rescueUnits);
-    SetUnitOwner(_gate, completingFaction.Player, true);
+    _gate.SetOwner(completingFaction.Player, true);
   }
 }

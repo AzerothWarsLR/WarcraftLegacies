@@ -53,6 +53,6 @@ public sealed class QuestScepterOfTheQueenWarsong : QuestData
   protected override void OnComplete(Faction whichFaction)
   {
     _anyUnitInRect.CompletingUnit?.AddItemSafe(_scepterOfTheQueen.Item);
-    Player(GetPlayerNeutralAggressive()).RescueGroup(_highBourneAreaUnits);
+    player.NeutralAggressive.RescueGroup(_highBourneAreaUnits);
   }
 }

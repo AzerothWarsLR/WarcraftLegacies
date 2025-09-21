@@ -25,8 +25,8 @@ public sealed class CheatSpawn : Command
   {
     for (var i = 0; i < count; i++)
     {
-      CreateUnit(GetTriggerPlayer(), typeId, GetUnitX(whichUnit), GetUnitY(whichUnit), 0);
-      CreateItem(typeId, GetUnitX(whichUnit), GetUnitY(whichUnit));
+      unit.Create(@event.Player, typeId, whichUnit.X, whichUnit.Y, 0);
+      item.Create(typeId, whichUnit.X, whichUnit.Y);
     }
   }
 

@@ -32,20 +32,20 @@ public sealed class QuestRokhan : QuestData
   /// <inheritdoc/>
   protected override void OnFail(Faction completingFaction)
   {
-    RemoveUnit(_rokhan);
+    _rokhan.Dispose();
   }
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    RemoveUnit(_rokhan);
-    SetPlayerTechResearched(completingFaction.Player, _rokhanResearch, 1);
+    _rokhan.Dispose();
+    completingFaction.Player.SetTechResearched(_rokhanResearch, 1);
   }
 
   /// <inheritdoc/>
   protected override void OnAdd(Faction whichFaction)
   {
     whichFaction.ModObjectLimit(_rokhanResearch, Faction.Unlimited);
-    SetUnitInvulnerable(_rokhan, true);
+    _rokhan.IsInvulnerable = true;
   }
 }

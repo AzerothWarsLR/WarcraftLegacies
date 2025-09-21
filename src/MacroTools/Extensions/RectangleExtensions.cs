@@ -18,10 +18,10 @@ public static class RectangleExtensions
   /// </summary>
   public static void AddSound(this Rectangle region, sound soundHandle)
   {
-    var width = GetRectMaxX(region.Rect) - GetRectMinX(region.Rect);
-    var height = GetRectMaxY(region.Rect) - GetRectMinY(region.Rect);
-    SetSoundPosition(soundHandle, GetRectCenterX(region.Rect), GetRectCenterY(region.Rect), 0);
-    RegisterStackedSound(soundHandle, true, width, height);
+    var width = region.Rect.MaxX - region.Rect.MinX;
+    var height = region.Rect.MaxY - region.Rect.MinY;
+    soundHandle.SetPosition(region.Rect.CenterX, region.Rect.CenterY, 0);
+    soundHandle.RegisterStackedSound(true, width, height);
   }
 
   /// <summary>
@@ -59,25 +59,25 @@ public static class RectangleExtensions
 
     foreach (var unit in unitsInArea)
     {
-      if (GetOwningPlayer(unit) != Player(PLAYER_NEUTRAL_PASSIVE) || GetUnitTypeId(unit) == FourCC("ngol"))
+      if (unit.Owner != player.NeutralPassive || unit.UnitType == FourCC("ngol"))
       {
         continue;
       }
 
       if (!unit.IsRemovable())
       {
-        SetUnitOwner(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
+        unit.SetOwner(player.NeutralAggressive, true);
         continue;
       }
 
-      if (unit.IsRemovable() && !BlzIsUnitInvulnerable(unit) &&
-          (cleanupType == NeutralPassiveCleanupType.RemoveUnits || IsUnitType(unit, UNIT_TYPE_STRUCTURE)))
+      if (unit.IsRemovable() && !unit.IsInvulnerable &&
+          (cleanupType == NeutralPassiveCleanupType.RemoveUnits || unit.IsUnitType(unittype.Structure)))
       {
-        RemoveUnit(unit);
+        unit.Dispose();
       }
       else
       {
-        SetUnitOwner(unit, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
+        unit.SetOwner(player.NeutralAggressive, true);
       }
     }
   }
@@ -91,9 +91,9 @@ public static class RectangleExtensions
       .EnumUnitsInRect(area);
     foreach (var unit in unitsInArea)
     {
-      if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && unit.IsRemovable())
+      if (unit.Owner == player.NeutralAggressive && unit.IsRemovable())
       {
-        RemoveUnit(unit);
+        unit.Dispose();
       }
     }
   }
@@ -111,18 +111,18 @@ public static class RectangleExtensions
   {
     var group = GlobalGroup
       .EnumUnitsInRect(rectangle)
-      .Where(x => GetOwningPlayer(x) == Player(PLAYER_NEUTRAL_PASSIVE) && filter.Invoke(x))
+      .Where(x => x.Owner == player.NeutralPassive && filter.Invoke(x))
       .ToList();
     foreach (var unit in group)
     {
-      if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) && hideStructures && !IsUnitType(unit, UNIT_TYPE_ANCIENT) ||
-          !IsUnitType(unit, UNIT_TYPE_STRUCTURE) && hideUnits)
+      if (unit.IsUnitType(unittype.Structure) && hideStructures && !unit.IsUnitType(unittype.Ancient) ||
+          !unit.IsUnitType(unittype.Structure) && hideUnits)
       {
-        ShowUnit(unit, false);
+        unit.IsVisible = false;
       }
 
-      SetUnitInvulnerable(unit, true);
-      BlzPauseUnitEx(unit, true);
+      unit.IsInvulnerable = true;
+      unit.SetPausedEx(true);
     }
 
     return group;
@@ -143,8 +143,8 @@ public static class RectangleExtensions
 
     var unitsInRegion = GlobalGroup
       .EnumUnitsInRect(region)
-      .Where(x => GetUnitTypeId(x) != FourCC("ngol")) // exclude goldmines
-      .Where(unit => IsUnitType(unit, UNIT_TYPE_STRUCTURE)); // Filter to include only structures
+      .Where(x => x.UnitType != FourCC("ngol")) // exclude goldmines
+      .Where(unit => unit.IsUnitType(unittype.Structure)); // Filter to include only structures
 
     foreach (var unit in unitsInRegion)
     {

@@ -45,7 +45,7 @@ public sealed class QuestDominion : QuestData
   protected override void OnFail(Faction completingFaction)
   {
     var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      ? player.NeutralAggressive
       : completingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);
@@ -56,7 +56,7 @@ public sealed class QuestDominion : QuestData
   {
     foreach (var unit in _rescueUnits)
     {
-      unit.Rescue(completingFaction.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      unit.Rescue(completingFaction.Player ?? player.NeutralAggressive);
     }
 
     completingFaction.Player?.PlayMusicThematic("war3mapImported\\DwarfTheme.mp3");

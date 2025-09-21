@@ -62,7 +62,7 @@ public sealed class LegendFelHorde
     {
       UnitType = FourCC("U02D"),
       StartingXp = 5400,
-      PlayerColor = PLAYER_COLOR_MAROON
+      PlayerColor = playercolor.Maroon
     };
 
     Gruul = new LegendaryHero("Gruul")

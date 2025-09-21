@@ -44,15 +44,10 @@ public sealed class QuestKelthuzadLich : QuestData
   {
     _kelthuzad.UnitType = UnittypeKelthuzadLich;
     _kelthuzad.PermaDies = false;
-    SetUnitState(_kelthuzad.Unit, UNIT_STATE_LIFE,
-      GetUnitState(_kelthuzad.Unit, UNIT_STATE_MAX_LIFE));
-    SetUnitState(_kelthuzad.Unit, UNIT_STATE_MANA,
-      GetUnitState(_kelthuzad.Unit, UNIT_STATE_MAX_MANA));
-    DestroyEffect(AddSpecialEffect("war3mapImported\\Soul Beam Blue.mdx",
-      GetUnitX(_kelthuzad.Unit),
-      GetUnitY(_kelthuzad.Unit)));
-    DestroyEffect(AddSpecialEffect(@"Abilities\Spells\Undead\FrostNova\FrostNovaTarget.mdl",
-      GetUnitX(_kelthuzad.Unit), GetUnitY(_kelthuzad.Unit)));
+    _kelthuzad.Unit.Life = _kelthuzad.Unit.MaxLife;
+    _kelthuzad.Unit.Mana = _kelthuzad.Unit.MaxMana;
+    effect.Create("war3mapImported\\Soul Beam Blue.mdx", _kelthuzad.Unit.X, _kelthuzad.Unit.Y).Dispose();
+    effect.Create(@"Abilities\Spells\Undead\FrostNova\FrostNovaTarget.mdl", _kelthuzad.Unit.X, _kelthuzad.Unit.Y).Dispose();
 
     CorruptSunwell();
   }
@@ -61,12 +56,12 @@ public sealed class QuestKelthuzadLich : QuestData
   {
     if (_sunwell.Unit != null)
     {
-      UnitRemoveAbility(_sunwell.Unit, ABILITY_A0OC_EXTRACT_VIAL_ALL);
-      UnitRemoveAbility(_sunwell.Unit, ABILITY_A0EP_SUMMON_GRANITE_GOLEMS_QUEL_THALAS_SUNWELL);
-      UnitAddAbility(_sunwell.Unit, ABILITY_A00D_DESTROY_THE_CORRUPTED_SUNWELL_QUEL_THALAS_SUNWELL);
-      BlzSetUnitMaxMana(_sunwell.Unit, 0);
-      BlzSetUnitSkin(_sunwell.Unit, UNIT_N079_THE_SUNWELL_CORRUPTED_QUEL_THALAS_OTHER);
-      BlzSetUnitName(_sunwell.Unit, "Corrupted Sunwell");
+      _sunwell.Unit.RemoveAbility(ABILITY_A0OC_EXTRACT_VIAL_ALL);
+      _sunwell.Unit.RemoveAbility(ABILITY_A0EP_SUMMON_GRANITE_GOLEMS_QUEL_THALAS_SUNWELL);
+      _sunwell.Unit.AddAbility(ABILITY_A00D_DESTROY_THE_CORRUPTED_SUNWELL_QUEL_THALAS_SUNWELL);
+      _sunwell.Unit.MaxMana = 0;
+      _sunwell.Unit.Skin = UNIT_N079_THE_SUNWELL_CORRUPTED_QUEL_THALAS_OTHER;
+      _sunwell.Unit.Name = "Corrupted Sunwell";
     }
 
     _sunwell.Essential = false;

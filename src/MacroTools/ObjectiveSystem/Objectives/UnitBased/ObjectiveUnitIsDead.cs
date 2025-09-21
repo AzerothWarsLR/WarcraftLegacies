@@ -23,30 +23,30 @@ public sealed class ObjectiveUnitIsDead : Objective
   /// <param name="unitToKill"></param>
   public ObjectiveUnitIsDead(unit unitToKill)
   {
-    var deathTrigger = CreateTrigger();
-    TriggerRegisterUnitEvent(deathTrigger, unitToKill, EVENT_UNIT_DEATH);
-    TriggerAddAction(deathTrigger, () =>
+    var deathTrigger = trigger.Create();
+    deathTrigger.RegisterUnitEvent(unitToKill, unitevent.Death);
+    deathTrigger.AddAction(() =>
     {
-      KillingUnit = GetKillingUnit();
+      KillingUnit = @event.KillingUnit;
       Progress = QuestProgress.Complete;
     });
     Target = unitToKill;
     TargetWidget = Target;
     InitializeDescription();
-    DisplaysPosition = IsUnitType(Target, UNIT_TYPE_STRUCTURE) ||
-                       GetOwningPlayer(Target) == Player(PLAYER_NEUTRAL_AGGRESSIVE);
+    DisplaysPosition = Target.IsUnitType(unittype.Structure) ||
+                       Target.Owner == player.NeutralAggressive;
 
-    Position = new(GetUnitX(Target), GetUnitY(Target));
+    Position = new(Target.X, Target.Y);
   }
 
   private void InitializeDescription()
   {
-    if (IsUnitType(Target, UNIT_TYPE_STRUCTURE) || IsUnitType(Target, UNIT_TYPE_ANCIENT))
+    if (Target.IsUnitType(unittype.Structure) || Target.IsUnitType(unittype.Ancient))
     {
-      Description = $"{GetUnitName(Target)} has been destroyed";
+      Description = $"{Target.Name} has been destroyed";
       return;
     }
 
-    Description = $"{GetUnitName(Target)} is dead";
+    Description = $"{Target.Name} is dead";
   }
 }

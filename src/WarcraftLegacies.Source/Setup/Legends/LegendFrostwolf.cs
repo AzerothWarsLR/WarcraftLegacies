@@ -27,7 +27,7 @@ public sealed class LegendFrostwolf
       StartingXp = 1800,
       StartingArtifacts = new List<Artifact>()
       {
-        new(CreateItem(ITEM_I00L_BLOODHOOF_TOTEM, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+        new(item.Create(ITEM_I00L_BLOODHOOF_TOTEM, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
       }
     };
 
@@ -36,7 +36,7 @@ public sealed class LegendFrostwolf
       UnitType = UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF,
       StartingArtifacts = new()
       {
-        new(CreateItem(ITEM_I004_THE_DOOMHAMMER, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+        new(item.Create(ITEM_I004_THE_DOOMHAMMER, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
       }
     };
 

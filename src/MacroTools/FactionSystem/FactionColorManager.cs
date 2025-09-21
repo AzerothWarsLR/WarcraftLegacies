@@ -8,29 +8,29 @@ public static class ColorManager
 
   static ColorManager()
   {
-    _colorHexMap[PLAYER_COLOR_RED] = "|cffff0303";
-    _colorHexMap[PLAYER_COLOR_BLUE] = "|cff0042ff";
-    _colorHexMap[PLAYER_COLOR_CYAN] = "|cff1be7ba";
-    _colorHexMap[PLAYER_COLOR_PURPLE] = "|cff550081";
-    _colorHexMap[PLAYER_COLOR_YELLOW] = "|cfffefc00";
-    _colorHexMap[PLAYER_COLOR_ORANGE] = "|cfffe890d";
-    _colorHexMap[PLAYER_COLOR_GREEN] = "|cff21bf00";
-    _colorHexMap[PLAYER_COLOR_PINK] = "|cffe45caf";
-    _colorHexMap[PLAYER_COLOR_LIGHT_GRAY] = "|cff939596";
-    _colorHexMap[PLAYER_COLOR_LIGHT_BLUE] = "|cff7ebff1";
-    _colorHexMap[PLAYER_COLOR_AQUA] = "|c00006400";
-    _colorHexMap[PLAYER_COLOR_BROWN] = "|cff4f2b05";
-    _colorHexMap[PLAYER_COLOR_MAROON] = "|cff9c0000";
-    _colorHexMap[PLAYER_COLOR_NAVY] = "|cff0000c3";
-    _colorHexMap[PLAYER_COLOR_TURQUOISE] = "|cff00ebff";
-    _colorHexMap[PLAYER_COLOR_VIOLET] = "|cffbd00ff";
-    _colorHexMap[PLAYER_COLOR_WHEAT] = "|cffecce87";
-    _colorHexMap[PLAYER_COLOR_PEACH] = "|cfff7a58b";
-    _colorHexMap[PLAYER_COLOR_MINT] = "|cffbfff81";
-    _colorHexMap[PLAYER_COLOR_LAVENDER] = "|cffdbb8eb";
-    _colorHexMap[PLAYER_COLOR_COAL] = "|cff4f5055";
-    _colorHexMap[PLAYER_COLOR_EMERALD] = "|cff00781e";
-    _colorHexMap[PLAYER_COLOR_PEANUT] = "|cffa56f34";
+    _colorHexMap[playercolor.Red] = "|cffff0303";
+    _colorHexMap[playercolor.Blue] = "|cff0042ff";
+    _colorHexMap[playercolor.Cyan] = "|cff1be7ba";
+    _colorHexMap[playercolor.Purple] = "|cff550081";
+    _colorHexMap[playercolor.Yellow] = "|cfffefc00";
+    _colorHexMap[playercolor.Orange] = "|cfffe890d";
+    _colorHexMap[playercolor.Green] = "|cff21bf00";
+    _colorHexMap[playercolor.Pink] = "|cffe45caf";
+    _colorHexMap[playercolor.LightGray] = "|cff939596";
+    _colorHexMap[playercolor.LightBlue] = "|cff7ebff1";
+    _colorHexMap[playercolor.Aqua] = "|c00006400";
+    _colorHexMap[playercolor.Brown] = "|cff4f2b05";
+    _colorHexMap[playercolor.Maroon] = "|cff9c0000";
+    _colorHexMap[playercolor.Navy] = "|cff0000c3";
+    _colorHexMap[playercolor.Turquoise] = "|cff00ebff";
+    _colorHexMap[playercolor.Violet] = "|cffbd00ff";
+    _colorHexMap[playercolor.Wheat] = "|cffecce87";
+    _colorHexMap[playercolor.Peach] = "|cfff7a58b";
+    _colorHexMap[playercolor.Mint] = "|cffbfff81";
+    _colorHexMap[playercolor.Lavender] = "|cffdbb8eb";
+    _colorHexMap[playercolor.Coal] = "|cff4f5055";
+    _colorHexMap[playercolor.Emerald] = "|cff00781e";
+    _colorHexMap[playercolor.Peanut] = "|cffa56f34";
   }
 
   public static string GetColorHexCode(playercolor color) =>

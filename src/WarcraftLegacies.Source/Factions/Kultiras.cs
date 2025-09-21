@@ -20,7 +20,7 @@ public sealed class Kultiras : Faction
   /// <inheritdoc />
 
   public Kultiras(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
-    : base("Kul'tiras", PLAYER_COLOR_EMERALD, @"ReplaceableTextures\CommandButtons\BTNProudmoore.blp")
+    : base("Kul'tiras", playercolor.Emerald, @"ReplaceableTextures\CommandButtons\BTNProudmoore.blp")
   {
     TraditionalTeam = TeamSetup.SouthAlliance;
     _allLegendSetup = allLegendSetup;

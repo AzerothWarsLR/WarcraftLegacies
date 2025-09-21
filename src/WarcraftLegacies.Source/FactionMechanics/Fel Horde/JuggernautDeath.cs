@@ -31,7 +31,7 @@ internal static class JuggernautDeath
     {
       foreach (var juggernaut in dependentJuggernauts)
       {
-        KillUnit(juggernaut);
+        juggernaut.Kill();
       }
     }, powerGenerator);
 
@@ -39,8 +39,8 @@ internal static class JuggernautDeath
     {
       foreach (var juggernaut in dependentJuggernauts)
       {
-        var whichPlayer = GetOwningPlayer(GetTriggerUnit());
-        SetUnitOwner(juggernaut, whichPlayer, true);
+        var whichPlayer = @event.Unit.Owner;
+        juggernaut.SetOwner(whichPlayer, true);
       }
     }, powerGenerator);
   }

@@ -74,7 +74,7 @@ public sealed class Team
   {
     if (!_members.Contains(whichPlayer))
     {
-      throw new Exception($"Attempted to remove non-present player {GetPlayerName(whichPlayer)} from team {Name})");
+      throw new Exception($"Attempted to remove non-present player {whichPlayer.Name} from team {Name})");
     }
     _members.Remove(whichPlayer);
     UnallyPlayer(whichPlayer);
@@ -84,7 +84,7 @@ public sealed class Team
   {
     if (_members.Contains(whichPlayer))
     {
-      throw new Exception($"Attempted to add already present player {GetPlayerName(whichPlayer)} to team {Name})");
+      throw new Exception($"Attempted to add already present player {whichPlayer.Name} to team {Name})");
     }
 
     _members.Add(whichPlayer);
@@ -135,7 +135,7 @@ public sealed class Team
     }
 
     DisplayText($"{faction.ColoredName}|r is no longer invited to join the {Name}.");
-    DisplayTextToPlayer(faction.Player, 0, 0, $"You are no longer invited to join the {Name}.");
+    faction.Player.DisplayTextTo($"You are no longer invited to join the {Name}.", 0, 0);
     _invitees.Remove(whichPlayer);
   }
 
@@ -157,8 +157,7 @@ public sealed class Team
     }
 
     DisplayText($"{faction.ColoredName}|r has been invited to join the {Name}.");
-    DisplayTextToPlayer(faction.Player, 0, 0,
-      $"You have been invited to join the {Name}. Type -join {Name} to accept.");
+    faction.Player.DisplayTextTo($"You have been invited to join the {Name}. Type -join {Name} to accept.", 0, 0);
     _invitees.Add(whichPlayer);
   }
 
@@ -170,7 +169,7 @@ public sealed class Team
   {
     foreach (var player in _members)
     {
-      DisplayTextToPlayer(player, 0, 0, text);
+      player.DisplayTextTo(text, 0, 0);
     }
   }
 

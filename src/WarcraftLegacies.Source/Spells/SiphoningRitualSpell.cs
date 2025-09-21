@@ -85,6 +85,6 @@ public sealed class SiphoningRitualSpell : Spell
   }
 
   private static bool IsValidTarget(unit caster, unit target) =>
-    caster != target && !IsUnitType(target, UNIT_TYPE_STRUCTURE) && !IsUnitType(target, UNIT_TYPE_ANCIENT) &&
-    !IsUnitType(target, UNIT_TYPE_MECHANICAL) && UnitAlive(target);
+    caster != target && !target.IsUnitType(unittype.Structure) && !target.IsUnitType(unittype.Ancient) &&
+    !target.IsUnitType(unittype.Mechanical) && target.Alive;
 }

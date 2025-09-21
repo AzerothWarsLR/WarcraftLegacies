@@ -31,7 +31,7 @@ public sealed class ControlPoint
   /// <summary>
   /// The owner of the <see cref="ControlPoint"/>.
   /// </summary>
-  public player Owner => GetOwningPlayer(Unit);
+  public player Owner => Unit.Owner;
 
   /// <summary>
   /// Whether or not this <see cref="ControlPoint"/> can gain levels.
@@ -46,7 +46,7 @@ public sealed class ControlPoint
   /// <summary>
   /// The unit type ID of the <see cref="ControlPoint"/>.
   /// </summary>
-  public int UnitType => GetUnitTypeId(Unit);
+  public int UnitType => Unit.UnitType;
 
   /// <summary>
   /// A user-friendly name for the <see cref="ControlPoint"/>.
@@ -82,7 +82,7 @@ public sealed class ControlPoint
   {
     Unit = representingUnit;
     Value = value;
-    Name = GetUnitName(representingUnit);
+    Name = representingUnit.Name;
     UseControlLevels = useControlLevels;
   }
 
@@ -91,9 +91,9 @@ public sealed class ControlPoint
   /// </summary>
   internal void OnRegister()
   {
-    var trigger = CreateTrigger();
-    TriggerRegisterUnitEvent(trigger, Unit, EVENT_UNIT_CHANGE_OWNER);
-    TriggerAddAction(trigger, SignalOwnerAllianceChange);
+    trigger trigger = trigger.Create();
+    trigger.RegisterUnitEvent(Unit, unitevent.ChangeOwner);
+    trigger.AddAction(SignalOwnerAllianceChange);
   }
 
   /// <summary>

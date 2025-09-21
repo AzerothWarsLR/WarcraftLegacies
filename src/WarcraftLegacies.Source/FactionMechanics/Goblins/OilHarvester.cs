@@ -40,20 +40,20 @@ public sealed class OilHarvester : PassiveAbility, IEffectOnCreated
       return;
     }
 
-    var owningFaction = GetOwningPlayer(createdUnit).GetFaction();
+    var owningFaction = createdUnit.Owner.GetFaction();
     var oilPower = owningFaction?.GetPowerByType<OilPower>();
     if (oilPower == null)
     {
       throw new Exception(
-        $"Oil user {GetUnitName(GetTriggerUnit())} was created but owning faction {owningFaction?.Name} doesn't have a power that stores oil.");
+        $"Oil user {@event.Unit.Name} was created but owning faction {owningFaction?.Name} doesn't have a power that stores oil.");
     }
 
     var oilPoolNearby = oilPower.GetOilPoolsInRadius(createdUnit.GetPosition(), Radius).FirstOrDefault();
 
     if (oilPoolNearby == null)
     {
-      KillUnit(createdUnit);
-      RemoveUnit(createdUnit);
+      createdUnit.Kill();
+      createdUnit.Dispose();
       return;
     }
 
@@ -69,13 +69,13 @@ public sealed class OilHarvester : PassiveAbility, IEffectOnCreated
   private static bool EnsureValidPositioning(unit createdUnit)
   {
     if (GlobalGroup.EnumUnitsInRange(createdUnit.GetPosition(), 900)
-        .All(x => GetUnitTypeId(x) != GetUnitTypeId(createdUnit) || x == createdUnit || !UnitAlive(x)))
+        .All(x => x.UnitType != createdUnit.UnitType || x == createdUnit || !x.Alive))
     {
       return true;
     }
 
-    KillUnit(createdUnit);
-    RemoveUnit(createdUnit);
+    createdUnit.Kill();
+    createdUnit.Dispose();
     return false;
   }
 }

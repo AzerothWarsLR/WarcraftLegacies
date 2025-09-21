@@ -28,8 +28,8 @@ public sealed class ResurgentSpell : Spell
   {
     try
     {
-      var hazard = new RecurrentSpellHazard(GetTriggerUnit(), GetSpellTargetX(), GetSpellTargetY(),
-        _dummySpellOrderId, GetUnitAbilityLevel(GetTriggerUnit(), Id), _dummySpellId)
+      var hazard = new RecurrentSpellHazard(@event.Unit, @event.SpellTargetX, @event.SpellTargetY,
+        _dummySpellOrderId, @event.Unit.GetAbilityLevel(Id), _dummySpellId)
       {
         Duration = Duration,
         Interval = Interval

@@ -31,26 +31,26 @@ public sealed class StormEarthandFire : Spell
   public void SummonPanda(player player, int unitType, float x, float y, float facing, float damageBonus,
     float hitpointBonus, float durationunit)
   {
-    var newUnit = CreateUnit(player, unitType, x, y, facing);
-    UnitAddType(newUnit, UNIT_TYPE_SUMMONED);
-    UnitApplyTimedLife(newUnit, 0, Duration);
+    var newUnit = unit.Create(player, unitType, x, y, facing);
+    newUnit.AddType(unittype.Summoned);
+    newUnit.ApplyTimedLife(0, Duration);
     newUnit.MultiplyBaseDamage(1 + damageBonus, 0);
     newUnit.MultiplyMaxHitpoints(1 + hitpointBonus);
-    var tempEffect = AddSpecialEffect(EffectTarget, GetUnitX(newUnit), GetUnitY(newUnit));
-    BlzSetSpecialEffectScale(tempEffect, EffectScaleTarget);
-    DestroyEffect(tempEffect);
+    var tempEffect = effect.Create(EffectTarget, newUnit.X, newUnit.Y);
+    tempEffect.Scale = EffectScaleTarget;
+    tempEffect.Dispose();
   }
 
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    var triggerPlayer = GetOwningPlayer(caster);
-    var level = GetUnitAbilityLevel(caster, Id);
-    var x = MathEx.GetPolarOffsetX(GetUnitX(caster), 150, GetUnitFacing(caster));
-    var y = MathEx.GetPolarOffsetY(GetUnitY(caster), 150, GetUnitFacing(caster));
+    var triggerPlayer = caster.Owner;
+    var level = caster.GetAbilityLevel(Id);
+    var x = MathEx.GetPolarOffsetX(caster.X, 150, caster.Facing);
+    var y = MathEx.GetPolarOffsetY(caster.Y, 150, caster.Facing);
     var damageBonus = DamageBonusBase + DamageBonusLevel * level;
     var hitpointBonus = HealthBonusBase + HealthBonusLevel * level;
-    SummonPanda(triggerPlayer, UnitType1, x, y, GetUnitFacing(caster), damageBonus, hitpointBonus, Duration);
-    SummonPanda(triggerPlayer, UnitType2, x, y, GetUnitFacing(caster), damageBonus, hitpointBonus, Duration);
-    SummonPanda(triggerPlayer, UnitType3, x, y, GetUnitFacing(caster), damageBonus, hitpointBonus, Duration);
+    SummonPanda(triggerPlayer, UnitType1, x, y, caster.Facing, damageBonus, hitpointBonus, Duration);
+    SummonPanda(triggerPlayer, UnitType2, x, y, caster.Facing, damageBonus, hitpointBonus, Duration);
+    SummonPanda(triggerPlayer, UnitType3, x, y, caster.Facing, damageBonus, hitpointBonus, Duration);
   }
 }

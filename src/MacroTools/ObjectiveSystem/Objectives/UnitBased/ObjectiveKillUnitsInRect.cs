@@ -47,18 +47,18 @@ public sealed class ObjectiveKillUnitsInRects : Objective
     {
       var unitsNearby = GlobalGroup
         .EnumUnitsInRect(rect)
-        .Where(x => GetOwningPlayer(x) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !IsUnitType(x, UNIT_TYPE_ANCIENT) &&
-                    !IsUnitType(x, UNIT_TYPE_SAPPER) && !IsUnitType(x, UNIT_TYPE_STRUCTURE));
+        .Where(x => x.Owner == player.NeutralAggressive && !x.IsUnitType(unittype.Ancient) &&
+                    !x.IsUnitType(unittype.Sapper) && !x.IsUnitType(unittype.Structure));
 
       foreach (var unit in unitsNearby)
       {
         _maxKillCount++;
-        var killTrigger = CreateTrigger();
-        TriggerRegisterUnitEvent(killTrigger, unit, EVENT_UNIT_DEATH);
-        TriggerAddAction(killTrigger, () =>
+        var killTrigger = trigger.Create();
+        killTrigger.RegisterUnitEvent(unit, unitevent.Death);
+        killTrigger.AddAction(() =>
         {
           CurrentKillCount++;
-          DestroyTrigger(GetTriggeringTrigger());
+          @event.Trigger.Dispose();
         });
       }
     }

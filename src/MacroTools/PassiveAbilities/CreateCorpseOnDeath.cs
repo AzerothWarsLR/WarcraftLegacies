@@ -32,8 +32,8 @@ public sealed class CreateCorpseOnDeath : PassiveAbility, IEffectOnDeath
   /// <inheritdoc />
   public void OnDeath()
   {
-    var triggerUnit = GetTriggerUnit();
-    if (RequiredResearch != 0 && (GetPlayerTechCount(GetOwningPlayer(triggerUnit), RequiredResearch, false) == 0))
+    var triggerUnit = @event.Unit;
+    if (RequiredResearch != 0 && (triggerUnit.Owner.GetTechResearched(RequiredResearch, false) == 0))
     {
       return;
     }
@@ -41,9 +41,9 @@ public sealed class CreateCorpseOnDeath : PassiveAbility, IEffectOnDeath
     var pos = triggerUnit.GetPosition();
     for (var i = 0; i < CorpseCount; i++)
     {
-      CreateCorpse(GetOwningPlayer(triggerUnit), CorpseUnitTypeId, pos.X, pos.Y, GetUnitFacing(triggerUnit));
+      unit.CreateCorpse(triggerUnit.Owner, CorpseUnitTypeId, pos.X, pos.Y, triggerUnit.Facing);
     }
 
-    RemoveUnit(triggerUnit);
+    triggerUnit.Dispose();
   }
 }

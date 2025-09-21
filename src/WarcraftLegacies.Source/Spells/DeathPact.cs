@@ -40,13 +40,13 @@ public sealed class DeathPact : Spell
   {
     try
     {
-      var casterPlayer = GetOwningPlayer(caster);
+      var casterPlayer = caster.Owner;
       var casterPosition = caster.GetPosition();
 
 
       var unitsInRange = GlobalGroup
           .EnumUnitsInRange(casterPosition, Radius)
-          .Where(x => x != null && UnitAlive(x) && IsValidTarget(x, casterPlayer))
+          .Where(x => x != null && x.Alive && IsValidTarget(x, casterPlayer))
           .ToList();
 
       if (unitsInRange.Count == 0)
@@ -55,44 +55,44 @@ public sealed class DeathPact : Spell
       }
 
       var targetUnit = unitsInRange
-          .OrderByDescending(x => IsUnitType(x, UNIT_TYPE_SUMMONED))
-          .ThenByDescending(x => IsUnitType(x, UNIT_TYPE_SUMMONED) ? GetUnitLevel(x) : 0)
-          .ThenBy(x => GetUnitLevel(x))
+          .OrderByDescending(x => x.IsUnitType(unittype.Summoned))
+          .ThenByDescending(x => x.IsUnitType(unittype.Summoned) ? x.Level : 0)
+          .ThenBy(x => x.Level)
           .ThenBy(x => MathEx.GetDistanceBetweenPoints(x.GetPosition(), casterPosition))
           .FirstOrDefault();
 
 
-      if (targetUnit == null || !UnitAlive(targetUnit))
+      if (targetUnit == null || !targetUnit.Alive)
       {
         return;
       }
 
-      var targetHealth = GetUnitState(targetUnit, UNIT_STATE_LIFE);
+      var targetHealth = targetUnit.Life;
       if (targetHealth <= 0)
       {
         return;
       }
 
 
-      KillUnit(targetUnit);
+      targetUnit.Kill();
 
       var healthToRestore = targetHealth * HealthRestorePercent;
       caster.Heal(healthToRestore);
 
       if (!string.IsNullOrEmpty(HealEffect))
       {
-        var casterEffect = AddSpecialEffectTarget(HealEffect, caster, "origin");
+        var casterEffect = effect.Create(HealEffect, caster, "origin");
         EffectSystem.Add(casterEffect);
       }
 
       var manaToRestore = targetHealth * ManaRestorePercent;
-      var maxMana = GetUnitState(caster, UNIT_STATE_MAX_MANA);
-      var currentMana = GetUnitState(caster, UNIT_STATE_MANA);
+      var maxMana = caster.MaxMana;
+      var currentMana = caster.Mana;
 
-      SetUnitState(caster, UNIT_STATE_MANA, Math.Min(currentMana + manaToRestore, maxMana));
+      caster.Mana = Math.Min(currentMana + manaToRestore, maxMana);
 
 
-      EffectSystem.Add(AddSpecialEffect(KillEffect, targetUnit.GetPosition().X, targetUnit.GetPosition().Y));
+      EffectSystem.Add(effect.Create(KillEffect, targetUnit.GetPosition().X, targetUnit.GetPosition().Y));
     }
     catch (Exception)
     { }
@@ -105,12 +105,12 @@ public sealed class DeathPact : Spell
       return false;
     }
 
-    return UnitAlive(target) &&
-           GetOwningPlayer(target) == casterPlayer &&
+    return target.Alive &&
+           target.Owner == casterPlayer &&
            !target.IsResistant() &&
-           !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
-           !IsUnitType(target, UNIT_TYPE_ANCIENT) &&
-           !IsUnitType(target, UNIT_TYPE_MECHANICAL) &&
-           !IsUnitType(target, UNIT_TYPE_MAGIC_IMMUNE);
+           !target.IsUnitType(unittype.Structure) &&
+           !target.IsUnitType(unittype.Ancient) &&
+           !target.IsUnitType(unittype.Mechanical) &&
+           !target.IsUnitType(unittype.MagicImmune);
   }
 }

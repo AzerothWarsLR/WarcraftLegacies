@@ -45,7 +45,7 @@ public static class IllidariSpellSetup
       DamageMultiplierAgainstDemons = 1.2f,
       Effect = @"war3mapImported\Culling Cleave.mdx",
       EffectScale = 1.2f,
-      DamageType = DAMAGE_TYPE_MAGIC
+      DamageType = damagetype.Magic
     };
     PassiveAbilityManager.Register(warglaivesOfAzzinoth);
 

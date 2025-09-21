@@ -47,21 +47,21 @@ public static class SpellSystem
 
   private static void OnStartChannel()
   {
-    var startChannelEffect = _spellsByAbilityId[GetSpellAbilityId()] as IStartChannelEffect;
-    startChannelEffect!.OnStartChannel(GetTriggerUnit(), new Point(GetSpellTargetX(), GetSpellTargetY()));
+    var startChannelEffect = _spellsByAbilityId[@event.SpellAbilityId] as IStartChannelEffect;
+    startChannelEffect!.OnStartChannel(@event.Unit, new Point(@event.SpellTargetX, @event.SpellTargetY));
   }
 
   private static void OnStop() =>
-    _spellsByAbilityId[GetSpellAbilityId()]
-      .OnStop(GetTriggerUnit());
+    _spellsByAbilityId[@event.SpellAbilityId]
+      .OnStop(@event.Unit);
 
   private static void OnCast() =>
-    _spellsByAbilityId[GetSpellAbilityId()]
-      .OnCast(GetTriggerUnit(), GetSpellTargetUnit(), new Point(GetSpellTargetX(), GetSpellTargetY()));
+    _spellsByAbilityId[@event.SpellAbilityId]
+      .OnCast(@event.Unit, @event.SpellTargetUnit, new Point(@event.SpellTargetX, @event.SpellTargetY));
 
   private static void OnStartCast() =>
-    _spellsByAbilityId[GetSpellAbilityId()]
-      .OnStartCast(GetTriggerUnit(), GetSpellTargetUnit(), new Point(GetSpellTargetX(), GetSpellTargetY()));
+    _spellsByAbilityId[@event.SpellAbilityId]
+      .OnStartCast(@event.Unit, @event.SpellTargetUnit, new Point(@event.SpellTargetX, @event.SpellTargetY));
 
-  private static void OnLearn() => _spellsByAbilityId[GetLearnedSkill()].OnLearn(GetTriggerUnit());
+  private static void OnLearn() => _spellsByAbilityId[@event.LearnedSkill].OnLearn(@event.Unit);
 }

@@ -31,10 +31,10 @@ public sealed class InfiniteInfluence : PassiveAbility
 
   private void OnSpellCast()
   {
-    var triggerUnit = GetTriggerUnit();
-    if (!IsWithinRangeOfAnyHero(GetOwningPlayer(triggerUnit), new Point(GetSpellTargetX(), GetSpellTargetY())))
+    var triggerUnit = @event.Unit;
+    if (!IsWithinRangeOfAnyHero(triggerUnit.Owner, new Point(@event.SpellTargetX, @event.SpellTargetY)))
     {
-      IssueImmediateOrder(triggerUnit, "stop");
+      triggerUnit.IssueOrder("stop");
     }
   }
 
@@ -47,6 +47,6 @@ public sealed class InfiniteInfluence : PassiveAbility
 
   private static bool IsAlliedHero(player caster, unit whichUnit)
   {
-    return IsUnitType(whichUnit, UNIT_TYPE_HERO) && GetOwningPlayer(whichUnit) == caster && UnitAlive(whichUnit);
+    return whichUnit.IsUnitType(unittype.Hero) && whichUnit.Owner == caster && whichUnit.Alive;
   }
 }

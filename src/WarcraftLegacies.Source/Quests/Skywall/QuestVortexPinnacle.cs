@@ -31,7 +31,7 @@ public sealed class QuestVortexPinnacle : QuestData
     AddObjective(new ObjectiveUpgrade(UNIT_N06R_GREAT_ALCAZAR_ELEMENTAL_T3, UNIT_N05Q_HOLDFAST_ELEMENTAL_T1));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
-      filterUnit => GetUnitTypeId(filterUnit) != FourCC("ngme"));
+      filterUnit => filterUnit.UnitType != FourCC("ngme"));
     ResearchId = UPGRADE_RSW1_QUEST_COMPLETED_THE_VORTEX_PINNACLE;
 
   }
@@ -46,7 +46,7 @@ public sealed class QuestVortexPinnacle : QuestData
   protected override void OnFail(Faction completingFaction)
   {
     var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      ? player.NeutralAggressive
       : completingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);

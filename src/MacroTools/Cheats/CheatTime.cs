@@ -24,7 +24,7 @@ public sealed class CheatTime : Command
       return "You must specify a valid float as the first parameter.";
     }
 
-    SetFloatGameState(GAME_STATE_TIME_OF_DAY, time);
+    fgamestate.TimeOfDay.Value = time;
     return $"Setting time of day to {time}.";
   }
 }

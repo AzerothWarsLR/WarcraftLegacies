@@ -28,7 +28,7 @@ public sealed class Warsong : Faction
   /// <inheritdoc />
 
   public Warsong(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup,
-    ArtifactSetup artifactSetup) : base("Warsong", PLAYER_COLOR_RED,
+    ArtifactSetup artifactSetup) : base("Warsong", playercolor.Red,
     @"ReplaceableTextures\CommandButtons\BTNHellScream.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;
@@ -69,11 +69,11 @@ public sealed class Warsong : Faction
     Regions.BarrenAmbient2.CleanupHostileUnits();
     Regions.AshenvaleCreeps.CleanupHostileUnits();
     var thunderBluffUnit = _preplacedUnitSystem.GetUnit(Constants.UNIT_N03M_THUNDERBLUFF);
-    var whichPlayer = Player(PLAYER_NEUTRAL_AGGRESSIVE);
-    SetUnitOwner(thunderBluffUnit, whichPlayer, true);
+    var whichPlayer = player.NeutralAggressive;
+    thunderBluffUnit.SetOwner(whichPlayer, true);
     var echoIslesUnit = _preplacedUnitSystem.GetUnit(Constants.UNIT_N02V_ECHO_ISLES);
-    var whichPlayer1 = Player(PLAYER_NEUTRAL_AGGRESSIVE);
-    SetUnitOwner(echoIslesUnit, whichPlayer1, true);
+    var whichPlayer1 = player.NeutralAggressive;
+    echoIslesUnit.SetOwner(whichPlayer1, true);
   }
 
   private void RegisterObjectLevels()

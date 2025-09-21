@@ -31,8 +31,8 @@ public sealed class OilHarvesterBuff : TickingBuff
   public override void OnApply()
   {
     _oilPool.OilPower.Income += OilHarvestedPerSecond;
-    BlzSetUnitMaxMana(Target, _oilPool.OilAmount);
-    SetUnitState(Target, UNIT_STATE_MANA, _oilPool.OilAmount);
+    Target.MaxMana = _oilPool.OilAmount;
+    Target.Mana = _oilPool.OilAmount;
   }
 
   /// <inheritdoc />
@@ -43,7 +43,7 @@ public sealed class OilHarvesterBuff : TickingBuff
   {
     if (!_oilPool.Active || _oilPool.OilAmount <= OilHarvestedPerSecond)
     {
-      KillUnit(Caster);
+      Caster.Kill();
       _oilPool.OilAmount -= OilHarvestedPerSecond;
       _oilPool.OilPower.Amount += OilHarvestedPerSecond;
       _oilPool.Dispose();
@@ -51,7 +51,7 @@ public sealed class OilHarvesterBuff : TickingBuff
     else
     {
       _oilPool.OilAmount -= OilHarvestedPerSecond;
-      SetUnitState(Target, UNIT_STATE_MANA, _oilPool.OilAmount);
+      Target.Mana = _oilPool.OilAmount;
     }
   }
 }

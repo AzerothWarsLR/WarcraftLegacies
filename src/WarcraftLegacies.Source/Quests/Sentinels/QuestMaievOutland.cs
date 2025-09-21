@@ -43,7 +43,7 @@ public sealed class QuestMaievOutland : QuestData
     _maiev.Unit?.SetPosition(new Point(-5252, -27597));
     if (_vaultOfTheWardens.Unit != null)
     {
-      UnitRemoveAbility(_vaultOfTheWardens.Unit, ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL);
+      _vaultOfTheWardens.Unit.RemoveAbility(ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL);
     }
 
     completingFaction?.Player.RescueGroup(_rescueUnits);
@@ -54,9 +54,9 @@ public sealed class QuestMaievOutland : QuestData
   {
     if (_vaultOfTheWardens.Unit != null)
     {
-      UnitRemoveAbility(_vaultOfTheWardens.Unit, ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL);
+      _vaultOfTheWardens.Unit.RemoveAbility(ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL);
     }
 
-    Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+    player.NeutralAggressive.RescueGroup(_rescueUnits);
   }
 }

@@ -23,8 +23,8 @@ public sealed class Artifact
     Item = whichItem;
     _locationType = ArtifactLocationType.Ground;
     SetOwningPlayer(null);
-    PlayerUnitEvents.Register(ItemTypeEvent.IsPickedUp, OnPickedUp, GetItemTypeId(whichItem));
-    PlayerUnitEvents.Register(ItemTypeEvent.IsDropped, OnDropped, GetItemTypeId(whichItem));
+    PlayerUnitEvents.Register(ItemTypeEvent.IsPickedUp, OnPickedUp, whichItem.TypeId);
+    PlayerUnitEvents.Register(ItemTypeEvent.IsDropped, OnDropped, whichItem.TypeId);
     PlayerUnitEvents.Register(UnitTypeEvent.ChangesOwner, OnUnitChangesOwner);
     PlayerData.FactionChange += OnPlayerFactionChange;
   }
@@ -75,9 +75,9 @@ public sealed class Artifact
     private set
     {
       _owningUnit = value;
-      if (OwningPlayer != GetOwningPlayer(value))
+      if (OwningPlayer != value.Owner)
       {
-        SetOwningPlayer(value != null ? GetOwningPlayer(value) : null);
+        SetOwningPlayer(value != null ? value.Owner : null);
       }
     }
   }
@@ -130,10 +130,9 @@ public sealed class Artifact
     }
 
     Titanforged = true;
-    BlzItemAddAbility(Item, _titanforgedAbility);
-    BlzSetItemExtendedTooltip(Item,
-      $"{BlzGetItemExtendedTooltip(Item)}|n|n|cff800000Titanforged|r|n{BlzGetAbilityExtendedTooltip(_titanforgedAbility, 0)}");
-    BlzSetItemDescription(Item, $"{BlzGetItemDescription(Item)}|n|cff800000Titanforged|r");
+    Item.AddAbility(_titanforgedAbility);
+    Item.ExtendedDescription = $"{Item.ExtendedDescription}|n|n|cff800000Titanforged|r|n{BlzGetAbilityExtendedTooltip(_titanforgedAbility, 0)}";
+    Item.Description = $"{Item.Description}|n|cff800000Titanforged|r";
   }
 
   /// <summary>
@@ -143,11 +142,11 @@ public sealed class Artifact
   {
     if (_owningUnit != null)
     {
-      whichPlayer.PingMinimapSimple(GetUnitX(_owningUnit), GetUnitY(_owningUnit), 3);
+      whichPlayer.PingMinimapSimple(_owningUnit.X, _owningUnit.Y, 3);
     }
     else
     {
-      whichPlayer.PingMinimapSimple(GetItemX(Item), GetItemY(Item), 3);
+      whichPlayer.PingMinimapSimple(Item.X, Item.Y, 3);
     }
   }
 
@@ -161,16 +160,16 @@ public sealed class Artifact
 
   private void OnPickedUp()
   {
-    OwningUnit = GetTriggerUnit();
+    OwningUnit = @event.Unit;
     PickedUp?.Invoke(this, this);
   }
 
   private void OnDropped()
   {
     //Remove dummy Artifact holding ability if the dropping unit had one
-    if (GetUnitAbilityLevel(_owningUnit, ArtifactHolderAbilId) > 0)
+    if (_owningUnit.GetAbilityLevel(ArtifactHolderAbilId) > 0)
     {
-      UnitRemoveAbility(_owningUnit, ArtifactHolderAbilId);
+      _owningUnit.RemoveAbility(ArtifactHolderAbilId);
     }
 
     SetOwningPlayer(null);
@@ -188,9 +187,9 @@ public sealed class Artifact
 
   private void OnUnitChangesOwner()
   {
-    if (OwningUnit == GetTriggerUnit())
+    if (OwningUnit == @event.Unit)
     {
-      SetOwningPlayer(GetOwningPlayer(GetTriggerUnit()));
+      SetOwningPlayer(@event.Unit.Owner);
     }
   }
 
@@ -200,6 +199,6 @@ public sealed class Artifact
   internal void Dispose()
   {
     Disposed?.Invoke(this, this);
-    RemoveItem(Item);
+    Item.Dispose();
   }
 }

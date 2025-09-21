@@ -18,7 +18,7 @@ public sealed class ObjectiveLegendNotPermanentlyDead : Objective
   public ObjectiveLegendNotPermanentlyDead(LegendaryHero target)
   {
     _target = target;
-    Description = IsUnitType(target.Unit, UNIT_TYPE_STRUCTURE)
+    Description = target.Unit.IsUnitType(unittype.Structure)
       ? $"{target.Name} is intact"
       : $"{target.Name} is alive";
 
@@ -33,7 +33,7 @@ public sealed class ObjectiveLegendNotPermanentlyDead : Objective
 
   private void OnAnyUnitTrain()
   {
-    if (!ProgressLocked && _target.Unit == GetTrainedUnit())
+    if (!ProgressLocked && _target.Unit == @event.TrainedUnit)
     {
       Progress = QuestProgress.Complete;
     }
@@ -41,7 +41,7 @@ public sealed class ObjectiveLegendNotPermanentlyDead : Objective
 
   public override void OnAdd(FactionSystem.Faction whichFaction)
   {
-    if (UnitAlive(_target.Unit))
+    if (_target.Unit.Alive)
     {
       Progress = QuestProgress.Complete;
     }

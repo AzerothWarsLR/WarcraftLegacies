@@ -18,18 +18,18 @@ public sealed class ArtifactBook : Book<Artifact, ArtifactPage, ArtifactCard, Ar
     ArtifactManager.ArtifactRegistered += ArtifactCreated;
     PopulatePages();
     Title = "Artifacts (F7)";
-    LauncherParent = BlzGetFrameByName("UpperButtonBarQuestsButton", 0);
+    LauncherParent = framehandle.Get("UpperButtonBarQuestsButton", 0);
     Position = new Point(0.4f, 0.35f);
-    var trigger = CreateTrigger();
-    trigger.RegisterSharedKeyEvent(OSKEY_F7, BlzGetTriggerPlayerMetaKey(), false);
-    TriggerAddAction(trigger, () =>
+    trigger trigger = trigger.Create();
+    trigger.RegisterSharedKeyEvent(oskeytype.F7, @event.PlayerMetaKey, false);
+    trigger.AddAction(() =>
     {
-      if (GetTriggerPlayer() != GetLocalPlayer())
+      if (@event.Player != player.LocalPlayer)
       {
         return;
       }
 
-      Open(GetLocalPlayer());
+      Open(player.LocalPlayer);
     });
   }
 

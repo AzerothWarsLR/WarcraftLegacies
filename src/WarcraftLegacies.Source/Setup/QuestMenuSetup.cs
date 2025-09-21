@@ -8,25 +8,25 @@ public static class QuestMenuSetup
   public static void Setup()
   {
     //Quest frames aren't rendered until the Quest menu is first accessed
-    BlzFrameClick(BlzGetFrameByName("UpperButtonBarQuestsButton", 0));
-    BlzFrameClick(BlzGetFrameByName("QuestAcceptButton", 0));
+    framehandle.Get("UpperButtonBarQuestsButton", 0).Click();
+    framehandle.Get("QuestAcceptButton", 0).Click();
 
-    var questDisplayBackdrop = BlzGetFrameByName("QuestDisplayBackdrop", 0);
-    var questBackdrop = BlzGetFrameByName("QuestBackdrop", 0);
-    var questAcceptButton = BlzGetFrameByName("QuestAcceptButton", 0);
-    var questItemListContainer = BlzGetFrameByName("QuestItemListContainer", 0);
+    var questDisplayBackdrop = framehandle.Get("QuestDisplayBackdrop", 0);
+    var questBackdrop = framehandle.Get("QuestBackdrop", 0);
+    var questAcceptButton = framehandle.Get("QuestAcceptButton", 0);
+    var questItemListContainer = framehandle.Get("QuestItemListContainer", 0);
 
     // QuestDisplay
-    var questDisplay = BlzGetFrameByName("QuestDisplay", 0);
-    BlzFrameClearAllPoints(questDisplay);
-    BlzFrameSetPoint(questDisplay, FRAMEPOINT_TOPLEFT, questItemListContainer, FRAMEPOINT_BOTTOMLEFT, 0.003f, 0.002f);
-    BlzFrameSetPoint(questDisplay, FRAMEPOINT_BOTTOMRIGHT, questDisplayBackdrop, FRAMEPOINT_BOTTOMRIGHT, -0.003f, 0);
+    var questDisplay = framehandle.Get("QuestDisplay", 0);
+    questDisplay.ClearPoints();
+    questDisplay.SetPoint(framepointtype.TopLeft, 0.003f, 0.002f, questItemListContainer, framepointtype.BottomLeft);
+    questDisplay.SetPoint(framepointtype.BottomRight, -0.003f, 0, questDisplayBackdrop, framepointtype.BottomRight);
 
     // Relocate button
-    BlzFrameSetPoint(questDisplayBackdrop, FRAMEPOINT_BOTTOM, questBackdrop, FRAMEPOINT_BOTTOM, 0f, 0.025f);
-    BlzFrameClearAllPoints(questAcceptButton);
-    BlzFrameSetPoint(questAcceptButton, FRAMEPOINT_TOPRIGHT, questBackdrop, FRAMEPOINT_TOPRIGHT, -0.016f, -0.016f);
-    BlzFrameSetText(questAcceptButton, "×");
-    BlzFrameSetSize(questAcceptButton, 0.03f, 0.03f);
+    questDisplayBackdrop.SetPoint(framepointtype.Bottom, 0f, 0.025f, questBackdrop, framepointtype.Bottom);
+    questAcceptButton.ClearPoints();
+    questAcceptButton.SetPoint(framepointtype.TopRight, -0.016f, -0.016f, questBackdrop, framepointtype.TopRight);
+    questAcceptButton.Text = "×";
+    questAcceptButton.SetSize(0.03f, 0.03f);
   }
 }

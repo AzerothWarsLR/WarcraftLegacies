@@ -16,7 +16,7 @@ public sealed class QuestWellOfEternity : QuestData
     @"ReplaceableTextures\CommandButtons\BTNFountainOfLife.blp")
   {
     _well = preplacedUnitSystem.GetUnit(UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER);
-    ShowUnit(_well, false);
+    _well.IsVisible = false;
     AddObjective(new ObjectiveChannelRect(Regions.MaelstromChannel, "The Maelstrom", kiljaeden, 420, 90, Title));
     Global = true;
   }
@@ -32,7 +32,7 @@ public sealed class QuestWellOfEternity : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    ShowUnit(_well, true);
-    SetUnitOwner(_well, completingFaction.Player, true);
+    _well.IsVisible = true;
+    _well.SetOwner(completingFaction.Player, true);
   }
 }

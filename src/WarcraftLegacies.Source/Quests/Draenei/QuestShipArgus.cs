@@ -24,9 +24,9 @@ public sealed class QuestShipArgus : QuestData
     "Tempest Keep still has the power to open a portal Argus, but Velen needs to channel it",
     @"ReplaceableTextures\CommandButtons\BTNArcaneCastle.blp")
   {
-    ShowUnit(outlandToArgusWaygate, false);
+    outlandToArgusWaygate.IsVisible = false;
     _outlandToArgusWaygate = outlandToArgusWaygate;
-    ShowUnit(argusToOutlandWaygate, false);
+    argusToOutlandWaygate.IsVisible = false;
     _argusToOutlandWaygate = argusToOutlandWaygate;
     AddObjective(new ObjectiveChannelRect(Regions.TempestKeepSpawn, "Tempest Keep", velen, 180, 0));
     Global = true;
@@ -42,10 +42,10 @@ public sealed class QuestShipArgus : QuestData
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
   {
-    ShowUnit(_outlandToArgusWaygate, true);
+    _outlandToArgusWaygate.IsVisible = true;
     _outlandToArgusWaygate
       .SetWaygateDestination(Regions.TempestKeepSpawn.Center);
-    ShowUnit(_argusToOutlandWaygate, true);
+    _argusToOutlandWaygate.IsVisible = true;
     _argusToOutlandWaygate
       .SetWaygateDestination(Regions.OutlandToArgus.Center);
   }

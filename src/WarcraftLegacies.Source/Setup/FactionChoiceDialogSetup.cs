@@ -23,7 +23,7 @@ public static class FactionChoiceDialogSetup
       Difficulty = FactionLearningDifficulty.Advanced,
       StartingArea = Regions.SunfuryStartingPosition
     };
-    new FactionChoiceDialogPresenter(illidari, sunfury).Run(Player(15));
+    new FactionChoiceDialogPresenter(illidari, sunfury).Run(player.Create(15));
 
     var dalaran = new FactionChoice
     {
@@ -42,7 +42,7 @@ public static class FactionChoiceDialogSetup
       StartingArea = Regions.DalaStartPos,
       RequiresCheats = false
     };
-    new FactionChoiceDialogPresenter(dalaran, gilneas).Run(Player(7));
+    new FactionChoiceDialogPresenter(dalaran, gilneas).Run(player.Create(7));
 
     var sentinels = new FactionChoice
     {
@@ -62,7 +62,7 @@ public static class FactionChoiceDialogSetup
       StartingArea = Regions.SentDraeSharedStartPos,
       RequiresCheats = false
     };
-    new FactionChoiceDialogPresenter(sentinels, draenei).Run(Player(18));
+    new FactionChoiceDialogPresenter(sentinels, draenei).Run(player.Create(18));
     var frostwolf = new FactionChoice
     {
       Faction = new Frostwolf(preplacedUnitSystem,
@@ -81,6 +81,6 @@ public static class FactionChoiceDialogSetup
       StartingArea = Regions.FrostwolfStartPos,
       RequiresCheats = false
     };
-    new FactionChoiceDialogPresenter(frostwolf, warsong).Run(Player(0));
+    new FactionChoiceDialogPresenter(frostwolf, warsong).Run(player.Create(0));
   }
 }

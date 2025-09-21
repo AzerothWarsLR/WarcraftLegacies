@@ -20,7 +20,7 @@ public sealed class Bilgewater : Faction
 
   /// <inheritdoc />
   public Bilgewater(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup,
-    ArtifactSetup artifactSetup) : base("Bilgewater", PLAYER_COLOR_LIGHT_GRAY,
+    ArtifactSetup artifactSetup) : base("Bilgewater", playercolor.LightGray,
     @"ReplaceableTextures\CommandButtons\BTNHeroTinker.blp")
   {
     TraditionalTeam = TeamSetup.Horde;

@@ -14,18 +14,18 @@ public static class UnallyCommand
 
   private static void Actions()
   {
-    var triggerPlayer = GetTriggerPlayer();
+    var triggerPlayer = @event.Player;
     triggerPlayer.GetFaction()?.Unally();
   }
 
   public static void Setup()
   {
-    var trig = CreateTrigger();
+    var trig = trigger.Create();
     foreach (var player in Util.EnumeratePlayers())
     {
-      TriggerRegisterPlayerChatEvent(trig, player, Command, true);
+      trig.RegisterPlayerChatEvent(player, Command, true);
     }
 
-    TriggerAddAction(trig, Actions);
+    trig.AddAction(Actions);
   }
 }

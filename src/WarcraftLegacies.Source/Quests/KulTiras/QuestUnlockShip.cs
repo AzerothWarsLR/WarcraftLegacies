@@ -8,7 +8,6 @@ using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.FactionMechanics.KulTiras;
 using WCSharp.Shared.Data;
-using static WCSharp.Api.Blizzard;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras;
 
@@ -68,8 +67,8 @@ public sealed class QuestUnlockShip : QuestData
     }
     else
     {
-      Player(bj_PLAYER_NEUTRAL_VICTIM).RescueGroup(_rescueUnits);
-      _proudmooreCapitalShip.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      player.NeutralVictim.RescueGroup(_rescueUnits);
+      _proudmooreCapitalShip.Rescue(player.NeutralAggressive);
     }
 
     EnsureShipIsUnlocked(completingFaction);
@@ -83,10 +82,10 @@ public sealed class QuestUnlockShip : QuestData
     }
     else
     {
-      _proudmooreCapitalShip.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      _proudmooreCapitalShip.Rescue(player.NeutralAggressive);
     }
 
-    BlzPauseUnitEx(_proudmooreCapitalShip, false);
+    _proudmooreCapitalShip.SetPausedEx(false);
   }
 
   /// <inheritdoc/>
@@ -97,7 +96,7 @@ public sealed class QuestUnlockShip : QuestData
       return;
     }
 
-    RemoveUnit(_proudmooreCapitalShip);
+    _proudmooreCapitalShip.Dispose();
     _questProcessed = true;
   }
 }

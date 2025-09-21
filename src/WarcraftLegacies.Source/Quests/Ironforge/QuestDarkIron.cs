@@ -48,6 +48,6 @@ public sealed class QuestDarkIron : QuestData
   /// <inheritdoc />
   protected override void OnFail(Faction failingFaction)
   {
-    Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+    player.NeutralAggressive.RescueGroup(_rescueUnits);
   }
 }

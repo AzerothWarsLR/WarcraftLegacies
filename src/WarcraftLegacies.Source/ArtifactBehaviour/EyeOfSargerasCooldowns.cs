@@ -15,7 +15,7 @@ public static class EyeOfSargerasCooldowns
 
   private static void ItemPickup()
   {
-    var triggerUnit = GetTriggerUnit();
+    var triggerUnit = @event.Unit;
     triggerUnit.StartAbilityCooldown(SpellA);
     triggerUnit.StartAbilityCooldown(SpellB);
     triggerUnit.StartAbilityCooldown(SpellC);

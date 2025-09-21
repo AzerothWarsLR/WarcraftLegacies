@@ -24,7 +24,7 @@ public sealed class ObjectiveDestroyAnyCapital : Objective
   {
     CapitalManager.CapitalDestroyed += (_, capital) =>
     {
-      if (IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(GetKillingUnit())))
+      if (IsPlayerOnSameTeamAsAnyEligibleFaction(@event.KillingUnit.Owner))
       {
         DestroyedCapital = capital;
         Progress = QuestProgress.Complete;

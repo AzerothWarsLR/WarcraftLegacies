@@ -20,26 +20,26 @@ public sealed class ObjectiveLegendInRect : Objective
     _target = RectToRegion(_targetRect);
     _legendaryHero = legendaryHero;
     Description = $"{legendaryHero.Name} is at {rectName}";
-    TriggerRegisterEnterRegion(_entersRect.Trigger, _target, null);
-    TriggerAddAction(_entersRect.Trigger, OnRegionEnter);
-    TriggerRegisterLeaveRegion(_exitsRect.Trigger, _target, null);
-    TriggerAddAction(_exitsRect.Trigger, OnRegionExit);
+    _entersRect.Trigger.RegisterEnterRegion(_target, null);
+    _entersRect.Trigger.AddAction(OnRegionEnter);
+    _exitsRect.Trigger.RegisterLeaveRegion(_target, null);
+    _exitsRect.Trigger.AddAction(OnRegionExit);
     PingPath = "MinimapQuestTurnIn";
     ShowsInQuestLog = true;
     DisplaysPosition = true;
-    Position = new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
+    Position = new(_targetRect.CenterX, _targetRect.CenterY);
   }
 
   private static region RectToRegion(rect whichRect)
   {
-    var rectRegion = CreateRegion();
-    RegionAddRect(rectRegion, whichRect);
+    var rectRegion = region.Create();
+    rectRegion.AddRect(whichRect);
     return rectRegion;
   }
 
   private void OnRegionExit()
   {
-    if (UnitAlive(_legendaryHero.Unit) && IsUnitInRegion(_target, _legendaryHero.Unit))
+    if (_legendaryHero.Unit.Alive && _target.Contains(_legendaryHero.Unit))
     {
       Progress = QuestProgress.Complete;
     }
@@ -51,7 +51,7 @@ public sealed class ObjectiveLegendInRect : Objective
 
   private void OnRegionEnter()
   {
-    if (UnitAlive(_legendaryHero.Unit) && GetTriggerUnit() == _legendaryHero.Unit)
+    if (_legendaryHero.Unit.Alive && @event.Unit == _legendaryHero.Unit)
     {
       Progress = QuestProgress.Complete;
     }

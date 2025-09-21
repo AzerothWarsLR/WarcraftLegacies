@@ -30,7 +30,7 @@ using WCSharp.Shared.Data;
                     - if all destructables should be added to the system, let it return true
                     - example:
                         private function filter returns boolean
-                            return GetDestructableMaxLife(GetFilterDestructable()) == 1
+                            return GetFilterDestructable().MaxLife == 1
                         endfunction
                         -> automaticly adds all destructables on the map with a maximum life of 1 on map init to the system
             
@@ -72,17 +72,17 @@ public static class DestructibleHider
   private const int Tilesize = DrawDistance / TileResolution;
 
   private static bool Filter(destructable destructable) =>
-    GetDestructableMaxLife(destructable) == 1;
+    destructable.MaxLife == 1;
 
   /// <summary>
   /// Constructor for the DestructibleHider
   /// </summary>
   static DestructibleHider()
   {
-    _mapMinX = GetRectMinX(Rectangle.WorldBounds.Rect);
-    _mapMinY = GetRectMinY(Rectangle.WorldBounds.Rect);
-    _columns = GetColumn(GetRectMaxX(Rectangle.WorldBounds.Rect), _mapMinX);
-    TimerStart(CreateTimer(), Interval, true, Periodic);
+    _mapMinX = Rectangle.WorldBounds.Rect.MinX;
+    _mapMinY = Rectangle.WorldBounds.Rect.MinY;
+    _columns = GetColumn(Rectangle.WorldBounds.Rect.MaxX, _mapMinX);
+    timer.Create().Start(Interval, true, Periodic);
   }
 
   private static int GetTileId(float x, float y)
@@ -124,7 +124,7 @@ public static class DestructibleHider
       return;
     }
 
-    var tileId = GetTileId(GetDestructableX(destructable), GetDestructableY(destructable));
+    var tileId = GetTileId(destructable.X, destructable.Y);
     if (!_destructablesByTileId.ContainsKey(tileId))
     {
       _destructablesByTileId[tileId] = new List<destructable>();
@@ -139,7 +139,7 @@ public static class DestructibleHider
   /// <param name="destructable"></param>
   public static void Unregister(destructable destructable)
   {
-    var tileId = GetTileId(GetDestructableX(destructable), GetDestructableY(destructable));
+    var tileId = GetTileId(destructable.X, destructable.Y);
     if (!_destructablesByTileId.ContainsKey(tileId))
     {
       return;
@@ -211,7 +211,7 @@ public static class DestructibleHider
 
       foreach (var destructable in _destructablesByTileId[tileId])
       {
-        ShowDestructable(destructable, true);
+        destructable.SetVisibility(true);
       }
 
     }
@@ -228,7 +228,7 @@ public static class DestructibleHider
 
       foreach (var destructable in _destructablesByTileId[tileId])
       {
-        ShowDestructable(destructable, false);
+        destructable.SetVisibility(false);
       }
     }
   }

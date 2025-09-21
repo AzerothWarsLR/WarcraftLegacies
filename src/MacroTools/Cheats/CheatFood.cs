@@ -24,7 +24,7 @@ public sealed class CheatFood : Command
   /// <inheritdoc />
   public override string Execute(player cheater, params string[] parameters)
   {
-    cheater.AdjustPlayerState(PLAYER_STATE_RESOURCE_FOOD_CAP, S2I(parameters[0]));
+    cheater.AdjustPlayerState(playerstate.ResourceFoodCap, S2I(parameters[0]));
     return "Granted " + parameters[0] + " food.";
   }
 }

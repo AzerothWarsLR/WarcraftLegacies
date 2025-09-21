@@ -21,10 +21,10 @@ public sealed class ObjectiveExpire : Objective
   {
     var turn = GameTime.ConvertGameTimeToTurn(duration);
     Description = $"Turn {turn} hasn't started";
-    _expirationTimer = CreateTimer();
-    _warningTimer = CreateTimer();
-    TimerStart(_expirationTimer, duration, false, OnExpire);
-    TimerStart(_warningTimer, duration - 120, false, OnWarning);
+    _expirationTimer = timer.Create();
+    _warningTimer = timer.Create();
+    _expirationTimer.Start(duration, false, OnExpire);
+    _warningTimer.Start(duration - 120, false, OnWarning);
     _questName = questName;
     ShowsInPopups = false;
   }
@@ -37,19 +37,18 @@ public sealed class ObjectiveExpire : Objective
 
   private void OnExpire()
   {
-    DestroyTimer(_expirationTimer);
+    _expirationTimer.Dispose();
     Progress = QuestProgress.Failed;
   }
 
   private void OnWarning()
   {
-    DestroyTimer(_warningTimer);
+    _warningTimer.Dispose();
     foreach (var assignedFaction in _assignedFactions)
     {
       if (Progress != QuestProgress.Complete)
       {
-        DisplayTextToPlayer(assignedFaction.Player, 0, 0,
-          $"\n|c00FF7F00WARNING|r - Quest {_questName} will expire in 2 minutes.");
+        assignedFaction.Player.DisplayTextTo($"\n|c00FF7F00WARNING|r - Quest {_questName} will expire in 2 minutes.", 0, 0);
       }
     }
   }

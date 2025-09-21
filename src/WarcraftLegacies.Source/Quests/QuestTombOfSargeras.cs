@@ -33,17 +33,17 @@ public sealed class QuestTombOfSargeras : QuestData
     "When the Guardian Aegwynn defeated the fallen Titan Sargeras, she sealed his corpse within the temple that would come to be known as the Tomb of Sargeras. It lies still there, tempting those with the ambition to seize the power that remains within.",
     @"ReplaceableTextures\CommandButtons\BTNEyeOfSargeras.blp")
   {
-    CreateRegion();
+    region.Create();
     _entrance = entrance;
-    SetUnitAnimation(guldanRemains, "death");
-    SetUnitInvulnerable(guldanRemains, true);
+    guldanRemains.SetAnimation("death");
+    guldanRemains.IsInvulnerable = true;
     AddObjective(new ObjectiveTime(900));
     _enterTombOfSargerasRegion =
       new ObjectiveAnyHeroWithLevelReachRect(10, Regions.Sargeras_Entrance, "the Tomb of Sargeras' entrance");
     AddObjective(_enterTombOfSargerasRegion);
     _preventAccessTriggers = CreatePreventAccessTriggers(interiorRects);
     HideUnitsInsideTomb(interiorRects);
-    SetUnitInvulnerable(entranceDoor, true);
+    entranceDoor.IsInvulnerable = true;
     _entranceDoor = entranceDoor;
     IsFactionQuest = false;
   }
@@ -58,18 +58,18 @@ public sealed class QuestTombOfSargeras : QuestData
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
   {
-    Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+    player.NeutralAggressive.RescueGroup(_rescueUnits);
     _rescueUnits.Clear();
     if (_preventAccessTriggers != null)
     {
       foreach (var preventAccessTrigger in _preventAccessTriggers)
       {
-        DestroyTrigger(preventAccessTrigger);
+        preventAccessTrigger.Dispose();
       }
     }
 
     _preventAccessTriggers = null;
-    SetUnitInvulnerable(_entranceDoor, false);
+    _entranceDoor.IsInvulnerable = false;
     _entranceDoor
       .TakeDamage(_enterTombOfSargerasRegion.CompletingUnit, 10000);
   }
@@ -78,11 +78,11 @@ public sealed class QuestTombOfSargeras : QuestData
   {
     foreach (var rect in rectangles)
     {
-      foreach (var unit in GlobalGroup.EnumUnitsInRect(rect.Rect).Where(x => !BlzIsUnitInvulnerable(x)))
+      foreach (var unit in GlobalGroup.EnumUnitsInRect(rect.Rect).Where(x => !x.IsInvulnerable))
       {
         _rescueUnits.Add(unit);
-        SetUnitInvulnerable(unit, true);
-        ShowUnit(unit, false);
+        unit.IsInvulnerable = true;
+        unit.IsVisible = false;
       }
     }
   }
@@ -92,9 +92,9 @@ public sealed class QuestTombOfSargeras : QuestData
     List<trigger> triggers = new();
     foreach (var rect in rectangles)
     {
-      var enterTrigger = CreateTrigger();
-      TriggerRegisterEnterRegion(enterTrigger, rect.Region, null);
-      TriggerAddAction(enterTrigger, () => GetEnteringUnit().SetPosition(_entrance.Center));
+      var enterTrigger = trigger.Create();
+      enterTrigger.RegisterEnterRegion(rect.Region, null);
+      enterTrigger.AddAction(() => @event.EnteringUnit.SetPosition(_entrance.Center));
       triggers.Add(enterTrigger);
     }
 

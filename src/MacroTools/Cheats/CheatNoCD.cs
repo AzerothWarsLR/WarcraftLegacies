@@ -41,9 +41,9 @@ public sealed class CheatNocd : Command
 
   private static void Spell()
   {
-    if (IsCheatActive(GetTriggerPlayer()))
+    if (IsCheatActive(@event.Player))
     {
-      BlzEndUnitAbilityCooldown(GetTriggerUnit(), GetSpellAbilityId());
+      @event.Unit.EndAbilityCooldown(@event.SpellAbilityId);
     }
   }
 

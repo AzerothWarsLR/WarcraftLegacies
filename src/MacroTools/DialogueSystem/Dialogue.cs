@@ -15,7 +15,7 @@ public sealed class Dialogue : IHasPlayableDialogue
   public sound Sound { get; }
 
   /// <inheritdoc />
-  public float Length => GetSoundDuration(Sound) / 1000f;
+  public float Length => Sound.Duration / 1000f;
 
   /// <summary>
   /// Initializes a new instance of the <see cref="Dialogue"/> class.
@@ -40,7 +40,7 @@ public sealed class Dialogue : IHasPlayableDialogue
 
     if (whichPlayer.GetPlayerSettings().ShowCaptions)
     {
-      DisplayTextToPlayer(whichPlayer, 0, 0, $"|cffffcc00{_speaker}:|r {_caption}");
+      whichPlayer.DisplayTextTo($"|cffffcc00{_speaker}:|r {_caption}", 0, 0);
     }
   }
 }

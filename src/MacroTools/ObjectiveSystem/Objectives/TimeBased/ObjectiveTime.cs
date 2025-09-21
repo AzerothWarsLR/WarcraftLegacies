@@ -9,7 +9,7 @@ public sealed class ObjectiveTime : Objective
 
   private void OnExpire()
   {
-    DestroyTimer(_timer);
+    _timer.Dispose();
     Progress = QuestProgress.Complete;
   }
 
@@ -17,7 +17,7 @@ public sealed class ObjectiveTime : Objective
   {
     var turn = GameTime.ConvertGameTimeToTurn(duration);
     Description = $"Turn {turn} has started";
-    _timer = CreateTimer();
-    TimerStart(_timer, duration, false, OnExpire);
+    _timer = timer.Create();
+    _timer.Start(duration, false, OnExpire);
   }
 }

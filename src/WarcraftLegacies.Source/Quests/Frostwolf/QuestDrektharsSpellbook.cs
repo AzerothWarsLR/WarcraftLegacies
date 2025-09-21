@@ -31,7 +31,7 @@ public sealed class QuestDrektharsSpellbook : QuestData
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
   {
-    var drektharsSpellBook = new Artifact(CreateItem(ITEM_DTSB_DREK_THAR_S_SPELLBOOK, 0, 0));
+    var drektharsSpellBook = new Artifact(item.Create(ITEM_DTSB_DREK_THAR_S_SPELLBOOK, 0, 0));
     ArtifactManager.Register(drektharsSpellBook);
     _thrall.Unit?.AddItemSafe(drektharsSpellBook.Item);
   }

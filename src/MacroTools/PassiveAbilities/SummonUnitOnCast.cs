@@ -52,15 +52,15 @@ public sealed class SummonUnitOnCast : PassiveAbility, IEffectOnSpellEffect
   /// <inheritdoc />
   public void OnSpellEffect()
   {
-    var triggerUnit = GetTriggerUnit();
-    var abilityLevel = GetUnitAbilityLevel(triggerUnit, _abilityTypeId);
+    var triggerUnit = @event.Unit;
+    var abilityLevel = triggerUnit.GetAbilityLevel(_abilityTypeId);
 
     if (GetRandomReal(0, 1) > ProcChance)
     {
       return;
     }
 
-    if (abilityLevel == 0 || !AbilityWhitelist.Contains(GetSpellAbilityId()))
+    if (abilityLevel == 0 || !AbilityWhitelist.Contains(@event.SpellAbilityId))
     {
       return;
     }
@@ -70,12 +70,12 @@ public sealed class SummonUnitOnCast : PassiveAbility, IEffectOnSpellEffect
 
     for (var i = 0; i < summonCount; i++)
     {
-      var summonedUnit = CreateUnit(GetOwningPlayer(triggerUnit), SummonUnitTypeId, casterPosition.X, casterPosition.Y, GetUnitFacing(triggerUnit));
-      UnitAddType(summonedUnit, UNIT_TYPE_SUMMONED);
+      var summonedUnit = unit.Create(triggerUnit.Owner, SummonUnitTypeId, casterPosition.X, casterPosition.Y, triggerUnit.Facing);
+      summonedUnit.AddType(unittype.Summoned);
       summonedUnit.SetTimedLife(Duration);
-      var summonedUnitX = GetUnitX(summonedUnit);
-      var summonedUnitY = GetUnitY(summonedUnit);
-      EffectSystem.Add(AddSpecialEffect(SpecialEffectPath, summonedUnitX, summonedUnitY), 1);
+      var summonedUnitX = summonedUnit.X;
+      var summonedUnitY = summonedUnit.Y;
+      EffectSystem.Add(effect.Create(SpecialEffectPath, summonedUnitX, summonedUnitY), 1);
     }
   }
 }

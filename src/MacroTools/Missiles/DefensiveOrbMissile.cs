@@ -65,9 +65,9 @@ public sealed class DefensiveOrbMissile : OrbitalMissile
   }
 
   private bool IsValidTarget(unit whichUnit) =>
-    !IsUnitAlly(whichUnit, GetOwningPlayer(Caster)) && UnitAlive(whichUnit) &&
-    !BlzIsUnitInvulnerable(whichUnit) && !IsUnitType(whichUnit, UNIT_TYPE_ANCIENT) &&
-    !IsUnitType(whichUnit, UNIT_TYPE_FLYING);
+    !whichUnit.IsAllyTo(Caster.Owner) && whichUnit.Alive &&
+    !whichUnit.IsInvulnerable && !whichUnit.IsUnitType(unittype.Ancient) &&
+    !whichUnit.IsUnitType(unittype.Flying);
 
   private sealed class UnitHit
   {

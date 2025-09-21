@@ -28,7 +28,7 @@ public sealed class LegendGilneas
       UnitType = UNIT_TGGN_PRINCESS_OF_GILNEAS_GILNEAS,
       StartingArtifacts = new()
       {
-        new(CreateItem(ITEM_I00R_SCYTHE_OF_ELUNE, Regions.ArtifactDummyInstance.Center.X,Regions.ArtifactDummyInstance.Center.Y))
+        new(item.Create(ITEM_I00R_SCYTHE_OF_ELUNE, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
       }
     };
 

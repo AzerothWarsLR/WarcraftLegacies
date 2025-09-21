@@ -51,7 +51,7 @@ public sealed class QuestVaultoftheWardens : QuestData
   {
     if (_vaultOfTheWardens.Unit != null)
     {
-      KillUnit(_vaultOfTheWardens.Unit);
+      _vaultOfTheWardens.Unit.Kill();
     }
   }
 
@@ -60,7 +60,7 @@ public sealed class QuestVaultoftheWardens : QuestData
   {
     if (_vaultOfTheWardens.Unit != null)
     {
-      SetUnitInvulnerable(_vaultOfTheWardens.Unit, true);
+      _vaultOfTheWardens.Unit.IsInvulnerable = true;
     }
   }
 }

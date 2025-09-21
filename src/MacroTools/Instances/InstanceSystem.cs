@@ -15,7 +15,7 @@ public static class InstanceSystem
   {
     foreach (var instance in _registeredInstances)
     {
-      if (IsPointInRegion(instance.Region, position.X, position.Y))
+      if (instance.Region.Contains(position.X, position.Y))
       {
         return instance;
       }

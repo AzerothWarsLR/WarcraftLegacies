@@ -31,21 +31,21 @@ public sealed class RendSoul : Spell
   /// <inheritdoc />
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    var targetMaximumHitPoints = BlzGetUnitMaxHP(target);
+    var targetMaximumHitPoints = target.MaxLife;
     var healthGained = targetMaximumHitPoints * HitPointsPerTargetMaximumHitPoints;
     var manaGained = targetMaximumHitPoints * ManaPointsPerTargetMaximumHitPoints;
 
-    EffectSystem.Add(AddSpecialEffect(EffectCaster, GetUnitX(caster), GetUnitY(caster)));
-    EffectSystem.Add(AddSpecialEffect(EffectTarget, GetUnitX(target), GetUnitY(target)));
+    EffectSystem.Add(effect.Create(EffectCaster, caster.X, caster.Y));
+    EffectSystem.Add(effect.Create(EffectTarget, target.X, target.Y));
 
     var targetPosition = target.GetPosition();
-    KillUnit(target);
+    target.Kill();
 
     caster.Heal(healthGained);
     caster.RestoreMana(manaGained);
 
-    var summonedUnit = CreateUnit(GetOwningPlayer(caster), UnitTypeSummoned, targetPosition.X, targetPosition.Y, GetUnitFacing(caster));
+    var summonedUnit = unit.Create(caster.Owner, UnitTypeSummoned, targetPosition.X, targetPosition.Y, caster.Facing);
     summonedUnit.SetTimedLife(Duration);
-    UnitAddType(summonedUnit, UNIT_TYPE_SUMMONED);
+    summonedUnit.AddType(unittype.Summoned);
   }
 }
