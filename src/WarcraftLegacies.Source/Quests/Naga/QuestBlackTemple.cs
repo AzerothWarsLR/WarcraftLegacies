@@ -39,6 +39,7 @@ public sealed class QuestBlackTemple : QuestData
     AddObjective(new ObjectiveSelfExists());
     ResearchId = UPGRADE_R09Y_QUEST_COMPLETED_RETURN_TO_OUTLAND;
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
+    Knowledge = 5;
   }
 
   /// <inheritdoc />

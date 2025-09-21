@@ -12,6 +12,7 @@ public sealed class QuestRegroupCastaway : QuestData
     AddObjective(new ObjectiveControlPoint(UNIT_N00W_ZUL_GURUB));
     AddObjective(new ObjectiveControlPoint(UNIT_N00Y_DEADWIND_PASS));
     AddObjective(new ObjectiveControlPoint(UNIT_N00U_SWAMP_OF_SORROWS));
+    Knowledge = 20;
   }
 
   public override string RewardFlavour => "The powerful Summoners are serving their Master once again.";

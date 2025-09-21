@@ -24,6 +24,7 @@ public sealed class QuestBrokenIsles : QuestData
     }, "the Broken Isles"));
     AddObjective(new ObjectiveLegendReachRect(illidan, Regions.Sargeras_Entrance, "the Tomb of Sargeras entrance"));
     ResearchId = UPGRADE_R095_QUEST_COMPLETED_THE_BROKEN_ISLES;
+    Knowledge = 5;
   }
 
   /// <inheritdoc/>
