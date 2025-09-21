@@ -9,6 +9,8 @@ InfoPanelIconArmorDivine=ReplaceableTextures\CommandButtons\ATTDivineArmor.blp
 InfoPanelIconArmorDivineNeutral=ReplaceableTextures\CommandButtons\ATTDivineArmor.blp
 InfoPanelIconArmorNormal=UI\Widgets\Console\Human\UPGGate.blp
 InfoPanelIconArmorNormalNeutral=UI\Widgets\Console\Human\BTNGate.blp
+LumberIcon=war3mapImported\BTNTomeR.blp
+ToolTipLumberIcon=war3mapImported\BTNTomeRes32x32.blp
 
 [FrameDef]
 ARMORTIP_DIVINE="Pierce: |cff00ff0050%|r|NSiege: |cff00ff0050%|r|NMagic: |cff00ff0050%|r|nSpell: |cff00ff000%|r|NNormal: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r"
@@ -33,6 +35,8 @@ ARMORTIP_NORMAL_V0M="Medium: |cff00ff0030% |r|NUnarmored: |cff00ff0030%|r|NLight
 ARMORTIP_SMALL="Normal: |cffffff00100%|r|NSiege: |cffffff00100%|r|NSpell: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r|NMagic: |cffff0000125%|r|NPierce: |cffff0000200%|r"
 ARMORTIP_SMALL_V0C="Normal: |cffffff00100%|r|NSiege: |cffffff00100%|r|NSpell: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r|NMagic: |cffff0000125%|r|NPierce: |cffff0000200%|r"
 ARMORTIP_SMALL_V0M="Normal: |cffffff00100%|r|NSiege: |cffffff00100%|r|NSpell: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r|NMagic: |cffff0000125%|r|NPierce: |cffff0000200%|r"
+COLON_LUMBER="Knowledge"
+COLON_LUMBER_INCOME_RATE="Knowledge Income Rate:"
 DAMAGETIP_CHAOS="Unarmored:|cff00ff00110%|r |nLight:|cff00ff00110%|r|NMedium: |cff00ff00110%|r|NHeavy:|cff00ff00110%|r|NHero: |cff00ff00110%|r|NFortified:|cff00ff00110%|r|nGate Armor: |cffff000030%|r"
 DAMAGETIP_CHAOS_V0C="Unarmored:|cff00ff00110%|r |nLight:|cff00ff00110%|r|NMedium: |cff00ff00110%|r|NHeavy:|cff00ff00110%|r|NHero: |cff00ff00110%|r|NFortified:|cff00ff00110%|r|nGate Armor: |cffff000030%|r"
 DAMAGETIP_CHAOS_V0M="Unarmored:|cff00ff00110%|r |nLight:|cff00ff00110%|r|NMedium: |cff00ff00110%|r|NHeavy:|cff00ff00110%|r|NHero: |cff00ff00110%|r|NFortified:|cff00ff00110%|r|nGate Armor: |cffff000030%|r"
@@ -57,6 +61,13 @@ DAMAGETIP_SIEGE_V0M="Gate Armor: |cff00ff00400%|r|nFortified: |cff00ff00200%|r|N
 KEY_EXIT=E|cffffd700X|rIT
 KEY_EXIT_PROGRAM=E|cffffd700X|rIT Program
 KEY_QUIT_MISSION=|cffffd700Q|ruit mission |cffff0000DO NOT FORGET TO RESTART WARCRAFT 3 BEFORE NEXT GAME!|r
+LUMBER="Knowledge"
+QUESTSMAIN="Faction Quests"
+QUESTSOPTIONAL="Shared Quests"
 QUIT=Quit DO NOT FORGET TO RESTART WARCRAFT 3
 QUIT_MISSION=Quit Game DO NOT FORGET TO RESTART WARCRAFT 3
+RESOURCE_UBERTIP_GOLD="Gold is gained as income from Control Points."
+RESOURCE_UBERTIP_LUMBER="Knowledge is gained from completing Quests."
+RESOURCES_COLUMN0="Gold Generated"
+RESOURCES_COLUMN1="Knowledge Gained"
 
