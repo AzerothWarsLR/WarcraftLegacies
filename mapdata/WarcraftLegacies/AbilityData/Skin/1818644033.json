@@ -7,7 +7,7 @@
     {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Pink - Thrall. Green - Vashj)"
+      "Value": "(Thrall, Lady Vashj)"
     },
     {
       "Id": 2037082209,
@@ -20,38 +20,15 @@
       "Value": "Q"
     },
     {
-      "Id": 1952805473,
-      "Type": 3,
-      "Value": "Learn Forked Lightning (|cffffcc00Q|r) - [|cffffcc00Level %d|r]"
-    },
-    {
       "Id": 1953854049,
       "Type": 3,
       "Value": "Calls forth a cone of lightning to damage enemies. |n|n|cffffcc00Level 1|r - \u003CANfl,DataA1\u003E damage per unit. |n|cffffcc00Level 2|r - \u003CANfl,DataA2\u003E damage per unit. |n|cffffcc00Level 3|r - \u003CANfl,DataA3\u003E damage per unit. |n|cffffcc00Level 4|r - \u003CANfl,DataA4\u003E damage per unit."
     },
     {
-      "Level": 1,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Forked Lightning (|cffffcc00Q|r) - [|cffffcc00Level 1|r]"
-    },
-    {
-      "Level": 2,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Forked Lightning (|cffffcc00Q|r) - [|cffffcc00Level 2|r]"
-    },
-    {
-      "Level": 3,
-      "Id": 829453409,
-      "Type": 3,
-      "Value": "Forked Lightning (|cffffcc00Q|r) - [|cffffcc00Level 3|r]"
-    },
-    {
       "Level": 4,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Forked Lightning (|cffffcc00Q|r) - [|cffffcc00Level 4|r]"
+      "Value": "Forked Lightning - [|cffffcc00Level 4|r]"
     },
     {
       "Level": 1,

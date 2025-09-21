@@ -40,6 +40,10 @@
       "Id": 828536167,
       "Type": 3,
       "Value": "Allows Sea Witches to be trained from the Betrayer\u0027s Reservoir, Betrayer\u0027s Spire, and Betrayer\u0027s Citadel."
+    },
+    {
+      "Id": 2037408359,
+      "Value": 1
     }
   ]
 }

@@ -91,7 +91,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Absorbs 100% of incoming damage. Consumes 1 mana for every 1.5 damage points absorbed"
+      "Value": "Activates a shield that absorbs \u003CA12Q,DataA1\u003E damage per point of mana. Blocked damage ignores Armor and Armor Types. "
     }
   ]
 }
