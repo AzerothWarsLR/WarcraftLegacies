@@ -19,10 +19,10 @@ public sealed class CheatTele : Command
 
   private static void Patrol()
   {
-    if (GetIssuedOrderId() == 851990 && _teleToggle[GetTriggerPlayer()])
+    if (@event.IssuedOrderId == 851990 && _teleToggle[@event.Player])
     {
-      SetUnitX(GetTriggerUnit(), GetOrderPointX());
-      SetUnitY(GetTriggerUnit(), GetOrderPointY());
+      @event.Unit.X = @event.OrderPointX;
+      @event.Unit.Y = @event.OrderPointY;
     }
   }
 

@@ -39,11 +39,11 @@ public sealed class LegendQuelthalas
     Anasterian = new LegendaryHero("Anasterian Sunstrider")
     {
       UnitType = UNIT_H00Q_KING_OF_QUEL_THALAS_QUEL_THALAS,
-      PlayerColor = PLAYER_COLOR_MAROON,
+      PlayerColor = playercolor.Maroon,
       StartingXp = 1000,
       StartingArtifacts = new()
       {
-        new(CreateItem(ITEM_I00J_FELO_MELORN, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+        new(item.Create(ITEM_I00J_FELO_MELORN, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
       }
     };
 
@@ -58,7 +58,7 @@ public sealed class LegendQuelthalas
     Sylvanas = new LegendaryHero("Sylvanas Windrunner")
     {
       UnitType = UNIT_HVWD_RANGER_GENERAL_OF_SILVERMOON_QUEL_THALAS,
-      PlayerColor = PLAYER_COLOR_GREEN
+      PlayerColor = playercolor.Green
     };
 
 

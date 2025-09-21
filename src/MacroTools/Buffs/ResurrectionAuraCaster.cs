@@ -21,7 +21,7 @@ public sealed class ResurrectionAuraCaster : Aura<ResurrectionAuraTarget>
 
   protected override bool UnitFilter(unit unit)
   {
-    return IsUnitAlly(unit, CastingPlayer) && !IsUnitType(unit, UNIT_TYPE_HERO) &&
-           !IsUnitType(unit, UNIT_TYPE_SUMMONED) && !IsUnitType(unit, UNIT_TYPE_STRUCTURE);
+    return unit.IsAllyTo(CastingPlayer) && !unit.IsUnitType(unittype.Hero) &&
+           !unit.IsUnitType(unittype.Summoned) && !unit.IsUnitType(unittype.Structure);
   }
 }

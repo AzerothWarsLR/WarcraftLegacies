@@ -24,15 +24,15 @@ public sealed class TurnResearch
   /// </summary>
   public static void Register(TurnResearch turnResearch)
   {
-    var timer = CreateTimer();
-    TimerStart(timer, (turnResearch._turn + 1) * 60, false, () =>
+    timer timer = timer.Create();
+    timer.Start((turnResearch._turn + 1) * 60, false, () =>
     {
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
-        SetPlayerTechResearched(player, turnResearch._researchId, 1);
+        player.SetTechResearched(turnResearch._researchId, 1);
       }
 
-      DestroyTimer(GetExpiredTimer());
+      @event.ExpiredTimer.Dispose();
     });
   }
 }

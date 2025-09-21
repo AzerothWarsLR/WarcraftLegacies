@@ -9,7 +9,6 @@ using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.Powers;
 using MacroTools.QuestSystem;
 using WCSharp.Shared.Data;
-using static WCSharp.Api.Blizzard;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras;
 
@@ -54,7 +53,7 @@ public sealed class QuestBoralus : QuestData
   protected override void OnFail(Faction completingFaction)
   {
     var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      ? player.NeutralAggressive
       : completingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);
@@ -70,10 +69,10 @@ public sealed class QuestBoralus : QuestData
       HeroGlowAbilityTypeId = ABILITY_A0GK_HERO_GLOW_ORIGIN,
       Filter = unit =>
       {
-        var x = GetUnitX(unit);
-        var y = GetUnitY(unit);
-        return IsUnitType(unit, UNIT_TYPE_MECHANICAL) && !IsTerrainPathable(x, y, PATHING_TYPE_FLOATABILITY) &&
-               IsTerrainPathable(x, y, PATHING_TYPE_WALKABILITY);
+        var x = unit.X;
+        var y = unit.Y;
+        return unit.IsUnitType(unittype.Mechanical) && !pathingtype.Floatability.GetPathable(x, y) &&
+               pathingtype.Walkability.GetPathable(x, y);
       }
     };
 
@@ -87,17 +86,15 @@ public sealed class QuestBoralus : QuestData
     }
     else
     {
-      Player(bj_PLAYER_NEUTRAL_VICTIM).RescueGroup(_rescueUnits);
+      player.NeutralVictim.RescueGroup(_rescueUnits);
     }
 
     if (_katherine.Unit == null)
     {
       _katherine.ForceCreate(completingFaction.Player, Regions.KatherineSpawn.Center, 90);
       _katherine.Unit?.SetLevel(3, false);
-      DestroyEffect(AddSpecialEffect("war3mapImported\\Soul Beam Blue.mdx",
-        GetUnitX(_katherine.Unit), GetUnitY(_katherine.Unit)));
-      DestroyEffect(AddSpecialEffect(@"abilities\spells\human\holybolt.mdl",
-        GetUnitX(_katherine.Unit), GetUnitY(_katherine.Unit)));
+      effect.Create("war3mapImported\\Soul Beam Blue.mdx", _katherine.Unit.X, _katherine.Unit.Y).Dispose();
+      effect.Create(@"abilities\spells\human\holybolt.mdl", _katherine.Unit.X, _katherine.Unit.Y).Dispose();
     }
   }
 }

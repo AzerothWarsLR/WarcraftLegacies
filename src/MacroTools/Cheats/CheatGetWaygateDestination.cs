@@ -28,15 +28,15 @@ public sealed class CheatGetWaygateDestination : Command
     }
 
     var firstUnit = selectedUnits.First();
-    var x = WaygateGetDestinationX(firstUnit);
-    var y = WaygateGetDestinationY(firstUnit);
+    var x = firstUnit.WaygateDestinationX;
+    var y = firstUnit.WaygateDestinationY;
 
-    if (!WaygateIsActive(firstUnit))
+    if (!firstUnit.WaygateActive)
     {
-      return $"{GetUnitName(firstUnit)} is not an active Waygate.";
+      return $"{firstUnit.Name} is not an active Waygate.";
     }
 
     PingMinimap(x, y, 10);
-    return $"Pinging {GetUnitName(firstUnit)} Waygate destination.";
+    return $"Pinging {firstUnit.Name} Waygate destination.";
   }
 }

@@ -11,16 +11,16 @@ public static class RefundZeroLimitUnits
 {
   private static void VerifyUnitIntegrity(unit whichUnit)
   {
-    var player = GetOwningPlayer(whichUnit);
-    if (player.GetObjectLimit(GetUnitTypeId(whichUnit)) != 0)
+    var player = whichUnit.Owner;
+    if (player.GetObjectLimit(whichUnit.UnitType) != 0)
     {
       return;
     }
 
-    player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD,
-      IsUnitType(whichUnit, UNIT_TYPE_HERO) ? PlayerDistributor.HeroCost : GetUnitGoldCost(GetUnitTypeId(whichUnit)));
+    player.AdjustPlayerState(playerstate.ResourceGold,
+      whichUnit.IsUnitType(unittype.Hero) ? PlayerDistributor.HeroCost : unit.GoldCostOf(whichUnit.UnitType));
 
-    RemoveUnit(whichUnit);
+    whichUnit.Dispose();
   }
 
   /// <summary>
@@ -30,8 +30,8 @@ public static class RefundZeroLimitUnits
   public static void Setup()
   {
     PlayerUnitEvents.Register(UnitTypeEvent.FinishesTraining,
-      () => { VerifyUnitIntegrity(GetTrainedUnit()); });
+      () => { VerifyUnitIntegrity(@event.TrainedUnit); });
     PlayerUnitEvents.Register(HeroTypeEvent.FinishesRevive,
-      () => { VerifyUnitIntegrity(GetRevivingUnit()); });
+      () => { VerifyUnitIntegrity(@event.RevivingUnit); });
   }
 }

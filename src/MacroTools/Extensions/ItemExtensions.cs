@@ -12,7 +12,7 @@ public static class ItemExtensions
   /// </summary>
   public static void SetPositionSafe(this item whichItem, Point position)
   {
-    if (!IsTerrainPathable(position.X, position.Y, PATHING_TYPE_WALKABILITY))
+    if (!pathingtype.Walkability.GetPathable(position.X, position.Y))
     {
       whichItem.SetPosition(position);
       return;
@@ -22,13 +22,13 @@ public static class ItemExtensions
     if (shore == null)
     {
       throw new InvalidOperationException(
-        $"{nameof(ItemExtensions)} could not find a {nameof(Shore)} to dump a {GetItemName(whichItem)}.");
+        $"{nameof(ItemExtensions)} could not find a {nameof(Shore)} to dump a {whichItem.Name}.");
     }
     whichItem.SetPosition(shore.Position);
   }
 
   public static void SetPosition(this item whichItem, Point position)
   {
-    SetItemPosition(whichItem, position.X, position.Y);
+    whichItem.SetPosition(position.X, position.Y);
   }
 }

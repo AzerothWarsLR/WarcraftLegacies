@@ -30,7 +30,7 @@ public static class ControlPointSetup
   {
     foreach (var initData in _controlPointValues)
     {
-      if (GetUnitAbilityLevel(unit, initData.BuffId) > 0)
+      if (unit.GetAbilityLevel(initData.BuffId) > 0)
       {
         ControlPointManager.Instance.Register(new ControlPoint(unit, initData.Income, initData.UseControlLevels));
       }

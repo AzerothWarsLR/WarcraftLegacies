@@ -38,7 +38,7 @@ public sealed class HealingWavePlus : Spell
 
     if (lastTarget != null)
     {
-      var triggerEffect = AddSpecialEffectTarget(TargetMarkEffect, lastTarget, "overhead");
+      var triggerEffect = effect.Create(TargetMarkEffect, lastTarget, "overhead");
       EffectSystem.Add(triggerEffect, DeathTriggerDuration);
       StartDeathTriggerTimer(lastTarget, caster, healedUnits, triggerEffect);
     }
@@ -75,8 +75,8 @@ public sealed class HealingWavePlus : Spell
 
     if (!string.IsNullOrEmpty(HealingEffect))
     {
-      var effect = AddSpecialEffectTarget(HealingEffect, target, "origin");
-      BlzSetSpecialEffectScale(effect, HealingEffectScale);
+      effect effect = effect.Create(HealingEffect, target, "origin");
+      effect.Scale = HealingEffectScale;
       EffectSystem.Add(effect);
     }
     _currentHealingModifier *= HealingReductionFactor;
@@ -94,30 +94,30 @@ public sealed class HealingWavePlus : Spell
 
     var hasTriggeredWave = false;
 
-    var deathCheckTimer = CreateTimer();
-    TimerStart(deathCheckTimer, 0.1f, true, () =>
+    var deathCheckTimer = timer.Create();
+    deathCheckTimer.Start(0.1f, true, () =>
     {
-      if (trackedTarget != null && GetUnitState(trackedTarget, UNIT_STATE_LIFE) <= 0 && !hasTriggeredWave)
+      if (trackedTarget != null && trackedTarget.Life <= 0 && !hasTriggeredWave)
       {
         PerformSecondaryWave(caster, trackedTarget, healedUnits);
         hasTriggeredWave = true;
         if (triggerEffect != null)
         {
-          DestroyEffect(triggerEffect);
+          triggerEffect.Dispose();
         }
-        DestroyTimer(deathCheckTimer);
+        deathCheckTimer.Dispose();
       }
       else if (trackedTarget == null)
       {
-        DestroyTimer(deathCheckTimer);
+        deathCheckTimer.Dispose();
       }
     });
 
-    var timeoutTimer = CreateTimer();
-    TimerStart(timeoutTimer, DeathTriggerDuration, false, () =>
+    var timeoutTimer = timer.Create();
+    timeoutTimer.Start(DeathTriggerDuration, false, () =>
     {
-      DestroyTimer(deathCheckTimer);
-      DestroyTimer(timeoutTimer);
+      deathCheckTimer.Dispose();
+      timeoutTimer.Dispose();
     });
   }
 
@@ -136,18 +136,18 @@ public sealed class HealingWavePlus : Spell
     foreach (var ally in nearbyAllies)
     {
       HealTarget(caster, ally, isSecondaryWave: true);
-      var lightning = AddLightning("DRAL", true, triggerPoint.X, triggerPoint.Y, GetUnitX(ally), GetUnitY(ally));
-      SetLightningColor(lightning, 0.0f, 1.0f, 0.0f, 1.0f);
+      lightning lightning = lightning.Create("DRAL", triggerPoint.X, triggerPoint.Y, ally.X, ally.Y, true);
+      lightning.SetColor(0.0f, 1.0f, 0.0f, 1.0f);
       lightningEffects.Add(lightning);
       lastHealedUnit = ally;
     }
-    TimerStart(CreateTimer(), 0.5f, false, () =>
+    timer.Create().Start(0.5f, false, () =>
     {
       foreach (var lightning in lightningEffects)
       {
-        DestroyLightning(lightning);
+        lightning.Dispose();
       }
-      DestroyTimer(GetExpiredTimer());
+      @event.ExpiredTimer.Dispose();
     });
 
     if (lastHealedUnit != null)
@@ -161,8 +161,8 @@ public sealed class HealingWavePlus : Spell
   private static bool IsValidAlly(unit caster, unit target)
   {
     return target != null
-        && IsUnitAlly(target, GetOwningPlayer(caster))
-        && UnitAlive(target)
-        && !IsUnitType(target, UNIT_TYPE_STRUCTURE);
+        && target.IsAllyTo(caster.Owner)
+        && target.Alive
+        && !target.IsUnitType(unittype.Structure);
   }
 }

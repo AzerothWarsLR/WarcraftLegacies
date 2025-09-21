@@ -126,7 +126,7 @@ public sealed class PreplacedUnitSystem
   private void ReadDestructable()
   {
     var destructable = GetEnumDestructable();
-    var destructableId = GetDestructableTypeId(destructable);
+    var destructableId = destructable.Type;
     if (!_destructablesByTypeId.ContainsKey(destructableId))
     {
       _destructablesByTypeId[destructableId] = new List<destructable>();
@@ -140,7 +140,7 @@ public sealed class PreplacedUnitSystem
   {
     foreach (var unit in GlobalGroup.EnumUnitsInRect(Rectangle.WorldBounds.Rect))
     {
-      var unitTypeId = GetUnitTypeId(unit);
+      var unitTypeId = unit.UnitType;
       if (!_unitsByTypeId.ContainsKey(unitTypeId))
       {
         _unitsByTypeId[unitTypeId] = new List<unit>();
@@ -149,7 +149,7 @@ public sealed class PreplacedUnitSystem
       _unitsByTypeId[unitTypeId].Add(unit);
     }
 
-    EnumDestructablesInRect(Rectangle.WorldBounds.Rect, null, ReadDestructable);
+    Rectangle.WorldBounds.Rect.EnumerateDestructables(null, ReadDestructable);
   }
 
   private static destructable GetClosestDestructableToPoint(List<destructable> destructables, Point location)
@@ -159,7 +159,7 @@ public sealed class PreplacedUnitSystem
     foreach (var destructable in destructables)
     {
       var distance = MathEx.GetDistanceBetweenPoints(location,
-        new Point(GetDestructableX(destructable), GetDestructableY(destructable)));
+        new Point(destructable.X, destructable.Y));
       if (distance < closestDistance)
       {
         closestDistance = distance;
@@ -176,7 +176,7 @@ public sealed class PreplacedUnitSystem
     var closestUnit = units.First();
     foreach (var unit in units)
     {
-      var distance = MathEx.GetDistanceBetweenPoints(location, new Point(GetUnitX(unit), GetUnitY(unit)));
+      var distance = MathEx.GetDistanceBetweenPoints(location, new Point(unit.X, unit.Y));
       if (distance < closestDistance)
       {
         closestDistance = distance;
@@ -187,7 +187,7 @@ public sealed class PreplacedUnitSystem
     if (closestDistance > MaximumDistanceToFind)
     {
       var unit = units.FirstOrDefault();
-      Logger.LogWarning($"Could not find a {(unit != null ? GetUnitName(unit) : null)}({GeneralHelpers.DebugIdInteger2IdString(GetUnitTypeId(unit))}) within {MaximumDistanceToFind} of Point {location.X}, {location.Y}.");
+      Logger.LogWarning($"Could not find a {(unit != null ? unit.Name : null)}({GeneralHelpers.DebugIdInteger2IdString(unit.UnitType)}) within {MaximumDistanceToFind} of Point {location.X}, {location.Y}.");
     }
 
 

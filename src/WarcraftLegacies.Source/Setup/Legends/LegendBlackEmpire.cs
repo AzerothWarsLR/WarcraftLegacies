@@ -42,7 +42,7 @@ public sealed class LegendBlackEmpire
   public void RegisterLegends()
   {
     LegendaryHeroManager.Register(Nzoth);
-    UnitModifySkillPoints(Nzoth.Unit, -7);
+    Nzoth.Unit.AddSkillPoints(-7);
     LegendaryHeroManager.Register(Zonozz);
     LegendaryHeroManager.Register(Zaqul);
     LegendaryHeroManager.Register(Yorsahj);

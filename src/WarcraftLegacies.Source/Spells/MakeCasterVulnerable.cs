@@ -16,6 +16,6 @@ public sealed class MakeCasterVulnerable : Spell
   /// <inheritdoc />
   public override void OnStartCast(unit caster, unit target, Point targetPoint)
   {
-    SetUnitInvulnerable(caster, false);
+    caster.IsInvulnerable = false;
   }
 }

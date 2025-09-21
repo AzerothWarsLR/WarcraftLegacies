@@ -45,7 +45,7 @@ public sealed class WarsongPillageDialogPresenter : ChoiceDialogPresenter<Warson
     pickingPlayer.AddGold(choice.GoldReward);
 
     var heroes = GlobalGroup.EnumUnitsOfPlayer(pickingPlayer)
-      .Where(unit => IsUnitType(unit, UNIT_TYPE_HERO))
+      .Where(unit => unit.IsUnitType(unittype.Hero))
       .ToList();
 
     if (heroes.Any())
@@ -76,12 +76,8 @@ public sealed class WarsongPillageDialogPresenter : ChoiceDialogPresenter<Warson
 
     if (choice.ArtifactRewardItemType.HasValue && _grom != null)
     {
-      var artifactItem = CreateItem(
-        choice.ArtifactRewardItemType.Value,
-        Regions.ArtifactDummyInstance.Center.X,
-        Regions.ArtifactDummyInstance.Center.Y
-      );
-      UnitAddItem(_grom, artifactItem);
+      var artifactItem = item.Create(choice.ArtifactRewardItemType.Value, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y);
+      _grom.AddItem(artifactItem);
     }
 
 
@@ -99,9 +95,9 @@ public sealed class WarsongPillageDialogPresenter : ChoiceDialogPresenter<Warson
 
 
     foreach (var unit in GlobalGroup.EnumUnitsInRect(choice.Location)
-               .Where(unit => IsUnitType(unit, UNIT_TYPE_STRUCTURE) &&
-                              (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE) ||
-                               GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))))
+               .Where(unit => unit.IsUnitType(unittype.Structure) &&
+                              (unit.Owner == player.NeutralAggressive ||
+                               unit.Owner == player.NeutralPassive)))
     {
       unit.SetLifePercent(15);
     }
@@ -124,7 +120,7 @@ public sealed class WarsongPillageDialogPresenter : ChoiceDialogPresenter<Warson
 
         foreach (var unit in rescueUnits)
         {
-          BlzPauseUnitEx(unit, false);
+          unit.SetPausedEx(false);
         }
 
 

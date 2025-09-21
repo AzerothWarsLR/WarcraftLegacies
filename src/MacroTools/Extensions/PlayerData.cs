@@ -145,7 +145,7 @@ internal sealed class PlayerData
       if (value < 0)
       {
         throw new ArgumentOutOfRangeException(
-          $"Tried to assign a negative {nameof(BaseIncome)} value to {GetPlayerName(_player)}.");
+          $"Tried to assign a negative {nameof(BaseIncome)} value to {_player.Name}.");
       }
 
       _goldPerMinute = value;
@@ -192,7 +192,7 @@ internal sealed class PlayerData
         }
         else
         {
-          throw new Exception("Attempted to Person " + GetPlayerName(_player) +
+          throw new Exception("Attempted to Person " + _player.Name +
                               " to already occupied faction with name " + value.Name);
         }
       }
@@ -215,8 +215,8 @@ internal sealed class PlayerData
     }
 
     _dialoguePlaying = true;
-    var dialogueTrigger = CreateTrigger();
-    TriggerAddAction(dialogueTrigger, () =>
+    var dialogueTrigger = trigger.Create();
+    dialogueTrigger.AddAction(() =>
     {
       while (_dialogueQueue.Any())
       {
@@ -227,9 +227,9 @@ internal sealed class PlayerData
       }
 
       _dialoguePlaying = false;
-      DestroyTrigger(GetTriggeringTrigger());
+      @event.Trigger.Dispose();
     });
-    TriggerExecute(dialogueTrigger);
+    dialogueTrigger.Execute();
   }
 
   /// <summary>
@@ -294,21 +294,21 @@ internal sealed class PlayerData
 
     if (objectLimit < 1)
     {
-      SetPlayerTechMaxAllowed(_player, obj, 100);
+      _player.SetTechMaxAllowed(obj, 100);
       revertAfter = true;
     }
 
-    SetPlayerTechResearched(_player, obj, Math.Max(level, 0));
+    _player.SetTechResearched(obj, Math.Max(level, 0));
 
     if (revertAfter)
     {
-      SetPlayerTechMaxAllowed(_player, obj, 0);
+      _player.SetTechMaxAllowed(obj, 0);
     }
 
-    if (GetPlayerTechCount(_player, obj, false) != Math.Max(level, 0))
+    if (_player.GetTechResearched(obj, false) != Math.Max(level, 0))
     {
       throw new InvalidOperationException(
-        $"Failed to set the object level of {GetObjectName(obj)} to {level}; it is {GetPlayerTechCount(_player, obj, false)} instead.");
+        $"Failed to set the object level of {GetObjectName(obj)} to {level}; it is {_player.GetTechResearched(obj, false)} instead.");
     }
   }
 
@@ -320,15 +320,15 @@ internal sealed class PlayerData
 
     if (limit >= Faction.Unlimited)
     {
-      SetPlayerTechMaxAllowed(_player, id, -1);
+      _player.SetTechMaxAllowed(id, -1);
     }
     else if (limit <= 0)
     {
-      SetPlayerTechMaxAllowed(_player, id, 0);
+      _player.SetTechMaxAllowed(id, 0);
     }
     else
     {
-      SetPlayerTechMaxAllowed(_player, id, limit);
+      _player.SetTechMaxAllowed(id, limit);
     }
   }
 
@@ -340,8 +340,7 @@ internal sealed class PlayerData
     var fullGold = (float)Math.Floor(x);
     var remainderGold = x - fullGold;
 
-    SetPlayerState(_player, PLAYER_STATE_RESOURCE_GOLD,
-      GetPlayerState(_player, PLAYER_STATE_RESOURCE_GOLD) + R2I(fullGold));
+    _player.SetState(playerstate.ResourceGold, _player.GetState(playerstate.ResourceGold) + R2I(fullGold));
     _partialGold += remainderGold;
 
     while (true)
@@ -352,20 +351,20 @@ internal sealed class PlayerData
       }
 
       _partialGold -= 1;
-      SetPlayerState(_player, PLAYER_STATE_RESOURCE_GOLD, GetPlayerState(_player, PLAYER_STATE_RESOURCE_GOLD) + 1);
+      _player.SetState(playerstate.ResourceGold, _player.GetState(playerstate.ResourceGold) + 1);
     }
   }
 
   public void SetGold(float gold)
   {
     var fullGold = (int)gold / 1;
-    SetPlayerState(_player, PLAYER_STATE_RESOURCE_GOLD, fullGold);
+    _player.SetState(playerstate.ResourceGold, fullGold);
 
     var remainderGold = gold % 1;
     _partialGold = remainderGold;
   }
 
-  public float GetGold() => GetPlayerState(_player, PLAYER_STATE_RESOURCE_GOLD) + _partialGold;
+  public float GetGold() => _player.GetState(playerstate.ResourceGold) + _partialGold;
 
   /// <summary>
   /// Signal that the player has had their alliances changed.
@@ -383,7 +382,7 @@ internal sealed class PlayerData
   /// </summary>
   public static PlayerData ByHandle(player whichPlayer)
   {
-    if (_byId.TryGetValue(GetPlayerId(whichPlayer), out var person))
+    if (_byId.TryGetValue(whichPlayer.Id, out var person))
     {
       return person;
     }
@@ -396,5 +395,5 @@ internal sealed class PlayerData
   /// <summary>
   ///   Register a <see cref="PlayerData" /> to the Person system.
   /// </summary>
-  private static void Register(PlayerData playerData) => _byId.Add(GetPlayerId(playerData._player), playerData);
+  private static void Register(PlayerData playerData) => _byId.Add(playerData._player.Id, playerData);
 }

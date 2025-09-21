@@ -25,6 +25,6 @@ public sealed class CheatPosition : Command
   public override string Execute(player cheater, params string[] parameters)
   {
     var firstSelectedUnit = GlobalGroup.EnumSelectedUnits(cheater).First();
-    return $"{GetUnitName(firstSelectedUnit)} is at position {GetUnitX(firstSelectedUnit)}, {GetUnitY(firstSelectedUnit)}.";
+    return $"{firstSelectedUnit.Name} is at position {firstSelectedUnit.X}, {firstSelectedUnit.Y}.";
   }
 }

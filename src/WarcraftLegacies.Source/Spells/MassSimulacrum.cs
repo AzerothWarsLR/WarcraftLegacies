@@ -29,17 +29,16 @@ public sealed class MassSimulacrum : Spell
 
   private static bool IsValidTarget(unit caster, unit target)
   {
-    return !IsUnitIllusion(target) && !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
-           !IsUnitType(target, UNIT_TYPE_ANCIENT) && !IsUnitType(target, UNIT_TYPE_MECHANICAL) &&
-           !IsUnitType(target, UNIT_TYPE_RESISTANT) && !IsUnitType(target, UNIT_TYPE_HERO) &&
-           IsUnitAlly(target, GetOwningPlayer(caster)) && UnitAlive(target);
+    return !target.IsIllusion && !target.IsUnitType(unittype.Structure) &&
+           !target.IsUnitType(unittype.Ancient) && !target.IsUnitType(unittype.Mechanical) &&
+           !target.IsUnitType(unittype.Resistant) && !target.IsUnitType(unittype.Hero) &&
+           target.IsAllyTo(caster.Owner) && target.Alive;
   }
 
   private void ReplicateUnit(unit caster, unit target)
   {
-    var newUnit = CreateUnit(GetOwningPlayer(caster), GetUnitTypeId(target), GetUnitX(target), GetUnitY(target),
-      GetUnitFacing(target));
-    UnitAddType(newUnit, UNIT_TYPE_SUMMONED);
+    var newUnit = unit.Create(caster.Owner, target.UnitType, target.X, target.Y, target.Facing);
+    newUnit.AddType(unittype.Summoned);
     var level = GetAbilityLevel(caster);
     var buff = new SimulacrumBuff(caster, newUnit, 1 + DamageBonusBase + DamageBonusLevel * level,
       1 + HealthBonusBase + HealthBonusLevel * level, EffectTarget, EffectScaleTarget)
@@ -59,8 +58,8 @@ public sealed class MassSimulacrum : Spell
         ReplicateUnit(caster, unit);
       }
     }
-    var effect = AddSpecialEffect(Effect, targetPoint.X, targetPoint.Y);
-    BlzSetSpecialEffectScale(effect, EffectScale);
-    DestroyEffect(effect);
+    effect effect = effect.Create(Effect, targetPoint.X, targetPoint.Y);
+    effect.Scale = EffectScale;
+    effect.Dispose();
   }
 }

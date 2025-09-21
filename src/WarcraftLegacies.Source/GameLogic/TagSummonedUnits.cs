@@ -14,10 +14,10 @@ public static class TagSummonedUnits
   {
     PlayerUnitEvents.Register(UnitTypeEvent.IsSummoned, () =>
     {
-      var unit = GetTriggerUnit();
-      if (IsUnitType(unit, UNIT_TYPE_UNDEAD))
+      var unit = @event.Unit;
+      if (unit.IsUnitType(unittype.Undead))
       {
-        UnitAddType(GetTriggerUnit(), UNIT_TYPE_SUMMONED);
+        @event.Unit.AddType(unittype.Summoned);
       }
     });
   }

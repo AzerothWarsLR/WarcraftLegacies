@@ -36,5 +36,5 @@ public sealed class QuestAlignement : QuestData
   }
 
   /// <inheritdoc/>
-  protected override void OnComplete(Faction completingFaction) => UnitModifySkillPoints(_nzoth.Unit, SkillPoints);
+  protected override void OnComplete(Faction completingFaction) => _nzoth.Unit.AddSkillPoints(SkillPoints);
 }

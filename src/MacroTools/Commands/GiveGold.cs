@@ -53,7 +53,7 @@ public sealed class GiveGold : Command
       return "You must send at least 1 gold.";
     }
 
-    if (GetPlayerState(cheater, PLAYER_STATE_RESOURCE_GOLD) < goldGift)
+    if (cheater.GetState(playerstate.ResourceGold) < goldGift)
     {
       return $"You don't have {goldGift} gold to send.";
     }

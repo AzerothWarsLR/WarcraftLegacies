@@ -41,12 +41,11 @@ public sealed class QuestConsumeTree : QuestData
 
     if (archimondeUnit != null)
     {
-      BlzSetUnitName(archimondeUnit, "Devourer of Worlds");
+      archimondeUnit.Name = "Devourer of Worlds";
     }
 
-    AddSpecialEffectTarget(@"Abilities\Weapons\GreenDragonMissile\GreenDragonMissile.mdl", archimondeUnit,
-      "hand, right");
-    AddSpecialEffectTarget(@"Abilities\Weapons\GreenDragonMissile\GreenDragonMissile.mdl", archimondeUnit, "hand, left");
+    effect.Create(@"Abilities\Weapons\GreenDragonMissile\GreenDragonMissile.mdl", archimondeUnit, "hand, right");
+    effect.Create(@"Abilities\Weapons\GreenDragonMissile\GreenDragonMissile.mdl", archimondeUnit, "hand, left");
     archimondeUnit?.AddHeroAttributes(StatGain, StatGain, StatGain);
   }
 }

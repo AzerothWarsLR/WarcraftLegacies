@@ -95,90 +95,90 @@ public sealed class ArtifactSetup
   /// </summary>
   public ArtifactSetup(PreplacedUnitSystem preplacedUnitSystem)
   {
-    CrownOfStormwind = new Artifact(CreateItem(FourCC("I002"), DummyX, DummyY));
-    UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n021")), CrownOfStormwind.Item); //Hogger
+    CrownOfStormwind = new Artifact(item.Create(FourCC("I002"), DummyX, DummyY));
+    preplacedUnitSystem.GetUnit(FourCC("n021")).AddItem(CrownOfStormwind.Item); //Hogger
     ArtifactManager.Register(CrownOfStormwind);
 
-    ScarabGong = new Artifact(CreateItem(FourCC("ISGC"), DummyX, DummyY)); //Scarab Gong
-    UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("nJTR")), ScarabGong.Item); //Scarab Gong
+    ScarabGong = new Artifact(item.Create(FourCC("ISGC"), DummyX, DummyY)); //Scarab Gong
+    preplacedUnitSystem.GetUnit(FourCC("nJTR")).AddItem(ScarabGong.Item); //Scarab Gong
     ArtifactManager.Register(ScarabGong);
 
-    EyeOfSargeras = new Artifact(CreateItem(ITEM_I003_EYE_OF_SARGERAS, -77.9f, 10910.4f));
+    EyeOfSargeras = new Artifact(item.Create(ITEM_I003_EYE_OF_SARGERAS, -77.9f, 10910.4f));
     ArtifactManager.Register(EyeOfSargeras);
 
-    HelmOfDomination = new Artifact(CreateItem(FourCC("I01Y"), DummyX, DummyY)); //Helm of Domination
-    UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("u000_0649")), Artifact.ArtifactHolderAbilId); //Frozen Throne
-    UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("u000")), HelmOfDomination.Item);
+    HelmOfDomination = new Artifact(item.Create(FourCC("I01Y"), DummyX, DummyY)); //Helm of Domination
+    preplacedUnitSystem.GetUnit(FourCC("u000_0649")).AddAbility(Artifact.ArtifactHolderAbilId); //Frozen Throne
+    preplacedUnitSystem.GetUnit(FourCC("u000")).AddItem(HelmOfDomination.Item);
     ArtifactManager.Register(HelmOfDomination);
 
-    CrownOfLordaeron = new Artifact(CreateItem(FourCC("I001"), DummyX, DummyY)); //Crown of Lordaeron
-    UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("nemi_0019")), Artifact.ArtifactHolderAbilId); //King Terenas
-    UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("nemi")), CrownOfLordaeron.Item);
+    CrownOfLordaeron = new Artifact(item.Create(FourCC("I001"), DummyX, DummyY)); //Crown of Lordaeron
+    preplacedUnitSystem.GetUnit(FourCC("nemi_0019")).AddAbility(Artifact.ArtifactHolderAbilId); //King Terenas
+    preplacedUnitSystem.GetUnit(FourCC("nemi")).AddItem(CrownOfLordaeron.Item);
     ArtifactManager.Register(CrownOfLordaeron);
 
-    var tempArtifact = new Artifact(CreateItem(FourCC("klmm"), DummyX, DummyY)); //Killmaim
-    UnitAddAbility(preplacedUnitSystem.GetUnit(UNIT_H0BD_RAMZES_THE_HORROR_CREEP_DESOLACE), Artifact.ArtifactHolderAbilId); //Ramzes the Horror
-    UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_H0BD_RAMZES_THE_HORROR_CREEP_DESOLACE), tempArtifact.Item);
+    var tempArtifact = new Artifact(item.Create(FourCC("klmm"), DummyX, DummyY)); //Killmaim
+    preplacedUnitSystem.GetUnit(UNIT_H0BD_RAMZES_THE_HORROR_CREEP_DESOLACE).AddAbility(Artifact.ArtifactHolderAbilId); //Ramzes the Horror
+    preplacedUnitSystem.GetUnit(UNIT_H0BD_RAMZES_THE_HORROR_CREEP_DESOLACE).AddItem(tempArtifact.Item);
     ArtifactManager.Register(tempArtifact);
 
-    ScepterOfTheQueen = new Artifact(CreateItem(FourCC("I00I"), DummyX, DummyY));
-    UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("n085_2846")), Artifact.ArtifactHolderAbilId); //The Atheneum
-    UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n085")), ScepterOfTheQueen.Item);
+    ScepterOfTheQueen = new Artifact(item.Create(FourCC("I00I"), DummyX, DummyY));
+    preplacedUnitSystem.GetUnit(FourCC("n085_2846")).AddAbility(Artifact.ArtifactHolderAbilId); //The Atheneum
+    preplacedUnitSystem.GetUnit(FourCC("n085")).AddItem(ScepterOfTheQueen.Item);
     ArtifactManager.Register(ScepterOfTheQueen);
 
-    BookOfMedivh = new Artifact(CreateItem(ITEM_I006_BOOK_OF_MEDIVH, DummyX, DummyY));
+    BookOfMedivh = new Artifact(item.Create(ITEM_I006_BOOK_OF_MEDIVH, DummyX, DummyY));
     ArtifactManager.Register(BookOfMedivh);
 
-    ZinRokh = new Artifact(CreateItem(FourCC("I016"), DummyX, DummyY))
+    ZinRokh = new Artifact(item.Create(FourCC("I016"), DummyX, DummyY))
     {
       TitanforgedAbility = ABILITY_A0VM_TITANFORGED_9_STRENGTH
     };
 
-    BronzeFragment = new Artifact(CreateItem(ITEM_I01M_BRONZE_FRAGMENT, DummyX, DummyY));
-    UnitAddAbility(preplacedUnitSystem.GetUnit(UNIT_O06Y_UKORZ_CREEP_ZUL_FARRAK), Artifact.ArtifactHolderAbilId);
-    UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_O06Y_UKORZ_CREEP_ZUL_FARRAK), BronzeFragment.Item);
+    BronzeFragment = new Artifact(item.Create(ITEM_I01M_BRONZE_FRAGMENT, DummyX, DummyY));
+    preplacedUnitSystem.GetUnit(UNIT_O06Y_UKORZ_CREEP_ZUL_FARRAK).AddAbility(Artifact.ArtifactHolderAbilId);
+    preplacedUnitSystem.GetUnit(UNIT_O06Y_UKORZ_CREEP_ZUL_FARRAK).AddItem(BronzeFragment.Item);
     ArtifactManager.Register(BronzeFragment);
 
-    ObsidianFragment = new Artifact(CreateItem(ITEM_I01L_OBSIDIAN_FRAGMENT, DummyX, DummyY));
-    UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_NDTW_XU_BA), ObsidianFragment.Item);
+    ObsidianFragment = new Artifact(item.Create(ITEM_I01L_OBSIDIAN_FRAGMENT, DummyX, DummyY));
+    preplacedUnitSystem.GetUnit(UNIT_NDTW_XU_BA).AddItem(ObsidianFragment.Item);
     ArtifactManager.Register(ObsidianFragment);
 
-    RubyFragment = new Artifact(CreateItem(ITEM_I01J_RUBY_FRAGMENT, DummyX, DummyY));
-    UnitAddAbility(preplacedUnitSystem.GetUnit(UNIT_O06X_JIN_DO_CREEP_ZUL_GURUB), Artifact.ArtifactHolderAbilId); //Jin)do
-    UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_O06X_JIN_DO_CREEP_ZUL_GURUB), RubyFragment.Item);
+    RubyFragment = new Artifact(item.Create(ITEM_I01J_RUBY_FRAGMENT, DummyX, DummyY));
+    preplacedUnitSystem.GetUnit(UNIT_O06X_JIN_DO_CREEP_ZUL_GURUB).AddAbility(Artifact.ArtifactHolderAbilId); //Jin)do
+    preplacedUnitSystem.GetUnit(UNIT_O06X_JIN_DO_CREEP_ZUL_GURUB).AddItem(RubyFragment.Item);
     ArtifactManager.Register(RubyFragment);
 
-    AzureFragment = new Artifact(CreateItem(ITEM_I01I_AZURE_FRAGMENT, DummyX, DummyY));
-    UnitAddAbility(preplacedUnitSystem.GetUnit(UNIT_O06W_GAL_DARAH_CREEP_ZUL_DRAK), Artifact.ArtifactHolderAbilId);
-    UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_O06W_GAL_DARAH_CREEP_ZUL_DRAK), AzureFragment.Item);
+    AzureFragment = new Artifact(item.Create(ITEM_I01I_AZURE_FRAGMENT, DummyX, DummyY));
+    preplacedUnitSystem.GetUnit(UNIT_O06W_GAL_DARAH_CREEP_ZUL_DRAK).AddAbility(Artifact.ArtifactHolderAbilId);
+    preplacedUnitSystem.GetUnit(UNIT_O06W_GAL_DARAH_CREEP_ZUL_DRAK).AddItem(AzureFragment.Item);
     ArtifactManager.Register(AzureFragment);
 
-    EssenceofMurmur = new Artifact(CreateItem(FourCC("I00K"), DummyX, DummyY)); //Essence
-    UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("n03T")), EssenceofMurmur.Item); //Murmur
+    EssenceofMurmur = new Artifact(item.Create(FourCC("I00K"), DummyX, DummyY)); //Essence
+    preplacedUnitSystem.GetUnit(FourCC("n03T")).AddItem(EssenceofMurmur.Item); //Murmur
     ArtifactManager.Register(EssenceofMurmur);
 
-    EmeraldFragment = new Artifact(CreateItem(ITEM_I01K_EMERALD_FRAGMENT, DummyX, DummyY));
-    UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_O06Z_ZUL_JIN_CREEP_ZUL_AMAN), EmeraldFragment.Item);
+    EmeraldFragment = new Artifact(item.Create(ITEM_I01K_EMERALD_FRAGMENT, DummyX, DummyY));
+    preplacedUnitSystem.GetUnit(UNIT_O06Z_ZUL_JIN_CREEP_ZUL_AMAN).AddItem(EmeraldFragment.Item);
     ArtifactManager.Register(EmeraldFragment);
 
-    tempArtifact = new Artifact(CreateItem(FourCC("arsh"), DummyX, DummyY)); //Shroud of Nozdormuru
-    UnitAddAbility(preplacedUnitSystem.GetUnit(UNIT_O070_OCCULUS_CREEP_CAVERNS), Artifact.ArtifactHolderAbilId); //Occulus
-    UnitAddItem(preplacedUnitSystem.GetUnit(UNIT_O070_OCCULUS_CREEP_CAVERNS), tempArtifact.Item);
+    tempArtifact = new Artifact(item.Create(FourCC("arsh"), DummyX, DummyY)); //Shroud of Nozdormuru
+    preplacedUnitSystem.GetUnit(UNIT_O070_OCCULUS_CREEP_CAVERNS).AddAbility(Artifact.ArtifactHolderAbilId); //Occulus
+    preplacedUnitSystem.GetUnit(UNIT_O070_OCCULUS_CREEP_CAVERNS).AddItem(tempArtifact.Item);
     ArtifactManager.Register(tempArtifact);
 
-    HornOfCenarius = new Artifact(CreateItem(FourCC("cnhn"), DummyX, DummyY));
-    UnitAddAbility(preplacedUnitSystem.GetUnit(FourCC("nhcn_2597")), Artifact.ArtifactHolderAbilId); //Horn of Cenarius Pedestal
-    UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("nhcn")), HornOfCenarius.Item);
+    HornOfCenarius = new Artifact(item.Create(FourCC("cnhn"), DummyX, DummyY));
+    preplacedUnitSystem.GetUnit(FourCC("nhcn_2597")).AddAbility(Artifact.ArtifactHolderAbilId); //Horn of Cenarius Pedestal
+    preplacedUnitSystem.GetUnit(FourCC("nhcn")).AddItem(HornOfCenarius.Item);
     ArtifactManager.Register(HornOfCenarius);
 
-    tempArtifact = new Artifact(CreateItem(FourCC("kgal"), DummyX, DummyY)); //Keg of Thunderwater
-    UnitAddItem(preplacedUnitSystem.GetUnit(FourCC("hmtm"), new Point(15109, -895)), tempArtifact.Item);
+    tempArtifact = new Artifact(item.Create(FourCC("kgal"), DummyX, DummyY)); //Keg of Thunderwater
+    preplacedUnitSystem.GetUnit(FourCC("hmtm"), new Point(15109, -895)).AddItem(tempArtifact.Item);
     ArtifactManager.Register(tempArtifact);
 
-    SunwellVial = new Artifact(CreateItem(ITEM_I018_VIAL_OF_THE_SUNWELL, DummyX, DummyX));
+    SunwellVial = new Artifact(item.Create(ITEM_I018_VIAL_OF_THE_SUNWELL, DummyX, DummyX));
     var sunwell = preplacedUnitSystem.GetUnit(UNIT_N001_THE_SUNWELL_QUEL_THALAS_OTHER);
-    UnitAddAbility(sunwell, Artifact.ArtifactHolderAbilId);
-    UnitAddItem(sunwell, SunwellVial.Item);
+    sunwell.AddAbility(Artifact.ArtifactHolderAbilId);
+    sunwell.AddItem(SunwellVial.Item);
     ArtifactManager.Register(SunwellVial);
   }
 }

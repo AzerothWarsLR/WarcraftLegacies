@@ -34,11 +34,11 @@ public sealed class Observer : Command
   /// <inheritdoc />
   public override string Execute(player commandUser, params string[] parameters)
   {
-    var triggerFaction = GetTriggerPlayer().GetFaction();
+    var triggerFaction = @event.Player.GetFaction();
     if (triggerFaction == null)
     {
       throw new InvalidOperationException(
-        $"{GetPlayerName(GetTriggerPlayer())} tried to execute {nameof(Observer)}, but they don't have a {nameof(Faction)}.");
+        $"{@event.Player.Name} tried to execute {nameof(Observer)}, but they don't have a {nameof(Faction)}.");
     }
 
     triggerFaction.Defeat();

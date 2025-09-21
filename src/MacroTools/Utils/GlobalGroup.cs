@@ -9,7 +9,7 @@ namespace MacroTools.Utils;
 /// </summary>
 public static class GlobalGroup
 {
-  private static readonly group _group = CreateGroup();
+  private static readonly group _group = group.Create();
 
   /// <summary>
   /// Adds all units selected by the provided player to the group.
@@ -17,7 +17,7 @@ public static class GlobalGroup
   public static List<unit> EnumSelectedUnits(player whichPlayer)
   {
     SyncSelections();
-    GroupEnumUnitsSelected(_group, whichPlayer, null);
+    _group.EnumUnitsSelected(whichPlayer, null);
     return EmptyToList(_group);
   }
 
@@ -26,7 +26,7 @@ public static class GlobalGroup
   /// </summary>
   public static List<unit> EnumUnitsOfPlayer(player player)
   {
-    GroupEnumUnitsOfPlayer(_group, player, null);
+    _group.EnumUnitsOfPlayer(player, null);
     return EmptyToList(_group);
   }
 
@@ -41,7 +41,7 @@ public static class GlobalGroup
   /// </summary>
   public static List<unit> EnumUnitsInRect(rect rect)
   {
-    GroupEnumUnitsInRect(_group, rect, null);
+    _group.EnumUnitsInRect(rect, null);
     return EmptyToList(_group);
   }
 
@@ -50,7 +50,7 @@ public static class GlobalGroup
   /// </summary>
   public static List<unit> EnumUnitsInRange(Point point, float radius)
   {
-    GroupEnumUnitsInRange(_group, point.X, point.Y, radius, null);
+    _group.EnumUnitsInRange(point.X, point.Y, radius, null);
     return EmptyToList(_group);
   }
 
@@ -61,12 +61,12 @@ public static class GlobalGroup
   private static List<unit> EmptyToList(group whichGroup)
   {
     var list = new List<unit>();
-    var firstOfGroup = FirstOfGroup(whichGroup);
+    var firstOfGroup = whichGroup.First;
     while (firstOfGroup != null)
     {
       list.Add(firstOfGroup);
-      GroupRemoveUnit(whichGroup, firstOfGroup);
-      firstOfGroup = FirstOfGroup(whichGroup);
+      whichGroup.Remove(firstOfGroup);
+      firstOfGroup = whichGroup.First;
     }
     return list;
   }

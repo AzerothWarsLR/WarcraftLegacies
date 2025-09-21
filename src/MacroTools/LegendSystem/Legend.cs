@@ -27,14 +27,14 @@ public abstract class Legend
   /// </summary>
   public unit? Unit
   {
-    get => GetOwningPlayer(_unit) == null ? null : _unit;
+    get => _unit.Owner == null ? null : _unit;
     set
     {
       var previousUnit = Unit;
       if (Unit != null)
       {
         Unit.DropAllItems();
-        RemoveUnit(_unit);
+        _unit.Dispose();
       }
 
       _unit = value;
@@ -44,7 +44,7 @@ public abstract class Legend
         return;
       }
 
-      _unitType = GetUnitTypeId(_unit);
+      _unitType = _unit.UnitType;
       OnChangeUnit();
       UnitChanged?.Invoke(this, new LegendChangeUnitEventArgs(this, previousUnit));
     }
@@ -67,8 +67,8 @@ public abstract class Legend
   {
     PlayerUnitEvents.Register(UnitTypeEvent.FinishesTraining, () =>
     {
-      var trainedUnit = GetTrainedUnit();
-      if (UnitType != GetUnitTypeId(trainedUnit))
+      var trainedUnit = @event.TrainedUnit;
+      if (UnitType != trainedUnit.UnitType)
       {
         return;
       }
@@ -100,16 +100,16 @@ public abstract class Legend
     {
       if (_unit != null)
       {
-        var newUnit = CreateUnit(OwningPlayer, value, GetUnitX(_unit), GetUnitY(_unit), GetUnitFacing(_unit));
-        SetUnitState(newUnit, UNIT_STATE_LIFE, GetUnitState(_unit, UNIT_STATE_LIFE));
-        SetUnitState(newUnit, UNIT_STATE_MANA, GetUnitState(_unit, UNIT_STATE_MANA));
-        SetHeroXP(newUnit, GetHeroXP(_unit), false);
+        var newUnit = unit.Create(OwningPlayer, value, _unit.X, _unit.Y, _unit.Facing);
+        newUnit.Life = _unit.Life;
+        newUnit.Mana = _unit.Mana;
+        newUnit.SetExperience(_unit.Experience, false);
         _unit.TransferItems(newUnit);
-        var oldX = GetUnitX(_unit);
-        var oldY = GetUnitY(_unit);
-        RemoveUnit(_unit);
+        var oldX = _unit.X;
+        var oldY = _unit.Y;
+        _unit.Dispose();
         Unit = newUnit;
-        SetUnitPosition(_unit, oldX, oldY);
+        _unit.SetPosition(oldX, oldY);
       }
 
       _unitType = value;
@@ -120,7 +120,7 @@ public abstract class Legend
   /// The player that owns the unit representing this <see cref="Legend"/>. Returns null if the <see cref="Legend"/>
   /// doesn't exist on the map yet.
   /// </summary>
-  public player? OwningPlayer => GetOwningPlayer(_unit);
+  public player? OwningPlayer => _unit.Owner;
 
   /// <summary>
   ///   Fired when the <see cref="Legend" /> changes owner.

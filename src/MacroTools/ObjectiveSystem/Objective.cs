@@ -78,7 +78,7 @@ public abstract class Objective
     protected set
     {
       _description = value;
-      QuestItemSetDescription(QuestItem, _description);
+      QuestItem.SetDescription(_description);
     }
   }
 
@@ -137,12 +137,11 @@ public abstract class Objective
 
     if (_minimapIcon == null && DisplaysPosition && Position != null)
     {
-      _minimapIcon = CreateMinimapIcon(Position.X, Position.Y, 255, 255, 0, SkinManagerGetLocalPath(PingPath),
-        FOG_OF_WAR_MASKED);
+      _minimapIcon = minimapicon.Create(Position.X, Position.Y, 255, 255, 0, SkinManagerGetLocalPath(PingPath), fogstate.Masked);
     }
     else if (_minimapIcon != null)
     {
-      SetMinimapIconVisible(_minimapIcon, true);
+      _minimapIcon.SetVisible(true);
     }
   }
 
@@ -157,10 +156,10 @@ public abstract class Objective
     string effectPath;
     if (MapEffectPath != null && _mapEffect == null && Position != null)
     {
-      effectPath = EligibleFactions.Contains(GetLocalPlayer()) ? MapEffectPath : "";
-      _mapEffect = AddSpecialEffect(effectPath, Position.X, Position.Y);
-      BlzSetSpecialEffectColorByPlayer(_mapEffect, GetLocalPlayer());
-      BlzSetSpecialEffectHeight(_mapEffect, 100 + Environment.GetPositionZ(Position));
+      effectPath = EligibleFactions.Contains(player.LocalPlayer) ? MapEffectPath : "";
+      _mapEffect = effect.Create(effectPath, Position.X, Position.Y);
+      _mapEffect.SetColor(player.LocalPlayer);
+      _mapEffect.SetHeight(100 + Environment.GetPositionZ(Position));
     }
 
     if (_overheadEffect != null || TargetWidget == null)
@@ -168,8 +167,8 @@ public abstract class Objective
       return;
     }
 
-    effectPath = EligibleFactions.Contains(GetLocalPlayer()) ? OverheadEffectPath : "";
-    _overheadEffect = AddSpecialEffectTarget(effectPath, TargetWidget, "overhead");
+    effectPath = EligibleFactions.Contains(player.LocalPlayer) ? OverheadEffectPath : "";
+    _overheadEffect = effect.Create(effectPath, TargetWidget, "overhead");
   }
 
   /// <summary>Hides the synchronous aspects of this QuestItem, namely the minimap icon.</summary>
@@ -177,7 +176,7 @@ public abstract class Objective
   {
     if (_minimapIcon != null)
     {
-      SetMinimapIconVisible(_minimapIcon, false);
+      _minimapIcon.SetVisible(false);
     }
   }
 
@@ -186,12 +185,12 @@ public abstract class Objective
   {
     if (_mapEffect != null)
     {
-      DestroyEffect(_mapEffect);
+      _mapEffect.Dispose();
       _mapEffect = null;
     }
 
 
-    DestroyEffect(_overheadEffect);
+    _overheadEffect.Dispose();
     _overheadEffect = null;
   }
 
@@ -202,24 +201,24 @@ public abstract class Objective
       return;
     }
 
-    QuestItemSetDescription(QuestItem, Description);
+    QuestItem.SetDescription(Description);
 
     switch (Progress)
     {
       case QuestProgress.Incomplete:
-        QuestItemSetCompleted(QuestItem, false);
+        QuestItem.IsCompleted = false;
         SetResearchLevelForAllPlayers(ResearchId, 0);
         break;
       case QuestProgress.Complete:
-        QuestItemSetCompleted(QuestItem, true);
+        QuestItem.IsCompleted = true;
         SetResearchLevelForAllPlayers(ResearchId, 1);
         break;
       case QuestProgress.Undiscovered:
-        QuestItemSetCompleted(QuestItem, false);
+        QuestItem.IsCompleted = false;
         SetResearchLevelForAllPlayers(ResearchId, 0);
         break;
       case QuestProgress.Failed:
-        QuestItemSetCompleted(QuestItem, false);
+        QuestItem.IsCompleted = false;
         SetResearchLevelForAllPlayers(ResearchId, 0);
         break;
     }
@@ -229,7 +228,7 @@ public abstract class Objective
   {
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
-      SetPlayerTechResearched(player, researchId, level);
+      player.SetTechResearched(researchId, level);
     }
   }
 }

@@ -34,21 +34,21 @@ public sealed class ObjectiveControlCapital : Objective
 
   public override void OnAdd(Faction whichFaction)
   {
-    if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
+    if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.Owner))
     {
       Progress = QuestProgress.Complete;
     }
     _target.ChangedOwner += (_, _) => { RecalculateProgress(); };
     _target.UnitChanged += (_, _) => { RecalculateProgress(); };
 
-    var deathTrigger = CreateTrigger();
-    TriggerRegisterUnitEvent(deathTrigger, _target.Unit, EVENT_UNIT_DEATH);
-    TriggerAddAction(deathTrigger, () => { Progress = QuestProgress.Failed; });
+    var deathTrigger = trigger.Create();
+    deathTrigger.RegisterUnitEvent(_target.Unit, unitevent.Death);
+    deathTrigger.AddAction(() => { Progress = QuestProgress.Failed; });
   }
 
   private void RecalculateProgress()
   {
-    if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
+    if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.Owner))
     {
       Progress = QuestProgress.Complete;
     }

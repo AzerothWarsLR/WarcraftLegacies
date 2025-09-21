@@ -30,7 +30,7 @@ public sealed class QuestKezan : QuestData
 
     ResearchId = UPGRADE_R09Z_QUEST_COMPLETED_OFFSHORE_INVESTMENT;
     _rescueUnits = Regions.KezanUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures,
-      filterUnit => GetUnitTypeId(filterUnit) != FourCC("ngme"));
+      filterUnit => filterUnit.UnitType != FourCC("ngme"));
   }
 
   /// <inheritdoc />
@@ -43,7 +43,7 @@ public sealed class QuestKezan : QuestData
   protected override void OnFail(Faction completingFaction)
   {
     var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      ? player.NeutralAggressive
       : completingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);

@@ -40,12 +40,12 @@ public sealed class ObjectiveTrain : Objective
 
   private void OnTrain()
   {
-    if (GetUnitTypeId(GetTrainedUnit()) != _objectId)
+    if (@event.TrainedUnit.UnitType != _objectId)
     {
       return;
     }
 
-    if (!ProgressLocked && EligibleFactions.Contains(GetOwningPlayer(GetTrainedUnit())))
+    if (!ProgressLocked && EligibleFactions.Contains(@event.TrainedUnit.Owner))
     {
       CurrentTrainCount = _currentTrainCount + 1;
       if (_currentTrainCount == _targetTrainCount)

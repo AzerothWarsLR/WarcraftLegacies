@@ -28,10 +28,10 @@ public sealed class Incubate : PassiveAbility, IEffectOnSummonedUnit
   /// <inheritdoc />
   public void OnSummonedUnit()
   {
-    var summonedUnit = GetSummonedUnit();
-    UnitRemoveType(summonedUnit, UNIT_TYPE_SUMMONED);
+    var summonedUnit = @event.SummonedUnit;
+    summonedUnit.RemoveType(unittype.Summoned);
     var duration = MaturationDuration.Base +
-                   MaturationDuration.PerLevel * GetUnitAbilityLevel(GetSummoningUnit(), _abilityTypeId);
+                   MaturationDuration.PerLevel * @event.SummoningUnit.GetAbilityLevel(_abilityTypeId);
     var immatureEggBuff = new ImmatureEggBuff(summonedUnit)
     {
       Duration = duration,

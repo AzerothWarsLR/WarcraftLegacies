@@ -54,7 +54,7 @@ public sealed class QuestClosePortal : QuestData
   {
     foreach (var unit in _unitsToRemove)
     {
-      RemoveUnit(unit);
+      unit.Dispose();
     }
     _unitsToRemove.Clear();
     if (_khadgar.Unit != null)

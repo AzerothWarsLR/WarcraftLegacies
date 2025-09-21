@@ -46,17 +46,17 @@ public sealed class ObjectiveChannelRect : Objective
 
     MapEffectPath = TargetEffect;
 
-    TriggerRegisterEnterRegion(_entersRectTrig.Trigger, target, null);
-    TriggerAddAction(_entersRectTrig.Trigger, OnRegionEnter);
+    _entersRectTrig.Trigger.RegisterEnterRegion(target, null);
+    _entersRectTrig.Trigger.AddAction(OnRegionEnter);
     DisplaysPosition = true;
-    Position = new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
+    Position = new(_targetRect.CenterX, _targetRect.CenterY);
   }
 
   private void OnRegionEnter()
   {
-    var whichUnit = GetEnteringUnit();
-    if (!EligibleFactions.Contains(GetOwningPlayer(whichUnit)) || !UnitAlive(whichUnit) ||
-        LegendaryHeroManager.GetFromUnit(GetTriggerUnit()) != _targetLegend || _channel != null ||
+    var whichUnit = @event.EnteringUnit;
+    if (!EligibleFactions.Contains(whichUnit.Owner) || !whichUnit.Alive ||
+        LegendaryHeroManager.GetFromUnit(@event.Unit) != _targetLegend || _channel != null ||
         Progress != QuestProgress.Incomplete)
     {
       return;

@@ -17,15 +17,15 @@ public static class HeroGlowFix
   {
     PlayerUnitEvents.Register(HeroTypeEvent.FinishesRevive, () =>
     {
-      var triggerUnit = GetTriggerUnit();
+      var triggerUnit = @event.Unit;
       var revivedLegend = LegendaryHeroManager.GetFromUnit(triggerUnit);
       if (revivedLegend?.HasCustomColor == true)
       {
-        SetUnitColor(triggerUnit, revivedLegend.PlayerColor);
+        triggerUnit.SetColor(revivedLegend.PlayerColor);
       }
       else
       {
-        SetUnitColor(triggerUnit, GetTriggerPlayer()?.GetFaction()?.PlayerColor ?? PLAYER_COLOR_COAL);
+        triggerUnit.SetColor(@event.Player?.GetFaction()?.PlayerColor ?? playercolor.Coal);
       }
     });
   }

@@ -27,23 +27,23 @@ public sealed class SimulacrumBuff : PassiveBuff
 
   public override void OnDispose()
   {
-    var tempEffect = AddSpecialEffect(_effectTarget, GetUnitX(Target), GetUnitY(Target));
-    BlzSetSpecialEffectScale(tempEffect, _effectScaleTarget);
-    DestroyEffect(tempEffect);
-    KillUnit(Target);
-    RemoveUnit(Target);
+    var tempEffect = effect.Create(_effectTarget, Target.X, Target.Y);
+    tempEffect.Scale = _effectScaleTarget;
+    tempEffect.Dispose();
+    Target.Kill();
+    Target.Dispose();
     base.OnDispose();
   }
 
   public override void OnApply()
   {
-    UnitAddType(Target, UNIT_TYPE_SUMMONED);
-    UnitApplyTimedLife(Target, 0, Duration);
-    SetUnitVertexColor(Target, 100, 100, 230, 150);
+    Target.AddType(unittype.Summoned);
+    Target.ApplyTimedLife(0, Duration);
+    Target.SetVertexColor(100, 100, 230, 150);
     Target.MultiplyBaseDamage(_damageScale, 0);
     Target.MultiplyMaxHitpoints(_hitpointScale);
-    var tempEffect = AddSpecialEffect(_effectTarget, GetUnitX(Target), GetUnitY(Target));
-    BlzSetSpecialEffectScale(tempEffect, _effectScaleTarget);
-    DestroyEffect(tempEffect);
+    var tempEffect = effect.Create(_effectTarget, Target.X, Target.Y);
+    tempEffect.Scale = _effectScaleTarget;
+    tempEffect.Dispose();
   }
 }

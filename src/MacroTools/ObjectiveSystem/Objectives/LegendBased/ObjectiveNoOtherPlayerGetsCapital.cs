@@ -17,18 +17,18 @@ public sealed class NoOtherPlayerGetsCapital : Objective
   public NoOtherPlayerGetsCapital(Capital target)
   {
     _target = target;
-    Description = $"No other player has acquired {GetUnitName(target.Unit)}";
+    Description = $"No other player has acquired {target.Unit.Name}";
   }
 
   /// <inheritdoc/>
   public override void OnAdd(FactionSystem.Faction faction)
   {
     Progress = QuestProgress.Complete;
-    var changeTrigger = CreateTrigger();
-    TriggerRegisterUnitEvent(changeTrigger, _target.Unit, EVENT_UNIT_CHANGE_OWNER);
-    TriggerAddAction(changeTrigger, () =>
+    var changeTrigger = trigger.Create();
+    changeTrigger.RegisterUnitEvent(_target.Unit, unitevent.ChangeOwner);
+    changeTrigger.AddAction(() =>
     {
-      if (GetOwningPlayer(GetTriggerUnit()) != faction.Player)
+      if (@event.Unit.Owner != faction.Player)
       {
         Progress = QuestProgress.Failed;
       }

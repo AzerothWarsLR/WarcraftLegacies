@@ -19,16 +19,16 @@ public static class BlightSystem
 
   private static void UnitDies()
   {
-    var triggerUnit = GetTriggerUnit();
+    var triggerUnit = @event.Unit;
     var parameters = _blightParameters[triggerUnit];
 
     if (_blightFaction?.Player?.GetTeam() is null || _blightFaction.Player is null ||
-        !_blightFaction.Player.GetTeam()?.Contains(GetOwningPlayer(GetKillingUnit())) != true)
+        !_blightFaction.Player.GetTeam()?.Contains(@event.KillingUnit.Owner) != true)
     {
       return;
     }
 
-    SetBlightRadius(_blightFaction.Player, new Point(GetUnitX(triggerUnit), GetUnitY(triggerUnit)),
+    SetBlightRadius(_blightFaction.Player, new Point(triggerUnit.X, triggerUnit.Y),
       parameters.PrimaryBlightRadius, true);
     if (parameters.RandomBlightRectangle is null)
     {
@@ -61,9 +61,9 @@ public static class BlightSystem
     }
 
     _blightParameters.Add(whichUnit, blightParameters);
-    var deathTrigger = CreateTrigger();
-    TriggerRegisterUnitEvent(deathTrigger, whichUnit, EVENT_UNIT_DEATH);
-    TriggerAddAction(deathTrigger, UnitDies);
+    var deathTrigger = trigger.Create();
+    deathTrigger.RegisterUnitEvent(whichUnit, unitevent.Death);
+    deathTrigger.AddAction(UnitDies);
   }
 
   public static void Setup(Faction blightFaction)

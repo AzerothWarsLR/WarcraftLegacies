@@ -49,30 +49,30 @@ public sealed class DefensiveCocoonAbility : TakeDamagePassiveAbility
   /// <inheritdoc />
   public override void OnTakesDamage()
   {
-    var damaged = GetTriggerUnit();
-    var abilityLevel = GetUnitAbilityLevel(damaged, AbilityTypeId);
+    var damaged = @event.Unit;
+    var abilityLevel = damaged.GetAbilityLevel(AbilityTypeId);
     if (!ShouldBecomeEgg(abilityLevel, damaged))
     {
       return;
     }
 
-    BlzSetEventDamage(0);
+    @event.Damage = 0;
 
     var vengeanceBuff = new DefensiveCocoonBuff(damaged, damaged)
     {
       Duration = Duration,
       EggId = EggId,
       ReviveEffect = ReviveEffect,
-      MaximumHitPoints = (int)(BlzGetUnitMaxHP(damaged) * MaximumHealthPercentage)
+      MaximumHitPoints = (int)(damaged.MaxLife * MaximumHealthPercentage)
     };
     BuffSystem.Add(vengeanceBuff);
   }
 
 
   private bool ShouldBecomeEgg(int abilityLevel, unit target) =>
-    GetPlayerTechCount(GetOwningPlayer(target), RequiredResearch, false) > 0 &&
+    target.Owner.GetTechResearched(RequiredResearch, false) > 0 &&
     abilityLevel != 0 &&
-    BlzGetUnitSkin(target) != EggId &&
-    GetEventDamage() >= GetUnitState(target, UNIT_STATE_LIFE) &&
-    !IsUnitIllusion(target);
+    target.Skin != EggId &&
+    @event.Damage >= target.Life &&
+    !target.IsIllusion;
 }

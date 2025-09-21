@@ -11,7 +11,7 @@ public sealed class ScarletCrusade : Faction
   private readonly AllLegendSetup _allLegendSetup;
 
   /// <inheritdoc />
-  public ScarletCrusade(AllLegendSetup allLegendSetup) : base("Scarlet Crusade", PLAYER_COLOR_LIGHT_BLUE,
+  public ScarletCrusade(AllLegendSetup allLegendSetup) : base("Scarlet Crusade", playercolor.LightBlue,
     "ReplaceableTextures/CommandButtons/BTNScarletKnight.blp")
   {
     _allLegendSetup = allLegendSetup;

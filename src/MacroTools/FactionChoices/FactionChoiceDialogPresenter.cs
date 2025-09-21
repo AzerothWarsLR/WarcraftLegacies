@@ -39,12 +39,12 @@ public sealed class FactionChoiceDialogPresenter : ChoiceDialogPresenter<Faction
   {
     var startingUnits = GlobalGroup
       .EnumUnitsInRect(choice.StartingArea)
-      .Where(x => GetUnitTypeId(x) != FourCC("ngol"));
+      .Where(x => x.UnitType != FourCC("ngol"));
 
     foreach (var unit in startingUnits)
     {
       var replacedUnit = unit.ReplaceWithFactionEquivalent(pickedFaction);
-      SetUnitOwner(replacedUnit, pickingPlayer, true);
+      replacedUnit.SetOwner(pickingPlayer, true);
 
       if (replacedUnit != unit && CinematicMode.State == CinematicState.Active)
       {
@@ -62,8 +62,8 @@ public sealed class FactionChoiceDialogPresenter : ChoiceDialogPresenter<Faction
 
     var unitsInRegion = GlobalGroup
       .EnumUnitsInRect(region)
-      .Where(x => GetUnitTypeId(x) != FourCC("ngol"))
-      .Where(x => GetOwningPlayer(x) != Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      .Where(x => x.UnitType != FourCC("ngol"))
+      .Where(x => x.Owner != player.NeutralAggressive);
 
     foreach (var unit in unitsInRegion)
     {

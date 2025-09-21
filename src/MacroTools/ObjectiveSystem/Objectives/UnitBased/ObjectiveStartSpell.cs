@@ -34,13 +34,13 @@ public sealed class ObjectiveStartSpell : Objective
   private void OnCast()
   {
     if (Progress == QuestProgress.Complete ||
-        (_requiredLegend != null && LegendaryHeroManager.GetFromUnit(GetTriggerUnit()) != _requiredLegend) ||
-        (_holderOnly && !EligibleFactions.Contains(GetOwningPlayer(GetTriggerUnit()))))
+        (_requiredLegend != null && LegendaryHeroManager.GetFromUnit(@event.Unit) != _requiredLegend) ||
+        (_holderOnly && !EligibleFactions.Contains(@event.Unit.Owner)))
     {
       return;
     }
 
-    Caster = GetTriggerUnit();
+    Caster = @event.Unit;
     Progress = QuestProgress.Complete;
   }
 }

@@ -35,7 +35,7 @@ public sealed class QuestRebuildCivilisation : QuestData
     }
     else
     {
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+      player.NeutralAggressive.RescueGroup(_rescueUnits);
     }
   }
 

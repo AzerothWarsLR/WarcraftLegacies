@@ -64,19 +64,19 @@ public sealed class RestoreHealthFromEachTargetDamaged : PassiveAbility, IApplie
   /// <inheritdoc />
   public void OnDealsDamage()
   {
-    var triggerUnit = GetTriggerUnit();
-    var caster = GetEventDamageSource();
+    var triggerUnit = @event.Unit;
+    var caster = @event.DamageSource;
 
-    if (IsUnitType(triggerUnit, UNIT_TYPE_STRUCTURE) || ControlPointManager.Instance.UnitIsControlPoint(triggerUnit) ||
-      IsUnitAlly(triggerUnit, GetOwningPlayer(caster)) || GetUnitAbilityLevel(caster, _abilityTypeId) == 0)
+    if (triggerUnit.IsUnitType(unittype.Structure) || ControlPointManager.Instance.UnitIsControlPoint(triggerUnit) ||
+      triggerUnit.IsAllyTo(caster.Owner) || caster.GetAbilityLevel(_abilityTypeId) == 0)
     {
       return;
     }
 
-    var damagetype = BlzGetEventDamageType();
+    var damagetype = @event.DamageType;
     var diminishMultiplier = 1.0f;
 
-    if (BlzGetEventIsAttack() || damagetype != LastDamageType || caster != LastUnit)
+    if (@event.IsAttack || damagetype != LastDamageType || caster != LastUnit)
     {
       Units.Clear();
       LastDamageType = damagetype;
@@ -93,8 +93,8 @@ public sealed class RestoreHealthFromEachTargetDamaged : PassiveAbility, IApplie
       _ = Math.Max(diminishMultiplier, 0.0f);
     }
 
-    var healthPerTarget = ((caster.GetLevel() * HealthPerLevel) + (HealthPerTarget.Base + HealthPerTarget.PerLevel) * GetUnitAbilityLevel(caster, _abilityTypeId));
+    var healthPerTarget = ((caster.GetLevel() * HealthPerLevel) + (HealthPerTarget.Base + HealthPerTarget.PerLevel) * caster.GetAbilityLevel(_abilityTypeId));
     caster.Heal(healthPerTarget);
-    EffectSystem.Add(AddSpecialEffectTarget(Effect, caster, "origin"));
+    EffectSystem.Add(effect.Create(Effect, caster, "origin"));
   }
 }

@@ -14,7 +14,7 @@ public sealed class DarkPact : Spell
 
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    SetUnitState(caster, UNIT_STATE_LIFE, GetUnitState(caster, UNIT_STATE_LIFE) + GetUnitState(target, UNIT_STATE_LIFE));
-    KillUnit(target);
+    caster.Life = caster.Life + target.Life;
+    target.Kill();
   }
 }

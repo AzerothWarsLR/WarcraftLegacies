@@ -59,20 +59,18 @@ public sealed class WaygateOpen : Spell
     var exteriorWaygatePosition = GetExteriorWaygatePosition();
     var interiorWaygatePosition = GetInteriorWaygatePosition();
 
-    _exteriorWaygate = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), ExteriorWaygateUnitTypeId,
-      exteriorWaygatePosition.X, exteriorWaygatePosition.Y, 0);
+    _exteriorWaygate = unit.Create(player.NeutralPassive, ExteriorWaygateUnitTypeId, exteriorWaygatePosition.X, exteriorWaygatePosition.Y, 0);
     _exteriorWaygate.SetWaygateDestination(interiorWaygatePosition);
 
-    _interiorWaygate = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), InteriorWaygateUnitTypeId,
-      interiorWaygatePosition.X, interiorWaygatePosition.Y, 0);
+    _interiorWaygate = unit.Create(player.NeutralPassive, InteriorWaygateUnitTypeId, interiorWaygatePosition.X, interiorWaygatePosition.Y, 0);
     _exteriorWaygate.SetWaygateDestination(exteriorWaygatePosition);
   }
 
   /// <inheritdoc />
   public override void OnStop(unit caster)
   {
-    RemoveUnit(_exteriorWaygate);
-    RemoveUnit(_interiorWaygate);
+    _exteriorWaygate.Dispose();
+    _interiorWaygate.Dispose();
     _exteriorWaygate = null;
     _interiorWaygate = null;
   }

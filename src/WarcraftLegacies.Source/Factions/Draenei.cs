@@ -20,7 +20,7 @@ public sealed class Draenei : Faction
 
   /// <inheritdoc />
   public Draenei(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
-    : base("The Exodar", PLAYER_COLOR_MINT, @"ReplaceableTextures\CommandButtons\BTNBOSSVelen.blp")
+    : base("The Exodar", playercolor.Mint, @"ReplaceableTextures\CommandButtons\BTNBOSSVelen.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;
     _preplacedUnitSystem = preplacedUnitSystem;
@@ -76,7 +76,7 @@ public sealed class Draenei : Faction
     ));
     var crystalProtectors = GlobalGroup
       .EnumUnitsInRect(Regions.ExodarBaseUnlock.Rect)
-      .Where(x => GetUnitTypeId(x) == UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER);
+      .Where(x => x.UnitType == UNIT_U00U_CRYSTAL_PROTECTOR_DRAENEI_TOWER);
     var questRepairGenerator = new QuestRepairGenerator(_allLegendSetup.Draenei.LegendExodarGenerator, questRepairHull, crystalProtectors);
     AddQuest(questRepairGenerator);
     AddQuest(new QuestTriumvirate(_allLegendSetup.Draenei.Velen));

@@ -41,7 +41,7 @@ public sealed class WhimOfTheWinds : Spell
 
     foreach (var buff in _possibleBuffs)
     {
-      if (GetUnitAbilityLevel(target, buff.AbilityId) > 0)
+      if (target.GetAbilityLevel(buff.AbilityId) > 0)
       {
         return;
       }

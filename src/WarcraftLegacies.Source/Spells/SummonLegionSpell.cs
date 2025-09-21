@@ -21,10 +21,10 @@ public sealed class SummonLegionSpell : Spell
       return;
     }
 
-    TimerStart(CreateTimer(), 1f, false, () =>
+    timer.Create().Start(1f, false, () =>
     {
-      IssueImmediateOrder(caster, "stop");
-      DestroyTimer(GetExpiredTimer());
+      caster.IssueOrder("stop");
+      @event.ExpiredTimer.Dispose();
     });
   }
 

@@ -11,7 +11,7 @@ public static class DestructibleSetup
   public static void Setup(PreplacedUnitSystem preplacedUnitSystem)
   {
     var thandolSpan = preplacedUnitSystem.GetDestructable(FourCC("LT08"), new Point(15695, 457));
-    SetDestructableInvulnerable(thandolSpan, true);
-    //KillDestructable(thandolSpan);
+    thandolSpan.IsInvulnerable = true;
+    //thandolSpan.Kill();
   }
 }

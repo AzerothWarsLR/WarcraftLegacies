@@ -36,20 +36,19 @@ public sealed class CheatShore : Command
 
     foreach (var unit in GlobalGroup.EnumUnitsInRect(WCSharp.Shared.Data.Rectangle.WorldBounds))
     {
-      RemoveUnit(unit);
+      unit.Dispose();
     }
 
-    var newFogModifier = CreateFogModifierRect(cheater, FOG_OF_WAR_VISIBLE,
-      WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, true, true);
-    FogModifierStart(newFogModifier);
+    var newFogModifier = WCSharp.Shared.Data.Rectangle.WorldBounds.Rect.AddFogModifier(cheater, fogstate.Visible, true, true);
+    newFogModifier.Start();
 
     foreach (var shore in ShoreManager.GetAllShores())
     {
-      var newUnit = CreateUnit(cheater, FourCC("npng"), shore.Position.X, shore.Position.Y, 0);
-      SetUnitScale(newUnit, 7, 7, 7);
-      BlzSetUnitName(newUnit, shore.Name);
-      SetUnitInvulnerable(newUnit, true);
-      UnitRemoveAbility(newUnit, FourCC("Awan"));
+      var newUnit = unit.Create(cheater, FourCC("npng"), shore.Position.X, shore.Position.Y, 0);
+      newUnit.SetScale(7, 7, 7);
+      newUnit.Name = shore.Name;
+      newUnit.IsInvulnerable = true;
+      newUnit.RemoveAbility(FourCC("Awan"));
     }
 
     return $"Created a penguin at all registered {nameof(Shore)}s.";

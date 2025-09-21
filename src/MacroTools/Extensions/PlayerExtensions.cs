@@ -41,7 +41,7 @@ public static class PlayerExtensions
   /// <param name="duration">How long the ping should last.</param>
   public static void PingLocation(this player whichPlayer, Point position, float duration)
   {
-    if (GetLocalPlayer() == whichPlayer)
+    if (player.LocalPlayer == whichPlayer)
     {
       PingMinimap(position.X, position.Y, duration);
     }
@@ -94,7 +94,7 @@ public static class PlayerExtensions
   /// <param name="units">The units to rescue.</param>
   public static void RescueGroup(this player? newOwningPlayer, List<unit> units)
   {
-    newOwningPlayer ??= Player(PLAYER_NEUTRAL_AGGRESSIVE);
+    newOwningPlayer ??= player.NeutralAggressive;
 
     foreach (var unit in units)
     {
@@ -113,10 +113,10 @@ public static class PlayerExtensions
 
   internal static void SetColorAndChangeExisting(this player whichPlayer, playercolor color)
   {
-    SetPlayerColor(whichPlayer, color);
+    whichPlayer.Color = color;
     foreach (var unit in GlobalGroup.EnumUnitsOfPlayer(whichPlayer))
     {
-      SetUnitColor(unit, color);
+      unit.SetColor(color);
     }
   }
 
@@ -129,7 +129,7 @@ public static class PlayerExtensions
   /// </summary>
   public static void RemoveAllUnits(this player whichPlayer)
   {
-    var hostilePlayer = Player(PLAYER_NEUTRAL_AGGRESSIVE);
+    var hostilePlayer = player.NeutralAggressive;
     foreach (var unit in GlobalGroup
                .EnumUnitsOfPlayer(whichPlayer))
     {
@@ -139,7 +139,7 @@ public static class PlayerExtensions
       }
       else
       {
-        SetUnitOwner(unit, hostilePlayer, true);
+        unit.SetOwner(hostilePlayer, true);
       }
     }
   }
@@ -149,9 +149,9 @@ public static class PlayerExtensions
   /// </summary>
   public static void Select(this player whichPlayer, unit whichUnit)
   {
-    if (GetLocalPlayer() == whichPlayer)
+    if (player.LocalPlayer == whichPlayer)
     {
-      SelectUnit(whichUnit, true);
+      whichUnit.Select(true);
     }
   }
 
@@ -160,7 +160,7 @@ public static class PlayerExtensions
   /// </summary>
   public static void FlashQuests(this player whichPlayer)
   {
-    if (GetLocalPlayer() == whichPlayer)
+    if (player.LocalPlayer == whichPlayer)
     {
       FlashQuestDialogButton();
     }

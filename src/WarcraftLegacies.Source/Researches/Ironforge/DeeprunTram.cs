@@ -43,18 +43,18 @@ public sealed class DeeprunTram : Research
     var recipient = _ironforge.Player ?? _stormwind.Player;
     if (recipient == null)
     {
-      KillUnit(_tramToIronforge);
-      KillUnit(_tramToStormwind);
+      _tramToIronforge.Kill();
+      _tramToStormwind.Kill();
       return;
     }
 
-    SetUnitOwner(_tramToIronforge, recipient, true);
-    WaygateSetDestination(_tramToIronforge, Regions.Ironforge.Center.X, Regions.Ironforge.Center.Y);
-    WaygateActivate(_tramToIronforge, true);
+    _tramToIronforge.SetOwner(recipient, true);
+    _tramToIronforge.SetWaygateDestination(Regions.Ironforge.Center.X, Regions.Ironforge.Center.Y);
+    _tramToIronforge.WaygateActive = true;
 
-    SetUnitOwner(_tramToStormwind, recipient, true);
-    WaygateSetDestination(_tramToStormwind, Regions.Stormwind.Center.X, Regions.Stormwind.Center.Y);
-    WaygateActivate(_tramToStormwind, true);
+    _tramToStormwind.SetOwner(recipient, true);
+    _tramToStormwind.SetWaygateDestination(Regions.Stormwind.Center.X, Regions.Stormwind.Center.Y);
+    _tramToStormwind.WaygateActive = true;
 
     _stormwind.SetObjectLevel(ResearchId, 1);
     _ironforge.SetObjectLevel(ResearchId, 1);
@@ -64,7 +64,7 @@ public sealed class DeeprunTram : Research
   /// <inheritdoc />
   public override void OnRegister()
   {
-    PlayerUnitEvents.Register(UnitEvent.Dies, () => { KillUnit(_tramToStormwind); }, _tramToIronforge);
-    PlayerUnitEvents.Register(UnitEvent.Dies, () => { KillUnit(_tramToIronforge); }, _tramToStormwind);
+    PlayerUnitEvents.Register(UnitEvent.Dies, () => { _tramToStormwind.Kill(); }, _tramToIronforge);
+    PlayerUnitEvents.Register(UnitEvent.Dies, () => { _tramToIronforge.Kill(); }, _tramToStormwind);
   }
 }

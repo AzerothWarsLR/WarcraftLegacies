@@ -51,13 +51,13 @@ public sealed class CheatGod : Command
   {
     try
     {
-      if (IsCheatActive(GetTriggerPlayer()))
+      if (IsCheatActive(@event.Player))
       {
-        BlzSetEventDamage(0);
+        @event.Damage = 0;
       }
-      else if (IsCheatActive(GetOwningPlayer(GetEventDamageSource())))
+      else if (IsCheatActive(@event.DamageSource.Owner))
       {
-        BlzSetEventDamage(GetEventDamage() * 100);
+        @event.Damage = @event.Damage * 100;
       }
     }
     catch (Exception e)

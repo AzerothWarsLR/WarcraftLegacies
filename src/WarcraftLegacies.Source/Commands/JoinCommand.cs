@@ -13,8 +13,8 @@ public static class JoinCommand
 
   private static void Actions()
   {
-    var enteredString = GetEventPlayerChatString();
-    var triggerPlayer = GetTriggerPlayer();
+    var enteredString = @event.PlayerChatString;
+    var triggerPlayer = @event.Player;
 
     if (SubString(enteredString, 0, StringLength(Command)) != Command)
     {
@@ -29,28 +29,28 @@ public static class JoinCommand
       if (targetTeam.IsPlayerInvited(triggerPlayer))
       {
         triggerPlayer.SetTeam(targetTeam);
-        DisplayTextToPlayer(triggerPlayer, 0, 0, $"You have joined {targetTeam.Name}.");
+        triggerPlayer.DisplayTextTo($"You have joined {targetTeam.Name}.", 0, 0);
         targetTeam.DisplayText($"{triggerPlayer?.GetFaction()?.ColoredName} has joined the {targetTeam.Name}.");
       }
       else
       {
-        DisplayTextToPlayer(triggerPlayer, 0, 0, $"You have not been invited to join {targetTeam.Name}.");
+        triggerPlayer.DisplayTextTo($"You have not been invited to join {targetTeam.Name}.", 0, 0);
       }
     }
     else
     {
-      DisplayTextToPlayer(triggerPlayer, 0, 0, $"There is no Team with the name {content}.");
+      triggerPlayer.DisplayTextTo($"There is no Team with the name {content}.", 0, 0);
     }
   }
 
   public static void Setup()
   {
-    var trig = CreateTrigger();
+    var trig = trigger.Create();
     foreach (var player in Util.EnumeratePlayers())
     {
-      TriggerRegisterPlayerChatEvent(trig, player, Command, false);
+      trig.RegisterPlayerChatEvent(player, Command, false);
     }
 
-    TriggerAddAction(trig, Actions);
+    trig.AddAction(Actions);
   }
 }

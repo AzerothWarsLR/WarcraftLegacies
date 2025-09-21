@@ -6,29 +6,29 @@ public static class CastFilters
 {
   public static bool IsTargetOrganicAndAlive(unit caster, unit target)
   {
-    return !IsUnitType(target, UNIT_TYPE_STRUCTURE) && !IsUnitType(target, UNIT_TYPE_ANCIENT) &&
-           !IsUnitType(target, UNIT_TYPE_MECHANICAL) && UnitAlive(target);
+    return !target.IsUnitType(unittype.Structure) && !target.IsUnitType(unittype.Ancient) &&
+           !target.IsUnitType(unittype.Mechanical) && target.Alive;
   }
 
   public static bool IsTargetAllyAndAlive(unit caster, unit target)
   {
-    var casterPlayer = GetOwningPlayer(caster);
-    return (IsUnitAlly(target, casterPlayer) || GetOwningPlayer(target) == Player(PLAYER_NEUTRAL_PASSIVE)) &&
-           UnitAlive(target) && BlzIsUnitInvulnerable(target) == false;
+    var casterPlayer = caster.Owner;
+    return (target.IsAllyTo(casterPlayer) || target.Owner == player.NeutralPassive) &&
+           target.Alive && target.IsInvulnerable == false;
   }
 
   public static bool IsTargetOwnAliveNonHeroUnit(unit caster, unit target)
   {
-    return GetOwningPlayer(caster) == GetOwningPlayer(target) && UnitAlive(target) &&
-            BlzIsUnitInvulnerable(target) == false && !target.IsResistant() &&
-            !IsUnitType(target, UNIT_TYPE_STRUCTURE) && !IsUnitType(target, UNIT_TYPE_ANCIENT);
+    return caster.Owner == target.Owner && target.Alive &&
+            target.IsInvulnerable == false && !target.IsResistant() &&
+            !target.IsUnitType(unittype.Structure) && !target.IsUnitType(unittype.Ancient);
   }
 
   public static bool IsTargetEnemyAndAlive(unit caster, unit target)
   {
-    var casterPlayer = GetOwningPlayer(caster);
+    var casterPlayer = caster.Owner;
     return caster != target &&
-           (IsUnitEnemy(target, casterPlayer) || GetOwningPlayer(target) == Player(PLAYER_NEUTRAL_PASSIVE)) &&
-           UnitAlive(target) && BlzIsUnitInvulnerable(target) == false;
+           (target.IsEnemyTo(casterPlayer) || target.Owner == player.NeutralPassive) &&
+           target.Alive && target.IsInvulnerable == false;
   }
 }

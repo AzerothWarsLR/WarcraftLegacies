@@ -44,7 +44,7 @@ public sealed class LegendDraenei
     Adal = new LegendaryHero("A'dal")
     {
       UnitType = FourCC("H09M"),
-      PlayerColor = PLAYER_COLOR_BLUE,
+      PlayerColor = playercolor.Blue,
       StartingXp = 10800
     };
 

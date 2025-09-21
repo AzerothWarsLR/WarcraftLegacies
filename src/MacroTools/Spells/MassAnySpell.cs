@@ -34,17 +34,17 @@ public sealed class MassAnySpell : Spell
 
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    var center = TargetType == SpellTargetType.None ? new Point(GetUnitX(caster), GetUnitY(caster)) : targetPoint;
+    var center = TargetType == SpellTargetType.None ? new Point(caster.X, caster.Y) : targetPoint;
     var units = GetUnitsInRadius(center, Radius, CastFilter);
 
     var filteredUnits = units.Where(u => GetRandomReal(0, 1) <= Chance).ToList();
 
     foreach (var unit in filteredUnits)
     {
-      if (EnableDamage && IsUnitEnemy(unit, GetOwningPlayer(caster)))
+      if (EnableDamage && unit.IsEnemyTo(caster.Owner))
       {
         var damage = DamageBase + DamageLevel * GetAbilityLevel(caster);
-        UnitDamageTarget(caster, unit, damage, false, false, ATTACK_TYPE_NORMAL, DAMAGE_TYPE_MAGIC, WEAPON_TYPE_WHOKNOWS);
+        caster.DealDamage(unit, damage, false, false, attacktype.Normal, damagetype.Magic, weapontype.WhoKnows);
       }
     }
 
@@ -79,21 +79,21 @@ public sealed class MassAnySpell : Spell
 
   private IEnumerable<unit> GetUnitsInRadius(Point center, float radius, DummyCasterManager.CastFilter castFilter)
   {
-    var group = CreateGroup();
-    GroupEnumUnitsInRange(group, center.X, center.Y, radius, null);
+    group group = group.Create();
+    group.EnumUnitsInRange(center.X, center.Y, radius, null);
     var units = new List<unit>();
     unit u;
 
-    while ((u = FirstOfGroup(group)) != null)
+    while ((u = group.First) != null)
     {
-      GroupRemoveUnit(group, u);
+      group.Remove(u);
       if (castFilter(null, u))
       {
         units.Add(u);
       }
     }
 
-    DestroyGroup(group);
+    group.Dispose();
     return units;
   }
 }

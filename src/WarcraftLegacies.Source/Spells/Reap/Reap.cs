@@ -55,7 +55,7 @@ public sealed class Reap : Spell
       var killTargets = GlobalGroup
         .EnumUnitsInRange(casterPosition, radius)
         .Where(x => IsValidTarget(x, caster))
-        .OrderBy(x => GetUnitLevel(x))
+        .OrderBy(x => x.Level)
         .ThenBy(x => MathEx.GetDistanceBetweenPoints(caster.GetPosition(), x.GetPosition()))
         .Take(unitsSlain)
         .ToList();
@@ -67,9 +67,9 @@ public sealed class Reap : Spell
 
       foreach (var killTarget in killTargets)
       {
-        killTarget.TakeDamage(caster, GetUnitState(killTarget, UNIT_STATE_LIFE), damageType: DAMAGE_TYPE_UNIVERSAL,
-          attackType: ATTACK_TYPE_CHAOS);
-        EffectSystem.Add(AddSpecialEffect(KillEffect, GetUnitX(killTarget), GetUnitY(killTarget)));
+        killTarget.TakeDamage(caster, killTarget.Life, damageType: damagetype.Universal,
+          attackType: attacktype.Chaos);
+        EffectSystem.Add(effect.Create(KillEffect, killTarget.X, killTarget.Y));
       }
 
       var strengthGainPerTarget = UpgradeCondition(caster)
@@ -91,11 +91,11 @@ public sealed class Reap : Spell
   }
 
   private static bool IsValidTarget(unit target, unit caster) =>
-    UnitAlive(target) &&
+    target.Alive &&
     !target.IsResistant() &&
-    !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
-    !IsUnitType(target, UNIT_TYPE_ANCIENT) &&
-    !IsUnitType(target, UNIT_TYPE_MECHANICAL) &&
-    !IsUnitType(target, UNIT_TYPE_MAGIC_IMMUNE) &&
-    !IsPlayerAlly(GetOwningPlayer(caster), GetOwningPlayer(target));
+    !target.IsUnitType(unittype.Structure) &&
+    !target.IsUnitType(unittype.Ancient) &&
+    !target.IsUnitType(unittype.Mechanical) &&
+    !target.IsUnitType(unittype.MagicImmune) &&
+    !caster.Owner.IsAlly(target.Owner);
 }

@@ -49,7 +49,7 @@ public sealed class LegendScourge
       StartingXp = 4000,
       StartingArtifacts = new List<Artifact>
       {
-        new(CreateItem(ITEM_ZB07_FROSTMOURNE, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+        new(item.Create(ITEM_ZB07_FROSTMOURNE, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
       }
     };
 

@@ -25,7 +25,7 @@ public sealed class Druids : Faction
   /// <inheritdoc />
 
   public Druids(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) :
-    base("Druids", PLAYER_COLOR_BROWN, @"ReplaceableTextures\CommandButtons\BTNFurion.blp")
+    base("Druids", playercolor.Brown, @"ReplaceableTextures\CommandButtons\BTNFurion.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;
     _preplacedUnitSystem = preplacedUnitSystem;

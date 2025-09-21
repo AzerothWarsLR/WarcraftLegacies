@@ -18,22 +18,21 @@ public static class UnitEventSystem
 
   private static void InitializeDeathTrigger()
   {
-    var trigger = CreateTrigger();
+    trigger trigger = trigger.Create();
 
     // Register unit death events for all players
     for (var playerId = 0; playerId < 24; playerId++)
     {
-      TriggerRegisterPlayerUnitEvent(trigger, Player(playerId),
-          EVENT_PLAYER_UNIT_DEATH, null);
+      trigger.RegisterPlayerUnitEvent(player.Create(playerId), playerunitevent.Death, null);
     }
 
-    TriggerAddAction(trigger, OnUnitDeath);
+    trigger.AddAction(OnUnitDeath);
   }
 
   private static void OnUnitDeath()
   {
-    var dyingUnit = GetTriggerUnit();
-    var unitId = GetHandleId(dyingUnit);
+    var dyingUnit = @event.Unit;
+    var unitId = dyingUnit.HandleId;
 
     if (_unitDeathCallbacks.TryGetValue(unitId, out var callback))
     {
@@ -47,7 +46,7 @@ public static class UnitEventSystem
   /// </summary>
   public static void RegisterDeathEvent(unit unit, System.Action callback)
   {
-    var unitId = GetHandleId(unit);
+    var unitId = unit.HandleId;
     _unitDeathCallbacks[unitId] = callback;
   }
 }

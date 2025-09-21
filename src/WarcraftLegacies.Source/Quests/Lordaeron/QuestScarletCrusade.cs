@@ -89,7 +89,7 @@ public sealed class QuestScarletCrusade : QuestData
   {
     var neutralHostileUnitsInTyrsHand = GlobalGroup
       .EnumUnitsInRect(Regions.TyrUnlock)
-      .Where(x => GetOwningPlayer(x) == Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      .Where(x => x.Owner == player.NeutralAggressive);
 
     foreach (var unit in neutralHostileUnitsInTyrsHand)
     {

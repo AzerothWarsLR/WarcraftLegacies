@@ -8,8 +8,8 @@ public static class TierCodeOfChivalry
 {
   private static void Research()
   {
-    GetTriggerPlayer().GetFaction()?.ModObjectLimit(UNIT_H01B_OUTRIDER_STORMWIND, -Faction.Unlimited);
-    GetTriggerPlayer().GetFaction()?.ModObjectLimit(UNIT_H054_STORMWIND_KNIGHT_STORMWIND, Faction.Unlimited);
+    @event.Player.GetFaction()?.ModObjectLimit(UNIT_H01B_OUTRIDER_STORMWIND, -Faction.Unlimited);
+    @event.Player.GetFaction()?.ModObjectLimit(UNIT_H054_STORMWIND_KNIGHT_STORMWIND, Faction.Unlimited);
   }
 
   public static void Setup()

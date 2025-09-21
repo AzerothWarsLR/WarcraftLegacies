@@ -28,7 +28,7 @@ public static class WaygateManager
 
   private static void OnWaygateCreated()
   {
-    var newWaygate = new Waygate(GetTriggerUnit());
+    var newWaygate = new Waygate(@event.Unit);
     if (WaygateA == null)
     {
       WaygateA = newWaygate;

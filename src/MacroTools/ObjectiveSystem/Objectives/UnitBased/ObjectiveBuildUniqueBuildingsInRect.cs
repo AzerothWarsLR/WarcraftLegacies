@@ -55,8 +55,8 @@ public sealed class ObjectiveBuildUniqueBuildingsInRect : Objective
 
   private void OnBuild()
   {
-    var buildingId = GetUnitTypeId(GetConstructedStructure());
-    if (!_targetRect.Contains(GetTriggerUnit().GetPosition()) || _uniqueBuildingIdsBuilt.Contains(buildingId))
+    var buildingId = @event.ConstructedStructure.UnitType;
+    if (!_targetRect.Contains(@event.Unit.GetPosition()) || _uniqueBuildingIdsBuilt.Contains(buildingId))
     {
       return;
     }

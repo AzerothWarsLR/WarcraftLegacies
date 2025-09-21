@@ -50,25 +50,25 @@ public sealed class ExactJusticeChannel : Channel
   /// <inheritdoc />
   public override void OnCreate()
   {
-    var x = GetUnitX(Caster);
-    var y = GetUnitY(Caster);
+    var x = Caster.X;
+    var y = Caster.Y;
 
     _maximumDuration = Duration;
-    _ringEffect = AddSpecialEffect(EffectSettings.RingPath, x, y);
-    BlzSetSpecialEffectAlpha(_ringEffect, 0);
-    BlzSetSpecialEffectTimeScale(_ringEffect, 0);
-    BlzSetSpecialEffectColor(_ringEffect, 235, 235, 50);
-    BlzSetSpecialEffectScale(_ringEffect, EffectSettings.RingScale);
+    _ringEffect = effect.Create(EffectSettings.RingPath, x, y);
+    _ringEffect.SetAlpha(0);
+    _ringEffect.SetTimeScale(0);
+    _ringEffect.SetColor(235, 235, 50);
+    _ringEffect.Scale = EffectSettings.RingScale;
 
-    _sparkleEffect = AddSpecialEffect(EffectSettings.SparklePath, x, y);
-    BlzSetSpecialEffectScale(_sparkleEffect, EffectSettings.SparkleScale);
-    BlzSetSpecialEffectColor(_sparkleEffect, 255, 255, 0);
+    _sparkleEffect = effect.Create(EffectSettings.SparklePath, x, y);
+    _sparkleEffect.Scale = EffectSettings.SparkleScale;
+    _sparkleEffect.SetColor(255, 255, 0);
 
-    _progressEffect = AddSpecialEffect(EffectSettings.ProgressBarPath, x, y);
-    BlzSetSpecialEffectTimeScale(_progressEffect, 1 / Duration);
-    BlzSetSpecialEffectColorByPlayer(_progressEffect, Player(4));
-    BlzSetSpecialEffectScale(_progressEffect, EffectSettings.ProgressBarScale);
-    BlzSetSpecialEffectHeight(_progressEffect, EffectSettings.ProgressBarHeight);
+    _progressEffect = effect.Create(EffectSettings.ProgressBarPath, x, y);
+    _progressEffect.SetTimeScale(1 / Duration);
+    _progressEffect.SetColor(player.Create(4));
+    _progressEffect.Scale = EffectSettings.ProgressBarScale;
+    _progressEffect.SetHeight(EffectSettings.ProgressBarHeight);
 
     _aura = new ExactJusticeAura(Caster)
     {
@@ -96,52 +96,52 @@ public sealed class ExactJusticeChannel : Channel
     _ringAlpha += EffectSettings.AlphaRing / (_maximumDuration / Interval);
     if (_ringEffect != null)
     {
-      BlzSetSpecialEffectAlpha(_ringEffect, R2I(_ringAlpha));
+      _ringEffect.SetAlpha(R2I(_ringAlpha));
     }
   }
 
   /// <inheritdoc />
   protected override void OnDispose()
   {
-    var explodeEffect = AddSpecialEffect(EffectSettings.ExplodePath, GetUnitX(Caster), GetUnitY(Caster));
-    BlzSetSpecialEffectScale(explodeEffect, EffectSettings.ExplodeScale);
+    var explodeEffect = effect.Create(EffectSettings.ExplodePath, Caster.X, Caster.Y);
+    explodeEffect.Scale = EffectSettings.ExplodeScale;
     EffectSystem.Add(explodeEffect);
     foreach (var unit in GlobalGroup.EnumUnitsInRange(Caster.GetPosition(), Radius)
                .Where(target => CastFilters.IsTargetEnemyAndAlive(Caster, target)))
     {
-      unit.TakeDamage(Caster, _damage, false, false, damageType: DAMAGE_TYPE_MAGIC);
+      unit.TakeDamage(Caster, _damage, false, false, damageType: damagetype.Magic);
     }
 
     //The below effects have no death animations so they have//to be moved off the map as they are destroyed.
     var dummyRemovalPoint = new Point(-100000, -100000);
     if (_sparkleEffect != null)
     {
-      BlzSetSpecialEffectPosition(_sparkleEffect, dummyRemovalPoint.X, dummyRemovalPoint.Y, 0);
+      _sparkleEffect.SetPosition(dummyRemovalPoint.X, dummyRemovalPoint.Y, 0);
     }
 
     if (_sparkleEffect != null)
     {
-      DestroyEffect(_sparkleEffect);
+      _sparkleEffect.Dispose();
     }
 
     if (_progressEffect != null)
     {
-      BlzSetSpecialEffectPosition(_progressEffect, dummyRemovalPoint.X, dummyRemovalPoint.Y, 0);
+      _progressEffect.SetPosition(dummyRemovalPoint.X, dummyRemovalPoint.Y, 0);
     }
 
     if (_progressEffect != null)
     {
-      DestroyEffect(_progressEffect);
+      _progressEffect.Dispose();
     }
 
     if (_ringEffect != null)
     {
-      BlzSetSpecialEffectTimeScale(_ringEffect, 1);
+      _ringEffect.SetTimeScale(1);
     }
 
     if (_ringEffect != null)
     {
-      DestroyEffect(_ringEffect);
+      _ringEffect.Dispose();
     }
 
     if (_aura != null)

@@ -27,7 +27,7 @@ public sealed class CheatGetUnitCurrentOrder : Command
     var orderString = "";
     var firstSelectedUnit = GlobalGroup.EnumSelectedUnits(cheater).First();
 
-    orderString += $"{OrderId2String(GetUnitCurrentOrder(firstSelectedUnit))}: {GetUnitCurrentOrder(firstSelectedUnit)}\n";
+    orderString += $"{OrderId2String(firstSelectedUnit.CurrentOrder)}: {firstSelectedUnit.CurrentOrder}\n";
 
     return $"{orderString}";
   }

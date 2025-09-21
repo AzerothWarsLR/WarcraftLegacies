@@ -44,12 +44,9 @@ public sealed class QuestDestroyCorruptedSunwell : QuestData
   {
     completingFaction.RemovePower(_corruptedSunwellPower);
     _sunwell.Capturable = false;
-    KillUnit(_sunwell.Unit!);
-    DestroyEffect(AddSpecialEffect(@"objects\spawnmodels\undead\udeathmedium\udeath.mdx",
-      GetUnitX(_sunwell.Unit),
-      GetUnitY(_sunwell.Unit)));
-    DestroyEffect(AddSpecialEffect(@"objects\spawnmodels\undead\undeaddissipate\undeaddissipate.mdx",
-      GetUnitX(_sunwell.Unit), GetUnitY(_sunwell.Unit)));
+    _sunwell.Unit!.Kill();
+    effect.Create(@"objects\spawnmodels\undead\udeathmedium\udeath.mdx", _sunwell.Unit.X, _sunwell.Unit.Y).Dispose();
+    effect.Create(@"objects\spawnmodels\undead\undeaddissipate\undeaddissipate.mdx", _sunwell.Unit.X, _sunwell.Unit.Y).Dispose();
   }
 
   /// <inheritdoc />

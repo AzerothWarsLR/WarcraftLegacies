@@ -41,8 +41,8 @@ public sealed class QuestJinthaAlor : QuestData
   {
     if (completingFaction.Player != null)
     {
-      SetPlayerTechResearched(completingFaction.Player, JinthaalorResearch, 1);
-      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, _goldReward);
+      completingFaction.Player.SetTechResearched(JinthaalorResearch, 1);
+      completingFaction.Player.AdjustPlayerState(playerstate.ResourceGold, _goldReward);
     }
   }
   /// <inheritdoc/>

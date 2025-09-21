@@ -27,13 +27,13 @@ public static class BlockerSetup
       FourCC("B011"),
     };
 
-    EnumDestructablesInRect(Rectangle.WorldBounds.Rect, null, () =>
+    Rectangle.WorldBounds.Rect.EnumerateDestructables(null, () =>
     {
       foreach (var pathingBlocker in pathingBlockers)
       {
-        if (GetDestructableTypeId(GetEnumDestructable()) == pathingBlocker)
+        if (GetEnumDestructable().Type == pathingBlocker)
         {
-          ShowDestructable(GetEnumDestructable(), false);
+          GetEnumDestructable().SetVisibility(false);
         }
       }
     });

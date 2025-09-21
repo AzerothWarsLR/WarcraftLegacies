@@ -35,10 +35,10 @@ public static class SharedQuestSetup
   private static QuestDragonsOfNightmare CreateDragonsOfNightmareQuest(PreplacedUnitSystem preplacedUnitSystem)
   {
     var waygateOne = preplacedUnitSystem.GetUnit(UNIT_N07F_EMERALD_PORTAL_DRAGON_PORTALS, Regions.FeralasEmeraldPortal.Center);
-    ShowUnit(waygateOne, false);
+    waygateOne.IsVisible = false;
 
     var waygateTwo = preplacedUnitSystem.GetUnit(UNIT_N07F_EMERALD_PORTAL_DRAGON_PORTALS, Regions.AshenvaleEmeraldPortal.Center);
-    ShowUnit(waygateTwo, false);
+    waygateTwo.IsVisible = false;
 
     var dragonEk = preplacedUnitSystem.GetUnit(UNIT_N04X_YSONDRE);
     var dragonKalimdor = preplacedUnitSystem.GetUnit(UNIT_N04S_TAERAR);

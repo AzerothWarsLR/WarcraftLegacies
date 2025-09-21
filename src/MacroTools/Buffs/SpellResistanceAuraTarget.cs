@@ -12,11 +12,11 @@ public sealed class SpellResistanceAuraTarget : AuraBoundBuff
 
   public override void OnApply()
   {
-    UnitAddAbility(Target, FourCC("A0B1"));
+    Target.AddAbility(FourCC("A0B1"));
   }
 
   public override void OnExpire()
   {
-    UnitRemoveAbility(Target, FourCC("A0B1"));
+    Target.RemoveAbility(FourCC("A0B1"));
   }
 }

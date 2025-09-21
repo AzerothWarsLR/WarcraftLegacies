@@ -48,17 +48,17 @@ public static class ArtifactManager
   /// </summary>
   public static void Register(Artifact artifact)
   {
-    if (!_artifactsByType.ContainsKey(GetItemTypeId(artifact.Item)))
+    if (!_artifactsByType.ContainsKey(artifact.Item.TypeId))
     {
-      SetItemDropOnDeath(artifact.Item, false);
-      _artifactsByType[GetItemTypeId(artifact.Item)] = artifact;
-      _artifactsByName.Add(GetItemName(artifact.Item).ToLower(), artifact);
+      artifact.Item.IsDroppedOnDeath = false;
+      _artifactsByType[artifact.Item.TypeId] = artifact;
+      _artifactsByName.Add(artifact.Item.Name.ToLower(), artifact);
       ArtifactRegistered?.Invoke(artifact, artifact);
       _allArtifacts.Add(artifact);
     }
     else
     {
-      throw new Exception($"Attempted to create already existing Artifact from {GetItemName(artifact.Item)}.");
+      throw new Exception($"Attempted to create already existing Artifact from {artifact.Item.Name}.");
     }
   }
 
@@ -66,7 +66,7 @@ public static class ArtifactManager
   /// Returns all <see cref="Artifact"/>s registered to the system.
   /// </summary>
   public static IEnumerable<Artifact> GetAllArtifacts() =>
-    _allArtifacts.AsReadOnly().OrderBy(a => GetItemName(a.Item));
+    _allArtifacts.AsReadOnly().OrderBy(a => a.Item.Name);
 
   /// <summary>
   /// Completely removes the given Artifact from the game.
@@ -75,8 +75,8 @@ public static class ArtifactManager
   public static void Destroy(Artifact artifact)
   {
     _allArtifacts.Remove(artifact);
-    _artifactsByType.Remove(GetItemTypeId(artifact.Item));
-    _artifactsByName.Remove(GetItemName(artifact.Item));
+    _artifactsByType.Remove(artifact.Item.TypeId);
+    _artifactsByName.Remove(artifact.Item.Name);
     artifact.Dispose();
   }
 
@@ -88,8 +88,8 @@ public static class ArtifactManager
     {
       try
       {
-        var triggerUnit = GetTriggerUnit();
-        if (IsUnitType(triggerUnit, UNIT_TYPE_SUMMONED) || IsUnitIllusion(triggerUnit))
+        var triggerUnit = @event.Unit;
+        if (triggerUnit.IsUnitType(unittype.Summoned) || triggerUnit.IsIllusion)
         {
           return;
         }
@@ -97,19 +97,19 @@ public static class ArtifactManager
         bool? isPositionPathable = null;
         for (var i = 0; i < 6; i++)
         {
-          var itemInSlot = UnitItemInSlot(triggerUnit, i);
-          if (itemInSlot == null || !BlzGetItemBooleanField(itemInSlot, ITEM_BF_CAN_BE_DROPPED))
+          var itemInSlot = triggerUnit.ItemAtOrDefault(i);
+          if (itemInSlot == null || !itemInSlot.IsDroppable)
           {
             continue;
           }
 
-          var artifactInSlot = GetFromTypeId(GetItemTypeId(itemInSlot));
+          var artifactInSlot = GetFromTypeId(itemInSlot.TypeId);
           if (artifactInSlot == null)
           {
             continue;
           }
 
-          isPositionPathable ??= !IsTerrainPathable(GetUnitX(triggerUnit), GetUnitY(triggerUnit), PATHING_TYPE_WALKABILITY);
+          isPositionPathable ??= !pathingtype.Walkability.GetPathable(triggerUnit.X, triggerUnit.Y);
 
           if (isPositionPathable == true)
           {

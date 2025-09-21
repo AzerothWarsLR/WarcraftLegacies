@@ -52,8 +52,8 @@ public sealed class ArtifactCard : Card<Artifact>
         return;
       }
 
-      _icon.Texture = BlzGetItemIconPath(_artifact.Item);
-      _title.Text = GetItemName(_artifact.Item);
+      _icon.Texture = _artifact.Item.Icon;
+      _title.Text = _artifact.Item.Name;
       _pingButton.OnClick = _artifact.Ping;
       _artifact.OwnerChanged += OnArtifactOwnerChanged;
       _artifact.StatusChanged += OnArtifactStatusChanged;
@@ -74,7 +74,7 @@ public sealed class ArtifactCard : Card<Artifact>
       Height = 0.04f,
       Texture = ""
     };
-    _icon.SetPoint(FRAMEPOINT_LEFT, this, FRAMEPOINT_LEFT, 0.015f, -0.0090f);
+    _icon.SetPoint(framepointtype.Left, this, framepointtype.Left, 0.015f, -0.0090f);
     AddFrame(_icon);
 
     _title = new TextFrame("ArtifactItemTitle", this, 0)
@@ -83,13 +83,13 @@ public sealed class ArtifactCard : Card<Artifact>
       Width = BoxWidth - 0.04f,
       Height = 0
     };
-    _title.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_CENTER, 0, 0.0255f);
+    _title.SetPoint(framepointtype.Center, this, framepointtype.Center, 0, 0.0255f);
     AddFrame(_title);
 
     _text = new TextFrame("ArtifactItemOwnerText", this, 0);
-    _text.SetPoint(FRAMEPOINT_TOPLEFT, _icon, FRAMEPOINT_TOPRIGHT, 0.007f, 0);
-    _text.SetPoint(FRAMEPOINT_BOTTOMLEFT, _icon, FRAMEPOINT_BOTTOMRIGHT, 0.007f, 0);
-    _text.SetPoint(FRAMEPOINT_RIGHT, this, FRAMEPOINT_RIGHT, -0.007f, 0);
+    _text.SetPoint(framepointtype.TopLeft, _icon, framepointtype.TopRight, 0.007f, 0);
+    _text.SetPoint(framepointtype.BottomLeft, _icon, framepointtype.BottomRight, 0.007f, 0);
+    _text.SetPoint(framepointtype.Right, this, framepointtype.Right, -0.007f, 0);
     AddFrame(_text);
 
     _pingButton = new Button("ScriptDialogButton", this, 0)
@@ -99,7 +99,7 @@ public sealed class ArtifactCard : Card<Artifact>
       Text = "Ping",
       Visible = false
     };
-    _pingButton.SetPoint(FRAMEPOINT_LEFT, this, FRAMEPOINT_LEFT, 0.057f, -0.009f);
+    _pingButton.SetPoint(framepointtype.Left, this, framepointtype.Left, 0.057f, -0.009f);
     AddFrame(_pingButton);
 
     FactionManager.AnyFactionNameChanged += OnAnyFactionNameChanged;

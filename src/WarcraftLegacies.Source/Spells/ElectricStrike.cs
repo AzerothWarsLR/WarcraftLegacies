@@ -52,10 +52,10 @@ public sealed class ElectricStrike : Spell
   {
     try
     {
-      EffectSystem.Add(AddSpecialEffect(Effect, targetPoint.X, targetPoint.Y));
+      EffectSystem.Add(effect.Create(Effect, targetPoint.X, targetPoint.Y));
       foreach (var unit in GlobalGroup.EnumUnitsInRange(targetPoint, Radius))
       {
-        if (IsUnitType(unit, UNIT_TYPE_STRUCTURE) || !UnitAlive(unit))
+        if (unit.IsUnitType(unittype.Structure) || !unit.Alive)
         {
           continue;
         }

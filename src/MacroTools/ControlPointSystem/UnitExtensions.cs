@@ -10,7 +10,7 @@ public static class UnitExtensions
   /// </summary>
   /// <returns></returns>
   public static ControlPoint AsControlPoint(this unit whichUnit) =>
-    ControlPointManager.Instance.GetFromUnitType(GetUnitTypeId(whichUnit));
+    ControlPointManager.Instance.GetFromUnitType(whichUnit.UnitType);
 
   /// <summary>
   /// Returns true if the unit is a <see cref="ControlPoint"/>.

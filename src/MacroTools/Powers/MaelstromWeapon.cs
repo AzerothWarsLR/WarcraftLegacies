@@ -39,25 +39,25 @@ public sealed class MaelstromWeapon : Power
 
   /// <inheritdoc />
   public override void OnAdd(player whichPlayer) =>
-    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerDealsDamage, OnDamage, GetPlayerId(whichPlayer));
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerDealsDamage, OnDamage, whichPlayer.Id);
 
   /// <inheritdoc />
   public override void OnRemove(player whichPlayer) =>
-    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerDealsDamage, OnDamage, GetPlayerId(whichPlayer));
+    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerDealsDamage, OnDamage, whichPlayer.Id);
 
   private void OnDamage()
   {
-    if (!BlzGetEventIsAttack() || (ValidUnitTypes != null && !ValidUnitTypes.Contains(GetUnitTypeId(GetEventDamageSource()))))
+    if (!@event.IsAttack || (ValidUnitTypes != null && !ValidUnitTypes.Contains(@event.DamageSource.UnitType)))
     {
       return;
     }
 
-    if (!IsHeroUnitId(GetUnitTypeId(GetEventDamageSource())) && !(GetRandomReal(0, 1) < _damageChance))
+    if (!unit.IsHero(@event.DamageSource.UnitType) && !(GetRandomReal(0, 1) < _damageChance))
     {
       return;
     }
 
-    GetTriggerUnit().TakeDamage(GetEventDamageSource(), _damageDealt);
-    EffectSystem.Add(AddSpecialEffect(Effect, GetUnitX(GetTriggerUnit()), GetUnitY(GetTriggerUnit())), 1);
+    @event.Unit.TakeDamage(@event.DamageSource, _damageDealt);
+    EffectSystem.Add(effect.Create(Effect, @event.Unit.X, @event.Unit.Y), 1);
   }
 }

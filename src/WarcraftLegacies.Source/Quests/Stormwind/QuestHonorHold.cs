@@ -19,9 +19,9 @@ public sealed class QuestHonorHold : QuestData
   {
     foreach (var unit in GlobalGroup.EnumUnitsInRect(rescueRect))
     {
-      if (GetOwningPlayer(unit) == Player(PLAYER_NEUTRAL_PASSIVE))
+      if (unit.Owner == player.NeutralPassive)
       {
-        SetUnitInvulnerable(unit, true);
+        unit.IsInvulnerable = true;
         _rescueUnits.Add(unit);
       }
     }
@@ -43,7 +43,7 @@ public sealed class QuestHonorHold : QuestData
   {
     foreach (var unit in _rescueUnits)
     {
-      unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      unit.Rescue(player.NeutralAggressive);
     }
   }
 
@@ -55,8 +55,8 @@ public sealed class QuestHonorHold : QuestData
       unit.Rescue(completingFaction.Player);
     }
     //Set animations of doodads within Honor Hold
-    SetDoodadAnimationRect(Regions.HonorHold.Rect, FourCC("ISrb"), "hide", false);
-    SetDoodadAnimationRect(Regions.HonorHold.Rect, FourCC("LSst"), "hide", false);
-    SetDoodadAnimationRect(Regions.HonorHold.Rect, FourCC("CSra"), "unhide", false);
+    Regions.HonorHold.Rect.SetDoodadAnimation(FourCC("ISrb"), "hide", false);
+    Regions.HonorHold.Rect.SetDoodadAnimation(FourCC("LSst"), "hide", false);
+    Regions.HonorHold.Rect.SetDoodadAnimation(FourCC("CSra"), "unhide", false);
   }
 }

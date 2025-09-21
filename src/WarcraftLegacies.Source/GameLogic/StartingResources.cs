@@ -13,9 +13,9 @@ public static class StartingResources
   /// </summary>
   public static void Setup()
   {
-    var trig = CreateTrigger();
-    TriggerRegisterTimerEvent(trig, 58, false);
-    TriggerAddAction(trig, () =>
+    var trig = trigger.Create();
+    trig.RegisterTimerEvent(58, false);
+    trig.AddAction(() =>
     {
       foreach (var player in Util.EnumeratePlayers())
       {
@@ -25,8 +25,8 @@ public static class StartingResources
           continue;
         }
 
-        SetPlayerState(player, PLAYER_STATE_RESOURCE_GOLD, faction.StartingGold);
-        SetPlayerState(player, PLAYER_STATE_RESOURCE_HERO_TOKENS, 1);
+        player.SetState(playerstate.ResourceGold, faction.StartingGold);
+        player.SetState(playerstate.ResourceHeroTokens, 1);
       }
     });
   }

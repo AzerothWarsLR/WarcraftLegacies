@@ -15,23 +15,23 @@ public static class GameModeExtensions
   public static IGameMode SetupGreatWarTeams(this IGameMode gameMode)
   {
     FactionManager.SharedVisionMode = TeamSharedVisionMode.TraditionalAlliesOnly;
-    Player(6).SetTeam(TeamSetup.Legion);
-    Player(15).SetTeam(TeamSetup.Legion);
-    Player(9).SetTeam(TeamSetup.Legion);
-    Player(2).SetTeam(TeamSetup.Legion);
-    Player(7).SetTeam(TeamSetup.Legion);
-    Player(12).SetTeam(TeamSetup.Legion);
-    Player(16).SetTeam(TeamSetup.Legion);
-    Player(8).SetTeam(TeamSetup.Legion);
+    player.Create(6).SetTeam(TeamSetup.Legion);
+    player.Create(15).SetTeam(TeamSetup.Legion);
+    player.Create(9).SetTeam(TeamSetup.Legion);
+    player.Create(2).SetTeam(TeamSetup.Legion);
+    player.Create(7).SetTeam(TeamSetup.Legion);
+    player.Create(12).SetTeam(TeamSetup.Legion);
+    player.Create(16).SetTeam(TeamSetup.Legion);
+    player.Create(8).SetTeam(TeamSetup.Legion);
 
-    Player(3).SetTeam(TeamSetup.Alliance);
-    Player(23).SetTeam(TeamSetup.Alliance);
-    Player(1).SetTeam(TeamSetup.Alliance);
-    Player(4).SetTeam(TeamSetup.Alliance);
-    Player(22).SetTeam(TeamSetup.Alliance);
-    Player(0).SetTeam(TeamSetup.Alliance);
-    Player(11).SetTeam(TeamSetup.Alliance);
-    Player(18).SetTeam(TeamSetup.Alliance);
+    player.Create(3).SetTeam(TeamSetup.Alliance);
+    player.Create(23).SetTeam(TeamSetup.Alliance);
+    player.Create(1).SetTeam(TeamSetup.Alliance);
+    player.Create(4).SetTeam(TeamSetup.Alliance);
+    player.Create(22).SetTeam(TeamSetup.Alliance);
+    player.Create(0).SetTeam(TeamSetup.Alliance);
+    player.Create(11).SetTeam(TeamSetup.Alliance);
+    player.Create(18).SetTeam(TeamSetup.Alliance);
 
 
     SharedQuestRepository.RegisterQuest(new QuestSharedVision());

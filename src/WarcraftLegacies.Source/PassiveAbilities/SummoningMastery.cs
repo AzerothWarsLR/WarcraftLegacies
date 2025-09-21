@@ -25,8 +25,8 @@ public sealed class SummoningMastery : PassiveAbility, IEffectOnSummonedUnit
   /// <inheritdoc />
   public void OnSummonedUnit()
   {
-    var abilityLevel = GetUnitAbilityLevel(GetSummoningUnit(), _abilityTypeId);
-    var summonedUnit = GetSummonedUnit();
+    var abilityLevel = @event.SummoningUnit.GetAbilityLevel(_abilityTypeId);
+    var summonedUnit = @event.SummonedUnit;
     summonedUnit.MultiplyBaseDamage(1 + AttackDamagePercentageBonus.Base + AttackDamagePercentageBonus.PerLevel * abilityLevel, 0);
     summonedUnit.MultiplyMaxHitpoints(1 + HitPointPercentageBonus.Base + HitPointPercentageBonus.PerLevel * abilityLevel);
   }

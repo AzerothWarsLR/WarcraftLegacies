@@ -24,7 +24,7 @@ public sealed class PowerBook : Book<Power, PowerPage, PowerCard, PowerPageFacto
     var book = new PowerBook
     {
       Title = "Powers",
-      LauncherParent = BlzGetFrameByName("UpperButtonBarMenuButton", 0),
+      LauncherParent = framehandle.Get("UpperButtonBarMenuButton", 0),
       Position = new Point(0.36f, 0.35f),
       TrackedFaction = trackedPlayer.GetFaction()
     };

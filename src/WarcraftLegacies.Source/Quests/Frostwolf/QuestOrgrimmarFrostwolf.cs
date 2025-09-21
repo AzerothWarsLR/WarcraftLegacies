@@ -55,7 +55,7 @@ public sealed class QuestOrgrimmarFrostwolf : QuestData
       unit.Rescue(completingFaction.Player);
     }
 
-    if (GetLocalPlayer() == completingFaction.Player)
+    if (player.LocalPlayer == completingFaction.Player)
     {
       PlayThematicMusic("war3mapImported\\OrgrimmarTheme.mp3");
     }
@@ -66,7 +66,7 @@ public sealed class QuestOrgrimmarFrostwolf : QuestData
   {
     CleanupRocks();
     var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      ? player.NeutralAggressive
       : completingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);

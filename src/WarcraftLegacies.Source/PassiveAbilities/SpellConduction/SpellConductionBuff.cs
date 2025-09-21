@@ -39,26 +39,26 @@ public sealed class SpellConductionBuff : PassiveBuff
 
   private void OnDamageTaken()
   {
-    if (!UnitAlive(Caster))
+    if (!Caster.Alive)
     {
       return;
     }
 
-    var attackType = BlzGetEventAttackType();
+    var attackType = @event.AttackType;
     if (!IsRedirectableAttackType(attackType))
     {
       return;
     }
 
-    var eventDamage = GetEventDamage();
+    var eventDamage = @event.Damage;
 
-    BlzSetEventDamage(eventDamage * (1 - RedirectionPercentage));
-    DamageCaster(GetEventDamageSource(), eventDamage);
+    @event.Damage = eventDamage * (1 - RedirectionPercentage);
+    DamageCaster(@event.DamageSource, eventDamage);
   }
 
   private void DamageCaster(unit damager, float eventDamage) =>
-    Caster.TakeDamage(damager, eventDamage * RedirectionPercentage, false, true, ATTACK_TYPE_CHAOS,
-      DAMAGE_TYPE_UNIVERSAL, BlzGetEventWeaponType());
+    Caster.TakeDamage(damager, eventDamage * RedirectionPercentage, false, true, attacktype.Chaos,
+      damagetype.Universal, @event.WeaponType);
 
   private bool IsRedirectableAttackType(attacktype attackType) => RedirectableAttackTypes.Contains(attackType);
 }

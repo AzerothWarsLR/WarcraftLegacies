@@ -39,7 +39,7 @@ public static class DummyCasterManager
 
   private static unit InitializeDummyCasterUnit()
   {
-    var dummyUnit = CreateUnit(Player(PLAYER_NEUTRAL_AGGRESSIVE), _unitTypeId, 0, 0, 0);
+    var dummyUnit = unit.Create(player.NeutralAggressive, _unitTypeId, 0, 0, 0);
 
     UnitType.Register(new UnitType(FourCC("u00X"))
     {

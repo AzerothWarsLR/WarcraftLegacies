@@ -49,9 +49,9 @@ public sealed class Domination : Power
 
     foreach (var unit in playerUnits)
     {
-      if (MindlessUndeadUnitTypes.Contains(GetUnitTypeId(unit)))
+      if (MindlessUndeadUnitTypes.Contains(unit.UnitType))
       {
-        KillUnit(unit);
+        unit.Kill();
       }
     }
   }

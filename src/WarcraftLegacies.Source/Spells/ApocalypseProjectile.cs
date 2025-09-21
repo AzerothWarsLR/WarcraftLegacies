@@ -42,38 +42,38 @@ public sealed class ApocalypseProjectile : BasicMissile
       return;
     }
 
-    unit.TakeDamage(Caster, Damage, false, false, damageType: DAMAGE_TYPE_NORMAL);
+    unit.TakeDamage(Caster, Damage, false, false, damageType: damagetype.Normal);
 
     _dummyCaster.CastUnit(Caster, DummyAbilityId, DummyAbilityOrderId, DummyAbilityLevel, unit,
       DummyCastOriginType.Target);
 
-    var effect = AddSpecialEffect(EffectOnHitModel, GetUnitX(unit), GetUnitY(unit));
-    BlzSetSpecialEffectScale(effect, EffectOnHitScale);
+    effect effect = effect.Create(EffectOnHitModel, unit.X, unit.Y);
+    effect.Scale = EffectOnHitScale;
     EffectSystem.Add(effect);
   }
 
   /// <inheritdoc />
   public override void OnPeriodic()
   {
-    BlzSetSpecialEffectColorByPlayer(Effect, Player(3));
-    BlzPlaySpecialEffect(Effect, ANIM_TYPE_WALK);
-    BlzSetSpecialEffectAlpha(Effect, 175);
+    Effect.SetColor(player.Create(3));
+    Effect.PlayAnimation(animtype.Walk);
+    Effect.SetAlpha(175);
     Interval = 0;
   }
 
   /// <inheritdoc />
   public override void OnDispose()
   {
-    BlzSetSpecialEffectPosition(Effect, 21623f, 24212f, 0);
-    var effect = AddSpecialEffect(EffectOnProjectileDespawnModel, MissileX, MissileY);
-    BlzSetSpecialEffectScale(effect, EffectOnProjectileDespawnScale);
+    Effect.SetPosition(21623f, 24212f, 0);
+    effect effect = effect.Create(EffectOnProjectileDespawnModel, MissileX, MissileY);
+    effect.Scale = EffectOnProjectileDespawnScale;
     EffectSystem.Add(effect);
   }
 
   private static bool IsValidTarget(unit target, unit caster) =>
-    UnitAlive(target) &&
-    !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
-    !IsUnitType(target, UNIT_TYPE_ANCIENT) &&
-    !IsUnitType(target, UNIT_TYPE_MECHANICAL) &&
-    !IsPlayerAlly(GetOwningPlayer(caster), GetOwningPlayer(target));
+    target.Alive &&
+    !target.IsUnitType(unittype.Structure) &&
+    !target.IsUnitType(unittype.Ancient) &&
+    !target.IsUnitType(unittype.Mechanical) &&
+    !caster.Owner.IsAlly(target.Owner);
 }

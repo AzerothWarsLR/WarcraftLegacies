@@ -39,24 +39,24 @@ public sealed class SlipstreamPortalBuff : PassiveBuff
     }
 
     _state = SlipstreamPortalState.Opening;
-    _progressBar = AddSpecialEffect(@"war3mapImported\Progressbar10sec.mdx", Target.GetPosition().X, Target.GetPosition().Y);
-    BlzSetSpecialEffectTimeScale(_progressBar, 10f / delay);
-    BlzSetSpecialEffectColorByPlayer(_progressBar, GetOwningPlayer(Caster));
-    BlzSetSpecialEffectHeight(_progressBar, 450);
-    SetUnitTimeScale(Target, 9.3f * (1 / delay));
-    SetUnitAnimation(Target, "birth");
-    TimerStart(CreateTimer(), delay, false, () =>
+    _progressBar = effect.Create(@"war3mapImported\Progressbar10sec.mdx", Target.GetPosition().X, Target.GetPosition().Y);
+    _progressBar.SetTimeScale(10f / delay);
+    _progressBar.SetColor(Caster.Owner);
+    _progressBar.SetHeight(450);
+    Target.SetTimeScale(9.3f * (1 / delay));
+    Target.SetAnimation("birth");
+    timer.Create().Start(delay, false, () =>
     {
       if (_state == SlipstreamPortalState.Opening)
       {
         _state = SlipstreamPortalState.Stable;
-        SetUnitTimeScale(Target, 1);
-        SetUnitAnimation(Target, "stand");
-        WaygateActivate(Target, true);
-        DestroyEffect(_progressBar);
+        Target.SetTimeScale(1);
+        Target.SetAnimation("stand");
+        Target.WaygateActive = true;
+        _progressBar.Dispose();
       }
 
-      DestroyTimer(GetExpiredTimer());
+      @event.ExpiredTimer.Dispose();
     });
   }
 
@@ -79,19 +79,19 @@ public sealed class SlipstreamPortalBuff : PassiveBuff
     }
 
     _state = SlipstreamPortalState.Closing;
-    SetUnitTimeScale(Target, 0.65f * (1 / delay));
-    SetUnitAnimation(Target, "death");
-    TimerStart(CreateTimer(), delay, false, () =>
+    Target.SetTimeScale(0.65f * (1 / delay));
+    Target.SetAnimation("death");
+    timer.Create().Start(delay, false, () =>
     {
       CloseInstantly();
-      DestroyTimer(GetExpiredTimer());
+      @event.ExpiredTimer.Dispose();
     });
   }
 
   /// <inheritdoc />
   public override void OnApply()
   {
-    WaygateActivate(Target, false);
+    Target.WaygateActive = false;
   }
 
   /// <inheritdoc />
@@ -99,18 +99,18 @@ public sealed class SlipstreamPortalBuff : PassiveBuff
   {
     if (_progressBar != null)
     {
-      DestroyEffect(_progressBar);
+      _progressBar.Dispose();
     }
   }
 
   private void CloseInstantly()
   {
     _state = SlipstreamPortalState.Closed;
-    SetUnitTimeScale(Target, 1);
-    KillUnit(Target);
-    RemoveUnit(Target);
-    var effect = AddSpecialEffect(@"Abilities\Spells\Human\Feedback\SpellBreakerAttack.mdl", GetUnitX(Target), GetUnitY(Target));
-    BlzSetSpecialEffectScale(effect, 6);
+    Target.SetTimeScale(1);
+    Target.Kill();
+    Target.Dispose();
+    effect effect = effect.Create(@"Abilities\Spells\Human\Feedback\SpellBreakerAttack.mdl", Target.X, Target.Y);
+    effect.Scale = 6;
     EffectSystem.Add(effect);
     Active = false;
   }

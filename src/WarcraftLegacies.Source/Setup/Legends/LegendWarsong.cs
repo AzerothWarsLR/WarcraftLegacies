@@ -23,7 +23,7 @@ public sealed class LegendWarsong
       UnitType = UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG,
       StartingArtifacts = new()
       {
-        new(CreateItem(ITEM_I01V_GOREHOWL, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+        new(item.Create(ITEM_I01V_GOREHOWL, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
       }
     };
 

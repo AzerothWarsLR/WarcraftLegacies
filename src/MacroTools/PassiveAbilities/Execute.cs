@@ -38,10 +38,10 @@ public sealed class Execute : PassiveAbility, IAppliesEffectOnDamage
   /// <inheritdoc />
   public void OnDealsDamage()
   {
-    var triggerUnit = GetTriggerUnit();
+    var triggerUnit = @event.Unit;
 
     var damageMult = 1f;
-    if (IsUnitType(triggerUnit, UNIT_TYPE_STRUCTURE) || ControlPointManager.Instance.UnitIsControlPoint(triggerUnit))
+    if (triggerUnit.IsUnitType(unittype.Structure) || ControlPointManager.Instance.UnitIsControlPoint(triggerUnit))
     {
       damageMult = DamageMultStructure;
     }
@@ -59,13 +59,13 @@ public sealed class Execute : PassiveAbility, IAppliesEffectOnDamage
       return;
     }
 
-    if (!BlzGetEventIsAttack() || !(GetUnitState(triggerUnit, UNIT_STATE_LIFE) < GetEventDamage() + GetEventDamageSource().GetAverageDamage(0) * damageMult))
+    if (!@event.IsAttack || !(triggerUnit.Life < @event.Damage + @event.DamageSource.GetAverageDamage(0) * damageMult))
     {
       return;
     }
 
-    BlzSetEventDamage(GetUnitState(triggerUnit, UNIT_STATE_LIFE) + 1);
-    BlzSetEventDamageType(DAMAGE_TYPE_UNIVERSAL);
-    DestroyEffect(AddSpecialEffectTarget(Effect, triggerUnit, "origin"));
+    @event.Damage = triggerUnit.Life + 1;
+    @event.DamageType = damagetype.Universal;
+    effect.Create(Effect, triggerUnit, "origin").Dispose();
   }
 }

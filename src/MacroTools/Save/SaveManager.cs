@@ -49,7 +49,7 @@ public static class SaveManager
     // If the load result is anything except success, the save will be a newly created object
     if (loadResult == LoadResult.FailedHash)
     {
-      Console.WriteLine($"Validating save file for {GetPlayerName(save.GetPlayer())} failed! The game should probably be restarted.");
+      Console.WriteLine($"Validating save file for {save.GetPlayer().Name} failed! The game should probably be restarted.");
     }
     // Extension method for determining whether the load result is any of the failed states
     if (loadResult.Failed())

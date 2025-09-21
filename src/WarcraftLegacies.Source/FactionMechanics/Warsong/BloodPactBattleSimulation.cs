@@ -12,9 +12,9 @@ public static class BloodPactBattleSimulation
   private const float MinHealthPercentage = 70f;
   private const float HealthRestorePercentage = 100f;
 
-  public static readonly group SentinelsGroup = CreateGroup();
-  public static readonly group WarsongGroup = CreateGroup();
-  public static readonly group BattleSimulationGroup = CreateGroup();
+  public static readonly group SentinelsGroup = group.Create();
+  public static readonly group WarsongGroup = group.Create();
+  public static readonly group BattleSimulationGroup = group.Create();
 
   private static readonly int[] _sentinelsUnits =
   {
@@ -53,8 +53,8 @@ public static class BloodPactBattleSimulation
       {
         var randomPoint = regionRect.GetRandomPoint();
         var spawnedUnit = SpawnSimulationUnit(NeutralHostile, unitTypeId, randomPoint);
-        GroupAddUnit(SentinelsGroup, spawnedUnit);
-        GroupAddUnit(BattleSimulationGroup, spawnedUnit);
+        SentinelsGroup.Add(spawnedUnit);
+        BattleSimulationGroup.Add(spawnedUnit);
       }
       catch (System.Exception ex)
       {
@@ -67,8 +67,8 @@ public static class BloodPactBattleSimulation
       {
         var randomPoint = regionRect.GetRandomPoint();
         var spawnedUnit = SpawnSimulationUnit(NeutralHostile, unitTypeId, randomPoint);
-        GroupAddUnit(WarsongGroup, spawnedUnit);
-        GroupAddUnit(BattleSimulationGroup, spawnedUnit);
+        WarsongGroup.Add(spawnedUnit);
+        BattleSimulationGroup.Add(spawnedUnit);
       }
       catch (System.Exception ex)
       {
@@ -82,7 +82,7 @@ public static class BloodPactBattleSimulation
       {
         var randomPoint = regionRect.GetRandomPoint();
         var spawnedUnit = SpawnSimulationUnit(Player, unitTypeId, randomPoint);
-        GroupAddUnit(BattleSimulationGroup, spawnedUnit);
+        BattleSimulationGroup.Add(spawnedUnit);
       }
       catch (System.Exception ex)
       {
@@ -95,7 +95,7 @@ public static class BloodPactBattleSimulation
       var targetUnit = GetRandomUnitFromGroup(WarsongGroup);
       if (targetUnit != null)
       {
-        IssueTargetOrder(sentinelUnit, "attack", targetUnit);
+        sentinelUnit.IssueOrder("attack", targetUnit);
       }
     }
 
@@ -104,18 +104,18 @@ public static class BloodPactBattleSimulation
       var targetUnit = GetRandomUnitFromGroup(SentinelsGroup);
       if (targetUnit != null)
       {
-        IssueTargetOrder(warsongUnit, "attack", targetUnit);
+        warsongUnit.IssueOrder("attack", targetUnit);
       }
     }
 
-    var healthCheckTimer = CreateTimer();
-    TimerStart(healthCheckTimer, 8f, true, CheckAndRestoreUnitHealth);
+    var healthCheckTimer = timer.Create();
+    healthCheckTimer.Start(8f, true, CheckAndRestoreUnitHealth);
   }
 
   private static unit SpawnSimulationUnit(int ownerId, int unitTypeId, Point position)
   {
-    var newUnit = CreateUnit(Player(ownerId), unitTypeId, position.X, position.Y, 0);
-    SetUnitInvulnerable(newUnit, false);
+    var newUnit = unit.Create(player.Create(ownerId), unitTypeId, position.X, position.Y, 0);
+    newUnit.IsInvulnerable = false;
     return newUnit;
   }
 
@@ -135,17 +135,17 @@ public static class BloodPactBattleSimulation
   {
     foreach (var unit in BattleSimulationGroup.ToList())
     {
-      if (GetWidgetLife(unit) <= 0.405f)
+      if (unit.Life <= 0.405f)
       {
         continue;
       }
 
-      var currentHpPercent = (GetWidgetLife(unit) / GetUnitState(unit, UNIT_STATE_MAX_LIFE)) * 100f;
+      var currentHpPercent = (unit.Life / unit.MaxLife) * 100f;
 
       if (currentHpPercent <= MinHealthPercentage)
       {
-        var restoreAmount = (HealthRestorePercentage / 100f) * GetUnitState(unit, UNIT_STATE_MAX_LIFE);
-        SetWidgetLife(unit, restoreAmount);
+        var restoreAmount = (HealthRestorePercentage / 100f) * unit.MaxLife;
+        unit.Life = restoreAmount;
       }
     }
   }

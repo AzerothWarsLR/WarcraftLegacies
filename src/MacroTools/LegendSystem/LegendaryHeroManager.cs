@@ -22,7 +22,8 @@ public static class LegendaryHeroManager
       if (_byUnit.ContainsKey(legendaryHero.Unit))
       {
         throw new Exception($"Tried to register {nameof(LegendaryHero)} {legendaryHero.Name} but it is already registered.");
-      };
+      }
+      ;
       _byUnit.Add(legendaryHero.Unit, legendaryHero);
     }
 

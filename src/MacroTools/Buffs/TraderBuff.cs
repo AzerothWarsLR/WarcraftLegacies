@@ -16,14 +16,14 @@ public sealed class TraderBuff : PassiveBuff
     caster, target)
   {
     _goldIncomeBonus = goldIncomeBonus;
-    _tradeCenterDiesTrigger.RegisterUnitEvent(tradeCenter, EVENT_UNIT_DEATH);
+    _tradeCenterDiesTrigger.RegisterUnitEvent(tradeCenter, unitevent.Death);
     _tradeCenterDiesTrigger.AddAction(TradeCenterDies);
     Duration = float.MaxValue;
   }
 
   private void TradeCenterDies()
   {
-    KillUnit(Target);
+    Target.Kill();
   }
 
   public override void OnApply()

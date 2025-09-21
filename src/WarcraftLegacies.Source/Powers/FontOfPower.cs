@@ -52,8 +52,8 @@ public sealed class FontOfPower : Power
   /// <inheritdoc />
   public override void OnAdd(player whichPlayer)
   {
-    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerDealsDamage, OnDamage, GetPlayerId(whichPlayer));
-    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerSpellEffect, RefundMana, GetPlayerId(whichPlayer));
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerDealsDamage, OnDamage, whichPlayer.Id);
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerSpellEffect, RefundMana, whichPlayer.Id);
     _playersWithPower.Add(whichPlayer);
   }
 
@@ -75,8 +75,8 @@ public sealed class FontOfPower : Power
   /// <inheritdoc />
   public override void OnRemove(player whichPlayer)
   {
-    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerDealsDamage, OnDamage, GetPlayerId(whichPlayer));
-    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerSpellEffect, RefundMana, GetPlayerId(whichPlayer));
+    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerDealsDamage, OnDamage, whichPlayer.Id);
+    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerSpellEffect, RefundMana, whichPlayer.Id);
     _playersWithPower.Remove(whichPlayer);
   }
 
@@ -98,7 +98,7 @@ public sealed class FontOfPower : Power
   /// Gets all fonts that currently count for the activeness of this Power.
   /// </summary>
   public IEnumerable<Capital> GetActiveFonts() =>
-    _fontsOfPower.Where(x => x.OwningPlayer != null && UnitAlive(x.Unit) && _playersWithPower.Contains(x.OwningPlayer));
+    _fontsOfPower.Where(x => x.OwningPlayer != null && x.Unit.Alive && _playersWithPower.Contains(x.OwningPlayer));
 
   private void OnDamage()
   {
@@ -107,7 +107,7 @@ public sealed class FontOfPower : Power
       return;
     }
 
-    BlzSetEventDamage(GetEventDamage() * 1.1f);
+    @event.Damage = @event.Damage * 1.1f;
   }
 
   private void RefundMana()
@@ -117,15 +117,15 @@ public sealed class FontOfPower : Power
       return;
     }
 
-    var caster = GetTriggerUnit();
+    var caster = @event.Unit;
     if (caster == null)
     {
       return;
     }
 
-    var abilityId = GetSpellAbilityId();
-    var abilityLevel = GetUnitAbilityLevel(caster, abilityId);
-    var manaCost = BlzGetUnitAbilityManaCost(caster, abilityId, abilityLevel - 1);
+    var abilityId = @event.SpellAbilityId;
+    var abilityLevel = caster.GetAbilityLevel(abilityId);
+    var manaCost = caster.GetAbilityManaCost(abilityId, abilityLevel - 1);
 
     if (manaCost <= 0)
     {
@@ -133,21 +133,21 @@ public sealed class FontOfPower : Power
     }
 
     var manaRefund = manaCost * 0.15f;
-    var currentMana = GetUnitState(caster, UNIT_STATE_MANA);
-    if (GetUnitState(caster, UNIT_STATE_MANA) + manaRefund > GetUnitState(caster, UNIT_STATE_MAX_MANA))
+    var currentMana = caster.Mana;
+    if (caster.Mana + manaRefund > caster.MaxMana)
     {
       //WC3's spell event triggers before mana cost is subtracted, so if the caster is already near maximum mana,
       //we need to defer the refund until later.
       Delay.Add(() =>
       {
-        SetUnitState(caster, UNIT_STATE_MANA, GetUnitState(caster, UNIT_STATE_MANA) + manaRefund);
-        DestroyTimer(GetExpiredTimer());
+        caster.Mana = caster.Mana + manaRefund;
+        @event.ExpiredTimer.Dispose();
       });
     }
     else
     {
       //If the caster is not near maximum mana, do it the simple way, performant way.
-      SetUnitState(caster, UNIT_STATE_MANA, currentMana + manaRefund);
+      caster.Mana = currentMana + manaRefund;
     }
   }
 

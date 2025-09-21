@@ -15,9 +15,9 @@ public sealed class Waygate
   public Waygate(unit whichUnit)
   {
     _unit = whichUnit;
-    _constructTrigger.RegisterUnitEvent(_unit, EVENT_UNIT_CONSTRUCT_FINISH);
+    _constructTrigger.RegisterUnitEvent(_unit, unitevent.ConstructFinish);
     _constructTrigger.AddAction(OnConstructed);
-    _deathTrigger.RegisterUnitEvent(_unit, EVENT_UNIT_DEATH);
+    _deathTrigger.RegisterUnitEvent(_unit, unitevent.Death);
     _deathTrigger.AddAction(OnDeath);
   }
 
@@ -45,12 +45,12 @@ public sealed class Waygate
 
   private void Disconnect()
   {
-    WaygateActivate(_unit, false);
+    _unit.WaygateActive = false;
   }
 
   private void Connect(Waygate otherWaygate)
   {
-    WaygateSetDestination(_unit, GetUnitX(otherWaygate._unit), GetUnitY(otherWaygate._unit));
-    WaygateActivate(_unit, true);
+    _unit.SetWaygateDestination(otherWaygate._unit.X, otherWaygate._unit.Y);
+    _unit.WaygateActive = true;
   }
 }

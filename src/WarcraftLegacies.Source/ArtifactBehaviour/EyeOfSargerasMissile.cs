@@ -23,7 +23,7 @@ public sealed class EyeOfSargerasMissile : BasicMissile
     Arc = 0.3f;
     Speed = 700;
     _eyeOfSargeras = eyeOfSargeras;
-    SetItemPosition(_eyeOfSargeras, 20229f, 24244);
+    _eyeOfSargeras.SetPosition(20229f, 24244);
     CollisionRadius = 100;
     Active = true;
     CasterLaunchZ = 50;
@@ -33,26 +33,26 @@ public sealed class EyeOfSargerasMissile : BasicMissile
   /// <inheritdoc />
   public override void OnImpact()
   {
-    if (!UnitAlive(Target))
+    if (!Target.Alive)
     {
       return;
     }
 
-    UnitAddAbility(Target, ABILITY_A01Y_INVENTORY_DUMMY_DROP_ARTIFACT);
+    Target.AddAbility(ABILITY_A01Y_INVENTORY_DUMMY_DROP_ARTIFACT);
     Target.AddItemSafe(_eyeOfSargeras);
     _impacted = true;
 
-    var impactEffect = AddSpecialEffect(ImpactEffectPath, GetUnitX(Target), GetUnitY(Target));
-    BlzSetSpecialEffectScale(impactEffect, 2);
+    var impactEffect = effect.Create(ImpactEffectPath, Target.X, Target.Y);
+    impactEffect.Scale = 2;
     EffectSystem.Add(impactEffect, 1);
 
-    var eyeEffect = AddSpecialEffectTarget(@"Doodads\Cinematic\EyeOfSargeras\EyeOfSargeras.mdl", Target, "overhead");
-    var deathTrigger = CreateTrigger();
-    TriggerRegisterUnitEvent(deathTrigger, Target, EVENT_UNIT_DEATH);
-    TriggerAddAction(deathTrigger, () =>
+    var eyeEffect = effect.Create(@"Doodads\Cinematic\EyeOfSargeras\EyeOfSargeras.mdl", Target, "overhead");
+    var deathTrigger = trigger.Create();
+    deathTrigger.RegisterUnitEvent(Target, unitevent.Death);
+    deathTrigger.AddAction(() =>
     {
-      DestroyEffect(eyeEffect);
-      DestroyTrigger(GetTriggeringTrigger());
+      eyeEffect.Dispose();
+      @event.Trigger.Dispose();
     });
   }
 
@@ -64,9 +64,9 @@ public sealed class EyeOfSargerasMissile : BasicMissile
       return;
     }
 
-    SetItemPosition(_eyeOfSargeras, MissileX, MissileY);
-    var impactEffect = AddSpecialEffect(ImpactEffectPath, MissileX, MissileY);
-    BlzSetSpecialEffectScale(impactEffect, 2);
+    _eyeOfSargeras.SetPosition(MissileX, MissileY);
+    var impactEffect = effect.Create(ImpactEffectPath, MissileX, MissileY);
+    impactEffect.Scale = 2;
     EffectSystem.Add(impactEffect, 1);
   }
 }

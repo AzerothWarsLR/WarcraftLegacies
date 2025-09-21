@@ -22,16 +22,16 @@ public sealed class AnimalCompanionTarget : PassiveBuff
 
   public override void OnDispose()
   {
-    var tempEffect = AddSpecialEffect(SpecialEffect, GetUnitX(Target), GetUnitY(Target));
-    DestroyEffect(tempEffect);
-    KillUnit(Target);
-    RemoveUnit(Target);
+    var tempEffect = effect.Create(SpecialEffect, Target.X, Target.Y);
+    tempEffect.Dispose();
+    Target.Kill();
+    Target.Dispose();
     base.OnDispose();
   }
 
   public override void OnApply()
   {
-    UnitApplyTimedLife(Target, 0, Duration);
+    Target.ApplyTimedLife(0, Duration);
   }
 
   public AnimalCompanionTarget(unit caster, unit? target, AnimalCompanionCaster animalCompanionCasterBuff) : base(caster, target)

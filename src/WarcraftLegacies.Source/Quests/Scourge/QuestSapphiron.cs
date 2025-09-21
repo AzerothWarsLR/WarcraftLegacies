@@ -46,7 +46,7 @@ public sealed class QuestSapphiron : QuestData
       return;
     }
 
-    var killingPlayer = GetOwningPlayer(_unitIsDeadObjective.KillingUnit);
+    var killingPlayer = _unitIsDeadObjective.KillingUnit.Owner;
     if (killingPlayer == null)
     {
       return;
@@ -54,7 +54,7 @@ public sealed class QuestSapphiron : QuestData
 
     if (completingFaction.Player?.GetTeam()?.Contains(killingPlayer) == true)
     {
-      CreateUnit(completingFaction.Player, SapphironId, -2600, 18800, 300);
+      unit.Create(completingFaction.Player, SapphironId, -2600, 18800, 300);
     }
   }
 }

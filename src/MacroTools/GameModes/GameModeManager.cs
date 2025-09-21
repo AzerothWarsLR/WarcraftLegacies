@@ -25,32 +25,32 @@ public sealed class GameModeManager
 
   public void Setup()
   {
-    TimerStart(CreateTimer(), TimeToDisplay, false, PresentVotesToPlayers);
+    timer.Create().Start(TimeToDisplay, false, PresentVotesToPlayers);
   }
 
   private void PresentVotesToPlayers()
   {
     try
     {
-      var dialog = DialogCreate();
-      DialogSetMessage(dialog, "Vote Game Mode");
+      dialog dialog = dialog.Create();
+      dialog.SetMessage("Vote Game Mode");
       var buttonClickTriggers = new List<trigger>();
       foreach (var gameModeVote in _gameModeVotes)
       {
-        var dialogButton = DialogAddButton(dialog, gameModeVote.GameMode.Name, 0);
-        var buttonClickTrigger = CreateTrigger();
-        TriggerRegisterDialogButtonEvent(buttonClickTrigger, dialogButton);
-        TriggerAddAction(buttonClickTrigger, () => { gameModeVote.VoteCount += 1; });
+        var dialogButton = dialog.AddButton(gameModeVote.GameMode.Name, 0);
+        var buttonClickTrigger = trigger.Create();
+        buttonClickTrigger.RegisterButtonEvent(dialogButton);
+        buttonClickTrigger.AddAction(() => { gameModeVote.VoteCount += 1; });
         buttonClickTriggers.Add(buttonClickTrigger);
       }
 
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
-        DialogDisplay(player, dialog, true);
+        dialog.SetVisibility(player, true);
       }
 
-      DestroyTimer(GetExpiredTimer());
-      TimerStart(CreateTimer(), VoteLength, false, () => { ConcludeVote(dialog, buttonClickTriggers); });
+      @event.ExpiredTimer.Dispose();
+      timer.Create().Start(VoteLength, false, () => { ConcludeVote(dialog, buttonClickTriggers); });
     }
 
     catch (Exception ex)
@@ -64,18 +64,18 @@ public sealed class GameModeManager
     var highestVotedGameMode = _gameModeVotes.OrderByDescending(x => x.VoteCount).First();
     highestVotedGameMode.GameMode.OnChoose();
 
-    DestroyTimer(GetExpiredTimer());
-    DialogClear(dialog);
+    @event.ExpiredTimer.Dispose();
+    dialog.Clear();
 
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
-      DisplayTextToPlayer(player, 0, 0, $"The {highestVotedGameMode.GameMode.Name} game mode has been chosen.");
-      DialogDisplay(player, dialog, false);
+      player.DisplayTextTo($"The {highestVotedGameMode.GameMode.Name} game mode has been chosen.", 0, 0);
+      dialog.SetVisibility(player, false);
     }
 
     foreach (var trigger in buttonClickTriggers)
     {
-      DestroyTrigger(trigger);
+      trigger.Dispose();
     }
   }
 

@@ -21,7 +21,7 @@ public abstract class Page<TItem, TCard, TCardFactory> : Frame
   }
 
   protected Page(float width, float height, int rows, int columns, float yOffsetTop, float yOffsetBot) :
-    base("ArtifactMenuBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), 0)
+    base("ArtifactMenuBackdrop", originframetype.GameUI.GetOriginFrame(0), 0)
   {
     _rows = rows;
     _columns = columns;
@@ -30,13 +30,13 @@ public abstract class Page<TItem, TCard, TCardFactory> : Frame
     Width = width;
     Height = height;
     Texture = "UI/Widgets/EscMenu/Human/blank-background.blp";
-    SetAbsPoint(FRAMEPOINT_CENTER, 0.4f, 0.38f);
+    SetAbsPoint(framepointtype.Center, 0.4f, 0.38f);
 
     _pageNumberFrame = new TextFrame("ArtifactMenuTitle", this, 0)
     {
       Text = "Page DEFAULT"
     };
-    _pageNumberFrame.SetPoint(FRAMEPOINT_CENTER, this, FRAMEPOINT_TOPRIGHT, -0.05f, -0.025f);
+    _pageNumberFrame.SetPoint(framepointtype.Center, this, framepointtype.TopRight, -0.05f, -0.025f);
     AddFrame(_pageNumberFrame);
 
     _cards = CreateCards(rows * columns);
@@ -87,7 +87,7 @@ public abstract class Page<TItem, TCard, TCardFactory> : Frame
     var boxSpacingY = (Height - _yOffsetTop - _yOffsetBot - card.Height * _rows) / (_rows + 1);
     var cardPosX = card.Width * cardGridX + boxSpacingX * (cardGridX + 1);
     var cardPosY = -(_yOffsetTop + (card.Height * cardGridY + boxSpacingY * (cardGridY + 1)));
-    card.SetPoint(FRAMEPOINT_TOPLEFT, this, FRAMEPOINT_TOPLEFT, cardPosX, cardPosY);
+    card.SetPoint(framepointtype.TopLeft, this, framepointtype.TopLeft, cardPosX, cardPosY);
   }
 
   private List<TCard> CreateCards(int maximumCardCount)

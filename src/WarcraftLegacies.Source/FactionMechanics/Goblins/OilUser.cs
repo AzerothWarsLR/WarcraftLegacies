@@ -19,13 +19,13 @@ public sealed class OilUser : PassiveAbility, IEffectOnCreated
   /// <inheritdoc />
   public void OnCreated(unit createdUnit)
   {
-    var owningFaction = GetOwningPlayer(createdUnit).GetFaction();
+    var owningFaction = createdUnit.Owner.GetFaction();
     var oilPower = owningFaction?.GetPowerByType<OilPower>();
     if (oilPower == null)
     {
       var unitPosition = createdUnit.GetPosition();
       throw new Exception(
-        $"Oil user {GetUnitName(createdUnit)} at ({unitPosition.X}, {unitPosition.Y}) was created but owning player {owningFaction?.Name ?? GetPlayerName(GetOwningPlayer(createdUnit))} doesn't have a power that stores oil.");
+        $"Oil user {createdUnit.Name} at ({unitPosition.X}, {unitPosition.Y}) was created but owning player {owningFaction?.Name ?? createdUnit.Owner.Name} doesn't have a power that stores oil.");
     }
 
     var oilBuff = new OilUserBuff(createdUnit, oilPower);

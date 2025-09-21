@@ -49,7 +49,7 @@ public sealed class ObjectiveControlPoint : Objective
 
   public override void OnAdd(Faction whichFaction)
   {
-    Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit))
+    Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.Owner)
       ? QuestProgress.Complete
       : QuestProgress.Incomplete;
 
@@ -58,7 +58,7 @@ public sealed class ObjectiveControlPoint : Objective
 
   private void RefreshProgress()
   {
-    if (_currentKillCount == _maxKillCount && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
+    if (_currentKillCount == _maxKillCount && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.Owner))
     {
       Progress = QuestProgress.Complete;
     }
@@ -68,18 +68,18 @@ public sealed class ObjectiveControlPoint : Objective
   {
     var unitsNearby = GlobalGroup
       .EnumUnitsInRange(_target.Unit.GetPosition(), range)
-        .Where(x => GetOwningPlayer(x) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !IsUnitType(x, UNIT_TYPE_ANCIENT) &&
-         !IsUnitType(x, UNIT_TYPE_SAPPER) && !IsUnitType(x, UNIT_TYPE_STRUCTURE));
+        .Where(x => x.Owner == player.NeutralAggressive && !x.IsUnitType(unittype.Ancient) &&
+         !x.IsUnitType(unittype.Sapper) && !x.IsUnitType(unittype.Structure));
 
     foreach (var unit in unitsNearby)
     {
       _maxKillCount++;
-      var killTrigger = CreateTrigger();
-      TriggerRegisterUnitEvent(killTrigger, unit, EVENT_UNIT_DEATH);
-      TriggerAddAction(killTrigger, () =>
+      var killTrigger = trigger.Create();
+      killTrigger.RegisterUnitEvent(unit, unitevent.Death);
+      killTrigger.AddAction(() =>
       {
         CurrentKillCount++;
-        DestroyTrigger(GetTriggeringTrigger());
+        @event.Trigger.Dispose();
       });
     }
   }

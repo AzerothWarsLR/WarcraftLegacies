@@ -32,7 +32,7 @@ public sealed class DemonGateType : PassiveAbility, IEffectOnUpgrade, IEffectOnC
   /// <inheritdoc />
   public void OnUpgrade()
   {
-    ApplyBuff(GetTriggerUnit());
+    ApplyBuff(@event.Unit);
   }
 
   /// <inheritdoc />

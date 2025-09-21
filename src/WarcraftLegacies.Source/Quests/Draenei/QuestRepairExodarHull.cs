@@ -29,7 +29,7 @@ public sealed class QuestRepairExodarHull : QuestData
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
     ResearchId = UPGRADE_R099_QUEST_COMPLETED_A_NEW_HOME;
-    SetUnitTimeScale(exodar.Unit, 0);
+    exodar.Unit.SetTimeScale(0);
   }
 
   /// <inheritdoc/>
@@ -51,7 +51,7 @@ public sealed class QuestRepairExodarHull : QuestData
     }
     else
     {
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+      player.NeutralAggressive.RescueGroup(_rescueUnits);
     }
   }
 }

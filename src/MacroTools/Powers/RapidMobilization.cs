@@ -16,25 +16,25 @@ public sealed class RapidMobilization : Power
 
   public override void OnAdd(player whichPlayer)
   {
-    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerFinishesTraining, OnUnitTrain, GetPlayerId(whichPlayer));
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerFinishesTraining, OnUnitTrain, whichPlayer.Id);
   }
 
   public override void OnRemove(player whichPlayer)
   {
-    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerFinishesTraining, OnUnitTrain, GetPlayerId(whichPlayer));
+    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerFinishesTraining, OnUnitTrain, whichPlayer.Id);
   }
 
   private void OnUnitTrain()
   {
-    var trainedUnit = GetTrainedUnit();
+    var trainedUnit = @event.TrainedUnit;
     if (!(_chance > GetRandomReal(0, 100)))
     {
       return;
     }
 
-    var newUnit = CreateUnit(GetOwningPlayer(trainedUnit), GetUnitTypeId(trainedUnit), GetUnitX(trainedUnit), GetUnitY(trainedUnit), GetUnitFacing(trainedUnit));
-    var rallyPoint = GetUnitRallyPoint(GetTriggerUnit());
-    IssuePointOrder(newUnit, "attack", GetLocationX(rallyPoint), GetLocationY(rallyPoint));
-    RemoveLocation(rallyPoint);
+    var newUnit = unit.Create(trainedUnit.Owner, trainedUnit.UnitType, trainedUnit.X, trainedUnit.Y, trainedUnit.Facing);
+    var rallyPoint = @event.Unit.RallyPoint;
+    newUnit.IssueOrder("attack", rallyPoint.X, rallyPoint.Y);
+    rallyPoint.Dispose();
   }
 }

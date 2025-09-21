@@ -18,10 +18,10 @@ public sealed class LongLivedDummyCaster
   /// </summary>
   public void ChannelOnPoint(unit caster, int abilityId, int orderId, int level, Point targetPoint, float duration)
   {
-    var newUnit = CreateUnit(GetOwningPlayer(caster), _unitTypeId, targetPoint.X, targetPoint.Y, 0);
-    UnitAddAbility(newUnit, abilityId);
-    SetUnitAbilityLevel(newUnit, abilityId, level);
-    IssueImmediateOrderById(newUnit, orderId);
+    var newUnit = unit.Create(caster.Owner, _unitTypeId, targetPoint.X, targetPoint.Y, 0);
+    newUnit.AddAbility(abilityId);
+    newUnit.SetAbilityLevel(abilityId, level);
+    newUnit.IssueOrder(orderId);
     newUnit.SetTimedLife(duration);
   }
 
@@ -30,10 +30,10 @@ public sealed class LongLivedDummyCaster
   /// </summary>
   public void ChannelAtCaster(unit caster, int abilityId, int orderId, int level, float duration)
   {
-    var newUnit = CreateUnit(GetOwningPlayer(caster), _unitTypeId, caster.GetPosition().X, caster.GetPosition().Y, 0);
-    UnitAddAbility(newUnit, abilityId);
-    SetUnitAbilityLevel(newUnit, abilityId, level);
-    IssueImmediateOrderById(newUnit, orderId);
+    var newUnit = unit.Create(caster.Owner, _unitTypeId, caster.GetPosition().X, caster.GetPosition().Y, 0);
+    newUnit.AddAbility(abilityId);
+    newUnit.SetAbilityLevel(abilityId, level);
+    newUnit.IssueOrder(orderId);
     newUnit.SetTimedLife(duration);
   }
 }

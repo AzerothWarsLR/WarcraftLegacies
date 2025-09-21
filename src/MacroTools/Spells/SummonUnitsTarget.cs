@@ -22,8 +22,8 @@ public sealed class SummonUnitsTarget : Spell
   {
     try
     {
-      var targetX = GetUnitX(target);
-      var targetY = GetUnitY(target);
+      var targetX = target.X;
+      var targetY = target.Y;
       var angle = AngleOffset;
       for (var i = 0; i < SummonCount; i++)
       {
@@ -31,11 +31,11 @@ public sealed class SummonUnitsTarget : Spell
         var summonX = MathEx.GetPolarOffsetX(targetX, Radius, angle);
         var summonY = MathEx.GetPolarOffsetY(targetY, Radius, angle);
         var summonFacing = MathEx.GetAngleBetweenPoints(summonX, summonY, targetX, targetY);
-        var summonedUnit = CreateUnit(GetOwningPlayer(caster), SummonUnitTypeId, summonX, summonY, summonFacing);
-        UnitApplyTimedLife(summonedUnit, 0, Duration);
-        SetUnitAnimation(summonedUnit, "birth");
-        QueueUnitAnimation(summonedUnit, "stand");
-        DestroyEffect(AddSpecialEffect(Effect, summonX, summonY));
+        var summonedUnit = unit.Create(caster.Owner, SummonUnitTypeId, summonX, summonY, summonFacing);
+        summonedUnit.ApplyTimedLife(0, Duration);
+        summonedUnit.SetAnimation("birth");
+        summonedUnit.QueueAnimation("stand");
+        effect.Create(Effect, summonX, summonY).Dispose();
       }
     }
     catch (Exception ex)

@@ -19,7 +19,7 @@ public sealed class Sunfury : Faction
 
   /// <inheritdoc />
   public Sunfury(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
-    : base("Sunfury", PLAYER_COLOR_VIOLET, @"ReplaceableTextures\CommandButtons\BTNBloodMage2.blp")
+    : base("Sunfury", playercolor.Violet, @"ReplaceableTextures\CommandButtons\BTNBloodMage2.blp")
   {
     TraditionalTeam = TeamSetup.Outland;
     _preplacedUnitSystem = preplacedUnitSystem;
@@ -63,7 +63,7 @@ public sealed class Sunfury : Faction
     Regions.UpperNetherstorm.CleanupNeutralPassiveUnits();
     Regions.TempestKeep.CleanupNeutralPassiveUnits();
     Regions.SunfuryStartingPosition.CleanupNeutralPassiveUnits();
-    RemoveUnit(_preplacedUnitSystem.GetUnit(UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER));
+    _preplacedUnitSystem.GetUnit(UNIT_N0DZ_THE_WELL_OF_ETERNITY_SUNFURY_OTHER).Dispose();
     base.OnNotPicked();
   }
 

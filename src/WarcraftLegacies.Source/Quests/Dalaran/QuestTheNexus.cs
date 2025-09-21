@@ -67,6 +67,6 @@ public sealed class QuestTheNexus : QuestData
 
     completingFaction.Name = "The Nexus";
     completingFaction.Icon = @"ReplaceableTextures\CommandButtons\BTNJaina_Archmage.blp";
-    SetPlayerState(completingFaction.Player, PLAYER_STATE_FOOD_CAP_CEILING, 250);
+    completingFaction.Player.SetState(playerstate.FoodCapCeiling, 250);
   }
 }

@@ -45,9 +45,9 @@ public sealed class QuestDragonsOfNightmare : QuestData
     _waygateTwo = waygateTwo;
     _wayGateOneDestination = wayGateOneDestination;
     _wayGateTwoDestination = wayGateTwoDestination;
-    ShowUnit(nightmareDragonKalimdor, false);
+    nightmareDragonKalimdor.IsVisible = false;
     _nightmareDragonKalimdor = nightmareDragonKalimdor;
-    ShowUnit(nightmareDragonEk, false);
+    nightmareDragonEk.IsVisible = false;
     _nightmareDragonEk = nightmareDragonEk;
     _nightmareDragonKalimdor = nightmareDragonKalimdor;
     _nightmareDragonEk = nightmareDragonEk;
@@ -56,22 +56,22 @@ public sealed class QuestDragonsOfNightmare : QuestData
     AddObjective(new ObjectiveKillUnit(nightmareDragonKalimdor));
     AddObjective(new ObjectiveKillUnit(nightmareDragonEk));
     AddObjective(new ObjectiveTime(360));
-    _timer = CreateTimer();
-    TimerStart(_timer, 360, false, OnTimeElapsed);
+    _timer = timer.Create();
+    _timer.Start(360, false, OnTimeElapsed);
     IsFactionQuest = false;
   }
 
   private void OnTimeElapsed()
   {
-    DestroyTimer(_timer);
+    _timer.Dispose();
     foreach (var player in Util.EnumeratePlayers())
     {
-      DisplayTextToPlayer(player, 0, 0, $"\n|cff590ff7 NIGHTMARE DRAGONS SPAWNED \n|r {_nightmareDragonKalimdor.GetProperName()} and {_nightmareDragonEk.GetProperName()} have appeared in {_portalOneLocation} and {_portalTwoLocation}.");
-      StartSound(SoundLibrary.Warning);
+      player.DisplayTextTo($"\n|cff590ff7 NIGHTMARE DRAGONS SPAWNED \n|r {_nightmareDragonKalimdor.GetProperName()} and {_nightmareDragonEk.GetProperName()} have appeared in {_portalOneLocation} and {_portalTwoLocation}.", 0, 0);
+      SoundLibrary.Warning.Start();
     }
 
-    ShowUnit(_nightmareDragonEk, true);
-    ShowUnit(_nightmareDragonKalimdor, true);
+    _nightmareDragonEk.IsVisible = true;
+    _nightmareDragonKalimdor.IsVisible = true;
   }
 
   /// <inheritdoc/>
@@ -83,10 +83,10 @@ public sealed class QuestDragonsOfNightmare : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    ShowUnit(_waygateOne, true);
+    _waygateOne.IsVisible = true;
     _waygateOne
    .SetWaygateDestination(_wayGateOneDestination.Center);
-    ShowUnit(_waygateTwo, true);
+    _waygateTwo.IsVisible = true;
     _waygateTwo
       .SetWaygateDestination(_wayGateTwoDestination.Center);
   }

@@ -33,13 +33,13 @@ public sealed class Devour : Spell
   {
     if (target.IsResistant())
     {
-      target.TakeDamage(caster, Damage.Base + Damage.PerLevel * GetAbilityLevel(caster), damageType: DAMAGE_TYPE_MAGIC);
+      target.TakeDamage(caster, Damage.Base + Damage.PerLevel * GetAbilityLevel(caster), damageType: damagetype.Magic);
     }
     else
     {
-      target.TakeDamage(caster, GetUnitState(target, UNIT_STATE_LIFE), damageType: DAMAGE_TYPE_UNIVERSAL, attackType: ATTACK_TYPE_CHAOS);
+      target.TakeDamage(caster, target.Life, damageType: damagetype.Universal, attackType: attacktype.Chaos);
     }
 
-    SetUnitState(caster, UNIT_STATE_LIFE, GetUnitState(caster, UNIT_STATE_LIFE) + GetUnitState(caster, UNIT_STATE_MAX_LIFE) * PercentageOfMaxHealth);
+    caster.Life = caster.Life + caster.MaxLife * PercentageOfMaxHealth;
   }
 }

@@ -44,9 +44,9 @@ public sealed class NoTargetSpellOnCast : PassiveAbility, IEffectOnSpellEffect
   /// <inheritdoc />
   public void OnSpellEffect()
   {
-    var caster = GetTriggerUnit();
-    var abilityLevel = GetUnitAbilityLevel(caster, _abilityTypeId);
-    if (abilityLevel == 0 || !AbilityWhitelist.Contains(GetSpellAbilityId()))
+    var caster = @event.Unit;
+    var abilityLevel = caster.GetAbilityLevel(_abilityTypeId);
+    if (abilityLevel == 0 || !AbilityWhitelist.Contains(@event.SpellAbilityId))
     {
       return;
     }
@@ -58,5 +58,5 @@ public sealed class NoTargetSpellOnCast : PassiveAbility, IEffectOnSpellEffect
   }
 
   private void DoSpellNoTarget(unit caster) => DummyCasterManager.GetGlobalDummyCaster().CastNoTarget(caster, DummyAbilityId,
-    DummyOrderId, GetUnitAbilityLevel(caster, _abilityTypeId));
+    DummyOrderId, caster.GetAbilityLevel(_abilityTypeId));
 }

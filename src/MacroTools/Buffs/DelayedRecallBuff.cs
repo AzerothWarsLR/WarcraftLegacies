@@ -33,7 +33,7 @@ public sealed class DelayedRecallBuff : PassiveBuff
   public DelayedRecallBuff(unit caster, unit target, List<unit> unitsToMove) : base(caster, target)
   {
     UnitsToMove = unitsToMove;
-    TargetPosition = new Point(GetUnitX(caster), GetUnitY(caster));
+    TargetPosition = new Point(caster.X, caster.Y);
   }
 
   /// <inheritdoc />
@@ -41,17 +41,16 @@ public sealed class DelayedRecallBuff : PassiveBuff
   {
     foreach (var unit in UnitsToMove)
     {
-      ShowUnit(unit, false);
-      SetUnitInvulnerable(unit, true);
+      unit.IsVisible = false;
+      unit.IsInvulnerable = true;
     }
 
-    Effect = AddSpecialEffect(@"Abilities\Spells\Undead\Darksummoning\DarkSummonTarget.mdl", TargetPosition.X,
-      TargetPosition.Y);
+    Effect = effect.Create(@"Abilities\Spells\Undead\Darksummoning\DarkSummonTarget.mdl", TargetPosition.X, TargetPosition.Y);
 
-    _progressEffect = AddSpecialEffect("war3mapImported\\Progressbar10sec.mdx", TargetPosition.X, TargetPosition.Y);
-    BlzSetSpecialEffectTimeScale(_progressEffect, 10 / Duration);
-    BlzSetSpecialEffectColorByPlayer(_progressEffect, GetOwningPlayer(Caster));
-    BlzSetSpecialEffectHeight(_progressEffect, 185f + Environment.GetPositionZ(TargetPosition));
+    _progressEffect = effect.Create("war3mapImported\\Progressbar10sec.mdx", TargetPosition.X, TargetPosition.Y);
+    _progressEffect.SetTimeScale(10 / Duration);
+    _progressEffect.SetColor(Caster.Owner);
+    _progressEffect.SetHeight(185f + Environment.GetPositionZ(TargetPosition));
   }
 
   /// <inheritdoc />
@@ -60,28 +59,28 @@ public sealed class DelayedRecallBuff : PassiveBuff
   {
     if (Effect != null)
     {
-      DestroyEffect(Effect);
+      Effect.Dispose();
     }
 
     if (_progressEffect != null)
     {
-      DestroyEffect(_progressEffect);
+      _progressEffect.Dispose();
     }
 
-    if (!UnitAlive(Caster))
+    if (!Caster.Alive)
     {
       var amountToKill = (int)(UnitsToMove.Count * DeathPenalty);
       foreach (var unit in UnitsToMove.Take(amountToKill))
       {
-        KillUnit(unit);
+        unit.Kill();
       }
     }
 
     foreach (var unit in UnitsToMove)
     {
-      ShowUnit(unit, true);
+      unit.IsVisible = true;
       unit.SetPosition(TargetPosition);
-      SetUnitInvulnerable(unit, false);
+      unit.IsInvulnerable = false;
     }
   }
 }

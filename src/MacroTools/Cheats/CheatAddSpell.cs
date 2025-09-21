@@ -40,7 +40,7 @@ public sealed class CheatAddSpell : Command
 
     foreach (var unit in GlobalGroup.EnumSelectedUnits(cheater))
     {
-      UnitAddAbility(unit, fourCc);
+      unit.AddAbility(fourCc);
     }
 
     return $"Adding {objectName} to selected units.";

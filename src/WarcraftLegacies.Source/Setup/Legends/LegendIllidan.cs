@@ -11,7 +11,7 @@ public sealed class LegendIllidan
     UnitType = UNIT_EEVI_DEMON_HUNTER_HYBRID_ILLIDARI,
     StartingArtifacts = new()
     {
-      new(CreateItem(ITEM_I007_SKULL_OF_GUL_DAN, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+      new(item.Create(ITEM_I007_SKULL_OF_GUL_DAN, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
     }
   };
 

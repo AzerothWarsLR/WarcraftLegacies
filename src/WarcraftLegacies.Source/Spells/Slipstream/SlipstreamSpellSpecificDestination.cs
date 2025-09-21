@@ -54,7 +54,7 @@ public sealed class SlipstreamSpellSpecificDestination : Spell
       return;
     }
 
-    var spellTarget = new Point(GetSpellTargetX(), GetSpellTargetY());
+    var spellTarget = new Point(@event.SpellTargetX, @event.SpellTargetY);
     ChannelManager.Add(new SlipstreamPortalChannel(caster, Id, spellTarget, TargetLocation)
     {
       Active = true,
@@ -74,18 +74,18 @@ public sealed class SlipstreamSpellSpecificDestination : Spell
       return;
     }
 
-    IssueImmediateOrder(caster, "stop");
+    caster.IssueOrder("stop");
     Refund(caster);
   }
 
   private void Refund(unit whichUnit)
   {
-    whichUnit.RestoreMana(BlzGetUnitAbilityManaCost(whichUnit, Id, GetAbilityLevel(whichUnit)));
-    BlzEndUnitAbilityCooldown(whichUnit, Id);
+    whichUnit.RestoreMana(whichUnit.GetAbilityManaCost(Id, GetAbilityLevel(whichUnit)));
+    whichUnit.EndAbilityCooldown(Id);
   }
 
   private bool IsPointValidTarget(unit caster, Point targetPoint) =>
-    !IsTerrainPathable(targetPoint.X, targetPoint.Y, PATHING_TYPE_WALKABILITY)
-    && !(Util.DistanceBetweenPoints(GetUnitX(caster), GetUnitY(caster), TargetLocation.X, TargetLocation.Y) < 500)
+    !pathingtype.Walkability.GetPathable(targetPoint.X, targetPoint.Y)
+    && !(Util.DistanceBetweenPoints(caster.X, caster.Y, TargetLocation.X, TargetLocation.Y) < 500)
     && InstanceSystem.GetPointInstance(caster.GetPosition()) == InstanceSystem.GetPointInstance(targetPoint);
 }

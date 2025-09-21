@@ -42,14 +42,14 @@ public sealed class Button : Frame
     {
       _onClickTrigger?.Dispose();
       _onClickTrigger = new TriggerWrapper();
-      _onClickTrigger.RegisterFrameEvent(Handle, FRAMEEVENT_CONTROL_CLICK);
-      _onClickTrigger.AddAction(() => value(GetTriggerPlayer()));
+      _onClickTrigger.RegisterFrameEvent(Handle, frameeventtype.Click);
+      _onClickTrigger.AddAction(() => value(@event.Player));
     }
   }
 
   public string Text
   {
-    get => BlzFrameGetText(Handle);
-    set => BlzFrameSetText(Handle, value);
+    get => Handle.Text;
+    set => Handle.Text = value;
   }
 }

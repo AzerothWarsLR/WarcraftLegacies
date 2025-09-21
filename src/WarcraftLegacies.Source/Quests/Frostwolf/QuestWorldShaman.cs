@@ -51,7 +51,7 @@ public sealed class QuestWorldShaman : QuestData
   {
     if (_thrall.Unit != null)
     {
-      BlzSetUnitName(_thrall.Unit, "World-Shaman");
+      _thrall.Unit.Name = "World-Shaman";
       _thrall.Unit.AddHeroAttributes(0, 10, 0);
       AddHeroXP(_thrall.Unit, 2000, true);
     }

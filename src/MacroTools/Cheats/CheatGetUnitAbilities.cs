@@ -29,7 +29,7 @@ public sealed class CheatGetUnitAbilities : Command
     var firstSelectedUnit = GlobalGroup.EnumSelectedUnits(cheater).First();
     foreach (var ability in firstSelectedUnit.GetUnitAbilities())
     {
-      abilityString += $"{BlzGetAbilityStringField(ability, ABILITY_SF_NAME)}: {BlzGetAbilityId(ability)}\n";
+      abilityString += $"{BlzGetAbilityStringField(ability, ABILITY_SF_NAME)}: {ability.Id}\n";
     }
     return $"{abilityString}";
   }

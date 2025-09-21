@@ -35,7 +35,7 @@ public static class PassiveAbilityManager
   /// </summary>
   public static void ForceOnCreated(unit whichUnit)
   {
-    if (!_passiveAbilitiesByUnitTypeId.TryGetValue(GetUnitTypeId(whichUnit), out var passiveAbilities))
+    if (!_passiveAbilitiesByUnitTypeId.TryGetValue(whichUnit.UnitType, out var passiveAbilities))
     {
       return;
     }
@@ -95,7 +95,7 @@ public static class PassiveAbilityManager
       switch (passiveAbility)
       {
         case IEffectOnCreated effectOnCreated:
-          void UnitCreated() => effectOnCreated.OnCreated(GetTriggerUnit());
+          void UnitCreated() => effectOnCreated.OnCreated(@event.Unit);
           PlayerUnitEvents.Register(UnitTypeEvent.IsCreated, UnitCreated, unitTypeId);
           PlayerUnitEvents.Register(HeroTypeEvent.FinishesRevive, UnitCreated, unitTypeId);
           break;

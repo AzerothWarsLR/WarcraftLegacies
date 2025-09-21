@@ -19,23 +19,23 @@ public sealed class ObjectiveLegendReachRect : Objective
     _target = RectToRegion(_targetRect);
     _legend = legendaryHero;
     Description = legendaryHero.Name + " reaches " + rectName;
-    TriggerRegisterEnterRegion(_entersRect.Trigger, _target, null);
-    TriggerAddAction(_entersRect.Trigger, OnRegionEnter);
+    _entersRect.Trigger.RegisterEnterRegion(_target, null);
+    _entersRect.Trigger.AddAction(OnRegionEnter);
     PingPath = "MinimapQuestTurnIn";
     DisplaysPosition = true;
-    Position = new(GetRectCenterX(_targetRect), GetRectCenterY(_targetRect));
+    Position = new(_targetRect.CenterX, _targetRect.CenterY);
   }
 
   private static region RectToRegion(rect whichRect)
   {
-    var rectRegion = CreateRegion();
-    RegionAddRect(rectRegion, whichRect);
+    var rectRegion = region.Create();
+    rectRegion.AddRect(whichRect);
     return rectRegion;
   }
 
   private void OnRegionEnter()
   {
-    if (GetTriggeringRegion() == _target && UnitAlive(_legend.Unit) && GetTriggerUnit() == _legend.Unit)
+    if (@event.Region == _target && _legend.Unit.Alive && @event.Unit == _legend.Unit)
     {
       Progress = QuestProgress.Complete;
     }

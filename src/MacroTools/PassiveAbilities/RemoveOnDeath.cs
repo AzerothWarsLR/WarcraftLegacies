@@ -18,13 +18,13 @@ public sealed class RemoveOnDeath : PassiveAbility, IEffectOnDeath
   /// <inheritdoc />
   public void OnDeath()
   {
-    var triggerUnit = GetTriggerUnit();
+    var triggerUnit = @event.Unit;
     var position = triggerUnit.GetPosition();
-    RemoveUnit(GetTriggerUnit());
+    @event.Unit.Dispose();
 
     if (DeathEffectPath != null)
     {
-      EffectSystem.Add(AddSpecialEffect(DeathEffectPath, position.X, position.Y));
+      EffectSystem.Add(effect.Create(DeathEffectPath, position.X, position.Y));
     }
   }
 }

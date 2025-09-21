@@ -21,7 +21,7 @@ public sealed class Quelthalas : Faction
 
   /// <inheritdoc />
   public Quelthalas(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Quel'thalas",
-    PLAYER_COLOR_CYAN, @"ReplaceableTextures\CommandButtons\BTNSylvanusWindrunner.blp")
+    playercolor.Cyan, @"ReplaceableTextures\CommandButtons\BTNSylvanusWindrunner.blp")
   {
     TraditionalTeam = TeamSetup.NorthAlliance;
     _preplacedUnitSystem = preplacedUnitSystem;

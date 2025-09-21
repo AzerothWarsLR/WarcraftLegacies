@@ -39,10 +39,10 @@ public sealed class InstantKill : Spell
     switch (Target)
     {
       case KillTarget.Self:
-        KillUnit(caster);
+        caster.Kill();
         break;
       case KillTarget.Target:
-        KillUnit(target);
+        target.Kill();
         break;
     }
   }

@@ -38,28 +38,28 @@ public sealed class MassiveAttackAbility : PassiveAbility, IAppliesEffectOnDamag
   /// <inheritdoc />
   public void OnDealsDamage()
   {
-    if (!BlzGetEventIsAttack())
+    if (!@event.IsAttack)
     {
       return;
     }
 
-    var caster = GetEventDamageSource();
+    var caster = @event.DamageSource;
 
-    DoSpellOnTarget(caster, GetTriggerUnit());
+    DoSpellOnTarget(caster, @event.Unit);
   }
 
   private void DoSpellOnTarget(unit caster, unit attackTarget)
   {
-    var facing = MathEx.GetAngleBetweenPoints(GetUnitX(caster), GetUnitY(caster), GetUnitX(attackTarget),
-      GetUnitY(attackTarget));
-    var targetX = MathEx.GetPolarOffsetX(GetUnitX(caster), Distance, facing);
-    var targetY = MathEx.GetPolarOffsetY(GetUnitY(caster), Distance, facing);
+    var facing = MathEx.GetAngleBetweenPoints(caster.X, caster.Y, attackTarget.X,
+      attackTarget.Y);
+    var targetX = MathEx.GetPolarOffsetX(caster.X, Distance, facing);
+    var targetY = MathEx.GetPolarOffsetY(caster.Y, Distance, facing);
 
     var missile = new MassiveAttackProjectile(caster, targetX, targetY)
     {
       Damage = caster.GetAverageDamage(0) * AttackDamagePercentage,
-      AttackType = ConvertAttackType(BlzGetUnitWeaponIntegerField(caster, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0)),
-      DamageType = BlzGetEventDamageType()
+      AttackType = ConvertAttackType((int)caster.AttackAttackType1),
+      DamageType = @event.DamageType
     };
     if (IgnoreAttackTarget)
     {

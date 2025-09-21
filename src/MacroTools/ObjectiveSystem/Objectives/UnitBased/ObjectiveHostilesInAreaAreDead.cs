@@ -44,17 +44,17 @@ public sealed class ObjectiveHostilesInAreaAreDead : Objective
     foreach (var rectangle in rectangles)
     {
       var unitsInAreas = GlobalGroup.EnumUnitsInRect(rectangle)
-        .Where(x => GetOwningPlayer(x) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !IsUnitType(x, UNIT_TYPE_ANCIENT) &&
-                    !IsUnitType(x, UNIT_TYPE_SAPPER));
+        .Where(x => x.Owner == player.NeutralAggressive && !x.IsUnitType(unittype.Ancient) &&
+                    !x.IsUnitType(unittype.Sapper));
       foreach (var unit in unitsInAreas)
       {
         _maxKillCount++;
-        var deathTrigger = CreateTrigger();
-        TriggerRegisterUnitEvent(deathTrigger, unit, EVENT_UNIT_DEATH);
-        TriggerAddAction(deathTrigger, () =>
+        var deathTrigger = trigger.Create();
+        deathTrigger.RegisterUnitEvent(unit, unitevent.Death);
+        deathTrigger.AddAction(() =>
         {
           CurrentKillCount++;
-          DestroyTrigger(GetTriggeringTrigger());
+          @event.Trigger.Dispose();
         });
       }
     }

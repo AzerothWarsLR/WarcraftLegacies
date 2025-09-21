@@ -58,6 +58,6 @@ public sealed class QuestScepterOfTheQueenSentinels : QuestData
   protected override void OnFail(Faction whichFaction)
   {
     _scepterOfTheQueen.Item.SetPosition(_highBourneArea.Center);
-    Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_highBourneAreaUnits);
+    player.NeutralAggressive.RescueGroup(_highBourneAreaUnits);
   }
 }

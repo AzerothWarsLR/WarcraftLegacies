@@ -32,8 +32,8 @@ public sealed class NuclearLaunch : Spell, IStartChannelEffect
   /// <inheritdoc />
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    var dummyNukeLeftover = CreateUnit(GetOwningPlayer(caster), DummyNukeLeftOverId, targetPoint.X, targetPoint.Y, 0);
-    UnitApplyTimedLife(dummyNukeLeftover, 0, 3);
+    var dummyNukeLeftover = unit.Create(caster.Owner, DummyNukeLeftOverId, targetPoint.X, targetPoint.Y, 0);
+    dummyNukeLeftover.ApplyTimedLife(0, 3);
     dummyNukeLeftover.IssueOrder(ORDER_FLAMESTRIKE, targetPoint);
   }
 
@@ -41,10 +41,10 @@ public sealed class NuclearLaunch : Spell, IStartChannelEffect
   public void OnStartChannel(unit caster, Point targetPoint)
   {
     var sound = SoundUtils.CreateNormalSound(WarningSoundPath);
-    StartSound(sound);
+    sound.Start();
     var dummyNukeWarning =
-      CreateUnit(GetOwningPlayer(caster), NuclearWarningUnitTypeId, targetPoint.X, targetPoint.Y, 0);
+      unit.Create(caster.Owner, NuclearWarningUnitTypeId, targetPoint.X, targetPoint.Y, 0);
 
-    UnitApplyTimedLife(dummyNukeWarning, 0, CastTime);
+    dummyNukeWarning.ApplyTimedLife(0, CastTime);
   }
 }

@@ -36,16 +36,16 @@ public sealed class QuestBloodpact : QuestData
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
   {
-    var timerBloodpact = CreateTimer();
+    var timerBloodpact = timer.Create();
     _mannoroth.ForceCreate(completingFaction.Player, Regions.FountainUnlock.Center, 270);
     _grom.UnitType = UNIT_OPGH_CORRUPTOR_OF_THE_WARSONG_CLAN_WARSONG_BLOODPACT;
-    TimerStart(timerBloodpact, 180, false, () =>
+    timerBloodpact.Start(180, false, () =>
     {
       completingFaction.SetObjectLimit(UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, -1);
       completingFaction.SetObjectLevel(UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH, -1);
       completingFaction.SetObjectLevel(UPGRADE_R09P_REVERT_BLOODPACT, 1);
 
-      _mannoroth.ForceCreate(Player(PLAYER_NEUTRAL_AGGRESSIVE), Regions.FountainUnlock.Center, 270);
+      _mannoroth.ForceCreate(player.NeutralAggressive, Regions.FountainUnlock.Center, 270);
       _grom.UnitType = UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG;
     });
   }

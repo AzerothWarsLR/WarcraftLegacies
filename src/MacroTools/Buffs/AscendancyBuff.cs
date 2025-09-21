@@ -13,7 +13,7 @@ public sealed class AscendancyBuff : PassiveBuff
     {
       foreach (var ability in AbilitiesToRemove)
       {
-        SetPlayerAbilityAvailable(GetOwningPlayer(Caster), ability, false);
+        Caster.Owner.SetAbilityAvailable(ability, false);
       }
     }
   }
@@ -24,7 +24,7 @@ public sealed class AscendancyBuff : PassiveBuff
     {
       foreach (var ability in AbilitiesToRemove)
       {
-        SetPlayerAbilityAvailable(GetOwningPlayer(Caster), ability, true);
+        Caster.Owner.SetAbilityAvailable(ability, true);
       }
     }
   }

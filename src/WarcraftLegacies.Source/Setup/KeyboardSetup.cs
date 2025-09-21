@@ -8,7 +8,7 @@ public static class KeyboardSetup
   {
     for (var i = 0; i < 24; i++)
     {
-      var player = Player(i);
+      player player = player.Create(i);
       var hotkeyManager = new HeroHotkeyManager();
       hotkeyManager.Initialize(player);
     }

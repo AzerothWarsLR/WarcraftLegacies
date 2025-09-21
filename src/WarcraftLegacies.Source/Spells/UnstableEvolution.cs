@@ -43,11 +43,11 @@ public sealed class UnstableEvolution : Spell
 
   private static bool IsValidTarget(unit caster, unit target)
   {
-    return !IsUnitType(target, UNIT_TYPE_STRUCTURE) && !IsUnitType(target, UNIT_TYPE_ANCIENT) &&
-           !IsUnitType(target, UNIT_TYPE_MECHANICAL) && !IsUnitType(target, UNIT_TYPE_RESISTANT) &&
-           !IsUnitType(target, UNIT_TYPE_HERO) && GetOwningPlayer(target) == GetOwningPlayer(caster) && UnitAlive(target)
-           && !BlzIsUnitInvulnerable(target) &&
-           !IsUnitType(target, UNIT_TYPE_SUMMONED) && !IsUnitIllusion(target);
+    return !target.IsUnitType(unittype.Structure) && !target.IsUnitType(unittype.Ancient) &&
+           !target.IsUnitType(unittype.Mechanical) && !target.IsUnitType(unittype.Resistant) &&
+           !target.IsUnitType(unittype.Hero) && target.Owner == caster.Owner && target.Alive
+           && !target.IsInvulnerable &&
+           !target.IsUnitType(unittype.Summoned) && !target.IsIllusion;
   }
 
   private void EmpowerUnit(int level, unit target)
@@ -55,20 +55,20 @@ public sealed class UnstableEvolution : Spell
     target.MultiplyBaseDamage(AttackDamageMultiplier.Base + AttackDamageMultiplier.PerLevel * level, 0);
     target.MultiplyAttackCooldown(1 / (AttackSpeedMultiplier.Base + AttackSpeedMultiplier.PerLevel * level), 0);
     target.MultiplyMaxHitpoints(MaxHealthMultiplier.Base + MaxHealthMultiplier.PerLevel * level);
-    SetUnitVertexColor(target, 100, 255, 150, 255);
+    target.SetVertexColor(100, 255, 150, 255);
     target.SetTimedLife(Duration);
-    SetUnitExploded(target, true);
-    SetUnitScale(target, 1.1f, 1.1f, 1.1f);
+    target.SetExploded(true);
+    target.SetScale(1.1f, 1.1f, 1.1f);
 
-    if (GetUnitTypeId(target) == UNIT_U013_SUPER_MAJOR_C_THUN)
+    if (target.UnitType == UNIT_U013_SUPER_MAJOR_C_THUN)
     {
-      SetUnitScale(target, 0.6f, 0.6f, 0.6f);
+      target.SetScale(0.6f, 0.6f, 0.6f);
     }
 
-    var effect = AddSpecialEffect(EffectTarget, GetUnitX(target), GetUnitY(target));
-    BlzSetSpecialEffectScale(effect, EffectScaleTarget);
+    effect effect = effect.Create(EffectTarget, target.X, target.Y);
+    effect.Scale = EffectScaleTarget;
     EffectSystem.Add(effect);
-    BlzSetSpecialEffectColor(effect, 0, 255, 0);
+    effect.SetColor(0, 255, 0);
   }
 
 }

@@ -42,7 +42,7 @@ public sealed class LegendAhnqiraj
   public void RegisterLegends()
   {
     LegendaryHeroManager.Register(Cthun);
-    UnitModifySkillPoints(Cthun.Unit, -7);
+    Cthun.Unit.AddSkillPoints(-7);
     LegendaryHeroManager.Register(Moam);
     LegendaryHeroManager.Register(Ouro);
     LegendaryHeroManager.Register(Skeram);

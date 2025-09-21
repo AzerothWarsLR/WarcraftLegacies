@@ -13,16 +13,16 @@ public sealed class ObjectiveKillUnit : Objective
   /// </summary>
   public ObjectiveKillUnit(unit unitToKill)
   {
-    var trig = CreateTrigger();
-    TriggerRegisterUnitEvent(trig, unitToKill, EVENT_UNIT_DEATH);
-    TriggerAddAction(trig, OnUnitDeath);
+    var trig = trigger.Create();
+    trig.RegisterUnitEvent(unitToKill, unitevent.Death);
+    trig.AddAction(OnUnitDeath);
     Target = unitToKill;
     TargetWidget = Target;
     InitializeDescription();
-    DisplaysPosition = IsUnitType(Target, UNIT_TYPE_STRUCTURE) ||
-                       GetOwningPlayer(Target) == Player(PLAYER_NEUTRAL_AGGRESSIVE);
+    DisplaysPosition = Target.IsUnitType(unittype.Structure) ||
+                       Target.Owner == player.NeutralAggressive;
 
-    Position = new(GetUnitX(Target), GetUnitY(Target));
+    Position = new(Target.X, Target.Y);
   }
 
   /// <summary>
@@ -32,14 +32,14 @@ public sealed class ObjectiveKillUnit : Objective
 
   private void OnUnitDeath()
   {
-    Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(GetKillingUnit()))
+    Progress = IsPlayerOnSameTeamAsAnyEligibleFaction(@event.KillingUnit.Owner)
       ? QuestProgress.Complete
       : QuestProgress.Failed;
   }
 
   private void InitializeDescription()
   {
-    var killVerb = IsUnitType(Target, UNIT_TYPE_STRUCTURE) || IsUnitType(Target, UNIT_TYPE_ANCIENT)
+    var killVerb = Target.IsUnitType(unittype.Structure) || Target.IsUnitType(unittype.Ancient)
       ? "Destroy"
       : "Kill";
 

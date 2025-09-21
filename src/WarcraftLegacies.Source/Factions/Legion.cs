@@ -24,7 +24,7 @@ public sealed class Legion : Faction
   /// <inheritdoc />
 
   public Legion(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup) : base("Legion",
-    PLAYER_COLOR_PEANUT, @"ReplaceableTextures\CommandButtons\BTNKiljaedin.blp")
+    playercolor.Peanut, @"ReplaceableTextures\CommandButtons\BTNKiljaedin.blp")
   {
     TraditionalTeam = TeamSetup.Legion;
     _preplacedUnitSystem = preplacedUnitSystem;
@@ -89,7 +89,7 @@ public sealed class Legion : Faction
       {
         IconName = "achievement_raid_argusraid",
         Name = "Rematerialization",
-        EligibilityCondition = dyingUnit => GetOwningPlayer(dyingUnit).GetObjectLimit(GetUnitTypeId(dyingUnit)) != 0
+        EligibilityCondition = dyingUnit => dyingUnit.Owner.GetObjectLimit(dyingUnit.UnitType) != 0
       }));
   }
 

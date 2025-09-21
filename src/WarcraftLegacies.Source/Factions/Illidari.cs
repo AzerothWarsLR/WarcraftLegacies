@@ -22,7 +22,7 @@ public sealed class Illidari : Faction
   private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
-  public Illidari(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Illidan", PLAYER_COLOR_VIOLET,
+  public Illidari(AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) : base("Illidan", playercolor.Violet,
     @"ReplaceableTextures\CommandButtons\BTNEvilIllidan.blp")
   {
     TraditionalTeam = TeamSetup.Outland;

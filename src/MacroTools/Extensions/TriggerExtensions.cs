@@ -17,7 +17,7 @@ public static class TriggerExtensions
   {
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
-      TriggerRegisterPlayerChatEvent(whichTrigger, player, chatMessageToDetect, exactMatchOnly);
+      whichTrigger.RegisterPlayerChatEvent(player, chatMessageToDetect, exactMatchOnly);
     }
   }
 
@@ -28,7 +28,7 @@ public static class TriggerExtensions
   {
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
-      BlzTriggerRegisterPlayerKeyEvent(whichTrigger, player, key, metaKey, keyDown);
+      whichTrigger.RegisterPlayerKeyEvent(player, key, metaKey, keyDown);
     }
   }
 
@@ -37,7 +37,7 @@ public static class TriggerExtensions
   {
     foreach (var region in regions)
     {
-      TriggerRegisterEnterRegion(whichTrigger, region.Region, filter);
+      whichTrigger.RegisterEnterRegion(region.Region, filter);
     }
   }
 
@@ -46,7 +46,7 @@ public static class TriggerExtensions
   {
     foreach (var region in regions)
     {
-      TriggerRegisterLeaveRegion(whichTrigger, region.Region, filter);
+      whichTrigger.RegisterLeaveRegion(region.Region, filter);
     }
   }
 }

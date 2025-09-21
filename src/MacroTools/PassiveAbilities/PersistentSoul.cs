@@ -45,46 +45,44 @@ public sealed class PersistentSoul : PassiveAbility, IEffectOnDeath
   /// <inheritdoc/>
   public void OnDeath()
   {
-    var caster = GetTriggerUnit();
+    var caster = @event.Unit;
 
     foreach (var unit in GlobalGroup.EnumUnitsInRange(caster.GetPosition(), Radius)
                .Where(x => IsUnitReanimationCandidate(caster, x))
                .OrderByDescending(x => x.GetLevel())
                .ThenBy(x => MathEx.GetDistanceBetweenPoints(caster.GetPosition(), x.GetPosition()))
-               .Take(ReanimationCountLevel * GetUnitAbilityLevel(caster, _abilityTypeId)))
+               .Take(ReanimationCountLevel * caster.GetAbilityLevel(_abilityTypeId)))
     {
-      Reanimate(GetOwningPlayer(caster), unit);
+      Reanimate(caster.Owner, unit);
     }
   }
 
   private static bool IsUnitReanimationCandidate(unit caster, unit target) =>
-    !UnitAlive(target)
-    && !IsUnitType(target, UNIT_TYPE_MECHANICAL)
-    && !IsUnitType(target, UNIT_TYPE_STRUCTURE)
-    && !IsUnitType(target, UNIT_TYPE_HERO)
-    && !IsUnitType(target, UNIT_TYPE_SUMMONED)
-    && !IsUnitType(target, UNIT_TYPE_FLYING)
-    && !IsUnitType(target, UNIT_TYPE_RESISTANT)
-    && !IsUnitIllusion(target)
+    !target.Alive
+    && !target.IsUnitType(unittype.Mechanical)
+    && !target.IsUnitType(unittype.Structure)
+    && !target.IsUnitType(unittype.Hero)
+    && !target.IsUnitType(unittype.Summoned)
+    && !target.IsUnitType(unittype.Flying)
+    && !target.IsUnitType(unittype.Resistant)
+    && !target.IsIllusion
     && caster != target;
 
   private void Reanimate(player castingPlayer, unit whichUnit)
   {
     var whichUnitPosition = whichUnit.GetPosition();
 
-    EffectSystem.Add(AddSpecialEffect(@"Abilities\Spells\Undead\AnimateDead\AnimateDeadTarget.mdl", GetUnitX(whichUnit),
-      GetUnitY(whichUnit)));
+    EffectSystem.Add(effect.Create(@"Abilities\Spells\Undead\AnimateDead\AnimateDeadTarget.mdl", whichUnit.X, whichUnit.Y));
 
-    var reanimatedUnit = CreateUnit(castingPlayer, GetUnitTypeId(whichUnit), whichUnitPosition.X,
-        whichUnitPosition.Y, GetUnitFacing(whichUnit));
+    var reanimatedUnit = unit.Create(castingPlayer, whichUnit.UnitType, whichUnitPosition.X, whichUnitPosition.Y, whichUnit.Facing);
     reanimatedUnit.RemoveAllAbilities(new List<int> { 1096905835, 1097690998, 1112498531 });
     reanimatedUnit.SetTimedLife(Duration, BuffId);
-    SetUnitVertexColor(reanimatedUnit, 200, 50, 50, 255);
-    SetUnitExploded(reanimatedUnit, true);
-    UnitAddType(reanimatedUnit, UNIT_TYPE_UNDEAD);
-    UnitAddType(reanimatedUnit, UNIT_TYPE_SUMMONED);
+    reanimatedUnit.SetVertexColor(200, 50, 50, 255);
+    reanimatedUnit.SetExploded(true);
+    reanimatedUnit.AddType(unittype.Undead);
+    reanimatedUnit.AddType(unittype.Summoned);
 
-    RemoveUnit(whichUnit);
+    whichUnit.Dispose();
 
     reanimatedUnit.SetPosition(whichUnitPosition);
   }

@@ -12,8 +12,8 @@ public class KeyboardManager
   public KeyboardManager()
   {
     _keyHandlers = new Dictionary<player, Action<oskeytype, MetaKey, bool>>();
-    _keyTrigger = CreateTrigger();
-    TriggerAddAction(_keyTrigger, OnKeyEvent);
+    _keyTrigger = trigger.Create();
+    _keyTrigger.AddAction(OnKeyEvent);
   }
 
   public void RegisterKeyboardEvents(player whichPlayer, Action<oskeytype, MetaKey, bool> handler)
@@ -30,9 +30,9 @@ public class KeyboardManager
 
     for (var keyCode = 8; keyCode <= 255; keyCode++)
     {
-      var osKey = ConvertOsKeyType(keyCode);
-      BlzTriggerRegisterPlayerKeyEvent(_keyTrigger, whichPlayer, osKey, 0, true);
-      BlzTriggerRegisterPlayerKeyEvent(_keyTrigger, whichPlayer, osKey, 0, false);
+      var osKey = oskeytype.Convert(keyCode);
+      _keyTrigger.RegisterPlayerKeyEvent(whichPlayer, osKey, 0, true);
+      _keyTrigger.RegisterPlayerKeyEvent(whichPlayer, osKey, 0, false);
     }
 
     _keyHandlers[whichPlayer] = handler;
@@ -42,12 +42,12 @@ public class KeyboardManager
   {
     try
     {
-      var triggerPlayer = GetTriggerPlayer();
+      var triggerPlayer = @event.Player;
       if (_keyHandlers.TryGetValue(triggerPlayer, out var handler))
       {
-        var key = BlzGetTriggerPlayerKey();
-        var metaKey = BlzGetTriggerPlayerMetaKey();
-        var isKeyDown = BlzGetTriggerPlayerIsKeyDown();
+        var key = @event.PlayerKey;
+        var metaKey = @event.PlayerMetaKey;
+        var isKeyDown = @event.PlayerIsKeyDown;
 
         handler(key, metaKey, isKeyDown);
       }
@@ -102,24 +102,24 @@ public class HeroHotkeyManager
 
   private void OnKeyEvent(oskeytype key, MetaKey metaKey, bool isKeyDown)
   {
-    if (isKeyDown && key == OSKEY_F4)
+    if (isKeyDown && key == oskeytype.F4)
     {
-      SelectFourthHero(GetTriggerPlayer());
+      SelectFourthHero(@event.Player);
     }
   }
 
   private void SelectFourthHero(player whichPlayer)
   {
-    var heroGroup = CreateGroup();
-    GroupEnumUnitsOfPlayer(heroGroup, whichPlayer, null);
+    var heroGroup = group.Create();
+    heroGroup.EnumUnitsOfPlayer(whichPlayer, null);
 
     var heroCount = 0;
     unit fourthHero = null;
 
-    var firstOfGroup = FirstOfGroup(heroGroup);
+    var firstOfGroup = heroGroup.First;
     while (firstOfGroup != null)
     {
-      if (IsUnitType(firstOfGroup, UNIT_TYPE_HERO))
+      if (firstOfGroup.IsUnitType(unittype.Hero))
       {
         heroCount++;
         if (heroCount == 4)
@@ -128,42 +128,42 @@ public class HeroHotkeyManager
           break;
         }
       }
-      GroupRemoveUnit(heroGroup, firstOfGroup);
-      firstOfGroup = FirstOfGroup(heroGroup);
+      heroGroup.Remove(firstOfGroup);
+      firstOfGroup = heroGroup.First;
     }
 
-    DestroyGroup(heroGroup);
+    heroGroup.Dispose();
 
     if (fourthHero != null)
     {
-      var wasAlreadySelected = IsUnitSelected(fourthHero, whichPlayer);
+      var wasAlreadySelected = fourthHero.IsSelectedTo(whichPlayer);
 
       if (wasAlreadySelected)
       {
-        if (whichPlayer == GetLocalPlayer())
+        if (whichPlayer == player.LocalPlayer)
         {
-          SetCameraPosition(GetUnitX(fourthHero), GetUnitY(fourthHero));
+          SetCameraPosition(fourthHero.X, fourthHero.Y);
         }
       }
       else
       {
-        var selectedGroup = CreateGroup();
-        GroupEnumUnitsSelected(selectedGroup, whichPlayer, null);
+        var selectedGroup = group.Create();
+        selectedGroup.EnumUnitsSelected(whichPlayer, null);
 
-        firstOfGroup = FirstOfGroup(selectedGroup);
+        firstOfGroup = selectedGroup.First;
         while (firstOfGroup != null)
         {
-          if (IsUnitSelected(firstOfGroup, whichPlayer))
+          if (firstOfGroup.IsSelectedTo(whichPlayer))
           {
-            SelectUnit(firstOfGroup, false);
+            firstOfGroup.Select(false);
           }
-          GroupRemoveUnit(selectedGroup, firstOfGroup);
-          firstOfGroup = FirstOfGroup(selectedGroup);
+          selectedGroup.Remove(firstOfGroup);
+          firstOfGroup = selectedGroup.First;
         }
-        DestroyGroup(selectedGroup);
-        if (whichPlayer == GetLocalPlayer())
+        selectedGroup.Dispose();
+        if (whichPlayer == player.LocalPlayer)
         {
-          SelectUnit(fourthHero, true);
+          fourthHero.Select(true);
         }
       }
     }

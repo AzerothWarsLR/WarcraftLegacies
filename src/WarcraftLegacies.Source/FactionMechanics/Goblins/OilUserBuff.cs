@@ -25,30 +25,30 @@ public sealed class OilUserBuff : PassiveBuff
 
   private void OnOilAmountChanged(object? sender, OilPower oilPower)
   {
-    SetUnitState(Target, UNIT_STATE_MANA, _oilPower.Amount);
+    Target.Mana = _oilPower.Amount;
   }
 
   private void OnCast()
   {
-    var triggerUnit = GetTriggerUnit();
-    var triggerSpell = GetSpellAbilityId();
+    var triggerUnit = @event.Unit;
+    var triggerSpell = @event.SpellAbilityId;
     var manaCost =
-      BlzGetUnitAbilityManaCost(triggerUnit, triggerSpell, GetUnitAbilityLevel(triggerUnit, triggerSpell) - 1);
+      triggerUnit.GetAbilityManaCost(triggerSpell, triggerUnit.GetAbilityLevel(triggerSpell) - 1);
     _oilPower.Amount -= manaCost;
-    SetUnitState(Target, UNIT_STATE_MANA, _oilPower.Amount);
+    Target.Mana = _oilPower.Amount;
   }
 
   public override void OnApply()
   {
-    _castTrigger = CreateTrigger();
-    TriggerRegisterUnitEvent(_castTrigger, Target, EVENT_UNIT_SPELL_EFFECT);
-    TriggerAddAction(_castTrigger, OnCast);
-    SetUnitState(Target, UNIT_STATE_MANA, _oilPower.Amount);
+    _castTrigger = trigger.Create();
+    _castTrigger.RegisterUnitEvent(Target, unitevent.SpellEffect);
+    _castTrigger.AddAction(OnCast);
+    Target.Mana = _oilPower.Amount;
   }
 
   public override void OnDispose()
   {
-    DestroyTrigger(_castTrigger);
+    _castTrigger.Dispose();
     _oilPower.AmountChanged -= OnOilAmountChanged;
   }
 }

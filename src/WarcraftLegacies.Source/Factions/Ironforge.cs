@@ -20,7 +20,7 @@ public sealed class Ironforge : Faction
   /// <inheritdoc />
 
   public Ironforge(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup)
-    : base("Ironforge", PLAYER_COLOR_YELLOW, @"ReplaceableTextures\CommandButtons\BTNHeroMountainKing.blp")
+    : base("Ironforge", playercolor.Yellow, @"ReplaceableTextures\CommandButtons\BTNHeroMountainKing.blp")
   {
     TraditionalTeam = TeamSetup.SouthAlliance;
     _preplacedUnitSystem = preplacedUnitSystem;

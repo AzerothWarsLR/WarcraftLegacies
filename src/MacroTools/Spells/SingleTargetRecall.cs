@@ -14,6 +14,6 @@ public sealed class SingleTargetRecall : Spell
 
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    SetUnitPosition(target, GetUnitX(caster), GetUnitY(caster));
+    target.SetPosition(caster.X, caster.Y);
   }
 }

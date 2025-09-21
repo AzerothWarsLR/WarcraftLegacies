@@ -17,14 +17,14 @@ public static class GroupExtensions
   public static List<unit> EmptyToList(this group whichGroup)
   {
     var list = new List<unit>();
-    var firstOfGroup = FirstOfGroup(whichGroup);
+    var firstOfGroup = whichGroup.First;
     while (firstOfGroup != null)
     {
       list.Add(firstOfGroup);
-      GroupRemoveUnit(whichGroup, firstOfGroup);
-      firstOfGroup = FirstOfGroup(whichGroup);
+      whichGroup.Remove(firstOfGroup);
+      firstOfGroup = whichGroup.First;
     }
-    DestroyGroup(whichGroup);
+    whichGroup.Dispose();
     return list;
   }
 
@@ -34,8 +34,8 @@ public static class GroupExtensions
   [Obsolete("Use GlobalGroup class instead; it is more performant.")]
   public static group Copy(this group sourceGroup)
   {
-    var newGroup = CreateGroup();
-    BlzGroupAddGroupFast(sourceGroup, newGroup);
+    var newGroup = group.Create();
+    sourceGroup.Add(newGroup);
     return newGroup;
   }
 }

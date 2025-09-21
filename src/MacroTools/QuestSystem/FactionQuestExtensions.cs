@@ -13,9 +13,9 @@ public static class FactionQuestExtensions
   {
     var soundCompleted = SoundLibrary.Completed;
     var soundFailed = SoundLibrary.Failed;
-    StartSound(GetLocalPlayer().GetTeam()?.Contains(whichPlayer) == true
-      ? soundCompleted
-      : soundFailed);
+    (player.LocalPlayer.GetTeam()?.Contains(whichPlayer) == true
+       ? soundCompleted
+       : soundFailed).Start();
 
     foreach (var enumPlayer in WCSharp.Shared.Util.EnumeratePlayers())
     {
@@ -23,8 +23,7 @@ public static class FactionQuestExtensions
       {
         if (PlayerData.ByHandle(whichPlayer).PlayerSettings.ShowQuestText)
         {
-          DisplayTextToPlayer(enumPlayer, 0, 0,
-            $"\n|cffffcc00MAJOR EVENT - {whichPlayer.GetFaction()?.PrefixCol}{questData.Title}|r\n{questData.RewardFlavour}\n");
+          enumPlayer.DisplayTextTo($"\n|cffffcc00MAJOR EVENT - {whichPlayer.GetFaction()?.PrefixCol}{questData.Title}|r\n{questData.RewardFlavour}\n", 0, 0);
         }
       }
     }
@@ -51,7 +50,7 @@ public static class FactionQuestExtensions
 
     if (faction.Player != null && faction.Player.GetPlayerSettings().ShowQuestText)
     {
-      DisplayTextToPlayer(faction.Player, 0, 0, display);
+      faction.Player.DisplayTextTo(display, 0, 0);
     }
 
     faction.Player?.PlaySound(SoundLibrary.Failed);
@@ -70,7 +69,7 @@ public static class FactionQuestExtensions
 
     if (faction.Player != null && faction.Player.GetPlayerSettings().ShowQuestText)
     {
-      DisplayTextToPlayer(faction.Player, 0, 0, display);
+      faction.Player.DisplayTextTo(display, 0, 0);
     }
 
     faction.Player?.PlaySound(SoundLibrary.Completed);
@@ -100,7 +99,7 @@ public static class FactionQuestExtensions
 
     if (faction.Player != null && faction.Player.GetPlayerSettings().ShowQuestText)
     {
-      DisplayTextToPlayer(faction.Player, 0, 0, display);
+      faction.Player.DisplayTextTo(display, 0, 0);
     }
 
     var sound = SoundLibrary.Discovered;

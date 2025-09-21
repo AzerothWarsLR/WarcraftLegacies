@@ -12,30 +12,30 @@ public static class FloatingTextSetup
   /// <param name="fontSize">How large the floating text should be.</param>
   public static void Setup(float delay, int fontSize)
   {
-    var timer = CreateTimer();
-    TimerStart(timer, delay, false, () =>
+    timer timer = timer.Create();
+    timer.Start(delay, false, () =>
     {
-      var eastToWest = CreateTextTag();
-      SetTextTagText(eastToWest, "To the west of Kalimdor", fontSize);
-      SetTextTagPos(eastToWest, Regions.East_of_Azeroth.Center.X, Regions.East_of_Azeroth.Center.Y, 0);
-      SetTextTagColor(eastToWest, 255, 255, 255, 0);
+      var eastToWest = texttag.Create();
+      eastToWest.SetText("To the west of Kalimdor", fontSize);
+      eastToWest.SetPosition(Regions.East_of_Azeroth.Center.X, Regions.East_of_Azeroth.Center.Y, 0);
+      eastToWest.SetColor(255, 255, 255, 0);
 
-      var westToEast = CreateTextTag();
-      SetTextTagText(westToEast, "To the east of Azeroth", fontSize);
-      SetTextTagPos(westToEast, Regions.West_of_Kalimdor.Center.X, Regions.West_of_Kalimdor.Center.Y, 0);
-      SetTextTagColor(westToEast, 255, 255, 255, 0);
+      var westToEast = texttag.Create();
+      westToEast.SetText("To the east of Azeroth", fontSize);
+      westToEast.SetPosition(Regions.West_of_Kalimdor.Center.X, Regions.West_of_Kalimdor.Center.Y, 0);
+      westToEast.SetColor(255, 255, 255, 0);
 
-      var legionNorth = CreateTextTag();
-      SetTextTagText(legionNorth, "To Northrend", fontSize);
-      SetTextTagPos(legionNorth, 22939, -29345, 0);
-      SetTextTagColor(legionNorth, 255, 255, 255, 0);
+      var legionNorth = texttag.Create();
+      legionNorth.SetText("To Northrend", fontSize);
+      legionNorth.SetPosition(22939, -29345, 0);
+      legionNorth.SetColor(255, 255, 255, 0);
 
-      var legionAlterac = CreateTextTag();
-      SetTextTagText(legionAlterac, "To Alterac", fontSize);
-      SetTextTagPos(legionAlterac, 23536, -29975, 0);
-      SetTextTagColor(legionAlterac, 255, 255, 255, 0);
+      var legionAlterac = texttag.Create();
+      legionAlterac.SetText("To Alterac", fontSize);
+      legionAlterac.SetPosition(23536, -29975, 0);
+      legionAlterac.SetColor(255, 255, 255, 0);
 
-      DestroyTimer(GetExpiredTimer());
+      @event.ExpiredTimer.Dispose();
     });
   }
 }

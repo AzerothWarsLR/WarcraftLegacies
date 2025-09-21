@@ -37,7 +37,7 @@ public sealed class QuestThunderEagle : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
+    completingFaction.Player.SetTechResearched(ResearchId, 1);
     completingFaction.Player?.DisplayUnitTypeAcquired(ThunderEagleId,
       "You can now train Thunder Eagles at the High Tower.");
   }

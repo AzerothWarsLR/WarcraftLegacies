@@ -14,6 +14,6 @@ public sealed class GoldOnCast : Spell
 
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    GetOwningPlayer(caster).AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, GoldToGrant);
+    caster.Owner.AdjustPlayerState(playerstate.ResourceGold, GoldToGrant);
   }
 }

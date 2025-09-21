@@ -69,9 +69,9 @@ public sealed class PhantomStep : Spell
       var casterLevel = GetAbilityLevel(caster);
       var illusionCount = IllusionCountBase + (IllusionCountPerLevel * (casterLevel - 1));
       var effectScale = EffectScaleBase + (EffectScalePerLevel * (casterLevel - 1));
-      var effect = AddSpecialEffect(CasterEffect, GetUnitX(caster), GetUnitY(caster));
-      BlzSetSpecialEffectScale(effect, effectScale);
-      DestroyEffect(effect);
+      effect effect = effect.Create(CasterEffect, caster.X, caster.Y);
+      effect.Scale = effectScale;
+      effect.Dispose();
       for (var i = 0; i < illusionCount; i++)
       {
         DummyCasterManager.GetGlobalDummyCaster()

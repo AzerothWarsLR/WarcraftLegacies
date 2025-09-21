@@ -6,7 +6,7 @@ public static class PlayerResourceExtensions
   /// Increases or decreases a specific player state for the player.
   /// </summary>
   public static void AdjustPlayerState(this player player, playerstate playerState, int value) =>
-    SetPlayerState(player, playerState, GetPlayerState(player, playerState) + value);
+    player.SetState(playerState, player.GetState(playerState) + value);
 
   /// <summary>Adds an amount of gold to a player.</summary>
   public static void AddGold(this player player, float gold) => PlayerData.ByHandle(player).AddGold(gold);
@@ -21,19 +21,19 @@ public static class PlayerResourceExtensions
   /// Returns the amount of food the player is using.
   /// </summary>
   public static int GetFoodUsed(this player whichPlayer) =>
-    GetPlayerState(whichPlayer, PLAYER_STATE_RESOURCE_FOOD_USED);
+    whichPlayer.GetState(playerstate.ResourceFoodUsed);
 
   /// <summary>
   /// Returns the player's food cap.
   /// </summary>
   public static int GetFoodCap(this player whichPlayer) =>
-    GetPlayerState(whichPlayer, PLAYER_STATE_RESOURCE_FOOD_CAP);
+    whichPlayer.GetState(playerstate.ResourceFoodCap);
 
   /// <summary>
   /// Returns player's food cap ceiling.
   /// </summary>
   public static int GetFoodCapCeiling(this player whichPlayer) =>
-    GetPlayerState(whichPlayer, PLAYER_STATE_FOOD_CAP_CEILING);
+    whichPlayer.GetState(playerstate.FoodCapCeiling);
 
   /// <summary>Removes all of the player's resources.</summary>
   public static player RemoveAllResources(this player whichPlayer)

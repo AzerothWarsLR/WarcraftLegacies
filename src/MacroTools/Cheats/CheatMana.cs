@@ -57,9 +57,9 @@ public sealed class CheatMana : Command
 
   private static void Spell()
   {
-    if (_playersWithCheat.Contains(GetTriggerPlayer()))
+    if (_playersWithCheat.Contains(@event.Player))
     {
-      SetUnitState(GetTriggerUnit(), UNIT_STATE_MANA, GetUnitState(GetTriggerUnit(), UNIT_STATE_MAX_MANA));
+      @event.Unit.Mana = @event.Unit.MaxMana;
     }
   }
 }

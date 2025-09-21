@@ -24,6 +24,6 @@ public sealed class CheatResearchLevel : Command
   public override string Execute(player cheater, params string[] parameters)
   {
     var obj = FourCC(parameters[0]);
-    return "Level of research " + GetObjectName(obj) + ": " + I2S(GetPlayerTechCount(cheater, obj, true));
+    return "Level of research " + GetObjectName(obj) + ": " + I2S(cheater.GetTechResearched(obj, true));
   }
 }

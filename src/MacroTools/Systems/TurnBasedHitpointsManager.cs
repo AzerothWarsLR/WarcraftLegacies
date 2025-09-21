@@ -17,13 +17,13 @@ public static class TurnBasedHitpointsManager
   {
     if (_unitData.ContainsKey(whichUnit))
     {
-      throw new InvalidOperationException($"Tried to register {GetUnitName(whichUnit)} to {nameof(TurnBasedHitpointsManager)}, but it's already registered.");
+      throw new InvalidOperationException($"Tried to register {whichUnit.Name} to {nameof(TurnBasedHitpointsManager)}, but it's already registered.");
     }
 
     _unitData.Add(whichUnit, new TurnBasedHitpointData
     {
       HitPointPercentagePerTurn = hitPointPercentagePerTurn,
-      BaseHitPoints = BlzGetUnitMaxHP(whichUnit)
+      BaseHitPoints = whichUnit.MaxLife
     });
     if (_intialized)
     {
@@ -50,11 +50,11 @@ public static class TurnBasedHitpointsManager
       var bonusPercentage = turnBasedHitpointData.HitPointPercentagePerTurn * turn;
       var bonusHitPoints = (int)Math.Ceiling(turnBasedHitpointData.BaseHitPoints * bonusPercentage);
       var value = turnBasedHitpointData.BaseHitPoints + bonusHitPoints;
-      BlzSetUnitMaxHP(unit, value);
+      unit.MaxLife = value;
 
       var heal = turnBasedHitpointData.BaseHitPoints * turnBasedHitpointData.HitPointPercentagePerTurn;
-      var value1 = (int)Math.Ceiling(GetUnitState(unit, UNIT_STATE_LIFE) + heal);
-      SetUnitState(unit, UNIT_STATE_LIFE, value1);
+      var value1 = (int)Math.Ceiling(unit.Life + heal);
+      unit.Life = value1;
     }
 
     if (turn >= TurnLimit)

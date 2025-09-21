@@ -32,18 +32,18 @@ public sealed class CommandManager
   {
     _registeredCommands.Add(command);
     command.OnRegister();
-    var trigger = CreateTrigger();
+    trigger trigger = trigger.Create();
     trigger.RegisterSharedChatEvent($"{Prefix}{command.CommandText}", command.ExpectedParameterCount.Maximum == 0);
-    TriggerAddAction(trigger, () =>
+    trigger.AddAction(() =>
     {
       try
       {
-        if (command.Type == CommandType.Cheat && !TestMode.CheatCondition(GetTriggerPlayer()))
+        if (command.Type == CommandType.Cheat && !TestMode.CheatCondition(@event.Player))
         {
           return;
         }
 
-        var enteredChatString = GetEventPlayerChatString();
+        var enteredChatString = @event.PlayerChatString;
         if (!EnteredCommandEndsWithSpaceOrNothing(command, enteredChatString))
         {
           return;
@@ -53,14 +53,12 @@ public sealed class CommandManager
 
         if (parameters.Length < command.ExpectedParameterCount.Minimum)
         {
-          DisplayTextToPlayer(GetTriggerPlayer(), 0, 0,
-            $"|{CommandColor}{command.CommandText}:|r You must supply at least {command.ExpectedParameterCount.Minimum} parameters. If you're trying to use a parameter with multiple words, try enclosing it in quotes.");
+          @event.Player.DisplayTextTo($"|{CommandColor}{command.CommandText}:|r You must supply at least {command.ExpectedParameterCount.Minimum} parameters. If you're trying to use a parameter with multiple words, try enclosing it in quotes.", 0, 0);
           return;
         }
 
-        var message = command.Execute(GetTriggerPlayer(), parameters);
-        DisplayTextToPlayer(GetTriggerPlayer(), 0, 0,
-          command.Type == CommandType.Cheat ? $"|{CommandColor}CHEAT:|r {message}" : $"|{CommandColor}{command.CommandText}:|r {message}");
+        var message = command.Execute(@event.Player, parameters);
+        @event.Player.DisplayTextTo(command.Type == CommandType.Cheat ? $"|{CommandColor}CHEAT:|r {message}" : $"|{CommandColor}{command.CommandText}:|r {message}", 0, 0);
       }
       catch (Exception ex)
       {
@@ -72,15 +70,15 @@ public sealed class CommandManager
   /// <summary>Creates a dummy quest that players can read to see the available commands.</summary>
   public void CreateInfoQuest()
   {
-    var commandQuest = CreateQuest();
-    QuestSetTitle(commandQuest, "Commands");
-    QuestSetIconPath(commandQuest, @"ReplaceableTextures\CommandButtons\BTNDizzy.blp");
-    QuestSetEnabled(commandQuest, true);
-    QuestSetRequired(commandQuest, false);
+    var commandQuest = quest.Create();
+    commandQuest.SetTitle("Commands");
+    commandQuest.SetIcon(@"ReplaceableTextures\CommandButtons\BTNDizzy.blp");
+    commandQuest.IsEnabled = true;
+    commandQuest.IsRequired = false;
     var description = _registeredCommands.Where(x => x.Type == CommandType.Normal).Aggregate("",
       (current, command) => $"{current} -{command.CommandText}: {command.Description}\n");
 
-    QuestSetDescription(commandQuest, description);
+    commandQuest.SetDescription(description);
   }
 
   private static bool EnteredCommandEndsWithSpaceOrNothing(Command command, string enteredChatString)

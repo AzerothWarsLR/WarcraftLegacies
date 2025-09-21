@@ -42,8 +42,8 @@ public sealed class QuestZulgurub : QuestData
   {
     if (completingFaction.Player != null)
     {
-      SetPlayerTechResearched(completingFaction.Player, ZulgurubResearch, 1);
-      completingFaction.Player.AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, _goldReward);
+      completingFaction.Player.SetTechResearched(ZulgurubResearch, 1);
+      completingFaction.Player.AdjustPlayerState(playerstate.ResourceGold, _goldReward);
     }
   }
 

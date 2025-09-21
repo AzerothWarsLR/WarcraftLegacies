@@ -31,7 +31,7 @@ public sealed class Ascendance : Spell
                .EnumUnitsInRange(caster.GetPosition(), Radius)
              )
     {
-      if (IsPlayerAlly(GetOwningPlayer(caster), GetOwningPlayer(unit)))
+      if (caster.Owner.IsAlly(unit.Owner))
       {
         unit.Heal(HealBase + HealLevel * GetAbilityLevel(caster));
       }

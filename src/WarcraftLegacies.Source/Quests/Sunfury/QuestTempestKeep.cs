@@ -43,7 +43,7 @@ public sealed class QuestTempestKeep : QuestData
   protected override void OnFail(Faction completingFaction)
   {
     var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      ? player.NeutralAggressive
       : completingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);
@@ -58,7 +58,7 @@ public sealed class QuestTempestKeep : QuestData
     }
     else
     {
-      Player(PLAYER_NEUTRAL_AGGRESSIVE).RescueGroup(_rescueUnits);
+      player.NeutralAggressive.RescueGroup(_rescueUnits);
     }
   }
 

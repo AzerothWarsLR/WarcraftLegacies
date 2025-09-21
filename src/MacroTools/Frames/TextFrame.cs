@@ -4,8 +4,8 @@ public sealed class TextFrame : Frame
 {
   public string Text
   {
-    get => BlzFrameGetText(Handle);
-    set => BlzFrameSetText(Handle, value);
+    get => Handle.Text;
+    set => Handle.Text = value;
   }
 
   public TextFrame(string name, Frame parent, int priority) : base(name, parent, priority)

@@ -54,9 +54,8 @@ public sealed class VengeanceBuff : PassiveBuff
 
   private void OnInflictsDamage()
   {
-    var isAttackerAlliedToVictim = GetPlayerAlliance(GetOwningPlayer(GetEventDamageSource()),
-      GetOwningPlayer(GetTriggerUnit()), ALLIANCE_PASSIVE);
-    if (!BlzGetEventIsAttack() || isAttackerAlliedToVictim)
+    var isAttackerAlliedToVictim = @event.DamageSource.Owner.GetAlliance(@event.Unit.Owner, alliancetype.Passive);
+    if (!@event.IsAttack || isAttackerAlliedToVictim)
     {
       return;
     }
@@ -71,27 +70,27 @@ public sealed class VengeanceBuff : PassiveBuff
   /// <inheritdoc />
   public override void OnApply()
   {
-    OriginalFormId = GetUnitTypeId(Target);
-    BlzSetUnitSkin(Target, AlternateFormId);
-    DestroyEffect(AddSpecialEffect(ReviveEffect, GetUnitX(Target), GetUnitY(Target)));
-    SetUnitState(Target, UNIT_STATE_LIFE, Heal);
-    BlzSetUnitBaseDamage(Target, BlzGetUnitBaseDamage(Target, 0) + BonusDamage, 0);
+    OriginalFormId = Target.UnitType;
+    Target.Skin = AlternateFormId;
+    effect.Create(ReviveEffect, Target.X, Target.Y).Dispose();
+    Target.Life = Heal;
+    Target.AttackBaseDamage1 = Target.AttackBaseDamage1 + BonusDamage;
     PlayerUnitEvents.Register(UnitTypeEvent.Damaging, OnInflictsDamage, OriginalFormId);
   }
 
   /// <inheritdoc />
   public override void OnDispose()
   {
-    BlzSetUnitBaseDamage(Target, BlzGetUnitBaseDamage(Target, 0) - BonusDamage, 0);
-    BlzSetUnitSkin(Caster, OriginalFormId);
+    Target.AttackBaseDamage1 = Target.AttackBaseDamage1 - BonusDamage;
+    Caster.Skin = OriginalFormId;
     PlayerUnitEvents.Unregister(UnitTypeEvent.Damaging, OnInflictsDamage, OriginalFormId);
     if (HitsDone >= HitsReviveThreshold)
     {
-      DestroyEffect(AddSpecialEffect(ReviveEffect, GetUnitX(Caster), GetUnitY(Caster)));
+      effect.Create(ReviveEffect, Caster.X, Caster.Y).Dispose();
     }
     else
     {
-      KillUnit(Caster);
+      Caster.Kill();
     }
   }
 }

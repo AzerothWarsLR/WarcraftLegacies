@@ -14,30 +14,30 @@ public sealed class AddAbilityOnLearn : Spell
 
   public AddAbilityOnLearn(int id) : base(id)
   {
-    var trig = CreateTrigger();
+    var trig = trigger.Create();
 
     for (var i = 0; i < 24; i++)
     {
-      var player = Player(i);
-      if (GetPlayerController(player) == MAP_CONTROL_USER)
+      player player = player.Create(i);
+      if (player.Controller == mapcontrol.User)
       {
-        TriggerRegisterPlayerUnitEvent(trig, player, EVENT_PLAYER_HERO_SKILL, null);
+        trig.RegisterPlayerUnitEvent(player, playerunitevent.HeroSkill, null);
       }
     }
 
-    TriggerAddAction(trig, OnAbilityLearned);
+    trig.AddAction(OnAbilityLearned);
   }
 
   private void OnAbilityLearned()
   {
-    var learningUnit = GetTriggerUnit();
+    var learningUnit = @event.Unit;
 
-    if (GetUnitTypeId(learningUnit) != UnitTypeId)
+    if (learningUnit.UnitType != UnitTypeId)
     {
       return;
     }
 
-    if (GetLearnedSkill() != TargetAbilityId)
+    if (@event.LearnedSkill != TargetAbilityId)
     {
       return;
     }
@@ -47,13 +47,13 @@ public sealed class AddAbilityOnLearn : Spell
 
   private void AddOrUpdateAbility(unit whichUnit)
   {
-    var targetLevel = GetUnitAbilityLevel(whichUnit, TargetAbilityId);
+    var targetLevel = whichUnit.GetAbilityLevel(TargetAbilityId);
 
-    if (GetUnitAbilityLevel(whichUnit, AbilityToAddId) == 0)
+    if (whichUnit.GetAbilityLevel(AbilityToAddId) == 0)
     {
-      UnitAddAbility(whichUnit, AbilityToAddId);
+      whichUnit.AddAbility(AbilityToAddId);
     }
 
-    SetUnitAbilityLevel(whichUnit, AbilityToAddId, targetLevel);
+    whichUnit.SetAbilityLevel(AbilityToAddId, targetLevel);
   }
 }

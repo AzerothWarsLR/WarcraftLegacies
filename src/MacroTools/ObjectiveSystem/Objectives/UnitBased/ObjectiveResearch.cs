@@ -27,7 +27,7 @@ public sealed class ObjectiveResearch : Objective
   {
     try
     {
-      if (EligibleFactions.Contains(GetOwningPlayer(GetTriggerUnit())))
+      if (EligibleFactions.Contains(@event.Unit.Owner))
       {
         Progress = QuestProgress.Complete;
       }

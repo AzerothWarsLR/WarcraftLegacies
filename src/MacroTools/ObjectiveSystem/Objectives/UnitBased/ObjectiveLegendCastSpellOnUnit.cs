@@ -25,12 +25,12 @@ public sealed class ObjectiveLegendCastSpellOnUnit : Objective
     _spellId = spellId;
     _target = target;
     PlayerUnitEvents.Register(SpellEvent.Effect, OnCast, spellId);
-    Description = $"{caster.Name} has casted {GetObjectName(spellId)} on {GetUnitName(target)}";
+    Description = $"{caster.Name} has casted {GetObjectName(spellId)} on {target.Name}";
   }
 
   private void OnCast()
   {
-    if (GetTriggerUnit() == _caster.Unit && GetSpellTargetUnit() == _target && GetSpellAbilityId() == _spellId)
+    if (@event.Unit == _caster.Unit && @event.SpellTargetUnit == _target && @event.SpellAbilityId == _spellId)
     {
       Progress = QuestProgress.Complete;
     }

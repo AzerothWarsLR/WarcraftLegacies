@@ -30,22 +30,22 @@ public sealed class ScourgeInvasionDialogPresenter : ChoiceDialogPresenter<Scour
     const float degreesToRadians = (float)(Math.PI / 180);
 
     var unitsToTeleport = GlobalGroup.EnumUnitsInRect(Regions.Northrend_Ambiance)
-      .Where(x => GetOwningPlayer(x) == pickingPlayer)
-      .Where(unit => !IsUnitType(unit, UNIT_TYPE_STRUCTURE) &&
-                     !IsUnitType(unit, UNIT_TYPE_ANCIENT) &&
-                     !IsUnitType(unit, UNIT_TYPE_PEON) &&
-                     GetResourceAmount(unit) == 0 &&
-                     GetUnitCurrentOrder(unit) != ORDER_HARVEST);
+      .Where(x => x.Owner == pickingPlayer)
+      .Where(unit => !unit.IsUnitType(unittype.Structure) &&
+                     !unit.IsUnitType(unittype.Ancient) &&
+                     !unit.IsUnitType(unittype.Peon) &&
+                     unit.ResourceAmount == 0 &&
+                     unit.CurrentOrder != ORDER_HARVEST);
 
     foreach (var unit in unitsToTeleport)
     {
       var x = center.X + spreadRadius * (float)Math.Cos(angle * degreesToRadians);
       var y = center.Y + spreadRadius * (float)Math.Sin(angle * degreesToRadians);
-      SetUnitPosition(unit, x, y);
+      unit.SetPosition(x, y);
 
-      if (IsUnitType(unit, UNIT_TYPE_SUMMONED) && choice.AttackTarget != null)
+      if (unit.IsUnitType(unittype.Summoned) && choice.AttackTarget != null)
       {
-        IssuePointOrder(unit, "attack", choice.AttackTarget.X, choice.AttackTarget.Y);
+        unit.IssueOrder("attack", choice.AttackTarget.X, choice.AttackTarget.Y);
       }
 
       angle += angleStep;

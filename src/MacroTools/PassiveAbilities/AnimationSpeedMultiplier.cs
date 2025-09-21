@@ -13,6 +13,6 @@ public sealed class AnimationSpeedMultiplier : PassiveAbility, IEffectOnConstruc
 
   public void OnConstruction()
   {
-    SetUnitTimeScale(GetConstructedStructure(), _multiplier);
+    @event.ConstructedStructure.SetTimeScale(_multiplier);
   }
 }

@@ -25,22 +25,22 @@ public sealed class UnitsStealMana : Power
   /// <inheritdoc />
   public override void OnAdd(player whichPlayer)
   {
-    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerDealsDamage, OnDealDamage, GetPlayerId(whichPlayer));
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerDealsDamage, OnDealDamage, whichPlayer.Id);
   }
 
   /// <inheritdoc />
   public override void OnRemove(player whichPlayer)
   {
-    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerDealsDamage, OnDealDamage, GetPlayerId(whichPlayer));
+    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerDealsDamage, OnDealDamage, whichPlayer.Id);
   }
 
   private void OnDealDamage()
   {
-    if (!BlzGetEventIsAttack())
+    if (!@event.IsAttack)
     {
       return;
     }
 
-    GetEventDamageSource().RestoreMana(GetEventDamage() * _manaPerDamage);
+    @event.DamageSource.RestoreMana(@event.Damage * _manaPerDamage);
   }
 }

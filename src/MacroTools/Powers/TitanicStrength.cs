@@ -16,20 +16,20 @@ public sealed class TitanicStrength : Power
 
   public override void OnAdd(player whichPlayer)
   {
-    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerFinishesTraining, OnUnitTrain, GetPlayerId(whichPlayer));
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerFinishesTraining, OnUnitTrain, whichPlayer.Id);
   }
 
   public override void OnRemove(player whichPlayer)
   {
-    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerFinishesTraining, OnUnitTrain, GetPlayerId(whichPlayer));
+    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerFinishesTraining, OnUnitTrain, whichPlayer.Id);
   }
 
   private void OnUnitTrain()
   {
-    var trainedUnit = GetTrainedUnit();
-    var bonus = (int)(1 + BlzGetUnitMaxHP(trainedUnit) * (_percentageOfHitPoints / 100));
+    var trainedUnit = @event.TrainedUnit;
+    var bonus = (int)(1 + trainedUnit.MaxLife * (_percentageOfHitPoints / 100));
 
-    BlzSetUnitBaseDamage(trainedUnit, BlzGetUnitBaseDamage(trainedUnit, 0) + bonus, 0);
-    BlzSetUnitBaseDamage(trainedUnit, BlzGetUnitBaseDamage(trainedUnit, 1) + bonus, 1);
+    trainedUnit.AttackBaseDamage1 = trainedUnit.AttackBaseDamage1 + bonus;
+    trainedUnit.AttackBaseDamage2 = trainedUnit.AttackBaseDamage2 + bonus;
   }
 }

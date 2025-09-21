@@ -35,15 +35,15 @@ public sealed class QuestRebuildAhnqiraj : QuestData
       return;
     }
 
-    SetUnitInvulnerable(_gateAhnQiraj, false);
-    SetUnitOwner(_gateAhnQiraj, completingFaction.Player, true);
+    _gateAhnQiraj.IsInvulnerable = false;
+    _gateAhnQiraj.SetOwner(completingFaction.Player, true);
   }
 
   /// <inheritdoc />
   protected override void OnFail(Faction completingFaction)
   {
-    SetUnitInvulnerable(_gateAhnQiraj, false);
-    SetUnitOwner(_gateAhnQiraj, Player(PLAYER_NEUTRAL_AGGRESSIVE), true);
+    _gateAhnQiraj.IsInvulnerable = false;
+    _gateAhnQiraj.SetOwner(player.NeutralAggressive, true);
   }
 
   /// <inheritdoc/>
@@ -56,6 +56,6 @@ public sealed class QuestRebuildAhnqiraj : QuestData
   /// <inheritdoc/>
   protected override void OnAdd(Faction whichFaction)
   {
-    SetUnitInvulnerable(_gateAhnQiraj, true);
+    _gateAhnQiraj.IsInvulnerable = true;
   }
 }

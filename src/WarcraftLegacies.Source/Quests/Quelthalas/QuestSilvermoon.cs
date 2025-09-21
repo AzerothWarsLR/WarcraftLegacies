@@ -56,21 +56,21 @@ public sealed class QuestSilvermoon : QuestData
   protected override void OnFail(Faction completingFaction)
   {
     var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      ? player.NeutralAggressive
       : completingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);
-    if (UnitAlive(_elvenRunestone))
+    if (_elvenRunestone.Alive)
     {
       if (_silvermoon.Unit != null)
       {
-        SetUnitInvulnerable(_silvermoon.Unit, true);
+        _silvermoon.Unit.IsInvulnerable = true;
       }
     }
 
     if (_sunwell.Unit != null)
     {
-      SetUnitInvulnerable(_sunwell.Unit, true);
+      _sunwell.Unit.IsInvulnerable = true;
     }
   }
 
@@ -85,11 +85,11 @@ public sealed class QuestSilvermoon : QuestData
       return;
     }
 
-    if (UnitAlive(_elvenRunestone))
+    if (_elvenRunestone.Alive)
     {
-      SetUnitInvulnerable(_silvermoon.Unit, true);
+      _silvermoon.Unit.IsInvulnerable = true;
     }
 
-    SetUnitInvulnerable(_sunwell.Unit, true);
+    _sunwell.Unit.IsInvulnerable = true;
   }
 }

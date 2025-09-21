@@ -27,7 +27,7 @@ public static class PatronSystem
   private static void SetupPatron(string name, PatronTier tier, Point position, PreplacedUnitSystem preplacedUnitSystem)
   {
     var unit = preplacedUnitSystem.GetUnit(TierToUnitType(tier), position);
-    BlzSetUnitName(unit, $"{name} - Tier {(int)tier} Patron");
+    unit.Name = $"{name} - Tier {(int)tier} Patron";
   }
 
   /// <summary>

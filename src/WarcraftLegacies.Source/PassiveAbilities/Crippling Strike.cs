@@ -38,27 +38,27 @@ public sealed class DamageMultiplierOnAttack : PassiveAbility, IAppliesEffectOnD
 
   public void OnDealsDamage()
   {
-    var caster = GetEventDamageSource();
-    var target = GetTriggerUnit();
+    var caster = @event.DamageSource;
+    var target = @event.Unit;
 
     // Validate caster unit type and ability level
-    if (GetUnitTypeId(caster) != CasterUnitTypeId ||
-        GetUnitAbilityLevel(caster, AbilityTypeId) == 0)
+    if (caster.UnitType != CasterUnitTypeId ||
+        caster.GetAbilityLevel(AbilityTypeId) == 0)
     {
       return;
     }
 
     // Filter out non-attack damage if configured
-    if (OnlyAttackDamage && !BlzGetEventIsAttack())
+    if (OnlyAttackDamage && !@event.IsAttack)
     {
       return;
     }
 
     // Get the original damage value
-    var originalDamage = GetEventDamage();
+    var originalDamage = @event.Damage;
 
-    var abilityLevel = GetUnitAbilityLevel(caster, AbilityTypeId);
-    var isTargetHero = IsUnitType(target, UNIT_TYPE_HERO);
+    var abilityLevel = caster.GetAbilityLevel(AbilityTypeId);
+    var isTargetHero = target.IsUnitType(unittype.Hero);
 
     // Calculate damage multiplier based on target type and ability level
     var multiplier = isTargetHero
@@ -68,6 +68,6 @@ public sealed class DamageMultiplierOnAttack : PassiveAbility, IAppliesEffectOnD
     // Apply bonus damage (original damage * (multiplier - 1))
     var bonusDamage = originalDamage * (multiplier - 1);
     target.TakeDamage(caster, bonusDamage, false, false,
-        BlzGetEventAttackType(), BlzGetEventDamageType());
+        @event.AttackType, @event.DamageType);
   }
 }

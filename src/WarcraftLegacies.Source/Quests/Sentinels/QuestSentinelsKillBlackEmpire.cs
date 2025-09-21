@@ -32,7 +32,7 @@ public sealed class QuestSentinelsKillBlackEmpire : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    SetPlayerTechResearched(completingFaction.Player, ResearchId, 1);
+    completingFaction.Player.SetTechResearched(ResearchId, 1);
   }
 
   /// <inheritdoc/>

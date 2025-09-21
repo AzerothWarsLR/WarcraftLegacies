@@ -11,28 +11,28 @@ public sealed class SummonLegionChannel : Channel
   public SummonLegionChannel(unit caster, int spellId, int spellImmunityId) : base(caster, spellId)
   {
     _spellImmunityId = spellImmunityId;
-    _timer = CreateTimer();
-    _timerDialog = CreateTimerDialog(_timer);
+    _timer = timer.Create();
+    _timerDialog = timerdialog.Create(_timer);
   }
 
   public override void OnCreate()
   {
-    UnitAddAbility(Caster, _spellImmunityId);
-    TimerStart(_timer, Duration, false, null);
-    TimerDialogDisplay(_timerDialog, true);
-    TimerDialogSetTitle(_timerDialog, "Legion Summon");
-    PingMinimap(GetUnitX(Caster), GetUnitY(Caster), 8);
+    Caster.AddAbility(_spellImmunityId);
+    _timer.Start(Duration, false, null);
+    _timerDialog.IsDisplayed = true;
+    _timerDialog.SetTitle("Legion Summon");
+    PingMinimap(Caster.X, Caster.Y, 8);
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
-      DisplayTextToPlayer(player, 0, 0, "The Burning Legion is being summoned!");
+      player.DisplayTextTo("The Burning Legion is being summoned!", 0, 0);
     }
   }
 
   /// <inheritdoc />
   protected override void OnDispose()
   {
-    UnitRemoveAbility(Caster, _spellImmunityId);
-    DestroyTimer(_timer);
-    DestroyTimerDialog(_timerDialog);
+    Caster.RemoveAbility(_spellImmunityId);
+    _timer.Dispose();
+    _timerDialog.Dispose();
   }
 }

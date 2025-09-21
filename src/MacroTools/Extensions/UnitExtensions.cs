@@ -20,14 +20,14 @@ public static class UnitExtensions
   /// </summary>
   public static void SetLevel(this unit whichUnit, int newLevel, bool showEyeCandy = true)
   {
-    var oldLevel = GetHeroLevel(whichUnit);
+    var oldLevel = whichUnit.HeroLevel;
     if (newLevel > oldLevel)
     {
       SetHeroLevel(whichUnit, newLevel, showEyeCandy);
     }
     else if (newLevel < oldLevel)
     {
-      UnitStripHeroLevel(whichUnit, oldLevel - newLevel);
+      whichUnit.RemoveHeroLevels(oldLevel - newLevel);
     }
   }
 
@@ -41,7 +41,7 @@ public static class UnitExtensions
   /// Gets the unit's unit level if it's a unit, or hero level if it's a hero.
   /// </summary>
   public static int GetLevel(this unit whichUnit) =>
-    IsUnitType(whichUnit, UNIT_TYPE_HERO) ? GetHeroLevel(whichUnit) : GetUnitLevel(whichUnit);
+    whichUnit.IsUnitType(unittype.Hero) ? whichUnit.HeroLevel : whichUnit.Level;
 
   /// <summary>
   /// Causes the unit to die after the specified duration, like a summoned unit.
@@ -53,17 +53,17 @@ public static class UnitExtensions
   {
     if (duration < 1)
     {
-      BlzUnitCancelTimedLife(whichUnit);
+      whichUnit.CancelTimedLife();
     }
 
-    UnitApplyTimedLife(whichUnit, buffId, duration);
+    whichUnit.ApplyTimedLife(buffId, duration);
   }
 
   /// <summary>
   /// Gets the units proper name. If it doesn't have one, get their unit name instead.
   /// </summary>
   public static string GetProperName(this unit whichUnit) =>
-    IsUnitType(whichUnit, UNIT_TYPE_HERO) ? GetHeroProperName(whichUnit) : GetUnitName(whichUnit);
+    whichUnit.IsUnitType(unittype.Hero) ? whichUnit.HeroName : whichUnit.Name;
 
   /// <summary>
   /// Pings the unit on the minimap.
@@ -71,20 +71,20 @@ public static class UnitExtensions
   /// <param name="whichUnit">The unit to ping.</param>
   /// <param name="duration">How long the ping should last.</param>
   public static void Ping(this unit whichUnit, float duration) =>
-    PingMinimap(GetUnitX(whichUnit), GetUnitY(whichUnit), duration);
+    PingMinimap(whichUnit.X, whichUnit.Y, duration);
 
   /// <summary>
   /// Orders a unit to perform a specified order at a specified <see cref="Point"/>.
   /// </summary>
   [Obsolete("Use the version that takes an integer order ID instead.")]
   public static void IssueOrder(this unit unit, string order, Point target) =>
-    IssuePointOrder(unit, order, target.X, target.Y);
+    unit.IssueOrder(order, target.X, target.Y);
 
   /// <summary>
   /// Orders a unit to perform a specified order at a specified <see cref="Point"/>.
   /// </summary>
   public static void IssueOrder(this unit unit, int orderId, Point target) =>
-    IssuePointOrderById(unit, orderId, target.X, target.Y);
+    unit.IssueOrder(orderId, target.X, target.Y);
 
   /// <summary>
   /// Moves the unit to a specified <see cref="Point"/>.
@@ -93,19 +93,19 @@ public static class UnitExtensions
   {
     if (!considerPathability)
     {
-      SetUnitX(unit, where.X);
-      SetUnitY(unit, where.Y);
+      unit.X = where.X;
+      unit.Y = where.Y;
     }
     else
     {
-      SetUnitPosition(unit, where.X, where.Y);
+      unit.SetPosition(where.X, where.Y);
     }
   }
 
   /// <summary>
   /// Returns the position of the unit.
   /// </summary>
-  public static Point GetPosition(this unit unit) => new(GetUnitX(unit), GetUnitY(unit));
+  public static Point GetPosition(this unit unit) => new(unit.X, unit.Y);
 
   /// <summary>
   ///   Sets the Waygate's destination to the target point.
@@ -113,8 +113,8 @@ public static class UnitExtensions
   /// </summary>
   public static void SetWaygateDestination(this unit waygate, Point destination)
   {
-    WaygateActivate(waygate, true);
-    WaygateSetDestination(waygate, destination.X, destination.Y);
+    waygate.WaygateActive = true;
+    waygate.SetWaygateDestination(destination.X, destination.Y);
   }
 
   /// <summary>
@@ -122,33 +122,32 @@ public static class UnitExtensions
   /// </summary>
   public static void SetLifePercent(this unit whichUnit, float percent)
   {
-    SetUnitState(whichUnit, UNIT_STATE_LIFE,
-      GetUnitState(whichUnit, UNIT_STATE_MAX_LIFE) * MathEx.Max(0, percent) * 0.01f);
+    whichUnit.Life = whichUnit.MaxLife * MathEx.Max(0, percent) * 0.01f;
   }
 
   /// <summary>
   /// Returns the percentage hit points the unit has remaining.
   /// </summary>
-  public static float GetLifePercent(this unit whichUnit) => GetUnitState(whichUnit, UNIT_STATE_LIFE) /
-    GetUnitState(whichUnit, UNIT_STATE_MAX_LIFE) * 100;
+  public static float GetLifePercent(this unit whichUnit) => whichUnit.Life /
+    whichUnit.MaxLife * 100;
 
   /// <summary>
   ///   Resurrects the specified unit.
   /// </summary>
   public static void Resurrect(this unit whichUnit)
   {
-    if (UnitAlive(whichUnit))
+    if (whichUnit.Alive)
     {
       throw new ArgumentException("Tried to resurrect a unit that is already alive.");
     }
 
-    var x = GetUnitX(whichUnit);
-    var y = GetUnitY(whichUnit);
-    var unitType = GetUnitTypeId(whichUnit);
-    var face = GetUnitFacing(whichUnit);
-    DestroyEffect(AddSpecialEffect(@"Abilities\Spells\Human\Resurrect\ResurrectTarget.mdl", x, y));
-    RemoveUnit(whichUnit);
-    CreateUnit(GetOwningPlayer(whichUnit), unitType, x, y, face);
+    var x = whichUnit.X;
+    var y = whichUnit.Y;
+    var unitType = whichUnit.UnitType;
+    var face = whichUnit.Facing;
+    effect.Create(@"Abilities\Spells\Human\Resurrect\ResurrectTarget.mdl", x, y).Dispose();
+    whichUnit.Dispose();
+    unit.Create(whichUnit.Owner, unitType, x, y, face);
   }
 
   /// <summary>
@@ -165,8 +164,7 @@ public static class UnitExtensions
   public static void TakeDamage(this unit unit, unit damager, float amount, bool attack = false, bool ranged = true,
     attacktype? attackType = null, damagetype? damageType = null, weapontype? weaponType = null)
   {
-    UnitDamageTarget(damager, unit, amount, attack, ranged, attackType ?? ATTACK_TYPE_NORMAL,
-      damageType ?? DAMAGE_TYPE_MAGIC, weaponType ?? WEAPON_TYPE_WHOKNOWS);
+    damager.DealDamage(unit, amount, attack, ranged, attackType ?? attacktype.Normal, damageType ?? damagetype.Magic, weaponType ?? weapontype.WhoKnows);
   }
 
   /// <summary>
@@ -174,8 +172,7 @@ public static class UnitExtensions
   /// </summary>
   /// <param name="whichUnit">The unit to restore mana to.</param>
   /// <param name="amount">How much mana to restore.</param>
-  public static void RestoreMana(this unit whichUnit, float amount) => SetUnitState(whichUnit, UNIT_STATE_MANA,
-    GetUnitState(whichUnit, UNIT_STATE_MANA) + amount);
+  public static void RestoreMana(this unit whichUnit, float amount) => whichUnit.Mana = whichUnit.Mana + amount;
 
   /// <summary>
   /// Heals the specified unit by the specified amount.
@@ -184,7 +181,7 @@ public static class UnitExtensions
   /// <param name="amount">The amount of damage to heal.</param>
   public static void Heal(this unit unit, float amount)
   {
-    SetUnitState(unit, UNIT_STATE_LIFE, GetUnitState(unit, UNIT_STATE_LIFE) + amount);
+    unit.Life = unit.Life + amount;
   }
 
   /// <summary>
@@ -193,15 +190,15 @@ public static class UnitExtensions
   public static void Rescue(this unit whichUnit, player whichPlayer)
   {
     //If the unit costs 10 food, that means it should be owned by neutral passive instead of the rescuing player.
-    var whichPlayer1 = GetUnitFoodUsed(whichUnit) == 10 ? Player(PLAYER_NEUTRAL_PASSIVE) : whichPlayer;
-    SetUnitOwner(whichUnit, whichPlayer1, true);
-    ShowUnit(whichUnit, true);
-    BlzPauseUnitEx(whichUnit, false);
+    var whichPlayer1 = whichUnit.FoodUsed == 10 ? player.NeutralPassive : whichPlayer;
+    whichUnit.SetOwner(whichPlayer1, true);
+    whichUnit.IsVisible = true;
+    whichUnit.SetPausedEx(false);
 
     var asCapital = CapitalManager.GetFromUnit(whichUnit);
     if (asCapital == null || asCapital.ProtectorCount == 0)
     {
-      SetUnitInvulnerable(whichUnit, false);
+      whichUnit.IsInvulnerable = false;
     }
   }
 
@@ -223,7 +220,7 @@ public static class UnitExtensions
   /// </summary>
   public static float GetDamageReduction(this unit whichUnit)
   {
-    var armor = BlzGetUnitArmor(whichUnit);
+    var armor = whichUnit.Armor;
     return armor * 006 / ((1 + 006) * armor);
   }
 
@@ -233,9 +230,9 @@ public static class UnitExtensions
   /// </summary>
   public static void AddHeroAttributes(this unit whichUnit, int str, int agi, int intelligence)
   {
-    SetHeroStr(whichUnit, GetHeroStr(whichUnit, false) + str, true);
-    SetHeroAgi(whichUnit, GetHeroAgi(whichUnit, false) + agi, true);
-    SetHeroInt(whichUnit, GetHeroInt(whichUnit, false) + intelligence, true);
+    whichUnit.Strength = whichUnit.BaseStrength + str;
+    whichUnit.Agility = whichUnit.BaseAgility + agi;
+    whichUnit.Intelligence = whichUnit.BaseIntelligence + intelligence;
 
     string sfx;
     if (str > 0 && agi == 0 && intelligence == 0)
@@ -255,7 +252,7 @@ public static class UnitExtensions
       sfx = "Abilities\\Spells\\Items\\AIlm\\AIlmTarget.mdl";
     }
 
-    DestroyEffect(AddSpecialEffect(sfx, GetUnitX(whichUnit), GetUnitY(whichUnit)));
+    effect.Create(sfx, whichUnit.X, whichUnit.Y).Dispose();
   }
 
   /// <summary>
@@ -263,13 +260,13 @@ public static class UnitExtensions
   /// </summary>
   public static void DropAllItems(this unit whichUnit)
   {
-    if (IsUnitType(whichUnit, UNIT_TYPE_SUMMONED))
+    if (whichUnit.IsUnitType(unittype.Summoned))
     {
       throw new InvalidOperationException($"Tried to call {nameof(DropAllItems)} on a summoned hero.");
     }
 
-    var unitX = GetUnitX(whichUnit);
-    var unitY = GetUnitY(whichUnit);
+    var unitX = whichUnit.X;
+    var unitY = whichUnit.Y;
     float angInRadians = 0;
 
     for (var i = 0; i < 6; i++)
@@ -277,13 +274,13 @@ public static class UnitExtensions
       var x = unitX + HeroDropDist * Cos(angInRadians);
       var y = unitY + HeroDropDist * Sin(angInRadians);
       angInRadians += 360 * MathEx.DegToRad / 6;
-      var itemToDrop = UnitItemInSlot(whichUnit, i);
-      if (!BlzGetItemBooleanField(itemToDrop, ITEM_BF_CAN_BE_DROPPED))
+      var itemToDrop = whichUnit.ItemAtOrDefault(i);
+      if (!itemToDrop.IsDroppable)
       {
-        SetItemDroppable(itemToDrop, true);
+        itemToDrop.IsDroppable = true;
       }
 
-      UnitRemoveItem(whichUnit, itemToDrop);
+      whichUnit.RemoveItem(itemToDrop);
       itemToDrop.SetPositionSafe(new Point(x, y));
     }
   }
@@ -295,7 +292,7 @@ public static class UnitExtensions
   {
     for (var i = 0; i < 6; i++)
     {
-      UnitAddItem(receiver, UnitItemInSlot(sender, i));
+      receiver.AddItem(sender.ItemAtOrDefault(i));
     }
   }
 
@@ -304,8 +301,8 @@ public static class UnitExtensions
   /// </summary>
   public static void AddItemSafe(this unit whichUnit, item whichItem)
   {
-    SetItemPosition(whichItem, GetUnitX(whichUnit), GetUnitY(whichUnit));
-    UnitAddItem(whichUnit, whichItem);
+    whichItem.SetPosition(whichUnit.X, whichUnit.Y);
+    whichUnit.AddItem(whichItem);
   }
 
   /// <summary>
@@ -334,7 +331,7 @@ public static class UnitExtensions
   public static void MultiplyMaxHitpoints(this unit whichUnit, float multiplier)
   {
     var percentageHitpoints = whichUnit.GetLifePercent();
-    BlzSetUnitMaxHP(whichUnit, R2I(I2R(BlzGetUnitMaxHP(whichUnit)) * multiplier));
+    whichUnit.MaxLife = R2I(I2R(whichUnit.MaxLife) * multiplier);
     whichUnit.SetLifePercent(percentageHitpoints);
   }
 
@@ -346,23 +343,22 @@ public static class UnitExtensions
   public static void MultiplyMaxMana(this unit whichUnit, float multiplier)
   {
     var percentageHitpoints = whichUnit.GetManaPercent();
-    BlzSetUnitMaxMana(whichUnit, R2I(I2R(BlzGetUnitMaxMana(whichUnit)) * multiplier));
+    whichUnit.MaxMana = R2I(I2R(whichUnit.MaxMana) * multiplier);
     whichUnit.SetManaPercent(percentageHitpoints);
   }
 
   /// <summary>
   /// Gets the percentage of mana that a unit has remaining.
   /// </summary>
-  public static float GetManaPercent(this unit whichUnit) => GetUnitState(whichUnit, UNIT_STATE_MANA) /
-    GetUnitState(whichUnit, UNIT_STATE_MAX_MANA) * 100;
+  public static float GetManaPercent(this unit whichUnit) => whichUnit.Mana /
+    whichUnit.MaxMana * 100;
 
   /// <summary>
   /// Sets the percentage of mana a unit has remaining.
   /// </summary>
   public static void SetManaPercent(this unit whichUnit, float percent)
   {
-    SetUnitState(whichUnit, UNIT_STATE_MANA,
-      GetUnitState(whichUnit, UNIT_STATE_MAX_MANA) * MathEx.Max(0, percent) * 0.01f);
+    whichUnit.Mana = whichUnit.MaxMana * MathEx.Max(0, percent) * 0.01f;
   }
 
   /// <summary>
@@ -370,8 +366,8 @@ public static class UnitExtensions
   /// </summary>
   public static Point GetRallyPoint(this unit whichUnit)
   {
-    var rallyLocation = GetUnitRallyPoint(whichUnit);
-    var rallyPoint = new Point(GetLocationX(rallyLocation), GetLocationY(rallyLocation));
+    var rallyLocation = whichUnit.RallyPoint;
+    var rallyPoint = new Point(rallyLocation.X, rallyLocation.Y);
     return rallyPoint;
   }
 
@@ -381,18 +377,18 @@ public static class UnitExtensions
   /// </summary>
   public static void MakeCapturable(this unit whichUnit)
   {
-    var damageTrigger = CreateTrigger();
-    TriggerRegisterUnitEvent(damageTrigger, whichUnit, EVENT_UNIT_DAMAGED);
-    TriggerAddAction(damageTrigger, () =>
+    var damageTrigger = trigger.Create();
+    damageTrigger.RegisterUnitEvent(whichUnit, unitevent.Damaged);
+    damageTrigger.AddAction(() =>
     {
-      if (!(GetEventDamage() + 1 >= GetUnitState(whichUnit, UNIT_STATE_LIFE)))
+      if (!(@event.Damage + 1 >= whichUnit.Life))
       {
         return;
       }
 
-      SetUnitOwner(whichUnit, GetOwningPlayer(GetEventDamageSource()), true);
-      BlzSetEventDamage(0);
-      SetUnitState(whichUnit, UNIT_STATE_LIFE, GetUnitState(whichUnit, UNIT_STATE_MAX_LIFE));
+      whichUnit.SetOwner(@event.DamageSource.Owner, true);
+      @event.Damage = 0;
+      whichUnit.Life = whichUnit.MaxLife;
     });
   }
 
@@ -404,9 +400,9 @@ public static class UnitExtensions
   /// <param name="cooldown">How long the cooldown should be. Defaults to the full cooldown of the ability.</param>
   public static void StartAbilityCooldown(this unit whichUnit, int abilCode, float? cooldown = null)
   {
-    BlzEndUnitAbilityCooldown(whichUnit, abilCode);
-    cooldown ??= BlzGetUnitAbilityCooldown(whichUnit, abilCode, 0);
-    BlzStartUnitAbilityCooldown(whichUnit, abilCode, cooldown.Value);
+    whichUnit.EndAbilityCooldown(abilCode);
+    cooldown ??= whichUnit.GetAbilityCooldown(abilCode, 0);
+    whichUnit.SetAbilityCooldownRemaining(abilCode, cooldown.Value);
   }
 
   /// <summary>
@@ -416,7 +412,7 @@ public static class UnitExtensions
   {
     var unitPosition = whichUnit.GetPosition();
     var facing = WCSharp.Shared.Util.AngleBetweenPoints(unitPosition.X, unitPosition.Y, targetPoint.X, targetPoint.Y);
-    BlzSetUnitFacingEx(whichUnit, facing);
+    whichUnit.Facing = facing;
   }
 
   /// <summary>
@@ -424,8 +420,8 @@ public static class UnitExtensions
   /// </summary>
   public static bool IsResistant(this unit whichUnit)
   {
-    return IsUnitType(whichUnit, UNIT_TYPE_RESISTANT) || IsUnitType(whichUnit, UNIT_TYPE_HERO) ||
-           (GetOwningPlayer(whichUnit) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && whichUnit.GetLevel() >= 6);
+    return whichUnit.IsUnitType(unittype.Resistant) || whichUnit.IsUnitType(unittype.Hero) ||
+           (whichUnit.Owner == player.NeutralAggressive && whichUnit.GetLevel() >= 6);
   }
 
   /// <summary>
@@ -440,10 +436,10 @@ public static class UnitExtensions
 
     foreach (var ability in abilities)
     {
-      var abilityid = BlzGetAbilityId(ability);
+      var abilityid = ability.Id;
       if (!ignoredAbilityId.Contains(abilityid))
       {
-        UnitRemoveAbility(whichUnit, abilityid);
+        whichUnit.RemoveAbility(abilityid);
       }
     }
   }
@@ -460,7 +456,7 @@ public static class UnitExtensions
 
     while (true)
     {
-      var ability = BlzGetUnitAbilityByIndex(whichUnit, index);
+      var ability = whichUnit.GetAbilityByIndex(index);
 
       if (ability is null)
       {
@@ -478,13 +474,13 @@ public static class UnitExtensions
   /// </summary>
   public static void SafelyRemove(this unit whichUnit)
   {
-    if (IsUnitType(whichUnit, UNIT_TYPE_HERO))
+    if (whichUnit.IsUnitType(unittype.Hero))
     {
       whichUnit.DropAllItems();
     }
 
-    KillUnit(whichUnit);
-    RemoveUnit(whichUnit);
+    whichUnit.Kill();
+    whichUnit.Dispose();
   }
 
   /// <summary>
@@ -501,14 +497,14 @@ public static class UnitExtensions
   /// <summary>
   /// Returns true if the unit can be selected, i.e. it does not have Locust.
   /// </summary>
-  public static bool IsSelectable(this unit whichUnit) => GetUnitAbilityLevel(whichUnit, FourCC("Aloc")) == 0;
+  public static bool IsSelectable(this unit whichUnit) => whichUnit.GetAbilityLevel(FourCC("Aloc")) == 0;
 
   /// <summary>
   /// Returns true if the unit is classifed as a boat unit, i.e. has movement type 16.
   /// </summary>
   public static bool IsUnitBoat(this unit whichUnit)
   {
-    var movementType = BlzGetUnitIntegerField(whichUnit, UNIT_IF_MOVE_TYPE);
-    return movementType == 16;
+    var movementType = whichUnit.MoveType;
+    return movementType == WCSharp.Api.Enums.MoveTypes.Float;
   }
 }

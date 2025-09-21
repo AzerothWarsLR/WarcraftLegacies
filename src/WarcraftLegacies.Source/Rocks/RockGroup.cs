@@ -16,26 +16,26 @@ public sealed class RockGroup
   {
     foreach (var rock in _rockGroup)
     {
-      RemoveDestructable(rock);
+      rock.Dispose();
     }
   }
 
   private void AddRock()
   {
     var enumDestructable = GetEnumDestructable();
-    if (GetDestructableTypeId(enumDestructable) != _destructibleType)
+    if (enumDestructable.Type != _destructibleType)
     {
       return;
     }
 
     _rockGroup.Add(enumDestructable);
-    SetDestructableInvulnerable(enumDestructable, true);
+    enumDestructable.IsInvulnerable = true;
   }
 
   public RockGroup(Rectangle area, int destructibleType, float expiry)
   {
     _destructibleType = destructibleType;
     Expiry = expiry;
-    EnumDestructablesInRect(area.Rect, null, AddRock);
+    area.Rect.EnumerateDestructables(null, AddRock);
   }
 }

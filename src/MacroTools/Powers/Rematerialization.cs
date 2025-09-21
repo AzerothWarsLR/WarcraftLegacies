@@ -39,28 +39,28 @@ public sealed class Rematerialization : Power
 
   /// <inheritdoc />
   public override void OnAdd(player whichPlayer) =>
-    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerUnitDies, OnUnitDeath, GetPlayerId(whichPlayer));
+    PlayerUnitEvents.Register(CustomPlayerUnitEvents.PlayerUnitDies, OnUnitDeath, whichPlayer.Id);
 
   /// <inheritdoc />
   public override void OnRemove(player whichPlayer) =>
-    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerUnitDies, OnUnitDeath, GetPlayerId(whichPlayer));
+    PlayerUnitEvents.Unregister(CustomPlayerUnitEvents.PlayerUnitDies, OnUnitDeath, whichPlayer.Id);
 
   private void OnUnitDeath()
   {
-    var dyingUnit = GetTriggerUnit();
+    var dyingUnit = @event.Unit;
     if (GetRandomReal(0, 1) > _chance
         || !EligibilityCondition(dyingUnit)
         || _noReturnRect.Contains(dyingUnit.GetPosition())
-        || IsUnitType(dyingUnit, UNIT_TYPE_RESISTANT)
-        || IsUnitType(dyingUnit, UNIT_TYPE_HERO)
-        || IsUnitType(dyingUnit, UNIT_TYPE_MECHANICAL)
-        || IsUnitIllusion(dyingUnit)
-        || IsUnitType(dyingUnit, UNIT_TYPE_SUMMONED))
+        || dyingUnit.IsUnitType(unittype.Resistant)
+        || dyingUnit.IsUnitType(unittype.Hero)
+        || dyingUnit.IsUnitType(unittype.Mechanical)
+        || dyingUnit.IsIllusion
+        || dyingUnit.IsUnitType(unittype.Summoned))
     {
       return;
     }
 
-    EffectSystem.Add(AddSpecialEffect(@"Abilities\Spells\Items\AIil\AIilTarget.mdl", _returnPoint.X, _returnPoint.Y));
-    CreateUnit(GetOwningPlayer(dyingUnit), GetUnitTypeId(dyingUnit), _returnPoint.X, _returnPoint.Y, 0);
+    EffectSystem.Add(effect.Create(@"Abilities\Spells\Items\AIil\AIilTarget.mdl", _returnPoint.X, _returnPoint.Y));
+    unit.Create(dyingUnit.Owner, dyingUnit.UnitType, _returnPoint.X, _returnPoint.Y, 0);
   }
 }

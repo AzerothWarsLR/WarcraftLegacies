@@ -34,12 +34,12 @@ public sealed class ShadowAssaultSpell : Spell
 
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    if (!UnitAlive(target))
+    if (!target.Alive)
     {
       return;
     }
 
-    var spellLevel = GetUnitAbilityLevel(caster, Id);
+    var spellLevel = caster.GetAbilityLevel(Id);
     var invulnerabilityBuff = ApplySpeedUpAndInvulnerability(caster, spellLevel);
     StartCharge(caster, target, invulnerabilityBuff);
   }
@@ -72,11 +72,11 @@ public sealed class ShadowAssaultSpell : Spell
     var elapsedTime = 0f; // Track elapsed time
 
     // Create charge visual effect
-    var chargeEffect = AddSpecialEffect(ChargeEffectPath, startPos.X, startPos.Y);
-    var timer = CreateTimer();
+    var chargeEffect = effect.Create(ChargeEffectPath, startPos.X, startPos.Y);
+    timer timer = timer.Create();
 
     // Timer callback for charge movement
-    TimerStart(timer, 0.02f, true, () =>
+    timer.Start(0.02f, true, () =>
     {
       elapsedTime += 0.02f; // Increment time (50Hz update rate)
 
@@ -95,15 +95,15 @@ public sealed class ShadowAssaultSpell : Spell
       caster.SetPosition(currentPos);
 
       // Update effect position to follow caster
-      BlzSetSpecialEffectX(chargeEffect, currentPos.X);
-      BlzSetSpecialEffectY(chargeEffect, currentPos.Y);
+      chargeEffect.SetX(currentPos.X);
+      chargeEffect.SetY(currentPos.Y);
     });
   }
 
   private void EndCharge(unit caster, unit target, effect effect, timer timer, InvulnerabilityBuff invulnerabilityBuff)
   {
-    DestroyTimer(timer);
-    DestroyEffect(effect);
+    timer.Dispose();
+    effect.Dispose();
 
     invulnerabilityBuff.Dispose();
 
@@ -112,16 +112,15 @@ public sealed class ShadowAssaultSpell : Spell
 
   private void DealDamageAndCheckExecute(unit caster, unit target)
   {
-    var spellLevel = GetUnitAbilityLevel(caster, Id);
+    var spellLevel = caster.GetAbilityLevel(Id);
     var damage = BaseDamage + DamagePerLevel * spellLevel;
 
-    UnitDamageTarget(caster, target, damage, true, false,
-        ATTACK_TYPE_NORMAL, DAMAGE_TYPE_MAGIC, WEAPON_TYPE_WHOKNOWS);
+    caster.DealDamage(target, damage, true, false, attacktype.Normal, damagetype.Magic, weapontype.WhoKnows);
 
-    var impactEffect = AddSpecialEffect(ImpactEffectPath, GetUnitX(target), GetUnitY(target));
-    DestroyEffect(impactEffect);
+    var impactEffect = effect.Create(ImpactEffectPath, target.X, target.Y);
+    impactEffect.Dispose();
 
-    if (!IsUnitType(target, UNIT_TYPE_HERO) && CheckExecute(target, spellLevel))
+    if (!target.IsUnitType(unittype.Hero) && CheckExecute(target, spellLevel))
     {
       ExecuteTarget(caster, target);
     }
@@ -131,8 +130,8 @@ public sealed class ShadowAssaultSpell : Spell
   {
     // Calculate execute threshold percentage
     var threshold = BaseExecuteThreshold + ExecuteThresholdPerLevel * level;
-    var currentHp = GetUnitState(target, UNIT_STATE_LIFE);
-    var maxHp = BlzGetUnitMaxHP(target);
+    var currentHp = target.Life;
+    var maxHp = target.MaxLife;
 
     // Return true if target's HP is below threshold (without adding 1)
     return currentHp < maxHp * threshold;
@@ -141,22 +140,21 @@ public sealed class ShadowAssaultSpell : Spell
   private void ExecuteTarget(unit caster, unit target)
   {
 
-    var currentHp = GetUnitState(target, UNIT_STATE_LIFE);
-    UnitDamageTarget(caster, target, currentHp + 500, true, false,
-        ATTACK_TYPE_NORMAL, DAMAGE_TYPE_MAGIC, WEAPON_TYPE_WHOKNOWS);
+    var currentHp = target.Life;
+    caster.DealDamage(target, currentHp + 500, true, false, attacktype.Normal, damagetype.Magic, weapontype.WhoKnows);
 
-    var executeEffect = AddSpecialEffect(ExecuteEffectPath, GetUnitX(target), GetUnitY(target));
-    DestroyEffect(executeEffect);
+    var executeEffect = effect.Create(ExecuteEffectPath, target.X, target.Y);
+    executeEffect.Dispose();
 
     RefreshSpellCooldown(caster);
   }
 
   private void RefreshSpellCooldown(unit caster)
   {
-    var level = GetUnitAbilityLevel(caster, Id);
-    UnitRemoveAbility(caster, Id);
-    UnitAddAbility(caster, Id);
-    SetUnitAbilityLevel(caster, Id, level);
+    var level = caster.GetAbilityLevel(Id);
+    caster.RemoveAbility(Id);
+    caster.AddAbility(Id);
+    caster.SetAbilityLevel(Id, level);
   }
 
   // Invulnerability buff during charge
@@ -168,9 +166,9 @@ public sealed class ShadowAssaultSpell : Spell
 
     public override void OnApply()
     {
-      _damageTrigger = CreateTrigger();
-      TriggerRegisterUnitEvent(_damageTrigger, Target, EVENT_UNIT_DAMAGED);
-      TriggerAddAction(_damageTrigger, () => BlzSetEventDamage(0));
+      _damageTrigger = trigger.Create();
+      _damageTrigger.RegisterUnitEvent(Target, unitevent.Damaged);
+      _damageTrigger.AddAction(() => @event.Damage = 0);
     }
 
     public override void OnDispose()
@@ -178,7 +176,7 @@ public sealed class ShadowAssaultSpell : Spell
       // Cleanup damage trigger
       if (_damageTrigger != null)
       {
-        DestroyTrigger(_damageTrigger);
+        _damageTrigger.Dispose();
       }
 
       base.OnDispose();

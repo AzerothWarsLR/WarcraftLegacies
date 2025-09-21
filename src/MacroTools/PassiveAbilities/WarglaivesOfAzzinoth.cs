@@ -51,7 +51,7 @@ public sealed class WarglaivesOfAzzinoth : PassiveAbility, IAppliesEffectOnDamag
   /// <summary>
   /// The damage type to deal.
   /// </summary>
-  public damagetype DamageType { get; init; } = DAMAGE_TYPE_MAGIC;
+  public damagetype DamageType { get; init; } = damagetype.Magic;
 
   /// <summary>
   /// Initializes a new instance of the <see cref="WarglaivesOfAzzinoth"/> class.
@@ -78,34 +78,34 @@ public sealed class WarglaivesOfAzzinoth : PassiveAbility, IAppliesEffectOnDamag
   {
     try
     {
-      var caster = GetEventDamageSource();
-      if (!BlzGetEventIsAttack() || GetUnitAbilityLevel(caster, AbilityTypeId) == 0)
+      var caster = @event.DamageSource;
+      if (!@event.IsAttack || caster.GetAbilityLevel(AbilityTypeId) == 0)
       {
         return;
       }
 
-      var target = GetTriggerUnit();
+      var target = @event.Unit;
 
-      var effect = AddSpecialEffect(Effect, GetUnitX(target), GetUnitY(target));
-      BlzSetSpecialEffectScale(effect, EffectScale);
-      BlzSetSpecialEffectYaw(effect, GetUnitFacing(caster) * MathEx.DegToRad);
+      effect effect = effect.Create(Effect, target.X, target.Y);
+      effect.Scale = EffectScale;
+      effect.SetYaw(caster.Facing * MathEx.DegToRad);
       EffectSystem.Add(effect);
 
       foreach (var nearbyUnit in GlobalGroup.EnumUnitsInRange(target.GetPosition(), Radius))
       {
-        if (IsUnitAlly(nearbyUnit, GetOwningPlayer(caster)) || !UnitAlive(nearbyUnit) || BlzIsUnitInvulnerable(nearbyUnit) ||
-            IsUnitType(nearbyUnit, UNIT_TYPE_STRUCTURE) || IsUnitType(nearbyUnit, UNIT_TYPE_ANCIENT))
+        if (nearbyUnit.IsAllyTo(caster.Owner) || !nearbyUnit.Alive || nearbyUnit.IsInvulnerable ||
+            nearbyUnit.IsUnitType(unittype.Structure) || nearbyUnit.IsUnitType(unittype.Ancient))
         {
           continue;
         }
 
-        var damageAmount = DamageBase + DamageLevel * GetUnitAbilityLevel(caster, AbilityTypeId);
-        if (GetUnitRace(nearbyUnit) == RACE_DEMON)
+        var damageAmount = DamageBase + DamageLevel * caster.GetAbilityLevel(AbilityTypeId);
+        if (nearbyUnit.Race == race.Demon)
         {
           damageAmount *= DamageMultiplierAgainstDemons;
         }
 
-        nearbyUnit.TakeDamage(caster, damageAmount, false, false, ATTACK_TYPE_NORMAL, DamageType);
+        nearbyUnit.TakeDamage(caster, damageAmount, false, false, attacktype.Normal, DamageType);
       }
     }
     catch (Exception ex)

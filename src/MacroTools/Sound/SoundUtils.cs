@@ -6,9 +6,8 @@ public static class SoundUtils
   public static sound CreateNormalSound(string fileName, bool looping = false, bool is3D = false, bool stopWhenOutOfRange = true,
     int fadeInRate = 0, int fadeOutRate = 0, SoundEax soundEax = SoundEax.Default)
   {
-    var sound = CreateSound(fileName, looping, is3D, stopWhenOutOfRange, fadeInRate, fadeOutRate,
-      soundEax.GetStringEquivalent());
-    SetSoundVolume(sound, 100);
+    sound sound = sound.CreateFromFile(fileName, looping, is3D, stopWhenOutOfRange, fadeInRate, fadeOutRate, soundEax.GetStringEquivalent());
+    sound.SetVolume(100);
 
     return sound;
   }

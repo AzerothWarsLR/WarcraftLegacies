@@ -25,29 +25,29 @@ public sealed class AbilitySpecificDummyCaster
   public void CastUnit(unit caster, int level, unit target, DummyCastOriginType originType)
   {
     var originPoint = originType == DummyCastOriginType.Caster ? caster.GetPosition() : target.GetPosition();
-    var whichPlayer = GetOwningPlayer(caster);
-    SetUnitOwner(_unit, whichPlayer, true);
+    var whichPlayer = caster.Owner;
+    _unit.SetOwner(whichPlayer, true);
     _unit.SetPosition(originPoint);
-    UnitAddAbility(_unit, _abilityTypeId);
-    SetUnitAbilityLevel(_unit, _abilityTypeId, level);
+    _unit.AddAbility(_abilityTypeId);
+    _unit.SetAbilityLevel(_abilityTypeId, level);
 
     if (originType == DummyCastOriginType.Caster)
     {
       _unit.FacePosition(target.GetPosition());
     }
 
-    IssueTargetOrderById(_unit, _abilityOrderId, target);
+    _unit.IssueOrder(_abilityOrderId, target);
   }
 
   public void CastNoTarget(unit caster, int level)
   {
-    var whichPlayer = GetOwningPlayer(caster);
-    SetUnitOwner(_unit, whichPlayer, true);
+    var whichPlayer = caster.Owner;
+    _unit.SetOwner(whichPlayer, true);
     _unit.SetPosition(caster.GetPosition());
-    UnitAddAbility(_unit, _abilityTypeId);
-    SetUnitAbilityLevel(_unit, _abilityTypeId, level);
+    _unit.AddAbility(_abilityTypeId);
+    _unit.SetAbilityLevel(_abilityTypeId, level);
 
-    IssueImmediateOrderById(_unit, _abilityOrderId);
+    _unit.IssueOrder(_abilityOrderId);
   }
 
   /// <summary>
@@ -55,13 +55,13 @@ public sealed class AbilitySpecificDummyCaster
   /// </summary>
   public void CastNoTargetOnUnit(unit caster, int level, unit target)
   {
-    var whichPlayer = GetOwningPlayer(caster);
-    SetUnitOwner(_unit, whichPlayer, true);
+    var whichPlayer = caster.Owner;
+    _unit.SetOwner(whichPlayer, true);
     _unit.SetPosition(target.GetPosition());
-    UnitAddAbility(_unit, _abilityTypeId);
-    SetUnitAbilityLevel(_unit, _abilityTypeId, level);
+    _unit.AddAbility(_abilityTypeId);
+    _unit.SetAbilityLevel(_abilityTypeId, level);
 
-    IssueImmediateOrderById(_unit, _abilityOrderId);
+    _unit.IssueOrder(_abilityOrderId);
   }
 
   /// <summary>
@@ -69,10 +69,10 @@ public sealed class AbilitySpecificDummyCaster
   /// </summary>
   public void CastPoint(player whichPlayer, int level, Point target)
   {
-    SetUnitOwner(_unit, whichPlayer, true);
+    _unit.SetOwner(whichPlayer, true);
     _unit.SetPosition(target);
-    UnitAddAbility(_unit, _abilityTypeId);
-    SetUnitAbilityLevel(_unit, _abilityTypeId, level);
+    _unit.AddAbility(_abilityTypeId);
+    _unit.SetAbilityLevel(_abilityTypeId, level);
     _unit
       .IssueOrder(_abilityOrderId, target);
   }

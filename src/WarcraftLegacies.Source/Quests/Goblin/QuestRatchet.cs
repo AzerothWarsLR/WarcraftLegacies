@@ -32,7 +32,7 @@ public sealed class QuestRatchet : QuestData
 
     ResearchId = UPGRADE_VQ01_QUEST_COMPLETED_RATCHET_PORT;
     _rescueUnits = Regions.Ratchet_Unlock_1.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures,
-      filterUnit => GetUnitTypeId(filterUnit) != FourCC("ngme"));
+      filterUnit => filterUnit.UnitType != FourCC("ngme"));
   }
 
   /// <inheritdoc />
@@ -46,7 +46,7 @@ public sealed class QuestRatchet : QuestData
   protected override void OnFail(Faction completingFaction)
   {
     var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      ? player.NeutralAggressive
       : completingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);

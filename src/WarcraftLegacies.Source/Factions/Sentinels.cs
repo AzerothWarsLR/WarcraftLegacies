@@ -23,7 +23,7 @@ public sealed class Sentinels : Faction
 
   /// <inheritdoc />
   public Sentinels(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup,
-    ArtifactSetup artifactSetup) : base("Sentinels", PLAYER_COLOR_MINT,
+    ArtifactSetup artifactSetup) : base("Sentinels", playercolor.Mint,
     @"ReplaceableTextures\CommandButtons\BTNPriestessOfTheMoon.blp")
   {
     TraditionalTeam = TeamSetup.Kalimdor;

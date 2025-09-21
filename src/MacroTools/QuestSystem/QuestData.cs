@@ -23,12 +23,12 @@ public abstract class QuestData
   /// <param name="icon">A path to an icon.</param>
   protected QuestData(string title, string desc, string icon)
   {
-    Quest = CreateQuest();
+    Quest = quest.Create();
     Flavour = desc;
     Title = title;
-    QuestSetTitle(Quest, title);
-    QuestSetIconPath(Quest, icon);
-    QuestSetEnabled(Quest, false);
+    Quest.SetTitle(title);
+    Quest.SetIcon(icon);
+    Quest.IsEnabled = false;
     IsFactionQuest = true;
   }
 
@@ -38,7 +38,7 @@ public abstract class QuestData
   /// </summary>
   protected bool IsFactionQuest
   {
-    set => QuestSetRequired(Quest, value);
+    set => Quest.IsRequired = value;
   }
 
   /// <summary>
@@ -114,24 +114,24 @@ public abstract class QuestData
         switch (_progress)
         {
           case QuestProgress.Complete:
-            QuestSetCompleted(Quest, true);
-            QuestSetFailed(Quest, false);
-            QuestSetDiscovered(Quest, true);
+            Quest.IsCompleted = true;
+            Quest.IsFailed = false;
+            Quest.IsDiscovered = true;
             break;
           case QuestProgress.Incomplete:
-            QuestSetCompleted(Quest, false);
-            QuestSetFailed(Quest, false);
-            QuestSetDiscovered(Quest, true);
+            Quest.IsCompleted = false;
+            Quest.IsFailed = false;
+            Quest.IsDiscovered = true;
             break;
           case QuestProgress.Undiscovered:
-            QuestSetCompleted(Quest, false);
-            QuestSetFailed(Quest, false);
-            QuestSetDiscovered(Quest, false);
+            Quest.IsCompleted = false;
+            Quest.IsFailed = false;
+            Quest.IsDiscovered = false;
             break;
           case QuestProgress.Failed:
-            QuestSetCompleted(Quest, false);
-            QuestSetFailed(Quest, true);
-            QuestSetDiscovered(Quest, true);
+            Quest.IsCompleted = false;
+            Quest.IsFailed = true;
+            Quest.IsDiscovered = true;
             break;
           default:
             throw new ArgumentOutOfRangeException(nameof(value));
@@ -161,7 +161,7 @@ public abstract class QuestData
     {
       description += $"\n|cff8080ffKnowledge:|r {Knowledge}";
     }
-    QuestSetDescription(Quest, description);
+    Quest.SetDescription(description);
   }
 
   private void CompleteForFaction(Faction whichFaction)
@@ -174,7 +174,7 @@ public abstract class QuestData
 
     if (ResearchId != 0)
     {
-      SetPlayerTechResearched(whichFaction.Player, ResearchId, 1);
+      whichFaction.Player.SetTechResearched(ResearchId, 1);
     }
 
     foreach (var objective in Objectives)
@@ -251,7 +251,7 @@ public abstract class QuestData
     {
       foreach (var objective in Objectives)
       {
-        if (GetLocalPlayer() == whichFaction.Player)
+        if (player.LocalPlayer == whichFaction.Player)
         {
           objective.HideLocal();
         }
@@ -263,7 +263,7 @@ public abstract class QuestData
     {
       foreach (var objective in Objectives)
       {
-        if (GetLocalPlayer() == whichFaction.Player)
+        if (player.LocalPlayer == whichFaction.Player)
         {
           objective.ShowLocal(Progress);
         }
@@ -294,7 +294,7 @@ public abstract class QuestData
   /// <summary>Enables the local aspects of all child QuestItems.</summary>
   internal void ShowLocal()
   {
-    QuestSetEnabled(Quest, true);
+    Quest.IsEnabled = true;
     foreach (var objective in Objectives)
     {
       objective.ShowLocal(Progress);
@@ -313,7 +313,7 @@ public abstract class QuestData
   /// <summary>Disables the local aspects of all child QuestItems.</summary>
   internal void HideLocal()
   {
-    QuestSetEnabled(Quest, false);
+    Quest.IsEnabled = false;
     foreach (var objective in Objectives)
     {
       objective.HideLocal();
@@ -355,7 +355,7 @@ public abstract class QuestData
         case QuestProgress.Undiscovered:
           break;
         case QuestProgress.Incomplete:
-          if (objective.EligibleFactions.Contains(GetLocalPlayer()))
+          if (objective.EligibleFactions.Contains(player.LocalPlayer))
           {
             objective.ShowLocal(Progress);
           }
@@ -363,7 +363,7 @@ public abstract class QuestData
           objective.ShowSync(Progress);
           break;
         case QuestProgress.Complete:
-          if (objective.EligibleFactions.Contains(GetLocalPlayer()))
+          if (objective.EligibleFactions.Contains(player.LocalPlayer))
           {
             objective.HideLocal();
           }
@@ -408,7 +408,7 @@ public abstract class QuestData
     Objectives.Add(objective);
     if (objective.ShowsInQuestLog)
     {
-      objective.QuestItem = QuestCreateItem(Quest);
+      objective.QuestItem = Quest.AddItem();
       objective.UpdateDisplay();
     }
 

@@ -10,8 +10,8 @@ namespace MacroTools.Libraries;
 /// </summary>
 public static class GeneralHelpers
 {
-  private static readonly group _tempGroup = CreateGroup();
-  private static readonly rect _tempRect = Rect(0, 0, 0, 0);
+  private static readonly group _tempGroup = group.Create();
+  private static readonly rect _tempRect = rect.Create(0, 0, 0, 0);
 
   private static Point? _enumDestructableCenter;
   private static float _enumDestructableRadius;
@@ -19,7 +19,7 @@ public static class GeneralHelpers
   private static bool EnumDestructablesInCircleFilter()
   {
     return MathEx.GetDistanceBetweenPoints(
-      new Point(GetDestructableX(GetFilterDestructable()), GetDestructableY(GetFilterDestructable())),
+      new Point(GetFilterDestructable().X, GetFilterDestructable().Y),
       _enumDestructableCenter!) <= _enumDestructableRadius;
   }
 
@@ -42,7 +42,7 @@ public static class GeneralHelpers
     _enumDestructableCenter = center;
     _enumDestructableRadius = radius;
     var circleAsRectangle = GetRectFromCircle(center, radius);
-    EnumDestructablesInRect(circleAsRectangle.Rect, Condition(EnumDestructablesInCircleFilter), actionFunc);
+    circleAsRectangle.Rect.EnumerateDestructables(Condition(EnumDestructablesInCircleFilter), actionFunc);
   }
 
   /// <summary>
@@ -52,7 +52,7 @@ public static class GeneralHelpers
   {
     var location = Location(position.X, position.Y);
     SetBlightLoc(whichPlayer, location, radius, addBlight);
-    RemoveLocation(location);
+    location.Dispose();
   }
 
   /// <summary>
@@ -81,22 +81,22 @@ public static class GeneralHelpers
   /// </summary>
   public static void KillNeutralHostileUnitsInRadius(float x, float y, float radius)
   {
-    GroupEnumUnitsInRange(_tempGroup, x, y, radius, null);
+    _tempGroup.EnumUnitsInRange(x, y, radius, null);
     while (true)
     {
-      var u = FirstOfGroup(_tempGroup);
+      var u = _tempGroup.First;
       if (u == null)
       {
         break;
       }
 
-      if (GetOwningPlayer(u) == Player(PLAYER_NEUTRAL_AGGRESSIVE) && !IsUnitType(u, UNIT_TYPE_SAPPER) &&
-          !IsUnitType(u, UNIT_TYPE_STRUCTURE))
+      if (u.Owner == player.NeutralAggressive && !u.IsUnitType(unittype.Sapper) &&
+          !u.IsUnitType(unittype.Structure))
       {
-        KillUnit(u);
+        u.Kill();
       }
 
-      GroupRemoveUnit(_tempGroup, u);
+      _tempGroup.Remove(u);
     }
   }
 
@@ -106,26 +106,26 @@ public static class GeneralHelpers
   public static unit CreateStructureForced(player whichPlayer, int unitId, float x, float y, float face, float size)
   {
     SetRect(_tempRect, x - size / 2, y - size / 2, x + size / 2, y + size / 2);
-    GroupEnumUnitsInRect(_tempGroup, _tempRect, null);
+    _tempGroup.EnumUnitsInRect(_tempRect, null);
     while (true)
     {
-      var u = FirstOfGroup(_tempGroup);
+      var u = _tempGroup.First;
       if (u == null)
       {
         break;
       }
 
-      if (IsUnitType(u, UNIT_TYPE_STRUCTURE))
+      if (u.IsUnitType(unittype.Structure))
       {
-        GetOwningPlayer(u).AdjustPlayerState(PLAYER_STATE_RESOURCE_GOLD, GetUnitGoldCost(GetUnitTypeId(u)));
-        GetOwningPlayer(u).AdjustPlayerState(PLAYER_STATE_RESOURCE_LUMBER, GetUnitWoodCost(GetUnitTypeId(u)));
-        KillUnit(u);
+        u.Owner.AdjustPlayerState(playerstate.ResourceGold, unit.GoldCostOf(u.UnitType));
+        u.Owner.AdjustPlayerState(playerstate.ResourceLumber, unit.WoodCostOf(u.UnitType));
+        u.Kill();
       }
 
-      GroupRemoveUnit(_tempGroup, u);
+      _tempGroup.Remove(u);
     }
 
-    return CreateUnit(whichPlayer, unitId, x, y, face);
+    return unit.Create(whichPlayer, unitId, x, y, face);
   }
 
   /// <summary>
@@ -143,7 +143,7 @@ public static class GeneralHelpers
         break;
       }
 
-      createdUnits.Add(CreateUnit(whichPlayer, unitId, x, y, face));
+      createdUnits.Add(unit.Create(whichPlayer, unitId, x, y, face));
       i += 1;
     }
 
@@ -152,8 +152,8 @@ public static class GeneralHelpers
 
   public static region RectToRegion(rect whichRect)
   {
-    var rectRegion = CreateRegion();
-    RegionAddRect(rectRegion, whichRect);
+    var rectRegion = region.Create();
+    rectRegion.AddRect(whichRect);
     return rectRegion;
   }
 }

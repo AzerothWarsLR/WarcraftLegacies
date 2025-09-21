@@ -26,7 +26,7 @@ public sealed class LegendDruids
       DeathMessage =
         "The Lord of the Forest, Cenarius, has fallen. The druids of the Kaldorei have lost their greatest mentor.",
       DeathSfx = @"Objects\Spawnmodels\NightElf\EntBirthTarget\EntBirthTarget.mdl",
-      PlayerColor = PLAYER_COLOR_CYAN,
+      PlayerColor = playercolor.Cyan,
     };
 
     Malfurion = new LegendaryHero("Malfurion")
@@ -34,7 +34,7 @@ public sealed class LegendDruids
       UnitType = FourCC("Efur"),
       StartingArtifacts = new()
       {
-        new(CreateItem(ITEM_I00C_G_HANIR_THE_MOTHER_TREE, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
+        new(item.Create(ITEM_I00C_G_HANIR_THE_MOTHER_TREE, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
       }
     };
 

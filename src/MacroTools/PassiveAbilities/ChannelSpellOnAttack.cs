@@ -42,7 +42,7 @@ public sealed class ChannelSpellOnAttack : PassiveAbility, IAppliesEffectOnDamag
   /// <summary>
   /// The current level of this <see cref="Spell"/> instance for any specified unit.
   /// </summary>
-  protected int GetAbilityLevel(unit whichUnit) => GetUnitAbilityLevel(whichUnit, AbilityTypeId);
+  protected int GetAbilityLevel(unit whichUnit) => whichUnit.GetAbilityLevel(AbilityTypeId);
 
   /// <summary>
   /// Initializes a new instance of the <see cref="NoTargetSpellOnAttack"/> class.
@@ -57,8 +57,8 @@ public sealed class ChannelSpellOnAttack : PassiveAbility, IAppliesEffectOnDamag
   /// <inheritdoc />
   public void OnDealsDamage()
   {
-    var caster = GetEventDamageSource();
-    if (!BlzGetEventIsAttack() || GetUnitAbilityLevel(caster, AbilityTypeId) == 0)
+    var caster = @event.DamageSource;
+    if (!@event.IsAttack || caster.GetAbilityLevel(AbilityTypeId) == 0)
     {
       return;
     }
@@ -70,5 +70,5 @@ public sealed class ChannelSpellOnAttack : PassiveAbility, IAppliesEffectOnDamag
   }
 
   private void ChannelNoTarget(unit caster) => DummyCasterManager.GetLongLivedDummyCaster().ChannelAtCaster(caster, DummyAbilityId,
-    DummyOrderId, GetUnitAbilityLevel(caster, AbilityTypeId), DurationBase + DurationLevel * GetAbilityLevel(caster));
+    DummyOrderId, caster.GetAbilityLevel(AbilityTypeId), DurationBase + DurationLevel * GetAbilityLevel(caster));
 }

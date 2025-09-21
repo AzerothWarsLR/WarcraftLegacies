@@ -19,8 +19,8 @@ public sealed class ObjectiveLegendHasArtifact : Objective
   public ObjectiveLegendHasArtifact(Legend targetLegend, Artifact targetArtifact, bool failOnArtifactLoss = false)
   {
     Description = targetLegend is LegendaryHero legendaryHero
-      ? $"{legendaryHero.Name} has {GetItemName(targetArtifact.Item)}"
-      : $"{GetUnitName(targetLegend.Unit!)} has {GetItemName(targetArtifact.Item)}";
+      ? $"{legendaryHero.Name} has {targetArtifact.Item.Name}"
+      : $"{targetLegend.Unit!.Name} has {targetArtifact.Item.Name}";
 
     _targetLegend = targetLegend;
     _targetArtifact = targetArtifact;

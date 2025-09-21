@@ -13,8 +13,8 @@ public static class UninviteCommand
 
   private static void Actions()
   {
-    var enteredString = GetEventPlayerChatString();
-    var triggerPlayer = GetTriggerPlayer();
+    var enteredString = @event.PlayerChatString;
+    var triggerPlayer = @event.Player;
 
     if (SubString(enteredString, 0, StringLength(Command)) != Command)
     {
@@ -32,24 +32,23 @@ public static class UninviteCommand
       }
       else
       {
-        DisplayTextToPlayer(triggerPlayer, 0, 0,
-          $"There is no player with the Faction {targetFaction.ColoredName}.");
+        triggerPlayer.DisplayTextTo($"There is no player with the Faction {targetFaction.ColoredName}.", 0, 0);
       }
     }
     else
     {
-      DisplayTextToPlayer(triggerPlayer, 0, 0, $"There is no Faction with the name {content}.");
+      triggerPlayer.DisplayTextTo($"There is no Faction with the name {content}.", 0, 0);
     }
   }
 
   public static void Setup()
   {
-    var trig = CreateTrigger();
+    var trig = trigger.Create();
     foreach (var player in Util.EnumeratePlayers())
     {
-      TriggerRegisterPlayerChatEvent(trig, player, Command, false);
+      trig.RegisterPlayerChatEvent(player, Command, false);
     }
 
-    TriggerAddAction(trig, Actions);
+    trig.AddAction(Actions);
   }
 }

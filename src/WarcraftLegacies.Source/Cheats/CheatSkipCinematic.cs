@@ -11,13 +11,13 @@ public static class CheatSkipCinematic
 
   public static void Init()
   {
-    var timer = CreateTimer();
-    TimerStart(timer, 1, false, DelayedSetup);
+    timer timer = timer.Create();
+    timer.Start(1, false, DelayedSetup);
   }
 
   private static void Actions()
   {
-    if (!TestMode.CheatCondition(GetTriggerPlayer()))
+    if (!TestMode.CheatCondition(@event.Player))
     {
       return;
     }
@@ -33,25 +33,25 @@ public static class CheatSkipCinematic
     }
     finally
     {
-      DestroyTrigger(GetTriggeringTrigger());
+      @event.Trigger.Dispose();
     }
   }
 
   private static void DelayedSetup()
   {
-    _skipTrigger = CreateTrigger();
+    _skipTrigger = trigger.Create();
     foreach (var player in Util.EnumeratePlayers())
     {
-      TriggerRegisterPlayerEvent(_skipTrigger, player, EVENT_PLAYER_END_CINEMATIC);
+      _skipTrigger.RegisterPlayerEvent(player, playerevent.EndCinematic);
     }
 
-    TriggerAddAction(_skipTrigger, Actions);
+    _skipTrigger.AddAction(Actions);
 
     GameTime.GameStarted += (_, _) =>
     {
       if (_skipTrigger != null)
       {
-        DestroyTrigger(_skipTrigger);
+        _skipTrigger.Dispose();
       }
     };
   }

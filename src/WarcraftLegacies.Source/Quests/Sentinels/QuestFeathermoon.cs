@@ -47,33 +47,33 @@ public sealed class QuestFeathermoon : QuestData
 
     foreach (var unit in _rescueUnits)
     {
-      BlzPauseUnitEx(unit, false);
+      unit.SetPausedEx(false);
     }
 
-    if (_feathermoon.Unit != null && UnitAlive(_feathermoon.Unit))
+    if (_feathermoon.Unit != null && _feathermoon.Unit.Alive)
     {
       _feathermoon.Unit.SetLifePercent(100);
-      _feathermoon.Unit.Rescue(completingFaction.Player ?? Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      _feathermoon.Unit.Rescue(completingFaction.Player ?? player.NeutralAggressive);
     }
   }
 
   protected override void OnFail(Faction failingFaction)
   {
     var rescuer = failingFaction.ScoreStatus == ScoreStatus.Defeated
-      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      ? player.NeutralAggressive
       : failingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);
 
     foreach (var unit in _rescueUnits)
     {
-      BlzPauseUnitEx(unit, false);
+      unit.SetPausedEx(false);
     }
 
-    if (_feathermoon.Unit != null && UnitAlive(_feathermoon.Unit))
+    if (_feathermoon.Unit != null && _feathermoon.Unit.Alive)
     {
       _feathermoon.Unit.SetLifePercent(100);
-      _feathermoon.Unit.Rescue(Player(PLAYER_NEUTRAL_AGGRESSIVE));
+      _feathermoon.Unit.Rescue(player.NeutralAggressive);
     }
   }
 }

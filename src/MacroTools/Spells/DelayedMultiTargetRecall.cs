@@ -43,9 +43,9 @@ public sealed class DelayedMultiTargetRecall : Spell
 
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    var center = TargetType == SpellTargetType.None ? new Point(GetUnitX(caster), GetUnitY(caster)) : targetPoint;
+    var center = TargetType == SpellTargetType.None ? new Point(caster.X, caster.Y) : targetPoint;
 
-    var distance = InstanceSystem.GetDistanceBetweenPointsEx(new Point(GetUnitX(caster), GetUnitY(caster)), center);
+    var distance = InstanceSystem.GetDistanceBetweenPointsEx(new Point(caster.X, caster.Y), center);
     var distanceDuration = (int)distance / DistanceDivider;
     var finalDuration = distance == -1
       ? CrossDimensionalDuration
@@ -73,12 +73,12 @@ public sealed class DelayedMultiTargetRecall : Spell
 
   private static bool IsValidTarget(unit caster, unit target)
   {
-    return GetOwningPlayer(caster) == GetOwningPlayer(target) &&
-           UnitAlive(target) &&
-           BlzIsUnitInvulnerable(target) == false &&
+    return caster.Owner == target.Owner &&
+           target.Alive &&
+           target.IsInvulnerable == false &&
            !target.IsResistant() &&
-           !IsUnitType(target, UNIT_TYPE_STRUCTURE) &&
-           !IsUnitType(target, UNIT_TYPE_ANCIENT) &&
+           !target.IsUnitType(unittype.Structure) &&
+           !target.IsUnitType(unittype.Ancient) &&
            caster != target &&
            !target.IsUnitBoat();
   }

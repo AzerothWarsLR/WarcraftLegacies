@@ -9,7 +9,6 @@ using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
-using static WCSharp.Api.Blizzard;
 
 namespace WarcraftLegacies.Source.Quests.Dalaran;
 
@@ -63,20 +62,20 @@ public sealed class QuestTheramore : QuestData
     }
     else
     {
-      Player(bj_PLAYER_NEUTRAL_VICTIM).RescueGroup(_rescueUnits);
+      player.NeutralVictim.RescueGroup(_rescueUnits);
     }
 
     foreach (var unit in GlobalGroup.EnumUnitsInRect(Regions.Dalaran).Where(x =>
-               GetOwningPlayer(x) == completingFaction.Player && !IsUnitType(x, UNIT_TYPE_STRUCTURE)).ToList())
+               x.Owner == completingFaction.Player && !x.IsUnitType(unittype.Structure)).ToList())
     {
       unit.SetPosition(Regions.Theramore.Center);
     }
 
     foreach (var unit in GlobalGroup.EnumUnitsInRect(Regions.Dalaran).Where(x =>
-               GetOwningPlayer(x) == completingFaction.Player && IsUnitType(x, UNIT_TYPE_STRUCTURE)).ToList())
+               x.Owner == completingFaction.Player && x.IsUnitType(unittype.Structure)).ToList())
     {
-      var whichPlayer = Player(PLAYER_NEUTRAL_AGGRESSIVE);
-      SetUnitOwner(unit, whichPlayer, true);
+      var whichPlayer = player.NeutralAggressive;
+      unit.SetOwner(whichPlayer, true);
     }
   }
 
@@ -84,7 +83,7 @@ public sealed class QuestTheramore : QuestData
   protected override void OnFail(Faction completingFaction)
   {
     var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      ? player.NeutralAggressive
       : completingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);

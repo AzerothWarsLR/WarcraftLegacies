@@ -31,7 +31,7 @@ public sealed class DemonGateBuff : TickingBuff
     {
       _progress = value;
       var value1 = (int)value;
-      SetUnitState(Target, UNIT_STATE_MANA, value1);
+      Target.Mana = value1;
     }
   }
 
@@ -39,7 +39,7 @@ public sealed class DemonGateBuff : TickingBuff
   {
     get
     {
-      if (FocalDemonGateBuff.Instance != null && UnitAlive(FocalDemonGateBuff.Instance.Target))
+      if (FocalDemonGateBuff.Instance != null && FocalDemonGateBuff.Instance.Target.Alive)
       {
         return FocalDemonGateBuff.Instance.SpawnPoint;
       }
@@ -47,13 +47,13 @@ public sealed class DemonGateBuff : TickingBuff
       var targetPosition = Target.GetPosition();
       var offsetPosition =
         WCSharp.Shared.Util.PositionWithPolarOffset(targetPosition.X, targetPosition.Y, SpawnDistance,
-          GetUnitFacing(Target) + FacingOffset);
+          Target.Facing + FacingOffset);
       return new Point(offsetPosition.x, offsetPosition.y);
     }
   }
 
   private Point RallyPoint =>
-    FocalDemonGateBuff.Instance != null && UnitAlive(FocalDemonGateBuff.Instance.Target)
+    FocalDemonGateBuff.Instance != null && FocalDemonGateBuff.Instance.Target.Alive
       ? FocalDemonGateBuff.Instance.RallyPoint
       : Target.GetRallyPoint();
 
@@ -88,9 +88,9 @@ public sealed class DemonGateBuff : TickingBuff
   public override void OnApply()
   {
     Target.IssueOrder(OrderId("setrally"), Target.GetPosition());
-    BlzSetUnitMaxMana(Target, (int)_spawnInterval);
-    UnitAddAbility(Target, _toggleAbilityTypeId);
-    IssueImmediateOrder(Target, "immolation");
+    Target.MaxMana = (int)_spawnInterval;
+    Target.AddAbility(_toggleAbilityTypeId);
+    Target.IssueOrder("immolation");
     Progress = _spawnInterval / 2;
   }
 
@@ -103,9 +103,9 @@ public sealed class DemonGateBuff : TickingBuff
     }
 
     if (Progress >= _spawnInterval
-        && GetOwningPlayer(Caster).GetFoodUsed() < GetOwningPlayer(Caster).GetFoodCap()
-        && GetOwningPlayer(Caster).GetFoodUsed() < GetOwningPlayer(Caster).GetFoodCapCeiling()
-        && GetUnitAbilityLevel(Caster, _toggleBuffTypeId) > 0
+        && Caster.Owner.GetFoodUsed() < Caster.Owner.GetFoodCap()
+        && Caster.Owner.GetFoodUsed() < Caster.Owner.GetFoodCapCeiling()
+        && Caster.GetAbilityLevel(_toggleBuffTypeId) > 0
         && _spawnedDemons.Count <= SpawnLimit - _spawnCount)
     {
       SpawnDemon();
@@ -121,7 +121,7 @@ public sealed class DemonGateBuff : TickingBuff
     }
 
     var maximumMana = (int)_spawnInterval;
-    BlzSetUnitMaxMana(Target, maximumMana);
+    Target.MaxMana = maximumMana;
     return StackResult.Consume;
   }
 
@@ -140,22 +140,21 @@ public sealed class DemonGateBuff : TickingBuff
   {
     for (var i = 0; i < _spawnCount; i++)
     {
-      var spawnedDemon = CreateUnit(GetOwningPlayer(Target), _demonUnitTypeId, SpawnPoint.X, SpawnPoint.Y,
-        GetUnitFacing(Target) + FacingOffset);
+      var spawnedDemon = unit.Create(Target.Owner, _demonUnitTypeId, SpawnPoint.X, SpawnPoint.Y, Target.Facing + FacingOffset);
       spawnedDemon.IssueOrder(OrderId("attack"), RallyPoint);
 
       _spawnedDemons.Add(spawnedDemon);
 
-      var deathTrigger = CreateTrigger();
-      TriggerRegisterUnitEvent(deathTrigger, spawnedDemon, EVENT_UNIT_DEATH);
-      TriggerAddAction(deathTrigger, () =>
+      var deathTrigger = trigger.Create();
+      deathTrigger.RegisterUnitEvent(spawnedDemon, unitevent.Death);
+      deathTrigger.AddAction(() =>
       {
         _spawnedDemons.Remove(spawnedDemon);
-        DestroyTrigger(GetTriggeringTrigger());
+        @event.Trigger.Dispose();
       });
     }
 
-    EffectSystem.Add(AddSpecialEffect(SpawnEffectPath, SpawnPoint.X, SpawnPoint.Y));
+    EffectSystem.Add(effect.Create(SpawnEffectPath, SpawnPoint.X, SpawnPoint.Y));
     Progress = 0;
   }
 }

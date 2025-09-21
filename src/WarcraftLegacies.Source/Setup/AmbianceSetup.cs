@@ -22,8 +22,8 @@ public static class AmbianceSetup
 
   private static void StopDefaultAmbientSounds()
   {
-    StopSound(bj_dayAmbientSound, true, true);
-    StopSound(bj_nightAmbientSound, true, true);
+    bj_dayAmbientSound.Stop(true, true);
+    bj_nightAmbientSound.Stop(true, true);
   }
 
   private static void SetupEasternKingdoms()

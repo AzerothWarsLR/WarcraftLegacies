@@ -42,7 +42,7 @@ public sealed class CheatPause : Command
 
     foreach (var unit in selectedUnits)
     {
-      BlzPauseUnitEx(unit, toggle);
+      unit.SetPausedEx(toggle);
     }
 
     return "Paused or unpaused selected units.";

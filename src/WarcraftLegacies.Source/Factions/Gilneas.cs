@@ -20,7 +20,7 @@ public sealed class Gilneas : Faction
 
   /// <inheritdoc />
   public Gilneas(PreplacedUnitSystem preplacedUnitSystem, ArtifactSetup artifactSetup, AllLegendSetup allLegendSetup)
-    : base("Gilneas", PLAYER_COLOR_PINK, @"ReplaceableTextures\CommandButtons\BTNGreymane.blp")
+    : base("Gilneas", playercolor.Pink, @"ReplaceableTextures\CommandButtons\BTNGreymane.blp")
   {
     TraditionalTeam = TeamSetup.NorthAlliance;
     _artifactSetup = artifactSetup;

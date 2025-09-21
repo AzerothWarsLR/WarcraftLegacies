@@ -19,7 +19,7 @@ public static class KulTirasSpellSetup
     {
       InteriorWaygateUnitTypeId = UNIT_H03V_ENTRANCE_PORTAL,
       ExteriorWaygateUnitTypeId = UNIT_H05T_INSTANCE_ENTRANCE_PORTAL,
-      GetExteriorWaygatePosition = () => new Point(GetSpellTargetX(), GetSpellTargetY()),
+      GetExteriorWaygatePosition = () => new Point(@event.SpellTargetX, @event.SpellTargetY),
       GetInteriorWaygatePosition = () => Regions.ShipInside.Center
     });
 

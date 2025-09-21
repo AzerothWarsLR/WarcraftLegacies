@@ -13,8 +13,8 @@ public static class InviteCommand
 
   private static void Actions()
   {
-    var enteredString = GetEventPlayerChatString();
-    var triggerPlayer = GetTriggerPlayer();
+    var enteredString = @event.PlayerChatString;
+    var triggerPlayer = @event.Player;
 
     if (SubString(enteredString, 0, StringLength(Command)) != Command)
     {
@@ -26,20 +26,19 @@ public static class InviteCommand
 
     if (!FactionManager.TryGetFactionByName(content, out var targetFaction))
     {
-      DisplayTextToPlayer(triggerPlayer, 0, 0, $"There is no Faction with the name {content}.");
+      triggerPlayer.DisplayTextTo($"There is no Faction with the name {content}.", 0, 0);
       return;
     }
 
     if (triggerPlayer.GetFaction() == targetFaction)
     {
-      DisplayTextToPlayer(triggerPlayer, 0, 0, "You can'invite yourself to your own team.");
+      triggerPlayer.DisplayTextTo("You can'invite yourself to your own team.", 0, 0);
       return;
     }
 
     if (targetFaction.Player == null)
     {
-      DisplayTextToPlayer(triggerPlayer, 0, 0,
-        $"There is no player with the Faction {targetFaction.PrefixCol} {targetFaction.Name}|r.");
+      triggerPlayer.DisplayTextTo($"There is no player with the Faction {targetFaction.PrefixCol} {targetFaction.Name}|r.", 0, 0);
       return;
     }
 
@@ -51,12 +50,12 @@ public static class InviteCommand
 
   public static void Setup()
   {
-    var trig = CreateTrigger();
+    var trig = trigger.Create();
     foreach (var player in Util.EnumeratePlayers())
     {
-      TriggerRegisterPlayerChatEvent(trig, player, Command, false);
+      trig.RegisterPlayerChatEvent(player, Command, false);
     }
 
-    TriggerAddAction(trig, Actions);
+    trig.AddAction(Actions);
   }
 }

@@ -12,11 +12,11 @@ public static class Environment
   /// </summary>
   public static float GetPositionZ(Point position)
   {
-    SetUnitX(_posUnit, position.X);
-    SetUnitY(_posUnit, position.Y);
-    return BlzGetUnitZ(_posUnit);
+    _posUnit.X = position.X;
+    _posUnit.Y = position.Y;
+    return _posUnit.Z;
   }
 
   static Environment() =>
-    _posUnit = CreateUnit(Player(PLAYER_NEUTRAL_PASSIVE), FourCC("u00X"), 0, 0, 0);
+    _posUnit = unit.Create(player.NeutralPassive, FourCC("u00X"), 0, 0, 0);
 }

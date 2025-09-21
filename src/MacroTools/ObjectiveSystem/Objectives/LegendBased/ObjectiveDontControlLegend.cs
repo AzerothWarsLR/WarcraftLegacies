@@ -23,14 +23,14 @@ public sealed class ObjectiveDontControlLegend : Objective
       TargetWidget = target.Unit;
     }
 
-    DisplaysPosition = GetOwningPlayer(target.Unit) == Player(PLAYER_NEUTRAL_AGGRESSIVE);
+    DisplaysPosition = target.Unit.Owner == player.NeutralAggressive;
     target.ChangedOwner += OnTargetChangeOwner;
-    Position = new(GetUnitX(_target.Unit), GetUnitY(_target.Unit));
+    Position = new(_target.Unit.X, _target.Unit.Y);
   }
 
   public override void OnAdd(Faction whichFaction)
   {
-    if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
+    if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.Owner))
     {
       Progress = QuestProgress.Failed;
     }
@@ -42,7 +42,7 @@ public sealed class ObjectiveDontControlLegend : Objective
 
   private void OnTargetChangeOwner(object? sender, LegendChangeOwnerEventArgs legendChangeOwnerEventArgs)
   {
-    if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(GetOwningPlayer(_target.Unit)))
+    if (_target.Unit != null && IsPlayerOnSameTeamAsAnyEligibleFaction(_target.Unit.Owner))
     {
       Progress = QuestProgress.Failed;
     }

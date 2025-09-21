@@ -52,16 +52,16 @@ public sealed class QuestDimensionalShip : QuestData
   {
     if (_objectivePowerSource.UsedPowerSource != null)
     {
-      SetItemDroppable(_objectivePowerSource.UsedPowerSource, false);
+      _objectivePowerSource.UsedPowerSource.IsDroppable = false;
     }
 
-    var deathTrigger = CreateTrigger();
-    TriggerRegisterUnitEvent(deathTrigger, _dimensionalGenerator, EVENT_UNIT_DEATH);
-    TriggerAddAction(deathTrigger, () =>
+    var deathTrigger = trigger.Create();
+    deathTrigger.RegisterUnitEvent(_dimensionalGenerator, unitevent.Death);
+    deathTrigger.AddAction(() =>
     {
       if (_objectivePowerSource.UsedPowerSource != null)
       {
-        SetItemDroppable(_objectivePowerSource.UsedPowerSource, true);
+        _objectivePowerSource.UsedPowerSource.IsDroppable = true;
       }
     });
   }

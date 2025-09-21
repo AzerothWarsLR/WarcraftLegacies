@@ -21,22 +21,22 @@ public sealed class PlayerSetup
 
   public void Setup()
   {
-    SetupPlayer(Player(1), new Stormwind(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
-    SetupPlayer(Player(2), new Quelthalas(_preplacedUnitSystem, _allLegendSetup));
-    SetupPlayer(Player(3), new Scourge(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
-    SetupPlayer(Player(4), new Ironforge(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
-    SetupPlayer(Player(6), new FelHorde(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
-    Player(7).SetTeam(TeamSetup.NorthAlliance);
-    Player(0).SetTeam(TeamSetup.Kalimdor);
-    SetupPlayer(Player(8), new Skywall(_allLegendSetup));
-    SetupPlayer(Player(9), new Lordaeron(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
-    SetupPlayer(Player(11), new Druids(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
-    SetupPlayer(Player(12), new BlackEmpire(_preplacedUnitSystem, _allLegendSetup));
-    SetupPlayer(Player(16), new Ahnqiraj(_preplacedUnitSystem, _allLegendSetup));
-    Player(18).SetTeam(TeamSetup.Kalimdor);
-    Player(15).SetTeam(TeamSetup.Outland);
-    SetupPlayer(Player(22), new Kultiras(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
-    SetupPlayer(Player(23), new Legion(_preplacedUnitSystem, _allLegendSetup));
+    SetupPlayer(player.Create(1), new Stormwind(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
+    SetupPlayer(player.Create(2), new Quelthalas(_preplacedUnitSystem, _allLegendSetup));
+    SetupPlayer(player.Create(3), new Scourge(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
+    SetupPlayer(player.Create(4), new Ironforge(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
+    SetupPlayer(player.Create(6), new FelHorde(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
+    player.Create(7).SetTeam(TeamSetup.NorthAlliance);
+    player.Create(0).SetTeam(TeamSetup.Kalimdor);
+    SetupPlayer(player.Create(8), new Skywall(_allLegendSetup));
+    SetupPlayer(player.Create(9), new Lordaeron(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
+    SetupPlayer(player.Create(11), new Druids(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
+    SetupPlayer(player.Create(12), new BlackEmpire(_preplacedUnitSystem, _allLegendSetup));
+    SetupPlayer(player.Create(16), new Ahnqiraj(_preplacedUnitSystem, _allLegendSetup));
+    player.Create(18).SetTeam(TeamSetup.Kalimdor);
+    player.Create(15).SetTeam(TeamSetup.Outland);
+    SetupPlayer(player.Create(22), new Kultiras(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
+    SetupPlayer(player.Create(23), new Legion(_preplacedUnitSystem, _allLegendSetup));
   }
 
 
@@ -49,7 +49,7 @@ public sealed class PlayerSetup
     }
     else
     {
-      throw new InvalidOperationException($"{GetPlayerName(player)}'s {nameof(Faction)} doesn't have a {nameof(Faction.TraditionalTeam)}.");
+      throw new InvalidOperationException($"{player.Name}'s {nameof(Faction)} doesn't have a {nameof(Faction.TraditionalTeam)}.");
     }
 
     player.SetFaction(faction);

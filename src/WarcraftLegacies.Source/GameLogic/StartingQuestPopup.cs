@@ -17,9 +17,9 @@ public static class StartingQuestPopup
   /// <param name="timeToDisplay">Number of seconds after which to display the quests.</param>
   public static void Setup(float timeToDisplay)
   {
-    var trig = CreateTrigger();
-    TriggerRegisterTimerEvent(trig, timeToDisplay, false);
-    TriggerAddAction(trig, () =>
+    var trig = trigger.Create();
+    trig.RegisterTimerEvent(timeToDisplay, false);
+    trig.AddAction(() =>
     {
       foreach (var player in Util.EnumeratePlayers())
       {

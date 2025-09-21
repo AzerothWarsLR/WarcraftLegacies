@@ -57,56 +57,56 @@ public sealed class Channel : IDisposable
     _position = position;
 
     caster.SetPosition(_position);
-    BlzPauseUnitEx(caster, true);
-    SetUnitAnimation(caster, "channel");
-    BlzSetUnitFacingEx(caster, facing);
-    SetUnitInvulnerable(caster, false);
-    _sfxProgress = AddSpecialEffect(ProgressEffect, GetUnitX(caster), GetUnitY(caster));
-    BlzSetSpecialEffectTimeScale(_sfxProgress, 10 / (float)duration);
-    BlzSetSpecialEffectColorByPlayer(_sfxProgress, GetOwningPlayer(caster));
-    BlzSetSpecialEffectScale(_sfxProgress, ProgressScale);
-    BlzSetSpecialEffectHeight(_sfxProgress, ProgressHeight + Environment.GetPositionZ(position));
-    _sfx = AddSpecialEffect(Effect, GetUnitX(caster), GetUnitY(caster));
+    caster.SetPausedEx(true);
+    caster.SetAnimation("channel");
+    caster.Facing = facing;
+    caster.IsInvulnerable = false;
+    _sfxProgress = effect.Create(ProgressEffect, caster.X, caster.Y);
+    _sfxProgress.SetTimeScale(10 / (float)duration);
+    _sfxProgress.SetColor(caster.Owner);
+    _sfxProgress.Scale = ProgressScale;
+    _sfxProgress.SetHeight(ProgressHeight + Environment.GetPositionZ(position));
+    _sfx = effect.Create(Effect, caster.X, caster.Y);
 
     if (timerDialogTitle != null)
     {
-      _channelingTimer = CreateTimer();
-      TimerStart(_channelingTimer, _maxDuration, false, null);
-      _channelingDialog = CreateTimerDialog(_channelingTimer);
-      TimerDialogSetTitle(_channelingDialog, timerDialogTitle);
-      TimerDialogDisplay(_channelingDialog, true);
+      _channelingTimer = timer.Create();
+      _channelingTimer.Start(_maxDuration, false, null);
+      _channelingDialog = timerdialog.Create(_channelingTimer);
+      _channelingDialog.SetTitle(timerDialogTitle);
+      _channelingDialog.IsDisplayed = true;
     }
 
-    _periodictimer = CreateTimer();
-    TimerStart(_periodictimer, Period, true, Periodic);
+    _periodictimer = timer.Create();
+    _periodictimer.Start(Period, true, Periodic);
   }
 
   /// <inheritdoc />
   public void Dispose()
   {
-    BlzSetSpecialEffectPosition(_sfxProgress, -100000, -100000, 0); //Has no death animation so needs to be moved off the map
-    DestroyEffect(_sfxProgress);
-    DestroyEffect(_sfx);
+    _sfxProgress.SetPosition(-100000, -100000, 0); //Has no death animation so needs to be moved off the map
+    _sfxProgress.Dispose();
+    _sfx.Dispose();
     if (_channelingTimer != null)
     {
-      DestroyTimer(_channelingTimer);
+      _channelingTimer.Dispose();
     }
 
-    DestroyTimer(_periodictimer);
-    DestroyTimerDialog(_channelingDialog);
+    _periodictimer.Dispose();
+    _channelingDialog.Dispose();
   }
 
   private void End(bool finishedWithoutInterruption)
   {
-    BlzPauseUnitEx(_caster, false);
+    _caster.SetPausedEx(false);
     if (finishedWithoutInterruption)
     {
-      SetUnitAnimation(_caster, "spell");
+      _caster.SetAnimation("spell");
     }
 
-    if (UnitAlive(_caster))
+    if (_caster.Alive)
     {
-      QueueUnitAnimation(_caster, "stand");
+      _caster.QueueAnimation("stand");
     }
 
     FinishedWithoutInterruption = finishedWithoutInterruption;
@@ -115,7 +115,7 @@ public sealed class Channel : IDisposable
 
   private void Periodic()
   {
-    if (!UnitAlive(_caster) || MathEx.GetDistanceBetweenPoints(new Point(GetUnitX(_caster), GetUnitY(_caster)),
+    if (!_caster.Alive || MathEx.GetDistanceBetweenPoints(new Point(_caster.X, _caster.Y),
       _position) > 100)
     {
       End(false);

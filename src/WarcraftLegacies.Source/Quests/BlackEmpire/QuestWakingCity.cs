@@ -37,7 +37,7 @@ public sealed class QuestWakingCity : QuestData
     AddObjective(new ObjectiveUpgrade(UNIT_N0AT_CATHEDRAL_OF_MADNESS_YOGG_T3, UNIT_N0AR_TWISTING_HALLS_YOGG_T1));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
-      filterUnit => GetUnitTypeId(filterUnit) != FourCC("ngol"));
+      filterUnit => filterUnit.UnitType != FourCC("ngol"));
     ResearchId = UPGRADE_RBIT_QUEST_COMPLETED_THE_WAKING_CITY;
     _allLegendSetup = allLegendSetup;
 
@@ -53,7 +53,7 @@ public sealed class QuestWakingCity : QuestData
   protected override void OnFail(Faction completingFaction)
   {
     var rescuer = completingFaction.ScoreStatus == ScoreStatus.Defeated
-      ? Player(PLAYER_NEUTRAL_AGGRESSIVE)
+      ? player.NeutralAggressive
       : completingFaction.Player;
 
     rescuer.RescueGroup(_rescueUnits);

@@ -107,7 +107,7 @@ public abstract class Faction
       _foodMaximum = value;
       if (Player != null)
       {
-        SetPlayerState(Player, PLAYER_STATE_FOOD_CAP_CEILING, value);
+        Player.SetState(playerstate.FoodCapCeiling, value);
       }
     }
   }
@@ -189,7 +189,7 @@ public abstract class Faction
       _undefeatedResearch = value;
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
       {
-        SetPlayerTechResearched(player, _undefeatedResearch, 1);
+        player.SetTechResearched(_undefeatedResearch, 1);
       }
     }
   }
@@ -239,15 +239,14 @@ public abstract class Faction
   {
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
-      SetPlayerTechResearched(player, _undefeatedResearch, 0);
+      player.SetTechResearched(_undefeatedResearch, 0);
     }
 
     if (Player != null)
     {
-      FogModifierStart(CreateFogModifierRect(Player, FOG_OF_WAR_VISIBLE,
-        Rectangle.WorldBounds.Rect, false, false));
-      RemovePlayer(Player, PLAYER_GAME_RESULT_DEFEAT);
-      SetPlayerState(Player, PLAYER_STATE_OBSERVER, 1);
+      Rectangle.WorldBounds.Rect.AddFogModifier(Player, fogstate.Visible, false, false).Start();
+      Player.Remove(playergameresult.Defeat);
+      Player.SetState(playerstate.Observer, 1);
       PlayerDistributor.DistributePlayer(Player);
       RemoveGoldMines();
     }
@@ -362,7 +361,7 @@ public abstract class Faction
 
     questData.Add(this);
     _questsByName.Add(questData.Title.ToLower(), questData);
-    if (GetLocalPlayer() == Player)
+    if (player.LocalPlayer == Player)
     {
       questData.ShowLocal();
     }
@@ -399,7 +398,7 @@ public abstract class Faction
 
     if (Player != null)
     {
-      SetPlayerAbilityAvailable(Player, ability, value > 0);
+      Player.SetAbilityAvailable(ability, value > 0);
     }
   }
 
@@ -500,7 +499,7 @@ public abstract class Faction
         throw new InvalidOperationException($"Tried to remove Gold Mine from {Name} that they don't own.");
       }
 
-      RemoveUnit(goldMine);
+      goldMine.Dispose();
     }
   }
 
@@ -627,7 +626,7 @@ public abstract class Faction
 
     foreach (var legend in LegendaryHeroManager.GetAll())
     {
-      if (legend.Essential && legend.OwningPlayer == Player && (legend.Unit != null ? UnitAlive(legend.Unit) : null) == true)
+      if (legend.Essential && legend.OwningPlayer == Player && (legend.Unit != null ? legend.Unit.Alive : null) == true)
       {
         essentialLegends.Add(legend);
       }
@@ -635,7 +634,7 @@ public abstract class Faction
 
     foreach (var capital in CapitalManager.GetAll())
     {
-      if (capital.Essential && capital.OwningPlayer == Player && (capital.Unit != null ? UnitAlive(capital.Unit) : null) == true)
+      if (capital.Essential && capital.OwningPlayer == Player && (capital.Unit != null ? capital.Unit.Alive : null) == true)
       {
         essentialLegends.Add(capital);
       }
@@ -649,7 +648,7 @@ public abstract class Faction
   {
     foreach (var unit in GoldMines)
     {
-      KillUnit(unit);
+      unit.Kill();
     }
 
     _goldMines.Clear();
@@ -664,7 +663,7 @@ public abstract class Faction
     ApplyObjects();
     ApplyPowers();
     ShowAllQuests();
-    SetPlayerState(Player, PLAYER_STATE_FOOD_CAP_CEILING, _foodMaximum);
+    Player.SetState(playerstate.FoodCapCeiling, _foodMaximum);
   }
 
   /// <summary>
@@ -721,7 +720,7 @@ public abstract class Faction
     {
       if (Player != null)
       {
-        SetPlayerAbilityAvailable(Player, key, value > 0);
+        Player.SetAbilityAvailable(key, value > 0);
       }
     }
   }
@@ -743,7 +742,7 @@ public abstract class Faction
     {
       if (Player != null)
       {
-        SetPlayerAbilityAvailable(Player, key, true);
+        Player.SetAbilityAvailable(key, true);
       }
     }
   }
@@ -756,7 +755,7 @@ public abstract class Faction
   {
     foreach (var quest in _questsByName.Values)
     {
-      if (GetLocalPlayer() == Player)
+      if (player.LocalPlayer == Player)
       {
         quest.ShowLocal();
       }
@@ -769,7 +768,7 @@ public abstract class Faction
   {
     foreach (var quest in _questsByName.Values)
     {
-      if (GetLocalPlayer() == Player)
+      if (player.LocalPlayer == Player)
       {
         quest.HideLocal();
       }

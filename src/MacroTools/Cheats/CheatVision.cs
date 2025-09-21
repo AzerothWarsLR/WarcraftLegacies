@@ -27,13 +27,12 @@ public sealed class CheatVision : Command
     switch (toggle)
     {
       case "on":
-        var newFog = CreateFogModifierRect(cheater, FOG_OF_WAR_VISIBLE,
-          WCSharp.Shared.Data.Rectangle.WorldBounds.Rect, true, false);
-        FogModifierStart(newFog);
+        var newFog = WCSharp.Shared.Data.Rectangle.WorldBounds.Rect.AddFogModifier(cheater, fogstate.Visible, true, false);
+        newFog.Start();
         _fogs.Add(cheater, newFog);
         return "Whole map revealed.";
       case "off":
-        DestroyFogModifier(_fogs[cheater]);
+        _fogs[cheater].Dispose();
         return "Whole map unrevealed.";
       default:
         return "You must specify \"on\" or \"off\" as the first parameter.";

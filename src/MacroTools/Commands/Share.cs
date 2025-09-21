@@ -32,7 +32,7 @@ public sealed class Share : Command
       {
         if (faction.Player != null && faction.Player.GetTeam() == cheaterTeam)
         {
-          SetPlayerAlliance(cheater, faction.Player, ALLIANCE_SHARED_CONTROL, true);
+          cheater.SetAlliance(faction.Player, alliancetype.SharedControl, true);
         }
       }
 
@@ -54,7 +54,7 @@ public sealed class Share : Command
       return $"{targetFaction.Name} isn't on your team, so you can't share control with them.";
     }
 
-    SetPlayerAlliance(cheater, targetFaction.Player, ALLIANCE_SHARED_CONTROL, true);
+    cheater.SetAlliance(targetFaction.Player, alliancetype.SharedControl, true);
 
     return $"Shared control with {targetFaction.Name}.";
   }

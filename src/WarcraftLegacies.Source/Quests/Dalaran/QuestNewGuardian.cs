@@ -35,11 +35,11 @@ public sealed class QuestNewGuardian : QuestData
   protected override void OnComplete(Faction completingFaction)
   {
     var whichUnit = _jaina.Unit;
-    UnitRemoveAbility(whichUnit, FourCC("A0RB"));
-    AddSpecialEffectTarget("war3mapImported\\Soul Armor Cosmic.mdx", whichUnit, "chest");
-    BlzSetUnitName(whichUnit, "Guardian of Tirisfal");
-    UnitAddAbility(whichUnit, ABILITY_A0BX_GUARDIAN_OF_TIRISFAL_DALARAN_GUARDIAN_OF_TIRISFAL);
-    BlzSetUnitWeaponIntegerField(whichUnit, UNIT_WEAPON_IF_ATTACK_ATTACK_TYPE, 0, 5); //Chaos
+    whichUnit.RemoveAbility(FourCC("A0RB"));
+    effect.Create("war3mapImported\\Soul Armor Cosmic.mdx", whichUnit, "chest");
+    whichUnit.Name = "Guardian of Tirisfal";
+    whichUnit.AddAbility(ABILITY_A0BX_GUARDIAN_OF_TIRISFAL_DALARAN_GUARDIAN_OF_TIRISFAL);
+    whichUnit.AttackAttackType1 = WCSharp.Api.Enums.AttackType.Chaos; //Chaos
     whichUnit?.AddHeroAttributes(0, 0, 20);
     _jaina.ClearUnitDependencies();
     _jaina.PermaDies = false;
