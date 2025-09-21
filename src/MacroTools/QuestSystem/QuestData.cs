@@ -86,6 +86,11 @@ public abstract class QuestData
   /// </summary>
   public int ResearchId { get; protected init; }
 
+  /// <summary>
+  /// The amount of Knowledge awarded when the quest is completed.
+  /// </summary>
+  protected int Knowledge { get; init; }
+
   private quest Quest { get; }
 
   /// <summary>
@@ -143,16 +148,25 @@ public abstract class QuestData
 
   private void RefreshDescription()
   {
-    QuestSetDescription(Quest,
-      !string.IsNullOrEmpty(PenaltyDescription)
-        ? $"{Flavour}\n|cffffcc00On completion:|r {RewardDescription}\n|cffffcc00On failure:|r {PenaltyDescription}"
-        : $"{Flavour}\n|cffffcc00On completion:|r {RewardDescription}");
+    var description = Flavour;
+    if (!string.IsNullOrEmpty(RewardDescription))
+    {
+      description += $"\n|cffffcc00On completion:|r {RewardDescription}";
+    }
+    if (!string.IsNullOrEmpty(PenaltyDescription))
+    {
+      description += $"\n|cffffcc00On failure:|r {PenaltyDescription}";
+    }
+    if (Knowledge > 0)
+    {
+      description += $"\n|cff8080ffKnowledge:|r {Knowledge}";
+    }
+    QuestSetDescription(Quest, description);
   }
 
   private void CompleteForFaction(Faction whichFaction)
   {
-    whichFaction
-      .DisplayCompleted(this);
+    whichFaction.DisplayCompleted(this);
     if (Global)
     {
       whichFaction.Player?.DisplayCompletedGlobal(this);
@@ -166,6 +180,11 @@ public abstract class QuestData
     foreach (var objective in Objectives)
     {
       objective.ProgressLocked = true;
+    }
+
+    if (whichFaction.Player != null)
+    {
+      whichFaction.Player.Lumber += Knowledge;
     }
 
     OnComplete(whichFaction);
