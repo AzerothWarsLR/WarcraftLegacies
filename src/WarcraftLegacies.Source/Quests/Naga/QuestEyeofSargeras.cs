@@ -12,14 +12,8 @@ public sealed class QuestEyeofSargeras : QuestData
     @"ReplaceableTextures\CommandButtons\BTNKazzakIon.blp")
   {
     AddObjective(new ObjectiveLegendHasArtifact(illidan, eyeOfSargeras));
-    ResearchId = UPGRADE_R094_QUEST_COMPLETED_THE_EYE_OF_SARGERAS;
   }
 
-  /// <inheritdoc/>
   public override string RewardFlavour =>
     "The Eye of Sargeras' power needs to be channeled by powerful arcanists, the Naga Sea Witch will be the perfect vessels.";
-
-  /// <inheritdoc/>
-  protected override string RewardDescription =>
-    $"Learn to train {GetObjectName(UNIT_HVSH_SEA_WITCH_ILLIDARI)}es from {GetObjectName(UNIT_N055_BETRAYER_S_CITADEL_ILLIDARI_T3)}s";
 }

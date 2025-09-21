@@ -12,6 +12,9 @@ InfoPanelIconArmorNormalNeutral=UI\Widgets\Console\Human\BTNGate.blp
 LumberIcon=war3mapImported\BTNTomeR.blp
 ToolTipLumberIcon=war3mapImported\BTNTomeRes32x32.blp
 
+[Errors]
+Nolumber="Not enough knowledge."
+
 [FrameDef]
 ARMORTIP_DIVINE="Pierce: |cff00ff0050%|r|NSiege: |cff00ff0050%|r|NMagic: |cff00ff0050%|r|nSpell: |cff00ff000%|r|NNormal: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r"
 ARMORTIP_DIVINE_V0C="Pierce: |cff00ff0050%|r|NSiege: |cff00ff0050%|r|NMagic: |cff00ff0050%|r|nSpell: |cff00ff000%|r|NNormal: |cffffff00100%|r|NHero: |cffffff00100%|r|NChaos: |cffff0000110%|r"

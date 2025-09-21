@@ -33,7 +33,7 @@ public static class IllidariObjectInfo
     yield return new(UNIT_NHYC_DRAGON_TURTLE_ILLIDARI, 8);
     yield return new(UNIT_NWGS_COUATL_NZOTH_ILLIDARI, 8);
     yield return new(UNIT_E00Y_SCYLLA_ILLIDARI, 4);
-    yield return new(UNIT_H0AC_NAGA_SEA_WITCH_ILLIDARI_ELITE, 6);
+    yield return new(UNIT_H0AC_SEA_WITCH_ILLIDARI_ELITE, 6);
     yield return new(UNIT_NDRN_ASHTONGUE_DEATHSWORN_ILLIDARI, Unlimited);
     yield return new(UNIT_NDRS_ASHTONGUE_MYSTIC_ILLIDARI, 6);
     yield return new(UNIT_ETRS_NIGHT_ELF_TRANSPORT_SHIP_DRUIDS_SENTINELS, Unlimited);
@@ -50,5 +50,7 @@ public static class IllidariObjectInfo
     yield return new(UNIT_EEVI_DEMON_HUNTER_HYBRID_ILLIDARI, 1);
     yield return new(UPGRADE_RNSW_SIREN_ADEPT_TRAINING, Unlimited);
     yield return new(UPGRADE_R02V_SHADOWCASTER_MASTER_TRAINING, Unlimited);
+    yield return new(UPGRADE_ZBSI_SEA_WITCHES_ILLIDARI, Unlimited);
+    yield return new(UPGRADE_ZB9L_COILFANG_SUMMONERS_ILLIDARI, Unlimited);
   }
 }
