@@ -17,7 +17,7 @@ public sealed class QuestEyeofSargeras : QuestData
   private const int MetamorphosisBuff = BUFF_BEME_ILLIDAN;
 
   public QuestEyeofSargeras(Artifact eyeOfSargeras, LegendaryHero illidan) : base("The Eye of Sargeras",
-    "The Eye of Sargeras is an extremely powerful artifact, it could be the key to satiate Illidan's thirst for power.",
+    "Illidan has long thirsted for power, and no artifact can match the destructive energies of the Dark Titan's eye. Though far too powerful to be consumed in its entirety, merely possessing the artifact will unleash Illidan's true demonic potential.",
     @"ReplaceableTextures\CommandButtons\BTNKazzakIon.blp")
   {
     _illidan = illidan;
@@ -26,7 +26,7 @@ public sealed class QuestEyeofSargeras : QuestData
   }
 
   public override string RewardFlavour =>
-    "The Eye of Sargeras' power needs to be channeled by powerful arcanists, the Naga Sea Witch will be the perfect vessels.";
+    "With the Eye of Sargeras now in hand, Illidan has become more demon than Night Elf. He now wields a tool capable of sundering the world.";
 
   protected override void OnComplete(Faction completingFaction)
   {
