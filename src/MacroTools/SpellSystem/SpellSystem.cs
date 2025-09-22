@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 
@@ -27,6 +28,11 @@ public static class SpellSystem
     return _spellsByAbilityId[abilityId];
   }
 
+  public static bool TryGetSpellByAbilityId(int abilityId, [NotNullWhen(true)] out Spell? spell)
+  {
+    return _spellsByAbilityId.TryGetValue(abilityId, out spell);
+  }
+
   /// <summary>
   ///   Registers the provided <see cref="Spell"/> to the <see cref="SpellSystem"/>, causing its functionality
   /// to be invoked when a Warcraft 3 spell matching its IDs is used.
@@ -36,10 +42,14 @@ public static class SpellSystem
     PlayerUnitEvents.Register(SpellEvent.Cast, OnStartCast, spell.Id);
     PlayerUnitEvents.Register(SpellEvent.Effect, OnCast, spell.Id);
     PlayerUnitEvents.Register(SpellEvent.EndCast, OnStop, spell.Id);
-    PlayerUnitEvents.Register(SpellEvent.Learned, OnLearn, spell.Id);
-    if (spell is IStartChannelEffect)
+    switch (spell)
     {
-      PlayerUnitEvents.Register(SpellEvent.Channel, OnStartChannel, spell.Id);
+      case IStartChannelEffect:
+        PlayerUnitEvents.Register(SpellEvent.Channel, OnStartChannel, spell.Id);
+        break;
+      case IEffectOnLearn:
+        PlayerUnitEvents.Register(SpellEvent.Learned, OnLearn, spell.Id);
+        break;
     }
 
     _spellsByAbilityId.Add(spell.Id, spell);
@@ -63,5 +73,9 @@ public static class SpellSystem
     _spellsByAbilityId[@event.SpellAbilityId]
       .OnStartCast(@event.Unit, @event.SpellTargetUnit, new Point(@event.SpellTargetX, @event.SpellTargetY));
 
-  private static void OnLearn() => _spellsByAbilityId[@event.LearnedSkill].OnLearn(@event.Unit);
+  private static void OnLearn()
+  {
+    var learnedSpell = _spellsByAbilityId[@event.LearnedSkill] as IEffectOnLearn;
+    learnedSpell?.OnLearn(@event.Unit);
+  }
 }
