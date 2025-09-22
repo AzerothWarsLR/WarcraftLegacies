@@ -28,6 +28,9 @@ public sealed class QuestEyeofSargeras : QuestData
   public override string RewardFlavour =>
     "The Eye of Sargeras' power needs to be channeled by powerful arcanists, the Naga Sea Witch will be the perfect vessels.";
 
+  protected override string RewardDescription =>
+    "Illidan's Metamorphosis ability becomes permanent";
+
   protected override void OnComplete(Faction completingFaction)
   {
     RegisterMetamorphosis();
@@ -50,13 +53,12 @@ public sealed class QuestEyeofSargeras : QuestData
         Base = 250,
         PerLevel = 250
       },
-      LearnEffectPath = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl",
-      UnitTypeIdsByLevel = new []
+      DamageBonus = new LeveledAbilityField<int>
       {
-        UNIT_EEVM_DEMON_HUNTER_MORPHED_LEVEL_1_ILLIDARI,
-        UNIT_ZF4B_DEMON_HUNTER_MORPHED_LEVEL_2_ILLIDARI,
-        UNIT_ZB88_DEMON_HUNTER_MORPHED_LEVEL_3_ILLIDARI
-      }
+        Base = 30,
+        PerLevel = 30
+      },
+      LearnEffectPath = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl",
     };
     SpellSystem.Register(permanentMetamorphosis);
   }
