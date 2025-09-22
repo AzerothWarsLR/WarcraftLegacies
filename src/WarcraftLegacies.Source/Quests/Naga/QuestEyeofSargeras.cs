@@ -72,7 +72,7 @@ public sealed class QuestEyeofSargeras : QuestData
     var activeMetamorphosisLevel = _illidan.Unit.GetAbilityLevel(ActiveMetamorphosisId);
     for (var i = 0; i < activeMetamorphosisLevel; i++)
     {
-      _illidan.Unit.SelectHeroSkillWithEvents(PermanentMetamorphosisId);
+      _illidan.Unit.SelectHeroSkill(PermanentMetamorphosisId);
     }
   }
 }

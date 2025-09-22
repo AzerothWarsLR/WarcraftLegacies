@@ -23,9 +23,7 @@ public sealed class PermanentMetamorphosis : Spell, IEffectOnLearn
 
   public void OnLearn(unit learner)
   {
-    var level = learner.GetAbilityLevel(Id);
-
-    if (level == 1 && learner.UnitType != UnitTypeId)
+    if (learner.UnitType != UnitTypeId)
     {
       var legend = LegendaryHeroManager.GetFromUnit(learner);
       if (legend?.Unit != null)
@@ -41,8 +39,15 @@ public sealed class PermanentMetamorphosis : Spell, IEffectOnLearn
         learnEffect.Dispose();
       }
 
-      illidan.MaxLife += HitPointBonus.Base + HitPointBonus.PerLevel;
       illidan.SelectHeroSkill(Id);
+      return;
+    }
+
+    var level = learner.GetAbilityLevel(Id);
+
+    if (level == 1)
+    {
+      learner.MaxLife += HitPointBonus.Base + HitPointBonus.PerLevel;
     }
     else
     {
