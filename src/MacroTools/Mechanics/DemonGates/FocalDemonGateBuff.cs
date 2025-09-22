@@ -52,6 +52,6 @@ public sealed class FocalDemonGateBuff : PassiveBuff
     }
 
     Instance = this;
-    Target.IssueOrder("setrally", SpawnPoint);
+    Target.IssueOrder(ORDER_SET_RALLY, SpawnPoint.X, SpawnPoint.Y);
   }
 }

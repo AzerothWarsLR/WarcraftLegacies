@@ -18,7 +18,8 @@ public static class SummonRallyPoints
       var summoningUnit = @event.SummoningUnit;
       if (summoningUnit.IsUnitType(unittype.Structure))
       {
-        @event.SummonedUnit.IssueOrder("attack", summoningUnit.GetRallyPoint());
+        var rallyPoint = summoningUnit.GetRallyPoint();
+        @event.SummonedUnit.IssueOrder(ORDER_ATTACK, rallyPoint.X, rallyPoint.Y);
       }
     });
   }

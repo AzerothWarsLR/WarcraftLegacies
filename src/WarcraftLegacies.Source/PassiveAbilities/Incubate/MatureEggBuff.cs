@@ -41,6 +41,6 @@ public sealed class MatureEggBuff : PassiveBuff
     }
 
     unit.Create(Target.Owner, HatchedUnitTypeId, Target.X, Target.Y, 270)
-      .IssueOrder("attack", rallyPoint);
+      .IssueOrder(ORDER_ATTACK, rallyPoint.X, rallyPoint.Y);
   }
 }

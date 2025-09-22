@@ -74,19 +74,6 @@ public static class UnitExtensions
     PingMinimap(whichUnit.X, whichUnit.Y, duration);
 
   /// <summary>
-  /// Orders a unit to perform a specified order at a specified <see cref="Point"/>.
-  /// </summary>
-  [Obsolete("Use the version that takes an integer order ID instead.")]
-  public static void IssueOrder(this unit unit, string order, Point target) =>
-    unit.IssueOrder(order, target.X, target.Y);
-
-  /// <summary>
-  /// Orders a unit to perform a specified order at a specified <see cref="Point"/>.
-  /// </summary>
-  public static void IssueOrder(this unit unit, int orderId, Point target) =>
-    unit.IssueOrder(orderId, target.X, target.Y);
-
-  /// <summary>
   /// Moves the unit to a specified <see cref="Point"/>.
   /// </summary>
   public static void SetPosition(this unit unit, Point where, bool considerPathability = false)
@@ -368,6 +355,7 @@ public static class UnitExtensions
   {
     var rallyLocation = whichUnit.RallyPoint;
     var rallyPoint = new Point(rallyLocation.X, rallyLocation.Y);
+    rallyLocation.Dispose();
     return rallyPoint;
   }
 

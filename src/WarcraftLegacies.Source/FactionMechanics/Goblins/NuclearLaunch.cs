@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.Sound;
+﻿using MacroTools.Sound;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 
@@ -34,7 +33,7 @@ public sealed class NuclearLaunch : Spell, IStartChannelEffect
   {
     var dummyNukeLeftover = unit.Create(caster.Owner, DummyNukeLeftOverId, targetPoint.X, targetPoint.Y, 0);
     dummyNukeLeftover.ApplyTimedLife(0, 3);
-    dummyNukeLeftover.IssueOrder(ORDER_FLAMESTRIKE, targetPoint);
+    dummyNukeLeftover.IssueOrder(ORDER_FLAMESTRIKE, targetPoint.X, targetPoint.Y);
   }
 
   /// <inheritdoc />

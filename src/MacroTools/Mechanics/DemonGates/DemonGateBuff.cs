@@ -87,7 +87,7 @@ public sealed class DemonGateBuff : TickingBuff
   /// <inheritdoc />
   public override void OnApply()
   {
-    Target.IssueOrder(OrderId("setrally"), Target.GetPosition());
+    Target.IssueOrder(ORDER_SET_RALLY, Target.X, Target.Y);
     Target.MaxMana = (int)_spawnInterval;
     Target.AddAbility(_toggleAbilityTypeId);
     Target.IssueOrder("immolation");
@@ -141,7 +141,7 @@ public sealed class DemonGateBuff : TickingBuff
     for (var i = 0; i < _spawnCount; i++)
     {
       var spawnedDemon = unit.Create(Target.Owner, _demonUnitTypeId, SpawnPoint.X, SpawnPoint.Y, Target.Facing + FacingOffset);
-      spawnedDemon.IssueOrder(OrderId("attack"), RallyPoint);
+      spawnedDemon.IssueOrder(ORDER_ATTACK, RallyPoint.X, RallyPoint.Y);
 
       _spawnedDemons.Add(spawnedDemon);
 
