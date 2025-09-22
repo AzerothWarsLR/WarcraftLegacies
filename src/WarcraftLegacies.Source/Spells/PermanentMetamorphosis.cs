@@ -15,32 +15,39 @@ public sealed class PermanentMetamorphosis : Spell, IEffectOnLearn
 
   public LeveledAbilityField<int> HitPointBonus { get; init; } = new();
 
-  public int[] UnitTypeIdsByLevel { get; init; } = System.Array.Empty<int>();
+  public LeveledAbilityField<int> DamageBonus { get; init; } = new();
 
   public string? LearnEffectPath { get; init; }
 
-  /// <inheritdoc />
+  public required int UnitTypeId { get; init; }
+
   public void OnLearn(unit learner)
   {
     var level = learner.GetAbilityLevel(Id);
 
-    var legend = LegendaryHeroManager.GetFromUnit(learner);
-    if (legend == null)
+    if (level == 1 && learner.UnitType != UnitTypeId)
     {
-      return;
-    }
+      var legend = LegendaryHeroManager.GetFromUnit(learner);
+      if (legend?.Unit != null)
+      {
+        legend.UnitType = UnitTypeId;
+      }
 
-    legend.UnitType = UnitTypeIdsByLevel[level-1];
-
-    if (level == 1)
-    {
+      var illidan = legend!.Unit!;
+      illidan.AddAnimationProperty("alternate");
       if (LearnEffectPath != null)
       {
-        var learnEffect = AddSpecialEffect(LearnEffectPath, learner.X, learner.Y);
+        var learnEffect = AddSpecialEffect(LearnEffectPath, illidan.X, illidan.Y);
         learnEffect.Dispose();
       }
-    }
 
-    learner.MaxLife += HitPointBonus.Base + HitPointBonus.PerLevel;
+      illidan.MaxLife += HitPointBonus.Base + HitPointBonus.PerLevel;
+      illidan.SelectHeroSkill(Id);
+    }
+    else
+    {
+      learner.AttackBaseDamage1 += DamageBonus.PerLevel;
+      learner.MaxLife += HitPointBonus.PerLevel;
+    }
   }
 }

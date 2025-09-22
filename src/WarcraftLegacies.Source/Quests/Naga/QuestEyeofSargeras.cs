@@ -45,18 +45,18 @@ public sealed class QuestEyeofSargeras : QuestData
   {
     var permanentMetamorphosis = new PermanentMetamorphosis(ABILITY_ZBPA_METAMORPHOSIS_PERMANENT_ILLIDAN)
     {
+      DamageBonus = new LeveledAbilityField<int>
+      {
+        Base = 30,
+        PerLevel = 30
+      },
       HitPointBonus = new LeveledAbilityField<int>
       {
         Base = 250,
         PerLevel = 250
       },
       LearnEffectPath = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl",
-      UnitTypeIdsByLevel = new []
-      {
-        UNIT_EEVM_DEMON_HUNTER_MORPHED_LEVEL_1_ILLIDARI,
-        UNIT_ZF4B_DEMON_HUNTER_MORPHED_LEVEL_2_ILLIDARI,
-        UNIT_ZB88_DEMON_HUNTER_MORPHED_LEVEL_3_ILLIDARI
-      }
+      UnitTypeId = UNIT_EEVM_DEMON_HUNTER_MORPHED_LEVEL_1_ILLIDARI
     };
     SpellSystem.Register(permanentMetamorphosis);
   }
@@ -67,7 +67,7 @@ public sealed class QuestEyeofSargeras : QuestData
     {
       _illidan.Unit.RemoveAbility(MetamorphosisBuff);
       var activeMetamorphosisLevel = _illidan.Unit.GetAbilityLevel(ActiveMetamorphosisId);
-      _illidan.Unit.SetAbilityLevel(PermanentMetamorphosisId, activeMetamorphosisLevel);
+      _illidan.Unit.SetAbilityLevelWithEvents(PermanentMetamorphosisId, activeMetamorphosisLevel);
       _illidan.Unit.SetAbilityLevel(ActiveMetamorphosisId, 0);
     }
   }
