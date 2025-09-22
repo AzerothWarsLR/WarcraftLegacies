@@ -2,22 +2,19 @@
 
 public static class UnitExtensions
 {
-  public static void SetAbilityLevelWithEvents(this unit unit, int abilityId, int level)
+  /// <summary>
+  /// Selects the hero skill for the hero, triggering any <see cref="IEffectOnLearn.OnLearn"/> callbacks.
+  /// </summary>
+  public static void SelectHeroSkillWithEvents(this unit unit, int abilityId)
   {
-    var currentLevel = unit.GetAbilityLevel(abilityId);
     if (SpellSystem.TryGetSpellByAbilityId(abilityId, out var spell))
     {
       if (spell is IEffectOnLearn effectOnLearn)
       {
-        if (level > currentLevel)
-        {
-          for (var i = currentLevel; i < level; i++)
-          {
-            effectOnLearn.OnLearn(unit);
-          }
-        }
+        effectOnLearn.OnLearn(unit);
       }
     }
-    unit.SetAbilityLevel(abilityId, level);
+
+    unit.SelectHeroSkill(abilityId);
   }
 }
