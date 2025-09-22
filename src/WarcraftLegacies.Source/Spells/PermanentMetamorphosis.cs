@@ -1,4 +1,5 @@
 ﻿using MacroTools.Data;
+using MacroTools.LegendSystem;
 using MacroTools.SpellSystem;
 
 namespace WarcraftLegacies.Source.Spells;
@@ -14,12 +15,7 @@ public sealed class PermanentMetamorphosis : Spell, IEffectOnLearn
 
   public LeveledAbilityField<int> HitPointBonus { get; init; } = new();
 
-  public LeveledAbilityField<int> DamageBonus { get; init; } = new();
-
-  /// <summary>
-  /// Adds the specified Chaos-based ability to the hero to transform it into a demon.
-  /// </summary>
-  public int ChaosAbilityTypeId { get; init; }
+  public int[] UnitTypeIdsByLevel { get; init; } = System.Array.Empty<int>();
 
   public string? LearnEffectPath { get; init; }
 
@@ -28,21 +24,23 @@ public sealed class PermanentMetamorphosis : Spell, IEffectOnLearn
   {
     var level = learner.GetAbilityLevel(Id);
 
+    var legend = LegendaryHeroManager.GetFromUnit(learner);
+    if (legend == null)
+    {
+      return;
+    }
+
+    legend.UnitType = UnitTypeIdsByLevel[level-1];
+
     if (level == 1)
     {
-      learner.AddAbility(ChaosAbilityTypeId);
       if (LearnEffectPath != null)
       {
         var learnEffect = AddSpecialEffect(LearnEffectPath, learner.X, learner.Y);
         learnEffect.Dispose();
       }
-      learner.MaxLife += HitPointBonus.Base + HitPointBonus.PerLevel;
-      learner.AttackBaseDamage1 += DamageBonus.Base + DamageBonus.PerLevel;
     }
-    else
-    {
-      learner.MaxLife += DamageBonus.PerLevel;
-      learner.AttackBaseDamage1 += DamageBonus.PerLevel;
-    }
+
+    learner.MaxLife += HitPointBonus.Base + HitPointBonus.PerLevel;
   }
 }
