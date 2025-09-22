@@ -24,13 +24,6 @@ public abstract class Spell
   public int Id { get; }
 
   /// <summary>
-  /// Invoked when the <see cref="Spell"/> instance is learned by any unit.
-  /// </summary>
-  public virtual void OnLearn(unit learner)
-  {
-  }
-
-  /// <summary>
   /// Invoked when any unit stops casting this <see cref="Spell"/> instance.
   /// </summary>
   public virtual void OnStop(unit caster)

@@ -12,7 +12,7 @@ namespace WarcraftLegacies.Source.Spells;
 /// <summary>
 /// When a of a given type unit dies, the caster remembers it, and can later summon copies of all of the units that died.
 /// </summary>
-public sealed class AncestralLegion : Spell
+public sealed class AncestralLegion : Spell, IEffectOnLearn
 {
   private static readonly Dictionary<unit, AncestralLegionData> _ancestralLegionDataByUnit = new();
 
@@ -82,7 +82,7 @@ public sealed class AncestralLegion : Spell
   }
 
   /// <inheritdoc />
-  public override void OnLearn(unit learner)
+  public void OnLearn(unit learner)
   {
     if (_ancestralLegionDataByUnit.ContainsKey(learner))
     {
