@@ -14,7 +14,7 @@ jobs:
             -   name: Setup .NET
                 uses: actions/setup-dotnet@v1
                 with:
-                    dotnet-version: 7.0.x
+                    dotnet-version: 9.0.x
             -   name: Run .NET Format
                 run: dotnet format --verify-no-changes --verbosity detailed --exclude src/War3Api.Object src/WarcraftLegacies.Shared/Constants.cs src/WarcraftLegacies.Source/Regions.cs
             -   name: Build
@@ -39,7 +39,7 @@ jobs:
             -   name: Setup .NET
                 uses: actions/setup-dotnet@v1
                 with:
-                    dotnet-version: 7.0.x
+                    dotnet-version: 9.0.x
             -   name: Build
                 run: dotnet build
             -   name: Test
