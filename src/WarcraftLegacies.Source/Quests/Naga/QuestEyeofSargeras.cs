@@ -26,7 +26,7 @@ public sealed class QuestEyeofSargeras : QuestData
   }
 
   public override string RewardFlavour =>
-    "With the Eye of Sargeras now in hand, Illidan has become more demon than Night Elf. He now wields a tool capable of sundering the world.";
+    "With the Eye of Sargeras in hand, Illidan has become more demon than Night Elf. He now wields a tool capable of sundering the world.";
 
   protected override void OnComplete(Faction completingFaction)
   {
@@ -63,12 +63,16 @@ public sealed class QuestEyeofSargeras : QuestData
 
   private void ReplaceMetamorphosisOnIllidan()
   {
-    if (_illidan.Unit != null)
+    if (_illidan.Unit == null)
     {
-      _illidan.Unit.RemoveAbility(MetamorphosisBuff);
-      var activeMetamorphosisLevel = _illidan.Unit.GetAbilityLevel(ActiveMetamorphosisId);
-      _illidan.Unit.SetAbilityLevelWithEvents(PermanentMetamorphosisId, activeMetamorphosisLevel);
-      _illidan.Unit.SetAbilityLevel(ActiveMetamorphosisId, 0);
+      return;
+    }
+
+    _illidan.Unit.RemoveAbility(MetamorphosisBuff);
+    var activeMetamorphosisLevel = _illidan.Unit.GetAbilityLevel(ActiveMetamorphosisId);
+    for (var i = 0; i < activeMetamorphosisLevel; i++)
+    {
+      _illidan.Unit.SelectHeroSkillWithEvents(PermanentMetamorphosisId);
     }
   }
 }
