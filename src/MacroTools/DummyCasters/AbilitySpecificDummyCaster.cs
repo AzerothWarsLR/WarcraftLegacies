@@ -74,7 +74,7 @@ public sealed class AbilitySpecificDummyCaster
     _unit.AddAbility(_abilityTypeId);
     _unit.SetAbilityLevel(_abilityTypeId, level);
     _unit
-      .IssueOrder(_abilityOrderId, target);
+      .IssueOrder(_abilityOrderId, target.X, target.Y);
   }
 
   /// <summary>

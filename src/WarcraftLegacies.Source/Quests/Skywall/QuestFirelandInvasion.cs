@@ -119,7 +119,7 @@ public sealed class QuestFirelandInvasion : QuestData
         {
           if (!unit.IsUnitType(unittype.Peon))
           {
-            unit.IssueOrder(ORDER_ATTACK, attackTarget);
+            unit.IssueOrder(ORDER_ATTACK, attackTarget.X, attackTarget.Y);
           }
         }
       }

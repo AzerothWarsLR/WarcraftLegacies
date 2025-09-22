@@ -2,6 +2,7 @@
 using System;
 using System.CommandLine;
 using System.IO;
+using System.Linq;
 using AutoMapper;
 using Launcher.Services;
 using WCSharp.ConstantGenerator;
@@ -58,6 +59,11 @@ public static class W3XToMapDataCommand
       {
         IncludeCode = true
       });
+      // ConstantGenerator always outputs order ids, which we already have in MacroTools.Shared.
+      // We remove lines starting with 'public const int ORDER_' to avoid duplication.
+      File.WriteAllLines($"{constantsOutputPath}/Constants.cs", File.ReadLines($"{constantsOutputPath}/Constants.cs")
+          .Where(l => !l.AsSpan().TrimStart().StartsWith("public const int ORDER_"))
+          .ToArray());
       if (regionsOutputPath != null)
       {
         File.Move($"{constantsOutputPath}/Regions.cs", $"{regionsOutputPath}/Regions.cs", true);

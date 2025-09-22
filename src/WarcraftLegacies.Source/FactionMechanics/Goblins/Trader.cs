@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Buffs;
-using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
@@ -30,7 +29,8 @@ public sealed class Trader : PassiveAbility, IEffectOnTrained
     {
       var tradingCenter = @event.Unit;
       var trainedUnit = @event.TrainedUnit;
-      trainedUnit.IssueOrder("patrol", _tradeTargets[GetRandomInt(0, _tradeTargets.Length - 1)]);
+      var target = _tradeTargets[GetRandomInt(0, _tradeTargets.Length - 1)];
+      trainedUnit.IssueOrder(ORDER_PATROL, target.X, target.Y);
       var incomeBuff =
         new TraderBuff(tradingCenter, trainedUnit, _goldIncomeBonus, tradingCenter);
       BuffSystem.Add(incomeBuff);

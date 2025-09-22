@@ -69,7 +69,7 @@ public sealed class GlobalDummyCaster
     _unit.SetPosition(target);
     _unit.AddAbility(abilId);
     _unit.SetAbilityLevel(abilId, level);
-    _unit.IssueOrder(orderId, target);
+    _unit.IssueOrder(orderId, target.X, target.Y);
     _unit.RemoveAbility(abilId);
   }
 
