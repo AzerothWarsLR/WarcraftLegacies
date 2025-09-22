@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 
@@ -25,6 +26,11 @@ public static class SpellSystem
     }
 
     return _spellsByAbilityId[abilityId];
+  }
+
+  public static bool TryGetSpellByAbilityId(int abilityId, [NotNullWhen(true)] out Spell? spell)
+  {
+    return _spellsByAbilityId.TryGetValue(abilityId, out spell);
   }
 
   /// <summary>
