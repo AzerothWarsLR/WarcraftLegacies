@@ -59,16 +59,16 @@ public sealed class UnstableEvolution : Spell
     target.SetTimedLife(Duration);
     target.SetExploded(true);
     target.SetScale(1.1f, 1.1f, 1.1f);
+    target.RemoveType(UNIT_TYPE_SUMMONED);
 
     if (target.UnitType == UNIT_U013_SUPER_MAJOR_C_THUN)
     {
       target.SetScale(0.6f, 0.6f, 0.6f);
     }
 
-    effect effect = effect.Create(EffectTarget, target.X, target.Y);
-    effect.Scale = EffectScaleTarget;
-    EffectSystem.Add(effect);
-    effect.SetColor(0, 255, 0);
+    effect.Create(EffectTarget, target.X, target.Y).Scale = EffectScaleTarget;
+    EffectSystem.Add(effect.Create(EffectTarget, target.X, target.Y));
+    effect.Create(EffectTarget, target.X, target.Y).SetColor(0, 255, 0);
   }
 
 }
