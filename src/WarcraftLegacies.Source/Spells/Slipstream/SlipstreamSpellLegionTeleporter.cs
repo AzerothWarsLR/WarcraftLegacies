@@ -93,7 +93,7 @@ public sealed class SlipstreamSpellLegionTeleporter : Spell
 
   private void Refund(unit whichUnit)
   {
-    whichUnit.RestoreMana(whichUnit.GetAbilityManaCost(Id, GetAbilityLevel(whichUnit)));
+    whichUnit.Mana += whichUnit.GetAbilityManaCost(Id, GetAbilityLevel(whichUnit));
     whichUnit.EndAbilityCooldown(Id);
   }
 }

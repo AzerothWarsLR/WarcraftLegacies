@@ -107,7 +107,7 @@ public sealed class FontOfPower : Power
       return;
     }
 
-    @event.Damage = @event.Damage * 1.1f;
+    @event.Damage *= 1.1f;
   }
 
   private void RefundMana()
@@ -140,7 +140,7 @@ public sealed class FontOfPower : Power
       //we need to defer the refund until later.
       Delay.Add(() =>
       {
-        caster.Mana = caster.Mana + manaRefund;
+        caster.Mana += manaRefund;
         @event.ExpiredTimer.Dispose();
       });
     }

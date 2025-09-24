@@ -28,7 +28,7 @@ public sealed class SolarJudgementHazard : Hazard
       }
       if (CastFilters.IsTargetAllyAndAlive(Caster, target))
       {
-        target.Life = target.Life + BoltDamage * HealMultiplier;
+        target.Life += BoltDamage * HealMultiplier;
         effect.Create(EffectHealPath, target, "origin").Dispose();
       }
     }

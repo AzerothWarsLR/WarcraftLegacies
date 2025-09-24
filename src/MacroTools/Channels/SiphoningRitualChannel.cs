@@ -69,8 +69,9 @@ public sealed class SiphoningRitualChannel : Channel
     if (Caster.Mana < Caster.MaxMana ||
         !_target.IsAllyTo(Caster.Owner))
     {
-      Caster.RestoreMana(Math.Min(ManaDrainedPerSecond * Interval, _target.Mana));
-      _target.RestoreMana(-ManaDrainedPerSecond * Interval);
+      var manaDrained = Math.Min(ManaDrainedPerSecond * Interval, _target.Mana);
+      Caster.Mana += manaDrained;
+      _target.Mana -= manaDrained;
     }
   }
 

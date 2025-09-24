@@ -1,6 +1,5 @@
 ﻿using MacroTools.ChannelSystem;
 using MacroTools.Data;
-using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 
@@ -72,7 +71,7 @@ public sealed class SlipstreamSpellSpecificOriginAndDestination : Spell
 
   private void Refund(unit whichUnit)
   {
-    whichUnit.RestoreMana(whichUnit.GetAbilityManaCost(Id, GetAbilityLevel(whichUnit)));
+    whichUnit.Mana += whichUnit.GetAbilityManaCost(Id, GetAbilityLevel(whichUnit));
     whichUnit.EndAbilityCooldown(Id);
   }
 }

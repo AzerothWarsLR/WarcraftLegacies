@@ -29,7 +29,7 @@ public sealed class TitanicStrength : Power
     var trainedUnit = @event.TrainedUnit;
     var bonus = (int)(1 + trainedUnit.MaxLife * (_percentageOfHitPoints / 100));
 
-    trainedUnit.AttackBaseDamage1 = trainedUnit.AttackBaseDamage1 + bonus;
-    trainedUnit.AttackBaseDamage2 = trainedUnit.AttackBaseDamage2 + bonus;
+    trainedUnit.AttackBaseDamage1 += bonus;
+    trainedUnit.AttackBaseDamage2 += bonus;
   }
 }
