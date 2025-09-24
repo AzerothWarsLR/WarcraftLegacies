@@ -57,7 +57,7 @@ public sealed class DelayedMultiTargetRecall : Spell
       .Take(AmountToTarget)
       .ToList();
 
-    if (!targets.Any())
+    if (targets.Count == 0)
     {
       return;
     }

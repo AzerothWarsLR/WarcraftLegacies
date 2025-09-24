@@ -60,7 +60,7 @@ public sealed class Reap : Spell
         .Take(unitsSlain)
         .ToList();
 
-      if (!killTargets.Any())
+      if (killTargets.Count == 0)
       {
         return;
       }

@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using MacroTools.CommandSystem;
+﻿using MacroTools.CommandSystem;
 using MacroTools.LegendSystem;
 using MacroTools.Utils;
 
@@ -23,7 +22,7 @@ public sealed class CheatPermaKill : Command
   public override string Execute(player cheater, params string[] parameters)
   {
     var selectedUnits = GlobalGroup.EnumSelectedUnits(cheater);
-    if (!selectedUnits.Any())
+    if (selectedUnits.Count == 0)
     {
       return "You're not selecting any Legends.";
     }

@@ -243,7 +243,7 @@ public sealed class LegendaryHero : Legend
       Unit.SetExperience(StartingXp, true);
     }
 
-    if (StartingArtifacts.Any())
+    if (StartingArtifacts.Count != 0)
     {
       foreach (var artifact in StartingArtifacts)
       {

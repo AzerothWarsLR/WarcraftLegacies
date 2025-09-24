@@ -22,7 +22,7 @@ public sealed class CheatGetWaygateDestination : Command
   public override string Execute(player commandUser, params string[] parameters)
   {
     var selectedUnits = GlobalGroup.EnumSelectedUnits(commandUser);
-    if (!selectedUnits.Any())
+    if (selectedUnits.Count == 0)
     {
       return "You're not selecting any units.";
     }

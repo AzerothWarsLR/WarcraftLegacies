@@ -24,7 +24,7 @@ public static class PlayerDistributor
   public static void DistributePlayer(player player)
   {
     var eligiblePlayers = GetPlayersEligibleForReceivingDistribution(player);
-    if (eligiblePlayers.Any())
+    if (eligiblePlayers.Count != 0)
     {
       var resourcesToRefund = DistributeAndRefundUnits(player, eligiblePlayers);
       DistributeGold(player, eligiblePlayers, resourcesToRefund);

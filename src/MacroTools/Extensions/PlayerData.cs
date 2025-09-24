@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using MacroTools.ControlPointSystem;
 using MacroTools.DialogueSystem;
 using MacroTools.FactionSystem;
@@ -218,7 +217,7 @@ internal sealed class PlayerData
     var dialogueTrigger = trigger.Create();
     dialogueTrigger.AddAction(() =>
     {
-      while (_dialogueQueue.Any())
+      while (_dialogueQueue.Count != 0)
       {
         var nextDialogue = _dialogueQueue.Dequeue();
         nextDialogue.Play(_player);

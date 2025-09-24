@@ -48,7 +48,7 @@ public sealed class WarsongPillageDialogPresenter : ChoiceDialogPresenter<Warson
       .Where(unit => unit.IsUnitType(unittype.Hero))
       .ToList();
 
-    if (heroes.Any())
+    if (heroes.Count != 0)
     {
       var heroCount = heroes.Count;
       double multiplier;
