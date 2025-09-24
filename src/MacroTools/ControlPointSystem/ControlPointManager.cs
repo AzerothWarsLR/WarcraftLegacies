@@ -152,11 +152,7 @@ public sealed class ControlPointManager
   public void Register(ControlPoint controlPoint)
   {
     _byUnit.Add(controlPoint.Unit, controlPoint);
-    if (!_byUnitType.ContainsKey(controlPoint.UnitType))
-    {
-      _byUnitType.Add(controlPoint.UnitType, controlPoint);
-    }
-
+    _byUnitType.TryAdd(controlPoint.UnitType, controlPoint);
     controlPoint.Unit.MaxLife = StartingMaxHitPoints;
     controlPoint.Unit.SetLifePercent(100);
     controlPoint.Unit.DefenseType = WCSharp.Api.Enums.DefenseType.Large;

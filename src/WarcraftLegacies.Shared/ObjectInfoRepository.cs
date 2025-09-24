@@ -62,9 +62,8 @@ public sealed class ObjectInfoRepository
   {
     foreach (var (objectTypeId, objectInfo) in factionObjectLimits)
     {
-      if (!_byObjectId.ContainsKey(objectTypeId))
+      if (_byObjectId.TryAdd(objectTypeId, objectInfo))
       {
-        _byObjectId.Add(objectTypeId, objectInfo);
         _all.Add(objectInfo);
       }
     }
