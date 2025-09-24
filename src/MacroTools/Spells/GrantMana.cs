@@ -13,6 +13,6 @@ public sealed class GrantMana : Spell
 
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    target.Mana = target.Mana + ManaToGrant;
+    target.Mana += ManaToGrant;
   }
 }

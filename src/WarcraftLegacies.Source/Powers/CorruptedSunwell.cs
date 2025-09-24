@@ -38,8 +38,8 @@ public sealed class CorruptedSunwell : Power
     var manaCost = castingUnit.GetAbilityManaCost(abilityId, abilityLevel - 1);
     var damageAmount = manaCost * 0.2f;
 
-    castingUnit.Life = castingUnit.Life - damageAmount;
-    castingUnit.Life = castingUnit.Life - damageAmount;
+    castingUnit.Life -= damageAmount;
+    castingUnit.Life -= damageAmount;
 
     if (castingUnit.Alive)
     {

@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.Setup;
 using WCSharp.Events;
 
@@ -41,6 +40,6 @@ public sealed class UnitsStealMana : Power
       return;
     }
 
-    @event.DamageSource.RestoreMana(@event.Damage * _manaPerDamage);
+    @event.DamageSource.Mana += @event.Damage * _manaPerDamage;
   }
 }

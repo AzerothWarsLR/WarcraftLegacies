@@ -40,6 +40,6 @@ public sealed class Devour : Spell
       target.TakeDamage(caster, target.Life, damageType: damagetype.Universal, attackType: attacktype.Chaos);
     }
 
-    caster.Life = caster.Life + caster.MaxLife * PercentageOfMaxHealth;
+    caster.Life += caster.MaxLife * PercentageOfMaxHealth;
   }
 }

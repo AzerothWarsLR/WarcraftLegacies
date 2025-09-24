@@ -64,7 +64,7 @@ public sealed class ShaladrassilsBlessing : Power
 
     if (SummonTreants(owner, @event.Unit.GetPosition()))
     {
-      _shaladrassil.RestoreMana(-_manaCost);
+      _shaladrassil.Mana -= _manaCost;
     }
   }
 

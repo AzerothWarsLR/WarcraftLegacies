@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Data;
-using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
 using WCSharp.Effects;
 
@@ -42,7 +41,7 @@ public sealed class RestoreManaFromDamage : PassiveAbility, IAppliesEffectOnDama
   {
     var damager = @event.DamageSource;
     var manaPerDamage = @event.Damage * (ManaPerDamage.Base + ManaPerDamage.PerLevel * damager.GetAbilityLevel(_abilityTypeId));
-    damager.RestoreMana(manaPerDamage);
+    damager.Mana += manaPerDamage;
     EffectSystem.Add(effect.Create(Effect, damager, "origin"));
   }
 }

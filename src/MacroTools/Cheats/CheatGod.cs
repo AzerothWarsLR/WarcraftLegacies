@@ -57,7 +57,7 @@ public sealed class CheatGod : Command
       }
       else if (IsCheatActive(@event.DamageSource.Owner))
       {
-        @event.Damage = @event.Damage * 100;
+        @event.Damage *= 100;
       }
     }
     catch (Exception e)
