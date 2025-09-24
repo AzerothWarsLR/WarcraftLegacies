@@ -34,13 +34,13 @@ public sealed class PreplacedUnitSystem
   /// <exception cref="KeyNotFoundException">Thrown if there is no preplaced unit with the given unit type id.</exception>
   public unit GetUnit(int unitTypeId, Point location)
   {
-    if (!_unitsByTypeId.ContainsKey(unitTypeId))
+    if (!_unitsByTypeId.TryGetValue(unitTypeId, out var unit))
     {
       throw new KeyNotFoundException(
         $"There is no preplaced unit with Unit Type Id {GeneralHelpers.DebugIdInteger2IdString(unitTypeId)}.");
     }
 
-    return GetClosestUnitToPoint(_unitsByTypeId[unitTypeId], location);
+    return GetClosestUnitToPoint(unit, location);
   }
 
 
@@ -52,19 +52,19 @@ public sealed class PreplacedUnitSystem
   /// <exception cref="KeyNotFoundException">Thrown if there is no preplaced unit with the given unit type id.</exception>
   public unit GetUnit(int unitTypeId)
   {
-    if (!_unitsByTypeId.ContainsKey(unitTypeId))
+    if (!_unitsByTypeId.TryGetValue(unitTypeId, out var unit))
     {
       throw new KeyNotFoundException(
         $"There is no preplaced unit with Unit Type Id {GeneralHelpers.DebugIdInteger2IdString(unitTypeId)}.");
     }
 
-    if (_unitsByTypeId[unitTypeId].Count > 1)
+    if (unit.Count > 1)
     {
       throw new Exception(
         $"There are multiple preplaced units with Unit Type Id {GeneralHelpers.DebugIdInteger2IdString(unitTypeId)}. Use the overload that requires a position instead.");
     }
 
-    return _unitsByTypeId[unitTypeId].First();
+    return unit.First();
   }
 
   /// <summary>
@@ -74,13 +74,13 @@ public sealed class PreplacedUnitSystem
   /// <exception cref="KeyNotFoundException">Thrown if there is no preplaced units with the given unit type id.</exception>
   public List<unit> GetUnits(int unitTypeId)
   {
-    if (!_unitsByTypeId.ContainsKey(unitTypeId))
+    if (!_unitsByTypeId.TryGetValue(unitTypeId, out var unit))
     {
       throw new KeyNotFoundException(
         $"There is no preplaced unit with Unit Type Id {GeneralHelpers.DebugIdInteger2IdString(unitTypeId)}.");
     }
 
-    return _unitsByTypeId[unitTypeId];
+    return unit;
   }
 
   /// <summary>
@@ -91,13 +91,13 @@ public sealed class PreplacedUnitSystem
   /// <exception cref="KeyNotFoundException">Thrown if there is no preplaced destructable with the given destructable type id.</exception>
   public destructable GetDestructable(int destructableTypeId, Point location)
   {
-    if (!_destructablesByTypeId.ContainsKey(destructableTypeId))
+    if (!_destructablesByTypeId.TryGetValue(destructableTypeId, out var destructable))
     {
       throw new KeyNotFoundException(
         $"There is no preplaced unit with Unit Type Id {GeneralHelpers.DebugIdInteger2IdString(destructableTypeId)}.");
     }
 
-    return GetClosestDestructableToPoint(_destructablesByTypeId[destructableTypeId], location);
+    return GetClosestDestructableToPoint(destructable, location);
   }
 
   /// <summary>
@@ -108,31 +108,31 @@ public sealed class PreplacedUnitSystem
   /// <exception cref="KeyNotFoundException">Thrown if there is no preplaced destructable with the given unit type id.</exception>
   public destructable GetDestructable(int destructableTypeId)
   {
-    if (!_destructablesByTypeId.ContainsKey(destructableTypeId))
+    if (!_destructablesByTypeId.TryGetValue(destructableTypeId, out var destructable))
     {
       throw new KeyNotFoundException(
         $"There is no preplaced unit with Unit Type Id {GeneralHelpers.DebugIdInteger2IdString(destructableTypeId)}.");
     }
 
-    if (_destructablesByTypeId[destructableTypeId].Count > 1)
+    if (destructable.Count > 1)
     {
       throw new Exception(
         $"There are multiple preplaced units with Unit Type Id {GeneralHelpers.DebugIdInteger2IdString(destructableTypeId)}. Use the overload that requires a position instead.");
     }
 
-    return _destructablesByTypeId[destructableTypeId].First();
+    return destructable.First();
   }
 
   private void ReadDestructable()
   {
     var destructable = GetEnumDestructable();
     var destructableId = destructable.Type;
-    if (!_destructablesByTypeId.ContainsKey(destructableId))
+    if (!_destructablesByTypeId.TryGetValue(destructableId, out var destructables))
     {
-      _destructablesByTypeId[destructableId] = new List<destructable>();
+      destructables = _destructablesByTypeId[destructableId] = new List<destructable>();
     }
 
-    _destructablesByTypeId[destructableId].Add(destructable);
+    destructables.Add(destructable);
     DestructibleHider.Register(destructable);
   }
 
@@ -141,12 +141,12 @@ public sealed class PreplacedUnitSystem
     foreach (var unit in GlobalGroup.EnumUnitsInRect(Rectangle.WorldBounds.Rect))
     {
       var unitTypeId = unit.UnitType;
-      if (!_unitsByTypeId.ContainsKey(unitTypeId))
+      if (!_unitsByTypeId.TryGetValue(unitTypeId, out var units))
       {
-        _unitsByTypeId[unitTypeId] = new List<unit>();
+        units = _unitsByTypeId[unitTypeId] = new List<unit>();
       }
 
-      _unitsByTypeId[unitTypeId].Add(unit);
+      units.Add(unit);
     }
 
     Rectangle.WorldBounds.Rect.EnumerateDestructables(null, ReadDestructable);

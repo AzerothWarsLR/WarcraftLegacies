@@ -29,8 +29,11 @@ public static class ArtifactManager
   /// Returns the registered <see cref="Artifact"/> that represents the item with the provided item type ID.
   /// If there isn't one, returns null.
   /// </summary>
-  public static Artifact? GetFromTypeId(int typeId) =>
-    _artifactsByType.ContainsKey(typeId) ? _artifactsByType[typeId] : null;
+  public static Artifact? GetFromTypeId(int typeId)
+  {
+    _artifactsByType.TryGetValue(typeId, out var artifact);
+    return artifact;
+  }
 
   /// <summary>
   /// Returns the registered <see cref="Artifact"/> with the given name.
@@ -39,8 +42,7 @@ public static class ArtifactManager
   /// </summary>
   public static bool TryGetByName(string name, [NotNullWhen(true)] out Artifact? artifact)
   {
-    artifact = _artifactsByName.TryGetValue(name.ToLower(), out var value) ? value : null;
-    return artifact != null;
+    return _artifactsByName.TryGetValue(name.ToLower(), out artifact);
   }
 
   /// <summary>

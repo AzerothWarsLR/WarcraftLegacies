@@ -125,12 +125,12 @@ public static class DestructibleHider
     }
 
     var tileId = GetTileId(destructable.X, destructable.Y);
-    if (!_destructablesByTileId.ContainsKey(tileId))
+    if (!_destructablesByTileId.TryGetValue(tileId, out var destructables))
     {
-      _destructablesByTileId[tileId] = new List<destructable>();
+      destructables = _destructablesByTileId[tileId] = new List<destructable>(); ;
     }
 
-    _destructablesByTileId[tileId].Add(destructable);
+    destructables.Add(destructable);
   }
 
   /// <summary>
@@ -140,12 +140,10 @@ public static class DestructibleHider
   public static void Unregister(destructable destructable)
   {
     var tileId = GetTileId(destructable.X, destructable.Y);
-    if (!_destructablesByTileId.ContainsKey(tileId))
+    if (_destructablesByTileId.TryGetValue(tileId, out var destructables))
     {
-      return;
+      destructables.Remove(destructable);
     }
-
-    _destructablesByTileId[tileId].Remove(destructable);
   }
 
   private static List<int> GetTilesInRadius(int cameraTileId, int radius)

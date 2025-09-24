@@ -51,6 +51,9 @@ public static class ResearchManager
   /// <summary>
   /// Returns the <see cref="Research"/> with the matching type ID.
   /// </summary>
-  public static Research? GetFromTypeId(int researchTypeId) =>
-    _byTypeId.ContainsKey(researchTypeId) ? _byTypeId[researchTypeId] : null;
+  public static Research? GetFromTypeId(int researchTypeId)
+  {
+    _byTypeId.TryGetValue(researchTypeId, out var research);
+    return research;
+  }
 }

@@ -77,12 +77,11 @@ public sealed class FactionMultiboard
 
   private void UpdateFactionRow(Faction faction)
   {
-    if (!_rowsByFaction.ContainsKey(faction))
+    if (!_rowsByFaction.TryGetValue(faction, out var row))
     {
       return;
     }
 
-    var row = _rowsByFaction[faction];
     var factionMbi = _multiboard.GetItem(row, ColumnFaction);
     var cpMbi = _multiboard.GetItem(row, ColumnCp);
     var incomeMbi = _multiboard.GetItem(row, ColumnIncome);

@@ -371,7 +371,7 @@ public abstract class Faction
     return questData;
   }
 
-  public int GetObjectLevel(int obj) => _objectLevels.ContainsKey(obj) ? _objectLevels[obj] : 0;
+  public int GetObjectLevel(int obj) => _objectLevels.TryGetValue(obj, out var objectLevel) ? objectLevel : 0;
 
   /// <summary>Sets the current level of a particular research for the <see cref="Faction"/>.</summary>
   public void SetObjectLevel(int obj, int level)
@@ -468,8 +468,11 @@ public abstract class Faction
   /// <summary>
   ///   Attempts to retrieve a <see cref="QuestData" /> belonging to this <see cref="Faction" /> with the given title.
   /// </summary>
-  public QuestData? GetQuestByTitle(string parameter) =>
-    _questsByName.TryGetValue(parameter.ToLower(), out var value) ? value : null;
+  public QuestData? GetQuestByTitle(string parameter)
+  {
+    _questsByName.TryGetValue(parameter.ToLower(), out var quest);
+    return quest;
+  }
 
   /// <summary>
   /// Returns the first <see cref="QuestData"/> the <see cref="Faction"/> has with the given <see cref="Type"/>.
