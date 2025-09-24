@@ -49,7 +49,8 @@ public static class CapitalManager
   /// </summary>
   public static Capital? GetFromUnit(unit whichUnit)
   {
-    return _byUnit.TryGetValue(whichUnit, out var value) ? value : null;
+    _byUnit.TryGetValue(whichUnit, out var capital);
+    return capital;
   }
 
   /// <summary>

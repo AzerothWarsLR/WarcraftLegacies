@@ -45,8 +45,7 @@ public sealed class UnitType
   /// <returns>True if the unit has a <see cref="UnitType"/>.</returns>
   public static bool TryGetFromHandle(unit whichUnit, [NotNullWhen(true)] out UnitType? unitType)
   {
-    unitType = _byId.TryGetValue(whichUnit.UnitType, out var value) ? value : null;
-    return value != null;
+    return _byId.TryGetValue(whichUnit.UnitType, out unitType);
   }
 
   /// <summary>

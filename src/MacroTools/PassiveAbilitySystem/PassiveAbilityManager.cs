@@ -71,12 +71,12 @@ public static class PassiveAbilityManager
       RegisterEvents(passiveAbility);
       foreach (var unitTypeId in passiveAbility.UnitTypeIds)
       {
-        if (!_passiveAbilitiesByUnitTypeId.ContainsKey(unitTypeId))
+        if (!_passiveAbilitiesByUnitTypeId.TryGetValue(unitTypeId, out var passiveAbilities))
         {
-          _passiveAbilitiesByUnitTypeId.Add(unitTypeId, new List<PassiveAbility>());
+          passiveAbilities = _passiveAbilitiesByUnitTypeId[unitTypeId] = new List<PassiveAbility>();
         }
 
-        _passiveAbilitiesByUnitTypeId[unitTypeId].Add(passiveAbility);
+        passiveAbilities.Add(passiveAbility);
 
         passiveAbility.OnRegistered();
       }

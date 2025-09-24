@@ -25,12 +25,12 @@ public sealed class PositionallyChunkedUnitSet
   {
     var chunkPosition = (unit.Position.X.RoundToNearestMultipleOf(_chunkSize), unit.Position.Y.RoundToNearestMultipleOf(_chunkSize));
 
-    if (!_unitsByChunk.ContainsKey(chunkPosition))
+    if (!_unitsByChunk.TryGetValue(chunkPosition, out var units))
     {
-      _unitsByChunk.Add(chunkPosition, new HashSet<UnitDataDto>());
+      units = _unitsByChunk[chunkPosition] = new HashSet<UnitDataDto>();
     }
 
-    _unitsByChunk[chunkPosition].Add(unit);
+    units.Add(unit);
   }
 
   public Dictionary<(int, int), HashSet<UnitDataDto>> GetAll() => _unitsByChunk;

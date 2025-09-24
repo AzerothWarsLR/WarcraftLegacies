@@ -35,7 +35,11 @@ public static class LegendaryHeroManager
   /// Returns the <see cref="Legend"/> represented by the <see cref="Legend"/>.
   /// Returns null if there is no match.
   /// </summary>
-  public static LegendaryHero? GetFromUnit(unit whichUnit) => _byUnit.ContainsKey(whichUnit) ? _byUnit[whichUnit] : null;
+  public static LegendaryHero? GetFromUnit(unit whichUnit)
+  {
+    _byUnit.TryGetValue(whichUnit, out var hero);
+    return hero;
+  }
 
   /// <summary>
   /// Returns all registered <see cref="Legend"/>s.

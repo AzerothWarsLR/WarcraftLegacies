@@ -25,12 +25,12 @@ public sealed class PositionallyChunkedDoodadSet
   {
     var chunkPosition = (doodad.Position.X.RoundToNearestMultipleOf(_chunkSize), doodad.Position.Y.RoundToNearestMultipleOf(_chunkSize));
 
-    if (!_doodadsByChunk.ContainsKey(chunkPosition))
+    if (!_doodadsByChunk.TryGetValue(chunkPosition, out var doodads))
     {
-      _doodadsByChunk.Add(chunkPosition, new HashSet<DoodadDataDto>());
+      doodads = _doodadsByChunk[chunkPosition] = new HashSet<DoodadDataDto>();
     }
 
-    _doodadsByChunk[chunkPosition].Add(doodad);
+    doodads.Add(doodad);
   }
 
   public Dictionary<(int, int), HashSet<DoodadDataDto>> GetAll() => _doodadsByChunk;

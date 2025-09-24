@@ -20,12 +20,12 @@ public static class SpellSystem
   /// <exception cref="Exception">Thrown if there is no ability with the provided ID.</exception>
   public static Spell GetSpellByAbilityId(int abilityId)
   {
-    if (!_spellsByAbilityId.ContainsKey(abilityId))
+    if (!_spellsByAbilityId.TryGetValue(abilityId, out var spell))
     {
       throw new Exception($"There is no Spell with abilityId {abilityId}.");
     }
 
-    return _spellsByAbilityId[abilityId];
+    return spell;
   }
 
   public static bool TryGetSpellByAbilityId(int abilityId, [NotNullWhen(true)] out Spell? spell)

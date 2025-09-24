@@ -23,12 +23,12 @@ public static class DummyCasterManager
   /// </summary>
   public static AbilitySpecificDummyCaster GetAbilitySpecificDummyCaster(int abilityId, int abilityOrderId)
   {
-    if (!_dummyUnitByAbility.ContainsKey(abilityId))
+    if (!_dummyUnitByAbility.TryGetValue(abilityId, out var dummyUnit))
     {
-      _dummyUnitByAbility.Add(abilityId, new AbilitySpecificDummyCaster(InitializeDummyCasterUnit(), abilityId, abilityOrderId));
+      dummyUnit = _dummyUnitByAbility[abilityId] = new AbilitySpecificDummyCaster(InitializeDummyCasterUnit(), abilityId, abilityOrderId);
     }
 
-    return _dummyUnitByAbility[abilityId];
+    return dummyUnit;
   }
 
   /// <summary>

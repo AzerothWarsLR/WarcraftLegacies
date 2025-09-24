@@ -152,8 +152,8 @@ internal sealed class PlayerData
     }
   }
 
-  internal PlayerSettings PlayerSettings => SaveManager.SavesByPlayer.ContainsKey(_player)
-    ? SaveManager.SavesByPlayer[_player]
+  internal PlayerSettings PlayerSettings => SaveManager.SavesByPlayer.TryGetValue(_player, out var playerSettings)
+    ? playerSettings
     : CreateNewPlayerSettings();
 
   /// <summary>

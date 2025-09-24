@@ -34,7 +34,7 @@ public static class ColorManager
   }
 
   public static string GetColorHexCode(playercolor color) =>
-    _colorHexMap.ContainsKey(color)
-      ? _colorHexMap[color]
+    _colorHexMap.TryGetValue(color, out var value)
+      ? value
       : "|cff4f5055"; // Default to Coal if no colors can be found freely available.
 }
