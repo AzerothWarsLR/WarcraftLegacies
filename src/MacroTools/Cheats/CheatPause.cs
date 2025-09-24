@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using MacroTools.CommandSystem;
+﻿using MacroTools.CommandSystem;
 using MacroTools.Utils;
 
 namespace MacroTools.Cheats;
@@ -22,7 +21,7 @@ public sealed class CheatPause : Command
   public override string Execute(player cheater, params string[] parameters)
   {
     var selectedUnits = GlobalGroup.EnumSelectedUnits(cheater);
-    if (!selectedUnits.Any())
+    if (selectedUnits.Count == 0)
     {
       return "You're not selecting any units.";
     }

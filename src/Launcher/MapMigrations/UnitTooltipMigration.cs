@@ -85,7 +85,7 @@ public sealed class UnitTooltipMigration : IMapMigration
       .OrderBy(AbilityExtensions.GetPriority)
       .Select((x) => x.TextName)
       .ToArray();
-    if (innateAbilities.Any())
+    if (innateAbilities.Length != 0)
     {
       tooltipBuilder.Append($"{LineSeparator}{AbilitiesKnown}{string.Join(", ", innateAbilities)}");
     }
@@ -103,7 +103,7 @@ public sealed class UnitTooltipMigration : IMapMigration
       .OrderBy(AbilityExtensions.GetPriority)
       .Select(x => x.TextName)
       .ToArray();
-    if (learnableAbilities.Any())
+    if (learnableAbilities.Length != 0)
     {
       tooltipBuilder.Append($"{LineSeparator}{AbilitiesLearnable}{string.Join(", ", learnableAbilities)}");
     }
@@ -121,7 +121,7 @@ public sealed class UnitTooltipMigration : IMapMigration
       .Select((x) => x.TextName)
       .ToArray();
 
-    if (heroAbilities.Any())
+    if (heroAbilities.Length != 0)
     {
       tooltipBuilder.Append($"{LineSeparator}{HeroAbilitiesKnown}{string.Join(", ", heroAbilities)}");
     }
@@ -139,7 +139,7 @@ public sealed class UnitTooltipMigration : IMapMigration
       .Select(x => x.TextName)
       .ToArray();
 
-    if (unitsSold.Any())
+    if (unitsSold.Length != 0)
     {
       tooltipBuilder.Append($"{LineSeparator}{UnitsSold}{string.Join(", ", unitsSold)}");
     }
@@ -153,7 +153,7 @@ public sealed class UnitTooltipMigration : IMapMigration
       .Select(GetBestName)
       .ToArray();
 
-    if (unitsTrained.Any())
+    if (unitsTrained.Length != 0)
     {
       tooltipBuilder.Append($"{LineSeparator}{UnitsTrained}{string.Join(", ", unitsTrained)}");
     }
@@ -167,7 +167,7 @@ public sealed class UnitTooltipMigration : IMapMigration
       .Select(GetBestName)
       .ToArray();
 
-    if (unitsTrained.Any())
+    if (unitsTrained.Length != 0)
     {
       tooltipBuilder.Append($"{LineSeparator}{UnlockableUnitsTrained}{string.Join(", ", unitsTrained)}");
     }
@@ -180,7 +180,7 @@ public sealed class UnitTooltipMigration : IMapMigration
       .Select(x => x.GetTextName())
       .ToArray();
 
-    if (researchesAvailable.Any())
+    if (researchesAvailable.Length != 0)
     {
       tooltipBuilder.Append($"{LineSeparator}{ResearchesAvailable}{string.Join(", ", researchesAvailable)}");
     }
@@ -193,7 +193,7 @@ public sealed class UnitTooltipMigration : IMapMigration
       .Select(x => x.TextName)
       .ToArray();
 
-    if (upgradesTo.Any())
+    if (upgradesTo.Length != 0)
     {
       tooltipBuilder.Append($"{LineSeparator}{UpgradesTo}{string.Join(", ", upgradesTo)}");
     }
@@ -206,7 +206,7 @@ public sealed class UnitTooltipMigration : IMapMigration
       .Select(x => x.TextName)
       .ToArray();
 
-    if (soldItems.Any())
+    if (soldItems.Length != 0)
     {
       tooltipBuilder.Append($"{LineSeparator}{ItemsSold}{string.Join(", ", soldItems)}");
     }
@@ -242,7 +242,7 @@ public sealed class UnitTooltipMigration : IMapMigration
   {
     var targetsAllowed = unit.GetAllTargetsAllowed();
 
-    if (!targetsAllowed.Any())
+    if (targetsAllowed.Count == 0)
     {
       return;
     }
