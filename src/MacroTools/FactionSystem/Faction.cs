@@ -409,13 +409,9 @@ public abstract class Faction
   /// <param name="limit">The amount to adjust the limit by.</param>
   public void ModObjectLimit(int objectId, int limit)
   {
-    if (_objectLimits.ContainsKey(objectId))
+    if (!_objectLimits.TryAdd(objectId, limit))
     {
       _objectLimits[objectId] += limit;
-    }
-    else
-    {
-      _objectLimits.Add(objectId, limit);
     }
 
     //If a player has this Faction, adjust their techtree as well
