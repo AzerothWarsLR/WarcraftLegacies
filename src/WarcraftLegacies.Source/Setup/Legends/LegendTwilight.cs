@@ -1,7 +1,5 @@
 ﻿using MacroTools.LegendSystem;
 
-#pragma warning disable CS1591
-
 namespace WarcraftLegacies.Source.Setup.Legends;
 
 public sealed class LegendTwilight

@@ -1,6 +1,4 @@
-﻿#pragma warning disable CS1591
-
-namespace WarcraftLegacies.Source;
+﻿namespace WarcraftLegacies.Source;
 
 /// <summary>
 /// Provides ambiance sounds with predefined settings.
