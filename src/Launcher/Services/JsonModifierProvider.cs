@@ -11,7 +11,7 @@ public sealed class JsonModifierProvider
   /// Data stored as <see cref="ObjectDataModification"/> or anything deriving from it has an object field which
   /// needs to be manually given a type by interpreting the object's Type field.
   /// </summary>
-  public void CastModificationSets(JsonTypeInfo typeInfo)
+  public static void CastModificationSets(JsonTypeInfo typeInfo)
   {
     foreach (var propertyInfo in typeInfo.Properties)
     {

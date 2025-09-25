@@ -77,7 +77,7 @@ public sealed class Ahnqiraj : Faction
     AddQuest(new QuestFiendThousandFaces(_allLegendSetup.Neutral.YoggSaron));
   }
 
-  private void RegisterResearches()
+  private static void RegisterResearches()
   {
     ResearchManager.Register(new Progenesis(UPGRADE_R003_PROGENESIS_C_THUN, 20)
     {
@@ -95,7 +95,7 @@ public sealed class Ahnqiraj : Faction
       });
   }
 
-  private void RegisterSpells()
+  private static void RegisterSpells()
   {
     var cocoonHeroes = new int[]
     {

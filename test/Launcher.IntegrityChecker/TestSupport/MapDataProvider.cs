@@ -17,9 +17,9 @@ public static class MapDataProvider
       }
 
       const string mapDataDirectory = "../../../../../mapdata/WarcraftLegacies";
-      var autoMapperConfig = new AutoMapperConfigurationProvider().GetConfiguration();
+      var autoMapperConfig = AutoMapperConfigurationProvider.GetConfiguration();
       var mapper = new Mapper(autoMapperConfig);
-      var conversionService = new MapDataToMapConverter(mapper, new JsonModifierProvider());
+      var conversionService = new MapDataToMapConverter(mapper);
       _mapData = conversionService.ConvertToMapAndAdditionalFiles(mapDataDirectory);
 
       return _mapData.Value;

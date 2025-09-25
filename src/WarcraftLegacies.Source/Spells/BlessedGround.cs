@@ -47,7 +47,7 @@ public sealed class BlessedGroundSpell : Spell
     }
   }
 
-  private void ApplyInitialHealing(BlessedGroundHealingData data)
+  private static void ApplyInitialHealing(BlessedGroundHealingData data)
   {
     foreach (var unit in GlobalGroup.EnumUnitsInRange(data.TargetPoint, data.Radius))
     {
@@ -71,7 +71,7 @@ public sealed class BlessedGroundSpell : Spell
     }
   }
 
-  public void ApplyHealing(BlessedGroundHealingData data)
+  public static void ApplyHealing(BlessedGroundHealingData data)
   {
     foreach (var unit in GlobalGroup.EnumUnitsInRange(data.TargetPoint, data.Radius))
     {

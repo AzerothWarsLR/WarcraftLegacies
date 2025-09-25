@@ -70,7 +70,7 @@ public sealed class BlackEmpire : Faction
     AddQuest(new QuestAlignement(_allLegendSetup.BlackEmpire.Nzoth));
   }
 
-  private void RegisterSpells()
+  private static void RegisterSpells()
   {
     PassiveAbilityManager.Register(new HideousAppendages(UNIT_U01Z_OLD_GOD_NZOTH)
     {

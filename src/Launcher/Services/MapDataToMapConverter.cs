@@ -28,7 +28,7 @@ public sealed class MapDataToMapConverter
 
   private readonly JsonSerializerOptions _jsonSerializerOptions;
 
-  public MapDataToMapConverter(IMapper mapper, JsonModifierProvider jsonModifierProvider)
+  public MapDataToMapConverter(IMapper mapper)
   {
     _mapper = mapper;
     _jsonSerializerOptions = new JsonSerializerOptions
@@ -38,7 +38,7 @@ public sealed class MapDataToMapConverter
       WriteIndented = true,
       TypeInfoResolver = new DefaultJsonTypeInfoResolver
       {
-        Modifiers = { jsonModifierProvider.CastModificationSets }
+        Modifiers = { JsonModifierProvider.CastModificationSets }
       },
       Converters = { new ColorJsonConverter() }
     };

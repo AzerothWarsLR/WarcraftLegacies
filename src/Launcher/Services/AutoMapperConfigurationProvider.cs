@@ -16,7 +16,7 @@ namespace Launcher.Services;
 
 public sealed class AutoMapperConfigurationProvider
 {
-  public MapperConfiguration GetConfiguration()
+  public static MapperConfiguration GetConfiguration()
   {
     var autoMapperConfig = new MapperConfiguration(cfg =>
     {

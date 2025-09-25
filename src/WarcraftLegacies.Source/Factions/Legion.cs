@@ -82,7 +82,7 @@ public sealed class Legion : Faction
       _preplacedUnitSystem.GetUnit(UNIT_N03C_DEMON_PORTAL_NETHER), _allLegendSetup.Legion.Anetheron, _preplacedUnitSystem)); ;
   }
 
-  private void RegisterResearches()
+  private static void RegisterResearches()
   {
     ResearchManager.Register(new PowerResearch(UPGRADE_R096_REMATERIALIZATION_LEGION, 150,
       new Rematerialization(0.2f, new Point(20454.9f, -28873.6f), "Argus", Regions.MonolithNoBuild)

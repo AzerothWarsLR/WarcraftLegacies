@@ -66,9 +66,9 @@ public static class MapDataToW3XCommand
     var compilerSettings = appConfiguration.GetRequiredSection(nameof(CompilerSettings)).Get<CompilerSettings>();
     var mapSettings = appConfiguration.GetRequiredSection(nameof(MapSettings)).Get<MapSettings>();
 
-    var autoMapperConfig = new AutoMapperConfigurationProvider().GetConfiguration();
+    var autoMapperConfig = AutoMapperConfigurationProvider.GetConfiguration();
     var mapper = new Mapper(autoMapperConfig);
-    var conversionService = new MapDataToMapConverter(mapper, new JsonModifierProvider());
+    var conversionService = new MapDataToMapConverter(mapper);
 
 
     var options = new AdvancedMapBuilderOptions

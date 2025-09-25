@@ -109,7 +109,7 @@ public sealed class Lordaeron : Faction
       _artifactSetup.CrownOfStormwind, _allLegendSetup.Lordaeron.Arthas));
   }
 
-  private void RegisterResearches()
+  private static void RegisterResearches()
   {
     ResearchManager.Register(new VeteranFootmen(UPGRADE_R00B_VETERAN_FOOTMEN_LORDAERON, 220));
   }
