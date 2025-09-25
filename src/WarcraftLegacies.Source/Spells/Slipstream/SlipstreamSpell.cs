@@ -49,8 +49,8 @@ public sealed class SlipstreamSpell : Spell
   /// <inheritdoc/>
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    var portalOrigin = Util.PositionWithPolarOffset(caster.X, caster.Y, PortalOffset, caster.Facing);
-    ChannelManager.Add(new SlipstreamPortalChannel(caster, Id, new Point(portalOrigin.x, portalOrigin.y), targetPoint)
+    var (x, y) = Util.PositionWithPolarOffset(caster.X, caster.Y, PortalOffset, caster.Facing);
+    ChannelManager.Add(new SlipstreamPortalChannel(caster, Id, new Point(x, y), targetPoint)
     {
       Active = true,
       PortalUnitTypeId = PortalUnitTypeId,
