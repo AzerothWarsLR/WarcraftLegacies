@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Utils;
@@ -54,52 +53,46 @@ public sealed class ResoluteHeart : PassiveAbility, IAppliesEffectOnDamage
   /// <inheritdoc />
   public void OnDealsDamage()
   {
-    try
+    var caster = @event.DamageSource;
+    var damagedUnit = @event.DamageTarget;
+
+
+    if (!@event.IsAttack || caster.GetAbilityLevel(AbilityTypeId) == 0 || damagedUnit == null)
     {
-      var caster = @event.DamageSource;
-      var damagedUnit = @event.DamageTarget;
-
-
-      if (!@event.IsAttack || caster.GetAbilityLevel(AbilityTypeId) == 0 || damagedUnit == null)
-      {
-        return;
-      }
-
-      if (!damagedUnit.IsEnemyTo(caster.Owner) || damagedUnit.IsUnitType(unittype.Structure) || damagedUnit.IsUnitType(unittype.Ancient))
-      {
-        return;
-      }
-
-      var damageDealt = @event.Damage;
-      var level = caster.GetAbilityLevel(AbilityTypeId);
-      var procChance = BaseProcChance + (0.1f * (level - 1));
-
-      if (GetRandomReal(0.0f, 1.0f) > procChance)
-      {
-        return;
-      }
-
-      var healAmount = damageDealt * 0.2f;
-
-      // Heal nearby allies
-      foreach (var nearbyUnit in GlobalGroup.EnumUnitsInRange(caster.GetPosition(), Radius))
-      {
-        if (nearbyUnit == caster || !nearbyUnit.IsAllyTo(caster.Owner) || !nearbyUnit.Alive)
-        {
-          continue;
-        }
-
-        if (!string.IsNullOrEmpty(EffectPath))
-        {
-          effect.Create(EffectPath, nearbyUnit.GetPosition().X, nearbyUnit.GetPosition().Y);
-        }
-
-        nearbyUnit.Heal(healAmount);
-      }
+      return;
     }
-    catch (Exception)
-    {
 
+    if (!damagedUnit.IsEnemyTo(caster.Owner) || damagedUnit.IsUnitType(unittype.Structure) ||
+        damagedUnit.IsUnitType(unittype.Ancient))
+    {
+      return;
+    }
+
+    var damageDealt = @event.Damage;
+    var level = caster.GetAbilityLevel(AbilityTypeId);
+    var procChance = BaseProcChance + (0.1f * (level - 1));
+
+    if (GetRandomReal(0.0f, 1.0f) > procChance)
+    {
+      return;
+    }
+
+    var healAmount = damageDealt * 0.2f;
+
+    // Heal nearby allies
+    foreach (var nearbyUnit in GlobalGroup.EnumUnitsInRange(caster.GetPosition(), Radius))
+    {
+      if (nearbyUnit == caster || !nearbyUnit.IsAllyTo(caster.Owner) || !nearbyUnit.Alive)
+      {
+        continue;
+      }
+
+      if (!string.IsNullOrEmpty(EffectPath))
+      {
+        effect.Create(EffectPath, nearbyUnit.GetPosition().X, nearbyUnit.GetPosition().Y);
+      }
+
+      nearbyUnit.Heal(healAmount);
     }
   }
 }
