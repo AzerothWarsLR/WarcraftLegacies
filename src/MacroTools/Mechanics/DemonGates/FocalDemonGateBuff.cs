@@ -1,5 +1,6 @@
 ﻿using MacroTools.Extensions;
 using WCSharp.Buffs;
+using WCSharp.Shared;
 using WCSharp.Shared.Data;
 
 namespace MacroTools.Mechanics.DemonGates;
@@ -25,10 +26,8 @@ public sealed class FocalDemonGateBuff : PassiveBuff
     get
     {
       var targetPosition = Target.GetPosition();
-      var offsetPosition =
-        WCSharp.Shared.Util.PositionWithPolarOffset(targetPosition.X, targetPosition.Y, SpawnDistance,
-          Target.Facing + FacingOffset);
-      return new Point(offsetPosition.x, offsetPosition.y);
+      var (x, y) = Util.PositionWithPolarOffset(targetPosition.X, targetPosition.Y, SpawnDistance, Target.Facing + FacingOffset);
+      return new Point(x, y);
     }
   }
 
