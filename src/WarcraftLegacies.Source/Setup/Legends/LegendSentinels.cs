@@ -15,7 +15,6 @@ public sealed class LegendSentinels
   public Capital Auberdine { get; }
   public Capital Feathermoon { get; }
   public Capital VaultOfTheWardens { get; }
-  public Capital BlackrookHold { get; }
 
   public LegendSentinels(PreplacedUnitSystem preplacedUnitSystem)
   {
@@ -60,11 +59,6 @@ public sealed class LegendSentinels
     {
       Unit = preplacedUnitSystem.GetUnit(UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)
     };
-
-    BlackrookHold = new Capital
-    {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_H03C_BLACK_ROOK_HOLD_NEUTRAL_HOSTILE)
-    };
   }
 
   public void RegisterLegends()
@@ -75,6 +69,5 @@ public sealed class LegendSentinels
     LegendaryHeroManager.Register(Naisha);
     CapitalManager.Register(Auberdine);
     CapitalManager.Register(Feathermoon);
-    CapitalManager.Register(BlackrookHold);
   }
 }

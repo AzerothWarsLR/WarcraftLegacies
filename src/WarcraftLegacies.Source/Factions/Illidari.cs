@@ -98,7 +98,6 @@ public sealed class Illidari : Faction
     AddQuest(new QuestStranglethornOutpost(Regions.IllidariUnlockSA, _allLegendSetup.Naga.Vashj));
     AddQuest(new QuestEyeofSargeras(_artifactSetup.EyeOfSargeras, _allLegendSetup.Naga.Illidan));
     AddQuest(new QuestRegroupCastaway());
-    AddQuest(new QuestBlackrookHold(_allLegendSetup.Sentinels.BlackrookHold));
     AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
   }
 

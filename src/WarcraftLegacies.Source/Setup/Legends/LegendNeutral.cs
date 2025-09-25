@@ -26,6 +26,7 @@ public sealed class LegendNeutral
   public LegendaryHero Vaelastrasz { get; }
   public Capital Caerdarrow { get; }
   public Capital Shaladrassil { get; }
+  public Capital BlackrookHold { get; }
 
   public LegendNeutral(PreplacedUnitSystem preplacedUnitSystem)
   {
@@ -165,6 +166,14 @@ public sealed class LegendNeutral
       Unit = preplacedUnitSystem.GetUnit(UNIT_E01W_SHALADRASSIL_DRUID_OTHER),
       Capturable = true
     };
+
+    BlackrookHold = new Capital
+    {
+      Unit = preplacedUnitSystem.GetUnit(UNIT_H03C_BLACK_ROOK_HOLD_NEUTRAL_HOSTILE),
+      Capturable = true
+    };
+    BlackrookHold.Unit.Life = 500;
+    BlackrookHold.Unit.Owner = player.NeutralVictim;
   }
 
   public void RegisterLegends()
@@ -190,5 +199,6 @@ public sealed class LegendNeutral
     CapitalManager.Register(FountainOfBlood);
     CapitalManager.Register(Caerdarrow);
     CapitalManager.Register(Shaladrassil);
+    CapitalManager.Register(BlackrookHold);
   }
 }
