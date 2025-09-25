@@ -16,7 +16,7 @@ namespace WarcraftLegacies.Source.Factions;
 public sealed class Bilgewater : Faction
 {
   private readonly AllLegendSetup _allLegendSetup;
-  private ArtifactSetup _artifactSetup;
+  private readonly ArtifactSetup _artifactSetup;
 
   /// <inheritdoc />
   public Bilgewater(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup,

@@ -10,7 +10,7 @@ namespace MacroTools.Cheats;
 public sealed class CheatControl : Command
 {
   private readonly bool _control;
-  private string _commandText;
+  private readonly string _commandText;
 
   /// <inheritdoc />
   public override string CommandText => _commandText;
