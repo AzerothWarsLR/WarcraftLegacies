@@ -6,7 +6,7 @@ namespace MacroTools.ObjectiveSystem.Objectives.FactionBased;
 
 public class ObjectiveFactionContolPointAmountLessThan : Objective
 {
-  private int _controlPointCount;
+  private readonly int _controlPointCount;
 
   public ObjectiveFactionContolPointAmountLessThan(Faction whichFaction, int cpAmount)
   {
