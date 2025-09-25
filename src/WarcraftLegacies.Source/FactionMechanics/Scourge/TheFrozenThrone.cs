@@ -17,10 +17,10 @@ public static class TheFrozenThrone
   /// </summary>
   public static event EventHandler<FrozenThroneState>? FrozenThroneStateChanged;
 
-  private static FrozenThroneState State
+  public static FrozenThroneState State
   {
     get => _state;
-    set
+    private set
     {
       _state = value;
       FrozenThroneStateChanged?.Invoke(null, value);

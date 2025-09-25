@@ -574,7 +574,7 @@ public abstract class Faction
     where TFactionB : Faction
     where TFactionC : Faction
   {
-    var factionTypes = new List<Type> { typeof(TFactionA), typeof(TFactionB) };
+    var factionTypes = new List<Type> { typeof(TFactionA), typeof(TFactionB), typeof(TFactionC) };
     var factionDependentInitializer = new FactionDependentInitializer(factionTypes, () =>
     {
       if (FactionManager.TryGetFactionByType<TFactionA>(out var factionDependencyA) &&

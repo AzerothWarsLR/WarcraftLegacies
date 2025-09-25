@@ -235,6 +235,7 @@ public abstract class QuestData
         {
           if (formerProgress == QuestProgress.Undiscovered)
           {
+            OnDiscovered(whichFaction);
             whichFaction.DisplayDiscovered(this, false);
           }
 
@@ -278,6 +279,11 @@ public abstract class QuestData
 
   /// <summary>Fired when the Quest is completed.</summary>
   protected virtual void OnComplete(Faction whichFaction)
+  {
+  }
+
+  /// <summary>Fired when the Quest is discovered.</summary>
+  protected virtual void OnDiscovered(Faction whichFaction)
   {
   }
 

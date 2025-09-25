@@ -46,6 +46,7 @@ public sealed class Illidari : Faction
     RegisterFactionDependentInitializer<Scourge>(RegisterScourgeDialogue);
     RegisterFactionDependentInitializer<Sentinels, Druids>(RegisterSentinelsDruidsDialogue);
     RegisterFactionDependentInitializer<FelHorde>(RegisterFelHordeQuests);
+    RegisterFactionDependentInitializer<Scourge, Druids, Ahnqiraj>(RegisterScourgeDruidsAhnqirajQuests);
     ProcessObjectInfo(IllidariObjectInfo.GetAllObjectLimits());
   }
 
@@ -337,5 +338,11 @@ public sealed class Illidari : Faction
       Progress = QuestProgress.Undiscovered
     });
     AddQuest(questBurningCrusade);
+  }
+
+  private void RegisterScourgeDruidsAhnqirajQuests(Scourge scourge, Druids druids, Ahnqiraj ahnqiraj)
+  {
+    AddQuest(new QuestKiljaedensCommand(scourge, druids, ahnqiraj, _allLegendSetup.Ahnqiraj.Cthun,
+      _allLegendSetup.Druids.Nordrassil, _allLegendSetup.Naga.Illidan));
   }
 }
