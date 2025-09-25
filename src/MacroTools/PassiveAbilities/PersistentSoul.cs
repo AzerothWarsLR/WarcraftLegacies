@@ -77,7 +77,7 @@ public sealed class PersistentSoul : PassiveAbility, IEffectOnDeath
     var reanimatedUnit = unit.Create(castingPlayer, whichUnit.UnitType, whichUnitPosition.X, whichUnitPosition.Y, whichUnit.Facing);
     reanimatedUnit.RemoveAllAbilities(new List<int> { 1096905835, 1097690998, 1112498531 });
     reanimatedUnit.SetTimedLife(Duration, BuffId);
-    reanimatedUnit.SetVertexColor(200, 50, 50, 255);
+    reanimatedUnit.SetVertexColor(200, 50, 50);
     reanimatedUnit.SetExploded(true);
     reanimatedUnit.AddType(unittype.Undead);
     reanimatedUnit.AddType(unittype.Summoned);

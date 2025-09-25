@@ -23,7 +23,7 @@ public static class UnitEventSystem
     // Register unit death events for all players
     for (var playerId = 0; playerId < 24; playerId++)
     {
-      trigger.RegisterPlayerUnitEvent(player.Create(playerId), playerunitevent.Death, null);
+      trigger.RegisterPlayerUnitEvent(player.Create(playerId), playerunitevent.Death);
     }
 
     trigger.AddAction(OnUnitDeath);

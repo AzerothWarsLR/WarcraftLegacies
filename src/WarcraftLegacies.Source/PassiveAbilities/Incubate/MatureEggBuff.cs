@@ -22,7 +22,7 @@ public sealed class MatureEggBuff : PassiveBuff
   public override void OnApply()
   {
     Target.Name = "Mature Egg";
-    Target.SetVertexColor(255, 255, 255, 255);
+    Target.SetVertexColor(255, 255, 255);
     Target.AddAbility(ABILITY_ZBBS_HATCH_INCUBATE);
 
     effect effect = effect.Create(@"Abilities\Spells\Items\AIem\AIemTarget.mdl", Target.X, Target.Y);
@@ -40,7 +40,7 @@ public sealed class MatureEggBuff : PassiveBuff
       rallyPoint = Target.GetPosition();
     }
 
-    unit.Create(Target.Owner, HatchedUnitTypeId, Target.X, Target.Y, 270)
+    unit.Create(Target.Owner, HatchedUnitTypeId, Target.X, Target.Y)
       .IssueOrder(ORDER_ATTACK, rallyPoint.X, rallyPoint.Y);
   }
 }

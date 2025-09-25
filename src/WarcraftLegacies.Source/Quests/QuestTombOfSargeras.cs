@@ -93,7 +93,7 @@ public sealed class QuestTombOfSargeras : QuestData
     foreach (var rect in rectangles)
     {
       var enterTrigger = trigger.Create();
-      enterTrigger.RegisterEnterRegion(rect.Region, null);
+      enterTrigger.RegisterEnterRegion(rect.Region);
       enterTrigger.AddAction(() => @event.EnteringUnit.SetPosition(_entrance.Center));
       triggers.Add(enterTrigger);
     }

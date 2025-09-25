@@ -24,7 +24,7 @@ public sealed class SummonLegionChannel : Channel
     PingMinimap(Caster.X, Caster.Y, 8);
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
-      player.DisplayTextTo("The Burning Legion is being summoned!", 0, 0);
+      player.DisplayTextTo("The Burning Legion is being summoned!");
     }
   }
 

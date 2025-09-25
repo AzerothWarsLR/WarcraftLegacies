@@ -26,19 +26,19 @@ public static class InviteCommand
 
     if (!FactionManager.TryGetFactionByName(content, out var targetFaction))
     {
-      triggerPlayer.DisplayTextTo($"There is no Faction with the name {content}.", 0, 0);
+      triggerPlayer.DisplayTextTo($"There is no Faction with the name {content}.");
       return;
     }
 
     if (triggerPlayer.GetFaction() == targetFaction)
     {
-      triggerPlayer.DisplayTextTo("You can'invite yourself to your own team.", 0, 0);
+      triggerPlayer.DisplayTextTo("You can'invite yourself to your own team.");
       return;
     }
 
     if (targetFaction.Player == null)
     {
-      triggerPlayer.DisplayTextTo($"There is no player with the Faction {targetFaction.PrefixCol} {targetFaction.Name}|r.", 0, 0);
+      triggerPlayer.DisplayTextTo($"There is no player with the Faction {targetFaction.PrefixCol} {targetFaction.Name}|r.");
       return;
     }
 

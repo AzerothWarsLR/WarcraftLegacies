@@ -29,17 +29,17 @@ public static class JoinCommand
       if (targetTeam.IsPlayerInvited(triggerPlayer))
       {
         triggerPlayer.SetTeam(targetTeam);
-        triggerPlayer.DisplayTextTo($"You have joined {targetTeam.Name}.", 0, 0);
+        triggerPlayer.DisplayTextTo($"You have joined {targetTeam.Name}.");
         targetTeam.DisplayText($"{triggerPlayer?.GetFaction()?.ColoredName} has joined the {targetTeam.Name}.");
       }
       else
       {
-        triggerPlayer.DisplayTextTo($"You have not been invited to join {targetTeam.Name}.", 0, 0);
+        triggerPlayer.DisplayTextTo($"You have not been invited to join {targetTeam.Name}.");
       }
     }
     else
     {
-      triggerPlayer.DisplayTextTo($"There is no Team with the name {content}.", 0, 0);
+      triggerPlayer.DisplayTextTo($"There is no Team with the name {content}.");
     }
   }
 

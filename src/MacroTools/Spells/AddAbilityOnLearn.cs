@@ -21,7 +21,7 @@ public sealed class AddAbilityOnLearn : Spell
       player player = player.Create(i);
       if (player.Controller == mapcontrol.User)
       {
-        trig.RegisterPlayerUnitEvent(player, playerunitevent.HeroSkill, null);
+        trig.RegisterPlayerUnitEvent(player, playerunitevent.HeroSkill);
       }
     }
 

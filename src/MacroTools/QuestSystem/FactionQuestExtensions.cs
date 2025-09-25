@@ -23,7 +23,7 @@ public static class FactionQuestExtensions
       {
         if (PlayerData.ByHandle(whichPlayer).PlayerSettings.ShowQuestText)
         {
-          enumPlayer.DisplayTextTo($"\n|cffffcc00MAJOR EVENT - {whichPlayer.GetFaction()?.PrefixCol}{questData.Title}|r\n{questData.RewardFlavour}\n", 0, 0);
+          enumPlayer.DisplayTextTo($"\n|cffffcc00MAJOR EVENT - {whichPlayer.GetFaction()?.PrefixCol}{questData.Title}|r\n{questData.RewardFlavour}\n");
         }
       }
     }
@@ -50,7 +50,7 @@ public static class FactionQuestExtensions
 
     if (faction.Player != null && faction.Player.GetPlayerSettings().ShowQuestText)
     {
-      faction.Player.DisplayTextTo(display, 0, 0);
+      faction.Player.DisplayTextTo(display);
     }
 
     faction.Player?.PlaySound(SoundLibrary.Failed);
@@ -69,7 +69,7 @@ public static class FactionQuestExtensions
 
     if (faction.Player != null && faction.Player.GetPlayerSettings().ShowQuestText)
     {
-      faction.Player.DisplayTextTo(display, 0, 0);
+      faction.Player.DisplayTextTo(display);
     }
 
     faction.Player?.PlaySound(SoundLibrary.Completed);
@@ -99,7 +99,7 @@ public static class FactionQuestExtensions
 
     if (faction.Player != null && faction.Player.GetPlayerSettings().ShowQuestText)
     {
-      faction.Player.DisplayTextTo(display, 0, 0);
+      faction.Player.DisplayTextTo(display);
     }
 
     var sound = SoundLibrary.Discovered;

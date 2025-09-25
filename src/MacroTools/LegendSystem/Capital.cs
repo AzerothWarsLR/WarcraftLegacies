@@ -122,7 +122,7 @@ public sealed class Capital : Legend
       return;
     }
 
-    Unit.SetOwner(@event.DamageSource.Owner, true);
+    Unit.SetOwner(@event.DamageSource.Owner);
     @event.Damage = 0;
     Unit.Life = Unit.MaxLife;
   }
@@ -141,7 +141,7 @@ public sealed class Capital : Legend
 
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
-      player.DisplayTextTo($"\n|cffffcc00CAPITAL DESTROYED|r\n{DeathMessage}", 0, 0);
+      player.DisplayTextTo($"\n|cffffcc00CAPITAL DESTROYED|r\n{DeathMessage}");
     }
   }
 }

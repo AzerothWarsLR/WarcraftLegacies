@@ -66,7 +66,7 @@ public sealed class QuestDragonsOfNightmare : QuestData
     _timer.Dispose();
     foreach (var player in Util.EnumeratePlayers())
     {
-      player.DisplayTextTo($"\n|cff590ff7 NIGHTMARE DRAGONS SPAWNED \n|r {_nightmareDragonKalimdor.GetProperName()} and {_nightmareDragonEk.GetProperName()} have appeared in {_portalOneLocation} and {_portalTwoLocation}.", 0, 0);
+      player.DisplayTextTo($"\n|cff590ff7 NIGHTMARE DRAGONS SPAWNED \n|r {_nightmareDragonKalimdor.GetProperName()} and {_nightmareDragonEk.GetProperName()} have appeared in {_portalOneLocation} and {_portalTwoLocation}.");
       SoundLibrary.Warning.Start();
     }
 

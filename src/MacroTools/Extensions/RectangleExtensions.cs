@@ -66,7 +66,7 @@ public static class RectangleExtensions
 
       if (!unit.IsRemovable())
       {
-        unit.SetOwner(player.NeutralAggressive, true);
+        unit.SetOwner(player.NeutralAggressive);
         continue;
       }
 
@@ -77,7 +77,7 @@ public static class RectangleExtensions
       }
       else
       {
-        unit.SetOwner(player.NeutralAggressive, true);
+        unit.SetOwner(player.NeutralAggressive);
       }
     }
   }

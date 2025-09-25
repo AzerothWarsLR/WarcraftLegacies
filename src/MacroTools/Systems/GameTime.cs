@@ -91,7 +91,7 @@ public static class GameTime
           {
             player.DisplayTextTo(PlayerData.ByHandle(player).EliminationTurns == 2
                 ? $"You have met the threshold for being eliminated from the game. Unless you raise your Control Point count above 5, raise food used above 105 or your team retakes/gains an essential Legend you will be defeated in {3 - PlayerData.ByHandle(player).EliminationTurns} turn."
-                : $"You have met the threshold for being eliminated from the game. Unless you raise your cp count above 5, raise food used above 105 or your team retakes/gains an essential Legend you will be defeated in {3 - PlayerData.ByHandle(player).EliminationTurns} turns.", 0, 0);
+                : $"You have met the threshold for being eliminated from the game. Unless you raise your cp count above 5, raise food used above 105 or your team retakes/gains an essential Legend you will be defeated in {3 - PlayerData.ByHandle(player).EliminationTurns} turns.");
           }
 
           PlayerData.ByHandle(player).EliminationTurns++;

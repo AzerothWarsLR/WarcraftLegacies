@@ -85,7 +85,7 @@ public static class TheFrozenThrone
 
       if (_frozenThrone.OwningPlayer == player.NeutralPassive)
       {
-        _frozenThrone.Unit.SetOwner(player.NeutralAggressive, true);
+        _frozenThrone.Unit.SetOwner(player.NeutralAggressive);
       }
     }
 
@@ -109,13 +109,13 @@ public static class TheFrozenThrone
     if (_frozenThrone.Unit != null)
     {
       _frozenThrone.Unit.Name = "Frozen Throne (Ruptured)";
-      _frozenThrone.Unit.SetOwner(player.NeutralPassive, true);
+      _frozenThrone.Unit.SetOwner(player.NeutralPassive);
       _frozenThrone.Unit.IsInvulnerable = true;
     }
 
     foreach (var player in Util.EnumeratePlayers())
     {
-      player.DisplayTextTo("\n|cffffcc00CAPITAL DAMAGED|r\nThe Frozen Throne, once thought to be an indomitable bastion of death, has been ruptured. Ner'zhul's consciousness recedes within, retreating desperately to protect what remains of Icecrown Citadel.", 0, 0);
+      player.DisplayTextTo("\n|cffffcc00CAPITAL DAMAGED|r\nThe Frozen Throne, once thought to be an indomitable bastion of death, has been ruptured. Ner'zhul's consciousness recedes within, retreating desperately to protect what remains of Icecrown Citadel.");
     }
 
     State = FrozenThroneState.Ruptured;

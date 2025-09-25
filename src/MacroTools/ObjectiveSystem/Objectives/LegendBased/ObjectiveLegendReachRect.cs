@@ -19,7 +19,7 @@ public sealed class ObjectiveLegendReachRect : Objective
     _target = RectToRegion(_targetRect);
     _legend = legendaryHero;
     Description = legendaryHero.Name + " reaches " + rectName;
-    _entersRect.Trigger.RegisterEnterRegion(_target, null);
+    _entersRect.Trigger.RegisterEnterRegion(_target);
     _entersRect.Trigger.AddAction(OnRegionEnter);
     PingPath = "MinimapQuestTurnIn";
     DisplaysPosition = true;

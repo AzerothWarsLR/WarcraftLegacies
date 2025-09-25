@@ -69,7 +69,7 @@ public sealed class GameModeManager
 
     foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
     {
-      player.DisplayTextTo($"The {highestVotedGameMode.GameMode.Name} game mode has been chosen.", 0, 0);
+      player.DisplayTextTo($"The {highestVotedGameMode.GameMode.Name} game mode has been chosen.");
       dialog.SetVisibility(player, false);
     }
 

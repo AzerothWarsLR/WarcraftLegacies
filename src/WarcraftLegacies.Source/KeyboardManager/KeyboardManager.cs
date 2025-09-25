@@ -111,7 +111,7 @@ public class HeroHotkeyManager
   private void SelectFourthHero(player whichPlayer)
   {
     var heroGroup = group.Create();
-    heroGroup.EnumUnitsOfPlayer(whichPlayer, null);
+    heroGroup.EnumUnitsOfPlayer(whichPlayer);
 
     var heroCount = 0;
     unit fourthHero = null;
@@ -148,7 +148,7 @@ public class HeroHotkeyManager
       else
       {
         var selectedGroup = group.Create();
-        selectedGroup.EnumUnitsSelected(whichPlayer, null);
+        selectedGroup.EnumUnitsSelected(whichPlayer);
 
         firstOfGroup = selectedGroup.First;
         while (firstOfGroup != null)
@@ -163,7 +163,7 @@ public class HeroHotkeyManager
         selectedGroup.Dispose();
         if (whichPlayer == player.LocalPlayer)
         {
-          fourthHero.Select(true);
+          fourthHero.Select();
         }
       }
     }

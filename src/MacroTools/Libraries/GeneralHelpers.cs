@@ -81,7 +81,7 @@ public static class GeneralHelpers
   /// </summary>
   public static void KillNeutralHostileUnitsInRadius(float x, float y, float radius)
   {
-    _tempGroup.EnumUnitsInRange(x, y, radius, null);
+    _tempGroup.EnumUnitsInRange(x, y, radius);
     while (true)
     {
       var u = _tempGroup.First;
@@ -106,7 +106,7 @@ public static class GeneralHelpers
   public static unit CreateStructureForced(player whichPlayer, int unitId, float x, float y, float face, float size)
   {
     SetRect(_tempRect, x - size / 2, y - size / 2, x + size / 2, y + size / 2);
-    _tempGroup.EnumUnitsInRect(_tempRect, null);
+    _tempGroup.EnumUnitsInRect(_tempRect);
     while (true)
     {
       var u = _tempGroup.First;

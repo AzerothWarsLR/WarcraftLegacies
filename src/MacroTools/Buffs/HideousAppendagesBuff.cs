@@ -45,7 +45,7 @@ public sealed class HideousAppendagesBuff : PassiveBuff
   {
     foreach (var tentacle in _tentacles)
     {
-      tentacle.SetOwner(Target.Owner, true);
+      tentacle.SetOwner(Target.Owner);
     }
   }
 
@@ -56,7 +56,7 @@ public sealed class HideousAppendagesBuff : PassiveBuff
       var tentacle = unit.Create(Target.Owner, TentacleUnitTypeId, Target.X, Target.Y, 0);
       tentacle.SetAnimation("birth");
       tentacle.QueueAnimation("stand");
-      tentacle.SetVertexColor(255, 255, 255, 255);
+      tentacle.SetVertexColor(255, 255, 255);
       tentacle.AddAbility(FourCC("Aloc"));
       tentacle.IsInvulnerable = true;
       tentacle.SetPathing(false);

@@ -57,14 +57,14 @@ public sealed class FlightPath : Research
 
     if (_flightToOrgrimmar != null)
     {
-      _flightToOrgrimmar.SetOwner(recipient, true);
+      _flightToOrgrimmar.SetOwner(recipient);
       _flightToOrgrimmar.SetWaygateDestination(Regions.OrgrimmarFlight.Center.X, Regions.ThunderbluffFlight.Center.Y);
       _flightToOrgrimmar.IsInvulnerable = false;
     }
 
     if (_flightToThunderBluff != null)
     {
-      _flightToThunderBluff.SetOwner(recipient, true);
+      _flightToThunderBluff.SetOwner(recipient);
       _flightToThunderBluff.SetWaygateDestination(Regions.ThunderbluffFlight.Center.X, Regions.ThunderbluffFlight.Center.Y);
       _flightToThunderBluff.IsInvulnerable = false;
     }

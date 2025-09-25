@@ -46,7 +46,7 @@ public sealed class ObjectiveChannelRect : Objective
 
     MapEffectPath = TargetEffect;
 
-    _entersRectTrig.Trigger.RegisterEnterRegion(target, null);
+    _entersRectTrig.Trigger.RegisterEnterRegion(target);
     _entersRectTrig.Trigger.AddAction(OnRegionEnter);
     DisplaysPosition = true;
     Position = new(_targetRect.CenterX, _targetRect.CenterY);

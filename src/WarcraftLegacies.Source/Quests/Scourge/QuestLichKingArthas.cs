@@ -56,7 +56,7 @@ public sealed class QuestLichKingArthas : QuestData
     TheFrozenThrone.Vacate(false);
     if (_theFrozenThrone.Unit != null)
     {
-      _theFrozenThrone.Unit.SetOwner(completingFaction.Player!, true);
+      _theFrozenThrone.Unit.SetOwner(completingFaction.Player!);
     }
 
     _arthas.UnitType = UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE;

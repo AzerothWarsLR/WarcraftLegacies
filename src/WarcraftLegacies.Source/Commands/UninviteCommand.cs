@@ -32,12 +32,12 @@ public static class UninviteCommand
       }
       else
       {
-        triggerPlayer.DisplayTextTo($"There is no player with the Faction {targetFaction.ColoredName}.", 0, 0);
+        triggerPlayer.DisplayTextTo($"There is no player with the Faction {targetFaction.ColoredName}.");
       }
     }
     else
     {
-      triggerPlayer.DisplayTextTo($"There is no Faction with the name {content}.", 0, 0);
+      triggerPlayer.DisplayTextTo($"There is no Faction with the name {content}.");
     }
   }
 

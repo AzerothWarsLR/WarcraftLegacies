@@ -75,7 +75,7 @@ public sealed class QuestTheramore : QuestData
                x.Owner == completingFaction.Player && x.IsUnitType(unittype.Structure)).ToList())
     {
       var whichPlayer = player.NeutralAggressive;
-      unit.SetOwner(whichPlayer, true);
+      unit.SetOwner(whichPlayer);
     }
   }
 

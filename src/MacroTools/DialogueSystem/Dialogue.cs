@@ -40,7 +40,7 @@ public sealed class Dialogue : IHasPlayableDialogue
 
     if (whichPlayer.GetPlayerSettings().ShowCaptions)
     {
-      whichPlayer.DisplayTextTo($"|cffffcc00{_speaker}:|r {_caption}", 0, 0);
+      whichPlayer.DisplayTextTo($"|cffffcc00{_speaker}:|r {_caption}");
     }
   }
 }

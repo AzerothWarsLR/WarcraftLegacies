@@ -202,7 +202,7 @@ public sealed class ControlPointManager
         }
 
         @event.Damage = 0;
-        controlPoint.Unit.SetOwner(attacker.Owner, true);
+        controlPoint.Unit.SetOwner(attacker.Owner);
         controlPoint.Unit.SetLifePercent(100);
       }
       catch (Exception ex)
@@ -319,7 +319,7 @@ public sealed class ControlPointManager
 
     var defenderUnitTypeId = controlPoint.Owner.GetFaction()?.ControlPointDefenderUnitTypeId ??
                              ControlLevelSettings.DefaultDefenderUnitTypeId;
-    controlPoint.Defender ??= unit.Create(controlPoint.Owner, defenderUnitTypeId, controlPoint.Unit.X, controlPoint.Unit.Y, 270);
+    controlPoint.Defender ??= unit.Create(controlPoint.Owner, defenderUnitTypeId, controlPoint.Unit.X, controlPoint.Unit.Y);
     controlPoint.Defender.AddAbility(FourCC("Aloc"));
     controlPoint.Defender.IsInvulnerable = true;
     ConfigureControlPointOrDefenderAttack(controlPoint.Defender, flooredLevel);

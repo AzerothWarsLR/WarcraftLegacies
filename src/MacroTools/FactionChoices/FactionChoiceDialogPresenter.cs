@@ -44,7 +44,7 @@ public sealed class FactionChoiceDialogPresenter : ChoiceDialogPresenter<Faction
     foreach (var unit in startingUnits)
     {
       var replacedUnit = unit.ReplaceWithFactionEquivalent(pickedFaction);
-      replacedUnit.SetOwner(pickingPlayer, true);
+      replacedUnit.SetOwner(pickingPlayer);
 
       if (replacedUnit != unit && CinematicMode.State == CinematicState.Active)
       {

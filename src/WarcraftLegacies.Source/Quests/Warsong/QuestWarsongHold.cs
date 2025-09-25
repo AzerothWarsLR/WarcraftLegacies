@@ -32,7 +32,7 @@ public sealed class QuestWarsongHold : QuestData
     var boreanTundra = ControlPointManager.Instance.GetFromUnitType(FourCC("n00G")).Unit;
     KillNeutralHostileUnitsInRadius(boreanTundra.X, boreanTundra.Y, 2300);
     //Spawn the base
-    boreanTundra.SetOwner(completingFaction.Player, true);
+    boreanTundra.SetOwner(completingFaction.Player);
     var warsongHold = CreateStructureForced(completingFaction.Player, FourCC("o02S"), -7648, 15456, 270, 192);
     warsongHold.Name = "Warsong Hold";
     warsongHold.MaxLife = 4000;

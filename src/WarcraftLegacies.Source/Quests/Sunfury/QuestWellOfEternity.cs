@@ -33,6 +33,6 @@ public sealed class QuestWellOfEternity : QuestData
   protected override void OnComplete(Faction completingFaction)
   {
     _well.IsVisible = true;
-    _well.SetOwner(completingFaction.Player, true);
+    _well.SetOwner(completingFaction.Player);
   }
 }

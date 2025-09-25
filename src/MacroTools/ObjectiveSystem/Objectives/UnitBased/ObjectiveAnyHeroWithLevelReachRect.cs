@@ -27,7 +27,7 @@ public sealed class ObjectiveAnyHeroWithLevelReachRect : Objective, IHasCompleti
     _targetLevel = targetLevel;
     var target = RectToRegion(_targetRect);
     Description = $"Any level {targetLevel}+ hero reaches {rectName}";
-    _entersRect.Trigger.RegisterEnterRegion(target, null);
+    _entersRect.Trigger.RegisterEnterRegion(target);
     _entersRect.Trigger.AddAction(OnRegionEnter);
     PingPath = "MinimapQuestTurnIn";
     DisplaysPosition = true;

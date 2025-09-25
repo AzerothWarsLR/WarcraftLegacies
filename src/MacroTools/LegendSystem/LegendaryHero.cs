@@ -141,7 +141,7 @@ public sealed class LegendaryHero : Legend
     }
     if (Unit.Owner != owner)
     {
-      Unit.SetOwner(owner, true);
+      Unit.SetOwner(owner);
     }
 
     RefreshDummy();
@@ -279,7 +279,7 @@ public sealed class LegendaryHero : Legend
     {
       player.DisplayTextTo(Unit.Owner == player.NeutralAggressive
           ? $"\n|cffffcc00LEGENDARY FOE SLAIN|r\n{DeathMessage}"
-          : $"\n|cffffcc00HERO SLAIN|r\n{DeathMessage}", 0, 0);
+          : $"\n|cffffcc00HERO SLAIN|r\n{DeathMessage}");
     }
   }
 

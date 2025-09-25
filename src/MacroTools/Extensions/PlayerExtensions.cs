@@ -139,7 +139,7 @@ public static class PlayerExtensions
       }
       else
       {
-        unit.SetOwner(hostilePlayer, true);
+        unit.SetOwner(hostilePlayer);
       }
     }
   }
@@ -151,7 +151,7 @@ public static class PlayerExtensions
   {
     if (player.LocalPlayer == whichPlayer)
     {
-      whichUnit.Select(true);
+      whichUnit.Select();
     }
   }
 

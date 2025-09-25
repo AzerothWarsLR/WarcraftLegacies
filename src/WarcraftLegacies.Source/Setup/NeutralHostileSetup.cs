@@ -15,7 +15,7 @@ public static class NeutralHostileSetup
     foreach (var unit in GlobalGroup.EnumUnitsOfPlayer(player.Create(20)))
     {
       var whichPlayer = player.NeutralAggressive;
-      unit.SetOwner(whichPlayer, true);
+      unit.SetOwner(whichPlayer);
     }
   }
 }

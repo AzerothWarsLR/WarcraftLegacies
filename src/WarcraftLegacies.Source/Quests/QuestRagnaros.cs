@@ -28,7 +28,7 @@ public sealed class QuestRagnaros : QuestData
   {
     _ragnaros = ragnaros;
     ragnarosSummmoningPedestal.MakeCapturable();
-    ragnarosSummmoningPedestal.SetOwner(player.NeutralPassive, true);
+    ragnarosSummmoningPedestal.SetOwner(player.NeutralPassive);
     ragnarosSummmoningPedestal.IsInvulnerable = true;
     _ragnarosSummoningPedestal = ragnarosSummmoningPedestal;
 
@@ -48,7 +48,7 @@ public sealed class QuestRagnaros : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    _ragnarosSummoningPedestal.SetOwner(_heroInRectObjective.CompletingUnit.Owner ?? player.NeutralAggressive, true);
+    _ragnarosSummoningPedestal.SetOwner(_heroInRectObjective.CompletingUnit.Owner ?? player.NeutralAggressive);
     _ragnarosSummoningPedestal.IsInvulnerable = false;
   }
 

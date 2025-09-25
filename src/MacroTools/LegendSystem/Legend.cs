@@ -103,7 +103,7 @@ public abstract class Legend
         var newUnit = unit.Create(OwningPlayer, value, _unit.X, _unit.Y, _unit.Facing);
         newUnit.Life = _unit.Life;
         newUnit.Mana = _unit.Mana;
-        newUnit.SetExperience(_unit.Experience, false);
+        newUnit.SetExperience(_unit.Experience);
         _unit.TransferItems(newUnit);
         var oldX = _unit.X;
         var oldY = _unit.Y;

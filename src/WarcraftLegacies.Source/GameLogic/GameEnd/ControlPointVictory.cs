@@ -44,7 +44,7 @@ public static class ControlPointVictory
   {
     foreach (var player in Util.EnumeratePlayers())
     {
-      player.DisplayTextTo($"\n{VictoryColor}TEAM VICTORY IMMINENT|r\n{whichTeam.Name} has captured {controlPoints} out of {CpsVictory} Control Points required to win the game!", 0, 0);
+      player.DisplayTextTo($"\n{VictoryColor}TEAM VICTORY IMMINENT|r\n{whichTeam.Name} has captured {controlPoints} out of {CpsVictory} Control Points required to win the game!");
     }
   }
 
@@ -73,7 +73,7 @@ public static class ControlPointVictory
     ClearTextMessages();
     foreach (var player in Util.EnumeratePlayers())
     {
-      player.DisplayTextTo($"{VictoryColor}\nTEAM VICTORY!|r\nThe {whichTeam.Name} has won the game! You may choose to continue playing.", 0, 0);
+      player.DisplayTextTo($"{VictoryColor}\nTEAM VICTORY!|r\nThe {whichTeam.Name} has won the game! You may choose to continue playing.");
     }
 
     PlayThematicMusic(whichTeam.VictoryMusic);

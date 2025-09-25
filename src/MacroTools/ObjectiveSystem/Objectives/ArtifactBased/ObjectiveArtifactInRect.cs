@@ -21,9 +21,9 @@ public sealed class ObjectiveArtifactInRect : Objective
     var targetRegion = RectToRegion(_targetRect.Rect);
     Description = "Bring " + targetArtifact.Item.Name + " to " + rectName;
 
-    _entersRect.Trigger.RegisterEnterRegion(targetRegion, null);
+    _entersRect.Trigger.RegisterEnterRegion(targetRegion);
     _entersRect.Trigger.AddAction(OnRegionEnter);
-    _exitsRect.Trigger.RegisterLeaveRegion(targetRegion, null);
+    _exitsRect.Trigger.RegisterLeaveRegion(targetRegion);
     _exitsRect.Trigger.AddAction(OnRegionExit);
 
     DisplaysPosition = true;

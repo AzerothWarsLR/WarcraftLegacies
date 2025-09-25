@@ -46,7 +46,7 @@ public sealed class QuestShoresOfNorthrend : QuestData
     KillNeutralHostileUnitsInRadius(-512, 15776, 2000);
     if (_arthas.Unit.Owner == completingFaction.Player)
     {
-      _arthas.Unit.Revive(400, 16102, true);
+      _arthas.Unit.Revive(400, 16102);
       _arthas.Unit.Facing = 112;
     }
     if (completingFaction.Player != null)

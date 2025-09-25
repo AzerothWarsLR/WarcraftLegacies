@@ -47,6 +47,6 @@ public sealed class QuestNethergarde : QuestData
   protected override void OnComplete(Faction completingFaction)
   {
     completingFaction.Player.RescueGroup(_rescueUnits);
-    _gate.SetOwner(completingFaction.Player, true);
+    _gate.SetOwner(completingFaction.Player);
   }
 }

@@ -22,7 +22,7 @@ public static class PlayerLeaves
       {
         player.DisplayTextTo(playerFaction != null
             ? $"{playerFaction.ColoredName} has left the game."
-            : $"{triggerPlayer.Name} has left the game.", 0, 0);
+            : $"{triggerPlayer.Name} has left the game.");
       }
 
       if (playerFaction != null && playerFaction.ScoreStatus != ScoreStatus.Defeated)

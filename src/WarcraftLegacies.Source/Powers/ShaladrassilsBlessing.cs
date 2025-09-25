@@ -77,7 +77,7 @@ public sealed class ShaladrassilsBlessing : Power
 
     for (var i = 0; i < _summonedUnitCount; i++)
     {
-      var treant = unit.Create(owningPlayer, _summonedUnitTypeId, point.X, point.Y, 270);
+      var treant = unit.Create(owningPlayer, _summonedUnitTypeId, point.X, point.Y);
       treant.SetTimedLife(_duration);
       treant.AddType(unittype.Summoned);
       treant.SetExploded(true);

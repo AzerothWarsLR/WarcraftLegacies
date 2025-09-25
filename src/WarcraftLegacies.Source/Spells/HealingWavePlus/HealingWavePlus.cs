@@ -136,8 +136,8 @@ public sealed class HealingWavePlus : Spell
     foreach (var ally in nearbyAllies)
     {
       HealTarget(caster, ally, isSecondaryWave: true);
-      lightning lightning = lightning.Create("DRAL", triggerPoint.X, triggerPoint.Y, ally.X, ally.Y, true);
-      lightning.SetColor(0.0f, 1.0f, 0.0f, 1.0f);
+      lightning lightning = lightning.Create("DRAL", triggerPoint.X, triggerPoint.Y, ally.X, ally.Y);
+      lightning.SetColor(0.0f, 1.0f, 0.0f);
       lightningEffects.Add(lightning);
       lastHealedUnit = ally;
     }

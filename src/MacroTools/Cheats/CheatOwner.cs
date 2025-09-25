@@ -28,7 +28,7 @@ public sealed class CheatOwner : Command
     var newOwner = player.Create(playerNumber);
     foreach (var unit in GlobalGroup.EnumSelectedUnits(cheater))
     {
-      unit.SetOwner(newOwner, true);
+      unit.SetOwner(newOwner);
     }
 
     return $"Setting owner of selected units to {player.Create(playerNumber).Name}.";

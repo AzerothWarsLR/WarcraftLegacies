@@ -141,7 +141,7 @@ public static class PlayerDistributor
         ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count - 1)]
         : player.NeutralVictim;
 
-      unit.SetOwner(newOwner, true);
+      unit.SetOwner(newOwner);
     }
     return refund;
   }

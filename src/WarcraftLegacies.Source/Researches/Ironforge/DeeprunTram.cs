@@ -48,11 +48,11 @@ public sealed class DeeprunTram : Research
       return;
     }
 
-    _tramToIronforge.SetOwner(recipient, true);
+    _tramToIronforge.SetOwner(recipient);
     _tramToIronforge.SetWaygateDestination(Regions.Ironforge.Center.X, Regions.Ironforge.Center.Y);
     _tramToIronforge.WaygateActive = true;
 
-    _tramToStormwind.SetOwner(recipient, true);
+    _tramToStormwind.SetOwner(recipient);
     _tramToStormwind.SetWaygateDestination(Regions.Stormwind.Center.X, Regions.Stormwind.Center.Y);
     _tramToStormwind.WaygateActive = true;
 

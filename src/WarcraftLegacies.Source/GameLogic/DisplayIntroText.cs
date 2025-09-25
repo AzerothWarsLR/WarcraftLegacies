@@ -21,7 +21,7 @@ public static class DisplayIntroText
       {
         foreach (var player1 in Util.EnumeratePlayers())
         {
-          player1.DisplayTextTo(player1.GetFaction()?.IntroText ?? "", 0, 0);
+          player1.DisplayTextTo(player1.GetFaction()?.IntroText ?? "");
         }
 
         @event.ExpiredTimer.Dispose();
@@ -38,7 +38,7 @@ public static class DisplayIntroText
   |cffff0000Support our Patreon:|r https://www.patreon.com/lordsebas
 
   If you are a new player, look at the Quest (F9) tab to see your objectives
-  ", 0, 0);
+  ");
     }
   }
 }

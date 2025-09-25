@@ -68,7 +68,7 @@ public static class FactionManager
         var research = ResearchManager.GetFromTypeId(researchId);
         if (research == null || !research.IncompatibleWith.Any(x => faction.GetObjectLevel(x.ResearchTypeId) > 0))
         {
-          faction.SetObjectLevel(researchId, @event.Player.GetTechResearched(researchId, true));
+          faction.SetObjectLevel(researchId, @event.Player.GetTechResearched(researchId));
           if (research == null)
           {
             return;

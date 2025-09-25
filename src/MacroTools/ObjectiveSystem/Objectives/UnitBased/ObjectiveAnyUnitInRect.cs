@@ -30,7 +30,7 @@ public sealed class ObjectiveAnyUnitInRect : Objective, IHasCompletingUnit
     PingPath = "MinimapQuestTurnIn";
 
     var enterTrigger = trigger.Create();
-    enterTrigger.RegisterEnterRegion(targetRect.Region, null);
+    enterTrigger.RegisterEnterRegion(targetRect.Region);
     enterTrigger.AddAction(() =>
     {
       var triggerUnit = @event.Unit;
@@ -43,7 +43,7 @@ public sealed class ObjectiveAnyUnitInRect : Objective, IHasCompletingUnit
       Progress = QuestProgress.Complete;
     });
     var leaveTrigger = trigger.Create();
-    leaveTrigger.RegisterLeaveRegion(targetRect.Region, null);
+    leaveTrigger.RegisterLeaveRegion(targetRect.Region);
     leaveTrigger.AddAction(() =>
     {
       if (!IsValidUnitInRect())

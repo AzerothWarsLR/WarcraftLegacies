@@ -135,7 +135,7 @@ public sealed class Team
     }
 
     DisplayText($"{faction.ColoredName}|r is no longer invited to join the {Name}.");
-    faction.Player.DisplayTextTo($"You are no longer invited to join the {Name}.", 0, 0);
+    faction.Player.DisplayTextTo($"You are no longer invited to join the {Name}.");
     _invitees.Remove(whichPlayer);
   }
 
@@ -157,7 +157,7 @@ public sealed class Team
     }
 
     DisplayText($"{faction.ColoredName}|r has been invited to join the {Name}.");
-    faction.Player.DisplayTextTo($"You have been invited to join the {Name}. Type -join {Name} to accept.", 0, 0);
+    faction.Player.DisplayTextTo($"You have been invited to join the {Name}. Type -join {Name} to accept.");
     _invitees.Add(whichPlayer);
   }
 
@@ -169,7 +169,7 @@ public sealed class Team
   {
     foreach (var player in _members)
     {
-      player.DisplayTextTo(text, 0, 0);
+      player.DisplayTextTo(text);
     }
   }
 

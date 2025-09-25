@@ -24,18 +24,18 @@ public static class DarkPortalControlNexusSetup
     PlayerUnitEvents.Register(UnitEvent.ChangesOwner, () =>
     {
       var newOwner = @event.Unit.Owner;
-      preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_1.Center).SetOwner(newOwner, true);
-      preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_2.Center).SetOwner(newOwner, true);
-      preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_3.Center).SetOwner(newOwner, true);
+      preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_1.Center).SetOwner(newOwner);
+      preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_2.Center).SetOwner(newOwner);
+      preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Entrance_3.Center).SetOwner(newOwner);
     }, preplacedUnitSystem.GetUnit(UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS, new Point(3707, -26029)));
 
     //Control Nexus outside Outland
     PlayerUnitEvents.Register(UnitEvent.ChangesOwner, () =>
     {
       var newOwner = @event.Unit.Owner;
-      preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_1.Center).SetOwner(newOwner, true);
-      preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_2.Center).SetOwner(newOwner, true);
-      preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_3.Center).SetOwner(newOwner, true);
+      preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_1.Center).SetOwner(newOwner);
+      preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_2.Center).SetOwner(newOwner);
+      preplacedUnitSystem.GetUnit(UNIT_N036_DARK_PORTAL_WAYGATE, Regions.Dark_Portal_Exit_3.Center).SetOwner(newOwner);
     }, preplacedUnitSystem.GetUnit(UNIT_N05J_DARK_PORTAL_AURA_CONTROL_NEXUS, new Point(17411, -17902)));
   }
 }

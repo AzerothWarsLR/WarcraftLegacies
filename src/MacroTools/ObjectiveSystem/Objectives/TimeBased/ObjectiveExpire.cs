@@ -48,7 +48,7 @@ public sealed class ObjectiveExpire : Objective
     {
       if (Progress != QuestProgress.Complete)
       {
-        assignedFaction.Player.DisplayTextTo($"\n|c00FF7F00WARNING|r - Quest {_questName} will expire in 2 minutes.", 0, 0);
+        assignedFaction.Player.DisplayTextTo($"\n|c00FF7F00WARNING|r - Quest {_questName} will expire in 2 minutes.");
       }
     }
   }

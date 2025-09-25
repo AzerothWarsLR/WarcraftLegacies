@@ -53,7 +53,7 @@ public sealed class QuestBookOfMedivh : QuestData
 
     if (_bookOfMedivhPedestal == null)
     {
-      _bookOfMedivhPedestal = unit.Create(player.NeutralPassive, UNIT_NBSM_BOOK_OF_MEDIVH, bookLocation.Rectangle.Center.X, bookLocation.Rectangle.Center.Y, 270);
+      _bookOfMedivhPedestal = unit.Create(player.NeutralPassive, UNIT_NBSM_BOOK_OF_MEDIVH, bookLocation.Rectangle.Center.X, bookLocation.Rectangle.Center.Y);
       _bookOfMedivhPedestal.IsInvulnerable = true;
       _bookOfMedivhPedestal.AddAbility(ABILITY_A01Y_INVENTORY_DUMMY_DROP_ARTIFACT);
       _bookOfMedivhPedestal.AddItemSafe(bookOfMedivh.Item);

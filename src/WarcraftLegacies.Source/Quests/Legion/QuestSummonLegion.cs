@@ -103,7 +103,7 @@ public sealed class QuestSummonLegion : QuestData
     var exteriorPortalPosition = _objectiveCastSpell.Caster != null
       ? _objectiveCastSpell.Caster!.GetPosition()
       : new Point(0, 0);
-    _interiorPortal.SetOwner(player.NeutralAggressive, true);
+    _interiorPortal.SetOwner(player.NeutralAggressive);
     var exteriorPortal = unit.Create(whichPlayer ?? player.NeutralAggressive, UNIT_N037_DEMON_PORTAL, exteriorPortalPosition.X, exteriorPortalPosition.Y, 0);
     exteriorPortal.SetWaygateDestination(_interiorPortal.GetPosition());
     _interiorPortal.SetWaygateDestination(exteriorPortal.GetPosition());

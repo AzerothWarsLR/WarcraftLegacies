@@ -171,7 +171,7 @@ public static class UnitExtensions
   {
     //If the unit costs 10 food, that means it should be owned by neutral passive instead of the rescuing player.
     var whichPlayer1 = whichUnit.FoodUsed == 10 ? player.NeutralPassive : whichPlayer;
-    whichUnit.SetOwner(whichPlayer1, true);
+    whichUnit.SetOwner(whichPlayer1);
     whichUnit.IsVisible = true;
     whichUnit.SetPausedEx(false);
 
@@ -367,7 +367,7 @@ public static class UnitExtensions
         return;
       }
 
-      whichUnit.SetOwner(@event.DamageSource.Owner, true);
+      whichUnit.SetOwner(@event.DamageSource.Owner);
       @event.Damage = 0;
       whichUnit.Life = whichUnit.MaxLife;
     });

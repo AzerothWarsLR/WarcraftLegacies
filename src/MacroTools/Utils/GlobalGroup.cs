@@ -17,7 +17,7 @@ public static class GlobalGroup
   public static List<unit> EnumSelectedUnits(player whichPlayer)
   {
     SyncSelections();
-    _group.EnumUnitsSelected(whichPlayer, null);
+    _group.EnumUnitsSelected(whichPlayer);
     return EmptyToList(_group);
   }
 
@@ -26,7 +26,7 @@ public static class GlobalGroup
   /// </summary>
   public static List<unit> EnumUnitsOfPlayer(player player)
   {
-    _group.EnumUnitsOfPlayer(player, null);
+    _group.EnumUnitsOfPlayer(player);
     return EmptyToList(_group);
   }
 
@@ -41,7 +41,7 @@ public static class GlobalGroup
   /// </summary>
   public static List<unit> EnumUnitsInRect(rect rect)
   {
-    _group.EnumUnitsInRect(rect, null);
+    _group.EnumUnitsInRect(rect);
     return EmptyToList(_group);
   }
 
@@ -50,7 +50,7 @@ public static class GlobalGroup
   /// </summary>
   public static List<unit> EnumUnitsInRange(Point point, float radius)
   {
-    _group.EnumUnitsInRange(point.X, point.Y, radius, null);
+    _group.EnumUnitsInRange(point.X, point.Y, radius);
     return EmptyToList(_group);
   }
 

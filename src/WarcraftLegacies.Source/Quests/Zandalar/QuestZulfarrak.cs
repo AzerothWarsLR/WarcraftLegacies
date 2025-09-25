@@ -47,7 +47,7 @@ public sealed class QuestZulfarrak : QuestData
   {
     if (completingFaction.Player != null)
     {
-      _zulfarrak.Unit.SetOwner(completingFaction.Player, true);
+      _zulfarrak.Unit.SetOwner(completingFaction.Player);
       completingFaction.Player.AdjustPlayerState(playerstate.ResourceGold, 150);
       completingFaction.Player.RescueGroup(_rescueUnits);
     }

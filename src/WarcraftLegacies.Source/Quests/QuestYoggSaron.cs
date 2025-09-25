@@ -28,7 +28,7 @@ public sealed class QuestYoggSaron : QuestData
   {
     _yoggsaron = yoggsaron;
     yoggsaronPrison.MakeCapturable();
-    yoggsaronPrison.SetOwner(player.NeutralPassive, true);
+    yoggsaronPrison.SetOwner(player.NeutralPassive);
     yoggsaronPrison.IsInvulnerable = true;
     _yoggsaronPrison = yoggsaronPrison;
 
@@ -52,7 +52,7 @@ public sealed class QuestYoggSaron : QuestData
       ? player.NeutralAggressive
       : _heroInRectObjective.CompletingUnit.Owner;
 
-    _yoggsaronPrison.SetOwner(newOwner, true);
+    _yoggsaronPrison.SetOwner(newOwner);
     _yoggsaronPrison.IsInvulnerable = false;
   }
 

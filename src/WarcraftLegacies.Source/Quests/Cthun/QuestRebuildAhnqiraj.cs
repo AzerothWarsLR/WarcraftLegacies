@@ -36,14 +36,14 @@ public sealed class QuestRebuildAhnqiraj : QuestData
     }
 
     _gateAhnQiraj.IsInvulnerable = false;
-    _gateAhnQiraj.SetOwner(completingFaction.Player, true);
+    _gateAhnQiraj.SetOwner(completingFaction.Player);
   }
 
   /// <inheritdoc />
   protected override void OnFail(Faction completingFaction)
   {
     _gateAhnQiraj.IsInvulnerable = false;
-    _gateAhnQiraj.SetOwner(player.NeutralAggressive, true);
+    _gateAhnQiraj.SetOwner(player.NeutralAggressive);
   }
 
   /// <inheritdoc/>

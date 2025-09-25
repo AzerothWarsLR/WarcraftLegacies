@@ -70,10 +70,10 @@ public sealed class Warsong : Faction
     Regions.AshenvaleCreeps.CleanupHostileUnits();
     var thunderBluffUnit = _preplacedUnitSystem.GetUnit(Constants.UNIT_N03M_THUNDERBLUFF);
     var whichPlayer = player.NeutralAggressive;
-    thunderBluffUnit.SetOwner(whichPlayer, true);
+    thunderBluffUnit.SetOwner(whichPlayer);
     var echoIslesUnit = _preplacedUnitSystem.GetUnit(Constants.UNIT_N02V_ECHO_ISLES);
     var whichPlayer1 = player.NeutralAggressive;
-    echoIslesUnit.SetOwner(whichPlayer1, true);
+    echoIslesUnit.SetOwner(whichPlayer1);
   }
 
   private void RegisterObjectLevels()

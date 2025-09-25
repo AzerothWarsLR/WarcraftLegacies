@@ -53,12 +53,12 @@ public sealed class CommandManager
 
         if (parameters.Length < command.ExpectedParameterCount.Minimum)
         {
-          @event.Player.DisplayTextTo($"|{CommandColor}{command.CommandText}:|r You must supply at least {command.ExpectedParameterCount.Minimum} parameters. If you're trying to use a parameter with multiple words, try enclosing it in quotes.", 0, 0);
+          @event.Player.DisplayTextTo($"|{CommandColor}{command.CommandText}:|r You must supply at least {command.ExpectedParameterCount.Minimum} parameters. If you're trying to use a parameter with multiple words, try enclosing it in quotes.");
           return;
         }
 
         var message = command.Execute(@event.Player, parameters);
-        @event.Player.DisplayTextTo(command.Type == CommandType.Cheat ? $"|{CommandColor}CHEAT:|r {message}" : $"|{CommandColor}{command.CommandText}:|r {message}", 0, 0);
+        @event.Player.DisplayTextTo(command.Type == CommandType.Cheat ? $"|{CommandColor}CHEAT:|r {message}" : $"|{CommandColor}{command.CommandText}:|r {message}");
       }
       catch (Exception ex)
       {

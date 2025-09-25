@@ -20,9 +20,9 @@ public sealed class ObjectiveLegendInRect : Objective
     _target = RectToRegion(_targetRect);
     _legendaryHero = legendaryHero;
     Description = $"{legendaryHero.Name} is at {rectName}";
-    _entersRect.Trigger.RegisterEnterRegion(_target, null);
+    _entersRect.Trigger.RegisterEnterRegion(_target);
     _entersRect.Trigger.AddAction(OnRegionEnter);
-    _exitsRect.Trigger.RegisterLeaveRegion(_target, null);
+    _exitsRect.Trigger.RegisterLeaveRegion(_target);
     _exitsRect.Trigger.AddAction(OnRegionExit);
     PingPath = "MinimapQuestTurnIn";
     ShowsInQuestLog = true;

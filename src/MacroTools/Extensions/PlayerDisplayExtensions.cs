@@ -11,7 +11,7 @@ public static class PlayerDisplayExtensions
   /// </summary>
   public static void DisplayHint(this player whichPlayer, string msg)
   {
-    whichPlayer.DisplayTextTo($"\n|cff00ff00HINT|r - {msg}", 0, 0);
+    whichPlayer.DisplayTextTo($"\n|cff00ff00HINT|r - {msg}");
     if (player.LocalPlayer == whichPlayer)
     {
       SoundLibrary.Hint.Start();
@@ -45,7 +45,7 @@ public static class PlayerDisplayExtensions
       display = $"{display}\n+{experience} Experience";
     }
 
-    whichUnit.Owner.DisplayTextTo(display, 0, 0);
+    whichUnit.Owner.DisplayTextTo(display);
     if (player.LocalPlayer == whichUnit.Owner)
     {
       SoundLibrary.Hint.Start();
@@ -57,7 +57,7 @@ public static class PlayerDisplayExtensions
   /// </summary>
   public static void DisplayUnitLimit(this Faction whichFaction, int unitTypeId)
   {
-    whichFaction.Player.DisplayTextTo($"\n|cff00ff00UNIT LIMIT CHANGED - {GetObjectName(unitTypeId)}|r\nYou can now train up to {whichFaction.GetObjectLimit(unitTypeId)} {GetObjectName(unitTypeId)}s.", 0, 0);
+    whichFaction.Player.DisplayTextTo($"\n|cff00ff00UNIT LIMIT CHANGED - {GetObjectName(unitTypeId)}|r\nYou can now train up to {whichFaction.GetObjectLimit(unitTypeId)} {GetObjectName(unitTypeId)}s.");
     if (player.LocalPlayer == whichFaction.Player)
     {
       SoundLibrary.Hint.Start();
@@ -69,7 +69,7 @@ public static class PlayerDisplayExtensions
   /// </summary>
   public static void DisplayResearchAcquired(this player whichPlayer, int researchId, int researchLevel)
   {
-    whichPlayer.DisplayTextTo($"\n|cff00ff00RESEARCH ACQUIRED - {GetObjectName(researchId)}|r\n{BlzGetAbilityExtendedTooltip(researchId, researchLevel)}", 0, 0);
+    whichPlayer.DisplayTextTo($"\n|cff00ff00RESEARCH ACQUIRED - {GetObjectName(researchId)}|r\n{BlzGetAbilityExtendedTooltip(researchId, researchLevel)}");
     if (player.LocalPlayer == whichPlayer)
     {
       SoundLibrary.Hint.Start();
@@ -81,7 +81,7 @@ public static class PlayerDisplayExtensions
   /// </summary>
   public static void DisplayUnitTypeAcquired(this player whichPlayer, int unitId, string flavor)
   {
-    whichPlayer.DisplayTextTo($"\n|cff00ff00NEW UNIT ACQUIRED - {GetObjectName(unitId)}\n|r{flavor}", 0, 0);
+    whichPlayer.DisplayTextTo($"\n|cff00ff00NEW UNIT ACQUIRED - {GetObjectName(unitId)}\n|r{flavor}");
     if (player.LocalPlayer == whichPlayer)
     {
       SoundLibrary.Hint.Start();
@@ -93,7 +93,7 @@ public static class PlayerDisplayExtensions
   /// </summary>
   public static void DisplayRefundedResearch(this player whichPlayer, int researchTypeId)
   {
-    whichPlayer.DisplayTextTo($"\n|cff008000REFUND|r - You cannot research {GetObjectName(researchTypeId)}. All resources spent on it have been refunded.", 0, 0);
+    whichPlayer.DisplayTextTo($"\n|cff008000REFUND|r - You cannot research {GetObjectName(researchTypeId)}. All resources spent on it have been refunded.");
   }
 
   /// <summary>
@@ -101,7 +101,7 @@ public static class PlayerDisplayExtensions
   /// </summary>
   public static player DisplayPowerAcquired(this player whichPlayer, Power power)
   {
-    whichPlayer.DisplayTextTo($"\n|cff00ff00NEW POWER ACQUIRED - {power.Name}\n|r{power.Description}", 0, 0);
+    whichPlayer.DisplayTextTo($"\n|cff00ff00NEW POWER ACQUIRED - {power.Name}\n|r{power.Description}");
     if (player.LocalPlayer == whichPlayer)
     {
       SoundLibrary.Hint.Start();
@@ -116,7 +116,7 @@ public static class PlayerDisplayExtensions
   public static void DisplayLegendaryHeroSummoned(this player whichPlayer, LegendaryHero legendaryHero,
     string message)
   {
-    whichPlayer.DisplayTextTo($"\n|cffd45e19LEGENDARY FOE SUMMONED - {legendaryHero.Name}\n|r{message}", 0, 0);
+    whichPlayer.DisplayTextTo($"\n|cffd45e19LEGENDARY FOE SUMMONED - {legendaryHero.Name}\n|r{message}");
     SoundLibrary.Warning.Start();
   }
 
