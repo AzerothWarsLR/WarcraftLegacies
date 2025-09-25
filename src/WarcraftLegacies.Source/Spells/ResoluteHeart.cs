@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Utils;
 
@@ -36,16 +35,6 @@ public sealed class ResoluteHeart : PassiveAbility, IAppliesEffectOnDamage
   /// <param name="unitTypeId">The unit type ID that possesses this ability.</param>
   /// <param name="abilityTypeId">The ability ID possessed by the unit.</param>
   public ResoluteHeart(int unitTypeId, int abilityTypeId) : base(unitTypeId)
-  {
-    AbilityTypeId = abilityTypeId;
-  }
-
-  /// <summary>
-  /// Initializes a new instance of the <see cref="ResoluteHeart"/> class.
-  /// </summary>
-  /// <param name="unitTypeIds">The unit type IDs that possess this ability.</param>
-  /// <param name="abilityTypeId">The ability ID possessed by the unit(s).</param>
-  public ResoluteHeart(IEnumerable<int> unitTypeIds, int abilityTypeId) : base(unitTypeIds)
   {
     AbilityTypeId = abilityTypeId;
   }
