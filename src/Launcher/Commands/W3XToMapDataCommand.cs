@@ -41,7 +41,7 @@ public static class W3XToMapDataCommand
 
   private static void Run(string baseMapPath, string outputDirectory, string? constantsOutputPath, string? regionsOutputPath)
   {
-    var autoMapperConfig = new AutoMapperConfigurationProvider().GetConfiguration();
+    var autoMapperConfig = AutoMapperConfigurationProvider.GetConfiguration();
     var mapper = new Mapper(autoMapperConfig);
     new W3XToMapDataConverter(mapper).Convert(baseMapPath, outputDirectory);
     if (constantsOutputPath != null)

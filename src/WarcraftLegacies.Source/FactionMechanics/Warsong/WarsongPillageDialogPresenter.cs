@@ -132,7 +132,7 @@ public sealed class WarsongPillageDialogPresenter : ChoiceDialogPresenter<Warson
     }
   }
 
-  private void ApplyUnitUpgrade(Faction faction, UnitUpgrade upgrade)
+  private static void ApplyUnitUpgrade(Faction faction, UnitUpgrade upgrade)
   {
     if (faction == null || upgrade == null)
     {

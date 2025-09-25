@@ -108,7 +108,7 @@ public class HeroHotkeyManager
     }
   }
 
-  private void SelectFourthHero(player whichPlayer)
+  private static void SelectFourthHero(player whichPlayer)
   {
     var heroGroup = group.Create();
     heroGroup.EnumUnitsOfPlayer(whichPlayer);

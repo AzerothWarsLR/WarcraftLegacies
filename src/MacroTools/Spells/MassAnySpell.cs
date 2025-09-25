@@ -77,7 +77,7 @@ public sealed class MassAnySpell : Spell
   }
 
 
-  private IEnumerable<unit> GetUnitsInRadius(Point center, float radius, DummyCasterManager.CastFilter castFilter)
+  private static IEnumerable<unit> GetUnitsInRadius(Point center, float radius, DummyCasterManager.CastFilter castFilter)
   {
     group group = group.Create();
     group.EnumUnitsInRange(center.X, center.Y, radius);

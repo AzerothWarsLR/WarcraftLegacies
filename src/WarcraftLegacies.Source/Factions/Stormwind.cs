@@ -80,7 +80,7 @@ public sealed class Stormwind : Faction
     AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
   }
 
-  private void RegisterResearches()
+  private static void RegisterResearches()
   {
     TierCodeOfChivalry.Setup();
     TierExpeditionSurvivors.Setup();

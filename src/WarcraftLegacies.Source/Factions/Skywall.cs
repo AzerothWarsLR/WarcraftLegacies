@@ -98,7 +98,7 @@ public sealed class Skywall : Faction
     AddQuest(new QuestFirelandInvasion(invasionParameters, druids, ahnqiraj, Regions.SulfuronSpire));
   }
 
-  private void RegisterResearches()
+  private static void RegisterResearches()
   {
     ResearchManager.Register(new PowerResearch(UPGRADE_RELT_WINDFORGING_SKYWALL, 100,
       new Windforging(UNIT_O01I_ANIMATED_ARMOR_ELEMENTAL, 0.25f, new Point(-10396.5f, -20963.6f), "the Vortex Pinnacle", Regions.ElementalRealm)
@@ -108,7 +108,7 @@ public sealed class Skywall : Faction
       }));
   }
 
-  private void RegisterSpells()
+  private static void RegisterSpells()
   {
 
     var purgeAttack = new SpellOnAttack(UNIT_O01I_ANIMATED_ARMOR_ELEMENTAL,

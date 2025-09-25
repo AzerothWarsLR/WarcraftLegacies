@@ -102,7 +102,7 @@ public sealed class Warsong : Faction
 
   }
 
-  private void ReplaceWithFactionUnits(Faction pickedFaction)
+  private static void ReplaceWithFactionUnits(Faction pickedFaction)
   {
     if (pickedFaction == null)
     {

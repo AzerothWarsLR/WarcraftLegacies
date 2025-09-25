@@ -97,7 +97,7 @@ public sealed class Quelthalas : Faction
     AddQuest(new QuestForgottenKnowledge());
   }
 
-  private void RegisterResearches()
+  private static void RegisterResearches()
   {
     ResearchManager.Register(new SunfuryWarrior(UPGRADE_R004_SUNFURY_TRAINING_QUEL_THALAS, 300));
   }

@@ -72,7 +72,7 @@ public sealed class Dalaran : Faction
     WaygateManager.Setup(UNIT_N0AO_WAY_GATE_DALARAN_SIEGE);
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
   }
-  private void ReplaceWithFactionUnits(Faction pickedFaction)
+  private static void ReplaceWithFactionUnits(Faction pickedFaction)
   {
     if (pickedFaction == null)
     {

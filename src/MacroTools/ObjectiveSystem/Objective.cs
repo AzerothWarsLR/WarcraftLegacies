@@ -51,7 +51,7 @@ public abstract class Objective
   internal bool ProgressLocked { get; set; }
 
   /// <summary>The file path for the overhead effect to use for this item.</summary>
-  private string OverheadEffectPath => @"Abilities\Spells\Other\TalkToMe\TalkToMe";
+  private static string OverheadEffectPath => @"Abilities\Spells\Other\TalkToMe\TalkToMe";
 
   /// <summary>The progress that has been made towards completion or failure.</summary>
   public QuestProgress Progress

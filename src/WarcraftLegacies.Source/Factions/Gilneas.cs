@@ -78,7 +78,7 @@ public sealed class Gilneas : Faction
     ModAbilityAvailability(ABILITY_A0KT_ARCANE_RECALL_DALARAN, -1);
   }
 
-  private void ReplaceWithFactionUnits(Faction pickedFaction)
+  private static void ReplaceWithFactionUnits(Faction pickedFaction)
   {
     if (pickedFaction == null)
     {
