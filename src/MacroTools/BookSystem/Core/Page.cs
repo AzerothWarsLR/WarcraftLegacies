@@ -17,7 +17,7 @@ public abstract class Page<TItem, TCard, TCardFactory> : Frame
 
   public int PageNumber
   {
-    set => _pageNumberFrame.Text = $"Page {value.ToString()}";
+    set => _pageNumberFrame.Text = $"Page {value}";
   }
 
   protected Page(float width, float height, int rows, int columns, float yOffsetTop, float yOffsetBot) :

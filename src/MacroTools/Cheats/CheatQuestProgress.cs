@@ -23,7 +23,7 @@ public sealed class CheatQuestProgress : Command
   public override CommandType Type => CommandType.Cheat;
 
   /// <inheritdoc />
-  public override string Description => $"Sets the specified quest's progress to {_progress.ToString()} for the specified faction.";
+  public override string Description => $"Sets the specified quest's progress to {_progress} for the specified faction.";
 
   /// <summary>
   /// Initializes a new instance of the <see cref="CheatQuestProgress"/> class.
@@ -61,6 +61,6 @@ public sealed class CheatQuestProgress : Command
     }
 
     quest.Progress = _progress;
-    return $"Set quest progress of {quest.Title} to {_progress.ToString()} for {nameof(Faction)} {faction.Name}.";
+    return $"Set quest progress of {quest.Title} to {_progress} for {nameof(Faction)} {faction.Name}.";
   }
 }
