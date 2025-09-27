@@ -36,7 +36,7 @@ public sealed class QuestKiljaedensCommand : QuestData
     _cthun = cthun;
     _nordrassil = nordrassil;
     _illidan = illidan;
-    AddObjective(new ObjectiveTime(15)
+    AddObjective(new ObjectiveTime(1200)
     {
       Progress = QuestProgress.Undiscovered, ShowsInPopups = false, ShowsInQuestLog = false
     });
