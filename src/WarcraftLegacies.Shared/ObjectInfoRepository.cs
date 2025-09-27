@@ -1,6 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using MacroTools.Shared;
-using MacroTools.Shared.Extensions;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 
 namespace WarcraftLegacies.Shared;
@@ -10,7 +9,7 @@ namespace WarcraftLegacies.Shared;
 /// </summary>
 public sealed class ObjectInfoRepository
 {
-  private readonly Dictionary<string, ObjectInfo> _byObjectId = new();
+  private readonly Dictionary<int, ObjectInfo> _byObjectId = new();
   private readonly List<ObjectInfo> _all = new();
 
   /// <summary>
@@ -54,7 +53,7 @@ public sealed class ObjectInfoRepository
   /// </summary>
   public bool TryGetObjectInfo(int objectTypeId, [NotNullWhen(true)] out ObjectInfo? objectLimit)
   {
-    objectLimit = _byObjectId.TryGetValue(objectTypeId.IdToFourCc(), out var value) ? value : null;
+    objectLimit = _byObjectId.TryGetValue(objectTypeId, out var value) ? value : null;
     return value != null;
   }
 

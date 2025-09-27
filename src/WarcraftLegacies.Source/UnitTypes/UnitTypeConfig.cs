@@ -20,7 +20,7 @@ public static class UnitTypeConfig
     var objectInfoRepository = new ObjectInfoRepository();
     foreach (var objectInfo in objectInfoRepository.GetAllObjectInfo())
     {
-      UnitType.Register(new UnitType(FourCC(objectInfo.ObjectTypeId))
+      UnitType.Register(new UnitType(objectInfo.ObjectTypeId)
       {
         Category = objectInfo.Category
       });

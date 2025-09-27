@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Text;
 using Launcher.IntegrityChecker.TestSupport;
-using MacroTools.Shared.Extensions;
 using War3Api.Object;
+using War3Net.Common.Extensions;
 using Xunit.Sdk;
 
 namespace Launcher.IntegrityChecker;
@@ -68,5 +68,5 @@ public sealed class AbilityLevelSkipTests : IClassFixture<MapTestFixture>
   }
 
   private static string GetReadableId(BaseObject baseObject) =>
-    baseObject.NewId != 0 ? baseObject.NewId.IdToFourCc() : baseObject.OldId.IdToFourCc();
+    baseObject.NewId != 0 ? baseObject.NewId.ToRawcode() : baseObject.OldId.ToRawcode();
 }

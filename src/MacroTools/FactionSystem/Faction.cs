@@ -509,11 +509,10 @@ public abstract class Faction
   {
     foreach (var (objectTypeId, objectInfo) in objectInfos)
     {
-      var fourCc = FourCC(objectTypeId);
-      ModObjectLimit(FourCC(objectTypeId), objectInfo.Limit);
+      ModObjectLimit(objectTypeId, objectInfo.Limit);
       if (objectInfo.Category != UnitCategory.None)
       {
-        _objectsByCategory[objectInfo.Category] = fourCc;
+        _objectsByCategory[objectInfo.Category] = objectTypeId;
       }
     }
   }
