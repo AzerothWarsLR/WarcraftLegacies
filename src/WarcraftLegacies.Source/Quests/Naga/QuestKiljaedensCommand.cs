@@ -38,7 +38,9 @@ public sealed class QuestKiljaedensCommand : QuestData
     _illidan = illidan;
     AddObjective(new ObjectiveTime(1200)
     {
-      Progress = QuestProgress.Undiscovered, ShowsInPopups = false, ShowsInQuestLog = false
+      Progress = QuestProgress.Undiscovered,
+      ShowsInPopups = false,
+      ShowsInQuestLog = false
     });
     AddObjective(new ObjectiveExpire(3600, "Kil'jaeden's Command"));
     Knowledge = 15;
