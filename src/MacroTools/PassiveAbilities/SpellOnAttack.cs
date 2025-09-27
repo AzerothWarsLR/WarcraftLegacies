@@ -41,7 +41,7 @@ public sealed class SpellOnAttack : PassiveAbility, IAppliesEffectOnDamage
   public int RequiredResearch { get; init; }
 
   // Tracks cooldown timers for each target
-  private readonly Dictionary<int, timer> _targetCooldowns = new Dictionary<int, timer>();
+  private readonly Dictionary<unit, timer> _targetCooldowns = new();
 
   /// <summary>
   /// Initializes a new instance of the <see cref="SpellOnAttack"/> class.
@@ -73,8 +73,7 @@ public sealed class SpellOnAttack : PassiveAbility, IAppliesEffectOnDamage
     }
 
     // Check if target is on cooldown
-    var targetId = target.HandleId;
-    if (Cooldown > 0 && _targetCooldowns.ContainsKey(targetId))
+    if (Cooldown > 0 && _targetCooldowns.ContainsKey(target))
     {
       return;
     }
@@ -91,30 +90,30 @@ public sealed class SpellOnAttack : PassiveAbility, IAppliesEffectOnDamage
     // Start cooldown timer
     if (Cooldown > 0)
     {
-      StartCooldownTimer(targetId, target);
+      StartCooldownTimer(target);
     }
   }
 
-  private void StartCooldownTimer(int targetId, unit target)
+  private void StartCooldownTimer(unit target)
   {
     timer timer = timer.Create();
-    _targetCooldowns[targetId] = timer;
+    _targetCooldowns[target] = timer;
 
     // Set timer expiration action
     timer.Start(Cooldown, false, () =>
     {
-      _targetCooldowns.Remove(targetId);
+      _targetCooldowns.Remove(target);
       timer.Dispose();
     });
 
     // Register unit death event to clean up timer when unit dies
     RegisterDeathEvent(target, () =>
     {
-      if (_targetCooldowns.TryGetValue(targetId, out var activeTimer))
+      if (_targetCooldowns.TryGetValue(target, out var activeTimer))
       {
         activeTimer.Pause();
         activeTimer.Dispose();
-        _targetCooldowns.Remove(targetId);
+        _targetCooldowns.Remove(target);
       }
     });
   }
