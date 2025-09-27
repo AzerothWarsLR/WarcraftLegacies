@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using Launcher.IntegrityChecker.TestSupport;
-using MacroTools.Shared.Extensions;
 using War3Api.Object;
+using War3Net.Common.Extensions;
 using Xunit.Sdk;
 
 namespace Launcher.IntegrityChecker;
@@ -84,5 +84,5 @@ public sealed class ObjectDataAccessibilityTests : IClassFixture<MapTestFixture>
 
   private static int GetId(BaseObject baseObject) => baseObject.NewId != 0 ? baseObject.NewId : baseObject.OldId;
 
-  private static string GetReadableId(BaseObject baseObject) => GetId(baseObject).IdToFourCc();
+  private static string GetReadableId(BaseObject baseObject) => GetId(baseObject).ToRawcode();
 }

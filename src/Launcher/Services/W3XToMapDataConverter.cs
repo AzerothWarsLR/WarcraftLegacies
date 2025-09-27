@@ -8,13 +8,13 @@ using Launcher.DataTransferObjects;
 using Launcher.DTOMappers;
 using Launcher.Extensions;
 using Launcher.JsonConverters;
-using MacroTools.Shared.Extensions;
 using War3Net.Build;
 using War3Net.Build.Audio;
 using War3Net.Build.Environment;
 using War3Net.Build.Info;
 using War3Net.Build.Object;
 using War3Net.Build.Widget;
+using War3Net.Common.Extensions;
 using static Launcher.MapDataPaths;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
@@ -454,7 +454,7 @@ public sealed class W3XToMapDataConverter
 
     var id = simpleObject.NewId > 0 ? simpleObject.NewId : simpleObject.OldId;
     var asJson = JsonSerializer.Serialize(simpleObject, _jsonSerializerOptions);
-    var fullPath = Path.Combine(outputDirectoryPath, $"{id.IdToFourCc()}.json");
+    var fullPath = Path.Combine(outputDirectoryPath, $"{id.ToRawcode()}.json");
     File.WriteAllText(fullPath, asJson);
   }
 

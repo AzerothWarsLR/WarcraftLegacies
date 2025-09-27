@@ -1,13 +1,11 @@
-﻿using MacroTools.Shared.Extensions;
-
-namespace MacroTools.Shared;
+﻿namespace MacroTools.Shared;
 
 /// <summary>
 /// Provides information about a particular object, i.e. a unit type, ability type, etc. 
 /// </summary>
 public sealed class ObjectInfo
 {
-  public string ObjectTypeId { get; }
+  public int ObjectTypeId { get; }
 
   public int Limit { get; }
 
@@ -24,12 +22,12 @@ public sealed class ObjectInfo
   public ObjectInfo(int objectTypeId, int limit, UnitCategory category = UnitCategory.None, string? limitIncreaseHint = null)
   {
     Category = category;
-    ObjectTypeId = objectTypeId.IdToFourCc(true);
+    ObjectTypeId = objectTypeId;
     Limit = limit;
     LimitIncreaseHint = limitIncreaseHint;
   }
 
-  public void Deconstruct(out string objectTypeId, out ObjectInfo info)
+  public void Deconstruct(out int objectTypeId, out ObjectInfo info)
   {
     objectTypeId = ObjectTypeId;
     info = this;
