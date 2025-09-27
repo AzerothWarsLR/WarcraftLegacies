@@ -50,6 +50,8 @@ public static class W3XToMapDataCommand
     }
   }
 
+  private static readonly string[] _constantsHeader = ["﻿#pragma warning disable"];
+
   private static void GenerateConstants(string baseMapPath, string constantsOutputPath, string? regionsOutputPath)
   {
     try
@@ -61,11 +63,13 @@ public static class W3XToMapDataCommand
       });
       // ConstantGenerator always outputs order ids, which we already have in MacroTools.Shared.
       // We remove lines starting with 'public const int ORDER_' to avoid duplication.
-      File.WriteAllLines($"{constantsOutputPath}/Constants.cs", File.ReadLines($"{constantsOutputPath}/Constants.cs")
-          .Where(l => !l.AsSpan().TrimStart().StartsWith("public const int ORDER_"))
+
+      File.WriteAllLines($"{constantsOutputPath}/Constants.cs", _constantsHeader.Concat(File.ReadLines($"{constantsOutputPath}/Constants.cs")
+          .Where(l => !l.AsSpan().TrimStart().StartsWith("public const int ORDER_")))
           .ToArray());
       if (regionsOutputPath != null)
       {
+        File.WriteAllLines($"{constantsOutputPath}/Regions.cs", _constantsHeader.Concat(File.ReadAllLines($"{constantsOutputPath}/Regions.cs")).ToArray());
         File.Move($"{constantsOutputPath}/Regions.cs", $"{regionsOutputPath}/Regions.cs", true);
       }
     }
