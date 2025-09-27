@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace MacroTools.Libraries;
 
@@ -7,8 +8,8 @@ namespace MacroTools.Libraries;
 /// </summary>
 public static class UnitEventSystem
 {
-  // Stores the mapping between unit IDs and death event callbacks
-  private static readonly Dictionary<int, System.Action> _unitDeathCallbacks = new Dictionary<int, System.Action>();
+  // Stores the mapping between units and death event callbacks
+  private static readonly Dictionary<unit, Action> _unitDeathCallbacks = new();
 
   // Static constructor that initializes the system automatically
   static UnitEventSystem()
@@ -32,21 +33,19 @@ public static class UnitEventSystem
   private static void OnUnitDeath()
   {
     var dyingUnit = @event.Unit;
-    var unitId = dyingUnit.HandleId;
 
-    if (_unitDeathCallbacks.TryGetValue(unitId, out var callback))
+    if (_unitDeathCallbacks.TryGetValue(dyingUnit, out var callback))
     {
       callback();
-      _unitDeathCallbacks.Remove(unitId); // Remove the triggered callback
+      _unitDeathCallbacks.Remove(dyingUnit); // Remove the triggered callback
     }
   }
 
   /// <summary>
   /// Registers a callback for a unit death event.
   /// </summary>
-  public static void RegisterDeathEvent(unit unit, System.Action callback)
+  public static void RegisterDeathEvent(unit unit, Action callback)
   {
-    var unitId = unit.HandleId;
-    _unitDeathCallbacks[unitId] = callback;
+    _unitDeathCallbacks[unit] = callback;
   }
 }
