@@ -42,30 +42,30 @@ public static class FrostwolfObjectInfo
     yield return new(UNIT_H0CN_PACKLEADER_FROSTWOLF, 4);
     yield return new(UNIT_H0CO_MAMMOTH_WRANGLER_FROSTWOLF, 2);
     yield return new(UNIT_N049_WANDERER_FROSTWOLF, 4);
-    yield return new("obot", Unlimited); //Transport Ship
-    yield return new("h0AS", Unlimited); //Scout
-    yield return new("h0AP", Unlimited); //Frigate
-    yield return new("h0B2", Unlimited); //Fireship
-    yield return new("h0AY", Unlimited); //Galley
-    yield return new("h0B5", Unlimited); //Boarding
-    yield return new("h0BC", Unlimited); //Juggernaut
-    yield return new("h0AO", 6); //Bombard
-    yield return new("h00C", 1); //Drek)thar
-    yield return new("Othr", 1); //Thrall
-    yield return new("Ocbh", 1); //Cairne
-    yield return new("Orkn", 1); //Voljin
-    yield return new("Orex", 1); //Rexxar
-    yield return new("Rows", Unlimited); //Improved Pulverize
-    yield return new("Rost", Unlimited); //Shaman Adept Training
-    yield return new("Rowd", Unlimited); //Witch Doctor Adept Training
-    yield return new("Rowt", Unlimited); //Spirit Walker Adept Training
-    yield return new("Rolf", Unlimited); //Liquid Fire
-    yield return new("Rosp", Unlimited); //Spiked Barricades
-    yield return new("Rorb", Unlimited); //reinforced Defenses
-    yield return new("R00H", Unlimited); //Animal Companion
-    yield return new("R00R", Unlimited); //Improved Chain Lightning
-    yield return new("R00W", Unlimited); //Toughened Hides
-    yield return new("R01Z", Unlimited); //Battle Stations
+    yield return new(UNIT_OBOT_HORDE_TRANSPORT_SHIP_WARSONG_FROSTWOLF_FEL_HORDE, Unlimited);
+    yield return new(UNIT_H0AS_SCOUT_SHIP_HORDE, Unlimited);
+    yield return new(UNIT_H0AP_FRIGATE_HORDE, Unlimited);
+    yield return new(UNIT_H0B2_FIRESHIP_HORDE, Unlimited);
+    yield return new(UNIT_H0AY_GALLEY_HORDE, Unlimited);
+    yield return new(UNIT_H0B5_BOARDING_VESSEL_HORDE, Unlimited);
+    yield return new(UNIT_H0BC_JUGGERNAUT_HORDE, Unlimited);
+    yield return new(UNIT_H0AO_BOMBARD_HORDE, 6);
+    yield return new(UNIT_H00C_DREK_THAR_FROSTWOLF_DEMI, 1);
+    yield return new(UNIT_OTHR_WARCHIEF_OF_THE_HORDE_FROSTWOLF, 1);
+    yield return new(UNIT_OCBH_CHIEFTAIN_OF_THE_BLOODHOOF_FROSTWOLF, 1);
+    yield return new(UNIT_ORKN_CHIEFTAIN_OF_THE_DARKSPEAR_TRIBE_FROSTWOLF, 1);
+    yield return new(UNIT_OREX_BEASTMASTER_FROSTWOLF, 1);
+    yield return new(UPGRADE_ROWS_IMPROVED_PULVERIZE_FROSTWOLF, Unlimited);
+    yield return new(UPGRADE_ROST_SHAMAN_ADEPT_TRAINING_SHAMAN_MASTER_TRAINING_FROSTWOLF, Unlimited);
+    yield return new(UPGRADE_ROWD_WITCH_DOCTOR_ADEPT_TRAINING_WITCH_DOCTOR_MASTER_TRAINING_FROSTWOLF, Unlimited);
+    yield return new(UPGRADE_ROWT_SPIRIT_WALKER_ADEPT_TRAINING_SPIRIT_WALKER_MASTER_TRAINING_FROSTWOLF, Unlimited);
+    yield return new(UPGRADE_ROLF_AIRBORNE_TOXINS_FROSTWOLF, Unlimited);
+    yield return new(UPGRADE_ROSP_SPIKED_BARRICADES_IMPROVED_SPIKED_BARRICADES_ADVANCED_SPIKED_BARRICADES_FROSTWOLF_FEL_HORDE_WARSONG, Unlimited);
+    yield return new(UPGRADE_RORB_REINFORCED_DEFENSES_FROSTWOLF_FEL_HORDE_WARSONG, Unlimited);
+    yield return new(UPGRADE_R00H_ANIMAL_COMPANION_FROSTWOLF, Unlimited);
+    yield return new(UPGRADE_R00R_IMPROVED_CHAIN_LIGHTNING_FROSTWOLF, Unlimited);
+    yield return new(UPGRADE_R00W_TOUGHENED_HIDES_FROSTWOLF, Unlimited);
+    yield return new(UPGRADE_R01Z_PILLAGE_ECHO_ISLES, Unlimited);
     yield return new(UPGRADE_R09N_FLIGHT_PATH_WARSONG, 1);
   }
 }

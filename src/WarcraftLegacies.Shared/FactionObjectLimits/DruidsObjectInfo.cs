@@ -9,63 +9,62 @@ public static class DruidsObjectInfo
 
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
-    yield return new("etol", Unlimited); //Tree of Life
-    yield return new("etoa", Unlimited); //Tree of Ages
-    yield return new("etoe", Unlimited); //Tree of Eternity
-    yield return new("emow", Unlimited); //Moon Well
-    yield return new("eate", Unlimited); //Altar of Elders
-    yield return new("eaoe", Unlimited); //Ancient of Lore
-    yield return new("eaow", Unlimited); //Ancient of Wind
-    yield return new("eaom", Unlimited); //Ancient of war
-    yield return new("etrp", Unlimited); //Ancient Protector
-    yield return new("e010", Unlimited); //Hunter)s Hall
-    yield return new("e019", Unlimited); //Ancient of Wonders
+    yield return new(UNIT_ETOL_TREE_OF_LIFE_DRUID_T1, Unlimited);
+    yield return new(UNIT_ETOA_TREE_OF_AGES_DRUID_T2, Unlimited);
+    yield return new(UNIT_ETOE_TREE_OF_ETERNITY_DRUID_T3, Unlimited);
+    yield return new(UNIT_EMOW_MOON_WELL_DRUID_FARM, Unlimited);
+    yield return new(UNIT_EATE_ALTAR_OF_ELDERS_DRUID_ALTAR, Unlimited);
+    yield return new(UNIT_EAOE_ANCIENT_OF_LORE_DRUID_MAGIC, Unlimited);
+    yield return new(UNIT_EAOW_ANCIENT_OF_WIND_DRUID_SPECIALIST, Unlimited);
+    yield return new(UNIT_EAOM_ANCIENT_OF_WAR_DRUID_BARRACKS, Unlimited);
+    yield return new(UNIT_ETRP_ANCIENT_PROTECTOR_DRUID_TOWER, Unlimited);
+    yield return new(UNIT_E010_ANCIENT_OF_CREATION_DRUID_RESEARCH, Unlimited);
+    yield return new(UNIT_E019_ANCIENT_OF_WONDERS_DRUID_SHOP, Unlimited);
     yield return new(UNIT_ESHY_KALDOREI_DOCKS_DRUID_SENTINEL_SHIPYARD, Unlimited, UnitCategory.Shipyard);
-    yield return new("e000", Unlimited); //Improved Ancient Protector
+    yield return new(UNIT_E000_IMPROVED_ANCIENT_PROTECTOR_DRUID_TOWER, Unlimited);
     yield return new(UNIT_EWSP_WISP_DRUIDS_SENTINELS_WORKER, Unlimited, UnitCategory.Worker);
-    yield return new("edry", Unlimited); //Dryad
-    yield return new("edot", Unlimited); //Druid of the Talon
-    yield return new("emtg", 12); //Mountain Giant
-    yield return new("efdr", 6); //Faerie Dragon
-    yield return new("edoc", Unlimited); //Druid of the Claw
-    yield return new("edcm", Unlimited); //Druid of the Claw bear form
-    yield return new("e00N", 6); //Keeper of the Grove
-    yield return new("n05H", Unlimited); //Furbolg
-    yield return new("n065", 6); //Green Dragon
+    yield return new(UNIT_EDRY_DRYAD_DRUIDS, Unlimited);
+    yield return new(UNIT_EDOT_DRUID_OF_THE_TALON_DRUIDS, Unlimited);
+    yield return new(UNIT_EMTG_MOUNTAIN_GIANT_DRUIDS, 12);
+    yield return new(UNIT_EFDR_FAERIE_DRAGON_DRUIDS, 6);
+    yield return new(UNIT_EDOC_DRUID_OF_THE_CLAW_DRUIDS, Unlimited);
+    yield return new(UNIT_EDCM_BEAR_BEAR_FORM, Unlimited);
+    yield return new(UNIT_E00N_KEEPER_OF_THE_GROVE_DRUIDS_ELITE, 6);
+    yield return new(UNIT_N05H_SAPLING_DRUIDS, Unlimited);
+    yield return new(UNIT_N065_GREEN_DRAGON_DRUIDS, 6);
     yield return new(UNIT_E012_SIEGE_ANCIENT_DRUIDS_ELITE, 6);
-    yield return new("etrs", Unlimited); //Night Elf Transport Ship
-    yield return new("h0AU", Unlimited); // Scout
-    yield return new("h0AV", Unlimited); // Frigate
-    yield return new("h0B1", Unlimited); // Fireship
-    yield return new("h057", Unlimited); // Galley
-    yield return new("h0B4", Unlimited); // Boarding
-    yield return new("h0BA", Unlimited); // Juggernaut
-    yield return new("h0B8", 6); // Bombard
-    yield return new("Ecen", 1); //Cenarius
-    yield return new("E00H", 1); //Cenarius
-    yield return new("E00K", 1); //Tortolla
-    yield return new("Efur", 1); //Furion
+    yield return new(UNIT_ETRS_NIGHT_ELF_TRANSPORT_SHIP_DRUIDS_SENTINELS, Unlimited);
+    yield return new(UNIT_H0AU_SCOUT_SHIP_NIGHT_ELVES, Unlimited);
+    yield return new(UNIT_H0AV_FRIGATE_NIGHT_ELVES, Unlimited);
+    yield return new(UNIT_H0B1_FIRESHIP_NIGHT_ELVES, Unlimited);
+    yield return new(UNIT_H057_GALLEY_NIGHT_ELVES, Unlimited);
+    yield return new(UNIT_H0B4_BOARDING_VESSEL_NIGHT_ELVES, Unlimited);
+    yield return new(UNIT_H0BA_JUGGERNAUT_NIGHT_ELVES, Unlimited);
+    yield return new(UNIT_H0B8_BOMBARD_NIGHT_ELVES, 6);
+    yield return new(UNIT_ECEN_DEMIGOD_OF_THE_NIGHT_ELVES_DRUIDS, 1);
+    yield return new(UNIT_E00H_DEMIGOD_OF_THE_NIGHT_ELVES_DRUIDS_GHOST, 1);
+    yield return new(UNIT_E00K_ARCHDRUID_OF_DARNASSUS_DRUIDS, 1);
+    yield return new(UNIT_EFUR_ARCHDRUID_DRUIDS, 1);
     yield return new(UNIT_E00A_ANCIENT_GUARDIAN_DRUIDS, 1);
     yield return new(UNIT_E00X_ELEMENTAL_GUARDIAN_DRUIDS_DEMI, 1);
     yield return new(UNIT_H04U_DEMIGOD_DRUIDS, 1);
-    yield return new("Redt", Unlimited); //Druid of the Talon Adept Training
-    yield return new("Renb", Unlimited); //Nature)s Blessing
-    yield return new("Rers", Unlimited); //Resistant Skin
-    yield return new("Reuv", Unlimited); //Ultravision
-    yield return new("Rews", Unlimited); //Well Spring
-    yield return new("Redc", Unlimited); //Druid of the Claw Adept Training
-    yield return new("R04E", Unlimited); //Ysera)s Gift
-    yield return new("R02G", Unlimited); //Emerald Flames
-    yield return new("R05X", Unlimited); //Blessing of Ursoc
-    yield return new("R002", Unlimited); //Blackwald Enhancement
-    yield return new("R00A", Unlimited); //Improved Thorns
-    yield return new("R02T", Unlimited); //Improved Moonwells
-    yield return new("R033", Unlimited); //Limber Timber
-    yield return new("R046", Unlimited); //Grasping Vines
-    yield return new("R047", Unlimited); //Crippling Poison
-    yield return new("R048", Unlimited); //Deadly Poison
-    yield return new("R008", Unlimited); //Improved Natures FuryR015
-    yield return new("R015", UPGRADE_R015_IMPROVED_MANA_FLARE_DRUIDS);
+    yield return new(UPGRADE_REDT_DRUID_OF_THE_TALON_ADVANCED_TRAINING_DRUIDS, Unlimited);
+    yield return new(UPGRADE_RENB_NATURE_S_BLESSING_BROWN_RESEARCH, Unlimited);
+    yield return new(UPGRADE_RERS_RESISTANT_SKIN_MOUNTAIN_GIANT, Unlimited);
+    yield return new(UPGRADE_REUV_ULTRAVISION_LIGHT_BLUE_RESEARCH_BROWN_RESEARCH, Unlimited);
+    yield return new(UPGRADE_REWS_WELL_SPRING, Unlimited);
+    yield return new(UPGRADE_REDC_DRUID_OF_THE_CLAW_ADEPT_TRAINING_DRUID_OF_THE_CLAW_MASTER_TRAINING_DRUIDS, Unlimited);
+    yield return new(UPGRADE_R04E_YSERA_S_GIFT_DRUIDS, Unlimited);
+    yield return new(UPGRADE_R02G_EMERALD_FLAMES_DRUIDS, Unlimited);
+    yield return new(UPGRADE_R05X_BLESSING_OF_URSOL_DRUIDS, Unlimited);
+    yield return new(UPGRADE_R002_QUEST_COMPLETED_CROWN_OF_THE_SNOW_DRUIDS, Unlimited);
+    yield return new(UPGRADE_R00A_IMPROVED_THORNS_DRUIDS, Unlimited);
+    yield return new(UPGRADE_R02T_IMPROVED_MOONWELLS_DRUIDS, Unlimited);
+    yield return new(UPGRADE_R046_GRASPING_VINES_DRUIDS, Unlimited);
+    yield return new(UPGRADE_R047_CRIPPLING_POISON_DRUIDS, Unlimited);
+    yield return new(UPGRADE_R048_DEADLY_POISON_DRUIDS, Unlimited);
+    yield return new(UPGRADE_R008_DOMINATION_POWER, Unlimited);
+    yield return new(UPGRADE_R015_IMPROVED_MANA_FLARE_DRUIDS, Unlimited);
     yield return new(UPGRADE_R09V_STORM_CROW_FORM_DRUIDS, Unlimited);
   }
 }

@@ -41,31 +41,31 @@ public static class WarsongObjectInfo
     yield return new(UNIT_O00G_BLADEMASTER_WARSONG, 6);
     yield return new(UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE, 6, UnitCategory.Elite);
     yield return new(UNIT_OWYV_WIND_RIDER_WARSONG, 8, UnitCategory.FlyingBasic);
-    yield return new("obot", Unlimited); //Transport Ship
-    yield return new("h0AS", Unlimited); //Scout
-    yield return new("h0AP", Unlimited); //Frigate
-    yield return new("h0B2", Unlimited); //Fireship
-    yield return new("h0AY", Unlimited); //Galley
-    yield return new("h0B5", Unlimited); //Boarding
-    yield return new("h0BC", Unlimited); //Juggernaut
-    yield return new("h0AO", 6); //Bombard
+    yield return new(UNIT_OBOT_HORDE_TRANSPORT_SHIP_WARSONG_FROSTWOLF_FEL_HORDE, Unlimited);
+    yield return new(UNIT_H0AS_SCOUT_SHIP_HORDE, Unlimited);
+    yield return new(UNIT_H0AP_FRIGATE_HORDE, Unlimited);
+    yield return new(UNIT_H0B2_FIRESHIP_HORDE, Unlimited);
+    yield return new(UNIT_H0AY_GALLEY_HORDE, Unlimited);
+    yield return new(UNIT_H0B5_BOARDING_VESSEL_HORDE, Unlimited);
+    yield return new(UNIT_H0BC_JUGGERNAUT_HORDE, Unlimited);
+    yield return new(UNIT_H0AO_BOMBARD_HORDE, 6);
     yield return new(UNIT_VSWS_HIGH_OVERLORD_OF_THE_KOR_KRON_VASSAL, 1); //Varok
-    yield return new("O06L", 1); //Garrosh
+    yield return new(UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG, 1);
     yield return new(UNIT_O005_WARSONG_BATTLEMASTER_WARSONG, 1);
     yield return new(UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG, 1); //Rokhan
-    yield return new("n0CN", 1); //Gibbs
+    yield return new(UNIT_N0CN_FOREMAN_GLIBBS_WARSONG_DEMI, 1);
     yield return new(UNIT_OPGH_CORRUPTOR_OF_THE_WARSONG_CLAN_WARSONG_BLOODPACT,
         1); //Blood Pact Grom   Fixes Perma Death Grom Blood Pact bug
     yield return new(UPGRADE_R00J_OGRE_MAGRI_MASTER_TRAINING_WARSONG, Unlimited);
-    yield return new("Robs", Unlimited); //Berserker Strength
-    yield return new("Rotr", Unlimited); //Troll Regeneration
-    yield return new("R01J", Unlimited); //Ensnare
-    yield return new("R02I", Unlimited); //Ogre Magi Adept Training
-    yield return new("R03Q", Unlimited); //Warlock Adept Training
-    yield return new("Rorb", Unlimited); //Reinforced Defenses
-    yield return new("Rosp", Unlimited); //Spiked Barricades
-    yield return new("R016", Unlimited); //Warlords
-    yield return new("R019", Unlimited); //Improved Shockwave
+    yield return new(UPGRADE_ROBS_BRUTE_STRENGTH_WARSONG, Unlimited);
+    yield return new(1383036018, Unlimited); // Troll Regeneration
+    yield return new(UPGRADE_R01J_IMPROVED_ENSNARE_WARSONG, Unlimited);
+    yield return new(UPGRADE_R02I_WARLOCK_MASTER_TRAINING_WARSONG, Unlimited);
+    yield return new(UPGRADE_R03Q_SHADOWPRIEST_MASTER_TRAINING_WARSONG, Unlimited);
+    yield return new(UPGRADE_RORB_REINFORCED_DEFENSES_FROSTWOLF_FEL_HORDE_WARSONG, Unlimited);
+    yield return new(UPGRADE_ROSP_SPIKED_BARRICADES_IMPROVED_SPIKED_BARRICADES_ADVANCED_SPIKED_BARRICADES_FROSTWOLF_FEL_HORDE_WARSONG, Unlimited);
+    yield return new(UPGRADE_R016_QUEST_COMPLETED_KEEPER_OF_THE_ETERNAL_WATCH_STORMWIND, Unlimited);
+    yield return new(UPGRADE_R019_IMPROVED_SHOCKWAVE_WARSONG, Unlimited);
     yield return new(UPGRADE_R00D_MASS_BLOODLUST_FROSTWOLF, Unlimited);
     yield return new(UPGRADE_ROVS_ENVENOMED_SPEARS_WARSONG, Unlimited);
     yield return new(UPGRADE_R09N_FLIGHT_PATH_WARSONG, 1);
