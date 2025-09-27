@@ -23,8 +23,6 @@ public static class LegionObjectInfo
     yield return new(UNIT_N04Q_NETHER_PIT_LEGION_BARRACKS, 3, limitIncreaseHint: "completing certain Quests"); // Barracks
     yield return new(UNIT_N04N_INFERNAL_SIEGEWORKS_LEGION_SPECIALIST, Unlimited); // Specialist
     yield return new(UNIT_NDMG_DEMON_GATE_LEGION_SIEGE, Unlimited); //Specialist 2
-
-
     yield return new(UNIT_U00D_LEGION_HERALD_LEGION_WORKER, Unlimited); // Worker
     yield return new(UNIT_U007_DREADLORD_LEGION_ELITE, 6); //Elite
     yield return new(UNIT_N04P_EREDAR_SUMMONER_LEGION, Unlimited); // Warlock Caster 1
@@ -39,34 +37,29 @@ public static class LegionObjectInfo
     yield return new(UNIT_N04H_FEL_GUARD_LEGION, Unlimited); //Fel Guard
     yield return new(UNIT_N04U_NETHER_DRAGON_LEGION, 4); // Nether Dragon
     yield return new(UNIT_N03L_SKY_BARGE_LEGION, 4); // Sky Barge
-
     yield return new(UNIT_UMAL_THE_CUNNING_LEGION, 1); //Mal Ganis
     yield return new(UNIT_UTIC_THE_DARKENER_LEGION, 1); // Tichondrius
     yield return new(UNIT_U00L_ENVOY_OF_ARCHIMONDE_LEGION, 1); // Anetheron
-
-
-
-    yield return new("ubot", Unlimited); //Undead Transport Ship
-    yield return new("h0AT", Unlimited); //Scout
-    yield return new("h0AW", Unlimited); //Frigate
-    yield return new("h0AM", Unlimited); //Fireship
-    yield return new("h0AZ", Unlimited); //Galley
-    yield return new("h0AQ", Unlimited); //Boarding
-    yield return new("h0BB", Unlimited); //Juggernaut
-    yield return new("h0B9", 6); //Bombard
-
-    yield return new("n05R", 1); //Felguard
-    yield return new("n06H", 1); //Pit Fiend
-    yield return new("n07B", 1); //Queen
-    yield return new("n07D", 1); //Maiden
-    yield return new("n07o", 1); //Terror
-    yield return new("n07N", 1); //Lord
-    yield return new("R02C", Unlimited); //Acute Sensors
-    yield return new("R028", Unlimited); //Shadow Priest Adept Training
-    yield return new("R042", Unlimited); //Nathrezim Adept Training
-    yield return new("R027", Unlimited); //Warlock Adept Training
-    yield return new("R04G", Unlimited); //Improved Carrion Swarm
-    yield return new("R03Z", Unlimited); //War Plating
+    yield return new(UNIT_UBOT_HAUNTED_TRANSPORT_SHIP_SCOURGE_LEGION, Unlimited);
+    yield return new(UNIT_H0AT_SCOUT_SHIP_UNDEAD, Unlimited);
+    yield return new(UNIT_H0AW_FRIGATE_UNDEAD, Unlimited);
+    yield return new(UNIT_H0AM_FIRESHIP_UNDEAD, Unlimited);
+    yield return new(UNIT_H0AZ_GALLEY_UNDEAD, Unlimited);
+    yield return new(UNIT_H0AQ_BOARDING_VESSEL_UNDEAD, Unlimited);
+    yield return new(UNIT_H0BB_JUGGERNAUT_UNDEAD, Unlimited);
+    yield return new(UNIT_H0B9_BOMBARD_UNDEAD, 6);
+    yield return new(UNIT_N05R_FELGUARD_DEMON_GATE_T2_BLOODFIEND, 1);
+    yield return new(UNIT_N06H_PIT_FIEND_DEMON_GATE_T2_PITFIEND, 1);
+    yield return new(UNIT_N07B_QUEEN_OF_SUFFERING_DEMON_GATE_T3_QUEEN_SUFFERING, 1);
+    yield return new(UNIT_N07D_MAIDEN_OF_DOMINANCE_DEMON_GATE_T3_MAIDEN, 1);
+    yield return new(UNIT_N07O_TERRORGUARD_DEMON_GATE_T2_TERROR_GUARD, 1);
+    yield return new(UNIT_N07N_PAVILION_ELEMENTAL_MAGIC, 1);
+    yield return new(UPGRADE_R02C_THE_DARK_PORTAL_FEL_HORDE, Unlimited);
+    yield return new(UPGRADE_R028_SUCCUBIS_MASTER_TRAINING_LEGION, Unlimited);
+    yield return new(UPGRADE_R042_NATHREZIM_WARLOCK_MASTER_TRAINING_LEGION, Unlimited);
+    yield return new(UPGRADE_R027_EREDAR_SUMMONER_MASTER_TRAINING_LEGION, Unlimited);
+    yield return new(UPGRADE_R04G_SUPERIOR_CARRION_SWARM_LEGION, Unlimited);
+    yield return new(UPGRADE_R03Z_WAR_PLATING_LEGION, Unlimited);
     yield return new(UPGRADE_R096_REMATERIALIZATION_LEGION, 1);
     yield return new(UPGRADE_R04R_FORTIFIED_HULLS_UNIVERSAL_UPGRADE, 1);
     yield return new(UPGRADE_R03L_IMPROVED_HEAL_FEL_HORDE, 1);

@@ -9,61 +9,60 @@ public static class QuelthalasObjectInfo
 
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
-    yield return new("h033", Unlimited); //Steading
-    yield return new("h03S", Unlimited); //Mansion
-    yield return new("h03T", Unlimited); //Palace
-    yield return new("h01H", Unlimited); //Altar of Prowess
-    yield return new("h02Y", Unlimited); //Artisan)s Hall
-    yield return new("h034", Unlimited); //Arcane Sanctum (Quel)thalas)
-    yield return new("h073", Unlimited); //Scout Tower
-    yield return new("h074", Unlimited); //Arcane Tower
-    yield return new("h075", Unlimited); //Arcane Tower (Improved)
-    yield return new("negt", Unlimited); //High Elven Guard Tower
-    yield return new("n003", Unlimited); //High Elven Guard Tower (Improved)
-    yield return new("h04V", Unlimited); //Arcane Vault (Elven)
-    yield return new("nheb", Unlimited); //Cantonment
-    yield return new("n0A2", Unlimited); //Consortium
-    yield return new("h03J", Unlimited); //Academy
+    yield return new(UNIT_H033_STEADING_QUEL_THALAS_T1, Unlimited);
+    yield return new(UNIT_H03S_MANSION_QUEL_THALAS_T2, Unlimited);
+    yield return new(UNIT_H03T_PALACE_QUEL_THALAS_T3, Unlimited);
+    yield return new(UNIT_H01H_ALTAR_OF_PROWESS_QUEL_THALAS_ALTAR, Unlimited);
+    yield return new(UNIT_H02Y_ARTISAN_S_HALL_QUEL_THALAS_RESEARCH, Unlimited);
+    yield return new(UNIT_H034_ARCANE_SANCTUM_QUEL_THALAS_MAGIC, Unlimited);
+    yield return new(UNIT_H073_SCOUT_TOWER_QUEL_THALAS_TOWER, Unlimited);
+    yield return new(UNIT_H074_ARCANE_TOWER_QUEL_THALAS_TOWER, Unlimited);
+    yield return new(UNIT_H075_IMPROVED_ARCANE_TOWER_QUEL_THALAS_TOWER, Unlimited);
+    yield return new(UNIT_NEGT_SUN_TOWER, Unlimited);
+    yield return new(UNIT_N003_IMPROVED_SUN_TOWER_QUEL_THALAS_TOWER, Unlimited);
+    yield return new(UNIT_H04V_ARCANE_VAULT_QUEL_THALAS_SHOP, Unlimited);
+    yield return new(UNIT_NHEB_CANTONMENT_QUEL_THALAS_BARRACKS, Unlimited);
+    yield return new(UNIT_N0A2_CONSORTIUM_QUEL_THALAS_SIEGE, Unlimited);
+    yield return new(UNIT_H03J_ACADEMY_QUEL_THALAS_SPECIALIST, Unlimited);
     yield return new(UNIT_H077_SHIPYARD_QUEL_THALAS_SHIPYARD, Unlimited, UnitCategory.Shipyard);
-    yield return new("nefm", Unlimited); //Residence
-    yield return new("nbee", Unlimited); //Elven Worker
-    yield return new("hhes", Unlimited); //Elven Warrior
-    yield return new("hmpr", Unlimited); //Priest
-    yield return new("hsor", Unlimited); //Sorceress
-    yield return new("hdhw", 6); //Dragonhawk Rider
-    yield return new("nhea", Unlimited); //Archer
-    yield return new("e008", 6); //Elven Ballista
-    yield return new("n00A", 6); //Farstrider
-    yield return new("e024", 6); //Arcane Annihilator
-    yield return new("n02F", 6); //Warlock
-    yield return new("n063", 12); //Magus
-    yield return new("hspt", Unlimited); //Spell Breaker
-    yield return new("u00J", 2); //Arcane Wagon
+    yield return new(UNIT_NEFM_RESIDENCE_QUEL_THALAS, Unlimited);
+    yield return new(UNIT_NBEE_ARCHITECT_QUEL_THALAS_WORKER, Unlimited);
+    yield return new(UNIT_HHES_SWORDSMAN_QUEL_THALAS, Unlimited);
+    yield return new(UNIT_HMPR_PRIEST_QUEL_THALAS, Unlimited);
+    yield return new(UNIT_HSOR_SORCERESS_QUEL_THALAS, Unlimited);
+    yield return new(UNIT_HDHW_DRAGONHAWK_RIDER_QUEL_THALAS, 6);
+    yield return new(UNIT_NHEA_RANGER_QUEL_THALAS, Unlimited);
+    yield return new(UNIT_E008_BALLISTA_QUEL_THALAS, 6);
+    yield return new(UNIT_N00A_FARSTRIDER_QUEL_THALAS_ELITE, 6);
+    yield return new(UNIT_E024_ARCANE_ANNIHILATOR_QUEL_THALAS, 6);
+    yield return new(UNIT_N02F_WARLOCK_QUEL_THALAS, 6);
+    yield return new(UNIT_N063_MAGUS_QUEL_THALAS, 12);
+    yield return new(UNIT_HSPT_SPELLBREAKER_QUEL_THALAS, Unlimited);
+    yield return new(UNIT_U00J_ARCANE_WAGON_QUEL_THALAS, 2);
     yield return new(UNIT_N048_BLOOD_MAGE_QUEL_THALAS, 6);
-    yield return new("hbot", Unlimited); //Alliance Transport Ship
-    yield return new("h0AR", Unlimited); //Alliance Scout
-    yield return new("h0AX", Unlimited); //Alliance Frigate
-    yield return new("h0B3", Unlimited); //Alliance Fireship
-    yield return new("h0B0", Unlimited); //Alliance Galley
-    yield return new("h0B6", Unlimited); //Alliance Boarding
-    yield return new("h0AN", Unlimited); //Alliance Juggernaut
-    yield return new("h0B7", 6); //Alliance Bombard
-    yield return new("n075", 1); //Vareesa
-    yield return new("Hvwd", 1); //Sylvanas
-    yield return new("H00Q", 1); //Anasterian
-    yield return new("H04F", 1); //Rommath
-    yield return new("H02E", 1); //Lorthemar
-    yield return new("R01S", Unlimited); //Aimed Shot
-    yield return new("R00G", Unlimited); //Feint
-    yield return new("R01R", Unlimited); //Improved Bows
-    yield return new("R029", Unlimited); //Magus Adept Training
-    yield return new("Rhcd", Unlimited); //Cloud
-    yield return new("Rhss", Unlimited); //Control Magic
-    yield return new("Rhac", Unlimited); //Improved Masonry
-    yield return new("Rhse", Unlimited); //Magic Sentry
-    yield return new("Rhpt", Unlimited); //Priest Adept Training
-    yield return new("Rhst", Unlimited); //Sorceress Adept Training
-    yield return new("R004", Unlimited); //Sunfury Warrior Training
-    yield return new("R02Y", Unlimited); //Improved Glaives
+    yield return new(UNIT_HBOT_TRANSPORT_SHIP_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0AR_SCOUT_SHIP_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0AX_FRIGATE_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0B3_FIRESHIP_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0B0_GALLEY_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0B6_BOARDING_VESSEL_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0AN_JUGGERNAUT_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0B7_BOMBARD_ALLIANCE, 6);
+    yield return new(UNIT_HVWD_RANGER_GENERAL_OF_SILVERMOON_QUEL_THALAS, 1);
+    yield return new(UNIT_H00Q_KING_OF_QUEL_THALAS_QUEL_THALAS, 1);
+    yield return new(UNIT_H04F_ARCHMAGE_GREEN, 1);
+    yield return new(UNIT_H02E_REGENT_OF_QUEL_THALAS_QUEL_THALAS_VASSAL, 1);
+    yield return new(UPGRADE_R01S_RAPID_SHOTS_QUEL_THALAS, Unlimited);
+    yield return new(UPGRADE_R00G_FEINT_QUEL_THALAS, Unlimited);
+    yield return new(UPGRADE_R01R_ENCHANTED_BOWSTRINGS_QUEL_THALAS, Unlimited);
+    yield return new(UPGRADE_R029_MAGUS_MASTER_TRAINING_QUEL_THALAS, Unlimited);
+    yield return new(UPGRADE_RHCD_CLOUD_QUEL_THALAS, Unlimited);
+    yield return new(UPGRADE_RHSS_CONTROL_MAGIC_QUEL_THALAS, Unlimited);
+    yield return new(UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, Unlimited);
+    yield return new(UPGRADE_RHSE_MAGIC_SENTRY, Unlimited);
+    yield return new(UPGRADE_RHPT_PRIEST_ADEPT_TRAINING_PRIEST_MASTER_TRAINING_QUEL_THALAS, Unlimited);
+    yield return new(UPGRADE_RHST_SORCERESS_ADEPT_TRAINING_SORCERESS_MASTER_TRAINING_QUEL_THALAS, Unlimited);
+    yield return new(UPGRADE_R004_SUNFURY_TRAINING_QUEL_THALAS, Unlimited);
+    yield return new(UPGRADE_R02Y_IMPROVED_GLAIVES_QUEL_THALAS, Unlimited);
   }
 }

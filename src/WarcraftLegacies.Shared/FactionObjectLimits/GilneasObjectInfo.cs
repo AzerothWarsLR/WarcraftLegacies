@@ -54,14 +54,14 @@ public static class GilneasObjectInfo
     yield return new(UNIT_HHKL_KING_OF_GILNEAS_GILNEAS, 1); //Genn
     yield return new(UNIT_HPB2_GILNEAN_LORD_GILNEAS, 1); //Darius
 
-    yield return new("hbot", Unlimited); //Alliance Transport Ship
-    yield return new("h0AR", Unlimited); //Alliance Scout
-    yield return new("h0AX", Unlimited); //Alliance Frigate
-    yield return new("h0B3", Unlimited); //Alliance Fireship
-    yield return new("h0B0", Unlimited); //Alliance Galley
-    yield return new("h0B6", Unlimited); //Alliance Boarding
-    yield return new("h0AN", Unlimited); //Alliance Juggernaut
-    yield return new("h0B7", 6); //Alliance Bombard
+    yield return new(UNIT_HBOT_TRANSPORT_SHIP_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0AR_SCOUT_SHIP_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0AX_FRIGATE_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0B3_FIRESHIP_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0B0_GALLEY_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0B6_BOARDING_VESSEL_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0AN_JUGGERNAUT_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0B7_BOMBARD_ALLIANCE, 6);
     yield return new(UPGRADE_R04O_CLERIC_MASTER_TRAINING_GILNEAS, Unlimited);
     yield return new(UPGRADE_R04P_DRUID_OF_THE_SCYTHE_MASTER_TRAINING_GILNEAS, Unlimited);
     yield return new(

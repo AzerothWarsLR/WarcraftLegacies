@@ -9,58 +9,58 @@ public static class IronforgeObjectInfo
 
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
-    yield return new("h07E", Unlimited); //Town Hall
-    yield return new("h07F", Unlimited); //Keep
-    yield return new("h07G", Unlimited); //Castle
+    yield return new(UNIT_H07E_MINING_COLONY_IRONFORGE_T1, Unlimited);
+    yield return new(UNIT_H07F_DWARF_HOLD_IRONFORGE_T2, Unlimited);
+    yield return new(UNIT_H07G_GREAT_HOLD_IRONFORGE_T3, Unlimited);
     yield return new(UNIT_H01S_TAVERN_IRONFORGE_FARM, Unlimited, UnitCategory.Farm);
-    yield return new("h07B", Unlimited); //Altar of Kings
-    yield return new("h07C", Unlimited); //Barracks
-    yield return new("hlum", Unlimited); //Lumber Mill
-    yield return new("h048", Unlimited); //Blacksmith (Dwarven)
-    yield return new("h042", Unlimited); //Machine Factory
-    yield return new("harm", Unlimited); //Workshop
-    yield return new("hgra", Unlimited); //Gryphon Aviary
-    yield return new("h07H", Unlimited); //Scout Tower
-    yield return new("h07J", Unlimited); //Cannon Tower
-    yield return new("h07K", Unlimited); //Cannon Tower (Improved)
+    yield return new(UNIT_H07B_ALTAR_OF_FORTITUDE_IRONFORGE_ALTAR, Unlimited);
+    yield return new(UNIT_H07C_MUSTERING_HALL_IRONFORGE_BARRACKS, Unlimited);
+    yield return new(1751938413, Unlimited); // Lumber Mill
+    yield return new(UNIT_H048_FORGEWORKS_IRONFORGE_RESEARCH, Unlimited);
+    yield return new(UNIT_H042_PINNACLE_IRONFORGE_MAGIC, Unlimited);
+    yield return new(UNIT_HARM_WORKSHOP_IRONFORGE_SPECIALIST, Unlimited);
+    yield return new(UNIT_HGRA_GRYPHON_AVIARY_IRONFORGE_SIEGE, Unlimited);
+    yield return new(UNIT_H07H_SCOUT_TOWER_IRONFORGE_TOWER, Unlimited);
+    yield return new(UNIT_H07J_CANNON_TOWER_IRONFORGE_TOWER, Unlimited);
+    yield return new(UNIT_H07K_IMPROVED_CANNON_TOWER_IRONFORGE_TOWER, Unlimited);
     yield return new(UNIT_H07D_SHIPYARD_IRONFORGE_SHIPYARD, Unlimited, UnitCategory.Shipyard);
-    yield return new("n07U", Unlimited); //Marketplace
-    yield return new("h07I", Unlimited); //Guard Tower
-    yield return new("h07L", Unlimited); //Guard Tower (Improved)
-    yield return new("h019", Unlimited); //Dwarven Worker
-    yield return new("hrif", Unlimited); //Rifleman
-    yield return new("hmtm", 9); //Mortar Team
-    yield return new("n0CZ", 4); //Dreadnaught
-    yield return new("hgry", 6); //Gryphon Rider
-    yield return new("h018", Unlimited); //Dwarven Warrior
-    yield return new("h01L", 6); //Thane
-    yield return new("h037", Unlimited); //Engineer
-    yield return new("n02D", Unlimited); //War Golem
-    yield return new("h01P", 3); //Steam Tank
-    yield return new("n00C", Unlimited); //Rune Priest
-    yield return new("h03Z", 3); //War Gryphon
-    yield return new("h01M", 1); //Baelgun
-    yield return new("H00S", 1); //Magni
-    yield return new("Hmbr", 1); //Muradin
+    yield return new(UNIT_N07U_EXPLORER_S_VAULT_IRONFORGE_SHOP, Unlimited);
+    yield return new(UNIT_H07I_GUARD_TOWER_IRONFORGE_TOWER, Unlimited);
+    yield return new(UNIT_H07L_IMPROVED_GUARD_TOWER_IRONFORGE_TOWER, Unlimited);
+    yield return new(UNIT_H019_MASON_IRONFORGE_WORKER, Unlimited);
+    yield return new(UNIT_HRIF_RIFLEMAN_IRONFORGE, Unlimited);
+    yield return new(UNIT_HMTM_MORTAR_TEAM_IRONFORGE, 9);
+    yield return new(UNIT_N0CZ_DREADNAUGHT_DWARF, 4);
+    yield return new(UNIT_HGRY_GRYPHON_RIDER_IRONFORGE, 6);
+    yield return new(UNIT_H018_WARRIOR_IRONFORGE, Unlimited);
+    yield return new(UNIT_H01L_THANE_IRONFORGE_ELITE, 6);
+    yield return new(UNIT_H037_ENGINEER_IRONFORGE, Unlimited);
+    yield return new(UNIT_N02D_WAR_GOLEM_IRONFORGE, Unlimited);
+    yield return new(UNIT_H01P_STEAM_TANK_IRONFORGE, 3);
+    yield return new(UNIT_N00C_RUNE_PRIEST_IRONFORGE, Unlimited);
+    yield return new(UNIT_H03Z_STORMRIDER_IRONFORGE, 3);
+    yield return new(UNIT_H01M_BAELGUN_FLAMEBEARD_IRONFORGE_DEMI, 1);
+    yield return new(UNIT_H00S_KING_OF_KHAZ_MODAN_KHAZ_MODAN, 1);
+    yield return new(UNIT_HMBR_HIGH_THANE_OF_THE_BRONZEBEARDS_KHAZ_MODAN, 1);
     yield return new(UNIT_H03G_EMPEROR_OF_BLACKROCK_RAGNAROS, 1);
     yield return new(UNIT_H028_THANE_OF_AERIE_PEAK_IRONFORGE, 1);
-    yield return new("hbot", Unlimited); //Alliance Transport Ship
-    yield return new("h0AR", Unlimited); //Alliance Scout
-    yield return new("h0AX", Unlimited); //Alliance Frigate
-    yield return new("h0B3", Unlimited); //Alliance Fireship
-    yield return new("h0B0", Unlimited); //Alliance Galley
-    yield return new("h0B6", Unlimited); //Alliance Boarding
-    yield return new("h0AN", Unlimited); //Alliance Juggernaut
-    yield return new("h0B7", 6); //Alliance Bombard
-    yield return new("R03H", Unlimited); //Engineering Adept Training
-    yield return new("R00F", Unlimited); //Mithril Armor
-    yield return new("Rhfl", Unlimited); //Flare
-    yield return new("Rhfs", Unlimited); //Dragmentation Shards
-    yield return new("Rhac", Unlimited); //Improved Masonry
-    yield return new("Rhri", Unlimited); //Long Rifles
-    yield return new("Rhhb", Unlimited); //Storm Hammers
-    yield return new("R063", Unlimited); //Thunder Ale
-    yield return new("R02K", Unlimited); //Gryphon Superior Breed
+    yield return new(UNIT_HBOT_TRANSPORT_SHIP_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0AR_SCOUT_SHIP_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0AX_FRIGATE_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0B3_FIRESHIP_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0B0_GALLEY_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0B6_BOARDING_VESSEL_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0AN_JUGGERNAUT_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0B7_BOMBARD_ALLIANCE, 6);
+    yield return new(UPGRADE_R03H_ENGINEERING_GUILDMASTER_TRAINING_KHAZ_MODAN, Unlimited);
+    yield return new(UPGRADE_R00F_MITHRIL_PLATED_ARMOR_IRONFORGE, Unlimited);
+    yield return new(UPGRADE_RHFL_FLARE_IRONFORGE, Unlimited);
+    yield return new(UPGRADE_RHFS_FRAGMENTATION_SHARDS_YELLOW_RESEARCH, Unlimited);
+    yield return new(UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, Unlimited);
+    yield return new(UPGRADE_RHRI_LONG_RIFLES_IRONFORGE, Unlimited);
+    yield return new(UPGRADE_RHHB_STORM_HAMMERS_KHAZ_MODAN, Unlimited);
+    yield return new(UPGRADE_R063_QUEST_COMPLETED_GUARDIAN_OF_TIRISFAL, Unlimited);
+    yield return new(UPGRADE_R02K_GRYPHON_SUPERIOR_BREED_KHAZ_MODAN, Unlimited);
     yield return new(UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE, 2);
     yield return new(UPGRADE_RHAR_PYRITE_ARMOR_PLATING_UNIVERSAL_UPGRADE, 2);
     yield return new(UPGRADE_R00V_RUNE_PRIEST_MASTER_TRAINING_IRONFORGE, Unlimited);

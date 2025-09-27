@@ -21,14 +21,6 @@ public sealed class ObjectInfo
   /// </summary>
   public string? LimitIncreaseHint { get; }
 
-  [Obsolete("Use the version that takes in two integers instead.")]
-  public ObjectInfo(string objectTypeId, int limit, string? limitIncreaseHint = null)
-  {
-    ObjectTypeId = objectTypeId;
-    Limit = limit;
-    LimitIncreaseHint = limitIncreaseHint;
-  }
-
   public ObjectInfo(int objectTypeId, int limit, UnitCategory category = UnitCategory.None, string? limitIncreaseHint = null)
   {
     Category = category;

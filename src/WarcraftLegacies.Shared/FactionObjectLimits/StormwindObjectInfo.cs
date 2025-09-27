@@ -9,72 +9,71 @@ public static class StormwindObjectInfo
 
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
-    yield return new("h06K", Unlimited); //Town Hall
-    yield return new("h06M", Unlimited); //Keep
-    yield return new("h06N", Unlimited); //Castle
-    yield return new("h072", Unlimited); //Farm
-    yield return new("h06T", Unlimited); //Altar of Kings
-    yield return new("h06E", Unlimited); //Barracks
-    yield return new("h06F", Unlimited); //Blacksmith
-    yield return new("h06A", Unlimited); //Workshop (Stormwind)
-    yield return new("hars", Unlimited); //Arcane Sanctum
-    yield return new("h06V", Unlimited); //Scout Tower
-    yield return new("h06W", Unlimited); //Guard Tower
-    yield return new("h070", Unlimited); //Guard Tower (Improved)
-    yield return new("h06X", Unlimited); //Cannon Tower
-    yield return new("h071", Unlimited); //Cannon Tower (Improved)
-    yield return new("n07T", Unlimited); //Marketplace
+    yield return new(UNIT_H06K_TOWN_HALL_STORMWIND_T1, Unlimited);
+    yield return new(UNIT_H06M_KEEP_STORMWIND_T2, Unlimited);
+    yield return new(UNIT_H06N_CASTLE_STORMWIND_T3, Unlimited);
+    yield return new(UNIT_H072_HOMESTEAD_STORMWIND_FARM, Unlimited);
+    yield return new(UNIT_H06T_ALTAR_OF_KINGS_STORMWIND_ALTAR, Unlimited);
+    yield return new(UNIT_H06E_BARRACKS_STORMWIND_BARRACKS, Unlimited);
+    yield return new(UNIT_H06F_BLACKSMITH_STORMWIND_RESEARCH, Unlimited);
+    yield return new(UNIT_H06A_SMITHY_STORMWIND_SPECIALIST, Unlimited);
+    yield return new(UNIT_HARS_ARCANE_SANCTUM_STORMWIND_MAGIC, Unlimited);
+    yield return new(UNIT_H06V_SCOUT_TOWER_STORMWIND_TOWER, Unlimited);
+    yield return new(UNIT_H06W_GUARD_TOWER_STORMWIND_TOWER, Unlimited);
+    yield return new(UNIT_H070_IMPROVED_GUARD_TOWER_STORMWIND_TOWER, Unlimited);
+    yield return new(UNIT_H06X_CANNON_TOWER_STORMWIND_TOWER, Unlimited);
+    yield return new(UNIT_H071_IMPROVED_CANNON_TOWER_STORMWIND_TOWER, Unlimited);
+    yield return new(UNIT_N07T_AUCTION_HOUSE_STORMWIND_SHOP, Unlimited);
     yield return new(UNIT_H06D_ROYAL_HARBOUR_STORMWIND_SHIPYARD, Unlimited, UnitCategory.Shipyard);
-    yield return new("h06Y", Unlimited); //Arcane Tower
-    yield return new("h06Z", Unlimited); //Arcane Tower (Improved)
+    yield return new(UNIT_H06Y_ARCANE_TOWER_STORMWIND_TOWER, Unlimited);
+    yield return new(UNIT_H06Z_IMPROVED_ARCANE_TOWER_STORMWIND_TOWER, Unlimited);
     yield return new(UNIT_H024_LIGHT_HOUSE_STORMWIND_OTHER, 10); //Light House
     yield return new(UNIT_H05J_CHAMPION_S_HALL_STORMWIND_OTHER, 1);
     yield return new(UNIT_H05A_WIZARD_S_SANCTUM_STORMWIND_OTHER, 1);
-    yield return new("hpea", Unlimited); //Peasant
-    yield return new("h02O", Unlimited); //Militia
-    yield return new("h03K", 12); //Marshal
-    yield return new("h03Z", 12); //Marshal
-    yield return new("h00A", Unlimited); //Spearman
-    yield return new("h01B", Unlimited); //Outriders
-    yield return new("h05F", 6); //Stormwind Champion
-    yield return new("n05L", 6); //Conjurer
-    yield return new("h00J", Unlimited); //Clergyman
+    yield return new(UNIT_HPEA_PEASANT_LORDAERON_STORMWIND_WORKER, Unlimited);
+    yield return new(UNIT_H02O_BLADESMAN_STORMWIND, Unlimited);
+    yield return new(UNIT_H03K_MARSHAL_STORMWIND, 12);
+    yield return new(UNIT_H03Z_STORMRIDER_IRONFORGE, 12);
+    yield return new(UNIT_H00A_SPEARMAN_STORMWIND, Unlimited);
+    yield return new(UNIT_H01B_OUTRIDER_STORMWIND, Unlimited);
+    yield return new(UNIT_H05F_STORMWIND_CHAMPION_STORMWIND_ELITE, 6);
+    yield return new(UNIT_N05L_CONJURER_STORMWIND_ELITE, 6);
+    yield return new(UNIT_H00J_CLERGYMAN_STORMWIND, Unlimited);
     yield return new(UNIT_N06N_GUNSHIP_STORMWIND, 6);
-    yield return new("n093", Unlimited); //Chaplain
-    yield return new("o06K", 5); //Siege Tower
-    yield return new("hbot", Unlimited); //Alliance Transport Ship
-    yield return new("h0AR", Unlimited); //Alliance Scout
-    yield return new("h0AX", Unlimited); //Alliance Frigate
-    yield return new("h0B3", Unlimited); //Alliance Fireship
-    yield return new("h0B0", Unlimited); //Alliance Galley
-    yield return new("h0B6", Unlimited); //Alliance Boarding
-    yield return new("h0AN", Unlimited); //Alliance Juggernaut
-    yield return new("h0B7", 6); //Alliance Bombard
-    yield return new("h060", 3); //Arathor Flagship
-    yield return new("H00R", 1); //Varian
-    yield return new("H017", 1); //Bolvar
+    yield return new(UNIT_N093_CHAPLAIN_STORMWIND, Unlimited);
+    yield return new(UNIT_O06K_SIEGE_TOWER_STORMWIND, 5);
+    yield return new(UNIT_HBOT_TRANSPORT_SHIP_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0AR_SCOUT_SHIP_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0AX_FRIGATE_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0B3_FIRESHIP_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0B0_GALLEY_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0B6_BOARDING_VESSEL_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0AN_JUGGERNAUT_ALLIANCE, Unlimited);
+    yield return new(UNIT_H0B7_BOMBARD_ALLIANCE, 6);
+    yield return new(UNIT_H060_CARRIER_FLAGSHIP_STORMWIND, 3);
+    yield return new(UNIT_H00R_KING_OF_STORMWIND_DARK_GREEN, 1);
+    yield return new(UNIT_H017_HIGHLORD_OF_THE_ALLIANCE_DARK_GREEN, 1);
     yield return new(UNIT_H05Y_LORD_WIZARD_STORMWIND, 1);
     yield return new(UNIT_H00Z_CROWN_PRINCE_OF_STROMGARDE_STORMWIND, 1);
-    yield return new("R02E", Unlimited); //Chaplain Adept Training
-    yield return new("R005", Unlimited); //Clergyman Adept Training
-    yield return new("R02B", Unlimited); //Steel Plating
-    yield return new("Rhan", Unlimited); //Animal War Training
-    yield return new("Rhac", Unlimited); //Improved Masonry
-    yield return new("Rhse", Unlimited); //Magic Sentry
+    yield return new(UPGRADE_R02E_LIGHT_S_PRAISE_MASTER_TRAINING_ARATHOR_LORDAERON, Unlimited);
+    yield return new(UPGRADE_R005_CLERGYMAN_MASTER_TRAINING_ARATHOR, Unlimited);
+    yield return new(UPGRADE_R02B_CHAINMAIL_LAYERING_ARATHOR, Unlimited);
+    yield return new(UPGRADE_RHAN_ANIMAL_WAR_TRAINING_DARK_GREEN_PURPLE_RESEARCH, Unlimited);
+    yield return new(UPGRADE_RHAC_IMPROVED_MASONRY_ADVANCED_MASONRY_IMBUED_MASONRY_YELLOW_PURPLE_ORANGE_GREEN_DARK_GREEN_RESEARCH, Unlimited);
+    yield return new(UPGRADE_RHSE_MAGIC_SENTRY, Unlimited);
     yield return new(UPGRADE_R014_DEEPRUN_TRAM_IRONFORGE, 1);
     yield return new(UPGRADE_R02Z_REFLECTIVE_PLATING_ARATHOR_T2, Unlimited);
-    yield return new("R030", Unlimited); //Code of Chivalry
-    yield return new("R031", Unlimited); //Elven Refugees
+    yield return new(UPGRADE_R030_CODE_OF_CHIVALRY_ARATHOR_T3, Unlimited);
+    yield return new(UPGRADE_R031_EXPEDITION_SURVIVORS_ARATHOR_T3, Unlimited);
     yield return new(UPGRADE_R03V_MAGES_OF_STROMGARDE_ARATHOR_T2, Unlimited);
     yield return new(UPGRADE_R03W_KNOWLEDGE_OF_HONOR_HOLD_ARATHOR_T2, Unlimited);
-    yield return new("R038", Unlimited); //Enforcer Training
-    yield return new("R03E", Unlimited); //Saboteur Training
-    yield return new("R02Y", Unlimited); //Battle Tactics
-    yield return new("R03D", Unlimited); //Veteran Guard
-    yield return new("R02W", Unlimited); //Sanctuary of Light
-    yield return new("R03A", Unlimited); //Focus In The Light
-    yield return new("R03T", Unlimited); //Electric Strike Ritual
-    yield return new("R03U", Unlimited); //Solar Flare Ritual
-    yield return new("R03X", Unlimited); //Conjurers
+    yield return new(UPGRADE_R038_QUEST_COMPLETED_OUTSKIRTS, Unlimited);
+    yield return new(UPGRADE_R031_EXPEDITION_SURVIVORS_ARATHOR_T3, Unlimited);
+    yield return new(UPGRADE_R02Y_IMPROVED_GLAIVES_QUEL_THALAS, Unlimited);
+    yield return new(UPGRADE_R03D_VETERAN_GUARD_ARATHOR_T1, Unlimited);
+    yield return new(UPGRADE_R03A_QUEST_COMPLETED_WAR_OF_THE_SPIDER, Unlimited);
+    yield return new(UPGRADE_R03T_ELECTRIC_STRIKE_RITUAL_ARATHOR_T1, Unlimited);
+    yield return new(UPGRADE_R03U_SOLAR_FLARE_RITUAL_ARATHOR_T1, Unlimited);
+    yield return new(UPGRADE_R03X_CONJURERS_ARATHOR_T3, Unlimited);
   }
 }

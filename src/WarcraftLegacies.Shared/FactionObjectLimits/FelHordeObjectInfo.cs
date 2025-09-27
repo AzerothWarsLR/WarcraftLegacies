@@ -9,74 +9,74 @@ public static class FelHordeObjectInfo
 
   public static IEnumerable<ObjectInfo> GetAllObjectInfos()
   {
-    yield return new("o02Y", Unlimited); //Great Hall
-    yield return new("o02Z", Unlimited); //Stronghold
-    yield return new("o030", Unlimited); //Fortress
-    yield return new("o02V", Unlimited); //Altar of Storms
-    yield return new("o02W", Unlimited); //Barracks
-    yield return new("o031", Unlimited); //War Mill
-    yield return new("o033", Unlimited); //Spirit Lodge
-    yield return new("o02X", Unlimited); //Bestiary
+    yield return new(UNIT_O02Y_GREAT_HALL_FEL_HORDE_T1, Unlimited);
+    yield return new(UNIT_O02Z_STRONGHOLD_FEL_HORDE_T2, Unlimited);
+    yield return new(UNIT_O030_FORTRESS_FEL_HORDE_T3, Unlimited);
+    yield return new(UNIT_O02V_ALTAR_OF_DOMINATION_FEL_HORDE_ALTAR, Unlimited);
+    yield return new(UNIT_O02W_BARRACKS_FEL_HORDE_BARRACKS, Unlimited);
+    yield return new(UNIT_O031_WAR_MILL_FEL_HORDE_RESEARCH, Unlimited);
+    yield return new(UNIT_O033_DARK_ENCLAVE_FEL_HORDE_MAGIC, Unlimited);
+    yield return new(UNIT_O02X_BEASTIARY_FEL_HORDE_SPECIALIST, Unlimited);
     yield return new(UNIT_O032_SHIPYARD_FEL_HORDE_SHIPYARD, Unlimited, UnitCategory.Shipyard);
-    yield return new("o034", Unlimited); //Watch Tower
-    yield return new("o035", Unlimited); //Improved Watch Tower
-    yield return new("u00Q", Unlimited); //Hellforge
-    yield return new("n0AM", Unlimited); //Boulder Tower
-    yield return new("n0AN", Unlimited); //Advanced Boulder Tower
-    yield return new("ocbw", Unlimited); //Burrow
-    yield return new("n0AP", Unlimited); //Focal Demon Gate
-    yield return new("nbdk", 6); //Black Drake
-    yield return new("odkt", 6); //Eredar Warlock
-    yield return new("nchw", Unlimited); //Fel Orc Warlock
-    yield return new("nchg", Unlimited); //Fel Orc Grunt
-    yield return new("nchr", Unlimited); //Fel Orc Raider
-    yield return new("ncpn", Unlimited); //Fel Orc Peon
-    yield return new("owar", 12); //Horde Cavarly - Bonebreaker
-    yield return new("o01L", 6); //Executioner
-    yield return new("o01O", 8); //Demolisher
-    yield return new("u018", 10); //Eye of Grillok
-    yield return new("u00V", Unlimited); //Necrolyte
-    yield return new("n058", Unlimited); //Troll Axethrowers
+    yield return new(UNIT_O034_WATCH_TOWER_FEL_HORDE_TOWER, Unlimited);
+    yield return new(UNIT_O035_IMPROVED_WATCH_TOWER_FEL_HORDE_TOWER_2, Unlimited);
+    yield return new(UNIT_U00Q_TREASURY_FEL_HORDE_SHOP, Unlimited);
+    yield return new(UNIT_N0AM_FLAME_PILLAR_FEL_HORDE_TOWER, Unlimited);
+    yield return new(UNIT_N0AN_IMPROVED_FLAME_PILLAR_FEL_HORDE_TOWER_2, Unlimited);
+    yield return new(UNIT_OCBW_FEL_BURROW_FEL_HORDE_FARM, Unlimited);
+    yield return new(UNIT_N0AP_FOCAL_DEMON_GATE_FEL_HORDE_SIEGE, Unlimited);
+    yield return new(UNIT_NBDK_OBSIDIAN_DRAKE_FEL_HORDE, 6);
+    yield return new(UNIT_ODKT_EREDAR_OCCULTIST_FEL_HORDE, 6);
+    yield return new(UNIT_NCHW_FEL_WARLOCK_FEL_HORDE, Unlimited);
+    yield return new(UNIT_NCHG_FEL_GRUNT_FEL_HORDE, Unlimited);
+    yield return new(UNIT_NCHR_FEL_RAIDER_FEL_HORDE, Unlimited);
+    yield return new(UNIT_NCPN_FEL_PEON_FEL_HORDE_WORKER, Unlimited);
+    yield return new(UNIT_OWAR_BONEBREAKER_FEL_HORDE, 12);
+    yield return new(UNIT_O01L_EXECUTIONER_FEL_HORDE_ELITE, 6);
+    yield return new(UNIT_O01O_DEMOLISHER_FEL_HORDE, 8);
+    yield return new(UNIT_U018_EYE_OF_GRILLOK_FEL_HORDE, 10);
+    yield return new(UNIT_U00V_NECROLYTE_FEL_HORDE, Unlimited);
+    yield return new(UNIT_N058_FEL_CROSSBOWMAN_FEL_HORDE, Unlimited);
     yield return new(UNIT_NINA_INFERNAL_JUGGERNAUT_FEL_HORDE, 4);
     yield return new(UNIT_N086_FEL_DEATH_KNIGHT_FEL_HORDE_ELITE_TIER, 6);
-    yield return new("obot", Unlimited); //Transport Ship
-    yield return new("h0AS", Unlimited); //Scout
-    yield return new("h0AP", Unlimited); //Frigate
-    yield return new("h0B2", Unlimited); //Fireship
-    yield return new("h0AY", Unlimited); //Galley
-    yield return new("h0B5", Unlimited); //Boarding
-    yield return new("h0BC", Unlimited); //Juggernaut
-    yield return new("h0AO", 6); //Bombard
-    yield return new("n05T", 1); //Kazzak
-    yield return new("n08A", 1); //neltharaktu
-    yield return new("N03D", 1); //Kargath
-    yield return new("Nbbc", 1); //Rend
-    yield return new("U02D", 1); //Teron
-    yield return new("Nmag", 1); //Magtheridon
-    yield return new("Robf", Unlimited); //Demonic Flux
-    yield return new("R066", Unlimited); //Burning Oil
-    yield return new("R00O", Unlimited); //Ensnare
-    yield return new("Rorb", Unlimited); //Reinforced Defenses
-    yield return new("Rosp", Unlimited); //Spiked Barricades
-    yield return new("R024", Unlimited); //Necrolyte adept Training
-    yield return new("R00M", Unlimited); //Warlock Adept Training
-    yield return new("R03I", Unlimited); //Eredar Warlock Adept Training
-    yield return new("R00Y", Unlimited); //Improved Self-Bloodlust
-    yield return new("R03L", Unlimited); //Improved Shadow Infusion
-    yield return new("R036", Unlimited); //Incinerate
-    yield return new("R02L", Unlimited); //Bloodcraze
-    yield return new("R03O", Unlimited); //Bloodcraze
-    yield return new("R034", Unlimited); //Enhanced Breath
-    yield return new("R035", Unlimited); //Improved Firebolt
-    yield return new("R01Z", Unlimited); //Battle Stations
+    yield return new(UNIT_OBOT_HORDE_TRANSPORT_SHIP_WARSONG_FROSTWOLF_FEL_HORDE, Unlimited);
+    yield return new(UNIT_H0AS_SCOUT_SHIP_HORDE, Unlimited);
+    yield return new(UNIT_H0AP_FRIGATE_HORDE, Unlimited);
+    yield return new(UNIT_H0B2_FIRESHIP_HORDE, Unlimited);
+    yield return new(UNIT_H0AY_GALLEY_HORDE, Unlimited);
+    yield return new(UNIT_H0B5_BOARDING_VESSEL_HORDE, Unlimited);
+    yield return new(UNIT_H0BC_JUGGERNAUT_HORDE, Unlimited);
+    yield return new(UNIT_H0AO_BOMBARD_HORDE, 6);
+    yield return new(UNIT_N05T_KAZZAK_THE_SUPREME_FEL_HORDE_DEMI, 1);
+    yield return new(UNIT_N08A_FOUNDRY_ELEMENTAL_BARRACKS, 1);
+    yield return new(UNIT_N03D_WARCHIEF_OF_THE_FEL_HORDE_FEL_HORDE, 1);
+    yield return new(UNIT_NBBC_WARCHIEF_OF_THE_BLACKROCK_CLAN_FEL_HORDE, 1);
+    yield return new(UNIT_U02D_DEATH_KNIGHT_LORD_FEL_HORDE, 1);
+    yield return new(UNIT_NMAG_LORD_OF_OUTLAND_FEL_HORDE, 1);
+    yield return new(UPGRADE_ROBF_DEMONIC_FLUX_FEL_HORDE, Unlimited);
+    yield return new(UPGRADE_R066_BURNING_OIL_FEL_HORDE, Unlimited);
+    yield return new(UPGRADE_R00O_SUBDUE_THE_THUNDERBLUFF_TAUREN, Unlimited);
+    yield return new(UPGRADE_RORB_REINFORCED_DEFENSES_FROSTWOLF_FEL_HORDE_WARSONG, Unlimited);
+    yield return new(UPGRADE_ROSP_SPIKED_BARRICADES_IMPROVED_SPIKED_BARRICADES_ADVANCED_SPIKED_BARRICADES_FROSTWOLF_FEL_HORDE_WARSONG, Unlimited);
+    yield return new(UPGRADE_R024_NECROLYTE_MASTER_TRAINING_FEL_HORDE, Unlimited);
+    yield return new(UPGRADE_R00M_FEL_WARLOCK_GRANDMASTER_TRAINING_FEL_HORDE, Unlimited);
+    yield return new(UPGRADE_R03I_EREDAR_OCCULTIST_MASTER_TRAINING_FEL_HORDE, Unlimited);
+    yield return new(UPGRADE_R00Y_IMPROVED_FRENZY_FEL_HORDE, Unlimited);
+    yield return new(UPGRADE_R03L_IMPROVED_HEAL_FEL_HORDE, Unlimited);
+    yield return new(UPGRADE_R036_INCINERATE_FEL_HORDE, Unlimited);
+    yield return new(UPGRADE_R02L_ILLIDAN_EXISTS, Unlimited);
+    yield return new(UPGRADE_R03O_BLOOD_RUNES_FEL_HORDE, Unlimited);
+    yield return new(UPGRADE_R034_ENHANCED_BREATH_FEL_HORDE_DRAKES, Unlimited);
+    yield return new(UPGRADE_R035_IMPROVED_FIREBOLT_FEL_HORDE, Unlimited);
+    yield return new(UPGRADE_R01Z_PILLAGE_ECHO_ISLES, Unlimited);
     yield return new(UPGRADE_R098_FEL_INFUSED_SKELETON_FEL_HORDE, Unlimited);
     yield return new(UPGRADE_R09W_IMPROVED_GREATER_CARRION_SWARM_LEGION, Unlimited);
-    yield return new("n05R", Unlimited); //Felguard
-    yield return new("n06H", Unlimited); //Pit Fiend
-    yield return new("n07B", Unlimited); //Queen
-    yield return new("n07D", Unlimited); //Maiden
-    yield return new("n07o", Unlimited); //Terror
-    yield return new("n07N", Unlimited); //Lord
-    yield return new("R090", Unlimited); //Blackrock
+    yield return new(UNIT_N05R_FELGUARD_DEMON_GATE_T2_BLOODFIEND, Unlimited);
+    yield return new(UNIT_N06H_PIT_FIEND_DEMON_GATE_T2_PITFIEND, Unlimited);
+    yield return new(UNIT_N07B_QUEEN_OF_SUFFERING_DEMON_GATE_T3_QUEEN_SUFFERING, Unlimited);
+    yield return new(UNIT_N07D_MAIDEN_OF_DOMINANCE_DEMON_GATE_T3_MAIDEN, Unlimited);
+    yield return new(UNIT_N07O_TERRORGUARD_DEMON_GATE_T2_TERROR_GUARD, Unlimited);
+    yield return new(UNIT_N07N_PAVILION_ELEMENTAL_MAGIC, Unlimited);
+    yield return new(UPGRADE_R090_ACTIVATE_THE_BLACKROCK_CLAN_FEL, Unlimited);
   }
 }
