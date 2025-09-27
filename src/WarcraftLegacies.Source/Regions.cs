@@ -1,3 +1,4 @@
+﻿#pragma warning disable
 using WCSharp.Shared.Data;
 
 /// <summary>
