@@ -12,6 +12,10 @@
       "commandName": "Project",
       "commandLineArgs": "mapdata-to-w3x TestMap false \"..\\..\\..\\..\\..\\mapdata\\TestMap\" \"..\\..\\..\\..\\..\\maps\" --backup-directory \"..\\..\\..\\..\\..\\maps\\backups\" --output-type Folder"
     },
+    "TestMap: Transpile C# to Lua": {
+      "commandName": "Project",
+      "commandLineArgs": "csharp-to-lua TestMap \"..\\..\\..\\..\\..\\maps\" \"..\\..\\..\\..\\TestMap.Source\""
+    },
     "WarcraftLegacies: Test": {
       "commandName": "Project",
       "commandLineArgs": "mapdata-to-w3x WarcraftLegacies true \"..\\..\\..\\..\\..\\mapdata\\WarcraftLegacies\" \"..\\..\\..\\..\\..\\artifacts\" --sourcecodepath \"..\\..\\..\\..\\WarcraftLegacies.Source\" --set-map-titles True"
