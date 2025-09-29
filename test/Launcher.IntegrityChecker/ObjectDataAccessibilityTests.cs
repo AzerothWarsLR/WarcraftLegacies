@@ -51,6 +51,32 @@ public sealed class ObjectDataAccessibilityTests : IClassFixture<MapTestFixture>
     throw new XunitException(exceptionMessageBuilder.ToString());
   }
 
+  [Fact]
+  public void AllUnits_CanBeTrained()
+  {
+    if (_inaccesibleObjects.Units.Count <= 0)
+    {
+      return;
+    }
+
+    var unitsToCheck = _inaccesibleObjects.Units.ToList();
+
+    if (unitsToCheck.Count <= 0)
+    {
+      return;
+    }
+
+    var exceptionMessageBuilder = new StringBuilder();
+    exceptionMessageBuilder.AppendLine(
+      $"There is no way to train the following {unitsToCheck.Count} units. Remove them from the map or add a way to get them.");
+
+    foreach (var unit in unitsToCheck)
+    {
+      exceptionMessageBuilder.AppendLine($"{GetReadableId(unit)} - {GetId(unit)}");
+    }
+
+    throw new XunitException(exceptionMessageBuilder.ToString());
+  }
 
   private InaccessibleObjectCollection GetInaccessibleObjects()
   {
