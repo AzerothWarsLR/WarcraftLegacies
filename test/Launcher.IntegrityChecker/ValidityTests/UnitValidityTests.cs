@@ -6,22 +6,15 @@ using War3Api.Object;
 using War3Api.Object.Abilities;
 using Xunit.Sdk;
 
-namespace Launcher.IntegrityChecker;
+namespace Launcher.IntegrityChecker.ValidityTests;
 
-public sealed class UnitValidityTests : IClassFixture<MapTestFixture>
+public sealed class UnitValidityTests(MapTestFixture mapTestFixture) : IClassFixture<MapTestFixture>
 {
-  private readonly MapTestFixture _mapTestFixture;
-
-  public UnitValidityTests(MapTestFixture mapTestFixture)
-  {
-    _mapTestFixture = mapTestFixture;
-  }
-
   [Fact]
   public void AllUnits_HaveValidFields()
   {
     var issues = new List<string>();
-    var objectDatabase = _mapTestFixture.ObjectDatabase;
+    var objectDatabase = mapTestFixture.ObjectDatabase;
 
     foreach (var unit in objectDatabase.GetUnits().ToArray())
     {
