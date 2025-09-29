@@ -41,52 +41,39 @@ public sealed class InaccessibleObjectCollection(List<Unit> units, List<Upgrade>
 
     Units.Remove(unit);
 
-    if (unit.IsTechtreeUnitsTrainedModified)
+    foreach (var trainedUnit in unit.TechtreeUnitsTrained)
     {
-      foreach (var trainedUnit in unit.TechtreeUnitsTrained)
-      {
-        RemoveWithChildren(trainedUnit);
-      }
+      RemoveWithChildren(trainedUnit);
     }
 
-    if (unit.IsTechtreeStructuresBuiltModified)
+
+    foreach (var builtStructure in unit.TechtreeStructuresBuilt)
     {
-      foreach (var builtStructure in unit.TechtreeStructuresBuilt)
-      {
-        RemoveWithChildren(builtStructure);
-      }
+      RemoveWithChildren(builtStructure);
     }
 
-    if (unit.IsTechtreeUpgradesToModified)
+
+    foreach (var upgradesTo in unit.TechtreeUpgradesTo)
     {
-      foreach (var upgradesTo in unit.TechtreeUpgradesTo)
-      {
-        RemoveWithChildren(upgradesTo);
-      }
+      RemoveWithChildren(upgradesTo);
     }
 
-    if (unit.IsTechtreeResearchesAvailableModified)
+
+    foreach (var research in unit.TechtreeResearchesAvailable)
     {
-      foreach (var research in unit.TechtreeResearchesAvailable)
-      {
-        RemoveWithChildren(research);
-      }
+      RemoveWithChildren(research);
     }
 
-    if (unit.IsAbilitiesNormalModified)
+
+    foreach (var ability in unit.AbilitiesNormal)
     {
-      foreach (var ability in unit.AbilitiesNormal)
-      {
-        RemoveWithChildren(ability);
-      }
+      RemoveWithChildren(ability);
     }
 
-    if (unit.IsAbilitiesHeroModified)
+
+    foreach (var ability in unit.AbilitiesHero)
     {
-      foreach (var ability in unit.AbilitiesHero)
-      {
-        RemoveWithChildren(ability);
-      }
+      RemoveWithChildren(ability);
     }
   }
 
