@@ -78,6 +78,33 @@ public sealed class ObjectDataAccessibilityTests : IClassFixture<MapTestFixture>
     throw new XunitException(exceptionMessageBuilder.ToString());
   }
 
+  [Fact]
+  public void AllAbilities_CanBeCast()
+  {
+    if (_inaccesibleObjects.Units.Count <= 0)
+    {
+      return;
+    }
+
+    var abilitiesToCheck = _inaccesibleObjects.Abilities.ToList();
+
+    if (abilitiesToCheck.Count <= 0)
+    {
+      return;
+    }
+
+    var exceptionMessageBuilder = new StringBuilder();
+    exceptionMessageBuilder.AppendLine(
+      $"There is no way to cast the following {abilitiesToCheck.Count} abilities. Remove them from the map or add a way to get them.");
+
+    foreach (var unit in abilitiesToCheck)
+    {
+      exceptionMessageBuilder.AppendLine($"{GetReadableId(unit)} - {GetId(unit)}");
+    }
+
+    throw new XunitException(exceptionMessageBuilder.ToString());
+  }
+
   private InaccessibleObjectCollection GetInaccessibleObjects()
   {
     var map = _mapTestFixture.Map;
@@ -85,7 +112,8 @@ public sealed class ObjectDataAccessibilityTests : IClassFixture<MapTestFixture>
 
     var inaccessibleObjects = new InaccessibleObjectCollection(
       objectDatabase.GetUnits().ToList(),
-      objectDatabase.GetUpgrades().ToList());
+      objectDatabase.GetUpgrades().ToList(),
+      objectDatabase.GetAbilities().ToList());
 
     var preplacedUnitIds = map.Units!.Units.Select(x => x.TypeId).ToHashSet();
     var preplacedUnitTypes = objectDatabase.GetUnits().Where(x => preplacedUnitIds.Contains(x.NewId)).ToList();
