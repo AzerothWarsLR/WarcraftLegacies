@@ -18,6 +18,8 @@ public sealed class MapTestFixture
 
   public string UncompiledScript { get; }
 
+  public InaccessibleObjectCollection InaccessibleObjects { get; }
+
   public MapTestFixture()
   {
     (Map, _) = MapDataProvider.GetMapData();
@@ -34,5 +36,35 @@ public sealed class MapTestFixture
     }
 
     UncompiledScript = scriptBuilder.ToString();
+
+    InaccessibleObjects = GetInaccessibleObjects();
+  }
+
+  private InaccessibleObjectCollection GetInaccessibleObjects()
+  {
+    var inaccessibleObjects = new InaccessibleObjectCollection(
+      ObjectDatabase.GetUnits().ToList(),
+      ObjectDatabase.GetUpgrades().ToList(),
+      ObjectDatabase.GetAbilities().ToList());
+
+    var preplacedUnitIds = Map.Units!.Units.Select(x => x.TypeId).ToHashSet();
+    var preplacedUnitTypes = ObjectDatabase.GetUnits().Where(x => preplacedUnitIds.Contains(x.NewId)).ToList();
+
+    foreach (var preplacedUnit in preplacedUnitTypes)
+    {
+      inaccessibleObjects.RemoveWithChildren(preplacedUnit);
+    }
+
+    var objectsInScript = inaccessibleObjects
+      .GetAllObjects()
+      .Where(x => UncompiledScript.Contains(x.GetReadableId(), StringComparison.InvariantCultureIgnoreCase))
+      .ToList();
+
+    foreach (var objectInScript in objectsInScript)
+    {
+      inaccessibleObjects.RemoveWithChildren(objectInScript);
+    }
+
+    return inaccessibleObjects;
   }
 }

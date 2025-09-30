@@ -6,21 +6,12 @@ using Xunit.Sdk;
 
 namespace Launcher.IntegrityChecker;
 
-public sealed class ObjectDataAccessibilityTests : IClassFixture<MapTestFixture>
+public sealed class ObjectDataAccessibilityTests(MapTestFixture mapTestFixture) : IClassFixture<MapTestFixture>
 {
-  private readonly MapTestFixture _mapTestFixture;
-  private readonly InaccessibleObjectCollection _inaccesibleObjects;
-
-  public ObjectDataAccessibilityTests(MapTestFixture mapTestFixture)
-  {
-    _mapTestFixture = mapTestFixture;
-    _inaccesibleObjects = GetInaccessibleObjects();
-  }
-
   [Fact]
   public void AllResearches_CanBeAccessed()
   {
-    if (_inaccesibleObjects.Upgrades.Count <= 0)
+    if (mapTestFixture.InaccessibleObjects.Upgrades.Count <= 0)
     {
       return;
     }
@@ -30,7 +21,7 @@ public sealed class ObjectDataAccessibilityTests : IClassFixture<MapTestFixture>
       "Robk"
     };
 
-    var upgradesToCheck = _inaccesibleObjects.Upgrades
+    var upgradesToCheck = mapTestFixture.InaccessibleObjects.Upgrades
       .Where(upgrade => !exceptions.Contains(GetReadableId(upgrade)))
       .ToList();
 
@@ -54,12 +45,12 @@ public sealed class ObjectDataAccessibilityTests : IClassFixture<MapTestFixture>
   [Fact]
   public void AllUnits_CanBeTrained()
   {
-    if (_inaccesibleObjects.Units.Count <= 0)
+    if (mapTestFixture.InaccessibleObjects.Units.Count <= 0)
     {
       return;
     }
 
-    var unitsToCheck = _inaccesibleObjects.Units.ToList();
+    var unitsToCheck = mapTestFixture.InaccessibleObjects.Units.ToList();
 
     if (unitsToCheck.Count <= 0)
     {
@@ -81,12 +72,12 @@ public sealed class ObjectDataAccessibilityTests : IClassFixture<MapTestFixture>
   [Fact]
   public void AllAbilities_CanBeCast()
   {
-    if (_inaccesibleObjects.Units.Count <= 0)
+    if (mapTestFixture.InaccessibleObjects.Units.Count <= 0)
     {
       return;
     }
 
-    var abilitiesToCheck = _inaccesibleObjects.Abilities.ToList();
+    var abilitiesToCheck = mapTestFixture.InaccessibleObjects.Abilities.ToList();
 
     if (abilitiesToCheck.Count <= 0)
     {
@@ -103,37 +94,6 @@ public sealed class ObjectDataAccessibilityTests : IClassFixture<MapTestFixture>
     }
 
     throw new XunitException(exceptionMessageBuilder.ToString());
-  }
-
-  private InaccessibleObjectCollection GetInaccessibleObjects()
-  {
-    var map = _mapTestFixture.Map;
-    var objectDatabase = _mapTestFixture.ObjectDatabase;
-
-    var inaccessibleObjects = new InaccessibleObjectCollection(
-      objectDatabase.GetUnits().ToList(),
-      objectDatabase.GetUpgrades().ToList(),
-      objectDatabase.GetAbilities().ToList());
-
-    var preplacedUnitIds = map.Units!.Units.Select(x => x.TypeId).ToHashSet();
-    var preplacedUnitTypes = objectDatabase.GetUnits().Where(x => preplacedUnitIds.Contains(x.NewId)).ToList();
-
-    foreach (var preplacedUnit in preplacedUnitTypes)
-    {
-      inaccessibleObjects.RemoveWithChildren(preplacedUnit);
-    }
-
-    var objectsInScript = inaccessibleObjects
-      .GetAllObjects()
-      .Where(x => _mapTestFixture.UncompiledScript.Contains(GetReadableId(x), StringComparison.InvariantCultureIgnoreCase))
-      .ToList();
-
-    foreach (var objectInScript in objectsInScript)
-    {
-      inaccessibleObjects.RemoveWithChildren(objectInScript);
-    }
-
-    return inaccessibleObjects;
   }
 
   private static int GetId(BaseObject baseObject) => baseObject.NewId != 0 ? baseObject.NewId : baseObject.OldId;
