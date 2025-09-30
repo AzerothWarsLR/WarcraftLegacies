@@ -908,7 +908,7 @@ namespace War3Api.Object
         public void AddModifications(List<LevelObjectDataModification> modifications)
         {
             foreach (var modification in modifications)
-                _modifications[modification.Id] = modification;
+                _modifications[modification.Id, modification.Level] = modification;
         }
 
         private string GetTextTooltipNormal(int level)
