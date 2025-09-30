@@ -125,7 +125,7 @@ public sealed class ObjectDataAccessibilityTests : IClassFixture<MapTestFixture>
 
     var objectsInScript = inaccessibleObjects
       .GetAllObjects()
-      .Where(x => _mapTestFixture.UncompiledScript.Contains(GetReadableId(x)))
+      .Where(x => _mapTestFixture.UncompiledScript.Contains(GetReadableId(x), StringComparison.InvariantCultureIgnoreCase))
       .ToList();
 
     foreach (var objectInScript in objectsInScript)
