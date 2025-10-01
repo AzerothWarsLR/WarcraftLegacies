@@ -1,5 +1,4 @@
-﻿using System;
-using MacroTools.Extensions;
+﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using TestMap.Source.Factions;
 
