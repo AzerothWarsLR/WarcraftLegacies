@@ -8,7 +8,11 @@ namespace Launcher.IntegrityChecker.TestSupport;
 /// <summary>
 /// Contains <see cref="BaseObject"/>s that are inaccessible to the game.
 /// </summary>
-public sealed class InaccessibleObjectCollection(List<Unit> units, List<Upgrade> upgrades, List<Ability> abilities)
+public sealed class InaccessibleObjectCollection(
+  List<Unit> units,
+  List<Upgrade> upgrades,
+  List<Ability> abilities,
+  List<Item> items)
 {
   public List<Unit> Units { get; } = units;
 
@@ -16,10 +20,16 @@ public sealed class InaccessibleObjectCollection(List<Unit> units, List<Upgrade>
 
   public List<Ability> Abilities { get; } = abilities;
 
+  public List<Item> Items { get; } = items;
+
+
   public void RemoveWithChildren(BaseObject baseObject)
   {
     switch (baseObject)
     {
+      case Item item:
+        RemoveWithChildren(item);
+        break;
       case Unit unit:
         RemoveWithChildren(unit);
         break;
@@ -77,7 +87,7 @@ public sealed class InaccessibleObjectCollection(List<Unit> units, List<Upgrade>
     }
   }
 
-  public void RemoveWithChildren(Ability ability)
+  private void RemoveWithChildren(Ability ability)
   {
     try
     {
@@ -994,6 +1004,31 @@ public sealed class InaccessibleObjectCollection(List<Unit> units, List<Upgrade>
     }
   }
 
+  private void RemoveWithChildren(Upgrade upgrade)
+  {
+    if (!Upgrades.Contains(upgrade))
+    {
+      return;
+    }
+
+    Upgrades.Remove(upgrade);
+  }
+
+  private void RemoveWithChildren(Item item)
+  {
+    if (!Items.Contains(item))
+    {
+      return;
+    }
+
+    Items.Remove(item);
+
+    foreach (var ability in item.AbilitiesAbilities)
+    {
+      RemoveWithChildren(ability);
+    }
+  }
+
   /// <summary>
   /// Returns all <see cref="BaseObject"/>s in the collection.
   /// </summary>
@@ -1003,16 +1038,7 @@ public sealed class InaccessibleObjectCollection(List<Unit> units, List<Upgrade>
     objects.AddRange(Units);
     objects.AddRange(Upgrades);
     objects.AddRange(Abilities);
+    objects.AddRange(Items);
     return objects;
-  }
-
-  private void RemoveWithChildren(Upgrade upgrade)
-  {
-    if (!Upgrades.Contains(upgrade))
-    {
-      return;
-    }
-
-    Upgrades.Remove(upgrade);
   }
 }

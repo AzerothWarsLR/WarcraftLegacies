@@ -45,7 +45,8 @@ public sealed class MapTestFixture
     var inaccessibleObjects = new InaccessibleObjectCollection(
       ObjectDatabase.GetUnits().ToList(),
       ObjectDatabase.GetUpgrades().ToList(),
-      ObjectDatabase.GetAbilities().ToList());
+      ObjectDatabase.GetAbilities().ToList(),
+      ObjectDatabase.GetItems().ToList());
 
     var preplacedUnitIds = Map.Units!.Units.Select(x => x.TypeId).ToHashSet();
     var preplacedUnitTypes = ObjectDatabase.GetUnits().Where(x => preplacedUnitIds.Contains(x.NewId)).ToList();
