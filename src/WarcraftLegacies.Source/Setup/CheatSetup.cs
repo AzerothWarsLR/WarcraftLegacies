@@ -56,7 +56,6 @@ public static class CheatSetup
       artifactSetup.RubyFragment,
       artifactSetup.ObsidianFragment
     }));
-    commandManager.Register(new PreviewForsaken());
     commandManager.Register(new CheatPingGoldMines());
     commandManager.Register(new CheatGetWaygateDestination());
     commandManager.Register(new CheatPause());

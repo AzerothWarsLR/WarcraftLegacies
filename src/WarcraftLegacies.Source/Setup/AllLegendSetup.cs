@@ -35,11 +35,6 @@ public sealed class AllLegendSetup
   public LegendFrostwolf Frostwolf { get; }
 
   /// <summary>
-  /// Contains references to all Goblin <see cref="Legend"/>s.
-  /// </summary>
-  public LegendGoblin Goblin { get; }
-
-  /// <summary>
   /// Contains references to all Ironforge <see cref="Legend"/>s.
   /// </summary>
   public LegendIronforge Ironforge { get; }
@@ -89,17 +84,11 @@ public sealed class AllLegendSetup
   /// </summary>
   public LegendWarsong Warsong { get; }
 
-  public LegendTroll Troll { get; }
-
   public LegendAhnqiraj Ahnqiraj { get; }
-
-  public LegendNazjatar Nazjatar { get; }
 
   public LegendBlackEmpire BlackEmpire { get; }
 
   public LegendSkywall Skywall { get; }
-
-  public LegendTwilight Twilight { get; }
 
   public LegendGilneas Gilneas { get; }
 
@@ -122,7 +111,6 @@ public sealed class AllLegendSetup
     Druids = new LegendDruids(preplacedUnitSystem);
     FelHorde = new LegendFelHorde(preplacedUnitSystem);
     Frostwolf = new LegendFrostwolf(preplacedUnitSystem);
-    Goblin = new LegendGoblin(preplacedUnitSystem);
     Ironforge = new LegendIronforge(preplacedUnitSystem);
     Kultiras = new LegendKultiras(preplacedUnitSystem);
     Legion = new LegendLegion(preplacedUnitSystem);
@@ -132,15 +120,12 @@ public sealed class AllLegendSetup
     Scourge = new LegendScourge(preplacedUnitSystem);
     Sentinels = new LegendSentinels(preplacedUnitSystem);
     Stormwind = new LegendStormwind(preplacedUnitSystem);
-    Troll = new LegendTroll();
     Warsong = new LegendWarsong(preplacedUnitSystem);
     Neutral = new LegendNeutral(preplacedUnitSystem);
     Gilneas = new LegendGilneas(preplacedUnitSystem);
     Ahnqiraj = new LegendAhnqiraj(preplacedUnitSystem);
-    Nazjatar = new LegendNazjatar();
     BlackEmpire = new LegendBlackEmpire(preplacedUnitSystem);
     Skywall = new LegendSkywall(preplacedUnitSystem);
-    Twilight = new LegendTwilight();
     Scarlet = new LegendScarlet(preplacedUnitSystem);
     Sunfury = new LegendSunfury(preplacedUnitSystem);
   }
@@ -155,7 +140,6 @@ public sealed class AllLegendSetup
     Druids.RegisterLegends();
     FelHorde.RegisterLegends();
     Frostwolf.RegisterLegends();
-    Goblin.RegisterLegends();
     Ironforge.RegisterLegends();
     Kultiras.RegisterLegends();
     Legion.RegisterLegends();
@@ -166,12 +150,9 @@ public sealed class AllLegendSetup
     Sentinels.RegisterLegends();
     Stormwind.RegisterLegends();
     Warsong.RegisterLegends();
-    Troll.RegisterLegends();
     Ahnqiraj.RegisterLegends();
-    Nazjatar.RegisterLegends();
     BlackEmpire.RegisterLegends();
     Skywall.RegisterLegends();
-    Twilight.RegisterLegends();
     Neutral.RegisterLegends();
     Gilneas.RegisterLegends();
     Scarlet.RegisterLegends();

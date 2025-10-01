@@ -7,13 +7,9 @@ namespace WarcraftLegacies.Source.Setup.Legends;
 public sealed class LegendFelHorde
 {
   public LegendaryHero Magtheridon { get; }
-  public LegendaryHero Zuluhed { get; }
-  public LegendaryHero Chogall { get; }
-  public LegendaryHero Nekrosh { get; }
   public LegendaryHero Rend { get; }
   public LegendaryHero Teron { get; }
   public LegendaryHero Kargath { get; }
-  public LegendaryHero Gruul { get; }
 
   public Capital BlackrockSpire { get; }
   public Capital BlackTemple { get; }
@@ -41,32 +37,11 @@ public sealed class LegendFelHorde
       UnitType = FourCC("N03D"),
     };
 
-    Zuluhed = new LegendaryHero("Zuluhed the Whacked")
-    {
-      UnitType = FourCC("O00Y")
-    };
-
-    Nekrosh = new LegendaryHero("Nek'rosh Sullcrusher")
-    {
-      UnitType = FourCC("O01Q")
-    };
-
-    Chogall = new LegendaryHero("Cho'gall")
-    {
-      UnitType = FourCC("O01P")
-    };
-
     Teron = new LegendaryHero("Teron Gorefiend")
     {
       UnitType = FourCC("U02D"),
       StartingXp = 5400,
       PlayerColor = playercolor.Maroon
-    };
-
-    Gruul = new LegendaryHero("Gruul")
-    {
-      UnitType = UNIT_E01G_GRONN_OVERLORD_FEL,
-      StartingXp = 1400,
     };
 
     BlackrockSpire = new Capital
@@ -100,13 +75,9 @@ public sealed class LegendFelHorde
   public void RegisterLegends()
   {
     LegendaryHeroManager.Register(Magtheridon);
-    LegendaryHeroManager.Register(Zuluhed);
-    LegendaryHeroManager.Register(Chogall);
-    LegendaryHeroManager.Register(Nekrosh);
     LegendaryHeroManager.Register(Rend);
     LegendaryHeroManager.Register(Teron);
     LegendaryHeroManager.Register(Kargath);
-    LegendaryHeroManager.Register(Gruul);
     CapitalManager.Register(BlackrockSpire);
     CapitalManager.Register(BlackTemple);
     CapitalManager.Register(HellfireCitadel);

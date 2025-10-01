@@ -17,7 +17,6 @@ public sealed class LegendLordaeron
   public LegendaryHero Arthas { get; }
   public LegendaryHero Mograine { get; }
   public LegendaryHero Garithos { get; }
-  public LegendaryHero Goodchild { get; }
   public Capital CapitalPalace { get; }
   public Capital Stratholme { get; }
   public Capital TyrsHand { get; }
@@ -55,12 +54,6 @@ public sealed class LegendLordaeron
     Garithos = new LegendaryHero("Garithos")
     {
       UnitType = UNIT_HLGR_GRAND_MARSHAL_SCARLET,
-      StartingXp = 2800
-    };
-
-    Goodchild = new LegendaryHero("High Commander Goodchilde")
-    {
-      UnitType = UNIT_E000_IMPROVED_ANCIENT_PROTECTOR_DRUID_TOWER,
       StartingXp = 2800
     };
 
@@ -133,7 +126,6 @@ public sealed class LegendLordaeron
     LegendaryHeroManager.Register(Arthas);
     LegendaryHeroManager.Register(Mograine);
     LegendaryHeroManager.Register(Garithos);
-    LegendaryHeroManager.Register(Goodchild);
     CapitalManager.Register(CapitalPalace);
     CapitalManager.Register(Stratholme);
     CapitalManager.Register(TyrsHand);

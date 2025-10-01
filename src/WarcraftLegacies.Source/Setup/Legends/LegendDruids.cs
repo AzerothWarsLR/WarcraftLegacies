@@ -7,7 +7,6 @@ public sealed class LegendDruids
 {
   public LegendaryHero Cenarius { get; }
   public LegendaryHero Malfurion { get; }
-  public LegendaryHero Fandral { get; }
   public LegendaryHero Ursoc { get; }
   public LegendaryHero Tortolla { get; }
   public Capital Nordrassil { get; }
@@ -36,11 +35,6 @@ public sealed class LegendDruids
       {
         new(item.Create(ITEM_I00C_G_HANIR_THE_MOTHER_TREE, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))
       }
-    };
-
-    Fandral = new LegendaryHero("Fandral")
-    {
-      UnitType = FourCC("E00K")
     };
 
     Ursoc = new LegendaryHero("Ursoc")
@@ -85,7 +79,6 @@ public sealed class LegendDruids
   {
     LegendaryHeroManager.Register(Cenarius);
     LegendaryHeroManager.Register(Malfurion);
-    LegendaryHeroManager.Register(Fandral);
     LegendaryHeroManager.Register(Ursoc);
     LegendaryHeroManager.Register(Tortolla);
     CapitalManager.Register(Nordrassil);

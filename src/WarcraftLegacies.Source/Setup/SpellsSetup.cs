@@ -1,5 +1,4 @@
-﻿using MacroTools.PassiveAbilities;
-using MacroTools.PassiveAbilitySystem;
+﻿using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.PassiveAbilities.Vengeance;
@@ -56,15 +55,6 @@ public static class SpellsSetup
     SpellSystem.Register(massEnrage);
 
 
-    var thunderFists = new SpellOnAttack(UNIT_O01P_LEADER_OF_THE_TWILIGHT_S_HAMMER_TWILIGHT_HAMMER,
-      ABILITY_A0LN_THUNDER_FISTS_CHO_GALL)
-    {
-      DummyAbilityId = ABILITY_A024_THUNDER_FISTS_CHO_GALL_DUMMY_CAST,
-      DummyOrderId = ORDER_FORKED_LIGHTNING,
-      ProcChance = 0.15f
-    };
-    PassiveAbilityManager.Register(thunderFists);
-
     var seismicShard = new MassAnySpell(ABILITY_A0OD_SEISMIC_SHARD_AZIL)
     {
       DummyAbilityId = ABILITY_A0OE_SEISMIC_SHARD_AZIL_DUMMY,
@@ -107,14 +97,12 @@ public static class SpellsSetup
 
     FrostwolfSpellSetup.Setup();
     LegionSpellSetup.Setup();
-    GoblinSpellSetup.Setup();
     ScourgeSpellSetup.Setup();
     LordaeronSpellSetup.Setup();
     DruidsSpellSetup.Setup();
     QuelthalasSpellSetup.Setup();
     KulTirasSpellSetup.Setup();
     StormwindSpellSetup.Setup();
-    DragonmawSpellSetup.Setup();
     IllidariSpellSetup.Setup();
     FelHordeSpellSetup.Setup();
     DraeneiSpellSetup.Setup();
@@ -123,7 +111,6 @@ public static class SpellsSetup
     SentinelSpellSetup.Setup();
     ScarletSpellSetup.Setup();
     DalaranSpellSetup.Setup();
-    TrollSpellSetup.Setup();
     GilneasSpellSetup.Setup();
     SharedSpellSetup.Setup();
   }

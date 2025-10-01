@@ -25,11 +25,6 @@ public sealed class LegendIllidan
     StartingXp = 5400
   };
 
-  public LegendaryHero Azshara { get; } = new("Azshara")
-  {
-    UnitType = FourCC("H08U")
-  };
-
   public LegendaryHero Akama { get; } = new("Akama")
   {
     UnitType = FourCC("Naka"),
@@ -41,7 +36,6 @@ public sealed class LegendIllidan
     LegendaryHeroManager.Register(Illidan);
     LegendaryHeroManager.Register(Vashj);
     LegendaryHeroManager.Register(Najentus);
-    LegendaryHeroManager.Register(Azshara);
     LegendaryHeroManager.Register(Akama);
   }
 }

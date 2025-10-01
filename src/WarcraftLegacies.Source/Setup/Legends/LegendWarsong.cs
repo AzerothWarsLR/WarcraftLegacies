@@ -14,8 +14,6 @@ public sealed class LegendWarsong
   public Capital StonemaulKeep { get; }
   public Capital Orgrimmar { get; }
 
-  //public Capital LumberCamp { get; }
-
   public LegendWarsong(PreplacedUnitSystem preplacedUnitSystem)
   {
     GromHellscream = new LegendaryHero("Grom Hellscream")
@@ -72,12 +70,6 @@ public sealed class LegendWarsong
       DeathMessage = "Orgrimmar has been demolished and with it die the hopes and dreams of a wartorn race seeking refuge in a new world.",
       Essential = true
     };
-
-    //LumberCamp = new Capital
-    //{
-    // Unit = preplacedUnitSystem.GetUnit(Constants.UNIT_O05R_WARSONG_LUMBER_CAMP_WARSONG),
-    // Essential = true
-    //};
   }
 
   public void RegisterLegends()
@@ -90,6 +82,5 @@ public sealed class LegendWarsong
     LegendaryHeroManager.Register(Gargok);
     CapitalManager.Register(StonemaulKeep);
     CapitalManager.Register(Orgrimmar);
-    //CapitalManager.Register(LumberCamp);
   }
 }
