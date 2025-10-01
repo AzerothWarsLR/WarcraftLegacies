@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using Launcher.Extensions;
 using Launcher.IntegrityChecker.TestSupport;
 using War3Api.Object;
 using War3Net.Common.Extensions;
@@ -37,6 +38,8 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture mapTestFixture) 
     foreach (var upgrade in upgradesToCheck)
     {
       exceptionMessageBuilder.AppendLine($"{GetReadableId(upgrade)} - {GetId(upgrade)}");
+      File.Delete($"../../../../../mapdata/WarcraftLegacies/UpgradeData/Core/{upgrade.GetId()}.json");
+      File.Delete($"../../../../../mapdata/WarcraftLegacies/UpgradeData/Skin/{upgrade.GetId()}.json");
     }
 
     throw new XunitException(exceptionMessageBuilder.ToString());
@@ -63,6 +66,8 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture mapTestFixture) 
 
     foreach (var unit in unitsToCheck)
     {
+      File.Delete($"../../../../../mapdata/WarcraftLegacies/UnitData/Core/{unit.GetReadableId()}.json");
+      File.Delete($"../../../../../mapdata/WarcraftLegacies/UnitData/Skin/{unit.GetReadableId()}.json");
       exceptionMessageBuilder.AppendLine($"{GetReadableId(unit)} - {GetId(unit)}");
     }
 
@@ -90,6 +95,8 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture mapTestFixture) 
 
     foreach (var unit in abilitiesToCheck)
     {
+      File.Delete($"../../../../../mapdata/WarcraftLegacies/AbilityData/Core/{unit.GetId()}.json");
+      File.Delete($"../../../../../mapdata/WarcraftLegacies/AbilityData/Skin/{unit.GetId()}.json");
       exceptionMessageBuilder.AppendLine($"{GetReadableId(unit)} - {GetId(unit)}");
     }
 
