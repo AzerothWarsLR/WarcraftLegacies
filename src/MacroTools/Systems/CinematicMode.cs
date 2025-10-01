@@ -102,7 +102,11 @@ public static class CinematicMode
   {
     foreach (var player in Util.EnumeratePlayers())
     {
-      player.PlayMusicThematic(player.GetFaction().CinematicMusic);
+      var faction = player.GetFaction();
+      if (faction != null)
+      {
+        player.PlayMusicThematic(faction.CinematicMusic);
+      }
     }
   }
 }
