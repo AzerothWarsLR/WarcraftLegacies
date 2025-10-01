@@ -13,7 +13,7 @@
     "TypeId": 1650615150,
     "Position": {
       "X": 9024,
-      "Y": -10240
+      "Y": -10432
     },
     "Rotation": 4.71238899230957,
     "Scale": {
@@ -24,7 +24,7 @@
     "SkinId": 1650615150,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 1126
+    "CreationNumber": 1115
   },
   {
     "Flags": 2,
@@ -40,7 +40,7 @@
     "TypeId": 1650615150,
     "Position": {
       "X": 9024,
-      "Y": -10432
+      "Y": -10240
     },
     "Rotation": 4.71238899230957,
     "Scale": {
@@ -51,6 +51,6 @@
     "SkinId": 1650615150,
     "MapItemTableId": -1,
     "ItemTableSets": [],
-    "CreationNumber": 1115
+    "CreationNumber": 1126
   }
 ]
