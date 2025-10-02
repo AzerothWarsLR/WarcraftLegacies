@@ -58,7 +58,12 @@
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Upgrade to Fortress to enable the production of additional types of structures and units."
+      "Value": ""
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": ""
     }
   ]
 }
