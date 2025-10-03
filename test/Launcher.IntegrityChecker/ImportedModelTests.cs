@@ -6,53 +6,33 @@ using War3Net.Build.Object;
 
 namespace Launcher.IntegrityChecker;
 
-public sealed class ImportedModelTests : IClassFixture<MapTestFixture>
+public sealed class ImportedModelTests(MapTestFixture mapTestFixture) : IClassFixture<MapTestFixture>
 {
-  private readonly MapTestFixture _mapTestFixture;
-
-  public ImportedModelTests(MapTestFixture mapTestFixture)
+  [Fact]
+  public void AllModels_AreInActiveUse()
   {
-    _mapTestFixture = mapTestFixture;
-  }
+    var excludedModels = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "war3mapimported\\orbofwind.mdx", };
 
-  [Theory]
-  [MemberData(nameof(GetAllImportedModels))]
-  public void AllModels_AreInActiveUse(string relativePath)
-  {
-    var excludedModels = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
-    {
-      "war3mapimported\\orbofwind.mdx",
-    };
-
-    if (excludedModels.Contains(relativePath))
-    {
-      return;
-    }
-
-
-    var activeModels = GetModelsUsedInMap(_mapTestFixture.Map).OrderBy(x => x).ToHashSet();
-    activeModels.Contains(relativePath).Should().BeTrue($"the model {relativePath} exists in the map so it should be used by an ability, doodad, buff, destructable, or script");
-  }
-
-  public static IEnumerable<object[]> GetAllImportedModels()
-  {
     var (_, additionalFiles) = MapDataProvider.GetMapData();
 
-    if (!additionalFiles.Any())
-    {
-      throw new InvalidOperationException($"{nameof(MapDataProvider)} returned no additional files to test.");
-    }
+    var importedModels = additionalFiles
+      .Where(f => f.RelativePath.IsModelPath())
+      .Select(f => f.RelativePath.NormalizeModelPath())
+      .Where(path => !excludedModels.Contains(path))
+      .OrderBy(x => x)
+      .ToList();
 
-    foreach (var pathData in MapDataProvider.GetMapData().AdditionalFiles)
-    {
-      if (pathData.RelativePath.IsModelPath())
-      {
-        yield return new object[]
-        {
-          pathData.RelativePath.NormalizeModelPath()
-        };
-      }
-    }
+    var activeModels = GetModelsUsedInMap(mapTestFixture.Map).OrderBy(x => x).ToHashSet();
+
+    var unusedModels = importedModels
+      .Where(model => !activeModels.Contains(model))
+      .ToList();
+
+    unusedModels.Should().BeEmpty(
+      "every imported model should be used by an ability, doodad, buff, destructable, or script.{0}",
+      unusedModels.Count != 0
+        ? $" Unused models: {string.Join(", ", unusedModels)}"
+        : string.Empty);
   }
 
   private static IEnumerable<string> GetModelsUsedInMap(Map map)
@@ -66,7 +46,7 @@ public sealed class ImportedModelTests : IClassFixture<MapTestFixture>
       .Select(x => x.NormalizeModelPath());
   }
 
-  private static IEnumerable<string> GetModelsUsedByUnits(UnitObjectData unitObjectData)
+  private static List<string> GetModelsUsedByUnits(UnitObjectData unitObjectData)
   {
     return unitObjectData.BaseUnits
       .Concat(unitObjectData.NewUnits)
@@ -76,7 +56,7 @@ public sealed class ImportedModelTests : IClassFixture<MapTestFixture>
       .ToList();
   }
 
-  private static IEnumerable<string> GetModelsUsedByAbilities(AbilityObjectData abilityObjectData)
+  private static List<string> GetModelsUsedByAbilities(AbilityObjectData abilityObjectData)
   {
     return abilityObjectData.BaseAbilities
       .Concat(abilityObjectData.NewAbilities)
@@ -86,7 +66,7 @@ public sealed class ImportedModelTests : IClassFixture<MapTestFixture>
       .ToList();
   }
 
-  private static IEnumerable<string> GetModelsUsedByDoodads(DoodadObjectData doodadObjectData)
+  private static List<string> GetModelsUsedByDoodads(DoodadObjectData doodadObjectData)
   {
     return doodadObjectData.BaseDoodads
       .Concat(doodadObjectData.NewDoodads)
@@ -96,7 +76,7 @@ public sealed class ImportedModelTests : IClassFixture<MapTestFixture>
       .ToList();
   }
 
-  private static IEnumerable<string> GetModelsUsedByDestructables(DestructableObjectData destructableObjectData)
+  private static List<string> GetModelsUsedByDestructables(DestructableObjectData destructableObjectData)
   {
     return destructableObjectData.BaseDestructables
       .Concat(destructableObjectData.NewDestructables)
@@ -106,7 +86,7 @@ public sealed class ImportedModelTests : IClassFixture<MapTestFixture>
       .ToList();
   }
 
-  private static IEnumerable<string> GetModelsUsedByBuffs(BuffObjectData buffObjectData)
+  private static List<string> GetModelsUsedByBuffs(BuffObjectData buffObjectData)
   {
     return buffObjectData.BaseBuffs
       .Concat(buffObjectData.NewBuffs)
