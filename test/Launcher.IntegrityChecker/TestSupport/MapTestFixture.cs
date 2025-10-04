@@ -4,6 +4,7 @@ using Launcher.Services;
 using Launcher.Settings;
 using War3Api.Object;
 using War3Net.Build;
+using War3Net.CodeAnalysis.Jass.Extensions;
 
 namespace Launcher.IntegrityChecker.TestSupport;
 
@@ -12,6 +13,11 @@ namespace Launcher.IntegrityChecker.TestSupport;
 /// </summary>
 public sealed class MapTestFixture
 {
+  private static readonly int[] _utilityUnitIds =
+  [
+      Constants.UNIT_U00X_DUMMY_CASTER
+  ];
+
   public Map Map { get; }
 
   public ObjectDatabase ObjectDatabase { get; }
@@ -43,7 +49,7 @@ public sealed class MapTestFixture
   private InaccessibleObjectCollection GetInaccessibleObjects()
   {
     var inaccessibleObjects = new InaccessibleObjectCollection(
-      ObjectDatabase.GetUnits().ToList(),
+      ObjectDatabase.GetUnits().Where(u => !IsUtilityUnit(u)).ToList(),
       ObjectDatabase.GetUpgrades().ToList(),
       ObjectDatabase.GetAbilities().ToList(),
       ObjectDatabase.GetItems().ToList());
@@ -67,5 +73,10 @@ public sealed class MapTestFixture
     }
 
     return inaccessibleObjects;
+  }
+
+  private static bool IsUtilityUnit(Unit unit)
+  {
+    return _utilityUnitIds.Contains(unit.NewId.InvertEndianness());
   }
 }
