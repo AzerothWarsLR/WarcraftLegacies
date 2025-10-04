@@ -44,46 +44,53 @@ public sealed class InaccessibleObjectCollection(
 
   public void RemoveWithChildren(Unit unit)
   {
-    if (!Units.Contains(unit))
+    try
     {
-      return;
+      if (!Units.Contains(unit))
+      {
+        return;
+      }
+
+      Units.Remove(unit);
+
+      foreach (var trainedUnit in unit.TechtreeUnitsTrained)
+      {
+        RemoveWithChildren(trainedUnit);
+      }
+
+
+      foreach (var builtStructure in unit.TechtreeStructuresBuilt)
+      {
+        RemoveWithChildren(builtStructure);
+      }
+
+
+      foreach (var upgradesTo in unit.TechtreeUpgradesTo)
+      {
+        RemoveWithChildren(upgradesTo);
+      }
+
+
+      foreach (var research in unit.TechtreeResearchesAvailable)
+      {
+        RemoveWithChildren(research);
+      }
+
+
+      foreach (var ability in unit.AbilitiesNormal)
+      {
+        RemoveWithChildren(ability);
+      }
+
+
+      foreach (var ability in unit.AbilitiesHero)
+      {
+        RemoveWithChildren(ability);
+      }
     }
-
-    Units.Remove(unit);
-
-    foreach (var trainedUnit in unit.TechtreeUnitsTrained)
+    catch (Exception ex)
     {
-      RemoveWithChildren(trainedUnit);
-    }
-
-
-    foreach (var builtStructure in unit.TechtreeStructuresBuilt)
-    {
-      RemoveWithChildren(builtStructure);
-    }
-
-
-    foreach (var upgradesTo in unit.TechtreeUpgradesTo)
-    {
-      RemoveWithChildren(upgradesTo);
-    }
-
-
-    foreach (var research in unit.TechtreeResearchesAvailable)
-    {
-      RemoveWithChildren(research);
-    }
-
-
-    foreach (var ability in unit.AbilitiesNormal)
-    {
-      RemoveWithChildren(ability);
-    }
-
-
-    foreach (var ability in unit.AbilitiesHero)
-    {
-      RemoveWithChildren(ability);
+      throw new UnremovedObjectException($"Could not remove unit {unit.GetReadableId()} - {unit.GetId()}", ex);
     }
   }
 
