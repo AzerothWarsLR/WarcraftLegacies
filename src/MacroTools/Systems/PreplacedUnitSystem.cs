@@ -133,7 +133,6 @@ public sealed class PreplacedUnitSystem
     }
 
     destructables.Add(destructable);
-    DestructibleHider.Register(destructable);
   }
 
   private void ReadAllUnits()
