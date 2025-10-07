@@ -16,7 +16,7 @@ public static class StormwindSpellSetup
   /// </summary>
   public static void Setup()
   {
-    var legendaryWarrior = new ChannelSpellOnAttack(UNIT_H00R_KING_OF_STORMWIND_DARK_GREEN,
+    var legendaryWarrior = new ChannelSpellOnAttack(UNIT_H00R_KING_OF_STORMWIND_STORMWIND,
       ABILITY_A12C_LEGENDARY_WARRIOR_VARIAN)
     {
       DummyAbilityId = ABILITY_A12D_LEGENDARY_WARRIOR_STORMWIND_DUMMY,

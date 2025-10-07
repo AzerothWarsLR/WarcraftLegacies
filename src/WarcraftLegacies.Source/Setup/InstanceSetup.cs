@@ -22,10 +22,10 @@ public static class InstanceSetup
       new Instance(Regions.InstanceOutland)
     );
 
-    var proudmooreFlagshipUnit = preplacedUnitSystem.GetUnit(UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS);
+    var proudmooreFlagshipUnit = preplacedUnitSystem.GetUnit(UNIT_H05V_PROUDMOORE_FLAGSHIP_KULTIRAS);
     var proudmooreFlagshipInterior = new Instance(Regions.ShipAmbient);
     proudmooreFlagshipInterior.AddDependency(proudmooreFlagshipUnit);
-    proudmooreFlagshipInterior.AddDependency(preplacedUnitSystem.GetUnit(UNIT_H09D_FLEETMASTER_S_TABLE_KUL_TIRAS_OTHER));
+    proudmooreFlagshipInterior.AddDependency(preplacedUnitSystem.GetUnit(UNIT_H09D_FLEETMASTER_S_TABLE_KULTIRAS_OTHER));
     proudmooreFlagshipInterior.AddGate(new Gate(
       () => Regions.ShipInside.Center,
       () => proudmooreFlagshipUnit.GetPosition()));

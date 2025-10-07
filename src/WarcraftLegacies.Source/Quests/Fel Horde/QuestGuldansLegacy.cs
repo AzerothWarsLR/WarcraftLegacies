@@ -10,7 +10,7 @@ public sealed class QuestGuldansLegacy : QuestData
 {
   /// <inheritdoc/>
   protected override string RewardDescription =>
-    $"Learn to research {GetObjectName(UPGRADE_R03O_BLOOD_RUNES_FEL_HORDE)} from the {GetObjectName(UNIT_O031_WAR_MILL_FEL_HORDE_RESEARCH)}";
+    $"Learn to research {GetObjectName(UPGRADE_R03O_BLOOD_RUNES_FEL_HORDE)} from the {GetObjectName(UNIT_O031_WAR_MILL_FEL_RESEARCH)}";
 
   /// <inheritdoc/>
   public override string RewardFlavour =>

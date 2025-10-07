@@ -6,7 +6,7 @@ public sealed class LegendIllidan
 {
   public LegendaryHero Illidan { get; } = new("Illidan")
   {
-    UnitType = UNIT_EEVI_DEMON_HUNTER_HYBRID_ILLIDARI,
+    UnitType = UNIT_EEVI_DEMON_HUNTER_ILLIDARI_HYBRID_ILLIDAN,
     StartingArtifacts = new()
     {
       new(item.Create(ITEM_I007_SKULL_OF_GUL_DAN, Regions.ArtifactDummyInstance.Center.X, Regions.ArtifactDummyInstance.Center.Y))

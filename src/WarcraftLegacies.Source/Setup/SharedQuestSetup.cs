@@ -34,10 +34,10 @@ public static class SharedQuestSetup
 
   private static QuestDragonsOfNightmare CreateDragonsOfNightmareQuest(PreplacedUnitSystem preplacedUnitSystem)
   {
-    var waygateOne = preplacedUnitSystem.GetUnit(UNIT_N07F_EMERALD_PORTAL_DRAGON_PORTALS, Regions.FeralasEmeraldPortal.Center);
+    var waygateOne = preplacedUnitSystem.GetUnit(UNIT_N07F_EMERALD_PORTAL_PORTAL, Regions.FeralasEmeraldPortal.Center);
     waygateOne.IsVisible = false;
 
-    var waygateTwo = preplacedUnitSystem.GetUnit(UNIT_N07F_EMERALD_PORTAL_DRAGON_PORTALS, Regions.AshenvaleEmeraldPortal.Center);
+    var waygateTwo = preplacedUnitSystem.GetUnit(UNIT_N07F_EMERALD_PORTAL_PORTAL, Regions.AshenvaleEmeraldPortal.Center);
     waygateTwo.IsVisible = false;
 
     var dragonEk = preplacedUnitSystem.GetUnit(UNIT_N04X_YSONDRE);
@@ -48,13 +48,13 @@ public static class SharedQuestSetup
   private static QuestRagnaros CreateRagnarosQuest(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup)
   {
     return new QuestRagnaros(allLegendSetup.Neutral.Ragnaros,
-      preplacedUnitSystem.GetUnit(UNIT_N02B_RAGNAROS_SUMMONING_PEDESTAL_PEDESTAL));
+      preplacedUnitSystem.GetUnit(UNIT_N02B_RAGNAROS_SUMMONING_PEDESTAL_NEUTRAL));
   }
 
   private static QuestYoggSaron CreateYoggSaronQuest(PreplacedUnitSystem preplacedUnitSystem, AllLegendSetup allLegendSetup)
   {
     return new QuestYoggSaron(allLegendSetup.Neutral.YoggSaron,
-      preplacedUnitSystem.GetUnit(UNIT_YLL4_YOGG_SARON_S_PRISON_PEDESTAL));
+      preplacedUnitSystem.GetUnit(UNIT_YLL4_YOGG_SARON_S_PRISON_CREEP));
   }
 
   private static QuestTombOfSargeras CreateTombOfSargerasQuest(PreplacedUnitSystem preplacedUnitSystem)
@@ -70,7 +70,7 @@ public static class SharedQuestSetup
           Regions.TombOfSargerasInteriorF,
           Regions.TombOfSargerasInteriorG,
           Regions.TombOfSargerasInteriorH
-        }, Regions.Sargeras_Entrance, preplacedUnitSystem.GetUnit(UNIT_H00K_HORIZONTAL_WOODEN_GATE_CLOSED, Regions.Sargeras_Entrance.Center)
+        }, Regions.Sargeras_Entrance, preplacedUnitSystem.GetUnit(UNIT_H00K_HORIZONTAL_WOODEN_GATE_GATE_CLOSED, Regions.Sargeras_Entrance.Center)
         , preplacedUnitSystem.GetUnit(UNIT_O01U_GUL_DAN_S_REMAINS));
   }
 }

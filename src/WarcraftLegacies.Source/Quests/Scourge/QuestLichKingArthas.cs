@@ -81,7 +81,7 @@ public sealed class QuestLichKingArthas : QuestData
           UNIT_U012_HALF_GHOUL_SCOURGE,
           UNIT_UABO_ABOMINATION_SCOURGE,
           UNIT_UFRO_FROST_WYRM_SCOURGE,
-          UNIT_UCRM_BURROWED_CRYPT_FIEND_RED,
+          UNIT_UCRM_BURROWED_CRYPT_FIEND_SCOURGE,
           UNIT_UCRY_CRYPT_FIEND_SCOURGE
         },
         IconName = "Revenant"

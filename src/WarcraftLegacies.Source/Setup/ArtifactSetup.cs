@@ -176,7 +176,7 @@ public sealed class ArtifactSetup
     ArtifactManager.Register(tempArtifact);
 
     SunwellVial = new Artifact(item.Create(ITEM_I018_VIAL_OF_THE_SUNWELL, DummyX, DummyX));
-    var sunwell = preplacedUnitSystem.GetUnit(UNIT_N001_THE_SUNWELL_QUEL_THALAS_OTHER);
+    var sunwell = preplacedUnitSystem.GetUnit(UNIT_N001_THE_SUNWELL_QUELTHALAS_OTHER);
     sunwell.AddAbility(Artifact.ArtifactHolderAbilId);
     sunwell.AddItem(SunwellVial.Item);
     ArtifactManager.Register(SunwellVial);

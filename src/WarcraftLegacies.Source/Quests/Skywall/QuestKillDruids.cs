@@ -9,8 +9,8 @@ namespace WarcraftLegacies.Source.Quests.Skywall;
 public sealed class QuestKillDruids : QuestData
 {
   private const int LimitChange = 2;
-  private static readonly int _unittypeId1 = Constants.UNIT_U02P_DJINN_ELEMENTAL;
-  private static readonly int _unittypeId2 = Constants.UNIT_LS06_EFREET_ELEMENTAL;
+  private static readonly int _unittypeId1 = UNIT_U02P_DJINN_SKYWALL;
+  private static readonly int _unittypeId2 = UNIT_LS06_EFREET_SKYWALL;
 
   /// <inheritdoc/>
   public override string RewardFlavour =>
@@ -18,7 +18,7 @@ public sealed class QuestKillDruids : QuestData
 
   /// <inheritdoc/>
   protected override string RewardDescription =>
-    $"Harness the magical essence of Nordrassil to empower your forces and unlocks the {GetObjectName(Constants.ABILITY_A0Y6_WATER_PRISON_ELEMENTAL_LORD)} for {GetObjectName(Constants.UNIT_N08S_ELEMENTAL_LORD_ELEMENTAL)}. The training limit of {GetObjectName(Constants.UNIT_U02P_DJINN_ELEMENTAL)}'s and {GetObjectName(Constants.UNIT_LS06_EFREET_ELEMENTAL)}'s is increased from 4 to 6.";
+    $"Harness the magical essence of Nordrassil to empower your forces and unlocks the {GetObjectName(ABILITY_A0Y6_WATER_PRISON_ELEMENTAL_LORD)} for {GetObjectName(UNIT_N08S_ELEMENTAL_LORD_SKYWALL)}. The training limit of {GetObjectName(UNIT_U02P_DJINN_SKYWALL)}'s and {GetObjectName(UNIT_LS06_EFREET_SKYWALL)}'s is increased from 4 to 6";
 
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestKillDruids"/> class.
@@ -31,7 +31,7 @@ public sealed class QuestKillDruids : QuestData
     ResearchId = Constants.UPGRADE_R01G_QUEST_COMPLETED_DRUIDS_DEMISE;
   }
 
-  /// <inheritdoc/> 
+  /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
     completingFaction.ModObjectLimit(_unittypeId1, LimitChange);

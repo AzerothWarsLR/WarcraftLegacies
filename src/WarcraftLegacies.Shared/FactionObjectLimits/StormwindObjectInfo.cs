@@ -51,8 +51,8 @@ public static class StormwindObjectInfo
     yield return new(UNIT_H0AN_JUGGERNAUT_ALLIANCE, Unlimited);
     yield return new(UNIT_H0B7_BOMBARD_ALLIANCE, 6);
     yield return new(UNIT_H060_CARRIER_FLAGSHIP_STORMWIND, 3);
-    yield return new(UNIT_H00R_KING_OF_STORMWIND_DARK_GREEN, 1);
-    yield return new(UNIT_H017_HIGHLORD_OF_THE_ALLIANCE_DARK_GREEN, 1);
+    yield return new(UNIT_H00R_KING_OF_STORMWIND_STORMWIND, 1);
+    yield return new(UNIT_H017_HIGHLORD_OF_THE_ALLIANCE_STORMWIND, 1);
     yield return new(UNIT_H05Y_LORD_WIZARD_STORMWIND, 1);
     yield return new(UNIT_H00Z_CROWN_PRINCE_OF_STROMGARDE_STORMWIND, 1);
     yield return new(UPGRADE_R02E_LIGHT_S_PRAISE_MASTER_TRAINING_ARATHOR_LORDAERON, Unlimited);

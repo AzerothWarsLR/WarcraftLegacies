@@ -106,7 +106,7 @@ public sealed class QuestFirelandInvasion : QuestData
       var position = invasionRect.GetRandomPoint();
       position.RemoveDestructablesInRadius(250f);
 
-      unit.Create(secondaryInvasionPlayer, UNIT_U019_WORKER_C_THUN_WORKER, position.X, position.Y, 0);
+      unit.Create(secondaryInvasionPlayer, UNIT_U019_WORKER_CTHUN_WORKER, position.X, position.Y, 0);
 
       var attackTarget = _invasionParameters.AttackTargets
         .OrderBy(x => MathEx.GetDistanceBetweenPoints(position, x))

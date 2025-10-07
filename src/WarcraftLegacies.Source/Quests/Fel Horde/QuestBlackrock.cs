@@ -30,7 +30,7 @@ public sealed class QuestBlackrock : QuestData
       AddObjective(new ObjectiveQuestComplete(prequisite));
     }
 
-    AddObjective(new ObjectiveResearch(UPGRADE_R090_ACTIVATE_THE_BLACKROCK_CLAN_FEL, UNIT_O008_HELLFIRE_CITADEL_FEL_HORDE));
+    AddObjective(new ObjectiveResearch(UPGRADE_R090_ACTIVATE_THE_BLACKROCK_CLAN_FEL, UNIT_O008_HELLFIRE_CITADEL_FEL));
     AddObjective(new ObjectiveTime(540));
     AddObjective(new ObjectiveExpire(900, Title));
     AddObjective(new ObjectiveSelfExists());

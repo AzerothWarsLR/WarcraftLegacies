@@ -28,7 +28,6 @@ public static class LegionObjectInfo
     yield return new(UNIT_N04P_EREDAR_SUMMONER_LEGION, Unlimited); // Warlock Caster 1
     yield return new(UNIT_NINC_BURNING_ARCHER_LEGION, Unlimited); // Archer
     yield return new(UNIT_N04K_SUCCUBUS_LEGION, Unlimited); // Succubus Caster 2
-    yield return new(UNIT_N04J_IMP_LEGION, Unlimited); //Imp summon?
     yield return new(UNIT_N0DO_DOOM_GUARD_LEGION, 12); // Doom Guard
     yield return new(UNIT_N04O_DOOM_LORD_LEGION, 6); // Doom Lord
     yield return new(UNIT_N04L_INFERNAL_JUGGERNAUT_LEGION, 6); // Infernal Juggernaut
@@ -41,19 +40,13 @@ public static class LegionObjectInfo
     yield return new(UNIT_UTIC_THE_DARKENER_LEGION, 1); // Tichondrius
     yield return new(UNIT_U00L_ENVOY_OF_ARCHIMONDE_LEGION, 1); // Anetheron
     yield return new(UNIT_UBOT_HAUNTED_TRANSPORT_SHIP_SCOURGE_LEGION, Unlimited);
-    yield return new(UNIT_H0AT_SCOUT_SHIP_UNDEAD, Unlimited);
-    yield return new(UNIT_H0AW_FRIGATE_UNDEAD, Unlimited);
-    yield return new(UNIT_H0AM_FIRESHIP_UNDEAD, Unlimited);
-    yield return new(UNIT_H0AZ_GALLEY_UNDEAD, Unlimited);
-    yield return new(UNIT_H0AQ_BOARDING_VESSEL_UNDEAD, Unlimited);
-    yield return new(UNIT_H0BB_JUGGERNAUT_UNDEAD, Unlimited);
-    yield return new(UNIT_H0B9_BOMBARD_UNDEAD, 6);
-    yield return new(UNIT_N05R_FELGUARD_DEMON_GATE_T2_BLOODFIEND, 1);
-    yield return new(UNIT_N06H_PIT_FIEND_DEMON_GATE_T2_PITFIEND, 1);
-    yield return new(UNIT_N07B_QUEEN_OF_SUFFERING_DEMON_GATE_T3_QUEEN_SUFFERING, 1);
-    yield return new(UNIT_N07D_MAIDEN_OF_DOMINANCE_DEMON_GATE_T3_MAIDEN, 1);
-    yield return new(UNIT_N07O_TERRORGUARD_DEMON_GATE_T2_TERROR_GUARD, 1);
-    yield return new(UNIT_N07N_PAVILION_ELEMENTAL_MAGIC, 1);
+    yield return new(UNIT_H0AT_SCOUT_SHIP_EVIL, Unlimited);
+    yield return new(UNIT_H0AW_FRIGATE_EVIL, Unlimited);
+    yield return new(UNIT_H0AM_FIRESHIP_EVIL, Unlimited);
+    yield return new(UNIT_H0AZ_GALLEY_EVIL, Unlimited);
+    yield return new(UNIT_H0AQ_BOARDING_VESSEL_EVIL, Unlimited);
+    yield return new(UNIT_H0BB_JUGGERNAUT_EVIL, Unlimited);
+    yield return new(UNIT_H0B9_BOMBARD_EVIL, 6);
     yield return new(UPGRADE_R02C_THE_DARK_PORTAL_FEL_HORDE, Unlimited);
     yield return new(UPGRADE_R028_SUCCUBIS_MASTER_TRAINING_LEGION, Unlimited);
     yield return new(UPGRADE_R042_NATHREZIM_WARLOCK_MASTER_TRAINING_LEGION, Unlimited);

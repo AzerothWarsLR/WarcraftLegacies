@@ -60,7 +60,7 @@ public sealed class LegendDruids
     {
       Capturable = true,
       Essential = true,
-      Unit = preplacedUnitSystem.GetUnit(UNIT_N06D_CENARION_HOLD_SENTINEL_OTHER)
+      Unit = preplacedUnitSystem.GetUnit(UNIT_N06D_CENARION_HOLD_SENTINELS_OTHER)
     };
 
     TempleOfTheMoon = new Capital

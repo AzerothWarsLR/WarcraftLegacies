@@ -60,7 +60,7 @@ public sealed class QuestKelthuzadLich : QuestData
       _sunwell.Unit.RemoveAbility(ABILITY_A0EP_SUMMON_GRANITE_GOLEMS_QUEL_THALAS_SUNWELL);
       _sunwell.Unit.AddAbility(ABILITY_A00D_DESTROY_THE_CORRUPTED_SUNWELL_QUEL_THALAS_SUNWELL);
       _sunwell.Unit.MaxMana = 0;
-      _sunwell.Unit.Skin = UNIT_N079_THE_SUNWELL_CORRUPTED_QUEL_THALAS_OTHER;
+      _sunwell.Unit.Skin = UNIT_N079_THE_SUNWELL_CORRUPTED_QUELTHALAS_OTHER;
       _sunwell.Unit.Name = "Corrupted Sunwell";
     }
 

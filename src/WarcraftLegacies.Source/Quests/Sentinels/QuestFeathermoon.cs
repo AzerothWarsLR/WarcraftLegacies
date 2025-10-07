@@ -34,7 +34,7 @@ public sealed class QuestFeathermoon : QuestData
     "The Sentinels have rebuilt Feathermoon Stronghold to its former glory. Maiev Shadowsong now joins their efforts.";
 
   protected override string RewardDescription =>
-    $"Learn to train Maiev Shadowsong from the {GetObjectName(UNIT_E00R_ALTAR_OF_WATCHERS_SENTINEL_ALTAR)} and gain control of the survivors hiding in Feathermoon.";
+    $"Learn to train Maiev Shadowsong from the {GetObjectName(UNIT_E00R_ALTAR_OF_WATCHERS_SENTINELS_ALTAR)} and gain control of the survivors hiding in Feathermoon.";
 
   protected override void OnAdd(Faction whichFaction)
   {

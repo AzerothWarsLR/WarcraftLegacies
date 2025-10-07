@@ -24,6 +24,6 @@ public sealed class QuestEmperorConstruct : QuestData
   public override string RewardFlavour => "I have enslaved the cursed Tol'vir.";
 
   /// <inheritdoc />
-  protected override string RewardDescription => $"Learn to train {GetObjectName(UNIT_SL2O_OBSIDIAN_ERADICATOR_CTHUN)}s from the {GetObjectName(UNIT_O00R_HATCHERY_C_THUN_BARRACK)},Learn to train {GetObjectName(UNIT_O001_TOL_VIR_STATUE_C_THUN_TOL_VIR_STATUE)}s from the {GetObjectName(UNIT_O00D_PYRAMID_C_THUN_MAGIC)} and learn to train Moam from the {GetObjectName(UNIT_U01F_ALTAR_OF_THE_OLD_ONES_C_THUN_ALTAR)} ";
+  protected override string RewardDescription => $"Learn to train {GetObjectName(UNIT_SL2O_OBSIDIAN_ERADICATOR_CTHUN)}s from the {GetObjectName(UNIT_O00R_HATCHERY_CTHUN_BARRACK)},Learn to train {GetObjectName(UNIT_O001_TOL_VIR_STATUE_CTHUN_TOL_VIR_STATUE)}s from the {GetObjectName(UNIT_O00D_PYRAMID_CTHUN_MAGIC)} and learn to train Moam from the {GetObjectName(UNIT_U01F_ALTAR_OF_THE_OLD_ONES_CTHUN_ALTAR)} ";
 
 }

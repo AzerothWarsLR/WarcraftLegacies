@@ -59,7 +59,6 @@ public sealed class QuestShoresOfNorthrend : QuestData
       CreateStructureForced(completingFaction.Player, UNIT_HPEA_PEASANT_LORDAERON_STORMWIND_WORKER, 818, 16864, 6.156587f * MathEx.DegToRad, 256);
       CreateStructureForced(completingFaction.Player, UNIT_HPEA_PEASANT_LORDAERON_STORMWIND_WORKER, 624, 16725, 4.578159f * MathEx.DegToRad, 256);
       CreateStructureForced(completingFaction.Player, UNIT_HGTW_GUARD_TOWER_LORDAERON_TOWER, -960, 15872, 4.712389f * MathEx.DegToRad, 256);
-      CreateStructureForced(completingFaction.Player, UNIT_HDES_DESTROYER_UNUSED, 582, 15512, 4.3173f * MathEx.DegToRad, 256);
       CreateStructureForced(completingFaction.Player, UNIT_HSHY_SHIPYARD_LORDAERON_SHIPYARD, 800, 15776, 4.712389f * MathEx.DegToRad, 256);
       CreateStructureForced(completingFaction.Player, UNIT_HCAS_CASTLE_LORDAERON_T3, -512, 15744, 4.712389f * MathEx.DegToRad, 512);
       CreateStructureForced(completingFaction.Player, UNIT_HBLA_BLACKSMITH_LORDAERON_RESEARCH, 672, 16928, 4.712389f * MathEx.DegToRad, 256);

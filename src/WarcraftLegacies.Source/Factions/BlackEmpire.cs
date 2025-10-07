@@ -23,7 +23,7 @@ public sealed class BlackEmpire : Faction
   {
     _allLegendSetup = allLegendSetup;
     _preplacedUnitSystem = preplacedUnitSystem;
-    ControlPointDefenderUnitTypeId = UNIT_N0DV_CONTROL_POINT_DEFENDER_BLACK_EMPIRE_TOWER;
+    ControlPointDefenderUnitTypeId = UNIT_N0DV_CONTROL_POINT_DEFENDER_NZOTH_TOWER;
     TraditionalTeam = TeamSetup.OldGods;
     StartingGold = 200;
     IntroText = $"You are playing as the {PrefixCol}Black Empire of N'zoth|r.\n\n" +
@@ -84,7 +84,7 @@ public sealed class BlackEmpire : Faction
       Radius = 800
     });
 
-    PassiveAbilityManager.Register(new NoTargetSpellOnCast(UNIT_E01D_HARBINGER_OF_NY_ALOTHA_YOGG, ABILITY_AXK2_VOID_RIFT_ICON_XKORR)
+    PassiveAbilityManager.Register(new NoTargetSpellOnCast(UNIT_E01D_HARBINGER_OF_NY_ALOTHA_NZOTH, ABILITY_AXK2_VOID_RIFT_ICON_XKORR)
     {
       DummyAbilityId = ABILITY_AXK1_VOIDBOLTDUMMY_X_KORR_DUMMY_SPELL,
       DummyOrderId = ORDER_FAN_OF_KNIVES,
@@ -111,7 +111,7 @@ public sealed class BlackEmpire : Faction
     };
     SpellSystem.Register(poisonYor);
 
-    var genesisAttack = new SpellOnAttack(UNIT_U029_STYGIAN_HULK_YOGG,
+    var genesisAttack = new SpellOnAttack(UNIT_U029_STYGIAN_HULK_NZOTH,
       ABILITY_ABES_GENESIS_ATTACK_ICON_STYGIAN_HULK)
     {
       DummyAbilityId = ABILITY_ABEG_PARASITE_GENESIS_ATTACK_REAL,
@@ -120,7 +120,7 @@ public sealed class BlackEmpire : Faction
     };
     PassiveAbilityManager.Register(genesisAttack);
 
-    var shadowVeilPassive = new NoTargetSpellOnAttack(UNIT_N0AH_DEFORMED_CHIMERA_YOGG,
+    var shadowVeilPassive = new NoTargetSpellOnAttack(UNIT_N0AH_DEFORMED_CHIMERA_NZOTH,
 ABILITY_ABEV_SHADOW_VEIL)
     {
       DummyAbilityId = ABILITY_ABSV_SHADOW_VEIL_SHADOW_VEIL_REAL,
@@ -140,7 +140,7 @@ ABILITY_ABEV_SHADOW_VEIL)
     };
     SpellSystem.Register(shadowVeilSpell);
 
-    var paralysingFear = new SpellOnAttack(UNIT_O01G_BRUTE_YOGG,
+    var paralysingFear = new SpellOnAttack(UNIT_O01G_BRUTE_NZOTH,
       ABILITY_ABPF_PARALYSING_FEAR)
     {
       DummyAbilityId = ABILITY_ABSF_SLOW_PARALYSING_FEAR,
@@ -149,7 +149,7 @@ ABILITY_ABEV_SHADOW_VEIL)
     };
     PassiveAbilityManager.Register(paralysingFear);
 
-    var greaterParalysingFear = new SpellOnAttack(UNIT_H09F_DEEP_FIEND_YOGG,
+    var greaterParalysingFear = new SpellOnAttack(UNIT_H09F_DEEP_FIEND_NZOTH,
       ABILITY_ABGP_GREATER_PARALYSING_FEAR)
     {
       DummyAbilityId = ABILITY_ABSG_SLOW_GREATER_PARALYSING_FEAR,

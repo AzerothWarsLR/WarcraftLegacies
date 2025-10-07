@@ -15,25 +15,25 @@ public sealed class LegendSkywall
   {
     Ertan = new LegendaryHero("Ertan")
     {
-      UnitType = UNIT_E023_GRAND_VIZIER_ELEMENTAL,
+      UnitType = UNIT_E023_GRAND_VIZIER_SKYWALL,
       StartingXp = 0,
     };
 
     Aqir = new LegendaryHero("Al'Aqir")
     {
-      UnitType = UNIT_U01S_WINDLORD_ELEMENTAL,
+      UnitType = UNIT_U01S_WINDLORD_SKYWALL,
       StartingXp = 1000,
     };
 
     Ragnaros = new LegendaryHero("Ragnaros")
     {
-      UnitType = UNIT_U02K_LORD_OF_THE_FIRELANDS_ELEMENTAL,
+      UnitType = UNIT_U02K_LORD_OF_THE_FIRELANDS_SKYWALL,
       StartingXp = 2800,
     };
 
     Neptulon = new LegendaryHero("Neptulon")
     {
-      UnitType = UNIT_UELN_THE_TIDEHUNTER_ELEMENTAL,
+      UnitType = UNIT_UELN_THE_TIDEHUNTER_SKYWALL,
       StartingXp = 4000,
     };
 

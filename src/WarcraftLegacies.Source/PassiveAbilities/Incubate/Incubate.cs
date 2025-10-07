@@ -36,7 +36,7 @@ public sealed class Incubate : PassiveAbility, IEffectOnSummonedUnit
     {
       Duration = duration,
       HatchedUnitTypeId = HatchedUnitTypeId,
-      MatureEggUnitTypeId = UNIT_ZB4E_MATURE_EGG_INCUBATE
+      MatureEggUnitTypeId = UNIT_ZB4E_MATURE_EGG_CTHUN_INCUBATE
     };
     BuffSystem.Add(immatureEggBuff);
   }

@@ -61,7 +61,7 @@ public sealed class UnstableEvolution : Spell
     target.SetScale(1.1f, 1.1f, 1.1f);
     target.RemoveType(UNIT_TYPE_SUMMONED);
 
-    if (target.UnitType == UNIT_U013_SUPER_MAJOR_C_THUN)
+    if (target.UnitType == Constants.UNIT_U013_SUPER_MAJOR_CTHUN)
     {
       target.SetScale(0.6f, 0.6f, 0.6f);
     }

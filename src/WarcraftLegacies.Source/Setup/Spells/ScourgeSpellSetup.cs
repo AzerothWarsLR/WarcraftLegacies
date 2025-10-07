@@ -64,7 +64,7 @@ public static class ScourgeSpellSetup
     };
     SpellSystem.Register(rendSoul);
 
-    PassiveAbilityManager.Register(new RemoveOnDeath(UNIT_N094_ICECROWN_OBELISK_RED)
+    PassiveAbilityManager.Register(new RemoveOnDeath(UNIT_N094_ICECROWN_OBELISK_SCOURGE)
     {
       DeathEffectPath = @"Objects\Spawnmodels\Undead\UDeathSmall\UDeathSmall.mdl"
     });
@@ -190,7 +190,7 @@ public static class ScourgeSpellSetup
     PassiveAbilityManager.Register(new SummonUnitOnCast(UNIT_U00A_SCOURGE_COMMANDER_SCOURGE, ABILITY_ST52_ARMY_OF_THE_DEAD_SCOURGE)
     {
       Duration = 45,
-      SummonUnitTypeId = UNIT_NDR2_DARK_MINION_RED_DEATH_KNIGHT,
+      SummonUnitTypeId = UNIT_NDR2_DARK_MINION_SCOURGE_DEATH_KNIGHT,
       SummonCount = new LeveledAbilityField<int>
       {
         Base = 0,

@@ -85,9 +85,9 @@ public sealed class Skywall : Faction
     };
     invasionParameters.InvasionArmySummonParameters = new List<InvasionArmySummonParameter>
     {
-      new(1, UNIT_LS05_SHAPER_ELEMENTAL_WORKER),
+      new(1, UNIT_LS05_SHAPER_SKYWALL_WORKER),
       new(3, UNIT_N0CG_CORE_HOUND_RAGNAROS),
-      new(3, UNIT_VSW0_FIRE_ELEMENTAL_ELEMENTALS),
+      new(3, UNIT_VSW0_FIRE_ELEMENTAL_SKYWALL),
     };
     invasionParameters.AttackTargets = new List<Point>
     {
@@ -101,7 +101,7 @@ public sealed class Skywall : Faction
   private static void RegisterResearches()
   {
     ResearchManager.Register(new PowerResearch(UPGRADE_RELT_WINDFORGING_SKYWALL, 100,
-      new Windforging(UNIT_O01I_ANIMATED_ARMOR_ELEMENTAL, 0.25f, new Point(-10396.5f, -20963.6f), "the Vortex Pinnacle", Regions.ElementalRealm)
+      new Windforging(UNIT_O01I_ANIMATED_ARMOR_SKYWALL, 0.25f, new Point(-10396.5f, -20963.6f), "the Vortex Pinnacle", Regions.ElementalRealm)
       {
         IconName = "ItemForging",
         Name = "Windforging",
@@ -111,7 +111,7 @@ public sealed class Skywall : Faction
   private static void RegisterSpells()
   {
 
-    var purgeAttack = new SpellOnAttack(UNIT_O01I_ANIMATED_ARMOR_ELEMENTAL,
+    var purgeAttack = new SpellOnAttack(UNIT_O01I_ANIMATED_ARMOR_SKYWALL,
       ABILITY_AELP_SHOCKING_BLADES_ANIMATED_ARMOR)
     {
       DummyAbilityId = ABILITY_AEPU_PURGE_SHOCKING_BLADE,
@@ -122,7 +122,7 @@ public sealed class Skywall : Faction
     PassiveAbilityManager.Register(purgeAttack);
 
 
-    var waterPrison = new SpellOnAttack(UNIT_N08S_ELEMENTAL_LORD_ELEMENTAL,
+    var waterPrison = new SpellOnAttack(UNIT_N08S_ELEMENTAL_LORD_SKYWALL,
       ABILITY_A0Y6_WATER_PRISON_ELEMENTAL_LORD)
     {
       DummyAbilityId = ABILITY_A0Y0_WATER_PRISON_REAL,

@@ -26,7 +26,7 @@ public sealed class QuestScepterOfTheQueenSentinels : QuestData
 
   /// <inheritdoc/>
   protected override string RewardDescription =>
-    $"Gain the Scepter of the Queen, the Athenaeum, 4 {GetObjectName(UNIT_NNMG_REDEEMED_HIGHBORNE_SENTINELS)}, and the ability to train {GetObjectName(UNIT_NNMG_REDEEMED_HIGHBORNE_SENTINELS)} from the {GetObjectName(UNIT_E00V_TEMPLE_OF_ELUNE_SENTINEL_MAGIC)}";
+    $"Gain the Scepter of the Queen, the Athenaeum, 4 {GetObjectName(UNIT_NNMG_REDEEMED_HIGHBORNE_SENTINELS)}, and the ability to train {GetObjectName(UNIT_NNMG_REDEEMED_HIGHBORNE_SENTINELS)} from the {GetObjectName(UNIT_E00V_TEMPLE_OF_ELUNE_SENTINELS_MAGIC)}";
 
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestScepterOfTheQueenSentinels"/> class.

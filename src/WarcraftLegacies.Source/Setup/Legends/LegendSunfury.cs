@@ -28,14 +28,14 @@ public sealed class LegendSunfury
 
     Pathaleon = new LegendaryHero("Pathaleon")
     {
-      UnitType = UNIT_H098_SUNFURY_MASTERMIND_HIGH_ELVES,
+      UnitType = UNIT_H098_SUNFURY_MASTERMIND_QUELTHALAS,
       StartingXp = 1800
     };
 
     Kael = new LegendaryHero("Kael'thas Sunstrider")
     {
       PlayerColor = playercolor.Red,
-      UnitType = UNIT_HKAL_PRINCE_OF_QUEL_THALAS_QUEL_THALAS
+      UnitType = UNIT_HKAL_PRINCE_OF_QUEL_THALAS_QUELTHALAS
     };
 
     Kiljaeden = new LegendaryHero("Kil'jaeden")

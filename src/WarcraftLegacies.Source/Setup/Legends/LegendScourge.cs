@@ -74,10 +74,10 @@ public sealed class LegendScourge
     LegendaryHeroManager.Register(Rivendare);
     LegendaryHeroManager.Register(Arthas);
     CapitalManager.Register(TheFrozenThrone);
-    TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3655, 20220)));
-    TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3015, 20762)));
-    TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(UNIT_N094_ICECROWN_OBELISK_RED, new Point(2165, 20583)));
-    TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(UNIT_N094_ICECROWN_OBELISK_RED, new Point(-3638, 23374)));
+    TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(UNIT_N094_ICECROWN_OBELISK_SCOURGE, new Point(-3655, 20220)));
+    TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(UNIT_N094_ICECROWN_OBELISK_SCOURGE, new Point(-3015, 20762)));
+    TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(UNIT_N094_ICECROWN_OBELISK_SCOURGE, new Point(2165, 20583)));
+    TheFrozenThrone.AddProtector(preplacedUnitSystem.GetUnit(UNIT_N094_ICECROWN_OBELISK_SCOURGE, new Point(-3638, 23374)));
     CapitalManager.Register(Utgarde);
   }
 }

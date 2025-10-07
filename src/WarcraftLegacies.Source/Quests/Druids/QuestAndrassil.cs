@@ -19,7 +19,7 @@ public sealed class QuestAndrassil : QuestData
     @"ReplaceableTextures\CommandButtons\BTNTreant.blp")
   {
     AddObjective(new ObjectiveBuildInRect(Regions.GrizzlyHills, "in Grizzly Hills",
-     UNIT_ETOL_TREE_OF_LIFE_DRUID_T1, 3));
+     UNIT_ETOL_TREE_OF_LIFE_DRUIDS_T1, 3));
     AddObjective(new ObjectiveControlPoint(UNIT_N03U_GRIZZLY_HILLS));
     ResearchId = UPGRADE_R002_QUEST_COMPLETED_CROWN_OF_THE_SNOW_DRUIDS;
     _vordrassil = vordrassil;
@@ -33,12 +33,12 @@ public sealed class QuestAndrassil : QuestData
 
   /// <inheritdoc/>
   protected override string RewardDescription =>
-    $"Gain a new capital at Grizzly Hills that can research a powerful upgrade for your {GetObjectName(UNIT_EDOC_DRUID_OF_THE_CLAW_DRUIDS)}, and learn to train the hero Ursoc from the {GetObjectName(UNIT_EATE_ALTAR_OF_ELDERS_DRUID_ALTAR)}. If you're allied to the Scourge, {_ursoc.Name}'s starting experience is halved";
+    $"Gain a new capital at Grizzly Hills that can research a powerful upgrade for your {GetObjectName(UNIT_EDOC_DRUID_OF_THE_CLAW_DRUIDS)}, and learn to train the hero Ursoc from the {GetObjectName(UNIT_EATE_ALTAR_OF_ELDERS_DRUIDS_ALTAR)}. If you're allied to the Scourge, {_ursoc.Name}'s starting experience is halved";
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    _vordrassil.Unit = unit.Create(completingFaction.Player, UNIT_N04F_ANDRASSIL_DRUID_OTHER, Regions.Andrassil.Rect.CenterX, Regions.Andrassil.Rect.CenterY, 0);
+    _vordrassil.Unit = unit.Create(completingFaction.Player, UNIT_N04F_ANDRASSIL_DRUIDS_OTHER, Regions.Andrassil.Rect.CenterX, Regions.Andrassil.Rect.CenterY, 0);
 
     if (ShouldApplyExperiencePenalty(completingFaction))
     {

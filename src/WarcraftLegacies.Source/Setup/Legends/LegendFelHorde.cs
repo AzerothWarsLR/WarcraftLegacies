@@ -21,7 +21,7 @@ public sealed class LegendFelHorde
   {
     Magtheridon = new LegendaryHero("Magtheridon")
     {
-      UnitType = UNIT_NMAG_LORD_OF_OUTLAND_FEL_HORDE,
+      UnitType = UNIT_NMAG_LORD_OF_OUTLAND_FEL,
       StartingXp = 1800,
       DeathMessage = "Magtheridon’s eternal demon soul has been consumed, and his life permanently extinguished. The Lord of Outland has fallen."
     };
@@ -62,8 +62,8 @@ public sealed class LegendFelHorde
       Unit = preplacedUnitSystem.GetUnit(FourCC("o00F")),
       Essential = true
     };
-    BlackTemple.AddProtector(preplacedUnitSystem.GetUnit(UNIT_NPGR_POWER_GENERATOR_TEAL, new Point(5511.9f, -29688.2f)));
-    BlackTemple.AddProtector(preplacedUnitSystem.GetUnit(UNIT_NPGR_POWER_GENERATOR_TEAL, new Point(5513.1f, -30467.4f)));
+    BlackTemple.AddProtector(preplacedUnitSystem.GetUnit(UNIT_NPGR_POWER_GENERATOR_FEL, new Point(5511.9f, -29688.2f)));
+    BlackTemple.AddProtector(preplacedUnitSystem.GetUnit(UNIT_NPGR_POWER_GENERATOR_FEL, new Point(5513.1f, -30467.4f)));
 
     HellfireCitadel = new Capital
     {

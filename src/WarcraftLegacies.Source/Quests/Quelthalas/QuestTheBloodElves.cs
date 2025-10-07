@@ -12,8 +12,8 @@ namespace WarcraftLegacies.Source.Quests.Quelthalas;
 /// </summary>
 public sealed class QuestTheBloodElves : QuestData
 {
-  private const int UnittypeId = UNIT_N048_BLOOD_MAGE_QUEL_THALAS;
-  private const int BuildingId = UNIT_N0A2_CONSORTIUM_QUEL_THALAS_SIEGE;
+  private const int UnittypeId = UNIT_N048_BLOOD_MAGE_QUELTHALAS;
+  private const int BuildingId = UNIT_N0A2_CONSORTIUM_QUELTHALAS_SIEGE;
 
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestTheBloodElves"/> class.

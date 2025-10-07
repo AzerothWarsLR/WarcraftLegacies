@@ -6,9 +6,9 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde;
 
 public sealed class QuestFelHordeKillStormwind : QuestData
 {
-  private const int UnittypeId = UNIT_N086_FEL_DEATH_KNIGHT_FEL_HORDE_ELITE_TIER;
+  private const int UnittypeId = UNIT_N086_FEL_DEATH_KNIGHT_FEL_ELITE_TIER;
   private const int UnitLimit = 6;
-  private const int BuildingId = UNIT_O030_FORTRESS_FEL_HORDE_T3;
+  private const int BuildingId = UNIT_O030_FORTRESS_FEL_T3;
 
   /// <inheritdoc/>
   public override string RewardFlavour =>

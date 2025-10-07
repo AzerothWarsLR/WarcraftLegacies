@@ -61,24 +61,24 @@ public static class FelHordeSpellSetup
     };
     SpellSystem.Register(warStompKazzak);
 
-    PassiveAbilityManager.Register(new SummonUnitOnDeath(UNIT_NCHG_FEL_GRUNT_FEL_HORDE)
+    PassiveAbilityManager.Register(new SummonUnitOnDeath(UNIT_NCHG_FEL_GRUNT_FEL)
     {
       Duration = 40,
-      SummonUnitTypeId = UNIT_N00O_SKELETAL_GRUNT_FEL_HORDE,
+      SummonUnitTypeId = UNIT_N00O_SKELETAL_GRUNT_FEL,
       SummonCount = 1,
       SpecialEffectPath = @"Abilities\Spells\Undead\RaiseSkeletonWarrior\RaiseSkeleton.mdl",
       RequiredResearch = UPGRADE_R098_FEL_INFUSED_SKELETON_FEL_HORDE
     });
 
 
-    PassiveAbilityManager.Register(new Execute(UNIT_O01L_EXECUTIONER_FEL_HORDE_ELITE)
+    PassiveAbilityManager.Register(new Execute(UNIT_O01L_EXECUTIONER_FEL_ELITE)
     {
       DamageMultNonResistant = 4,
       DamageMultResistant = 2,
       DamageMultStructure = 1
     });
 
-    PassiveAbilityManager.Register(new Execute(UNIT_N0B4_REAPER_YOGG)
+    PassiveAbilityManager.Register(new Execute(UNIT_N0B4_REAPER_NZOTH)
     {
       DamageMultNonResistant = 4,
       DamageMultResistant = 2,

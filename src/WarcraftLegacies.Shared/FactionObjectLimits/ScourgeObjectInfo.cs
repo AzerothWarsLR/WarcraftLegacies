@@ -28,15 +28,14 @@ public static class ScourgeObjectInfo
 
     //Units
     yield return new(UNIT_UACO_ACOLYTE_SCOURGE_WORKER, Unlimited);
-    yield return new(UNIT_USHD_SHADE_SCOURGE, Unlimited);
     yield return new(UNIT_UGHO_GHOUL_SCOURGE, Unlimited);
     yield return new(UNIT_UABO_ABOMINATION_SCOURGE, Unlimited);
     yield return new(UNIT_UMTW_MEAT_WAGON_SCOURGE, 8);
     yield return new(UNIT_UCRY_CRYPT_FIEND_SCOURGE, Unlimited);
     yield return new(UNIT_UGAR_GARGOYLE_SCOURGE, 12);
-    yield return new(UNIT_H02G_VRYKUL_WARRIOR_VRYKUL, Unlimited);
-    yield return new(UNIT_H061_VRYKUL_BERSERK_VRYKUL, 12);
-    yield return new(UNIT_H00P_MAMMOTH_RIDER_VRYKUL, 4);
+    yield return new(UNIT_H02G_VRYKUL_WARRIOR_SCOURGE, Unlimited);
+    yield return new(UNIT_H061_VRYKUL_BERSERK_SCOURGE, 12);
+    yield return new(UNIT_H00P_MAMMOTH_RIDER_SCOURGE, 4);
     yield return new(UNIT_UBAN_BANSHEE_SCOURGE, Unlimited);
     yield return new(UNIT_UNEC_NECROMANCER_SCOURGE, Unlimited);
     yield return new(UNIT_UOBS_OBSIDIAN_STATUE_SCOURGE, 4);
@@ -47,13 +46,13 @@ public static class ScourgeObjectInfo
 
     //Ship
     yield return new(UNIT_UBOT_HAUNTED_TRANSPORT_SHIP_SCOURGE_LEGION, Unlimited);
-    yield return new(UNIT_H0AT_SCOUT_SHIP_UNDEAD, Unlimited);
-    yield return new(UNIT_H0AW_FRIGATE_UNDEAD, Unlimited);
-    yield return new(UNIT_H0AM_FIRESHIP_UNDEAD, Unlimited);
-    yield return new(UNIT_H0AZ_GALLEY_UNDEAD, Unlimited);
-    yield return new(UNIT_H0AQ_BOARDING_VESSEL_UNDEAD, Unlimited);
-    yield return new(UNIT_H0BB_JUGGERNAUT_UNDEAD, Unlimited);
-    yield return new(UNIT_H0B9_BOMBARD_UNDEAD, 6);
+    yield return new(UNIT_H0AT_SCOUT_SHIP_EVIL, Unlimited);
+    yield return new(UNIT_H0AW_FRIGATE_EVIL, Unlimited);
+    yield return new(UNIT_H0AM_FIRESHIP_EVIL, Unlimited);
+    yield return new(UNIT_H0AZ_GALLEY_EVIL, Unlimited);
+    yield return new(UNIT_H0AQ_BOARDING_VESSEL_EVIL, Unlimited);
+    yield return new(UNIT_H0BB_JUGGERNAUT_EVIL, Unlimited);
+    yield return new(UNIT_H0B9_BOMBARD_EVIL, 6);
 
     //Demi-Heroes
     yield return new(UNIT_UBDD_SAPPHIRON_SCOURGE_DEMI, 1);

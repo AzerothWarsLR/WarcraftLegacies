@@ -33,5 +33,5 @@ public sealed class QuestRebuildHearthglen : QuestData
 
   /// <inheritdoc/>
   protected override string RewardDescription =>
-    $"Learn to train Sally Whitemane from the {GetObjectName(UNIT_H0BQ_ALTAR_OF_CRUSADERS_CRUSADE_ALTAR)}";
+    $"Learn to train Sally Whitemane from the {GetObjectName(UNIT_H0BQ_ALTAR_OF_CRUSADERS_SCARLET_ALTAR)}";
 }

@@ -19,7 +19,7 @@ public sealed class QuestBloodpact : QuestData
       @"ReplaceableTextures\CommandButtons\BTNBloodFury.blp")
   {
     AddObjective(new ObjectiveResearch(UPGRADE_R09O_DRINK_THE_BLOOD_OF_MANNOROTH,
-      UNIT_NBFL_FOUNTAIN_OF_BLOOD_BLOODPACT));
+      UNIT_NBFL_FOUNTAIN_OF_BLOOD_WARSONG));
     Global = true;
     _mannoroth = mannoroth;
     _grom = grom;

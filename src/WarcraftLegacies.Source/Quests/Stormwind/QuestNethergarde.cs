@@ -24,7 +24,7 @@ public sealed class QuestNethergarde : QuestData
     AddObjective(new ObjectiveExpire(600, Title));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = Regions.NethergardeUnlock.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-    _gate = preplacedUnitSystem.GetUnit(UNIT_H00L_HORIZONTAL_WOODEN_GATE_OPEN, new Point(17140, -18000));
+    _gate = preplacedUnitSystem.GetUnit(UNIT_H00L_HORIZONTAL_WOODEN_GATE_GATE_OPEN, new Point(17140, -18000));
   }
 
   /// <inheritdoc />

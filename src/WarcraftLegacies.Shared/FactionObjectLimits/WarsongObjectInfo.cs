@@ -23,7 +23,6 @@ public static class WarsongObjectInfo
     yield return new(UNIT_NBT2_IMPROVED_BOULDER_TOWER, Unlimited, UnitCategory.Tower3);
     yield return new(UNIT_O02T_SHIPYARD_WARSONG_SHIPYARD, Unlimited, UnitCategory.Shipyard);
     yield return new(UNIT_O01T_TREASURE_HOARD_WARSONG_SHOP, Unlimited, UnitCategory.Shop);
-    yield return new(UNIT_NTT2_TAUREN_TENT_FROSTWOLF_OTHER, Unlimited, UnitCategory.SpecailFarm1);
     yield return new(UNIT_H004_TROLL_HUT_FROSTWOLF_FARM, Unlimited, UnitCategory.SpecailFarm2);
     yield return new(UNIT_O006_SPIRE_WARSONG_MAGIC, Unlimited, UnitCategory.Magic);
     yield return new(UNIT_O04L_PEON_WARSONG_WORKER, Unlimited, UnitCategory.Worker);
@@ -49,13 +48,12 @@ public static class WarsongObjectInfo
     yield return new(UNIT_H0B5_BOARDING_VESSEL_HORDE, Unlimited);
     yield return new(UNIT_H0BC_JUGGERNAUT_HORDE, Unlimited);
     yield return new(UNIT_H0AO_BOMBARD_HORDE, 6);
-    yield return new(UNIT_VSWS_HIGH_OVERLORD_OF_THE_KOR_KRON_VASSAL, 1); //Varok
+    yield return new(UNIT_VSWS_HIGH_OVERLORD_OF_THE_KOR_KRON_WARSONG, 1); //Varok
     yield return new(UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG, 1);
     yield return new(UNIT_O005_WARSONG_BATTLEMASTER_WARSONG, 1);
     yield return new(UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG, 1); //Rokhan
     yield return new(UNIT_N0CN_FOREMAN_GLIBBS_WARSONG_DEMI, 1);
-    yield return new(UNIT_OPGH_CORRUPTOR_OF_THE_WARSONG_CLAN_WARSONG_BLOODPACT,
-        1); //Blood Pact Grom   Fixes Perma Death Grom Blood Pact bug
+    yield return new(UNIT_OPGH_CORRUPTOR_OF_THE_WARSONG_CLAN_WARSONG_BLOODPACT, 1);
     yield return new(UPGRADE_R00J_OGRE_MAGRI_MASTER_TRAINING_WARSONG, Unlimited);
     yield return new(UPGRADE_ROBS_BRUTE_STRENGTH_WARSONG, Unlimited);
     yield return new(1383036018, Unlimited); // Troll Regeneration

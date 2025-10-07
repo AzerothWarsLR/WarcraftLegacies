@@ -15,8 +15,8 @@ public sealed class QuestOnslaught : QuestData
     "Death awaits the living at the roof of the world. It is there that the Crusade must undertake its ultimate vengeance.",
     @"ReplaceableTextures\CommandButtons\BTNVampire.blp")
   {
-    AddObjective(new ObjectiveBuildInRect(questRect, "in Dragonblight", UNIT_H0AG_HALL_OF_SWORDS_CRUSADE_BARRACKS));
-    AddObjective(new ObjectiveBuildInRect(questRect, "in Dragonblight", UNIT_H0BM_TOWN_HALL_CRUSADE_T1));
+    AddObjective(new ObjectiveBuildInRect(questRect, "in Dragonblight", UNIT_H0AG_HALL_OF_SWORDS_SCARLET_BARRACKS));
+    AddObjective(new ObjectiveBuildInRect(questRect, "in Dragonblight", UNIT_H0BM_TOWN_HALL_SCARLET_T1));
     AddObjective(new ObjectiveControlLevel(UNIT_N02Q_DRAGONBLIGHT, 5));
     ResearchId = UPGRADE_R040_QUEST_COMPLETED_ONSLAUGHT;
   }

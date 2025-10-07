@@ -44,7 +44,7 @@ public sealed class QuestDarkPortal : QuestData
     outerWaygate3.IsVisible = false;
     _outerWaygate3 = outerWaygate3;
     AddObjective(new ObjectiveEitherOf(
-      new ObjectiveResearch(UPGRADE_R02C_THE_DARK_PORTAL_FEL_HORDE, UNIT_O008_HELLFIRE_CITADEL_FEL_HORDE, true),
+      new ObjectiveResearch(UPGRADE_R02C_THE_DARK_PORTAL_FEL_HORDE, UNIT_O008_HELLFIRE_CITADEL_FEL, true),
       new ObjectiveTime(600)));
     AddObjective(new ObjectiveTime(480));
     Global = true;

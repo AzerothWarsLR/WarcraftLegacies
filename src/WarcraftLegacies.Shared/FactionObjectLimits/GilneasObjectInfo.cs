@@ -28,7 +28,7 @@ public static class GilneasObjectInfo
     yield return new(UNIT_H03Q_CITY_WATCH_GILNEAS_BARRACKS, Unlimited, UnitCategory.Barracks); //City Watch (Barracks)
 
     yield return new(UNIT_H039_SCOUT_TOWER_GILNEAS_TOWER, Unlimited, UnitCategory.Tower); //Scout Tower
-    yield return new(UNIT_H03A_GUARD_TOWER_GILNEAS_TOWER, Unlimited, UnitCategory.Tower2); //Guard Tower  
+    yield return new(UNIT_H03A_GUARD_TOWER_GILNEAS_TOWER, Unlimited, UnitCategory.Tower2); //Guard Tower
     yield return new(UNIT_H03B_CANNON_TOWER_GILNEAS_TOWER, Unlimited, UnitCategory.Tower3); //Cannon Tower
     yield return new(UNIT_H052_IMPROVED_GUARD_TOWER_GILNEAS_TOWER, Unlimited, UnitCategory.Tower4); //Improved Guard Tower
     yield return new(UNIT_H04N_IMPROVED_CANNON_TOWER_GILNEAS_TOWER, Unlimited, UnitCategory.Tower5); //Improved Cannon Tower
@@ -46,7 +46,6 @@ public static class GilneasObjectInfo
     yield return new(UNIT_O02J_WORGEN_GILNEAS, 12, UnitCategory.MeleeSpecial); //Worgen
 
     yield return new(UNIT_H03L_SHOTGUNNER_GILNEAS, Unlimited, UnitCategory.RangedBasic); //Shotgunner
-    yield return new(UNIT_N067_MINI_SPIDERS, Unlimited); //Spider summon
     yield return new(UNIT_O04U_CYCLONE_CANNON_GILNEAS, 6, UnitCategory.Siege); //Cyclone Cannon
 
     yield return new(UNIT_E01E_ANCIENT_GUARDIAN_GILNEAS, 1); //Goldrinn

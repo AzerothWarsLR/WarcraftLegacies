@@ -27,7 +27,7 @@ public sealed class QuestSentinelsKillCthun : QuestData
     "C'thun, the Qiraji god, has been killed. Their hordes have dispersed";
 
   /// <inheritdoc/>
-  protected override string RewardDescription => $"Learn to train {GetObjectName(UNIT_E022_MOON_RIDER_SENTINELS)}s from the {GetObjectName(UNIT_EDOS_ROOST_SENTINEL_SPECIALIST)}s and research {GetObjectName(UPGRADE_REMG_UPGRADE_MOON_GLAIVE_LIGHT_BLUE_RESEARCH)}'s second level from the {GetObjectName(UNIT_E00L_WAR_ACADEMY_SENTINEL_BARRACKS)}";
+  protected override string RewardDescription => $"Learn to train {GetObjectName(UNIT_E022_MOON_RIDER_SENTINELS)}s from the {GetObjectName(UNIT_EDOS_ROOST_SENTINELS_SPECIALIST)}s and research {GetObjectName(UPGRADE_REMG_UPGRADE_MOON_GLAIVE_LIGHT_BLUE_RESEARCH)}'s second level from the {GetObjectName(UNIT_E00L_WAR_ACADEMY_SENTINELS_BARRACKS)}";
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)

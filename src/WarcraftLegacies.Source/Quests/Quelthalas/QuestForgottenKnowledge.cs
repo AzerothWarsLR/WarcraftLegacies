@@ -26,5 +26,5 @@ public sealed class QuestForgottenKnowledge : QuestData
 
   /// <inheritdoc />
   protected override string RewardDescription =>
-    $"Learn to train {GetObjectName(UNIT_E024_ARCANE_ANNIHILATOR_QUEL_THALAS)}s from the {GetObjectName(UNIT_H0CI_ARTIFICER_S_COURT_SUNFURY_SIEGE)}";
+    $"Learn to train {GetObjectName(UNIT_E024_ARCANE_ANNIHILATOR_QUELTHALAS)}s from the {GetObjectName(UNIT_H0CI_ARTIFICER_S_COURT_SUNFURY_SIEGE)}";
 }

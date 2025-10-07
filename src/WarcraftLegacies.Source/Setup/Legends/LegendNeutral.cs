@@ -163,7 +163,7 @@ public sealed class LegendNeutral
 
     Shaladrassil = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_E01W_SHALADRASSIL_DRUID_OTHER),
+      Unit = preplacedUnitSystem.GetUnit(UNIT_E01W_SHALADRASSIL_DRUIDS_OTHER),
       Capturable = true
     };
 

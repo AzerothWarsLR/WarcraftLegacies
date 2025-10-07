@@ -9,26 +9,26 @@ public static class AhnqirajObjectInfo
 
   public static IEnumerable<ObjectInfo> GetAllObjectInfos()
   {
-    yield return new(UNIT_U020_MONUMENT_C_THUN_T1, Unlimited);
-    yield return new(UNIT_U021_RUINED_TEMPLE_C_THUN_T2, Unlimited);
-    yield return new(UNIT_U022_NEXUS_C_THUN_T3, Unlimited);
-    yield return new(UNIT_N071_PILLAR_OF_C_THUN_C_THUN_PILLARS, Unlimited);
-    yield return new(UNIT_U01G_SPIRIT_HALL_C_THUN_RESEARCH, Unlimited);
-    yield return new(UNIT_O00R_HATCHERY_C_THUN_BARRACK, Unlimited);
-    yield return new(UNIT_O00D_PYRAMID_C_THUN_MAGIC, Unlimited);
-    yield return new(UNIT_U01H_ANCIENT_CATACOMBS_C_THUN_SPECIALIST, Unlimited);
-    yield return new(UNIT_U01I_CHAMBER_OF_WONDERS_C_THUN_SHOP, Unlimited);
-    yield return new(UNIT_U01F_ALTAR_OF_THE_OLD_ONES_C_THUN_ALTAR, Unlimited);
-    yield return new(UNIT_U019_WORKER_C_THUN_WORKER, Unlimited);
-    yield return new(UNIT_O000_ROYALTY_C_THUN_ELITES, 6);
-    yield return new(UNIT_N06I_SOLDIER_C_THUN_SILITHID_WARRIOR, Unlimited);
-    yield return new(UNIT_O00L_CREMATOGASTER_C_THUN_SILITHID_REAVER, Unlimited);
-    yield return new(UNIT_U013_SUPER_MAJOR_C_THUN, 12);
-    yield return new(UNIT_N060_TUNNELER_C_THUN_SILITHID_TUNNELER, Unlimited);
-    yield return new(UNIT_N05V_SHADOW_WEAVER_C_THUN_FACELESS_SHADOW_WEAVER, Unlimited);
-    yield return new(UNIT_O001_TOL_VIR_STATUE_C_THUN_TOL_VIR_STATUE, 6);
+    yield return new(UNIT_U020_MONUMENT_CTHUN_T1, Unlimited);
+    yield return new(UNIT_U021_RUINED_TEMPLE_CTHUN_T2, Unlimited);
+    yield return new(UNIT_U022_NEXUS_CTHUN_T3, Unlimited);
+    yield return new(UNIT_N071_PILLAR_OF_C_THUN_CTHUN_PILLARS, Unlimited);
+    yield return new(UNIT_U01G_SPIRIT_HALL_CTHUN_RESEARCH, Unlimited);
+    yield return new(UNIT_O00R_HATCHERY_CTHUN_BARRACK, Unlimited);
+    yield return new(UNIT_O00D_PYRAMID_CTHUN_MAGIC, Unlimited);
+    yield return new(UNIT_U01H_ANCIENT_CATACOMBS_CTHUN_SPECIALIST, Unlimited);
+    yield return new(UNIT_U01I_CHAMBER_OF_WONDERS_CTHUN_SHOP, Unlimited);
+    yield return new(UNIT_U01F_ALTAR_OF_THE_OLD_ONES_CTHUN_ALTAR, Unlimited);
+    yield return new(UNIT_U019_WORKER_CTHUN_WORKER, Unlimited);
+    yield return new(UNIT_O000_ROYALTY_CTHUN_ELITES, 6);
+    yield return new(UNIT_N06I_SOLDIER_CTHUN_SILITHID_WARRIOR, Unlimited);
+    yield return new(UNIT_O00L_CREMATOGASTER_CTHUN_SILITHID_REAVER, Unlimited);
+    yield return new(UNIT_U013_SUPER_MAJOR_CTHUN, 12);
+    yield return new(UNIT_N060_TUNNELER_CTHUN_SILITHID_TUNNELER, Unlimited);
+    yield return new(UNIT_N05V_SHADOW_WEAVER_CTHUN_FACELESS_SHADOW_WEAVER, Unlimited);
+    yield return new(UNIT_O001_TOL_VIR_STATUE_CTHUN_TOL_VIR_STATUE, 6);
     yield return new(UNIT_O02N_ELATE_CTHUN, 24);
-    yield return new(UNIT_H01N_VILE_CORRUPTER_C_THUN, 4);
+    yield return new(UNIT_H01N_VILE_CORRUPTER_CTHUN, 4);
     yield return new(UNIT_SL2O_OBSIDIAN_ERADICATOR_CTHUN, 12);
     yield return new(UNIT_U02S_ANCIENT_SAND_WORM, 1);
     yield return new(UNIT_E005_THE_PROPHET, 1);

@@ -19,7 +19,7 @@ public sealed class LegendStormwind
   {
     Varian = new LegendaryHero("Varian Wrynn")
     {
-      UnitType = UNIT_H00R_KING_OF_STORMWIND_DARK_GREEN,
+      UnitType = UNIT_H00R_KING_OF_STORMWIND_STORMWIND,
       DeathMessage = "The King of Stormwind dies a warrior’s death, defending hearth and family. The Wrynn Dynasty crumbles with his passing.",
       StartingXp = 1800,
       StartingArtifacts = new()
@@ -40,7 +40,7 @@ public sealed class LegendStormwind
 
     Bolvar = new LegendaryHero("Bolvar Fordragon")
     {
-      UnitType = UNIT_H017_HIGHLORD_OF_THE_ALLIANCE_DARK_GREEN
+      UnitType = UNIT_H017_HIGHLORD_OF_THE_ALLIANCE_STORMWIND
     };
 
     Khadgar = new LegendaryHero("Khadgar")

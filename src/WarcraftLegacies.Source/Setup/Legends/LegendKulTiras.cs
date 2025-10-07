@@ -16,7 +16,7 @@ public sealed class LegendKultiras
   {
     LegendAdmiral = new LegendaryHero("Daelin Proudmoore")
     {
-      UnitType = UNIT_HAPM_LORD_ADMIRAL_OF_KUL_TIRAS_KUL_TIRAS
+      UnitType = UNIT_HAPM_LORD_ADMIRAL_OF_KUL_TIRAS_KULTIRAS
     };
 
     LegendLucille = new LegendaryHero("Lucille Waycrest")
@@ -33,20 +33,20 @@ public sealed class LegendKultiras
 
     LegendKatherine = new LegendaryHero("Katherine Proudmoore")
     {
-      UnitType = UNIT_H05L_LADY_OF_HOUSE_PROUDMOORE_KUL_TIRAS,
+      UnitType = UNIT_H05L_LADY_OF_HOUSE_PROUDMOORE_KULTIRAS,
       StartingXp = 1200
     };
 
     LegendBoralus = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_H046_BORALUS_KEEP_KUL_TIRAS),
+      Unit = preplacedUnitSystem.GetUnit(UNIT_H046_BORALUS_KEEP_KULTIRAS),
       DeathMessage = "Boralus Keep has fallen", //Todo: pointless flavour
       Essential = true
     };
 
     Flagship = new LegendaryHero("Flagship")
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS)
+      Unit = preplacedUnitSystem.GetUnit(UNIT_H05V_PROUDMOORE_FLAGSHIP_KULTIRAS)
     };
     Flagship.Unit.IsInvulnerable = true;
     Flagship.Unit.SetPausedEx(true);

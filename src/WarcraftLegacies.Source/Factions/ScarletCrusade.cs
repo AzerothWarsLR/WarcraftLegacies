@@ -16,7 +16,7 @@ public sealed class ScarletCrusade : Faction
   {
     _allLegendSetup = allLegendSetup;
     StartingGold = 200;
-    ControlPointDefenderUnitTypeId = UNIT_H09O_CONTROL_POINT_DEFENDER_CRUSADE;
+    ControlPointDefenderUnitTypeId = UNIT_H09O_CONTROL_POINT_DEFENDER_SCARLET;
 
     Nicknames = new List<string>
     {

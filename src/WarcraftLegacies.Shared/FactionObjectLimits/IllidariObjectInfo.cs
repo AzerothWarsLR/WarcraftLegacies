@@ -22,8 +22,8 @@ public static class IllidariObjectInfo
     yield return new(UNIT_N005_IMPROVED_TIDAL_WATCHER_ILLIDARI_TOWER, Unlimited);
     yield return new(UNIT_NMRB_STEAMVAULT_ILLIDARI_SHOP, Unlimited);
     yield return new(UNIT_N08W_ASHTONGUE_LAIR_ILLIDARI_SIEGE, Unlimited);
-    yield return new(UNIT_E020_ANCIENT_SHIPYARD_NAGA_SHIPYARD, Unlimited, UnitCategory.Shipyard);
-    yield return new(UNIT_NMPE_MUR_GUL_SLAVE_ILLIDARI_NZOTH_WORKER, Unlimited, UnitCategory.Worker);
+    yield return new(UNIT_E020_ANCIENT_SHIPYARD_ILLIDARI_SHIPYARD, Unlimited, UnitCategory.Shipyard);
+    yield return new(UNIT_NMPE_MUR_GUL_SLAVE_ILLIDARI_WORKER, Unlimited, UnitCategory.Worker);
     yield return new(UNIT_NMYR_NAGA_MYRMIDON_ILLIDARI, Unlimited);
     yield return new(UNIT_NSNP_SNAP_DRAGON_ILLIDARI, Unlimited);
     yield return new(UNIT_NNSW_SIREN_ILLIDARI, Unlimited);
@@ -37,22 +37,22 @@ public static class IllidariObjectInfo
     yield return new(UNIT_NDRN_ASHTONGUE_DEATHSWORN_ILLIDARI, Unlimited);
     yield return new(UNIT_NDRS_ASHTONGUE_MYSTIC_ILLIDARI, 6);
     yield return new(UNIT_ETRS_NIGHT_ELF_TRANSPORT_SHIP_DRUIDS_SENTINELS, Unlimited);
-    yield return new(UNIT_H0AU_SCOUT_SHIP_NIGHT_ELVES, Unlimited);
-    yield return new(UNIT_H0AV_FRIGATE_NIGHT_ELVES, Unlimited);
-    yield return new(UNIT_H0B1_FIRESHIP_NIGHT_ELVES, Unlimited);
-    yield return new(UNIT_H057_GALLEY_NIGHT_ELVES, Unlimited);
-    yield return new(UNIT_H0B4_BOARDING_VESSEL_NIGHT_ELVES, Unlimited);
-    yield return new(UNIT_H0BA_JUGGERNAUT_NIGHT_ELVES, Unlimited);
-    yield return new(UNIT_H0B8_BOMBARD_NIGHT_ELVES, 6);
+    yield return new(UNIT_H0AU_SCOUT_SHIP_NIGHTELVES, Unlimited);
+    yield return new(UNIT_H0AV_FRIGATE_NIGHTELVES, Unlimited);
+    yield return new(UNIT_H0B1_FIRESHIP_NIGHTELVES, Unlimited);
+    yield return new(UNIT_H057_GALLEY_NIGHTELVES, Unlimited);
+    yield return new(UNIT_H0B4_BOARDING_VESSEL_NIGHTELVES, Unlimited);
+    yield return new(UNIT_H0BA_JUGGERNAUT_NIGHTELVES, Unlimited);
+    yield return new(UNIT_H0B8_BOMBARD_NIGHTELVES, 6);
     yield return new(UNIT_HVSH_SEA_WITCH_ILLIDARI, 1);
-    yield return new(UNIT_U00S_HIGH_WARLORD_NAGA, 1);
+    yield return new(UNIT_U00S_HIGH_WARLORD_ILLIDARI, 1);
     yield return new(UNIT_NAKA_ELDER_SAGE_ILLIDARI, 1);
     yield return new(UPGRADE_RNSW_SIREN_ADEPT_TRAINING, Unlimited);
     yield return new(UPGRADE_R02V_SHADOWCASTER_MASTER_TRAINING, Unlimited);
     yield return new(UPGRADE_ZBSI_SEA_WITCHES_ILLIDARI, Unlimited);
     yield return new(UPGRADE_ZB9L_COILFANG_SUMMONERS_ILLIDARI, Unlimited);
 
-    yield return new(UNIT_EEVI_DEMON_HUNTER_HYBRID_ILLIDARI, 1);
+    yield return new(UNIT_EEVI_DEMON_HUNTER_ILLIDARI_HYBRID_ILLIDAN, 1);
     yield return new(UNIT_EEVM_DEMON_HUNTER_MORPHED_LEVEL_1_ILLIDARI, 1);
   }
 }

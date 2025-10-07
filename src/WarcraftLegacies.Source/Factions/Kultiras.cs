@@ -25,9 +25,9 @@ public sealed class Kultiras : Faction
     TraditionalTeam = TeamSetup.SouthAlliance;
     _allLegendSetup = allLegendSetup;
     _artifactSetup = artifactSetup;
-    _proudmooreCapitalShip = preplacedUnitSystem.GetUnit(UNIT_H05V_PROUDMOORE_FLAGSHIP_KUL_TIRAS);
+    _proudmooreCapitalShip = preplacedUnitSystem.GetUnit(UNIT_H05V_PROUDMOORE_FLAGSHIP_KULTIRAS);
     StartingGold = 200;
-    ControlPointDefenderUnitTypeId = UNIT_H09W_CONTROL_POINT_DEFENDER_KUL_TIRAS;
+    ControlPointDefenderUnitTypeId = UNIT_H09W_CONTROL_POINT_DEFENDER_KULTIRAS;
     IntroText = $"You are playing as the maritime {PrefixCol}Kingdom of Kul Tiras|r.\n\n" +
                 "You begin on Balor Island, separated from your main forces in Kul Tiras. Unite your forces by eliminating your enemies in Tiragarde, Drustvar, and Stormsong Valley.\n\n" +
                 "Stormwind is preparing for an invasion through the Dark Portal in the South. Muster the Admiralty and assist them, or risk losing your strongest ally.";

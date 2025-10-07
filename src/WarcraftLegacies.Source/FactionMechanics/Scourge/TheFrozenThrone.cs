@@ -68,7 +68,7 @@ public static class TheFrozenThrone
     if (_frozenThrone.Unit != null)
     {
       _frozenThrone.Unit.Name = "Frozen Throne (Empty)";
-      _frozenThrone.Unit.Skin = UNIT_ZBFT_FROZEN_THRONE_EMPTY;
+      _frozenThrone.Unit.Skin = UNIT_ZBFT_FROZEN_THRONE_SCOURGE_EMPTY;
     }
 
     State = FrozenThroneState.Empty;

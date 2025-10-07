@@ -14,7 +14,7 @@ public sealed class LegendAhnqiraj
   {
     Cthun = new LegendaryHero("C'thun")
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_U00R_OLD_GOD_AHN_QIRAJ),
+      Unit = preplacedUnitSystem.GetUnit(UNIT_U00R_OLD_GOD_CTHUN),
       PermaDies = true,
       StartingXp = 41800,
     };

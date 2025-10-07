@@ -48,7 +48,7 @@ public sealed class CorruptedSunwell : Power
 
     var x = castingUnit.X;
     var y = castingUnit.Y;
-    var wretched = unit.Create(player.NeutralAggressive, UNIT_N05K_WRETCHED_CORRUPTED_SUNWELL, x, y, 0);
+    var wretched = unit.Create(player.NeutralAggressive, UNIT_N05K_WRETCHED_QUELTHALAS_CORRPTED_SUNWELL, x, y, 0);
     wretched.SetTimedLife(120.0f);
     wretched.AddType(unittype.Summoned);
   }

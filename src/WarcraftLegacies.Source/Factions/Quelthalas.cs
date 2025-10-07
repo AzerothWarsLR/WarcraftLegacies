@@ -88,7 +88,7 @@ public sealed class Quelthalas : Faction
   private void RegisterQuests()
   {
     var newQuest = AddQuest(new QuestSilvermoon(Regions.SunwellAmbient,
-      _preplacedUnitSystem.GetUnit(UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS_OTHER, new Point(20477, 17447)), _allLegendSetup.Quelthalas.Silvermoon, _allLegendSetup.Quelthalas.Sunwell));
+      _preplacedUnitSystem.GetUnit(UNIT_H00D_ELVEN_RUNESTONE_QUELTHALAS_OTHER, new Point(20477, 17447)), _allLegendSetup.Quelthalas.Silvermoon, _allLegendSetup.Quelthalas.Sunwell));
     StartingQuest = newQuest;
     AddQuest(new QuestUnlockSpire(Regions.WindrunnerSpireUnlock, _allLegendSetup.Quelthalas.Sylvanas));
     AddQuest(new QuestTheBloodElves(_allLegendSetup.Neutral.DraktharonKeep));

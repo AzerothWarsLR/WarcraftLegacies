@@ -23,11 +23,9 @@ public static class FrostwolfObjectInfo
     yield return new(UNIT_NBT2_IMPROVED_BOULDER_TOWER, Unlimited, UnitCategory.Tower3);
     yield return new(UNIT_OVLN_VOODOO_LOUNGE_FROSTWOLF_SHOP, Unlimited, UnitCategory.Shop);
     yield return new(UNIT_OSHY_HORDE_PIER_FROSTWOLF_SHIPYARD, Unlimited, UnitCategory.Shipyard);
-    yield return new(UNIT_OOSC_PACK_KODO_FROSTWOLF, Unlimited);
     yield return new(UNIT_OBEA_BEASTIARY_FROSTWOLF_SPECIALIST, Unlimited, UnitCategory.Specialist);
     yield return new(UNIT_N06Z_FLIGHT_PATH_FROSTWOLF_WARSONG, 1, UnitCategory.Teleport);
     yield return new(UNIT_OPEO_PEON_FROSTWOLF_WARSONG_WORKER, Unlimited, UnitCategory.Worker);
-    yield return new(UNIT_NTT2_TAUREN_TENT_FROSTWOLF_OTHER, Unlimited, UnitCategory.SpecailFarm1);
     yield return new(UNIT_H004_TROLL_HUT_FROSTWOLF_FARM, Unlimited, UnitCategory.SpecailFarm2);
     yield return new(UNIT_OGRU_GRUNT_FROSTWOLF, Unlimited, UnitCategory.MeleeBasic);
     yield return new(UNIT_OTAU_TAUREN_FROSTWOLF, Unlimited, UnitCategory.MeleeAdvanced);
@@ -62,7 +60,6 @@ public static class FrostwolfObjectInfo
     yield return new(UPGRADE_ROLF_AIRBORNE_TOXINS_FROSTWOLF, Unlimited);
     yield return new(UPGRADE_ROSP_SPIKED_BARRICADES_IMPROVED_SPIKED_BARRICADES_ADVANCED_SPIKED_BARRICADES_FROSTWOLF_FEL_HORDE_WARSONG, Unlimited);
     yield return new(UPGRADE_RORB_REINFORCED_DEFENSES_FROSTWOLF_FEL_HORDE_WARSONG, Unlimited);
-    yield return new(UPGRADE_R00H_ANIMAL_COMPANION_FROSTWOLF, Unlimited);
     yield return new(UPGRADE_R00R_IMPROVED_CHAIN_LIGHTNING_FROSTWOLF, Unlimited);
     yield return new(UPGRADE_R00W_TOUGHENED_HIDES_FROSTWOLF, Unlimited);
     yield return new(UPGRADE_R01Z_PILLAGE_ECHO_ISLES, Unlimited);

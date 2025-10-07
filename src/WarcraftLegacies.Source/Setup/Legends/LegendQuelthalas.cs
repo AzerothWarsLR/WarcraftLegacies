@@ -22,12 +22,12 @@ public sealed class LegendQuelthalas
       DeathMessage = "The grand city of the high elves, Silvermoon, has been crushed by her enemies.",
       Essential = true
     };
-    Silvermoon.AddProtector(preplacedUnitSystem.GetUnit(UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS_OTHER, new Point(20479, 17477)));
-    Silvermoon.AddProtector(preplacedUnitSystem.GetUnit(UNIT_H00D_ELVEN_RUNESTONE_QUEL_THALAS_OTHER, new Point(17415, 13196)));
+    Silvermoon.AddProtector(preplacedUnitSystem.GetUnit(UNIT_H00D_ELVEN_RUNESTONE_QUELTHALAS_OTHER, new Point(20479, 17477)));
+    Silvermoon.AddProtector(preplacedUnitSystem.GetUnit(UNIT_H00D_ELVEN_RUNESTONE_QUELTHALAS_OTHER, new Point(17415, 13196)));
 
     Sunwell = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_N001_THE_SUNWELL_QUEL_THALAS_OTHER),
+      Unit = preplacedUnitSystem.GetUnit(UNIT_N001_THE_SUNWELL_QUELTHALAS_OTHER),
       Capturable = true,
       Essential = true,
       DeathMessage = "The Sunwell, once a source of great magical energy, is no more. Its corruption has ended, and the land is free from its dark influence."
@@ -36,7 +36,7 @@ public sealed class LegendQuelthalas
 
     Anasterian = new LegendaryHero("Anasterian Sunstrider")
     {
-      UnitType = UNIT_H00Q_KING_OF_QUEL_THALAS_QUEL_THALAS,
+      UnitType = UNIT_H00Q_KING_OF_QUEL_THALAS_QUELTHALAS,
       PlayerColor = playercolor.Maroon,
       StartingXp = 1000,
       StartingArtifacts = new()
@@ -47,7 +47,7 @@ public sealed class LegendQuelthalas
 
     Rommath = new LegendaryHero("Grand Magister Rommath")
     {
-      UnitType = UNIT_H04F_ARCHMAGE_GREEN,
+      UnitType = UNIT_H04F_ARCHMAGE_QUELTHALAS,
       StartingXp = 4000
     };
 
@@ -55,14 +55,14 @@ public sealed class LegendQuelthalas
 
     Sylvanas = new LegendaryHero("Sylvanas Windrunner")
     {
-      UnitType = UNIT_HVWD_RANGER_GENERAL_OF_SILVERMOON_QUEL_THALAS,
+      UnitType = UNIT_HVWD_RANGER_GENERAL_OF_SILVERMOON_QUELTHALAS,
       PlayerColor = playercolor.Green
     };
 
 
     Lorthemar = new LegendaryHero("Lor'themar Theron")
     {
-      UnitType = UNIT_H02E_REGENT_OF_QUEL_THALAS_QUEL_THALAS_VASSAL,
+      UnitType = UNIT_H02E_REGENT_OF_QUEL_THALAS_QUELTHALAS_VASSAL,
       StartingXp = 2800
     };
 

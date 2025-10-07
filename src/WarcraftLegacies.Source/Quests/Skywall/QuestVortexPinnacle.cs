@@ -28,7 +28,7 @@ public sealed class QuestVortexPinnacle : QuestData
     AddObjective(new ObjectiveControlPoint(UNIT_N0BD_ULDUM));
     AddObjective(new ObjectiveHostilesInAreaAreDead(new List<Rectangle> { Regions.UldumAmbiance }, "in Uldum"));
     AddObjective(new ObjectiveExpire(660, Title));
-    AddObjective(new ObjectiveUpgrade(UNIT_N06R_GREAT_ALCAZAR_ELEMENTAL_T3, UNIT_N05Q_HOLDFAST_ELEMENTAL_T1));
+    AddObjective(new ObjectiveUpgrade(UNIT_N06R_GREAT_ALCAZAR_SKYWALL_T3, UNIT_N05Q_HOLDFAST_SKYWALL_T1));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
       filterUnit => filterUnit.UnitType != FourCC("ngme"));
@@ -40,7 +40,7 @@ public sealed class QuestVortexPinnacle : QuestData
   public override string RewardFlavour => "The Vortex Pinnacle and Al-Akir have joined us";
 
   /// <inheritdoc />
-  protected override string RewardDescription => $"Gain Control of all buildings in the Vortex Pinnacle, learn to train Al-Akir from the {GetObjectName(UNIT_N078_ALTAR_OF_ELEMENTS_ELEMENTAL_ALTAR)}";
+  protected override string RewardDescription => $"Gain Control of all buildings in the Vortex Pinnacle, learn to train Al-Akir from the {GetObjectName(UNIT_N078_ALTAR_OF_ELEMENTS_SKYWALL_ALTAR)}";
 
   /// <inheritdoc />
   protected override void OnFail(Faction completingFaction)

@@ -184,7 +184,7 @@ public static class BlightSetup
       });
 
     BlightSystem.Register(
-      preplacedUnitSystem.GetUnit(UNIT_N003_IMPROVED_SUN_TOWER_QUEL_THALAS_TOWER, new Point(20679, 17143)),
+      preplacedUnitSystem.GetUnit(UNIT_N003_IMPROVED_SUN_TOWER_QUELTHALAS_TOWER, new Point(20679, 17143)),
       new BlightParameters
       {
         PrimaryBlightRadius = 200,
@@ -194,7 +194,7 @@ public static class BlightSetup
       });
 
     BlightSystem.Register(
-      preplacedUnitSystem.GetUnit(UNIT_H074_ARCANE_TOWER_QUEL_THALAS_TOWER, Regions.Dreadscar_3.Center),
+      preplacedUnitSystem.GetUnit(UNIT_H074_ARCANE_TOWER_QUELTHALAS_TOWER, Regions.Dreadscar_3.Center),
       new BlightParameters
       {
         PrimaryBlightRadius = 200,

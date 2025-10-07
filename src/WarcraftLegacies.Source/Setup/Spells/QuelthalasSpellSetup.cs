@@ -14,7 +14,7 @@ public static class QuelthalasSpellSetup
   {
     var summonGraniteGolems = new SummonUnits(ABILITY_A0EP_SUMMON_GRANITE_GOLEMS_QUEL_THALAS_SUNWELL)
     {
-      SummonUnitTypeId = UNIT_NGGR_GRANITE_GOLEM_QUEL_THALAS,
+      SummonUnitTypeId = UNIT_NGGR_GRANITE_GOLEM_QUELTHALAS,
       SummonCount = 4,
       Duration = 60,
       Radius = 400,
@@ -55,7 +55,7 @@ public static class QuelthalasSpellSetup
     };
     SpellSystem.Register(siphoningRitual);
 
-    PassiveAbilityManager.Register(new DefensiveOrbs(UNIT_H00Q_KING_OF_QUEL_THALAS_QUEL_THALAS, ABILITY_A055_DEFENSIVE_ORBS_QUEL_THALAS_ANASTERIAN)
+    PassiveAbilityManager.Register(new DefensiveOrbs(UNIT_H00Q_KING_OF_QUEL_THALAS_QUELTHALAS, ABILITY_A055_DEFENSIVE_ORBS_QUEL_THALAS_ANASTERIAN)
     {
       OrbitRadius = 350,
       OrbitalPeriod = 4,

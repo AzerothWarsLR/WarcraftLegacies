@@ -30,7 +30,7 @@ public sealed class QuestTitanJailors : QuestData
     AddObjective(new ObjectiveControlPoint(UNIT_NLSE_TEMPLE_OF_AHN_QIRAJ, 1500));
     AddObjective(new ObjectiveExpire(660, Title));
     AddObjective(new ObjectiveSelfExists());
-    AddObjective(new ObjectiveUpgrade(UNIT_U022_NEXUS_C_THUN_T3, UNIT_U020_MONUMENT_C_THUN_T1));
+    AddObjective(new ObjectiveUpgrade(UNIT_U022_NEXUS_CTHUN_T3, UNIT_U020_MONUMENT_CTHUN_T1));
     _rockGroups = new List<RockGroup>();
     _allLegendSetup = allLegendSetup;
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);

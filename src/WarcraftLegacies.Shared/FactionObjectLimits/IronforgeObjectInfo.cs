@@ -30,7 +30,7 @@ public static class IronforgeObjectInfo
     yield return new(UNIT_H019_MASON_IRONFORGE_WORKER, Unlimited);
     yield return new(UNIT_HRIF_RIFLEMAN_IRONFORGE, Unlimited);
     yield return new(UNIT_HMTM_MORTAR_TEAM_IRONFORGE, 9);
-    yield return new(UNIT_N0CZ_DREADNAUGHT_DWARF, 4);
+    yield return new(UNIT_N0CZ_DREADNAUGHT_IRONFORGE, 4);
     yield return new(UNIT_HGRY_GRYPHON_RIDER_IRONFORGE, 6);
     yield return new(UNIT_H018_WARRIOR_IRONFORGE, Unlimited);
     yield return new(UNIT_H01L_THANE_IRONFORGE_ELITE, 6);
@@ -40,8 +40,8 @@ public static class IronforgeObjectInfo
     yield return new(UNIT_N00C_RUNE_PRIEST_IRONFORGE, Unlimited);
     yield return new(UNIT_H03Z_STORMRIDER_IRONFORGE, 3);
     yield return new(UNIT_H01M_BAELGUN_FLAMEBEARD_IRONFORGE_DEMI, 1);
-    yield return new(UNIT_H00S_KING_OF_KHAZ_MODAN_KHAZ_MODAN, 1);
-    yield return new(UNIT_HMBR_HIGH_THANE_OF_THE_BRONZEBEARDS_KHAZ_MODAN, 1);
+    yield return new(UNIT_H00S_KING_OF_KHAZ_MODAN_IRONFORGE, 1);
+    yield return new(UNIT_HMBR_HIGH_THANE_OF_THE_BRONZEBEARDS_IRONFORGE, 1);
     yield return new(UNIT_H03G_EMPEROR_OF_BLACKROCK_RAGNAROS, 1);
     yield return new(UNIT_H028_THANE_OF_AERIE_PEAK_IRONFORGE, 1);
     yield return new(UNIT_HBOT_TRANSPORT_SHIP_ALLIANCE, Unlimited);

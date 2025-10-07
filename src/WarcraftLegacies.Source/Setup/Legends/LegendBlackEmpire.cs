@@ -21,19 +21,19 @@ public sealed class LegendBlackEmpire
 
     Zonozz = new LegendaryHero("Warlord Zon'ozz")
     {
-      UnitType = UNIT_U00P_LIEUTENANT_OF_N_ZOTH_BLACK_EMPIRE,
+      UnitType = UNIT_U00P_LIEUTENANT_OF_N_ZOTH_NZOTH,
       StartingXp = 2800,
     };
 
     Zaqul = new LegendaryHero("Za'qul")
     {
-      UnitType = UNIT_E01D_HARBINGER_OF_NY_ALOTHA_YOGG,
+      UnitType = UNIT_E01D_HARBINGER_OF_NY_ALOTHA_NZOTH,
       StartingXp = 1000,
     };
 
     Yorsahj = new LegendaryHero("Yor'sahj")
     {
-      UnitType = UNIT_U02B_N_RAQI_ABERRATION_BLACK_EMPIRE,
+      UnitType = UNIT_U02B_N_RAQI_ABERRATION_NZOTH,
       StartingXp = 0,
     };
   }

@@ -46,9 +46,9 @@ public static class SunfuryObjectInfo
     yield return new(UNIT_H0B6_BOARDING_VESSEL_ALLIANCE, Unlimited);
     yield return new(UNIT_H0AN_JUGGERNAUT_ALLIANCE, Unlimited);
     yield return new(UNIT_H0B7_BOMBARD_ALLIANCE, 6);
-    yield return new(UNIT_H098_SUNFURY_MASTERMIND_HIGH_ELVES, 1);
+    yield return new(UNIT_H098_SUNFURY_MASTERMIND_QUELTHALAS, 1);
     yield return new(UNIT_U02V_HIGH_ASTROMANCER_SUNFURY, 1);
-    yield return new(UNIT_HKAL_PRINCE_OF_QUEL_THALAS_QUEL_THALAS, 1);
+    yield return new(UNIT_HKAL_PRINCE_OF_QUEL_THALAS_QUELTHALAS, 1);
     yield return new(UNIT_U004_THE_DECEIVER_LEGION, 1);
     yield return new(UNIT_N0E5_VOID_REAVER_SUNFURY_DEMI, 1);
     yield return new(UPGRADE_R09H_ASTROMANCER_MASTER_TRAINING_SUNFURY, Unlimited);

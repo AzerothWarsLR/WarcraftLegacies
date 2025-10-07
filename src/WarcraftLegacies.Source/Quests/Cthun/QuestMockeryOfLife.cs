@@ -24,5 +24,5 @@ public sealed class QuestMockeryOfLife : QuestData
 
   /// <inheritdoc />
   protected override string RewardDescription =>
-    $"Learn to train {GetObjectName(UNIT_U02S_ANCIENT_SAND_WORM)}s from the {GetObjectName(UNIT_U01F_ALTAR_OF_THE_OLD_ONES_C_THUN_ALTAR)}";
+    $"Learn to train {GetObjectName(UNIT_U02S_ANCIENT_SAND_WORM)}s from the {GetObjectName(UNIT_U01F_ALTAR_OF_THE_OLD_ONES_CTHUN_ALTAR)}";
 }

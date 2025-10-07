@@ -9,20 +9,20 @@ public static class ScarletCrusadeObjectInfo
 
   public static IEnumerable<ObjectInfo> GetAllObjectLimits()
   {
-    yield return new(UNIT_H0BM_TOWN_HALL_CRUSADE_T1, Unlimited);
-    yield return new(UNIT_H0BN_KEEP_CRUSADE_T2, Unlimited);
-    yield return new(UNIT_H0BO_CASTLE_CRUSADE_T3, Unlimited);
-    yield return new(UNIT_H0BP_FARMSTEAD_CRUSADE_FARM, Unlimited);
-    yield return new(UNIT_H0A3_BLACKSMITH_CRUSADE_RESEARCH, Unlimited);
-    yield return new(UNIT_H09X_SHIPYARD_CRUSADE_SHIPYARD, Unlimited, UnitCategory.Shipyard);
-    yield return new(UNIT_H0AG_HALL_OF_SWORDS_CRUSADE_BARRACKS, Unlimited);
-    yield return new(UNIT_H0BE_STUDIUM_CRUSADE_MAGIC, Unlimited);
-    yield return new(UNIT_H0BL_ROOKERY_CRUSADE_BEAST, Unlimited);
-    yield return new(UNIT_N035_DIVINE_BASTION_CRUSADE_SPECIAL, 1);
-    yield return new(UNIT_H0BI_BOMBARD_TOWER_CRUSADE_TOWER, Unlimited);
-    yield return new(UNIT_H0BJ_IMPROVED_BOMBARD_TOWER_CRUSADE_TOWER, Unlimited);
-    yield return new(UNIT_H0BQ_ALTAR_OF_CRUSADERS_CRUSADE_ALTAR, Unlimited);
-    yield return new(UNIT_N0D8_VENDOR_HALL_CRUSADE_SHOP, Unlimited);
+    yield return new(UNIT_H0BM_TOWN_HALL_SCARLET_T1, Unlimited);
+    yield return new(UNIT_H0BN_KEEP_SCARLET_T2, Unlimited);
+    yield return new(UNIT_H0BO_CASTLE_SCARLET_T3, Unlimited);
+    yield return new(UNIT_H0BP_FARMSTEAD_SCARLET_FARM, Unlimited);
+    yield return new(UNIT_H0A3_BLACKSMITH_SCARLET_RESEARCH, Unlimited);
+    yield return new(UNIT_H09X_SHIPYARD_SCARLET_SHIPYARD, Unlimited, UnitCategory.Shipyard);
+    yield return new(UNIT_H0AG_HALL_OF_SWORDS_SCARLET_BARRACKS, Unlimited);
+    yield return new(UNIT_H0BE_STUDIUM_SCARLET_MAGIC, Unlimited);
+    yield return new(UNIT_H0BL_ROOKERY_SCARLET_BEAST, Unlimited);
+    yield return new(UNIT_N035_DIVINE_BASTION_SCARLET_SPECIAL, 1);
+    yield return new(UNIT_H0BI_BOMBARD_TOWER_SCARLET_TOWER, Unlimited);
+    yield return new(UNIT_H0BJ_IMPROVED_BOMBARD_TOWER_SCARLET_TOWER, Unlimited);
+    yield return new(UNIT_H0BQ_ALTAR_OF_CRUSADERS_SCARLET_ALTAR, Unlimited);
+    yield return new(UNIT_N0D8_VENDOR_HALL_SCARLET_SHOP, Unlimited);
     yield return new(UNIT_H022_FARMER_DALARAN_WORKER, Unlimited);
     yield return new(UNIT_H06B_TEMPLAR_LORDAERON, 6);
     yield return new(UNIT_H08I_CRUSADER_SCARLET, Unlimited);

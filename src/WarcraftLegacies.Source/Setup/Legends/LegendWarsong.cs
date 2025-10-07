@@ -33,7 +33,7 @@ public sealed class LegendWarsong
 
     Saurfang = new LegendaryHero("Varok Saurfang")
     {
-      UnitType = UNIT_VSWS_HIGH_OVERLORD_OF_THE_KOR_KRON_VASSAL,
+      UnitType = UNIT_VSWS_HIGH_OVERLORD_OF_THE_KOR_KRON_WARSONG,
       StartingXp = 2800
     };
 

@@ -7,8 +7,8 @@ namespace WarcraftLegacies.Source.Quests.Fel_Horde;
 public sealed class QuestFelHordeKillIronforge : QuestData
 {
   private const int UnitLimit = 4;
-  private const int UnittypeId = UNIT_NINA_INFERNAL_JUGGERNAUT_FEL_HORDE;
-  private const int BuildingId = UNIT_O030_FORTRESS_FEL_HORDE_T3;
+  private const int UnittypeId = UNIT_NINA_INFERNAL_JUGGERNAUT_FEL;
+  private const int BuildingId = UNIT_O030_FORTRESS_FEL_T3;
 
   public QuestFelHordeKillIronforge(Capital theGreatForge) : base("Felsteel Refining",
     "The smiths of Ironforge have long been put to use crafting goods and war machinery. In the hands of the Fel Horde, they could be used to smelt and refine the ultimate metal: Felsteel.",

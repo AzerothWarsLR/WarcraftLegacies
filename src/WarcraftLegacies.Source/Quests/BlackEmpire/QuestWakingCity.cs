@@ -34,7 +34,7 @@ public sealed class QuestWakingCity : QuestData
     AddObjective(new ObjectiveControlPoint(UNIT_NNYA_NY_ALOTHA_THE_WAKING_CITY));
     AddObjective(new ObjectiveQuestComplete(prerequisite));
     AddObjective(new ObjectiveExpire(660, Title));
-    AddObjective(new ObjectiveUpgrade(UNIT_N0AT_CATHEDRAL_OF_MADNESS_YOGG_T3, UNIT_N0AR_TWISTING_HALLS_YOGG_T1));
+    AddObjective(new ObjectiveUpgrade(UNIT_N0AT_CATHEDRAL_OF_MADNESS_NZOTH_T3, UNIT_N0AR_TWISTING_HALLS_NZOTH_T1));
     AddObjective(new ObjectiveSelfExists());
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll,
       filterUnit => filterUnit.UnitType != FourCC("ngol"));
@@ -47,7 +47,7 @@ public sealed class QuestWakingCity : QuestData
   public override string RewardFlavour => "With the adventurer party destroyed, no one stands in my way.";
 
   /// <inheritdoc />
-  protected override string RewardDescription => $"Gain control of all buildings in Ny'lotha, learn to build the {GetObjectName(UNIT_N0AX_MUTATION_CIRCLE_YOGG_SPECIALIST)}, and gain control of N'zoth";
+  protected override string RewardDescription => $"Gain control of all buildings in Ny'lotha, learn to build the {GetObjectName(UNIT_N0AX_MUTATION_CIRCLE_NZOTH_SPECIALIST)}, and gain control of N'zoth";
 
   /// <inheritdoc />
   protected override void OnFail(Faction completingFaction)

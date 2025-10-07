@@ -28,12 +28,12 @@ public sealed class QuestMawofGorath : QuestData
   public override string RewardFlavour => "I have gained a new Forgotten One.";
 
   /// <inheritdoc />
-  protected override string RewardDescription => $"Learn to train one additional {GetObjectName(UNIT_U02F_FORGOTTEN_ONE_YOGG)} from the {GetObjectName(UNIT_N0AX_MUTATION_CIRCLE_YOGG_SPECIALIST)}";
+  protected override string RewardDescription => $"Learn to train one additional {GetObjectName(UNIT_U02F_FORGOTTEN_ONE_NZOTH)} from the {GetObjectName(UNIT_N0AX_MUTATION_CIRCLE_NZOTH_SPECIALIST)}";
 
   /// <inheritdoc/>
   protected override void OnComplete(Faction whichFaction)
   {
-    whichFaction.ModObjectLimit(UNIT_U02F_FORGOTTEN_ONE_YOGG, 1);
+    whichFaction.ModObjectLimit(UNIT_U02F_FORGOTTEN_ONE_NZOTH, 1);
   }
 
 }

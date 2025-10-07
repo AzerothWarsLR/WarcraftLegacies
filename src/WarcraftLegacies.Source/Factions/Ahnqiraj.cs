@@ -31,7 +31,7 @@ public sealed class Ahnqiraj : Faction
     playercolor.Wheat, @"ReplaceableTextures\CommandButtons\BTNCthunIcon.blp")
   {
     _allLegendSetup = allLegendSetup;
-    _gateAhnQiraj = preplacedUnitSystem.GetUnit(UNIT_H02U_GATES_OF_AHN_QIRAJ_CLOSED);
+    _gateAhnQiraj = preplacedUnitSystem.GetUnit(UNIT_H02U_GATES_OF_AHN_QIRAJ_GATE_CLOSED);
     ControlPointDefenderUnitTypeId = UNIT_N0DW_CONTROL_POINT_DEFENDER_CTHUN_TOWER;
     TraditionalTeam = TeamSetup.OldGods;
     StartingGold = 200;
@@ -83,10 +83,10 @@ public sealed class Ahnqiraj : Faction
     {
       TransformableUnitTypeIds = new int[]
       {
-        UNIT_U019_WORKER_C_THUN_WORKER,
-        UNIT_UCBD_BURROWED_WORKER_C_THUN_WORKER
+        UNIT_U019_WORKER_CTHUN_WORKER,
+        UNIT_UCBD_BURROWED_WORKER_CTHUN_WORKER
       },
-      TransformedUnitTypeId = UNIT_N06I_SOLDIER_C_THUN_SILITHID_WARRIOR
+      TransformedUnitTypeId = UNIT_N06I_SOLDIER_CTHUN_SILITHID_WARRIOR
     });
     ResearchManager.RegisterIncompatibleSet(new BasicResearch(UPGRADE_ZBML_SPELL_CONDUCTION_C_THUN, 170),
       new RemoveAbilityResearch(UPGRADE_ZBHS_SHAPED_OBSIDIAN_C_THUN, 100)
@@ -108,14 +108,14 @@ public sealed class Ahnqiraj : Faction
     {
       MaximumHealthPercentage = 0.5f,
       Duration = 45,
-      EggId = UNIT_ZBBG_COCOON_DEFENSIVE_COCOON,
+      EggId = UNIT_ZBBG_COCOON_CTHUN_DEFENSIVE_COCOON,
       ReviveEffect = @"Abilities\Spells\Undead\RaiseSkeletonWarrior\RaiseSkeleton.mdl",
       RequiredResearch = UPGRADE_ZBEH_DEFENSIVE_COCOOON_AHN_QIRAJ
     });
 
-    PassiveAbilityManager.Register(new Incubate(UNIT_H01N_VILE_CORRUPTER_C_THUN, ABILITY_ZBRD_INCUBATE_VILE_CORRUPTOR)
+    PassiveAbilityManager.Register(new Incubate(UNIT_H01N_VILE_CORRUPTER_CTHUN, ABILITY_ZBRD_INCUBATE_VILE_CORRUPTOR)
     {
-      HatchedUnitTypeId = UNIT_N06I_SOLDIER_C_THUN_SILITHID_WARRIOR,
+      HatchedUnitTypeId = UNIT_N06I_SOLDIER_CTHUN_SILITHID_WARRIOR,
       MaturationDuration = new LeveledAbilityField<float>
       {
         Base = 315f,
@@ -171,14 +171,14 @@ public sealed class Ahnqiraj : Faction
       EffectScaleTarget = 1
     });
 
-    PassiveAbilityManager.Register(new HideousAppendages(UNIT_U00R_OLD_GOD_AHN_QIRAJ)
+    PassiveAbilityManager.Register(new HideousAppendages(UNIT_U00R_OLD_GOD_CTHUN)
     {
       TentacleUnitTypeId = UNIT_N073_TENTACLE_HIDEOUS_APPENDAGES_C_THUN,
       TentacleCount = 9,
       RadiusOffset = 520
     });
 
-    PassiveAbilityManager.Register(new InfiniteInfluence(UNIT_U00R_OLD_GOD_AHN_QIRAJ)
+    PassiveAbilityManager.Register(new InfiniteInfluence(UNIT_U00R_OLD_GOD_CTHUN)
     {
       Radius = 800
     });

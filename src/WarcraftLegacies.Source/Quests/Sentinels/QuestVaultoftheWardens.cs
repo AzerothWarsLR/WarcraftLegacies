@@ -34,7 +34,7 @@ public sealed class QuestVaultoftheWardens : QuestData
 
   /// <inheritdoc />
   protected override string RewardDescription =>
-    $"4 free {GetObjectName(UNIT_H045_WARDEN_SENTINELS)}s appear at the Broken Isles, and you learn to train {GetObjectName(UNIT_H045_WARDEN_SENTINELS)}s from the {GetObjectName(UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)} and from {GetObjectName(UNIT_E00T_WATCHER_S_BASTION_SENTINEL_SIEGE)}s";
+    $"4 free {GetObjectName(UNIT_H045_WARDEN_SENTINELS)}s appear at the Broken Isles, and you learn to train {GetObjectName(UNIT_H045_WARDEN_SENTINELS)}s from the {GetObjectName(UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)} and from {GetObjectName(UNIT_E00T_WATCHER_S_BASTION_SENTINELS_SIEGE)}s";
 
   /// <inheritdoc />
   protected override void OnComplete(Faction completingFaction)
@@ -42,7 +42,7 @@ public sealed class QuestVaultoftheWardens : QuestData
     CreateUnits(completingFaction.Player, WardenId, Regions.VaultoftheWardens.Center.X,
       Regions.VaultoftheWardens.Center.Y, 270, 4);
     completingFaction.Player.DisplayUnitTypeAcquired(WardenId,
-      $"You can now train Wardens from the {GetObjectName(UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)} and from {GetObjectName(UNIT_E00T_WATCHER_S_BASTION_SENTINEL_SIEGE)}s.");
+      $"You can now train Wardens from the {GetObjectName(UNIT_N04G_VAULT_OF_THE_WARDENS_SENTINELS)} and from {GetObjectName(UNIT_E00T_WATCHER_S_BASTION_SENTINELS_SIEGE)}s.");
     _vaultOfTheWardens.Unit?.Rescue(completingFaction.Player);
   }
 

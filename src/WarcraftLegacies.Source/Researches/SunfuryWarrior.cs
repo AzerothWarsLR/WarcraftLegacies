@@ -19,7 +19,7 @@ public sealed class SunfuryWarrior : Research
   public override void OnResearch(player researchingPlayer)
   {
     var faction = researchingPlayer.GetFaction();
-    faction?.ModObjectLimit(UNIT_HHES_SWORDSMAN_QUEL_THALAS, -Faction.Unlimited);
-    faction?.ModObjectLimit(UNIT_NBEL_SUNFURY_WARRIOR_QUEL_THALAS, Faction.Unlimited);
+    faction?.ModObjectLimit(UNIT_HHES_SWORDSMAN_QUELTHALAS, -Faction.Unlimited);
+    faction?.ModObjectLimit(UNIT_NBEL_SUNFURY_WARRIOR_QUELTHALAS, Faction.Unlimited);
   }
 }

@@ -32,7 +32,7 @@ public sealed class LegendSentinels
 
     Feathermoon = new Capital
     {
-      Unit = preplacedUnitSystem.GetUnit(UNIT_E00M_FEATHERMOON_STRONGHOLD_SENTINEL_OTHER),
+      Unit = preplacedUnitSystem.GetUnit(UNIT_E00M_FEATHERMOON_STRONGHOLD_SENTINELS_OTHER),
       Essential = true
     };
 
