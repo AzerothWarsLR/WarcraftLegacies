@@ -30,10 +30,6 @@ public sealed class QuestDalaran : QuestData
   }
 
   /// <inheritdoc/>
-  public override string RewardFlavour =>
-    "Dalaran outskirs are now secure, the mages will join Dalaran.";
-
-  /// <inheritdoc/>
   protected override string RewardDescription =>
     "Control of all units in Dalaran, enables Antonidas to be trained at the Altar and you can now build Refuges";
 

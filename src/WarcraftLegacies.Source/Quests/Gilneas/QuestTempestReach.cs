@@ -28,9 +28,6 @@ public sealed class QuestTempestReach : QuestData
   }
 
   /// <inheritdoc/>
-  public override string RewardFlavour => "Tempest Reach has been liberated.";
-
-  /// <inheritdoc/>
   protected override string RewardDescription => "Control of all buildings in Tempest Reach.";
 
   /// <inheritdoc/>

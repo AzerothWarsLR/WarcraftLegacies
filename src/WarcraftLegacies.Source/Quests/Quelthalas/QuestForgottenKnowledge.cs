@@ -22,9 +22,6 @@ public sealed class QuestForgottenKnowledge : QuestData
   }
 
   /// <inheritdoc />
-  public override string RewardFlavour => "We have uncovered the technology to build arcane weaponry";
-
-  /// <inheritdoc />
   protected override string RewardDescription =>
     $"Learn to train {GetObjectName(UNIT_E024_ARCANE_ANNIHILATOR_QUELTHALAS)}s from the {GetObjectName(UNIT_H0CI_ARTIFICER_S_COURT_SUNFURY_SIEGE)}";
 }

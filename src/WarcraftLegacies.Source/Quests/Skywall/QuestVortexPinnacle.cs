@@ -37,9 +37,6 @@ public sealed class QuestVortexPinnacle : QuestData
   }
 
   /// <inheritdoc />
-  public override string RewardFlavour => "The Vortex Pinnacle and Al-Akir have joined us";
-
-  /// <inheritdoc />
   protected override string RewardDescription => $"Gain Control of all buildings in the Vortex Pinnacle, learn to train Al-Akir from the {GetObjectName(UNIT_N078_ALTAR_OF_ELEMENTS_SKYWALL_ALTAR)}";
 
   /// <inheritdoc />

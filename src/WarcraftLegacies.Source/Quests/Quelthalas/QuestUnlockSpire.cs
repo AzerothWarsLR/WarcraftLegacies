@@ -32,9 +32,6 @@ public sealed class QuestUnlockSpire : QuestData
   }
 
   /// <inheritdoc />
-  public override string RewardFlavour => "Sylvanas has been trained, the Spire has joined the Kingdom.";
-
-  /// <inheritdoc />
   protected override string RewardDescription => "Control of the Windrunner Spire";
 
   /// <inheritdoc />

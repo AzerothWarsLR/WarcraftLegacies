@@ -28,9 +28,6 @@ public sealed class QuestThelsamar : QuestData
   }
 
   /// <inheritdoc/>
-  public override string RewardFlavour => "The Murlocs have been defeated, Thelsamar will join your cause.";
-
-  /// <inheritdoc/>
   protected override string RewardDescription => "Control of all units in Thelsamar";
 
   /// <inheritdoc/>

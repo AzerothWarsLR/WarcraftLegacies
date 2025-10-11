@@ -23,9 +23,6 @@ public sealed class QuestDunMorogh : QuestData
   }
 
   /// <inheritdoc/>
-  public override string RewardFlavour => "The Trolls have been defeated, Dun Morogh will join your cause.";
-
-  /// <inheritdoc/>
   protected override string RewardDescription => "Control of all units in Dun Morogh";
 
   /// <inheritdoc/>

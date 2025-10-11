@@ -37,10 +37,6 @@ public sealed class QuestHellfireCitadel : QuestData
   }
 
   /// <inheritdoc/>
-  public override string RewardFlavour =>
-    "Hellfire Citadel has been subjugated, and its military is now free to assist the Fel Horde.";
-
-  /// <inheritdoc/>
   protected override string RewardDescription =>
     "Control of all units in Hellfire Citadel and enable Magtheridon to be trained at the altar";
 

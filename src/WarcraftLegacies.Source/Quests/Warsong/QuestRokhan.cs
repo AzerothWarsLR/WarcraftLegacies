@@ -24,9 +24,6 @@ public sealed class QuestRokhan : QuestData
   }
 
   /// <inheritdoc/>
-  public override string RewardFlavour => "Rohkan has joined the Warsong as a mercenary!";
-
-  /// <inheritdoc/>
   protected override string RewardDescription => "The hero Rohkan is now trainable at the Altar";
 
   /// <inheritdoc/>

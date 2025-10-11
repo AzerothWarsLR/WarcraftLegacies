@@ -25,9 +25,6 @@ public sealed class QuestSubduing : QuestData
     ResearchId = UPGRADE_RSW3_QUEST_COMPLETED_SUBDUING_NEPTULON;
   }
 
-  /// <inheritdoc />
-  public override string RewardFlavour => "Neptulon has been subdued";
-
   /// <uz />
   protected override string RewardDescription => $"Learn to train Neptulon from the {GetObjectName(UNIT_N078_ALTAR_OF_ELEMENTS_SKYWALL_ALTAR)},Tidal Lords from the {GetObjectName(UNIT_N07N_PAVILION_SKYWALL_MAGIC)},and unlocks the {GetObjectName(ABILITY_A0Y4_EARTH_PROTECTION_ELEMENTAL_LORD)} for {GetObjectName(UNIT_N08S_ELEMENTAL_LORD_SKYWALL)}.";
 }

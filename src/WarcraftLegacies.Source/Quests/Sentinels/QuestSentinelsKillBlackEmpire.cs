@@ -23,10 +23,6 @@ public sealed class QuestSentinelsKillBlackEmpire : QuestData
   }
 
   /// <inheritdoc/>
-  public override string RewardFlavour =>
-    "The Black Empire presence on Kalimdor has been eliminated. The land has been protected from their misbegotten race.";
-
-  /// <inheritdoc/>
   protected override string RewardDescription => $"Allows {GetObjectName(UNIT_N034_GUILD_RANGER_SENTINELS)}s to be trained from {GetObjectName(UNIT_E00T_WATCHER_S_BASTION_SENTINELS_SIEGE)}s";
 
   /// <inheritdoc/>

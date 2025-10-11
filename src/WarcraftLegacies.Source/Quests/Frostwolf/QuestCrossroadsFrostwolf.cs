@@ -26,9 +26,6 @@ public sealed class QuestCrossroadsFrostwolf : QuestData
   }
 
   /// <inheritdoc/>
-  public override string RewardFlavour => "The Crossroads have been constructed";
-
-  /// <inheritdoc/>
   protected override string RewardDescription => "Control of the Crossroads";
 
   private void GiveCrossroads(player whichPlayer)

@@ -37,9 +37,6 @@ public sealed class QuestGilneasCity : QuestData
   }
 
   /// <inheritdoc/>
-  public override string RewardFlavour => "Southern Lordaeron has been Secured, The Cursed Kingdom rallies to our cause!";
-
-  /// <inheritdoc/>
   protected override string RewardDescription => "Gain control of the Greymane Wall and Gilneas City. Enable to train Genn Greymane and the Worgen units.";
 
   /// <inheritdoc/>

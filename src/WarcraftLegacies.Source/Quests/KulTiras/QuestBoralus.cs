@@ -42,10 +42,6 @@ public sealed class QuestBoralus : QuestData
   }
 
   /// <inheritdoc/>
-  public override string RewardFlavour =>
-    "Kul'tiras has joined the war and its military is now free to assist the Alliance.";
-
-  /// <inheritdoc/>
   protected override string RewardDescription =>
     $"Gain control of all units in Kul'tiras,gain control of Katherine Proudmoore, and acquire the {RewardPowerName} Power";
 

@@ -39,8 +39,5 @@ public sealed class QuestRuinsofShadowmoon : QuestData
   }
 
   /// <inheritdoc/>
-  public override string RewardFlavour => "The camp in Shadowmoon Valley has been recaptured for the Fel Horde";
-
-  /// <inheritdoc/>
   protected override string RewardDescription => "Gain a base with a goldmine in Shadowmoon Valley";
 }

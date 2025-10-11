@@ -34,9 +34,6 @@ public sealed class QuestShipArgus : QuestData
   }
 
   /// <inheritdoc />
-  public override string RewardFlavour => "Velen has opened the portal to Argus";
-
-  /// <inheritdoc />
   protected override string RewardDescription => "Open a Portal between Tempest Keep and Argus";
 
   /// <inheritdoc />

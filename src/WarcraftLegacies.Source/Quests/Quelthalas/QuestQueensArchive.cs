@@ -24,9 +24,6 @@ public sealed class QuestQueensArchive : QuestData
   }
 
   /// <inheritdoc />
-  public override string RewardFlavour => "We have uncovered the secrets to Warlock magic";
-
-  /// <inheritdoc />
   protected override string RewardDescription => "You can now train Warlocks at the Consortium";
 
 }

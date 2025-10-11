@@ -27,10 +27,6 @@ public sealed class QuestShadowfang : QuestData
   }
 
   /// <inheritdoc />
-  public override string RewardFlavour =>
-    "Shadowfang and Ambermill has been liberated, and its military is now free to assist Dalaran.";
-
-  /// <inheritdoc />
   protected override string RewardDescription => "Control of all Buildings and units in Shadowfang";
 
   /// <inheritdoc />

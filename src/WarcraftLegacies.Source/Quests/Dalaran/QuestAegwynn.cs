@@ -17,10 +17,6 @@ public sealed class QuestAegwynn : QuestData
   }
 
   /// <inheritdoc/>
-  public override string RewardFlavour =>
-    "Aegwynn will come back from exile to mentor Jaina.";
-
-  /// <inheritdoc/>
   protected override string RewardDescription =>
     "Aegwynn will also be trainable at the altar.";
 }

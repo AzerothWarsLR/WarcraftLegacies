@@ -39,11 +39,6 @@ public sealed class QuestBlackrock : QuestData
     _rescueUnits2 = rescueRect2.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
   }
 
-  //Todo: bad flavour
-  /// <inheritdoc />
-  public override string RewardFlavour =>
-    "Blackrock Citadel has been subjugated, and its military is now free to assist the Fel Horde.";
-
   /// <inheritdoc />
   protected override string RewardDescription =>
     "Control of all units in Blackrock Citadel, a small outpost near the Dark Portal and enable Dal'rend Blackhand to be trained at the altar";

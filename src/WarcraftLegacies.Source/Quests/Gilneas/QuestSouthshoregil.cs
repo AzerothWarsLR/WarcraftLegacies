@@ -28,9 +28,6 @@ public sealed class QuestSouthshoregil : QuestData
   }
 
   /// <inheritdoc/>
-  public override string RewardFlavour => "Southshore Village has been liberated.";
-
-  /// <inheritdoc/>
   protected override string RewardDescription => "Control of all buildings in Southshore Village";
 
   /// <inheritdoc/>

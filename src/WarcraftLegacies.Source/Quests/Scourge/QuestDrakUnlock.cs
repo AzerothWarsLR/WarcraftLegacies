@@ -35,9 +35,6 @@ public sealed class QuestDrakUnlock : QuestData
   }
 
   /// <inheritdoc/>
-  public override string RewardFlavour => "Drak'tharon Keep is now under the control of the Scourge and Kel'thuzad has joined the Scourge.";
-
-  /// <inheritdoc/>
   protected override string RewardDescription => $"Gain control of all buildings in Drak'tharon Keep and learn to train {_kelthuzad.Name} from the {GetObjectName(UNIT_UAOD_ALTAR_OF_DARKNESS_SCOURGE_ALTAR)}";
 
   /// <inheritdoc/>

@@ -27,10 +27,6 @@ public sealed class QuestShrineBase : QuestData
   }
 
   /// <inheritdoc />
-  public override string RewardFlavour =>
-    "The World Tree has been rid of corruption and the Ancients can awaken";
-
-  /// <inheritdoc />
   protected override string RewardDescription =>
     "Control of all units in the Shrine of Malorne base";
 

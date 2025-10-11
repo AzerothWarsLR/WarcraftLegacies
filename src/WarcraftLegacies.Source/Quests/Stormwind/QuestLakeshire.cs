@@ -31,11 +31,6 @@ public sealed class QuestLakeshire : QuestData
     }
   }
 
-  //Todo: bad flavour
-  /// <inheritdoc/>
-  public override string RewardFlavour =>
-    "Lakeshire has been liberated, and its military is now free to assist Stormwind.";
-
   /// <inheritdoc/>
   protected override string RewardDescription => "Control of all units in Lakeshire";
 

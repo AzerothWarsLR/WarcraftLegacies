@@ -28,9 +28,6 @@ public sealed class QuestShimmering : QuestData
   }
 
   /// <inheritdoc />
-  public override string RewardFlavour => "The hostile wild life has been eliminated";
-
-  /// <inheritdoc />
   protected override string RewardDescription => "Gain Control all buildings in Shimmering Flats";
 
   /// <inheritdoc />

@@ -33,9 +33,6 @@ public sealed class QuestStrahnbrad : QuestData
   }
 
   /// <inheritdoc/>
-  public override string RewardFlavour => "Strahnbrad has been liberated.";
-
-  /// <inheritdoc/>
   protected override string RewardDescription => "Control of all buildings in Strahnbrad";
 
   /// <inheritdoc/>

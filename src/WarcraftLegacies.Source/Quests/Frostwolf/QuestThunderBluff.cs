@@ -30,7 +30,6 @@ public sealed class QuestThunderBluff : QuestData
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
   }
 
-  //todo: bad flavour
   /// <inheritdoc />
   public override string RewardFlavour => "The long march of the Tauren clans has ended, and they have joined forces with the Horde.";
 

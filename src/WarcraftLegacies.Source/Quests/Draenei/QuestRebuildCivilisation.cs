@@ -40,9 +40,6 @@ public sealed class QuestRebuildCivilisation : QuestData
   }
 
   /// <inheritdoc/>
-  public override string RewardFlavour => "Maraad joins the Draenai and the new settlement is born";
-
-  /// <inheritdoc/>
   protected override string RewardDescription =>
     "Gain an Outpost in Darkshore and Maraad is now trainable at the altar.";
 }

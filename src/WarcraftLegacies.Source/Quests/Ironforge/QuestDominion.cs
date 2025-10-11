@@ -35,10 +35,6 @@ public sealed class QuestDominion : QuestData
   }
 
   /// <inheritdoc/>
-  public override string RewardFlavour =>
-    "The Dwarven Empire is re-united again, Ironforge is ready for war again.";
-
-  /// <inheritdoc/>
   protected override string RewardDescription => "Control of all units in Ironforge";
 
   /// <inheritdoc/>

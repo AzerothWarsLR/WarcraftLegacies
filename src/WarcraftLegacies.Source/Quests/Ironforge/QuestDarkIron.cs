@@ -32,10 +32,6 @@ public sealed class QuestDarkIron : QuestData
   }
 
   /// <inheritdoc />
-  public override string RewardFlavour =>
-    "The peace talk were succesful, The Dark Iron will join the Dwarven Empire.";
-
-  /// <inheritdoc />
   protected override string RewardDescription =>
     "You gain control of Shadowforge City and can train the hero Dagran Thaurassian from the Altar of Fortitude";
 

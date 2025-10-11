@@ -27,10 +27,6 @@ public sealed class QuestThunderEagle : QuestData
     AddObjective(new ObjectiveControlPoint(UNIT_N02S_STORM_PEAKS));
   }
 
-  //Todo: bad flavour
-  /// <inheritdoc/>
-  public override string RewardFlavour => "The Thunder Eagles are now in the safe hands of Lordaeron.";
-
   /// <inheritdoc/>
   protected override string RewardDescription => "Learn to train " + GetObjectName(ThunderEagleId) + "s";
 

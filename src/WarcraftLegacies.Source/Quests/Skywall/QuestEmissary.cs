@@ -24,9 +24,6 @@ public sealed class QuestEmissary : QuestData
   }
 
   /// <inheritdoc />
-  public override string RewardFlavour => "Ragnaros has joined us";
-
-  /// <inheritdoc />
   protected override string RewardDescription => $"Learn to train Ragnaros from the {GetObjectName(UNIT_N078_ALTAR_OF_ELEMENTS_SKYWALL_ALTAR)} and learn to build the Magma Complex";
 
 }

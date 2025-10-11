@@ -22,13 +22,7 @@ public sealed class QuestRiseBase : QuestData
     AddObjective(new ObjectiveSelfExists());
 
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideNonStructures);
-
-
   }
-
-  /// <inheritdoc />
-  public override string RewardFlavour =>
-    "The grove has been rejuvenised and the ancients have awakened";
 
   /// <inheritdoc />
   protected override string RewardDescription =>

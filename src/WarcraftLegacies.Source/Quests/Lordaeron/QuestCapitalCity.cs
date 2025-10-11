@@ -55,10 +55,6 @@ public sealed class QuestCapitalCity : QuestData
   private static bool RescueUnitFilter(unit whichUnit) => whichUnit.UnitType != UNIT_N08F_UNDERCITY_ENTRANCE;
 
   /// <inheritdoc/>
-  public override string RewardFlavour =>
-    "The Capital City of Lordaeron has joined Arthas.";
-
-  /// <inheritdoc/>
   protected override string RewardDescription => $"Gain control of all units in the Capital City, gain Uther, and acquire the {RewardPowerName} Power";
 
   /// <inheritdoc/>

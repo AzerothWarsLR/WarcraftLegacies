@@ -32,9 +32,6 @@ public sealed class QuestSouthshore : QuestData
   }
 
   /// <inheritdoc />
-  public override string RewardFlavour => "The Murlocs have been defeated, Southshore is safe.";
-
-  /// <inheritdoc />
   protected override string RewardDescription => "Control of all units in Southshore";
 
   /// <inheritdoc />

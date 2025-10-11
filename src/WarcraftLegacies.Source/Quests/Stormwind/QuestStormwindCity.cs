@@ -41,11 +41,6 @@ public sealed class QuestStormwindCity : QuestData
     ResearchId = UPGRADE_R02S_QUEST_COMPLETED_CLEAR_THE_OUTSKIRTS;
   }
 
-  //Todo: bad flavour
-  /// <inheritdoc />
-  public override string RewardFlavour =>
-    "Stormwind has been liberated, and its grand army is now free to assist the Alliance.";
-
   /// <inheritdoc />
   protected override string RewardDescription =>
     "Gain control of all units in Stormwind, " +

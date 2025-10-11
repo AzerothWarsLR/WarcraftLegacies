@@ -32,9 +32,6 @@ public sealed class QuestThroneWind : QuestData
   }
 
   /// <inheritdoc />
-  public override string RewardFlavour => "The Throne of the Four Winds have joined us";
-
-  /// <inheritdoc />
   protected override string RewardDescription => "Gain Control of all buildings in the Throne of the Four Winds";
 
   /// <inheritdoc />
