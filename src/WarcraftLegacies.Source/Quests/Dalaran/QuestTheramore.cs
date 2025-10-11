@@ -65,10 +65,14 @@ public sealed class QuestTheramore : QuestData
       player.NeutralVictim.RescueGroup(_rescueUnits);
     }
 
+    var theramoreCenter = Regions.Theramore.Center;
+    var theramoreCenterX = theramoreCenter.X;
+    var theramoreCenterY = theramoreCenter.Y;
+
     foreach (var unit in GlobalGroup.EnumUnitsInRect(Regions.Dalaran).Where(x =>
                x.Owner == completingFaction.Player && !x.IsUnitType(unittype.Structure)).ToList())
     {
-      unit.SetPosition(Regions.Theramore.Center);
+      unit.SetPosition(theramoreCenterX, theramoreCenterY);
     }
 
     foreach (var unit in GlobalGroup.EnumUnitsInRect(Regions.Dalaran).Where(x =>

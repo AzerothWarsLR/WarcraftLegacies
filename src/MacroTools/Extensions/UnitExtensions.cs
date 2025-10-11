@@ -66,22 +66,6 @@ public static class UnitExtensions
     whichUnit.IsUnitType(unittype.Hero) ? whichUnit.HeroName : whichUnit.Name;
 
   /// <summary>
-  /// Moves the unit to a specified <see cref="Point"/>.
-  /// </summary>
-  public static void SetPosition(this unit unit, Point where, bool considerPathability = false)
-  {
-    if (!considerPathability)
-    {
-      unit.X = where.X;
-      unit.Y = where.Y;
-    }
-    else
-    {
-      unit.SetPosition(where.X, where.Y);
-    }
-  }
-
-  /// <summary>
   /// Returns the position of the unit.
   /// </summary>
   public static Point GetPosition(this unit unit) => new(unit.X, unit.Y);

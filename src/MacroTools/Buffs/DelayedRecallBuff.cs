@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MacroTools.Extensions;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using Environment = MacroTools.Libraries.Environment;
@@ -79,7 +78,7 @@ public sealed class DelayedRecallBuff : PassiveBuff
     foreach (var unit in UnitsToMove)
     {
       unit.IsVisible = true;
-      unit.SetPosition(TargetPosition);
+      unit.SetPosition(TargetPosition.X, TargetPosition.Y);
       unit.IsInvulnerable = false;
     }
   }

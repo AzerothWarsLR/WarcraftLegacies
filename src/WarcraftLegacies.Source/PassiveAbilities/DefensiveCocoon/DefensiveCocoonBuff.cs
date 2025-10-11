@@ -71,8 +71,7 @@ public sealed class DefensiveCocoonBuff : PassiveBuff
     else
     {
       Target.Kill();
-      Target
-        .SetPosition(_egg!.GetPosition());
+      Target.SetPosition(_egg!.X, _egg!.Y);
     }
   }
 
@@ -80,7 +79,7 @@ public sealed class DefensiveCocoonBuff : PassiveBuff
   {
     Target.Life = _egg!.Life;
     _egg!.Kill();
-    Target.SetPosition(_egg!.GetPosition());
+    Target.SetPosition(_egg!.X, _egg!.Y);
 
     var reviveEffect = effect.Create(ReviveEffect, Target.X, Target.Y);
     reviveEffect.Scale = 2;
