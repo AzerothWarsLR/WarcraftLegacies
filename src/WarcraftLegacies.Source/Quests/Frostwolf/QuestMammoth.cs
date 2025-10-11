@@ -9,14 +9,11 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf;
 /// </summary>
 public sealed class QuestMammoth : QuestData
 {
-  private readonly LegendaryHero _rexxar;
-
   /// <inheritdoc />
   public QuestMammoth(LegendaryHero rexxar) : base("Lone Wanderer",
     "Rexxar's wanderlust has brought him into contact with all kinds of beasts. Yet there is one major landmass he has never ventured to: the cold expanse of Northrend. Surely the wild things roam free even there.",
     @"ReplaceableTextures/CommandButtons/BTNRevealingLightnewalt.blp")
   {
-    _rexxar = rexxar;
     AddObjective(new ObjectiveLegendInRect(rexxar, Regions.Borean_Tundra, "Borean Tundra"));
     ResearchId = UPGRADE_R0AA_QUEST_COMPLETED_LONE_WANDERER;
   }

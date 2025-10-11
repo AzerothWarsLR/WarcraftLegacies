@@ -9,14 +9,11 @@ namespace WarcraftLegacies.Source.Quests.Frostwolf;
 /// </summary>
 public sealed class QuestRagetotem : QuestData
 {
-  private readonly LegendaryHero _cairne;
-
   /// <inheritdoc />
   public QuestRagetotem(LegendaryHero cairne) : base("Ragetotem Tribe",
     "The Ragetotem Tribe are renowned for their martial prowess. An older, mightier Cairne might convince them to join the Bloodhoof.",
     @"ReplaceableTextures\CommandButtons\BTNGreatTaurenThieftain.blp")
   {
-    _cairne = cairne;
     AddObjective(new ObjectiveLegendLevel(cairne, 8));
     ResearchId = UPGRADE_R0AB_QUEST_COMPLETED_RAGETOTEM_TRIBE;
   }

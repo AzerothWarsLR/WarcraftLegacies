@@ -85,7 +85,7 @@ public sealed class Warsong : Faction
   private void RegisterQuests()
   {
     StartingQuest = AddQuest(new QuestGrom(_preplacedUnitSystem, _allLegendSetup.Warsong.GromHellscream, _allLegendSetup.Warsong.Gargok));
-    AddQuest(new QuestOrgrimmar(Regions.Orgrimmar, _allLegendSetup.Warsong.GromHellscream));
+    AddQuest(new QuestOrgrimmar(Regions.Orgrimmar));
     AddQuest(new QuestCrossroads(Regions.Crossroads));
     AddQuest(new QuestRokhan(_preplacedUnitSystem.GetUnit(UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG)));
     // AddQuest(new QuestFountainOfBlood(_allLegendSetup.Neutral.FountainOfBlood, _allLegendSetup.Warsong.GromHellscream));
@@ -97,7 +97,7 @@ public sealed class Warsong : Faction
     AddQuest(new QuestExtractSunwellVial(_allLegendSetup.Quelthalas.Sunwell, _artifactSetup.SunwellVial));
     AddQuest(new QuestSubdueOgres(Regions.StonemaulKeep, _allLegendSetup.Warsong, _allLegendSetup.Warsong.GromHellscream));
     AddQuest(new QuestSubdueTrolls(Regions.EchoUnlock, _allLegendSetup.Warsong, _allLegendSetup.Warsong.GromHellscream));
-    AddQuest(new QuestSubdueTauren(Regions.ThunderBluff, _allLegendSetup.Warsong, _allLegendSetup.Warsong.GromHellscream, _artifactSetup));
+    AddQuest(new QuestSubdueTauren(Regions.ThunderBluff, _allLegendSetup.Warsong, _allLegendSetup.Warsong.GromHellscream));
 
 
   }

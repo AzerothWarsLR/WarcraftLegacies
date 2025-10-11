@@ -10,13 +10,11 @@ public sealed class WhimOfTheWinds : Spell
   {
     public readonly int AbilityId;
     public readonly int OrderId;
-    public readonly string Name;
 
-    public BuffSpell(int abilityId, int orderId, string name)
+    public BuffSpell(int abilityId, int orderId)
     {
       AbilityId = abilityId;
       OrderId = orderId;
-      Name = name;
     }
   }
 
@@ -26,9 +24,9 @@ public sealed class WhimOfTheWinds : Spell
   {
     _possibleBuffs = new[]
     {
-      new BuffSpell(ABILITY_WWIR_ROAR_WHIM_OF_THE_WINDS, ORDER_INNER_FIRE, "Roar"),
-      new BuffSpell(ABILITY_IFWW_INNER_FIRE_WHIM_OF_THE_WINDS, ORDER_INNER_FIRE, "Inner Fire"),
-      new BuffSpell(ABILITY_BLWW_BLOODLUST_WHIM_OF_THE_WINDS, ORDER_BLOODLUST, "Bloodlust")
+      new BuffSpell(ABILITY_WWIR_ROAR_WHIM_OF_THE_WINDS, ORDER_INNER_FIRE),
+      new BuffSpell(ABILITY_IFWW_INNER_FIRE_WHIM_OF_THE_WINDS, ORDER_INNER_FIRE),
+      new BuffSpell(ABILITY_BLWW_BLOODLUST_WHIM_OF_THE_WINDS, ORDER_BLOODLUST)
     };
   }
 

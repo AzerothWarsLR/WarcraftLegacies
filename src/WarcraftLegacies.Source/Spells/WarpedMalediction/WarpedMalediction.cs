@@ -11,13 +11,11 @@ public sealed class WarpedMalediction : Spell
   {
     public readonly int AbilityId;
     public readonly int OrderId;
-    public readonly string Name;
 
-    public BuffSpell(int abilityId, int orderId, string name)
+    public BuffSpell(int abilityId, int orderId)
     {
       AbilityId = abilityId;
       OrderId = orderId;
-      Name = name;
     }
   }
 
@@ -27,9 +25,9 @@ public sealed class WarpedMalediction : Spell
   {
     _possibleBuffs = new[]
     {
-      new BuffSpell(ABILITY_WMMF_MIND_FLAY_WARPED_MALEDICTION,ORDER_REJUVINATION, "Mind Flay"),
-      new BuffSpell(ABILITY_WMSB_SOUL_BURN_WARPED_MALEDICTION, ORDER_SOUL_BURN, "Soul Burn"),
-      new BuffSpell(ABILITY_WMCR_CURSE_WARPED_MALEDICTION, ORDER_CURSE, "Curse")
+      new BuffSpell(ABILITY_WMMF_MIND_FLAY_WARPED_MALEDICTION,ORDER_REJUVINATION),
+      new BuffSpell(ABILITY_WMSB_SOUL_BURN_WARPED_MALEDICTION, ORDER_SOUL_BURN),
+      new BuffSpell(ABILITY_WMCR_CURSE_WARPED_MALEDICTION, ORDER_CURSE)
     };
   }
 

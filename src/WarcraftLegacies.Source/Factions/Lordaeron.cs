@@ -99,7 +99,7 @@ public sealed class Lordaeron : Faction
       }));
     AddQuest(questTyrHand);
     AddQuest(new QuestMograine());
-    AddQuest(new QuestScarletCrusade(Regions.Scarlet_Spawn, _allLegendSetup.Lordaeron.TyrsHand, _allLegendSetup.Scarlet.Saiden, questTyrHand, _allLegendSetup, _artifactSetup));
+    AddQuest(new QuestScarletCrusade(Regions.Scarlet_Spawn, _allLegendSetup.Lordaeron.TyrsHand, _allLegendSetup.Scarlet.Saiden, questTyrHand, _allLegendSetup));
     AddQuest(new QuestShoresOfNorthrend(_allLegendSetup.Lordaeron.Arthas, _allLegendSetup.Neutral.Caerdarrow));
     AddQuest(new QuestThunderEagle(_allLegendSetup.Neutral.DraktharonKeep));
     AddQuest(new QuestChampionoftheLight(_allLegendSetup.Lordaeron.Uther));

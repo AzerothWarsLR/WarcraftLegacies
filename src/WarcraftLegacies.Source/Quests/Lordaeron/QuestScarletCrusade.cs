@@ -24,14 +24,13 @@ public sealed class QuestScarletCrusade : QuestData
   private readonly LegendaryHero _saiden;
   private readonly List<unit> _rescueUnits;
   private readonly AllLegendSetup _allLegendSetup;
-  private readonly ArtifactSetup _artifactSetup;
   private const int StartingGold = 300;
 
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestScarletCrusade"/> class.
   /// </summary>
   public QuestScarletCrusade(Rectangle rescueRect, Capital tyrsHand, LegendaryHero saiden, QuestData fortifiedCity,
-    AllLegendSetup allLegendSetup, ArtifactSetup artifactSetup) :
+    AllLegendSetup allLegendSetup) :
     base("The Scarlet Crusade",
       "Lordaeron is destined to fall to the Scourge. Should such an event come to pass, the Silver Hand will be transformed beyond recognition, abandoning ideals of justice in favour of those of vengeance.",
       @"ReplaceableTextures\CommandButtons\BTNDivine_Reckoning_Icon.blp")
@@ -47,7 +46,6 @@ public sealed class QuestScarletCrusade : QuestData
     _rescueUnits = rescueRect.PrepareUnitsForRescue(RescuePreparationMode.HideAll);
     _tyrsHand = tyrsHand.Unit;
     _saiden = saiden;
-    _artifactSetup = artifactSetup;
     _allLegendSetup = allLegendSetup;
     Global = true;
   }

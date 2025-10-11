@@ -8,7 +8,6 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
 using WarcraftLegacies.Source.FactionMechanics.Warsong;
-using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 
@@ -20,18 +19,15 @@ public sealed class QuestSubdueTauren : QuestData
   private readonly LegendaryHero _grom;
   private int PillageGoldReward { get; set; }
   private int PillageExperienceReward { get; set; }
-  private readonly ArtifactSetup _artifactSetup;
 
 
-
-  public QuestSubdueTauren(Rectangle rescueRect, LegendWarsong legendWarsong, LegendaryHero grom, ArtifactSetup artifactSetup)
+  public QuestSubdueTauren(Rectangle rescueRect, LegendWarsong legendWarsong, LegendaryHero grom)
     : base(
       "Unyielding Bonds",
       "The Tauren of Thunder Bluff are noble warriors, but their allegiances are uncertain. Bring them into the fold or pillage their lands.",
       @"ReplaceableTextures\CommandButtons\BTNTauren.blp")
   {
     _grom = grom;
-    _artifactSetup = artifactSetup;
     AddObjective(new ObjectiveControlPoint(UNIT_N03M_THUNDERBLUFF));
     AddObjective(new ObjectiveControlLegend(legendWarsong.GromHellscream, true));
     AddObjective(new ObjectiveSelfExists());

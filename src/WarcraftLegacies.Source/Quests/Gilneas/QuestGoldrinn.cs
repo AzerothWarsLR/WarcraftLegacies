@@ -10,8 +10,8 @@ namespace WarcraftLegacies.Source.Quests.Gilneas;
 public sealed class QuestGoldrinn : QuestData
 {
   private readonly LegendaryHero _goldrinn;
-  private readonly LegendaryHero _tess;
   private readonly Faction _druids;
+
   /// <summary>
   /// Initializes a new instance of the <see cref="QuestGoldrinn"/> class.
   /// </summary>
@@ -19,7 +19,6 @@ public sealed class QuestGoldrinn : QuestData
     "The Worgen curse originated from Goldrinn, the embodiment of ferocity, savagery, and unyielding will. Traveling to Mount Hyjal we might contact the wolf god to help us against our curse.",
     @"ReplaceableTextures\CommandButtons\BTNWorgenHunger.blp")
   {
-    _tess = tess;
     AddObjective(new ObjectiveLegendLevel(tess, 8));
     AddObjective(new ObjectiveLegendInRect(tess, Regions.MountHyjal, "Mount Hyjal"));
     ResearchId = UPGRADE_R07U_QUEST_COMPLETED_SHRINE_OF_THE_WOLF_GOD;
