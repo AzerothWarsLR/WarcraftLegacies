@@ -32,7 +32,7 @@ public sealed class QuestSubdueTauren : QuestData
   {
     _grom = grom;
     _artifactSetup = artifactSetup;
-    AddObjective(new ObjectiveControlPoint(Constants.UNIT_N03M_THUNDERBLUFF));
+    AddObjective(new ObjectiveControlPoint(UNIT_N03M_THUNDERBLUFF));
     AddObjective(new ObjectiveControlLegend(legendWarsong.GromHellscream, true));
     AddObjective(new ObjectiveSelfExists());
 
@@ -77,7 +77,7 @@ public sealed class QuestSubdueTauren : QuestData
         Regions.ThunderBluff,
         0,
         0,
-        Constants.UPGRADE_R00O_SUBDUE_THE_THUNDERBLUFF_TAUREN,
+        UPGRADE_R00O_SUBDUE_THE_THUNDERBLUFF_TAUREN,
         artifactRewardItemType: null
       ),
       new WarsongPillageChoice(

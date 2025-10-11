@@ -28,7 +28,7 @@ public sealed class QuestKillDruids : QuestData
     @"ReplaceableTextures\CommandButtons\BTNTreeOfEternity.blp")
   {
     AddObjective(new ObjectiveControlCapital(nordrassil, false));
-    ResearchId = Constants.UPGRADE_R01G_QUEST_COMPLETED_DRUIDS_DEMISE;
+    ResearchId = UPGRADE_R01G_QUEST_COMPLETED_DRUIDS_DEMISE;
   }
 
   /// <inheritdoc/>

@@ -50,8 +50,8 @@ public sealed class QuestGrom : QuestData
     }
     BloodPactBattleSimulation.BattleSimulationGroup.Clear();
 
-    completingFaction.ModObjectLimit(Constants.UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG, 1);
-    completingFaction.ModObjectLimit(Constants.UNIT_O005_WARSONG_BATTLEMASTER_WARSONG, -1);
+    completingFaction.ModObjectLimit(UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG, 1);
+    completingFaction.ModObjectLimit(UNIT_O005_WARSONG_BATTLEMASTER_WARSONG, -1);
 
     _gargok.PermanentlyKill();
     if (_gromHellscream.Unit == null)

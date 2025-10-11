@@ -20,10 +20,10 @@ public sealed class QuestSubdueTrolls : QuestData
 
   private int PillageGoldReward { get; set; }
   private int PillageExperienceReward { get; set; }
-  private const int SubdueResearchReward = Constants.UPGRADE_R00K_SUBDUE_THE_DARKSPEAR_TROLLS;
-  private const int PillageResearchReward = Constants.UPGRADE_R01Z_PILLAGE_ECHO_ISLES;
-  private const int SubdueRemoveUnit = Constants.UNIT_OTBK_AXE_THROWER_WARSONG;
-  private const int SubdueAddUnit = Constants.UNIT_O071_DARKSPEAR_BERSERKER_WARSONG;
+  private const int SubdueResearchReward = UPGRADE_R00K_SUBDUE_THE_DARKSPEAR_TROLLS;
+  private const int PillageResearchReward = UPGRADE_R01Z_PILLAGE_ECHO_ISLES;
+  private const int SubdueRemoveUnit = UNIT_OTBK_AXE_THROWER_WARSONG;
+  private const int SubdueAddUnit = UNIT_O071_DARKSPEAR_BERSERKER_WARSONG;
 
   public QuestSubdueTrolls(Rectangle rescueRect, LegendWarsong legendWarsong, LegendaryHero grom)
     : base(
@@ -32,7 +32,7 @@ public sealed class QuestSubdueTrolls : QuestData
       @"ReplaceableTextures\CommandButtons\BTNDarkTrollShadowPriest.blp")
   {
     _grom = grom;
-    AddObjective(new ObjectiveControlPoint(Constants.UNIT_N02V_ECHO_ISLES));
+    AddObjective(new ObjectiveControlPoint(UNIT_N02V_ECHO_ISLES));
     AddObjective(new ObjectiveControlLegend(legendWarsong.GromHellscream, true));
     AddObjective(new ObjectiveSelfExists());
 
@@ -45,7 +45,7 @@ public sealed class QuestSubdueTrolls : QuestData
     "The Darkspear Trolls have been brought to heel.";
 
   protected override string RewardDescription =>
-    $"Gain control of Echo Isles, {GetObjectName(SubdueRemoveUnit)}s are upgraded to {GetObjectName(SubdueAddUnit)}s and learn to train {GetObjectName(Constants.UNIT_N08E_SHADOWPRIEST_WARSONG)}s. Alternatively, earn {PillageGoldReward} gold and up to {PillageExperienceReward} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives. Additionally, enhance both {GetObjectName(Constants.UNIT_O00G_BLADEMASTER_WARSONG)}s' and {GetObjectName(Constants.UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE)}s' maximum mana by 250 and mana regeneration by 50%.";
+    $"Gain control of Echo Isles, {GetObjectName(SubdueRemoveUnit)}s are upgraded to {GetObjectName(SubdueAddUnit)}s and learn to train {GetObjectName(UNIT_N08E_SHADOWPRIEST_WARSONG)}s. Alternatively, earn {PillageGoldReward} gold and up to {PillageExperienceReward} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives. Additionally, enhance both {GetObjectName(UNIT_O00G_BLADEMASTER_WARSONG)}s' and {GetObjectName(UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE)}s' maximum mana by 250 and mana regeneration by 50%.";
 
   protected override void OnComplete(Faction completingFaction)
   {

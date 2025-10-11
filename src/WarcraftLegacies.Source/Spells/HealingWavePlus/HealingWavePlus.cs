@@ -61,7 +61,7 @@ public sealed class HealingWavePlus : Spell
   {
     var targetPosition = currentTarget.GetPosition();
     return GlobalGroup.EnumUnitsInRange(targetPosition, BounceRadius)
-        .Where(u => HealingWavePlus.IsValidAlly(caster, u) && !excludedUnits.Contains(u))
+        .Where(u => IsValidAlly(caster, u) && !excludedUnits.Contains(u))
         .OrderBy(u => MathEx.GetDistanceBetweenPoints(targetPosition, u.GetPosition()))
         .FirstOrDefault();
   }
@@ -129,7 +129,7 @@ public sealed class HealingWavePlus : Spell
     unit lastHealedUnit = null;
 
     var nearbyAllies = GlobalGroup.EnumUnitsInRange(triggerPoint, SecondaryWaveRadius)
-        .Where(ally => HealingWavePlus.IsValidAlly(caster, ally) && !healedUnits.Contains(ally))
+        .Where(ally => IsValidAlly(caster, ally) && !healedUnits.Contains(ally))
         .OrderBy(ally => MathEx.GetDistanceBetweenPoints(triggerPoint, ally.GetPosition()))
         .Take(MaxBounces)
         .ToList();

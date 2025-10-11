@@ -15,7 +15,7 @@ public sealed class QuestKillOldGods : QuestData
     AddObjective(new ObjectiveControlPoint(UNIT_NNYA_NY_ALOTHA_THE_WAKING_CITY));
     AddObjective(new ObjectiveKillUnit(cthun.Unit));
     AddObjective(new ObjectiveKillUnit(nzoth.Unit));
-    ResearchId = Constants.UPGRADE_R021_QUEST_COMPLETED_ECHOES_OF_WAR;
+    ResearchId = UPGRADE_R021_QUEST_COMPLETED_ECHOES_OF_WAR;
   }
 
   /// <inheritdoc/>

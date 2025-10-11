@@ -68,10 +68,10 @@ public sealed class Warsong : Faction
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     Regions.BarrenAmbient2.CleanupHostileUnits();
     Regions.AshenvaleCreeps.CleanupHostileUnits();
-    var thunderBluffUnit = _preplacedUnitSystem.GetUnit(Constants.UNIT_N03M_THUNDERBLUFF);
+    var thunderBluffUnit = _preplacedUnitSystem.GetUnit(UNIT_N03M_THUNDERBLUFF);
     var whichPlayer = player.NeutralAggressive;
     thunderBluffUnit.SetOwner(whichPlayer);
-    var echoIslesUnit = _preplacedUnitSystem.GetUnit(Constants.UNIT_N02V_ECHO_ISLES);
+    var echoIslesUnit = _preplacedUnitSystem.GetUnit(UNIT_N02V_ECHO_ISLES);
     var whichPlayer1 = player.NeutralAggressive;
     echoIslesUnit.SetOwner(whichPlayer1);
   }
@@ -87,7 +87,7 @@ public sealed class Warsong : Faction
     StartingQuest = AddQuest(new QuestGrom(_preplacedUnitSystem, _allLegendSetup.Warsong.GromHellscream, _allLegendSetup.Warsong.Gargok));
     AddQuest(new QuestOrgrimmar(Regions.Orgrimmar, _allLegendSetup.Warsong.GromHellscream));
     AddQuest(new QuestCrossroads(Regions.Crossroads));
-    AddQuest(new QuestRokhan(_preplacedUnitSystem.GetUnit(Constants.UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG)));
+    AddQuest(new QuestRokhan(_preplacedUnitSystem.GetUnit(UNIT_MD25_DARKSPEAR_CHAMPION_WARSONG)));
     // AddQuest(new QuestFountainOfBlood(_allLegendSetup.Neutral.FountainOfBlood, _allLegendSetup.Warsong.GromHellscream));
     // AddQuest(new QuestBloodpact(_allLegendSetup.Warsong.Mannoroth, _allLegendSetup.Warsong.GromHellscream));
     AddQuest(new QuestGarrosh(_allLegendSetup.BlackEmpire.Nzoth));

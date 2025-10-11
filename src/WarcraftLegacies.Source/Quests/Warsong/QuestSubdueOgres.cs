@@ -31,7 +31,7 @@ public sealed class QuestSubdueOgres : QuestData
       "Their brute strength is untamed, their loyalty unproven. Subdue the ogres and further strengthen the Horde.",
       @"ReplaceableTextures\CommandButtons\BTNOgre.blp")
   {
-    AddObjective(new ObjectiveControlPoint(Constants.UNIT_N022_STONEMAUL));
+    AddObjective(new ObjectiveControlPoint(UNIT_N022_STONEMAUL));
     AddObjective(new ObjectiveSelfExists());
     AddObjective(new ObjectiveControlLegend(legendWarsong.GromHellscream, true));
 
@@ -45,7 +45,7 @@ public sealed class QuestSubdueOgres : QuestData
     "The fate of the ogres has been decided, and the Horde's power grows.";
 
   protected override string RewardDescription =>
-    $"Gain control of Stonemaul, {GetObjectName(SubdueRemoveUnit)}s' are upgraded to {GetObjectName(SubdueAddUnit)}s' and unlock the ability to train {GetObjectName(UNIT_N08O_OGRE_MAGI_WARSONG)}s. Alternatively, earn {PillageGoldReward} gold and up to {PillageExperienceReward} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives. Additionally, enhance both {GetObjectName(Constants.UNIT_O00G_BLADEMASTER_WARSONG)}s' and {GetObjectName(Constants.UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE)}s' attack damage by 10, movement speed by 20 and hit points by 300.";
+    $"Gain control of Stonemaul, {GetObjectName(SubdueRemoveUnit)}s' are upgraded to {GetObjectName(SubdueAddUnit)}s' and unlock the ability to train {GetObjectName(UNIT_N08O_OGRE_MAGI_WARSONG)}s. Alternatively, earn {PillageGoldReward} gold and up to {PillageExperienceReward} experience points, shared among all your heroes—the fewer heroes you control, the less experience each receives. Additionally, enhance both {GetObjectName(UNIT_O00G_BLADEMASTER_WARSONG)}s' and {GetObjectName(UNIT_N03F_KOR_KRON_ELITE_WARSONG_ELITE)}s' attack damage by 10, movement speed by 20 and hit points by 300.";
 
   protected override void OnComplete(Faction completingFaction)
   {
