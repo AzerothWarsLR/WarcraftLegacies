@@ -1,73 +1,63 @@
 ﻿using System.Collections.Generic;
 using WCSharp.Shared.Data;
+using WCSharp.Shared.Extensions;
 
 namespace MacroTools.Utils;
 
 /// <summary>
-/// Provides unit enumeration functions powered by a single, globally shared group for improved performance.
-/// <para>Using a single group avoids spending cycles creating and destroying a group per enumeration.</para>
+/// Provides unit enumeration utilities backed by a shared, reusable group for better performance.
+/// <para>
+/// Using a single group avoids the overhead of creating and destroying a group for each enumeration,
+/// and because groups are automatically cleared before each use, they're safe to reuse.
+/// </para>
 /// </summary>
 public static class GlobalGroup
 {
   private static readonly group _group = group.Create();
 
   /// <summary>
-  /// Adds all units selected by the provided player to the group.
+  /// Returns a list of units currently selected by the specified player.
+  /// <para>
+  /// Invokes <see cref="SyncSelections"/> before enumeration to ensure the selection state is up to date.
+  /// </para>
   /// </summary>
   public static List<unit> EnumSelectedUnits(player whichPlayer)
   {
     SyncSelections();
     _group.EnumUnitsSelected(whichPlayer);
-    return EmptyToList(_group);
+    return _group.ToList();
   }
 
   /// <summary>
-  /// Adds all units owned by the provided player to the group.
+  /// Returns a list of all units owned by the specified player.
   /// </summary>
-  public static List<unit> EnumUnitsOfPlayer(player player)
+  public static List<unit> EnumUnitsOfPlayer(player whichPlayer)
   {
-    _group.EnumUnitsOfPlayer(player);
-    return EmptyToList(_group);
+    _group.EnumUnitsOfPlayer(whichPlayer);
+    return _group.ToList();
   }
 
   /// <summary>
-  /// Adds all units positioned in the provided <see cref="Rectangle"/> to the group>.
+  /// Returns a list of units located within the specified <see cref="Rectangle"/>.
   /// </summary>
   public static List<unit> EnumUnitsInRect(Rectangle rect) =>
     EnumUnitsInRect(rect.Rect);
 
   /// <summary>
-  /// Adds all units positioned in the provided <see cref="rect"/> to the group.
+  /// Returns a list of units located within the specified <see cref="rect"/>.
   /// </summary>
   public static List<unit> EnumUnitsInRect(rect rect)
   {
     _group.EnumUnitsInRect(rect);
-    return EmptyToList(_group);
+    return _group.ToList();
   }
 
   /// <summary>
-  /// Adds all units within range of the specified <see cref="Point"/> to the group.
+  /// Returns a list of units within a specified radius of the given <see cref="Point"/>.
   /// </summary>
   public static List<unit> EnumUnitsInRange(Point point, float radius)
   {
     _group.EnumUnitsInRange(point.X, point.Y, radius);
-    return EmptyToList(_group);
-  }
-
-  /// <summary>
-  ///   Destructively empties the units in this group into a List,
-  ///   leaving nothing behind.
-  /// </summary>
-  private static List<unit> EmptyToList(group whichGroup)
-  {
-    var list = new List<unit>();
-    var firstOfGroup = whichGroup.First;
-    while (firstOfGroup != null)
-    {
-      list.Add(firstOfGroup);
-      whichGroup.Remove(firstOfGroup);
-      firstOfGroup = whichGroup.First;
-    }
-    return list;
+    return _group.ToList();
   }
 }
