@@ -58,7 +58,13 @@ public static class FactionQuestExtensions
 
   internal static void DisplayCompleted(this Faction faction, QuestData questData)
   {
-    var display = $"\n|cffffcc00QUEST COMPLETED - {questData.Title}|r\n{questData.RewardFlavour}\n";
+    var display = $"\n|cffffcc00QUEST COMPLETED - {questData.Title}|r\n";
+
+    if (!string.IsNullOrEmpty(questData.RewardFlavour))
+    {
+      display += $"{questData.RewardFlavour}\n";
+    }
+
     foreach (var objective in questData.Objectives)
     {
       if (objective.ShowsInPopups)
