@@ -65,12 +65,11 @@ public sealed class SummonUnitOnCast : PassiveAbility, IEffectOnSpellEffect
       return;
     }
 
-    var casterPosition = triggerUnit.GetPosition();
     var summonCount = SummonCount.Base + SummonCount.PerLevel * abilityLevel;
 
     for (var i = 0; i < summonCount; i++)
     {
-      var summonedUnit = unit.Create(triggerUnit.Owner, SummonUnitTypeId, casterPosition.X, casterPosition.Y, triggerUnit.Facing);
+      var summonedUnit = unit.Create(triggerUnit.Owner, SummonUnitTypeId, triggerUnit.X, triggerUnit.Y, triggerUnit.Facing);
       summonedUnit.AddType(unittype.Summoned);
       summonedUnit.SetTimedLife(Duration);
       var summonedUnitX = summonedUnit.X;

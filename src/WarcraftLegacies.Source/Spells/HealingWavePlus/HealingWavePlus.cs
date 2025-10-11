@@ -59,9 +59,10 @@ public sealed class HealingWavePlus : Spell
 
   private unit? FindNearestAlly(unit caster, unit currentTarget, HashSet<unit> excludedUnits)
   {
-    return GlobalGroup.EnumUnitsInRange(currentTarget.GetPosition(), BounceRadius)
+    var targetPosition = currentTarget.GetPosition();
+    return GlobalGroup.EnumUnitsInRange(targetPosition, BounceRadius)
         .Where(u => HealingWavePlus.IsValidAlly(caster, u) && !excludedUnits.Contains(u))
-        .OrderBy(u => MathEx.GetDistanceBetweenPoints(currentTarget.GetPosition(), u.GetPosition()))
+        .OrderBy(u => MathEx.GetDistanceBetweenPoints(targetPosition, u.GetPosition()))
         .FirstOrDefault();
   }
 

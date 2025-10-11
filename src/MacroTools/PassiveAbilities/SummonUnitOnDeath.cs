@@ -48,15 +48,17 @@ public sealed class SummonUnitOnDeath : PassiveAbility, IEffectOnDeath
       return;
     }
 
-    var pos = triggerUnit.GetPosition();
+    var triggerUnitX = triggerUnit.X;
+    var triggerUnitY = triggerUnit.Y;
+
     for (var i = 0; i < SummonCount; i++)
     {
-      var summonedUnit = unit.Create(triggerUnit.Owner, SummonUnitTypeId, pos.X, pos.Y, triggerUnit.Facing);
+      var summonedUnit = unit.Create(triggerUnit.Owner, SummonUnitTypeId, triggerUnitX, triggerUnitY, triggerUnit.Facing);
       summonedUnit.AddType(unittype.Summoned);
       summonedUnit.SetTimedLife(Duration);
     }
 
-    EffectSystem.Add(effect.Create(SpecialEffectPath, pos.X, pos.Y), 1);
+    EffectSystem.Add(effect.Create(SpecialEffectPath, triggerUnitX, triggerUnitY), 1);
     triggerUnit.Dispose();
   }
 }

@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.PassiveAbilitySystem;
+﻿using MacroTools.PassiveAbilitySystem;
 using MacroTools.Systems;
 
 namespace MacroTools.PassiveAbilities;
@@ -31,11 +30,10 @@ public sealed class Gate : PassiveAbility, IEffectOnUpgrade, IEffectOnDeath, IEf
   public void OnDeath()
   {
     var dyingGate = @event.Unit;
-    var dyingGatePos = dyingGate.GetPosition();
     var dyingGateFacing = dyingGate.Facing;
     dyingGate.Dispose();
     TurnBasedHitpointsManager.UnRegister(dyingGate);
-    var deadGate = unit.Create(@event.KillingUnit.Owner, _deadId, dyingGatePos.X, dyingGatePos.Y, dyingGateFacing);
+    var deadGate = unit.Create(@event.KillingUnit.Owner, _deadId, dyingGate.X, dyingGate.Y, dyingGateFacing);
     deadGate.SetAnimation("death");
   }
 

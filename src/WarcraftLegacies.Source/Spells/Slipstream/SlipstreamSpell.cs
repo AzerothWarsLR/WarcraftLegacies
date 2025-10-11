@@ -1,7 +1,5 @@
 ﻿using MacroTools.ChannelSystem;
 using MacroTools.Data;
-using MacroTools.Extensions;
-using MacroTools.Instances;
 using MacroTools.SpellSystem;
 using WCSharp.Shared;
 using WCSharp.Shared.Data;
@@ -64,10 +62,7 @@ public sealed class SlipstreamSpell : Spell
   /// <inheritdoc/>
   public override void OnStartCast(unit caster, unit target, Point targetPoint)
   {
-    if (!pathingtype.Walkability.GetPathable(targetPoint.X, targetPoint.Y) &&
-        !(Util.DistanceBetweenPoints(caster.X, caster.Y, targetPoint.X,
-          targetPoint.Y) < 500) && InstanceSystem.GetPointInstance(caster.GetPosition()) ==
-        InstanceSystem.GetPointInstance(targetPoint))
+    if (!SlipstreamSpellHelper.IsPointValidTarget(caster, targetPoint))
     {
       return;
     }

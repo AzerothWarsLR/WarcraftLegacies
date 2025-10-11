@@ -66,7 +66,7 @@ public sealed class BlessedGroundSpell : Spell
 
       if (!string.IsNullOrEmpty(data.HealEffectPath))
       {
-        EffectSystem.Add(effect.Create(data.HealEffectPath, unit.GetPosition().X, unit.GetPosition().Y), 1.0f);
+        EffectSystem.Add(effect.Create(data.HealEffectPath, unit.X, unit.Y), 1.0f);
       }
     }
   }
@@ -90,7 +90,7 @@ public sealed class BlessedGroundSpell : Spell
 
       if (!string.IsNullOrEmpty(data.HealEffectPath))
       {
-        EffectSystem.Add(effect.Create(data.HealEffectPath, unit.GetPosition().X, unit.GetPosition().Y), 1.0f);
+        EffectSystem.Add(effect.Create(data.HealEffectPath, unit.X, unit.Y), 1.0f);
       }
     }
   }

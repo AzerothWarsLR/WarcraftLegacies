@@ -43,9 +43,10 @@ public sealed class DelayedMultiTargetRecall : Spell
 
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    var center = TargetType == SpellTargetType.None ? new Point(caster.X, caster.Y) : targetPoint;
+    var casterPosition = caster.GetPosition();
+    var center = TargetType == SpellTargetType.None ? casterPosition : targetPoint;
 
-    var distance = InstanceSystem.GetDistanceBetweenPointsEx(new Point(caster.X, caster.Y), center);
+    var distance = InstanceSystem.GetDistanceBetweenPointsEx(casterPosition, center);
     var distanceDuration = (int)distance / DistanceDivider;
     var finalDuration = distance == -1
       ? CrossDimensionalDuration

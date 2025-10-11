@@ -46,11 +46,12 @@ public sealed class PersistentSoul : PassiveAbility, IEffectOnDeath
   public void OnDeath()
   {
     var caster = @event.Unit;
+    var casterPosition = caster.GetPosition();
 
-    foreach (var unit in GlobalGroup.EnumUnitsInRange(caster.GetPosition(), Radius)
+    foreach (var unit in GlobalGroup.EnumUnitsInRange(casterPosition, Radius)
                .Where(x => IsUnitReanimationCandidate(caster, x))
                .OrderByDescending(x => x.GetLevel())
-               .ThenBy(x => MathEx.GetDistanceBetweenPoints(caster.GetPosition(), x.GetPosition()))
+               .ThenBy(x => MathEx.GetDistanceBetweenPoints(casterPosition, x.GetPosition()))
                .Take(ReanimationCountLevel * caster.GetAbilityLevel(_abilityTypeId)))
     {
       Reanimate(caster.Owner, unit);
@@ -72,7 +73,7 @@ public sealed class PersistentSoul : PassiveAbility, IEffectOnDeath
   {
     var whichUnitPosition = whichUnit.GetPosition();
 
-    EffectSystem.Add(effect.Create(@"Abilities\Spells\Undead\AnimateDead\AnimateDeadTarget.mdl", whichUnit.X, whichUnit.Y));
+    EffectSystem.Add(effect.Create(@"Abilities\Spells\Undead\AnimateDead\AnimateDeadTarget.mdl", whichUnitPosition.X, whichUnitPosition.Y));
 
     var reanimatedUnit = unit.Create(castingPlayer, whichUnit.UnitType, whichUnitPosition.X, whichUnitPosition.Y, whichUnit.Facing);
     reanimatedUnit.RemoveAllAbilities(new List<int> { 1096905835, 1097690998, 1112498531 });

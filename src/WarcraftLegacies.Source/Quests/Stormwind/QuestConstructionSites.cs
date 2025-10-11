@@ -42,8 +42,7 @@ public sealed class QuestConstructionSites : QuestData
 
     foreach (var constructionSite in _constructionSites)
     {
-      var position = constructionSite.GetPosition();
-      completingFaction.Player.PingMinimapSimple(position.X, position.Y, 5);
+      completingFaction.Player.PingMinimapSimple(constructionSite.X, constructionSite.Y, 5);
     }
   }
 }

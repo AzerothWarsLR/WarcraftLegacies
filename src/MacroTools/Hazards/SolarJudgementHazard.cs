@@ -1,7 +1,6 @@
 ﻿using MacroTools.Libraries;
 using MacroTools.SpellSystem;
 using MacroTools.Utils;
-using WCSharp.Shared.Data;
 
 namespace MacroTools.Hazards;
 
@@ -18,7 +17,7 @@ public sealed class SolarJudgementHazard : Hazard
   private void DoBolt(float x, float y)
   {
     effect.Create(EffectPath, x, y).Dispose();
-    var unitsInRange = GlobalGroup.EnumUnitsInRange(new Point(x, y), BoltRadius);
+    var unitsInRange = GlobalGroup.EnumUnitsInRange(x, y, BoltRadius);
     foreach (var target in unitsInRange)
     {
       if (CastFilters.IsTargetEnemyAndAlive(Caster, target))

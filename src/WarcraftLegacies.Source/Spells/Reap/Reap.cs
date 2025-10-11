@@ -56,7 +56,7 @@ public sealed class Reap : Spell
         .EnumUnitsInRange(casterPosition, radius)
         .Where(x => IsValidTarget(x, caster))
         .OrderBy(x => x.Level)
-        .ThenBy(x => MathEx.GetDistanceBetweenPoints(caster.GetPosition(), x.GetPosition()))
+        .ThenBy(x => MathEx.GetDistanceBetweenPoints(casterPosition, x.GetPosition()))
         .Take(unitsSlain)
         .ToList();
 

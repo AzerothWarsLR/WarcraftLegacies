@@ -1,5 +1,4 @@
 ﻿using System;
-using MacroTools.Extensions;
 using WCSharp.Buffs;
 using WCSharp.Effects;
 
@@ -39,7 +38,7 @@ public sealed class SlipstreamPortalBuff : PassiveBuff
     }
 
     _state = SlipstreamPortalState.Opening;
-    _progressBar = effect.Create(@"war3mapImported\Progressbar10sec.mdx", Target.GetPosition().X, Target.GetPosition().Y);
+    _progressBar = effect.Create(@"war3mapImported\Progressbar10sec.mdx", Target.X, Target.Y);
     _progressBar.SetTimeScale(10f / delay);
     _progressBar.SetColor(Caster.Owner);
     _progressBar.SetHeight(450);

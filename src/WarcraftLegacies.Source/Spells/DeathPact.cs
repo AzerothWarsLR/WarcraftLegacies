@@ -87,7 +87,7 @@ public sealed class DeathPact : Spell
 
     caster.Mana = Math.Min(currentMana + manaToRestore, maxMana);
 
-    EffectSystem.Add(effect.Create(KillEffect, targetUnit.GetPosition().X, targetUnit.GetPosition().Y));
+    EffectSystem.Add(effect.Create(KillEffect, targetUnit.X, targetUnit.Y));
   }
 
   private static bool IsValidTarget(unit target, player casterPlayer)
