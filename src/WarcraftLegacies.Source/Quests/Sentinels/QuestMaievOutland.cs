@@ -40,7 +40,7 @@ public sealed class QuestMaievOutland : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    _maiev.Unit?.SetPosition(new Point(-5252, -27597));
+    _maiev.Unit?.SetPosition(-5252, -27597);
     if (_vaultOfTheWardens.Unit != null)
     {
       _vaultOfTheWardens.Unit.RemoveAbility(ABILITY_A0J5_CHASE_ILLIDAN_TO_OUTLAND_SENTINEL);

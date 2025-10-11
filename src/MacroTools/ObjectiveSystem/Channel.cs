@@ -1,5 +1,4 @@
 ﻿using System;
-using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using WCSharp.Shared.Data;
@@ -56,7 +55,7 @@ public sealed class Channel : IDisposable
 
     _position = position;
 
-    caster.SetPosition(_position);
+    caster.SetPosition(_position.X, _position.Y);
     caster.SetPausedEx(true);
     caster.SetAnimation("channel");
     caster.Facing = facing;

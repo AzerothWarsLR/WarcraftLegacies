@@ -124,7 +124,7 @@ public sealed class Instance
   {
     foreach (var unit in unitsInRect)
     {
-      unit.SetPosition(evacuationPosition);
+      unit.SetPosition(evacuationPosition.X, evacuationPosition.Y);
     }
   }
 

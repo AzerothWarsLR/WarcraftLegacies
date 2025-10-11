@@ -88,15 +88,13 @@ public sealed class ShadowAssaultSpell : Spell
 
       // Calculate current position using linear interpolation
       var progress = elapsedTime / totalTime;
-      var currentPos = new Point(
-          startPos.X + (targetPos.X - startPos.X) * progress,
-          startPos.Y + (targetPos.Y - startPos.Y) * progress
-      );
-      caster.SetPosition(currentPos);
+      var currentPosX = startPos.X + (targetPos.X - startPos.X) * progress;
+      var currentPosY = startPos.Y + (targetPos.Y - startPos.Y) * progress;
+      caster.SetPosition(currentPosX, currentPosY);
 
       // Update effect position to follow caster
-      chargeEffect.SetX(currentPos.X);
-      chargeEffect.SetY(currentPos.Y);
+      chargeEffect.SetX(currentPosX);
+      chargeEffect.SetY(currentPosY);
     });
   }
 

@@ -71,20 +71,20 @@ public sealed class PersistentSoul : PassiveAbility, IEffectOnDeath
 
   private void Reanimate(player castingPlayer, unit whichUnit)
   {
-    var whichUnitPosition = whichUnit.GetPosition();
+    var whichUnitX = whichUnit.X;
+    var whichUnitY = whichUnit.Y;
 
-    EffectSystem.Add(effect.Create(@"Abilities\Spells\Undead\AnimateDead\AnimateDeadTarget.mdl", whichUnitPosition.X, whichUnitPosition.Y));
+    EffectSystem.Add(effect.Create(@"Abilities\Spells\Undead\AnimateDead\AnimateDeadTarget.mdl", whichUnitX, whichUnitY));
 
-    var reanimatedUnit = unit.Create(castingPlayer, whichUnit.UnitType, whichUnitPosition.X, whichUnitPosition.Y, whichUnit.Facing);
+    var reanimatedUnit = unit.Create(castingPlayer, whichUnit.UnitType, whichUnitX, whichUnitY, whichUnit.Facing);
     reanimatedUnit.RemoveAllAbilities(new List<int> { 1096905835, 1097690998, 1112498531 });
     reanimatedUnit.SetTimedLife(Duration, BuffId);
     reanimatedUnit.SetVertexColor(200, 50, 50);
     reanimatedUnit.SetExploded(true);
     reanimatedUnit.AddType(unittype.Undead);
     reanimatedUnit.AddType(unittype.Summoned);
+    reanimatedUnit.SetPosition(whichUnitX, whichUnitY);
 
     whichUnit.Dispose();
-
-    reanimatedUnit.SetPosition(whichUnitPosition);
   }
 }
