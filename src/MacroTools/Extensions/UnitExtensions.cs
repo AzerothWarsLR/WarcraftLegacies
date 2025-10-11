@@ -66,14 +66,6 @@ public static class UnitExtensions
     whichUnit.IsUnitType(unittype.Hero) ? whichUnit.HeroName : whichUnit.Name;
 
   /// <summary>
-  /// Pings the unit on the minimap.
-  /// </summary>
-  /// <param name="whichUnit">The unit to ping.</param>
-  /// <param name="duration">How long the ping should last.</param>
-  public static void Ping(this unit whichUnit, float duration) =>
-    PingMinimap(whichUnit.X, whichUnit.Y, duration);
-
-  /// <summary>
   /// Moves the unit to a specified <see cref="Point"/>.
   /// </summary>
   public static void SetPosition(this unit unit, Point where, bool considerPathability = false)

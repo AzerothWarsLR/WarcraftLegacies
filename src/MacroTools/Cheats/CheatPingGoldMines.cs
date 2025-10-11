@@ -28,7 +28,7 @@ public sealed class CheatPingGoldMines : Command
 
     foreach (var goldMine in faction.GoldMines)
     {
-      goldMine.Ping(10);
+      PingMinimap(goldMine.X, goldMine.Y, 10);
     }
 
     return "Pinging all of your Faction's registered gold mines.";
