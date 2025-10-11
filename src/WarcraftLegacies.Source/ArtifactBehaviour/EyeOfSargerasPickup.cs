@@ -22,14 +22,17 @@ public static class EyeOfSargerasPickup
 
   private static void OnEyeOfSargerasPickedUp()
   {
-    if (@event.Unit.Owner == player.NeutralAggressive)
+    var triggerUnit = @event.Unit;
+    if (triggerUnit.Owner == player.NeutralAggressive)
     {
       return;
     }
 
+    var triggerUnitPosition = triggerUnit.GetPosition();
+
     var hostileNearby = GlobalGroup
-      .EnumUnitsInRange(@event.Unit.GetPosition(), 700)
-      .OrderByDescending(x => MathEx.GetDistanceBetweenPoints(x.GetPosition(), @event.Unit.GetPosition()))
+      .EnumUnitsInRange(triggerUnitPosition, 700)
+      .OrderByDescending(x => MathEx.GetDistanceBetweenPoints(x.GetPosition(), triggerUnitPosition))
       .FirstOrDefault(x => x.Owner == player.NeutralAggressive && x.Alive && !x.IsUnitType(unittype.Ancient));
     if (hostileNearby == null)
     {
@@ -38,6 +41,6 @@ public static class EyeOfSargerasPickup
       return;
     }
 
-    MissileSystem.Add(new EyeOfSargerasMissile(@event.Unit, hostileNearby, @event.ManipulatedItem));
+    MissileSystem.Add(new EyeOfSargerasMissile(triggerUnit, hostileNearby, @event.ManipulatedItem));
   }
 }

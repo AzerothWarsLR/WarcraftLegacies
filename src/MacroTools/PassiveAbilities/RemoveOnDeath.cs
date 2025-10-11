@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.PassiveAbilitySystem;
+﻿using MacroTools.PassiveAbilitySystem;
 using WCSharp.Effects;
 
 namespace MacroTools.PassiveAbilities;
@@ -19,12 +18,12 @@ public sealed class RemoveOnDeath : PassiveAbility, IEffectOnDeath
   public void OnDeath()
   {
     var triggerUnit = @event.Unit;
-    var position = triggerUnit.GetPosition();
-    @event.Unit.Dispose();
 
     if (DeathEffectPath != null)
     {
-      EffectSystem.Add(effect.Create(DeathEffectPath, position.X, position.Y));
+      EffectSystem.Add(effect.Create(DeathEffectPath, triggerUnit.X, triggerUnit.Y));
     }
+
+    triggerUnit.Dispose();
   }
 }

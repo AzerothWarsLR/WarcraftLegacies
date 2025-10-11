@@ -103,10 +103,12 @@ public sealed class ExactJusticeChannel : Channel
   /// <inheritdoc />
   protected override void OnDispose()
   {
-    var explodeEffect = effect.Create(EffectSettings.ExplodePath, Caster.X, Caster.Y);
+    var casterX = Caster.X;
+    var casterY = Caster.Y;
+    var explodeEffect = effect.Create(EffectSettings.ExplodePath, casterX, casterY);
     explodeEffect.Scale = EffectSettings.ExplodeScale;
     EffectSystem.Add(explodeEffect);
-    foreach (var unit in GlobalGroup.EnumUnitsInRange(Caster.GetPosition(), Radius)
+    foreach (var unit in GlobalGroup.EnumUnitsInRange(casterX, casterY, Radius)
                .Where(target => CastFilters.IsTargetEnemyAndAlive(Caster, target)))
     {
       unit.TakeDamage(Caster, _damage, false, false, damageType: damagetype.Magic);

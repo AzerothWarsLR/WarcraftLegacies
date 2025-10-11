@@ -4,7 +4,6 @@ using MacroTools.FactionSystem;
 using MacroTools.Setup;
 using WCSharp.Effects;
 using WCSharp.Events;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Powers;
 
@@ -53,35 +52,36 @@ public sealed class ShaladrassilsBlessing : Power
 
   private void OnPlayerTakesDamage()
   {
-    var owner = @event.Unit.Owner;
-    if (!@event.Unit.IsControlPoint()
-        || _shaladrassil.Owner != owner
+    var triggerUnit = @event.Unit;
+    var triggerUnitOwner = triggerUnit.Owner;
+    if (!triggerUnit.IsControlPoint()
+        || _shaladrassil.Owner != triggerUnitOwner
         || !(_shaladrassil.Mana >= _manaCost)
-        || @event.Unit.GetLifePercent() < 100)
+        || triggerUnit.GetLifePercent() < 100)
     {
       return;
     }
 
-    if (SummonTreants(owner, @event.Unit.GetPosition()))
+    if (SummonTreants(triggerUnitOwner, triggerUnit.X, triggerUnit.Y))
     {
       _shaladrassil.Mana -= _manaCost;
     }
   }
 
-  private bool SummonTreants(player owningPlayer, Point point)
+  private bool SummonTreants(player owningPlayer, float x, float y)
   {
-    if (pathingtype.Walkability.GetPathable(point.X, point.Y))
+    if (pathingtype.Walkability.GetPathable(x, y))
     {
       return false;
     }
 
     for (var i = 0; i < _summonedUnitCount; i++)
     {
-      var treant = unit.Create(owningPlayer, _summonedUnitTypeId, point.X, point.Y);
+      var treant = unit.Create(owningPlayer, _summonedUnitTypeId, x, y);
       treant.SetTimedLife(_duration);
       treant.AddType(unittype.Summoned);
       treant.SetExploded(true);
-      EffectSystem.Add(effect.Create(@"Objects\Spawnmodels\NightElf\EntBirthTarget\EntBirthTarget.mdl", treant.GetPosition().X, treant.GetPosition().Y));
+      EffectSystem.Add(effect.Create(@"Objects\Spawnmodels\NightElf\EntBirthTarget\EntBirthTarget.mdl", treant.X, treant.Y));
     }
 
     return true;

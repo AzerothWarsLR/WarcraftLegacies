@@ -1,9 +1,6 @@
 ﻿using MacroTools.ChannelSystem;
 using MacroTools.Data;
-using MacroTools.Extensions;
-using MacroTools.Instances;
 using MacroTools.SpellSystem;
-using WCSharp.Shared;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells.Slipstream;
@@ -49,7 +46,7 @@ public sealed class SlipstreamSpellSpecificDestination : Spell
   /// <inheritdoc/>
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    if (!IsPointValidTarget(caster, targetPoint))
+    if (!SlipstreamSpellHelper.IsPointValidTarget(caster, targetPoint, TargetLocation))
     {
       return;
     }
@@ -69,7 +66,7 @@ public sealed class SlipstreamSpellSpecificDestination : Spell
   /// <inheritdoc/>
   public override void OnStartCast(unit caster, unit target, Point targetPoint)
   {
-    if (IsPointValidTarget(caster, targetPoint))
+    if (SlipstreamSpellHelper.IsPointValidTarget(caster, targetPoint, TargetLocation))
     {
       return;
     }
@@ -83,9 +80,4 @@ public sealed class SlipstreamSpellSpecificDestination : Spell
     whichUnit.Mana += whichUnit.GetAbilityManaCost(Id, GetAbilityLevel(whichUnit));
     whichUnit.EndAbilityCooldown(Id);
   }
-
-  private bool IsPointValidTarget(unit caster, Point targetPoint) =>
-    !pathingtype.Walkability.GetPathable(targetPoint.X, targetPoint.Y)
-    && !(Util.DistanceBetweenPoints(caster.X, caster.Y, TargetLocation.X, TargetLocation.Y) < 500)
-    && InstanceSystem.GetPointInstance(caster.GetPosition()) == InstanceSystem.GetPointInstance(targetPoint);
 }

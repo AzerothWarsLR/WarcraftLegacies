@@ -96,6 +96,8 @@ public static class ArtifactManager
           return;
         }
 
+        var triggerUnitPosition = triggerUnit.GetPosition();
+
         bool? isPositionPathable = null;
         for (var i = 0; i < 6; i++)
         {
@@ -111,15 +113,15 @@ public static class ArtifactManager
             continue;
           }
 
-          isPositionPathable ??= !pathingtype.Walkability.GetPathable(triggerUnit.X, triggerUnit.Y);
+          isPositionPathable ??= !pathingtype.Walkability.GetPathable(triggerUnitPosition.X, triggerUnitPosition.Y);
 
           if (isPositionPathable == true)
           {
-            itemInSlot.SetPosition(triggerUnit.GetPosition());
+            itemInSlot.SetPosition(triggerUnitPosition.X, triggerUnitPosition.Y);
           }
           else
           {
-            var shore = ShoreManager.GetNearestShore(triggerUnit.GetPosition());
+            var shore = ShoreManager.GetNearestShore(triggerUnitPosition);
             if (shore == null)
             {
               throw new InvalidOperationException(

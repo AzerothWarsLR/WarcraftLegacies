@@ -85,13 +85,15 @@ public sealed class WarglaivesOfAzzinoth : PassiveAbility, IAppliesEffectOnDamag
       }
 
       var target = @event.Unit;
+      var targetX = target.X;
+      var targetY = target.Y;
 
-      effect effect = effect.Create(Effect, target.X, target.Y);
+      effect effect = effect.Create(Effect, targetX, targetY);
       effect.Scale = EffectScale;
       effect.SetYaw(caster.Facing * MathEx.DegToRad);
       EffectSystem.Add(effect);
 
-      foreach (var nearbyUnit in GlobalGroup.EnumUnitsInRange(target.GetPosition(), Radius))
+      foreach (var nearbyUnit in GlobalGroup.EnumUnitsInRange(targetX, targetY, Radius))
       {
         if (nearbyUnit.IsAllyTo(caster.Owner) || !nearbyUnit.Alive || nearbyUnit.IsInvulnerable ||
             nearbyUnit.IsUnitType(unittype.Structure) || nearbyUnit.IsUnitType(unittype.Ancient))

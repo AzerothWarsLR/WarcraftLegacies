@@ -27,9 +27,7 @@ public sealed class Ascendance : Spell
 
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    foreach (var unit in GlobalGroup
-               .EnumUnitsInRange(caster.GetPosition(), Radius)
-             )
+    foreach (var unit in GlobalGroup.EnumUnitsInRange(caster.X, caster.Y, Radius))
     {
       if (caster.Owner.IsAlly(unit.Owner))
       {

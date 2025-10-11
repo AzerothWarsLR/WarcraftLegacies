@@ -35,15 +35,16 @@ public sealed class Progenesis : Research
 
     foreach (var worker in workers)
     {
-      var position = worker.GetPosition();
+      var workerX = worker.X;
+      var workerY = worker.Y;
       var facing = worker.Facing;
       var hitPointsPercentage = worker.GetLifePercent();
       var owner = worker.Owner;
 
-      EffectSystem.Add(effect.Create(@"Objects\Spawnmodels\Critters\Albatross\CritterBloodAlbatross.mdl", position.X, position.Y));
+      EffectSystem.Add(effect.Create(@"Objects\Spawnmodels\Critters\Albatross\CritterBloodAlbatross.mdl", workerX, workerY));
 
       worker.SafelyRemove();
-      var soldier = unit.Create(owner, TransformedUnitTypeId, position.X, position.Y, facing);
+      var soldier = unit.Create(owner, TransformedUnitTypeId, workerX, workerY, facing);
       soldier.SetLifePercent(hitPointsPercentage);
     }
   }

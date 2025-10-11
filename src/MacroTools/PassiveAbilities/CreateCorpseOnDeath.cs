@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.PassiveAbilitySystem;
+﻿using MacroTools.PassiveAbilitySystem;
 
 namespace MacroTools.PassiveAbilities;
 
@@ -38,10 +37,9 @@ public sealed class CreateCorpseOnDeath : PassiveAbility, IEffectOnDeath
       return;
     }
 
-    var pos = triggerUnit.GetPosition();
     for (var i = 0; i < CorpseCount; i++)
     {
-      unit.CreateCorpse(triggerUnit.Owner, CorpseUnitTypeId, pos.X, pos.Y, triggerUnit.Facing);
+      unit.CreateCorpse(triggerUnit.Owner, CorpseUnitTypeId, triggerUnit.X, triggerUnit.Y, triggerUnit.Facing);
     }
 
     triggerUnit.Dispose();

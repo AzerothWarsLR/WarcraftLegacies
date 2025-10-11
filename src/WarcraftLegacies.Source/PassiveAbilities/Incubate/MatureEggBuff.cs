@@ -34,13 +34,16 @@ public sealed class MatureEggBuff : PassiveBuff
   /// <inheritdoc />
   public override void OnDeath(bool killingBlow)
   {
+    var targetX = Target.X;
+    var targetY = Target.Y;
+
     var rallyPoint = Target.GetRallyPoint();
     if (rallyPoint.X == 0 && rallyPoint.Y == 0)
     {
-      rallyPoint = Target.GetPosition();
+      rallyPoint = new(targetX, targetY);
     }
 
-    unit.Create(Target.Owner, HatchedUnitTypeId, Target.X, Target.Y)
+    unit.Create(Target.Owner, HatchedUnitTypeId, targetX, targetY)
       .IssueOrder(ORDER_ATTACK, rallyPoint.X, rallyPoint.Y);
   }
 }

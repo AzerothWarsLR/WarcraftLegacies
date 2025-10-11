@@ -70,10 +70,12 @@ public sealed class Stomp : Spell
   /// <inheritdoc />
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    EffectSystem.Add(effect.Create(SpecialEffect, caster.X, caster.Y));
+    var casterX = caster.X;
+    var casterY = caster.Y;
 
-    foreach (var enumUnit in GlobalGroup
-               .EnumUnitsInRange(new Point(caster.X, caster.Y), Radius))
+    EffectSystem.Add(effect.Create(SpecialEffect, casterX, casterY));
+
+    foreach (var enumUnit in GlobalGroup.EnumUnitsInRange(casterX, casterY, Radius))
     {
       if (!CastFilters.IsTargetEnemyAndAlive(caster, enumUnit))
       {

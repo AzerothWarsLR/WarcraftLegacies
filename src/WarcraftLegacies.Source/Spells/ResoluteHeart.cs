@@ -45,13 +45,14 @@ public sealed class ResoluteHeart : PassiveAbility, IAppliesEffectOnDamage
     var caster = @event.DamageSource;
     var damagedUnit = @event.DamageTarget;
 
-
     if (!@event.IsAttack || caster.GetAbilityLevel(AbilityTypeId) == 0 || damagedUnit == null)
     {
       return;
     }
 
-    if (!damagedUnit.IsEnemyTo(caster.Owner) || damagedUnit.IsUnitType(unittype.Structure) ||
+    var owner = caster.Owner;
+
+    if (!damagedUnit.IsEnemyTo(owner) || damagedUnit.IsUnitType(unittype.Structure) ||
         damagedUnit.IsUnitType(unittype.Ancient))
     {
       return;
@@ -69,16 +70,16 @@ public sealed class ResoluteHeart : PassiveAbility, IAppliesEffectOnDamage
     var healAmount = damageDealt * 0.2f;
 
     // Heal nearby allies
-    foreach (var nearbyUnit in GlobalGroup.EnumUnitsInRange(caster.GetPosition(), Radius))
+    foreach (var nearbyUnit in GlobalGroup.EnumUnitsInRange(caster.X, caster.Y, Radius))
     {
-      if (nearbyUnit == caster || !nearbyUnit.IsAllyTo(caster.Owner) || !nearbyUnit.Alive)
+      if (nearbyUnit == caster || !nearbyUnit.IsAllyTo(owner) || !nearbyUnit.Alive)
       {
         continue;
       }
 
       if (!string.IsNullOrEmpty(EffectPath))
       {
-        effect.Create(EffectPath, nearbyUnit.GetPosition().X, nearbyUnit.GetPosition().Y);
+        effect.Create(EffectPath, nearbyUnit.X, nearbyUnit.Y);
       }
 
       nearbyUnit.Heal(healAmount);

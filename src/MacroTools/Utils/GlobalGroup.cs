@@ -60,4 +60,13 @@ public static class GlobalGroup
     _group.EnumUnitsInRange(point.X, point.Y, radius);
     return _group.ToList();
   }
+
+  /// <summary>
+  /// Returns a list of units within a specified radius of the given point.
+  /// </summary>
+  public static List<unit> EnumUnitsInRange(float x, float y, float radius)
+  {
+    _group.EnumUnitsInRange(x, y, radius);
+    return _group.ToList();
+  }
 }

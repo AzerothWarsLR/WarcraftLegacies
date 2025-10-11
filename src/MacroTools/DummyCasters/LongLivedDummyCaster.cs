@@ -30,7 +30,7 @@ public sealed class LongLivedDummyCaster
   /// </summary>
   public void ChannelAtCaster(unit caster, int abilityId, int orderId, int level, float duration)
   {
-    var newUnit = unit.Create(caster.Owner, _unitTypeId, caster.GetPosition().X, caster.GetPosition().Y, 0);
+    var newUnit = unit.Create(caster.Owner, _unitTypeId, caster.X, caster.Y, 0);
     newUnit.AddAbility(abilityId);
     newUnit.SetAbilityLevel(abilityId, level);
     newUnit.IssueOrder(orderId);

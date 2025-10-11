@@ -48,14 +48,16 @@ public sealed class CreateUnitOnDeath : PassiveAbility, IEffectOnDeath
       return;
     }
 
-    var pos = triggerUnit.GetPosition();
+    var triggerUnitX = triggerUnit.X;
+    var triggerUnitY = triggerUnit.Y;
+
     for (var i = 0; i < CreateCount; i++)
     {
-      unit.Create(triggerUnit.Owner, CreateUnitTypeId, pos.X, pos.Y, triggerUnit.Facing)
+      unit.Create(triggerUnit.Owner, CreateUnitTypeId, triggerUnitX, triggerUnitY, triggerUnit.Facing)
         .SetTimedLife(Duration);
     }
 
-    EffectSystem.Add(effect.Create(SpecialEffectPath, pos.X, pos.Y), 1);
+    EffectSystem.Add(effect.Create(SpecialEffectPath, triggerUnitX, triggerUnitY), 1);
     triggerUnit.Dispose();
   }
 }

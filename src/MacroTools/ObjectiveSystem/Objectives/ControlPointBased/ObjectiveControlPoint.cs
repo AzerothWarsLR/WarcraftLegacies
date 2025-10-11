@@ -66,8 +66,11 @@ public sealed class ObjectiveControlPoint : Objective
 
   private void RegisterKillTriggers(float range)
   {
+    var target = _target.Unit;
+    var targetX = target.X;
+    var targetY = target.Y;
     var unitsNearby = GlobalGroup
-      .EnumUnitsInRange(_target.Unit.GetPosition(), range)
+      .EnumUnitsInRange(targetX, targetY, range)
         .Where(x => x.Owner == player.NeutralAggressive && !x.IsUnitType(unittype.Ancient) &&
          !x.IsUnitType(unittype.Sapper) && !x.IsUnitType(unittype.Structure));
 

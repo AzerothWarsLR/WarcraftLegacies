@@ -38,13 +38,12 @@ public sealed class RendSoul : Spell
     EffectSystem.Add(effect.Create(EffectCaster, caster.X, caster.Y));
     EffectSystem.Add(effect.Create(EffectTarget, target.X, target.Y));
 
-    var targetPosition = target.GetPosition();
     target.Kill();
 
     caster.Heal(healthGained);
     caster.Mana += manaGained;
 
-    var summonedUnit = unit.Create(caster.Owner, UnitTypeSummoned, targetPosition.X, targetPosition.Y, caster.Facing);
+    var summonedUnit = unit.Create(caster.Owner, UnitTypeSummoned, target.X, target.Y, caster.Facing);
     summonedUnit.SetTimedLife(Duration);
     summonedUnit.AddType(unittype.Summoned);
   }

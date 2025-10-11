@@ -25,8 +25,7 @@ public sealed class FocalDemonGateBuff : PassiveBuff
   {
     get
     {
-      var targetPosition = Target.GetPosition();
-      var (x, y) = Util.PositionWithPolarOffset(targetPosition.X, targetPosition.Y, SpawnDistance, Target.Facing + FacingOffset);
+      var (x, y) = Util.PositionWithPolarOffset(Target.X, Target.Y, SpawnDistance, Target.Facing + FacingOffset);
       return new Point(x, y);
     }
   }

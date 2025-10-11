@@ -45,8 +45,7 @@ public sealed class DemonGateBuff : TickingBuff
         return FocalDemonGateBuff.Instance.SpawnPoint;
       }
 
-      var targetPosition = Target.GetPosition();
-      var (x, y) = Util.PositionWithPolarOffset(targetPosition.X, targetPosition.Y, SpawnDistance, Target.Facing + FacingOffset);
+      var (x, y) = Util.PositionWithPolarOffset(Target.X, Target.Y, SpawnDistance, Target.Facing + FacingOffset);
       return new Point(x, y);
     }
   }
