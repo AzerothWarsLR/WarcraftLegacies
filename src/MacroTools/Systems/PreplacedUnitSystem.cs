@@ -5,7 +5,6 @@ using MacroTools.Libraries;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
-
 namespace MacroTools.Systems;
 
 /// <summary>
@@ -36,8 +35,7 @@ public sealed class PreplacedUnitSystem
   {
     if (!_unitsByTypeId.TryGetValue(unitTypeId, out var unit))
     {
-      throw new KeyNotFoundException(
-        $"There is no preplaced unit with Unit Type Id {GeneralHelpers.DebugIdInteger2IdString(unitTypeId)}.");
+      throw new KeyNotFoundException($"There is no preplaced unit with Unit Type Id {Utils.FourCc.GetString(unitTypeId)}.");
     }
 
     return GetClosestUnitToPoint(unit, location);
@@ -54,14 +52,12 @@ public sealed class PreplacedUnitSystem
   {
     if (!_unitsByTypeId.TryGetValue(unitTypeId, out var unit))
     {
-      throw new KeyNotFoundException(
-        $"There is no preplaced unit with Unit Type Id {GeneralHelpers.DebugIdInteger2IdString(unitTypeId)}.");
+      throw new KeyNotFoundException($"There is no preplaced unit with Unit Type Id {Utils.FourCc.GetString(unitTypeId)}.");
     }
 
     if (unit.Count > 1)
     {
-      throw new Exception(
-        $"There are multiple preplaced units with Unit Type Id {GeneralHelpers.DebugIdInteger2IdString(unitTypeId)}. Use the overload that requires a position instead.");
+      throw new Exception($"There are multiple preplaced units with Unit Type Id {Utils.FourCc.GetString(unitTypeId)}. Use the overload that requires a position instead.");
     }
 
     return unit.First();
@@ -76,8 +72,7 @@ public sealed class PreplacedUnitSystem
   {
     if (!_unitsByTypeId.TryGetValue(unitTypeId, out var unit))
     {
-      throw new KeyNotFoundException(
-        $"There is no preplaced unit with Unit Type Id {GeneralHelpers.DebugIdInteger2IdString(unitTypeId)}.");
+      throw new KeyNotFoundException($"There is no preplaced unit with Unit Type Id {Utils.FourCc.GetString(unitTypeId)}.");
     }
 
     return unit;
@@ -93,8 +88,7 @@ public sealed class PreplacedUnitSystem
   {
     if (!_destructablesByTypeId.TryGetValue(destructableTypeId, out var destructable))
     {
-      throw new KeyNotFoundException(
-        $"There is no preplaced unit with Unit Type Id {GeneralHelpers.DebugIdInteger2IdString(destructableTypeId)}.");
+      throw new KeyNotFoundException($"There is no preplaced unit with Unit Type Id {Utils.FourCc.GetString(destructableTypeId)}.");
     }
 
     return GetClosestDestructableToPoint(destructable, location);
@@ -110,14 +104,12 @@ public sealed class PreplacedUnitSystem
   {
     if (!_destructablesByTypeId.TryGetValue(destructableTypeId, out var destructable))
     {
-      throw new KeyNotFoundException(
-        $"There is no preplaced unit with Unit Type Id {GeneralHelpers.DebugIdInteger2IdString(destructableTypeId)}.");
+      throw new KeyNotFoundException($"There is no preplaced unit with Unit Type Id {Utils.FourCc.GetString(destructableTypeId)}.");
     }
 
     if (destructable.Count > 1)
     {
-      throw new Exception(
-        $"There are multiple preplaced units with Unit Type Id {GeneralHelpers.DebugIdInteger2IdString(destructableTypeId)}. Use the overload that requires a position instead.");
+      throw new Exception($"There are multiple preplaced units with Unit Type Id {Utils.FourCc.GetString(destructableTypeId)}. Use the overload that requires a position instead.");
     }
 
     return destructable.First();
@@ -186,7 +178,7 @@ public sealed class PreplacedUnitSystem
     if (closestDistance > MaximumDistanceToFind)
     {
       var unit = units.FirstOrDefault();
-      Logger.LogWarning($"Could not find a {(unit != null ? unit.Name : null)}({GeneralHelpers.DebugIdInteger2IdString(unit.UnitType)}) within {MaximumDistanceToFind} of Point {location.X}, {location.Y}.");
+      Logger.LogWarning($"Could not find a {(unit != null ? unit.Name : null)}({Utils.FourCc.GetString(unit.UnitType)}) within {MaximumDistanceToFind} of Point {location.X}, {location.Y}.");
     }
 
 

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Exceptions;
 using MacroTools.Extensions;
-using MacroTools.Libraries;
 using MacroTools.Systems;
 using WCSharp.Effects;
 using WCSharp.Events;
@@ -142,8 +141,7 @@ public sealed class ControlPointManager
       return controlPoint;
     }
 
-    throw new KeyNotFoundException(
-      $"There is no {nameof(ControlPoint)} with unit type ID {GeneralHelpers.DebugIdInteger2IdString(unitType)}");
+    throw new KeyNotFoundException($"There is no {nameof(ControlPoint)} with unit type ID {Utils.FourCc.GetString(unitType)}");
   }
 
   /// <summary>
