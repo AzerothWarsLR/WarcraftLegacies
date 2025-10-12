@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using MacroTools.DummyCasters;
 using MacroTools.Spells;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells;
@@ -35,7 +35,7 @@ public sealed class MassAnySpell : Spell
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
     var center = TargetType == SpellTargetType.None ? new Point(caster.X, caster.Y) : targetPoint;
-    var units = GetUnitsInRadius(center, Radius, CastFilter);
+    var units = GlobalGroup.EnumUnitsInRange(center.X, center.Y, Radius).Where(u => CastFilter(caster, u));
 
     var filteredUnits = units.Where(u => GetRandomReal(0, 1) <= Chance).ToList();
 
@@ -74,26 +74,5 @@ public sealed class MassAnySpell : Spell
           DummyCastOriginType
         );
     }
-  }
-
-
-  private static IEnumerable<unit> GetUnitsInRadius(Point center, float radius, DummyCasterManager.CastFilter castFilter)
-  {
-    group group = group.Create();
-    group.EnumUnitsInRange(center.X, center.Y, radius);
-    var units = new List<unit>();
-    unit u;
-
-    while ((u = group.First) != null)
-    {
-      group.Remove(u);
-      if (castFilter(null, u))
-      {
-        units.Add(u);
-      }
-    }
-
-    group.Dispose();
-    return units;
   }
 }
