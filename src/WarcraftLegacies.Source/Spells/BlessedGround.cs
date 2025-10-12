@@ -1,5 +1,4 @@
 ﻿using System;
-using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using MacroTools.Utils;
 using WCSharp.Effects;
@@ -61,7 +60,7 @@ public sealed class BlessedGroundSpell : Spell
         break;
       }
 
-      unit.Heal(data.InitialHeal);
+      unit.Life += data.InitialHeal;
       data.TotalHealingDone += data.InitialHeal;
 
       if (!string.IsNullOrEmpty(data.HealEffectPath))
@@ -85,7 +84,7 @@ public sealed class BlessedGroundSpell : Spell
         break;
       }
 
-      unit.Heal(data.HealPerSecond);
+      unit.Life += data.HealPerSecond;
       data.HealingOverTimeDone += data.HealPerSecond;
 
       if (!string.IsNullOrEmpty(data.HealEffectPath))

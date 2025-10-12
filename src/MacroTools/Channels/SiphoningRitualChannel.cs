@@ -63,7 +63,7 @@ public sealed class SiphoningRitualChannel : Channel
         !_target.IsAllyTo(Caster.Owner))
     {
       _target.TakeDamage(Caster, LifeDrainedPerSecond * Interval, ranged: true, damageType: damagetype.Magic);
-      Caster.Heal(Math.Min(LifeDrainedPerSecond * Interval, _target.Life));
+      Caster.Life += Math.Min(LifeDrainedPerSecond * Interval, _target.Life);
     }
 
     if (Caster.Mana < Caster.MaxMana ||

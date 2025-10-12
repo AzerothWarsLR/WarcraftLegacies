@@ -147,16 +147,6 @@ public static class UnitExtensions
   }
 
   /// <summary>
-  /// Heals the specified unit by the specified amount.
-  /// </summary>
-  /// <param name="unit">The unit to heal.</param>
-  /// <param name="amount">The amount of damage to heal.</param>
-  public static void Heal(this unit unit, float amount)
-  {
-    unit.Life += amount;
-  }
-
-  /// <summary>
   ///   Reveals the unit, makes it vulnerable, and transfers its ownership to the specified player.
   /// </summary>
   public static void Rescue(this unit whichUnit, player whichPlayer)

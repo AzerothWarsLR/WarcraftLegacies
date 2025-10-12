@@ -1,6 +1,5 @@
 ﻿using System;
 using MacroTools.DummyCasters;
-using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
@@ -38,7 +37,7 @@ public sealed class MassDeathCoil : Spell
       effect.Create(@"Abilities\Spells\Human\Heal\HealTarget.mdl", caster, "origin").Dispose();
       foreach (var unused in dummyTargets)
       {
-        caster.Heal(CasterHealPerTargetUpgraded);
+        caster.Life += CasterHealPerTargetUpgraded;
       }
     }
 

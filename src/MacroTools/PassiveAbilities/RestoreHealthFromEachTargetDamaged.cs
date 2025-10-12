@@ -94,7 +94,7 @@ public sealed class RestoreHealthFromEachTargetDamaged : PassiveAbility, IApplie
     }
 
     var healthPerTarget = ((caster.GetLevel() * HealthPerLevel) + (HealthPerTarget.Base + HealthPerTarget.PerLevel) * caster.GetAbilityLevel(_abilityTypeId));
-    caster.Heal(healthPerTarget);
+    caster.Life += healthPerTarget;
     EffectSystem.Add(effect.Create(Effect, caster, "origin"));
   }
 }

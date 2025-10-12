@@ -72,7 +72,7 @@ public sealed class HealingWavePlus : Spell
         ? SecondWaveHealAmount
         : HealAmountBase + (HealAmountLevel * GetAbilityLevel(caster))) * _currentHealingModifier;
 
-    target.Heal(healAmount);
+    target.Life += healAmount;
 
     if (!string.IsNullOrEmpty(HealingEffect))
     {

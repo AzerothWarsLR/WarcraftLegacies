@@ -73,7 +73,7 @@ public sealed class DeathPact : Spell
     targetUnit.Kill();
 
     var healthToRestore = targetHealth * HealthRestorePercent;
-    caster.Heal(healthToRestore);
+    caster.Life += healthToRestore;
 
     if (!string.IsNullOrEmpty(HealEffect))
     {

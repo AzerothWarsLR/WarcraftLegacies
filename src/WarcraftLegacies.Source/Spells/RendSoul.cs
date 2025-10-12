@@ -40,7 +40,7 @@ public sealed class RendSoul : Spell
 
     target.Kill();
 
-    caster.Heal(healthGained);
+    caster.Life += healthGained;
     caster.Mana += manaGained;
 
     var summonedUnit = unit.Create(caster.Owner, UnitTypeSummoned, target.X, target.Y, caster.Facing);
