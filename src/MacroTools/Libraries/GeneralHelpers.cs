@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using MacroTools.Utils;
 using WCSharp.Shared.Data;
 
 namespace MacroTools.Libraries;
@@ -9,7 +10,6 @@ namespace MacroTools.Libraries;
 /// </summary>
 public static class GeneralHelpers
 {
-  private static readonly group _tempGroup = group.Create();
   private static readonly rect _tempRect = rect.Create(0, 0, 0, 0);
 
   private static Point? _enumDestructableCenter;
@@ -59,22 +59,14 @@ public static class GeneralHelpers
   /// </summary>
   public static void KillNeutralHostileUnitsInRadius(float x, float y, float radius)
   {
-    _tempGroup.EnumUnitsInRange(x, y, radius);
-    while (true)
+    var neutralAggressive = player.NeutralAggressive;
+
+    foreach (var unit in GlobalGroup.EnumUnitsInRange(x, y, radius))
     {
-      var u = _tempGroup.First;
-      if (u == null)
+      if (unit.Owner == neutralAggressive && !unit.IsUnitType(unittype.Sapper) && !unit.IsUnitType(unittype.Structure))
       {
-        break;
+        unit.Kill();
       }
-
-      if (u.Owner == player.NeutralAggressive && !u.IsUnitType(unittype.Sapper) &&
-          !u.IsUnitType(unittype.Structure))
-      {
-        u.Kill();
-      }
-
-      _tempGroup.Remove(u);
     }
   }
 
@@ -84,23 +76,14 @@ public static class GeneralHelpers
   public static unit CreateStructureForced(player whichPlayer, int unitId, float x, float y, float face, float size)
   {
     SetRect(_tempRect, x - size / 2, y - size / 2, x + size / 2, y + size / 2);
-    _tempGroup.EnumUnitsInRect(_tempRect);
-    while (true)
+    foreach (var unit in GlobalGroup.EnumUnitsInRect(_tempRect))
     {
-      var u = _tempGroup.First;
-      if (u == null)
+      if (unit.IsUnitType(unittype.Structure))
       {
-        break;
+        unit.Owner.Gold += unit.GoldCostOf(unit.UnitType);
+        unit.Owner.Lumber += unit.WoodCostOf(unit.UnitType);
+        unit.Kill();
       }
-
-      if (u.IsUnitType(unittype.Structure))
-      {
-        u.Owner.Gold += unit.GoldCostOf(u.UnitType);
-        u.Owner.Lumber += unit.WoodCostOf(u.UnitType);
-        u.Kill();
-      }
-
-      _tempGroup.Remove(u);
     }
 
     return unit.Create(whichPlayer, unitId, x, y, face);
