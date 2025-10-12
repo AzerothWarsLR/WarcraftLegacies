@@ -66,9 +66,10 @@ public sealed class UnstableEvolution : Spell
       target.SetScale(0.6f, 0.6f, 0.6f);
     }
 
-    effect.Create(EffectTarget, target.X, target.Y).Scale = EffectScaleTarget;
-    EffectSystem.Add(effect.Create(EffectTarget, target.X, target.Y));
-    effect.Create(EffectTarget, target.X, target.Y).SetColor(0, 255, 0);
+    effect effect = effect.Create(EffectTarget, target.X, target.Y);
+    effect.Scale = EffectScaleTarget;
+    effect.SetColor(0, 255, 0);
+    EffectSystem.Add(effect);
   }
 
 }

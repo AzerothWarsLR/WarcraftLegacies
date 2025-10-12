@@ -1,6 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Utils;
+using WCSharp.Effects;
 
 namespace WarcraftLegacies.Source.Spells;
 
@@ -79,7 +80,7 @@ public sealed class ResoluteHeart : PassiveAbility, IAppliesEffectOnDamage
 
       if (!string.IsNullOrEmpty(EffectPath))
       {
-        effect.Create(EffectPath, nearbyUnit.X, nearbyUnit.Y);
+        EffectSystem.Add(effect.Create(EffectPath, nearbyUnit.X, nearbyUnit.Y));
       }
 
       nearbyUnit.Heal(healAmount);

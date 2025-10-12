@@ -10,6 +10,7 @@ public sealed class QuestTortolla : QuestData
 {
   private const int HeroId = UNIT_H04U_DEMIGOD_DRUIDS;
   private readonly unit _sleepingTortolla;
+  private readonly effect _effect;
 
   public QuestTortolla(LegendaryHero tortolla) : base("The Turtle Demigod",
     "Tortolla was badly wounded during the War of the Ancients, and has been resting ever since.",
@@ -23,7 +24,7 @@ public sealed class QuestTortolla : QuestData
     sleepingTurtle.IsInvulnerable = true;
     _sleepingTortolla = sleepingTurtle;
     AddHeroXP(sleepingTurtle, tortolla.StartingXp, true);
-    effect.Create(@"Abilities\Spells\Undead\Sleep\SleepTarget.mdl", _sleepingTortolla, "overhead");
+    _effect = effect.Create(@"Abilities\Spells\Undead\Sleep\SleepTarget.mdl", _sleepingTortolla, "overhead");
   }
 
   /// <inheritdoc/>
@@ -36,11 +37,13 @@ public sealed class QuestTortolla : QuestData
   protected override void OnComplete(Faction completingFaction)
   {
     _sleepingTortolla.Dispose();
+    _effect.Dispose();
   }
 
   /// <inheritdoc/>
   protected override void OnFail(Faction completingFaction)
   {
     _sleepingTortolla.Dispose();
+    _effect.Dispose();
   }
 }
