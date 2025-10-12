@@ -101,8 +101,8 @@ public sealed class DemonGateBuff : TickingBuff
     }
 
     if (Progress >= _spawnInterval
-        && Caster.Owner.GetFoodUsed() < Caster.Owner.GetFoodCap()
-        && Caster.Owner.GetFoodUsed() < Caster.Owner.GetFoodCapCeiling()
+        && Caster.Owner.FoodUsed < Caster.Owner.FoodCap
+        && Caster.Owner.FoodUsed < Caster.Owner.FoodCapCeiling
         && Caster.GetAbilityLevel(_toggleBuffTypeId) > 0
         && _spawnedDemons.Count <= SpawnLimit - _spawnCount)
     {

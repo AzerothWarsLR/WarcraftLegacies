@@ -50,7 +50,10 @@ public sealed class QuestHighBank : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    completingFaction.Player?.AdjustPlayerState(playerstate.ResourceGold, 225);
+    if (completingFaction.Player != null)
+    {
+      completingFaction.Player.Gold += 225;
+    }
     completingFaction.Player.RescueGroup(_rescueUnits);
     if (_katherine.Unit != null)
     {

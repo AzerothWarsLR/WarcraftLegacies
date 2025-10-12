@@ -79,7 +79,7 @@ public static class GameTime
       foreach (var player in WCSharp.Shared.Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
       {
         var faction = player.GetFaction();
-        var meetEliminationThreshold = player.GetControlPoints().Count <= 5 && player.GetFoodUsed() <= 105 &&
+        var meetEliminationThreshold = player.GetControlPoints().Count <= 5 && player.FoodUsed <= 105 &&
                                        !player.GetTeam()!.DoesTeamHaveEssentialLegend();
         if (meetEliminationThreshold)
         {

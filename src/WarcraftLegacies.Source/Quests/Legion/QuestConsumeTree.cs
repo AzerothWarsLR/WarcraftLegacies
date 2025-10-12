@@ -35,9 +35,11 @@ public sealed class QuestConsumeTree : QuestData
   {
     var archimondeUnit = _archimonde.Unit;
     var druidsPlayer = _druids.Player;
-    druidsPlayer?
-      .RemoveAllResources()
-      .RemoveAllUnits();
+    if (druidsPlayer != null)
+    {
+      druidsPlayer.RemoveAllUnits();
+      druidsPlayer.Gold = 0;
+    }
 
     if (archimondeUnit != null)
     {
