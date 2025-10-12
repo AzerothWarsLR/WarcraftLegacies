@@ -17,7 +17,7 @@ public sealed class LegendaryHero : Legend
   private readonly playercolor? _playerColor;
   private readonly int _dummyDieswithout = FourCC("LEgn");
   private readonly int _dummyPermadies = FourCC("LEgo");
-  private group? _diesWithout;
+  private List<unit>? _diesWithout;
   private trigger? _castTrig;
   private trigger? _becomesRevivableTrig;
   private trigger? _ownerTrig;
@@ -153,7 +153,6 @@ public sealed class LegendaryHero : Legend
   /// </summary>
   public void ClearUnitDependencies()
   {
-    _diesWithout.Dispose();
     _diesWithout = null;
     RefreshDummy();
   }
@@ -165,7 +164,7 @@ public sealed class LegendaryHero : Legend
   /// </summary>
   public void AddUnitDependency(unit whichUnit)
   {
-    _diesWithout ??= group.Create();
+    _diesWithout ??= new();
     _diesWithout.Add(whichUnit);
     RefreshDummy();
   }
@@ -194,8 +193,14 @@ public sealed class LegendaryHero : Legend
 
   private bool AllDependenciesAreMissing()
   {
-    return _diesWithout != null && !_diesWithout.Copy().EmptyToList()
-      .Any(x => x.Owner == Unit.Owner && x.Alive);
+    if (Unit == null || _diesWithout == null)
+    {
+      return false;
+    }
+
+    var owner = Unit.Owner;
+
+    return !_diesWithout.Any(x => x.Owner == owner && x.Alive);
   }
 
   /// <inheritdoc />
@@ -294,28 +299,20 @@ public sealed class LegendaryHero : Legend
     Unit.RemoveAbility(_dummyPermadies);
     if (_diesWithout != null)
     {
-      var tempGroup = group.Create();
-      var tooltip =
-        "When this unit dies, it will be unrevivable unless any of the following capitals are under your control:\n";
-      _diesWithout.Add(tempGroup);
-      while (true)
+      var tooltip = "When this unit dies, it will be unrevivable unless any of the following capitals are under your control:\n";
+      foreach (var unit in _diesWithout)
       {
-        var u = tempGroup.First;
-        if (u == null)
+        if (unit == null)
         {
-          break;
+          continue;
         }
 
-        tooltip = tooltip + " - " + u.Name + "|n";
-        tempGroup.Remove(u);
+        tooltip = tooltip + " - " + unit.Name + "|n";
       }
 
       tooltip += "\nUsing this ability pings each of these capitals on the minimap.";
       Unit.AddAbility(_dummyDieswithout);
-      BlzSetAbilityStringLevelField(Unit.GetAbility(_dummyDieswithout),
-        ABILITY_SLF_TOOLTIP_NORMAL_EXTENDED,
-        0, tooltip);
-      tempGroup.Dispose();
+      Unit.GetAbility(_dummyDieswithout).SetTooltipNormalExtended_aub1(0, tooltip);
       return;
     }
 
@@ -329,21 +326,19 @@ public sealed class LegendaryHero : Legend
       return;
     }
 
-    var tempGroup = group.Create();
-    _diesWithout.Add(tempGroup);
-    while (true)
+    if (_diesWithout != null)
     {
-      var u = tempGroup.First;
-      if (u == null)
+      var triggerPlayer = @event.Player;
+
+      foreach (var unit in _diesWithout)
       {
-        break;
+        if (unit == null)
+        {
+          continue;
+        }
+
+        triggerPlayer.PingMinimapSimple(unit.X, unit.Y, 5);
       }
-
-      @event.Player.PingMinimapSimple(u.X, u.Y, 5);
-
-      tempGroup.Remove(u);
     }
-
-    tempGroup.Dispose();
   }
 }
