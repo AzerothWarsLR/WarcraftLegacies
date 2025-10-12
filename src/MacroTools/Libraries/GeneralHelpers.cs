@@ -56,27 +56,6 @@ public static class GeneralHelpers
   }
 
   /// <summary>
-  /// Converts an integer ID into an ID string.
-  /// <para>E.g. converts the integer representation of "hfoo" back into "hfoo".</para>
-  /// </summary>
-  public static string DebugIdInteger2IdString(int value)
-  {
-    const string charMap =
-      ".................................!.#$%&'()*+,-./0123456789:;<=>.@ABCDEFGHIJKLMNOPQRSTUVWXYZ[.]^_`abcdefghijklmnopqrstuvwxyz{|}~.................................................................................................................................";
-    var result = "";
-    var remainingValue = value;
-
-    for (var i = 0; i < 5; i++)
-    {
-      var charValue = MathEx.ModuloInteger(remainingValue, 256);
-      remainingValue /= 256;
-      result = SubString(charMap, charValue, charValue + 1) + result;
-    }
-
-    return result;
-  }
-
-  /// <summary>
   /// Kills all neutral hostile units in an circular radius.
   /// </summary>
   public static void KillNeutralHostileUnitsInRadius(float x, float y, float radius)

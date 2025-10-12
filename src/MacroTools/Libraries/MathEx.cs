@@ -13,21 +13,6 @@ public static class MathEx
     return b > a ? b : a;
   }
 
-  public static int ModuloInteger(int dividend, int divisor)
-  {
-    var modulus = dividend - (dividend / divisor) * divisor;
-
-    // If the dividend was negative, the above modulus calculation will
-    // be negative, but within (-divisor..0).  We can add (divisor) to
-    // shift this result into the desired range of (0..divisor).
-    if (modulus < 0)
-    {
-      modulus += divisor;
-    }
-
-    return modulus;
-  }
-
   public static float GetDistanceBetweenPoints(Point positionA, Point positionB)
   {
     var dx = positionB.X - positionA.X;
