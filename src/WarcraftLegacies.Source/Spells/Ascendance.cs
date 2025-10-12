@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Buffs;
-using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using MacroTools.Utils;
 using WCSharp.Buffs;
@@ -31,7 +30,7 @@ public sealed class Ascendance : Spell
     {
       if (caster.Owner.IsAlly(unit.Owner))
       {
-        unit.Heal(HealBase + HealLevel * GetAbilityLevel(caster));
+        unit.Life += HealBase + HealLevel * GetAbilityLevel(caster);
       }
     }
     var ascendancyBuff = new AscendancyBuff(caster, caster)
