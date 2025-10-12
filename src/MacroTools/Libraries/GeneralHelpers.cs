@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using MacroTools.Extensions;
 using WCSharp.Shared.Data;
 
 namespace MacroTools.Libraries;
@@ -117,8 +116,8 @@ public static class GeneralHelpers
 
       if (u.IsUnitType(unittype.Structure))
       {
-        u.Owner.AdjustPlayerState(playerstate.ResourceGold, unit.GoldCostOf(u.UnitType));
-        u.Owner.AdjustPlayerState(playerstate.ResourceLumber, unit.WoodCostOf(u.UnitType));
+        u.Owner.Gold += unit.GoldCostOf(u.UnitType);
+        u.Owner.Lumber += unit.WoodCostOf(u.UnitType);
         u.Kill();
       }
 

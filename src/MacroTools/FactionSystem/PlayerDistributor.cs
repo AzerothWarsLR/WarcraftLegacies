@@ -33,7 +33,7 @@ public static class PlayerDistributor
     else
     {
       player.RemoveAllUnits();
-      player.RemoveAllResources();
+      player.Gold = 0;
     }
   }
 

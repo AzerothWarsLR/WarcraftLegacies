@@ -11,14 +11,14 @@ public static class RefundZeroLimitUnits
 {
   private static void VerifyUnitIntegrity(unit whichUnit)
   {
+    var unitType = whichUnit.UnitType;
     var player = whichUnit.Owner;
-    if (player.GetObjectLimit(whichUnit.UnitType) != 0)
+    if (player.GetObjectLimit(unitType) != 0)
     {
       return;
     }
 
-    player.AdjustPlayerState(playerstate.ResourceGold,
-      whichUnit.IsUnitType(unittype.Hero) ? PlayerDistributor.HeroCost : unit.GoldCostOf(whichUnit.UnitType));
+    player.Gold += whichUnit.IsUnitType(unittype.Hero) ? PlayerDistributor.HeroCost : unit.GoldCostOf(unitType);
 
     whichUnit.Dispose();
   }
