@@ -53,7 +53,7 @@ public abstract class Research
   public void Refund(player researchingPlayer, bool unresearch = true)
   {
     researchingPlayer.DisplayRefundedResearch(ResearchTypeId);
-    researchingPlayer.AddGold(GoldCost);
+    researchingPlayer.Gold += GoldCost;
     if (unresearch)
     {
       researchingPlayer.SetObjectLevel(ResearchTypeId, Math.Min(0, researchingPlayer.GetObjectLimit(ResearchTypeId)));

@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.QuestSystem;
@@ -32,6 +31,12 @@ public sealed class QuestWarsongKillCthun : QuestData
   }
 
   /// <inheritdoc/>
-  protected override void OnComplete(Faction whichFaction) => whichFaction.Player?.AddGold(GoldReward);
-
+  protected override void OnComplete(Faction whichFaction)
+  {
+    var player = whichFaction.Player;
+    if (player != null)
+    {
+      player.Gold += GoldReward;
+    }
+  }
 }

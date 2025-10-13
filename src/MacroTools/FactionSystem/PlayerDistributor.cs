@@ -80,14 +80,14 @@ public static class PlayerDistributor
 
   private static void DistributeGold(player playerToDistribute, List<player> playersToDistributeTo, UnitsRefund refund)
   {
-    var goldToDistribute = refund.Gold + playerToDistribute.GetGold();
+    var goldToDistribute = refund.Gold + playerToDistribute.Gold;
 
     foreach (var player in playersToDistributeTo)
     {
-      player.AddGold(goldToDistribute / playersToDistributeTo.Count);
+      player.GetPlayerData().AddFractionalGold(goldToDistribute / playersToDistributeTo.Count);
     }
 
-    playerToDistribute.SetGold(0);
+    playerToDistribute.Gold = 0;
   }
 
   /// <summary>

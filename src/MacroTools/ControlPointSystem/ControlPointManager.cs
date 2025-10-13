@@ -6,6 +6,7 @@ using MacroTools.Extensions;
 using MacroTools.Systems;
 using WCSharp.Effects;
 using WCSharp.Events;
+using WCSharp.Shared;
 
 namespace MacroTools.ControlPointSystem;
 
@@ -20,12 +21,12 @@ public sealed class ControlPointManager
     {
       timer.Create().Start(Period, true, () =>
       {
-        foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+        foreach (var player in Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
         {
           if (player.GetFaction() != null)
           {
-            var goldPerSecond = player.GetTotalIncome() * Period / 60;
-            player.AddGold(goldPerSecond);
+            var playerData = player.GetPlayerData();
+            playerData.AddFractionalGold(playerData.TotalIncome * Period / 60);
           }
         }
       });

@@ -15,8 +15,8 @@ internal sealed class PlayerData
   private static readonly Dictionary<int, PlayerData> _byId = new();
 
   private readonly Dictionary<int, int> _objectLimits = new();
-  private float _goldPerMinute;
-  private float _bonusGoldPerMinute;
+  private int _goldPerMinute;
+  private int _bonusGoldPerMinute;
 
   private readonly player _player;
   private Faction? _faction;
@@ -118,12 +118,12 @@ internal sealed class PlayerData
   /// <summary>
   ///   Gold per second gained from all sources.
   /// </summary>
-  public float TotalIncome => BaseIncome + BonusIncome;
+  public int TotalIncome => BaseIncome + BonusIncome;
 
   /// <summary>
   ///   Gold per second gained from secondary sources like Forsaken's plagued buildings.
   /// </summary>
-  public float BonusIncome
+  public int BonusIncome
   {
     get => _bonusGoldPerMinute;
     set
@@ -136,7 +136,7 @@ internal sealed class PlayerData
   /// <summary>
   ///   Gold per second gained from primary sources like Control Points.
   /// </summary>
-  public float BaseIncome
+  public int BaseIncome
   {
     get => _goldPerMinute;
     set
@@ -334,36 +334,29 @@ internal sealed class PlayerData
   public void ModObjectLimit(int id, int limit) =>
     SetObjectLimit(id, GetObjectLimit(id) + limit);
 
-  public void AddGold(float x)
+  /// <summary>
+  /// Adds a fractional amount of gold to the player.
+  ///
+  /// <para>
+  /// Takes the integer part to add to the player's gold and accumulates the remainder.
+  /// </para>
+  ///
+  /// <para>
+  /// Use for float income sources (e.g., tick-based or shared income).
+  /// For integer amounts, modify <c>player.Gold</c> directly.
+  /// </para>
+  /// </summary>
+  /// <param name="amount">The fractional amount of gold to add.</param>
+  internal void AddFractionalGold(float amount)
   {
-    var fullGold = (float)Math.Floor(x);
-    var remainderGold = x - fullGold;
-
-    _player.SetState(playerstate.ResourceGold, _player.GetState(playerstate.ResourceGold) + R2I(fullGold));
-    _partialGold += remainderGold;
-
-    while (true)
+    _partialGold += amount;
+    var wholeGold = (int)_partialGold;
+    if (wholeGold > 0)
     {
-      if (_partialGold < 1)
-      {
-        break;
-      }
-
-      _partialGold -= 1;
-      _player.SetState(playerstate.ResourceGold, _player.GetState(playerstate.ResourceGold) + 1);
+      _partialGold -= wholeGold;
+      _player.Gold += wholeGold;
     }
   }
-
-  public void SetGold(float gold)
-  {
-    var fullGold = (int)gold / 1;
-    _player.SetState(playerstate.ResourceGold, fullGold);
-
-    var remainderGold = gold % 1;
-    _partialGold = remainderGold;
-  }
-
-  public float GetGold() => _player.GetState(playerstate.ResourceGold) + _partialGold;
 
   /// <summary>
   /// Signal that the player has had their alliances changed.

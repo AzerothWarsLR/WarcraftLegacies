@@ -147,7 +147,7 @@ public sealed class QuestScarletCrusade : QuestData
     CreateStructureForced(whichPlayer, UNIT_H0BP_FARMSTEAD_SCARLET_FARM, 20917, 8193,
       4.712389f * MathEx.DegToRad, 256);
 
-    whichPlayer.AddGold(StartingGold);
+    whichPlayer.Gold += StartingGold;
     whichPlayer.RepositionCamera(20629, 10112);
   }
 }
