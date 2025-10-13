@@ -42,7 +42,7 @@ public sealed class WarsongPillageDialogPresenter : ChoiceDialogPresenter<Warson
   private void HandlePillageChoice(player pickingPlayer, WarsongPillageChoice choice)
   {
 
-    pickingPlayer.AddGold(choice.GoldReward);
+    pickingPlayer.Gold += choice.GoldReward;
 
     var heroes = GlobalGroup.EnumUnitsOfPlayer(pickingPlayer)
       .Where(unit => unit.IsUnitType(unittype.Hero))

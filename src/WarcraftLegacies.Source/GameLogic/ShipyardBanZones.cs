@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using MacroTools.Extensions;
 using MacroTools.Shared;
 using MacroTools.Systems;
 using WCSharp.Events;
@@ -31,7 +30,7 @@ public static class ShipyardBanZones
               continue;
             }
 
-            constructedStructure.Owner.AddGold(unitType.GoldCost);
+            constructedStructure.Owner.Gold += unitType.GoldCost;
             constructedStructure.Kill();
           }
         }, unitType.Id);

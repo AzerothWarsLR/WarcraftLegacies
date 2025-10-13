@@ -75,16 +75,16 @@ public static class PlayerExtensions
   public static void SetFaction(this player player, Faction faction) => PlayerData.ByHandle(player).Faction = faction;
 
   /// <summary>Returns the player's gold income, including any bonuses.</summary>
-  public static float GetTotalIncome(this player player) => PlayerData.ByHandle(player).TotalIncome;
+  public static int GetTotalIncome(this player player) => PlayerData.ByHandle(player).TotalIncome;
 
   /// <summary>Returns the player's bonus gold income.</summary>
-  public static float GetBonusIncome(this player player) => PlayerData.ByHandle(player).BonusIncome;
+  public static int GetBonusIncome(this player player) => PlayerData.ByHandle(player).BonusIncome;
 
   /// <summary>Returns the player's gold income, without any bonuses.</summary>
-  public static float GetBaseIncome(this player player) => PlayerData.ByHandle(player).BaseIncome;
+  public static int GetBaseIncome(this player player) => PlayerData.ByHandle(player).BaseIncome;
 
   /// <summary>Modifies the player's bonus income.</summary>
-  public static void AddBonusIncome(this player player, float value) =>
+  public static void AddBonusIncome(this player player, int value) =>
     PlayerData.ByHandle(player).BonusIncome += value;
 
   /// <summary>

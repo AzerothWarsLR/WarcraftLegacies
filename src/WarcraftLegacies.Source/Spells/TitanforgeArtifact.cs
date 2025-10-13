@@ -1,6 +1,5 @@
 ﻿using System;
 using MacroTools.ArtifactSystem;
-using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 
@@ -46,5 +45,5 @@ public sealed class TitanForgeArtifact : Spell
     }
   }
 
-  private void Refund(player whichPlayer) => whichPlayer.AddGold(_goldCost);
+  private void Refund(player whichPlayer) => whichPlayer.Gold += _goldCost;
 }

@@ -41,7 +41,7 @@ public sealed class ControlPoint
   /// <summary>
   ///   How much gold this <see cref="ControlPoint" /> grants per minute.
   /// </summary>
-  public float Value { get; }
+  public int Value { get; }
 
   /// <summary>
   /// The unit type ID of the <see cref="ControlPoint"/>.
@@ -78,7 +78,7 @@ public sealed class ControlPoint
   /// <param name="representingUnit">The unit representing the <see cref="ControlPoint"/>.</param>
   /// <param name="value">The gold income granted by the <see cref="ControlPoint"/>.</param>
   /// <param name="useControlLevels">Whether or not this <see cref="ControlPoint"/> can gain levels.</param>
-  public ControlPoint(unit representingUnit, float value, bool useControlLevels)
+  public ControlPoint(unit representingUnit, int value, bool useControlLevels)
   {
     Unit = representingUnit;
     Value = value;

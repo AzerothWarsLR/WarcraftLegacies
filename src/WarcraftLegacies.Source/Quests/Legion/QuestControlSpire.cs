@@ -1,5 +1,4 @@
-﻿using MacroTools.Extensions;
-using MacroTools.FactionSystem;
+﻿using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
@@ -22,5 +21,12 @@ public sealed class QuestControlSpire : QuestData
   protected override string RewardDescription => "Learn to train troops from the Spire Keep and gain 500 gold";
 
   /// <inheritdoc/>
-  protected override void OnComplete(Faction whichFaction) => whichFaction.Player?.AddGold(500);
+  protected override void OnComplete(Faction whichFaction)
+  {
+    var player = whichFaction.Player;
+    if (player != null)
+    {
+      player.Gold += 500;
+    }
+  }
 }

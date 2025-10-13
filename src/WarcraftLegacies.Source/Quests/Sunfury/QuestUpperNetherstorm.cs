@@ -36,10 +36,11 @@ public sealed class QuestUpperNetherstorm : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction whichFaction)
   {
-    whichFaction.Player?.AddGold(GoldReward);
-    if (whichFaction.Player != null)
+    var player = whichFaction.Player;
+    if (player != null)
     {
-      whichFaction.Player.RescueGroup(_rescueUnits);
+      player.Gold += GoldReward;
+      player.RescueGroup(_rescueUnits);
     }
     else
     {

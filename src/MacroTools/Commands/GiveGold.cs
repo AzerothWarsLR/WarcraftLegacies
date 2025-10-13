@@ -53,13 +53,13 @@ public sealed class GiveGold : Command
       return "You must send at least 1 gold.";
     }
 
-    if (cheater.GetState(playerstate.ResourceGold) < goldGift)
+    if (cheater.Gold < goldGift)
     {
       return $"You don't have {goldGift} gold to send.";
     }
 
-    cheater.AddGold(-goldGift);
-    targetFaction.Player.AddGold(goldGift);
+    cheater.Gold -= goldGift;
+    targetFaction.Player.Gold += goldGift;
 
     return $"Sent {goldGift} gold to {targetFaction.Name}.";
   }
