@@ -47,6 +47,6 @@ public sealed class QuestGoldrinn : QuestData
   {
     var druidsPlayer = _druids.Player;
     return druidsPlayer != null && completingFaction.Player != null &&
-           druidsPlayer.GetTeam()?.Contains(completingFaction.Player) != false;
+           druidsPlayer.GetPlayerData().Team?.Contains(completingFaction.Player) != false;
   }
 }

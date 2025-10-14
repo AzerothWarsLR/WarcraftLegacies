@@ -26,7 +26,7 @@ public sealed class PingOilDeposits : Spell
   /// <inheritdoc />
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    var oilPower = @event.Unit.Owner.GetFaction()?.GetPowerByType<OilPower>();
+    var oilPower = @event.Unit.Owner.GetPlayerData().Faction?.GetPowerByType<OilPower>();
     if (oilPower == null)
     {
       return;

@@ -23,9 +23,9 @@ public sealed class ControlPointManager
       {
         foreach (var player in Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
         {
-          if (player.GetFaction() != null)
+          var playerData = player.GetPlayerData();
+          if (playerData.Faction != null)
           {
-            var playerData = player.GetPlayerData();
             playerData.AddFractionalGold(playerData.TotalIncome * Period / 60);
           }
         }
@@ -180,9 +180,9 @@ public sealed class ControlPointManager
 
   private static void RegisterIncome(ControlPoint controlPoint)
   {
-    var controlPointOwner = PlayerData.ByHandle(controlPoint.Owner);
-    controlPointOwner.AddControlPoint(controlPoint);
-    controlPointOwner.BaseIncome = controlPoint.Owner.GetBaseIncome() + controlPoint.Value;
+    var playerData = controlPoint.Owner.GetPlayerData();
+    playerData.AddControlPoint(controlPoint);
+    playerData.BaseIncome += controlPoint.Value;
   }
 
   private static void RegisterDamageTrigger(ControlPoint controlPoint)
@@ -316,9 +316,11 @@ public sealed class ControlPointManager
   {
     var flooredLevel = (int)controlPoint.ControlLevel;
 
-    var defenderUnitTypeId = controlPoint.Owner.GetFaction()?.ControlPointDefenderUnitTypeId ??
-                             ControlLevelSettings.DefaultDefenderUnitTypeId;
-    controlPoint.Defender ??= unit.Create(controlPoint.Owner, defenderUnitTypeId, controlPoint.Unit.X, controlPoint.Unit.Y);
+    var owner = controlPoint.Owner;
+    var playerData = owner.GetPlayerData();
+
+    var defenderUnitTypeId = playerData.Faction?.ControlPointDefenderUnitTypeId ?? ControlLevelSettings.DefaultDefenderUnitTypeId;
+    controlPoint.Defender ??= unit.Create(owner, defenderUnitTypeId, controlPoint.Unit.X, controlPoint.Unit.Y);
     controlPoint.Defender.AddAbility(FourCC("Aloc"));
     controlPoint.Defender.IsInvulnerable = true;
     ConfigureControlPointOrDefenderAttack(controlPoint.Defender, flooredLevel);

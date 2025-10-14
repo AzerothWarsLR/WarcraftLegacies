@@ -26,15 +26,15 @@ public sealed class PlayerSetup
     SetupPlayer(player.Create(3), new Scourge(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
     SetupPlayer(player.Create(4), new Ironforge(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
     SetupPlayer(player.Create(6), new FelHorde(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
-    player.Create(7).SetTeam(TeamSetup.NorthAlliance);
-    player.Create(0).SetTeam(TeamSetup.Kalimdor);
+    player.Create(7).GetPlayerData().SetTeam(TeamSetup.NorthAlliance);
+    player.Create(0).GetPlayerData().SetTeam(TeamSetup.Kalimdor);
     SetupPlayer(player.Create(8), new Skywall(_allLegendSetup));
     SetupPlayer(player.Create(9), new Lordaeron(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
     SetupPlayer(player.Create(11), new Druids(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
     SetupPlayer(player.Create(12), new BlackEmpire(_preplacedUnitSystem, _allLegendSetup));
     SetupPlayer(player.Create(16), new Ahnqiraj(_preplacedUnitSystem, _allLegendSetup));
-    player.Create(18).SetTeam(TeamSetup.Kalimdor);
-    player.Create(15).SetTeam(TeamSetup.Outland);
+    player.Create(18).GetPlayerData().SetTeam(TeamSetup.Kalimdor);
+    player.Create(15).GetPlayerData().SetTeam(TeamSetup.Outland);
     SetupPlayer(player.Create(22), new Kultiras(_preplacedUnitSystem, _allLegendSetup, _artifactSetup));
     SetupPlayer(player.Create(23), new Legion(_preplacedUnitSystem, _allLegendSetup));
   }
@@ -45,14 +45,14 @@ public sealed class PlayerSetup
     var traditionalTeam = faction.TraditionalTeam;
     if (traditionalTeam != null)
     {
-      player.SetTeam(traditionalTeam);
+      player.GetPlayerData().SetTeam(traditionalTeam);
     }
     else
     {
       throw new InvalidOperationException($"{player.Name}'s {nameof(Faction)} doesn't have a {nameof(Faction.TraditionalTeam)}.");
     }
 
-    player.SetFaction(faction);
+    player.GetPlayerData().Faction = faction;
     FactionManager.Register(faction);
   }
 }

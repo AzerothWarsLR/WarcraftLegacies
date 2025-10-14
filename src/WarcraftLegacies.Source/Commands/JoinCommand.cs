@@ -28,9 +28,10 @@ public static class JoinCommand
     {
       if (targetTeam.IsPlayerInvited(triggerPlayer))
       {
-        triggerPlayer.SetTeam(targetTeam);
+        var triggerPlayerData = triggerPlayer.GetPlayerData();
+        triggerPlayerData.SetTeam(targetTeam);
         triggerPlayer.DisplayTextTo($"You have joined {targetTeam.Name}.");
-        targetTeam.DisplayText($"{triggerPlayer?.GetFaction()?.ColoredName} has joined the {targetTeam.Name}.");
+        targetTeam.DisplayText($"{triggerPlayerData.Faction?.ColoredName} has joined the {targetTeam.Name}.");
       }
       else
       {

@@ -179,7 +179,13 @@ public sealed class Artifact
 
   private void OnPlayerFactionChange(object? sender, PlayerFactionChangeEventArgs e)
   {
-    if (OwningPlayer?.GetFaction() == e.Player.GetFaction())
+    var owningFaction = OwningPlayer?.GetPlayerData().Faction;
+    if (owningFaction == null)
+    {
+      return;
+    }
+
+    if (owningFaction == e.Player.GetPlayerData().Faction)
     {
       FactionChanged?.Invoke(this, this);
     }

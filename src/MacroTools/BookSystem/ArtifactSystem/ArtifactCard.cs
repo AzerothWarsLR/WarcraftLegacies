@@ -113,11 +113,12 @@ public sealed class ArtifactCard : Card<Artifact>
     switch (_artifact!.LocationType)
     {
       case ArtifactLocationType.Unit:
-        if (_artifact.OwningPlayer?.GetFaction() != null)
+        var owningFaction = _artifact.OwningPlayer?.GetPlayerData().Faction;
+        if (owningFaction != null)
         {
           _text.Visible = true;
           _pingButton.Visible = false;
-          _text.Text = $"Owned by {_artifact.OwningPlayer?.GetFaction()?.ColoredName}";
+          _text.Text = $"Owned by {owningFaction.ColoredName}";
         }
         else
         {
@@ -162,7 +163,7 @@ public sealed class ArtifactCard : Card<Artifact>
   {
     try
     {
-      if (e == _artifact?.OwningPlayer?.GetFaction())
+      if (e == _artifact?.OwningPlayer?.GetPlayerData().Faction)
       {
         RefreshLocationDescriptionFrame();
       }

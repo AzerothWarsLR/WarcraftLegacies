@@ -16,7 +16,7 @@ public static class ParentChildResearchSystem
   {
     PlayerUnitEvents.Register(ResearchEvent.IsFinished, () =>
     {
-      var triggerFaction = @event.Player.GetFaction();
+      var triggerFaction = @event.Player.GetPlayerData().Faction;
       triggerFaction?.ModObjectLimit(childResearch, 1);
       triggerFaction?.SetObjectLevel(childResearch, triggerFaction.GetObjectLevel(parentResearch));
     }, parentResearch);

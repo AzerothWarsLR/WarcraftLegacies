@@ -39,7 +39,7 @@ public sealed class FontOfPower : Power
       var researchLevel = _isActive ? 1 : 0;
       foreach (var player in _playersWithPower)
       {
-        player.GetFaction()?.SetObjectLevel(ResearchId, researchLevel);
+        player.GetPlayerData().Faction?.SetObjectLevel(ResearchId, researchLevel);
       }
     }
   }

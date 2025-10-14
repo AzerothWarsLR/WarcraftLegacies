@@ -3,6 +3,7 @@ using MacroTools.ControlPointSystem;
 using MacroTools.Exceptions;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
+using WCSharp.Shared;
 
 namespace MacroTools.UserInterface;
 
@@ -60,11 +61,12 @@ public sealed class FactionMultiboard
     FactionManager.AnyFactionNameChanged += OnFactionAnyFactionNameChanged;
     FactionManager.FactionRegistered += (_, faction) => { RegisterFaction(faction); };
 
-    foreach (var player in WCSharp.Shared.Util.EnumeratePlayers())
+    foreach (var player in Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
     {
-      player.GetPlayerData().IncomeChanged += OnPlayerIncomeChanged;
-      player.GetPlayerData().PlayerJoinedTeam += (_, _) => { Instance?.Render(); };
-      player.GetPlayerData().PlayerLeftTeam += (_, _) => { Instance?.Render(); };
+      var playerData = player.GetPlayerData();
+      playerData.IncomeChanged += OnPlayerIncomeChanged;
+      playerData.PlayerJoinedTeam += (_, _) => { Instance?.Render(); };
+      playerData.PlayerLeftTeam += (_, _) => { Instance?.Render(); };
     }
 
     foreach (var faction in FactionManager.GetAllFactions())
@@ -87,10 +89,27 @@ public sealed class FactionMultiboard
     var incomeMbi = _multiboard.GetItem(row, ColumnIncome);
     factionMbi.SetText(faction.ColoredName);
     factionMbi.SetIcon(faction.Icon);
-    cpMbi.SetText(faction.Player?.GetControlPointCount().ToString());
-    var income = R2I(faction.Player?.GetTotalIncome() ?? 0);
-    var incomePrefix = faction.Player?.GetBonusIncome() > 0 ? "|cffffcc00" : "";
-    incomeMbi.SetText(income <= 999 ? $"{incomePrefix}{income}" : $"{incomePrefix}BIG");
+
+    var player = faction.Player;
+    if (player != null)
+    {
+      var playerData = player.GetPlayerData();
+
+      cpMbi.SetText(playerData.ControlPoints.Count.ToString());
+
+      var income = R2I(playerData.TotalIncome);
+      var hasBonus = playerData.BonusIncome > 0;
+      var incomePrefix = hasBonus ? "|cffffcc00" : "";
+      var incomeText = income <= 999 ? $"{incomePrefix}{income}" : $"{incomePrefix}BIG";
+
+      incomeMbi.SetText(incomeText);
+    }
+    else
+    {
+      cpMbi.SetText("");
+      incomeMbi.SetText("");
+    }
+
     factionMbi.SetWidth(WidthFaction);
     cpMbi.SetWidth(WidthCp);
     incomeMbi.SetWidth(WidthIncome);

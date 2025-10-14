@@ -18,6 +18,7 @@ public static class HeroGlowFix
     PlayerUnitEvents.Register(HeroTypeEvent.FinishesRevive, () =>
     {
       var triggerUnit = @event.Unit;
+      var triggerPlayer = @event.Player;
       var revivedLegend = LegendaryHeroManager.GetFromUnit(triggerUnit);
       if (revivedLegend?.HasCustomColor == true)
       {
@@ -25,7 +26,7 @@ public static class HeroGlowFix
       }
       else
       {
-        triggerUnit.SetColor(@event.Player?.GetFaction()?.PlayerColor ?? playercolor.Coal);
+        triggerUnit.SetColor(triggerPlayer.GetPlayerData().Faction?.PlayerColor ?? playercolor.Coal);
       }
     });
   }

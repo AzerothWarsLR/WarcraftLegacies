@@ -41,17 +41,11 @@ public static class CustomPlayerUnitEvents
 
   static CustomPlayerUnitEvents()
   {
-    PlayerUnitEvents.AddCustomEvent(PlayerFinishesTraining, () => @event.TrainedUnit.Owner.Id,
-      playerunitevent.TrainFinish);
-    PlayerUnitEvents.AddCustomEvent(PlayerDealsDamage, () => @event.DamageSource.Owner.Id,
-      playerunitevent.Damaged);
-    PlayerUnitEvents.AddCustomEvent(PlayerTakesDamage, () => @event.Unit.Owner.Id,
-      playerunitevent.Damaged);
-    PlayerUnitEvents.AddCustomEvent(PlayerUnitDies, () => @event.Unit.Owner.Id,
-      playerunitevent.Death);
-    PlayerUnitEvents.AddCustomEvent(FactionUnitKills, () => @event.KillingUnit.Owner.GetFaction().Id,
-      playerunitevent.Death);
-    PlayerUnitEvents.AddCustomEvent(PlayerSpellEffect, () => @event.Unit.Owner.Id,
-      playerunitevent.SpellEffect);
+    PlayerUnitEvents.AddCustomEvent(PlayerFinishesTraining, () => @event.TrainedUnit.Owner.Id, playerunitevent.TrainFinish);
+    PlayerUnitEvents.AddCustomEvent(PlayerDealsDamage, () => @event.DamageSource.Owner.Id, playerunitevent.Damaged);
+    PlayerUnitEvents.AddCustomEvent(PlayerTakesDamage, () => @event.Unit.Owner.Id, playerunitevent.Damaged);
+    PlayerUnitEvents.AddCustomEvent(PlayerUnitDies, () => @event.Unit.Owner.Id, playerunitevent.Death);
+    PlayerUnitEvents.AddCustomEvent(FactionUnitKills, () => @event.KillingUnit.Owner.GetPlayerData().Faction.Id, playerunitevent.Death);
+    PlayerUnitEvents.AddCustomEvent(PlayerSpellEffect, () => @event.Unit.Owner.Id, playerunitevent.SpellEffect);
   }
 }

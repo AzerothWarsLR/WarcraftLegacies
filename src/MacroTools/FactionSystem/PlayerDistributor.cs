@@ -37,11 +37,12 @@ public static class PlayerDistributor
     }
   }
 
-  private static List<player> GetPlayersEligibleForReceivingDistribution(player playerBeingDistributed)
+  private static List<player> GetPlayersEligibleForReceivingDistribution(player whichPlayer)
   {
     var eligiblePlayers = new List<player>();
 
-    var team = playerBeingDistributed.GetTeam();
+    var playerData = whichPlayer.GetPlayerData();
+    var team = playerData.Team;
     if (team == null)
     {
       return eligiblePlayers;
@@ -49,7 +50,7 @@ public static class PlayerDistributor
 
     foreach (var faction in team
                .GetAllFactions()
-               .Where(x => x.ScoreStatus == ScoreStatus.Undefeated && x.Player != playerBeingDistributed))
+               .Where(x => x.ScoreStatus == ScoreStatus.Undefeated && x.Player != whichPlayer))
     {
       var factionPlayer = faction.Player;
       if (factionPlayer != null)
@@ -98,8 +99,13 @@ public static class PlayerDistributor
   /// <returns>Resources to be refunded from units that the process removes.</returns>
   private static UnitsRefund DistributeAndRefundUnits(player playerToDistribute, IReadOnlyList<player> playersToDistributeTo)
   {
-    var playerUnits = GlobalGroup
-      .EnumUnitsOfPlayer(playerToDistribute);
+    var playerUnits = GlobalGroup.EnumUnitsOfPlayer(playerToDistribute);
+    var playerData = playerToDistribute.GetPlayerData();
+
+    var isInTeam = playerData.Team?.Size > 1;
+    var newOwner = isInTeam
+        ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count - 1)]
+        : player.NeutralVictim;
 
     var refund = new UnitsRefund();
     foreach (var unit in playerUnits)
@@ -136,10 +142,6 @@ public static class PlayerDistributor
         unit.Dispose();
         continue;
       }
-
-      var newOwner = playerToDistribute.GetTeam()?.Size > 1
-        ? playersToDistributeTo[GetRandomInt(0, playersToDistributeTo.Count - 1)]
-        : player.NeutralVictim;
 
       unit.SetOwner(newOwner);
     }

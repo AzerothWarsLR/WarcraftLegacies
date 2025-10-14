@@ -15,5 +15,5 @@ public sealed class PowerResearch : Research
   public PowerResearch(int researchTypeId, int goldCost, Power power) : base(researchTypeId, goldCost) => _power = power;
 
   /// <inheritdoc />
-  public override void OnResearch(player researchingPlayer) => researchingPlayer.GetFaction()?.AddPower(_power);
+  public override void OnResearch(player researchingPlayer) => researchingPlayer.GetPlayerData().Faction?.AddPower(_power);
 }

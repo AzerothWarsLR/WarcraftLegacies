@@ -162,9 +162,10 @@ public abstract class Faction
         return;
       }
 
-      if (value.GetFaction() != this)
+      var playerData = value.GetPlayerData();
+      if (playerData.Faction != this)
       {
-        value.SetFaction(this);
+        playerData.Faction = this;
       }
 
       ApplyFactionToPlayer(value);
@@ -333,7 +334,10 @@ public abstract class Faction
   /// </summary>
   public void Unally()
   {
-    if (!(Player?.GetTeam()?.Size > 1))
+    var playerData = Player?.GetPlayerData();
+    var team = playerData?.Team;
+
+    if (playerData == null || team == null || team.Size <= 1)
     {
       return;
     }
@@ -342,13 +346,14 @@ public abstract class Faction
 
     if (FactionManager.TryGetTeamByName(newTeamName, out var existingTeam))
     {
-      Player.SetTeam(existingTeam);
-      return;
+      playerData.SetTeam(existingTeam);
     }
-
-    var newTeam = new Team(newTeamName);
-    FactionManager.Register(newTeam);
-    Player.SetTeam(newTeam);
+    else
+    {
+      var newTeam = new Team(newTeamName);
+      FactionManager.Register(newTeam);
+      playerData.SetTeam(newTeam);
+    }
   }
 
   public QuestData AddQuest(QuestData questData)
@@ -377,7 +382,7 @@ public abstract class Faction
   public void SetObjectLevel(int obj, int level)
   {
     _objectLevels[obj] = level;
-    Player?.SetObjectLevel(obj, level);
+    Player?.GetPlayerData().SetObjectLevel(obj, level);
   }
 
   /// <summary>
@@ -415,7 +420,7 @@ public abstract class Faction
     }
 
     //If a player has this Faction, adjust their techtree as well
-    Player?.ModObjectLimit(objectId, limit);
+    Player?.GetPlayerData().ModObjectLimit(objectId, limit);
 
     if (_objectLimits[objectId] == 0)
     {
@@ -431,7 +436,7 @@ public abstract class Faction
   public void SetObjectLimit(int objectId, int limit)
   {
     _objectLimits[objectId] = limit;
-    Player?.SetObjectLimit(objectId, limit);
+    Player?.GetPlayerData().SetObjectLimit(objectId, limit);
 
     if (_objectLimits[objectId] == 0)
     {
@@ -657,7 +662,8 @@ public abstract class Faction
   /// </summary>
   private void ApplyFactionToPlayer(player whichPlayer)
   {
-    whichPlayer.GetTeam()?.AllyPlayer(whichPlayer);
+    var playerData = whichPlayer.GetPlayerData();
+    playerData.Team?.AllyPlayer(whichPlayer);
     ApplyObjects();
     ApplyPowers();
     ShowAllQuests();
@@ -669,7 +675,7 @@ public abstract class Faction
   /// </summary>
   private void UnapplyFactionFromPlayer(player whichPlayer)
   {
-    whichPlayer.GetTeam()?.UnallyPlayer(whichPlayer);
+    whichPlayer.GetPlayerData().Team?.UnallyPlayer(whichPlayer);
     HideAllQuests();
     UnapplyObjects();
     UnapplyPowers();
@@ -704,44 +710,52 @@ public abstract class Faction
   //Adds this Faction's object limits and levels to its active Person
   private void ApplyObjects()
   {
+    if (Player == null)
+    {
+      return;
+    }
+
+    var playerData = Player.GetPlayerData();
+
     foreach (var (key, value) in _objectLimits)
     {
-      Player?.ModObjectLimit(key, value);
+      playerData.ModObjectLimit(key, value);
     }
 
     foreach (var (key, value) in _objectLevels)
     {
-      Player?.SetObjectLevel(key, value);
+      playerData.SetObjectLevel(key, value);
     }
 
     foreach (var (key, value) in _abilityAvailabilities)
     {
-      if (Player != null)
-      {
-        Player.SetAbilityAvailable(key, value > 0);
-      }
+      Player.SetAbilityAvailable(key, value > 0);
     }
   }
 
   //Removes this Faction's object limits and levels from its active Person
   private void UnapplyObjects()
   {
+    if (Player == null)
+    {
+      return;
+    }
+
+    var playerData = Player.GetPlayerData();
+
     foreach (var (key, value) in _objectLimits)
     {
-      Player?.ModObjectLimit(key, -value);
+      playerData.ModObjectLimit(key, -value);
     }
 
     foreach (var (key, _) in _objectLevels)
     {
-      Player?.SetObjectLevel(key, 0);
+      playerData.SetObjectLevel(key, 0);
     }
 
     foreach (var (key, _) in _abilityAvailabilities)
     {
-      if (Player != null)
-      {
-        Player.SetAbilityAvailable(key, true);
-      }
+      Player.SetAbilityAvailable(key, true);
     }
   }
 

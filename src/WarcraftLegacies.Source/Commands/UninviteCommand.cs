@@ -15,6 +15,7 @@ public static class UninviteCommand
   {
     var enteredString = @event.PlayerChatString;
     var triggerPlayer = @event.Player;
+    var triggerPlayerData = triggerPlayer.GetPlayerData();
 
     if (SubString(enteredString, 0, StringLength(Command)) != Command)
     {
@@ -28,7 +29,7 @@ public static class UninviteCommand
     {
       if (targetFaction.Player != null)
       {
-        triggerPlayer.GetTeam()?.Uninvite(targetFaction.Player);
+        triggerPlayerData.Team?.Uninvite(targetFaction.Player);
       }
       else
       {

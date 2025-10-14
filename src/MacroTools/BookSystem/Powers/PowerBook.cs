@@ -19,17 +19,19 @@ public sealed class PowerBook : Book<Power, PowerPage, PowerCard, PowerPageFacto
   {
   }
 
-  public static PowerBook Create(player trackedPlayer)
+  public static PowerBook Create(player whichPlayer)
   {
+    var playerData = whichPlayer.GetPlayerData();
+
     var book = new PowerBook
     {
       Title = "Powers",
       LauncherParent = framehandle.Get("UpperButtonBarMenuButton", 0),
       Position = new Point(0.36f, 0.35f),
-      TrackedFaction = trackedPlayer.GetFaction()
+      TrackedFaction = playerData.Faction
     };
 
-    trackedPlayer.GetPlayerData().ChangedFaction += book.OnPlayerChangedFaction;
+    playerData.ChangedFaction += book.OnPlayerChangedFaction;
 
     return book;
   }
@@ -71,7 +73,7 @@ public sealed class PowerBook : Book<Power, PowerPage, PowerCard, PowerPageFacto
 
   private void OnPlayerChangedFaction(object? sender, PlayerFactionChangeEventArgs args)
   {
-    TrackedFaction = args.Player.GetFaction();
+    TrackedFaction = args.Player.GetPlayerData().Faction;
   }
 
   private void OnFactionRemovePower(object? sender, FactionPowerEventArgs factionPowerEventArgs)

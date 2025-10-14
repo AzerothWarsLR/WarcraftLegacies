@@ -15,24 +15,23 @@ public static class GameModeExtensions
   public static IGameMode SetupGreatWarTeams(this IGameMode gameMode)
   {
     FactionManager.SharedVisionMode = TeamSharedVisionMode.TraditionalAlliesOnly;
-    player.Create(6).SetTeam(TeamSetup.Legion);
-    player.Create(15).SetTeam(TeamSetup.Legion);
-    player.Create(9).SetTeam(TeamSetup.Legion);
-    player.Create(2).SetTeam(TeamSetup.Legion);
-    player.Create(7).SetTeam(TeamSetup.Legion);
-    player.Create(12).SetTeam(TeamSetup.Legion);
-    player.Create(16).SetTeam(TeamSetup.Legion);
-    player.Create(8).SetTeam(TeamSetup.Legion);
+    player.Create(6).GetPlayerData().SetTeam(TeamSetup.Legion);
+    player.Create(15).GetPlayerData().SetTeam(TeamSetup.Legion);
+    player.Create(9).GetPlayerData().SetTeam(TeamSetup.Legion);
+    player.Create(2).GetPlayerData().SetTeam(TeamSetup.Legion);
+    player.Create(7).GetPlayerData().SetTeam(TeamSetup.Legion);
+    player.Create(12).GetPlayerData().SetTeam(TeamSetup.Legion);
+    player.Create(16).GetPlayerData().SetTeam(TeamSetup.Legion);
+    player.Create(8).GetPlayerData().SetTeam(TeamSetup.Legion);
 
-    player.Create(3).SetTeam(TeamSetup.Alliance);
-    player.Create(23).SetTeam(TeamSetup.Alliance);
-    player.Create(1).SetTeam(TeamSetup.Alliance);
-    player.Create(4).SetTeam(TeamSetup.Alliance);
-    player.Create(22).SetTeam(TeamSetup.Alliance);
-    player.Create(0).SetTeam(TeamSetup.Alliance);
-    player.Create(11).SetTeam(TeamSetup.Alliance);
-    player.Create(18).SetTeam(TeamSetup.Alliance);
-
+    player.Create(3).GetPlayerData().SetTeam(TeamSetup.Alliance);
+    player.Create(23).GetPlayerData().SetTeam(TeamSetup.Alliance);
+    player.Create(1).GetPlayerData().SetTeam(TeamSetup.Alliance);
+    player.Create(4).GetPlayerData().SetTeam(TeamSetup.Alliance);
+    player.Create(22).GetPlayerData().SetTeam(TeamSetup.Alliance);
+    player.Create(0).GetPlayerData().SetTeam(TeamSetup.Alliance);
+    player.Create(11).GetPlayerData().SetTeam(TeamSetup.Alliance);
+    player.Create(18).GetPlayerData().SetTeam(TeamSetup.Alliance);
 
     SharedQuestRepository.RegisterQuest(new QuestSharedVision());
     return gameMode;

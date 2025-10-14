@@ -15,6 +15,7 @@ public static class InviteCommand
   {
     var enteredString = @event.PlayerChatString;
     var triggerPlayer = @event.Player;
+    var triggerPlayerData = triggerPlayer.GetPlayerData();
 
     if (SubString(enteredString, 0, StringLength(Command)) != Command)
     {
@@ -30,7 +31,7 @@ public static class InviteCommand
       return;
     }
 
-    if (triggerPlayer.GetFaction() == targetFaction)
+    if (triggerPlayerData.Faction == targetFaction)
     {
       triggerPlayer.DisplayTextTo("You can'invite yourself to your own team.");
       return;
@@ -44,7 +45,7 @@ public static class InviteCommand
 
     if (targetFaction.Player != null)
     {
-      triggerPlayer.GetTeam()?.Invite(targetFaction.Player);
+      triggerPlayerData.Team?.Invite(targetFaction.Player);
     }
   }
 

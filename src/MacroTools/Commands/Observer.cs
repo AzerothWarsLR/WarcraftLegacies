@@ -34,15 +34,14 @@ public sealed class Observer : Command
   /// <inheritdoc />
   public override string Execute(player commandUser, params string[] parameters)
   {
-    var triggerFaction = @event.Player.GetFaction();
-    if (triggerFaction == null)
+    var playerData = commandUser.GetPlayerData();
+    if (playerData.Faction == null)
     {
-      throw new InvalidOperationException(
-        $"{@event.Player.Name} tried to execute {nameof(Observer)}, but they don't have a {nameof(Faction)}.");
+      throw new InvalidOperationException($"{commandUser.Name} tried to execute {nameof(Observer)}, but they don't have a {nameof(Faction)}.");
     }
 
-    triggerFaction.Defeat();
-    triggerFaction.Player?.SetTeam(_observers!);
+    playerData.Faction.Defeat();
+    playerData.SetTeam(_observers!);
 
     return "You have become an observer.";
   }

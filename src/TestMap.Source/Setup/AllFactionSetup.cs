@@ -13,17 +13,18 @@ public static class AllFactionSetup
 
   private static void SetupPlayer(player player, Faction faction)
   {
+    var playerData = player.GetPlayerData();
     var traditionalTeam = faction.TraditionalTeam;
     if (traditionalTeam != null)
     {
-      player.SetTeam(traditionalTeam);
+      playerData.SetTeam(traditionalTeam);
     }
     else
     {
       throw new InvalidOperationException($"{GetPlayerName(player)}'s {nameof(Faction)} doesn't have a {nameof(Faction.TraditionalTeam)}.");
     }
 
-    player.SetFaction(faction);
+    playerData.Faction = faction;
     FactionManager.Register(faction);
   }
 }

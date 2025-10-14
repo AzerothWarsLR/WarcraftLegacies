@@ -58,7 +58,8 @@ public static class FactionManager
     {
       try
       {
-        var faction = @event.Player.GetFaction();
+        var triggerPlayer = @event.Player;
+        var faction = triggerPlayer.GetPlayerData().Faction;
         if (faction == null)
         {
           return;
@@ -68,13 +69,13 @@ public static class FactionManager
         var research = ResearchManager.GetFromTypeId(researchId);
         if (research == null || !research.IncompatibleWith.Any(x => faction.GetObjectLevel(x.ResearchTypeId) > 0))
         {
-          faction.SetObjectLevel(researchId, @event.Player.GetTechResearched(researchId));
+          faction.SetObjectLevel(researchId, triggerPlayer.GetTechResearched(researchId));
           if (research == null)
           {
             return;
           }
 
-          research.OnResearch(@event.Player);
+          research.OnResearch(triggerPlayer);
           foreach (var otherResearch in research.IncompatibleWith)
           {
             faction.SetObjectLimit(otherResearch.ResearchTypeId, -Faction.Unlimited);
@@ -83,7 +84,7 @@ public static class FactionManager
         else
         {
           faction.SetObjectLimit(researchId, -Faction.Unlimited);
-          research.Refund(@event.Player);
+          research.Refund(triggerPlayer);
         }
       }
       catch (Exception ex)

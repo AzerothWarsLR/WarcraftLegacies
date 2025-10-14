@@ -1,6 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Sound;
+using WCSharp.Shared;
 
 namespace MacroTools.QuestSystem;
 
@@ -11,20 +12,26 @@ public static class FactionQuestExtensions
   /// </summary>
   internal static void DisplayCompletedGlobal(this player whichPlayer, QuestData questData)
   {
-    var soundCompleted = SoundLibrary.Completed;
-    var soundFailed = SoundLibrary.Failed;
-    (player.LocalPlayer.GetTeam()?.Contains(whichPlayer) == true
-       ? soundCompleted
-       : soundFailed).Start();
+    var whichplayerData = whichPlayer.GetPlayerData();
+    var localPlayerData = player.LocalPlayer.GetPlayerData();
+    var localPlayerIsAlly = localPlayerData.Team?.Contains(whichPlayer) == true;
 
-    foreach (var enumPlayer in WCSharp.Shared.Util.EnumeratePlayers())
+    var sound = localPlayerIsAlly ? SoundLibrary.Completed : SoundLibrary.Failed;
+    sound.Start();
+
+    var message = $"\n|cffffcc00MAJOR EVENT - {whichplayerData.Faction?.PrefixCol}{questData.Title}|r\n{questData.RewardFlavour}\n";
+
+    foreach (var recipient in Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
     {
-      if (enumPlayer != whichPlayer)
+      if (recipient == whichPlayer)
       {
-        if (PlayerData.ByHandle(whichPlayer).PlayerSettings.ShowQuestText)
-        {
-          enumPlayer.DisplayTextTo($"\n|cffffcc00MAJOR EVENT - {whichPlayer.GetFaction()?.PrefixCol}{questData.Title}|r\n{questData.RewardFlavour}\n");
-        }
+        continue;
+      }
+
+      var recipientData = recipient.GetPlayerData();
+      if (recipientData.PlayerSettings.ShowQuestText)
+      {
+        recipient.DisplayTextTo(message);
       }
     }
   }

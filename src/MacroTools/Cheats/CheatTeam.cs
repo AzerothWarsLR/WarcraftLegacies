@@ -22,14 +22,15 @@ public sealed class CheatTeam : Command
   public override string Description => "Sets the specified faction to the specified team.";
 
   /// <inheritdoc />
-  public override string Execute(player cheater, params string[] parameters)
+  public override string Execute(player _, params string[] parameters)
   {
     if (!FactionManager.TryGetFactionByName(parameters[0], out var faction))
     {
       return $"There is no faction named {parameters[0]}.";
     }
 
-    if (faction.Player == null)
+    var player = faction.Player;
+    if (player == null)
     {
       return $"The specified {nameof(Faction)} is not occupied by a player and therefore cannot have a {nameof(Team)}.";
     }
@@ -39,7 +40,8 @@ public sealed class CheatTeam : Command
       return $"You must specify a valid {nameof(Team)} name as the second parameter.";
     }
 
-    faction.Player.SetTeam(team);
+    player.GetPlayerData().SetTeam(team);
+
     return $"Set {faction.Name}'s {nameof(Team)} to {team.Name}.";
   }
 }

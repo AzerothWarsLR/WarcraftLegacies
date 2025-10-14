@@ -40,7 +40,7 @@ public sealed class CheatQuestProgress : Command
     Faction? faction;
     if (parameters.Length < 2)
     {
-      faction = cheater.GetFaction();
+      faction = cheater.GetPlayerData().Faction;
       if (faction == null)
       {
         return $"You are not playing as a {nameof(Faction)}, so you don't have any quests.";

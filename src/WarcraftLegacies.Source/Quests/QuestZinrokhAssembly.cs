@@ -35,7 +35,7 @@ public sealed class QuestZinrokhAssembly : QuestData
 
   /// <inheritdoc/>
   public override string PenaltyFlavour =>
-    $"{_fragments.First().OwningPlayer?.GetFaction()?.ColoredName ?? ""} has assembled Zin'rokh, Destroyer of Worlds. The only way we will acquire it now is if we take it from them.";
+    $"{_fragments.First().OwningPlayer?.GetPlayerData().Faction?.ColoredName ?? ""} has assembled Zin'rokh, Destroyer of Worlds. The only way we will acquire it now is if we take it from them.";
 
   /// <inheritdoc/>
   protected override string RewardDescription => "Reforge Zin'rokh, Destroyer of Worlds from its Shards";

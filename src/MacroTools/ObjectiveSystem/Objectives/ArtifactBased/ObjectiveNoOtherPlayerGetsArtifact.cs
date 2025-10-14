@@ -34,6 +34,6 @@ public sealed class ObjectiveNoOtherPlayerGetsArtifact : Objective
 
   private void RefreshProgress(Faction whichFaction)
   {
-    Progress = _target.OwningPlayer?.GetFaction() == whichFaction ? QuestProgress.Complete : QuestProgress.Failed;
+    Progress = _target.OwningPlayer?.GetPlayerData().Faction == whichFaction ? QuestProgress.Complete : QuestProgress.Failed;
   }
 }

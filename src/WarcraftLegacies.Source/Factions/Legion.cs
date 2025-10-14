@@ -89,7 +89,7 @@ public sealed class Legion : Faction
       {
         IconName = "achievement_raid_argusraid",
         Name = "Rematerialization",
-        EligibilityCondition = dyingUnit => dyingUnit.Owner.GetObjectLimit(dyingUnit.UnitType) != 0
+        EligibilityCondition = dyingUnit => dyingUnit.Owner.GetPlayerData().GetObjectLimit(dyingUnit.UnitType) != 0
       }));
   }
 

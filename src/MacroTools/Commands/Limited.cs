@@ -33,7 +33,7 @@ public sealed class Limited : Command
 
     var limitedUnits = GlobalGroup
       .EnumUnitsOfPlayer(commandUser)
-      .Where(u => commandUser.GetObjectLimit(u.UnitType) is > 0 and < Faction.Unlimited && u.Alive);
+      .Where(u => commandUser.GetPlayerData().GetObjectLimit(u.UnitType) is > 0 and < Faction.Unlimited && u.Alive);
 
     foreach (var unit in limitedUnits)
     {

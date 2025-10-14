@@ -98,7 +98,7 @@ public abstract class Objective
   /// </summary>
   protected bool IsPlayerOnSameTeamAsAnyEligibleFaction(player whichPlayer)
   {
-    var playerTeam = whichPlayer.GetTeam();
+    var playerTeam = whichPlayer.GetPlayerData().Team;
     if (playerTeam == null)
     {
       return false;
@@ -106,7 +106,7 @@ public abstract class Objective
 
     foreach (var eligibleFaction in EligibleFactions)
     {
-      if (eligibleFaction.Player != null && eligibleFaction.Player.GetTeam() == playerTeam)
+      if (eligibleFaction.Player != null && eligibleFaction.Player.GetPlayerData().Team == playerTeam)
       {
         return true;
       }
