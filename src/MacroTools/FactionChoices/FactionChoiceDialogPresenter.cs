@@ -26,9 +26,8 @@ public sealed class FactionChoiceDialogPresenter : ChoiceDialogPresenter<Faction
     var pickedFaction = choice.Faction;
     ReplaceStartingUnitsWithFactionEquivalents(pickingPlayer, choice, pickedFaction);
 
-    pickingPlayer
-      .RepositionCamera(choice.StartingArea.Center)
-      .SetFaction(pickedFaction);
+    pickingPlayer.RepositionCamera(choice.StartingArea.Center);
+    pickingPlayer.GetPlayerData().Faction = pickedFaction;
 
     FactionManager.Register(pickedFaction);
     CleanupUnpickedFactions(choice);

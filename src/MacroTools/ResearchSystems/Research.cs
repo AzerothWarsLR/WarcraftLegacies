@@ -56,7 +56,8 @@ public abstract class Research
     researchingPlayer.Gold += GoldCost;
     if (unresearch)
     {
-      researchingPlayer.SetObjectLevel(ResearchTypeId, Math.Min(0, researchingPlayer.GetObjectLimit(ResearchTypeId)));
+      var playerData = researchingPlayer.GetPlayerData();
+      playerData.SetObjectLevel(ResearchTypeId, Math.Min(0, playerData.GetObjectLimit(ResearchTypeId)));
     }
   }
 }

@@ -16,9 +16,9 @@ public static class PlayerLeaves
     {
       var triggerPlayer = @event.Player;
 
-      var playerFaction = triggerPlayer.GetFaction();
+      var playerFaction = triggerPlayer.GetPlayerData().Faction;
 
-      foreach (var player in Util.EnumeratePlayers())
+      foreach (var player in Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
       {
         player.DisplayTextTo(playerFaction != null
             ? $"{playerFaction.ColoredName} has left the game."

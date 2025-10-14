@@ -19,9 +19,9 @@ public static class DisplayIntroText
     {
       try
       {
-        foreach (var player1 in Util.EnumeratePlayers())
+        foreach (var player in Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
         {
-          player1.DisplayTextTo(player1.GetFaction()?.IntroText ?? "");
+          player.DisplayTextTo(player.GetPlayerData().Faction?.IntroText ?? "");
         }
 
         @event.ExpiredTimer.Dispose();

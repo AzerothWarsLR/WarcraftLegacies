@@ -37,8 +37,8 @@ public sealed class GiveGold : Command
       return $"There is nobody playing the {targetFaction.Name} faction.";
     }
 
-    var cheaterTeam = cheater.GetTeam();
-    if (cheaterTeam != targetFaction.Player.GetTeam())
+    var cheaterTeam = cheater.GetPlayerData().Team;
+    if (cheaterTeam != targetFaction.Player.GetPlayerData().Team)
     {
       return $"{targetFaction.Name} isn't on your team, so you can't give them gold.";
     }

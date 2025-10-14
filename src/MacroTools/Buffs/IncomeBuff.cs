@@ -23,11 +23,11 @@ public sealed class IncomeBuff : PassiveBuff
 
   public override void OnApply()
   {
-    CastingPlayer.AddBonusIncome(_bonusIncome);
+    CastingPlayer.GetPlayerData().BonusIncome += _bonusIncome;
   }
 
   public override void OnDispose()
   {
-    CastingPlayer.AddBonusIncome(-_bonusIncome);
+    CastingPlayer.GetPlayerData().BonusIncome -= _bonusIncome;
   }
 }

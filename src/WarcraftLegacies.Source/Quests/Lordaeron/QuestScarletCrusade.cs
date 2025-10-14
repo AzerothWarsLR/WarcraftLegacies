@@ -80,7 +80,10 @@ public sealed class QuestScarletCrusade : QuestData
     var scarletCrusade = new ScarletCrusade(_allLegendSetup);
     FactionManager.Register(scarletCrusade);
     scarletCrusade.CopyObjectLevelsFrom(completingFaction);
-    completingFaction.Player?.SetFaction(scarletCrusade);
+    if (completingFaction.Player != null)
+    {
+      completingFaction.Player.GetPlayerData().Faction = scarletCrusade;
+    }
   }
 
   private static void EvacuateTyrsHand(player newOwner)

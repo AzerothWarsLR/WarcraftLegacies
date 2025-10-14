@@ -21,9 +21,9 @@ public static class StartingQuestPopup
     trig.RegisterTimerEvent(timeToDisplay, false);
     trig.AddAction(() =>
     {
-      foreach (var player in Util.EnumeratePlayers())
+      foreach (var player in Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
       {
-        var playerFaction = player.GetFaction();
+        var playerFaction = player.GetPlayerData().Faction;
         if (playerFaction?.StartingQuest != null)
         {
           playerFaction.DisplayDiscovered(playerFaction.StartingQuest, true);

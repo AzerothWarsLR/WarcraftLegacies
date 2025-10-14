@@ -378,7 +378,7 @@ public sealed class Lordaeron : Faction
     ownerChangeTrigger.AddAction(() =>
     {
       var lordaeronPlayer = Player;
-      if (lordaeronPlayer?.GetTeam()?.Contains(@event.Unit.Owner) == true)
+      if (lordaeronPlayer?.GetPlayerData().Team?.Contains(@event.Unit.Owner) == true)
       {
         return;
       }

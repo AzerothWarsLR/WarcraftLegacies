@@ -19,7 +19,7 @@ public static class StartingResources
     {
       foreach (var player in Util.EnumeratePlayers())
       {
-        var faction = player.GetFaction();
+        var faction = player.GetPlayerData().Faction;
         if (faction == null)
         {
           continue;

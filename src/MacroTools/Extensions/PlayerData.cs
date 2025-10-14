@@ -10,7 +10,7 @@ namespace MacroTools.Extensions;
 /// <summary>
 /// Provides extra information about players that is not already tracked by the Warcraft 3 engine.
 /// </summary>
-internal sealed class PlayerData
+public sealed class PlayerData
 {
   private static readonly Dictionary<int, PlayerData> _byId = new();
 
@@ -278,7 +278,7 @@ internal sealed class PlayerData
 
   public void SetObjectLevel(int obj, int level)
   {
-    var objectLimit = _player.GetObjectLimit(obj);
+    var objectLimit = GetObjectLimit(obj);
 
     if (level > objectLimit)
     {

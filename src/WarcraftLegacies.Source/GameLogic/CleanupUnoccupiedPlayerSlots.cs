@@ -26,14 +26,13 @@ public static class CleanupUnoccupiedPlayerSlots
 
       foreach (var player in Util.EnumeratePlayers())
       {
-        var playerFaction = player.GetFaction();
+        var playerFaction = player.GetPlayerData().Faction;
         if (playerFaction == null)
         {
           continue;
         }
 
-        if (player.SlotState != playerslotstate.Playing &&
-            playerFaction.ScoreStatus == ScoreStatus.Undefeated)
+        if (player.SlotState != playerslotstate.Playing && playerFaction.ScoreStatus == ScoreStatus.Undefeated)
         {
           playerFaction.Defeat();
         }

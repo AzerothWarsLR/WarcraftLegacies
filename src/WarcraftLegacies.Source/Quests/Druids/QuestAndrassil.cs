@@ -50,7 +50,7 @@ public sealed class QuestAndrassil : QuestData
   {
     var scourgePlayer = _scourge.Player;
     return scourgePlayer != null && completingFaction.Player != null &&
-           scourgePlayer.GetTeam()?.Contains(completingFaction.Player) != false;
+           scourgePlayer.GetPlayerData().Team?.Contains(completingFaction.Player) != false;
   }
 
   /// <inheritdoc/>

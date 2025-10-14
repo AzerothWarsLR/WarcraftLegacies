@@ -20,7 +20,7 @@ public sealed class CheatRemovePower : Command
   /// <inheritdoc />
   public override string Execute(player commandUser, params string[] parameters)
   {
-    var faction = commandUser.GetFaction();
+    var faction = commandUser.GetPlayerData().Faction;
     if (faction == null)
     {
       return "You have no faction so you can't have powers.";

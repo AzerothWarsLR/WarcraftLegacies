@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.ControlPointSystem;
 using MacroTools.DialogueSystem;
-using MacroTools.FactionSystem;
 using MacroTools.Save;
 using MacroTools.Utils;
 using WCSharp.Shared.Data;
@@ -48,46 +47,6 @@ public static class PlayerExtensions
   }
 
   /// <summary>
-  /// Returns the maximum number of units the player can build of the given type, or the maximum research level
-  /// the player can achieve for the given type.
-  /// </summary>
-  /// <param name="player">The player in question.</param>
-  /// <param name="objectId">The unit type ID or research ID we want to know about.</param>
-  public static int GetObjectLimit(this player player, int objectId) =>
-    PlayerData.ByHandle(player).GetObjectLimit(objectId);
-
-  /// <summary>Returns the number of <see cref="ControlPoint"/>s a player controls.</summary>
-  public static int GetControlPointCount(this player player) => PlayerData.ByHandle(player).ControlPoints.Count;
-
-  /// <summary>Returns the number of <see cref="ControlPoint"/>s a player controls.</summary>
-  public static List<ControlPoint> GetControlPoints(this player player) => PlayerData.ByHandle(player).ControlPoints;
-
-  /// <summary>Returns the player's <see cref="Team"/>.</summary>
-  public static Team? GetTeam(this player player) => PlayerData.ByHandle(player).Team;
-
-  /// <summary>Sets the player's <see cref="Team"/>.</summary>
-  public static void SetTeam(this player player, Team? whichTeam) => PlayerData.ByHandle(player).SetTeam(whichTeam);
-
-  /// <summary>Returns the player's <see cref="Faction"/>.</summary>
-  public static Faction? GetFaction(this player player) => PlayerData.ByHandle(player).Faction;
-
-  /// <summary>Sets the player's <see cref="Faction"/>.</summary>
-  public static void SetFaction(this player player, Faction faction) => PlayerData.ByHandle(player).Faction = faction;
-
-  /// <summary>Returns the player's gold income, including any bonuses.</summary>
-  public static int GetTotalIncome(this player player) => PlayerData.ByHandle(player).TotalIncome;
-
-  /// <summary>Returns the player's bonus gold income.</summary>
-  public static int GetBonusIncome(this player player) => PlayerData.ByHandle(player).BonusIncome;
-
-  /// <summary>Returns the player's gold income, without any bonuses.</summary>
-  public static int GetBaseIncome(this player player) => PlayerData.ByHandle(player).BaseIncome;
-
-  /// <summary>Modifies the player's bonus income.</summary>
-  public static void AddBonusIncome(this player player, int value) =>
-    PlayerData.ByHandle(player).BonusIncome += value;
-
-  /// <summary>
   /// Rescues all <paramref name="units"/> for <paramref name="newOwningPlayer"/>.
   /// </summary>
   /// <param name="newOwningPlayer">The player who should own the units after being rescued</param>
@@ -102,15 +61,6 @@ public static class PlayerExtensions
     }
   }
 
-  internal static void SetObjectLevel(this player player, int objectId, int level) =>
-    PlayerData.ByHandle(player).SetObjectLevel(objectId, level);
-
-  internal static void ModObjectLimit(this player player, int objectId, int limit) =>
-    PlayerData.ByHandle(player).ModObjectLimit(objectId, limit);
-
-  internal static void SetObjectLimit(this player player, int objectId, int limit) =>
-    PlayerData.ByHandle(player).SetObjectLimit(objectId, limit);
-
   internal static void SetColorAndChangeExisting(this player whichPlayer, playercolor color)
   {
     whichPlayer.Color = color;
@@ -120,8 +70,7 @@ public static class PlayerExtensions
     }
   }
 
-  internal static PlayerData GetPlayerData(this player player) =>
-    PlayerData.ByHandle(player);
+  public static PlayerData GetPlayerData(this player player) => PlayerData.ByHandle(player);
 
   /// <summary>
   /// Safely removes all of the player's units.

@@ -193,7 +193,7 @@ public sealed class QuestPlague : QuestData
       return;
     }
 
-    foreach (var controlPoint in _plagueVictim.Player.GetControlPoints())
+    foreach (var controlPoint in _plagueVictim.Player.GetPlayerData().ControlPoints)
     {
       controlPoint.ControlLevel = 0;
     }

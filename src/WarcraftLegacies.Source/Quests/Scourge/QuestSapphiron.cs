@@ -41,20 +41,33 @@ public sealed class QuestSapphiron : QuestData
   /// <inheritdoc/>
   protected override void OnComplete(Faction completingFaction)
   {
-    if (_unitIsDeadObjective.KillingUnit == null)
+    var killingUnit = _unitIsDeadObjective.KillingUnit;
+    if (killingUnit == null)
     {
       return;
     }
 
-    var killingPlayer = _unitIsDeadObjective.KillingUnit.Owner;
+    var killingPlayer = killingUnit.Owner;
     if (killingPlayer == null)
     {
       return;
     }
 
-    if (completingFaction.Player?.GetTeam()?.Contains(killingPlayer) == true)
+    var completingPlayer = completingFaction.Player;
+    if (completingPlayer == null)
     {
-      unit.Create(completingFaction.Player, SapphironId, -2600, 18800, 300);
+      return;
+    }
+
+    var completingTeam = completingPlayer.GetPlayerData().Team;
+    if (completingTeam == null)
+    {
+      return;
+    }
+
+    if (completingTeam.Contains(killingPlayer))
+    {
+      unit.Create(completingPlayer, SapphironId, -2600, 18800, 300);
     }
   }
 }

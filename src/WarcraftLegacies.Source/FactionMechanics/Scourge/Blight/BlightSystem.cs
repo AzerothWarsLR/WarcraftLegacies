@@ -7,7 +7,7 @@ using WCSharp.Shared.Data;
 namespace WarcraftLegacies.Source.FactionMechanics.Scourge.Blight;
 
 /// <summary>
-///   Units can be registered to the <see cref="BlightSystem" /> so that when they are killed by allies of a specicic
+///   Units can be registered to the <see cref="BlightSystem" /> so that when they are killed by allies of a specific
 ///   <see cref="Faction" />, they spread a certain amount of blight around them.
 /// </summary>
 public static class BlightSystem
@@ -22,14 +22,16 @@ public static class BlightSystem
     var triggerUnit = @event.Unit;
     var parameters = _blightParameters[triggerUnit];
 
-    if (_blightFaction?.Player?.GetTeam() is null || _blightFaction.Player is null ||
-        !_blightFaction.Player.GetTeam()?.Contains(@event.KillingUnit.Owner) != true)
+    var blightPlayer = _blightFaction?.Player;
+    var blightTeam = blightPlayer?.GetPlayerData().Team;
+    var killerPlayer = @event.KillingUnit.Owner;
+
+    if (blightPlayer == null || blightTeam == null || !blightTeam.Contains(killerPlayer))
     {
       return;
     }
 
-    SetBlightRadius(_blightFaction.Player, new Point(triggerUnit.X, triggerUnit.Y),
-      parameters.PrimaryBlightRadius, true);
+    SetBlightRadius(blightPlayer, new Point(triggerUnit.X, triggerUnit.Y), parameters.PrimaryBlightRadius, true);
     if (parameters.RandomBlightRectangle is null)
     {
       return;
@@ -37,8 +39,7 @@ public static class BlightSystem
 
     for (var i = 0; i < parameters.RandomBlightCount; i++)
     {
-      SetBlightRadius(_blightFaction.Player, parameters.RandomBlightRectangle.GetRandomPoint(),
-        parameters.RandomBlightRadius, true);
+      SetBlightRadius(blightPlayer, parameters.RandomBlightRectangle.GetRandomPoint(), parameters.RandomBlightRadius, true);
     }
   }
 

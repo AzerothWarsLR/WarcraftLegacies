@@ -139,7 +139,7 @@ public sealed class QuestKiljaedensCommand : QuestData
     }
 
     var factionTarget = eligibleFactions
-      .OrderByDescending(f => f.Player?.GetControlPointCount())
+      .OrderByDescending(f => f.Player?.GetPlayerData().ControlPoints.Count)
       .First();
     SetQuestTarget(factionTarget);
   }

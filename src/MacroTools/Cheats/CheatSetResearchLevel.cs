@@ -39,7 +39,7 @@ public sealed class CheatSetResearchLevel : Command
       return "You must specify a valid research level as the second parameter.";
     }
 
-    var faction = cheater.GetFaction();
+    var faction = cheater.GetPlayerData().Faction;
     if (faction == null)
     {
       return $"You need to have a valid {nameof(Faction)} to use this Command.";

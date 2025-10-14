@@ -21,7 +21,7 @@ public sealed class RemoveAbilityResearch : Research
   /// <inheritdoc />
   public override void OnResearch(player researchingPlayer)
   {
-    var faction = researchingPlayer.GetFaction();
+    var faction = researchingPlayer.GetPlayerData().Faction;
     faction?.ModAbilityAvailability(RemovedAbility, -1);
   }
 }

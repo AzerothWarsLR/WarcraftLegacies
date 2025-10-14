@@ -100,9 +100,9 @@ public static class CinematicMode
 
   private static void PlayFactionMusic()
   {
-    foreach (var player in Util.EnumeratePlayers())
+    foreach (var player in Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
     {
-      var faction = player.GetFaction();
+      var faction = player.GetPlayerData().Faction;
       if (faction != null)
       {
         player.PlayMusicThematic(faction.CinematicMusic);

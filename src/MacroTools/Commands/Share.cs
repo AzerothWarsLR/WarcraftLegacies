@@ -22,7 +22,7 @@ public sealed class Share : Command
   /// <inheritdoc />
   public override string Execute(player cheater, params string[] parameters)
   {
-    var cheaterTeam = cheater.GetTeam();
+    var cheaterTeam = cheater.GetPlayerData().Team;
 
     if (parameters.Length >= 1 && parameters[0].ToLower() == "all")
     {
@@ -30,7 +30,7 @@ public sealed class Share : Command
 
       foreach (var faction in factions)
       {
-        if (faction.Player != null && faction.Player.GetTeam() == cheaterTeam)
+        if (faction.Player != null && faction.Player.GetPlayerData().Team == cheaterTeam)
         {
           cheater.SetAlliance(faction.Player, alliancetype.SharedControl, true);
         }
@@ -49,7 +49,7 @@ public sealed class Share : Command
       return $"There is nobody playing the {targetFaction.Name} faction.";
     }
 
-    if (cheaterTeam != targetFaction.Player.GetTeam())
+    if (cheaterTeam != targetFaction.Player.GetPlayerData().Team)
     {
       return $"{targetFaction.Name} isn't on your team, so you can't share control with them.";
     }

@@ -133,7 +133,7 @@ public sealed class QuestFirelandInvasion : QuestData
       return;
     }
 
-    foreach (var controlPoint in _invasionVictim.Player.GetControlPoints())
+    foreach (var controlPoint in _invasionVictim.Player.GetPlayerData().ControlPoints)
     {
       controlPoint.ControlLevel = 0;
     }

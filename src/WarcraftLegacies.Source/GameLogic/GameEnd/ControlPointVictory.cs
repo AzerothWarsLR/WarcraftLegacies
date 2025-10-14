@@ -38,7 +38,7 @@ public static class ControlPointVictory
   private static int GetTeamControlPoints(Team whichTeam) =>
     whichTeam.GetAllFactions()
       .Where(faction => faction.Player != null)
-      .Sum(faction => faction.Player.GetControlPointCount());
+      .Sum(faction => faction.Player!.GetPlayerData().ControlPoints.Count);
 
   private static void TeamWarning(Team whichTeam, int controlPoints)
   {
@@ -55,7 +55,7 @@ public static class ControlPointVictory
       return;
     }
 
-    var newOwnerTeam = controlPoint.Owner.GetTeam();
+    var newOwnerTeam = controlPoint.Owner.GetPlayerData().Team;
 
     var teamControlPoints = GetTeamControlPoints(newOwnerTeam);
     if (teamControlPoints >= CpsVictory)

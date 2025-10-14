@@ -1,5 +1,6 @@
 ﻿using System;
 using MacroTools.Extensions;
+using WCSharp.Shared;
 
 namespace MacroTools.Systems;
 
@@ -76,29 +77,29 @@ public static class GameTime
     _turnTimerDialog.SetTitle($"Turn {_turnCount}");
     if (_turnCount >= 20)
     {
-      foreach (var player in WCSharp.Shared.Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
+      foreach (var player in Util.EnumeratePlayers(playerslotstate.Playing, mapcontrol.User))
       {
-        var faction = player.GetFaction();
-        var meetEliminationThreshold = player.GetControlPoints().Count <= 5 && player.FoodUsed <= 105 &&
-                                       !player.GetTeam()!.DoesTeamHaveEssentialLegend();
+        var playerData = player.GetPlayerData();
+        var meetEliminationThreshold = playerData.ControlPoints.Count <= 5 && player.FoodUsed <= 105 &&
+                                       !playerData.Team!.DoesTeamHaveEssentialLegend();
         if (meetEliminationThreshold)
         {
-          if (PlayerData.ByHandle(player).EliminationTurns >= 3)
+          if (playerData.EliminationTurns >= 3)
           {
-            faction?.Defeat();
+            playerData.Faction?.Defeat();
           }
           else
           {
-            player.DisplayTextTo(PlayerData.ByHandle(player).EliminationTurns == 2
+            player.DisplayTextTo(playerData.EliminationTurns == 2
                 ? $"You have met the threshold for being eliminated from the game. Unless you raise your Control Point count above 5, raise food used above 105 or your team retakes/gains an essential Legend you will be defeated in {3 - PlayerData.ByHandle(player).EliminationTurns} turn."
                 : $"You have met the threshold for being eliminated from the game. Unless you raise your cp count above 5, raise food used above 105 or your team retakes/gains an essential Legend you will be defeated in {3 - PlayerData.ByHandle(player).EliminationTurns} turns.");
           }
 
-          PlayerData.ByHandle(player).EliminationTurns++;
+          playerData.EliminationTurns++;
         }
         else
         {
-          PlayerData.ByHandle(player).EliminationTurns = 0;
+          playerData.EliminationTurns = 0;
         }
       }
     }

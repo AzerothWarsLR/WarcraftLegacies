@@ -13,7 +13,7 @@ public static class RefundZeroLimitUnits
   {
     var unitType = whichUnit.UnitType;
     var player = whichUnit.Owner;
-    if (player.GetObjectLimit(unitType) != 0)
+    if (player.GetPlayerData().GetObjectLimit(unitType) != 0)
     {
       return;
     }

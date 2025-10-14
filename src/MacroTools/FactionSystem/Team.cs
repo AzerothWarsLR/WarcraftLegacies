@@ -27,7 +27,7 @@ public sealed class Team
   /// <summary>
   /// The number of players in the <see cref="Team"/> who have not been defeated.
   /// </summary>
-  public int UndefeatedPlayerCount => _members.Count(x => x.GetFaction()?.ScoreStatus != ScoreStatus.Defeated);
+  public int UndefeatedPlayerCount => _members.Count(x => x.GetPlayerData().Faction?.ScoreStatus != ScoreStatus.Defeated);
 
   /// <summary>
   ///   Music that plays when this <see cref="Team" /> wins the game.
@@ -62,7 +62,7 @@ public sealed class Team
   {
     foreach (var member in _members)
     {
-      var memberFaction = member.GetFaction();
+      var memberFaction = member.GetPlayerData().Faction;
       if (memberFaction != null)
       {
         yield return memberFaction;
@@ -128,14 +128,14 @@ public sealed class Team
       return;
     }
 
-    var faction = whichPlayer.GetFaction();
+    var faction = whichPlayer.GetPlayerData().Faction;
     if (faction == null)
     {
       return;
     }
 
     DisplayText($"{faction.ColoredName}|r is no longer invited to join the {Name}.");
-    faction.Player.DisplayTextTo($"You are no longer invited to join the {Name}.");
+    whichPlayer.DisplayTextTo($"You are no longer invited to join the {Name}.");
     _invitees.Remove(whichPlayer);
   }
 
@@ -149,15 +149,14 @@ public sealed class Team
       return;
     }
 
-    var faction = whichPlayer.GetFaction();
-
+    var faction = whichPlayer.GetPlayerData().Faction;
     if (faction == null)
     {
       return;
     }
 
     DisplayText($"{faction.ColoredName}|r has been invited to join the {Name}.");
-    faction.Player.DisplayTextTo($"You have been invited to join the {Name}. Type -join {Name} to accept.");
+    whichPlayer.DisplayTextTo($"You have been invited to join the {Name}. Type -join {Name} to accept.");
     _invitees.Add(whichPlayer);
   }
 
@@ -193,7 +192,7 @@ public sealed class Team
   {
     foreach (var player in _members)
     {
-      if (player.GetFaction()!.HasEssentialLegend)
+      if (player.GetPlayerData().Faction!.HasEssentialLegend)
       {
         return true;
       }
@@ -209,8 +208,8 @@ public sealed class Team
     {
       case TeamSharedVisionMode.TraditionalAlliesOnly:
         {
-          var joiningPlayerTradTeam = playerA.GetFaction()?.TraditionalTeam;
-          var existingPlayerTradTeam = playerB.GetFaction()?.TraditionalTeam;
+          var joiningPlayerTradTeam = playerA.GetPlayerData().Faction?.TraditionalTeam;
+          var existingPlayerTradTeam = playerB.GetPlayerData().Faction?.TraditionalTeam;
           allianceState = joiningPlayerTradTeam == existingPlayerTradTeam ? AllianceState.AlliedVision : AllianceState.Allied;
           break;
         }

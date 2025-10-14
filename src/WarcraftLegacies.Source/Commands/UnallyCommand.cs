@@ -15,7 +15,7 @@ public static class UnallyCommand
   private static void Actions()
   {
     var triggerPlayer = @event.Player;
-    triggerPlayer.GetFaction()?.Unally();
+    triggerPlayer.GetPlayerData().Faction?.Unally();
   }
 
   public static void Setup()

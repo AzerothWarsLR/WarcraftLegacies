@@ -39,9 +39,26 @@ public sealed class QuestSlumberingKing : QuestData
   {
     get
     {
+      var name = "unit";
+      var factionName = "an unknown faction";
+
       var completingUnit = _anyEnemyUnitInRectsObjective.CompletingUnit;
-      return
-        $"A {completingUnit.Name} under the control of {(completingUnit != null ? completingUnit.Owner : null).GetFaction()?.ColoredName} has encroached on the shores of Northrend. Soon they will feel the biting chill of death.";
+      if (completingUnit != null)
+      {
+        name = completingUnit.Name;
+
+        var owner = completingUnit.Owner;
+        if (owner != null)
+        {
+          var faction = owner.GetPlayerData().Faction;
+          if (faction != null)
+          {
+            factionName = faction.ColoredName;
+          }
+        }
+      }
+
+      return $"A {name} under the control of {factionName} has encroached on the shores of Northrend. Soon they will feel the biting chill of death.";
     }
   }
 
