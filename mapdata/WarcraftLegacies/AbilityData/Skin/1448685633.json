@@ -58,7 +58,7 @@
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Causes attacks to do 1.4 times normal damage to units and 1.2times normal damage to heroes."
+      "Value": "Causes attacks to do 1.4 times normal damage to units and 1.2 times normal damage to heroes."
     },
     {
       "Level": 2,
@@ -81,7 +81,7 @@
     {
       "Id": 1953854049,
       "Type": 3,
-      "Value": "Akama\u0027s attacks rend the enemy\u0027s wounds, inflicting Damage Amplification.Causes attacks to do more damage to units and heroes.|n|n|cffffcc00Level 1|r - 1.4 times damage to units, 1.2 times damage to heroes. |n|cffffcc00Level 2|r - 1.65 times damage to units, 1.35 times damage to heroes. |n|cffffcc00Level 3|r - 1.9 times damage to units, 1.5 times damage to heroes. |n|cffffcc00Level 4|r - 2.15 times damage to units, 1.65 times damage to heroes."
+      "Value": "Causes attacks to do more damage to units and heroes.|n|n|cffffcc00Level 1|r - 1.4 times damage to units, 1.2 times damage to heroes. |n|cffffcc00Level 2|r - 1.65 times damage to units, 1.35 times damage to heroes. |n|cffffcc00Level 3|r - 1.9 times damage to units, 1.5 times damage to heroes. |n|cffffcc00Level 4|r - 2.15 times damage to units, 1.65 times damage to heroes."
     },
     {
       "Id": 2020631137,
