@@ -49,17 +49,13 @@ public static class IllidariSpellSetup
     };
     PassiveAbilityManager.Register(warglaivesOfAzzinoth);
 
-    var shadowAssault = new ShadowAssaultSpell(ABILITY_A0TP_SHADOW_ASSAULT_GREEN_AKAMA)
+    var shadowAssault = new ShadowAssaultSpell(ABILITY_A0TP_SHADOW_ASSAULT_AKAMA)
     {
       BaseDamage = 150,
       DamagePerLevel = 50,
-      ChargeSpeed = 1200,
-      MaxChargeDistance = 1800,
-      SpeedUpOrderId = ORDER_BLOODLUST,
-      ChargeEffectPath = @"Abilities\Spells\Orc\FeralSpirit\feralspiritdone.mdl",
-      SpeedUpAbilityId = ABILITY_A0YT_BLOODLUST_SHADOW_STRIKE,
+      BlinkEffectPath = @"Abilities\Spells\NightElf\Blink\BlinkCaster.mdl",
       ExecuteEffectPath = @"Objects\\Spawnmodels\\Human\\HumanLargeDeathExplode\\HumanLargeDeathExplode.mdl",
-      ImpactEffectPath = @"Abilities\Spells\Human\ThunderClap\ThunderClapCaster.mdl",
+      DamageEffectPath = @"Abilities\Spells\Human\ThunderClap\ThunderClapCaster.mdl",
       BaseExecuteThreshold = 0.25f,
       ExecuteThresholdPerLevel = 0f
     };

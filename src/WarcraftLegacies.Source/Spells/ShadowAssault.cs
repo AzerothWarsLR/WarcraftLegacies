@@ -1,30 +1,18 @@
-﻿using MacroTools.DummyCasters;
-using MacroTools.Extensions;
-using MacroTools.Libraries;
-using MacroTools.SpellSystem;
-using WCSharp.Buffs;
+﻿using MacroTools.SpellSystem;
+using WCSharp.Shared;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells;
 
 public sealed class ShadowAssaultSpell : Spell
 {
-  // Basic spell attributes
   public float BaseDamage { get; init; }
   public float DamagePerLevel { get; init; }
-  public float ChargeSpeed { get; init; } = 1500; // Charge movement speed
-  public float MaxChargeDistance { get; init; } = 1800; // Maximum charge distance
 
-  // Special effect paths
-  public required string ChargeEffectPath { get; init; } // Effect during charge
-  public required string ExecuteEffectPath { get; init; } // Effect when executing target
-  public required string ImpactEffectPath { get; init; } // Effect when hitting target
+  public required string BlinkEffectPath { get; init; }
+  public required string ExecuteEffectPath { get; init; }
+  public required string DamageEffectPath { get; init; }
 
-  // Dummy ability IDs (for attack speed boost)
-  public int SpeedUpAbilityId { get; init; }
-  public int SpeedUpOrderId { get; init; }
-
-  // Execute threshold (percentage of max health)
   public float BaseExecuteThreshold { get; init; } = 0.15f;
   public float ExecuteThresholdPerLevel { get; init; } = 0.05f;
 
@@ -34,150 +22,51 @@ public sealed class ShadowAssaultSpell : Spell
 
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
-    if (!target.Alive)
+    var spellLevel = caster.GetAbilityLevel(Id);
+    TeleportToTarget(caster, target);
+    DealDamage(caster, target, spellLevel);
+    if (!target.IsUnitType(unittype.Hero) && CanExecute(target, spellLevel))
     {
-      return;
+      Execute(caster, target);
     }
-
-    var spellLevel = caster.GetAbilityLevel(Id);
-    var invulnerabilityBuff = ApplySpeedUpAndInvulnerability(caster, spellLevel);
-    StartCharge(caster, target, invulnerabilityBuff);
-  }
-
-  private InvulnerabilityBuff ApplySpeedUpAndInvulnerability(unit caster, int level)
-  {
-    // Apply attack speed boost via dummy ability
-    ApplySpeedUp(caster, level);
-
-    // Apply invulnerability buff during charge
-    var buff = new InvulnerabilityBuff(caster, caster);
-    BuffSystem.Add(buff);
-    return buff;
-  }
-
-  private void ApplySpeedUp(unit caster, int level)
-  {
-    // Use dummy caster to apply attack speed ability
-    DummyCasterManager.GetGlobalDummyCaster().CastUnit(
-        caster, SpeedUpAbilityId, SpeedUpOrderId, level,
-        caster, DummyCastOriginType.Caster);
-  }
-
-  private void StartCharge(unit caster, unit target, InvulnerabilityBuff invulnerabilityBuff)
-  {
-    var startPos = caster.GetPosition();
-    var targetPos = target.GetPosition();
-    var distance = MathEx.GetDistanceBetweenPoints(startPos, targetPos);
-    var totalTime = distance / ChargeSpeed; // Calculate charge duration
-    var elapsedTime = 0f; // Track elapsed time
-
-    // Create charge visual effect
-    var chargeEffect = effect.Create(ChargeEffectPath, startPos.X, startPos.Y);
-    timer timer = timer.Create();
-
-    // Timer callback for charge movement
-    timer.Start(0.02f, true, () =>
+    else
     {
-      elapsedTime += 0.02f; // Increment time (50Hz update rate)
-
-      if (elapsedTime >= totalTime)
-      {
-        EndCharge(caster, target, chargeEffect, timer, invulnerabilityBuff);
-        return;
-      }
-
-      // Calculate current position using linear interpolation
-      var progress = elapsedTime / totalTime;
-      var currentPosX = startPos.X + (targetPos.X - startPos.X) * progress;
-      var currentPosY = startPos.Y + (targetPos.Y - startPos.Y) * progress;
-      caster.SetPosition(currentPosX, currentPosY);
-
-      // Update effect position to follow caster
-      chargeEffect.SetX(currentPosX);
-      chargeEffect.SetY(currentPosY);
-    });
+      caster.SetAbilityCooldownRemaining(Id, caster.GetAbilityCooldown(Id, spellLevel - 1));
+    }
   }
 
-  private void EndCharge(unit caster, unit target, effect effect, timer timer, InvulnerabilityBuff invulnerabilityBuff)
+  private void TeleportToTarget(unit caster, unit target)
   {
-    timer.Dispose();
-    effect.Dispose();
-
-    invulnerabilityBuff.Dispose();
-
-    DealDamageAndCheckExecute(caster, target);
+    var behindTargetPos = Util.PositionWithPolarOffset(target.X, target.Y, -70, target.Facing);
+    effect.Create(BlinkEffectPath, caster.X, caster.Y).Dispose();
+    caster.SetPosition(behindTargetPos.x, behindTargetPos.y);
+    effect.Create(BlinkEffectPath, behindTargetPos.x, behindTargetPos.y).Dispose();
   }
 
-  private void DealDamageAndCheckExecute(unit caster, unit target)
+  private void DealDamage(unit caster, unit target, int spellLevel)
   {
-    var spellLevel = caster.GetAbilityLevel(Id);
     var damage = BaseDamage + DamagePerLevel * spellLevel;
-
     caster.DealDamage(target, damage, true, false, attacktype.Normal, damagetype.Magic, weapontype.WhoKnows);
-
-    var impactEffect = effect.Create(ImpactEffectPath, target.X, target.Y);
-    impactEffect.Dispose();
-
-    if (!target.IsUnitType(unittype.Hero) && CheckExecute(target, spellLevel))
-    {
-      ExecuteTarget(caster, target);
-    }
+    effect.Create(DamageEffectPath, caster.X, caster.Y).Dispose();
   }
 
-  private bool CheckExecute(unit target, int level)
+  private bool CanExecute(unit target, int level)
   {
-    // Calculate execute threshold percentage
     var threshold = BaseExecuteThreshold + ExecuteThresholdPerLevel * level;
     var currentHp = target.Life;
     var maxHp = target.MaxLife;
 
-    // Return true if target's HP is below threshold (without adding 1)
     return currentHp < maxHp * threshold;
   }
 
-  private void ExecuteTarget(unit caster, unit target)
+  private void Execute(unit caster, unit target)
   {
-
     var currentHp = target.Life;
     caster.DealDamage(target, currentHp + 500, true, false, attacktype.Normal, damagetype.Magic, weapontype.WhoKnows);
 
     var executeEffect = effect.Create(ExecuteEffectPath, target.X, target.Y);
     executeEffect.Dispose();
 
-    RefreshSpellCooldown(caster);
-  }
-
-  private void RefreshSpellCooldown(unit caster)
-  {
-    var level = caster.GetAbilityLevel(Id);
-    caster.RemoveAbility(Id);
-    caster.AddAbility(Id);
-    caster.SetAbilityLevel(Id, level);
-  }
-
-  // Invulnerability buff during charge
-  private sealed class InvulnerabilityBuff : PassiveBuff
-  {
-    private trigger? _damageTrigger;
-
-    public InvulnerabilityBuff(unit caster, unit target) : base(caster, target) { }
-
-    public override void OnApply()
-    {
-      _damageTrigger = trigger.Create();
-      _damageTrigger.RegisterUnitEvent(Target, unitevent.Damaged);
-      _damageTrigger.AddAction(() => @event.Damage = 0);
-    }
-
-    public override void OnDispose()
-    {
-      // Cleanup damage trigger
-      if (_damageTrigger != null)
-      {
-        _damageTrigger.Dispose();
-      }
-
-      base.OnDispose();
-    }
+    caster.SetAbilityCooldownRemaining(Id, 0);
   }
 }
