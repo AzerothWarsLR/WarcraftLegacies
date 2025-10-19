@@ -76,6 +76,10 @@ public sealed class InaccessibleObjectCollection(
         RemoveWithChildren(research);
       }
 
+      foreach (var unitSold in unit.TechtreeUnitsSold)
+      {
+        RemoveWithChildren(unitSold);
+      }
 
       foreach (var ability in unit.AbilitiesNormal)
       {
