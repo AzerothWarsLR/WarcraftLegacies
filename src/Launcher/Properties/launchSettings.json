@@ -2,39 +2,39 @@
   "profiles": {
     "TestMap: Test": {
       "commandName": "Project",
-      "commandLineArgs": "mapdata-to-w3x TestMap true \"..\\..\\..\\..\\..\\mapdata\\TestMap\" \"..\\..\\..\\..\\..\\artifacts\" --sourcecodepath \"..\\..\\..\\..\\TestMap.Source\""
+      "commandLineArgs": "mapdata-to-w3x TestMap true \"../../../../../mapdata/TestMap\" \"../../../../../artifacts\" --sourcecodepath \"../../../../TestMap.Source\""
     },
     "TestMap: Convert W3X to MapData": {
       "commandName": "Project",
-      "commandLineArgs": "w3x-to-mapdata \"..\\..\\..\\..\\..\\maps\\TestMap.w3x\" \"..\\..\\..\\..\\..\\mapdata\\TestMap\" --constantsOutputPath \"..\\..\\..\\..\\TestMap.Source\""
+      "commandLineArgs": "w3x-to-mapdata \"../../../../../maps/TestMap.w3x\" \"../../../../../mapdata/TestMap\" --constantsOutputPath \"../../../../TestMap.Source\""
     },
     "TestMap: Convert MapData to W3X": {
       "commandName": "Project",
-      "commandLineArgs": "mapdata-to-w3x TestMap false \"..\\..\\..\\..\\..\\mapdata\\TestMap\" \"..\\..\\..\\..\\..\\maps\" --backup-directory \"..\\..\\..\\..\\..\\maps\\backups\" --output-type Folder"
+      "commandLineArgs": "mapdata-to-w3x TestMap false \"../../../../../mapdata/TestMap\" \"../../../../../maps\" --backup-directory \"../../../../../maps/backups\" --output-type Folder"
     },
     "TestMap: Transpile C# to Lua": {
       "commandName": "Project",
-      "commandLineArgs": "csharp-to-lua TestMap \"..\\..\\..\\..\\..\\maps\" \"..\\..\\..\\..\\TestMap.Source\""
+      "commandLineArgs": "csharp-to-lua TestMap \"../../../../../maps\" \"../../../../TestMap.Source\""
     },
     "WarcraftLegacies: Test": {
       "commandName": "Project",
-      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies true \"..\\..\\..\\..\\..\\mapdata\\WarcraftLegacies\" \"..\\..\\..\\..\\..\\artifacts\" --sourcecodepath \"..\\..\\..\\..\\WarcraftLegacies.Source\" --set-map-titles True"
+      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies true \"../../../../../mapdata/WarcraftLegacies\" \"../../../../../artifacts\" --sourcecodepath \"../../../../WarcraftLegacies.Source\" --set-map-titles True"
     },
     "WarcraftLegacies: Publish": {
       "commandName": "Project",
-      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies false \"..\\..\\..\\..\\..\\mapdata\\WarcraftLegacies\" \"..\\..\\..\\..\\..\\maps\\published\" --sourcecodepath \"..\\..\\..\\..\\WarcraftLegacies.Source\" --set-map-titles True"
+      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies false \"../../../../../mapdata/WarcraftLegacies\" \"../../../../../maps/published\" --sourcecodepath \"../../../../WarcraftLegacies.Source\" --set-map-titles True"
     },
     "WarcraftLegacies: Convert W3X to MapData": {
       "commandName": "Project",
-      "commandLineArgs": "w3x-to-mapdata \"..\\..\\..\\..\\..\\maps\\WarcraftLegacies.w3x\" \"..\\..\\..\\..\\..\\mapdata\\WarcraftLegacies\" --constantsOutputPath \"..\\..\\..\\..\\WarcraftLegacies.Shared\" --regionsOutputPath \"..\\..\\..\\..\\WarcraftLegacies.Source\""
+      "commandLineArgs": "w3x-to-mapdata \"../../../../../maps/WarcraftLegacies.w3x\" \"../../../../../mapdata/WarcraftLegacies\" --constantsOutputPath \"../../../../WarcraftLegacies.Shared\" --regionsOutputPath \"../../../../WarcraftLegacies.Source\""
     },
     "WarcraftLegacies: Convert MapData to W3X": {
       "commandName": "Project",
-      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies false \"..\\..\\..\\..\\..\\mapdata\\WarcraftLegacies\" \"..\\..\\..\\..\\..\\maps\" --backup-directory \"..\\..\\..\\..\\..\\maps\\backups\" --output-type Folder"
+      "commandLineArgs": "mapdata-to-w3x WarcraftLegacies false \"../../../../../mapdata/WarcraftLegacies\" \"../../../../../maps\" --backup-directory \"../../../../../maps/backups\" --output-type Folder"
     },
     "WarcraftLegacies: Transpile C# to Lua": {
       "commandName": "Project",
-      "commandLineArgs": "csharp-to-lua WarcraftLegacies \"..\\..\\..\\..\\..\\maps\" \"..\\..\\..\\..\\WarcraftLegacies.Source\""
+      "commandLineArgs": "csharp-to-lua WarcraftLegacies \"../../../../../maps\" \"../../../../WarcraftLegacies.Source\""
     }
   }
 }

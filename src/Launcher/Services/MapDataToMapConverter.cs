@@ -407,7 +407,7 @@ public sealed class MapDataToMapConverter
 
   private static IEnumerable<PathData> GetAdditionalFiles(string mapDataRootDirectory)
   {
-    var importsDirectory = $@"{mapDataRootDirectory}\{ImportsPath}";
+    var importsDirectory = Path.Combine(mapDataRootDirectory, ImportsPath);
 
     var additionalFiles = Directory.Exists(importsDirectory)
       ? Directory.EnumerateFiles(importsDirectory, "*", SearchOption.AllDirectories).Select(x => new PathData
@@ -437,7 +437,7 @@ public sealed class MapDataToMapConverter
 
   private static IEnumerable<DirectoryEnumerationOptions> GetAdditionalFileDirectories(string mapDataRootDirectory)
   {
-    var importsDirectory = $@"{mapDataRootDirectory}\{ImportsPath}";
+    var importsDirectory = Path.Combine(mapDataRootDirectory, ImportsPath);
 
     var fileDirectories = Directory.Exists(importsDirectory)
       ? new List<DirectoryEnumerationOptions>

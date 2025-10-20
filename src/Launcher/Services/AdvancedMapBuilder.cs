@@ -88,7 +88,7 @@ public sealed class AdvancedMapBuilder
       Directory.Delete(mapFilePath, true);
     }
 
-    map.BuildDirectory(@$"{mapFilePath}\", additionalFiles);
+    map.BuildDirectory(mapFilePath, additionalFiles);
   }
 
   private void SupplementMap(Map map, AdvancedMapBuilderOptions options)
