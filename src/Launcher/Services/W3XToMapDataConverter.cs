@@ -168,7 +168,7 @@ public sealed class W3XToMapDataConverter
         continue;
       }
 
-      var destinationFileName = $@"{outputFolderPath}\{ImportsPath}\{relativePath}";
+      var destinationFileName = Path.Combine(outputFolderPath, ImportsPath, relativePath);
       Directory.CreateDirectory(Path.GetDirectoryName(destinationFileName)!);
       File.Copy(file, destinationFileName, true);
     }
@@ -178,34 +178,27 @@ public sealed class W3XToMapDataConverter
   {
     foreach (var filePath in GetUnserializableFilePaths())
     {
-      var fullSourceFilePath = $"{baseMapPath}/{filePath}";
+      var fullSourceFilePath = Path.Combine(baseMapPath, filePath);
       if (!File.Exists(fullSourceFilePath))
       {
         continue;
       }
 
-      var fullOutputFilePath = $@"{outputFolderPath}\{filePath}";
-      if (fullSourceFilePath.EndsWith(".txt"))
-      {
-        //Warcraft 3 maps use CR line endings, so this ensures that those line endings are replaced with CLRF.
-        File.WriteAllLines(fullOutputFilePath, File.ReadLines(fullSourceFilePath));
-      }
-      else
-      {
-        File.Copy(fullSourceFilePath, fullOutputFilePath, true);
-      }
+      var fullOutputFilePath = Path.Combine(outputFolderPath, filePath);
+      File.Copy(fullSourceFilePath, fullOutputFilePath, true);
     }
   }
 
   private static void CopyGameInterface(string baseMapPath, TriggerStringDictionary triggerStringDictionary, string outputFolderPath)
   {
-    if (!File.Exists($"{baseMapPath}/{GameInterfacePath}"))
+    var gameInterfacePath = Path.Combine(baseMapPath, GameInterfacePath);
+    if (!File.Exists(gameInterfacePath))
     {
       return;
     }
 
-    var subtitutedText = triggerStringDictionary.SubstituteTriggerStringsInText(File.ReadAllText($"{baseMapPath}/{GameInterfacePath}"));
-    File.WriteAllText($@"{outputFolderPath}\{GameInterfacePath}", subtitutedText);
+    var subtitutedText = triggerStringDictionary.SubstituteTriggerStringsInText(File.ReadAllText(gameInterfacePath));
+    File.WriteAllText(Path.Combine(outputFolderPath, GameInterfacePath), subtitutedText);
   }
 
   /// <summary>
