@@ -217,7 +217,7 @@ public static class MapExtensions
 
       var destinationPath = Path.Combine(destinationRootDirectory, file.RelativePath);
       Directory.CreateDirectory(Path.GetDirectoryName(destinationPath));
-      File.Copy(file.AbsolutePath, Path.Combine(destinationRootDirectory, file.RelativePath), true);
+      File.Copy(file.AbsolutePath, destinationPath, true);
     }
   }
 
