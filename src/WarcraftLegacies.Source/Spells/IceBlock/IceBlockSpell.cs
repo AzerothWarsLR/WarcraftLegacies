@@ -61,6 +61,6 @@ public sealed class IceBlockSpell : Spell
 
     BuffSystem.Add(iceBlockBuff);
 
-    effect.Create(CastEffectPath, targetPoint.X, targetPoint.Y);
+    effect.Create(CastEffectPath, targetPoint.X, targetPoint.Y).Dispose();
   }
 }
