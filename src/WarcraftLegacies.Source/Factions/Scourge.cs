@@ -1,17 +1,20 @@
 ﻿using System.Collections.Generic;
 using MacroTools.DialogueSystem;
+using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
 using MacroTools.Powers;
+using MacroTools.ResearchSystems;
 using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.FactionMechanics.Scourge;
 using WarcraftLegacies.Source.FactionMechanics.Scourge.Blight;
 using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests.Scourge;
+using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 
@@ -70,11 +73,31 @@ public sealed class Scourge : Faction
     RegisterQuests();
     RegisterPowers();
     RegisterDialogue();
+    RegisterResearches();
     BlightSystem.Setup(this);
     BlightSetup.Setup(_preplacedUnitSystem);
     SacrificeAcolyte.Setup();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     TheFrozenThrone.Setup(this, _allLegendSetup.Scourge.TheFrozenThrone, _allLegendSetup.Scourge.Arthas);
+  }
+
+  private void RegisterResearches()
+  {
+    ResearchManager.RegisterIncompatibleSet(
+      new CustomResearch(UPGRADE_ZB74_LICHES_SCOURGE, 0)
+      {
+        ResearchFunc = researchingPlayer =>
+        {
+          var faction = researchingPlayer.GetPlayerData().Faction;
+          faction?.ModObjectLimit(UNIT_H00H_DEATH_KNIGHT_SCOURGE_ELITE, -Unlimited);
+          faction?.ModObjectLimit(UPGRADE_R00Q_CHILLING_AURA_SCOURGE, -Unlimited);
+        }
+      },
+      new ChangeObjectLimitResearch(UPGRADE_ZB24_DEATH_KNIGHTS_SCOURGE, 0)
+      {
+        ObjectId = UNIT_ZBLI_LICH_SCOURGE_ELITE,
+        LimitChange = -Unlimited
+      });
   }
 
   private void RegisterObjectLevels()

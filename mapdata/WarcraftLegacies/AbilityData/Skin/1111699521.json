@@ -31,6 +31,14 @@
       "Id": 1953653089,
       "Type": 3,
       "Value": "ReplaceableTextures\\CommandButtons\\PASBlightHorn.blp"
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2037408353,
+      "Value": 0
     }
   ]
 }
