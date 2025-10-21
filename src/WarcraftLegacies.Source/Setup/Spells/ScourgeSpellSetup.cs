@@ -7,6 +7,7 @@ using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.FactionMechanics.Scourge;
 using WarcraftLegacies.Source.PassiveAbilities;
 using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.Spells.IceBlock;
 using WarcraftLegacies.Source.Spells.Reap;
 
 namespace WarcraftLegacies.Source.Setup.Spells;
@@ -84,6 +85,73 @@ public static class ScourgeSpellSetup
       CorpseCount = 1
     });
 
+    SpellSystem.Register(new DeathPact(ABILITY_A0WP_DARK_RITUAL_ICON)
+    {
+      Radius = 900.0f,
+      KillEffect = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl",
+      HealEffect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl",
+      HealthRestorePercent = 0.25f,
+      ManaRestorePercent = 0.36f
+    });
+
+    PassiveAbilityManager.Register(new SummonUnitOnCast(UNIT_U00A_SCOURGE_COMMANDER_SCOURGE, ABILITY_ST52_ARMY_OF_THE_DEAD_SCOURGE)
+    {
+      Duration = 45,
+      SummonUnitTypeId = UNIT_NDR2_DARK_MINION_SCOURGE_DEATH_KNIGHT,
+      SummonCount = new LeveledAbilityField<int>
+      {
+        Base = 0,
+        PerLevel = 1
+      },
+      SpecialEffectPath = @"Abilities\Spells\Undead\RaiseSkeletonWarrior\RaiseSkeleton.mdl",
+      ProcChance = 1.0f,
+      AbilityWhitelist = new List<int>
+      {
+        ABILITY_AUDC_DEATH_COIL_RED_BARON_RIVENDARE,
+        ABILITY_A10S_SUMMON_RAMSTEIN_RED_BARON_RIVENDARE,
+        ABILITY_A09Y_DEATH_S_ADVANCE_SCOURGE_RIVENDARE,
+        ABILITY_A07R_UNIVERSAL_SHACKLES_KARGATH
+      }
+    });
+
+    var kelthuzadIds = new[]
+    {
+      UNIT_U00M_MASTER_OF_THE_CULT_OF_THE_DAMNED_SCOURGE_GHOST,
+      UNIT_U001_MASTER_OF_THE_CULT_OF_THE_DAMNED_SCOURGE_NECROMANCER,
+      UNIT_UKTL_ARCHLICH_OF_THE_SCOURGE_SCOURGE_LICH
+    };
+    PassiveAbilityManager.Register(new SummoningMastery(kelthuzadIds, ABILITY_AUAN_ANIMATE_DEAD_KEL_THUZAD)
+    {
+      HitPointPercentageBonus = new LeveledAbilityField<float>
+      {
+        Base = -0.3f,
+        PerLevel = 0.3f
+      },
+      AttackDamagePercentageBonus = new LeveledAbilityField<float>
+      {
+        Base = -0.3f,
+        PerLevel = 0.3f
+      }
+    });
+
+    SpellSystem.Register(new DeathPact(ABILITY_A0W9_DEATH_PACT_ICON)
+    {
+      Radius = 700.0f,
+      KillEffect = @"Abilities\Spells\Undead\DeathPact\DeathPactTarget.mdl",
+      HealEffect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
+      HealthRestorePercent = 1.25f,
+      ManaRestorePercent = 0.10f
+    });
+
+    SpellSystem.Register(new IceBlockSpell(ABILITY_ZBIB_ICE_BLOCK_SCOURGE_LICH)
+    {
+      DummyUnitTypeId = UNIT_ZBDF_ICE_BLOCK_DISPELLABLE_DUMMY,
+      CastEffectPath = @"Abilities\Spells\Undead\FrostNova\FrostNovaTarget.mdl",
+      IceBlockEffectPath = @"Doodads\Icecrown\Rocks\Icecrown_Crystal\Icecrown_Crystal0.mdl",
+      BuffApplicatorTypeId = ABILITY_ZBRP_ICE_BLOCK_BUFF_APPLICATOR,
+      BuffTypeId = BUFF_ZB3F_ICE_BLOCK
+    });
+
     RegisterArthasSpells();
   }
 
@@ -148,85 +216,13 @@ public static class ScourgeSpellSetup
       UpgradeCondition = unit => unit.UnitType == UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE
     });
 
+    SpellSystem.Register(new DeathPact(ABILITY_A10C_DEATH_PACT_ICON_ARTHAS)
     {
-      var deathPact = new DeathPact(ABILITY_A0W9_DEATH_PACT_ICON)
-      {
-        Radius = 700.0f,
-        KillEffect = @"Abilities\Spells\Undead\DeathPact\DeathPactTarget.mdl",
-        HealEffect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
-        HealthRestorePercent = 1.25f,
-        ManaRestorePercent = 0.10f
-      };
-
-      SpellSystem.Register(deathPact);
-
-      var deathPactarthas = new DeathPact(ABILITY_A10C_DEATH_PACT_ICON_ARTHAS)
-      {
-        Radius = 700.0f,
-        KillEffect = @"Abilities\Spells\Undead\DeathPact\DeathPactTarget.mdl",
-        HealEffect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
-        HealthRestorePercent = 1.5f,
-        ManaRestorePercent = 0.20f
-      };
-
-      SpellSystem.Register(deathPactarthas);
-
-
-      var darkRitual = new DeathPact(ABILITY_A0WP_DARK_RITUAL_ICON)
-      {
-        Radius = 900.0f,
-        KillEffect = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl",
-        HealEffect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl",
-        HealthRestorePercent = 0.25f,
-        ManaRestorePercent = 0.36f
-      };
-
-      SpellSystem.Register(darkRitual);
-    }
-
-
-
-
-    PassiveAbilityManager.Register(new SummonUnitOnCast(UNIT_U00A_SCOURGE_COMMANDER_SCOURGE, ABILITY_ST52_ARMY_OF_THE_DEAD_SCOURGE)
-    {
-      Duration = 45,
-      SummonUnitTypeId = UNIT_NDR2_DARK_MINION_SCOURGE_DEATH_KNIGHT,
-      SummonCount = new LeveledAbilityField<int>
-      {
-        Base = 0,
-        PerLevel = 1
-      },
-      SpecialEffectPath = @"Abilities\Spells\Undead\RaiseSkeletonWarrior\RaiseSkeleton.mdl",
-      ProcChance = 1.0f,
-      AbilityWhitelist = new List<int>
-      {
-        ABILITY_AUDC_DEATH_COIL_RED_BARON_RIVENDARE,
-        ABILITY_A10S_SUMMON_RAMSTEIN_RED_BARON_RIVENDARE,
-        ABILITY_A09Y_DEATH_S_ADVANCE_SCOURGE_RIVENDARE,
-        ABILITY_A07R_UNIVERSAL_SHACKLES_KARGATH
-      }
-    });
-
-    var kelthuzadIds = new[]
-    {
-      UNIT_U00M_MASTER_OF_THE_CULT_OF_THE_DAMNED_SCOURGE_GHOST,
-      UNIT_U001_MASTER_OF_THE_CULT_OF_THE_DAMNED_SCOURGE_NECROMANCER,
-      UNIT_UKTL_ARCHLICH_OF_THE_SCOURGE_SCOURGE_LICH
-    };
-    PassiveAbilityManager.Register(new SummoningMastery(kelthuzadIds, ABILITY_AUAN_ANIMATE_DEAD_KEL_THUZAD)
-    {
-      HitPointPercentageBonus = new LeveledAbilityField<float>
-      {
-        Base = -0.3f,
-        PerLevel = 0.3f
-      },
-      AttackDamagePercentageBonus = new LeveledAbilityField<float>
-      {
-        Base = -0.3f,
-        PerLevel = 0.3f
-      }
-
-
+      Radius = 700.0f,
+      KillEffect = @"Abilities\Spells\Undead\DeathPact\DeathPactTarget.mdl",
+      HealEffect = @"Abilities\Spells\Human\Heal\HealTarget.mdl",
+      HealthRestorePercent = 1.5f,
+      ManaRestorePercent = 0.20f
     });
   }
 }

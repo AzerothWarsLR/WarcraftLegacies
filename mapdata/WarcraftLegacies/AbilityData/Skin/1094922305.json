@@ -31,6 +31,14 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Increases the hit point regeneration of friendly units within a range of \u003CA0CA,Area1\u003E by \u003CA0CA,DataB1\u003E."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 2037408353,
+      "Value": 0
     }
   ]
 }

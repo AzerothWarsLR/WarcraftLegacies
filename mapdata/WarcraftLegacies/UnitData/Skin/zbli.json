@@ -1,0 +1,86 @@
+{
+  "OldId": 1987212398,
+  "NewId": 1768710778,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Scourge Elite)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Lich"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Lich"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Ranged caster elite capable of dealing focused burst damage."
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "units\\undead\\HeroLich\\HeroLich_V1.mdl"
+    },
+    {
+      "Id": 1868786037,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNLichVersion2.blp"
+    },
+    {
+      "Id": 1684960117,
+      "Type": 3,
+      "Value": "HeroLich"
+    },
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1831952757,
+      "Type": 3,
+      "Value": "Abilities\\Weapons\\LichMissile\\LichMissile.mdl"
+    },
+    {
+      "Id": 2054188149,
+      "Type": 2,
+      "Value": 130
+    },
+    {
+      "Id": 2053990773,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Id": 1885430133,
+      "Type": 3,
+      "Value": "medium"
+    },
+    {
+      "Id": 1634759541,
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Undead\\UndeadLargeDeathExplode\\UndeadLargeDeathExplode.mdl"
+    },
+    {
+      "Id": 1919705973,
+      "Value": 200
+    },
+    {
+      "Id": 1651270517,
+      "Value": 255
+    }
+  ]
+}

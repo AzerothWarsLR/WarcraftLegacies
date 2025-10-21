@@ -41,6 +41,7 @@ public static class ScourgeObjectInfo
     yield return new(UNIT_UOBS_OBSIDIAN_STATUE_SCOURGE, 4);
     yield return new(UNIT_UFRO_FROST_WYRM_SCOURGE, 4);
     yield return new(UNIT_H00H_DEATH_KNIGHT_SCOURGE_ELITE, 6);
+    yield return new(UNIT_ZBLI_LICH_SCOURGE_ELITE, 0);
     yield return new(UNIT_UBSP_OBSIDIAN_DESTROYER_SCOURGE, 6);
     yield return new(UNIT_NFGL_PLAGUE_TITAN_SCOURGE, 2);
 
@@ -65,7 +66,6 @@ public static class ScourgeObjectInfo
 
     //Upgrades
     yield return new(UPGRADE_RUBA_BANSHEE_GRANDMASTER_TRAINING_SCOURGE_RESEARCH, Unlimited);
-    //todo list.Add( yield return new(FourCCyield return new("Rubu"); UNLIMITED));
     yield return new(UPGRADE_RUEX_EXHUME_CORPSES_SCOURGE, Unlimited);
     yield return new(UPGRADE_RUFB_FREEZING_BREATH_SCOURGE, Unlimited);
     yield return new(UPGRADE_RUGF_GHOUL_FRENZY_SCOURGE, Unlimited);
@@ -77,5 +77,7 @@ public static class ScourgeObjectInfo
     yield return new(UPGRADE_R06N_IMPROVED_ORB_OF_ANNIHILATION_SCOURGE, Unlimited);
     yield return new(UPGRADE_RUSL_SKELETAL_LONGEVITY, Unlimited);
     yield return new(UPGRADE_RUSM_SKELETAL_MASTERY, Unlimited);
+    yield return new(UPGRADE_ZB74_LICHES_SCOURGE, Unlimited);
+    yield return new(UPGRADE_ZB24_DEATH_KNIGHTS_SCOURGE, Unlimited);
   }
 }
