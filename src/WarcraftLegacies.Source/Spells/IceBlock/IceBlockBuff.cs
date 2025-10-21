@@ -39,7 +39,7 @@ public sealed class IceBlockBuff : BoundBuff
       _effect.Dispose();
     }
 
-    effect.Create(DissipateEffectPath, Target.X, Target.Y);
+    effect.Create(DissipateEffectPath, Target.X, Target.Y).Dispose();
     foreach (var target in Targets)
     {
       target.SetPausedEx(false);
