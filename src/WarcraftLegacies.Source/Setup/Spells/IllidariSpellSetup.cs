@@ -1,7 +1,6 @@
 ﻿using MacroTools.Data;
 using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
-using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.PassiveAbilities;
 using WarcraftLegacies.Source.Spells;
@@ -75,13 +74,10 @@ public static class IllidariSpellSetup
     };
     PassiveAbilityManager.Register(cripplingStrike);
 
-    var addAbilityOnLearn = new AddAbilityOnLearn(ABILITY_A01Q_SHADOW_AURA_AKAMA)
+    SpellSystem.Register(new AddAbilityOnLearn(ABILITY_A01Q_SHADOW_AURA_AKAMA)
     {
-      UnitTypeId = UNIT_NAKA_ELDER_SAGE_ILLIDARI,
-      TargetAbilityId = ABILITY_A01Q_SHADOW_AURA_AKAMA,
       AbilityToAddId = ABILITY_A0Z1_EVASION_AKAMA
-    };
-    SpellSystem.Register(addAbilityOnLearn);
+    });
   }
 }
 
