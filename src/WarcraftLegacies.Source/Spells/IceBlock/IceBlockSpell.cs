@@ -41,16 +41,16 @@ public sealed class IceBlockSpell : Spell
     var ability = caster.GetAbility(Id);
     var radius = ability.GetAreaOfEffect_aare(level - 1);
 
-    var dummyUnit = unit.Create(caster.Owner, DummyUnitTypeId, targetPoint.X, targetPoint.Y);
+    var iceBlockDispelTarget = unit.Create(caster.Owner, DummyUnitTypeId, targetPoint.X, targetPoint.Y);
     var targets = GlobalGroup.EnumUnitsInRange(targetPoint, radius)
-      .Where(x => x != dummyUnit && x.Alive && !x.IsInvulnerable)
+      .Where(x => x != iceBlockDispelTarget && x.Alive && !x.IsInvulnerable)
       .ToList();
 
     DummyCasterManager
       .GetGlobalDummyCaster()
-      .CastUnit(caster, BuffApplicatorTypeId, ORDER_INNER_FIRE, 1, dummyUnit, DummyCastOriginType.Target);
+      .CastUnit(caster, BuffApplicatorTypeId, ORDER_INNER_FIRE, 1, iceBlockDispelTarget, DummyCastOriginType.Target);
 
-    var iceBlockBuff = new IceBlockBuff(caster, dummyUnit)
+    var iceBlockBuff = new IceBlockBuff(caster, iceBlockDispelTarget)
     {
       Targets = targets,
       IceBlockEffectPath = IceBlockEffectPath,
