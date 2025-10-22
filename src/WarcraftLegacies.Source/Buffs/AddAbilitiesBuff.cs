@@ -3,7 +3,7 @@ using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.Buffs;
 
-public sealed class AddSpellOnCastBuff : BoundBuff
+public sealed class AddAbilitiesBuff : BoundBuff
 {
   public IEnumerable<int>? AbilitiesToAdd { get; init; }
 
@@ -30,7 +30,7 @@ public sealed class AddSpellOnCastBuff : BoundBuff
     }
   }
 
-  public AddSpellOnCastBuff(unit caster, unit target, int bindApplicatorId, int bindBuffId) : base(caster, target)
+  public AddAbilitiesBuff(unit caster, unit target, int bindApplicatorId, int bindBuffId) : base(caster, target)
   {
     BindAura(bindApplicatorId, bindBuffId);
   }
