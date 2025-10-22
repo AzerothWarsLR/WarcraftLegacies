@@ -17,7 +17,7 @@ public sealed class QuestZangarmarsh : QuestData
   private readonly List<unit> _rescueUnits;
 
   public QuestZangarmarsh(Rectangle rescueRect, LegendaryHero vashj) : base("Coilfang Reservoir",
-    "Lady Vashj and here Naga were instrumental in securing Outland, and for their deeds received the swamp of Zangarmarsh. It has become overrun in recent times, and must be reclaimed if the Naga are to aid in the fight against the Alliance.",
+    "Lady Vashj and her Naga were instrumental in securing Outland, and for their deeds received the swamp of Zangarmarsh. It has become overrun in recent times, and must be reclaimed if the Naga are to aid in the fight against the Alliance.",
     @"ReplaceableTextures\CommandButtons\BTNIllidariDemonGate.blp")
   {
     AddObjective(new ObjectiveLegendInRect(vashj, rescueRect, "Zangarmarsh"));
