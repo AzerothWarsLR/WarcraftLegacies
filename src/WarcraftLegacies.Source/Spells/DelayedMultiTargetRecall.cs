@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Linq;
-using MacroTools.Buffs;
 using MacroTools.Extensions;
 using MacroTools.Instances;
 using MacroTools.SpellSystem;
 using MacroTools.Utils;
+using WarcraftLegacies.Source.Buffs;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 

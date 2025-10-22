@@ -1,6 +1,6 @@
 ﻿using WCSharp.Buffs;
 
-namespace MacroTools.Buffs;
+namespace WarcraftLegacies.Source.Buffs;
 
 /// <summary>
 /// Causes the buff holder to die when the corresponding <see cref="AnimalCompanionCaster"/> buff is removed.

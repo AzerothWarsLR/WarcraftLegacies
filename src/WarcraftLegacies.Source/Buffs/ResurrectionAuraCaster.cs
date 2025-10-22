@@ -1,6 +1,6 @@
 ﻿using WCSharp.Buffs;
 
-namespace MacroTools.Buffs;
+namespace WarcraftLegacies.Source.Buffs;
 
 public sealed class ResurrectionAuraCaster : Aura<ResurrectionAuraTarget>
 {

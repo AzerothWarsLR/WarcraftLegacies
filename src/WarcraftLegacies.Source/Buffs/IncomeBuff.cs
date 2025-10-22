@@ -1,7 +1,7 @@
 ﻿using MacroTools.Extensions;
 using WCSharp.Buffs;
 
-namespace MacroTools.Buffs;
+namespace WarcraftLegacies.Source.Buffs;
 
 /// <summary>
 /// Increases the owning player's income.

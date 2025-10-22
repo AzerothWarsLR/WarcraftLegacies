@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using WCSharp.Buffs;
 
-namespace MacroTools.Buffs;
+namespace WarcraftLegacies.Source.Buffs;
 
 public sealed class AddSpellOnCastBuff : BoundBuff
 {
