@@ -65,7 +65,7 @@ public static class SpellsSetup
     SpellSystem.Register(seismicShard);
 
 
-    var burningVengeance = new VengeanceAbility(FourCC("O04H"), FourCC("A0OO"))
+    var burningVengeance = new VengeanceTrait(FourCC("O04H"), FourCC("A0OO"))
     {
       AlternateFormId = FourCC("e01A"),
       HitsReviveThreshold = 5,

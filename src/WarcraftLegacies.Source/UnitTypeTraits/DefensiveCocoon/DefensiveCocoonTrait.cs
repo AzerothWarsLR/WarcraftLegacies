@@ -10,7 +10,7 @@ namespace WarcraftLegacies.Source.UnitTypeTraits.DefensiveCocoon;
 /// If they attack enough times while a Spirit, they revive with some health.
 /// Otherwise, they die.
 /// </summary>
-public sealed class DefensiveCocoonAbility : TakeDamageUnitTypeTrait
+public sealed class DefensiveCocoonTrait : TakeDamageUnitTypeTrait
 {
   /// <summary>
   /// If set, this needs to be researched for the ability to work.
@@ -38,11 +38,11 @@ public sealed class DefensiveCocoonAbility : TakeDamageUnitTypeTrait
   public required string ReviveEffect { private get; init; }
 
   /// <summary>
-  /// Initializes a new instance of the <see cref="VengeanceAbility"/> class.
+  /// Initializes a new instance of the <see cref="VengeanceTrait"/> class.
   /// </summary>
   /// <param name="damagedUnitTypeIds">The unit type IDs that can take damage to trigger this effect.</param>
   /// <param name="abilityTypeId">The ability whose level is used to determine the magnitude of the effect.</param>
-  public DefensiveCocoonAbility(IEnumerable<int> damagedUnitTypeIds, int abilityTypeId) : base(damagedUnitTypeIds, abilityTypeId)
+  public DefensiveCocoonTrait(IEnumerable<int> damagedUnitTypeIds, int abilityTypeId) : base(damagedUnitTypeIds, abilityTypeId)
   {
   }
 
