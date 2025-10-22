@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using MacroTools.DummyCasters;
+﻿using MacroTools.DummyCasters;
 using MacroTools.UnitTypeTraits;
-using static MacroTools.Libraries.UnitEventSystem;
+using WarcraftLegacies.Source.Buffs;
+using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits;
 
@@ -40,9 +40,6 @@ public sealed class SpellOnAttack : UnitTypeTrait, IAppliesEffectOnDamage
   /// </summary>
   public int RequiredResearch { get; init; }
 
-  // Tracks cooldown timers for each target
-  private readonly Dictionary<unit, timer> _targetCooldowns = new();
-
   /// <summary>
   /// Initializes a new instance of the <see cref="SpellOnAttack"/> class.
   /// </summary>
@@ -72,10 +69,16 @@ public sealed class SpellOnAttack : UnitTypeTrait, IAppliesEffectOnDamage
       return;
     }
 
-    // Check if target is on cooldown
-    if (Cooldown > 0 && _targetCooldowns.ContainsKey(target))
+    if (Cooldown > 0)
     {
-      return;
+      var buffsOnTarget = BuffSystem.GetBuffsOnUnit(target);
+      foreach (var buff in buffsOnTarget)
+      {
+        if (buff is UnitTypeTraitOnCooldownBuff cooldownBuff && cooldownBuff.Trait == this)
+        {
+          return;
+        }
+      }
     }
 
     // Random chance check
@@ -90,32 +93,12 @@ public sealed class SpellOnAttack : UnitTypeTrait, IAppliesEffectOnDamage
     // Start cooldown timer
     if (Cooldown > 0)
     {
-      StartCooldownTimer(target);
-    }
-  }
-
-  private void StartCooldownTimer(unit target)
-  {
-    timer timer = timer.Create();
-    _targetCooldowns[target] = timer;
-
-    // Set timer expiration action
-    timer.Start(Cooldown, false, () =>
-    {
-      _targetCooldowns.Remove(target);
-      timer.Dispose();
-    });
-
-    // Register unit death event to clean up timer when unit dies
-    RegisterDeathEvent(target, () =>
-    {
-      if (_targetCooldowns.TryGetValue(target, out var activeTimer))
+      BuffSystem.Add(new UnitTypeTraitOnCooldownBuff(caster, target)
       {
-        activeTimer.Pause();
-        activeTimer.Dispose();
-        _targetCooldowns.Remove(target);
-      }
-    });
+        Trait = this,
+        Duration = Cooldown
+      });
+    }
   }
 
   private void DoSpellOnTarget(unit caster, unit target) =>
