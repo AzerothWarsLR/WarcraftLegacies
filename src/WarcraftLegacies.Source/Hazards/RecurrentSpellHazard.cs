@@ -1,5 +1,5 @@
 ﻿using MacroTools.DummyCasters;
-using MacroTools.Spells;
+using MacroTools.Hazards;
 
 namespace WarcraftLegacies.Source.Hazards;
 

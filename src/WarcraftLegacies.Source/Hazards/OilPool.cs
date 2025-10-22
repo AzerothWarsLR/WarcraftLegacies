@@ -1,5 +1,5 @@
 ﻿using System;
-using MacroTools.Spells;
+using MacroTools.Hazards;
 using WarcraftLegacies.Source.Powers;
 using WCSharp.Shared.Data;
 
