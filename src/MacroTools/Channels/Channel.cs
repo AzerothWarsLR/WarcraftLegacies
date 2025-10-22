@@ -1,7 +1,7 @@
 ﻿using System;
 using WCSharp.Events;
 
-namespace MacroTools.ChannelSystem;
+namespace MacroTools.Channels;
 
 /// <summary>
 ///   A spell effect which has to be continually maintained by a caster. If the caster is interrupted, the effect ends.

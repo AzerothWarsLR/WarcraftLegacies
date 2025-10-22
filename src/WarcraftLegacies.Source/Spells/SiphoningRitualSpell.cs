@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using MacroTools.ChannelSystem;
+using MacroTools.Channels;
 using MacroTools.Spells;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Channels;

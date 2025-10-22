@@ -1,5 +1,5 @@
 ﻿using System;
-using MacroTools.ChannelSystem;
+using MacroTools.Channels;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
 using WCSharp.Lightnings;
