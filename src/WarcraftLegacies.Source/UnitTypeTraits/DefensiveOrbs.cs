@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Data;
-using MacroTools.Missiles;
 using MacroTools.UnitTypeTraits;
+using WarcraftLegacies.Source.Missiles;
 using WCSharp.Missiles;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits;

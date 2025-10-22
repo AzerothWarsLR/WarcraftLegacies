@@ -4,7 +4,7 @@ using WCSharp.Events;
 using WCSharp.Missiles;
 using WCSharp.Shared.Extensions;
 
-namespace MacroTools.Missiles;
+namespace WarcraftLegacies.Source.Missiles;
 
 /// <summary>
 /// Arcane orb that rotates around the caster.
