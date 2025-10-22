@@ -3,7 +3,7 @@ using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits.SpellConduction;
 
-public sealed class SpellConductionAbility : UnitTypeTrait, IEffectOnCreated
+public sealed class SpellConductionTrait : UnitTypeTrait, IEffectOnCreated
 {
   /// <summary>
   /// The research required for this ability to work.
@@ -26,7 +26,7 @@ public sealed class SpellConductionAbility : UnitTypeTrait, IEffectOnCreated
   public required int Radius { get; init; }
 
   /// <inheritdoc />
-  public SpellConductionAbility(int unitTypeId) : base(unitTypeId)
+  public SpellConductionTrait(int unitTypeId) : base(unitTypeId)
   {
   }
 

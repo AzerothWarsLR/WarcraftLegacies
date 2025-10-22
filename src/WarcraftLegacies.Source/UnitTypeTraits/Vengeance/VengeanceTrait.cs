@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.UnitTypeTraits.Vengeance;
 /// If they attack enough times while a Spirit, they revive with some health.
 /// Otherwise, they die.
 /// </summary>
-public sealed class VengeanceAbility : TakeDamageUnitTypeTrait
+public sealed class VengeanceTrait : TakeDamageUnitTypeTrait
 {
   /// <summary>
   /// How much extra damage the vengenace form has.
@@ -46,7 +46,7 @@ public sealed class VengeanceAbility : TakeDamageUnitTypeTrait
   public int HitsReviveThreshold { private get; init; }
 
   /// <summary>
-  /// The visual effect that occurs 
+  /// The visual effect that occurs
   /// </summary>
   public string? ReviveEffect { private get; init; }
 
@@ -76,11 +76,11 @@ public sealed class VengeanceAbility : TakeDamageUnitTypeTrait
   }
 
   /// <summary>
-  /// Initializes a new instance of the <see cref="VengeanceAbility"/> class.
+  /// Initializes a new instance of the <see cref="VengeanceTrait"/> class.
   /// </summary>
   /// <param name="damagedUnitTypeId">The unit type ID that can take damage to trigger this effect.</param>
   /// <param name="abilityTypeId">The ability whose level is used to determine the magnitude of the effect.</param>
-  public VengeanceAbility(int damagedUnitTypeId, int abilityTypeId) : base(damagedUnitTypeId, abilityTypeId)
+  public VengeanceTrait(int damagedUnitTypeId, int abilityTypeId) : base(damagedUnitTypeId, abilityTypeId)
   {
   }
 }

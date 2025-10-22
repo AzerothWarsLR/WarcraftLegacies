@@ -27,7 +27,7 @@ public static class SentinelSpellSetup
       }
     });
 
-    var maievVengeance = new VengeanceAbility(UNIT_EWRD_LEADER_OF_THE_WATCHERS_SENTINELS,
+    var maievVengeance = new VengeanceTrait(UNIT_EWRD_LEADER_OF_THE_WATCHERS_SENTINELS,
 ABILITY_A017_TAKE_VENGEANCE_SENTINELS_MAIEV)
     {
       AlternateFormId = UNIT_ESPV_AVATAR_OF_VENGEANCE_SENTINELS_MAIEV,

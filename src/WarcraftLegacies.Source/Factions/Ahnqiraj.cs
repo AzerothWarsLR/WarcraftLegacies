@@ -103,7 +103,7 @@ public sealed class Ahnqiraj : Faction
       UNIT_U00Z_OBSIDIAN_DESTROYER
     };
 
-    UnitTypeTraitRegistry.Register(new DefensiveCocoonAbility(cocoonHeroes, ABILITY_ZBEG_DEFENSIVE_COCOON_AHN_QIRAJ)
+    UnitTypeTraitRegistry.Register(new DefensiveCocoonTrait(cocoonHeroes, ABILITY_ZBEG_DEFENSIVE_COCOON_AHN_QIRAJ)
     {
       MaximumHealthPercentage = 0.5f,
       Duration = 45,
@@ -127,7 +127,7 @@ public sealed class Ahnqiraj : Faction
       Target = InstantKill.KillTarget.Self
     });
 
-    UnitTypeTraitRegistry.Register(new SpellConductionAbility(UNIT_SL2O_OBSIDIAN_ERADICATOR_CTHUN)
+    UnitTypeTraitRegistry.Register(new SpellConductionTrait(UNIT_SL2O_OBSIDIAN_ERADICATOR_CTHUN)
     {
       RedirectionPercentage = 0.35f,
       RedirectableAttackTypes = new attacktype[]
