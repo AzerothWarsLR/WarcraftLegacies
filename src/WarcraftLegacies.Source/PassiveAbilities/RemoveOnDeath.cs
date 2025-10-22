@@ -1,4 +1,4 @@
-﻿using MacroTools.PassiveAbilitySystem;
+﻿using MacroTools.UnitTypeTraits;
 using WCSharp.Effects;
 
 namespace WarcraftLegacies.Source.PassiveAbilities;

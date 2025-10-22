@@ -1,4 +1,4 @@
-﻿namespace MacroTools.PassiveAbilitySystem;
+﻿namespace MacroTools.UnitTypeTraits;
 
 /// <summary>
 /// Provides methods for responding to a unit summoning another unit.

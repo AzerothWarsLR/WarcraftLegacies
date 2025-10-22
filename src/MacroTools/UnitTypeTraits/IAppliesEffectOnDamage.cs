@@ -1,4 +1,4 @@
-﻿namespace MacroTools.PassiveAbilitySystem;
+﻿namespace MacroTools.UnitTypeTraits;
 
 /// <summary>
 /// Provides methods for responding to damage events with some kind of effect.

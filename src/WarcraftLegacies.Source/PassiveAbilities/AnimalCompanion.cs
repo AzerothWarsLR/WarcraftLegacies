@@ -1,4 +1,4 @@
-﻿using MacroTools.PassiveAbilitySystem;
+﻿using MacroTools.UnitTypeTraits;
 using WarcraftLegacies.Source.Buffs;
 using WCSharp.Buffs;
 

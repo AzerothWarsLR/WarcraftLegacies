@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MacroTools.PassiveAbilitySystem;
+namespace MacroTools.UnitTypeTraits;
 
 /// <summary>
 /// A passive ability attached to a specific unit type.

@@ -1,6 +1,6 @@
 ﻿using MacroTools.DummyCasters;
-using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
+using MacroTools.UnitTypeTraits;
 
 namespace WarcraftLegacies.Source.PassiveAbilities;
 

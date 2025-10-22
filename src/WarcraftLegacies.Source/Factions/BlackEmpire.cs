@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using MacroTools.FactionSystem;
-using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.Systems;
+using MacroTools.UnitTypeTraits;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.PassiveAbilities;
 using WarcraftLegacies.Source.Quests.BlackEmpire;

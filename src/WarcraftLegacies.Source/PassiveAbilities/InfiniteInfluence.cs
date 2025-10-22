@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using MacroTools.PassiveAbilitySystem;
+using MacroTools.UnitTypeTraits;
 using MacroTools.Utils;
 using WCSharp.Events;
 using WCSharp.Shared.Data;

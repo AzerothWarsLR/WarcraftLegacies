@@ -6,8 +6,8 @@ using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
-using MacroTools.PassiveAbilitySystem;
 using MacroTools.QuestSystem;
+using MacroTools.UnitTypeTraits;
 using WarcraftLegacies.Source.Setup;
 using WCSharp.Shared.Data;
 

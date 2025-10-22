@@ -1,9 +1,9 @@
 ﻿using MacroTools.CommandSystem;
 using MacroTools.ControlPointSystem;
 using MacroTools.Mechanics;
-using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
 using MacroTools.Save;
+using MacroTools.UnitTypeTraits;
 using MacroTools.UserInterface;
 
 namespace TestMap.Source.Setup;

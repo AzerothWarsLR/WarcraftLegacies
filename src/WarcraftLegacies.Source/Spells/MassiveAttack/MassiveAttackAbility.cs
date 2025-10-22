@@ -1,6 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Libraries;
-using MacroTools.PassiveAbilitySystem;
+using MacroTools.UnitTypeTraits;
 using WarcraftLegacies.Source.PassiveAbilities;
 using WCSharp.Missiles;
 

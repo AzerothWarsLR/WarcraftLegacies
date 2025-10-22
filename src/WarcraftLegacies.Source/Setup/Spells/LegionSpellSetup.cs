@@ -1,6 +1,6 @@
 ﻿using MacroTools.Data;
-using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
+using MacroTools.UnitTypeTraits;
 using WarcraftLegacies.Source.PassiveAbilities;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.HealingWavePlus;

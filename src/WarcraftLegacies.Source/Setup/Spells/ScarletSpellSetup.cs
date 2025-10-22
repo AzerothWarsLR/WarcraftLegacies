@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
+using MacroTools.UnitTypeTraits;
 using WarcraftLegacies.Source.PassiveAbilities;
 using WarcraftLegacies.Source.Spells;
 

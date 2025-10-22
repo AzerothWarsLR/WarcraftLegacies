@@ -1,4 +1,4 @@
-﻿using MacroTools.PassiveAbilitySystem;
+﻿using MacroTools.UnitTypeTraits;
 using MacroTools.Utils;
 using WCSharp.Effects;
 

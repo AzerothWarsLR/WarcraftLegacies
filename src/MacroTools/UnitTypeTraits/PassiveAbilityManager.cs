@@ -4,7 +4,7 @@ using System.Linq;
 using MacroTools.Utils;
 using WCSharp.Events;
 
-namespace MacroTools.PassiveAbilitySystem;
+namespace MacroTools.UnitTypeTraits;
 
 /// <summary>
 /// Responsible for registering the events that allow <see cref="PassiveAbility"/> instances to work.

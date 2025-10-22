@@ -1,4 +1,4 @@
-﻿namespace MacroTools.PassiveAbilitySystem;
+﻿namespace MacroTools.UnitTypeTraits;
 
 /// <summary>
 /// Called when a unit of the specified type is created or revived.

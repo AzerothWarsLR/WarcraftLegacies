@@ -1,4 +1,4 @@
-﻿using MacroTools.PassiveAbilitySystem;
+﻿using MacroTools.UnitTypeTraits;
 using WCSharp.Buffs;
 
 namespace MacroTools.Mechanics.DemonGates;

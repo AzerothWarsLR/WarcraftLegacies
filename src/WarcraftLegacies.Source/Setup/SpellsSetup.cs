@@ -1,5 +1,5 @@
-﻿using MacroTools.PassiveAbilitySystem;
-using MacroTools.Spells;
+﻿using MacroTools.Spells;
+using MacroTools.UnitTypeTraits;
 using WarcraftLegacies.Source.PassiveAbilities.Vengeance;
 using WarcraftLegacies.Source.Setup.Spells;
 using WarcraftLegacies.Source.Spells;

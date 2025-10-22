@@ -1,5 +1,5 @@
 ﻿using MacroTools.Data;
-using MacroTools.PassiveAbilitySystem;
+using MacroTools.UnitTypeTraits;
 using WarcraftLegacies.Source.PassiveAbilities;
 
 namespace WarcraftLegacies.Source.Setup.Spells;
