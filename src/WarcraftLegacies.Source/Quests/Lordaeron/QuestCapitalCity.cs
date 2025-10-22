@@ -7,9 +7,9 @@ using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
-using MacroTools.Powers;
 using MacroTools.QuestSystem;
 using MacroTools.Systems;
+using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Setup.Legends;
 using WCSharp.Shared.Data;
 

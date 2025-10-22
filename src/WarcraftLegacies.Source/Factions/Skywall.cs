@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using MacroTools.FactionSystem;
-using MacroTools.Powers;
 using MacroTools.ResearchSystems;
 using MacroTools.Spells;
 using MacroTools.UnitTypeTraits;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.Powers;
 using WarcraftLegacies.Source.Quests.Skywall;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;

@@ -2,7 +2,7 @@
 using MacroTools.FactionSystem;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.Powers;
+namespace WarcraftLegacies.Source.Powers;
 
 /// <summary>
 ///   Grants the <see cref="Faction" /> permanent visibility over one or more <see cref="Rectangle" />s.
