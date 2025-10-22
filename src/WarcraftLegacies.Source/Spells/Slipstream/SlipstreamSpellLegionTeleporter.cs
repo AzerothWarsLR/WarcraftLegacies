@@ -2,7 +2,7 @@
 using MacroTools.ChannelSystem;
 using MacroTools.Data;
 using MacroTools.Extensions;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells.Slipstream;

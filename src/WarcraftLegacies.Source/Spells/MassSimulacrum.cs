@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 using MacroTools.Utils;
 using WarcraftLegacies.Source.Buffs;
 using WCSharp.Buffs;

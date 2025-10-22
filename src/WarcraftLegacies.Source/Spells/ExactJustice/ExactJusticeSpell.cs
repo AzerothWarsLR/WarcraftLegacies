@@ -1,5 +1,5 @@
 ﻿using MacroTools.ChannelSystem;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells.ExactJustice;

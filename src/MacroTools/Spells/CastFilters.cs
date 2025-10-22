@@ -1,6 +1,6 @@
 ﻿using MacroTools.Extensions;
 
-namespace MacroTools.SpellSystem;
+namespace MacroTools.Spells;
 
 public static class CastFilters
 {

@@ -1,6 +1,6 @@
 ﻿using MacroTools.Data;
 using MacroTools.PassiveAbilitySystem;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.MassiveAttack;
 using WarcraftLegacies.Source.Spells.Slipstream;

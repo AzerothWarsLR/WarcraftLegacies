@@ -1,6 +1,6 @@
 ﻿using WCSharp.Shared.Data;
 
-namespace MacroTools.SpellSystem;
+namespace MacroTools.Spells;
 
 /// <summary>
 /// A castable ability which can be invoked by a unit.

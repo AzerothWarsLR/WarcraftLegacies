@@ -1,6 +1,6 @@
 ﻿using System;
 using MacroTools.DummyCasters;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 using MacroTools.Utils;
 using WCSharp.Effects;
 using WCSharp.Shared.Data;

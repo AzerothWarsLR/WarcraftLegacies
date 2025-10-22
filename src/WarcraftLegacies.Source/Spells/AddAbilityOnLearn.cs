@@ -1,4 +1,4 @@
-﻿using MacroTools.SpellSystem;
+﻿using MacroTools.Spells;
 
 namespace WarcraftLegacies.Source.Spells;
 

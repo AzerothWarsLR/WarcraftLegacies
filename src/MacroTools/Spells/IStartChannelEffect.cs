@@ -1,6 +1,6 @@
 ﻿using WCSharp.Shared.Data;
 
-namespace MacroTools.SpellSystem;
+namespace MacroTools.Spells;
 
 public interface IStartChannelEffect
 {

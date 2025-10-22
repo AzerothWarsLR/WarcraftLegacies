@@ -1,4 +1,4 @@
-﻿namespace MacroTools.SpellSystem;
+﻿namespace MacroTools.Spells;
 
 /// <summary>
 /// An effect that occurs when a particular spell is learned.
