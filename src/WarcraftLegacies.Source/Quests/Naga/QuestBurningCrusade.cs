@@ -16,13 +16,10 @@ public sealed class QuestBurningCrusade : QuestData
       AddObjective(new ObjectiveCapitalDead(capital));
     }
 
-    ResearchId = UPGRADE_R08W_QUEST_COMPLETED_THE_BURNING_CRUSADE;
+    Knowledge = 25;
   }
 
   /// <inheritdoc/>
   public override string RewardFlavour =>
     "Stormwind and Ironforge lie shattered, their armies broken before they could reach the heart of Outland. With the Alliance in ruin, the Illidari have secured their future.";
-
-  /// <inheritdoc/>
-  protected override string RewardDescription => $"Learn to train Naj'entus from the {GetObjectName(UNIT_NNAD_ALTAR_OF_THE_BETRAYER_ILLIDARI_ALTAR)}";
 }
