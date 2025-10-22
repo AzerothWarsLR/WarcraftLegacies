@@ -138,7 +138,7 @@ public sealed class Skywall : Faction
       DummyAbilityId = ABILITY_A0XY_EARTH_PROTECTION_HERO_DUMMY,
       DummyAbilityOrderId = ORDER_ROAR
     };
-    SpellSystem.Register(earthProtectionHero);
+    SpellRegistry.Register(earthProtectionHero);
 
     var stormSurge = new MassAnySpell(ABILITY_A104_STORM_SURGE_SKYWALL)
     {
@@ -151,7 +151,7 @@ public sealed class Skywall : Faction
       TargetType = SpellTargetType.Point,
       CastFilter = CastFilters.IsTargetEnemyAndAlive
     };
-    SpellSystem.Register(stormSurge);
+    SpellRegistry.Register(stormSurge);
 
     var massEnsnare = new MassAnySpell(ABILITY_A01N_MASS_ENSNARE_SKYWALL)
     {
@@ -162,13 +162,13 @@ public sealed class Skywall : Faction
       CastFilter = CastFilters.IsTargetEnemyAndAlive,
       TargetType = SpellTargetType.Point
     };
-    SpellSystem.Register(massEnsnare);
+    SpellRegistry.Register(massEnsnare);
 
     var whimOfTheWinds = new WhimOfTheWinds(ABILITY_WOTW_WHIM_OF_THE_WINDS_SKYWALL);
-    SpellSystem.Register(whimOfTheWinds);
+    SpellRegistry.Register(whimOfTheWinds);
 
     var warpedMalediction = new WarpedMalediction(ABILITY_WMTP_WARPED_MALEDICTION_SKYWALL);
-    SpellSystem.Register(warpedMalediction);
+    SpellRegistry.Register(warpedMalediction);
 
 
   }

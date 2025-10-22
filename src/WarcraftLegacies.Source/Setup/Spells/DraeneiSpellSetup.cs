@@ -19,7 +19,7 @@ public static class DraeneiSpellSetup
     var slipstreamArgusTargetPoint = Regions.SlipstreamArgusTarget.GetRandomPoint();
     var slipstreamAzuremystTargetPoint = new Point(-20940, 10412);
 
-    SpellSystem.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0P9_PORTAL_TO_AZUREMYST_DRAENEI)
+    SpellRegistry.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0P9_PORTAL_TO_AZUREMYST_DRAENEI)
     {
       PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
       OpeningDelay = 20,
@@ -28,7 +28,7 @@ public static class DraeneiSpellSetup
       TargetLocation = slipstreamAzuremystTargetPoint,
       Color = new Color(155, 250, 50, 255)
     });
-    SpellSystem.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0RB_PORTAL_TO_ARGUS_DRAENEI)
+    SpellRegistry.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0RB_PORTAL_TO_ARGUS_DRAENEI)
     {
       PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
       OpeningDelay = 20,
@@ -38,7 +38,7 @@ public static class DraeneiSpellSetup
       Color = new Color(255, 50, 50, 255)
     });
 
-    SpellSystem.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0SR_PORTAL_TO_TEMPEST_KEEP_DRAENEI)
+    SpellRegistry.Register(new SlipstreamSpellSpecificOriginAndDestination(ABILITY_A0SR_PORTAL_TO_TEMPEST_KEEP_DRAENEI)
     {
       PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
       OpeningDelay = 20,
@@ -65,7 +65,7 @@ public static class DraeneiSpellSetup
       StunOrderId = ORDER_CURSE,
       SpecialEffect = @"war3mapImported\FrostNova.mdx"
     };
-    SpellSystem.Register(warStompAdal);
+    SpellRegistry.Register(warStompAdal);
 
     var summonGateway = new SummonUnitsTarget(ABILITY_A0LX_GATEWAY_REINFORCEMENT_DRAENEI)
     {
@@ -74,7 +74,7 @@ public static class DraeneiSpellSetup
       Radius = 50,
       Duration = 0,
     };
-    SpellSystem.Register(summonGateway);
+    SpellRegistry.Register(summonGateway);
 
     var blessedGround = new BlessedGroundSpell(ABILITY_A12V_BLESSED_GROUND_DRAENEI)
     {
@@ -86,13 +86,13 @@ public static class DraeneiSpellSetup
       Radius = 200.0f,
       HealEffectPath = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
     };
-    SpellSystem.Register(blessedGround);
+    SpellRegistry.Register(blessedGround);
 
 
     var manaSyphon2 = new GrantMana(ABILITY_ADMS_RESTORE_MANA_DRAENEI_CASTER_BUILDING)
     {
       ManaToGrant = 240
     };
-    SpellSystem.Register(manaSyphon2);
+    SpellRegistry.Register(manaSyphon2);
   }
 }

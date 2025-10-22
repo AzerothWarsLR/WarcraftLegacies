@@ -32,7 +32,7 @@ public static class FelHordeSpellSetup
         ABILITY_AEME_ASCENDANCE_TEAL_ZULUHED
       }
     };
-    SpellSystem.Register(ascendance);
+    SpellRegistry.Register(ascendance);
 
     var healingWavePlusHero = new HealingWavePlus(ABILITY_HWP4_ENERGY_WAVE_TERON)
     {
@@ -46,7 +46,7 @@ public static class FelHordeSpellSetup
       HealingEffect = @"",
       TargetMarkEffect = @""
     };
-    SpellSystem.Register(healingWavePlusHero);
+    SpellRegistry.Register(healingWavePlusHero);
 
 
     var warStompKazzak = new Stomp(ABILITY_A0AW_WAR_STOMP_BLUE_DOOM_GUARD_TEAL_KAZZAK)
@@ -58,7 +58,7 @@ public static class FelHordeSpellSetup
       StunOrderId = ORDER_THUNDERBOLT,
       SpecialEffect = @"Abilities\Spells\Orc\WarStomp\WarStompCaster.mdl"
     };
-    SpellSystem.Register(warStompKazzak);
+    SpellRegistry.Register(warStompKazzak);
 
     UnitTypeTraitRegistry.Register(new SummonUnitOnDeath(UNIT_NCHG_FEL_GRUNT_FEL)
     {
@@ -84,7 +84,7 @@ public static class FelHordeSpellSetup
       DamageMultStructure = 1
     });
 
-    SpellSystem.Register(new Devour(ABILITY_A0TU_DEVOUR_BLACK_DRAKE)
+    SpellRegistry.Register(new Devour(ABILITY_A0TU_DEVOUR_BLACK_DRAKE)
     {
       PercentageOfMaxHealth = 0.5f
     });
@@ -93,6 +93,6 @@ public static class FelHordeSpellSetup
     {
       PercentageDamage = 0.06f
     };
-    SpellSystem.Register(unholyArmor);
+    SpellRegistry.Register(unholyArmor);
   }
 }

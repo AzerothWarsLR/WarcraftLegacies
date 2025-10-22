@@ -20,7 +20,7 @@ public static class LordaeronSpellSetup
       StunOrderId = ORDER_CRIPPLE,
       SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
     };
-    SpellSystem.Register(consecration);
+    SpellRegistry.Register(consecration);
 
     var solarJudgement = new SolarJudgementSpell(ABILITY_A01F_SOLAR_JUDGEMENT_LORDAERON_ARTHAS)
     {
@@ -35,7 +35,7 @@ public static class LordaeronSpellSetup
       EffectPath = "Shining Flare.mdx",
       EffectHealPath = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
     };
-    SpellSystem.Register(solarJudgement);
+    SpellRegistry.Register(solarJudgement);
 
     var exactJustice = new ExactJusticeSpell(ABILITY_A097_EXACT_JUSTICE_PURPLE_UTHER)
     {
@@ -57,7 +57,7 @@ public static class LordaeronSpellSetup
         AlphaFade = 0.5f
       }
     };
-    SpellSystem.Register(exactJustice);
+    SpellRegistry.Register(exactJustice);
 
     var willoftheAshbringer = new NoTargetSpellOnAttack(UNIT_H01J_THE_ASHBRINGER_LORDAERON,
       ABILITY_A122_WILL_OF_THE_ASHBRINGER_MOGRAINE)

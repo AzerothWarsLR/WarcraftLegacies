@@ -15,7 +15,7 @@ public static class KulTirasSpellSetup
   /// </summary>
   public static void Setup()
   {
-    SpellSystem.Register(new WaygateOpen(ABILITY_A0LM_OPEN_SHIP)
+    SpellRegistry.Register(new WaygateOpen(ABILITY_A0LM_OPEN_SHIP)
     {
       InteriorWaygateUnitTypeId = UNIT_H03V_ENTRANCE_PORTAL,
       ExteriorWaygateUnitTypeId = UNIT_H05T_INSTANCE_ENTRANCE_PORTAL,
@@ -23,7 +23,7 @@ public static class KulTirasSpellSetup
       GetInteriorWaygatePosition = () => Regions.ShipInside.Center
     });
 
-    SpellSystem.Register(new ChannelAnySpell(ABILITY_A0S5_BOMBING_RUN_STORMWIND_DUMMY)
+    SpellRegistry.Register(new ChannelAnySpell(ABILITY_A0S5_BOMBING_RUN_STORMWIND_DUMMY)
     {
       DummyAbilityId = ABILITY_A0S1_BOMBING_RUN_STORMWIND,
       DummyAbilityOrderId = ORDER_LOCUST_SWARM,
@@ -41,7 +41,7 @@ public static class KulTirasSpellSetup
       StunOrderId = ORDER_SLEEP,
       SpecialEffect = @"Abilities\Spells\Other\HowlOfTerror\HowlCaster.mdl"
     };
-    SpellSystem.Register(warStompMeredith);
+    SpellRegistry.Register(warStompMeredith);
 
     var scattershot = new MassAnySpell(ABILITY_A0GP_SCATTERSHOT_KUL_TIRAS_LADY_ASHVANE)
     {
@@ -52,6 +52,6 @@ public static class KulTirasSpellSetup
       TargetType = SpellTargetType.Point,
       DummyCastOriginType = DummyCastOriginType.Caster
     };
-    SpellSystem.Register(scattershot);
+    SpellRegistry.Register(scattershot);
   }
 }

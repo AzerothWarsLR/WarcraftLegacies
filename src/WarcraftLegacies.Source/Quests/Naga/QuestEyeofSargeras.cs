@@ -58,7 +58,7 @@ public sealed class QuestEyeofSargeras : QuestData
       LearnEffectPath = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl",
       UnitTypeId = UNIT_EEVM_DEMON_HUNTER_MORPHED_LEVEL_1_ILLIDARI
     };
-    SpellSystem.Register(permanentMetamorphosis);
+    SpellRegistry.Register(permanentMetamorphosis);
   }
 
   private void ReplaceMetamorphosisOnIllidan()

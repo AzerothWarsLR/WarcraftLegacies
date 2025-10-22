@@ -10,7 +10,7 @@ namespace MacroTools.Spells;
 /// Provides a way to extend the functionality of existing Warcraft 3 spells and passive abilities
 /// by adding extra code on top of their normal effects.
 /// </summary>
-public static class SpellSystem
+public static class SpellRegistry
 {
   private static readonly Dictionary<int, Spell> _spellsByAbilityId = new();
 
@@ -34,7 +34,7 @@ public static class SpellSystem
   }
 
   /// <summary>
-  ///   Registers the provided <see cref="Spell"/> to the <see cref="SpellSystem"/>, causing its functionality
+  ///   Registers the provided <see cref="Spell"/> to the <see cref="SpellRegistry"/>, causing its functionality
   /// to be invoked when a Warcraft 3 spell matching its IDs is used.
   /// </summary>
   public static void Register(Spell spell)

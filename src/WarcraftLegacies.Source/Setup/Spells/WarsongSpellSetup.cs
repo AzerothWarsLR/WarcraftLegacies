@@ -29,7 +29,7 @@ public static class WarsongSpellSetup
       EffectTarget = @"Abilities\Spells\Other\Charm\CharmTarget.mdl",
       EffectScaleTarget = 0.5f
     };
-    SpellSystem.Register(voodooHex);
+    SpellRegistry.Register(voodooHex);
 
     var resoluteHeart = new ResoluteHeart(UNIT_O06L_WARLORD_OF_THE_WARSONG_CLAN_WARSONG,
       ABILITY_A0TY_RESOLUTE_HEART_ICON)
@@ -53,7 +53,7 @@ public static class WarsongSpellSetup
       DamageBonusBase = -0.15F,
       DamageBonusLevel = 0.15F
     };
-    SpellSystem.Register(stormEarthandFire);
+    SpellRegistry.Register(stormEarthandFire);
     //Todo: inappropriately named
   }
 }

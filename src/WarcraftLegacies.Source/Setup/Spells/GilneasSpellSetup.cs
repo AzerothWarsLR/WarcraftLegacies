@@ -22,6 +22,6 @@ public static class GilneasSpellSetup
         ABILITY_ST8K_TESS_DAMAGE_TESS_GREYMANE_VANISH_DUMMY,
       }
     };
-    SpellSystem.Register(vanish);
+    SpellRegistry.Register(vanish);
   }
 }

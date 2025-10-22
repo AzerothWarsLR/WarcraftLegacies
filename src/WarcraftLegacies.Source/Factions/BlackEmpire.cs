@@ -109,7 +109,7 @@ public sealed class BlackEmpire : Faction
       StunOrderId = ORDER_SHADOWSTRIKE,
       SpecialEffect = @"Abilities\Weapons\ChimaeraAcidMissile\ChimaeraAcidMissile.mdl"
     };
-    SpellSystem.Register(poisonYor);
+    SpellRegistry.Register(poisonYor);
 
     var genesisAttack = new SpellOnAttack(UNIT_U029_STYGIAN_HULK_NZOTH,
       ABILITY_ABES_GENESIS_ATTACK_ICON_STYGIAN_HULK)
@@ -138,7 +138,7 @@ ABILITY_ABEV_SHADOW_VEIL)
       CastFilter = CastFilters.IsTargetOrganicAndAlive,
       TargetType = SpellTargetType.None
     };
-    SpellSystem.Register(shadowVeilSpell);
+    SpellRegistry.Register(shadowVeilSpell);
 
     var paralysingFear = new SpellOnAttack(UNIT_O01G_BRUTE_NZOTH,
       ABILITY_ABPF_PARALYSING_FEAR)

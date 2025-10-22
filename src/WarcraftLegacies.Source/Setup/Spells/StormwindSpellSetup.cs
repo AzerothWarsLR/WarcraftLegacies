@@ -26,7 +26,7 @@ public static class StormwindSpellSetup
     };
     UnitTypeTraitRegistry.Register(legendaryWarrior);
 
-    SpellSystem.Register(new AnySpellOnTarget(ABILITY_A12Z_RALLYING_BANNER_STORMWIND_DUMMY)
+    SpellRegistry.Register(new AnySpellOnTarget(ABILITY_A12Z_RALLYING_BANNER_STORMWIND_DUMMY)
     {
       DummyAbilityId = ABILITY_A130_RESURRECTION_STORMWIND_CHAMPION_SINGLE,
       DummyAbilityOrderId = ORDER_RESURRECTION,
@@ -41,12 +41,12 @@ public static class StormwindSpellSetup
       Radius = 500f,
       Effect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
     };
-    SpellSystem.Register(electricStrike);
+    SpellRegistry.Register(electricStrike);
 
     var manaSyphon = new GrantMana(ABILITY_A0RG_RESTORE_MANA_STORMWIND_MAGE_TOWER)
     {
       ManaToGrant = 250
     };
-    SpellSystem.Register(manaSyphon);
+    SpellRegistry.Register(manaSyphon);
   }
 }

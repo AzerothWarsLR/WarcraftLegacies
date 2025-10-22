@@ -20,7 +20,7 @@ public static class ScourgeSpellSetup
   /// </summary>
   public static void Setup()
   {
-    SpellSystem.Register(new SingleTargetRecall(ABILITY_A0W8_RECALL_FROZEN_THRONE));
+    SpellRegistry.Register(new SingleTargetRecall(ABILITY_A0W8_RECALL_FROZEN_THRONE));
 
     UnitTypeTraitRegistry.Register(new PersistentSoul(UNIT_N009_REVENANT_SCOURGE,
       ABILITY_A05L_PERSISTENT_SOUL_SCOURGE_REVENANT)
@@ -40,7 +40,7 @@ public static class ScourgeSpellSetup
       CastFilter = CastFilters.IsTargetOrganicAndAlive,
       TargetType = SpellTargetType.Point
     };
-    SpellSystem.Register(massUnholyFrenzy);
+    SpellRegistry.Register(massUnholyFrenzy);
 
     var massFrostArmor = new MassAnySpell(ABILITY_A13R_MASS_FROST_ARMOR_KEL_THUZAD)
     {
@@ -50,7 +50,7 @@ public static class ScourgeSpellSetup
       CastFilter = CastFilters.IsTargetOrganicAndAlive,
       TargetType = SpellTargetType.Point
     };
-    SpellSystem.Register(massFrostArmor);
+    SpellRegistry.Register(massFrostArmor);
 
     var rendSoul = new RendSoul(ABILITY_ZB01_REND_SOUL_KEL_THUZAD_LICH)
     {
@@ -61,7 +61,7 @@ public static class ScourgeSpellSetup
       EffectCaster = @"Abilities\Spells\Undead\DarkRitual\DarkRitualCaster.mdl",
       Duration = 45
     };
-    SpellSystem.Register(rendSoul);
+    SpellRegistry.Register(rendSoul);
 
     UnitTypeTraitRegistry.Register(new RemoveOnDeath(UNIT_N094_ICECROWN_OBELISK_SCOURGE)
     {
@@ -83,7 +83,7 @@ public static class ScourgeSpellSetup
       CorpseCount = 1
     });
 
-    SpellSystem.Register(new DeathPact(ABILITY_A0WP_DARK_RITUAL_ICON)
+    SpellRegistry.Register(new DeathPact(ABILITY_A0WP_DARK_RITUAL_ICON)
     {
       Radius = 900.0f,
       KillEffect = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl",
@@ -132,7 +132,7 @@ public static class ScourgeSpellSetup
       }
     });
 
-    SpellSystem.Register(new DeathPact(ABILITY_A0W9_DEATH_PACT_ICON)
+    SpellRegistry.Register(new DeathPact(ABILITY_A0W9_DEATH_PACT_ICON)
     {
       Radius = 700.0f,
       KillEffect = @"Abilities\Spells\Undead\DeathPact\DeathPactTarget.mdl",
@@ -141,7 +141,7 @@ public static class ScourgeSpellSetup
       ManaRestorePercent = 0.10f
     });
 
-    SpellSystem.Register(new IceBlockSpell(ABILITY_ZBIB_ICE_BLOCK_SCOURGE_LICH)
+    SpellRegistry.Register(new IceBlockSpell(ABILITY_ZBIB_ICE_BLOCK_SCOURGE_LICH)
     {
       DummyUnitTypeId = UNIT_ZBDF_ICE_BLOCK_DISPELLABLE_DUMMY,
       CastEffectPath = @"Abilities\Spells\Undead\FrostNova\FrostNovaTarget.mdl",
@@ -155,7 +155,7 @@ public static class ScourgeSpellSetup
 
   private static void RegisterArthasSpells()
   {
-    SpellSystem.Register(new Reap(ABILITY_ZB02_REAP_UNDEAD_ARTHAS)
+    SpellRegistry.Register(new Reap(ABILITY_ZB02_REAP_UNDEAD_ARTHAS)
     {
       UnitsSlain = new()
       {
@@ -180,7 +180,7 @@ public static class ScourgeSpellSetup
       BuffEffect = @"Abilities\Spells\Items\AIso\BIsvTarget.mdl",
     });
 
-    SpellSystem.Register(new MassDeathCoil(ABILITY_ZB06_MASS_DEATH_COIL_ARTHAS_TERON_GOREFIEND)
+    SpellRegistry.Register(new MassDeathCoil(ABILITY_ZB06_MASS_DEATH_COIL_ARTHAS_TERON_GOREFIEND)
     {
       DummyAbilityId = ABILITY_ZB05_MASS_DEATH_COIL_ARTHAS_DUMMY,
       DummyAbilityOrderId = ORDER_DEATH_COIL,
@@ -189,7 +189,7 @@ public static class ScourgeSpellSetup
       UpgradeCondition = unit => unit.UnitType == UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE
     });
 
-    SpellSystem.Register(new Apocalypse(ABILITY_A10N_APOCALYPSE_DEATH_KNIGHT_ARTHAS)
+    SpellRegistry.Register(new Apocalypse(ABILITY_A10N_APOCALYPSE_DEATH_KNIGHT_ARTHAS)
     {
       Range = 900,
       Width = 700,
@@ -214,7 +214,7 @@ public static class ScourgeSpellSetup
       UpgradeCondition = unit => unit.UnitType == UNIT_N023_LORD_OF_THE_SCOURGE_SCOURGE
     });
 
-    SpellSystem.Register(new DeathPact(ABILITY_A10C_DEATH_PACT_ICON_ARTHAS)
+    SpellRegistry.Register(new DeathPact(ABILITY_A10C_DEATH_PACT_ICON_ARTHAS)
     {
       Radius = 700.0f,
       KillEffect = @"Abilities\Spells\Undead\DeathPact\DeathPactTarget.mdl",

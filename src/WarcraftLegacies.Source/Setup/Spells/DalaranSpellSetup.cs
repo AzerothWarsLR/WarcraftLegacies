@@ -20,9 +20,9 @@ public static class DalaranSpellSetup
       TargetType = SpellTargetType.Point,
       DummyCastOriginType = DummyCastOriginType.Caster
     };
-    SpellSystem.Register(enchantedBolt);
+    SpellRegistry.Register(enchantedBolt);
 
-    SpellSystem.Register(new ChannelAnySpellCaster(ABILITY_A11A_TIME_S_SHIELD_DALARAN_2)
+    SpellRegistry.Register(new ChannelAnySpellCaster(ABILITY_A11A_TIME_S_SHIELD_DALARAN_2)
     {
       DummyAbilityId = ABILITY_A11K_TIME_S_SHIELD_DALARAN_DUMMY,
       DummyAbilityOrderId = ORDER_VOODOO,
@@ -30,7 +30,7 @@ public static class DalaranSpellSetup
     });
 
     var rebornTime = new CooldownReset(ABILITY_A10T_REBORN_THROUGH_TIME_DALARAN);
-    SpellSystem.Register(rebornTime);
+    SpellRegistry.Register(rebornTime);
 
     var massIceLance = new MassAnySpell(ABILITY_A0J0_MASS_ICE_LANCE_NEXUS)
     {
@@ -41,7 +41,7 @@ public static class DalaranSpellSetup
       TargetType = SpellTargetType.Point,
       DummyCastOriginType = DummyCastOriginType.Caster
     };
-    SpellSystem.Register(massIceLance);
+    SpellRegistry.Register(massIceLance);
 
     var massSimulacrum = new MassSimulacrum(ABILITY_A0DG_MASS_SIMULACRUM_ORANGE_ANTONIDAS)
     {
@@ -58,6 +58,6 @@ public static class DalaranSpellSetup
       DamageBonusBase = -0.5f,
       DamageBonusLevel = 0.2f
     };
-    SpellSystem.Register(massSimulacrum);
+    SpellRegistry.Register(massSimulacrum);
   }
 }
