@@ -1,7 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.UnitTypeTraits;
-using WarcraftLegacies.Source.PassiveAbilities;
+using WarcraftLegacies.Source.UnitTypeTraits;
 using WCSharp.Missiles;
 
 namespace WarcraftLegacies.Source.Spells.MassiveAttack;

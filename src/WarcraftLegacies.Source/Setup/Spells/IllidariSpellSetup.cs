@@ -1,9 +1,9 @@
 ﻿using MacroTools.Data;
 using MacroTools.Spells;
 using MacroTools.UnitTypeTraits;
-using WarcraftLegacies.Source.PassiveAbilities;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.Slipstream;
+using WarcraftLegacies.Source.UnitTypeTraits;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Setup.Spells;

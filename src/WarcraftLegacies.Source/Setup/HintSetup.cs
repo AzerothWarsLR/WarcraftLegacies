@@ -1,6 +1,6 @@
 ﻿using MacroTools.HintSystem;
 using MacroTools.LegendSystem;
-using WarcraftLegacies.Source.PassiveAbilities;
+using WarcraftLegacies.Source.UnitTypeTraits;
 
 namespace WarcraftLegacies.Source.Setup;
 

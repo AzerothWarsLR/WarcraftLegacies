@@ -7,16 +7,16 @@ using MacroTools.Spells;
 using MacroTools.Systems;
 using MacroTools.UnitTypeTraits;
 using WarcraftLegacies.Shared.FactionObjectLimits;
-using WarcraftLegacies.Source.PassiveAbilities;
-using WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon;
-using WarcraftLegacies.Source.PassiveAbilities.Incubate;
-using WarcraftLegacies.Source.PassiveAbilities.SpellConduction;
 using WarcraftLegacies.Source.Quests.Cthun;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Researches.Ahnqiraj;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.MassiveAttack;
+using WarcraftLegacies.Source.UnitTypeTraits;
+using WarcraftLegacies.Source.UnitTypeTraits.DefensiveCocoon;
+using WarcraftLegacies.Source.UnitTypeTraits.Incubate;
+using WarcraftLegacies.Source.UnitTypeTraits.SpellConduction;
 
 namespace WarcraftLegacies.Source.Factions;
 
