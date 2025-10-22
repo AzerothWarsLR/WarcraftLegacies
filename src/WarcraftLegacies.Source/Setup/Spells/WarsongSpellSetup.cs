@@ -54,6 +54,5 @@ public static class WarsongSpellSetup
       DamageBonusLevel = 0.15F
     };
     SpellRegistry.Register(stormEarthandFire);
-    //Todo: inappropriately named
   }
 }
