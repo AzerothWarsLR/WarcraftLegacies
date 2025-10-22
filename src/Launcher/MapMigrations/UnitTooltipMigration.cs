@@ -4,6 +4,7 @@ using System.Text;
 using Launcher.Extensions;
 using War3Api.Object;
 using War3Net.Build;
+using War3Net.CodeAnalysis.Jass.Extensions;
 using WarcraftLegacies.Shared;
 
 namespace Launcher.MapMigrations;
@@ -219,7 +220,7 @@ public sealed class UnitTooltipMigration : IMapMigration
       return;
     }
 
-    var unitId = unit.NewId != 0 ? unit.NewId : unit.OldId;
+    var unitId = (unit.NewId != 0 ? unit.NewId : unit.OldId).InvertEndianness();
     if (!_objectInfoRepository.TryGetObjectInfo(unitId, out var objectLimit))
     {
       return;
