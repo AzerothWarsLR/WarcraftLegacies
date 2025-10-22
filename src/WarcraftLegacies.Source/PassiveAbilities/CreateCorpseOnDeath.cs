@@ -1,6 +1,6 @@
 ﻿using MacroTools.PassiveAbilitySystem;
 
-namespace MacroTools.PassiveAbilities;
+namespace WarcraftLegacies.Source.PassiveAbilities;
 
 /// <summary>
 /// Causes the unit to summon a unit upon death.

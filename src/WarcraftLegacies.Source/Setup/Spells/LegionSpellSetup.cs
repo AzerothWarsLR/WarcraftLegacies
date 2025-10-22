@@ -1,8 +1,8 @@
 ﻿using MacroTools.Data;
-using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
+using WarcraftLegacies.Source.PassiveAbilities;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.HealingWavePlus;
 using WarcraftLegacies.Source.Spells.Slipstream;

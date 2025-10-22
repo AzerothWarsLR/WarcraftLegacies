@@ -6,7 +6,7 @@ using MacroTools.PassiveAbilitySystem;
 using MacroTools.Utils;
 using WCSharp.Effects;
 
-namespace MacroTools.PassiveAbilities;
+namespace WarcraftLegacies.Source.PassiveAbilities;
 
 /// <summary>
 /// When the unit dies, it reanimates nearby friendly units.

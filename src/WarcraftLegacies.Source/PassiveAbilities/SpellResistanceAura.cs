@@ -2,7 +2,7 @@
 using MacroTools.PassiveAbilitySystem;
 using WCSharp.Buffs;
 
-namespace MacroTools.PassiveAbilities;
+namespace WarcraftLegacies.Source.PassiveAbilities;
 
 public sealed class SpellResistanceAura : PassiveAbility, IEffectOnCreated
 {

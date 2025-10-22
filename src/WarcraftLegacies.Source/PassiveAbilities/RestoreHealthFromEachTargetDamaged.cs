@@ -6,7 +6,7 @@ using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
 using WCSharp.Effects;
 
-namespace MacroTools.PassiveAbilities;
+namespace WarcraftLegacies.Source.PassiveAbilities;
 
 /// <summary>
 /// The unit with this ability gains health based on each target it deals damage to.

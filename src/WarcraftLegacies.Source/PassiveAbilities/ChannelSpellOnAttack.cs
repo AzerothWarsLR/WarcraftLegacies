@@ -2,7 +2,7 @@
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.SpellSystem;
 
-namespace MacroTools.PassiveAbilities;
+namespace WarcraftLegacies.Source.PassiveAbilities;
 
 /// <summary>
 /// When the unit deals damage, it has a chance to cast a dummy spell without a target.

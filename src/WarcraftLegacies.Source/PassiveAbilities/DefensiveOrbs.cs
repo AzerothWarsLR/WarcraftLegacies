@@ -4,7 +4,7 @@ using MacroTools.Missiles;
 using MacroTools.PassiveAbilitySystem;
 using WCSharp.Missiles;
 
-namespace MacroTools.PassiveAbilities;
+namespace WarcraftLegacies.Source.PassiveAbilities;
 
 /// <summary>
 /// The hero gains arcane orbs when casting abilities, which then collide with enemy units to deal damage.

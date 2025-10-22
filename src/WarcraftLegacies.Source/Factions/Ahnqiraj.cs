@@ -2,13 +2,13 @@
 
 using MacroTools.Data;
 using MacroTools.FactionSystem;
-using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.PassiveAbilities;
 using WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon;
 using WarcraftLegacies.Source.PassiveAbilities.Incubate;
 using WarcraftLegacies.Source.PassiveAbilities.SpellConduction;

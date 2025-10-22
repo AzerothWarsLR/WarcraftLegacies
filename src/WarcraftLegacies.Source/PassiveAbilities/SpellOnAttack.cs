@@ -3,7 +3,7 @@ using MacroTools.DummyCasters;
 using MacroTools.PassiveAbilitySystem;
 using static MacroTools.Libraries.UnitEventSystem;
 
-namespace MacroTools.PassiveAbilities;
+namespace WarcraftLegacies.Source.PassiveAbilities;
 
 /// <summary>
 /// When the unit deals damage, it has a chance to cast a dummy spell against that target.

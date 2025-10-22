@@ -2,7 +2,7 @@
 using MacroTools.PassiveAbilitySystem;
 using WCSharp.Buffs;
 
-namespace MacroTools.PassiveAbilities;
+namespace WarcraftLegacies.Source.PassiveAbilities;
 
 /// <summary>
 ///   Causes the specified unit type to always have a squad of tentacles surrounding them.

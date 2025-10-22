@@ -1,7 +1,7 @@
 ﻿using MacroTools.PassiveAbilitySystem;
 using WCSharp.Effects;
 
-namespace MacroTools.PassiveAbilities;
+namespace WarcraftLegacies.Source.PassiveAbilities;
 
 /// <summary>Causes the unit to be removed when it dies, instead of leaving a corpse.</summary>
 public sealed class RemoveOnDeath : PassiveAbility, IEffectOnDeath

@@ -1,17 +1,18 @@
-﻿using MacroTools.DummyCasters;
+﻿using System.Collections.Generic;
+using MacroTools.DummyCasters;
 using MacroTools.PassiveAbilitySystem;
 
-namespace MacroTools.PassiveAbilities;
+namespace WarcraftLegacies.Source.PassiveAbilities;
 
 /// <summary>
-/// When the unit deals damage, it has a chance to cast a dummy spell without a target.
+/// When the unit deals casts a spell, it has a chance to cast a dummy spell without a target.
 /// </summary>
-public sealed class NoTargetSpellOnAttack : PassiveAbility, IAppliesEffectOnDamage
+public sealed class NoTargetSpellOnCast : PassiveAbility, IEffectOnSpellEffect
 {
   /// <summary>
   /// The unit type ID which has this <see cref="PassiveAbility"/> should also have an ability with this ID.
   /// </summary>
-  public int AbilityTypeId { get; }
+  private readonly int _abilityTypeId;
 
   /// <summary>
   /// The dummy spell to cast on attack.
@@ -33,32 +34,21 @@ public sealed class NoTargetSpellOnAttack : PassiveAbility, IAppliesEffectOnDama
   /// </summary>
   /// <param name="unitTypeId"><inheritdoc /></param>
   /// <param name="abilityTypeId">The ability the provided unit type has which represents this object.</param>
-  public NoTargetSpellOnAttack(int unitTypeId, int abilityTypeId) : base(unitTypeId)
+  public NoTargetSpellOnCast(int unitTypeId, int abilityTypeId) : base(unitTypeId)
   {
-    AbilityTypeId = abilityTypeId;
+    _abilityTypeId = abilityTypeId;
   }
 
-  /// <summary>
-  /// The player must have this research for the ability to take effect.
-  /// </summary>
-  public int RequiredResearch { get; init; }
+  public List<int> AbilityWhitelist { get; init; } = new();
 
   /// <inheritdoc />
-
-  public void OnDealsDamage()
+  public void OnSpellEffect()
   {
-    var caster = @event.DamageSource;
-    if (!@event.IsAttack || caster.GetAbilityLevel(AbilityTypeId) == 0)
+    var caster = @event.Unit;
+    var abilityLevel = caster.GetAbilityLevel(_abilityTypeId);
+    if (abilityLevel == 0 || !AbilityWhitelist.Contains(@event.SpellAbilityId))
     {
       return;
-    }
-
-    if (RequiredResearch != 0)
-    {
-      if (caster.Owner.GetTechResearched(RequiredResearch, false) == 0)
-      {
-        return;
-      }
     }
 
     if (GetRandomReal(0, 1) < ProcChance)
@@ -66,6 +56,7 @@ public sealed class NoTargetSpellOnAttack : PassiveAbility, IAppliesEffectOnDama
       DoSpellNoTarget(caster);
     }
   }
+
   private void DoSpellNoTarget(unit caster) => DummyCasterManager.GetGlobalDummyCaster().CastNoTarget(caster, DummyAbilityId,
-    DummyOrderId, caster.GetAbilityLevel(AbilityTypeId));
+    DummyOrderId, caster.GetAbilityLevel(_abilityTypeId));
 }
