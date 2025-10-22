@@ -2,7 +2,7 @@
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.Spells;
+namespace MacroTools.Hazards;
 
 /// <summary>
 ///   A visible but unselectabe effect on the map that causes some periodic effect around it,

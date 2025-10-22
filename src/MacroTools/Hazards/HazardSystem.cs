@@ -1,6 +1,6 @@
 ﻿using WCSharp.Events;
 
-namespace MacroTools.Spells;
+namespace MacroTools.Hazards;
 
 public static class HazardSystem
 {

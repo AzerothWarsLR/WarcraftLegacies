@@ -1,4 +1,5 @@
 ﻿using System;
+using MacroTools.Hazards;
 using MacroTools.Spells;
 using WarcraftLegacies.Source.Hazards;
 using WCSharp.Shared.Data;

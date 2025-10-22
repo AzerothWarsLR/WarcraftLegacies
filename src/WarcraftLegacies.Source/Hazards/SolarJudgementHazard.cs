@@ -1,4 +1,5 @@
-﻿using MacroTools.Libraries;
+﻿using MacroTools.Hazards;
+using MacroTools.Libraries;
 using MacroTools.Spells;
 using MacroTools.Utils;
 
