@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
 using MacroTools.FactionSystem;
 using MacroTools.PassiveAbilitySystem;
-using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.PassiveAbilities;
 using WarcraftLegacies.Source.Quests.BlackEmpire;
 using WarcraftLegacies.Source.Setup;
+using WarcraftLegacies.Source.Spells;
 
 namespace WarcraftLegacies.Source.Factions;
 

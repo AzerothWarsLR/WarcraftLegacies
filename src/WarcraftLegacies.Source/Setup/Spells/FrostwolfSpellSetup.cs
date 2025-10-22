@@ -1,6 +1,5 @@
 ﻿using MacroTools.Data;
 using MacroTools.ResearchSystems;
-using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.Slipstream;

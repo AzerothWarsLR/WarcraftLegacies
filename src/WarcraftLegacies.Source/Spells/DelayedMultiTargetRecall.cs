@@ -8,7 +8,7 @@ using MacroTools.Utils;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.Spells;
+namespace WarcraftLegacies.Source.Spells;
 
 /// <summary>Summons a limited number of units from an area to the caster's position.</summary>
 public sealed class DelayedMultiTargetRecall : Spell

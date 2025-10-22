@@ -1,5 +1,4 @@
 ﻿using MacroTools.DummyCasters;
-using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.Spells;
 

@@ -1,7 +1,7 @@
 ﻿using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.Spells;
+namespace WarcraftLegacies.Source.Spells;
 
 /// <summary>
 /// Teleports the target to the caster.
