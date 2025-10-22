@@ -24,7 +24,7 @@ public sealed class AddAbilityOnCast : Spell
   public override void OnCast(unit caster, unit target, Point targetPoint)
   {
 
-    var addSpellonCastBuff = new AddSpellOnCastBuff(caster, caster, BuffApplicatorId, BuffId)
+    var addSpellonCastBuff = new AddAbilitiesBuff(caster, caster, BuffApplicatorId, BuffId)
     {
       Duration = Duration.Base + Duration.PerLevel * GetAbilityLevel(caster),
       AbilitiesToAdd = AbilitiesToAdd
