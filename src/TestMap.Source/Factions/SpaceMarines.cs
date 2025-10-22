@@ -1,5 +1,5 @@
 ﻿using MacroTools.FactionSystem;
-using MacroTools.Powers;
+using TestMap.Source.Powers;
 using TestMap.Source.Setup;
 
 namespace TestMap.Source.Factions;
