@@ -1,7 +1,7 @@
 ﻿using MacroTools.DummyCasters;
 using MacroTools.Spells;
 
-namespace MacroTools.Hazards;
+namespace WarcraftLegacies.Source.Hazards;
 
 /// <summary>
 /// A <see cref="Hazard"/> that causes a particular spell to be repeatedly cast at its location.
