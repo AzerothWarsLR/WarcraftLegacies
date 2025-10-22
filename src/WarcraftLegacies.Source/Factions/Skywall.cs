@@ -5,13 +5,13 @@ using MacroTools.ResearchSystems;
 using MacroTools.Spells;
 using MacroTools.UnitTypeTraits;
 using WarcraftLegacies.Shared.FactionObjectLimits;
-using WarcraftLegacies.Source.PassiveAbilities;
 using WarcraftLegacies.Source.Quests.Skywall;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.WarpedMalediction;
 using WarcraftLegacies.Source.Spells.WhimOfTheWinds;
+using WarcraftLegacies.Source.UnitTypeTraits;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Factions;

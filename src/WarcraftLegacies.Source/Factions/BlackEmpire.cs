@@ -4,10 +4,10 @@ using MacroTools.Spells;
 using MacroTools.Systems;
 using MacroTools.UnitTypeTraits;
 using WarcraftLegacies.Shared.FactionObjectLimits;
-using WarcraftLegacies.Source.PassiveAbilities;
 using WarcraftLegacies.Source.Quests.BlackEmpire;
 using WarcraftLegacies.Source.Setup;
 using WarcraftLegacies.Source.Spells;
+using WarcraftLegacies.Source.UnitTypeTraits;
 
 namespace WarcraftLegacies.Source.Factions;
 

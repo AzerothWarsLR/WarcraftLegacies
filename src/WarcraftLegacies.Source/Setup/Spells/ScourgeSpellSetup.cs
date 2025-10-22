@@ -3,10 +3,10 @@ using MacroTools.Data;
 using MacroTools.Spells;
 using MacroTools.UnitTypeTraits;
 using WarcraftLegacies.Source.FactionMechanics.Scourge;
-using WarcraftLegacies.Source.PassiveAbilities;
 using WarcraftLegacies.Source.Spells;
 using WarcraftLegacies.Source.Spells.IceBlock;
 using WarcraftLegacies.Source.Spells.Reap;
+using WarcraftLegacies.Source.UnitTypeTraits;
 
 namespace WarcraftLegacies.Source.Setup.Spells;
 
