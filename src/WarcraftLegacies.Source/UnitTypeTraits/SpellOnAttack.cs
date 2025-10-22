@@ -33,7 +33,7 @@ public sealed class SpellOnAttack : UnitTypeTrait, IAppliesEffectOnDamage
   /// <summary>
   /// The cooldown in seconds for the effect.
   /// </summary>
-  public float Cooldown { get; init; } = 0f;
+  public float Cooldown { get; init; }
 
   /// <summary>
   /// The player must have this research for the ability to take effect.
@@ -53,7 +53,6 @@ public sealed class SpellOnAttack : UnitTypeTrait, IAppliesEffectOnDamage
   /// <inheritdoc />
   public void OnDealsDamage()
   {
-    // Ensure this is a normal attack
     if (!@event.IsAttack)
     {
       return;
@@ -62,7 +61,6 @@ public sealed class SpellOnAttack : UnitTypeTrait, IAppliesEffectOnDamage
     var caster = @event.DamageSource;
     var target = @event.Unit;
 
-    // Check research requirement
     if (RequiredResearch != 0 &&
         caster.Owner.GetTechResearched(RequiredResearch, false) == 0)
     {
@@ -81,16 +79,13 @@ public sealed class SpellOnAttack : UnitTypeTrait, IAppliesEffectOnDamage
       }
     }
 
-    // Random chance check
     if (GetRandomReal(0, 1) >= ProcChance)
     {
       return;
     }
 
-    // Trigger the effect
     DoSpellOnTarget(caster, target);
 
-    // Start cooldown timer
     if (Cooldown > 0)
     {
       BuffSystem.Add(new UnitTypeTraitOnCooldownBuff(caster, target)
@@ -102,8 +97,8 @@ public sealed class SpellOnAttack : UnitTypeTrait, IAppliesEffectOnDamage
   }
 
   private void DoSpellOnTarget(unit caster, unit target) =>
-      DummyCasterManager.GetGlobalDummyCaster().CastUnit(
-          caster, DummyAbilityId, DummyOrderId,
-          caster.GetAbilityLevel(AbilityTypeId),
-          target, DummyCastOriginType.Caster);
+    DummyCasterManager.GetGlobalDummyCaster().CastUnit(
+      caster, DummyAbilityId, DummyOrderId,
+      caster.GetAbilityLevel(AbilityTypeId),
+      target, DummyCastOriginType.Caster);
 }
