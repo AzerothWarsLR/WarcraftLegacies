@@ -2,8 +2,8 @@
 using MacroTools.FactionSystem;
 using MacroTools.ObjectiveSystem.Objectives.ArtifactBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
-using MacroTools.Powers;
 using MacroTools.QuestSystem;
+using TestMap.Source.Powers;
 using TestMap.Source.Setup;
 
 namespace TestMap.Source.Quests;
