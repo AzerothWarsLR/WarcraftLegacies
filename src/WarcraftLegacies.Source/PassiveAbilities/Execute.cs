@@ -1,6 +1,6 @@
 ﻿using MacroTools.ControlPointSystem;
 using MacroTools.Extensions;
-using MacroTools.PassiveAbilitySystem;
+using MacroTools.UnitTypeTraits;
 
 namespace WarcraftLegacies.Source.PassiveAbilities;
 

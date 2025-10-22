@@ -1,5 +1,5 @@
 ﻿using MacroTools.DummyCasters;
-using MacroTools.PassiveAbilitySystem;
+using MacroTools.UnitTypeTraits;
 
 namespace WarcraftLegacies.Source.PassiveAbilities;
 

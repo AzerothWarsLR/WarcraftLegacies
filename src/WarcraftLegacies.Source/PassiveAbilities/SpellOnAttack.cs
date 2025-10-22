@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.DummyCasters;
-using MacroTools.PassiveAbilitySystem;
+using MacroTools.UnitTypeTraits;
 using static MacroTools.Libraries.UnitEventSystem;
 
 namespace WarcraftLegacies.Source.PassiveAbilities;

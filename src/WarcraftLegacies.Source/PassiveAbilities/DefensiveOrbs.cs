@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Data;
 using MacroTools.Missiles;
-using MacroTools.PassiveAbilitySystem;
+using MacroTools.UnitTypeTraits;
 using WCSharp.Missiles;
 
 namespace WarcraftLegacies.Source.PassiveAbilities;

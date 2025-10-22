@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MacroTools.PassiveAbilitySystem;
+namespace MacroTools.UnitTypeTraits;
 
 public abstract class TakeDamagePassiveAbility
 {

@@ -1,5 +1,5 @@
-﻿using MacroTools.PassiveAbilitySystem;
-using MacroTools.Systems;
+﻿using MacroTools.Systems;
+using MacroTools.UnitTypeTraits;
 
 namespace WarcraftLegacies.Source.PassiveAbilities;
 

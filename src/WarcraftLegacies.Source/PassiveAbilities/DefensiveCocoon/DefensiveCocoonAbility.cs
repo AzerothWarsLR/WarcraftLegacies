@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using MacroTools.PassiveAbilitySystem;
+using MacroTools.UnitTypeTraits;
 using WarcraftLegacies.Source.PassiveAbilities.Vengeance;
 using WCSharp.Buffs;
 

@@ -1,4 +1,4 @@
-﻿namespace MacroTools.PassiveAbilitySystem;
+﻿namespace MacroTools.UnitTypeTraits;
 
 /// <summary>
 /// Called when the unit dies.

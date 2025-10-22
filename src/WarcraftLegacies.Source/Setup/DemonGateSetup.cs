@@ -1,5 +1,5 @@
 ﻿using MacroTools.Mechanics.DemonGates;
-using MacroTools.PassiveAbilitySystem;
+using MacroTools.UnitTypeTraits;
 
 namespace WarcraftLegacies.Source.Setup;
 

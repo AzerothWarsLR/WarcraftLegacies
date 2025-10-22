@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
-using MacroTools.PassiveAbilitySystem;
+using MacroTools.UnitTypeTraits;
 using MacroTools.Utils;
 using WCSharp.Effects;
 

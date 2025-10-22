@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Data;
 using MacroTools.Extensions;
-using MacroTools.PassiveAbilitySystem;
+using MacroTools.UnitTypeTraits;
 
 namespace WarcraftLegacies.Source.PassiveAbilities;
 
