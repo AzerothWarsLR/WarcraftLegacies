@@ -4,7 +4,7 @@ using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.QuestSystem;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 using WarcraftLegacies.Source.Spells;
 
 namespace WarcraftLegacies.Source.Quests.Naga;

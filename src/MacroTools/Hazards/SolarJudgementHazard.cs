@@ -1,5 +1,5 @@
 ﻿using MacroTools.Libraries;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 using MacroTools.Utils;
 
 namespace MacroTools.Hazards;

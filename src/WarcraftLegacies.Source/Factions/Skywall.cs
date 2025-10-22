@@ -3,7 +3,7 @@ using MacroTools.FactionSystem;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Powers;
 using MacroTools.ResearchSystems;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.PassiveAbilities;
 using WarcraftLegacies.Source.Quests.Skywall;

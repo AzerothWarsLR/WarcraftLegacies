@@ -1,5 +1,5 @@
 ﻿using MacroTools.DummyCasters;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 
 namespace MacroTools.Hazards;
 

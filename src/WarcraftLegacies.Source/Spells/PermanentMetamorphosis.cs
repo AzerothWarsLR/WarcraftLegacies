@@ -1,6 +1,6 @@
 ﻿using MacroTools.Data;
 using MacroTools.LegendSystem;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 
 namespace WarcraftLegacies.Source.Spells;
 

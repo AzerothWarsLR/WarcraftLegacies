@@ -1,5 +1,5 @@
 ﻿using MacroTools.Extensions;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 using WCSharp.Effects;
 using WCSharp.Shared.Data;
 

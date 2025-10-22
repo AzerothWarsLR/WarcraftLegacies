@@ -4,7 +4,7 @@ using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 using MacroTools.Hazards;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 

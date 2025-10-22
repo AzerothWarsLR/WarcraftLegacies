@@ -1,7 +1,7 @@
 ﻿using System;
 using MacroTools.Data;
 using MacroTools.Libraries;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 using WCSharp.Effects;
 using WCSharp.Missiles;
 using WCSharp.Shared.Data;

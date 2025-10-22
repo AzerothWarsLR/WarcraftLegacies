@@ -1,6 +1,6 @@
 ﻿using System;
 using MacroTools.Powers;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 using WCSharp.Shared.Data;
 
 namespace MacroTools.Hazards;

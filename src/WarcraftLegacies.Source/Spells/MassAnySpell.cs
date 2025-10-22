@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using MacroTools.DummyCasters;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells;

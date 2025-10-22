@@ -1,4 +1,4 @@
-﻿namespace MacroTools.SpellSystem;
+﻿namespace MacroTools.Spells;
 
 public enum SpellTargetType
 {

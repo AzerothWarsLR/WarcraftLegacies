@@ -1,5 +1,5 @@
 ﻿using MacroTools.DummyCasters;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 using WarcraftLegacies.Source.Spells;
 
 namespace WarcraftLegacies.Source.Setup.Spells;

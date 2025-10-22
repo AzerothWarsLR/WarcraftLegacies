@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using MacroTools.ChannelSystem;
 using MacroTools.Extensions;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 using MacroTools.Utils;
 using WCSharp.Buffs;
 using WCSharp.Effects;

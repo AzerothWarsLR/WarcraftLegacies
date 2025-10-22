@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MacroTools.FactionSystem;
 using MacroTools.PassiveAbilitySystem;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;
 using WarcraftLegacies.Source.PassiveAbilities;

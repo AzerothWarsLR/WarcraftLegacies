@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using MacroTools.Data;
 using MacroTools.Extensions;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared.Data;

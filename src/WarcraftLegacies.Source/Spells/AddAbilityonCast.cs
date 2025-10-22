@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Data;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 using WarcraftLegacies.Source.Buffs;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;

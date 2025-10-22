@@ -1,4 +1,4 @@
-﻿using MacroTools.SpellSystem;
+﻿using MacroTools.Spells;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 

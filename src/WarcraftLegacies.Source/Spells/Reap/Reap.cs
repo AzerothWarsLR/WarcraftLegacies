@@ -3,7 +3,7 @@ using System.Linq;
 using MacroTools.Data;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 using MacroTools.Utils;
 using WCSharp.Buffs;
 using WCSharp.Effects;

@@ -1,6 +1,6 @@
 ﻿using System;
 using MacroTools.ArtifactSystem;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells;

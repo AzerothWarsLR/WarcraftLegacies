@@ -4,7 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.SpellSystem;
+namespace MacroTools.Spells;
 
 /// <summary>
 /// Provides a way to extend the functionality of existing Warcraft 3 spells and passive abilities

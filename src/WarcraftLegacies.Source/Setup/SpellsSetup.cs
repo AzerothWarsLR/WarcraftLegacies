@@ -1,5 +1,5 @@
 ﻿using MacroTools.PassiveAbilitySystem;
-using MacroTools.SpellSystem;
+using MacroTools.Spells;
 using WarcraftLegacies.Source.PassiveAbilities.Vengeance;
 using WarcraftLegacies.Source.Setup.Spells;
 using WarcraftLegacies.Source.Spells;
