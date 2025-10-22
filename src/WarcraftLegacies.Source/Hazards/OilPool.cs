@@ -3,7 +3,7 @@ using MacroTools.Powers;
 using MacroTools.Spells;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.Hazards;
+namespace WarcraftLegacies.Source.Hazards;
 
 /// <summary>
 /// A pool of oil that can be harvested for oil.
@@ -43,7 +43,7 @@ public sealed class OilPool : Hazard
     _effectOil.Scale = 2;
     _effectCircle = effect.Create(owner == player.LocalPlayer ? @"buildings\other\CircleOfPower\CircleOfPower" : "", position.X, position.Y);
     _effectCircle.Scale = 2;
-    _effectCircle.SetHeight(Libraries.Environment.GetPositionZ(position));
+    _effectCircle.SetHeight(MacroTools.Libraries.Environment.GetPositionZ(position));
     _effectCircle.SetColor(player.Create(20));
   }
 

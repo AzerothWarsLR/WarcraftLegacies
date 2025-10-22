@@ -2,7 +2,7 @@
 using MacroTools.Spells;
 using MacroTools.Utils;
 
-namespace MacroTools.Hazards;
+namespace WarcraftLegacies.Source.Hazards;
 
 public sealed class SolarJudgementHazard : Hazard
 {
