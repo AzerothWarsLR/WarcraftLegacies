@@ -1,7 +1,7 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.FactionSystem;
 
-namespace MacroTools.Powers;
+namespace WarcraftLegacies.Source.Powers;
 
 /// <summary>
 /// The holder gains extra Control Levels for their Control Points each turn.

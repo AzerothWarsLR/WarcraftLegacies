@@ -6,7 +6,7 @@ using WCSharp.Effects;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.Powers;
+namespace WarcraftLegacies.Source.Powers;
 
 /// <summary>
 /// Causes dying units to rematerialize at a specific location.

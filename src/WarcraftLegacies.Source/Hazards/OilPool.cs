@@ -1,6 +1,6 @@
 ﻿using System;
-using MacroTools.Powers;
 using MacroTools.Spells;
+using WarcraftLegacies.Source.Powers;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Hazards;

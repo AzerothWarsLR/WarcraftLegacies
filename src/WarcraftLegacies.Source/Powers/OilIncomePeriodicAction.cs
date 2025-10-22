@@ -1,6 +1,6 @@
 ﻿using WCSharp.Events;
 
-namespace MacroTools.Powers;
+namespace WarcraftLegacies.Source.Powers;
 
 public sealed class OilIncomePeriodicAction : IPeriodicAction
 {

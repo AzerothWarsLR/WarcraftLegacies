@@ -6,8 +6,8 @@ using MacroTools.ObjectiveSystem.Objectives.ControlPointBased;
 using MacroTools.ObjectiveSystem.Objectives.FactionBased;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
-using MacroTools.Powers;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.Powers;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Quests.KulTiras;

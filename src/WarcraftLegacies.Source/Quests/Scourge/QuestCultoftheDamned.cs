@@ -2,8 +2,8 @@
 using MacroTools.FactionSystem;
 using MacroTools.LegendSystem;
 using MacroTools.ObjectiveSystem.Objectives.TimeBased;
-using MacroTools.Powers;
 using MacroTools.QuestSystem;
+using WarcraftLegacies.Source.Powers;
 
 namespace WarcraftLegacies.Source.Quests.Scourge;
 

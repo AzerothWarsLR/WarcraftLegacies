@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using MacroTools.Extensions;
 using MacroTools.FactionSystem;
-using MacroTools.Hazards;
 using MacroTools.Spells;
+using WarcraftLegacies.Source.Hazards;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.Powers;
+namespace WarcraftLegacies.Source.Powers;
 
 /// <summary>
 /// Gives the ability to store Oil as an additional resource.

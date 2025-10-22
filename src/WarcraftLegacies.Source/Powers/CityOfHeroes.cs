@@ -6,7 +6,7 @@ using WCSharp.Api.Enums;
 using WCSharp.Effects;
 using WCSharp.Events;
 
-namespace MacroTools.Powers;
+namespace WarcraftLegacies.Source.Powers;
 
 /// <summary>
 /// The player's trained units have a chance to become demiheroes.

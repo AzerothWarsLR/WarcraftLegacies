@@ -6,7 +6,6 @@ using MacroTools.ObjectiveSystem;
 using MacroTools.ObjectiveSystem.Objectives.LegendBased;
 using MacroTools.ObjectiveSystem.Objectives.QuestBased;
 using MacroTools.ObjectiveSystem.Objectives.UnitBased;
-using MacroTools.Powers;
 using MacroTools.ResearchSystems;
 using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;

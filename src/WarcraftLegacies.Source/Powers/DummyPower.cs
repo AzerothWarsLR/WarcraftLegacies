@@ -1,6 +1,6 @@
 ﻿using MacroTools.FactionSystem;
 
-namespace MacroTools.Powers;
+namespace WarcraftLegacies.Source.Powers;
 
 public sealed class DummyPower : Power
 {

@@ -6,7 +6,7 @@ using MacroTools.Setup;
 using WCSharp.Effects;
 using WCSharp.Events;
 
-namespace MacroTools.Powers;
+namespace WarcraftLegacies.Source.Powers;
 
 /// <summary>
 /// The player's units have a chance to do bonus damage when they attack.
