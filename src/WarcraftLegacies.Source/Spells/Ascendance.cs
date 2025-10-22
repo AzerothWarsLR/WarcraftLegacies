@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using MacroTools.Buffs;
 using MacroTools.SpellSystem;
 using MacroTools.Utils;
+using WarcraftLegacies.Source.Buffs;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 

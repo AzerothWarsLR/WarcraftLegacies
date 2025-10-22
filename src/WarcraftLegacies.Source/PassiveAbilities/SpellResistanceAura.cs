@@ -1,5 +1,5 @@
-﻿using MacroTools.Buffs;
-using MacroTools.PassiveAbilitySystem;
+﻿using MacroTools.PassiveAbilitySystem;
+using WarcraftLegacies.Source.Buffs;
 using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.PassiveAbilities;

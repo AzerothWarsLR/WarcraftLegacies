@@ -1,6 +1,6 @@
 ﻿using WCSharp.Buffs;
 
-namespace MacroTools.Buffs;
+namespace WarcraftLegacies.Source.Buffs;
 
 /// <summary>
 /// Summons a unit for the target when the buff is acquired.

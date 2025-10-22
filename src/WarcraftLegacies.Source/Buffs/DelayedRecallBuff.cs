@@ -4,7 +4,7 @@ using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 using Environment = MacroTools.Libraries.Environment;
 
-namespace MacroTools.Buffs;
+namespace WarcraftLegacies.Source.Buffs;
 
 public sealed class DelayedRecallBuff : PassiveBuff
 {
