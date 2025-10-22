@@ -35,7 +35,7 @@ public static class ScarletSpellSetup
       StunOrderId = ORDER_SOUL_BURN,
       SpecialEffect = @"war3mapImported\RoarCasterScarlet.mdx"
     };
-    SpellSystem.Register(crusaderShout);
+    SpellRegistry.Register(crusaderShout);
 
     UnitTypeTraitRegistry.Register(new SummonUnitOnDeath(UNIT_N09N_BISHOP_OF_THE_LIGHT_SCARLET)
     {
@@ -47,7 +47,7 @@ public static class ScarletSpellSetup
     });
 
     var recklessOnslaught = new CooldownReset(ABILITY_A0TC_RECKLESS_ONSLAUGHT_SCARLET);
-    SpellSystem.Register(recklessOnslaught);
+    SpellRegistry.Register(recklessOnslaught);
 
   }
 }

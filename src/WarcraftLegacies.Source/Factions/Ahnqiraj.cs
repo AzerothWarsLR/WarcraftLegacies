@@ -122,7 +122,7 @@ public sealed class Ahnqiraj : Faction
       }
     });
 
-    SpellSystem.Register(new InstantKill(ABILITY_ZBBS_HATCH_INCUBATE)
+    SpellRegistry.Register(new InstantKill(ABILITY_ZBBS_HATCH_INCUBATE)
     {
       Target = InstantKill.KillTarget.Self
     });
@@ -139,7 +139,7 @@ public sealed class Ahnqiraj : Faction
       Radius = 500
     });
 
-    SpellSystem.Register(new InspireMadness(ABILITY_ZBIM_INSPIRE_MADNESS_C_THUN)
+    SpellRegistry.Register(new InspireMadness(ABILITY_ZBIM_INSPIRE_MADNESS_C_THUN)
     {
       Radius = 300,
       CountBase = 14,
@@ -148,7 +148,7 @@ public sealed class Ahnqiraj : Faction
       EffectScaleTarget = 0.5f
     });
 
-    SpellSystem.Register(new UnstableEvolution(ABILITY_ZBUE_UNSTABLE_EVOLUTION_C_THUN)
+    SpellRegistry.Register(new UnstableEvolution(ABILITY_ZBUE_UNSTABLE_EVOLUTION_C_THUN)
     {
       Radius = 300,
       Duration = 30,
@@ -182,7 +182,7 @@ public sealed class Ahnqiraj : Faction
       Radius = 800
     });
 
-    SpellSystem.Register(new SpawnTentacle(ABILITY_ZBST_SPAWN_TENTACLE_C_THUN)
+    SpellRegistry.Register(new SpawnTentacle(ABILITY_ZBST_SPAWN_TENTACLE_C_THUN)
     {
       HitPoints = new LeveledAbilityField<int>
       {

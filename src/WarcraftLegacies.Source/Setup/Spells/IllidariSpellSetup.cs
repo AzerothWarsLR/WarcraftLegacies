@@ -18,7 +18,7 @@ public static class IllidariSpellSetup
   /// </summary>
   public static void Setup()
   {
-    SpellSystem.Register(new SlipstreamSpellSpecificDestination(ABILITY_A07D_PORTAL_TO_BLACK_TEMPLE_ILLIDAN)
+    SpellRegistry.Register(new SlipstreamSpellSpecificDestination(ABILITY_A07D_PORTAL_TO_BLACK_TEMPLE_ILLIDAN)
     {
       PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
       OpeningDelay = 20,
@@ -58,7 +58,7 @@ public static class IllidariSpellSetup
       BaseExecuteThreshold = 0.25f,
       ExecuteThresholdPerLevel = 0f
     };
-    SpellSystem.Register(shadowAssault);
+    SpellRegistry.Register(shadowAssault);
 
     var cripplingStrike = new DamageMultiplierOnAttack(
       casterUnitTypeId: UNIT_NAKA_ELDER_SAGE_ILLIDARI,
@@ -73,7 +73,7 @@ public static class IllidariSpellSetup
     };
     UnitTypeTraitRegistry.Register(cripplingStrike);
 
-    SpellSystem.Register(new AddAbilityOnLearn(ABILITY_A01Q_SHADOW_AURA_AKAMA)
+    SpellRegistry.Register(new AddAbilityOnLearn(ABILITY_A01Q_SHADOW_AURA_AKAMA)
     {
       AbilityToAddId = ABILITY_A0Z1_EVASION_AKAMA
     });

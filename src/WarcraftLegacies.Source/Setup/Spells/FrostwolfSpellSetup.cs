@@ -15,7 +15,7 @@ public static class FrostwolfSpellSetup
     {
       PercentageOfMaxHealth = 0.5f
     };
-    SpellSystem.Register(devour);
+    SpellRegistry.Register(devour);
 
     var warStompCairne = new Stomp(ABILITY_A0WM_WAR_STOMP_CAIRNE_MANNOROTH)
     {
@@ -28,7 +28,7 @@ public static class FrostwolfSpellSetup
       StunOrderId = ORDER_THUNDERBOLT,
       SpecialEffect = @"Abilities\Spells\Orc\WarStomp\WarStompCaster.mdl"
     };
-    SpellSystem.Register(warStompCairne);
+    SpellRegistry.Register(warStompCairne);
 
     var cripplingShout = new Stomp(ABILITY_TP07_CRIPPLING_SHOUT_FROSTWOLF)
     {
@@ -40,12 +40,12 @@ public static class FrostwolfSpellSetup
       StunOrderId = ORDER_CRIPPLE,
       SpecialEffect = @"abilities\spells\nightelf\battleroar\roarcaster.mdx"
     };
-    SpellSystem.Register(cripplingShout);
+    SpellRegistry.Register(cripplingShout);
 
     ParentChildResearchSystem.Register(UPGRADE_RHME_PYRITE_FORGED_WEAPONRY_UNIVERSAL_UPGRADE,
       UPGRADE_R06C_KABOOM_LEVEL_UP);
 
-    SpellSystem.Register(new SlipstreamSpellSpecificDestination(ABILITY_A0ZJ_PORTAL_TO_NAGRAND_ITEM)
+    SpellRegistry.Register(new SlipstreamSpellSpecificDestination(ABILITY_A0ZJ_PORTAL_TO_NAGRAND_ITEM)
     {
       PortalUnitTypeId = UNIT_N0D9_SLIPSTREAM_PORTAL_STORMWIND_KHADGAR,
       OpeningDelay = 5,
@@ -54,7 +54,7 @@ public static class FrostwolfSpellSetup
       Color = new Color(255, 50, 50, 255)
     });
 
-    SpellSystem.Register(new AncestralLegion(ABILITY_A0YX_ANCESTRAL_LEGION_FROSTWOLF_CAIRNE)
+    SpellRegistry.Register(new AncestralLegion(ABILITY_A0YX_ANCESTRAL_LEGION_FROSTWOLF_CAIRNE)
     {
       Duration = 60,
       HealthBonus = new LeveledAbilityField<float>

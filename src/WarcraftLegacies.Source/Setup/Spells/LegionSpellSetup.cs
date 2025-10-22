@@ -14,7 +14,7 @@ public static class LegionSpellSetup
   public static void Setup()
   {
     var darkPact = new DarkPact(ABILITY_A0A0_DARK_PACT_LEGION_ARCHIMONDE);
-    SpellSystem.Register(darkPact);
+    SpellRegistry.Register(darkPact);
 
     var inspireMadness = new InspireMadness(ABILITY_A10M_INSPIRE_MADNESS_TICHONDRIUS)
     {
@@ -25,7 +25,7 @@ public static class LegionSpellSetup
       EffectTarget = @"Abilities\Spells\Other\Charm\CharmTarget.mdl",
       EffectScaleTarget = 0.5f
     };
-    SpellSystem.Register(inspireMadness);
+    SpellRegistry.Register(inspireMadness);
 
     var phantomStep = new PhantomStep(ABILITY_TPY7_PHANTOM_STEP_LEGION_ELITES)
     {
@@ -34,7 +34,7 @@ public static class LegionSpellSetup
       DummyOrderId = ORDER_WAND_ILLUSION
     };
 
-    SpellSystem.Register(phantomStep);
+    SpellRegistry.Register(phantomStep);
 
     var phantomStepHero = new PhantomStep(ABILITY_TPY1_PHANTOM_STEP_LEGION_HERO)
     {
@@ -49,7 +49,7 @@ public static class LegionSpellSetup
       EffectScalePerLevel = 0.0f,
     };
 
-    SpellSystem.Register(phantomStepHero);
+    SpellRegistry.Register(phantomStepHero);
 
     var healingWavePlus = new HealingWavePlus(ABILITY_HWP1_ENERGY_WAVE)
     {
@@ -63,14 +63,14 @@ public static class LegionSpellSetup
       HealingEffect = @"",
       TargetMarkEffect = @""
     };
-    SpellSystem.Register(healingWavePlus);
+    SpellRegistry.Register(healingWavePlus);
 
 
 
 
     var summonBurningLegion = new SummonLegionSpell(ABILITY_A00J_SUMMON_THE_BURNING_LEGION_ALL_FACTIONS,
       ABILITY_A0KZ_SPELL_IMMUNITY_LEGION_SUMMON);
-    SpellSystem.Register(summonBurningLegion);
+    SpellRegistry.Register(summonBurningLegion);
 
     var massSummonUnit = new DelayedMultiTargetRecall(ABILITY_A02T_DARK_SUMMONING_DREADLORD)
     {
@@ -83,7 +83,7 @@ public static class LegionSpellSetup
       DeathPenalty = 0.5f,
       TargetType = SpellTargetType.Point
     };
-    SpellSystem.Register(massSummonUnit);
+    SpellRegistry.Register(massSummonUnit);
 
     RegisterSlipstreams();
 
@@ -94,7 +94,7 @@ public static class LegionSpellSetup
       Duration = 60,
       Radius = 50,
     };
-    SpellSystem.Register(summonFelHounds);
+    SpellRegistry.Register(summonFelHounds);
 
     var summonFelHoundsDoomGuard = new SummonUnits(ABILITY_VP10_HOUND_COMPANION_LEGION_DOOMGUARD)
     {
@@ -103,7 +103,7 @@ public static class LegionSpellSetup
       Duration = 60,
       Radius = 50,
     };
-    SpellSystem.Register(summonFelHoundsDoomGuard);
+    SpellRegistry.Register(summonFelHoundsDoomGuard);
 
     var dreadlordHeroes = new[]
     {
@@ -155,7 +155,7 @@ public static class LegionSpellSetup
       Color = new Color(55, 50, 250, 255),
       CloseAbilityId = ABILITY_ZBCP_CLOSE_PORTALS_LEGION_TELEPORTERS
     };
-    SpellSystem.Register(slipstreamNorthrend);
+    SpellRegistry.Register(slipstreamNorthrend);
 
     var slipstreamAlterac = new SlipstreamSpellLegionTeleporter(ABILITY_A0UC_PORTAL_TO_ALTERAC_LEGION)
     {
@@ -167,7 +167,7 @@ public static class LegionSpellSetup
       Color = new Color(155, 250, 50, 255),
       CloseAbilityId = ABILITY_ZBCP_CLOSE_PORTALS_LEGION_TELEPORTERS
     };
-    SpellSystem.Register(slipstreamAlterac);
+    SpellRegistry.Register(slipstreamAlterac);
 
     slipstreamNorthrend.RelatedSlipstreams.Add(slipstreamAlterac);
     slipstreamNorthrend.RelatedSlipstreams.Add(slipstreamNorthrend);

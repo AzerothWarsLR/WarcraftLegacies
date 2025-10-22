@@ -49,7 +49,7 @@ ABILITY_A017_TAKE_VENGEANCE_SENTINELS_MAIEV)
       CastFilter = CastFilters.IsTargetOrganicAndAlive,
       TargetType = SpellTargetType.None
     };
-    SpellSystem.Register(elunesGaze);
+    SpellRegistry.Register(elunesGaze);
 
   }
 }

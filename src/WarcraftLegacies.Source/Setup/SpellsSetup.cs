@@ -20,7 +20,7 @@ public static class SpellsSetup
       StunOrderId = ORDER_CRIPPLE,
       SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
     };
-    SpellSystem.Register(thunderClap);
+    SpellRegistry.Register(thunderClap);
 
     var thunderClapGil = new Stomp(ABILITY_MD13_THUNDER_CLAP_GILNEAS_GREY_GUARD)
     {
@@ -31,7 +31,7 @@ public static class SpellsSetup
       StunOrderId = ORDER_CRIPPLE,
       SpecialEffect = @"Abilities\Spells\Human\Thunderclap\ThunderClapCaster.mdl"
     };
-    SpellSystem.Register(thunderClapGil);
+    SpellRegistry.Register(thunderClapGil);
 
     var massAntiMagicShell = new MassAnySpell(FourCC("A099"))
     {
@@ -41,7 +41,7 @@ public static class SpellsSetup
       CastFilter = CastFilters.IsTargetAllyAndAlive,
       TargetType = SpellTargetType.Point
     };
-    SpellSystem.Register(massAntiMagicShell);
+    SpellRegistry.Register(massAntiMagicShell);
 
     var massEnrage = new MassAnySpell(FourCC("A0QK"))
     {
@@ -51,7 +51,7 @@ public static class SpellsSetup
       CastFilter = CastFilters.IsTargetEnemyAndAlive,
       TargetType = SpellTargetType.Point
     };
-    SpellSystem.Register(massEnrage);
+    SpellRegistry.Register(massEnrage);
 
 
     var seismicShard = new MassAnySpell(ABILITY_A0OD_SEISMIC_SHARD_AZIL)
@@ -62,7 +62,7 @@ public static class SpellsSetup
       CastFilter = CastFilters.IsTargetEnemyAndAlive,
       TargetType = SpellTargetType.Point
     };
-    SpellSystem.Register(seismicShard);
+    SpellRegistry.Register(seismicShard);
 
 
     var burningVengeance = new VengeanceTrait(FourCC("O04H"), FourCC("A0OO"))
@@ -80,16 +80,16 @@ public static class SpellsSetup
 
 
     var demonSoulCooldown = new CooldownReset(ABILITY_A0HF_ABILITY_COOLDOWN_RESET);
-    SpellSystem.Register(demonSoulCooldown);
+    SpellRegistry.Register(demonSoulCooldown);
 
-    SpellSystem.Register(new MakeCasterVulnerable(ABILITY_A00M_SCROLL_TELE));
-    SpellSystem.Register(new MakeCasterVulnerable(ABILITY_A0CS_VASSAL_SCROLL_TELE));
-    SpellSystem.Register(new MakeCasterVulnerable(ABILITY_A002_SCROLL_TELE_TOWN));
-    SpellSystem.Register(new InstantKill(ABILITY_A126_SELF_DESTRUCT_SHARED)
+    SpellRegistry.Register(new MakeCasterVulnerable(ABILITY_A00M_SCROLL_TELE));
+    SpellRegistry.Register(new MakeCasterVulnerable(ABILITY_A0CS_VASSAL_SCROLL_TELE));
+    SpellRegistry.Register(new MakeCasterVulnerable(ABILITY_A002_SCROLL_TELE_TOWN));
+    SpellRegistry.Register(new InstantKill(ABILITY_A126_SELF_DESTRUCT_SHARED)
     {
       Target = InstantKill.KillTarget.Self
     });
-    SpellSystem.Register(new InstantKill(ABILITY_A041_SELF_DESTRUCT_WORKERS)
+    SpellRegistry.Register(new InstantKill(ABILITY_A041_SELF_DESTRUCT_WORKERS)
     {
       Target = InstantKill.KillTarget.Self
     });

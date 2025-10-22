@@ -20,7 +20,7 @@ public static class QuelthalasSpellSetup
       AngleOffset = 45,
       Effect = @"war3mapImported\Earth NovaTarget.mdx"
     };
-    SpellSystem.Register(summonGraniteGolems);
+    SpellRegistry.Register(summonGraniteGolems);
 
     var resurgentFlameStrike = new ResurgentSpell(ABILITY_A04H_RESURGENT_FLAME_STRIKE_QUEL_THALAS_KAEL_THAS,
       ABILITY_A0F9_RESURGENT_FLAME_STRIKE_QUEL_THALAS_KAEL_THAS_DUMMY, ORDER_FLAMESTRIKE)
@@ -28,7 +28,7 @@ public static class QuelthalasSpellSetup
       Duration = 14,
       Interval = 7
     };
-    SpellSystem.Register(resurgentFlameStrike);
+    SpellRegistry.Register(resurgentFlameStrike);
 
     var massBanish = new MassAnySpell(ABILITY_A0FD_MASS_BANISH_QUEL_THALAS_KAEL_THAS)
     {
@@ -38,7 +38,7 @@ public static class QuelthalasSpellSetup
       CastFilter = CastFilters.IsTargetOrganicAndAlive,
       TargetType = SpellTargetType.Point
     };
-    SpellSystem.Register(massBanish);
+    SpellRegistry.Register(massBanish);
 
     var siphoningRitual = new SiphoningRitualSpell(ABILITY_A0FA_SIPHONING_RITUAL_QUEL_THALAS_KAEL_THAS)
     {
@@ -52,7 +52,7 @@ public static class QuelthalasSpellSetup
       Radius = 225,
       Interval = 0.1f
     };
-    SpellSystem.Register(siphoningRitual);
+    SpellRegistry.Register(siphoningRitual);
 
     UnitTypeTraitRegistry.Register(new DefensiveOrbs(UNIT_H00Q_KING_OF_QUEL_THALAS_QUELTHALAS, ABILITY_A055_DEFENSIVE_ORBS_QUEL_THALAS_ANASTERIAN)
     {
