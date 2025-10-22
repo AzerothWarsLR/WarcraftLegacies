@@ -1,6 +1,6 @@
 ﻿using MacroTools.ChannelSystem;
 
-namespace MacroTools.Channels;
+namespace WarcraftLegacies.Source.Channels;
 
 public sealed class SummonLegionChannel : Channel
 {

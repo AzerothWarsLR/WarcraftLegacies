@@ -4,7 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.Libraries;
 using WCSharp.Lightnings;
 
-namespace MacroTools.Channels;
+namespace WarcraftLegacies.Source.Channels;
 
 /// <summary>
 /// Periodically transfer hitpoints and mana from the target to the caster.

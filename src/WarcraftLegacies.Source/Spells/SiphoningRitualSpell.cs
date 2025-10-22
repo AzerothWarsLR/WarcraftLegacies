@@ -1,8 +1,8 @@
 ﻿using System.Linq;
-using MacroTools.Channels;
 using MacroTools.ChannelSystem;
 using MacroTools.Spells;
 using MacroTools.Utils;
+using WarcraftLegacies.Source.Channels;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Spells;
