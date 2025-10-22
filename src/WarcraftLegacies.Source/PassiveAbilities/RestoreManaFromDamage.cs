@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities;
 /// <summary>
 /// The unit with this ability gains mana based on the damage they deal.
 /// </summary>
-public sealed class RestoreManaFromDamage : PassiveAbility, IAppliesEffectOnDamage
+public sealed class RestoreManaFromDamage : UnitTypeTrait, IAppliesEffectOnDamage
 {
   private readonly int _abilityTypeId;
 

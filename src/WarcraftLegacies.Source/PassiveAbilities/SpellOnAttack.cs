@@ -8,10 +8,10 @@ namespace WarcraftLegacies.Source.PassiveAbilities;
 /// <summary>
 /// When the unit deals damage, it has a chance to cast a dummy spell against that target.
 /// </summary>
-public sealed class SpellOnAttack : PassiveAbility, IAppliesEffectOnDamage
+public sealed class SpellOnAttack : UnitTypeTrait, IAppliesEffectOnDamage
 {
   /// <summary>
-  /// The unit type ID which has this <see cref="PassiveAbility"/> should also have an ability with this ID.
+  /// The unit type ID which has this <see cref="UnitTypeTrait"/> should also have an ability with this ID.
   /// </summary>
   public int AbilityTypeId { get; }
 

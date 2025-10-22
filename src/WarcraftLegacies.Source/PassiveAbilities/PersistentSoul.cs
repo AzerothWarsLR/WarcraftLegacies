@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities;
 /// <summary>
 /// When the unit dies, it reanimates nearby friendly units.
 /// </summary>
-public sealed class PersistentSoul : PassiveAbility, IEffectOnDeath
+public sealed class PersistentSoul : UnitTypeTrait, IEffectOnDeath
 {
   private readonly int _abilityTypeId;
 

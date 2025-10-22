@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities;
 /// <summary>
 /// Causes the unit to summon a unit upon death.
 /// </summary>
-public sealed class SummonUnitOnDeath : PassiveAbility, IEffectOnDeath
+public sealed class SummonUnitOnDeath : UnitTypeTrait, IEffectOnDeath
 {
   /// <summary>
   /// How long the summoned unit should last.

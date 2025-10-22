@@ -74,7 +74,7 @@ public sealed class QuestTitanJailors : QuestData
     var cthun = _allLegendSetup.Ahnqiraj.Cthun.Unit;
     if (cthun != null)
     {
-      PassiveAbilityManager.ForceOnCreated(cthun);
+      UnitTypeTraitRegistry.ForceOnCreated(cthun);
     }
   }
 

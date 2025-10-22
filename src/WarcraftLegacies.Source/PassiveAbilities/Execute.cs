@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities;
 /// <summary>
 /// Causes the unit to instantly kill enemies who drop below a certain threshold.
 /// </summary>
-public sealed class Execute : PassiveAbility, IAppliesEffectOnDamage
+public sealed class Execute : UnitTypeTrait, IAppliesEffectOnDamage
 {
   private const string Effect = "Objects\\Spawnmodels\\Human\\HumanLargeDeathExplode\\HumanLargeDeathExplode.mdl";
 

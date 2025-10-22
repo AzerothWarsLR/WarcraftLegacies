@@ -4,7 +4,7 @@ using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.PassiveAbilities;
 
-public sealed class SpellResistanceAura : PassiveAbility, IEffectOnCreated
+public sealed class SpellResistanceAura : UnitTypeTrait, IEffectOnCreated
 {
   public SpellResistanceAura(int unitTypeId) : base(unitTypeId)
   {

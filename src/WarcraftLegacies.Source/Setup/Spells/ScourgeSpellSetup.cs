@@ -22,7 +22,7 @@ public static class ScourgeSpellSetup
   {
     SpellSystem.Register(new SingleTargetRecall(ABILITY_A0W8_RECALL_FROZEN_THRONE));
 
-    PassiveAbilityManager.Register(new PersistentSoul(UNIT_N009_REVENANT_SCOURGE,
+    UnitTypeTraitRegistry.Register(new PersistentSoul(UNIT_N009_REVENANT_SCOURGE,
       ABILITY_A05L_PERSISTENT_SOUL_SCOURGE_REVENANT)
     {
       ReanimationCountLevel = 1,
@@ -63,12 +63,12 @@ public static class ScourgeSpellSetup
     };
     SpellSystem.Register(rendSoul);
 
-    PassiveAbilityManager.Register(new RemoveOnDeath(UNIT_N094_ICECROWN_OBELISK_SCOURGE)
+    UnitTypeTraitRegistry.Register(new RemoveOnDeath(UNIT_N094_ICECROWN_OBELISK_SCOURGE)
     {
       DeathEffectPath = @"Objects\Spawnmodels\Undead\UDeathSmall\UDeathSmall.mdl"
     });
 
-    PassiveAbilityManager.Register(new CreateUnitOnDeath(UNIT_UGHO_GHOUL_SCOURGE)
+    UnitTypeTraitRegistry.Register(new CreateUnitOnDeath(UNIT_UGHO_GHOUL_SCOURGE)
     {
       Duration = 30,
       CreateUnitTypeId = UNIT_U012_HALF_GHOUL_SCOURGE,
@@ -77,7 +77,7 @@ public static class ScourgeSpellSetup
       RequiredResearch = UPGRADE_R008_DOMINATION_POWER
     });
 
-    PassiveAbilityManager.Register(new CreateCorpseOnDeath(UNIT_U012_HALF_GHOUL_SCOURGE)
+    UnitTypeTraitRegistry.Register(new CreateCorpseOnDeath(UNIT_U012_HALF_GHOUL_SCOURGE)
     {
       CorpseUnitTypeId = UNIT_UGHO_GHOUL_SCOURGE,
       CorpseCount = 1
@@ -92,7 +92,7 @@ public static class ScourgeSpellSetup
       ManaRestorePercent = 0.36f
     });
 
-    PassiveAbilityManager.Register(new SummonUnitOnCast(UNIT_U00A_SCOURGE_COMMANDER_SCOURGE, ABILITY_ST52_ARMY_OF_THE_DEAD_SCOURGE)
+    UnitTypeTraitRegistry.Register(new SummonUnitOnCast(UNIT_U00A_SCOURGE_COMMANDER_SCOURGE, ABILITY_ST52_ARMY_OF_THE_DEAD_SCOURGE)
     {
       Duration = 45,
       SummonUnitTypeId = UNIT_NDR2_DARK_MINION_SCOURGE_DEATH_KNIGHT,
@@ -118,7 +118,7 @@ public static class ScourgeSpellSetup
       UNIT_U001_MASTER_OF_THE_CULT_OF_THE_DAMNED_SCOURGE_NECROMANCER,
       UNIT_UKTL_ARCHLICH_OF_THE_SCOURGE_SCOURGE_LICH
     };
-    PassiveAbilityManager.Register(new SummoningMastery(kelthuzadIds, ABILITY_AUAN_ANIMATE_DEAD_KEL_THUZAD)
+    UnitTypeTraitRegistry.Register(new SummoningMastery(kelthuzadIds, ABILITY_AUAN_ANIMATE_DEAD_KEL_THUZAD)
     {
       HitPointPercentageBonus = new LeveledAbilityField<float>
       {

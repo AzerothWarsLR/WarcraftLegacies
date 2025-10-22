@@ -48,7 +48,7 @@ public static class DraeneiSpellSetup
       Color = new Color(55, 50, 250, 255)
     });
 
-    PassiveAbilityManager.Register(new MassiveAttackAbility(UNIT_N0CX_LIGHTFORGED_WARFRAME_DRAENEI)
+    UnitTypeTraitRegistry.Register(new MassiveAttackAbility(UNIT_N0CX_LIGHTFORGED_WARFRAME_DRAENEI)
     {
       AttackDamagePercentage = 0.3f,
       Distance = 700

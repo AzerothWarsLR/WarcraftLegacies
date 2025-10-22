@@ -11,7 +11,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities;
 /// <summary>
 /// The unit with this ability gains health based on each target it deals damage to.
 /// </summary>
-public sealed class RestoreHealthFromEachTargetDamaged : PassiveAbility, IAppliesEffectOnDamage
+public sealed class RestoreHealthFromEachTargetDamaged : UnitTypeTrait, IAppliesEffectOnDamage
 {
   private readonly int _abilityTypeId;
 

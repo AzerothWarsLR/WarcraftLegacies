@@ -4,7 +4,7 @@ using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.PassiveAbilities;
 
-public sealed class ResurrectionAura : PassiveAbility, IEffectOnCreated
+public sealed class ResurrectionAura : UnitTypeTrait, IEffectOnCreated
 {
   public float ResurrectionChance { get; init; } = 0.99f;
 

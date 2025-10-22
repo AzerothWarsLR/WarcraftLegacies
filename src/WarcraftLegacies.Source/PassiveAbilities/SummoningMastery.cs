@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities;
 /// <summary>
 /// Causes the holder's summoned units to get stronger.
 /// </summary>
-public sealed class SummoningMastery : PassiveAbility, IEffectOnSummonedUnit
+public sealed class SummoningMastery : UnitTypeTrait, IEffectOnSummonedUnit
 {
   private readonly int _abilityTypeId;
 

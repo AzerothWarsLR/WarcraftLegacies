@@ -103,7 +103,7 @@ public sealed class Ahnqiraj : Faction
       UNIT_U00Z_OBSIDIAN_DESTROYER
     };
 
-    PassiveAbilityManager.Register(new DefensiveCocoonAbility(cocoonHeroes, ABILITY_ZBEG_DEFENSIVE_COCOON_AHN_QIRAJ)
+    UnitTypeTraitRegistry.Register(new DefensiveCocoonAbility(cocoonHeroes, ABILITY_ZBEG_DEFENSIVE_COCOON_AHN_QIRAJ)
     {
       MaximumHealthPercentage = 0.5f,
       Duration = 45,
@@ -112,7 +112,7 @@ public sealed class Ahnqiraj : Faction
       RequiredResearch = UPGRADE_ZBEH_DEFENSIVE_COCOOON_AHN_QIRAJ
     });
 
-    PassiveAbilityManager.Register(new Incubate(UNIT_H01N_VILE_CORRUPTER_CTHUN, ABILITY_ZBRD_INCUBATE_VILE_CORRUPTOR)
+    UnitTypeTraitRegistry.Register(new Incubate(UNIT_H01N_VILE_CORRUPTER_CTHUN, ABILITY_ZBRD_INCUBATE_VILE_CORRUPTOR)
     {
       HatchedUnitTypeId = UNIT_N06I_SOLDIER_CTHUN_SILITHID_WARRIOR,
       MaturationDuration = new LeveledAbilityField<float>
@@ -127,7 +127,7 @@ public sealed class Ahnqiraj : Faction
       Target = InstantKill.KillTarget.Self
     });
 
-    PassiveAbilityManager.Register(new SpellConductionAbility(UNIT_SL2O_OBSIDIAN_ERADICATOR_CTHUN)
+    UnitTypeTraitRegistry.Register(new SpellConductionAbility(UNIT_SL2O_OBSIDIAN_ERADICATOR_CTHUN)
     {
       RedirectionPercentage = 0.35f,
       RedirectableAttackTypes = new attacktype[]
@@ -170,14 +170,14 @@ public sealed class Ahnqiraj : Faction
       EffectScaleTarget = 1
     });
 
-    PassiveAbilityManager.Register(new HideousAppendages(UNIT_U00R_OLD_GOD_CTHUN)
+    UnitTypeTraitRegistry.Register(new HideousAppendages(UNIT_U00R_OLD_GOD_CTHUN)
     {
       TentacleUnitTypeId = UNIT_N073_TENTACLE_HIDEOUS_APPENDAGES_C_THUN,
       TentacleCount = 9,
       RadiusOffset = 520
     });
 
-    PassiveAbilityManager.Register(new InfiniteInfluence(UNIT_U00R_OLD_GOD_CTHUN)
+    UnitTypeTraitRegistry.Register(new InfiniteInfluence(UNIT_U00R_OLD_GOD_CTHUN)
     {
       Radius = 800
     });
@@ -201,7 +201,7 @@ public sealed class Ahnqiraj : Faction
       }
     });
 
-    PassiveAbilityManager.Register(new MassiveAttackAbility(UNIT_ZBTH_TENTACLE_SPAWN_TENTACLE_C_THUN)
+    UnitTypeTraitRegistry.Register(new MassiveAttackAbility(UNIT_ZBTH_TENTACLE_SPAWN_TENTACLE_C_THUN)
     {
       AttackDamagePercentage = 1,
       Distance = 400,

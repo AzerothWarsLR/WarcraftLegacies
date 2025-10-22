@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities;
 /// <summary>
 /// Any unit with this effect increases its owner's income.
 /// </summary>
-public sealed class ProvidesIncome : PassiveAbility, IEffectOnUpgrade, IEffectOnConstruction, IEffectOnCreated
+public sealed class ProvidesIncome : UnitTypeTrait, IEffectOnUpgrade, IEffectOnConstruction, IEffectOnCreated
 {
   private readonly int _income;
 

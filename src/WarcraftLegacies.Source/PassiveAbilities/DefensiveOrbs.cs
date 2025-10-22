@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities;
 /// <summary>
 /// The hero gains arcane orbs when casting abilities, which then collide with enemy units to deal damage.
 /// </summary>
-public sealed class DefensiveOrbs : PassiveAbility, IEffectOnSpellEffect
+public sealed class DefensiveOrbs : UnitTypeTrait, IEffectOnSpellEffect
 {
   /// <summary>
   /// The radius in which the orbs orbit.

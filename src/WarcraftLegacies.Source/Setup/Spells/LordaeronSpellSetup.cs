@@ -66,6 +66,6 @@ public static class LordaeronSpellSetup
       DummyOrderId = ORDER_RESURRECTION,
       ProcChance = 0.2f
     };
-    PassiveAbilityManager.Register(willoftheAshbringer);
+    UnitTypeTraitRegistry.Register(willoftheAshbringer);
   }
 }

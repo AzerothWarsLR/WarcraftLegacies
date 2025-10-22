@@ -119,7 +119,7 @@ public sealed class Skywall : Faction
       ProcChance = 0.20f,
       RequiredResearch = UPGRADE_RELP_SHOCKING_BLADES_SKYWALL
     };
-    PassiveAbilityManager.Register(purgeAttack);
+    UnitTypeTraitRegistry.Register(purgeAttack);
 
 
     var waterPrison = new SpellOnAttack(UNIT_N08S_ELEMENTAL_LORD_SKYWALL,
@@ -131,7 +131,7 @@ public sealed class Skywall : Faction
       Cooldown = 10f,
       RequiredResearch = UPGRADE_RSW3_QUEST_COMPLETED_SUBDUING_NEPTULON
     };
-    PassiveAbilityManager.Register(waterPrison);
+    UnitTypeTraitRegistry.Register(waterPrison);
 
     var earthProtectionHero = new AnySpellNoTarget(ABILITY_A0Y4_EARTH_PROTECTION_ELEMENTAL_LORD)
     {

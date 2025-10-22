@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities;
 /// <summary>
 /// Causes the unit to summon a number of units whenever they cast a spell.
 /// </summary>
-public sealed class SummonUnitOnCast : PassiveAbility, IEffectOnSpellEffect
+public sealed class SummonUnitOnCast : UnitTypeTrait, IEffectOnSpellEffect
 {
   private readonly int _abilityTypeId;
 

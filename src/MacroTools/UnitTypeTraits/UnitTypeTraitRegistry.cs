@@ -7,15 +7,15 @@ using WCSharp.Events;
 namespace MacroTools.UnitTypeTraits;
 
 /// <summary>
-/// Responsible for registering the events that allow <see cref="PassiveAbility"/> instances to work.
+/// Responsible for registering the events that allow <see cref="UnitTypeTrait"/> instances to work.
 /// </summary>
-public static class PassiveAbilityManager
+public static class UnitTypeTraitRegistry
 {
-  private static readonly Dictionary<int, List<PassiveAbility>> _passiveAbilitiesByUnitTypeId = new();
+  private static readonly Dictionary<int, List<UnitTypeTrait>> _unitTypeTraitsByUnitTypeId = new();
 
   /// <summary>
   /// Iterates across all units on the map, and fires the <see cref="IEffectOnCreated.OnCreated"/>
-  /// for any <see cref="PassiveAbility"/>s it finds. This should be run at game start to ensure that preplaced units
+  /// for any <see cref="UnitTypeTrait"/>s it finds. This should be run at game start to ensure that preplaced units
   /// are initialized correctly.
   /// </summary>
   public static void InitializePreplacedUnits()
@@ -30,69 +30,65 @@ public static class PassiveAbilityManager
   }
 
   /// <summary>
-  /// Finds any <see cref="PassiveAbility"/>s on the specified unit and forcibly fires <see cref="IEffectOnCreated.OnCreated"/>
+  /// Finds any <see cref="UnitTypeTrait"/>s on the specified unit and forcibly fires <see cref="IEffectOnCreated.OnCreated"/>
   /// for each of them. Usually <see cref="InitializePreplacedUnits"/> should have covered this already.
   /// </summary>
   public static void ForceOnCreated(unit whichUnit)
   {
-    if (!_passiveAbilitiesByUnitTypeId.TryGetValue(whichUnit.UnitType, out var passiveAbilities))
+    if (!_unitTypeTraitsByUnitTypeId.TryGetValue(whichUnit.UnitType, out var unitTypeTraits))
     {
       return;
     }
 
-    foreach (var passiveAbility in passiveAbilities)
+    foreach (var unitTypeTrait in unitTypeTraits)
     {
-      if (passiveAbility is IEffectOnCreated effectOnCreated)
+      if (unitTypeTrait is IEffectOnCreated effectOnCreated)
       {
         effectOnCreated.OnCreated(whichUnit);
       }
     }
   }
 
-  /// <summary>
-  /// Registeres the provided passive ability to the <see cref="SpellSystem"/>, causing its functionality
-  /// to be invoked when specific Warcraft 3 events occur.
-  /// </summary>
-  public static void Register(TakeDamagePassiveAbility takeDamagePassiveAbility)
+  public static void Register(TakeDamageUnitTypeTrait takeDamageUnitTypeTrait)
   {
-    foreach (var unit in takeDamagePassiveAbility.DamagedUnitTypeIds)
+    foreach (var unit in takeDamageUnitTypeTrait.DamagedUnitTypeIds)
     {
-      PlayerUnitEvents.Register(UnitTypeEvent.IsDamaged, takeDamagePassiveAbility.OnTakesDamage, unit);
+      PlayerUnitEvents.Register(UnitTypeEvent.IsDamaged, takeDamageUnitTypeTrait.OnTakesDamage, unit);
     }
   }
 
   /// <summary>
-  /// Registers the provided passive ability, causing its functionality to be invoked when specific Warcraft 3 events occur.
+  /// Registers the provided <see cref="UnitTypeTrait"/>, causing its functionality to be invoked when specific Warcraft 3 events occur.
   /// </summary>
-  public static void Register(PassiveAbility passiveAbility)
+  public static void Register(UnitTypeTrait unitTypeTrait)
   {
     try
     {
-      RegisterEvents(passiveAbility);
-      foreach (var unitTypeId in passiveAbility.UnitTypeIds)
+      RegisterEvents(unitTypeTrait);
+      foreach (var unitTypeId in unitTypeTrait.UnitTypeIds)
       {
-        if (!_passiveAbilitiesByUnitTypeId.TryGetValue(unitTypeId, out var passiveAbilities))
+        if (!_unitTypeTraitsByUnitTypeId.TryGetValue(unitTypeId, out var unitTypeTraits))
         {
-          passiveAbilities = _passiveAbilitiesByUnitTypeId[unitTypeId] = new List<PassiveAbility>();
+          unitTypeTraits = _unitTypeTraitsByUnitTypeId[unitTypeId] = new List<UnitTypeTrait>();
         }
 
-        passiveAbilities.Add(passiveAbility);
+        unitTypeTraits.Add(unitTypeTrait);
 
-        passiveAbility.OnRegistered();
+        unitTypeTrait.OnRegistered();
       }
     }
     catch (Exception ex)
     {
       Console.WriteLine(
-        $"Failed to register {nameof(PassiveAbility)} for {GetObjectName(passiveAbility.UnitTypeIds.First())}: {ex}");
+        $"Failed to register {nameof(UnitTypeTrait)} for {GetObjectName(unitTypeTrait.UnitTypeIds.First())}: {ex}");
     }
   }
 
-  private static void RegisterEvents(PassiveAbility passiveAbility)
+  private static void RegisterEvents(UnitTypeTrait unitTypeTrait)
   {
-    foreach (var unitTypeId in passiveAbility.UnitTypeIds)
+    foreach (var unitTypeId in unitTypeTrait.UnitTypeIds)
     {
-      switch (passiveAbility)
+      switch (unitTypeTrait)
       {
         case IEffectOnCreated effectOnCreated:
           void UnitCreated() => effectOnCreated.OnCreated(@event.Unit);

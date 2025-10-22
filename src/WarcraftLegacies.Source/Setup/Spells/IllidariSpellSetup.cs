@@ -9,12 +9,12 @@ using WCSharp.Shared.Data;
 namespace WarcraftLegacies.Source.Setup.Spells;
 
 /// <summary>
-/// Responsible for setting up all Illidari <see cref="Spell"/>s and <see cref="PassiveAbility"/>s.
+/// Responsible for setting up all Illidari <see cref="Spell"/>s and <see cref="UnitTypeTrait"/>s.
 /// </summary>
 public static class IllidariSpellSetup
 {
   /// <summary>
-  /// Sets up all Illidari <see cref="Spell"/>s and <see cref="PassiveAbility"/>s.
+  /// Sets up all Illidari <see cref="Spell"/>s and <see cref="UnitTypeTrait"/>s.
   /// </summary>
   public static void Setup()
   {
@@ -46,7 +46,7 @@ public static class IllidariSpellSetup
       EffectScale = 1.2f,
       DamageType = damagetype.Magic
     };
-    PassiveAbilityManager.Register(warglaivesOfAzzinoth);
+    UnitTypeTraitRegistry.Register(warglaivesOfAzzinoth);
 
     var shadowAssault = new ShadowAssaultSpell(ABILITY_A0TP_SHADOW_ASSAULT_AKAMA)
     {
@@ -71,7 +71,7 @@ public static class IllidariSpellSetup
       LevelHeroMultiplier = 0.15f,
       OnlyAttackDamage = true
     };
-    PassiveAbilityManager.Register(cripplingStrike);
+    UnitTypeTraitRegistry.Register(cripplingStrike);
 
     SpellSystem.Register(new AddAbilityOnLearn(ABILITY_A01Q_SHADOW_AURA_AKAMA)
     {

@@ -72,19 +72,19 @@ public sealed class BlackEmpire : Faction
 
   private static void RegisterSpells()
   {
-    PassiveAbilityManager.Register(new HideousAppendages(UNIT_U01Z_OLD_GOD_NZOTH)
+    UnitTypeTraitRegistry.Register(new HideousAppendages(UNIT_U01Z_OLD_GOD_NZOTH)
     {
       TentacleUnitTypeId = UNIT_N098_NZOTHTENTACLE_HIDEOUS_APPENDAGES_N_ZOTH,
       TentacleCount = 9,
       RadiusOffset = 520
     });
 
-    PassiveAbilityManager.Register(new InfiniteInfluence(UNIT_U01Z_OLD_GOD_NZOTH)
+    UnitTypeTraitRegistry.Register(new InfiniteInfluence(UNIT_U01Z_OLD_GOD_NZOTH)
     {
       Radius = 800
     });
 
-    PassiveAbilityManager.Register(new NoTargetSpellOnCast(UNIT_E01D_HARBINGER_OF_NY_ALOTHA_NZOTH, ABILITY_AXK2_VOID_RIFT_ICON_XKORR)
+    UnitTypeTraitRegistry.Register(new NoTargetSpellOnCast(UNIT_E01D_HARBINGER_OF_NY_ALOTHA_NZOTH, ABILITY_AXK2_VOID_RIFT_ICON_XKORR)
     {
       DummyAbilityId = ABILITY_AXK1_VOIDBOLTDUMMY_X_KORR_DUMMY_SPELL,
       DummyOrderId = ORDER_FAN_OF_KNIVES,
@@ -118,7 +118,7 @@ public sealed class BlackEmpire : Faction
       DummyOrderId = ORDER_PARASITE,
       ProcChance = 1.0f
     };
-    PassiveAbilityManager.Register(genesisAttack);
+    UnitTypeTraitRegistry.Register(genesisAttack);
 
     var shadowVeilPassive = new NoTargetSpellOnAttack(UNIT_N0AH_DEFORMED_CHIMERA_NZOTH,
 ABILITY_ABEV_SHADOW_VEIL)
@@ -128,7 +128,7 @@ ABILITY_ABEV_SHADOW_VEIL)
       ProcChance = 0.10f,
       RequiredResearch = UPGRADE_RBEV_SHADOW_VEIL_BLACK_EMPIRE
     };
-    PassiveAbilityManager.Register(shadowVeilPassive);
+    UnitTypeTraitRegistry.Register(shadowVeilPassive);
 
     var shadowVeilSpell = new MassAnySpell(ABILITY_ABSV_SHADOW_VEIL_SHADOW_VEIL_REAL)
     {
@@ -147,7 +147,7 @@ ABILITY_ABEV_SHADOW_VEIL)
       DummyOrderId = ORDER_SLOW,
       ProcChance = 0.2f
     };
-    PassiveAbilityManager.Register(paralysingFear);
+    UnitTypeTraitRegistry.Register(paralysingFear);
 
     var greaterParalysingFear = new SpellOnAttack(UNIT_H09F_DEEP_FIEND_NZOTH,
       ABILITY_ABGP_GREATER_PARALYSING_FEAR)
@@ -156,6 +156,6 @@ ABILITY_ABEV_SHADOW_VEIL)
       DummyOrderId = ORDER_SLOW,
       ProcChance = 0.4f
     };
-    PassiveAbilityManager.Register(greaterParalysingFear);
+    UnitTypeTraitRegistry.Register(greaterParalysingFear);
   }
 }

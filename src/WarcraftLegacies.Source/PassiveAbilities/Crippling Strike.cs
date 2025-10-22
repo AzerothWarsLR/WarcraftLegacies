@@ -6,7 +6,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities;
 /// <summary>
 /// Applies a damage multiplier to attacks based on ability level (only affects attack damage).
 /// </summary>
-public sealed class DamageMultiplierOnAttack : PassiveAbility, IAppliesEffectOnDamage
+public sealed class DamageMultiplierOnAttack : UnitTypeTrait, IAppliesEffectOnDamage
 {
   /// <summary>Unit type ID that triggers this effect</summary>
   public int CasterUnitTypeId { get; }

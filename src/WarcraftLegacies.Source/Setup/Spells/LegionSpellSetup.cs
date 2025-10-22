@@ -112,7 +112,7 @@ public static class LegionSpellSetup
       UNIT_U00L_ENVOY_OF_ARCHIMONDE_LEGION
     };
 
-    PassiveAbilityManager.Register(new RestoreHealthFromEachTargetDamaged(dreadlordHeroes, ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS)
+    UnitTypeTraitRegistry.Register(new RestoreHealthFromEachTargetDamaged(dreadlordHeroes, ABILITY_VP02_VAMPIRIC_SIPHON_LEGION_DREADLORDS)
     {
       HealthPerTarget = new LeveledAbilityField<int>
       {
@@ -128,7 +128,7 @@ public static class LegionSpellSetup
       UNIT_U007_DREADLORD_LEGION_ELITE,
       UNIT_N04O_DOOM_LORD_LEGION };
 
-    PassiveAbilityManager.Register(new RestoreHealthFromEachTargetDamaged(elites, ABILITY_VP08_VAMPIRIC_SIPHON_LEGION_ELITES)
+    UnitTypeTraitRegistry.Register(new RestoreHealthFromEachTargetDamaged(elites, ABILITY_VP08_VAMPIRIC_SIPHON_LEGION_ELITES)
     {
       HealthPerTarget = new LeveledAbilityField<int>
       {

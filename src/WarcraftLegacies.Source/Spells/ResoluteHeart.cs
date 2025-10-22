@@ -7,10 +7,10 @@ namespace WarcraftLegacies.Source.Spells;
 /// <summary>
 /// When a unit with this ability deals physical/normal damage, it heals allies in a radius around itself.
 /// </summary>
-public sealed class ResoluteHeart : PassiveAbility, IAppliesEffectOnDamage
+public sealed class ResoluteHeart : UnitTypeTrait, IAppliesEffectOnDamage
 {
   /// <summary>
-  /// The unit type ID which has this <see cref="PassiveAbility"/> should also have an ability with this ID.
+  /// The unit type ID which has this <see cref="UnitTypeTrait"/> should also have an ability with this ID.
   /// </summary>
   public int AbilityTypeId { get; }
 
