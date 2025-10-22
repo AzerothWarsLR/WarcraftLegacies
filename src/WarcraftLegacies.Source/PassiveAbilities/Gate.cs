@@ -1,7 +1,7 @@
 ﻿using MacroTools.PassiveAbilitySystem;
 using MacroTools.Systems;
 
-namespace MacroTools.PassiveAbilities;
+namespace WarcraftLegacies.Source.PassiveAbilities;
 
 /// <summary>
 /// Gates are buildings that can open and close.

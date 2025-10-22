@@ -2,7 +2,7 @@
 using MacroTools.PassiveAbilitySystem;
 using WCSharp.Buffs;
 
-namespace MacroTools.PassiveAbilities;
+namespace WarcraftLegacies.Source.PassiveAbilities;
 
 /// <summary>
 /// Any unit with this effect increases its owner's income.

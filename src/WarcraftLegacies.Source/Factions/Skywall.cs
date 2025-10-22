@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using MacroTools.FactionSystem;
-using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Powers;
 using MacroTools.ResearchSystems;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Shared.FactionObjectLimits;
+using WarcraftLegacies.Source.PassiveAbilities;
 using WarcraftLegacies.Source.Quests.Skywall;
 using WarcraftLegacies.Source.Researches;
 using WarcraftLegacies.Source.Setup;

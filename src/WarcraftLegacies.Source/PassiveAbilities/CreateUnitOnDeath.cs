@@ -2,12 +2,12 @@
 using MacroTools.PassiveAbilitySystem;
 using WCSharp.Effects;
 
-namespace MacroTools.PassiveAbilities;
+namespace WarcraftLegacies.Source.PassiveAbilities;
 
 /// <summary>
-/// Causes the unit to summon a unit upon death.
+/// Causes the unit to create a unit upon death.
 /// </summary>
-public sealed class SummonUnitOnDeath : PassiveAbility, IEffectOnDeath
+public sealed class CreateUnitOnDeath : PassiveAbility, IEffectOnDeath
 {
   /// <summary>
   /// How long the summoned unit should last.
@@ -17,12 +17,12 @@ public sealed class SummonUnitOnDeath : PassiveAbility, IEffectOnDeath
   /// <summary>
   /// The unit type to summon on death.
   /// </summary>
-  public int SummonUnitTypeId { get; init; }
+  public int CreateUnitTypeId { get; init; }
 
   /// <summary>
   /// How many units to summon.
   /// </summary>
-  public int SummonCount { get; init; } = 1;
+  public int CreateCount { get; init; } = 1;
 
   /// <summary>
   /// The special effect that appears when the ability triggers.
@@ -35,7 +35,7 @@ public sealed class SummonUnitOnDeath : PassiveAbility, IEffectOnDeath
   public int RequiredResearch { get; init; }
 
   /// <inheritdoc />
-  public SummonUnitOnDeath(int unitTypeId) : base(unitTypeId)
+  public CreateUnitOnDeath(int unitTypeId) : base(unitTypeId)
   {
   }
 
@@ -51,11 +51,10 @@ public sealed class SummonUnitOnDeath : PassiveAbility, IEffectOnDeath
     var triggerUnitX = triggerUnit.X;
     var triggerUnitY = triggerUnit.Y;
 
-    for (var i = 0; i < SummonCount; i++)
+    for (var i = 0; i < CreateCount; i++)
     {
-      var summonedUnit = unit.Create(triggerUnit.Owner, SummonUnitTypeId, triggerUnitX, triggerUnitY, triggerUnit.Facing);
-      summonedUnit.AddType(unittype.Summoned);
-      summonedUnit.SetTimedLife(Duration);
+      unit.Create(triggerUnit.Owner, CreateUnitTypeId, triggerUnitX, triggerUnitY, triggerUnit.Facing)
+        .SetTimedLife(Duration);
     }
 
     EffectSystem.Add(effect.Create(SpecialEffectPath, triggerUnitX, triggerUnitY), 1);

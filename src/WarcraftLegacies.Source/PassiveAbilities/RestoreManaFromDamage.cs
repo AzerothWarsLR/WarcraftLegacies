@@ -3,7 +3,7 @@ using MacroTools.Data;
 using MacroTools.PassiveAbilitySystem;
 using WCSharp.Effects;
 
-namespace MacroTools.PassiveAbilities;
+namespace WarcraftLegacies.Source.PassiveAbilities;
 
 /// <summary>
 /// The unit with this ability gains mana based on the damage they deal.

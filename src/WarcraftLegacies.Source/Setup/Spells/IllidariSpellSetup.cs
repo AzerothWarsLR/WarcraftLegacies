@@ -1,5 +1,4 @@
 ﻿using MacroTools.Data;
-using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.SpellSystem;
 using WarcraftLegacies.Source.PassiveAbilities;

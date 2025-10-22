@@ -4,7 +4,7 @@ using MacroTools.Utils;
 using WCSharp.Events;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.PassiveAbilities;
+namespace WarcraftLegacies.Source.PassiveAbilities;
 
 /// <summary>
 ///   Prevents the unit from casting abilities that aren't within range of a player-controlled hero.

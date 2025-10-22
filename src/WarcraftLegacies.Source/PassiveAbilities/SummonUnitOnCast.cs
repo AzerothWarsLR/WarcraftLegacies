@@ -4,7 +4,7 @@ using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
 using WCSharp.Effects;
 
-namespace MacroTools.PassiveAbilities;
+namespace WarcraftLegacies.Source.PassiveAbilities;
 
 /// <summary>
 /// Causes the unit to summon a number of units whenever they cast a spell.

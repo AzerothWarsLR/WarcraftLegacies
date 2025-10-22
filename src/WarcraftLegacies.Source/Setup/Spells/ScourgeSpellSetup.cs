@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using MacroTools.Data;
-using MacroTools.PassiveAbilities;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.Spells;
 using MacroTools.SpellSystem;

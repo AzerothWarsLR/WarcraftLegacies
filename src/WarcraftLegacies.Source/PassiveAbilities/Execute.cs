@@ -2,7 +2,7 @@
 using MacroTools.Extensions;
 using MacroTools.PassiveAbilitySystem;
 
-namespace MacroTools.PassiveAbilities;
+namespace WarcraftLegacies.Source.PassiveAbilities;
 
 /// <summary>
 /// Causes the unit to instantly kill enemies who drop below a certain threshold.

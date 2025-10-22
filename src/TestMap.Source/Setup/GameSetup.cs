@@ -24,7 +24,6 @@ public static class GameSetup
     ArtifactSetup.Setup();
     ControlPointSetup.Setup();
     AllQuestSetup.Setup();
-    SpellSetup.Setup();
     CheatSetup.Setup(new CommandManager());
     FactionMultiboard.Setup();
     BookSetup.Setup();
