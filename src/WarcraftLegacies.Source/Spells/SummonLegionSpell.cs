@@ -1,4 +1,4 @@
-﻿using MacroTools.ChannelSystem;
+﻿using MacroTools.Channels;
 using MacroTools.Extensions;
 using MacroTools.Instances;
 using MacroTools.Spells;

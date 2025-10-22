@@ -1,6 +1,6 @@
 ﻿using WCSharp.Events;
 
-namespace MacroTools.ChannelSystem;
+namespace MacroTools.Channels;
 
 /// <summary>
 ///   Responsible for managing all <see cref="Channel" />s in the game.

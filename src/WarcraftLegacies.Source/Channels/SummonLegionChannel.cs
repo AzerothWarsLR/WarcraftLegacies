@@ -1,4 +1,4 @@
-﻿using MacroTools.ChannelSystem;
+﻿using MacroTools.Channels;
 
 namespace WarcraftLegacies.Source.Channels;
 
