@@ -5,7 +5,7 @@ using MacroTools.SpellSystem;
 using WCSharp.Buffs;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.Spells;
+namespace WarcraftLegacies.Source.Spells;
 
 /// <summary>
 /// add specific abilities to the caster for a limited duration.

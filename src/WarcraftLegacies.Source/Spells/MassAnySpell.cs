@@ -4,7 +4,7 @@ using MacroTools.DummyCasters;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.Spells;
+namespace WarcraftLegacies.Source.Spells;
 
 public sealed class MassAnySpell : Spell
 {

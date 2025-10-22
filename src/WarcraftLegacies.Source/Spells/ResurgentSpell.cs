@@ -3,7 +3,7 @@ using MacroTools.Hazards;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.Spells;
+namespace WarcraftLegacies.Source.Spells;
 
 /// <summary>
 /// Repeatedly casts a spell at the target location.

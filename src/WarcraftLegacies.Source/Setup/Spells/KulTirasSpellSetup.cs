@@ -1,6 +1,6 @@
 ﻿using MacroTools.DummyCasters;
-using MacroTools.Spells;
 using MacroTools.SpellSystem;
+using WarcraftLegacies.Source.Spells;
 using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.Setup.Spells;

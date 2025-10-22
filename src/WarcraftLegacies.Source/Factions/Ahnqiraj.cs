@@ -4,7 +4,6 @@ using MacroTools.Data;
 using MacroTools.FactionSystem;
 using MacroTools.PassiveAbilitySystem;
 using MacroTools.ResearchSystems;
-using MacroTools.Spells;
 using MacroTools.SpellSystem;
 using MacroTools.Systems;
 using WarcraftLegacies.Shared.FactionObjectLimits;

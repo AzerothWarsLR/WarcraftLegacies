@@ -3,7 +3,7 @@ using MacroTools.Extensions;
 using MacroTools.SpellSystem;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.Spells;
+namespace WarcraftLegacies.Source.Spells;
 
 /// <summary>
 /// Opens a two-way Waygate for as long as the caster keeps channeling.

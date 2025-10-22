@@ -4,7 +4,7 @@ using MacroTools.Utils;
 using WCSharp.Effects;
 using WCSharp.Shared.Data;
 
-namespace MacroTools.Spells;
+namespace WarcraftLegacies.Source.Spells;
 
 /// <summary>
 /// Deals damage and casts a dummy spell at each unit in the area.
