@@ -12,7 +12,7 @@ public static class WarsongSpellSetup
   /// </summary>
   public static void Setup()
   {
-    PassiveAbilityManager.Register(new Execute(UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG)
+    UnitTypeTraitRegistry.Register(new Execute(UNIT_OGRH_CHIEFTAIN_OF_THE_WARSONG_CLAN_WARSONG)
     {
       DamageMultNonResistant = 4,
       DamageMultResistant = 1.5f,
@@ -38,7 +38,7 @@ public static class WarsongSpellSetup
       BaseProcChance = 0.1f,
       EffectPath = @"Abilities\Spells\Human\Heal\HealTarget.mdl"
     };
-    PassiveAbilityManager.Register(resoluteHeart);
+    UnitTypeTraitRegistry.Register(resoluteHeart);
 
     var stormEarthandFire = new StormEarthandFire(ABILITY_A0HM_STORM_EARTH_AND_FIRE_WARSONG_CHEN_SUMMON)
     {

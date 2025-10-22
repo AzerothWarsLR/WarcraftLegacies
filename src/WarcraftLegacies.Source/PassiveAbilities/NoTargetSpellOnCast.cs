@@ -7,10 +7,10 @@ namespace WarcraftLegacies.Source.PassiveAbilities;
 /// <summary>
 /// When the unit deals casts a spell, it has a chance to cast a dummy spell without a target.
 /// </summary>
-public sealed class NoTargetSpellOnCast : PassiveAbility, IEffectOnSpellEffect
+public sealed class NoTargetSpellOnCast : UnitTypeTrait, IEffectOnSpellEffect
 {
   /// <summary>
-  /// The unit type ID which has this <see cref="PassiveAbility"/> should also have an ability with this ID.
+  /// The unit type ID which has this <see cref="UnitTypeTrait"/> should also have an ability with this ID.
   /// </summary>
   private readonly int _abilityTypeId;
 

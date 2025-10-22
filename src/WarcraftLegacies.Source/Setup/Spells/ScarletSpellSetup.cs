@@ -10,7 +10,7 @@ public static class ScarletSpellSetup
 {
   public static void Setup()
   {
-    PassiveAbilityManager.Register(new NoTargetSpellOnCast(UNIT_H08H_HIGH_INQUISITOR_SCARLET, ABILITY_Z3X2_HEALING_FRENZY_ICON_SALLY)
+    UnitTypeTraitRegistry.Register(new NoTargetSpellOnCast(UNIT_H08H_HIGH_INQUISITOR_SCARLET, ABILITY_Z3X2_HEALING_FRENZY_ICON_SALLY)
     {
       DummyAbilityId = ABILITY_Z3X9_HEALING_FRENZY_SALLY_DUMMY,
       DummyOrderId = ORDER_FAN_OF_KNIVES,
@@ -37,7 +37,7 @@ public static class ScarletSpellSetup
     };
     SpellSystem.Register(crusaderShout);
 
-    PassiveAbilityManager.Register(new SummonUnitOnDeath(UNIT_N09N_BISHOP_OF_THE_LIGHT_SCARLET)
+    UnitTypeTraitRegistry.Register(new SummonUnitOnDeath(UNIT_N09N_BISHOP_OF_THE_LIGHT_SCARLET)
     {
       Duration = 30,
       SummonUnitTypeId = UNIT_ST6W_UNHOLY_ARCHON_SCARLET_QUEST,

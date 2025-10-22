@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.Incubate;
 /// <summary>
 /// Causes summoned units mature after some time, allowing it to hatch.
 /// </summary>
-public sealed class Incubate : PassiveAbility, IEffectOnSummonedUnit
+public sealed class Incubate : UnitTypeTrait, IEffectOnSummonedUnit
 {
   private readonly int _abilityTypeId;
 

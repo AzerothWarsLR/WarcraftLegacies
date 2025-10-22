@@ -12,7 +12,7 @@ public static class SentinelSpellSetup
 {
   public static void Setup()
   {
-    PassiveAbilityManager.Register(new DefensiveOrbs(UNIT_E025_LIEUTENANT_OF_THE_WATCHERS_SENTINELS, ABILITY_A10A_GLAIVE_STORM_ICON_NAISHA)
+    UnitTypeTraitRegistry.Register(new DefensiveOrbs(UNIT_E025_LIEUTENANT_OF_THE_WATCHERS_SENTINELS, ABILITY_A10A_GLAIVE_STORM_ICON_NAISHA)
     {
       OrbitRadius = 350,
       OrbitalPeriod = 4,
@@ -39,7 +39,7 @@ ABILITY_A017_TAKE_VENGEANCE_SENTINELS_MAIEV)
       Duration = 20,
       ReviveEffect = "Heal Blue.mdx"
     };
-    PassiveAbilityManager.Register(maievVengeance);
+    UnitTypeTraitRegistry.Register(maievVengeance);
 
     var elunesGaze = new MassAnySpell(ABILITY_ASEG_ELUNE_S_GAZE_SENTINELS_REAL)
     {

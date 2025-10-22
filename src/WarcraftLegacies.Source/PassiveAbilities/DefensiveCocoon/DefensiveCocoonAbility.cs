@@ -10,7 +10,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.DefensiveCocoon;
 /// If they attack enough times while a Spirit, they revive with some health.
 /// Otherwise, they die.
 /// </summary>
-public sealed class DefensiveCocoonAbility : TakeDamagePassiveAbility
+public sealed class DefensiveCocoonAbility : TakeDamageUnitTypeTrait
 {
   /// <summary>
   /// If set, this needs to be researched for the ability to work.

@@ -8,7 +8,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities.Vengeance;
 /// If they attack enough times while a Spirit, they revive with some health.
 /// Otherwise, they die.
 /// </summary>
-public sealed class VengeanceAbility : TakeDamagePassiveAbility
+public sealed class VengeanceAbility : TakeDamageUnitTypeTrait
 {
   /// <summary>
   /// How much extra damage the vengenace form has.

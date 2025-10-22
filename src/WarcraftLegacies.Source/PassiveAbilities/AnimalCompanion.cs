@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities;
 /// <summary>
 ///   The ability holder summons a unit whenever it attacks, up to one unit alive at a time.
 /// </summary>
-public sealed class AnimalCompanion : PassiveAbility, IAppliesEffectOnDamage
+public sealed class AnimalCompanion : UnitTypeTrait, IAppliesEffectOnDamage
 {
   private readonly int _summonUnitTypeId;
 

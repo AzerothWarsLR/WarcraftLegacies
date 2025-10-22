@@ -3,7 +3,7 @@ using WCSharp.Buffs;
 
 namespace WarcraftLegacies.Source.PassiveAbilities.SpellConduction;
 
-public sealed class SpellConductionAbility : PassiveAbility, IEffectOnCreated
+public sealed class SpellConductionAbility : UnitTypeTrait, IEffectOnCreated
 {
   /// <summary>
   /// The research required for this ability to work.

@@ -7,10 +7,10 @@ namespace WarcraftLegacies.Source.PassiveAbilities;
 /// <summary>
 /// When the unit deals damage, it has a chance to cast a dummy spell without a target.
 /// </summary>
-public sealed class ChannelSpellOnAttack : PassiveAbility, IAppliesEffectOnDamage
+public sealed class ChannelSpellOnAttack : UnitTypeTrait, IAppliesEffectOnDamage
 {
   /// <summary>
-  /// The unit type ID which has this <see cref="PassiveAbility"/> should also have an ability with this ID.
+  /// The unit type ID which has this <see cref="UnitTypeTrait"/> should also have an ability with this ID.
   /// </summary>
   public int AbilityTypeId { get; }
 

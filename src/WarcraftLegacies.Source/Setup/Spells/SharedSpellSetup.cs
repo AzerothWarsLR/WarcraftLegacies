@@ -8,7 +8,7 @@ public static class SharedSpellSetup
 {
   public static void Setup()
   {
-    PassiveAbilityManager.Register(
+    UnitTypeTraitRegistry.Register(
       new RestoreManaFromDamage(
         new[]
         {
@@ -25,6 +25,6 @@ public static class SharedSpellSetup
         Effect = @"Abilities\Spells\Undead\ReplenishMana\SpiritTouchTarget.mdl"
       });
 
-    PassiveAbilityManager.Register(new ProvidesIncome(UNIT_NBOT_GOBLIN_PRIVATEER_NEUTRAL_GOBLIN, -2));
+    UnitTypeTraitRegistry.Register(new ProvidesIncome(UNIT_NBOT_GOBLIN_PRIVATEER_NEUTRAL_GOBLIN, -2));
   }
 }

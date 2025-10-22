@@ -76,7 +76,7 @@ public static class SpellsSetup
       Duration = 20,
       ReviveEffect = "Heal Blue.mdx"
     };
-    PassiveAbilityManager.Register(burningVengeance);
+    UnitTypeTraitRegistry.Register(burningVengeance);
 
 
     var demonSoulCooldown = new CooldownReset(ABILITY_A0HF_ABILITY_COOLDOWN_RESET);

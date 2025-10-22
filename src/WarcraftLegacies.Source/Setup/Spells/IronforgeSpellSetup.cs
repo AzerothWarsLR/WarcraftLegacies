@@ -21,6 +21,6 @@ public static class IronforgeSpellSetup
       DummyOrderId = ORDER_FORKED_LIGHTNING,
       ProcChance = 0.15f
     };
-    PassiveAbilityManager.Register(lightningAttack);
+    UnitTypeTraitRegistry.Register(lightningAttack);
   }
 }

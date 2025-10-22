@@ -11,10 +11,10 @@ namespace WarcraftLegacies.Source.PassiveAbilities;
 /// <summary>
 /// When the unit attacks, it deals extra damage in a radius around the attacked unit. Deals extra damage to demons.
 /// </summary>
-public sealed class WarglaivesOfAzzinoth : PassiveAbility, IAppliesEffectOnDamage
+public sealed class WarglaivesOfAzzinoth : UnitTypeTrait, IAppliesEffectOnDamage
 {
   /// <summary>
-  /// The unit type ID which has this <see cref="PassiveAbility"/> should also have an ability with this ID.
+  /// The unit type ID which has this <see cref="UnitTypeTrait"/> should also have an ability with this ID.
   /// </summary>
   public int AbilityTypeId { get; }
 

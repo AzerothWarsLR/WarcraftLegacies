@@ -84,7 +84,7 @@ public static class GameSetup
     PlayerLeaves.Setup();
     FloatingTextSetup.Setup(60, 10);
     AmbianceSetup.Setup();
-    PassiveAbilityManager.InitializePreplacedUnits();
+    UnitTypeTraitRegistry.InitializePreplacedUnits();
     IncompatibleResearchSetup.Setup();
     DemonGateSetup.Setup();
     SummonRallyPoints.Setup();

@@ -65,7 +65,7 @@ public sealed class QuestWakingCity : QuestData
     var nzoth = _allLegendSetup.BlackEmpire.Nzoth.Unit;
     if (nzoth != null)
     {
-      PassiveAbilityManager.ForceOnCreated(nzoth);
+      UnitTypeTraitRegistry.ForceOnCreated(nzoth);
     }
   }
 }

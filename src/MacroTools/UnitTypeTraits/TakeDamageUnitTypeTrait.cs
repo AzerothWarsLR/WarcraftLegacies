@@ -2,7 +2,7 @@
 
 namespace MacroTools.UnitTypeTraits;
 
-public abstract class TakeDamagePassiveAbility
+public abstract class TakeDamageUnitTypeTrait
 {
   public IEnumerable<int> DamagedUnitTypeIds { get; }
 
@@ -10,13 +10,13 @@ public abstract class TakeDamagePassiveAbility
 
   public abstract void OnTakesDamage();
 
-  protected TakeDamagePassiveAbility(IEnumerable<int> damagedUnitTypeIds, int abilityTypeId)
+  protected TakeDamageUnitTypeTrait(IEnumerable<int> damagedUnitTypeIds, int abilityTypeId)
   {
     DamagedUnitTypeIds = damagedUnitTypeIds;
     AbilityTypeId = abilityTypeId;
   }
 
-  protected TakeDamagePassiveAbility(int damagedUnitTypeId, int abilityTypeId)
+  protected TakeDamageUnitTypeTrait(int damagedUnitTypeId, int abilityTypeId)
   {
     DamagedUnitTypeIds = new[] { damagedUnitTypeId };
     AbilityTypeId = abilityTypeId;

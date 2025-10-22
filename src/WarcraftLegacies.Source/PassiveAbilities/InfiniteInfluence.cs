@@ -9,7 +9,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities;
 /// <summary>
 ///   Prevents the unit from casting abilities that aren't within range of a player-controlled hero.
 /// </summary>
-public sealed class InfiniteInfluence : PassiveAbility
+public sealed class InfiniteInfluence : UnitTypeTrait
 {
   /// <summary>
   /// How near a player-controlled hero the caster has to be.

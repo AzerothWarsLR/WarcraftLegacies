@@ -6,7 +6,7 @@ namespace MacroTools.Mechanics.DemonGates;
 /// <summary>
 /// Units spawned at Demon Gates spawn at the Focal Demon Gate instead, if one exists.
 /// </summary>
-public sealed class FocalDemonGate : PassiveAbility, IEffectOnConstruction
+public sealed class FocalDemonGate : UnitTypeTrait, IEffectOnConstruction
 {
   /// <summary>
   /// Initializes a new instance of the <see cref="FocalDemonGate"/> class.

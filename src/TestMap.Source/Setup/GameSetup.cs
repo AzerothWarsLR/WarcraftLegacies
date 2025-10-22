@@ -30,7 +30,7 @@ public static class GameSetup
     TestSetup.Setup();
     WaygateManager.Setup(FourCC("nwgt"));
     HintSetup.Setup();
-    PassiveAbilityManager.InitializePreplacedUnits();
+    UnitTypeTraitRegistry.InitializePreplacedUnits();
     ResearchManager.RegisterIncompatibleSet(
       new BasicResearch(FourCC("Rhan"), 30),
       new BasicResearch(FourCC("Rhri"), 30),

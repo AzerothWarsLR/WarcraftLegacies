@@ -24,7 +24,7 @@ public static class StormwindSpellSetup
       DurationBase = (int)0.5,
       DurationLevel = (int)0.5
     };
-    PassiveAbilityManager.Register(legendaryWarrior);
+    UnitTypeTraitRegistry.Register(legendaryWarrior);
 
     SpellSystem.Register(new AnySpellOnTarget(ABILITY_A12Z_RALLYING_BANNER_STORMWIND_DUMMY)
     {

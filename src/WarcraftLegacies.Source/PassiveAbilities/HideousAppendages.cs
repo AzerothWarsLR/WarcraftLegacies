@@ -7,7 +7,7 @@ namespace WarcraftLegacies.Source.PassiveAbilities;
 /// <summary>
 ///   Causes the specified unit type to always have a squad of tentacles surrounding them.
 /// </summary>
-public sealed class HideousAppendages : PassiveAbility, IEffectOnCreated
+public sealed class HideousAppendages : UnitTypeTrait, IEffectOnCreated
 {
   public HideousAppendages(int id) : base(id)
   {

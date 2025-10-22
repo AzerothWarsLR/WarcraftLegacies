@@ -3,24 +3,24 @@
 namespace MacroTools.UnitTypeTraits;
 
 /// <summary>
-/// A passive ability attached to a specific unit type.
+/// A set of event-based functionalities attached to one or more Warcraft 3 unit types.
 /// </summary>
-public abstract class PassiveAbility
+public abstract class UnitTypeTrait
 {
   /// <summary>
-  /// Initializes a new instance of the <see cref="PassiveAbility"/> class.
+  /// Initializes a new instance of the <see cref="UnitTypeTrait"/> class.
   /// </summary>
   /// <param name="unitTypeId">The unit type to attach the effect to.</param>
-  protected PassiveAbility(int unitTypeId)
+  protected UnitTypeTrait(int unitTypeId)
   {
     UnitTypeIds = new[] { unitTypeId };
   }
 
   /// <summary>
-  /// Initializes a new instance of the <see cref="PassiveAbility"/> class.
+  /// Initializes a new instance of the <see cref="UnitTypeTrait"/> class.
   /// </summary>
   /// <param name="unitTypeIds">A list of unit types to attach the effect to.</param>
-  protected PassiveAbility(IEnumerable<int> unitTypeIds)
+  protected UnitTypeTrait(IEnumerable<int> unitTypeIds)
   {
     UnitTypeIds = unitTypeIds;
   }
@@ -31,7 +31,7 @@ public abstract class PassiveAbility
   public IEnumerable<int> UnitTypeIds { get; }
 
   /// <summary>
-  /// Fired when the <see cref="PassiveAbility"/> is registered.
+  /// Fired when the <see cref="UnitTypeTrait"/> is registered.
   /// </summary>
   public virtual void OnRegistered()
   {
