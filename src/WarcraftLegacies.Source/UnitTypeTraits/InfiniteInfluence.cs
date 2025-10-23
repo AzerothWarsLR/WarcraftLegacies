@@ -1,15 +1,13 @@
 ﻿using System.Linq;
 using MacroTools.UnitTypeTraits;
 using MacroTools.Utils;
-using WCSharp.Events;
-using WCSharp.Shared.Data;
 
 namespace WarcraftLegacies.Source.UnitTypeTraits;
 
 /// <summary>
 ///   Prevents the unit from casting abilities that aren't within range of a player-controlled hero.
 /// </summary>
-public sealed class InfiniteInfluence : UnitTypeTrait
+public sealed class InfiniteInfluence : UnitTypeTrait, IEffectOnSpellCast
 {
   /// <summary>
   /// How near a player-controlled hero the caster has to be.
@@ -20,29 +18,20 @@ public sealed class InfiniteInfluence : UnitTypeTrait
   {
   }
 
-  /// <inheritdoc />
-  public override void OnRegistered()
-  {
-    foreach (var unitTypeId in UnitTypeIds)
-    {
-      PlayerUnitEvents.Register(UnitTypeEvent.SpellCast, OnSpellCast, unitTypeId);
-    }
-  }
-
-  private void OnSpellCast()
+  public void OnSpellCast()
   {
     var triggerUnit = @event.Unit;
-    if (!IsWithinRangeOfAnyHero(triggerUnit.Owner, new Point(@event.SpellTargetX, @event.SpellTargetY)))
+    if (!IsWithinRangeOfAnyHero(triggerUnit.Owner, @event.SpellTargetX, @event.SpellTargetY))
     {
-      triggerUnit.IssueOrder("stop");
+      triggerUnit.IssueOrder(ORDER_STOP);
     }
   }
 
-  private bool IsWithinRangeOfAnyHero(player caster, Point position)
+  private bool IsWithinRangeOfAnyHero(player caster, float x, float y)
   {
     return GlobalGroup
-      .EnumUnitsInRange(position, Radius)
-      .Any(x => IsAlliedHero(caster, x));
+      .EnumUnitsInRange(x, y, Radius)
+      .Any(u => IsAlliedHero(caster, u));
   }
 
   private static bool IsAlliedHero(player caster, unit whichUnit)
