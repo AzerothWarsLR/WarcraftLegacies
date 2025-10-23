@@ -11,7 +11,7 @@ public sealed class AnimalCompanion : UnitTypeTrait, IAppliesEffectOnDamage
 {
   private readonly int _summonUnitTypeId;
 
-  public AnimalCompanion(int unitTypeId, int summonUnitTypeId) : base(unitTypeId)
+  public AnimalCompanion(int summonUnitTypeId)
   {
     _summonUnitTypeId = summonUnitTypeId;
   }

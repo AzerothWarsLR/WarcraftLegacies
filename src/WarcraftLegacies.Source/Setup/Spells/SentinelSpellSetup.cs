@@ -12,7 +12,7 @@ public static class SentinelSpellSetup
 {
   public static void Setup()
   {
-    UnitTypeTraitRegistry.Register(new DefensiveOrbs(UNIT_E025_LIEUTENANT_OF_THE_WATCHERS_SENTINELS, ABILITY_A10A_GLAIVE_STORM_ICON_NAISHA)
+    UnitTypeTraitRegistry.Register(new DefensiveOrbs(ABILITY_A10A_GLAIVE_STORM_ICON_NAISHA)
     {
       OrbitRadius = 350,
       OrbitalPeriod = 4,
@@ -25,10 +25,9 @@ public static class SentinelSpellSetup
         ABILITY_A0FC_BARBED_NET_NAISHA,
         ABILITY_A0MG_QUICK_KNIVES_NAISHA,
       }
-    });
+    }, UNIT_E025_LIEUTENANT_OF_THE_WATCHERS_SENTINELS);
 
-    var maievVengeance = new VengeanceTrait(UNIT_EWRD_LEADER_OF_THE_WATCHERS_SENTINELS,
-ABILITY_A017_TAKE_VENGEANCE_SENTINELS_MAIEV)
+    UnitTypeTraitRegistry.Register(new VengeanceTrait(ABILITY_A017_TAKE_VENGEANCE_SENTINELS_MAIEV)
     {
       AlternateFormId = UNIT_ESPV_AVATAR_OF_VENGEANCE_SENTINELS_MAIEV,
       HitsReviveThreshold = 9,
@@ -38,8 +37,7 @@ ABILITY_A017_TAKE_VENGEANCE_SENTINELS_MAIEV)
       BonusDamageLevel = 20,
       Duration = 20,
       ReviveEffect = "Heal Blue.mdx"
-    };
-    UnitTypeTraitRegistry.Register(maievVengeance);
+    }, UNIT_EWRD_LEADER_OF_THE_WATCHERS_SENTINELS);
 
     var elunesGaze = new MassAnySpell(ABILITY_ASEG_ELUNE_S_GAZE_SENTINELS_REAL)
     {

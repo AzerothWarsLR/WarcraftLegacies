@@ -9,10 +9,7 @@ namespace WarcraftLegacies.Source.Spells;
 /// </summary>
 public sealed class ResoluteHeart : UnitTypeTrait, IAppliesEffectOnDamage
 {
-  /// <summary>
-  /// The unit type ID which has this <see cref="UnitTypeTrait"/> should also have an ability with this ID.
-  /// </summary>
-  public int AbilityTypeId { get; }
+  private readonly int _abilityTypeId;
 
   /// <summary>
   /// The area around the unit to heal allies.
@@ -32,12 +29,8 @@ public sealed class ResoluteHeart : UnitTypeTrait, IAppliesEffectOnDamage
   /// <summary>
   /// Initializes a new instance of the <see cref="ResoluteHeart"/> class.
   /// </summary>
-  /// <param name="unitTypeId">The unit type ID that possesses this ability.</param>
   /// <param name="abilityTypeId">The ability ID possessed by the unit.</param>
-  public ResoluteHeart(int unitTypeId, int abilityTypeId) : base(unitTypeId)
-  {
-    AbilityTypeId = abilityTypeId;
-  }
+  public ResoluteHeart(int abilityTypeId) => _abilityTypeId = abilityTypeId;
 
   /// <inheritdoc />
   public void OnDealsDamage()
@@ -45,7 +38,7 @@ public sealed class ResoluteHeart : UnitTypeTrait, IAppliesEffectOnDamage
     var caster = @event.DamageSource;
     var damagedUnit = @event.DamageTarget;
 
-    if (!@event.IsAttack || caster.GetAbilityLevel(AbilityTypeId) == 0 || damagedUnit == null)
+    if (!@event.IsAttack || caster.GetAbilityLevel(_abilityTypeId) == 0 || damagedUnit == null)
     {
       return;
     }
@@ -59,7 +52,7 @@ public sealed class ResoluteHeart : UnitTypeTrait, IAppliesEffectOnDamage
     }
 
     var damageDealt = @event.Damage;
-    var level = caster.GetAbilityLevel(AbilityTypeId);
+    var level = caster.GetAbilityLevel(_abilityTypeId);
     var procChance = BaseProcChance + (0.1f * (level - 1));
 
     if (GetRandomReal(0.0f, 1.0f) > procChance)

@@ -44,10 +44,7 @@ public sealed class SummonUnitOnCast : UnitTypeTrait, IEffectOnSpellEffect
   public List<int> AbilityWhitelist { get; init; } = new();
 
   /// <inheritdoc />
-  public SummonUnitOnCast(int unitTypeId, int abilityTypeId) : base(unitTypeId)
-  {
-    _abilityTypeId = abilityTypeId;
-  }
+  public SummonUnitOnCast(int abilityTypeId) => _abilityTypeId = abilityTypeId;
 
   /// <inheritdoc />
   public void OnSpellEffect()

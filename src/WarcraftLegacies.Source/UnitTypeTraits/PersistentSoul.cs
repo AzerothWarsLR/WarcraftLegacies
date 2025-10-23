@@ -18,9 +18,8 @@ public sealed class PersistentSoul : UnitTypeTrait, IEffectOnDeath
   /// <summary>
   /// Initializes a new instance of the <see cref="PersistentSoul"/> class.
   /// </summary>
-  /// <param name="unitTypeId"><inheritdoc /></param>
   /// <param name="abilityTypeId">The ability ID that determines the effect's level.</param>
-  public PersistentSoul(int unitTypeId, int abilityTypeId) : base(unitTypeId) => _abilityTypeId = abilityTypeId;
+  public PersistentSoul(int abilityTypeId) => _abilityTypeId = abilityTypeId;
 
   /// <summary>
   /// How many units this ability reanimates per level.

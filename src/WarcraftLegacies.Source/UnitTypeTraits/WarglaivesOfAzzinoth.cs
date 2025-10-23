@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.UnitTypeTraits;
@@ -13,10 +12,7 @@ namespace WarcraftLegacies.Source.UnitTypeTraits;
 /// </summary>
 public sealed class WarglaivesOfAzzinoth : UnitTypeTrait, IAppliesEffectOnDamage
 {
-  /// <summary>
-  /// The unit type ID which has this <see cref="UnitTypeTrait"/> should also have an ability with this ID.
-  /// </summary>
-  public int AbilityTypeId { get; }
+  private readonly int _abilityTypeId;
 
   /// <summary>
   /// The area around the attacked unit in which to deal damage.
@@ -56,22 +52,8 @@ public sealed class WarglaivesOfAzzinoth : UnitTypeTrait, IAppliesEffectOnDamage
   /// <summary>
   /// Initializes a new instance of the <see cref="WarglaivesOfAzzinoth"/> class.
   /// </summary>
-  /// <param name="unitTypeId"><inheritdoc /></param>
   /// <param name="abilityTypeId">The ability the provided unit type has which represents this object.</param>
-  public WarglaivesOfAzzinoth(int unitTypeId, int abilityTypeId) : base(unitTypeId)
-  {
-    AbilityTypeId = abilityTypeId;
-  }
-
-  /// <summary>
-  /// Initializes a new instance of the <see cref="WarglaivesOfAzzinoth"/> class.
-  /// </summary>
-  /// <param name="unitTypeIds"><inheritdoc /></param>
-  /// <param name="abilityTypeId">The ability the provided unit type has which represents this object.</param>
-  public WarglaivesOfAzzinoth(IEnumerable<int> unitTypeIds, int abilityTypeId) : base(unitTypeIds)
-  {
-    AbilityTypeId = abilityTypeId;
-  }
+  public WarglaivesOfAzzinoth(int abilityTypeId) => _abilityTypeId = abilityTypeId;
 
   /// <inheritdoc />
   public void OnDealsDamage()
@@ -79,7 +61,7 @@ public sealed class WarglaivesOfAzzinoth : UnitTypeTrait, IAppliesEffectOnDamage
     try
     {
       var caster = @event.DamageSource;
-      if (!@event.IsAttack || caster.GetAbilityLevel(AbilityTypeId) == 0)
+      if (!@event.IsAttack || caster.GetAbilityLevel(_abilityTypeId) == 0)
       {
         return;
       }
@@ -101,7 +83,7 @@ public sealed class WarglaivesOfAzzinoth : UnitTypeTrait, IAppliesEffectOnDamage
           continue;
         }
 
-        var damageAmount = DamageBase + DamageLevel * caster.GetAbilityLevel(AbilityTypeId);
+        var damageAmount = DamageBase + DamageLevel * caster.GetAbilityLevel(_abilityTypeId);
         if (nearbyUnit.Race == race.Demon)
         {
           damageAmount *= DamageMultiplierAgainstDemons;

@@ -35,11 +35,6 @@ public sealed class SummonUnitOnDeath : UnitTypeTrait, IEffectOnDeath
   public int RequiredResearch { get; init; }
 
   /// <inheritdoc />
-  public SummonUnitOnDeath(int unitTypeId) : base(unitTypeId)
-  {
-  }
-
-  /// <inheritdoc />
   public void OnDeath()
   {
     var triggerUnit = @event.Unit;

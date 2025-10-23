@@ -51,6 +51,7 @@ public sealed class Skywall : Faction
   public override void OnRegistered()
   {
     RegisterResearches();
+    RegisterUnitTypeTraits();
     RegisterSpells();
     RegisterQuests();
     RegisterFactionDependentInitializer<Druids, Ahnqiraj>(RegisterInvasionRelatedQuests);
@@ -66,9 +67,6 @@ public sealed class Skywall : Faction
     AddQuest(new QuestShimmering(Regions.SkywallShimmering_Unlock));
     AddQuest(new QuestSubduing());
     AddQuest(new QuestKillDruids(_allLegendSetup.Druids.Nordrassil));
-
-
-
   }
 
   private void RegisterInvasionRelatedQuests(Druids druids, Ahnqiraj ahnqiraj)
@@ -108,31 +106,29 @@ public sealed class Skywall : Faction
       }));
   }
 
-  private static void RegisterSpells()
+  private static void RegisterUnitTypeTraits()
   {
-
-    var purgeAttack = new SpellOnAttack(UNIT_O01I_ANIMATED_ARMOR_SKYWALL,
-      ABILITY_AELP_SHOCKING_BLADES_ANIMATED_ARMOR)
+    UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_AELP_SHOCKING_BLADES_ANIMATED_ARMOR)
     {
       DummyAbilityId = ABILITY_AEPU_PURGE_SHOCKING_BLADE,
       DummyOrderId = ORDER_PURGE,
       ProcChance = 0.20f,
       RequiredResearch = UPGRADE_RELP_SHOCKING_BLADES_SKYWALL
-    };
-    UnitTypeTraitRegistry.Register(purgeAttack);
+    }, UNIT_O01I_ANIMATED_ARMOR_SKYWALL);
 
 
-    var waterPrison = new SpellOnAttack(UNIT_N08S_ELEMENTAL_LORD_SKYWALL,
-      ABILITY_A0Y6_WATER_PRISON_ELEMENTAL_LORD)
+    UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_A0Y6_WATER_PRISON_ELEMENTAL_LORD)
     {
       DummyAbilityId = ABILITY_A0Y0_WATER_PRISON_REAL,
       DummyOrderId = ORDER_ENTANGLING_ROOTS,
       ProcChance = 0.2f,
       Cooldown = 10f,
       RequiredResearch = UPGRADE_RSW3_QUEST_COMPLETED_SUBDUING_NEPTULON
-    };
-    UnitTypeTraitRegistry.Register(waterPrison);
+    }, UNIT_N08S_ELEMENTAL_LORD_SKYWALL);
+  }
 
+  private static void RegisterSpells()
+  {
     var earthProtectionHero = new AnySpellNoTarget(ABILITY_A0Y4_EARTH_PROTECTION_ELEMENTAL_LORD)
     {
       DummyAbilityId = ABILITY_A0XY_EARTH_PROTECTION_HERO_DUMMY,
@@ -169,7 +165,5 @@ public sealed class Skywall : Faction
 
     var warpedMalediction = new WarpedMalediction(ABILITY_WMTP_WARPED_MALEDICTION_SKYWALL);
     SpellRegistry.Register(warpedMalediction);
-
-
   }
 }

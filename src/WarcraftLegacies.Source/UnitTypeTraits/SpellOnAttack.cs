@@ -10,10 +10,7 @@ namespace WarcraftLegacies.Source.UnitTypeTraits;
 /// </summary>
 public sealed class SpellOnAttack : UnitTypeTrait, IAppliesEffectOnDamage
 {
-  /// <summary>
-  /// The unit type ID which has this <see cref="UnitTypeTrait"/> should also have an ability with this ID.
-  /// </summary>
-  public int AbilityTypeId { get; }
+  private readonly int _abilityTypeId;
 
   /// <summary>
   /// The dummy spell to cast on attack.
@@ -43,11 +40,10 @@ public sealed class SpellOnAttack : UnitTypeTrait, IAppliesEffectOnDamage
   /// <summary>
   /// Initializes a new instance of the <see cref="SpellOnAttack"/> class.
   /// </summary>
-  /// <param name="unitTypeId"><inheritdoc /></param>
   /// <param name="abilityTypeId">The ability the provided unit type has which represents this object.</param>
-  public SpellOnAttack(int unitTypeId, int abilityTypeId) : base(unitTypeId)
+  public SpellOnAttack(int abilityTypeId)
   {
-    AbilityTypeId = abilityTypeId;
+    _abilityTypeId = abilityTypeId;
   }
 
   /// <inheritdoc />
@@ -99,6 +95,6 @@ public sealed class SpellOnAttack : UnitTypeTrait, IAppliesEffectOnDamage
   private void DoSpellOnTarget(unit caster, unit target) =>
     DummyCasterManager.GetGlobalDummyCaster().CastUnit(
       caster, DummyAbilityId, DummyOrderId,
-      caster.GetAbilityLevel(AbilityTypeId),
+      caster.GetAbilityLevel(_abilityTypeId),
       target, DummyCastOriginType.Caster);
 }

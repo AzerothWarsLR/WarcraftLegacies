@@ -70,21 +70,21 @@ public sealed class BlackEmpire : Faction
     AddQuest(new QuestAlignement(_allLegendSetup.BlackEmpire.Nzoth));
   }
 
-  private static void RegisterSpells()
+  private static void RegisterUnitTypeTraits()
   {
-    UnitTypeTraitRegistry.Register(new HideousAppendages(UNIT_U01Z_OLD_GOD_NZOTH)
+    UnitTypeTraitRegistry.Register(new HideousAppendages
     {
       TentacleUnitTypeId = UNIT_N098_NZOTHTENTACLE_HIDEOUS_APPENDAGES_N_ZOTH,
       TentacleCount = 9,
       RadiusOffset = 520
-    });
+    }, UNIT_U01Z_OLD_GOD_NZOTH);
 
-    UnitTypeTraitRegistry.Register(new InfiniteInfluence(UNIT_U01Z_OLD_GOD_NZOTH)
+    UnitTypeTraitRegistry.Register(new InfiniteInfluence
     {
       Radius = 800
-    });
+    }, UNIT_U01Z_OLD_GOD_NZOTH);
 
-    UnitTypeTraitRegistry.Register(new NoTargetSpellOnCast(UNIT_E01D_HARBINGER_OF_NY_ALOTHA_NZOTH, ABILITY_AXK2_VOID_RIFT_ICON_XKORR)
+    UnitTypeTraitRegistry.Register(new NoTargetSpellOnCast(ABILITY_AXK2_VOID_RIFT_ICON_XKORR)
     {
       DummyAbilityId = ABILITY_AXK1_VOIDBOLTDUMMY_X_KORR_DUMMY_SPELL,
       DummyOrderId = ORDER_FAN_OF_KNIVES,
@@ -96,8 +96,40 @@ public sealed class BlackEmpire : Faction
         ABILITY_A10U_MANA_BURN_DALARAN_YOGG,
         ABILITY_A11O_BLACK_HOLE_KHADGAR,
       }
-    });
+    }, UNIT_E01D_HARBINGER_OF_NY_ALOTHA_NZOTH);
 
+    UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_ABES_GENESIS_ATTACK_ICON_STYGIAN_HULK)
+    {
+      DummyAbilityId = ABILITY_ABEG_PARASITE_GENESIS_ATTACK_REAL,
+      DummyOrderId = ORDER_PARASITE,
+      ProcChance = 1.0f
+    }, UNIT_U029_STYGIAN_HULK_NZOTH);
+
+    UnitTypeTraitRegistry.Register(new NoTargetSpellOnAttack(ABILITY_ABEV_SHADOW_VEIL)
+    {
+      DummyAbilityId = ABILITY_ABSV_SHADOW_VEIL_SHADOW_VEIL_REAL,
+      DummyOrderId = ORDER_HOWL_OF_TERROR,
+      ProcChance = 0.10f,
+      RequiredResearch = UPGRADE_RBEV_SHADOW_VEIL_BLACK_EMPIRE
+    }, UNIT_N0AH_DEFORMED_CHIMERA_NZOTH);
+
+    UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_ABPF_PARALYSING_FEAR)
+    {
+      DummyAbilityId = ABILITY_ABSF_SLOW_PARALYSING_FEAR,
+      DummyOrderId = ORDER_SLOW,
+      ProcChance = 0.2f
+    }, UNIT_O01G_BRUTE_NZOTH);
+
+    UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_ABGP_GREATER_PARALYSING_FEAR)
+    {
+      DummyAbilityId = ABILITY_ABSG_SLOW_GREATER_PARALYSING_FEAR,
+      DummyOrderId = ORDER_SLOW,
+      ProcChance = 0.4f
+    }, UNIT_H09F_DEEP_FIEND_NZOTH);
+  }
+
+  private static void RegisterSpells()
+  {
     var poisonYor = new Stomp(ABILITY_ABNT_VOID_TOXIN_BLACK_EMPIRE)
     {
       Radius = 500,
@@ -111,25 +143,6 @@ public sealed class BlackEmpire : Faction
     };
     SpellRegistry.Register(poisonYor);
 
-    var genesisAttack = new SpellOnAttack(UNIT_U029_STYGIAN_HULK_NZOTH,
-      ABILITY_ABES_GENESIS_ATTACK_ICON_STYGIAN_HULK)
-    {
-      DummyAbilityId = ABILITY_ABEG_PARASITE_GENESIS_ATTACK_REAL,
-      DummyOrderId = ORDER_PARASITE,
-      ProcChance = 1.0f
-    };
-    UnitTypeTraitRegistry.Register(genesisAttack);
-
-    var shadowVeilPassive = new NoTargetSpellOnAttack(UNIT_N0AH_DEFORMED_CHIMERA_NZOTH,
-ABILITY_ABEV_SHADOW_VEIL)
-    {
-      DummyAbilityId = ABILITY_ABSV_SHADOW_VEIL_SHADOW_VEIL_REAL,
-      DummyOrderId = ORDER_HOWL_OF_TERROR,
-      ProcChance = 0.10f,
-      RequiredResearch = UPGRADE_RBEV_SHADOW_VEIL_BLACK_EMPIRE
-    };
-    UnitTypeTraitRegistry.Register(shadowVeilPassive);
-
     var shadowVeilSpell = new MassAnySpell(ABILITY_ABSV_SHADOW_VEIL_SHADOW_VEIL_REAL)
     {
       DummyAbilityId = ABILITY_ACAM_ANTI_MAGIC_SHELL_BLACK_EMPIRE,
@@ -139,23 +152,5 @@ ABILITY_ABEV_SHADOW_VEIL)
       TargetType = SpellTargetType.None
     };
     SpellRegistry.Register(shadowVeilSpell);
-
-    var paralysingFear = new SpellOnAttack(UNIT_O01G_BRUTE_NZOTH,
-      ABILITY_ABPF_PARALYSING_FEAR)
-    {
-      DummyAbilityId = ABILITY_ABSF_SLOW_PARALYSING_FEAR,
-      DummyOrderId = ORDER_SLOW,
-      ProcChance = 0.2f
-    };
-    UnitTypeTraitRegistry.Register(paralysingFear);
-
-    var greaterParalysingFear = new SpellOnAttack(UNIT_H09F_DEEP_FIEND_NZOTH,
-      ABILITY_ABGP_GREATER_PARALYSING_FEAR)
-    {
-      DummyAbilityId = ABILITY_ABSG_SLOW_GREATER_PARALYSING_FEAR,
-      DummyOrderId = ORDER_SLOW,
-      ProcChance = 0.4f
-    };
-    UnitTypeTraitRegistry.Register(greaterParalysingFear);
   }
 }

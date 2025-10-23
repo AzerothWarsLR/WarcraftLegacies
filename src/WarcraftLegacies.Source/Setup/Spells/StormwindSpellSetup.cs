@@ -15,16 +15,14 @@ public static class StormwindSpellSetup
   /// </summary>
   public static void Setup()
   {
-    var legendaryWarrior = new ChannelSpellOnAttack(UNIT_H00R_KING_OF_STORMWIND_STORMWIND,
-      ABILITY_A12C_LEGENDARY_WARRIOR_VARIAN)
+    UnitTypeTraitRegistry.Register(new ChannelSpellOnAttack(ABILITY_A12C_LEGENDARY_WARRIOR_VARIAN)
     {
       DummyAbilityId = ABILITY_A12D_LEGENDARY_WARRIOR_STORMWIND_DUMMY,
       DummyOrderId = ORDER_VOODOO,
       ProcChance = 0.15f,
       DurationBase = (int)0.5,
       DurationLevel = (int)0.5
-    };
-    UnitTypeTraitRegistry.Register(legendaryWarrior);
+    }, UNIT_H00R_KING_OF_STORMWIND_STORMWIND);
 
     SpellRegistry.Register(new AnySpellOnTarget(ABILITY_A12Z_RALLYING_BANNER_STORMWIND_DUMMY)
     {

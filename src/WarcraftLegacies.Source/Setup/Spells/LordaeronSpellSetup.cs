@@ -59,13 +59,11 @@ public static class LordaeronSpellSetup
     };
     SpellRegistry.Register(exactJustice);
 
-    var willoftheAshbringer = new NoTargetSpellOnAttack(UNIT_H01J_THE_ASHBRINGER_LORDAERON,
-      ABILITY_A122_WILL_OF_THE_ASHBRINGER_MOGRAINE)
+    UnitTypeTraitRegistry.Register(new NoTargetSpellOnAttack(ABILITY_A122_WILL_OF_THE_ASHBRINGER_MOGRAINE)
     {
       DummyAbilityId = ABILITY_A0KA_RESURRECTION_DUMMY_MOGRAINE,
       DummyOrderId = ORDER_RESURRECTION,
       ProcChance = 0.2f
-    };
-    UnitTypeTraitRegistry.Register(willoftheAshbringer);
+    }, UNIT_H01J_THE_ASHBRINGER_LORDAERON);
   }
 }

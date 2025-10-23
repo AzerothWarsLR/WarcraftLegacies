@@ -47,9 +47,8 @@ public sealed class ChannelSpellOnAttack : UnitTypeTrait, IAppliesEffectOnDamage
   /// <summary>
   /// Initializes a new instance of the <see cref="NoTargetSpellOnAttack"/> class.
   /// </summary>
-  /// <param name="unitTypeId"><inheritdoc /></param>
   /// <param name="abilityTypeId">The ability the provided unit type has which represents this object.</param>
-  public ChannelSpellOnAttack(int unitTypeId, int abilityTypeId) : base(unitTypeId)
+  public ChannelSpellOnAttack(int abilityTypeId)
   {
     AbilityTypeId = abilityTypeId;
   }

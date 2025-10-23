@@ -10,7 +10,7 @@ public static class ScarletSpellSetup
 {
   public static void Setup()
   {
-    UnitTypeTraitRegistry.Register(new NoTargetSpellOnCast(UNIT_H08H_HIGH_INQUISITOR_SCARLET, ABILITY_Z3X2_HEALING_FRENZY_ICON_SALLY)
+    UnitTypeTraitRegistry.Register(new NoTargetSpellOnCast(ABILITY_Z3X2_HEALING_FRENZY_ICON_SALLY)
     {
       DummyAbilityId = ABILITY_Z3X9_HEALING_FRENZY_SALLY_DUMMY,
       DummyOrderId = ORDER_FAN_OF_KNIVES,
@@ -22,7 +22,7 @@ public static class ScarletSpellSetup
         ABILITY_A078_SPIRITUAL_GUIDANCE_SALLY,
         ABILITY_A0DK_DISPEL_MAGIC_SALLY,
       }
-    });
+    }, UNIT_H08H_HIGH_INQUISITOR_SCARLET);
 
     var crusaderShout = new Stomp(ABILITY_A0KB_CRUSADER_S_SHOUT_SAIDEN)
     {
@@ -37,14 +37,14 @@ public static class ScarletSpellSetup
     };
     SpellRegistry.Register(crusaderShout);
 
-    UnitTypeTraitRegistry.Register(new SummonUnitOnDeath(UNIT_N09N_BISHOP_OF_THE_LIGHT_SCARLET)
+    UnitTypeTraitRegistry.Register(new SummonUnitOnDeath
     {
       Duration = 30,
       SummonUnitTypeId = UNIT_ST6W_UNHOLY_ARCHON_SCARLET_QUEST,
       SummonCount = 1,
       SpecialEffectPath = @"Abilities\Spells\Undead\DarkRitual\DarkRitualTarget.mdl",
       RequiredResearch = UPGRADE_R040_QUEST_COMPLETED_ONSLAUGHT
-    });
+    }, UNIT_N09N_BISHOP_OF_THE_LIGHT_SCARLET);
 
     var recklessOnslaught = new CooldownReset(ABILITY_A0TC_RECKLESS_ONSLAUGHT_SCARLET);
     SpellRegistry.Register(recklessOnslaught);

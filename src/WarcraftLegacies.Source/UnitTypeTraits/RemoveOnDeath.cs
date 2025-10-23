@@ -10,11 +10,6 @@ public sealed class RemoveOnDeath : UnitTypeTrait, IEffectOnDeath
   public string? DeathEffectPath { get; init; }
 
   /// <inheritdoc />
-  public RemoveOnDeath(int unitTypeId) : base(unitTypeId)
-  {
-  }
-
-  /// <inheritdoc />
   public void OnDeath()
   {
     var triggerUnit = @event.Unit;

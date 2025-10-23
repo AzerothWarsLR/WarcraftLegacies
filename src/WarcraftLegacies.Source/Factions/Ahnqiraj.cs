@@ -54,6 +54,7 @@ public sealed class Ahnqiraj : Faction
   public override void OnRegistered()
   {
     RegisterResearches();
+    RegisterUnitTypeTraits();
     RegisterSpells();
     SharedFactionConfigSetup.AddSharedFactionConfig(this);
     RegisterQuests();
@@ -94,25 +95,23 @@ public sealed class Ahnqiraj : Faction
       });
   }
 
-  private static void RegisterSpells()
+  private static void RegisterUnitTypeTraits()
   {
-    var cocoonHeroes = new int[]
-    {
-      UNIT_U02S_ANCIENT_SAND_WORM,
-      UNIT_E005_THE_PROPHET,
-      UNIT_U00Z_OBSIDIAN_DESTROYER
-    };
-
-    UnitTypeTraitRegistry.Register(new DefensiveCocoonTrait(cocoonHeroes, ABILITY_ZBEG_DEFENSIVE_COCOON_AHN_QIRAJ)
+    UnitTypeTraitRegistry.Register(new DefensiveCocoonTrait(ABILITY_ZBEG_DEFENSIVE_COCOON_AHN_QIRAJ)
     {
       MaximumHealthPercentage = 0.5f,
       Duration = 45,
       EggId = UNIT_ZBBG_COCOON_CTHUN_DEFENSIVE_COCOON,
       ReviveEffect = @"Abilities\Spells\Undead\RaiseSkeletonWarrior\RaiseSkeleton.mdl",
       RequiredResearch = UPGRADE_ZBEH_DEFENSIVE_COCOOON_AHN_QIRAJ
+    }, new int[]
+    {
+      UNIT_U02S_ANCIENT_SAND_WORM,
+      UNIT_E005_THE_PROPHET,
+      UNIT_U00Z_OBSIDIAN_DESTROYER
     });
 
-    UnitTypeTraitRegistry.Register(new Incubate(UNIT_H01N_VILE_CORRUPTER_CTHUN, ABILITY_ZBRD_INCUBATE_VILE_CORRUPTOR)
+    UnitTypeTraitRegistry.Register(new Incubate(ABILITY_ZBRD_INCUBATE_VILE_CORRUPTOR)
     {
       HatchedUnitTypeId = UNIT_N06I_SOLDIER_CTHUN_SILITHID_WARRIOR,
       MaturationDuration = new LeveledAbilityField<float>
@@ -120,14 +119,9 @@ public sealed class Ahnqiraj : Faction
         Base = 315f,
         PerLevel = -135f
       }
-    });
+    }, UNIT_H01N_VILE_CORRUPTER_CTHUN);
 
-    SpellRegistry.Register(new InstantKill(ABILITY_ZBBS_HATCH_INCUBATE)
-    {
-      Target = InstantKill.KillTarget.Self
-    });
-
-    UnitTypeTraitRegistry.Register(new SpellConductionTrait(UNIT_SL2O_OBSIDIAN_ERADICATOR_CTHUN)
+    UnitTypeTraitRegistry.Register(new SpellConductionTrait
     {
       RedirectionPercentage = 0.35f,
       RedirectableAttackTypes = new attacktype[]
@@ -137,6 +131,33 @@ public sealed class Ahnqiraj : Faction
       },
       RequiredResearch = UPGRADE_ZBML_SPELL_CONDUCTION_C_THUN,
       Radius = 500
+    }, UNIT_SL2O_OBSIDIAN_ERADICATOR_CTHUN);
+
+    UnitTypeTraitRegistry.Register(new HideousAppendages
+    {
+      TentacleUnitTypeId = UNIT_N073_TENTACLE_HIDEOUS_APPENDAGES_C_THUN,
+      TentacleCount = 9,
+      RadiusOffset = 520
+    }, UNIT_U00R_OLD_GOD_CTHUN);
+
+    UnitTypeTraitRegistry.Register(new InfiniteInfluence
+    {
+      Radius = 800
+    }, UNIT_U00R_OLD_GOD_CTHUN);
+
+    UnitTypeTraitRegistry.Register(new MassiveAttackAbility
+    {
+      AttackDamagePercentage = 1,
+      Distance = 400,
+      IgnoreAttackTarget = true
+    }, UNIT_ZBTH_TENTACLE_SPAWN_TENTACLE_C_THUN);
+  }
+
+  private static void RegisterSpells()
+  {
+    SpellRegistry.Register(new InstantKill(ABILITY_ZBBS_HATCH_INCUBATE)
+    {
+      Target = InstantKill.KillTarget.Self
     });
 
     SpellRegistry.Register(new InspireMadness(ABILITY_ZBIM_INSPIRE_MADNESS_C_THUN)
@@ -170,18 +191,6 @@ public sealed class Ahnqiraj : Faction
       EffectScaleTarget = 1
     });
 
-    UnitTypeTraitRegistry.Register(new HideousAppendages(UNIT_U00R_OLD_GOD_CTHUN)
-    {
-      TentacleUnitTypeId = UNIT_N073_TENTACLE_HIDEOUS_APPENDAGES_C_THUN,
-      TentacleCount = 9,
-      RadiusOffset = 520
-    });
-
-    UnitTypeTraitRegistry.Register(new InfiniteInfluence(UNIT_U00R_OLD_GOD_CTHUN)
-    {
-      Radius = 800
-    });
-
     SpellRegistry.Register(new SpawnTentacle(ABILITY_ZBST_SPAWN_TENTACLE_C_THUN)
     {
       HitPoints = new LeveledAbilityField<int>
@@ -199,13 +208,6 @@ public sealed class Ahnqiraj : Faction
       {
         Base = 30
       }
-    });
-
-    UnitTypeTraitRegistry.Register(new MassiveAttackAbility(UNIT_ZBTH_TENTACLE_SPAWN_TENTACLE_C_THUN)
-    {
-      AttackDamagePercentage = 1,
-      Distance = 400,
-      IgnoreAttackTarget = true
     });
   }
 }

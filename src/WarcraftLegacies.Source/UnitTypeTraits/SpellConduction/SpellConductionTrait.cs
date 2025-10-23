@@ -26,11 +26,6 @@ public sealed class SpellConductionTrait : UnitTypeTrait, IEffectOnCreated
   public required int Radius { get; init; }
 
   /// <inheritdoc />
-  public SpellConductionTrait(int unitTypeId) : base(unitTypeId)
-  {
-  }
-
-  /// <inheritdoc />
   public void OnCreated(unit createdUnit)
   {
     var aura = new SpellConductionAura(createdUnit)
