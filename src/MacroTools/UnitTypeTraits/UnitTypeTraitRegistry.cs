@@ -113,6 +113,10 @@ public static class UnitTypeTraitRegistry
           PlayerUnitEvents.Register(UnitTypeEvent.Dies, effectOnDeath.OnDeath, unitTypeId);
           break;
 
+        case IEffectOnSpellCast effectOnSpellCast:
+          PlayerUnitEvents.Register(UnitTypeEvent.SpellCast, effectOnSpellCast.OnSpellCast, unitTypeId);
+          break;
+
         case IEffectOnSpellEffect effectOnSpellEffect:
           PlayerUnitEvents.Register(UnitTypeEvent.SpellEffect, effectOnSpellEffect.OnSpellEffect, unitTypeId);
           break;
