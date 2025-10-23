@@ -49,14 +49,6 @@ public static class UnitTypeTraitRegistry
     }
   }
 
-  public static void Register(TakeDamageUnitTypeTrait takeDamageUnitTypeTrait)
-  {
-    foreach (var unit in takeDamageUnitTypeTrait.DamagedUnitTypeIds)
-    {
-      PlayerUnitEvents.Register(UnitTypeEvent.IsDamaged, takeDamageUnitTypeTrait.OnTakesDamage, unit);
-    }
-  }
-
   /// <summary>
   /// Registers the provided <see cref="UnitTypeTrait"/>, causing its functionality to be invoked when specific Warcraft 3 events occur.
   /// </summary>
@@ -107,6 +99,10 @@ public static class UnitTypeTraitRegistry
 
         case IEffectOnUpgrade effectOnUpgrade:
           PlayerUnitEvents.Register(UnitTypeEvent.FinishesUpgrade, effectOnUpgrade.OnUpgrade, unitTypeId);
+          break;
+
+        case IEffectOnDamaged effectOnDamaged:
+          PlayerUnitEvents.Register(UnitTypeEvent.IsDamaged, effectOnDamaged.OnDamaged, unitTypeId);
           break;
 
         case IEffectOnDeath effectOnDeath:
