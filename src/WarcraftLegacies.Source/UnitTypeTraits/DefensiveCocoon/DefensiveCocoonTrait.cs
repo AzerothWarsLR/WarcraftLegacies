@@ -10,8 +10,10 @@ namespace WarcraftLegacies.Source.UnitTypeTraits.DefensiveCocoon;
 /// If they attack enough times while a Spirit, they revive with some health.
 /// Otherwise, they die.
 /// </summary>
-public sealed class DefensiveCocoonTrait : TakeDamageUnitTypeTrait
+public sealed class DefensiveCocoonTrait : UnitTypeTrait, IEffectOnDamaged
 {
+  private readonly int _abilityTypeId;
+
   /// <summary>
   /// If set, this needs to be researched for the ability to work.
   /// </summary>
@@ -42,15 +44,16 @@ public sealed class DefensiveCocoonTrait : TakeDamageUnitTypeTrait
   /// </summary>
   /// <param name="damagedUnitTypeIds">The unit type IDs that can take damage to trigger this effect.</param>
   /// <param name="abilityTypeId">The ability whose level is used to determine the magnitude of the effect.</param>
-  public DefensiveCocoonTrait(IEnumerable<int> damagedUnitTypeIds, int abilityTypeId) : base(damagedUnitTypeIds, abilityTypeId)
+  public DefensiveCocoonTrait(IEnumerable<int> damagedUnitTypeIds, int abilityTypeId) : base(damagedUnitTypeIds)
   {
+    _abilityTypeId = abilityTypeId;
   }
 
   /// <inheritdoc />
-  public override void OnTakesDamage()
+  public void OnDamaged()
   {
     var damaged = @event.Unit;
-    var abilityLevel = damaged.GetAbilityLevel(AbilityTypeId);
+    var abilityLevel = damaged.GetAbilityLevel(_abilityTypeId);
     if (!ShouldBecomeEgg(abilityLevel, damaged))
     {
       return;

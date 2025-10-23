@@ -8,10 +8,12 @@ namespace WarcraftLegacies.Source.UnitTypeTraits.Vengeance;
 /// If they attack enough times while a Spirit, they revive with some health.
 /// Otherwise, they die.
 /// </summary>
-public sealed class VengeanceTrait : TakeDamageUnitTypeTrait
+public sealed class VengeanceTrait : UnitTypeTrait, IEffectOnDamaged
 {
+  private readonly int _abilityTypeId;
+
   /// <summary>
-  /// How much extra damage the vengenace form has.
+  /// How much extra damage the vengeance form has.
   /// </summary>
   public int BonusDamageBase { private get; init; }
 
@@ -21,7 +23,7 @@ public sealed class VengeanceTrait : TakeDamageUnitTypeTrait
   public int BonusDamageLevel { private get; init; }
 
   /// <summary>
-  /// The amount of healing granted when exiting the vengenace form.
+  /// The amount of healing granted when exiting the vengeance form.
   /// </summary>
   public float HealBase { private get; init; }
 
@@ -51,13 +53,13 @@ public sealed class VengeanceTrait : TakeDamageUnitTypeTrait
   public string? ReviveEffect { private get; init; }
 
   /// <inheritdoc />
-  public override void OnTakesDamage()
+  public void OnDamaged()
   {
     var damaged = @event.Unit;
-    var abilityLevel = damaged.GetAbilityLevel(AbilityTypeId);
+    var abilityLevel = damaged.GetAbilityLevel(_abilityTypeId);
     if (abilityLevel == 0 || damaged.Skin == AlternateFormId ||
         !(@event.Damage >= damaged.Life) || !(damaged.Mana >=
-                                                                           damaged.GetAbilityManaCost(AbilityTypeId, abilityLevel)))
+                                                                           damaged.GetAbilityManaCost(_abilityTypeId, abilityLevel)))
     {
       return;
     }
@@ -80,7 +82,8 @@ public sealed class VengeanceTrait : TakeDamageUnitTypeTrait
   /// </summary>
   /// <param name="damagedUnitTypeId">The unit type ID that can take damage to trigger this effect.</param>
   /// <param name="abilityTypeId">The ability whose level is used to determine the magnitude of the effect.</param>
-  public VengeanceTrait(int damagedUnitTypeId, int abilityTypeId) : base(damagedUnitTypeId, abilityTypeId)
+  public VengeanceTrait(int damagedUnitTypeId, int abilityTypeId) : base(damagedUnitTypeId)
   {
+    _abilityTypeId = abilityTypeId;
   }
 }
