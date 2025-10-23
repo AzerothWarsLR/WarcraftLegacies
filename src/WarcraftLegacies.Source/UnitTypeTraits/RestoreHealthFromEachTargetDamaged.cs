@@ -33,16 +33,8 @@ public sealed class RestoreHealthFromEachTargetDamaged : UnitTypeTrait, IApplies
   /// <summary>
   /// Initializes a new instance of the <see cref="RestoreHealthFromEachTargetDamaged"/> class.
   /// </summary>
-  /// <param name="unitTypeId"><inheritdoc /></param>
   /// <param name="abilityTypeId">The Warcraft 3 ability representing this instance.</param>
-  public RestoreHealthFromEachTargetDamaged(int unitTypeId, int abilityTypeId) : base(unitTypeId) => _abilityTypeId = abilityTypeId;
-
-  /// <summary>
-  /// Initializes a new instance of the <see cref="RestoreHealthFromEachTargetDamaged"/> class.
-  /// </summary>
-  /// <param name="unitTypeIds"><inheritdoc /></param>
-  /// <param name="abilityTypeId">The Warcraft 3 ability representing this instance.</param>
-  public RestoreHealthFromEachTargetDamaged(IEnumerable<int> unitTypeIds, int abilityTypeId) : base(unitTypeIds) => _abilityTypeId = abilityTypeId;
+  public RestoreHealthFromEachTargetDamaged(int abilityTypeId) => _abilityTypeId = abilityTypeId;
 
   /// <summary>
   /// The number of units required for diminishing returns to start.

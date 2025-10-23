@@ -80,9 +80,8 @@ public sealed class VengeanceTrait : UnitTypeTrait, IEffectOnDamaged
   /// <summary>
   /// Initializes a new instance of the <see cref="VengeanceTrait"/> class.
   /// </summary>
-  /// <param name="damagedUnitTypeId">The unit type ID that can take damage to trigger this effect.</param>
   /// <param name="abilityTypeId">The ability whose level is used to determine the magnitude of the effect.</param>
-  public VengeanceTrait(int damagedUnitTypeId, int abilityTypeId) : base(damagedUnitTypeId)
+  public VengeanceTrait(int abilityTypeId)
   {
     _abilityTypeId = abilityTypeId;
   }

@@ -8,10 +8,7 @@ namespace WarcraftLegacies.Source.UnitTypeTraits;
 /// </summary>
 public sealed class NoTargetSpellOnAttack : UnitTypeTrait, IAppliesEffectOnDamage
 {
-  /// <summary>
-  /// The unit type ID which has this <see cref="UnitTypeTrait"/> should also have an ability with this ID.
-  /// </summary>
-  public int AbilityTypeId { get; }
+  private readonly int _abilityTypeId;
 
   /// <summary>
   /// The dummy spell to cast on attack.
@@ -31,12 +28,8 @@ public sealed class NoTargetSpellOnAttack : UnitTypeTrait, IAppliesEffectOnDamag
   /// <summary>
   /// Initializes a new instance of the <see cref="NoTargetSpellOnAttack"/> class.
   /// </summary>
-  /// <param name="unitTypeId"><inheritdoc /></param>
   /// <param name="abilityTypeId">The ability the provided unit type has which represents this object.</param>
-  public NoTargetSpellOnAttack(int unitTypeId, int abilityTypeId) : base(unitTypeId)
-  {
-    AbilityTypeId = abilityTypeId;
-  }
+  public NoTargetSpellOnAttack(int abilityTypeId) => _abilityTypeId = abilityTypeId;
 
   /// <summary>
   /// The player must have this research for the ability to take effect.
@@ -48,7 +41,7 @@ public sealed class NoTargetSpellOnAttack : UnitTypeTrait, IAppliesEffectOnDamag
   public void OnDealsDamage()
   {
     var caster = @event.DamageSource;
-    if (!@event.IsAttack || caster.GetAbilityLevel(AbilityTypeId) == 0)
+    if (!@event.IsAttack || caster.GetAbilityLevel(_abilityTypeId) == 0)
     {
       return;
     }
@@ -67,5 +60,5 @@ public sealed class NoTargetSpellOnAttack : UnitTypeTrait, IAppliesEffectOnDamag
     }
   }
   private void DoSpellNoTarget(unit caster) => DummyCasterManager.GetGlobalDummyCaster().CastNoTarget(caster, DummyAbilityId,
-    DummyOrderId, caster.GetAbilityLevel(AbilityTypeId));
+    DummyOrderId, caster.GetAbilityLevel(_abilityTypeId));
 }

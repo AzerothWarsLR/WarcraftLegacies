@@ -8,11 +8,7 @@ namespace WarcraftLegacies.Source.UnitTypeTraits;
 /// </summary>
 public sealed class DamageMultiplierOnAttack : UnitTypeTrait, IAppliesEffectOnDamage
 {
-  /// <summary>Unit type ID that triggers this effect</summary>
-  public int CasterUnitTypeId { get; }
-
-  /// <summary>Ability ID representing this passive effect</summary>
-  public int AbilityTypeId { get; }
+  private readonly int _abilityTypeId;
 
   /// <summary>Base damage multiplier for non-hero units</summary>
   public float BaseUnitMultiplier { get; init; } = 1.4f;
@@ -29,21 +25,14 @@ public sealed class DamageMultiplierOnAttack : UnitTypeTrait, IAppliesEffectOnDa
   /// <summary>Only apply multiplier to attack damage (not spell damage)</summary>
   public bool OnlyAttackDamage { get; init; } = true;
 
-  public DamageMultiplierOnAttack(int casterUnitTypeId, int abilityTypeId)
-      : base(casterUnitTypeId)
-  {
-    CasterUnitTypeId = casterUnitTypeId;
-    AbilityTypeId = abilityTypeId;
-  }
+  public DamageMultiplierOnAttack(int abilityTypeId) => _abilityTypeId = abilityTypeId;
 
   public void OnDealsDamage()
   {
     var caster = @event.DamageSource;
     var target = @event.Unit;
 
-    // Validate caster unit type and ability level
-    if (caster.UnitType != CasterUnitTypeId ||
-        caster.GetAbilityLevel(AbilityTypeId) == 0)
+    if (caster.GetAbilityLevel(_abilityTypeId) == 0)
     {
       return;
     }
@@ -57,7 +46,7 @@ public sealed class DamageMultiplierOnAttack : UnitTypeTrait, IAppliesEffectOnDa
     // Get the original damage value
     var originalDamage = @event.Damage;
 
-    var abilityLevel = caster.GetAbilityLevel(AbilityTypeId);
+    var abilityLevel = caster.GetAbilityLevel(_abilityTypeId);
     var isTargetHero = target.IsUnitType(unittype.Hero);
 
     // Calculate damage multiplier based on target type and ability level

@@ -14,10 +14,6 @@ public sealed class InfiniteInfluence : UnitTypeTrait, IEffectOnSpellCast
   /// </summary>
   public required float Radius { get; init; }
 
-  public InfiniteInfluence(int id) : base(id)
-  {
-  }
-
   public void OnSpellCast()
   {
     var triggerUnit = @event.Unit;

@@ -1,7 +1,6 @@
 ﻿using MacroTools.Extensions;
 using MacroTools.Libraries;
 using MacroTools.UnitTypeTraits;
-using WarcraftLegacies.Source.UnitTypeTraits;
 using WCSharp.Missiles;
 
 namespace WarcraftLegacies.Source.Spells.MassiveAttack;
@@ -26,14 +25,6 @@ public sealed class MassiveAttackAbility : UnitTypeTrait, IAppliesEffectOnDamage
   /// If set, additional damage is NOT dealt to the attack target the ability was triggered against.
   /// </summary>
   public bool IgnoreAttackTarget { get; init; }
-
-  /// <summary>
-  /// Initializes a new instance of the <see cref="SpellOnAttack"/> class.
-  /// </summary>
-  /// <param name="unitTypeId"><inheritdoc /></param>
-  public MassiveAttackAbility(int unitTypeId) : base(unitTypeId)
-  {
-  }
 
   /// <inheritdoc />
   public void OnDealsDamage()

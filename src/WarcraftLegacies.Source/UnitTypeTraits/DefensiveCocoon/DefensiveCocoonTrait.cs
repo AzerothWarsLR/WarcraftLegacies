@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using MacroTools.UnitTypeTraits;
+﻿using MacroTools.UnitTypeTraits;
 using WarcraftLegacies.Source.UnitTypeTraits.Vengeance;
 using WCSharp.Buffs;
 
@@ -42,9 +41,8 @@ public sealed class DefensiveCocoonTrait : UnitTypeTrait, IEffectOnDamaged
   /// <summary>
   /// Initializes a new instance of the <see cref="VengeanceTrait"/> class.
   /// </summary>
-  /// <param name="damagedUnitTypeIds">The unit type IDs that can take damage to trigger this effect.</param>
   /// <param name="abilityTypeId">The ability whose level is used to determine the magnitude of the effect.</param>
-  public DefensiveCocoonTrait(IEnumerable<int> damagedUnitTypeIds, int abilityTypeId) : base(damagedUnitTypeIds)
+  public DefensiveCocoonTrait(int abilityTypeId)
   {
     _abilityTypeId = abilityTypeId;
   }

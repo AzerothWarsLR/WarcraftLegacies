@@ -24,11 +24,6 @@ public sealed class CreateCorpseOnDeath : UnitTypeTrait, IEffectOnDeath
   public int RequiredResearch { get; init; }
 
   /// <inheritdoc />
-  public CreateCorpseOnDeath(int unitTypeId) : base(unitTypeId)
-  {
-  }
-
-  /// <inheritdoc />
   public void OnDeath()
   {
     var triggerUnit = @event.Unit;

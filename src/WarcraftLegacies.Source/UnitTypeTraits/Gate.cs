@@ -18,9 +18,8 @@ public sealed class Gate : UnitTypeTrait, IEffectOnUpgrade, IEffectOnDeath, IEff
   /// Constructs a new <see cref="Gate"/>.
   /// </summary>
   /// <param name="openedId">The unit type ID of the gate while open.</param>
-  /// <param name="closedId">The unit type ID of the gate while closed.</param>
   /// <param name="deadId">The unit type ID of the gate while dead.</param>
-  public Gate(int openedId, int closedId, int deadId) : base(new[] { openedId, closedId, deadId })
+  public Gate(int openedId, int deadId)
   {
     _openedId = openedId;
     _deadId = deadId;
@@ -40,9 +39,10 @@ public sealed class Gate : UnitTypeTrait, IEffectOnUpgrade, IEffectOnDeath, IEff
   /// <inheritdoc/>
   public void OnSpellFinish()
   {
-    if (@event.Unit.UnitType == _openedId)
+    var triggerUnit = @event.Unit;
+    if (triggerUnit.UnitType == _openedId)
     {
-      @event.Unit.SetAnimation("death alternate");
+      triggerUnit.SetAnimation("death alternate");
     }
   }
 
@@ -64,7 +64,8 @@ public sealed class Gate : UnitTypeTrait, IEffectOnUpgrade, IEffectOnDeath, IEff
   /// <inheritdoc />
   public void OnUpgrade()
   {
-    TurnBasedHitpointsManager.UnRegister(@event.Unit);
-    TurnBasedHitpointsManager.Register(@event.Unit, HitPointPercentagePerTurn);
+    var triggerUnit = @event.Unit;
+    TurnBasedHitpointsManager.UnRegister(triggerUnit);
+    TurnBasedHitpointsManager.Register(triggerUnit, HitPointPercentagePerTurn);
   }
 }

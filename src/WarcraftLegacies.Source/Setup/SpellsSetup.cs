@@ -33,9 +33,9 @@ public static class SpellsSetup
     };
     SpellRegistry.Register(thunderClapGil);
 
-    var massAntiMagicShell = new MassAnySpell(FourCC("A099"))
+    var massAntiMagicShell = new MassAnySpell(ABILITY_A099_MASS_ANTI_MAGIC_SHIELD)
     {
-      DummyAbilityId = FourCC("A0JN"),
+      DummyAbilityId = ABILITY_A0JN_ANTI_MAGIC_SHELL_WARSONG_DUMMY,
       DummyAbilityOrderId = ORDER_ANTI_MAGIC_SHELL,
       Radius = 200,
       CastFilter = CastFilters.IsTargetAllyAndAlive,
@@ -43,9 +43,9 @@ public static class SpellsSetup
     };
     SpellRegistry.Register(massAntiMagicShell);
 
-    var massEnrage = new MassAnySpell(FourCC("A0QK"))
+    var massEnrage = new MassAnySpell(ABILITY_A0QK_MASS_ENRAGE_HAKKAR)
     {
-      DummyAbilityId = FourCC("ACuf"),
+      DummyAbilityId = ABILITY_ACUF_UNHOLY_FRENZY_DUMMY,
       DummyAbilityOrderId = ORDER_UNHOLY_FRENZY,
       Radius = 200,
       CastFilter = CastFilters.IsTargetEnemyAndAlive,
@@ -64,10 +64,9 @@ public static class SpellsSetup
     };
     SpellRegistry.Register(seismicShard);
 
-
-    var burningVengeance = new VengeanceTrait(FourCC("O04H"), FourCC("A0OO"))
+    UnitTypeTraitRegistry.Register(new VengeanceTrait(ABILITY_A0OO_BURNING_VENGEANCE_TWILIGHT)
     {
-      AlternateFormId = FourCC("e01A"),
+      AlternateFormId = UNIT_E01A_BURNING_VENGEANCE_CREEP,
       HitsReviveThreshold = 5,
       HealBase = 900,
       HealLevel = 300,
@@ -75,9 +74,7 @@ public static class SpellsSetup
       BonusDamageLevel = 20,
       Duration = 20,
       ReviveEffect = "Heal Blue.mdx"
-    };
-    UnitTypeTraitRegistry.Register(burningVengeance);
-
+    }, UNIT_O04H_CHAMPION_OF_THE_TWILIGHT_S_HAMMER_CREEP);
 
     var demonSoulCooldown = new CooldownReset(ABILITY_A0HF_ABILITY_COOLDOWN_RESET);
     SpellRegistry.Register(demonSoulCooldown);

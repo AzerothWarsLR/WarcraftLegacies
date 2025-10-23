@@ -27,16 +27,7 @@ public static class IllidariSpellSetup
       Color = new Color(255, 255, 250, 255)
     });
 
-    var illidanVariations = new[]
-    {
-      UNIT_EEVI_DEMON_HUNTER_ILLIDARI_HYBRID_ILLIDAN,
-      UNIT_EEVM_DEMON_HUNTER_MORPHED_LEVEL_1_ILLIDARI,
-      UNIT_ZF4B_DEMON_HUNTER_MORPHED_LEVEL_2_ILLIDARI,
-      UNIT_ZB88_DEMON_HUNTER_MORPHED_LEVEL_3_ILLIDARI
-    };
-
-    var warglaivesOfAzzinoth = new WarglaivesOfAzzinoth(illidanVariations,
-      ABILITY_A0YW_WARGLAIVES_OF_AZZINOTH_ILLIDAN)
+    UnitTypeTraitRegistry.Register(new WarglaivesOfAzzinoth(ABILITY_A0YW_WARGLAIVES_OF_AZZINOTH_ILLIDAN)
     {
       Radius = 150,
       DamageBase = 4,
@@ -45,8 +36,13 @@ public static class IllidariSpellSetup
       Effect = @"war3mapImported\Culling Cleave.mdx",
       EffectScale = 1.2f,
       DamageType = damagetype.Magic
-    };
-    UnitTypeTraitRegistry.Register(warglaivesOfAzzinoth);
+    }, new[]
+    {
+      UNIT_EEVI_DEMON_HUNTER_ILLIDARI_HYBRID_ILLIDAN,
+      UNIT_EEVM_DEMON_HUNTER_MORPHED_LEVEL_1_ILLIDARI,
+      UNIT_ZF4B_DEMON_HUNTER_MORPHED_LEVEL_2_ILLIDARI,
+      UNIT_ZB88_DEMON_HUNTER_MORPHED_LEVEL_3_ILLIDARI
+    });
 
     var shadowAssault = new ShadowAssaultSpell(ABILITY_A0TP_SHADOW_ASSAULT_AKAMA)
     {
@@ -60,18 +56,14 @@ public static class IllidariSpellSetup
     };
     SpellRegistry.Register(shadowAssault);
 
-    var cripplingStrike = new DamageMultiplierOnAttack(
-      casterUnitTypeId: UNIT_NAKA_ELDER_SAGE_ILLIDARI,
-      abilityTypeId: ABILITY_A0YV_CRIPPLING_STRIKE_AKAMA
-    )
+    UnitTypeTraitRegistry.Register(new DamageMultiplierOnAttack(ABILITY_A0YV_CRIPPLING_STRIKE_AKAMA)
     {
       BaseUnitMultiplier = 1.4f,
       LevelUnitMultiplier = 0.25f,
       BaseHeroMultiplier = 1.2f,
       LevelHeroMultiplier = 0.15f,
       OnlyAttackDamage = true
-    };
-    UnitTypeTraitRegistry.Register(cripplingStrike);
+    }, UNIT_NAKA_ELDER_SAGE_ILLIDARI);
 
     SpellRegistry.Register(new AddAbilityOnLearn(ABILITY_A01Q_SHADOW_AURA_AKAMA)
     {

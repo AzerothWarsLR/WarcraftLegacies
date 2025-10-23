@@ -20,7 +20,7 @@ public sealed class Incubate : UnitTypeTrait, IEffectOnSummonedUnit
   public required int HatchedUnitTypeId { get; init; }
 
   /// <inheritdoc />
-  public Incubate(int unitTypeId, int abilityTypeId) : base(unitTypeId)
+  public Incubate(int abilityTypeId)
   {
     _abilityTypeId = abilityTypeId;
   }

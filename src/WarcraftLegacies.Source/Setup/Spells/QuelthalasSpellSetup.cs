@@ -54,7 +54,7 @@ public static class QuelthalasSpellSetup
     };
     SpellRegistry.Register(siphoningRitual);
 
-    UnitTypeTraitRegistry.Register(new DefensiveOrbs(UNIT_H00Q_KING_OF_QUEL_THALAS_QUELTHALAS, ABILITY_A055_DEFENSIVE_ORBS_QUEL_THALAS_ANASTERIAN)
+    UnitTypeTraitRegistry.Register(new DefensiveOrbs(ABILITY_A055_DEFENSIVE_ORBS_QUEL_THALAS_ANASTERIAN)
     {
       OrbitRadius = 350,
       OrbitalPeriod = 4,
@@ -68,6 +68,6 @@ public static class QuelthalasSpellSetup
         ABILITY_A013_DEVOUR_MAGIC_ANASTERIAN,
         ABILITY_AHPX_ASHES_OF_AL_AR_QUEL_THALAS_ANASTERIAN_KAEL_THAS
       }
-    });
+    }, UNIT_H00Q_KING_OF_QUEL_THALAS_QUELTHALAS);
   }
 }

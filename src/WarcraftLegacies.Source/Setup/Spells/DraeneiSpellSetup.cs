@@ -48,11 +48,11 @@ public static class DraeneiSpellSetup
       Color = new Color(55, 50, 250, 255)
     });
 
-    UnitTypeTraitRegistry.Register(new MassiveAttackAbility(UNIT_N0CX_LIGHTFORGED_WARFRAME_DRAENEI)
+    UnitTypeTraitRegistry.Register(new MassiveAttackAbility
     {
       AttackDamagePercentage = 0.3f,
       Distance = 700
-    });
+    }, UNIT_N0CX_LIGHTFORGED_WARFRAME_DRAENEI);
 
     var warStompAdal = new Stomp(ABILITY_A105_BLINDING_STARLIGHT_ADAL)
     {

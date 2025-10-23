@@ -14,13 +14,11 @@ public static class IronforgeSpellSetup
   {
     SpellRegistry.Register(new TitanForgeArtifact(ABILITY_A0T3_TITANFORGE_ARTIFACT_IRONFORGE, 0));
 
-    var lightningAttack = new SpellOnAttack(UNIT_H03Z_STORMRIDER_IRONFORGE,
-      ABILITY_A10J_MASTER_OF_LIGHTNING_STORMRIDERS)
+    UnitTypeTraitRegistry.Register(new SpellOnAttack(ABILITY_A10J_MASTER_OF_LIGHTNING_STORMRIDERS)
     {
       DummyAbilityId = ABILITY_ACFL_FORKED_LIGHTNING_LIGHT_BLUE_HIGHBORNE,
       DummyOrderId = ORDER_FORKED_LIGHTNING,
       ProcChance = 0.15f
-    };
-    UnitTypeTraitRegistry.Register(lightningAttack);
+    }, UNIT_H03Z_STORMRIDER_IRONFORGE);
   }
 }

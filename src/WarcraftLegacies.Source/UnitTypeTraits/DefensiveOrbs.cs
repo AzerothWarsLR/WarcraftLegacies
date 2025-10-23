@@ -11,6 +11,8 @@ namespace WarcraftLegacies.Source.UnitTypeTraits;
 /// </summary>
 public sealed class DefensiveOrbs : UnitTypeTrait, IEffectOnSpellEffect
 {
+  private readonly int _abilityTypeId;
+
   /// <summary>
   /// The radius in which the orbs orbit.
   /// </summary>
@@ -46,13 +48,8 @@ public sealed class DefensiveOrbs : UnitTypeTrait, IEffectOnSpellEffect
   /// </summary>
   public List<int> AbilityWhitelist { get; init; } = new();
 
-  private readonly int _abilityTypeId;
-
   /// <inheritdoc />
-  public DefensiveOrbs(int unitTypeId, int abilityTypeId) : base(unitTypeId)
-  {
-    _abilityTypeId = abilityTypeId;
-  }
+  public DefensiveOrbs(int abilityTypeId) => _abilityTypeId = abilityTypeId;
 
   /// <inheritdoc />
   public void OnSpellEffect()

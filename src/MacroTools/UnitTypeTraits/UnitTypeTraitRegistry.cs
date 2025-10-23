@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using MacroTools.Utils;
 using WCSharp.Events;
 
@@ -50,89 +48,90 @@ public static class UnitTypeTraitRegistry
   }
 
   /// <summary>
-  /// Registers the provided <see cref="UnitTypeTrait"/>, causing its functionality to be invoked when specific Warcraft 3 events occur.
+  /// Registers a <see cref="UnitTypeTrait"/> to apply to multiple unit types,
+  /// activating its functionality when relevant Warcraft 3 events occur.
   /// </summary>
-  public static void Register(UnitTypeTrait unitTypeTrait)
+  /// <param name="unitTypeTrait">The trait to register.</param>
+  /// <param name="unitTypeIds">The unit type IDs to associate with the trait.</param>
+  public static void Register(UnitTypeTrait unitTypeTrait, int[] unitTypeIds)
   {
-    try
+    foreach (var unitTypeId in unitTypeIds)
     {
-      RegisterEvents(unitTypeTrait);
-      foreach (var unitTypeId in unitTypeTrait.UnitTypeIds)
-      {
-        if (!_unitTypeTraitsByUnitTypeId.TryGetValue(unitTypeId, out var unitTypeTraits))
-        {
-          unitTypeTraits = _unitTypeTraitsByUnitTypeId[unitTypeId] = new List<UnitTypeTrait>();
-        }
-
-        unitTypeTraits.Add(unitTypeTrait);
-
-        unitTypeTrait.OnRegistered();
-      }
-    }
-    catch (Exception ex)
-    {
-      Console.WriteLine(
-        $"Failed to register {nameof(UnitTypeTrait)} for {GetObjectName(unitTypeTrait.UnitTypeIds.First())}: {ex}");
+      Register(unitTypeTrait, unitTypeId);
     }
   }
 
-  private static void RegisterEvents(UnitTypeTrait unitTypeTrait)
+  /// <summary>
+  /// Registers a <see cref="UnitTypeTrait"/> to apply to a single unit type,
+  /// activating its functionality when relevant Warcraft 3 events occur.
+  /// </summary>
+  /// <param name="unitTypeTrait">The trait to register.</param>
+  /// <param name="unitTypeId">The unit type ID to associate with the trait.</param>
+  public static void Register(UnitTypeTrait unitTypeTrait, int unitTypeId)
   {
-    foreach (var unitTypeId in unitTypeTrait.UnitTypeIds)
+    RegisterEvent(unitTypeTrait, unitTypeId);
+
+    if (!_unitTypeTraitsByUnitTypeId.TryGetValue(unitTypeId, out var unitTypeTraits))
     {
-      switch (unitTypeTrait)
-      {
-        case IEffectOnCreated effectOnCreated:
-          void UnitCreated() => effectOnCreated.OnCreated(@event.Unit);
-          PlayerUnitEvents.Register(UnitTypeEvent.IsCreated, UnitCreated, unitTypeId);
-          PlayerUnitEvents.Register(HeroTypeEvent.FinishesRevive, UnitCreated, unitTypeId);
-          break;
+      unitTypeTraits = _unitTypeTraitsByUnitTypeId[unitTypeId] = new List<UnitTypeTrait>();
+    }
 
-        case IEffectOnTrained effectOnTrained:
-          PlayerUnitEvents.Register(UnitTypeEvent.FinishesBeingTrained, effectOnTrained.OnTrained, unitTypeId);
-          break;
+    unitTypeTraits.Add(unitTypeTrait);
+  }
 
-        case IEffectOnConstruction effectOnConstruction:
-          PlayerUnitEvents.Register(UnitTypeEvent.FinishesBeingConstructed, effectOnConstruction.OnConstruction,
-            unitTypeId);
-          break;
+  private static void RegisterEvent(UnitTypeTrait unitTypeTrait, int unitTypeId)
+  {
+    switch (unitTypeTrait)
+    {
+      case IEffectOnCreated effectOnCreated:
+        void UnitCreated() => effectOnCreated.OnCreated(@event.Unit);
+        PlayerUnitEvents.Register(UnitTypeEvent.IsCreated, UnitCreated, unitTypeId);
+        PlayerUnitEvents.Register(HeroTypeEvent.FinishesRevive, UnitCreated, unitTypeId);
+        break;
 
-        case IEffectOnUpgrade effectOnUpgrade:
-          PlayerUnitEvents.Register(UnitTypeEvent.FinishesUpgrade, effectOnUpgrade.OnUpgrade, unitTypeId);
-          break;
+      case IEffectOnTrained effectOnTrained:
+        PlayerUnitEvents.Register(UnitTypeEvent.FinishesBeingTrained, effectOnTrained.OnTrained, unitTypeId);
+        break;
 
-        case IEffectOnDamaged effectOnDamaged:
-          PlayerUnitEvents.Register(UnitTypeEvent.IsDamaged, effectOnDamaged.OnDamaged, unitTypeId);
-          break;
+      case IEffectOnConstruction effectOnConstruction:
+        PlayerUnitEvents.Register(UnitTypeEvent.FinishesBeingConstructed, effectOnConstruction.OnConstruction, unitTypeId);
+        break;
 
-        case IEffectOnDeath effectOnDeath:
-          PlayerUnitEvents.Register(UnitTypeEvent.Dies, effectOnDeath.OnDeath, unitTypeId);
-          break;
+      case IEffectOnUpgrade effectOnUpgrade:
+        PlayerUnitEvents.Register(UnitTypeEvent.FinishesUpgrade, effectOnUpgrade.OnUpgrade, unitTypeId);
+        break;
 
-        case IEffectOnSpellCast effectOnSpellCast:
-          PlayerUnitEvents.Register(UnitTypeEvent.SpellCast, effectOnSpellCast.OnSpellCast, unitTypeId);
-          break;
+      case IEffectOnDamaged effectOnDamaged:
+        PlayerUnitEvents.Register(UnitTypeEvent.IsDamaged, effectOnDamaged.OnDamaged, unitTypeId);
+        break;
 
-        case IEffectOnSpellEffect effectOnSpellEffect:
-          PlayerUnitEvents.Register(UnitTypeEvent.SpellEffect, effectOnSpellEffect.OnSpellEffect, unitTypeId);
-          break;
+      case IEffectOnDeath effectOnDeath:
+        PlayerUnitEvents.Register(UnitTypeEvent.Dies, effectOnDeath.OnDeath, unitTypeId);
+        break;
 
-        case IEffectOnSpellFinish effectOnSpellFinish:
-          PlayerUnitEvents.Register(UnitTypeEvent.SpellFinish, effectOnSpellFinish.OnSpellFinish, unitTypeId);
-          break;
+      case IEffectOnSpellCast effectOnSpellCast:
+        PlayerUnitEvents.Register(UnitTypeEvent.SpellCast, effectOnSpellCast.OnSpellCast, unitTypeId);
+        break;
 
-        case IEffectOnCancelUpgrade effectOnCancelUpgrade:
-          PlayerUnitEvents.Register(UnitTypeEvent.CancelsUpgrade, effectOnCancelUpgrade.OnCancelUpgrade, unitTypeId);
-          break;
+      case IEffectOnSpellEffect effectOnSpellEffect:
+        PlayerUnitEvents.Register(UnitTypeEvent.SpellEffect, effectOnSpellEffect.OnSpellEffect, unitTypeId);
+        break;
 
-        case IAppliesEffectOnDamage appliesEffectOnDamage:
-          PlayerUnitEvents.Register(UnitTypeEvent.Damaging, appliesEffectOnDamage.OnDealsDamage, unitTypeId);
-          break;
+      case IEffectOnSpellFinish effectOnSpellFinish:
+        PlayerUnitEvents.Register(UnitTypeEvent.SpellFinish, effectOnSpellFinish.OnSpellFinish, unitTypeId);
+        break;
 
-        case IEffectOnSummonedUnit effectOnSummonedUnit:
-          PlayerUnitEvents.Register(UnitTypeEvent.Summons, effectOnSummonedUnit.OnSummonedUnit, unitTypeId);
-          break;
-      }
+      case IEffectOnCancelUpgrade effectOnCancelUpgrade:
+        PlayerUnitEvents.Register(UnitTypeEvent.CancelsUpgrade, effectOnCancelUpgrade.OnCancelUpgrade, unitTypeId);
+        break;
+
+      case IAppliesEffectOnDamage appliesEffectOnDamage:
+        PlayerUnitEvents.Register(UnitTypeEvent.Damaging, appliesEffectOnDamage.OnDealsDamage, unitTypeId);
+        break;
+
+      case IEffectOnSummonedUnit effectOnSummonedUnit:
+        PlayerUnitEvents.Register(UnitTypeEvent.Summons, effectOnSummonedUnit.OnSummonedUnit, unitTypeId);
+        break;
     }
   }
 }

@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using MacroTools.Data;
+﻿using MacroTools.Data;
 using MacroTools.Extensions;
 using MacroTools.UnitTypeTraits;
 
@@ -16,8 +15,7 @@ public sealed class SummoningMastery : UnitTypeTrait, IEffectOnSummonedUnit
 
   public LeveledAbilityField<float> AttackDamagePercentageBonus { get; init; } = new();
 
-  /// <inheritdoc />
-  public SummoningMastery(IEnumerable<int> unitTypeIds, int abilityTypeId) : base(unitTypeIds)
+  public SummoningMastery(int abilityTypeId)
   {
     _abilityTypeId = abilityTypeId;
   }

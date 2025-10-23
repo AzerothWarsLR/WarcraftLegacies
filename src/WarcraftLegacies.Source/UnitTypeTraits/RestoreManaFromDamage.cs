@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using MacroTools.Data;
+﻿using MacroTools.Data;
 using MacroTools.UnitTypeTraits;
 using WCSharp.Effects;
 
@@ -15,7 +14,7 @@ public sealed class RestoreManaFromDamage : UnitTypeTrait, IAppliesEffectOnDamag
   /// <summary>
   /// This effect appears on the unit when they restore mana from this ability.
   /// </summary>
-  public string? Effect { get; init; } = "";
+  public string? Effect { get; init; }
 
   /// <summary>
   /// The amount of mana this unit gains per point of damage they deal.
@@ -25,16 +24,8 @@ public sealed class RestoreManaFromDamage : UnitTypeTrait, IAppliesEffectOnDamag
   /// <summary>
   /// Initializes a new instance of the <see cref="RestoreManaFromDamage"/> class.
   /// </summary>
-  /// <param name="unitTypeId"><inheritdoc /></param>
   /// <param name="abilityTypeId">The Warcraft 3 ability representing this instance.</param>
-  public RestoreManaFromDamage(int unitTypeId, int abilityTypeId) : base(unitTypeId) => _abilityTypeId = abilityTypeId;
-
-  /// <summary>
-  /// Initializes a new instance of the <see cref="RestoreManaFromDamage"/> class.
-  /// </summary>
-  /// <param name="unitTypeIds"><inheritdoc /></param>
-  /// <param name="abilityTypeId">The Warcraft 3 ability representing this instance.</param>
-  public RestoreManaFromDamage(IEnumerable<int> unitTypeIds, int abilityTypeId) : base(unitTypeIds) => _abilityTypeId = abilityTypeId;
+  public RestoreManaFromDamage(int abilityTypeId) => _abilityTypeId = abilityTypeId;
 
   /// <inheritdoc />
   public void OnDealsDamage()
@@ -42,6 +33,9 @@ public sealed class RestoreManaFromDamage : UnitTypeTrait, IAppliesEffectOnDamag
     var damager = @event.DamageSource;
     var manaPerDamage = @event.Damage * (ManaPerDamage.Base + ManaPerDamage.PerLevel * damager.GetAbilityLevel(_abilityTypeId));
     damager.Mana += manaPerDamage;
-    EffectSystem.Add(effect.Create(Effect, damager, "origin"));
+    if (Effect != null)
+    {
+      EffectSystem.Add(effect.Create(Effect, damager, "origin"));
+    }
   }
 }

@@ -30,10 +30,10 @@ public static class DruidsSpellSetup
       }
     });
 
-    UnitTypeTraitRegistry.Register(new MassiveAttackAbility(UNIT_E00A_ANCIENT_GUARDIAN_DRUIDS)
+    UnitTypeTraitRegistry.Register(new MassiveAttackAbility
     {
       AttackDamagePercentage = 0.5f,
       Distance = 700
-    });
+    }, UNIT_E00A_ANCIENT_GUARDIAN_DRUIDS);
   }
 }

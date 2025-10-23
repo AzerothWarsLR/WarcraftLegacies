@@ -26,15 +26,6 @@ public sealed class Execute : UnitTypeTrait, IAppliesEffectOnDamage
   /// </summary>
   public float DamageMultStructure { get; init; }
 
-
-  /// <summary>
-  /// Initializes a new instance of the <see cref="Execute"/> class.
-  /// </summary>
-  /// <param name="unitTypeId"><inheritdoc /></param>
-  public Execute(int unitTypeId) : base(unitTypeId)
-  {
-  }
-
   /// <inheritdoc />
   public void OnDealsDamage()
   {

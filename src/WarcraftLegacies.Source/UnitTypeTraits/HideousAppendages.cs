@@ -9,10 +9,6 @@ namespace WarcraftLegacies.Source.UnitTypeTraits;
 /// </summary>
 public sealed class HideousAppendages : UnitTypeTrait, IEffectOnCreated
 {
-  public HideousAppendages(int id) : base(id)
-  {
-  }
-
   public required int TentacleUnitTypeId { get; init; }
 
   public required int TentacleCount { get; init; }

@@ -14,9 +14,8 @@ public sealed class ProvidesIncome : UnitTypeTrait, IEffectOnUpgrade, IEffectOnC
   /// <summary>
   /// Initializes a new instance of the <see cref="ProvidesIncome"/> class.
   /// </summary>
-  /// <param name="unitTypeId"><inheritdoc /></param>
   /// <param name="income">The amount of extra gold income the unit grants.</param>
-  public ProvidesIncome(int unitTypeId, int income) : base(unitTypeId)
+  public ProvidesIncome(int income)
   {
     _income = income;
   }

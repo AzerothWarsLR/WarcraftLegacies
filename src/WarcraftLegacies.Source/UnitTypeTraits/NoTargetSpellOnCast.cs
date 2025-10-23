@@ -5,13 +5,10 @@ using MacroTools.UnitTypeTraits;
 namespace WarcraftLegacies.Source.UnitTypeTraits;
 
 /// <summary>
-/// When the unit deals casts a spell, it has a chance to cast a dummy spell without a target.
+/// When the unit casts a spell, it has a chance to cast a dummy spell without a target.
 /// </summary>
 public sealed class NoTargetSpellOnCast : UnitTypeTrait, IEffectOnSpellEffect
 {
-  /// <summary>
-  /// The unit type ID which has this <see cref="UnitTypeTrait"/> should also have an ability with this ID.
-  /// </summary>
   private readonly int _abilityTypeId;
 
   /// <summary>
@@ -32,12 +29,8 @@ public sealed class NoTargetSpellOnCast : UnitTypeTrait, IEffectOnSpellEffect
   /// <summary>
   /// Initializes a new instance of the <see cref="NoTargetSpellOnAttack"/> class.
   /// </summary>
-  /// <param name="unitTypeId"><inheritdoc /></param>
   /// <param name="abilityTypeId">The ability the provided unit type has which represents this object.</param>
-  public NoTargetSpellOnCast(int unitTypeId, int abilityTypeId) : base(unitTypeId)
-  {
-    _abilityTypeId = abilityTypeId;
-  }
+  public NoTargetSpellOnCast(int abilityTypeId) => _abilityTypeId = abilityTypeId;
 
   public List<int> AbilityWhitelist { get; init; } = new();
 
