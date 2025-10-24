@@ -11,6 +11,7 @@ public static class MapMigrationProvider
       new GoldBountyMapMigration(),
       new FlightMigration(),
       new UnitTooltipMigration(),
+      new UnitTooltipBasicMigration(),
       new PortraitModelFileMapMigration()
     };
   }
