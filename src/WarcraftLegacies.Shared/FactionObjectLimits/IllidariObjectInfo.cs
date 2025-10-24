@@ -21,7 +21,7 @@ public static class IllidariObjectInfo
     yield return new(UNIT_NNTG_TIDAL_WATCHER_ILLIDARI_TOWER, Unlimited);
     yield return new(UNIT_N005_IMPROVED_TIDAL_WATCHER_ILLIDARI_TOWER, Unlimited);
     yield return new(UNIT_NMRB_STEAMVAULT_ILLIDARI_SHOP, Unlimited);
-    yield return new(UNIT_N08W_ASHTONGUE_LAIR_ILLIDARI_SIEGE, Unlimited);
+    yield return new(UNIT_N08W_DRAENEI_HUT_ILLIDARI_SIEGE, Unlimited);
     yield return new(UNIT_E020_ANCIENT_SHIPYARD_ILLIDARI_SHIPYARD, Unlimited, UnitCategory.Shipyard);
     yield return new(UNIT_NMPE_MUR_GUL_SLAVE_ILLIDARI_WORKER, Unlimited, UnitCategory.Worker);
     yield return new(UNIT_NMYR_NAGA_MYRMIDON_ILLIDARI, Unlimited);
@@ -34,8 +34,8 @@ public static class IllidariObjectInfo
     yield return new(UNIT_NWGS_COUATL_NZOTH_ILLIDARI, 8);
     yield return new(UNIT_E00Y_SCYLLA_ILLIDARI, 4);
     yield return new(UNIT_H0AC_SEA_WITCH_ILLIDARI_ELITE, 6);
-    yield return new(UNIT_NDRN_ASHTONGUE_DEATHSWORN_ILLIDARI, Unlimited);
-    yield return new(UNIT_NDRS_ASHTONGUE_MYSTIC_ILLIDARI, 6);
+    yield return new(UNIT_NDRN_DEATHSWORN_ILLIDARI, Unlimited);
+    yield return new(UNIT_NDRS_SEER_ILLIDARI, 6);
     yield return new(UNIT_ETRS_NIGHT_ELF_TRANSPORT_SHIP_DRUIDS_SENTINELS, Unlimited);
     yield return new(UNIT_H0AU_SCOUT_SHIP_NIGHTELVES, Unlimited);
     yield return new(UNIT_H0AV_FRIGATE_NIGHTELVES, Unlimited);
