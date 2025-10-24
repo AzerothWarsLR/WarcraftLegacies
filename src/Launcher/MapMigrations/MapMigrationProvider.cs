@@ -10,7 +10,7 @@ public static class MapMigrationProvider
       new CreepLevelMapMigration(),
       new GoldBountyMapMigration(),
       new FlightMigration(),
-      new UnitTooltipMigration(),
+      new UnitTooltipExtendedMigration(),
       new UnitTooltipBasicMigration(),
       new PortraitModelFileMapMigration()
     };

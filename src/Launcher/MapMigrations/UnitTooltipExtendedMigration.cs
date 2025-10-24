@@ -12,7 +12,7 @@ namespace Launcher.MapMigrations;
 /// <summary>
 /// Sets all unit tooltips in the game.
 /// </summary>
-public sealed class UnitTooltipMigration : IMapMigration
+public sealed class UnitTooltipExtendedMigration : IMapMigration
 {
   private const string LineSeparator = "|n";
   private const string AbilitiesKnown = "|cfff5962dAbilities:|r ";
