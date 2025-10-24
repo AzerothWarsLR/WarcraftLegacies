@@ -28,6 +28,8 @@ public sealed class QuestEyeofSargeras : QuestData
   public override string RewardFlavour =>
     "With the Eye of Sargeras in hand, Illidan has become more demon than Night Elf. He now wields a tool capable of sundering the world.";
 
+  protected override string RewardDescription => "Illidan's Metamorphosis becomes permanent";
+
   protected override void OnComplete(Faction completingFaction)
   {
     RegisterMetamorphosis();
