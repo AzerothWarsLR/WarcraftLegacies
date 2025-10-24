@@ -33,7 +33,7 @@ public sealed class QuestLostOnes : QuestData
     "Elder Sage Akama and his Draenei tribesmen have been brought to heel, now forced to fight alongside Illidan - and the Pit Lord that once threatened their extinction.";
 
   protected override string RewardDescription =>
-    $"Gain control of the Draenei camp in Outland, learn to build {GetObjectName(UNIT_N08W_ASHTONGUE_LAIR_ILLIDARI_SIEGE)}s, and learn to train Akama from the {GetObjectName(UNIT_NNAD_ALTAR_OF_THE_BETRAYER_ILLIDARI_ALTAR)}";
+    $"Gain control of the Draenei camp in Outland, learn to build {GetObjectName(UNIT_N08W_DRAENEI_HUT_ILLIDARI_SIEGE)}s, and learn to train Akama from the {GetObjectName(UNIT_NNAD_ALTAR_OF_THE_BETRAYER_ILLIDARI_ALTAR)}";
 
   protected override void OnComplete(Faction completingFaction)
   {
