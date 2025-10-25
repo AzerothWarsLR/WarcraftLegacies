@@ -19,13 +19,12 @@ public abstract class Channel : IPeriodicDisposableAction
     Caster = caster;
     SpellId = spellId;
     var ability = Caster.GetAbility(SpellId);
-    var durationFromObjectEditor = BlzGetAbilityRealLevelField(ability, ABILITY_RLF_DURATION_NORMAL,
-      Caster.GetAbilityLevel(SpellId));
+    var levelIndex = Caster.GetAbilityLevel(SpellId) - 1;
+    var durationFromObjectEditor = ability.GetDurationNormal_adur(levelIndex);
 
     if (durationFromObjectEditor == 0)
     {
-      durationFromObjectEditor = BlzGetAbilityRealLevelField(ability, ABILITY_RLF_FOLLOW_THROUGH_TIME,
-        Caster.GetAbilityLevel(SpellId));
+      durationFromObjectEditor = ability.GetFollowThroughTime_Ncl1(levelIndex);
     }
 
     Duration = durationFromObjectEditor != 0 ? durationFromObjectEditor : float.MaxValue;
