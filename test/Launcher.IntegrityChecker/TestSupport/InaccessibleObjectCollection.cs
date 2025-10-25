@@ -1007,6 +1007,18 @@ public sealed class InaccessibleObjectCollection(
         }
       }
 
+      if (ability is SpellBook spellBook)
+      {
+        for (var i = 1; i <= spellBook.StatsLevels; i++)
+        {
+          foreach (var spell in spellBook.DataSpellList[i])
+          {
+            RemoveWithChildren(spell);
+          }
+
+        }
+      }
+
       Abilities.Remove(ability);
     }
     catch (Exception ex)
