@@ -66,6 +66,11 @@
       "Id": 1768648053,
       "Type": 3,
       "Value": "sreg,phea,pman,stwp,hslv,ofro,spre,fgbd"
+    },
+    {
+      "Id": 1885433973,
+      "Type": 3,
+      "Value": "unwalkable"
     }
   ]
 }
