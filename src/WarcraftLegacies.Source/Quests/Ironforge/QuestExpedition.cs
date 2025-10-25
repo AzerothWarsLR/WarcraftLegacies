@@ -28,19 +28,8 @@ public sealed class QuestExpedition : QuestData
   {
     var uldumPosition = ControlPointManager.Instance.GetFromUnitType(UNIT_N0BD_ULDUM).Unit.GetPosition();
     var rewardItem = item.Create(_rewardArtifactItemTypeId, uldumPosition.X, uldumPosition.Y);
-    System.Console.WriteLine($"Created item: {rewardItem.Name}");
-
     var rewardArtifact = new Artifact(rewardItem);
     ArtifactManager.Register(rewardArtifact);
-    System.Console.WriteLine("Registered artifact");
-
-    timer.Create().Start(0.03f, false, () =>
-    {
-      System.Console.WriteLine("Timer expired, calling Titanforge");
-      rewardArtifact.Titanforge();
-      System.Console.WriteLine("Titanforge called");
-      @event.ExpiredTimer.Dispose();
-    });
   }
 
 }
