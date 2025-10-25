@@ -72,7 +72,7 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture mapTestFixture) 
   [Fact]
   public void AllAbilities_CanBeCast()
   {
-    if (mapTestFixture.InaccessibleObjects.Units.Count <= 0)
+    if (mapTestFixture.InaccessibleObjects.Abilities.Count <= 0)
     {
       return;
     }
