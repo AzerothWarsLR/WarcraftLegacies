@@ -1,0 +1,66 @@
+{
+  "OldId": 1918990145,
+  "NewId": 1364013121,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 3,
+      "Pointer": 1,
+      "Id": 829579607,
+      "Type": 2,
+      "Value": 25
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 846356823,
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 2,
+      "Pointer": 2,
+      "Id": 846356823,
+      "Type": 2,
+      "Value": 75
+    },
+    {
+      "Level": 3,
+      "Pointer": 2,
+      "Id": 846356823,
+      "Type": 2,
+      "Value": 100
+    },
+    {
+      "Level": 3,
+      "Pointer": 3,
+      "Id": 863134039,
+      "Type": 2,
+      "Value": 250
+    },
+    {
+      "Level": 3,
+      "Pointer": 4,
+      "Id": 879911255,
+      "Type": 2,
+      "Value": 350
+    },
+    {
+      "Id": 1986358369,
+      "Value": 1
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Level": 3,
+      "Id": 1918989409,
+      "Type": 3,
+      "Value": "ground,enemy,neutral"
+    }
+  ]
+}
