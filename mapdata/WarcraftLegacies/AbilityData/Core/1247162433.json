@@ -1,0 +1,36 @@
+{
+  "OldId": 897075521,
+  "NewId": 1247162433,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 1768382793,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Pointer": 2,
+      "Id": 1953392969,
+      "Value": 3
+    },
+    {
+      "Level": 1,
+      "Pointer": 3,
+      "Id": 1920234313,
+      "Value": 3
+    },
+    {
+      "Id": 1667330657,
+      "Type": 3,
+      "Value": "human"
+    },
+    {
+      "Id": 1702127969,
+      "Value": 0
+    }
+  ]
+}

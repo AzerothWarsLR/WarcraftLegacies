@@ -1,0 +1,35 @@
+{
+  "OldId": 1734963265,
+  "NewId": 1314271297,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2020631137,
+      "Value": 3
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Permanent Immolation)"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Burns nearby enemy units for 40 points of damage per second."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Titanforged"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Titanforged"
+    }
+  ]
+}
