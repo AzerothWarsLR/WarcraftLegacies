@@ -1,0 +1,60 @@
+{
+  "OldId": 1869640513,
+  "NewId": 859385921,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASFrostBite.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Lich King)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Frostbite"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNIceShard.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Frost Bite - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "The Lich King\u0027s attacks completely freeze enemy units stopping them from moving or attacking, and dealing damage to them while frozen. Duration is only 10% effective on heroes.|n|n|cffffcc00Level 1|r - Lasts 2 seconds on units, dealing 20 damage per second. |n|cffffcc00Level 2|r - Lasts 3 seconds on units, dealing 30 damage per second. |n|cffffcc00Level 3|r - Lasts 4 seconds on units, dealing 40 damage per second. |n|cffffcc00Level 4|r - Lasts 5 seconds on units, dealing 50 damage per second."
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "The Lich King\u0027s attacks apply Frostbite, which deals \u003CA093,DataA1\u003E damage per second, and slows the target enemy\u0027s movement by \u003CA093,DataB1,%\u003E% and attack by \u003CA093,DataC1,%\u003E% for \u003CA093,Dur1\u003E (0.3) seconds."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Frostbite"
+    }
+  ]
+}

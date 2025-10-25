@@ -1,0 +1,54 @@
+{
+  "OldId": 1635074881,
+  "NewId": 1279537217,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Alexandros)"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Communion"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Communion"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes Alexandros to regenerate \u003CA0DL,DataB1,%\u003E% of his hit points per second."
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASPurify.blp"
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 811693153,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    }
+  ]
+}
