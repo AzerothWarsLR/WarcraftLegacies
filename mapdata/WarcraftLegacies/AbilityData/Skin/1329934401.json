@@ -1,0 +1,25 @@
+{
+  "OldId": 846349121,
+  "NewId": 1329934401,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Furbolg Elder Shaman)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Heals a target friendly unit for \u003CA0EO,DataA1\u003E hit points over \u003CA0EO,Dur1\u003E seconds."
+    }
+  ]
+}
