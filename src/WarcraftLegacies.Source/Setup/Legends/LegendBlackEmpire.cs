@@ -17,6 +17,7 @@ public sealed class LegendBlackEmpire
       Unit = preplacedUnitSystem.GetUnit(UNIT_U01Z_OLD_GOD_NZOTH),
       PermaDies = true,
       StartingXp = 41800,
+      Essential = true
     };
 
     Zonozz = new LegendaryHero("Warlord Zon'ozz")

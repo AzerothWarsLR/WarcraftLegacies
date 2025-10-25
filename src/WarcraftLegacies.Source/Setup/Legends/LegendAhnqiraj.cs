@@ -17,6 +17,7 @@ public sealed class LegendAhnqiraj
       Unit = preplacedUnitSystem.GetUnit(UNIT_U00R_OLD_GOD_CTHUN),
       PermaDies = true,
       StartingXp = 41800,
+      Essential = true
     };
 
     Moam = new LegendaryHero("Moam")
