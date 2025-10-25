@@ -3,7 +3,6 @@ using System.CommandLine;
 using AutoMapper;
 using Launcher.Services;
 using Launcher.Settings;
-using Microsoft.Extensions.Configuration;
 
 namespace Launcher.Commands;
 
@@ -62,10 +61,7 @@ public static class MapDataToW3XCommand
     string? sourceCodeFolderPath, string? backupDirectory, bool setMapTitles,
     MapOutputType mapOutputType = MapOutputType.File)
   {
-    var appConfiguration = Program.GetAppConfiguration();
-    var compilerSettings = appConfiguration.GetRequiredSection(nameof(CompilerSettings)).Get<CompilerSettings>();
-    var mapSettings = appConfiguration.GetRequiredSection(nameof(MapSettings)).Get<MapSettings>();
-
+    var appSettings = AppSettings.Load();
     var autoMapperConfig = AutoMapperConfigurationProvider.GetConfiguration();
     var mapper = new Mapper(autoMapperConfig);
     var conversionService = new MapDataToMapConverter(mapper);
@@ -80,7 +76,7 @@ public static class MapDataToW3XCommand
       BackupDirectory = backupDirectory,
       SetMapTitles = setMapTitles
     };
-    var advancedMapBuilder = new AdvancedMapBuilder(compilerSettings, mapSettings);
+    var advancedMapBuilder = new AdvancedMapBuilder(appSettings.CompilerSettings, appSettings.MapSettings);
 
     switch (mapOutputType)
     {
