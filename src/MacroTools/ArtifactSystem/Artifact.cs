@@ -12,7 +12,6 @@ public sealed class Artifact
 {
   private ArtifactLocationType _locationType;
   private unit? _owningUnit;
-  private int _titanforgedAbility = FourCC("A0VJ");
 
   /// <summary>
   ///   Initializes a new instance of the <see cref="Artifact" /> class.
@@ -39,19 +38,6 @@ public sealed class Artifact
   ///   The real <see cref="item" /> that the <see cref="Artifact" /> is representing.
   /// </summary>
   public item Item { get; }
-
-  /// <summary>
-  ///   The extra ability the Artifact gains when it's Titanforged.
-  /// </summary>
-  public int TitanforgedAbility
-  {
-    set => _titanforgedAbility = value;
-  }
-
-  /// <summary>
-  ///   Whether or not the Artifact has gained its bonus ability.
-  /// </summary>
-  public bool Titanforged { get; private set; }
 
   /// <summary>
   ///   Describes the kind of location that the <see cref="Artifact" /> is in.
@@ -118,22 +104,6 @@ public sealed class Artifact
   ///   Any Artifact changes its <see cref="ArtifactLocationType" />.
   /// </summary>
   public event EventHandler<Artifact>? StatusChanged;
-
-  /// <summary>
-  ///   Grant the Artifact a predefined bonus ability.
-  /// </summary>
-  public void Titanforge()
-  {
-    if (Titanforged)
-    {
-      return;
-    }
-
-    Titanforged = true;
-    Item.AddAbility(_titanforgedAbility);
-    Item.ExtendedDescription = $"{Item.ExtendedDescription}|n|n|cff800000Titanforged|r|n{BlzGetAbilityExtendedTooltip(_titanforgedAbility, 0)}";
-    Item.Description = $"{Item.Description}|n|cff800000Titanforged|r";
-  }
 
   /// <summary>
   ///   Pings the <see cref="Artifact" /> on the minimap for the given player.

@@ -58,11 +58,6 @@ public sealed class ArtifactSetup
   public Artifact EyeOfSargeras { get; }
 
   /// <summary>
-  /// Destroyer of Worlds.
-  /// </summary>
-  public Artifact ZinRokh { get; }
-
-  /// <summary>
   /// A fragment of Zin'rokh.
   /// </summary>
   public Artifact AzureFragment { get; }
@@ -128,11 +123,6 @@ public sealed class ArtifactSetup
 
     BookOfMedivh = new Artifact(item.Create(ITEM_I006_BOOK_OF_MEDIVH, DummyX, DummyY));
     ArtifactManager.Register(BookOfMedivh);
-
-    ZinRokh = new Artifact(item.Create(FourCC("I016"), DummyX, DummyY))
-    {
-      TitanforgedAbility = ABILITY_A0VM_TITANFORGED_9_STRENGTH
-    };
 
     BronzeFragment = new Artifact(item.Create(ITEM_I01M_BRONZE_FRAGMENT, DummyX, DummyY));
     preplacedUnitSystem.GetUnit(UNIT_O06Y_UKORZ_CREEP_ZUL_FARRAK).AddAbility(Artifact.ArtifactHolderAbilId);

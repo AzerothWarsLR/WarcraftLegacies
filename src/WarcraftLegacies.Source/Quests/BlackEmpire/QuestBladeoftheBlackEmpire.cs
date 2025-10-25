@@ -33,10 +33,7 @@ public sealed class QuestBladeoftheBlackEmpire : QuestData
 
   protected override void OnComplete(Faction whichFaction)
   {
-    var xalatath = new Artifact(item.Create(ITEM_I015_XAL_ATATH_BLADE_OF_THE_BLACK_EMPIRE, -3986, 2100))
-    {
-      TitanforgedAbility = ABILITY_A0VM_TITANFORGED_9_STRENGTH
-    };
+    var xalatath = new Artifact(item.Create(ITEM_I015_XAL_ATATH_BLADE_OF_THE_BLACK_EMPIRE, -3986, 2100));
     ArtifactManager.Register(xalatath);
 
     _anyUnitInRect.CompletingUnit?.AddItemSafe(xalatath.Item);
