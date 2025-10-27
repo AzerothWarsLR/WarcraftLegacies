@@ -12,7 +12,8 @@ public sealed class InaccessibleObjectCollection(
   List<Unit> units,
   List<Upgrade> upgrades,
   List<Ability> abilities,
-  List<Item> items)
+  List<Item> items,
+  List<Doodad> doodads)
 {
   public List<Unit> Units { get; } = units;
 
@@ -22,6 +23,7 @@ public sealed class InaccessibleObjectCollection(
 
   public List<Item> Items { get; } = items;
 
+  public List<Doodad> Doodads { get; } = doodads;
 
   public void RemoveWithChildren(BaseObject baseObject)
   {
@@ -38,6 +40,9 @@ public sealed class InaccessibleObjectCollection(
         break;
       case Ability upgrade:
         RemoveWithChildren(upgrade);
+        break;
+      case Doodad doodad:
+        RemoveWithChildren(doodad);
         break;
     }
   }
@@ -1150,6 +1155,16 @@ public sealed class InaccessibleObjectCollection(
     {
       RemoveWithChildren(ability);
     }
+  }
+
+  private void RemoveWithChildren(Doodad doodad)
+  {
+    if (!Doodads.Contains(doodad))
+    {
+      return;
+    }
+
+    Doodads.Remove(doodad);
   }
 
   /// <summary>

@@ -52,15 +52,11 @@ public sealed class MapTestFixture
       ObjectDatabase.GetUnits().Where(u => !IsUtilityUnit(u)).ToList(),
       ObjectDatabase.GetUpgrades().ToList(),
       ObjectDatabase.GetAbilities().ToList(),
-      ObjectDatabase.GetItems().ToList());
+      ObjectDatabase.GetItems().ToList(),
+      ObjectDatabase.GetDoodads().ToList());
 
-    var preplacedUnitIds = Map.Units!.Units.Select(x => x.TypeId).ToHashSet();
-    var preplacedUnitTypes = ObjectDatabase.GetUnits().Where(x => preplacedUnitIds.Contains(x.NewId)).ToList();
-
-    foreach (var preplacedUnit in preplacedUnitTypes)
-    {
-      inaccessibleObjects.RemoveWithChildren(preplacedUnit);
-    }
+    RemovePreplacedUnits(inaccessibleObjects);
+    RemovePreplacedDoodads(inaccessibleObjects);
 
     var objectsInScript = inaccessibleObjects
       .GetAllObjects()
@@ -73,6 +69,32 @@ public sealed class MapTestFixture
     }
 
     return inaccessibleObjects;
+  }
+
+  /// <summary>
+  /// Identifies preplaced units on the map and removes them, and their children, from the <see cref="InaccessibleObjectCollection"/>.
+  /// </summary>
+  private void RemovePreplacedUnits(InaccessibleObjectCollection inaccessibleObjects)
+  {
+    var preplacedUnitIds = Map.Units!.Units.Select(x => x.TypeId).ToHashSet();
+    var preplacedUnitTypes = ObjectDatabase.GetUnits().Where(x => preplacedUnitIds.Contains(x.NewId)).ToList();
+    foreach (var preplacedUnit in preplacedUnitTypes)
+    {
+      inaccessibleObjects.RemoveWithChildren(preplacedUnit);
+    }
+  }
+
+  /// <summary>
+  /// Identifies preplaced doodads on the map and removes them, and their children, from the <see cref="InaccessibleObjectCollection"/>.
+  /// </summary>
+  private void RemovePreplacedDoodads(InaccessibleObjectCollection inaccessibleObjects)
+  {
+    var preplacedDoodadIds = Map.Doodads!.Doodads.Select(x => x.TypeId).ToHashSet();
+    var preplacedDoodadTypeIds = ObjectDatabase.GetDoodads().Where(x => preplacedDoodadIds.Contains(x.GetId())).ToList();
+    foreach (var preplacedDoodadTypeId in preplacedDoodadTypeIds)
+    {
+      inaccessibleObjects.RemoveWithChildren(preplacedDoodadTypeId);
+    }
   }
 
   private static bool IsUtilityUnit(Unit unit)

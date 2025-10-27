@@ -96,6 +96,28 @@ public sealed class ObjectDataAccessibilityTests(MapTestFixture mapTestFixture) 
     throw new XunitException(exceptionMessageBuilder.ToString());
   }
 
+  [Fact]
+  public void AllDoodads_ArePlaced()
+  {
+    var unplacedDoodads = mapTestFixture.InaccessibleObjects.Doodads;
+
+    if (unplacedDoodads.Count <= 0)
+    {
+      return;
+    }
+
+    var exceptionMessageBuilder = new StringBuilder();
+    exceptionMessageBuilder.AppendLine(
+      $"The following {unplacedDoodads.Count} doodads aren't placed anywhere on the map. Remove them from the map or place them somewhere.");
+
+    foreach (var doodad in unplacedDoodads)
+    {
+      exceptionMessageBuilder.AppendLine($"{GetReadableId(doodad)} - {GetId(doodad)}");
+    }
+
+    throw new XunitException(exceptionMessageBuilder.ToString());
+  }
+
   private static int GetId(BaseObject baseObject) => baseObject.NewId != 0 ? baseObject.NewId : baseObject.OldId;
 
   private static string GetReadableId(BaseObject baseObject) => GetId(baseObject).ToRawcode();
