@@ -213,6 +213,17 @@ public sealed class InaccessibleObjectCollection(
 
             break;
           }
+        case BrewmasterStormEarthAndFire brewmasterStormEarthAndFire:
+          {
+            for (var i = 1; i <= brewmasterStormEarthAndFire.StatsLevels; i++)
+            {
+              foreach (var unitType in brewmasterStormEarthAndFire.DataSummonedUnitTypes[i])
+              {
+                RemoveWithChildren(unitType);
+              }
+            }
+          }
+          break;
         case Burrow burrow:
           {
             for (var i = 1; i <= burrow.StatsLevels; i++)
@@ -648,6 +659,27 @@ public sealed class InaccessibleObjectCollection(
 
             break;
           }
+        case HexCreep hexCreep:
+          for (var i = 1; i <= hexCreep.StatsLevels; i++)
+          {
+            foreach (var morphAir in hexCreep.DataMorphUnitsAir[i])
+            {
+              RemoveWithChildren(morphAir);
+            }
+            foreach (var morphAir in hexCreep.DataMorphUnitsAmphibious[i])
+            {
+              RemoveWithChildren(morphAir);
+            }
+            foreach (var morphAir in hexCreep.DataMorphUnitsGround[i])
+            {
+              RemoveWithChildren(morphAir);
+            }
+            foreach (var morphAir in hexCreep.DataMorphUnitsWater[i])
+            {
+              RemoveWithChildren(morphAir);
+            }
+          }
+          break;
         case IllidanMetamorphosis illidanMetamorphosis:
           {
             for (var i = 1; i <= illidanMetamorphosis.StatsLevels; i++)
@@ -711,6 +743,13 @@ public sealed class InaccessibleObjectCollection(
 
             break;
           }
+        case PitLordDoom pitLordDoom:
+          for (var i = 1; i <= pitLordDoom.StatsLevels; i++)
+          {
+            RemoveWithChildren(pitLordDoom.DataSummonedUnitType[i]);
+          }
+
+          break;
         case Polymorph polymorph:
           {
             for (var i = 1; i <= polymorph.StatsLevels; i++)
@@ -1106,7 +1145,6 @@ public sealed class InaccessibleObjectCollection(
             {
               RemoveWithChildren(wateryMinion.DataSummonedUnitType[i]);
             }
-
             break;
           }
         case SpellBook spellBook:
