@@ -1,0 +1,31 @@
+{
+  "OldId": 1953657966,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2020631157,
+      "Value": 2
+    },
+    {
+      "Id": 2037408373,
+      "Value": 1
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Call Giant Sea Turtle |cffffcc00F|r"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Medium ranged amphibious unit whose spiked shell harms enemy melee attackers. "
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "OldId": 1684830062,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Creep)"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Medium melee unit with Critical Strike. Can cast Roar. "
+    }
+  ]
+}
