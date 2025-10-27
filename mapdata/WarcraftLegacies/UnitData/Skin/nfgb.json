@@ -1,0 +1,38 @@
+{
+  "OldId": 1650943598,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel Horde-Portal)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "B"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Wrathguard"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Summon Wrathguard"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Elite warrior of the Burning Crusade\u0027s armies."
+    }
+  ]
+}

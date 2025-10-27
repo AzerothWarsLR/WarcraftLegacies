@@ -1,0 +1,33 @@
+{
+  "OldId": 1818649710,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Fel Horde)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.7
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Defiled Fountain of Life"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Corrupted life spring replenishing the soldiers of the Fel Horde."
+    }
+  ]
+}

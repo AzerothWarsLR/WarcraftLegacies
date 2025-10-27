@@ -1,0 +1,42 @@
+{
+  "OldId": 2037674862,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Vassal - Xavius)"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1
+    },
+    {
+      "Id": 1835101813,
+      "Type": 3,
+      "Value": "Satyr Warrior"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Satyr Warrior"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Light melee unit, has the Evasion and Feedback abilities. "
+    }
+  ]
+}

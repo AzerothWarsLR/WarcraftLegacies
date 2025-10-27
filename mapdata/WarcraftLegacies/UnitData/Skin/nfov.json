@@ -1,0 +1,27 @@
+{
+  "OldId": 1987012206,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 2020631157,
+      "Value": 1
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 1.4
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Train Overlord"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit with Howl of Terror, Cleaving Attack and Vampiric Aura. "
+    }
+  ]
+}

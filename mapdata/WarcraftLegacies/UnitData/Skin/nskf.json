@@ -1,5 +1,5 @@
 {
-  "OldId": 1701866862,
+  "OldId": 1718317934,
   "Unk": [
     0
   ],
@@ -7,22 +7,22 @@
     {
       "Id": 1718840949,
       "Type": 3,
-      "Value": " (Illidari, Nzoth, Worker)"
+      "Value": "(teal Tier)"
     },
     {
-      "Id": 1953458293,
-      "Type": 3,
-      "Value": "Q"
+      "Id": 828468597,
+      "Type": 2,
+      "Value": 0.3
     },
     {
       "Id": 1633907573,
       "Type": 1,
-      "Value": 0.85
+      "Value": 0.9
     },
     {
       "Id": 1651864693,
       "Type": 3,
-      "Value": "Mur\u0027gul Thrall of the lower slave class."
+      "Value": "Light ranged unit that shoots Searing Arrows. "
     }
   ]
 }

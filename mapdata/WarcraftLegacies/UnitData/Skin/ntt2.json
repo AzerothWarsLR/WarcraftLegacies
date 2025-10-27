@@ -1,0 +1,43 @@
+{
+  "OldId": 846492782,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1819501173,
+      "Type": 3,
+      "Value": "OrcBuildingConstructionLoop"
+    },
+    {
+      "Id": 1953458293,
+      "Type": 3,
+      "Value": "R"
+    },
+    {
+      "Id": 1634759541,
+      "Type": 3,
+      "Value": "Objects\\Spawnmodels\\Human\\HCancelDeath\\HCancelDeath.mdl"
+    },
+    {
+      "Id": 1885959285,
+      "Type": 3,
+      "Value": "Build Tau|cffffcc00r|ren Tent"
+    },
+    {
+      "Id": 1935832437,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Provides food, which increases the maximum number of units that can be trained."
+    },
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": " (Frostwolf Other)"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "OldId": 1735554926,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1935827317,
+      "Type": 3,
+      "Value": "AImx"
+    },
+    {
+      "Id": 1651864693,
+      "Type": 3,
+      "Value": "Heavy melee unit. Magic immune. "
+    }
+  ]
+}
