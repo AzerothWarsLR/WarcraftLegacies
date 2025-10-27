@@ -77,7 +77,7 @@ public sealed class MapTestFixture
   private void RemovePreplacedUnits(InaccessibleObjectCollection inaccessibleObjects)
   {
     var preplacedUnitIds = Map.Units!.Units.Select(x => x.TypeId).ToHashSet();
-    var preplacedUnitTypes = ObjectDatabase.GetUnits().Where(x => preplacedUnitIds.Contains(x.NewId)).ToList();
+    var preplacedUnitTypes = ObjectDatabase.GetUnits().Where(x => preplacedUnitIds.Contains(x.GetId())).ToList();
     foreach (var preplacedUnit in preplacedUnitTypes)
     {
       inaccessibleObjects.RemoveWithChildren(preplacedUnit);
