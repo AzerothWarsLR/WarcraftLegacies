@@ -4,6 +4,7 @@ using Launcher.Extensions;
 using Launcher.IntegrityChecker.TestSupport;
 using War3Api.Object;
 using War3Api.Object.Abilities;
+using War3Net.Common.Extensions;
 using Xunit.Sdk;
 
 namespace Launcher.IntegrityChecker.ValidityTests;
@@ -13,29 +14,62 @@ public sealed class AbilityValidityTests(MapTestFixture mapTestFixture) : IClass
   [Fact]
   public void AllAbilities_HaveValidFields()
   {
-    var issues = new List<string>();
     var objectDatabase = mapTestFixture.ObjectDatabase;
 
-    foreach (var ability in objectDatabase.GetAbilities().ToArray())
+    var exceptionMessageBuilder = new StringBuilder();
+    foreach (var ability in objectDatabase.GetAbilities())
     {
       if (VerifyUnitsSummoned(ability, out var unitsSummonedIssues))
       {
-        issues.Add(unitsSummonedIssues);
+        exceptionMessageBuilder.AppendLine(unitsSummonedIssues);
       }
     }
 
-    if (issues.Count == 0)
+    if (exceptionMessageBuilder.Length == 0)
     {
       return;
     }
 
+    throw new XunitException(exceptionMessageBuilder.ToString());
+  }
+
+  [Fact]
+  public void AllAbilities_CanBeHandledByWar3Net()
+  {
+    var objectDatabase = mapTestFixture.ObjectDatabase;
+
     var exceptionMessageBuilder = new StringBuilder();
-    foreach (var issue in issues)
+    foreach (var ability in objectDatabase.GetAbilities())
     {
-      exceptionMessageBuilder.AppendLine(issue);
+      if (!CanAbilityBeHandledByWar3Net(ability) && ability.Modifications.Any())
+      {
+        exceptionMessageBuilder.AppendLine($"{ability.TextName} ({ability.GetReadableId()} - {ability.GetId()}) is of banned type {ability.OldId.ToRawcode()} - {ability.OldId}");
+      }
+    }
+
+    if (exceptionMessageBuilder.Length == 0)
+    {
+      return;
     }
 
     throw new XunitException(exceptionMessageBuilder.ToString());
+  }
+
+  /// <summary>
+  /// Returns true if the ability base type can reasonably be handled by War3Net.
+  /// </summary>
+  private static bool CanAbilityBeHandledByWar3Net(Ability ability)
+  {
+    return ability switch
+    {
+      ChenStormEarthAndFire => false,
+      RokhanHex => false,
+      RokhanSerpentWard => false,
+      RokhanVoodooSpirits => false,
+      SummonLobstrokPrawns => false,
+      WateryMinionItem => false,
+      _ => true
+    };
   }
 
   private static bool VerifyUnitsSummoned(Ability ability, [NotNullWhen(true)] out string? issue)
