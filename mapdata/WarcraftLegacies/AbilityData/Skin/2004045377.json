@@ -1,35 +1,41 @@
 {
-  "OldId": 2004045377,
+  "OldId": 1886155585,
+  "NewId": 2004045377,
   "Unk": [
     0
   ],
   "Modifications": [
     {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNSpiderBlue.blp"
+    },
+    {
       "Id": 1718840929,
       "Type": 3,
-      "Value": "(Grey - Rexxar)"
+      "Value": "(Brown Cenarius)"
     },
     {
       "Id": 2037082209,
       "Type": 3,
-      "Value": "E"
+      "Value": "Q"
     },
     {
-      "Id": 1802007137,
+      "Id": 1835101793,
       "Type": 3,
-      "Value": "E"
+      "Value": "Summon the Forest Spiders"
     },
     {
       "Level": 1,
       "Id": 829453409,
       "Type": 3,
-      "Value": "Summon Hawk"
+      "Value": "Summon the Forest Spiders (|cffffcc00Q|r)"
     },
     {
       "Level": 1,
       "Id": 828536161,
       "Type": 3,
-      "Value": "Summons a \u003Cnwe3,realHP\u003E hit point hawk. Has True Sight and Permanent Invisibility. |nLasts \u003CANsw,Dur1\u003E seconds."
+      "Value": "Summons 3 Spiders that have Web. and poison attacks.|nLasts \u003CACs7,Dur1\u003E seconds.|n|n|cffffcc00Attacks land units.|r"
     }
   ]
 }

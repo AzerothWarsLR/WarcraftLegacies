@@ -1,38 +1,47 @@
 {
-  "OldId": 2004045377,
+  "OldId": 1886155585,
+  "NewId": 2004045377,
   "Unk": [
     0
   ],
   "Modifications": [
     {
       "Level": 1,
+      "Id": 1718968929,
+      "Type": 3,
+      "Value": "BFig"
+    },
+    {
+      "Level": 1,
       "Id": 1852072801,
       "Type": 2,
-      "Value": 30
+      "Value": 35
     },
     {
       "Level": 1,
       "Id": 1935895905,
-      "Value": 75
+      "Value": 100
+    },
+    {
+      "Level": 1,
+      "Pointer": 1,
+      "Id": 845510472,
+      "Value": 3
     },
     {
       "Id": 1919248481,
       "Value": 0
     },
     {
-      "Id": 1986358369,
-      "Value": 1
-    },
-    {
       "Id": 1667330657,
       "Type": 3,
-      "Value": "orc"
+      "Value": "nightelf"
     },
     {
       "Level": 1,
       "Id": 828733256,
       "Type": 3,
-      "Value": "nwe3"
+      "Value": "n08J"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "OldId": 2004054593,
+  "OldId": 2004045633,
   "NewId": 926041165,
   "Unk": [
     0
@@ -65,6 +65,11 @@
       "Id": 828536161,
       "Type": 3,
       "Value": "Summons \u003CMD27,DataA4\u003E immobile serpentine wards to attack enemies. Each ward has \u003Cosp4,realHP\u003E hit points, is magic immune, and deals high damage. |nLasts \u003CArsw,Dur4\u003E seconds. |n|n|cffffcc00Attacks land and air units.|r"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Rokhan)"
     }
   ]
 }
