@@ -11,122 +11,116 @@ namespace Launcher.DTOMappers;
 /// </summary>
 public sealed class ObjectDataMapper
 {
-  private readonly TriggerStringDictionary _triggerStrings;
-
-  public ObjectDataMapper(TriggerStringDictionary triggerStrings) => _triggerStrings = triggerStrings;
-
   /// <summary>
   /// Converts a <see cref="UnitObjectData"/> object to its <see cref="UnitObjectDataDto"/> equivalent.
   /// </summary>
   /// <param name="objectData">The objects to convert.</param>
-  /// <param name="substituteTriggerStrings">If supplied, unit data values that point to trigger string keys will instead be
-  /// replaced with the value of those keys.</param>
-  public UnitObjectDataDto MapToDto(UnitObjectData objectData, bool substituteTriggerStrings)
+  public UnitObjectDataDto MapToDto(UnitObjectData objectData)
   {
     var dto = new UnitObjectDataDto
     {
       FormatVersion = 0,
       BaseUnits = objectData.BaseUnits
-        .Select(x => MapSimpleModificationToDto(x, substituteTriggerStrings))
+        .Select(MapSimpleModificationToDto)
         .ToArray(),
       NewUnits = objectData.NewUnits
-        .Select(x => MapSimpleModificationToDto(x, substituteTriggerStrings))
+        .Select(MapSimpleModificationToDto)
         .ToArray()
     };
     return dto;
   }
 
-  public MapBuffObjectDataDto MapToDto(BuffObjectData objectData, bool substituteTriggerStrings)
+  public MapBuffObjectDataDto MapToDto(BuffObjectData objectData)
   {
     var dto = new MapBuffObjectDataDto
     {
       FormatVersion = 0,
       BaseBuffs = objectData.BaseBuffs
-        .Select(x => MapSimpleModificationToDto(x, substituteTriggerStrings))
+        .Select(MapSimpleModificationToDto)
         .ToArray(),
       NewBuffs = objectData.NewBuffs
-        .Select(x => MapSimpleModificationToDto(x, substituteTriggerStrings))
+        .Select(MapSimpleModificationToDto)
         .ToArray()
     };
     return dto;
   }
 
-  public MapDoodadObjectDataDto MapToDto(DoodadObjectData objectData, bool substituteTriggerStrings)
+  public MapDoodadObjectDataDto MapToDto(DoodadObjectData objectData)
   {
     var dto = new MapDoodadObjectDataDto
     {
       FormatVersion = 0,
       BaseDoodads = objectData.BaseDoodads
-        .Select(x => MapVariationModificationToDto(x, substituteTriggerStrings))
+        .Select(MapVariationModificationToDto)
         .ToArray(),
       NewDoodads = objectData.NewDoodads
-        .Select(x => MapVariationModificationToDto(x, substituteTriggerStrings))
+        .Select(MapVariationModificationToDto)
         .ToArray()
     };
     return dto;
   }
 
-  public MapDestructableObjectDataDto MapToDto(DestructableObjectData objectData, bool substituteTriggerStrings)
+  public MapDestructableObjectDataDto MapToDto(DestructableObjectData objectData)
   {
     var dto = new MapDestructableObjectDataDto
     {
       FormatVersion = 0,
       BaseDestructables = objectData.BaseDestructables
-        .Select(x => MapSimpleModificationToDto(x, substituteTriggerStrings))
+        .Select(MapSimpleModificationToDto)
         .ToArray(),
       NewDestructables = objectData.NewDestructables
-        .Select(x => MapSimpleModificationToDto(x, substituteTriggerStrings))
+        .Select(MapSimpleModificationToDto)
         .ToArray()
     };
     return dto;
   }
 
-  public MapItemObjectDataDto MapToDto(ItemObjectData objectData, bool substituteTriggerStrings)
+  public MapItemObjectDataDto MapToDto(ItemObjectData objectData)
   {
     var dto = new MapItemObjectDataDto
     {
       FormatVersion = 0,
       BaseItems = objectData.BaseItems
-        .Select(x => MapSimpleModificationToDto(x, substituteTriggerStrings))
+        .Select(MapSimpleModificationToDto)
         .ToArray(),
       NewItems = objectData.NewItems
-        .Select(x => MapSimpleModificationToDto(x, substituteTriggerStrings))
+        .Select(MapSimpleModificationToDto)
         .ToArray()
     };
     return dto;
   }
 
-  public MapAbilityObjectDataDto MapToDto(AbilityObjectData objectData, bool substituteTriggerStrings)
+  public MapAbilityObjectDataDto MapToDto(AbilityObjectData objectData)
   {
     var dto = new MapAbilityObjectDataDto
     {
       FormatVersion = 0,
       BaseAbilities = objectData.BaseAbilities
-        .Select(x => MapLevelModificationToDto(x, substituteTriggerStrings))
+        .Select(MapLevelModificationToDto)
         .ToArray(),
       NewAbilities = objectData.NewAbilities
-        .Select(x => MapLevelModificationToDto(x, substituteTriggerStrings))
+        .Select(MapLevelModificationToDto)
         .ToArray()
     };
     return dto;
   }
 
-  public MapUpgradeObjectDataDto MapToDto(UpgradeObjectData objectData, bool substituteTriggerStrings)
+  public MapUpgradeObjectDataDto MapToDto(UpgradeObjectData objectData)
   {
     var dto = new MapUpgradeObjectDataDto
     {
       FormatVersion = 0,
       BaseUpgrades = objectData.BaseUpgrades
-        .Select(x => MapLevelModificationToDto(x, substituteTriggerStrings))
+        .Select(MapLevelModificationToDto)
         .ToArray(),
       NewUpgrades = objectData.NewUpgrades
-        .Select(x => MapLevelModificationToDto(x, substituteTriggerStrings))
+        .Select(MapLevelModificationToDto)
         .ToArray()
     };
     return dto;
   }
 
-  private SimpleObjectModification MapSimpleModificationToDto(SimpleObjectModification simpleObjectModification, bool substituteTriggerStrings)
+  private SimpleObjectModification MapSimpleModificationToDto(SimpleObjectModification simpleObjectModification)
   {
     var ignoredDataModifications = new List<int>
     {
@@ -147,14 +141,14 @@ public sealed class ObjectDataMapper
         0
       },
       Modifications = simpleObjectModification.Modifications
-        .Select(x => MapObjectDataModificationToDto(x, substituteTriggerStrings))
+        .Select(MapObjectDataModificationToDto)
         .Where(x => !ignoredDataModifications.Contains(x.Id))
         .ToList()
     };
     return dto;
   }
 
-  private LevelObjectModification MapLevelModificationToDto(LevelObjectModification objectModification, bool substituteTriggerStrings)
+  private LevelObjectModification MapLevelModificationToDto(LevelObjectModification objectModification)
   {
     var dto = new LevelObjectModification
     {
@@ -165,13 +159,13 @@ public sealed class ObjectDataMapper
         0
       },
       Modifications = objectModification.Modifications
-        .Select(x => MapLevelObjectDataModificationToDto(x, substituteTriggerStrings))
+        .Select(MapLevelObjectDataModificationToDto)
         .ToList()
     };
     return dto;
   }
 
-  private VariationObjectModification MapVariationModificationToDto(VariationObjectModification objectModification, bool substituteTriggerStrings)
+  private VariationObjectModification MapVariationModificationToDto(VariationObjectModification objectModification)
   {
     var dto = new VariationObjectModification
     {
@@ -182,56 +176,44 @@ public sealed class ObjectDataMapper
         0
       },
       Modifications = objectModification.Modifications
-        .Select(x => MapVariationObjectDataModificationToDto(x, substituteTriggerStrings))
+        .Select(MapVariationObjectDataModificationToDto)
         .ToList()
     };
     return dto;
   }
 
   private SimpleObjectDataModification MapObjectDataModificationToDto(
-    SimpleObjectDataModification objectDataModification, bool substituteTriggerStrings)
+    SimpleObjectDataModification objectDataModification)
   {
-    var value = substituteTriggerStrings && TriggerStringDictionary.IsTriggerStringKey(objectDataModification.Value)
-      ? _triggerStrings[objectDataModification.Value as string]
-      : objectDataModification.Value;
-
     return new SimpleObjectDataModification
     {
       Id = objectDataModification.Id,
       Type = objectDataModification.Type,
-      Value = value
+      Value = objectDataModification.Value
     };
   }
 
   private LevelObjectDataModification MapLevelObjectDataModificationToDto(
-    LevelObjectDataModification objectDataModification, bool substituteTriggerStrings)
+    LevelObjectDataModification objectDataModification)
   {
-    var value = substituteTriggerStrings && TriggerStringDictionary.IsTriggerStringKey(objectDataModification.Value)
-      ? _triggerStrings[objectDataModification.Value as string]
-      : objectDataModification.Value;
-
     return new LevelObjectDataModification
     {
       Id = objectDataModification.Id,
       Type = objectDataModification.Type,
-      Value = value,
+      Value = objectDataModification.Value,
       Level = objectDataModification.Level,
       Pointer = objectDataModification.Pointer
     };
   }
 
   private VariationObjectDataModification MapVariationObjectDataModificationToDto(
-    VariationObjectDataModification objectDataModification, bool substituteTriggerStrings)
+    VariationObjectDataModification objectDataModification)
   {
-    var value = substituteTriggerStrings && TriggerStringDictionary.IsTriggerStringKey(objectDataModification.Value)
-      ? _triggerStrings[objectDataModification.Value as string]
-      : objectDataModification.Value;
-
     return new VariationObjectDataModification
     {
       Id = objectDataModification.Id,
       Type = objectDataModification.Type,
-      Value = value,
+      Value = objectDataModification.Value,
       Variation = objectDataModification.Variation,
       Pointer = objectDataModification.Pointer
     };

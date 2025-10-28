@@ -6,7 +6,6 @@ using System.Text.Json.Serialization;
 using AutoMapper;
 using Launcher.DataTransferObjects;
 using Launcher.DTOMappers;
-using Launcher.Extensions;
 using Launcher.JsonConverters;
 using War3Net.Build;
 using War3Net.Build.Audio;
@@ -46,22 +45,21 @@ public sealed class W3XToMapDataConverter
   public void Convert(string baseMapPath, string outputFolderPath)
   {
     var map = Map.Open(baseMapPath);
-    var triggerStrings = map.TriggerStrings.ToDictionary();
-    SerializeAndWriteMapData(map, triggerStrings, outputFolderPath);
+    SerializeAndWriteMapData(map, outputFolderPath);
 
     CopyImportedFiles(baseMapPath, outputFolderPath);
     CopyUnserializableFiles(baseMapPath, outputFolderPath);
-    CopyGameInterface(baseMapPath, triggerStrings, outputFolderPath);
+    CopyGameInterface(baseMapPath, outputFolderPath);
   }
 
-  private void SerializeAndWriteMapData(Map map, TriggerStringDictionary triggerStrings, string outputFolderPath)
+  private void SerializeAndWriteMapData(Map map, string outputFolderPath)
   {
     if (Directory.Exists(outputFolderPath))
     {
       Directory.Delete(outputFolderPath, true);
     }
 
-    var objectDataMapper = new ObjectDataMapper(triggerStrings);
+    var objectDataMapper = new ObjectDataMapper();
 
     if (map.Doodads != null)
     {
@@ -75,7 +73,7 @@ public sealed class W3XToMapDataConverter
 
     if (map.Info != null)
     {
-      SerializeAndWriteMapInfo(map.Info, new MapInfoMapper(triggerStrings), Path.Combine(outputFolderPath, InfoPath));
+      SerializeAndWriteMapInfo(map.Info, new MapInfoMapper(), Path.Combine(outputFolderPath, InfoPath));
     }
 
     if (map.Regions != null)
@@ -110,37 +108,37 @@ public sealed class W3XToMapDataConverter
 
     if (map.UnitObjectData != null)
     {
-      SerializeAndWriteUnitData(map.UnitObjectData, objectDataMapper, false, outputFolderPath, UnitDataDirectoryPath);
+      SerializeAndWriteUnitData(map.UnitObjectData, objectDataMapper, outputFolderPath, UnitDataDirectoryPath);
     }
 
     if (map.AbilityObjectData != null)
     {
-      SerializeAndWriteAbilityData(map.AbilityObjectData, objectDataMapper, false, outputFolderPath, AbilityDataDirectoryPath);
+      SerializeAndWriteAbilityData(map.AbilityObjectData, objectDataMapper, outputFolderPath, AbilityDataDirectoryPath);
     }
 
     if (map.ItemObjectData != null)
     {
-      SerializeAndWriteItemData(map.ItemObjectData, objectDataMapper, false, outputFolderPath, ItemDataDirectoryPath);
+      SerializeAndWriteItemData(map.ItemObjectData, objectDataMapper, outputFolderPath, ItemDataDirectoryPath);
     }
 
     if (map.DestructableObjectData != null)
     {
-      SerializeAndWriteDestructableData(map.DestructableObjectData, objectDataMapper, false, outputFolderPath, DestructableDataDirectoryPath);
+      SerializeAndWriteDestructableData(map.DestructableObjectData, objectDataMapper, outputFolderPath, DestructableDataDirectoryPath);
     }
 
     if (map.DoodadObjectData != null)
     {
-      SerializeAndWriteDoodadData(map.DoodadObjectData, objectDataMapper, true, outputFolderPath, DoodadDataDirectoryPath);
+      SerializeAndWriteDoodadData(map.DoodadObjectData, objectDataMapper, outputFolderPath, DoodadDataDirectoryPath);
     }
 
     if (map.BuffObjectData != null)
     {
-      SerializeAndWriteBuffData(map.BuffObjectData, objectDataMapper, false, outputFolderPath, BuffDataDirectoryPath);
+      SerializeAndWriteBuffData(map.BuffObjectData, objectDataMapper, outputFolderPath, BuffDataDirectoryPath);
     }
 
     if (map.UpgradeObjectData != null)
     {
-      SerializeAndWriteUpgradeData(map.UpgradeObjectData, objectDataMapper, true, outputFolderPath, UpgradeDataDirectoryPath);
+      SerializeAndWriteUpgradeData(map.UpgradeObjectData, objectDataMapper, outputFolderPath, UpgradeDataDirectoryPath);
     }
   }
 
@@ -190,15 +188,9 @@ public sealed class W3XToMapDataConverter
     }
   }
 
-  private static void CopyGameInterface(string baseMapPath, TriggerStringDictionary triggerStringDictionary, string outputFolderPath)
+  private static void CopyGameInterface(string baseMapPath, string outputFolderPath)
   {
-    if (!File.Exists($"{baseMapPath}/{GameInterfacePath}"))
-    {
-      return;
-    }
-
-    var subtitutedText = triggerStringDictionary.SubstituteTriggerStringsInText(File.ReadAllText($"{baseMapPath}/{GameInterfacePath}"));
-    File.WriteAllText($@"{outputFolderPath}\{GameInterfacePath}", subtitutedText);
+    File.WriteAllText($@"{outputFolderPath}\{GameInterfacePath}", File.ReadAllText($"{baseMapPath}/{GameInterfacePath}"));
   }
 
   /// <summary>
@@ -298,10 +290,9 @@ public sealed class W3XToMapDataConverter
     }
   }
 
-  private void SerializeAndWriteUnitData(UnitObjectData unitObjectData, ObjectDataMapper objectDataMapper,
-    bool substituteTriggerStrings, params string[] paths)
+  private void SerializeAndWriteUnitData(UnitObjectData unitObjectData, ObjectDataMapper objectDataMapper, params string[] paths)
   {
-    var dto = objectDataMapper.MapToDto(unitObjectData, substituteTriggerStrings);
+    var dto = objectDataMapper.MapToDto(unitObjectData);
 
     foreach (var unit in dto.BaseUnits)
     {
@@ -314,10 +305,9 @@ public sealed class W3XToMapDataConverter
     }
   }
 
-  private void SerializeAndWriteBuffData(BuffObjectData buffObjectData, ObjectDataMapper objectDataMapper,
-    bool substituteTriggerStrings, params string[] paths)
+  private void SerializeAndWriteBuffData(BuffObjectData buffObjectData, ObjectDataMapper objectDataMapper, params string[] paths)
   {
-    var dto = objectDataMapper.MapToDto(buffObjectData, substituteTriggerStrings);
+    var dto = objectDataMapper.MapToDto(buffObjectData);
 
     foreach (var buff in dto.BaseBuffs)
     {
@@ -330,10 +320,9 @@ public sealed class W3XToMapDataConverter
     }
   }
 
-  private void SerializeAndWriteDoodadData(DoodadObjectData doodadObjectData, ObjectDataMapper objectDataMapper,
-    bool substituteTriggerStrings, params string[] paths)
+  private void SerializeAndWriteDoodadData(DoodadObjectData doodadObjectData, ObjectDataMapper objectDataMapper, params string[] paths)
   {
-    var dto = objectDataMapper.MapToDto(doodadObjectData, substituteTriggerStrings);
+    var dto = objectDataMapper.MapToDto(doodadObjectData);
 
     foreach (var doodad in dto.BaseDoodads)
     {
@@ -347,9 +336,9 @@ public sealed class W3XToMapDataConverter
   }
 
   private void SerializeAndWriteDestructableData(DestructableObjectData destructableObjectData,
-    ObjectDataMapper objectDataMapper, bool substituteTriggerStrings, params string[] paths)
+    ObjectDataMapper objectDataMapper, params string[] paths)
   {
-    var dto = objectDataMapper.MapToDto(destructableObjectData, substituteTriggerStrings);
+    var dto = objectDataMapper.MapToDto(destructableObjectData);
 
     foreach (var destructable in dto.BaseDestructables)
     {
@@ -362,10 +351,9 @@ public sealed class W3XToMapDataConverter
     }
   }
 
-  private void SerializeAndWriteItemData(ItemObjectData itemObjectData, ObjectDataMapper objectDataMapper,
-    bool substituteTriggerStrings, params string[] paths)
+  private void SerializeAndWriteItemData(ItemObjectData itemObjectData, ObjectDataMapper objectDataMapper, params string[] paths)
   {
-    var dto = objectDataMapper.MapToDto(itemObjectData, substituteTriggerStrings);
+    var dto = objectDataMapper.MapToDto(itemObjectData);
 
     foreach (var item in dto.BaseItems)
     {
@@ -378,10 +366,9 @@ public sealed class W3XToMapDataConverter
     }
   }
 
-  private void SerializeAndWriteAbilityData(AbilityObjectData abilityObjectData, ObjectDataMapper objectDataMapper,
-    bool substituteTriggerStrings, params string[] paths)
+  private void SerializeAndWriteAbilityData(AbilityObjectData abilityObjectData, ObjectDataMapper objectDataMapper, params string[] paths)
   {
-    var dto = objectDataMapper.MapToDto(abilityObjectData, substituteTriggerStrings);
+    var dto = objectDataMapper.MapToDto(abilityObjectData);
 
     foreach (var ability in dto.BaseAbilities)
     {
@@ -394,10 +381,9 @@ public sealed class W3XToMapDataConverter
     }
   }
 
-  private void SerializeAndWriteUpgradeData(UpgradeObjectData upgradeObjectData, ObjectDataMapper objectDataMapper,
-    bool substituteTriggerStrings, params string[] paths)
+  private void SerializeAndWriteUpgradeData(UpgradeObjectData upgradeObjectData, ObjectDataMapper objectDataMapper, params string[] paths)
   {
-    var dto = objectDataMapper.MapToDto(upgradeObjectData, substituteTriggerStrings);
+    var dto = objectDataMapper.MapToDto(upgradeObjectData);
 
     foreach (var upgrade in dto.BaseUpgrades)
     {

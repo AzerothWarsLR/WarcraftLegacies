@@ -8,13 +8,6 @@ namespace Launcher.DTOMappers;
 
 public sealed class MapInfoMapper
 {
-  private readonly TriggerStringDictionary _triggerStrings;
-
-  public MapInfoMapper(TriggerStringDictionary triggerStrings)
-  {
-    _triggerStrings = triggerStrings;
-  }
-
   public MapInfoDto MapToDto(MapInfo mapInfo)
   {
     var dto = new MapInfoDto
@@ -23,14 +16,10 @@ public sealed class MapInfoMapper
       MapVersion = 100,
       EditorVersion = mapInfo.EditorVersion,
       GameVersion = mapInfo.GameVersion,
-      MapName = TriggerStringDictionary.IsTriggerStringKey(mapInfo.MapName) ? _triggerStrings[mapInfo.MapName] : mapInfo.MapName,
-      MapAuthor = TriggerStringDictionary.IsTriggerStringKey(mapInfo.MapAuthor) ? _triggerStrings[mapInfo.MapAuthor] : mapInfo.MapAuthor,
-      MapDescription = TriggerStringDictionary.IsTriggerStringKey(mapInfo.MapDescription)
-        ? _triggerStrings[mapInfo.MapDescription]
-        : mapInfo.MapDescription,
-      RecommendedPlayers = TriggerStringDictionary.IsTriggerStringKey(mapInfo.RecommendedPlayers)
-        ? _triggerStrings[mapInfo.RecommendedPlayers]
-        : mapInfo.RecommendedPlayers,
+      MapName = mapInfo.MapName,
+      MapAuthor = mapInfo.MapAuthor,
+      MapDescription = mapInfo.MapDescription,
+      RecommendedPlayers = mapInfo.RecommendedPlayers,
       Unk1 = mapInfo.Unk1,
       Unk2 = mapInfo.Unk2,
       Unk3 = mapInfo.Unk3,
@@ -46,30 +35,16 @@ public sealed class MapInfoMapper
       Tileset = mapInfo.Tileset,
       CampaignBackgroundNumber = mapInfo.CampaignBackgroundNumber,
       LoadingScreenBackgroundNumber = mapInfo.LoadingScreenBackgroundNumber,
-      LoadingScreenPath = TriggerStringDictionary.IsTriggerStringKey(mapInfo.LoadingScreenPath)
-        ? _triggerStrings[mapInfo.LoadingScreenPath]
-        : mapInfo.LoadingScreenPath,
-      LoadingScreenText = TriggerStringDictionary.IsTriggerStringKey(mapInfo.LoadingScreenText)
-        ? _triggerStrings[mapInfo.LoadingScreenText]
-        : mapInfo.LoadingScreenText,
-      LoadingScreenTitle = TriggerStringDictionary.IsTriggerStringKey(mapInfo.LoadingScreenTitle)
-        ? _triggerStrings[mapInfo.LoadingScreenTitle]
-        : mapInfo.LoadingScreenTitle,
-      LoadingScreenSubtitle = TriggerStringDictionary.IsTriggerStringKey(mapInfo.LoadingScreenSubtitle)
-        ? _triggerStrings[mapInfo.LoadingScreenSubtitle]
-        : mapInfo.LoadingScreenSubtitle,
+      LoadingScreenPath = mapInfo.LoadingScreenPath,
+      LoadingScreenText = mapInfo.LoadingScreenText,
+      LoadingScreenTitle = mapInfo.LoadingScreenTitle,
+      LoadingScreenSubtitle = mapInfo.LoadingScreenSubtitle,
       LoadingScreenNumber = mapInfo.LoadingScreenNumber,
       GameDataSet = mapInfo.GameDataSet,
       PrologueScreenPath = mapInfo.PrologueScreenPath,
-      PrologueScreenText = TriggerStringDictionary.IsTriggerStringKey(mapInfo.PrologueScreenText)
-        ? _triggerStrings[mapInfo.PrologueScreenText]
-        : mapInfo.PrologueScreenText,
-      PrologueScreenTitle = TriggerStringDictionary.IsTriggerStringKey(mapInfo.PrologueScreenTitle)
-        ? _triggerStrings[mapInfo.PrologueScreenTitle]
-        : mapInfo.PrologueScreenTitle,
-      PrologueScreenSubtitle = TriggerStringDictionary.IsTriggerStringKey(mapInfo.PrologueScreenSubtitle)
-        ? _triggerStrings[mapInfo.PrologueScreenSubtitle]
-        : mapInfo.PrologueScreenSubtitle,
+      PrologueScreenText = mapInfo.PrologueScreenText,
+      PrologueScreenTitle = mapInfo.PrologueScreenTitle,
+      PrologueScreenSubtitle = mapInfo.PrologueScreenSubtitle,
       FogStyle = mapInfo.FogStyle,
       FogStartZ = mapInfo.FogStartZ,
       FogEndZ = mapInfo.FogEndZ,
@@ -112,7 +87,7 @@ public sealed class MapInfoMapper
       Controller = playerData.Controller,
       Race = playerData.Race,
       Flags = playerData.Flags,
-      Name = _triggerStrings[playerData.Name],
+      Name = playerData.Name,
       StartPosition = Vector2ToDto(playerData.StartPosition),
       AllyLowPriorityFlags = playerData.AllyLowPriorityFlags,
       AllyHighPriorityFlags = playerData.AllyHighPriorityFlags,
@@ -128,7 +103,7 @@ public sealed class MapInfoMapper
     {
       Flags = forceData.Flags,
       Players = forceData.Players,
-      Name = _triggerStrings[forceData.Name]
+      Name = forceData.Name
     };
     return dto;
   }
