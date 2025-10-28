@@ -22,7 +22,6 @@ public static class MapDataPaths
   public const string RegionsDirectoryPath = "Regions";
   public const string UnitsDirectoryPath = "Units";
   public const string DoodadsDirectoryPath = "Doodads";
-  public const string TriggerStringsDirectoryPath = "TriggerStrings";
 
   public const string ImportsPath = "Imports";
 

@@ -78,7 +78,6 @@ public sealed class MapDataToMapConverter
       Regions = DeserializeRegionsFromDirectory(Path.Combine(mapDataRootDirectory, RegionsDirectoryPath)),
       ShadowMap = DeserializeFromFile<MapShadowMap, MapShadowMapDto>(Path.Combine(mapDataRootDirectory, ShadowMapPath)),
       Info = DeserializeFromFile<MapInfo, MapInfoDto>(Path.Combine(mapDataRootDirectory, InfoPath)),
-      TriggerStrings = DeserializeTriggerStringsFromDirectory(Path.Combine(mapDataRootDirectory, TriggerStringsDirectoryPath)),
       Doodads = DeserializeDoodadsFromDirectory(Path.Combine(mapDataRootDirectory, DoodadsDirectoryPath)),
       Units = DeserializeUnitsFromDirectory(Path.Combine(mapDataRootDirectory, UnitsDirectoryPath)),
       Triggers = GenerateEmptyMapTriggers(),
@@ -100,24 +99,6 @@ public sealed class MapDataToMapConverter
       UpgradeSkinObjectData = new UpgradeObjectData(ObjectDataFormatVersion.v3)
     };
     return map;
-  }
-
-  private TriggerStrings? DeserializeTriggerStringsFromDirectory(string directory)
-  {
-    if (!Directory.Exists(directory))
-    {
-      return null;
-    }
-
-    var triggerStrings = new TriggerStrings();
-    var files = Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories);
-    foreach (var file in files)
-    {
-      var fileContents = File.ReadAllText(file);
-      var triggerString = JsonSerializer.Deserialize<TriggerString>(fileContents, _jsonSerializerOptions);
-      triggerStrings.Strings.Add(triggerString);
-    }
-    return triggerStrings;
   }
 
   private MapDoodads DeserializeDoodadsFromDirectory(string directory)
